@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local caches / temp
+/tmp/
+*.log
+
+# Large or machine-specific working state
+99_Meta/transcripts/raw/
+99_Meta/transcripts/plain/
+99_Meta/audits/
+99_Meta/batches/
+
+# If public mirror is created, review before publishing these folders
+00_Inbox/
+06_Output_Playbooks/
+
+# Secrets / local env
+.env
+.env.*
+*.secret
