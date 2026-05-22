@@ -26,6 +26,10 @@ class TestExtractVideoId(unittest.TestCase):
             "XNtkiQJ49Ps",
         )
 
+    def test_wikilink_target_no_slug(self):
+        # NNN-id with no trailing slug should still parse
+        self.assertEqual(extract_video_id("206-kDEvo2__Ijg"), "kDEvo2__Ijg")
+
     def test_unparseable_raises(self):
         with self.assertRaises(ValueError):
             extract_video_id("not a video reference")
@@ -53,6 +57,16 @@ class TestCli(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         data = json.loads(result.stdout)
         self.assertIn("error", data)
+
+    def test_cli_malformed_video_ref_reports_error(self):
+        result = subprocess.run(
+            [sys.executable, "cli.py", "not-a-real-ref", "anything", "--transcripts", "testdata"],
+            cwd=ANCHOR_DIR, capture_output=True, text=True,
+        )
+        self.assertEqual(result.returncode, 1)
+        data = json.loads(result.stdout)
+        self.assertIn("error", data)
+        self.assertEqual(data["video_id"], "not-a-real-ref")
 
 
 if __name__ == "__main__":
