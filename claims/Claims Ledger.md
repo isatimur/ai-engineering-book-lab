@@ -68,7 +68,7 @@
 
 ## 7) Agent-ready codebases are designed, not discovered
 - **Why it matters:** Supports practical prescriptions rather than abstract admiration for "good engineering."
-- **Support level:** moderate to strong
+- **Support level:** moderate
 - **Supporting sources:**
   - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]] — emphasizes automated validation, repo affordances, and explicit agent-facing files.
   - [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Eric Hou, Augment Code]]
@@ -149,7 +149,7 @@
 
 ## 14) The harness is evolving from a local loop into a staged software factory
 - **Why it matters:** Creates a forward-looking bridge from coding mechanics to organization design.
-- **Support level:** moderate to strong
+- **Support level:** moderate
 - **Supporting sources:**
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
   - [[632-MhHEGMFCEB0-codex-and-subagents-vaibhav-srivastav-katia-gil-guzman-openai|#632 — Vaibhav Srivastav & Katia Gil Guzman, OpenAI]]
@@ -171,7 +171,7 @@
 
 ## 16) AI-native advantage depends on organizational coherence, not output volume alone
 - **Why it matters:** Connects the book's technical spine to Chapter 9's managerial argument.
-- **Support level:** moderate to strong
+- **Support level:** moderate
 - **Supporting sources:**
   - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]]
   - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Eoin Mulgrew, 10 Downing Street]]
