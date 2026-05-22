@@ -24,3 +24,6 @@ __pycache__/
 .env
 .env.*
 *.secret
+
+# book-mash run output
+.book-mash-runs/

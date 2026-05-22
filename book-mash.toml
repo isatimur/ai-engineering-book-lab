@@ -1,0 +1,11 @@
+[corpus]
+chapters_glob = "public/drafting/*.md"
+claims_dir = "claims/"
+evidence_dir = "evidence/"
+voice_baseline_chapters = ["Chapter 1 - The Shift From Assistant to Delegate.md", "Chapter 7 - Security, Identity, and High-Stakes Trust.md"]
+
+[output]
+runs_dir = ".book-mash-runs/"
+
+[budget]
+max_cost_usd = 10.0
