@@ -1,10 +1,24 @@
 import unittest
 from pathlib import Path
 
-from locate import locate_quote
+from locate import _confidence, locate_quote
 from vtt import load_word_stream
 
 FIXTURE = str(Path(__file__).parent / "testdata" / "testvid0001.en.vtt")
+
+
+class TestConfidence(unittest.TestCase):
+    def test_high_lower_bound(self):
+        self.assertEqual(_confidence(0.9), "high")
+
+    def test_just_below_high(self):
+        self.assertEqual(_confidence(0.899), "medium")
+
+    def test_medium_lower_bound(self):
+        self.assertEqual(_confidence(0.6), "medium")
+
+    def test_just_below_medium(self):
+        self.assertEqual(_confidence(0.599), "low")
 
 
 class TestLocateQuote(unittest.TestCase):
