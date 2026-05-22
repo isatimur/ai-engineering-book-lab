@@ -211,7 +211,7 @@ const BottomNav = ({ onToggleSidebar, progress }: { onToggleSidebar: () => void,
          </div>
        </div>
        <button onClick={onToggleSidebar} className="hover:text-[var(--color-ink-muted)] transition-colors shrink-0">
-         OPEN SIDEBAR [&lt;]
+         <span className="hidden sm:inline">OPEN SIDEBAR </span>[&lt;]
        </button>
     </motion.footer>
   );
@@ -292,7 +292,7 @@ const Hero = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="relative h-[130vh] w-full pt-32 px-6 lg:px-12 flex flex-col items-start border-b border-[var(--color-border)] overflow-hidden"
+      className="relative min-h-[88svh] md:h-[130vh] w-full pt-28 md:pt-32 pb-28 md:pb-0 px-6 lg:px-12 flex flex-col items-start justify-center md:justify-start border-b border-[var(--color-border)] overflow-hidden"
     >
       
       <motion.div variants={textVariants} className="flex gap-4 font-mono text-[10px] lg:text-xs tracking-widest text-[var(--color-ink)] mb-8 md:mb-16 relative z-20">
