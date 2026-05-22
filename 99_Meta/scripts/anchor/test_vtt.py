@@ -12,6 +12,10 @@ class TestNormalize(unittest.TestCase):
         self.assertEqual(normalize("CEO"), "ceo")
         self.assertEqual(normalize("--"), "")
 
+    def test_drops_hyphens_and_apostrophes(self):
+        self.assertEqual(normalize("don't"), "dont")
+        self.assertEqual(normalize("state-of-the-art"), "stateoftheart")
+
 
 class TestWordStream(unittest.TestCase):
     def setUp(self):

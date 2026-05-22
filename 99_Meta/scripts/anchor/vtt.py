@@ -4,12 +4,12 @@ from pathlib import Path
 
 _CUE_HEADER = re.compile(r"^(\d\d:\d\d:\d\d\.\d\d\d)\s+-->\s+\d\d:\d\d:\d\d\.\d\d\d")
 _INLINE_TS = re.compile(r"<(\d\d:\d\d:\d\d\.\d\d\d)>")
-_TAGS = re.compile(r"</?c>")
+_TAGS = re.compile(r"<[^>]+>")
 
 
 @dataclass
 class TimedWord:
-    word: str       # verbatim token, punctuation preserved
+    word: str       # verbatim token, VTT inline tags stripped
     norm: str       # normalized form, for matching
     timestamp: str  # "HH:MM:SS.mmm"
 
