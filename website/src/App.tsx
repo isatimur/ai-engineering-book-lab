@@ -5,8 +5,8 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, useScroll, useTransform, useMotionValue, useMotionValueEvent } from 'motion/react';
 import Lenis from 'lenis';
-import { type BookChapter, chapters } from './bookChapters';
-import { DynamicVisuals } from './DynamicVisuals';
+import { type BookChapter, chapters } from './data/bookChapters';
+import { DynamicVisuals } from './components/chapter/DynamicVisuals';
 
 const IMAGES = {
   man1: "https://images.unsplash.com/photo-1517245386807-bb43a82c33c4?q=80&w=1200&auto=format&fit=crop",
