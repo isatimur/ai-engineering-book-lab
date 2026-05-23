@@ -1,12 +1,13 @@
-import { motion, useTransform } from 'motion/react';
+import { motion, useTransform, type MotionValue } from 'motion/react';
 
 type Props = {
-  progress: any;
+  progress: MotionValue<number>;
   onToggleSettings: () => void;
 };
 
 export const TopNav = ({ progress, onToggleSettings }: Props) => {
   const displayProgress = useTransform(progress, (p: number) => `${(p * 100).toFixed(2)}%`);
+  const barWidth = useTransform(progress, (p: number) => `${p * 100}%`);
 
   return (
     <header className="fixed top-0 left-0 right-0 h-14 border-b border-[var(--color-border)] flex items-center justify-between px-4 lg:px-6 text-[10px] md:text-xs font-mono uppercase tracking-[0.15em] z-50 bg-[var(--color-paper)]/95 backdrop-blur transition-colors duration-300">
@@ -24,7 +25,7 @@ export const TopNav = ({ progress, onToggleSettings }: Props) => {
         <div className="border border-[var(--color-border)] rounded-full px-3 py-1 font-mono tabular-nums flex items-center justify-center min-w-[5.5rem] bg-[var(--color-paper)] transition-colors duration-300 relative overflow-hidden group">
           <motion.div
             className="absolute top-0 left-0 bottom-0 bg-[var(--color-ink)]/20"
-            style={{ width: useTransform(progress, (p: number) => `${p * 100}%`) }}
+            style={{ width: barWidth }}
           />
           <motion.span className="relative z-10">{displayProgress}</motion.span>
         </div>

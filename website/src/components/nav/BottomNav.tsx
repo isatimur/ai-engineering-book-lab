@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { motion, useTransform } from 'motion/react';
+import { motion, useTransform, type MotionValue } from 'motion/react';
 
 type Props = {
   onToggleSidebar: () => void;
-  progress: any;
+  progress: MotionValue<number>;
 };
 
 export const BottomNav = ({ onToggleSidebar, progress }: Props) => {
