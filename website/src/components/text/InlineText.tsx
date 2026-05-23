@@ -1,4 +1,4 @@
-import React from 'react';
+import { Fragment } from 'react';
 
 export const InlineText = ({ text }: { text: string }) => {
   const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*)/g).filter(Boolean);
@@ -15,7 +15,7 @@ export const InlineText = ({ text }: { text: string }) => {
         if (part.startsWith('*') && part.endsWith('*')) {
           return <em key={index}>{part.slice(1, -1)}</em>;
         }
-        return <React.Fragment key={index}>{part}</React.Fragment>;
+        return <Fragment key={index}>{part}</Fragment>;
       })}
     </>
   );

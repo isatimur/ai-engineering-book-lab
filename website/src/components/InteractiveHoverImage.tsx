@@ -1,4 +1,4 @@
-import React from 'react';
+import { type MouseEvent } from 'react';
 import { motion, useMotionValue, useTransform } from 'motion/react';
 
 export const InteractiveHoverImage = ({ src, className, style, variants, initial, whileInView, viewport, transition }: any) => {
@@ -8,7 +8,7 @@ export const InteractiveHoverImage = ({ src, className, style, variants, initial
   const rotateX = useTransform(y, [-0.5, 0.5], [15, -15]);
   const rotateY = useTransform(x, [-0.5, 0.5], [-15, 15]);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const xPos = (e.clientX - rect.left) / rect.width - 0.5;
     const yPos = (e.clientY - rect.top) / rect.height - 0.5;
