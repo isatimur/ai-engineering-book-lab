@@ -7,70 +7,15 @@ import { motion, useScroll, useTransform, useMotionValue, useMotionValueEvent } 
 import Lenis from 'lenis';
 import { type BookChapter, chapters } from './data/bookChapters';
 import { DynamicVisuals } from './components/chapter/DynamicVisuals';
+import { InteractiveHoverImage } from './components/InteractiveHoverImage';
+import { InlineText } from './components/text/InlineText';
+import { MarkdownBlock } from './components/text/MarkdownBlock';
 
 const IMAGES = {
   man1: "https://images.unsplash.com/photo-1517245386807-bb43a82c33c4?q=80&w=1200&auto=format&fit=crop",
   painting: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
   editorial: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
   speaker: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop",
-};
-
-const InteractiveHoverImage = ({ src, className, style, variants, initial, whileInView, viewport, transition }: any) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  const rotateX = useTransform(y, [-0.5, 0.5], [15, -15]);
-  const rotateY = useTransform(x, [-0.5, 0.5], [-15, 15]);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const xPos = (e.clientX - rect.left) / rect.width - 0.5;
-    const yPos = (e.clientY - rect.top) / rect.height - 0.5;
-    x.set(xPos);
-    y.set(yPos);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
-  return (
-    <motion.div
-      style={{ perspective: 1000, ...style }}
-      variants={variants}
-      initial={initial}
-      whileInView={whileInView}
-      viewport={viewport}
-      transition={{...transition, duration: 4, ease: "easeInOut", repeat: Infinity, repeatType: "reverse"}}
-      className="w-full h-full cursor-pointer pointer-events-auto relative group overflow-hidden"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      animate={{ y: [0, -10, 0] }}
-    >
-      <motion.div
-        className="absolute inset-0 bg-black/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"
-      />
-      <motion.img
-        src={src}
-        className={className}
-        style={{
-          rotateX,
-          rotateY,
-          transformStyle: "preserve-3d",
-        }}
-        whileHover={{
-          scale: 1.08,
-          filter: "grayscale(0%) sepia(0%) blur(0px)",
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 300,
-          damping: 20
-        }}
-      />
-    </motion.div>
-  );
 };
 
 const TopNav = ({ progress, onToggleSettings }: { progress: any, onToggleSettings: () => void }) => {
@@ -495,73 +440,6 @@ const SettingsModal = ({ isOpen, onClose, settings, updateSettings }: any) => {
         </div>
       </motion.div>
     </div>
-  );
-};
-
-const InlineText = ({ text }: { text: string }) => {
-  const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*)/g).filter(Boolean);
-
-  return (
-    <>
-      {parts.map((part, index) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-          return <strong key={index}>{part.slice(2, -2)}</strong>;
-        }
-        if (part.startsWith('`') && part.endsWith('`')) {
-          return <code key={index}>{part.slice(1, -1)}</code>;
-        }
-        if (part.startsWith('*') && part.endsWith('*')) {
-          return <em key={index}>{part.slice(1, -1)}</em>;
-        }
-        return <React.Fragment key={index}>{part}</React.Fragment>;
-      })}
-    </>
-  );
-};
-
-const MarkdownBlock = ({ block }: { block: string }) => {
-  if (block.startsWith('# ')) {
-    return <h1>{block.replace(/^#\s+/, '')}</h1>;
-  }
-  if (block.startsWith('## ')) {
-    return <h2>{block.replace(/^##\s+/, '')}</h2>;
-  }
-  if (block.startsWith('### ')) {
-    return <h3>{block.replace(/^###\s+/, '')}</h3>;
-  }
-  if (block.startsWith('> ')) {
-    return (
-      <blockquote>
-        <InlineText text={block.replace(/^>\s?/gm, '')} />
-      </blockquote>
-    );
-  }
-  if (/^- /.test(block)) {
-    return (
-      <ul>
-        {block.split('\n').map((item) => (
-          <li key={item}>
-            <InlineText text={item.replace(/^-\s+/, '')} />
-          </li>
-        ))}
-      </ul>
-    );
-  }
-  if (/^\d+\. /.test(block)) {
-    return (
-      <ol>
-        {block.split('\n').map((item) => (
-          <li key={item}>
-            <InlineText text={item.replace(/^\d+\.\s+/, '')} />
-          </li>
-        ))}
-      </ol>
-    );
-  }
-  return (
-    <p>
-      <InlineText text={block.replace(/\n/g, ' ')} />
-    </p>
   );
 };
 
