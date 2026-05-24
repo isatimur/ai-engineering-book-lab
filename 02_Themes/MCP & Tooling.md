@@ -1,0 +1,93 @@
+# MCP & Tooling
+
+## Corpus coverage
+
+- Total tagged videos: 75
+
+## Cross-video synthesis
+
+- This theme appears across 75 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (18), Agent Architecture (17), Org Design & Leadership (12).
+- Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
+
+## Seed videos
+
+- [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
+- [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
+- [[024-XZ0boOjtbNo-ai-didn-t-kill-the-web-it-moved-in-olivier-leplus-aws-yohan-lasorsa-microsoft|#24 — AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft)]]
+- [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29 — Cognitive Exhaust Fumes, or: Read-Only AI Is Underrated — Šimon Podhajský, Head of AI, Waypoint]]
+- [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32 — Your Insecure MCP Server Won't Survive Production — Tun Shwe, Lenses]]
+- [[034-U00AOI1eJUE-bending-a-public-mcp-server-without-breaking-it-nimrod-hauser-baz|#34 — Bending a Public MCP Server Without Breaking It — Nimrod Hauser, Baz]]
+- [[039-96G7FLab8xc-your-mcp-server-is-bad-and-you-should-feel-bad-jeremiah-lowin-prefect|#39 — Your MCP Server is Bad (and you should feel bad) - Jeremiah Lowin, Prefect]]
+- [[044-kmV-qg4uoNI-building-durable-agents-with-workflow-devkit-ai-sdk-peter-wielander-vercel|#44 — Building durable Agents with Workflow DevKit & AI SDK - Peter Wielander, Vercel]]
+- [[061-o4scJaQgnFA-from-arc-to-dia-lessons-learned-building-ai-browsers-samir-mody-the-browser-company-of-new|#61 — From Arc to Dia: Lessons learned building AI Browsers – Samir Mody, The Browser Company of New York]]
+- [[083-CEvIs9y1uog-don-t-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic|#83 — Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic]]
+- [[088-aqW68Is_Kj4-katelyn-lesse-evolving-claude-apis-for-agents-anthropic|#88 — Katelyn Lesse – Evolving Claude APIs for Agents, Anthropic]]
+- [[094-zMXKhhwiCIc-backlog-md-terminal-kanban-board-for-managing-tasks-with-ai-agents-alex-gavrilescu-funstag|#94 — Backlog.md: Terminal Kanban Board for Managing Tasks with AI Agents — Alex Gavrilescu, Funstage]]
+- [[095-qqXdLf3wy1E-agents-are-robots-too-what-self-driving-taught-me-about-building-agents-jesse-hu-abundant|#95 — Agents are Robots Too: What Self-Driving Taught Me About Building Agents — Jesse Hu, Abundant]]
+- [[110-bCGbuyv8PMk-rishabh-garg-tesla-optimus-challenges-in-high-performance-robotics-systems|#110 — Rishabh Garg, Tesla Optimus — Challenges in High Performance Robotics Systems]]
+- [[134-WJjInLeaJjo-building-agents-at-cloud-scale-antje-barth-aws|#134 — Building Agents at Cloud Scale — Antje Barth, AWS]]
+- [[140-2goSS66XRBk-infrastructure-for-the-singularity-jesse-han-morph|#140 — Infrastructure for the Singularity — Jesse Han, Morph]]
+- [[176-wXVvfFMTyzY-a2a-mcp-workshop-automating-business-processes-with-llms-damien-murphy-bench|#176 — A2A & MCP Workshop: Automating Business Processes with LLMs — Damien Murphy, Bench]]
+- [[192-e9sLVMN76qU-ax-is-the-only-experience-that-matters-ivan-burazin-daytona|#192 — AX is the only Experience that Matters - Ivan Burazin, Daytona]]
+- [[200-zlZz0mDF2eg-machines-of-buying-and-selling-grace-adam-behrens-new-generation|#200 — Machines of Buying and Selling Grace - Adam Behrens, New Generation]]
+- [[208-5rMc-moNVx0-stateful-environments-for-vertical-agents-josh-purtell-synth-labs|#208 — Stateful environments for vertical agents — Josh Purtell, Synth Labs]]
+- [[239-RkVILz06y08-real-world-mcps-in-github-copilot-agent-mode-jon-peck-microsoft|#239 — Real world MCPs in GitHub Copilot Agent Mode — Jon Peck, Microsoft]]
+- [[240-blW-lSd5CYQ-the-rise-of-the-agentic-economy-on-the-shoulders-of-mcp-jan-curn-apify|#240 — The rise of the agentic economy on the shoulders of MCP — Jan Curn, Apify]]
+- [[241-bmWZk9vTze0-mcp-is-all-you-need-samuel-colvin-pydantic|#241 — MCP is all you need — Samuel Colvin, Pydantic]]
+- [[242-ExeD-8gFUMM-full-spec-mcp-hidden-capabilities-of-the-mcp-spec-harald-kirschner-microsoft-vscode|#242 — Full Spec MCP: Hidden Capabilities of the MCP spec — Harald Kirschner, Microsoft/VSCode]]
+- [[263-FWlRHPZWyHE-workshop-ai-pipelines-and-agents-in-pure-typescript-with-mastra-ai-nick-nisi-zack-proser|#263 — [Workshop] AI Pipelines and Agents in Pure TypeScript with Mastra.ai — Nick Nisi, Zack Proser]]
+- [[264-zK9lYrLbjSg-ai-engineering-with-the-google-gemini-2-5-model-family-philipp-schmid-google-deepmind|#264 — AI Engineering with the Google Gemini 2.5 Model Family - Philipp Schmid, Google DeepMind]]
+- [[275-FCi4jT86gSw-mcp-is-not-good-yet-david-cramer-sentry|#275 — MCP Is Not Good Yet — David Cramer, Sentry]]
+- [[279-yASxPZ-tZe0-conquering-agent-chaos-rick-blalock-agentuity|#279 — Conquering Agent Chaos — Rick Blalock, Agentuity]]
+- [[283-FZoMSupg37E-securing-agents-with-open-standards-bobby-tiernay-and-kam-sween-auth0|#283 — Securing Agents with Open Standards — Bobby Tiernay and Kam Sween, Auth0]]
+- [[285-px2e2OOS2Sk-agents-access-and-the-future-of-machine-identity-nick-nisi-workos-lizzie-siegle-cloudflare|#285 — Agents, Access, and the Future of Machine Identity — Nick Nisi (WorkOS) + Lizzie Siegle (Cloudflare)]]
+- [[287-iXhba366fQc-building-voice-agents-with-openai-dominik-kundel-openai|#287 — Building voice agents with OpenAI — Dominik Kundel, OpenAI]]
+- [[295-Q3NreEAdKMc-introducing-strands-agents-an-open-source-ai-agents-sdk-suman-debnath-aws|#295 — Introducing Strands Agents, an Open Source AI Agents SDK — Suman Debnath, AWS]]
+- [[328-vRFqbEzzDsI-building-agentic-applications-w-heroku-managed-inference-and-agents-juli-n-duque-anush-dso|#328 — Building Agentic Applications w/ Heroku Managed Inference and Agents — Julián Duque & Anush Dsouza]]
+- [[333-0MqYA52iWQU-possible-dupe-but-better-sound-what-does-enterprise-ready-mcp-mean-tobin-south-workos|#333 — (possible dupe but better sound) What does Enterprise Ready MCP mean? — Tobin South, WorkOS]]
+- [[338-JVuNPL5QO8Q-windsurf-everywhere-doing-everything-all-at-once-kevin-hou-windsurf|#338 — Windsurf everywhere, doing everything, all at once - Kevin Hou, Windsurf]]
+- [[341-wFTVEDYVJT0-building-agents-with-amazon-nova-act-and-mcp-du-an-lightfoot-amazon-full-workshop|#341 — Building Agents with Amazon Nova Act and MCP - Du'An Lightfoot, Amazon (Full Workshop)]]
+- [[342-YRGjll7uu5w-the-web-browser-is-all-you-need-paul-klein-iv-browserbase|#342 — The Web Browser Is All You Need - Paul Klein IV, Browserbase]]
+- [[343-PHBGhUKAM-w-building-protected-mcp-servers-den-delimarsky-and-julia-kasper-mcp-steering-committee-micr|#343 — Building Protected MCP Servers — Den Delimarsky and Julia Kasper, MCP Steering Committee & Microsoft]]
+- [[344-Lcqat4iP_lE-the-state-of-mcp-observability-observable-tools-alex-volkov-and-benjamin-eckel-w-b-and-dyl|#344 — The State of MCP observability: Observable.tools — Alex Volkov and Benjamin Eckel, W&B and Dylibso]]
+- [[346-0NHCyq8bBcM-remote-mcps-what-we-learned-from-shipping-john-welsh-anthropic|#346 — Remote MCPs: What we learned from shipping — John Welsh, Anthropic]]
+- [[347-x-8pBqWiTzk-mcp-origins-and-requests-for-startups-theodora-chu-model-context-protocol-pm-anthropic|#347 — MCP: Origins and Requests For Startups — Theodora Chu, Model Context Protocol PM, Anthropic]]
+- [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349 — Exposing Agents as MCP servers with mcp-agent: Sarmad Qadri]]
+- [[351-lp0pswT_FEI-just-do-it-let-your-tools-think-for-themselves-robert-chandler|#351 — Just do it. (let your tools think for themselves) - Robert Chandler]]
+- [[353-J3oJqan2Gv8-mcps-are-boring-or-why-we-are-losing-the-sparkle-of-llms-manuel-odendahl|#353 — MCPs are Boring (or: Why we are losing the Sparkle of LLMs) - Manuel Odendahl]]
+- [[359-tOou_GJ9Ddk-are-mcps-overhyped-a-rant-about-mcps-henry-mao-smithery|#359 — Are MCPs Overhyped? A Rant about MCPs — Henry Mao, Smithery]]
+- [[365-wsFd22SL1s8-arrakis-how-to-build-an-ai-sandbox-from-scratch-abhishek-bhardwaj-openai|#365 — Arrakis: How To Build An AI Sandbox From Scratch - Abhishek Bhardwaj, OpenAI]]
+- [[372-nnktgWtfJHE-blender-mcp-and-the-future-of-creative-tools-siddharth-ahuja|#372 — Blender MCP and The Future Of Creative Tools - Siddharth Ahuja]]
+- [[375-_-oIuRH4oGA-how-agents-broke-app-level-infrastructure-evan-boyle|#375 — How agents broke app-level infrastructure - Evan Boyle]]
+- [[377-UcW_s4BmuD0-the-demo-i-wish-i-d-had-openai-s-agents-sdk-serverless-brook-riggio|#377 — The Demo I Wish I'd Had: OpenAI's Agents SDK... serverless! - Brook Riggio]]
+- [[378-RVN9HWKmkNU-will-agent-evaluation-via-mcp-stabilize-agent-networks-ari-heljakka|#378 — Will Agent evaluation via MCP Stabilize Agent Networks? - Ari Heljakka]]
+- [[379-Nqb7JTx0Pqo-mcp-agent-fine-tuning-workshop-ronan-mcgovern|#379 — MCP Agent Fine tuning Workshop - Ronan McGovern]]
+- [[395-EyZiAp0pelw-letting-ai-interface-with-your-app-with-mcp-kent-c-dodds|#395 — Letting AI Interface with your App with MCP — Kent C Dodds]]
+- [[403-KUEmEb71vzQ-function-calling-is-all-you-need-full-workshop-with-ilan-bigio-of-openai|#403 — Function Calling is All You Need — Full Workshop, with Ilan Bigio of OpenAI]]
+- [[437-kQmXtrmQ5Zg-building-agents-with-model-context-protocol-full-workshop-with-mahesh-murag-of-anthropic|#437 — Building Agents with Model Context Protocol - Full Workshop with Mahesh Murag of Anthropic]]
+- [[440-r0AG44qYKsI-this-video-was-edited-with-ai-agent-but-how|#440 — This video was edited with AI agent. But how?]]
+- [[448-KVgbERRPU4M-openllmetry-is-all-you-need|#448 — OpenLLMetry is all you need]]
+- [[453-zuMw0pkPXpU-tool-calling-is-not-just-plumbing-for-ai-agents-roy-derks|#453 — Tool Calling Is Not Just Plumbing for AI Agents — Roy Derks]]
+- [[594-MarPORTD8vo-the-weekend-ai-engineer-hassan-el-mghari|#594 — The Weekend AI Engineer: Hassan El Mghari]]
+- [[607-C0ZUdFg-iTo-workshop-ai-engineering-101|#607 — [Workshop] AI Engineering 101]]
+- [[616-ZYoZSU58m_Y-the-future-of-work-toran-bruce-richards-silen-naihin-et-al|#616 — The Future of Work: Toran Bruce Richards, Silen Naihin et al]]
+- [[634-juoNbJiZUi0-how-to-stop-llm-fails-danilo-campos-posthog|#634 — How to stop LLM Fails — Danilo Campos, PostHog]]
+- [[636-zepu8Kk6FBQ-agents-for-everything-else-swyx|#636 — Agents for Everything Else — swyx]]
+- [[638-sPUjIBH5Cwg-agents-on-the-canvas-in-tldraw-steve-ruiz-tldraw|#638 — Agents on the Canvas in tldraw — Steve Ruiz, tldraw]]
+- [[640-W76woOYHlvY-how-agents-ate-software-engineering-and-my-startup-louis-knight-webb-vibe-kanban|#640 — How Agents ate Software Engineering... and my startup — Louis Knight-Webb, Vibe Kanban]]
+- [[652-o-zkvb0iFDQ-mcp-ui-extending-the-frontier-liad-yosef-and-ido-salomon-mcp-apps|#652 — MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps]]
+- [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — The Multi-Agent Architecture That Actually Ships — Luke Alvoeiro, Factory]]
+- [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Give Your Chat Agent a Voice — Luke Harries, ElevenLabs]]
+- [[672-vAIDdLKB6-w-a-piece-of-pi-embedding-the-openclaw-coding-agent-in-your-product-matthias-luebken-tavon|#672 — A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product — Matthias Luebken, Tavon]]
+- [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase]]
+- [[696-GIRpQEfYf3U-any-to-any-building-native-multimodal-agents-patrick-l-ber-google-deepmind|#696 — Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind]]
+- [[698-VaS2h-dY1-4-scaling-agents-on-kubernetes-with-acpx-and-acp-onur-solmaz-openclaw|#698 — Scaling Agents on Kubernetes with acpx and ACP — Onur Solmaz, OpenClaw]]
+- [[699-dyHpnnlkTc8-cooking-with-agents-liam-hampton-microsoft|#699 — Cooking with Agents — Liam Hampton, Microsoft]]
+- [[700-owH1f0N-keY-gemini-nano-on-device-florina-muntenescu-oli-gaymond-google-deepmind|#700 — Gemini Nano on device — Florina Muntenescu & Oli Gaymond, Google DeepMind]]
+- [[704-5Sui_OnSRlY-the-missing-primitive-for-agent-swarms-lou-bichard-ona|#704 — The Missing Primitive for Agent Swarms — Lou Bichard, Ona]]
+- [[707-W-SX_srBa3Y-let-s-talk-about-fomat-fear-of-missing-agent-time-michael-richman-cmd-ctrl|#707 — Let's Talk About FOMAT: Fear of Missing Agent Time — Michael Richman, Cmd+Ctrl]]
+
+## Notes
+
+- Use this note as the landing page for future hand-written synthesis and chapter extraction.
