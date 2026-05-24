@@ -5,16 +5,16 @@ import { InlineIllustration } from './InlineIllustration';
 import { getChapterGuide, type ConceptFigure } from './ChapterIllustration';
 
 const chapterDiagram: Record<string, string> = {
-  '01': '/diagrams/05-chapter1-the-shift.png',
-  '02': '/diagrams/06-chapter2-taste.png',
-  '03': '/diagrams/07-chapter3-harnesses.png',
-  '04': '/diagrams/08-chapter4-evals.png',
-  '05': '/diagrams/09-chapter5-context.png',
-  '06': '/diagrams/10-chapter6-runtimes.png',
-  '07': '/diagrams/11-chapter7-security.png',
-  '08': '/diagrams/12-chapter8-realtime.png',
-  '09': '/diagrams/13-chapter9-ai-native-org.png',
-  '10': '/diagrams/14-chapter10-what-endures.png',
+  '01': '/diagrams/openers/ch01.png',
+  '02': '/diagrams/openers/ch02.png',
+  '03': '/diagrams/openers/ch03.png',
+  '04': '/diagrams/openers/ch04.png',
+  '05': '/diagrams/openers/ch05.png',
+  '06': '/diagrams/openers/ch06.png',
+  '07': '/diagrams/openers/ch07.png',
+  '08': '/diagrams/openers/ch08.png',
+  '09': '/diagrams/openers/ch09.png',
+  '10': '/diagrams/openers/ch10.png',
 };
 
 // ConceptMap helper, currently inlined in App.tsx; will be removed in Task 17
