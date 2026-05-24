@@ -30,7 +30,7 @@ const AnchorCard = ({ anchor }: { anchor: Anchor }) => {
         {playing ? (
           <iframe
             className="h-full w-full"
-            src={`https://www.youtube.com/embed/${anchor.video_id}?start=${anchor.start_seconds}&autoplay=1`}
+            src={`https://www.youtube-nocookie.com/embed/${anchor.video_id}?start=${anchor.start_seconds}&autoplay=1`}
             title={anchor.label}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
