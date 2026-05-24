@@ -1,5 +1,5 @@
-import { type CSSProperties, useEffect, useMemo, useState } from 'react';
-import { motion, useMotionValueEvent, useScroll } from 'motion/react';
+import { type CSSProperties, useEffect, useMemo, useState, useCallback } from 'react';
+import { motion, AnimatePresence, useMotionValueEvent, useScroll } from 'motion/react';
 import Lenis from 'lenis';
 import { useLocation } from 'wouter';
 
@@ -22,6 +22,20 @@ export const Reader = () => {
   const [, setLocation] = useLocation();
   const [glossaryTermId, setGlossaryTermId] = useState<string | null>(null);
   const [isShareOpen, setIsShareOpen] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
+
+  const toggleFocusMode = useCallback(() => setIsFocusMode((v) => !v), []);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'f' || e.key === 'F') {
+        if ((e.target as HTMLElement).closest('input, textarea, [contenteditable]')) return;
+        setIsFocusMode((v) => !v);
+      }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, []);
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest > 300) {
@@ -145,17 +159,46 @@ export const Reader = () => {
           settings={settings}
           updateSettings={updateSettings}
         />
-        <TopNav
-          progress={scrollYProgress}
-          onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
-          onBackToCatalogue={() => setLocation('/')}
-          onOpenShare={() => setIsShareOpen(true)}
-        />
-        <main className="relative pt-14">
-          <Hero />
+        <AnimatePresence>
+          {!isFocusMode && (
+            <motion.div
+              key="topnav"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              <TopNav
+                progress={scrollYProgress}
+                onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
+                onBackToCatalogue={() => setLocation('/')}
+                onOpenShare={() => setIsShareOpen(true)}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <main className={`relative ${isFocusMode ? 'pt-0' : 'pt-14'} transition-[padding] duration-300`}>
+          <AnimatePresence>
+            {!isFocusMode && (
+              <motion.div
+                key="hero"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Hero />
+              </motion.div>
+            )}
+          </AnimatePresence>
           <FullBookReader />
         </main>
-        <BottomNav onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} progress={scrollYProgress} />
+        <BottomNav
+          onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+          progress={scrollYProgress}
+          isFocusMode={isFocusMode}
+          onToggleFocusMode={toggleFocusMode}
+        />
         <GlossaryDrawer termId={glossaryTermId} onClose={() => setGlossaryTermId(null)} />
         <ShareModal isOpen={isShareOpen} onClose={() => setIsShareOpen(false)} />
 

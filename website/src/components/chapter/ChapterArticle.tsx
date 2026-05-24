@@ -2,6 +2,7 @@ import React from 'react';
 import { type BookChapter } from '../../data/bookChapters';
 import { MarkdownBlock } from '../text/MarkdownBlock';
 import { InlineIllustration } from './InlineIllustration';
+import { ExpandableSummary } from './ExpandableSummary';
 import { opener, inlineFigsForChapter } from '../../lib/manifest';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
@@ -25,9 +26,9 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
         <span className="mx-3">/</span>
         <span>{chapter.status}</span>
       </div>
-      <p className="mb-10 text-[1.45rem] leading-[1.35] italic text-[var(--color-ink-muted)]">
-        {chapter.promise}
-      </p>
+      <div className="mb-10">
+        <ExpandableSummary chapter={chapter} />
+      </div>
       {op && (
         <figure className="mb-12 border border-[var(--color-border)] bg-white">
           <img src={op.src} alt={`Chapter ${chapter.number} — ${op.title}`} className="block h-auto w-full" loading="lazy" />
