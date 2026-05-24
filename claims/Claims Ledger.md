@@ -275,8 +275,8 @@
     - **Anchor:** `ow1we5PzK-o` 00:00:20.400 → 00:00:22.040 · confidence: high
     - **Quote:** "assemble agent teams that can"
   - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Eoin Mulgrew, 10 Downing Street]]
-    - **Anchor:** `ObNKGf9YR0g` 00:09:21.880 → 00:09:21.880 · confidence: high
-    - **Quote:** "workflows,"
+    - **Anchor:** `ObNKGf9YR0g` 00:09:21.280 → 00:09:24.840 · confidence: high
+    - **Quote:** "observing their workflows, their pain points, co-designing solutions with them"
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
     - **Anchor:** `rnDm57Py54A` 01:02:54.400 → 01:02:55.520 · confidence: high
     - **Quote:** "overview of the processes you"
