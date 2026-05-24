@@ -5,8 +5,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — the north star has shifted "from helpfulness to productive"; systems are now expected to produce output and make judgments.
+    - **Anchor:** `kDEvo2__Ijg` 00:00:52.960 → 00:00:57.280 · confidence: medium
+    - **Quote:** "like that northstar has shifted from helpfulness to productive"
   - [[003-XNtkiQJ49Ps-agents-need-more-than-a-chat-jacob-lauritzen-cto-legora|#3 — Jacob Lauritzen, Legora]] — complex agents in real work "need more than just the chat."
+    - **Anchor:** `XNtkiQJ49Ps` 00:00:34.360 → 00:00:36.440 · confidence: medium
+    - **Quote:** "they need more than just the If"
   - [[138-8SUJEqQNClw-agents-vs-workflows-why-not-both-sam-bhagwat-mastra-ai|#138 — Sam Bhagwat, Mastra.ai]] — argues against a false agents-vs-workflows dichotomy once tasks become operational.
+    - **Anchor:** `8SUJEqQNClw` 00:12:04.240 → 00:12:07.600 · confidence: high
+    - **Quote:** "most primitives the magic happens when you combine these things together"
 - **Caveats / counterpoints:** Many useful systems will remain suggestion-first for cost, UX, or risk reasons. The claim is about the frontier of high-value AI work, not every product surface.
 - **Candidate chapters:** 1, 6, 9, 10
 - **Reusable phrasing:** The real shift is not from search to chat. It is from suggestion to delegated execution.
@@ -16,8 +22,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[003-XNtkiQJ49Ps-agents-need-more-than-a-chat-jacob-lauritzen-cto-legora|#3 — Jacob Lauritzen, Legora]]
+    - **Anchor:** `XNtkiQJ49Ps` 00:11:31.920 → 00:11:34.320 · confidence: high
+    - **Quote:** "Chat is one-dimensional. It's a very low bandwidth interface,"
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]]
+    - **Anchor:** `kDEvo2__Ijg` 00:03:44.000 → 00:03:48.560 · confidence: high
+    - **Quote:** "we're asking AI systems to now produce output and produce judgments and decisions"
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — long-running workflows require state, approvals, and reliability semantics.
+    - **Anchor:** `1izYWsokr9s` 00:01:55.920 → 00:02:01.920 · confidence: high
+    - **Quote:** "handle state potentially over long periods of time. There needs to be human interaction for approvals"
 - **Caveats / counterpoints:** Chat remains a useful front door and supervisory interface. The claim is that it is not enough as the execution substrate by itself.
 - **Candidate chapters:** 1, 6, 7
 - **Reusable phrasing:** Chat may be the interface people see, but it is no longer the whole system.
@@ -27,8 +39,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Ryan Lopopolo, OpenAI]] — "The important thing is not the code but the prompt and the guardrails that got you there."
+    - **Anchor:** `am_oeAoUhew` 00:06:56.800 → 00:07:00.720 · confidence: high
+    - **Quote:** "The important thing is not the code but the prompt and the guardrails that got you there."
   - [[083-CEvIs9y1uog-don-t-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic|#83 — Barry Zhang & Mahesh Murag, Anthropic]] — model intelligence advanced quickly, but expertise gaps remain and skills/scaffolding close them.
+    - **Anchor:** `CEvIs9y1uog` 00:00:35.040 → 00:00:39.200 · confidence: high
+    - **Quote:** "Agents have intelligence and capabilities, but not always expertise that we need for real work."
   - [[198-kTnfJszFxCg-3-ingredients-for-building-reliable-enterprise-agents-harrison-chase-langchain-langgraph|#198 — Harrison Chase, LangChain/LangGraph]]
+    - **Anchor:** `kTnfJszFxCg` 00:02:18.239 → 00:02:21.280 · confidence: high
+    - **Quote:** "three kind of like ingredients which are pretty simple and pretty basic,"
 - **Caveats / counterpoints:** Better models still matter, especially for frontier reasoning tasks. But better models do not remove the need for scaffolding, and often expose weak scaffolding faster.
 - **Candidate chapters:** 1, 3, 4, 6, 10
 - **Reusable phrasing:** In production AI, scaffolding is not a wrapper around intelligence. It is what makes intelligence usable.
@@ -38,9 +56,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Ryan Lopopolo, OpenAI]]
+    - **Anchor:** `am_oeAoUhew` 00:24:40.799 → 00:24:45.840 · confidence: high
+    - **Quote:** "a good harness is really operationalized around giving the model text at the right time"
   - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]]
+    - **Anchor:** `ShuJ_CN6zr4` 00:03:30.720 → 00:03:36.480 · confidence: medium
+    - **Quote:** "automated validation and verification of software that you build um testing right unit tests end"
   - [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Eric Hou, Augment Code]]
+    - **Anchor:** `Zniw5c9_jx8` 00:18:41.520 → 00:18:46.559 · confidence: medium
+    - **Quote:** "effectively allow us to mentor our Thank"
   - [[179-x_1EumTaXeE-beyond-the-prototype-using-ai-to-write-high-quality-code-josh-albrecht-imbue|#179 — Josh Albrecht, Imbue]]
+    - **Anchor:** `x_1EumTaXeE` 00:03:28.239 → 00:03:33.920 · confidence: high
+    - **Quote:** "identifying problems with the code because if there's no problems then it's probably high quality code"
 - **Caveats / counterpoints:** A strong harness cannot rescue tasks that exceed current model/tool capability. It reduces avoidable failure; it does not grant magic competence.
 - **Candidate chapters:** 3, 4, 6, 9
 - **Reusable phrasing:** Once agents touch real repositories, harness quality becomes part of code quality.
@@ -50,7 +76,11 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[040-HY_JyxAZsiE-spec-driven-development-agentic-coding-at-faang-scale-and-quality-al-harris-amazon-kiro|#40 — Al Harris, Amazon Kiro]] — the spec becomes the natural-language representation of the system and part of a structured workflow.
+    - **Anchor:** `HY_JyxAZsiE` 00:15:57.120 → 00:16:01.759 · confidence: high
+    - **Quote:** "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
   - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Ryan Lopopolo, OpenAI]] — documentation, ADRs, and breadcrumbs teach agents what good work looks like.
+    - **Anchor:** `am_oeAoUhew` 00:07:02.560 → 00:07:09.120 · confidence: high
+    - **Quote:** "leaving breadcrumbs, documentation, ADRs, persona oriented documentation around what a good job looks like."
 - **Caveats / counterpoints:** Over-specification can become bureaucracy or suppress exploration. The useful question is which decisions must become explicit because they no longer live safely in a human-only loop.
 - **Candidate chapters:** 3, 4, 6, 10
 - **Reusable phrasing:** In AI-native engineering, the spec is not just a plan for humans. It is a stable control surface for machines.
