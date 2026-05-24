@@ -19,7 +19,7 @@ export const FullBookReader = () => {
             <DynamicVisuals colorMarker={index % 3 === 0 ? '#EAC6C0' : index % 3 === 1 ? '#ffffff' : '#A4B8C4'} type={index % 3 === 0 ? 'gradient' : index % 3 === 1 ? 'geometric' : 'particles'} />
             <div className="sticky top-0 h-full flex flex-col items-center justify-center p-8 text-white">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.45)_100%)] z-10 pointer-events-none" />
-              <ChapterIllustration chapter={chapter} index={index} />
+              <ChapterIllustration chapter={chapter} />
               <div className="relative z-20 mt-8 max-w-md border border-white/20 bg-white/10 p-6 backdrop-blur-md">
                 <p className="font-mono text-[10px] uppercase tracking-widest text-white/60">AI Engineer Book</p>
                 <h2 className="mt-5 font-serif text-4xl leading-none md:text-5xl">

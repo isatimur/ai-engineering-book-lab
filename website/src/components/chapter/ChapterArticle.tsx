@@ -1,42 +1,19 @@
-import { Fragment } from 'react';
+import React from 'react';
 import { type BookChapter } from '../../data/bookChapters';
 import { MarkdownBlock } from '../text/MarkdownBlock';
 import { InlineIllustration } from './InlineIllustration';
-import { getChapterGuide, type ConceptFigure } from './ChapterIllustration';
-
-const chapterDiagram: Record<string, string> = {
-  '01': '/diagrams/openers/ch01.png',
-  '02': '/diagrams/openers/ch02.png',
-  '03': '/diagrams/openers/ch03.png',
-  '04': '/diagrams/openers/ch04.png',
-  '05': '/diagrams/openers/ch05.png',
-  '06': '/diagrams/openers/ch06.png',
-  '07': '/diagrams/openers/ch07.png',
-  '08': '/diagrams/openers/ch08.png',
-  '09': '/diagrams/openers/ch09.png',
-  '10': '/diagrams/openers/ch10.png',
-};
-
-// ConceptMap helper, currently inlined in App.tsx; will be removed in Task 17
-const ConceptMap = ({ figures }: { figures: ConceptFigure[] }) => (
-  <div className="concept-map">
-    {figures.map((figure, index) => (
-      <div key={figure.title} className="concept-map-item">
-        <InlineIllustration figure={figure} label={`Idea ${index + 1}`} compact />
-      </div>
-    ))}
-  </div>
-);
+import { opener, inlineFigsForChapter } from '../../lib/manifest';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
   const blocks = chapter.content
     .replace(/^# Chapter 3 Draft v0[\s\S]*?---\n+/m, '')
     .replace(/^## Draft note[\s\S]*?---\n+/m, '')
     .split(/\n{2,}/)
-    .map((block) => block.trim())
+    .map((b) => b.trim())
     .filter(Boolean);
 
-  const figures = getChapterGuide(chapter);
+  const op = opener(chapter.number);
+  const figs = inlineFigsForChapter(chapter.number);
   let headingFigureIndex = 0;
 
   return (
@@ -51,33 +28,30 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
       <p className="mb-10 text-[1.45rem] leading-[1.35] italic text-[var(--color-ink-muted)]">
         {chapter.promise}
       </p>
-      {chapterDiagram[chapter.number] ? (
+      {op && (
         <figure className="mb-12 border border-[var(--color-border)] bg-white">
-          <img
-            src={chapterDiagram[chapter.number]}
-            alt={`Chapter ${chapter.number}: the naive way versus the engineered way`}
-            className="block h-auto w-full"
-            loading="lazy"
-          />
+          <img src={op.src} alt={`Chapter ${chapter.number} — ${op.title}`} className="block h-auto w-full" loading="lazy" />
           <figcaption className="border-t border-[var(--color-border)] px-5 py-3 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-            Fig. {chapter.number} — before / after: how this chapter changes the work
+            Fig. {chapter.number} — {op.title}
           </figcaption>
         </figure>
-      ) : null}
-      <ConceptMap figures={figures} />
-      {blocks.map((block, index) => (
-        <Fragment key={`${chapter.number}-${index}`}>
-          <MarkdownBlock block={block} />
-          {block.startsWith('## ') && headingFigureIndex < figures.length ? (
-            <InlineIllustration
-              figure={figures[headingFigureIndex]}
-              label={`Figure ${chapter.number}.${headingFigureIndex + 1}`}
-              compact={false}
-            />
-          ) : null}
-          {block.startsWith('## ') ? void (headingFigureIndex += 1) : null}
-        </Fragment>
-      ))}
+      )}
+      {blocks.map((block, index) => {
+        const isHeading = block.startsWith('## ');
+        const figIndex = headingFigureIndex;
+        if (isHeading) headingFigureIndex += 1;
+        return (
+          <React.Fragment key={`${chapter.number}-${index}`}>
+            <MarkdownBlock block={block} />
+            {isHeading && figIndex < figs.length ? (
+              <InlineIllustration
+                fig={figs[figIndex]}
+                label={`Figure ${chapter.number}.${figIndex + 1}`}
+              />
+            ) : null}
+          </React.Fragment>
+        );
+      })}
     </article>
   );
 };
