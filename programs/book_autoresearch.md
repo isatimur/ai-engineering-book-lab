@@ -14,6 +14,7 @@ Produce a source-backed AI engineering book by running bounded autonomous resear
 - flatten disagreement
 - silently rewrite raw source meaning
 - promote weak observations into strong claims without caveats
+- cite a whole video when the grounding moment is known — use a Source Anchor
 
 ## Standard pass
 1. Pick one bounded target.
@@ -25,3 +26,6 @@ Produce a source-backed AI engineering book by running bounded autonomous resear
 
 ## Promotion pipeline
 observation -> verified claim -> evidence pack -> chapter argument -> prose draft
+
+## Source Anchors
+Every supporting source on a promoted claim is a Source Anchor — `{video_id, start, end, quote, confidence}` — not a bare video link. A pass that extracts a claim is already reading the transcript, so it records the verbatim quote and its timestamps at promotion time (ADR-0002). The anchoring procedure, the ledger format, and the `99_Meta/scripts/anchor/cli.py` tool are documented in `programs/source_anchoring_pass.md`.
