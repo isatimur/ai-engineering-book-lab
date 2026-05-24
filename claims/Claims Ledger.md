@@ -272,8 +272,14 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]]
+    - **Anchor:** `ow1we5PzK-o` 00:00:20.400 → 00:00:22.040 · confidence: high
+    - **Quote:** "assemble agent teams that can"
   - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Eoin Mulgrew, 10 Downing Street]]
+    - **Anchor:** `ObNKGf9YR0g` 00:09:21.880 → 00:09:21.880 · confidence: high
+    - **Quote:** "workflows,"
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
+    - **Anchor:** `rnDm57Py54A` 01:02:54.400 → 01:02:55.520 · confidence: high
+    - **Quote:** "overview of the processes you"
 - **Caveats / counterpoints:** Some organizations will gain a lot from loose local experimentation before building heavier coordination systems. The claim is about durability at scale.
 - **Candidate chapters:** 6, 9, 10
 - **Reusable phrasing:** In an AI-native organization, the problem is rarely producing more artifacts. It is keeping many delegated workflows coherent enough to trust.
@@ -283,8 +289,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]]
+    - **Anchor:** `pFsfax19yOM` 00:00:15.759 → 00:00:16.240 · confidence: high
+    - **Quote:** "skills at scale."
   - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Pedro Rodrigues, Supabase]]
+    - **Anchor:** `JT3OzDKrucU` 00:03:13.040 → 00:03:13.880 · confidence: high
+    - **Quote:** "This is how the agent is"
   - [[686-0n3MKk7r60w-scaling-github-s-official-remote-mcp-server-sam-morrow-github|#686 — Sam Morrow, GitHub]]
+    - **Anchor:** `0n3MKk7r60w` 00:05:33.120 → 00:05:35.600 · confidence: high
+    - **Quote:** "49% reduction of the initial"
 - **Caveats / counterpoints:** Raw MCP access still matters; the claim is not that skills replace tools, but that tools alone are often too weak a surface for reliable use.
 - **Candidate chapters:** 3, 5, 6
 - **Reusable phrasing:** In practice, a tool is not yet a capability. A capability becomes usable when access is paired with guidance, grouping, and progressive disclosure.
@@ -294,8 +306,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Pedro Rodrigues, Supabase]] — MCP plus skills outperformed MCP alone in their tests.
+    - **Anchor:** `JT3OzDKrucU` 00:04:10.800 → 00:04:12.120 · confidence: medium
+    - **Quote:** "MCP plus the"
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]] — progressive disclosure keeps context useful without bloating the window.
+    - **Anchor:** `pFsfax19yOM` 00:44:25.040 → 00:44:25.520 · confidence: high
+    - **Quote:** "progressive disclosure."
   - [[686-0n3MKk7r60w-scaling-github-s-official-remote-mcp-server-sam-morrow-github|#686 — Sam Morrow, GitHub]] — tool grouping, reduction, and discovery are necessary once tool surfaces scale.
+    - **Anchor:** `0n3MKk7r60w` 00:03:25.560 → 00:03:27.160 · confidence: high
+    - **Quote:** "grouping concept of related product"
 - **Caveats / counterpoints:** Larger context windows and stronger tool calling reduce some pressure, but they do not remove ranking, shaping, or discovery problems.
 - **Candidate chapters:** 5, 6
 - **Reusable phrasing:** The context gap is no longer only about missing facts. It is also about exposing too much undifferentiated capability.
@@ -305,8 +323,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[680-iOXM3zE-2dk-mind-the-gap-in-your-agent-observability-amy-boyd-nitya-narasimhan-microsoft|#680 — Amy Boyd & Nitya Narasimhan, Microsoft]]
+    - **Anchor:** `iOXM3zE-2dk` 00:03:38.400 → 00:03:39.760 · confidence: medium
+    - **Quote:** "minding the gap around observability."
   - [[655--aM2EDTiaMs-everything-you-need-to-know-about-agent-observability-danny-gollapalli-and-ben-hylak-raind|#655 — Danny Gollapalli & Ben Hylak, Raindrop]]
+    - **Anchor:** `-aM2EDTiaMs` 00:02:52.160 → 00:02:53.519 · confidence: high
+    - **Quote:** "eval paradigm to a monitoring"
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
+    - **Anchor:** `A48uhxfxbsM` 00:59:24.160 → 00:59:25.680 · confidence: high
+    - **Quote:** "production CI stack to go and run"
 - **Caveats / counterpoints:** Not every failure should be auto-converted into a durable regression; teams still need judgment about representativeness and maintenance cost.
 - **Candidate chapters:** 4, 6
 - **Reusable phrasing:** Observability is not downstream of evals. It is the place tomorrow's eval set comes from.
