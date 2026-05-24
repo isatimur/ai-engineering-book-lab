@@ -1,4 +1,4 @@
-import { type CSSProperties, useEffect, useMemo, useState, useCallback } from 'react';
+import { type CSSProperties, useEffect, useMemo, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from 'motion/react';
 import Lenis from 'lenis';
 import { useLocation } from 'wouter';
@@ -13,6 +13,7 @@ import { SettingsModal, type Settings } from '../components/modals/SettingsModal
 import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
 import { scrollAudio } from '../lib/audio';
+import { ActionMenu } from '../components/ActionMenu';
 
 export const Reader = () => {
   const { scrollYProgress, scrollY } = useScroll();
@@ -25,6 +26,7 @@ export const Reader = () => {
   const [isFocusMode, setIsFocusMode] = useState(false);
 
   const toggleFocusMode = useCallback(() => setIsFocusMode((v) => !v), []);
+  const articleRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -191,8 +193,11 @@ export const Reader = () => {
               </motion.div>
             )}
           </AnimatePresence>
-          <FullBookReader />
+          <div ref={articleRef}>
+            <FullBookReader />
+          </div>
         </main>
+        <ActionMenu containerRef={articleRef} />
         <BottomNav
           onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
           progress={scrollYProgress}
