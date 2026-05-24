@@ -8,7 +8,9 @@ import { BottomNav } from '../components/nav/BottomNav';
 import { Hero } from '../components/chapter/Hero';
 import { FullBookReader } from '../components/chapter/FullBookReader';
 import { Sidebar } from '../components/drawers/Sidebar';
+import { GlossaryDrawer } from '../components/drawers/GlossaryDrawer';
 import { SettingsModal, type Settings } from '../components/modals/SettingsModal';
+import { GlossaryContext } from '../lib/glossaryContext';
 
 export const Reader = () => {
   const { scrollYProgress, scrollY } = useScroll();
@@ -16,6 +18,7 @@ export const Reader = () => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [, setLocation] = useLocation();
+  const [glossaryTermId, setGlossaryTermId] = useState<string | null>(null);
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest > 300) {
@@ -114,37 +117,40 @@ export const Reader = () => {
   }, [isSidebarOpen]);
 
   return (
-    <div
-      className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-hidden transition-colors duration-300"
-      style={themeVars as CSSProperties}
-    >
-      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
-      <SettingsModal
-        isOpen={isSettingsOpen}
-        onClose={() => setIsSettingsOpen(false)}
-        settings={settings}
-        updateSettings={updateSettings}
-      />
-      <TopNav
-        progress={scrollYProgress}
-        onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
-        onBackToCatalogue={() => setLocation('/')}
-      />
-      <main className="relative pt-14">
-        <Hero />
-        <FullBookReader />
-      </main>
-      <BottomNav onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} progress={scrollYProgress} />
-
-      <motion.button
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: showBackToTop ? 1 : 0, y: showBackToTop ? 0 : 50 }}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`fixed bottom-24 right-8 w-12 h-12 bg-[var(--color-ink)] text-[var(--color-paper)] rounded-full flex items-center justify-center shadow-lg border border-[var(--color-border)] hover:scale-110 transition-transform z-40 ${showBackToTop ? 'pointer-events-auto' : 'pointer-events-none'}`}
-        aria-label="Back to top"
+    <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>
+      <div
+        className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-hidden transition-colors duration-300"
+        style={themeVars as CSSProperties}
       >
-        ↑
-      </motion.button>
-    </div>
+        <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+        <SettingsModal
+          isOpen={isSettingsOpen}
+          onClose={() => setIsSettingsOpen(false)}
+          settings={settings}
+          updateSettings={updateSettings}
+        />
+        <TopNav
+          progress={scrollYProgress}
+          onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
+          onBackToCatalogue={() => setLocation('/')}
+        />
+        <main className="relative pt-14">
+          <Hero />
+          <FullBookReader />
+        </main>
+        <BottomNav onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} progress={scrollYProgress} />
+        <GlossaryDrawer termId={glossaryTermId} onClose={() => setGlossaryTermId(null)} />
+
+        <motion.button
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: showBackToTop ? 1 : 0, y: showBackToTop ? 0 : 50 }}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className={`fixed bottom-24 right-8 w-12 h-12 bg-[var(--color-ink)] text-[var(--color-paper)] rounded-full flex items-center justify-center shadow-lg border border-[var(--color-border)] hover:scale-110 transition-transform z-40 ${showBackToTop ? 'pointer-events-auto' : 'pointer-events-none'}`}
+          aria-label="Back to top"
+        >
+          ↑
+        </motion.button>
+      </div>
+    </GlossaryContext.Provider>
   );
 };
