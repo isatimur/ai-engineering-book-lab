@@ -3,6 +3,7 @@ import { type BookChapter } from '../../data/bookChapters';
 import { MarkdownBlock } from '../text/MarkdownBlock';
 import { InlineIllustration } from './InlineIllustration';
 import { ExpandableSummary } from './ExpandableSummary';
+import { EvidenceRail } from '../../EvidenceRail';
 import { opener, inlineFigsForChapter } from '../../lib/manifest';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
@@ -53,6 +54,7 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
           </React.Fragment>
         );
       })}
+      <EvidenceRail chapterNumber={chapter.number} />
     </article>
   );
 };
