@@ -9,6 +9,7 @@ export type Settings = {
   typography: 'serif' | 'sans' | 'dyslexic';
   fontSize: 'sm' | 'md' | 'lg';
   lineSpacing: 'normal' | 'relaxed' | 'loose';
+  sound: 'off' | 'paper';
 };
 
 type Props = {
@@ -99,6 +100,25 @@ export const SettingsModal = ({ isOpen, onClose, settings, updateSettings }: Pro
                   </button>
                 ))}
              </div>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <span className="opacity-50">Sound</span>
+            <div className="flex gap-2">
+              {(['off', 'paper'] as const).map((s) => (
+                <button
+                  key={s}
+                  onClick={() => updateSettings({ sound: s })}
+                  className={`flex-1 py-3 border border-[var(--color-border)] rounded transition-colors ${
+                    settings.sound === s
+                      ? 'ring-2 ring-[var(--color-ink)] ring-offset-1 ring-offset-[var(--color-paper)] bg-[var(--color-ink)]/5'
+                      : 'hover:bg-[var(--color-ink)]/5'
+                  }`}
+                >
+                  {s}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </motion.div>

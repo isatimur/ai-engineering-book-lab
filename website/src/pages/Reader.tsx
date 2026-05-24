@@ -12,6 +12,7 @@ import { GlossaryDrawer } from '../components/drawers/GlossaryDrawer';
 import { SettingsModal, type Settings } from '../components/modals/SettingsModal';
 import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
+import { scrollAudio } from '../lib/audio';
 
 export const Reader = () => {
   const { scrollYProgress, scrollY } = useScroll();
@@ -35,6 +36,7 @@ export const Reader = () => {
     typography: 'serif',
     fontSize: 'md',
     lineSpacing: 'relaxed',
+    sound: 'off',
   });
 
   const updateSettings = (newSettings: Partial<Settings>) => {
@@ -98,6 +100,14 @@ export const Reader = () => {
       smoothWheel: true,
     });
 
+    let lastY = 0;
+    lenis.on('scroll', ({ scroll }: { scroll: number }) => {
+      if (settings.sound === 'paper' && Math.abs(scroll - lastY) > 24) {
+        scrollAudio.playTick();
+        lastY = scroll;
+      }
+    });
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -108,7 +118,11 @@ export const Reader = () => {
     return () => {
       lenis.destroy();
     };
-  }, []);
+  }, [settings.sound]);
+
+  useEffect(() => {
+    if (settings.sound === 'paper') scrollAudio.initialize();
+  }, [settings.sound]);
 
   useEffect(() => {
     if (isSidebarOpen) {
