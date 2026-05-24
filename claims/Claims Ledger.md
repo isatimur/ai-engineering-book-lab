@@ -178,11 +178,23 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[099-flf_IKnFYnE-from-stateless-nightmares-to-durable-agents-samuel-colvin-pydantic|#99 — Samuel Colvin, Pydantic]]
+    - **Anchor:** `flf_IKnFYnE` 00:00:41.680 → 00:00:42.559 · confidence: high
+    - **Quote:** "durable execution component."
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — durability and reliability are prerequisites for trust.
+    - **Anchor:** `1izYWsokr9s` 00:01:28.640 → 00:01:29.840 · confidence: high
+    - **Quote:** "no one's going to trust your agent."
   - [[044-kmV-qg4uoNI-building-durable-agents-with-workflow-devkit-ai-sdk-peter-wielander-vercel|#44 — Peter Wielander, Vercel]]
+    - **Anchor:** `kmV-qg4uoNI` 00:12:32.000 → 00:12:33.680 · confidence: high
+    - **Quote:** "workflow orchestration layer needs to be"
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
+    - **Anchor:** `A48uhxfxbsM` 00:59:24.160 → 00:59:25.680 · confidence: high
+    - **Quote:** "production CI stack to go and run"
   - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]]
+    - **Anchor:** `ow1we5PzK-o` 00:00:20.400 → 00:00:22.040 · confidence: high
+    - **Quote:** "assemble agent teams that can"
   - [[680-iOXM3zE-2dk-mind-the-gap-in-your-agent-observability-amy-boyd-nitya-narasimhan-microsoft|#680 — Amy Boyd & Nitya Narasimhan, Microsoft]]
+    - **Anchor:** `iOXM3zE-2dk` 00:03:38.400 → 00:03:39.760 · confidence: high
+    - **Quote:** "minding the gap around observability."
 - **Caveats / counterpoints:** Not every AI feature needs a durable workflow runtime. The claim applies once tasks span time, tools, or approvals. Many lightweight assistants do not need full workflow durability.
 - **Candidate chapters:** 6, 7, 8
 - **Reusable phrasing:** A production agent is not just a smart response. It is a stateful workflow that can survive reality.
@@ -192,8 +204,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — approvals and workflow visibility are central.
+    - **Anchor:** `1izYWsokr9s` 00:02:00.079 → 00:02:03.119 · confidence: high
+    - **Quote:** "to be human interaction for approvals or"
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — agency should be tuned as a spectrum with adjustable dials.
+    - **Anchor:** `kDEvo2__Ijg` 00:04:33.280 → 00:04:36.320 · confidence: high
+    - **Quote:** "dial these agency dials far up."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — humans need roll-up visibility into active delegated work.
+    - **Anchor:** `rnDm57Py54A` 01:02:53.920 → 01:02:55.520 · confidence: high
+    - **Quote:** "to have an overview of the processes you"
 - **Caveats / counterpoints:** Too many checkpoints can destroy speed and negate the economic value of delegation. The design goal is selective supervision, not permanent interruption.
 - **Candidate chapters:** 1, 6, 7, 9, 10
 - **Reusable phrasing:** The human control plane is where trust becomes operational.
@@ -203,8 +221,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — agency is a spectrum of dials.
+    - **Anchor:** `kDEvo2__Ijg` 00:16:25.279 → 00:16:28.160 · confidence: high
+    - **Quote:** "a binary thing but as a lever that you can dial"
   - [[201-sl3icG-IjHo-how-to-build-planning-agents-without-losing-control-yogendra-miraje-factset|#201 — Yogendra Miraje, Factset]]
+    - **Anchor:** `sl3icG-IjHo` 00:02:09.759 → 00:02:12.560 · confidence: high
+    - **Quote:** "agentic workflows we can plan and execute"
   - [[202-j_TKDweOsYE-building-agents-the-hard-parts-rita-kozlov-cloudflare|#202 — Rita Kozlov, Cloudflare]]
+    - **Anchor:** `j_TKDweOsYE` 00:04:24.240 → 00:04:25.040 · confidence: high
+    - **Quote:** "send it to me for approval."
 - **Caveats / counterpoints:** Some consumer contexts can tolerate higher autonomy than regulated or adversarial ones. The right setting depends on irreversibility, risk, and observability.
 - **Candidate chapters:** 6, 7, 8, 10
 - **Reusable phrasing:** Useful autonomy is not max autonomy. It is well-tuned autonomy.
@@ -214,8 +238,14 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
+    - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
+    - **Quote:** "software factory"
   - [[632-MhHEGMFCEB0-codex-and-subagents-vaibhav-srivastav-katia-gil-guzman-openai|#632 — Vaibhav Srivastav & Katia Gil Guzman, OpenAI]]
+    - **Anchor:** `MhHEGMFCEB0` 00:02:47.920 → 00:02:51.280 · confidence: high
+    - **Quote:** "unified agent harness that will manage"
   - [[042-rcsliSIy_YU-automating-large-scale-refactors-with-parallel-agents-robert-brennan-openhands|#42 — Robert Brennan, OpenHands]]
+    - **Anchor:** `rcsliSIy_YU` 00:27:26.480 → 00:27:28.159 · confidence: high
+    - **Quote:** "parallel agents working together to fix"
 - **Caveats / counterpoints:** "Factory" can overstate current capability and imply fully autonomous operation prematurely. Best used as a directional metaphor, not a literal present-tense description.
 - **Candidate chapters:** 3, 6, 9
 - **Reusable phrasing:** The mature harness starts to look less like a prompt box and more like a software factory.
@@ -225,8 +255,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Pedro Rodrigues, Supabase]]
+    - **Anchor:** `JT3OzDKrucU` 00:03:31.480 → 00:03:33.760 · confidence: high
+    - **Quote:** "doesn't have to be loaded immediately to context."
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]]
+    - **Anchor:** `pFsfax19yOM` 00:44:24.000 → 00:44:25.520 · confidence: high
+    - **Quote:** "specifically with progressive disclosure."
   - [[686-0n3MKk7r60w-scaling-github-s-official-remote-mcp-server-sam-morrow-github|#686 — Sam Morrow, GitHub]]
+    - **Anchor:** `0n3MKk7r60w` 00:05:33.120 → 00:05:36.040 · confidence: high
+    - **Quote:** "49% reduction of the initial load."
 - **Caveats / counterpoints:** Skills, tool search, and richer clients may eventually hide more of this complexity. For now, teams still have to design the capability surface deliberately.
 - **Candidate chapters:** 5, 6, 9
 - **Reusable phrasing:** Tools expand what an agent can do. Skills and progressive disclosure decide whether it can do it coherently.
