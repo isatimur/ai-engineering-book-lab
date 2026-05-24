@@ -90,8 +90,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[072-tHN44yJoeS8-coding-evals-from-code-snippets-to-codebases-naman-jain-cursor|#72 — Naman Jain, Cursor]] — frames the shift from snippet generation to entire codebases.
+    - **Anchor:** `tHN44yJoeS8` 00:00:47.200 → 00:00:49.600 · confidence: high
+    - **Quote:** "snippets and my last project was generating an entire codebase."
   - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]]
+    - **Anchor:** `ShuJ_CN6zr4` 00:09:55.920 → 00:09:58.000 · confidence: high
+    - **Quote:** "agents MD files an open standard"
   - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Ryan Lopopolo, OpenAI]]
+    - **Anchor:** `am_oeAoUhew` 00:42:21.520 → 00:42:22.880 · confidence: high
+    - **Quote:** "codebase for harness engineering"
 - **Caveats / counterpoints:** Snippet-level tooling remains useful for local assistance, but it cannot stand in for repo-scale evaluation or workflow design.
 - **Candidate chapters:** 3, 4
 - **Reusable phrasing:** The snippet was the old unit of AI coding. The codebase is the new one.
@@ -101,8 +107,14 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]] — emphasizes automated validation, repo affordances, and explicit agent-facing files.
+    - **Anchor:** `ShuJ_CN6zr4` 00:09:55.920 → 00:09:58.000 · confidence: high
+    - **Quote:** "agents MD files an open standard"
   - [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Eric Hou, Augment Code]]
+    - **Anchor:** `Zniw5c9_jx8` 00:11:39.440 → 00:11:41.920 · confidence: high
+    - **Quote:** "context deficit as the biggest blocker."
   - [[621--QFHIoCo-Ko-full-walkthrough-workflow-for-ai-coding-matt-pocock|#621 — Matt Pocock]]
+    - **Anchor:** `-QFHIoCo-Ko` 00:36:57.440 → 00:36:59.200 · confidence: high
+    - **Quote:** "a garbage codebase you're going to get"
 - **Caveats / counterpoints:** "Agent-ready" is not a single checklist for every stack. It is a design stance: convert tacit norms into versioned, machine-usable affordances.
 - **Candidate chapters:** 3, 9
 - **Reusable phrasing:** Good repositories were once human-friendly by default. Now the best ones are explicitly machine-legible too.
@@ -112,8 +124,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[125-L8OoYeDI_ls-evals-are-not-unit-tests-ido-pesok-vercel-v0|#125 — Ido Pesok, Vercel v0]]
+    - **Anchor:** `L8OoYeDI_ls` 00:13:40.000 → 00:13:43.040 · confidence: high
+    - **Quote:** "improvement without measurement is limited and imprecise."
   - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
+    - **Anchor:** `o_LRtAomJCs` 00:00:44.960 → 00:00:45.920 · confidence: high
+    - **Quote:** "reliable scalable applications"
   - [[628-_fQ7Z_Wfouk-why-building-eval-platforms-is-hard-phil-hetzel-braintrust|#628 — Phil Hetzel, Braintrust]] — observability and eval are the same problem from a systems perspective.
+    - **Anchor:** `_fQ7Z_Wfouk` 00:14:29.920 → 00:14:34.720 · confidence: high
+    - **Quote:** "eval to us it's actually the same problem from a from a systems perspective."
 - **Caveats / counterpoints:** Not everything important can be reduced to a single metric. The answer is not no evals; it is richer evaluation systems with human judgment where needed.
 - **Candidate chapters:** 4, 6, 7, 9
 - **Reusable phrasing:** Evals matter because delegated systems need a control loop, not because launch decks need charts.
@@ -123,8 +141,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[072-tHN44yJoeS8-coding-evals-from-code-snippets-to-codebases-naman-jain-cursor|#72 — Naman Jain, Cursor]] — tasks should be natural, real-world, and reliably gradable.
+    - **Anchor:** `tHN44yJoeS8` 00:08:11.039 → 00:08:15.520 · confidence: high
+    - **Quote:** "task should be natural and sourced from the real world and then you should be able to reliably grade them."
   - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
+    - **Anchor:** `o_LRtAomJCs` 00:01:28.400 → 00:01:28.720 · confidence: medium
+    - **Quote:** "it with confidence"
   - [[153-wRJD0inpmjU-evaluating-ai-search-a-practical-framework-for-augmented-ai-systems-quotient-ai-tavily|#153 — Quotient AI + Tavily]]
+    - **Anchor:** `wRJD0inpmjU` 00:06:09.600 → 00:06:11.600 · confidence: high
+    - **Quote:** "Dynamic data sets have real world alignment."
 - **Caveats / counterpoints:** Natural tasks are harder to score and maintain. But that difficulty is evidence of realism, not a reason to retreat to toy benchmarks.
 - **Candidate chapters:** 4, 5, 6
 - **Reusable phrasing:** The more the system does real work, the less synthetic evals can tell you.
@@ -134,9 +158,17 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]]
+    - **Anchor:** `NTBX-wxUhHs` 00:01:58.880 → 00:02:00.320 · confidence: medium
+    - **Quote:** "each and every one of us, you know, feel"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]]
+    - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
+    - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
   - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]]
+    - **Anchor:** `T5IMo5ntyhA` 00:02:22.319 → 00:02:24.000 · confidence: high
+    - **Quote:** "irrelevant facts pollute memory."
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]]
+    - **Anchor:** `hxFpUcvWPcU` 00:00:56.399 → 00:01:00.320 · confidence: high
+    - **Quote:** "LLMs and tools are orchestrated through predefined code paths."
 - **Caveats / counterpoints:** Larger windows reduce some friction. The broader claim is that assembly, ranking, layering, freshness, and tool exposure still determine usefulness.
 - **Candidate chapters:** 5, 6, 10
 - **Reusable phrasing:** Bigger windows help, but context quality is mostly about assembly, not stuffing.
