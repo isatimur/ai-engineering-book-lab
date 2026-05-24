@@ -10,6 +10,7 @@ import { FullBookReader } from '../components/chapter/FullBookReader';
 import { Sidebar } from '../components/drawers/Sidebar';
 import { GlossaryDrawer } from '../components/drawers/GlossaryDrawer';
 import { SettingsModal, type Settings } from '../components/modals/SettingsModal';
+import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
 
 export const Reader = () => {
@@ -19,6 +20,7 @@ export const Reader = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [, setLocation] = useLocation();
   const [glossaryTermId, setGlossaryTermId] = useState<string | null>(null);
+  const [isShareOpen, setIsShareOpen] = useState(false);
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest > 300) {
@@ -133,6 +135,7 @@ export const Reader = () => {
           progress={scrollYProgress}
           onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
           onBackToCatalogue={() => setLocation('/')}
+          onOpenShare={() => setIsShareOpen(true)}
         />
         <main className="relative pt-14">
           <Hero />
@@ -140,6 +143,7 @@ export const Reader = () => {
         </main>
         <BottomNav onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} progress={scrollYProgress} />
         <GlossaryDrawer termId={glossaryTermId} onClose={() => setGlossaryTermId(null)} />
+        <ShareModal isOpen={isShareOpen} onClose={() => setIsShareOpen(false)} />
 
         <motion.button
           initial={{ opacity: 0, y: 50 }}
