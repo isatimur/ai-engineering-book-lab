@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform, useMotionValue, useMotionValueEvent } 
 import Lenis from 'lenis';
 import { type BookChapter, chapters } from './bookChapters';
 import { DynamicVisuals } from './DynamicVisuals';
+import { EvidenceRail } from './EvidenceRail';
 
 const IMAGES = {
   man1: "https://images.unsplash.com/photo-1517245386807-bb43a82c33c4?q=80&w=1200&auto=format&fit=crop",
@@ -867,6 +868,7 @@ const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
           {block.startsWith('## ') ? void (headingFigureIndex += 1) : null}
         </React.Fragment>
       ))}
+      <EvidenceRail chapterNumber={chapter.number} />
     </article>
   );
 };
