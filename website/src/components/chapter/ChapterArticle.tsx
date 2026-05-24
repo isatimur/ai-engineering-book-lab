@@ -4,7 +4,7 @@ import { MarkdownBlock } from '../text/MarkdownBlock';
 import { InlineIllustration } from './InlineIllustration';
 import { ExpandableSummary } from './ExpandableSummary';
 import { EvidenceRail } from '../../EvidenceRail';
-import { opener, inlineFigsForChapter } from '../../lib/manifest';
+import { inlineFigsForChapter } from '../../lib/manifest';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
   const blocks = chapter.content
@@ -14,12 +14,11 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
     .map((b) => b.trim())
     .filter(Boolean);
 
-  const op = opener(chapter.number);
   const figs = inlineFigsForChapter(chapter.number);
   let headingFigureIndex = 0;
 
   return (
-    <article id={`book-chapter-${chapter.number}`} className="book-reader-prose">
+    <div className="book-reader-prose">
       <div className="mb-12 border-b border-[var(--color-border)] pb-8 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
         <span>CHAPTER {chapter.number}</span>
         <span className="mx-3">/</span>
@@ -30,14 +29,6 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
       <div className="mb-10">
         <ExpandableSummary chapter={chapter} />
       </div>
-      {op && (
-        <figure className="mb-12 border border-[var(--color-border)] bg-white">
-          <img src={op.src} alt={`Chapter ${chapter.number} — ${op.title}`} className="block h-auto w-full" loading="lazy" />
-          <figcaption className="border-t border-[var(--color-border)] px-5 py-3 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-            Fig. {chapter.number} — {op.title}
-          </figcaption>
-        </figure>
-      )}
       {blocks.map((block, index) => {
         const isHeading = block.startsWith('## ');
         const figIndex = headingFigureIndex;
@@ -55,6 +46,6 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
         );
       })}
       <EvidenceRail chapterNumber={chapter.number} />
-    </article>
+    </div>
   );
 };
