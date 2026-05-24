@@ -1,0 +1,2236 @@
+{
+  "1": [
+    {
+      "claim_id": "claims#1",
+      "text": "The important transition is from suggestion to delegated execution",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:00:52.960",
+          "end": "00:00:57.280",
+          "start_seconds": 52,
+          "confidence": "medium",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "like that northstar has shifted from helpfulness to productive"
+        },
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:00:34.360",
+          "end": "00:00:36.440",
+          "start_seconds": 34,
+          "confidence": "medium",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "they need more than just the If"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "Chat is an insufficient control surface for long-running or high-stakes work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:11:31.920",
+          "end": "00:11:34.320",
+          "start_seconds": 691,
+          "confidence": "high",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "Chat is one-dimensional. It's a very low bandwidth interface,"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:55.920",
+          "end": "00:02:01.920",
+          "start_seconds": 115,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "Reliability comes less from model cleverness than from surrounding scaffolding",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        },
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:35.040",
+          "end": "00:00:39.200",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "#83 — Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "Agents have intelligence and capabilities, but not always expertise that we need for real work."
+        },
+        {
+          "video_id": "kTnfJszFxCg",
+          "start": "00:02:18.239",
+          "end": "00:02:21.280",
+          "start_seconds": 138,
+          "confidence": "high",
+          "label": "#198 — Harrison Chase, LangChain/LangGraph",
+          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Human oversight works best as an architectural layer, not an afterthought",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:02:00.079",
+          "end": "00:02:03.119",
+          "start_seconds": 120,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "to be human interaction for approvals or"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:04:33.280",
+          "end": "00:04:36.320",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "dial these agency dials far up."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:53.920",
+          "end": "01:02:55.520",
+          "start_seconds": 3773,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "to have an overview of the processes you"
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "claim_id": "claims#1",
+      "text": "The important transition is from suggestion to delegated execution",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:00:52.960",
+          "end": "00:00:57.280",
+          "start_seconds": 52,
+          "confidence": "medium",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "like that northstar has shifted from helpfulness to productive"
+        },
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:00:34.360",
+          "end": "00:00:36.440",
+          "start_seconds": 34,
+          "confidence": "medium",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "they need more than just the If"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "Chat is an insufficient control surface for long-running or high-stakes work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:11:31.920",
+          "end": "00:11:34.320",
+          "start_seconds": 691,
+          "confidence": "high",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "Chat is one-dimensional. It's a very low bandwidth interface,"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:55.920",
+          "end": "00:02:01.920",
+          "start_seconds": 115,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "Reliability comes less from model cleverness than from surrounding scaffolding",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        },
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:35.040",
+          "end": "00:00:39.200",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "#83 — Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "Agents have intelligence and capabilities, but not always expertise that we need for real work."
+        },
+        {
+          "video_id": "kTnfJszFxCg",
+          "start": "00:02:18.239",
+          "end": "00:02:21.280",
+          "start_seconds": 138,
+          "confidence": "high",
+          "label": "#198 — Harrison Chase, LangChain/LangGraph",
+          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Harness quality is a major determinant of coding-agent quality",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:24:40.799",
+          "end": "00:24:45.840",
+          "start_seconds": 1480,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "a good harness is really operationalized around giving the model text at the right time"
+        },
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:03:30.720",
+          "end": "00:03:36.480",
+          "start_seconds": 210,
+          "confidence": "medium",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+        },
+        {
+          "video_id": "Zniw5c9_jx8",
+          "start": "00:18:41.520",
+          "end": "00:18:46.559",
+          "start_seconds": 1121,
+          "confidence": "medium",
+          "label": "#190 — Eric Hou, Augment Code",
+          "quote": "effectively allow us to mentor our Thank"
+        },
+        {
+          "video_id": "x_1EumTaXeE",
+          "start": "00:03:28.239",
+          "end": "00:03:33.920",
+          "start_seconds": 208,
+          "confidence": "high",
+          "label": "#179 — Josh Albrecht, Imbue",
+          "quote": "identifying problems with the code because if there's no problems then it's probably high quality code"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Specs are not paperwork; they are executable intent",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:15:57.120",
+          "end": "00:16:01.759",
+          "start_seconds": 957,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+        },
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:07:02.560",
+          "end": "00:07:09.120",
+          "start_seconds": 422,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "leaving breadcrumbs, documentation, ADRs, persona oriented documentation around what a good job looks like."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#8",
+      "text": "Evals are a control system, not just a test suite",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "L8OoYeDI_ls",
+          "start": "00:13:40.000",
+          "end": "00:13:43.040",
+          "start_seconds": 820,
+          "confidence": "high",
+          "label": "#125 — Ido Pesok, Vercel v0",
+          "quote": "improvement without measurement is limited and imprecise."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:00:44.960",
+          "end": "00:00:45.920",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "reliable scalable applications"
+        },
+        {
+          "video_id": "_fQ7Z_Wfouk",
+          "start": "00:14:29.920",
+          "end": "00:14:34.720",
+          "start_seconds": 869,
+          "confidence": "high",
+          "label": "#628 — Phil Hetzel, Braintrust",
+          "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#9",
+      "text": "Realistic evals must be grounded in natural tasks and operational history",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "tHN44yJoeS8",
+          "start": "00:08:11.039",
+          "end": "00:08:15.520",
+          "start_seconds": 491,
+          "confidence": "high",
+          "label": "#72 — Naman Jain, Cursor",
+          "quote": "task should be natural and sourced from the real world and then you should be able to reliably grade them."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:01:28.400",
+          "end": "00:01:28.720",
+          "start_seconds": 88,
+          "confidence": "medium",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "it with confidence"
+        },
+        {
+          "video_id": "wRJD0inpmjU",
+          "start": "00:06:09.600",
+          "end": "00:06:11.600",
+          "start_seconds": 369,
+          "confidence": "high",
+          "label": "#153 — Quotient AI + Tavily",
+          "quote": "Dynamic data sets have real world alignment."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#10",
+      "text": "Context failure is often a system-assembly problem, not simply a small-context-window problem",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:01:58.880",
+          "end": "00:02:00.320",
+          "start_seconds": 118,
+          "confidence": "medium",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "each and every one of us, you know, feel"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:08.800",
+          "end": "00:00:13.280",
+          "start_seconds": 8,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "connect the dots with graph technology and solve problems like context engineering"
+        },
+        {
+          "video_id": "T5IMo5ntyhA",
+          "start": "00:02:22.319",
+          "end": "00:02:24.000",
+          "start_seconds": 142,
+          "confidence": "high",
+          "label": "#218 — Daniel Chalef, Zep",
+          "quote": "irrelevant facts pollute memory."
+        },
+        {
+          "video_id": "hxFpUcvWPcU",
+          "start": "00:00:56.399",
+          "end": "00:01:00.320",
+          "start_seconds": 56,
+          "confidence": "high",
+          "label": "#193 — Chau Tran, Glean",
+          "quote": "LLMs and tools are orchestrated through predefined code paths."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#11",
+      "text": "Durable state and workflow semantics are trust features, not backend details",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "flf_IKnFYnE",
+          "start": "00:00:41.680",
+          "end": "00:00:42.559",
+          "start_seconds": 41,
+          "confidence": "high",
+          "label": "#99 — Samuel Colvin, Pydantic",
+          "quote": "durable execution component."
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:28.640",
+          "end": "00:01:29.840",
+          "start_seconds": 88,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "no one's going to trust your agent."
+        },
+        {
+          "video_id": "kmV-qg4uoNI",
+          "start": "00:12:32.000",
+          "end": "00:12:33.680",
+          "start_seconds": 752,
+          "confidence": "high",
+          "label": "#44 — Peter Wielander, Vercel",
+          "quote": "workflow orchestration layer needs to be"
+        },
+        {
+          "video_id": "A48uhxfxbsM",
+          "start": "00:59:24.160",
+          "end": "00:59:25.680",
+          "start_seconds": 3564,
+          "confidence": "high",
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "production CI stack to go and run"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:20.400",
+          "end": "00:00:22.040",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "assemble agent teams that can"
+        },
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:03:38.400",
+          "end": "00:03:39.760",
+          "start_seconds": 218,
+          "confidence": "high",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "minding the gap around observability."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Human oversight works best as an architectural layer, not an afterthought",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:02:00.079",
+          "end": "00:02:03.119",
+          "start_seconds": 120,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "to be human interaction for approvals or"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:04:33.280",
+          "end": "00:04:36.320",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "dial these agency dials far up."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:53.920",
+          "end": "01:02:55.520",
+          "start_seconds": 3773,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "to have an overview of the processes you"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#13",
+      "text": "High-stakes systems tune agency instead of maximizing it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:16:25.279",
+          "end": "00:16:28.160",
+          "start_seconds": 985,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "a binary thing but as a lever that you can dial"
+        },
+        {
+          "video_id": "sl3icG-IjHo",
+          "start": "00:02:09.759",
+          "end": "00:02:12.560",
+          "start_seconds": 129,
+          "confidence": "high",
+          "label": "#201 — Yogendra Miraje, Factset",
+          "quote": "agentic workflows we can plan and execute"
+        },
+        {
+          "video_id": "j_TKDweOsYE",
+          "start": "00:04:24.240",
+          "end": "00:04:25.040",
+          "start_seconds": 264,
+          "confidence": "high",
+          "label": "#202 — Rita Kozlov, Cloudflare",
+          "quote": "send it to me for approval."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#14",
+      "text": "The harness is evolving from a local loop into a staged software factory",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:34.480",
+          "end": "00:00:34.880",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "software factory"
+        },
+        {
+          "video_id": "MhHEGMFCEB0",
+          "start": "00:02:47.920",
+          "end": "00:02:51.280",
+          "start_seconds": 167,
+          "confidence": "high",
+          "label": "#632 — Vaibhav Srivastav & Katia Gil Guzman, OpenAI",
+          "quote": "unified agent harness that will manage"
+        },
+        {
+          "video_id": "rcsliSIy_YU",
+          "start": "00:27:26.480",
+          "end": "00:27:28.159",
+          "start_seconds": 1646,
+          "confidence": "high",
+          "label": "#42 — Robert Brennan, OpenHands",
+          "quote": "parallel agents working together to fix"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "The context gap increasingly includes capability packaging and progressive disclosure",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:03:31.480",
+          "end": "00:03:33.760",
+          "start_seconds": 211,
+          "confidence": "high",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "doesn't have to be loaded immediately to context."
+        },
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:44:24.000",
+          "end": "00:44:25.520",
+          "start_seconds": 2664,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "specifically with progressive disclosure."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:05:33.120",
+          "end": "00:05:36.040",
+          "start_seconds": 333,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "49% reduction of the initial load."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#16",
+      "text": "AI-native advantage depends on organizational coherence, not output volume alone",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:20.400",
+          "end": "00:00:22.040",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "assemble agent teams that can"
+        },
+        {
+          "video_id": "ObNKGf9YR0g",
+          "start": "00:09:21.880",
+          "end": "00:09:21.880",
+          "start_seconds": 561,
+          "confidence": "high",
+          "label": "#693 — Eoin Mulgrew, 10 Downing Street",
+          "quote": "workflows,"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:54.400",
+          "end": "01:02:55.520",
+          "start_seconds": 3774,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "overview of the processes you"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "Harness quality now includes capability packaging, not only repo hygiene",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:00:15.759",
+          "end": "00:00:16.240",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "skills at scale."
+        },
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:03:13.040",
+          "end": "00:03:13.880",
+          "start_seconds": 193,
+          "confidence": "high",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "This is how the agent is"
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:05:33.120",
+          "end": "00:05:35.600",
+          "start_seconds": 333,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "49% reduction of the initial"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#18",
+      "text": "Context failure is often a capability-exposure problem, not only a retrieval problem",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:04:10.800",
+          "end": "00:04:12.120",
+          "start_seconds": 250,
+          "confidence": "medium",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "MCP plus the"
+        },
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:44:25.040",
+          "end": "00:44:25.520",
+          "start_seconds": 2665,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "progressive disclosure."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:03:25.560",
+          "end": "00:03:27.160",
+          "start_seconds": 205,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "grouping concept of related product"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#19",
+      "text": "Evals are strongest when they are trace-linked and fed by production observability",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:03:38.400",
+          "end": "00:03:39.760",
+          "start_seconds": 218,
+          "confidence": "medium",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "minding the gap around observability."
+        },
+        {
+          "video_id": "-aM2EDTiaMs",
+          "start": "00:02:52.160",
+          "end": "00:02:53.519",
+          "start_seconds": 172,
+          "confidence": "high",
+          "label": "#655 — Danny Gollapalli & Ben Hylak, Raindrop",
+          "quote": "eval paradigm to a monitoring"
+        },
+        {
+          "video_id": "A48uhxfxbsM",
+          "start": "00:59:24.160",
+          "end": "00:59:25.680",
+          "start_seconds": 3564,
+          "confidence": "high",
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "production CI stack to go and run"
+        }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "claim_id": "claims#1",
+      "text": "The important transition is from suggestion to delegated execution",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:00:52.960",
+          "end": "00:00:57.280",
+          "start_seconds": 52,
+          "confidence": "medium",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "like that northstar has shifted from helpfulness to productive"
+        },
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:00:34.360",
+          "end": "00:00:36.440",
+          "start_seconds": 34,
+          "confidence": "medium",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "they need more than just the If"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Harness quality is a major determinant of coding-agent quality",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:24:40.799",
+          "end": "00:24:45.840",
+          "start_seconds": 1480,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "a good harness is really operationalized around giving the model text at the right time"
+        },
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:03:30.720",
+          "end": "00:03:36.480",
+          "start_seconds": 210,
+          "confidence": "medium",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+        },
+        {
+          "video_id": "Zniw5c9_jx8",
+          "start": "00:18:41.520",
+          "end": "00:18:46.559",
+          "start_seconds": 1121,
+          "confidence": "medium",
+          "label": "#190 — Eric Hou, Augment Code",
+          "quote": "effectively allow us to mentor our Thank"
+        },
+        {
+          "video_id": "x_1EumTaXeE",
+          "start": "00:03:28.239",
+          "end": "00:03:33.920",
+          "start_seconds": 208,
+          "confidence": "high",
+          "label": "#179 — Josh Albrecht, Imbue",
+          "quote": "identifying problems with the code because if there's no problems then it's probably high quality code"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#7",
+      "text": "Agent-ready codebases are designed, not discovered",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:09:55.920",
+          "end": "00:09:58.000",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "agents MD files an open standard"
+        },
+        {
+          "video_id": "Zniw5c9_jx8",
+          "start": "00:11:39.440",
+          "end": "00:11:41.920",
+          "start_seconds": 699,
+          "confidence": "high",
+          "label": "#190 — Eric Hou, Augment Code",
+          "quote": "context deficit as the biggest blocker."
+        },
+        {
+          "video_id": "-QFHIoCo-Ko",
+          "start": "00:36:57.440",
+          "end": "00:36:59.200",
+          "start_seconds": 2217,
+          "confidence": "high",
+          "label": "#621 — Matt Pocock",
+          "quote": "a garbage codebase you're going to get"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#8",
+      "text": "Evals are a control system, not just a test suite",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "L8OoYeDI_ls",
+          "start": "00:13:40.000",
+          "end": "00:13:43.040",
+          "start_seconds": 820,
+          "confidence": "high",
+          "label": "#125 — Ido Pesok, Vercel v0",
+          "quote": "improvement without measurement is limited and imprecise."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:00:44.960",
+          "end": "00:00:45.920",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "reliable scalable applications"
+        },
+        {
+          "video_id": "_fQ7Z_Wfouk",
+          "start": "00:14:29.920",
+          "end": "00:14:34.720",
+          "start_seconds": 869,
+          "confidence": "high",
+          "label": "#628 — Phil Hetzel, Braintrust",
+          "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Human oversight works best as an architectural layer, not an afterthought",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:02:00.079",
+          "end": "00:02:03.119",
+          "start_seconds": 120,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "to be human interaction for approvals or"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:04:33.280",
+          "end": "00:04:36.320",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "dial these agency dials far up."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:53.920",
+          "end": "01:02:55.520",
+          "start_seconds": 3773,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "to have an overview of the processes you"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#14",
+      "text": "The harness is evolving from a local loop into a staged software factory",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:34.480",
+          "end": "00:00:34.880",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "software factory"
+        },
+        {
+          "video_id": "MhHEGMFCEB0",
+          "start": "00:02:47.920",
+          "end": "00:02:51.280",
+          "start_seconds": 167,
+          "confidence": "high",
+          "label": "#632 — Vaibhav Srivastav & Katia Gil Guzman, OpenAI",
+          "quote": "unified agent harness that will manage"
+        },
+        {
+          "video_id": "rcsliSIy_YU",
+          "start": "00:27:26.480",
+          "end": "00:27:28.159",
+          "start_seconds": 1646,
+          "confidence": "high",
+          "label": "#42 — Robert Brennan, OpenHands",
+          "quote": "parallel agents working together to fix"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "The context gap increasingly includes capability packaging and progressive disclosure",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:03:31.480",
+          "end": "00:03:33.760",
+          "start_seconds": 211,
+          "confidence": "high",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "doesn't have to be loaded immediately to context."
+        },
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:44:24.000",
+          "end": "00:44:25.520",
+          "start_seconds": 2664,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "specifically with progressive disclosure."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:05:33.120",
+          "end": "00:05:36.040",
+          "start_seconds": 333,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "49% reduction of the initial load."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#16",
+      "text": "AI-native advantage depends on organizational coherence, not output volume alone",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:20.400",
+          "end": "00:00:22.040",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "assemble agent teams that can"
+        },
+        {
+          "video_id": "ObNKGf9YR0g",
+          "start": "00:09:21.880",
+          "end": "00:09:21.880",
+          "start_seconds": 561,
+          "confidence": "high",
+          "label": "#693 — Eoin Mulgrew, 10 Downing Street",
+          "quote": "workflows,"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:54.400",
+          "end": "01:02:55.520",
+          "start_seconds": 3774,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "overview of the processes you"
+        }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "claim_id": "claims#1",
+      "text": "The important transition is from suggestion to delegated execution",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:00:52.960",
+          "end": "00:00:57.280",
+          "start_seconds": 52,
+          "confidence": "medium",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "like that northstar has shifted from helpfulness to productive"
+        },
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:00:34.360",
+          "end": "00:00:36.440",
+          "start_seconds": 34,
+          "confidence": "medium",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "they need more than just the If"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "Reliability comes less from model cleverness than from surrounding scaffolding",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        },
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:35.040",
+          "end": "00:00:39.200",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "#83 — Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "Agents have intelligence and capabilities, but not always expertise that we need for real work."
+        },
+        {
+          "video_id": "kTnfJszFxCg",
+          "start": "00:02:18.239",
+          "end": "00:02:21.280",
+          "start_seconds": 138,
+          "confidence": "high",
+          "label": "#198 — Harrison Chase, LangChain/LangGraph",
+          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Specs are not paperwork; they are executable intent",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:15:57.120",
+          "end": "00:16:01.759",
+          "start_seconds": 957,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+        },
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:07:02.560",
+          "end": "00:07:09.120",
+          "start_seconds": 422,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "leaving breadcrumbs, documentation, ADRs, persona oriented documentation around what a good job looks like."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#10",
+      "text": "Context failure is often a system-assembly problem, not simply a small-context-window problem",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:01:58.880",
+          "end": "00:02:00.320",
+          "start_seconds": 118,
+          "confidence": "medium",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "each and every one of us, you know, feel"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:08.800",
+          "end": "00:00:13.280",
+          "start_seconds": 8,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "connect the dots with graph technology and solve problems like context engineering"
+        },
+        {
+          "video_id": "T5IMo5ntyhA",
+          "start": "00:02:22.319",
+          "end": "00:02:24.000",
+          "start_seconds": 142,
+          "confidence": "high",
+          "label": "#218 — Daniel Chalef, Zep",
+          "quote": "irrelevant facts pollute memory."
+        },
+        {
+          "video_id": "hxFpUcvWPcU",
+          "start": "00:00:56.399",
+          "end": "00:01:00.320",
+          "start_seconds": 56,
+          "confidence": "high",
+          "label": "#193 — Chau Tran, Glean",
+          "quote": "LLMs and tools are orchestrated through predefined code paths."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Human oversight works best as an architectural layer, not an afterthought",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:02:00.079",
+          "end": "00:02:03.119",
+          "start_seconds": 120,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "to be human interaction for approvals or"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:04:33.280",
+          "end": "00:04:36.320",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "dial these agency dials far up."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:53.920",
+          "end": "01:02:55.520",
+          "start_seconds": 3773,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "to have an overview of the processes you"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#13",
+      "text": "High-stakes systems tune agency instead of maximizing it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:16:25.279",
+          "end": "00:16:28.160",
+          "start_seconds": 985,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "a binary thing but as a lever that you can dial"
+        },
+        {
+          "video_id": "sl3icG-IjHo",
+          "start": "00:02:09.759",
+          "end": "00:02:12.560",
+          "start_seconds": 129,
+          "confidence": "high",
+          "label": "#201 — Yogendra Miraje, Factset",
+          "quote": "agentic workflows we can plan and execute"
+        },
+        {
+          "video_id": "j_TKDweOsYE",
+          "start": "00:04:24.240",
+          "end": "00:04:25.040",
+          "start_seconds": 264,
+          "confidence": "high",
+          "label": "#202 — Rita Kozlov, Cloudflare",
+          "quote": "send it to me for approval."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#16",
+      "text": "AI-native advantage depends on organizational coherence, not output volume alone",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:20.400",
+          "end": "00:00:22.040",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "assemble agent teams that can"
+        },
+        {
+          "video_id": "ObNKGf9YR0g",
+          "start": "00:09:21.880",
+          "end": "00:09:21.880",
+          "start_seconds": 561,
+          "confidence": "high",
+          "label": "#693 — Eoin Mulgrew, 10 Downing Street",
+          "quote": "workflows,"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:54.400",
+          "end": "01:02:55.520",
+          "start_seconds": 3774,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "overview of the processes you"
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "claim_id": "claims#2",
+      "text": "Chat is an insufficient control surface for long-running or high-stakes work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "XNtkiQJ49Ps",
+          "start": "00:11:31.920",
+          "end": "00:11:34.320",
+          "start_seconds": 691,
+          "confidence": "high",
+          "label": "#3 — Jacob Lauritzen, Legora",
+          "quote": "Chat is one-dimensional. It's a very low bandwidth interface,"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:55.920",
+          "end": "00:02:01.920",
+          "start_seconds": 115,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#8",
+      "text": "Evals are a control system, not just a test suite",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "L8OoYeDI_ls",
+          "start": "00:13:40.000",
+          "end": "00:13:43.040",
+          "start_seconds": 820,
+          "confidence": "high",
+          "label": "#125 — Ido Pesok, Vercel v0",
+          "quote": "improvement without measurement is limited and imprecise."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:00:44.960",
+          "end": "00:00:45.920",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "reliable scalable applications"
+        },
+        {
+          "video_id": "_fQ7Z_Wfouk",
+          "start": "00:14:29.920",
+          "end": "00:14:34.720",
+          "start_seconds": 869,
+          "confidence": "high",
+          "label": "#628 — Phil Hetzel, Braintrust",
+          "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#11",
+      "text": "Durable state and workflow semantics are trust features, not backend details",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "flf_IKnFYnE",
+          "start": "00:00:41.680",
+          "end": "00:00:42.559",
+          "start_seconds": 41,
+          "confidence": "high",
+          "label": "#99 — Samuel Colvin, Pydantic",
+          "quote": "durable execution component."
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:28.640",
+          "end": "00:01:29.840",
+          "start_seconds": 88,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "no one's going to trust your agent."
+        },
+        {
+          "video_id": "kmV-qg4uoNI",
+          "start": "00:12:32.000",
+          "end": "00:12:33.680",
+          "start_seconds": 752,
+          "confidence": "high",
+          "label": "#44 — Peter Wielander, Vercel",
+          "quote": "workflow orchestration layer needs to be"
+        },
+        {
+          "video_id": "A48uhxfxbsM",
+          "start": "00:59:24.160",
+          "end": "00:59:25.680",
+          "start_seconds": 3564,
+          "confidence": "high",
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "production CI stack to go and run"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:20.400",
+          "end": "00:00:22.040",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "assemble agent teams that can"
+        },
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:03:38.400",
+          "end": "00:03:39.760",
+          "start_seconds": 218,
+          "confidence": "high",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "minding the gap around observability."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Human oversight works best as an architectural layer, not an afterthought",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:02:00.079",
+          "end": "00:02:03.119",
+          "start_seconds": 120,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "to be human interaction for approvals or"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:04:33.280",
+          "end": "00:04:36.320",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "dial these agency dials far up."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:53.920",
+          "end": "01:02:55.520",
+          "start_seconds": 3773,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "to have an overview of the processes you"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#13",
+      "text": "High-stakes systems tune agency instead of maximizing it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:16:25.279",
+          "end": "00:16:28.160",
+          "start_seconds": 985,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "a binary thing but as a lever that you can dial"
+        },
+        {
+          "video_id": "sl3icG-IjHo",
+          "start": "00:02:09.759",
+          "end": "00:02:12.560",
+          "start_seconds": 129,
+          "confidence": "high",
+          "label": "#201 — Yogendra Miraje, Factset",
+          "quote": "agentic workflows we can plan and execute"
+        },
+        {
+          "video_id": "j_TKDweOsYE",
+          "start": "00:04:24.240",
+          "end": "00:04:25.040",
+          "start_seconds": 264,
+          "confidence": "high",
+          "label": "#202 — Rita Kozlov, Cloudflare",
+          "quote": "send it to me for approval."
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "claim_id": "claims#3",
+      "text": "Reliability comes less from model cleverness than from surrounding scaffolding",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        },
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:35.040",
+          "end": "00:00:39.200",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "#83 — Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "Agents have intelligence and capabilities, but not always expertise that we need for real work."
+        },
+        {
+          "video_id": "kTnfJszFxCg",
+          "start": "00:02:18.239",
+          "end": "00:02:21.280",
+          "start_seconds": 138,
+          "confidence": "high",
+          "label": "#198 — Harrison Chase, LangChain/LangGraph",
+          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Harness quality is a major determinant of coding-agent quality",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:24:40.799",
+          "end": "00:24:45.840",
+          "start_seconds": 1480,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "a good harness is really operationalized around giving the model text at the right time"
+        },
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:03:30.720",
+          "end": "00:03:36.480",
+          "start_seconds": 210,
+          "confidence": "medium",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+        },
+        {
+          "video_id": "Zniw5c9_jx8",
+          "start": "00:18:41.520",
+          "end": "00:18:46.559",
+          "start_seconds": 1121,
+          "confidence": "medium",
+          "label": "#190 — Eric Hou, Augment Code",
+          "quote": "effectively allow us to mentor our Thank"
+        },
+        {
+          "video_id": "x_1EumTaXeE",
+          "start": "00:03:28.239",
+          "end": "00:03:33.920",
+          "start_seconds": 208,
+          "confidence": "high",
+          "label": "#179 — Josh Albrecht, Imbue",
+          "quote": "identifying problems with the code because if there's no problems then it's probably high quality code"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Specs are not paperwork; they are executable intent",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:15:57.120",
+          "end": "00:16:01.759",
+          "start_seconds": 957,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+        },
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:07:02.560",
+          "end": "00:07:09.120",
+          "start_seconds": 422,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "leaving breadcrumbs, documentation, ADRs, persona oriented documentation around what a good job looks like."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#6",
+      "text": "The practical unit of AI coding is the codebase, not the snippet",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "tHN44yJoeS8",
+          "start": "00:00:47.200",
+          "end": "00:00:49.600",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#72 — Naman Jain, Cursor",
+          "quote": "snippets and my last project was generating an entire codebase."
+        },
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:09:55.920",
+          "end": "00:09:58.000",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "agents MD files an open standard"
+        },
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:42:21.520",
+          "end": "00:42:22.880",
+          "start_seconds": 2541,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "codebase for harness engineering"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#7",
+      "text": "Agent-ready codebases are designed, not discovered",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:09:55.920",
+          "end": "00:09:58.000",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "agents MD files an open standard"
+        },
+        {
+          "video_id": "Zniw5c9_jx8",
+          "start": "00:11:39.440",
+          "end": "00:11:41.920",
+          "start_seconds": 699,
+          "confidence": "high",
+          "label": "#190 — Eric Hou, Augment Code",
+          "quote": "context deficit as the biggest blocker."
+        },
+        {
+          "video_id": "-QFHIoCo-Ko",
+          "start": "00:36:57.440",
+          "end": "00:36:59.200",
+          "start_seconds": 2217,
+          "confidence": "high",
+          "label": "#621 — Matt Pocock",
+          "quote": "a garbage codebase you're going to get"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#14",
+      "text": "The harness is evolving from a local loop into a staged software factory",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:34.480",
+          "end": "00:00:34.880",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "software factory"
+        },
+        {
+          "video_id": "MhHEGMFCEB0",
+          "start": "00:02:47.920",
+          "end": "00:02:51.280",
+          "start_seconds": 167,
+          "confidence": "high",
+          "label": "#632 — Vaibhav Srivastav & Katia Gil Guzman, OpenAI",
+          "quote": "unified agent harness that will manage"
+        },
+        {
+          "video_id": "rcsliSIy_YU",
+          "start": "00:27:26.480",
+          "end": "00:27:28.159",
+          "start_seconds": 1646,
+          "confidence": "high",
+          "label": "#42 — Robert Brennan, OpenHands",
+          "quote": "parallel agents working together to fix"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "Harness quality now includes capability packaging, not only repo hygiene",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:00:15.759",
+          "end": "00:00:16.240",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "skills at scale."
+        },
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:03:13.040",
+          "end": "00:03:13.880",
+          "start_seconds": 193,
+          "confidence": "high",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "This is how the agent is"
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:05:33.120",
+          "end": "00:05:35.600",
+          "start_seconds": 333,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "49% reduction of the initial"
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "claim_id": "claims#3",
+      "text": "Reliability comes less from model cleverness than from surrounding scaffolding",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        },
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:35.040",
+          "end": "00:00:39.200",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "#83 — Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "Agents have intelligence and capabilities, but not always expertise that we need for real work."
+        },
+        {
+          "video_id": "kTnfJszFxCg",
+          "start": "00:02:18.239",
+          "end": "00:02:21.280",
+          "start_seconds": 138,
+          "confidence": "high",
+          "label": "#198 — Harrison Chase, LangChain/LangGraph",
+          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Harness quality is a major determinant of coding-agent quality",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:24:40.799",
+          "end": "00:24:45.840",
+          "start_seconds": 1480,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "a good harness is really operationalized around giving the model text at the right time"
+        },
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:03:30.720",
+          "end": "00:03:36.480",
+          "start_seconds": 210,
+          "confidence": "medium",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+        },
+        {
+          "video_id": "Zniw5c9_jx8",
+          "start": "00:18:41.520",
+          "end": "00:18:46.559",
+          "start_seconds": 1121,
+          "confidence": "medium",
+          "label": "#190 — Eric Hou, Augment Code",
+          "quote": "effectively allow us to mentor our Thank"
+        },
+        {
+          "video_id": "x_1EumTaXeE",
+          "start": "00:03:28.239",
+          "end": "00:03:33.920",
+          "start_seconds": 208,
+          "confidence": "high",
+          "label": "#179 — Josh Albrecht, Imbue",
+          "quote": "identifying problems with the code because if there's no problems then it's probably high quality code"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Specs are not paperwork; they are executable intent",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:15:57.120",
+          "end": "00:16:01.759",
+          "start_seconds": 957,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+        },
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:07:02.560",
+          "end": "00:07:09.120",
+          "start_seconds": 422,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "leaving breadcrumbs, documentation, ADRs, persona oriented documentation around what a good job looks like."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#6",
+      "text": "The practical unit of AI coding is the codebase, not the snippet",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "tHN44yJoeS8",
+          "start": "00:00:47.200",
+          "end": "00:00:49.600",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#72 — Naman Jain, Cursor",
+          "quote": "snippets and my last project was generating an entire codebase."
+        },
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:09:55.920",
+          "end": "00:09:58.000",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "agents MD files an open standard"
+        },
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:42:21.520",
+          "end": "00:42:22.880",
+          "start_seconds": 2541,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "codebase for harness engineering"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#8",
+      "text": "Evals are a control system, not just a test suite",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "L8OoYeDI_ls",
+          "start": "00:13:40.000",
+          "end": "00:13:43.040",
+          "start_seconds": 820,
+          "confidence": "high",
+          "label": "#125 — Ido Pesok, Vercel v0",
+          "quote": "improvement without measurement is limited and imprecise."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:00:44.960",
+          "end": "00:00:45.920",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "reliable scalable applications"
+        },
+        {
+          "video_id": "_fQ7Z_Wfouk",
+          "start": "00:14:29.920",
+          "end": "00:14:34.720",
+          "start_seconds": 869,
+          "confidence": "high",
+          "label": "#628 — Phil Hetzel, Braintrust",
+          "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#9",
+      "text": "Realistic evals must be grounded in natural tasks and operational history",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "tHN44yJoeS8",
+          "start": "00:08:11.039",
+          "end": "00:08:15.520",
+          "start_seconds": 491,
+          "confidence": "high",
+          "label": "#72 — Naman Jain, Cursor",
+          "quote": "task should be natural and sourced from the real world and then you should be able to reliably grade them."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:01:28.400",
+          "end": "00:01:28.720",
+          "start_seconds": 88,
+          "confidence": "medium",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "it with confidence"
+        },
+        {
+          "video_id": "wRJD0inpmjU",
+          "start": "00:06:09.600",
+          "end": "00:06:11.600",
+          "start_seconds": 369,
+          "confidence": "high",
+          "label": "#153 — Quotient AI + Tavily",
+          "quote": "Dynamic data sets have real world alignment."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#19",
+      "text": "Evals are strongest when they are trace-linked and fed by production observability",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:03:38.400",
+          "end": "00:03:39.760",
+          "start_seconds": 218,
+          "confidence": "medium",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "minding the gap around observability."
+        },
+        {
+          "video_id": "-aM2EDTiaMs",
+          "start": "00:02:52.160",
+          "end": "00:02:53.519",
+          "start_seconds": 172,
+          "confidence": "high",
+          "label": "#655 — Danny Gollapalli & Ben Hylak, Raindrop",
+          "quote": "eval paradigm to a monitoring"
+        },
+        {
+          "video_id": "A48uhxfxbsM",
+          "start": "00:59:24.160",
+          "end": "00:59:25.680",
+          "start_seconds": 3564,
+          "confidence": "high",
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "production CI stack to go and run"
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "claim_id": "claims#9",
+      "text": "Realistic evals must be grounded in natural tasks and operational history",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "tHN44yJoeS8",
+          "start": "00:08:11.039",
+          "end": "00:08:15.520",
+          "start_seconds": 491,
+          "confidence": "high",
+          "label": "#72 — Naman Jain, Cursor",
+          "quote": "task should be natural and sourced from the real world and then you should be able to reliably grade them."
+        },
+        {
+          "video_id": "o_LRtAomJCs",
+          "start": "00:01:28.400",
+          "end": "00:01:28.720",
+          "start_seconds": 88,
+          "confidence": "medium",
+          "label": "#184 — Samuel Colvin, Pydantic",
+          "quote": "it with confidence"
+        },
+        {
+          "video_id": "wRJD0inpmjU",
+          "start": "00:06:09.600",
+          "end": "00:06:11.600",
+          "start_seconds": 369,
+          "confidence": "high",
+          "label": "#153 — Quotient AI + Tavily",
+          "quote": "Dynamic data sets have real world alignment."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#10",
+      "text": "Context failure is often a system-assembly problem, not simply a small-context-window problem",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:01:58.880",
+          "end": "00:02:00.320",
+          "start_seconds": 118,
+          "confidence": "medium",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "each and every one of us, you know, feel"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:08.800",
+          "end": "00:00:13.280",
+          "start_seconds": 8,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "connect the dots with graph technology and solve problems like context engineering"
+        },
+        {
+          "video_id": "T5IMo5ntyhA",
+          "start": "00:02:22.319",
+          "end": "00:02:24.000",
+          "start_seconds": 142,
+          "confidence": "high",
+          "label": "#218 — Daniel Chalef, Zep",
+          "quote": "irrelevant facts pollute memory."
+        },
+        {
+          "video_id": "hxFpUcvWPcU",
+          "start": "00:00:56.399",
+          "end": "00:01:00.320",
+          "start_seconds": 56,
+          "confidence": "high",
+          "label": "#193 — Chau Tran, Glean",
+          "quote": "LLMs and tools are orchestrated through predefined code paths."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "The context gap increasingly includes capability packaging and progressive disclosure",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:03:31.480",
+          "end": "00:03:33.760",
+          "start_seconds": 211,
+          "confidence": "high",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "doesn't have to be loaded immediately to context."
+        },
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:44:24.000",
+          "end": "00:44:25.520",
+          "start_seconds": 2664,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "specifically with progressive disclosure."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:05:33.120",
+          "end": "00:05:36.040",
+          "start_seconds": 333,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "49% reduction of the initial load."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "Harness quality now includes capability packaging, not only repo hygiene",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:00:15.759",
+          "end": "00:00:16.240",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "skills at scale."
+        },
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:03:13.040",
+          "end": "00:03:13.880",
+          "start_seconds": 193,
+          "confidence": "high",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "This is how the agent is"
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:05:33.120",
+          "end": "00:05:35.600",
+          "start_seconds": 333,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "49% reduction of the initial"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#18",
+      "text": "Context failure is often a capability-exposure problem, not only a retrieval problem",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JT3OzDKrucU",
+          "start": "00:04:10.800",
+          "end": "00:04:12.120",
+          "start_seconds": 250,
+          "confidence": "medium",
+          "label": "#683 — Pedro Rodrigues, Supabase",
+          "quote": "MCP plus the"
+        },
+        {
+          "video_id": "pFsfax19yOM",
+          "start": "00:44:25.040",
+          "end": "00:44:25.520",
+          "start_seconds": 2665,
+          "confidence": "high",
+          "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
+          "quote": "progressive disclosure."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:03:25.560",
+          "end": "00:03:27.160",
+          "start_seconds": 205,
+          "confidence": "high",
+          "label": "#686 — Sam Morrow, GitHub",
+          "quote": "grouping concept of related product"
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "claim_id": "claims#11",
+      "text": "Durable state and workflow semantics are trust features, not backend details",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "flf_IKnFYnE",
+          "start": "00:00:41.680",
+          "end": "00:00:42.559",
+          "start_seconds": 41,
+          "confidence": "high",
+          "label": "#99 — Samuel Colvin, Pydantic",
+          "quote": "durable execution component."
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:28.640",
+          "end": "00:01:29.840",
+          "start_seconds": 88,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "no one's going to trust your agent."
+        },
+        {
+          "video_id": "kmV-qg4uoNI",
+          "start": "00:12:32.000",
+          "end": "00:12:33.680",
+          "start_seconds": 752,
+          "confidence": "high",
+          "label": "#44 — Peter Wielander, Vercel",
+          "quote": "workflow orchestration layer needs to be"
+        },
+        {
+          "video_id": "A48uhxfxbsM",
+          "start": "00:59:24.160",
+          "end": "00:59:25.680",
+          "start_seconds": 3564,
+          "confidence": "high",
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "production CI stack to go and run"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:20.400",
+          "end": "00:00:22.040",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "assemble agent teams that can"
+        },
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:03:38.400",
+          "end": "00:03:39.760",
+          "start_seconds": 218,
+          "confidence": "high",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "minding the gap around observability."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#13",
+      "text": "High-stakes systems tune agency instead of maximizing it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:16:25.279",
+          "end": "00:16:28.160",
+          "start_seconds": 985,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "a binary thing but as a lever that you can dial"
+        },
+        {
+          "video_id": "sl3icG-IjHo",
+          "start": "00:02:09.759",
+          "end": "00:02:12.560",
+          "start_seconds": 129,
+          "confidence": "high",
+          "label": "#201 — Yogendra Miraje, Factset",
+          "quote": "agentic workflows we can plan and execute"
+        },
+        {
+          "video_id": "j_TKDweOsYE",
+          "start": "00:04:24.240",
+          "end": "00:04:25.040",
+          "start_seconds": 264,
+          "confidence": "high",
+          "label": "#202 — Rita Kozlov, Cloudflare",
+          "quote": "send it to me for approval."
+        }
+      ]
+    }
+  ]
+}
