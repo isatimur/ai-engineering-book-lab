@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { chapters } from '../../data/bookChapters';
 
@@ -11,6 +12,12 @@ type Props = {
 };
 
 export const Sidebar = ({ isOpen, onClose }: Props) => {
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (isOpen) closeButtonRef.current?.focus();
+  }, [isOpen]);
+
   const scrollToSection = (id: string) => {
     onClose();
     setTimeout(() => {
@@ -40,7 +47,12 @@ export const Sidebar = ({ isOpen, onClose }: Props) => {
       >
         <div className="flex justify-between items-center p-6 border-b border-[var(--color-border)]">
            <span className="text-black/50">CONTENTS</span>
-           <button onClick={onClose} className="hover:text-[var(--color-ink-muted)] hover:scale-110 transition-transform flex items-center justify-center p-2">
+           <button
+             ref={closeButtonRef}
+             onClick={onClose}
+             aria-label="Close navigation"
+             className="hover:text-[var(--color-ink-muted)] hover:scale-110 transition-transform flex items-center justify-center p-2"
+           >
              [X] CLOSE
            </button>
         </div>

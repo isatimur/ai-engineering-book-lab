@@ -31,7 +31,7 @@ export const SettingsModal = ({ isOpen, onClose, settings, updateSettings }: Pro
       >
         <div className="flex justify-between items-center border-b border-[var(--color-border)] pb-4">
           <span className="font-bold">Reader Settings</span>
-          <button onClick={onClose} className="hover:text-[var(--color-ink-muted)] px-2 py-1">[X]</button>
+          <button onClick={onClose} aria-label="Close settings" className="hover:text-[var(--color-ink-muted)] px-2 py-1">[X]</button>
         </div>
 
         <div className="flex flex-col gap-6">
