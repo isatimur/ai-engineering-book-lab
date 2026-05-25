@@ -5,11 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
+    "sync-diagrams": "node scripts/sync-diagrams.mjs",
+    "prebuild": "node scripts/sync-diagrams.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "start": "node server.js",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
@@ -20,7 +24,8 @@
     "motion": "^12.23.24",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
-    "vite": "^6.2.3"
+    "vite": "^6.2.3",
+    "wouter": "^3.10.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
@@ -28,6 +33,7 @@
     "esbuild": "^0.25.0",
     "tailwindcss": "^4.1.14",
     "typescript": "~5.8.2",
-    "vite": "^6.2.3"
+    "vite": "^6.2.3",
+    "vitest": "^2.1.9"
   }
 }

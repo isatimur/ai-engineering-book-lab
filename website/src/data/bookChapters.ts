@@ -1,13 +1,13 @@
-import chapter01 from './content/chapter-01.md?raw';
-import chapter02 from './content/chapter-02.md?raw';
-import chapter03 from './content/chapter-03.md?raw';
-import chapter04 from './content/chapter-04.md?raw';
-import chapter05 from './content/chapter-05.md?raw';
-import chapter06 from './content/chapter-06.md?raw';
-import chapter07 from './content/chapter-07.md?raw';
-import chapter08 from './content/chapter-08.md?raw';
-import chapter09 from './content/chapter-09.md?raw';
-import chapter10 from './content/chapter-10.md?raw';
+import chapter01 from '../content/chapter-01.md?raw';
+import chapter02 from '../content/chapter-02.md?raw';
+import chapter03 from '../content/chapter-03.md?raw';
+import chapter04 from '../content/chapter-04.md?raw';
+import chapter05 from '../content/chapter-05.md?raw';
+import chapter06 from '../content/chapter-06.md?raw';
+import chapter07 from '../content/chapter-07.md?raw';
+import chapter08 from '../content/chapter-08.md?raw';
+import chapter09 from '../content/chapter-09.md?raw';
+import chapter10 from '../content/chapter-10.md?raw';
 
 export type ChapterStatus = 'Drafting' | 'Starter' | 'Outlined';
 

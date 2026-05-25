@@ -208,3 +208,30 @@ body {
     grid-template-columns: 72px 1fr;
   }
 }
+
+.glossary-term {
+  display: inline;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: help;
+  border-bottom: 1px dotted color-mix(in srgb, currentColor 40%, transparent);
+  transition: border-color 0.2s;
+}
+.glossary-term:hover,
+.glossary-term:focus-visible {
+  border-bottom-color: currentColor;
+  outline: none;
+}
+.glossary-term:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
