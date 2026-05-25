@@ -1,0 +1,40 @@
+name: evidence-regen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'claims/Claims Ledger.md'
+      - 'claims/anchors/**'
+      - '99_Meta/scripts/anchor/**'
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install Python deps (if any)
+        run: |
+          if [ -f 99_Meta/scripts/anchor/requirements.txt ]; then
+            pip install -r 99_Meta/scripts/anchor/requirements.txt
+          fi
+      - name: Regenerate evidence.json
+        run: python 99_Meta/scripts/anchor/build_evidence.py
+      - name: Commit changes (if any)
+        run: |
+          if ! git diff --quiet website/src/evidence.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add website/src/evidence.json
+            git commit -m "chore(evidence): regenerate evidence.json from updated ledger [skip ci]"
+            git push
+          else
+            echo "No evidence.json changes — skipping commit"
+          fi
