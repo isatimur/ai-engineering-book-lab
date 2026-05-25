@@ -176,9 +176,15 @@ async function main() {
   manifest.maps.sort((a, b) => a.id.localeCompare(b.id));
 
   await ensureDir(publicDiagrams);
-  await writeFile(join(publicDiagrams, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  const json = JSON.stringify(manifest, null, 2);
+  await writeFile(join(publicDiagrams, 'manifest.json'), json);
+  // Also write to src/data/ so TS code can import it as a module (Vite warns
+  // against importing from public/). public/ copy stays for any runtime fetch.
+  const srcManifestDir = join(websiteRoot, 'src', 'data');
+  await ensureDir(srcManifestDir);
+  await writeFile(join(srcManifestDir, 'diagram-manifest.json'), json);
 
-  log(`done. copied=${copied} kept=${kept} manifest=public/diagrams/manifest.json`);
+  log(`done. copied=${copied} kept=${kept} manifest=public/diagrams/manifest.json + src/data/diagram-manifest.json`);
   log(`counts: overview=${manifest.overview.length} openers=${manifest.openers.length} concepts=${manifest.concepts.length} inline=${manifest.inline.length} maps=${manifest.maps.length}`);
 }
 

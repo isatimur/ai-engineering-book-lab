@@ -1,4 +1,4 @@
-import manifestRaw from '../../public/diagrams/manifest.json';
+import manifestRaw from '../data/diagram-manifest.json';
 
 export type OverviewDiagram = {
   id: string;
