@@ -66,6 +66,14 @@ async function listPngs(dir) {
 }
 
 async function main() {
+  // CI/Vercel may not have access to ../../diagrams/ — the build sandbox is
+  // rooted at website/. In that case, skip sync and rely on the committed
+  // public/diagrams/ + src/data/diagram-manifest.json artifacts.
+  if (!existsSync(diagramsRoot)) {
+    log(`source diagrams/ not found at ${diagramsRoot} - skipping sync (using committed artifacts)`);
+    return;
+  }
+
   const metaRaw = await readFile(metaPath, 'utf8');
   const meta = JSON.parse(metaRaw);
 
