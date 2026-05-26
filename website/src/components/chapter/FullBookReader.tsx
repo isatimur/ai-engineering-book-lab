@@ -1,32 +1,50 @@
-import { useEffect, useState } from 'react';
 import { chapters } from '../../data/bookChapters';
 import { opener } from '../../lib/manifest';
+import { LightboxProvider, useLightbox } from '../../lib/lightbox';
 import { DynamicVisuals } from './DynamicVisuals';
 import { ChapterArticle } from './ChapterArticle';
 import { ChapterIllustration } from './ChapterIllustration';
+import { EvidenceRail } from '../../EvidenceRail';
+
+const ChapterOpener = ({ chapter }: { chapter: string }) => {
+  const op = opener(chapter);
+  const { open } = useLightbox();
+  if (!op) return null;
+  return (
+    <div className="w-full py-16 lg:py-24 px-6 flex flex-col items-center border-b border-[var(--color-border)]">
+      <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-6 text-center">
+        EVIDENCE OF SOURCE  ·  CHAPTER {chapter}
+      </div>
+      <figure className="w-full max-w-[1100px] mx-auto bg-[#1f1f20] rounded-md shadow-2xl overflow-hidden border border-[var(--color-border)]">
+        <button
+          type="button"
+          onClick={() => open(op.src, `Chapter ${chapter} — ${op.title}`)}
+          className="block w-full cursor-zoom-in group"
+          aria-label={`Enlarge chapter ${chapter} evidence diagram`}
+        >
+          <div className="p-6 lg:p-10 flex items-center justify-center">
+            <img
+              src={op.src}
+              alt={`Chapter ${chapter} — ${op.title}`}
+              className="max-w-full h-auto transition-opacity group-hover:opacity-90"
+              loading="lazy"
+            />
+          </div>
+        </button>
+        <figcaption className="border-t border-white/15 px-6 py-3 font-mono text-[10px] uppercase tracking-widest text-white/60 flex flex-wrap items-center justify-between gap-2">
+          <span>FIG. {chapter}  ·  BEFORE · AFTER</span>
+          <span className="opacity-70">CLICK · SCROLL · ZOOM</span>
+        </figcaption>
+      </figure>
+    </div>
+  );
+};
 
 export const FullBookReader = () => {
-  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!lightboxSrc) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setLightboxSrc(null);
-    };
-    window.addEventListener('keydown', onKey);
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      window.removeEventListener('keydown', onKey);
-      document.body.style.overflow = prev;
-    };
-  }, [lightboxSrc]);
-
   return (
-    <section className="w-full bg-[var(--color-paper)] relative pb-24 border-t border-[var(--color-border)] flex flex-col z-20">
-      {chapters.map((chapter, index) => {
-        const op = opener(chapter.number);
-        return (
+    <LightboxProvider>
+      <section className="w-full bg-[var(--color-paper)] relative pb-24 border-t border-[var(--color-border)] flex flex-col z-20">
+        {chapters.map((chapter, index) => (
           <article
             key={chapter.number}
             id={`book-chapter-${chapter.number}`}
@@ -34,34 +52,7 @@ export const FullBookReader = () => {
               index % 2 === 0 ? 'bg-[#F8F6F0]' : 'bg-[var(--color-paper)]'
             }`}
           >
-            {op ? (
-              <div className="w-full py-16 lg:py-24 px-6 flex flex-col items-center border-b border-[var(--color-border)]">
-                <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-6 text-center">
-                  EVIDENCE OF SOURCE  ·  CHAPTER {chapter.number}
-                </div>
-                <figure className="w-full max-w-[1100px] mx-auto bg-[#1f1f20] rounded-md shadow-2xl overflow-hidden border border-[var(--color-border)]">
-                  <button
-                    type="button"
-                    onClick={() => setLightboxSrc(op.src)}
-                    className="block w-full cursor-zoom-in group"
-                    aria-label={`Enlarge chapter ${chapter.number} evidence diagram`}
-                  >
-                    <div className="p-6 lg:p-10 flex items-center justify-center">
-                      <img
-                        src={op.src}
-                        alt={`Chapter ${chapter.number} — ${op.title}`}
-                        className="max-w-full h-auto transition-opacity group-hover:opacity-90"
-                        loading="lazy"
-                      />
-                    </div>
-                  </button>
-                  <figcaption className="border-t border-white/15 px-6 py-3 font-mono text-[10px] uppercase tracking-widest text-white/60 flex flex-wrap items-center justify-between gap-2">
-                    <span>FIG. {chapter.number}  ·  BEFORE · AFTER</span>
-                    <span className="opacity-70">CLICK TO ENLARGE</span>
-                  </figcaption>
-                </figure>
-              </div>
-            ) : null}
+            <ChapterOpener chapter={chapter.number} />
 
             <div className="section-container min-h-screen flex flex-col lg:flex-row relative">
               <div className="lg:w-[42%] xl:w-[45%] relative lg:sticky lg:top-0 h-[46vh] lg:h-screen overflow-hidden border-[var(--color-border)] lg:border-r bg-[#1f1f20] z-0 order-1">
@@ -101,37 +92,18 @@ export const FullBookReader = () => {
                 </div>
               </div>
             </div>
-          </article>
-        );
-      })}
 
-      {lightboxSrc ? (
-        <div
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
-          onClick={() => setLightboxSrc(null)}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Enlarged diagram"
-        >
-          <img
-            src={lightboxSrc}
-            alt="Enlarged diagram"
-            className="max-w-full max-h-full object-contain select-none"
-            onClick={(e) => e.stopPropagation()}
-          />
-          <button
-            type="button"
-            onClick={() => setLightboxSrc(null)}
-            className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/70 hover:text-white text-3xl leading-none w-10 h-10 flex items-center justify-center"
-            aria-label="Close enlarged view"
-          >
-            ×
-          </button>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-widest text-white/50">
-            CLICK ANYWHERE OR PRESS ESC TO CLOSE
-          </div>
-        </div>
-      ) : null}
-    </section>
+            <div className="w-full py-16 lg:py-20 px-6 border-t border-[var(--color-border)]">
+              <div className="w-full max-w-[1100px] mx-auto">
+                <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-2 text-center">
+                  EVIDENCE OF SOURCE  ·  CHAPTER {chapter.number}  ·  VIDEOS
+                </div>
+                <EvidenceRail chapterNumber={chapter.number} />
+              </div>
+            </div>
+          </article>
+        ))}
+      </section>
+    </LightboxProvider>
   );
 };
