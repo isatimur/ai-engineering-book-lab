@@ -463,6 +463,13 @@
       "caption": "A suggested path through the chapters for different reader profiles.",
       "src": "/diagrams/maps/readers-path.png",
       "sourceFile": "01-readers-path.excalidraw"
+    },
+    {
+      "id": "concept-graph",
+      "title": "The 18-Concept Graph",
+      "caption": "How the book's eighteen concepts depend on each other — grouped by their home chapter, with edges showing conceptual coupling. Constrained Delegation is the load-bearing spine.",
+      "src": "/diagrams/maps/concept-graph.png",
+      "sourceFile": "03-concept-graph.excalidraw"
     }
   ]
 }
