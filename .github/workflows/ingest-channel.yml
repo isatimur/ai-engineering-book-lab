@@ -1,0 +1,167 @@
+name: ingest-channel
+
+# Nightly watcher for the AI Engineer YouTube channel.
+#
+# Fetches the latest channel inventory via yt-dlp, compares against existing
+# 01_Videos/*.md notes, and (if any are missing) opens an issue. With
+# mode=ingest (manual dispatch), runs the full ingest pipeline and opens a PR.
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # 07:00 UTC daily
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check (detect only) or ingest (full pipeline + PR)'
+        required: false
+        default: 'check'
+        type: choice
+        options:
+          - check
+          - ingest
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+env:
+  PYTHON_VERSION: '3.13'
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      missing_count: ${{ steps.dry.outputs.missing_count }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install yt-dlp
+        run: pip install --quiet --upgrade yt-dlp
+
+      - name: Dry-run channel comparison
+        id: dry
+        run: |
+          set +e
+          python 99_Meta/scripts/update_ai_engineer_channel.py --dry-run \
+            > /tmp/channel-report.json 2> /tmp/channel-stderr.log
+          rc=$?
+          if [ "$rc" -ne 0 ]; then
+            echo "::error::update_ai_engineer_channel.py exited with $rc"
+            cat /tmp/channel-stderr.log
+            echo '{"status":"error","missing_count":0,"error":"update script failed"}' \
+              > /tmp/channel-report.json
+          fi
+          cat /tmp/channel-report.json
+          MISSING=$(jq -r '.missing_count // 0' /tmp/channel-report.json)
+          echo "missing_count=${MISSING}" >> "$GITHUB_OUTPUT"
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: channel-report
+          path: /tmp/channel-report.json
+          retention-days: 30
+
+      - name: Build issue body
+        if: ${{ steps.dry.outputs.missing_count != '0' && steps.dry.outputs.missing_count != '' }}
+        run: |
+          jq -r '
+            "## New videos detected on the AI Engineer channel\n\n" +
+            "**Detected at:** \(.checked_at // "n/a")\n\n" +
+            "| metric | value |\n|---|---|\n" +
+            "| inventory size | \(.inventory_count // 0) |\n" +
+            "| existing notes | \(.existing_notes // 0) |\n" +
+            "| **missing** | **\(.missing_count // 0)** |\n" +
+            "| batch name | `\(.batch_name // "n/a")` |\n\n" +
+            "### Videos to ingest\n\n" +
+            ([.missing_videos[]? |
+              "- **#\(.playlist_index)** — [\(.title)](https://www.youtube.com/watch?v=\(.id))"]
+              | join("\n")
+            ) +
+            "\n\n---\n\n### To ingest\n\n" +
+            "Re-run this workflow with `mode=ingest`, or locally:\n\n" +
+            "```bash\n./99_Meta/scripts/update_ai_engineer_channel.py\n```\n"
+          ' /tmp/channel-report.json > /tmp/issue-body.md
+          wc -l /tmp/issue-body.md
+
+      - name: Open issue when new videos detected
+        if: ${{ steps.dry.outputs.missing_count != '0' && steps.dry.outputs.missing_count != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MISSING_COUNT: ${{ steps.dry.outputs.missing_count }}
+        run: |
+          gh issue create \
+            --title "channel-watcher: ${MISSING_COUNT} new video(s) on AI Engineer channel" \
+            --body-file /tmp/issue-body.md \
+            --label "ingest,automated"
+
+  ingest:
+    needs: detect
+    if: ${{ needs.detect.outputs.missing_count != '0' && github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'ingest' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install yt-dlp
+        run: pip install --quiet --upgrade yt-dlp
+
+      - name: Run full ingest pipeline
+        run: python 99_Meta/scripts/update_ai_engineer_channel.py
+
+      - name: Create pull request with new corpus material
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/ingest-channel
+          delete-branch: true
+          commit-message: |
+            feat(corpus): ingest new AI Engineer channel videos
+
+            Automated ingest from nightly channel-watcher workflow.
+          title: "feat(corpus): ingest new AI Engineer channel videos"
+          body: |
+            Automated PR from the nightly channel watcher.
+
+            ## What changed
+            - New video notes in `01_Videos/`
+            - Updated transcripts in `99_Meta/transcripts/`
+            - Refreshed `Corpus Stats.md`, `Video Inventory.md`, and synthesis pack
+
+            ## Review checklist
+            - [ ] Skim the new video notes for accuracy
+            - [ ] Verify theme tags look right
+            - [ ] Decide whether any new videos should be cited in the manuscript
+
+            Triggered by: `ingest-channel.yml`
+          labels: |
+            ingest
+            automated
+
+  notify-failure:
+    needs: detect
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open failure issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          SERVER: ${{ github.server_url }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BODY="The nightly ingest-channel workflow failed. See run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}"
+          gh issue create \
+            --repo "${REPO}" \
+            --title "channel-watcher: nightly run FAILED (${DATE})" \
+            --body "${BODY}" \
+            --label "ingest,automated,bug"

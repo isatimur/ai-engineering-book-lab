@@ -1,0 +1,97 @@
+name: diagrams-check
+
+# Enforces that:
+#   - Every .excalidraw source has a freshly rendered .png next to it.
+#   - Every rendered .png is mirrored to website/public/diagrams/ with the
+#     manifest's renamed format.
+#
+# Render itself runs locally (needs Playwright/Chromium via the excalidraw
+# skill) so this CI just verifies sync. If anything is stale, it fails with
+# instructions on how to fix it.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'diagrams/**'
+      - 'website/public/diagrams/**'
+      - 'website/src/data/diagram-manifest.json'
+      - 'scripts/sync-diagrams.sh'
+  pull_request:
+    paths:
+      - 'diagrams/**'
+      - 'website/public/diagrams/**'
+      - 'website/src/data/diagram-manifest.json'
+      - 'scripts/sync-diagrams.sh'
+  schedule:
+    - cron: '0 9 * * *'   # 09:00 UTC daily safety net
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify jq is available
+        run: jq --version
+
+      - name: Run sync-diagrams.sh --check
+        id: check
+        run: |
+          set +e
+          OUTPUT=$(./scripts/sync-diagrams.sh --check 2>&1)
+          echo "$OUTPUT"
+          STALE=$(echo "$OUTPUT"   | grep -oE '[0-9]+ stale'          | head -1 | grep -oE '[0-9]+')
+          MISSING=$(echo "$OUTPUT" | grep -oE '[0-9]+ missing-source' | head -1 | grep -oE '[0-9]+')
+          STALE="${STALE:-0}"
+          MISSING="${MISSING:-0}"
+          echo "stale=${STALE}"     >> "$GITHUB_OUTPUT"
+          echo "missing=${MISSING}" >> "$GITHUB_OUTPUT"
+
+          if [ "${STALE}" != "0" ] || [ "${MISSING}" != "0" ]; then
+            echo
+            echo "::error::Diagrams out of sync (${STALE} stale, ${MISSING} missing source)."
+            echo "::error::Fix locally with: ./scripts/sync-diagrams.sh"
+            exit 1
+          fi
+
+      - name: Verify web copies are present for every manifest entry
+        run: |
+          MISSING_WEB=0
+          while IFS= read -r entry; do
+            web_src=$(echo "$entry" | jq -r '.src')
+            web_path="website/public${web_src}"
+            if [ ! -f "$web_path" ]; then
+              echo "::error file=website/src/data/diagram-manifest.json::missing web copy: $web_path"
+              MISSING_WEB=$((MISSING_WEB + 1))
+            fi
+          done < <(jq -c '[.overview[], .openers[], .concepts[], .inline[], .maps[]] | .[]' website/src/data/diagram-manifest.json)
+          if [ "${MISSING_WEB}" -gt 0 ]; then
+            echo "::error::${MISSING_WEB} diagram(s) referenced by the manifest are missing from website/public/"
+            exit 1
+          fi
+          TOTAL=$(jq '[.overview, .openers, .concepts, .inline, .maps] | add | length' website/src/data/diagram-manifest.json)
+          echo "all ${TOTAL} manifest entries are present on disk."
+
+      - name: Open issue on scheduled-run drift
+        if: ${{ failure() && github.event_name == 'schedule' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SERVER: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BODY="Scheduled diagrams-check detected drift between sources and rendered/synced PNGs.
+          See run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}
+
+          Fix locally:
+          \`\`\`bash
+          ./scripts/sync-diagrams.sh
+          \`\`\`"
+          gh issue create \
+            --repo "${REPO}" \
+            --title "diagrams-check: drift detected (${DATE})" \
+            --body "${BODY}" \
+            --label "diagrams,automated"
