@@ -1,0 +1,213 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 40, "y": 30, "width": 400, "height": 16,
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION", "originalText": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100001, "version": 1, "versionNonce": 2100001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "title", "x": 40, "y": 50, "width": 700, "height": 30,
+      "text": "AI moves where the scarcity lives", "originalText": "AI moves where the scarcity lives",
+      "fontSize": 24, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100002, "version": 1, "versionNonce": 2100002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "line", "id": "sig_left", "x": 40, "y": 88, "width": 110, "height": 0,
+      "strokeColor": "#3b82f6", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100003, "version": 1, "versionNonce": 2100003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "line", "id": "sig_right", "x": 150, "y": 88, "width": 110, "height": 0,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100004, "version": 1, "versionNonce": 2100004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "text", "id": "role", "x": 40, "y": 100, "width": 720, "height": 18,
+      "text": "Cheaper generation does not remove the bottleneck — it relocates it.", "originalText": "Cheaper generation does not remove the bottleneck — it relocates it.",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100005, "version": 1, "versionNonce": 2100005, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "before_lbl", "x": 60, "y": 140, "width": 280, "height": 16,
+      "text": "WHERE SCARCITY USED TO LIVE", "originalText": "WHERE SCARCITY USED TO LIVE",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#b45309", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100006, "version": 1, "versionNonce": 2100006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "before_box", "x": 60, "y": 162, "width": 280, "height": 156,
+      "strokeColor": "#b45309", "backgroundColor": "#fef3c7", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100007, "version": 1, "versionNonce": 2100007, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "before_big", "x": 80, "y": 184, "width": 240, "height": 26,
+      "text": "GENERATION", "originalText": "GENERATION",
+      "fontSize": 20, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#92400e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100008, "version": 1, "versionNonce": 2100008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "before_body", "x": 80, "y": 222, "width": 240, "height": 80,
+      "text": "Writing the code was the\nhard, slow, scarce step.\n\nMore people, more hours\n= more output.", "originalText": "Writing the code was the\nhard, slow, scarce step.\n\nMore people, more hours\n= more output.",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#92400e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100009, "version": 1, "versionNonce": 2100009, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+
+    {
+      "type": "arrow", "id": "shift_arrow", "x": 356, "y": 240, "width": 88, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 4, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100010, "version": 1, "versionNonce": 2100010, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [88, 0]],
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "text", "id": "arrow_lbl", "x": 348, "y": 210, "width": 104, "height": 28,
+      "text": "AI makes\nthis cheap", "originalText": "AI makes\nthis cheap",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100011, "version": 1, "versionNonce": 2100011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "after_lbl", "x": 460, "y": 140, "width": 280, "height": 16,
+      "text": "WHERE SCARCITY LIVES NOW", "originalText": "WHERE SCARCITY LIVES NOW",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100012, "version": 1, "versionNonce": 2100012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "after_box", "x": 460, "y": 162, "width": 280, "height": 156,
+      "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100013, "version": 1, "versionNonce": 2100013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "rectangle", "id": "chip1", "x": 478, "y": 184, "width": 118, "height": 30,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100014, "version": 1, "versionNonce": 2100014, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "chip1t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "chip1t", "x": 490, "y": 191, "width": 94, "height": 16,
+      "text": "judgment", "originalText": "judgment",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100015, "version": 1, "versionNonce": 2100015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip1", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "chip2", "x": 602, "y": 184, "width": 122, "height": 30,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100016, "version": 1, "versionNonce": 2100016, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "chip2t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "chip2t", "x": 616, "y": 191, "width": 94, "height": 16,
+      "text": "prioritization", "originalText": "prioritization",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100017, "version": 1, "versionNonce": 2100017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip2", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "chip3", "x": 478, "y": 224, "width": 118, "height": 30,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100018, "version": 1, "versionNonce": 2100018, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "chip3t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "chip3t", "x": 490, "y": 231, "width": 94, "height": 16,
+      "text": "review capacity", "originalText": "review capacity",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100019, "version": 1, "versionNonce": 2100019, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip3", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "chip4", "x": 604, "y": 224, "width": 118, "height": 30,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100020, "version": 1, "versionNonce": 2100020, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "chip4t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "chip4t", "x": 616, "y": 231, "width": 94, "height": 16,
+      "text": "throughput design", "originalText": "throughput design",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100021, "version": 1, "versionNonce": 2100021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip4", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "after_note", "x": 478, "y": 268, "width": 244, "height": 36,
+      "text": "Coherence — not output — is now\nthe organization's scarce resource.", "originalText": "Coherence — not output — is now\nthe organization's scarce resource.",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100022, "version": 1, "versionNonce": 2100022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+
+    {
+      "type": "text", "id": "caption", "x": 40, "y": 344, "width": 720, "height": 18,
+      "text": "When generation is no longer scarce, judgment and review become the constraint.", "originalText": "When generation is no longer scarce, judgment and review become the constraint.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100023, "version": 1, "versionNonce": 2100023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "citation", "x": 40, "y": 368, "width": 720, "height": 16,
+      "text": "— Dan Shipper, CEO, Every  ·  corpus video #65", "originalText": "— Dan Shipper, CEO, Every  ·  corpus video #65",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 2100024, "version": 1, "versionNonce": 2100024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

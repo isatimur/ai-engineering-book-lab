@@ -1,0 +1,330 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 450, "y": 38, "width": 600, "height": 18,
+      "text": "CHAPTER 2", "originalText": "CHAPTER 2",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600001, "version": 1, "versionNonce": 600001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "title", "x": 150, "y": 58, "width": 1200, "height": 46,
+      "text": "Taste Still Matters When Code Gets Cheap", "originalText": "Taste Still Matters When Code Gets Cheap",
+      "fontSize": 34, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600002, "version": 1, "versionNonce": 600002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "role", "x": 200, "y": 112, "width": 1100, "height": 20,
+      "text": "The human half of the opening argument — what stays scarce once output gets cheap?", "originalText": "The human half of the opening argument — what stays scarce once output gets cheap?",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600003, "version": 1, "versionNonce": 600003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_l", "x": 70, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#dc2626", "backgroundColor": "#fee2e2", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600010, "version": 1, "versionNonce": 600010, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_h", "x": 94, "y": 186, "width": 572, "height": 16,
+      "text": "THE NAIVE WAY", "originalText": "THE NAIVE WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600011, "version": 1, "versionNonce": 600011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_t", "x": 94, "y": 206, "width": 572, "height": 28,
+      "text": "Vibe coding as the default", "originalText": "Vibe coding as the default",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#991b1b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600012, "version": 1, "versionNonce": 600012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_c", "x": 94, "y": 246, "width": 572, "height": 40,
+      "text": "Accept whatever the model emits.\nIf the demo runs, ship it.", "originalText": "Accept whatever the model emits.\nIf the demo runs, ship it.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#7f1d1d", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600013, "version": 1, "versionNonce": 600013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pl_se", "x": 94, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  WHAT GETS SHIPPED TODAY", "originalText": "SAMPLE  —  WHAT GETS SHIPPED TODAY",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600014, "version": 1, "versionNonce": 600014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pl_card", "x": 94, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600015, "version": 1, "versionNonce": 600015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_code", "x": 112, "y": 334, "width": 540, "height": 168,
+      "text": "function h(d) {\n  let r = []\n  for (i in d) {\n    try { r.push(d[i].val * 2) }\n    catch (e) {}          // error swallowed\n  }\n  return r                // i leaks global\n}", "originalText": "function h(d) {\n  let r = []\n  for (i in d) {\n    try { r.push(d[i].val * 2) }\n    catch (e) {}          // error swallowed\n  }\n  return r                // i leaks global\n}",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#fca5a5", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600016, "version": 1, "versionNonce": 600016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "pl_take", "x": 94, "y": 530, "width": 572, "height": 18,
+      "text": "Cost  —  expensive slop nobody can review or trust.", "originalText": "Cost  —  expensive slop nobody can review or trust.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600017, "version": 1, "versionNonce": 600017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_r", "x": 810, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600020, "version": 1, "versionNonce": 600020, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_h", "x": 834, "y": 186, "width": 572, "height": 16,
+      "text": "THE ENGINEERED WAY", "originalText": "THE ENGINEERED WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600021, "version": 1, "versionNonce": 600021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_t", "x": 834, "y": 206, "width": 572, "height": 28,
+      "text": "Vibe engineering", "originalText": "Vibe engineering",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600022, "version": 1, "versionNonce": 600022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_c", "x": 834, "y": 246, "width": 572, "height": 40,
+      "text": "Frame the problem. Set constraints.\nReview every output against intent.", "originalText": "Frame the problem. Set constraints.\nReview every output against intent.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600023, "version": 1, "versionNonce": 600023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pr_se", "x": 834, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  SAME INTENT, ENGINEERED", "originalText": "SAMPLE  —  SAME INTENT, ENGINEERED",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600024, "version": 1, "versionNonce": 600024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pr_card", "x": 834, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600025, "version": 1, "versionNonce": 600025, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_code", "x": 852, "y": 334, "width": 540, "height": 168,
+      "text": "/* Doubles each sensor reading.\n   Invalid input is a caller error. */\nfunction doubleReadings(\n  readings: Reading[]\n): number[] {\n  return readings.map(r => r.value * 2)\n}\n// + a test that pins the contract", "originalText": "/* Doubles each sensor reading.\n   Invalid input is a caller error. */\nfunction doubleReadings(\n  readings: Reading[]\n): number[] {\n  return readings.map(r => r.value * 2)\n}\n// + a test that pins the contract",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600026, "version": 1, "versionNonce": 600026, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "pr_take", "x": 834, "y": 530, "width": 572, "height": 18,
+      "text": "Payoff  —  output you can defend, extend, and trust.", "originalText": "Payoff  —  output you can defend, extend, and trust.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600027, "version": 1, "versionNonce": 600027, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "shift_lbl", "x": 640, "y": 322, "width": 220, "height": 20,
+      "text": "THE SHIFT", "originalText": "THE SHIFT",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600030, "version": 1, "versionNonce": 600030, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "shift_arrow", "x": 700, "y": 372, "width": 100, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600031, "version": 1, "versionNonce": 600031, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, 0]],
+      "startBinding": {"elementId": "panel_l", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "panel_r", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 32,
+      "text": "vibe coding\nto vibe engineering", "originalText": "vibe coding\nto vibe engineering",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600032, "version": 1, "versionNonce": 600032, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+
+    {
+      "type": "text", "id": "claims_h", "x": 70, "y": 598, "width": 800, "height": 20,
+      "text": "WHAT CHAPTER 2 ARGUES", "originalText": "WHAT CHAPTER 2 ARGUES",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600040, "version": 1, "versionNonce": 600040, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "cb1", "x": 70, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600041, "version": 1, "versionNonce": 600041, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb1t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb1t", "x": 78, "y": 636, "width": 12, "height": 16,
+      "text": "1", "originalText": "1",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600042, "version": 1, "versionNonce": 600042, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb1", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct1", "x": 110, "y": 628, "width": 300, "height": 56,
+      "text": "Cheap code raises the value of\ntaste, architecture, and judgment.", "originalText": "Cheap code raises the value of\ntaste, architecture, and judgment.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600043, "version": 1, "versionNonce": 600043, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb2", "x": 420, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600044, "version": 1, "versionNonce": 600044, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb2t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb2t", "x": 428, "y": 636, "width": 12, "height": 16,
+      "text": "2", "originalText": "2",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600045, "version": 1, "versionNonce": 600045, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb2", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct2", "x": 460, "y": 628, "width": 300, "height": 56,
+      "text": "AI amplifies good operators —\nand bad habits — equally.", "originalText": "AI amplifies good operators —\nand bad habits — equally.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600046, "version": 1, "versionNonce": 600046, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb3", "x": 770, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600047, "version": 1, "versionNonce": 600047, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb3t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb3t", "x": 778, "y": 636, "width": 12, "height": 16,
+      "text": "3", "originalText": "3",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600048, "version": 1, "versionNonce": 600048, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb3", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct3", "x": 810, "y": 628, "width": 300, "height": 56,
+      "text": "Vibe coding is great to explore —\ndangerous as a production default.", "originalText": "Vibe coding is great to explore —\ndangerous as a production default.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600049, "version": 1, "versionNonce": 600049, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb4", "x": 1120, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600050, "version": 1, "versionNonce": 600050, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb4t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb4t", "x": 1128, "y": 636, "width": 12, "height": 16,
+      "text": "4", "originalText": "4",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600051, "version": 1, "versionNonce": 600051, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb4", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct4", "x": 1160, "y": 628, "width": 306, "height": 56,
+      "text": "The new scarce skill is problem\nframing and quality discrimination.", "originalText": "The new scarce skill is problem\nframing and quality discrimination.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600052, "version": 1, "versionNonce": 600052, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "q_rule", "x": 70, "y": 712, "width": 1396, "height": 0,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600053, "version": 1, "versionNonce": 600053, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [1396, 0]]
+    },
+    {
+      "type": "text", "id": "quote", "x": 70, "y": 728, "width": 1396, "height": 22,
+      "text": "“Software fundamentals matter now more than they ever have.”   —  Matt Pocock, AI Hero  ·  corpus video #1", "originalText": "“Software fundamentals matter now more than they ever have.”   —  Matt Pocock, AI Hero  ·  corpus video #1",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 600054, "version": 1, "versionNonce": 600054, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

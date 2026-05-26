@@ -1,0 +1,236 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 50, "y": 36, "width": 300, "height": 16,
+      "text": "CONCEPT", "originalText": "CONCEPT",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220001, "version": 1, "versionNonce": 3220001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "name", "x": 50, "y": 56, "width": 820, "height": 40,
+      "text": "Agent Observability", "originalText": "Agent Observability",
+      "fontSize": 32, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220002, "version": 1, "versionNonce": 3220002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "line", "id": "sig_left", "x": 50, "y": 102, "width": 110, "height": 0,
+      "strokeColor": "#3b82f6", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220003, "version": 1, "versionNonce": 3220003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "line", "id": "sig_right", "x": 160, "y": 102, "width": 110, "height": 0,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220004, "version": 1, "versionNonce": 3220004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "text", "id": "definition", "x": 50, "y": 120, "width": 820, "height": 24,
+      "text": "Making model-driven work inspectable enough to debug, evaluate, and govern —\ntraces of what the agent saw, chose, and changed, not just pass/fail logs.",
+      "originalText": "Making model-driven work inspectable enough to debug, evaluate, and govern —\ntraces of what the agent saw, chose, and changed, not just pass/fail logs.",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220005, "version": 1, "versionNonce": 3220005, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "lbl_how", "x": 50, "y": 178, "width": 400, "height": 14,
+      "text": "HOW IT WORKS  ·  TRACE-LINKED EVALUATION FLYWHEEL",
+      "originalText": "HOW IT WORKS  ·  TRACE-LINKED EVALUATION FLYWHEEL",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220006, "version": 1, "versionNonce": 3220006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "zone", "x": 50, "y": 198, "width": 820, "height": 250,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220007, "version": 1, "versionNonce": 3220007, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "rectangle", "id": "n_run", "x": 86, "y": 240, "width": 150, "height": 76,
+      "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220008, "version": 1, "versionNonce": 3220008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "n_run_t", "x": 100, "y": 252, "width": 122, "height": 52,
+      "text": "PRODUCTION RUN\nagent acts in the\nwild — non-\ndeterministic",
+      "originalText": "PRODUCTION RUN\nagent acts in the\nwild — non-\ndeterministic",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220009, "version": 1, "versionNonce": 3220009, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "line", "id": "ar1", "x2": 0, "x": 240, "y": 278, "width": 56, "height": 0,
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220010, "version": 1, "versionNonce": 3220010, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [56, 0]]
+    },
+    {
+      "type": "rectangle", "id": "n_trace", "x": 300, "y": 240, "width": 150, "height": 76,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220011, "version": 1, "versionNonce": 3220011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "n_trace_t", "x": 314, "y": 252, "width": 122, "height": 52,
+      "text": "TRAJECTORY\ntool calls, state\nchanges, timing,\nintermediate output",
+      "originalText": "TRAJECTORY\ntool calls, state\nchanges, timing,\nintermediate output",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220012, "version": 1, "versionNonce": 3220012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "line", "id": "ar2", "x": 454, "y": 278, "width": 56, "height": 0,
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220013, "version": 1, "versionNonce": 3220013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [56, 0]]
+    },
+    {
+      "type": "rectangle", "id": "n_review", "x": 514, "y": 240, "width": 150, "height": 76,
+      "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220014, "version": 1, "versionNonce": 3220014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "n_review_t", "x": 528, "y": 252, "width": 122, "height": 52,
+      "text": "REVIEW + SCORE\nfailing eval jumps\nstraight into the\ntrajectory",
+      "originalText": "REVIEW + SCORE\nfailing eval jumps\nstraight into the\ntrajectory",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#4c1d95", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220015, "version": 1, "versionNonce": 3220015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "line", "id": "ar3", "x": 668, "y": 278, "width": 56, "height": 0,
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220016, "version": 1, "versionNonce": 3220016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [56, 0]]
+    },
+    {
+      "type": "rectangle", "id": "n_eval", "x": 728, "y": 240, "width": 116, "height": 76,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220017, "version": 1, "versionNonce": 3220017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "n_eval_t", "x": 740, "y": 252, "width": 96, "height": 52,
+      "text": "EVAL SET\nfailure becomes\na regression\ntest case",
+      "originalText": "EVAL SET\nfailure becomes\na regression\ntest case",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220018, "version": 1, "versionNonce": 3220018, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "line", "id": "loop", "x": 786, "y": 332, "width": 625, "height": 38,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220019, "version": 1, "versionNonce": 3220019, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0, 0], [0, 38], [-625, 38], [-625, -16]]
+    },
+    {
+      "type": "text", "id": "loop_t", "x": 320, "y": 376, "width": 280, "height": 16,
+      "text": "feeds next run — flywheel, not dashboard",
+      "originalText": "feeds next run — flywheel, not dashboard",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220020, "version": 1, "versionNonce": 3220020, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "tension", "x": 86, "y": 408, "width": 760, "height": 32,
+      "text": "Honest tension: richer traces build trust, but the same traces raise\nprivacy and security risk — good observability is selective, not maximal.",
+      "originalText": "Honest tension: richer traces build trust, but the same traces raise\nprivacy and security risk — good observability is selective, not maximal.",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220021, "version": 1, "versionNonce": 3220021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "lbl_example", "x": 50, "y": 460, "width": 400, "height": 14,
+      "text": "EXAMPLE  ·  ONE SPAN FROM AN AGENT TRAJECTORY",
+      "originalText": "EXAMPLE  ·  ONE SPAN FROM AN AGENT TRAJECTORY",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220022, "version": 1, "versionNonce": 3220022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "evidence", "x": 50, "y": 480, "width": 820, "height": 96,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220023, "version": 1, "versionNonce": 3220023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "evidence_t", "x": 70, "y": 494, "width": 780, "height": 70,
+      "text": "span: tool_call  step=7  parent=plan-2  ·  duration=1.84s",
+      "originalText": "span: tool_call  step=7  parent=plan-2  ·  duration=1.84s",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#e2e8f0", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220024, "version": 1, "versionNonce": 3220024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "evidence_t2", "x": 70, "y": 514, "width": 780, "height": 52,
+      "text": "  tool=\"db.query\"  args={\"table\":\"users\"}  status=\"ok\"\n  state_delta: rows_read 0 → 1402   ·   eval_link: regression #44 FAIL\n  → jump to prior run #41  ·  redact: email, ssn  ·  retain 30d",
+      "originalText": "  tool=\"db.query\"  args={\"table\":\"users\"}  status=\"ok\"\n  state_delta: rows_read 0 → 1402   ·   eval_link: regression #44 FAIL\n  → jump to prior run #41  ·  redact: email, ssn  ·  retain 30d",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#4ade80", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220025, "version": 1, "versionNonce": 3220025, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "footer", "x": 50, "y": 590, "width": 820, "height": 16,
+      "text": "Appears in: ch 4, ch 6, ch 7      ·      — Danny Gollapalli & Ben Hylak, Raindrop · corpus video #655",
+      "originalText": "Appears in: ch 4, ch 6, ch 7      ·      — Danny Gollapalli & Ben Hylak, Raindrop · corpus video #655",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3220026, "version": 1, "versionNonce": 3220026, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

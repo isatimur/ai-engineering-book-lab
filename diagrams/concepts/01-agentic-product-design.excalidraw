@@ -1,0 +1,208 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 50, "y": 36, "width": 300, "height": 16,
+      "text": "CONCEPT", "originalText": "CONCEPT",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110001, "version": 1, "versionNonce": 3110001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "name", "x": 50, "y": 56, "width": 820, "height": 40,
+      "text": "Agentic Product Design", "originalText": "Agentic Product Design",
+      "fontSize": 32, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110002, "version": 1, "versionNonce": 3110002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "line", "id": "sig_left", "x": 50, "y": 102, "width": 110, "height": 0,
+      "strokeColor": "#3b82f6", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110003, "version": 1, "versionNonce": 3110003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "line", "id": "sig_right", "x": 160, "y": 102, "width": 110, "height": 0,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110004, "version": 1, "versionNonce": 3110004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "text", "id": "definition", "x": 50, "y": 120, "width": 820, "height": 24,
+      "text": "Designing products where users delegate to agents instead of conversing —\nnew patterns for trust, progress visibility, and mid-run intervention.",
+      "originalText": "Designing products where users delegate to agents instead of conversing —\nnew patterns for trust, progress visibility, and mid-run intervention.",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110005, "version": 1, "versionNonce": 3110005, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "lbl_how", "x": 50, "y": 178, "width": 300, "height": 14,
+      "text": "HOW IT WORKS  ·  CHAT UX  →  DELEGATION UX", "originalText": "HOW IT WORKS  ·  CHAT UX  →  DELEGATION UX",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110006, "version": 1, "versionNonce": 3110006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "zone", "x": 50, "y": 198, "width": 820, "height": 250,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110007, "version": 1, "versionNonce": 3110007, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "rectangle", "id": "chat_box", "x": 80, "y": 232, "width": 230, "height": 80,
+      "strokeColor": "#dc2626", "backgroundColor": "#fee2e2", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110008, "version": 1, "versionNonce": 3110008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "chat_t", "x": 96, "y": 246, "width": 198, "height": 52,
+      "text": "CHATBOT MODEL\nask  →  reply  →  ask\nuser watches a text box.\nno autonomy, no waiting.",
+      "originalText": "CHATBOT MODEL\nask  →  reply  →  ask\nuser watches a text box.\nno autonomy, no waiting.",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#991b1b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110009, "version": 1, "versionNonce": 3110009, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "arrow_main", "x": 322, "y": 272, "width": 70, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110010, "version": 1, "versionNonce": 3110010, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startBinding": null, "endBinding": null, "lastCommittedPoint": null,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [70, 0]]
+    },
+    {
+      "type": "rectangle", "id": "deleg_box", "x": 404, "y": 222, "width": 436, "height": 110,
+      "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110011, "version": 1, "versionNonce": 3110011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "deleg_t", "x": 420, "y": 234, "width": 404, "height": 16,
+      "text": "DELEGATION MODEL  —  agent runs for minutes / hours",
+      "originalText": "DELEGATION MODEL  —  agent runs for minutes / hours",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110012, "version": 1, "versionNonce": 3110012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "aff1", "x": 420, "y": 258, "width": 122, "height": 56,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110013, "version": 1, "versionNonce": 3110013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "aff1_t", "x": 430, "y": 268, "width": 102, "height": 36,
+      "text": "SHOW WORK\nprogress feed,\nnot just result",
+      "originalText": "SHOW WORK\nprogress feed,\nnot just result",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110014, "version": 1, "versionNonce": 3110014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "rectangle", "id": "aff2", "x": 552, "y": 258, "width": 122, "height": 56,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110015, "version": 1, "versionNonce": 3110015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "aff2_t", "x": 562, "y": 268, "width": 102, "height": 36,
+      "text": "INTERRUPT\ncheap redirect,\nfirst-class",
+      "originalText": "INTERRUPT\ncheap redirect,\nfirst-class",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110016, "version": 1, "versionNonce": 3110016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "rectangle", "id": "aff3", "x": 684, "y": 258, "width": 122, "height": 56,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110017, "version": 1, "versionNonce": 3110017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "aff3_t", "x": 694, "y": 268, "width": 102, "height": 36,
+      "text": "RECEIPTS\nbefore/after,\naudit log",
+      "originalText": "RECEIPTS\nbefore/after,\naudit log",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110018, "version": 1, "versionNonce": 3110018, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.35
+    },
+    {
+      "type": "text", "id": "principle", "x": 80, "y": 372, "width": 760, "height": 48,
+      "text": "Progressive trust: new users see narrow delegation; calibrated users\nunlock broader autonomy. Escalation (“ask, don't guess”) is a feature,\nnot a failure mode — and the agent's blast radius is visible up front.",
+      "originalText": "Progressive trust: new users see narrow delegation; calibrated users\nunlock broader autonomy. Escalation (“ask, don't guess”) is a feature,\nnot a failure mode — and the agent's blast radius is visible up front.",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110019, "version": 1, "versionNonce": 3110019, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "lbl_example", "x": 50, "y": 460, "width": 300, "height": 14,
+      "text": "EXAMPLE  ·  LONG-RUNNING AGENT, PROGRESS AS A USER SURFACE",
+      "originalText": "EXAMPLE  ·  LONG-RUNNING AGENT, PROGRESS AS A USER SURFACE",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110020, "version": 1, "versionNonce": 3110020, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "evidence", "x": 50, "y": 480, "width": 820, "height": 96,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110021, "version": 1, "versionNonce": 3110021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "evidence_t", "x": 70, "y": 494, "width": 780, "height": 70,
+      "text": "Agent status panel  —  user reads progress, never logs:\n  [✓] found 3 candidate files     [✓] reviewed auth.ts, api.ts\n  [▶] running test suite  (12/40)   … awaiting approval to merge\n  blast radius: branch fix/login-retry  ·  no prod writes",
+      "originalText": "Agent status panel  —  user reads progress, never logs:\n  [✓] found 3 candidate files     [✓] reviewed auth.ts, api.ts\n  [▶] running test suite  (12/40)   … awaiting approval to merge\n  blast radius: branch fix/login-retry  ·  no prod writes",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110022, "version": 1, "versionNonce": 3110022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "footer", "x": 50, "y": 590, "width": 820, "height": 16,
+      "text": "Appears in: ch 1, ch 6      ·      — Ash Prabaker & Andrew Wilson, Anthropic · corpus video #691",
+      "originalText": "Appears in: ch 1, ch 6      ·      — Ash Prabaker & Andrew Wilson, Anthropic · corpus video #691",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3110023, "version": 1, "versionNonce": 3110023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

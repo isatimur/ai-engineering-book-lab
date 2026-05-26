@@ -1,0 +1,330 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 450, "y": 38, "width": 600, "height": 18,
+      "text": "CHAPTER 7", "originalText": "CHAPTER 7",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100001, "version": 1, "versionNonce": 1100001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "title", "x": 150, "y": 58, "width": 1200, "height": 46,
+      "text": "Security, Identity & High-Stakes Trust", "originalText": "Security, Identity & High-Stakes Trust",
+      "fontSize": 34, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100002, "version": 1, "versionNonce": 1100002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "role", "x": 200, "y": 112, "width": 1100, "height": 20,
+      "text": "The moment a system can act, trust depends on identity, boundaries, and defensible control.", "originalText": "The moment a system can act, trust depends on identity, boundaries, and defensible control.",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100003, "version": 1, "versionNonce": 1100003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_l", "x": 70, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#dc2626", "backgroundColor": "#fee2e2", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100010, "version": 1, "versionNonce": 1100010, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_h", "x": 94, "y": 186, "width": 572, "height": 16,
+      "text": "THE NAIVE WAY", "originalText": "THE NAIVE WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100011, "version": 1, "versionNonce": 1100011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_t", "x": 94, "y": 206, "width": 572, "height": 28,
+      "text": "A helpful agent, no boundaries", "originalText": "A helpful agent, no boundaries",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#991b1b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100012, "version": 1, "versionNonce": 1100012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_c", "x": 94, "y": 246, "width": 572, "height": 40,
+      "text": "Give the agent broad credentials.\nLet it run; assume good intent.", "originalText": "Give the agent broad credentials.\nLet it run; assume good intent.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#7f1d1d", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100013, "version": 1, "versionNonce": 1100013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pl_se", "x": 94, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  HOW THE AGENT IS RUN", "originalText": "SAMPLE  —  HOW THE AGENT IS RUN",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100014, "version": 1, "versionNonce": 1100014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pl_card", "x": 94, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100015, "version": 1, "versionNonce": 1100015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_code", "x": 112, "y": 344, "width": 540, "height": 150,
+      "text": "agent.run(task, creds = ADMIN_TOKEN)\n# reads any repo, any secret\n# no sandbox, no audit log\n\nmcp_server: bind 0.0.0.0   (no auth)", "originalText": "agent.run(task, creds = ADMIN_TOKEN)\n# reads any repo, any secret\n# no sandbox, no audit log\n\nmcp_server: bind 0.0.0.0   (no auth)",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#fca5a5", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100016, "version": 1, "versionNonce": 1100016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.6
+    },
+    {
+      "type": "text", "id": "pl_take", "x": 94, "y": 530, "width": 572, "height": 18,
+      "text": "Cost  —  an agent that can act is now an attack surface.", "originalText": "Cost  —  an agent that can act is now an attack surface.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100017, "version": 1, "versionNonce": 1100017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_r", "x": 810, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100020, "version": 1, "versionNonce": 1100020, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_h", "x": 834, "y": 186, "width": 572, "height": 16,
+      "text": "THE ENGINEERED WAY", "originalText": "THE ENGINEERED WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100021, "version": 1, "versionNonce": 1100021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_t", "x": 834, "y": 206, "width": 572, "height": 28,
+      "text": "Bounded autonomy", "originalText": "Bounded autonomy",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100022, "version": 1, "versionNonce": 1100022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_c", "x": 834, "y": 246, "width": 572, "height": 40,
+      "text": "Scope identity. Sandbox execution.\nLeast privilege. Audit every action.", "originalText": "Scope identity. Sandbox execution.\nLeast privilege. Audit every action.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100023, "version": 1, "versionNonce": 1100023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pr_se", "x": 834, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  SCOPED, SANDBOXED, AUDITED", "originalText": "SAMPLE  —  SCOPED, SANDBOXED, AUDITED",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100024, "version": 1, "versionNonce": 1100024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pr_card", "x": 834, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100025, "version": 1, "versionNonce": 1100025, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_code", "x": 852, "y": 344, "width": 540, "height": 150,
+      "text": "token = mint(scope=[\"repo:read\"], ttl=15m)\nrun_in_sandbox(task, token)    # isolated\non action.write: require step_up_oauth()\naudit.log(actor, action, resource, ts)\nroot_of_trust: org identity provider", "originalText": "token = mint(scope=[\"repo:read\"], ttl=15m)\nrun_in_sandbox(task, token)    # isolated\non action.write: require step_up_oauth()\naudit.log(actor, action, resource, ts)\nroot_of_trust: org identity provider",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100026, "version": 1, "versionNonce": 1100026, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.6
+    },
+    {
+      "type": "text", "id": "pr_take", "x": 834, "y": 530, "width": 572, "height": 18,
+      "text": "Payoff  —  autonomy you can bound, trace, and revoke.", "originalText": "Payoff  —  autonomy you can bound, trace, and revoke.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100027, "version": 1, "versionNonce": 1100027, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "shift_lbl", "x": 640, "y": 322, "width": 220, "height": 20,
+      "text": "THE SHIFT", "originalText": "THE SHIFT",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100030, "version": 1, "versionNonce": 1100030, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "shift_arrow", "x": 700, "y": 372, "width": 100, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100031, "version": 1, "versionNonce": 1100031, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, 0]],
+      "startBinding": {"elementId": "panel_l", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "panel_r", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 32,
+      "text": "open access\nto bounded autonomy", "originalText": "open access\nto bounded autonomy",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100032, "version": 1, "versionNonce": 1100032, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+
+    {
+      "type": "text", "id": "claims_h", "x": 70, "y": 598, "width": 800, "height": 20,
+      "text": "WHAT CHAPTER 7 ARGUES", "originalText": "WHAT CHAPTER 7 ARGUES",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100040, "version": 1, "versionNonce": 1100040, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "cb1", "x": 70, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100041, "version": 1, "versionNonce": 1100041, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb1t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb1t", "x": 78, "y": 636, "width": 12, "height": 16,
+      "text": "1", "originalText": "1",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100042, "version": 1, "versionNonce": 1100042, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb1", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct1", "x": 110, "y": 628, "width": 300, "height": 56,
+      "text": "The moment agents can act, identity\nand authorization move to the center.", "originalText": "The moment agents can act, identity\nand authorization move to the center.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100043, "version": 1, "versionNonce": 1100043, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb2", "x": 420, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100044, "version": 1, "versionNonce": 1100044, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb2t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb2t", "x": 428, "y": 636, "width": 12, "height": 16,
+      "text": "2", "originalText": "2",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100045, "version": 1, "versionNonce": 1100045, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb2", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct2", "x": 460, "y": 628, "width": 300, "height": 56,
+      "text": "Sandbox, least privilege, and audit\nare product requirements, not extras.", "originalText": "Sandbox, least privilege, and audit\nare product requirements, not extras.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100046, "version": 1, "versionNonce": 1100046, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb3", "x": 770, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100047, "version": 1, "versionNonce": 1100047, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb3t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb3t", "x": 778, "y": 636, "width": 12, "height": 16,
+      "text": "3", "originalText": "3",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100048, "version": 1, "versionNonce": 1100048, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb3", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct3", "x": 810, "y": 628, "width": 300, "height": 56,
+      "text": "Protocol standardization expands the\nattack surface if governance lags.", "originalText": "Protocol standardization expands the\nattack surface if governance lags.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100049, "version": 1, "versionNonce": 1100049, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb4", "x": 1120, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100050, "version": 1, "versionNonce": 1100050, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb4t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb4t", "x": 1128, "y": 636, "width": 12, "height": 16,
+      "text": "4", "originalText": "4",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100051, "version": 1, "versionNonce": 1100051, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb4", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct4", "x": 1160, "y": 628, "width": 306, "height": 56,
+      "text": "High-stakes trust needs bounded\nautonomy plus full traceability.", "originalText": "High-stakes trust needs bounded\nautonomy plus full traceability.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100052, "version": 1, "versionNonce": 1100052, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "q_rule", "x": 70, "y": 712, "width": 1396, "height": 0,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100053, "version": 1, "versionNonce": 1100053, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [1396, 0]]
+    },
+    {
+      "type": "text", "id": "quote", "x": 70, "y": 728, "width": 1396, "height": 44,
+      "text": "“Your insecure MCP server won't survive production.”   —  Tun Shwe, Lenses  ·  corpus video #32\n“Security teams need to establish a root of trust.”   —  Karan Sampath, Anthropic  ·  corpus video #624", "originalText": "“Your insecure MCP server won't survive production.”   —  Tun Shwe, Lenses  ·  corpus video #32\n“Security teams need to establish a root of trust.”   —  Karan Sampath, Anthropic  ·  corpus video #624",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1100054, "version": 1, "versionNonce": 1100054, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

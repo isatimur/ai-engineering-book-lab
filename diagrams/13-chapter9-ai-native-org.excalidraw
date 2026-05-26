@@ -1,0 +1,330 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 450, "y": 38, "width": 600, "height": 18,
+      "text": "CHAPTER 9", "originalText": "CHAPTER 9",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300001, "version": 1, "versionNonce": 1300001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "title", "x": 150, "y": 58, "width": 1200, "height": 46,
+      "text": "The AI-Native Organization", "originalText": "The AI-Native Organization",
+      "fontSize": 34, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300002, "version": 1, "versionNonce": 1300002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "role", "x": 200, "y": 112, "width": 1100, "height": 20,
+      "text": "Zoom out from systems to institutions — how management, roles, and incentives change.", "originalText": "Zoom out from systems to institutions — how management, roles, and incentives change.",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300003, "version": 1, "versionNonce": 1300003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_l", "x": 70, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#dc2626", "backgroundColor": "#fee2e2", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300010, "version": 1, "versionNonce": 1300010, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_h", "x": 94, "y": 186, "width": 572, "height": 16,
+      "text": "THE NAIVE WAY", "originalText": "THE NAIVE WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300011, "version": 1, "versionNonce": 1300011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_t", "x": 94, "y": 206, "width": 572, "height": 28,
+      "text": "AI bought as seat licenses", "originalText": "AI bought as seat licenses",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#991b1b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300012, "version": 1, "versionNonce": 1300012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_c", "x": 94, "y": 246, "width": 572, "height": 40,
+      "text": "Buy 500 Copilot seats. Expect 10x.\nKeep the same org, roles, and process.", "originalText": "Buy 500 Copilot seats. Expect 10x.\nKeep the same org, roles, and process.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#7f1d1d", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300013, "version": 1, "versionNonce": 1300013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pl_se", "x": 94, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  THE ROLLOUT PLAN", "originalText": "SAMPLE  —  THE ROLLOUT PLAN",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300014, "version": 1, "versionNonce": 1300014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pl_card", "x": 94, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300015, "version": 1, "versionNonce": 1300015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_code", "x": 112, "y": 338, "width": 540, "height": 168,
+      "text": "plan:    + 500 AI seats\norg:     unchanged\nroles:   unchanged\nreview:  same 2 reviewers, 5x the PRs\nresult:  giant queue, no shared context\n         -> \"alignment debt\"", "originalText": "plan:    + 500 AI seats\norg:     unchanged\nroles:   unchanged\nreview:  same 2 reviewers, 5x the PRs\nresult:  giant queue, no shared context\n         -> \"alignment debt\"",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#fca5a5", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300016, "version": 1, "versionNonce": 1300016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "pl_take", "x": 94, "y": 530, "width": 572, "height": 18,
+      "text": "Cost  —  tools change; the operating model doesn't.", "originalText": "Cost  —  tools change; the operating model doesn't.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300017, "version": 1, "versionNonce": 1300017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_r", "x": 810, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300020, "version": 1, "versionNonce": 1300020, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_h", "x": 834, "y": 186, "width": 572, "height": 16,
+      "text": "THE ENGINEERED WAY", "originalText": "THE ENGINEERED WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300021, "version": 1, "versionNonce": 1300021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_t", "x": 834, "y": 206, "width": 572, "height": 28,
+      "text": "Operating-model redesign", "originalText": "Operating-model redesign",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300022, "version": 1, "versionNonce": 1300022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_c", "x": 834, "y": 246, "width": 572, "height": 40,
+      "text": "Broaden who can create.\nTighten review, governance, and alignment.", "originalText": "Broaden who can create.\nTighten review, governance, and alignment.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300023, "version": 1, "versionNonce": 1300023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pr_se", "x": 834, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  THE REDESIGNED OPERATING MODEL", "originalText": "SAMPLE  —  THE REDESIGNED OPERATING MODEL",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300024, "version": 1, "versionNonce": 1300024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pr_card", "x": 834, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300025, "version": 1, "versionNonce": 1300025, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_code", "x": 852, "y": 344, "width": 540, "height": 150,
+      "text": "create:  support + PMs ship code too\nreview:  shared planning + review space\ngovern:  policy, evals, audit by default\nroles:   new -> AI product manager\nmetric:  outcomes, not seats or LOC", "originalText": "create:  support + PMs ship code too\nreview:  shared planning + review space\ngovern:  policy, evals, audit by default\nroles:   new -> AI product manager\nmetric:  outcomes, not seats or LOC",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300026, "version": 1, "versionNonce": 1300026, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.6
+    },
+    {
+      "type": "text", "id": "pr_take", "x": 834, "y": 530, "width": 572, "height": 18,
+      "text": "Payoff  —  leverage that compounds across the org.", "originalText": "Payoff  —  leverage that compounds across the org.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300027, "version": 1, "versionNonce": 1300027, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "shift_lbl", "x": 640, "y": 322, "width": 220, "height": 20,
+      "text": "THE SHIFT", "originalText": "THE SHIFT",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300030, "version": 1, "versionNonce": 1300030, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "shift_arrow", "x": 700, "y": 372, "width": 100, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300031, "version": 1, "versionNonce": 1300031, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, 0]],
+      "startBinding": {"elementId": "panel_l", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "panel_r", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "text", "id": "shift_sub", "x": 610, "y": 390, "width": 280, "height": 32,
+      "text": "seat licenses\nto a redesigned model", "originalText": "seat licenses\nto a redesigned model",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300032, "version": 1, "versionNonce": 1300032, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+
+    {
+      "type": "text", "id": "claims_h", "x": 70, "y": 598, "width": 800, "height": 20,
+      "text": "WHAT CHAPTER 9 ARGUES", "originalText": "WHAT CHAPTER 9 ARGUES",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300040, "version": 1, "versionNonce": 1300040, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "cb1", "x": 70, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300041, "version": 1, "versionNonce": 1300041, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb1t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb1t", "x": 78, "y": 636, "width": 12, "height": 16,
+      "text": "1", "originalText": "1",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300042, "version": 1, "versionNonce": 1300042, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb1", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct1", "x": 110, "y": 628, "width": 300, "height": 56,
+      "text": "AI-native advantage comes from\nredesign, not seat licenses.", "originalText": "AI-native advantage comes from\nredesign, not seat licenses.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300043, "version": 1, "versionNonce": 1300043, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb2", "x": 420, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300044, "version": 1, "versionNonce": 1300044, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb2t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb2t", "x": 428, "y": 636, "width": 12, "height": 16,
+      "text": "2", "originalText": "2",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300045, "version": 1, "versionNonce": 1300045, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb2", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct2", "x": 460, "y": 628, "width": 300, "height": 56,
+      "text": "Leaders broaden who can create\nwhile tightening review + governance.", "originalText": "Leaders broaden who can create\nwhile tightening review + governance.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300046, "version": 1, "versionNonce": 1300046, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb3", "x": 770, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300047, "version": 1, "versionNonce": 1300047, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb3t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb3t", "x": 778, "y": 636, "width": 12, "height": 16,
+      "text": "3", "originalText": "3",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300048, "version": 1, "versionNonce": 1300048, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb3", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct3", "x": 810, "y": 628, "width": 300, "height": 56,
+      "text": "Alignment debt is the core AI-native\norganizational failure mode.", "originalText": "Alignment debt is the core AI-native\norganizational failure mode.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300049, "version": 1, "versionNonce": 1300049, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb4", "x": 1120, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300050, "version": 1, "versionNonce": 1300050, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb4t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb4t", "x": 1128, "y": 636, "width": 12, "height": 16,
+      "text": "4", "originalText": "4",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300051, "version": 1, "versionNonce": 1300051, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb4", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct4", "x": 1160, "y": 628, "width": 306, "height": 56,
+      "text": "Teams need shared planning and\nreview spaces, not just personal tools.", "originalText": "Teams need shared planning and\nreview spaces, not just personal tools.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300052, "version": 1, "versionNonce": 1300052, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "q_rule", "x": 70, "y": 712, "width": 1396, "height": 0,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300053, "version": 1, "versionNonce": 1300053, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [1396, 0]]
+    },
+    {
+      "type": "text", "id": "quote", "x": 70, "y": 728, "width": 1396, "height": 44,
+      "text": "“There's a 10x difference between an org where 90% of engineers use AI and one where 100% do.”   —  Dan Shipper  ·  corpus video #65\n“Going fast without alignment becomes alignment debt — wasted work and giant review queues.”   —  Maggie Appleton, GitHub  ·  corpus video #623", "originalText": "“There's a 10x difference between an org where 90% of engineers use AI and one where 100% do.”   —  Dan Shipper  ·  corpus video #65\n“Going fast without alignment becomes alignment debt — wasted work and giant review queues.”   —  Maggie Appleton, GitHub  ·  corpus video #623",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1300054, "version": 1, "versionNonce": 1300054, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

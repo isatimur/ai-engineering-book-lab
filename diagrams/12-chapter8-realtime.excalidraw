@@ -1,0 +1,330 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 450, "y": 38, "width": 600, "height": 18,
+      "text": "CHAPTER 8", "originalText": "CHAPTER 8",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200001, "version": 1, "versionNonce": 1200001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "title", "x": 150, "y": 58, "width": 1200, "height": 46,
+      "text": "Realtime and Embodied Edges", "originalText": "Realtime and Embodied Edges",
+      "fontSize": 34, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200002, "version": 1, "versionNonce": 1200002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "role", "x": 200, "y": 112, "width": 1100, "height": 20,
+      "text": "Voice and robotics stress-test the thesis — latency and interruption expose what text chat hides.", "originalText": "Voice and robotics stress-test the thesis — latency and interruption expose what text chat hides.",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200003, "version": 1, "versionNonce": 1200003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_l", "x": 70, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#dc2626", "backgroundColor": "#fee2e2", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200010, "version": 1, "versionNonce": 1200010, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_h", "x": 94, "y": 186, "width": 572, "height": 16,
+      "text": "THE NAIVE WAY", "originalText": "THE NAIVE WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200011, "version": 1, "versionNonce": 1200011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_t", "x": 94, "y": 206, "width": 572, "height": 28,
+      "text": "Text-chat assumptions, out loud", "originalText": "Text-chat assumptions, out loud",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#991b1b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200012, "version": 1, "versionNonce": 1200012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pl_c", "x": 94, "y": 246, "width": 572, "height": 40,
+      "text": "Wait for the full utterance.\nTranscribe, think, then speak.", "originalText": "Wait for the full utterance.\nTranscribe, think, then speak.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#7f1d1d", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200013, "version": 1, "versionNonce": 1200013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pl_se", "x": 94, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  THE LATENCY PATH", "originalText": "SAMPLE  —  THE LATENCY PATH",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200014, "version": 1, "versionNonce": 1200014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pl_card", "x": 94, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200015, "version": 1, "versionNonce": 1200015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pl_code", "x": 112, "y": 338, "width": 540, "height": 168,
+      "text": "user speaks ..... wait for silence\nSTT (full) ...... 1200 ms\nLLM (full reply)  1800 ms\nTTS (full) ......  900 ms\n----------------------------------\n~3.9 s of silence — then it talks\nover the user's next sentence", "originalText": "user speaks ..... wait for silence\nSTT (full) ...... 1200 ms\nLLM (full reply)  1800 ms\nTTS (full) ......  900 ms\n----------------------------------\n~3.9 s of silence — then it talks\nover the user's next sentence",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#fca5a5", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200016, "version": 1, "versionNonce": 1200016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "pl_take", "x": 94, "y": 530, "width": 572, "height": 18,
+      "text": "Cost  —  laggy, interrupting, unusable in real time.", "originalText": "Cost  —  laggy, interrupting, unusable in real time.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200017, "version": 1, "versionNonce": 1200017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "panel_r", "x": 810, "y": 166, "width": 620, "height": 400,
+      "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200020, "version": 1, "versionNonce": 1200020, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "shift_arrow", "type": "arrow"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_h", "x": 834, "y": 186, "width": 572, "height": 16,
+      "text": "THE ENGINEERED WAY", "originalText": "THE ENGINEERED WAY",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200021, "version": 1, "versionNonce": 1200021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_t", "x": 834, "y": 206, "width": 572, "height": 28,
+      "text": "Engineered for realtime", "originalText": "Engineered for realtime",
+      "fontSize": 21, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200022, "version": 1, "versionNonce": 1200022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "pr_c", "x": 834, "y": 246, "width": 572, "height": 40,
+      "text": "Budget the latency. Stream everything.\nDetect turns; handle barge-in.", "originalText": "Budget the latency. Stream everything.\nDetect turns; handle barge-in.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200023, "version": 1, "versionNonce": 1200023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "pr_se", "x": 834, "y": 302, "width": 572, "height": 14,
+      "text": "SAMPLE  —  A LATENCY BUDGET", "originalText": "SAMPLE  —  A LATENCY BUDGET",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200024, "version": 1, "versionNonce": 1200024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "pr_card", "x": 834, "y": 320, "width": 572, "height": 196,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200025, "version": 1, "versionNonce": 1200025, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "pr_code", "x": 852, "y": 338, "width": 540, "height": 168,
+      "text": "latency budget  <  800 ms\n  VAD / turn-detect ....  50 ms\n  streaming STT ........ 150 ms\n  LLM (first token) .... 350 ms\n  streaming TTS ........ 200 ms\nbarge-in: user speaks -> agent yields", "originalText": "latency budget  <  800 ms\n  VAD / turn-detect ....  50 ms\n  streaming STT ........ 150 ms\n  LLM (first token) .... 350 ms\n  streaming TTS ........ 200 ms\nbarge-in: user speaks -> agent yields",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200026, "version": 1, "versionNonce": 1200026, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "pr_take", "x": 834, "y": 530, "width": 572, "height": 18,
+      "text": "Payoff  —  conversation that feels immediate and polite.", "originalText": "Payoff  —  conversation that feels immediate and polite.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200027, "version": 1, "versionNonce": 1200027, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "shift_lbl", "x": 640, "y": 322, "width": 220, "height": 20,
+      "text": "THE SHIFT", "originalText": "THE SHIFT",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200030, "version": 1, "versionNonce": 1200030, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "shift_arrow", "x": 700, "y": 372, "width": 100, "height": 0,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200031, "version": 1, "versionNonce": 1200031, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, 0]],
+      "startBinding": {"elementId": "panel_l", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "panel_r", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 32,
+      "text": "turn-based chat\nto a realtime pipeline", "originalText": "turn-based chat\nto a realtime pipeline",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200032, "version": 1, "versionNonce": 1200032, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+
+    {
+      "type": "text", "id": "claims_h", "x": 70, "y": 598, "width": 800, "height": 20,
+      "text": "WHAT CHAPTER 8 ARGUES", "originalText": "WHAT CHAPTER 8 ARGUES",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200040, "version": 1, "versionNonce": 1200040, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse", "id": "cb1", "x": 70, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200041, "version": 1, "versionNonce": 1200041, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb1t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb1t", "x": 78, "y": 636, "width": 12, "height": 16,
+      "text": "1", "originalText": "1",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200042, "version": 1, "versionNonce": 1200042, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb1", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct1", "x": 110, "y": 628, "width": 300, "height": 56,
+      "text": "Realtime AI exposes the hidden cost\nof low-latency action.", "originalText": "Realtime AI exposes the hidden cost\nof low-latency action.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200043, "version": 1, "versionNonce": 1200043, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb2", "x": 420, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200044, "version": 1, "versionNonce": 1200044, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb2t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb2t", "x": 428, "y": 636, "width": 12, "height": 16,
+      "text": "2", "originalText": "2",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200045, "version": 1, "versionNonce": 1200045, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb2", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct2", "x": 460, "y": 628, "width": 300, "height": 56,
+      "text": "Turn-taking, interruption, and streaming\nstate are core system design.", "originalText": "Turn-taking, interruption, and streaming\nstate are core system design.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200046, "version": 1, "versionNonce": 1200046, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb3", "x": 770, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200047, "version": 1, "versionNonce": 1200047, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb3t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb3t", "x": 778, "y": 636, "width": 12, "height": 16,
+      "text": "3", "originalText": "3",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200048, "version": 1, "versionNonce": 1200048, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb3", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct3", "x": 810, "y": 628, "width": 300, "height": 56,
+      "text": "Voice and robotics make the control\nproblem concrete — mistakes are instant.", "originalText": "Voice and robotics make the control\nproblem concrete — mistakes are instant.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200049, "version": 1, "versionNonce": 1200049, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "ellipse", "id": "cb4", "x": 1120, "y": 630, "width": 28, "height": 28,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200050, "version": 1, "versionNonce": 1200050, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "cb4t", "type": "text"}], "link": null, "locked": false, "roundness": null
+    },
+    {
+      "type": "text", "id": "cb4t", "x": 1128, "y": 636, "width": 12, "height": 16,
+      "text": "4", "originalText": "4",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200051, "version": 1, "versionNonce": 1200051, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb4", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "ct4", "x": 1160, "y": 628, "width": 306, "height": 56,
+      "text": "Embodied systems confirm the thesis:\nautonomy depends on scaffolding.", "originalText": "Embodied systems confirm the thesis:\nautonomy depends on scaffolding.",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200052, "version": 1, "versionNonce": 1200052, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "q_rule", "x": 70, "y": 712, "width": 1396, "height": 0,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200053, "version": 1, "versionNonce": 1200053, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [1396, 0]]
+    },
+    {
+      "type": "text", "id": "quote", "x": 70, "y": 728, "width": 1396, "height": 22,
+      "text": "“Your realtime AI is ngmi.”   —  Sean DuBois (OpenAI) & Kwindla Kramer (Daily)  ·  corpus video #145", "originalText": "“Your realtime AI is ngmi.”   —  Sean DuBois (OpenAI) & Kwindla Kramer (Daily)  ·  corpus video #145",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 1200054, "version": 1, "versionNonce": 1200054, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}

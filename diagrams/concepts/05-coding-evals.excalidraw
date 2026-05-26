@@ -1,0 +1,236 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "eyebrow", "x": 50, "y": 36, "width": 300, "height": 16,
+      "text": "CONCEPT", "originalText": "CONCEPT",
+      "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550001, "version": 1, "versionNonce": 3550001, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "name", "x": 50, "y": 56, "width": 860, "height": 40,
+      "text": "Coding Evals", "originalText": "Coding Evals",
+      "fontSize": 32, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550002, "version": 1, "versionNonce": 3550002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "line", "id": "sig_left", "x": 50, "y": 102, "width": 110, "height": 0,
+      "strokeColor": "#3b82f6", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550003, "version": 1, "versionNonce": 3550003, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "line", "id": "sig_right", "x": 160, "y": 102, "width": 110, "height": 0,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550004, "version": 1, "versionNonce": 3550004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
+    },
+    {
+      "type": "text", "id": "definition", "x": 50, "y": 120, "width": 860, "height": 24,
+      "text": "Structured measurements of whether AI can produce, modify, and maintain\ncode under realistic constraints — a control system, not a scoreboard.",
+      "originalText": "Structured measurements of whether AI can produce, modify, and maintain\ncode under realistic constraints — a control system, not a scoreboard.",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550005, "version": 1, "versionNonce": 3550005, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "text", "id": "lbl_how", "x": 50, "y": 178, "width": 400, "height": 14,
+      "text": "HOW IT WORKS  ·  THE EVAL LADDER — SNIPPET TO PRODUCTION",
+      "originalText": "HOW IT WORKS  ·  THE EVAL LADDER — SNIPPET TO PRODUCTION",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550006, "version": 1, "versionNonce": 3550006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "zone", "x": 50, "y": 198, "width": 860, "height": 250,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550007, "version": 1, "versionNonce": 3550007, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "rectangle", "id": "rung1", "x": 86, "y": 228, "width": 122, "height": 70,
+      "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550008, "version": 1, "versionNonce": 3550008, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "rung1_t", "x": 98, "y": 240, "width": 100, "height": 48,
+      "text": "SNIPPET\nsingle function;\nbenchmark toy.\nweak signal",
+      "originalText": "SNIPPET\nsingle function;\nbenchmark toy.\nweak signal",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550009, "version": 1, "versionNonce": 3550009, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "lar1", "x": 212, "y": 263, "width": 38, "height": 0,
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550010, "version": 1, "versionNonce": 3550010, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [38, 0]]
+    },
+    {
+      "type": "rectangle", "id": "rung2", "x": 254, "y": 228, "width": 122, "height": 70,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550011, "version": 1, "versionNonce": 3550011, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "rung2_t", "x": 266, "y": 240, "width": 100, "height": 48,
+      "text": "FILE / REPO\nmulti-file refactor\nin a real\ncodebase",
+      "originalText": "FILE / REPO\nmulti-file refactor\nin a real\ncodebase",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550012, "version": 1, "versionNonce": 3550012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "lar2", "x": 380, "y": 263, "width": 38, "height": 0,
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550013, "version": 1, "versionNonce": 3550013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [38, 0]]
+    },
+    {
+      "type": "rectangle", "id": "rung3", "x": 422, "y": 228, "width": 122, "height": 70,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550014, "version": 1, "versionNonce": 3550014, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "rung3_t", "x": 434, "y": 240, "width": 100, "height": 48,
+      "text": "TASK\nhuman-seeded job:\nambiguity, setup,\nchanging spec",
+      "originalText": "TASK\nhuman-seeded job:\nambiguity, setup,\nchanging spec",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550015, "version": 1, "versionNonce": 3550015, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "lar3", "x": 548, "y": 263, "width": 38, "height": 0,
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550016, "version": 1, "versionNonce": 3550016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow", "points": [[0, 0], [38, 0]]
+    },
+    {
+      "type": "rectangle", "id": "rung4", "x": 590, "y": 228, "width": 130, "height": 70,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 1.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550017, "version": 1, "versionNonce": 3550017, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "rung4_t", "x": 602, "y": 240, "width": 108, "height": 48,
+      "text": "PROD CANARY\nfaces real user\ntasks, bugs,\nsupport load",
+      "originalText": "PROD CANARY\nfaces real user\ntasks, bugs,\nsupport load",
+      "fontSize": 10, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550018, "version": 1, "versionNonce": 3550018, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
+    },
+    {
+      "type": "line", "id": "feedback", "x": 655, "y": 312, "width": 580, "height": 36,
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550019, "version": 1, "versionNonce": 3550019, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "startArrowhead": null, "endArrowhead": "arrow",
+      "points": [[0, 0], [0, 36], [-580, 36], [-580, -14]]
+    },
+    {
+      "type": "text", "id": "fb_t", "x": 200, "y": 352, "width": 320, "height": 16,
+      "text": "production failure traces  →  next eval cycle",
+      "originalText": "production failure traces  →  next eval cycle",
+      "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550020, "version": 1, "versionNonce": 3550020, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "score", "x": 86, "y": 386, "width": 780, "height": 48,
+      "text": "Score the full delegated pipeline — not just nominal pass/fail:\ntask completion · regression risk · cost · latency · review burden ·\nrecovery behaviour. A test runner is not an eval platform.",
+      "originalText": "Score the full delegated pipeline — not just nominal pass/fail:\ntask completion · regression risk · cost · latency · review burden ·\nrecovery behaviour. A test runner is not an eval platform.",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550021, "version": 1, "versionNonce": 3550021, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "lbl_example", "x": 50, "y": 460, "width": 400, "height": 14,
+      "text": "EXAMPLE  ·  A REPO-LEVEL EVAL CASE, SCORED BEYOND ACCURACY",
+      "originalText": "EXAMPLE  ·  A REPO-LEVEL EVAL CASE, SCORED BEYOND ACCURACY",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550022, "version": 1, "versionNonce": 3550022, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "evidence", "x": 50, "y": 480, "width": 860, "height": 96,
+      "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550023, "version": 1, "versionNonce": 3550023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "ev1", "x": 70, "y": 494, "width": 780, "height": 32,
+      "text": "eval_case: \"add retry to flaky API client\"  (human-seeded, repo-level)\n  source: support ticket #2841   ·   horizon: multi-file",
+      "originalText": "eval_case: \"add retry to flaky API client\"  (human-seeded, repo-level)\n  source: support ticket #2841   ·   horizon: multi-file",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#e2e8f0", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550024, "version": 1, "versionNonce": 3550024, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "ev2", "x": 70, "y": 534, "width": 780, "height": 32,
+      "text": "  result: passed=true  ·  but: review_edits=6  cost=$0.42  rollbacks=1\n  verdict: locally correct, operationally weak  →  add to regression set",
+      "originalText": "  result: passed=true  ·  but: review_edits=6  cost=$0.42  rollbacks=1\n  verdict: locally correct, operationally weak  →  add to regression set",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#4ade80", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550025, "version": 1, "versionNonce": 3550025, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
+    },
+    {
+      "type": "text", "id": "footer", "x": 50, "y": 590, "width": 860, "height": 16,
+      "text": "Appears in: ch 4      ·      — Naman Jain, Cursor · corpus video #72",
+      "originalText": "Appears in: ch 4      ·      — Naman Jain, Cursor · corpus video #72",
+      "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 3550026, "version": 1, "versionNonce": 3550026, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff", "gridSize": 20 },
+  "files": {}
+}
