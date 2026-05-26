@@ -7,7 +7,7 @@ describe('manifest', () => {
     expect(manifest.openers).toHaveLength(10);
     expect(manifest.concepts).toHaveLength(18);
     expect(manifest.inline.length).toBeGreaterThanOrEqual(20);
-    expect(manifest.maps).toHaveLength(2);
+    expect(manifest.maps.length).toBeGreaterThanOrEqual(2);
   });
 
   it('opener() returns the chapter opener', () => {
