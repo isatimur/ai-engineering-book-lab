@@ -31,13 +31,16 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
       {blocks.map((block, index) => {
         const isHeading = block.startsWith('## ');
         const figIndex = headingFigureIndex;
+        const hasFigure = isHeading && figIndex < figs.length;
+        const fig = hasFigure ? figs[figIndex] : null;
         if (isHeading) headingFigureIndex += 1;
         return (
           <React.Fragment key={`${chapter.number}-${index}`}>
+            {fig ? <span data-figure-anchor={fig.index} aria-hidden /> : null}
             <MarkdownBlock block={block} />
-            {isHeading && figIndex < figs.length ? (
+            {fig ? (
               <InlineIllustration
-                fig={figs[figIndex]}
+                fig={fig}
                 label={`Figure ${chapter.number}.${figIndex + 1}`}
               />
             ) : null}

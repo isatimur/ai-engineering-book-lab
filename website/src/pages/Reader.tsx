@@ -151,7 +151,7 @@ export const Reader = () => {
   return (
     <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>
       <div
-        className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-hidden transition-colors duration-300"
+        className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-clip transition-colors duration-300"
         style={themeVars as CSSProperties}
       >
         <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />

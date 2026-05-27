@@ -9,7 +9,7 @@ type Props = {
 export const InlineIllustration = ({ fig, label }: Props) => {
   const { open } = useLightbox();
   return (
-    <figure className="my-12 border border-[var(--color-border)] bg-white">
+    <figure className="my-12 border border-[var(--color-border)] bg-white lg:hidden">
       <button
         type="button"
         onClick={() => open(fig.src, `${label} — ${fig.title}`)}
