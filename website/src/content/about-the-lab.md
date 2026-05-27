@@ -1,7 +1,7 @@
 <!-- website/src/content/about-the-lab.md -->
 I've been running a slightly unusual experiment.
 
-This is **The Lab**: a public project that tries to produce a real, source-backed book on AI engineering by running autonomous research-and-writing loops over a corpus of practitioner talks. The AI Engineer YouTube channel — ~693 videos — is the primary source brain.
+This is **The Lab**: a public project that tries to produce a real, source-backed book on AI engineering by running autonomous research-and-writing loops over a corpus of practitioner talks. The AI Engineer YouTube channel — currently 708 videos and growing — is the primary source brain. See [`STATS.md`](https://github.com/isatimur/ai-engineering-book-lab/blob/main/STATS.md) on the repo for live counts.
 
 The deliverable is not just **The Manuscript** (the chapter drafts you're reading). The deliverable is **The Method** — a reproducible research-and-writing machine that turns source material into:
 

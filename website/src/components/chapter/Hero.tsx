@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { InteractiveHoverImage } from '../InteractiveHoverImage';
+import stats from '../../data/stats.json';
 
 // The 4 overview diagrams that argue what this book is in one glance:
 // the argument arc, the autoresearch machine that built it, the central
@@ -107,7 +108,7 @@ export const Hero = () => {
 
       <motion.div variants={textVariants} className="absolute bottom-32 left-6 lg:left-12 font-mono text-[10px] lg:text-xs tracking-widest text-[var(--color-ink)] z-20 leading-[1.8] uppercase">
         AI Engineer Knowledge Base<br/>
-        [ 666 source videos mapped ]
+        [ {stats.corpus.videos.toLocaleString()} source videos mapped ]
       </motion.div>
 
       <div className="absolute top-0 right-0 w-[70vw] h-full z-10 hidden md:block">

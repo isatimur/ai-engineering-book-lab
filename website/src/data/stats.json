@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-27T15:14:51+00:00",
+  "corpus": {
+    "videos": 708
+  },
+  "synthesis": {
+    "themes": 10,
+    "people": 50,
+    "concepts": 19,
+    "concepts_public": 2,
+    "drafting_files": 9
+  },
+  "claims": {
+    "total": 0,
+    "strong": 0,
+    "moderate": 0,
+    "tentative": 0
+  },
+  "anchors": {
+    "total": 84,
+    "high": 76,
+    "medium": 8,
+    "low": 0
+  },
+  "chapters": {
+    "total": 10,
+    "drafting": 3,
+    "starter": 4,
+    "outlined": 3
+  },
+  "diagrams": {
+    "overview": 4,
+    "chapter_openers": 10,
+    "concepts": 18,
+    "inline": 30,
+    "maps": 3,
+    "total": 65
+  },
+  "method": {
+    "research_passes": 11,
+    "programs": 6,
+    "tasks": 7
+  },
+  "total_artefacts": 862
+}
