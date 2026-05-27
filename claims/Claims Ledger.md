@@ -132,7 +132,12 @@
   - [[628-_fQ7Z_Wfouk-why-building-eval-platforms-is-hard-phil-hetzel-braintrust|#628 — Phil Hetzel, Braintrust]] — observability and eval are the same problem from a systems perspective.
     - **Anchor:** `_fQ7Z_Wfouk` 00:14:29.920 → 00:14:34.720 · confidence: high
     - **Quote:** "eval to us it's actually the same problem from a from a systems perspective."
-- **Caveats / counterpoints:** Not everything important can be reduced to a single metric. The answer is not no evals; it is richer evaluation systems with human judgment where needed.
+  - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — extends the control-system framing from human-readable to coding-agent-readable: evals live as YAML next to prompts, accessed via a CLI agents can drive.
+    - **Anchor:** `L2r6vLlLgs8` 00:06:59.640 → 00:07:01.760 · confidence: high
+    - **Quote:** "small CLI tool that we call eval tool"
+    - **Anchor:** `L2r6vLlLgs8` 00:07:03.600 → 00:07:06.440 · confidence: high
+    - **Quote:** "designed to allow agents to leverage our eval suite files."
+- **Caveats / counterpoints:** Not everything important can be reduced to a single metric. The answer is not no evals; it is richer evaluation systems with human judgment where needed. Productive tension worth preserving: #689 calls evals "AI unit tests" while #125 (Pesok) titles his talk "Evals Are Not Unit Tests" — both framings describe different surfaces of the same artifact.
 - **Candidate chapters:** 4, 6, 7, 9
 - **Reusable phrasing:** Evals matter because delegated systems need a control loop, not because launch decks need charts.
 
@@ -235,7 +240,7 @@
 
 ## 14) The harness is evolving from a local loop into a staged software factory
 - **Why it matters:** Creates a forward-looking bridge from coding mechanics to organization design.
-- **Support level:** moderate
+- **Support level:** strong
 - **Supporting sources:**
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
     - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
@@ -246,9 +251,17 @@
   - [[042-rcsliSIy_YU-automating-large-scale-refactors-with-parallel-agents-robert-brennan-openhands|#42 — Robert Brennan, OpenHands]]
     - **Anchor:** `rcsliSIy_YU` 00:27:26.480 → 00:27:28.159 · confidence: high
     - **Quote:** "parallel agents working together to fix"
-- **Caveats / counterpoints:** "Factory" can overstate current capability and imply fully autonomous operation prematurely. Best used as a directional metaphor, not a literal present-tense description.
+  - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]] — staged plan/produce/review/ship loop, but features run serially with one active writer at a time; longest production mission ran 16 days.
+    - **Anchor:** `ow1we5PzK-o` 00:09:50.440 → 00:09:52.600 · confidence: high
+    - **Quote:** "The difference with missions is that we run features serially."
+    - **Anchor:** `ow1we5PzK-o` 00:09:06.200 → 00:09:08.440 · confidence: high
+    - **Quote:** "Our longest mission ran for 16 days"
+  - [[691-mR-WAvEPRwE-build-agents-that-run-for-hours-without-losing-the-plot-ash-prabaker-andrew-wilson-anthrop|#691 — Ash Prabaker & Andrew Wilson, Anthropic]] — staged loop (planner-generator-evaluator) but a single writer at a time; each role in its own context window; pre-build contract negotiated by files on disk.
+    - **Anchor:** `mR-WAvEPRwE` 00:24:58.520 → 00:25:01.440 · confidence: high
+    - **Quote:** "We just kind of gave each role its own kind of context window."
+- **Caveats / counterpoints:** "Factory" can overstate current capability and imply unbounded parallel writers prematurely. Teams shipping production multi-agent systems disagree about whether parallelism is the leverage point: Factory (#653) runs features serially with bounded read-only parallelism, citing that "agents conflict... step on each other's changes... duplicate work"; Anthropic (#691) runs one writer at a time with role-separated context windows; Cursor (#629) and OpenAI Codex (#632) push parallel sub-agent fan-out as the throughput mechanism. The factory metaphor describes orchestration of work-units; it is contested whether it implies many concurrent writers.
 - **Candidate chapters:** 3, 6, 9
-- **Reusable phrasing:** The mature harness starts to look less like a prompt box and more like a software factory.
+- **Reusable phrasing:** The mature harness starts to look less like a prompt box and more like a software factory — but the industry has not yet agreed whether the factory's leverage comes from many concurrent writers or from one disciplined writer in a staged loop.
 
 ## 15) The context gap increasingly includes capability packaging and progressive disclosure
 - **Why it matters:** Updates the book for the MCP/skills wave without collapsing into protocol hype.
@@ -260,7 +273,7 @@
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]]
     - **Anchor:** `pFsfax19yOM` 00:44:24.000 → 00:44:25.520 · confidence: high
     - **Quote:** "specifically with progressive disclosure."
-  - [[686-0n3MKk7r60w-scaling-github-s-official-remote-mcp-server-sam-morrow-github|#686 — Sam Morrow, GitHub]]
+  - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]]
     - **Anchor:** `0n3MKk7r60w` 00:05:33.120 → 00:05:36.040 · confidence: high
     - **Quote:** "49% reduction of the initial load."
 - **Caveats / counterpoints:** Skills, tool search, and richer clients may eventually hide more of this complexity. For now, teams still have to design the capability surface deliberately.
@@ -294,7 +307,7 @@
   - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Pedro Rodrigues, Supabase]]
     - **Anchor:** `JT3OzDKrucU` 00:03:13.040 → 00:03:13.880 · confidence: high
     - **Quote:** "This is how the agent is"
-  - [[686-0n3MKk7r60w-scaling-github-s-official-remote-mcp-server-sam-morrow-github|#686 — Sam Morrow, GitHub]]
+  - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]]
     - **Anchor:** `0n3MKk7r60w` 00:05:33.120 → 00:05:35.600 · confidence: high
     - **Quote:** "49% reduction of the initial"
 - **Caveats / counterpoints:** Raw MCP access still matters; the claim is not that skills replace tools, but that tools alone are often too weak a surface for reliable use.
@@ -311,7 +324,7 @@
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]] — progressive disclosure keeps context useful without bloating the window.
     - **Anchor:** `pFsfax19yOM` 00:44:25.040 → 00:44:25.520 · confidence: high
     - **Quote:** "progressive disclosure."
-  - [[686-0n3MKk7r60w-scaling-github-s-official-remote-mcp-server-sam-morrow-github|#686 — Sam Morrow, GitHub]] — tool grouping, reduction, and discovery are necessary once tool surfaces scale.
+  - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — tool grouping, reduction, and discovery are necessary once tool surfaces scale.
     - **Anchor:** `0n3MKk7r60w` 00:03:25.560 → 00:03:27.160 · confidence: high
     - **Quote:** "grouping concept of related product"
 - **Caveats / counterpoints:** Larger context windows and stronger tool calling reduce some pressure, but they do not remove ranking, shaping, or discovery problems.
@@ -331,6 +344,90 @@
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
     - **Anchor:** `A48uhxfxbsM` 00:59:24.160 → 00:59:25.680 · confidence: high
     - **Quote:** "production CI stack to go and run"
+  - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — production traces and backtest results exported as file systems for agent-driven cohort analysis; closes the "from monitoring to fix" loop with a coding agent in the middle.
+    - **Anchor:** `L2r6vLlLgs8` 00:11:00.000 → 00:11:02.400 · confidence: high
+    - **Quote:** "download all of the UI that we have as a file system?"
+    - **Anchor:** `L2r6vLlLgs8` 00:14:06.080 → 00:14:06.960 · confidence: high
+    - **Quote:** "25 agents in parallel"
 - **Caveats / counterpoints:** Not every failure should be auto-converted into a durable regression; teams still need judgment about representativeness and maintenance cost.
 - **Candidate chapters:** 4, 6
 - **Reusable phrasing:** Observability is not downstream of evals. It is the place tomorrow's eval set comes from.
+
+## 20) Realtime AI quality is primarily a coordination and latency-engineering problem, not a model-quality problem
+- **Why it matters:** Generalizes the book's scaffolding thesis to realtime. Without this claim, Chapter 8 reads as a topic survey; with it, Chapter 8 confirms Chapters 3–6 from a new angle and feeds Chapter 10's "what endures" close.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — names tool-call latency as the new bottleneck and frames the remaining gap as system-level, not model-level.
+    - **Anchor:** `P_RI1kCkRbo` 00:07:17.640 → 00:07:19.880 · confidence: high
+    - **Quote:** "the main bottleneck is becoming the tool call,"
+    - **Anchor:** `P_RI1kCkRbo` 00:06:17.320 → 00:06:22.760 · confidence: high
+    - **Quote:** "the entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+    - **Anchor:** `P_RI1kCkRbo` 00:07:08.600 → 00:07:12.720 · confidence: high
+    - **Quote:** "you have a tool call or open router that is going to have a latency between 500 milliseconds and 4 seconds."
+  - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Luke Harries, ElevenLabs]] — independent confirmation: ships voice as a wrapper because the value (tools, evals, orchestration) lives outside the voice model.
+    - **Anchor:** `DCZZ3AJKzuc` 00:02:56.200 → 00:02:58.240 · confidence: high
+    - **Quote:** "wrapped it up into its own first class primitive,"
+  - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — even at the TTS-model layer the design constraint is streaming and first-packet latency, not raw quality.
+    - **Anchor:** `3jGAU2sbAyY` 00:02:28.959 → 00:02:30.319 · confidence: high
+    - **Quote:** "the latency is key here"
+- **Caveats / counterpoints:** Zeghidour explicitly says he "used to be really at war against cascaded systems" and now thinks they are practical — so this is not a claim that *speech-to-speech is unimportant*, only that the experience gap is dominated by coordination problems. Half-duplex limitations (Claim 22) are partly a model-architecture problem, not pure orchestration.
+- **Candidate chapters:** 8, 10
+- **Reusable phrasing:** Realtime AI is not a model problem. It is a coordination problem on a 200-millisecond clock.
+
+## 21) Voice is best added as a realtime wrapper around a chat agent, not as a rebuild
+- **Why it matters:** Concrete architectural recommendation that follows from the coordination/latency framing — gives Chapter 8 a builder-actionable take, not just an analytical one.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Luke Harries, ElevenLabs]] — explicit primary anchor for the pattern; the talk is the pattern.
+    - **Anchor:** `DCZZ3AJKzuc` 00:02:37.720 → 00:02:40.880 · confidence: high
+    - **Quote:** "I've already got my agent. I spent loads of time doing the evals,"
+    - **Anchor:** `DCZZ3AJKzuc` 00:07:09.280 → 00:07:11.760 · confidence: high
+    - **Quote:** "your chat agent actually normally does the majority of tool calling."
+  - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — independent corroboration that speech-as-interface over a text agent goes "very very far."
+    - **Anchor:** `3jGAU2sbAyY` 00:20:03.760 → 00:20:07.440 · confidence: high
+    - **Quote:** "we can go very very far by just using speech as an interface."
+- **Caveats / counterpoints:** A native speech-to-speech model with full duplex (Moshi-style, per #662) is the long-term right answer for true conversational behavior — the wrapper pattern is the right *current* answer. Zeghidour explicitly criticizes the wrapper approach for half-duplex behavior; the right framing is "wrapper today, full-duplex eventually." Do not flatten this tension.
+- **Candidate chapters:** 8
+
+## 22) Half-duplex is the silent architectural ceiling on natural voice conversation
+- **Why it matters:** Most voice agents quietly inherit half-duplex behavior from their underlying model and product framing. Naming the constraint is what lets readers see why the experience never quite lands.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]]
+    - **Anchor:** `P_RI1kCkRbo` 00:09:54.000 → 00:09:55.360 · confidence: high
+    - **Quote:** "the model is either listening or it's speaking."
+    - **Anchor:** `P_RI1kCkRbo` 00:09:59.960 → 00:10:02.160 · confidence: high
+    - **Quote:** "overlap between uh people speaking on one another."
+- **Caveats / counterpoints:** Half-duplex is fine for many useful product surfaces (IVR, structured customer support). The claim is about *natural conversation*, not voice product viability. Zeghidour's Moshi is the only widely-cited full-duplex model and was admittedly "stupid" at the agent layer — the architecture has costs.
+- **Candidate chapters:** 8
+
+## 23) TTS architecture is converging on LLM architecture
+- **Why it matters:** Chapter 10 hook. If even speech generation is becoming token-streaming autoregressive sequence modeling under a latency budget, then the book's frame ("scaffolding determines reliability, and the same scaffolding ideas keep showing up across substrates") is materially confirmed at a new layer.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]]
+    - **Anchor:** `3jGAU2sbAyY` 00:09:08.000 → 00:09:12.480 · confidence: high
+    - **Quote:** "pretty much uh everybody is using an auto reggressive decoder backbone"
+    - **Anchor:** `3jGAU2sbAyY` 00:01:59.920 → 00:02:04.880 · confidence: high
+    - **Quote:** "the king use case for text to speech is uh its usage within agents"
+- **Caveats / counterpoints:** Humeau himself notes that his own released model uses diffusion/flow-matching for the per-frame stage, not autoregression — so the convergence is at the backbone, not full-stack. No second independent source confirms the convergence at this density; treat as a "watch-item" claim until corroborated.
+- **Candidate chapters:** 8, 10
+
+## 24) Coordination is the unsolved runtime primitive for multi-agent systems
+- **Why it matters:** Gives Chapter 6 a sharp diagnosis of where software-factory infrastructure actually stands today — runtime/orchestration/triggers are solved; coordination is not. Bridges Chapter 3's parallelism debate into Chapter 6's runtime language.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[704-5Sui_OnSRlY-the-missing-primitive-for-agent-swarms-lou-bichard-ona|#704 — Lou Bichard, Ona]] — explicit naming of coordination as the missing primitive; GitHub explicitly ruled out as a coordination layer.
+    - **Anchor:** `5Sui_OnSRlY` 00:14:17.000 → 00:14:17.920 · confidence: high
+    - **Quote:** "the thing that's missing for me is coordination."
+    - **Anchor:** `5Sui_OnSRlY` 00:13:05.640 → 00:13:10.360 · confidence: high
+    - **Quote:** "through sort of state machines, you know, by building out workflows and effectively state machines"
+  - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]] — coordination problem eliminated by construction (serial execution).
+    - **Anchor:** `ow1we5PzK-o` 00:09:37.400 → 00:09:42.000 · confidence: high
+    - **Quote:** "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions."
+  - [[691-mR-WAvEPRwE-build-agents-that-run-for-hours-without-losing-the-plot-ash-prabaker-andrew-wilson-anthrop|#691 — Ash Prabaker & Andrew Wilson, Anthropic]] — file-based contract negotiation between roles as a substitute for an explicit coordination layer.
+    - **Anchor:** `mR-WAvEPRwE` 00:25:18.240 → 00:25:23.320 · confidence: high
+    - **Quote:** "we have the two agents basically negotiate what done actually means."
+- **Caveats / counterpoints:** Bichard is a vendor-coded talk; he benefits from the coordination story being unsolved. The corroborating force comes from observing that the two strongest shipping architectures (#653, #691) both work around coordination rather than solving it. A second non-vendor source explicitly naming "coordination" as the gap would strengthen the claim further.
+- **Candidate chapters:** 3, 6, 9
+- **Reusable phrasing:** Runtime is solved. Orchestration is solved. Triggers are solved. Coordination is the primitive that is still missing — and the architectures that ship today work around its absence.

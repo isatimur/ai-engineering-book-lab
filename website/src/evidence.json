@@ -339,6 +339,24 @@
           "confidence": "high",
           "label": "#628 — Phil Hetzel, Braintrust",
           "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:06:59.640",
+          "end": "00:07:01.760",
+          "start_seconds": 419,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "small CLI tool that we call eval tool"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:07:03.600",
+          "end": "00:07:06.440",
+          "start_seconds": 423,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "designed to allow agents to leverage our eval suite files."
         }
       ]
     },
@@ -551,7 +569,7 @@
     {
       "claim_id": "claims#14",
       "text": "The harness is evolving from a local loop into a staged software factory",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
         {
           "video_id": "rnDm57Py54A",
@@ -579,6 +597,33 @@
           "confidence": "high",
           "label": "#42 — Robert Brennan, OpenHands",
           "quote": "parallel agents working together to fix"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:50.440",
+          "end": "00:09:52.600",
+          "start_seconds": 590,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "The difference with missions is that we run features serially."
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:06.200",
+          "end": "00:09:08.440",
+          "start_seconds": 546,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "Our longest mission ran for 16 days"
+        },
+        {
+          "video_id": "mR-WAvEPRwE",
+          "start": "00:24:58.520",
+          "end": "00:25:01.440",
+          "start_seconds": 1498,
+          "confidence": "high",
+          "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
+          "quote": "We just kind of gave each role its own kind of context window."
         }
       ]
     },
@@ -611,7 +656,7 @@
           "end": "00:05:36.040",
           "start_seconds": 333,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial load."
         }
       ]
@@ -679,7 +724,7 @@
           "end": "00:05:35.600",
           "start_seconds": 333,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial"
         }
       ]
@@ -713,7 +758,7 @@
           "end": "00:03:27.160",
           "start_seconds": 205,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "grouping concept of related product"
         }
       ]
@@ -749,6 +794,67 @@
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
           "quote": "production CI stack to go and run"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:11:00.000",
+          "end": "00:11:02.400",
+          "start_seconds": 660,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "download all of the UI that we have as a file system?"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:14:06.080",
+          "end": "00:14:06.960",
+          "start_seconds": 846,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "25 agents in parallel"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#24",
+      "text": "Coordination is the unsolved runtime primitive for multi-agent systems",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:14:17.000",
+          "end": "00:14:17.920",
+          "start_seconds": 857,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "the thing that's missing for me is coordination."
+        },
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:13:05.640",
+          "end": "00:13:10.360",
+          "start_seconds": 785,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "through sort of state machines, you know, by building out workflows and effectively state machines"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:42.000",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions."
+        },
+        {
+          "video_id": "mR-WAvEPRwE",
+          "start": "00:25:18.240",
+          "end": "00:25:23.320",
+          "start_seconds": 1518,
+          "confidence": "high",
+          "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
+          "quote": "we have the two agents basically negotiate what done actually means."
         }
       ]
     }
@@ -896,6 +1002,24 @@
           "confidence": "high",
           "label": "#628 — Phil Hetzel, Braintrust",
           "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:06:59.640",
+          "end": "00:07:01.760",
+          "start_seconds": 419,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "small CLI tool that we call eval tool"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:07:03.600",
+          "end": "00:07:06.440",
+          "start_seconds": 423,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "designed to allow agents to leverage our eval suite files."
         }
       ]
     },
@@ -936,7 +1060,7 @@
     {
       "claim_id": "claims#14",
       "text": "The harness is evolving from a local loop into a staged software factory",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
         {
           "video_id": "rnDm57Py54A",
@@ -964,6 +1088,33 @@
           "confidence": "high",
           "label": "#42 — Robert Brennan, OpenHands",
           "quote": "parallel agents working together to fix"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:50.440",
+          "end": "00:09:52.600",
+          "start_seconds": 590,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "The difference with missions is that we run features serially."
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:06.200",
+          "end": "00:09:08.440",
+          "start_seconds": 546,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "Our longest mission ran for 16 days"
+        },
+        {
+          "video_id": "mR-WAvEPRwE",
+          "start": "00:24:58.520",
+          "end": "00:25:01.440",
+          "start_seconds": 1498,
+          "confidence": "high",
+          "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
+          "quote": "We just kind of gave each role its own kind of context window."
         }
       ]
     },
@@ -996,7 +1147,7 @@
           "end": "00:05:36.040",
           "start_seconds": 333,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial load."
         }
       ]
@@ -1032,6 +1183,49 @@
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
           "quote": "overview of the processes you"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#24",
+      "text": "Coordination is the unsolved runtime primitive for multi-agent systems",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:14:17.000",
+          "end": "00:14:17.920",
+          "start_seconds": 857,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "the thing that's missing for me is coordination."
+        },
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:13:05.640",
+          "end": "00:13:10.360",
+          "start_seconds": 785,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "through sort of state machines, you know, by building out workflows and effectively state machines"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:42.000",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions."
+        },
+        {
+          "video_id": "mR-WAvEPRwE",
+          "start": "00:25:18.240",
+          "end": "00:25:23.320",
+          "start_seconds": 1518,
+          "confidence": "high",
+          "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
+          "quote": "we have the two agents basically negotiate what done actually means."
         }
       ]
     }
@@ -1274,6 +1468,83 @@
           "quote": "overview of the processes you"
         }
       ]
+    },
+    {
+      "claim_id": "claims#20",
+      "text": "Realtime AI quality is primarily a coordination and latency-engineering problem, not a model-quality problem",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:07:17.640",
+          "end": "00:07:19.880",
+          "start_seconds": 437,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "the main bottleneck is becoming the tool call,"
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:06:17.320",
+          "end": "00:06:22.760",
+          "start_seconds": 377,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "the entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:07:08.600",
+          "end": "00:07:12.720",
+          "start_seconds": 428,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "you have a tool call or open router that is going to have a latency between 500 milliseconds and 4 seconds."
+        },
+        {
+          "video_id": "DCZZ3AJKzuc",
+          "start": "00:02:56.200",
+          "end": "00:02:58.240",
+          "start_seconds": 176,
+          "confidence": "high",
+          "label": "#661 — Luke Harries, ElevenLabs",
+          "quote": "wrapped it up into its own first class primitive,"
+        },
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:02:28.959",
+          "end": "00:02:30.319",
+          "start_seconds": 148,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "the latency is key here"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#23",
+      "text": "TTS architecture is converging on LLM architecture",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:09:08.000",
+          "end": "00:09:12.480",
+          "start_seconds": 548,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "pretty much uh everybody is using an auto reggressive decoder backbone"
+        },
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:01:59.920",
+          "end": "00:02:04.880",
+          "start_seconds": 119,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "the king use case for text to speech is uh its usage within agents"
+        }
+      ]
     }
   ],
   "7": [
@@ -1342,6 +1613,24 @@
           "confidence": "high",
           "label": "#628 — Phil Hetzel, Braintrust",
           "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:06:59.640",
+          "end": "00:07:01.760",
+          "start_seconds": 419,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "small CLI tool that we call eval tool"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:07:03.600",
+          "end": "00:07:06.440",
+          "start_seconds": 423,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "designed to allow agents to leverage our eval suite files."
         }
       ]
     },
@@ -1649,7 +1938,7 @@
     {
       "claim_id": "claims#14",
       "text": "The harness is evolving from a local loop into a staged software factory",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
         {
           "video_id": "rnDm57Py54A",
@@ -1677,6 +1966,33 @@
           "confidence": "high",
           "label": "#42 — Robert Brennan, OpenHands",
           "quote": "parallel agents working together to fix"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:50.440",
+          "end": "00:09:52.600",
+          "start_seconds": 590,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "The difference with missions is that we run features serially."
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:06.200",
+          "end": "00:09:08.440",
+          "start_seconds": 546,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "Our longest mission ran for 16 days"
+        },
+        {
+          "video_id": "mR-WAvEPRwE",
+          "start": "00:24:58.520",
+          "end": "00:25:01.440",
+          "start_seconds": 1498,
+          "confidence": "high",
+          "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
+          "quote": "We just kind of gave each role its own kind of context window."
         }
       ]
     },
@@ -1709,8 +2025,51 @@
           "end": "00:05:35.600",
           "start_seconds": 333,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#24",
+      "text": "Coordination is the unsolved runtime primitive for multi-agent systems",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:14:17.000",
+          "end": "00:14:17.920",
+          "start_seconds": 857,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "the thing that's missing for me is coordination."
+        },
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:13:05.640",
+          "end": "00:13:10.360",
+          "start_seconds": 785,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "through sort of state machines, you know, by building out workflows and effectively state machines"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:42.000",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions."
+        },
+        {
+          "video_id": "mR-WAvEPRwE",
+          "start": "00:25:18.240",
+          "end": "00:25:23.320",
+          "start_seconds": 1518,
+          "confidence": "high",
+          "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
+          "quote": "we have the two agents basically negotiate what done actually means."
         }
       ]
     }
@@ -1883,6 +2242,24 @@
           "confidence": "high",
           "label": "#628 — Phil Hetzel, Braintrust",
           "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:06:59.640",
+          "end": "00:07:01.760",
+          "start_seconds": 419,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "small CLI tool that we call eval tool"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:07:03.600",
+          "end": "00:07:06.440",
+          "start_seconds": 423,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "designed to allow agents to leverage our eval suite files."
         }
       ]
     },
@@ -1951,6 +2328,24 @@
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
           "quote": "production CI stack to go and run"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:11:00.000",
+          "end": "00:11:02.400",
+          "start_seconds": 660,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "download all of the UI that we have as a file system?"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:14:06.080",
+          "end": "00:14:06.960",
+          "start_seconds": 846,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "25 agents in parallel"
         }
       ]
     }
@@ -2062,7 +2457,7 @@
           "end": "00:05:36.040",
           "start_seconds": 333,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial load."
         }
       ]
@@ -2096,7 +2491,7 @@
           "end": "00:05:35.600",
           "start_seconds": 333,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial"
         }
       ]
@@ -2130,7 +2525,7 @@
           "end": "00:03:27.160",
           "start_seconds": 205,
           "confidence": "high",
-          "label": "#686 — Sam Morrow, GitHub",
+          "label": "#625 — Sam Morrow, GitHub",
           "quote": "grouping concept of related product"
         }
       ]
@@ -2229,6 +2624,142 @@
           "confidence": "high",
           "label": "#202 — Rita Kozlov, Cloudflare",
           "quote": "send it to me for approval."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#20",
+      "text": "Realtime AI quality is primarily a coordination and latency-engineering problem, not a model-quality problem",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:07:17.640",
+          "end": "00:07:19.880",
+          "start_seconds": 437,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "the main bottleneck is becoming the tool call,"
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:06:17.320",
+          "end": "00:06:22.760",
+          "start_seconds": 377,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "the entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:07:08.600",
+          "end": "00:07:12.720",
+          "start_seconds": 428,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "you have a tool call or open router that is going to have a latency between 500 milliseconds and 4 seconds."
+        },
+        {
+          "video_id": "DCZZ3AJKzuc",
+          "start": "00:02:56.200",
+          "end": "00:02:58.240",
+          "start_seconds": 176,
+          "confidence": "high",
+          "label": "#661 — Luke Harries, ElevenLabs",
+          "quote": "wrapped it up into its own first class primitive,"
+        },
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:02:28.959",
+          "end": "00:02:30.319",
+          "start_seconds": 148,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "the latency is key here"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#21",
+      "text": "Voice is best added as a realtime wrapper around a chat agent, not as a rebuild",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "DCZZ3AJKzuc",
+          "start": "00:02:37.720",
+          "end": "00:02:40.880",
+          "start_seconds": 157,
+          "confidence": "high",
+          "label": "#661 — Luke Harries, ElevenLabs",
+          "quote": "I've already got my agent. I spent loads of time doing the evals,"
+        },
+        {
+          "video_id": "DCZZ3AJKzuc",
+          "start": "00:07:09.280",
+          "end": "00:07:11.760",
+          "start_seconds": 429,
+          "confidence": "high",
+          "label": "#661 — Luke Harries, ElevenLabs",
+          "quote": "your chat agent actually normally does the majority of tool calling."
+        },
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:20:03.760",
+          "end": "00:20:07.440",
+          "start_seconds": 1203,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "we can go very very far by just using speech as an interface."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#22",
+      "text": "Half-duplex is the silent architectural ceiling on natural voice conversation",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:09:54.000",
+          "end": "00:09:55.360",
+          "start_seconds": 594,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "the model is either listening or it's speaking."
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:09:59.960",
+          "end": "00:10:02.160",
+          "start_seconds": 599,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "overlap between uh people speaking on one another."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#23",
+      "text": "TTS architecture is converging on LLM architecture",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:09:08.000",
+          "end": "00:09:12.480",
+          "start_seconds": 548,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "pretty much uh everybody is using an auto reggressive decoder backbone"
+        },
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:01:59.920",
+          "end": "00:02:04.880",
+          "start_seconds": 119,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "the king use case for text to speech is uh its usage within agents"
         }
       ]
     }
