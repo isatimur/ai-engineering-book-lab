@@ -1,7 +1,7 @@
 import { type MouseEvent } from 'react';
 import { motion, useMotionValue, useTransform } from 'motion/react';
 
-export const InteractiveHoverImage = ({ src, className, style, variants, initial, whileInView, viewport, transition }: any) => {
+export const InteractiveHoverImage = ({ src, alt, className, style, variants, initial, whileInView, viewport, transition }: any) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -39,6 +39,7 @@ export const InteractiveHoverImage = ({ src, className, style, variants, initial
       />
       <motion.img
         src={src}
+        alt={alt ?? ''}
         className={className}
         style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
         whileHover={{ scale: 1.08, filter: 'grayscale(0%) sepia(0%) blur(0px)' }}

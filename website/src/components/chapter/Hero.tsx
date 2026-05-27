@@ -2,11 +2,14 @@ import { useState } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { InteractiveHoverImage } from '../InteractiveHoverImage';
 
+// The 4 overview diagrams that argue what this book is in one glance:
+// the argument arc, the autoresearch machine that built it, the central
+// thesis, and the evidence base. Self-served from /public/diagrams/.
 const IMAGES = {
-  man1: 'https://images.unsplash.com/photo-1517245386807-bb43a82c33c4?q=80&w=1200&auto=format&fit=crop',
-  painting: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop',
-  editorial: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop',
-  speaker: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop',
+  spine: { src: '/diagrams/overview/spine.png',         alt: 'The Argument Spine — 10 chapters in a four-act dependency arc' },
+  machine: { src: '/diagrams/overview/machine.png',     alt: 'The Autoresearch Knowledge Machine — five-layer pipeline turning 708 talks into a book' },
+  stack: { src: '/diagrams/overview/stack.png',         alt: 'The Scaffolding Stack — five engineered layers that wrap a raw model' },
+  corpusMap: { src: '/diagrams/overview/corpus-map.png', alt: 'Theme & Corpus Map — ten themes sized by video count, mapped to chapters' },
 };
 
 export const Hero = () => {
@@ -22,17 +25,20 @@ export const Hero = () => {
   const filter = useTransform(scrollY, [500, 1200], ['blur(0px)', 'blur(12px)']);
 
   const [mappedImages, setMappedImages] = useState([
-    { id: 'img1', src: IMAGES.painting, imgClass: 'w-full h-full object-cover opacity-90' },
-    { id: 'img2', src: IMAGES.man1, imgClass: 'w-full h-full object-cover grayscale' },
-    { id: 'img3', src: IMAGES.speaker, imgClass: 'w-full h-full object-cover grayscale blur-[1px]' },
-    { id: 'img4', src: IMAGES.editorial, imgClass: 'w-full h-full object-cover grayscale' },
+    { id: 'spine',     src: IMAGES.spine.src,     alt: IMAGES.spine.alt,     imgClass: 'w-full h-full object-contain bg-[var(--color-paper)]' },
+    { id: 'machine',   src: IMAGES.machine.src,   alt: IMAGES.machine.alt,   imgClass: 'w-full h-full object-contain bg-[var(--color-paper)]' },
+    { id: 'stack',     src: IMAGES.stack.src,     alt: IMAGES.stack.alt,     imgClass: 'w-full h-full object-contain bg-[var(--color-paper)]' },
+    { id: 'corpusMap', src: IMAGES.corpusMap.src, alt: IMAGES.corpusMap.alt, imgClass: 'w-full h-full object-contain bg-[var(--color-paper)]' },
   ]);
 
+  // Frame the diagrams: drop the sepia/multiply/grayscale filters from the
+  // previous Unsplash treatment — the diagrams are already in the book's
+  // editorial palette and need to be readable, not muted.
   const slotConfigs = [
-    { className: 'absolute top-[40%] right-[30%] w-[28vw] max-w-[400px] h-auto shadow-2xl sepia-[0.2]', zIndex: 20, y: y1 },
-    { className: 'absolute bottom-[20%] right-[10%] w-[38vw] max-w-[600px] h-auto opacity-80 mix-blend-multiply', zIndex: 10, y: y2 },
-    { className: 'absolute top-[10%] right-[20%] w-[22vw] max-w-[350px] h-auto opacity-70', zIndex: 0, y: y3 },
-    { className: 'absolute top-[30%] right-[0%] w-[20vw] max-w-[300px] h-auto opacity-90', zIndex: 30, y: y4 },
+    { className: 'absolute top-[36%] right-[28%] w-[32vw] max-w-[460px] aspect-[4/3] shadow-2xl border border-[var(--color-border)] bg-[var(--color-paper)]', zIndex: 20, y: y1 },
+    { className: 'absolute bottom-[12%] right-[8%]  w-[40vw] max-w-[620px] aspect-[4/3] shadow-2xl border border-[var(--color-border)] bg-[var(--color-paper)] opacity-95', zIndex: 10, y: y2 },
+    { className: 'absolute top-[8%]   right-[22%] w-[24vw] max-w-[360px] aspect-[4/3] shadow-xl border border-[var(--color-border)] bg-[var(--color-paper)] opacity-85', zIndex: 0,  y: y3 },
+    { className: 'absolute top-[26%]  right-[-2%] w-[22vw] max-w-[330px] aspect-[4/3] shadow-2xl border border-[var(--color-border)] bg-[var(--color-paper)]', zIndex: 30, y: y4 },
   ];
 
   const handleImageClick = (clickedSlotIndex: number) => {
@@ -119,6 +125,7 @@ export const Hero = () => {
               <InteractiveHoverImage
                 variants={imgVariants}
                 src={currentImage.src}
+                alt={currentImage.alt}
                 className={currentImage.imgClass}
               />
             </motion.div>
