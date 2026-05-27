@@ -6,6 +6,7 @@ on:
     paths:
       - 'website/**'
       - 'diagrams/**'
+  workflow_dispatch:
 
 jobs:
   deploy:
