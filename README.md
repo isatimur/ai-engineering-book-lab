@@ -47,7 +47,7 @@ Ten chapters in a four-act arc — Problem (1–2), Scaffolding Stack (3–7), S
 
 [**→ Open the book**](https://fromcopilottocolleague.com/)
 &nbsp;·&nbsp;
-[**→ Browse the Visual Guide (64 diagrams)**](https://fromcopilottocolleague.com/visual-guide)
+[**→ Browse the Visual Guide (65 diagrams)**](https://fromcopilottocolleague.com/visual-guide)
 
 ---
 
@@ -76,7 +76,7 @@ Read the loop's instructions: [`programs/book_autoresearch.md`](programs/book_au
 1. **Source Anchors as a discipline.** Every claim in the manuscript carries a `video_id` + start/end timestamp + verbatim quote. The website's Evidence Rail surfaces them under each chapter as clickable YouTube embeds. **No anchor, no claim.**
 2. **The book is the proof, not the product.** The Method (the reproducible machine) is the actual artefact. The manuscript shows it works.
 3. **Method ships with the artefact.** Every agent instruction, every research pass log, every quality judge is in this repo — readable, criticisable, reproducible.
-4. **64 hand-built diagrams** that argue visually instead of decorate. See [`diagrams/README.md`](diagrams/README.md) for the full visual guide.
+4. **65 hand-built diagrams** that argue visually instead of decorate. See [`diagrams/README.md`](diagrams/README.md) for the full visual guide.
 
 ---
 
@@ -92,7 +92,7 @@ ai-engineering-book-lab/
 ├── claims/             # canonical Claims Ledger + per-anchor JSON
 │   ├── Claims Ledger.md
 │   └── anchors/
-├── diagrams/           # 64 hand-built diagrams (Excalidraw source + PNG)
+├── diagrams/           # 65 hand-built diagrams (Excalidraw source + PNG)
 │   ├── 01–14*.png      # 4 overview + 10 chapter openers
 │   ├── concepts/       # 18 concept diagrams
 │   ├── inline/         # 30 inline chapter figures
@@ -121,7 +121,7 @@ A full description of public vs internal layers lives in [`PUBLIC_REPO_PLAN.md`]
 - **708 videos** ingested from the AI Engineer channel
 - **19 claims** anchored to video timestamps; **54 high-confidence anchors**, **7 medium**
 - **10 chapter drafts** rendered live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read)
-- **64 hand-built diagrams** (14 overview + 18 concept + 30 inline + 2 maps)
+- **65 hand-built diagrams** (14 overview + 18 concept + 30 inline + 3 maps) — live counts in [`STATS.md`](STATS.md)
 - **Evidence Rail** ships per chapter — every claim renders an embedded YouTube clip at its exact timestamp
 - **CI/CD** wired (build/test on PR, auto-deploy on push, evidence regen on claims-ledger change) — see [`DEPLOY.md`](DEPLOY.md)
 

@@ -451,6 +451,13 @@
   ],
   "maps": [
     {
+      "id": "concept-graph",
+      "title": "Concept Graph",
+      "caption": "",
+      "src": "/diagrams/maps/concept-graph.png",
+      "sourceFile": "03-concept-graph.excalidraw"
+    },
+    {
       "id": "methodology-deep-dive",
       "title": "Methodology deep-dive",
       "caption": "For readers who want to inspect The Method itself.",

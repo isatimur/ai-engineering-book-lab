@@ -451,6 +451,13 @@
   ],
   "maps": [
     {
+      "id": "concept-graph",
+      "title": "Concept Graph",
+      "caption": "",
+      "src": "/diagrams/maps/concept-graph.png",
+      "sourceFile": "03-concept-graph.excalidraw"
+    },
+    {
       "id": "methodology-deep-dive",
       "title": "Methodology deep-dive",
       "caption": "For readers who want to inspect The Method itself.",
@@ -463,13 +470,6 @@
       "caption": "A suggested path through the chapters for different reader profiles.",
       "src": "/diagrams/maps/readers-path.png",
       "sourceFile": "01-readers-path.excalidraw"
-    },
-    {
-      "id": "concept-graph",
-      "title": "The 18-Concept Graph",
-      "caption": "How the book's eighteen concepts depend on each other — grouped by their home chapter, with edges showing conceptual coupling. Constrained Delegation is the load-bearing spine.",
-      "src": "/diagrams/maps/concept-graph.png",
-      "sourceFile": "03-concept-graph.excalidraw"
     }
   ]
 }

@@ -15,6 +15,8 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | 2026-05-25 | **Domain live** at `fromcopilottocolleague.com` + Vercel auto-deploy + GitHub Actions CI | `.github/workflows/`, `DEPLOY.md` |
 | 2026-05-26 | **Final cover** (engraving-style clockwork with human + robotic hands) | `website/public/covers/` |
 | 2026-05-27 | **README rewrite** (star-attracting landing) · **Reader hero** swapped from Unsplash stock to overview diagrams · **STATS.md** single-source-of-truth system | repo root + website hero |
+| 2026-05-27 | **`stats-regen` workflow** — auto-runs `build_stats.py` on push to corpus/claims/diagrams/etc., commits back with [skip ci] · **`website-deploy` workflow_dispatch** added | `.github/workflows/stats-regen.yml` · `.github/workflows/website-deploy.yml` |
+| 2026-05-27 | **`VERCEL_TOKEN`** set in GitHub secrets → end-to-end auto-deploy verified (push → Vercel prod in ~40s, no manual step) | GitHub repo secrets |
 
 ## In flight
 
@@ -23,7 +25,6 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | P0 | **Anchor remaining claims** — only 19/many ledger claims have anchors; ongoing source-anchoring passes | `programs/source_anchoring_pass.md` + `research_passes/` |
 | P0 | **Chapter drafting passes** — chapters 5, 7, 8, 9 still Starter/Outlined | `public/drafting/` + `website/src/content/chapter-*.md` |
 | P1 | **SEO routing refactor** — pre-rendered HTML per chapter/concept/map (12-task plan ready) | [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
-| P1 | **Stats regen in CI** — auto-run `build_stats.py` on push so counts never drift | TODO: `.github/workflows/stats-regen.yml` |
 
 ## Queued (validated, not started)
 
