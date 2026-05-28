@@ -59,7 +59,7 @@ export const chapters: BookChapter[] = [
     number: '05',
     title: 'Context Is Infrastructure',
     promise: 'Retrieval, memory, and knowledge layers as first-class system design.',
-    status: 'Starter',
+    status: 'Drafting',
     content: chapter05,
     wordCount: countWords(chapter05),
   },

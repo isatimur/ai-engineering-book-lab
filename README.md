@@ -120,7 +120,7 @@ A full description of public vs internal layers lives in [`PUBLIC_REPO_PLAN.md`]
 
 - **708 videos** ingested from the AI Engineer channel
 - **19 claims** anchored to video timestamps; **54 high-confidence anchors**, **7 medium**
-- **10 chapters** render live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read) — 3 in active Drafting, 3 Outlined, 4 still Starter
+- **10 chapters** render live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read) — current draft-status breakdown in [`STATS.md`](STATS.md)
 - **65 hand-built diagrams** (14 overview + 18 concept + 30 inline + 3 maps) — live counts in [`STATS.md`](STATS.md)
 - **Evidence Rail** ships per chapter — every claim renders an embedded YouTube clip at its exact timestamp
 - **CI/CD** wired (build/test on PR, auto-deploy on push, evidence regen on claims-ledger change) — see [`DEPLOY.md`](DEPLOY.md)

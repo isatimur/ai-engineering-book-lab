@@ -48,13 +48,13 @@ def count_claims() -> dict[str, int]:
         return {"total": 0, "strong": 0, "moderate": 0, "tentative": 0}
 
     text = ledger.read_text(encoding="utf-8")
-    headings = re.findall(r"^## Claim ", text, flags=re.MULTILINE)
+    headings = re.findall(r"^## \d+\)", text, flags=re.MULTILINE)
     total = len(headings)
     return {
         "total": total,
-        "strong": len(re.findall(r"\*\*Support level\*\*:\s*strong", text, flags=re.IGNORECASE)),
-        "moderate": len(re.findall(r"\*\*Support level\*\*:\s*moderate", text, flags=re.IGNORECASE)),
-        "tentative": len(re.findall(r"\*\*Support level\*\*:\s*tentative", text, flags=re.IGNORECASE)),
+        "strong": len(re.findall(r"\*\*Support level:\*\*\s*strong", text, flags=re.IGNORECASE)),
+        "moderate": len(re.findall(r"\*\*Support level:\*\*\s*moderate", text, flags=re.IGNORECASE)),
+        "tentative": len(re.findall(r"\*\*Support level:\*\*\s*tentative", text, flags=re.IGNORECASE)),
     }
 
 

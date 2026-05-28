@@ -431,3 +431,52 @@
 - **Caveats / counterpoints:** Bichard is a vendor-coded talk; he benefits from the coordination story being unsolved. The corroborating force comes from observing that the two strongest shipping architectures (#653, #691) both work around coordination rather than solving it. A second non-vendor source explicitly naming "coordination" as the gap would strengthen the claim further.
 - **Candidate chapters:** 3, 6, 9
 - **Reusable phrasing:** Runtime is solved. Orchestration is solved. Triggers are solved. Coordination is the primitive that is still missing — and the architectures that ship today work around its absence.
+
+## 25) Context engineering is a primary engineering discipline, not a prompt trick
+- **Why it matters:** Reframes context from input-field thinking to platform thinking. Anchor for the Chapter 5 spine. Once accepted, prompt engineering becomes a small subset of a much larger discipline.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — the hard problem of enterprise AI is access to the *relevant* documents, not access to documents.
+  - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]] — context platform engineering as "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale."
+  - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — context engineering as connecting the dots across the knowledge a system already has.
+  - [[157-xnXqpUW_Kp8-building-a-smarter-ai-agent-with-neural-rag-will-bryk-exa-ai|#157 — Will Bryk, Exa.ai]] — neural RAG that integrates retrieval into the reasoning loop instead of running it once before the prompt.
+- **Caveats / counterpoints:** Bigger context windows reduce some assembly pressure but do not eliminate ranking, freshness, deduplication, or capability problems. The claim is about the discipline, not a specific token budget.
+- **Candidate chapters:** 5, 6, 9
+- **Reusable phrasing:** Context is the substrate that determines what the system can even notice — not the garnish around intelligence.
+
+## 26) RAG, memory, and GraphRAG solve different jobs; collapsing them into one bucket misses the architecture
+- **Why it matters:** The field's vocabulary has been lagging the architecture. "RAG" now means at least four different things in practitioner conversation, and the engineering decisions live in distinctions the label hides.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — "Stuffing context is not memory" as a load-bearing architectural distinction, not a slogan.
+  - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]] — RAG carrying weight it was never designed to carry (long-term user state, evolving entity facts, cross-session continuity).
+  - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — graph retrieval as a different operation than flat vector retrieval, suited to relationship questions.
+  - [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215 — Michael, Jesus & Stephen, Neo4j]] — practical GraphRAG patterns under production constraints.
+  - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — Mitesh Patel, NVIDIA]] — hybrid RAG as the expected outcome once you accept graph and vector are different jobs.
+  - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
+- **Caveats / counterpoints:** Skills, agentic search, and richer protocols may eventually hide more of this distinction from product builders. For now, the system designer has to make it explicit. Tightly-scoped consumer chatbots can still get away with collapsing the layers.
+- **Candidate chapters:** 5, 6
+- **Reusable phrasing:** Stuffing context is not memory; vector retrieval is not graph traversal; "RAG" is not a layer, it is several.
+
+## 27) Enterprise usefulness scales with working-set quality, not corpus size
+- **Why it matters:** Corrects the "more data is better" intuition that drives a lot of enterprise AI procurement. The engineering value lives in convergence on the right working set, not in cognition over the wrong material.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — convergence on the few hundred passages that matter as the work that produces value.
+  - [[154-W1MiZChnkfA-scaling-enterprise-grade-rag-lessons-from-legal-frontier-calvin-qi-harvey-chang-she-lance|#154 — Calvin Qi (Harvey) & Chang She (Lance)]] — legal work needs specific clause, precedent, exception — separation of authoritative from background source.
+  - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — enterprise-aware agent as one that knows which documents matter for the current user/role/task — boundary work as the engineering work.
+- **Caveats / counterpoints:** Corpus size still matters when relevance is genuinely uncertain at index time, or when long-tail coverage is required. The claim is about the working set the model actually sees per step, not the size of the underlying index.
+- **Candidate chapters:** 5, 9
+- **Reusable phrasing:** Enterprise usefulness scales with working-set quality, not corpus size.
+
+## 28) The next failure frontier is context misassembly, not just hallucination
+- **Why it matters:** Hallucination has been the dominant failure mode in public AI quality conversations. Production failures at the frontier are increasingly correctly-grounded but wrongly-composed context — every cited source exists, every quote can be verified, and the composition is still misleading. The fix lives in the substrate, not the model.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — the stuffing-vs-memory distinction names one form of misassembly (stale-plus-current documents averaged into half-current answer).
+  - [[047-xz0-brt56L8-building-intelligent-research-agents-with-manus-ivan-leo-manus-ai-now-meta-superintelligen|#47 — Ivan Leo, Manus AI / Meta Superintelligence]] — research agents that drift across hundreds of retrievals to produce internally-consistent, externally-wrong summaries.
+  - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — layered retrieval as a structural response to misassembly as a distinct failure mode.
+  - [[172-4Xe_iMYxBQc-information-retrieval-from-the-ground-up-philipp-krenn-elastic|#172 — Philipp Krenn, Elastic]] — retrieval as a system of techniques with known trade-offs, not a black box; misassembly as the cost of treating it as one.
+- **Caveats / counterpoints:** Hallucination remains real and worth measuring; the claim is about which failure mode dominates production at the frontier, not which is more interesting in toy benchmarks. Some misassembly cases overlap with hallucination at the edge.
+- **Candidate chapters:** 5, 7
+- **Reusable phrasing:** The next failure frontier is context misassembly — real documents, wrong composition, plausibly wrong answers.
