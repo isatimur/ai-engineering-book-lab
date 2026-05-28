@@ -120,15 +120,14 @@ A full description of public vs internal layers lives in [`PUBLIC_REPO_PLAN.md`]
 
 - **708 videos** ingested from the AI Engineer channel
 - **19 claims** anchored to video timestamps; **54 high-confidence anchors**, **7 medium**
-- **10 chapter drafts** rendered live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read)
+- **10 chapters** render live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read) — 3 in active Drafting, 3 Outlined, 4 still Starter
 - **65 hand-built diagrams** (14 overview + 18 concept + 30 inline + 3 maps) — live counts in [`STATS.md`](STATS.md)
 - **Evidence Rail** ships per chapter — every claim renders an embedded YouTube clip at its exact timestamp
 - **CI/CD** wired (build/test on PR, auto-deploy on push, evidence regen on claims-ledger change) — see [`DEPLOY.md`](DEPLOY.md)
 
 Not done yet:
 - Reader's chapter routes are SPA-only (per-chapter SEO routes spec'd at [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md), implementation queued)
-- Chapters 5, 7, 8, 9 are still Starter/Outlined — Drafting passes ongoing
-- One map (`03-concept-graph`) outstanding
+- Chapters 5, 7, 8, 9 are still Starter/Outlined — drafting passes ongoing
 
 ---
 
@@ -151,7 +150,7 @@ This is a public experiment. A few entry points that are genuinely useful right 
 ## Inspiration
 
 - **Autoresearch** (the underlying spirit — bounded research loops with self-improving instructions, originally from AI/ML research workflows)
-- **Karpathy's *Software 2.0* / *The bitter lesson*** (why investing in process beats investing in heroic effort)
+- **Karpathy's *Software 2.0*** and **Sutton's *The Bitter Lesson*** (why investing in process beats investing in heroic effort)
 - **Knuth's *Literate Programming*** (the idea that the artefact is a system + its derivation, not just the output)
 - ***Designing Data-Intensive Applications*** (the editorial bar this manuscript aims at)
 - **The AI Engineer practitioner community** for being the corpus

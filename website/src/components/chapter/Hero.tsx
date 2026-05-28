@@ -8,7 +8,7 @@ import stats from '../../data/stats.json';
 // thesis, and the evidence base. Self-served from /public/diagrams/.
 const IMAGES = {
   spine: { src: '/diagrams/overview/spine.png',         alt: 'The Argument Spine — 10 chapters in a four-act dependency arc' },
-  machine: { src: '/diagrams/overview/machine.png',     alt: 'The Autoresearch Knowledge Machine — five-layer pipeline turning 708 talks into a book' },
+  machine: { src: '/diagrams/overview/machine.png',     alt: 'The Autoresearch Knowledge Machine — five-layer pipeline turning a growing corpus of practitioner talks into a source-anchored book' },
   stack: { src: '/diagrams/overview/stack.png',         alt: 'The Scaffolding Stack — five engineered layers that wrap a raw model' },
   corpusMap: { src: '/diagrams/overview/corpus-map.png', alt: 'Theme & Corpus Map — ten themes sized by video count, mapped to chapters' },
 };

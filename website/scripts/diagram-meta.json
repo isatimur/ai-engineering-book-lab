@@ -8,7 +8,7 @@
     "02-autoresearch-machine.excalidraw": {
       "id": "machine",
       "title": "The Autoresearch Knowledge Machine",
-      "caption": "How a 693-video corpus becomes a source-backed book: a five-layer pipeline — Source → Synthesis → Evidence → Manuscript — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes."
+      "caption": "How a growing video corpus becomes a source-backed book: a five-layer pipeline — Source → Synthesis → Evidence → Manuscript — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Live corpus size in STATS.md."
     },
     "03-scaffolding-stack.excalidraw": {
       "id": "stack",
@@ -18,7 +18,7 @@
     "04-theme-corpus-map.excalidraw": {
       "id": "corpus-map",
       "title": "Theme & Corpus Map",
-      "caption": "What 693 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that Models & Inference is deliberately background, not a chapter."
+      "caption": "What the corpus is actually about: ten themes sized by video count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that Models & Inference is deliberately background, not a chapter."
     }
   },
   "openers": {
@@ -74,6 +74,7 @@
     "ch06-fig3-subagents-need-recompose.excalidraw": { "chapter": "06", "index": 3, "title": "Subagents need recomposition" },
     "ch07-fig1-authority-boundary-collapse.excalidraw": { "chapter": "07", "index": 1, "title": "Authority boundary collapse" },
     "ch07-fig2-scoped-agent-identity.excalidraw": { "chapter": "07", "index": 2, "title": "Scoped agent identity" },
+    "ch07-fig3-step-up-oauth.excalidraw": { "chapter": "07", "index": 3, "title": "Step-up OAuth" },
     "ch08-fig1-latency-budget.excalidraw": { "chapter": "08", "index": 1, "title": "Latency budget" },
     "ch08-fig2-speech-layer-wrapper.excalidraw": { "chapter": "08", "index": 2, "title": "Speech layer wrapper" },
     "ch08-fig3-interruption-runtime.excalidraw": { "chapter": "08", "index": 3, "title": "Interruption runtime" },
@@ -85,7 +86,8 @@
     "ch10-fig3-cost-of-weak-standards.excalidraw": { "chapter": "10", "index": 3, "title": "Cost of weak standards" }
   },
   "maps": {
-    "01-readers-path.excalidraw": { "id": "readers-path", "title": "Reader's path", "caption": "A suggested path through the chapters for different reader profiles." },
-    "02-methodology-deep-dive.excalidraw": { "id": "methodology-deep-dive", "title": "Methodology deep-dive", "caption": "For readers who want to inspect The Method itself." }
+    "01-readers-path.excalidraw": { "id": "readers-path", "title": "Reader's path", "caption": "Three reading routes through the same ten chapters — for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order." },
+    "02-methodology-deep-dive.excalidraw": { "id": "methodology-deep-dive", "title": "Methodology deep-dive", "caption": "The autoresearch pipeline in detail. Five layers — Source (video notes), Synthesis (themes, people, eighteen concepts), Evidence (claims ledger plus evidence packs), Manuscript (chapter packets and drafts), and a Research-Org control plane that schedules bounded agent passes — pinned to the actual repo directories that hold them. The diagram surfaces what is usually invisible behind 'we used AI to write this.'" },
+    "03-concept-graph.excalidraw": { "id": "concept-graph", "title": "Concept Graph", "caption": "Eighteen concepts from the manuscript drawn as a dependency network. Nodes are the named ideas — One-Shot AI Failure, Harness Engineering, Context Engineering, Durable Agents, Human Control Plane, and the rest. Edges are the dependencies and contrasts the book draws between them. Clusters mirror the four-act spine. A reader's map of the conceptual terrain." }
   }
 }

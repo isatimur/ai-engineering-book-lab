@@ -10,7 +10,7 @@
     {
       "id": "machine",
       "title": "The Autoresearch Knowledge Machine",
-      "caption": "How a 693-video corpus becomes a source-backed book: a five-layer pipeline — Source → Synthesis → Evidence → Manuscript — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes.",
+      "caption": "How a growing video corpus becomes a source-backed book: a five-layer pipeline — Source → Synthesis → Evidence → Manuscript — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Live corpus size in STATS.md.",
       "src": "/diagrams/overview/machine.png",
       "sourceFile": "02-autoresearch-machine.excalidraw"
     },
@@ -24,7 +24,7 @@
     {
       "id": "corpus-map",
       "title": "Theme & Corpus Map",
-      "caption": "What 693 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that Models & Inference is deliberately background, not a chapter.",
+      "caption": "What the corpus is actually about: ten themes sized by video count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that Models & Inference is deliberately background, not a chapter.",
       "src": "/diagrams/overview/corpus-map.png",
       "sourceFile": "04-theme-corpus-map.excalidraw"
     }
@@ -381,7 +381,7 @@
     {
       "chapter": "07",
       "index": 3,
-      "title": "Ch07 Fig3 Step Up Oauth",
+      "title": "Step-up OAuth",
       "src": "/diagrams/inline/ch07-fig3.png",
       "sourceFile": "ch07-fig3-step-up-oauth.excalidraw"
     },
@@ -453,21 +453,21 @@
     {
       "id": "concept-graph",
       "title": "Concept Graph",
-      "caption": "",
+      "caption": "Eighteen concepts from the manuscript drawn as a dependency network. Nodes are the named ideas — One-Shot AI Failure, Harness Engineering, Context Engineering, Durable Agents, Human Control Plane, and the rest. Edges are the dependencies and contrasts the book draws between them. Clusters mirror the four-act spine. A reader's map of the conceptual terrain.",
       "src": "/diagrams/maps/concept-graph.png",
       "sourceFile": "03-concept-graph.excalidraw"
     },
     {
       "id": "methodology-deep-dive",
       "title": "Methodology deep-dive",
-      "caption": "For readers who want to inspect The Method itself.",
+      "caption": "The autoresearch pipeline in detail. Five layers — Source (video notes), Synthesis (themes, people, eighteen concepts), Evidence (claims ledger plus evidence packs), Manuscript (chapter packets and drafts), and a Research-Org control plane that schedules bounded agent passes — pinned to the actual repo directories that hold them. The diagram surfaces what is usually invisible behind 'we used AI to write this.'",
       "src": "/diagrams/maps/methodology-deep-dive.png",
       "sourceFile": "02-methodology-deep-dive.excalidraw"
     },
     {
       "id": "readers-path",
       "title": "Reader's path",
-      "caption": "A suggested path through the chapters for different reader profiles.",
+      "caption": "Three reading routes through the same ten chapters — for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order.",
       "src": "/diagrams/maps/readers-path.png",
       "sourceFile": "01-readers-path.excalidraw"
     }

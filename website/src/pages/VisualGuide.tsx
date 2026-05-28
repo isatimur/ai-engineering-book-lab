@@ -44,7 +44,7 @@ export const VisualGuide = () => {
 
       <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-black/10">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">How to read this book</h1>
-        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Two maps — one for the reader's path, one for inspecting The Method itself.</p>
+        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Three maps. One picks a reading route by reader profile. One opens up The Method that produced the manuscript. One charts the dependency network of the eighteen concepts the book uses.</p>
         <div className="space-y-24">
           {manifest.maps.map((m) => (
             <figure key={m.id}>
@@ -62,7 +62,7 @@ export const VisualGuide = () => {
 
       <section id="concepts" className="px-6 lg:px-12 py-20 max-w-7xl mx-auto border-t border-black/10">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">Concepts</h1>
-        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Eighteen ideas that recur across the book. Click a card for the full diagram.</p>
+        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Eighteen named concepts that recur across the book — the units the arguments are built from. Click any card for the full diagram.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {manifest.concepts.map((c) => (
             <button
