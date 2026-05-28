@@ -29,3 +29,7 @@ observation -> verified claim -> evidence pack -> chapter argument -> prose draf
 
 ## Source Anchors
 Every supporting source on a promoted claim is a Source Anchor — `{video_id, start, end, quote, confidence}` — not a bare video link. A pass that extracts a claim is already reading the transcript, so it records the verbatim quote and its timestamps at promotion time (ADR-0002). The anchoring procedure, the ledger format, and the `99_Meta/scripts/anchor/cli.py` tool are documented in `programs/source_anchoring_pass.md`.
+
+## Specialized passes
+- `programs/source_anchoring_pass.md` — backfill Source Anchors for ledger claims that don't have one yet.
+- `programs/chapter_drafting_pass.md` — turn a Starter-status chapter into a Drafting-status chapter using its packet's source cluster + strongest claims. Per-chapter, bounded, output is prose + ledger entries; anchoring is the next pass.
