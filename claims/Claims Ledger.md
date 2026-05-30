@@ -480,3 +480,15 @@
 - **Caveats / counterpoints:** Hallucination remains real and worth measuring; the claim is about which failure mode dominates production at the frontier, not which is more interesting in toy benchmarks. Some misassembly cases overlap with hallucination at the edge.
 - **Candidate chapters:** 5, 7
 - **Reusable phrasing:** The next failure frontier is context misassembly — real documents, wrong composition, plausibly wrong answers.
+
+## 29) Latency masking belongs in the same architectural category as evals, harnesses, and durable runtimes
+- **Why it matters:** When tool-call variance is structurally unbounded (500ms–4s), no amount of component optimization gets the worst case into a conversational latency window. The systems that ship anyway add a masking layer — fillers, partial answers, conversational holding patterns — that keep the user inside the conversation while the orchestration runs. The masking is not animation. It is reliability infrastructure, and naming it as a category prevents it from being treated as UX polish to be bolted on at the end.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — the fillers pattern as an explicit response to tool-call variance: "while it waits for getting the result back, it can keep the conversation going."
+  - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Luke Harries, ElevenLabs]] — the voice engine as a first-class primitive with its own state, so the agent's slow operations don't translate into silent gaps.
+  - [[085-hwCmfThIiS4-voicevision-rag-integrating-visual-document-intelligence-with-voice-response-suman-debnath|#85 — Suman Debnath, AWS]] — VoiceVision RAG maintains the conversational thread while a vision model runs in the background; the user only experiences a continuous exchange.
+  - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Pipecat Cloud's architecture is organized around the latency budget rather than per-component optimization; orchestration handles lateness as the design assumption.
+- **Caveats / counterpoints:** Masking is paid for in user trust if overused or used cynically — repeated *one moment* fillers with no payoff teach the user the system is lying about progress. The claim is about masking as designed-in conversational scaffolding, not about generic stalling. The claim also doesn't replace the latency-optimization argument; it complements it.
+- **Candidate chapters:** 8
+- **Reusable phrasing:** Latency must be masked, not just minimized. Fillers are conversational scaffolding, not animation.

@@ -81,9 +81,9 @@ export const chapters: BookChapter[] = [
   },
   {
     number: '08',
-    title: 'Realtime and Embodied Edges',
+    title: 'Realtime, Voice, and the Cost of Being Interruptible',
     promise: 'What voice, latency, and turn-taking reveal about production AI.',
-    status: 'Starter',
+    status: 'Drafting',
     content: chapter08,
     wordCount: countWords(chapter08),
   },
