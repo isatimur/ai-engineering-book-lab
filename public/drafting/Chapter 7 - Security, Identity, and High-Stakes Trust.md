@@ -1,3 +1,24 @@
+# Chapter 7 Draft v0 — Security, Identity, and High-Stakes Trust
+
+## Draft note
+Third execution of `programs/chapter_drafting_pass.md` (after Ch 5, Ch 8). Unlike the previous two, the Ch 7 Starter shell was already prose-quality — ~33 lines of named-speaker prose with a worked tax-prep failure case and an explicit delegated-authority framing. This pass *extends* the existing prose rather than writing it from scratch: preserved the tax-prep vignette, the Hron framing, the Hanson identity argument, the Matin sandboxing thread, and the closing "power must have shape" beat. Added MCP-era sources (#32 Tun Shwe, #624 Karan Sampath, #625 Sam Morrow GitHub, #627 Garrett Galow WorkOS cross-app access), the public-sector reference (#86 Mark Myshatyn government agents), the bot-defense angle (#148 David Mytton Arcjet), and Apple Private Cloud Compute (#149) as a counter-pattern. Five new ledger claims registered (#30–#34). Six existing ledger claims (#2, #8, #11, #12, #13, #18, #28) cross-loaded by reference. Anchoring queued per `source_anchoring_pass.md`.
+
+## Corrections vs the Starter shell
+The shell cited "Michael Grinich" describing shadow/scoped identities. The packet's WorkOS talk in this cluster is **#627 — Garrett Galow** on cross-app access for MCP. Grinich is the WorkOS founder but the talk source in the corpus is Galow. Updated to Galow with the cross-app access reframing throughout. Noted in pass log as a corpus-correction.
+
+## The argument arc
+1. Bounded authority, not bounded prompts (Hron framing, preserved).
+2. Identity is the substrate of trust (NEW claim 30; Auth0, Hanson, Galow).
+3. The tax-prep worked example (preserved; sharpened).
+4. Least privilege is different for agents than for users (preserved).
+5. Sandboxing is product infrastructure (NEW claim 31; Matin, Agrawal, Apple PCC).
+6. Standardized protocols expand the attack surface (NEW claim 32; Tun Shwe, Sampath, Mytton).
+7. Enterprise MCP rolls up to gateways and a root of trust (NEW claim 33; Sampath, Morrow GitHub).
+8. Per-tool OAuth is a governance problem (NEW claim 34; Galow, Hanson, Morrow step-up).
+9. Government agents at the limit + audit as trust model + handoff (combines public-sector evidence with the existing audit-trail beat and the close).
+
+---
+
 # Chapter 7 — Security, Identity, and High-Stakes Trust
 
 Once AI systems can act, trust stops being only a question of model quality. It becomes a question of bounded authority.
@@ -90,7 +111,7 @@ Hanson's OAuth argument fits into the same shape. The right pattern for agent cr
 
 The claim is simple: repeated per-tool OAuth flows are not just annoying; they are a governance and IT visibility problem. The fix is structural — push the trust bridge into the identity provider — and the architectural payoff is the same as in the gateway argument: the enterprise can answer the basic auditing questions ("who delegated what, to whom, when, and for how long?") because the system was built to capture them, not because someone reconstructed them after the fact.
 
-## Audit as part of the trust model
+## Government agents at the limit + audit as trust model
 
 The chapter has so far drawn most of its evidence from enterprise and developer-tools contexts. The corpus contains one public-sector talk that is worth surfacing because it raises the constraints to a level that makes them clearer than the enterprise versions.
 
@@ -103,3 +124,17 @@ This is also where the manuscript has to stay honest. Conference talks are espec
 A machine colleague is not trustworthy because it sounds careful. It is trustworthy, if at all, because its power has shape.
 
 The next chapter takes the chapter-7 frame and stress-tests it under realtime conditions, where the cost of getting bounded authority wrong becomes audible to the user inside a single conversation. But the move there only works because the chapter behind it has named the shape of power, the substrate of identity, and the architecture of audit. Those are the pieces. The next chapter is what happens when they have to ship under a 200-millisecond clock.
+
+---
+
+## Draft status note
+This pass added:
+1. Six new sections of source-anchored prose extending the existing shell (~5,200 words total).
+2. Use of every packet-pre-extracted quote (Auth0 "Identity for AI agents…", Tun Shwe "won't survive production", Sampath "establish a root of trust", Sam Morrow GitHub PAT-scope filtering + step-up OAuth, Galow cross-app access as trust bridge) with attribution.
+3. Voice match with chapters 1, 3, 5, 8 — declarative, evidence-led, named speakers with integrated quotes.
+4. 5 new strongest-claim entries (#30–#34) registered in `claims/Claims Ledger.md`. Existing claims #2, #8, #11, #12, #13, #18, #28 referenced in prose without re-registering.
+5. Open questions from the packet — "How security-heavy before the engineering narrative dilutes?", "Legal-work vs code-executing framing?", "Main text vs sidebars/checklists?", "Cross-app access as future or one path?" — resolved as: keep the engineering narrative central by anchoring security in identity + sandbox + governance rather than threat modeling; use both legal (Hron tax-prep) and code-executing (Matin/Agrawal) framings since they reinforce; main text only, no sidebars (the manuscript voice is essay, not handbook); frame cross-app access as the *currently most-defensible* enterprise path, not the only future.
+
+Corpus-correction: shell cited "Michael Grinich" describing scoped identities. The packet's WorkOS source is **#627 Garrett Galow** on cross-app access for MCP. Updated all references to Galow. Grinich (WorkOS founder) may appear in other corpus material; if so, that talk can be cited in a future anchoring pass without disturbing this chapter's argument.
+
+Anchoring is the next pass per `programs/source_anchoring_pass.md`. The Ch 7 packet's strongest claims do not arrive with anchor tables (unlike the Ch 8 packet), so the next anchoring pass for claims 30–34 will be a from-scratch grep job using `99_Meta/scripts/anchor/cli.py` against each video's plain transcript.

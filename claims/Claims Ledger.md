@@ -492,3 +492,59 @@
 - **Caveats / counterpoints:** Masking is paid for in user trust if overused or used cynically — repeated *one moment* fillers with no payoff teach the user the system is lying about progress. The claim is about masking as designed-in conversational scaffolding, not about generic stalling. The claim also doesn't replace the latency-optimization argument; it complements it.
 - **Candidate chapters:** 8
 - **Reusable phrasing:** Latency must be masked, not just minimized. Fillers are conversational scaffolding, not animation.
+
+## 30) Identity is a first-class engineering object for agentic systems
+- **Why it matters:** The most common engineering shortcut — giving an agent a standing credential — silently dissolves the delegation the system is supposed to be making. Naming identity as a first-class object (with bounded scope, bounded lifetime, and an audit footprint) is the move that lets every other security primitive — least privilege, sandboxing, audit — actually attach to something. Without it, the others have no principal to enforce against.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[037-VSdV-AdSlis-identity-for-ai-agents-patrick-riley-carlos-galan-auth0|#37 — Patrick Riley & Carlos Galan, Auth0]] — making the agent and its capabilities first-class citizens in the identity provider, with their own scopes and lifetimes.
+  - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard / Passport.js]] — agents need short-lived OAuth-scoped tokens, not standing API keys; the credential shape is the delegation shape.
+  - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — the identity provider as a trust bridge for MCP, so credentials carry enterprise-visible scope and revocation.
+- **Caveats / counterpoints:** Internal experiments and developer-time tooling can get away with much looser identity than production systems. The claim is about systems that act on real users, real data, and real third parties — where the principal needs to be inspectable.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** An agent that is authenticated as a blurry extension of a human is not delegated. It is impersonating.
+
+## 31) Sandbox, least privilege, and auditability are product infrastructure, not security overhead
+- **Why it matters:** Reframes security primitives as part of the runtime spec rather than as compliance afterthoughts. A team that treats them as the security team's problem will discover the boundary by getting it wrong in production. A team that treats them as part of what the runtime must provide has a chance of getting them right before that.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — sandboxing, network restriction, privilege boundaries, and human review as the substrate code-executing agents have to run on.
+  - [[031-AHtGAgQ0Q_Q-why-and-how-you-need-to-sandbox-ai-generated-code-harshil-agrawal-cloudflare|#31 — Harshil Agrawal, Cloudflare]] — sandbox-by-default for any agent executing code; the bounds are the product, not the fallback.
+  - [[149-CCsWZ5bJlO8-the-unofficial-guide-to-apple-s-private-cloud-compute-jmo-confsec|#149 — Jmo, CONFSEC, on Apple Private Cloud Compute]] — the high-end version of designed-in cryptographic boundary; useful as the extreme reference even when not the right pattern for every product.
+  - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Mark Myshatyn, Los Alamos National Lab]] — the regulated public-sector setting where these constraints become legal requirements rather than best practices.
+- **Caveats / counterpoints:** Maximum sandboxing has real costs in latency, developer experience, and integration ease. The right setting is workflow-specific. The claim is about the category, not a universal sandbox spec.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** Sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: product infrastructure, not security overhead.
+
+## 32) Protocol standardization expands the attack surface if governance lags
+- **Why it matters:** A common hope around MCP is that standardization reduces the security problem. The actual practitioner pattern in the corpus is the opposite: easier interoperability means tools can be exposed faster than the scope, mediation, review, and audit work can catch up. Naming the dynamic prevents teams from treating standardization as "the security problem is now solved" when it is actually a forcing function for governance work in parallel.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32 — Tun Shwe, Lenses]] — "Your insecure MCP server won't survive production"; a tour of demo-grade assumptions that fail at real load.
+  - [[624-CD6R4Wf3jnY-what-we-learned-scaling-mcps-to-enterprise-karan-sampath-anthropic|#624 — Karan Sampath, Anthropic]] — the structural answer from the enterprise governance side; without a root of trust, capability standardization makes inspection harder, not easier.
+  - [[148-Gi4V8viBGYQ-how-to-defend-your-sites-from-ai-bots-david-mytton-arcjet|#148 — David Mytton, Arcjet]] — the parallel argument from outside the perimeter; the defender's surface expands with the attacker's standardized toolkit.
+- **Caveats / counterpoints:** Not an argument against standardization. Standardization remains the right move for interoperability. The claim is that it is also a forcing function — security and governance work has to happen alongside it, not afterwards.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** Standardization is a forcing function for governance work, not a substitute for it.
+
+## 33) Enterprise MCP adoption converges on gateways, blessed platforms, and a root of trust
+- **Why it matters:** Once enterprise teams take MCP security seriously, the architecture they reach for converges on a recognizable shape: gateway, policy plane, blessed-server registry, principal-aware permissions, audit log at the gateway layer. Naming the pattern changes what teams build first — the platform shape becomes the first deliverable, rather than something added under pressure once individual servers proliferate.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[624-CD6R4Wf3jnY-what-we-learned-scaling-mcps-to-enterprise-karan-sampath-anthropic|#624 — Karan Sampath, Anthropic]] — root of trust at the platform; servers reviewed before being allowed; tools scoped to principals; audit built into the gateway layer.
+  - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — production-scale shape: tools filtered by PAT scopes; step-up OAuth used for additional privileges only when needed; capability follows authority dynamically.
+  - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — the credential-layer foundation the gateway pattern rests on.
+- **Caveats / counterpoints:** Small teams and developer environments can ship useful MCP work without the full gateway stack. The claim is about the architecture mature enterprise deployments converge on, not the starting position for every team. Also: the IAM/API-gateway analogy is useful but imperfect — capability is a different category than request, and the governance models will continue to diverge.
+- **Candidate chapters:** 7, 9
+- **Reusable phrasing:** The root of trust is established at the platform, not at the individual tool.
+
+## 34) Per-tool OAuth flows are a governance and IT visibility problem, not just a UX annoyance
+- **Why it matters:** What looks like a paper-cut sequence of OAuth dialogs to operators is, to security and IT, a governance failure: each consent grant happens between the user and the third-party tool, invisible to the enterprise. The fix is structural — push the trust bridge into the identity provider — and the architectural payoff (enterprise visibility, scoped delegation, revocation as a first-class operation) is the same as the gateway argument. Naming the problem as governance rather than UX changes what gets built.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — cross-app access: identity provider as trust bridge; central enterprise visibility into delegated authority.
+  - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — OAuth-scoped tokens, issued through a flow the identity provider can audit, as the right credential shape for agent work.
+  - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — step-up OAuth as the same pattern at the tool layer: agent holds only the authority it currently needs; escalations produce records.
+- **Caveats / counterpoints:** Cross-app access is one possible enterprise path, not the only one. Alternatives (per-team gateway approval, single-vendor SaaS bundles, custom IT-managed proxies) exist and may dominate in specific contexts. The structural claim — that the consent surface is also a governance surface — holds across all of them.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** A faster consent flow with no visibility is not progress.

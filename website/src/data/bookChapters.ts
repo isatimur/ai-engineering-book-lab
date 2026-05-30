@@ -75,7 +75,7 @@ export const chapters: BookChapter[] = [
     number: '07',
     title: 'Security, Identity, and High-Stakes Trust',
     promise: 'Why delegated authority needs boundaries, audit trails, and real controls.',
-    status: 'Starter',
+    status: 'Drafting',
     content: chapter07,
     wordCount: countWords(chapter07),
   },
