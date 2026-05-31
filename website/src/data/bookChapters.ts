@@ -91,7 +91,7 @@ export const chapters: BookChapter[] = [
     number: '09',
     title: 'The AI-Native Organization',
     promise: 'How teams and incentives change when AI becomes part of the workforce.',
-    status: 'Starter',
+    status: 'Drafting',
     content: chapter09,
     wordCount: countWords(chapter09),
   },

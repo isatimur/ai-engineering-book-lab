@@ -548,3 +548,61 @@
 - **Caveats / counterpoints:** Cross-app access is one possible enterprise path, not the only one. Alternatives (per-team gateway approval, single-vendor SaaS bundles, custom IT-managed proxies) exist and may dominate in specific contexts. The structural claim — that the consent surface is also a governance surface — holds across all of them.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** A faster consent flow with no visibility is not progress.
+
+## 35) AI-native advantage is an operating-model redesign, not a procurement decision
+- **Why it matters:** The most common organizational mistake is treating AI as a budget line — buy seats, count usage, declare adoption. The discontinuity Shipper points at (90% vs 100% usage as a 10x gap) is structural: partial adoption keeps the old workflows intact, and the workflow cannot be rebuilt around delegation until delegation is universal. Naming the move as redesign rather than rollout changes what gets built and what gets measured.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[065-MGzymaYBiss-dispatch-from-the-future-building-an-ai-native-company-dan-shipper-every-ai-i|#65 — Dan Shipper, Every]] — "There is a 10x difference between an organization where 90% of engineers use AI versus one where 100% do" — the discontinuity-at-full-adoption framing.
+  - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the "from hype to habit" cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
+  - [[199-3YGRcgZJ3yc-from-hype-to-habit-how-we-re-building-an-ai-first-saas-company-while-still-shipping-the-ro|#199 — From Hype to Habit (AI-first SaaS)]] — case study of an AI-first company that still ships a roadmap; describes operating-model redesign in detail.
+  - [[062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian|#62 — Justin Reock, DX (acq. Atlassian)]] — manager role shifts from allocating production capacity (now abundant) to allocating judgment and attention (still scarce); the org chart was built to ration the wrong resource.
+- **Caveats / counterpoints:** The 10x figure is a discontinuity claim from one practitioner, not a controlled measurement. The structural argument (full vs partial adoption produces qualitatively different organizations) is robust across the cluster; the specific multiplier is not the load-bearing part.
+- **Candidate chapters:** 9
+- **Reusable phrasing:** AI-native is the operating model, not the procurement.
+
+## 36) Broader creation requires tighter review and governance — they rise together or the first becomes a liability
+- **Why it matters:** Democratizing creation without strengthening the path-to-ship produces uncontrolled output that the organization cannot trust. Naming the symmetry — broader who-can-start, narrower how-it-ships — prevents the "everyone is a builder now" framing from collapsing into a free-for-all that the company then has to clean up at the merge layer.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[069-RmJ4rTLV_x4-your-support-team-should-ship-code-lisa-orr-zapier|#69 — Lisa Orr, Zapier]] — the radical-version provocation: "Your support team should ship code" — and the implicit governance work that has to come with it.
+  - [[162-xzJdSi2Tsqw-why-your-product-needs-an-ai-product-manager-and-why-it-should-be-you-james-lowe-i-ai|#162 — James Lowe, i.AI]] — the judgment-layer role: someone has to own which of the many possible artifacts is worth shipping and shape the constraints under which non-specialists create safely.
+  - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Denys Linkov, Wisedocs]] — the team that ships dependable AI mixes capabilities that used to live in separate departments; the unit of work crosses old boundaries.
+  - [[207-Zqu0VaJw3vo-how-to-hire-ai-engineers-when-everyone-is-cheating-with-ai-beth-glenfield-devday|#207 — Beth Glenfield, DevDay]] — old hiring signals stop discriminating once everyone interviews with AI; the organization has to learn to hire for judgment, not for code-production ability that is now widely available.
+- **Caveats / counterpoints:** Some workflows still benefit from a tight specialist guild — regulated industries, safety-critical systems, high-uncertainty research. The claim is about the general direction once AI removes the basic creation bottleneck, not about every team in every setting.
+- **Candidate chapters:** 9
+- **Reusable phrasing:** Broad paths to create, narrow paths to ship.
+
+## 37) Activity-based metrics misread motion as progress in AI-augmented work
+- **Why it matters:** When generation is cheap, output volume rises faster than value. Dashboards that count artifacts (commits, PRs, tickets touched) light up green while the actual constraint — whether the organization can review, integrate, and trust what was produced — goes invisible until it breaks. The wrong metric applied to cheap execution actively destroys value because it directs management attention toward the abundant resource and away from the scarce one.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[079-JvosMkuNxF8-can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanfor|#79 — Yegor Denisov-Blanch, Stanford (120k devs study)]] — productivity effect is real but uneven; reliably overstated when teams measure activity instead of outcomes.
+  - [[195-tbDDYKRFjhk-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanfor|#195 — Yegor Denisov-Blanch, Stanford (100k devs study)]] — corroborating dataset; AI-generated work creates rework that quietly eats the gain.
+  - [[101-WqZq8L-v9pA-what-data-from-20m-pull-requests-reveal-about-ai-transformation-nick-arcolano-jellyfish|#101 — Nick Arcolano, Jellyfish (20M PRs)]] — output volume rises, activity dashboards light up green, the actual constraint (review/integration/trust) goes unmeasured.
+  - [[063-4mRekpZpBZs-paying-engineers-like-salespeople-arman-hezarkhani-tenex|#63 — Arman Hezarkhani, Tenex]] — extending the metric problem to compensation: when effort is cheap, paying for effort produces the wrong incentives; outcome-based comp is one possible response.
+- **Caveats / counterpoints:** Activity metrics are not useless — they remain a leading indicator of adoption and a debugging signal for blockers. The claim is that they become misleading as the *primary* measure of value once AI removes the cost-of-production constraint.
+- **Candidate chapters:** 4, 9
+- **Reusable phrasing:** Counting artifacts in a world where artifacts are cheap is counting the wrong thing.
+
+## 38) Review capacity is the throughput limit of an AI-native organization
+- **Why it matters:** If one person can direct many agents and more people can now create, the total volume of work rises far faster than the human capacity to review it. Review — not generation — becomes the binding constraint. Treating review as a quality-assurance afterthought, rather than as a designed system with layered automation, triage rules, and roll-up visibility, caps the entire organization's safe speed at the unscaled human resource.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — going fast without good alignment leads to wasted work, duplicate effort, and giant review queues with little context.
+  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — software-factory framing with roll-up visibility: a single surface showing what every agent is doing and what humans actually need to look at, instead of a firehose of agent chatter.
+  - [[054-rT2Del5pwg4-developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one|#54 — Max Kanat-Alexander, Capital One]] — developer-experience framing: review queues become the felt experience of AI-native engineering at scale.
+- **Caveats / counterpoints:** Some teams ship via auto-merge on green and treat review as exception-handling. That works until the eval suite isn't good enough to catch the consequential cases — at which point review reappears as the constraint, just delayed. The claim is structural: trustworthy throughput is bounded by trustworthy review, regardless of where the review happens in the workflow.
+- **Candidate chapters:** 9
+- **Reusable phrasing:** You can only safely create as fast as you can trustworthily review.
+
+## 39) Alignment debt is the AI-native equivalent of technical debt
+- **Why it matters:** A subtler failure than an overflowing review queue: when individuals each direct their own fleet of agents in private, every workflow can be locally efficient and the whole can still be globally incoherent. Two engineers solve the same problem two ways. A feature conflicts with another team's assumption. Like technical debt, alignment debt accrues invisibly while things feel fast, and comes due all at once as the duplicated work, conflicting implementations, and giant unmergeable pile. Naming it as a category — and treating it as upfront alignment cost rather than back-end cleanup — changes the team's posture toward agent fan-out.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — the load-bearing source: "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective." Names the gap in tooling and the resulting team-level incoherence.
+  - [[160-PthmdT92qNg-shipping-products-when-you-don-t-know-what-they-can-do-ben-stein-teammates|#160 — Ben Stein, Teammates]] — the planning-fan-out problem from the product side: shipping when you don't fully know what the system can do means alignment has to happen earlier, before specification freezes.
+  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — the software-factory framing with shared plans and roll-up visibility as the structural response.
+- **Caveats / counterpoints:** "Alignment debt" is a freshly-coined term inheriting authority from the well-established "technical debt" analogy. The analogy is useful but imperfect — technical debt's tradeoffs are reasonably well-modeled, alignment debt's are not yet. Treat the term as a useful organizing concept that will be sharpened by more practitioner case studies, not as a settled framework.
+- **Candidate chapters:** 9
+- **Reusable phrasing:** Alignment debt is the tax an organization pays for treating a collective activity as a collection of private ones.
