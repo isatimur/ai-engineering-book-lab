@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-31T11:52:49+00:00",
+  "generated_at": "2026-05-31T12:29:01+00:00",
   "corpus": {
-    "videos": 57
+    "videos": 708
   },
   "synthesis": {
     "themes": 10,
-    "people": 0,
-    "concepts": 0,
+    "people": 50,
+    "concepts": 19,
     "concepts_public": 2,
-    "drafting_files": 4
+    "drafting_files": 9
   },
   "claims": {
     "total": 39,
@@ -17,9 +17,9 @@
     "tentative": 0
   },
   "anchors": {
-    "total": 124,
-    "high": 114,
-    "medium": 9,
+    "total": 139,
+    "high": 128,
+    "medium": 10,
     "low": 1
   },
   "chapters": {
@@ -37,9 +37,9 @@
     "total": 65
   },
   "method": {
-    "research_passes": 8,
+    "research_passes": 16,
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 181
+  "total_artefacts": 901
 }

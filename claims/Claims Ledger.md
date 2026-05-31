@@ -631,8 +631,14 @@
     - **Anchor:** `MGzymaYBiss` 00:02:17.680 → 00:02:18.080 · confidence: high
     - **Quote:** "10x difference"
   - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the "from hype to habit" cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
+    - **Anchor:** `mQ7_Zje7WKE` 00:00:47.440 → 00:00:47.840 · confidence: high
+    - **Quote:** "AI engineering"
   - [[199-3YGRcgZJ3yc-from-hype-to-habit-how-we-re-building-an-ai-first-saas-company-while-still-shipping-the-ro|#199 — From Hype to Habit (AI-first SaaS)]] — case study of an AI-first company that still ships a roadmap; describes operating-model redesign in detail.
+    - **Anchor:** `3YGRcgZJ3yc` 00:00:18.640 → 00:00:19.039 · confidence: high
+    - **Quote:** "AI first"
   - [[062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian|#62 — Justin Reock, DX (acq. Atlassian)]] — manager role shifts from allocating production capacity (now abundant) to allocating judgment and attention (still scarce); the org chart was built to ration the wrong resource.
+    - **Anchor:** `PmZDupFP3UM` 00:14:12.079 → 00:14:12.480 · confidence: high
+    - **Quote:** "required reading"
 - **Caveats / counterpoints:** The 10x figure is a discontinuity claim from one practitioner, not a controlled measurement. The structural argument (full vs partial adoption produces qualitatively different organizations) is robust across the cluster; the specific multiplier is not the load-bearing part.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** AI-native is the operating model, not the procurement.
@@ -642,9 +648,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[069-RmJ4rTLV_x4-your-support-team-should-ship-code-lisa-orr-zapier|#69 — Lisa Orr, Zapier]] — the radical-version provocation: "Your support team should ship code" — and the implicit governance work that has to come with it.
+    - **Anchor:** `RmJ4rTLV_x4` 00:00:25.439 → 00:00:25.840 · confidence: high
+    - **Quote:** "support team"
   - [[162-xzJdSi2Tsqw-why-your-product-needs-an-ai-product-manager-and-why-it-should-be-you-james-lowe-i-ai|#162 — James Lowe, i.AI]] — the judgment-layer role: someone has to own which of the many possible artifacts is worth shipping and shape the constraints under which non-specialists create safely.
+    - **Anchor:** `xzJdSi2Tsqw` 00:01:48.479 → 00:01:48.880 · confidence: high
+    - **Quote:** "product manager."
   - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Denys Linkov, Wisedocs]] — the team that ships dependable AI mixes capabilities that used to live in separate departments; the unit of work crosses old boundaries.
+    - **Anchor:** `SbUxRluVRwk` 00:00:20.880 → 00:00:23.039 · confidence: medium
+    - **Quote:** "modern AI So,"
   - [[207-Zqu0VaJw3vo-how-to-hire-ai-engineers-when-everyone-is-cheating-with-ai-beth-glenfield-devday|#207 — Beth Glenfield, DevDay]] — old hiring signals stop discriminating once everyone interviews with AI; the organization has to learn to hire for judgment, not for code-production ability that is now widely available.
+    - **Anchor:** `Zqu0VaJw3vo` 00:00:36.000 → 00:00:36.000 · confidence: high
+    - **Quote:** "hire"
 - **Caveats / counterpoints:** Some workflows still benefit from a tight specialist guild — regulated industries, safety-critical systems, high-uncertainty research. The claim is about the general direction once AI removes the basic creation bottleneck, not about every team in every setting.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Broad paths to create, narrow paths to ship.
@@ -654,9 +668,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[079-JvosMkuNxF8-can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanfor|#79 — Yegor Denisov-Blanch, Stanford (120k devs study)]] — productivity effect is real but uneven; reliably overstated when teams measure activity instead of outcomes.
+    - **Anchor:** `JvosMkuNxF8` 00:12:42.800 → 00:12:43.200 · confidence: high
+    - **Quote:** "maximize developer"
   - [[195-tbDDYKRFjhk-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanfor|#195 — Yegor Denisov-Blanch, Stanford (100k devs study)]] — corroborating dataset; AI-generated work creates rework that quietly eats the gain.
+    - **Anchor:** `tbDDYKRFjhk` 00:01:22.080 → 00:01:22.080 · confidence: high
+    - **Quote:** "productivity,"
   - [[101-WqZq8L-v9pA-what-data-from-20m-pull-requests-reveal-about-ai-transformation-nick-arcolano-jellyfish|#101 — Nick Arcolano, Jellyfish (20M PRs)]] — output volume rises, activity dashboards light up green, the actual constraint (review/integration/trust) goes unmeasured.
+    - **Anchor:** `WqZq8L-v9pA` 00:06:06.800 → 00:06:07.039 · confidence: high
+    - **Quote:** "pull requests"
   - [[063-4mRekpZpBZs-paying-engineers-like-salespeople-arman-hezarkhani-tenex|#63 — Arman Hezarkhani, Tenex]] — extending the metric problem to compensation: when effort is cheap, paying for effort produces the wrong incentives; outcome-based comp is one possible response.
+    - **Anchor:** `4mRekpZpBZs` 00:01:01.520 → 00:01:01.520 · confidence: high
+    - **Quote:** "salespeople."
 - **Caveats / counterpoints:** Activity metrics are not useless — they remain a leading indicator of adoption and a debugging signal for blockers. The claim is that they become misleading as the *primary* measure of value once AI removes the cost-of-production constraint.
 - **Candidate chapters:** 4, 9
 - **Reusable phrasing:** Counting artifacts in a world where artifacts are cheap is counting the wrong thing.
@@ -669,7 +691,11 @@
     - **Anchor:** `ClWD8OEYgp8` 00:00:20.960 → 00:00:20.960 · confidence: high
     - **Quote:** "alignment."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — software-factory framing with roll-up visibility: a single surface showing what every agent is doing and what humans actually need to look at, instead of a firehose of agent chatter.
+    - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
+    - **Quote:** "software factory"
   - [[054-rT2Del5pwg4-developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one|#54 — Max Kanat-Alexander, Capital One]] — developer-experience framing: review queues become the felt experience of AI-native engineering at scale.
+    - **Anchor:** `rT2Del5pwg4` 00:00:28.320 → 00:00:28.720 · confidence: high
+    - **Quote:** "developer experience"
 - **Caveats / counterpoints:** Some teams ship via auto-merge on green and treat review as exception-handling. That works until the eval suite isn't good enough to catch the consequential cases — at which point review reappears as the constraint, just delayed. The claim is structural: trustworthy throughput is bounded by trustworthy review, regardless of where the review happens in the workflow.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** You can only safely create as fast as you can trustworthily review.
@@ -682,7 +708,46 @@
     - **Anchor:** `ClWD8OEYgp8` 00:04:55.560 → 00:04:55.920 · confidence: high
     - **Quote:** "shared space"
   - [[160-PthmdT92qNg-shipping-products-when-you-don-t-know-what-they-can-do-ben-stein-teammates|#160 — Ben Stein, Teammates]] — the planning-fan-out problem from the product side: shipping when you don't fully know what the system can do means alignment has to happen earlier, before specification freezes.
+    - **Anchor:** `PthmdT92qNg` 00:01:33.920 → 00:01:34.079 · confidence: high
+    - **Quote:** "don't know what"
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — the software-factory framing with shared plans and roll-up visibility as the structural response.
+    - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
+    - **Quote:** "software factory"
 - **Caveats / counterpoints:** "Alignment debt" is a freshly-coined term inheriting authority from the well-established "technical debt" analogy. The analogy is useful but imperfect — technical debt's tradeoffs are reasonably well-modeled, alignment debt's are not yet. Treat the term as a useful organizing concept that will be sharpened by more practitioner case studies, not as a settled framework.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Alignment debt is the tax an organization pays for treating a collective activity as a collection of private ones.
+
+## 40) Cheap generation raises the value of taste and judgment rather than lowering it
+- **Why it matters:** The intuitive reading of cheap code is that engineering judgment matters less. The corpus argues the opposite, and the mechanism is specific: when building was expensive, the cost of building was itself a filter on what got built; remove the cost and the filter disappears, so the discriminative skill that decides what *should* be built has to replace it. This is the human half of the book's opening argument and the hinge from Chapter 1's delegation thesis into the technical core.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — Matt Pocock, AI Hero]] — "Software fundamentals matter now more than they actually ever have" — fundamentals are how you tell good output from merely convincing output, and a flood of convincing output needs that skill more.
+  - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Tuomas Artman & Gergely Orosz]] — "What happens when agents are capable of doing everything immediately for you?" — names the scarcity shift from making to discerning.
+  - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — "the friction is your judgment" — the pauses AI removes are often where quality was being created.
+- **Caveats / counterpoints:** For genuinely throwaway work (one-off scripts, disposable prototypes) the judgment overhead is not worth paying, and cheap generation is an unalloyed win. The claim is about output that has to endure or be relied on, where the production filter mattered.
+- **Candidate chapters:** 2, 9, 10
+- **Reusable phrasing:** Cheap output is not cheap judgment; abundance promotes taste rather than retiring it.
+
+## 41) Vibe coding is an exploration mode that fails as a production default
+- **Why it matters:** "Vibe coding" — building by rapid, loosely-specified prompting steered on feel — is the clearest live example of the taste problem, and the corpus is productively split on it. The resolution is not pro/anti but a mode distinction: it is an excellent accelerant for discovery and a liability the moment an exploratory mode silently hardens into a production philosophy. Naming the mode-switch is what makes the practice usable rather than dangerous.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[073-JV-wY5pxXLo-from-vibe-coding-to-vibe-engineering-kitze-sizzy|#73 — Kitze, Sizzy]] — the from-vibe-coding-to-vibe-engineering arc: the practice has to mature into discipline when output has to endure.
+  - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — "I'm declaring war on slop today" — the engineer's reaction to exploratory output shipped as production work.
+  - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — "vibes won't cut it" — feel-based steering is insufficient once the work has to be trusted.
+  - [[106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore|#106 — Corey J. Gallon, Rexmore]] — the "hangover": exploratory speed creates downstream cost when it becomes the default.
+  - [[127-n991Yxo1aOI-vibe-coding-with-confidence-itamar-friedman-qodo|#127 — Itamar Friedman, Qodo]] — the corrective: confidence in fast generation comes from the verification wrapped around it, not the vibes.
+- **Caveats / counterpoints:** The pro-exploration case is genuine and should not be flattened — vibe coding is the right mode for prototypes, sketches, internal tools, and learning what is worth building. The claim is specifically about the silent drift from exploration into production, not a blanket dismissal.
+- **Candidate chapters:** 2
+- **Reusable phrasing:** Use vibe coding when the goal is discovery; switch modes when the output has to endure.
+
+## 42) Problem framing and review become the scarce skills once execution is cheap
+- **Why it matters:** When a model will faithfully execute whatever it is pointed at, two human capacities become the binding constraint: framing the task well enough that fluent execution lands on the right target, and reviewing output well enough to defend standards against the pressure of fast, plausible work. A badly framed task handed to a strong model wastes more time than before, because the system sprints confidently in the wrong direction. This is the same control-system logic the book applies to evals (Claim 8), arriving first in its human form.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — the friction worth keeping (the review, the architecture question, the refusal of a generic draft) is where judgment lives.
+  - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — review as the discipline that separates trustworthy output from plausible output.
+  - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — slop as work that looks done and transfers its cost downstream; review is where that cost is refused.
+- **Caveats / counterpoints:** Framing and review can themselves be over-applied — heavy upfront specification on genuinely exploratory work suppresses the discovery that cheap generation enables. The claim is about work that has to be trusted, where the scarce skill is discrimination, not ceremony.
+- **Candidate chapters:** 2, 4
+- **Reusable phrasing:** In a world of cheap execution, framing is the work and review is where standards are defended.

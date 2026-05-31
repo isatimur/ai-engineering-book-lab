@@ -1457,6 +1457,119 @@
           "confidence": "high",
           "label": "#65 — Dan Shipper, Every",
           "quote": "10x difference"
+        },
+        {
+          "video_id": "mQ7_Zje7WKE",
+          "start": "00:00:47.440",
+          "end": "00:00:47.840",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#137 — Barr Yaron, Amplify (2025 AI Engineering Report)",
+          "quote": "AI engineering"
+        },
+        {
+          "video_id": "3YGRcgZJ3yc",
+          "start": "00:00:18.640",
+          "end": "00:00:19.039",
+          "start_seconds": 18,
+          "confidence": "high",
+          "label": "#199 — From Hype to Habit (AI-first SaaS)",
+          "quote": "AI first"
+        },
+        {
+          "video_id": "PmZDupFP3UM",
+          "start": "00:14:12.079",
+          "end": "00:14:12.480",
+          "start_seconds": 852,
+          "confidence": "high",
+          "label": "#62 — Justin Reock, DX (acq. Atlassian)",
+          "quote": "required reading"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#36",
+      "text": "Broader creation requires tighter review and governance — they rise together or the first becomes a liability",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "RmJ4rTLV_x4",
+          "start": "00:00:25.439",
+          "end": "00:00:25.840",
+          "start_seconds": 25,
+          "confidence": "high",
+          "label": "#69 — Lisa Orr, Zapier",
+          "quote": "support team"
+        },
+        {
+          "video_id": "xzJdSi2Tsqw",
+          "start": "00:01:48.479",
+          "end": "00:01:48.880",
+          "start_seconds": 108,
+          "confidence": "high",
+          "label": "#162 — James Lowe, i.AI",
+          "quote": "product manager."
+        },
+        {
+          "video_id": "SbUxRluVRwk",
+          "start": "00:00:20.880",
+          "end": "00:00:23.039",
+          "start_seconds": 20,
+          "confidence": "medium",
+          "label": "#188 — Denys Linkov, Wisedocs",
+          "quote": "modern AI So,"
+        },
+        {
+          "video_id": "Zqu0VaJw3vo",
+          "start": "00:00:36.000",
+          "end": "00:00:36.000",
+          "start_seconds": 36,
+          "confidence": "high",
+          "label": "#207 — Beth Glenfield, DevDay",
+          "quote": "hire"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "Activity-based metrics misread motion as progress in AI-augmented work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JvosMkuNxF8",
+          "start": "00:12:42.800",
+          "end": "00:12:43.200",
+          "start_seconds": 762,
+          "confidence": "high",
+          "label": "#79 — Yegor Denisov-Blanch, Stanford (120k devs study)",
+          "quote": "maximize developer"
+        },
+        {
+          "video_id": "tbDDYKRFjhk",
+          "start": "00:01:22.080",
+          "end": "00:01:22.080",
+          "start_seconds": 82,
+          "confidence": "high",
+          "label": "#195 — Yegor Denisov-Blanch, Stanford (100k devs study)",
+          "quote": "productivity,"
+        },
+        {
+          "video_id": "WqZq8L-v9pA",
+          "start": "00:06:06.800",
+          "end": "00:06:07.039",
+          "start_seconds": 366,
+          "confidence": "high",
+          "label": "#101 — Nick Arcolano, Jellyfish (20M PRs)",
+          "quote": "pull requests"
+        },
+        {
+          "video_id": "4mRekpZpBZs",
+          "start": "00:01:01.520",
+          "end": "00:01:01.520",
+          "start_seconds": 61,
+          "confidence": "high",
+          "label": "#63 — Arman Hezarkhani, Tenex",
+          "quote": "salespeople."
         }
       ]
     },
@@ -1473,6 +1586,24 @@
           "confidence": "high",
           "label": "#623 — Maggie Appleton, GitHub",
           "quote": "alignment."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:34.480",
+          "end": "00:00:34.880",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "software factory"
+        },
+        {
+          "video_id": "rT2Del5pwg4",
+          "start": "00:00:28.320",
+          "end": "00:00:28.720",
+          "start_seconds": 28,
+          "confidence": "high",
+          "label": "#54 — Max Kanat-Alexander, Capital One",
+          "quote": "developer experience"
         }
       ]
     },
@@ -1489,6 +1620,24 @@
           "confidence": "high",
           "label": "#623 — Maggie Appleton, GitHub",
           "quote": "shared space"
+        },
+        {
+          "video_id": "PthmdT92qNg",
+          "start": "00:01:33.920",
+          "end": "00:01:34.079",
+          "start_seconds": 93,
+          "confidence": "high",
+          "label": "#160 — Ben Stein, Teammates",
+          "quote": "don't know what"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:34.480",
+          "end": "00:00:34.880",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "software factory"
         }
       ]
     }
@@ -2831,6 +2980,49 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "25 agents in parallel"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "Activity-based metrics misread motion as progress in AI-augmented work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JvosMkuNxF8",
+          "start": "00:12:42.800",
+          "end": "00:12:43.200",
+          "start_seconds": 762,
+          "confidence": "high",
+          "label": "#79 — Yegor Denisov-Blanch, Stanford (120k devs study)",
+          "quote": "maximize developer"
+        },
+        {
+          "video_id": "tbDDYKRFjhk",
+          "start": "00:01:22.080",
+          "end": "00:01:22.080",
+          "start_seconds": 82,
+          "confidence": "high",
+          "label": "#195 — Yegor Denisov-Blanch, Stanford (100k devs study)",
+          "quote": "productivity,"
+        },
+        {
+          "video_id": "WqZq8L-v9pA",
+          "start": "00:06:06.800",
+          "end": "00:06:07.039",
+          "start_seconds": 366,
+          "confidence": "high",
+          "label": "#101 — Nick Arcolano, Jellyfish (20M PRs)",
+          "quote": "pull requests"
+        },
+        {
+          "video_id": "4mRekpZpBZs",
+          "start": "00:01:01.520",
+          "end": "00:01:01.520",
+          "start_seconds": 61,
+          "confidence": "high",
+          "label": "#63 — Arman Hezarkhani, Tenex",
+          "quote": "salespeople."
         }
       ]
     }
