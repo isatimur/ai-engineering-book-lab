@@ -17,13 +17,15 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | 2026-05-27 | **README rewrite** (star-attracting landing) · **Reader hero** swapped from Unsplash stock to overview diagrams · **STATS.md** single-source-of-truth system | repo root + website hero |
 | 2026-05-27 | **`stats-regen` workflow** — auto-runs `build_stats.py` on push to corpus/claims/diagrams/etc., commits back with [skip ci] · **`website-deploy` workflow_dispatch** added | `.github/workflows/stats-regen.yml` · `.github/workflows/website-deploy.yml` |
 | 2026-05-27 | **`VERCEL_TOKEN`** set in GitHub secrets → end-to-end auto-deploy verified (push → Vercel prod in ~40s, no manual step) | GitHub repo secrets |
+| 2026-05-31 | **Chapter drafting passes complete** — ch 5/7/8/9 Starter → Drafting (ch3–9 now all Drafting, ~2,600–3,100 words each) | `website/src/content/chapter-*.md` · `public/drafting/` |
+| 2026-05-31 | **Anchor backfill (claims 25–39)** — +40 Source Anchors; ledger now 37/39 claims anchored | `claims/Claims Ledger.md` |
 
 ## In flight
 
 | Priority | What | Tracking |
 |---|---|---|
-| P0 | **Anchor remaining claims** — only 19/many ledger claims have anchors; ongoing source-anchoring passes | `programs/source_anchoring_pass.md` + `research_passes/` |
-| P0 | **Chapter drafting passes** — chapters 5, 7, 8, 9 still Starter/Outlined | `public/drafting/` + `website/src/content/chapter-*.md` |
+| P0 | **Anchor remaining claims** — 37/39 ledger claims anchored; only the two Ch 9 claims (#36 broader-creation/governance, #37 activity-metrics) are left, queued for the next pass | `programs/source_anchoring_pass.md` + `research_passes/` |
+| P1 | **Chapters 1, 2, 10 → Drafting** — the last three Outlined chapters (opening pair + close); ch4/ch6 are Drafting but thin (~350–500 words) and want a depth pass | `public/drafting/` + `website/src/content/chapter-*.md` |
 | P1 | **SEO routing refactor** — pre-rendered HTML per chapter/concept/map (12-task plan ready) | [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
 
 ## Queued (validated, not started)
