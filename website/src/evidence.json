@@ -857,6 +857,110 @@
           "quote": "we have the two agents basically negotiate what done actually means."
         }
       ]
+    },
+    {
+      "claim_id": "claims#25",
+      "text": "Context engineering is a primary engineering discipline, not a prompt trick",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "fh9LgKXBGnQ",
+          "start": "00:00:20.320",
+          "end": "00:00:21.039",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#100 — Ofer Mendelevitch, Vectara",
+          "quote": "enterprise deep research,"
+        },
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:00:10.800",
+          "end": "00:00:12.000",
+          "start_seconds": 10,
+          "confidence": "high",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "context platform engineering"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:12.719",
+          "end": "00:00:13.280",
+          "start_seconds": 12,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "context engineering"
+        },
+        {
+          "video_id": "xnXqpUW_Kp8",
+          "start": "00:05:08.320",
+          "end": "00:05:08.320",
+          "start_seconds": 308,
+          "confidence": "high",
+          "label": "#157 — Will Bryk, Exa.ai",
+          "quote": "Exa"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#26",
+      "text": "RAG, memory, and GraphRAG solve different jobs; collapsing them into one bucket misses the architecture",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Jty4s9-Jb78",
+          "start": "00:02:54.120",
+          "end": "00:02:54.760",
+          "start_seconds": 174,
+          "confidence": "high",
+          "label": "#48 — Jack Morris",
+          "quote": "rag or retrieval"
+        },
+        {
+          "video_id": "T5IMo5ntyhA",
+          "start": "00:00:24.400",
+          "end": "00:00:25.920",
+          "start_seconds": 24,
+          "confidence": "high",
+          "label": "#218 — Daniel Chalef, Zep",
+          "quote": "model your memory"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:07:23.759",
+          "end": "00:07:24.080",
+          "start_seconds": 443,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "knowledge graph"
+        },
+        {
+          "video_id": "XNneh6-eyPg",
+          "start": "00:00:25.840",
+          "end": "00:00:25.840",
+          "start_seconds": 25,
+          "confidence": "high",
+          "label": "#215 — Michael, Jesus & Stephen, Neo4j",
+          "quote": "smarter"
+        },
+        {
+          "video_id": "-tgQa8Fzf80",
+          "start": "00:08:40.320",
+          "end": "00:08:40.880",
+          "start_seconds": 520,
+          "confidence": "medium",
+          "label": "#219 — Mitesh Patel, NVIDIA",
+          "quote": "advantage of graph"
+        },
+        {
+          "video_id": "w9u11ioHGA0",
+          "start": "00:06:00.320",
+          "end": "00:06:00.560",
+          "start_seconds": 360,
+          "confidence": "high",
+          "label": "#156 — David Karam, Pi Labs",
+          "quote": "every technique"
+        }
+      ]
     }
   ],
   "9": [
@@ -1226,6 +1330,165 @@
           "confidence": "high",
           "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
           "quote": "we have the two agents basically negotiate what done actually means."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#25",
+      "text": "Context engineering is a primary engineering discipline, not a prompt trick",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "fh9LgKXBGnQ",
+          "start": "00:00:20.320",
+          "end": "00:00:21.039",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#100 — Ofer Mendelevitch, Vectara",
+          "quote": "enterprise deep research,"
+        },
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:00:10.800",
+          "end": "00:00:12.000",
+          "start_seconds": 10,
+          "confidence": "high",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "context platform engineering"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:12.719",
+          "end": "00:00:13.280",
+          "start_seconds": 12,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "context engineering"
+        },
+        {
+          "video_id": "xnXqpUW_Kp8",
+          "start": "00:05:08.320",
+          "end": "00:05:08.320",
+          "start_seconds": 308,
+          "confidence": "high",
+          "label": "#157 — Will Bryk, Exa.ai",
+          "quote": "Exa"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#27",
+      "text": "Enterprise usefulness scales with working-set quality, not corpus size",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "fh9LgKXBGnQ",
+          "start": "00:00:23.760",
+          "end": "00:00:24.160",
+          "start_seconds": 23,
+          "confidence": "high",
+          "label": "#100 — Ofer Mendelevitch, Vectara",
+          "quote": "before I jump"
+        },
+        {
+          "video_id": "W1MiZChnkfA",
+          "start": "00:00:43.040",
+          "end": "00:00:43.040",
+          "start_seconds": 43,
+          "confidence": "high",
+          "label": "#154 — Calvin Qi (Harvey) & Chang She (Lance)",
+          "quote": "legal"
+        },
+        {
+          "video_id": "hxFpUcvWPcU",
+          "start": "00:00:34.239",
+          "end": "00:00:34.719",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#193 — Chau Tran, Glean",
+          "quote": "enterprise aware"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#33",
+      "text": "Enterprise MCP adoption converges on gateways, blessed platforms, and a root of trust",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "CD6R4Wf3jnY",
+          "start": "00:06:06.800",
+          "end": "00:06:07.080",
+          "start_seconds": 366,
+          "confidence": "high",
+          "label": "#624 — Karan Sampath, Anthropic",
+          "quote": "root of trust."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:00:42.200",
+          "end": "00:00:42.200",
+          "start_seconds": 42,
+          "confidence": "high",
+          "label": "#625 — Sam Morrow, GitHub",
+          "quote": "scaling"
+        },
+        {
+          "video_id": "blmAkayzE8M",
+          "start": "00:01:27.360",
+          "end": "00:01:27.360",
+          "start_seconds": 87,
+          "confidence": "high",
+          "label": "#150 — Jared Hanson, Keycard",
+          "quote": "scoped."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#35",
+      "text": "AI-native advantage is an operating-model redesign, not a procurement decision",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "MGzymaYBiss",
+          "start": "00:02:17.680",
+          "end": "00:02:18.080",
+          "start_seconds": 137,
+          "confidence": "high",
+          "label": "#65 — Dan Shipper, Every",
+          "quote": "10x difference"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#38",
+      "text": "Review capacity is the throughput limit of an AI-native organization",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "ClWD8OEYgp8",
+          "start": "00:00:20.960",
+          "end": "00:00:20.960",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#623 — Maggie Appleton, GitHub",
+          "quote": "alignment."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#39",
+      "text": "Alignment debt is the AI-native equivalent of technical debt",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "ClWD8OEYgp8",
+          "start": "00:04:55.560",
+          "end": "00:04:55.920",
+          "start_seconds": 295,
+          "confidence": "high",
+          "label": "#623 — Maggie Appleton, GitHub",
+          "quote": "shared space"
         }
       ]
     }
@@ -1760,6 +2023,228 @@
           "confidence": "high",
           "label": "#202 — Rita Kozlov, Cloudflare",
           "quote": "send it to me for approval."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#28",
+      "text": "The next failure frontier is context misassembly, not just hallucination",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Jty4s9-Jb78",
+          "start": "00:05:48.560",
+          "end": "00:05:48.560",
+          "start_seconds": 348,
+          "confidence": "high",
+          "label": "#48 — Jack Morris",
+          "quote": "memory"
+        },
+        {
+          "video_id": "xz0-brt56L8",
+          "start": "00:00:36.079",
+          "end": "00:00:36.239",
+          "start_seconds": 36,
+          "confidence": "high",
+          "label": "#47 — Ivan Leo, Manus AI / Meta Superintelligence",
+          "quote": "new manus"
+        },
+        {
+          "video_id": "w9u11ioHGA0",
+          "start": "00:00:54.960",
+          "end": "00:00:54.960",
+          "start_seconds": 54,
+          "confidence": "high",
+          "label": "#156 — David Karam, Pi Labs",
+          "quote": "rag"
+        },
+        {
+          "video_id": "4Xe_iMYxBQc",
+          "start": "01:23:14.240",
+          "end": "01:23:14.760",
+          "start_seconds": 4994,
+          "confidence": "high",
+          "label": "#172 — Philipp Krenn, Elastic",
+          "quote": "information retrieval"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#30",
+      "text": "Identity is a first-class engineering object for agentic systems",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "VSdV-AdSlis",
+          "start": "00:00:22.240",
+          "end": "00:00:22.960",
+          "start_seconds": 22,
+          "confidence": "high",
+          "label": "#37 — Patrick Riley & Carlos Galan, Auth0",
+          "quote": "identity for AI agents"
+        },
+        {
+          "video_id": "blmAkayzE8M",
+          "start": "00:00:23.840",
+          "end": "00:00:24.560",
+          "start_seconds": 23,
+          "confidence": "high",
+          "label": "#150 — Jared Hanson, Keycard / Passport.js",
+          "quote": "secure agents using"
+        },
+        {
+          "video_id": "EmhRyw6xeT0",
+          "start": "00:00:27.760",
+          "end": "00:00:28.000",
+          "start_seconds": 27,
+          "confidence": "high",
+          "label": "#627 — Garrett Galow, WorkOS",
+          "quote": "one login"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#31",
+      "text": "Sandbox, least privilege, and auditability are product infrastructure, not security overhead",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "w7IMuYsBNr8",
+          "start": "00:04:49.280",
+          "end": "00:04:49.280",
+          "start_seconds": 289,
+          "confidence": "high",
+          "label": "#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)",
+          "quote": "sandboxing,"
+        },
+        {
+          "video_id": "AHtGAgQ0Q_Q",
+          "start": "00:07:10.720",
+          "end": "00:07:10.720",
+          "start_seconds": 430,
+          "confidence": "high",
+          "label": "#31 — Harshil Agrawal, Cloudflare",
+          "quote": "sandbox."
+        },
+        {
+          "video_id": "CCsWZ5bJlO8",
+          "start": "00:00:15.599",
+          "end": "00:00:16.160",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#149 — Jmo, CONFSEC, on Apple Private Cloud Compute",
+          "quote": "private cloud compute."
+        },
+        {
+          "video_id": "TnSGx36Ly0Q",
+          "start": "00:01:10.960",
+          "end": "00:01:11.200",
+          "start_seconds": 70,
+          "confidence": "low",
+          "label": "#86 — Mark Myshatyn, Los Alamos National Lab",
+          "quote": "with agents,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#32",
+      "text": "Protocol standardization expands the attack surface if governance lags",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "BurJvbqFr4c",
+          "start": "00:00:04.000",
+          "end": "00:00:05.080",
+          "start_seconds": 4,
+          "confidence": "high",
+          "label": "#32 — Tun Shwe, Lenses",
+          "quote": "insecure MCP server"
+        },
+        {
+          "video_id": "CD6R4Wf3jnY",
+          "start": "00:06:06.800",
+          "end": "00:06:07.080",
+          "start_seconds": 366,
+          "confidence": "high",
+          "label": "#624 — Karan Sampath, Anthropic",
+          "quote": "root of trust."
+        },
+        {
+          "video_id": "Gi4V8viBGYQ",
+          "start": "00:04:37.680",
+          "end": "00:04:38.000",
+          "start_seconds": 277,
+          "confidence": "high",
+          "label": "#148 — David Mytton, Arcjet",
+          "quote": "AI bots"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#33",
+      "text": "Enterprise MCP adoption converges on gateways, blessed platforms, and a root of trust",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "CD6R4Wf3jnY",
+          "start": "00:06:06.800",
+          "end": "00:06:07.080",
+          "start_seconds": 366,
+          "confidence": "high",
+          "label": "#624 — Karan Sampath, Anthropic",
+          "quote": "root of trust."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:00:42.200",
+          "end": "00:00:42.200",
+          "start_seconds": 42,
+          "confidence": "high",
+          "label": "#625 — Sam Morrow, GitHub",
+          "quote": "scaling"
+        },
+        {
+          "video_id": "blmAkayzE8M",
+          "start": "00:01:27.360",
+          "end": "00:01:27.360",
+          "start_seconds": 87,
+          "confidence": "high",
+          "label": "#150 — Jared Hanson, Keycard",
+          "quote": "scoped."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#34",
+      "text": "Per-tool OAuth flows are a governance and IT visibility problem, not just a UX annoyance",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "EmhRyw6xeT0",
+          "start": "00:00:27.760",
+          "end": "00:00:28.000",
+          "start_seconds": 27,
+          "confidence": "high",
+          "label": "#627 — Garrett Galow, WorkOS",
+          "quote": "one login"
+        },
+        {
+          "video_id": "blmAkayzE8M",
+          "start": "00:00:23.840",
+          "end": "00:00:24.160",
+          "start_seconds": 23,
+          "confidence": "high",
+          "label": "#150 — Jared Hanson, Keycard",
+          "quote": "secure agents"
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:12:40.120",
+          "end": "00:12:40.120",
+          "start_seconds": 760,
+          "confidence": "high",
+          "label": "#625 — Sam Morrow, GitHub",
+          "quote": "PAT"
         }
       ]
     }
@@ -2529,6 +3014,187 @@
           "quote": "grouping concept of related product"
         }
       ]
+    },
+    {
+      "claim_id": "claims#25",
+      "text": "Context engineering is a primary engineering discipline, not a prompt trick",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "fh9LgKXBGnQ",
+          "start": "00:00:20.320",
+          "end": "00:00:21.039",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#100 — Ofer Mendelevitch, Vectara",
+          "quote": "enterprise deep research,"
+        },
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:00:10.800",
+          "end": "00:00:12.000",
+          "start_seconds": 10,
+          "confidence": "high",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "context platform engineering"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:12.719",
+          "end": "00:00:13.280",
+          "start_seconds": 12,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "context engineering"
+        },
+        {
+          "video_id": "xnXqpUW_Kp8",
+          "start": "00:05:08.320",
+          "end": "00:05:08.320",
+          "start_seconds": 308,
+          "confidence": "high",
+          "label": "#157 — Will Bryk, Exa.ai",
+          "quote": "Exa"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#26",
+      "text": "RAG, memory, and GraphRAG solve different jobs; collapsing them into one bucket misses the architecture",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Jty4s9-Jb78",
+          "start": "00:02:54.120",
+          "end": "00:02:54.760",
+          "start_seconds": 174,
+          "confidence": "high",
+          "label": "#48 — Jack Morris",
+          "quote": "rag or retrieval"
+        },
+        {
+          "video_id": "T5IMo5ntyhA",
+          "start": "00:00:24.400",
+          "end": "00:00:25.920",
+          "start_seconds": 24,
+          "confidence": "high",
+          "label": "#218 — Daniel Chalef, Zep",
+          "quote": "model your memory"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:07:23.759",
+          "end": "00:07:24.080",
+          "start_seconds": 443,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "knowledge graph"
+        },
+        {
+          "video_id": "XNneh6-eyPg",
+          "start": "00:00:25.840",
+          "end": "00:00:25.840",
+          "start_seconds": 25,
+          "confidence": "high",
+          "label": "#215 — Michael, Jesus & Stephen, Neo4j",
+          "quote": "smarter"
+        },
+        {
+          "video_id": "-tgQa8Fzf80",
+          "start": "00:08:40.320",
+          "end": "00:08:40.880",
+          "start_seconds": 520,
+          "confidence": "medium",
+          "label": "#219 — Mitesh Patel, NVIDIA",
+          "quote": "advantage of graph"
+        },
+        {
+          "video_id": "w9u11ioHGA0",
+          "start": "00:06:00.320",
+          "end": "00:06:00.560",
+          "start_seconds": 360,
+          "confidence": "high",
+          "label": "#156 — David Karam, Pi Labs",
+          "quote": "every technique"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#27",
+      "text": "Enterprise usefulness scales with working-set quality, not corpus size",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "fh9LgKXBGnQ",
+          "start": "00:00:23.760",
+          "end": "00:00:24.160",
+          "start_seconds": 23,
+          "confidence": "high",
+          "label": "#100 — Ofer Mendelevitch, Vectara",
+          "quote": "before I jump"
+        },
+        {
+          "video_id": "W1MiZChnkfA",
+          "start": "00:00:43.040",
+          "end": "00:00:43.040",
+          "start_seconds": 43,
+          "confidence": "high",
+          "label": "#154 — Calvin Qi (Harvey) & Chang She (Lance)",
+          "quote": "legal"
+        },
+        {
+          "video_id": "hxFpUcvWPcU",
+          "start": "00:00:34.239",
+          "end": "00:00:34.719",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#193 — Chau Tran, Glean",
+          "quote": "enterprise aware"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#28",
+      "text": "The next failure frontier is context misassembly, not just hallucination",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Jty4s9-Jb78",
+          "start": "00:05:48.560",
+          "end": "00:05:48.560",
+          "start_seconds": 348,
+          "confidence": "high",
+          "label": "#48 — Jack Morris",
+          "quote": "memory"
+        },
+        {
+          "video_id": "xz0-brt56L8",
+          "start": "00:00:36.079",
+          "end": "00:00:36.239",
+          "start_seconds": 36,
+          "confidence": "high",
+          "label": "#47 — Ivan Leo, Manus AI / Meta Superintelligence",
+          "quote": "new manus"
+        },
+        {
+          "video_id": "w9u11ioHGA0",
+          "start": "00:00:54.960",
+          "end": "00:00:54.960",
+          "start_seconds": 54,
+          "confidence": "high",
+          "label": "#156 — David Karam, Pi Labs",
+          "quote": "rag"
+        },
+        {
+          "video_id": "4Xe_iMYxBQc",
+          "start": "01:23:14.240",
+          "end": "01:23:14.760",
+          "start_seconds": 4994,
+          "confidence": "high",
+          "label": "#172 — Philipp Krenn, Elastic",
+          "quote": "information retrieval"
+        }
+      ]
     }
   ],
   "8": [
@@ -2760,6 +3426,49 @@
           "confidence": "high",
           "label": "#663 — Samuel Humeau, Mistral",
           "quote": "the king use case for text to speech is uh its usage within agents"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#29",
+      "text": "Latency masking belongs in the same architectural category as evals, harnesses, and durable runtimes",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:07:36.840",
+          "end": "00:07:39.200",
+          "start_seconds": 456,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "while it waits for getting the result back,"
+        },
+        {
+          "video_id": "DCZZ3AJKzuc",
+          "start": "00:02:56.200",
+          "end": "00:02:58.240",
+          "start_seconds": 176,
+          "confidence": "high",
+          "label": "#661 — Luke Harries, ElevenLabs",
+          "quote": "wrapped it up into its own first class primitive,"
+        },
+        {
+          "video_id": "hwCmfThIiS4",
+          "start": "00:55:04.880",
+          "end": "00:55:04.880",
+          "start_seconds": 3304,
+          "confidence": "high",
+          "label": "#85 — Suman Debnath, AWS",
+          "quote": "voice"
+        },
+        {
+          "video_id": "IA4lZjh9sTs",
+          "start": "00:00:39.360",
+          "end": "00:00:39.360",
+          "start_seconds": 39,
+          "confidence": "high",
+          "label": "#142 — Kwindla Hultman Kramer, Daily",
+          "quote": "Pipecat."
         }
       ]
     }

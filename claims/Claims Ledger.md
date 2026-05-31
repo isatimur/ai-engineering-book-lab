@@ -437,9 +437,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — the hard problem of enterprise AI is access to the *relevant* documents, not access to documents.
+    - **Anchor:** `fh9LgKXBGnQ` 00:00:20.320 → 00:00:21.039 · confidence: high
+    - **Quote:** "enterprise deep research,"
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]] — context platform engineering as "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale."
+    - **Anchor:** `NTBX-wxUhHs` 00:00:10.800 → 00:00:12.000 · confidence: high
+    - **Quote:** "context platform engineering"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — context engineering as connecting the dots across the knowledge a system already has.
+    - **Anchor:** `LLuKshphGOE` 00:00:12.719 → 00:00:13.280 · confidence: high
+    - **Quote:** "context engineering"
   - [[157-xnXqpUW_Kp8-building-a-smarter-ai-agent-with-neural-rag-will-bryk-exa-ai|#157 — Will Bryk, Exa.ai]] — neural RAG that integrates retrieval into the reasoning loop instead of running it once before the prompt.
+    - **Anchor:** `xnXqpUW_Kp8` 00:05:08.320 → 00:05:08.320 · confidence: high
+    - **Quote:** "Exa"
 - **Caveats / counterpoints:** Bigger context windows reduce some assembly pressure but do not eliminate ranking, freshness, deduplication, or capability problems. The claim is about the discipline, not a specific token budget.
 - **Candidate chapters:** 5, 6, 9
 - **Reusable phrasing:** Context is the substrate that determines what the system can even notice — not the garnish around intelligence.
@@ -449,11 +457,23 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — "Stuffing context is not memory" as a load-bearing architectural distinction, not a slogan.
+    - **Anchor:** `Jty4s9-Jb78` 00:02:54.120 → 00:02:54.760 · confidence: high
+    - **Quote:** "rag or retrieval"
   - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]] — RAG carrying weight it was never designed to carry (long-term user state, evolving entity facts, cross-session continuity).
+    - **Anchor:** `T5IMo5ntyhA` 00:00:24.400 → 00:00:25.920 · confidence: high
+    - **Quote:** "model your memory"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — graph retrieval as a different operation than flat vector retrieval, suited to relationship questions.
+    - **Anchor:** `LLuKshphGOE` 00:07:23.759 → 00:07:24.080 · confidence: high
+    - **Quote:** "knowledge graph"
   - [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215 — Michael, Jesus & Stephen, Neo4j]] — practical GraphRAG patterns under production constraints.
+    - **Anchor:** `XNneh6-eyPg` 00:00:25.840 → 00:00:25.840 · confidence: high
+    - **Quote:** "smarter"
   - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — Mitesh Patel, NVIDIA]] — hybrid RAG as the expected outcome once you accept graph and vector are different jobs.
+    - **Anchor:** `-tgQa8Fzf80` 00:08:40.320 → 00:08:40.880 · confidence: medium
+    - **Quote:** "advantage of graph"
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
+    - **Anchor:** `w9u11ioHGA0` 00:06:00.320 → 00:06:00.560 · confidence: high
+    - **Quote:** "every technique"
 - **Caveats / counterpoints:** Skills, agentic search, and richer protocols may eventually hide more of this distinction from product builders. For now, the system designer has to make it explicit. Tightly-scoped consumer chatbots can still get away with collapsing the layers.
 - **Candidate chapters:** 5, 6
 - **Reusable phrasing:** Stuffing context is not memory; vector retrieval is not graph traversal; "RAG" is not a layer, it is several.
@@ -463,8 +483,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — convergence on the few hundred passages that matter as the work that produces value.
+    - **Anchor:** `fh9LgKXBGnQ` 00:00:23.760 → 00:00:24.160 · confidence: high
+    - **Quote:** "before I jump"
   - [[154-W1MiZChnkfA-scaling-enterprise-grade-rag-lessons-from-legal-frontier-calvin-qi-harvey-chang-she-lance|#154 — Calvin Qi (Harvey) & Chang She (Lance)]] — legal work needs specific clause, precedent, exception — separation of authoritative from background source.
+    - **Anchor:** `W1MiZChnkfA` 00:00:43.040 → 00:00:43.040 · confidence: high
+    - **Quote:** "legal"
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — enterprise-aware agent as one that knows which documents matter for the current user/role/task — boundary work as the engineering work.
+    - **Anchor:** `hxFpUcvWPcU` 00:00:34.239 → 00:00:34.719 · confidence: high
+    - **Quote:** "enterprise aware"
 - **Caveats / counterpoints:** Corpus size still matters when relevance is genuinely uncertain at index time, or when long-tail coverage is required. The claim is about the working set the model actually sees per step, not the size of the underlying index.
 - **Candidate chapters:** 5, 9
 - **Reusable phrasing:** Enterprise usefulness scales with working-set quality, not corpus size.
@@ -474,9 +500,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — the stuffing-vs-memory distinction names one form of misassembly (stale-plus-current documents averaged into half-current answer).
+    - **Anchor:** `Jty4s9-Jb78` 00:05:48.560 → 00:05:48.560 · confidence: high
+    - **Quote:** "memory"
   - [[047-xz0-brt56L8-building-intelligent-research-agents-with-manus-ivan-leo-manus-ai-now-meta-superintelligen|#47 — Ivan Leo, Manus AI / Meta Superintelligence]] — research agents that drift across hundreds of retrievals to produce internally-consistent, externally-wrong summaries.
+    - **Anchor:** `xz0-brt56L8` 00:00:36.079 → 00:00:36.239 · confidence: high
+    - **Quote:** "new manus"
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — layered retrieval as a structural response to misassembly as a distinct failure mode.
+    - **Anchor:** `w9u11ioHGA0` 00:00:54.960 → 00:00:54.960 · confidence: high
+    - **Quote:** "rag"
   - [[172-4Xe_iMYxBQc-information-retrieval-from-the-ground-up-philipp-krenn-elastic|#172 — Philipp Krenn, Elastic]] — retrieval as a system of techniques with known trade-offs, not a black box; misassembly as the cost of treating it as one.
+    - **Anchor:** `4Xe_iMYxBQc` 01:23:14.240 → 01:23:14.760 · confidence: high
+    - **Quote:** "information retrieval"
 - **Caveats / counterpoints:** Hallucination remains real and worth measuring; the claim is about which failure mode dominates production at the frontier, not which is more interesting in toy benchmarks. Some misassembly cases overlap with hallucination at the edge.
 - **Candidate chapters:** 5, 7
 - **Reusable phrasing:** The next failure frontier is context misassembly — real documents, wrong composition, plausibly wrong answers.
@@ -486,9 +520,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — the fillers pattern as an explicit response to tool-call variance: "while it waits for getting the result back, it can keep the conversation going."
+    - **Anchor:** `P_RI1kCkRbo` 00:07:36.840 → 00:07:39.200 · confidence: high
+    - **Quote:** "while it waits for getting the result back,"
   - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Luke Harries, ElevenLabs]] — the voice engine as a first-class primitive with its own state, so the agent's slow operations don't translate into silent gaps.
+    - **Anchor:** `DCZZ3AJKzuc` 00:02:56.200 → 00:02:58.240 · confidence: high
+    - **Quote:** "wrapped it up into its own first class primitive,"
   - [[085-hwCmfThIiS4-voicevision-rag-integrating-visual-document-intelligence-with-voice-response-suman-debnath|#85 — Suman Debnath, AWS]] — VoiceVision RAG maintains the conversational thread while a vision model runs in the background; the user only experiences a continuous exchange.
+    - **Anchor:** `hwCmfThIiS4` 00:55:04.880 → 00:55:04.880 · confidence: high
+    - **Quote:** "voice"
   - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Pipecat Cloud's architecture is organized around the latency budget rather than per-component optimization; orchestration handles lateness as the design assumption.
+    - **Anchor:** `IA4lZjh9sTs` 00:00:39.360 → 00:00:39.360 · confidence: high
+    - **Quote:** "Pipecat."
 - **Caveats / counterpoints:** Masking is paid for in user trust if overused or used cynically — repeated *one moment* fillers with no payoff teach the user the system is lying about progress. The claim is about masking as designed-in conversational scaffolding, not about generic stalling. The claim also doesn't replace the latency-optimization argument; it complements it.
 - **Candidate chapters:** 8
 - **Reusable phrasing:** Latency must be masked, not just minimized. Fillers are conversational scaffolding, not animation.
@@ -498,8 +540,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[037-VSdV-AdSlis-identity-for-ai-agents-patrick-riley-carlos-galan-auth0|#37 — Patrick Riley & Carlos Galan, Auth0]] — making the agent and its capabilities first-class citizens in the identity provider, with their own scopes and lifetimes.
+    - **Anchor:** `VSdV-AdSlis` 00:00:22.240 → 00:00:22.960 · confidence: high
+    - **Quote:** "identity for AI agents"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard / Passport.js]] — agents need short-lived OAuth-scoped tokens, not standing API keys; the credential shape is the delegation shape.
+    - **Anchor:** `blmAkayzE8M` 00:00:23.840 → 00:00:24.560 · confidence: high
+    - **Quote:** "secure agents using"
   - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — the identity provider as a trust bridge for MCP, so credentials carry enterprise-visible scope and revocation.
+    - **Anchor:** `EmhRyw6xeT0` 00:00:27.760 → 00:00:28.000 · confidence: high
+    - **Quote:** "one login"
 - **Caveats / counterpoints:** Internal experiments and developer-time tooling can get away with much looser identity than production systems. The claim is about systems that act on real users, real data, and real third parties — where the principal needs to be inspectable.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** An agent that is authenticated as a blurry extension of a human is not delegated. It is impersonating.
@@ -509,9 +557,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — sandboxing, network restriction, privilege boundaries, and human review as the substrate code-executing agents have to run on.
+    - **Anchor:** `w7IMuYsBNr8` 00:04:49.280 → 00:04:49.280 · confidence: high
+    - **Quote:** "sandboxing,"
   - [[031-AHtGAgQ0Q_Q-why-and-how-you-need-to-sandbox-ai-generated-code-harshil-agrawal-cloudflare|#31 — Harshil Agrawal, Cloudflare]] — sandbox-by-default for any agent executing code; the bounds are the product, not the fallback.
+    - **Anchor:** `AHtGAgQ0Q_Q` 00:07:10.720 → 00:07:10.720 · confidence: high
+    - **Quote:** "sandbox."
   - [[149-CCsWZ5bJlO8-the-unofficial-guide-to-apple-s-private-cloud-compute-jmo-confsec|#149 — Jmo, CONFSEC, on Apple Private Cloud Compute]] — the high-end version of designed-in cryptographic boundary; useful as the extreme reference even when not the right pattern for every product.
+    - **Anchor:** `CCsWZ5bJlO8` 00:00:15.599 → 00:00:16.160 · confidence: high
+    - **Quote:** "private cloud compute."
   - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Mark Myshatyn, Los Alamos National Lab]] — the regulated public-sector setting where these constraints become legal requirements rather than best practices.
+    - **Anchor:** `TnSGx36Ly0Q` 00:01:10.960 → 00:01:11.200 · confidence: low
+    - **Quote:** "with agents,"
 - **Caveats / counterpoints:** Maximum sandboxing has real costs in latency, developer experience, and integration ease. The right setting is workflow-specific. The claim is about the category, not a universal sandbox spec.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: product infrastructure, not security overhead.
@@ -521,8 +577,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32 — Tun Shwe, Lenses]] — "Your insecure MCP server won't survive production"; a tour of demo-grade assumptions that fail at real load.
+    - **Anchor:** `BurJvbqFr4c` 00:00:04.000 → 00:00:05.080 · confidence: high
+    - **Quote:** "insecure MCP server"
   - [[624-CD6R4Wf3jnY-what-we-learned-scaling-mcps-to-enterprise-karan-sampath-anthropic|#624 — Karan Sampath, Anthropic]] — the structural answer from the enterprise governance side; without a root of trust, capability standardization makes inspection harder, not easier.
+    - **Anchor:** `CD6R4Wf3jnY` 00:06:06.800 → 00:06:07.080 · confidence: high
+    - **Quote:** "root of trust."
   - [[148-Gi4V8viBGYQ-how-to-defend-your-sites-from-ai-bots-david-mytton-arcjet|#148 — David Mytton, Arcjet]] — the parallel argument from outside the perimeter; the defender's surface expands with the attacker's standardized toolkit.
+    - **Anchor:** `Gi4V8viBGYQ` 00:04:37.680 → 00:04:38.000 · confidence: high
+    - **Quote:** "AI bots"
 - **Caveats / counterpoints:** Not an argument against standardization. Standardization remains the right move for interoperability. The claim is that it is also a forcing function — security and governance work has to happen alongside it, not afterwards.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Standardization is a forcing function for governance work, not a substitute for it.
@@ -532,8 +594,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[624-CD6R4Wf3jnY-what-we-learned-scaling-mcps-to-enterprise-karan-sampath-anthropic|#624 — Karan Sampath, Anthropic]] — root of trust at the platform; servers reviewed before being allowed; tools scoped to principals; audit built into the gateway layer.
+    - **Anchor:** `CD6R4Wf3jnY` 00:06:06.800 → 00:06:07.080 · confidence: high
+    - **Quote:** "root of trust."
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — production-scale shape: tools filtered by PAT scopes; step-up OAuth used for additional privileges only when needed; capability follows authority dynamically.
+    - **Anchor:** `0n3MKk7r60w` 00:00:42.200 → 00:00:42.200 · confidence: high
+    - **Quote:** "scaling"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — the credential-layer foundation the gateway pattern rests on.
+    - **Anchor:** `blmAkayzE8M` 00:01:27.360 → 00:01:27.360 · confidence: high
+    - **Quote:** "scoped."
 - **Caveats / counterpoints:** Small teams and developer environments can ship useful MCP work without the full gateway stack. The claim is about the architecture mature enterprise deployments converge on, not the starting position for every team. Also: the IAM/API-gateway analogy is useful but imperfect — capability is a different category than request, and the governance models will continue to diverge.
 - **Candidate chapters:** 7, 9
 - **Reusable phrasing:** The root of trust is established at the platform, not at the individual tool.
@@ -543,8 +611,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — cross-app access: identity provider as trust bridge; central enterprise visibility into delegated authority.
+    - **Anchor:** `EmhRyw6xeT0` 00:00:27.760 → 00:00:28.000 · confidence: high
+    - **Quote:** "one login"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — OAuth-scoped tokens, issued through a flow the identity provider can audit, as the right credential shape for agent work.
+    - **Anchor:** `blmAkayzE8M` 00:00:23.840 → 00:00:24.160 · confidence: high
+    - **Quote:** "secure agents"
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — step-up OAuth as the same pattern at the tool layer: agent holds only the authority it currently needs; escalations produce records.
+    - **Anchor:** `0n3MKk7r60w` 00:12:40.120 → 00:12:40.120 · confidence: high
+    - **Quote:** "PAT"
 - **Caveats / counterpoints:** Cross-app access is one possible enterprise path, not the only one. Alternatives (per-team gateway approval, single-vendor SaaS bundles, custom IT-managed proxies) exist and may dominate in specific contexts. The structural claim — that the consent surface is also a governance surface — holds across all of them.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** A faster consent flow with no visibility is not progress.
@@ -554,6 +628,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[065-MGzymaYBiss-dispatch-from-the-future-building-an-ai-native-company-dan-shipper-every-ai-i|#65 — Dan Shipper, Every]] — "There is a 10x difference between an organization where 90% of engineers use AI versus one where 100% do" — the discontinuity-at-full-adoption framing.
+    - **Anchor:** `MGzymaYBiss` 00:02:17.680 → 00:02:18.080 · confidence: high
+    - **Quote:** "10x difference"
   - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the "from hype to habit" cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
   - [[199-3YGRcgZJ3yc-from-hype-to-habit-how-we-re-building-an-ai-first-saas-company-while-still-shipping-the-ro|#199 — From Hype to Habit (AI-first SaaS)]] — case study of an AI-first company that still ships a roadmap; describes operating-model redesign in detail.
   - [[062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian|#62 — Justin Reock, DX (acq. Atlassian)]] — manager role shifts from allocating production capacity (now abundant) to allocating judgment and attention (still scarce); the org chart was built to ration the wrong resource.
@@ -590,6 +666,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — going fast without good alignment leads to wasted work, duplicate effort, and giant review queues with little context.
+    - **Anchor:** `ClWD8OEYgp8` 00:00:20.960 → 00:00:20.960 · confidence: high
+    - **Quote:** "alignment."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — software-factory framing with roll-up visibility: a single surface showing what every agent is doing and what humans actually need to look at, instead of a firehose of agent chatter.
   - [[054-rT2Del5pwg4-developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one|#54 — Max Kanat-Alexander, Capital One]] — developer-experience framing: review queues become the felt experience of AI-native engineering at scale.
 - **Caveats / counterpoints:** Some teams ship via auto-merge on green and treat review as exception-handling. That works until the eval suite isn't good enough to catch the consequential cases — at which point review reappears as the constraint, just delayed. The claim is structural: trustworthy throughput is bounded by trustworthy review, regardless of where the review happens in the workflow.
@@ -601,6 +679,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — the load-bearing source: "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective." Names the gap in tooling and the resulting team-level incoherence.
+    - **Anchor:** `ClWD8OEYgp8` 00:04:55.560 → 00:04:55.920 · confidence: high
+    - **Quote:** "shared space"
   - [[160-PthmdT92qNg-shipping-products-when-you-don-t-know-what-they-can-do-ben-stein-teammates|#160 — Ben Stein, Teammates]] — the planning-fan-out problem from the product side: shipping when you don't fully know what the system can do means alignment has to happen earlier, before specification freezes.
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — the software-factory framing with shared plans and roll-up visibility as the structural response.
 - **Caveats / counterpoints:** "Alignment debt" is a freshly-coined term inheriting authority from the well-established "technical debt" analogy. The analogy is useful but imperfect — technical debt's tradeoffs are reasonably well-modeled, alignment debt's are not yet. Treat the term as a useful organizing concept that will be sharpened by more practitioner case studies, not as a settled framework.
