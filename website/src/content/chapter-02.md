@@ -1,103 +1,59 @@
 # Chapter 2 — Taste Still Matters When Code Gets Cheap
 
-## Chapter promise
-As generation gets cheaper, the scarce human skill shifts toward judgment: framing, constraints, review, and the ability to tell good output from convincing slop.
+Cheap code is easy to misread. When a model can generate a feature, a test suite, and the glue between them in the time it takes to describe them, the obvious conclusion is that engineering itself has gotten cheap. Part of it has. Routine production — the typing, the boilerplate, the third CRUD endpoint that looks like the first two — is genuinely easier than it was.
 
-## Opening frame
-Cheap code is easy to misread.
+But cheap output is not the same as cheap judgment, and the gap between those two is the subject of this chapter. If Chapter 1 argued that the real shift is from suggestion to delegated work, the immediate human question is what remains scarce once the output is abundant. The answer is taste — and abundance does not retire taste. It promotes it.
 
-When AI can generate features, drafts, tests, and glue work in seconds, it is tempting to conclude that engineering itself has become cheap. Some of it has. Routine production is genuinely easier.
+## The argument in three lines
 
-But cheap output does not mean cheap judgment.
+The chapter's claim is almost arithmetic:
 
-If anything, the opposite becomes true. The more abundant code and drafts become, the more important it is to know what should be built, what quality looks like, what constraints matter, and what should be thrown away.
+- Generation is getting cheaper.
+- Bad decisions are not getting cheaper.
+- Therefore taste, standards, and review matter *more*, not less.
 
-## The core argument
-This chapter makes a simple claim:
+A machine can accelerate production without removing the need for discrimination. In fact it sharpens that need, because it widens the gap between what can be produced and what should be. When a team could only build a little, the act of building was itself a filter — you thought hard about what was worth the effort. Remove the cost of building and you remove the filter. Something has to replace it, and that something is judgment.
 
-- generation is getting cheaper
-- bad decisions are not getting cheaper
-- therefore taste, standards, and review matter more
+Matt Pocock, whose work on software fundamentals runs directly counter to the automation-triumphalist mood, states the consequence bluntly: "Software fundamentals matter now more than they actually ever have." That sounds paradoxical until you see the mechanism. Fundamentals are how you tell good output from convincing output, and a world flooded with convincing output needs that skill more, not less. The model raised the volume of plausible work. It did not raise anyone's ability to evaluate it — that still has to come from a person who knows what good looks like.
 
-The machine can accelerate production. It cannot remove the need for discrimination.
+## What "taste" actually means here
 
-## What “taste” means here
-Taste is not just aesthetics or personal preference.
+Taste, in this chapter, is not aesthetics or personal preference. It is a specific discriminative capacity: the ability to notice the difference between things that look the same on the surface and are not the same underneath.
 
-In this context, taste means the ability to notice the difference between:
+Between output that merely works and output that actually fits the system it lives in. Between a fast prototype and a maintainable design. Between a plausible draft and a trustworthy one. Between local correctness — this function is right — and broader coherence — this function belongs here, in this shape, for this reason.
 
-- output that merely works and output that actually fits
-- a fast prototype and a maintainable system
-- a plausible draft and a trustworthy one
-- local correctness and broader coherence
+Those distinctions were always part of senior engineering judgment. What changes under AI is that they become the *binding* skill rather than a background one, because the system can now produce more than a human can casually validate. When a person wrote every line, reviewing it was partly automatic — you understood it because you made it. When a model writes it, that understanding has to be supplied deliberately, by someone who can look at fluent, working output and still ask whether it is the right output. Tuomas Artman, reflecting with Gergely Orosz on craft at Linear, frames the open question precisely: "What happens when agents are capable of doing everything immediately for you?" The answer this chapter gives is that the scarce contribution moves from *making* to *discerning*.
 
-In an AI-heavy workflow, this matters because the system can produce more than a human can casually validate. Someone still has to know what good looks like.
+## Vibe coding: powerful, and dangerous in the same breath
 
-## Why vibe coding is both useful and dangerous
-Vibe coding is powerful for exploration.
+The clearest live example of the taste problem is the practice that has come to be called vibe coding — building by rapid, loosely-specified prompting, steering on feel rather than on a plan. The corpus is genuinely split on it, and the split is instructive rather than confused.
 
-It is great for:
-- rough prototypes
-- interface sketching
-- internal tools
-- one-off automation
-- learning what is worth building
+Vibe coding is excellent for exploration. For rough prototypes, interface sketches, internal tools, one-off automation, and the early work of figuring out what is even worth building, it is a remarkable accelerant. Steering on feel is the right mode when the goal is discovery, because in discovery you do not yet know enough to specify, and premature rigor would just slow the learning.
 
-But it becomes risky when an exploratory mode quietly becomes a production philosophy.
+It becomes dangerous at one specific moment: when an exploratory mode quietly hardens into a production philosophy. The problem is not speed. The problem is shipping output that no one fully understands, can maintain, or can confidently review — output that works today and becomes a liability the first time it has to change. swyx captures the reaction this provokes among engineers who have to live with the aftermath: "I'm declaring war on slop today." Slop is the precise failure mode here — work that looks finished and transfers its real cost downstream to whoever has to understand it next.
 
-The problem is not speed itself. The problem is shipping output that nobody fully understands, can maintain, or can confidently review. The app may work today and still become a mess tomorrow.
+So the right conclusion is not "never vibe code." It is a mode switch: use vibe coding when the goal is discovery, and change modes the moment the output has to endure. The skill is not picking a side. It is knowing which mode you are in, and noticing when you have drifted from one into the other without deciding to.
 
-So the right conclusion is not “never vibe code.”
+## The friction that was load-bearing
 
-The right conclusion is:
-- use vibe coding when the goal is discovery
-- switch modes when the output has to endure
+AI removes a great deal of wasteful friction, and that is genuinely good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous move is to treat every pause as inefficiency to be optimized away.
 
-## The friction that still matters
-AI removes a lot of wasteful friction, and that is good.
+Some friction is where judgment was happening. The review before the merge. The extra question about whether the architecture can carry this. The refusal to accept a generic draft that technically satisfies the request. The decision to rewrite something correct-but-wrong — code that passes every test and still encodes the wrong model of the problem. Those pauses look like drag on a velocity dashboard. They are often the exact points where quality was being created, and removing them does not make the work faster so much as make the absence of judgment invisible until later.
 
-But some friction is actually where judgment happens:
-- the review before merge
-- the extra question about architecture
-- the refusal to accept a generic draft
-- the decision to rewrite something that is technically correct but structurally wrong
+This is the trap that makes cheap execution treacherous rather than simply beneficial: a badly framed task handed to a strong model wastes more time than it used to, because the system will sprint confidently in the wrong direction and produce a great deal of polished output before anyone notices it was the wrong direction. Speed without judgment is not neutral. It manufactures expensive mistakes efficiently.
 
-Those pauses are easy to label as inefficiency. Often they are exactly where quality gets created.
+## The new scarce skills: framing and review
 
-## The new scarce skill: problem framing
-A badly framed task given to a strong model can waste more time than before, because the system can sprint in the wrong direction with impressive fluency.
+Two specific capacities become the bottleneck once execution is cheap, and both are worth naming as deliberately as the technical disciplines later in the book.
 
-That makes framing more valuable:
-- what is the actual task?
-- what counts as success?
-- what constraints matter?
-- what is allowed to stay rough?
-- what would make the result unacceptable even if it looks finished?
+The first is problem framing. When the model will faithfully execute whatever it is pointed at, pointing it becomes the high-leverage act. What is the actual task? What counts as success? Which constraints are real and which are habit? What is allowed to stay rough? What would make the result unacceptable even if it looked finished? A team that can answer those questions sharply gets a force multiplier; a team that cannot gets fluent output aimed at the wrong target. Framing is no longer the cheap part of the work before the real work starts. In a world of cheap execution, framing *is* the work.
 
-In a world of cheap execution, good framing becomes a force multiplier.
+The second is review as anti-slop discipline. Review stops being a bureaucratic gate and becomes the place where standards are actively defended against the pressure of fast, plausible output. This is the same argument the book will make about evals in Chapter 4 — that measurement is a control system, not a chore — arriving here first in its human form. Cheap output that creates expensive cleanup was never actually cheap; review is where a team refuses to let that hidden cost through. In an AI-native team, the reviewer is not slowing the work down. They are the reason the work can be trusted to go fast.
 
-## Review as anti-slop discipline
-Cheap output that creates expensive cleanup is not actually cheap.
+## The bridge: from judgment to harness
 
-That is why review becomes more strategic in AI-native teams. Not as bureaucracy, but as quality discrimination. Review is the point where teams protect standards from the pressure of fast, plausible output.
+Once judgment becomes the scarce input, an obvious question follows, and it is the question that opens the technical core of the book: how do you encode that judgment so machines can work inside it?
 
-This is also why anti-slop discipline matters. Slop is work that looks done but transfers the cost downstream.
+Because taste cannot stay locked in a senior engineer's head, surfacing only at review time to reject what the model already spent effort building. That does not scale, and it wastes the very speed the model offered. The judgment has to be externalized — pushed *upstream* into the environment the agent works in, so the standards shape the output as it is produced rather than catching it afterward. Into harnesses, specs, repository structure, validation rules, and review systems. That externalization is exactly what Chapter 3 is about, and it is why this chapter sits where it does: the harness only makes sense once you accept that there is judgment worth encoding into it.
 
-## Bridge to Chapter 3
-Once judgment becomes more valuable, the next question is obvious:
-
-How do you encode that judgment so machines can work inside it?
-
-That is the bridge into Chapter 3. Taste cannot remain only in a senior engineer’s head. It has to be externalized into harnesses, specs, repo structure, validation rules, and review systems.
-
-## Closing move
-When code gets cheaper, the real question is not whether humans matter less.
-
-It is what kind of human contribution becomes scarce.
-
-The answer is judgment under abundance: knowing what should be built, what standards apply, what tradeoffs are acceptable, and what seductive output needs to be rejected.
-
-That is why taste still matters.
-
-## Public-safe note
-This derivative is intentionally concise and architectural. It mirrors the stronger internal manuscript argument without transcript-heavy source detail.
+So when code gets cheaper, the real question was never whether humans matter less. It is which human contribution becomes scarce — and the answer is judgment under abundance: knowing what should be built, what standards apply, which tradeoffs are acceptable, and which seductive, working, plausible output needs to be rejected anyway. That is what taste means here. That is why it still matters. And that is why the rest of this book is, in a sense, an extended answer to the question of how to give judgment somewhere durable to live.
