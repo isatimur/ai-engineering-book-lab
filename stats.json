@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-31T11:45:47+00:00",
+  "generated_at": "2026-05-31T11:52:49+00:00",
   "corpus": {
-    "videos": 708
+    "videos": 57
   },
   "synthesis": {
     "themes": 10,
-    "people": 50,
-    "concepts": 19,
+    "people": 0,
+    "concepts": 0,
     "concepts_public": 2,
-    "drafting_files": 9
+    "drafting_files": 4
   },
   "claims": {
     "total": 39,
@@ -37,9 +37,9 @@
     "total": 65
   },
   "method": {
-    "research_passes": 15,
+    "research_passes": 8,
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 901
+  "total_artefacts": 181
 }
