@@ -55,7 +55,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.1,
@@ -273,7 +273,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
@@ -507,7 +507,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.3,
@@ -728,7 +728,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.2,
@@ -963,7 +963,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
@@ -1191,7 +1191,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.3,
@@ -1435,7 +1435,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 70.4,
@@ -1678,7 +1678,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 77.2,
@@ -1960,7 +1960,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.8,
@@ -2141,7 +2141,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:aa004a4",
+      "version_id": "git:fa421ea",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 82.0,
@@ -2368,5 +2368,113 @@
         }
       ]
     }
-  }
+  },
+  "history": [
+    {
+      "run_id": "2026-06-01-155947-4924",
+      "version_id": "git:fa421ea",
+      "finished_at": "2026-06-01T16:19:11.116994+00:00",
+      "partial": true,
+      "book": {
+        "humanness": 76.9,
+        "voice": 83.7,
+        "usefulness": 44.3,
+        "evidence_density": 90.0,
+        "claim_defensibility": 71.1,
+        "redundancy": 76.8
+      },
+      "chapters": {
+        "01": {
+          "humanness": 74.1,
+          "voice": 91.0,
+          "usefulness": 39.1,
+          "evidence_density": 90.0,
+          "claim_defensibility": 73.2,
+          "redundancy": 100.0,
+          "n_paragraphs": 25
+        },
+        "02": {
+          "humanness": 76.8,
+          "voice": 82.0,
+          "usefulness": 40.3,
+          "evidence_density": 90.0,
+          "claim_defensibility": 66.6,
+          "redundancy": 72.0,
+          "n_paragraphs": 25
+        },
+        "03": {
+          "humanness": 74.3,
+          "voice": 78.0,
+          "usefulness": 30.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 64.7,
+          "redundancy": null,
+          "n_paragraphs": 62
+        },
+        "04": {
+          "humanness": 76.2,
+          "voice": 87.0,
+          "usefulness": 52.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 67.0,
+          "redundancy": 72.0,
+          "n_paragraphs": 25
+        },
+        "05": {
+          "humanness": 76.8,
+          "voice": 78.0,
+          "usefulness": 42.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 78.3,
+          "redundancy": 72.0,
+          "n_paragraphs": 56
+        },
+        "06": {
+          "humanness": 80.3,
+          "voice": 87.0,
+          "usefulness": 51.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 70.9,
+          "redundancy": 72.0,
+          "n_paragraphs": 23
+        },
+        "07": {
+          "humanness": 70.4,
+          "voice": 88.0,
+          "usefulness": 52.3,
+          "evidence_density": 90.0,
+          "claim_defensibility": 75.8,
+          "redundancy": 72.0,
+          "n_paragraphs": 48
+        },
+        "08": {
+          "humanness": 77.2,
+          "voice": 82.0,
+          "usefulness": 39.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 63.2,
+          "redundancy": 72.0,
+          "n_paragraphs": 54
+        },
+        "09": {
+          "humanness": 80.8,
+          "voice": 77.0,
+          "usefulness": 51.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 74.8,
+          "redundancy": null,
+          "n_paragraphs": 34
+        },
+        "10": {
+          "humanness": 82.0,
+          "voice": 87.0,
+          "usefulness": 42.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 76.2,
+          "redundancy": 82.0,
+          "n_paragraphs": 17
+        }
+      }
+    }
+  ]
 }

@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { chapters } from '../data/bookChapters';
+import { Sparkline } from '../components/judge/Sparkline';
 import {
   judgeScores,
   scoreForChapter,
@@ -158,6 +159,45 @@ const ShipBlockers = () => {
   );
 };
 
+const Trends = () => {
+  const history = judgeScores.history ?? [];
+  if (history.length < 2) {
+    const n = history.length;
+    return (
+      <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
+        {n === 0
+          ? 'Trends appear once judge runs are published.'
+          : `One run so far (${history[0].run_id}). A second clean run will plot the trend.`}
+      </p>
+    );
+  }
+  const series = (dim: DimName) => history.map((h) => h.book[dim]);
+  const delta = (dim: DimName) => {
+    const vals = series(dim).filter((v): v is number => v != null);
+    return vals.length >= 2 ? Math.round(vals[vals.length - 1] - vals[0]) : null;
+  };
+  return (
+    <div className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+      {DIMS.map((d) => {
+        const dv = delta(d);
+        return (
+          <div key={d} className="flex items-center justify-between gap-3 border border-[var(--color-border)] px-4 py-3">
+            <div className="font-mono text-[9px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
+              {DIM_LABELS[d]}
+              {dv !== null && (
+                <span className="ml-2" style={{ color: dv >= 0 ? labelColor('strong') : labelColor('fail') }}>
+                  {dv >= 0 ? '+' : ''}{dv}
+                </span>
+              )}
+            </div>
+            <Sparkline values={series(d)} color={labelColor('moderate')} />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
 export const Quality = () => {
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)]">
@@ -192,12 +232,10 @@ export const Quality = () => {
             </h2>
             <ShipBlockers />
 
-            <h2 className="mb-4 mt-16 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
+            <h2 className="mb-6 mt-16 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
               Trend over versions
             </h2>
-            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-              Version-over-version trends appear once a second judge run is published.
-            </p>
+            <Trends />
           </>
         )}
       </section>

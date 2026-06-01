@@ -295,6 +295,30 @@ def main(argv: list[str] | None = None) -> int:
 
     data = build(run_dir, _head_sha())
     out = Path(args.out)
+
+    # Accumulate a compact per-run history so /quality can plot version-over-version
+    # trends. Carry forward any prior history, then upsert this run (keyed by run_id),
+    # newest last. Each entry is small (book rollup + per-chapter rollup + metadata).
+    prior: list[dict] = []
+    if out.exists():
+        try:
+            prev = json.loads(out.read_text(encoding="utf-8"))
+            prior = prev.get("history", []) or []
+        except (OSError, json.JSONDecodeError):
+            prior = []
+    snapshot = {
+        "run_id": data["run"]["run_id"],
+        "version_id": next(iter(data["chapters"].values()), {}).get("version_id"),
+        "finished_at": data["run"]["finished_at"],
+        "partial": data["run"]["partial"],
+        "book": data["book"],
+        "chapters": {n: c["rollup"] for n, c in data["chapters"].items()},
+    }
+    history = [h for h in prior if h.get("run_id") != snapshot["run_id"]]
+    history.append(snapshot)
+    history.sort(key=lambda h: h.get("finished_at") or "")
+    data["history"] = history
+
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     n_ch = len(data["chapters"])

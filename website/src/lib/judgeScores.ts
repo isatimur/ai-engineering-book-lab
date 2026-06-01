@@ -59,11 +59,21 @@ export type JudgeRun = {
   partial?: boolean;
 };
 
+export type RunSnapshot = {
+  run_id: string | null;
+  version_id: string | null;
+  finished_at: string | null;
+  partial: boolean;
+  book: Record<DimName, number | null>;
+  chapters: Record<string, Record<string, number | null>>;
+};
+
 export type JudgeScores = {
   schema_version: number;
   run: JudgeRun;
   book: Record<DimName, number | null>;
   chapters: Record<string, ChapterScore>;
+  history?: RunSnapshot[];
 };
 
 export const judgeScores = judgeRaw as JudgeScores;
