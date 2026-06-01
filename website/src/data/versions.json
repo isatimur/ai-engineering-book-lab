@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "source_mode": "git",
+  "chapters": {
+    "01": {
+      "current_version_id": "git:3b372b2",
+      "versions": [
+        {
+          "version_id": "git:3b372b2",
+          "source": "git",
+          "ref": "3b372b283ddf989af1947adb17563c878b54a587",
+          "date": "2026-05-31",
+          "status": "Drafting",
+          "wordCount": 1536,
+          "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-3b372b2.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 716,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "02": {
+      "current_version_id": "git:3b372b2",
+      "versions": [
+        {
+          "version_id": "git:3b372b2",
+          "source": "git",
+          "ref": "3b372b283ddf989af1947adb17563c878b54a587",
+          "date": "2026-05-31",
+          "status": "Drafting",
+          "wordCount": 1549,
+          "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-3b372b2.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 722,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "03": {
+      "current_version_id": "git:0a39ea6",
+      "versions": [
+        {
+          "version_id": "git:0a39ea6",
+          "source": "git",
+          "ref": "0a39ea6385ea0fa935b5f23162b10d992c6b4322",
+          "date": "2026-06-01",
+          "status": "Drafting",
+          "wordCount": 2776,
+          "message": "fix(ch3): strip editorial scaffold leaking into the public reader",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-0a39ea6.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 2935,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "04": {
+      "current_version_id": "git:0ab273e",
+      "versions": [
+        {
+          "version_id": "git:0ab273e",
+          "source": "git",
+          "ref": "0ab273efeffc9893eaaa58784d0abe3a21f02d13",
+          "date": "2026-06-01",
+          "status": "Drafting",
+          "wordCount": 1931,
+          "message": "draft(ch4,6): expand the two thin chapters to full Drafting depth",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-0ab273e.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 506,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "05": {
+      "current_version_id": "git:f798182",
+      "versions": [
+        {
+          "version_id": "git:f798182",
+          "source": "git",
+          "ref": "f7981822b784c13b4ef89d047f32a3ca0450f15b",
+          "date": "2026-05-28",
+          "status": "Drafting",
+          "wordCount": 2992,
+          "message": "draft(ch5): Context Is Infrastructure — Starter → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-f798182.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 383,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "06": {
+      "current_version_id": "git:0ab273e",
+      "versions": [
+        {
+          "version_id": "git:0ab273e",
+          "source": "git",
+          "ref": "0ab273efeffc9893eaaa58784d0abe3a21f02d13",
+          "date": "2026-06-01",
+          "status": "Drafting",
+          "wordCount": 1790,
+          "message": "draft(ch4,6): expand the two thin chapters to full Drafting depth",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-0ab273e.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 353,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "07": {
+      "current_version_id": "git:85f3c2a",
+      "versions": [
+        {
+          "version_id": "git:85f3c2a",
+          "source": "git",
+          "ref": "85f3c2a4ea2554399a3d61704c6fc6d567c6e574",
+          "date": "2026-05-31",
+          "status": "Drafting",
+          "wordCount": 3133,
+          "message": "draft(ch7): Security, Identity, High-Stakes Trust — Starter → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-85f3c2a.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 993,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "08": {
+      "current_version_id": "git:ade8d60",
+      "versions": [
+        {
+          "version_id": "git:ade8d60",
+          "source": "git",
+          "ref": "ade8d604c05d6d33191306bfcd12bdecf592682f",
+          "date": "2026-05-31",
+          "status": "Drafting",
+          "wordCount": 3035,
+          "message": "draft(ch8): Realtime, Voice, Cost of Being Interruptible — Starter → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-ade8d60.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 469,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "09": {
+      "current_version_id": "git:0a16fae",
+      "versions": [
+        {
+          "version_id": "git:0a16fae",
+          "source": "git",
+          "ref": "0a16fae630951484d1863d32eca5887f341e2f8a",
+          "date": "2026-05-31",
+          "status": "Drafting",
+          "wordCount": 2608,
+          "message": "draft(ch9): The AI-Native Organization — Starter → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-0a16fae.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 415,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-7f5a2c6.md"
+        }
+      ]
+    },
+    "10": {
+      "current_version_id": "git:3b372b2",
+      "versions": [
+        {
+          "version_id": "git:3b372b2",
+          "source": "git",
+          "ref": "3b372b283ddf989af1947adb17563c878b54a587",
+          "date": "2026-05-31",
+          "status": "Drafting",
+          "wordCount": 1162,
+          "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-3b372b2.md"
+        },
+        {
+          "version_id": "git:7f5a2c6",
+          "source": "git",
+          "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
+          "date": "2026-05-22",
+          "status": "Drafting",
+          "wordCount": 309,
+          "message": "chore: add From Copilot to Colleague website baseline",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-7f5a2c6.md"
+        }
+      ]
+    }
+  }
+}

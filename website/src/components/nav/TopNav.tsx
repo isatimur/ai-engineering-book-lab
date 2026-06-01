@@ -34,6 +34,8 @@ export const TopNav = ({ progress, onToggleSettings, onBackToCatalogue, onOpenSh
           <a href="/visual-guide" className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">VISUAL GUIDE</a>
           <span className="border-l border-[var(--color-border)] h-4 transition-colors duration-300" />
           <span className="text-[var(--color-ink)] transition-colors duration-300">BOOK READER</span>
+          <span className="border-l border-[var(--color-border)] h-4 transition-colors duration-300" />
+          <a href="/versions" className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">VERSIONS</a>
         </div>
         <div className="border border-[var(--color-border)] rounded-full px-3 py-1 font-mono tabular-nums flex items-center justify-center min-w-[5.5rem] bg-[var(--color-paper)] transition-colors duration-300 relative overflow-hidden group">
           <motion.div
