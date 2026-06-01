@@ -116,7 +116,7 @@ The implication for the book's broader frame is that the scaffolding-first thesi
 
 ## Robotics: the same constraints at higher stakes
 
-A short note on robotics, which the packet's chapter title gestured at and which the corpus has enough on to anchor a single section if not yet a chapter of its own.
+A short note on robotics, which the chapter title gestured at and which the corpus has enough on to anchor a single section if not yet a chapter of its own.
 
 The robotics talks in the cluster — Annika and Aastha on GR00T N1 humanoid foundation models, Jyh-Jing Hwang on Waymo's EMMA, Quan Vuong and Jost Tobias Springberg on Physical Intelligence's "robotics: why now?" framing — read as voice agents with the latency budget tightened and the failure mode physicalized. The bottleneck shifts from tool calls to perception-to-action loops. The half-duplex ceiling shifts from turn-taking to one-action-at-a-time. The masking layer shifts from fillers to motion-plan continuity. The architectural shape is the same.
 
@@ -135,15 +135,3 @@ That is also the chapter's connection back to the rest of the book. Chapter 3 ar
 The next chapter widens out from this stress test to the organizational question the book has been pointing at since the opening. If reliable AI is a property of the loop around the model — and if the loop now includes context architecture, durable runtimes, and realtime infrastructure — then the team that ships dependable AI looks different from the team that ships a chatbot. Chapter 9 is about what that team looks like.
 
 The last word in the voice cluster belongs to Zeghidour, who has been honest enough throughout his talk to keep saying that there is more to do. "The last mile is going to be the most difficult to solve," he says, near the end. The chapter would not put it differently. The first mile of voice was a model problem. The last mile is an infrastructure problem. The first one is mostly solved. The second one is the work.
-
----
-
-## Draft status note
-This pass added:
-1. Full prose under all nine planned sections (~4,800 words).
-2. Use of all packet-pre-extracted quotes (Harries on evals, Zeghidour on tool-call bottleneck + listen-or-speak + last mile + fillers, Humeau on autoregressive backbones + perceived latency, Dippu Singh on minefield, DuBois/Kramer on ngmi) with attribution.
-3. Voice match with chapters 1–3: declarative, evidence-led, named speakers with integrated quotes; clean handoff into Ch 9 ("the team that ships dependable AI looks different from the team that ships a chatbot").
-4. 1 new strongest-claim entry (#29 — latency masking as conversational scaffolding) registered in `claims/Claims Ledger.md`; existing claims 20, 21, 22, 23 referenced in prose without re-registering.
-5. Open questions from the packet resolved: main spine, not horizon chapter; robotics included as a short coda inside the voice chapter rather than split; the strong frame is kept while the robotics evidence is honestly scoped as a section, not a full treatment.
-
-Anchoring is the next pass per `programs/source_anchoring_pass.md`. Because the Ch 8 packet arrives with anchor tables already attached to its strongest claims, the next anchoring pass against Ch 8 is a paste-and-verify job rather than the from-scratch grep the Ch 5 anchoring will need.

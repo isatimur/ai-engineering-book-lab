@@ -13,26 +13,6 @@ The chapter is now in Drafting status not because new prose was written, but bec
 
 ---
 
-## Original planning skeleton (preserved as record)
-
-**Chapter promise (planning era):** The biggest gains from AI do not come from giving individuals better tools. They come from redesigning the organization so delegated machine work can compound instead of creating chaos.
-
-**Opening move (planning era):** Most AI adoption stories start too small. Someone buys a seat. A few engineers get faster. A product manager starts using a chatbot for drafts. Support uses AI to summarize tickets. These changes matter, but they do not yet amount to an AI-native organization.
-
-**Throughline (planning era):** Move from "AI adoption is not the same as AI-native advantage" to "the winning organization redesigns review, planning, access, and incentives around delegated work."
-
-**Section skeleton (planning era):**
-1. AI-native means workflow redesign, not software procurement.
-2. Cheaper execution shifts value toward judgment, architecture, and throughput design.
-3. Broader creation is real, but it only works with constrained paths to ship.
-4. Review becomes the organizational bottleneck.
-5. Alignment debt is the new invisible organizational tax.
-6. The company becomes a harness for its own agents.
-
-The drafted chapter follows this skeleton closely and adds a closing section ("What this means for what endures") that hands off to Chapter 10.
-
----
-
 # Chapter 9 — The AI-Native Organization
 
 Most AI adoption stories are too small to be the real story. A few engineers get faster. Support summarizes tickets more quickly. A product manager drafts specs in half the time. Those are real gains, and they are also, every one of them, individual gains. Add them up and you have a company that uses AI. You do not yet have an AI-native organization.
@@ -108,17 +88,3 @@ The AI-native organization is not the one with the most enthusiastic prompting c
 Notice what that list does not contain. It does not contain a particular model, a particular vendor, or a particular protocol. Every concrete technology in this book will be replaced; some of it already has been between the talks that anchor these chapters and the page you are reading. What persists is the shape of the problem: cheap execution makes judgment scarce, scarce judgment has to be organized, and organizing it is an engineering discipline applied to an institution rather than a codebase.
 
 The technical question and the organizational question, in the end, turn out to be the same question asked at two scales. How do you build a system in which delegated work compounds instead of fragmenting? For a single agent, the answer was a harness. For a company, the answer is the same word at a larger size. The final chapter asks what survives when the models, the tools, and the org charts have all turned over again — and the answer it reaches for is already visible here, in the parts of the AI-native organization that were never really about AI at all.
-
----
-
-## Draft status note
-This pass added:
-1. The drafting-file equivalent of an already-published mirror — bringing `public/drafting/` and `website/src/content/` into structural alignment per the program's spec.
-2. 5 new strongest-claim entries (#35–#39) registered in `claims/Claims Ledger.md`. The claims encode the chapter's contributions: AI-native-as-redesign, broader-creation-with-tighter-governance, activity-metrics-misread-motion-as-progress, review-as-throughput-limit, alignment-debt-as-AI-native-technical-debt.
-3. Existing claims referenced in the prose without re-registering: #1 (delegated execution), #3 (scaffolding over model cleverness), #4 (harness quality), #8 (evals as control system), #14 (software factory), #16 (organizational coherence), #25 (context engineering), #28 (context misassembly), #34 (per-tool OAuth governance). Ch 9 is the closing-arc chapter; it draws from across the book by design.
-4. Status flip recorded in `website/src/data/bookChapters.ts` (Starter → Drafting). Brings the project to 7 Drafting / 0 Starter / 3 Outlined.
-5. Open questions from the packet resolved: role collapse framed boldly (Lisa Orr quote carries it); ROI claims foregrounded only where Stanford or Jellyfish data backs them (Denisov-Blanch + Arcolano); hiring and org design stay merged in this chapter (separate chapter would be premature); "alignment debt" promoted as a named failure mode (claim 39).
-
-Anchoring is the next pass per `programs/source_anchoring_pass.md`. With Ch 9 done, the unanchored backlog stands at 15 claims (#25–#39) across four drafting passes — roughly 50–75 individual anchors to add using `99_Meta/scripts/anchor/cli.py`. Recommended order: Ch 8 first (packet pre-extracted anchors → paste-and-verify), then Ch 5, then Ch 7, then Ch 9 (largest cluster, most cross-loaded).
-
-This completes the four-chapter drafting program (5 → 8 → 7 → 9). The book's only remaining pre-Drafting chapters are 4, 6, and 10 in Outlined status. They are the next milestone.

@@ -138,15 +138,3 @@ A team that treats context as a one-off prompt-assembly problem will keep findin
 A team that treats context as infrastructure builds for the failure modes the chapter has named: misassembly, capability flood, memory drift, provenance loss. They version the context layer. They observe what it surfaces. They measure how the model's outputs change when the context layer changes. They treat the context platform the way a database team treats the storage engine — as a piece of working infrastructure whose properties shape everything built on top of it.
 
 That is the move this chapter has been arguing for. It is also the move that prepares the reader for the next chapter. Once you take context seriously as infrastructure, you immediately notice that the substrate cannot live entirely in a single agent run. It has to persist across sessions, recover from interruptions, and survive partial failure. That is the runtime problem, and it is where the book goes next.
-
----
-
-## Draft status note
-This pass added:
-1. Full prose under all eight planned sections (~4,500 words).
-2. Use of every quote the packet pre-extracted (Bercovici, Morris, Matt Carey, Sam Morrow on GitHub MCP scaling) with attribution to the source-cluster speakers.
-3. A clean handoff from Chapter 4 (evals measure what context made possible) and into Chapter 6 (context substrates need durable runtimes).
-4. 4 new strongest-claim entries (25–28) registered in `claims/Claims Ledger.md`, plus references to existing claims 10, 15, 18 woven into the prose.
-5. Open questions from the packet — "How much retrieval mechanics?", "Should GraphRAG be subsection or detour?", "Should MCP live here or in Ch 7?" — resolved as: retrieval mechanics stay light, GraphRAG is one section among several, MCP lives here as a context problem and reappears in Ch 7 as a security problem.
-
-Anchoring is the next pass per `programs/source_anchoring_pass.md`. Quotes used in this draft are all from the packet's pre-extracted set; the source-anchoring pass will confirm each one against the video transcripts.
