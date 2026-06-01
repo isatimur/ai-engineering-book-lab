@@ -10,8 +10,6 @@ export const ExpandableSummary = ({ chapter }: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const firstParagraphs = chapter.content
-    .replace(/^# Chapter 3 Draft v0[\s\S]*?---\n+/m, '')
-    .replace(/^## Draft note[\s\S]*?---\n+/m, '')
     .split(/\n{2,}/)
     .map((b) => b.trim())
     .filter((b) => b && !b.startsWith('#') && !b.startsWith('---'))

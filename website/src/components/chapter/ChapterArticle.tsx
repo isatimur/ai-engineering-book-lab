@@ -7,8 +7,6 @@ import { inlineFigsForChapter } from '../../lib/manifest';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
   const blocks = chapter.content
-    .replace(/^# Chapter 3 Draft v0[\s\S]*?---\n+/m, '')
-    .replace(/^## Draft note[\s\S]*?---\n+/m, '')
     .split(/\n{2,}/)
     .map((b) => b.trim())
     .filter(Boolean);
