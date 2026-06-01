@@ -39,9 +39,12 @@ export type ChapterScore = {
   corpus_snapshot_hash: string | null;
   rollup: Record<DimName, number | null> & { n_paragraphs: number | null };
   labels: Record<DimName, JudgeLabel>;
+  coverage?: Record<DimName, Coverage>;
   ship_blockers: WeakParagraph[];
   weakest: WeakParagraph[];
 };
+
+export type Coverage = { scored: number; total: number };
 
 export type JudgeRun = {
   run_id: string | null;
@@ -52,6 +55,8 @@ export type JudgeRun = {
   total_cost_usd: number | null;
   status: string | null;
   dims: string[];
+  coverage?: Record<string, Coverage>;
+  partial?: boolean;
 };
 
 export type JudgeScores = {

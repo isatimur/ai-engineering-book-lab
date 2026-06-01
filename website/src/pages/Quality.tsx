@@ -22,15 +22,33 @@ const Header = () => {
   const cost = r.total_cost_usd != null ? `$${r.total_cost_usd.toFixed(2)}` : '—';
   const date = r.finished_at ? r.finished_at.slice(0, 10) : '—';
   const hash = r.corpus_snapshot_hash ? r.corpus_snapshot_hash.replace('sha256:', '').slice(0, 12) : '—';
+  const cov = r.coverage ?? {};
   return (
-    <div className="mb-12 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-      <span>run {r.run_id ?? '—'}</span>
-      <span>{date}</span>
-      <span>cost {cost}</span>
-      <span>mash {r.book_mash_version ?? '—'}</span>
-      <span>snapshot {hash}</span>
-      <span>status {r.status ?? '—'}</span>
-    </div>
+    <>
+      <div className="mb-4 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
+        <span>run {r.run_id ?? '—'}</span>
+        <span>{date}</span>
+        <span>cost {cost}</span>
+        <span>mash {r.book_mash_version ?? '—'}</span>
+        <span>snapshot {hash}</span>
+        <span>status {r.status ?? '—'}</span>
+      </div>
+      {r.partial && (
+        <div
+          className="mb-8 border px-4 py-3 font-mono text-[10px] uppercase leading-relaxed tracking-[0.12em]"
+          style={{ borderColor: labelColor('weak'), color: labelColor('weak') }}
+        >
+          Partial run — some dimensions were rate-limited and not every paragraph was
+          scored. Shown numbers are computed from the paragraphs that were. Coverage:{' '}
+          {DIMS.map((d) => {
+            const c = cov[d];
+            return c && c.total ? `${DIM_LABELS[d]} ${c.scored}/${c.total}` : null;
+          })
+            .filter(Boolean)
+            .join(' · ')}
+        </div>
+      )}
+    </>
   );
 };
 
