@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T19:54:20+00:00",
+  "generated_at": "2026-06-01T20:07:59+00:00",
   "corpus": {
     "videos": 57
   },
@@ -8,7 +8,7 @@
     "people": 0,
     "concepts": 0,
     "concepts_public": 2,
-    "drafting_files": 4
+    "drafting_files": 10
   },
   "claims": {
     "total": 42,
@@ -24,9 +24,9 @@
   },
   "chapters": {
     "total": 10,
-    "drafting": 7,
+    "drafting": 10,
     "starter": 0,
-    "outlined": 3
+    "outlined": 0
   },
   "diagrams": {
     "overview": 4,
