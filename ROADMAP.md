@@ -19,11 +19,16 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | 2026-05-27 | **`VERCEL_TOKEN`** set in GitHub secrets → end-to-end auto-deploy verified (push → Vercel prod in ~40s, no manual step) | GitHub repo secrets |
 | 2026-05-31 | **Chapter drafting passes complete** — ch 5/7/8/9 Starter → Drafting (ch3–9 now all Drafting, ~2,600–3,100 words each) | `website/src/content/chapter-*.md` · `public/drafting/` |
 | 2026-05-31 | **Anchor backfill (claims 25–39)** — +40 Source Anchors; ledger now 37/39 claims anchored | `claims/Claims Ledger.md` |
+| 2026-06-01 | **All 10 chapters Drafting** — ch1/2/10 drafted, ch4/6 expanded from stubs; ch3 scaffold-leak fixed | `website/src/content/chapter-*.md` |
+| 2026-06-01 | **Quality feature (Phases 1–3)** — inline AI-judge scorecards in reader · `/versions` git-diff view · `/quality` dashboard (heatmap + ship-blockers); committed-extract pipeline (`build_judge_scores.py`, `build_versions.py`) | `website/src/{pages,components,lib}/` · `99_Meta/scripts/` |
+| 2026-06-01 | **First full MASH run** ($5.17) — all 10 chapters scored; partial (Haiku rate-limited); judges since moved to Sonnet to fix | `.book-mash-runs/` · `website/src/data/judge-scores.json` |
 
 ## In flight
 
 | Priority | What | Tracking |
 |---|---|---|
+| P0 | **Clean MASH re-run on Sonnet** — first run was Haiku-rate-limited (26–43% of units errored on 3 dims); all 6 judges now Sonnet, re-run to replace the partial `judge-scores.json` | `book-mash` judges · `99_Meta/scripts/build_judge_scores.py` |
+| P1 | **Phase 4 — version-over-version judge trends** — `judge-scores.json` gains `history[]`; trend sparklines + judge-delta view (needs ≥2 clean runs) | `website/src/pages/Quality.tsx` · `build_judge_scores.py` |
 | P0 | **Anchor remaining claims** — 37/39 ledger claims anchored; only the two Ch 9 claims (#36 broader-creation/governance, #37 activity-metrics) are left, queued for the next pass | `programs/source_anchoring_pass.md` + `research_passes/` |
 | P1 | **Chapters 1, 2, 10 → Drafting** — the last three Outlined chapters (opening pair + close); ch4/ch6 are Drafting but thin (~350–500 words) and want a depth pass | `public/drafting/` + `website/src/content/chapter-*.md` |
 | P1 | **SEO routing refactor** — pre-rendered HTML per chapter/concept/map (12-task plan ready) | [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
