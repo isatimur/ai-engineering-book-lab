@@ -62,6 +62,7 @@ export const Catalogue = () => {
           <a href="/visual-guide" className="hover:text-white">Visual Guide</a>
           <a href="/read" className="hover:text-white">Read</a>
           <a href="/versions" className="hover:text-white">Versions</a>
+          <a href="/quality" className="hover:text-white">Quality</a>
         </nav>
       </header>
 
