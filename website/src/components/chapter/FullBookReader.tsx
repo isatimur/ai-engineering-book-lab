@@ -6,6 +6,8 @@ import { DynamicVisuals } from './DynamicVisuals';
 import { ChapterArticle } from './ChapterArticle';
 import { ChapterStage } from './ChapterStage';
 import { EvidenceRail } from '../../EvidenceRail';
+import { JudgeScorecard } from '../judge/JudgeScorecard';
+import { scoreForChapter } from '../../lib/judgeScores';
 
 const ChapterOpener = ({ chapter }: { chapter: string }) => {
   const op = opener(chapter);
@@ -147,6 +149,17 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
           <EvidenceRail chapterNumber={chapter.number} />
         </div>
       </div>
+
+      {scoreForChapter(chapter.number) && (
+        <div className="w-full py-16 lg:py-20 px-6 border-t border-[var(--color-border)]">
+          <div className="w-full max-w-[1100px] mx-auto">
+            <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-2 text-center">
+              AI QUALITY  ·  CHAPTER {chapter.number}  ·  MASH JUDGES
+            </div>
+            <JudgeScorecard chapterNumber={chapter.number} />
+          </div>
+        </div>
+      )}
     </article>
   );
 };

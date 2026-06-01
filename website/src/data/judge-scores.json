@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "2026-05-22-0943-9a20",
+    "corpus_snapshot_hash": "sha256:9a20ee0ac257fcd8d127a5a71a46b80fa6b3a11b86fcfebb994fe140243bf542",
+    "book_mash_version": "0.1.0",
+    "dim_registry_version": "0.1.0",
+    "finished_at": "2026-05-22T09:44:02.336967+00:00",
+    "total_cost_usd": 0.3418,
+    "status": "completed",
+    "dims": [
+      "humanness",
+      "voice",
+      "usefulness",
+      "evidence_density",
+      "claim_defensibility",
+      "redundancy"
+    ]
+  },
+  "book": {
+    "humanness": 66.3,
+    "voice": 82.0,
+    "usefulness": 40.8,
+    "evidence_density": 10.0,
+    "claim_defensibility": 4.1,
+    "redundancy": 100.0
+  },
+  "chapters": {
+    "01": {
+      "slug": "chapter-1-the-shift-from-assistant-to-delegate",
+      "version_id": "git:3d8c2bd",
+      "corpus_snapshot_hash": "sha256:9a20ee0ac257fcd8d127a5a71a46b80fa6b3a11b86fcfebb994fe140243bf542",
+      "rollup": {
+        "humanness": 66.3,
+        "voice": 82.0,
+        "usefulness": 40.8,
+        "evidence_density": 10.0,
+        "claim_defensibility": 4.1,
+        "redundancy": 100.0,
+        "n_paragraphs": 18
+      },
+      "labels": {
+        "humanness": "moderate",
+        "voice": "strong",
+        "usefulness": "weak",
+        "evidence_density": "fail",
+        "claim_defensibility": "fail",
+        "redundancy": "strong"
+      },
+      "ship_blockers": [
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 2,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes a substantive conceptual claim — that a qualitative shift occurs when AI (or some agent) moves from an informational role (\"tell me\") to an action-taking role (\"go do\") — but there are zero ledger entries to support any claim in this paragraph. With no backing whatsoever, this is an unsupported assertion regardless of how plausible it may seem. Per the rubric, any unsupported claim of any kind triggers a `fail`.",
+          "evidence_refs": [
+            "unsupported:The claim that a 'sharper change' begins when the mode of interaction shifts from informational requests ('tell me') to action-oriented requests ('go do') has no corresponding ledger entry and is entirely unsupported."
+          ],
+          "para_excerpt": "1. The real shift is from \"tell me\" to \"go do\" — answer production to delegated work."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 3,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes multiple implicit claims and directives (about research, contracts, services, queues, failures, and deliverables) but there are zero ledger entries to support any of them. Every statement in the paragraph is entirely unsupported. This is a ship-blocking fail.",
+          "evidence_refs": [
+            "unsupported:Research this topic.",
+            "unsupported:Draft the contract.",
+            "unsupported:Refactor the service.",
+            "unsupported:Triage the queue.",
+            "unsupported:Investigate the failure.",
+            "unsupported:Prepare something a human can actually review and use."
+          ],
+          "para_excerpt": "3. Delegation stretches the failure surface from one response to a whole workflow. 4. The chat box was always the smallest part — the product is the apparatus a…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 4,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "There are no ledger entries whatsoever, yet the paragraph makes several substantive claims: (1) that a standard \"changes\" at some identifiable point, (2) that \"helpful\" is no longer a sufficient bar beyond that point, (3) that the system is expected to produce artifacts, make bounded decisions, and move work forward reliably, and (4) that this reliability enables delegation rather than mere consultation. Every one of these claims is unsupported — there is no ledger evidence to back any of them. This is a clear fail.",
+          "evidence_refs": [
+            "unsupported:The standard changes at some identifiable point.",
+            "unsupported:\"Helpful\" is no longer enough beyond that point.",
+            "unsupported:The system is being asked to produce artifacts, make bounded decisions, and move work forward with reliability.",
+            "unsupported:This reliability enables delegation rather than mere consultation."
+          ],
+          "para_excerpt": "# Chapter 1 — The Shift: From Assistant to Delegate"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 7,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes three distinct definitional claims — characterizing an \"assistant\" as something that suggests, a \"copilot\" as something that collaborates inside a human loop, and a \"delegate\" as something assigned work and expected to return with an artifact, recommendation, or completed step. None of these claims have any corresponding ledger entry. Every claim in the paragraph is therefore entirely unsupported, triggering a fail rating.",
+          "evidence_refs": [
+            "unsupported:An assistant suggests (no ledger entry exists for this definition)",
+            "unsupported:A copilot collaborates inside a human loop (no ledger entry exists for this definition)",
+            "unsupported:A delegate is assigned work and expected to return with an artifact, a recommendation, or a completed step (no ledger entry exists for this definition)"
+          ],
+          "para_excerpt": "The sharper change begins when the verb becomes *go do*. Research this topic. Draft the contract. Refactor the service. Triage the queue. Investigate the failur…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 8,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The ledger contains no entries whatsoever. Every substantive claim in this paragraph — that assistants remain valuable, that engineering difficulty/product ambition/organizational change clusters around a \"third category,\" that delegation changes the failure surface, and that the system is \"shaping work\" rather than \"just saying things\" — has zero ledger backing. With no ledger entries to support any claim, the entire paragraph is unsupported. This is an automatic fail.",
+          "evidence_refs": [
+            "unsupported:Assistants will remain valuable.",
+            "unsupported:Much of the engineering difficulty, product ambition, and organizational change now clusters around the third category.",
+            "unsupported:Delegation changes the failure surface because the system is no longer just saying things.",
+            "unsupported:The system is shaping work (rather than merely saying things)."
+          ],
+          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are really three relationships a person can have with an AI system, and…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 13,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The ledger contains no entries whatsoever, yet the paragraph makes several substantive claims: (1) that two specific cases are \"deliberately different\" and drawn from software and knowledge work respectively; (2) that software artifacts are executable and testable; (3) that authority, evidence, and institutional accountability matter more visibly in knowledge work; and (4) that the two cases converge on the conclusion that \"intelligence alone is not enough\" once a task becomes delegated work. None of these claims have any ledger backing. With zero ledger support for any claim in the paragraph, the paragraph cannot be defended and must be flagged as a fail.",
+          "evidence_refs": [
+            "unsupported:The two cases are deliberately different — one from software, one from knowledge work.",
+            "unsupported:Software artifacts are executable and testable.",
+            "unsupported:In knowledge work, authority, evidence, and institutional accountability matter more visibly.",
+            "unsupported:Both cases converge on the conclusion that intelligence alone is not enough once a task becomes delegated work."
+          ],
+          "para_excerpt": "When an assistant is wrong, the cost is bounded by the fact that a human is reading every word it produces. The error surfaces immediately, in context, with the…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 17,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes a substantive causal claim — that \"demand\" is what transforms model progress into an engineering discipline — but there are zero ledger entries to support any part of this assertion. With no ledger backing whatsoever, the claim is entirely unsupported, triggering a fail as a ship-blocker.",
+          "evidence_refs": [
+            "unsupported:That demand is what turns model progress into an engineering discipline."
+          ],
+          "para_excerpt": "## The chat box was always the smallest part"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 9,
+          "score": 2.0,
+          "label": "fail",
+          "reasoning": "The ledger contains no entries whatsoever. Every claim in this paragraph — that the chat interface is merely a surface once AI does real work, that the \"real product\" consists of context assembly, tool access, workflow structure, quality checks, durable state, review layers, and observability, and that agent products are empirically growing traces, side panels, memory layers, workflow views, and review queues — is entirely unsupported by any ledger evidence. With zero backing for any assertion, the paragraph is a complete fail.",
+          "evidence_refs": [
+            "unsupported:The chat interface becomes only the visible surface once AI starts doing real work.",
+            "unsupported:The real product includes context assembly, tool access, workflow structure, quality checks, durable state, review layers, and observability for humans.",
+            "unsupported:So many 'agent' products keep growing traces, side panels, memory layers, workflow views, and review queues.",
+            "unsupported:The surrounding system is doing more of the reliability work."
+          ],
+          "para_excerpt": "An **assistant** suggests. It produces something you then decide what to do with — a draft, an answer, an option. The human stays in the critical path for every…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 11,
+          "score": 2.0,
+          "label": "fail",
+          "reasoning": "The ledger contains no entries whatsoever. Every claim in the paragraph — that coding agents appear magical on small tasks, that they become unreliable on larger tasks, that raw model capability is insufficient for dependable delegated work, that the surrounding infrastructure (repository, harness, specs, evals, runtime) must be improved, and that \"the workplace has to be made legible\" — is entirely unsupported by any ledger evidence. With zero backing for any assertion, the paragraph constitutes a complete fail regardless of how plausible the claims may be on their own merits.",
+          "evidence_refs": [
+            "unsupported:Coding agents can look magical on small tasks and become unreliable on larger ones.",
+            "unsupported:The enduring lesson is not that current models are secretly bad.",
+            "unsupported:Raw model capability is not enough for dependable delegated work.",
+            "unsupported:The workplace (repository, harness, specs, evals, runtime) has to be made legible."
+          ],
+          "para_excerpt": ""
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 0,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes two substantive claims: (1) that the most important transition in applied AI is a shift away from improved chat interfaces, and (2) that teams increasingly want AI systems that return with work completed (i.e., agentic/autonomous AI). Neither claim has any corresponding ledger entry. With no ledger backing whatsoever, both claims are entirely unsupported, triggering a fail regardless of how plausible or well-reasoned they may seem on their own merits.",
+          "evidence_refs": [
+            "unsupported:The most important transition in applied AI is not that chat interfaces got better — no ledger entry supports characterizing this as the *most important* transition, or any transition at all.",
+            "unsupported:Teams increasingly want systems to come back with work done — no ledger entry supports this claim about team preferences or the trend toward agentic/autonomous AI systems."
+          ],
+          "para_excerpt": "## Draft note"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 1,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "The ledger contains no entries whatsoever, yet the paragraph makes several substantive claims: (1) that the dominant experience of AI was \"answer production\" (summarizing, explaining, drafting, brainstorming); (2) that this fluency was \"surprising\"; (3) that this represented primarily an \"interface story\" — a smarter text box, faster first pass, or more conversational way to access software. None of these characterizations have any ledger backing. Since every claim in the paragraph is unsupported, this is a clear fail.",
+          "evidence_refs": [
+            "unsupported:The dominant experience of AI was answer production (summarizing, explaining, drafting, brainstorming with surprising fluency).",
+            "unsupported:This fluency was 'surprising'.",
+            "unsupported:The AI experience was mostly an interface story — a smarter text box, a faster first pass, a more conversational way to access software."
+          ],
+          "para_excerpt": ""
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 5,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "There are no ledger entries at all, yet the paragraph makes several concrete claims: (1) a particular \"framing\" appears \"again and again\" across a corpus, (2) it appears especially in practitioner talks about coding agents, enterprise workflows, and professional tools, (3) it should not be treated as settled science or proof that broad delegation already works well everywhere, and (4) it represents a strong convergence in what serious builders are trying to make these systems do. Every one of these claims is unsupported because there are no ledger entries to back any of them. The `fail` label is warranted.",
+          "evidence_refs": [
+            "unsupported:A particular framing appears 'again and again' across the corpus.",
+            "unsupported:The framing appears especially in practitioner talks about coding agents, enterprise workflows, and professional tools.",
+            "unsupported:The framing should not be treated as settled science or as proof that broad delegation already works well everywhere.",
+            "unsupported:The framing represents a strong convergence in what serious builders are trying to make these systems do."
+          ],
+          "para_excerpt": "The most important change in applied AI is not that chat got better. It is that people stopped wanting an answer and started wanting the work done."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 12,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes several substantive claims — (1) that legal, tax, compliance, and enterprise-research assistants can begin as conversational surfaces and then be asked to do work with professional consequences; (2) that at that point provenance, access boundaries, retrieval discipline, durable trajectories, and explicit review points become mandatory rather than optional; and (3) that fluency ceases to be the primary value proposition. These are not trivial or purely definitional statements; they assert specific architectural and professional requirements for AI systems in high-stakes domains. No ledger entries exist to support any of these claims, making every claim in the paragraph unsupported. Per the rubric, the absence of any ledger backing for any claim triggers a `fail`.",
+          "evidence_refs": [
+            "unsupported:Legal, tax, compliance, or enterprise-research assistants can begin as helpful conversational surfaces and then get asked to do work that has professional consequences.",
+            "unsupported:At that point provenance, access boundaries, retrieval discipline, durable trajectories, and explicit review points stop being optional.",
+            "unsupported:Fluency is still useful, but it is no longer the main thing being bought."
+          ],
+          "para_excerpt": "## Why delegation changes the failure surface"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 14,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "There are no ledger entries at all, yet the paragraph makes multiple substantive claims: (1) that when execution gets cheaper, judgment becomes more valuable; (2) that taste, standards, and review quality stop being background virtues; and (3) that these qualities become the constraints preventing cheap output from turning into expensive mess. Every one of these is an unsupported claim with zero ledger backing, triggering a fail.",
+          "evidence_refs": [
+            "unsupported:When execution gets cheaper, judgment becomes more valuable, not less.",
+            "unsupported:Taste, standards, and review quality stop being background virtues.",
+            "unsupported:Taste, standards, and review quality become the constraints that keep cheap output from turning into expensive mess."
+          ],
+          "para_excerpt": "Delegation removes that built-in supervision. The human is not watching each step; they are waiting for a result. So an error no longer surfaces when it happens…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 15,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "There are no ledger entries whatsoever to support any of the claims made in this paragraph. The paragraph makes multiple specific substantive claims — including that the book poses a particular framing question (\"what has to surround model intelligence before a team can trust it with real work?\"), and that the rest of the book answers with a specific enumerated stack of enabling conditions (stronger human standards, more legible harnesses, better evals, better context architecture, more durable runtimes, and clearer authority boundaries). Every one of these claims is entirely unsupported by the ledger. With no backing evidence at all, this paragraph receives a failing score.",
+          "evidence_refs": [
+            "unsupported:The manuscript asks the question: what has to surround model intelligence before a team can trust it with real work?",
+            "unsupported:The rest of the book answers with a stack of enabling conditions",
+            "unsupported:The enabling conditions include: stronger human standards",
+            "unsupported:The enabling conditions include: more legible harnesses",
+            "unsupported:The enabling conditions include: better evals",
+            "unsupported:The enabling conditions include: better context architecture",
+            "unsupported:The enabling conditions include: more durable runtimes",
+            "unsupported:The enabling conditions include: clearer authority boundaries"
+          ],
+          "para_excerpt": "This is why so many practitioners describe the same wall. Jacob Lauritzen, building legal AI at Legora, puts it plainly: vertical AI and complex agents \"need mo…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 16,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes several substantive empirical and normative claims about modern AI and user behavior — e.g., that people \"increasingly want\" AI to \"work\" (not just talk), that users want AI to return artifacts, complete bounded steps, and produce inspectable/trustworthy work. None of these claims have any corresponding ledger entry. With zero ledger backing for any claim in the paragraph, this is a clear fail regardless of how plausible the claims may seem independently.",
+          "evidence_refs": [
+            "unsupported:People increasingly want AI to 'work' rather than merely talk.",
+            "unsupported:Users want AI to return artifacts, not merely generate ideas.",
+            "unsupported:Users want AI to complete bounded steps, not merely answer.",
+            "unsupported:Users want AI to produce work a human can inspect, redirect, and trust, rather than merely sound plausible."
+          ],
+          "para_excerpt": "And the gap is not closed by a smarter model alone. Barry Zhang and Mahesh Murag at Anthropic name the distinction carefully: agents \"have intelligence and capa…"
+        }
+      ],
+      "weakest": [
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 6,
+          "score": 10.0,
+          "label": "fail",
+          "reasoning": "This is pure scaffolding. \"A useful distinction is:\" is a listicle stem with zero intellectual content — it makes no claim, offers no perspective, and exists solely to introduce the bulleted list that follows. Removing this sentence loses nothing; the list stands on its own. The phrase doesn't even gesture toward *why* the distinction is useful, to whom, or under what conditions it might fail. A thinking author would have said something like \"The three terms mean different things and the industry collapses them lazily\" or \"Practitioners use all three words interchangeably, which is how you get a chatbot branded a 'delegate.'\" Instead we get a sentence whose only job is to exist before a colon.",
+          "evidence_refs": [
+            "phrase:'A useful distinction is:'"
+          ],
+          "para_excerpt": "For a few years the dominant experience of AI was answer production. You asked, and the system summarized, explained, drafted, brainstormed — with a fluency tha…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 10,
+          "score": 12.0,
+          "label": "fail",
+          "reasoning": "This is pure scaffolding. \"Two recurring cases make the shift concrete\" is a listicle stem — it exists only to introduce something else and carries zero content of its own. It makes no claim, offers no point of view, and loses nothing if cut entirely. The word \"recurring\" gestures at specificity without delivering any. A hostile editor would delete this sentence without a second thought.",
+          "evidence_refs": [
+            "phrase:'Two recurring cases make the shift concrete'"
+          ],
+          "para_excerpt": "A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were a…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 7,
+          "score": 22.0,
+          "label": "weak",
+          "reasoning": "This is a three-item definitional list with bullet formatting — a textbook AI scaffolding pattern. The three categories (assistant / copilot / delegate) are presented as if the distinctions are self-evident, but the definitions do almost no work. \"Suggests,\" \"collaborates inside a human loop,\" and \"is assigned work and expected to return with an artifact\" are smooth, blandly parallel constructions. None of them contain a specific example, a price, a product name, a date, or a claim that could be wrong. The copilot definition is the weakest — \"collaborates inside a human loop\" is pure jargon filler that could mean anything. The surrounding paragraphs suggest the author has a real argument, but this list itself is pure scaffolding: remove it, replace it with a single sentence, and nothing concrete is lost. The list-of-three pattern with no real friction between items is exactly the AI-slop tell this rubric flags.",
+          "evidence_refs": [
+            "phrase:'collaborates inside a human loop'"
+          ],
+          "para_excerpt": "The sharper change begins when the verb becomes *go do*. Research this topic. Draft the contract. Refactor the service. Triage the queue. Investigate the failur…"
+        },
+        {
+          "dim_name": "voice",
+          "paragraph_index": 0,
+          "score": 82.0,
+          "label": "strong",
+          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "evidence_refs": [
+            "drift:Minimal drift on three narrow points: (1) the bulleted taxonomy list introduces a mildly more structured/listicle register absent from the baseline; (2) one hedging phrase (\"should not be treated as settled science\") is slightly more epistemically cautious than the baseline's flat declarative style; (3) one self-referential meta-sentence (\"the manuscript asks a harder question\") adopts a book-jacket tone not present in the baseline. Sentence length, vocabulary register, epistemic directness, and rhythmic alternation between short punchy statements and longer elaborating sentences are otherwise well-matched throughout."
+          ],
+          "para_excerpt": "## Draft note"
+        },
+        {
+          "dim_name": "voice",
+          "paragraph_index": 1,
+          "score": 82.0,
+          "label": "strong",
+          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "evidence_refs": [
+            "drift:Minimal drift on three narrow points: (1) the bulleted taxonomy list introduces a mildly more structured/listicle register absent from the baseline; (2) one hedging phrase (\"should not be treated as settled science\") is slightly more epistemically cautious than the baseline's flat declarative style; (3) one self-referential meta-sentence (\"the manuscript asks a harder question\") adopts a book-jacket tone not present in the baseline. Sentence length, vocabulary register, epistemic directness, and rhythmic alternation between short punchy statements and longer elaborating sentences are otherwise well-matched throughout."
+          ],
+          "para_excerpt": ""
+        },
+        {
+          "dim_name": "voice",
+          "paragraph_index": 2,
+          "score": 82.0,
+          "label": "strong",
+          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "evidence_refs": [
+            "drift:Minimal drift on three narrow points: (1) the bulleted taxonomy list introduces a mildly more structured/listicle register absent from the baseline; (2) one hedging phrase (\"should not be treated as settled science\") is slightly more epistemically cautious than the baseline's flat declarative style; (3) one self-referential meta-sentence (\"the manuscript asks a harder question\") adopts a book-jacket tone not present in the baseline. Sentence length, vocabulary register, epistemic directness, and rhythmic alternation between short punchy statements and longer elaborating sentences are otherwise well-matched throughout."
+          ],
+          "para_excerpt": "1. The real shift is from \"tell me\" to \"go do\" — answer production to delegated work."
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 3,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This is a bare bulleted list with no operational context. It reads as a list of example tasks or placeholders illustrating what might be delegated to AI, but it provides no decision threshold, principle, concrete example, quantitative test, or trap to avoid. There is no actionable guidance here—a working engineer cannot change anything on Monday based on reading \"research this topic.\" It lacks the commitment and specificity required for application. This appears to be illustrative scaffolding or chapter decoration rather than guidance.",
+          "evidence_refs": [],
+          "para_excerpt": "3. Delegation stretches the failure surface from one response to a whole workflow. 4. The chat box was always the smallest part — the product is the apparatus a…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 6,
+          "score": 15.0,
+          "label": "fail",
+          "reasoning": "The paragraph is incomplete—it signals the introduction of a distinction (\"A useful distinction is:\") but provides no actual distinction, no principle, no threshold, no example, and no detail. This is pure setup prose with zero operational lift. An engineer cannot act on something that isn't stated. The colon hangs empty.",
+          "evidence_refs": [],
+          "para_excerpt": "For a few years the dominant experience of AI was answer production. You asked, and the system summarized, explained, drafted, brainstormed — with a fluency tha…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 10,
+          "score": 15.0,
+          "label": "fail",
+          "reasoning": "This is introductory meta-commentary signaling that examples follow, not the examples themselves. It says \"we will now show you cases\" but provides zero actionable content—no decision, threshold, principle, concrete example, or even the cases themselves. An engineer cannot act on \"two cases make the shift concrete\" without knowing what those cases are or what decision they illustrate.",
+          "evidence_refs": [],
+          "para_excerpt": "A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were a…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 2,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes a substantive conceptual claim — that a qualitative shift occurs when AI (or some agent) moves from an informational role (\"tell me\") to an action-taking role (\"go do\") — but there are zero ledger entries to support any claim in this paragraph. With no backing whatsoever, this is an unsupported assertion regardless of how plausible it may seem. Per the rubric, any unsupported claim of any kind triggers a `fail`.",
+          "evidence_refs": [
+            "unsupported:The claim that a 'sharper change' begins when the mode of interaction shifts from informational requests ('tell me') to action-oriented requests ('go do') has no corresponding ledger entry and is entirely unsupported."
+          ],
+          "para_excerpt": "1. The real shift is from \"tell me\" to \"go do\" — answer production to delegated work."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 3,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "The paragraph makes multiple implicit claims and directives (about research, contracts, services, queues, failures, and deliverables) but there are zero ledger entries to support any of them. Every statement in the paragraph is entirely unsupported. This is a ship-blocking fail.",
+          "evidence_refs": [
+            "unsupported:Research this topic.",
+            "unsupported:Draft the contract.",
+            "unsupported:Refactor the service.",
+            "unsupported:Triage the queue.",
+            "unsupported:Investigate the failure.",
+            "unsupported:Prepare something a human can actually review and use."
+          ],
+          "para_excerpt": "3. Delegation stretches the failure surface from one response to a whole workflow. 4. The chat box was always the smallest part — the product is the apparatus a…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 4,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "There are no ledger entries whatsoever, yet the paragraph makes several substantive claims: (1) that a standard \"changes\" at some identifiable point, (2) that \"helpful\" is no longer a sufficient bar beyond that point, (3) that the system is expected to produce artifacts, make bounded decisions, and move work forward reliably, and (4) that this reliability enables delegation rather than mere consultation. Every one of these claims is unsupported — there is no ledger evidence to back any of them. This is a clear fail.",
+          "evidence_refs": [
+            "unsupported:The standard changes at some identifiable point.",
+            "unsupported:\"Helpful\" is no longer enough beyond that point.",
+            "unsupported:The system is being asked to produce artifacts, make bounded decisions, and move work forward with reliability.",
+            "unsupported:This reliability enables delegation rather than mere consultation."
+          ],
+          "para_excerpt": "# Chapter 1 — The Shift: From Assistant to Delegate"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 0,
+          "score": 100.0,
+          "label": "strong",
+          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "evidence_refs": [],
+          "para_excerpt": "## Draft note"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 1,
+          "score": 100.0,
+          "label": "strong",
+          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "evidence_refs": [],
+          "para_excerpt": ""
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 2,
+          "score": 100.0,
+          "label": "strong",
+          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "evidence_refs": [],
+          "para_excerpt": "1. The real shift is from \"tell me\" to \"go do\" — answer production to delegated work."
+        }
+      ]
+    }
+  }
+}

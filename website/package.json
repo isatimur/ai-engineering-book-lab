@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "sync-diagrams": "node scripts/sync-diagrams.mjs",
-    "prebuild": "node scripts/sync-diagrams.mjs",
+    "gen-data": "node scripts/gen-data.mjs",
+    "prebuild": "node scripts/sync-diagrams.mjs && node scripts/gen-data.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "start": "node server.js",
