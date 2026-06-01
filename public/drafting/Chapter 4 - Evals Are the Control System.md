@@ -1,3 +1,19 @@
+# Chapter 4 Draft v0 — Evals Are the Control System
+
+## Draft note
+Expansion pass from thin Drafting (~500w planning-note shell) to full Drafting prose. Built on Chapter Packet v1 (`05_Book_Ideas/Chapter Packets v1/04_Evals_Are_the_Control_System.md`). Source cluster of 11 videos. No new ledger claims — Ch 4 already has 9 tagged claims (#3, #4, #5, #6, #8, #9, #19, #37, #42); this pass realizes them as prose. Quotes used are all packet-pre-extracted (Jain snippets→codebases, Pesok "evals are not unit tests", Hetzel "same problem from a systems perspective" + "not just a test runner", Jones "AI unit tests" / CLI / file-system / scrapbook). Anchoring already exists for the reused claims.
+
+The argument arc:
+1. A promising feeling is not a control loop — evals as the operating system of trust; callback to Ch 2 review.
+2. The unit of evaluation changed — snippet → codebase → workflow.
+3. Evals are not unit tests (Pesok) — and also are (Jones): productive tension, two surfaces of one artifact.
+4. Real tasks beat synthetic cleverness — mined from operational history; human-seeded evals (Colvin).
+5. Observability and evals are the same problem (Hetzel) — the production-to-eval flywheel; platform ≠ test runner.
+6. When the agents read the evals too (Jones #689) — CLI over YAML, download-UI-as-filesystem, scrapbook.
+7. Why this is the operating system of trust — forward links to Ch 5/6/9.
+
+---
+
 # Chapter 4 — Evals Are the Control System
 
 The obvious failure mode of AI is that it can be wrong. The more dangerous one is that it can look right often enough that the team stops measuring.

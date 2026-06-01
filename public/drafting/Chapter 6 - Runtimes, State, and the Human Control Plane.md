@@ -1,3 +1,18 @@
+# Chapter 6 Draft v0 — Runtimes, State, and the Human Control Plane
+
+## Draft note
+Expansion pass from thin Drafting (~350w planning-note shell) to full Drafting prose. Built on Chapter Packet v1 (`05_Book_Ideas/Chapter Packets v1/06_Runtimes_State_and_the_Human_Control_Plane.md`). Source cluster of 18 videos. No new ledger claims — Ch 6 already has 20 tagged claims (#1–5, #8–18, #24–26 among them); this pass realizes the core ones as prose. Quotes used are all packet-pre-extracted (Colvin "stateless nightmares", Somal durability/trust + retry-in-runtime + workflow history, Hron agency-dial + trajectories, Zakariasson roll-up overview, Codex decomposable-parallel, Bichard coordination-as-missing-primitive + "GitHub is not a coordination layer", Factory serial execution, Anthropic own-context-window + negotiate-what-done-means). Anchoring already exists for the reused claims (#24 coordination cluster is fully anchored in the packet).
+
+The argument arc:
+1. A chatbot can get away with amnesia; a production agent cannot — Colvin's harsh truth.
+2. Why stateless demos break — transcript is not state; failure exposes the gap.
+3. Durable execution is the runtime requirement — Somal: durability = trust; retries leave the prompt.
+4. The human control plane is an architectural layer — Hron's agency dial + trajectories; Zakariasson roll-up.
+5. Parallelism raises the stakes on coordination — Bichard's missing primitive; Factory serial vs Anthropic role-separated as the three shipped substitutes.
+6. The runtime is where intelligence becomes dependable — completes the middle spine; hand off to Ch 7 (authority).
+
+---
+
 # Chapter 6 — Runtimes, State, and the Human Control Plane
 
 A chatbot can get away with amnesia. A production agent cannot.
