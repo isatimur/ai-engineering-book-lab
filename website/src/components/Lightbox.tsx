@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import { chapters, chapterPath } from '../data/bookChapters';
 
 type Props = {
   open: boolean;
@@ -54,14 +56,17 @@ export const Lightbox = ({ open, src, title, caption, chapterRef, onClose }: Pro
               <div className="border-t p-6 font-serif text-[#1F1D1B]">
                 {title && <h3 className="text-xl font-medium mb-2">{title}</h3>}
                 {caption && <p className="text-sm leading-relaxed opacity-80 mb-3">{caption}</p>}
-                {chapterRef && (
-                  <a
-                    href={`/read#book-chapter-${chapterRef}`}
-                    className="text-xs font-mono uppercase tracking-widest underline"
-                  >
-                    Appears in chapter {chapterRef} →
-                  </a>
-                )}
+                {chapterRef && (() => {
+                  const ch = chapters.find((c) => c.number === chapterRef);
+                  return (
+                    <Link
+                      to={ch ? chapterPath(ch) : '/read'}
+                      className="text-xs font-mono uppercase tracking-widest underline"
+                    >
+                      Appears in chapter {chapterRef} →
+                    </Link>
+                  );
+                })()}
               </div>
             )}
           </motion.div>

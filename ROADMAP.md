@@ -27,6 +27,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | 2026-06-02 | **harness-humanizer skill** extracted to its own repo (de-slop loop; rubric from the humanness judge) | [`github.com/isatimur/harness-humanizer-skill`](https://github.com/isatimur/harness-humanizer-skill) |
 | 2026-06-02 | **Weak-fragment re-anchoring complete** — all 57 remaining 1–3-word fragment quotes + 2 leftover mediums upgraded to substantive verbatim sentences; ledger now **150/150 anchors high-confidence** (0 medium, 0 low) | `claims/Claims Ledger.md` · `research_passes/2026-06-02-fragment-reanchoring.md` |
 | 2026-06-02 | **Harness-humanizer dogfood (book-wide)** — de-slop sweep across all 10 chapters: removed claim-announcers (the "claims-ledger" tic) + filler intensifiers; 19 pure-subtraction edits (ch05/ch10 already clean). Applied to `drafting/` (the MASH-judged files) and propagated to rendered `content/` | `public/drafting/*.md` · `website/src/content/*.md` |
+| 2026-06-02 | **SEO routing refactor (merged)** — wouter → react-router-dom + vite-react-ssg; 36 pages prerendered to static HTML with per-page `<Head>` meta + canonical; new `/read/:slug`, `/visual-guide/concepts/:slug`, `/visual-guide/maps/:slug` routes; 34-URL sitemap + robots.txt; Vercel `cleanUrls` + repo-root build fix | `website/` · PR #1 |
 
 ## In flight
 
@@ -34,7 +35,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 |---|---|---|
 | P1 | **Full-coverage MASH run** — 2nd run still left humanness + claim_defensibility ~partial (Sonnet's own rate limit). Needs MASH-side throttling/backoff or per-dim batching, then a clean re-run | `book-mash` judges · `99_Meta/scripts/build_judge_scores.py` |
 | P2 | **Usefulness pass** — usefulness is the weak dimension book-wide (judges ~34 vs humanness ~77). Needs concrete takeaways / actionability per chapter, not prose de-slop | `website/src/data/judge-scores.json` |
-| P1 | **SEO routing refactor** — pre-rendered HTML per chapter/concept/map (12-task plan ready) | [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
+| P1 | **SEO routing — post-deploy verification** — code merged + deployed; remaining: Lighthouse ≥95 spot-check and Google Search Console sitemap submit | [`spec`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
 
 ## Queued (validated, not started)
 

@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { chapters } from '../data/bookChapters';
+import { Seo } from '../components/Seo';
 import { Sparkline } from '../components/judge/Sparkline';
 import {
   judgeScores,
@@ -201,6 +202,7 @@ const Trends = () => {
 export const Quality = () => {
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)]">
+      <Seo title="Quality — From Copilot to Colleague" description="AI-judge scorecards and ship-blockers across the manuscript." path="/quality" noindex />
       <header className="flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
         <a href="/" className="hover:opacity-60">← Catalogue</a>
         <span>From Copilot to Colleague · Quality</span>

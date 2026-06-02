@@ -60,3 +60,6 @@ export const inlineFigsForChapter = (chapter: string): InlineDiagram[] =>
 
 export const conceptById = (id: string): ConceptDiagram | undefined =>
   manifest.concepts.find((c) => c.id === id);
+
+export const mapById = (id: string): MapDiagram | undefined =>
+  manifest.maps.find((m) => m.id === id);

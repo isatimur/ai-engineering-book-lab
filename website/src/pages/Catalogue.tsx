@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useLocation } from 'wouter';
+import { Link, useNavigate } from 'react-router-dom';
 import { scrollAudio } from '../lib/audio';
 import { MarkdownBlock } from '../components/text/MarkdownBlock';
+import { Seo } from '../components/Seo';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
 
 type Book = {
@@ -27,14 +28,14 @@ const BOOK: Book = {
 
 export const Catalogue = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [, setLocation] = useLocation();
+  const navigate = useNavigate();
   const [transitioning, setTransitioning] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleSelect = () => {
     scrollAudio.initialize();
     setTransitioning(true);
-    setTimeout(() => setLocation('/read'), 2400);
+    setTimeout(() => navigate('/read'), 2400);
   };
 
   const aboutBlocks = aboutLabRaw
@@ -48,6 +49,12 @@ export const Catalogue = () => {
       ref={containerRef}
       className="min-h-screen bg-[#1F1D1B] text-[#F9F7F1] font-serif relative overflow-hidden"
     >
+      <Seo
+        title="From Copilot to Colleague — An Online Book"
+        description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 693-video corpus."
+        path="/"
+        type="book"
+      />
       <header className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-start pointer-events-none">
         <div className="pointer-events-auto flex items-start gap-4">
           <div className="w-8 h-8 flex items-center justify-center border border-white/20 rounded-sm">
@@ -59,10 +66,10 @@ export const Catalogue = () => {
           </div>
         </div>
         <nav className="pointer-events-auto text-xs font-mono uppercase tracking-widest text-white/60 flex gap-6">
-          <a href="/visual-guide" className="hover:text-white">Visual Guide</a>
-          <a href="/read" className="hover:text-white">Read</a>
-          <a href="/versions" className="hover:text-white">Versions</a>
-          <a href="/quality" className="hover:text-white">Quality</a>
+          <Link to="/visual-guide" className="hover:text-white">Visual Guide</Link>
+          <Link to="/read" className="hover:text-white">Read</Link>
+          <Link to="/versions" className="hover:text-white">Versions</Link>
+          <Link to="/quality" className="hover:text-white">Quality</Link>
         </nav>
       </header>
 
