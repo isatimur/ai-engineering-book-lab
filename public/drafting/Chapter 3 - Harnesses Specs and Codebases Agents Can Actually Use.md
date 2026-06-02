@@ -28,7 +28,7 @@ Sometimes that diagnosis is fair. Models do fail because they are weak, distract
 
 Ryan Lopopolo puts the inversion bluntly: “The important thing is not the code but the prompt and the guardrails that got you there.” The line sounds almost rude in a field obsessed with generated output. But it captures one of the deepest shifts in AI-native engineering. Once you ask a machine to do implementation work instead of merely suggesting snippets, the surroundings become part of the product. The harness around the model starts determining what kind of work is even possible.
 
-This chapter’s claim is simple: if you want AI to write production software, do not begin by asking what model to use. Begin by asking whether your repository, specs, validations, and workflow are structured well enough for a machine collaborator to operate without constant rescue.
+If you want AI to write production software, do not begin by asking what model to use. Begin by asking whether your repository, specs, validations, and workflow are structured well enough for a machine collaborator to operate without constant rescue.
 
 ## A small software-factory vignette
 
@@ -44,7 +44,7 @@ So they change the workplace.
 
 They add explicit setup scripts instead of Slack archaeology. They tighten lint and type gates. They create agent-facing instructions. They check in examples of accepted patterns. They write slimmer task specs before handing work off. They stop relying on “everyone kind of knows how we do migrations here.” The repo becomes less like a haunted archive of past decisions and more like a managed surface for machine labor.
 
-That is the recurring case I will call the software factory. It matters because it shows where the leverage really sits. The breakthrough is not that the model suddenly became a genius. The breakthrough is that the team stopped treating its own tacit judgment as invisible infrastructure.
+That is the recurring case I will call the software factory. It matters because it shows where the leverage sits. The breakthrough is not that the model suddenly became a genius. The breakthrough is that the team stopped treating its own tacit judgment as invisible infrastructure.
 
 ## The repo is the real interface
 
@@ -76,7 +76,7 @@ The sloppy patch is not always the sign of a stupid model. It is often the sign 
 
 Once you see the problem this way, the prescription changes. The answer is not only “prompt better.” It is to reduce the amount of silent guesswork that the environment demands. Externalize architecture choices. Store examples of accepted patterns. Make non-functional constraints explicit. Give the system stable ways to discover how this team expects software to be built.
 
-That is what harness engineering really means. Not a fancier wrapper around a model, but the systematic conversion of tacit engineering judgment into durable, machine-usable constraints.
+That is what harness engineering means. Not a fancier wrapper around a model, but the systematic conversion of tacit engineering judgment into durable, machine-usable constraints.
 
 This is also where Chapter 2 should still be echoing in the reader’s mind. Cheap generation raised the value of judgment. Chapter 3 is where that judgment stops living only inside senior people and starts getting encoded into the environment.
 
