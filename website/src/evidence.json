@@ -953,12 +953,12 @@
         },
         {
           "video_id": "w9u11ioHGA0",
-          "start": "00:06:00.320",
-          "end": "00:06:00.560",
-          "start_seconds": 360,
+          "start": "00:05:58.800",
+          "end": "00:06:02.160",
+          "start_seconds": 358,
           "confidence": "high",
           "label": "#156 — David Karam, Pi Labs",
-          "quote": "every technique"
+          "quote": "you need to be like tuned to what what every technique gives you before you go and invest in it."
         }
       ]
     }
@@ -1383,30 +1383,30 @@
       "anchors": [
         {
           "video_id": "fh9LgKXBGnQ",
-          "start": "00:00:23.760",
-          "end": "00:00:24.160",
-          "start_seconds": 23,
+          "start": "00:02:00.159",
+          "end": "00:02:08.080",
+          "start_seconds": 120,
           "confidence": "high",
           "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "before I jump"
+          "quote": "about 73% of LM customers implementing use cases say that factual accuracy is their top challenge right now."
         },
         {
           "video_id": "W1MiZChnkfA",
-          "start": "00:00:43.040",
-          "end": "00:00:43.040",
-          "start_seconds": 43,
+          "start": "00:01:07.439",
+          "end": "00:01:14.640",
+          "start_seconds": 67,
           "confidence": "high",
           "label": "#154 — Calvin Qi (Harvey) & Chang She (Lance)",
-          "quote": "legal"
+          "quote": "how Harvey tackles retrieval, the types of problems there are and then the challenges that come up with that all with like retrieval quality, scaling, uh security,"
         },
         {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:34.239",
-          "end": "00:00:34.719",
-          "start_seconds": 34,
+          "start": "00:00:33.120",
+          "end": "00:00:39.440",
+          "start_seconds": 33,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "enterprise aware"
+          "quote": "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
         }
       ]
     },
@@ -2250,39 +2250,39 @@
       "anchors": [
         {
           "video_id": "Jty4s9-Jb78",
-          "start": "00:05:48.560",
-          "end": "00:05:48.560",
-          "start_seconds": 348,
+          "start": "00:03:05.200",
+          "end": "00:03:09.880",
+          "start_seconds": 185,
           "confidence": "high",
           "label": "#48 — Jack Morris",
-          "quote": "memory"
+          "quote": "there's this third thing, which I think is like really new and no one is doing it yet, which is training things into weights."
         },
         {
           "video_id": "xz0-brt56L8",
-          "start": "00:00:36.079",
-          "end": "00:00:36.239",
-          "start_seconds": 36,
+          "start": "01:09:50.960",
+          "end": "01:09:55.760",
+          "start_seconds": 4190,
           "confidence": "high",
           "label": "#47 — Ivan Leo, Manus AI / Meta Superintelligence",
-          "quote": "new manus"
+          "quote": "this is really useful if you're building anything related to some sort of internal deep research sort of API"
         },
         {
           "video_id": "w9u11ioHGA0",
-          "start": "00:00:54.960",
-          "end": "00:00:54.960",
-          "start_seconds": 54,
+          "start": "00:11:44.640",
+          "end": "00:11:47.440",
+          "start_seconds": 704,
           "confidence": "high",
           "label": "#156 — David Karam, Pi Labs",
-          "quote": "rag"
+          "quote": "you combine it with all your other signals. So now if you look at your ranking function"
         },
         {
           "video_id": "4Xe_iMYxBQc",
-          "start": "01:23:14.240",
-          "end": "01:23:14.760",
-          "start_seconds": 4994,
+          "start": "01:22:33.800",
+          "end": "01:22:41.200",
+          "start_seconds": 4953,
           "confidence": "high",
           "label": "#172 — Philipp Krenn, Elastic",
-          "quote": "information retrieval"
+          "quote": "it's hybrid search because you have multiple approaches, and then you can either boost them together. You could do reranking, which is becoming more and more popular."
         }
       ]
     },
@@ -2302,21 +2302,21 @@
         },
         {
           "video_id": "blmAkayzE8M",
-          "start": "00:00:23.840",
-          "end": "00:00:24.560",
-          "start_seconds": 23,
+          "start": "00:01:23.840",
+          "end": "00:01:30.960",
+          "start_seconds": 83,
           "confidence": "high",
           "label": "#150 — Jared Hanson, Keycard / Passport.js",
-          "quote": "secure agents using"
+          "quote": "we go get API keys that are typically longived and broadly scoped. We paste them into some configuration files and environment variables"
         },
         {
           "video_id": "EmhRyw6xeT0",
-          "start": "00:00:27.760",
-          "end": "00:00:28.000",
-          "start_seconds": 27,
+          "start": "00:01:19.759",
+          "end": "00:01:25.439",
+          "start_seconds": 79,
           "confidence": "high",
           "label": "#627 — Garrett Galow, WorkOS",
-          "quote": "one login"
+          "quote": "if you've used MCP at all extensively, you know that it means consent screens on top of consent screens on top of consent screens."
         }
       ]
     },
@@ -2327,21 +2327,21 @@
       "anchors": [
         {
           "video_id": "w7IMuYsBNr8",
-          "start": "00:04:49.280",
-          "end": "00:04:49.280",
-          "start_seconds": 289,
+          "start": "00:04:47.040",
+          "end": "00:04:52.560",
+          "start_seconds": 287,
           "confidence": "high",
           "label": "#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)",
-          "quote": "sandboxing,"
+          "quote": "making sure that you're actually providing the correct level of sandboxing, whether it's uh containerization or it's using app level sandboxing,"
         },
         {
           "video_id": "AHtGAgQ0Q_Q",
-          "start": "00:07:10.720",
+          "start": "00:07:00.000",
           "end": "00:07:10.720",
-          "start_seconds": 430,
+          "start_seconds": 420,
           "confidence": "high",
           "label": "#31 — Harshil Agrawal, Cloudflare",
-          "quote": "sandbox."
+          "quote": "We have been sandboxing untrusted code for decades. Your browser does it right now. Every tab run in its own sandbox."
         },
         {
           "video_id": "CCsWZ5bJlO8",
@@ -3404,12 +3404,12 @@
         },
         {
           "video_id": "w9u11ioHGA0",
-          "start": "00:06:00.320",
-          "end": "00:06:00.560",
-          "start_seconds": 360,
+          "start": "00:05:58.800",
+          "end": "00:06:02.160",
+          "start_seconds": 358,
           "confidence": "high",
           "label": "#156 — David Karam, Pi Labs",
-          "quote": "every technique"
+          "quote": "you need to be like tuned to what what every technique gives you before you go and invest in it."
         }
       ]
     },
@@ -3420,30 +3420,30 @@
       "anchors": [
         {
           "video_id": "fh9LgKXBGnQ",
-          "start": "00:00:23.760",
-          "end": "00:00:24.160",
-          "start_seconds": 23,
+          "start": "00:02:00.159",
+          "end": "00:02:08.080",
+          "start_seconds": 120,
           "confidence": "high",
           "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "before I jump"
+          "quote": "about 73% of LM customers implementing use cases say that factual accuracy is their top challenge right now."
         },
         {
           "video_id": "W1MiZChnkfA",
-          "start": "00:00:43.040",
-          "end": "00:00:43.040",
-          "start_seconds": 43,
+          "start": "00:01:07.439",
+          "end": "00:01:14.640",
+          "start_seconds": 67,
           "confidence": "high",
           "label": "#154 — Calvin Qi (Harvey) & Chang She (Lance)",
-          "quote": "legal"
+          "quote": "how Harvey tackles retrieval, the types of problems there are and then the challenges that come up with that all with like retrieval quality, scaling, uh security,"
         },
         {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:34.239",
-          "end": "00:00:34.719",
-          "start_seconds": 34,
+          "start": "00:00:33.120",
+          "end": "00:00:39.440",
+          "start_seconds": 33,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "enterprise aware"
+          "quote": "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
         }
       ]
     },
@@ -3454,39 +3454,39 @@
       "anchors": [
         {
           "video_id": "Jty4s9-Jb78",
-          "start": "00:05:48.560",
-          "end": "00:05:48.560",
-          "start_seconds": 348,
+          "start": "00:03:05.200",
+          "end": "00:03:09.880",
+          "start_seconds": 185,
           "confidence": "high",
           "label": "#48 — Jack Morris",
-          "quote": "memory"
+          "quote": "there's this third thing, which I think is like really new and no one is doing it yet, which is training things into weights."
         },
         {
           "video_id": "xz0-brt56L8",
-          "start": "00:00:36.079",
-          "end": "00:00:36.239",
-          "start_seconds": 36,
+          "start": "01:09:50.960",
+          "end": "01:09:55.760",
+          "start_seconds": 4190,
           "confidence": "high",
           "label": "#47 — Ivan Leo, Manus AI / Meta Superintelligence",
-          "quote": "new manus"
+          "quote": "this is really useful if you're building anything related to some sort of internal deep research sort of API"
         },
         {
           "video_id": "w9u11ioHGA0",
-          "start": "00:00:54.960",
-          "end": "00:00:54.960",
-          "start_seconds": 54,
+          "start": "00:11:44.640",
+          "end": "00:11:47.440",
+          "start_seconds": 704,
           "confidence": "high",
           "label": "#156 — David Karam, Pi Labs",
-          "quote": "rag"
+          "quote": "you combine it with all your other signals. So now if you look at your ranking function"
         },
         {
           "video_id": "4Xe_iMYxBQc",
-          "start": "01:23:14.240",
-          "end": "01:23:14.760",
-          "start_seconds": 4994,
+          "start": "01:22:33.800",
+          "end": "01:22:41.200",
+          "start_seconds": 4953,
           "confidence": "high",
           "label": "#172 — Philipp Krenn, Elastic",
-          "quote": "information retrieval"
+          "quote": "it's hybrid search because you have multiple approaches, and then you can either boost them together. You could do reranking, which is becoming more and more popular."
         }
       ]
     }
@@ -3748,21 +3748,21 @@
         },
         {
           "video_id": "hwCmfThIiS4",
-          "start": "00:55:04.880",
-          "end": "00:55:04.880",
-          "start_seconds": 3304,
+          "start": "00:00:57.039",
+          "end": "00:01:09.280",
+          "start_seconds": 57,
           "confidence": "high",
           "label": "#85 — Suman Debnath, AWS",
-          "quote": "voice"
+          "quote": "I'm going to share one of the latest research paper around retrieval which is a uh vision based retrieval and also uh I just thought to wrap this around with an agent."
         },
         {
           "video_id": "IA4lZjh9sTs",
-          "start": "00:00:39.360",
-          "end": "00:00:39.360",
-          "start_seconds": 39,
+          "start": "00:11:20.160",
+          "end": "00:11:28.000",
+          "start_seconds": 680,
           "confidence": "high",
           "label": "#142 — Kwindla Hultman Kramer, Daily",
-          "quote": "Pipecat."
+          "quote": "real time is different from non-real time. And by non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
         }
       ]
     }

@@ -472,8 +472,8 @@
     - **Anchor:** `-tgQa8Fzf80` 00:00:55.600 → 00:00:56.559 · confidence: high
     - **Quote:** "add the hybrid nature"
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
-    - **Anchor:** `w9u11ioHGA0` 00:06:00.320 → 00:06:00.560 · confidence: high
-    - **Quote:** "every technique"
+    - **Anchor:** `w9u11ioHGA0` 00:05:58.800 → 00:06:02.160 · confidence: high
+    - **Quote:** "you need to be like tuned to what what every technique gives you before you go and invest in it."
 - **Caveats / counterpoints:** Skills, agentic search, and richer protocols may eventually hide more of this distinction from product builders. For now, the system designer has to make it explicit. Tightly-scoped consumer chatbots can still get away with collapsing the layers.
 - **Candidate chapters:** 5, 6
 - **Reusable phrasing:** Stuffing context is not memory; vector retrieval is not graph traversal; "RAG" is not a layer, it is several.
@@ -483,14 +483,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — convergence on the few hundred passages that matter as the work that produces value.
-    - **Anchor:** `fh9LgKXBGnQ` 00:00:23.760 → 00:00:24.160 · confidence: high
-    - **Quote:** "before I jump"
+    - **Anchor:** `fh9LgKXBGnQ` 00:02:00.159 → 00:02:08.080 · confidence: high
+    - **Quote:** "about 73% of LM customers implementing use cases say that factual accuracy is their top challenge right now."
   - [[154-W1MiZChnkfA-scaling-enterprise-grade-rag-lessons-from-legal-frontier-calvin-qi-harvey-chang-she-lance|#154 — Calvin Qi (Harvey) & Chang She (Lance)]] — legal work needs specific clause, precedent, exception — separation of authoritative from background source.
-    - **Anchor:** `W1MiZChnkfA` 00:00:43.040 → 00:00:43.040 · confidence: high
-    - **Quote:** "legal"
+    - **Anchor:** `W1MiZChnkfA` 00:01:07.439 → 00:01:14.640 · confidence: high
+    - **Quote:** "how Harvey tackles retrieval, the types of problems there are and then the challenges that come up with that all with like retrieval quality, scaling, uh security,"
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — enterprise-aware agent as one that knows which documents matter for the current user/role/task — boundary work as the engineering work.
-    - **Anchor:** `hxFpUcvWPcU` 00:00:34.239 → 00:00:34.719 · confidence: high
-    - **Quote:** "enterprise aware"
+    - **Anchor:** `hxFpUcvWPcU` 00:00:33.120 → 00:00:39.440 · confidence: high
+    - **Quote:** "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
 - **Caveats / counterpoints:** Corpus size still matters when relevance is genuinely uncertain at index time, or when long-tail coverage is required. The claim is about the working set the model actually sees per step, not the size of the underlying index.
 - **Candidate chapters:** 5, 9
 - **Reusable phrasing:** Enterprise usefulness scales with working-set quality, not corpus size.
@@ -500,17 +500,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — the stuffing-vs-memory distinction names one form of misassembly (stale-plus-current documents averaged into half-current answer).
-    - **Anchor:** `Jty4s9-Jb78` 00:05:48.560 → 00:05:48.560 · confidence: high
-    - **Quote:** "memory"
+    - **Anchor:** `Jty4s9-Jb78` 00:03:05.200 → 00:03:09.880 · confidence: high
+    - **Quote:** "there's this third thing, which I think is like really new and no one is doing it yet, which is training things into weights."
   - [[047-xz0-brt56L8-building-intelligent-research-agents-with-manus-ivan-leo-manus-ai-now-meta-superintelligen|#47 — Ivan Leo, Manus AI / Meta Superintelligence]] — research agents that drift across hundreds of retrievals to produce internally-consistent, externally-wrong summaries.
-    - **Anchor:** `xz0-brt56L8` 00:00:36.079 → 00:00:36.239 · confidence: high
-    - **Quote:** "new manus"
+    - **Anchor:** `xz0-brt56L8` 01:09:50.960 → 01:09:55.760 · confidence: high
+    - **Quote:** "this is really useful if you're building anything related to some sort of internal deep research sort of API"
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — layered retrieval as a structural response to misassembly as a distinct failure mode.
-    - **Anchor:** `w9u11ioHGA0` 00:00:54.960 → 00:00:54.960 · confidence: high
-    - **Quote:** "rag"
+    - **Anchor:** `w9u11ioHGA0` 00:11:44.640 → 00:11:47.440 · confidence: high
+    - **Quote:** "you combine it with all your other signals. So now if you look at your ranking function"
   - [[172-4Xe_iMYxBQc-information-retrieval-from-the-ground-up-philipp-krenn-elastic|#172 — Philipp Krenn, Elastic]] — retrieval as a system of techniques with known trade-offs, not a black box; misassembly as the cost of treating it as one.
-    - **Anchor:** `4Xe_iMYxBQc` 01:23:14.240 → 01:23:14.760 · confidence: high
-    - **Quote:** "information retrieval"
+    - **Anchor:** `4Xe_iMYxBQc` 01:22:33.800 → 01:22:41.200 · confidence: high
+    - **Quote:** "it's hybrid search because you have multiple approaches, and then you can either boost them together. You could do reranking, which is becoming more and more popular."
 - **Caveats / counterpoints:** Hallucination remains real and worth measuring; the claim is about which failure mode dominates production at the frontier, not which is more interesting in toy benchmarks. Some misassembly cases overlap with hallucination at the edge.
 - **Candidate chapters:** 5, 7
 - **Reusable phrasing:** The next failure frontier is context misassembly — real documents, wrong composition, plausibly wrong answers.
@@ -526,11 +526,11 @@
     - **Anchor:** `DCZZ3AJKzuc` 00:02:56.200 → 00:02:58.240 · confidence: high
     - **Quote:** "wrapped it up into its own first class primitive,"
   - [[085-hwCmfThIiS4-voicevision-rag-integrating-visual-document-intelligence-with-voice-response-suman-debnath|#85 — Suman Debnath, AWS]] — VoiceVision RAG maintains the conversational thread while a vision model runs in the background; the user only experiences a continuous exchange.
-    - **Anchor:** `hwCmfThIiS4` 00:55:04.880 → 00:55:04.880 · confidence: high
-    - **Quote:** "voice"
+    - **Anchor:** `hwCmfThIiS4` 00:00:57.039 → 00:01:09.280 · confidence: high
+    - **Quote:** "I'm going to share one of the latest research paper around retrieval which is a uh vision based retrieval and also uh I just thought to wrap this around with an agent."
   - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Pipecat Cloud's architecture is organized around the latency budget rather than per-component optimization; orchestration handles lateness as the design assumption.
-    - **Anchor:** `IA4lZjh9sTs` 00:00:39.360 → 00:00:39.360 · confidence: high
-    - **Quote:** "Pipecat."
+    - **Anchor:** `IA4lZjh9sTs` 00:11:20.160 → 00:11:28.000 · confidence: high
+    - **Quote:** "real time is different from non-real time. And by non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
 - **Caveats / counterpoints:** Masking is paid for in user trust if overused or used cynically — repeated *one moment* fillers with no payoff teach the user the system is lying about progress. The claim is about masking as designed-in conversational scaffolding, not about generic stalling. The claim also doesn't replace the latency-optimization argument; it complements it.
 - **Candidate chapters:** 8
 - **Reusable phrasing:** Latency must be masked, not just minimized. Fillers are conversational scaffolding, not animation.
@@ -543,11 +543,11 @@
     - **Anchor:** `VSdV-AdSlis` 00:00:22.240 → 00:00:22.960 · confidence: high
     - **Quote:** "identity for AI agents"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard / Passport.js]] — agents need short-lived OAuth-scoped tokens, not standing API keys; the credential shape is the delegation shape.
-    - **Anchor:** `blmAkayzE8M` 00:00:23.840 → 00:00:24.560 · confidence: high
-    - **Quote:** "secure agents using"
+    - **Anchor:** `blmAkayzE8M` 00:01:23.840 → 00:01:30.960 · confidence: high
+    - **Quote:** "we go get API keys that are typically longived and broadly scoped. We paste them into some configuration files and environment variables"
   - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — the identity provider as a trust bridge for MCP, so credentials carry enterprise-visible scope and revocation.
-    - **Anchor:** `EmhRyw6xeT0` 00:00:27.760 → 00:00:28.000 · confidence: high
-    - **Quote:** "one login"
+    - **Anchor:** `EmhRyw6xeT0` 00:01:19.759 → 00:01:25.439 · confidence: high
+    - **Quote:** "if you've used MCP at all extensively, you know that it means consent screens on top of consent screens on top of consent screens."
 - **Caveats / counterpoints:** Internal experiments and developer-time tooling can get away with much looser identity than production systems. The claim is about systems that act on real users, real data, and real third parties — where the principal needs to be inspectable.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** An agent that is authenticated as a blurry extension of a human is not delegated. It is impersonating.
@@ -557,11 +557,11 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — sandboxing, network restriction, privilege boundaries, and human review as the substrate code-executing agents have to run on.
-    - **Anchor:** `w7IMuYsBNr8` 00:04:49.280 → 00:04:49.280 · confidence: high
-    - **Quote:** "sandboxing,"
+    - **Anchor:** `w7IMuYsBNr8` 00:04:47.040 → 00:04:52.560 · confidence: high
+    - **Quote:** "making sure that you're actually providing the correct level of sandboxing, whether it's uh containerization or it's using app level sandboxing,"
   - [[031-AHtGAgQ0Q_Q-why-and-how-you-need-to-sandbox-ai-generated-code-harshil-agrawal-cloudflare|#31 — Harshil Agrawal, Cloudflare]] — sandbox-by-default for any agent executing code; the bounds are the product, not the fallback.
-    - **Anchor:** `AHtGAgQ0Q_Q` 00:07:10.720 → 00:07:10.720 · confidence: high
-    - **Quote:** "sandbox."
+    - **Anchor:** `AHtGAgQ0Q_Q` 00:07:00.000 → 00:07:10.720 · confidence: high
+    - **Quote:** "We have been sandboxing untrusted code for decades. Your browser does it right now. Every tab run in its own sandbox."
   - [[149-CCsWZ5bJlO8-the-unofficial-guide-to-apple-s-private-cloud-compute-jmo-confsec|#149 — Jmo, CONFSEC, on Apple Private Cloud Compute]] — the high-end version of designed-in cryptographic boundary; useful as the extreme reference even when not the right pattern for every product.
     - **Anchor:** `CCsWZ5bJlO8` 00:00:15.599 → 00:00:16.160 · confidence: high
     - **Quote:** "private cloud compute."
