@@ -1640,6 +1640,40 @@
           "quote": "software factory"
         }
       ]
+    },
+    {
+      "claim_id": "claims#40",
+      "text": "Cheap generation raises the value of taste and judgment rather than lowering it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "v4F1gFy-hqg",
+          "start": "00:00:34.559",
+          "end": "00:00:37.600",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#1 — Matt Pocock, AI Hero",
+          "quote": "software fundamentals matter now more than they actually ever have."
+        },
+        {
+          "video_id": "wjk0ulMAkbc",
+          "start": "00:00:49.120",
+          "end": "00:00:50.640",
+          "start_seconds": 49,
+          "confidence": "high",
+          "label": "#6 — Tuomas Artman & Gergely Orosz",
+          "quote": "capable of doing everything um immediately"
+        },
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:00:53.039",
+          "end": "00:00:54.000",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "a little bit of friction to it."
+        }
+      ]
     }
   ],
   "10": [
@@ -1955,6 +1989,40 @@
           "confidence": "high",
           "label": "#663 — Samuel Humeau, Mistral",
           "quote": "the king use case for text to speech is uh its usage within agents"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#40",
+      "text": "Cheap generation raises the value of taste and judgment rather than lowering it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "v4F1gFy-hqg",
+          "start": "00:00:34.559",
+          "end": "00:00:37.600",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#1 — Matt Pocock, AI Hero",
+          "quote": "software fundamentals matter now more than they actually ever have."
+        },
+        {
+          "video_id": "wjk0ulMAkbc",
+          "start": "00:00:49.120",
+          "end": "00:00:50.640",
+          "start_seconds": 49,
+          "confidence": "high",
+          "label": "#6 — Tuomas Artman & Gergely Orosz",
+          "quote": "capable of doing everything um immediately"
+        },
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:00:53.039",
+          "end": "00:00:54.000",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "a little bit of friction to it."
         }
       ]
     }
@@ -3025,6 +3093,40 @@
           "quote": "salespeople."
         }
       ]
+    },
+    {
+      "claim_id": "claims#42",
+      "text": "Problem framing and review become the scarce skills once execution is cheap",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:00:53.039",
+          "end": "00:00:54.000",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "a little bit of friction to it."
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:04:04.000",
+          "end": "00:04:06.239",
+          "start_seconds": 244,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "Vibes don't cut that because there's a"
+        },
+        {
+          "video_id": "IoiHI7p12Ao",
+          "start": "00:00:31.279",
+          "end": "00:00:32.480",
+          "start_seconds": 31,
+          "confidence": "high",
+          "label": "#59 — swyx",
+          "quote": "I'm declaring war on slop today."
+        }
+      ]
     }
   ],
   "5": [
@@ -3661,6 +3763,128 @@
           "confidence": "high",
           "label": "#142 — Kwindla Hultman Kramer, Daily",
           "quote": "Pipecat."
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "claim_id": "claims#40",
+      "text": "Cheap generation raises the value of taste and judgment rather than lowering it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "v4F1gFy-hqg",
+          "start": "00:00:34.559",
+          "end": "00:00:37.600",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#1 — Matt Pocock, AI Hero",
+          "quote": "software fundamentals matter now more than they actually ever have."
+        },
+        {
+          "video_id": "wjk0ulMAkbc",
+          "start": "00:00:49.120",
+          "end": "00:00:50.640",
+          "start_seconds": 49,
+          "confidence": "high",
+          "label": "#6 — Tuomas Artman & Gergely Orosz",
+          "quote": "capable of doing everything um immediately"
+        },
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:00:53.039",
+          "end": "00:00:54.000",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "a little bit of friction to it."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#41",
+      "text": "Vibe coding is an exploration mode that fails as a production default",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JV-wY5pxXLo",
+          "start": "00:08:40.880",
+          "end": "00:08:41.599",
+          "start_seconds": 520,
+          "confidence": "high",
+          "label": "#73 — Kitze, Sizzy",
+          "quote": "It's called vibe engineering."
+        },
+        {
+          "video_id": "IoiHI7p12Ao",
+          "start": "00:00:31.279",
+          "end": "00:00:32.480",
+          "start_seconds": 31,
+          "confidence": "high",
+          "label": "#59 — swyx",
+          "quote": "I'm declaring war on slop today."
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:04:04.000",
+          "end": "00:04:06.239",
+          "start_seconds": 244,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "Vibes don't cut that because there's a"
+        },
+        {
+          "video_id": "JsKTQbT58BY",
+          "start": "00:01:15.119",
+          "end": "00:01:16.560",
+          "start_seconds": 75,
+          "confidence": "high",
+          "label": "#106 — Corey J. Gallon, Rexmore",
+          "quote": "The hangover is the resulting"
+        },
+        {
+          "video_id": "n991Yxo1aOI",
+          "start": "00:01:26.880",
+          "end": "00:01:27.759",
+          "start_seconds": 86,
+          "confidence": "high",
+          "label": "#127 — Itamar Friedman, Qodo",
+          "quote": "vibe coding with confidence"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#42",
+      "text": "Problem framing and review become the scarce skills once execution is cheap",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:00:53.039",
+          "end": "00:00:54.000",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "a little bit of friction to it."
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:04:04.000",
+          "end": "00:04:06.239",
+          "start_seconds": 244,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "Vibes don't cut that because there's a"
+        },
+        {
+          "video_id": "IoiHI7p12Ao",
+          "start": "00:00:31.279",
+          "end": "00:00:32.480",
+          "start_seconds": 31,
+          "confidence": "high",
+          "label": "#59 — swyx",
+          "quote": "I'm declaring war on slop today."
         }
       ]
     }

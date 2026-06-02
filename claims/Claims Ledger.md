@@ -722,8 +722,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — Matt Pocock, AI Hero]] — "Software fundamentals matter now more than they actually ever have" — fundamentals are how you tell good output from merely convincing output, and a flood of convincing output needs that skill more.
+    - **Anchor:** `v4F1gFy-hqg` 00:00:34.559 → 00:00:37.600 · confidence: high
+    - **Quote:** "software fundamentals matter now more than they actually ever have."
   - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Tuomas Artman & Gergely Orosz]] — "What happens when agents are capable of doing everything immediately for you?" — names the scarcity shift from making to discerning.
+    - **Anchor:** `wjk0ulMAkbc` 00:00:49.120 → 00:00:50.640 · confidence: high
+    - **Quote:** "capable of doing everything um immediately"
   - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — "the friction is your judgment" — the pauses AI removes are often where quality was being created.
+    - **Anchor:** `_Zcw_sVF6hU` 00:00:53.039 → 00:00:54.000 · confidence: high
+    - **Quote:** "a little bit of friction to it."
 - **Caveats / counterpoints:** For genuinely throwaway work (one-off scripts, disposable prototypes) the judgment overhead is not worth paying, and cheap generation is an unalloyed win. The claim is about output that has to endure or be relied on, where the production filter mattered.
 - **Candidate chapters:** 2, 9, 10
 - **Reusable phrasing:** Cheap output is not cheap judgment; abundance promotes taste rather than retiring it.
@@ -733,10 +739,20 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[073-JV-wY5pxXLo-from-vibe-coding-to-vibe-engineering-kitze-sizzy|#73 — Kitze, Sizzy]] — the from-vibe-coding-to-vibe-engineering arc: the practice has to mature into discipline when output has to endure.
+    - **Anchor:** `JV-wY5pxXLo` 00:08:40.880 → 00:08:41.599 · confidence: high
+    - **Quote:** "It's called vibe engineering."
   - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — "I'm declaring war on slop today" — the engineer's reaction to exploratory output shipped as production work.
+    - **Anchor:** `IoiHI7p12Ao` 00:00:31.279 → 00:00:32.480 · confidence: high
+    - **Quote:** "I'm declaring war on slop today."
   - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — "vibes won't cut it" — feel-based steering is insufficient once the work has to be trusted.
+    - **Anchor:** `Dc3qOA9WOnE` 00:04:04.000 → 00:04:06.239 · confidence: high
+    - **Quote:** "Vibes don't cut that because there's a"
   - [[106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore|#106 — Corey J. Gallon, Rexmore]] — the "hangover": exploratory speed creates downstream cost when it becomes the default.
+    - **Anchor:** `JsKTQbT58BY` 00:01:15.119 → 00:01:16.560 · confidence: high
+    - **Quote:** "The hangover is the resulting"
   - [[127-n991Yxo1aOI-vibe-coding-with-confidence-itamar-friedman-qodo|#127 — Itamar Friedman, Qodo]] — the corrective: confidence in fast generation comes from the verification wrapped around it, not the vibes.
+    - **Anchor:** `n991Yxo1aOI` 00:01:26.880 → 00:01:27.759 · confidence: high
+    - **Quote:** "vibe coding with confidence"
 - **Caveats / counterpoints:** The pro-exploration case is genuine and should not be flattened — vibe coding is the right mode for prototypes, sketches, internal tools, and learning what is worth building. The claim is specifically about the silent drift from exploration into production, not a blanket dismissal.
 - **Candidate chapters:** 2
 - **Reusable phrasing:** Use vibe coding when the goal is discovery; switch modes when the output has to endure.
@@ -746,8 +762,14 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — the friction worth keeping (the review, the architecture question, the refusal of a generic draft) is where judgment lives.
+    - **Anchor:** `_Zcw_sVF6hU` 00:00:53.039 → 00:00:54.000 · confidence: high
+    - **Quote:** "a little bit of friction to it."
   - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — review as the discipline that separates trustworthy output from plausible output.
+    - **Anchor:** `Dc3qOA9WOnE` 00:04:04.000 → 00:04:06.239 · confidence: high
+    - **Quote:** "Vibes don't cut that because there's a"
   - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — slop as work that looks done and transfers its cost downstream; review is where that cost is refused.
+    - **Anchor:** `IoiHI7p12Ao` 00:00:31.279 → 00:00:32.480 · confidence: high
+    - **Quote:** "I'm declaring war on slop today."
 - **Caveats / counterpoints:** Framing and review can themselves be over-applied — heavy upfront specification on genuinely exploratory work suppresses the discovery that cheap generation enables. The claim is about work that has to be trusted, where the scarce skill is discrimination, not ceremony.
 - **Candidate chapters:** 2, 4
 - **Reusable phrasing:** In a world of cheap execution, framing is the work and review is where standards are defended.

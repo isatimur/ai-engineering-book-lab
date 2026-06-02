@@ -29,7 +29,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 |---|---|---|
 | P0 | **Clean MASH re-run on Sonnet** — first run was Haiku-rate-limited (26–43% of units errored on 3 dims); all 6 judges now Sonnet, re-run to replace the partial `judge-scores.json` | `book-mash` judges · `99_Meta/scripts/build_judge_scores.py` |
 | P1 | **Phase 4 — version-over-version judge trends** — `judge-scores.json` gains `history[]`; trend sparklines + judge-delta view (needs ≥2 clean runs) | `website/src/pages/Quality.tsx` · `build_judge_scores.py` |
-| P0 | **Anchor remaining claims** — 39/42 anchored; the 3 new Ch-2 claims (#40 taste, #41 vibe-coding, #42 framing/review) need source anchors. Separately, ~59 existing anchors are 1–3-word fragments that want re-anchoring to substantive verbatim quotes | `programs/source_anchoring_pass.md` + `research_passes/` |
+| P1 | **Re-anchor weak fragments** — all 42/42 claims now anchored (#40–42 done 2026-06-02); ~59 existing anchors are still 1–3-word fragments that want re-anchoring to substantive verbatim quotes | `programs/source_anchoring_pass.md` + `research_passes/` |
 | P1 | **Chapters 1, 2, 10 → Drafting** — the last three Outlined chapters (opening pair + close); ch4/ch6 are Drafting but thin (~350–500 words) and want a depth pass | `public/drafting/` + `website/src/content/chapter-*.md` |
 | P1 | **SEO routing refactor** — pre-rendered HTML per chapter/concept/map (12-task plan ready) | [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
 
