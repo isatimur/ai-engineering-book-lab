@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-02T14:07:16+00:00",
+  "generated_at": "2026-06-02T14:07:59+00:00",
   "corpus": {
-    "videos": 708
+    "videos": 57
   },
   "synthesis": {
     "themes": 10,
-    "people": 50,
-    "concepts": 19,
+    "people": 0,
+    "concepts": 0,
     "concepts_public": 2,
     "drafting_files": 10
   },
@@ -37,9 +37,9 @@
     "total": 65
   },
   "method": {
-    "research_passes": 18,
+    "research_passes": 10,
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 904
+  "total_artefacts": 184
 }
