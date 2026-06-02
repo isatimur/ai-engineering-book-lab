@@ -49,7 +49,7 @@ This is the same human-judgment-at-the-edges principle the book keeps returning 
 
 ## Parallelism raises the stakes on coordination
 
-Everything so far concerns a single durable worker. The architecture gets harder, and more interesting, the moment teams reach for many workers at once — and this is where the corpus is most honestly unsettled.
+Everything so far concerns a single durable worker. The architecture gets harder, and more interesting, the moment teams reach for many workers at once — and this is where the corpus is most unsettled.
 
 The appeal is obvious: if one agent is leverage, a fleet is more leverage. OpenAI's Codex team describes the mechanism, spinning off "a master task into decomposable parallel and independent tasks." But more workers only produce more value if their output can be recomposed, inspected, and routed back to a human at the right moment. Otherwise parallelism just manufactures chaos faster — more diffs, more conflicts, more review than anyone can absorb, which is exactly the alignment-debt failure Chapter 9 will name at organizational scale.
 

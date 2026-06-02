@@ -16,7 +16,7 @@ The argument arc:
 
 # Chapter 2 — Taste Still Matters When Code Gets Cheap
 
-Cheap code is easy to misread. When a model can generate a feature, a test suite, and the glue between them in the time it takes to describe them, the obvious conclusion is that engineering itself has gotten cheap. Part of it has. Routine production — the typing, the boilerplate, the third CRUD endpoint that looks like the first two — is genuinely easier than it was.
+Cheap code is easy to misread. When a model can generate a feature, a test suite, and the glue between them in the time it takes to describe them, the obvious conclusion is that engineering itself has gotten cheap. Part of it has. Routine production — the typing, the boilerplate, the third CRUD endpoint that looks like the first two — is easier than it was.
 
 But cheap output is not the same as cheap judgment, and the gap between those two is the subject of this chapter. If Chapter 1 argued that the real shift is from suggestion to delegated work, the immediate human question is what remains scarce once the output is abundant. The answer is taste — and abundance does not retire taste. It promotes it.
 
@@ -42,7 +42,7 @@ Those distinctions were always part of senior engineering judgment. What changes
 
 ## Vibe coding: powerful, and dangerous in the same breath
 
-The clearest live example of the taste problem is the practice that has come to be called vibe coding — building by rapid, loosely-specified prompting, steering on feel rather than on a plan. The corpus is genuinely split on it, and the split is instructive rather than confused.
+The clearest live example of the taste problem is the practice that has come to be called vibe coding — building by rapid, loosely-specified prompting, steering on feel rather than on a plan. The corpus is split on it, and the split is instructive rather than confused.
 
 Vibe coding is excellent for exploration. For rough prototypes, interface sketches, internal tools, one-off automation, and the early work of figuring out what is even worth building, it is a remarkable accelerant. Steering on feel is the right mode when the goal is discovery, because in discovery you do not yet know enough to specify, and premature rigor would just slow the learning.
 
@@ -52,7 +52,7 @@ So the right conclusion is not "never vibe code." It is a mode switch: use vibe 
 
 ## The friction that was load-bearing
 
-AI removes a great deal of wasteful friction, and that is genuinely good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous move is to treat every pause as inefficiency to be optimized away.
+AI removes a great deal of wasteful friction, and that is good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous move is to treat every pause as inefficiency to be optimized away.
 
 Some friction is where judgment was happening. The review before the merge. The extra question about whether the architecture can carry this. The refusal to accept a generic draft that technically satisfies the request. The decision to rewrite something correct-but-wrong — code that passes every test and still encodes the wrong model of the problem. Those pauses look like drag on a velocity dashboard. They are often the exact points where quality was being created, and removing them does not make the work faster so much as make the absence of judgment invisible until later.
 
