@@ -22,15 +22,17 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | 2026-06-01 | **All 10 chapters Drafting** — ch1/2/10 drafted, ch4/6 expanded from stubs; ch3 scaffold-leak fixed | `website/src/content/chapter-*.md` |
 | 2026-06-01 | **Quality feature (Phases 1–3)** — inline AI-judge scorecards in reader · `/versions` git-diff view · `/quality` dashboard (heatmap + ship-blockers); committed-extract pipeline (`build_judge_scores.py`, `build_versions.py`) | `website/src/{pages,components,lib}/` · `99_Meta/scripts/` |
 | 2026-06-01 | **First full MASH run** ($5.17) — all 10 chapters scored; partial (Haiku rate-limited); judges since moved to Sonnet to fix | `.book-mash-runs/` · `website/src/data/judge-scores.json` |
+| 2026-06-02 | **2nd MASH run on Sonnet** ($3.70) — 4/6 dims now full coverage; `history[]` → Phase 4 trend sparklines live on `/quality` | `website/src/data/judge-scores.json` · `website/src/pages/Quality.tsx` |
+| 2026-06-02 | **Ledger 42/42 anchored** — Ch-2 claims #40–42 source-anchored (11 high-confidence anchors) | `claims/Claims Ledger.md` |
+| 2026-06-02 | **harness-humanizer skill** extracted to its own repo (de-slop loop; rubric from the humanness judge) | [`github.com/isatimur/harness-humanizer-skill`](https://github.com/isatimur/harness-humanizer-skill) |
 
 ## In flight
 
 | Priority | What | Tracking |
 |---|---|---|
-| P0 | **Clean MASH re-run on Sonnet** — first run was Haiku-rate-limited (26–43% of units errored on 3 dims); all 6 judges now Sonnet, re-run to replace the partial `judge-scores.json` | `book-mash` judges · `99_Meta/scripts/build_judge_scores.py` |
-| P1 | **Phase 4 — version-over-version judge trends** — `judge-scores.json` gains `history[]`; trend sparklines + judge-delta view (needs ≥2 clean runs) | `website/src/pages/Quality.tsx` · `build_judge_scores.py` |
-| P1 | **Re-anchor weak fragments** — all 42/42 claims now anchored (#40–42 done 2026-06-02); ~59 existing anchors are still 1–3-word fragments that want re-anchoring to substantive verbatim quotes | `programs/source_anchoring_pass.md` + `research_passes/` |
-| P1 | **Chapters 1, 2, 10 → Drafting** — the last three Outlined chapters (opening pair + close); ch4/ch6 are Drafting but thin (~350–500 words) and want a depth pass | `public/drafting/` + `website/src/content/chapter-*.md` |
+| P1 | **Full-coverage MASH run** — 2nd run still left humanness + claim_defensibility ~partial (Sonnet's own rate limit). Needs MASH-side throttling/backoff or per-dim batching, then a clean re-run | `book-mash` judges · `99_Meta/scripts/build_judge_scores.py` |
+| P1 | **Re-anchor weak fragments** — all 42/42 claims anchored; ~59 existing anchors are still 1–3-word fragments that want re-anchoring to substantive verbatim quotes | `programs/source_anchoring_pass.md` + `research_passes/` |
+| P2 | **Dogfood harness-humanizer on weakest chapters** — MASH already names the low humanness/usefulness paragraphs; run the skill on them | `~/.claude/skills/harness-humanizer` · `website/src/data/judge-scores.json` |
 | P1 | **SEO routing refactor** — pre-rendered HTML per chapter/concept/map (12-task plan ready) | [`docs/superpowers/specs/2026-05-26-website-seo-routing-design.md`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
 
 ## Queued (validated, not started)
