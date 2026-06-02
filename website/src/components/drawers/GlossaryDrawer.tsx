@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { GLOSSARY } from '../../data/glossary';
-import { chapters } from '../../data/bookChapters';
+import { chapters, chapterPath } from '../../data/bookChapters';
+import { conceptById } from '../../lib/manifest';
 
 type Props = {
   termId: string | null;
@@ -68,23 +70,24 @@ export const GlossaryDrawer = ({ termId, onClose }: Props) => {
               </div>
             )}
             {term.diagram && (
-              <a
-                href={`/visual-guide#concept-${term.id}`}
+              <Link
+                to={conceptById(term.id) ? `/visual-guide/concepts/${term.id}` : '/visual-guide'}
+                onClick={onClose}
                 className="font-mono text-[10px] uppercase tracking-widest underline self-start"
               >
                 See full diagram on the Visual Guide →
-              </a>
+              </Link>
             )}
             {chapter && (
               <div className="border-t border-[var(--color-border)] pt-4 font-mono text-[10px] uppercase tracking-widest">
                 <p className="opacity-50 mb-2">Appears in</p>
-                <a
-                  href={`/read#book-chapter-${chapter.number}`}
+                <Link
+                  to={chapterPath(chapter)}
                   onClick={onClose}
                   className="font-serif normal-case text-base tracking-normal underline"
                 >
                   Chapter {chapter.number} — {chapter.title}
-                </a>
+                </Link>
               </div>
             )}
           </div>
