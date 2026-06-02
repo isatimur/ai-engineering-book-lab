@@ -5,11 +5,11 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — the north star has shifted "from helpfulness to productive"; systems are now expected to produce output and make judgments.
-    - **Anchor:** `kDEvo2__Ijg` 00:00:52.960 → 00:00:57.280 · confidence: medium
-    - **Quote:** "like that northstar has shifted from helpfulness to productive"
+    - **Anchor:** `kDEvo2__Ijg` 00:00:54.800 → 00:00:57.280 · confidence: high
+    - **Quote:** "from helpfulness to productive"
   - [[003-XNtkiQJ49Ps-agents-need-more-than-a-chat-jacob-lauritzen-cto-legora|#3 — Jacob Lauritzen, Legora]] — complex agents in real work "need more than just the chat."
-    - **Anchor:** `XNtkiQJ49Ps` 00:00:34.360 → 00:00:36.440 · confidence: medium
-    - **Quote:** "they need more than just the If"
+    - **Anchor:** `XNtkiQJ49Ps` 00:00:34.080 → 00:00:34.640 · confidence: high
+    - **Quote:** "I think they need more"
   - [[138-8SUJEqQNClw-agents-vs-workflows-why-not-both-sam-bhagwat-mastra-ai|#138 — Sam Bhagwat, Mastra.ai]] — argues against a false agents-vs-workflows dichotomy once tasks become operational.
     - **Anchor:** `8SUJEqQNClw` 00:12:04.240 → 00:12:07.600 · confidence: high
     - **Quote:** "most primitives the magic happens when you combine these things together"
@@ -62,8 +62,8 @@
     - **Anchor:** `ShuJ_CN6zr4` 00:03:30.720 → 00:03:36.480 · confidence: medium
     - **Quote:** "automated validation and verification of software that you build um testing right unit tests end"
   - [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Eric Hou, Augment Code]]
-    - **Anchor:** `Zniw5c9_jx8` 00:18:41.520 → 00:18:46.559 · confidence: medium
-    - **Quote:** "effectively allow us to mentor our Thank"
+    - **Anchor:** `Zniw5c9_jx8` 00:00:18.800 → 00:00:19.520 · confidence: high
+    - **Quote:** "mentoring the machine."
   - [[179-x_1EumTaXeE-beyond-the-prototype-using-ai-to-write-high-quality-code-josh-albrecht-imbue|#179 — Josh Albrecht, Imbue]]
     - **Anchor:** `x_1EumTaXeE` 00:03:28.239 → 00:03:33.920 · confidence: high
     - **Quote:** "identifying problems with the code because if there's no problems then it's probably high quality code"
@@ -149,8 +149,8 @@
     - **Anchor:** `tHN44yJoeS8` 00:08:11.039 → 00:08:15.520 · confidence: high
     - **Quote:** "task should be natural and sourced from the real world and then you should be able to reliably grade them."
   - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `o_LRtAomJCs` 00:01:28.400 → 00:01:28.720 · confidence: medium
-    - **Quote:** "it with confidence"
+    - **Anchor:** `o_LRtAomJCs` 00:01:28.720 → 00:01:29.600 · confidence: high
+    - **Quote:** "confidence much more quickly."
   - [[153-wRJD0inpmjU-evaluating-ai-search-a-practical-framework-for-augmented-ai-systems-quotient-ai-tavily|#153 — Quotient AI + Tavily]]
     - **Anchor:** `wRJD0inpmjU` 00:06:09.600 → 00:06:11.600 · confidence: high
     - **Quote:** "Dynamic data sets have real world alignment."
@@ -163,8 +163,8 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]]
-    - **Anchor:** `NTBX-wxUhHs` 00:01:58.880 → 00:02:00.320 · confidence: medium
-    - **Quote:** "each and every one of us, you know, feel"
+    - **Anchor:** `NTBX-wxUhHs` 00:01:56.479 → 00:01:57.119 · confidence: high
+    - **Quote:** "about token anxiety,"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]]
     - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
     - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
@@ -319,8 +319,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Pedro Rodrigues, Supabase]] — MCP plus skills outperformed MCP alone in their tests.
-    - **Anchor:** `JT3OzDKrucU` 00:04:10.800 → 00:04:12.120 · confidence: medium
-    - **Quote:** "MCP plus the"
+    - **Anchor:** `JT3OzDKrucU` 00:00:29.200 → 00:00:30.240 · confidence: high
+    - **Quote:** "MCP versus skill debate"
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]] — progressive disclosure keeps context useful without bloating the window.
     - **Anchor:** `pFsfax19yOM` 00:44:25.040 → 00:44:25.520 · confidence: high
     - **Quote:** "progressive disclosure."
@@ -469,8 +469,8 @@
     - **Anchor:** `XNneh6-eyPg` 00:00:25.840 → 00:00:25.840 · confidence: high
     - **Quote:** "smarter"
   - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — Mitesh Patel, NVIDIA]] — hybrid RAG as the expected outcome once you accept graph and vector are different jobs.
-    - **Anchor:** `-tgQa8Fzf80` 00:08:40.320 → 00:08:40.880 · confidence: medium
-    - **Quote:** "advantage of graph"
+    - **Anchor:** `-tgQa8Fzf80` 00:00:55.600 → 00:00:56.559 · confidence: high
+    - **Quote:** "add the hybrid nature"
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
     - **Anchor:** `w9u11ioHGA0` 00:06:00.320 → 00:06:00.560 · confidence: high
     - **Quote:** "every technique"

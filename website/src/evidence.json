@@ -7,21 +7,21 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:00:52.960",
+          "start": "00:00:54.800",
           "end": "00:00:57.280",
-          "start_seconds": 52,
-          "confidence": "medium",
+          "start_seconds": 54,
+          "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "like that northstar has shifted from helpfulness to productive"
+          "quote": "from helpfulness to productive"
         },
         {
           "video_id": "XNtkiQJ49Ps",
-          "start": "00:00:34.360",
-          "end": "00:00:36.440",
+          "start": "00:00:34.080",
+          "end": "00:00:34.640",
           "start_seconds": 34,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#3 — Jacob Lauritzen, Legora",
-          "quote": "they need more than just the If"
+          "quote": "I think they need more"
         },
         {
           "video_id": "8SUJEqQNClw",
@@ -145,21 +145,21 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:00:52.960",
+          "start": "00:00:54.800",
           "end": "00:00:57.280",
-          "start_seconds": 52,
-          "confidence": "medium",
+          "start_seconds": 54,
+          "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "like that northstar has shifted from helpfulness to productive"
+          "quote": "from helpfulness to productive"
         },
         {
           "video_id": "XNtkiQJ49Ps",
-          "start": "00:00:34.360",
-          "end": "00:00:36.440",
+          "start": "00:00:34.080",
+          "end": "00:00:34.640",
           "start_seconds": 34,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#3 — Jacob Lauritzen, Legora",
-          "quote": "they need more than just the If"
+          "quote": "I think they need more"
         },
         {
           "video_id": "8SUJEqQNClw",
@@ -265,12 +265,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:18:41.520",
-          "end": "00:18:46.559",
-          "start_seconds": 1121,
-          "confidence": "medium",
+          "start": "00:00:18.800",
+          "end": "00:00:19.520",
+          "start_seconds": 18,
+          "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "effectively allow us to mentor our Thank"
+          "quote": "mentoring the machine."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -376,12 +376,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:01:28.400",
-          "end": "00:01:28.720",
+          "start": "00:01:28.720",
+          "end": "00:01:29.600",
           "start_seconds": 88,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "it with confidence"
+          "quote": "confidence much more quickly."
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -401,12 +401,12 @@
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:01:58.880",
-          "end": "00:02:00.320",
-          "start_seconds": 118,
-          "confidence": "medium",
+          "start": "00:01:56.479",
+          "end": "00:01:57.119",
+          "start_seconds": 116,
+          "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "each and every one of us, you know, feel"
+          "quote": "about token anxiety,"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -736,12 +736,12 @@
       "anchors": [
         {
           "video_id": "JT3OzDKrucU",
-          "start": "00:04:10.800",
-          "end": "00:04:12.120",
-          "start_seconds": 250,
-          "confidence": "medium",
+          "start": "00:00:29.200",
+          "end": "00:00:30.240",
+          "start_seconds": 29,
+          "confidence": "high",
           "label": "#683 — Pedro Rodrigues, Supabase",
-          "quote": "MCP plus the"
+          "quote": "MCP versus skill debate"
         },
         {
           "video_id": "pFsfax19yOM",
@@ -944,12 +944,12 @@
         },
         {
           "video_id": "-tgQa8Fzf80",
-          "start": "00:08:40.320",
-          "end": "00:08:40.880",
-          "start_seconds": 520,
-          "confidence": "medium",
+          "start": "00:00:55.600",
+          "end": "00:00:56.559",
+          "start_seconds": 55,
+          "confidence": "high",
           "label": "#219 — Mitesh Patel, NVIDIA",
-          "quote": "advantage of graph"
+          "quote": "add the hybrid nature"
         },
         {
           "video_id": "w9u11ioHGA0",
@@ -971,21 +971,21 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:00:52.960",
+          "start": "00:00:54.800",
           "end": "00:00:57.280",
-          "start_seconds": 52,
-          "confidence": "medium",
+          "start_seconds": 54,
+          "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "like that northstar has shifted from helpfulness to productive"
+          "quote": "from helpfulness to productive"
         },
         {
           "video_id": "XNtkiQJ49Ps",
-          "start": "00:00:34.360",
-          "end": "00:00:36.440",
+          "start": "00:00:34.080",
+          "end": "00:00:34.640",
           "start_seconds": 34,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#3 — Jacob Lauritzen, Legora",
-          "quote": "they need more than just the If"
+          "quote": "I think they need more"
         },
         {
           "video_id": "8SUJEqQNClw",
@@ -1023,12 +1023,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:18:41.520",
-          "end": "00:18:46.559",
-          "start_seconds": 1121,
-          "confidence": "medium",
+          "start": "00:00:18.800",
+          "end": "00:00:19.520",
+          "start_seconds": 18,
+          "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "effectively allow us to mentor our Thank"
+          "quote": "mentoring the machine."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -1684,21 +1684,21 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:00:52.960",
+          "start": "00:00:54.800",
           "end": "00:00:57.280",
-          "start_seconds": 52,
-          "confidence": "medium",
+          "start_seconds": 54,
+          "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "like that northstar has shifted from helpfulness to productive"
+          "quote": "from helpfulness to productive"
         },
         {
           "video_id": "XNtkiQJ49Ps",
-          "start": "00:00:34.360",
-          "end": "00:00:36.440",
+          "start": "00:00:34.080",
+          "end": "00:00:34.640",
           "start_seconds": 34,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#3 — Jacob Lauritzen, Legora",
-          "quote": "they need more than just the If"
+          "quote": "I think they need more"
         },
         {
           "video_id": "8SUJEqQNClw",
@@ -1777,12 +1777,12 @@
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:01:58.880",
-          "end": "00:02:00.320",
-          "start_seconds": 118,
-          "confidence": "medium",
+          "start": "00:01:56.479",
+          "end": "00:01:57.119",
+          "start_seconds": 116,
+          "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "each and every one of us, you know, feel"
+          "quote": "about token anxiety,"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -2526,12 +2526,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:18:41.520",
-          "end": "00:18:46.559",
-          "start_seconds": 1121,
-          "confidence": "medium",
+          "start": "00:00:18.800",
+          "end": "00:00:19.520",
+          "start_seconds": 18,
+          "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "effectively allow us to mentor our Thank"
+          "quote": "mentoring the machine."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -2836,12 +2836,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:18:41.520",
-          "end": "00:18:46.559",
-          "start_seconds": 1121,
-          "confidence": "medium",
+          "start": "00:00:18.800",
+          "end": "00:00:19.520",
+          "start_seconds": 18,
+          "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "effectively allow us to mentor our Thank"
+          "quote": "mentoring the machine."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -2981,12 +2981,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:01:28.400",
-          "end": "00:01:28.720",
+          "start": "00:01:28.720",
+          "end": "00:01:29.600",
           "start_seconds": 88,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "it with confidence"
+          "quote": "confidence much more quickly."
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -3146,12 +3146,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:01:28.400",
-          "end": "00:01:28.720",
+          "start": "00:01:28.720",
+          "end": "00:01:29.600",
           "start_seconds": 88,
-          "confidence": "medium",
+          "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "it with confidence"
+          "quote": "confidence much more quickly."
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -3171,12 +3171,12 @@
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:01:58.880",
-          "end": "00:02:00.320",
-          "start_seconds": 118,
-          "confidence": "medium",
+          "start": "00:01:56.479",
+          "end": "00:01:57.119",
+          "start_seconds": 116,
+          "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "each and every one of us, you know, feel"
+          "quote": "about token anxiety,"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -3282,12 +3282,12 @@
       "anchors": [
         {
           "video_id": "JT3OzDKrucU",
-          "start": "00:04:10.800",
-          "end": "00:04:12.120",
-          "start_seconds": 250,
-          "confidence": "medium",
+          "start": "00:00:29.200",
+          "end": "00:00:30.240",
+          "start_seconds": 29,
+          "confidence": "high",
           "label": "#683 — Pedro Rodrigues, Supabase",
-          "quote": "MCP plus the"
+          "quote": "MCP versus skill debate"
         },
         {
           "video_id": "pFsfax19yOM",
@@ -3395,12 +3395,12 @@
         },
         {
           "video_id": "-tgQa8Fzf80",
-          "start": "00:08:40.320",
-          "end": "00:08:40.880",
-          "start_seconds": 520,
-          "confidence": "medium",
+          "start": "00:00:55.600",
+          "end": "00:00:56.559",
+          "start_seconds": 55,
+          "confidence": "high",
           "label": "#219 — Mitesh Patel, NVIDIA",
-          "quote": "advantage of graph"
+          "quote": "add the hybrid nature"
         },
         {
           "video_id": "w9u11ioHGA0",
