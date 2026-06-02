@@ -3,18 +3,18 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:3b372b2",
+      "current_version_id": "git:bb83c6e",
       "versions": [
         {
-          "version_id": "git:3b372b2",
+          "version_id": "git:bb83c6e",
           "source": "git",
-          "ref": "3b372b283ddf989af1947adb17563c878b54a587",
+          "ref": "bb83c6ee28f46ad85934b84d6c39f88ecbfa2960",
           "date": "2026-05-31",
           "status": "Drafting",
           "wordCount": 1536,
           "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
           "corpus_snapshot_hash": null,
-          "content_ref": "01/git-3b372b2.md"
+          "content_ref": "01/git-bb83c6e.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -30,18 +30,29 @@
       ]
     },
     "02": {
-      "current_version_id": "git:3b372b2",
+      "current_version_id": "git:68ad925",
       "versions": [
         {
-          "version_id": "git:3b372b2",
+          "version_id": "git:68ad925",
           "source": "git",
-          "ref": "3b372b283ddf989af1947adb17563c878b54a587",
+          "ref": "68ad925977ecae5c92dc8908a1276d6bb907a81f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 1594,
+          "message": "edit(ch2): credit Ronacher for the friction-is-judgment thesis",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-68ad925.md"
+        },
+        {
+          "version_id": "git:bb83c6e",
+          "source": "git",
+          "ref": "bb83c6ee28f46ad85934b84d6c39f88ecbfa2960",
           "date": "2026-05-31",
           "status": "Drafting",
           "wordCount": 1549,
           "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
           "corpus_snapshot_hash": null,
-          "content_ref": "02/git-3b372b2.md"
+          "content_ref": "02/git-bb83c6e.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -57,18 +68,18 @@
       ]
     },
     "03": {
-      "current_version_id": "git:0a39ea6",
+      "current_version_id": "git:9754359",
       "versions": [
         {
-          "version_id": "git:0a39ea6",
+          "version_id": "git:9754359",
           "source": "git",
-          "ref": "0a39ea6385ea0fa935b5f23162b10d992c6b4322",
+          "ref": "97543593fc3d14a7c4e068d9958fd3a35891e3ee",
           "date": "2026-06-01",
           "status": "Drafting",
           "wordCount": 2776,
           "message": "fix(ch3): strip editorial scaffold leaking into the public reader",
           "corpus_snapshot_hash": null,
-          "content_ref": "03/git-0a39ea6.md"
+          "content_ref": "03/git-9754359.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -84,18 +95,18 @@
       ]
     },
     "04": {
-      "current_version_id": "git:0ab273e",
+      "current_version_id": "git:f4fb29f",
       "versions": [
         {
-          "version_id": "git:0ab273e",
+          "version_id": "git:f4fb29f",
           "source": "git",
-          "ref": "0ab273efeffc9893eaaa58784d0abe3a21f02d13",
+          "ref": "f4fb29fa7f892cfb74edd0f455ae6dfa14bacd0b",
           "date": "2026-06-01",
           "status": "Drafting",
           "wordCount": 1931,
           "message": "draft(ch4,6): expand the two thin chapters to full Drafting depth",
           "corpus_snapshot_hash": null,
-          "content_ref": "04/git-0ab273e.md"
+          "content_ref": "04/git-f4fb29f.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -138,18 +149,18 @@
       ]
     },
     "06": {
-      "current_version_id": "git:0ab273e",
+      "current_version_id": "git:f4fb29f",
       "versions": [
         {
-          "version_id": "git:0ab273e",
+          "version_id": "git:f4fb29f",
           "source": "git",
-          "ref": "0ab273efeffc9893eaaa58784d0abe3a21f02d13",
+          "ref": "f4fb29fa7f892cfb74edd0f455ae6dfa14bacd0b",
           "date": "2026-06-01",
           "status": "Drafting",
           "wordCount": 1790,
           "message": "draft(ch4,6): expand the two thin chapters to full Drafting depth",
           "corpus_snapshot_hash": null,
-          "content_ref": "06/git-0ab273e.md"
+          "content_ref": "06/git-f4fb29f.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -246,18 +257,18 @@
       ]
     },
     "10": {
-      "current_version_id": "git:3b372b2",
+      "current_version_id": "git:bb83c6e",
       "versions": [
         {
-          "version_id": "git:3b372b2",
+          "version_id": "git:bb83c6e",
           "source": "git",
-          "ref": "3b372b283ddf989af1947adb17563c878b54a587",
+          "ref": "bb83c6ee28f46ad85934b84d6c39f88ecbfa2960",
           "date": "2026-05-31",
           "status": "Drafting",
           "wordCount": 1162,
           "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
           "corpus_snapshot_hash": null,
-          "content_ref": "10/git-3b372b2.md"
+          "content_ref": "10/git-bb83c6e.md"
         },
         {
           "version_id": "git:7f5a2c6",
