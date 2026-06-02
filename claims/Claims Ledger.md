@@ -59,8 +59,8 @@
     - **Anchor:** `am_oeAoUhew` 00:24:40.799 → 00:24:45.840 · confidence: high
     - **Quote:** "a good harness is really operationalized around giving the model text at the right time"
   - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]]
-    - **Anchor:** `ShuJ_CN6zr4` 00:03:30.720 → 00:03:36.480 · confidence: medium
-    - **Quote:** "automated validation and verification of software that you build um testing right unit tests end"
+    - **Anchor:** `ShuJ_CN6zr4` 00:03:25.440 → 00:03:33.440 · confidence: high
+    - **Quote:** "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
   - [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Eric Hou, Augment Code]]
     - **Anchor:** `Zniw5c9_jx8` 00:05:27.840 → 00:05:31.840 · confidence: high
     - **Quote:** "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
@@ -336,8 +336,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[680-iOXM3zE-2dk-mind-the-gap-in-your-agent-observability-amy-boyd-nitya-narasimhan-microsoft|#680 — Amy Boyd & Nitya Narasimhan, Microsoft]]
-    - **Anchor:** `iOXM3zE-2dk` 00:03:38.400 → 00:03:39.760 · confidence: medium
-    - **Quote:** "minding the gap around observability."
+    - **Anchor:** `iOXM3zE-2dk` 00:03:24.319 → 00:03:31.760 · confidence: high
+    - **Quote:** "what is the gap between agent observability and what you're actually building. How do we mind that gap?"
   - [[655--aM2EDTiaMs-everything-you-need-to-know-about-agent-observability-danny-gollapalli-and-ben-hylak-raind|#655 — Danny Gollapalli & Ben Hylak, Raindrop]]
     - **Anchor:** `-aM2EDTiaMs` 00:02:52.160 → 00:02:53.519 · confidence: high
     - **Quote:** "eval paradigm to a monitoring"

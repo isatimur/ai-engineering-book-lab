@@ -256,12 +256,12 @@
         },
         {
           "video_id": "ShuJ_CN6zr4",
-          "start": "00:03:30.720",
-          "end": "00:03:36.480",
-          "start_seconds": 210,
-          "confidence": "medium",
+          "start": "00:03:25.440",
+          "end": "00:03:33.440",
+          "start_seconds": 205,
+          "confidence": "high",
           "label": "#57 — Eno Reyes, Factory AI",
-          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+          "quote": "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
         },
         {
           "video_id": "Zniw5c9_jx8",
@@ -770,12 +770,12 @@
       "anchors": [
         {
           "video_id": "iOXM3zE-2dk",
-          "start": "00:03:38.400",
-          "end": "00:03:39.760",
-          "start_seconds": 218,
-          "confidence": "medium",
+          "start": "00:03:24.319",
+          "end": "00:03:31.760",
+          "start_seconds": 204,
+          "confidence": "high",
           "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
-          "quote": "minding the gap around observability."
+          "quote": "what is the gap between agent observability and what you're actually building. How do we mind that gap?"
         },
         {
           "video_id": "-aM2EDTiaMs",
@@ -1014,12 +1014,12 @@
         },
         {
           "video_id": "ShuJ_CN6zr4",
-          "start": "00:03:30.720",
-          "end": "00:03:36.480",
-          "start_seconds": 210,
-          "confidence": "medium",
+          "start": "00:03:25.440",
+          "end": "00:03:33.440",
+          "start_seconds": 205,
+          "confidence": "high",
           "label": "#57 — Eno Reyes, Factory AI",
-          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+          "quote": "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
         },
         {
           "video_id": "Zniw5c9_jx8",
@@ -2517,12 +2517,12 @@
         },
         {
           "video_id": "ShuJ_CN6zr4",
-          "start": "00:03:30.720",
-          "end": "00:03:36.480",
-          "start_seconds": 210,
-          "confidence": "medium",
+          "start": "00:03:25.440",
+          "end": "00:03:33.440",
+          "start_seconds": 205,
+          "confidence": "high",
           "label": "#57 — Eno Reyes, Factory AI",
-          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+          "quote": "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
         },
         {
           "video_id": "Zniw5c9_jx8",
@@ -2827,12 +2827,12 @@
         },
         {
           "video_id": "ShuJ_CN6zr4",
-          "start": "00:03:30.720",
-          "end": "00:03:36.480",
-          "start_seconds": 210,
-          "confidence": "medium",
+          "start": "00:03:25.440",
+          "end": "00:03:33.440",
+          "start_seconds": 205,
+          "confidence": "high",
           "label": "#57 — Eno Reyes, Factory AI",
-          "quote": "automated validation and verification of software that you build um testing right unit tests end"
+          "quote": "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
         },
         {
           "video_id": "Zniw5c9_jx8",
@@ -3006,12 +3006,12 @@
       "anchors": [
         {
           "video_id": "iOXM3zE-2dk",
-          "start": "00:03:38.400",
-          "end": "00:03:39.760",
-          "start_seconds": 218,
-          "confidence": "medium",
+          "start": "00:03:24.319",
+          "end": "00:03:31.760",
+          "start_seconds": 204,
+          "confidence": "high",
           "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
-          "quote": "minding the gap around observability."
+          "quote": "what is the gap between agent observability and what you're actually building. How do we mind that gap?"
         },
         {
           "video_id": "-aM2EDTiaMs",
