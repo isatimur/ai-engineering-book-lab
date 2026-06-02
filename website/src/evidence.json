@@ -1666,12 +1666,12 @@
         },
         {
           "video_id": "_Zcw_sVF6hU",
-          "start": "00:00:53.039",
-          "end": "00:00:54.000",
-          "start_seconds": 53,
+          "start": "00:17:40.240",
+          "end": "00:17:41.600",
+          "start_seconds": 1060,
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
-          "quote": "a little bit of friction to it."
+          "quote": "intentionally designed to put friction"
         }
       ]
     }
@@ -2017,12 +2017,12 @@
         },
         {
           "video_id": "_Zcw_sVF6hU",
-          "start": "00:00:53.039",
-          "end": "00:00:54.000",
-          "start_seconds": 53,
+          "start": "00:17:40.240",
+          "end": "00:17:41.600",
+          "start_seconds": 1060,
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
-          "quote": "a little bit of friction to it."
+          "quote": "intentionally designed to put friction"
         }
       ]
     }
@@ -3101,21 +3101,21 @@
       "anchors": [
         {
           "video_id": "_Zcw_sVF6hU",
-          "start": "00:00:53.039",
-          "end": "00:00:54.000",
-          "start_seconds": 53,
+          "start": "00:17:40.240",
+          "end": "00:17:41.600",
+          "start_seconds": 1060,
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
-          "quote": "a little bit of friction to it."
+          "quote": "intentionally designed to put friction"
         },
         {
           "video_id": "Dc3qOA9WOnE",
-          "start": "00:04:04.000",
-          "end": "00:04:06.239",
-          "start_seconds": 244,
+          "start": "00:06:32.000",
+          "end": "00:06:33.039",
+          "start_seconds": 392,
           "confidence": "high",
           "label": "#132 — Chris Kelly, Augment Code",
-          "quote": "Vibes don't cut that because there's a"
+          "quote": "vibes aren't going to fix"
         },
         {
           "video_id": "IoiHI7p12Ao",
@@ -3793,12 +3793,12 @@
         },
         {
           "video_id": "_Zcw_sVF6hU",
-          "start": "00:00:53.039",
-          "end": "00:00:54.000",
-          "start_seconds": 53,
+          "start": "00:17:40.240",
+          "end": "00:17:41.600",
+          "start_seconds": 1060,
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
-          "quote": "a little bit of friction to it."
+          "quote": "intentionally designed to put friction"
         }
       ]
     },
@@ -3827,21 +3827,21 @@
         },
         {
           "video_id": "Dc3qOA9WOnE",
-          "start": "00:04:04.000",
-          "end": "00:04:06.239",
-          "start_seconds": 244,
+          "start": "00:06:32.000",
+          "end": "00:06:33.039",
+          "start_seconds": 392,
           "confidence": "high",
           "label": "#132 — Chris Kelly, Augment Code",
-          "quote": "Vibes don't cut that because there's a"
+          "quote": "vibes aren't going to fix"
         },
         {
           "video_id": "JsKTQbT58BY",
           "start": "00:01:15.119",
-          "end": "00:01:16.560",
+          "end": "00:01:17.040",
           "start_seconds": 75,
           "confidence": "high",
           "label": "#106 — Corey J. Gallon, Rexmore",
-          "quote": "The hangover is the resulting"
+          "quote": "The hangover is the resulting despair"
         },
         {
           "video_id": "n991Yxo1aOI",
@@ -3861,21 +3861,21 @@
       "anchors": [
         {
           "video_id": "_Zcw_sVF6hU",
-          "start": "00:00:53.039",
-          "end": "00:00:54.000",
-          "start_seconds": 53,
+          "start": "00:17:40.240",
+          "end": "00:17:41.600",
+          "start_seconds": 1060,
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
-          "quote": "a little bit of friction to it."
+          "quote": "intentionally designed to put friction"
         },
         {
           "video_id": "Dc3qOA9WOnE",
-          "start": "00:04:04.000",
-          "end": "00:04:06.239",
-          "start_seconds": 244,
+          "start": "00:06:32.000",
+          "end": "00:06:33.039",
+          "start_seconds": 392,
           "confidence": "high",
           "label": "#132 — Chris Kelly, Augment Code",
-          "quote": "Vibes don't cut that because there's a"
+          "quote": "vibes aren't going to fix"
         },
         {
           "video_id": "IoiHI7p12Ao",

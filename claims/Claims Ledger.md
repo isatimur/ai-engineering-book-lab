@@ -728,8 +728,8 @@
     - **Anchor:** `wjk0ulMAkbc` 00:00:49.120 → 00:00:50.640 · confidence: high
     - **Quote:** "capable of doing everything um immediately"
   - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — "the friction is your judgment" — the pauses AI removes are often where quality was being created.
-    - **Anchor:** `_Zcw_sVF6hU` 00:00:53.039 → 00:00:54.000 · confidence: high
-    - **Quote:** "a little bit of friction to it."
+    - **Anchor:** `_Zcw_sVF6hU` 00:17:40.240 → 00:17:41.600 · confidence: high
+    - **Quote:** "intentionally designed to put friction"
 - **Caveats / counterpoints:** For genuinely throwaway work (one-off scripts, disposable prototypes) the judgment overhead is not worth paying, and cheap generation is an unalloyed win. The claim is about output that has to endure or be relied on, where the production filter mattered.
 - **Candidate chapters:** 2, 9, 10
 - **Reusable phrasing:** Cheap output is not cheap judgment; abundance promotes taste rather than retiring it.
@@ -745,11 +745,11 @@
     - **Anchor:** `IoiHI7p12Ao` 00:00:31.279 → 00:00:32.480 · confidence: high
     - **Quote:** "I'm declaring war on slop today."
   - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — "vibes won't cut it" — feel-based steering is insufficient once the work has to be trusted.
-    - **Anchor:** `Dc3qOA9WOnE` 00:04:04.000 → 00:04:06.239 · confidence: high
-    - **Quote:** "Vibes don't cut that because there's a"
+    - **Anchor:** `Dc3qOA9WOnE` 00:06:32.000 → 00:06:33.039 · confidence: high
+    - **Quote:** "vibes aren't going to fix"
   - [[106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore|#106 — Corey J. Gallon, Rexmore]] — the "hangover": exploratory speed creates downstream cost when it becomes the default.
-    - **Anchor:** `JsKTQbT58BY` 00:01:15.119 → 00:01:16.560 · confidence: high
-    - **Quote:** "The hangover is the resulting"
+    - **Anchor:** `JsKTQbT58BY` 00:01:15.119 → 00:01:17.040 · confidence: high
+    - **Quote:** "The hangover is the resulting despair"
   - [[127-n991Yxo1aOI-vibe-coding-with-confidence-itamar-friedman-qodo|#127 — Itamar Friedman, Qodo]] — the corrective: confidence in fast generation comes from the verification wrapped around it, not the vibes.
     - **Anchor:** `n991Yxo1aOI` 00:01:26.880 → 00:01:27.759 · confidence: high
     - **Quote:** "vibe coding with confidence"
@@ -762,11 +762,11 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — the friction worth keeping (the review, the architecture question, the refusal of a generic draft) is where judgment lives.
-    - **Anchor:** `_Zcw_sVF6hU` 00:00:53.039 → 00:00:54.000 · confidence: high
-    - **Quote:** "a little bit of friction to it."
+    - **Anchor:** `_Zcw_sVF6hU` 00:17:40.240 → 00:17:41.600 · confidence: high
+    - **Quote:** "intentionally designed to put friction"
   - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — review as the discipline that separates trustworthy output from plausible output.
-    - **Anchor:** `Dc3qOA9WOnE` 00:04:04.000 → 00:04:06.239 · confidence: high
-    - **Quote:** "Vibes don't cut that because there's a"
+    - **Anchor:** `Dc3qOA9WOnE` 00:06:32.000 → 00:06:33.039 · confidence: high
+    - **Quote:** "vibes aren't going to fix"
   - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — slop as work that looks done and transfers its cost downstream; review is where that cost is refused.
     - **Anchor:** `IoiHI7p12Ao` 00:00:31.279 → 00:00:32.480 · confidence: high
     - **Quote:** "I'm declaring war on slop today."
