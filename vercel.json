@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo \"install handled in buildCommand\"",
+  "buildCommand": "cd website && npm install && npm run build",
+  "outputDirectory": "website/dist",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
