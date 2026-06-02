@@ -8,4 +8,4 @@ voice_baseline_chapters = ["Chapter 1 - The Shift From Assistant to Delegate.md"
 runs_dir = ".book-mash-runs/"
 
 [budget]
-max_cost_usd = 10.0
+max_cost_usd = 15.0

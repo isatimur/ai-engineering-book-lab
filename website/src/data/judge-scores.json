@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "2026-06-01-155947-4924",
+    "run_id": "2026-06-02-093847-4924",
     "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
-    "finished_at": "2026-06-01T16:19:11.116994+00:00",
-    "total_cost_usd": 5.1699,
+    "finished_at": "2026-06-02T09:44:33.568641+00:00",
+    "total_cost_usd": 3.6998,
     "status": "completed",
     "dims": [
       "humanness",
@@ -30,7 +30,7 @@
         "total": 335
       },
       "evidence_density": {
-        "scored": 50,
+        "scored": 87,
         "total": 87
       },
       "claim_defensibility": {
@@ -38,7 +38,7 @@
         "total": 335
       },
       "redundancy": {
-        "scored": 246,
+        "scored": 335,
         "total": 335
       }
     },
@@ -47,20 +47,20 @@
   "book": {
     "humanness": 76.9,
     "voice": 83.7,
-    "usefulness": 44.3,
-    "evidence_density": 90.0,
+    "usefulness": 34.1,
+    "evidence_density": 89.9,
     "claim_defensibility": 71.1,
-    "redundancy": 76.8
+    "redundancy": 76.0
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.1,
         "voice": 91.0,
-        "usefulness": 39.1,
+        "usefulness": 25.2,
         "evidence_density": 90.0,
         "claim_defensibility": 73.2,
         "redundancy": 100.0,
@@ -183,29 +183,29 @@
         {
           "dim_name": "usefulness",
           "paragraph_index": 15,
-          "score": 8.0,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is pure meta-commentary about the book's structure. It announces that examples will be used repeatedly and that they illustrate a contrasting idea—but contains no actual decision, threshold, principle, or example. It's transitional prose setting up future content without any operational lift. A working engineer cannot act on the claim that examples \"recur\" and \"stress the same idea from opposite directions\" without seeing the examples themselves.",
+          "reasoning": "This paragraph is pure meta-commentary and transitional prose. It announces that two examples will recur throughout the book and that they \"stress the same idea from opposite directions,\" but it provides no actual content, no examples, no decisions, no thresholds, no tools, and no principles. It exists solely to signal what is coming next, offering zero operational or conceptual lift to a working engineer.",
           "evidence_refs": [],
           "para_excerpt": "Two recurring examples make the shift concrete, and they recur throughout the chapters that follow because they stress the same idea from opposite directions."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 3,
-          "score": 18.0,
+          "paragraph_index": 20,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This paragraph announces intent (\"we will distinguish three relationships\") without delivering the distinction. It's meta-commentary about the chapter structure—it tells the reader that precision is coming, but doesn't provide the decision point, threshold, or concrete example that an engineer could act on Monday. The phrase \"words get used loosely\" identifies a problem but offers no solution. A working engineer cannot change their approach based on a promise that distinctions exist; they need the distinctions themselves.",
+          "reasoning": "This is pure structural meta-commentary — a table of contents restated in prose form. It names upcoming chapters but provides no decisions, thresholds, principles, tools, or techniques an engineer could act on. It exists solely to orient the reader to the book's organization.",
           "evidence_refs": [],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are really three relationships a person can have with an AI system, and…"
+          "para_excerpt": "From there the book asks its real question: what has to surround model intelligence before a team can trust it with delegated work? The answer is a stack of ena…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 0,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This paragraph articulates a conceptual shift in AI usage patterns (\"from assistant to delegate\"), but it's entirely observational and lacks operational content. It names a trend without providing a decision point, threshold, principle, or example that an engineer could apply on Monday. An engineer reading this cannot determine: when to design for delegation vs. assistance, what architectural changes this implies, what metrics to optimize for, or what specific traps to avoid. It's framing prose—setting up a chapter theme rather than delivering actionable guidance. The distinction between \"wanting an answer\" and \"wanting work done\" is evocative but not testable or implementable without further context.",
+          "paragraph_index": 1,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This paragraph is purely scene-setting and historical framing. It characterizes the \"old\" era of AI as answer production (\"a smarter text box,\" \"the verb was always tell me\") with no decision, threshold, technique, tool, or principle that an engineer could act on. It exists solely to contrast with what the chapter will argue next — classic transition/setup prose with zero operational content.",
           "evidence_refs": [],
-          "para_excerpt": "The most important change in applied AI is not that chat got better. It is that people stopped wanting an answer and started wanting the work done."
+          "para_excerpt": "For a few years the dominant experience of AI was answer production. You asked, and the system summarized, explained, drafted, brainstormed — with a fluency tha…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -273,12 +273,12 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
         "voice": 82.0,
-        "usefulness": 40.3,
+        "usefulness": 33.3,
         "evidence_density": 90.0,
         "claim_defensibility": 66.6,
         "redundancy": 72.0,
@@ -403,27 +403,27 @@
           "paragraph_index": 2,
           "score": 5.0,
           "label": "fail",
-          "reasoning": "The provided text is an incomplete fragment that introduces a chapter's claim but does not state it. The phrase \"The chapter's claim is almost arithmetic:\" is transition prose—meta-commentary about what's to come—with no operative content. It neither presents the claim itself nor provides any principle, decision threshold, concrete example, or tool a working engineer could act on. This is classic opening framing without substantive guidance.",
+          "reasoning": "This paragraph is pure meta-commentary — it is a transition sentence that introduces a claim about to be made in the chapter. It contains no decision, principle, threshold, tool, technique, or example. The phrase \"almost arithmetic\" is decorative framing with zero operational content. Nothing here could change an engineer's behavior on Monday.",
           "evidence_refs": [],
           "para_excerpt": "The chapter's claim is almost arithmetic:"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 16,
-          "score": 15.0,
+          "paragraph_index": 19,
+          "score": 8.0,
           "label": "fail",
-          "reasoning": "This paragraph is meta-commentary and a transition device (\"both are worth naming...later in the book\"). It announces what will come without providing any decision, threshold, principle, concrete example, or test that an engineer could act on. It's scaffolding for the chapter, not actionable content. A reader cannot change anything on Monday based on this sentence alone—they must wait for the chapter to actually name and explain those capacities.",
+          "reasoning": "This paragraph is pure transitional/meta-commentary prose. It poses a rhetorical question to set up the next section of the book, making no commitments, offering no decisions, thresholds, tools, or concrete examples. It explicitly announces itself as a bridge to \"the technical core of the book,\" which is the definition of filler transition text. No engineer could change anything on Monday based on this sentence.",
           "evidence_refs": [],
-          "para_excerpt": "Two specific capacities become the bottleneck once execution is cheap, and both are worth naming as deliberately as the technical disciplines later in the book."
+          "para_excerpt": "Once judgment becomes the scarce input, an obvious question follows, and it is the question that opens the technical core of the book: how do you encode that ju…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 0,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This paragraph is primarily descriptive and observational. It acknowledges that AI models generate code quickly and that \"routine production\" is easier, but it makes no commitments about what an engineer should do differently. The title promises something about taste mattering, but the paragraph stops at restating the status quo (code is cheap to generate, boilerplate is easier). There is no threshold, principle, decision point, or concrete example that would allow an engineer to change their Monday behavior. The phrase \"Part of it has\" hints at nuance but doesn't develop it into actionable guidance. This reads as landscape-setting or chapter introduction prose rather than substantive technical advice.",
+          "paragraph_index": 16,
+          "score": 10.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure transition/meta-commentary. It announces that two capacities will be named, but names neither of them. It contains no decision, principle, threshold, tool, or concrete example. It exists solely to set up what comes next — a textbook example of filler prose that provides zero operational lift on its own.",
           "evidence_refs": [],
-          "para_excerpt": "Cheap code is easy to misread. When a model can generate a feature, a test suite, and the glue between them in the time it takes to describe them, the obvious c…"
+          "para_excerpt": "Two specific capacities become the bottleneck once execution is cheap, and both are worth naming as deliberately as the technical disciplines later in the book."
         },
         {
           "dim_name": "claim_defensibility",
@@ -467,9 +467,8 @@
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-10-what-endures",
-            "argument:Judgment and standards become more valuable (not less) as execution becomes cheaper",
-            "argument:Cheap output is not the same as cheap judgment",
-            "argument:The scarce resource shifts from execution to evaluation/discrimination"
+            "argument:The claim that cheap execution/delegation does not make judgment cheap — it makes judgment scarce and more valuable — is stated as Chapter 1's concluding bridge and is then re-argued as Chapter 2's central premise without adding substantially new mechanism beyond what Chapter 1 already declared.",
+            "argument:The 'reallocation of attention' from tool-chasing toward human judgment, which Chapter 10 names explicitly as a practical consequence of the book's core idea, is restated in Chapter 2's bridge section when it concludes that 'judgment under abundance' is the scarce human contribution."
           ],
           "para_excerpt": "Cheap code is easy to misread. When a model can generate a feature, a test suite, and the glue between them in the time it takes to describe them, the obvious c…"
         },
@@ -482,9 +481,8 @@
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-10-what-endures",
-            "argument:Judgment and standards become more valuable (not less) as execution becomes cheaper",
-            "argument:Cheap output is not the same as cheap judgment",
-            "argument:The scarce resource shifts from execution to evaluation/discrimination"
+            "argument:The claim that cheap execution/delegation does not make judgment cheap — it makes judgment scarce and more valuable — is stated as Chapter 1's concluding bridge and is then re-argued as Chapter 2's central premise without adding substantially new mechanism beyond what Chapter 1 already declared.",
+            "argument:The 'reallocation of attention' from tool-chasing toward human judgment, which Chapter 10 names explicitly as a practical consequence of the book's core idea, is restated in Chapter 2's bridge section when it concludes that 'judgment under abundance' is the scarce human contribution."
           ],
           "para_excerpt": "But cheap output is not the same as cheap judgment, and the gap between those two is the subject of this chapter. If Chapter 1 argued that the real shift is fro…"
         },
@@ -497,9 +495,8 @@
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-10-what-endures",
-            "argument:Judgment and standards become more valuable (not less) as execution becomes cheaper",
-            "argument:Cheap output is not the same as cheap judgment",
-            "argument:The scarce resource shifts from execution to evaluation/discrimination"
+            "argument:The claim that cheap execution/delegation does not make judgment cheap — it makes judgment scarce and more valuable — is stated as Chapter 1's concluding bridge and is then re-argued as Chapter 2's central premise without adding substantially new mechanism beyond what Chapter 1 already declared.",
+            "argument:The 'reallocation of attention' from tool-chasing toward human judgment, which Chapter 10 names explicitly as a practical consequence of the book's core idea, is restated in Chapter 2's bridge section when it concludes that 'judgment under abundance' is the scarce human contribution."
           ],
           "para_excerpt": "The chapter's claim is almost arithmetic:"
         }
@@ -507,15 +504,15 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.3,
         "voice": 78.0,
-        "usefulness": 30.9,
+        "usefulness": 24.2,
         "evidence_density": 90.0,
         "claim_defensibility": 64.7,
-        "redundancy": null,
+        "redundancy": 72.0,
         "n_paragraphs": 62
       },
       "labels": {
@@ -524,7 +521,7 @@
         "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -548,7 +545,7 @@
           "total": 59
         },
         "redundancy": {
-          "scored": 0,
+          "scored": 59,
           "total": 59
         }
       },
@@ -662,29 +659,29 @@
         {
           "dim_name": "usefulness",
           "paragraph_index": 9,
-          "score": 5.0,
+          "score": 2.0,
           "label": "fail",
-          "reasoning": "This is a single-sentence fragment with no operational content. It makes a vague claim (\"they change the workplace\") without defining what \"they\" are, in what way they change things, or what decision or action a reader should take. There is no threshold, principle, concrete example, tool, technique, or test provided. This is pure abstraction—filler prose that serves as a transition or summary without giving an engineer anything to apply on Monday.",
+          "reasoning": "This is a single transitional sentence with no technical content, no decision, no principle, no tool, and no example. It is pure transition/filler prose that carries zero operational information for a working engineer.",
           "evidence_refs": [],
           "para_excerpt": "So they change the workplace."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 35,
-          "score": 5.0,
+          "paragraph_index": 22,
+          "score": 2.0,
           "label": "fail",
-          "reasoning": "This is transition prose—a meta-commentary signpost between topics. \"At this point the argument can sound abstract, so it helps to come back to X\" is a classic bridge sentence that restates the author's intention without containing any decision, principle, threshold, concrete example, tool, or technique that a working engineer could apply on Monday. It announces a shift rather than delivering actionable content.",
+          "reasoning": "This is a single sentence fragment — \"That is where slop comes from.\" — that serves purely as a transitional or concluding remark referencing something explained in prior text. It contains no decision, threshold, tool, technique, principle, or example. It is entirely dependent on surrounding context and provides zero standalone operational value.",
           "evidence_refs": [],
-          "para_excerpt": "At this point the argument can sound abstract, so it helps to come back to repository mechanics."
+          "para_excerpt": "That is where slop comes from."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 38,
+          "paragraph_index": 5,
           "score": 5.0,
           "label": "fail",
-          "reasoning": "The paragraph is incomplete and only promises an upcoming checklist (\"usually includes at least the following:\") without actually providing the checklist items. This is pure transition prose—it announces what's coming rather than delivering actionable content. No engineer could act on an incomplete sentence fragment.",
+          "reasoning": "This paragraph is pure scene-setting transition prose. It establishes a relatable starting point (\"a good model inside an ordinary repo\") but contains zero decisions, thresholds, techniques, tools, or actionable principles. It is filler that exists solely to introduce what follows in the chapter.",
           "evidence_refs": [],
-          "para_excerpt": "A practical checklist usually includes at least the following:"
+          "para_excerpt": "Consider a team that starts where many teams now start: with a good model inside an ordinary repo."
         },
         {
           "dim_name": "claim_defensibility",
@@ -723,26 +720,71 @@
             "unsupported:Intelligence becomes the default suspect in postmortems — a sociological/behavioral claim about how practitioners respond to failures, with no ledger entry supporting it."
           ],
           "para_excerpt": "The model missed a dependency. The model misunderstood the architecture. The model refactored the right function but violated a local convention no outsider cou…"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 0,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "inherited from chapter:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+          "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "argument:\"The prompt is only the visible tip\" metaphor — restates Ch 1's identical framing that the conversational surface is just the visible tip and the real product is the apparatus underneath",
+            "argument:\"Cheap execution makes judgment scarce/valuable\" — restates the closing claim of Ch 1 and the central argument of Ch 2 before extending it",
+            "argument:\"Slop and erratic quality stem from unexpressed judgment/taste\" — restates Ch 2's argument that vibe coding and loosely-specified prompting produce poor results because invisible success criteria were never articulated"
+          ],
+          "para_excerpt": "When coding agents disappoint, teams usually blame the model."
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 1,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "inherited from chapter:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+          "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "argument:\"The prompt is only the visible tip\" metaphor — restates Ch 1's identical framing that the conversational surface is just the visible tip and the real product is the apparatus underneath",
+            "argument:\"Cheap execution makes judgment scarce/valuable\" — restates the closing claim of Ch 1 and the central argument of Ch 2 before extending it",
+            "argument:\"Slop and erratic quality stem from unexpressed judgment/taste\" — restates Ch 2's argument that vibe coding and loosely-specified prompting produce poor results because invisible success criteria were never articulated"
+          ],
+          "para_excerpt": "The model missed a dependency. The model misunderstood the architecture. The model refactored the right function but violated a local convention no outsider cou…"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 2,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "inherited from chapter:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+          "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "argument:\"The prompt is only the visible tip\" metaphor — restates Ch 1's identical framing that the conversational surface is just the visible tip and the real product is the apparatus underneath",
+            "argument:\"Cheap execution makes judgment scarce/valuable\" — restates the closing claim of Ch 1 and the central argument of Ch 2 before extending it",
+            "argument:\"Slop and erratic quality stem from unexpressed judgment/taste\" — restates Ch 2's argument that vibe coding and loosely-specified prompting produce poor results because invisible success criteria were never articulated"
+          ],
+          "para_excerpt": "Sometimes that diagnosis is fair. Models do fail because they are weak, distracted, or simply not yet capable enough for the task. But in production codebases, …"
         }
       ]
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.2,
         "voice": 87.0,
-        "usefulness": 52.4,
+        "usefulness": 40.0,
         "evidence_density": 90.0,
         "claim_defensibility": 67.0,
-        "redundancy": 72.0,
+        "redundancy": 78.0,
         "n_paragraphs": 25
       },
       "labels": {
         "humanness": "moderate",
         "voice": "strong",
-        "usefulness": "moderate",
+        "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
         "redundancy": "moderate"
@@ -858,29 +900,29 @@
         {
           "dim_name": "usefulness",
           "paragraph_index": 20,
-          "score": 15.0,
+          "score": 8.0,
           "label": "fail",
-          "reasoning": "This is transition prose and meta-commentary about the book's structure. It describes what future chapters will argue and positions evals as \"the instrument\" of measurement, but provides no decision threshold, concrete example, specific technique, or test that an engineer could apply on Monday. The paragraph is purely forward-pointing and landscape-setting with no operational content. It restates the chapter's thesis (evals are a control system) without giving the reader anything to do or change.",
+          "reasoning": "This paragraph is pure transitional meta-commentary. It previews what future chapters will argue, summarizes the book's structural arc, and closes with a motivational aphorism (\"converts a hope into evidence\"). There is no decision, threshold, technique, tool, or concrete example an engineer could act on. It contains no operational content whatsoever — only cross-references to other chapters.",
           "evidence_refs": [],
           "para_excerpt": "This connects directly forward. Chapter 5 will argue that context is the infrastructure determining what the model can even see — and an eval is how you find ou…"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 2,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This paragraph restates a concept from Chapter 2 without providing concrete guidance. It describes the conceptual transition from human review to mechanized evaluation but offers no decision thresholds, specific techniques, concrete examples, or testable principles. An engineer reading this cannot determine what to evaluate, how to structure an eval, what metrics matter, or how to implement this \"discipline\" in practice. It's architectural framing without operational lift.",
+          "score": 12.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure transition/meta-commentary prose. It explicitly references \"the same argument Chapter 2 made\" and reframes it as a setup for the current chapter. It contains no decision, threshold, tool, technique, or concrete example. It offers no test a reader could apply, no named technique, and no operational principle beyond the vague idea that manual review must become automated — which is itself stated abstractly without any guidance on how to do so. It is bridge prose between chapters with no independent actionable content.",
           "evidence_refs": [],
           "para_excerpt": "This is the same argument Chapter 2 made about review, now mechanized. There, judgment under abundance was a human posture; here it becomes an instrument. Once …"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 12,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This paragraph is primarily transition and framing. It marks a pivot in the chapter's argument (\"here the chapter's argument turns\") and introduces a philosophical claim via an attributed quote (\"observability and eval... are the same problem\"). The instruction to \"sit with\" the sentence and that it \"dissolves a distinction\" are invitations to reflection, not commitments to a testable principle or actionable decision. A working engineer reading this cannot yet answer: *How* should I treat observability and evals as one system? What does that look like in code or architecture? What specific change would flow from this reframing? The paragraph does intellectual groundwork but supplies no operational lever—no threshold, tool, concrete example, or test that would prompt a Monday code review or design decision.",
+          "paragraph_index": 15,
+          "score": 12.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure meta-commentary and setup prose. It announces a \"final turn\" being built toward, references the structure of the book, and teases a future point about eval systems becoming agent-navigable artifacts. There is no decision, threshold, technique, tool, or concrete example. It contains no operational content a working engineer could act on — it is a transitional/teaser paragraph with no standalone utility.",
           "evidence_refs": [],
-          "para_excerpt": "Here the chapter's argument turns from offline measurement to the live system, and the cleanest statement of the turn comes from Phil Hetzel at Braintrust: \"Obs…"
+          "para_excerpt": "There is a final turn that the rest of this book has been setting up, and the corpus has exactly one strongly-argued account of it. Once coding agents are doing…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -923,39 +965,45 @@
         {
           "dim_name": "redundancy",
           "paragraph_index": 0,
-          "score": 72.0,
+          "score": 78.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "argument:Judgment becomes the scarce input once execution is cheap (restating Chapter 2's core argument about taste and standards)",
-            "argument:The need to externalize and encode judgment so that systems can operate inside it (direct callback to Chapter 2's closing question, now answered mechanically)"
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "argument:\"A promising feeling is not a control loop\" / judgment under abundance must be scaled beyond human review — restates Ch 2's core claim that cheap execution makes discriminative judgment/review the scarce and critical input, before extending it to mechanized evals.",
+            "argument:\"Reliability comes from the scaffolding around the model, not from the model's cleverness\" (closing paragraph) — restates the structural argument present in both Ch 1 (apparatus underneath the conversational surface) and Ch 3 (harnesses/specs as the real infrastructure, not the generation magic)."
           ],
           "para_excerpt": "The obvious failure mode of AI is that it can be wrong. The more dangerous one is that it can look right often enough that the team stops measuring."
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 1,
-          "score": 72.0,
+          "score": 78.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "argument:Judgment becomes the scarce input once execution is cheap (restating Chapter 2's core argument about taste and standards)",
-            "argument:The need to externalize and encode judgment so that systems can operate inside it (direct callback to Chapter 2's closing question, now answered mechanically)"
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "argument:\"A promising feeling is not a control loop\" / judgment under abundance must be scaled beyond human review — restates Ch 2's core claim that cheap execution makes discriminative judgment/review the scarce and critical input, before extending it to mechanized evals.",
+            "argument:\"Reliability comes from the scaffolding around the model, not from the model's cleverness\" (closing paragraph) — restates the structural argument present in both Ch 1 (apparatus underneath the conversational surface) and Ch 3 (harnesses/specs as the real infrastructure, not the generation magic)."
           ],
           "para_excerpt": "A demo works twice. A prototype feels sharp. A coding agent lands a decent patch. A support assistant answers a handful of questions convincingly, and everyone …"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 2,
-          "score": 72.0,
+          "score": 78.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "argument:Judgment becomes the scarce input once execution is cheap (restating Chapter 2's core argument about taste and standards)",
-            "argument:The need to externalize and encode judgment so that systems can operate inside it (direct callback to Chapter 2's closing question, now answered mechanically)"
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "argument:\"A promising feeling is not a control loop\" / judgment under abundance must be scaled beyond human review — restates Ch 2's core claim that cheap execution makes discriminative judgment/review the scarce and critical input, before extending it to mechanized evals.",
+            "argument:\"Reliability comes from the scaffolding around the model, not from the model's cleverness\" (closing paragraph) — restates the structural argument present in both Ch 1 (apparatus underneath the conversational surface) and Ch 3 (harnesses/specs as the real infrastructure, not the generation magic)."
           ],
           "para_excerpt": "This is the same argument Chapter 2 made about review, now mechanized. There, judgment under abundance was a human posture; here it becomes an instrument. Once …"
         }
@@ -963,12 +1011,12 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
         "voice": 78.0,
-        "usefulness": 42.7,
+        "usefulness": 34.9,
         "evidence_density": 90.0,
         "claim_defensibility": 78.3,
         "redundancy": 72.0,
@@ -1081,7 +1129,7 @@
           "paragraph_index": 2,
           "score": 5.0,
           "label": "fail",
-          "reasoning": "This is a single sentence fragment that announces a reversal without providing the reversal itself, the prior framing, the new framing, or any operational guidance. It's a transition or setup line with no substantive content. A working engineer cannot act on \"the framing was upside down\" without knowing what the framing is, what direction matters, or how to detect/correct it. This is pure meta-commentary signaling that something will follow, not the substance itself.",
+          "reasoning": "This is a single transitional sentence — \"But the framing was upside down.\" — with no content, no decision, no principle, no tool, no threshold, and no example. It is pure rhetorical pivot prose that exists only to set up whatever comes next. A working engineer gains nothing actionable from this sentence alone.",
           "evidence_refs": [],
           "para_excerpt": "But the framing was upside down."
         },
@@ -1090,18 +1138,18 @@
           "paragraph_index": 8,
           "score": 5.0,
           "label": "fail",
-          "reasoning": "This is pure meta-commentary — a transition sentence announcing the chapter's topic. It contains no decision, principle, threshold, concrete example, or technique. An engineer reading this learns nothing actionable about what \"context as infrastructure\" means or how to apply it. This is textbook chapter-opening filler.",
+          "reasoning": "This is pure transition/meta-commentary prose. It contains no information, decision, principle, tool, or example whatsoever — it merely points forward to the rest of the chapter without conveying any content.",
           "evidence_refs": [],
           "para_excerpt": "That discipline is the subject of this chapter."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 22,
-          "score": 8.0,
+          "paragraph_index": 10,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is a transition sentence and meta-commentary about the book's narrative structure. It announces a shift in topic (\"The argument so far... The harder argument...\") without making any claim about technique, value, decision, threshold, or principle that an engineer could act on Monday. It's purely structural prose signaling what comes next, not operational content.",
+          "reasoning": "This paragraph is pure meta-commentary. It references \"the line\" (presumably a quote from earlier in the chapter) without identifying it, offers no decision, threshold, technique, or concrete example, and contains zero operational content. It exists solely as a rhetorical bridge or framing device between ideas.",
           "evidence_refs": [],
-          "para_excerpt": "The argument so far has been mostly about technique. The harder argument is about value."
+          "para_excerpt": "The line is so quotable it can be mistaken for a slogan. It is actually a load-bearing claim about architecture."
         },
         {
           "dim_name": "claim_defensibility",
@@ -1146,12 +1194,13 @@
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-5-context-is-infrastructure",
           "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-4-evals-are-the-control-system",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "argument:Judgment becomes the scarce input when execution is cheap (restated from Ch. 2: 'once judgment becomes the scarce input')",
-            "argument:Evals measure outcomes given a substrate, not inherent model capability (restated from Ch. 4: 'evals encode judgment rather than facts')",
-            "argument:Proper harness design requires understanding tacit engineering judgment and system constraints (cross-referenced from Ch. 3 but essentially restated in progressive-discovery section)"
+            "overlaps:chapter-4-evals-are-the-control-system",
+            "argument:The value of AI systems lies in the surrounding infrastructure/substrate rather than in the model itself — mirrors Ch 1's 'once a system is doing real work, the conversational surface is only the visible tip' and Ch 2's claim that execution becoming cheap makes the surrounding judgment/infrastructure the bottleneck.",
+            "argument:The 'agent-ready codebase' framing in the progressive discovery section restates Ch 3's central thesis that a good harness is more than tests — it encodes tacit judgment structurally. Ch 5 adds 'context platform' flavor but the underlying claim is the same.",
+            "argument:Brief restatement that evals measure whether the right answer was available — echoes Ch 4's framing of evals as the control system for delegated systems, though Ch 5 does not develop this point at length."
           ],
           "para_excerpt": "Useful AI systems do not fail only because the model is weak. They fail because the system cannot assemble the right working set of information at the right mom…"
         },
@@ -1162,12 +1211,13 @@
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-5-context-is-infrastructure",
           "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-4-evals-are-the-control-system",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "argument:Judgment becomes the scarce input when execution is cheap (restated from Ch. 2: 'once judgment becomes the scarce input')",
-            "argument:Evals measure outcomes given a substrate, not inherent model capability (restated from Ch. 4: 'evals encode judgment rather than facts')",
-            "argument:Proper harness design requires understanding tacit engineering judgment and system constraints (cross-referenced from Ch. 3 but essentially restated in progressive-discovery section)"
+            "overlaps:chapter-4-evals-are-the-control-system",
+            "argument:The value of AI systems lies in the surrounding infrastructure/substrate rather than in the model itself — mirrors Ch 1's 'once a system is doing real work, the conversational surface is only the visible tip' and Ch 2's claim that execution becoming cheap makes the surrounding judgment/infrastructure the bottleneck.",
+            "argument:The 'agent-ready codebase' framing in the progressive discovery section restates Ch 3's central thesis that a good harness is more than tests — it encodes tacit judgment structurally. Ch 5 adds 'context platform' flavor but the underlying claim is the same.",
+            "argument:Brief restatement that evals measure whether the right answer was available — echoes Ch 4's framing of evals as the control system for delegated systems, though Ch 5 does not develop this point at length."
           ],
           "para_excerpt": "For a while, context looked like a prompt-trick problem. You had a box, a token limit, and a growing collection of devices for stuffing more things into it. Add…"
         },
@@ -1178,12 +1228,13 @@
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-5-context-is-infrastructure",
           "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-4-evals-are-the-control-system",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "argument:Judgment becomes the scarce input when execution is cheap (restated from Ch. 2: 'once judgment becomes the scarce input')",
-            "argument:Evals measure outcomes given a substrate, not inherent model capability (restated from Ch. 4: 'evals encode judgment rather than facts')",
-            "argument:Proper harness design requires understanding tacit engineering judgment and system constraints (cross-referenced from Ch. 3 but essentially restated in progressive-discovery section)"
+            "overlaps:chapter-4-evals-are-the-control-system",
+            "argument:The value of AI systems lies in the surrounding infrastructure/substrate rather than in the model itself — mirrors Ch 1's 'once a system is doing real work, the conversational surface is only the visible tip' and Ch 2's claim that execution becoming cheap makes the surrounding judgment/infrastructure the bottleneck.",
+            "argument:The 'agent-ready codebase' framing in the progressive discovery section restates Ch 3's central thesis that a good harness is more than tests — it encodes tacit judgment structurally. Ch 5 adds 'context platform' flavor but the underlying claim is the same.",
+            "argument:Brief restatement that evals measure whether the right answer was available — echoes Ch 4's framing of evals as the control system for delegated systems, though Ch 5 does not develop this point at length."
           ],
           "para_excerpt": "But the framing was upside down."
         }
@@ -1191,21 +1242,21 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.3,
         "voice": 87.0,
-        "usefulness": 51.2,
+        "usefulness": 41.5,
         "evidence_density": 90.0,
         "claim_defensibility": 70.9,
-        "redundancy": 72.0,
+        "redundancy": 78.0,
         "n_paragraphs": 23
       },
       "labels": {
         "humanness": "strong",
         "voice": "strong",
-        "usefulness": "moderate",
+        "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
         "redundancy": "moderate"
@@ -1319,30 +1370,30 @@
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 19,
+          "paragraph_index": 13,
           "score": 8.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary about the book's structure and the relationship between chapters. It describes a narrative arc (durability → security) but contains no decision, threshold, principle, tool, technique, or concrete example that an engineer could apply on Monday. It is transition prose explaining what the chapter does and how it connects to surrounding chapters, with no operational content. The metaphorical language (\"staying power,\" \"price of letting it act\") carries no actionable detail.",
-          "evidence_refs": [],
-          "para_excerpt": "This completes the middle of the book's spine. Chapter 3 prepared the workplace the agent operates in. Chapter 4 built the instrument that measures whether its …"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 13,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "This is a transition sentence that signals a shift in scope from single-worker systems to multi-worker architectures. It contains no decision, threshold, principle, concrete example, or test that an engineer could apply on Monday. The phrase \"harder, and more interesting\" is motivational framing. The admission that \"the corpus is most honestly unsettled\" is meta-commentary about the state of the book/field itself, not actionable guidance. A reader cannot change their Monday work based on \"teams reach for many workers at once\" — they need specifics about what breaks, how to detect it, or which tool to use.",
+          "reasoning": "This is pure transition prose. It summarizes what came before (\"everything so far concerns a single durable worker\"), signals a topic shift (\"the moment teams reach for many workers at once\"), and offers meta-commentary about the state of the field (\"the corpus is most honestly unsettled\"). There is no decision, threshold, principle, tool, technique, or concrete example. Nothing here could prompt a working engineer to change anything on Monday.",
           "evidence_refs": [],
           "para_excerpt": "Everything so far concerns a single durable worker. The architecture gets harder, and more interesting, the moment teams reach for many workers at once — and th…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 0,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This is a memorable comparison that gestures toward a real distinction—statelessness in chatbots vs. statefulness in agents—but provides no operational guidance. It doesn't tell an engineer *how* to implement persistent state, *what* state to maintain, *when* state becomes necessary, or *which* patterns to choose. A reader cannot act on this sentence alone. It's evocative filler that sets up a chapter topic without concrete decision criteria or thresholds. The actionable insight (agents need state management) is implicit, not explicit, and requires the reader to infer implementation details from context elsewhere in the chapter.",
+          "paragraph_index": 19,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure structural meta-commentary — a recap of what prior chapters covered and a preview of what the next chapter will address. It contains no decisions, thresholds, principles, tools, techniques, or concrete examples. It exists solely to orient the reader within the book's narrative arc and provides zero operational lift for a working engineer.",
           "evidence_refs": [],
-          "para_excerpt": "A chatbot can get away with amnesia. A production agent cannot."
+          "para_excerpt": "This completes the middle of the book's spine. Chapter 3 prepared the workplace the agent operates in. Chapter 4 built the instrument that measures whether its …"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 1,
+          "score": 12.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure transitional/meta-commentary prose. It announces a shift in the book's focus (\"this is the chapter where the book's argument turns from...\") and frames the problem space without committing to any decision, threshold, technique, or concrete example. The distinction between short-lived and delegated work is stated at a high level but no actionable guidance is given — no tool is named, no design principle is offered, no test for when to choose one approach over another. It is essentially a chapter introduction paragraph.",
+          "evidence_refs": [],
+          "para_excerpt": "Short-lived assistance can live inside a conversational loop — a turn comes in, a turn goes out, and nothing has to survive past the reply. Delegated work canno…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1386,48 +1437,45 @@
         {
           "dim_name": "redundancy",
           "paragraph_index": 0,
-          "score": 72.0,
+          "score": 78.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-6-runtimes-state-and-the-human-control-plane",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "argument:Judgment/human attention becomes the scarce resource and must be focused at consequential edges",
-            "argument:The shift from model-as-product to model-inside-a-system (implicit restatement of 'assistant vs. delegate' distinction)",
-            "argument:Human control is not a temporary phase but a permanent architectural layer (restates Chapter 2's principle that friction can be valuable)",
-            "argument:Once execution gets cheap, the bottleneck moves from capability to oversight and judgment"
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "argument:Human judgment should be focused on consequential edges; once execution is delegated, judgment becomes the scarce and valuable human contribution — echoes Ch 1 (delegation makes judgment scarce) and Ch 2 (judgment as bottleneck once execution is cheap). Ch 6 deepens this by housing it in a runtime control-plane architecture, but the framing is re-stated.",
+            "argument:Impressive agent demos collapse when teams try to operationalize them — echoes Ch 3's argument that chat-style coding tools mislead about what production use requires and that tacit engineering judgment is invisible until things break. Ch 6 approaches this from a runtime/state angle but recycles the demo-vs-production framing."
           ],
           "para_excerpt": "A chatbot can get away with amnesia. A production agent cannot."
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 1,
-          "score": 72.0,
+          "score": 78.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-6-runtimes-state-and-the-human-control-plane",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "argument:Judgment/human attention becomes the scarce resource and must be focused at consequential edges",
-            "argument:The shift from model-as-product to model-inside-a-system (implicit restatement of 'assistant vs. delegate' distinction)",
-            "argument:Human control is not a temporary phase but a permanent architectural layer (restates Chapter 2's principle that friction can be valuable)",
-            "argument:Once execution gets cheap, the bottleneck moves from capability to oversight and judgment"
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "argument:Human judgment should be focused on consequential edges; once execution is delegated, judgment becomes the scarce and valuable human contribution — echoes Ch 1 (delegation makes judgment scarce) and Ch 2 (judgment as bottleneck once execution is cheap). Ch 6 deepens this by housing it in a runtime control-plane architecture, but the framing is re-stated.",
+            "argument:Impressive agent demos collapse when teams try to operationalize them — echoes Ch 3's argument that chat-style coding tools mislead about what production use requires and that tacit engineering judgment is invisible until things break. Ch 6 approaches this from a runtime/state angle but recycles the demo-vs-production framing."
           ],
           "para_excerpt": "Short-lived assistance can live inside a conversational loop — a turn comes in, a turn goes out, and nothing has to survive past the reply. Delegated work canno…"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 2,
-          "score": 72.0,
+          "score": 78.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-6-runtimes-state-and-the-human-control-plane",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "argument:Judgment/human attention becomes the scarce resource and must be focused at consequential edges",
-            "argument:The shift from model-as-product to model-inside-a-system (implicit restatement of 'assistant vs. delegate' distinction)",
-            "argument:Human control is not a temporary phase but a permanent architectural layer (restates Chapter 2's principle that friction can be valuable)",
-            "argument:Once execution gets cheap, the bottleneck moves from capability to oversight and judgment"
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "argument:Human judgment should be focused on consequential edges; once execution is delegated, judgment becomes the scarce and valuable human contribution — echoes Ch 1 (delegation makes judgment scarce) and Ch 2 (judgment as bottleneck once execution is cheap). Ch 6 deepens this by housing it in a runtime control-plane architecture, but the framing is re-stated.",
+            "argument:Impressive agent demos collapse when teams try to operationalize them — echoes Ch 3's argument that chat-style coding tools mislead about what production use requires and that tacit engineering judgment is invisible until things break. Ch 6 approaches this from a runtime/state angle but recycles the demo-vs-production framing."
           ],
           "para_excerpt": "Samuel Colvin at Pydantic states the lesson in the voice of someone who learned it in production: \"building production AI agents reveals a harsh truth — statele…"
         }
@@ -1435,24 +1483,24 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 70.4,
         "voice": 88.0,
-        "usefulness": 52.3,
-        "evidence_density": 90.0,
+        "usefulness": 45.8,
+        "evidence_density": 88.7,
         "claim_defensibility": 75.8,
-        "redundancy": 72.0,
+        "redundancy": 82.0,
         "n_paragraphs": 48
       },
       "labels": {
         "humanness": "moderate",
         "voice": "strong",
-        "usefulness": "moderate",
+        "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "moderate"
+        "redundancy": "strong"
       },
       "coverage": {
         "humanness": {
@@ -1564,29 +1612,29 @@
         {
           "dim_name": "usefulness",
           "paragraph_index": 11,
-          "score": 8.0,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is a meta-commentary sentence about writing methodology—it announces the author's intent to use failure cases as a pedagogical tool, but provides no actual decision, threshold, principle, concrete example, or tool a working engineer could apply. The statement is true in the abstract but contains zero operational content. An engineer cannot change anything on Monday based on \"we will now use concrete examples.\" This is exactly the kind of transition prose the rubric identifies as having no actionable lift.",
+          "reasoning": "This sentence is pure transitional meta-commentary. It announces that a concrete failure case is about to be presented, but contains zero actionable content itself — no decision, no principle, no tool, no threshold, no example. It is a rhetorical setup line with no operational lift whatsoever.",
           "evidence_refs": [],
           "para_excerpt": "A concrete failure case makes the point clearer than abstract warnings."
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 19,
-          "score": 8.0,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is transition prose that announces a topic shift without providing operational content. \"The same principle\" references something from earlier context (unclear without seeing prior paragraphs), and \"with the stakes turned up\" is decorative language. There is no decision, threshold, concrete example, tool, technique, test, or specific guidance a working engineer could act on Monday. This is a bridge sentence, not actionable material.",
+          "reasoning": "This is pure transition prose. It references \"the same principle\" without stating what that principle is, and \"with the stakes turned up\" is decorative framing. There is no decision, threshold, tool, technique, or concrete example. The paragraph cannot stand alone and delivers zero operational content.",
           "evidence_refs": [],
           "para_excerpt": "The same principle appears in code-executing environments, with the stakes turned up."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 38,
-          "score": 8.0,
+          "paragraph_index": 43,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is pure transition and meta-commentary. It announces that the chapter is shifting contexts and that evidence will be drawn from a new source, but provides no decision, threshold, principle, concrete example, or tool. It's scaffolding that helps the reader follow the narrative structure, not content that enables action on Monday. No specific constraint, pattern, or test is named or explained.",
+          "reasoning": "This paragraph is pure transitional prose and meta-commentary. It references the next chapter, summarizes what the current chapter supposedly covered (\"shape of power, substrate of identity, architecture of audit\"), and frames what is coming next. There are no decisions, thresholds, principles, tools, techniques, or concrete examples. No engineer can act on any of this content. It is structural filler between chapters with zero operational lift.",
           "evidence_refs": [],
-          "para_excerpt": "The chapter has so far drawn most of its evidence from enterprise and developer-tools contexts. The corpus contains one public-sector talk that is worth surfaci…"
+          "para_excerpt": "The next chapter takes the chapter-7 frame and stress-tests it under realtime conditions, where the cost of getting bounded authority wrong becomes audible to t…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1629,48 +1677,45 @@
         {
           "dim_name": "redundancy",
           "paragraph_index": 0,
-          "score": 72.0,
-          "label": "moderate",
+          "score": 82.0,
+          "label": "strong",
           "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
           "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
             "overlaps:chapter-4-evals-are-the-control-system",
-            "argument:Agent security as a delegated-authority problem, not a prompt-safety problem (restates Chapter 1's core frame on delegation shifting execution-boundary management)",
-            "argument:Judgment/taste as the scarce input once execution becomes cheap (restates Chapter 2's core argument, though narrowed to trust/authority context rather than taste broadly)",
-            "argument:Observability and audit as control mechanisms (relates to Chapter 4's claim that evals encode judgment, extended here to audit trails as part of the trust model)"
+            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "argument:Audit trails and observability as part of the trust/control model (overlaps with Chapter 4's observability-and-eval argument and Chapter 6's human control plane discussion)",
+            "argument:Bounded/delegated authority as the framing for agentic risk (echoes Chapter 1's assistant-to-delegate framing and Chapter 6's human oversight argument, though Chapter 7 deepens with specific security mechanisms)"
           ],
           "para_excerpt": "Once AI systems can act, trust stops being only a question of model quality. It becomes a question of bounded authority."
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 1,
-          "score": 72.0,
-          "label": "moderate",
+          "score": 82.0,
+          "label": "strong",
           "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
           "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
             "overlaps:chapter-4-evals-are-the-control-system",
-            "argument:Agent security as a delegated-authority problem, not a prompt-safety problem (restates Chapter 1's core frame on delegation shifting execution-boundary management)",
-            "argument:Judgment/taste as the scarce input once execution becomes cheap (restates Chapter 2's core argument, though narrowed to trust/authority context rather than taste broadly)",
-            "argument:Observability and audit as control mechanisms (relates to Chapter 4's claim that evals encode judgment, extended here to audit trails as part of the trust model)"
+            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "argument:Audit trails and observability as part of the trust/control model (overlaps with Chapter 4's observability-and-eval argument and Chapter 6's human control plane discussion)",
+            "argument:Bounded/delegated authority as the framing for agentic risk (echoes Chapter 1's assistant-to-delegate framing and Chapter 6's human oversight argument, though Chapter 7 deepens with specific security mechanisms)"
           ],
           "para_excerpt": "A helpful model can get away with being vague about power. An acting system cannot."
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 2,
-          "score": 72.0,
-          "label": "moderate",
+          "score": 82.0,
+          "label": "strong",
           "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
           "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
             "overlaps:chapter-4-evals-are-the-control-system",
-            "argument:Agent security as a delegated-authority problem, not a prompt-safety problem (restates Chapter 1's core frame on delegation shifting execution-boundary management)",
-            "argument:Judgment/taste as the scarce input once execution becomes cheap (restates Chapter 2's core argument, though narrowed to trust/authority context rather than taste broadly)",
-            "argument:Observability and audit as control mechanisms (relates to Chapter 4's claim that evals encode judgment, extended here to audit trails as part of the trust model)"
+            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "argument:Audit trails and observability as part of the trust/control model (overlaps with Chapter 4's observability-and-eval argument and Chapter 6's human control plane discussion)",
+            "argument:Bounded/delegated authority as the framing for agentic risk (echoes Chapter 1's assistant-to-delegate framing and Chapter 6's human oversight argument, though Chapter 7 deepens with specific security mechanisms)"
           ],
           "para_excerpt": "The moment an AI system can call tools, execute code, traverse accounts, or continue working after the user has stopped watching, security moves to the center o…"
         }
@@ -1678,12 +1723,12 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 77.2,
         "voice": 82.0,
-        "usefulness": 39.6,
+        "usefulness": 33.7,
         "evidence_density": 90.0,
         "claim_defensibility": 63.2,
         "redundancy": 72.0,
@@ -1841,30 +1886,30 @@
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 40,
-          "score": 8.0,
+          "paragraph_index": 7,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is pure meta-commentary and transition prose. It announces an upcoming section without providing any decision, threshold, principle, concrete example, or technique an engineer could act on. The phrase \"which the chapter title gestured at\" is self-referential book discussion. There is no operational content—no specific tool, technique, trap, or actionable guidance. An engineer reading this on Monday would have no basis to change anything about their work.",
+          "reasoning": "This is pure meta-commentary about the structure and framing of the book. It tells the reader what the chapter will do (treat voice analogously to prior topics) without conveying any decision, principle, threshold, technique, or actionable example. It contains zero operational content.",
+          "evidence_refs": [],
+          "para_excerpt": "The chapter that follows treats voice the way the rest of the book has treated coding, evaluation, context, and runtime: as a problem of the loop around the mod…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 40,
+          "score": 5.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure meta-commentary and transitional prose. It announces the existence of a section on robotics and acknowledges a gap in coverage, but delivers zero technical content, decisions, principles, thresholds, tools, or examples. It is entirely structural scaffolding with no operational value whatsoever.",
           "evidence_refs": [],
           "para_excerpt": "A short note on robotics, which the chapter title gestured at and which the corpus has enough on to anchor a single section if not yet a chapter of its own."
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 43,
-          "score": 8.0,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is meta-commentary about the book's structure and editorial choices. It explains why the author sequenced chapters in a particular order (voice before robotics) and promises future deepening, but contains no decision threshold, principle, concrete example, tool, technique, or testable criterion that an engineer could apply to their Monday work. It's transition prose that describes the landscape of the manuscript rather than providing operational guidance.",
+          "reasoning": "This is pure meta-commentary about the book's structure and authorial intent — explaining why voice is covered before robotics and noting that robotics content will expand later. It contains no decisions, thresholds, principles, tools, or techniques that an engineer could act on. It is filler transition prose with zero operational content.",
           "evidence_refs": [],
           "para_excerpt": "That makes voice the right *first* embodied edge to chapter — the engineering is mature enough to teach. Robotics is the right *next* one, and its treatment in …"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 47,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "This is pure transition prose and meta-commentary. It announces what the next chapter will cover (\"Chapter 9 is about what that team looks like\") without offering any decision, principle, threshold, or concrete example a working engineer could act on. It restates the book's thesis without adding operational specificity. A practitioner reading this on Monday would have no actionable insight to implement—just a preview of upcoming content.",
-          "evidence_refs": [],
-          "para_excerpt": "The next chapter widens out from this stress test to the organizational question the book has been pointing at since the opening. If reliable AI is a property o…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1910,13 +1955,15 @@
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
             "overlaps:chapter-4-evals-are-the-control-system",
+            "overlaps:chapter-5-context-is-infrastructure",
             "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The loop around the model determines reliability, not the model alone",
-            "argument:Orchestration and systems problems dominate over model quality",
-            "argument:Architectural infrastructure (evals, harnesses, runtimes) is the control system",
-            "argument:Durable agent architecture should persist across interface changes (wrap vs rebuild)"
+            "argument:The systems problem framing — 'the problem is the loop/scaffold around the model, not the model itself' — restates Ch 1's 'apparatus underneath' framing, Ch 3's harness-determines-capability argument, and Ch 6's operating-environment-determines-reliability thesis",
+            "argument:The wrap-don't-rebuild rationale — preserve eval infrastructure and orchestration because judgment/trust is hard-won — echoes Ch 2's 'judgment is the scarce input' and Ch 4's 'evals are the control system that holds the harness honest'",
+            "argument:The durable, checkpointed pipeline design handling latency variance (deterministic clock, deadline-per-stage orchestration) recapitulates Ch 6's durable execution / structured checkpointed runtime argument",
+            "argument:The closing 'What voice confirms' section explicitly restates and summarizes the theses of Chapters 3, 4, 5, and 6 as a deliberate synthesis"
           ],
           "para_excerpt": "Text chat flatters AI systems. Voice does not."
         },
@@ -1928,13 +1975,15 @@
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
             "overlaps:chapter-4-evals-are-the-control-system",
+            "overlaps:chapter-5-context-is-infrastructure",
             "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The loop around the model determines reliability, not the model alone",
-            "argument:Orchestration and systems problems dominate over model quality",
-            "argument:Architectural infrastructure (evals, harnesses, runtimes) is the control system",
-            "argument:Durable agent architecture should persist across interface changes (wrap vs rebuild)"
+            "argument:The systems problem framing — 'the problem is the loop/scaffold around the model, not the model itself' — restates Ch 1's 'apparatus underneath' framing, Ch 3's harness-determines-capability argument, and Ch 6's operating-environment-determines-reliability thesis",
+            "argument:The wrap-don't-rebuild rationale — preserve eval infrastructure and orchestration because judgment/trust is hard-won — echoes Ch 2's 'judgment is the scarce input' and Ch 4's 'evals are the control system that holds the harness honest'",
+            "argument:The durable, checkpointed pipeline design handling latency variance (deterministic clock, deadline-per-stage orchestration) recapitulates Ch 6's durable execution / structured checkpointed runtime argument",
+            "argument:The closing 'What voice confirms' section explicitly restates and summarizes the theses of Chapters 3, 4, 5, and 6 as a deliberate synthesis"
           ],
           "para_excerpt": "In text, users tolerate delay, awkwardness, and weak handoffs because the interface gives the system time to recover. In spoken interaction, every defect become…"
         },
@@ -1946,13 +1995,15 @@
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
             "overlaps:chapter-4-evals-are-the-control-system",
+            "overlaps:chapter-5-context-is-infrastructure",
             "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The loop around the model determines reliability, not the model alone",
-            "argument:Orchestration and systems problems dominate over model quality",
-            "argument:Architectural infrastructure (evals, harnesses, runtimes) is the control system",
-            "argument:Durable agent architecture should persist across interface changes (wrap vs rebuild)"
+            "argument:The systems problem framing — 'the problem is the loop/scaffold around the model, not the model itself' — restates Ch 1's 'apparatus underneath' framing, Ch 3's harness-determines-capability argument, and Ch 6's operating-environment-determines-reliability thesis",
+            "argument:The wrap-don't-rebuild rationale — preserve eval infrastructure and orchestration because judgment/trust is hard-won — echoes Ch 2's 'judgment is the scarce input' and Ch 4's 'evals are the control system that holds the harness honest'",
+            "argument:The durable, checkpointed pipeline design handling latency variance (deterministic clock, deadline-per-stage orchestration) recapitulates Ch 6's durable execution / structured checkpointed runtime argument",
+            "argument:The closing 'What voice confirms' section explicitly restates and summarizes the theses of Chapters 3, 4, 5, and 6 as a deliberate synthesis"
           ],
           "para_excerpt": "That asymmetry is why voice deserves a chapter, not a section. Realtime interaction pressure-tests almost every earlier claim in the book. Weak context becomes …"
         }
@@ -1960,24 +2011,24 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.8,
         "voice": 77.0,
-        "usefulness": 51.7,
+        "usefulness": 42.7,
         "evidence_density": 90.0,
         "claim_defensibility": 74.8,
-        "redundancy": null,
+        "redundancy": 62.0,
         "n_paragraphs": 34
       },
       "labels": {
         "humanness": "strong",
         "voice": "moderate",
-        "usefulness": "moderate",
+        "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -2001,7 +2052,7 @@
           "total": 30
         },
         "redundancy": {
-          "scored": 0,
+          "scored": 30,
           "total": 30
         }
       },
@@ -2075,30 +2126,30 @@
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 1,
-          "score": 22.0,
-          "label": "weak",
-          "reasoning": "This passage sets up a narrative scenario (\"picture a company\") to illustrate a shift from output shortage to coherence shortage, but it provides no actionable principle, threshold, decision, or concrete example a working engineer could apply on Monday. It diagnoses a problem state without naming what \"coherence\" means operationally, what specific conflicts arise, how to detect them, or what to do about them. It functions as thematic framing and scene-setting for a chapter, not as guidance. A reader cannot change anything based on this paragraph alone—they can only recognize themselves in the anecdote and wait for the next section to explain actual mitigation strategies.",
+          "paragraph_index": 7,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure meta-commentary and cross-chapter summary. It restates prior chapters' theses (\"when code gets cheap, judgment gets expensive\") and signals a conceptual transition to the organizational scale. There is no decision, threshold, tool, technique, or concrete example. No engineer can act on this Monday morning.",
           "evidence_refs": [],
-          "para_excerpt": "The difference shows up on a Monday morning. Picture a company that has already moved past casual adoption. Over the weekend, agents opened pull requests. Produ…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 0,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This paragraph identifies a distinction—between individual productivity gains and organizational transformation—but remains purely descriptive. It restates a conceptual landscape (small gains ≠ AI-native) without providing a decision threshold, principle, or concrete example an engineer could act on. There is no test for \"when should we stop micro-optimizing and restructure?\" no naming of what constitutes AI-native, no tool or technique to employ, and no trap with enough specificity to avoid. A reader finishes knowing the author rejects piecemeal adoption, but cannot answer \"what do I change on Monday?\"",
-          "evidence_refs": [],
-          "para_excerpt": "Most AI adoption stories are too small to be the real story. A few engineers get faster. Support summarizes tickets more quickly. A product manager drafts specs…"
+          "para_excerpt": "The book has argued since its opening chapters that when code gets cheap, judgment gets expensive. Chapter 1 made it a claim about the shift from suggestion to …"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 25,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "This paragraph is a transition and meta-commentary that restates prior chapters' points at a higher level of abstraction. It tells the reader what they're about to learn (\"Chapter 9's claim is...\") and maps previous concepts to an organizational scale, but contains no decision threshold, principle, concrete example, or test that an engineer could act on Monday. It is decorative framing—explaining the book's structure—rather than operational guidance. The analogy (company as harness) is conceptual but provides no lift for implementation, tool selection, or architectural decision-making.",
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure meta-commentary and structural transition prose. It summarizes prior chapters and announces the thesis of Chapter 9, but contains no decision, threshold, technique, tool, or concrete example an engineer could act on. The central claim (\"a company is a harness for its own agents\") is a decorative metaphor without operational specificity. Nothing here changes what an engineer does on Monday.",
           "evidence_refs": [],
           "para_excerpt": "This is the synthesis the whole book has been building toward. Harnesses (Chapter 3) prepare the workplace. Evals (Chapter 4) measure the output. Context archit…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 29,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure transitional/meta-commentary prose. It draws a loose philosophical analogy between agent harnesses and organizational structure, but makes no concrete commitment, names no tool or technique, offers no threshold or testable principle, and explicitly defers substance to \"the final chapter.\" It is decorative framing with zero operational lift.",
+          "evidence_refs": [],
+          "para_excerpt": "The technical question and the organizational question, in the end, turn out to be the same question asked at two scales. How do you build a system in which del…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2136,29 +2187,83 @@
             "unsupported:Beth Glenfield's claim that when everyone interviews with AI, the old signals of competence stop discriminating — there is no ledger entry covering AI-induced degradation of traditional hiring/interview signals, even though the downstream conclusion (hire for judgment and taste) is ledger-supported by claims#40."
           ],
           "para_excerpt": "The pressure reaches compensation and hiring too. When output is no longer a clean proxy for contribution, the old pay structures wobble — Arman Hezarkhani's pr…"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 0,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "overlaps:chapter-4-evals-are-the-control-system",
+            "argument:\"Cheap execution makes judgment scarce\" — restated from Chapter 1 (assistant-to-delegate shift) and Chapter 2 (taste/judgment as bottleneck), acknowledged explicitly but re-asserted without fully new organizational-scale evidence beyond the Reock framing",
+            "argument:Evals/review as a layered system rather than heroic individual acts — re-asserts Chapter 4's central claim about evals as a control system; the throughput framing is new but the mechanism (automated triage + human attention on consequential cases) echoes Chapter 4 closely",
+            "argument:The harness concept re-explained and re-defined — Chapter 3's core argument about externalized specs/constraints enabling agent trustworthiness is re-stated in the 'company as harness' section rather than strictly deepened",
+            "argument:Cross-book synthesis paragraph summarizing Chapters 3–8 sequentially — structurally necessary but constitutes restatement of each prior chapter's central claim in condensed form"
+          ],
+          "para_excerpt": "Most AI adoption stories are too small to be the real story. A few engineers get faster. Support summarizes tickets more quickly. A product manager drafts specs…"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 1,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "overlaps:chapter-4-evals-are-the-control-system",
+            "argument:\"Cheap execution makes judgment scarce\" — restated from Chapter 1 (assistant-to-delegate shift) and Chapter 2 (taste/judgment as bottleneck), acknowledged explicitly but re-asserted without fully new organizational-scale evidence beyond the Reock framing",
+            "argument:Evals/review as a layered system rather than heroic individual acts — re-asserts Chapter 4's central claim about evals as a control system; the throughput framing is new but the mechanism (automated triage + human attention on consequential cases) echoes Chapter 4 closely",
+            "argument:The harness concept re-explained and re-defined — Chapter 3's core argument about externalized specs/constraints enabling agent trustworthiness is re-stated in the 'company as harness' section rather than strictly deepened",
+            "argument:Cross-book synthesis paragraph summarizing Chapters 3–8 sequentially — structurally necessary but constitutes restatement of each prior chapter's central claim in condensed form"
+          ],
+          "para_excerpt": "The difference shows up on a Monday morning. Picture a company that has already moved past casual adoption. Over the weekend, agents opened pull requests. Produ…"
+        },
+        {
+          "dim_name": "redundancy",
+          "paragraph_index": 2,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "evidence_refs": [
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
+            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
+            "overlaps:chapter-4-evals-are-the-control-system",
+            "argument:\"Cheap execution makes judgment scarce\" — restated from Chapter 1 (assistant-to-delegate shift) and Chapter 2 (taste/judgment as bottleneck), acknowledged explicitly but re-asserted without fully new organizational-scale evidence beyond the Reock framing",
+            "argument:Evals/review as a layered system rather than heroic individual acts — re-asserts Chapter 4's central claim about evals as a control system; the throughput framing is new but the mechanism (automated triage + human attention on consequential cases) echoes Chapter 4 closely",
+            "argument:The harness concept re-explained and re-defined — Chapter 3's core argument about externalized specs/constraints enabling agent trustworthiness is re-stated in the 'company as harness' section rather than strictly deepened",
+            "argument:Cross-book synthesis paragraph summarizing Chapters 3–8 sequentially — structurally necessary but constitutes restatement of each prior chapter's central claim in condensed form"
+          ],
+          "para_excerpt": "That is the shift this chapter is about. AI does not simply make an organization faster. It moves where the scarce thing lives. When execution gets cheap, the b…"
         }
       ]
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:fa421ea",
+      "version_id": "git:60a1318",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 82.0,
         "voice": 87.0,
-        "usefulness": 42.6,
+        "usefulness": 19.6,
         "evidence_density": 90.0,
         "claim_defensibility": 76.2,
-        "redundancy": 82.0,
+        "redundancy": 72.0,
         "n_paragraphs": 17
       },
       "labels": {
         "humanness": "strong",
         "voice": "strong",
-        "usefulness": "weak",
+        "usefulness": "fail",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "strong"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -2256,30 +2361,30 @@
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 0,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "This paragraph is meta-commentary about the book itself and the problem of obsolescence in technical writing. It acknowledges a limitation but provides no decision, threshold, principle, concrete example, or actionable technique. It is a transition statement that sets up what the chapter will discuss rather than delivering any operational guidance. An engineer reading this paragraph would not be able to change anything about their Monday or their work—they would only understand that the author believes an enduring operating model exists. The content is decorative framing with no lift for application.",
-          "evidence_refs": [],
-          "para_excerpt": "A book about a field moving this fast has an obvious problem: by the time you read it, some of its examples will be obsolete. Models named in these chapters hav…"
-        },
-        {
-          "dim_name": "usefulness",
           "paragraph_index": 2,
-          "score": 8.0,
+          "score": 5.0,
           "label": "fail",
-          "reasoning": "This is meta-commentary and transition prose about the chapter structure itself. It describes what the reader will find (\"a single shape stated nine different ways\") without stating what that shape is, without making a commitment, and without providing any decision, threshold, principle, tool, or concrete example an engineer could apply on Monday. It's decorative framing with zero operational lift.",
+          "reasoning": "This is pure transitional/meta-commentary prose. It references prior chapters, offers no decision, threshold, principle, tool, or example, and contains zero operational content. It tells the reader that a pattern exists but does not name, describe, or apply it in any way.",
           "evidence_refs": [],
           "para_excerpt": "Read back across the chapters and a single shape emerges, stated nine different ways."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 3,
-          "score": 15.0,
+          "paragraph_index": 0,
+          "score": 8.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and structural recap. It summarizes what prior chapters covered and the relationships between concepts, but makes no new claims, offers no thresholds or decisions, and provides no concrete guidance an engineer could act on Monday. It's a bookend summarizing the journey rather than landing a point. A working engineer reading this would learn what was discussed before, not what to do differently.",
+          "reasoning": "This paragraph is pure meta-commentary and transitional prose. It acknowledges the book's own obsolescence risk, frames the purpose of the final chapter, and makes no commitments, decisions, thresholds, or actionable principles. It names no tools, techniques, or traps with enough detail to act on. Nothing here changes what an engineer does on Monday.",
           "evidence_refs": [],
-          "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on. Everything after that…"
+          "para_excerpt": "A book about a field moving this fast has an obvious problem: by the time you read it, some of its examples will be obsolete. Models named in these chapters hav…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 1,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This is pure concluding/transitional prose. It makes a philosophical observation about churn and stability in AI engineering but offers no specific decision, threshold, technique, tool, or actionable principle. It is meta-commentary summarizing the book's thesis rather than delivering any operational content an engineer could act on.",
+          "evidence_refs": [],
+          "para_excerpt": "Because the churn is real but shallow. New models arrive, old frameworks get rebranded, and every layer of the stack takes its turn claiming to be the one that …"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2318,51 +2423,42 @@
         {
           "dim_name": "redundancy",
           "paragraph_index": 0,
-          "score": 82.0,
-          "label": "strong",
+          "score": 72.0,
+          "label": "moderate",
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "argument:The shift from assistant/suggestion to delegation as the organizing principle",
-            "argument:Delegation stretches the failure surface across workflows rather than single responses",
-            "argument:Taste/judgment becomes scarce and valuable once execution becomes cheap",
-            "argument:Scaffolding and structure around the model matter more than raw model capability",
-            "argument:Human judgment should be focused on consequential edges rather than spread everywhere or removed entirely",
-            "argument:The system should be built so the model is a replaceable component inside a durable structure"
+            "argument:The 'assistant to delegate' / 'suggestion to delegation' framing restated as the book's foundational shift — introduced and defined in Chapter 1",
+            "argument:The claim that judgment/taste becomes scarce and more valuable once execution is cheap — Chapter 1's closing sentence makes this exact point",
+            "argument:The closing image of the 'trustworthy colleague' being trustworthy because of surrounding structure — echoes Chapter 1's closing sentiment directly"
           ],
           "para_excerpt": "A book about a field moving this fast has an obvious problem: by the time you read it, some of its examples will be obsolete. Models named in these chapters hav…"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 1,
-          "score": 82.0,
-          "label": "strong",
+          "score": 72.0,
+          "label": "moderate",
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "argument:The shift from assistant/suggestion to delegation as the organizing principle",
-            "argument:Delegation stretches the failure surface across workflows rather than single responses",
-            "argument:Taste/judgment becomes scarce and valuable once execution becomes cheap",
-            "argument:Scaffolding and structure around the model matter more than raw model capability",
-            "argument:Human judgment should be focused on consequential edges rather than spread everywhere or removed entirely",
-            "argument:The system should be built so the model is a replaceable component inside a durable structure"
+            "argument:The 'assistant to delegate' / 'suggestion to delegation' framing restated as the book's foundational shift — introduced and defined in Chapter 1",
+            "argument:The claim that judgment/taste becomes scarce and more valuable once execution is cheap — Chapter 1's closing sentence makes this exact point",
+            "argument:The closing image of the 'trustworthy colleague' being trustworthy because of surrounding structure — echoes Chapter 1's closing sentiment directly"
           ],
           "para_excerpt": "Because the churn is real but shallow. New models arrive, old frameworks get rebranded, and every layer of the stack takes its turn claiming to be the one that …"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 2,
-          "score": 82.0,
-          "label": "strong",
+          "score": 72.0,
+          "label": "moderate",
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "argument:The shift from assistant/suggestion to delegation as the organizing principle",
-            "argument:Delegation stretches the failure surface across workflows rather than single responses",
-            "argument:Taste/judgment becomes scarce and valuable once execution becomes cheap",
-            "argument:Scaffolding and structure around the model matter more than raw model capability",
-            "argument:Human judgment should be focused on consequential edges rather than spread everywhere or removed entirely",
-            "argument:The system should be built so the model is a replaceable component inside a durable structure"
+            "argument:The 'assistant to delegate' / 'suggestion to delegation' framing restated as the book's foundational shift — introduced and defined in Chapter 1",
+            "argument:The claim that judgment/taste becomes scarce and more valuable once execution is cheap — Chapter 1's closing sentence makes this exact point",
+            "argument:The closing image of the 'trustworthy colleague' being trustworthy because of surrounding structure — echoes Chapter 1's closing sentiment directly"
           ],
           "para_excerpt": "Read back across the chapters and a single shape emerges, stated nine different ways."
         }
@@ -2372,7 +2468,7 @@
   "history": [
     {
       "run_id": "2026-06-01-155947-4924",
-      "version_id": "git:fa421ea",
+      "version_id": "git:68ad925",
       "finished_at": "2026-06-01T16:19:11.116994+00:00",
       "partial": true,
       "book": {
@@ -2472,6 +2568,112 @@
           "evidence_density": 90.0,
           "claim_defensibility": 76.2,
           "redundancy": 82.0,
+          "n_paragraphs": 17
+        }
+      }
+    },
+    {
+      "run_id": "2026-06-02-093847-4924",
+      "version_id": "git:60a1318",
+      "finished_at": "2026-06-02T09:44:33.568641+00:00",
+      "partial": true,
+      "book": {
+        "humanness": 76.9,
+        "voice": 83.7,
+        "usefulness": 34.1,
+        "evidence_density": 89.9,
+        "claim_defensibility": 71.1,
+        "redundancy": 76.0
+      },
+      "chapters": {
+        "01": {
+          "humanness": 74.1,
+          "voice": 91.0,
+          "usefulness": 25.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 73.2,
+          "redundancy": 100.0,
+          "n_paragraphs": 25
+        },
+        "02": {
+          "humanness": 76.8,
+          "voice": 82.0,
+          "usefulness": 33.3,
+          "evidence_density": 90.0,
+          "claim_defensibility": 66.6,
+          "redundancy": 72.0,
+          "n_paragraphs": 25
+        },
+        "03": {
+          "humanness": 74.3,
+          "voice": 78.0,
+          "usefulness": 24.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 64.7,
+          "redundancy": 72.0,
+          "n_paragraphs": 62
+        },
+        "04": {
+          "humanness": 76.2,
+          "voice": 87.0,
+          "usefulness": 40.0,
+          "evidence_density": 90.0,
+          "claim_defensibility": 67.0,
+          "redundancy": 78.0,
+          "n_paragraphs": 25
+        },
+        "05": {
+          "humanness": 76.8,
+          "voice": 78.0,
+          "usefulness": 34.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 78.3,
+          "redundancy": 72.0,
+          "n_paragraphs": 56
+        },
+        "06": {
+          "humanness": 80.3,
+          "voice": 87.0,
+          "usefulness": 41.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 70.9,
+          "redundancy": 78.0,
+          "n_paragraphs": 23
+        },
+        "07": {
+          "humanness": 70.4,
+          "voice": 88.0,
+          "usefulness": 45.8,
+          "evidence_density": 88.7,
+          "claim_defensibility": 75.8,
+          "redundancy": 82.0,
+          "n_paragraphs": 48
+        },
+        "08": {
+          "humanness": 77.2,
+          "voice": 82.0,
+          "usefulness": 33.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 63.2,
+          "redundancy": 72.0,
+          "n_paragraphs": 54
+        },
+        "09": {
+          "humanness": 80.8,
+          "voice": 77.0,
+          "usefulness": 42.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 74.8,
+          "redundancy": 62.0,
+          "n_paragraphs": 34
+        },
+        "10": {
+          "humanness": 82.0,
+          "voice": 87.0,
+          "usefulness": 19.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 76.2,
+          "redundancy": 72.0,
           "n_paragraphs": 17
         }
       }
