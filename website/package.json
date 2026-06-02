@@ -8,7 +8,7 @@
     "sync-diagrams": "node scripts/sync-diagrams.mjs",
     "gen-data": "node scripts/gen-data.mjs",
     "prebuild": "node scripts/sync-diagrams.mjs && node scripts/gen-data.mjs",
-    "build": "vite build",
+    "build": "vite-react-ssg build",
     "preview": "vite preview",
     "start": "node server.js",
     "clean": "rm -rf dist",
@@ -27,8 +27,9 @@
     "motion": "^12.23.24",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
+    "react-router-dom": "^6.30.4",
     "vite": "^6.2.3",
-    "wouter": "^3.10.0"
+    "vite-react-ssg": "^0.9.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

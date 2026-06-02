@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'wouter';
+import { Link, useLocation } from 'react-router-dom';
 import { manifest } from '../lib/manifest';
 import { Lightbox } from '../components/Lightbox';
+import { Seo } from '../components/Seo';
 
 export const VisualGuide = () => {
-  const [location] = useLocation();
+  const location = useLocation();
   const [lightbox, setLightbox] = useState<{ src: string; title: string; caption: string; chapterRef: string | null } | null>(null);
 
   useEffect(() => {
@@ -14,14 +15,21 @@ export const VisualGuide = () => {
       const el = document.getElementById(`concept-${id}`);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  }, [location]);
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen bg-[#F8F6F0] text-[#1F1D1B] font-serif">
+      <Seo
+        title="Visual Guide — From Copilot to Colleague"
+        description="64 hand-built diagrams covering the book's argument, methodology, and 18 recurring concepts."
+        path="/visual-guide"
+        image="/diagrams/overview/spine.png"
+        type="website"
+      />
       <header className="border-b border-black/10 px-6 lg:px-12 py-6 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
-        <a href="/" className="hover:opacity-60">← Catalogue</a>
+        <Link to="/" className="hover:opacity-60">← Catalogue</Link>
         <span>From Copilot to Colleague · Visual Guide</span>
-        <a href="/read" className="hover:opacity-60">Reader →</a>
+        <Link to="/read" className="hover:opacity-60">Reader →</Link>
       </header>
 
       <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto">
@@ -48,12 +56,17 @@ export const VisualGuide = () => {
         <div className="space-y-24">
           {manifest.maps.map((m) => (
             <figure key={m.id}>
-              <div className="border border-black/10 bg-white">
+              <Link to={`/visual-guide/maps/${m.id}`} className="block border border-black/10 bg-white hover:shadow-xl transition-shadow">
                 <img src={m.src} alt={m.title} className="block w-full h-auto" />
-              </div>
+              </Link>
               <figcaption className="mt-6 md:flex md:items-start md:gap-12">
                 <h2 className="font-serif text-2xl italic md:w-1/3 mb-3 md:mb-0">{m.title}</h2>
-                <p className="font-sans text-base leading-relaxed md:w-2/3 opacity-80">{m.caption}</p>
+                <div className="md:w-2/3">
+                  <p className="font-sans text-base leading-relaxed opacity-80">{m.caption}</p>
+                  <Link to={`/visual-guide/maps/${m.id}`} className="inline-block mt-4 font-mono text-[10px] uppercase tracking-widest opacity-60 hover:opacity-100">
+                    Open full page →
+                  </Link>
+                </div>
               </figcaption>
             </figure>
           ))}
@@ -62,26 +75,38 @@ export const VisualGuide = () => {
 
       <section id="concepts" className="px-6 lg:px-12 py-20 max-w-7xl mx-auto border-t border-black/10">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">Concepts</h1>
-        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Eighteen named concepts that recur across the book — the units the arguments are built from. Click any card for the full diagram.</p>
+        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Eighteen named concepts that recur across the book — the units the arguments are built from. Click a card to enlarge, or open its full page.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {manifest.concepts.map((c) => (
-            <button
+            <div
               key={c.id}
               id={`concept-${c.id}`}
-              onClick={() => setLightbox({ src: c.src, title: c.title, caption: c.summary, chapterRef: c.chapter })}
-              className="text-left border border-black/10 bg-white hover:shadow-xl transition-shadow group"
+              className="border border-black/10 bg-white hover:shadow-xl transition-shadow group flex flex-col"
             >
-              <div className="aspect-[16/10] overflow-hidden bg-[#F8F6F0]">
-                <img src={c.src} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              </div>
-              <div className="p-5">
-                <h3 className="font-serif text-lg leading-tight mb-2">{c.title}</h3>
-                {c.chapter && (
-                  <p className="font-mono text-[10px] uppercase tracking-widest opacity-60 mb-2">Chapter {c.chapter}</p>
-                )}
-                <p className="font-sans text-sm leading-relaxed opacity-80">{c.summary}</p>
-              </div>
-            </button>
+              <button
+                type="button"
+                onClick={() => setLightbox({ src: c.src, title: c.title, caption: c.summary, chapterRef: c.chapter })}
+                className="text-left cursor-zoom-in"
+                aria-label={`Enlarge ${c.title}`}
+              >
+                <div className="aspect-[16/10] overflow-hidden bg-[#F8F6F0]">
+                  <img src={c.src} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div className="px-5 pt-5 pb-2">
+                  <h3 className="font-serif text-lg leading-tight mb-2">{c.title}</h3>
+                  {c.chapter && (
+                    <p className="font-mono text-[10px] uppercase tracking-widest opacity-60 mb-2">Chapter {c.chapter}</p>
+                  )}
+                  <p className="font-sans text-sm leading-relaxed opacity-80">{c.summary}</p>
+                </div>
+              </button>
+              <Link
+                to={`/visual-guide/concepts/${c.id}`}
+                className="px-5 pb-5 pt-1 font-mono text-[10px] uppercase tracking-widest opacity-60 hover:opacity-100"
+              >
+                View full page →
+              </Link>
+            </div>
           ))}
         </div>
       </section>

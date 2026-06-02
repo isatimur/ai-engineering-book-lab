@@ -6,6 +6,7 @@ import {
   type ChapterVersion,
 } from '../lib/versions';
 import { DiffView } from '../components/diff/DiffView';
+import { Seo } from '../components/Seo';
 
 type Mode = 'unified' | 'split';
 
@@ -63,6 +64,7 @@ export const Versions = () => {
 
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)]">
+      <Seo title="Versions — From Copilot to Colleague" description="Git-diff view of how each chapter evolved." path="/versions" noindex />
       <header className="flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
         <a href="/" className="hover:opacity-60">← Catalogue</a>
         <span>From Copilot to Colleague · Versions &amp; Diffs</span>

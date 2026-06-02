@@ -1,7 +1,7 @@
 import { type CSSProperties, useEffect, useMemo, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from 'motion/react';
 import Lenis from 'lenis';
-import { useLocation } from 'wouter';
+import { useNavigate } from 'react-router-dom';
 
 import { TopNav } from '../components/nav/TopNav';
 import { BottomNav } from '../components/nav/BottomNav';
@@ -14,13 +14,14 @@ import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
 import { scrollAudio } from '../lib/audio';
 import { ActionMenu } from '../components/ActionMenu';
+import { Seo } from '../components/Seo';
 
 export const Reader = () => {
   const { scrollYProgress, scrollY } = useScroll();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [, setLocation] = useLocation();
+  const navigate = useNavigate();
   const [glossaryTermId, setGlossaryTermId] = useState<string | null>(null);
   const [isShareOpen, setIsShareOpen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
@@ -150,6 +151,12 @@ export const Reader = () => {
 
   return (
     <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>
+      <Seo
+        title="Read — From Copilot to Colleague"
+        description="All 10 chapters in one continuous read."
+        path="/read"
+        type="website"
+      />
       <div
         className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-clip transition-colors duration-300"
         style={themeVars as CSSProperties}
@@ -173,7 +180,7 @@ export const Reader = () => {
               <TopNav
                 progress={scrollYProgress}
                 onToggleSettings={() => setIsSettingsOpen(!isSettingsOpen)}
-                onBackToCatalogue={() => setLocation('/')}
+                onBackToCatalogue={() => navigate('/')}
                 onOpenShare={() => setIsShareOpen(true)}
               />
             </motion.div>
