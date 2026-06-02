@@ -76,7 +76,7 @@ Suman Debnath's VoiceVision RAG work at AWS surfaces the same pattern at a diffe
 
 The reason this matters for the book's broader thesis is that latency masking is one of the cleanest examples of the scaffolding-makes-reliability argument. The model can be excellent. The tools can be excellent. The orchestration can be excellent. If the system has no way to keep the conversation alive while the orchestration runs, the experience falls apart. The masking layer is reliability infrastructure. It needs to be designed in, not bolted on at the end.
 
-This is the claim the chapter wants to leave in the ledger as new: latency masking belongs in the same architectural category as evals, harnesses, and durable runtimes. It is the runtime cost of being interruptible.
+Latency masking belongs in the same architectural category as evals, harnesses, and durable runtimes. It is the runtime cost of being interruptible.
 
 ## TTS architecture is converging on LLM architecture
 

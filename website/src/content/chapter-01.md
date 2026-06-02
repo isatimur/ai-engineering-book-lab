@@ -2,13 +2,13 @@
 
 The most important change in applied AI is not that chat got better. It is that people stopped wanting an answer and started wanting the work done.
 
-For a few years the dominant experience of AI was answer production. You asked, and the system summarized, explained, drafted, brainstormed — with a fluency that genuinely mattered. But it was an interface story. A smarter text box. A faster first pass. A more conversational way to reach the software you already had. The verb was always *tell me*.
+For a few years the dominant experience of AI was answer production. You asked, and the system summarized, explained, drafted, brainstormed — with a fluency that mattered. But it was an interface story. A smarter text box. A faster first pass. A more conversational way to reach the software you already had. The verb was always *tell me*.
 
 The sharper change begins when the verb becomes *go do*. Research this topic. Draft the contract. Refactor the service. Triage the queue. Investigate the failure. Come back with something a person can actually review and use. The moment the request crosses from "tell me" to "go do," the standard for success changes underneath it — and most of this book lives in the gap that opens up.
 
 ## Three words for three different relationships
 
-It helps to be precise about what is shifting, because the words get used loosely. There are really three relationships a person can have with an AI system, and they are not the same thing scaled up.
+It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they are not the same thing scaled up.
 
 An **assistant** suggests. It produces something you then decide what to do with — a draft, an answer, an option. The human stays in the critical path for every step, and the assistant's job is to make that step faster.
 
@@ -16,7 +16,7 @@ A **copilot** collaborates inside a human loop. It works alongside you in real t
 
 A **delegate** is assigned work and expected to return with it done. Not a suggestion to evaluate, but an artifact, a recommendation, or a completed step. The human steps *out* of the moment-to-moment loop and re-enters at review. That single move — out of the loop, back at the end — is the whole shift, and it changes everything about what the system has to be.
 
-This book's claim is not that assistants and copilots disappear. They remain genuinely useful, and for many tasks they are the right tool. The claim is that the engineering difficulty, the product ambition, and the organizational upheaval have all migrated to the third category. Delegation is where the hard problems are, because a delegate is no longer just saying things. It is shaping work that someone else will rely on.
+This book's claim is not that assistants and copilots disappear. They remain useful, and for many tasks they are the right tool. The claim is that the engineering difficulty, the product ambition, and the organizational upheaval have all migrated to the third category. Delegation is where the hard problems are, because a delegate is no longer just saying things. It is shaping work that someone else will rely on.
 
 ## Why delegation changes the failure surface
 
@@ -34,7 +34,7 @@ Once a system is doing real work rather than answering questions, the conversati
 
 This is why "agent" products keep sprouting the same organs. They grow trace views, side panels, memory layers, approval queues, workflow diagrams. None of that is decoration. It is the reliability work becoming visible — the system externalizing the parts of trust that a bare chat interface left implicit. Joel Hron at Thomson Reuters describes the target as systems that "don't just suggest but plan, act, and adapt." Every word past *suggest* in that sentence is a new engineering surface, and the rest of this book is largely a tour of them.
 
-It is worth a note of intellectual honesty here, because this is the opening chapter and it sets the book's posture. The evidence for this shift is not a controlled study proving that broad delegation already works well everywhere. It does not yet. What the corpus shows is something more specific and, in its way, more credible: a strong convergence among serious builders about what they are *trying* to make these systems do, and a remarkably consistent account of where it gets hard. This book reports that convergence and the engineering it is producing. It does not claim the problem is solved.
+The evidence for this shift is not a controlled study proving that broad delegation already works well everywhere. It does not yet. What the corpus shows is something more specific and, in its way, more credible: a strong convergence among serious builders about what they are *trying* to make these systems do, and a remarkably consistent account of where it gets hard. This book reports that convergence and the engineering it is producing. It does not claim the problem is solved.
 
 ## Two cases this book keeps returning to
 

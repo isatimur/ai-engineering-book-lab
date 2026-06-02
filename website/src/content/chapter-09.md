@@ -28,7 +28,7 @@ That nuance matters for org design because the wrong metric, applied to cheap ex
 
 ## Broader creation, narrower paths to ship
 
-If execution is cheap, the natural move is to let more people execute. This is one of the most genuinely radical organizational consequences in the corpus, and Lisa Orr at Zapier states it as a provocation: "Your support team should ship code." Not file tickets for engineers to ship code — ship it themselves. When the cost of a competent first implementation collapses, the historical reason for routing all code through a narrow guild of engineers weakens with it.
+If execution is cheap, the natural move is to let more people execute. This is one of the most radical organizational consequences in the corpus, and Lisa Orr at Zapier states it as a provocation: "Your support team should ship code." Not file tickets for engineers to ship code — ship it themselves. When the cost of a competent first implementation collapses, the historical reason for routing all code through a narrow guild of engineers weakens with it.
 
 But the provocation only works with its other half. Broader creation does not mean a free-for-all; it means widening who can *start* work while narrowing and hardening the path by which work *ships*. The support engineer can open the pull request. What protects the company is that the path from that pull request to production runs through the same tests, the same evals, the same review gates, the same permission boundaries that any change runs through. Democratized creation and stronger governance are not opposites. They are the two things that have to rise together, or the first one becomes a liability.
 

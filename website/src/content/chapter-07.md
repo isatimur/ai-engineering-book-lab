@@ -26,13 +26,11 @@ The shared move across these three talks is to treat agent identity as a first-c
 
 ## A concrete failure case
 
-A concrete failure case makes the point clearer than abstract warnings.
-
 Imagine a tax-preparation agent operating inside a professional workflow of the kind described by Joel Hron at Thomson Reuters. The system ingests source documents, extracts fields, maps them into a tax engine, checks validation errors, revisits documents to resolve missing information, and assembles a draft return. Nothing in that flow requires the model to be malicious for trouble to begin. It only has to be slightly wrong in a place where authority and evidence are easy to blur.
 
 Suppose one document is ambiguous, a number is mapped to the wrong field, and the validation engine throws an error. The agent now has several possible powers: search for more supporting material, pull additional client records, reinterpret the rule, override a warning, or proceed with a draft that looks internally coherent. In a weak design, those powers can collapse into one another. The same system that is supposed to summarize evidence also has enough access to fetch more data, make a judgment call, and keep moving. From the outside, the workflow still looks smooth. The danger is not theatrical failure. The danger is an authority boundary disappearing inside a competent-looking trajectory.
 
-That is the chapter's core point. In high-stakes work, the risky move is often not one bad answer. It is a system quietly crossing from assistance into authorization.
+In high-stakes work, the risky move is often not one bad answer. It is a system quietly crossing from assistance into authorization.
 
 ## Least privilege is different for agents than for users
 
@@ -54,7 +52,7 @@ Harshil Agrawal at Cloudflare makes the same case from the platform side. His ta
 
 Apple Private Cloud Compute, profiled by Jmo at CONFSEC, sits at the high end of this spectrum. The architecture is built around the principle that even Apple cannot see what runs inside a user's session. The cryptographic boundary is structural. That model is overkill for most product surfaces, but it makes the point in the strongest possible form: when the cost of getting trust wrong is unbounded, the boundary has to be designed-in rather than enforced socially. The right amount of sandbox for an enterprise coding agent is less than Apple's. It is also not zero.
 
-The claim the chapter wants to leave in the ledger is that sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: they are product infrastructure, not security overhead. A team that treats them as the security team's problem will discover the boundary by getting it wrong in production. A team that treats them as part of the runtime spec has a chance of getting them right before that.
+Sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: they are product infrastructure, not security overhead. A team that treats them as the security team's problem will discover the boundary by getting it wrong in production. A team that treats them as part of the runtime spec has a chance of getting them right before that.
 
 ## Standardized protocols expand the attack surface
 
@@ -66,7 +64,7 @@ Karan Sampath at Anthropic, working on enterprise MCP rollouts, names the struct
 
 David Mytton at Arcjet builds the same argument from outside-the-perimeter. His talk on defending sites from AI bots reads as a parallel chapter to the MCP discussion: as the ability to script automated interaction expands, the cost of identifying and bounding that interaction expands with it. The defender's surface is no smaller. It is larger, and the attacker now has standardized tools.
 
-The claim this section anchors is that protocol standardization expands the attack surface if governance lags. It is not an argument against standardization. It is an argument that standardization is a forcing function for governance work that has to happen in parallel, not afterwards.
+Protocol standardization expands the attack surface if governance lags. It is not an argument against standardization. It is an argument that standardization is a forcing function for governance work that has to happen in parallel, not afterwards.
 
 ## Enterprise MCP rolls up to gateways and a root of trust
 
@@ -88,7 +86,7 @@ Galow's cross-app access work at WorkOS is one of the cleanest framings of the s
 
 Hanson's OAuth argument fits into the same shape. The right pattern for agent credentials is short-lived, scoped tokens issued through a flow the identity provider can audit — not standing keys, not impersonation, not human credentials borrowed for agent work. Morrow's step-up OAuth on GitHub is the same pattern at the tool layer: the agent never holds more authority than it currently needs, and any escalation goes through a flow that produces a record.
 
-The claim is simple: repeated per-tool OAuth flows are not just annoying; they are a governance and IT visibility problem. The fix is structural — push the trust bridge into the identity provider — and the architectural payoff is the same as in the gateway argument: the enterprise can answer the basic auditing questions ("who delegated what, to whom, when, and for how long?") because the system was built to capture them, not because someone reconstructed them after the fact.
+Repeated per-tool OAuth flows are not just annoying; they are a governance and IT visibility problem. The fix is structural — push the trust bridge into the identity provider — and the architectural payoff is the same as in the gateway argument: the enterprise can answer the basic auditing questions ("who delegated what, to whom, when, and for how long?") because the system was built to capture them, not because someone reconstructed them after the fact.
 
 ## Audit as part of the trust model
 
