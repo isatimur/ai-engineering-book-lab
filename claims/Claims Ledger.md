@@ -563,11 +563,11 @@
     - **Anchor:** `AHtGAgQ0Q_Q` 00:07:00.000 → 00:07:10.720 · confidence: high
     - **Quote:** "We have been sandboxing untrusted code for decades. Your browser does it right now. Every tab run in its own sandbox."
   - [[149-CCsWZ5bJlO8-the-unofficial-guide-to-apple-s-private-cloud-compute-jmo-confsec|#149 — Jmo, CONFSEC, on Apple Private Cloud Compute]] — the high-end version of designed-in cryptographic boundary; useful as the extreme reference even when not the right pattern for every product.
-    - **Anchor:** `CCsWZ5bJlO8` 00:00:15.599 → 00:00:16.160 · confidence: high
-    - **Quote:** "private cloud compute."
+    - **Anchor:** `CCsWZ5bJlO8` 00:04:38.880 → 00:04:41.360 · confidence: high
+    - **Quote:** "these are what they call enforceable guarantees, not just policies."
   - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Mark Myshatyn, Los Alamos National Lab]] — the regulated public-sector setting where these constraints become legal requirements rather than best practices.
-    - **Anchor:** `TnSGx36Ly0Q` 00:01:10.960 → 00:01:11.200 · confidence: low
-    - **Quote:** "with agents,"
+    - **Anchor:** `TnSGx36Ly0Q` 00:15:29.519 → 00:15:33.040 · confidence: high
+    - **Quote:** "we see it as the greatest opportunity and the greatest threat to national security,"
 - **Caveats / counterpoints:** Maximum sandboxing has real costs in latency, developer experience, and integration ease. The right setting is workflow-specific. The claim is about the category, not a universal sandbox spec.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: product infrastructure, not security overhead.
@@ -577,14 +577,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32 — Tun Shwe, Lenses]] — "Your insecure MCP server won't survive production"; a tour of demo-grade assumptions that fail at real load.
-    - **Anchor:** `BurJvbqFr4c` 00:00:04.000 → 00:00:05.080 · confidence: high
-    - **Quote:** "insecure MCP server"
+    - **Anchor:** `BurJvbqFr4c` 00:09:35.400 → 00:09:41.520 · confidence: high
+    - **Quote:** "there's no halfway house because you can't do a little bit of production. You're either behind the wall or you're standing out in the open."
   - [[624-CD6R4Wf3jnY-what-we-learned-scaling-mcps-to-enterprise-karan-sampath-anthropic|#624 — Karan Sampath, Anthropic]] — the structural answer from the enterprise governance side; without a root of trust, capability standardization makes inspection harder, not easier.
-    - **Anchor:** `CD6R4Wf3jnY` 00:06:06.800 → 00:06:07.080 · confidence: high
-    - **Quote:** "root of trust."
+    - **Anchor:** `CD6R4Wf3jnY` 00:06:00.800 → 00:06:07.080 · confidence: high
+    - **Quote:** "The really important thing for security teams and enterprises that want to allow this to be decentralized is they need to establish a root of trust."
   - [[148-Gi4V8viBGYQ-how-to-defend-your-sites-from-ai-bots-david-mytton-arcjet|#148 — David Mytton, Arcjet]] — the parallel argument from outside the perimeter; the defender's surface expands with the attacker's standardized toolkit.
-    - **Anchor:** `Gi4V8viBGYQ` 00:04:37.680 → 00:04:38.000 · confidence: high
-    - **Quote:** "AI bots"
+    - **Anchor:** `Gi4V8viBGYQ` 00:07:24.240 → 00:07:30.000 · confidence: high
+    - **Quote:** "something like operator just shows up as a Chrome browser and it's much more challenging to understand and detect"
 - **Caveats / counterpoints:** Not an argument against standardization. Standardization remains the right move for interoperability. The claim is that it is also a forcing function — security and governance work has to happen alongside it, not afterwards.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Standardization is a forcing function for governance work, not a substitute for it.
@@ -594,14 +594,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[624-CD6R4Wf3jnY-what-we-learned-scaling-mcps-to-enterprise-karan-sampath-anthropic|#624 — Karan Sampath, Anthropic]] — root of trust at the platform; servers reviewed before being allowed; tools scoped to principals; audit built into the gateway layer.
-    - **Anchor:** `CD6R4Wf3jnY` 00:06:06.800 → 00:06:07.080 · confidence: high
-    - **Quote:** "root of trust."
+    - **Anchor:** `CD6R4Wf3jnY` 00:06:08.680 → 00:06:13.600 · confidence: high
+    - **Quote:** "we think that the goal for a secure this for any security team is to is to bless one platform."
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — production-scale shape: tools filtered by PAT scopes; step-up OAuth used for additional privileges only when needed; capability follows authority dynamically.
-    - **Anchor:** `0n3MKk7r60w` 00:00:42.200 → 00:00:42.200 · confidence: high
-    - **Quote:** "scaling"
+    - **Anchor:** `0n3MKk7r60w` 00:00:39.520 → 00:00:45.360 · confidence: high
+    - **Quote:** "challenges we've faced building and scaling our remote server, how we've overcome them,"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — the credential-layer foundation the gateway pattern rests on.
-    - **Anchor:** `blmAkayzE8M` 00:01:27.360 → 00:01:27.360 · confidence: high
-    - **Quote:** "scoped."
+    - **Anchor:** `blmAkayzE8M` 00:01:33.600 → 00:01:38.240 · confidence: high
+    - **Quote:** "if we continue this pattern for hundreds or thousands of agents, we've got a pretty big security problem on our hand."
 - **Caveats / counterpoints:** Small teams and developer environments can ship useful MCP work without the full gateway stack. The claim is about the architecture mature enterprise deployments converge on, not the starting position for every team. Also: the IAM/API-gateway analogy is useful but imperfect — capability is a different category than request, and the governance models will continue to diverge.
 - **Candidate chapters:** 7, 9
 - **Reusable phrasing:** The root of trust is established at the platform, not at the individual tool.
@@ -611,14 +611,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — cross-app access: identity provider as trust bridge; central enterprise visibility into delegated authority.
-    - **Anchor:** `EmhRyw6xeT0` 00:00:27.760 → 00:00:28.000 · confidence: high
-    - **Quote:** "one login"
+    - **Anchor:** `EmhRyw6xeT0` 00:06:09.680 → 00:06:13.039 · confidence: high
+    - **Quote:** "you have this like lasting access problem that it doesn't have any visibility over"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — OAuth-scoped tokens, issued through a flow the identity provider can audit, as the right credential shape for agent work.
-    - **Anchor:** `blmAkayzE8M` 00:00:23.840 → 00:00:24.160 · confidence: high
-    - **Quote:** "secure agents"
+    - **Anchor:** `blmAkayzE8M` 00:01:41.439 → 00:01:46.479 · confidence: high
+    - **Quote:** "We know how to transition away from static secrets uh, to dynamic access using OOTH."
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — step-up OAuth as the same pattern at the tool layer: agent holds only the authority it currently needs; escalations produce records.
-    - **Anchor:** `0n3MKk7r60w` 00:12:40.120 → 00:12:40.120 · confidence: high
-    - **Quote:** "PAT"
+    - **Anchor:** `0n3MKk7r60w` 00:12:36.440 → 00:12:45.360 · confidence: high
+    - **Quote:** "if you log into GitHub MCP with a PAT token that we just immediately filter the tools down by the scopes that the token has."
 - **Caveats / counterpoints:** Cross-app access is one possible enterprise path, not the only one. Alternatives (per-team gateway approval, single-vendor SaaS bundles, custom IT-managed proxies) exist and may dominate in specific contexts. The structural claim — that the consent surface is also a governance surface — holds across all of them.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** A faster consent flow with no visibility is not progress.
@@ -628,17 +628,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[065-MGzymaYBiss-dispatch-from-the-future-building-an-ai-native-company-dan-shipper-every-ai-i|#65 — Dan Shipper, Every]] — "There is a 10x difference between an organization where 90% of engineers use AI versus one where 100% do" — the discontinuity-at-full-adoption framing.
-    - **Anchor:** `MGzymaYBiss` 00:02:17.680 → 00:02:18.080 · confidence: high
-    - **Quote:** "10x difference"
+    - **Anchor:** `MGzymaYBiss` 00:02:17.280 → 00:02:24.800 · confidence: high
+    - **Quote:** "there's a 10x difference between an org where 90% of the engineers are using AI versus an org where 100% of the engineers are using AI."
   - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the "from hype to habit" cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
-    - **Anchor:** `mQ7_Zje7WKE` 00:00:47.440 → 00:00:47.840 · confidence: high
-    - **Quote:** "AI engineering"
+    - **Anchor:** `mQ7_Zje7WKE` 00:08:08.400 → 00:08:11.919 · confidence: high
+    - **Quote:** "80% of respondents say LLMs are working well at work,"
   - [[199-3YGRcgZJ3yc-from-hype-to-habit-how-we-re-building-an-ai-first-saas-company-while-still-shipping-the-ro|#199 — From Hype to Habit (AI-first SaaS)]] — case study of an AI-first company that still ships a roadmap; describes operating-model redesign in detail.
-    - **Anchor:** `3YGRcgZJ3yc` 00:00:18.640 → 00:00:19.039 · confidence: high
-    - **Quote:** "AI first"
+    - **Anchor:** `3YGRcgZJ3yc` 00:02:00.240 → 00:02:12.640 · confidence: high
+    - **Quote:** "It's about evolving from AI features sprinkled into the product to rethinking how you plan, build, and deliver value all through an AI lens."
   - [[062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian|#62 — Justin Reock, DX (acq. Atlassian)]] — manager role shifts from allocating production capacity (now abundant) to allocating judgment and attention (still scarce); the org chart was built to ration the wrong resource.
-    - **Anchor:** `PmZDupFP3UM` 00:14:12.079 → 00:14:12.480 · confidence: high
-    - **Quote:** "required reading"
+    - **Anchor:** `PmZDupFP3UM` 00:05:01.199 → 00:05:11.520 · confidence: high
+    - **Quote:** "writing code has never been the bottleneck, right? We can in uh we can increase productivity a bit by helping with code completion, but our our biggest bottlenecks are elsewhere within the SDLC."
 - **Caveats / counterpoints:** The 10x figure is a discontinuity claim from one practitioner, not a controlled measurement. The structural argument (full vs partial adoption produces qualitatively different organizations) is robust across the cluster; the specific multiplier is not the load-bearing part.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** AI-native is the operating model, not the procurement.

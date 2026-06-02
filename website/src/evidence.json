@@ -1417,30 +1417,30 @@
       "anchors": [
         {
           "video_id": "CD6R4Wf3jnY",
-          "start": "00:06:06.800",
-          "end": "00:06:07.080",
-          "start_seconds": 366,
+          "start": "00:06:08.680",
+          "end": "00:06:13.600",
+          "start_seconds": 368,
           "confidence": "high",
           "label": "#624 — Karan Sampath, Anthropic",
-          "quote": "root of trust."
+          "quote": "we think that the goal for a secure this for any security team is to is to bless one platform."
         },
         {
           "video_id": "0n3MKk7r60w",
-          "start": "00:00:42.200",
-          "end": "00:00:42.200",
-          "start_seconds": 42,
+          "start": "00:00:39.520",
+          "end": "00:00:45.360",
+          "start_seconds": 39,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "scaling"
+          "quote": "challenges we've faced building and scaling our remote server, how we've overcome them,"
         },
         {
           "video_id": "blmAkayzE8M",
-          "start": "00:01:27.360",
-          "end": "00:01:27.360",
-          "start_seconds": 87,
+          "start": "00:01:33.600",
+          "end": "00:01:38.240",
+          "start_seconds": 93,
           "confidence": "high",
           "label": "#150 — Jared Hanson, Keycard",
-          "quote": "scoped."
+          "quote": "if we continue this pattern for hundreds or thousands of agents, we've got a pretty big security problem on our hand."
         }
       ]
     },
@@ -1451,39 +1451,39 @@
       "anchors": [
         {
           "video_id": "MGzymaYBiss",
-          "start": "00:02:17.680",
-          "end": "00:02:18.080",
+          "start": "00:02:17.280",
+          "end": "00:02:24.800",
           "start_seconds": 137,
           "confidence": "high",
           "label": "#65 — Dan Shipper, Every",
-          "quote": "10x difference"
+          "quote": "there's a 10x difference between an org where 90% of the engineers are using AI versus an org where 100% of the engineers are using AI."
         },
         {
           "video_id": "mQ7_Zje7WKE",
-          "start": "00:00:47.440",
-          "end": "00:00:47.840",
-          "start_seconds": 47,
+          "start": "00:08:08.400",
+          "end": "00:08:11.919",
+          "start_seconds": 488,
           "confidence": "high",
           "label": "#137 — Barr Yaron, Amplify (2025 AI Engineering Report)",
-          "quote": "AI engineering"
+          "quote": "80% of respondents say LLMs are working well at work,"
         },
         {
           "video_id": "3YGRcgZJ3yc",
-          "start": "00:00:18.640",
-          "end": "00:00:19.039",
-          "start_seconds": 18,
+          "start": "00:02:00.240",
+          "end": "00:02:12.640",
+          "start_seconds": 120,
           "confidence": "high",
           "label": "#199 — From Hype to Habit (AI-first SaaS)",
-          "quote": "AI first"
+          "quote": "It's about evolving from AI features sprinkled into the product to rethinking how you plan, build, and deliver value all through an AI lens."
         },
         {
           "video_id": "PmZDupFP3UM",
-          "start": "00:14:12.079",
-          "end": "00:14:12.480",
-          "start_seconds": 852,
+          "start": "00:05:01.199",
+          "end": "00:05:11.520",
+          "start_seconds": 301,
           "confidence": "high",
           "label": "#62 — Justin Reock, DX (acq. Atlassian)",
-          "quote": "required reading"
+          "quote": "writing code has never been the bottleneck, right? We can in uh we can increase productivity a bit by helping with code completion, but our our biggest bottlenecks are elsewhere within the SDLC."
         }
       ]
     },
@@ -2345,21 +2345,21 @@
         },
         {
           "video_id": "CCsWZ5bJlO8",
-          "start": "00:00:15.599",
-          "end": "00:00:16.160",
-          "start_seconds": 15,
+          "start": "00:04:38.880",
+          "end": "00:04:41.360",
+          "start_seconds": 278,
           "confidence": "high",
           "label": "#149 — Jmo, CONFSEC, on Apple Private Cloud Compute",
-          "quote": "private cloud compute."
+          "quote": "these are what they call enforceable guarantees, not just policies."
         },
         {
           "video_id": "TnSGx36Ly0Q",
-          "start": "00:01:10.960",
-          "end": "00:01:11.200",
-          "start_seconds": 70,
-          "confidence": "low",
+          "start": "00:15:29.519",
+          "end": "00:15:33.040",
+          "start_seconds": 929,
+          "confidence": "high",
           "label": "#86 — Mark Myshatyn, Los Alamos National Lab",
-          "quote": "with agents,"
+          "quote": "we see it as the greatest opportunity and the greatest threat to national security,"
         }
       ]
     },
@@ -2370,30 +2370,30 @@
       "anchors": [
         {
           "video_id": "BurJvbqFr4c",
-          "start": "00:00:04.000",
-          "end": "00:00:05.080",
-          "start_seconds": 4,
+          "start": "00:09:35.400",
+          "end": "00:09:41.520",
+          "start_seconds": 575,
           "confidence": "high",
           "label": "#32 — Tun Shwe, Lenses",
-          "quote": "insecure MCP server"
+          "quote": "there's no halfway house because you can't do a little bit of production. You're either behind the wall or you're standing out in the open."
         },
         {
           "video_id": "CD6R4Wf3jnY",
-          "start": "00:06:06.800",
+          "start": "00:06:00.800",
           "end": "00:06:07.080",
-          "start_seconds": 366,
+          "start_seconds": 360,
           "confidence": "high",
           "label": "#624 — Karan Sampath, Anthropic",
-          "quote": "root of trust."
+          "quote": "The really important thing for security teams and enterprises that want to allow this to be decentralized is they need to establish a root of trust."
         },
         {
           "video_id": "Gi4V8viBGYQ",
-          "start": "00:04:37.680",
-          "end": "00:04:38.000",
-          "start_seconds": 277,
+          "start": "00:07:24.240",
+          "end": "00:07:30.000",
+          "start_seconds": 444,
           "confidence": "high",
           "label": "#148 — David Mytton, Arcjet",
-          "quote": "AI bots"
+          "quote": "something like operator just shows up as a Chrome browser and it's much more challenging to understand and detect"
         }
       ]
     },
@@ -2404,30 +2404,30 @@
       "anchors": [
         {
           "video_id": "CD6R4Wf3jnY",
-          "start": "00:06:06.800",
-          "end": "00:06:07.080",
-          "start_seconds": 366,
+          "start": "00:06:08.680",
+          "end": "00:06:13.600",
+          "start_seconds": 368,
           "confidence": "high",
           "label": "#624 — Karan Sampath, Anthropic",
-          "quote": "root of trust."
+          "quote": "we think that the goal for a secure this for any security team is to is to bless one platform."
         },
         {
           "video_id": "0n3MKk7r60w",
-          "start": "00:00:42.200",
-          "end": "00:00:42.200",
-          "start_seconds": 42,
+          "start": "00:00:39.520",
+          "end": "00:00:45.360",
+          "start_seconds": 39,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "scaling"
+          "quote": "challenges we've faced building and scaling our remote server, how we've overcome them,"
         },
         {
           "video_id": "blmAkayzE8M",
-          "start": "00:01:27.360",
-          "end": "00:01:27.360",
-          "start_seconds": 87,
+          "start": "00:01:33.600",
+          "end": "00:01:38.240",
+          "start_seconds": 93,
           "confidence": "high",
           "label": "#150 — Jared Hanson, Keycard",
-          "quote": "scoped."
+          "quote": "if we continue this pattern for hundreds or thousands of agents, we've got a pretty big security problem on our hand."
         }
       ]
     },
@@ -2438,30 +2438,30 @@
       "anchors": [
         {
           "video_id": "EmhRyw6xeT0",
-          "start": "00:00:27.760",
-          "end": "00:00:28.000",
-          "start_seconds": 27,
+          "start": "00:06:09.680",
+          "end": "00:06:13.039",
+          "start_seconds": 369,
           "confidence": "high",
           "label": "#627 — Garrett Galow, WorkOS",
-          "quote": "one login"
+          "quote": "you have this like lasting access problem that it doesn't have any visibility over"
         },
         {
           "video_id": "blmAkayzE8M",
-          "start": "00:00:23.840",
-          "end": "00:00:24.160",
-          "start_seconds": 23,
+          "start": "00:01:41.439",
+          "end": "00:01:46.479",
+          "start_seconds": 101,
           "confidence": "high",
           "label": "#150 — Jared Hanson, Keycard",
-          "quote": "secure agents"
+          "quote": "We know how to transition away from static secrets uh, to dynamic access using OOTH."
         },
         {
           "video_id": "0n3MKk7r60w",
-          "start": "00:12:40.120",
-          "end": "00:12:40.120",
-          "start_seconds": 760,
+          "start": "00:12:36.440",
+          "end": "00:12:45.360",
+          "start_seconds": 756,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "PAT"
+          "quote": "if you log into GitHub MCP with a PAT token that we just immediately filter the tools down by the scopes that the token has."
         }
       ]
     }
