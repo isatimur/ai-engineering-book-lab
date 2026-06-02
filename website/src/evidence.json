@@ -265,12 +265,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:00:18.800",
-          "end": "00:00:19.520",
-          "start_seconds": 18,
+          "start": "00:05:27.840",
+          "end": "00:05:31.840",
+          "start_seconds": 327,
           "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "mentoring the machine."
+          "quote": "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -324,12 +324,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.960",
-          "end": "00:00:45.920",
+          "start": "00:00:44.000",
+          "end": "00:00:47.039",
           "start_seconds": 44,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "reliable scalable applications"
+          "quote": "We still want to build reliable scalable applications and that is still hard"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -401,12 +401,12 @@
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:01:56.479",
-          "end": "00:01:57.119",
-          "start_seconds": 116,
+          "start": "00:01:44.640",
+          "end": "00:01:51.840",
+          "start_seconds": 104,
           "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "about token anxiety,"
+          "quote": "the reason context platform engineering is so important is it dramatically simplifies reaching maximum KV cache hit rates"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -444,12 +444,12 @@
       "anchors": [
         {
           "video_id": "flf_IKnFYnE",
-          "start": "00:00:41.680",
-          "end": "00:00:42.559",
-          "start_seconds": 41,
+          "start": "00:00:43.920",
+          "end": "00:00:47.840",
+          "start_seconds": 43,
           "confidence": "high",
           "label": "#99 — Samuel Colvin, Pydantic",
-          "quote": "durable execution component."
+          "quote": "once we get into longer running workflows, that's where it really becomes a problem."
         },
         {
           "video_id": "1izYWsokr9s",
@@ -573,12 +573,12 @@
       "anchors": [
         {
           "video_id": "rnDm57Py54A",
-          "start": "00:00:34.480",
+          "start": "00:00:32.000",
           "end": "00:00:34.880",
-          "start_seconds": 34,
+          "start_seconds": 32,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "software factory"
+          "quote": "getting to a place where you can build your own like software factory"
         },
         {
           "video_id": "MhHEGMFCEB0",
@@ -702,12 +702,12 @@
       "anchors": [
         {
           "video_id": "pFsfax19yOM",
-          "start": "00:00:15.759",
-          "end": "00:00:16.240",
-          "start_seconds": 15,
+          "start": "00:07:36.160",
+          "end": "00:07:41.120",
+          "start_seconds": 456,
           "confidence": "high",
           "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
-          "quote": "skills at scale."
+          "quote": "That's what a skill is. You're teaching the the LLM how to do something in the way that you expect it to be done"
         },
         {
           "video_id": "JT3OzDKrucU",
@@ -745,12 +745,12 @@
         },
         {
           "video_id": "pFsfax19yOM",
-          "start": "00:44:25.040",
+          "start": "00:44:21.440",
           "end": "00:44:25.520",
-          "start_seconds": 2665,
+          "start_seconds": 2661,
           "confidence": "high",
           "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
-          "quote": "progressive disclosure."
+          "quote": "you can do it in a better way. And that is specifically with progressive disclosure."
         },
         {
           "video_id": "0n3MKk7r60w",
@@ -865,21 +865,21 @@
       "anchors": [
         {
           "video_id": "fh9LgKXBGnQ",
-          "start": "00:00:20.320",
-          "end": "00:00:21.039",
-          "start_seconds": 20,
+          "start": "00:04:12.239",
+          "end": "00:04:16.400",
+          "start_seconds": 252,
           "confidence": "high",
           "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "enterprise deep research,"
+          "quote": "picking up the right documents and answering those questions is a really cool use case."
         },
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:00:10.800",
-          "end": "00:00:12.000",
-          "start_seconds": 10,
+          "start": "00:00:28.800",
+          "end": "00:00:36.399",
+          "start_seconds": 28,
           "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "context platform engineering"
+          "quote": "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -892,12 +892,12 @@
         },
         {
           "video_id": "xnXqpUW_Kp8",
-          "start": "00:05:08.320",
-          "end": "00:05:08.320",
-          "start_seconds": 308,
+          "start": "00:17:04.400",
+          "end": "00:17:08.799",
+          "start_seconds": 1024,
           "confidence": "high",
           "label": "#157 — Will Bryk, Exa.ai",
-          "quote": "Exa"
+          "quote": "the right agent in the future is going to be this system that decides what type of search"
         }
       ]
     },
@@ -909,38 +909,38 @@
         {
           "video_id": "Jty4s9-Jb78",
           "start": "00:02:54.120",
-          "end": "00:02:54.760",
+          "end": "00:02:59.080",
           "start_seconds": 174,
           "confidence": "high",
           "label": "#48 — Jack Morris",
-          "quote": "rag or retrieval"
+          "quote": "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
         },
         {
           "video_id": "T5IMo5ntyhA",
-          "start": "00:00:24.400",
-          "end": "00:00:25.920",
-          "start_seconds": 24,
+          "start": "00:00:23.279",
+          "end": "00:00:27.279",
+          "start_seconds": 23,
           "confidence": "high",
           "label": "#218 — Daniel Chalef, Zep",
-          "quote": "model your memory"
+          "quote": "why you need to model your memory after your business domain."
         },
         {
           "video_id": "LLuKshphGOE",
-          "start": "00:07:23.759",
-          "end": "00:07:24.080",
-          "start_seconds": 443,
+          "start": "00:08:04.879",
+          "end": "00:08:13.039",
+          "start_seconds": 484,
           "confidence": "high",
           "label": "#105 — Stephen Chin, Neo4j",
-          "quote": "knowledge graph"
+          "quote": "the basic construct of a knowledge graph is um nodes which represent different people in the situation, relationships, and then you can attach properties to these nodes."
         },
         {
           "video_id": "XNneh6-eyPg",
-          "start": "00:00:25.840",
-          "end": "00:00:25.840",
-          "start_seconds": 25,
+          "start": "00:00:19.279",
+          "end": "00:00:27.359",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#215 — Michael, Jesus & Stephen, Neo4j",
-          "quote": "smarter"
+          "quote": "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
         },
         {
           "video_id": "-tgQa8Fzf80",
@@ -1023,12 +1023,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:00:18.800",
-          "end": "00:00:19.520",
-          "start_seconds": 18,
+          "start": "00:05:27.840",
+          "end": "00:05:31.840",
+          "start_seconds": 327,
           "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "mentoring the machine."
+          "quote": "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -1091,12 +1091,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.960",
-          "end": "00:00:45.920",
+          "start": "00:00:44.000",
+          "end": "00:00:47.039",
           "start_seconds": 44,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "reliable scalable applications"
+          "quote": "We still want to build reliable scalable applications and that is still hard"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -1168,12 +1168,12 @@
       "anchors": [
         {
           "video_id": "rnDm57Py54A",
-          "start": "00:00:34.480",
+          "start": "00:00:32.000",
           "end": "00:00:34.880",
-          "start_seconds": 34,
+          "start_seconds": 32,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "software factory"
+          "quote": "getting to a place where you can build your own like software factory"
         },
         {
           "video_id": "MhHEGMFCEB0",
@@ -1340,21 +1340,21 @@
       "anchors": [
         {
           "video_id": "fh9LgKXBGnQ",
-          "start": "00:00:20.320",
-          "end": "00:00:21.039",
-          "start_seconds": 20,
+          "start": "00:04:12.239",
+          "end": "00:04:16.400",
+          "start_seconds": 252,
           "confidence": "high",
           "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "enterprise deep research,"
+          "quote": "picking up the right documents and answering those questions is a really cool use case."
         },
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:00:10.800",
-          "end": "00:00:12.000",
-          "start_seconds": 10,
+          "start": "00:00:28.800",
+          "end": "00:00:36.399",
+          "start_seconds": 28,
           "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "context platform engineering"
+          "quote": "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -1367,12 +1367,12 @@
         },
         {
           "video_id": "xnXqpUW_Kp8",
-          "start": "00:05:08.320",
-          "end": "00:05:08.320",
-          "start_seconds": 308,
+          "start": "00:17:04.400",
+          "end": "00:17:08.799",
+          "start_seconds": 1024,
           "confidence": "high",
           "label": "#157 — Will Bryk, Exa.ai",
-          "quote": "Exa"
+          "quote": "the right agent in the future is going to be this system that decides what type of search"
         }
       ]
     },
@@ -1777,12 +1777,12 @@
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:01:56.479",
-          "end": "00:01:57.119",
-          "start_seconds": 116,
+          "start": "00:01:44.640",
+          "end": "00:01:51.840",
+          "start_seconds": 104,
           "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "about token anxiety,"
+          "quote": "the reason context platform engineering is so important is it dramatically simplifies reaching maximum KV cache hit rates"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -2078,12 +2078,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.960",
-          "end": "00:00:45.920",
+          "start": "00:00:44.000",
+          "end": "00:00:47.039",
           "start_seconds": 44,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "reliable scalable applications"
+          "quote": "We still want to build reliable scalable applications and that is still hard"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -2121,12 +2121,12 @@
       "anchors": [
         {
           "video_id": "flf_IKnFYnE",
-          "start": "00:00:41.680",
-          "end": "00:00:42.559",
-          "start_seconds": 41,
+          "start": "00:00:43.920",
+          "end": "00:00:47.840",
+          "start_seconds": 43,
           "confidence": "high",
           "label": "#99 — Samuel Colvin, Pydantic",
-          "quote": "durable execution component."
+          "quote": "once we get into longer running workflows, that's where it really becomes a problem."
         },
         {
           "video_id": "1izYWsokr9s",
@@ -2526,12 +2526,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:00:18.800",
-          "end": "00:00:19.520",
-          "start_seconds": 18,
+          "start": "00:05:27.840",
+          "end": "00:05:31.840",
+          "start_seconds": 327,
           "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "mentoring the machine."
+          "quote": "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -2644,12 +2644,12 @@
       "anchors": [
         {
           "video_id": "rnDm57Py54A",
-          "start": "00:00:34.480",
+          "start": "00:00:32.000",
           "end": "00:00:34.880",
-          "start_seconds": 34,
+          "start_seconds": 32,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "software factory"
+          "quote": "getting to a place where you can build your own like software factory"
         },
         {
           "video_id": "MhHEGMFCEB0",
@@ -2705,12 +2705,12 @@
       "anchors": [
         {
           "video_id": "pFsfax19yOM",
-          "start": "00:00:15.759",
-          "end": "00:00:16.240",
-          "start_seconds": 15,
+          "start": "00:07:36.160",
+          "end": "00:07:41.120",
+          "start_seconds": 456,
           "confidence": "high",
           "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
-          "quote": "skills at scale."
+          "quote": "That's what a skill is. You're teaching the the LLM how to do something in the way that you expect it to be done"
         },
         {
           "video_id": "JT3OzDKrucU",
@@ -2836,12 +2836,12 @@
         },
         {
           "video_id": "Zniw5c9_jx8",
-          "start": "00:00:18.800",
-          "end": "00:00:19.520",
-          "start_seconds": 18,
+          "start": "00:05:27.840",
+          "end": "00:05:31.840",
+          "start_seconds": 327,
           "confidence": "high",
           "label": "#190 — Eric Hou, Augment Code",
-          "quote": "mentoring the machine."
+          "quote": "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
         },
         {
           "video_id": "x_1EumTaXeE",
@@ -2929,12 +2929,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.960",
-          "end": "00:00:45.920",
+          "start": "00:00:44.000",
+          "end": "00:00:47.039",
           "start_seconds": 44,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "reliable scalable applications"
+          "quote": "We still want to build reliable scalable applications and that is still hard"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -3171,12 +3171,12 @@
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:01:56.479",
-          "end": "00:01:57.119",
-          "start_seconds": 116,
+          "start": "00:01:44.640",
+          "end": "00:01:51.840",
+          "start_seconds": 104,
           "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "about token anxiety,"
+          "quote": "the reason context platform engineering is so important is it dramatically simplifies reaching maximum KV cache hit rates"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -3248,12 +3248,12 @@
       "anchors": [
         {
           "video_id": "pFsfax19yOM",
-          "start": "00:00:15.759",
-          "end": "00:00:16.240",
-          "start_seconds": 15,
+          "start": "00:07:36.160",
+          "end": "00:07:41.120",
+          "start_seconds": 456,
           "confidence": "high",
           "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
-          "quote": "skills at scale."
+          "quote": "That's what a skill is. You're teaching the the LLM how to do something in the way that you expect it to be done"
         },
         {
           "video_id": "JT3OzDKrucU",
@@ -3291,12 +3291,12 @@
         },
         {
           "video_id": "pFsfax19yOM",
-          "start": "00:44:25.040",
+          "start": "00:44:21.440",
           "end": "00:44:25.520",
-          "start_seconds": 2665,
+          "start_seconds": 2661,
           "confidence": "high",
           "label": "#654 — Nick Nisi & Zack Proser, WorkOS",
-          "quote": "progressive disclosure."
+          "quote": "you can do it in a better way. And that is specifically with progressive disclosure."
         },
         {
           "video_id": "0n3MKk7r60w",
@@ -3316,21 +3316,21 @@
       "anchors": [
         {
           "video_id": "fh9LgKXBGnQ",
-          "start": "00:00:20.320",
-          "end": "00:00:21.039",
-          "start_seconds": 20,
+          "start": "00:04:12.239",
+          "end": "00:04:16.400",
+          "start_seconds": 252,
           "confidence": "high",
           "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "enterprise deep research,"
+          "quote": "picking up the right documents and answering those questions is a really cool use case."
         },
         {
           "video_id": "NTBX-wxUhHs",
-          "start": "00:00:10.800",
-          "end": "00:00:12.000",
-          "start_seconds": 10,
+          "start": "00:00:28.800",
+          "end": "00:00:36.399",
+          "start_seconds": 28,
           "confidence": "high",
           "label": "#104 — Val Bercovici, WEKA",
-          "quote": "context platform engineering"
+          "quote": "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
         },
         {
           "video_id": "LLuKshphGOE",
@@ -3343,12 +3343,12 @@
         },
         {
           "video_id": "xnXqpUW_Kp8",
-          "start": "00:05:08.320",
-          "end": "00:05:08.320",
-          "start_seconds": 308,
+          "start": "00:17:04.400",
+          "end": "00:17:08.799",
+          "start_seconds": 1024,
           "confidence": "high",
           "label": "#157 — Will Bryk, Exa.ai",
-          "quote": "Exa"
+          "quote": "the right agent in the future is going to be this system that decides what type of search"
         }
       ]
     },
@@ -3360,38 +3360,38 @@
         {
           "video_id": "Jty4s9-Jb78",
           "start": "00:02:54.120",
-          "end": "00:02:54.760",
+          "end": "00:02:59.080",
           "start_seconds": 174,
           "confidence": "high",
           "label": "#48 — Jack Morris",
-          "quote": "rag or retrieval"
+          "quote": "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
         },
         {
           "video_id": "T5IMo5ntyhA",
-          "start": "00:00:24.400",
-          "end": "00:00:25.920",
-          "start_seconds": 24,
+          "start": "00:00:23.279",
+          "end": "00:00:27.279",
+          "start_seconds": 23,
           "confidence": "high",
           "label": "#218 — Daniel Chalef, Zep",
-          "quote": "model your memory"
+          "quote": "why you need to model your memory after your business domain."
         },
         {
           "video_id": "LLuKshphGOE",
-          "start": "00:07:23.759",
-          "end": "00:07:24.080",
-          "start_seconds": 443,
+          "start": "00:08:04.879",
+          "end": "00:08:13.039",
+          "start_seconds": 484,
           "confidence": "high",
           "label": "#105 — Stephen Chin, Neo4j",
-          "quote": "knowledge graph"
+          "quote": "the basic construct of a knowledge graph is um nodes which represent different people in the situation, relationships, and then you can attach properties to these nodes."
         },
         {
           "video_id": "XNneh6-eyPg",
-          "start": "00:00:25.840",
-          "end": "00:00:25.840",
-          "start_seconds": 25,
+          "start": "00:00:19.279",
+          "end": "00:00:27.359",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#215 — Michael, Jesus & Stephen, Neo4j",
-          "quote": "smarter"
+          "quote": "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
         },
         {
           "video_id": "-tgQa8Fzf80",
@@ -3499,12 +3499,12 @@
       "anchors": [
         {
           "video_id": "flf_IKnFYnE",
-          "start": "00:00:41.680",
-          "end": "00:00:42.559",
-          "start_seconds": 41,
+          "start": "00:00:43.920",
+          "end": "00:00:47.840",
+          "start_seconds": 43,
           "confidence": "high",
           "label": "#99 — Samuel Colvin, Pydantic",
-          "quote": "durable execution component."
+          "quote": "once we get into longer running workflows, that's where it really becomes a problem."
         },
         {
           "video_id": "1izYWsokr9s",

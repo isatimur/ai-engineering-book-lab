@@ -62,8 +62,8 @@
     - **Anchor:** `ShuJ_CN6zr4` 00:03:30.720 → 00:03:36.480 · confidence: medium
     - **Quote:** "automated validation and verification of software that you build um testing right unit tests end"
   - [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Eric Hou, Augment Code]]
-    - **Anchor:** `Zniw5c9_jx8` 00:00:18.800 → 00:00:19.520 · confidence: high
-    - **Quote:** "mentoring the machine."
+    - **Anchor:** `Zniw5c9_jx8` 00:05:27.840 → 00:05:31.840 · confidence: high
+    - **Quote:** "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
   - [[179-x_1EumTaXeE-beyond-the-prototype-using-ai-to-write-high-quality-code-josh-albrecht-imbue|#179 — Josh Albrecht, Imbue]]
     - **Anchor:** `x_1EumTaXeE` 00:03:28.239 → 00:03:33.920 · confidence: high
     - **Quote:** "identifying problems with the code because if there's no problems then it's probably high quality code"
@@ -127,8 +127,8 @@
     - **Anchor:** `L8OoYeDI_ls` 00:13:40.000 → 00:13:43.040 · confidence: high
     - **Quote:** "improvement without measurement is limited and imprecise."
   - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `o_LRtAomJCs` 00:00:44.960 → 00:00:45.920 · confidence: high
-    - **Quote:** "reliable scalable applications"
+    - **Anchor:** `o_LRtAomJCs` 00:00:44.000 → 00:00:47.039 · confidence: high
+    - **Quote:** "We still want to build reliable scalable applications and that is still hard"
   - [[628-_fQ7Z_Wfouk-why-building-eval-platforms-is-hard-phil-hetzel-braintrust|#628 — Phil Hetzel, Braintrust]] — observability and eval are the same problem from a systems perspective.
     - **Anchor:** `_fQ7Z_Wfouk` 00:14:29.920 → 00:14:34.720 · confidence: high
     - **Quote:** "eval to us it's actually the same problem from a from a systems perspective."
@@ -163,8 +163,8 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]]
-    - **Anchor:** `NTBX-wxUhHs` 00:01:56.479 → 00:01:57.119 · confidence: high
-    - **Quote:** "about token anxiety,"
+    - **Anchor:** `NTBX-wxUhHs` 00:01:44.640 → 00:01:51.840 · confidence: high
+    - **Quote:** "the reason context platform engineering is so important is it dramatically simplifies reaching maximum KV cache hit rates"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]]
     - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
     - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
@@ -183,8 +183,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[099-flf_IKnFYnE-from-stateless-nightmares-to-durable-agents-samuel-colvin-pydantic|#99 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `flf_IKnFYnE` 00:00:41.680 → 00:00:42.559 · confidence: high
-    - **Quote:** "durable execution component."
+    - **Anchor:** `flf_IKnFYnE` 00:00:43.920 → 00:00:47.840 · confidence: high
+    - **Quote:** "once we get into longer running workflows, that's where it really becomes a problem."
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — durability and reliability are prerequisites for trust.
     - **Anchor:** `1izYWsokr9s` 00:01:28.640 → 00:01:29.840 · confidence: high
     - **Quote:** "no one's going to trust your agent."
@@ -243,8 +243,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
-    - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
-    - **Quote:** "software factory"
+    - **Anchor:** `rnDm57Py54A` 00:00:32.000 → 00:00:34.880 · confidence: high
+    - **Quote:** "getting to a place where you can build your own like software factory"
   - [[632-MhHEGMFCEB0-codex-and-subagents-vaibhav-srivastav-katia-gil-guzman-openai|#632 — Vaibhav Srivastav & Katia Gil Guzman, OpenAI]]
     - **Anchor:** `MhHEGMFCEB0` 00:02:47.920 → 00:02:51.280 · confidence: high
     - **Quote:** "unified agent harness that will manage"
@@ -302,8 +302,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]]
-    - **Anchor:** `pFsfax19yOM` 00:00:15.759 → 00:00:16.240 · confidence: high
-    - **Quote:** "skills at scale."
+    - **Anchor:** `pFsfax19yOM` 00:07:36.160 → 00:07:41.120 · confidence: high
+    - **Quote:** "That's what a skill is. You're teaching the the LLM how to do something in the way that you expect it to be done"
   - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Pedro Rodrigues, Supabase]]
     - **Anchor:** `JT3OzDKrucU` 00:03:13.040 → 00:03:13.880 · confidence: high
     - **Quote:** "This is how the agent is"
@@ -322,8 +322,8 @@
     - **Anchor:** `JT3OzDKrucU` 00:00:29.200 → 00:00:30.240 · confidence: high
     - **Quote:** "MCP versus skill debate"
   - [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654 — Nick Nisi & Zack Proser, WorkOS]] — progressive disclosure keeps context useful without bloating the window.
-    - **Anchor:** `pFsfax19yOM` 00:44:25.040 → 00:44:25.520 · confidence: high
-    - **Quote:** "progressive disclosure."
+    - **Anchor:** `pFsfax19yOM` 00:44:21.440 → 00:44:25.520 · confidence: high
+    - **Quote:** "you can do it in a better way. And that is specifically with progressive disclosure."
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — tool grouping, reduction, and discovery are necessary once tool surfaces scale.
     - **Anchor:** `0n3MKk7r60w` 00:03:25.560 → 00:03:27.160 · confidence: high
     - **Quote:** "grouping concept of related product"
@@ -437,17 +437,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — the hard problem of enterprise AI is access to the *relevant* documents, not access to documents.
-    - **Anchor:** `fh9LgKXBGnQ` 00:00:20.320 → 00:00:21.039 · confidence: high
-    - **Quote:** "enterprise deep research,"
+    - **Anchor:** `fh9LgKXBGnQ` 00:04:12.239 → 00:04:16.400 · confidence: high
+    - **Quote:** "picking up the right documents and answering those questions is a really cool use case."
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]] — context platform engineering as "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale."
-    - **Anchor:** `NTBX-wxUhHs` 00:00:10.800 → 00:00:12.000 · confidence: high
-    - **Quote:** "context platform engineering"
+    - **Anchor:** `NTBX-wxUhHs` 00:00:28.800 → 00:00:36.399 · confidence: high
+    - **Quote:** "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — context engineering as connecting the dots across the knowledge a system already has.
     - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
     - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
   - [[157-xnXqpUW_Kp8-building-a-smarter-ai-agent-with-neural-rag-will-bryk-exa-ai|#157 — Will Bryk, Exa.ai]] — neural RAG that integrates retrieval into the reasoning loop instead of running it once before the prompt.
-    - **Anchor:** `xnXqpUW_Kp8` 00:05:08.320 → 00:05:08.320 · confidence: high
-    - **Quote:** "Exa"
+    - **Anchor:** `xnXqpUW_Kp8` 00:17:04.400 → 00:17:08.799 · confidence: high
+    - **Quote:** "the right agent in the future is going to be this system that decides what type of search"
 - **Caveats / counterpoints:** Bigger context windows reduce some assembly pressure but do not eliminate ranking, freshness, deduplication, or capability problems. The claim is about the discipline, not a specific token budget.
 - **Candidate chapters:** 5, 6, 9
 - **Reusable phrasing:** Context is the substrate that determines what the system can even notice — not the garnish around intelligence.
@@ -457,17 +457,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — "Stuffing context is not memory" as a load-bearing architectural distinction, not a slogan.
-    - **Anchor:** `Jty4s9-Jb78` 00:02:54.120 → 00:02:54.760 · confidence: high
-    - **Quote:** "rag or retrieval"
+    - **Anchor:** `Jty4s9-Jb78` 00:02:54.120 → 00:02:59.080 · confidence: high
+    - **Quote:** "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
   - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]] — RAG carrying weight it was never designed to carry (long-term user state, evolving entity facts, cross-session continuity).
-    - **Anchor:** `T5IMo5ntyhA` 00:00:24.400 → 00:00:25.920 · confidence: high
-    - **Quote:** "model your memory"
+    - **Anchor:** `T5IMo5ntyhA` 00:00:23.279 → 00:00:27.279 · confidence: high
+    - **Quote:** "why you need to model your memory after your business domain."
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — graph retrieval as a different operation than flat vector retrieval, suited to relationship questions.
-    - **Anchor:** `LLuKshphGOE` 00:07:23.759 → 00:07:24.080 · confidence: high
-    - **Quote:** "knowledge graph"
+    - **Anchor:** `LLuKshphGOE` 00:08:04.879 → 00:08:13.039 · confidence: high
+    - **Quote:** "the basic construct of a knowledge graph is um nodes which represent different people in the situation, relationships, and then you can attach properties to these nodes."
   - [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215 — Michael, Jesus & Stephen, Neo4j]] — practical GraphRAG patterns under production constraints.
-    - **Anchor:** `XNneh6-eyPg` 00:00:25.840 → 00:00:25.840 · confidence: high
-    - **Quote:** "smarter"
+    - **Anchor:** `XNneh6-eyPg` 00:00:19.279 → 00:00:27.359 · confidence: high
+    - **Quote:** "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
   - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — Mitesh Patel, NVIDIA]] — hybrid RAG as the expected outcome once you accept graph and vector are different jobs.
     - **Anchor:** `-tgQa8Fzf80` 00:00:55.600 → 00:00:56.559 · confidence: high
     - **Quote:** "add the hybrid nature"
