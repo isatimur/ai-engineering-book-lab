@@ -443,8 +443,8 @@
     - **Anchor:** `NTBX-wxUhHs` 00:00:10.800 → 00:00:12.000 · confidence: high
     - **Quote:** "context platform engineering"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — context engineering as connecting the dots across the knowledge a system already has.
-    - **Anchor:** `LLuKshphGOE` 00:00:12.719 → 00:00:13.280 · confidence: high
-    - **Quote:** "context engineering"
+    - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
+    - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
   - [[157-xnXqpUW_Kp8-building-a-smarter-ai-agent-with-neural-rag-will-bryk-exa-ai|#157 — Will Bryk, Exa.ai]] — neural RAG that integrates retrieval into the reasoning loop instead of running it once before the prompt.
     - **Anchor:** `xnXqpUW_Kp8` 00:05:08.320 → 00:05:08.320 · confidence: high
     - **Quote:** "Exa"
