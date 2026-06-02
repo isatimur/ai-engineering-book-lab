@@ -648,17 +648,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[069-RmJ4rTLV_x4-your-support-team-should-ship-code-lisa-orr-zapier|#69 — Lisa Orr, Zapier]] — the radical-version provocation: "Your support team should ship code" — and the implicit governance work that has to come with it.
-    - **Anchor:** `RmJ4rTLV_x4` 00:00:25.439 → 00:00:25.840 · confidence: high
-    - **Quote:** "support team"
+    - **Anchor:** `RmJ4rTLV_x4` 00:00:23.039 → 00:00:26.640 · confidence: high
+    - **Quote:** "at Zapier we are empowering our support team to ship code."
   - [[162-xzJdSi2Tsqw-why-your-product-needs-an-ai-product-manager-and-why-it-should-be-you-james-lowe-i-ai|#162 — James Lowe, i.AI]] — the judgment-layer role: someone has to own which of the many possible artifacts is worth shipping and shape the constraints under which non-specialists create safely.
-    - **Anchor:** `xzJdSi2Tsqw` 00:01:48.479 → 00:01:48.880 · confidence: high
-    - **Quote:** "product manager."
+    - **Anchor:** `xzJdSi2Tsqw` 00:01:46.880 → 00:01:54.159 · confidence: high
+    - **Quote:** "I'm going to make the case for the AI product manager. I'm going to argue that AI expertise is really important for this role."
   - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Denys Linkov, Wisedocs]] — the team that ships dependable AI mixes capabilities that used to live in separate departments; the unit of work crosses old boundaries.
-    - **Anchor:** `SbUxRluVRwk` 00:00:20.880 → 00:00:23.039 · confidence: medium
-    - **Quote:** "modern AI So,"
+    - **Anchor:** `SbUxRluVRwk` 00:09:39.200 → 00:09:43.760 · confidence: high
+    - **Quote:** "all these skills that you're prioritizing don't necessarily need to be one person. They can be multiple people."
   - [[207-Zqu0VaJw3vo-how-to-hire-ai-engineers-when-everyone-is-cheating-with-ai-beth-glenfield-devday|#207 — Beth Glenfield, DevDay]] — old hiring signals stop discriminating once everyone interviews with AI; the organization has to learn to hire for judgment, not for code-production ability that is now widely available.
-    - **Anchor:** `Zqu0VaJw3vo` 00:00:36.000 → 00:00:36.000 · confidence: high
-    - **Quote:** "hire"
+    - **Anchor:** `Zqu0VaJw3vo` 00:00:30.480 → 00:00:36.399 · confidence: high
+    - **Quote:** "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
 - **Caveats / counterpoints:** Some workflows still benefit from a tight specialist guild — regulated industries, safety-critical systems, high-uncertainty research. The claim is about the general direction once AI removes the basic creation bottleneck, not about every team in every setting.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Broad paths to create, narrow paths to ship.
@@ -668,17 +668,17 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[079-JvosMkuNxF8-can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanfor|#79 — Yegor Denisov-Blanch, Stanford (120k devs study)]] — productivity effect is real but uneven; reliably overstated when teams measure activity instead of outcomes.
-    - **Anchor:** `JvosMkuNxF8` 00:12:42.800 → 00:12:43.200 · confidence: high
-    - **Quote:** "maximize developer"
+    - **Anchor:** `JvosMkuNxF8` 00:12:36.800 → 00:12:43.680 · confidence: high
+    - **Quote:** "these are not productivity metrics. They're useful, but you cannot just kind of use them like maximize them to maximize developer productivity."
   - [[195-tbDDYKRFjhk-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanfor|#195 — Yegor Denisov-Blanch, Stanford (100k devs study)]] — corroborating dataset; AI-generated work creates rework that quietly eats the gain.
-    - **Anchor:** `tbDDYKRFjhk` 00:01:22.080 → 00:01:22.080 · confidence: high
-    - **Quote:** "productivity,"
+    - **Anchor:** `tbDDYKRFjhk` 00:01:20.240 → 00:01:26.080 · confidence: high
+    - **Quote:** "I do think that AI increases developer productivity, but there's also cases in which it decreases developer productivity."
   - [[101-WqZq8L-v9pA-what-data-from-20m-pull-requests-reveal-about-ai-transformation-nick-arcolano-jellyfish|#101 — Nick Arcolano, Jellyfish (20M PRs)]] — output volume rises, activity dashboards light up green, the actual constraint (review/integration/trust) goes unmeasured.
-    - **Anchor:** `WqZq8L-v9pA` 00:06:06.800 → 00:06:07.039 · confidence: high
-    - **Quote:** "pull requests"
+    - **Anchor:** `WqZq8L-v9pA` 00:06:04.160 → 00:06:09.360 · confidence: high
+    - **Quote:** "just plain old PR throughput. How many pull requests does the average engineer merge per week?"
   - [[063-4mRekpZpBZs-paying-engineers-like-salespeople-arman-hezarkhani-tenex|#63 — Arman Hezarkhani, Tenex]] — extending the metric problem to compensation: when effort is cheap, paying for effort produces the wrong incentives; outcome-based comp is one possible response.
-    - **Anchor:** `4mRekpZpBZs` 00:01:01.520 → 00:01:01.520 · confidence: high
-    - **Quote:** "salespeople."
+    - **Anchor:** `4mRekpZpBZs` 00:00:56.480 → 00:01:01.520 · confidence: high
+    - **Quote:** "I'm going to talk about how we pay engineers. And we pay engineers like salespeople."
 - **Caveats / counterpoints:** Activity metrics are not useless — they remain a leading indicator of adoption and a debugging signal for blockers. The claim is that they become misleading as the *primary* measure of value once AI removes the cost-of-production constraint.
 - **Candidate chapters:** 4, 9
 - **Reusable phrasing:** Counting artifacts in a world where artifacts are cheap is counting the wrong thing.
@@ -688,14 +688,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — going fast without good alignment leads to wasted work, duplicate effort, and giant review queues with little context.
-    - **Anchor:** `ClWD8OEYgp8` 00:00:20.960 → 00:00:20.960 · confidence: high
-    - **Quote:** "alignment."
+    - **Anchor:** `ClWD8OEYgp8` 00:00:17.440 → 00:00:23.800 · confidence: high
+    - **Quote:** "this talk uh is called uh one developer, two dozen agents, zero alignment. Uh this is the case for why we need collaborative AI engineering."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — software-factory framing with roll-up visibility: a single surface showing what every agent is doing and what humans actually need to look at, instead of a firehose of agent chatter.
-    - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
-    - **Quote:** "software factory"
+    - **Anchor:** `rnDm57Py54A` 00:15:02.160 → 00:15:08.560 · confidence: high
+    - **Quote:** "you should have multiple different stages where you you plan it, you produce it, you review it and you essentially follow the whole uh SLC"
   - [[054-rT2Del5pwg4-developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one|#54 — Max Kanat-Alexander, Capital One]] — developer-experience framing: review queues become the felt experience of AI-native engineering at scale.
-    - **Anchor:** `rT2Del5pwg4` 00:00:28.320 → 00:00:28.720 · confidence: high
-    - **Quote:** "developer experience"
+    - **Anchor:** `rT2Del5pwg4` 00:10:18.480 → 00:10:24.560 · confidence: high
+    - **Quote:** "every software engineer becomes a code reviewer as basically their primary job."
 - **Caveats / counterpoints:** Some teams ship via auto-merge on green and treat review as exception-handling. That works until the eval suite isn't good enough to catch the consequential cases — at which point review reappears as the constraint, just delayed. The claim is structural: trustworthy throughput is bounded by trustworthy review, regardless of where the review happens in the workflow.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** You can only safely create as fast as you can trustworthily review.
@@ -705,14 +705,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — the load-bearing source: "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective." Names the gap in tooling and the resulting team-level incoherence.
-    - **Anchor:** `ClWD8OEYgp8` 00:04:55.560 → 00:04:55.920 · confidence: high
-    - **Quote:** "shared space"
+    - **Anchor:** `ClWD8OEYgp8` 00:04:53.440 → 00:05:00.080 · confidence: high
+    - **Quote:** "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective."
   - [[160-PthmdT92qNg-shipping-products-when-you-don-t-know-what-they-can-do-ben-stein-teammates|#160 — Ben Stein, Teammates]] — the planning-fan-out problem from the product side: shipping when you don't fully know what the system can do means alignment has to happen earlier, before specification freezes.
-    - **Anchor:** `PthmdT92qNg` 00:01:33.920 → 00:01:34.079 · confidence: high
-    - **Quote:** "don't know what"
+    - **Anchor:** `PthmdT92qNg` 00:17:22.160 → 00:17:27.360 · confidence: high
+    - **Quote:** "if we believe that all of our products are for like for all time going to be probabistic, then like we probably have to figure out how this world works."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — the software-factory framing with shared plans and roll-up visibility as the structural response.
-    - **Anchor:** `rnDm57Py54A` 00:00:34.480 → 00:00:34.880 · confidence: high
-    - **Quote:** "software factory"
+    - **Anchor:** `rnDm57Py54A` 00:19:32.960 → 00:19:38.880 · confidence: high
+    - **Quote:** "you kind of like frontload uh the context to the agents either through like a plan or a long spec and then you send them off"
 - **Caveats / counterpoints:** "Alignment debt" is a freshly-coined term inheriting authority from the well-established "technical debt" analogy. The analogy is useful but imperfect — technical debt's tradeoffs are reasonably well-modeled, alignment debt's are not yet. Treat the term as a useful organizing concept that will be sharpened by more practitioner case studies, not as a settled framework.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Alignment debt is the tax an organization pays for treating a collective activity as a collection of private ones.

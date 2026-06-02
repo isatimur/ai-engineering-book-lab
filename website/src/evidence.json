@@ -1494,39 +1494,39 @@
       "anchors": [
         {
           "video_id": "RmJ4rTLV_x4",
-          "start": "00:00:25.439",
-          "end": "00:00:25.840",
-          "start_seconds": 25,
+          "start": "00:00:23.039",
+          "end": "00:00:26.640",
+          "start_seconds": 23,
           "confidence": "high",
           "label": "#69 — Lisa Orr, Zapier",
-          "quote": "support team"
+          "quote": "at Zapier we are empowering our support team to ship code."
         },
         {
           "video_id": "xzJdSi2Tsqw",
-          "start": "00:01:48.479",
-          "end": "00:01:48.880",
-          "start_seconds": 108,
+          "start": "00:01:46.880",
+          "end": "00:01:54.159",
+          "start_seconds": 106,
           "confidence": "high",
           "label": "#162 — James Lowe, i.AI",
-          "quote": "product manager."
+          "quote": "I'm going to make the case for the AI product manager. I'm going to argue that AI expertise is really important for this role."
         },
         {
           "video_id": "SbUxRluVRwk",
-          "start": "00:00:20.880",
-          "end": "00:00:23.039",
-          "start_seconds": 20,
-          "confidence": "medium",
+          "start": "00:09:39.200",
+          "end": "00:09:43.760",
+          "start_seconds": 579,
+          "confidence": "high",
           "label": "#188 — Denys Linkov, Wisedocs",
-          "quote": "modern AI So,"
+          "quote": "all these skills that you're prioritizing don't necessarily need to be one person. They can be multiple people."
         },
         {
           "video_id": "Zqu0VaJw3vo",
-          "start": "00:00:36.000",
-          "end": "00:00:36.000",
-          "start_seconds": 36,
+          "start": "00:00:30.480",
+          "end": "00:00:36.399",
+          "start_seconds": 30,
           "confidence": "high",
           "label": "#207 — Beth Glenfield, DevDay",
-          "quote": "hire"
+          "quote": "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
         }
       ]
     },
@@ -1537,39 +1537,39 @@
       "anchors": [
         {
           "video_id": "JvosMkuNxF8",
-          "start": "00:12:42.800",
-          "end": "00:12:43.200",
-          "start_seconds": 762,
+          "start": "00:12:36.800",
+          "end": "00:12:43.680",
+          "start_seconds": 756,
           "confidence": "high",
           "label": "#79 — Yegor Denisov-Blanch, Stanford (120k devs study)",
-          "quote": "maximize developer"
+          "quote": "these are not productivity metrics. They're useful, but you cannot just kind of use them like maximize them to maximize developer productivity."
         },
         {
           "video_id": "tbDDYKRFjhk",
-          "start": "00:01:22.080",
-          "end": "00:01:22.080",
-          "start_seconds": 82,
+          "start": "00:01:20.240",
+          "end": "00:01:26.080",
+          "start_seconds": 80,
           "confidence": "high",
           "label": "#195 — Yegor Denisov-Blanch, Stanford (100k devs study)",
-          "quote": "productivity,"
+          "quote": "I do think that AI increases developer productivity, but there's also cases in which it decreases developer productivity."
         },
         {
           "video_id": "WqZq8L-v9pA",
-          "start": "00:06:06.800",
-          "end": "00:06:07.039",
-          "start_seconds": 366,
+          "start": "00:06:04.160",
+          "end": "00:06:09.360",
+          "start_seconds": 364,
           "confidence": "high",
           "label": "#101 — Nick Arcolano, Jellyfish (20M PRs)",
-          "quote": "pull requests"
+          "quote": "just plain old PR throughput. How many pull requests does the average engineer merge per week?"
         },
         {
           "video_id": "4mRekpZpBZs",
-          "start": "00:01:01.520",
+          "start": "00:00:56.480",
           "end": "00:01:01.520",
-          "start_seconds": 61,
+          "start_seconds": 56,
           "confidence": "high",
           "label": "#63 — Arman Hezarkhani, Tenex",
-          "quote": "salespeople."
+          "quote": "I'm going to talk about how we pay engineers. And we pay engineers like salespeople."
         }
       ]
     },
@@ -1580,30 +1580,30 @@
       "anchors": [
         {
           "video_id": "ClWD8OEYgp8",
-          "start": "00:00:20.960",
-          "end": "00:00:20.960",
-          "start_seconds": 20,
+          "start": "00:00:17.440",
+          "end": "00:00:23.800",
+          "start_seconds": 17,
           "confidence": "high",
           "label": "#623 — Maggie Appleton, GitHub",
-          "quote": "alignment."
+          "quote": "this talk uh is called uh one developer, two dozen agents, zero alignment. Uh this is the case for why we need collaborative AI engineering."
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "00:00:34.480",
-          "end": "00:00:34.880",
-          "start_seconds": 34,
+          "start": "00:15:02.160",
+          "end": "00:15:08.560",
+          "start_seconds": 902,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "software factory"
+          "quote": "you should have multiple different stages where you you plan it, you produce it, you review it and you essentially follow the whole uh SLC"
         },
         {
           "video_id": "rT2Del5pwg4",
-          "start": "00:00:28.320",
-          "end": "00:00:28.720",
-          "start_seconds": 28,
+          "start": "00:10:18.480",
+          "end": "00:10:24.560",
+          "start_seconds": 618,
           "confidence": "high",
           "label": "#54 — Max Kanat-Alexander, Capital One",
-          "quote": "developer experience"
+          "quote": "every software engineer becomes a code reviewer as basically their primary job."
         }
       ]
     },
@@ -1614,30 +1614,30 @@
       "anchors": [
         {
           "video_id": "ClWD8OEYgp8",
-          "start": "00:04:55.560",
-          "end": "00:04:55.920",
-          "start_seconds": 295,
+          "start": "00:04:53.440",
+          "end": "00:05:00.080",
+          "start_seconds": 293,
           "confidence": "high",
           "label": "#623 — Maggie Appleton, GitHub",
-          "quote": "shared space"
+          "quote": "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective."
         },
         {
           "video_id": "PthmdT92qNg",
-          "start": "00:01:33.920",
-          "end": "00:01:34.079",
-          "start_seconds": 93,
+          "start": "00:17:22.160",
+          "end": "00:17:27.360",
+          "start_seconds": 1042,
           "confidence": "high",
           "label": "#160 — Ben Stein, Teammates",
-          "quote": "don't know what"
+          "quote": "if we believe that all of our products are for like for all time going to be probabistic, then like we probably have to figure out how this world works."
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "00:00:34.480",
-          "end": "00:00:34.880",
-          "start_seconds": 34,
+          "start": "00:19:32.960",
+          "end": "00:19:38.880",
+          "start_seconds": 1172,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "software factory"
+          "quote": "you kind of like frontload uh the context to the agents either through like a plan or a long spec and then you send them off"
         }
       ]
     },
@@ -3058,39 +3058,39 @@
       "anchors": [
         {
           "video_id": "JvosMkuNxF8",
-          "start": "00:12:42.800",
-          "end": "00:12:43.200",
-          "start_seconds": 762,
+          "start": "00:12:36.800",
+          "end": "00:12:43.680",
+          "start_seconds": 756,
           "confidence": "high",
           "label": "#79 — Yegor Denisov-Blanch, Stanford (120k devs study)",
-          "quote": "maximize developer"
+          "quote": "these are not productivity metrics. They're useful, but you cannot just kind of use them like maximize them to maximize developer productivity."
         },
         {
           "video_id": "tbDDYKRFjhk",
-          "start": "00:01:22.080",
-          "end": "00:01:22.080",
-          "start_seconds": 82,
+          "start": "00:01:20.240",
+          "end": "00:01:26.080",
+          "start_seconds": 80,
           "confidence": "high",
           "label": "#195 — Yegor Denisov-Blanch, Stanford (100k devs study)",
-          "quote": "productivity,"
+          "quote": "I do think that AI increases developer productivity, but there's also cases in which it decreases developer productivity."
         },
         {
           "video_id": "WqZq8L-v9pA",
-          "start": "00:06:06.800",
-          "end": "00:06:07.039",
-          "start_seconds": 366,
+          "start": "00:06:04.160",
+          "end": "00:06:09.360",
+          "start_seconds": 364,
           "confidence": "high",
           "label": "#101 — Nick Arcolano, Jellyfish (20M PRs)",
-          "quote": "pull requests"
+          "quote": "just plain old PR throughput. How many pull requests does the average engineer merge per week?"
         },
         {
           "video_id": "4mRekpZpBZs",
-          "start": "00:01:01.520",
+          "start": "00:00:56.480",
           "end": "00:01:01.520",
-          "start_seconds": 61,
+          "start_seconds": 56,
           "confidence": "high",
           "label": "#63 — Arman Hezarkhani, Tenex",
-          "quote": "salespeople."
+          "quote": "I'm going to talk about how we pay engineers. And we pay engineers like salespeople."
         }
       ]
     },
