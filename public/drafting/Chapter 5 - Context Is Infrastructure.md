@@ -51,7 +51,7 @@ The reason this distinction matters is that the failures look identical from the
 
 Daniel Chalef at Zep makes a related point with a more pointed framing: stop using RAG as memory. The error he sees in production systems is not RAG itself but RAG carrying weight it was never designed to carry — long-term user state, evolving entity facts, cross-session continuity. RAG is good at fetching documents. It is bad at maintaining a model of the user across months.
 
-The cleanest way to read these two claims together is as a taxonomy hint. RAG and memory are not interchangeable. They are different layers in a context architecture that has to be designed deliberately, not collapsed into one bucket and hoped to scale.
+Read these two claims together as a selection rule. Reach for retrieval when the job is fetching the right documents for the current step; reach for a memory layer when the job is maintaining state that has to persist — long-term user facts, evolving entities, cross-session continuity. Chalef's warning marks the trap: the moment RAG starts carrying that durable state, you have collapsed two layers that need to be designed separately.
 
 ## RAG, memory, and GraphRAG are different jobs
 
@@ -113,7 +113,7 @@ Sam Morrow's GitHub MCP-scaling work tells the production-grade version of this 
 
 Karan Sampath at Anthropic, working on enterprise MCP rollouts, points at the same dynamic from the governance side. The enterprise version of this problem is not just performance. It is trust. A capability surface that the security team cannot inspect and reason about is one the security team will not approve. The capability problem is also a context-design problem because the window is the place where capability is exposed.
 
-The unifying claim here is that the moment tools entered the context window, context engineering became broader than retrieval. It also became capability management — which tools to expose, when to expose them, how to describe them, and how to retract them when they stop being relevant.
+The unifying claim here is that the moment tools entered the context window, context engineering became broader than retrieval; it also became capability management. The directive the production cases point to: expose tools by intent rather than all at once, describe them tightly, and retract them when they stop being relevant — so you shrink the number of tools the agent must read at any moment, not the number it can call.
 
 ## Progressive discovery is infrastructure, not UX
 
@@ -138,3 +138,12 @@ A team that treats context as a one-off prompt-assembly problem will keep findin
 A team that treats context as infrastructure builds for the failure modes the chapter has named: misassembly, capability flood, memory drift, provenance loss. They version the context layer. They observe what it surfaces. They measure how the model's outputs change when the context layer changes. They treat the context platform the way a database team treats the storage engine — as a piece of working infrastructure whose properties shape everything built on top of it.
 
 That is the move this chapter has been arguing for. It is also the move that prepares the reader for the next chapter. Once you take context seriously as infrastructure, you immediately notice that the substrate cannot live entirely in a single agent run. It has to persist across sessions, recover from interruptions, and survive partial failure. That is the runtime problem, and it is where the book goes next.
+
+## What to do with this
+
+- Treat context as a versioned, observable layer with its own budgets and failure modes, not a string you assemble per request.
+- Don't use RAG as your memory layer: retrieve to fetch the right documents for a step, and design a separate memory architecture for durable user and entity state across sessions.
+- Match the retrieval pattern to the question — vector search for semantic similarity, graph traversal for relationship questions, hybrid when the query needs both — and make ranking, data shape, and freshness explicit before you build.
+- Optimize for working-set quality, not corpus size: a smaller, well-ranked, provenance-tagged set beats a larger raw dump.
+- Design for context misassembly, not just hallucination — dedupe, freshen, and weight retrieved documents so stale-and-current sources can't average into a half-right answer. A stronger model will not fix this.
+- Don't flood the window with tools: expose them by intent and retract them when irrelevant, shrinking the number of tools the agent must read at any moment rather than the number it can call.
