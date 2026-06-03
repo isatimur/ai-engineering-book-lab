@@ -62,7 +62,7 @@ That is why documentation, ADRs, examples, and historical breadcrumbs matter so 
 
 This is also why the practical unit of AI coding is no longer the snippet. It is the codebase. Naman Jain describes the shift cleanly: “My first project was actually working on generating single line... snippets and my last project was generating an entire codebase.” Once the unit of work becomes the repository, environment design stops being background hygiene and becomes first-order leverage.
 
-The core mistake many teams make is to treat code generation as the primary problem and repo legibility as a secondary concern. In reality, the second often dominates the first. A capable model dropped into a murky repository is like a strong engineer dropped into an organization with no onboarding, inconsistent standards, and no access to prior decisions. You can still get lucky. You cannot count on it.
+The core mistake many teams make is to treat code generation as the primary problem and repo legibility as a secondary concern. In reality, the second often dominates the first — so the diagnostic move when an agent disappoints is to invert the blame: before swapping models, ask what a new senior hire would have had to ask a teammate to do this task safely, then check whether that answer exists anywhere the agent can read it. A capable model dropped into a murky repository is like a strong engineer dropped into an organization with no onboarding, inconsistent standards, and no access to prior decisions. You can still get lucky. You cannot count on it.
 
 ## Good code contains hundreds of unstated decisions
 
@@ -84,7 +84,7 @@ This is also where Chapter 2 should still be echoing in the reader’s mind. Che
 
 This is where spec-driven development becomes more than a documentation preference.
 
-In a purely human workflow, specs often compete with direct conversation. A strong team can get away with more ambiguity because engineers resolve a surprising amount through meetings, hallway discussions, pull-request comments, and local intuition. In an AI-mediated workflow, that ambiguity becomes more expensive. Context windows expire. Tasks get retried. Work gets decomposed into subproblems. Different agents touch different layers of the same system. Without persistent artifacts, intent keeps dissolving back into transient conversation.
+In a purely human workflow, specs often compete with direct conversation. A strong team can get away with more ambiguity because engineers resolve a surprising amount through meetings, hallway discussions, pull-request comments, and local intuition. In an AI-mediated workflow, that ambiguity becomes more expensive. The trap is relying on chat to carry intent: context windows expire, tasks get retried, work gets decomposed into subproblems, and different agents touch different layers of the same system — so any intent that lives only in transient conversation dissolves the moment one of those events fires. The operational test is whether a piece of intent would survive a fresh agent picking up the task cold; if it would not, it belongs in a persistent artifact, not the prompt.
 
 Al Harris offers one of the clearest framings in the corpus: “The spec then becomes the natural language representation of your system. It has constraints, it has concerns around functional requirements, non-functional requirements...” That framing matters because it upgrades the spec from document to control surface.
 
@@ -94,7 +94,7 @@ A useful spec in an AI-native environment does several jobs at once. It records 
 
 Seen this way, specs are a form of context compression. They take sprawling intent that would otherwise live in chat history, tribal knowledge, or remembered conversation and package it into a stable artifact the workflow can keep returning to. They also make evaluation easier, because a system with a concrete spec can be judged against a clearer notion of success than one that began with a vague prompt and hope.
 
-This does not mean every ticket needs an elaborate design doc. Over-specification can absolutely collapse exploration into bureaucracy. Some work is best discovered through fast iteration. But once the cost of misunderstanding rises — because the task is large, parallelized, safety-sensitive, or expensive to review — explicit intent becomes leverage.
+This does not mean every ticket needs an elaborate design doc. Over-specification can absolutely collapse exploration into bureaucracy, and small or exploratory work is best discovered through fast iteration — writing a heavy spec there is the wrong choice. The test for when to reach for one: the moment the cost of misunderstanding rises — because the task is large, parallelized across agents, safety-sensitive, or expensive to review — write the spec before generating. Below that line, prompt and iterate; above it, externalize intent first, because that is where a stable representation of intent becomes leverage rather than ceremony.
 
 The deeper point is that spec-driven development matters more, not less, in an era of powerful coding agents. The stronger the generator, the more valuable a stable representation of intent becomes.
 
@@ -144,7 +144,7 @@ The key insight is not merely that parallelism can make things faster. It is tha
 
 When a team creates a dedicated review agent, a repo-auditing agent, or a migration-focused agent with narrow tools and instructions, it is encoding judgment about how work should be done. The role itself becomes part of the harness. This mirrors what strong human organizations already do. They do not treat every task as a blank slate executed by a generalist. They create roles, review structures, and bounded responsibilities so judgment can scale.
 
-But subagents also intensify the need for good scaffolding. More workers without a stronger harness do not create a factory. They create chaos faster. Parallel output is only valuable if the pieces can be recomposed, inspected, and evaluated. That means subagents are not an argument against harness engineering. They are evidence that harness engineering is becoming more important.
+But subagents also intensify the need for good scaffolding. More workers without a stronger harness do not create a factory. They create chaos faster. The trap to watch for: adding parallel agents before you can recompose, inspect, and evaluate their output — at that point you have multiplied generation without multiplying the checks, and the throughput is illusory. The rule of thumb is to add a subagent role only once the recomposition and review surface for its output already exists. That means subagents are not an argument against harness engineering. They are evidence that harness engineering is becoming more important.
 
 ## The new advantage is environment design
 
@@ -159,3 +159,12 @@ This is why harness engineering deserves to be treated as a primary discipline i
 And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
 That is the bridge into the next chapter. Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
+
+## What to do with this
+
+- When an agent disappoints, invert the blame before swapping models: ask whether your repository, specs, validations, and workflow are structured well enough for a machine collaborator to operate without constant rescue. Treat the unexplained "sloppy patch" as a missing success criterion, not a stupid model.
+- Run the agent-readiness checklist on one repo this week: a stable folder structure, explicit setup/build/run commands, strong type/lint/test gates the agent can run repeatedly, architecture decisions stored in files, examples of accepted patterns for tests/APIs/migrations/reviews, and specs stored close enough to the work to survive handoff.
+- Stop relying on "everyone kind of knows how we do migrations here." Externalize the tacit standards: check in examples of accepted patterns, write down non-functional constraints, and replace Slack archaeology with setup scripts the agent can read.
+- Gate spec-writing by cost of misunderstanding, not by habit. For small or exploratory work, prompt and iterate; once a task is large, parallelized, safety-sensitive, or expensive to review, write the spec first — with constraints and non-functional requirements — so it persists across retries and handoffs.
+- Apply the survival test to intent: if a fresh agent picking up the task cold would lose a piece of intent because context expired or work was decomposed, move that intent out of chat and into a persistent artifact.
+- Encode the factory's own rules into the repo. Create a folder of markdown guidance, best practices, and rules so process stops living only in human habit, and add a specialized subagent role only once the surface to recompose and review its output already exists.
