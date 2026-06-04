@@ -520,8 +520,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — the fillers pattern as an explicit response to tool-call variance: "while it waits for getting the result back, it can keep the conversation going."
-    - **Anchor:** `P_RI1kCkRbo` 00:07:36.840 → 00:07:39.200 · confidence: high
-    - **Quote:** "while it waits for getting the result back,"
+    - **Anchor:** `P_RI1kCkRbo` 00:07:36.840 → 00:07:42.040 · confidence: high
+    - **Quote:** "while it waits for getting the result back, it can keep the conversation going in a natural way,"
   - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Luke Harries, ElevenLabs]] — the voice engine as a first-class primitive with its own state, so the agent's slow operations don't translate into silent gaps.
     - **Anchor:** `DCZZ3AJKzuc` 00:02:56.200 → 00:02:58.240 · confidence: high
     - **Quote:** "wrapped it up into its own first class primitive,"
