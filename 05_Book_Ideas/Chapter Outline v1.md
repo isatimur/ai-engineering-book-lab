@@ -46,7 +46,7 @@ Working frame: **From Copilot to Colleague: How AI Engineering Turns Models into
 - [[179-x_1EumTaXeE-beyond-the-prototype-using-ai-to-write-high-quality-code-josh-albrecht-imbue|#179 — Beyond the Prototype: Using AI to Write High-Quality Code - Josh Albrecht, Imbue]]
 - [[180-o_hhkJtlbSs-software-development-agents-what-works-and-what-doesn-t-robert-brennan-openhands|#180 — Software Development Agents: What Works and What Doesn't - Robert Brennan, OpenHands]]
 - [[181-MI83buT_23o-devin-2-0-and-the-future-of-swe-scott-wu-cognition|#181 — Devin 2.0 and the Future of SWE - Scott Wu, Cognition]]
-- [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Mentoring the Machine — Eric Hou, Augment Code]]
+- [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Mentoring the Machine — Eric Hou, Augment Code]]
 
 ### Chapter 4 — Evals Are the Control System
 

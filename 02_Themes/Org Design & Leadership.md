@@ -86,7 +86,7 @@
 - [[187-TquUsN1QsWs-ai-that-pays-lessons-from-revenue-cycle-nathan-wan-ensemble-health|#187 — AI That Pays: Lessons from Revenue Cycle — Nathan Wan, Ensemble Health]]
 - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Structuring a modern AI team — Denys Linkov, Wisedocs]]
 - [[189-3WV1vT0B0cg-the-rise-of-open-models-in-the-enterprise-amir-haghighat-baseten|#189 — The Rise of Open Models in the Enterprise — Amir Haghighat, Baseten]]
-- [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Mentoring the Machine — Eric Hou, Augment Code]]
+- [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Mentoring the Machine — Eric Hou, Augment Code]]
 - [[192-e9sLVMN76qU-ax-is-the-only-experience-that-matters-ivan-burazin-daytona|#192 — AX is the only Experience that Matters - Ivan Burazin, Daytona]]
 - [[194-6WQYLQB0odc-monetizing-ai-alvaro-morales-orb|#194 — Monetizing AI — Alvaro Morales, Orb]]
 - [[195-tbDDYKRFjhk-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanfor|#195 — Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford]]

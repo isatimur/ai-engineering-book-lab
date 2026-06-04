@@ -1,0 +1,31 @@
+# Research Pass — 2026-05-13 — Chapter 6 Spine Pass
+
+- **Target:** continue the manuscript by turning Chapter 6 into a real prose chapter and tighten the middle-book continuity across Chapters 3–6
+- **Pass type:** drafting / manuscript progression / spine integration
+- **Inputs used:** Chapter 3–5 drafts, Chapter 6 starter materials, Chapter 6 packet, Human Control Plane concept, Durable Agents concept, Agent Runtime Replay vs Snapshot concept, Agent Observability concept, claims ledger, quote bank, recurring case studies, existing public drafting layer
+- **Outputs changed:**
+  - created `05_Book_Ideas/Drafting Layer/Chapter 6 Draft v0 - Runtimes State and the Human Control Plane.md`
+  - revised `05_Book_Ideas/Drafting Layer/Chapter 5 Draft v0 - Context Is Infrastructure.md`
+  - created `public/drafting/Chapter 6 - Runtimes, State, and the Human Control Plane.md`
+  - created `research_passes/2026-05-13-manuscript-pass-ch6-spine.md`
+- **What Chapter 6 now is:**
+  - a full prose draft rather than a starter packet
+  - organized around a clear runtime argument: stateless chat breaks -> durable workflows -> human control plane -> observability -> adjustable autonomy -> subagent recomposition
+  - explicitly tied to both recurring case studies: **The Software Factory** and **The High-Stakes Colleague**
+  - written to continue the exact manuscript sequence established in Chapters 3–5 rather than reopening the book from scratch
+- **What improved in adjacent continuity:**
+  - Chapter 5’s closing now points directly into runtime/state/control-plane concerns instead of ending only on the context thesis
+  - Chapter 6 explicitly recaps the accumulating logic of Chapters 3–5 so the reader feels one continuous argument: legible workplace -> quality loop -> right binder -> durable operating environment
+- **Public-safe derivative:**
+  - added `public/drafting/Chapter 6 - Runtimes, State, and the Human Control Plane.md`
+  - kept it high-level and architectural, without transcript-heavy or private-local details
+- **Current read on manuscript coherence (Chapters 3–6):**
+  - **Yes, this now feels like a coherent manuscript slice.**
+  - Chapter 3 establishes the workplace for delegated work.
+  - Chapter 4 establishes the measurement and control loop.
+  - Chapter 5 establishes context assembly as infrastructure.
+  - Chapter 6 establishes the runtime and control-plane layer that keeps delegated work alive over time.
+  - The chapters now read less like separate essays and more like one expanding systems argument.
+- **Remaining rough edges / best next move:**
+  - Chapter 6 is structurally solid, but one future pass could add one especially vivid operational vignette as concrete as the Chapter 4 failure slice
+  - after that, the strongest next thematic move is probably Chapter 7 so the book can cash out the trust / governance consequences already implied by Chapters 5–6

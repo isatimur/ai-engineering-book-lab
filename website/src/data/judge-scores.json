@@ -55,7 +55,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.1,
@@ -110,7 +110,7 @@
           "evidence_refs": [
             "unsupported:There are really three relationships a person can have with an AI system — a specific taxonomic claim (exactly three, distinct, non-scalar) that has no corresponding ledger entry at any support level."
           ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are really three relationships a person can have with an AI system, and…"
+          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
         }
       ],
       "weakest": [
@@ -134,7 +134,7 @@
           "evidence_refs": [
             "phrase:'It helps to be precise about what is shifting, because the words get used loosely.'"
           ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are really three relationships a person can have with an AI system, and…"
+          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
         },
         {
           "dim_name": "humanness",
@@ -216,7 +216,7 @@
           "evidence_refs": [
             "unsupported:There are really three relationships a person can have with an AI system — a specific taxonomic claim (exactly three, distinct, non-scalar) that has no corresponding ledger entry at any support level."
           ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are really three relationships a person can have with an AI system, and…"
+          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -273,7 +273,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
@@ -352,7 +352,7 @@
           "evidence_refs": [
             "phrase:'inefficiency to be optimized away'"
           ],
-          "para_excerpt": "AI removes a great deal of wasteful friction, and that is genuinely good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous …"
+          "para_excerpt": "AI removes a great deal of wasteful friction, and that is good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous move is to…"
         },
         {
           "dim_name": "humanness",
@@ -445,7 +445,7 @@
           "evidence_refs": [
             "overstated:Treating every pause as inefficiency to be 'optimized away' is framed as a 'dangerous move' — slightly stronger rhetorical weight than the moderate-strength ledger backing (claims#42) strictly supports, since the ledger establishes framing/review as scarce skills but does not explicitly characterize ignoring pauses as dangerous."
           ],
-          "para_excerpt": "AI removes a great deal of wasteful friction, and that is genuinely good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous …"
+          "para_excerpt": "AI removes a great deal of wasteful friction, and that is good. Nobody should mourn the boilerplate. But not all friction is waste, and the dangerous move is to…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -504,7 +504,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.3,
@@ -770,7 +770,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.2,
@@ -1011,7 +1011,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
@@ -1242,7 +1242,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.3,
@@ -1483,7 +1483,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 70.4,
@@ -1552,7 +1552,7 @@
           "evidence_refs": [
             "phrase:'with the stakes turned up'"
           ],
-          "para_excerpt": "The same principle appears in code-executing environments, with the stakes turned up."
+          "para_excerpt": "Fouad Matin's security guidance for coding agents at OpenAI keeps returning to four concrete controls: sandboxing, network restriction, privilege boundaries, an…"
         },
         {
           "dim_name": "humanness",
@@ -1563,7 +1563,7 @@
           "evidence_refs": [
             "phrase:'A concrete failure case makes the point clearer than abstract warnings.'"
           ],
-          "para_excerpt": "A concrete failure case makes the point clearer than abstract warnings."
+          "para_excerpt": "Imagine a tax-preparation agent operating inside a professional workflow of the kind described by Joel Hron at Thomson Reuters. The system ingests source docume…"
         },
         {
           "dim_name": "humanness",
@@ -1574,7 +1574,7 @@
           "evidence_refs": [
             "phrase:'is worth surfacing because it raises the constraints to a level that makes them clearer than the enterprise versions'"
           ],
-          "para_excerpt": "The chapter has so far drawn most of its evidence from enterprise and developer-tools contexts. The corpus contains one public-sector talk that is worth surfaci…"
+          "para_excerpt": "Mark Myshatyn at Los Alamos National Lab presented on government agents at one of the AI Engineer events. The talk reads, in places, like the rest of this chapt…"
         },
         {
           "dim_name": "voice",
@@ -1616,7 +1616,7 @@
           "label": "fail",
           "reasoning": "This sentence is pure transitional meta-commentary. It announces that a concrete failure case is about to be presented, but contains zero actionable content itself — no decision, no principle, no tool, no threshold, no example. It is a rhetorical setup line with no operational lift whatsoever.",
           "evidence_refs": [],
-          "para_excerpt": "A concrete failure case makes the point clearer than abstract warnings."
+          "para_excerpt": "Imagine a tax-preparation agent operating inside a professional workflow of the kind described by Joel Hron at Thomson Reuters. The system ingests source docume…"
         },
         {
           "dim_name": "usefulness",
@@ -1625,7 +1625,7 @@
           "label": "fail",
           "reasoning": "This is pure transition prose. It references \"the same principle\" without stating what that principle is, and \"with the stakes turned up\" is decorative framing. There is no decision, threshold, tool, technique, or concrete example. The paragraph cannot stand alone and delivers zero operational content.",
           "evidence_refs": [],
-          "para_excerpt": "The same principle appears in code-executing environments, with the stakes turned up."
+          "para_excerpt": "Fouad Matin's security guidance for coding agents at OpenAI keeps returning to four concrete controls: sandboxing, network restriction, privilege boundaries, an…"
         },
         {
           "dim_name": "usefulness",
@@ -1634,7 +1634,7 @@
           "label": "fail",
           "reasoning": "This paragraph is pure transitional prose and meta-commentary. It references the next chapter, summarizes what the current chapter supposedly covered (\"shape of power, substrate of identity, architecture of audit\"), and frames what is coming next. There are no decisions, thresholds, principles, tools, techniques, or concrete examples. No engineer can act on any of this content. It is structural filler between chapters with zero operational lift.",
           "evidence_refs": [],
-          "para_excerpt": "The next chapter takes the chapter-7 frame and stress-tests it under realtime conditions, where the cost of getting bounded authority wrong becomes audible to t…"
+          "para_excerpt": "## What to do with this"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1658,7 +1658,7 @@
             "overstated:The opening framing ('Your insecure MCP server won't survive production') implies near-certain production failure with categorical confidence that exceeds the moderate-to-strong concern expressed in claims#31 and claims#32, which warn of expanded attack surface and governance gaps but do not warrant this level of deterministic severity.",
             "unsupported:The central thesis that the listed security failures are 'the predictable consequences of pulling a wire protocol into a category — capability exposure — that has not had the security review the wire has' is a specific causal/architectural diagnosis (security-review gap between the wire protocol and the capability-exposure category) with no matching ledger entry. Claims#32 addresses governance lagging standardization, but does not endorse this particular root-cause framing."
           ],
-          "para_excerpt": "Tun Shwe at Lenses puts the bottom line plainly: \"Your insecure MCP server won't survive production.\" The talk is essentially a tour of the ways MCP servers shi…"
+          "para_excerpt": "Karan Sampath at Anthropic, working on enterprise MCP rollouts, names the structural answer from the governance side. \"The really important thing for security t…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1723,7 +1723,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 77.2,
@@ -1792,7 +1792,7 @@
             "unsupported:Anything longer than 200ms registers, consciously or not, as a hesitation",
             "unsupported:Two beats and the system feels slow; three and it feels confused"
           ],
-          "para_excerpt": "Two hundred milliseconds is approximately the length of a comfortable conversational gap in English. Anything longer registers, consciously or not, as a hesitat…"
+          "para_excerpt": "Two hundred milliseconds is approximately the length of a comfortable conversational gap in English. Use it as a pass/fail line, not an aspiration: measure end-…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1934,7 +1934,7 @@
             "unsupported:Anything longer than 200ms registers, consciously or not, as a hesitation",
             "unsupported:Two beats and the system feels slow; three and it feels confused"
           ],
-          "para_excerpt": "Two hundred milliseconds is approximately the length of a comfortable conversational gap in English. Anything longer registers, consciously or not, as a hesitat…"
+          "para_excerpt": "Two hundred milliseconds is approximately the length of a comfortable conversational gap in English. Use it as a pass/fail line, not an aspiration: measure end-…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2011,7 +2011,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.8,
@@ -2162,7 +2162,7 @@
             "unsupported:Attribution to 'Lisa Orr at Zapier' with the specific quote 'Your support team should ship code' — no ledger entry references this source, person, or organization.",
             "unsupported:'The historical reason for routing all code through a narrow guild of engineers weakens' — the specific claim about guild-based engineering structures and their historical rationale has no ledger backing; it goes beyond what claims#1 or claims#35 assert."
           ],
-          "para_excerpt": "If execution is cheap, the natural move is to let more people execute. This is one of the most genuinely radical organizational consequences in the corpus, and …"
+          "para_excerpt": "If execution is cheap, the natural move is to let more people execute. This is one of the most radical organizational consequences in the corpus, and Lisa Orr a…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2246,7 +2246,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 82.0,
@@ -2574,7 +2574,7 @@
     },
     {
       "run_id": "2026-06-02-093847-4924",
-      "version_id": "git:2ca616d",
+      "version_id": "git:4129c87",
       "finished_at": "2026-06-02T09:44:33.568641+00:00",
       "partial": true,
       "book": {

@@ -3,8 +3,30 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:bb83c6e",
+      "current_version_id": "git:96210fb",
       "versions": [
+        {
+          "version_id": "git:96210fb",
+          "source": "git",
+          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 1945,
+          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-96210fb.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 1512,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-ef6219d.md"
+        },
         {
           "version_id": "git:bb83c6e",
           "source": "git",
@@ -30,8 +52,30 @@
       ]
     },
     "02": {
-      "current_version_id": "git:68ad925",
+      "current_version_id": "git:96210fb",
       "versions": [
+        {
+          "version_id": "git:96210fb",
+          "source": "git",
+          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 2005,
+          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-96210fb.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 1591,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-ef6219d.md"
+        },
         {
           "version_id": "git:68ad925",
           "source": "git",
@@ -68,8 +112,30 @@
       ]
     },
     "03": {
-      "current_version_id": "git:9754359",
+      "current_version_id": "git:ed15457",
       "versions": [
+        {
+          "version_id": "git:ed15457",
+          "source": "git",
+          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 3226,
+          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-ed15457.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 2769,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-ef6219d.md"
+        },
         {
           "version_id": "git:9754359",
           "source": "git",
@@ -95,8 +161,30 @@
       ]
     },
     "04": {
-      "current_version_id": "git:f4fb29f",
+      "current_version_id": "git:ed15457",
       "versions": [
+        {
+          "version_id": "git:ed15457",
+          "source": "git",
+          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 2469,
+          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-ed15457.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 1930,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-ef6219d.md"
+        },
         {
           "version_id": "git:f4fb29f",
           "source": "git",
@@ -122,8 +210,19 @@
       ]
     },
     "05": {
-      "current_version_id": "git:f798182",
+      "current_version_id": "git:bd6e176",
       "versions": [
+        {
+          "version_id": "git:bd6e176",
+          "source": "git",
+          "ref": "bd6e1761296486b71067ed0bd7b0b0ac68dfee29",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 3225,
+          "message": "prose(ch05): usefulness pilot — 2 in-prose sharpenings + 'What to do with this' takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-bd6e176.md"
+        },
         {
           "version_id": "git:f798182",
           "source": "git",
@@ -149,8 +248,30 @@
       ]
     },
     "06": {
-      "current_version_id": "git:f4fb29f",
+      "current_version_id": "git:ed15457",
       "versions": [
+        {
+          "version_id": "git:ed15457",
+          "source": "git",
+          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 2252,
+          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-ed15457.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 1789,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-ef6219d.md"
+        },
         {
           "version_id": "git:f4fb29f",
           "source": "git",
@@ -176,8 +297,30 @@
       ]
     },
     "07": {
-      "current_version_id": "git:85f3c2a",
+      "current_version_id": "git:96210fb",
       "versions": [
+        {
+          "version_id": "git:96210fb",
+          "source": "git",
+          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 3690,
+          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-96210fb.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 3093,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-ef6219d.md"
+        },
         {
           "version_id": "git:85f3c2a",
           "source": "git",
@@ -203,8 +346,30 @@
       ]
     },
     "08": {
-      "current_version_id": "git:ade8d60",
+      "current_version_id": "git:ed15457",
       "versions": [
+        {
+          "version_id": "git:ed15457",
+          "source": "git",
+          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 3511,
+          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-ed15457.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 3021,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-ef6219d.md"
+        },
         {
           "version_id": "git:ade8d60",
           "source": "git",
@@ -230,8 +395,30 @@
       ]
     },
     "09": {
-      "current_version_id": "git:0a16fae",
+      "current_version_id": "git:96210fb",
       "versions": [
+        {
+          "version_id": "git:96210fb",
+          "source": "git",
+          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 3231,
+          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-96210fb.md"
+        },
+        {
+          "version_id": "git:ef6219d",
+          "source": "git",
+          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
+          "date": "2026-06-02",
+          "status": "Drafting",
+          "wordCount": 2607,
+          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-ef6219d.md"
+        },
         {
           "version_id": "git:0a16fae",
           "source": "git",
@@ -257,8 +444,19 @@
       ]
     },
     "10": {
-      "current_version_id": "git:bb83c6e",
+      "current_version_id": "git:96210fb",
       "versions": [
+        {
+          "version_id": "git:96210fb",
+          "source": "git",
+          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
+          "date": "2026-06-03",
+          "status": "Drafting",
+          "wordCount": 1497,
+          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-96210fb.md"
+        },
         {
           "version_id": "git:bb83c6e",
           "source": "git",

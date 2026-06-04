@@ -1,0 +1,27 @@
+# Research Pass — 2026-05-12 — Chapter 3 Tightening + Chapter 4 Draft
+
+- **Target:** continue the manuscript with real chapter-writing progress on the core technical spine
+- **Pass type:** drafting / manuscript progression
+- **Inputs used:** Chapter 3 draft, chapter starters, quote bank, claims ledgers, recurring case studies, Chapter 3 evidence pack, transcript-backed source notes, existing public drafting layer
+- **Outputs changed:**
+  - revised `05_Book_Ideas/Drafting Layer/Chapter 3 Draft v0 - Harnesses Specs and Codebases Agents Can Actually Use.md`
+  - created `05_Book_Ideas/Drafting Layer/Chapter 4 Draft v0 - Evals Are the Control System.md`
+  - created `public/drafting/Chapter 4 - Evals Are the Control System.md`
+  - created `research_passes/2026-05-12-manuscript-pass-ch3-ch4.md`
+- **What improved in Chapter 3:**
+  - added a concrete software-factory vignette near the opening
+  - wove in stronger inline source-backed quotes from Lopopolo, Harris, Reyes, Jain, Zakariasson, and Codex subagent materials
+  - tightened the argument so it now runs more cleanly from repo legibility -> tacit judgment -> specs as executable intent -> harness as workflow -> software factory
+  - reduced the feeling of assembled notes by strengthening transitions and cumulative logic
+- **What Chapter 4 now is:**
+  - a substantial first prose draft, not just a starter
+  - organized around the control-system metaphor
+  - tied to realistic task design, human-seeded evals, observability, and organizational practice
+  - explicitly bridged back to the Chapter 3 software-factory case so the manuscript accumulates rather than resets
+- **Public-safe derivative:**
+  - Chapter 4 produced a clean public-safe derivative in `public/drafting/Chapter 4 - Evals Are the Control System.md`
+- **Current strongest chapter among these two:**
+  - **Chapter 3** is still slightly stronger as finished manuscript prose
+  - **Chapter 4** now has the stronger conceptual frame and may overtake it after one more specificity / example pass
+- **Best next move:**
+  - add one concrete operational example or failure slice to Chapter 4, then begin drafting Chapter 6 while the control-system bridge is hot

@@ -1,0 +1,33 @@
+# Research Pass — 2026-05-13 — Chapter 2 Runway Pass
+
+- **Target:** complete the opening runway by turning Chapter 2 into a full prose chapter and tighten continuity across Chapters 1–3
+- **Pass type:** drafting / manuscript progression / opening-runway integration
+- **Inputs used:** Chapter 2 packet, Chapter 1 draft, Chapter 3 draft, core claims ledger, recurring case studies, prior opening-frame pass, public drafting layer, source notes on fundamentals/taste/slop/vibe coding
+- **Outputs changed:**
+  - created `05_Book_Ideas/Drafting Layer/Chapter 2 Draft v0 - Taste Still Matters When Code Gets Cheap.md`
+  - created `public/drafting/Chapter 2 - Taste Still Matters When Code Gets Cheap.md`
+  - created `research_passes/2026-05-13-manuscript-pass-ch2-runway.md`
+- **What Chapter 2 now is:**
+  - a full prose chapter rather than a packet
+  - explicitly written as the human counterpart to Chapter 1’s delegated-execution argument
+  - centered on the claim that cheap generation raises the value of judgment, standards, framing, constraints, and review
+  - balanced rather than polemical on vibe coding: strong for exploration, dangerous as a default production philosophy
+  - closed with a direct bridge into Chapter 3 by reframing harnesses/specs as externalized judgment
+- **What improved in continuity:**
+  - Chapter 1’s ending premise is now fully cashed out rather than only gestured at
+  - the sequence now reads as: delegated execution -> human judgment under abundance -> harnesses/specs as encoded judgment
+  - the opening no longer feels like a standalone editorial preface before the technical core begins
+- **Public-safe derivative:**
+  - added `public/drafting/Chapter 2 - Taste Still Matters When Code Gets Cheap.md`
+  - kept it concise and architectural, consistent with the existing public chapter derivatives
+- **Current read on manuscript coherence (Chapters 1–6):**
+  - **Yes, Chapters 1–6 now feel like a coherent manuscript run.**
+  - Chapter 1 establishes the shift from helpful answers to delegated work.
+  - Chapter 2 establishes what becomes newly scarce on the human side: judgment, taste, framing, constraint-setting, and review.
+  - Chapter 3 shows how that judgment gets externalized into harnesses, specs, and codebase legibility.
+  - Chapter 4 adds the quality loop and control system.
+  - Chapter 5 adds context assembly as infrastructure.
+  - Chapter 6 adds durable execution, runtime semantics, and the human control plane.
+- **Remaining rough edges / best next move:**
+  - one future pass could lightly tighten explicit transition sentences at the starts/ends of Chapters 3 and 4 so the opening runway echoes even more inside the middle-book spine
+  - after that, Chapter 7 remains the strongest next drafting target because Chapters 5–6 now imply its trust/governance consequences very clearly

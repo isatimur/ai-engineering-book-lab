@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 75
+- Total tagged videos: 79
 
 ## Cross-video synthesis
 
-- This theme appears across 75 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (18), Agent Architecture (17), Org Design & Leadership (12).
+- This theme appears across 79 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (22), Agent Architecture (21), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
 
 ## Seed videos
@@ -87,6 +87,10 @@
 - [[700-owH1f0N-keY-gemini-nano-on-device-florina-muntenescu-oli-gaymond-google-deepmind|#700 — Gemini Nano on device — Florina Muntenescu & Oli Gaymond, Google DeepMind]]
 - [[704-5Sui_OnSRlY-the-missing-primitive-for-agent-swarms-lou-bichard-ona|#704 — The Missing Primitive for Agent Swarms — Lou Bichard, Ona]]
 - [[707-W-SX_srBa3Y-let-s-talk-about-fomat-fear-of-missing-agent-time-michael-richman-cmd-ctrl|#707 — Let's Talk About FOMAT: Fear of Missing Agent Time — Michael Richman, Cmd+Ctrl]]
+- [[718-ugUeZ8-b-u0-why-rust-is-the-ideal-language-for-vibe-coding-daniel-szoke-sentry|#718 — Why Rust is the Ideal Language for Vibe-Coding — Daniel Szoke, Sentry]]
+- [[723-V-L0INGTEOg-reverse-engineering-a-viking-voip-phone-protocol-with-claude-code-boris-starkov-eleven-lab|#723 — Reverse engineering a Viking VOIP phone protocol with Claude Code — Boris Starkov, Eleven Labs]]
+- [[738-504PvfXou5Y-bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-intelligenc|#738 — BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike — Michal Cichra, Safe Intelligence]]
+- [[740-hCMrEfPG2Yg-beyond-components-designing-generative-ui-for-mcp-apps-ruben-casas-postman|#740 — Beyond Components: Designing Generative UI for MCP Apps — Ruben Casas, Postman]]
 
 ## Notes
 

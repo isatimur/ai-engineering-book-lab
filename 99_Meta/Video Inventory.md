@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 708
+Total videos: 741
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -191,7 +191,7 @@ Total videos: 708
 187. [AI That Pays: Lessons from Revenue Cycle — Nathan Wan, Ensemble Health](https://www.youtube.com/watch?v=TquUsN1QsWs) — `TquUsN1QsWs` — 18:19
 188. [Structuring a modern AI team — Denys Linkov, Wisedocs](https://www.youtube.com/watch?v=SbUxRluVRwk) — `SbUxRluVRwk` — 17:40
 189. [The Rise of Open Models in the Enterprise — Amir Haghighat, Baseten](https://www.youtube.com/watch?v=3WV1vT0B0cg) — `3WV1vT0B0cg` — 16:50
-190. [Mentoring the Machine — Eric Hou, Augment Code](https://www.youtube.com/watch?v=Zniw5c9_jx8) — `Zniw5c9_jx8` — 19:06
+190. [Mentoring the Machine — Eric Hou, Augment Code](https://www.youtube.com/watch?v=Zniw5c9_jx8) — `Zniw5c9_jx8` — 19:06
 191. [Building Applications with AI Agents — Michael Albada, Microsoft](https://www.youtube.com/watch?v=R30col3UPUg) — `R30col3UPUg` — 15:50
 192. [AX is the only Experience that Matters - Ivan Burazin, Daytona](https://www.youtube.com/watch?v=e9sLVMN76qU) — `e9sLVMN76qU` — 15:25
 193. [How to build Enterprise Aware Agents - Chau Tran, Glean](https://www.youtube.com/watch?v=hxFpUcvWPcU) — `hxFpUcvWPcU` — 19:53
@@ -710,3 +710,36 @@ Total videos: 708
 706. [Scaling the Next Paradigm of Heterogeneous Intelligence — Adrian Bertagnoli, Callosum](https://www.youtube.com/watch?v=WRBNDpUhsJQ) — `WRBNDpUhsJQ` — 15:13
 707. [Let's Talk About FOMAT: Fear of Missing Agent Time — Michael Richman, Cmd+Ctrl](https://www.youtube.com/watch?v=W-SX_srBa3Y) — `W-SX_srBa3Y` — 16:17
 708. [Inside Google's Agent Infrastructure: Quotas, Skills, and Deep Research — KP Sawhney, Ian Ballantyne](https://www.youtube.com/watch?v=7gujZrJ9L5I) — `7gujZrJ9L5I` — 25:13
+709. [The Art & Science of Benchmarking Agents — Vincent Chen, Snorkel AI](https://www.youtube.com/watch?v=iNkFlCiij0U) — `iNkFlCiij0U` — 
+710. [Text Diffusion — Brendon Dillon, Google DeepMind](https://www.youtube.com/watch?v=r305-aQTaU0) — `r305-aQTaU0` — 
+711. [Bounded Autonomy: Between Free Will and Determinism — Angus J. McLean, Oliver](https://www.youtube.com/watch?v=t4359sKBu4w) — `t4359sKBu4w` — 16:52
+712. [Does GenAI "belong" to data scientists? — Phil Hetzel, Braintrust](https://www.youtube.com/watch?v=NKwIX3CiRgU) — `NKwIX3CiRgU` — 18:54
+713. [Agentic Evaluations at Scale, For Everybody — Nicholas Kang & Michael Aaron, Google DeepMind](https://www.youtube.com/watch?v=Ubwb6NzegyA) — `Ubwb6NzegyA` — 20:03
+714. [Stop babysitting your agents... — Brandon Waselnuk, Unblocked](https://www.youtube.com/watch?v=BiG2ssibKGc) — `BiG2ssibKGc` — 18:54
+715. [What the Best Agents Share — Mardu Swanepoel, Flinn AI](https://www.youtube.com/watch?v=7CrPrHgoEYk) — `7CrPrHgoEYk` — 10:21
+716. [100x faster local inference for 1T param models across 4 Mac Studios — Alex Cheema, EXO Labs](https://www.youtube.com/watch?v=ESbWpPT_9-o) — `ESbWpPT_9-o` — 1:45:02
+717. [The maturity phases of running evals — Phil Hetzel, Braintrust](https://www.youtube.com/watch?v=FB-MLPhL9Ms) — `FB-MLPhL9Ms` — 18:34
+718. [Why Rust is the Ideal Language for Vibe-Coding — Daniel Szoke, Sentry](https://www.youtube.com/watch?v=ugUeZ8-b-u0) — `ugUeZ8-b-u0` — 16:25
+719. [The AI Skill I Rely On Daily — Priscila Andre de Oliveira, Sentry](https://www.youtube.com/watch?v=li0SaBt9RDM) — `li0SaBt9RDM` — 17:05
+720. [Context Graphs for Explainable, Decision-Aware AI Agents — Andreas Kollegger & Zaid Zaim, Neo4j](https://www.youtube.com/watch?v=abvQEhvRI_c) — `abvQEhvRI_c` — 16:39
+721. [Most Enterprise Agentic Projects Are Doomed, Here's Why — Jess Grogan-Avignon & Jack Wang, Accenture](https://www.youtube.com/watch?v=AGkzpxMdPn8) — `AGkzpxMdPn8` — 20:35
+722. [How agent o11y differs from traditional o11y — Phil Hetzel, Braintrust](https://www.youtube.com/watch?v=XBaznoTRDFI) — `XBaznoTRDFI` — 20:43
+723. [Reverse engineering a Viking VOIP phone protocol with Claude Code — Boris Starkov, Eleven Labs](https://www.youtube.com/watch?v=V-L0INGTEOg) — `V-L0INGTEOg` — 20:11
+724. [Why your agents need decision traces, not just documents — Zach Blumenfeld, Neo4j](https://www.youtube.com/watch?v=B9h9ovW5H9U) — `B9h9ovW5H9U` — 20:12
+725. [Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face](https://www.youtube.com/watch?v=0jeZfjJMfmo) — `0jeZfjJMfmo` — 21:16
+726. [Why (Senior) Engineers Struggle to Build AI Agents — Philipp Schmid, Google DeepMind](https://www.youtube.com/watch?v=3_gYbhABcAE) — `3_gYbhABcAE` — 10:40
+727. [How We Built Zeta2: Training an Edit Prediction Model in Production — Ben Kunkle, Zed](https://www.youtube.com/watch?v=phchDt63qAA) — `phchDt63qAA` — 10:50
+728. [How I deleted 95% of my agent skills and got better results — Nick Nisi, WorkOS](https://www.youtube.com/watch?v=vy7o1g2iHY8) — `vy7o1g2iHY8` — 17:43
+729. [Spec-Driven Testing for Agents With A Brain the Size of A Planet — Steven Willmott, SafeIntelligence](https://www.youtube.com/watch?v=UQKg0td-Bf4) — `UQKg0td-Bf4` — 13:03
+730. [Engineering voice agents: Latency, quality, and scale — Rishabh Bhargava, Together AI](https://www.youtube.com/watch?v=N7b1PJc7SFc) — `N7b1PJc7SFc` — 24:35
+731. [Can LLMs generate Enterprise Quality Code? — Prasenjit Sarkar, Sonar](https://www.youtube.com/watch?v=NuePCNMpWGc) — `NuePCNMpWGc` — 15:12
+732. [How to talk to statues — Joe Reeve, ElevenLabs](https://www.youtube.com/watch?v=u-rJwPPU3QA) — `u-rJwPPU3QA` — 33:28
+733. [What if the network was the sandbox? — Remy Guercio, Tailscale](https://www.youtube.com/watch?v=BM2JX9hqsVQ) — `BM2JX9hqsVQ` — 24:29
+734. [20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna](https://www.youtube.com/watch?v=hqHC6Z_lXyo) — `hqHC6Z_lXyo` — 19:36
+735. [The agent that files its own bug reports — Benjamin Verbeek, Lovable](https://www.youtube.com/watch?v=KA5kPbdkK2E) — `KA5kPbdkK2E` — 19:05
+736. [Same compute, 5x better results — Kobie Crawdord, Snorkel](https://www.youtube.com/watch?v=YYH0DMQr30A) — `YYH0DMQr30A` — 20:40
+737. [What Lies Beneath the API — Benjamin Cowen, Modal](https://www.youtube.com/watch?v=HvZXAOZ3iv8) — `HvZXAOZ3iv8` — 12:40
+738. [BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike — Michal Cichra, Safe Intelligence](https://www.youtube.com/watch?v=504PvfXou5Y) — `504PvfXou5Y` — 12:49
+739. [Benchmarking semantic code retrieval on Claude Code — Kuba Rogut, Turbopuffer](https://www.youtube.com/watch?v=zKk7sDMGDEQ) — `zKk7sDMGDEQ` — 16:08
+740. [Beyond Components: Designing Generative UI for MCP Apps — Ruben Casas, Postman](https://www.youtube.com/watch?v=hCMrEfPG2Yg) — `hCMrEfPG2Yg` — 16:58
+741. [SWE-rebench: Lessons from Evaluating Coding Agents — Ibragim Badertdinov, Nebius](https://www.youtube.com/watch?v=wcUJWP6WpGM) — `wcUJWP6WpGM` — 

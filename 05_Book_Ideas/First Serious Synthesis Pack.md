@@ -1,14 +1,14 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **708 videos**
-Transcript status mix: **{'auto_en_orig': 699, 'unavailable': 9}**
+Corpus size analyzed: **741 videos**
+Transcript status mix: **{'auto_en_orig': 729, 'unavailable': 12}**
 
 ## What changed after full-corpus review
 
 The corpus is now strong enough to stop treating the book as a loose trend survey.
 A clearer thesis is emerging: **AI engineering is the discipline of turning model capability into dependable, high-leverage systems through scaffolding, evaluation, context design, and organizational adaptation.**
 
-Across the full 708-video corpus, four things stand out most clearly:
+Across the full 741-video corpus, four things stand out most clearly:
 - the book should be anchored in **production practice**, not model novelty
 - **coding agents** are the best narrative entry point, but not the whole book
 - **trust, control, and eval loops** are the hinge between demo and deployment
@@ -16,11 +16,11 @@ Across the full 708-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 106, `Coding Agents`: 188).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 174).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 137, `Coding Agents`: 219).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 202).
 - **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 242).
-- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 75, `RAG & Retrieval`: 160).
-- **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 27, `Voice & Realtime`: 37).
+- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 79, `RAG & Retrieval`: 160).
+- **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 27, `Voice & Realtime`: 38).
 
 ## Best current thesis
 
@@ -59,7 +59,7 @@ Why this is stronger than the earlier generic frame:
 - [[179-x_1EumTaXeE-beyond-the-prototype-using-ai-to-write-high-quality-code-josh-albrecht-imbue|#179 — Beyond the Prototype: Using AI to Write High-Quality Code - Josh Albrecht, Imbue]]
 - [[180-o_hhkJtlbSs-software-development-agents-what-works-and-what-doesn-t-robert-brennan-openhands|#180 — Software Development Agents: What Works and What Doesn't - Robert Brennan, OpenHands]]
 - [[181-MI83buT_23o-devin-2-0-and-the-future-of-swe-scott-wu-cognition|#181 — Devin 2.0 and the Future of SWE - Scott Wu, Cognition]]
-- [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Mentoring the Machine — Eric Hou, Augment Code]]
+- [[190-Zniw5c9_jx8-mentoring-the-machine-eric-hou-augment-code|#190 — Mentoring the Machine — Eric Hou, Augment Code]]
 - [[210-TswQeKftnaw-ai-powered-entomology-lessons-from-millions-of-ai-code-reviews-tomas-reimers-graphite|#210 — AI powered entomology: Lessons from millions of AI code reviews — Tomas Reimers, Graphite]]
 
 ### Cluster 3 — Trust comes from evals, not vibes

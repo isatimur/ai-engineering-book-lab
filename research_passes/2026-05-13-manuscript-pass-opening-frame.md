@@ -1,0 +1,24 @@
+# Research Pass — 2026-05-13 — Opening Frame / Chapter 1 Strengthening
+
+- **Target:** make the opening of the AI Engineer manuscript feel proportionate to the stronger Chapters 3–6 spine
+- **Pass type:** drafting / framing / manuscript continuity
+- **Inputs used:** core claims ledger, Chapter 1 starter, Chapter 2 packet, Chapter Outline, Quote Bank, Chapter 3–6 prose drafts, prior manuscript pass logs
+- **Outputs changed:**
+  - created `05_Book_Ideas/Drafting Layer/Chapter 1 Draft v1 - The Shift From Assistant to Delegate.md`
+  - updated `05_Book_Ideas/Chapter Packets v1/02_Taste_Still_Matters_When_Code_Gets_Cheap.md`
+  - updated `public/drafting/Chapter 1 - The Shift From Assistant to Delegate.md`
+- **What changed in the manuscript:**
+  - upgraded Chapter 1 from a strong starter into a real prose opening chapter
+  - pulled in the safest recurring claims from the ledger: suggestion -> delegated execution, chat is not the whole system, scaffolding makes intelligence usable, trust under action is the governing problem
+  - introduced the recurring case studies earlier: the Software Factory and the High-Stakes Colleague now appear in the opening rather than only in the middle-book core
+  - made the bridge into Chapter 2 more explicit by reframing taste/judgment/craft as the human counterpart to cheaper delegated execution
+  - strengthened continuity language so Chapters 1 and 2 feel like the front door to the same systems-oriented manuscript as Chapters 3–6
+- **Quality signal improved:**
+  - the opening now carries more of the middle-book confidence and technical seriousness instead of reading like a lighter preface
+  - the recurring cases and control-system logic now appear early enough that the manuscript feels more cumulative
+  - the public-safe derivative is cleaner and more representative of the current argument
+- **Assessment:**
+  - the opening now feels much closer in proportion to the Chapter 3–6 spine
+  - remaining gap: Chapter 2 is still a packet, not a full prose chapter, so the bridge exists conceptually but the first two chapters are not yet equally matched as finished draft objects
+- **Likely next move:**
+  - draft Chapter 2 in full prose so the opening frame becomes a true two-chapter runway into the technical core
