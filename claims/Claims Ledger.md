@@ -45,8 +45,8 @@
     - **Anchor:** `CEvIs9y1uog` 00:00:35.040 → 00:00:39.200 · confidence: high
     - **Quote:** "Agents have intelligence and capabilities, but not always expertise that we need for real work."
   - [[198-kTnfJszFxCg-3-ingredients-for-building-reliable-enterprise-agents-harrison-chase-langchain-langgraph|#198 — Harrison Chase, LangChain/LangGraph]]
-    - **Anchor:** `kTnfJszFxCg` 00:02:18.239 → 00:02:21.280 · confidence: high
-    - **Quote:** "three kind of like ingredients which are pretty simple and pretty basic,"
+    - **Anchor:** `kTnfJszFxCg` 00:02:17.680 → 00:02:25.280 · confidence: high
+    - **Quote:** "these are three kind of like ingredients which are pretty simple and pretty basic, but I think provide an interesting kind of like first principles approach for how to think about"
 - **Caveats / counterpoints:** Better models still matter, especially for frontier reasoning tasks. But better models do not remove the need for scaffolding, and often expose weak scaffolding faster.
 - **Candidate chapters:** 1, 3, 4, 6, 10
 - **Reusable phrasing:** In production AI, scaffolding is not a wrapper around intelligence. It is what makes intelligence usable.
@@ -149,8 +149,8 @@
     - **Anchor:** `tHN44yJoeS8` 00:08:11.039 → 00:08:15.520 · confidence: high
     - **Quote:** "task should be natural and sourced from the real world and then you should be able to reliably grade them."
   - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `o_LRtAomJCs` 00:01:28.720 → 00:01:29.600 · confidence: high
-    - **Quote:** "confidence much more quickly."
+    - **Anchor:** `o_LRtAomJCs` 00:01:22.960 → 00:01:29.600 · confidence: high
+    - **Quote:** "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
   - [[153-wRJD0inpmjU-evaluating-ai-search-a-practical-framework-for-augmented-ai-systems-quotient-ai-tavily|#153 — Quotient AI + Tavily]]
     - **Anchor:** `wRJD0inpmjU` 00:06:09.600 → 00:06:11.600 · confidence: high
     - **Quote:** "Dynamic data sets have real world alignment."
@@ -469,8 +469,8 @@
     - **Anchor:** `XNneh6-eyPg` 00:00:19.279 → 00:00:27.359 · confidence: high
     - **Quote:** "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
   - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — Mitesh Patel, NVIDIA]] — hybrid RAG as the expected outcome once you accept graph and vector are different jobs.
-    - **Anchor:** `-tgQa8Fzf80` 00:00:55.600 → 00:00:56.559 · confidence: high
-    - **Quote:** "add the hybrid nature"
+    - **Anchor:** `-tgQa8Fzf80` 00:00:50.640 → 00:00:58.000 · confidence: high
+    - **Quote:** "how can we create a graph rack system what are the advantages of it and if we add the hybrid nature to it how it is helpful"
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
     - **Anchor:** `w9u11ioHGA0` 00:05:58.800 → 00:06:02.160 · confidence: high
     - **Quote:** "you need to be like tuned to what what every technique gives you before you go and invest in it."
@@ -540,8 +540,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[037-VSdV-AdSlis-identity-for-ai-agents-patrick-riley-carlos-galan-auth0|#37 — Patrick Riley & Carlos Galan, Auth0]] — making the agent and its capabilities first-class citizens in the identity provider, with their own scopes and lifetimes.
-    - **Anchor:** `VSdV-AdSlis` 00:00:22.240 → 00:00:22.960 · confidence: high
-    - **Quote:** "identity for AI agents"
+    - **Anchor:** `VSdV-AdSlis` 00:12:03.200 → 00:12:08.160 · confidence: high
+    - **Quote:** "we actually persist scopes we manage lifetimes of tokens um we do a lot of handling there"
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard / Passport.js]] — agents need short-lived OAuth-scoped tokens, not standing API keys; the credential shape is the delegation shape.
     - **Anchor:** `blmAkayzE8M` 00:01:23.840 → 00:01:30.960 · confidence: high
     - **Quote:** "we go get API keys that are typically longived and broadly scoped. We paste them into some configuration files and environment variables"

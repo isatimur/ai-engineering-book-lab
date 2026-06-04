@@ -93,12 +93,12 @@
         },
         {
           "video_id": "kTnfJszFxCg",
-          "start": "00:02:18.239",
-          "end": "00:02:21.280",
-          "start_seconds": 138,
+          "start": "00:02:17.680",
+          "end": "00:02:25.280",
+          "start_seconds": 137,
           "confidence": "high",
           "label": "#198 — Harrison Chase, LangChain/LangGraph",
-          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+          "quote": "these are three kind of like ingredients which are pretty simple and pretty basic, but I think provide an interesting kind of like first principles approach for how to think about"
         }
       ]
     },
@@ -231,12 +231,12 @@
         },
         {
           "video_id": "kTnfJszFxCg",
-          "start": "00:02:18.239",
-          "end": "00:02:21.280",
-          "start_seconds": 138,
+          "start": "00:02:17.680",
+          "end": "00:02:25.280",
+          "start_seconds": 137,
           "confidence": "high",
           "label": "#198 — Harrison Chase, LangChain/LangGraph",
-          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+          "quote": "these are three kind of like ingredients which are pretty simple and pretty basic, but I think provide an interesting kind of like first principles approach for how to think about"
         }
       ]
     },
@@ -376,12 +376,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:01:28.720",
+          "start": "00:01:22.960",
           "end": "00:01:29.600",
-          "start_seconds": 88,
+          "start_seconds": 82,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "confidence much more quickly."
+          "quote": "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -944,12 +944,12 @@
         },
         {
           "video_id": "-tgQa8Fzf80",
-          "start": "00:00:55.600",
-          "end": "00:00:56.559",
-          "start_seconds": 55,
+          "start": "00:00:50.640",
+          "end": "00:00:58.000",
+          "start_seconds": 50,
           "confidence": "high",
           "label": "#219 — Mitesh Patel, NVIDIA",
-          "quote": "add the hybrid nature"
+          "quote": "how can we create a graph rack system what are the advantages of it and if we add the hybrid nature to it how it is helpful"
         },
         {
           "video_id": "w9u11ioHGA0",
@@ -1736,12 +1736,12 @@
         },
         {
           "video_id": "kTnfJszFxCg",
-          "start": "00:02:18.239",
-          "end": "00:02:21.280",
-          "start_seconds": 138,
+          "start": "00:02:17.680",
+          "end": "00:02:25.280",
+          "start_seconds": 137,
           "confidence": "high",
           "label": "#198 — Harrison Chase, LangChain/LangGraph",
-          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+          "quote": "these are three kind of like ingredients which are pretty simple and pretty basic, but I think provide an interesting kind of like first principles approach for how to think about"
         }
       ]
     },
@@ -2293,12 +2293,12 @@
       "anchors": [
         {
           "video_id": "VSdV-AdSlis",
-          "start": "00:00:22.240",
-          "end": "00:00:22.960",
-          "start_seconds": 22,
+          "start": "00:12:03.200",
+          "end": "00:12:08.160",
+          "start_seconds": 723,
           "confidence": "high",
           "label": "#37 — Patrick Riley & Carlos Galan, Auth0",
-          "quote": "identity for AI agents"
+          "quote": "we actually persist scopes we manage lifetimes of tokens um we do a lot of handling there"
         },
         {
           "video_id": "blmAkayzE8M",
@@ -2492,12 +2492,12 @@
         },
         {
           "video_id": "kTnfJszFxCg",
-          "start": "00:02:18.239",
-          "end": "00:02:21.280",
-          "start_seconds": 138,
+          "start": "00:02:17.680",
+          "end": "00:02:25.280",
+          "start_seconds": 137,
           "confidence": "high",
           "label": "#198 — Harrison Chase, LangChain/LangGraph",
-          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+          "quote": "these are three kind of like ingredients which are pretty simple and pretty basic, but I think provide an interesting kind of like first principles approach for how to think about"
         }
       ]
     },
@@ -2802,12 +2802,12 @@
         },
         {
           "video_id": "kTnfJszFxCg",
-          "start": "00:02:18.239",
-          "end": "00:02:21.280",
-          "start_seconds": 138,
+          "start": "00:02:17.680",
+          "end": "00:02:25.280",
+          "start_seconds": 137,
           "confidence": "high",
           "label": "#198 — Harrison Chase, LangChain/LangGraph",
-          "quote": "three kind of like ingredients which are pretty simple and pretty basic,"
+          "quote": "these are three kind of like ingredients which are pretty simple and pretty basic, but I think provide an interesting kind of like first principles approach for how to think about"
         }
       ]
     },
@@ -2981,12 +2981,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:01:28.720",
+          "start": "00:01:22.960",
           "end": "00:01:29.600",
-          "start_seconds": 88,
+          "start_seconds": 82,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "confidence much more quickly."
+          "quote": "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -3146,12 +3146,12 @@
         },
         {
           "video_id": "o_LRtAomJCs",
-          "start": "00:01:28.720",
+          "start": "00:01:22.960",
           "end": "00:01:29.600",
-          "start_seconds": 88,
+          "start_seconds": 82,
           "confidence": "high",
           "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "confidence much more quickly."
+          "quote": "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -3395,12 +3395,12 @@
         },
         {
           "video_id": "-tgQa8Fzf80",
-          "start": "00:00:55.600",
-          "end": "00:00:56.559",
-          "start_seconds": 55,
+          "start": "00:00:50.640",
+          "end": "00:00:58.000",
+          "start_seconds": 50,
           "confidence": "high",
           "label": "#219 — Mitesh Patel, NVIDIA",
-          "quote": "add the hybrid nature"
+          "quote": "how can we create a graph rack system what are the advantages of it and if we add the hybrid nature to it how it is helpful"
         },
         {
           "video_id": "w9u11ioHGA0",
