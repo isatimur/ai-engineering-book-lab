@@ -109,12 +109,12 @@
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
-          "start": "00:02:00.079",
-          "end": "00:02:03.119",
-          "start_seconds": 120,
+          "start": "00:01:59.600",
+          "end": "00:02:10.319",
+          "start_seconds": 119,
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
-          "quote": "to be human interaction for approvals or"
+          "quote": "There needs to be human interaction for approvals or other reasons and of course they need to be able to be uh able to run in parallel for efficiency"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -127,12 +127,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:53.920",
-          "end": "01:02:55.520",
-          "start_seconds": 3773,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "to have an overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     }
@@ -462,30 +462,30 @@
         },
         {
           "video_id": "kmV-qg4uoNI",
-          "start": "00:12:32.000",
-          "end": "00:12:33.680",
-          "start_seconds": 752,
+          "start": "00:12:31.839",
+          "end": "00:12:39.440",
+          "start_seconds": 751,
           "confidence": "high",
           "label": "#44 — Peter Wielander, Vercel",
-          "quote": "workflow orchestration layer needs to be"
+          "quote": "the workflow orchestration layer needs to be deterministic. So it can be rerun um in a in a uh deterministic fashion"
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:24.160",
-          "end": "00:59:25.680",
-          "start_seconds": 3564,
+          "start": "00:59:22.240",
+          "end": "00:59:31.119",
+          "start_seconds": 3562,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "production CI stack to go and run"
+          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:20.400",
-          "end": "00:00:22.040",
-          "start_seconds": 20,
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "assemble agent teams that can"
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
         },
         {
           "video_id": "iOXM3zE-2dk",
@@ -505,12 +505,12 @@
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
-          "start": "00:02:00.079",
-          "end": "00:02:03.119",
-          "start_seconds": 120,
+          "start": "00:01:59.600",
+          "end": "00:02:10.319",
+          "start_seconds": 119,
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
-          "quote": "to be human interaction for approvals or"
+          "quote": "There needs to be human interaction for approvals or other reasons and of course they need to be able to be uh able to run in parallel for efficiency"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -523,12 +523,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:53.920",
-          "end": "01:02:55.520",
-          "start_seconds": 3773,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "to have an overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -668,12 +668,12 @@
       "anchors": [
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:20.400",
-          "end": "00:00:22.040",
-          "start_seconds": 20,
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "assemble agent teams that can"
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
         },
         {
           "video_id": "ObNKGf9YR0g",
@@ -686,12 +686,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:54.400",
-          "end": "01:02:55.520",
-          "start_seconds": 3774,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -779,21 +779,21 @@
         },
         {
           "video_id": "-aM2EDTiaMs",
-          "start": "00:02:52.160",
-          "end": "00:02:53.519",
-          "start_seconds": 172,
+          "start": "00:02:50.720",
+          "end": "00:02:54.879",
+          "start_seconds": 170,
           "confidence": "high",
           "label": "#655 — Danny Gollapalli & Ben Hylak, Raindrop",
-          "quote": "eval paradigm to a monitoring"
+          "quote": "we go from like a testing and eval paradigm to a monitoring p uh paradigm."
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:24.160",
-          "end": "00:59:25.680",
-          "start_seconds": 3564,
+          "start": "00:59:22.240",
+          "end": "00:59:31.119",
+          "start_seconds": 3562,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "production CI stack to go and run"
+          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
         },
         {
           "video_id": "L2r6vLlLgs8",
@@ -1134,12 +1134,12 @@
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
-          "start": "00:02:00.079",
-          "end": "00:02:03.119",
-          "start_seconds": 120,
+          "start": "00:01:59.600",
+          "end": "00:02:10.319",
+          "start_seconds": 119,
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
-          "quote": "to be human interaction for approvals or"
+          "quote": "There needs to be human interaction for approvals or other reasons and of course they need to be able to be uh able to run in parallel for efficiency"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -1152,12 +1152,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:53.920",
-          "end": "01:02:55.520",
-          "start_seconds": 3773,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "to have an overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -1263,12 +1263,12 @@
       "anchors": [
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:20.400",
-          "end": "00:00:22.040",
-          "start_seconds": 20,
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "assemble agent teams that can"
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
         },
         {
           "video_id": "ObNKGf9YR0g",
@@ -1281,12 +1281,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:54.400",
-          "end": "01:02:55.520",
-          "start_seconds": 3774,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -1820,12 +1820,12 @@
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
-          "start": "00:02:00.079",
-          "end": "00:02:03.119",
-          "start_seconds": 120,
+          "start": "00:01:59.600",
+          "end": "00:02:10.319",
+          "start_seconds": 119,
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
-          "quote": "to be human interaction for approvals or"
+          "quote": "There needs to be human interaction for approvals or other reasons and of course they need to be able to be uh able to run in parallel for efficiency"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -1838,12 +1838,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:53.920",
-          "end": "01:02:55.520",
-          "start_seconds": 3773,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "to have an overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -1888,12 +1888,12 @@
       "anchors": [
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:20.400",
-          "end": "00:00:22.040",
-          "start_seconds": 20,
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "assemble agent teams that can"
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
         },
         {
           "video_id": "ObNKGf9YR0g",
@@ -1906,12 +1906,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:54.400",
-          "end": "01:02:55.520",
-          "start_seconds": 3774,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -2139,30 +2139,30 @@
         },
         {
           "video_id": "kmV-qg4uoNI",
-          "start": "00:12:32.000",
-          "end": "00:12:33.680",
-          "start_seconds": 752,
+          "start": "00:12:31.839",
+          "end": "00:12:39.440",
+          "start_seconds": 751,
           "confidence": "high",
           "label": "#44 — Peter Wielander, Vercel",
-          "quote": "workflow orchestration layer needs to be"
+          "quote": "the workflow orchestration layer needs to be deterministic. So it can be rerun um in a in a uh deterministic fashion"
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:24.160",
-          "end": "00:59:25.680",
-          "start_seconds": 3564,
+          "start": "00:59:22.240",
+          "end": "00:59:31.119",
+          "start_seconds": 3562,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "production CI stack to go and run"
+          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:20.400",
-          "end": "00:00:22.040",
-          "start_seconds": 20,
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "assemble agent teams that can"
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
         },
         {
           "video_id": "iOXM3zE-2dk",
@@ -2182,12 +2182,12 @@
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
-          "start": "00:02:00.079",
-          "end": "00:02:03.119",
-          "start_seconds": 120,
+          "start": "00:01:59.600",
+          "end": "00:02:10.319",
+          "start_seconds": 119,
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
-          "quote": "to be human interaction for approvals or"
+          "quote": "There needs to be human interaction for approvals or other reasons and of course they need to be able to be uh able to run in parallel for efficiency"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -2200,12 +2200,12 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:53.920",
-          "end": "01:02:55.520",
-          "start_seconds": 3773,
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "to have an overview of the processes you"
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
     },
@@ -3015,21 +3015,21 @@
         },
         {
           "video_id": "-aM2EDTiaMs",
-          "start": "00:02:52.160",
-          "end": "00:02:53.519",
-          "start_seconds": 172,
+          "start": "00:02:50.720",
+          "end": "00:02:54.879",
+          "start_seconds": 170,
           "confidence": "high",
           "label": "#655 — Danny Gollapalli & Ben Hylak, Raindrop",
-          "quote": "eval paradigm to a monitoring"
+          "quote": "we go from like a testing and eval paradigm to a monitoring p uh paradigm."
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:24.160",
-          "end": "00:59:25.680",
-          "start_seconds": 3564,
+          "start": "00:59:22.240",
+          "end": "00:59:31.119",
+          "start_seconds": 3562,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "production CI stack to go and run"
+          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
         },
         {
           "video_id": "L2r6vLlLgs8",
@@ -3517,30 +3517,30 @@
         },
         {
           "video_id": "kmV-qg4uoNI",
-          "start": "00:12:32.000",
-          "end": "00:12:33.680",
-          "start_seconds": 752,
+          "start": "00:12:31.839",
+          "end": "00:12:39.440",
+          "start_seconds": 751,
           "confidence": "high",
           "label": "#44 — Peter Wielander, Vercel",
-          "quote": "workflow orchestration layer needs to be"
+          "quote": "the workflow orchestration layer needs to be deterministic. So it can be rerun um in a in a uh deterministic fashion"
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:24.160",
-          "end": "00:59:25.680",
-          "start_seconds": 3564,
+          "start": "00:59:22.240",
+          "end": "00:59:31.119",
+          "start_seconds": 3562,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "production CI stack to go and run"
+          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:20.400",
-          "end": "00:00:22.040",
-          "start_seconds": 20,
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "assemble agent teams that can"
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
         },
         {
           "video_id": "iOXM3zE-2dk",

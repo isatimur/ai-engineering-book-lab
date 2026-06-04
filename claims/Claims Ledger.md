@@ -189,14 +189,14 @@
     - **Anchor:** `1izYWsokr9s` 00:01:28.640 → 00:01:29.840 · confidence: high
     - **Quote:** "no one's going to trust your agent."
   - [[044-kmV-qg4uoNI-building-durable-agents-with-workflow-devkit-ai-sdk-peter-wielander-vercel|#44 — Peter Wielander, Vercel]]
-    - **Anchor:** `kmV-qg4uoNI` 00:12:32.000 → 00:12:33.680 · confidence: high
-    - **Quote:** "workflow orchestration layer needs to be"
+    - **Anchor:** `kmV-qg4uoNI` 00:12:31.839 → 00:12:39.440 · confidence: high
+    - **Quote:** "the workflow orchestration layer needs to be deterministic. So it can be rerun um in a in a uh deterministic fashion"
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `A48uhxfxbsM` 00:59:24.160 → 00:59:25.680 · confidence: high
-    - **Quote:** "production CI stack to go and run"
+    - **Anchor:** `A48uhxfxbsM` 00:59:22.240 → 00:59:31.119 · confidence: high
+    - **Quote:** "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
   - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]]
-    - **Anchor:** `ow1we5PzK-o` 00:00:20.400 → 00:00:22.040 · confidence: high
-    - **Quote:** "assemble agent teams that can"
+    - **Anchor:** `ow1we5PzK-o` 00:00:19.760 → 00:00:26.320 · confidence: high
+    - **Quote:** "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
   - [[680-iOXM3zE-2dk-mind-the-gap-in-your-agent-observability-amy-boyd-nitya-narasimhan-microsoft|#680 — Amy Boyd & Nitya Narasimhan, Microsoft]]
     - **Anchor:** `iOXM3zE-2dk` 00:03:38.400 → 00:03:39.760 · confidence: high
     - **Quote:** "minding the gap around observability."
@@ -209,14 +209,14 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — approvals and workflow visibility are central.
-    - **Anchor:** `1izYWsokr9s` 00:02:00.079 → 00:02:03.119 · confidence: high
-    - **Quote:** "to be human interaction for approvals or"
+    - **Anchor:** `1izYWsokr9s` 00:01:59.600 → 00:02:10.319 · confidence: high
+    - **Quote:** "There needs to be human interaction for approvals or other reasons and of course they need to be able to be uh able to run in parallel for efficiency"
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — agency should be tuned as a spectrum with adjustable dials.
     - **Anchor:** `kDEvo2__Ijg` 00:04:33.280 → 00:04:36.320 · confidence: high
     - **Quote:** "dial these agency dials far up."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — humans need roll-up visibility into active delegated work.
-    - **Anchor:** `rnDm57Py54A` 01:02:53.920 → 01:02:55.520 · confidence: high
-    - **Quote:** "to have an overview of the processes you"
+    - **Anchor:** `rnDm57Py54A` 01:02:52.079 → 01:02:57.200 · confidence: high
+    - **Quote:** "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
 - **Caveats / counterpoints:** Too many checkpoints can destroy speed and negate the economic value of delegation. The design goal is selective supervision, not permanent interruption.
 - **Candidate chapters:** 1, 6, 7, 9, 10
 - **Reusable phrasing:** The human control plane is where trust becomes operational.
@@ -285,14 +285,14 @@
 - **Support level:** moderate
 - **Supporting sources:**
   - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]]
-    - **Anchor:** `ow1we5PzK-o` 00:00:20.400 → 00:00:22.040 · confidence: high
-    - **Quote:** "assemble agent teams that can"
+    - **Anchor:** `ow1we5PzK-o` 00:00:19.760 → 00:00:26.320 · confidence: high
+    - **Quote:** "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
   - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Eoin Mulgrew, 10 Downing Street]]
     - **Anchor:** `ObNKGf9YR0g` 00:09:21.280 → 00:09:24.840 · confidence: high
     - **Quote:** "observing their workflows, their pain points, co-designing solutions with them"
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
-    - **Anchor:** `rnDm57Py54A` 01:02:54.400 → 01:02:55.520 · confidence: high
-    - **Quote:** "overview of the processes you"
+    - **Anchor:** `rnDm57Py54A` 01:02:52.079 → 01:02:57.200 · confidence: high
+    - **Quote:** "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
 - **Caveats / counterpoints:** Some organizations will gain a lot from loose local experimentation before building heavier coordination systems. The claim is about durability at scale.
 - **Candidate chapters:** 6, 9, 10
 - **Reusable phrasing:** In an AI-native organization, the problem is rarely producing more artifacts. It is keeping many delegated workflows coherent enough to trust.
@@ -339,11 +339,11 @@
     - **Anchor:** `iOXM3zE-2dk` 00:03:24.319 → 00:03:31.760 · confidence: high
     - **Quote:** "what is the gap between agent observability and what you're actually building. How do we mind that gap?"
   - [[655--aM2EDTiaMs-everything-you-need-to-know-about-agent-observability-danny-gollapalli-and-ben-hylak-raind|#655 — Danny Gollapalli & Ben Hylak, Raindrop]]
-    - **Anchor:** `-aM2EDTiaMs` 00:02:52.160 → 00:02:53.519 · confidence: high
-    - **Quote:** "eval paradigm to a monitoring"
+    - **Anchor:** `-aM2EDTiaMs` 00:02:50.720 → 00:02:54.879 · confidence: high
+    - **Quote:** "we go from like a testing and eval paradigm to a monitoring p uh paradigm."
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `A48uhxfxbsM` 00:59:24.160 → 00:59:25.680 · confidence: high
-    - **Quote:** "production CI stack to go and run"
+    - **Anchor:** `A48uhxfxbsM` 00:59:22.240 → 00:59:31.119 · confidence: high
+    - **Quote:** "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
   - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — production traces and backtest results exported as file systems for agent-driven cohort analysis; closes the "from monitoring to fix" loop with a coding agent in the middle.
     - **Anchor:** `L2r6vLlLgs8` 00:11:00.000 → 00:11:02.400 · confidence: high
     - **Quote:** "download all of the UI that we have as a file system?"
