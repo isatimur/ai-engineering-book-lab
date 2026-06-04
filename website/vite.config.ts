@@ -26,7 +26,9 @@ export default defineConfig(({mode}) => {
     // Read by vite-react-ssg at build time to prerender each route to static HTML.
     ssgOptions: {
       dirStyle: 'flat',
-      script: 'async',
+      // The SSG hash script is emitted after the app script; async can start the app
+      // before the hash exists, causing static-loader-data-manifest-undefined.json.
+      script: 'defer',
     },
   };
 });

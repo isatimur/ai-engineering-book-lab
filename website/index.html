@@ -8,6 +8,11 @@
       route's <Seo> component (vite-react-ssg <Head>) and inlined per page at
       build time. Intentionally omitted here to avoid duplicate/conflicting tags.
     -->
+    <!-- No routes use React Router loaders; avoid a production fetch for SSG loader JSON. -->
+    <script>
+      window.__VITE_REACT_SSG_STATIC_LOADER_MANIFEST__ =
+        window.__VITE_REACT_SSG_STATIC_LOADER_MANIFEST__ || {};
+    </script>
   </head>
   <body>
     <div id="root"></div>
