@@ -3097,8 +3097,17 @@
     {
       "claim_id": "claims#42",
       "text": "Problem framing and review become the scarce skills once execution is cheap",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:09:02.560",
+          "end": "00:09:07.760",
+          "start_seconds": 542,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "the new scarce skill is writing specifications that fully capture the intent"
+        },
         {
           "video_id": "_Zcw_sVF6hU",
           "start": "00:17:40.240",
@@ -3857,8 +3866,17 @@
     {
       "claim_id": "claims#42",
       "text": "Problem framing and review become the scarce skills once execution is cheap",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:09:02.560",
+          "end": "00:09:07.760",
+          "start_seconds": 542,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "the new scarce skill is writing specifications that fully capture the intent"
+        },
         {
           "video_id": "_Zcw_sVF6hU",
           "start": "00:17:40.240",

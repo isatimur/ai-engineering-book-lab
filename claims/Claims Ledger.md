@@ -759,8 +759,11 @@
 
 ## 42) Problem framing and review become the scarce skills once execution is cheap
 - **Why it matters:** When a model will faithfully execute whatever it is pointed at, two human capacities become the binding constraint: framing the task well enough that fluent execution lands on the right target, and reviewing output well enough to defend standards against the pressure of fast, plausible work. A badly framed task handed to a strong model wastes more time than before, because the system sprints confidently in the wrong direction. This is the same control-system logic the book applies to evals (Claim 8), arriving first in its human form.
-- **Support level:** moderate
+- **Support level:** strong
 - **Supporting sources:**
+  - [[265-8rABwKRsec4-the-new-code-sean-grove-openai|#265 — Sean Grove, OpenAI]] — "the new scarce skill is writing specifications" — the framing half stated directly: once a model executes faithfully, the binding constraint is communicating intent precisely enough that fluent execution lands on the right target.
+    - **Anchor:** `8rABwKRsec4` 00:09:02.560 → 00:09:07.760 · confidence: high
+    - **Quote:** "the new scarce skill is writing specifications that fully capture the intent"
   - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — the friction worth keeping (the review, the architecture question, the refusal of a generic draft) is where judgment lives.
     - **Anchor:** `_Zcw_sVF6hU` 00:17:40.240 → 00:17:41.600 · confidence: high
     - **Quote:** "intentionally designed to put friction"
