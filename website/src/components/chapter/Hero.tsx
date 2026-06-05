@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion, useScroll, useTransform, type Variants } from 'motion/react';
 import { InteractiveHoverImage } from '../InteractiveHoverImage';
 import stats from '../../data/stats.json';
 
@@ -55,7 +55,7 @@ export const Hero = () => {
     }
   };
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
@@ -66,7 +66,7 @@ export const Hero = () => {
     },
   };
 
-  const textVariants = {
+  const textVariants: Variants = {
     hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
     visible: {
       opacity: 1,
@@ -76,7 +76,7 @@ export const Hero = () => {
     },
   };
 
-  const imgVariants = {
+  const imgVariants: Variants = {
     hidden: { opacity: 0, scale: 0.9, filter: 'blur(20px)' },
     visible: {
       opacity: 1,
