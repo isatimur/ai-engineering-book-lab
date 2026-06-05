@@ -1,7 +1,8 @@
 import { Head } from 'vite-react-ssg';
+import { SITE_ORIGIN } from '../data/book';
 
-/** Canonical production origin — used to build absolute canonical + OG URLs. */
-export const SITE_ORIGIN = 'https://fromcopilottocolleague.com';
+/** Re-exported for back-compat; canonical home is `../data/book`. */
+export { SITE_ORIGIN };
 
 const DEFAULT_IMAGE = '/covers/from-copilot-to-colleague.png';
 

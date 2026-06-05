@@ -4,27 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import { scrollAudio } from '../lib/audio';
 import { MarkdownBlock } from '../components/text/MarkdownBlock';
 import { Seo } from '../components/Seo';
+import { JsonLd } from '../components/JsonLd';
+import { bookJsonLd } from '../lib/structuredData';
+import { BOOK } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
-
-type Book = {
-  id: string;
-  title: string;
-  subtitle: string;
-  author: string;
-  coverImage: string;
-  spineColor: string;
-  category: string;
-};
-
-const BOOK: Book = {
-  id: 'from-copilot-to-colleague',
-  title: 'From Copilot to Colleague',
-  subtitle: 'How AI Engineering Turns Models into Dependable Systems',
-  author: 'Timur Isachenko',
-  coverImage: '/covers/from-copilot-to-colleague.png',
-  spineColor: '#1A1A1A',
-  category: 'AI Engineering',
-};
 
 export const Catalogue = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -55,6 +38,7 @@ export const Catalogue = () => {
         path="/"
         type="book"
       />
+      <JsonLd data={bookJsonLd()} />
       <header className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-start pointer-events-none">
         <div className="pointer-events-auto flex items-start gap-4">
           <div className="w-8 h-8 flex items-center justify-center border border-white/20 rounded-sm">

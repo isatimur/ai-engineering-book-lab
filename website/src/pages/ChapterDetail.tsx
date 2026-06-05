@@ -10,6 +10,8 @@ import { LightboxProvider, useLightbox } from '../lib/lightbox';
 import { ChapterArticle } from '../components/chapter/ChapterArticle';
 import { EvidenceRail } from '../EvidenceRail';
 import { Seo } from '../components/Seo';
+import { JsonLd } from '../components/JsonLd';
+import { chapterJsonLd, breadcrumbJsonLd } from '../lib/structuredData';
 
 const EvidenceExhibit = ({ chapter, title }: { chapter: string; title: string }) => {
   const op = opener(chapter);
@@ -63,6 +65,7 @@ export const ChapterDetail = () => {
         image={op ? op.src : undefined}
         type="article"
       />
+      <JsonLd data={[chapterJsonLd(chapter, idx), breadcrumbJsonLd(chapter)]} />
       <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased pb-24">
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/read" className="hover:text-[var(--color-ink)]">← All chapters</Link>

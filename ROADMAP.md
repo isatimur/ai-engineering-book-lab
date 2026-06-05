@@ -28,6 +28,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 | 2026-06-02 | **Weak-fragment re-anchoring complete** — all 57 remaining 1–3-word fragment quotes + 2 leftover mediums upgraded to substantive verbatim sentences; ledger now **150/150 anchors high-confidence** (0 medium, 0 low) | `claims/Claims Ledger.md` · `research_passes/2026-06-02-fragment-reanchoring.md` |
 | 2026-06-02 | **Harness-humanizer dogfood (book-wide)** — de-slop sweep across all 10 chapters: removed claim-announcers (the "claims-ledger" tic) + filler intensifiers; 19 pure-subtraction edits (ch05/ch10 already clean). Applied to `drafting/` (the MASH-judged files) and propagated to rendered `content/` | `public/drafting/*.md` · `website/src/content/*.md` |
 | 2026-06-03 | **Usefulness hybrid (book-wide)** — all 10 chapters: weakest descriptive paragraphs sharpened into explicit decisions/thresholds/tests/traps + a grounded "What to do with this" section each. Every change traces to a source already in the chapter (fidelity-bound, no fabrication); ch10 kept light (reflective closer). Applied to `drafting/` + `content/`. Re-score pending a MASH run | `public/drafting/*.md` · `website/src/content/*.md` · `docs/superpowers/specs/2026-06-03-usefulness-pilot-design.md` |
+| 2026-06-05 | **JSON-LD structured data** — schema.org `Book` (w/ 10-chapter `hasPart`) on the landing page; `Chapter` + `BreadcrumbList` on each `/read/:slug` page. Pure builders in `structuredData.ts`, `<JsonLd>` head component, book metadata centralized in `data/book.ts`; 6 unit tests; validated in all 12 prerendered pages | `website/src/lib/structuredData.ts` · `website/src/components/JsonLd.tsx` · `website/src/data/book.ts` |
 | 2026-06-04 | **Ledger #40–42 redundancy resolved** — claim 42 (framing/review as scarce skills) reused all 3 anchors verbatim from #40/#41; added a distinct lead source (Sean Grove, "The New Code", OpenAI — "the new scarce skill is writing specifications") + upgraded moderate → strong. Ledger now **151 anchors** | `claims/Claims Ledger.md` · `website/src/evidence.json` |
 | 2026-06-02 | **SEO routing refactor (merged)** — wouter → react-router-dom + vite-react-ssg; 36 pages prerendered to static HTML with per-page `<Head>` meta + canonical; new `/read/:slug`, `/visual-guide/concepts/:slug`, `/visual-guide/maps/:slug` routes; 34-URL sitemap + robots.txt; Vercel `cleanUrls` + repo-root build fix | `website/` · PR #1 |
 
@@ -42,7 +43,6 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 ## Queued (validated, not started)
 
 - **Per-chapter Open Graph image generation** — branded social cards with chapter title overlay
-- **JSON-LD structured data** (`Book`, `Chapter`, `Article`) for richer Google snippets
 - **Search across chapters + glossary**
 - **Reading progress persistence** across sessions
 - **Programmatic backlinks via diagram-as-content** posting cadence
