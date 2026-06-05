@@ -22,72 +22,394 @@
     }
   },
   "openers": {
-    "05-chapter1-the-shift.excalidraw": { "chapter": "01", "title": "Assistant vs delegate" },
-    "06-chapter2-taste.excalidraw": { "chapter": "02", "title": "Vibe coding vs vibe engineering" },
-    "07-chapter3-harnesses.excalidraw": { "chapter": "03", "title": "Bare prompt vs engineered harness" },
-    "08-chapter4-evals.excalidraw": { "chapter": "04", "title": "Vibes & benchmarks vs operational eval loop" },
-    "09-chapter5-context.excalidraw": { "chapter": "05", "title": "Stuffing the window vs assembling context" },
-    "10-chapter6-runtimes.excalidraw": { "chapter": "06", "title": "Stateless loop vs durable runtime" },
-    "11-chapter7-security.excalidraw": { "chapter": "07", "title": "Unbounded agent vs bounded autonomy" },
-    "12-chapter8-realtime.excalidraw": { "chapter": "08", "title": "Turn-based chat vs realtime pipeline" },
-    "13-chapter9-ai-native-org.excalidraw": { "chapter": "09", "title": "Seat licenses vs operating-model redesign" },
-    "14-chapter10-what-endures.excalidraw": { "chapter": "10", "title": "Transient layer vs durable layer" }
+    "05-chapter1-the-shift.excalidraw": {
+      "chapter": "01",
+      "title": "Assistant vs delegate"
+    },
+    "06-chapter2-taste.excalidraw": {
+      "chapter": "02",
+      "title": "Vibe coding vs vibe engineering"
+    },
+    "07-chapter3-harnesses.excalidraw": {
+      "chapter": "03",
+      "title": "Bare prompt vs engineered harness"
+    },
+    "08-chapter4-evals.excalidraw": {
+      "chapter": "04",
+      "title": "Vibes & benchmarks vs operational eval loop"
+    },
+    "09-chapter5-context.excalidraw": {
+      "chapter": "05",
+      "title": "Stuffing the window vs assembling context"
+    },
+    "10-chapter6-runtimes.excalidraw": {
+      "chapter": "06",
+      "title": "Stateless loop vs durable runtime"
+    },
+    "11-chapter7-security.excalidraw": {
+      "chapter": "07",
+      "title": "Unbounded agent vs bounded autonomy"
+    },
+    "12-chapter8-realtime.excalidraw": {
+      "chapter": "08",
+      "title": "Turn-based chat vs realtime pipeline"
+    },
+    "13-chapter9-ai-native-org.excalidraw": {
+      "chapter": "09",
+      "title": "Seat licenses vs operating-model redesign"
+    },
+    "14-chapter10-what-endures.excalidraw": {
+      "chapter": "10",
+      "title": "Transient layer vs durable layer"
+    }
   },
   "concepts": {
-    "01-agentic-product-design.excalidraw": { "id": "agentic-product-design", "title": "Agentic Product Design", "chapter": "01", "summary": "Designing the surface area an agent acts through — intake, action, review — not just the model prompt." },
-    "02-agent-observability.excalidraw": { "id": "agent-observability", "title": "Agent Observability", "chapter": "04", "summary": "Traces, metrics, and replay tooling that turn agent runs into something you can debug and improve." },
-    "03-agent-runtime-replay-vs-snapshot.excalidraw": { "id": "agent-runtime-replay-vs-snapshot", "title": "Replay vs Snapshot", "chapter": "06", "summary": "Two strategies for durable agent state: reconstruct from event history vs preserve as checkpoints." },
-    "04-ai-native-organization.excalidraw": { "id": "ai-native-organization", "title": "AI-Native Organization", "chapter": "09", "summary": "An operating model where AI is integrated into how work is created and reviewed, not just bolted on." },
-    "05-coding-evals.excalidraw": { "id": "coding-evals", "title": "Coding Evals", "chapter": "04", "summary": "Task-level scoring for code-writing agents — human-seeded cases, regression memory, production traces." },
-    "06-constrained-delegation.excalidraw": { "id": "constrained-delegation", "title": "Constrained Delegation", "chapter": "07", "summary": "Bounded autonomy — scoped identity, sandboxing, audit trail — that lets an agent act safely." },
-    "07-context-engineering.excalidraw": { "id": "context-engineering", "title": "Context Engineering", "chapter": "05", "summary": "Deciding what the model should know at the moment of action — retrieval, memory, tool selection." },
-    "08-durable-agents.excalidraw": { "id": "durable-agents", "title": "Durable Agents", "chapter": "06", "summary": "Agents with state, resumability, and recovery paths — architecture that survives a crash." },
-    "09-graphrag.excalidraw": { "id": "graphrag", "title": "GraphRAG", "chapter": "05", "summary": "Retrieval over a graph rather than a flat vector index — useful when relationships matter as much as content." },
-    "10-harness-engineering.excalidraw": { "id": "harness-engineering", "title": "Harness Engineering", "chapter": "03", "summary": "A prepared environment around an agent — specs, tests, tools, a plan → produce → review → ship loop." },
-    "11-hierarchical-memory.excalidraw": { "id": "hierarchical-memory", "title": "Hierarchical Memory", "chapter": "05", "summary": "Layered memory — session, project, long-term — scoped, inspectable, maintained like infrastructure." },
-    "12-human-control-plane.excalidraw": { "id": "human-control-plane", "title": "Human Control Plane", "chapter": "06", "summary": "Surfaces humans need to approve, intervene, audit, and escalate agent work." },
-    "13-model-context-protocol.excalidraw": { "id": "model-context-protocol", "title": "Model Context Protocol (MCP)", "chapter": "05", "summary": "A protocol for connecting models to tools and data sources in a standard, inspectable way." },
-    "14-one-shot-ai-failure.excalidraw": { "id": "one-shot-ai-failure", "title": "One-shot AI Failure", "chapter": "03", "summary": "The failure mode where an agent is asked to do everything in a single pass and silently produces slop." },
-    "15-software-factory.excalidraw": { "id": "software-factory", "title": "Software Factory", "chapter": "03", "summary": "Work intake, constraints, review, and output paths — the surrounding system, not just the model prompt." },
-    "16-spec-driven-development.excalidraw": { "id": "spec-driven-development", "title": "Spec-Driven Development", "chapter": "03", "summary": "Specs as executable acceptance criteria and repeatable checks — not paperwork." },
-    "17-vibe-coding.excalidraw": { "id": "vibe-coding", "title": "Vibe Coding", "chapter": "02", "summary": "Shipping whatever runs — fast generation without review discipline. Useful sometimes, dangerous often." },
-    "18-voice-agents.excalidraw": { "id": "voice-agents", "title": "Voice Agents", "chapter": "08", "summary": "Sub-800 ms latency budget, streaming, turn detection, barge-in — what realtime stress-tests demand." }
+    "01-agentic-product-design.excalidraw": {
+      "id": "agentic-product-design",
+      "title": "Agentic Product Design",
+      "chapter": "01",
+      "summary": "Designing the surface area an agent acts through — intake, action, review — not just the model prompt."
+    },
+    "02-agent-observability.excalidraw": {
+      "id": "agent-observability",
+      "title": "Agent Observability",
+      "chapter": "04",
+      "summary": "Traces, metrics, and replay tooling that turn agent runs into something you can debug and improve."
+    },
+    "03-agent-runtime-replay-vs-snapshot.excalidraw": {
+      "id": "agent-runtime-replay-vs-snapshot",
+      "title": "Replay vs Snapshot",
+      "chapter": "06",
+      "summary": "Two strategies for durable agent state: reconstruct from event history vs preserve as checkpoints."
+    },
+    "04-ai-native-organization.excalidraw": {
+      "id": "ai-native-organization",
+      "title": "AI-Native Organization",
+      "chapter": "09",
+      "summary": "An operating model where AI is integrated into how work is created and reviewed, not just bolted on."
+    },
+    "05-coding-evals.excalidraw": {
+      "id": "coding-evals",
+      "title": "Coding Evals",
+      "chapter": "04",
+      "summary": "Task-level scoring for code-writing agents — human-seeded cases, regression memory, production traces."
+    },
+    "06-constrained-delegation.excalidraw": {
+      "id": "constrained-delegation",
+      "title": "Constrained Delegation",
+      "chapter": "07",
+      "summary": "Bounded autonomy — scoped identity, sandboxing, audit trail — that lets an agent act safely."
+    },
+    "07-context-engineering.excalidraw": {
+      "id": "context-engineering",
+      "title": "Context Engineering",
+      "chapter": "05",
+      "summary": "Deciding what the model should know at the moment of action — retrieval, memory, tool selection."
+    },
+    "08-durable-agents.excalidraw": {
+      "id": "durable-agents",
+      "title": "Durable Agents",
+      "chapter": "06",
+      "summary": "Agents with state, resumability, and recovery paths — architecture that survives a crash."
+    },
+    "09-graphrag.excalidraw": {
+      "id": "graphrag",
+      "title": "GraphRAG",
+      "chapter": "05",
+      "summary": "Retrieval over a graph rather than a flat vector index — useful when relationships matter as much as content."
+    },
+    "10-harness-engineering.excalidraw": {
+      "id": "harness-engineering",
+      "title": "Harness Engineering",
+      "chapter": "03",
+      "summary": "A prepared environment around an agent — specs, tests, tools, a plan → produce → review → ship loop."
+    },
+    "11-hierarchical-memory.excalidraw": {
+      "id": "hierarchical-memory",
+      "title": "Hierarchical Memory",
+      "chapter": "05",
+      "summary": "Layered memory — session, project, long-term — scoped, inspectable, maintained like infrastructure."
+    },
+    "12-human-control-plane.excalidraw": {
+      "id": "human-control-plane",
+      "title": "Human Control Plane",
+      "chapter": "06",
+      "summary": "Surfaces humans need to approve, intervene, audit, and escalate agent work."
+    },
+    "13-model-context-protocol.excalidraw": {
+      "id": "model-context-protocol",
+      "title": "Model Context Protocol (MCP)",
+      "chapter": "05",
+      "summary": "A protocol for connecting models to tools and data sources in a standard, inspectable way."
+    },
+    "14-one-shot-ai-failure.excalidraw": {
+      "id": "one-shot-ai-failure",
+      "title": "One-shot AI Failure",
+      "chapter": "03",
+      "summary": "The failure mode where an agent is asked to do everything in a single pass and silently produces slop."
+    },
+    "15-software-factory.excalidraw": {
+      "id": "software-factory",
+      "title": "Software Factory",
+      "chapter": "03",
+      "summary": "Work intake, constraints, review, and output paths — the surrounding system, not just the model prompt."
+    },
+    "16-spec-driven-development.excalidraw": {
+      "id": "spec-driven-development",
+      "title": "Spec-Driven Development",
+      "chapter": "03",
+      "summary": "Specs as executable acceptance criteria and repeatable checks — not paperwork."
+    },
+    "17-vibe-coding.excalidraw": {
+      "id": "vibe-coding",
+      "title": "Vibe Coding",
+      "chapter": "02",
+      "summary": "Shipping whatever runs — fast generation without review discipline. Useful sometimes, dangerous often."
+    },
+    "18-voice-agents.excalidraw": {
+      "id": "voice-agents",
+      "title": "Voice Agents",
+      "chapter": "08",
+      "summary": "Sub-800 ms latency budget, streaming, turn detection, barge-in — what realtime stress-tests demand."
+    }
   },
   "inline": {
-    "ch01-fig1-assistant-copilot-delegate.excalidraw": { "chapter": "01", "index": 1, "title": "Assistant, copilot, delegate" },
-    "ch01-fig2-tell-me-vs-go-do.excalidraw": { "chapter": "01", "index": 2, "title": "Tell me vs go do" },
-    "ch01-fig3-chat-is-the-tip.excalidraw": { "chapter": "01", "index": 3, "title": "Chat is the tip of the iceberg" },
-    "ch02-fig1-cheap-code-syllogism.excalidraw": { "chapter": "02", "index": 1, "title": "The cheap-code syllogism" },
-    "ch02-fig2-vibe-coding-mode-switch.excalidraw": { "chapter": "02", "index": 2, "title": "The vibe-coding mode switch" },
-    "ch02-fig3-friction-is-judgment.excalidraw": { "chapter": "02", "index": 3, "title": "Friction is judgment" },
-    "ch03-fig1-repo-is-the-interface.excalidraw": { "chapter": "03", "index": 1, "title": "The repo is the interface" },
-    "ch03-fig2-specs-persist.excalidraw": { "chapter": "03", "index": 2, "title": "Specs persist" },
-    "ch03-fig3-software-factory.excalidraw": { "chapter": "03", "index": 3, "title": "The software factory" },
-    "ch04-fig1-evals-not-unit-tests.excalidraw": { "chapter": "04", "index": 1, "title": "Evals are not unit tests" },
-    "ch04-fig2-unit-of-evaluation.excalidraw": { "chapter": "04", "index": 2, "title": "The unit of evaluation" },
-    "ch04-fig3-observability-flywheel.excalidraw": { "chapter": "04", "index": 3, "title": "The observability flywheel" },
-    "ch05-fig1-rag-is-not-memory.excalidraw": { "chapter": "05", "index": 1, "title": "RAG is not memory" },
-    "ch05-fig2-graphrag-connects-dots.excalidraw": { "chapter": "05", "index": 2, "title": "GraphRAG connects the dots" },
-    "ch05-fig3-mcp-tool-flood.excalidraw": { "chapter": "05", "index": 3, "title": "The MCP tool flood" },
-    "ch06-fig1-transcript-vs-workflow.excalidraw": { "chapter": "06", "index": 1, "title": "Transcript vs workflow" },
-    "ch06-fig2-human-control-plane.excalidraw": { "chapter": "06", "index": 2, "title": "The human control plane" },
-    "ch06-fig3-subagents-need-recompose.excalidraw": { "chapter": "06", "index": 3, "title": "Subagents need recomposition" },
-    "ch07-fig1-authority-boundary-collapse.excalidraw": { "chapter": "07", "index": 1, "title": "Authority boundary collapse" },
-    "ch07-fig2-scoped-agent-identity.excalidraw": { "chapter": "07", "index": 2, "title": "Scoped agent identity" },
-    "ch07-fig3-step-up-oauth.excalidraw": { "chapter": "07", "index": 3, "title": "Step-up OAuth" },
-    "ch08-fig1-latency-budget.excalidraw": { "chapter": "08", "index": 1, "title": "Latency budget" },
-    "ch08-fig2-speech-layer-wrapper.excalidraw": { "chapter": "08", "index": 2, "title": "Speech layer wrapper" },
-    "ch08-fig3-interruption-runtime.excalidraw": { "chapter": "08", "index": 3, "title": "Interruption runtime" },
-    "ch09-fig1-where-scarcity-moves.excalidraw": { "chapter": "09", "index": 1, "title": "Where scarcity moves" },
-    "ch09-fig2-alignment-debt.excalidraw": { "chapter": "09", "index": 2, "title": "Alignment debt" },
-    "ch09-fig3-broaden-who-creates.excalidraw": { "chapter": "09", "index": 3, "title": "Broaden who creates" },
-    "ch10-fig1-churn-vs-durable.excalidraw": { "chapter": "10", "index": 1, "title": "Churn vs durable" },
-    "ch10-fig2-constrained-delegation.excalidraw": { "chapter": "10", "index": 2, "title": "Constrained delegation" },
-    "ch10-fig3-cost-of-weak-standards.excalidraw": { "chapter": "10", "index": 3, "title": "Cost of weak standards" }
+    "ch01-fig1-assistant-copilot-delegate.excalidraw": {
+      "chapter": "01",
+      "index": 1,
+      "title": "Assistant, copilot, delegate"
+    },
+    "ch01-fig2-tell-me-vs-go-do.excalidraw": {
+      "chapter": "01",
+      "index": 2,
+      "title": "Tell me vs go do"
+    },
+    "ch01-fig3-chat-is-the-tip.excalidraw": {
+      "chapter": "01",
+      "index": 3,
+      "title": "Chat is the tip of the iceberg"
+    },
+    "ch02-fig1-cheap-code-syllogism.excalidraw": {
+      "chapter": "02",
+      "index": 1,
+      "title": "The cheap-code syllogism"
+    },
+    "ch02-fig2-vibe-coding-mode-switch.excalidraw": {
+      "chapter": "02",
+      "index": 2,
+      "title": "The vibe-coding mode switch"
+    },
+    "ch02-fig3-friction-is-judgment.excalidraw": {
+      "chapter": "02",
+      "index": 3,
+      "title": "Friction is judgment"
+    },
+    "ch03-fig1-repo-is-the-interface.excalidraw": {
+      "chapter": "03",
+      "index": 1,
+      "title": "The repo is the interface"
+    },
+    "ch03-fig2-specs-persist.excalidraw": {
+      "chapter": "03",
+      "index": 2,
+      "title": "Specs persist"
+    },
+    "ch03-fig3-software-factory.excalidraw": {
+      "chapter": "03",
+      "index": 3,
+      "title": "The software factory"
+    },
+    "ch04-fig1-evals-not-unit-tests.excalidraw": {
+      "chapter": "04",
+      "index": 1,
+      "title": "Evals are not unit tests"
+    },
+    "ch04-fig2-unit-of-evaluation.excalidraw": {
+      "chapter": "04",
+      "index": 2,
+      "title": "The unit of evaluation"
+    },
+    "ch04-fig3-observability-flywheel.excalidraw": {
+      "chapter": "04",
+      "index": 3,
+      "title": "The observability flywheel"
+    },
+    "ch05-fig1-rag-is-not-memory.excalidraw": {
+      "chapter": "05",
+      "index": 1,
+      "title": "RAG is not memory"
+    },
+    "ch05-fig2-graphrag-connects-dots.excalidraw": {
+      "chapter": "05",
+      "index": 2,
+      "title": "GraphRAG connects the dots"
+    },
+    "ch05-fig3-mcp-tool-flood.excalidraw": {
+      "chapter": "05",
+      "index": 3,
+      "title": "The MCP tool flood"
+    },
+    "ch06-fig1-transcript-vs-workflow.excalidraw": {
+      "chapter": "06",
+      "index": 1,
+      "title": "Transcript vs workflow"
+    },
+    "ch06-fig2-human-control-plane.excalidraw": {
+      "chapter": "06",
+      "index": 2,
+      "title": "The human control plane"
+    },
+    "ch06-fig3-subagents-need-recompose.excalidraw": {
+      "chapter": "06",
+      "index": 3,
+      "title": "Subagents need recomposition"
+    },
+    "ch07-fig1-authority-boundary-collapse.excalidraw": {
+      "chapter": "07",
+      "index": 1,
+      "title": "Authority boundary collapse"
+    },
+    "ch07-fig2-scoped-agent-identity.excalidraw": {
+      "chapter": "07",
+      "index": 2,
+      "title": "Scoped agent identity"
+    },
+    "ch07-fig3-step-up-oauth.excalidraw": {
+      "chapter": "07",
+      "index": 3,
+      "title": "Step-up OAuth"
+    },
+    "ch08-fig1-latency-budget.excalidraw": {
+      "chapter": "08",
+      "index": 1,
+      "title": "Latency budget"
+    },
+    "ch08-fig2-speech-layer-wrapper.excalidraw": {
+      "chapter": "08",
+      "index": 2,
+      "title": "Speech layer wrapper"
+    },
+    "ch08-fig3-interruption-runtime.excalidraw": {
+      "chapter": "08",
+      "index": 3,
+      "title": "Interruption runtime"
+    },
+    "ch09-fig1-where-scarcity-moves.excalidraw": {
+      "chapter": "09",
+      "index": 1,
+      "title": "Where scarcity moves"
+    },
+    "ch09-fig2-alignment-debt.excalidraw": {
+      "chapter": "09",
+      "index": 2,
+      "title": "Alignment debt"
+    },
+    "ch09-fig3-broaden-who-creates.excalidraw": {
+      "chapter": "09",
+      "index": 3,
+      "title": "Broaden who creates"
+    },
+    "ch10-fig1-churn-vs-durable.excalidraw": {
+      "chapter": "10",
+      "index": 1,
+      "title": "Churn vs durable"
+    },
+    "ch10-fig2-constrained-delegation.excalidraw": {
+      "chapter": "10",
+      "index": 2,
+      "title": "Constrained delegation"
+    },
+    "ch10-fig3-cost-of-weak-standards.excalidraw": {
+      "chapter": "10",
+      "index": 3,
+      "title": "Cost of weak standards"
+    },
+    "ch01-fig4-failure-surface-stretches.excalidraw": {
+      "chapter": "01",
+      "index": 4,
+      "title": "The failure surface stretches"
+    },
+    "ch05-fig4-misassembly-vs-hallucination.excalidraw": {
+      "chapter": "05",
+      "index": 4,
+      "title": "Misassembly is not hallucination"
+    },
+    "ch05-fig5-retrieval-is-four-jobs.excalidraw": {
+      "chapter": "05",
+      "index": 5,
+      "title": "“RAG” is four different jobs"
+    },
+    "ch06-fig4-agency-dial.excalidraw": {
+      "chapter": "06",
+      "index": 4,
+      "title": "Agency is a dial, not a switch"
+    },
+    "ch07-fig4-enterprise-mcp-gateway.excalidraw": {
+      "chapter": "07",
+      "index": 4,
+      "title": "Enterprise MCP has one shape"
+    },
+    "ch08-fig4-half-duplex-ceiling.excalidraw": {
+      "chapter": "08",
+      "index": 4,
+      "title": "Half-duplex is the ceiling"
+    },
+    "ch08-fig5-latency-masking.excalidraw": {
+      "chapter": "08",
+      "index": 5,
+      "title": "Mask latency, don't just minimize it"
+    },
+    "ch09-fig4-review-bottleneck.excalidraw": {
+      "chapter": "09",
+      "index": 4,
+      "title": "Review is the new bottleneck"
+    }
   },
   "maps": {
-    "01-readers-path.excalidraw": { "id": "readers-path", "title": "Reader's path", "caption": "Three reading routes through the same ten chapters — for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order." },
-    "02-methodology-deep-dive.excalidraw": { "id": "methodology-deep-dive", "title": "Methodology deep-dive", "caption": "The autoresearch pipeline in detail. Five layers — Source (video notes), Synthesis (themes, people, eighteen concepts), Evidence (claims ledger plus evidence packs), Manuscript (chapter packets and drafts), and a Research-Org control plane that schedules bounded agent passes — pinned to the actual repo directories that hold them. The diagram surfaces what is usually invisible behind 'we used AI to write this.'" },
-    "03-concept-graph.excalidraw": { "id": "concept-graph", "title": "Concept Graph", "caption": "Eighteen concepts from the manuscript drawn as a dependency network. Nodes are the named ideas — One-Shot AI Failure, Harness Engineering, Context Engineering, Durable Agents, Human Control Plane, and the rest. Edges are the dependencies and contrasts the book draws between them. Clusters mirror the four-act spine. A reader's map of the conceptual terrain." }
+    "01-readers-path.excalidraw": {
+      "id": "readers-path",
+      "title": "Reader's path",
+      "caption": "Three reading routes through the same ten chapters — for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order."
+    },
+    "02-methodology-deep-dive.excalidraw": {
+      "id": "methodology-deep-dive",
+      "title": "Methodology deep-dive",
+      "caption": "The autoresearch pipeline in detail. Five layers — Source (video notes), Synthesis (themes, people, eighteen concepts), Evidence (claims ledger plus evidence packs), Manuscript (chapter packets and drafts), and a Research-Org control plane that schedules bounded agent passes — pinned to the actual repo directories that hold them. The diagram surfaces what is usually invisible behind 'we used AI to write this.'"
+    },
+    "03-concept-graph.excalidraw": {
+      "id": "concept-graph",
+      "title": "Concept Graph",
+      "caption": "Eighteen concepts from the manuscript drawn as a dependency network. Nodes are the named ideas — One-Shot AI Failure, Harness Engineering, Context Engineering, Durable Agents, Human Control Plane, and the rest. Edges are the dependencies and contrasts the book draws between them. Clusters mirror the four-act spine. A reader's map of the conceptual terrain."
+    }
+  },
+  "dividers": {
+    "act-1-problem.excalidraw": {
+      "id": "act-1",
+      "act": "I",
+      "title": "Act I · The Problem",
+      "chapters": "Chapters 1–2",
+      "caption": "Define the real shift — and the enduring human role."
+    },
+    "act-2-scaffolding-stack.excalidraw": {
+      "id": "act-2",
+      "act": "II",
+      "title": "Act II · The Scaffolding Stack",
+      "chapters": "Chapters 3–7",
+      "caption": "The technical systems that make delegated machine work dependable."
+    },
+    "act-3-stress-test.excalidraw": {
+      "id": "act-3",
+      "act": "III",
+      "title": "Act III · The Stress Test",
+      "chapters": "Chapter 8",
+      "caption": "Push the framework to its hardest edges."
+    },
+    "act-4-widening.excalidraw": {
+      "id": "act-4",
+      "act": "IV",
+      "title": "Act IV · The Widening",
+      "chapters": "Chapters 9–10",
+      "caption": "From systems design to organizations and durable truths."
+    }
   }
 }

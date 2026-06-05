@@ -262,7 +262,7 @@
     {
       "chapter": "01",
       "index": 4,
-      "title": "Ch01 Fig4 Failure Surface Stretches",
+      "title": "The failure surface stretches",
       "src": "/diagrams/inline/ch01-fig4.png",
       "sourceFile": "ch01-fig4-failure-surface-stretches.excalidraw"
     },
@@ -353,14 +353,14 @@
     {
       "chapter": "05",
       "index": 4,
-      "title": "Ch05 Fig4 Misassembly Vs Hallucination",
+      "title": "Misassembly is not hallucination",
       "src": "/diagrams/inline/ch05-fig4.png",
       "sourceFile": "ch05-fig4-misassembly-vs-hallucination.excalidraw"
     },
     {
       "chapter": "05",
       "index": 5,
-      "title": "Ch05 Fig5 Retrieval Is Four Jobs",
+      "title": "“RAG” is four different jobs",
       "src": "/diagrams/inline/ch05-fig5.png",
       "sourceFile": "ch05-fig5-retrieval-is-four-jobs.excalidraw"
     },
@@ -388,7 +388,7 @@
     {
       "chapter": "06",
       "index": 4,
-      "title": "Ch06 Fig4 Agency Dial",
+      "title": "Agency is a dial, not a switch",
       "src": "/diagrams/inline/ch06-fig4.png",
       "sourceFile": "ch06-fig4-agency-dial.excalidraw"
     },
@@ -416,7 +416,7 @@
     {
       "chapter": "07",
       "index": 4,
-      "title": "Ch07 Fig4 Enterprise Mcp Gateway",
+      "title": "Enterprise MCP has one shape",
       "src": "/diagrams/inline/ch07-fig4.png",
       "sourceFile": "ch07-fig4-enterprise-mcp-gateway.excalidraw"
     },
@@ -444,14 +444,14 @@
     {
       "chapter": "08",
       "index": 4,
-      "title": "Ch08 Fig4 Half Duplex Ceiling",
+      "title": "Half-duplex is the ceiling",
       "src": "/diagrams/inline/ch08-fig4.png",
       "sourceFile": "ch08-fig4-half-duplex-ceiling.excalidraw"
     },
     {
       "chapter": "08",
       "index": 5,
-      "title": "Ch08 Fig5 Latency Masking",
+      "title": "Mask latency, don't just minimize it",
       "src": "/diagrams/inline/ch08-fig5.png",
       "sourceFile": "ch08-fig5-latency-masking.excalidraw"
     },
@@ -479,7 +479,7 @@
     {
       "chapter": "09",
       "index": 4,
-      "title": "Ch09 Fig4 Review Bottleneck",
+      "title": "Review is the new bottleneck",
       "src": "/diagrams/inline/ch09-fig4.png",
       "sourceFile": "ch09-fig4-review-bottleneck.excalidraw"
     },
@@ -535,7 +535,7 @@
       "title": "Act I · The Problem",
       "chapters": "Chapters 1–2",
       "caption": "Define the real shift — and the enduring human role.",
-      "src": "/diagrams/dividers/act-1-problem.png",
+      "src": "/diagrams/dividers/act-1.png",
       "sourceFile": "act-1-problem.excalidraw"
     },
     {
@@ -544,7 +544,7 @@
       "title": "Act II · The Scaffolding Stack",
       "chapters": "Chapters 3–7",
       "caption": "The technical systems that make delegated machine work dependable.",
-      "src": "/diagrams/dividers/act-2-scaffolding-stack.png",
+      "src": "/diagrams/dividers/act-2.png",
       "sourceFile": "act-2-scaffolding-stack.excalidraw"
     },
     {
@@ -553,7 +553,7 @@
       "title": "Act III · The Stress Test",
       "chapters": "Chapter 8",
       "caption": "Push the framework to its hardest edges.",
-      "src": "/diagrams/dividers/act-3-stress-test.png",
+      "src": "/diagrams/dividers/act-3.png",
       "sourceFile": "act-3-stress-test.excalidraw"
     },
     {
@@ -562,7 +562,7 @@
       "title": "Act IV · The Widening",
       "chapters": "Chapters 9–10",
       "caption": "From systems design to organizations and durable truths.",
-      "src": "/diagrams/dividers/act-4-widening.png",
+      "src": "/diagrams/dividers/act-4.png",
       "sourceFile": "act-4-widening.excalidraw"
     }
   ]

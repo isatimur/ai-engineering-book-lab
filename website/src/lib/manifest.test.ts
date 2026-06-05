@@ -8,6 +8,7 @@ describe('manifest', () => {
     expect(manifest.concepts).toHaveLength(18);
     expect(manifest.inline.length).toBeGreaterThanOrEqual(20);
     expect(manifest.maps.length).toBeGreaterThanOrEqual(2);
+    expect(manifest.dividers).toHaveLength(4);
   });
 
   it('opener() returns the chapter opener', () => {
