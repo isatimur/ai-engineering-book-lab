@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T21:53:16+00:00",
+  "generated_at": "2026-06-05T01:07:45+00:00",
   "corpus": {
     "videos": 741
   },
@@ -32,14 +32,14 @@
     "overview": 4,
     "chapter_openers": 10,
     "concepts": 18,
-    "inline": 30,
+    "inline": 38,
     "maps": 3,
-    "total": 65
+    "total": 73
   },
   "method": {
     "research_passes": 18,
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 937
+  "total_artefacts": 945
 }
