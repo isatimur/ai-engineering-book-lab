@@ -40,12 +40,23 @@ export type MapDiagram = {
   sourceFile: string;
 };
 
+export type DividerDiagram = {
+  id: string;
+  act: string;
+  title: string;
+  chapters: string;
+  caption: string;
+  src: string;
+  sourceFile: string;
+};
+
 export type DiagramManifest = {
   overview: OverviewDiagram[];
   openers: OpenerDiagram[];
   concepts: ConceptDiagram[];
   inline: InlineDiagram[];
   maps: MapDiagram[];
+  dividers: DividerDiagram[];
 };
 
 export const manifest = manifestRaw as DiagramManifest;

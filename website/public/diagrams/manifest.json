@@ -527,5 +527,43 @@
       "src": "/diagrams/maps/readers-path.png",
       "sourceFile": "01-readers-path.excalidraw"
     }
+  ],
+  "dividers": [
+    {
+      "id": "act-1-problem",
+      "act": "I",
+      "title": "Act I \u00b7 The Problem",
+      "chapters": "CHAPTERS 1\u20132",
+      "caption": "Define the real shift \u2014 and the enduring human role.",
+      "src": "/diagrams/dividers/act-1-problem.png",
+      "sourceFile": "act-1-problem.excalidraw"
+    },
+    {
+      "id": "act-2-scaffolding-stack",
+      "act": "II",
+      "title": "Act II \u00b7 The Scaffolding Stack",
+      "chapters": "CHAPTERS 3\u20137",
+      "caption": "The technical systems that make delegated machine work dependable.",
+      "src": "/diagrams/dividers/act-2-scaffolding-stack.png",
+      "sourceFile": "act-2-scaffolding-stack.excalidraw"
+    },
+    {
+      "id": "act-3-stress-test",
+      "act": "III",
+      "title": "Act III \u00b7 The Stress Test",
+      "chapters": "CHAPTER 8",
+      "caption": "Push the framework to its hardest edges.",
+      "src": "/diagrams/dividers/act-3-stress-test.png",
+      "sourceFile": "act-3-stress-test.excalidraw"
+    },
+    {
+      "id": "act-4-widening",
+      "act": "IV",
+      "title": "Act IV \u00b7 The Widening",
+      "chapters": "CHAPTERS 9\u201310",
+      "caption": "From systems design to organizations and durable truths.",
+      "src": "/diagrams/dividers/act-4-widening.png",
+      "sourceFile": "act-4-widening.excalidraw"
+    }
   ]
 }

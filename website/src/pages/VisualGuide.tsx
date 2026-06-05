@@ -51,6 +51,32 @@ export const VisualGuide = () => {
       </section>
 
       <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-black/10">
+        <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">The four acts</h1>
+        <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">The ten chapters move through a four-act arc — the Problem, the Scaffolding Stack, the Stress Test, and the Widening. Each divider names the act, its chapters, and where it sits in the throughline.</p>
+        <div className="space-y-16">
+          {manifest.dividers.map((d) => (
+            <figure key={d.id}>
+              <button
+                type="button"
+                onClick={() => setLightbox({ src: d.src, title: d.title, caption: d.caption, chapterRef: d.chapters })}
+                className="block w-full border border-black/10 bg-white hover:shadow-xl transition-shadow cursor-zoom-in"
+                aria-label={`Enlarge ${d.title}`}
+              >
+                <img src={d.src} alt={d.title} className="block w-full h-auto" loading="lazy" />
+              </button>
+              <figcaption className="mt-5 md:flex md:items-baseline md:gap-8">
+                <h2 className="font-serif text-2xl italic md:w-1/3 mb-2 md:mb-0">{d.title}</h2>
+                <div className="md:w-2/3">
+                  <p className="font-mono text-[10px] uppercase tracking-widest opacity-60 mb-2">{d.chapters}</p>
+                  <p className="font-sans text-base leading-relaxed opacity-80">{d.caption}</p>
+                </div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-black/10">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">How to read this book</h1>
         <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Three maps. One picks a reading route by reader profile. One opens up The Method that produced the manuscript. One charts the dependency network of the eighteen concepts the book uses.</p>
         <div className="space-y-24">
