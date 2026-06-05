@@ -35,6 +35,7 @@ src_dir_for_section() {
     concepts)         echo "diagrams/concepts" ;;
     inline)           echo "diagrams/inline" ;;
     maps)             echo "diagrams/maps" ;;
+    dividers)         echo "diagrams/dividers" ;;
     *) echo "" ;;
   esac
 }
@@ -111,7 +112,7 @@ process_section() {
   done < <(printf '%s\n' "$entries")
 }
 
-for section in overview openers concepts inline maps; do
+for section in overview openers concepts inline maps dividers; do
   echo "==> $section"
   process_section "$section"
 done
