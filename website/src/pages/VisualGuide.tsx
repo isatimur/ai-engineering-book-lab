@@ -54,7 +54,7 @@ export const VisualGuide = () => {
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">The four acts</h1>
         <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">The ten chapters move through a four-act arc — the Problem, the Scaffolding Stack, the Stress Test, and the Widening. Each divider names the act, its chapters, and where it sits in the throughline.</p>
         <div className="space-y-16">
-          {manifest.dividers.map((d) => (
+          {(manifest.dividers ?? []).map((d) => (
             <figure key={d.id}>
               <button
                 type="button"

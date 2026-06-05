@@ -79,7 +79,7 @@ async function main() {
 
   let copied = 0;
   let kept = 0;
-  const manifest = { overview: [], openers: [], concepts: [], inline: [], maps: [] };
+  const manifest = { overview: [], openers: [], concepts: [], inline: [], maps: [], dividers: [] };
 
   // OVERVIEW
   for (const sourceFile of Object.keys(meta.overview)) {
@@ -177,8 +177,26 @@ async function main() {
     });
   }
 
+  // DIVIDERS (act-divider visuals)
+  const dividerPngs = await listPngs(join(diagramsRoot, 'dividers'));
+  for (const png of dividerPngs) {
+    const sourceFile = png.replace('.png', '.excalidraw');
+    const m = meta.dividers?.[sourceFile];
+    if (!m) {
+      warn(`no meta entry for divider ${sourceFile} - skipping`);
+      continue;
+    }
+    const dst = join(publicDiagrams, 'dividers', `${m.id}.png`);
+    (await copyIfNewer(join(diagramsRoot, 'dividers', png), dst)) ? copied++ : kept++;
+    manifest.dividers.push({
+      id: m.id, act: m.act, title: m.title, chapters: m.chapters, caption: m.caption,
+      src: `/diagrams/dividers/${m.id}.png`, sourceFile,
+    });
+  }
+
   // Sort for deterministic manifest
   manifest.openers.sort((a, b) => a.chapter.localeCompare(b.chapter));
+  manifest.dividers.sort((a, b) => a.id.localeCompare(b.id));
   manifest.concepts.sort((a, b) => a.id.localeCompare(b.id));
   manifest.inline.sort((a, b) => a.chapter.localeCompare(b.chapter) || a.index - b.index);
   manifest.maps.sort((a, b) => a.id.localeCompare(b.id));
@@ -193,7 +211,7 @@ async function main() {
   await writeFile(join(srcManifestDir, 'diagram-manifest.json'), json);
 
   log(`done. copied=${copied} kept=${kept} manifest=public/diagrams/manifest.json + src/data/diagram-manifest.json`);
-  log(`counts: overview=${manifest.overview.length} openers=${manifest.openers.length} concepts=${manifest.concepts.length} inline=${manifest.inline.length} maps=${manifest.maps.length}`);
+  log(`counts: overview=${manifest.overview.length} openers=${manifest.openers.length} concepts=${manifest.concepts.length} inline=${manifest.inline.length} maps=${manifest.maps.length} dividers=${manifest.dividers.length}`);
 }
 
 main().catch((err) => {
