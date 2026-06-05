@@ -260,6 +260,13 @@
       "sourceFile": "ch01-fig3-chat-is-the-tip.excalidraw"
     },
     {
+      "chapter": "01",
+      "index": 4,
+      "title": "Ch01 Fig4 Failure Surface Stretches",
+      "src": "/diagrams/inline/ch01-fig4.png",
+      "sourceFile": "ch01-fig4-failure-surface-stretches.excalidraw"
+    },
+    {
       "chapter": "02",
       "index": 1,
       "title": "The cheap-code syllogism",
@@ -344,6 +351,20 @@
       "sourceFile": "ch05-fig3-mcp-tool-flood.excalidraw"
     },
     {
+      "chapter": "05",
+      "index": 4,
+      "title": "Ch05 Fig4 Misassembly Vs Hallucination",
+      "src": "/diagrams/inline/ch05-fig4.png",
+      "sourceFile": "ch05-fig4-misassembly-vs-hallucination.excalidraw"
+    },
+    {
+      "chapter": "05",
+      "index": 5,
+      "title": "Ch05 Fig5 Retrieval Is Four Jobs",
+      "src": "/diagrams/inline/ch05-fig5.png",
+      "sourceFile": "ch05-fig5-retrieval-is-four-jobs.excalidraw"
+    },
+    {
       "chapter": "06",
       "index": 1,
       "title": "Transcript vs workflow",
@@ -363,6 +384,13 @@
       "title": "Subagents need recomposition",
       "src": "/diagrams/inline/ch06-fig3.png",
       "sourceFile": "ch06-fig3-subagents-need-recompose.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 4,
+      "title": "Ch06 Fig4 Agency Dial",
+      "src": "/diagrams/inline/ch06-fig4.png",
+      "sourceFile": "ch06-fig4-agency-dial.excalidraw"
     },
     {
       "chapter": "07",
@@ -386,6 +414,13 @@
       "sourceFile": "ch07-fig3-step-up-oauth.excalidraw"
     },
     {
+      "chapter": "07",
+      "index": 4,
+      "title": "Ch07 Fig4 Enterprise Mcp Gateway",
+      "src": "/diagrams/inline/ch07-fig4.png",
+      "sourceFile": "ch07-fig4-enterprise-mcp-gateway.excalidraw"
+    },
+    {
       "chapter": "08",
       "index": 1,
       "title": "Latency budget",
@@ -407,6 +442,20 @@
       "sourceFile": "ch08-fig3-interruption-runtime.excalidraw"
     },
     {
+      "chapter": "08",
+      "index": 4,
+      "title": "Ch08 Fig4 Half Duplex Ceiling",
+      "src": "/diagrams/inline/ch08-fig4.png",
+      "sourceFile": "ch08-fig4-half-duplex-ceiling.excalidraw"
+    },
+    {
+      "chapter": "08",
+      "index": 5,
+      "title": "Ch08 Fig5 Latency Masking",
+      "src": "/diagrams/inline/ch08-fig5.png",
+      "sourceFile": "ch08-fig5-latency-masking.excalidraw"
+    },
+    {
       "chapter": "09",
       "index": 1,
       "title": "Where scarcity moves",
@@ -426,6 +475,13 @@
       "title": "Broaden who creates",
       "src": "/diagrams/inline/ch09-fig3.png",
       "sourceFile": "ch09-fig3-broaden-who-creates.excalidraw"
+    },
+    {
+      "chapter": "09",
+      "index": 4,
+      "title": "Ch09 Fig4 Review Bottleneck",
+      "src": "/diagrams/inline/ch09-fig4.png",
+      "sourceFile": "ch09-fig4-review-bottleneck.excalidraw"
     },
     {
       "chapter": "10",
@@ -470,6 +526,44 @@
       "caption": "Three reading routes through the same ten chapters — for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order.",
       "src": "/diagrams/maps/readers-path.png",
       "sourceFile": "01-readers-path.excalidraw"
+    }
+  ],
+  "dividers": [
+    {
+      "id": "act-1",
+      "act": "I",
+      "title": "Act I · The Problem",
+      "chapters": "Chapters 1–2",
+      "caption": "Define the real shift — and the enduring human role.",
+      "src": "/diagrams/dividers/act-1-problem.png",
+      "sourceFile": "act-1-problem.excalidraw"
+    },
+    {
+      "id": "act-2",
+      "act": "II",
+      "title": "Act II · The Scaffolding Stack",
+      "chapters": "Chapters 3–7",
+      "caption": "The technical systems that make delegated machine work dependable.",
+      "src": "/diagrams/dividers/act-2-scaffolding-stack.png",
+      "sourceFile": "act-2-scaffolding-stack.excalidraw"
+    },
+    {
+      "id": "act-3",
+      "act": "III",
+      "title": "Act III · The Stress Test",
+      "chapters": "Chapter 8",
+      "caption": "Push the framework to its hardest edges.",
+      "src": "/diagrams/dividers/act-3-stress-test.png",
+      "sourceFile": "act-3-stress-test.excalidraw"
+    },
+    {
+      "id": "act-4",
+      "act": "IV",
+      "title": "Act IV · The Widening",
+      "chapters": "Chapters 9–10",
+      "caption": "From systems design to organizations and durable truths.",
+      "src": "/diagrams/dividers/act-4-widening.png",
+      "sourceFile": "act-4-widening.excalidraw"
     }
   ]
 }
