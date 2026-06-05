@@ -55,7 +55,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.1,
@@ -273,7 +273,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
@@ -504,7 +504,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 74.3,
@@ -770,7 +770,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.2,
@@ -1011,7 +1011,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 76.8,
@@ -1242,7 +1242,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.3,
@@ -1483,7 +1483,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 70.4,
@@ -1723,7 +1723,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 77.2,
@@ -2011,7 +2011,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 80.8,
@@ -2246,7 +2246,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "corpus_snapshot_hash": "sha256:49247ba2eadb2ad971a6b9d4c760921d3594464e58244a81df2fb9d76f863d97",
       "rollup": {
         "humanness": 82.0,
@@ -2574,7 +2574,7 @@
     },
     {
       "run_id": "2026-06-02-093847-4924",
-      "version_id": "git:4129c87",
+      "version_id": "git:c063829",
       "finished_at": "2026-06-02T09:44:33.568641+00:00",
       "partial": true,
       "book": {

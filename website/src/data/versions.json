@@ -52,8 +52,19 @@
       ]
     },
     "02": {
-      "current_version_id": "git:96210fb",
+      "current_version_id": "git:869bdb6",
       "versions": [
+        {
+          "version_id": "git:869bdb6",
+          "source": "git",
+          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
+          "date": "2026-06-04",
+          "status": "Drafting",
+          "wordCount": 2011,
+          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-869bdb6.md"
+        },
         {
           "version_id": "git:96210fb",
           "source": "git",
@@ -112,8 +123,19 @@
       ]
     },
     "03": {
-      "current_version_id": "git:ed15457",
+      "current_version_id": "git:869bdb6",
       "versions": [
+        {
+          "version_id": "git:869bdb6",
+          "source": "git",
+          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
+          "date": "2026-06-04",
+          "status": "Drafting",
+          "wordCount": 3227,
+          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-869bdb6.md"
+        },
         {
           "version_id": "git:ed15457",
           "source": "git",
@@ -161,8 +183,19 @@
       ]
     },
     "04": {
-      "current_version_id": "git:ed15457",
+      "current_version_id": "git:869bdb6",
       "versions": [
+        {
+          "version_id": "git:869bdb6",
+          "source": "git",
+          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
+          "date": "2026-06-04",
+          "status": "Drafting",
+          "wordCount": 2398,
+          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-869bdb6.md"
+        },
         {
           "version_id": "git:ed15457",
           "source": "git",
@@ -346,8 +379,19 @@
       ]
     },
     "08": {
-      "current_version_id": "git:ed15457",
+      "current_version_id": "git:869bdb6",
       "versions": [
+        {
+          "version_id": "git:869bdb6",
+          "source": "git",
+          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
+          "date": "2026-06-04",
+          "status": "Drafting",
+          "wordCount": 3517,
+          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-869bdb6.md"
+        },
         {
           "version_id": "git:ed15457",
           "source": "git",
@@ -395,8 +439,19 @@
       ]
     },
     "09": {
-      "current_version_id": "git:96210fb",
+      "current_version_id": "git:869bdb6",
       "versions": [
+        {
+          "version_id": "git:869bdb6",
+          "source": "git",
+          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
+          "date": "2026-06-04",
+          "status": "Drafting",
+          "wordCount": 3247,
+          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-869bdb6.md"
+        },
         {
           "version_id": "git:96210fb",
           "source": "git",
