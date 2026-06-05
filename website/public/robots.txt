@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://fromcopilottocolleague.com/sitemap.xml
+
+# LLM- and agent-readable index (llmstxt.org): https://fromcopilottocolleague.com/llms.txt
+# Full book as markdown: https://fromcopilottocolleague.com/llms-full.txt

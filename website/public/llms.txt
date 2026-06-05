@@ -1,0 +1,29 @@
+# From Copilot to Colleague
+
+> How AI Engineering Turns Models into Dependable Systems. An online book synthesized from a corpus of AI Engineer conference talks, where no claim ships without a source anchor — a precise pointer to the moment in a video where it came from.
+
+By Timur Isachenko. Built in public, open source: https://github.com/isatimur/ai-engineering-book-lab
+
+Built from 741 AI Engineer talks · 42 claims · 151 source anchors.
+
+## Chapters
+
+- [Chapter 1 — The Shift: From Assistant to Delegate](https://fromcopilottocolleague.com/read/01-the-shift.md): Why the important transition is not better chat UX, but reliable delegated work.
+- [Chapter 2 — Taste Still Matters When Code Gets Cheap](https://fromcopilottocolleague.com/read/02-taste.md): Why fundamentals, judgment, craft, and constraint become more valuable.
+- [Chapter 3 — Harnesses, Specs, and Codebases Agents Can Actually Use](https://fromcopilottocolleague.com/read/03-harnesses.md): How prepared environments make coding agents useful without accepting slop.
+- [Chapter 4 — Evals Are the Control System](https://fromcopilottocolleague.com/read/04-evals.md): Why production trust comes from measurement loops, not vibes.
+- [Chapter 5 — Context Is Infrastructure](https://fromcopilottocolleague.com/read/05-context.md): Retrieval, memory, and knowledge layers as first-class system design.
+- [Chapter 6 — Runtimes, State, and the Human Control Plane](https://fromcopilottocolleague.com/read/06-runtimes.md): Durable agents, replay vs snapshot, and why autonomy needs architecture.
+- [Chapter 7 — Security, Identity, and High-Stakes Trust](https://fromcopilottocolleague.com/read/07-security.md): Why delegated authority needs boundaries, audit trails, and real controls.
+- [Chapter 8 — Realtime, Voice, and the Cost of Being Interruptible](https://fromcopilottocolleague.com/read/08-realtime.md): What voice, latency, and turn-taking reveal about production AI.
+- [Chapter 9 — The AI-Native Organization](https://fromcopilottocolleague.com/read/09-ai-native-org.md): How teams and incentives change when AI becomes part of the workforce.
+- [Chapter 10 — What Endures](https://fromcopilottocolleague.com/read/10-what-endures.md): The principles that survive tool churn: context, evals, control, and taste.
+
+## Full text
+
+- [Complete book as markdown](https://fromcopilottocolleague.com/llms-full.txt): all 10 chapters in one file.
+
+## Reference
+
+- [Source repository](https://github.com/isatimur/ai-engineering-book-lab): the corpus, claims ledger, and method.
+- [Sitemap](https://fromcopilottocolleague.com/sitemap.xml): every indexable page.

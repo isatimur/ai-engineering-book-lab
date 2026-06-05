@@ -140,6 +140,28 @@ export const Catalogue = () => {
             ))}
           </div>
         </motion.div>
+
+        <div className="mt-16 pt-8 border-t border-white/10">
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/40 mb-3">For AI agents</p>
+          <p className="font-sans font-light text-sm text-white/60 mb-5 max-w-xl">
+            This book is structured for LLMs and agents to read — a machine-readable index and the full text as clean markdown.
+          </p>
+          <div className="flex flex-wrap gap-2 font-mono text-[11px] uppercase tracking-widest">
+            {[
+              { href: '/llms.txt', label: 'llms.txt' },
+              { href: '/llms-full.txt', label: 'llms-full.txt' },
+              { href: '/sitemap.xml', label: 'sitemap.xml' },
+            ].map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="px-3 py-1.5 border border-white/20 rounded-sm text-white/70 hover:text-white hover:border-white/40 transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </footer>
 
       <div className="fixed bottom-8 right-6 text-white/40 rotate-180 mix-blend-difference z-0" style={{ writingMode: 'vertical-rl' }}>
