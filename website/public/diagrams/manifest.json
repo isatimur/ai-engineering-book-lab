@@ -260,6 +260,13 @@
       "sourceFile": "ch01-fig3-chat-is-the-tip.excalidraw"
     },
     {
+      "chapter": "01",
+      "index": 4,
+      "title": "Ch01 Fig4 Failure Surface Stretches",
+      "src": "/diagrams/inline/ch01-fig4.png",
+      "sourceFile": "ch01-fig4-failure-surface-stretches.excalidraw"
+    },
+    {
       "chapter": "02",
       "index": 1,
       "title": "The cheap-code syllogism",
@@ -346,14 +353,14 @@
     {
       "chapter": "05",
       "index": 4,
-      "title": "Misassembly vs hallucination",
+      "title": "Ch05 Fig4 Misassembly Vs Hallucination",
       "src": "/diagrams/inline/ch05-fig4.png",
       "sourceFile": "ch05-fig4-misassembly-vs-hallucination.excalidraw"
     },
     {
       "chapter": "05",
       "index": 5,
-      "title": "\"RAG\" is four different jobs",
+      "title": "Ch05 Fig5 Retrieval Is Four Jobs",
       "src": "/diagrams/inline/ch05-fig5.png",
       "sourceFile": "ch05-fig5-retrieval-is-four-jobs.excalidraw"
     },
@@ -379,6 +386,13 @@
       "sourceFile": "ch06-fig3-subagents-need-recompose.excalidraw"
     },
     {
+      "chapter": "06",
+      "index": 4,
+      "title": "Ch06 Fig4 Agency Dial",
+      "src": "/diagrams/inline/ch06-fig4.png",
+      "sourceFile": "ch06-fig4-agency-dial.excalidraw"
+    },
+    {
       "chapter": "07",
       "index": 1,
       "title": "Authority boundary collapse",
@@ -398,6 +412,13 @@
       "title": "Step-up OAuth",
       "src": "/diagrams/inline/ch07-fig3.png",
       "sourceFile": "ch07-fig3-step-up-oauth.excalidraw"
+    },
+    {
+      "chapter": "07",
+      "index": 4,
+      "title": "Ch07 Fig4 Enterprise Mcp Gateway",
+      "src": "/diagrams/inline/ch07-fig4.png",
+      "sourceFile": "ch07-fig4-enterprise-mcp-gateway.excalidraw"
     },
     {
       "chapter": "08",
@@ -421,6 +442,20 @@
       "sourceFile": "ch08-fig3-interruption-runtime.excalidraw"
     },
     {
+      "chapter": "08",
+      "index": 4,
+      "title": "Ch08 Fig4 Half Duplex Ceiling",
+      "src": "/diagrams/inline/ch08-fig4.png",
+      "sourceFile": "ch08-fig4-half-duplex-ceiling.excalidraw"
+    },
+    {
+      "chapter": "08",
+      "index": 5,
+      "title": "Ch08 Fig5 Latency Masking",
+      "src": "/diagrams/inline/ch08-fig5.png",
+      "sourceFile": "ch08-fig5-latency-masking.excalidraw"
+    },
+    {
       "chapter": "09",
       "index": 1,
       "title": "Where scarcity moves",
@@ -440,6 +475,13 @@
       "title": "Broaden who creates",
       "src": "/diagrams/inline/ch09-fig3.png",
       "sourceFile": "ch09-fig3-broaden-who-creates.excalidraw"
+    },
+    {
+      "chapter": "09",
+      "index": 4,
+      "title": "Ch09 Fig4 Review Bottleneck",
+      "src": "/diagrams/inline/ch09-fig4.png",
+      "sourceFile": "ch09-fig4-review-bottleneck.excalidraw"
     },
     {
       "chapter": "10",
