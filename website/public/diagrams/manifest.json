@@ -3,28 +3,28 @@
     {
       "id": "spine",
       "title": "The Argument Spine",
-      "caption": "The ten chapters as a four-act dependency arc — the Problem (ch 1–2), the Scaffolding Stack (ch 3–7), the Stress Test (ch 8), and the Widening (ch 9–10). The book is an argument with a shape, not a survey, and it carries the throughline from possibility to compounding trust.",
+      "caption": "The ten chapters as a four-act dependency arc \u2014 the Problem (ch 1\u20132), the Scaffolding Stack (ch 3\u20137), the Stress Test (ch 8), and the Widening (ch 9\u201310). The book is an argument with a shape, not a survey, and it carries the throughline from possibility to compounding trust.",
       "src": "/diagrams/overview/spine.png",
       "sourceFile": "01-book-argument-spine.excalidraw"
     },
     {
       "id": "machine",
       "title": "The Autoresearch Knowledge Machine",
-      "caption": "How a growing video corpus becomes a source-backed book: a five-layer pipeline — Source → Synthesis → Evidence → Manuscript — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Live corpus size in STATS.md.",
+      "caption": "How a growing video corpus becomes a source-backed book: a five-layer pipeline \u2014 Source \u2192 Synthesis \u2192 Evidence \u2192 Manuscript \u2014 governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Live corpus size in STATS.md.",
       "src": "/diagrams/overview/machine.png",
       "sourceFile": "02-autoresearch-machine.excalidraw"
     },
     {
       "id": "stack",
       "title": "The Scaffolding Stack",
-      "caption": "The book's central thesis in one picture: a raw model is capable but not dependable. Five engineered layers wrap it — harnesses, evals, context, runtimes, security — and each one earns its place by a specific failure it prevents.",
+      "caption": "The book's central thesis in one picture: a raw model is capable but not dependable. Five engineered layers wrap it \u2014 harnesses, evals, context, runtimes, security \u2014 and each one earns its place by a specific failure it prevents.",
       "src": "/diagrams/overview/stack.png",
       "sourceFile": "03-scaffolding-stack.excalidraw"
     },
     {
       "id": "corpus-map",
       "title": "Theme & Corpus Map",
-      "caption": "What the corpus is actually about: ten themes sized by video count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that Models & Inference is deliberately background, not a chapter.",
+      "caption": "What the corpus is actually about: ten themes sized by video count, colour-coded by the book act they feed, each mapped to its chapter \u2014 including the honest editorial call that Models & Inference is deliberately background, not a chapter.",
       "src": "/diagrams/overview/corpus-map.png",
       "sourceFile": "04-theme-corpus-map.excalidraw"
     }
@@ -112,7 +112,7 @@
       "id": "agentic-product-design",
       "title": "Agentic Product Design",
       "chapter": "01",
-      "summary": "Designing the surface area an agent acts through — intake, action, review — not just the model prompt.",
+      "summary": "Designing the surface area an agent acts through \u2014 intake, action, review \u2014 not just the model prompt.",
       "src": "/diagrams/concepts/agentic-product-design.png",
       "sourceFile": "01-agentic-product-design.excalidraw"
     },
@@ -128,7 +128,7 @@
       "id": "coding-evals",
       "title": "Coding Evals",
       "chapter": "04",
-      "summary": "Task-level scoring for code-writing agents — human-seeded cases, regression memory, production traces.",
+      "summary": "Task-level scoring for code-writing agents \u2014 human-seeded cases, regression memory, production traces.",
       "src": "/diagrams/concepts/coding-evals.png",
       "sourceFile": "05-coding-evals.excalidraw"
     },
@@ -136,7 +136,7 @@
       "id": "constrained-delegation",
       "title": "Constrained Delegation",
       "chapter": "07",
-      "summary": "Bounded autonomy — scoped identity, sandboxing, audit trail — that lets an agent act safely.",
+      "summary": "Bounded autonomy \u2014 scoped identity, sandboxing, audit trail \u2014 that lets an agent act safely.",
       "src": "/diagrams/concepts/constrained-delegation.png",
       "sourceFile": "06-constrained-delegation.excalidraw"
     },
@@ -144,7 +144,7 @@
       "id": "context-engineering",
       "title": "Context Engineering",
       "chapter": "05",
-      "summary": "Deciding what the model should know at the moment of action — retrieval, memory, tool selection.",
+      "summary": "Deciding what the model should know at the moment of action \u2014 retrieval, memory, tool selection.",
       "src": "/diagrams/concepts/context-engineering.png",
       "sourceFile": "07-context-engineering.excalidraw"
     },
@@ -152,7 +152,7 @@
       "id": "durable-agents",
       "title": "Durable Agents",
       "chapter": "06",
-      "summary": "Agents with state, resumability, and recovery paths — architecture that survives a crash.",
+      "summary": "Agents with state, resumability, and recovery paths \u2014 architecture that survives a crash.",
       "src": "/diagrams/concepts/durable-agents.png",
       "sourceFile": "08-durable-agents.excalidraw"
     },
@@ -160,7 +160,7 @@
       "id": "graphrag",
       "title": "GraphRAG",
       "chapter": "05",
-      "summary": "Retrieval over a graph rather than a flat vector index — useful when relationships matter as much as content.",
+      "summary": "Retrieval over a graph rather than a flat vector index \u2014 useful when relationships matter as much as content.",
       "src": "/diagrams/concepts/graphrag.png",
       "sourceFile": "09-graphrag.excalidraw"
     },
@@ -168,7 +168,7 @@
       "id": "harness-engineering",
       "title": "Harness Engineering",
       "chapter": "03",
-      "summary": "A prepared environment around an agent — specs, tests, tools, a plan → produce → review → ship loop.",
+      "summary": "A prepared environment around an agent \u2014 specs, tests, tools, a plan \u2192 produce \u2192 review \u2192 ship loop.",
       "src": "/diagrams/concepts/harness-engineering.png",
       "sourceFile": "10-harness-engineering.excalidraw"
     },
@@ -176,7 +176,7 @@
       "id": "hierarchical-memory",
       "title": "Hierarchical Memory",
       "chapter": "05",
-      "summary": "Layered memory — session, project, long-term — scoped, inspectable, maintained like infrastructure.",
+      "summary": "Layered memory \u2014 session, project, long-term \u2014 scoped, inspectable, maintained like infrastructure.",
       "src": "/diagrams/concepts/hierarchical-memory.png",
       "sourceFile": "11-hierarchical-memory.excalidraw"
     },
@@ -208,7 +208,7 @@
       "id": "software-factory",
       "title": "Software Factory",
       "chapter": "03",
-      "summary": "Work intake, constraints, review, and output paths — the surrounding system, not just the model prompt.",
+      "summary": "Work intake, constraints, review, and output paths \u2014 the surrounding system, not just the model prompt.",
       "src": "/diagrams/concepts/software-factory.png",
       "sourceFile": "15-software-factory.excalidraw"
     },
@@ -216,7 +216,7 @@
       "id": "spec-driven-development",
       "title": "Spec-Driven Development",
       "chapter": "03",
-      "summary": "Specs as executable acceptance criteria and repeatable checks — not paperwork.",
+      "summary": "Specs as executable acceptance criteria and repeatable checks \u2014 not paperwork.",
       "src": "/diagrams/concepts/spec-driven-development.png",
       "sourceFile": "16-spec-driven-development.excalidraw"
     },
@@ -224,7 +224,7 @@
       "id": "vibe-coding",
       "title": "Vibe Coding",
       "chapter": "02",
-      "summary": "Shipping whatever runs — fast generation without review discipline. Useful sometimes, dangerous often.",
+      "summary": "Shipping whatever runs \u2014 fast generation without review discipline. Useful sometimes, dangerous often.",
       "src": "/diagrams/concepts/vibe-coding.png",
       "sourceFile": "17-vibe-coding.excalidraw"
     },
@@ -232,7 +232,7 @@
       "id": "voice-agents",
       "title": "Voice Agents",
       "chapter": "08",
-      "summary": "Sub-800 ms latency budget, streaming, turn detection, barge-in — what realtime stress-tests demand.",
+      "summary": "Sub-800 ms latency budget, streaming, turn detection, barge-in \u2014 what realtime stress-tests demand.",
       "src": "/diagrams/concepts/voice-agents.png",
       "sourceFile": "18-voice-agents.excalidraw"
     }
@@ -344,6 +344,20 @@
       "sourceFile": "ch05-fig3-mcp-tool-flood.excalidraw"
     },
     {
+      "chapter": "05",
+      "index": 4,
+      "title": "Misassembly vs hallucination",
+      "src": "/diagrams/inline/ch05-fig4.png",
+      "sourceFile": "ch05-fig4-misassembly-vs-hallucination.excalidraw"
+    },
+    {
+      "chapter": "05",
+      "index": 5,
+      "title": "\"RAG\" is four different jobs",
+      "src": "/diagrams/inline/ch05-fig5.png",
+      "sourceFile": "ch05-fig5-retrieval-is-four-jobs.excalidraw"
+    },
+    {
       "chapter": "06",
       "index": 1,
       "title": "Transcript vs workflow",
@@ -453,21 +467,21 @@
     {
       "id": "concept-graph",
       "title": "Concept Graph",
-      "caption": "Eighteen concepts from the manuscript drawn as a dependency network. Nodes are the named ideas — One-Shot AI Failure, Harness Engineering, Context Engineering, Durable Agents, Human Control Plane, and the rest. Edges are the dependencies and contrasts the book draws between them. Clusters mirror the four-act spine. A reader's map of the conceptual terrain.",
+      "caption": "Eighteen concepts from the manuscript drawn as a dependency network. Nodes are the named ideas \u2014 One-Shot AI Failure, Harness Engineering, Context Engineering, Durable Agents, Human Control Plane, and the rest. Edges are the dependencies and contrasts the book draws between them. Clusters mirror the four-act spine. A reader's map of the conceptual terrain.",
       "src": "/diagrams/maps/concept-graph.png",
       "sourceFile": "03-concept-graph.excalidraw"
     },
     {
       "id": "methodology-deep-dive",
       "title": "Methodology deep-dive",
-      "caption": "The autoresearch pipeline in detail. Five layers — Source (video notes), Synthesis (themes, people, eighteen concepts), Evidence (claims ledger plus evidence packs), Manuscript (chapter packets and drafts), and a Research-Org control plane that schedules bounded agent passes — pinned to the actual repo directories that hold them. The diagram surfaces what is usually invisible behind 'we used AI to write this.'",
+      "caption": "The autoresearch pipeline in detail. Five layers \u2014 Source (video notes), Synthesis (themes, people, eighteen concepts), Evidence (claims ledger plus evidence packs), Manuscript (chapter packets and drafts), and a Research-Org control plane that schedules bounded agent passes \u2014 pinned to the actual repo directories that hold them. The diagram surfaces what is usually invisible behind 'we used AI to write this.'",
       "src": "/diagrams/maps/methodology-deep-dive.png",
       "sourceFile": "02-methodology-deep-dive.excalidraw"
     },
     {
       "id": "readers-path",
       "title": "Reader's path",
-      "caption": "Three reading routes through the same ten chapters — for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order.",
+      "caption": "Three reading routes through the same ten chapters \u2014 for the senior or staff engineer, the engineering manager or CTO, and the AI product or platform lead. Each route marks which chapters to read first, which to read in sequence, and which to skim. Use this if you want the book without reading every chapter in order.",
       "src": "/diagrams/maps/readers-path.png",
       "sourceFile": "01-readers-path.excalidraw"
     }
