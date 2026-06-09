@@ -60,7 +60,7 @@ This is the trap that makes cheap execution treacherous rather than simply benef
 
 ## The new scarce skills: framing and review
 
-Two specific capacities become the bottleneck once execution is cheap, and both are worth naming as deliberately as the technical disciplines later in the book.
+Two specific capacities become the bottleneck once execution is cheap.
 
 The first is problem framing. When the model will faithfully execute whatever it is pointed at, pointing it becomes the high-leverage act. Before handing a task to a model, answer five questions explicitly: What is the actual task? What counts as success? Which constraints are real and which are habit? What is allowed to stay rough? What would make the result unacceptable even if it looked finished? Treat that last question as a gate — if you cannot state what would make fluent, working output unacceptable, you are not ready to delegate the task. A team that can answer those questions sharply gets a force multiplier; a team that cannot gets fluent output aimed at the wrong target. Framing is no longer the cheap part of the work before the real work starts. In a world of cheap execution, framing *is* the work.
 

@@ -53,7 +53,7 @@ The evidence for this shift is not a controlled study proving that broad delegat
 
 ## Two cases this book keeps returning to
 
-Two recurring examples make the shift concrete, and they recur throughout the chapters that follow because they stress the same idea from opposite directions.
+The two cases stress the same idea from opposite directions.
 
 The first is the **software factory**. A coding agent looks magical on a small, self-contained task and then degrades on larger ones. The trap is to read that degradation as a model ceiling and wait for a better model; the move practitioners keep making instead is to improve the workplace around the agent — the repository, the harness, the specs, the evals, and the runtime. When delegated work falls apart at scale, fix the environment before you blame the model: raw capability is not enough for dependable delegated work, and the workplace itself has to be made legible to the agent. Chapter 3 takes this up directly.
 

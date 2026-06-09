@@ -35,8 +35,6 @@ Stephen Chin at Neo4j makes the same move in a different vocabulary. Context eng
 
 Ofer Mendelevitch's enterprise deep-research framing pushes the argument to its limit. The hard problem of enterprise AI, he says, is not access to documents. It is access to the *relevant* documents — the ones the agent actually needs for the current step, ranked, deduplicated, and trustworthy. Once you accept that frame, prompt engineering becomes a small subset of a much larger discipline.
 
-That discipline is the subject of this chapter.
-
 ## Stuffing context is not memory
 
 Jack Morris has one of the sharpest one-liners in the corpus: "Stuffing context is not memory."
@@ -101,8 +99,6 @@ The reason this matters for the book's overall argument is that misassembly does
 
 ## MCP makes context a capability problem too
 
-The chapter has so far treated context as primarily a document problem. That framing is becoming incomplete.
-
 The rise of the Model Context Protocol has expanded what context includes. An MCP-connected agent has access not only to documents but to tools — APIs, search endpoints, file operations, internal services, and increasingly, other agents. Each of those tools shows up in the context window as a capability description: a name, a schema, an example. The window now contains both the information the system might consult and the actions the system might take.
 
 That expansion brings a new failure mode.
@@ -129,7 +125,7 @@ This is also where the book's earlier claims about harness engineering — Chapt
 
 ## Why context is infrastructure
 
-The chapter started with a slogan: context is the substrate, not the garnish. By now the slogan should be doing more work than it did on first read.
+Context is the substrate, not the garnish.
 
 If context is a substrate, then context engineering is the discipline of building, maintaining, and observing that substrate. That discipline includes retrieval architecture, memory architecture, capability management, progressive disclosure, freshness handling, provenance, and the cost and latency budgets that govern when each of those mechanisms fires. It is not a thing one component does. It is a layer of the system that has its own state and its own failure modes.
 

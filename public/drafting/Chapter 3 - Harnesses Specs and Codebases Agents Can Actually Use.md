@@ -100,8 +100,6 @@ The deeper point is that spec-driven development matters more, not less, in an e
 
 ## Agent-ready codebases are designed, not discovered
 
-At this point the argument can sound abstract, so it helps to come back to repository mechanics.
-
 Eno Reyes is especially useful here because he connects old-fashioned engineering hygiene to an AI-native operating model. He begins with a deliberately basic question: “Do you have some automated validation for the format of your code?... for professional software engineers [it's] like, yeah, of course we do.” Then comes the important turn: “But I think you can go a step further.”
 
 That extra step is the real substance of agent-readiness. The question is not simply whether a team has linting or tests. It is whether the codebase has enough automated validation and explicit structure that a coding agent can move through it with bounded risk. A repository becomes agent-ready when it exposes enough of its standards, setup, and quality gates that delegated work becomes legible.
