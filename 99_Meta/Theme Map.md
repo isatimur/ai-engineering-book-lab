@@ -2,7 +2,7 @@
 
 ## [[Agent Architecture]]
 
-- Corpus count: 137
+- Corpus count: 152
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
 - [[028-2czYyrTzILg-from-chaos-to-choreography-multi-agent-orchestration-patterns-that-actually-work-sandipan-|#28 — From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik]]
@@ -14,7 +14,7 @@
 
 ## [[Coding Agents]]
 
-- Corpus count: 219
+- Corpus count: 233
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -26,7 +26,7 @@
 
 ## [[Evals & Reliability]]
 
-- Corpus count: 202
+- Corpus count: 215
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]
 - [[025-c5-kx2bwoCk-running-llms-locally-practical-llm-performance-on-dgx-spark-mozhgan-kabiri-chimeh-nvidia|#25 — Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA]]
@@ -38,7 +38,7 @@
 
 ## [[General AI Engineering]]
 
-- Corpus count: 8
+- Corpus count: 9
 - [[092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals|#92 — Music from AIE Code Summit - Instrumentals]]
 - [[659-VhfAVA3BG2I-how-transformers-finally-ate-vision-isaac-robinson-roboflow|#659 — How Transformers Finally Ate Vision – Isaac Robinson, Roboflow]]
 - [[667-5YSJEP0HWzM-personalization-in-the-era-of-llms-shivam-verma-spotify|#667 — Personalization in the Era of LLMs - Shivam Verma, Spotify]]
@@ -50,7 +50,7 @@
 
 ## [[MCP & Tooling]]
 
-- Corpus count: 79
+- Corpus count: 82
 - [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
 - [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
 - [[024-XZ0boOjtbNo-ai-didn-t-kill-the-web-it-moved-in-olivier-leplus-aws-yohan-lasorsa-microsoft|#24 — AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft)]]

@@ -1,14 +1,14 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **741 videos**
-Transcript status mix: **{'auto_en_orig': 729, 'unavailable': 12}**
+Corpus size analyzed: **757 videos**
+Transcript status mix: **{'auto_en_orig': 745, 'unavailable': 12}**
 
 ## What changed after full-corpus review
 
 The corpus is now strong enough to stop treating the book as a loose trend survey.
 A clearer thesis is emerging: **AI engineering is the discipline of turning model capability into dependable, high-leverage systems through scaffolding, evaluation, context design, and organizational adaptation.**
 
-Across the full 741-video corpus, four things stand out most clearly:
+Across the full 757-video corpus, four things stand out most clearly:
 - the book should be anchored in **production practice**, not model novelty
 - **coding agents** are the best narrative entry point, but not the whole book
 - **trust, control, and eval loops** are the hinge between demo and deployment
@@ -16,10 +16,10 @@ Across the full 741-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 137, `Coding Agents`: 219).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 202).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 152, `Coding Agents`: 233).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 215).
 - **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 242).
-- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 79, `RAG & Retrieval`: 160).
+- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 82, `RAG & Retrieval`: 160).
 - **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 27, `Voice & Realtime`: 38).
 
 ## Best current thesis

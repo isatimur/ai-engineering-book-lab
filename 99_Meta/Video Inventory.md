@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 741
+Total videos: 757
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -743,3 +743,19 @@ Total videos: 741
 739. [Benchmarking semantic code retrieval on Claude Code — Kuba Rogut, Turbopuffer](https://www.youtube.com/watch?v=zKk7sDMGDEQ) — `zKk7sDMGDEQ` — 16:08
 740. [Beyond Components: Designing Generative UI for MCP Apps — Ruben Casas, Postman](https://www.youtube.com/watch?v=hCMrEfPG2Yg) — `hCMrEfPG2Yg` — 16:58
 741. [SWE-rebench: Lessons from Evaluating Coding Agents — Ibragim Badertdinov, Nebius](https://www.youtube.com/watch?v=wcUJWP6WpGM) — `wcUJWP6WpGM` — 
+742. [Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI](https://www.youtube.com/watch?v=mFLlVpnGpds) — `mFLlVpnGpds` — 25:20
+743. [Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff — Vincent Koc, OpenClaw](https://www.youtube.com/watch?v=pmoDeA3RBZY) — `pmoDeA3RBZY` — 16:44
+744. [Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google](https://www.youtube.com/watch?v=_B4Pv9ttFgY) — `_B4Pv9ttFgY` — 22:38
+745. [Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe](https://www.youtube.com/watch?v=KLSuFPj2ld0) — `KLSuFPj2ld0` — 18:46
+746. [Evals Are Broken, Use Them Anyway — Ara Khan, Cline](https://www.youtube.com/watch?v=QuuIywMG4s8) — `QuuIywMG4s8` — 19:04
+747. [Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub](https://www.youtube.com/watch?v=_xIwFcnHqp4) — `_xIwFcnHqp4` — 16:06
+748. [From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data](https://www.youtube.com/watch?v=zTZ0qunQXnM) — `zTZ0qunQXnM` — 25:26
+749. [Under 5 minutes to a deployed LLM endpoint — Audry Hsu, RunPod](https://www.youtube.com/watch?v=ILdE7FaAjVA) — `ILdE7FaAjVA` — 13:26
+750. [LLM Observability, Evaluation, Experimentation Platform — Dat Ngo, Arize](https://www.youtube.com/watch?v=JsCCrBF7F1g) — `JsCCrBF7F1g` — 16:32
+751. [Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carrie, Cloudflare](https://www.youtube.com/watch?v=SKDJo2CopRs) — `SKDJo2CopRs` — 24:51
+752. [Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo](https://www.youtube.com/watch?v=EcqMYoIV57A) — `EcqMYoIV57A` — 26:27
+753. [Road to 5 Million Tokens: Breaking Barriers in Long Context Training — Max Ryabinin, Together AI](https://www.youtube.com/watch?v=TUnPNY4E2fw) — `TUnPNY4E2fw` — 15:50
+754. [2026 AI Engineer Vibe Reel](https://www.youtube.com/watch?v=gUMwt4-5kn0) — `gUMwt4-5kn0` — 1:07
+755. [From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind](https://www.youtube.com/watch?v=Bc6Ojl2XS1w) — `Bc6Ojl2XS1w` — 19:34
+756. [RAG is dead, right?? — Kuba Rogut, Turbopuffer](https://www.youtube.com/watch?v=UM6sFg_jdlE) — `UM6sFg_jdlE` — 11:13
+757. [GPU Cloud Deployment Without Leaving Your IDE — Audry Hsu, RunPod](https://www.youtube.com/watch?v=zDGHt0LB-dA) — `zDGHt0LB-dA` — 20:19

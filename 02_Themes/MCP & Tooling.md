@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 79
+- Total tagged videos: 82
 
 ## Cross-video synthesis
 
-- This theme appears across 79 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (22), Agent Architecture (21), Org Design & Leadership (12).
+- This theme appears across 82 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (24), Coding Agents (24), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
 
 ## Seed videos
@@ -91,6 +91,9 @@
 - [[723-V-L0INGTEOg-reverse-engineering-a-viking-voip-phone-protocol-with-claude-code-boris-starkov-eleven-lab|#723 — Reverse engineering a Viking VOIP phone protocol with Claude Code — Boris Starkov, Eleven Labs]]
 - [[738-504PvfXou5Y-bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-intelligenc|#738 — BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike — Michal Cichra, Safe Intelligence]]
 - [[740-hCMrEfPG2Yg-beyond-components-designing-generative-ui-for-mcp-apps-ruben-casas-postman|#740 — Beyond Components: Designing Generative UI for MCP Apps — Ruben Casas, Postman]]
+- [[745-KLSuFPj2ld0-building-safe-payment-infrastructure-for-the-autonomous-economy-steve-kaliski-stripe|#745 — Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe]]
+- [[747-_xIwFcnHqp4-building-interactive-uis-in-vs-code-with-mcp-apps-marlene-mhangami-liam-hampton-github|#747 — Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub]]
+- [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748 — From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data]]
 
 ## Notes
 

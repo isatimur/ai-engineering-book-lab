@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 202
+- Total tagged videos: 215
 
 ## Cross-video synthesis
 
-- This theme appears across 202 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (93), Agent Architecture (81), Models & Inference (19).
+- This theme appears across 215 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (105), Agent Architecture (94), Models & Inference (19).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI; #25 Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA.
 
 ## Seed videos
@@ -214,6 +214,19 @@
 - [[737-HvZXAOZ3iv8-what-lies-beneath-the-api-benjamin-cowen-modal|#737 — What Lies Beneath the API — Benjamin Cowen, Modal]]
 - [[739-zKk7sDMGDEQ-benchmarking-semantic-code-retrieval-on-claude-code-kuba-rogut-turbopuffer|#739 — Benchmarking semantic code retrieval on Claude Code — Kuba Rogut, Turbopuffer]]
 - [[741-wcUJWP6WpGM-swe-rebench-lessons-from-evaluating-coding-agents-ibragim-badertdinov-nebius|#741 — SWE-rebench: Lessons from Evaluating Coding Agents — Ibragim Badertdinov, Nebius]]
+- [[742-mFLlVpnGpds-beyond-transcription-building-voice-ai-that-understands-conversations-herv-bredin-pyannote|#742 — Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI]]
+- [[743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw|#743 — Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff — Vincent Koc, OpenClaw]]
+- [[744-_B4Pv9ttFgY-building-agent-interfaces-lessons-from-chrome-devtools-mcp-for-agents-michael-hablich-goog|#744 — Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google]]
+- [[746-QuuIywMG4s8-evals-are-broken-use-them-anyway-ara-khan-cline|#746 — Evals Are Broken, Use Them Anyway — Ara Khan, Cline]]
+- [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748 — From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data]]
+- [[749-ILdE7FaAjVA-under-5-minutes-to-a-deployed-llm-endpoint-audry-hsu-runpod|#749 — Under 5 minutes to a deployed LLM endpoint — Audry Hsu, RunPod]]
+- [[750-JsCCrBF7F1g-llm-observability-evaluation-experimentation-platform-dat-ngo-arize|#750 — LLM Observability, Evaluation, Experimentation Platform — Dat Ngo, Arize]]
+- [[751-SKDJo2CopRs-why-eval-is-the-next-great-compute-primitive-sunil-pai-matt-carrie-cloudflare|#751 — Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carrie, Cloudflare]]
+- [[752-EcqMYoIV57A-why-more-context-makes-your-agent-dumber-and-what-to-do-about-it-nupur-sharma-qodo|#752 — Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo]]
+- [[753-TUnPNY4E2fw-road-to-5-million-tokens-breaking-barriers-in-long-context-training-max-ryabinin-together-|#753 — Road to 5 Million Tokens: Breaking Barriers in Long Context Training — Max Ryabinin, Together AI]]
+- [[755-Bc6Ojl2XS1w-from-transcription-to-live-music-gemini-s-audio-stack-thor-schaeff-google-deepmind|#755 — From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind]]
+- [[756-UM6sFg_jdlE-rag-is-dead-right-kuba-rogut-turbopuffer|#756 — RAG is dead, right?? — Kuba Rogut, Turbopuffer]]
+- [[757-zDGHt0LB-dA-gpu-cloud-deployment-without-leaving-your-ide-audry-hsu-runpod|#757 — GPU Cloud Deployment Without Leaving Your IDE — Audry Hsu, RunPod]]
 
 ## Notes
 

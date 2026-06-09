@@ -1,15 +1,15 @@
 # Corpus Stats
 
-- Total notes: 741
-- Transcript status mix: {'auto_en_orig': 729, 'unavailable': 12}
+- Total notes: 757
+- Transcript status mix: {'auto_en_orig': 745, 'unavailable': 12}
 
 ## Theme counts
 
-- Agent Architecture: 137
-- Coding Agents: 219
-- Evals & Reliability: 202
-- General AI Engineering: 8
-- MCP & Tooling: 79
+- Agent Architecture: 152
+- Coding Agents: 233
+- Evals & Reliability: 215
+- General AI Engineering: 9
+- MCP & Tooling: 82
 - Models & Inference: 129
 - Org Design & Leadership: 242
 - RAG & Retrieval: 160
