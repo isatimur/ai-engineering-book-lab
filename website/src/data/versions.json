@@ -3,8 +3,19 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:f3fca12",
+      "current_version_id": "git:3e42e30",
       "versions": [
+        {
+          "version_id": "git:3e42e30",
+          "source": "git",
+          "ref": "3e42e306ed8b8d07ef8db3f403a574b951b1010c",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 1922,
+          "message": "fix(integrity): de-fabricate Hron quote, fix stale counts, document #29",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-3e42e30.md"
+        },
         {
           "version_id": "git:f3fca12",
           "source": "git",
@@ -48,17 +59,6 @@
           "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
           "corpus_snapshot_hash": null,
           "content_ref": "01/git-ef6219d.md"
-        },
-        {
-          "version_id": "git:bb83c6e",
-          "source": "git",
-          "ref": "bb83c6ee28f46ad85934b84d6c39f88ecbfa2960",
-          "date": "2026-05-31",
-          "status": "Drafting",
-          "wordCount": 1536,
-          "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-bb83c6e.md"
         },
         {
           "version_id": "git:7f5a2c6",
