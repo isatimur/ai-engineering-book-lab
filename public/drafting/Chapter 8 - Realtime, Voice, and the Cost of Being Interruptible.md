@@ -116,13 +116,13 @@ The implication for the book's broader frame is that the scaffolding-first thesi
 
 ## Robotics: the same constraints at higher stakes
 
-A short note on robotics, which the chapter title gestured at and which the corpus has enough on to anchor a single section if not yet a chapter of its own.
+A short note on robotics, which the chapter title gestured at.
 
 The robotics talks in the cluster — Annika and Aastha on GR00T N1 humanoid foundation models, Jyh-Jing Hwang on Waymo's EMMA, Quan Vuong and Jost Tobias Springberg on Physical Intelligence's "robotics: why now?" framing — read as voice agents with the latency budget tightened and the failure mode physicalized. The bottleneck shifts from tool calls to perception-to-action loops. The half-duplex ceiling shifts from turn-taking to one-action-at-a-time. The masking layer shifts from fillers to motion-plan continuity. The architectural shape is the same.
 
 The book's claim is not that voice and robotics are the same problem. It is that they are stress-tests of the same underlying frame. When the system has to operate inside a latency budget set by physics rather than by user preference, the scaffolding-first argument is no longer a stylistic choice. It is what determines whether the system can act at all.
 
-That makes voice the right *first* embodied edge to chapter — the engineering is mature enough to teach. Robotics is the right *next* one, and its treatment in this manuscript will deepen as the corpus does.
+That makes voice the right *first* embodied edge to chapter — the engineering is mature enough to teach. Robotics is the right *next* one.
 
 ## What voice confirms about the book's frame
 

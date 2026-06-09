@@ -20,7 +20,7 @@ An **assistant** suggests. It produces something you then decide what to do with
 
 A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were already typing. The human is still flying the plane; the copilot is making continuous small contributions to a task the human is actively driving.
 
-A **delegate** is assigned work and expected to return with it done. Not a suggestion to evaluate, but an artifact, a recommendation, or a completed step. The human steps *out* of the moment-to-moment loop and re-enters at review. That single move — out of the loop, back at the end — is the whole shift, and it changes everything about what the system has to be.
+A **delegate** is assigned work and expected to return with it done. Not a suggestion to evaluate, but an artifact, a recommendation, or a completed step. The human steps *out* of the moment-to-moment loop and re-enters at review. That single move — out of the loop, back at the end — is the whole shift, and it changes what the system has to be.
 
 This book's claim is not that assistants and copilots disappear. They remain useful, and for many tasks they are the right tool. The claim is that the engineering difficulty, the product ambition, and the organizational upheaval have all migrated to the third category. Delegation is where the hard problems are, because a delegate is no longer just saying things. It is shaping work that someone else will rely on.
 
@@ -38,7 +38,7 @@ And the gap is not closed by a smarter model alone. Barry Zhang and Mahesh Murag
 
 Once a system is doing real work rather than answering questions, the conversational surface becomes only the visible tip of it. The actual product is the apparatus underneath, and it is worth treating that apparatus as a checklist when you scope a delegation feature: context assembly that decides what the system knows, tool access that decides what it can do, workflow structure that holds a multi-step task together, quality checks that catch errors before a human does, durable state that survives interruption, review layers where a person re-enters, and observability so that person can see what happened. If a delegated workflow is missing one of these, that is where it will fail first — and the chat box is the one part you can take for granted.
 
-This is why "agent" products keep sprouting the same organs. They grow trace views, side panels, memory layers, approval queues, workflow diagrams. None of that is decoration; read it as a diagnostic instead. When a serious agent product lacks a trace view or an approval queue, treat the absence as a reliability gap, not a leaner design — it means the trust those organs externalize is still implicit, riding on a human watching. They are the reliability work becoming visible, the system externalizing the parts of trust that a bare chat interface left implicit. Joel Hron at Thomson Reuters describes the target as systems that "don't just suggest but plan, act, and adapt." Every word past *suggest* in that sentence is a new engineering surface, and the rest of this book is largely a tour of them.
+This is why "agent" products keep sprouting the same organs. They grow trace views, side panels, memory layers, approval queues, workflow diagrams. None of that is decoration; read it as a diagnostic instead. When a serious agent product lacks a trace view or an approval queue, treat the absence as a reliability gap, not a leaner design — it means the trust those organs externalize is still implicit, riding on a human watching. They are the reliability work becoming visible. Joel Hron at Thomson Reuters describes the target as systems that "don't just suggest but plan, act, and adapt." Every word past *suggest* in that sentence is a new engineering surface, and the rest of this book is largely a tour of them.
 
 The evidence for this shift is not a controlled study proving that broad delegation already works well everywhere. It does not yet. What the corpus shows is something more specific and, in its way, more credible: a strong convergence among serious builders about what they are *trying* to make these systems do, and a remarkably consistent account of where it gets hard. This book reports that convergence and the engineering it is producing. It does not claim the problem is solved.
 
@@ -276,7 +276,7 @@ It belongs to teams that make their repositories legible. Teams that externalize
 
 This is why harness engineering deserves to be treated as a primary discipline instead of a tactical trick. The harness is not a helper around the codebase. It is becoming part of the codebase.
 
-And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
+The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
 That is the bridge into the next chapter. Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
 
@@ -368,7 +368,7 @@ For a while, context looked like a prompt-trick problem. You had a box, a token 
 
 But the framing was upside down.
 
-Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice. Two systems with identical model weights can be separated by a factor of ten in usefulness based purely on what reaches the model and what shape that information arrives in. The chapter that follows is about treating that substrate the way engineering treats other substrates: as infrastructure, with versions, budgets, observability, and failure modes you have a plan for.
+Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice. Two systems with identical model weights can differ enormously in usefulness based purely on what reaches the model and what shape that information arrives in. The chapter that follows is about treating that substrate the way engineering treats other substrates: as infrastructure, with versions, budgets, observability, and failure modes you have a plan for.
 
 ## Context is the substrate, not the garnish
 
@@ -624,7 +624,7 @@ Protocol standardization expands the attack surface if governance lags. It is no
 
 ## Enterprise MCP rolls up to gateways and a root of trust
 
-Once enterprise teams take the MCP security problem seriously, the architecture they reach for converges on a recognizable shape — and the convergence is specific enough to use as a checklist. There is a gateway. There is a policy plane. There is a registry of blessed servers. There is a permissions model that knows about identities, tools, and approval requirements. There is an audit log that records what each agent invocation actually did. If you are standing up enterprise MCP and any one of those five is missing, that gap is where the boundary will fail first. The shape looks a lot like the API-gateway and IAM patterns that mature enterprise SaaS settled into a decade earlier — applied to a new category of capability, which means the teams that already own those patterns are the ones to build the agent version, not a greenfield security project.
+Once enterprise teams take the MCP security problem seriously, the architecture they reach for converges on a recognizable shape — and the convergence is specific enough to use as a checklist. There is a gateway. There is a policy plane. There is a registry of blessed servers. There is a permissions model that knows about identities, tools, and approval requirements. There is an audit log that records what each agent invocation actually did. If you are standing up enterprise MCP and any one of those five is missing, that gap is the likeliest place for the boundary to fail first. The shape looks a lot like the API-gateway and IAM patterns that mature enterprise SaaS settled into a decade earlier — applied to a new category of capability, which means the teams that already own those patterns are the ones to build the agent version, not a greenfield security project.
 
 Sampath's enterprise MCP work names the architectural conclusion directly. The root of trust is established at the platform, not at the individual tool. Servers are reviewed before they are allowed in the corporate environment. Tools are scoped to the principals that should be able to call them. Audit is built in at the gateway layer rather than tacked onto each integration. This is the enterprise equivalent of moving from "anyone can install any app" to "we have an internal app store with security review." It is not glamorous. It is the work that lets the technology be used.
 
@@ -770,13 +770,13 @@ The implication for the book's broader frame is that the scaffolding-first thesi
 
 ## Robotics: the same constraints at higher stakes
 
-A short note on robotics, which the chapter title gestured at and which the corpus has enough on to anchor a single section if not yet a chapter of its own.
+A short note on robotics, which the chapter title gestured at.
 
 The robotics talks in the cluster — Annika and Aastha on GR00T N1 humanoid foundation models, Jyh-Jing Hwang on Waymo's EMMA, Quan Vuong and Jost Tobias Springberg on Physical Intelligence's "robotics: why now?" framing — read as voice agents with the latency budget tightened and the failure mode physicalized. The bottleneck shifts from tool calls to perception-to-action loops. The half-duplex ceiling shifts from turn-taking to one-action-at-a-time. The masking layer shifts from fillers to motion-plan continuity. The architectural shape is the same.
 
 The book's claim is not that voice and robotics are the same problem. It is that they are stress-tests of the same underlying frame. When the system has to operate inside a latency budget set by physics rather than by user preference, the scaffolding-first argument is no longer a stylistic choice. It is what determines whether the system can act at all.
 
-That makes voice the right *first* embodied edge to chapter — the engineering is mature enough to teach. Robotics is the right *next* one, and its treatment in this manuscript will deepen as the corpus does.
+That makes voice the right *first* embodied edge to chapter — the engineering is mature enough to teach. Robotics is the right *next* one.
 
 ## What voice confirms about the book's frame
 

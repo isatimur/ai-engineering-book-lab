@@ -154,7 +154,7 @@ It belongs to teams that make their repositories legible. Teams that externalize
 
 This is why harness engineering deserves to be treated as a primary discipline instead of a tactical trick. The harness is not a helper around the codebase. It is becoming part of the codebase.
 
-And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
+The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
 That is the bridge into the next chapter. Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
 

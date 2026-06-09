@@ -23,7 +23,7 @@ For a while, context looked like a prompt-trick problem. You had a box, a token 
 
 But the framing was upside down.
 
-Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice. Two systems with identical model weights can be separated by a factor of ten in usefulness based purely on what reaches the model and what shape that information arrives in. The chapter that follows is about treating that substrate the way engineering treats other substrates: as infrastructure, with versions, budgets, observability, and failure modes you have a plan for.
+Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice. Two systems with identical model weights can differ enormously in usefulness based purely on what reaches the model and what shape that information arrives in. The chapter that follows is about treating that substrate the way engineering treats other substrates: as infrastructure, with versions, budgets, observability, and failure modes you have a plan for.
 
 ## Context is the substrate, not the garnish
 
