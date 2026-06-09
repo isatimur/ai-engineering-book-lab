@@ -129,6 +129,53 @@ const Heatmap = () => {
   );
 };
 
+const UsefulnessNote = () => {
+  const b = judgeScores.book;
+  const raw = b.usefulness;
+  const subst = b.usefulness_substantive;
+  if (raw == null || subst == null) return null;
+  const excluded = b.usefulness_connective ?? 0;
+  const total = b.usefulness_total ?? 0;
+  const pct = total ? Math.round((excluded / total) * 100) : 0;
+  const lift = Math.round((subst - raw) * 10) / 10;
+  return (
+    <div className="mt-10 border border-[var(--color-border)] p-6">
+      <h3 className="mb-4 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
+        Reading the usefulness floor
+      </h3>
+      <div className="mb-5 flex flex-wrap items-end gap-x-10 gap-y-3">
+        <div>
+          <div className="font-serif text-3xl leading-none" style={{ color: labelColor('weak') }}>
+            {fmt(raw)}
+          </div>
+          <div className="mt-1 font-mono text-[9px] uppercase tracking-[0.12em] text-[var(--color-ink-muted)]">
+            all prose paragraphs
+          </div>
+        </div>
+        <div className="font-mono text-lg text-[var(--color-ink-muted)]">→</div>
+        <div>
+          <div className="font-serif text-3xl leading-none" style={{ color: labelColor('moderate') }}>
+            {fmt(subst)}
+          </div>
+          <div className="mt-1 font-mono text-[9px] uppercase tracking-[0.12em] text-[var(--color-ink-muted)]">
+            substantive core{lift >= 0 ? ` · +${lift}` : ` · ${lift}`}
+          </div>
+        </div>
+      </div>
+      <p className="max-w-2xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
+        The usefulness judge scores <em>every</em> paragraph for operational density, so it
+        floors the connective tissue every narrative chapter is made of — transitions,
+        scene-setters, recaps, and chapter&nbsp;10&rsquo;s reflective register. The{' '}
+        <strong className="text-[var(--color-ink)]">substantive core</strong> re-averages over
+        the operational paragraphs, setting aside {excluded} of {total} ({pct}%) that are either
+        markdown headings mis-scored as prose or short bridge sentences the judge&rsquo;s own
+        rationale names as a transition. The gap is the genre ceiling; the floor that remains is
+        real — prose that could carry a decision, a threshold, or a test and doesn&rsquo;t yet.
+      </p>
+    </div>
+  );
+};
+
 const ShipBlockers = () => {
   const rows: { num: string; blocker: WeakParagraph }[] = [];
   for (const c of chapters) {
@@ -228,6 +275,7 @@ export const Quality = () => {
           <>
             <Header />
             <Heatmap />
+            <UsefulnessNote />
 
             <h2 className="mb-6 mt-16 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
               Ship-blockers — unsupported claims

@@ -30,6 +30,25 @@ describe('judgeScores', () => {
     }
   });
 
+  it('carries a substantive-usefulness rollup that lifts the raw floor', () => {
+    const b = judgeScores.book;
+    // Both numbers present and well-ordered: the operational core never scores
+    // below the all-paragraph floor (it only ever removes the lowest tier).
+    expect(typeof b.usefulness).toBe('number');
+    expect(typeof b.usefulness_substantive).toBe('number');
+    expect(b.usefulness_substantive!).toBeGreaterThanOrEqual(b.usefulness!);
+    // The excluded share is a sane, conservative fraction (well under half).
+    expect(b.usefulness_connective).toBeGreaterThan(0);
+    expect(b.usefulness_connective!).toBeLessThan(b.usefulness_total! / 2);
+
+    for (const chapter of Object.values(judgeScores.chapters)) {
+      const r = chapter.rollup;
+      if (r.usefulness == null || r.usefulness_substantive == null) continue;
+      expect(r.usefulness_substantive).toBeGreaterThanOrEqual(r.usefulness);
+      expect(r.usefulness_connective!).toBeLessThanOrEqual(r.usefulness_total!);
+    }
+  });
+
   it('scoreForChapter() resolves padded and bare numbers, null when missing', () => {
     if (hasJudgeData()) {
       const first = Object.keys(judgeScores.chapters)[0];

@@ -23,6 +23,19 @@ export const DIM_LABELS: Record<DimName, string> = {
   redundancy: 'Non-redundancy',
 };
 
+/**
+ * Substantive-usefulness fields that sit alongside the six dimension scores in
+ * both the book and per-chapter rollups. `usefulness` stays the honest
+ * all-paragraph floor; `usefulness_substantive` re-averages over the
+ * operational core (headings + short connective bridges removed), and
+ * `usefulness_connective`/`usefulness_total` give the excluded share.
+ */
+export type UsefulnessExtras = {
+  usefulness_substantive?: number | null;
+  usefulness_connective?: number;
+  usefulness_total?: number;
+};
+
 export type WeakParagraph = {
   dim_name: DimName;
   paragraph_index: number;
@@ -37,7 +50,7 @@ export type ChapterScore = {
   slug: string;
   version_id: string | null;
   corpus_snapshot_hash: string | null;
-  rollup: Record<DimName, number | null> & { n_paragraphs: number | null };
+  rollup: Record<DimName, number | null> & { n_paragraphs: number | null } & UsefulnessExtras;
   labels: Record<DimName, JudgeLabel>;
   coverage?: Record<DimName, Coverage>;
   ship_blockers: WeakParagraph[];
@@ -71,7 +84,7 @@ export type RunSnapshot = {
 export type JudgeScores = {
   schema_version: number;
   run: JudgeRun;
-  book: Record<DimName, number | null>;
+  book: Record<DimName, number | null> & UsefulnessExtras;
   chapters: Record<string, ChapterScore>;
   history?: RunSnapshot[];
 };

@@ -66,6 +66,48 @@ NUMBER_TO_DRAFTING = {
 WEAKEST_N = 3
 _UNIT = re.compile(r"^paragraph:(?P<slug>[a-z0-9-]+)#L(?P<start>\d+)-L(?P<end>\d+)$")
 
+# ── Substantive-usefulness rollup ───────────────────────────────────────────
+# The usefulness judge scores *every* prose paragraph for operational density,
+# so it floors connective tissue — transitions, scene-setters, recaps, the
+# reflective register — which is structurally part of any narrative chapter.
+# The headline `usefulness` rollup keeps counting all of it (honest floor); the
+# parallel `usefulness_substantive` rollup isolates the operational core by
+# dropping two identifiable, non-operational-by-design categories:
+#   1. markdown headings mis-split into prose units (## … scored as a paragraph)
+#   2. SHORT connective bridges — floored (<50), brief, and named by the judge's
+#      own rationale as a structural/rhetorical move rather than a content gap.
+# The conjunction (floored AND short AND judge-named-structural) is deliberately
+# conservative: a *long* low-usefulness paragraph is real filler and keeps
+# counting (and is a manuscript-edit target, not a metric exclusion).
+_SUBSTANTIVE_MAX_WORDS = 45
+_CONNECTIVE_MARKERS = (
+    "transition", "transitional", "scene-setting", "scene setting",
+    "narrative bridge", "frames the", "framing", "rhetorical", "sets up",
+    "set up", "setup", "sets the stage", "recap", "signpost", "connective",
+    "reflective", "meta-commentary", "meta commentary", "introduces",
+    "introduction", "opening", "thesis", "motivat", "context-setting",
+    "closes the chapter", "pivot", "aphoris",
+)
+
+
+def _word_count(text: str) -> int:
+    return len(re.findall(r"[A-Za-z0-9']+", text))
+
+
+def _is_heading_unit(text: str) -> bool:
+    """A markdown heading mis-scored as a prose paragraph (parsing artifact)."""
+    return text.lstrip().startswith("#")
+
+
+def _is_connective_usefulness(score: float | None, text: str, reasoning: str) -> bool:
+    """Short, floored paragraph the judge's rationale names as structural."""
+    if score is None or score >= 50:
+        return False
+    if _word_count(text) > _SUBSTANTIVE_MAX_WORDS:
+        return False
+    low = reasoning.lower()
+    return any(m in low for m in _CONNECTIVE_MARKERS)
+
 
 def _head_sha() -> str | None:
     try:
@@ -123,7 +165,10 @@ def _wrapper_boundary(lines: list[str]) -> int:
 
 
 def _excerpt_resolver(number: str):
-    """Return (resolve_fn, wrapper_boundary_line) for a chapter's drafting file."""
+    """Return (resolve_fn, full_fn, wrapper_boundary_line) for a chapter's
+    drafting file. `resolve` yields a 160-char excerpt for display; `full`
+    yields the untruncated paragraph text for classification (word count,
+    heading detection)."""
     fname = NUMBER_TO_DRAFTING.get(number)
     lines: list[str] = []
     if fname:
@@ -132,15 +177,18 @@ def _excerpt_resolver(number: str):
             lines = path.read_text(encoding="utf-8").splitlines()
     boundary = _wrapper_boundary(lines)
 
-    def resolve(start: int, end: int) -> str:
+    def full(start: int, end: int) -> str:
         if not lines:
             return ""
-        chunk = " ".join(
+        return " ".join(
             ln.strip() for ln in lines[max(0, start - 1):end] if ln.strip()
         )
+
+    def resolve(start: int, end: int) -> str:
+        chunk = full(start, end)
         return (chunk[:160] + "…") if len(chunk) > 160 else chunk
 
-    return resolve, boundary
+    return resolve, full, boundary
 
 
 def build(run_dir: Path, head_sha: str | None) -> dict:
@@ -161,7 +209,7 @@ def build(run_dir: Path, head_sha: str | None) -> dict:
         roll = rollups.get(f"chapter:{slug}")
         if roll is None:
             continue  # chapter not in this run
-        resolve, boundary = _excerpt_resolver(num)
+        resolve, full_text, boundary = _excerpt_resolver(num)
         all_units = by_chapter.get(slug, [])
 
         # Drop units that fall inside the Draft v0 wrapper (editorial scaffolding
@@ -217,6 +265,31 @@ def build(run_dir: Path, head_sha: str | None) -> dict:
             else:
                 rollup[d] = roll.get(d)
         rollup["n_paragraphs"] = roll.get("n_paragraphs")
+
+        # Substantive-usefulness rollup: re-average usefulness over the
+        # operational core, dropping headings + short connective bridges (see
+        # the classifiers above). `usefulness` stays the honest all-paragraph
+        # floor; `usefulness_substantive` and its excluded count sit beside it.
+        use_units = [
+            u for u in units
+            if u["dim_name"] == "usefulness" and u.get("score_0_100") is not None
+        ]
+        subst_vals = []
+        excluded = 0
+        for u in use_units:
+            m = u["_m"]
+            text = full_text(int(m.group("start")), int(m.group("end")))
+            sc = u["score_0_100"]
+            if _is_heading_unit(text) or _is_connective_usefulness(sc, text, u.get("reasoning", "")):
+                excluded += 1
+            else:
+                subst_vals.append(sc)
+        rollup["usefulness_substantive"] = (
+            round(sum(subst_vals) / len(subst_vals), 1) if subst_vals else None
+        )
+        rollup["usefulness_connective"] = excluded
+        rollup["usefulness_total"] = len(use_units)
+
         labels = {d: _label_for(rollup[d]) for d in DIMS}
 
         chapters[num] = {
@@ -236,6 +309,18 @@ def build(run_dir: Path, head_sha: str | None) -> dict:
     for d in DIMS:
         vals = [c["rollup"][d] for c in chapters.values() if c["rollup"].get(d) is not None]
         book[d] = round(sum(vals) / len(vals), 1) if vals else None
+
+    # Book substantive usefulness: same chapter-mean treatment as the headline,
+    # plus the share of prose paragraphs the substantive rollup set aside.
+    sub_vals = [c["rollup"].get("usefulness_substantive") for c in chapters.values()
+                if c["rollup"].get("usefulness_substantive") is not None]
+    book["usefulness_substantive"] = (
+        round(sum(sub_vals) / len(sub_vals), 1) if sub_vals else None
+    )
+    conn_total = sum(c["rollup"].get("usefulness_connective", 0) for c in chapters.values())
+    para_total = sum(c["rollup"].get("usefulness_total", 0) for c in chapters.values())
+    book["usefulness_connective"] = conn_total
+    book["usefulness_total"] = para_total
 
     # Aggregate per-dim coverage across the prose units of all chapters, so the
     # dashboard can be honest about partial runs (e.g. rate-limited dimensions).
@@ -283,6 +368,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--runs", default=str(_DEFAULT_RUNS))
     parser.add_argument("--run", default=None, help="specific run_id (default: latest completed)")
     parser.add_argument("--out", default=str(_DEFAULT_OUT))
+    parser.add_argument(
+        "--version-id",
+        default=None,
+        help="git short-sha to label the run with (default: current HEAD). Use "
+        "to preserve the manuscript snapshot a re-run reflects when HEAD has "
+        "advanced for unrelated reasons.",
+    )
     args = parser.parse_args(argv)
 
     run_dir = _latest_run(Path(args.runs), args.run)
@@ -293,7 +385,7 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    data = build(run_dir, _head_sha())
+    data = build(run_dir, args.version_id or _head_sha())
     out = Path(args.out)
 
     # Accumulate a compact per-run history so /quality can plot version-over-version
