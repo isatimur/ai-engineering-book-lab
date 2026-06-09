@@ -95,7 +95,7 @@ export const Catalogue = () => {
                 pointerEvents: 'none',
               }}
             >
-              <img src={BOOK.coverImage} className="w-full h-full object-cover" alt={`${BOOK.title} cover`} />
+              <img src={BOOK.coverImage} loading="lazy" decoding="async" className="w-full h-full object-cover" alt={`${BOOK.title} cover`} />
             </div>
 
             <div className="absolute inset-0 overflow-hidden flex items-center px-12 border-l-[6px] border-black/10" style={{ transform: 'translateZ(1px)' }}>
