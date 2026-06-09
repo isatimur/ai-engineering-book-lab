@@ -4,7 +4,7 @@
 
 By Timur Isachenko. Built in public, open source: https://github.com/isatimur/ai-engineering-book-lab
 
-Built from 757 AI Engineer talks · 42 claims · 151 source anchors.
+Built from 741 AI Engineer talks · 42 claims · 151 source anchors.
 
 ## Chapters
 

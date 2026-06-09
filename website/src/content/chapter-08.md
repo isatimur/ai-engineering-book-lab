@@ -14,7 +14,7 @@ The practitioners building production voice systems do not see it that way anymo
 
 Neil Zeghidour at Gradium AI makes the strongest version of this argument. "The main bottleneck is becoming the tool call," he says, after walking through what each layer of a voice agent now costs. Speech recognition is fast. The model itself is fast. Speech synthesis is fast. What is not fast — and worse, what is not *predictable* — is the call out to a function or an external service that the agent has to make in the middle of a sentence. "You have a tool call or open router that is going to have a latency between 500 milliseconds and 4 seconds," he notes. The variance is more painful than the average. A 4-second pause in conversation is not a slow response. It is a dead line.
 
-Dippu Singh frames the same problem from inside the contact-center stack. "Processing real-time voice data is an engineering minefield of latency, accents, and interruptions," he writes, and the word *minefield* is doing real work. The failures do not announce themselves on the way in. They cascade. A bad turn cue causes the next turn to misroute, which causes the retrieval to fetch the wrong record, which causes the response to be confidently wrong. By the time anyone notices, the call is over.
+Dippu Singh frames the same problem from inside the contact-center stack. "Processing real-time voice data is an engineering minefield of latency, accents, and interruptions," he writes, and *minefield* is the precise word — the failures do not announce themselves on the way in. They cascade. A bad turn cue causes the next turn to misroute, which causes the retrieval to fetch the wrong record, which causes the response to be confidently wrong. By the time anyone notices, the call is over.
 
 The chapter that follows treats voice the way the rest of the book has treated coding, evaluation, context, and runtime: as a problem of the loop around the model, not of the model itself.
 
@@ -104,7 +104,7 @@ That makes voice the right *first* embodied edge to chapter — the engineering 
 
 ## What voice confirms about the book's frame
 
-The chapter started with a claim about asymmetry: text flatters the system; voice does not. By now that asymmetry should be doing more work than it did at first read.
+The chapter started with an asymmetry: text hides what voice exposes. Everything since has been a tour of what the text channel was quietly letting the system skip.
 
 Every section above named a problem voice exposes that text mostly hides. Coordination, not model quality. End-to-end latency budgets, not single-component speed. Architectural reuse, not voice-native rewrites. Half-duplex ceilings, not interface choices. Masking as infrastructure, not animation. TTS-as-LLM, not isolated speech modeling. In each case the chapter's claim is that voice did not introduce a new failure mode — it made an existing one audible.
 
