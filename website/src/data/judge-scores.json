@@ -51,14 +51,14 @@
     "evidence_density": 89.9,
     "claim_defensibility": 72.6,
     "redundancy": 76.0,
-    "usefulness_substantive": 45.1,
-    "usefulness_connective": 75,
+    "usefulness_substantive": 46.0,
+    "usefulness_connective": 73,
     "usefulness_total": 354
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 74.0,
@@ -117,7 +117,7 @@
           "evidence_refs": [
             "phrase:'make the shift concrete'"
           ],
-          "para_excerpt": "The two cases stress the same idea from opposite directions."
+          "para_excerpt": "Two recurring examples make the shift concrete, and they recur throughout the chapters that follow because they stress the same idea from opposite directions."
         },
         {
           "dim_name": "humanness",
@@ -181,7 +181,7 @@
           "label": "fail",
           "reasoning": "This paragraph is pure meta-commentary and transitional prose. It announces that two examples will recur throughout the book and that they \"stress the same idea from opposite directions,\" but it provides no actual content, no examples, no decisions, no thresholds, no tools, and no principles. It exists solely to signal what is coming next, offering zero operational or conceptual lift to a working engineer.",
           "evidence_refs": [],
-          "para_excerpt": "The two cases stress the same idea from opposite directions."
+          "para_excerpt": "Two recurring examples make the shift concrete, and they recur throughout the chapters that follow because they stress the same idea from opposite directions."
         },
         {
           "dim_name": "usefulness",
@@ -268,7 +268,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 75.9,
@@ -339,7 +339,7 @@
           "evidence_refs": [
             "phrase:'both are worth naming as deliberately as the technical disciplines later in the book'"
           ],
-          "para_excerpt": "Two specific capacities become the bottleneck once execution is cheap."
+          "para_excerpt": "Two specific capacities become the bottleneck once execution is cheap, and both are worth naming as deliberately as the technical disciplines later in the book."
         },
         {
           "dim_name": "humanness",
@@ -421,7 +421,7 @@
           "label": "fail",
           "reasoning": "This paragraph is pure transition/meta-commentary. It announces that two capacities will be named, but names neither of them. It contains no decision, principle, threshold, tool, or concrete example. It exists solely to set up what comes next — a textbook example of filler prose that provides zero operational lift on its own.",
           "evidence_refs": [],
-          "para_excerpt": "Two specific capacities become the bottleneck once execution is cheap."
+          "para_excerpt": "Two specific capacities become the bottleneck once execution is cheap, and both are worth naming as deliberately as the technical disciplines later in the book."
         },
         {
           "dim_name": "claim_defensibility",
@@ -505,7 +505,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 74.9,
@@ -515,8 +515,8 @@
         "claim_defensibility": 65.7,
         "redundancy": 72.0,
         "n_paragraphs": 63,
-        "usefulness_substantive": 36.3,
-        "usefulness_connective": 22,
+        "usefulness_substantive": 39.1,
+        "usefulness_connective": 23,
         "usefulness_total": 60
       },
       "labels": {
@@ -563,7 +563,7 @@
           "evidence_refs": [
             "unsupported:The agent is exposing the difference between standards the team possesses and standards the team can operationalize — no ledger entry supports the claim that agents reveal a gap between possessed standards and operationalizable standards."
           ],
-          "para_excerpt": "## The harness is a workflow, not just a wrapper"
+          "para_excerpt": "The agent is exposing the difference between standards the team possesses and standards the team can operationalize."
         },
         {
           "dim_name": "claim_defensibility",
@@ -575,7 +575,7 @@
             "unsupported:Parallelism can make things faster — no ledger entry covers this claim.",
             "unsupported:Specialization makes process explicit — no ledger entry supports or implies this assertion."
           ],
-          "para_excerpt": "When a team creates a dedicated review agent, a repo-auditing agent, or a migration-focused agent with narrow tools and instructions, it is encoding judgment ab…"
+          "para_excerpt": "The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit."
         },
         {
           "dim_name": "claim_defensibility",
@@ -587,7 +587,7 @@
             "unsupported:The enumerated taxonomy of specialized agent roles (research, review, refactor, debugging agents) as a notable development in modern coding systems has no direct ledger backing.",
             "unsupported:The verbatim quotation attributed to 'OpenAI's Codex product documentation' describing subagents as 'the ability wherein you can spin off a master task into decomposable parallel and independent tasks' has no corresponding ledger entry and is an unsupported (potentially fabricated) citation."
           ],
-          "para_excerpt": "The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit."
+          "para_excerpt": "One of the most interesting developments in modern coding systems is the move toward specialized roles: research agents, review agents, refactor agents, debuggi…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -615,7 +615,7 @@
           "evidence_refs": [
             "phrase:'it helps to come back to repository mechanics'"
           ],
-          "para_excerpt": "Eno Reyes is especially useful here because he connects old-fashioned engineering hygiene to an AI-native operating model. He begins with a deliberately basic q…"
+          "para_excerpt": "At this point the argument can sound abstract, so it helps to come back to repository mechanics."
         },
         {
           "dim_name": "humanness",
@@ -626,7 +626,7 @@
           "evidence_refs": [
             "phrase:'One of the most interesting developments in modern coding systems'"
           ],
-          "para_excerpt": "The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit."
+          "para_excerpt": "One of the most interesting developments in modern coding systems is the move toward specialized roles: research agents, review agents, refactor agents, debuggi…"
         },
         {
           "dim_name": "humanness",
@@ -637,7 +637,7 @@
           "evidence_refs": [
             "phrase:'That is the bridge into the next chapter.'"
           ],
-          "para_excerpt": "## What to do with this"
+          "para_excerpt": "That is the bridge into the next chapter. Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. I…"
         },
         {
           "dim_name": "voice",
@@ -708,7 +708,7 @@
           "evidence_refs": [
             "unsupported:The agent is exposing the difference between standards the team possesses and standards the team can operationalize — no ledger entry supports the claim that agents reveal a gap between possessed standards and operationalizable standards."
           ],
-          "para_excerpt": "## The harness is a workflow, not just a wrapper"
+          "para_excerpt": "The agent is exposing the difference between standards the team possesses and standards the team can operationalize."
         },
         {
           "dim_name": "claim_defensibility",
@@ -720,7 +720,7 @@
             "unsupported:Parallelism can make things faster — no ledger entry covers this claim.",
             "unsupported:Specialization makes process explicit — no ledger entry supports or implies this assertion."
           ],
-          "para_excerpt": "When a team creates a dedicated review agent, a repo-auditing agent, or a migration-focused agent with narrow tools and instructions, it is encoding judgment ab…"
+          "para_excerpt": "The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit."
         },
         {
           "dim_name": "claim_defensibility",
@@ -732,7 +732,7 @@
             "unsupported:The enumerated taxonomy of specialized agent roles (research, review, refactor, debugging agents) as a notable development in modern coding systems has no direct ledger backing.",
             "unsupported:The verbatim quotation attributed to 'OpenAI's Codex product documentation' describing subagents as 'the ability wherein you can spin off a master task into decomposable parallel and independent tasks' has no corresponding ledger entry and is an unsupported (potentially fabricated) citation."
           ],
-          "para_excerpt": "The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit."
+          "para_excerpt": "One of the most interesting developments in modern coding systems is the move toward specialized roles: research agents, review agents, refactor agents, debuggi…"
         },
         {
           "dim_name": "redundancy",
@@ -783,7 +783,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 75.3,
@@ -1033,7 +1033,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 76.8,
@@ -1043,8 +1043,8 @@
         "claim_defensibility": 79.0,
         "redundancy": 78.0,
         "n_paragraphs": 57,
-        "usefulness_substantive": 39.8,
-        "usefulness_connective": 15,
+        "usefulness_substantive": 46.0,
+        "usefulness_connective": 12,
         "usefulness_total": 54
       },
       "labels": {
@@ -1092,7 +1092,7 @@
           "evidence_refs": [
             "phrase:'it is where the book goes next'"
           ],
-          "para_excerpt": "- Treat context as a versioned, observable layer with its own budgets and failure modes, not a string you assemble per request."
+          "para_excerpt": "That is the move this chapter has been arguing for. It is also the move that prepares the reader for the next chapter. Once you take context seriously as infras…"
         },
         {
           "dim_name": "humanness",
@@ -1114,7 +1114,7 @@
           "evidence_refs": [
             "phrase:'the next obvious question is whether'"
           ],
-          "para_excerpt": "Stephen Chin's GraphRAG work and the broader Neo4j framing argue that retrieving over a graph is a different operation than retrieving over a flat vector index.…"
+          "para_excerpt": "Once the distinction between retrieval and memory is on the table, the next obvious question is whether all retrieval is the same. It is not."
         },
         {
           "dim_name": "voice",
@@ -1165,7 +1165,7 @@
           "label": "fail",
           "reasoning": "This is pure transition/meta-commentary prose. It contains no information, decision, principle, tool, or example whatsoever — it merely points forward to the rest of the chapter without conveying any content.",
           "evidence_refs": [],
-          "para_excerpt": "## Stuffing context is not memory"
+          "para_excerpt": "That discipline is the subject of this chapter."
         },
         {
           "dim_name": "usefulness",
@@ -1174,7 +1174,7 @@
           "label": "fail",
           "reasoning": "This paragraph is pure meta-commentary. It references \"the line\" (presumably a quote from earlier in the chapter) without identifying it, offers no decision, threshold, technique, or concrete example, and contains zero operational content. It exists solely as a rhetorical bridge or framing device between ideas.",
           "evidence_refs": [],
-          "para_excerpt": "A system that places relevant documents into a prompt has accomplished retrieval, not remembered anything. The model has no commitment to those documents after …"
+          "para_excerpt": "The line is so quotable it can be mistaken for a slogan. It is actually a load-bearing claim about architecture."
         },
         {
           "dim_name": "claim_defensibility",
@@ -1186,7 +1186,7 @@
             "overstated:'It has almost nothing in common with the embedding-lookup pattern that the term originally described' — the ledger (claims#26) supports the idea that collapsing different retrieval architectures into one bucket misses important distinctions, but does not go as far as asserting near-zero commonality between neural-RAG and the original embedding-lookup pattern. The prose overstates the degree of divergence.",
             "unsupported:'Will Bryk's neural-RAG work at Exa makes the same observation by going in the opposite direction' — the specific attribution of this architectural observation to Will Bryk and Exa has no corresponding ledger entry. This is a named-source claim with no ledger backing."
           ],
-          "para_excerpt": "The practical consequence is that \"we'll just add RAG\" is no longer a useful sentence in a design discussion. The question worth asking is which retrieval patte…"
+          "para_excerpt": "Will Bryk's neural-RAG work at Exa makes the same observation by going in the opposite direction. Instead of treating retrieval as something that happens before…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1198,7 +1198,7 @@
             "unsupported:The attribution to David Karam and his specific 'Pi Labs work after Google Search' as a named source for the layered-retrieval framing has no corresponding ledger entry.",
             "unsupported:The attribution to Philipp Krenn at Elastic and his specific 'information-retrieval ground-up talk' as a named corroborating source has no corresponding ledger entry."
           ],
-          "para_excerpt": "The deeper claim is that the field's vocabulary has been lagging the architecture. Practitioners say \"RAG\" and mean four different things depending on context. …"
+          "para_excerpt": "David Karam, from his Pi Labs work after Google Search, frames retrieval as a layered problem. You don't pick one technique; you layer them, one query at a time…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1210,7 +1210,7 @@
             "overstated:Characterizing the quote as 'one of the sharpest one-liners in the corpus' is a superlative evaluative claim that goes beyond anything the ledger asserts.",
             "unsupported:Attribution of the quote 'Stuffing context is not memory' to a specific named individual, Jack Morris, has no corresponding ledger entry and cannot be verified against the claims provided."
           ],
-          "para_excerpt": "The line is so quotable it can be mistaken for a slogan. It is actually a load-bearing claim about architecture."
+          "para_excerpt": "Jack Morris has one of the sharpest one-liners in the corpus: \"Stuffing context is not memory.\""
         },
         {
           "dim_name": "redundancy",
@@ -1258,7 +1258,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 79.2,
@@ -1502,7 +1502,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 74.6,
@@ -1754,7 +1754,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 76.4,
@@ -2036,7 +2036,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 79.8,
@@ -2308,7 +2308,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "corpus_snapshot_hash": "sha256:4d43440f7d2a1341064c05fd76fe1e1617fe249f339a9ba6ce311cd85a7ee519",
       "rollup": {
         "humanness": 75.9,
@@ -2745,7 +2745,7 @@
     },
     {
       "run_id": "2026-06-05-131510-4d43",
-      "version_id": "git:b870b3c",
+      "version_id": "git:d6a6b2d",
       "finished_at": "2026-06-05T13:29:28.921389+00:00",
       "partial": true,
       "book": {
@@ -2755,8 +2755,8 @@
         "evidence_density": 89.9,
         "claim_defensibility": 72.6,
         "redundancy": 76.0,
-        "usefulness_substantive": 45.1,
-        "usefulness_connective": 75,
+        "usefulness_substantive": 46.0,
+        "usefulness_connective": 73,
         "usefulness_total": 354
       },
       "chapters": {
@@ -2792,8 +2792,8 @@
           "claim_defensibility": 65.7,
           "redundancy": 72.0,
           "n_paragraphs": 63,
-          "usefulness_substantive": 36.3,
-          "usefulness_connective": 22,
+          "usefulness_substantive": 39.1,
+          "usefulness_connective": 23,
           "usefulness_total": 60
         },
         "04": {
@@ -2816,8 +2816,8 @@
           "claim_defensibility": 79.0,
           "redundancy": 78.0,
           "n_paragraphs": 57,
-          "usefulness_substantive": 39.8,
-          "usefulness_connective": 15,
+          "usefulness_substantive": 46.0,
+          "usefulness_connective": 12,
           "usefulness_total": 54
         },
         "06": {

@@ -3,8 +3,30 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:96210fb",
+      "current_version_id": "git:f3fca12",
       "versions": [
+        {
+          "version_id": "git:f3fca12",
+          "source": "git",
+          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 1915,
+          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-f3fca12.md"
+        },
+        {
+          "version_id": "git:203912f",
+          "source": "git",
+          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 1931,
+          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-203912f.md"
+        },
         {
           "version_id": "git:96210fb",
           "source": "git",
@@ -52,8 +74,19 @@
       ]
     },
     "02": {
-      "current_version_id": "git:869bdb6",
+      "current_version_id": "git:203912f",
       "versions": [
+        {
+          "version_id": "git:203912f",
+          "source": "git",
+          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 1996,
+          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-203912f.md"
+        },
         {
           "version_id": "git:869bdb6",
           "source": "git",
@@ -99,17 +132,6 @@
           "content_ref": "02/git-68ad925.md"
         },
         {
-          "version_id": "git:bb83c6e",
-          "source": "git",
-          "ref": "bb83c6ee28f46ad85934b84d6c39f88ecbfa2960",
-          "date": "2026-05-31",
-          "status": "Drafting",
-          "wordCount": 1549,
-          "message": "draft(ch1,2,10): opening pair + closer — Outlined → Drafting",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-bb83c6e.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -123,8 +145,30 @@
       ]
     },
     "03": {
-      "current_version_id": "git:869bdb6",
+      "current_version_id": "git:f3fca12",
       "versions": [
+        {
+          "version_id": "git:f3fca12",
+          "source": "git",
+          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3193,
+          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-f3fca12.md"
+        },
+        {
+          "version_id": "git:203912f",
+          "source": "git",
+          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3210,
+          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-203912f.md"
+        },
         {
           "version_id": "git:869bdb6",
           "source": "git",
@@ -157,17 +201,6 @@
           "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
           "corpus_snapshot_hash": null,
           "content_ref": "03/git-ef6219d.md"
-        },
-        {
-          "version_id": "git:9754359",
-          "source": "git",
-          "ref": "97543593fc3d14a7c4e068d9958fd3a35891e3ee",
-          "date": "2026-06-01",
-          "status": "Drafting",
-          "wordCount": 2776,
-          "message": "fix(ch3): strip editorial scaffold leaking into the public reader",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-9754359.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -243,8 +276,30 @@
       ]
     },
     "05": {
-      "current_version_id": "git:bd6e176",
+      "current_version_id": "git:f3fca12",
       "versions": [
+        {
+          "version_id": "git:f3fca12",
+          "source": "git",
+          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3174,
+          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-f3fca12.md"
+        },
+        {
+          "version_id": "git:203912f",
+          "source": "git",
+          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3179,
+          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-203912f.md"
+        },
         {
           "version_id": "git:bd6e176",
           "source": "git",
@@ -330,8 +385,19 @@
       ]
     },
     "07": {
-      "current_version_id": "git:96210fb",
+      "current_version_id": "git:f3fca12",
       "versions": [
+        {
+          "version_id": "git:f3fca12",
+          "source": "git",
+          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3693,
+          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-f3fca12.md"
+        },
         {
           "version_id": "git:96210fb",
           "source": "git",
@@ -379,8 +445,19 @@
       ]
     },
     "08": {
-      "current_version_id": "git:869bdb6",
+      "current_version_id": "git:f3fca12",
       "versions": [
+        {
+          "version_id": "git:f3fca12",
+          "source": "git",
+          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3485,
+          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-f3fca12.md"
+        },
         {
           "version_id": "git:869bdb6",
           "source": "git",
