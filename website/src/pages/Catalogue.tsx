@@ -34,7 +34,7 @@ export const Catalogue = () => {
     >
       <Seo
         title="From Copilot to Colleague — An Online Book"
-        description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 693-video corpus."
+        description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 741-video corpus."
         path="/"
         type="book"
       />
