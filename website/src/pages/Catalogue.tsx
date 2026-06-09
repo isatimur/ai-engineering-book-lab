@@ -95,7 +95,10 @@ export const Catalogue = () => {
                 pointerEvents: 'none',
               }}
             >
-              <img src={BOOK.coverImage} loading="lazy" decoding="async" className="w-full h-full object-cover" alt={`${BOOK.title} cover`} />
+              <picture>
+                <source type="image/webp" srcSet="/covers/from-copilot-to-colleague-600w.webp 400w, /covers/from-copilot-to-colleague.webp 1024w" sizes="(max-width: 1024px) 400px, 600px" />
+                <img src={BOOK.coverImage} loading="lazy" decoding="async" className="w-full h-full object-cover" alt={`${BOOK.title} cover`} />
+              </picture>
             </div>
 
             <div className="absolute inset-0 overflow-hidden flex items-center px-12 border-l-[6px] border-black/10" style={{ transform: 'translateZ(1px)' }}>
@@ -142,7 +145,7 @@ export const Catalogue = () => {
         </motion.div>
 
         <div className="mt-16 pt-8 border-t border-white/10">
-          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/40 mb-3">For AI agents</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/55 mb-3">For AI agents</p>
           <p className="font-sans font-light text-sm text-white/60 mb-5 max-w-xl">
             This book is structured for LLMs and agents to read — a machine-readable index and the full text as clean markdown.
           </p>
@@ -214,7 +217,10 @@ export const Catalogue = () => {
                 className="absolute inset-0 origin-left"
                 style={{ transformStyle: 'preserve-3d' }}
               >
-                <img src={BOOK.coverImage} className="absolute inset-0 w-full h-full object-cover shadow-[4px_0_10px_rgba(0,0,0,0.3)]" style={{ backfaceVisibility: 'hidden' }} alt="" />
+                <picture>
+                  <source type="image/webp" srcSet="/covers/from-copilot-to-colleague-600w.webp 400w, /covers/from-copilot-to-colleague.webp 1024w" sizes="(max-width: 1024px) 400px, 600px" />
+                  <img src={BOOK.coverImage} className="absolute inset-0 w-full h-full object-cover shadow-[4px_0_10px_rgba(0,0,0,0.3)]" style={{ backfaceVisibility: 'hidden' }} alt="" />
+                </picture>
                 <div className="absolute inset-0 bg-[#E8E8E8] shadow-[inset_-10px_0_20px_rgba(0,0,0,0.1)] border-l border-white/50" style={{ transform: 'rotateY(180deg)', backfaceVisibility: 'hidden' }} />
               </motion.div>
             </motion.div>
