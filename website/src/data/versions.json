@@ -145,8 +145,19 @@
       ]
     },
     "03": {
-      "current_version_id": "git:f3fca12",
+      "current_version_id": "git:f536564",
       "versions": [
+        {
+          "version_id": "git:f536564",
+          "source": "git",
+          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3194,
+          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-f536564.md"
+        },
         {
           "version_id": "git:f3fca12",
           "source": "git",
@@ -190,17 +201,6 @@
           "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
           "corpus_snapshot_hash": null,
           "content_ref": "03/git-ed15457.md"
-        },
-        {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 2769,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-ef6219d.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -336,8 +336,19 @@
       ]
     },
     "06": {
-      "current_version_id": "git:ed15457",
+      "current_version_id": "git:f536564",
       "versions": [
+        {
+          "version_id": "git:f536564",
+          "source": "git",
+          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 2252,
+          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-f536564.md"
+        },
         {
           "version_id": "git:ed15457",
           "source": "git",
@@ -385,8 +396,19 @@
       ]
     },
     "07": {
-      "current_version_id": "git:f3fca12",
+      "current_version_id": "git:f536564",
       "versions": [
+        {
+          "version_id": "git:f536564",
+          "source": "git",
+          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3694,
+          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-f536564.md"
+        },
         {
           "version_id": "git:f3fca12",
           "source": "git",
@@ -445,8 +467,19 @@
       ]
     },
     "08": {
-      "current_version_id": "git:f3fca12",
+      "current_version_id": "git:f536564",
       "versions": [
+        {
+          "version_id": "git:f536564",
+          "source": "git",
+          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3482,
+          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-f536564.md"
+        },
         {
           "version_id": "git:f3fca12",
           "source": "git",
@@ -492,17 +525,6 @@
           "content_ref": "08/git-ef6219d.md"
         },
         {
-          "version_id": "git:ade8d60",
-          "source": "git",
-          "ref": "ade8d604c05d6d33191306bfcd12bdecf592682f",
-          "date": "2026-05-31",
-          "status": "Drafting",
-          "wordCount": 3035,
-          "message": "draft(ch8): Realtime, Voice, Cost of Being Interruptible — Starter → Drafting",
-          "corpus_snapshot_hash": null,
-          "content_ref": "08/git-ade8d60.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -516,8 +538,19 @@
       ]
     },
     "09": {
-      "current_version_id": "git:869bdb6",
+      "current_version_id": "git:f536564",
       "versions": [
+        {
+          "version_id": "git:f536564",
+          "source": "git",
+          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
+          "date": "2026-06-09",
+          "status": "Drafting",
+          "wordCount": 3247,
+          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-f536564.md"
+        },
         {
           "version_id": "git:869bdb6",
           "source": "git",

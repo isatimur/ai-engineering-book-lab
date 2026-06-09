@@ -357,6 +357,24 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "designed to allow agents to leverage our eval suite files."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:02:19.240",
+          "end": "00:02:20.120",
+          "start_seconds": 139,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "classic benchmark maxing."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:03:08.519",
+          "end": "00:03:10.280",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "There are right ways to use them. There are wrong ways to use them."
         }
       ]
     },
@@ -397,7 +415,7 @@
     {
       "claim_id": "claims#10",
       "text": "Context failure is often a system-assembly problem, not simply a small-context-window problem",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
@@ -434,6 +452,24 @@
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
           "quote": "LLMs and tools are orchestrated through predefined code paths."
+        },
+        {
+          "video_id": "EcqMYoIV57A",
+          "start": "00:03:14.560",
+          "end": "00:03:18.080",
+          "start_seconds": 194,
+          "confidence": "high",
+          "label": "#752 — Nupur Sharma, Qodo",
+          "quote": "Agents look at the starting point, end point and try to provide you the results."
+        },
+        {
+          "video_id": "EcqMYoIV57A",
+          "start": "00:02:20.959",
+          "end": "00:02:23.680",
+          "start_seconds": 140,
+          "confidence": "high",
+          "label": "#752 — Nupur Sharma, Qodo",
+          "quote": "the more the tools, the more issues you have."
         }
       ]
     },
@@ -1124,6 +1160,24 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "designed to allow agents to leverage our eval suite files."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:02:19.240",
+          "end": "00:02:20.120",
+          "start_seconds": 139,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "classic benchmark maxing."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:03:08.519",
+          "end": "00:03:10.280",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "There are right ways to use them. There are wrong ways to use them."
         }
       ]
     },
@@ -1773,7 +1827,7 @@
     {
       "claim_id": "claims#10",
       "text": "Context failure is often a system-assembly problem, not simply a small-context-window problem",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
@@ -1810,6 +1864,24 @@
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
           "quote": "LLMs and tools are orchestrated through predefined code paths."
+        },
+        {
+          "video_id": "EcqMYoIV57A",
+          "start": "00:03:14.560",
+          "end": "00:03:18.080",
+          "start_seconds": 194,
+          "confidence": "high",
+          "label": "#752 — Nupur Sharma, Qodo",
+          "quote": "Agents look at the starting point, end point and try to provide you the results."
+        },
+        {
+          "video_id": "EcqMYoIV57A",
+          "start": "00:02:20.959",
+          "end": "00:02:23.680",
+          "start_seconds": 140,
+          "confidence": "high",
+          "label": "#752 — Nupur Sharma, Qodo",
+          "quote": "the more the tools, the more issues you have."
         }
       ]
     },
@@ -2111,6 +2183,24 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "designed to allow agents to leverage our eval suite files."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:02:19.240",
+          "end": "00:02:20.120",
+          "start_seconds": 139,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "classic benchmark maxing."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:03:08.519",
+          "end": "00:03:10.280",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "There are right ways to use them. There are wrong ways to use them."
         }
       ]
     },
@@ -2962,6 +3052,24 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "designed to allow agents to leverage our eval suite files."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:02:19.240",
+          "end": "00:02:20.120",
+          "start_seconds": 139,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "classic benchmark maxing."
+        },
+        {
+          "video_id": "QuuIywMG4s8",
+          "start": "00:03:08.519",
+          "end": "00:03:10.280",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#746 — Ara Khan, Cline",
+          "quote": "There are right ways to use them. There are wrong ways to use them."
         }
       ]
     },
@@ -3176,7 +3284,7 @@
     {
       "claim_id": "claims#10",
       "text": "Context failure is often a system-assembly problem, not simply a small-context-window problem",
-      "support_level": "moderate",
+      "support_level": "strong",
       "anchors": [
         {
           "video_id": "NTBX-wxUhHs",
@@ -3213,6 +3321,24 @@
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
           "quote": "LLMs and tools are orchestrated through predefined code paths."
+        },
+        {
+          "video_id": "EcqMYoIV57A",
+          "start": "00:03:14.560",
+          "end": "00:03:18.080",
+          "start_seconds": 194,
+          "confidence": "high",
+          "label": "#752 — Nupur Sharma, Qodo",
+          "quote": "Agents look at the starting point, end point and try to provide you the results."
+        },
+        {
+          "video_id": "EcqMYoIV57A",
+          "start": "00:02:20.959",
+          "end": "00:02:23.680",
+          "start_seconds": 140,
+          "confidence": "high",
+          "label": "#752 — Nupur Sharma, Qodo",
+          "quote": "the more the tools, the more issues you have."
         }
       ]
     },

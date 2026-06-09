@@ -137,6 +137,11 @@
     - **Quote:** "small CLI tool that we call eval tool"
     - **Anchor:** `L2r6vLlLgs8` 00:07:03.600 → 00:07:06.440 · confidence: high
     - **Quote:** "designed to allow agents to leverage our eval suite files."
+  - [[746-QuuIywMG4s8-evals-are-broken-use-them-anyway-ara-khan-cline|#746 — Ara Khan, Cline]] — the two-camps trap: leaderboard numbers are not real-world signal ("benchmark maxing"), but pure taste/vibes is not the answer either — evals have right and wrong uses, and the discipline is using them well rather than abandoning them.
+    - **Anchor:** `QuuIywMG4s8` 00:02:19.240 → 00:02:20.120 · confidence: high
+    - **Quote:** "classic benchmark maxing."
+    - **Anchor:** `QuuIywMG4s8` 00:03:08.519 → 00:03:10.280 · confidence: high
+    - **Quote:** "There are right ways to use them. There are wrong ways to use them."
 - **Caveats / counterpoints:** Not everything important can be reduced to a single metric. The answer is not no evals; it is richer evaluation systems with human judgment where needed. Productive tension worth preserving: #689 calls evals "AI unit tests" while #125 (Pesok) titles his talk "Evals Are Not Unit Tests" — both framings describe different surfaces of the same artifact.
 - **Candidate chapters:** 4, 6, 7, 9
 - **Reusable phrasing:** Evals matter because delegated systems need a control loop, not because launch decks need charts.
@@ -160,7 +165,7 @@
 
 ## 10) Context failure is often a system-assembly problem, not simply a small-context-window problem
 - **Why it matters:** Gives Chapter 5 a sharper thesis than "RAG matters."
-- **Support level:** moderate
+- **Support level:** strong
 - **Supporting sources:**
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]]
     - **Anchor:** `NTBX-wxUhHs` 00:01:44.640 → 00:01:51.840 · confidence: high
@@ -174,6 +179,11 @@
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]]
     - **Anchor:** `hxFpUcvWPcU` 00:00:56.399 → 00:01:00.320 · confidence: high
     - **Quote:** "LLMs and tools are orchestrated through predefined code paths."
+  - [[752-EcqMYoIV57A-why-more-context-makes-your-agent-dumber-and-what-to-do-about-it-nupur-sharma-qodo|#752 — Nupur Sharma, Qodo]] — dumping more context degrades results: models privilege the start and end of the window and drop the middle, so the fix is assembly (hierarchical summarization, graphs, iterative retrieval), not a bigger window.
+    - **Anchor:** `EcqMYoIV57A` 00:03:14.560 → 00:03:18.080 · confidence: high
+    - **Quote:** "Agents look at the starting point, end point and try to provide you the results."
+    - **Anchor:** `EcqMYoIV57A` 00:02:20.959 → 00:02:23.680 · confidence: high
+    - **Quote:** "the more the tools, the more issues you have."
 - **Caveats / counterpoints:** Larger windows reduce some friction. The broader claim is that assembly, ranking, layering, freshness, and tool exposure still determine usefulness.
 - **Candidate chapters:** 5, 6, 10
 - **Reusable phrasing:** Bigger windows help, but context quality is mostly about assembly, not stuffing.

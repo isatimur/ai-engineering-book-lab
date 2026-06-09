@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T22:37:07+00:00",
+  "generated_at": "2026-06-09T23:01:44+00:00",
   "corpus": {
     "videos": 757
   },
@@ -12,13 +12,13 @@
   },
   "claims": {
     "total": 42,
-    "strong": 35,
-    "moderate": 7,
+    "strong": 36,
+    "moderate": 6,
     "tentative": 0
   },
   "anchors": {
-    "total": 151,
-    "high": 151,
+    "total": 155,
+    "high": 155,
     "medium": 0,
     "low": 0
   },
