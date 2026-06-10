@@ -31,8 +31,6 @@ The earliest framings of prompt engineering trained a generation of builders to 
 
 Val Bercovici names the shift directly. Context platform engineering, he calls it, is "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale." The phrase is dense, but the move is clear. The thing being engineered is no longer the prompt. It is the platform that decides what gets put into prompts.
 
-Stephen Chin at Neo4j makes the same move in a different vocabulary. Context engineering, he argues, is the discipline of connecting the dots across the knowledge a system already has — turning a corpus into a working memory the model can navigate. Will Bryk's neural-RAG work at Exa shows the same logic from another angle: retrieval becomes part of the model's reasoning loop, not a one-shot lookup before the prompt is built.
-
 Ofer Mendelevitch's enterprise deep-research framing pushes the argument to its limit. The hard problem of enterprise AI, he says, is not access to documents. It is access to the *relevant* documents — the ones the agent actually needs for the current step, ranked, deduplicated, and trustworthy. Once you accept that frame, prompt engineering becomes a small subset of a much larger discipline.
 
 ## Stuffing context is not memory
@@ -57,11 +55,11 @@ Once the distinction between retrieval and memory is on the table, the next obvi
 
 Stephen Chin's GraphRAG work and the broader Neo4j framing argue that retrieving over a graph is a different operation than retrieving over a flat vector index. The vector index excels when the question is about semantic similarity to existing content. The graph excels when the question is about relationships — who depends on whom, which entities co-occur, what does this concept connect to. Mitesh Patel at NVIDIA pushes the framing further with hybrid RAG, which fuses graph and vector retrieval because most useful enterprise questions need both.
 
-David Karam, from his Pi Labs work after Google Search, frames retrieval as a layered problem. You don't pick one technique; you layer them, one query at a time, with each layer handling a class of failure the others miss. Philipp Krenn at Elastic builds the same argument from first principles in his information-retrieval ground-up talk. Retrieval is not a black box. It is a system of techniques with known trade-offs, and the engineering job is knowing which technique to apply where.
+David Karam, from his Pi Labs work after Google Search, frames retrieval as a layered problem. You don't pick one technique; you layer them, one query at a time, with each layer handling a class of failure the others miss. Retrieval is not a black box. It is a system of techniques with known trade-offs, and the engineering job is knowing which technique to apply where.
 
 The deeper claim is that the field's vocabulary has been lagging the architecture. Practitioners say "RAG" and mean four different things depending on context. Sometimes they mean a single embedding lookup before a single prompt. Sometimes they mean a retrieve-then-rerank pipeline. Sometimes they mean a graph traversal that surfaces entities. Sometimes they mean a long-term memory layer. The label has collapsed distinctions that the architecture depends on.
 
-Will Bryk's neural-RAG work at Exa makes the same observation by going in the opposite direction. Instead of treating retrieval as something that happens before reasoning, it integrates retrieval into the reasoning loop. The model decides what to search for, what to follow up on, and when to stop. That is also RAG by current usage, but it has almost nothing in common with the embedding-lookup pattern that the term originally described.
+Will Bryk's neural-RAG work at Exa comes at it from the opposite direction. Instead of treating retrieval as something that happens before reasoning, it integrates retrieval into the reasoning loop. The model decides what to search for, what to follow up on, and when to stop. That is also RAG by current usage, but it has almost nothing in common with the embedding-lookup pattern that the term originally described.
 
 The practical consequence is that "we'll just add RAG" is no longer a useful sentence in a design discussion. The question worth asking is which retrieval pattern, against which data shape, with what ranking, with what freshness guarantees, feeding into what reasoning surface. Once those questions are explicit, the architecture becomes engineerable. Until they are, the system relies on luck.
 
