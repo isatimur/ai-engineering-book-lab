@@ -30,12 +30,14 @@ describe('judgeScores', () => {
     }
   });
 
-  it('carries a substantive-usefulness rollup that lifts the raw floor', () => {
+  it('carries a substantive-usefulness rollup beside the raw floor', () => {
     const b = judgeScores.book;
-    // Both numbers present and well-ordered: the operational core never scores
-    // below the all-paragraph floor (it only ever removes the lowest tier).
     expect(typeof b.usefulness).toBe('number');
     expect(typeof b.usefulness_substantive).toBe('number');
+    // Book-wide, excluding floored connective tissue lifts the average — this is
+    // the metric's whole point and holds robustly across runs. (Per chapter it can
+    // invert: a chapter whose excluded bridges scored above its substantive paras
+    // sees substantive dip slightly below raw, so we don't assert it per chapter.)
     expect(b.usefulness_substantive!).toBeGreaterThanOrEqual(b.usefulness!);
     // The excluded share is a sane, conservative fraction (well under half).
     expect(b.usefulness_connective).toBeGreaterThan(0);
@@ -44,7 +46,7 @@ describe('judgeScores', () => {
     for (const chapter of Object.values(judgeScores.chapters)) {
       const r = chapter.rollup;
       if (r.usefulness == null || r.usefulness_substantive == null) continue;
-      expect(r.usefulness_substantive).toBeGreaterThanOrEqual(r.usefulness);
+      // True per-chapter invariant: the excluded count never exceeds the total.
       expect(r.usefulness_connective!).toBeLessThanOrEqual(r.usefulness_total!);
     }
   });
