@@ -244,6 +244,9 @@
   - [[202-j_TKDweOsYE-building-agents-the-hard-parts-rita-kozlov-cloudflare|#202 — Rita Kozlov, Cloudflare]]
     - **Anchor:** `j_TKDweOsYE` 00:04:24.240 → 00:04:25.040 · confidence: high
     - **Quote:** "send it to me for approval."
+  - [[745-KLSuFPj2ld0-building-safe-payment-infrastructure-for-the-autonomous-economy-steve-kaliski-stripe|#745 — Steve Kaliski, Stripe]] — the payment-domain instantiation of bounded agency: non-determinism is fine for discovery, but credentials and checkout stay deterministic, isolating the transaction from the agent's open-ended reasoning.
+    - **Anchor:** `KLSuFPj2ld0` 00:01:07.000 → 00:01:09.200 · confidence: high
+    - **Quote:** "credentials, payments, and checkout require determinism."
 - **Caveats / counterpoints:** Some consumer contexts can tolerate higher autonomy than regulated or adversarial ones. The right setting depends on irreversibility, risk, and observability.
 - **Candidate chapters:** 6, 7, 8, 10
 - **Reusable phrasing:** Useful autonomy is not max autonomy. It is well-tuned autonomy.
@@ -269,6 +272,9 @@
   - [[691-mR-WAvEPRwE-build-agents-that-run-for-hours-without-losing-the-plot-ash-prabaker-andrew-wilson-anthrop|#691 — Ash Prabaker & Andrew Wilson, Anthropic]] — staged loop (planner-generator-evaluator) but a single writer at a time; each role in its own context window; pre-build contract negotiated by files on disk.
     - **Anchor:** `mR-WAvEPRwE` 00:24:58.520 → 00:25:01.440 · confidence: high
     - **Quote:** "We just kind of gave each role its own kind of context window."
+  - [[743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw|#743 — Vincent Koc, OpenClaw]] — a maintainer's lived discovery that swim-lane process — not model or agent quality — determines factory output.
+    - **Anchor:** `pmoDeA3RBZY` 00:16:11.240 → 00:16:14.280 · confidence: high
+    - **Quote:** "it's no longer about the model or the agent. It's about the process."
 - **Caveats / counterpoints:** "Factory" can overstate current capability and imply unbounded parallel writers prematurely. Teams shipping production multi-agent systems disagree about whether parallelism is the leverage point: Factory (#653) runs features serially with bounded read-only parallelism, citing that "agents conflict... step on each other's changes... duplicate work"; Anthropic (#691) runs one writer at a time with role-separated context windows; Cursor (#629) and OpenAI Codex (#632) push parallel sub-agent fan-out as the throughput mechanism. The factory metaphor describes orchestration of work-units; it is contested whether it implies many concurrent writers.
 - **Candidate chapters:** 3, 6, 9
 - **Reusable phrasing:** The mature harness starts to look less like a prompt box and more like a software factory — but the industry has not yet agreed whether the factory's leverage comes from many concurrent writers or from one disciplined writer in a staged loop.
@@ -286,6 +292,9 @@
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]]
     - **Anchor:** `0n3MKk7r60w` 00:05:33.120 → 00:05:36.040 · confidence: high
     - **Quote:** "49% reduction of the initial load."
+  - [[747-_xIwFcnHqp4-building-interactive-uis-in-vs-code-with-mcp-apps-marlene-mhangami-liam-hampton-github|#747 — Marlene Mhangami & Liam Hampton, GitHub]] — MCP apps extend capability packaging beyond text and tool-results to interactive UI components the agent surfaces — progressive disclosure as a first-class design surface.
+    - **Anchor:** `_xIwFcnHqp4` 00:04:21.000 → 00:04:24.880 · confidence: high
+    - **Quote:** "rich interactive components that render directly in the chat."
 - **Caveats / counterpoints:** Skills, tool search, and richer clients may eventually hide more of this complexity. For now, teams still have to design the capability surface deliberately.
 - **Candidate chapters:** 5, 6, 9
 - **Reusable phrasing:** Tools expand what an agent can do. Skills and progressive disclosure decide whether it can do it coherently.
@@ -320,6 +329,9 @@
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]]
     - **Anchor:** `0n3MKk7r60w` 00:05:33.120 → 00:05:35.600 · confidence: high
     - **Quote:** "49% reduction of the initial"
+  - [[744-_B4Pv9ttFgY-building-agent-interfaces-lessons-from-chrome-devtools-mcp-for-agents-michael-hablich-goog|#744 — Michael Hablich, Google (Chrome DevTools)]] — tool schemas are the agent's interface, so designing them is capability packaging rather than incidental metadata — harness quality now includes schema design.
+    - **Anchor:** `_B4Pv9ttFgY` 00:16:21.040 → 00:16:23.480 · confidence: high
+    - **Quote:** "the schema is the UI for the agent."
 - **Caveats / counterpoints:** Raw MCP access still matters; the claim is not that skills replace tools, but that tools alone are often too weak a surface for reliable use.
 - **Candidate chapters:** 3, 5, 6
 - **Reusable phrasing:** In practice, a tool is not yet a capability. A capability becomes usable when access is paired with guidance, grouping, and progressive disclosure.
@@ -359,6 +371,9 @@
     - **Quote:** "download all of the UI that we have as a file system?"
     - **Anchor:** `L2r6vLlLgs8` 00:14:06.080 → 00:14:06.960 · confidence: high
     - **Quote:** "25 agents in parallel"
+  - [[750-JsCCrBF7F1g-llm-observability-evaluation-experimentation-platform-dat-ngo-arize|#750 — Dat Ngo, Arize]] — static code inspection cannot audit an agent's behavior; telemetry and traces are the ground truth evaluation must be built from.
+    - **Anchor:** `JsCCrBF7F1g` 00:03:34.120 → 00:03:35.880 · confidence: high
+    - **Quote:** "it's actually the telemetry that does that."
 - **Caveats / counterpoints:** Not every failure should be auto-converted into a durable regression; teams still need judgment about representativeness and maintenance cost.
 - **Candidate chapters:** 4, 6
 - **Reusable phrasing:** Observability is not downstream of evals. It is the place tomorrow's eval set comes from.
@@ -380,6 +395,9 @@
   - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — even at the TTS-model layer the design constraint is streaming and first-packet latency, not raw quality.
     - **Anchor:** `3jGAU2sbAyY` 00:02:28.959 → 00:02:30.319 · confidence: high
     - **Quote:** "the latency is key here"
+  - [[742-mFLlVpnGpds-beyond-transcription-building-voice-ai-that-understands-conversations-herv-bredin-pyannote|#742 — Hervé Bredin, pyannote]] — speaker attribution (who-said-what) is a coordination problem orthogonal to transcription accuracy; realtime quality depends on conversation structure, not just word-error rate.
+    - **Anchor:** `mFLlVpnGpds` 00:03:14.159 → 00:03:16.879 · confidence: high
+    - **Quote:** "knowing who said what is as important as what was said"
 - **Caveats / counterpoints:** Zeghidour explicitly says he "used to be really at war against cascaded systems" and now thinks they are practical — so this is not a claim that *speech-to-speech is unimportant*, only that the experience gap is dominated by coordination problems. Half-duplex limitations (Claim 22) are partly a model-architecture problem, not pure orchestration.
 - **Candidate chapters:** 8, 10
 - **Reusable phrasing:** Realtime AI is not a model problem. It is a coordination problem on a 200-millisecond clock.
@@ -420,6 +438,9 @@
     - **Quote:** "pretty much uh everybody is using an auto reggressive decoder backbone"
     - **Anchor:** `3jGAU2sbAyY` 00:01:59.920 → 00:02:04.880 · confidence: high
     - **Quote:** "the king use case for text to speech is uh its usage within agents"
+  - [[755-Bc6Ojl2XS1w-from-transcription-to-live-music-gemini-s-audio-stack-thor-schaeff-google-deepmind|#755 — Thor Schaeff, Google DeepMind]] — native sound-to-sound models bake intelligence into the audio model rather than routing through a separate text-LLM stage — the cascade collapses into the LLM.
+    - **Anchor:** `Bc6Ojl2XS1w` 00:12:44.280 → 00:12:46.520 · confidence: high
+    - **Quote:** "the intelligence is baked directly into the model."
 - **Caveats / counterpoints:** Humeau himself notes that his own released model uses diffusion/flow-matching for the per-frame stage, not autoregression — so the convergence is at the backbone, not full-stack. No second independent source confirms the convergence at this density; treat as a "watch-item" claim until corroborated.
 - **Candidate chapters:** 8, 10
 
@@ -484,6 +505,9 @@
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
     - **Anchor:** `w9u11ioHGA0` 00:05:58.800 → 00:06:02.160 · confidence: high
     - **Quote:** "you need to be like tuned to what what every technique gives you before you go and invest in it."
+  - [[756-UM6sFg_jdlE-rag-is-dead-right-kuba-rogut-turbopuffer|#756 — Kuba Rogut, Turbopuffer]] — retrieval is a composite of heterogeneous mechanisms (vector, full-text/BM25, grep, regex, filters), not a single vector-search step — so the architecture must treat the jobs distinctly.
+    - **Anchor:** `UM6sFg_jdlE` 00:02:04.000 → 00:02:05.680 · confidence: high
+    - **Quote:** "retrieval is not just vector search."
 - **Caveats / counterpoints:** Skills, agentic search, and richer protocols may eventually hide more of this distinction from product builders. For now, the system designer has to make it explicit. Tightly-scoped consumer chatbots can still get away with collapsing the layers.
 - **Candidate chapters:** 5, 6
 - **Reusable phrasing:** Stuffing context is not memory; vector retrieval is not graph traversal; "RAG" is not a layer, it is several.
@@ -501,6 +525,9 @@
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — enterprise-aware agent as one that knows which documents matter for the current user/role/task — boundary work as the engineering work.
     - **Anchor:** `hxFpUcvWPcU` 00:00:33.120 → 00:00:39.440 · confidence: high
     - **Quote:** "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
+  - [[756-UM6sFg_jdlE-rag-is-dead-right-kuba-rogut-turbopuffer|#756 — Kuba Rogut, Turbopuffer]] — working-set quality over raw size (relaying Jeff Dean): a huge window is wasted without staged retrieval that isolates the relevant slice.
+    - **Anchor:** `UM6sFg_jdlE` 00:10:19.160 → 00:10:20.920 · confidence: high
+    - **Quote:** "you don't need a trillion at once, you need the right million."
 - **Caveats / counterpoints:** Corpus size still matters when relevance is genuinely uncertain at index time, or when long-tail coverage is required. The claim is about the working set the model actually sees per step, not the size of the underlying index.
 - **Candidate chapters:** 5, 9
 - **Reusable phrasing:** Enterprise usefulness scales with working-set quality, not corpus size.
@@ -579,6 +606,9 @@
   - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Mark Myshatyn, Los Alamos National Lab]] — the regulated public-sector setting where these constraints become legal requirements rather than best practices.
     - **Anchor:** `TnSGx36Ly0Q` 00:15:29.519 → 00:15:33.040 · confidence: high
     - **Quote:** "we see it as the greatest opportunity and the greatest threat to national security,"
+  - [[744-_B4Pv9ttFgY-building-agent-interfaces-lessons-from-chrome-devtools-mcp-for-agents-michael-hablich-goog|#744 — Michael Hablich, Google (Chrome DevTools)]] — refusing persistent browser permissions (friction by design) is least-privilege as a product decision, not security overhead bolted on later.
+    - **Anchor:** `_B4Pv9ttFgY` 00:22:07.440 → 00:22:09.240 · confidence: high
+    - **Quote:** "never compromise trust for convenience."
 - **Caveats / counterpoints:** Maximum sandboxing has real costs in latency, developer experience, and integration ease. The right setting is workflow-specific. The claim is about the category, not a universal sandbox spec.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: product infrastructure, not security overhead.
@@ -670,6 +700,9 @@
   - [[207-Zqu0VaJw3vo-how-to-hire-ai-engineers-when-everyone-is-cheating-with-ai-beth-glenfield-devday|#207 — Beth Glenfield, DevDay]] — old hiring signals stop discriminating once everyone interviews with AI; the organization has to learn to hire for judgment, not for code-production ability that is now widely available.
     - **Anchor:** `Zqu0VaJw3vo` 00:00:30.480 → 00:00:36.399 · confidence: high
     - **Quote:** "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
+  - [[743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw|#743 — Vincent Koc, OpenClaw]] — from the sharp end of an AI-native repo (tens of thousands of open PRs): once generation is cheap the binding constraint becomes governance — deciding what to reject, not what to accept.
+    - **Anchor:** `pmoDeA3RBZY` 00:07:50.760 → 00:07:52.960 · confidence: high
+    - **Quote:** "the challenge becomes who do I say no to?"
 - **Caveats / counterpoints:** Some workflows still benefit from a tight specialist guild — regulated industries, safety-critical systems, high-uncertainty research. The claim is about the general direction once AI removes the basic creation bottleneck, not about every team in every setting.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Broad paths to create, narrow paths to ship.

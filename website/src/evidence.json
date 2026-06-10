@@ -599,6 +599,15 @@
           "confidence": "high",
           "label": "#202 — Rita Kozlov, Cloudflare",
           "quote": "send it to me for approval."
+        },
+        {
+          "video_id": "KLSuFPj2ld0",
+          "start": "00:01:07.000",
+          "end": "00:01:09.200",
+          "start_seconds": 67,
+          "confidence": "high",
+          "label": "#745 — Steve Kaliski, Stripe",
+          "quote": "credentials, payments, and checkout require determinism."
         }
       ]
     },
@@ -660,6 +669,15 @@
           "confidence": "high",
           "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
           "quote": "We just kind of gave each role its own kind of context window."
+        },
+        {
+          "video_id": "pmoDeA3RBZY",
+          "start": "00:16:11.240",
+          "end": "00:16:14.280",
+          "start_seconds": 971,
+          "confidence": "high",
+          "label": "#743 — Vincent Koc, OpenClaw",
+          "quote": "it's no longer about the model or the agent. It's about the process."
         }
       ]
     },
@@ -694,6 +712,15 @@
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial load."
+        },
+        {
+          "video_id": "_xIwFcnHqp4",
+          "start": "00:04:21.000",
+          "end": "00:04:24.880",
+          "start_seconds": 261,
+          "confidence": "high",
+          "label": "#747 — Marlene Mhangami & Liam Hampton, GitHub",
+          "quote": "rich interactive components that render directly in the chat."
         }
       ]
     },
@@ -762,6 +789,15 @@
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial"
+        },
+        {
+          "video_id": "_B4Pv9ttFgY",
+          "start": "00:16:21.040",
+          "end": "00:16:23.480",
+          "start_seconds": 981,
+          "confidence": "high",
+          "label": "#744 — Michael Hablich, Google (Chrome DevTools)",
+          "quote": "the schema is the UI for the agent."
         }
       ]
     },
@@ -848,6 +884,15 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "25 agents in parallel"
+        },
+        {
+          "video_id": "JsCCrBF7F1g",
+          "start": "00:03:34.120",
+          "end": "00:03:35.880",
+          "start_seconds": 214,
+          "confidence": "high",
+          "label": "#750 — Dat Ngo, Arize",
+          "quote": "it's actually the telemetry that does that."
         }
       ]
     },
@@ -995,6 +1040,15 @@
           "confidence": "high",
           "label": "#156 — David Karam, Pi Labs",
           "quote": "you need to be like tuned to what what every technique gives you before you go and invest in it."
+        },
+        {
+          "video_id": "UM6sFg_jdlE",
+          "start": "00:02:04.000",
+          "end": "00:02:05.680",
+          "start_seconds": 124,
+          "confidence": "high",
+          "label": "#756 — Kuba Rogut, Turbopuffer",
+          "quote": "retrieval is not just vector search."
         }
       ]
     }
@@ -1273,6 +1327,15 @@
           "confidence": "high",
           "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
           "quote": "We just kind of gave each role its own kind of context window."
+        },
+        {
+          "video_id": "pmoDeA3RBZY",
+          "start": "00:16:11.240",
+          "end": "00:16:14.280",
+          "start_seconds": 971,
+          "confidence": "high",
+          "label": "#743 — Vincent Koc, OpenClaw",
+          "quote": "it's no longer about the model or the agent. It's about the process."
         }
       ]
     },
@@ -1307,6 +1370,15 @@
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial load."
+        },
+        {
+          "video_id": "_xIwFcnHqp4",
+          "start": "00:04:21.000",
+          "end": "00:04:24.880",
+          "start_seconds": 261,
+          "confidence": "high",
+          "label": "#747 — Marlene Mhangami & Liam Hampton, GitHub",
+          "quote": "rich interactive components that render directly in the chat."
         }
       ]
     },
@@ -1461,6 +1533,15 @@
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
           "quote": "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
+        },
+        {
+          "video_id": "UM6sFg_jdlE",
+          "start": "00:10:19.160",
+          "end": "00:10:20.920",
+          "start_seconds": 619,
+          "confidence": "high",
+          "label": "#756 — Kuba Rogut, Turbopuffer",
+          "quote": "you don't need a trillion at once, you need the right million."
         }
       ]
     },
@@ -1581,6 +1662,15 @@
           "confidence": "high",
           "label": "#207 — Beth Glenfield, DevDay",
           "quote": "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
+        },
+        {
+          "video_id": "pmoDeA3RBZY",
+          "start": "00:07:50.760",
+          "end": "00:07:52.960",
+          "start_seconds": 470,
+          "confidence": "high",
+          "label": "#743 — Vincent Koc, OpenClaw",
+          "quote": "the challenge becomes who do I say no to?"
         }
       ]
     },
@@ -1950,6 +2040,15 @@
           "confidence": "high",
           "label": "#202 — Rita Kozlov, Cloudflare",
           "quote": "send it to me for approval."
+        },
+        {
+          "video_id": "KLSuFPj2ld0",
+          "start": "00:01:07.000",
+          "end": "00:01:09.200",
+          "start_seconds": 67,
+          "confidence": "high",
+          "label": "#745 — Steve Kaliski, Stripe",
+          "quote": "credentials, payments, and checkout require determinism."
         }
       ]
     },
@@ -2036,6 +2135,15 @@
           "confidence": "high",
           "label": "#663 — Samuel Humeau, Mistral",
           "quote": "the latency is key here"
+        },
+        {
+          "video_id": "mFLlVpnGpds",
+          "start": "00:03:14.159",
+          "end": "00:03:16.879",
+          "start_seconds": 194,
+          "confidence": "high",
+          "label": "#742 — Hervé Bredin, pyannote",
+          "quote": "knowing who said what is as important as what was said"
         }
       ]
     },
@@ -2061,6 +2169,15 @@
           "confidence": "high",
           "label": "#663 — Samuel Humeau, Mistral",
           "quote": "the king use case for text to speech is uh its usage within agents"
+        },
+        {
+          "video_id": "Bc6Ojl2XS1w",
+          "start": "00:12:44.280",
+          "end": "00:12:46.520",
+          "start_seconds": 764,
+          "confidence": "high",
+          "label": "#755 — Thor Schaeff, Google DeepMind",
+          "quote": "the intelligence is baked directly into the model."
         }
       ]
     },
@@ -2330,6 +2447,15 @@
           "confidence": "high",
           "label": "#202 — Rita Kozlov, Cloudflare",
           "quote": "send it to me for approval."
+        },
+        {
+          "video_id": "KLSuFPj2ld0",
+          "start": "00:01:07.000",
+          "end": "00:01:09.200",
+          "start_seconds": 67,
+          "confidence": "high",
+          "label": "#745 — Steve Kaliski, Stripe",
+          "quote": "credentials, payments, and checkout require determinism."
         }
       ]
     },
@@ -2450,6 +2576,15 @@
           "confidence": "high",
           "label": "#86 — Mark Myshatyn, Los Alamos National Lab",
           "quote": "we see it as the greatest opportunity and the greatest threat to national security,"
+        },
+        {
+          "video_id": "_B4Pv9ttFgY",
+          "start": "00:22:07.440",
+          "end": "00:22:09.240",
+          "start_seconds": 1327,
+          "confidence": "high",
+          "label": "#744 — Michael Hablich, Google (Chrome DevTools)",
+          "quote": "never compromise trust for convenience."
         }
       ]
     },
@@ -2785,6 +2920,15 @@
           "confidence": "high",
           "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
           "quote": "We just kind of gave each role its own kind of context window."
+        },
+        {
+          "video_id": "pmoDeA3RBZY",
+          "start": "00:16:11.240",
+          "end": "00:16:14.280",
+          "start_seconds": 971,
+          "confidence": "high",
+          "label": "#743 — Vincent Koc, OpenClaw",
+          "quote": "it's no longer about the model or the agent. It's about the process."
         }
       ]
     },
@@ -2819,6 +2963,15 @@
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial"
+        },
+        {
+          "video_id": "_B4Pv9ttFgY",
+          "start": "00:16:21.040",
+          "end": "00:16:23.480",
+          "start_seconds": 981,
+          "confidence": "high",
+          "label": "#744 — Michael Hablich, Google (Chrome DevTools)",
+          "quote": "the schema is the UI for the agent."
         }
       ]
     },
@@ -3156,6 +3309,15 @@
           "confidence": "high",
           "label": "#689 — Lawrence Jones, incident.io",
           "quote": "25 agents in parallel"
+        },
+        {
+          "video_id": "JsCCrBF7F1g",
+          "start": "00:03:34.120",
+          "end": "00:03:35.880",
+          "start_seconds": 214,
+          "confidence": "high",
+          "label": "#750 — Dat Ngo, Arize",
+          "quote": "it's actually the telemetry that does that."
         }
       ]
     },
@@ -3373,6 +3535,15 @@
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial load."
+        },
+        {
+          "video_id": "_xIwFcnHqp4",
+          "start": "00:04:21.000",
+          "end": "00:04:24.880",
+          "start_seconds": 261,
+          "confidence": "high",
+          "label": "#747 — Marlene Mhangami & Liam Hampton, GitHub",
+          "quote": "rich interactive components that render directly in the chat."
         }
       ]
     },
@@ -3407,6 +3578,15 @@
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
           "quote": "49% reduction of the initial"
+        },
+        {
+          "video_id": "_B4Pv9ttFgY",
+          "start": "00:16:21.040",
+          "end": "00:16:23.480",
+          "start_seconds": 981,
+          "confidence": "high",
+          "label": "#744 — Michael Hablich, Google (Chrome DevTools)",
+          "quote": "the schema is the UI for the agent."
         }
       ]
     },
@@ -3545,6 +3725,15 @@
           "confidence": "high",
           "label": "#156 — David Karam, Pi Labs",
           "quote": "you need to be like tuned to what what every technique gives you before you go and invest in it."
+        },
+        {
+          "video_id": "UM6sFg_jdlE",
+          "start": "00:02:04.000",
+          "end": "00:02:05.680",
+          "start_seconds": 124,
+          "confidence": "high",
+          "label": "#756 — Kuba Rogut, Turbopuffer",
+          "quote": "retrieval is not just vector search."
         }
       ]
     },
@@ -3579,6 +3768,15 @@
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
           "quote": "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
+        },
+        {
+          "video_id": "UM6sFg_jdlE",
+          "start": "00:10:19.160",
+          "end": "00:10:20.920",
+          "start_seconds": 619,
+          "confidence": "high",
+          "label": "#756 — Kuba Rogut, Turbopuffer",
+          "quote": "you don't need a trillion at once, you need the right million."
         }
       ]
     },
@@ -3719,6 +3917,15 @@
           "confidence": "high",
           "label": "#202 — Rita Kozlov, Cloudflare",
           "quote": "send it to me for approval."
+        },
+        {
+          "video_id": "KLSuFPj2ld0",
+          "start": "00:01:07.000",
+          "end": "00:01:09.200",
+          "start_seconds": 67,
+          "confidence": "high",
+          "label": "#745 — Steve Kaliski, Stripe",
+          "quote": "credentials, payments, and checkout require determinism."
         }
       ]
     },
@@ -3771,6 +3978,15 @@
           "confidence": "high",
           "label": "#663 — Samuel Humeau, Mistral",
           "quote": "the latency is key here"
+        },
+        {
+          "video_id": "mFLlVpnGpds",
+          "start": "00:03:14.159",
+          "end": "00:03:16.879",
+          "start_seconds": 194,
+          "confidence": "high",
+          "label": "#742 — Hervé Bredin, pyannote",
+          "quote": "knowing who said what is as important as what was said"
         }
       ]
     },
@@ -3855,6 +4071,15 @@
           "confidence": "high",
           "label": "#663 — Samuel Humeau, Mistral",
           "quote": "the king use case for text to speech is uh its usage within agents"
+        },
+        {
+          "video_id": "Bc6Ojl2XS1w",
+          "start": "00:12:44.280",
+          "end": "00:12:46.520",
+          "start_seconds": 764,
+          "confidence": "high",
+          "label": "#755 — Thor Schaeff, Google DeepMind",
+          "quote": "the intelligence is baked directly into the model."
         }
       ]
     },
