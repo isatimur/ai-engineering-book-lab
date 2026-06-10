@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fromcopilottocolleague.com/</loc>
-    <lastmod>2026-06-09T23:36:55+01:00</lastmod>
+    <lastmod>2026-06-10T16:23:42+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://fromcopilottocolleague.com/enterprise</loc>
+    <lastmod>2026-06-10T16:23:42+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fromcopilottocolleague.com/assess</loc>
+    <lastmod>2026-06-10T16:23:42+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fromcopilottocolleague.com/workshop</loc>
+    <lastmod>2026-06-10T16:23:42+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fromcopilottocolleague.com/visual-guide</loc>
-    <lastmod>2026-06-09T23:36:55+01:00</lastmod>
+    <lastmod>2026-06-10T16:23:42+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/read</loc>
-    <lastmod>2026-06-09T23:36:55+01:00</lastmod>
+    <lastmod>2026-06-10T16:23:42+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -44,7 +62,7 @@
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/read/05-context</loc>
-    <lastmod>2026-06-09T16:01:56+01:00</lastmod>
+    <lastmod>2026-06-10T10:08:49+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -80,127 +98,127 @@
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/agent-observability</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/agent-runtime-replay-vs-snapshot</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/agentic-product-design</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/ai-native-organization</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/coding-evals</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/constrained-delegation</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/context-engineering</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/durable-agents</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/graphrag</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/harness-engineering</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/hierarchical-memory</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/human-control-plane</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/model-context-protocol</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/one-shot-ai-failure</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/software-factory</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/spec-driven-development</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/vibe-coding</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/concepts/voice-agents</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/maps/concept-graph</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/maps/methodology-deep-dive</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fromcopilottocolleague.com/visual-guide/maps/readers-path</loc>
-    <lastmod>2026-06-09T22:46:49.287Z</lastmod>
+    <lastmod>2026-06-10T22:06:12.984Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

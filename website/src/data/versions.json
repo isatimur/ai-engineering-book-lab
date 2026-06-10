@@ -276,8 +276,19 @@
       ]
     },
     "05": {
-      "current_version_id": "git:f3fca12",
+      "current_version_id": "git:072be58",
       "versions": [
+        {
+          "version_id": "git:072be58",
+          "source": "git",
+          "ref": "072be582314254444a82909ea81e1b88c4833608",
+          "date": "2026-06-10",
+          "status": "Drafting",
+          "wordCount": 3083,
+          "message": "edit(ch5): thin the practitioner roster (final prose-audit item)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-072be58.md"
+        },
         {
           "version_id": "git:f3fca12",
           "source": "git",

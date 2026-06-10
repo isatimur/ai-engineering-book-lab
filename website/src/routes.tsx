@@ -5,6 +5,9 @@ import { VisualGuide } from './pages/VisualGuide';
 import { Reader } from './pages/Reader';
 import { Versions } from './pages/Versions';
 import { Quality } from './pages/Quality';
+import { Assess } from './pages/Assess';
+import { Enterprise } from './pages/Enterprise';
+import { Workshop } from './pages/Workshop';
 import { ChapterDetail } from './pages/ChapterDetail';
 import { ConceptDetail } from './pages/ConceptDetail';
 import { MapDetail } from './pages/MapDetail';
@@ -39,6 +42,9 @@ export const routes: RouteRecord[] = [
       },
       { path: 'versions', element: <Versions /> },
       { path: 'quality', element: <Quality /> },
+      { path: 'assess', element: <Assess /> },
+      { path: 'enterprise', element: <Enterprise /> },
+      { path: 'workshop', element: <Workshop /> },
       { path: '*', element: <Catalogue /> },
     ],
   },

@@ -52,6 +52,7 @@ export const Catalogue = () => {
         <nav className="pointer-events-auto text-xs font-mono uppercase tracking-widest text-white/60 flex gap-6">
           <Link to="/visual-guide" className="hover:text-white">Visual Guide</Link>
           <Link to="/read" className="hover:text-white">Read</Link>
+          <Link to="/assess" className="hover:text-white">Assess</Link>
           <Link to="/versions" className="hover:text-white">Versions</Link>
           <Link to="/quality" className="hover:text-white">Quality</Link>
         </nav>

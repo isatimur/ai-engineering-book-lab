@@ -234,3 +234,13 @@ body {
   outline: 2px solid var(--color-ink);
   outline-offset: 2px;
 }
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  /* Print the readiness results cleanly: white page, keep ink on paper. */
+  body {
+    background: #fff;
+  }
+}
