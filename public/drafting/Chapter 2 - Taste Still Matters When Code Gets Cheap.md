@@ -22,11 +22,7 @@ But cheap output is not the same as cheap judgment, and the gap between those tw
 
 ## The argument in three lines
 
-The chapter's claim is almost arithmetic:
-
-- Generation is getting cheaper.
-- Bad decisions are not getting cheaper.
-- Therefore taste, standards, and review matter *more*, not less.
+Three observations compose the chapter's claim: generation is getting cheaper; bad decisions are not; therefore taste, standards, and review matter *more*, not less.
 
 A machine can accelerate production without removing the need for discrimination. In fact it sharpens that need, because it widens the gap between what can be produced and what should be. When a team could only build a little, the act of building was itself a filter — you thought hard about what was worth the effort. Remove the cost of building and you remove the filter. Something has to replace it, and that something is judgment.
 

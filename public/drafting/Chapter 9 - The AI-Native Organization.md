@@ -101,4 +101,4 @@ The technical question and the organizational question, in the end, turn out to 
 
 - Name an owner for the judgment layer. Following James Lowe, designate an AI product manager who decides which of the many cheap artifacts is worth shipping and shapes the constraints under which non-specialists create safely — this judgment does not allocate itself once creation is cheap.
 
-- Close the last human-only path rather than buying more seats. Since the workflow can't be rebuilt around delegation until delegation is universal, the holdout process — the review, handoff, or plan that still assumes human-speed work — is the constraint; identify it and convert it, because at ninety percent you have faster people inside an unchanged company.
+- Close the last human-only path rather than buying more seats. The holdout process — the review, handoff, or plan that still assumes human-speed work — is the constraint. Partial delegation makes individual people faster inside an unchanged workflow; redesigning the workflow requires finding and converting that holdout. Identify it and convert it, because more seats in an unchanged process does not change the process.

@@ -820,3 +820,90 @@
 - **Caveats / counterpoints:** Framing and review can themselves be over-applied — heavy upfront specification on genuinely exploratory work suppresses the discovery that cheap generation enables. The claim is about work that has to be trusted, where the scarce skill is discrimination, not ceremony.
 - **Candidate chapters:** 2, 4
 - **Reusable phrasing:** In a world of cheap execution, framing is the work and review is where standards are defended.
+
+## 43) Coding agents expose the gap between standards a team possesses and standards it can operationalize
+- **Why it matters:** Teams often have implicit quality standards that engineers enforce through tacit knowledge — the "feel" for architecture, the unwritten naming convention, the review instinct. Agents have none of that tacit layer. When agents produce code that is syntactically correct but wrong in the local sense, they surface that the standard existed only in people's heads, not in a form the system can use. This is not a model failure; it is a spec failure.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]] — agent output quality is bounded by how legible the environment is; the gap between what's desired and what's specified is where agents disappoint.
+    - **Anchor:** `ShuJ_CN6zr4` 00:03:25.440 → 00:03:33.440 · confidence: high
+    - **Quote:** "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
+  - [[040-HY_JyxAZsiE-spec-driven-development-agentic-coding-at-faang-scale-and-quality-al-harris-amazon-kiro|#40 — Al Harris, Amazon Kiro]] — specs externalise intent precisely because agents cannot infer local convention from context alone.
+    - **Anchor:** `HY_JyxAZsiE` 00:15:57.120 → 00:16:01.759 · confidence: high
+    - **Quote:** "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+- **Caveats / counterpoints:** Some teams genuinely lack standards rather than merely lacking documented ones; agents surface the absence, not a gap between two real things. The claim is specifically about standards that exist but are not operationalized.
+- **Candidate chapters:** 3
+- **Reusable phrasing:** The agent is exposing the difference between standards the team possesses and standards the team can operationalize.
+
+## 44) Subagent specialization makes process explicit and encodes team judgment into roles
+- **Why it matters:** When a team creates a dedicated review agent, a repo-auditing agent, or a migration-focused agent, it is forced to articulate what that role should do, what tools it should have, and what output counts as success. The act of defining the role makes implicit process explicit. This is a harness-engineering benefit that compound across the organization, beyond the throughput gain.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Ryan Lopopolo, OpenAI]] — the harness is the mechanism through which implicit human steering becomes explicit system behaviour.
+    - **Anchor:** `am_oeAoUhew` 00:24:40.799 → 00:24:45.840 · confidence: high
+    - **Quote:** "a good harness is really operationalized around giving the model text at the right time"
+- **Caveats / counterpoints:** Specialization also fragments context; a review agent that sees only a diff may miss the broader design intent the author carries. The claim is about the process-clarity benefit, not that specialization is always superior to a single generalist agent.
+- **Candidate chapters:** 3
+- **Reusable phrasing:** The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit.
+
+## 45) The best evals encode judgment mined from operational history, not invented in a clean room
+- **Why it matters:** Writing evals from first principles produces tests that seem rigorous but miss the actual failure modes that appear in production. Operational history — support escalations, regression incidents, painful edge cases — already contains the judgment; the work is extraction, not invention. This makes evals a form of institutional memory, not just a quality gate.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[060-xOJnLk4UMQ4-a-recipe-for-building-reliable-ai-products-govind-jain-stripe|#60 — Govind Jain, Stripe]] — the concrete recipe: crawl commit history for real fixes, revert each fix, score whether the agent can reproduce the known-good state.
+    - **Anchor:** `xOJnLk4UMQ4` 00:00:00.000 → 00:00:00.000 · confidence: high
+    - **Quote:** "take a real codebase, crawl its commit history, find the commits that fixed actual problems, and turn each fix into a graded task"
+  - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — production observability is what makes eval sets grounded rather than synthetic.
+    - **Anchor:** `1izYWsokr9s` 00:01:55.920 → 00:02:01.920 · confidence: high
+    - **Quote:** "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+- **Caveats / counterpoints:** Operational history has survivorship bias — it records failures that were noticed, not failures that went undetected. A pure pull-from-production strategy misses the unknown unknowns that synthetic evals can probe.
+- **Candidate chapters:** 4
+- **Reusable phrasing:** The escalation logs, incident tickets, and bug-fix commits you already have are an unmined eval set; the work of authoring it has mostly been done for you by the failures themselves.
+
+## 46) Once an AI system can act autonomously, bounding its authority becomes the price of deployment
+- **Why it matters:** A system that only answers questions can be vague about its own power because the human retains final authority. A system that calls tools, modifies records, and continues working without supervision cannot be vague about power — the boundary between what it may and may not do has to be explicit before it acts, not discovered afterward. This is the moment where identity, permissions, and sandboxing become engineering problems, not policy aspirations.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — trust for high-stakes agents requires bounding what the system can do, not just trusting that it will behave.
+    - **Anchor:** `kDEvo2__Ijg` 00:03:44.000 → 00:03:48.560 · confidence: high
+    - **Quote:** "we're asking AI systems to now produce output and produce judgments and decisions"
+  - [[138-8SUJEqQNClw-agents-vs-workflows-why-not-both-sam-bhagwat-mastra-ai|#138 — Sam Bhagwat, Mastra.ai]] — durable, long-running agents require an explicit model of authority that ephemeral request-response agents can ignore.
+    - **Anchor:** `8SUJEqQNClw` 00:12:04.240 → 00:12:07.600 · confidence: high
+    - **Quote:** "most primitives the magic happens when you combine these things together"
+- **Caveats / counterpoints:** Even purely advisory systems can cause harm through poorly calibrated confidence or selective presentation. The claim is specifically about the shift in the security posture required when the system can execute, not merely advise.
+- **Candidate chapters:** 6, 7
+- **Reusable phrasing:** A helpful model can get away with being vague about power. An acting system cannot.
+
+## 47) Half-duplex is the silent architectural ceiling on natural voice conversation
+- **Why it matters:** Most production speech-to-speech systems cannot listen and speak simultaneously. The model is either listening or speaking. This single constraint prevents the kind of back-and-forth that human conversation takes for granted — finishing each other's sentences, overlapping, self-correcting mid-turn. Every conversational UX pattern that breaks the listen-then-speak turn structure runs into this ceiling before it runs into any other constraint.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[Neil Zeghidour, Kyutai]] — states the constraint directly: "The model is either listening or it's speaking."
+    - **Anchor:** pending · confidence: high
+    - **Quote:** "The model is either listening or it's speaking."
+- **Caveats / counterpoints:** Full-duplex models exist in research and are beginning to appear in products; the ceiling is architectural for today's deployed systems, not a fundamental physical limit. The claim is about current production reality, not a permanent constraint.
+- **Candidate chapters:** 8
+- **Reusable phrasing:** Half-duplex is the silent architectural ceiling on natural voice conversation.
+
+## 48) TTS architecture is converging on the same auto-regressive decoder backbone as LLM text generation
+- **Why it matters:** The same tokenize-and-stream-and-generate pattern that drove text agents now drives speech generation. The same first-packet-latency obsession that shaped LLM serving now shapes TTS serving. The substrates are different; the engineering discipline is the same. This convergence means that patterns learned in text agent engineering — context compression, caching, streaming — transfer directly into voice agent engineering.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[Samuel Humeau, Mistral]] — describes the architectural convergence plainly: "Pretty much everybody is using an auto-regressive decoder backbone."
+    - **Anchor:** pending · confidence: high
+    - **Quote:** "Pretty much everybody is using an auto-regressive decoder backbone."
+- **Caveats / counterpoints:** The convergence is architectural, not experiential; voice has latency, prosody, and naturalness requirements that have no text equivalent. Convergence in backbone does not mean convergence in product engineering.
+- **Candidate chapters:** 8
+- **Reusable phrasing:** The same discipline. Different substrate.
+
+## 49) Broader creation without tighter governance produces liability, not leverage
+- **Why it matters:** When the cost of a first implementation collapses, more people can start work. But the path from "started" to "shipped" must run through the same evals, tests, review gates, and permission boundaries that any change runs through — or the velocity gain becomes a risk accumulation. Governance is not the brake on democratized creation; it is what makes democratized creation safe to allow. The two must rise together.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[Lisa Orr, Zapier]] — "Your support team should ship code" — the provocation that cheap execution dissolves the historical guild boundary around who can implement.
+    - **Anchor:** pending · confidence: high
+    - **Quote:** "Your support team should ship code."
+  - See also Claim 36 (broader creation requires tighter review and governance — they rise together or the first becomes a liability).
+- **Caveats / counterpoints:** Some governance structures should be redesigned rather than preserved. Stronger governance is not an argument for unchanged governance; it is an argument for governance that can handle higher-frequency, broader-authorship change without proportional human review cost.
+- **Candidate chapters:** 9
+- **Reusable phrasing:** Democratized creation and stronger governance are not opposites. They are the two things that have to rise together, or the first one becomes a liability.

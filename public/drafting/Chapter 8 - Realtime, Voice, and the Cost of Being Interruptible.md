@@ -102,7 +102,7 @@ Latency masking belongs in the same architectural category as evals, harnesses, 
 
 ## TTS architecture is converging on LLM architecture
 
-The voice cluster also produces one of the cleanest pieces of evidence the book has for its broader claim that scaffolding ideas generalize across substrates.
+TTS architecture convergence illustrates how scaffolding patterns transfer across substrates: when the engineering constraints are isomorphic, the techniques follow.
 
 Samuel Humeau at Mistral, whose work on TTS-as-LLM is the chapter's reference for this thread, puts the convergence plainly. "Pretty much everybody is using an auto-regressive decoder backbone," he says, describing the architectural shape the leading text-to-speech systems have settled into. The same tokenize-and-stream-and-generate pattern that drove text agents now drives speech generation. The same first-packet-latency obsession that shaped LLM serving now shapes TTS serving. The substrates are different. The discipline is the same.
 
@@ -122,7 +122,7 @@ The robotics talks in the cluster — Annika and Aastha on GR00T N1 humanoid fou
 
 The book's claim is not that voice and robotics are the same problem. It is that they are stress-tests of the same underlying frame. When the system has to operate inside a latency budget set by physics rather than by user preference, the scaffolding-first argument is no longer a stylistic choice. It is what determines whether the system can act at all.
 
-That makes voice the right *first* embodied edge to chapter — the engineering is mature enough to teach. Robotics is the right *next* one.
+Voice is a natural starting point for studying embodied constraints — the engineering is mature enough to be teachable. Robotics extends the same frame into tighter physical constraints and higher-stakes failure modes.
 
 ## What voice confirms about the book's frame
 
