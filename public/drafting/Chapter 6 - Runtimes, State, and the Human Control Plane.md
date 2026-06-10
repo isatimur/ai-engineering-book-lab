@@ -63,7 +63,7 @@ Pull the chapter together and its claim is structural. A machine colleague is no
 
 The environment has named parts now. Durable execution, so the work survives interruption and resumes instead of restarting. Explicit state and workflow history, so the system can answer what has actually happened. A human control plane of approvals, roll-up views, and inspectable trajectories, so people supervise at the consequential edges. And, once there are many workers, a coordination story — even if today that story is a chosen substitute rather than a solved primitive. None of these live in the model. All of them live in the runtime, and all of them are the difference between a demo and a system.
 
-This completes the middle of the book's spine. Chapter 3 prepared the workplace the agent operates in. Chapter 4 built the instrument that measures whether its output is good. Chapter 5 engineered what it sees. Chapter 6 is how the work itself persists and stays under human control across the gaps in a single run. Chapter 7 takes the next step the moment a durable, long-running agent can act on its own: if it has state, tools, and the authority to use them over time, then bounding that authority — identity, permissions, sandboxes, audit — becomes the price of letting it act at all. Durability gave the agent staying power. Security decides what it is allowed to do with it.
+The moment a durable, long-running agent can act on its own — with state, tools, and the authority to use them over time — bounding that authority becomes the price of letting it act at all. Identity, permissions, sandboxes, audit: that is the next chapter's subject. Durability gave the agent staying power. Security decides what it is allowed to do with it.
 
 ## What to do with this
 

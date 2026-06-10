@@ -136,7 +136,7 @@ This is also where the book’s middle spine starts locking together. Once you t
 
 The same logic extends beyond a single agent.
 
-One of the most interesting developments in modern coding systems is the move toward specialized roles: research agents, review agents, refactor agents, debugging agents, and broader subagent frameworks that let a larger task be decomposed into parallel, semi-independent work. OpenAI’s Codex product documentation describes subagents as “the ability wherein you can spin off a master task into decomposable parallel and independent tasks.”
+One of the most interesting developments in modern coding systems is the move toward specialized roles: research agents, review agents, refactor agents, debugging agents, and broader subagent frameworks that let a larger task be decomposed into parallel, semi-independent work. OpenAI has demonstrated the pattern directly: in one workshop, Codex spun up parallel sub-agents to review a directory of files at once, each sub-agent assigned its own model, sandbox mode, and tool access, with an orchestrator partitioning the work and collating the results.
 
 The key insight is not merely that parallelism can make things faster. It is that specialization makes process explicit.
 
