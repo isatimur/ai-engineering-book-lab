@@ -1051,6 +1051,31 @@
           "quote": "retrieval is not just vector search."
         }
       ]
+    },
+    {
+      "claim_id": "claims#46",
+      "text": "Once an AI system can act autonomously, bounding its authority becomes the price of deployment",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        }
+      ]
     }
   ],
   "9": [
@@ -2689,6 +2714,31 @@
           "quote": "if you log into GitHub MCP with a PAT token that we just immediately filter the tools down by the scopes that the token has."
         }
       ]
+    },
+    {
+      "claim_id": "claims#46",
+      "text": "Once an AI system can act autonomously, bounding its authority becomes the price of deployment",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        }
+      ]
     }
   ],
   "3": [
@@ -3015,6 +3065,47 @@
           "confidence": "high",
           "label": "#691 — Ash Prabaker & Andrew Wilson, Anthropic",
           "quote": "we have the two agents basically negotiate what done actually means."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#43",
+      "text": "Coding agents expose the gap between standards a team possesses and standards it can operationalize",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "ShuJ_CN6zr4",
+          "start": "00:03:25.440",
+          "end": "00:03:33.440",
+          "start_seconds": 205,
+          "confidence": "high",
+          "label": "#57 — Eno Reyes, Factory AI",
+          "quote": "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
+        },
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:15:57.120",
+          "end": "00:16:01.759",
+          "start_seconds": 957,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#44",
+      "text": "Subagent specialization makes process explicit and encodes team judgment into roles",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:24:40.799",
+          "end": "00:24:45.840",
+          "start_seconds": 1480,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "a good harness is really operationalized around giving the model text at the right time"
         }
       ]
     }
@@ -3404,6 +3495,31 @@
           "confidence": "high",
           "label": "#59 — swyx",
           "quote": "I'm declaring war on slop today."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#45",
+      "text": "The best evals encode judgment mined from operational history, not invented in a clean room",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "xOJnLk4UMQ4",
+          "start": "00:00:00.000",
+          "end": "00:00:00.000",
+          "start_seconds": 0,
+          "confidence": "high",
+          "label": "#60 — Govind Jain, Stripe",
+          "quote": "take a real codebase, crawl its commit history, find the commits that fixed actual problems, and turn each fix into a graded task"
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:55.920",
+          "end": "00:02:01.920",
+          "start_seconds": 115,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "handle state potentially over long periods of time. There needs to be human interaction for approvals"
         }
       ]
     }
