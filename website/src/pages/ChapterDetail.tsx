@@ -8,6 +8,7 @@ import {
 import { opener } from '../lib/manifest';
 import { LightboxProvider, useLightbox } from '../lib/lightbox';
 import { ChapterArticle } from '../components/chapter/ChapterArticle';
+import { AssessmentCta } from '../components/chapter/AssessmentCta';
 import { EvidenceRail } from '../EvidenceRail';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
@@ -86,6 +87,8 @@ export const ChapterDetail = () => {
         <article className="max-w-3xl mx-auto px-6 pt-16">
           <ChapterArticle chapter={chapter} />
         </article>
+
+        {chapter.slug === 'ai-native-org' && <AssessmentCta />}
 
         <section className="max-w-3xl mx-auto px-6 pt-16">
           <EvidenceRail chapterNumber={chapter.number} />
