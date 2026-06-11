@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { claimsForChapter } from '../../lib/evidenceGraph';
+import { RedThreadLinks } from './EvidenceSectionHeader';
 
 const EvidenceGraphView = lazy(() =>
   import('./EvidenceGraphView').then((m) => ({ default: m.EvidenceGraphView })),
@@ -68,20 +68,11 @@ export const SourcesDrawer = ({ chapterNumber, isOpen, onClose }: Props) => {
                 <EvidenceGraphView chapterNumber={chapterNumber} compact />
               </Suspense>
 
-              <div className="flex flex-wrap gap-3 font-mono text-[10px] uppercase tracking-widest">
-                <Link
-                  to={`/read/graph?chapter=${chapterNumber}`}
-                  className="border border-[var(--color-border)] px-3 py-2 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
-                  onClick={onClose}
-                >
-                  Full-screen graph →
-                </Link>
-                <a
-                  href={`/experience/`}
-                  className="border border-[var(--color-border)] px-3 py-2 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
-                >
-                  3D journey →
-                </a>
+              <div onClick={onClose}>
+                <p className="font-mono text-[9px] uppercase tracking-widest text-[var(--color-ink-muted)] mb-2">
+                  Continue the thread
+                </p>
+                <RedThreadLinks chapterNumber={chapterNumber} />
               </div>
             </div>
           </motion.aside>

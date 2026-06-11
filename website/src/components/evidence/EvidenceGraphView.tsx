@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { chapters } from '../../data/bookChapters';
+import { Link, useNavigate } from 'react-router-dom';
+import { chapterByNumber, experienceUrl, graphUrl, readChapterUrl } from '../../lib/chapterLinks';
 import { anchorForNode, filterGraphByChapter, getEvidenceGraph } from '../../lib/evidenceGraph';
 import type { GraphNode } from '../../lib/evidenceTypes';
+import { RedThreadLinks } from './EvidenceSectionHeader';
 import { EvidenceGraphCanvas } from './EvidenceGraphCanvas';
 
 type Props = {
@@ -17,43 +18,113 @@ const LEGEND = [
   { type: 'video', label: 'Source video', color: '#6b6664' },
 ] as const;
 
+const EDGE_LEGEND = [
+  { type: 'cited_in', label: 'Claim in chapter' },
+  { type: 'supports', label: 'Video supports claim' },
+  { type: 'appears_in', label: 'Speaker in video' },
+  { type: 'same_theme', label: 'Co-cited practitioners' },
+] as const;
+
 export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => {
+  const navigate = useNavigate();
   const fullGraph = useMemo(() => getEvidenceGraph(), []);
   const graph = useMemo(
     () => (chapterNumber ? filterGraphByChapter(fullGraph, chapterNumber) : fullGraph),
     [fullGraph, chapterNumber],
   );
   const [selected, setSelected] = useState<GraphNode | null>(null);
+  const [resetKey, setResetKey] = useState(0);
   const selectedAnchor = selected ? anchorForNode(selected) : undefined;
+
+  const chapterForLinks =
+    selected?.type === 'chapter'
+      ? selected.chapterNumber
+      : selected?.chapterNumber ?? chapterNumber;
+  const chapterMeta = chapterForLinks ? chapterByNumber(chapterForLinks) : undefined;
+  const isEmpty = graph.nodes.length === 0;
+
+  const handleSelect = (node: GraphNode | null) => {
+    setSelected(node);
+    if (node?.type === 'chapter' && node.chapterNumber) {
+      navigate(graphUrl(node.chapterNumber));
+    }
+  };
+
+  const resetView = () => {
+    setResetKey((k) => k + 1);
+    setSelected(null);
+  };
 
   return (
     <div className={`flex flex-col gap-4 ${compact ? '' : 'lg:flex-row lg:items-stretch'}`}>
-      <div className={compact ? 'h-[360px]' : 'flex-1 min-h-[420px] lg:min-h-[560px]'}>
-        <EvidenceGraphCanvas
-          graph={graph}
-          focusChapter={chapterNumber}
-          onSelect={setSelected}
-          className="h-full"
-        />
+      <div className={compact ? 'h-[min(360px,50vh)]' : 'flex-1 min-h-[min(420px,55vh)] lg:min-h-[560px] order-1'}>
+        {isEmpty ? (
+          <div className="h-full min-h-[320px] border border-[var(--color-border)] bg-[#F8F6F0] flex flex-col items-center justify-center gap-4 px-6 text-center">
+            <p className="font-serif text-lg text-[var(--color-ink-muted)]">
+              No evidence nodes for this chapter filter yet.
+            </p>
+            <Link
+              to="/read/graph"
+              className="font-mono text-[10px] uppercase tracking-widest border border-[var(--color-border)] px-3 py-1.5 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
+            >
+              View full book graph
+            </Link>
+          </div>
+        ) : (
+          <EvidenceGraphCanvas
+            key={`${chapterNumber ?? 'all'}-${resetKey}`}
+            graph={graph}
+            focusChapter={chapterNumber}
+            onSelect={handleSelect}
+            className="h-full"
+          />
+        )}
       </div>
 
       <aside
-        className={`border border-[var(--color-border)] bg-[var(--color-paper)] p-5 font-mono text-[10px] uppercase tracking-[0.15em] ${
-          compact ? 'max-h-48 overflow-y-auto' : 'lg:w-[320px] shrink-0'
+        className={`border border-[var(--color-border)] bg-[var(--color-paper)] p-5 font-mono text-[10px] uppercase tracking-[0.15em] order-2 ${
+          compact ? 'min-h-0' : 'lg:w-[340px] shrink-0 lg:max-h-[560px] lg:overflow-y-auto'
         }`}
       >
-        <div className="mb-4 flex flex-wrap gap-3 text-[var(--color-ink-muted)]">
+        {chapterForLinks && !compact && (
+          <div className="mb-4 pb-4 border-b border-[var(--color-border)]">
+            {chapterMeta && (
+              <p className="font-serif text-sm normal-case tracking-normal text-[var(--color-ink)] mb-2">
+                Ch {chapterForLinks} · {chapterMeta.title}
+              </p>
+            )}
+            <RedThreadLinks chapterNumber={chapterForLinks} />
+          </div>
+        )}
+
+        <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2 text-[var(--color-ink-muted)]">
           {LEGEND.map((item) => (
             <span key={item.type} className="inline-flex items-center gap-1.5">
-              <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: item.color }} />
+              <span className="inline-block h-2.5 w-2.5 rounded-full shrink-0" style={{ background: item.color }} />
               {item.label}
             </span>
           ))}
         </div>
 
+        <div className="mb-4 flex flex-wrap gap-x-3 gap-y-1 text-[9px] text-[var(--color-ink-muted)] normal-case tracking-normal">
+          {EDGE_LEGEND.map((item) => (
+            <span key={item.type}>{item.label}</span>
+          ))}
+        </div>
+
         <p className="mb-3 text-[var(--color-ink-muted)] normal-case tracking-normal font-serif text-sm leading-relaxed">
-          Drag nodes · scroll to zoom · pan empty space · click to inspect
+          Drag nodes · scroll or pinch to zoom · pan empty space · tap a chapter to filter
         </p>
+
+        {!compact && (
+          <button
+            type="button"
+            onClick={resetView}
+            className="mb-4 border border-[var(--color-border)] px-2 py-1 text-[var(--color-ink-muted)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
+          >
+            Reset layout
+          </button>
+        )}
 
         <div className="grid grid-cols-2 gap-2 mb-4 text-[var(--color-ink)]">
           <Stat label="Claims" value={graph.stats.claims} />
@@ -79,25 +150,41 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
                 href={`https://www.youtube.com/watch?v=${selectedAnchor.video_id}&t=${selectedAnchor.start_seconds}s`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block underline hover:opacity-70"
+                className="inline-block underline hover:opacity-70 mb-3"
               >
                 Open source ↗
               </a>
             )}
-            {selected.chapterNumber && (
-              <div className="mt-3">
+
+            {chapterForLinks && selected.type !== 'chapter' && (
+              <div className="mt-4 pt-3 border-t border-[var(--color-border)]">
+                <p className="text-[var(--color-ink-muted)] text-[9px] uppercase tracking-widest mb-2">Red thread</p>
+                <RedThreadLinks chapterNumber={chapterForLinks} />
+              </div>
+            )}
+
+            {selected.type === 'chapter' && chapterMeta && (
+              <div className="mt-4 pt-3 border-t border-[var(--color-border)] space-y-2">
                 <Link
-                  to={`/read/${selected.chapterNumber}-${chapters.find((c) => c.number === selected.chapterNumber)?.slug ?? ''}`}
-                  className="underline hover:opacity-70"
+                  to={readChapterUrl(chapterForLinks!)}
+                  className="block underline hover:opacity-70 font-serif text-sm normal-case tracking-normal"
                 >
-                  Read chapter →
+                  Read ch {chapterForLinks} — {chapterMeta.title} →
                 </Link>
+                <a
+                  href={experienceUrl(chapterForLinks!)}
+                  className="block underline hover:opacity-70"
+                >
+                  Fly to ch {chapterForLinks} in 3D →
+                </a>
               </div>
             )}
           </div>
         ) : (
           <p className="border-t border-[var(--color-border)] pt-4 text-[var(--color-ink-muted)] normal-case tracking-normal font-serif text-sm">
-            Select a node to see the claim, practitioner, or video anchor.
+            {chapterNumber
+              ? 'Tap any node to inspect claims and sources for this chapter.'
+              : 'Select a node — or tap a chapter hub — to inspect and jump across read, graph, and 3D.'}
           </p>
         )}
       </aside>

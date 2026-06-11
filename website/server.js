@@ -21,8 +21,11 @@ const server = createServer((request, response) => {
   const requestedPath = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, '');
   let filePath = join(root, requestedPath);
 
-  if (!existsSync(filePath) || statSync(filePath).isDirectory()) {
+  if (!existsSync(filePath)) {
     filePath = join(root, 'index.html');
+  } else if (statSync(filePath).isDirectory()) {
+    const indexPath = join(filePath, 'index.html');
+    filePath = existsSync(indexPath) ? indexPath : join(root, 'index.html');
   }
 
   const extension = extname(filePath);

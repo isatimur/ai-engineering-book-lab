@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
+import { graphUrl, readChapterUrl } from '../../lib/chapterLinks';
 import { claimsForChapter } from '../../lib/evidenceGraph';
-import { ExperienceLink } from './ExperienceLink';
+import { ExperienceLink, GraphLink } from './ExperienceLink';
 
 type Props = {
   chapterNumber: string;
@@ -28,7 +29,7 @@ export const EvidenceSectionHeader = ({ chapterNumber, onOpenSources }: Props) =
           </button>
         )}
         <Link
-          to={`/read/graph?chapter=${chapterNumber}`}
+          to={graphUrl(chapterNumber)}
           className="border border-[var(--color-border)] px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
         >
           Full graph
@@ -38,3 +39,17 @@ export const EvidenceSectionHeader = ({ chapterNumber, onOpenSources }: Props) =
     </div>
   );
 };
+
+/** Compact red-thread strip for chapter footers and drawers. */
+export const RedThreadLinks = ({ chapterNumber }: { chapterNumber: string }) => (
+  <div className="flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-[0.15em]">
+    <Link
+      to={readChapterUrl(chapterNumber)}
+      className="border border-[var(--color-border)] px-3 py-1.5 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
+    >
+      Read chapter
+    </Link>
+    <GraphLink chapterNumber={chapterNumber} />
+    <ExperienceLink chapterNumber={chapterNumber} />
+  </div>
+);

@@ -10,7 +10,7 @@ import { JudgeScorecard } from '../judge/JudgeScorecard';
 import { scoreForChapter } from '../../lib/judgeScores';
 import { EvidenceSectionHeader } from '../evidence/EvidenceSectionHeader';
 import { SourcesDrawer } from '../evidence/SourcesDrawer';
-import { ExperienceLink } from '../evidence/ExperienceLink';
+import { RedThreadNav } from '../nav/RedThreadNav';
 import { formatReadingTime } from '../../lib/readingStats';
 
 const ChapterOpener = ({ chapter }: { chapter: string }) => {
@@ -141,8 +141,8 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
               <span>{formatReadingTime(chapter.wordCount)}</span>
             </div>
           </div>
-          <div className="px-8 md:px-12 lg:px-16 pt-4 pb-2 flex flex-wrap gap-2">
-            <ExperienceLink chapterNumber={chapter.number} />
+          <div className="px-8 md:px-12 lg:px-16 pt-4 pb-2">
+            <RedThreadNav active="read" chapterNumber={chapter.number} compact />
           </div>
           <div ref={textRef} className="p-8 md:p-12 lg:p-16 lg:px-20">
             <ChapterArticle chapter={chapter} />

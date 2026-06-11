@@ -1,6 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Seo } from '../components/Seo';
+import { RedThreadNav } from '../components/nav/RedThreadNav';
+import { chapterByNumber } from '../lib/chapterLinks';
 import { chapters } from '../data/bookChapters';
 import { getEvidenceGraph } from '../lib/evidenceGraph';
 import stats from '../data/stats.json';
@@ -16,12 +18,19 @@ const EvidenceGraphContent = () => {
 };
 
 export const EvidenceGraphPage = () => {
+  const [params] = useSearchParams();
+  const activeChapter = params.get('chapter') ?? undefined;
+  const chapterMeta = activeChapter ? chapterByNumber(activeChapter) : undefined;
   const graphStats = getEvidenceGraph().stats;
 
   return (
     <>
       <Seo
-        title="Evidence Graph — From Copilot to Colleague"
+        title={
+          chapterMeta
+            ? `Evidence Graph — Chapter ${chapterMeta.number} — From Copilot to Colleague`
+            : 'Evidence Graph — From Copilot to Colleague'
+        }
         description="Interactive map of book claims, practitioner sources, and video anchors across all chapters."
         path="/read/graph"
       />
@@ -31,22 +40,21 @@ export const EvidenceGraphPage = () => {
             ← Reader
           </Link>
           <span>Evidence enrichment graph</span>
-          <div className="flex gap-4">
-            <a href="/experience/" className="hover:text-[var(--color-ink)]">
-              3D Journey
-            </a>
-            <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">
-              Visual Guide
-            </Link>
-          </div>
+          <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">
+            Visual Guide
+          </Link>
         </header>
 
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16">
+          <RedThreadNav active="graph" chapterNumber={activeChapter} className="mb-8" />
+
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
             Source-anchored synthesis
           </p>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4 max-w-3xl">
-            How claims connect to practitioners and videos
+            {chapterMeta
+              ? `Chapter ${chapterMeta.number}: how claims connect to sources`
+              : 'How claims connect to practitioners and videos'}
           </h1>
           <p className="font-serif text-lg text-[var(--color-ink-muted)] max-w-2xl mb-8 leading-relaxed">
             Auto-generated from {stats.corpus.videos.toLocaleString()} mapped corpus videos and{' '}
@@ -54,22 +62,34 @@ export const EvidenceGraphPage = () => {
             co-citations between practitioners quoted on the same claim.
           </p>
 
-          <div className="mb-8 flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-widest">
+          <div className="mb-8 flex flex-wrap gap-2 font-mono text-[10px] uppercase tracking-widest overflow-x-auto pb-1 -mx-1 px-1">
             <Link
               to="/read/graph"
-              className="border border-[var(--color-border)] px-3 py-1.5 bg-[var(--color-ink)] text-[var(--color-paper)]"
+              className={`border border-[var(--color-border)] px-3 py-1.5 transition-colors ${
+                !activeChapter
+                  ? 'bg-[var(--color-ink)] text-[var(--color-paper)]'
+                  : 'hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)]'
+              }`}
             >
               Full book
             </Link>
-            {chapters.map((ch) => (
-              <Link
-                key={ch.number}
-                to={`/read/graph?chapter=${ch.number}`}
-                className="border border-[var(--color-border)] px-3 py-1.5 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
-              >
-                Ch {ch.number}
-              </Link>
-            ))}
+            {chapters.map((ch) => {
+              const isActive = activeChapter === ch.number;
+              return (
+                <Link
+                  key={ch.number}
+                  to={`/read/graph?chapter=${ch.number}`}
+                  className={`border border-[var(--color-border)] px-3 py-1.5 transition-colors ${
+                    isActive
+                      ? 'bg-[color-mix(in_srgb,var(--color-pink)_35%,var(--color-paper))] border-[var(--color-ink)] text-[var(--color-ink)] font-semibold'
+                      : 'hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)]'
+                  }`}
+                  aria-current={isActive ? 'true' : undefined}
+                >
+                  Ch {ch.number}
+                </Link>
+              );
+            })}
           </div>
 
           <Suspense

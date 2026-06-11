@@ -13,7 +13,7 @@ import { AssessmentCta } from '../components/chapter/AssessmentCta';
 import { EvidenceRail } from '../EvidenceRail';
 import { EvidenceSectionHeader } from '../components/evidence/EvidenceSectionHeader';
 import { SourcesDrawer } from '../components/evidence/SourcesDrawer';
-import { ExperienceLink } from '../components/evidence/ExperienceLink';
+import { RedThreadNav } from '../components/nav/RedThreadNav';
 import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
@@ -77,19 +77,19 @@ export const ChapterDetail = () => {
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/read" className="hover:text-[var(--color-ink)]">← All chapters</Link>
           <span>From Copilot to Colleague</span>
-          <div className="flex gap-4">
-            <Link to="/read/graph" className="hover:text-[var(--color-ink)]">Evidence</Link>
-            <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
-          </div>
+          <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
         </header>
 
-        <div className="max-w-3xl mx-auto px-6 pt-16">
+        <div className="max-w-3xl mx-auto px-6 pt-12">
+          <RedThreadNav active="read" chapterNumber={chapter.number} className="mb-10" />
+        </div>
+
+        <div className="max-w-3xl mx-auto px-6">
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
             Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
           </p>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
           <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-4">{chapter.promise}</p>
-          <ExperienceLink chapterNumber={chapter.number} />
         </div>
 
         <EvidenceExhibit chapter={chapter.number} title={chapter.title} />

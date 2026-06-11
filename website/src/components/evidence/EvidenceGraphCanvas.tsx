@@ -36,18 +36,38 @@ const typePriority: Record<GraphNode['type'], number> = {
   video: 1,
 };
 
-export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className = '' }: Props) => {
+export const EvidenceGraphCanvas = ({
+  graph,
+  focusChapter,
+  onSelect,
+  className = '',
+}: Props) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const simRef = useRef<SimNode[]>([]);
   const frameRef = useRef<number>(0);
   const dragRef = useRef<{ id: string | null }>({ id: null });
   const panRef = useRef({ x: 0, y: 0, scale: 1, dragging: false, lastX: 0, lastY: 0 });
+  const pausedRef = useRef(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 520 });
 
   const focusChapterId = focusChapter ? `chapter:${focusChapter.padStart(2, '0')}` : null;
+
+  const fitToFocus = useCallback(() => {
+    const { width, height } = dimensions;
+    if (!focusChapterId) {
+      panRef.current = { ...panRef.current, x: 0, y: 0, scale: 1 };
+      return;
+    }
+    const node = simRef.current.find((n) => n.id === focusChapterId);
+    if (!node) return;
+    const scale = 1.35;
+    panRef.current.x = width / 2 - node.x * scale;
+    panRef.current.y = height / 2 - node.y * scale;
+    panRef.current.scale = scale;
+  }, [dimensions, focusChapterId]);
 
   const pickNode = useCallback((clientX: number, clientY: number): SimNode | null => {
     const canvas = canvasRef.current;
@@ -67,6 +87,14 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
   }, []);
 
   useEffect(() => {
+    const onVis = () => {
+      pausedRef.current = document.hidden;
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
+  }, []);
+
+  useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
     const ro = new ResizeObserver(([entry]) => {
@@ -78,6 +106,11 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
   }, []);
 
   useEffect(() => {
+    panRef.current = { x: 0, y: 0, scale: 1, dragging: false, lastX: 0, lastY: 0 };
+    setSelectedId(null);
+  }, [graph]);
+
+  useEffect(() => {
     const { width, height } = dimensions;
     const angleStep = (Math.PI * 2) / Math.max(graph.nodes.length, 1);
     simRef.current = graph.nodes.map((node, i) => ({
@@ -87,7 +120,9 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
       vx: 0,
       vy: 0,
     }));
-  }, [graph, dimensions]);
+    const t = window.setTimeout(fitToFocus, 480);
+    return () => window.clearTimeout(t);
+  }, [graph, dimensions, fitToFocus]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -105,66 +140,71 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
     const nodeMap = () => new Map(simRef.current.map((n) => [n.id, n]));
 
     const tick = () => {
-      const nodes = simRef.current;
-      const map = nodeMap();
-      const cx = dimensions.width / 2;
-      const cy = dimensions.height / 2;
+      if (!pausedRef.current) {
+        const nodes = simRef.current;
+        const map = nodeMap();
+        const cx = dimensions.width / 2;
+        const cy = dimensions.height / 2;
 
-      for (let i = 0; i < nodes.length; i += 1) {
-        for (let j = i + 1; j < nodes.length; j += 1) {
-          const a = nodes[i];
-          const b = nodes[j];
-          let dx = b.x - a.x;
-          let dy = b.y - a.y;
-          const dist = Math.hypot(dx, dy) || 0.01;
-          const minDist = a.size + b.size + 18;
-          if (dist < minDist) {
-            const force = ((minDist - dist) / dist) * 0.35;
-            dx *= force;
-            dy *= force;
-            a.vx -= dx;
-            a.vy -= dy;
-            b.vx += dx;
-            b.vy += dy;
+        for (let i = 0; i < nodes.length; i += 1) {
+          for (let j = i + 1; j < nodes.length; j += 1) {
+            const a = nodes[i];
+            const b = nodes[j];
+            let dx = b.x - a.x;
+            let dy = b.y - a.y;
+            const dist = Math.hypot(dx, dy) || 0.01;
+            const minDist = a.size + b.size + 18;
+            if (dist < minDist) {
+              const force = ((minDist - dist) / dist) * 0.35;
+              dx *= force;
+              dy *= force;
+              a.vx -= dx;
+              a.vy -= dy;
+              b.vx += dx;
+              b.vy += dy;
+            }
           }
         }
+
+        for (const edge of graph.edges) {
+          const a = map.get(edge.source);
+          const b = map.get(edge.target);
+          if (!a || !b) continue;
+          const dx = b.x - a.x;
+          const dy = b.y - a.y;
+          const dist = Math.hypot(dx, dy) || 0.01;
+          const rest =
+            edge.type === 'cited_in' ? 90 : edge.type === 'same_theme' ? 120 : edge.type === 'supports' ? 70 : 55;
+          const strength = edge.type === 'same_theme' ? 0.015 : 0.04;
+          const force = (dist - rest) * strength;
+          const fx = (dx / dist) * force;
+          const fy = (dy / dist) * force;
+          a.vx += fx;
+          a.vy += fy;
+          b.vx -= fx;
+          b.vy -= fy;
+        }
+
+        for (const node of nodes) {
+          node.vx += (cx - node.x) * 0.0025;
+          node.vy += (cy - node.y) * 0.0025;
+          if (node.type === 'chapter') {
+            node.vx += (cx - node.x) * 0.004;
+            node.vy += (cy - node.y) * 0.004;
+          }
+          node.vx *= 0.86;
+          node.vy *= 0.86;
+          if (dragRef.current.id !== node.id) {
+            node.x += node.vx;
+            node.y += node.vy;
+          }
+          node.x = Math.max(node.size + 8, Math.min(dimensions.width - node.size - 8, node.x));
+          node.y = Math.max(node.size + 8, Math.min(dimensions.height - node.size - 8, node.y));
+        }
       }
 
-      for (const edge of graph.edges) {
-        const a = map.get(edge.source);
-        const b = map.get(edge.target);
-        if (!a || !b) continue;
-        const dx = b.x - a.x;
-        const dy = b.y - a.y;
-        const dist = Math.hypot(dx, dy) || 0.01;
-        const rest =
-          edge.type === 'cited_in' ? 90 : edge.type === 'same_theme' ? 120 : edge.type === 'supports' ? 70 : 55;
-        const strength = edge.type === 'same_theme' ? 0.015 : 0.04;
-        const force = (dist - rest) * strength;
-        const fx = (dx / dist) * force;
-        const fy = (dy / dist) * force;
-        a.vx += fx;
-        a.vy += fy;
-        b.vx -= fx;
-        b.vy -= fy;
-      }
-
-      for (const node of nodes) {
-        node.vx += (cx - node.x) * 0.0025;
-        node.vy += (cy - node.y) * 0.0025;
-        if (node.type === 'chapter') {
-          node.vx += (cx - node.x) * 0.004;
-          node.vy += (cy - node.y) * 0.004;
-        }
-        node.vx *= 0.86;
-        node.vy *= 0.86;
-        if (dragRef.current.id !== node.id) {
-          node.x += node.vx;
-          node.y += node.vy;
-        }
-        node.x = Math.max(node.size + 8, Math.min(dimensions.width - node.size - 8, node.x));
-        node.y = Math.max(node.size + 8, Math.min(dimensions.height - node.size - 8, node.y));
-      }
+      const nodes = simRef.current;
+      const map = nodeMap();
 
       ctx.clearRect(0, 0, dimensions.width, dimensions.height);
       ctx.save();
@@ -192,9 +232,10 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
       for (const node of nodes) {
         const isSelected = selectedId === node.id;
         const isHover = hoverId === node.id;
+        const isFocusHub = node.id === focusChapterId;
         const inFocus =
           !focusChapterId ||
-          node.id === focusChapterId ||
+          isFocusHub ||
           node.chapterNumber === focusChapter?.padStart(2, '0') ||
           graph.edges.some(
             (e) =>
@@ -207,6 +248,13 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
         ctx.globalAlpha = inFocus ? 1 : 0.25;
         ctx.fill();
         ctx.globalAlpha = 1;
+        if (isFocusHub) {
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, node.size + 5, 0, Math.PI * 2);
+          ctx.strokeStyle = '#EAC6C0';
+          ctx.lineWidth = 2;
+          ctx.stroke();
+        }
         ctx.strokeStyle = isSelected || isHover ? '#18181A' : 'rgba(255,255,255,0.35)';
         ctx.lineWidth = isSelected ? 2 : 1;
         ctx.stroke();
@@ -231,11 +279,14 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
     const node = pickNode(e.clientX, e.clientY);
     if (node) {
       dragRef.current = { id: node.id };
-      setSelectedId(node.id);
-      onSelect?.(node);
+      const next = selectedId === node.id ? null : node;
+      setSelectedId(next?.id ?? null);
+      onSelect?.(next ?? null);
       (e.target as HTMLElement).setPointerCapture(e.pointerId);
       return;
     }
+    setSelectedId(null);
+    onSelect?.(null);
     panRef.current.dragging = true;
     panRef.current.lastX = e.clientX;
     panRef.current.lastY = e.clientY;
@@ -276,11 +327,21 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
     panRef.current.scale = Math.max(0.5, Math.min(2.5, panRef.current.scale * delta));
   };
 
+  const zoomBy = (factor: number) => {
+    panRef.current.scale = Math.max(0.5, Math.min(2.5, panRef.current.scale * factor));
+  };
+
+  const hoverIsChapter = hoverId
+    ? simRef.current.find((n) => n.id === hoverId)?.type === 'chapter'
+    : false;
+
   return (
     <div ref={containerRef} className={`relative w-full h-full min-h-[320px] ${className}`}>
       <canvas
         ref={canvasRef}
-        className="w-full h-full touch-none cursor-grab active:cursor-grabbing bg-[#F8F6F0] border border-[var(--color-border)]"
+        className={`w-full h-full touch-none bg-[#F8F6F0] border border-[var(--color-border)] ${
+          hoverIsChapter ? 'cursor-pointer' : 'cursor-grab active:cursor-grabbing'
+        }`}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
@@ -289,6 +350,33 @@ export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className =
         aria-label="Evidence enrichment graph"
         role="img"
       />
+      <div className="absolute top-2 right-2 flex flex-col gap-1 font-mono text-[10px] uppercase tracking-widest">
+        <button
+          type="button"
+          onClick={() => zoomBy(1.15)}
+          className="w-8 h-8 border border-[var(--color-border)] bg-[var(--color-paper)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
+          aria-label="Zoom in"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          onClick={() => zoomBy(0.87)}
+          className="w-8 h-8 border border-[var(--color-border)] bg-[var(--color-paper)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
+          aria-label="Zoom out"
+        >
+          −
+        </button>
+        <button
+          type="button"
+          onClick={fitToFocus}
+          className="w-8 h-8 border border-[var(--color-border)] bg-[var(--color-paper)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors text-[9px]"
+          aria-label="Fit view"
+          title="Fit view"
+        >
+          ↺
+        </button>
+      </div>
     </div>
   );
 };
