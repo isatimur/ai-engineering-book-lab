@@ -52,6 +52,7 @@ export const Catalogue = () => {
         <nav className="pointer-events-auto text-xs font-mono uppercase tracking-widest text-white/60 flex gap-6">
           <Link to="/visual-guide" className="hover:text-white">Visual Guide</Link>
           <Link to="/read" className="hover:text-white">Read</Link>
+          <a href="/experience/" className="hover:text-white">3D Journey</a>
           <Link to="/assess" className="hover:text-white">Assess</Link>
           <Link to="/versions" className="hover:text-white">Versions</Link>
           <Link to="/quality" className="hover:text-white">Quality</Link>
@@ -127,6 +128,15 @@ export const Catalogue = () => {
         </motion.div>
 
         <p className="text-center font-serif italic text-white/60 text-sm mt-4">Hover to lift the cover · click to open</p>
+
+        <a
+          href="/experience/"
+          className="group mx-auto mt-2 flex items-center gap-3 font-mono text-[11px] uppercase tracking-widest text-white/50 hover:text-white transition-colors"
+        >
+          <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
+          Or drift through the book as a solar system — the 3D Journey
+          <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
+        </a>
       </main>
 
       <footer className="relative z-10 pt-24 pb-48 px-6 md:px-12 max-w-3xl mx-auto border-t border-white/10 mt-12 text-white/70">
