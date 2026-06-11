@@ -145,8 +145,19 @@
       ]
     },
     "03": {
-      "current_version_id": "git:f536564",
+      "current_version_id": "git:d3e0d43",
       "versions": [
+        {
+          "version_id": "git:d3e0d43",
+          "source": "git",
+          "ref": "d3e0d439043735a3f19a72efa25e409e6b04f728",
+          "date": "2026-06-10",
+          "status": "Drafting",
+          "wordCount": 3214,
+          "message": "edit(manuscript+docs): de-fabricate ch03 Codex cite, trim ch06 meta, refresh README",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-d3e0d43.md"
+        },
         {
           "version_id": "git:f536564",
           "source": "git",
@@ -190,17 +201,6 @@
           "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
           "corpus_snapshot_hash": null,
           "content_ref": "03/git-869bdb6.md"
-        },
-        {
-          "version_id": "git:ed15457",
-          "source": "git",
-          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 3226,
-          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-ed15457.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -347,8 +347,19 @@
       ]
     },
     "06": {
-      "current_version_id": "git:f536564",
+      "current_version_id": "git:d3e0d43",
       "versions": [
+        {
+          "version_id": "git:d3e0d43",
+          "source": "git",
+          "ref": "d3e0d439043735a3f19a72efa25e409e6b04f728",
+          "date": "2026-06-10",
+          "status": "Drafting",
+          "wordCount": 2194,
+          "message": "edit(manuscript+docs): de-fabricate ch03 Codex cite, trim ch06 meta, refresh README",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-d3e0d43.md"
+        },
         {
           "version_id": "git:f536564",
           "source": "git",
@@ -549,8 +560,41 @@
       ]
     },
     "09": {
-      "current_version_id": "git:f536564",
+      "current_version_id": "git:4f5dd39",
       "versions": [
+        {
+          "version_id": "git:4f5dd39",
+          "source": "git",
+          "ref": "4f5dd399b48c6a17725abb8e4bfc56a3aa048e5d",
+          "date": "2026-06-11",
+          "status": "Drafting",
+          "wordCount": 5048,
+          "message": "fix(ch09): correct over-claimed source attributions (Hron, Bloomberg)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-4f5dd39.md"
+        },
+        {
+          "version_id": "git:341060e",
+          "source": "git",
+          "ref": "341060e70ca20bf24a9312f2bef676df23e470f7",
+          "date": "2026-06-11",
+          "status": "Drafting",
+          "wordCount": 4972,
+          "message": "edit(ch09): cut cross-chapter re-derivation to lift redundancy (deepen, not repeat)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-341060e.md"
+        },
+        {
+          "version_id": "git:c13829c",
+          "source": "git",
+          "ref": "c13829c42df2e285ef3dad9411fb1abc832b7163",
+          "date": "2026-06-10",
+          "status": "Drafting",
+          "wordCount": 5057,
+          "message": "feat(website): AI-native readiness assessment + enterprise surfaces",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-c13829c.md"
+        },
         {
           "version_id": "git:f536564",
           "source": "git",
@@ -572,39 +616,6 @@
           "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
           "corpus_snapshot_hash": null,
           "content_ref": "09/git-869bdb6.md"
-        },
-        {
-          "version_id": "git:96210fb",
-          "source": "git",
-          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 3231,
-          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-96210fb.md"
-        },
-        {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 2607,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-ef6219d.md"
-        },
-        {
-          "version_id": "git:0a16fae",
-          "source": "git",
-          "ref": "0a16fae630951484d1863d32eca5887f341e2f8a",
-          "date": "2026-05-31",
-          "status": "Drafting",
-          "wordCount": 2608,
-          "message": "draft(ch9): The AI-Native Organization — Starter → Drafting",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-0a16fae.md"
         },
         {
           "version_id": "git:7f5a2c6",
