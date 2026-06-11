@@ -10,6 +10,7 @@ import { Assess } from './pages/Assess';
 import { Enterprise } from './pages/Enterprise';
 import { Workshop } from './pages/Workshop';
 import { ChapterDetail } from './pages/ChapterDetail';
+import { EvidenceGraphPage } from './pages/EvidenceGraphPage';
 import { ConceptDetail } from './pages/ConceptDetail';
 import { MapDetail } from './pages/MapDetail';
 import { chapters, chapterParam } from './data/bookChapters';
@@ -36,6 +37,7 @@ export const routes: RouteRecord[] = [
         getStaticPaths: () => manifest.maps.map((m) => `visual-guide/maps/${m.id}`),
       },
       { path: 'read', element: <Reader /> },
+      { path: 'read/graph', element: <EvidenceGraphPage /> },
       {
         path: 'read/:slug',
         element: <ChapterDetail />,

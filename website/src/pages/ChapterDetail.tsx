@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import { useState } from 'react';
 import {
   chapters,
   chapterByParam,
@@ -10,6 +11,10 @@ import { LightboxProvider, useLightbox } from '../lib/lightbox';
 import { ChapterArticle } from '../components/chapter/ChapterArticle';
 import { AssessmentCta } from '../components/chapter/AssessmentCta';
 import { EvidenceRail } from '../EvidenceRail';
+import { EvidenceSectionHeader } from '../components/evidence/EvidenceSectionHeader';
+import { SourcesDrawer } from '../components/evidence/SourcesDrawer';
+import { ExperienceLink } from '../components/evidence/ExperienceLink';
+import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
 import { chapterJsonLd, breadcrumbJsonLd } from '../lib/structuredData';
@@ -50,6 +55,7 @@ const NotFound = () => (
 export const ChapterDetail = () => {
   const { slug } = useParams();
   const chapter = slug ? chapterByParam(slug) : undefined;
+  const [sourcesOpen, setSourcesOpen] = useState(false);
   if (!chapter) return <NotFound />;
 
   const idx = chapters.indexOf(chapter);
@@ -71,15 +77,19 @@ export const ChapterDetail = () => {
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/read" className="hover:text-[var(--color-ink)]">← All chapters</Link>
           <span>From Copilot to Colleague</span>
-          <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
+          <div className="flex gap-4">
+            <Link to="/read/graph" className="hover:text-[var(--color-ink)]">Evidence</Link>
+            <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
+          </div>
         </header>
 
         <div className="max-w-3xl mx-auto px-6 pt-16">
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
-            Chapter {chapter.number}
+            Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
           </p>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
-          <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-2">{chapter.promise}</p>
+          <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-4">{chapter.promise}</p>
+          <ExperienceLink chapterNumber={chapter.number} />
         </div>
 
         <EvidenceExhibit chapter={chapter.number} title={chapter.title} />
@@ -91,8 +101,18 @@ export const ChapterDetail = () => {
         {chapter.slug === 'ai-native-org' && <AssessmentCta />}
 
         <section className="max-w-3xl mx-auto px-6 pt-16">
+          <EvidenceSectionHeader
+            chapterNumber={chapter.number}
+            onOpenSources={() => setSourcesOpen(true)}
+          />
           <EvidenceRail chapterNumber={chapter.number} />
         </section>
+
+        <SourcesDrawer
+          chapterNumber={chapter.number}
+          isOpen={sourcesOpen}
+          onClose={() => setSourcesOpen(false)}
+        />
 
         <nav className="max-w-3xl mx-auto px-6 pt-20 mt-16 border-t border-[var(--color-border)] flex justify-between gap-4 font-serif">
           {prev ? (

@@ -40,6 +40,10 @@ export const TopNav = ({ progress, onToggleSettings, onBackToCatalogue, onOpenSh
           <a href="/quality" className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">QUALITY</a>
           <span className="border-l border-[var(--color-border)] h-4 transition-colors duration-300" />
           <a href="/search" className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">SEARCH</a>
+          <span className="border-l border-[var(--color-border)] h-4 transition-colors duration-300" />
+          <a href="/read/graph" className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">EVIDENCE</a>
+          <span className="border-l border-[var(--color-border)] h-4 transition-colors duration-300" />
+          <a href="/experience/" className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]">3D</a>
         </div>
         <div className="border border-[var(--color-border)] rounded-full px-3 py-1 font-mono tabular-nums flex items-center justify-center min-w-[5.5rem] bg-[var(--color-paper)] transition-colors duration-300 relative overflow-hidden group">
           <motion.div

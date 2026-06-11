@@ -1,0 +1,294 @@
+import { useCallback, useEffect, useRef, useState } from 'react';
+import type { EvidenceGraphData, GraphNode } from '../../lib/evidenceTypes';
+
+type SimNode = GraphNode & {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+};
+
+type Props = {
+  graph: EvidenceGraphData;
+  focusChapter?: string;
+  onSelect?: (node: GraphNode | null) => void;
+  className?: string;
+};
+
+const NODE_COLORS: Record<GraphNode['type'], string> = {
+  chapter: '#18181A',
+  claim: '#EAC6C0',
+  speaker: '#A4B8C4',
+  video: '#6b6664',
+};
+
+const EDGE_COLORS: Record<string, string> = {
+  cited_in: 'rgba(24,24,26,0.18)',
+  supports: 'rgba(234,198,192,0.55)',
+  appears_in: 'rgba(164,184,196,0.45)',
+  same_theme: 'rgba(24,24,26,0.08)',
+};
+
+const typePriority: Record<GraphNode['type'], number> = {
+  chapter: 4,
+  claim: 3,
+  speaker: 2,
+  video: 1,
+};
+
+export const EvidenceGraphCanvas = ({ graph, focusChapter, onSelect, className = '' }: Props) => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const simRef = useRef<SimNode[]>([]);
+  const frameRef = useRef<number>(0);
+  const dragRef = useRef<{ id: string | null }>({ id: null });
+  const panRef = useRef({ x: 0, y: 0, scale: 1, dragging: false, lastX: 0, lastY: 0 });
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [hoverId, setHoverId] = useState<string | null>(null);
+  const [dimensions, setDimensions] = useState({ width: 800, height: 520 });
+
+  const focusChapterId = focusChapter ? `chapter:${focusChapter.padStart(2, '0')}` : null;
+
+  const pickNode = useCallback((clientX: number, clientY: number): SimNode | null => {
+    const canvas = canvasRef.current;
+    if (!canvas) return null;
+    const rect = canvas.getBoundingClientRect();
+    const pan = panRef.current;
+    const x = (clientX - rect.left - pan.x) / pan.scale;
+    const y = (clientY - rect.top - pan.y) / pan.scale;
+    const nodes = [...simRef.current].sort((a, b) => typePriority[a.type] - typePriority[b.type]);
+    for (let i = nodes.length - 1; i >= 0; i -= 1) {
+      const n = nodes[i];
+      const dx = x - n.x;
+      const dy = y - n.y;
+      if (Math.hypot(dx, dy) <= n.size + 4) return n;
+    }
+    return null;
+  }, []);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([entry]) => {
+      const { width, height } = entry.contentRect;
+      setDimensions({ width: Math.max(320, width), height: Math.max(320, height) });
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const { width, height } = dimensions;
+    const angleStep = (Math.PI * 2) / Math.max(graph.nodes.length, 1);
+    simRef.current = graph.nodes.map((node, i) => ({
+      ...node,
+      x: width / 2 + Math.cos(i * angleStep) * (Math.min(width, height) * 0.28),
+      y: height / 2 + Math.sin(i * angleStep) * (Math.min(width, height) * 0.22),
+      vx: 0,
+      vy: 0,
+    }));
+  }, [graph, dimensions]);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = dimensions.width * dpr;
+    canvas.height = dimensions.height * dpr;
+    canvas.style.width = `${dimensions.width}px`;
+    canvas.style.height = `${dimensions.height}px`;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const nodeMap = () => new Map(simRef.current.map((n) => [n.id, n]));
+
+    const tick = () => {
+      const nodes = simRef.current;
+      const map = nodeMap();
+      const cx = dimensions.width / 2;
+      const cy = dimensions.height / 2;
+
+      for (let i = 0; i < nodes.length; i += 1) {
+        for (let j = i + 1; j < nodes.length; j += 1) {
+          const a = nodes[i];
+          const b = nodes[j];
+          let dx = b.x - a.x;
+          let dy = b.y - a.y;
+          const dist = Math.hypot(dx, dy) || 0.01;
+          const minDist = a.size + b.size + 18;
+          if (dist < minDist) {
+            const force = ((minDist - dist) / dist) * 0.35;
+            dx *= force;
+            dy *= force;
+            a.vx -= dx;
+            a.vy -= dy;
+            b.vx += dx;
+            b.vy += dy;
+          }
+        }
+      }
+
+      for (const edge of graph.edges) {
+        const a = map.get(edge.source);
+        const b = map.get(edge.target);
+        if (!a || !b) continue;
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const dist = Math.hypot(dx, dy) || 0.01;
+        const rest =
+          edge.type === 'cited_in' ? 90 : edge.type === 'same_theme' ? 120 : edge.type === 'supports' ? 70 : 55;
+        const strength = edge.type === 'same_theme' ? 0.015 : 0.04;
+        const force = (dist - rest) * strength;
+        const fx = (dx / dist) * force;
+        const fy = (dy / dist) * force;
+        a.vx += fx;
+        a.vy += fy;
+        b.vx -= fx;
+        b.vy -= fy;
+      }
+
+      for (const node of nodes) {
+        node.vx += (cx - node.x) * 0.0025;
+        node.vy += (cy - node.y) * 0.0025;
+        if (node.type === 'chapter') {
+          node.vx += (cx - node.x) * 0.004;
+          node.vy += (cy - node.y) * 0.004;
+        }
+        node.vx *= 0.86;
+        node.vy *= 0.86;
+        if (dragRef.current.id !== node.id) {
+          node.x += node.vx;
+          node.y += node.vy;
+        }
+        node.x = Math.max(node.size + 8, Math.min(dimensions.width - node.size - 8, node.x));
+        node.y = Math.max(node.size + 8, Math.min(dimensions.height - node.size - 8, node.y));
+      }
+
+      ctx.clearRect(0, 0, dimensions.width, dimensions.height);
+      ctx.save();
+      ctx.translate(panRef.current.x, panRef.current.y);
+      ctx.scale(panRef.current.scale, panRef.current.scale);
+
+      for (const edge of graph.edges) {
+        const a = map.get(edge.source);
+        const b = map.get(edge.target);
+        if (!a || !b) continue;
+        const dimmed =
+          !!focusChapterId &&
+          a.id !== focusChapterId &&
+          b.id !== focusChapterId &&
+          a.chapterNumber !== focusChapter?.padStart(2, '0') &&
+          b.chapterNumber !== focusChapter?.padStart(2, '0');
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.strokeStyle = dimmed ? 'rgba(0,0,0,0.04)' : EDGE_COLORS[edge.type] ?? EDGE_COLORS.supports;
+        ctx.lineWidth = edge.type === 'same_theme' ? 0.6 : 1;
+        ctx.stroke();
+      }
+
+      for (const node of nodes) {
+        const isSelected = selectedId === node.id;
+        const isHover = hoverId === node.id;
+        const inFocus =
+          !focusChapterId ||
+          node.id === focusChapterId ||
+          node.chapterNumber === focusChapter?.padStart(2, '0') ||
+          graph.edges.some(
+            (e) =>
+              (e.source === focusChapterId && e.target === node.id) ||
+              (e.target === focusChapterId && e.source === node.id),
+          );
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.size + (isSelected ? 2 : 0), 0, Math.PI * 2);
+        ctx.fillStyle = NODE_COLORS[node.type];
+        ctx.globalAlpha = inFocus ? 1 : 0.25;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = isSelected || isHover ? '#18181A' : 'rgba(255,255,255,0.35)';
+        ctx.lineWidth = isSelected ? 2 : 1;
+        ctx.stroke();
+
+        if (node.type === 'chapter' || isSelected || isHover) {
+          ctx.font = '10px "Space Mono", monospace';
+          ctx.fillStyle = '#18181A';
+          ctx.textAlign = 'center';
+          ctx.fillText(node.shortLabel, node.x, node.y + node.size + 12);
+        }
+      }
+
+      ctx.restore();
+      frameRef.current = requestAnimationFrame(tick);
+    };
+
+    frameRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameRef.current);
+  }, [graph, dimensions, selectedId, hoverId, focusChapter, focusChapterId]);
+
+  const handlePointerDown = (e: React.PointerEvent) => {
+    const node = pickNode(e.clientX, e.clientY);
+    if (node) {
+      dragRef.current = { id: node.id };
+      setSelectedId(node.id);
+      onSelect?.(node);
+      (e.target as HTMLElement).setPointerCapture(e.pointerId);
+      return;
+    }
+    panRef.current.dragging = true;
+    panRef.current.lastX = e.clientX;
+    panRef.current.lastY = e.clientY;
+  };
+
+  const handlePointerMove = (e: React.PointerEvent) => {
+    if (dragRef.current.id) {
+      const sim = simRef.current.find((n) => n.id === dragRef.current.id);
+      const canvas = canvasRef.current;
+      if (sim && canvas) {
+        const rect = canvas.getBoundingClientRect();
+        const pan = panRef.current;
+        sim.x = (e.clientX - rect.left - pan.x) / pan.scale;
+        sim.y = (e.clientY - rect.top - pan.y) / pan.scale;
+        sim.vx = 0;
+        sim.vy = 0;
+      }
+      return;
+    }
+    if (panRef.current.dragging) {
+      panRef.current.x += e.clientX - panRef.current.lastX;
+      panRef.current.y += e.clientY - panRef.current.lastY;
+      panRef.current.lastX = e.clientX;
+      panRef.current.lastY = e.clientY;
+      return;
+    }
+    setHoverId(pickNode(e.clientX, e.clientY)?.id ?? null);
+  };
+
+  const handlePointerUp = () => {
+    dragRef.current.id = null;
+    panRef.current.dragging = false;
+  };
+
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? 0.92 : 1.08;
+    panRef.current.scale = Math.max(0.5, Math.min(2.5, panRef.current.scale * delta));
+  };
+
+  return (
+    <div ref={containerRef} className={`relative w-full h-full min-h-[320px] ${className}`}>
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full touch-none cursor-grab active:cursor-grabbing bg-[#F8F6F0] border border-[var(--color-border)]"
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerLeave={handlePointerUp}
+        onWheel={handleWheel}
+        aria-label="Evidence enrichment graph"
+        role="img"
+      />
+    </div>
+  );
+};

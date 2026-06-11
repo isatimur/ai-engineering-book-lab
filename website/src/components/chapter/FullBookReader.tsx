@@ -8,6 +8,10 @@ import { ChapterStage } from './ChapterStage';
 import { EvidenceRail } from '../../EvidenceRail';
 import { JudgeScorecard } from '../judge/JudgeScorecard';
 import { scoreForChapter } from '../../lib/judgeScores';
+import { EvidenceSectionHeader } from '../evidence/EvidenceSectionHeader';
+import { SourcesDrawer } from '../evidence/SourcesDrawer';
+import { ExperienceLink } from '../evidence/ExperienceLink';
+import { formatReadingTime } from '../../lib/readingStats';
 
 const ChapterOpener = ({ chapter }: { chapter: string }) => {
   const op = opener(chapter);
@@ -51,6 +55,7 @@ const ChapterOpener = ({ chapter }: { chapter: string }) => {
  */
 const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: number }) => {
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [sourcesOpen, setSourcesOpen] = useState(false);
   const textRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -131,9 +136,13 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
                 <span className="underline underline-offset-4 decoration-black/50">{chapter.status}</span>
               </span>
             </div>
-            <div className="text-left md:text-right text-[var(--color-ink-muted)]">
-              {chapter.wordCount.toLocaleString()} words
+            <div className="text-left md:text-right text-[var(--color-ink-muted)] flex flex-col gap-1">
+              <span>{chapter.wordCount.toLocaleString()} words</span>
+              <span>{formatReadingTime(chapter.wordCount)}</span>
             </div>
+          </div>
+          <div className="px-8 md:px-12 lg:px-16 pt-4 pb-2 flex flex-wrap gap-2">
+            <ExperienceLink chapterNumber={chapter.number} />
           </div>
           <div ref={textRef} className="p-8 md:p-12 lg:p-16 lg:px-20">
             <ChapterArticle chapter={chapter} />
@@ -146,9 +155,19 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
           <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-2 text-center">
             EVIDENCE OF SOURCE  ·  CHAPTER {chapter.number}  ·  VIDEOS
           </div>
+          <EvidenceSectionHeader
+            chapterNumber={chapter.number}
+            onOpenSources={() => setSourcesOpen(true)}
+          />
           <EvidenceRail chapterNumber={chapter.number} />
         </div>
       </div>
+
+      <SourcesDrawer
+        chapterNumber={chapter.number}
+        isOpen={sourcesOpen}
+        onClose={() => setSourcesOpen(false)}
+      />
 
       {scoreForChapter(chapter.number) && (
         <div className="w-full py-16 lg:py-20 px-6 border-t border-[var(--color-border)]">

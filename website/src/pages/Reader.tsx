@@ -15,6 +15,14 @@ import { GlossaryContext } from '../lib/glossaryContext';
 import { scrollAudio } from '../lib/audio';
 import { ActionMenu } from '../components/ActionMenu';
 import { Seo } from '../components/Seo';
+import { chapters } from '../data/bookChapters';
+import { saveScrollProgress, loadScrollProgress, saveSettings, loadSettings, scrollToProgress } from '../lib/readingProgress';
+
+let _saveTimer: ReturnType<typeof setTimeout> | null = null;
+const debouncedSaveProgress = (p: number) => {
+  if (_saveTimer) clearTimeout(_saveTimer);
+  _saveTimer = setTimeout(() => saveScrollProgress(p), 600);
+};
 
 export const Reader = () => {
   const { scrollYProgress, scrollY } = useScroll();
@@ -25,20 +33,52 @@ export const Reader = () => {
   const [glossaryTermId, setGlossaryTermId] = useState<string | null>(null);
   const [isShareOpen, setIsShareOpen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
+  const [resumeProgress, setResumeProgress] = useState<number | null>(null);
 
   const toggleFocusMode = useCallback(() => setIsFocusMode((v) => !v), []);
   const articleRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement).closest('input, textarea, [contenteditable]')) return;
+
       if (e.key === 'f' || e.key === 'F') {
-        if ((e.target as HTMLElement).closest('input, textarea, [contenteditable]')) return;
         setIsFocusMode((v) => !v);
+        return;
+      }
+
+      if (e.key === 'g' || e.key === 'G') {
+        if (e.metaKey || e.ctrlKey) return;
+        navigate('/read/graph');
+        return;
+      }
+
+      if (e.key === '[' || e.key === 'ArrowUp') {
+        const current = chapters.findIndex((ch) => {
+          const el = document.getElementById(`book-chapter-${ch.number}`);
+          if (!el) return false;
+          const rect = el.getBoundingClientRect();
+          return rect.top <= window.innerHeight * 0.45 && rect.bottom > 0;
+        });
+        const target = current > 0 ? current - 1 : chapters.length - 1;
+        document.getElementById(`book-chapter-${chapters[target].number}`)?.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+
+      if (e.key === ']' || e.key === 'ArrowDown') {
+        const current = chapters.findIndex((ch) => {
+          const el = document.getElementById(`book-chapter-${ch.number}`);
+          if (!el) return false;
+          const rect = el.getBoundingClientRect();
+          return rect.top <= window.innerHeight * 0.45 && rect.bottom > 0;
+        });
+        const target = current < chapters.length - 1 ? current + 1 : 0;
+        document.getElementById(`book-chapter-${chapters[target].number}`)?.scrollIntoView({ behavior: 'smooth' });
       }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, []);
+  }, [navigate]);
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (latest > 300) {
@@ -48,16 +88,16 @@ export const Reader = () => {
     }
   });
 
-  const [settings, setSettings] = useState<Settings>({
-    theme: 'sepia',
-    typography: 'serif',
-    fontSize: 'md',
-    lineSpacing: 'relaxed',
-    sound: 'off',
-  });
+  const [settings, setSettings] = useState<Settings>(() =>
+    loadSettings<Settings>({ theme: 'sepia', typography: 'serif', fontSize: 'md', lineSpacing: 'relaxed', sound: 'off' })
+  );
 
   const updateSettings = (newSettings: Partial<Settings>) => {
-    setSettings((prev) => ({ ...prev, ...newSettings }));
+    setSettings((prev) => {
+      const next = { ...prev, ...newSettings };
+      saveSettings(next);
+      return next;
+    });
   };
 
   const themeVars = useMemo(() => {
@@ -149,6 +189,15 @@ export const Reader = () => {
     }
   }, [isSidebarOpen]);
 
+  // Load saved progress on mount; only offer to resume if meaningfully into the book (>3%).
+  useEffect(() => {
+    const saved = loadScrollProgress();
+    if (saved !== null && saved > 0.03) setResumeProgress(saved);
+  }, []);
+
+  // Persist scroll progress while reading (debounced).
+  useMotionValueEvent(scrollYProgress, 'change', debouncedSaveProgress);
+
   return (
     <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>
       <Seo
@@ -213,6 +262,34 @@ export const Reader = () => {
         />
         <GlossaryDrawer termId={glossaryTermId} onClose={() => setGlossaryTermId(null)} />
         <ShareModal isOpen={isShareOpen} onClose={() => setIsShareOpen(false)} />
+
+        <AnimatePresence>
+          {resumeProgress !== null && (
+            <motion.div
+              key="resume-nudge"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.25 }}
+              className="fixed bottom-24 left-1/2 -translate-x-1/2 z-40 flex items-center gap-3 bg-[var(--color-paper)] border border-[var(--color-border)] shadow-lg px-4 py-2.5 font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]"
+            >
+              <span>Resume at {Math.round(resumeProgress * 100)}%?</span>
+              <button
+                onClick={() => { scrollToProgress(resumeProgress); setResumeProgress(null); }}
+                className="text-[var(--color-ink)] border-b border-[var(--color-ink)] hover:opacity-60 transition-opacity"
+              >
+                Go
+              </button>
+              <button
+                onClick={() => setResumeProgress(null)}
+                aria-label="Dismiss"
+                className="hover:opacity-60 transition-opacity ml-1"
+              >
+                ×
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         <motion.button
           initial={{ opacity: 0, y: 50 }}

@@ -3,8 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { chapters } from '../../data/bookChapters';
+import { chapters, chapterPath } from '../../data/bookChapters';
+import { bookReadingTime } from '../../lib/readingStats';
 
 type Props = {
   isOpen: boolean;
@@ -58,15 +60,28 @@ export const Sidebar = ({ isOpen, onClose }: Props) => {
         </div>
 
         <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-8">
+           <div className="flex flex-col gap-3 border-b border-black/10 pb-6">
+             <p className="normal-case font-serif text-sm text-[var(--color-ink-muted)]">{bookReadingTime}</p>
+             <div className="flex flex-wrap gap-2">
+               <Link to="/read/graph" onClick={onClose} className="border border-[var(--color-border)] px-2 py-1 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors">
+                 Evidence graph
+               </Link>
+               <a href="/experience/" onClick={onClose} className="border border-[var(--color-border)] px-2 py-1 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors">
+                 3D journey
+               </a>
+             </div>
+           </div>
+
            <div className="flex flex-col gap-4 border-b border-black/10 pb-8">
              <h3 className="text-xs font-bold font-serif normal-case tracking-normal mb-2 text-xl">Chapters</h3>
 
              {chapters.map((chapter, index) => (
-               <div
-                 key={chapter.number}
-                 className={`group cursor-pointer hover:opacity-100 transition-opacity ${index === 0 ? '' : 'opacity-50 mt-4'}`}
-                 onClick={() => scrollToSection(`book-chapter-${chapter.number}`)}
-               >
+               <div key={chapter.number} className={`group ${index === 0 ? '' : 'opacity-50 mt-4'}`}>
+                 <button
+                   type="button"
+                   className="w-full text-left cursor-pointer hover:opacity-100 transition-opacity"
+                   onClick={() => scrollToSection(`book-chapter-${chapter.number}`)}
+                 >
                   <div className="flex justify-between items-baseline mb-1">
                     <span className={`font-bold ${index === 0 ? 'underline group-hover:text-[var(--color-ink-muted)]' : ''}`}>
                       CHAPTER {chapter.number}
@@ -74,6 +89,14 @@ export const Sidebar = ({ isOpen, onClose }: Props) => {
                     <span className="opacity-50">{chapter.wordCount.toLocaleString()}w</span>
                   </div>
                   <div className="normal-case font-serif tracking-normal text-sm group-hover:text-[var(--color-ink-muted)]">{chapter.title}</div>
+                 </button>
+                 <Link
+                   to={chapterPath(chapter)}
+                   onClick={onClose}
+                   className="mt-1 inline-block normal-case font-mono text-[9px] tracking-widest opacity-40 hover:opacity-100"
+                 >
+                   standalone →
+                 </Link>
                </div>
              ))}
            </div>
