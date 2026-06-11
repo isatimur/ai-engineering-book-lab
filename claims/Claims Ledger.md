@@ -874,39 +874,15 @@
 - **Candidate chapters:** 6, 7
 - **Reusable phrasing:** A helpful model can get away with being vague about power. An acting system cannot.
 
-## 47) Half-duplex is the silent architectural ceiling on natural voice conversation
-- **Why it matters:** Most production speech-to-speech systems cannot listen and speak simultaneously. The model is either listening or speaking. This single constraint prevents the kind of back-and-forth that human conversation takes for granted — finishing each other's sentences, overlapping, self-correcting mid-turn. Every conversational UX pattern that breaks the listen-then-speak turn structure runs into this ceiling before it runs into any other constraint.
-- **Support level:** strong
-- **Supporting sources:**
-  - [[Neil Zeghidour, Kyutai]] — states the constraint directly: "The model is either listening or it's speaking."
-    - **Anchor:** pending · confidence: high
-    - **Quote:** "The model is either listening or it's speaking."
-- **Caveats / counterpoints:** Full-duplex models exist in research and are beginning to appear in products; the ceiling is architectural for today's deployed systems, not a fundamental physical limit. The claim is about current production reality, not a permanent constraint.
-- **Candidate chapters:** 8
-- **Reusable phrasing:** Half-duplex is the silent architectural ceiling on natural voice conversation.
-
-## 48) TTS architecture is converging on the same auto-regressive decoder backbone as LLM text generation
-- **Why it matters:** The same tokenize-and-stream-and-generate pattern that drove text agents now drives speech generation. The same first-packet-latency obsession that shaped LLM serving now shapes TTS serving. The substrates are different; the engineering discipline is the same. This convergence means that patterns learned in text agent engineering — context compression, caching, streaming — transfer directly into voice agent engineering.
-- **Support level:** strong
-- **Supporting sources:**
-  - [[Samuel Humeau, Mistral]] — describes the architectural convergence plainly: "Pretty much everybody is using an auto-regressive decoder backbone."
-    - **Anchor:** pending · confidence: high
-    - **Quote:** "Pretty much everybody is using an auto-regressive decoder backbone."
-- **Caveats / counterpoints:** The convergence is architectural, not experiential; voice has latency, prosody, and naturalness requirements that have no text equivalent. Convergence in backbone does not mean convergence in product engineering.
-- **Candidate chapters:** 8
-- **Reusable phrasing:** The same discipline. Different substrate.
-
-## 49) Broader creation without tighter governance produces liability, not leverage
-- **Why it matters:** When the cost of a first implementation collapses, more people can start work. But the path from "started" to "shipped" must run through the same evals, tests, review gates, and permission boundaries that any change runs through — or the velocity gain becomes a risk accumulation. Governance is not the brake on democratized creation; it is what makes democratized creation safe to allow. The two must rise together.
-- **Support level:** strong
-- **Supporting sources:**
-  - [[Lisa Orr, Zapier]] — "Your support team should ship code" — the provocation that cheap execution dissolves the historical guild boundary around who can implement.
-    - **Anchor:** pending · confidence: high
-    - **Quote:** "Your support team should ship code."
-  - See also Claim 36 (broader creation requires tighter review and governance — they rise together or the first becomes a liability).
-- **Caveats / counterpoints:** Some governance structures should be redesigned rather than preserved. Stronger governance is not an argument for unchanged governance; it is an argument for governance that can handle higher-frequency, broader-authorship change without proportional human review cost.
-- **Candidate chapters:** 9
-- **Reusable phrasing:** Democratized creation and stronger governance are not opposites. They are the two things that have to rise together, or the first one becomes a liability.
+> **Retracted — entries 47–49 (de-duplicated 2026-06-11).** Three scratch entries
+> added during defensibility work restated claims that already existed, and their
+> evidence was already captured verbatim — and verified — in the originals, so they
+> were removed rather than completed (each had left its anchor `pending`):
+> - 47 (half-duplex ceiling) → fully subsumed by **#22**: same Zeghidour source, same anchor (`P_RI1kCkRbo` 00:09:54, "the model is either listening or it's speaking").
+> - 48 (TTS auto-regressive decoder backbone) → fully subsumed by **#23**: same Humeau anchor (`3jGAU2sbAyY` 00:09:08, "pretty much uh everybody is using an auto reggressive decoder backbone").
+> - 49 (broader creation → liability) → fully subsumed by **#36**: same Lisa Orr source, verbatim anchor (`RmJ4rTLV_x4` 00:00:23, "at Zapier we are empowering our support team to ship code").
+>
+> Claim numbers are stable IDs, so the numbers 47–49 are retired rather than reused; #50 keeps its number. No evidence was lost.
 
 ## 50) Agent commerce is a new infrastructure layer: agents transact on a human's behalf, shifting the stack from payment rails to delegated intent and verifiable authority
 - **Why it matters:** As agents move from answering to acting, a fast-growing slice of that action is economic — buying, selling, and paying on a user's behalf. That turns commerce into an agent-infrastructure problem: the question stops being "which payment API" and becomes "how does a merchant verify the agent's authority, how is spend bounded, and who is accountable when a non-deterministic system is holding a credential." It gives the book's bounded-authority and identity claims a concrete, high-stakes proving ground.
