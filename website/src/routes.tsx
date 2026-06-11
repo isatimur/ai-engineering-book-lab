@@ -5,6 +5,7 @@ import { VisualGuide } from './pages/VisualGuide';
 import { Reader } from './pages/Reader';
 import { Versions } from './pages/Versions';
 import { Quality } from './pages/Quality';
+import { Search } from './pages/Search';
 import { Assess } from './pages/Assess';
 import { Enterprise } from './pages/Enterprise';
 import { Workshop } from './pages/Workshop';
@@ -42,6 +43,7 @@ export const routes: RouteRecord[] = [
       },
       { path: 'versions', element: <Versions /> },
       { path: 'quality', element: <Quality /> },
+      { path: 'search', element: <Search /> },
       { path: 'assess', element: <Assess /> },
       { path: 'enterprise', element: <Enterprise /> },
       { path: 'workshop', element: <Workshop /> },
