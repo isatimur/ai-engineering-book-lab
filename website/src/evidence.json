@@ -2739,6 +2739,49 @@
           "quote": "most primitives the magic happens when you combine these things together"
         }
       ]
+    },
+    {
+      "claim_id": "claims#50",
+      "text": "Agent commerce is a new infrastructure layer: agents transact on a human's behalf, shifting the stack from payment rails to delegated intent and verifiable authority",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "zlZz0mDF2eg",
+          "start": "00:02:25.360",
+          "end": "00:02:27.840",
+          "start_seconds": 145,
+          "confidence": "high",
+          "label": "#200 — Adam Behrens, New Generation",
+          "quote": "AI digitizes the participants and their interactions."
+        },
+        {
+          "video_id": "zlZz0mDF2eg",
+          "start": "00:02:37.440",
+          "end": "00:02:40.959",
+          "start_seconds": 157,
+          "confidence": "high",
+          "label": "#200 — Adam Behrens, New Generation",
+          "quote": "we go from low-level payment infrastructure to higher level intent infrastructure."
+        },
+        {
+          "video_id": "Ju9PeKEKb24",
+          "start": "00:00:21.039",
+          "end": "00:00:23.960",
+          "start_seconds": 21,
+          "confidence": "high",
+          "label": "#503 — Justin, Ionic",
+          "quote": "help agents interact with the economy starting with e-commerce"
+        },
+        {
+          "video_id": "KLSuFPj2ld0",
+          "start": "00:00:47.040",
+          "end": "00:00:48.080",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#745 — Steve Kaliski, Stripe",
+          "quote": "adapt to that new kind of buyer."
+        }
+      ]
     }
   ],
   "3": [

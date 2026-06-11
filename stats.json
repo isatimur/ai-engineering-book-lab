@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T09:06:52+00:00",
+  "generated_at": "2026-06-11T09:15:11+00:00",
   "corpus": {
     "videos": 757
   },
@@ -11,14 +11,14 @@
     "drafting_files": 10
   },
   "claims": {
-    "total": 49,
+    "total": 50,
     "strong": 42,
-    "moderate": 7,
+    "moderate": 8,
     "tentative": 0
   },
   "anchors": {
-    "total": 176,
-    "high": 176,
+    "total": 180,
+    "high": 180,
     "medium": 0,
     "low": 0
   },
@@ -41,5 +41,5 @@
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 968
+  "total_artefacts": 969
 }

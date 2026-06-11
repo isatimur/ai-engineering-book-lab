@@ -907,3 +907,22 @@
 - **Caveats / counterpoints:** Some governance structures should be redesigned rather than preserved. Stronger governance is not an argument for unchanged governance; it is an argument for governance that can handle higher-frequency, broader-authorship change without proportional human review cost.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Democratized creation and stronger governance are not opposites. They are the two things that have to rise together, or the first one becomes a liability.
+
+## 50) Agent commerce is a new infrastructure layer: agents transact on a human's behalf, shifting the stack from payment rails to delegated intent and verifiable authority
+- **Why it matters:** As agents move from answering to acting, a fast-growing slice of that action is economic — buying, selling, and paying on a user's behalf. That turns commerce into an agent-infrastructure problem: the question stops being "which payment API" and becomes "how does a merchant verify the agent's authority, how is spend bounded, and who is accountable when a non-deterministic system is holding a credential." It gives the book's bounded-authority and identity claims a concrete, high-stakes proving ground.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[200-zlZz0mDF2eg-machines-of-buying-and-selling-grace-adam-behrens-new-generation|#200 — Adam Behrens, New Generation]] — AI turns the participants of commerce, not just the merchandise, into software: merchant agents and consumer agents transacting, with the stack rising from payment rails to intent.
+    - **Anchor:** `zlZz0mDF2eg` 00:02:25.360 → 00:02:27.840 · confidence: high
+    - **Quote:** "AI digitizes the participants and their interactions."
+    - **Anchor:** `zlZz0mDF2eg` 00:02:37.440 → 00:02:40.959 · confidence: high
+    - **Quote:** "we go from low-level payment infrastructure to higher level intent infrastructure."
+  - [[503-Ju9PeKEKb24-ionic-launch-opening-the-economy-to-ai-agents|#503 — Justin, Ionic]] — the agent as an economic actor that does things in the market on the user's behalf, starting with e-commerce and generalizing to travel and services.
+    - **Anchor:** `Ju9PeKEKb24` 00:00:21.039 → 00:00:23.960 · confidence: high
+    - **Quote:** "help agents interact with the economy starting with e-commerce"
+  - [[745-KLSuFPj2ld0-building-safe-payment-infrastructure-for-the-autonomous-economy-steve-kaliski-stripe|#745 — Steve Kaliski, Stripe]] — the payment layer reframed around the agent as a new kind of buyer; the transaction itself stays deterministic while discovery is non-deterministic (see Claim 13 for the bounded-agency anchor).
+    - **Anchor:** `KLSuFPj2ld0` 00:00:47.040 → 00:00:48.080 · confidence: high
+    - **Quote:** "adapt to that new kind of buyer."
+- **Caveats / counterpoints:** The corpus's newest and thinnest theme — three talks, all vendor-framed (Stripe, Visa-partnered New Generation, Ionic), so treat the architecture as directional, not settled. The hard engineering (settlement, dispute, fraud, regulation) is barely in the corpus yet. Overlaps the bounded-authority and identity claims (13, 30, 46); the distinct contribution is the economic-actor framing and the payment-rails → intent-infrastructure shift.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** The agent is a new kind of buyer. Commerce moves from payment rails to delegated intent — and the merchant's question becomes whose authority this is, and how it is bounded.
