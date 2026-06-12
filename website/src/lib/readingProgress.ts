@@ -1,5 +1,6 @@
 const PROGRESS_KEY = 'book:reader:progress';
 const SETTINGS_KEY = 'book:reader:settings';
+const LAST_CHAPTER_KEY = 'book:reader:last-chapter';
 
 export function saveScrollProgress(progress: number): void {
   try { localStorage.setItem(PROGRESS_KEY, String(progress)); } catch {}
@@ -24,6 +25,22 @@ export function loadSettings<T>(defaults: T): T {
     if (!v) return defaults;
     return { ...defaults, ...JSON.parse(v) };
   } catch { return defaults; }
+}
+
+/** Persist the last chapter the reader was in (zero-padded, e.g. "03"). */
+export function saveLastChapter(chapterNumber: string): void {
+  try {
+    localStorage.setItem(LAST_CHAPTER_KEY, chapterNumber.padStart(2, '0'));
+  } catch {}
+}
+
+export function loadLastChapter(): string | null {
+  try {
+    const v = localStorage.getItem(LAST_CHAPTER_KEY);
+    return v && /^\d{2}$/.test(v) ? v : null;
+  } catch {
+    return null;
+  }
 }
 
 /** Scroll to the given 0–1 progress ratio using the scrolling element. */

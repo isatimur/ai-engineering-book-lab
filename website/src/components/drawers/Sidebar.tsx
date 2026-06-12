@@ -6,6 +6,8 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { chapters, chapterPath } from '../../data/bookChapters';
+import { graphUrl, experienceUrl } from '../../lib/chapterLinks';
+import { loadLastChapter } from '../../lib/readingProgress';
 import { bookReadingTime } from '../../lib/readingStats';
 
 type Props = {
@@ -15,6 +17,7 @@ type Props = {
 
 export const Sidebar = ({ isOpen, onClose }: Props) => {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const lastChapter = loadLastChapter();
 
   useEffect(() => {
     if (isOpen) closeButtonRef.current?.focus();
@@ -75,30 +78,60 @@ export const Sidebar = ({ isOpen, onClose }: Props) => {
            <div className="flex flex-col gap-4 border-b border-black/10 pb-8">
              <h3 className="text-xs font-bold font-serif normal-case tracking-normal mb-2 text-xl">Chapters</h3>
 
-             {chapters.map((chapter, index) => (
-               <div key={chapter.number} className={`group ${index === 0 ? '' : 'opacity-50 mt-4'}`}>
+             {chapters.map((chapter) => {
+               const isCurrent = lastChapter === chapter.number;
+               return (
+               <div
+                 key={chapter.number}
+                 className={`group mt-4 first:mt-0 border border-transparent px-2 py-2 -mx-2 transition-colors ${
+                   isCurrent ? 'border-[var(--color-pink)] bg-[color-mix(in_srgb,var(--color-pink)_12%,transparent)]' : 'opacity-70 hover:opacity-100'
+                 }`}
+               >
                  <button
                    type="button"
-                   className="w-full text-left cursor-pointer hover:opacity-100 transition-opacity"
+                   className="w-full text-left cursor-pointer"
                    onClick={() => scrollToSection(`book-chapter-${chapter.number}`)}
                  >
                   <div className="flex justify-between items-baseline mb-1">
-                    <span className={`font-bold ${index === 0 ? 'underline group-hover:text-[var(--color-ink-muted)]' : ''}`}>
+                    <span className={`font-bold ${isCurrent ? 'text-[var(--color-ink)]' : ''}`}>
                       CHAPTER {chapter.number}
+                      {isCurrent && <span className="ml-2 text-[var(--color-ink-muted)] font-normal">· reading</span>}
                     </span>
                     <span className="opacity-50">{chapter.wordCount.toLocaleString()}w</span>
                   </div>
-                  <div className="normal-case font-serif tracking-normal text-sm group-hover:text-[var(--color-ink-muted)]">{chapter.title}</div>
+                  <div className="normal-case font-serif tracking-normal text-sm text-[var(--color-ink-muted)] group-hover:text-[var(--color-ink)]">
+                    {chapter.title}
+                  </div>
+                  <p className="mt-1 normal-case font-serif text-xs text-[var(--color-ink-muted)] opacity-80 line-clamp-2">
+                    {chapter.promise}
+                  </p>
                  </button>
-                 <Link
-                   to={chapterPath(chapter)}
-                   onClick={onClose}
-                   className="mt-1 inline-block normal-case font-mono text-[9px] tracking-widest opacity-40 hover:opacity-100"
-                 >
-                   standalone →
-                 </Link>
+                 <div className="mt-2 flex flex-wrap gap-2">
+                   <Link
+                     to={chapterPath(chapter)}
+                     onClick={onClose}
+                     className="normal-case font-mono text-[9px] tracking-widest opacity-50 hover:opacity-100"
+                   >
+                     standalone →
+                   </Link>
+                   <Link
+                     to={graphUrl(chapter.number)}
+                     onClick={onClose}
+                     className="normal-case font-mono text-[9px] tracking-widest opacity-50 hover:opacity-100"
+                   >
+                     graph →
+                   </Link>
+                   <a
+                     href={experienceUrl(chapter.number)}
+                     onClick={onClose}
+                     className="normal-case font-mono text-[9px] tracking-widest opacity-50 hover:opacity-100"
+                   >
+                     3D →
+                   </a>
+                 </div>
                </div>
-             ))}
+             );
+             })}
            </div>
         </div>
 

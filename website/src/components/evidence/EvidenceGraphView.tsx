@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { chapterByNumber, experienceUrl, graphUrl, readChapterUrl } from '../../lib/chapterLinks';
 import { anchorForNode, filterGraphByChapter, getEvidenceGraph } from '../../lib/evidenceGraph';
 import type { GraphNode } from '../../lib/evidenceTypes';
@@ -27,13 +27,22 @@ const EDGE_LEGEND = [
 
 export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const claimParam = searchParams.get('claim');
   const fullGraph = useMemo(() => getEvidenceGraph(), []);
   const graph = useMemo(
     () => (chapterNumber ? filterGraphByChapter(fullGraph, chapterNumber) : fullGraph),
     [fullGraph, chapterNumber],
   );
   const [selected, setSelected] = useState<GraphNode | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
   const [resetKey, setResetKey] = useState(0);
+
+  useEffect(() => {
+    if (!claimParam) return;
+    const node = graph.nodes.find((n) => n.id === claimParam);
+    if (node) setSelected(node);
+  }, [claimParam, graph.nodes]);
   const selectedAnchor = selected ? anchorForNode(selected) : undefined;
 
   const chapterForLinks =
@@ -56,7 +65,29 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
   };
 
   return (
-    <div className={`flex flex-col gap-4 ${compact ? '' : 'lg:flex-row lg:items-stretch'}`}>
+    <div className="flex flex-col gap-4">
+      {!compact && (
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          <label className="sr-only" htmlFor="graph-search">
+            Search graph
+          </label>
+          <input
+            id="graph-search"
+            type="search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Find practitioner, claim, or video…"
+            className="flex-1 max-w-xl border border-[var(--color-border)] bg-[var(--color-paper)] px-3 py-2 font-mono text-[11px] tracking-wide text-[var(--color-ink)] placeholder:text-[var(--color-ink-muted)] focus:outline-none focus:ring-1 focus:ring-[var(--color-ink)]"
+          />
+          {chapterNumber && (
+            <p className="font-mono text-[9px] uppercase tracking-widest text-[var(--color-ink-muted)] shrink-0">
+              Ch {chapterNumber} filter active
+            </p>
+          )}
+        </div>
+      )}
+
+      <div className={`flex flex-col gap-4 ${compact ? '' : 'lg:flex-row lg:items-stretch'}`}>
       <div className={compact ? 'h-[min(360px,50vh)]' : 'flex-1 min-h-[min(420px,55vh)] lg:min-h-[560px] order-1'}>
         {isEmpty ? (
           <div className="h-full min-h-[320px] border border-[var(--color-border)] bg-[#F8F6F0] flex flex-col items-center justify-center gap-4 px-6 text-center">
@@ -75,6 +106,8 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
             key={`${chapterNumber ?? 'all'}-${resetKey}`}
             graph={graph}
             focusChapter={chapterNumber}
+            searchQuery={searchQuery}
+            highlightNodeId={claimParam}
             onSelect={handleSelect}
             className="h-full"
           />
@@ -188,6 +221,7 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
           </p>
         )}
       </aside>
+      </div>
     </div>
   );
 };

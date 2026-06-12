@@ -14,10 +14,60 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/experience/assets/index-B-7Z5a9N.js"></script>
-    <link rel="stylesheet" crossorigin href="/experience/assets/index-CZPMgfoz.css">
+    <script type="module" crossorigin src="/experience/assets/index-yY3JZvyf.js"></script>
+    <link rel="stylesheet" crossorigin href="/experience/assets/index-p5o7LenX.css">
   </head>
   <body>
+    <div id="experience-loader" class="experience-loader" aria-live="polite">
+      <p class="experience-loader-kicker">From Copilot to Colleague</p>
+      <p class="experience-loader-title">Loading 3D journey…</p>
+    </div>
     <div id="root"></div>
+    <style>
+      .experience-loader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: #05060a;
+        color: #9aa4b8;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+      }
+      .experience-loader-title {
+        color: #e8ecf4;
+        font-size: 11px;
+      }
+      .experience-loader.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        var root = document.getElementById('root');
+        var loader = document.getElementById('experience-loader');
+        if (!root || !loader) return;
+        var hide = function () {
+          loader.classList.add('is-hidden');
+          setTimeout(function () { loader.remove(); }, 600);
+        };
+        var obs = new MutationObserver(function () {
+          if (root.childElementCount > 0) {
+            obs.disconnect();
+            requestAnimationFrame(hide);
+          }
+        });
+        obs.observe(root, { childList: true });
+        setTimeout(hide, 12000);
+      });
+    </script>
   </body>
 </html>

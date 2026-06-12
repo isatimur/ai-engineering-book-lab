@@ -3,6 +3,7 @@ import { type BookChapter } from '../../data/bookChapters';
 import { MarkdownBlock } from '../text/MarkdownBlock';
 import { InlineIllustration } from './InlineIllustration';
 import { ExpandableSummary } from './ExpandableSummary';
+import { EvidenceClaimMarkers } from '../evidence/EvidenceClaimMarkers';
 import { inlineFigsForChapter } from '../../lib/manifest';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
@@ -26,6 +27,7 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
       <div className="mb-10">
         <ExpandableSummary chapter={chapter} />
       </div>
+      <EvidenceClaimMarkers chapterNumber={chapter.number} />
       {blocks.map((block, index) => {
         const isHeading = block.startsWith('## ');
         const figIndex = headingFigureIndex;

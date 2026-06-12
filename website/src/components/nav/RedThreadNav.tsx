@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { graphUrl, experienceUrl, readChapterUrl, type ExperienceSurface } from '../../lib/chapterLinks';
-import { chapterByNumber } from '../../lib/chapterLinks';
+import { graphUrl, experienceUrl, readChapterUrl, type ExperienceSurface, chapterByNumber } from '../../lib/chapterLinks';
+import { loadLastChapter } from '../../lib/readingProgress';
 
 type Props = {
   active: ExperienceSurface;
@@ -17,15 +17,16 @@ const SURFACES: { id: ExperienceSurface; label: string; short: string }[] = [
 
 /** Persistent tri-experience nav — the editorial "red thread" between read, graph, and 3D. */
 export const RedThreadNav = ({ active, chapterNumber, className = '', compact = false }: Props) => {
-  const ch = chapterNumber ? chapterByNumber(chapterNumber) : undefined;
+  const resolvedChapter = chapterNumber ?? loadLastChapter() ?? undefined;
+  const ch = resolvedChapter ? chapterByNumber(resolvedChapter) : undefined;
   const hrefFor = (surface: ExperienceSurface): string => {
     switch (surface) {
       case 'read':
-        return chapterNumber ? readChapterUrl(chapterNumber) : '/read';
+        return resolvedChapter ? readChapterUrl(resolvedChapter) : '/read';
       case 'graph':
-        return graphUrl(chapterNumber);
+        return graphUrl(resolvedChapter);
       case 'experience':
-        return experienceUrl(chapterNumber);
+        return experienceUrl(resolvedChapter);
     }
   };
 

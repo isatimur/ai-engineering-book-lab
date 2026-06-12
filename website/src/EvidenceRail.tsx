@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { graphUrl } from './lib/chapterLinks';
 import evidenceData from './evidence.json';
 
 type Anchor = {
@@ -83,7 +85,15 @@ export const EvidenceRail = ({ chapterNumber }: { chapterNumber: string }) => {
       <div className="space-y-10">
         {claims.map((claim) => (
           <div key={claim.claim_id}>
-            <p className="mb-4 font-serif text-base leading-[1.45]">{claim.text}</p>
+            <div className="mb-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+              <p className="font-serif text-base leading-[1.45] flex-1">{claim.text}</p>
+              <Link
+                to={`${graphUrl(chapterNumber)}&claim=${encodeURIComponent(claim.claim_id)}`}
+                className="shrink-0 font-mono text-[9px] uppercase tracking-widest border border-[var(--color-border)] px-2 py-1 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors self-start"
+              >
+                Open in graph
+              </Link>
+            </div>
             <ul className="grid list-none gap-4 p-0 sm:grid-cols-2">
               {claim.anchors.map((anchor, index) => (
                 <React.Fragment key={`${claim.claim_id}-${index}`}>

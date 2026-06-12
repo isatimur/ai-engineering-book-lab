@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Seo } from '../components/Seo';
 import { RedThreadNav } from '../components/nav/RedThreadNav';
+import { ChapterContextBanner } from '../components/evidence/ChapterContextBanner';
 import { chapterByNumber } from '../lib/chapterLinks';
 import { chapters } from '../data/bookChapters';
 import { getEvidenceGraph } from '../lib/evidenceGraph';
@@ -46,7 +47,8 @@ export const EvidenceGraphPage = () => {
         </header>
 
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16">
-          <RedThreadNav active="graph" chapterNumber={activeChapter} className="mb-8" />
+          <RedThreadNav active="graph" chapterNumber={activeChapter} className="mb-6" />
+          <ChapterContextBanner activeChapter={activeChapter} surface="graph" />
 
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
             Source-anchored synthesis

@@ -16,7 +16,14 @@ import { scrollAudio } from '../lib/audio';
 import { ActionMenu } from '../components/ActionMenu';
 import { Seo } from '../components/Seo';
 import { chapters } from '../data/bookChapters';
-import { saveScrollProgress, loadScrollProgress, saveSettings, loadSettings, scrollToProgress } from '../lib/readingProgress';
+import {
+  saveScrollProgress,
+  loadScrollProgress,
+  saveSettings,
+  loadSettings,
+  scrollToProgress,
+  saveLastChapter,
+} from '../lib/readingProgress';
 
 let _saveTimer: ReturnType<typeof setTimeout> | null = null;
 const debouncedSaveProgress = (p: number) => {
@@ -197,6 +204,30 @@ export const Reader = () => {
 
   // Persist scroll progress while reading (debounced).
   useMotionValueEvent(scrollYProgress, 'change', debouncedSaveProgress);
+
+  // Track which chapter is in view for cross-experience continuity.
+  useEffect(() => {
+    let raf = 0;
+    const updateChapter = () => {
+      const idx = chapters.findIndex((ch) => {
+        const el = document.getElementById(`book-chapter-${ch.number}`);
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.top <= window.innerHeight * 0.45 && rect.bottom > 0;
+      });
+      if (idx >= 0) saveLastChapter(chapters[idx].number);
+    };
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(updateChapter);
+    };
+    updateChapter();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>

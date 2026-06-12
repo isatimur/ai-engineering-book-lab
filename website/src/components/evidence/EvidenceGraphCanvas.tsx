@@ -11,8 +11,34 @@ type SimNode = GraphNode & {
 type Props = {
   graph: EvidenceGraphData;
   focusChapter?: string;
+  searchQuery?: string;
+  highlightNodeId?: string | null;
   onSelect?: (node: GraphNode | null) => void;
   className?: string;
+};
+
+const CHAPTER_TINTS = [
+  '#EAC6C0',
+  '#A4B8C4',
+  '#C9B8A8',
+  '#B8C4A4',
+  '#C4A4B8',
+  '#A8C4C9',
+  '#D4C4A8',
+  '#A4C4C9',
+  '#C4B8A4',
+  '#B8A4C4',
+];
+
+const nodeMatchesQuery = (node: GraphNode, query: string): boolean => {
+  const q = query.trim().toLowerCase();
+  if (!q) return true;
+  return (
+    node.label.toLowerCase().includes(q) ||
+    node.shortLabel.toLowerCase().includes(q) ||
+    (node.speakerName?.toLowerCase().includes(q) ?? false) ||
+    (node.chapterNumber?.includes(q) ?? false)
+  );
 };
 
 const NODE_COLORS: Record<GraphNode['type'], string> = {
@@ -39,6 +65,8 @@ const typePriority: Record<GraphNode['type'], number> = {
 export const EvidenceGraphCanvas = ({
   graph,
   focusChapter,
+  searchQuery = '',
+  highlightNodeId = null,
   onSelect,
   className = '',
 }: Props) => {
@@ -51,7 +79,9 @@ export const EvidenceGraphCanvas = ({
   const pausedRef = useRef(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
+  const [hoverPos, setHoverPos] = useState<{ x: number; y: number } | null>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 520 });
+  const hasSearch = searchQuery.trim().length > 0;
 
   const focusChapterId = focusChapter ? `chapter:${focusChapter.padStart(2, '0')}` : null;
 
@@ -109,6 +139,10 @@ export const EvidenceGraphCanvas = ({
     panRef.current = { x: 0, y: 0, scale: 1, dragging: false, lastX: 0, lastY: 0 };
     setSelectedId(null);
   }, [graph]);
+
+  useEffect(() => {
+    if (highlightNodeId) setSelectedId(highlightNodeId);
+  }, [highlightNodeId]);
 
   useEffect(() => {
     const { width, height } = dimensions;
@@ -233,6 +267,9 @@ export const EvidenceGraphCanvas = ({
         const isSelected = selectedId === node.id;
         const isHover = hoverId === node.id;
         const isFocusHub = node.id === focusChapterId;
+        const isSearchHit = hasSearch && nodeMatchesQuery(node, searchQuery);
+        const isSearchMiss = hasSearch && !isSearchHit;
+        const isClaimHighlight = highlightNodeId === node.id;
         const inFocus =
           !focusChapterId ||
           isFocusHub ||
@@ -243,19 +280,24 @@ export const EvidenceGraphCanvas = ({
               (e.target === focusChapterId && e.source === node.id),
           );
         ctx.beginPath();
-        ctx.arc(node.x, node.y, node.size + (isSelected ? 2 : 0), 0, Math.PI * 2);
-        ctx.fillStyle = NODE_COLORS[node.type];
-        ctx.globalAlpha = inFocus ? 1 : 0.25;
+        ctx.arc(node.x, node.y, node.size + (isSelected || isClaimHighlight ? 2 : 0), 0, Math.PI * 2);
+        let fill = NODE_COLORS[node.type];
+        if (node.type === 'claim' && node.chapterNumber) {
+          const chIdx = parseInt(node.chapterNumber, 10) - 1;
+          if (chIdx >= 0 && chIdx < CHAPTER_TINTS.length) fill = CHAPTER_TINTS[chIdx];
+        }
+        ctx.fillStyle = fill;
+        ctx.globalAlpha = isSearchMiss ? 0.12 : inFocus ? 1 : 0.25;
         ctx.fill();
         ctx.globalAlpha = 1;
-        if (isFocusHub) {
+        if (isFocusHub || isSearchHit || isClaimHighlight) {
           ctx.beginPath();
           ctx.arc(node.x, node.y, node.size + 5, 0, Math.PI * 2);
-          ctx.strokeStyle = '#EAC6C0';
-          ctx.lineWidth = 2;
+          ctx.strokeStyle = isSearchHit ? '#18181A' : '#EAC6C0';
+          ctx.lineWidth = isSearchHit || isClaimHighlight ? 2.5 : 2;
           ctx.stroke();
         }
-        ctx.strokeStyle = isSelected || isHover ? '#18181A' : 'rgba(255,255,255,0.35)';
+        ctx.strokeStyle = isSelected || isHover || isClaimHighlight ? '#18181A' : 'rgba(255,255,255,0.35)';
         ctx.lineWidth = isSelected ? 2 : 1;
         ctx.stroke();
 
@@ -273,7 +315,7 @@ export const EvidenceGraphCanvas = ({
 
     frameRef.current = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frameRef.current);
-  }, [graph, dimensions, selectedId, hoverId, focusChapter, focusChapterId]);
+  }, [graph, dimensions, selectedId, hoverId, focusChapter, focusChapterId, searchQuery, hasSearch, highlightNodeId]);
 
   const handlePointerDown = (e: React.PointerEvent) => {
     const node = pickNode(e.clientX, e.clientY);
@@ -313,7 +355,18 @@ export const EvidenceGraphCanvas = ({
       panRef.current.lastY = e.clientY;
       return;
     }
-    setHoverId(pickNode(e.clientX, e.clientY)?.id ?? null);
+    const hovered = pickNode(e.clientX, e.clientY);
+    setHoverId(hovered?.id ?? null);
+    if (hovered && canvasRef.current) {
+      const rect = canvasRef.current.getBoundingClientRect();
+      const pan = panRef.current;
+      setHoverPos({
+        x: hovered.x * pan.scale + pan.x,
+        y: hovered.y * pan.scale + pan.y,
+      });
+    } else {
+      setHoverPos(null);
+    }
   };
 
   const handlePointerUp = () => {
@@ -331,9 +384,12 @@ export const EvidenceGraphCanvas = ({
     panRef.current.scale = Math.max(0.5, Math.min(2.5, panRef.current.scale * factor));
   };
 
-  const hoverIsChapter = hoverId
-    ? simRef.current.find((n) => n.id === hoverId)?.type === 'chapter'
-    : false;
+  const hoverNode = hoverId ? simRef.current.find((n) => n.id === hoverId) : null;
+  const hoverIsChapter = hoverNode?.type === 'chapter';
+
+  const matchCount = hasSearch
+    ? graph.nodes.filter((n) => nodeMatchesQuery(n, searchQuery)).length
+    : 0;
 
   return (
     <div ref={containerRef} className={`relative w-full h-full min-h-[320px] ${className}`}>
@@ -350,6 +406,27 @@ export const EvidenceGraphCanvas = ({
         aria-label="Evidence enrichment graph"
         role="img"
       />
+      {hoverNode && hoverPos && !dragRef.current.id && (
+        <div
+          className="pointer-events-none absolute z-10 max-w-[220px] border border-[var(--color-border)] bg-[var(--color-paper)] px-2.5 py-1.5 shadow-md font-mono text-[9px] uppercase tracking-widest text-[var(--color-ink-muted)]"
+          style={{
+            left: Math.min(hoverPos.x + 12, dimensions.width - 230),
+            top: Math.max(hoverPos.y - 36, 8),
+          }}
+        >
+          <span className="text-[var(--color-ink)]">{hoverNode.type}</span>
+          <p className="mt-0.5 normal-case tracking-normal font-serif text-[11px] text-[var(--color-ink)] leading-snug line-clamp-3">
+            {hoverNode.label}
+          </p>
+        </div>
+      )}
+
+      {hasSearch && (
+        <div className="absolute top-2 left-2 font-mono text-[9px] uppercase tracking-widest text-[var(--color-ink-muted)] bg-[var(--color-paper)]/90 border border-[var(--color-border)] px-2 py-1">
+          {matchCount} match{matchCount === 1 ? '' : 'es'}
+        </div>
+      )}
+
       <div className="absolute top-2 right-2 flex flex-col gap-1 font-mono text-[10px] uppercase tracking-widest">
         <button
           type="button"
