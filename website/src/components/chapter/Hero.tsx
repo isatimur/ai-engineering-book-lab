@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, type Variants } from 'motion/react';
 import { InteractiveHoverImage } from '../InteractiveHoverImage';
+import { RedThreadNav } from '../nav/RedThreadNav';
 import stats from '../../data/stats.json';
 import { bookReadingTime } from '../../lib/readingStats';
 
@@ -107,6 +108,10 @@ export const Hero = () => {
         <motion.span variants={textVariants} className="italic relative md:left-[5vw]">to</motion.span>
         <motion.span variants={textVariants}>Colleague</motion.span>
       </h1>
+
+      <motion.div variants={textVariants} className="relative z-20 mb-6 md:mb-0 md:absolute md:bottom-48 md:left-6 lg:left-12">
+        <RedThreadNav active="read" compact />
+      </motion.div>
 
       <motion.div variants={textVariants} className="absolute bottom-32 left-6 lg:left-12 font-mono text-[10px] lg:text-xs tracking-widest text-[var(--color-ink)] z-20 leading-[1.8] uppercase">
         AI Engineer Knowledge Base<br/>

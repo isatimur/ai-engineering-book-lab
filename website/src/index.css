@@ -235,6 +235,31 @@ body {
   outline-offset: 2px;
 }
 
+/* Red thread — tri-experience nav ribbon (read · graph · 3D) */
+.red-thread-nav {
+  position: relative;
+}
+
+.red-thread-nav::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  max-width: 12rem;
+  margin-bottom: 0.625rem;
+  background: linear-gradient(
+    90deg,
+    var(--color-pink) 0%,
+    color-mix(in srgb, var(--color-pink) 70%, #c44) 50%,
+    var(--color-pink) 100%
+  );
+  border-radius: 1px;
+}
+
+.red-thread-nav .red-thread-tabs {
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--color-pink) 35%, transparent);
+}
+
 @media print {
   .no-print {
     display: none !important;
