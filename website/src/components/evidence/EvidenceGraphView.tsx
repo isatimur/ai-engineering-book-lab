@@ -88,7 +88,7 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
       )}
 
       <div className={`flex flex-col gap-4 ${compact ? '' : 'lg:flex-row lg:items-stretch'}`}>
-      <div className={compact ? 'h-[min(360px,50vh)]' : 'flex-1 min-h-[min(420px,55vh)] lg:min-h-[560px] order-1'}>
+      <div className={compact ? 'h-[min(360px,50vh)]' : 'flex-1 h-[min(420px,55vh)] lg:h-[560px] order-1'}>
         {isEmpty ? (
           <div className="h-full min-h-[320px] border border-[var(--color-border)] bg-[#F8F6F0] flex flex-col items-center justify-center gap-4 px-6 text-center">
             <p className="font-serif text-lg text-[var(--color-ink-muted)]">

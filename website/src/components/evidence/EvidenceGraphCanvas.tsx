@@ -77,6 +77,13 @@ export const EvidenceGraphCanvas = ({
   const dragRef = useRef<{ id: string | null }>({ id: null });
   const panRef = useRef({ x: 0, y: 0, scale: 1, dragging: false, lastX: 0, lastY: 0 });
   const pausedRef = useRef(false);
+  const dimensionsRef = useRef({ width: 800, height: 520 });
+  const graphRef = useRef(graph);
+  const focusChapterIdRef = useRef<string | null>(null);
+  const selectedIdRef = useRef<string | null>(null);
+  const hoverIdRef = useRef<string | null>(null);
+  const searchQueryRef = useRef(searchQuery);
+  const highlightNodeIdRef = useRef<string | null | undefined>(highlightNodeId);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [hoverPos, setHoverPos] = useState<{ x: number; y: number } | null>(null);
@@ -85,19 +92,28 @@ export const EvidenceGraphCanvas = ({
 
   const focusChapterId = focusChapter ? `chapter:${focusChapter.padStart(2, '0')}` : null;
 
+  dimensionsRef.current = dimensions;
+  graphRef.current = graph;
+  focusChapterIdRef.current = focusChapterId;
+  selectedIdRef.current = selectedId;
+  hoverIdRef.current = hoverId;
+  searchQueryRef.current = searchQuery;
+  highlightNodeIdRef.current = highlightNodeId;
+
   const fitToFocus = useCallback(() => {
-    const { width, height } = dimensions;
-    if (!focusChapterId) {
+    const { width, height } = dimensionsRef.current;
+    const focusId = focusChapterIdRef.current;
+    if (!focusId) {
       panRef.current = { ...panRef.current, x: 0, y: 0, scale: 1 };
       return;
     }
-    const node = simRef.current.find((n) => n.id === focusChapterId);
+    const node = simRef.current.find((n) => n.id === focusId);
     if (!node) return;
     const scale = 1.35;
     panRef.current.x = width / 2 - node.x * scale;
     panRef.current.y = height / 2 - node.y * scale;
     panRef.current.scale = scale;
-  }, [dimensions, focusChapterId]);
+  }, []);
 
   const pickNode = useCallback((clientX: number, clientY: number): SimNode | null => {
     const canvas = canvasRef.current;
@@ -129,7 +145,14 @@ export const EvidenceGraphCanvas = ({
     if (!el) return;
     const ro = new ResizeObserver(([entry]) => {
       const { width, height } = entry.contentRect;
-      setDimensions({ width: Math.max(320, width), height: Math.max(320, height) });
+      if (width < 1 || height < 1) return;
+      const nextWidth = Math.round(Math.max(320, width));
+      const nextHeight = Math.round(Math.max(320, height));
+      setDimensions((prev) =>
+        prev.width === nextWidth && prev.height === nextHeight
+          ? prev
+          : { width: nextWidth, height: nextHeight },
+      );
     });
     ro.observe(el);
     return () => ro.disconnect();
@@ -145,7 +168,7 @@ export const EvidenceGraphCanvas = ({
   }, [highlightNodeId]);
 
   useEffect(() => {
-    const { width, height } = dimensions;
+    const { width, height } = dimensionsRef.current;
     const angleStep = (Math.PI * 2) / Math.max(graph.nodes.length, 1);
     simRef.current = graph.nodes.map((node, i) => ({
       ...node,
@@ -156,7 +179,7 @@ export const EvidenceGraphCanvas = ({
     }));
     const t = window.setTimeout(fitToFocus, 480);
     return () => window.clearTimeout(t);
-  }, [graph, dimensions, fitToFocus]);
+  }, [graph, focusChapterId, fitToFocus]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -164,21 +187,42 @@ export const EvidenceGraphCanvas = ({
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const dpr = window.devicePixelRatio || 1;
-    canvas.width = dimensions.width * dpr;
-    canvas.height = dimensions.height * dpr;
-    canvas.style.width = `${dimensions.width}px`;
-    canvas.style.height = `${dimensions.height}px`;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
     const nodeMap = () => new Map(simRef.current.map((n) => [n.id, n]));
+    let renderedWidth = 0;
+    let renderedHeight = 0;
+
+    const syncCanvasSize = () => {
+      const { width, height } = dimensionsRef.current;
+      if (width === renderedWidth && height === renderedHeight) return;
+      renderedWidth = width;
+      renderedHeight = height;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    syncCanvasSize();
 
     const tick = () => {
+      syncCanvasSize();
+      const { width, height } = dimensionsRef.current;
+      const graphData = graphRef.current;
+      const focusId = focusChapterIdRef.current;
+      const focusChapterNum = focusChapterIdRef.current?.slice('chapter:'.length);
+      const selected = selectedIdRef.current;
+      const hover = hoverIdRef.current;
+      const query = searchQueryRef.current;
+      const queryActive = query.trim().length > 0;
+      const claimHighlight = highlightNodeIdRef.current;
+
       if (!pausedRef.current) {
         const nodes = simRef.current;
         const map = nodeMap();
-        const cx = dimensions.width / 2;
-        const cy = dimensions.height / 2;
+        const cx = width / 2;
+        const cy = height / 2;
 
         for (let i = 0; i < nodes.length; i += 1) {
           for (let j = i + 1; j < nodes.length; j += 1) {
@@ -200,7 +244,7 @@ export const EvidenceGraphCanvas = ({
           }
         }
 
-        for (const edge of graph.edges) {
+        for (const edge of graphData.edges) {
           const a = map.get(edge.source);
           const b = map.get(edge.target);
           if (!a || !b) continue;
@@ -232,29 +276,29 @@ export const EvidenceGraphCanvas = ({
             node.x += node.vx;
             node.y += node.vy;
           }
-          node.x = Math.max(node.size + 8, Math.min(dimensions.width - node.size - 8, node.x));
-          node.y = Math.max(node.size + 8, Math.min(dimensions.height - node.size - 8, node.y));
+          node.x = Math.max(node.size + 8, Math.min(width - node.size - 8, node.x));
+          node.y = Math.max(node.size + 8, Math.min(height - node.size - 8, node.y));
         }
       }
 
       const nodes = simRef.current;
       const map = nodeMap();
 
-      ctx.clearRect(0, 0, dimensions.width, dimensions.height);
+      ctx.clearRect(0, 0, width, height);
       ctx.save();
       ctx.translate(panRef.current.x, panRef.current.y);
       ctx.scale(panRef.current.scale, panRef.current.scale);
 
-      for (const edge of graph.edges) {
+      for (const edge of graphData.edges) {
         const a = map.get(edge.source);
         const b = map.get(edge.target);
         if (!a || !b) continue;
         const dimmed =
-          !!focusChapterId &&
-          a.id !== focusChapterId &&
-          b.id !== focusChapterId &&
-          a.chapterNumber !== focusChapter?.padStart(2, '0') &&
-          b.chapterNumber !== focusChapter?.padStart(2, '0');
+          !!focusId &&
+          a.id !== focusId &&
+          b.id !== focusId &&
+          a.chapterNumber !== focusChapterNum &&
+          b.chapterNumber !== focusChapterNum;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
@@ -264,20 +308,20 @@ export const EvidenceGraphCanvas = ({
       }
 
       for (const node of nodes) {
-        const isSelected = selectedId === node.id;
-        const isHover = hoverId === node.id;
-        const isFocusHub = node.id === focusChapterId;
-        const isSearchHit = hasSearch && nodeMatchesQuery(node, searchQuery);
-        const isSearchMiss = hasSearch && !isSearchHit;
-        const isClaimHighlight = highlightNodeId === node.id;
+        const isSelected = selected === node.id;
+        const isHover = hover === node.id;
+        const isFocusHub = node.id === focusId;
+        const isSearchHit = queryActive && nodeMatchesQuery(node, query);
+        const isSearchMiss = queryActive && !isSearchHit;
+        const isClaimHighlight = claimHighlight === node.id;
         const inFocus =
-          !focusChapterId ||
+          !focusId ||
           isFocusHub ||
-          node.chapterNumber === focusChapter?.padStart(2, '0') ||
-          graph.edges.some(
+          node.chapterNumber === focusChapterNum ||
+          graphData.edges.some(
             (e) =>
-              (e.source === focusChapterId && e.target === node.id) ||
-              (e.target === focusChapterId && e.source === node.id),
+              (e.source === focusId && e.target === node.id) ||
+              (e.target === focusId && e.source === node.id),
           );
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.size + (isSelected || isClaimHighlight ? 2 : 0), 0, Math.PI * 2);
@@ -315,7 +359,7 @@ export const EvidenceGraphCanvas = ({
 
     frameRef.current = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frameRef.current);
-  }, [graph, dimensions, selectedId, hoverId, focusChapter, focusChapterId, searchQuery, hasSearch, highlightNodeId]);
+  }, [graph]);
 
   const handlePointerDown = (e: React.PointerEvent) => {
     const node = pickNode(e.clientX, e.clientY);
@@ -427,7 +471,8 @@ export const EvidenceGraphCanvas = ({
         </div>
       )}
 
-      <div className="absolute top-2 right-2 flex flex-col gap-1 font-mono text-[10px] uppercase tracking-widest">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="pointer-events-auto absolute top-2 right-2 flex flex-col gap-1 font-mono text-[10px] uppercase tracking-widest">
         <button
           type="button"
           onClick={() => zoomBy(1.15)}
@@ -453,6 +498,7 @@ export const EvidenceGraphCanvas = ({
         >
           ↺
         </button>
+        </div>
       </div>
     </div>
   );
