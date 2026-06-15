@@ -8,6 +8,7 @@ import { JsonLd } from '../components/JsonLd';
 import { bookJsonLd } from '../lib/structuredData';
 import { BOOK } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
+import { ExploreMenu, MobileNavMenu } from '../components/nav/ExploreMenu';
 
 export const Catalogue = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -49,13 +50,13 @@ export const Catalogue = () => {
             <p className="font-serif italic text-white/60 text-sm">Ideas for progress</p>
           </div>
         </div>
-        <nav className="pointer-events-auto text-xs font-mono uppercase tracking-widest text-white/60 flex gap-6">
-          <Link to="/visual-guide" className="hover:text-white">Visual Guide</Link>
-          <Link to="/read" className="hover:text-white">Read</Link>
-          <a href="/experience/" className="hover:text-white">3D Journey</a>
-          <Link to="/assess" className="hover:text-white">Assess</Link>
-          <Link to="/versions" className="hover:text-white">Versions</Link>
-          <Link to="/quality" className="hover:text-white">Quality</Link>
+        <nav className="pointer-events-auto text-xs font-mono uppercase tracking-widest text-white/60 flex items-center gap-4">
+          <Link to="/read" className="hidden sm:inline hover:text-white">Read</Link>
+          <Link to="/assess" className="hidden md:inline hover:text-white">Assess</Link>
+          <div className="hidden lg:block">
+            <ExploreMenu variant="dark" />
+          </div>
+          <MobileNavMenu variant="dark" />
         </nav>
       </header>
 

@@ -104,10 +104,18 @@ export const EvidenceGraphPage = () => {
             <EvidenceGraphContent />
           </Suspense>
 
-          <p className="mt-8 font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)] max-w-3xl leading-relaxed">
-            Graph data is derived from src/evidence.json (built via 99_Meta/scripts/anchor/build_evidence.py).
-            Regenerate evidence after ledger updates; the graph rebuilds automatically at runtime.
-          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-4 font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
+            <Link
+              to="/evidence"
+              className="border border-[var(--color-border)] px-4 py-2 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
+            >
+              Evidence &amp; metrics table →
+            </Link>
+            <p className="max-w-2xl leading-relaxed normal-case tracking-normal font-sans text-sm">
+              Graph data from <code className="font-mono text-[11px]">evidence.json</code> — regenerate
+              via <code className="font-mono text-[11px]">build_evidence.py</code> after ledger updates.
+            </p>
+          </div>
         </div>
       </div>
     </>
