@@ -95,6 +95,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MISSING_COUNT: ${{ steps.dry.outputs.missing_count }}
         run: |
+          # Ensure labels exist so issue creation never fails on a missing label.
+          gh label create ingest --color 1d76db --description "Channel ingest automation" --force
+          gh label create automated --color ededed --description "Created by an automated workflow" --force
           gh issue create \
             --title "channel-watcher: ${MISSING_COUNT} new video(s) on AI Engineer channel" \
             --body-file /tmp/issue-body.md \
@@ -160,6 +163,9 @@ jobs:
         run: |
           DATE=$(date -u +%Y-%m-%d)
           BODY="The nightly ingest-channel workflow failed. See run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}"
+          # Ensure labels exist so the failure notice itself never fails on a missing label.
+          gh label create ingest --repo "${REPO}" --color 1d76db --description "Channel ingest automation" --force
+          gh label create automated --repo "${REPO}" --color ededed --description "Created by an automated workflow" --force
           gh issue create \
             --repo "${REPO}" \
             --title "channel-watcher: nightly run FAILED (${DATE})" \
