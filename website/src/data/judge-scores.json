@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "2026-06-20-121211-52f0",
-    "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+    "run_id": "2026-06-20-130253-ea0f",
+    "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
-    "finished_at": "2026-06-20T12:12:38.961561+00:00",
+    "finished_at": "2026-06-20T13:02:55.739641+00:00",
     "total_cost_usd": 0.0,
     "status": "completed",
     "dims": [
@@ -18,51 +18,65 @@
     ],
     "coverage": {
       "humanness": {
-        "scored": 234,
-        "total": 329
+        "scored": 230,
+        "total": 327
       },
       "voice": {
-        "scored": 87,
-        "total": 329
+        "scored": 38,
+        "total": 327
       },
       "usefulness": {
-        "scored": 298,
-        "total": 329
+        "scored": 294,
+        "total": 327
       },
       "evidence_density": {
-        "scored": 46,
+        "scored": 43,
         "total": 89
       },
       "claim_defensibility": {
-        "scored": 279,
-        "total": 329
+        "scored": 275,
+        "total": 327
       },
       "redundancy": {
-        "scored": 107,
-        "total": 329
+        "scored": 58,
+        "total": 327
       }
     },
-    "partial": true
+    "partial": true,
+    "merged_run_ids": [
+      "2026-06-20-130253-ea0f",
+      "2026-06-20-121211-52f0",
+      "2026-06-20-111904-05e5",
+      "2026-06-11-094038-1cef",
+      "2026-06-10-145000-0cb7",
+      "2026-06-10-085925-1ddf",
+      "2026-06-09-220959-1ddf",
+      "2026-06-05-131510-4d43",
+      "2026-06-02-093847-4924",
+      "2026-06-01-155947-4924",
+      "2026-05-22-0943-9a20"
+    ]
   },
   "book": {
-    "humanness": 77.8,
-    "voice": 84.3,
-    "usefulness": 53.6,
-    "evidence_density": 89.9,
+    "humanness": 78.3,
+    "voice": 81.3,
+    "usefulness": 54.0,
+    "evidence_density": 89.8,
     "claim_defensibility": 76.2,
-    "redundancy": 83.0,
-    "usefulness_substantive": 56.8,
-    "usefulness_connective": 40,
-    "usefulness_total": 298
+    "redundancy": 72.0,
+    "usefulness_substantive": 57.0,
+    "usefulness_connective": 41,
+    "usefulness_total": 294
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:9f6d0f4",
+      "version_id": "git:b01970b",
       "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "primary_run_id": "2026-06-20-121211-52f0",
       "rollup": {
         "humanness": 77.4,
-        "voice": null,
+        "voice": 91.0,
         "usefulness": 36.5,
         "evidence_density": 90.0,
         "claim_defensibility": 78.3,
@@ -74,7 +88,7 @@
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "error",
+        "voice": "strong",
         "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
@@ -229,19 +243,23 @@
           "evidence_refs": [],
           "para_excerpt": "A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were a…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-20-111904-05e5"
+      }
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "primary_run_id": "2026-06-20-111904-05e5",
       "rollup": {
         "humanness": 80.6,
-        "voice": null,
+        "voice": 82.0,
         "usefulness": 67.4,
         "evidence_density": 90.0,
         "claim_defensibility": 80.8,
-        "redundancy": null,
+        "redundancy": 62.0,
         "n_paragraphs": 20,
         "usefulness_substantive": 66.3,
         "usefulness_connective": 2,
@@ -249,11 +267,11 @@
       },
       "labels": {
         "humanness": "strong",
-        "voice": "error",
+        "voice": "strong",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "strong",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -377,19 +395,24 @@
           ],
           "para_excerpt": "Some friction is where judgment was happening. The review before the merge. The extra question about whether the architecture can carry this. The refusal to acc…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-11-094038-1cef",
+        "redundancy": "2026-06-11-094038-1cef"
+      }
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "primary_run_id": "2026-06-20-111904-05e5",
       "rollup": {
         "humanness": 78.2,
-        "voice": null,
+        "voice": 82.0,
         "usefulness": 52.2,
         "evidence_density": 90.0,
         "claim_defensibility": 69.7,
-        "redundancy": null,
+        "redundancy": 72.0,
         "n_paragraphs": 53,
         "usefulness_substantive": 59.1,
         "usefulness_connective": 10,
@@ -397,11 +420,11 @@
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "error",
+        "voice": "strong",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -564,12 +587,17 @@
           ],
           "para_excerpt": "The watch-for here is the moment scope crosses from tasks one senior can supervise in real time to tasks that run unsupervised. That is exactly where quality st…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-11-094038-1cef",
+        "redundancy": "2026-06-11-094038-1cef"
+      }
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:1ceff6fe568dae9a2199f82115c7cdc08e0edd983a7530e620d7408f7ec0887f",
+      "primary_run_id": "2026-06-11-094038-1cef",
       "rollup": {
         "humanness": 74.2,
         "voice": 84.0,
@@ -830,15 +858,16 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "primary_run_id": "2026-06-20-111904-05e5",
       "rollup": {
         "humanness": 81.0,
-        "voice": null,
+        "voice": 74.0,
         "usefulness": 60.2,
         "evidence_density": 90.0,
         "claim_defensibility": 78.6,
-        "redundancy": null,
+        "redundancy": 72.0,
         "n_paragraphs": 47,
         "usefulness_substantive": 60.8,
         "usefulness_connective": 5,
@@ -846,11 +875,11 @@
       },
       "labels": {
         "humanness": "strong",
-        "voice": "error",
+        "voice": "moderate",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -978,12 +1007,17 @@
           ],
           "para_excerpt": "Ofer Mendelevitch's enterprise deep-research framing pushes the argument to its limit. The hard problem of enterprise AI, he says, is not access to documents. I…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-11-094038-1cef",
+        "redundancy": "2026-06-11-094038-1cef"
+      }
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:1ceff6fe568dae9a2199f82115c7cdc08e0edd983a7530e620d7408f7ec0887f",
+      "primary_run_id": "2026-06-11-094038-1cef",
       "rollup": {
         "humanness": 78.8,
         "voice": 82.0,
@@ -1213,19 +1247,20 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
+      "primary_run_id": "2026-06-20-130253-ea0f",
       "rollup": {
-        "humanness": 74.5,
+        "humanness": 79.5,
         "voice": 87.0,
-        "usefulness": 54.9,
-        "evidence_density": 88.8,
-        "claim_defensibility": 82.3,
+        "usefulness": 58.4,
+        "evidence_density": 88.2,
+        "claim_defensibility": 83.0,
         "redundancy": 82.0,
-        "n_paragraphs": 52,
-        "usefulness_substantive": 60.3,
-        "usefulness_connective": 8,
-        "usefulness_total": 49
+        "n_paragraphs": 50,
+        "usefulness_substantive": 63.1,
+        "usefulness_connective": 9,
+        "usefulness_total": 45
       },
       "labels": {
         "humanness": "moderate",
@@ -1237,124 +1272,91 @@
       },
       "coverage": {
         "humanness": {
-          "scored": 37,
-          "total": 49
+          "scored": 33,
+          "total": 47
         },
         "voice": {
-          "scored": 49,
-          "total": 49
+          "scored": 0,
+          "total": 47
         },
         "usefulness": {
-          "scored": 49,
-          "total": 49
+          "scored": 45,
+          "total": 47
         },
         "evidence_density": {
           "scored": 0,
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 49,
-          "total": 49
+          "scored": 45,
+          "total": 47
         },
         "redundancy": {
-          "scored": 49,
-          "total": 49
+          "scored": 0,
+          "total": 47
         }
       },
       "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 19,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "This sentence is pure connective tissue — a smooth transition that says absolutely nothing on its own. \"The same principle appears\" tells us nothing about what the principle is, where it appears, or why the stakes are higher. \"With the stakes turned up\" is vague intensifier language borrowed from thriller trailers, not editorial prose. There is no claim, no specificity, no point of view, no fact. Remove this sentence and you lose zero information. It exists solely to usher the reader from one paragraph to the next, which is exactly what AI-generated scaffolding does.",
-          "evidence_refs": [
-            "phrase:'with the stakes turned up'"
-          ],
-          "para_excerpt": "Fouad Matin's security guidance for coding agents at OpenAI keeps returning to four concrete controls: sandboxing, network restriction, privilege boundaries, an…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 39,
-          "score": 22.0,
-          "label": "weak",
-          "reasoning": "This paragraph is pure scaffolding — it exists only to introduce the next paragraph and does essentially no intellectual work of its own. \"The corpus contains one public-sector talk\" has a faint whiff of specificity, but \"raises the constraints to a level that makes them clearer than the enterprise versions\" is a claim so carefully hedged it says almost nothing. The author could have just said *what* is clearer and *why*, instead of promising clarity in the next section. The worst offender is the classic throat-clearing transition phrase \"is worth surfacing,\" which is textbook AI-slop filler. Remove the entire paragraph and you lose zero information — the surrounding context covers it completely.",
-          "evidence_refs": [
-            "phrase:'is worth surfacing because it raises the constraints to a level that makes them clearer than the enterprise versions'"
-          ],
-          "para_excerpt": "Mark Myshatyn at Los Alamos National Lab presented on government agents at one of the AI Engineer events. The talk reads, in places, like the rest of this chapt…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 34,
-          "score": 28.0,
-          "label": "weak",
-          "reasoning": "This sentence is pure connective tissue — a bridge paragraph doing the minimum work of linking what came before to what comes next. The claim embedded in it (\"what looks like a UX annoyance is actually a governance failure\") has genuine potential for a point of view, but it's stated as a breezy aside rather than argued. The author gets credit for framing UX pain as governance failure, which is at least a claim someone could push back on, but the surrounding language — \"a related issue surfaces,\" \"everyday agent operation,\" \"one of the cases where\" — is pure hedge scaffolding. It reads like AI prose that's been told to set up a topic sentence without committing to one. Nothing concrete would be lost if this sentence were deleted; the surrounding paragraphs would stitch together fine without it.",
-          "evidence_refs": [
-            "phrase:'A related issue surfaces in everyday agent operation'"
-          ],
-          "para_excerpt": "Most current MCP and agent integrations require the user to authorize each tool separately. The agent wants to talk to email. Consent flow. The agent wants to t…"
-        },
-        {
-          "dim_name": "voice",
           "paragraph_index": 0,
-          "score": 87.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "This paragraph earns its keep. \"Trust stops being only a question of model quality\" is a real claim — it could be wrong, and someone could argue with it. The pivot from \"model quality\" to \"bounded authority\" is clean and specific enough to feel like a thought, not a transition. The surrounding context sharpens it further: the author is building a genuine argument about agentic AI systems. But \"bounded authority\" is doing heavy lifting without being defined — it's a term of art that gestures at specificity without delivering it, and the paragraph as a whole is short enough to feel like a thesis stub rather than a full thought. It's the kind of sentence a smart author writes in an outline and sometimes forgets to expand. Readable, pointed, but not yet earning full credit.",
           "evidence_refs": [
-            "drift:Minimal drift. Two localized deviations: (1) slightly longer average sentence length in the \"Standardized protocols\" and \"Audit as trust model\" sections compared to the baseline's tighter short/long alternation; (2) one short reflexive passage (\"This is also where the manuscript has to stay honest...\") adopts a meta-editorial register not present in the baseline excerpts. All other markers — direct epistemic stance, named concrete actors, technical-specific vocabulary (OAuth, sandboxing, PAT scopes, root of trust), short/long rhythm, and checklist bullet format — are indistinguishable from baseline."
+            "phrase:'bounded authority'"
           ],
           "para_excerpt": "Once AI systems can act, trust stops being only a question of model quality. It becomes a question of bounded authority."
         },
         {
-          "dim_name": "voice",
-          "paragraph_index": 1,
-          "score": 87.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
-          "evidence_refs": [
-            "drift:Minimal drift. Two localized deviations: (1) slightly longer average sentence length in the \"Standardized protocols\" and \"Audit as trust model\" sections compared to the baseline's tighter short/long alternation; (2) one short reflexive passage (\"This is also where the manuscript has to stay honest...\") adopts a meta-editorial register not present in the baseline excerpts. All other markers — direct epistemic stance, named concrete actors, technical-specific vocabulary (OAuth, sandboxing, PAT scopes, root of trust), short/long rhythm, and checklist bullet format — are indistinguishable from baseline."
-          ],
-          "para_excerpt": "A helpful model can get away with being vague about power. An acting system cannot."
-        },
-        {
-          "dim_name": "voice",
+          "dim_name": "humanness",
           "paragraph_index": 2,
-          "score": 87.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "This paragraph has real spine to it. The opening sentence is doing genuine work — the list (\"call tools, execute code, traverse accounts, or continue working after the user has stopped watching\") isn't decorative, each item escalates the threat surface meaningfully. The pivot from \"sounds smart\" to \"clear identity, narrow permissions, real execution boundaries\" is a real claim with a point of view a reasonable person could push back on. \"Enough evidence left behind that a human institution can understand what happened later\" is the best phrase in the paragraph — specific, slightly ungainly in a good way, clearly authored. What drags it down: the second sentence ends in a list-of-four (\"clear identity, narrow permissions, real execution boundaries, and enough evidence...\") that's structurally tidy in a way that faintly smells of AI enumeration. The phrase \"security moves to the center of the product\" is the weakest moment — it's a business-deck declaration that asserts importance without defending it, the kind of line that could close a McKinsey slide. It survives a hostile editor, but just barely.",
           "evidence_refs": [
-            "drift:Minimal drift. Two localized deviations: (1) slightly longer average sentence length in the \"Standardized protocols\" and \"Audit as trust model\" sections compared to the baseline's tighter short/long alternation; (2) one short reflexive passage (\"This is also where the manuscript has to stay honest...\") adopts a meta-editorial register not present in the baseline excerpts. All other markers — direct epistemic stance, named concrete actors, technical-specific vocabulary (OAuth, sandboxing, PAT scopes, root of trust), short/long rhythm, and checklist bullet format — are indistinguishable from baseline."
+            "phrase:'security moves to the center of the product'"
           ],
           "para_excerpt": "The moment an AI system can call tools, execute code, traverse accounts, or continue working after the user has stopped watching, security moves to the center o…"
         },
         {
-          "dim_name": "usefulness",
-          "paragraph_index": 19,
-          "score": 5.0,
-          "label": "fail",
-          "reasoning": "This is pure transition prose. It references \"the same principle\" without stating what that principle is, and \"with the stakes turned up\" is decorative framing. There is no decision, threshold, tool, technique, or concrete example. The paragraph cannot stand alone and delivers zero operational content.",
-          "evidence_refs": [],
-          "para_excerpt": "Fouad Matin's security guidance for coding agents at OpenAI keeps returning to four concrete controls: sandboxing, network restriction, privilege boundaries, an…"
+          "dim_name": "humanness",
+          "paragraph_index": 4,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "This paragraph has genuine intellectual backbone. The opening move — \"not a single definitive study... a pattern of practitioner convergence\" — is a real claim with a real shape to it, and it could be contested. The tricolon at the end (\"what powers were delegated, under what conditions, and with what record of use\") earns its three parts because each is meaningfully distinct: scope, conditions, and auditability. That's not the usual AI list-of-three where the items blur together. The voice is confident and the argument survives a hostile editor. What drags it down: \"keep arriving at the same practical lesson from different directions\" is doing a lot of hand-waving — it gestures at convergence without citing a single named talk, researcher, or date. The phrase \"practitioner convergence\" sounds precise but isn't. The reader has to take the author's word for it entirely, which is a credibility gamble the paragraph doesn't fully earn. Still, the paragraph has a point of view that could be wrong, which is the right kind of writing.",
+          "evidence_refs": [
+            "phrase:'keep arriving at the same practical lesson from different directions'"
+          ],
+          "para_excerpt": "The strongest support for this claim in the current corpus is not a single definitive study. It is a pattern of practitioner convergence. Security talks, identi…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 45,
+          "paragraph_index": 43,
           "score": 5.0,
           "label": "fail",
           "reasoning": "This paragraph is pure transitional prose and meta-commentary. It references the next chapter, summarizes what the current chapter supposedly covered (\"shape of power, substrate of identity, architecture of audit\"), and frames what is coming next. There are no decisions, thresholds, principles, tools, techniques, or concrete examples. No engineer can act on any of this content. It is structural filler between chapters with zero operational lift.",
           "evidence_refs": [],
-          "para_excerpt": "## What to do with this"
+          "para_excerpt": "- Make the agent a real principal in your identity provider, not a passenger on a human's credential. Auth0's Riley and Galan frame this as \"we authorize agents…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 34,
-          "score": 8.0,
+          "paragraph_index": 14,
+          "score": 12.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure transition/framing prose. It signals that a topic is about to be introduced (\"a related issue surfaces\") and reframes it rhetorically (\"what looks like a UX annoyance is actually a governance failure\"), but provides zero specifics: no named issue, no tool, no decision point, no threshold, no concrete example. It contains no information an engineer could act on without reading the next paragraph.",
+          "reasoning": "This single sentence is pure transitional/meta commentary. It names a well-known principle (least privilege) only to dismiss it without providing any elaboration, threshold, technique, or concrete example. There is no actionable content — no guidance on what else to do, what \"not enough\" means in practice, or what tool/pattern to apply instead. It functions as a rhetorical setup for content that presumably follows, not as standalone actionable knowledge.",
           "evidence_refs": [],
-          "para_excerpt": "Most current MCP and agent integrations require the user to authorize each tool separately. The agent wants to talk to email. Consent flow. The agent wants to t…"
+          "para_excerpt": "In classic SaaS software, a narrow scope usually constrains a bounded API action. In agentic systems, the same scope can be recombined across many steps. A perm…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 42,
+          "score": 12.0,
+          "label": "fail",
+          "reasoning": "This paragraph is a philosophical aphorism with no operational content. It offers a metaphor (\"power has shape\") but defines no threshold, names no technique or tool, provides no test, and gives no concrete example. A working engineer cannot derive a Monday-morning action from it. It functions purely as decorative framing prose — atmospheric scene-setting for the chapter rather than substantive guidance.",
+          "evidence_refs": [],
+          "para_excerpt": "- Audit your agents for standing credentials. Any long-lived API key, service-account token, or \"borrowed\" personal access token is the agent inheriting a human…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1391,65 +1393,25 @@
             "unsupported:The attribution of the professional workflow description to 'Joel Hron at Thomson Reuters' — no ledger entry corroborates this named source or the specific workflow details ascribed to them."
           ],
           "para_excerpt": "Imagine a tax-preparation agent operating inside a professional workflow of the kind described by Joel Hron at Thomson Reuters. The system ingests source docume…"
-        },
-        {
-          "dim_name": "redundancy",
-          "paragraph_index": 0,
-          "score": 82.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
-          "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The 'bounded authority' framing for delegation echoes Chapter 1's core claim that a delegate is an agent the human has stepped out of the critical path for, and that trust must cover the whole workflow — Chapter 7 opens with this language before developing it into security-specific mechanics.",
-            "argument:Audit trails / observability as part of the trust and operational model partially restates Chapter 6's observability and durable-execution argument (answering what has been done, what is in flight), though Chapter 7 extends this into legal-compliance and certification territory via the public-sector case.",
-            "argument:The 'human review gate' as a safety control (Matin's four controls including human review) echoes Chapter 6's argument for human oversight as a permanent architectural feature, not a temporary crutch."
-          ],
-          "para_excerpt": "Once AI systems can act, trust stops being only a question of model quality. It becomes a question of bounded authority."
-        },
-        {
-          "dim_name": "redundancy",
-          "paragraph_index": 1,
-          "score": 82.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
-          "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The 'bounded authority' framing for delegation echoes Chapter 1's core claim that a delegate is an agent the human has stepped out of the critical path for, and that trust must cover the whole workflow — Chapter 7 opens with this language before developing it into security-specific mechanics.",
-            "argument:Audit trails / observability as part of the trust and operational model partially restates Chapter 6's observability and durable-execution argument (answering what has been done, what is in flight), though Chapter 7 extends this into legal-compliance and certification territory via the public-sector case.",
-            "argument:The 'human review gate' as a safety control (Matin's four controls including human review) echoes Chapter 6's argument for human oversight as a permanent architectural feature, not a temporary crutch."
-          ],
-          "para_excerpt": "A helpful model can get away with being vague about power. An acting system cannot."
-        },
-        {
-          "dim_name": "redundancy",
-          "paragraph_index": 2,
-          "score": 82.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-7-security-identity-and-high-stakes-trust",
-          "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The 'bounded authority' framing for delegation echoes Chapter 1's core claim that a delegate is an agent the human has stepped out of the critical path for, and that trust must cover the whole workflow — Chapter 7 opens with this language before developing it into security-specific mechanics.",
-            "argument:Audit trails / observability as part of the trust and operational model partially restates Chapter 6's observability and durable-execution argument (answering what has been done, what is in flight), though Chapter 7 extends this into legal-compliance and certification territory via the public-sector case.",
-            "argument:The 'human review gate' as a safety control (Matin's four controls including human review) echoes Chapter 6's argument for human oversight as a permanent architectural feature, not a temporary crutch."
-          ],
-          "para_excerpt": "The moment an AI system can call tools, execute code, traverse accounts, or continue working after the user has stopped watching, security moves to the center o…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-20-121211-52f0",
+        "redundancy": "2026-06-20-121211-52f0"
+      }
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:9f6d0f4",
+      "version_id": "git:b01970b",
       "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "primary_run_id": "2026-06-20-121211-52f0",
       "rollup": {
         "humanness": 76.2,
-        "voice": null,
+        "voice": 82.0,
         "usefulness": 45.4,
         "evidence_density": 90.0,
         "claim_defensibility": 70.2,
-        "redundancy": null,
+        "redundancy": 78.0,
         "n_paragraphs": 47,
         "usefulness_substantive": 51.7,
         "usefulness_connective": 6,
@@ -1457,11 +1419,11 @@
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "error",
+        "voice": "strong",
         "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -1599,19 +1561,24 @@
           ],
           "para_excerpt": "The chapter started with an asymmetry: text hides what voice exposes. Everything since has been a tour of what the text channel was quietly letting the system s…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-20-111904-05e5",
+        "redundancy": "2026-06-20-111904-05e5"
+      }
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:9f6d0f4",
+      "version_id": "git:b01970b",
       "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "primary_run_id": "2026-06-20-121211-52f0",
       "rollup": {
         "humanness": 79.8,
-        "voice": null,
+        "voice": 71.0,
         "usefulness": 64.1,
         "evidence_density": 90.0,
         "claim_defensibility": 72.0,
-        "redundancy": null,
+        "redundancy": 42.0,
         "n_paragraphs": 42,
         "usefulness_substantive": 63.5,
         "usefulness_connective": 3,
@@ -1619,11 +1586,11 @@
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "error",
+        "voice": "moderate",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "weak"
       },
       "coverage": {
         "humanness": {
@@ -1747,19 +1714,24 @@
           ],
           "para_excerpt": "The cleanest way to see the gap between \"uses AI\" and \"AI-native\" is to look at what happens at the threshold of full adoption. Dan Shipper, building the AI-nat…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-20-111904-05e5",
+        "redundancy": "2026-06-20-111904-05e5"
+      }
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:9f6d0f4",
-      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
+      "version_id": "git:b01970b",
+      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "primary_run_id": "2026-06-20-111904-05e5",
       "rollup": {
         "humanness": 76.9,
-        "voice": null,
+        "voice": 78.0,
         "usefulness": 52.8,
         "evidence_density": 90.0,
         "claim_defensibility": 77.5,
-        "redundancy": null,
+        "redundancy": 62.0,
         "n_paragraphs": 13,
         "usefulness_substantive": 56.6,
         "usefulness_connective": 1,
@@ -1767,11 +1739,11 @@
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "error",
+        "voice": "moderate",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "error"
+        "redundancy": "moderate"
       },
       "coverage": {
         "humanness": {
@@ -1898,7 +1870,11 @@
           ],
           "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on, the move Joel Hron at…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "2026-06-11-094038-1cef",
+        "redundancy": "2026-06-11-094038-1cef"
+      }
     }
   },
   "history": [
@@ -2802,6 +2778,145 @@
           "evidence_density": 90.0,
           "claim_defensibility": 77.5,
           "redundancy": null,
+          "n_paragraphs": 13,
+          "usefulness_substantive": 56.6,
+          "usefulness_connective": 1,
+          "usefulness_total": 13
+        }
+      }
+    },
+    {
+      "run_id": "2026-06-20-130253-ea0f",
+      "version_id": "git:b01970b",
+      "finished_at": "2026-06-20T13:02:55.739641+00:00",
+      "partial": true,
+      "book": {
+        "humanness": 78.3,
+        "voice": 81.3,
+        "usefulness": 54.0,
+        "evidence_density": 89.8,
+        "claim_defensibility": 76.2,
+        "redundancy": 72.0,
+        "usefulness_substantive": 57.0,
+        "usefulness_connective": 41,
+        "usefulness_total": 294
+      },
+      "chapters": {
+        "01": {
+          "humanness": 77.4,
+          "voice": 91.0,
+          "usefulness": 36.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 78.3,
+          "redundancy": 100.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 38.1,
+          "usefulness_connective": 1,
+          "usefulness_total": 17
+        },
+        "02": {
+          "humanness": 80.6,
+          "voice": 82.0,
+          "usefulness": 67.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 80.8,
+          "redundancy": 62.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 66.3,
+          "usefulness_connective": 2,
+          "usefulness_total": 20
+        },
+        "03": {
+          "humanness": 78.2,
+          "voice": 82.0,
+          "usefulness": 52.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 69.7,
+          "redundancy": 72.0,
+          "n_paragraphs": 53,
+          "usefulness_substantive": 59.1,
+          "usefulness_connective": 10,
+          "usefulness_total": 53
+        },
+        "04": {
+          "humanness": 74.2,
+          "voice": 84.0,
+          "usefulness": 48.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 71.7,
+          "redundancy": 78.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 51.3,
+          "usefulness_connective": 2,
+          "usefulness_total": 20
+        },
+        "05": {
+          "humanness": 81.0,
+          "voice": 74.0,
+          "usefulness": 60.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 78.6,
+          "redundancy": 72.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 60.8,
+          "usefulness_connective": 5,
+          "usefulness_total": 47
+        },
+        "06": {
+          "humanness": 78.8,
+          "voice": 82.0,
+          "usefulness": 54.3,
+          "evidence_density": 90.0,
+          "claim_defensibility": 80.7,
+          "redundancy": 72.0,
+          "n_paragraphs": 18,
+          "usefulness_substantive": 59.8,
+          "usefulness_connective": 2,
+          "usefulness_total": 18
+        },
+        "07": {
+          "humanness": 79.5,
+          "voice": 87.0,
+          "usefulness": 58.4,
+          "evidence_density": 88.2,
+          "claim_defensibility": 83.0,
+          "redundancy": 82.0,
+          "n_paragraphs": 50,
+          "usefulness_substantive": 63.1,
+          "usefulness_connective": 9,
+          "usefulness_total": 45
+        },
+        "08": {
+          "humanness": 76.2,
+          "voice": 82.0,
+          "usefulness": 45.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 70.2,
+          "redundancy": 78.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 51.7,
+          "usefulness_connective": 6,
+          "usefulness_total": 37
+        },
+        "09": {
+          "humanness": 79.8,
+          "voice": 71.0,
+          "usefulness": 64.1,
+          "evidence_density": 90.0,
+          "claim_defensibility": 72.0,
+          "redundancy": 42.0,
+          "n_paragraphs": 42,
+          "usefulness_substantive": 63.5,
+          "usefulness_connective": 3,
+          "usefulness_total": 24
+        },
+        "10": {
+          "humanness": 76.9,
+          "voice": 78.0,
+          "usefulness": 52.8,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.5,
+          "redundancy": 62.0,
           "n_paragraphs": 13,
           "usefulness_substantive": 56.6,
           "usefulness_connective": 1,
