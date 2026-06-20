@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 82
+- Total tagged videos: 83
 
 ## Cross-video synthesis
 
-- This theme appears across 82 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (24), Coding Agents (24), Org Design & Leadership (12).
+- This theme appears across 83 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (25), Coding Agents (25), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
 
 ## Seed videos
@@ -94,6 +94,7 @@
 - [[745-KLSuFPj2ld0-building-safe-payment-infrastructure-for-the-autonomous-economy-steve-kaliski-stripe|#745 — Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe]]
 - [[747-_xIwFcnHqp4-building-interactive-uis-in-vs-code-with-mcp-apps-marlene-mhangami-liam-hampton-github|#747 — Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub]]
 - [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748 — From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data]]
+- [[764-c-2eEv2ou7Y-why-mcp-and-chatgpt-apps-use-double-iframes-fr-d-ric-barthelet-alpic|#764 — Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic]]
 
 ## Notes
 

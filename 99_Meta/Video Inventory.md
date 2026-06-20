@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 757
+Total videos: 767
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -759,3 +759,13 @@ Total videos: 757
 755. [From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind](https://www.youtube.com/watch?v=Bc6Ojl2XS1w) — `Bc6Ojl2XS1w` — 19:34
 756. [RAG is dead, right?? — Kuba Rogut, Turbopuffer](https://www.youtube.com/watch?v=UM6sFg_jdlE) — `UM6sFg_jdlE` — 11:13
 757. [GPU Cloud Deployment Without Leaving Your IDE — Audry Hsu, RunPod](https://www.youtube.com/watch?v=zDGHt0LB-dA) — `zDGHt0LB-dA` — 20:19
+758. [Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog](https://www.youtube.com/watch?v=zMiSRliEzv4) — `zMiSRliEzv4` — 15:39
+759. [Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind](https://www.youtube.com/watch?v=SS-A8sE7hkw) — `SS-A8sE7hkw` — 20:52
+760. [Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel](https://www.youtube.com/watch?v=TNwJ1LMiENk) — `TNwJ1LMiENk` — 20:56
+761. [How to Keep Shipping When You Walk Away from Your Desk — Zack Proser, WorkOS](https://www.youtube.com/watch?v=so9l_MwS2yg) — `so9l_MwS2yg` — 25:17
+762. [WebMCP: How every website talks to agents — Tara Agyemang, Google Chrome](https://www.youtube.com/watch?v=ghJmWQCIHRM) — `ghJmWQCIHRM` — 21:34
+763. [Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS](https://www.youtube.com/watch?v=iUWwcG-C8OU) — `iUWwcG-C8OU` — 19:06
+764. [Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic](https://www.youtube.com/watch?v=c-2eEv2ou7Y) — `c-2eEv2ou7Y` — 20:11
+765. [You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia](https://www.youtube.com/watch?v=gHs5ZiY80PM) — `gHs5ZiY80PM` — 18:46
+766. [Your Agent's Biggest Lie: "I Searched the Web" — Rafael Levi, Bright Data](https://www.youtube.com/watch?v=btxGmN8RvNU) — `btxGmN8RvNU` — 15:49
+767. [£85K Burned on a Failed PoC: What Actually Gets Agents to Production — Sandipan Bhaumik, Databricks](https://www.youtube.com/watch?v=ObTPqBGsEbA) — `ObTPqBGsEbA` — 37:06

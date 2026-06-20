@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 215
+- Total tagged videos: 224
 
 ## Cross-video synthesis
 
-- This theme appears across 215 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (105), Agent Architecture (94), Models & Inference (19).
+- This theme appears across 224 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (114), Agent Architecture (102), Models & Inference (19).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI; #25 Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA.
 
 ## Seed videos
@@ -227,6 +227,15 @@
 - [[755-Bc6Ojl2XS1w-from-transcription-to-live-music-gemini-s-audio-stack-thor-schaeff-google-deepmind|#755 — From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind]]
 - [[756-UM6sFg_jdlE-rag-is-dead-right-kuba-rogut-turbopuffer|#756 — RAG is dead, right?? — Kuba Rogut, Turbopuffer]]
 - [[757-zDGHt0LB-dA-gpu-cloud-deployment-without-leaving-your-ide-audry-hsu-runpod|#757 — GPU Cloud Deployment Without Leaving Your IDE — Audry Hsu, RunPod]]
+- [[758-zMiSRliEzv4-self-driving-products-product-signals-to-pull-requests-joshua-snyder-posthog|#758 — Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog]]
+- [[759-SS-A8sE7hkw-sovereign-escape-velocity-ownership-w-open-models-gus-martins-ian-ballantyne-google-deepmi|#759 — Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind]]
+- [[760-TNwJ1LMiENk-stop-making-models-bigger-make-them-behave-kobie-crawford-snorkel|#760 — Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel]]
+- [[761-so9l_MwS2yg-how-to-keep-shipping-when-you-walk-away-from-your-desk-zack-proser-workos|#761 — How to Keep Shipping When You Walk Away from Your Desk — Zack Proser, WorkOS]]
+- [[762-ghJmWQCIHRM-webmcp-how-every-website-talks-to-agents-tara-agyemang-google-chrome|#762 — WebMCP: How every website talks to agents — Tara Agyemang, Google Chrome]]
+- [[763-iUWwcG-C8OU-why-can-t-anyone-answer-questions-about-the-business-garrett-galow-workos|#763 — Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS]]
+- [[765-gHs5ZiY80PM-you-might-not-need-50-diffusion-steps-ziv-ilan-nvidia|#765 — You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia]]
+- [[766-btxGmN8RvNU-your-agent-s-biggest-lie-i-searched-the-web-rafael-levi-bright-data|#766 — Your Agent's Biggest Lie: "I Searched the Web" — Rafael Levi, Bright Data]]
+- [[767-ObTPqBGsEbA-85k-burned-on-a-failed-poc-what-actually-gets-agents-to-production-sandipan-bhaumik-databr|#767 — £85K Burned on a Failed PoC: What Actually Gets Agents to Production — Sandipan Bhaumik, Databricks]]
 
 ## Notes
 
