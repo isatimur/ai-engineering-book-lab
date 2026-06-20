@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "2026-06-20-111904-05e5",
-    "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+    "run_id": "2026-06-20-121211-52f0",
+    "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
-    "finished_at": "2026-06-20T11:59:43.896463+00:00",
-    "total_cost_usd": 3.1792,
+    "finished_at": "2026-06-20T12:12:38.961561+00:00",
+    "total_cost_usd": 0.0,
     "status": "completed",
     "dims": [
       "humanness",
@@ -18,63 +18,63 @@
     ],
     "coverage": {
       "humanness": {
-        "scored": 272,
-        "total": 342
+        "scored": 234,
+        "total": 329
       },
       "voice": {
-        "scored": 209,
-        "total": 342
+        "scored": 87,
+        "total": 329
       },
       "usefulness": {
-        "scored": 342,
-        "total": 342
+        "scored": 298,
+        "total": 329
       },
       "evidence_density": {
-        "scored": 64,
-        "total": 90
+        "scored": 46,
+        "total": 89
       },
       "claim_defensibility": {
-        "scored": 308,
-        "total": 342
+        "scored": 279,
+        "total": 329
       },
       "redundancy": {
-        "scored": 209,
-        "total": 342
+        "scored": 107,
+        "total": 329
       }
     },
     "partial": true
   },
   "book": {
-    "humanness": 76.7,
-    "voice": 82.8,
-    "usefulness": 51.5,
+    "humanness": 77.8,
+    "voice": 84.3,
+    "usefulness": 53.6,
     "evidence_density": 89.9,
-    "claim_defensibility": 73.7,
-    "redundancy": 75.3,
-    "usefulness_substantive": 55.5,
-    "usefulness_connective": 53,
-    "usefulness_total": 342
+    "claim_defensibility": 76.2,
+    "redundancy": 83.0,
+    "usefulness_substantive": 56.8,
+    "usefulness_connective": 40,
+    "usefulness_total": 298
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
-        "humanness": 72.2,
-        "voice": 91.0,
-        "usefulness": 33.2,
+        "humanness": 77.4,
+        "voice": null,
+        "usefulness": 36.5,
         "evidence_density": 90.0,
-        "claim_defensibility": 69.2,
+        "claim_defensibility": 78.3,
         "redundancy": 100.0,
         "n_paragraphs": 20,
-        "usefulness_substantive": 37.6,
-        "usefulness_connective": 3,
-        "usefulness_total": 20
+        "usefulness_substantive": 38.1,
+        "usefulness_connective": 1,
+        "usefulness_total": 17
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "strong",
+        "voice": "error",
         "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
@@ -82,15 +82,15 @@
       },
       "coverage": {
         "humanness": {
-          "scored": 19,
+          "scored": 16,
           "total": 20
         },
         "voice": {
-          "scored": 20,
+          "scored": 0,
           "total": 20
         },
         "usefulness": {
-          "scored": 20,
+          "scored": 17,
           "total": 20
         },
         "evidence_density": {
@@ -98,7 +98,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 20,
+          "scored": 17,
           "total": 20
         },
         "redundancy": {
@@ -106,54 +106,8 @@
           "total": 20
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes a standalone thematic claim — that \"the two cases stress the same idea from opposite directions\" — but there is no ledger entry that supports or even references \"two cases\" being compared, nor any entry about a symmetrical or bidirectional argument structure. While the ledger entries address related themes (transition to delegated execution, chat as insufficient, scaffolding, oversight), none of them establish or support the specific rhetorical claim being made here about two cases converging on a single idea from opposite directions. This claim has no ledger backing whatsoever.",
-          "evidence_refs": [
-            "unsupported:The two cases stress the same idea from opposite directions — there is no ledger entry establishing that two specific cases are being compared, nor that they converge on a single idea from opposite directions."
-          ],
-          "para_excerpt": "The two cases stress the same idea from opposite directions."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes two distinct claims: (1) that there are precisely \"three relationships a person can have with an AI system,\" and (2) that these relationships are \"not the same thing scaled up.\" Neither of these claims has any matching ledger entry. The ledger entries address the transition from suggestion to delegated execution, the insufficiency of chat as a control surface, the role of scaffolding in reliability, and oversight as an architectural layer — none of which map to a taxonomy of three distinct human-AI relationships or the assertion that they differ qualitatively rather than quantitatively. The \"three relationships\" claim in particular is a specific, concrete assertion with zero ledger backing, making this a clear unsupported fabrication relative to the evidence base. The paragraph introduces a novel framing not grounded in any declared ledger entry.",
-          "evidence_refs": [
-            "unsupported:There are three relationships a person can have with an AI system — no ledger entry establishes or supports a three-part taxonomy of human-AI relationships.",
-            "unsupported:These three relationships are not the same thing scaled up — no ledger entry supports the claim that the relationships differ qualitatively rather than quantitatively."
-          ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 12,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "This is pure scaffolding. \"The two cases stress the same idea from opposite directions\" is a textbook transition sentence that exists only to signal structural movement — it carries zero information, makes no claim, and could be dropped without losing a single concrete thought. There's no specificity, no point of view, nothing that could be wrong. It's the prose equivalent of a PowerPoint slide header.",
-          "evidence_refs": [
-            "phrase:'stress the same idea from opposite directions'"
-          ],
-          "para_excerpt": "The two cases stress the same idea from opposite directions."
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 0,
-          "score": 38.0,
-          "label": "weak",
-          "reasoning": "The opening sentence (\"It helps to be precise about what is shifting\") is a soft throat-clear that promises rigor without delivering it yet — a classic AI scaffolding move. \"The words get used loosely\" is vague: which words? The surrounding context tells us, but the paragraph itself doesn't anchor the claim. The real offender is \"There are three relationships a person can have with an AI system, and they are not the same thing scaled up.\" This is a listicle stem in disguise. It announces a taxonomy is coming without making any actual claim — a smooth transition that hides the absence of an argument. The one saving grace is \"not the same thing scaled up,\" which at least gestures at a real idea (that these are qualitatively different, not quantitatively different), but it's doing that work too obliquely to redeem the paragraph. Nothing concrete is lost if this paragraph is cut; the surrounding context carries all the weight.",
-          "evidence_refs": [
-            "phrase:'There are three relationships a person can have with an AI system, and they are not the same thing scaled up.'"
-          ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
-        },
         {
           "dim_name": "humanness",
           "paragraph_index": 9,
@@ -166,46 +120,26 @@
           "para_excerpt": "Once a system is doing real work rather than answering questions, the conversational surface becomes only the visible tip of it. The actual product is the appar…"
         },
         {
-          "dim_name": "voice",
-          "paragraph_index": 0,
-          "score": 91.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
-          "evidence_refs": [
-            "drift:No meaningful drift detected. Sentence rhythm (short punches alternating with long enumerations), epistemic directness, named-actor concreteness, and technical-practitioner vocabulary all match the baseline precisely. Several passages appear verbatim from baseline excerpts. The only minor variance is slightly more discursive meta-commentary in transitional sections (\"The evidence for this shift is not a controlled study...\"), which reads as intentional rhetorical framing for an opening chapter rather than authorial voice drift."
-          ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
-        },
-        {
-          "dim_name": "voice",
+          "dim_name": "humanness",
           "paragraph_index": 1,
-          "score": 91.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "The paragraph is doing real definitional work and earns its place in the taxonomy. The opening move — \"An assistant suggests\" — is crisp and takes a position. The \"draft, an answer, an option\" triplet is the weakest moment: it's a list-of-three that feels like padding rather than precision (what's the meaningful distinction between those three things?). \"Critical path\" is functional but slightly corporate. The final clause — \"the assistant's job is to make that step faster\" — is a defensible claim but a thin one; a hostile editor would want to know faster than what, and whether speed is really the defining purpose or just a side effect. Still, the paragraph holds together, has a point of view, and contributes to a real argument. It would lose something if cut.",
           "evidence_refs": [
-            "drift:No meaningful drift detected. Sentence rhythm (short punches alternating with long enumerations), epistemic directness, named-actor concreteness, and technical-practitioner vocabulary all match the baseline precisely. Several passages appear verbatim from baseline excerpts. The only minor variance is slightly more discursive meta-commentary in transitional sections (\"The evidence for this shift is not a controlled study...\"), which reads as intentional rhetorical framing for an opening chapter rather than authorial voice drift."
+            "phrase:'a draft, an answer, an option'"
           ],
           "para_excerpt": "An **assistant** suggests. It produces something you then decide what to do with — a draft, an answer, an option. The human stays in the critical path for every…"
         },
         {
-          "dim_name": "voice",
+          "dim_name": "humanness",
           "paragraph_index": 2,
-          "score": 91.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "The paragraph does real definitional work and sits inside a clearly structured argument with a point of view. The airplane metaphor is earned — it mirrors the \"flying the plane\" framing that presumably runs through the piece, and \"continuous small contributions\" is precise enough to be argued against. The canonical coding-copilot example is specific and grounding. However, \"collaborates inside a human loop\" is slightly jargon-smooth, and \"the canonical case\" is a mild hedge dressed as authority — it gestures at rigor without committing to a claim. The paragraph is readable and functional but not surprising; a hostile editor would push the author to say *why* this is categorically different from an assistant, not just describe the geometry of the interaction.",
           "evidence_refs": [
-            "drift:No meaningful drift detected. Sentence rhythm (short punches alternating with long enumerations), epistemic directness, named-actor concreteness, and technical-practitioner vocabulary all match the baseline precisely. Several passages appear verbatim from baseline excerpts. The only minor variance is slightly more discursive meta-commentary in transitional sections (\"The evidence for this shift is not a controlled study...\"), which reads as intentional rhetorical framing for an opening chapter rather than authorial voice drift."
+            "phrase:'collaborates inside a human loop'"
           ],
           "para_excerpt": "A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were a…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 12,
-          "score": 5.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure transition/connective prose. It references \"two cases\" without identifying them, makes no claim, offers no principle, threshold, or actionable detail. It exists solely to link two surrounding paragraphs and has zero standalone informational value.",
-          "evidence_refs": [],
-          "para_excerpt": "The two cases stress the same idea from opposite directions."
         },
         {
           "dim_name": "usefulness",
@@ -218,48 +152,55 @@
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 0,
+          "paragraph_index": 11,
           "score": 8.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure transitional/introductory prose. It announces that a distinction is coming (\"three relationships\") but delivers no actual content, decision, threshold, or named concept. It is meta-commentary about what the text is about to say, with zero operational information an engineer could act on.",
+          "reasoning": "This paragraph is pure meta-commentary about the book itself — what it claims, what it doesn't claim, and what kind of evidence it draws on. It contains no decisions, thresholds, principles, tools, techniques, or concrete examples. It explicitly disclaims having a solved problem or actionable answer. A working engineer cannot change anything on Monday based on this text.",
           "evidence_refs": [],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
+          "para_excerpt": "The evidence for this shift is not a controlled study proving that broad delegation already works well everywhere. It does not yet. What the corpus shows is som…"
         },
         {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 0.0,
+          "dim_name": "usefulness",
+          "paragraph_index": 16,
+          "score": 8.0,
           "label": "fail",
-          "reasoning": "The paragraph makes a standalone thematic claim — that \"the two cases stress the same idea from opposite directions\" — but there is no ledger entry that supports or even references \"two cases\" being compared, nor any entry about a symmetrical or bidirectional argument structure. While the ledger entries address related themes (transition to delegated execution, chat as insufficient, scaffolding, oversight), none of them establish or support the specific rhetorical claim being made here about two cases converging on a single idea from opposite directions. This claim has no ledger backing whatsoever.",
-          "evidence_refs": [
-            "unsupported:The two cases stress the same idea from opposite directions — there is no ledger entry establishing that two specific cases are being compared, nor that they converge on a single idea from opposite directions."
-          ],
-          "para_excerpt": "The two cases stress the same idea from opposite directions."
+          "reasoning": "This paragraph is pure transition prose. It explicitly previews Chapter 2, frames the \"opening argument,\" and restates a theme (judgment becomes scarce) without providing any decision, threshold, technique, tool, or concrete example. There is no operational content an engineer could act on Monday. It is meta-commentary about the book's structure.",
+          "evidence_refs": [],
+          "para_excerpt": "That conclusion hands directly to the next chapter. If delegation makes execution cheap, it does not make judgment cheap — it makes judgment *scarce*, and there…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes two distinct claims: (1) that there are precisely \"three relationships a person can have with an AI system,\" and (2) that these relationships are \"not the same thing scaled up.\" Neither of these claims has any matching ledger entry. The ledger entries address the transition from suggestion to delegated execution, the insufficiency of chat as a control surface, the role of scaffolding in reliability, and oversight as an architectural layer — none of which map to a taxonomy of three distinct human-AI relationships or the assertion that they differ qualitatively rather than quantitatively. The \"three relationships\" claim in particular is a specific, concrete assertion with zero ledger backing, making this a clear unsupported fabrication relative to the evidence base. The paragraph introduces a novel framing not grounded in any declared ledger entry.",
+          "paragraph_index": 2,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "The paragraph focuses on defining the \"copilot\" pattern — a human-in-the-loop, real-time collaborative mode of AI assistance. This is broadly consistent with ledger entries claims#1 (the important transition being from suggestion to delegated execution implicitly requires defining the suggestion/copilot end of the spectrum) and claims#12 (human oversight as an architectural layer). The paragraph does not contradict any ledger entry and stays comfortably within the spirit of those claims.\n\nHowever, the paragraph introduces a fairly specific and concrete framing — \"the canonical case is the coding copilot completing the line you were already typing\" and \"the human is still flying the plane\" — that goes somewhat beyond what the ledger entries directly support. These are illustrative framings rather than factual assertions, and they are minor/supporting rather than central claims. None of the ledger entries speak to the copilot pattern specifically or validate these analogies, so they are mildly unsupported, though not fabricated or harmful.\n\nThe paragraph does not overstate any ledger-backed claim — it does not assert reliability, dismiss chat, or elevate scaffolding above the ledger's stated strength. The only concern is that the definitional and analogical content (\"canonical case,\" \"flying the plane\") lacks direct ledger backing. These are minor framing choices rather than core factual claims, keeping this out of \"fail\" territory but preventing a \"strong\" rating.",
           "evidence_refs": [
-            "unsupported:There are three relationships a person can have with an AI system — no ledger entry establishes or supports a three-part taxonomy of human-AI relationships.",
-            "unsupported:These three relationships are not the same thing scaled up — no ledger entry supports the claim that the relationships differ qualitatively rather than quantitatively."
+            "unsupported:The canonical case of a copilot is completing the line the human was already typing — no ledger entry validates this as the canonical or defining example of the copilot pattern.",
+            "unsupported:The metaphor of 'the human is still flying the plane' as a characterization of the copilot mode has no direct ledger backing, though it is illustrative rather than factual."
           ],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
+          "para_excerpt": "A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were a…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 8,
-          "score": 38.0,
-          "label": "weak",
-          "reasoning": "The central claim of this paragraph is that a smarter model alone cannot close the gap — that intelligence is necessary but not sufficient, and that capability differs from expertise (specific context, conventions, institutional knowledge). While this is thematically adjacent to ledger entries claims#2 and claims#3 (that reliability comes from scaffolding rather than model cleverness, and that chat is insufficient for high-stakes work), neither of those entries specifically concerns the capability-vs-expertise distinction or the argument that institutional context is what separates plausible from usable results. The specific attribution to \"Barry Zhang and Mahesh Murag at Anthropic\" and the quoted framing (\"have intelligence and capabilities, but not always expertise that we need for real work\") is a concrete factual claim with no ledger entry backing it at all — making it unsupported. The broader thesis that intelligence is not sufficient is directionally consistent with claims#3, but the paragraph elevates it to a central, standalone argument with rhetorical confidence that goes beyond what the ledger's scaffolding-focused entry supports. Ledger entries claims#1 and claims#12 are not meaningfully engaged by this paragraph.",
+          "paragraph_index": 4,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "Most of the paragraph's claims are well-grounded. The assertion that assistants and copilots remain useful for many tasks is uncontroversial and requires no specific ledger backing. The core claim — that the hard problems have migrated to delegation — aligns well with claims#1 (the important transition is from suggestion to delegated execution) and claims#2 (chat is an insufficient control surface for long-running/high-stakes work), both at strong strength, and the prose does not overstate them. However, the phrase \"the engineering difficulty, the product ambition, and the organizational upheaval have all migrated to the third category\" is a broader, more sweeping triple-axis assertion (engineering, product, and organizational) than what claims#1 and claims#2 specifically support. The ledger strongly supports the engineering/execution difficulty angle, but \"product ambition\" and especially \"organizational upheaval\" are not explicitly backed by any ledger entry, making that phrase a mild overstatement relative to what the ledger can sustain. Additionally, claims#3 and claims#12 are present in the ledger but are not invoked in this paragraph, so there is no issue there. Overall, the central thesis holds up well, but the enumerated three-axis claim slightly outruns the ledger evidence.",
           "evidence_refs": [
-            "overstated:The claim that 'intelligence is necessary but not sufficient' is framed as a settled, demonstrated conclusion ('It has turned out not to be sufficient'), but the closest ledger entry (claims#3) only supports that reliability comes less from model cleverness than from surrounding scaffolding — a comparative, qualified statement, not an absolute verdict on the insufficiency of intelligence.",
-            "unsupported:The specific attribution to Barry Zhang and Mahesh Murag at Anthropic, including the direct quotation ('have intelligence and capabilities, but not always expertise that we need for real work'), has no corresponding ledger entry and cannot be verified against any declared evidence.",
-            "unsupported:The capability-vs-expertise distinction (specific context, conventions, institutional knowledge as separating a plausible from a usable result) is presented as a substantiated framework but has no dedicated ledger entry supporting it."
+            "overstated:The claim that 'the engineering difficulty, the product ambition, and the organizational upheaval have all migrated to the third category' — the ledger strongly supports the engineering/execution-difficulty dimension (claims#1, claims#2), but 'product ambition' and 'organizational upheaval' as co-equal migrating forces are not backed by any ledger entry at the strength level the prose implies."
           ],
-          "para_excerpt": "And the gap is not closed by a smarter model alone. Barry Zhang and Mahesh Murag at Anthropic name the distinction carefully: agents \"have intelligence and capa…"
+          "para_excerpt": "This book's claim is not that assistants and copilots disappear. They remain useful, and for many tasks they are the right tool. The claim is that the engineeri…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 5,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "Most of the paragraph is well-grounded. The claim that suggestion is safe \"by construction\" because a human reads every word aligns naturally with ledger entries claims#1 (the important transition *from* suggestion implies suggestion itself is a supervised, lower-risk mode) and claims#12 (human oversight as an architectural layer). These claims are stated with confidence, but that confidence is proportionate to the strong ledger entries behind them.\n\nHowever, the claim that \"the error surfaces immediately, in context, with the person who asked still holding full attention\" is a minor overstatement. The ledger supports human oversight as an architectural value (claims#12) but does not claim that the oversight is reliably attentive or timely in practice — in fact, claims#2 implicitly acknowledges that the chat/suggestion mode *does* have limitations. Asserting that full human attention is guaranteed when an error occurs is slightly stronger than what the ledger warrants: humans skim, lose context, or are not always the same person who asked. This is a minor overstatement on a secondary descriptive claim, not the central thesis, which keeps the paragraph in moderate territory rather than weak.",
+          "evidence_refs": [
+            "overstated:'the error surfaces immediately, in context, with the person who asked still holding full attention' — the ledger supports human oversight as an architectural principle (claims#12) but does not warrant the assertion that human attention is reliably full and immediate; this overstates the quality and consistency of supervision in the suggestion mode."
+          ],
+          "para_excerpt": "When an assistant is wrong, the cost is bounded by the fact that a human is reading every word it produces. The error surfaces immediately, in context, with the…"
         },
         {
           "dim_name": "redundancy",
@@ -268,7 +209,7 @@
           "label": "strong",
           "reasoning": "inherited from chapter:chapter-1-the-shift-from-assistant-to-delegate",
           "evidence_refs": [],
-          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they a…"
+          "para_excerpt": "It helps to be precise about what is shifting, because the words get used loosely. The cleanest test is where the human sits relative to the loop: in the critic…"
         },
         {
           "dim_name": "redundancy",
@@ -292,8 +233,8 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 80.6,
         "voice": null,
@@ -440,8 +381,8 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 78.2,
         "voice": null,
@@ -627,8 +568,8 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 74.2,
         "voice": 84.0,
@@ -889,8 +830,8 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 81.0,
         "voice": null,
@@ -1041,8 +982,8 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 78.8,
         "voice": 82.0,
@@ -1272,8 +1213,8 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 74.5,
         "voice": 87.0,
@@ -1500,39 +1441,39 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
-        "humanness": 71.8,
-        "voice": 82.0,
-        "usefulness": 38.7,
+        "humanness": 76.2,
+        "voice": null,
+        "usefulness": 45.4,
         "evidence_density": 90.0,
-        "claim_defensibility": 68.8,
-        "redundancy": 78.0,
+        "claim_defensibility": 70.2,
+        "redundancy": null,
         "n_paragraphs": 47,
-        "usefulness_substantive": 47.1,
-        "usefulness_connective": 11,
-        "usefulness_total": 47
+        "usefulness_substantive": 51.7,
+        "usefulness_connective": 6,
+        "usefulness_total": 37
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "strong",
+        "voice": "error",
         "usefulness": "weak",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "moderate"
+        "redundancy": "error"
       },
       "coverage": {
         "humanness": {
-          "scored": 30,
+          "scored": 24,
           "total": 47
         },
         "voice": {
-          "scored": 47,
+          "scored": 0,
           "total": 47
         },
         "usefulness": {
-          "scored": 47,
+          "scored": 37,
           "total": 47
         },
         "evidence_density": {
@@ -1540,11 +1481,11 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 47,
+          "scored": 37,
           "total": 47
         },
         "redundancy": {
-          "scored": 47,
+          "scored": 0,
           "total": 47
         }
       },
@@ -1559,43 +1500,9 @@
             "unsupported:Once latency and orchestration engineering is in place, the next ceiling is conversational, not technical — no ledger entry establishes a transition from technical to conversational as the dominant constraint, and existing entries (claims#22, #29) continue to frame the ceiling in technical terms."
           ],
           "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 40,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes two substantive claims: (1) that voice is a natural starting point for studying \"embodied constraints\" because the engineering is mature enough to be teachable, and (2) that robotics extends the same frame into tighter physical constraints and higher-stakes failure modes. Neither of these claims maps to any of the provided ledger entries. The ledger covers topics like durable state as a trust feature, agency tuning, realtime AI as a coordination/latency problem, voice as a wrapper around chat agents, half-duplex as an architectural ceiling, TTS architecture converging on LLM architecture, and latency masking as an architectural category. None of these entries speak to: (a) voice as a pedagogical entry point for \"embodied constraints,\" (b) the maturity of voice engineering as a teachable domain, or (c) robotics as an extension of voice constraints into physical/higher-stakes regimes. Both claims in the paragraph are entirely unsupported by the ledger, making this a fail.",
-          "evidence_refs": [
-            "unsupported:Voice is a natural starting point for studying embodied constraints because the engineering is mature enough to be teachable.",
-            "unsupported:Robotics extends the same frame into tighter physical constraints and higher-stakes failure modes."
-          ],
-          "para_excerpt": "Voice is a natural starting point for studying embodied constraints — the engineering is mature enough to be teachable. Robotics extends the same frame into tig…"
         }
       ],
       "weakest": [
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 37,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "This sentence is pure scaffolding — it does nothing except announce that something is about to happen. \"A short note on X, which Y gestured at\" is a throat-clearing construction that could be deleted without losing a single milligram of meaning. There is no claim, no point of view, no specificity. It exists only to transition, and it doesn't even transition well; it just points vaguely backward at a chapter title. A hostile editor would circle the entire sentence and write \"START HERE\" next to whatever comes after it.",
-          "evidence_refs": [
-            "phrase:'A short note on robotics, which the chapter title gestured at'"
-          ],
-          "para_excerpt": "A short note on robotics, which the chapter title gestured at."
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 31,
-          "score": 18.0,
-          "label": "fail",
-          "reasoning": "This sentence is pure scaffolding dressed up as insight. It makes no actual claim — \"when the engineering constraints are isomorphic, the techniques follow\" sounds profound but says nothing that could be wrong, tested, or disagreed with. It's the kind of sentence an AI writes when it wants to *sound* like it's synthesizing without actually synthesizing anything. \"Scaffolding patterns transfer across substrates\" is jargon stacked on jargon, offering zero specificity about which patterns, which substrates, or what the actual convergence looks like. The surrounding context (Humeau's quote, the auto-regressive decoder observation) does real work; this sentence coasts on that work while contributing nothing concrete. Removing it loses absolutely nothing.",
-          "evidence_refs": [
-            "phrase:'scaffolding patterns transfer across substrates'"
-          ],
-          "para_excerpt": "TTS architecture convergence illustrates how scaffolding patterns transfer across substrates: when the engineering constraints are isomorphic, the techniques fo…"
-        },
         {
           "dim_name": "humanness",
           "paragraph_index": 10,
@@ -1608,55 +1515,26 @@
           "para_excerpt": "A common mistake in voice projects is to assume that the existing chat agent has to be redesigned for voice. The instinct is reasonable. Voice feels different e…"
         },
         {
-          "dim_name": "voice",
-          "paragraph_index": 0,
-          "score": 82.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
+          "dim_name": "humanness",
+          "paragraph_index": 29,
+          "score": 52.0,
+          "label": "moderate",
+          "reasoning": "The paragraph has some genuine editorial momentum — \"designed in, not bolted on at the end\" is a real claim with a real edge, and the triple \"can be excellent\" construction actually works rhetorically here because it's building toward a specific point rather than padding. The paragraph does something: it situates latency masking within the book's thesis, and the final two sentences are defensible as a take. However, the opening phrase \"one of the cleanest examples of the scaffolding-makes-reliability argument\" is doing vague connective tissue work — it's meta-commentary about the book rather than an actual claim. The word \"cleanest\" is doing no work; if you removed it, nothing is lost. The middle triple-anaphora risks feeling like a rhetorical tic rather than earned rhythm. There's no specific name, number, or system cited — the paragraph is entirely abstract. It floats above its own argument. Readable, directional, but not specific enough to be irreplaceable.",
           "evidence_refs": [
-            "drift:Minimal drift; the chapter is largely indistinguishable from the baseline. Two small deviations: (1) the draft-note header section uses a meta-production register (ledger entries, commit language, anchor queues) that appears briefly in the baseline but is more foregrounded here, occasionally pulling tone toward internal documentation; (2) a handful of analytical paragraphs in the TTS and robotics sections run longer and more uniformly than the baseline's characteristic short/long alternation, slightly flattening the rhythm. Neither is severe enough to suggest a different author — both patterns have precedent in the baseline excerpts — but they are detectable as the chapter's weakest moments of voice fidelity."
+            "phrase:'one of the cleanest examples of the scaffolding-makes-reliability argument'"
           ],
-          "para_excerpt": "The natural assumption among engineers stepping into voice for the first time is that the model is the bottleneck. If the speech-to-speech system feels stiff, t…"
+          "para_excerpt": "The reason this matters for the book's broader thesis is that latency masking is one of the cleanest examples of the scaffolding-makes-reliability argument. The…"
         },
         {
-          "dim_name": "voice",
-          "paragraph_index": 1,
-          "score": 82.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
+          "dim_name": "humanness",
+          "paragraph_index": 16,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "The sentence has a real structure and makes a claim worth arguing with — that the next hard problem shifts from engineering to conversation design. That's a defensible position, not mush. The surrounding context (Zeghidour quote, half-duplex architecture) gives it earned weight, and this sentence functions as a pivot, which is a legitimate authorial move. However, the construction \"the next ceiling is X, not Y\" is a well-worn binary-flip rhetorical pattern that floats above the specific and can be dropped into almost any technology transition essay without modification. It's clean but a little too clean — a journalist's pivot sentence, not a thinker's claim. No specifics, no friction, no possibility of being concretely wrong.",
           "evidence_refs": [
-            "drift:Minimal drift; the chapter is largely indistinguishable from the baseline. Two small deviations: (1) the draft-note header section uses a meta-production register (ledger entries, commit language, anchor queues) that appears briefly in the baseline but is more foregrounded here, occasionally pulling tone toward internal documentation; (2) a handful of analytical paragraphs in the TTS and robotics sections run longer and more uniformly than the baseline's characteristic short/long alternation, slightly flattening the rhythm. Neither is severe enough to suggest a different author — both patterns have precedent in the baseline excerpts — but they are detectable as the chapter's weakest moments of voice fidelity."
+            "phrase:'the next ceiling is conversational, not technical'"
           ],
-          "para_excerpt": "The practitioners building production voice systems do not see it that way anymore. Sean DuBois at OpenAI and Kwindla Hultman Kramer at Daily titled their joint…"
-        },
-        {
-          "dim_name": "voice",
-          "paragraph_index": 2,
-          "score": 82.0,
-          "label": "strong",
-          "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-          "evidence_refs": [
-            "drift:Minimal drift; the chapter is largely indistinguishable from the baseline. Two small deviations: (1) the draft-note header section uses a meta-production register (ledger entries, commit language, anchor queues) that appears briefly in the baseline but is more foregrounded here, occasionally pulling tone toward internal documentation; (2) a handful of analytical paragraphs in the TTS and robotics sections run longer and more uniformly than the baseline's characteristic short/long alternation, slightly flattening the rhythm. Neither is severe enough to suggest a different author — both patterns have precedent in the baseline excerpts — but they are detectable as the chapter's weakest moments of voice fidelity."
-          ],
-          "para_excerpt": "Neil Zeghidour at Gradium AI makes the strongest version of this argument. \"The main bottleneck is becoming the tool call,\" he says, after walking through what …"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 4,
-          "score": 5.0,
-          "label": "fail",
-          "reasoning": "This is pure meta-commentary about the structure and framing of the book. It tells the reader what the chapter will do (treat voice analogously to prior topics) without conveying any decision, principle, threshold, technique, or actionable example. It contains zero operational content.",
-          "evidence_refs": [],
-          "para_excerpt": "The chapter that follows treats voice the way the rest of the book has treated coding, evaluation, context, and runtime: as a problem of the loop around the mod…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 37,
-          "score": 5.0,
-          "label": "fail",
-          "reasoning": "This paragraph is purely transitional/meta-commentary. It references the chapter title and signals a topic shift to robotics, but contains zero actionable content — no decisions, thresholds, techniques, tools, or principles. It is filler by definition.",
-          "evidence_refs": [],
-          "para_excerpt": "A short note on robotics, which the chapter title gestured at."
+          "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
         },
         {
           "dim_name": "usefulness",
@@ -1668,6 +1546,24 @@
           "para_excerpt": "The next chapter widens out from this stress test to the organizational question the book has been pointing at since the opening. If reliable AI is a property o…"
         },
         {
+          "dim_name": "usefulness",
+          "paragraph_index": 16,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This sentence is pure transition/meta-commentary prose. It makes a high-level assertion that the \"next ceiling is conversational, not technical\" but provides no decision, threshold, tool, technique, or concrete example. It does not tell the engineer what the conversational ceiling is, how to identify it, or what to do about it. It serves only to bridge sections of the chapter.",
+          "evidence_refs": [],
+          "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 24,
+          "score": 8.0,
+          "label": "fail",
+          "reasoning": "This paragraph is pure transition prose. It teases an upcoming concept (\"latency masking\") without defining it, explaining it, or providing any actionable detail. It contains no decision, threshold, technique, tool, or example. Its sole function is to bridge prior content to what comes next in the chapter — classic filler/meta-commentary.",
+          "evidence_refs": [],
+          "para_excerpt": "The systems that ship anyway do so by adding a layer the book has not yet named: latency masking."
+        },
+        {
           "dim_name": "claim_defensibility",
           "paragraph_index": 16,
           "score": 12.0,
@@ -1677,18 +1573,6 @@
             "unsupported:Once latency and orchestration engineering is in place, the next ceiling is conversational, not technical — no ledger entry establishes a transition from technical to conversational as the dominant constraint, and existing entries (claims#22, #29) continue to frame the ceiling in technical terms."
           ],
           "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 40,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes two substantive claims: (1) that voice is a natural starting point for studying \"embodied constraints\" because the engineering is mature enough to be teachable, and (2) that robotics extends the same frame into tighter physical constraints and higher-stakes failure modes. Neither of these claims maps to any of the provided ledger entries. The ledger covers topics like durable state as a trust feature, agency tuning, realtime AI as a coordination/latency problem, voice as a wrapper around chat agents, half-duplex as an architectural ceiling, TTS architecture converging on LLM architecture, and latency masking as an architectural category. None of these entries speak to: (a) voice as a pedagogical entry point for \"embodied constraints,\" (b) the maturity of voice engineering as a teachable domain, or (c) robotics as an extension of voice constraints into physical/higher-stakes regimes. Both claims in the paragraph are entirely unsupported by the ledger, making this a fail.",
-          "evidence_refs": [
-            "unsupported:Voice is a natural starting point for studying embodied constraints because the engineering is mature enough to be teachable.",
-            "unsupported:Robotics extends the same frame into tighter physical constraints and higher-stakes failure modes."
-          ],
-          "para_excerpt": "Voice is a natural starting point for studying embodied constraints — the engineering is mature enough to be teachable. Robotics extends the same frame into tig…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1704,373 +1588,171 @@
           "para_excerpt": "The 200-millisecond budget is a useful target. It is also, for tool-call-heavy agents, often impossible. When the tool latency variance is 500 milliseconds to 4…"
         },
         {
-          "dim_name": "redundancy",
-          "paragraph_index": 0,
-          "score": 78.0,
-          "label": "moderate",
-          "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 41,
+          "score": 35.0,
+          "label": "weak",
+          "reasoning": "The paragraph makes two central claims: (1) there is an asymmetry between text and voice, where \"text hides what voice exposes,\" and (2) the rest of the chapter was a \"tour of what the text channel was quietly letting the system skip.\" Neither of these claims has a direct ledger entry backing them. The ledger entries cover specific technical claims about durable state, agency tuning, latency engineering, voice architecture (half-duplex, TTS convergence, wrapper approach), and latency masking as an architectural category. None of these entries support the framing premise that text \"hides\" problems that voice \"exposes,\" nor the meta-narrative that the chapter's content constitutes a tour of things the text channel allowed systems to skip. While these claims may feel like reasonable summaries of the chapter's themes, they are rhetorical/framing claims not anchored to any declared ledger entry. Because the central thesis of the paragraph is unsupported, this rates as weak.",
           "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-5-context-is-infrastructure",
-            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The 'loop around the model matters more than the model itself' thesis is restated multiple times as the organizing principle, echoing Chapters 1, 2, and 3 without adding new specifics in those restatement passages",
-            "argument:The 'scaffolding/orchestration is the durable asset, not the model' argument is explicitly invoked as a prior claim ('the architectural move the book has been advocating since Chapter 3'), restating Chapters 3 and 6",
-            "argument:The claim that eval infrastructure (evals, durable state, permissions) should be preserved rather than discarded restates Chapter 4's argument about evals as trust infrastructure, applied to voice without new eval-specific content",
-            "argument:The framing that weak context causes downstream failures restates Chapter 5's 'context is infrastructure' thesis without voice-specific depth"
+            "unsupported:Text hides what voice exposes — this asymmetry framing has no matching ledger entry.",
+            "unsupported:The chapter constitutes a tour of what the text channel was quietly letting the system skip — this retrospective meta-claim is not backed by any ledger entry."
           ],
-          "para_excerpt": "The natural assumption among engineers stepping into voice for the first time is that the model is the bottleneck. If the speech-to-speech system feels stiff, t…"
-        },
-        {
-          "dim_name": "redundancy",
-          "paragraph_index": 1,
-          "score": 78.0,
-          "label": "moderate",
-          "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-          "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-5-context-is-infrastructure",
-            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The 'loop around the model matters more than the model itself' thesis is restated multiple times as the organizing principle, echoing Chapters 1, 2, and 3 without adding new specifics in those restatement passages",
-            "argument:The 'scaffolding/orchestration is the durable asset, not the model' argument is explicitly invoked as a prior claim ('the architectural move the book has been advocating since Chapter 3'), restating Chapters 3 and 6",
-            "argument:The claim that eval infrastructure (evals, durable state, permissions) should be preserved rather than discarded restates Chapter 4's argument about evals as trust infrastructure, applied to voice without new eval-specific content",
-            "argument:The framing that weak context causes downstream failures restates Chapter 5's 'context is infrastructure' thesis without voice-specific depth"
-          ],
-          "para_excerpt": "The practitioners building production voice systems do not see it that way anymore. Sean DuBois at OpenAI and Kwindla Hultman Kramer at Daily titled their joint…"
-        },
-        {
-          "dim_name": "redundancy",
-          "paragraph_index": 2,
-          "score": 78.0,
-          "label": "moderate",
-          "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-          "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-5-context-is-infrastructure",
-            "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The 'loop around the model matters more than the model itself' thesis is restated multiple times as the organizing principle, echoing Chapters 1, 2, and 3 without adding new specifics in those restatement passages",
-            "argument:The 'scaffolding/orchestration is the durable asset, not the model' argument is explicitly invoked as a prior claim ('the architectural move the book has been advocating since Chapter 3'), restating Chapters 3 and 6",
-            "argument:The claim that eval infrastructure (evals, durable state, permissions) should be preserved rather than discarded restates Chapter 4's argument about evals as trust infrastructure, applied to voice without new eval-specific content",
-            "argument:The framing that weak context causes downstream failures restates Chapter 5's 'context is infrastructure' thesis without voice-specific depth"
-          ],
-          "para_excerpt": "Neil Zeghidour at Gradium AI makes the strongest version of this argument. \"The main bottleneck is becoming the tool call,\" he says, after walking through what …"
+          "para_excerpt": "The chapter started with an asymmetry: text hides what voice exposes. Everything since has been a tour of what the text channel was quietly letting the system s…"
         }
       ]
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
-        "humanness": 78.8,
-        "voice": 71.0,
-        "usefulness": 53.3,
+        "humanness": 79.8,
+        "voice": null,
+        "usefulness": 64.1,
         "evidence_density": 90.0,
-        "claim_defensibility": 57.2,
-        "redundancy": 42.0,
-        "n_paragraphs": 55,
-        "usefulness_substantive": 56.5,
-        "usefulness_connective": 9,
-        "usefulness_total": 55
+        "claim_defensibility": 72.0,
+        "redundancy": null,
+        "n_paragraphs": 42,
+        "usefulness_substantive": 63.5,
+        "usefulness_connective": 3,
+        "usefulness_total": 24
       },
       "labels": {
         "humanness": "moderate",
-        "voice": "moderate",
+        "voice": "error",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "weak"
+        "redundancy": "error"
       },
       "coverage": {
         "humanness": {
-          "scored": 51,
-          "total": 55
+          "scored": 22,
+          "total": 42
         },
         "voice": {
-          "scored": 55,
-          "total": 55
+          "scored": 0,
+          "total": 42
         },
         "usefulness": {
-          "scored": 55,
-          "total": 55
+          "scored": 24,
+          "total": 42
         },
         "evidence_density": {
           "scored": 0,
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 21,
-          "total": 55
+          "scored": 5,
+          "total": 42
         },
         "redundancy": {
-          "scored": 55,
-          "total": 55
+          "scored": 0,
+          "total": 42
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 11,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph introduces two entirely novel claims: (1) that there exists a specific \"five-level progression\" across the corpus, and (2) that each level has a \"characteristic bottleneck\" that must break before the next level is accessible. Neither of these structural/taxonomic claims is present in any of the 18 ledger entries provided. The ledger entries cover a range of strong and moderate claims about harnesses, evals, context engineering, governance, metrics, and operating models — but none describe or support a multi-level maturity/progression model of any kind, nor a bottleneck-per-level framework. These are fabricated structural claims with zero ledger backing, triggering a fail designation.",
-          "evidence_refs": [
-            "unsupported:A five-level progression exists across the corpus, defined by what the organization has internalized (not tooling choices)",
-            "unsupported:Each level has a characteristic bottleneck that must break before the next level becomes accessible"
-          ],
-          "para_excerpt": "The pattern that emerges across the corpus is a five-level progression defined not by tooling choices but by what the organization has internalized. Each level …"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph describes an \"L0: Prompt-era\" organizational maturity stage characterized by four distinct claims: (1) AI is a personal tool used by some engineers for some tasks, (2) there are no shared policies or conventions, (3) there is no measurement, and (4) the bottleneck is access and awareness rather than collective strategy. None of these four claims map to any of the provided ledger entries. The ledger entries cover topics such as harness quality, context engineering, evals as control systems, review capacity, alignment debt, enterprise MCP adoption, and AI-native operating models — none of which address an L0 maturity stage or its defining characteristics. Every claim in the paragraph is entirely unsupported by the ledger, making this a clear fail.",
-          "evidence_refs": [
-            "unsupported:AI is a personal tool used by some engineers for some tasks (no ledger entry covers an L0 maturity stage or personal/ad-hoc AI tool usage)",
-            "unsupported:There are no shared policies, no conventions (no ledger entry addresses the absence of shared policies as an organizational stage)",
-            "unsupported:There is no measurement (no ledger entry covers the absence of measurement as a stage characteristic)",
-            "unsupported:The bottleneck is access and awareness — not everyone has the tools, and no one has thought about what to do with them collectively (no ledger entry supports access/awareness as the defining bottleneck of an early AI adoption stage)"
-          ],
-          "para_excerpt": "**L0: Prompt-era.** AI is a personal tool used by some engineers for some tasks. There are no shared policies, no conventions, no measurement. The bottleneck is…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 18,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes three distinct claims: (1) that AI-native looks the same regardless of organization size is a \"persistent confusion in the field\"; (2) that a small team and a large enterprise are both aiming for \"L3\"; and (3) that the blockers, failure modes, and order of operations between these two contexts are \"almost entirely different.\" None of these claims map to any of the provided ledger entries. The ledger does touch on AI-native advantage (claims#16, #35) and organizational coherence (claims#16), but those entries address what AI-native advantage depends on — not that it manifests differently by organization size, nor that there is a common confusion about this, nor anything about an \"L3\" designation. All three substantive claims in the paragraph are unsupported by the ledger, making this a fail.",
-          "evidence_refs": [
-            "unsupported:The claim that 'AI-native looks the same regardless of the size of the organization' is a 'persistent confusion in the field' has no ledger backing.",
-            "unsupported:The reference to both organization types 'aiming for L3' has no ledger backing — no ledger entry defines or references an 'L3' level.",
-            "unsupported:The claim that the blockers, failure modes, and order of operations are 'almost entirely different' between small and large organizations has no ledger backing."
-          ],
-          "para_excerpt": "One of the persistent confusions in the field is that AI-native looks the same regardless of the size of the organization. It does not. A fifteen-person team bu…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 20,
-          "score": 18.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes several grounded claims about silo proliferation, shared context, and platform investment that could map loosely to ledger entries about working-set quality (claims#27), AI-native advantage as an operating-model redesign (claims#35), and organizational coherence (claims#16). However, the paragraph introduces a specific, detailed empirical anecdote about Bloomberg Engineering — describing their AI deployment across \"a large and highly specialized technical workforce,\" productivity gains dropping off \"against hundreds of millions of lines of existing code,\" the role of onboarding and shared principles as the change agent, and the distinction between greenfield vs. legacy-code productivity — with no corresponding ledger entry of any strength. This is a concrete, attributed case study claim that carries significant rhetorical weight in the paragraph and is entirely unsupported by the ledger. Additionally, the claim that \"every L2 win stays local and the organization cannot compound\" without a common platform is a strong causal assertion with no direct ledger backing. The Bloomberg anecdote alone is sufficient to trigger a `fail` rating, as it is a fabricated or at minimum entirely unsupported specific factual claim that the ledger provides no cover for whatsoever.",
-          "evidence_refs": [
-            "unsupported:The Bloomberg engineering organization anecdote: specific claims that Bloomberg found productivity gains dropped sharply against hundreds of millions of lines of existing code, that the hard part was scale not model quality, and that rollout required treating AI as an organizational program with onboarding and shared principles — none of this is backed by any ledger entry.",
-            "unsupported:The claim that without a common internal platform 'every L2 win stays local and the organization cannot compound' — a strong causal assertion about compounding organizational returns with no corresponding ledger entry.",
-            "unsupported:The framing of 'silo proliferation' as the dominant failure mode for fifty-to-two-hundred-person organizations, and the specific characterization of discovering 'a dozen different internal AI setups, each locally optimized and globally incompatible' — no ledger entry supports this specific organizational scale claim or failure-mode taxonomy."
-          ],
-          "para_excerpt": "For scale-stage companies — the fifty-to-two-hundred-person organization that has been through its first growth cycle — the dominant failure mode is silo prolif…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 10,
-          "score": 62.0,
-          "label": "moderate",
-          "reasoning": "The paragraph has genuine strengths: the \"destination, not a toggle\" formulation is a real claim with a point of view, and the pivot to \"where are we now\" grounds it in a practical reader question that feels earned. The final beat — \"more precisely than 'early versus late'\" — does real work, implying a critique of vague industry talk and setting up the five-level model without over-promising. These are marks of a writer who has something to say. What drags it down is the middle sentence, which is pure scaffolding dressed up as evidence. \"Field reports, engineering team case studies, and post-mortems from large-scale enterprise deployments\" is a list-of-three where all three items are near-synonyms for \"things people wrote down after doing AI stuff.\" It gestures at credibility without delivering any — no cited case study, no named company, no date. Strip that sentence out and the paragraph is tighter and loses almost nothing concrete. The author is coasting on the appearance of rigor rather than the substance of it.",
-          "evidence_refs": [
-            "phrase:'field reports, engineering team case studies, and post-mortems from large-scale enterprise deployments'"
-          ],
-          "para_excerpt": "The chapter so far has been arguing that AI-native is a destination, not a toggle. But organizations ask a more practical question: where are we now, and what d…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 11,
-          "score": 62.0,
-          "label": "moderate",
-          "reasoning": "The paragraph does useful structural work — it plants a flag (\"not by tooling choices but by what the organization has internalized\") that is a real, arguable claim. \"Internalized\" is a deliberate and defensible word choice, and the framing of bottlenecks as things that must \"break\" has a hint of personality. But \"the pattern that emerges across the corpus\" is soft academic hedging — it distances the author from the claim rather than owning it. The sentence could open with the claim flat-out: \"Five levels, defined by internalization, not tooling.\" As written, it reads like a setup paragraph that trusts the list to do all the work. Readable, functional, but the author's voice retreats exactly where it should step forward.",
-          "evidence_refs": [
-            "phrase:'The pattern that emerges across the corpus'"
-          ],
-          "para_excerpt": "The pattern that emerges across the corpus is a five-level progression defined not by tooling choices but by what the organization has internalized. Each level …"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 12,
+          "paragraph_index": 19,
           "score": 72.0,
           "label": "moderate",
-          "reasoning": "This paragraph is doing real work. The tricolon \"no shared policies, no conventions, no measurement\" actually earns its three items — each names a distinct organizational absence (governance, norms, observability), and the absence of redundancy is notable. The bottleneck framing is consistent and structural, not decorative. \"Not everyone has the tools, and no one has thought about what to do with them collectively\" is a clean, plain-spoken claim with a point of view: the problem is distributed and cognitive, not just infrastructural. That survives a hostile editor.\n\nWhat drags it down: \"access and awareness\" is a soft, HR-training-deck phrase that flattens the more interesting claim the sentence is trying to make. The bottleneck is really *organizational inattention* — \"access and awareness\" undersells that and slides toward the generic. The paragraph also leans heavily on the scaffolding of the surrounding framework (L0 of a numbered progression), so some of its clarity is borrowed rather than earned. Still, it's concise, specific in its negations, and makes a falsifiable claim about what the bottleneck actually is.",
+          "reasoning": "This paragraph has real things going for it: a named person (Eric Zakariasson), a named product context (Cursor's software-factory work), a concrete metaphor (\"firehose of individual agent chatter\"), and a genuine structural claim — that review capacity is the throughput bottleneck and must be engineered, not heroically willed. The core argument is falsifiable and specific enough to disagree with. The \"scarce resource / abundant one\" framing is sharp.\n\nWhat drags it down: the middle third collapses into a listicle of three items (layered validation, triage rules, roll-up visibility) where each item is described in a single sentence with no friction between them. The list reads like a slide deck translated into prose — the items don't push against each other or reveal any cost or tradeoff. \"Layered validation, where automated checks and evals clear the routine cases so human attention concentrates on the consequential ones\" is the weakest sentence: it's the kind of sentence that could appear in any enterprise AI whitepaper, asserting a structure without defending it or admitting what it sacrifices. The Zakariasson reference rescues the third bullet, but the first two float free of specificity.",
           "evidence_refs": [
-            "phrase:'access and awareness'"
+            "phrase:'Layered validation, where automated checks and evals clear the routine cases so human attention concentrates on the consequential ones.'"
           ],
-          "para_excerpt": "**L0: Prompt-era.** AI is a personal tool used by some engineers for some tasks. There are no shared policies, no conventions, no measurement. The bottleneck is…"
+          "para_excerpt": "But the provocation only works with its other half. Broader creation does not mean a free-for-all; it means widening who can *start* work while narrowing and ha…"
         },
         {
-          "dim_name": "voice",
-          "paragraph_index": 1,
-          "score": 71.0,
+          "dim_name": "humanness",
+          "paragraph_index": 32,
+          "score": 72.0,
           "label": "moderate",
-          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "reasoning": "This paragraph earns its keep. The central claim — that sandbox pilots stall not for want of a better model but for want of governance architecture — is specific enough to be wrong, and it lands with real force. \"The governance design is the unlocking work\" is a clean, confident sentence that a thinking author chose to end on, not a committee. The middle section (credential scope, audit trail, escalation path) names actual things rather than gesturing at \"robust frameworks.\" What drags it down: the opening clause is a classic AI-slop listicle construction — \"finance, legal, and regulated health contexts\" is a list-of-three that does no real work. The word \"consistently\" next to \"same enabling sequence\" is hedging dressed as authority; who are these organizations? No names, no dates, no numbers. The paragraph is doing well structurally but the opening sentence in particular could have appeared in any McKinsey slide deck without alteration.",
           "evidence_refs": [
-            "drift:Three concrete drifts from baseline: (1) Sentence rhythm is more uniform and longer throughout — the baseline's characteristic short declarative fulcrums (\"The two cases stress the same idea from opposite directions.\" / \"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") appear rarely here, replaced by compound-complex sentences that rarely drop below 25 words; (2) Vocabulary register shifts from the baseline's technical-specific terms (scoped OAuth tokens, context assembly, durable state, observability) toward organizational-strategy and managerial register (\"operating model redesign,\" \"phase transitions are governance events,\" \"alignment debt,\" \"the moat\"), consistent with a closing chapter but a genuine departure; (3) The \"Draft note\" block at the top is administrative/process-log prose with no equivalent in any baseline excerpt, representing a jarring register discontinuity. The baseline's named-actor concreteness and direct epistemic stance are preserved throughout the body prose, which keeps the chapter in moderate rather than weak territory."
+            "phrase:'across finance, legal, and regulated health contexts — consistently describe the same enabling sequence'"
           ],
-          "para_excerpt": "The cleanest way to see the gap between \"uses AI\" and \"AI-native\" is to look at what happens at the threshold of full adoption. Dan Shipper, building the AI-nat…"
+          "para_excerpt": "- Move alignment upstream of the agent fan-out. Make the plan, not the pull request, the place two people's work first meets — shared planning, context-gatherin…"
         },
         {
-          "dim_name": "voice",
-          "paragraph_index": 2,
-          "score": 71.0,
+          "dim_name": "humanness",
+          "paragraph_index": 33,
+          "score": 72.0,
           "label": "moderate",
-          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "reasoning": "This paragraph has genuine structure and a real claim: the right governance is \"lightest that earns trust to go fast,\" and it triangulates between two failure modes (too much, too little). The reframe device works — \"what is the minimum we can get away with?\" vs. \"what earns us the trust to go fast?\" is a real, arguable distinction, not decorative. The closing sentence (\"whatever makes the next grant of access defensible to the person who has to sign off on it\") is specific enough to be useful and could actually be wrong. However, \"The resulting principle is a reframe of the question every enterprise team should be asking\" is announcement prose — it tells the reader a reframe is coming rather than just delivering it. The word \"always\" appears twice in the same sentence structure, which creates a listicle rhythm that slightly softens the impact. There's no concrete example, number, or named context anchoring the claim, which keeps it from landing in \"strong\" territory. It reads like a consultant's slide note that got expanded, rather than a writer who watched a specific governance failure happen.",
           "evidence_refs": [
-            "drift:Three concrete drifts from baseline: (1) Sentence rhythm is more uniform and longer throughout — the baseline's characteristic short declarative fulcrums (\"The two cases stress the same idea from opposite directions.\" / \"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") appear rarely here, replaced by compound-complex sentences that rarely drop below 25 words; (2) Vocabulary register shifts from the baseline's technical-specific terms (scoped OAuth tokens, context assembly, durable state, observability) toward organizational-strategy and managerial register (\"operating model redesign,\" \"phase transitions are governance events,\" \"alignment debt,\" \"the moat\"), consistent with a closing chapter but a genuine departure; (3) The \"Draft note\" block at the top is administrative/process-log prose with no equivalent in any baseline excerpt, representing a jarring register discontinuity. The baseline's named-actor concreteness and direct epistemic stance are preserved throughout the body prose, which keeps the chapter in moderate rather than weak territory."
+            "phrase:'The resulting principle is a reframe of the question every enterprise team should be asking.'"
           ],
-          "para_excerpt": "The reason is that partial adoption keeps the old workflows intact. If nine in ten engineers use agents but the tenth does not, every process still has to accom…"
-        },
-        {
-          "dim_name": "voice",
-          "paragraph_index": 3,
-          "score": 71.0,
-          "label": "moderate",
-          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
-          "evidence_refs": [
-            "drift:Three concrete drifts from baseline: (1) Sentence rhythm is more uniform and longer throughout — the baseline's characteristic short declarative fulcrums (\"The two cases stress the same idea from opposite directions.\" / \"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") appear rarely here, replaced by compound-complex sentences that rarely drop below 25 words; (2) Vocabulary register shifts from the baseline's technical-specific terms (scoped OAuth tokens, context assembly, durable state, observability) toward organizational-strategy and managerial register (\"operating model redesign,\" \"phase transitions are governance events,\" \"alignment debt,\" \"the moat\"), consistent with a closing chapter but a genuine departure; (3) The \"Draft note\" block at the top is administrative/process-log prose with no equivalent in any baseline excerpt, representing a jarring register discontinuity. The baseline's named-actor concreteness and direct epistemic stance are preserved throughout the body prose, which keeps the chapter in moderate rather than weak territory."
-          ],
-          "para_excerpt": "That reframing — from procurement to operating-model redesign — is what separates the field reports that sound transformational from the ones that sound like to…"
+          "para_excerpt": "- Widen who can start work, then harden the single path by which it ships. Take Lisa Orr's provocation seriously — let non-engineers (e.g., support) open pull r…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 5,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and cross-chapter summary. It restates prior chapters' theses (\"when code gets cheap, judgment gets expensive\") and signals a conceptual transition to the organizational scale. There is no decision, threshold, tool, technique, or concrete example. No engineer can act on this Monday morning.",
+          "paragraph_index": 30,
+          "score": 22.0,
+          "label": "weak",
+          "reasoning": "This paragraph is primarily philosophical meta-commentary about the book itself. It explicitly calls out what is *not* in a list (specific models, vendors, protocols) and offers a high-level abstraction (\"cheap execution makes judgment scarce\"). While the abstraction has some framing value, it offers no concrete decision, threshold, technique, or named tool. It's transitional/reflective prose that gestures at a principle without operationalizing it — an engineer cannot change anything on Monday based on this paragraph alone.",
           "evidence_refs": [],
-          "para_excerpt": "## Cheaper execution moves scarcity up the stack"
+          "para_excerpt": "The organizations that have built durable AI-native practices describe the same relationship. Joel Hron, CTO of Thomson Reuters — a company deploying AI across …"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 34,
+          "score": 28.0,
+          "label": "weak",
+          "reasoning": "The paragraph is inspirational framing about organizational moats and competitive advantage in AI adoption. While it names five structural elements (broad paths to create, narrow paths to ship, review as a system, alignment paid upfront, standards legible to agents), these are stated as slogans rather than defined with enough specificity for an engineer to act on them. There is no concrete decision, threshold, tool, or technique explained. It functions as a motivational closing argument rather than operational guidance — a working engineer cannot change anything on Monday based solely on this paragraph.",
+          "evidence_refs": [],
+          "para_excerpt": "The deeper point is that as execution fans out, alignment has to move in the opposite direction — it has to concentrate and move earlier. The cheaper it is to s…"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 29,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure transitional/meta-commentary prose. It draws a loose philosophical analogy between agent harnesses and organizational structure, but makes no concrete commitment, names no tool or technique, offers no threshold or testable principle, and explicitly defers substance to \"the final chapter.\" It is decorative framing with zero operational lift.",
-          "evidence_refs": [],
-          "para_excerpt": "This is the structural fact behind the Monday-morning scene. The weekend produced a pile of pull requests, drafts, and automations. Every one of them needs a hu…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 44,
-          "score": 10.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and synthesizing prose. It explicitly announces itself as \"the synthesis the whole book has been building toward,\" which is a classic transition/framing statement. The \"harness\" metaphor is decorative and offers no decision, threshold, tool, technique, or concrete principle an engineer could act on. There is nothing here to change behavior on Monday.",
-          "evidence_refs": [],
-          "para_excerpt": "This is the synthesis the whole book has been building toward: an organization is the macro-scale version of the same object. A company is a harness for its own…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 11,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph introduces two entirely novel claims: (1) that there exists a specific \"five-level progression\" across the corpus, and (2) that each level has a \"characteristic bottleneck\" that must break before the next level is accessible. Neither of these structural/taxonomic claims is present in any of the 18 ledger entries provided. The ledger entries cover a range of strong and moderate claims about harnesses, evals, context engineering, governance, metrics, and operating models — but none describe or support a multi-level maturity/progression model of any kind, nor a bottleneck-per-level framework. These are fabricated structural claims with zero ledger backing, triggering a fail designation.",
-          "evidence_refs": [
-            "unsupported:A five-level progression exists across the corpus, defined by what the organization has internalized (not tooling choices)",
-            "unsupported:Each level has a characteristic bottleneck that must break before the next level becomes accessible"
-          ],
-          "para_excerpt": "The pattern that emerges across the corpus is a five-level progression defined not by tooling choices but by what the organization has internalized. Each level …"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph describes an \"L0: Prompt-era\" organizational maturity stage characterized by four distinct claims: (1) AI is a personal tool used by some engineers for some tasks, (2) there are no shared policies or conventions, (3) there is no measurement, and (4) the bottleneck is access and awareness rather than collective strategy. None of these four claims map to any of the provided ledger entries. The ledger entries cover topics such as harness quality, context engineering, evals as control systems, review capacity, alignment debt, enterprise MCP adoption, and AI-native operating models — none of which address an L0 maturity stage or its defining characteristics. Every claim in the paragraph is entirely unsupported by the ledger, making this a clear fail.",
-          "evidence_refs": [
-            "unsupported:AI is a personal tool used by some engineers for some tasks (no ledger entry covers an L0 maturity stage or personal/ad-hoc AI tool usage)",
-            "unsupported:There are no shared policies, no conventions (no ledger entry addresses the absence of shared policies as an organizational stage)",
-            "unsupported:There is no measurement (no ledger entry covers the absence of measurement as a stage characteristic)",
-            "unsupported:The bottleneck is access and awareness — not everyone has the tools, and no one has thought about what to do with them collectively (no ledger entry supports access/awareness as the defining bottleneck of an early AI adoption stage)"
-          ],
-          "para_excerpt": "**L0: Prompt-era.** AI is a personal tool used by some engineers for some tasks. There are no shared policies, no conventions, no measurement. The bottleneck is…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 18,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes three distinct claims: (1) that AI-native looks the same regardless of organization size is a \"persistent confusion in the field\"; (2) that a small team and a large enterprise are both aiming for \"L3\"; and (3) that the blockers, failure modes, and order of operations between these two contexts are \"almost entirely different.\" None of these claims map to any of the provided ledger entries. The ledger does touch on AI-native advantage (claims#16, #35) and organizational coherence (claims#16), but those entries address what AI-native advantage depends on — not that it manifests differently by organization size, nor that there is a common confusion about this, nor anything about an \"L3\" designation. All three substantive claims in the paragraph are unsupported by the ledger, making this a fail.",
-          "evidence_refs": [
-            "unsupported:The claim that 'AI-native looks the same regardless of the size of the organization' is a 'persistent confusion in the field' has no ledger backing.",
-            "unsupported:The reference to both organization types 'aiming for L3' has no ledger backing — no ledger entry defines or references an 'L3' level.",
-            "unsupported:The claim that the blockers, failure modes, and order of operations are 'almost entirely different' between small and large organizations has no ledger backing."
-          ],
-          "para_excerpt": "One of the persistent confusions in the field is that AI-native looks the same regardless of the size of the organization. It does not. A fifteen-person team bu…"
-        },
-        {
-          "dim_name": "redundancy",
-          "paragraph_index": 1,
-          "score": 42.0,
+          "score": 28.0,
           "label": "weak",
-          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
-          "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-7-security-identity-and-high-stakes-trust",
-            "argument:Central claim that cheap execution makes judgment the scarce bottleneck — already fully argued in Chapter 1 (delegation makes judgment scarce) and Chapter 2 (generation cheap, bad decisions not, therefore taste/judgment matter more)",
-            "argument:The 'company as harness' framing — restates Chapter 3's core argument that structured codebases, specs, and harnesses are what enable agents to work reliably, applied at org scale without adding new mechanism",
-            "argument:Review/eval capacity as the throughput limit — restates Chapter 4's argument that evals are the ongoing control system and trust maintenance layer, not a QA afterthought",
-            "argument:Activity-vs-outcome metric confusion (PRs opened vs. rework rate) — restates Chapter 4's argument about grading the diff vs. scoring the completed task at the level it operates",
-            "argument:Governance/bounded authority framing — echoes Chapter 7's least-privilege and scoped-credential argument, though applied at organizational rather than technical security level",
-            "argument:Partial delegation keeps old workflows intact and caps the gain — a restatement of Chapter 1's core framing about the difference between assistant/copilot and delegate modes"
-          ],
-          "para_excerpt": "The cleanest way to see the gap between \"uses AI\" and \"AI-native\" is to look at what happens at the threshold of full adoption. Dan Shipper, building the AI-nat…"
+          "reasoning": "The paragraph offers a contrarian framing — AI-native success is about standards, review, measurement, and upfront alignment, not prompt enthusiasm or activity metrics — which is directionally useful but entirely non-specific. It names four properties (clear standards, real review, honest measurement, pre-work alignment) without defining what any of them look like, how to implement them, what thresholds matter, or what tools/techniques to use. There is no decision point, no concrete example, no test a reader can apply, and no named trap with enough detail to act on. It reads as an inspiring summary or closing thesis statement rather than operational guidance.",
+          "evidence_refs": [],
+          "para_excerpt": "The standard corporate framing treats governance as the brake: the process that slows things down for the sake of safety and compliance, so that the AI-native d…"
         },
         {
-          "dim_name": "redundancy",
+          "dim_name": "claim_defensibility",
           "paragraph_index": 2,
-          "score": 42.0,
-          "label": "weak",
-          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "The paragraph's core thesis — that partial adoption preserves old workflows and that full delegation is required before processes can be restructured — maps well onto claims#35 (AI-native advantage is an operating-model redesign, not a procurement decision) and claims#1 (the important transition is from suggestion to delegated execution), both of which are strong entries. The \"buying the ninety-first seat\" framing directly echoes claims#35's procurement-vs-operating-model distinction and is well supported.\n\nThe argument that the holdout is \"the constraint, not a rounding error\" is a pointed rhetorical flourish, but it flows naturally from claims#38 (review capacity is the throughput limit) and claims#35, so it does not clearly exceed ledger strength.\n\nHowever, the paragraph makes a near-absolute causal claim — \"the gain from the other ninety percent is capped at faster people rather than a faster company\" — which implies that zero organisational shape-change is achievable below 100% adoption. Claims#35 and claims#16 support the idea that operating-model redesign (not mere procurement) is what creates AI-native advantage, and claims#16 is only moderate strength. The paragraph hardens this moderate-strength idea (\"AI-native advantage depends on organisational coherence, not output volume alone\") into a categorical, binary threshold claim (90% → zero structural change; 100% → structural change possible). That is a slight but meaningful overstatement of a moderate ledger entry.\n\nNo claims lack any ledger backing entirely, so the paragraph does not reach `fail`. The overstatement is on a supporting (not the central) mechanism, keeping the score in the moderate band.",
           "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-7-security-identity-and-high-stakes-trust",
-            "argument:Central claim that cheap execution makes judgment the scarce bottleneck — already fully argued in Chapter 1 (delegation makes judgment scarce) and Chapter 2 (generation cheap, bad decisions not, therefore taste/judgment matter more)",
-            "argument:The 'company as harness' framing — restates Chapter 3's core argument that structured codebases, specs, and harnesses are what enable agents to work reliably, applied at org scale without adding new mechanism",
-            "argument:Review/eval capacity as the throughput limit — restates Chapter 4's argument that evals are the ongoing control system and trust maintenance layer, not a QA afterthought",
-            "argument:Activity-vs-outcome metric confusion (PRs opened vs. rework rate) — restates Chapter 4's argument about grading the diff vs. scoring the completed task at the level it operates",
-            "argument:Governance/bounded authority framing — echoes Chapter 7's least-privilege and scoped-credential argument, though applied at organizational rather than technical security level",
-            "argument:Partial delegation keeps old workflows intact and caps the gain — a restatement of Chapter 1's core framing about the difference between assistant/copilot and delegate modes"
+            "overstated:The claim that 'at ninety percent, you have faster people inside an unchanged company' — implying zero organisational restructuring is possible below universal adoption — overstates claims#16 (moderate: AI-native advantage depends on organisational coherence, not output volume alone) and claims#35, which support the direction of the argument but do not warrant the sharp binary threshold the prose asserts."
           ],
           "para_excerpt": "The reason is that partial adoption keeps the old workflows intact. If nine in ten engineers use agents but the tenth does not, every process still has to accom…"
         },
         {
-          "dim_name": "redundancy",
-          "paragraph_index": 3,
-          "score": 42.0,
-          "label": "weak",
-          "reasoning": "inherited from chapter:chapter-9-the-ai-native-organization",
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 7,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "The paragraph makes several claims, most of which are well-supported by ledger entries:\n\n1. \"Activity-based metrics misread motion as progress\" — directly matches claims#37 (strong). The prose renders this at the same strength. ✅\n\n2. \"AI's productivity effect is real but uneven — strong in some task types and codebases, near zero or negative in others\" — this is consistent with claims#27 (working-set/codebase quality matters) and claims#37, and is presented as a sober, evidence-hedged finding. No overstatement. ✅\n\n3. \"AI changes the distribution of where time goes\" — this is a reasonable inference from claims#37 and the general ledger context. Not explicitly ledgered but is a modest, hedged restatement of existing claims rather than a new strong assertion. Borderline, but not a fabrication. ✅\n\n4. The attribution to \"Yegor Denisov-Blanch's Stanford research, drawn from data on a hundred thousand–plus developers\" — this is a specific empirical citation (a named researcher, a named institution, and a specific data scale). This citation does not appear anywhere in the ledger. No ledger entry backs the specific claim that this research exists, was conducted at Stanford, or covered 100,000+ developers. While the conclusion drawn from it aligns with claims#37, the citation itself is an unsupported factual claim introduced into the prose. This is a meaningful concern: if the citation is inaccurate or fabricated, it would be a fail; as written it is at minimum unsupported by the ledger.\n\n5. \"Some AI-generated work creates rework that quietly eats the gain\" — this is a specific mechanistic claim (AI-generated work causes rework) that has no direct ledger entry. It is loosely consistent with claims#37 and claims#36, but neither ledger entry explicitly supports the rework mechanism. This is a minor unsupported claim.\n\nThe central message of the paragraph is well-aligned with the ledger, particularly claims#37. However, the specific Stanford/Denisov-Blanch citation is unsupported by the ledger, and the rework claim is similarly unanchored. These are not central overstatements but they are real unsupported additions. The paragraph avoids the `fail` threshold because the unsupported claims are evidentiary/citation-level rather than contradicting the ledger, and the core thesis is well-supported. A `moderate` rating is appropriate.",
           "evidence_refs": [
-            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
-            "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-7-security-identity-and-high-stakes-trust",
-            "argument:Central claim that cheap execution makes judgment the scarce bottleneck — already fully argued in Chapter 1 (delegation makes judgment scarce) and Chapter 2 (generation cheap, bad decisions not, therefore taste/judgment matter more)",
-            "argument:The 'company as harness' framing — restates Chapter 3's core argument that structured codebases, specs, and harnesses are what enable agents to work reliably, applied at org scale without adding new mechanism",
-            "argument:Review/eval capacity as the throughput limit — restates Chapter 4's argument that evals are the ongoing control system and trust maintenance layer, not a QA afterthought",
-            "argument:Activity-vs-outcome metric confusion (PRs opened vs. rework rate) — restates Chapter 4's argument about grading the diff vs. scoring the completed task at the level it operates",
-            "argument:Governance/bounded authority framing — echoes Chapter 7's least-privilege and scoped-credential argument, though applied at organizational rather than technical security level",
-            "argument:Partial delegation keeps old workflows intact and caps the gain — a restatement of Chapter 1's core framing about the difference between assistant/copilot and delegate modes"
+            "unsupported:Attribution to 'Yegor Denisov-Blanch's Stanford research, drawn from data on a hundred thousand–plus developers' — this specific citation (named researcher, institution, and data scale) has no corresponding ledger entry and cannot be verified against any declared claim.",
+            "unsupported:The claim that 'some AI-generated work creates rework that quietly eats the gain' — a specific mechanistic assertion about rework as the hidden cost of AI generation — is not backed by any ledger entry, even though it is loosely consistent with the general thrust of claims#37."
           ],
-          "para_excerpt": "That reframing — from procurement to operating-model redesign — is what separates the field reports that sound transformational from the ones that sound like to…"
+          "para_excerpt": "That nuance matters for org design because the wrong metric, applied to cheap execution, actively destroys value. Nick Arcolano's analysis at Jellyfish, built o…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 1,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "Most claims in this paragraph are well-grounded. The framing of a threshold between \"uses AI\" and \"AI-native\" maps cleanly onto claims#35 (AI-native advantage is an operating-model redesign) and claims#16 (AI-native advantage depends on organizational coherence, not output volume alone), both of which are supported at moderate-to-strong levels. The paragraph is careful to flag Shipper's \"10x\" figure as a deliberate provocation rather than a measured result, which is intellectually honest and keeps the prose from overclaiming.\n\nHowever, the final sentence — \"It is the difference between AI as a personal productivity tool and AI as a medium the whole organization works in\" — makes a substantive categorical claim about organizational transformation that goes slightly beyond what claims#16 (moderate) and claims#35 (strong) jointly establish. Claims#16 is only moderate strength, and the prose frames this distinction as a crisp, settled truth rather than a defensible but contested framing. This is a minor overstatement on what is nonetheless a central rhetorical point of the paragraph.\n\nNo claims appear entirely unsupported — there are clear ledger anchors for every major assertion — but the sharpness of the final sentence tips slightly above the moderate ledger level of its primary backing claim.",
+          "evidence_refs": [
+            "overstated:The final sentence — 'the difference between AI as a personal productivity tool and AI as a medium the whole organization works in' — presents the 90%-vs-100% threshold as a crisp categorical divide with the confidence of a strong claim, while its primary ledger support (claims#16: AI-native advantage depends on organizational coherence, not output volume alone) is only moderate strength."
+          ],
+          "para_excerpt": "The cleanest way to see the gap between \"uses AI\" and \"AI-native\" is to look at what happens at the threshold of full adoption. Dan Shipper, building the AI-nat…"
         }
       ]
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:b9e53ad",
-      "corpus_snapshot_hash": "sha256:05e5fb1d72bafe3c7d7befbd459fc63c7c3994bd2f60d13ed5b955f9cb5c9bb5",
+      "version_id": "git:9f6d0f4",
+      "corpus_snapshot_hash": "sha256:52f0e577e142b39a802b1ffb63d344f1d1c45923148ef71fc68d1452e1372dd3",
       "rollup": {
         "humanness": 76.9,
         "voice": null,
@@ -2973,6 +2655,145 @@
           "usefulness_substantive": 56.5,
           "usefulness_connective": 9,
           "usefulness_total": 55
+        },
+        "10": {
+          "humanness": 76.9,
+          "voice": null,
+          "usefulness": 52.8,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.5,
+          "redundancy": null,
+          "n_paragraphs": 13,
+          "usefulness_substantive": 56.6,
+          "usefulness_connective": 1,
+          "usefulness_total": 13
+        }
+      }
+    },
+    {
+      "run_id": "2026-06-20-121211-52f0",
+      "version_id": "git:9f6d0f4",
+      "finished_at": "2026-06-20T12:12:38.961561+00:00",
+      "partial": true,
+      "book": {
+        "humanness": 77.8,
+        "voice": 84.3,
+        "usefulness": 53.6,
+        "evidence_density": 89.9,
+        "claim_defensibility": 76.2,
+        "redundancy": 83.0,
+        "usefulness_substantive": 56.8,
+        "usefulness_connective": 40,
+        "usefulness_total": 298
+      },
+      "chapters": {
+        "01": {
+          "humanness": 77.4,
+          "voice": null,
+          "usefulness": 36.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 78.3,
+          "redundancy": 100.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 38.1,
+          "usefulness_connective": 1,
+          "usefulness_total": 17
+        },
+        "02": {
+          "humanness": 80.6,
+          "voice": null,
+          "usefulness": 67.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 80.8,
+          "redundancy": null,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 66.3,
+          "usefulness_connective": 2,
+          "usefulness_total": 20
+        },
+        "03": {
+          "humanness": 78.2,
+          "voice": null,
+          "usefulness": 52.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 69.7,
+          "redundancy": null,
+          "n_paragraphs": 53,
+          "usefulness_substantive": 59.1,
+          "usefulness_connective": 10,
+          "usefulness_total": 53
+        },
+        "04": {
+          "humanness": 74.2,
+          "voice": 84.0,
+          "usefulness": 48.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 71.7,
+          "redundancy": 78.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 51.3,
+          "usefulness_connective": 2,
+          "usefulness_total": 20
+        },
+        "05": {
+          "humanness": 81.0,
+          "voice": null,
+          "usefulness": 60.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 78.6,
+          "redundancy": null,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 60.8,
+          "usefulness_connective": 5,
+          "usefulness_total": 47
+        },
+        "06": {
+          "humanness": 78.8,
+          "voice": 82.0,
+          "usefulness": 54.3,
+          "evidence_density": 90.0,
+          "claim_defensibility": 80.7,
+          "redundancy": 72.0,
+          "n_paragraphs": 18,
+          "usefulness_substantive": 59.8,
+          "usefulness_connective": 2,
+          "usefulness_total": 18
+        },
+        "07": {
+          "humanness": 74.5,
+          "voice": 87.0,
+          "usefulness": 54.9,
+          "evidence_density": 88.8,
+          "claim_defensibility": 82.3,
+          "redundancy": 82.0,
+          "n_paragraphs": 52,
+          "usefulness_substantive": 60.3,
+          "usefulness_connective": 8,
+          "usefulness_total": 49
+        },
+        "08": {
+          "humanness": 76.2,
+          "voice": null,
+          "usefulness": 45.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 70.2,
+          "redundancy": null,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 51.7,
+          "usefulness_connective": 6,
+          "usefulness_total": 37
+        },
+        "09": {
+          "humanness": 79.8,
+          "voice": null,
+          "usefulness": 64.1,
+          "evidence_density": 90.0,
+          "claim_defensibility": 72.0,
+          "redundancy": null,
+          "n_paragraphs": 42,
+          "usefulness_substantive": 63.5,
+          "usefulness_connective": 3,
+          "usefulness_total": 24
         },
         "10": {
           "humanness": 76.9,
