@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "2026-06-20-194440-988e",
-    "corpus_snapshot_hash": "sha256:988ed803e61171eca55827c24524b4aaabef161947ffa1d16d61bc1086f05a60",
+    "run_id": "2026-06-20-200603-f9ef",
+    "corpus_snapshot_hash": "sha256:f9efa5b2a29776cc4998b8fb41469761496022b7570227301ac1236d29c08aae",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
-    "finished_at": "2026-06-20T19:57:08.679187+00:00",
-    "total_cost_usd": 1.3289,
+    "finished_at": "2026-06-20T20:10:10.535460+00:00",
+    "total_cost_usd": 0.4706,
     "status": "completed",
     "dims": [
       "humanness",
@@ -44,6 +44,7 @@
     },
     "partial": false,
     "merged_run_ids": [
+      "2026-06-20-200603-f9ef",
       "2026-06-20-194440-988e",
       "2026-06-20-152312-ea0f",
       "2026-06-20-130253-ea0f",
@@ -60,20 +61,20 @@
     ]
   },
   "book": {
-    "humanness": 77.8,
+    "humanness": 78.0,
     "voice": 78.9,
-    "usefulness": 57.3,
+    "usefulness": 60.4,
     "evidence_density": 89.9,
-    "claim_defensibility": 75.9,
-    "redundancy": 71.0,
-    "usefulness_substantive": 60.9,
-    "usefulness_connective": 32,
+    "claim_defensibility": 76.5,
+    "redundancy": 70.4,
+    "usefulness_substantive": 63.6,
+    "usefulness_connective": 30,
     "usefulness_total": 326
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -283,7 +284,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -509,7 +510,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -764,25 +765,25 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:7eaa677",
-      "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
-      "primary_run_id": "2026-06-20-152312-ea0f",
+      "version_id": "git:a80c1ae",
+      "corpus_snapshot_hash": "sha256:f9efa5b2a29776cc4998b8fb41469761496022b7570227301ac1236d29c08aae",
+      "primary_run_id": "2026-06-20-200603-f9ef",
       "rollup": {
-        "humanness": 74.7,
+        "humanness": 76.9,
         "voice": 82.0,
-        "usefulness": 48.5,
+        "usefulness": 79.0,
         "evidence_density": 90.0,
-        "claim_defensibility": 71.0,
-        "redundancy": 78.0,
+        "claim_defensibility": 77.2,
+        "redundancy": 72.0,
         "n_paragraphs": 20,
-        "usefulness_substantive": 51.4,
-        "usefulness_connective": 2,
+        "usefulness_substantive": 79.0,
+        "usefulness_connective": 0,
         "usefulness_total": 20
       },
       "labels": {
         "humanness": "moderate",
         "voice": "strong",
-        "usefulness": "weak",
+        "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
         "redundancy": "moderate"
@@ -813,33 +814,8 @@
           "total": 20
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes two substantive claims that have no matching ledger entries:\n\n1. That \"coding agents are doing most of the implementation work\" — while the ledger supports the idea that AI coding is a practical unit at the codebase level (claims#6) and that execution becomes cheap (claims#42), no ledger entry supports the specific claim that agents are doing *most* of the implementation work. This is a strong, unqualified assertion with no backing.\n\n2. That \"the eval system stops being something only humans read\" and \"becomes an artifact the agents themselves must navigate and modify\" — this is a novel, forward-looking claim about agents autonomously interacting with and modifying eval systems. While the ledger has strong entries about evals as control systems (claims#8), trace-linked evals (claims#19), and evals encoding operational judgment (claims#45), none of them support the idea that agents themselves become consumers or modifiers of the eval system. This is a fabricated or at minimum entirely unsupported claim relative to the ledger.\n\nAdditionally, the framing that \"the corpus has exactly one strongly-argued account of it\" is a meta-claim about the book's source corpus that has no ledger backing whatsoever.\n\nBecause the central, climactic claim of the paragraph — agents navigating and modifying the eval system — has no ledger support, this is a ship-blocking fail.",
-          "evidence_refs": [
-            "unsupported:Coding agents are doing most of the implementation work — no ledger entry supports agents handling a majority share of implementation.",
-            "unsupported:The eval system becomes an artifact the agents themselves must navigate and modify — no ledger entry supports agents as autonomous consumers or modifiers of the eval system.",
-            "unsupported:The corpus has exactly one strongly-argued account of this turn — a meta-claim about the source corpus with no ledger backing."
-          ],
-          "para_excerpt": "There is a final turn that the rest of this book has been setting up, and the corpus has exactly one strongly-argued account of it. Once coding agents are doing…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 9,
-          "score": 38.0,
-          "label": "weak",
-          "reasoning": "The paragraph has one genuinely strong move: it names Phil Hetzel and Braintrust, and the quoted sentence is specific and arguable. That's real. But the surrounding prose is pure scaffolding. \"Here the chapter's argument turns from X to Y\" is a transition that exists only to exist — it tells the reader what is happening rather than doing it. And \"that sentence is worth sitting with\" is textbook AI hedging, a filler phrase that signals importance without demonstrating it. The final clause (\"dissolves a distinction most teams treat as fixed\") is competent but generic — it could describe almost any contrarian claim in any technical book. The paragraph is essentially a frame built around a borrowed quote, and the frame does no independent intellectual work.",
-          "evidence_refs": [
-            "phrase:'that sentence is worth sitting with'"
-          ],
-          "para_excerpt": "Here the chapter's argument turns from offline measurement to the live system, and the cleanest statement of the turn comes from Phil Hetzel at Braintrust: \"Obs…"
-        },
         {
           "dim_name": "humanness",
           "paragraph_index": 19,
@@ -863,13 +839,24 @@
           "para_excerpt": "Naman Jain, who builds coding evals at Cursor, names the shift in his own work: \"coding capabilities have leapt from generating one-line snippets to completing …"
         },
         {
+          "dim_name": "humanness",
+          "paragraph_index": 12,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "This paragraph has genuine intellectual content — the claim that eval suites must be agent-writable, not just human-readable, is a real design position that someone could argue against. The incident.io reference grounds it in a specific company and a specific failure mode. The logic chain (agent fixes bug → agent adds regression case → eval suite must be editable) is tight and non-obvious. That's all good. What drags it down: \"the eval system is no longer read only by humans\" is doing heavy lifting but is stated rather than demonstrated, and the closing sentence (\"design the eval suite's interface for the agent that will extend it, not only for the human who reviews it\") is a tidy aphorism that sounds like a pull-quote someone generated to summarize a blog post. It's not wrong, but it's smooth in the way AI prose is smooth — it resolves tension rather than creating it. The paragraph earns moderate rather than weak because the core claim is falsifiable and the example is named, but the landing is too clean.",
+          "evidence_refs": [
+            "phrase:\"design the eval suite's interface for the agent that will extend it, not only for the human who reviews it\""
+          ],
+          "para_excerpt": "One more design constraint shows up once coding agents start writing and modifying code alongside you: the eval system is no longer read only by humans. If an a…"
+        },
+        {
           "dim_name": "voice",
           "paragraph_index": 0,
           "score": 82.0,
           "label": "strong",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
-            "drift:Minimal drift. The chapter matches baseline on epistemic stance (direct, non-hedged), named-actor grounding, short/long sentence alternation, technical-specific vocabulary, and imperative bullet structure. The only measurable drift is slightly longer elaborating runs in the middle sections compared to the baseline's tighter cutting rhythm — the chapter occasionally takes three sentences to land a point the baseline would land in one. This is a density difference, not a voice difference, and it does not accumulate enough to feel like a different author."
+            "drift:Minimal drift: the chapter is slightly more expository and uniform in sentence length than the baseline's sharpest passages, occasionally running several consecutive medium-length sentences where the baseline would insert a single short declarative to punctuate. The epistemic stance, vocabulary register, named-actor grounding, rhythm pattern, and bullet-list format are all strongly aligned with the baseline voice."
           ],
           "para_excerpt": "For most of the short history of AI evaluation, the unit was small: a single completion, a one-line answer, a snippet judged in isolation. That worked while the…"
         },
@@ -880,7 +867,7 @@
           "label": "strong",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
-            "drift:Minimal drift. The chapter matches baseline on epistemic stance (direct, non-hedged), named-actor grounding, short/long sentence alternation, technical-specific vocabulary, and imperative bullet structure. The only measurable drift is slightly longer elaborating runs in the middle sections compared to the baseline's tighter cutting rhythm — the chapter occasionally takes three sentences to land a point the baseline would land in one. This is a density difference, not a voice difference, and it does not accumulate enough to feel like a different author."
+            "drift:Minimal drift: the chapter is slightly more expository and uniform in sentence length than the baseline's sharpest passages, occasionally running several consecutive medium-length sentences where the baseline would insert a single short declarative to punctuate. The epistemic stance, vocabulary register, named-actor grounding, rhythm pattern, and bullet-list format are all strongly aligned with the baseline voice."
           ],
           "para_excerpt": "Naman Jain, who builds coding evals at Cursor, names the shift in his own work: \"coding capabilities have leapt from generating one-line snippets to completing …"
         },
@@ -891,125 +878,129 @@
           "label": "strong",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
-            "drift:Minimal drift. The chapter matches baseline on epistemic stance (direct, non-hedged), named-actor grounding, short/long sentence alternation, technical-specific vocabulary, and imperative bullet structure. The only measurable drift is slightly longer elaborating runs in the middle sections compared to the baseline's tighter cutting rhythm — the chapter occasionally takes three sentences to land a point the baseline would land in one. This is a density difference, not a voice difference, and it does not accumulate enough to feel like a different author."
+            "drift:Minimal drift: the chapter is slightly more expository and uniform in sentence length than the baseline's sharpest passages, occasionally running several consecutive medium-length sentences where the baseline would insert a single short declarative to punctuate. The epistemic stance, vocabulary register, named-actor grounding, rhythm pattern, and bullet-list format are all strongly aligned with the baseline voice."
           ],
-          "para_excerpt": "This is why the chapter's title insists on *control system* rather than *test suite*. A test suite checks fixed assertions about small units. A control system s…"
+          "para_excerpt": "The title insists on *control system* rather than *test suite* because the choice changes what you score. A test suite checks fixed assertions about small units…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 17,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure transitional meta-commentary. It previews what future chapters will argue (\"Chapter 5 will argue...\", \"Chapter 6 will argue...\", \"Chapter 9 will make...\") and closes with a decorative summary metaphor (\"converts a hope into evidence\"). There is no decision, threshold, technique, tool, or concrete example an engineer could act on. It contains zero operational content.",
-          "evidence_refs": [],
-          "para_excerpt": "This connects directly forward. Chapter 5 will argue that context is the infrastructure determining what the model can even see — and an eval is how you find ou…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 12,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and setup prose. It announces a \"final turn\" that the book has been building toward and teases a concept (agents navigating/modifying eval systems) without providing any decision, threshold, technique, or concrete example. It contains no actionable content — it is a transition paragraph pointing to something that will be argued later, not something a working engineer can act on.",
-          "evidence_refs": [],
-          "para_excerpt": "There is a final turn that the rest of this book has been setting up, and the corpus has exactly one strongly-argued account of it. Once coding agents are doing…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 15,
-          "score": 12.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and transitional prose. It reflects on the chapter's own epistemic caution (\"the chapter holds this conservatively\"), references a vague source (\"one talk\"), and offers a philosophical observation about evals becoming part of an agent's loop — but with no named tool, technique, threshold, or concrete example. The final sentence (\"The measurement and the work begin to share a substrate\") is a decorative metaphor with zero operational lift. Nothing here enables a working engineer to change a decision or take a concrete action on Monday.",
-          "evidence_refs": [],
-          "para_excerpt": "The chapter holds this conservatively — it rests on one talk, however well argued — but it is the natural endpoint of the control-system frame. When the thing b…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 8.0,
-          "label": "fail",
-          "reasoning": "The paragraph makes two substantive claims that have no matching ledger entries:\n\n1. That \"coding agents are doing most of the implementation work\" — while the ledger supports the idea that AI coding is a practical unit at the codebase level (claims#6) and that execution becomes cheap (claims#42), no ledger entry supports the specific claim that agents are doing *most* of the implementation work. This is a strong, unqualified assertion with no backing.\n\n2. That \"the eval system stops being something only humans read\" and \"becomes an artifact the agents themselves must navigate and modify\" — this is a novel, forward-looking claim about agents autonomously interacting with and modifying eval systems. While the ledger has strong entries about evals as control systems (claims#8), trace-linked evals (claims#19), and evals encoding operational judgment (claims#45), none of them support the idea that agents themselves become consumers or modifiers of the eval system. This is a fabricated or at minimum entirely unsupported claim relative to the ledger.\n\nAdditionally, the framing that \"the corpus has exactly one strongly-argued account of it\" is a meta-claim about the book's source corpus that has no ledger backing whatsoever.\n\nBecause the central, climactic claim of the paragraph — agents navigating and modifying the eval system — has no ledger support, this is a ship-blocking fail.",
+          "paragraph_index": 10,
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "The paragraph articulates a clear architectural principle — that production traces should feed back into the eval set, forming a deliberate closed loop — and names the specific sequence: traces → failure analysis → eval set → next version → production observation. This is a meaningful reframe of how evals and observability relate, and it implies a concrete workflow change. However, it stops short of giving specific thresholds, tool names, or a concrete implementation recipe (e.g., what qualifies a trace as an eval candidate, how to triage, what tooling to use). It's more of a framing principle than an immediately actionable instruction, placing it solidly in the moderate range.",
           "evidence_refs": [
-            "unsupported:Coding agents are doing most of the implementation work — no ledger entry supports agents handling a majority share of implementation.",
-            "unsupported:The eval system becomes an artifact the agents themselves must navigate and modify — no ledger entry supports agents as autonomous consumers or modifiers of the eval system.",
-            "unsupported:The corpus has exactly one strongly-argued account of this turn — a meta-claim about the source corpus with no ledger backing."
+            "takeaway:Set up a deliberate pipeline where production traces are regularly triaged and promoted into your regression eval set, so that real user failures and edge cases automatically drive the next iteration of your model or system."
           ],
-          "para_excerpt": "There is a final turn that the rest of this book has been setting up, and the corpus has exactly one strongly-argued account of it. Once coding agents are doing…"
+          "para_excerpt": "The usual mental model keeps them apart: evals are the offline thing you run before shipping, observability is the production thing you watch after. Hetzel's cl…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 1,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "The paragraph delivers a clear principle — \"the unit of evaluation has to grow to match the unit of work\" — and gives a concrete negative test: grading a multi-file diff line by line tells you almost nothing. It names a real practitioner and a real context (Cursor, coding evals, agentic workflows). However, it stops short of telling the engineer *how* to build or select the right evaluation unit (no specific tools, thresholds, or techniques), so it provides strong framing but limited direct operationalization.",
+          "evidence_refs": [
+            "takeaway:When your AI system's output is a multi-file change or multi-step workflow, replace line-by-line or token-level scoring with an end-to-end evaluation that judges the entire deliverable (e.g., does the repo build and pass tests?) rather than its constituent parts."
+          ],
+          "para_excerpt": "Naman Jain, who builds coding evals at Cursor, names the shift in his own work: \"coding capabilities have leapt from generating one-line snippets to completing …"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 7,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "The paragraph makes a meaningful, directional claim: human-seeded evals are especially valuable because they encode real, observed failure modes into repeatable test cases. This is a genuine principle with operational implications — it argues for a specific sourcing strategy for evals (humans who have witnessed failures write the cases). However, it stops short of being fully actionable: it doesn't specify how many such cases to seed, what format they should take, when to prioritize them over synthetic evals, or how to organize the process. The quote from Samuel Colvin adds credibility but not additional specificity. The paragraph frames a useful practice without giving enough detail to implement it on Monday without further research.",
+          "evidence_refs": [
+            "takeaway:When building your eval suite, prioritize having engineers or domain experts who have directly observed a system failure write the test case for that failure immediately — these human-seeded evals permanently encode hard-won failure knowledge into repeatable, automatable checks."
+          ],
+          "para_excerpt": "Samuel Colvin at Pydantic adds the discipline that keeps this honest under the pressure of the GenAI era. \"We still want to build reliable, scalable application…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 15,
+          "paragraph_index": 12,
           "score": 22.0,
           "label": "weak",
-          "reasoning": "The paragraph introduces a specific and consequential claim — that when an agent can \"read the steering instrument,\" the eval system becomes part of the agent's own loop, and measurement and work \"begin to share a substrate.\" This is a novel architectural/philosophical claim about agent self-reference and eval-loop entanglement. While claims#8 (\"Evals are a control system, not just a test suite\") provides the \"control-system frame\" the paragraph explicitly invokes, it does not support the further step that the agent can read the eval instrument and thereby incorporate it into its own loop. That is a meaningfully stronger and more specific claim than what the ledger backs. The paragraph does acknowledge its own epistemic caution (\"rests on one talk, however well argued\"), which is a positive signal, but the central claim — that eval and work share a substrate when the agent can observe the eval — goes beyond any ledger entry. No ledger entry addresses agent self-observation of evals, feedback-loop entanglement, or substrate convergence. This is the central claim of the paragraph, making it a weak rating rather than a fail (the control-system framing is at least partially grounded), but the core forward-looking assertion is unsupported.",
+          "reasoning": "The paragraph introduces a specific and central design constraint — that eval suites must be agent-editable, and that incident.io is \"the clearest worked example\" of building for this — but neither of these claims has a matching ledger entry. The ledger entries (claims#8, #9, #19, #45) speak to evals as a control system, grounded in operational history, trace-linked, and encoding mined judgment. None of them address agent-writability of eval suites or cite incident.io as an exemplar. The paragraph's core thesis (agent-editable evals) is a novel architectural claim with no ledger backing, making it unsupported. The incident.io claim is also entirely unsupported. While the surrounding framing loosely resonates with the spirit of claims#8 and #19, the specific claims made go well beyond what the ledger supports, and the central claim of the paragraph is unsupported rather than merely overstated.",
           "evidence_refs": [
-            "overstated:The claim that 'when the thing being steered can also read the steering instrument, the eval system becomes part of the agent's own loop' extends the control-system frame (claims#8) into agent self-reference territory that the ledger does not support — claims#8 establishes evals as a control system but does not address agents observing or internalizing the eval instrument itself.",
-            "unsupported:'The measurement and the work begin to share a substrate' — no ledger entry addresses substrate convergence between evals and agent execution, or the architectural consequence of an agent reading its own steering signal.",
-            "unsupported:'The natural endpoint of the control-system frame' implies a logical inevitability or terminus to claims#8 that the ledger does not assert; claims#8 is stated as a strong but bounded claim about eval purpose, not a claim about where the frame ultimately leads."
+            "unsupported:Eval suites must be agent-editable so that a coding agent can open and extend them (e.g., adding regression cases after fixing a bug) — no ledger entry supports this agent-writability design constraint.",
+            "unsupported:incident.io is described as 'the clearest worked example' of building eval suites for agent extensibility — no ledger entry references incident.io or this specific design pattern.",
+            "unsupported:The prescriptive design rule 'design the eval suite's interface for the agent that will extend it, not only for the human who reviews it' — no ledger entry supports this framing or conclusion."
           ],
-          "para_excerpt": "The chapter holds this conservatively — it rests on one talk, however well argued — but it is the natural endpoint of the control-system frame. When the thing b…"
+          "para_excerpt": "One more design constraint shows up once coding agents start writing and modifying code alongside you: the eval system is no longer read only by humans. If an a…"
         },
         {
           "dim_name": "claim_defensibility",
           "paragraph_index": 3,
-          "score": 38.0,
-          "label": "weak",
-          "reasoning": "The paragraph makes several interesting and defensible points about the nature of evals versus unit tests, but the central thrust — that evals encode judgment rather than binary facts, and that treating them like unit tests smuggles in false certainty — is not directly backed by any ledger entry. The closest entries (claims#8, claims#9, claims#19, claims#45) speak to evals as a control system, grounded in operational history, trace-linked, and encoding mined judgment. None of them specifically support the \"evals are not unit tests\" framing or the epistemological argument about binary certainty vs. qualitative judgment. The paragraph's core claim is a novel philosophical distinction that goes beyond what the ledger entries establish. Additionally, the final sentence about the messiness of application-layer evals (users, latency, cost, policy, workflow) is partially resonant with claims#9 (realistic evals grounded in natural tasks and operational history) but the specific enumeration of those factors as the reason evals resist true/false reduction is not ledger-backed. The paragraph does not contradict the ledger, but its central argumentative claim lacks a matching ledger entry, making it unsupported rather than merely overstated.",
+          "score": 62.0,
+          "label": "moderate",
+          "reasoning": "Most of the paragraph's claims are well-grounded in the ledger. The core argument — that evals encode judgment rather than binary correctness, that benchmark-maxing is a failure mode, and that evals must function as a control loop rather than a simple test suite — maps cleanly onto claims#8 (evals as a control system), claims#9 (grounded in natural/operational tasks), claims#45 (judgment mined from operational history), and claims#19 (trace-linked and fed by production observability). These are all rendered at or below ledger strength.\n\nHowever, the final operational takeaway introduces a specific prescriptive methodology — \"track a leaderboard or aggregate score *and* keep a human-labeled slice that catches the cases the aggregate hides — neither alone is a control loop\" — that goes beyond what any ledger entry supports. The ledger entries speak to evals being a control system and being grounded in operational history, but none of them prescribe the specific dual-track structure (aggregate score + human-labeled slice) as the correct implementation. This is a moderately specific claim presented with confident prescriptive force that has no direct ledger backing. It is a minor-to-moderate overstatement/unsupported claim on what is framed as the key \"operational takeaway\" of the passage, which gives it some weight but does not sink the paragraph entirely.",
           "evidence_refs": [
-            "unsupported:The central claim that evals encode judgment rather than binary facts, and that treating pass/fail eval scores like unit test green checkmarks 'smuggles in a certainty the measurement does not have' — this epistemological distinction between evals and unit tests is not backed by any ledger entry.",
-            "unsupported:The enumeration of users, latency, cost, policy, and workflow constraints as the specific factors that make application-layer evals irreducible to true/false is not supported by any ledger entry, even though it is directionally consistent with claims#9."
+            "unsupported:The operational takeaway prescribing a specific dual-track methodology — tracking an aggregate/leaderboard score *and* maintaining a human-labeled slice as the correct control loop — is not backed by any ledger entry. The ledger supports evals-as-control-system and operational grounding in general terms, but does not endorse or describe this particular implementation structure."
           ],
-          "para_excerpt": "Ido Pesok, working on evals at Vercel's v0, gave a talk with a deliberately blunt title: \"Evals are not unit tests.\" His point is a reasoning posture. A unit te…"
+          "para_excerpt": "Pesok titled his v0 talk on the subject with a deliberately blunt claim: \"Evals are not unit tests.\" A unit test encodes a binary fact — the function returns 4,…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 4,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "Most of the paragraph is grounded in concrete, practical description of Jones's approach — storing evals as YAML files in version control beside the prompt, making regression cases a diff rather than a dashboard trip. These practices align well with ledger entries claims#8 (evals as a control system), claims#19 (evals strongest when trace-linked and fed by operational history), claims#45 (best evals encode judgment mined from operational history), and claims#6 (practical unit is the codebase, not the snippet). The framing of evals as version-controlled artifacts living in the repo is consistent with the strong ledger support for those claims.\n\nHowever, the sentence \"For the human, the score stays a graded opinion you read with Pesok's caution, not a green checkmark you trust blindly\" introduces a named reference (\"Pesok's caution\") that has no matching ledger entry. This is an unsupported claim — the ledger does not establish who Pesok is or what \"Pesok's caution\" entails, so the rhetorical weight placed on that named authority cannot be verified against the ledger. This is a minor but real gap.\n\nAdditionally, the claim that \"adding a regression case is a diff, not a trip to a dashboard\" is a practical consequence of the layout decision described, and while it aligns with the spirit of claims#8 and claims#6, it slightly overstates the mechanical certainty of the benefit (the ledger supports the general principle but not this specific workflow outcome as a guaranteed consequence). This is a minor overstatement on a secondary claim.\n\nOverall, the central claims are well-supported, but the unsupported named reference to \"Pesok's caution\" and a minor overstatement on workflow mechanics keep this from being strong.",
+          "evidence_refs": [
+            "overstated:The claim that 'adding a regression case is a diff, not a trip to a dashboard' presents a specific workflow outcome as a guaranteed mechanical consequence of the layout decision, slightly overstating what the ledger supports (claims#6, claims#8 support the general principle but not this specific operational certainty).",
+            "unsupported:'The score stays a graded opinion you read with Pesok's caution' — 'Pesok's caution' is a named authority reference with no corresponding ledger entry establishing who Pesok is or what epistemic standard their caution represents."
+          ],
+          "para_excerpt": "Lawrence Jones at incident.io says the opposite — he calls them, flatly, \"AI unit tests\" — and the disagreement is more useful as a build instruction than as a …"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 0,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-10-what-endures",
-            "argument:The argument that human review of AI output does not scale once delegation occurs, and must be mechanized — restated from Chapter 2's point that framing and review 'does not scale past the senior engineer's attention'",
-            "argument:The closing claim that 'reliability comes from the scaffolding around the model, not from the model's cleverness' — a near-verbatim restatement of the recurring scaffolding-over-model thesis established in Chapters 1, 3, and 10"
+            "argument:The argument that 'reliability comes from scaffolding around the model, not the model's cleverness' is restated nearly verbatim from Chapter 1 and Chapter 3, without adding new nuance to the claim itself (though it is applied to evals specifically).",
+            "argument:The framing that 'judgment under abundance must be mechanized / you cannot eyeball every output once a system does delegated work' is explicitly flagged by the chapter itself as a restatement of Chapter 2's review argument — the chapter says 'this is the same argument Chapter 2 made about review, now mechanized.'"
           ],
           "para_excerpt": "For most of the short history of AI evaluation, the unit was small: a single completion, a one-line answer, a snippet judged in isolation. That worked while the…"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 1,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-10-what-endures",
-            "argument:The argument that human review of AI output does not scale once delegation occurs, and must be mechanized — restated from Chapter 2's point that framing and review 'does not scale past the senior engineer's attention'",
-            "argument:The closing claim that 'reliability comes from the scaffolding around the model, not from the model's cleverness' — a near-verbatim restatement of the recurring scaffolding-over-model thesis established in Chapters 1, 3, and 10"
+            "argument:The argument that 'reliability comes from scaffolding around the model, not the model's cleverness' is restated nearly verbatim from Chapter 1 and Chapter 3, without adding new nuance to the claim itself (though it is applied to evals specifically).",
+            "argument:The framing that 'judgment under abundance must be mechanized / you cannot eyeball every output once a system does delegated work' is explicitly flagged by the chapter itself as a restatement of Chapter 2's review argument — the chapter says 'this is the same argument Chapter 2 made about review, now mechanized.'"
           ],
           "para_excerpt": "Naman Jain, who builds coding evals at Cursor, names the shift in his own work: \"coding capabilities have leapt from generating one-line snippets to completing …"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 2,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-4-evals-are-the-control-system",
           "evidence_refs": [
             "overlaps:chapter-2-taste-still-matters-when-code-gets-cheap",
+            "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-            "overlaps:chapter-10-what-endures",
-            "argument:The argument that human review of AI output does not scale once delegation occurs, and must be mechanized — restated from Chapter 2's point that framing and review 'does not scale past the senior engineer's attention'",
-            "argument:The closing claim that 'reliability comes from the scaffolding around the model, not from the model's cleverness' — a near-verbatim restatement of the recurring scaffolding-over-model thesis established in Chapters 1, 3, and 10"
+            "argument:The argument that 'reliability comes from scaffolding around the model, not the model's cleverness' is restated nearly verbatim from Chapter 1 and Chapter 3, without adding new nuance to the claim itself (though it is applied to evals specifically).",
+            "argument:The framing that 'judgment under abundance must be mechanized / you cannot eyeball every output once a system does delegated work' is explicitly flagged by the chapter itself as a restatement of Chapter 2's review argument — the chapter says 'this is the same argument Chapter 2 made about review, now mechanized.'"
           ],
-          "para_excerpt": "This is why the chapter's title insists on *control system* rather than *test suite*. A test suite checks fixed assertions about small units. A control system s…"
+          "para_excerpt": "The title insists on *control system* rather than *test suite* because the choice changes what you score. A test suite checks fixed assertions about small units…"
         }
       ]
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1264,7 +1255,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1492,7 +1483,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1738,7 +1729,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:988ed803e61171eca55827c24524b4aaabef161947ffa1d16d61bc1086f05a60",
       "primary_run_id": "2026-06-20-194440-988e",
       "rollup": {
@@ -1995,7 +1986,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -2257,7 +2248,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:7eaa677",
+      "version_id": "git:a80c1ae",
       "corpus_snapshot_hash": "sha256:988ed803e61171eca55827c24524b4aaabef161947ffa1d16d61bc1086f05a60",
       "primary_run_id": "2026-06-20-194440-988e",
       "rollup": {
@@ -3736,6 +3727,145 @@
           "n_paragraphs": 20,
           "usefulness_substantive": 51.4,
           "usefulness_connective": 2,
+          "usefulness_total": 20
+        },
+        "05": {
+          "humanness": 78.1,
+          "voice": 72.0,
+          "usefulness": 59.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.3,
+          "redundancy": 72.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 69.0,
+          "usefulness_connective": 7,
+          "usefulness_total": 47
+        },
+        "06": {
+          "humanness": 78.7,
+          "voice": 82.0,
+          "usefulness": 53.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 79.9,
+          "redundancy": 72.0,
+          "n_paragraphs": 18,
+          "usefulness_substantive": 59.6,
+          "usefulness_connective": 2,
+          "usefulness_total": 18
+        },
+        "07": {
+          "humanness": 80.1,
+          "voice": 82.0,
+          "usefulness": 58.0,
+          "evidence_density": 88.8,
+          "claim_defensibility": 82.7,
+          "redundancy": 72.0,
+          "n_paragraphs": 50,
+          "usefulness_substantive": 63.8,
+          "usefulness_connective": 6,
+          "usefulness_total": 47
+        },
+        "08": {
+          "humanness": 81.2,
+          "voice": 72.0,
+          "usefulness": 73.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 69.3,
+          "redundancy": 82.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 73.9,
+          "usefulness_connective": 0,
+          "usefulness_total": 47
+        },
+        "09": {
+          "humanness": 79.8,
+          "voice": 72.0,
+          "usefulness": 60.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 70.4,
+          "redundancy": 52.0,
+          "n_paragraphs": 42,
+          "usefulness_substantive": 60.6,
+          "usefulness_connective": 0,
+          "usefulness_total": 42
+        },
+        "10": {
+          "humanness": 77.8,
+          "voice": 72.0,
+          "usefulness": 59.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.4,
+          "redundancy": 38.0,
+          "n_paragraphs": 12,
+          "usefulness_substantive": 57.1,
+          "usefulness_connective": 1,
+          "usefulness_total": 12
+        }
+      }
+    },
+    {
+      "run_id": "2026-06-20-200603-f9ef",
+      "version_id": "git:a80c1ae",
+      "finished_at": "2026-06-20T20:10:10.535460+00:00",
+      "partial": false,
+      "book": {
+        "humanness": 78.0,
+        "voice": 78.9,
+        "usefulness": 60.4,
+        "evidence_density": 89.9,
+        "claim_defensibility": 76.5,
+        "redundancy": 70.4,
+        "usefulness_substantive": 63.6,
+        "usefulness_connective": 30,
+        "usefulness_total": 326
+      },
+      "chapters": {
+        "01": {
+          "humanness": 73.7,
+          "voice": 91.0,
+          "usefulness": 39.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.8,
+          "redundancy": 100.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 41.2,
+          "usefulness_connective": 1,
+          "usefulness_total": 20
+        },
+        "02": {
+          "humanness": 79.2,
+          "voice": 82.0,
+          "usefulness": 67.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 81.0,
+          "redundancy": 72.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 69.6,
+          "usefulness_connective": 1,
+          "usefulness_total": 20
+        },
+        "03": {
+          "humanness": 74.5,
+          "voice": 82.0,
+          "usefulness": 51.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 71.8,
+          "redundancy": 72.0,
+          "n_paragraphs": 53,
+          "usefulness_substantive": 62.6,
+          "usefulness_connective": 12,
+          "usefulness_total": 53
+        },
+        "04": {
+          "humanness": 76.9,
+          "voice": 82.0,
+          "usefulness": 79.0,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.2,
+          "redundancy": 72.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 79.0,
+          "usefulness_connective": 0,
           "usefulness_total": 20
         },
         "05": {
