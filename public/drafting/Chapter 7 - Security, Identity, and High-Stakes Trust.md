@@ -65,7 +65,7 @@ The deeper claim is that identity and authority are joint design objects. Granul
 
 ## Sandboxing is product infrastructure
 
-The same principle appears in code-executing environments, with the stakes turned up.
+Code execution makes the boundary physical: when an agent runs commands, the question is no longer who it is but what its process can touch.
 
 Fouad Matin's security guidance for coding agents at OpenAI keeps returning to four concrete controls: sandboxing, network restriction, privilege boundaries, and human review. Treat them as the default-on baseline, not the hardening you add after an incident — a capable system will sometimes be confused, manipulated, or overly eager, and each of the four bounds a different failure. Sandboxing contains a bad command, network restriction stops exfiltration and unexpected callouts, privilege boundaries cap what the agent can reach even when it is wrong, and a human review gate catches the trajectory the other three let through. Real safety has to live in the runtime and permission system, not only in the model.
 
@@ -99,8 +99,6 @@ These two cases together make the architectural argument concrete. Enterprise MC
 
 ## Per-tool OAuth flows are a governance problem
 
-A related issue surfaces in everyday agent operation, and it is one of the cases where what looks like a UX annoyance is actually a governance failure.
-
 Most current MCP and agent integrations require the user to authorize each tool separately. The agent wants to talk to email. Consent flow. The agent wants to talk to calendar. Consent flow. The agent wants to talk to the document store. Consent flow. To the operator, this is a paper-cut sequence of OAuth dialogs. To the security team, it is far worse: it is invisible. Each consent grant happens between the user and the third-party tool, mediated by an identity layer the enterprise may or may not control. The IT organization has no central record of what authority the user just delegated, to which tools, under what scopes, with what expiry.
 
 Galow's cross-app access work at WorkOS is one of the cleanest framings of the structural answer. The identity provider becomes the bridge between MCP clients and servers, so that credentials can be obtained without repeated manual consent flows *and* so that the enterprise has a single place to see — and revoke — what was delegated. That second part is the load-bearing one. A faster consent flow with no visibility is not progress. A consent flow that produces a visible, revocable audit trail at the identity layer is.
@@ -111,9 +109,7 @@ Repeated per-tool OAuth flows are not just annoying; they are a governance and I
 
 ## Audit as part of the trust model
 
-The chapter has so far drawn most of its evidence from enterprise and developer-tools contexts. The corpus contains one public-sector talk that is worth surfacing because it raises the constraints to a level that makes them clearer than the enterprise versions.
-
-Mark Myshatyn at Los Alamos National Lab presented on government agents at one of the AI Engineer events. The talk reads, in places, like the rest of this chapter taken to a higher cost function. When the user is a federal employee, the data is classified, and the action might be regulated under specific statutes, the identity, authority, and audit questions stop being best practices and become legal requirements. The agent has to act under a real principal. The scope has to be documented. The audit trail has to survive review. The boundaries have to be enforceable, not aspirational. The talk is useful in the manuscript not because every enterprise looks like a national lab, but because the national lab makes the constraints visible — and most of them turn out to be the same constraints other regulated industries are starting to discover for themselves.
+Mark Myshatyn at Los Alamos National Lab presented on government agents at one of the AI Engineer events. The public-sector case makes the constraints sharper than any enterprise version, because failure carries legal consequences rather than embarrassment. When the user is a federal employee, the data is classified, and the action might be regulated under specific statutes, the identity, authority, and audit questions stop being best practices and become legal requirements. The agent has to act under a real principal. The scope has to be documented. The audit trail has to survive review. The boundaries have to be enforceable, not aspirational. Most enterprises are not national labs, but most of these constraints are the ones other regulated industries are now discovering for themselves.
 
 The observability argument from the previous chapter returns here in a stricter form. Audit trails, trajectory views, approval logs, and replayable histories are not just debugging conveniences. They are part of the trust model. If a system drafts a return, assembles a legal research memo, or performs a sensitive code change, an institution needs to be able to answer basic questions afterward: who authorized this path, what evidence was consulted, what tools were used, what warnings appeared, and where a human judgment entered or failed to enter. Without those answers the institution cannot certify the work. Without certification, the work cannot ship.
 
