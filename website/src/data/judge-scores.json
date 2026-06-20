@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "2026-06-20-152312-ea0f",
-    "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
+    "run_id": "2026-06-20-194440-988e",
+    "corpus_snapshot_hash": "sha256:988ed803e61171eca55827c24524b4aaabef161947ffa1d16d61bc1086f05a60",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
-    "finished_at": "2026-06-20T17:13:30.107919+00:00",
-    "total_cost_usd": 11.0559,
+    "finished_at": "2026-06-20T19:57:08.679187+00:00",
+    "total_cost_usd": 1.3289,
     "status": "completed",
     "dims": [
       "humanness",
@@ -18,32 +18,33 @@
     ],
     "coverage": {
       "humanness": {
-        "scored": 327,
-        "total": 327
+        "scored": 326,
+        "total": 326
       },
       "voice": {
-        "scored": 327,
-        "total": 327
+        "scored": 326,
+        "total": 326
       },
       "usefulness": {
-        "scored": 327,
-        "total": 327
+        "scored": 326,
+        "total": 326
       },
       "evidence_density": {
         "scored": 89,
         "total": 89
       },
       "claim_defensibility": {
-        "scored": 327,
-        "total": 327
+        "scored": 326,
+        "total": 326
       },
       "redundancy": {
-        "scored": 327,
-        "total": 327
+        "scored": 326,
+        "total": 326
       }
     },
     "partial": false,
     "merged_run_ids": [
+      "2026-06-20-194440-988e",
       "2026-06-20-152312-ea0f",
       "2026-06-20-130253-ea0f",
       "2026-06-20-121211-52f0",
@@ -59,20 +60,20 @@
     ]
   },
   "book": {
-    "humanness": 77.3,
-    "voice": 80.1,
-    "usefulness": 53.7,
+    "humanness": 77.8,
+    "voice": 78.9,
+    "usefulness": 57.3,
     "evidence_density": 89.9,
-    "claim_defensibility": 76.0,
-    "redundancy": 70.6,
-    "usefulness_substantive": 58.5,
-    "usefulness_connective": 39,
-    "usefulness_total": 327
+    "claim_defensibility": 75.9,
+    "redundancy": 71.0,
+    "usefulness_substantive": 60.9,
+    "usefulness_connective": 32,
+    "usefulness_total": 326
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -282,7 +283,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -508,7 +509,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -763,7 +764,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1008,7 +1009,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1263,7 +1264,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1491,7 +1492,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -1737,28 +1738,28 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:5e44048",
-      "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
-      "primary_run_id": "2026-06-20-152312-ea0f",
+      "version_id": "git:7eaa677",
+      "corpus_snapshot_hash": "sha256:988ed803e61171eca55827c24524b4aaabef161947ffa1d16d61bc1086f05a60",
+      "primary_run_id": "2026-06-20-194440-988e",
       "rollup": {
-        "humanness": 77.5,
-        "voice": 78.0,
-        "usefulness": 45.4,
+        "humanness": 81.2,
+        "voice": 72.0,
+        "usefulness": 73.9,
         "evidence_density": 90.0,
         "claim_defensibility": 69.3,
-        "redundancy": 78.0,
+        "redundancy": 82.0,
         "n_paragraphs": 47,
-        "usefulness_substantive": 51.1,
-        "usefulness_connective": 7,
+        "usefulness_substantive": 73.9,
+        "usefulness_connective": 0,
         "usefulness_total": 47
       },
       "labels": {
-        "humanness": "moderate",
+        "humanness": "strong",
         "voice": "moderate",
-        "usefulness": "weak",
+        "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "moderate",
-        "redundancy": "moderate"
+        "redundancy": "strong"
       },
       "coverage": {
         "humanness": {
@@ -1789,120 +1790,124 @@
       "ship_blockers": [
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 16,
+          "paragraph_index": 41,
           "score": 12.0,
           "label": "fail",
-          "reasoning": "The paragraph asserts that once latency and orchestration engineering is solved, \"the next ceiling is conversational, not technical.\" This is a substantive architectural claim — that the dominant remaining constraint on voice/realtime AI shifts from a technical domain to a conversational/interaction-design domain. No ledger entry supports this. The closest entries (claims#20, #22, #29) actually frame latency, coordination, and half-duplex as ongoing architectural ceilings, not as problems that, once solved, yield to a conversational ceiling. Claim#22 specifically identifies half-duplex as \"the silent architectural ceiling on natural voice conversation,\" which directly contradicts the prose's implication that the technical ceiling has been cleared. The paragraph's central claim has no ledger backing and conflicts with existing entries, making this a fail.",
+          "reasoning": "The paragraph makes several specific, concrete claims about voice system failure modes and debugging methodology — specifically: (1) that voice failures \"compound silently,\" (2) that misread end-of-turn or misheard entities propagate into routing and retrieval and surface as confidently wrong answers downstream, (3) that the correct unit of logging is the per-turn trace (not per-session), and (4) that without per-turn tracing you can only debug the last step and never find the originating stage. None of these claims map to any of the provided ledger entries. The closest candidates are claims#20 (realtime AI quality is a coordination and latency-engineering problem), claims#22 (half-duplex as an architectural ceiling), and claims#29 (latency masking belongs in the same architectural category as evals, harnesses, and durable runtimes) — but none of these entries address per-turn tracing, silent failure propagation, or the specific debugging methodology described. The paragraph's central prescriptive claim — \"build the per-turn trace\" as the single most important takeaway — is entirely unsupported by the ledger. This constitutes a fabricated/unsupported claim of central importance, triggering a fail.",
           "evidence_refs": [
-            "unsupported:Once latency and orchestration engineering is in place, the next ceiling is conversational, not technical — no ledger entry supports the claim that the dominant remaining constraint shifts from technical to conversational; claim#22 in particular identifies half-duplex as an ongoing architectural (technical) ceiling on natural voice conversation."
+            "unsupported:Voice failures compound silently — misread end-of-turn or misheard entities propagate into routing and retrieval and surface as confidently wrong answers downstream (no ledger entry covers silent failure propagation in voice pipelines)",
+            "unsupported:The per-turn trace (logging turn boundary, transcript, retrieved record, and response together) is the single most important architectural artifact to build (no ledger entry supports per-turn tracing as a key recommendation)",
+            "unsupported:Without per-turn tracing you debug only the last step and never find the stage that actually broke (no ledger entry addresses this debugging methodology claim)"
           ],
-          "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
+          "para_excerpt": "If you build one thing out of this chapter, build the per-turn trace. Voice failures compound silently — a misread end-of-turn or a misheard entity does not sur…"
         }
       ],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 37,
-          "score": 22.0,
-          "label": "weak",
-          "reasoning": "The sentence gestures at a structural insight — mapping voice primitives to physical analogs — but delivers nothing. \"Take each voice primitive and find its physical analog\" is an instruction to the reader to do the author's work. The phrase \"it is worth reading that way concretely\" is a classic AI hedge: it announces that a concrete reading would be valuable without actually providing one. The word \"concretely\" is doing the opposite of what it promises. No specific primitive is named, no analog is offered, no claim is made that could be wrong. The surrounding context (GR00T N1, EMMA, Physical Intelligence) is doing all the intellectual heavy lifting; this sentence is pure connective tissue with a self-congratulatory adjective bolted on.",
-          "evidence_refs": [
-            "phrase:'it is worth reading that way concretely'"
-          ],
-          "para_excerpt": "Robotics runs the same playbook against a harder clock, and it is worth reading that way concretely: take each voice primitive from the sections above and find …"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 10,
+          "paragraph_index": 36,
           "score": 38.0,
           "label": "weak",
-          "reasoning": "The paragraph is doing setup work — framing a \"common mistake\" before presumably correcting it — but it does so with zero specificity. \"A common mistake\" is a classic listicle stem: it names no one who made the mistake, no project where it went wrong, no cost incurred. The second and third sentences are pure throat-clearing that restates the first sentence in slightly different words. \"Voice feels different enough from text that surely the architecture has to change\" is the kind of sentence that sounds like it's building toward a claim but is actually just delaying one. The surrounding context (Luke Harries, ElevenLabs, eval infrastructure) is doing all the real work; this paragraph contributes almost nothing that couldn't be cut without losing a concrete fact or argument. It would survive a copy-paste into any generic \"voice AI tips\" blog post without alteration.",
+          "reasoning": "The paragraph has a real claim buried in it — that LLM serving discipline transfers directly to TTS serving — and the three levers are at least technically specific rather than purely decorative. But the execution is AI-flavored in several ways: the \"same three levers apply\" construction is a classic listicle stem that signals pattern-matching rather than thinking, and the items in the list don't have enough friction between them to justify being separated (they blur together as variations on \"stream things\"). The closing sentence (\"which is the same reason the wrap-don't-rebuild move pays off one layer up\") is a callback that sounds like it's doing argumentative work but is actually just asserting a connection without demonstrating it. The prose is smooth in the way that hides the absence of a concrete claim — there are no numbers, no named systems, no specific latency targets, nothing that could be wrong. A hostile editor would ask: what latency budget? What does \"most of how to serve\" mean quantitatively? The paragraph could be removed and the surrounding argument would lose almost nothing concrete.",
           "evidence_refs": [
-            "phrase:'A common mistake in voice projects is to assume'"
+            "phrase:'The same three levers apply'"
           ],
-          "para_excerpt": "A common mistake in voice projects is to assume that the existing chat agent has to be redesigned for voice. The instinct is reasonable. Voice feels different e…"
+          "para_excerpt": "The practical upshot of the convergence is that you can carry the chat-side serving discipline straight into the TTS layer instead of treating speech as a separ…"
         },
         {
           "dim_name": "humanness",
           "paragraph_index": 16,
           "score": 62.0,
           "label": "moderate",
-          "reasoning": "This is a short transitional sentence, and it does carry a real claim — that the next bottleneck shifts from engineering to conversation design. That's a defensible, arguable position, not empty hedging. The surrounding context (Zeghidour quote, half-duplex architecture) gives it grounding. However, the sentence itself is doing classic \"pivot\" work — it's a signpost, not a claim with teeth. It tells us what the next section is about rather than asserting something that could be wrong. A hostile editor would circle it and ask: \"What does 'conversational ceiling' actually mean? Give me one example.\" It survives, but only barely, because the surrounding paragraphs do the heavy lifting. The phrase \"once X is in place\" is a smooth transition that slightly masks the absence of a concrete assertion in this sentence alone.",
+          "reasoning": "The paragraph has genuine structural purpose — it's a pivot sentence that frames the half-duplex constraint as architecturally fundamental, not just a tuning problem. The phrase \"baked into the model's architecture\" is doing real work and carries a defensible claim. The framing of \"check before you promise natural conversation\" has a practitioner's edge to it. However, the paragraph leans on a listicle-stem move at the end: \"it decides what kinds of conversation are possible at all\" is a vague, consequence-free closer that gestures at importance without naming a single specific consequence. It's the kind of sentence that sounds weighty but evaporates under pressure. The surrounding context (Zeghidour quote, the \"mhm\" test) is doing the heavy lifting; this paragraph is mostly a bridge, and bridges can be thin.",
           "evidence_refs": [
-            "phrase:'the next ceiling is conversational, not technical'"
+            "phrase:'it decides what kinds of conversation are possible at all'"
           ],
-          "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
+          "para_excerpt": "Even with the latency budget defended, one ceiling remains that no amount of orchestration speed can lift, because it is baked into the model's architecture: wh…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 4,
+          "score": 72.0,
+          "label": "moderate",
+          "reasoning": "This paragraph has genuine structural intelligence — \"the loop around the model, not of the model itself\" is a real claim with a point of view, and \"the budget to defend is the end-to-end turn\" is specific and arguable. The author is doing actual intellectual work: reframing voice as an orchestration problem rather than a model problem. That's a position a hostile editor can push back on, which is a good sign. The three-item list (orchestration, masking, turn-taking architecture) is at least labeled as a sequence with an ordering rationale (\"in that order\"), which gives it more spine than a generic listicle. However, \"The sections below take them one at a time\" is pure scaffolding — it announces structure without adding anything. It's the kind of sentence that exists to fill space between a claim and its execution, and it could be cut without losing a single idea. The paragraph is doing real work but ends on a hollow note.",
+          "evidence_refs": [
+            "phrase:'The sections below take them one at a time.'"
+          ],
+          "para_excerpt": "So the chapter that follows treats voice the way the rest of the book has treated coding, evaluation, context, and runtime: as a problem of the loop around the …"
         },
         {
           "dim_name": "voice",
           "paragraph_index": 0,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
-            "drift:Four concrete drifts from baseline: (1) longer average sentence length with fewer short-sentence anchors — the baseline's staccato alternation is flattened into more uniformly medium-to-long paragraphs; (2) more frequent extended metaphor and analogy (\"conversational scaffolding,\" \"nodding,\" \"last mile / first mile\") versus the baseline's almost purely literal structural prose; (3) heavier self-referential meta-commentary pointing back to earlier chapters, giving the chapter an essayistic arc-narration quality absent from the baseline's self-contained excerpts; (4) the opening draft-note block is a distinct operational/editorial register with no baseline equivalent. Epistemic stance, vocabulary register, and checklist structure remain well-aligned."
+            "drift:Three concrete drifts from baseline: (1) Longer average sentence length with fewer sub-10-word anchor sentences — the baseline's percussive short/long alternation (\"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") appears rarely in the chapter, which runs in longer, more uniform paragraph blocks. (2) The draft-note header introduces a process-documentation register (commit log language, ledger references, \"paste-and-verify,\" \"bookChapters.ts\") entirely absent from the baseline voice — this is the sharpest single departure. (3) Mild hedging accumulation in the body (\"is sharper than it first appears,\" \"is not casual,\" \"is the precise word\") that slightly softens the baseline's characteristically flat declarative stance. The core voice — named concrete actors, direct epistemic stance, checklist architecture, \"X is not a model problem, it is a systems problem\" framing — is intact and well-matched."
           ],
           "para_excerpt": "The natural assumption among engineers stepping into voice for the first time is that the model is the bottleneck. If the speech-to-speech system feels stiff, t…"
         },
         {
           "dim_name": "voice",
           "paragraph_index": 1,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
-            "drift:Four concrete drifts from baseline: (1) longer average sentence length with fewer short-sentence anchors — the baseline's staccato alternation is flattened into more uniformly medium-to-long paragraphs; (2) more frequent extended metaphor and analogy (\"conversational scaffolding,\" \"nodding,\" \"last mile / first mile\") versus the baseline's almost purely literal structural prose; (3) heavier self-referential meta-commentary pointing back to earlier chapters, giving the chapter an essayistic arc-narration quality absent from the baseline's self-contained excerpts; (4) the opening draft-note block is a distinct operational/editorial register with no baseline equivalent. Epistemic stance, vocabulary register, and checklist structure remain well-aligned."
+            "drift:Three concrete drifts from baseline: (1) Longer average sentence length with fewer sub-10-word anchor sentences — the baseline's percussive short/long alternation (\"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") appears rarely in the chapter, which runs in longer, more uniform paragraph blocks. (2) The draft-note header introduces a process-documentation register (commit log language, ledger references, \"paste-and-verify,\" \"bookChapters.ts\") entirely absent from the baseline voice — this is the sharpest single departure. (3) Mild hedging accumulation in the body (\"is sharper than it first appears,\" \"is not casual,\" \"is the precise word\") that slightly softens the baseline's characteristically flat declarative stance. The core voice — named concrete actors, direct epistemic stance, checklist architecture, \"X is not a model problem, it is a systems problem\" framing — is intact and well-matched."
           ],
           "para_excerpt": "The practitioners building production voice systems do not see it that way anymore. Sean DuBois at OpenAI and Kwindla Hultman Kramer at Daily titled their joint…"
         },
         {
           "dim_name": "voice",
           "paragraph_index": 2,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
-            "drift:Four concrete drifts from baseline: (1) longer average sentence length with fewer short-sentence anchors — the baseline's staccato alternation is flattened into more uniformly medium-to-long paragraphs; (2) more frequent extended metaphor and analogy (\"conversational scaffolding,\" \"nodding,\" \"last mile / first mile\") versus the baseline's almost purely literal structural prose; (3) heavier self-referential meta-commentary pointing back to earlier chapters, giving the chapter an essayistic arc-narration quality absent from the baseline's self-contained excerpts; (4) the opening draft-note block is a distinct operational/editorial register with no baseline equivalent. Epistemic stance, vocabulary register, and checklist structure remain well-aligned."
+            "drift:Three concrete drifts from baseline: (1) Longer average sentence length with fewer sub-10-word anchor sentences — the baseline's percussive short/long alternation (\"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") appears rarely in the chapter, which runs in longer, more uniform paragraph blocks. (2) The draft-note header introduces a process-documentation register (commit log language, ledger references, \"paste-and-verify,\" \"bookChapters.ts\") entirely absent from the baseline voice — this is the sharpest single departure. (3) Mild hedging accumulation in the body (\"is sharper than it first appears,\" \"is not casual,\" \"is the precise word\") that slightly softens the baseline's characteristically flat declarative stance. The core voice — named concrete actors, direct epistemic stance, checklist architecture, \"X is not a model problem, it is a systems problem\" framing — is intact and well-matched."
           ],
           "para_excerpt": "Neil Zeghidour at Gradium AI makes the strongest version of this argument. \"The main bottleneck is becoming the tool call,\" he says, after walking through what …"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 44,
-          "score": 5.0,
+          "score": 8.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure transition prose. It summarizes what the current chapter covered and previews what Chapter 9 will discuss. It contains no decisions, thresholds, principles, tools, techniques, or concrete examples. It is entirely meta-commentary about the book's structure and offers zero operational lift to a working engineer.",
+          "reasoning": "This paragraph is pure transition prose. It summarizes what was covered in Chapter 8, previews Chapter 9, and makes a general organizational observation (model teams won't own orchestration/tracing/masking). While it gestures at a real distinction between model teams and loop-owning teams, it provides no actionable threshold, decision, tool, or concrete example. It exists solely to bridge chapters and contains no operational lift for a working engineer.",
           "evidence_refs": [],
-          "para_excerpt": "The next chapter widens out from this stress test to the organizational question the book has been pointing at since the opening. If reliable AI is a property o…"
+          "para_excerpt": "The next chapter widens out to the organizational consequence. The voice work in this chapter does not live in a model team's backlog — it is orchestration, tra…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 16,
-          "score": 8.0,
+          "paragraph_index": 4,
+          "score": 12.0,
           "label": "fail",
-          "reasoning": "This sentence is pure transition/meta-commentary prose. It signals a shift in topic from technical concerns to conversational ones, but offers no decision, threshold, principle, tool, or concrete example. It contains no actionable information whatsoever — a working engineer cannot change anything on Monday based on this sentence.",
+          "reasoning": "This is pure transition/meta-commentary prose. It announces what the chapter will cover and in what order (orchestration, masking, turn-taking architecture), but provides no definitions, thresholds, decisions, or concrete examples that an engineer could act on. It is a structural signpost, not a technical payload.",
           "evidence_refs": [],
-          "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
+          "para_excerpt": "So the chapter that follows treats voice the way the rest of the book has treated coding, evaluation, context, and runtime: as a problem of the loop around the …"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 24,
-          "score": 8.0,
+          "paragraph_index": 43,
+          "score": 18.0,
           "label": "fail",
-          "reasoning": "This sentence is pure transitional/meta prose. It references \"a layer the book has not yet named\" — explicitly signaling it is a narrative bridge to upcoming content. It introduces no definition, no technique, no threshold, no tool, and no actionable principle. It contains zero operational information an engineer could act on.",
+          "reasoning": "This paragraph is pure meta-commentary and cross-chapter callback prose. It makes no decisions, names no thresholds, introduces no tools or techniques, and gives no actionable test. Every sentence is a restatement of prior chapters' content framed as \"voice is where their absence becomes audible.\" There is nothing here an engineer could act on Monday — it is transitional glue text that summarizes what came before without adding operational lift.",
           "evidence_refs": [],
-          "para_excerpt": "The systems that ship anyway do so by adding a layer the book has not yet named: latency masking."
+          "para_excerpt": "Realtime pressure also gives the earlier chapters a sharper test. The harness from Chapter 3 is what you wrap rather than rebuild when voice arrives — which is …"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 16,
+          "paragraph_index": 41,
           "score": 12.0,
           "label": "fail",
-          "reasoning": "The paragraph asserts that once latency and orchestration engineering is solved, \"the next ceiling is conversational, not technical.\" This is a substantive architectural claim — that the dominant remaining constraint on voice/realtime AI shifts from a technical domain to a conversational/interaction-design domain. No ledger entry supports this. The closest entries (claims#20, #22, #29) actually frame latency, coordination, and half-duplex as ongoing architectural ceilings, not as problems that, once solved, yield to a conversational ceiling. Claim#22 specifically identifies half-duplex as \"the silent architectural ceiling on natural voice conversation,\" which directly contradicts the prose's implication that the technical ceiling has been cleared. The paragraph's central claim has no ledger backing and conflicts with existing entries, making this a fail.",
+          "reasoning": "The paragraph makes several specific, concrete claims about voice system failure modes and debugging methodology — specifically: (1) that voice failures \"compound silently,\" (2) that misread end-of-turn or misheard entities propagate into routing and retrieval and surface as confidently wrong answers downstream, (3) that the correct unit of logging is the per-turn trace (not per-session), and (4) that without per-turn tracing you can only debug the last step and never find the originating stage. None of these claims map to any of the provided ledger entries. The closest candidates are claims#20 (realtime AI quality is a coordination and latency-engineering problem), claims#22 (half-duplex as an architectural ceiling), and claims#29 (latency masking belongs in the same architectural category as evals, harnesses, and durable runtimes) — but none of these entries address per-turn tracing, silent failure propagation, or the specific debugging methodology described. The paragraph's central prescriptive claim — \"build the per-turn trace\" as the single most important takeaway — is entirely unsupported by the ledger. This constitutes a fabricated/unsupported claim of central importance, triggering a fail.",
           "evidence_refs": [
-            "unsupported:Once latency and orchestration engineering is in place, the next ceiling is conversational, not technical — no ledger entry supports the claim that the dominant remaining constraint shifts from technical to conversational; claim#22 in particular identifies half-duplex as an ongoing architectural (technical) ceiling on natural voice conversation."
+            "unsupported:Voice failures compound silently — misread end-of-turn or misheard entities propagate into routing and retrieval and surface as confidently wrong answers downstream (no ledger entry covers silent failure propagation in voice pipelines)",
+            "unsupported:The per-turn trace (logging turn boundary, transcript, retrieved record, and response together) is the single most important architectural artifact to build (no ledger entry supports per-turn tracing as a key recommendation)",
+            "unsupported:Without per-turn tracing you debug only the last step and never find the stage that actually broke (no ledger entry addresses this debugging methodology claim)"
           ],
-          "para_excerpt": "Once the engineering of latency and orchestration is in place, the next ceiling is conversational, not technical."
+          "para_excerpt": "If you build one thing out of this chapter, build the per-turn trace. Voice failures compound silently — a misread end-of-turn or a misheard entity does not sur…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1919,71 +1924,70 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 23,
+          "paragraph_index": 35,
           "score": 22.0,
           "label": "weak",
-          "reasoning": "The paragraph makes several claims that need to be evaluated against the ledger:\n\n1. \"The 200-millisecond budget is a useful target\" — This is consistent with claims#29 and claims#20, which treat latency engineering as a serious architectural concern. The framing is appropriately hedged. OK.\n\n2. \"It is also, for tool-call-heavy agents, often impossible\" — This is a strong empirical claim about the impossibility of hitting the 200ms target under tool-call variance. The ledger (claims#20, claims#29) supports that latency is a primary engineering problem and that masking belongs in the architecture, but neither entry supports the claim that the target is *often impossible* for tool-call-heavy agents. This is an unsupported specific empirical assertion.\n\n3. \"When the tool latency variance is 500 milliseconds to 4 seconds, no amount of optimization gets the worst case into the conversational window\" — This is a strong absolute claim (\"no amount of optimization\"). claims#29 supports latency masking as an architectural concern, and claims#20 supports latency engineering as primary, but neither ledger entry supports the absolute claim that optimization is categorically insufficient under high variance. This overstates what the ledger supports.\n\n4. \"Optimization has a floor. Conversation does not.\" — This is a rhetorical conclusion that implies a fundamental, unbridgeable gap between optimization limits and conversational requirements. This is an unsupported claim; no ledger entry establishes this asymmetry as a fact. It reads as a strong, memorable assertion but has no ledger backing.\n\nThe central rhetorical thrust of the paragraph — that the 200ms target is categorically unachievable for tool-heavy agents and that optimization is fundamentally bounded while conversation is not — overstates and goes beyond what the ledger supports. The ledger treats latency as a solvable engineering problem (claims#20, claims#29), not as an inherently impossible one. This is a central overstatement, warranting a weak rating.",
+          "reasoning": "The paragraph makes several specific technical claims about TTS architecture convergence and implementation details. The closest ledger entry is claims#23 (moderate): \"TTS architecture is converging on LLM architecture.\" The paragraph goes further, asserting that the autoregressive streaming backbone \"has converged across labs\" — a strong declarative statement of completed convergence — which overstates the moderate ledger entry. More critically, the paragraph makes several claims with no ledger backing at all: the specific detail that Mistral generates \"37 tokens at once using a diffusion model,\" the architectural distinction between the streaming backbone and the per-frame generator, and the design prescription to \"consume a stream of frames\" and decouple orchestration from per-frame generation. These are concrete, specific engineering claims (including a precise number — 37 tokens) that have no corresponding ledger entry. The central architectural prescription of the paragraph — that the streaming backbone is the portable interface and the frame generator is a vendor detail — is entirely unsupported by the ledger. While claims#29 touches on latency-related architectural concerns and claims#23 touches on TTS convergence, neither covers the specificity of the claims made here. The paragraph's core argument rests on unsupported and overstated claims, making it weak-to-fail territory. Given the presence of a fabricated-looking specific number (37 tokens) with no ledger backing, this borders on fail, but since the broader convergence theme has partial ledger support, a weak rating is assigned at the low end.",
           "evidence_refs": [
-            "overstated:'No amount of optimization gets the worst case into the conversational window' — the ledger (claims#20, claims#29) frames latency as a primary engineering problem to be solved architecturally (e.g., via masking), not as categorically unsolvable under high variance. The absolute 'no amount of optimization' framing overstates the ledger's position.",
-            "overstated:'Optimization has a floor. Conversation does not.' — This asymmetric absolute claim goes beyond any ledger entry, which supports latency engineering as a serious architectural concern but does not establish an unbridgeable structural gap between optimization limits and conversational requirements.",
-            "unsupported:'For tool-call-heavy agents, [the 200ms budget is] often impossible' — no ledger entry provides empirical or structural support for the claim that the 200ms target is frequently unachievable specifically for tool-call-heavy agents."
+            "overstated:The autoregressive streaming backbone 'has converged across labs' — stated as a completed fact, which overstates the moderate ledger entry claims#23 that TTS architecture 'is converging' (i.e., in progress, not complete).",
+            "unsupported:Mistral generates each frame's '37 tokens at once using a diffusion model' — a specific numerical and architectural claim with no ledger entry.",
+            "unsupported:The distinction between the streaming backbone (converged) and the per-frame generator (not converged) as the key architectural boundary — no ledger entry covers this specific structural decomposition.",
+            "unsupported:The design prescription to 'consume a stream of frames' and decouple orchestration from per-frame generation — a concrete engineering recommendation with no ledger backing.",
+            "unsupported:The per-frame stage being a 'vendor implementation detail' that varies across models (autoregressive, diffusion, flow-matching) — no ledger entry supports this taxonomy or characterization."
           ],
-          "para_excerpt": "The 200-millisecond budget is a useful target. It is also, for tool-call-heavy agents, often impossible. When the tool latency variance is 500 milliseconds to 4…"
+          "para_excerpt": "Humeau is specific about where his own released model departs from the pattern, and the distinction is the one you should build against. The backbone is autoreg…"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 0,
-          "score": 78.0,
-          "label": "moderate",
+          "score": 82.0,
+          "label": "strong",
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
             "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-5-context-is-infrastructure",
             "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The central claim that 'the loop around the model, not the model itself, determines reliability' is restated as the chapter's thesis, which is the same argument made in Chapter 1 (assistant vs. delegate) and Chapter 3 (harnesses determine what an agent can do).",
-            "argument:The 'wrap, don't rebuild' argument — keep orchestration durable, change the surfaces around it — is explicitly attributed to Chapter 3's harness argument and presented as confirmation rather than extension.",
-            "argument:The closing synthesis section explicitly restates the claims of Chapters 3, 4, 5, and 6 (harnesses, evals as control system, context assembly, durable state as trust features) without adding new content beyond 'voice makes these audible'.",
-            "argument:The irreversibility/autonomy-dial logic in the robotics coda restates the risk-vs-irreversibility framing from Chapter 6 (human control plane) and Chapter 7 (high-stakes trust)."
+            "argument:The model is not the bottleneck; scaffolding/orchestration around the model is what determines reliability — restates Chapter 1's central thesis and Chapter 10's summary",
+            "argument:Keep the harness/orchestration durable and add new surfaces (voice) over it rather than rebuilding — restates Chapter 3's harness argument",
+            "argument:Evals are the durable asset to preserve across migrations, not throw away — restates Chapter 4's central claim",
+            "argument:Durable runtime enables background/async tool calls that keep the system alive — restates Chapter 6's durable execution argument"
           ],
           "para_excerpt": "The natural assumption among engineers stepping into voice for the first time is that the model is the bottleneck. If the speech-to-speech system feels stiff, t…"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 1,
-          "score": 78.0,
-          "label": "moderate",
+          "score": 82.0,
+          "label": "strong",
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
             "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-5-context-is-infrastructure",
             "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The central claim that 'the loop around the model, not the model itself, determines reliability' is restated as the chapter's thesis, which is the same argument made in Chapter 1 (assistant vs. delegate) and Chapter 3 (harnesses determine what an agent can do).",
-            "argument:The 'wrap, don't rebuild' argument — keep orchestration durable, change the surfaces around it — is explicitly attributed to Chapter 3's harness argument and presented as confirmation rather than extension.",
-            "argument:The closing synthesis section explicitly restates the claims of Chapters 3, 4, 5, and 6 (harnesses, evals as control system, context assembly, durable state as trust features) without adding new content beyond 'voice makes these audible'.",
-            "argument:The irreversibility/autonomy-dial logic in the robotics coda restates the risk-vs-irreversibility framing from Chapter 6 (human control plane) and Chapter 7 (high-stakes trust)."
+            "argument:The model is not the bottleneck; scaffolding/orchestration around the model is what determines reliability — restates Chapter 1's central thesis and Chapter 10's summary",
+            "argument:Keep the harness/orchestration durable and add new surfaces (voice) over it rather than rebuilding — restates Chapter 3's harness argument",
+            "argument:Evals are the durable asset to preserve across migrations, not throw away — restates Chapter 4's central claim",
+            "argument:Durable runtime enables background/async tool calls that keep the system alive — restates Chapter 6's durable execution argument"
           ],
           "para_excerpt": "The practitioners building production voice systems do not see it that way anymore. Sean DuBois at OpenAI and Kwindla Hultman Kramer at Daily titled their joint…"
         },
         {
           "dim_name": "redundancy",
           "paragraph_index": 2,
-          "score": 78.0,
-          "label": "moderate",
+          "score": 82.0,
+          "label": "strong",
           "reasoning": "inherited from chapter:chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
             "overlaps:chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
             "overlaps:chapter-4-evals-are-the-control-system",
-            "overlaps:chapter-5-context-is-infrastructure",
             "overlaps:chapter-6-runtimes-state-and-the-human-control-plane",
-            "argument:The central claim that 'the loop around the model, not the model itself, determines reliability' is restated as the chapter's thesis, which is the same argument made in Chapter 1 (assistant vs. delegate) and Chapter 3 (harnesses determine what an agent can do).",
-            "argument:The 'wrap, don't rebuild' argument — keep orchestration durable, change the surfaces around it — is explicitly attributed to Chapter 3's harness argument and presented as confirmation rather than extension.",
-            "argument:The closing synthesis section explicitly restates the claims of Chapters 3, 4, 5, and 6 (harnesses, evals as control system, context assembly, durable state as trust features) without adding new content beyond 'voice makes these audible'.",
-            "argument:The irreversibility/autonomy-dial logic in the robotics coda restates the risk-vs-irreversibility framing from Chapter 6 (human control plane) and Chapter 7 (high-stakes trust)."
+            "argument:The model is not the bottleneck; scaffolding/orchestration around the model is what determines reliability — restates Chapter 1's central thesis and Chapter 10's summary",
+            "argument:Keep the harness/orchestration durable and add new surfaces (voice) over it rather than rebuilding — restates Chapter 3's harness argument",
+            "argument:Evals are the durable asset to preserve across migrations, not throw away — restates Chapter 4's central claim",
+            "argument:Durable runtime enables background/async tool calls that keep the system alive — restates Chapter 6's durable execution argument"
           ],
           "para_excerpt": "Neil Zeghidour at Gradium AI makes the strongest version of this argument. \"The main bottleneck is becoming the tool call,\" he says, after walking through what …"
         }
@@ -1991,7 +1995,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:5e44048",
+      "version_id": "git:7eaa677",
       "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
       "primary_run_id": "2026-06-20-152312-ea0f",
       "rollup": {
@@ -2253,20 +2257,20 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:5e44048",
-      "corpus_snapshot_hash": "sha256:ea0feda84deb3663a039939b105e2fbea711b10472fc813a4cce3f1eb4718c58",
-      "primary_run_id": "2026-06-20-152312-ea0f",
+      "version_id": "git:7eaa677",
+      "corpus_snapshot_hash": "sha256:988ed803e61171eca55827c24524b4aaabef161947ffa1d16d61bc1086f05a60",
+      "primary_run_id": "2026-06-20-194440-988e",
       "rollup": {
-        "humanness": 76.5,
-        "voice": 78.0,
-        "usefulness": 52.5,
+        "humanness": 77.8,
+        "voice": 72.0,
+        "usefulness": 59.7,
         "evidence_density": 90.0,
-        "claim_defensibility": 78.7,
+        "claim_defensibility": 77.4,
         "redundancy": 38.0,
-        "n_paragraphs": 13,
-        "usefulness_substantive": 56.1,
+        "n_paragraphs": 12,
+        "usefulness_substantive": 57.1,
         "usefulness_connective": 1,
-        "usefulness_total": 13
+        "usefulness_total": 12
       },
       "labels": {
         "humanness": "moderate",
@@ -2278,28 +2282,28 @@
       },
       "coverage": {
         "humanness": {
-          "scored": 13,
-          "total": 13
+          "scored": 12,
+          "total": 12
         },
         "voice": {
-          "scored": 13,
-          "total": 13
+          "scored": 12,
+          "total": 12
         },
         "usefulness": {
-          "scored": 13,
-          "total": 13
+          "scored": 12,
+          "total": 12
         },
         "evidence_density": {
           "scored": 0,
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 13,
-          "total": 13
+          "scored": 12,
+          "total": 12
         },
         "redundancy": {
-          "scored": 13,
-          "total": 13
+          "scored": 12,
+          "total": 12
         }
       },
       "ship_blockers": [],
@@ -2317,85 +2321,85 @@
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 12,
+          "paragraph_index": 10,
           "score": 62.0,
           "label": "moderate",
           "reasoning": "This paragraph has genuine moments of specificity and a defensible point of view — \"the blast radius of an unscaffolded mistake grows with the capability of the thing making it\" is a real claim that could be argued against, and \"a more capable model executes a badly framed task more confidently\" is the kind of counterintuitive observation that earns its place. The author clearly has a thesis and isn't just hedging. However, the prose is structured as a bulleted listicle, which immediately signals content-marketing DNA. The items follow a suspiciously tidy parallel structure — each bullet opens with an imperative and closes with a payoff clause — and the distinctions between bullets blur on re-reading (bullets 3 and 4 are nearly the same checklist restated). The final bullet collapses into the exact AI-slop cadence: \"the teams that win the next decade are the ones who…\" is a listicle-stem closer that could end any Medium post about any technology from blockchain to no-code. The phrase \"turns cheap generation into trusted throughput\" is doing rhetorical work without doing intellectual work — it sounds like a conclusion but makes no falsifiable claim. The checklist in bullet 4 (clear intent, prepared environment, right context, preserved state, bounded authority, measurement, human judgment) is a list-of-seven with no real hierarchy or tension between items. Strong ideas are present but they're packaged in a format that flattens them.",
           "evidence_refs": [
             "phrase:'the teams that win the next decade are the ones who can absorb every new tool without chaos, not the ones who adopt the newest tool fastest'"
           ],
-          "para_excerpt": "- Invest in the scaffolding, not the model: harnesses, evals, context discipline, and authority boundaries are where the durable advantage lives, because a more…"
+          "para_excerpt": "- Run constrained delegation as a design template for every AI feature: give the system a clear task, a prepared working environment, the right slice of context…"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 1,
+          "paragraph_index": 8,
           "score": 72.0,
           "label": "moderate",
-          "reasoning": "This paragraph has genuine structural ambition and a real claim worth arguing with: that reliability comes from scaffolding, not model cleverness, and that the book's chapters are consequences of a single shift. The Joel Hron quote is specific and earns its place. The \"wrong suggestion is a wrong sentence, but a wrong delegated action is a wrong artifact other work depends on\" distinction is the kind of concrete, falsifiable claim a hostile editor can actually engage with — it's the paragraph's best moment.\n\nBut the back half collapses into a listicle stem. \"Taste became… Harnesses became… Evals became… Context became… Runtimes became… Identity became… Realtime made… And the organization turned out to be…\" — this is a chapter-summary recitation dressed up as synthesis. Each sentence follows the same grammatical mold: [Noun] became [the thing that does the thing]. There's no escalation, no surprise, no moment where the list earns its length. It reads like a table of contents with verbs added. The final line — \"a harness for its own agents\" — is a nice callback, but it arrives after the reader has already gone numb from the repetition. The paragraph is doing real work in its first half and coasting on structure in its second.",
+          "reasoning": "This paragraph has genuine intellectual content and a defensible claim — that review capacity, not generation speed, is the binding constraint. That's a real argument someone could push back on. The phrase \"every engineer becoming, in effect, a code reviewer\" is specific and memorable, and the structural logic (cheap generation lifts the ceiling but leaves the constraint untouched) is tight and earns its conclusion. The list of structural elements — \"layered evals,\" \"roll-up visibility,\" \"spec discipline\" — is functional rather than decorative, each item doing distinct work. However, the paragraph stumbles at its close. \"The teams that win the next decade\" is a classic AI-flavored prophecy sentence, the kind of motivational kicker that appears in approximately 40% of all tech thought-leadership pieces. It softens what had been a precise argument into a vague competitive promise. The opening \"fast-moving field\" is also a mild cliché. The paragraph is doing real thinking but lets itself coast to the finish line on borrowed rhetoric.",
           "evidence_refs": [
-            "phrase:'Taste became the scarce input once execution got cheap (Chapter 2). Harnesses became the way to encode that taste into the environment an agent works in (Chapter 3). Evals became the control system that tells you whether any of it is working (Chapter 4).'"
+            "phrase:'The teams that win the next decade will not be the ones that adopted the newest tools fastest.'"
           ],
-          "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on, the move Joel Hron at…"
+          "para_excerpt": "So the question this book leaves you with is not \"which model should I use?\" It is the question that survives every answer to that one: what does the system aro…"
         },
         {
           "dim_name": "voice",
           "paragraph_index": 0,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
-            "drift:Three overlapping drift signals, none severe: (1) longer average sentence length than baseline — the synthesis paragraphs pile subordinate clauses where the baseline typically cuts to a short declarative; (2) mildly more hedged epistemic stance in the closing sections (\"if at all,\" \"wrong on the surface and right underneath\") versus the baseline's blunt, unqualified assertions; (3) slightly elevated thematic abstraction (\"durable advantage,\" \"trusted throughput,\" \"the discipline of turning capability\") compared to the baseline's preference for concrete engineering objects (gateway, OAuth token, audit log). The bullet-list section is nearly indistinguishable from baseline. Net effect: same author, synthesis-chapter register running a little longer and more ruminative than the baseline's characteristic sharpness."
+            "drift:Four measurable drifts from baseline: (1) sentences run longer and more uniformly than the baseline's short/long alternation — the baseline's one-sentence paragraphs (\"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") are nearly absent here; (2) epistemic stance is slightly more hedged and essayistic (\"It is worth being precise about *why*, rather than just asserting\") versus the baseline's blunt declaratives; (3) higher density of nominalized abstractions (\"a reallocation of attention,\" \"the staying is what the rest of this chapter is about\") compared to the baseline's mechanism-level concreteness; (4) more self-referential meta-commentary on the book's own structure than the baseline ever employs. The bullet section is well-matched to baseline style and prevents a lower score."
           ],
-          "para_excerpt": "Read back across the chapters and a single shape emerges, stated nine different ways. It is the shape Omar Khattab points at when he describes systems he built …"
+          "para_excerpt": "This book opened on the shift from assistant to delegate, and argued from the first page that reliability comes far less from model cleverness than from the sca…"
         },
         {
           "dim_name": "voice",
           "paragraph_index": 1,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
-            "drift:Three overlapping drift signals, none severe: (1) longer average sentence length than baseline — the synthesis paragraphs pile subordinate clauses where the baseline typically cuts to a short declarative; (2) mildly more hedged epistemic stance in the closing sections (\"if at all,\" \"wrong on the surface and right underneath\") versus the baseline's blunt, unqualified assertions; (3) slightly elevated thematic abstraction (\"durable advantage,\" \"trusted throughput,\" \"the discipline of turning capability\") compared to the baseline's preference for concrete engineering objects (gateway, OAuth token, audit log). The bullet-list section is nearly indistinguishable from baseline. Net effect: same author, synthesis-chapter register running a little longer and more ruminative than the baseline's characteristic sharpness."
+            "drift:Four measurable drifts from baseline: (1) sentences run longer and more uniformly than the baseline's short/long alternation — the baseline's one-sentence paragraphs (\"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") are nearly absent here; (2) epistemic stance is slightly more hedged and essayistic (\"It is worth being precise about *why*, rather than just asserting\") versus the baseline's blunt declaratives; (3) higher density of nominalized abstractions (\"a reallocation of attention,\" \"the staying is what the rest of this chapter is about\") compared to the baseline's mechanism-level concreteness; (4) more self-referential meta-commentary on the book's own structure than the baseline ever employs. The bullet section is well-matched to baseline style and prevents a lower score."
           ],
-          "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on, the move Joel Hron at…"
+          "para_excerpt": "It is one continuous consequence, not nine. Delegation stretched the failure surface from a single response across a whole workflow — the move Joel Hron at Thom…"
         },
         {
           "dim_name": "voice",
           "paragraph_index": 2,
-          "score": 78.0,
+          "score": 72.0,
           "label": "moderate",
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
-            "drift:Three overlapping drift signals, none severe: (1) longer average sentence length than baseline — the synthesis paragraphs pile subordinate clauses where the baseline typically cuts to a short declarative; (2) mildly more hedged epistemic stance in the closing sections (\"if at all,\" \"wrong on the surface and right underneath\") versus the baseline's blunt, unqualified assertions; (3) slightly elevated thematic abstraction (\"durable advantage,\" \"trusted throughput,\" \"the discipline of turning capability\") compared to the baseline's preference for concrete engineering objects (gateway, OAuth token, audit log). The bullet-list section is nearly indistinguishable from baseline. Net effect: same author, synthesis-chapter register running a little longer and more ruminative than the baseline's characteristic sharpness."
+            "drift:Four measurable drifts from baseline: (1) sentences run longer and more uniformly than the baseline's short/long alternation — the baseline's one-sentence paragraphs (\"Least privilege is the oldest piece of security advice, and on its own it is not enough.\") are nearly absent here; (2) epistemic stance is slightly more hedged and essayistic (\"It is worth being precise about *why*, rather than just asserting\") versus the baseline's blunt declaratives; (3) higher density of nominalized abstractions (\"a reallocation of attention,\" \"the staying is what the rest of this chapter is about\") compared to the baseline's mechanism-level concreteness; (4) more self-referential meta-commentary on the book's own structure than the baseline ever employs. The bullet section is well-matched to baseline style and prevents a lower score."
           ],
-          "para_excerpt": "The throughline connecting all of them is one claim, repeated until it stops sounding like a claim and starts sounding like a description: reliability comes far…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 6,
-          "score": 10.0,
-          "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and transitional prose. It announces that the book's core idea is \"constrained delegation\" but provides no definition, threshold, technique, or example that an engineer could act on. It explicitly defers the actual definition to the \"next paragraph,\" making this paragraph a signpost with zero operational content. It restates the book's purpose rather than delivering any usable principle.",
-          "evidence_refs": [],
-          "para_excerpt": "If the book reduces to one transferable idea, it is this: **constrained delegation** — handing real work to a system while holding the bounds inside which it is…"
+          "para_excerpt": "What makes that more than a tidy summary is where the durable practice actually lives. Ryan Lopopolo at OpenAI put it in a sentence — \"the important thing is no…"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 1,
-          "score": 12.0,
+          "score": 10.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure meta-commentary and chapter-summary recapitulation. It restates the arc of the entire book in a single closing paragraph, naming each prior chapter's theme without adding any new decision, threshold, principle, or concrete technique. The Joel Hron quote was presumably introduced earlier in the book. There is no new actionable content — no test, no tool, no trap, no threshold. It is classic concluding transition prose.",
+          "reasoning": "This paragraph is pure retrospective meta-commentary — a summary of what the preceding chapters covered, framed as a unified thesis. It names concepts (taste, harness, evals, context, runtimes, identity, realtime, organization) but only as chapter labels, not with enough detail to act on any of them. There is no decision, threshold, technique, or concrete example. It is closing/transition prose that recaps the book's arc without adding operational content.",
           "evidence_refs": [],
-          "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on, the move Joel Hron at…"
+          "para_excerpt": "It is one continuous consequence, not nine. Delegation stretched the failure surface from a single response across a whole workflow — the move Joel Hron at Thom…"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 0,
-          "score": 15.0,
+          "score": 18.0,
           "label": "fail",
-          "reasoning": "This paragraph is pure closing/transition prose. It restates a theme (\"the durable part was never the model, it was the structure\") that has presumably been developed across the prior nine chapters. The DSPy name-drop and Omar Khattab quote add a veneer of concreteness, but no decision, threshold, technique, or trap is introduced here with enough detail to act on. There is no test, no criterion, no tool usage guidance — only a retrospective summary metaphor wrapping up the book.",
+          "reasoning": "This paragraph is closing-chapter meta-commentary and thematic synthesis. It restates the book's central thesis (\"scaffolding over model cleverness\"), references prior chapters as a unified lesson, and sets up what the rest of the chapter will cover. The DSPy/Omar Khattab anecdote gestures at a useful principle (model-agnostic scaffolding), but provides no threshold, decision rule, technique, or concrete example with enough detail to act on. It is transitional framing prose, not operational content.",
           "evidence_refs": [],
-          "para_excerpt": "Read back across the chapters and a single shape emerges, stated nine different ways. It is the shape Omar Khattab points at when he describes systems he built …"
+          "para_excerpt": "This book opened on the shift from assistant to delegate, and argued from the first page that reliability comes far less from model cleverness than from the sca…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 3,
+          "score": 18.0,
+          "label": "fail",
+          "reasoning": "This paragraph is purely meta-commentary and rhetorical framing. It asserts that a pattern \"endures\" and that the reason is \"mechanical, not sentimental,\" but provides no concrete principle, threshold, tool, technique, or example that an engineer could act on. The closing aphorism (\"A better model does not retire the scaffolding; it raises the cost of its absence\") is a decorative metaphor without operational specificity — it names no scaffolding, no model, no cost metric, and no decision criterion. It is transition/setup prose for whatever argument follows.",
+          "evidence_refs": [],
+          "para_excerpt": "It is worth being precise about *why* the pattern endures, rather than just asserting that it does, because the reason is what makes it trustworthy — and the re…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2414,23 +2418,23 @@
           "paragraph_index": 1,
           "score": 72.0,
           "label": "moderate",
-          "reasoning": "Most claims in this summary paragraph map cleanly onto strong ledger entries and are stated at or below their evidential strength. The core transition from suggestion to delegation (claims#1), taste becoming scarce once execution is cheap (claims#40), harnesses encoding taste into the agent environment (claims#3/claims#5), context as infrastructure (claims#10), human-in-the-loop as architectural layer (claims#12), and bounded authority as a prerequisite for agency (claims#13) are all well-supported at strong level and the prose does not overstate them.\n\nHowever, two areas warrant scrutiny:\n\n1. \"Realtime made every one of those failures audible at once\" — claims#20 supports that realtime AI quality is primarily a coordination and latency-engineering problem, not a model-quality problem. The prose claim that realtime makes *all* prior failure modes \"audible at once\" is a rhetorical amplification that goes slightly beyond what the ledger entry asserts. The ledger speaks to the nature of the realtime problem, not to realtime as a universal amplifier of every prior failure surface. This is a minor overstatement on a secondary claim.\n\n2. \"The organization turned out to be the same object at the largest scale — a harness for its own agents\" — this maps loosely to claims#16 (AI-native advantage depends on organizational coherence, not output volume alone), which is only moderate strength. The prose frames the organization as structurally equivalent to a harness, which is a stronger and more specific architectural claim than the ledger's moderate-strength assertion about organizational coherence. This is a slight overstatement of a moderate-level entry.\n\nNeither overstatement is central enough to drop the paragraph to weak, but together they prevent a strong rating.",
+          "reasoning": "Most of the paragraph's claims map cleanly onto strong ledger entries. The core thesis — that delegation expands the failure surface across a workflow rather than a single response — is well-supported by claims#1 (suggestion → delegated execution) and claims#13 (high-stakes systems tune agency). The framing of taste as the scarce input maps to claims#40 (strong). The harness/scaffolding framing maps to claims#3 (strong). Context as infrastructure maps to claims#10 (strong). Identity and bounded authority map to claims#13 (strong). Realtime making failures \"audible at once\" maps to claims#20 (strong). The organization-as-harness framing maps to claims#16 (moderate). The closing line — \"refusing to be closed by a better model\" — maps to claims#3 (strong) and is at or below ledger strength.\n\nOne minor overstatement: the attribution of a specific named quote (\"from helpfulness to productive\") to \"Joel Hron at Thomson Reuters\" is a precise factual claim with no ledger entry backing it. This is an unsupported claim, though it is a minor, illustrative attribution rather than a central thesis claim. The \"evals as the control system\" framing (Chapter 4) also has no direct ledger entry, though it is a minor structural label rather than a substantive claim. These prevent a strong rating but do not rise to a fail, as the central claims are all well-supported.",
           "evidence_refs": [
-            "overstated:\"Realtime made every one of those failures audible at once\" — the ledger (claims#20, strong) supports that realtime is primarily a coordination and latency-engineering problem, but does not support the broader claim that realtime universally surfaces all prior failure modes simultaneously. The prose overstates the scope of the realtime claim.",
-            "overstated:\"The organization turned out to be the same object at the largest scale — a harness for its own agents\" — the ledger (claims#16, moderate) only asserts that AI-native advantage depends on organizational coherence, not output volume. Framing the organization as structurally equivalent to an agent harness is a stronger architectural claim than the moderate-level ledger entry supports."
+            "unsupported:The specific attribution of the phrase 'from helpfulness to productive' as a 'north star' shift to Joel Hron at Thomson Reuters has no corresponding ledger entry.",
+            "unsupported:The characterization of evals as 'the control system' (Chapter 4 framing) has no direct ledger entry supporting it."
           ],
-          "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on, the move Joel Hron at…"
+          "para_excerpt": "It is one continuous consequence, not nine. Delegation stretched the failure surface from a single response across a whole workflow — the move Joel Hron at Thom…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 6,
+          "paragraph_index": 2,
           "score": 72.0,
           "label": "moderate",
-          "reasoning": "The paragraph makes two main claims: (1) that the book's single transferable idea is \"constrained delegation\" — handing real work to a system while holding the bounds — and (2) that the following paragraph encapsulates the whole book, one clause per chapter.\n\nClaim (1) is a synthesis claim. It is well-supported by the ledger: claims#1 (transition to delegated execution), claims#13 (high-stakes systems tune agency rather than maximize it), and claims#12 (oversight as architectural layer) all converge on the idea of constrained delegation. The prose frames this as the book's single distilled idea, which is a strong rhetorical move, but the ledger entries are themselves strong and collectively support this framing. This is at or near ledger strength.\n\nClaim (2) — \"the next paragraph is the whole definition, one clause per chapter\" — is a structural/meta claim about the book's organization. No ledger entry addresses the book's structural organization or the claim that a single paragraph can encapsulate all chapters. This is a minor unsupported claim, but it is presentational rather than substantive, and does not fabricate evidence or contradict the ledger. It is more of an authorial framing device than an empirical assertion.\n\nOverall, the central claim is well-supported. The minor unsupported structural/meta claim about the next paragraph representing the whole book one clause per chapter is the only issue, and it is low-stakes. This warrants a moderate rating rather than a fail, as the unsupported claim is presentational and not a fabricated factual assertion.",
+          "reasoning": "The paragraph makes several claims that map reasonably well to ledger entries:\n\n1. \"The important thing is not the code but the prompt and the guardrails that got you there\" — this aligns well with claims#1 (strong: the important transition is from suggestion to delegated execution) and claims#5 (strong: specs are not paperwork; they are executable intent). The prose frames prompts and guardrails as the durable artifact, which is consistent with these strong ledger entries.\n\n2. \"breadcrumbs, ADRs, and persona-oriented documentation that teach an agent what a good job looks like outlast any model that reads them\" — this is a forward-looking durability claim. It maps most closely to claims#5 (specs are executable intent) and implicitly to claims#3 (reliability comes from scaffolding). The claim that these artifacts \"outlast any model\" is a moderately strong assertion about longevity and model-independence. The ledger supports the importance of such documentation but does not explicitly assert its temporal durability over models. This is a slight overstatement relative to the moderate/strong ledger support available.\n\n3. \"model-independent\" — this is consistent with claims#3 (reliability comes less from model cleverness than from surrounding scaffolding), which is strong. No overstatement here.\n\n4. \"the thing most likely to still be true after the specific scaffolding in these chapters has been replaced\" — this is a predictive durability claim that goes slightly beyond what any single ledger entry explicitly supports, though it is directionally consistent with claims#3 and claims#5.\n\nOverall, the central claims are well-grounded in strong ledger entries. The slight overstatement is on the durability/longevity framing (\"outlast any model\"), which is not directly backed by any ledger entry at that rhetorical strength. This is a minor claim, not the central one, so the paragraph lands at moderate rather than weak.",
           "evidence_refs": [
-            "unsupported:The claim that 'the next paragraph is the whole definition, one clause per chapter' — asserting a specific structural correspondence between a single paragraph and the entire book's chapter organization — has no matching ledger entry."
+            "overstated:breadcrumbs, ADRs, and persona-oriented documentation...outlast any model that reads them — the ledger supports the importance of such documentation (claims#5, claims#3) but does not explicitly assert temporal durability over successive models at this level of confidence"
           ],
-          "para_excerpt": "If the book reduces to one transferable idea, it is this: **constrained delegation** — handing real work to a system while holding the bounds inside which it is…"
+          "para_excerpt": "What makes that more than a tidy summary is where the durable practice actually lives. Ryan Lopopolo at OpenAI put it in a sentence — \"the important thing is no…"
         },
         {
           "dim_name": "redundancy",
@@ -2440,13 +2444,13 @@
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "argument:The shift from assistant to delegate (human stepping out of the critical path) is re-explained as the book's foundational move, mirroring Chapter 1's central thesis.",
-            "argument:The claim that reliability comes from scaffolding/apparatus around the model rather than model cleverness restates Chapter 1's argument that 'the actual product is the apparatus underneath.'",
-            "argument:The assistant/copilot/delegate classification framework from Chapter 1's closing takeaway is re-invoked in Chapter 10's closing checklist and framing.",
-            "argument:The Joel Hron 'north star from helpfulness to productive' framing and 'agency as a dial' concept appear to be reused from Chapter 1's material.",
-            "argument:The argument that delegation stretches the failure surface across a whole workflow (wrong suggestion vs. wrong delegated artifact) echoes Chapter 1's point about bounded vs. unbounded error costs."
+            "argument:Reliability comes from scaffolding around the model, not from model cleverness — restated as the book's central thesis in Ch 10 but already the core claim of Ch 1",
+            "argument:The assistant-to-delegate shift as the foundational framing, including the idea that the human steps out of the critical path — explicitly returned to and restated in Ch 10",
+            "argument:The apparatus/scaffolding underneath the conversational surface is the real product — Ch 1 calls it 'the apparatus underneath'; Ch 10 calls it 'the structure around the model'",
+            "argument:Human judgment should be placed at consequential/irreversible edges rather than spread thin — present in Ch 1's closing takeaway and restated in Ch 10's checklist and body",
+            "argument:Classify/treat AI features by delegation level before building — Ch 1's closing bullet is echoed in Ch 10's pre-ship checklist framing"
           ],
-          "para_excerpt": "Read back across the chapters and a single shape emerges, stated nine different ways. It is the shape Omar Khattab points at when he describes systems he built …"
+          "para_excerpt": "This book opened on the shift from assistant to delegate, and argued from the first page that reliability comes far less from model cleverness than from the sca…"
         },
         {
           "dim_name": "redundancy",
@@ -2456,13 +2460,13 @@
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "argument:The shift from assistant to delegate (human stepping out of the critical path) is re-explained as the book's foundational move, mirroring Chapter 1's central thesis.",
-            "argument:The claim that reliability comes from scaffolding/apparatus around the model rather than model cleverness restates Chapter 1's argument that 'the actual product is the apparatus underneath.'",
-            "argument:The assistant/copilot/delegate classification framework from Chapter 1's closing takeaway is re-invoked in Chapter 10's closing checklist and framing.",
-            "argument:The Joel Hron 'north star from helpfulness to productive' framing and 'agency as a dial' concept appear to be reused from Chapter 1's material.",
-            "argument:The argument that delegation stretches the failure surface across a whole workflow (wrong suggestion vs. wrong delegated artifact) echoes Chapter 1's point about bounded vs. unbounded error costs."
+            "argument:Reliability comes from scaffolding around the model, not from model cleverness — restated as the book's central thesis in Ch 10 but already the core claim of Ch 1",
+            "argument:The assistant-to-delegate shift as the foundational framing, including the idea that the human steps out of the critical path — explicitly returned to and restated in Ch 10",
+            "argument:The apparatus/scaffolding underneath the conversational surface is the real product — Ch 1 calls it 'the apparatus underneath'; Ch 10 calls it 'the structure around the model'",
+            "argument:Human judgment should be placed at consequential/irreversible edges rather than spread thin — present in Ch 1's closing takeaway and restated in Ch 10's checklist and body",
+            "argument:Classify/treat AI features by delegation level before building — Ch 1's closing bullet is echoed in Ch 10's pre-ship checklist framing"
           ],
-          "para_excerpt": "The shift that started the book was from suggestion to delegation — from a system that tells you things to one that does work you rely on, the move Joel Hron at…"
+          "para_excerpt": "It is one continuous consequence, not nine. Delegation stretched the failure surface from a single response across a whole workflow — the move Joel Hron at Thom…"
         },
         {
           "dim_name": "redundancy",
@@ -2472,13 +2476,13 @@
           "reasoning": "inherited from chapter:chapter-10-what-endures",
           "evidence_refs": [
             "overlaps:chapter-1-the-shift-from-assistant-to-delegate",
-            "argument:The shift from assistant to delegate (human stepping out of the critical path) is re-explained as the book's foundational move, mirroring Chapter 1's central thesis.",
-            "argument:The claim that reliability comes from scaffolding/apparatus around the model rather than model cleverness restates Chapter 1's argument that 'the actual product is the apparatus underneath.'",
-            "argument:The assistant/copilot/delegate classification framework from Chapter 1's closing takeaway is re-invoked in Chapter 10's closing checklist and framing.",
-            "argument:The Joel Hron 'north star from helpfulness to productive' framing and 'agency as a dial' concept appear to be reused from Chapter 1's material.",
-            "argument:The argument that delegation stretches the failure surface across a whole workflow (wrong suggestion vs. wrong delegated artifact) echoes Chapter 1's point about bounded vs. unbounded error costs."
+            "argument:Reliability comes from scaffolding around the model, not from model cleverness — restated as the book's central thesis in Ch 10 but already the core claim of Ch 1",
+            "argument:The assistant-to-delegate shift as the foundational framing, including the idea that the human steps out of the critical path — explicitly returned to and restated in Ch 10",
+            "argument:The apparatus/scaffolding underneath the conversational surface is the real product — Ch 1 calls it 'the apparatus underneath'; Ch 10 calls it 'the structure around the model'",
+            "argument:Human judgment should be placed at consequential/irreversible edges rather than spread thin — present in Ch 1's closing takeaway and restated in Ch 10's checklist and body",
+            "argument:Classify/treat AI features by delegation level before building — Ch 1's closing bullet is echoed in Ch 10's pre-ship checklist framing"
           ],
-          "para_excerpt": "The throughline connecting all of them is one claim, repeated until it stops sounding like a claim and starts sounding like a description: reliability comes far…"
+          "para_excerpt": "What makes that more than a tidy summary is where the durable practice actually lives. Ryan Lopopolo at OpenAI put it in a sentence — \"the important thing is no…"
         }
       ]
     }
@@ -3666,6 +3670,145 @@
           "usefulness_substantive": 56.1,
           "usefulness_connective": 1,
           "usefulness_total": 13
+        }
+      }
+    },
+    {
+      "run_id": "2026-06-20-194440-988e",
+      "version_id": "git:7eaa677",
+      "finished_at": "2026-06-20T19:57:08.679187+00:00",
+      "partial": false,
+      "book": {
+        "humanness": 77.8,
+        "voice": 78.9,
+        "usefulness": 57.3,
+        "evidence_density": 89.9,
+        "claim_defensibility": 75.9,
+        "redundancy": 71.0,
+        "usefulness_substantive": 60.9,
+        "usefulness_connective": 32,
+        "usefulness_total": 326
+      },
+      "chapters": {
+        "01": {
+          "humanness": 73.7,
+          "voice": 91.0,
+          "usefulness": 39.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.8,
+          "redundancy": 100.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 41.2,
+          "usefulness_connective": 1,
+          "usefulness_total": 20
+        },
+        "02": {
+          "humanness": 79.2,
+          "voice": 82.0,
+          "usefulness": 67.2,
+          "evidence_density": 90.0,
+          "claim_defensibility": 81.0,
+          "redundancy": 72.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 69.6,
+          "usefulness_connective": 1,
+          "usefulness_total": 20
+        },
+        "03": {
+          "humanness": 74.5,
+          "voice": 82.0,
+          "usefulness": 51.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 71.8,
+          "redundancy": 72.0,
+          "n_paragraphs": 53,
+          "usefulness_substantive": 62.6,
+          "usefulness_connective": 12,
+          "usefulness_total": 53
+        },
+        "04": {
+          "humanness": 74.7,
+          "voice": 82.0,
+          "usefulness": 48.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 71.0,
+          "redundancy": 78.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 51.4,
+          "usefulness_connective": 2,
+          "usefulness_total": 20
+        },
+        "05": {
+          "humanness": 78.1,
+          "voice": 72.0,
+          "usefulness": 59.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.3,
+          "redundancy": 72.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 69.0,
+          "usefulness_connective": 7,
+          "usefulness_total": 47
+        },
+        "06": {
+          "humanness": 78.7,
+          "voice": 82.0,
+          "usefulness": 53.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 79.9,
+          "redundancy": 72.0,
+          "n_paragraphs": 18,
+          "usefulness_substantive": 59.6,
+          "usefulness_connective": 2,
+          "usefulness_total": 18
+        },
+        "07": {
+          "humanness": 80.1,
+          "voice": 82.0,
+          "usefulness": 58.0,
+          "evidence_density": 88.8,
+          "claim_defensibility": 82.7,
+          "redundancy": 72.0,
+          "n_paragraphs": 50,
+          "usefulness_substantive": 63.8,
+          "usefulness_connective": 6,
+          "usefulness_total": 47
+        },
+        "08": {
+          "humanness": 81.2,
+          "voice": 72.0,
+          "usefulness": 73.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 69.3,
+          "redundancy": 82.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 73.9,
+          "usefulness_connective": 0,
+          "usefulness_total": 47
+        },
+        "09": {
+          "humanness": 79.8,
+          "voice": 72.0,
+          "usefulness": 60.6,
+          "evidence_density": 90.0,
+          "claim_defensibility": 70.4,
+          "redundancy": 52.0,
+          "n_paragraphs": 42,
+          "usefulness_substantive": 60.6,
+          "usefulness_connective": 0,
+          "usefulness_total": 42
+        },
+        "10": {
+          "humanness": 77.8,
+          "voice": 72.0,
+          "usefulness": 59.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 77.4,
+          "redundancy": 38.0,
+          "n_paragraphs": 12,
+          "usefulness_substantive": 57.1,
+          "usefulness_connective": 1,
+          "usefulness_total": 12
         }
       }
     }
