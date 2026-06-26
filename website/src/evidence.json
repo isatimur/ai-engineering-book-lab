@@ -135,6 +135,49 @@
           "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
         }
       ]
+    },
+    {
+      "claim_id": "claims#51",
+      "text": "Once agents go parallel and autonomous, the human's verification capacity — not the agents' generation capacity — is the binding constraint",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "so9l_MwS2yg",
+          "start": "00:03:40.080",
+          "end": "00:03:43.239",
+          "start_seconds": 220,
+          "confidence": "high",
+          "label": "#761 — Zack Proser, WorkOS",
+          "quote": "agents are not the bottleneck now and I think that's going to increasingly be the case, but we are."
+        },
+        {
+          "video_id": "so9l_MwS2yg",
+          "start": "00:03:55.680",
+          "end": "00:04:03.190",
+          "start_seconds": 235,
+          "confidence": "high",
+          "label": "#761 — Zack Proser, WorkOS",
+          "quote": "our attention is still, you know, in meatspace, if you will, and it still degrades under load. It's still the hard constraint, essentially."
+        },
+        {
+          "video_id": "zMiSRliEzv4",
+          "start": "00:02:31.160",
+          "end": "00:02:34.000",
+          "start_seconds": 151,
+          "confidence": "high",
+          "label": "#758 — Joshua Snyder, PostHog",
+          "quote": "we just want you to look at PRs that are ready for you in GitHub."
+        },
+        {
+          "video_id": "zMiSRliEzv4",
+          "start": "00:14:22.720",
+          "end": "00:14:28.880",
+          "start_seconds": 862,
+          "confidence": "high",
+          "label": "#758 — Joshua Snyder, PostHog",
+          "quote": "instead of you reviewing changes, if the change is pretty easy, let's just approve it with an agent and deploy it behind a feature flag."
+        }
+      ]
     }
   ],
   "6": [
@@ -1076,6 +1119,31 @@
           "quote": "most primitives the magic happens when you combine these things together"
         }
       ]
+    },
+    {
+      "claim_id": "claims#52",
+      "text": "The gap that kills agent PoCs is the evaluation gap — no defined, continuously-measured definition of success — not the choice of model",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "ObTPqBGsEbA",
+          "start": "00:03:39.480",
+          "end": "00:03:42.120",
+          "start_seconds": 219,
+          "confidence": "high",
+          "label": "#767 — Sandipan Bhaumik, Databricks",
+          "quote": "Second is the evaluation gap."
+        },
+        {
+          "video_id": "ObTPqBGsEbA",
+          "start": "00:07:36.240",
+          "end": "00:07:38.600",
+          "start_seconds": 456,
+          "confidence": "high",
+          "label": "#767 — Sandipan Bhaumik, Databricks",
+          "quote": "Evaluation is basically specification for your AI system."
+        }
+      ]
     }
   ],
   "9": [
@@ -1841,6 +1909,74 @@
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
           "quote": "intentionally designed to put friction"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#51",
+      "text": "Once agents go parallel and autonomous, the human's verification capacity — not the agents' generation capacity — is the binding constraint",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "so9l_MwS2yg",
+          "start": "00:03:40.080",
+          "end": "00:03:43.239",
+          "start_seconds": 220,
+          "confidence": "high",
+          "label": "#761 — Zack Proser, WorkOS",
+          "quote": "agents are not the bottleneck now and I think that's going to increasingly be the case, but we are."
+        },
+        {
+          "video_id": "so9l_MwS2yg",
+          "start": "00:03:55.680",
+          "end": "00:04:03.190",
+          "start_seconds": 235,
+          "confidence": "high",
+          "label": "#761 — Zack Proser, WorkOS",
+          "quote": "our attention is still, you know, in meatspace, if you will, and it still degrades under load. It's still the hard constraint, essentially."
+        },
+        {
+          "video_id": "zMiSRliEzv4",
+          "start": "00:02:31.160",
+          "end": "00:02:34.000",
+          "start_seconds": 151,
+          "confidence": "high",
+          "label": "#758 — Joshua Snyder, PostHog",
+          "quote": "we just want you to look at PRs that are ready for you in GitHub."
+        },
+        {
+          "video_id": "zMiSRliEzv4",
+          "start": "00:14:22.720",
+          "end": "00:14:28.880",
+          "start_seconds": 862,
+          "confidence": "high",
+          "label": "#758 — Joshua Snyder, PostHog",
+          "quote": "instead of you reviewing changes, if the change is pretty easy, let's just approve it with an agent and deploy it behind a feature flag."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#52",
+      "text": "The gap that kills agent PoCs is the evaluation gap — no defined, continuously-measured definition of success — not the choice of model",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "ObTPqBGsEbA",
+          "start": "00:03:39.480",
+          "end": "00:03:42.120",
+          "start_seconds": 219,
+          "confidence": "high",
+          "label": "#767 — Sandipan Bhaumik, Databricks",
+          "quote": "Second is the evaluation gap."
+        },
+        {
+          "video_id": "ObTPqBGsEbA",
+          "start": "00:07:36.240",
+          "end": "00:07:38.600",
+          "start_seconds": 456,
+          "confidence": "high",
+          "label": "#767 — Sandipan Bhaumik, Databricks",
+          "quote": "Evaluation is basically specification for your AI system."
         }
       ]
     }
@@ -2782,6 +2918,31 @@
           "quote": "adapt to that new kind of buyer."
         }
       ]
+    },
+    {
+      "claim_id": "claims#53",
+      "text": "Agents fabricate having verified — they report success they never achieved — so the harness must supply real verification, not trust the agent's account of it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:02:08.920",
+          "end": "00:02:11.120",
+          "start_seconds": 128,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "There's no error, no warning, just the wrong answer."
+        },
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:09:55.400",
+          "end": "00:09:57.400",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "The agent gets blocked, it needs to please you and it makes things up."
+        }
+      ]
     }
   ],
   "3": [
@@ -3149,6 +3310,74 @@
           "confidence": "high",
           "label": "#16 — Ryan Lopopolo, OpenAI",
           "quote": "a good harness is really operationalized around giving the model text at the right time"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#51",
+      "text": "Once agents go parallel and autonomous, the human's verification capacity — not the agents' generation capacity — is the binding constraint",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "so9l_MwS2yg",
+          "start": "00:03:40.080",
+          "end": "00:03:43.239",
+          "start_seconds": 220,
+          "confidence": "high",
+          "label": "#761 — Zack Proser, WorkOS",
+          "quote": "agents are not the bottleneck now and I think that's going to increasingly be the case, but we are."
+        },
+        {
+          "video_id": "so9l_MwS2yg",
+          "start": "00:03:55.680",
+          "end": "00:04:03.190",
+          "start_seconds": 235,
+          "confidence": "high",
+          "label": "#761 — Zack Proser, WorkOS",
+          "quote": "our attention is still, you know, in meatspace, if you will, and it still degrades under load. It's still the hard constraint, essentially."
+        },
+        {
+          "video_id": "zMiSRliEzv4",
+          "start": "00:02:31.160",
+          "end": "00:02:34.000",
+          "start_seconds": 151,
+          "confidence": "high",
+          "label": "#758 — Joshua Snyder, PostHog",
+          "quote": "we just want you to look at PRs that are ready for you in GitHub."
+        },
+        {
+          "video_id": "zMiSRliEzv4",
+          "start": "00:14:22.720",
+          "end": "00:14:28.880",
+          "start_seconds": 862,
+          "confidence": "high",
+          "label": "#758 — Joshua Snyder, PostHog",
+          "quote": "instead of you reviewing changes, if the change is pretty easy, let's just approve it with an agent and deploy it behind a feature flag."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#53",
+      "text": "Agents fabricate having verified — they report success they never achieved — so the harness must supply real verification, not trust the agent's account of it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:02:08.920",
+          "end": "00:02:11.120",
+          "start_seconds": 128,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "There's no error, no warning, just the wrong answer."
+        },
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:09:55.400",
+          "end": "00:09:57.400",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "The agent gets blocked, it needs to please you and it makes things up."
         }
       ]
     }
@@ -3563,6 +3792,56 @@
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
           "quote": "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#52",
+      "text": "The gap that kills agent PoCs is the evaluation gap — no defined, continuously-measured definition of success — not the choice of model",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "ObTPqBGsEbA",
+          "start": "00:03:39.480",
+          "end": "00:03:42.120",
+          "start_seconds": 219,
+          "confidence": "high",
+          "label": "#767 — Sandipan Bhaumik, Databricks",
+          "quote": "Second is the evaluation gap."
+        },
+        {
+          "video_id": "ObTPqBGsEbA",
+          "start": "00:07:36.240",
+          "end": "00:07:38.600",
+          "start_seconds": 456,
+          "confidence": "high",
+          "label": "#767 — Sandipan Bhaumik, Databricks",
+          "quote": "Evaluation is basically specification for your AI system."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#53",
+      "text": "Agents fabricate having verified — they report success they never achieved — so the harness must supply real verification, not trust the agent's account of it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:02:08.920",
+          "end": "00:02:11.120",
+          "start_seconds": 128,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "There's no error, no warning, just the wrong answer."
+        },
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:09:55.400",
+          "end": "00:09:57.400",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "The agent gets blocked, it needs to please you and it makes things up."
         }
       ]
     }
