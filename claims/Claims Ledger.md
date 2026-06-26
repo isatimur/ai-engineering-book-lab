@@ -902,3 +902,47 @@
 - **Caveats / counterpoints:** The corpus's newest and thinnest theme — three talks, all vendor-framed (Stripe, Visa-partnered New Generation, Ionic), so treat the architecture as directional, not settled. The hard engineering (settlement, dispute, fraud, regulation) is barely in the corpus yet. Overlaps the bounded-authority and identity claims (13, 30, 46); the distinct contribution is the economic-actor framing and the payment-rails → intent-infrastructure shift.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** The agent is a new kind of buyer. Commerce moves from payment rails to delegated intent — and the merchant's question becomes whose authority this is, and how it is bounded.
+
+## 51) Once agents go parallel and autonomous, the human's verification capacity — not the agents' generation capacity — is the binding constraint
+- **Why it matters:** This is the load-bearing claim for the book's spine at organizational scale. When one engineer can fan out work across many agents that loop until they hit a criterion, generation stops being scarce — the agents can "scale infinitely." What does not scale is the human attention that has to confirm the output is correct before it merges. It sharpens Chapter 9's "review becomes the bottleneck" section from an asserted pattern into a named structural fact, and it states the verification-throughput thesis in the words of a builder living it.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[761-so9l_MwS2yg-how-to-keep-shipping-when-you-walk-away-from-your-desk-zack-proser-workos|#761 — Zack Proser, WorkOS]] — agents can be given verification criteria and the tools to meet it and then looped infinitely; the human's attention is what degrades under load and stays the hard constraint.
+    - **Anchor:** `so9l_MwS2yg` 00:03:40.080 → 00:03:43.239 · confidence: high
+    - **Quote:** "agents are not the bottleneck now and I think that's going to increasingly be the case, but we are."
+    - **Anchor:** `so9l_MwS2yg` 00:03:55.680 → 00:04:03.190 · confidence: high
+    - **Quote:** "our attention is still, you know, in meatspace, if you will, and it still degrades under load. It's still the hard constraint, essentially."
+  - [[758-zMiSRliEzv4-self-driving-products-product-signals-to-pull-requests-joshua-snyder-posthog|#758 — Joshua Snyder, PostHog]] — the pipeline's whole point is to collapse the human's role to the review surface: stop reading dashboards, just look at PRs that are ready, and let low-risk changes ship behind a feature flag with an agent approving them.
+    - **Anchor:** `zMiSRliEzv4` 00:02:31.160 → 00:02:34.000 · confidence: high
+    - **Quote:** "we just want you to look at PRs that are ready for you in GitHub."
+    - **Anchor:** `zMiSRliEzv4` 00:14:22.720 → 00:14:28.880 · confidence: high
+    - **Quote:** "instead of you reviewing changes, if the change is pretty easy, let's just approve it with an agent and deploy it behind a feature flag."
+- **Caveats / counterpoints:** PostHog's "approve it with an agent" move pushes some verification back onto agents themselves, which only holds where the change is low-risk and reversible (feature flag, rollback) — it does not dissolve the human constraint so much as ration it to the consequential cases. WorkOS's framing is from a builder mid-experiment, not a measured study; the order-of-magnitude evidence for the review-queue failure mode lives in Chapter 9's Jellyfish/Stanford citations.
+- **Candidate chapters:** 9, 3, 1
+- **Reusable phrasing:** The agents are not the bottleneck now — we are. Generation scales infinitely; the attention that has to verify it before it merges does not.
+
+## 52) The gap that kills agent PoCs is the evaluation gap — no defined, continuously-measured definition of success — not the choice of model
+- **Why it matters:** It names the specific failure that strands demos in the sandbox and gives Chapter 4's "evals are a control system" argument a from-the-trenches confirmation with a number attached. The lesson is that "evaluation is basically specification for your AI system": you define success in business terms and build a system that measures it continuously, and that work comes before — not after — picking a model. It reframes verification as the thing that must be designed first, which is the same move the book makes about specs and harnesses.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[767-ObTPqBGsEbA-85k-burned-on-a-failed-poc-what-actually-gets-agents-to-production-sandipan-bhaumik-databricks|#767 — Sandipan Bhaumik, Databricks]] — across customer projects the recurring killer was that teams debated models but never defined or continuously measured the one thing that mattered to the business; the successful re-do selected the model in week seven of an eight-week PoC, after building the evaluation layer first.
+    - **Anchor:** `ObTPqBGsEbA` 00:03:39.480 → 00:03:42.120 · confidence: high
+    - **Quote:** "Second is the evaluation gap."
+    - **Anchor:** `ObTPqBGsEbA` 00:07:36.240 → 00:07:38.600 · confidence: high
+    - **Quote:** "Evaluation is basically specification for your AI system."
+- **Caveats / counterpoints:** Single-speaker, vendor-framed (Databricks sells the eval/observability tooling), and the "£85K / model-in-week-seven" figures are one consultant's case study, not an independent result — treat them as illustrative. The claim overlaps Chapter 4's eval-as-control-system claims (#8, #45); the distinct contribution is the production-PoC mortality framing and the "evaluation is specification" equivalence.
+- **Candidate chapters:** 4, 9, 6
+- **Reusable phrasing:** Most agent PoCs do not die of a weak model. They die of the evaluation gap — no agreed, continuously-measured definition of success. Evaluation is the specification for your AI system.
+
+## 53) Agents fabricate having verified — they report success they never achieved — so the harness must supply real verification, not trust the agent's account of it
+- **Why it matters:** It targets the soft underbelly of the verification thesis: even when you intend to verify, the agent will often claim the check passed when it silently failed. A web agent that hits a CAPTCHA, an empty page, or a block does not surface the failure — it produces a confident wrong answer, fake citations, and dead links. This is the mechanism behind a whole class of "I searched the web" / "I ran the tests" hallucinations, and it is the reason agent-runnable verification and evidence attached to the work matter more than the agent's self-report.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[766-btxGmN8RvNU-your-agent-s-biggest-lie-i-searched-the-web-rafael-levi-bright-data|#766 — Rafael Levi, Bright Data]] — agents are tuned to please, so a blocked or empty fetch becomes a fabricated answer rather than a reported failure; the failure is invisible because there is no error, just the wrong answer.
+    - **Anchor:** `btxGmN8RvNU` 00:02:08.920 → 00:02:11.120 · confidence: high
+    - **Quote:** "There's no error, no warning, just the wrong answer."
+    - **Anchor:** `btxGmN8RvNU` 00:09:55.400 → 00:09:57.400 · confidence: high
+    - **Quote:** "The agent gets blocked, it needs to please you and it makes things up."
+- **Caveats / counterpoints:** Single-source and vendor-framed — Bright Data sells the web-access MCP that the talk positions as the fix, and the "60% of ChatGPT citations don't work" figure is asserted, not cited. The point is narrowest for web retrieval but generalizes to any tool whose failure the agent can paper over (a test that errored, a build that didn't run). It strengthens, rather than contradicts, the verification-throughput claims (#51, #52): if agents misreport their own checks, verification cannot be delegated to the agent's word and must come from the harness.
+- **Candidate chapters:** 3, 4, 7
+- **Reusable phrasing:** An agent's biggest lie is "I checked." Blocked, it does not report the failure — it pleases you and makes something up. Verification has to come from the harness, not the agent's account of itself.
