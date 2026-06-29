@@ -6,9 +6,13 @@
 
 [![Read it online](https://img.shields.io/badge/Read%20it-fromcopilottocolleague.com-1A1A1A?style=for-the-badge)](https://fromcopilottocolleague.com/)
 &nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/isatimur/ai-engineering-book-lab?style=for-the-badge&color=c2410c&label=Star)](https://github.com/isatimur/ai-engineering-book-lab/stargazers)
+&nbsp;
 [![License: MIT](https://img.shields.io/badge/License-MIT-555.svg?style=for-the-badge)](LICENSE)
 &nbsp;
 [![Built with autoresearch](https://img.shields.io/badge/Method-autoresearch-c2410c?style=for-the-badge)](programs/book_autoresearch.md)
+
+<sub>A book on AI engineering where **every claim links to the exact second of the talk it came from** — distilled from **794** practitioner talks, and graded by a **panel of three rival AI models** so no single model gets to flatter the prose.</sub>
 
 </div>
 
@@ -26,7 +30,7 @@
 
 ## Why this exists
 
-Most "AI-written" books produce slop because they have no source of truth — the model just remixes what it was trained on. **The Lab** is a different bet: a corpus of practitioner talks (the AI Engineer YouTube channel, **757 videos**), a bounded autonomous research loop, and a discipline that **no claim ships without a source anchor** — a precise pointer to the moment in a video where it came from.
+Most "AI-written" books produce slop because they have no source of truth — the model just remixes what it was trained on. **The Lab** is a different bet: a corpus of practitioner talks (the AI Engineer YouTube channel, **794 videos**), a bounded autonomous research loop, and a discipline that **no claim ships without a source anchor** — a precise pointer to the moment in a video where it came from.
 
 The visible output is *From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems* — a ten-chapter manuscript at [fromcopilottocolleague.com](https://fromcopilottocolleague.com/).
 
@@ -74,9 +78,10 @@ Read the loop's instructions: [`programs/book_autoresearch.md`](programs/book_au
 ## What's genuinely novel here
 
 1. **Source Anchors as a discipline.** Every claim in the manuscript carries a `video_id` + start/end timestamp + verbatim quote. The website's Evidence Rail surfaces them under each chapter as clickable YouTube embeds. **No anchor, no claim.**
-2. **The book is the proof, not the product.** The Method (the reproducible machine) is the actual artefact. The manuscript shows it works.
-3. **Method ships with the artefact.** Every agent instruction, every research pass log, every quality judge is in this repo — readable, criticisable, reproducible.
-4. **73 hand-built diagrams** that argue visually instead of decorate. See [`diagrams/README.md`](diagrams/README.md) for the full visual guide.
+2. **Quality is measured, not vibed — by a panel of rival models.** Every chapter is scored on six dimensions (humanness, voice, usefulness, evidence density, claim defensibility, redundancy) by a **cross-family LLM judge panel** — Meta Llama-3.3, Alibaba Qwen-2.5, and DeepSeek — and the **median** is the verdict. One model can't flatter prose shaped like its own output, and where the three disagree by more than 20 points, that cell is flagged as where to look. The live scorecard is at [/quality](https://fromcopilottocolleague.com/quality); the rationale is in [`docs/judge-panel-decision.md`](docs/judge-panel-decision.md).
+3. **The book is the proof, not the product.** The Method (the reproducible machine) is the actual artefact. The manuscript shows it works.
+4. **Method ships with the artefact.** Every agent instruction, every research pass log, every quality judge is in this repo — readable, criticisable, reproducible.
+5. **73 hand-built diagrams** that argue visually instead of decorate. See [`diagrams/README.md`](diagrams/README.md) for the full visual guide.
 
 ---
 
@@ -84,7 +89,7 @@ Read the loop's instructions: [`programs/book_autoresearch.md`](programs/book_au
 
 ```
 ai-engineering-book-lab/
-├── 01_Videos/          # source corpus (notes per video, 757+ entries)
+├── 01_Videos/          # source corpus (notes per video, 794+ entries)
 ├── 02_Themes/          # cross-corpus theme syntheses
 ├── 03_People/          # speaker profiles
 ├── 04_Concepts/        # concept pages (Harness, Eval, Context, etc.)
@@ -120,12 +125,13 @@ A full description of public vs internal layers lives in [`PUBLIC_REPO_PLAN.md`]
 
 Live counts are generated into [`STATS.md`](STATS.md) on every corpus change; the figures below are a snapshot.
 
-- **757 videos** ingested from the AI Engineer channel
-- **42 claims** anchored to video timestamps; **166 high-confidence anchors** (0 medium, 0 low)
+- **794 videos** ingested from the AI Engineer channel
+- **54 claims** anchored to video timestamps (44 strong, 10 moderate); **198 anchors**, 197 high-confidence
+- **50 speaker profiles** and **19 concept pages** synthesized from the corpus
 - **10 chapters** — all at **Drafting** depth — render live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read)
 - **73 hand-built diagrams** (4 overview + 10 chapter openers + 18 concept + 38 inline + 3 maps)
 - **Evidence Rail** ships per chapter — every claim renders an embedded YouTube clip at its exact timestamp
-- **AI-judge quality dashboard** — every chapter scored on 6 dimensions by the MASH harness, surfaced at [fromcopilottocolleague.com/quality](https://fromcopilottocolleague.com/quality) and inline in the reader
+- **Cross-family judge panel** — every chapter scored on 6 dimensions by a median-of-three panel (Llama-3.3 · Qwen-2.5 · DeepSeek) so no single model grades its own style; live at [fromcopilottocolleague.com/quality](https://fromcopilottocolleague.com/quality)
 - **Per-chapter SEO routes** live (36 prerendered pages + sitemap + JSON-LD); machine-readable [`/llms.txt`](https://fromcopilottocolleague.com/llms.txt) and full-text markdown for agents
 - **CI/CD** wired (build/test on PR, auto-deploy on push, evidence + stats regen on corpus/claims change) — see [`DEPLOY.md`](DEPLOY.md)
 
@@ -143,7 +149,7 @@ This is a public experiment. A few entry points that are genuinely useful right 
 | **Improve a diagram** | All 73 are editable Excalidraw JSON; open `diagrams/<name>.excalidraw` at [excalidraw.com](https://excalidraw.com) |
 | **Read the method** | [`programs/book_autoresearch.md`](programs/book_autoresearch.md), [`programs/source_anchoring_pass.md`](programs/source_anchoring_pass.md), then [`research_passes/`](research_passes/) for logs of what's been tried |
 | **Fork the method for your own corpus** | The MIT license lets you. The system isn't tied to AI Engineer — swap the source corpus and most of the machinery still applies |
-| **Star the repo** | If this experiment is worth watching, the star helps signal that |
+| **Star the repo** | [⭐ Star it](https://github.com/isatimur/ai-engineering-book-lab) if a source-anchored, panel-graded book is the way AI writing *should* be built — stars are how this experiment earns the right to keep running |
 
 ---
 
