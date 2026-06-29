@@ -1,14 +1,14 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **767 videos**
-Transcript status mix: **{'auto_en_orig': 755, 'unavailable': 12}**
+Corpus size analyzed: **794 videos**
+Transcript status mix: **{'auto_en_orig': 782, 'unavailable': 12}**
 
 ## What changed after full-corpus review
 
 The corpus is now strong enough to stop treating the book as a loose trend survey.
 A clearer thesis is emerging: **AI engineering is the discipline of turning model capability into dependable, high-leverage systems through scaffolding, evaluation, context design, and organizational adaptation.**
 
-Across the full 767-video corpus, four things stand out most clearly:
+Across the full 794-video corpus, four things stand out most clearly:
 - the book should be anchored in **production practice**, not model novelty
 - **coding agents** are the best narrative entry point, but not the whole book
 - **trust, control, and eval loops** are the hinge between demo and deployment
@@ -16,11 +16,11 @@ Across the full 767-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 161, `Coding Agents`: 243).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 224).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 185, `Coding Agents`: 268).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 247).
 - **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 242).
-- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 83, `RAG & Retrieval`: 160).
-- **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 27, `Voice & Realtime`: 39).
+- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 87, `RAG & Retrieval`: 162).
+- **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 27, `Voice & Realtime`: 41).
 
 ## Best current thesis
 

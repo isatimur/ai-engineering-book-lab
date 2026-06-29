@@ -2,7 +2,7 @@
 
 ## [[Agent Architecture]]
 
-- Corpus count: 161
+- Corpus count: 185
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
 - [[028-2czYyrTzILg-from-chaos-to-choreography-multi-agent-orchestration-patterns-that-actually-work-sandipan-|#28 — From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik]]
@@ -14,7 +14,7 @@
 
 ## [[Coding Agents]]
 
-- Corpus count: 243
+- Corpus count: 268
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -26,7 +26,7 @@
 
 ## [[Evals & Reliability]]
 
-- Corpus count: 224
+- Corpus count: 247
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]
 - [[025-c5-kx2bwoCk-running-llms-locally-practical-llm-performance-on-dgx-spark-mozhgan-kabiri-chimeh-nvidia|#25 — Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA]]
@@ -50,7 +50,7 @@
 
 ## [[MCP & Tooling]]
 
-- Corpus count: 83
+- Corpus count: 87
 - [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
 - [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
 - [[024-XZ0boOjtbNo-ai-didn-t-kill-the-web-it-moved-in-olivier-leplus-aws-yohan-lasorsa-microsoft|#24 — AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft)]]
@@ -62,7 +62,7 @@
 
 ## [[Models & Inference]]
 
-- Corpus count: 129
+- Corpus count: 130
 - [[007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai|#7 — Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI]]
 - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind]]
 - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research]]
@@ -86,7 +86,7 @@
 
 ## [[RAG & Retrieval]]
 
-- Corpus count: 160
+- Corpus count: 162
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
 - [[008-mYSRn6PC1mc-full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard-paul-iusztin-sam|#8 — Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi]]
@@ -110,7 +110,7 @@
 
 ## [[Voice & Realtime]]
 
-- Corpus count: 39
+- Corpus count: 41
 - [[026-IEF842ZEU5A-contact-center-voice-ai-low-latency-intelligence-extraction-from-messy-audio-streams-dippu|#26 — Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh]]
 - [[128-nxuTVd7v7dg-full-workshop-realtime-voice-ai-mark-backman-daily|#128 — Full Workshop: Realtime Voice AI — Mark Backman, Daily]]
 - [[129-IQc05eCvNYE-vision-ai-in-2025-peter-robicheaux-roboflow|#129 — Vision AI in 2025 — Peter Robicheaux, Roboflow]]

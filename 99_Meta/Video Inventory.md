@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 767
+Total videos: 794
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -769,3 +769,30 @@ Total videos: 767
 765. [You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia](https://www.youtube.com/watch?v=gHs5ZiY80PM) — `gHs5ZiY80PM` — 18:46
 766. [Your Agent's Biggest Lie: "I Searched the Web" — Rafael Levi, Bright Data](https://www.youtube.com/watch?v=btxGmN8RvNU) — `btxGmN8RvNU` — 15:49
 767. [£85K Burned on a Failed PoC: What Actually Gets Agents to Production — Sandipan Bhaumik, Databricks](https://www.youtube.com/watch?v=ObTPqBGsEbA) — `ObTPqBGsEbA` — 37:06
+768. [6 Things to Know about AIE World's Fair 2026](https://www.youtube.com/watch?v=0S8xe9ftGTM) — `0S8xe9ftGTM` — 17:50
+769. [The Miranda Hypothesis: How Hamilton Poisoned Persona Evals - Jacob E. Thomas, Results Gen](https://www.youtube.com/watch?v=IJXjTLPzvAU) — `IJXjTLPzvAU` — 58:17
+770. [Build Systems, Not Code - Angie Jones, Agentic AI Foundation](https://www.youtube.com/watch?v=ZD9-4fW2HhM) — `ZD9-4fW2HhM` — 19:39
+771. [Recursive Coding Agents - Raymond Weitekamp, OpenProse](https://www.youtube.com/watch?v=3hXJI2q0Jz8) — `3hXJI2q0Jz8` — 23:48
+772. [The Log Is The Agent - Ishaan Sehgal, Omnara](https://www.youtube.com/watch?v=UPwGaM2MKHY) — `UPwGaM2MKHY` — 15:11
+773. [A Genius With Amnesia - Victor Savkin, Nx](https://www.youtube.com/watch?v=jVjt-2g8NMY) — `jVjt-2g8NMY` — 20:00
+774. [Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov](https://www.youtube.com/watch?v=4uFVSLgD2Q4) — `4uFVSLgD2Q4` — 18:30
+775. [Turn 10,994 Notes Into Memory - Paul Iusztin, Decoding AI & Louis-François Bouchard, Towards AI](https://www.youtube.com/watch?v=ZRM_TfEZcIo) — `ZRM_TfEZcIo` — 39:32
+776. [Stop Writing Tone Instructions. Layer Them. - Isadora Martin-Dye, Isadora & Co](https://www.youtube.com/watch?v=ij-AU9dpJjc) — `ij-AU9dpJjc` — 20:57
+777. [The 100-Tool Agent Is a Trap - Sohail Shaikh & Ankush Rastogi, Prosodica](https://www.youtube.com/watch?v=vh2VGuQ3zhY) — `vh2VGuQ3zhY` — 28:27
+778. [Browser Agents Don't Need Better Models. They Need Better Eyes. - Kushan Raj, ARK](https://www.youtube.com/watch?v=JnubYCYunk8) — `JnubYCYunk8` — 4:26
+779. [Agents Building Agents - Alfonso Graziano, Nearform](https://www.youtube.com/watch?v=aHhB3sjGjkI) — `aHhB3sjGjkI` — 30:14
+780. [Structuring the Unstructured - Cedric Clyburn, Red Hat](https://www.youtube.com/watch?v=-x5GEVnkuRw) — `-x5GEVnkuRw` — 20:41
+781. [User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch](https://www.youtube.com/watch?v=Jx4ZFEAq6bY) — `Jx4ZFEAq6bY` — 15:37
+782. [Using Spec-Driven Development for Production Workflows - Erik Hanchett, AWS](https://www.youtube.com/watch?v=IddXPepIAS4) — `IddXPepIAS4` — 17:47
+783. [Turbocharge Your Agent's Retrieval with TurboQuant - Shashi Jagtap, Superagentic AI](https://www.youtube.com/watch?v=tB9RKTrU-Ig) — `tB9RKTrU-Ig` — 14:48
+784. [HTML is All You Need (for Agents to Make Graphics) - Amol Kapoor, Nori](https://www.youtube.com/watch?v=JRTAtZ5iBkU) — `JRTAtZ5iBkU` — 7:00
+785. [Building an Autonomous Engineering Org - Angie Jones, Agentic AI Foundation](https://www.youtube.com/watch?v=whue9_YquGA) — `whue9_YquGA` — 17:36
+786. [Research to Reality: Bringing Frontier ML Research to Production - Vaidas Razgaitis, Higharc](https://www.youtube.com/watch?v=OXMMN-XbxwA) — `OXMMN-XbxwA` — 14:57
+787. [When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis](https://www.youtube.com/watch?v=XovaGv4f39A) — `XovaGv4f39A` — 5:52
+788. [AI System Design: From Idea to Production - Apoorva Joshi, MongoDB](https://www.youtube.com/watch?v=T0HhO4YtTfE) — `T0HhO4YtTfE` — 28:53
+789. [Bypassing the Multimodal Tax: Hybrid RAG, SQL RRF & UI Telemetry - Abed Matini, Ogilvy](https://www.youtube.com/watch?v=Akm1sqvWG4A) — `Akm1sqvWG4A` — 45:48
+790. [OpenClaw in Your Hand: Building a Physical AI Terminal - Lech Kalinowski, Callstack](https://www.youtube.com/watch?v=akk6KRlcwW4) — `akk6KRlcwW4` — 24:36
+791. [Your Agent Is Wasting Tokens and You Don't Know It - Erik Hanchett, AWS](https://www.youtube.com/watch?v=uiP88SpCi1Q) — `uiP88SpCi1Q` — 5:55
+792. [We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco](https://www.youtube.com/watch?v=dRmWYHuIJxM) — `dRmWYHuIJxM` — 10:43
+793. [AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent](https://www.youtube.com/watch?v=Iwe_RY-fYgI) — `Iwe_RY-fYgI` — 19:00
+794. [Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs](https://www.youtube.com/watch?v=65X0pQ6Lmbg) — `65X0pQ6Lmbg` — 13:05

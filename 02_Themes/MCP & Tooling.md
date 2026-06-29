@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 83
+- Total tagged videos: 87
 
 ## Cross-video synthesis
 
-- This theme appears across 83 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (25), Coding Agents (25), Org Design & Leadership (12).
+- This theme appears across 87 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (28), Coding Agents (28), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
 
 ## Seed videos
@@ -95,6 +95,10 @@
 - [[747-_xIwFcnHqp4-building-interactive-uis-in-vs-code-with-mcp-apps-marlene-mhangami-liam-hampton-github|#747 — Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub]]
 - [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748 — From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data]]
 - [[764-c-2eEv2ou7Y-why-mcp-and-chatgpt-apps-use-double-iframes-fr-d-ric-barthelet-alpic|#764 — Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic]]
+- [[770-ZD9-4fW2HhM-build-systems-not-code-angie-jones-agentic-ai-foundation|#770 — Build Systems, Not Code - Angie Jones, Agentic AI Foundation]]
+- [[781-Jx4ZFEAq6bY-user-signal-dies-at-the-retrieval-boundary-sonam-pankaj-starlightsearch|#781 — User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch]]
+- [[792-dRmWYHuIJxM-we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco|#792 — We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco]]
+- [[794-65X0pQ6Lmbg-voice-in-visuals-out-the-agony-and-the-ecstasy-allen-pike-forestwalk-labs|#794 — Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs]]
 
 ## Notes
 

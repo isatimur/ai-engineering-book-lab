@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 129
+- Total tagged videos: 130
 
 ## Cross-video synthesis
 
-- This theme appears across 129 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: RAG & Retrieval (20), Evals & Reliability (19), Org Design & Leadership (18).
+- This theme appears across 130 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (20), Org Design & Leadership (18).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
 ## Seed videos
@@ -141,6 +141,7 @@
 - [[674-X6NShR2ccOg-lessons-from-trillion-token-deployments-at-fortune-500s-alessandro-cappelli-adaptive-ml|#674 — Lessons from Trillion Token Deployments at Fortune 500s — Alessandro Cappelli, Adaptive ML]]
 - [[678-OV56RddyFuU-self-training-agents-hermes-agent-hf-traces-skills-mcp-finetuning-merve-noyan-hugging-face|#678 — Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  — Merve Noyan, Hugging Face]]
 - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind]]
+- [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
 
 ## Notes
 

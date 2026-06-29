@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 39
+- Total tagged videos: 41
 
 ## Cross-video synthesis
 
-- This theme appears across 39 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Models & Inference (6), Evals & Reliability (4), Org Design & Leadership (4).
+- This theme appears across 41 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Models & Inference (6), Evals & Reliability (5), Agent Architecture (5).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
 ## Seed videos
@@ -51,6 +51,8 @@
 - [[700-owH1f0N-keY-gemini-nano-on-device-florina-muntenescu-oli-gaymond-google-deepmind|#700 — Gemini Nano on device — Florina Muntenescu & Oli Gaymond, Google DeepMind]]
 - [[734-hqHC6Z_lXyo-20-days-of-compute-vs-7-hours-rethinking-what-state-of-the-art-means-bertrand-charpentier-|#734 — 20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna]]
 - [[765-gHs5ZiY80PM-you-might-not-need-50-diffusion-steps-ziv-ilan-nvidia|#765 — You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia]]
+- [[776-ij-AU9dpJjc-stop-writing-tone-instructions-layer-them-isadora-martin-dye-isadora-co|#776 — Stop Writing Tone Instructions. Layer Them. - Isadora Martin-Dye, Isadora & Co]]
+- [[793-Iwe_RY-fYgI-ai-driven-multi-document-correlation-for-financial-compliance-varsha-shah-independent|#793 — AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent]]
 
 ## Notes
 

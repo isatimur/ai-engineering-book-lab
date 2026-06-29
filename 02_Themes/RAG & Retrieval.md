@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 160
+- Total tagged videos: 162
 
 ## Cross-video synthesis
 
-- This theme appears across 160 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (20), Evals & Reliability (17).
+- This theme appears across 162 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (18).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
 ## Seed videos
@@ -172,6 +172,8 @@
 - [[658-ynJyIKwjonM-agentic-search-for-context-engineering-leonie-monigatti-elastic|#658 — Agentic Search for Context Engineering — Leonie Monigatti, Elastic]]
 - [[665-esY99nYXxR4-hierarchical-memory-context-management-in-agents-sally-ann-delucia|#665 — Hierarchical Memory: Context Management in Agents — Sally-Ann Delucia]]
 - [[685-eW_vxrjvERk-connecting-the-dots-with-context-graphs-stephen-chin-neo4j|#685 — Connecting the Dots with Context Graphs — Stephen Chin, Neo4j]]
+- [[773-jVjt-2g8NMY-a-genius-with-amnesia-victor-savkin-nx|#773 — A Genius With Amnesia - Victor Savkin, Nx]]
+- [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
 
 ## Notes
 
