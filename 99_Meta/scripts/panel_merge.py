@@ -275,15 +275,20 @@ def build_rollups(merged_scores: list[dict]) -> dict:
     para_units: dict[str, set[str]] = {}
 
     for e in merged_scores:
-        sc = e.get("score_0_100")
-        if sc is None:
-            continue
         slug = _chapter_slug(e["unit_id"])
         if slug is None:
             continue
-        per_chapter.setdefault(slug, {}).setdefault(e["dim_name"], []).append(float(sc))
+        # Count paragraph-granular units regardless of score, BEFORE the
+        # null-score skip below: a paragraph that fell to a panel-error
+        # (< MIN_PANEL_VOTES valid votes -> null score) is still a real
+        # paragraph in the chapter and must count toward n_paragraphs, or the
+        # published scorecard undercounts the chapter's paragraphs.
         if e["unit_id"].startswith("paragraph:"):
             para_units.setdefault(slug, set()).add(e["unit_id"])
+        sc = e.get("score_0_100")
+        if sc is None:
+            continue
+        per_chapter.setdefault(slug, {}).setdefault(e["dim_name"], []).append(float(sc))
 
     rollups: dict[str, dict] = {}
     for slug, dims in sorted(per_chapter.items()):

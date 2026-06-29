@@ -946,3 +946,73 @@
 - **Caveats / counterpoints:** Single-source and vendor-framed — Bright Data sells the web-access MCP that the talk positions as the fix, and the "60% of ChatGPT citations don't work" figure is asserted, not cited. The point is narrowest for web retrieval but generalizes to any tool whose failure the agent can paper over (a test that errored, a build that didn't run). It strengthens, rather than contradicts, the verification-throughput claims (#51, #52): if agents misreport their own checks, verification cannot be delegated to the agent's word and must come from the harness.
 - **Candidate chapters:** 3, 4, 7
 - **Reusable phrasing:** An agent's biggest lie is "I checked." Blocked, it does not report the failure — it pleases you and makes something up. Verification has to come from the harness, not the agent's account of itself.
+
+## 54) Route each task to the cheapest model that can do it — tiered model selection by difficulty is accepted practice, not a frontier idea
+- **Why it matters:** It gives Chapter 6's control-plane argument a concrete cost lever. The expensive part of an agent system is not the hard calls; it is paying frontier prices for the easy ones. Practitioners treat "cheap model for simple queries, expensive model for hard ones" as settled wisdom, and the same economics show up as platform service tiers (pay less if you can tolerate delay). The decision of *which model runs this step* is itself a routing decision the control plane owns — not a global default set once.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[791-uiP88SpCi1Q-your-agent-is-wasting-tokens-and-you-don-t-know-it-erik-hanchett-aws|#791 — Erik Hanchett, AWS]] — names the exact difficulty ladder (Haiku for cheap work, Sonnet for harder) and prescribes against a single expensive default, including a cheap meta-router that picks the model.
+    - **Anchor:** `uiP88SpCi1Q` 00:01:40.240 → 00:01:51.110 · confidence: high
+    - **Quote:** "don't use the most expensive model for everything you're doing. You want to use multiple different models based on the use case. And then try to route to it inside your agent."
+  - [[681-Xfl50508LZM-ship-real-agents-hands-on-evals-for-agentic-applications-laurie-voss-arize|#681 — Laurie Voss, Arize]] — states tiered selection almost prescriptively: route by query difficulty rather than sending everything to one expensive model.
+    - **Anchor:** `Xfl50508LZM` 01:47:37.199 → 01:47:43.920 · confidence: high
+    - **Quote:** "So you can do tiered model selection. You can do cheap models for simple queries and expensive models in your agent uh for complex queries."
+  - [[613-cwjs1WAG9CM-building-context-aware-reasoning-applications-with-langchain-and-langsmith-harrison-chase|#613 — Harrison Chase, LangChain]] — formalizes a router that picks the model by its strengths (long context vs reasoning) per question.
+    - **Anchor:** `cwjs1WAG9CM` 00:07:15.160 → 00:07:21.840 · confidence: high
+    - **Quote:** "route between uh language models so one model might be better than another you might want to use Claud because of its long context window or you might want to use GPD 4 because it's really good at reasoning"
+  - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Guillaume Vernade, Google DeepMind]] — the same cost economics as a platform service tier: trade latency for a discount.
+    - **Anchor:** `BcWFc3H7Khg` 00:20:32.480 → 00:20:42.400 · confidence: medium
+    - **Quote:** "flex and that's basically I don't care if that takes a long time but I want to to pay less. So you're going to have a 50% discount but your request can be uh can be delayed"
+- **Caveats / counterpoints:** Multiple independent speakers now state the idea as accepted practice, but none presents a rigorous cascade/escalation-with-fallback *architecture* — it remains prescription, not dissection — and the popular "60-30-10" cost-split rule (cheap/mid/expensive) circulates in practitioner courses but does **not** appear anywhere in this corpus, so it must not be presented as a corpus finding. The named-tier specifics (Haiku/Sonnet) are vendor-adjacent lightning-talk framing; cite the principle, not the product. Routing also adds its own failure surface (a misroute sends a hard task to a model that quietly botches it), which is why routing pairs with the verification claims (#51–53): you can only route aggressively if the harness catches the misroutes. Related but distinct: #57 argues input/context tokens dominate cost, so routing the *model* is only part of the cost lever.
+- **Candidate chapters:** 6, 4
+- **Reusable phrasing:** Most of an agent's bill is frontier prices paid for easy work. The control plane's job is not to pick *a* model — it is to route each step to the cheapest model that can still pass the eval.
+
+## 55) Trustworthy judgment can be manufactured from cheap stochastic generation — sample-and-vote, multi-model consensus, and debate panels beat a single expensive call
+- **Why it matters:** It is the principle under the book's own multi-model judge panel and the backbone of Chapter 9's "how do you trust a verdict you didn't produce" problem. Because inference is cheap, you can buy reliability with redundancy instead of a bigger model: generate many answers and aggregate (self-consistency), have a diverse set of models vote (consensus), or have models debate and critique each other (panels) — each move cancels a single model's idiosyncratic error or bias. The strongest version is explicitly cheaper-and-better: stacked weak judges that beat a frontier model at a fraction of the cost.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — the self-consistency / majority-vote lineage: sample N answers, take the agreed one, justified by cheap inference.
+    - **Anchor:** `QluDzKVfp6A` 00:06:27.280 → 00:06:32.710 · confidence: high
+    - **Quote:** "the models to generate multiple responses and then do majority voting."
+  - [[116-OMGPvW8TBHc-fuzzing-in-the-genai-era-leonard-tang-haize-labs|#116 — Leonard Tang, Haize Labs]] — the debate-panel lineage: weaker models debate and self-verify to judge a stronger one, building cheap-but-powerful judging systems.
+    - **Anchor:** `OMGPvW8TBHc` 00:10:16.710 → 00:10:22.399 · confidence: high
+    - **Quote:** "having LMS debate each other, having the weaker LLMs debate each other about what the stronger model is saying and seeing if that makes sense."
+  - [[093-zfvEMNmVlNY-the-unbearable-lightness-of-agent-optimization-alberto-romero-jointly|#093 — Alberto Romero, Jointly]] — multi-model consensus across families with confidence-weighted voting as a verification tier.
+    - **Anchor:** `zfvEMNmVlNY` 00:12:00.560 → 00:12:07.269 · confidence: high
+    - **Quote:** "Second tier is a multimodel consensus. So we leverage a diverse range of models such as GBT4, claude and"
+  - [[451-UOsOfLnAX3Y-how-to-improve-your-agents-academic-lit-review|#451 — How to Improve Your Agents (lit review)]] — multi-agent debate for a reliable state estimate, specifically to counterbalance single-model bias.
+    - **Anchor:** `UOsOfLnAX3Y` 00:29:21.159 → 00:29:26.669 · confidence: high
+    - **Quote:** "we using multi-agent debate to get reliable State evaluation instead of using single uh"
+- **Caveats / counterpoints:** Redundancy cancels *independent* error; it does not cancel *shared* bias, so a panel only helps to the extent its members are genuinely diverse (same-family judges correlate). Consensus also has a cost-vs-reliability knee — N calls for one verdict — and majority vote can confidently agree on a wrong answer when the error is systematic. Romero's and the lit-review's figures are practitioner/academic framings, not independent benchmarks. This is the direct corpus warrant for the project's own decision to score MASH with a cross-family median panel rather than one judge (see docs/judge-panel-decision.md).
+- **Candidate chapters:** 9, 4, 6
+- **Reusable phrasing:** When generation is cheap, you buy trust with redundancy, not with a bigger model: sample and vote, let diverse models reach consensus, or have them debate. A panel of weak judges can beat one strong judge — and tell you where it is unsure.
+
+## 56) Parallel agents need per-agent runtime isolation — a sandbox/micro-VM/worktree each — because containers are not a sufficient boundary for agent-generated code
+- **Why it matters:** It names the infrastructure that makes agent swarms actually runnable, which Chapter 6 treats as the execution substrate (and Chapter 3 as the agent harness). The moment you run many agents at once they collide on shared branches, ports, dev servers, and databases; the fix is one isolated, ephemeral environment per agent. The corpus is unusually pointed that containers are *not* a real isolation boundary for untrusted, agent-written code — VM/micro-VM-level isolation (e.g. Firecracker) is the correct primitive, motivated both by parallelism (isolated branches you can switch between) and by blast radius (agent code can get root and move laterally).
+- **Support level:** strong
+- **Supporting sources:**
+  - [[704-5Sui_OnSRlY-the-missing-primitive-for-agent-swarms-lou-bichard-ona|#704 — Lou Bichard, Ona]] — the full taxonomy (threads → worktrees → containers → micro-VMs / "dev environments") and the claim that only VM-level isolation does it properly.
+    - **Anchor:** `5Sui_OnSRlY` 00:07:06.360 → 00:07:10.840 · confidence: high
+    - **Quote:** "And only with having sort of the full isolation of a VM will you be able to effectively do this properly."
+  - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — one micro-VM per session on its own branch is what makes parallel agent work isolatable and switchable.
+    - **Anchor:** `ClWD8OEYgp8` 00:07:37.160 → 00:07:47.040 · confidence: high
+    - **Quote:** "It is also backed by a micro VM. So a sandboxed computer in the cloud on its own Git branch."
+  - [[151-kv-QAuKWllQ-how-we-hacked-yc-spring-2025-batch-s-ai-agents-rene-brandel-casco|#151 — Rene Brandel, Casco]] — security-framed: use Firecracker, not containers, because containers are not an isolation layer for agent code.
+    - **Anchor:** `kv-QAuKWllQ` 00:17:17.760 → 00:17:25.839 · confidence: high
+    - **Quote:** "if you just use containers, by the way, that's not an isolation layer in case anybody's wondering. Yeah. Yeah. Don't use containers for isolation."
+- **Caveats / counterpoints:** Per-agent micro-VMs cost real money and startup latency; worktrees/containers remain fine where the code is trusted and side effects are cheap to undo — the "containers aren't isolation" claim is specifically about *untrusted/agent-generated* code and security boundaries, not all containerization. Several of these speakers sell the sandbox/dev-environment product (Ona, Casco), so treat the "VM is the only right answer" framing as vendor-inflected even though the parallelism problem it solves is real. This is the substrate under the verification-throughput claims (#51–53): you cannot safely run agents in parallel to verify their work if they corrupt each other's environment.
+- **Candidate chapters:** 6, 3
+- **Reusable phrasing:** At three agents a shared dev environment is fine; at thirty it is the bottleneck. Each parallel agent needs its own ephemeral sandbox — and for agent-written code, a container is not the isolation boundary you think it is.
+
+## 57) Input tokens dominate agent cost — fix what you feed the model before you optimize which model
+- **Why it matters:** It reframes cost optimization for Chapter 5: the lever most teams reach for (a cheaper or bigger model) is the smaller lever. In a retrieval/coding agent the bill is dominated by *input* — the files, search results, and context shoveled into the prompt every turn — not by the tokens the model writes back. So the highest-leverage cost move is context engineering (retrieve precisely, index instead of dumping whole files, compress, cache, summarize tool results) rather than model selection. This is the cost-side argument for the chapter's thesis that context is infrastructure: how you assemble the prompt is an engineering decision with a direct dollar figure attached.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[792-dRmWYHuIJxM-we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco|#792 — Rajkumar Sakthivel, Tesco]] — states the cost decomposition directly and argues that fixing the input outweighs model choice; reports a measured (best-case) 94% input-token cut from local code indexing on a benchmark repo.
+    - **Anchor:** `dRmWYHuIJxM` 00:02:49.560 → 00:03:03.509 · confidence: high
+    - **Quote:** "90% of your AI cost is input. Files, search results, context you send in. Only 10% is output. The code the AI writes back."
+    - **Anchor:** `dRmWYHuIJxM` 00:10:23.910 → 00:10:29.910 · confidence: high
+    - **Quote:** "may be 30% of the cost, but other 70% is what you feed it. Fix the input, the model choice matters less than you think."
+- **Caveats / counterpoints:** Single-source and vendor-adjacent — a Tesco engineer's lightning talk promoting an open-source code-index tool (CCE). The headline "94%" is explicitly best-case (worst-case full-file reads, one open-source repo of ~53 files, 20 queries) and the speaker self-discloses that "real savings are lower" because smart agents already avoid re-reading whole files. So treat the *direction* as high-confidence (input dominates cost; precise retrieval/indexing cuts it a lot) and the *exact figure* as illustrative, not a benchmark. The exact split (90/10, 30/70) varies sharply by workload — output-heavy generation tasks invert it. Complementary to #54: routing trims the model cost; this trims the larger input cost.
+- **Candidate chapters:** 5, 6
+- **Reusable phrasing:** In a retrieval agent, most of the bill is what you feed the model, not what it writes back. Fix the input first — retrieve precisely, index instead of dumping files, cache and compress — and the choice of model matters less than you think.

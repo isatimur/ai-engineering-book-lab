@@ -143,6 +143,9 @@ class TestRollups(unittest.TestCase):
         rollups = pm.build_rollups(merged["scores"])
         # only p1 (80) contributes; p2 is a null error entry -> chapter humanness 80
         self.assertEqual(rollups["chapter:chapter-1-demo"]["humanness"], 80.0)
+        # ...but p2 is still a real paragraph: a panel-error null score must NOT
+        # drop it from n_paragraphs, or the published scorecard undercounts.
+        self.assertEqual(rollups["chapter:chapter-1-demo"]["n_paragraphs"], 2)
 
 
 class TestOutputShapeForConsumer(unittest.TestCase):

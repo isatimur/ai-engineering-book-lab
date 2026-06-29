@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-20T20:11:16+00:00",
+  "generated_at": "2026-06-29T16:12:58+00:00",
   "corpus": {
-    "videos": 767
+    "videos": 794
   },
   "synthesis": {
     "themes": 10,
@@ -11,15 +11,15 @@
     "drafting_files": 10
   },
   "claims": {
-    "total": 47,
-    "strong": 39,
-    "moderate": 8,
+    "total": 54,
+    "strong": 44,
+    "moderate": 10,
     "tentative": 0
   },
   "anchors": {
-    "total": 177,
-    "high": 177,
-    "medium": 0,
+    "total": 198,
+    "high": 197,
+    "medium": 1,
     "low": 0
   },
   "chapters": {
@@ -41,5 +41,5 @@
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 976
+  "total_artefacts": 1010
 }
