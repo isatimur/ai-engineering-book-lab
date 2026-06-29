@@ -1144,6 +1144,151 @@
           "quote": "Evaluation is basically specification for your AI system."
         }
       ]
+    },
+    {
+      "claim_id": "claims#54",
+      "text": "Route each task to the cheapest model that can do it — tiered model selection by difficulty is accepted practice, not a frontier idea",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "uiP88SpCi1Q",
+          "start": "00:01:40.240",
+          "end": "00:01:51.110",
+          "start_seconds": 100,
+          "confidence": "high",
+          "label": "#791 — Erik Hanchett, AWS",
+          "quote": "don't use the most expensive model for everything you're doing. You want to use multiple different models based on the use case. And then try to route to it inside your agent."
+        },
+        {
+          "video_id": "Xfl50508LZM",
+          "start": "01:47:37.199",
+          "end": "01:47:43.920",
+          "start_seconds": 6457,
+          "confidence": "high",
+          "label": "#681 — Laurie Voss, Arize",
+          "quote": "So you can do tiered model selection. You can do cheap models for simple queries and expensive models in your agent uh for complex queries."
+        },
+        {
+          "video_id": "cwjs1WAG9CM",
+          "start": "00:07:15.160",
+          "end": "00:07:21.840",
+          "start_seconds": 435,
+          "confidence": "high",
+          "label": "#613 — Harrison Chase, LangChain",
+          "quote": "route between uh language models so one model might be better than another you might want to use Claud because of its long context window or you might want to use GPD 4 because it's really good at reasoning"
+        },
+        {
+          "video_id": "BcWFc3H7Khg",
+          "start": "00:20:32.480",
+          "end": "00:20:42.400",
+          "start_seconds": 1232,
+          "confidence": "medium",
+          "label": "#692 — Guillaume Vernade, Google DeepMind",
+          "quote": "flex and that's basically I don't care if that takes a long time but I want to to pay less. So you're going to have a 50% discount but your request can be uh can be delayed"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#55",
+      "text": "Trustworthy judgment can be manufactured from cheap stochastic generation — sample-and-vote, multi-model consensus, and debate panels beat a single expensive call",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:06:27.280",
+          "end": "00:06:32.710",
+          "start_seconds": 387,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "the models to generate multiple responses and then do majority voting."
+        },
+        {
+          "video_id": "OMGPvW8TBHc",
+          "start": "00:10:16.710",
+          "end": "00:10:22.399",
+          "start_seconds": 616,
+          "confidence": "high",
+          "label": "#116 — Leonard Tang, Haize Labs",
+          "quote": "having LMS debate each other, having the weaker LLMs debate each other about what the stronger model is saying and seeing if that makes sense."
+        },
+        {
+          "video_id": "zfvEMNmVlNY",
+          "start": "00:12:00.560",
+          "end": "00:12:07.269",
+          "start_seconds": 720,
+          "confidence": "high",
+          "label": "#093 — Alberto Romero, Jointly",
+          "quote": "Second tier is a multimodel consensus. So we leverage a diverse range of models such as GBT4, claude and"
+        },
+        {
+          "video_id": "UOsOfLnAX3Y",
+          "start": "00:29:21.159",
+          "end": "00:29:26.669",
+          "start_seconds": 1761,
+          "confidence": "high",
+          "label": "#451 — How to Improve Your Agents (lit review)",
+          "quote": "we using multi-agent debate to get reliable State evaluation instead of using single uh"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#56",
+      "text": "Parallel agents need per-agent runtime isolation — a sandbox/micro-VM/worktree each — because containers are not a sufficient boundary for agent-generated code",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:07:06.360",
+          "end": "00:07:10.840",
+          "start_seconds": 426,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "And only with having sort of the full isolation of a VM will you be able to effectively do this properly."
+        },
+        {
+          "video_id": "ClWD8OEYgp8",
+          "start": "00:07:37.160",
+          "end": "00:07:47.040",
+          "start_seconds": 457,
+          "confidence": "high",
+          "label": "#623 — Maggie Appleton, GitHub",
+          "quote": "It is also backed by a micro VM. So a sandboxed computer in the cloud on its own Git branch."
+        },
+        {
+          "video_id": "kv-QAuKWllQ",
+          "start": "00:17:17.760",
+          "end": "00:17:25.839",
+          "start_seconds": 1037,
+          "confidence": "high",
+          "label": "#151 — Rene Brandel, Casco",
+          "quote": "if you just use containers, by the way, that's not an isolation layer in case anybody's wondering. Yeah. Yeah. Don't use containers for isolation."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#57",
+      "text": "Input tokens dominate agent cost — fix what you feed the model before you optimize which model",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "dRmWYHuIJxM",
+          "start": "00:02:49.560",
+          "end": "00:03:03.509",
+          "start_seconds": 169,
+          "confidence": "high",
+          "label": "#792 — Rajkumar Sakthivel, Tesco",
+          "quote": "90% of your AI cost is input. Files, search results, context you send in. Only 10% is output. The code the AI writes back."
+        },
+        {
+          "video_id": "dRmWYHuIJxM",
+          "start": "00:10:23.910",
+          "end": "00:10:29.910",
+          "start_seconds": 623,
+          "confidence": "high",
+          "label": "#792 — Rajkumar Sakthivel, Tesco",
+          "quote": "may be 30% of the cost, but other 70% is what you feed it. Fix the input, the model choice matters less than you think."
+        }
+      ]
     }
   ],
   "9": [
@@ -1977,6 +2122,49 @@
           "confidence": "high",
           "label": "#767 — Sandipan Bhaumik, Databricks",
           "quote": "Evaluation is basically specification for your AI system."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#55",
+      "text": "Trustworthy judgment can be manufactured from cheap stochastic generation — sample-and-vote, multi-model consensus, and debate panels beat a single expensive call",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:06:27.280",
+          "end": "00:06:32.710",
+          "start_seconds": 387,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "the models to generate multiple responses and then do majority voting."
+        },
+        {
+          "video_id": "OMGPvW8TBHc",
+          "start": "00:10:16.710",
+          "end": "00:10:22.399",
+          "start_seconds": 616,
+          "confidence": "high",
+          "label": "#116 — Leonard Tang, Haize Labs",
+          "quote": "having LMS debate each other, having the weaker LLMs debate each other about what the stronger model is saying and seeing if that makes sense."
+        },
+        {
+          "video_id": "zfvEMNmVlNY",
+          "start": "00:12:00.560",
+          "end": "00:12:07.269",
+          "start_seconds": 720,
+          "confidence": "high",
+          "label": "#093 — Alberto Romero, Jointly",
+          "quote": "Second tier is a multimodel consensus. So we leverage a diverse range of models such as GBT4, claude and"
+        },
+        {
+          "video_id": "UOsOfLnAX3Y",
+          "start": "00:29:21.159",
+          "end": "00:29:26.669",
+          "start_seconds": 1761,
+          "confidence": "high",
+          "label": "#451 — How to Improve Your Agents (lit review)",
+          "quote": "we using multi-agent debate to get reliable State evaluation instead of using single uh"
         }
       ]
     }
@@ -3380,6 +3568,40 @@
           "quote": "The agent gets blocked, it needs to please you and it makes things up."
         }
       ]
+    },
+    {
+      "claim_id": "claims#56",
+      "text": "Parallel agents need per-agent runtime isolation — a sandbox/micro-VM/worktree each — because containers are not a sufficient boundary for agent-generated code",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:07:06.360",
+          "end": "00:07:10.840",
+          "start_seconds": 426,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "And only with having sort of the full isolation of a VM will you be able to effectively do this properly."
+        },
+        {
+          "video_id": "ClWD8OEYgp8",
+          "start": "00:07:37.160",
+          "end": "00:07:47.040",
+          "start_seconds": 457,
+          "confidence": "high",
+          "label": "#623 — Maggie Appleton, GitHub",
+          "quote": "It is also backed by a micro VM. So a sandboxed computer in the cloud on its own Git branch."
+        },
+        {
+          "video_id": "kv-QAuKWllQ",
+          "start": "00:17:17.760",
+          "end": "00:17:25.839",
+          "start_seconds": 1037,
+          "confidence": "high",
+          "label": "#151 — Rene Brandel, Casco",
+          "quote": "if you just use containers, by the way, that's not an isolation layer in case anybody's wondering. Yeah. Yeah. Don't use containers for isolation."
+        }
+      ]
     }
   ],
   "4": [
@@ -3844,6 +4066,92 @@
           "quote": "The agent gets blocked, it needs to please you and it makes things up."
         }
       ]
+    },
+    {
+      "claim_id": "claims#54",
+      "text": "Route each task to the cheapest model that can do it — tiered model selection by difficulty is accepted practice, not a frontier idea",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "uiP88SpCi1Q",
+          "start": "00:01:40.240",
+          "end": "00:01:51.110",
+          "start_seconds": 100,
+          "confidence": "high",
+          "label": "#791 — Erik Hanchett, AWS",
+          "quote": "don't use the most expensive model for everything you're doing. You want to use multiple different models based on the use case. And then try to route to it inside your agent."
+        },
+        {
+          "video_id": "Xfl50508LZM",
+          "start": "01:47:37.199",
+          "end": "01:47:43.920",
+          "start_seconds": 6457,
+          "confidence": "high",
+          "label": "#681 — Laurie Voss, Arize",
+          "quote": "So you can do tiered model selection. You can do cheap models for simple queries and expensive models in your agent uh for complex queries."
+        },
+        {
+          "video_id": "cwjs1WAG9CM",
+          "start": "00:07:15.160",
+          "end": "00:07:21.840",
+          "start_seconds": 435,
+          "confidence": "high",
+          "label": "#613 — Harrison Chase, LangChain",
+          "quote": "route between uh language models so one model might be better than another you might want to use Claud because of its long context window or you might want to use GPD 4 because it's really good at reasoning"
+        },
+        {
+          "video_id": "BcWFc3H7Khg",
+          "start": "00:20:32.480",
+          "end": "00:20:42.400",
+          "start_seconds": 1232,
+          "confidence": "medium",
+          "label": "#692 — Guillaume Vernade, Google DeepMind",
+          "quote": "flex and that's basically I don't care if that takes a long time but I want to to pay less. So you're going to have a 50% discount but your request can be uh can be delayed"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#55",
+      "text": "Trustworthy judgment can be manufactured from cheap stochastic generation — sample-and-vote, multi-model consensus, and debate panels beat a single expensive call",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:06:27.280",
+          "end": "00:06:32.710",
+          "start_seconds": 387,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "the models to generate multiple responses and then do majority voting."
+        },
+        {
+          "video_id": "OMGPvW8TBHc",
+          "start": "00:10:16.710",
+          "end": "00:10:22.399",
+          "start_seconds": 616,
+          "confidence": "high",
+          "label": "#116 — Leonard Tang, Haize Labs",
+          "quote": "having LMS debate each other, having the weaker LLMs debate each other about what the stronger model is saying and seeing if that makes sense."
+        },
+        {
+          "video_id": "zfvEMNmVlNY",
+          "start": "00:12:00.560",
+          "end": "00:12:07.269",
+          "start_seconds": 720,
+          "confidence": "high",
+          "label": "#093 — Alberto Romero, Jointly",
+          "quote": "Second tier is a multimodel consensus. So we leverage a diverse range of models such as GBT4, claude and"
+        },
+        {
+          "video_id": "UOsOfLnAX3Y",
+          "start": "00:29:21.159",
+          "end": "00:29:26.669",
+          "start_seconds": 1761,
+          "confidence": "high",
+          "label": "#451 — How to Improve Your Agents (lit review)",
+          "quote": "we using multi-agent debate to get reliable State evaluation instead of using single uh"
+        }
+      ]
     }
   ],
   "5": [
@@ -4258,6 +4566,31 @@
           "confidence": "high",
           "label": "#172 — Philipp Krenn, Elastic",
           "quote": "it's hybrid search because you have multiple approaches, and then you can either boost them together. You could do reranking, which is becoming more and more popular."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#57",
+      "text": "Input tokens dominate agent cost — fix what you feed the model before you optimize which model",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "dRmWYHuIJxM",
+          "start": "00:02:49.560",
+          "end": "00:03:03.509",
+          "start_seconds": 169,
+          "confidence": "high",
+          "label": "#792 — Rajkumar Sakthivel, Tesco",
+          "quote": "90% of your AI cost is input. Files, search results, context you send in. Only 10% is output. The code the AI writes back."
+        },
+        {
+          "video_id": "dRmWYHuIJxM",
+          "start": "00:10:23.910",
+          "end": "00:10:29.910",
+          "start_seconds": 623,
+          "confidence": "high",
+          "label": "#792 — Rajkumar Sakthivel, Tesco",
+          "quote": "may be 30% of the cost, but other 70% is what you feed it. Fix the input, the model choice matters less than you think."
         }
       ]
     }
