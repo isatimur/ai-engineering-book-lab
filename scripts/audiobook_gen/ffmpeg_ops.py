@@ -9,18 +9,20 @@ SR = "44100"
 
 
 def ensure_ffmpeg() -> None:
-    if shutil.which("ffmpeg") is None:
-        raise RuntimeError("ffmpeg not found on PATH. Install it (e.g. `brew install ffmpeg`).")
+    # Both binaries are needed: ffmpeg renders/masters, ffprobe measures
+    # chapter durations for the .m4b markers. Check both up front so a missing
+    # ffprobe fails BEFORE any paid TTS spend, not deep inside build_m4b.
+    for binary in ("ffmpeg", "ffprobe"):
+        if shutil.which(binary) is None:
+            raise RuntimeError(
+                f"{binary} not found on PATH. Install ffmpeg (e.g. `brew install ffmpeg`)."
+            )
 
 
 def run(cmd: list[str]) -> None:
     proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
         raise RuntimeError(f"ffmpeg failed: {' '.join(cmd)}\n{proc.stderr[-2000:]}")
-
-
-def concat_list_content(paths: list[Path]) -> str:
-    return "\n".join(f"file '{Path(p).as_posix()}'" for p in paths)
 
 
 def silence_cmd(dst: Path, seconds: float) -> list[str]:
@@ -52,11 +54,26 @@ def make_silence(dst: Path, seconds: float) -> Path:
     return dst
 
 
+def concat_filter(n: int) -> str:
+    """filter_complex graph that resamples every input to a common rate/layout
+    before concatenating. The concat *demuxer* does NOT resample, so feeding it
+    44.1 kHz silence and 24 kHz OpenAI-TTS chunks corrupts the stream (wrong
+    speed/pitch). The concat *filter* with a per-input aresample fixes this."""
+    legs = "".join(
+        f"[{i}:a]aresample={SR},aformat=channel_layouts=mono[a{i}];" for i in range(n)
+    )
+    inputs = "".join(f"[a{i}]" for i in range(n))
+    return f"{legs}{inputs}concat=n={n}:v=0:a=1[out]"
+
+
 def concat_wavs(paths: list[Path], dst: Path, work_dir: Path) -> Path:
-    list_file = Path(work_dir) / "concat.txt"
-    list_file.write_text(concat_list_content(paths), encoding="utf-8")
-    run([
-        "ffmpeg", "-y", "-f", "concat", "-safe", "0",
-        "-i", str(list_file), "-ar", SR, "-ac", "1", str(dst),
-    ])
+    paths = [Path(p) for p in paths]
+    cmd = ["ffmpeg", "-y"]
+    for p in paths:
+        cmd += ["-i", str(p)]
+    cmd += [
+        "-filter_complex", concat_filter(len(paths)),
+        "-map", "[out]", "-ar", SR, "-ac", "1", str(dst),
+    ]
+    run(cmd)
     return dst

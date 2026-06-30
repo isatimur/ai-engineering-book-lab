@@ -34,11 +34,17 @@ def zip_marketplace(files: list[Path], dst_zip: Path) -> Path:
 
 
 def _duration_ms(path: Path) -> int:
-    out = subprocess.run(
+    proc = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
          "-of", "default=noprint_wrappers=1:nokey=1", str(path)],
         capture_output=True, text=True,
-    ).stdout.strip()
+    )
+    out = proc.stdout.strip()
+    if proc.returncode != 0 or not out or out == "N/A":
+        raise RuntimeError(
+            f"ffprobe could not read duration of {path} "
+            f"(returncode={proc.returncode}, output={out!r}):\n{proc.stderr[-500:]}"
+        )
     return int(float(out) * 1000)
 
 

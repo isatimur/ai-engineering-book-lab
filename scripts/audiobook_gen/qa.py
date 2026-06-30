@@ -25,11 +25,20 @@ def _grab(pattern: str, text: str) -> float:
     return float(m.group(1))
 
 
+def _overall_section(stderr: str) -> str:
+    """astats prints a per-channel block FIRST, then an 'Overall' block. We want
+    the Overall numbers, so slice from the last 'Overall' marker onward — a plain
+    first-match search would read the per-channel values instead."""
+    idx = stderr.rfind("Overall")
+    return stderr[idx:] if idx != -1 else stderr
+
+
 def parse_astats(stderr: str) -> AudioMetrics:
+    section = _overall_section(stderr)
     return AudioMetrics(
-        rms_db=_grab(r"RMS level dB", stderr),
-        peak_db=_grab(r"Peak level dB", stderr),
-        noise_db=_grab(r"Noise floor dB", stderr),
+        rms_db=_grab(r"RMS level dB", section),
+        peak_db=_grab(r"Peak level dB", section),
+        noise_db=_grab(r"Noise floor dB", section),
     )
 
 
@@ -50,6 +59,10 @@ def astats_cmd(src: Path) -> list[str]:
 
 def measure(src: Path) -> AudioMetrics:
     proc = subprocess.run(astats_cmd(src), capture_output=True, text=True)
+    if proc.returncode != 0:
+        # A failed ffmpeg run has no astats output; surface the real error
+        # instead of a misleading "could not parse" ValueError downstream.
+        raise RuntimeError(f"ffmpeg astats failed for {src}:\n{proc.stderr[-2000:]}")
     return parse_astats(proc.stderr)
 
 

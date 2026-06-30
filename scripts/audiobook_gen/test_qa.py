@@ -1,8 +1,17 @@
-from pathlib import Path
+import subprocess
 
-from audiobook_gen.qa import parse_astats, check_acx, AudioMetrics, write_report
+import pytest
 
+from audiobook_gen import qa
+from audiobook_gen.qa import parse_astats, check_acx, AudioMetrics, write_report, measure
+
+# Real astats output emits a per-channel block (with its OWN numbers) BEFORE the
+# Overall block. Parsing must read Overall, not the first match it sees.
 SAMPLE_ASTATS = """
+[Parsed_astats_0 @ 0x] Channel: 1
+[Parsed_astats_0 @ 0x] RMS level dB: -11.1
+[Parsed_astats_0 @ 0x] Peak level dB: -0.9
+[Parsed_astats_0 @ 0x] Noise floor dB: -40.0
 [Parsed_astats_0 @ 0x] Overall
 [Parsed_astats_0 @ 0x] RMS level dB: -20.5
 [Parsed_astats_0 @ 0x] Peak level dB: -3.8
@@ -10,11 +19,20 @@ SAMPLE_ASTATS = """
 """
 
 
-def test_parse_astats_extracts_metrics():
+def test_parse_astats_extracts_overall_not_per_channel():
     m = parse_astats(SAMPLE_ASTATS)
     assert m.rms_db == -20.5
     assert m.peak_db == -3.8
     assert m.noise_db == -78.2
+
+
+def test_measure_raises_on_ffmpeg_failure(tmp_path, monkeypatch):
+    def fake_run(*args, **kwargs):
+        return subprocess.CompletedProcess(args, returncode=1, stdout="", stderr="No such file")
+
+    monkeypatch.setattr(qa.subprocess, "run", fake_run)
+    with pytest.raises(RuntimeError, match="astats failed"):
+        measure(tmp_path / "missing.mp3")
 
 
 def test_check_acx_passes_compliant_audio():
