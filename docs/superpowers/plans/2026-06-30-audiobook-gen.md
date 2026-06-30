@@ -331,11 +331,11 @@ from audiobook_gen.cost import build_plan
 
 
 def test_counts_chars_and_chunks():
-    chapters = [Chapter("Chapter 1 — A", "x" * 4000), Chapter("Chapter 2 — B", "y" * 1000)]
+    chapters = [Chapter("Chapter 1 — A", "word " * 800), Chapter("Chapter 2 — B", "word " * 200)]
     plan = build_plan(chapters, max_chars=3500)
     assert plan.chapters == 2
     assert plan.chars == 5000
-    assert plan.chunks == 3  # 4000 -> 2 chunks, 1000 -> 1 chunk
+    assert plan.chunks == 3  # 4000 chars -> 2 chunks, 1000 chars -> 1 chunk
 
 
 def test_cost_estimate_uses_rate():
