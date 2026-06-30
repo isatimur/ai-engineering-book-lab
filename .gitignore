@@ -10,6 +10,9 @@ __pycache__/
 /tmp/
 *.log
 
+# Audiobook render output
+dist/
+
 # Large or machine-specific working state
 99_Meta/transcripts/raw/
 99_Meta/transcripts/plain/

@@ -59,9 +59,9 @@ from audiobook_gen.normalize import normalize_markdown, Chapter
 def test_splits_on_chapter_headings():
     md = (
         "# Chapter 1 — The Shift\n\n"
-        + "Body one. " * 20 + "\n\n"
+        + "Body one here. " * 30 + "\n\n"
         "# Chapter 2 — Taste\n\n"
-        + "Body two. " * 20 + "\n"
+        + "Body two here. " * 30 + "\n"
     )
     chapters = normalize_markdown(md)
     assert [c.title for c in chapters] == ["Chapter 1 — The Shift", "Chapter 2 — Taste"]
