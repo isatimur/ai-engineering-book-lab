@@ -1267,7 +1267,6 @@ def build_parser() -> argparse.ArgumentParser:
 
 def slug(title: str) -> str:
     body = re.sub(r"^Chapter\s+\d+\s*[—–-]\s*", "", title).strip()
-    body = body.split(":")[0]
     body = re.sub(r"[^a-zA-Z0-9]+", "-", body).strip("-").lower()
     return body
 
