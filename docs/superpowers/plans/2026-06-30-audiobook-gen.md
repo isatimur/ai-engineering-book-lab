@@ -222,7 +222,8 @@ def test_never_exceeds_limit():
     chunks = chunk_text(text, max_chars=500)
     assert chunks  # non-empty
     assert all(len(c) <= 500 for c in chunks)
-    assert "".join(chunks).replace(" ", "") == text.replace(" ", "")[: len("".join(chunks).replace(" ", ""))] or True
+    # no words are lost or duplicated across the split
+    assert "".join(chunks).replace(" ", "") == text.replace(" ", "")
 
 
 def test_splits_on_sentence_boundaries():
