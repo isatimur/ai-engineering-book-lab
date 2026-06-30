@@ -15,3 +15,6 @@ Task 6: complete (commit 7a16384, assemble 2/2 green)
 Task 7: complete (commit e4b99fb, qa 4/4 green)
 Task 8: complete (commit 96da31f, credits 2/2 green)
 Task 9: complete (commit 492aa7f, package 2/2 green)
+Task 10: complete (commit 017ca4c, cli 3/3 green; fixed slug subtitle bug inline)
+Task 11: complete (verification — 31 passed/1 skipped; dry-run = 10 ch, 55 chunks, $2.57)
+All 11 tasks complete. Branch feat/audiobook-gen.
