@@ -26,6 +26,20 @@ def test_parse_astats_extracts_overall_not_per_channel():
     assert m.noise_db == -78.2
 
 
+def test_parse_astats_handles_inf_noise_floor():
+    # Digital-silence room tone drives astats' noise floor to -inf; that must
+    # parse (as float -inf) and pass the ACX noise check, not crash.
+    stderr = (
+        "[astats] Overall\n"
+        "[astats] RMS level dB: -19.8\n"
+        "[astats] Peak level dB: -9.9\n"
+        "[astats] Noise floor dB: -inf\n"
+    )
+    m = parse_astats(stderr)
+    assert m.noise_db == float("-inf")
+    assert check_acx(m) == []
+
+
 def test_measure_raises_on_ffmpeg_failure(tmp_path, monkeypatch):
     def fake_run(*args, **kwargs):
         return subprocess.CompletedProcess(args, returncode=1, stdout="", stderr="No such file")

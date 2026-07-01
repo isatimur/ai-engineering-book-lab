@@ -18,8 +18,13 @@ class AudioMetrics:
     noise_db: float
 
 
+# astats reports pristine/digital-silence segments (our room tone) as -inf, and
+# occasionally nan — so the number grammar must accept those, not just decimals.
+_NUM = r"(-?(?:\d+(?:\.\d+)?|inf|nan))"
+
+
 def _grab(pattern: str, text: str) -> float:
-    m = re.search(pattern + r":\s*(-?\d+(?:\.\d+)?)", text)
+    m = re.search(pattern + r":\s*" + _NUM, text)
     if not m:
         raise ValueError(f"could not parse '{pattern}' from astats output")
     return float(m.group(1))
