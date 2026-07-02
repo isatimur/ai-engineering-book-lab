@@ -1,12 +1,13 @@
 // website/scripts/sync-audio.mjs
-// Copies rendered audiobook MP3s from ../../dist/audiobook/marketplace/ into
-// ./public/audio/ and emits a manifest consumed by the reader player.
-// Idempotent: copies only when source is newer than destination.
+// Copies rendered chapter MP3s from ../../dist/audiobook/marketplace/ into
+// ./public/audiobook/ch-NN.mp3 and refreshes approxSeconds in src/data/audiobook.ts.
 //
-// If no rendered audio exists yet, writes an empty manifest so the site builds
-// cleanly and the player stays disabled until a render is synced.
+// Marketplace naming from audiobook_gen: 01-<slug>.mp3 … 10-<slug>.mp3
+// (opening/closing credits at 00-* and 11-* are skipped for the web player).
+//
+// If no render exists, exits cleanly — the committed MP3s + audiobook.ts stay as-is.
 
-import { copyFile, mkdir, readdir, stat, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -16,8 +17,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const websiteRoot = resolve(__dirname, '..');
 const repoRoot = resolve(websiteRoot, '..');
 const sourceDir = join(repoRoot, 'dist/audiobook/marketplace');
-const publicAudio = join(websiteRoot, 'public', 'audio');
-const srcDataDir = join(websiteRoot, 'src', 'data');
+const destDir = join(websiteRoot, 'public', 'audiobook');
+const audiobookTs = join(websiteRoot, 'src', 'data', 'audiobook.ts');
 
 const log = (...args) => console.log('[sync-audio]', ...args);
 const warn = (...args) => console.warn('[sync-audio][warn]', ...args);
@@ -35,123 +36,84 @@ async function newer(src, dst) {
 function probeDuration(file) {
   const r = spawnSync(
     'ffprobe',
-    [
-      '-v', 'error',
-      '-show_entries', 'format=duration',
-      '-of', 'default=noprint_wrappers=1:nokey=1',
-      file,
-    ],
+    ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', file],
     { encoding: 'utf8' },
   );
-  if (r.status !== 0) {
-    warn(`ffprobe failed for ${file}`);
-    return 0;
-  }
+  if (r.status !== 0) return null;
   const n = parseFloat(String(r.stdout).trim());
-  return Number.isFinite(n) ? n : 0;
+  return Number.isFinite(n) ? Math.round(n) : null;
 }
 
-function humanTitle(slug) {
-  return slug
-    .split('-')
-    .filter(Boolean)
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ');
-}
-
-function parseSegment(filename) {
-  const m = filename.match(/^(\d{2})-(.+)\.mp3$/i);
+function parseChapterFile(filename) {
+  const m = filename.match(/^(\d{2})-.+\.mp3$/i);
   if (!m) return null;
-  const index = parseInt(m[1], 10);
-  const slug = m[2].toLowerCase();
-  const chapterNumber = index >= 1 && index <= 10 ? String(index).padStart(2, '0') : null;
-  let kind = 'chapter';
-  if (index === 0) kind = 'opening';
-  if (index >= 11) kind = 'closing';
-  return { index, slug, chapterNumber, kind };
+  const num = parseInt(m[1], 10);
+  if (num < 1 || num > 10) return null;
+  return String(num).padStart(2, '0');
 }
 
-async function writeManifest(segments, destPaths) {
-  const totalDurationSeconds = segments.reduce((sum, s) => sum + s.durationSeconds, 0);
-  const manifest = {
-    generatedAt: new Date().toISOString(),
-    available: segments.length > 0,
-    totalDurationSeconds,
-    segments,
-  };
-  const json = JSON.stringify(manifest, null, 2) + '\n';
-  await ensureDir(dirname(destPaths.public));
-  await ensureDir(dirname(destPaths.src));
-  await writeFile(destPaths.public, json);
-  await writeFile(destPaths.src, json);
+async function patchAudiobookTs(tracks) {
+  if (!existsSync(audiobookTs)) {
+    warn('audiobook.ts not found — skip metadata patch');
+    return;
+  }
+  let text = await readFile(audiobookTs, 'utf8');
+  for (const { number, approxSeconds } of tracks) {
+    const re = new RegExp(
+      `(\\{\\s*number:\\s*'${number}',\\s*src:\\s*'/audiobook/ch-${number}\\.mp3',\\s*approxSeconds:\\s*)\\d+`,
+    );
+    if (!re.test(text)) {
+      warn(`no audiobook.ts entry for chapter ${number}`);
+      continue;
+    }
+    text = text.replace(re, `$1${approxSeconds}`);
+  }
+  await writeFile(audiobookTs, text);
 }
 
 async function main() {
-  await ensureDir(publicAudio);
-
   if (!existsSync(sourceDir)) {
-    log(`source not found (${sourceDir}) — writing empty manifest`);
-    await writeManifest([], {
-      public: join(publicAudio, 'manifest.json'),
-      src: join(srcDataDir, 'audio-manifest.json'),
-    });
+    log(`source not found (${sourceDir}) — keeping committed audiobook assets`);
     return;
   }
 
-  const files = (await readdir(sourceDir))
-    .filter((f) => f.toLowerCase().endsWith('.mp3'))
-    .sort();
+  const files = (await readdir(sourceDir)).filter((f) => f.toLowerCase().endsWith('.mp3')).sort();
+  const chapterFiles = files
+    .map((f) => ({ file: f, number: parseChapterFile(f) }))
+    .filter((x) => x.number);
 
-  if (files.length === 0) {
-    log('no mp3 files in marketplace dir — writing empty manifest');
-    await writeManifest([], {
-      public: join(publicAudio, 'manifest.json'),
-      src: join(srcDataDir, 'audio-manifest.json'),
-    });
+  if (chapterFiles.length === 0) {
+    log('no chapter mp3s (01–10) in marketplace dir — keeping committed assets');
     return;
   }
 
+  await ensureDir(destDir);
   let copied = 0;
   let kept = 0;
-  const segments = [];
+  const tracks = [];
 
-  for (const file of files) {
-    const parsed = parseSegment(file);
-    if (!parsed) {
-      warn(`skip unrecognized filename: ${file}`);
-      continue;
-    }
-
+  for (const { file, number } of chapterFiles) {
     const src = join(sourceDir, file);
-    const dst = join(publicAudio, file);
+    const dstName = `ch-${number}.mp3`;
+    const dst = join(destDir, dstName);
     if (await newer(src, dst)) {
       await copyFile(src, dst);
       copied++;
     } else {
       kept++;
     }
-
-    const durationSeconds = probeDuration(existsSync(dst) ? dst : src);
-    segments.push({
-      index: parsed.index,
-      kind: parsed.kind,
-      slug: parsed.slug,
-      chapterNumber: parsed.chapterNumber,
-      title: humanTitle(parsed.slug),
-      src: `/audio/${file}`,
-      durationSeconds: Math.round(durationSeconds * 10) / 10,
+    const duration = probeDuration(existsSync(dst) ? dst : src);
+    tracks.push({
+      number,
+      src: `/audiobook/${dstName}`,
+      approxSeconds: duration ?? 0,
     });
   }
 
-  segments.sort((a, b) => a.index - b.index);
+  tracks.sort((a, b) => a.number.localeCompare(b.number));
+  await patchAudiobookTs(tracks);
 
-  await writeManifest(segments, {
-    public: join(publicAudio, 'manifest.json'),
-    src: join(srcDataDir, 'audio-manifest.json'),
-  });
-
-  const totalMin = Math.round(segments.reduce((s, x) => s + x.durationSeconds, 0) / 60);
-  log(`done. copied=${copied} kept=${kept} segments=${segments.length} (~${totalMin} min)`);
+  log(`done. copied=${copied} kept=${kept} chapters=${tracks.length}`);
 }
 
 main().catch((err) => {

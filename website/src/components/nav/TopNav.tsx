@@ -56,7 +56,7 @@ export const TopNav = ({ progress, onToggleSettings, onBackToCatalogue, onOpenSh
           <button
             onClick={onOpenShare}
             aria-label="Share"
-            className="hidden sm:flex border border-[var(--color-border)] rounded-full px-3 py-1 hover:bg-black/5 transition-colors"
+            className="hidden sm:flex border border-[var(--color-border)] rounded-full px-3 py-1 hover:bg-[var(--color-ink)]/5 transition-colors"
           >
             Share
           </button>
@@ -64,7 +64,7 @@ export const TopNav = ({ progress, onToggleSettings, onBackToCatalogue, onOpenSh
         <button
           onClick={onToggleSettings}
           aria-label="Open settings"
-          className="border border-[var(--color-border)] rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/5 transition-colors font-serif italic text-sm shrink-0"
+          className="border border-[var(--color-border)] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[var(--color-ink)]/5 transition-colors font-serif italic text-sm shrink-0"
         >
           Aa
         </button>

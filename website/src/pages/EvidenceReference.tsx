@@ -307,7 +307,7 @@ export const EvidenceReference = () => {
               {filtered.map((row) => (
                 <tr
                   key={row.claimId}
-                  className="border-b border-[var(--color-border)] last:border-b-0 hover:bg-black/[0.02]"
+                  className="border-b border-[var(--color-border)] last:border-b-0 hover:bg-[var(--color-ink)]/[0.02]"
                 >
                   <td className="px-4 py-3 font-mono text-[11px] whitespace-nowrap">
                     <Link

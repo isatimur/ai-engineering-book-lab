@@ -149,7 +149,7 @@ export const MobileNavMenu = ({ variant = 'light', className = '' }: Props) => {
   const linkCls =
     variant === 'dark'
       ? 'text-white/80 hover:text-white hover:bg-white/10'
-      : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] hover:bg-black/5';
+      : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] hover:bg-[var(--color-ink)]/5';
 
   const primaryLinks =
     variant === 'dark'

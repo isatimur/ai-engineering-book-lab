@@ -9,7 +9,7 @@ const ZoomableFigure = ({ src, alt }: { src: string; alt: string }) => {
     <button
       type="button"
       onClick={() => open(src, alt)}
-      className="block w-full cursor-zoom-in border border-black/10 bg-white"
+      className="block w-full cursor-zoom-in border border-[var(--color-border)] bg-white"
       aria-label={`Enlarge ${alt}`}
     >
       <img src={src} alt={alt} className="block w-full h-auto" />
@@ -18,7 +18,7 @@ const ZoomableFigure = ({ src, alt }: { src: string; alt: string }) => {
 };
 
 const NotFound = () => (
-  <div className="min-h-screen bg-[#F8F6F0] text-[#1F1D1B] flex flex-col items-center justify-center gap-4 font-serif">
+  <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col items-center justify-center gap-4 font-serif">
     <Seo title="Map not found — Visual Guide" description="The requested map could not be found." path="/visual-guide" />
     <p className="font-mono text-xs uppercase tracking-widest opacity-60">404 · map not found</p>
     <Link to="/visual-guide" className="underline">← Back to the Visual Guide</Link>
@@ -39,8 +39,8 @@ export const MapDetail = () => {
         image={map.src}
         type="article"
       />
-      <div className="min-h-screen bg-[#F8F6F0] text-[#1F1D1B] font-serif">
-        <header className="border-b border-black/10 px-6 lg:px-12 py-6 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
+      <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] font-serif">
+        <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-6 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
           <Link to="/visual-guide" className="hover:opacity-60">← Visual Guide</Link>
           <span>Map</span>
           <Link to="/read" className="hover:opacity-60">Reader →</Link>

@@ -5,6 +5,7 @@ import { anchorForNode, filterGraphByChapter, getEvidenceGraph } from '../../lib
 import type { GraphNode } from '../../lib/evidenceTypes';
 import { RedThreadLinks } from './EvidenceSectionHeader';
 import { EvidenceGraphCanvas } from './EvidenceGraphCanvas';
+import { useSettings } from '../../context/SettingsContext';
 
 type Props = {
   chapterNumber?: string;
@@ -26,6 +27,7 @@ const EDGE_LEGEND = [
 ] as const;
 
 export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => {
+  const { settings } = useSettings();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const claimParam = searchParams.get('claim');
@@ -90,7 +92,7 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
       <div className={`flex flex-col gap-4 ${compact ? '' : 'lg:flex-row lg:items-stretch'}`}>
       <div className={compact ? 'h-[min(360px,50vh)]' : 'flex-1 h-[min(420px,55vh)] lg:h-[560px] order-1'}>
         {isEmpty ? (
-          <div className="h-full min-h-[320px] border border-[var(--color-border)] bg-[#F8F6F0] flex flex-col items-center justify-center gap-4 px-6 text-center">
+          <div className="h-full min-h-[320px] border border-[var(--color-border)] bg-[var(--color-paper)] flex flex-col items-center justify-center gap-4 px-6 text-center">
             <p className="font-serif text-lg text-[var(--color-ink-muted)]">
               No evidence nodes for this chapter filter yet.
             </p>
@@ -131,12 +133,15 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
         )}
 
         <div className="mb-4 flex flex-wrap gap-x-4 gap-y-2 text-[var(--color-ink-muted)]">
-          {LEGEND.map((item) => (
-            <span key={item.type} className="inline-flex items-center gap-1.5">
-              <span className="inline-block h-2.5 w-2.5 rounded-full shrink-0" style={{ background: item.color }} />
-              {item.label}
-            </span>
-          ))}
+          {LEGEND.map((item) => {
+            const color = item.type === 'chapter' && settings.theme === 'dark' ? '#EDEDED' : item.color;
+            return (
+              <span key={item.type} className="inline-flex items-center gap-1.5">
+                <span className="inline-block h-2.5 w-2.5 rounded-full shrink-0" style={{ background: color }} />
+                {item.label}
+              </span>
+            );
+          })}
         </div>
 
         <div className="mb-4 flex flex-wrap gap-x-3 gap-y-1 text-[9px] text-[var(--color-ink-muted)] normal-case tracking-normal">
