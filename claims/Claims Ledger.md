@@ -568,6 +568,8 @@
   - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Pipecat Cloud's architecture is organized around the latency budget rather than per-component optimization; orchestration handles lateness as the design assumption.
     - **Anchor:** `IA4lZjh9sTs` 00:11:20.160 → 00:11:28.000 · confidence: high
     - **Quote:** "real time is different from non-real time. And by non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
+    - **Anchor:** `IA4lZjh9sTs` 00:11:39.760 → 00:11:44.320 · confidence: high
+    - **Quote:** "you care a lot if your P95 goes up above 800, 900, 1,000 milliseconds"
 - **Caveats / counterpoints:** Masking is paid for in user trust if overused or used cynically — repeated *one moment* fillers with no payoff teach the user the system is lying about progress. The claim is about masking as designed-in conversational scaffolding, not about generic stalling. The claim also doesn't replace the latency-optimization argument; it complements it.
 - **Evidence note:** The Debnath anchor (`hwCmfThIiS4`, #85) has a known VTT artifact — the transcript region covering his specific latency-masking description is corrupted, so the captured quote is only his introductory framing and carries little evidentiary weight. The claim's load is carried by the Zeghidour (#662), Harries (#661), and Kramer (#142) anchors; treat Debnath as supporting context, not primary evidence.
 - **Candidate chapters:** 8
