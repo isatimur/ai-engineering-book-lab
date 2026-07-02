@@ -5,9 +5,15 @@ from audiobook_gen.__main__ import build_parser, run_dry, slug
 
 def test_parser_defaults():
     args = build_parser().parse_args(["--source", "book.md"])
-    assert args.voice == "onyx"
+    assert args.engine == "openai"
+    assert args.voice is None  # resolved per-engine in make_synth
     assert args.dry_run is False
     assert args.out == "dist/audiobook"
+
+
+def test_parser_accepts_elevenlabs_engine():
+    args = build_parser().parse_args(["--source", "book.md", "--engine", "elevenlabs"])
+    assert args.engine == "elevenlabs"
 
 
 def test_slug_is_filesystem_safe():

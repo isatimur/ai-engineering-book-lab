@@ -34,9 +34,12 @@ def silence_cmd(dst: Path, seconds: float) -> list[str]:
 
 
 def loudnorm_cmd(src: Path, dst: Path) -> list[str]:
+    # I=-19.5 LUFS centers full chapters near RMS -20 and keeps even the short
+    # credit segments (whose long tail room tone drags ungated RMS down) above
+    # the ACX -23 dB floor. TP=-3 keeps true peaks at the ACX ceiling.
     return [
         "ffmpeg", "-y", "-i", str(src),
-        "-af", "loudnorm=I=-20:TP=-3:LRA=11",
+        "-af", "loudnorm=I=-19.5:TP=-3:LRA=11",
         "-ar", SR, "-ac", "1", str(dst),
     ]
 
@@ -49,8 +52,17 @@ def mp3_cmd(src: Path, dst: Path) -> list[str]:
     ]
 
 
+def to_wav_cmd(src: Path, dst: Path) -> list[str]:
+    return ["ffmpeg", "-y", "-i", str(src), "-ar", SR, "-ac", "1", str(dst)]
+
+
 def make_silence(dst: Path, seconds: float) -> Path:
     run(silence_cmd(dst, seconds))
+    return dst
+
+
+def to_wav(src: Path, dst: Path) -> Path:
+    run(to_wav_cmd(src, dst))
     return dst
 
 
