@@ -13,6 +13,7 @@ import { SettingsModal, type Settings } from '../components/modals/SettingsModal
 import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
 import { scrollAudio } from '../lib/audio';
+import { useAudiobook } from '../lib/useAudiobook';
 import { ActionMenu } from '../components/ActionMenu';
 import { Seo } from '../components/Seo';
 import { chapters } from '../data/bookChapters';
@@ -44,6 +45,17 @@ export const Reader = () => {
 
   const toggleFocusMode = useCallback(() => setIsFocusMode((v) => !v), []);
   const articleRef = useRef<HTMLDivElement>(null);
+  const scrollSyncRaf = useRef(0);
+
+  const syncScrollToAudio = useCallback((p: number) => {
+    cancelAnimationFrame(scrollSyncRaf.current);
+    scrollSyncRaf.current = requestAnimationFrame(() => scrollToProgress(p));
+  }, []);
+
+  const audiobook = useAudiobook({
+    scrollProgress: scrollYProgress,
+    onScrollSync: syncScrollToAudio,
+  });
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -287,9 +299,10 @@ export const Reader = () => {
         <ActionMenu containerRef={articleRef} />
         <BottomNav
           onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
-          progress={scrollYProgress}
+          scrollProgress={scrollYProgress}
           isFocusMode={isFocusMode}
           onToggleFocusMode={toggleFocusMode}
+          audiobook={audiobook}
         />
         <GlossaryDrawer termId={glossaryTermId} onClose={() => setGlossaryTermId(null)} />
         <ShareModal isOpen={isShareOpen} onClose={() => setIsShareOpen(false)} />

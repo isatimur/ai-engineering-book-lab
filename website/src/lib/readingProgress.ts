@@ -1,4 +1,5 @@
 const PROGRESS_KEY = 'book:reader:progress';
+const AUDIO_PROGRESS_KEY = 'book:reader:audio-progress';
 const SETTINGS_KEY = 'book:reader:settings';
 const LAST_CHAPTER_KEY = 'book:reader:last-chapter';
 
@@ -9,6 +10,20 @@ export function saveScrollProgress(progress: number): void {
 export function loadScrollProgress(): number | null {
   try {
     const v = localStorage.getItem(PROGRESS_KEY);
+    if (!v) return null;
+    const n = parseFloat(v);
+    return Number.isFinite(n) ? n : null;
+  } catch { return null; }
+}
+
+/** Persist audiobook position as a 0–1 ratio through the full narration. */
+export function saveAudioProgress(progress: number): void {
+  try { localStorage.setItem(AUDIO_PROGRESS_KEY, String(progress)); } catch {}
+}
+
+export function loadAudioProgress(): number | null {
+  try {
+    const v = localStorage.getItem(AUDIO_PROGRESS_KEY);
     if (!v) return null;
     const n = parseFloat(v);
     return Number.isFinite(n) ? n : null;

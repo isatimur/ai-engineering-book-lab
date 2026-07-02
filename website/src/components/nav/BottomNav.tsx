@@ -1,30 +1,40 @@
 import { useState } from 'react';
 import { motion, AnimatePresence, useTransform, type MotionValue } from 'motion/react';
 
+import type { AudiobookState } from '../../lib/useAudiobook';
+
 type Props = {
   onToggleSidebar: () => void;
-  progress: MotionValue<number>;
+  scrollProgress: MotionValue<number>;
   isFocusMode?: boolean;
   onToggleFocusMode?: () => void;
+  audiobook: AudiobookState;
 };
 
-export const BottomNav = ({ onToggleSidebar, progress, isFocusMode, onToggleFocusMode }: Props) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+export const BottomNav = ({
+  onToggleSidebar,
+  scrollProgress,
+  isFocusMode,
+  onToggleFocusMode,
+  audiobook,
+}: Props) => {
   const [showSpeeds, setShowSpeeds] = useState(false);
-  const [speed, setSpeed] = useState("1.5X");
-  const speeds = ["1.0X", "1.5X", "2.0X", "2.5X", "COLLISON"];
 
-  // Total duration in seconds: 17:22 = 17 * 60 + 22 = 1042 seconds
-  const totalSeconds = 1042;
-  const currentSeconds = useTransform(progress, (p: number) => Math.floor(p * totalSeconds));
+  const {
+    available,
+    isPlaying,
+    speed,
+    speeds,
+    progress,
+    formattedCurrent,
+    formattedTotal,
+    currentLabel,
+    togglePlay,
+    setSpeed,
+    seekToProgress,
+  } = audiobook;
 
-  const displayTime = useTransform(currentSeconds, (s: number) => {
-    const min = Math.floor(s / 60);
-    const sec = s % 60;
-    return `00:${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
-  });
-
-  const barWidth = useTransform(progress, (p: number) => `${p * 100}%`);
+  const scrollBarWidth = useTransform(scrollProgress, (p: number) => `${p * 100}%`);
 
   return (
     <motion.footer
@@ -42,7 +52,11 @@ export const BottomNav = ({ onToggleSidebar, progress, isFocusMode, onToggleFocu
               exit={{ opacity: 0, width: 0, overflow: 'hidden' }}
               className="flex items-center gap-3 whitespace-nowrap overflow-visible"
             >
-              <div className="flex items-center gap-3 cursor-pointer group" onClick={() => setIsPlaying(!isPlaying)}>
+              <div
+                className={`flex items-center gap-3 group ${available ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
+                onClick={() => available && togglePlay()}
+                title={available ? currentLabel : 'Audiobook not synced yet — run audiobook_gen then sync-audio'}
+              >
                 <motion.span
                   key={isPlaying ? "pause" : "play"}
                   initial={{ scale: 0.5, opacity: 0, rotate: -90 }}
@@ -66,9 +80,10 @@ export const BottomNav = ({ onToggleSidebar, progress, isFocusMode, onToggleFocu
 
               <div className="relative ml-2 flex items-center">
                 <button
-                  onClick={() => setShowSpeeds(!showSpeeds)}
+                  onClick={() => available && setShowSpeeds(!showSpeeds)}
+                  disabled={!available}
                   aria-label="Change playback speed"
-                  className="whitespace-nowrap hover:text-[var(--color-ink-muted)] hover:bg-[var(--color-ink)]/5 px-2 py-0.5 rounded transition-colors overflow-hidden relative"
+                  className="whitespace-nowrap hover:text-[var(--color-ink-muted)] hover:bg-[var(--color-ink)]/5 px-2 py-0.5 rounded transition-colors overflow-hidden relative disabled:opacity-40"
                 >
                   <motion.span
                     key={speed}
@@ -121,17 +136,28 @@ export const BottomNav = ({ onToggleSidebar, progress, isFocusMode, onToggleFocu
                   animate={{ opacity: 1, width: 'auto' }}
                   exit={{ opacity: 0, width: 0, overflow: 'hidden' }}
                 >
-                  <motion.span>{displayTime}</motion.span>
-                  <span>&nbsp;/ 00:17:22</span>
+                  <span>{available ? formattedCurrent : '00:00:00'}</span>
+                  <span>&nbsp;/ {available ? formattedTotal : '--:--:--'}</span>
                 </motion.div>
               )}
             </AnimatePresence>
-            <div className="flex-1 h-[2px] bg-black/10 relative rounded-full overflow-visible flex items-center justify-center">
+            <button
+              type="button"
+              aria-label="Seek audiobook"
+              disabled={!available || !isPlaying}
+              onClick={(e) => {
+                if (!available || !isPlaying) return;
+                const rect = e.currentTarget.getBoundingClientRect();
+                const ratio = (e.clientX - rect.left) / rect.width;
+                seekToProgress(ratio);
+              }}
+              className="flex-1 h-[2px] bg-black/10 relative rounded-full overflow-visible flex items-center justify-center disabled:cursor-default"
+            >
               <motion.div
-                style={{ width: barWidth }}
-                className="absolute left-0 top-0 bottom-0 bg-[var(--color-ink)] opacity-70 rounded-full z-0 h-full"
+                style={{ width: isPlaying ? `${progress * 100}%` : scrollBarWidth }}
+                className="absolute left-0 top-0 bottom-0 bg-[var(--color-ink)] opacity-70 rounded-full z-0 h-full pointer-events-none"
               />
-            </div>
+            </button>
           </motion.div>
         </div>
       </div>
