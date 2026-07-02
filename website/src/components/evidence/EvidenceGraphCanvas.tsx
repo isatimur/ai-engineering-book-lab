@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { EvidenceGraphData, GraphNode } from '../../lib/evidenceTypes';
+import { useSettings } from '../../context/SettingsContext';
 
 type SimNode = GraphNode & {
   x: number;
@@ -70,6 +71,7 @@ export const EvidenceGraphCanvas = ({
   onSelect,
   className = '',
 }: Props) => {
+  const { settings } = useSettings();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const simRef = useRef<SimNode[]>([]);
@@ -289,6 +291,15 @@ export const EvidenceGraphCanvas = ({
       ctx.translate(panRef.current.x, panRef.current.y);
       ctx.scale(panRef.current.scale, panRef.current.scale);
 
+      const isDark = settings.theme === 'dark';
+      const dynamicEdgeColors: Record<string, string> = {
+        cited_in: isDark ? 'rgba(237,237,237,0.22)' : 'rgba(24,24,26,0.18)',
+        supports: 'rgba(234,198,192,0.55)',
+        appears_in: 'rgba(164,184,196,0.45)',
+        same_theme: isDark ? 'rgba(237,237,237,0.1)' : 'rgba(24,24,26,0.08)',
+      };
+      const dimmedEdgeColor = isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.04)';
+
       for (const edge of graphData.edges) {
         const a = map.get(edge.source);
         const b = map.get(edge.target);
@@ -302,10 +313,17 @@ export const EvidenceGraphCanvas = ({
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
-        ctx.strokeStyle = dimmed ? 'rgba(0,0,0,0.04)' : EDGE_COLORS[edge.type] ?? EDGE_COLORS.supports;
+        ctx.strokeStyle = dimmed ? dimmedEdgeColor : dynamicEdgeColors[edge.type] ?? dynamicEdgeColors.supports;
         ctx.lineWidth = edge.type === 'same_theme' ? 0.6 : 1;
         ctx.stroke();
       }
+
+      const dynamicNodeColors: Record<GraphNode['type'], string> = {
+        chapter: isDark ? '#EDEDED' : '#18181A',
+        claim: '#EAC6C0',
+        speaker: '#A4B8C4',
+        video: '#6b6664',
+      };
 
       for (const node of nodes) {
         const isSelected = selected === node.id;
@@ -325,7 +343,7 @@ export const EvidenceGraphCanvas = ({
           );
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.size + (isSelected || isClaimHighlight ? 2 : 0), 0, Math.PI * 2);
-        let fill = NODE_COLORS[node.type];
+        let fill = dynamicNodeColors[node.type];
         if (node.type === 'claim' && node.chapterNumber) {
           const chIdx = parseInt(node.chapterNumber, 10) - 1;
           if (chIdx >= 0 && chIdx < CHAPTER_TINTS.length) fill = CHAPTER_TINTS[chIdx];
@@ -337,17 +355,17 @@ export const EvidenceGraphCanvas = ({
         if (isFocusHub || isSearchHit || isClaimHighlight) {
           ctx.beginPath();
           ctx.arc(node.x, node.y, node.size + 5, 0, Math.PI * 2);
-          ctx.strokeStyle = isSearchHit ? '#18181A' : '#EAC6C0';
+          ctx.strokeStyle = isSearchHit ? (isDark ? '#EDEDED' : '#18181A') : '#EAC6C0';
           ctx.lineWidth = isSearchHit || isClaimHighlight ? 2.5 : 2;
           ctx.stroke();
         }
-        ctx.strokeStyle = isSelected || isHover || isClaimHighlight ? '#18181A' : 'rgba(255,255,255,0.35)';
+        ctx.strokeStyle = isSelected || isHover || isClaimHighlight ? (isDark ? '#EDEDED' : '#18181A') : (isDark ? 'rgba(0,0,0,0.35)' : 'rgba(255,255,255,0.35)');
         ctx.lineWidth = isSelected ? 2 : 1;
         ctx.stroke();
 
         if (node.type === 'chapter' || isSelected || isHover) {
           ctx.font = '10px "Space Mono", monospace';
-          ctx.fillStyle = '#18181A';
+          ctx.fillStyle = isDark ? '#EDEDED' : '#18181A';
           ctx.textAlign = 'center';
           ctx.fillText(node.shortLabel, node.x, node.y + node.size + 12);
         }
@@ -359,7 +377,7 @@ export const EvidenceGraphCanvas = ({
 
     frameRef.current = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frameRef.current);
-  }, [graph]);
+  }, [graph, settings.theme]);
 
   const handlePointerDown = (e: React.PointerEvent) => {
     const node = pickNode(e.clientX, e.clientY);
@@ -439,7 +457,7 @@ export const EvidenceGraphCanvas = ({
     <div ref={containerRef} className={`relative w-full h-full min-h-[320px] ${className}`}>
       <canvas
         ref={canvasRef}
-        className={`w-full h-full touch-none bg-[#F8F6F0] border border-[var(--color-border)] ${
+        className={`w-full h-full touch-none bg-[var(--color-paper)] border border-[var(--color-border)] ${
           hoverIsChapter ? 'cursor-pointer' : 'cursor-grab active:cursor-grabbing'
         }`}
         onPointerDown={handlePointerDown}

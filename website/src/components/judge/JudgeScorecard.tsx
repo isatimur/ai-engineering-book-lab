@@ -31,7 +31,7 @@ const DimBadge = ({
       type="button"
       onClick={onToggle}
       aria-expanded={active}
-      className="flex flex-col items-start gap-1 border bg-white px-3 py-2 text-left transition-colors hover:bg-black/[0.02]"
+      className="flex flex-col items-start gap-1 border bg-[var(--color-paper)] text-[var(--color-ink)] px-3 py-2 text-left transition-colors hover:bg-[var(--color-ink)]/5"
       style={{ borderColor: active ? color : 'var(--color-border)' }}
     >
       <span className="font-mono text-[9px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">

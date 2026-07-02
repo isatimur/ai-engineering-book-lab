@@ -18,7 +18,7 @@ export const VisualGuide = () => {
   }, [location.hash]);
 
   return (
-    <div className="min-h-screen bg-[#F8F6F0] text-[#1F1D1B] font-serif">
+    <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] font-serif">
       <Seo
         title="Visual Guide — From Copilot to Colleague"
         description="64 hand-built diagrams covering the book's argument, methodology, and 18 recurring concepts."
@@ -26,7 +26,7 @@ export const VisualGuide = () => {
         image="/diagrams/overview/spine.png"
         type="website"
       />
-      <header className="border-b border-black/10 px-6 lg:px-12 py-6 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
+      <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-6 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
         <Link to="/" className="hover:opacity-60">← Catalogue</Link>
         <span>From Copilot to Colleague · Visual Guide</span>
         <Link to="/read" className="hover:opacity-60">Reader →</Link>
@@ -38,7 +38,7 @@ export const VisualGuide = () => {
         <div className="space-y-24">
           {manifest.overview.map((d) => (
             <figure key={d.id}>
-              <div className="border border-black/10 bg-white">
+              <div className="border border-[var(--color-border)] bg-white">
                 <img src={d.src} alt={d.title} className="block w-full h-auto" />
               </div>
               <figcaption className="mt-6 md:flex md:items-start md:gap-12">
@@ -50,7 +50,7 @@ export const VisualGuide = () => {
         </div>
       </section>
 
-      <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-black/10">
+      <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-[var(--color-border)]">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">The four acts</h1>
         <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">The ten chapters move through a four-act arc — the Problem, the Scaffolding Stack, the Stress Test, and the Widening. Each divider names the act, its chapters, and where it sits in the throughline.</p>
         <div className="space-y-16">
@@ -59,7 +59,7 @@ export const VisualGuide = () => {
               <button
                 type="button"
                 onClick={() => setLightbox({ src: d.src, title: d.title, caption: d.caption, chapterRef: d.chapters })}
-                className="block w-full border border-black/10 bg-white hover:shadow-xl transition-shadow cursor-zoom-in"
+                className="block w-full border border-[var(--color-border)] bg-white hover:shadow-xl transition-shadow cursor-zoom-in"
                 aria-label={`Enlarge ${d.title}`}
               >
                 <img src={d.src} alt={d.title} className="block w-full h-auto" loading="lazy" />
@@ -76,13 +76,13 @@ export const VisualGuide = () => {
         </div>
       </section>
 
-      <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-black/10">
+      <section className="px-6 lg:px-12 py-20 max-w-5xl mx-auto border-t border-[var(--color-border)]">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">How to read this book</h1>
         <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Three maps. One picks a reading route by reader profile. One opens up The Method that produced the manuscript. One charts the dependency network of the eighteen concepts the book uses.</p>
         <div className="space-y-24">
           {manifest.maps.map((m) => (
             <figure key={m.id}>
-              <Link to={`/visual-guide/maps/${m.id}`} className="block border border-black/10 bg-white hover:shadow-xl transition-shadow">
+              <Link to={`/visual-guide/maps/${m.id}`} className="block border border-[var(--color-border)] bg-white hover:shadow-xl transition-shadow">
                 <img src={m.src} alt={m.title} className="block w-full h-auto" />
               </Link>
               <figcaption className="mt-6 md:flex md:items-start md:gap-12">
@@ -99,7 +99,7 @@ export const VisualGuide = () => {
         </div>
       </section>
 
-      <section id="concepts" className="px-6 lg:px-12 py-20 max-w-7xl mx-auto border-t border-black/10">
+      <section id="concepts" className="px-6 lg:px-12 py-20 max-w-7xl mx-auto border-t border-[var(--color-border)]">
         <h1 className="font-serif text-5xl md:text-6xl italic leading-none mb-3">Concepts</h1>
         <p className="font-sans text-sm opacity-60 mb-16 max-w-xl">Eighteen named concepts that recur across the book — the units the arguments are built from. Click a card to enlarge, or open its full page.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,7 +107,7 @@ export const VisualGuide = () => {
             <div
               key={c.id}
               id={`concept-${c.id}`}
-              className="border border-black/10 bg-white hover:shadow-xl transition-shadow group flex flex-col"
+              className="border border-[var(--color-border)] bg-white hover:shadow-xl transition-shadow group flex flex-col"
             >
               <button
                 type="button"
@@ -115,7 +115,7 @@ export const VisualGuide = () => {
                 className="text-left cursor-zoom-in"
                 aria-label={`Enlarge ${c.title}`}
               >
-                <div className="aspect-[16/10] overflow-hidden bg-[#F8F6F0]">
+                <div className="aspect-[16/10] overflow-hidden bg-[var(--color-paper)]">
                   <img src={c.src} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
                 <div className="px-5 pt-5 pb-2">

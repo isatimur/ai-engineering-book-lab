@@ -26,7 +26,7 @@ const Highlighted = ({ text, matches }: { text: string; matches: MatchRange[] })
 const ResultRow = ({ r }: { r: SearchResult }) => (
   <Link
     to={r.href}
-    className="block border-b border-[var(--color-border)] py-4 group hover:bg-black/[0.015] transition-colors"
+    className="block border-b border-[var(--color-border)] py-4 group hover:bg-[var(--color-ink)]/[0.015] transition-colors"
   >
     <div className="mb-1 flex items-center gap-3 font-mono text-[9px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
       <span className="border border-[var(--color-border)] rounded-sm px-1.5 py-0.5">

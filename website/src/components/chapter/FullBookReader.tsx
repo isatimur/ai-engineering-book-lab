@@ -12,6 +12,30 @@ import { EvidenceSectionHeader } from '../evidence/EvidenceSectionHeader';
 import { SourcesDrawer } from '../evidence/SourcesDrawer';
 import { RedThreadNav } from '../nav/RedThreadNav';
 import { formatReadingTime } from '../../lib/readingStats';
+import { useAudiobook } from '../../context/AudiobookContext';
+
+const ListenButton = ({ index }: { index: number }) => {
+  const { currentIndex, isPlaying, playChapter, toggle } = useAudiobook();
+  const active = currentIndex === index;
+  const playing = active && isPlaying;
+  return (
+    <button
+      type="button"
+      onClick={() => (active ? toggle(index) : playChapter(index))}
+      aria-label={playing ? 'Pause this chapter' : 'Listen to this chapter'}
+      className={`inline-flex items-center gap-1.5 border border-[var(--color-border)] rounded px-2 py-0.5 transition-colors hover:bg-[var(--color-ink)]/5 ${active ? 'text-[var(--color-ink)]' : 'text-[var(--color-ink-muted)]'}`}
+    >
+      <span className="w-2 flex items-center justify-center text-[8px]">
+        {playing ? (
+          <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor"><rect x="0" y="0" width="3" height="10" /><rect x="5" y="0" width="3" height="10" /></svg>
+        ) : (
+          <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor"><polygon points="0,0 8,5 0,10" /></svg>
+        )}
+      </span>
+      {playing ? 'Playing' : 'Listen'}
+    </button>
+  );
+};
 
 const ChapterOpener = ({ chapter }: { chapter: string }) => {
   const op = opener(chapter);
@@ -104,7 +128,7 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
     <article
       id={`book-chapter-${chapter.number}`}
       className={`border-t border-[var(--color-border)] ${
-        index % 2 === 0 ? 'bg-[#F8F6F0]' : 'bg-[var(--color-paper)]'
+        index % 2 === 0 ? 'bg-[color-mix(in_srgb,var(--color-ink)_3%,var(--color-paper))]' : 'bg-[var(--color-paper)]'
       }`}
     >
       <ChapterOpener chapter={chapter.number} />
@@ -135,6 +159,7 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
                 CH. {chapter.number} //{' '}
                 <span className="underline underline-offset-4 decoration-black/50">{chapter.status}</span>
               </span>
+              <ListenButton index={index} />
             </div>
             <div className="text-left md:text-right text-[var(--color-ink-muted)] flex flex-col gap-1">
               <span>{chapter.wordCount.toLocaleString()} words</span>

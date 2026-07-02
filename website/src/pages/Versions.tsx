@@ -86,7 +86,7 @@ export const Versions = () => {
             <select
               value={chapterNum}
               onChange={(e) => setChapterNum(e.target.value)}
-              className="border border-[var(--color-border)] bg-white px-3 py-2"
+              className="border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)] px-3 py-2"
             >
               {allNums.map((n) => (
                 <option key={n} value={n}>
@@ -101,7 +101,7 @@ export const Versions = () => {
             <select
               value={oldId}
               onChange={(e) => setOldId(e.target.value)}
-              className="border border-[var(--color-border)] bg-white px-3 py-2"
+              className="border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)] px-3 py-2"
             >
               {versions.map((v) => (
                 <option key={v.version_id} value={v.version_id}>{vLabel(v)}</option>
@@ -114,7 +114,7 @@ export const Versions = () => {
             <select
               value={newId}
               onChange={(e) => setNewId(e.target.value)}
-              className="border border-[var(--color-border)] bg-white px-3 py-2"
+              className="border border-[var(--color-border)] bg-[var(--color-paper)] text-[var(--color-ink)] px-3 py-2"
             >
               {versions.map((v) => (
                 <option key={v.version_id} value={v.version_id}>{vLabel(v)}</option>

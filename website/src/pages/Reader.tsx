@@ -9,9 +9,10 @@ import { Hero } from '../components/chapter/Hero';
 import { FullBookReader } from '../components/chapter/FullBookReader';
 import { Sidebar } from '../components/drawers/Sidebar';
 import { GlossaryDrawer } from '../components/drawers/GlossaryDrawer';
-import { SettingsModal, type Settings } from '../components/modals/SettingsModal';
+import { SettingsModal } from '../components/modals/SettingsModal';
 import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
+import { AudiobookProvider } from '../context/AudiobookContext';
 import { scrollAudio } from '../lib/audio';
 import { ActionMenu } from '../components/ActionMenu';
 import { Seo } from '../components/Seo';
@@ -19,11 +20,10 @@ import { chapters } from '../data/bookChapters';
 import {
   saveScrollProgress,
   loadScrollProgress,
-  saveSettings,
-  loadSettings,
   scrollToProgress,
   saveLastChapter,
 } from '../lib/readingProgress';
+import { useSettings } from '../context/SettingsContext';
 
 let _saveTimer: ReturnType<typeof setTimeout> | null = null;
 const debouncedSaveProgress = (p: number) => {
@@ -95,66 +95,7 @@ export const Reader = () => {
     }
   });
 
-  const [settings, setSettings] = useState<Settings>(() =>
-    loadSettings<Settings>({ theme: 'sepia', typography: 'serif', fontSize: 'md', lineSpacing: 'relaxed', sound: 'off' })
-  );
-
-  const updateSettings = (newSettings: Partial<Settings>) => {
-    setSettings((prev) => {
-      const next = { ...prev, ...newSettings };
-      saveSettings(next);
-      return next;
-    });
-  };
-
-  const themeVars = useMemo(() => {
-    const vars: Record<string, string> = {};
-    if (settings.theme === 'light') {
-      vars['--color-paper'] = '#FFFFFF';
-      vars['--color-ink'] = '#121212';
-      vars['--color-ink-muted'] = '#666666';
-      vars['--color-border'] = '#EAEAEA';
-      vars['--color-pink'] = '#F3F4F6';
-    } else if (settings.theme === 'dark') {
-      vars['--color-paper'] = '#18181B';
-      vars['--color-ink'] = '#EDEDED';
-      vars['--color-ink-muted'] = '#A1A1AA';
-      vars['--color-border'] = '#3F3F46';
-      vars['--color-pink'] = '#27272A';
-    }
-
-    if (settings.typography === 'sans') {
-      vars['--font-reader'] = 'var(--font-sans)';
-    } else if (settings.typography === 'dyslexic') {
-      vars['--font-reader'] = 'var(--font-dyslexic)';
-    } else {
-      vars['--font-reader'] = 'var(--font-serif)';
-    }
-
-    if (settings.fontSize === 'sm') {
-      vars['--reader-font-size-sm'] = '1.1rem';
-      vars['--reader-font-size-md'] = '1.25rem';
-      vars['--reader-font-size-lg'] = '1.35rem';
-    } else if (settings.fontSize === 'lg') {
-      vars['--reader-font-size-sm'] = '1.4rem';
-      vars['--reader-font-size-md'] = '1.6rem';
-      vars['--reader-font-size-lg'] = '1.75rem';
-    } else {
-      vars['--reader-font-size-sm'] = '1.25rem';
-      vars['--reader-font-size-md'] = '1.4rem';
-      vars['--reader-font-size-lg'] = '1.5rem';
-    }
-
-    if (settings.lineSpacing === 'normal') {
-      vars['--reader-line-spacing'] = '1.4';
-    } else if (settings.lineSpacing === 'loose') {
-      vars['--reader-line-spacing'] = '1.8';
-    } else {
-      vars['--reader-line-spacing'] = '1.6';
-    }
-
-    return vars;
-  }, [settings]);
+  const { settings, updateSettings } = useSettings();
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -231,6 +172,7 @@ export const Reader = () => {
 
   return (
     <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>
+     <AudiobookProvider>
       <Seo
         title="Read — From Copilot to Colleague"
         description="All 10 chapters in one continuous read."
@@ -239,7 +181,6 @@ export const Reader = () => {
       />
       <div
         className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-clip transition-colors duration-300"
-        style={themeVars as CSSProperties}
       >
         <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         <SettingsModal
@@ -287,7 +228,6 @@ export const Reader = () => {
         <ActionMenu containerRef={articleRef} />
         <BottomNav
           onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
-          progress={scrollYProgress}
           isFocusMode={isFocusMode}
           onToggleFocusMode={toggleFocusMode}
         />
@@ -332,6 +272,7 @@ export const Reader = () => {
           ↑
         </motion.button>
       </div>
+     </AudiobookProvider>
     </GlossaryContext.Provider>
   );
 };

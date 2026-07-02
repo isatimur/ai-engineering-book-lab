@@ -96,7 +96,7 @@ export const EvidenceGraphPage = () => {
 
           <Suspense
             fallback={
-              <div className="h-[560px] border border-[var(--color-border)] bg-[#F8F6F0] flex items-center justify-center font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
+              <div className="h-[560px] border border-[var(--color-border)] bg-[var(--color-paper)] flex items-center justify-center font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
                 Loading graph…
               </div>
             }

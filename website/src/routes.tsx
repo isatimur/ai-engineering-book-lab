@@ -17,7 +17,15 @@ import { MapDetail } from './pages/MapDetail';
 import { chapters, chapterParam } from './data/bookChapters';
 import { manifest } from './lib/manifest';
 
-const Root = () => <Outlet />;
+import { SettingsProvider, AppLayout } from './context/SettingsContext';
+
+const Root = () => (
+  <SettingsProvider>
+    <AppLayout>
+      <Outlet />
+    </AppLayout>
+  </SettingsProvider>
+);
 
 // getStaticPaths returns paths relative to the root route ('/'), per vite-react-ssg.
 export const routes: RouteRecord[] = [
