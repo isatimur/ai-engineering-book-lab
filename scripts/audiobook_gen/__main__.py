@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from pathlib import Path
@@ -13,13 +14,16 @@ from audiobook_gen.credits import closing_text, opening_text
 from audiobook_gen.normalize import normalize_markdown
 from audiobook_gen.package import build_m4b, zip_marketplace
 from audiobook_gen.qa import check_acx, measure, write_report
-from audiobook_gen.tts import DEFAULT_VOICE
 
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="audiobook_gen", description="Generate an AI-narrated audiobook from markdown.")
     p.add_argument("--source", required=True, help="Path to the markdown source")
-    p.add_argument("--voice", default=DEFAULT_VOICE, help="OpenAI TTS voice (default: onyx)")
+    p.add_argument("--engine", default="openai", choices=["openai", "elevenlabs"],
+                   help="TTS backend (default: openai)")
+    p.add_argument("--voice", default=None,
+                   help="Voice id/name; defaults per engine (openai: onyx, elevenlabs: Brian)")
+    p.add_argument("--model", default=None, help="Override TTS model id for the engine")
     p.add_argument("--title", default="AI Engineering", help="Book title for credits/m4b")
     p.add_argument("--author", default="Timur Isachenko", help="Author name for credits")
     p.add_argument("--out", default="dist/audiobook", help="Output directory")
@@ -32,6 +36,28 @@ def slug(title: str) -> str:
     body = re.sub(r"^Chapter\s+\d+\s*[—–-]\s*", "", title).strip()
     body = re.sub(r"[^a-zA-Z0-9]+", "-", body).strip("-").lower()
     return body
+
+
+def make_synth(engine: str, voice: str | None, model: str | None, cache_dir: Path):
+    """Return a (text -> cached WAV Path) callable bound to the chosen engine,
+    voice, model, and cache dir. Fails fast if the engine's key is missing."""
+    if engine == "elevenlabs":
+        from audiobook_gen import eleven
+        api_key = os.environ.get("ELEVEN_API_KEY") or os.environ.get("ELEVENLABS_API_KEY")
+        if not api_key:
+            raise SystemExit("ELEVEN_API_KEY not set (or ELEVENLABS_API_KEY).")
+        v = voice or eleven.DEFAULT_VOICE
+        m = model or eleven.DEFAULT_MODEL
+        return lambda text: eleven.synthesize(text, v, cache_dir, model=m, api_key=api_key)
+
+    from audiobook_gen import tts
+    if not os.environ.get("OPENAI_API_KEY"):
+        raise SystemExit("OPENAI_API_KEY not set.")
+    v = voice or tts.DEFAULT_VOICE
+    m = model or tts.DEFAULT_MODEL
+    return lambda text: tts.synthesize(
+        text, v, cache_dir, instructions=tts.DEFAULT_INSTRUCTIONS, model=m
+    )
 
 
 def run_dry(source: Path):
@@ -65,6 +91,8 @@ def main(argv=None) -> int:
     for d in (market, personal, work):
         d.mkdir(parents=True, exist_ok=True)
 
+    synth = make_synth(args.engine, args.voice, args.model, cache)
+
     # Build the ordered narration list: opening credits, chapters, closing credits.
     segments: list[tuple[str, str]] = [("Opening Credits", opening_text(args.title, args.author))]
     segments += [(c.title, c.text) for c in chapters]
@@ -79,7 +107,7 @@ def main(argv=None) -> int:
         out_wav = work / f"{name}.wav"
         out_mp3 = market / f"{name}.mp3"
         render_chapter(
-            text, voice=args.voice, cache_dir=cache, work_dir=work / name,
+            text, synth=synth, work_dir=work / name,
             out_wav=out_wav, out_mp3=out_mp3,
         )
         mp3_files.append(out_mp3)

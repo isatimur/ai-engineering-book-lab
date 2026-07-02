@@ -23,7 +23,7 @@ def test_concat_filter_resamples_every_input():
 def test_loudnorm_cmd_targets_acx():
     cmd = loudnorm_cmd(Path("in.wav"), Path("out.wav"))
     joined = " ".join(cmd)
-    assert "loudnorm=I=-20:TP=-3:LRA=11" in joined
+    assert "loudnorm=I=-19.5:TP=-3:LRA=11" in joined
     assert "-ar 44100" in joined and "-ac 1" in joined
 
 

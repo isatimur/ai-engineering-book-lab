@@ -19,12 +19,25 @@ python3 -m audiobook_gen \
   --source "../05_Book_Ideas/Drafting Layer/AI Engineering Book - Reader Version.md" \
   --dry-run
 
-# full render
+# full render — OpenAI (voice onyx)
+export OPENAI_API_KEY=...
 python3 -m audiobook_gen \
   --source "../05_Book_Ideas/Drafting Layer/AI Engineering Book - Reader Version.md" \
-  --voice onyx --title "AI Engineering" --author "Timur Isachenko" \
+  --engine openai --voice onyx --title "AI Engineering" --author "Timur Isachenko" \
+  --out ../dist/audiobook
+
+# full render — ElevenLabs (voice Brian, deep/onyx-like)
+export ELEVEN_API_KEY=...
+python3 -m audiobook_gen \
+  --source "../05_Book_Ideas/Drafting Layer/AI Engineering Book - Reader Version.md" \
+  --engine elevenlabs --voice nPczCjzI2devNBz1zQrb \
+  --title "AI Engineering" --author "Timur Isachenko" \
   --out ../dist/audiobook
 ```
+
+`--engine` selects the TTS backend (`openai` default, or `elevenlabs`). Voice
+defaults per engine (onyx / Brian). ElevenLabs is metered per character (~171k
+for this book); a full render fits inside a Creator-tier monthly quota.
 
 Outputs:
 - `dist/audiobook/marketplace/NN-*.mp3`, `acx-upload.zip`, `QA-REPORT.md`

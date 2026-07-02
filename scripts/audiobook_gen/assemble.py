@@ -3,9 +3,10 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from typing import Callable
+
 from audiobook_gen import ffmpeg_ops as ff
 from audiobook_gen.chunk import chunk_text
-from audiobook_gen.tts import DEFAULT_INSTRUCTIONS, synthesize
 
 HEAD_SILENCE = 0.75
 TAIL_SILENCE = 2.0
@@ -25,22 +26,18 @@ def assembly_sequence(chunk_paths, head, gap, tail):
 def render_chapter(
     text: str,
     *,
-    voice: str,
-    cache_dir: Path,
+    synth: Callable[[str], Path],
     work_dir: Path,
     out_wav: Path,
     out_mp3: Path,
-    instructions: str = DEFAULT_INSTRUCTIONS,
-    client=None,
 ) -> tuple[Path, Path]:
+    """synth maps one chunk of text to a cached WAV Path; it fully encapsulates
+    the TTS engine (OpenAI or ElevenLabs), voice, and cache directory."""
     work_dir = Path(work_dir)
     work_dir.mkdir(parents=True, exist_ok=True)
 
     chunks = chunk_text(text)
-    chunk_paths = [
-        synthesize(c, voice, cache_dir, instructions=instructions, client=client)
-        for c in chunks
-    ]
+    chunk_paths = [synth(c) for c in chunks]
 
     head = ff.make_silence(work_dir / "head.wav", HEAD_SILENCE)
     gap = ff.make_silence(work_dir / "gap.wav", GAP_SILENCE)
