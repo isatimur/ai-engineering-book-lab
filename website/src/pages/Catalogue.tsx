@@ -166,6 +166,14 @@ export const Catalogue = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-2 font-mono text-[10px] uppercase tracking-widest">
             <a
+              href="https://isatimur.github.io/claims-ledger/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 border border-white/20 rounded-sm text-white/70 hover:text-white hover:border-white/40 transition-colors"
+            >
+              Website
+            </a>
+            <a
               href="https://github.com/isatimur/claims-ledger"
               target="_blank"
               rel="noopener noreferrer"
