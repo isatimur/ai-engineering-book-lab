@@ -53,6 +53,13 @@ push('/visual-guide', repoDate, '0.8', 'weekly');
 push('/read', repoDate, '0.8', 'weekly');
 push('/read/graph', gitDate('src/evidence.json'), '0.7', 'weekly');
 push('/evidence', gitDate('src/data/stats.json'), '0.8', 'weekly');
+push('/ledgers', gitDate('src/data/ledgers/openai-harness-engineering-2025.json'), '0.7', 'weekly');
+push(
+  '/ledgers/openai-harness-engineering-2025',
+  gitDate('src/data/ledgers/openai-harness-engineering-2025.json'),
+  '0.7',
+  'weekly',
+);
 for (const c of chapters) {
   push(`/read/${c.number}-${c.slug}`, gitDate(`src/content/chapter-${c.number}.md`), '0.9', 'weekly');
 }
