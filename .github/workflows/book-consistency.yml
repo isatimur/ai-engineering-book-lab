@@ -1,0 +1,71 @@
+name: book-consistency
+
+# Enforces the load-bearing invariant behind the audiobook/scores drift we hit:
+# the website manuscript (website/src/content/chapter-*.md) must stay in sync
+# with the canonical drafting copy (public/drafting/Chapter N.md, published
+# portion after the '---'). If they diverge, the site renders different text
+# than the audio and judge scores were built from.
+#
+# Only the SYNC invariant is gated (--sync-only). Audio/scores freshness lag
+# naturally while prose is being edited, so those stay advisory (run the full
+# `python3 scripts/check_book_consistency.py` locally to see them).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/src/content/**'
+      - 'public/drafting/**'
+      - 'scripts/check_book_consistency.py'
+  pull_request:
+    paths:
+      - 'website/src/content/**'
+      - 'public/drafting/**'
+      - 'scripts/check_book_consistency.py'
+  schedule:
+    - cron: '0 9 * * *'   # 09:00 UTC daily safety net
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Manuscript sync check (blocking)
+        run: |
+          set +e
+          OUTPUT=$(python3 scripts/check_book_consistency.py --sync-only 2>&1)
+          echo "$OUTPUT"
+          if echo "$OUTPUT" | grep -q "DRIFT"; then
+            echo "::error::website/src/content and public/drafting have diverged."
+            echo "::error::Canonical is public/drafting. Reconcile the two copies before merging."
+            exit 1
+          fi
+
+      - name: Full consistency report (advisory)
+        continue-on-error: true
+        run: python3 scripts/check_book_consistency.py
+
+      - name: Open issue on scheduled-run drift
+        if: ${{ failure() && github.event_name == 'schedule' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SERVER: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BODY="Scheduled book-consistency check found the website manuscript out of sync with the canonical public/drafting copy.
+          See run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}
+
+          Canonical is public/drafting. Reconcile website/src/content to it."
+          gh issue create \
+            --repo "${REPO}" \
+            --title "book-consistency: manuscript drift detected (${DATE})" \
+            --body "${BODY}" \
+            --label "automated"

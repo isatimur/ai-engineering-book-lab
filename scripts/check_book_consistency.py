@@ -189,7 +189,35 @@ def check_scores_freshness() -> list[str]:
 # Main
 # ---------------------------------------------------------------------------
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    ap = argparse.ArgumentParser(description="Book consistency checker")
+    ap.add_argument(
+        "--sync-only",
+        action="store_true",
+        help="Only run the manuscript-sync check (src/content == public/drafting). "
+        "Intended for CI gating: audio/scores freshness naturally lag during "
+        "prose editing, so only the sync invariant is enforced.",
+    )
+    args = ap.parse_args(argv)
+
+    if args.sync_only:
+        print("=== Manuscript sync (website/src/content vs public/drafting) ===")
+        problems = check_manuscript_sync()
+        if problems:
+            print("DRIFT — src/content and public/drafting must stay in sync:")
+            for p in problems:
+                print(p)
+            print(
+                "\nSUMMARY: DRIFT (sync). The website copy and the canonical drafting "
+                "copy diverged — reconcile them (canonical is public/drafting)."
+            )
+            return 1
+        print("PASS — src/content matches the public/drafting published portion.")
+        print("\nSUMMARY: PASS (sync-only).")
+        return 0
+
     drift = False
 
     # --- Check a ---
