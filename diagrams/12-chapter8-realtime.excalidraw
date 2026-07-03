@@ -14,7 +14,7 @@
     },
     {
       "type": "text", "id": "title", "x": 150, "y": 58, "width": 1200, "height": 46,
-      "text": "Realtime and Embodied Edges", "originalText": "Realtime and Embodied Edges",
+      "text": "Realtime, Voice, and the Cost of Being Interruptible", "originalText": "Realtime, Voice, and the Cost of Being Interruptible",
       "fontSize": 34, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,

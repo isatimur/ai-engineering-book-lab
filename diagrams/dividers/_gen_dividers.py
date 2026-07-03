@@ -20,7 +20,7 @@ ACTS = [
          stroke="#1e40af", light="#93c5fd", text="#1e3a5f"),
     dict(n=3, roman="III", name="The Stress Test", chs="CHAPTER 8", count="1 chapter",
          role="Push the framework\nto its hardest edges.",
-         chapters=["Ch 8 · Realtime and Embodied Edges"],
+         chapters=["Ch 8 · Realtime, Voice, and the Cost of Being Interruptible"],
          through="Stress-test the theory under harsh constraints",
          stroke="#b45309", light="#fde68a", text="#92400e"),
     dict(n=4, roman="IV", name="The Widening", chs="CHAPTERS 9–10", count="2 chapters",

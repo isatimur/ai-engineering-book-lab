@@ -23,7 +23,7 @@ python3 -m audiobook_gen \
 export OPENAI_API_KEY=...
 python3 -m audiobook_gen \
   --source "../05_Book_Ideas/Drafting Layer/AI Engineering Book - Reader Version.md" \
-  --engine openai --voice onyx --title "AI Engineering" --author "Timur Isachenko" \
+  --engine openai --voice onyx --title "From Copilot to Colleague" --author "Timur Isachenko" \
   --out ../dist/audiobook
 
 # full render — ElevenLabs (voice Brian, deep/onyx-like)
@@ -31,7 +31,7 @@ export ELEVEN_API_KEY=...
 python3 -m audiobook_gen \
   --source "../05_Book_Ideas/Drafting Layer/AI Engineering Book - Reader Version.md" \
   --engine elevenlabs --voice nPczCjzI2devNBz1zQrb \
-  --title "AI Engineering" --author "Timur Isachenko" \
+  --title "From Copilot to Colleague" --author "Timur Isachenko" \
   --out ../dist/audiobook
 ```
 

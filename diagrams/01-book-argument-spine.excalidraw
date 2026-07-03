@@ -304,8 +304,8 @@
       "points": [[0, 0], [206, 0]]
     },
     {
-      "type": "text", "id": "ch8", "x": 1172, "y": 420, "width": 206, "height": 46,
-      "text": "Ch 8 · Realtime and\nEmbodied Edges", "originalText": "Ch 8 · Realtime and\nEmbodied Edges",
+      "type": "text", "id": "ch8", "x": 1172, "y": 420, "width": 206, "height": 56,
+      "text": "Ch 8 · Realtime,\nVoice & the Cost\nof Being Interruptible", "originalText": "Ch 8 · Realtime,\nVoice & the Cost\nof Being Interruptible",
       "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#1e293b", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,

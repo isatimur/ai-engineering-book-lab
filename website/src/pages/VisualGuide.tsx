@@ -21,7 +21,7 @@ export const VisualGuide = () => {
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] font-serif">
       <Seo
         title="Visual Guide — From Copilot to Colleague"
-        description="64 hand-built diagrams covering the book's argument, methodology, and 18 recurring concepts."
+        description="73 hand-built diagrams covering the book's argument, methodology, and 18 recurring concepts."
         path="/visual-guide"
         image="/diagrams/overview/spine.png"
         type="website"

@@ -453,8 +453,8 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "ch8_t", "x": 668, "y": 666, "width": 222, "height": 50,
-      "text": "Realtime and\nEmbodied Edges", "originalText": "Realtime and\nEmbodied Edges",
+      "type": "text", "id": "ch8_t", "x": 668, "y": 666, "width": 222, "height": 64,
+      "text": "Realtime, Voice\n& the Cost of Being\nInterruptible", "originalText": "Realtime, Voice\n& the Cost of Being\nInterruptible",
       "fontSize": 17, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#92400e", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
