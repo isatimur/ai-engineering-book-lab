@@ -11,6 +11,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-555.svg?style=for-the-badge)](LICENSE)
 &nbsp;
 [![Built with autoresearch](https://img.shields.io/badge/Method-autoresearch-c2410c?style=for-the-badge)](programs/book_autoresearch.md)
+&nbsp;
+[![Claims verified](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisatimur%2Fai-engineering-book-lab%2Fmain%2F.ledger%2Fbadge.json)](https://fromcopilottocolleague.com/read/graph)
+&nbsp;
+[![claims-ledger](https://img.shields.io/badge/CI-claims--ledger-orange)](https://github.com/isatimur/claims-ledger)
 
 <sub>A book on AI engineering where **every claim links to the exact second of the talk it came from** — distilled from **794** practitioner talks, and graded by a **panel of three rival AI models** so no single model gets to flatter the prose.</sub>
 
