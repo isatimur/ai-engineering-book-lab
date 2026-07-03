@@ -1,4 +1,5 @@
 import harnessLedger from '../data/ledgers/openai-harness-engineering-2025.json';
+import joelHronLedger from '../data/ledgers/joel-hron-trustworthy-agents-2025.json';
 import newCodeLedger from '../data/ledgers/sean-grove-new-code-2025.json';
 import softwareFactoryLedger from '../data/ledgers/cursor-software-factory-2025.json';
 import type { Anchor, EvidenceClaim } from './evidenceTypes';
@@ -18,6 +19,7 @@ export type EventLedger = {
 
 const REGISTRY: Record<string, EventLedger> = {
   [harnessLedger.slug]: harnessLedger as EventLedger,
+  [joelHronLedger.slug]: joelHronLedger as EventLedger,
   [newCodeLedger.slug]: newCodeLedger as EventLedger,
   [softwareFactoryLedger.slug]: softwareFactoryLedger as EventLedger,
 };

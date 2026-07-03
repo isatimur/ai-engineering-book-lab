@@ -1,0 +1,92 @@
+{
+  "slug": "joel-hron-trustworthy-agents-2025",
+  "title": "From Copilot to Colleague: Trustworthy Agents for High-Stakes",
+  "subtitle": "Event ledger — Joel Hron, Thomson Reuters",
+  "videoId": "kDEvo2__Ijg",
+  "videoUrl": "https://www.youtube.com/watch?v=kDEvo2__Ijg",
+  "sample": true,
+  "sourceRepo": "https://github.com/isatimur/claims-ledger/tree/main/examples/ledgers/joel-hron-trustworthy-agents-2025",
+  "claims": [
+    {
+      "claim_id": "claims#1",
+      "text": "The north star has shifted from helpfulness to productive output",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:00:54.800",
+          "end": "00:00:57.280",
+          "start_seconds": 54,
+          "confidence": "high",
+          "label": "Joel Hron, Thomson Reuters",
+          "quote": "from helpfulness to productive"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "Systems are now expected to produce output and make judgments and decisions",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "Human oversight works best when agency dials are tuned, not maximized",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:04:33.280",
+          "end": "00:04:36.320",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "Joel Hron, Thomson Reuters",
+          "quote": "dial these agency dials far up."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Agency is not binary but a lever you can dial up or down",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:16:25.279",
+          "end": "00:16:28.160",
+          "start_seconds": 985,
+          "confidence": "high",
+          "label": "Joel Hron, Thomson Reuters",
+          "quote": "a binary thing but as a lever that you can dial"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Autonomous systems must have bounded authority before they can earn trust",
+      "support_level": "moderate",
+      "caveats": "Book synthesis claim — anchored to this talk as primary evidence.",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        }
+      ]
+    }
+  ]
+}
