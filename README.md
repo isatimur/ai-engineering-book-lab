@@ -125,6 +125,24 @@ A full description of public vs internal layers lives in [`PUBLIC_REPO_PLAN.md`]
 
 ---
 
+## Infrastructure — claims-ledger
+
+The book's **Source Anchors** discipline ships as open-source CI tooling:
+
+| Tool | What it does | Link |
+|------|--------------|------|
+| **claims-ledger** | CLI + GitHub Action — every strong claim carries a verbatim quote anchor; CI exits 11 when stale | [github.com/isatimur/claims-ledger](https://github.com/isatimur/claims-ledger) |
+| **Event ledgers** | Standalone talk ledgers with `yt://` anchors (5 live samples) | [fromcopilottocolleague.com/ledgers](https://fromcopilottocolleague.com/ledgers) |
+| **Sandbox** | Fork-and-run template — zero local install | [claims-ledger-sandbox](https://github.com/isatimur/claims-ledger-sandbox/fork) |
+
+```bash
+npx @claims-ledger/edt init   # after npm publish — see claims-ledger docs/NPM-PUBLISH.md
+```
+
+This repo gates its own claims via the same grammar — see [`.ledger/claims.md`](.ledger/claims.md) and the live badge above.
+
+---
+
 ## Status (2026-06)
 
 Live counts are generated into [`STATS.md`](STATS.md) on every corpus change; the figures below are a snapshot.

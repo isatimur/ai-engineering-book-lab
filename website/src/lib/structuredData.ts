@@ -1,5 +1,7 @@
 import { BOOK, SITE_ORIGIN, absoluteUrl } from '../data/book';
 import { chapters, chapterPath, type BookChapter } from '../data/bookChapters';
+import type { EventLedger } from './eventLedgers';
+import { listEventLedgers, ledgerStats } from './eventLedgers';
 
 /**
  * schema.org JSON-LD builders. Every field traces to real book/chapter data —
@@ -47,6 +49,54 @@ export const chapterJsonLd = (chapter: BookChapter, index: number) => ({
     url: `${SITE_ORIGIN}/`,
   },
 });
+
+/** CollectionPage for /ledgers index. */
+export const ledgersIndexJsonLd = () => {
+  const ledgers = listEventLedgers();
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Fact-checked event ledgers',
+    description:
+      'Source-anchored claim ledgers from the AI Engineer practitioner corpus — every claim links to the exact second of the talk.',
+    url: `${SITE_ORIGIN}/ledgers`,
+    isPartOf: {
+      '@type': 'Book',
+      name: BOOK.title,
+      url: `${SITE_ORIGIN}/`,
+    },
+    hasPart: ledgers.map((ledger) => ({
+      '@type': 'CreativeWork',
+      name: ledger.title,
+      url: `${SITE_ORIGIN}/ledgers/${ledger.slug}`,
+    })),
+  };
+};
+
+/** Individual event ledger page — Article with citation anchors. */
+export const eventLedgerJsonLd = (ledger: EventLedger) => {
+  const stats = ledgerStats(ledger);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: ledger.title,
+    description: `${stats.claims} source-anchored claims · ${ledger.subtitle}`,
+    url: `${SITE_ORIGIN}/ledgers/${ledger.slug}`,
+    author: { '@type': 'Organization', name: 'claims-ledger' },
+    isPartOf: {
+      '@type': 'CollectionPage',
+      name: 'Fact-checked event ledgers',
+      url: `${SITE_ORIGIN}/ledgers`,
+    },
+    citation: ledger.claims.flatMap((claim) =>
+      claim.anchors.map((anchor) => ({
+        '@type': 'CreativeWork',
+        name: anchor.label,
+        url: `https://www.youtube.com/watch?v=${anchor.video_id}&t=${anchor.start_seconds}s`,
+      })),
+    ),
+  };
+};
 
 /** Breadcrumb trail: Home → The Book → Chapter N. */
 export const breadcrumbJsonLd = (chapter: BookChapter) => ({

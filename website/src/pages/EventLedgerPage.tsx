@@ -1,7 +1,9 @@
 import { Link, useParams } from 'react-router-dom';
+import { JsonLd } from '../components/JsonLd';
 import { Seo } from '../components/Seo';
 import { AnchorCard } from '../components/evidence/AnchorCard';
 import { getEventLedger, ledgerStats } from '../lib/eventLedgers';
+import { eventLedgerJsonLd } from '../lib/structuredData';
 import { LedgersIndexPage } from './LedgersIndexPage';
 
 const supportBadge = (level: string) => {
@@ -32,6 +34,7 @@ export const EventLedgerPage = () => {
         description={`${stats.claims} source-anchored claims from ${ledger.subtitle}. Interactive yt:// anchors.`}
         path={`/ledgers/${ledger.slug}`}
       />
+      <JsonLd data={eventLedgerJsonLd(ledger)} />
       <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased">
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/ledgers" className="hover:text-[var(--color-ink)]">

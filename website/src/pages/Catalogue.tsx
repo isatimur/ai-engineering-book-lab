@@ -217,10 +217,13 @@ export const Catalogue = () => {
               { href: '/llms.txt', label: 'llms.txt' },
               { href: '/llms-full.txt', label: 'llms-full.txt' },
               { href: '/sitemap.xml', label: 'sitemap.xml' },
+              { href: '/ledgers', label: 'Event ledgers' },
+              { href: 'https://github.com/isatimur/claims-ledger', label: 'claims-ledger', external: true },
             ].map((l) => (
               <a
                 key={l.href}
                 href={l.href}
+                {...('external' in l && l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="px-3 py-1.5 border border-white/20 rounded-sm text-white/70 hover:text-white hover:border-white/40 transition-colors"
               >
                 {l.label}
