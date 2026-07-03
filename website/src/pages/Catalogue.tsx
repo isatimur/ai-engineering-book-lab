@@ -35,7 +35,7 @@ export const Catalogue = () => {
     >
       <Seo
         title="From Copilot to Colleague — An Online Book"
-        description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 757-video corpus."
+        description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 794-video corpus."
         path="/"
         type="book"
       />
@@ -138,6 +138,57 @@ export const Catalogue = () => {
           Or drift through the book as a solar system — the 3D Journey
           <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
         </a>
+
+        <section className="mt-16 pt-10 border-t border-white/10 text-center">
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/45 mb-4">
+            claims-ledger · open source
+          </p>
+          <h2 className="font-serif text-2xl md:text-3xl text-white/90 mb-3">
+            CI that fails when docs lie
+          </h2>
+          <p className="font-sans font-light text-sm text-white/55 max-w-md mx-auto mb-6 leading-relaxed">
+            Same claim grammar as this book — now for your codebase. Every strong claim carries a
+            verbatim quote anchor; stale pointers exit&nbsp;11 in CI.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <a
+              href="https://github.com/isatimur/claims-ledger"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block opacity-90 hover:opacity-100 transition-opacity"
+            >
+              <img
+                src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisatimur%2Fclaims-ledger%2Fmain%2F.ledger%2Fbadge.json"
+                alt="Claims verified badge"
+                height="20"
+              />
+            </a>
+          </div>
+          <div className="flex flex-wrap justify-center gap-2 font-mono text-[10px] uppercase tracking-widest">
+            <a
+              href="https://github.com/isatimur/claims-ledger"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 border border-white/20 rounded-sm text-white/70 hover:text-white hover:border-white/40 transition-colors"
+            >
+              GitHub repo
+            </a>
+            <Link
+              to="/ledgers"
+              className="px-3 py-1.5 border border-white/20 rounded-sm text-white/70 hover:text-white hover:border-white/40 transition-colors"
+            >
+              Fact-checked ledgers
+            </Link>
+            <a
+              href="https://github.com/isatimur/claims-ledger-sandbox/fork"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 border border-white/20 rounded-sm text-white/70 hover:text-white hover:border-white/40 transition-colors"
+            >
+              Fork sandbox
+            </a>
+          </div>
+        </section>
       </main>
 
       <footer className="relative z-10 pt-24 pb-48 px-6 md:px-12 max-w-3xl mx-auto border-t border-white/10 mt-12 text-white/70">
