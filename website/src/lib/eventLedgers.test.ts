@@ -16,6 +16,14 @@ describe('eventLedgers', () => {
     expect(ledger?.claims).toHaveLength(5);
   });
 
+  it('registers the Sean Grove new code sample ledger', () => {
+    expect(eventLedgerSlugs()).toContain('sean-grove-new-code-2025');
+    const ledger = getEventLedger('sean-grove-new-code-2025');
+    expect(ledger).toBeDefined();
+    expect(ledger?.sample).toBe(true);
+    expect(ledger?.claims).toHaveLength(5);
+  });
+
   it('computes stats and rows without loss', () => {
     const ledger = getEventLedger('openai-harness-engineering-2025');
     expect(ledger).toBeDefined();
