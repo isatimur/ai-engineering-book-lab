@@ -8,7 +8,7 @@ The sharper change begins when the verb becomes *go do*. Research this topic. Dr
 
 ## Three words for three different relationships
 
-It helps to be precise about what is shifting, because the words get used loosely. There are three relationships a person can have with an AI system, and they are not the same thing scaled up.
+It helps to be precise about what is shifting, because the words get used loosely. The cleanest test is where the human sits relative to the loop: in the critical path for every step, alongside the work in real time, or out of the loop until review. Assistant, copilot, and delegate are those three positions, and moving between them is not the same system scaled up — it changes what the system has to be.
 
 An **assistant** suggests. It produces something you then decide what to do with — a draft, an answer, an option. The human stays in the critical path for every step, and the assistant's job is to make that step faster.
 
@@ -26,7 +26,7 @@ Delegation removes that built-in supervision. The human is not watching each ste
 
 This is why so many practitioners describe the same wall. Jacob Lauritzen, building legal AI at Legora, puts it plainly: vertical AI and complex agents "need more than just the chat." The chat was never the hard part. The hard part is everything that has to exist around it before the work it produces can be trusted without someone watching it happen.
 
-And the gap is not closed by a smarter model alone. Barry Zhang and Mahesh Murag at Anthropic name the distinction carefully: agents "have intelligence and capabilities, but not always expertise that we need for real work." Capability and expertise are different things. A model can be brilliant at the abstract task and still lack the specific context, the conventions, the institutional knowledge that separate a plausible result from a usable one. Intelligence is necessary. It has turned out not to be sufficient.
+And the gap is not closed by a smarter model alone. Barry Zhang and Mahesh Murag at Anthropic name the distinction carefully: agents "have intelligence and capabilities, but not always expertise that we need for real work." Their illustration is exact — you would not ask a 300-IQ mathematician to derive the 2025 tax code from first principles when what you need is an experienced tax professional's consistent execution. Capability and expertise are different things, and the practical move is to supply the second deliberately rather than wait for the first to grow into it: package the missing context, conventions, and procedures as reusable skills the agent loads, which is precisely the remedy Anthropic reaches for. Intelligence is necessary. On their account it has not, by itself, turned out to be sufficient.
 
 ## The chat box was always the smallest part
 
@@ -38,7 +38,7 @@ The evidence for this shift is not a controlled study proving that broad delegat
 
 ## Two cases this book keeps returning to
 
-The two cases stress the same idea from opposite directions.
+Both cases stress the same idea from opposite ends — one in software, one in knowledge work — and the use of pairing them is diagnostic: when each independently points past the model to the scaffolding around it, that is the signal the scaffolding is the real variable, not the model.
 
 The first is the **software factory**. A coding agent looks magical on a small, self-contained task and then degrades on larger ones. The trap is to read that degradation as a model ceiling and wait for a better model; the move practitioners keep making instead is to improve the workplace around the agent — the repository, the harness, the specs, the evals, and the runtime. When delegated work falls apart at scale, fix the environment before you blame the model: raw capability is not enough for dependable delegated work, and the workplace itself has to be made legible to the agent. Chapter 3 takes this up directly.
 
