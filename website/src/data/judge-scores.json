@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "panel-3model-v3",
-    "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
+    "run_id": "panel-3model-v4",
+    "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
-    "finished_at": "2026-06-29T16:25:54.687507+00:00",
+    "finished_at": "2026-07-03T11:44:31.471113+00:00",
     "total_cost_usd": 0.0,
     "status": "completed",
     "dims": [
@@ -18,35 +18,39 @@
     ],
     "coverage": {
       "humanness": {
-        "scored": 327,
-        "total": 327
+        "scored": 322,
+        "total": 325
       },
       "voice": {
         "scored": 0,
         "total": 0
       },
       "usefulness": {
-        "scored": 327,
-        "total": 327
+        "scored": 322,
+        "total": 325
       },
       "evidence_density": {
-        "scored": 79,
+        "scored": 77,
         "total": 79
       },
       "claim_defensibility": {
-        "scored": 323,
-        "total": 324
+        "scored": 234,
+        "total": 323
       },
       "redundancy": {
         "scored": 0,
         "total": 0
       }
     },
-    "partial": false,
+    "partial": true,
     "merged_run_ids": [
+      "panel-3model-v4",
       "panel-3model-v3",
       "panel-3model-v2",
       "panel-3model",
+      "2026-07-03-114407-7bb6",
+      "2026-07-03-114353-7bb6",
+      "2026-07-03-114141-7bb6",
       "2026-06-29-162054-7549",
       "2026-06-29-161553-7549",
       "2026-06-29-161254-7549",
@@ -77,25 +81,25 @@
     "humanness": 88.0,
     "voice": 88.8,
     "usefulness": 76.5,
-    "evidence_density": 86.3,
+    "evidence_density": 86.0,
     "claim_defensibility": 89.0,
     "redundancy": 82.5,
-    "usefulness_substantive": 77.4,
-    "usefulness_connective": 16,
-    "usefulness_total": 327
+    "usefulness_substantive": 77.6,
+    "usefulness_connective": 17,
+    "usefulness_total": 322
   },
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 87.4,
         "voice": 90.0,
         "usefulness": 53.5,
         "evidence_density": 90.0,
-        "claim_defensibility": 90.7,
+        "claim_defensibility": 89.9,
         "redundancy": 100.0,
         "n_paragraphs": 20,
         "usefulness_substantive": 53.5,
@@ -128,7 +132,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 20,
+          "scored": 16,
           "total": 20
         },
         "redundancy": {
@@ -242,9 +246,9 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 88.5,
         "voice": 85.0,
@@ -283,7 +287,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 20,
+          "scored": 19,
           "total": 20
         },
         "redundancy": {
@@ -396,15 +400,15 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 85.0,
         "voice": 91.0,
         "usefulness": 68.8,
         "evidence_density": 90.0,
-        "claim_defensibility": 80.1,
+        "claim_defensibility": 81.9,
         "redundancy": 85.0,
         "n_paragraphs": 53,
         "usefulness_substantive": 71.0,
@@ -437,7 +441,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 53,
+          "scored": 43,
           "total": 53
         },
         "redundancy": {
@@ -491,19 +495,6 @@
             "unsupported:Humans fill gaps by reaching for local norms they absorbed on the job, whereas agents lack this ability."
           ],
           "para_excerpt": "Here is the mechanism that turns that density into bad output, in Lopopolo's words: the models “during their training have seen trillions of lines of code that …"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 24,
-          "score": 10.0,
-          "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 65): The paragraph contains two unsupported claims ('The agent writes tests faster than the humans expect' and 'It handles small UI changes cleanly') with no ledger backing. This is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:The agent writes tests faster than the humans expect.",
-            "unsupported:It handles small UI changes cleanly.",
-            "unsupported:It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time."
-          ],
-          "para_excerpt": "At first the results feel magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable ref…"
         }
       ],
       "weakest": [
@@ -607,15 +598,15 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 88.9,
         "voice": 92.0,
         "usefulness": 89.8,
         "evidence_density": 90.0,
-        "claim_defensibility": 93.2,
+        "claim_defensibility": 93.5,
         "redundancy": 85.0,
         "n_paragraphs": 20,
         "usefulness_substantive": 89.8,
@@ -648,7 +639,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 20,
+          "scored": 18,
           "total": 20
         },
         "redundancy": {
@@ -758,26 +749,26 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
+          "paragraph_index": 2,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 17): The paragraph aligns well with the ledger entries, particularly claims#6 and claims#9. It accurately reflects the shift from snippets to codebases as the unit of AI coding and emphasizes the need for evals to match the complexity of real-world tasks. No claims in the paragraph overstate the ledger evidence, and all claims are supported by the provided ledger entries.",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph aligns closely with the ledger entry claims#8, which has a strong support level. The paragraph emphasizes the importance of evaluating the trajectory of an agent's actions, not just the final outcome, which is supported by the ledger's claim that 'Evals are a control system, not just a test suite.' The reference to Ido Pesok's quote ('improvement without measurement is limited and i…",
           "evidence_refs": [],
-          "para_excerpt": "Naman Jain, who builds coding evals at Cursor, names the shift in his own work: \"coding capabilities have leapt from generating one-line snippets to completing …"
+          "para_excerpt": "The title insists on *control system* rather than *test suite* because the choice changes what you score. A test suite checks fixed assertions about small units…"
         }
       ]
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 88.6,
         "voice": 85.0,
         "usefulness": 71.9,
         "evidence_density": 90.0,
-        "claim_defensibility": 85.3,
+        "claim_defensibility": 84.3,
         "redundancy": 85.0,
         "n_paragraphs": 52,
         "usefulness_substantive": 75.8,
@@ -810,8 +801,8 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 43,
-          "total": 43
+          "scored": 35,
+          "total": 44
         },
         "redundancy": {
           "scored": 0,
@@ -961,15 +952,15 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 88.0,
         "voice": 90.0,
         "usefulness": 76.5,
         "evidence_density": 90.0,
-        "claim_defensibility": 90.8,
+        "claim_defensibility": 91.3,
         "redundancy": 85.0,
         "n_paragraphs": 22,
         "usefulness_substantive": 79.6,
@@ -1002,7 +993,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 20,
+          "scored": 13,
           "total": 20
         },
         "redundancy": {
@@ -1113,15 +1104,15 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 88.2,
         "voice": 90.0,
         "usefulness": 75.5,
         "evidence_density": 82.7,
-        "claim_defensibility": 86.3,
+        "claim_defensibility": 87.2,
         "redundancy": 90.0,
         "n_paragraphs": 50,
         "usefulness_substantive": 76.4,
@@ -1154,7 +1145,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 47,
+          "scored": 39,
           "total": 47
         },
         "redundancy": {
@@ -1259,20 +1250,6 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 27,
-          "score": 23.0,
-          "label": "weak",
-          "reasoning": "panel-median 23 (n=3, spread 90): The paragraph makes a central claim that the danger is an authority boundary disappearing inside a competent-looking trajectory. This claim is not supported by any of the provided ledger entries. The paragraph does not align with the specific claims and supporting quotes provided, which focus on topics such as verification, model selection, context misassembly, trustworthiness, control systems, a…",
-          "evidence_refs": [
-            "unsupported:The agent now has several possible powers: search for more supporting material, pull additional client records, reinterpret the rule, override a warning, or proceed with a draft that looks internally coherent.",
-            "unsupported:The same system that is supposed to summarize evidence also has enough access to fetch more data, make a judgment call, and keep moving.",
-            "unsupported:The danger is not theatrical failure. The danger is an authority boundary disappearing inside a competent-looking trajectory.",
-            "unsupported:The danger is an authority boundary disappearing inside a competent-looking trajectory."
-          ],
-          "para_excerpt": "Suppose one document is ambiguous, a number is mapped to the wrong field, and the validation engine throws an error. The agent now has several possible powers: …"
-        },
-        {
-          "dim_name": "claim_defensibility",
           "paragraph_index": 29,
           "score": 25.0,
           "label": "weak",
@@ -1283,25 +1260,37 @@
             "unsupported:Least privilege is the oldest piece of security advice, and on its own it is not enough."
           ],
           "para_excerpt": "Least privilege is the oldest piece of security advice, and on its own it is not enough."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 20,
+          "score": 55.0,
+          "label": "moderate",
+          "reasoning": "panel-median 55 (n=3, spread 90): The paragraph makes a claim about the common engineering shortcut of giving agents standing credentials, which is not directly supported by any of the provided ledger entries. However, the claim is not central to the paragraph and the rest of the content is generally aligned with the ledger. The paragraph does not overstate any claims but introduces a new idea that is not covered in the ledger.",
+          "evidence_refs": [
+            "unsupported:The most common engineering shortcut for connecting an agent to a real system is to give the agent a standing credential — a long-lived API key, a service-account token, a personal access token \"borrowed\" from the human operator.",
+            "unsupported:The most common engineering shortcut for connecting an agent to a real system is to give the agent a standing credential — a long-lived API key, a service-account token, a personal access token 'borrowed' from the human operator."
+          ],
+          "para_excerpt": "The most common engineering shortcut for connecting an agent to a real system is to give the agent a standing credential — a long-lived API key, a service-accou…"
         }
       ]
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
-        "humanness": 88.1,
+        "humanness": 88.0,
         "voice": 90.0,
-        "usefulness": 84.7,
-        "evidence_density": 75.6,
-        "claim_defensibility": 88.9,
+        "usefulness": 84.8,
+        "evidence_density": 73.8,
+        "claim_defensibility": 87.8,
         "redundancy": 85.0,
         "n_paragraphs": 47,
-        "usefulness_substantive": 84.7,
-        "usefulness_connective": 0,
-        "usefulness_total": 47
+        "usefulness_substantive": 86.2,
+        "usefulness_connective": 1,
+        "usefulness_total": 43
       },
       "labels": {
         "humanness": "strong",
@@ -1313,50 +1302,31 @@
       },
       "coverage": {
         "humanness": {
-          "scored": 47,
-          "total": 47
+          "scored": 43,
+          "total": 45
         },
         "voice": {
           "scored": 0,
           "total": 0
         },
         "usefulness": {
-          "scored": 47,
-          "total": 47
+          "scored": 43,
+          "total": 45
         },
         "evidence_density": {
           "scored": 0,
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 47,
-          "total": 47
+          "scored": 9,
+          "total": 45
         },
         "redundancy": {
           "scored": 0,
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 38,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 25): The paragraph claims that full-duplex architecture is the cleanest long-term answer, but this claim is not supported by any of the provided ledger entries. The ledger entries do not mention full-duplex architecture as a solution or a goal. Additionally, the paragraph mentions that half-duplex is a workplace and full-duplex is a research frontier, which is not supported by the ledger entries. The…",
-          "evidence_refs": [
-            "unsupported:The cleanest long-term answer is full-duplex architecture",
-            "unsupported:full-duplex models pay for the architectural change at the agent layer: the model can do conversational overlap, but it is materially weaker at the actual reasoning",
-            "unsupported:the half-duplex world is a workplace; the full-duplex world is a research frontier",
-            "unsupported:The cleanest long-term answer is full-duplex architecture — systems that can simultaneously listen and speak.",
-            "unsupported:Zeghidour's own Moshi work is one of the few production-scale demonstrations.",
-            "unsupported:As he is the first to point out, full-duplex models pay for the architectural change at the agent layer: the model can do conversational overlap, but it is materially weaker at the actual reasoning.",
-            "unsupported:The trade is real.",
-            "unsupported:The half-duplex world is a workplace; the full-duplex world is a research frontier."
-          ],
-          "para_excerpt": "The cleanest long-term answer is full-duplex architecture — systems that can simultaneously listen and speak. Zeghidour's own Moshi work is one of the few produ…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
@@ -1385,7 +1355,7 @@
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 14,
+          "paragraph_index": 13,
           "score": 85.0,
           "label": "strong",
           "reasoning": "panel-median 85 (n=3, spread 15): The paragraph demonstrates a clear point of view about organizational consequences and ownership in AI voice work, with specific references to team structures and infrastructure ('orchestration, tracing, masking, and turn-taking infrastructure'). It avoids generic AI-flavored prose and includes concrete claims ('A team organized to fine-tune models will not staff the per-turn trace or the masking…",
@@ -1394,16 +1364,16 @@
             "phrase:'a team organized to fine-tune models will not staff the per-turn trace or the masking layer'",
             "phrase:'widens out to the organizational consequence'"
           ],
-          "para_excerpt": "The next chapter widens out to the organizational consequence. The voice work in this chapter does not live in a model team's backlog — it is orchestration, tra…"
+          "para_excerpt": "## What to do with this"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 14,
+          "paragraph_index": 13,
           "score": 25.0,
           "label": "weak",
           "reasoning": "panel-median 25 (n=3, spread 35): The paragraph transitions between chapters and describes organizational scope but does not provide actionable insights, thresholds, or concrete examples for an engineer to apply directly.",
           "evidence_refs": [],
-          "para_excerpt": "The next chapter widens out to the organizational consequence. The voice work in this chapter does not live in a model team's backlog — it is orchestration, tra…"
+          "para_excerpt": "## What to do with this"
         },
         {
           "dim_name": "usefulness",
@@ -1432,36 +1402,6 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 38,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 25): The paragraph claims that full-duplex architecture is the cleanest long-term answer, but this claim is not supported by any of the provided ledger entries. The ledger entries do not mention full-duplex architecture as a solution or a goal. Additionally, the paragraph mentions that half-duplex is a workplace and full-duplex is a research frontier, which is not supported by the ledger entries. The…",
-          "evidence_refs": [
-            "unsupported:The cleanest long-term answer is full-duplex architecture",
-            "unsupported:full-duplex models pay for the architectural change at the agent layer: the model can do conversational overlap, but it is materially weaker at the actual reasoning",
-            "unsupported:the half-duplex world is a workplace; the full-duplex world is a research frontier",
-            "unsupported:The cleanest long-term answer is full-duplex architecture — systems that can simultaneously listen and speak.",
-            "unsupported:Zeghidour's own Moshi work is one of the few production-scale demonstrations.",
-            "unsupported:As he is the first to point out, full-duplex models pay for the architectural change at the agent layer: the model can do conversational overlap, but it is materially weaker at the actual reasoning.",
-            "unsupported:The trade is real.",
-            "unsupported:The half-duplex world is a workplace; the full-duplex world is a research frontier."
-          ],
-          "para_excerpt": "The cleanest long-term answer is full-duplex architecture — systems that can simultaneously listen and speak. Zeghidour's own Moshi work is one of the few produ…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 33,
-          "score": 75.0,
-          "label": "moderate",
-          "reasoning": "panel-median 75 (n=3, spread 35): The paragraph makes a strong claim about the architectural constraint of half-duplex systems on natural conversation, which is supported by the ledger entry claims#22. However, the paragraph's rhetorical strength slightly overstates the ledger's moderate support level.",
-          "evidence_refs": [
-            "overstated:This is the constraint to check before you promise natural conversation, because it decides what kinds of conversation are possible at all.",
-            "overstated:whether the system can listen and speak at the same time"
-          ],
-          "para_excerpt": "Even with the latency budget defended, one ceiling remains that no amount of orchestration speed can lift, because it is baked into the model's architecture: wh…"
-        },
-        {
-          "dim_name": "claim_defensibility",
           "paragraph_index": 37,
           "score": 75.0,
           "label": "moderate",
@@ -1470,25 +1410,52 @@
             "overstated:The half-duplex constraint is propagating, and the lever is the architecture, not the timing."
           ],
           "para_excerpt": "The instinct of many teams is to patch this in product. Add a *wait* button. Add a tone-detection heuristic. Add a longer silence threshold. The trap: each patc…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 39,
+          "score": 83.0,
+          "label": "strong",
+          "reasoning": "panel-median 83 (n=3, spread 10): The paragraph discusses the duplex decision in the context of speech models, emphasizing that it is a property of the model and not something that can be added later. It advises to decide on the duplex nature early and to stop trying to make a half-duplex model feel full-duplex with timing hacks. This aligns well with the ledger entry claims#22, which states that half-duplex is a silent architect…",
+          "evidence_refs": [],
+          "para_excerpt": "So make the duplex decision early, at the same point you pick the speech model, because it is a property of that model and not something you can add later in pr…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 5,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 85): The paragraph aligns well with the provided ledger entries. It discusses the convergence of TTS architecture on LLM architecture (claims#23) and emphasizes the importance of designing pipelines to consume a stream of frames rather than coupling to specific internal frame generation methods. The claims are supported by the provided sources and do not overstate the ledger evidence.",
+          "evidence_refs": [
+            "overstated:The backbone is autoregressive and streams frame after frame — that is the part that has converged across labs.",
+            "unsupported:Mistral generates each frame's '37 tokens at once using a diffusion model' rather than one sample after another.",
+            "unsupported:The internal frame generator (autoregressive, diffusion, flow-matching) is a vendor implementation detail that changes between models.",
+            "unsupported:Design your pipeline to consume a stream of frames; do not couple your orchestration to how any one model produces a frame, because that is exactly the layer where the field has not converged."
+          ],
+          "para_excerpt": "Humeau is specific about where his own released model departs from the pattern, and the distinction is the one you should build against. The backbone is autoreg…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "panel-3model-v3",
+        "redundancy": "panel-3model-v3"
+      }
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
-        "humanness": 88.3,
+        "humanness": 88.2,
         "voice": 85.0,
         "usefulness": 82.6,
-        "evidence_density": 79.5,
-        "claim_defensibility": 91.3,
+        "evidence_density": 78.3,
+        "claim_defensibility": 91.5,
         "redundancy": 85.0,
         "n_paragraphs": 49,
-        "usefulness_substantive": 82.2,
+        "usefulness_substantive": 82.3,
         "usefulness_connective": 5,
-        "usefulness_total": 42
+        "usefulness_total": 41
       },
       "labels": {
         "humanness": "strong",
@@ -1500,7 +1467,7 @@
       },
       "coverage": {
         "humanness": {
-          "scored": 42,
+          "scored": 41,
           "total": 42
         },
         "voice": {
@@ -1508,7 +1475,7 @@
           "total": 0
         },
         "usefulness": {
-          "scored": 42,
+          "scored": 41,
           "total": 42
         },
         "evidence_density": {
@@ -1516,7 +1483,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 41,
+          "scored": 33,
           "total": 42
         },
         "redundancy": {
@@ -1596,19 +1563,6 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 26,
-          "score": 75.0,
-          "label": "moderate",
-          "reasoning": "panel-median 75 (n=3, spread 70): The paragraph does not directly overstate any claims, but it does not fully align with the provided ledger entries. The paragraph discusses the challenges of silo proliferation and the importance of a shared AI capability layer, which is not directly supported by the provided ledger entries. The closest match is claims#51, which discusses the human's verification capacity as the binding constrain…",
-          "evidence_refs": [
-            "overstated:The lever at this scale is a shared layer through which AI capability is provided, measured, and governed once, instead of being reinvented locally a dozen times.",
-            "unsupported:The Bloomberg engineering organization, describing its deployment across a large specialized workforce, named the hard part directly — it was not model quality but scale itself.",
-            "unsupported:AI coding was folded into the existing onboarding program so that each new hire became, in their words, a change agent who carried the new way of working back to a more senior team."
-          ],
-          "para_excerpt": "For a scale-stage company of fifty to two hundred people, the dominant failure mode is silo proliferation: every team builds its own AI tooling, every tool grow…"
-        },
-        {
-          "dim_name": "claim_defensibility",
           "paragraph_index": 27,
           "score": 83.0,
           "label": "strong",
@@ -1620,26 +1574,41 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 22,
+          "paragraph_index": 25,
           "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 85 (n=3, spread 10): The paragraph accurately reflects the nuanced findings of the Stanford research by Yegor Denisov-Blanch, as supported by the ledger entries. It correctly states that AI's productivity effect is real but uneven, and that activity-based metrics can misread motion as progress. The paragraph does not overstate or make unsupported claims, aligning well with the strong support level in the ledger.",
+          "reasoning": "panel-median 85 (n=3, spread 75): The paragraph makes a strong case for the importance of documenting tacit standards in a seed-stage team to ensure operationalization as the team grows. This aligns well with the ledger entry claims#43, which states that coding agents expose the gap between standards a team possesses and standards it can operationalize. The paragraph does not overstate or make unsupported claims, and it effective…",
+          "evidence_refs": [
+            "unsupported:For a seed-stage team of five to fifteen people, the biggest risk is not ungoverned sprawl. It is the false plateau."
+          ],
+          "para_excerpt": "For a seed-stage team of five to fifteen people, the biggest risk is not ungoverned sprawl. It is the false plateau. At this scale everyone is aligned by proxim…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 0,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 7): The paragraph makes several claims that are supported by the ledger entries. For example, the claim that \"an organization that handles cheap creation, the review bottleneck, alignment debt, and governance\" is doing what a good codebase does for a coding agent is supported by claims#39, which states that \"Alignment debt is the AI-native equivalent of technical debt\". Additionally, the claim that \"…",
           "evidence_refs": [],
-          "para_excerpt": "Here the manuscript has to stay honest, because this is precisely the place where AI hype outruns the evidence. The large-scale studies are more sober than the …"
+          "para_excerpt": "An organization that handles cheap creation, the review bottleneck, alignment debt, and governance is doing, at the scale of a company, exactly what Chapter 3 s…"
         }
-      ]
+      ],
+      "carried_dims": {
+        "voice": "panel-3model-v3",
+        "redundancy": "panel-3model-v3"
+      }
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:a1da314",
-      "corpus_snapshot_hash": "sha256:75492b6314404a1f0d7ac9cf5a101fb3e138aca54b48475d1104bb53d0d3e188",
-      "primary_run_id": "panel-3model-v3",
+      "version_id": "git:9fb8a1a",
+      "corpus_snapshot_hash": "sha256:7bb634f5b87064cf2ff124c5a714d5ac93725d876ee13984ba85541e9ff23aae",
+      "primary_run_id": "panel-3model-v4",
       "rollup": {
         "humanness": 88.8,
         "voice": 90.0,
         "usefulness": 78.8,
         "evidence_density": 85.0,
-        "claim_defensibility": 90.4,
+        "claim_defensibility": 90.0,
         "redundancy": 40.0,
         "n_paragraphs": 12,
         "usefulness_substantive": 78.8,
@@ -1672,7 +1641,7 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 12,
+          "scored": 9,
           "total": 12
         },
         "redundancy": {
@@ -1775,12 +1744,12 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
+          "paragraph_index": 1,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph aligns closely with the ledger entries, particularly claims#3 (support_level: strong) and claims#14 (support_level: strong). The argument about reliability coming from scaffolding rather than model cleverness is strongly supported by multiple sources. The mention of Omar Khattab's systems aligns with the reusable phrasing and supporting quotes in the ledger. No claims in the paragra…",
+          "reasoning": "panel-median 90 (n=3, spread 17): The paragraph aligns closely with the ledger entries, particularly with claims#1 (The important transition is from suggestion to delegated execution), claims#46 (Once an AI system can act autonomously, bounding its authority becomes the price of deployment), and claims#12 (Human oversight works best as an architectural layer, not an afterthought). The references to Joel Hron's statement ('from he…",
           "evidence_refs": [],
-          "para_excerpt": "This book opened on the shift from assistant to delegate, and argued from the first page that reliability comes far less from model cleverness than from the sca…"
+          "para_excerpt": "It is one continuous consequence, not nine. Delegation stretched the failure surface from a single response across a whole workflow — the move Joel Hron at Thom…"
         }
       ]
     }
@@ -1917,6 +1886,145 @@
           "usefulness": 78.8,
           "evidence_density": 85.0,
           "claim_defensibility": 90.4,
+          "redundancy": 40.0,
+          "n_paragraphs": 12,
+          "usefulness_substantive": 78.8,
+          "usefulness_connective": 0,
+          "usefulness_total": 12
+        }
+      }
+    },
+    {
+      "run_id": "panel-3model-v4",
+      "version_id": "git:9fb8a1a",
+      "finished_at": "2026-07-03T11:44:31.471113+00:00",
+      "partial": true,
+      "book": {
+        "humanness": 88.0,
+        "voice": 88.8,
+        "usefulness": 76.5,
+        "evidence_density": 86.0,
+        "claim_defensibility": 89.0,
+        "redundancy": 82.5,
+        "usefulness_substantive": 77.6,
+        "usefulness_connective": 17,
+        "usefulness_total": 322
+      },
+      "chapters": {
+        "01": {
+          "humanness": 87.4,
+          "voice": 90.0,
+          "usefulness": 53.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 89.9,
+          "redundancy": 100.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 53.5,
+          "usefulness_connective": 0,
+          "usefulness_total": 20
+        },
+        "02": {
+          "humanness": 88.5,
+          "voice": 85.0,
+          "usefulness": 82.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 92.7,
+          "redundancy": 85.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 82.5,
+          "usefulness_connective": 0,
+          "usefulness_total": 20
+        },
+        "03": {
+          "humanness": 85.0,
+          "voice": 91.0,
+          "usefulness": 68.8,
+          "evidence_density": 90.0,
+          "claim_defensibility": 81.9,
+          "redundancy": 85.0,
+          "n_paragraphs": 53,
+          "usefulness_substantive": 71.0,
+          "usefulness_connective": 2,
+          "usefulness_total": 53
+        },
+        "04": {
+          "humanness": 88.9,
+          "voice": 92.0,
+          "usefulness": 89.8,
+          "evidence_density": 90.0,
+          "claim_defensibility": 93.5,
+          "redundancy": 85.0,
+          "n_paragraphs": 20,
+          "usefulness_substantive": 89.8,
+          "usefulness_connective": 0,
+          "usefulness_total": 20
+        },
+        "05": {
+          "humanness": 88.6,
+          "voice": 85.0,
+          "usefulness": 71.9,
+          "evidence_density": 90.0,
+          "claim_defensibility": 84.3,
+          "redundancy": 85.0,
+          "n_paragraphs": 52,
+          "usefulness_substantive": 75.8,
+          "usefulness_connective": 6,
+          "usefulness_total": 47
+        },
+        "06": {
+          "humanness": 88.0,
+          "voice": 90.0,
+          "usefulness": 76.5,
+          "evidence_density": 90.0,
+          "claim_defensibility": 91.3,
+          "redundancy": 85.0,
+          "n_paragraphs": 22,
+          "usefulness_substantive": 79.6,
+          "usefulness_connective": 2,
+          "usefulness_total": 19
+        },
+        "07": {
+          "humanness": 88.2,
+          "voice": 90.0,
+          "usefulness": 75.5,
+          "evidence_density": 82.7,
+          "claim_defensibility": 87.2,
+          "redundancy": 90.0,
+          "n_paragraphs": 50,
+          "usefulness_substantive": 76.4,
+          "usefulness_connective": 1,
+          "usefulness_total": 47
+        },
+        "08": {
+          "humanness": 88.0,
+          "voice": 90.0,
+          "usefulness": 84.8,
+          "evidence_density": 73.8,
+          "claim_defensibility": 87.8,
+          "redundancy": 85.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 86.2,
+          "usefulness_connective": 1,
+          "usefulness_total": 43
+        },
+        "09": {
+          "humanness": 88.2,
+          "voice": 85.0,
+          "usefulness": 82.6,
+          "evidence_density": 78.3,
+          "claim_defensibility": 91.5,
+          "redundancy": 85.0,
+          "n_paragraphs": 49,
+          "usefulness_substantive": 82.3,
+          "usefulness_connective": 5,
+          "usefulness_total": 41
+        },
+        "10": {
+          "humanness": 88.8,
+          "voice": 90.0,
+          "usefulness": 78.8,
+          "evidence_density": 85.0,
+          "claim_defensibility": 90.0,
           "redundancy": 40.0,
           "n_paragraphs": 12,
           "usefulness_substantive": 78.8,
