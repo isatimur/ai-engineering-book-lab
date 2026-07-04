@@ -100,25 +100,58 @@ def resolve_source_text(args) -> str:
 
 
 def make_synth(engine: str, voice: str | None, model: str | None, cache_dir: Path):
-    """Return a (text -> cached WAV Path) callable bound to the chosen engine,
-    voice, model, and cache dir. Fails fast if the engine's key is missing."""
+    """Return a chunk synth callable bound to the chosen engine, voice, model,
+    and cache dir. Fails fast if the engine's key is missing."""
     if engine == "elevenlabs":
         from audiobook_gen import eleven
+        from audiobook_gen.eleven_prepare import context_snippet, prepare_chunk_text
+
         api_key = os.environ.get("ELEVEN_API_KEY") or os.environ.get("ELEVENLABS_API_KEY")
         if not api_key:
             raise SystemExit("ELEVEN_API_KEY not set (or ELEVENLABS_API_KEY).")
         v = voice or eleven.DEFAULT_VOICE
         m = model or eleven.DEFAULT_MODEL
-        return lambda text: eleven.synthesize(text, v, cache_dir, model=m, api_key=api_key)
+
+        def synth(
+            text: str,
+            *,
+            previous_text: str | None = None,
+            next_text: str | None = None,
+            segment_start: bool = False,
+        ):
+            prepared = prepare_chunk_text(text, segment_start=segment_start)
+            prev = context_snippet(
+                prepare_chunk_text(previous_text) if previous_text else None,
+                from_end=True,
+            )
+            nxt = context_snippet(
+                prepare_chunk_text(next_text) if next_text else None,
+                from_end=False,
+            )
+            return eleven.synthesize(
+                prepared,
+                v,
+                cache_dir,
+                model=m,
+                api_key=api_key,
+                previous_text=prev,
+                next_text=nxt,
+            )
+
+        return synth
 
     from audiobook_gen import tts
     if not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("OPENAI_API_KEY not set.")
     v = voice or tts.DEFAULT_VOICE
     m = model or tts.DEFAULT_MODEL
-    return lambda text: tts.synthesize(
-        text, v, cache_dir, instructions=tts.DEFAULT_INSTRUCTIONS, model=m
-    )
+
+    def synth(text: str, **_kwargs):
+        return tts.synthesize(
+            text, v, cache_dir, instructions=tts.DEFAULT_INSTRUCTIONS, model=m
+        )
+
+    return synth
 
 
 def run_dry(args):

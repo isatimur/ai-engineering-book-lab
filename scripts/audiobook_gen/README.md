@@ -67,6 +67,20 @@ python3 -m audiobook_gen --source /path/to/combined.md --dry-run
 defaults per engine (onyx / Oliver). ElevenLabs is metered per character (~171k
 for this book); a full render fits inside a Creator-tier monthly quota.
 
+### Eleven v3 best practices
+
+When `--engine elevenlabs` is used, the pipeline applies [Eleven v3 prompting
+guidance](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#prompting-eleven-v3):
+
+- **Oliver** voice with `eleven_v3` and **Natural** stability (0.5) for subtle tag response
+- **`[professional]`** delivery tag on the first chunk of each chapter/credits segment
+- **`apply_text_normalization: on`** and **`language_code: en`** for numbers, dates, abbreviations
+- **`previous_text` / `next_text`** across chunks for continuity when stitching long chapters
+- Local expansions for tech acronyms (API → A P I, LLM → L L M) and URLs before synthesis
+- Paragraph breaks preserved (v3 does not support SSML `<break>` — pacing uses structure + assembly silences)
+
+Re-rendering after changing prep logic invalidates the per-chunk cache automatically.
+
 Outputs:
 - `dist/audiobook/marketplace/NN-*.mp3`, `acx-upload.zip`, `QA-REPORT.md`
 - `dist/audiobook/personal/ai-engineering.m4b`

@@ -3,6 +3,9 @@
 Mirrors the tts.synthesize contract (text -> cached 44.1 kHz mono WAV Path) so
 render_chapter can drive either engine. ElevenLabs returns mp3, which we decode
 to WAV via ffmpeg to keep the assembly pipeline format-uniform.
+
+Eleven v3 defaults follow:
+https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#prompting-eleven-v3
 """
 from __future__ import annotations
 
@@ -19,30 +22,94 @@ API_ROOT = "https://api.elevenlabs.io/v1/text-to-speech"
 DEFAULT_MODEL = "eleven_v3"
 DEFAULT_VOICE = "L1aJrPa7pLJEyYlh3Ilq"  # Oliver — clean, British, steady
 VOICE_LABEL = "Oliver"
+LANGUAGE_CODE = "en"
 OUTPUT_FORMAT = "mp3_44100_128"         # available on Creator tier
+# Natural (0.5): responsive to subtle v3 tags; use Robust (0.75) for tag-free steadiness.
 DEFAULT_SETTINGS = {
-    "stability": 0.75,
+    "stability": 0.5,
     "similarity_boost": 0.75,
     "style": 0.0,
     "use_speaker_boost": True,
 }
+V3_REQUEST_OPTS = {
+    "apply_text_normalization": "on",
+    "language_code": LANGUAGE_CODE,
+}
 
 
-def cache_key(text: str, voice: str, model: str, settings: dict) -> str:
+def cache_key(
+    text: str,
+    voice: str,
+    model: str,
+    settings: dict,
+    *,
+    previous_text: str | None = None,
+    next_text: str | None = None,
+    request_opts: dict | None = None,
+) -> str:
     h = hashlib.sha256()
+    opts = request_opts or V3_REQUEST_OPTS
     payload = "\x1f".join(
-        ["elevenlabs", model, voice, json.dumps(settings, sort_keys=True), text]
+        [
+            "elevenlabs",
+            model,
+            voice,
+            json.dumps(settings, sort_keys=True),
+            json.dumps(opts, sort_keys=True),
+            previous_text or "",
+            next_text or "",
+            text,
+        ]
     )
     h.update(payload.encode("utf-8"))
     return h.hexdigest()
 
 
-def build_request(text: str, voice: str, model: str, settings: dict, api_key: str):
+def build_body(
+    text: str,
+    model: str,
+    settings: dict,
+    *,
+    previous_text: str | None = None,
+    next_text: str | None = None,
+    request_opts: dict | None = None,
+) -> dict:
+    body = {
+        "text": text,
+        "model_id": model,
+        "voice_settings": settings,
+        **(request_opts or V3_REQUEST_OPTS),
+    }
+    if previous_text:
+        body["previous_text"] = previous_text
+    if next_text:
+        body["next_text"] = next_text
+    return body
+
+
+def build_request(
+    text: str,
+    voice: str,
+    model: str,
+    settings: dict,
+    api_key: str,
+    *,
+    previous_text: str | None = None,
+    next_text: str | None = None,
+    request_opts: dict | None = None,
+):
     url = f"{API_ROOT}/{voice}?output_format={OUTPUT_FORMAT}"
-    body = json.dumps({"text": text, "model_id": model, "voice_settings": settings})
+    body = build_body(
+        text,
+        model,
+        settings,
+        previous_text=previous_text,
+        next_text=next_text,
+        request_opts=request_opts,
+    )
     return urllib.request.Request(
         url,
-        data=body.encode("utf-8"),
+        data=json.dumps(body).encode("utf-8"),
         method="POST",
         headers={
             "xi-api-key": api_key,
@@ -52,12 +119,29 @@ def build_request(text: str, voice: str, model: str, settings: dict, api_key: st
     )
 
 
-def build_timestamps_request(text: str, voice: str, model: str, settings: dict, api_key: str):
+def build_timestamps_request(
+    text: str,
+    voice: str,
+    model: str,
+    settings: dict,
+    api_key: str,
+    *,
+    previous_text: str | None = None,
+    next_text: str | None = None,
+    request_opts: dict | None = None,
+):
     url = f"{API_ROOT}/{voice}/with-timestamps?output_format={OUTPUT_FORMAT}"
-    body = json.dumps({"text": text, "model_id": model, "voice_settings": settings})
+    body = build_body(
+        text,
+        model,
+        settings,
+        previous_text=previous_text,
+        next_text=next_text,
+        request_opts=request_opts,
+    )
     return urllib.request.Request(
         url,
-        data=body.encode("utf-8"),
+        data=json.dumps(body).encode("utf-8"),
         method="POST",
         headers={
             "xi-api-key": api_key,
@@ -85,18 +169,33 @@ def synthesize(
     model: str = DEFAULT_MODEL,
     api_key: str,
     settings: dict | None = None,
+    previous_text: str | None = None,
+    next_text: str | None = None,
+    request_opts: dict | None = None,
     max_retries: int = 4,
     post=None,
 ) -> Path:
     settings = settings or DEFAULT_SETTINGS
+    request_opts = request_opts or V3_REQUEST_OPTS
     post = post or _default_post
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
-    out = cache_dir / f"{cache_key(text, voice, model, settings)}.wav"
+    out = cache_dir / (
+        f"{cache_key(text, voice, model, settings, previous_text=previous_text, next_text=next_text, request_opts=request_opts)}.wav"
+    )
     if out.exists() and out.stat().st_size > 0:
         return out
 
-    req = build_request(text, voice, model, settings, api_key)
+    req = build_request(
+        text,
+        voice,
+        model,
+        settings,
+        api_key,
+        previous_text=previous_text,
+        next_text=next_text,
+        request_opts=request_opts,
+    )
     last_err = None
     for attempt in range(max_retries):
         try:
@@ -136,6 +235,9 @@ def synthesize_with_timestamps(
     model: str = DEFAULT_MODEL,
     api_key: str,
     settings: dict | None = None,
+    previous_text: str | None = None,
+    next_text: str | None = None,
+    request_opts: dict | None = None,
     max_retries: int = 4,
     post=None,
 ) -> tuple[Path, dict]:
@@ -145,17 +247,35 @@ def synthesize_with_timestamps(
     from audiobook_gen.alignment import chars_to_words
 
     settings = settings or DEFAULT_SETTINGS
+    request_opts = request_opts or V3_REQUEST_OPTS
     post = post or _default_post_json
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
-    stem = cache_key(text, voice, model, settings)
+    stem = cache_key(
+        text,
+        voice,
+        model,
+        settings,
+        previous_text=previous_text,
+        next_text=next_text,
+        request_opts=request_opts,
+    )
     out = cache_dir / f"{stem}.wav"
     align_path = cache_dir / f"{stem}.align.json"
 
     if out.exists() and align_path.exists():
         return out, json.loads(align_path.read_text(encoding="utf-8"))
 
-    req = build_timestamps_request(text, voice, model, settings, api_key)
+    req = build_timestamps_request(
+        text,
+        voice,
+        model,
+        settings,
+        api_key,
+        previous_text=previous_text,
+        next_text=next_text,
+        request_opts=request_opts,
+    )
     last_err = None
     for attempt in range(max_retries):
         try:
