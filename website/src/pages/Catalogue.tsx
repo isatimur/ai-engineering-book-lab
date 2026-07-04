@@ -9,6 +9,7 @@ import { bookJsonLd } from '../lib/structuredData';
 import { BOOK } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
 import { ExploreMenu, MobileNavMenu } from '../components/nav/ExploreMenu';
+import { AskAI } from '../components/AskAI';
 
 export const Catalogue = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -239,6 +240,8 @@ export const Catalogue = () => {
             ))}
           </div>
         </div>
+
+        <AskAI variant="dark" />
       </footer>
 
       <div className="fixed bottom-8 right-6 text-white/40 rotate-180 mix-blend-difference z-0" style={{ writingMode: 'vertical-rl' }}>

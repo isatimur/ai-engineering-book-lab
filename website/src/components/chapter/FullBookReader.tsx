@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { chapters, type BookChapter } from '../../data/bookChapters';
+import { AskAI } from '../AskAI';
 import { opener } from '../../lib/manifest';
 import { LightboxProvider, useLightbox } from '../../lib/lightbox';
 import { DynamicVisuals } from './DynamicVisuals';
@@ -215,6 +216,9 @@ export const FullBookReader = () => {
         {chapters.map((chapter, index) => (
           <ChapterReaderItem key={chapter.number} chapter={chapter} index={index} />
         ))}
+        <div className="w-full max-w-3xl mx-auto px-6 md:px-12 pb-12">
+          <AskAI variant="light" />
+        </div>
       </section>
     </LightboxProvider>
   );
