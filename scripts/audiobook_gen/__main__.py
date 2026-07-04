@@ -36,7 +36,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--engine", default="openai", choices=["openai", "elevenlabs"],
                    help="TTS backend (default: openai)")
     p.add_argument("--voice", default=None,
-                   help="Voice id/name; defaults per engine (openai: onyx, elevenlabs: Brian)")
+                   help="Voice id/name; defaults per engine (openai: onyx, elevenlabs: Oliver)")
     p.add_argument("--model", default=None, help="Override TTS model id for the engine")
     p.add_argument("--title", default="From Copilot to Colleague", help="Book title for credits/m4b")
     p.add_argument("--author", default="Timur Isachenko", help="Author name for credits")

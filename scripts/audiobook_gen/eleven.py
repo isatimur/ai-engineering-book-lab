@@ -16,11 +16,12 @@ from pathlib import Path
 from audiobook_gen import ffmpeg_ops as ff
 
 API_ROOT = "https://api.elevenlabs.io/v1/text-to-speech"
-DEFAULT_MODEL = "eleven_multilingual_v2"
-DEFAULT_VOICE = "nPczCjzI2devNBz1zQrb"  # Brian — deep, resonant, comforting
+DEFAULT_MODEL = "eleven_v3"
+DEFAULT_VOICE = "L1aJrPa7pLJEyYlh3Ilq"  # Oliver — clean, British, steady
+VOICE_LABEL = "Oliver"
 OUTPUT_FORMAT = "mp3_44100_128"         # available on Creator tier
 DEFAULT_SETTINGS = {
-    "stability": 0.5,
+    "stability": 0.75,
     "similarity_boost": 0.75,
     "style": 0.0,
     "use_speaker_boost": True,

@@ -64,7 +64,7 @@ python3 -m audiobook_gen --source /path/to/combined.md --dry-run
 ```
 
 `--engine` selects the TTS backend (`openai` default, or `elevenlabs`). Voice
-defaults per engine (onyx / Brian). ElevenLabs is metered per character (~171k
+defaults per engine (onyx / Oliver). ElevenLabs is metered per character (~171k
 for this book); a full render fits inside a Creator-tier monthly quota.
 
 Outputs:

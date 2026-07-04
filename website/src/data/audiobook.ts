@@ -24,7 +24,7 @@ export const AUDIOBOOK: AudiobookTrack[] = [
 
 export const PLAYBACK_SPEEDS = [1, 1.25, 1.5, 1.75, 2] as const;
 
-export const NARRATION_CREDIT = 'AI narration · OpenAI (onyx)';
+export const NARRATION_CREDIT = 'AI narration · ElevenLabs (Oliver)';
 
 export const TOTAL_SECONDS = AUDIOBOOK.reduce((s, t) => s + t.approxSeconds, 0);
 
