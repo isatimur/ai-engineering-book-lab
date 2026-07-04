@@ -11,7 +11,7 @@ const ASSISTANTS = [
   },
   {
     label: 'ChatGPT',
-    href: `https://chatgpt.com/?q=${encodeURIComponent(PROMPT)}&hints=search`,
+    href: `https://chatgpt.com/?q=${encodeURIComponent(PROMPT)}`,
   },
   {
     label: 'Perplexity',
