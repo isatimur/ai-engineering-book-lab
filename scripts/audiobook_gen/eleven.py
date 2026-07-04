@@ -51,9 +51,29 @@ def build_request(text: str, voice: str, model: str, settings: dict, api_key: st
     )
 
 
+def build_timestamps_request(text: str, voice: str, model: str, settings: dict, api_key: str):
+    url = f"{API_ROOT}/{voice}/with-timestamps?output_format={OUTPUT_FORMAT}"
+    body = json.dumps({"text": text, "model_id": model, "voice_settings": settings})
+    return urllib.request.Request(
+        url,
+        data=body.encode("utf-8"),
+        method="POST",
+        headers={
+            "xi-api-key": api_key,
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+    )
+
+
 def _default_post(req) -> bytes:
     with urllib.request.urlopen(req, timeout=120) as resp:
         return resp.read()
+
+
+def _default_post_json(req) -> dict:
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        return json.loads(resp.read().decode("utf-8"))
 
 
 def synthesize(
@@ -105,3 +125,74 @@ def synthesize(
         return out
 
     raise RuntimeError(f"ElevenLabs TTS failed after {max_retries} attempts: {last_err}")
+
+
+def synthesize_with_timestamps(
+    text: str,
+    voice: str,
+    cache_dir: Path,
+    *,
+    model: str = DEFAULT_MODEL,
+    api_key: str,
+    settings: dict | None = None,
+    max_retries: int = 4,
+    post=None,
+) -> tuple[Path, dict]:
+    """Return (cached WAV path, alignment dict with character timings)."""
+    import base64
+
+    from audiobook_gen.alignment import chars_to_words
+
+    settings = settings or DEFAULT_SETTINGS
+    post = post or _default_post_json
+    cache_dir = Path(cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    stem = cache_key(text, voice, model, settings)
+    out = cache_dir / f"{stem}.wav"
+    align_path = cache_dir / f"{stem}.align.json"
+
+    if out.exists() and align_path.exists():
+        return out, json.loads(align_path.read_text(encoding="utf-8"))
+
+    req = build_timestamps_request(text, voice, model, settings, api_key)
+    last_err = None
+    for attempt in range(max_retries):
+        try:
+            payload = post(req)
+            if isinstance(payload, (bytes, bytearray)):
+                payload = json.loads(payload.decode("utf-8"))
+        except urllib.error.HTTPError as err:
+            detail = ""
+            try:
+                detail = err.read().decode("utf-8", "replace")[:500]
+            except Exception:  # noqa: BLE001
+                pass
+            if 400 <= err.code < 500 and err.code != 429:
+                raise RuntimeError(f"ElevenLabs {err.code}: {detail}") from err
+            last_err = RuntimeError(f"ElevenLabs {err.code}: {detail}")
+            time.sleep(2 ** attempt)
+            continue
+        except Exception as err:  # noqa: BLE001
+            last_err = err
+            time.sleep(2 ** attempt)
+            continue
+
+        audio_b64 = payload.get("audio_base64") or ""
+        alignment = payload.get("normalized_alignment") or payload.get("alignment") or {}
+        tmp = out.with_suffix(".mp3")
+        tmp.write_bytes(base64.b64decode(audio_b64))
+        ff.to_wav(tmp, out)
+        tmp.unlink(missing_ok=True)
+
+        chars = alignment.get("characters") or []
+        starts = alignment.get("character_start_times_seconds") or []
+        ends = alignment.get("character_end_times_seconds") or []
+        words = chars_to_words(chars, starts, ends)
+        align_doc = {
+            "words": [{"text": w.text, "start": w.start, "end": w.end} for w in words],
+            "characters": alignment,
+        }
+        align_path.write_text(json.dumps(align_doc), encoding="utf-8")
+        return out, align_doc
+
+    raise RuntimeError(f"ElevenLabs timestamps failed after {max_retries} attempts: {last_err}")

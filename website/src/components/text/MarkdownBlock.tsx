@@ -1,14 +1,39 @@
 import { InlineText } from './InlineText';
+import { ListenWordRun } from './ListenWordRun';
 
-export const MarkdownBlock = ({ block }: { block: string }) => {
-  if (block.startsWith('# ')) return <h1>{block.replace(/^#\s+/, '')}</h1>;
-  if (block.startsWith('## ')) return <h2>{block.replace(/^##\s+/, '')}</h2>;
-  if (block.startsWith('### ')) return <h3>{block.replace(/^###\s+/, '')}</h3>;
+type Props = {
+  block: string;
+  chapterNumber?: string;
+  listen?: boolean;
+};
+
+export const MarkdownBlock = ({ block, listen = false }: Props) => {
+  if (block.startsWith('# ')) {
+    return (
+      <h1>
+        <ListenWordRun text={block.replace(/^#\s+/, '')} listen={listen} />
+      </h1>
+    );
+  }
+  if (block.startsWith('## ')) {
+    return (
+      <h2>
+        <ListenWordRun text={block.replace(/^##\s+/, '')} listen={listen} />
+      </h2>
+    );
+  }
+  if (block.startsWith('### ')) {
+    return (
+      <h3>
+        <ListenWordRun text={block.replace(/^###\s+/, '')} listen={listen} />
+      </h3>
+    );
+  }
 
   if (block.startsWith('> ')) {
     return (
       <blockquote>
-        <InlineText text={block.replace(/^>\s?/gm, '')} />
+        <InlineText text={block.replace(/^>\s?/gm, '')} listen={listen} />
       </blockquote>
     );
   }
@@ -17,7 +42,7 @@ export const MarkdownBlock = ({ block }: { block: string }) => {
       <ul>
         {block.split('\n').map((item) => (
           <li key={item}>
-            <InlineText text={item.replace(/^-\s+/, '')} />
+            <InlineText text={item.replace(/^-\s+/, '')} listen={listen} />
           </li>
         ))}
       </ul>
@@ -28,7 +53,7 @@ export const MarkdownBlock = ({ block }: { block: string }) => {
       <ol>
         {block.split('\n').map((item) => (
           <li key={item}>
-            <InlineText text={item.replace(/^\d+\.\s+/, '')} />
+            <InlineText text={item.replace(/^\d+\.\s+/, '')} listen={listen} />
           </li>
         ))}
       </ol>
@@ -36,7 +61,7 @@ export const MarkdownBlock = ({ block }: { block: string }) => {
   }
   return (
     <p>
-      <InlineText text={block.replace(/\n/g, ' ')} />
+      <InlineText text={block.replace(/\n/g, ' ')} listen={listen} />
     </p>
   );
 };

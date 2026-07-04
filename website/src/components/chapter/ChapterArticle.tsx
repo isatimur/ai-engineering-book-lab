@@ -5,8 +5,11 @@ import { InlineIllustration } from './InlineIllustration';
 import { ExpandableSummary } from './ExpandableSummary';
 import { EvidenceClaimMarkers } from '../evidence/EvidenceClaimMarkers';
 import { inlineFigsForChapter } from '../../lib/manifest';
+import { useListenWords } from '../../context/ListenHighlightContext';
 
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
+  const { listenChapter } = useListenWords();
+  const listen = listenChapter === chapter.number;
   const blocks = chapter.content
     .split(/\n{2,}/)
     .map((b) => b.trim())
@@ -37,7 +40,7 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
         return (
           <React.Fragment key={`${chapter.number}-${index}`}>
             {fig ? <span data-figure-anchor={fig.index} aria-hidden /> : null}
-            <MarkdownBlock block={block} />
+            <MarkdownBlock block={block} chapterNumber={chapter.number} listen={listen} />
             {fig ? (
               <InlineIllustration
                 fig={fig}
