@@ -47,10 +47,10 @@ python3 -m audiobook_gen \
   --title "From Copilot to Colleague" --author "Timur Isachenko" \
   --out ../dist/audiobook
 
-# full render — ElevenLabs (voice Brian, deep/onyx-like)
+# full render — ElevenLabs (Oliver — clean, British, steady; Eleven v3)
 export ELEVEN_API_KEY=...
 python3 -m audiobook_gen \
-  --engine elevenlabs --voice nPczCjzI2devNBz1zQrb \
+  --engine elevenlabs --voice L1aJrPa7pLJEyYlh3Ilq \
   --title "From Copilot to Colleague" --author "Timur Isachenko" \
   --out ../dist/audiobook
 
