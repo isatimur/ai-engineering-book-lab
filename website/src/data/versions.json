@@ -3,8 +3,19 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:3e42e30",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 2051,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-91275aa.md"
+        },
         {
           "version_id": "git:3e42e30",
           "source": "git",
@@ -50,17 +61,6 @@
           "content_ref": "01/git-96210fb.md"
         },
         {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 1512,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-ef6219d.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -74,8 +74,19 @@
       ]
     },
     "02": {
-      "current_version_id": "git:203912f",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 2876,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-91275aa.md"
+        },
         {
           "version_id": "git:203912f",
           "source": "git",
@@ -121,17 +132,6 @@
           "content_ref": "02/git-ef6219d.md"
         },
         {
-          "version_id": "git:68ad925",
-          "source": "git",
-          "ref": "68ad925977ecae5c92dc8908a1276d6bb907a81f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 1594,
-          "message": "edit(ch2): credit Ronacher for the friction-is-judgment thesis",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-68ad925.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -145,8 +145,19 @@
       ]
     },
     "03": {
-      "current_version_id": "git:d3e0d43",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 4788,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-91275aa.md"
+        },
         {
           "version_id": "git:d3e0d43",
           "source": "git",
@@ -192,17 +203,6 @@
           "content_ref": "03/git-203912f.md"
         },
         {
-          "version_id": "git:869bdb6",
-          "source": "git",
-          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
-          "date": "2026-06-04",
-          "status": "Drafting",
-          "wordCount": 3227,
-          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-869bdb6.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -216,8 +216,19 @@
       ]
     },
     "04": {
-      "current_version_id": "git:869bdb6",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 2990,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-91275aa.md"
+        },
         {
           "version_id": "git:869bdb6",
           "source": "git",
@@ -276,8 +287,19 @@
       ]
     },
     "05": {
-      "current_version_id": "git:072be58",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 4875,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-91275aa.md"
+        },
         {
           "version_id": "git:072be58",
           "source": "git",
@@ -323,17 +345,6 @@
           "content_ref": "05/git-bd6e176.md"
         },
         {
-          "version_id": "git:f798182",
-          "source": "git",
-          "ref": "f7981822b784c13b4ef89d047f32a3ca0450f15b",
-          "date": "2026-05-28",
-          "status": "Drafting",
-          "wordCount": 2992,
-          "message": "draft(ch5): Context Is Infrastructure — Starter → Drafting",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-f798182.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -347,8 +358,19 @@
       ]
     },
     "06": {
-      "current_version_id": "git:d3e0d43",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 2673,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-91275aa.md"
+        },
         {
           "version_id": "git:d3e0d43",
           "source": "git",
@@ -394,17 +416,6 @@
           "content_ref": "06/git-ef6219d.md"
         },
         {
-          "version_id": "git:f4fb29f",
-          "source": "git",
-          "ref": "f4fb29fa7f892cfb74edd0f455ae6dfa14bacd0b",
-          "date": "2026-06-01",
-          "status": "Drafting",
-          "wordCount": 1790,
-          "message": "draft(ch4,6): expand the two thin chapters to full Drafting depth",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-f4fb29f.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -418,8 +429,19 @@
       ]
     },
     "07": {
-      "current_version_id": "git:f536564",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 3617,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-91275aa.md"
+        },
         {
           "version_id": "git:f536564",
           "source": "git",
@@ -465,17 +487,6 @@
           "content_ref": "07/git-ef6219d.md"
         },
         {
-          "version_id": "git:85f3c2a",
-          "source": "git",
-          "ref": "85f3c2a4ea2554399a3d61704c6fc6d567c6e574",
-          "date": "2026-05-31",
-          "status": "Drafting",
-          "wordCount": 3133,
-          "message": "draft(ch7): Security, Identity, High-Stakes Trust — Starter → Drafting",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-85f3c2a.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -489,8 +500,19 @@
       ]
     },
     "08": {
-      "current_version_id": "git:f536564",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 5613,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-91275aa.md"
+        },
         {
           "version_id": "git:f536564",
           "source": "git",
@@ -536,17 +558,6 @@
           "content_ref": "08/git-ed15457.md"
         },
         {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 3021,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "08/git-ef6219d.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -560,8 +571,19 @@
       ]
     },
     "09": {
-      "current_version_id": "git:4f5dd39",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 5085,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-91275aa.md"
+        },
         {
           "version_id": "git:4f5dd39",
           "source": "git",
@@ -607,17 +629,6 @@
           "content_ref": "09/git-f536564.md"
         },
         {
-          "version_id": "git:869bdb6",
-          "source": "git",
-          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
-          "date": "2026-06-04",
-          "status": "Drafting",
-          "wordCount": 3247,
-          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-869bdb6.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -631,8 +642,19 @@
       ]
     },
     "10": {
-      "current_version_id": "git:96210fb",
+      "current_version_id": "git:91275aa",
       "versions": [
+        {
+          "version_id": "git:91275aa",
+          "source": "git",
+          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
+          "date": "2026-07-03",
+          "status": "Drafting",
+          "wordCount": 2175,
+          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-91275aa.md"
+        },
         {
           "version_id": "git:96210fb",
           "source": "git",

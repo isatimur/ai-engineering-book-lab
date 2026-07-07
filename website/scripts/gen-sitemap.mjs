@@ -53,6 +53,7 @@ push('/visual-guide', repoDate, '0.8', 'weekly');
 push('/read', repoDate, '0.8', 'weekly');
 push('/read/graph', gitDate('src/evidence.json'), '0.7', 'weekly');
 push('/evidence', gitDate('src/data/stats.json'), '0.8', 'weekly');
+push('/whitepapers/ai-native-org.html', gitDate('public/whitepapers/ai-native-org.html'), '0.8', 'monthly');
 const ledgerFiles = readdirSync(resolve(websiteRoot, 'src/data/ledgers')).filter((f) => f.endsWith('.json'));
 const ledgerLastmod = ledgerFiles.length
   ? gitDate(`src/data/ledgers/${ledgerFiles.sort().at(-1)}`)

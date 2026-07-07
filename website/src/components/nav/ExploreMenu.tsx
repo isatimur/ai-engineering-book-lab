@@ -18,6 +18,12 @@ export const EXPLORE_ITEMS: ExploreItem[] = [
   { href: '/search', label: 'Search', description: 'Cross-chapter + glossary' },
   { href: '/versions', label: 'Versions', description: 'Git diffs per chapter' },
   { href: '/quality', label: 'Quality', description: 'MASH judge scorecards' },
+  {
+    href: '/whitepapers/ai-native-org.html',
+    label: 'AI-Native Org whitepaper',
+    external: true,
+    description: 'The operating model, applied — HTML + PDF',
+  },
 ];
 
 type Props = {
