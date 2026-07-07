@@ -1,0 +1,43 @@
+{
+  "type": "excalidraw-skeleton",
+  "elements": [
+    { "type": "rectangle", "id": "machine", "x": 40, "y": 120, "width": 720, "height": 560, "strokeColor": "#64748b", "backgroundColor": "transparent", "strokeStyle": "dashed", "strokeWidth": 1, "roughness": 0 },
+    { "type": "text", "id": "machine_lbl", "x": 60, "y": 140, "text": "THE MACHINE (laptop · org state in git)", "fontSize": 16, "strokeColor": "#94a3b8" },
+
+    { "type": "rectangle", "id": "agent1", "x": 90, "y": 540, "width": 180, "height": 70, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "client agent", "fontSize": 16 } },
+    { "type": "rectangle", "id": "agent2", "x": 300, "y": 540, "width": 180, "height": 70, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "cron workflow", "fontSize": 16 } },
+    { "type": "rectangle", "id": "agent3", "x": 510, "y": 540, "width": 180, "height": 70, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "internal agent", "fontSize": 16 } },
+
+    { "type": "rectangle", "id": "sentinel", "x": 240, "y": 330, "width": 320, "height": 110, "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "SENTINEL\ndaily digest · audited registry N\nheartbeats per workflow", "fontSize": 17 } },
+
+    { "type": "arrow", "id": "w1", "x": 300, "y": 440, "width": -100, "height": 100, "strokeColor": "#6d28d9", "strokeStyle": "dashed", "strokeWidth": 2, "roughness": 0, "start": { "id": "sentinel" }, "end": { "id": "agent1" } },
+    { "type": "arrow", "id": "w2", "x": 395, "y": 440, "width": 0, "height": 100, "strokeColor": "#6d28d9", "strokeStyle": "dashed", "strokeWidth": 2, "roughness": 0, "start": { "id": "sentinel" }, "end": { "id": "agent2" }, "label": { "text": "watches every run", "fontSize": 16 } },
+    { "type": "arrow", "id": "w3", "x": 500, "y": 440, "width": 100, "height": 100, "strokeColor": "#6d28d9", "strokeStyle": "dashed", "strokeWidth": 2, "roughness": 0, "start": { "id": "sentinel" }, "end": { "id": "agent3" } },
+
+    { "type": "text", "id": "q1", "x": 90, "y": 200, "text": "who watches the agents? → the sentinel", "fontSize": 16, "strokeColor": "#64748b" },
+    { "type": "text", "id": "q2", "x": 90, "y": 250, "text": "who watches the sentinel? → something OFF the machine", "fontSize": 16, "strokeColor": "#1e40af" },
+
+    { "type": "ellipse", "id": "deadman", "x": 880, "y": 320, "width": 260, "height": 120, "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "DEAD-MAN'S SWITCH\nexternal service", "fontSize": 17 } },
+    { "type": "arrow", "id": "ping", "x": 560, "y": 375, "width": 320, "height": 0, "strokeColor": "#047857", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "sentinel" }, "end": { "id": "deadman" }, "label": { "text": "ping on every digest", "fontSize": 16 } },
+
+    { "type": "rectangle", "id": "phone", "x": 920, "y": 120, "width": 180, "height": 70, "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "operator's phone", "fontSize": 16 } },
+    { "type": "arrow", "id": "page", "x": 1010, "y": 320, "width": 0, "height": -130, "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "deadman" }, "end": { "id": "phone" }, "label": { "text": "missed ping → page", "fontSize": 16 } },
+
+    { "type": "rectangle", "id": "safemode", "x": 850, "y": 540, "width": 330, "height": 110, "strokeColor": "#b91c1c", "backgroundColor": "#fecaca", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "AUTO-SAFE-MODE\nred unacked > 12h:\nlevel-3 agents → draft-only\nholding message → clients", "fontSize": 16 } },
+    { "type": "arrow", "id": "safearrow", "x": 850, "y": 570, "width": -140, "height": 0, "strokeColor": "#b91c1c", "strokeStyle": "dashed", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "safemode" }, "end": { "id": "agent3" }, "label": { "text": "demote", "fontSize": 16 } },
+    { "type": "arrow", "id": "safetrigger", "x": 1010, "y": 440, "width": 0, "height": 100, "strokeColor": "#b91c1c", "strokeStyle": "dashed", "strokeWidth": 1, "roughness": 0,
+      "start": { "id": "deadman" }, "end": { "id": "safemode" }, "label": { "text": "human missing", "fontSize": 16 } },
+
+    { "type": "text", "id": "moral", "x": 90, "y": 720, "text": "No unwatched node: agents ← sentinel ← external switch ← phone.\nThe recovery path for \"the human is missing\" never routes through the missing human.", "fontSize": 16, "strokeColor": "#64748b" }
+  ]
+}

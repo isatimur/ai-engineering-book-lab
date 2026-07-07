@@ -10,21 +10,21 @@ export type AudiobookTrack = {
 };
 
 export const AUDIOBOOK: AudiobookTrack[] = [
-  { number: '01', src: '/audiobook/ch-01.mp3', approxSeconds: 991 },
-  { number: '02', src: '/audiobook/ch-02.mp3', approxSeconds: 1152 },
-  { number: '03', src: '/audiobook/ch-03.mp3', approxSeconds: 1097 },
-  { number: '04', src: '/audiobook/ch-04.mp3', approxSeconds: 1257 },
-  { number: '05', src: '/audiobook/ch-05.mp3', approxSeconds: 1138 },
-  { number: '06', src: '/audiobook/ch-06.mp3', approxSeconds: 1399 },
-  { number: '07', src: '/audiobook/ch-07.mp3', approxSeconds: 1091 },
-  { number: '08', src: '/audiobook/ch-08.mp3', approxSeconds: 1010 },
-  { number: '09', src: '/audiobook/ch-09.mp3', approxSeconds: 1037 },
-  { number: '10', src: '/audiobook/ch-10.mp3', approxSeconds: 700 },
+  { number: '01', src: '/audiobook/ch-01.mp3', approxSeconds: 714 },
+  { number: '02', src: '/audiobook/ch-02.mp3', approxSeconds: 944 },
+  { number: '03', src: '/audiobook/ch-03.mp3', approxSeconds: 1693 },
+  { number: '04', src: '/audiobook/ch-04.mp3', approxSeconds: 989 },
+  { number: '05', src: '/audiobook/ch-05.mp3', approxSeconds: 1696 },
+  { number: '06', src: '/audiobook/ch-06.mp3', approxSeconds: 930 },
+  { number: '07', src: '/audiobook/ch-07.mp3', approxSeconds: 1313 },
+  { number: '08', src: '/audiobook/ch-08.mp3', approxSeconds: 1941 },
+  { number: '09', src: '/audiobook/ch-09.mp3', approxSeconds: 1753 },
+  { number: '10', src: '/audiobook/ch-10.mp3', approxSeconds: 729 },
 ];
 
 export const PLAYBACK_SPEEDS = [1, 1.25, 1.5, 1.75, 2] as const;
 
-export const NARRATION_CREDIT = 'AI narration · ElevenLabs (Brian)';
+export const NARRATION_CREDIT = 'AI narration · OpenAI (onyx)';
 
 export const TOTAL_SECONDS = AUDIOBOOK.reduce((s, t) => s + t.approxSeconds, 0);
 

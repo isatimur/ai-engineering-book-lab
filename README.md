@@ -11,6 +11,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-555.svg?style=for-the-badge)](LICENSE)
 &nbsp;
 [![Built with autoresearch](https://img.shields.io/badge/Method-autoresearch-c2410c?style=for-the-badge)](programs/book_autoresearch.md)
+&nbsp;
+[![Claims verified](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fisatimur%2Fai-engineering-book-lab%2Fmain%2F.ledger%2Fbadge.json)](https://fromcopilottocolleague.com/read/graph)
+&nbsp;
+[![claims-ledger](https://img.shields.io/badge/CI-claims--ledger-orange)](https://github.com/isatimur/claims-ledger)
 
 <sub>A book on AI engineering where **every claim links to the exact second of the talk it came from** — distilled from **794** practitioner talks, and graded by a **panel of three rival AI models** so no single model gets to flatter the prose.</sub>
 
@@ -65,7 +69,7 @@ A five-layer pipeline governed by a small **Research-Org** control plane:
 |---|---|---|
 | **Source** | Practitioner videos as the corpus of record | `01_Videos/` (notes) · channel metadata in `99_Meta/` |
 | **Synthesis** | Themes, people, concepts derived from the corpus | `02_Themes/` · `03_People/` · `04_Concepts/` · public versions in `public/` |
-| **Evidence** | Verified claims with anchored video timestamps | `claims/Claims Ledger.md` · `evidence/` · per-anchor JSON in `claims/anchors/` |
+| **Evidence** | Verified claims with anchored video timestamps | `claims/Claims Ledger.md` · `evidence/` · per-anchor JSON in `claims/anchors/` · [event ledgers](https://fromcopilottocolleague.com/ledgers) · [claims-ledger CI](https://github.com/isatimur/claims-ledger) |
 | **Manuscript** | Chapter drafts that draw on evidence, never inventing | `public/drafting/` · rendered in `website/src/content/chapter-*.md` |
 | **Control plane** | The agent instructions, research passes, autoresearch loop | `programs/` · `tasks/` · `research_passes/` |
 
@@ -77,7 +81,7 @@ Read the loop's instructions: [`programs/book_autoresearch.md`](programs/book_au
 
 ## What's genuinely novel here
 
-1. **Source Anchors as a discipline.** Every claim in the manuscript carries a `video_id` + start/end timestamp + verbatim quote. The website's Evidence Rail surfaces them under each chapter as clickable YouTube embeds. **No anchor, no claim.**
+1. **Source Anchors as a discipline.** Every claim in the manuscript carries a `video_id` + start/end timestamp + verbatim quote. The website's Evidence Rail surfaces them under each chapter as clickable YouTube embeds. **No anchor, no claim.** The same grammar now ships as open-source CI: [claims-ledger](https://github.com/isatimur/claims-ledger) · browse [event ledgers](https://fromcopilottocolleague.com/ledgers).
 2. **Quality is measured, not vibed — by a panel of rival models.** Every chapter is scored on six dimensions (humanness, voice, usefulness, evidence density, claim defensibility, redundancy) by a **cross-family LLM judge panel** — Meta Llama-3.3, Alibaba Qwen-2.5, and DeepSeek — and the **median** is the verdict. One model can't flatter prose shaped like its own output, and where the three disagree by more than 20 points, that cell is flagged as where to look. The live scorecard is at [/quality](https://fromcopilottocolleague.com/quality); the rationale is in [`docs/judge-panel-decision.md`](docs/judge-panel-decision.md).
 3. **The book is the proof, not the product.** The Method (the reproducible machine) is the actual artefact. The manuscript shows it works.
 4. **Method ships with the artefact.** Every agent instruction, every research pass log, every quality judge is in this repo — readable, criticisable, reproducible.
@@ -121,12 +125,30 @@ A full description of public vs internal layers lives in [`PUBLIC_REPO_PLAN.md`]
 
 ---
 
+## Infrastructure — claims-ledger
+
+The book's **Source Anchors** discipline ships as open-source CI tooling:
+
+| Tool | What it does | Link |
+|------|--------------|------|
+| **claims-ledger** | CLI + GitHub Action — every strong claim carries a verbatim quote anchor; CI exits 11 when stale | [github.com/isatimur/claims-ledger](https://github.com/isatimur/claims-ledger) |
+| **Event ledgers** | Standalone talk ledgers with `yt://` anchors (5 live samples) | [fromcopilottocolleague.com/ledgers](https://fromcopilottocolleague.com/ledgers) |
+| **Sandbox** | Fork-and-run template — zero local install | [claims-ledger-sandbox](https://github.com/isatimur/claims-ledger-sandbox/fork) |
+
+```bash
+npx @claims-ledger/edt init   # after npm publish — see claims-ledger docs/NPM-PUBLISH.md
+```
+
+This repo gates its own claims via the same grammar — see [`.ledger/claims.md`](.ledger/claims.md) and the live badge above.
+
+---
+
 ## Status (2026-06)
 
 Live counts are generated into [`STATS.md`](STATS.md) on every corpus change; the figures below are a snapshot.
 
 - **794 videos** ingested from the AI Engineer channel
-- **54 claims** anchored to video timestamps (44 strong, 10 moderate); **198 anchors**, 197 high-confidence
+- **54 claims** anchored to video timestamps (44 strong, 10 moderate); **199 anchors**, 198 high-confidence
 - **50 speaker profiles** and **19 concept pages** synthesized from the corpus
 - **10 chapters** — all at **Drafting** depth — render live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read)
 - **73 hand-built diagrams** (4 overview + 10 chapter openers + 18 concept + 38 inline + 3 maps)

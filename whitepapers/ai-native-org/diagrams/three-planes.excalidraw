@@ -1,0 +1,48 @@
+{
+  "type": "excalidraw-skeleton",
+  "elements": [
+    { "type": "text", "id": "lbl_judgment", "x": 40, "y": 40, "text": "JUDGMENT — HUMAN", "fontSize": 16, "strokeColor": "#94a3b8" },
+    { "type": "rectangle", "id": "operator", "x": 430, "y": 30, "width": 340, "height": 90, "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "THE OPERATOR", "fontSize": 20 } },
+    { "type": "text", "id": "operator_sub", "x": 800, "y": 40, "text": "decides only what is flagged,\nconsequential, or taste —\ngrants autonomy, sets thresholds\n(dated governance events)", "fontSize": 16, "strokeColor": "#64748b" },
+
+    { "type": "line", "id": "div1", "x": 40, "y": 190, "width": 1120, "height": 0, "strokeColor": "#cbd5e1", "strokeStyle": "dashed", "strokeWidth": 1, "roughness": 0 },
+
+    { "type": "text", "id": "lbl_control", "x": 40, "y": 215, "text": "CONTROL — MEASURE", "fontSize": 16, "strokeColor": "#94a3b8" },
+    { "type": "rectangle", "id": "shipgate", "x": 200, "y": 250, "width": 320, "height": 100, "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "SHIP-GATE PANEL\nadversarial review · fail-closed", "fontSize": 18 } },
+    { "type": "rectangle", "id": "sentinel", "x": 690, "y": 250, "width": 320, "height": 100, "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "SENTINEL\naudited registry · dead-man's switch", "fontSize": 18 } },
+
+    { "type": "line", "id": "div2", "x": 40, "y": 420, "width": 1120, "height": 0, "strokeColor": "#cbd5e1", "strokeStyle": "dashed", "strokeWidth": 1, "roughness": 0 },
+
+    { "type": "text", "id": "lbl_exec", "x": 40, "y": 445, "text": "EXECUTION — PRODUCE", "fontSize": 16, "strokeColor": "#94a3b8" },
+    { "type": "rectangle", "id": "dispatcher", "x": 200, "y": 480, "width": 810, "height": 64, "strokeColor": "#1e3a5f", "backgroundColor": "#60a5fa", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "DISPATCHER — routes, decomposes upstream, assembles the harness", "fontSize": 18 } },
+    { "type": "rectangle", "id": "dept_growth", "x": 200, "y": 590, "width": 180, "height": 90, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "GROWTH\nscout · closer", "fontSize": 16 } },
+    { "type": "rectangle", "id": "dept_delivery", "x": 410, "y": 590, "width": 180, "height": 90, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "DELIVERY\narchitect · builders", "fontSize": 16 } },
+    { "type": "rectangle", "id": "dept_compound", "x": 620, "y": 590, "width": 190, "height": 90, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "COMPOUNDING\nlibrarian · productizer", "fontSize": 16 } },
+    { "type": "rectangle", "id": "dept_ops", "x": 840, "y": 590, "width": 170, "height": 90, "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "roughness": 0, "strokeWidth": 2,
+      "label": { "text": "OPS\nops-runner", "fontSize": 16 } },
+
+    { "type": "arrow", "id": "a_disp_growth", "x": 290, "y": 544, "width": 0, "height": 46, "strokeColor": "#1e3a5f", "strokeWidth": 1, "roughness": 0, "start": { "id": "dispatcher" }, "end": { "id": "dept_growth" } },
+    { "type": "arrow", "id": "a_disp_delivery", "x": 500, "y": 544, "width": 0, "height": 46, "strokeColor": "#1e3a5f", "strokeWidth": 1, "roughness": 0, "start": { "id": "dispatcher" }, "end": { "id": "dept_delivery" } },
+    { "type": "arrow", "id": "a_disp_compound", "x": 715, "y": 544, "width": 0, "height": 46, "strokeColor": "#1e3a5f", "strokeWidth": 1, "roughness": 0, "start": { "id": "dispatcher" }, "end": { "id": "dept_compound" } },
+    { "type": "arrow", "id": "a_disp_ops", "x": 925, "y": 544, "width": 0, "height": 46, "strokeColor": "#1e3a5f", "strokeWidth": 1, "roughness": 0, "start": { "id": "dispatcher" }, "end": { "id": "dept_ops" } },
+
+    { "type": "arrow", "id": "a_gate_exec", "x": 360, "y": 350, "width": 0, "height": 130, "strokeColor": "#6d28d9", "strokeStyle": "dashed", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "shipgate" }, "end": { "id": "dispatcher" }, "label": { "text": "grades every ship vs contract", "fontSize": 16 } },
+    { "type": "arrow", "id": "a_sent_exec", "x": 850, "y": 350, "width": 0, "height": 130, "strokeColor": "#6d28d9", "strokeStyle": "dashed", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "sentinel" }, "end": { "id": "dispatcher" }, "label": { "text": "watches every run", "fontSize": 16 } },
+
+    { "type": "arrow", "id": "a_gate_op", "x": 480, "y": 250, "width": 80, "height": -130, "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "shipgate" }, "end": { "id": "operator" }, "label": { "text": "flags", "fontSize": 16 } },
+    { "type": "arrow", "id": "a_sent_op", "x": 760, "y": 250, "width": -80, "height": -130, "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0,
+      "start": { "id": "sentinel" }, "end": { "id": "operator" }, "label": { "text": "reds", "fontSize": 16 } },
+
+    { "type": "text", "id": "note_narrow", "x": 40, "y": 720, "text": "The shape is the argument: a wide base of production narrows through measurement to one point of judgment.", "fontSize": 16, "strokeColor": "#64748b" }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "anthropic-build-skills-2025",
+  "title": "Don't Build Agents, Build Skills Instead",
+  "subtitle": "Event ledger — Barry Zhang & Mahesh Murag, Anthropic",
+  "videoId": "CEvIs9y1uog",
+  "videoUrl": "https://www.youtube.com/watch?v=CEvIs9y1uog",
+  "sample": true,
+  "sourceRepo": "https://github.com/isatimur/claims-ledger/tree/main/examples/ledgers/anthropic-build-skills-2025",
+  "claims": [
+    {
+      "claim_id": "claims#1",
+      "text": "Agents have intelligence and capabilities but not always the expertise needed for real work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:35.040",
+          "end": "00:00:39.200",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "Agents have intelligence and capabilities, but not always expertise that we need for real work."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "The Anthropic team stopped building agents and started building skills instead",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:48.160",
+          "end": "00:00:51.670",
+          "start_seconds": 48,
+          "confidence": "high",
+          "label": "Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "stopped building agents and started building skills instead."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "MCP became the standard for agent connectivity",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:00:55.280",
+          "end": "00:00:57.670",
+          "start_seconds": 55,
+          "confidence": "high",
+          "label": "Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "MCP became the standard for agent connectivity."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Skills are deliberately simple organized folders",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:03:10.159",
+          "end": "00:03:12.070",
+          "start_seconds": 190,
+          "confidence": "high",
+          "label": "Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "In other words, they're folders."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "The remaining gap is domain expertise, not agent scaffolding",
+      "support_level": "moderate",
+      "caveats": "Book synthesis claim — anchored to this talk as primary evidence.",
+      "anchors": [
+        {
+          "video_id": "CEvIs9y1uog",
+          "start": "00:02:16.879",
+          "end": "00:02:18.470",
+          "start_seconds": 136,
+          "confidence": "high",
+          "label": "Barry Zhang & Mahesh Murag, Anthropic",
+          "quote": "and that problem is domain expertise."
+        }
+      ]
+    }
+  ]
+}

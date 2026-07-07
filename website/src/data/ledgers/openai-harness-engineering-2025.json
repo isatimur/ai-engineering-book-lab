@@ -1,0 +1,92 @@
+{
+  "slug": "openai-harness-engineering-2025",
+  "title": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute",
+  "subtitle": "Event ledger — Ryan Lopopolo, OpenAI",
+  "videoId": "am_oeAoUhew",
+  "videoUrl": "https://www.youtube.com/watch?v=am_oeAoUhew",
+  "sample": true,
+  "sourceRepo": "https://github.com/isatimur/claims-ledger/tree/main/examples/ledgers/openai-harness-engineering-2025",
+  "claims": [
+    {
+      "claim_id": "claims#1",
+      "text": "The important thing is not the code but the prompt and the guardrails that got you there",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "Documentation, ADRs, and breadcrumbs teach agents what good work looks like",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:07:02.560",
+          "end": "00:07:09.120",
+          "start_seconds": 422,
+          "confidence": "high",
+          "label": "Ryan Lopopolo, OpenAI",
+          "quote": "leaving breadcrumbs, documentation, ADRs, persona oriented documentation around what a good job looks like."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "A good harness operationalizes giving the model text at the right time",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:24:40.799",
+          "end": "00:24:45.840",
+          "start_seconds": 1480,
+          "confidence": "high",
+          "label": "Ryan Lopopolo, OpenAI",
+          "quote": "a good harness is really operationalized around giving the model text at the right time"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "The practical unit of harness engineering is the codebase, not isolated snippets",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:42:21.520",
+          "end": "00:42:22.880",
+          "start_seconds": 2541,
+          "confidence": "high",
+          "label": "Ryan Lopopolo, OpenAI",
+          "quote": "codebase for harness engineering"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Reliability comes less from model cleverness than from surrounding scaffolding",
+      "support_level": "moderate",
+      "caveats": "Book synthesis claim — anchored to this talk as primary evidence.",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:56.800",
+          "end": "00:07:00.720",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "Ryan Lopopolo, OpenAI",
+          "quote": "The important thing is not the code but the prompt and the guardrails that got you there."
+        }
+      ]
+    }
+  ]
+}

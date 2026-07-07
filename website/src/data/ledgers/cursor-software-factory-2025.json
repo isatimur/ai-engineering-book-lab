@@ -1,0 +1,92 @@
+{
+  "slug": "cursor-software-factory-2025",
+  "title": "Building Your Own Software Factory",
+  "subtitle": "Event ledger — Eric Zakariasson, Cursor",
+  "videoId": "rnDm57Py54A",
+  "videoUrl": "https://www.youtube.com/watch?v=rnDm57Py54A",
+  "sample": true,
+  "sourceRepo": "https://github.com/isatimur/claims-ledger/tree/main/examples/ledgers/cursor-software-factory-2025",
+  "claims": [
+    {
+      "claim_id": "claims#1",
+      "text": "Teams should build their own software factory rather than one-off agent loops",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:32.000",
+          "end": "00:00:34.880",
+          "start_seconds": 32,
+          "confidence": "high",
+          "label": "Eric Zakariasson, Cursor",
+          "quote": "getting to a place where you can build your own like software factory"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "Agent workflows need staged plan, produce, and review cycles",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:15:02.160",
+          "end": "00:15:08.560",
+          "start_seconds": 902,
+          "confidence": "high",
+          "label": "Eric Zakariasson, Cursor",
+          "quote": "you should have multiple different stages where you you plan it, you produce it, you review it and you essentially follow the whole uh SLC"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "Context should be frontloaded via plans or long specs before agents execute",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:19:32.960",
+          "end": "00:19:38.880",
+          "start_seconds": 1172,
+          "confidence": "high",
+          "label": "Eric Zakariasson, Cursor",
+          "quote": "you kind of like frontload uh the context to the agents either through like a plan or a long spec and then you send them off"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Maintaining a software factory requires overview of agent processes",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:02:52.079",
+          "end": "01:02:57.200",
+          "start_seconds": 3772,
+          "confidence": "high",
+          "label": "Eric Zakariasson, Cursor",
+          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "The harness is evolving from a local loop into a staged software factory",
+      "support_level": "moderate",
+      "caveats": "Book synthesis claim — anchored to this talk as primary evidence.",
+      "anchors": [
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:00:32.000",
+          "end": "00:00:34.880",
+          "start_seconds": 32,
+          "confidence": "high",
+          "label": "Eric Zakariasson, Cursor",
+          "quote": "getting to a place where you can build your own like software factory"
+        }
+      ]
+    }
+  ]
+}

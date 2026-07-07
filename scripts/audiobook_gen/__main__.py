@@ -1,4 +1,4 @@
-"""One-command audiobook generation. Run: python -m audiobook_gen --source <md>."""
+"""One-command audiobook generation. Run: python -m audiobook_gen [--dry-run]."""
 from __future__ import annotations
 
 import argparse
@@ -15,16 +15,30 @@ from audiobook_gen.normalize import normalize_markdown
 from audiobook_gen.package import build_m4b, zip_marketplace
 from audiobook_gen.qa import check_acx, measure, write_report
 
+# Canonical source: website/src/content relative to the repo root
+# (this file lives at scripts/audiobook_gen/__main__.py, so go up 3 levels)
+_PACKAGE_DIR = Path(__file__).parent
+_CANONICAL_DIR = _PACKAGE_DIR.parent.parent / "website" / "src" / "content"
+
+# Pattern that matches chapter-NN.md or Chapter N - ....md (case-insensitive)
+_CHAPTER_FILE_RE = re.compile(r"[Cc]hapter[- _]*0*(\d+)", re.IGNORECASE)
+
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="audiobook_gen", description="Generate an AI-narrated audiobook from markdown.")
-    p.add_argument("--source", required=True, help="Path to the markdown source")
+    src = p.add_mutually_exclusive_group()
+    src.add_argument("--source", default=None, help="Path to a single combined markdown source file")
+    src.add_argument(
+        "--source-dir", default=None, metavar="DIR",
+        help="Directory containing chapter-NN.md (or 'Chapter N*.md') files; "
+             "concatenated in chapter-number order. Defaults to website/src/content.",
+    )
     p.add_argument("--engine", default="openai", choices=["openai", "elevenlabs"],
                    help="TTS backend (default: openai)")
     p.add_argument("--voice", default=None,
                    help="Voice id/name; defaults per engine (openai: onyx, elevenlabs: Brian)")
     p.add_argument("--model", default=None, help="Override TTS model id for the engine")
-    p.add_argument("--title", default="AI Engineering", help="Book title for credits/m4b")
+    p.add_argument("--title", default="From Copilot to Colleague", help="Book title for credits/m4b")
     p.add_argument("--author", default="Timur Isachenko", help="Author name for credits")
     p.add_argument("--out", default="dist/audiobook", help="Output directory")
     p.add_argument("--cache-dir", default="dist/.tts-cache", help="TTS chunk cache directory")
@@ -36,6 +50,53 @@ def slug(title: str) -> str:
     body = re.sub(r"^Chapter\s+\d+\s*[—–-]\s*", "", title).strip()
     body = re.sub(r"[^a-zA-Z0-9]+", "-", body).strip("-").lower()
     return body
+
+
+def _collect_dir(d: Path) -> str:
+    """Read all chapter-*.md files from *d* in chapter-number order and return
+    concatenated markdown (blank line between files so H1 boundaries are clean)."""
+    entries: list[tuple[int, Path]] = []
+    for p in d.iterdir():
+        if not p.suffix.lower() == ".md":
+            continue
+        m = _CHAPTER_FILE_RE.search(p.name)
+        if m:
+            entries.append((int(m.group(1)), p))
+    if not entries:
+        raise SystemExit(f"No chapter-*.md files found in {d}")
+    entries.sort(key=lambda x: x[0])
+    parts = [p.read_text(encoding="utf-8") for _, p in entries]
+    return "\n\n".join(parts)
+
+
+def resolve_source_text(args) -> str:
+    """Return the full markdown text to synthesise.
+
+    Priority:
+      1. ``--source FILE``  – read a single combined file (original behaviour).
+      2. ``--source-dir DIR`` – concatenate chapter files from DIR.
+      3. Default – use the canonical ``website/src/content`` directory.
+    """
+    if args.source is not None:
+        p = Path(args.source)
+        if not p.exists():
+            print(f"Source not found: {p}", file=sys.stderr)
+            raise SystemExit(2)
+        print(f"Source file: {p.resolve()}")
+        return p.read_text(encoding="utf-8")
+
+    if args.source_dir is not None:
+        d = Path(args.source_dir)
+        if not d.is_dir():
+            print(f"Source directory not found: {d}", file=sys.stderr)
+            raise SystemExit(2)
+        print(f"Source directory: {d.resolve()}")
+        return _collect_dir(d)
+
+    # Default: canonical manuscript
+    d = _CANONICAL_DIR
+    print(f"Source directory (canonical default): {d.resolve()}")
+    return _collect_dir(d)
 
 
 def make_synth(engine: str, voice: str | None, model: str | None, cache_dir: Path):
@@ -60,25 +121,24 @@ def make_synth(engine: str, voice: str | None, model: str | None, cache_dir: Pat
     )
 
 
-def run_dry(source: Path):
-    chapters = normalize_markdown(Path(source).read_text(encoding="utf-8"))
+def run_dry(args):
+    """Parse the manuscript determined by *args* and return a cost plan."""
+    md = resolve_source_text(args)
+    chapters = normalize_markdown(md)
     return build_plan(chapters)
 
 
 def main(argv=None) -> int:
     args = build_parser().parse_args(argv)
-    source = Path(args.source)
-    if not source.exists():
-        print(f"Source not found: {source}", file=sys.stderr)
-        return 2
 
     if args.dry_run:
-        plan = run_dry(source)
+        plan = run_dry(args)
         print("\n".join(plan.lines))
         return 0
 
     ff.ensure_ffmpeg()
-    chapters = normalize_markdown(source.read_text(encoding="utf-8"))
+    md = resolve_source_text(args)
+    chapters = normalize_markdown(md)
     if not chapters:
         print("No chapters parsed from source.", file=sys.stderr)
         return 2

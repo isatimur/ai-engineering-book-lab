@@ -22,9 +22,9 @@ The ten chapters as a **four-act dependency arc** — the Problem (ch 1–2), th
 
 ### 2 · The Autoresearch Knowledge Machine
 
-![The 5-layer pipeline that turns a 741-video corpus into a book](02-autoresearch-machine.png)
+![The 5-layer pipeline that turns a 794-video corpus into a book](02-autoresearch-machine.png)
 
-How a 741-video corpus becomes a source-backed book: a five-layer pipeline — **Source → Synthesis → Evidence → Manuscript** — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Real directory names are shown as evidence.
+How a 794-video corpus becomes a source-backed book: a five-layer pipeline — **Source → Synthesis → Evidence → Manuscript** — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Real directory names are shown as evidence.
 
 ### 3 · The Scaffolding Stack
 
@@ -36,7 +36,7 @@ The book's central thesis in one picture: a raw model is capable but not dependa
 
 ![The 10 corpus themes by video count, mapped to chapters](04-theme-corpus-map.png)
 
-What 741 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that *Models & Inference* is deliberately background, not a chapter.
+What 794 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that *Models & Inference* is deliberately background, not a chapter.
 
 ---
 
@@ -86,7 +86,7 @@ Long-running work needs architecture. A stateless chat loop that loses everythin
 
 The moment a system can act, it becomes an attack surface. A helpful agent with admin credentials vs bounded autonomy — scoped identity, sandboxing, least privilege, an audit trail, a root of trust.
 
-### Chapter 8 · Realtime and Embodied Edges
+### Chapter 8 · Realtime, Voice, and the Cost of Being Interruptible
 
 ![Turn-based chat versus a realtime pipeline](12-chapter8-realtime.png)
 
@@ -113,8 +113,7 @@ The close: separate the tools that churn every few months from the operating mod
 - **To edit:** open any `.excalidraw` file at [excalidraw.com](https://excalidraw.com) (or in the Excalidraw VS Code / Obsidian plugin).
 - **To re-render to PNG:**
   ```bash
-  cd ~/.claude/skills/excalidraw-diagram/references
-  uv run python render_excalidraw.py <path-to-file.excalidraw>
+  npx @excalidraw-skill-pack/render <path-to-file.excalidraw>
   ```
 
 ## Style & templates

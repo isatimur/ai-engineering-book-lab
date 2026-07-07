@@ -12,11 +12,18 @@ export type ExploreItem = {
 export const EXPLORE_ITEMS: ExploreItem[] = [
   { href: '/evidence', label: 'Evidence & metrics', description: 'Claims ledger and corpus stats' },
   { href: '/read/graph', label: 'Evidence graph', description: 'Interactive claim–source map' },
+  { href: '/ledgers', label: 'Fact-checked ledgers', description: 'Event ledgers with yt:// anchors' },
   { href: '/experience/', label: '3D Journey', external: true, description: 'Solar-system chapter tour' },
   { href: '/visual-guide', label: 'Visual Guide', description: 'Diagrams and concept maps' },
   { href: '/search', label: 'Search', description: 'Cross-chapter + glossary' },
   { href: '/versions', label: 'Versions', description: 'Git diffs per chapter' },
   { href: '/quality', label: 'Quality', description: 'MASH judge scorecards' },
+  {
+    href: '/whitepapers/ai-native-org.html',
+    label: 'AI-Native Org whitepaper',
+    external: true,
+    description: 'The operating model, applied — HTML + PDF',
+  },
 ];
 
 type Props = {

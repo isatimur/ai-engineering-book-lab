@@ -12,6 +12,9 @@ import { Workshop } from './pages/Workshop';
 import { ChapterDetail } from './pages/ChapterDetail';
 import { EvidenceGraphPage } from './pages/EvidenceGraphPage';
 import { EvidenceReference } from './pages/EvidenceReference';
+import { LedgersIndexPage } from './pages/LedgersIndexPage';
+import { EventLedgerPage } from './pages/EventLedgerPage';
+import { eventLedgerSlugs } from './lib/eventLedgers';
 import { ConceptDetail } from './pages/ConceptDetail';
 import { MapDetail } from './pages/MapDetail';
 import { chapters, chapterParam } from './data/bookChapters';
@@ -48,6 +51,12 @@ export const routes: RouteRecord[] = [
       { path: 'read', element: <Reader /> },
       { path: 'read/graph', element: <EvidenceGraphPage /> },
       { path: 'evidence', element: <EvidenceReference /> },
+      { path: 'ledgers', element: <LedgersIndexPage /> },
+      {
+        path: 'ledgers/:slug',
+        element: <EventLedgerPage />,
+        getStaticPaths: () => eventLedgerSlugs().map((slug) => `ledgers/${slug}`),
+      },
       {
         path: 'read/:slug',
         element: <ChapterDetail />,

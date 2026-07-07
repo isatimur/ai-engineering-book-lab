@@ -14,7 +14,6 @@ set -euo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 MANIFEST="$REPO/website/src/data/diagram-manifest.json"
-RENDERER="$HOME/.claude/skills/excalidraw-diagram/references/render_excalidraw.py"
 
 MODE="sync"
 case "${1:-}" in
@@ -26,7 +25,7 @@ case "${1:-}" in
 esac
 
 [ -f "$MANIFEST" ] || { echo "manifest not found: $MANIFEST" >&2; exit 1; }
-[ "$MODE" = "check" ] || [ -f "$RENDERER" ] || { echo "renderer not found: $RENDERER" >&2; exit 1; }
+[ "$MODE" = "check" ] || command -v npx >/dev/null || { echo "npx is required (install Node.js)" >&2; exit 1; }
 command -v jq >/dev/null || { echo "jq is required (brew install jq)" >&2; exit 1; }
 
 src_dir_for_section() {
@@ -85,7 +84,7 @@ process_section() {
         rendered=$((rendered + 1))
       else
         echo "  render  $source_file"
-        ( cd "$(dirname "$RENDERER")" && uv run python "$RENDERER" "$src_excalidraw" >/dev/null )
+        npx @excalidraw-skill-pack/render "$src_excalidraw" >/dev/null
         rendered=$((rendered + 1))
       fi
     fi

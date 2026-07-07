@@ -305,7 +305,7 @@ def write_chapter_outline(records: list[NoteRecord]) -> None:
         (5, "Context Is Infrastructure", "Retrieval, memory, GraphRAG, and enterprise context as first-class system design problems.", [47, 48, 100, 104, 105, 118, 154, 156, 157, 172, 193, 215, 218, 219]),
         (6, "Runtimes, State, and the Human Control Plane", "Durability, workflows, stateful environments, MCP/tool layers, and why autonomy needs architecture.", [28, 38, 44, 83, 99, 111, 164, 167, 176, 198, 201, 202, 208]),
         (7, "Security, Identity, and High-Stakes Trust", "Why OAuth, sandboxing, compliance, and trustworthy-action boundaries become central once agents can act.", [31, 32, 37, 86, 148, 149, 150, 152, 206, 211]),
-        (8, "Realtime and Embodied Edges", "What voice, low-latency interaction, and robotics teach us about turn-taking, state, and operational constraints.", [26, 85, 128, 142, 143, 144, 145, 146, 147, 165, 174, 175]),
+        (8, "Realtime, Voice, and the Cost of Being Interruptible", "How voice interfaces expose the real cost of latency and turn-taking, and why production AI must be designed around interruption, not just throughput.", [26, 85, 128, 142, 143, 144, 145, 146, 147, 165, 174, 175]),
         (9, "The AI-Native Organization", "How incentives, hiring, product management, ROI, and team structure change when AI becomes part of the workforce.", [54, 62, 63, 65, 69, 79, 101, 102, 135, 137, 160, 162, 169, 188, 194, 195, 199, 205, 207]),
         (10, "What Endures", "Which principles survive tool churn: constrained delegation, explicit context, eval loops, and human judgment.", [5, 17, 60, 84, 108, 122, 124, 136, 214, 220]),
     ]
