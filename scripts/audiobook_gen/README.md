@@ -47,10 +47,10 @@ python3 -m audiobook_gen \
   --title "From Copilot to Colleague" --author "Timur Isachenko" \
   --out ../dist/audiobook
 
-# full render — ElevenLabs (voice Brian, deep/onyx-like)
+# full render — ElevenLabs (Oliver — clean, British, steady; Eleven v3)
 export ELEVEN_API_KEY=...
 python3 -m audiobook_gen \
-  --engine elevenlabs --voice nPczCjzI2devNBz1zQrb \
+  --engine elevenlabs --voice L1aJrPa7pLJEyYlh3Ilq \
   --title "From Copilot to Colleague" --author "Timur Isachenko" \
   --out ../dist/audiobook
 
@@ -64,8 +64,22 @@ python3 -m audiobook_gen --source /path/to/combined.md --dry-run
 ```
 
 `--engine` selects the TTS backend (`openai` default, or `elevenlabs`). Voice
-defaults per engine (onyx / Brian). ElevenLabs is metered per character (~171k
+defaults per engine (onyx / Oliver). ElevenLabs is metered per character (~171k
 for this book); a full render fits inside a Creator-tier monthly quota.
+
+### Eleven v3 best practices
+
+When `--engine elevenlabs` is used, the pipeline applies [Eleven v3 prompting
+guidance](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#prompting-eleven-v3):
+
+- **Oliver** voice with `eleven_v3` and **Natural** stability (0.5) for subtle tag response
+- **`[professional]`** delivery tag on the first chunk of each chapter/credits segment
+- **`apply_text_normalization: on`** and **`language_code: en`** for numbers, dates, abbreviations
+- **`previous_text` / `next_text`** across chunks for continuity when stitching long chapters
+- Local expansions for tech acronyms (API → A P I, LLM → L L M) and URLs before synthesis
+- Paragraph breaks preserved (v3 does not support SSML `<break>` — pacing uses structure + assembly silences)
+
+Re-rendering after changing prep logic invalidates the per-chunk cache automatically.
 
 Outputs:
 - `dist/audiobook/marketplace/NN-*.mp3`, `acx-upload.zip`, `QA-REPORT.md`

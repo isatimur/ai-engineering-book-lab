@@ -13,6 +13,7 @@ import { SettingsModal } from '../components/modals/SettingsModal';
 import { ShareModal } from '../components/modals/ShareModal';
 import { GlossaryContext } from '../lib/glossaryContext';
 import { AudiobookProvider } from '../context/AudiobookContext';
+import { ListenHighlightProvider } from '../context/ListenHighlightContext';
 import { scrollAudio } from '../lib/audio';
 import { ActionMenu } from '../components/ActionMenu';
 import { Seo } from '../components/Seo';
@@ -173,6 +174,7 @@ export const Reader = () => {
   return (
     <GlossaryContext.Provider value={{ open: setGlossaryTermId }}>
      <AudiobookProvider>
+      <ListenHighlightProvider>
       <Seo
         title="Read — From Copilot to Colleague"
         description="All 10 chapters in one continuous read."
@@ -272,6 +274,7 @@ export const Reader = () => {
           ↑
         </motion.button>
       </div>
+     </ListenHighlightProvider>
      </AudiobookProvider>
     </GlossaryContext.Provider>
   );

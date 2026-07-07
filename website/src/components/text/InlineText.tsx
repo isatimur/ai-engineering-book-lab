@@ -2,28 +2,49 @@ import React from 'react';
 import { GLOSSARY } from '../../data/glossary';
 import { splitWithGlossary } from '../../lib/glossaryMatch';
 import { useGlossary } from '../../lib/glossaryContext';
+import { ListenWordRun } from './ListenWordRun';
 
-export const InlineText = ({ text }: { text: string }) => {
+type Props = {
+  text: string;
+  listen?: boolean;
+};
+
+export const InlineText = ({ text, listen = false }: Props) => {
   const { open } = useGlossary();
-  // First split by inline markdown markers (bold/code/italic), then within each
-  // text-only segment, split by glossary terms.
   const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*)/g).filter(Boolean);
 
   return (
     <>
       {parts.map((part, index) => {
         if (part.startsWith('**') && part.endsWith('**')) {
-          return <strong key={index}>{part.slice(2, -2)}</strong>;
+          return (
+            <strong key={index}>
+              <ListenWordRun text={part.slice(2, -2)} listen={listen} />
+            </strong>
+          );
         }
         if (part.startsWith('`') && part.endsWith('`')) {
-          return <code key={index}>{part.slice(1, -1)}</code>;
+          return (
+            <code key={index}>
+              <ListenWordRun text={part.slice(1, -1)} listen={listen} />
+            </code>
+          );
         }
         if (part.startsWith('*') && part.endsWith('*')) {
-          return <em key={index}>{part.slice(1, -1)}</em>;
+          return (
+            <em key={index}>
+              <ListenWordRun text={part.slice(1, -1)} listen={listen} />
+            </em>
+          );
         }
         const sub = splitWithGlossary(part, GLOSSARY);
         return sub.map((s, i) => {
-          if (s.kind === 'text') return <React.Fragment key={`${index}-${i}`}>{s.value}</React.Fragment>;
+          if (s.kind === 'text') {
+            return <ListenWordRun key={`${index}-${i}`} text={s.value} listen={listen} />;
+          }
+          if (listen) {
+            return <ListenWordRun key={`${index}-${i}`} text={s.value} listen={listen} />;
+          }
           return (
             <button
               key={`${index}-${i}`}

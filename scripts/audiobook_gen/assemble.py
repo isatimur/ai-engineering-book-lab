@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from typing import Callable
+from typing import Callable, Protocol
 
 from audiobook_gen import ffmpeg_ops as ff
 from audiobook_gen.chunk import chunk_text
@@ -11,6 +11,17 @@ from audiobook_gen.chunk import chunk_text
 HEAD_SILENCE = 0.75
 TAIL_SILENCE = 2.0
 GAP_SILENCE = 0.6
+
+
+class ChunkSynth(Protocol):
+    def __call__(
+        self,
+        text: str,
+        *,
+        previous_text: str | None = ...,
+        next_text: str | None = ...,
+        segment_start: bool = ...,
+    ) -> Path: ...
 
 
 def assembly_sequence(chunk_paths, head, gap, tail):
@@ -26,7 +37,7 @@ def assembly_sequence(chunk_paths, head, gap, tail):
 def render_chapter(
     text: str,
     *,
-    synth: Callable[[str], Path],
+    synth: ChunkSynth,
     work_dir: Path,
     out_wav: Path,
     out_mp3: Path,
@@ -37,7 +48,16 @@ def render_chapter(
     work_dir.mkdir(parents=True, exist_ok=True)
 
     chunks = chunk_text(text)
-    chunk_paths = [synth(c) for c in chunks]
+    chunk_paths: list[Path] = []
+    for i, chunk in enumerate(chunks):
+        chunk_paths.append(
+            synth(
+                chunk,
+                previous_text=chunks[i - 1] if i > 0 else None,
+                next_text=chunks[i + 1] if i < len(chunks) - 1 else None,
+                segment_start=(i == 0),
+            )
+        )
 
     head = ff.make_silence(work_dir / "head.wav", HEAD_SILENCE)
     gap = ff.make_silence(work_dir / "gap.wav", GAP_SILENCE)

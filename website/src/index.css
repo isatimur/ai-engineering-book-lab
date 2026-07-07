@@ -119,6 +119,18 @@ body {
   font-size: 0.72em;
 }
 
+.listen-word {
+  transition: background-color 0.12s ease, color 0.12s ease;
+  border-radius: 0.15em;
+}
+
+.listen-word-active {
+  background: color-mix(in srgb, var(--color-pink) 72%, transparent);
+  color: var(--color-ink);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 .oreilly-panel {
   aspect-ratio: 1;
   width: min(100%, 420px);
