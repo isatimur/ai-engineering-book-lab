@@ -34,7 +34,23 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add website/src/evidence.json
             git commit -m "chore(evidence): regenerate evidence.json from updated ledger [skip ci]"
-            git push
+
+            # stats-regen.yml can trigger on the same push (overlapping path
+            # filters under claims/**) and race this job to push to main.
+            # Rebase-and-retry instead of failing outright on a rejected push.
+            for attempt in 1 2 3 4 5; do
+              if git push; then
+                break
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo "::error::Failed to push evidence.json regen after ${attempt} attempts."
+                exit 1
+              fi
+              echo "Push rejected (attempt ${attempt}/5) — main moved, rebasing and retrying..."
+              sleep $((attempt * 3))
+              git fetch origin main
+              git rebase origin/main
+            done
           else
             echo "No evidence.json changes — skipping commit"
           fi
