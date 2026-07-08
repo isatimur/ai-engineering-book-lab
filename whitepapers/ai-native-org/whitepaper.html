@@ -193,7 +193,7 @@
 
 <main>
 <header>
-  <div class="kicker mono"><span>Whitepaper · v1.3</span><span>July 2026</span></div>
+  <div class="kicker mono"><span>Whitepaper · v1.4</span><span>July 2026</span></div>
   <h1>The AI-Native Org</h1>
   <p class="subtitle">An operating system for one operator and a fleet of agents — where execution is cheap, review is the bottleneck, and judgment is the only scarce resource.</p>
   <div class="titleblock">
@@ -391,11 +391,27 @@
       <p class="claim">Even frontier-lab staff using AI in 59% of their work mostly cannot fully delegate: more than half can fully delegate only 0–20% of it; 27% of AI-assisted work would not otherwise have been done.</p>
       <p class="meta"><b>anchor</b> Anthropic, "How AI Is Transforming Work at Anthropic" (2025-12-02; n=132 staff + 53 interviews) · <b>support</b> strong for the population studied · <b>caution</b> outlier population — do not generalize to workers broadly</p>
     </div>
+    <div class="ledger-entry">
+      <p class="claim">Humans make ~70% of planning decisions but only ~20% of execution decisions when working with a coding agent — the judgment/execution split, measured in the wild.</p>
+      <p class="meta"><b>anchor</b> Anthropic, "Claude Code expertise" research (~400,000 sessions, ~235,000 users, Oct 2025–Apr 2026) · <b>support</b> strong · <b>caution</b> vendor telemetry, classifier-inferred</p>
+    </div>
+    <div class="ledger-entry">
+      <p class="claim">Only 15% of novice sessions — and 28–33% of expert sessions — reach verified success (hard evidence: commits, passing tests, explicit confirmation). Most agent work ends unverified; that is the gap the outcome-confirmation loop closes.</p>
+      <p class="meta"><b>anchor</b> same Anthropic study · <b>support</b> strong · <b>caution</b> "verified" is a strict classifier measure; absence of evidence ≠ failure</p>
+    </div>
+    <div class="ledger-entry">
+      <p class="claim">Each human prompt now triggers ~10 autonomous agent actions on average (experts ~12, novices ~5) — one human checkpoint gates an order of magnitude of machine activity.</p>
+      <p class="meta"><b>anchor</b> same Anthropic study · <b>support</b> strong</p>
+    </div>
+    <div class="ledger-entry">
+      <p class="claim">Even a tuned guardrail misses: Anthropic's auto-mode catches ~83% of overeager agent actions, blocks only ~0.4% of benign ones — and ~17% get through. One automated gate is never enough; the panel's redundancy and fail-closed defaults exist because of this number.</p>
+      <p class="meta"><b>anchor</b> Anthropic, "How we contain Claude" + auto-mode engineering post (miss rate: n=52 curated cases) · <b>support</b> strong · <b>caution</b> vendor-measured, one defense layer inside a sandbox, small n for the miss rate</p>
+    </div>
   </div>
 </section>
 
 <footer>
-  <p><b>The AI-Native Org</b> · Whitepaper v1.3 · July 2026 · Timur Isachenko</p>
+  <p><b>The AI-Native Org</b> · Whitepaper v1.4 · July 2026 (appendix re-verified 2026-07-08) · Timur Isachenko</p>
   <p class="mono">Source of truth: the org's versioned state (design, charters, agent definitions, ledgers, thresholds — all in git). This document is a rendering of that state, not a substitute for it. The system described reviews, gates, and measures its own work — including the production of this document.</p>
 </footer>
 </main>
