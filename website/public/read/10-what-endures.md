@@ -44,4 +44,4 @@ Which returns us to where the book started — the assistant-to-delegate shift �
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/10-what-endures_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/10-what-endures_

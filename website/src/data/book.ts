@@ -9,7 +9,7 @@ export type Book = {
   id: string;
   title: string;
   subtitle: string;
-  author: string;
+  authors: string[];
   coverImage: string;
   spineColor: string;
   category: string;
@@ -20,8 +20,14 @@ export const BOOK: Book = {
   id: 'from-copilot-to-colleague',
   title: 'From Copilot to Colleague',
   subtitle: 'How AI Engineering Turns Models into Dependable Systems',
-  author: 'Timur Isachenko',
+  authors: ['Timur Isachenko', 'Daniel Mohanrao'],
   coverImage: '/covers/from-copilot-to-colleague.png',
   spineColor: '#1A1A1A',
   category: 'AI Engineering',
 };
+
+/** Full author names joined for display and text metadata. */
+export const authorsLine = BOOK.authors.join(' & ');
+
+/** Surname-only line for narrow surfaces (book spine). */
+export const authorsSpineLine = BOOK.authors.map((a) => a.split(' ').slice(-1)[0]).join(' \u00b7 ');

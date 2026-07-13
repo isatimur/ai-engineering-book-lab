@@ -9,7 +9,7 @@ import { listEventLedgers, ledgerStats } from './eventLedgers';
  * serializes them into the document head at build time.
  */
 
-const author = () => ({ '@type': 'Person', name: BOOK.author });
+const author = () => BOOK.authors.map((name) => ({ '@type': 'Person', name }));
 
 /** The Book node — emitted on the landing page. Lists chapters as parts. */
 export const bookJsonLd = () => ({

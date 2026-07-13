@@ -64,4 +64,4 @@ So when code gets cheaper, the real question was never whether humans matter les
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/02-taste_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/02-taste_

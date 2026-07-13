@@ -6,7 +6,7 @@ import { MarkdownBlock } from '../components/text/MarkdownBlock';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
 import { bookJsonLd } from '../lib/structuredData';
-import { BOOK } from '../data/book';
+import { BOOK, authorsSpineLine } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
 import { ExploreMenu, MobileNavMenu } from '../components/nav/ExploreMenu';
 import { AskAI } from '../components/AskAI';
@@ -117,7 +117,7 @@ export const Catalogue = () => {
               <div className="absolute top-0 bottom-0 right-0 w-8 bg-gradient-to-l from-white/10 to-transparent" />
 
               <div className="relative w-full flex items-center justify-between z-10">
-                <span className="font-serif text-2xl italic flex-shrink-0 w-1/4 text-left text-[#F9F7F1]">{BOOK.author}</span>
+                <span className="font-serif text-2xl italic flex-shrink-0 w-1/4 text-left text-[#F9F7F1]">{authorsSpineLine}</span>
                 <span className="font-sans font-medium uppercase tracking-widest text-sm flex-1 text-center opacity-90 text-[#F9F7F1]">{BOOK.title}</span>
                 <div className="w-1/4 h-8 flex items-center justify-end flex-shrink-0">
                   <span className="font-serif italic text-lg opacity-50 text-white">AE</span>

@@ -7,7 +7,7 @@
 ## What we're launching
 
 **From Copilot to Colleague** — companion site at <https://fromcopilottocolleague.com>,
-author Timur Isachenko. Chapter 1 shipped publicly (2026-07-04) as a multi-channel
+authors Timur Isachenko & Daniel Mohanrao. Chapter 1 shipped publicly (2026-07-04) as a multi-channel
 launch: X thread + LinkedIn post + carousel PDF + audiobook chapter, with named
 individual contributors credited publicly (the public-credit model, 9 authors on Ch1).
 

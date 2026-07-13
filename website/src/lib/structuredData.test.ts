@@ -11,7 +11,8 @@ describe('bookJsonLd', () => {
   it('is a schema.org Book', () => {
     expect(book['@context']).toBe('https://schema.org');
     expect(book['@type']).toBe('Book');
-    expect(book.author['@type']).toBe('Person');
+    expect(book.author).toHaveLength(2);
+    book.author.forEach((a) => expect(a['@type']).toBe('Person'));
   });
 
   it('lists every chapter as a part in reading order', () => {

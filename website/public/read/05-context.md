@@ -130,4 +130,4 @@ Treating context as infrastructure has a structural consequence the next chapter
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/05-context_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/05-context_

@@ -121,4 +121,4 @@ The last word in the voice cluster belongs to Zeghidour, who has been honest eno
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/08-realtime_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/08-realtime_

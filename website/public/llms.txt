@@ -2,7 +2,7 @@
 
 > How AI Engineering Turns Models into Dependable Systems. An online book synthesized from a corpus of AI Engineer conference talks, where no claim ships without a source anchor — a precise pointer to the moment in a video where it came from.
 
-By Timur Isachenko. Built in public, open source: https://github.com/isatimur/ai-engineering-book-lab
+By Timur Isachenko & Daniel Mohanrao. Built in public, open source: https://github.com/isatimur/ai-engineering-book-lab
 
 Built from 794 AI Engineer talks · 54 claims · 199 source anchors.
 

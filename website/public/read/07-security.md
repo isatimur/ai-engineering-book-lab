@@ -114,4 +114,4 @@ The next chapter takes the chapter-7 frame and stress-tests it under realtime co
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/07-security_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/07-security_
