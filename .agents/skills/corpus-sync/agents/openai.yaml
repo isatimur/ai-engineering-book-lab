@@ -1,0 +1,3 @@
+interface:
+  display_name: "Corpus Sync"
+  short_description: "Ingest new AI Engineer channel videos"

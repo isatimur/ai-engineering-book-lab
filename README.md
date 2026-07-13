@@ -93,6 +93,7 @@ Read the loop's instructions: [`programs/book_autoresearch.md`](programs/book_au
 
 ```
 ai-engineering-book-lab/
+├── .agents/skills/     # invokable agent Skills (SKILL.md + agents/openai.yaml per skill)
 ├── 01_Videos/          # source corpus (notes per video, 794+ entries)
 ├── 02_Themes/          # cross-corpus theme syntheses
 ├── 03_People/          # speaker profiles
@@ -113,6 +114,7 @@ ai-engineering-book-lab/
 │   ├── concepts/       # promoted concept pages
 │   ├── drafting/       # chapter drafts
 │   └── themes/         # promoted themes
+├── remotion/           # explainer-video + OG-card renderer (React → video)
 ├── research_passes/    # cumulative logs of each autonomous pass
 ├── tasks/              # bounded agent missions
 └── website/            # the Reader (React + Vite, deployed to Vercel)
