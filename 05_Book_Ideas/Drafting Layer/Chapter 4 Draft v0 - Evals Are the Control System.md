@@ -1,10 +1,5 @@
 # Chapter 4 Draft v0 — Evals Are the Control System
 
-## Draft note
-This pass deepens the chapter from a clean argument into something closer to lived operations. It adds a concrete failure slice inside the recurring software-factory case, sharpens the control-system prose, and makes the bridge into Chapter 5 more explicit.
-
----
-
 # Chapter 4 — Evals Are the Control System
 
 The first failure mode of AI systems is obvious: they can be wrong.
@@ -190,11 +185,3 @@ And this is the deeper continuity between the chapters so far. Chapter 3 argued 
 That is what a control system does. It lets a team steer.
 
 The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. That is the subject of the next chapter. Context is not merely input. It is infrastructure.
-
-## Draft status note
-This pass established:
-1. a stronger chapter-level control-system argument rather than a chapter starter
-2. a concrete operational failure slice from the software factory so the abstraction has teeth
-3. sharper continuity from Chapter 3’s harness story into Chapter 5’s context story
-4. continued use of source-backed language from Pesok, Jain, Colvin, and Hetzel
-5. a more chapter-like cadence, with fewer “notes” seams and more lived operational texture

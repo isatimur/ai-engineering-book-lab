@@ -1,10 +1,5 @@
 # Chapter 10 Draft v0 — What Endures
 
-## Draft note
-This pass keeps the closing chapter’s structure but improves the landing. The chapter now arrives more cleanly at one repeatable final line: the future belongs to teams that can turn cheap generation into trusted throughput. The ending is meant to sound less like a summary paragraph and more like the book finally cashing its central claim.
-
----
-
 # Chapter 10 — What Endures
 
 By the time a field starts naming everything aggressively, it is usually trying not to drown.
@@ -166,11 +161,3 @@ Not that machines remove the need for engineering,
 but that more work can finally be delegated without pretending trust will take care of itself.
 
 The future belongs to teams that can turn cheap generation into trusted throughput.
-
-## Draft status note
-This pass established:
-1. a more quotable final movement built around trusted throughput
-2. cleaner continuity from Chapter 9’s institutional argument into the closing synthesis
-3. a slightly firmer distinction between surface churn and durable principles
-4. the same central final pattern — constrained delegation — with a stronger landing around responsibility and trust
-5. an ending that now sounds more like a book landing than a well-organized recap

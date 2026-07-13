@@ -1,10 +1,5 @@
 # Chapter 9 Draft v0 — The AI-Native Organization
 
-## Draft note
-This pass strengthens Chapter 9 by giving it one memorable org-level scene and by making the chapter feel less like a management summary and more like the institutional consequence of the whole book. The Software Factory remains the recurring case, but the chapter now opens the company-wide frame through a concrete Monday-morning operating scene.
-
----
-
 # Chapter 9 — The AI-Native Organization
 
 The biggest gains from AI do not come from giving individuals better tools.
@@ -125,15 +120,6 @@ That is how an organization can widen participation without dissolving trust.
 
 ## The company becomes a harness for its own agents
 
-The book has been building toward this idea from several directions.
-
-Chapter 3 argued that agents need legible environments.
-Chapter 4 argued that they need quality control.
-Chapter 5 argued that they need the right information architecture.
-Chapter 6 argued that they need durable runtimes and human control planes.
-Chapter 7 argued that they need bounded authority.
-Chapter 8 showed what happens when all of that has to work in public, under time pressure.
-
 At organizational scale, those same requirements turn into company design.
 
 An AI-native company externalizes standards, examples, specs, policies, permissions, review rules, and approved workflows so that both humans and agents can operate inside them. It packages taste into templates, governance into platforms, and institutional memory into accessible systems. It creates broader paths to create and narrower, better-governed paths to ship. It treats management not as inspection of every artifact, but as design of the environment in which good artifacts are more likely to emerge.
@@ -159,10 +145,4 @@ That is the outer-ring lesson that completes the book’s core spine.
 The technical question and the organizational question turn out to be the same.
 How do you build an environment in which delegated work deserves trust?
 
-## Draft status note
-This pass established:
-1. one memorable Monday-morning org scene so the chapter has a concrete managerial image instead of only abstract argument
-2. stronger continuity from Chapter 8 into Chapter 9 by opening with execution visible at company scale
-3. cleaner repetition of the central organizational claim: review, alignment, and throughput become the scarce resources
-4. a slightly more quotable final movement around compounding trusted throughput
-5. a chapter identity that now feels more like consequence than appendix
+That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces? That is the subject of the final chapter.

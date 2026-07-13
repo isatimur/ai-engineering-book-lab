@@ -1,10 +1,5 @@
 # Chapter 5 Draft v0 — Context Is Infrastructure
 
-## Draft note
-This is the first real chapter pass for Chapter 5. It is written to continue the manuscript’s middle run directly after Chapters 3 and 4: first make delegated work possible, then measurable, then properly informed. The chapter uses the High-Stakes Colleague as the main recurring case while still keeping light continuity with the software-factory thread.
-
----
-
 # Chapter 5 — Context Is Infrastructure
 
 Useful AI systems do not fail only because the model is weak.
@@ -171,18 +166,8 @@ The more capable the model, the more value there is in placing the right evidenc
 
 That is why context belongs in the same mental bucket as harnesses, evals, runtimes, and security. It is not a prompt trick. It is one of the engineered surroundings that determine whether intelligence becomes useful.
 
-And this is the deeper continuity across the book’s middle chapters. Chapter 3 argued that delegated work depends on a legible workplace. Chapter 4 argued that the workplace needs a quality loop. Chapter 5 adds that even a well-structured, well-measured system will fail if it cannot build the right working set for the task at hand.
-
 A machine colleague does not need infinite information. It needs the right binder.
 
 But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
 
 That is the runtime problem. Which is to say: the next layer of infrastructure.
-
-## Draft status note
-This pass established:
-1. a true chapter-level prose draft for Chapter 5, not only a starter
-2. the High-Stakes Colleague as the main recurring case, with light carryover from the Software Factory
-3. a clear argument from prompt stuffing to active working sets to enterprise context topology
-4. stronger treatment of graphs, hierarchical memory, and MCP as parts of one context architecture story
-5. a cleaner manuscript sequence in which Chapters 3, 4, and 5 now read like a connected middle run

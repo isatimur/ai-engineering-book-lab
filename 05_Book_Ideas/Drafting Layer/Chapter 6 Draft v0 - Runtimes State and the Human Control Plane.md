@@ -1,10 +1,5 @@
 # Chapter 6 Draft v0 — Runtimes, State, and the Human Control Plane
 
-## Draft note
-This pass turns Chapter 6 from a starter packet into a real prose chapter. It is written to continue the manuscript’s middle-book spine directly after Chapters 3–5: first make delegated work possible, then measurable, then properly informed, then operable over time. The chapter pairs the Software Factory with the High-Stakes Colleague so the argument feels cumulative rather than reset.
-
----
-
 # Chapter 6 — Runtimes, State, and the Human Control Plane
 
 A chatbot can get away with amnesia. A production agent cannot.
@@ -191,11 +186,3 @@ Chapter 6 adds that none of this is enough if the work cannot persist, recover, 
 A machine colleague is not just a model with tools. It is a model inside an operating environment.
 
 And the better that operating environment gets, the less the future of AI engineering looks like chat and the more it looks like building dependable systems for shared human-and-machine work.
-
-## Draft status note
-This pass established:
-1. a real prose draft for Chapter 6 rather than a starter packet
-2. a clear throughline from stateless chat failure to durable workflows and human control planes
-3. explicit pairing of the Software Factory and High-Stakes Colleague so Chapters 3–6 read as one accumulating argument
-4. integration of durable agents, runtime tradeoffs, observability, approvals, and subagent recomposition without collapsing into platform taxonomy
-5. a clean bridge toward later chapters on security, trust, and organizational redesign

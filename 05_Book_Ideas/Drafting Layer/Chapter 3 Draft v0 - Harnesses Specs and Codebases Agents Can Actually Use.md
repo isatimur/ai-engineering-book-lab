@@ -1,10 +1,5 @@
 # Chapter 3 Draft v0 — Harnesses, Specs, and Codebases Agents Can Actually Use
 
-## Draft note
-This is now a cleaner editorial pass on the chapter rather than a source-heavy synthesis memo. The argument stays the same, but the prose is less note-dense, the transitions are smoother, and the chapter leans more on one continuous line of thought: delegated coding succeeds when judgment is encoded into the environment.
-
----
-
 # Chapter 3 — Harnesses, Specs, and Codebases Agents Can Actually Use
 
 When coding agents disappoint, teams usually blame the model.
@@ -146,11 +141,3 @@ This is why harness engineering deserves to be treated as a primary discipline i
 And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
 That is the bridge into the next chapter. Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
-
-## Draft status note
-This pass added:
-1. lighter, less note-like transitions so the chapter reads more like inevitable prose than integrated research notes
-2. a clearer Chapter 2 -> Chapter 3 bridge by naming harnesses as externalized judgment
-3. a smoother Chapter 3 -> Chapter 4 handoff by reframing the harness as incomplete without a quality loop
-4. the same core source-backed argument, but with less quote-forward density and more narrative flow
-5. stronger continuity around the software-factory case so the chapter feels carried by one recurring example

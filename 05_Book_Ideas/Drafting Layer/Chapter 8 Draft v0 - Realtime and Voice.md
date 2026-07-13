@@ -1,10 +1,5 @@
 # Chapter 8 Draft v0 — Realtime, Voice, and the Cost of Being Interruptible
 
-## Draft note
-This pass sharpens Chapter 8’s role in the manuscript. The chapter is now less “here is a modality chapter about voice” and more “here is where the book’s trust claims get tested in public.” Voice remains the main subject, but the prose now keeps asking one question: what happens when all the earlier architecture has to perform while the human is still there?
-
----
-
 # Chapter 8 — Realtime, Voice, and the Cost of Being Interruptible
 
 Text chat flatters AI systems.
@@ -144,11 +139,3 @@ It is a property of good loops.
 And realtime interaction is where that truth becomes impossible to ignore.
 
 That naturally sets up the final organizational question. If delegated work now happens across repos, workflows, queues, dashboards, and even live customer interactions, what kind of company is required to manage it coherently? That is the subject of the next chapter.
-
-## Draft status note
-This pass established:
-1. a clearer chapter role by making voice a public stress test for the rest of the manuscript rather than a side exploration of modality
-2. a stronger repeated question — can the architecture still be trusted while the human is still there? — to carry the chapter
-3. tighter Chapter 7 -> Chapter 8 continuity around authority, latency, and exposed runtime behavior
-4. slightly smoother compression and less stitched feeling in the opening and closing movements
-5. the same support-call scenario, now doing more editorial work across the whole chapter

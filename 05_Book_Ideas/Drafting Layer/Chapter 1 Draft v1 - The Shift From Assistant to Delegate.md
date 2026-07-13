@@ -1,10 +1,5 @@
 # Chapter 1 Draft v1 — The Shift: From Assistant to Delegate
 
-## Draft note
-This pass upgrades Chapter 1 from a framing starter into a real opening chapter that can stand beside Chapters 3–6. It pulls the strongest claims from the core ledger, introduces the book’s recurring cases earlier, and makes the bridge into Chapter 2 and the technical core more explicit.
-
----
-
 # Chapter 1 — The Shift: From Assistant to Delegate
 
 For a while, the most impressive thing AI could do was answer.
@@ -196,11 +191,3 @@ It is that people increasingly want it to work.
 They want it to return with artifacts, not just ideas; with completed steps, not just suggestions; with trajectories that can be inspected, redirected, and trusted. That desire raises the standard for the whole stack. A useful delegate needs context, structure, evaluation, durable state, and supervision. In other words, it needs engineering.
 
 The rest of this book is about what happens once we take that requirement seriously.
-
-## Draft status note
-This pass adds:
-1. a full opening chapter rather than only a writing-ready starter
-2. stronger reuse of the core ledger’s safest claims and phrasing
-3. early introduction of the Software Factory and High-Stakes Colleague as recurring cases
-4. a clearer bridge into Chapter 2 through taste, judgment, and visible craft
-5. more explicit continuity with Chapters 3–6 so the opening reads like the entrance to the same manuscript

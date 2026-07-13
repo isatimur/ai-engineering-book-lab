@@ -1,10 +1,5 @@
 # Chapter 7 Draft v0 — Security, Identity, and High-Stakes Trust
 
-## Draft note
-This pass turns Chapter 7 from a starter into a real prose chapter that follows naturally from Chapter 6. If Chapter 6 argued that delegated work needs durable runtimes and a human control plane, Chapter 7 argues that durable action also needs bounded authority. The chapter keeps the High-Stakes Colleague in the foreground while pulling the Software Factory back in where code execution and tool access make the risk concrete.
-
----
-
 # Chapter 7 — Security, Identity, and High-Stakes Trust
 
 A helpful model can get away with being vague about power. An acting system cannot.
@@ -148,21 +143,7 @@ It is the architecture that determines whether delegated power is deserved.
 
 Identity tells the system on whose behalf it acts. Authorization determines which powers it actually holds. Sandboxing and least privilege contain the damage when the model is wrong. Gateways and roots of trust turn sprawl into governable infrastructure. Audit trails and inspectable trajectories turn machine action into something institutions can review, defend, and improve.
 
-This is the next step in the book’s accumulating argument.
-
-Chapter 3 argued that delegated work needs a legible workplace.
-Chapter 4 argued that it needs a quality system.
-Chapter 5 argued that it needs the right working set of information.
-Chapter 6 argued that it needs durable execution and a human control plane.
-Chapter 7 adds that none of this deserves trust unless authority itself is bounded, attributable, and revocable.
-
 A machine colleague is not trustworthy because it sounds confident.
 It is trustworthy only when its power has shape.
 
-## Draft status note
-This pass established:
-1. a full prose Chapter 7 that extends the Chapter 6 control-plane argument into identity, permissions, and security architecture
-2. a clear throughline from request security to delegated-workflow security
-3. strong reuse of the High-Stakes Colleague with targeted returns to the Software Factory for code-execution risk
-4. integration of sandboxing, least privilege, MCP governance, gateways, delegated identity, and inspectability without turning the chapter into a checklist
-5. a clean bridge toward Chapter 8, where realtime systems expose these trust requirements under time pressure
+Bounded authority is a calm-room design. The next chapter asks whether that design still holds when the room stops being calm — when the human is still present, the clock is running, and every defect in the architecture becomes audible.

@@ -1,15 +1,8 @@
-# AI Engineering Book — Manuscript Draft
+# From Copilot to Colleague — Manuscript Draft
 > Working compiled draft assembled from chapter drafts.
 > Status: draft manuscript, not line-edited.
 
 
-
----
-
-# Chapter 1 Draft v1 — The Shift: From Assistant to Delegate
-
-## Draft note
-This pass upgrades Chapter 1 from a framing starter into a real opening chapter that can stand beside Chapters 3–6. It pulls the strongest claims from the core ledger, introduces the book’s recurring cases earlier, and makes the bridge into Chapter 2 and the technical core more explicit.
 
 ---
 
@@ -204,22 +197,6 @@ It is that people increasingly want it to work.
 They want it to return with artifacts, not just ideas; with completed steps, not just suggestions; with trajectories that can be inspected, redirected, and trusted. That desire raises the standard for the whole stack. A useful delegate needs context, structure, evaluation, durable state, and supervision. In other words, it needs engineering.
 
 The rest of this book is about what happens once we take that requirement seriously.
-
-## Draft status note
-This pass adds:
-1. a full opening chapter rather than only a writing-ready starter
-2. stronger reuse of the core ledger’s safest claims and phrasing
-3. early introduction of the Software Factory and High-Stakes Colleague as recurring cases
-4. a clearer bridge into Chapter 2 through taste, judgment, and visible craft
-5. more explicit continuity with Chapters 3–6 so the opening reads like the entrance to the same manuscript
-
-
----
-
-# Chapter 2 Draft v0 — Taste Still Matters When Code Gets Cheap
-
-## Draft note
-This pass turns Chapter 2 from a packet into a full prose chapter that can stand beside the current Chapters 1 and 3–6 drafts. It is written as the human counterpart to delegated execution: what becomes more important when code, prose, and first passes get dramatically cheaper.
 
 ---
 
@@ -427,24 +404,6 @@ What remains scarce is not the ability to produce tokens. It is the ability to d
 
 In that sense, taste is not a nostalgic defense of craftsmanship against automation. It is the discipline that keeps automation from collapsing into trash.
 
-## Why this chapter belongs before the technical core
-
-Without this chapter, the manuscript risks sounding like a book about infrastructure alone. Chapters 3 through 6 could be misread as if better harnesses, evals, context systems, and runtimes solve the whole problem mechanically.
-
-They do not.
-
-Those chapters matter because they are ways of operationalizing judgment. They are not substitutes for it.
-
-Chapter 2 is therefore the hinge between the opening claim and the systems core. Chapter 1 says people increasingly want AI to return with work done. Chapter 2 says that demand does not make human standards less important. It makes them impossible to ignore. Chapter 3 then asks how those standards get translated into legible environments agents can actually use.
-
-The progression matters:
-
-- delegated execution makes output abundant
-- abundant output raises the value of judgment
-- judgment must be externalized into harnesses, specs, evaluation loops, and review structures
-
-Once that sequence is clear, the rest of the book stops feeling like a set of technical essays and starts reading as one continuous argument.
-
 ## Closing move
 
 When code gets cheaper, many people instinctively ask what happens to programmers.
@@ -463,22 +422,6 @@ Judgment under abundance.
 And once that becomes the scarce resource, the next technical question follows naturally: how do you build environments where that judgment can survive delegation?
 
 That is the work of the next chapter.
-
-## Draft status note
-This pass adds:
-1. a full prose Chapter 2 draft rather than only a chapter packet
-2. a clear human-counterpart argument to Chapter 1’s delegated-execution framing
-3. a balanced stance on vibe coding: useful for exploration, dangerous as a default production philosophy
-4. a stronger bridge into Chapter 3 by reframing harnesses and specs as externalized judgment
-5. continuity language so Chapters 1–3 now read as one opening runway into the technical core
-
-
----
-
-# Chapter 3 Draft v0 — Harnesses, Specs, and Codebases Agents Can Actually Use
-
-## Draft note
-This is now a cleaner editorial pass on the chapter rather than a source-heavy synthesis memo. The argument stays the same, but the prose is less note-dense, the transitions are smoother, and the chapter leans more on one continuous line of thought: delegated coding succeeds when judgment is encoded into the environment.
 
 ---
 
@@ -623,22 +566,6 @@ This is why harness engineering deserves to be treated as a primary discipline i
 And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
 That is the bridge into the next chapter. Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
-
-## Draft status note
-This pass added:
-1. lighter, less note-like transitions so the chapter reads more like inevitable prose than integrated research notes
-2. a clearer Chapter 2 -> Chapter 3 bridge by naming harnesses as externalized judgment
-3. a smoother Chapter 3 -> Chapter 4 handoff by reframing the harness as incomplete without a quality loop
-4. the same core source-backed argument, but with less quote-forward density and more narrative flow
-5. stronger continuity around the software-factory case so the chapter feels carried by one recurring example
-
-
----
-
-# Chapter 4 Draft v0 — Evals Are the Control System
-
-## Draft note
-This pass deepens the chapter from a clean argument into something closer to lived operations. It adds a concrete failure slice inside the recurring software-factory case, sharpens the control-system prose, and makes the bridge into Chapter 5 more explicit.
 
 ---
 
@@ -825,22 +752,6 @@ That is what a control system does. It lets a team steer.
 
 The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. That is the subject of the next chapter. Context is not merely input. It is infrastructure.
 
-## Draft status note
-This pass established:
-1. a stronger chapter-level control-system argument rather than a chapter starter
-2. a concrete operational failure slice from the software factory so the abstraction has teeth
-3. sharper continuity from Chapter 3’s harness story into Chapter 5’s context story
-4. continued use of source-backed language from Pesok, Jain, Colvin, and Hetzel
-5. a more chapter-like cadence, with fewer “notes” seams and more lived operational texture
-
-
----
-
-# Chapter 5 Draft v0 — Context Is Infrastructure
-
-## Draft note
-This is the first real chapter pass for Chapter 5. It is written to continue the manuscript’s middle run directly after Chapters 3 and 4: first make delegated work possible, then measurable, then properly informed. The chapter uses the High-Stakes Colleague as the main recurring case while still keeping light continuity with the software-factory thread.
-
 ---
 
 # Chapter 5 — Context Is Infrastructure
@@ -1007,29 +918,11 @@ The more capable the model, the more value there is in placing the right evidenc
 
 That is why context belongs in the same mental bucket as harnesses, evals, runtimes, and security. It is not a prompt trick. It is one of the engineered surroundings that determine whether intelligence becomes useful.
 
-And this is the deeper continuity across the book’s middle chapters. Chapter 3 argued that delegated work depends on a legible workplace. Chapter 4 argued that the workplace needs a quality loop. Chapter 5 adds that even a well-structured, well-measured system will fail if it cannot build the right working set for the task at hand.
-
 A machine colleague does not need infinite information. It needs the right binder.
 
 But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
 
 That is the runtime problem. Which is to say: the next layer of infrastructure.
-
-## Draft status note
-This pass established:
-1. a true chapter-level prose draft for Chapter 5, not only a starter
-2. the High-Stakes Colleague as the main recurring case, with light carryover from the Software Factory
-3. a clear argument from prompt stuffing to active working sets to enterprise context topology
-4. stronger treatment of graphs, hierarchical memory, and MCP as parts of one context architecture story
-5. a cleaner manuscript sequence in which Chapters 3, 4, and 5 now read like a connected middle run
-
-
----
-
-# Chapter 6 Draft v0 — Runtimes, State, and the Human Control Plane
-
-## Draft note
-This pass turns Chapter 6 from a starter packet into a real prose chapter. It is written to continue the manuscript’s middle-book spine directly after Chapters 3–5: first make delegated work possible, then measurable, then properly informed, then operable over time. The chapter pairs the Software Factory with the High-Stakes Colleague so the argument feels cumulative rather than reset.
 
 ---
 
@@ -1220,22 +1113,6 @@ A machine colleague is not just a model with tools. It is a model inside an oper
 
 And the better that operating environment gets, the less the future of AI engineering looks like chat and the more it looks like building dependable systems for shared human-and-machine work.
 
-## Draft status note
-This pass established:
-1. a real prose draft for Chapter 6 rather than a starter packet
-2. a clear throughline from stateless chat failure to durable workflows and human control planes
-3. explicit pairing of the Software Factory and High-Stakes Colleague so Chapters 3–6 read as one accumulating argument
-4. integration of durable agents, runtime tradeoffs, observability, approvals, and subagent recomposition without collapsing into platform taxonomy
-5. a clean bridge toward later chapters on security, trust, and organizational redesign
-
-
----
-
-# Chapter 7 Draft v0 — Security, Identity, and High-Stakes Trust
-
-## Draft note
-This pass turns Chapter 7 from a starter into a real prose chapter that follows naturally from Chapter 6. If Chapter 6 argued that delegated work needs durable runtimes and a human control plane, Chapter 7 argues that durable action also needs bounded authority. The chapter keeps the High-Stakes Colleague in the foreground while pulling the Software Factory back in where code execution and tool access make the risk concrete.
-
 ---
 
 # Chapter 7 — Security, Identity, and High-Stakes Trust
@@ -1381,32 +1258,10 @@ It is the architecture that determines whether delegated power is deserved.
 
 Identity tells the system on whose behalf it acts. Authorization determines which powers it actually holds. Sandboxing and least privilege contain the damage when the model is wrong. Gateways and roots of trust turn sprawl into governable infrastructure. Audit trails and inspectable trajectories turn machine action into something institutions can review, defend, and improve.
 
-This is the next step in the book’s accumulating argument.
-
-Chapter 3 argued that delegated work needs a legible workplace.
-Chapter 4 argued that it needs a quality system.
-Chapter 5 argued that it needs the right working set of information.
-Chapter 6 argued that it needs durable execution and a human control plane.
-Chapter 7 adds that none of this deserves trust unless authority itself is bounded, attributable, and revocable.
-
 A machine colleague is not trustworthy because it sounds confident.
 It is trustworthy only when its power has shape.
 
-## Draft status note
-This pass established:
-1. a full prose Chapter 7 that extends the Chapter 6 control-plane argument into identity, permissions, and security architecture
-2. a clear throughline from request security to delegated-workflow security
-3. strong reuse of the High-Stakes Colleague with targeted returns to the Software Factory for code-execution risk
-4. integration of sandboxing, least privilege, MCP governance, gateways, delegated identity, and inspectability without turning the chapter into a checklist
-5. a clean bridge toward Chapter 8, where realtime systems expose these trust requirements under time pressure
-
-
----
-
-# Chapter 8 Draft v0 — Realtime, Voice, and the Cost of Being Interruptible
-
-## Draft note
-This pass sharpens Chapter 8’s role in the manuscript. The chapter is now less “here is a modality chapter about voice” and more “here is where the book’s trust claims get tested in public.” Voice remains the main subject, but the prose now keeps asking one question: what happens when all the earlier architecture has to perform while the human is still there?
+Bounded authority is a calm-room design. The next chapter asks whether that design still holds when the room stops being calm — when the human is still present, the clock is running, and every defect in the architecture becomes audible.
 
 ---
 
@@ -1550,22 +1405,6 @@ And realtime interaction is where that truth becomes impossible to ignore.
 
 That naturally sets up the final organizational question. If delegated work now happens across repos, workflows, queues, dashboards, and even live customer interactions, what kind of company is required to manage it coherently? That is the subject of the next chapter.
 
-## Draft status note
-This pass established:
-1. a clearer chapter role by making voice a public stress test for the rest of the manuscript rather than a side exploration of modality
-2. a stronger repeated question — can the architecture still be trusted while the human is still there? — to carry the chapter
-3. tighter Chapter 7 -> Chapter 8 continuity around authority, latency, and exposed runtime behavior
-4. slightly smoother compression and less stitched feeling in the opening and closing movements
-5. the same support-call scenario, now doing more editorial work across the whole chapter
-
-
----
-
-# Chapter 9 Draft v0 — The AI-Native Organization
-
-## Draft note
-This pass strengthens Chapter 9 by giving it one memorable org-level scene and by making the chapter feel less like a management summary and more like the institutional consequence of the whole book. The Software Factory remains the recurring case, but the chapter now opens the company-wide frame through a concrete Monday-morning operating scene.
-
 ---
 
 # Chapter 9 — The AI-Native Organization
@@ -1688,15 +1527,6 @@ That is how an organization can widen participation without dissolving trust.
 
 ## The company becomes a harness for its own agents
 
-The book has been building toward this idea from several directions.
-
-Chapter 3 argued that agents need legible environments.
-Chapter 4 argued that they need quality control.
-Chapter 5 argued that they need the right information architecture.
-Chapter 6 argued that they need durable runtimes and human control planes.
-Chapter 7 argued that they need bounded authority.
-Chapter 8 showed what happens when all of that has to work in public, under time pressure.
-
 At organizational scale, those same requirements turn into company design.
 
 An AI-native company externalizes standards, examples, specs, policies, permissions, review rules, and approved workflows so that both humans and agents can operate inside them. It packages taste into templates, governance into platforms, and institutional memory into accessible systems. It creates broader paths to create and narrower, better-governed paths to ship. It treats management not as inspection of every artifact, but as design of the environment in which good artifacts are more likely to emerge.
@@ -1722,21 +1552,7 @@ That is the outer-ring lesson that completes the book’s core spine.
 The technical question and the organizational question turn out to be the same.
 How do you build an environment in which delegated work deserves trust?
 
-## Draft status note
-This pass established:
-1. one memorable Monday-morning org scene so the chapter has a concrete managerial image instead of only abstract argument
-2. stronger continuity from Chapter 8 into Chapter 9 by opening with execution visible at company scale
-3. cleaner repetition of the central organizational claim: review, alignment, and throughput become the scarce resources
-4. a slightly more quotable final movement around compounding trusted throughput
-5. a chapter identity that now feels more like consequence than appendix
-
-
----
-
-# Chapter 10 Draft v0 — What Endures
-
-## Draft note
-This pass keeps the closing chapter’s structure but improves the landing. The chapter now arrives more cleanly at one repeatable final line: the future belongs to teams that can turn cheap generation into trusted throughput. The ending is meant to sound less like a summary paragraph and more like the book finally cashing its central claim.
+That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces? That is the subject of the final chapter.
 
 ---
 
@@ -1901,11 +1717,3 @@ Not that machines remove the need for engineering,
 but that more work can finally be delegated without pretending trust will take care of itself.
 
 The future belongs to teams that can turn cheap generation into trusted throughput.
-
-## Draft status note
-This pass established:
-1. a more quotable final movement built around trusted throughput
-2. cleaner continuity from Chapter 9’s institutional argument into the closing synthesis
-3. a slightly firmer distinction between surface churn and durable principles
-4. the same central final pattern — constrained delegation — with a stronger landing around responsibility and trust
-5. an ending that now sounds more like a book landing than a well-organized recap

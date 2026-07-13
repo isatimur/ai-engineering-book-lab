@@ -1,10 +1,5 @@
 # Chapter 2 Draft v0 — Taste Still Matters When Code Gets Cheap
 
-## Draft note
-This pass turns Chapter 2 from a packet into a full prose chapter that can stand beside the current Chapters 1 and 3–6 drafts. It is written as the human counterpart to delegated execution: what becomes more important when code, prose, and first passes get dramatically cheaper.
-
----
-
 # Chapter 2 — Taste Still Matters When Code Gets Cheap
 
 One of the easiest mistakes to make in an AI-heavy moment is to confuse abundance with mastery.
@@ -209,24 +204,6 @@ What remains scarce is not the ability to produce tokens. It is the ability to d
 
 In that sense, taste is not a nostalgic defense of craftsmanship against automation. It is the discipline that keeps automation from collapsing into trash.
 
-## Why this chapter belongs before the technical core
-
-Without this chapter, the manuscript risks sounding like a book about infrastructure alone. Chapters 3 through 6 could be misread as if better harnesses, evals, context systems, and runtimes solve the whole problem mechanically.
-
-They do not.
-
-Those chapters matter because they are ways of operationalizing judgment. They are not substitutes for it.
-
-Chapter 2 is therefore the hinge between the opening claim and the systems core. Chapter 1 says people increasingly want AI to return with work done. Chapter 2 says that demand does not make human standards less important. It makes them impossible to ignore. Chapter 3 then asks how those standards get translated into legible environments agents can actually use.
-
-The progression matters:
-
-- delegated execution makes output abundant
-- abundant output raises the value of judgment
-- judgment must be externalized into harnesses, specs, evaluation loops, and review structures
-
-Once that sequence is clear, the rest of the book stops feeling like a set of technical essays and starts reading as one continuous argument.
-
 ## Closing move
 
 When code gets cheaper, many people instinctively ask what happens to programmers.
@@ -245,11 +222,3 @@ Judgment under abundance.
 And once that becomes the scarce resource, the next technical question follows naturally: how do you build environments where that judgment can survive delegation?
 
 That is the work of the next chapter.
-
-## Draft status note
-This pass adds:
-1. a full prose Chapter 2 draft rather than only a chapter packet
-2. a clear human-counterpart argument to Chapter 1’s delegated-execution framing
-3. a balanced stance on vibe coding: useful for exploration, dangerous as a default production philosophy
-4. a stronger bridge into Chapter 3 by reframing harnesses and specs as externalized judgment
-5. continuity language so Chapters 1–3 now read as one opening runway into the technical core
