@@ -1,6 +1,7 @@
 import { BOOK, SITE_ORIGIN, absoluteUrl } from '../data/book';
 import { chapters, chapterPath, type BookChapter } from '../data/bookChapters';
 import { bookDefinitionEntries, whatIsThisBookAnswer } from '../data/geo';
+import type { ChapterVideo } from '../data/chapterVideos';
 import type { EventLedger } from './eventLedgers';
 import { listEventLedgers, ledgerStats } from './eventLedgers';
 
@@ -138,6 +139,25 @@ export const eventLedgerJsonLd = (ledger: EventLedger) => {
     ),
   };
 };
+
+/** VideoObject node for a chapter's explainer video — emitted alongside the Chapter node. */
+export const chapterVideoJsonLd = (chapter: BookChapter, video: ChapterVideo) => ({
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: `${chapter.title} — explainer`,
+  description: video.description,
+  thumbnailUrl: absoluteUrl(video.poster),
+  contentUrl: absoluteUrl(video.src),
+  uploadDate: video.uploadDate,
+  duration: `PT${video.durationSeconds}S`,
+  width: video.width,
+  height: video.height,
+  isPartOf: {
+    '@type': 'Chapter',
+    name: chapter.title,
+    url: absoluteUrl(chapterPath(chapter)),
+  },
+});
 
 /** Breadcrumb trail: Home → The Book → Chapter N. */
 export const breadcrumbJsonLd = (chapter: BookChapter) => ({

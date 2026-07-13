@@ -17,7 +17,9 @@ import { RedThreadNav } from '../components/nav/RedThreadNav';
 import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
-import { chapterJsonLd, breadcrumbJsonLd } from '../lib/structuredData';
+import { chapterJsonLd, breadcrumbJsonLd, chapterVideoJsonLd } from '../lib/structuredData';
+import { chapterVideoFor } from '../data/chapterVideos';
+import { ChapterExplainerVideo } from '../components/chapter/ChapterExplainerVideo';
 
 const EvidenceExhibit = ({ chapter, title }: { chapter: string; title: string }) => {
   const op = opener(chapter);
@@ -62,6 +64,7 @@ export const ChapterDetail = () => {
   const prev = idx > 0 ? chapters[idx - 1] : undefined;
   const next = idx < chapters.length - 1 ? chapters[idx + 1] : undefined;
   const op = opener(chapter.number);
+  const video = chapterVideoFor(chapter.slug);
 
   return (
     <LightboxProvider>
@@ -69,10 +72,17 @@ export const ChapterDetail = () => {
         title={`${chapter.title} — From Copilot to Colleague`}
         description={chapter.promise}
         path={chapterPath(chapter)}
-        image={op ? op.src : undefined}
+        image={video ? video.poster : op ? op.src : undefined}
         type="article"
+        video={video ? { url: video.src, width: video.width, height: video.height } : undefined}
       />
-      <JsonLd data={[chapterJsonLd(chapter, idx), breadcrumbJsonLd(chapter)]} />
+      <JsonLd
+        data={[
+          chapterJsonLd(chapter, idx),
+          breadcrumbJsonLd(chapter),
+          ...(video ? [chapterVideoJsonLd(chapter, video)] : []),
+        ]}
+      />
       <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased pb-24">
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/read" className="hover:text-[var(--color-ink)]">← All chapters</Link>
@@ -91,6 +101,8 @@ export const ChapterDetail = () => {
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
           <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-4">{chapter.promise}</p>
         </div>
+
+        {video && <ChapterExplainerVideo video={video} />}
 
         <EvidenceExhibit chapter={chapter.number} title={chapter.title} />
 

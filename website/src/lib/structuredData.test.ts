@@ -5,10 +5,12 @@ import {
   breadcrumbJsonLd,
   whatIsThisBookJsonLd,
   aboutTheMethodJsonLd,
+  chapterVideoJsonLd,
 } from './structuredData';
 import { chapters } from '../data/bookChapters';
 import { SITE_ORIGIN, BOOK } from '../data/book';
 import { bookDefinitionEntries } from '../data/geo';
+import { chapterVideoFor } from '../data/chapterVideos';
 
 const ORIGIN = SITE_ORIGIN;
 
@@ -81,6 +83,21 @@ describe('aboutTheMethodJsonLd', () => {
   });
 });
 
+describe('chapterVideoJsonLd', () => {
+  it('is a VideoObject linked to its chapter, with an ISO 8601 duration', () => {
+    const chapter = chapters[0];
+    const video = chapterVideoFor(chapter.slug);
+    expect(video).toBeDefined();
+    const node = chapterVideoJsonLd(chapter, video!);
+    expect(node['@type']).toBe('VideoObject');
+    expect(node.contentUrl).toBe(`${ORIGIN}${video!.src}`);
+    expect(node.thumbnailUrl).toBe(`${ORIGIN}${video!.poster}`);
+    expect(node.duration).toBe(`PT${video!.durationSeconds}S`);
+    expect(node.isPartOf['@type']).toBe('Chapter');
+    expect(node.isPartOf.name).toBe(chapter.title);
+  });
+});
+
 describe('chapterJsonLd', () => {
   it('maps a chapter to a Chapter node linked to the Book', () => {
     const node = chapterJsonLd(chapters[4], 4);
@@ -111,6 +128,7 @@ describe('JSON-LD serialization safety', () => {
       breadcrumbJsonLd(chapters[0]),
       whatIsThisBookJsonLd(),
       aboutTheMethodJsonLd(),
+      chapterVideoJsonLd(chapters[0], chapterVideoFor(chapters[0].slug)!),
     ];
     for (const node of all) {
       expect(() => JSON.parse(JSON.stringify(node))).not.toThrow();
