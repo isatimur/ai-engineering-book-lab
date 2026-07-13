@@ -10,13 +10,13 @@ The sharper change begins when the verb becomes *go do*. Research this topic. Dr
 
 It helps to be precise about what is shifting, because the words get used loosely. The cleanest test is where the human sits relative to the loop: in the critical path for every step, alongside the work in real time, or out of the loop until review. Assistant, copilot, and delegate are those three positions, and moving between them is not the same system scaled up — it changes what the system has to be.
 
-An **assistant** suggests. It produces something you then decide what to do with — a draft, an answer, an option. The human stays in the critical path for every step, and the assistant's job is to make that step faster.
+An **assistant** suggests. It produces something you then decide what to do with — a draft, an answer, an option. The tell is that nothing it produces takes effect until you have read it: the human is in the critical path for every step, and the assistant's job is to make that step faster.
 
-A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were already typing. The human is still flying the plane; the copilot is making continuous small contributions to a task the human is actively driving.
+A **copilot** collaborates inside a human loop. It works alongside you in real time, and the canonical case is the coding copilot completing the line you were already typing. The human is still flying the plane; the copilot makes continuous small contributions to a task the human is actively driving. You are in this mode when the human never pauses to consult it — the copilot's contribution lands inside a task already in motion.
 
 A **delegate** is assigned work and expected to return with it done. Not a suggestion to evaluate, but an artifact, a recommendation, or a completed step. The human steps *out* of the moment-to-moment loop and re-enters at review. That single move — out of the loop, back at the end — is the whole shift, and it changes what the system has to be.
 
-This book's claim is not that assistants and copilots disappear. They remain useful, and for many tasks they are the right tool. The claim is that the engineering difficulty, the product ambition, and the organizational upheaval have all migrated to the third category. Delegation is where the hard problems are, because a delegate is no longer just saying things. It is shaping work that someone else will rely on.
+This book's claim is not that assistants and copilots disappear. They remain useful, and for many tasks they are the right tool — the discipline is to reach for a delegate only when suggestion and real-time collaboration genuinely will not do the job, because that third category is where the difficulty lives. The claim is that the engineering difficulty, the product ambition, and the organizational upheaval have all migrated there. Delegation is where the hard problems are, because a delegate is no longer just saying things. It is shaping work that someone else will rely on.
 
 ## Why delegation changes the failure surface
 
