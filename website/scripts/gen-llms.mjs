@@ -14,7 +14,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const websiteRoot = resolve(__dirname, '..');
 const ORIGIN = 'https://fromcopilottocolleague.com';
 const REPO = 'https://github.com/isatimur/ai-engineering-book-lab';
-const AUTHOR = 'Timur Isachenko';
+const AUTHOR = 'Timur Isachenko & Daniel Mohanrao';
 const TITLE = 'From Copilot to Colleague';
 const SUBTITLE = 'How AI Engineering Turns Models into Dependable Systems';
 const log = (...a) => console.log('[gen-llms]', ...a);
