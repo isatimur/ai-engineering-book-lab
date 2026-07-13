@@ -1,10 +1,9 @@
 /**
- * Frame budget for each scene in the Chapter 1 explainer, at FPS=30. Kept in
- * one place so `<Composition durationInFrames>` in Root.tsx and the
- * `<Series.Sequence>` calls in Chapter01.tsx can never drift apart.
+ * Frame budget for each scene in the Chapter 1 explainer, at the series' FPS
+ * (see `../theme.ts`). Kept in one place so `<Composition durationInFrames>`
+ * in Root.tsx and the `<Series.Sequence>` calls in Chapter01.tsx can never
+ * drift apart.
  */
-export const FPS = 30;
-
 export const SCENE_DURATIONS = {
   hook: 90, // "not that chat got better"
   titleCard: 90, // book title + chapter title

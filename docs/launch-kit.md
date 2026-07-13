@@ -17,6 +17,7 @@ individual contributors credited publicly (the public-credit model, 9 authors on
 |---|---|---|
 | Ch1 carousel PDF | `launch-assets/from-copilot-to-colleague-ch1-carousel.pdf` (3.4 MB) | shipped |
 | Ch1 explainer video (1920×1080, 30fps, ~34s) | `launch-assets/from-copilot-to-colleague-ch1-explainer.mp4` (2.9 MB) — source in [`remotion/`](../remotion/) | shipped |
+| Ch2 explainer video (1920×1080, 30fps, ~34s) | `launch-assets/from-copilot-to-colleague-ch2-explainer.mp4` (2.7 MB) — source in [`remotion/`](../remotion/) | shipped |
 | Audiobook (ch 01–10, 64 kbps mono) | `website/public/audiobook/ch-01..10.mp3` | live on site |
 | Event ledger pages (5) | `https://fromcopilottocolleague.com/ledgers/<slug>` | live |
 | Visual guide | `https://fromcopilottocolleague.com/visual-guide` | live |

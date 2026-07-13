@@ -12,22 +12,31 @@ remotion/
 ├── src/
 │   ├── index.ts          # registerRoot — Remotion's entry point
 │   ├── Root.tsx           # registers every <Composition> (one per chapter)
-│   ├── theme.ts            # brand tokens copied from website/src/data/book.ts
-│   └── chapter01/
-│       ├── durations.ts    # frame budget per scene (single source of truth)
-│       ├── primitives.tsx  # SceneBackground, FadeInOut, Kicker — shared across chapters
-│       ├── Scenes.tsx       # one component per beat, sourced from chapter-01.md
-│       └── Chapter01.tsx    # assembles the scenes into a <Series>
+│   ├── theme.ts            # brand tokens copied from website/src/data/book.ts; FPS lives here too
+│   ├── shared/
+│   │   └── primitives.tsx  # SceneBackground, FadeInOut, Kicker, Big, TermCard,
+│   │                        # SeriesWithProgress — every chapter imports these, none forks them
+│   ├── chapter01/
+│   │   ├── durations.ts    # frame budget per scene (single source of truth)
+│   │   ├── Scenes.tsx       # one component per beat, sourced from chapter-01.md
+│   │   └── Chapter01.tsx    # <SeriesWithProgress scenes={[...]} /> — see the pattern
+│   └── chapter02/           # same shape, chapter 2's content
 ├── public/cover.png        # copied from website/public/covers/ — keep in sync manually
 └── out/                     # render output, gitignored (published cuts go to ../launch-assets/)
 ```
 
-Every line of copy in `chapter01/Scenes.tsx` is lifted verbatim or lightly
-compressed from `website/src/content/chapter-01.md` — nothing is invented for
-video that isn't already in the chapter. The one quote (Barry Zhang & Mahesh
-Murag, Anthropic) is the same Source Anchor already in the Claims Ledger
-(`CEvIs9y1uog`, 00:00:35–00:00:39); the "0:35" on screen is that anchor's
-start timestamp, not a stylistic flourish.
+Every line of copy in each chapter's `Scenes.tsx` is lifted verbatim or
+lightly compressed from that chapter's `website/src/content/chapter-0N.md` —
+nothing is invented for video that isn't already in the chapter. Each quote
+card cites a real Source Anchor already in the Claims Ledger:
+
+| Chapter | Quote | Anchor |
+|---|---|---|
+| 1 | Barry Zhang & Mahesh Murag, Anthropic — "Agents have intelligence and capabilities, but not always expertise that we need for real work." | `CEvIs9y1uog`, 00:00:35–00:00:39 |
+| 2 | Sean Grove, OpenAI — "the new scarce skill is writing specifications that fully capture the intent" | `8rABwKRsec4`, 00:09:02–00:09:07 |
+
+The on-screen timestamp (e.g. "0:35") is always that anchor's real start time,
+not a stylistic flourish.
 
 ## Render it
 
@@ -35,6 +44,7 @@ start timestamp, not a stylistic flourish.
 cd remotion
 npm install
 npm run render:ch01     # → out/chapter-01-the-shift.mp4 (1920x1080, 30fps, h264)
+npm run render:ch02     # → out/chapter-02-taste.mp4
 npm run still:ch01       # → single PNG frame, for a quick sanity check
 npm run studio            # interactive Remotion Studio (scrub, preview, tweak)
 ```
@@ -49,23 +59,36 @@ The published cut lives at
 [`../launch-assets/from-copilot-to-colleague-ch1-explainer.mp4`](../launch-assets/from-copilot-to-colleague-ch1-explainer.mp4)
 — copy `out/chapter-*.mp4` there after every re-render that should ship.
 
-## Adding Chapter 2 (and the rest of the series)
+## Adding Chapter 3 (and the rest of the series)
 
-1. Copy `src/chapter01/` → `src/chapter02/` (durations.ts, primitives.tsx,
-   Scenes.tsx, Chapter02.tsx). `primitives.tsx` and `theme.ts` are meant to be
-   reused as-is — don't fork the visual language per chapter.
+Chapter 2 (`src/chapter02/`) is the second worked example — use it, not just
+Chapter 1, to see what varies (durations, scene count, card labels) versus
+what doesn't (imports from `shared/primitives.tsx`, the `SeriesWithProgress`
+assembly pattern, the theme).
+
+1. Copy `src/chapter02/` (durations.ts, Scenes.tsx, Chapter0N.tsx) →
+   `src/chapter03/`. Do **not** copy `shared/primitives.tsx` or `theme.ts` —
+   every chapter imports those from `../shared/primitives` and `../theme` as-is.
+   Forking them per chapter is exactly the drift this structure exists to prevent.
 2. Rewrite `Scenes.tsx`'s content from that chapter's `website/src/content/chapter-0N.md`:
    keep the same shape (hook → title → core framework/argument beats → one
-   sourced quote card with its real anchor timestamp → stats or a concrete
-   takeaway → outro/CTA), but let the beat count and hold times flex with how
-   many ideas the chapter actually needs — don't force every chapter into
-   exactly 10 scenes.
-3. Register the new composition in `Root.tsx` (new `id`, e.g. `"Chapter02"`).
-4. Add `render:ch02` / `still:ch02` scripts to `package.json` mirroring the
-   ch01 ones.
+   sourced quote card with its real anchor timestamp → a concrete
+   takeaway/framework recap → outro/CTA), but let the beat count and hold
+   times flex with how many ideas the chapter actually needs — don't force
+   every chapter into exactly 10 scenes.
+3. Register the new composition in `Root.tsx` (new `id`, e.g. `"Chapter03"`,
+   importing that chapter's own `TOTAL_DURATION_IN_FRAMES`).
+4. Add `render:ch03` / `still:ch03` scripts to `package.json` mirroring the
+   ch01/ch02 ones.
 5. Quote cards must cite a real Source Anchor from `claims/Claims Ledger.md` —
    grep the ledger for the chapter's claim numbers, use the anchor's own
    verbatim quote and start timestamp, never a paraphrase presented as a quote.
+6. After rendering, copy the published cut to `../launch-assets/` **and** to
+   `../website/public/video/`, then add an entry to
+   `website/src/data/chapterVideos.ts` so the chapter page picks it up
+   automatically (embed, `VideoObject` schema, `og:video` tags — all wired
+   generically off that registry, nothing chapter-specific to touch in
+   `ChapterDetail.tsx` or `structuredData.ts`).
 
 ## Design notes
 

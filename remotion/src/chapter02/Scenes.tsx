@@ -6,10 +6,8 @@ import { SCENE_DURATIONS } from './durations';
 export const HookScene = () => (
   <SceneBackground>
     <FadeInOut durationInFrames={SCENE_DURATIONS.hook}>
-      <Kicker>From Copilot to Colleague · Chapter 1</Kicker>
-      <Big>
-        The most important change in AI is not that chat got better.
-      </Big>
+      <Kicker>From Copilot to Colleague · Chapter 2</Kicker>
+      <Big>Cheap code is easy to misread.</Big>
     </FadeInOut>
   </SceneBackground>
 );
@@ -18,8 +16,8 @@ export const TitleScene = () => (
   <SceneBackground>
     <FadeInOut durationInFrames={SCENE_DURATIONS.titleCard}>
       <Big>
-        It's that people stopped wanting an answer&nbsp;
-        <span style={{ color: theme.accent }}>— and started wanting the work done.</span>
+        Generation got cheaper.&nbsp;
+        <span style={{ color: theme.accent }}>Bad decisions did not.</span>
       </Big>
       <p
         style={{
@@ -30,7 +28,7 @@ export const TitleScene = () => (
           marginTop: 40,
         }}
       >
-        The Shift: From Assistant to Delegate
+        Taste Still Matters When Code Gets Cheap
       </p>
     </FadeInOut>
   </SceneBackground>
@@ -39,7 +37,7 @@ export const TitleScene = () => (
 export const FrameworkIntroScene = () => (
   <SceneBackground>
     <FadeInOut durationInFrames={SCENE_DURATIONS.frameworkIntro}>
-      <Kicker>Three words. Three different relationships.</Kicker>
+      <Kicker>The scarcity that disappeared</Kicker>
       <p
         style={{
           fontFamily: theme.sans,
@@ -49,49 +47,49 @@ export const FrameworkIntroScene = () => (
           maxWidth: 900,
         }}
       >
-        Where does the human sit relative to the loop?
+        Building used to be its own filter. Remove the cost, and the filter goes with it.
       </p>
     </FadeInOut>
   </SceneBackground>
 );
 
-export const AssistantScene = () => (
+export const CriterionScene = () => (
   <TermCard
     index={0}
     total={3}
-    term="Assistant"
-    definition="Suggests. Produces a draft, an answer, an option — you decide what to do with it."
-    durationInFrames={SCENE_DURATIONS.assistant}
+    term="Success criterion"
+    definition="Written before the model runs — what counts as done, decided while you can still think clearly about it."
+    durationInFrames={SCENE_DURATIONS.criterion}
   />
 );
 
-export const CopilotScene = () => (
+export const ReviewerScene = () => (
   <TermCard
     index={1}
     total={3}
-    term="Copilot"
-    definition="Collaborates inside a human loop, alongside you in real time — the human is still flying the plane."
-    durationInFrames={SCENE_DURATIONS.copilot}
+    term="Reviewer veto"
+    definition="Kept after the model returns — someone with standing to reject a fluent, working, wrong answer."
+    durationInFrames={SCENE_DURATIONS.reviewer}
   />
 );
 
-export const DelegateScene = () => (
+export const TasteScene = () => (
   <TermCard
     index={2}
     total={3}
-    term="Delegate"
-    definition="Assigned work, expected to return with it done. Not a suggestion to evaluate — an artifact someone will rely on."
+    term="Taste"
+    definition="The skill that decides what to build, and rejects what shouldn't ship — the part that didn't get automated."
     emphasized
-    durationInFrames={SCENE_DURATIONS.delegate}
+    durationInFrames={SCENE_DURATIONS.taste}
   />
 );
 
-export const LoopShiftScene = () => (
+export const TripwireScene = () => (
   <SceneBackground>
-    <FadeInOut durationInFrames={SCENE_DURATIONS.loopShift}>
+    <FadeInOut durationInFrames={SCENE_DURATIONS.tripwire}>
       <Big>
-        The human steps <span style={{ color: theme.accent }}>out</span> of the loop —
-        and re-enters at review.
+        If you can't name the failing condition,&nbsp;
+        <span style={{ color: theme.accent }}>you weren't filtering.</span>
       </Big>
       <p
         style={{
@@ -105,7 +103,7 @@ export const LoopShiftScene = () => (
           marginRight: 'auto',
         }}
       >
-        That single move is the whole shift — and it changes what the system has to be.
+        You were accepting whatever came back.
       </p>
     </FadeInOut>
   </SceneBackground>
@@ -125,8 +123,7 @@ export const QuoteScene = () => (
           }}
         >
           <span style={{ color: theme.accent, fontSize: 60 }}>&ldquo;</span>
-          Agents have intelligence and capabilities, but not always expertise that we
-          need for real work.
+          The new scarce skill is writing specifications that fully capture the intent.
           <span style={{ color: theme.accent, fontSize: 60 }}>&rdquo;</span>
         </p>
         <p
@@ -138,7 +135,7 @@ export const QuoteScene = () => (
             marginTop: 24,
           }}
         >
-          Barry Zhang &amp; Mahesh Murag, Anthropic
+          Sean Grove, OpenAI
         </p>
         <div
           style={{
@@ -160,7 +157,7 @@ export const QuoteScene = () => (
               color: theme.accent,
             }}
           >
-            Source-anchored · 0:35
+            Source-anchored · 9:02
           </span>
         </div>
       </div>
@@ -168,37 +165,38 @@ export const QuoteScene = () => (
   </SceneBackground>
 );
 
-export const StatsScene = () => {
-  const stats: Array<[string, string]> = [
-    ['794', 'AI Engineer talks'],
-    ['54', 'source-anchored claims'],
-    ['199', 'video-timestamp anchors'],
+export const ScarceSkillsScene = () => {
+  const skills: Array<[string, string]> = [
+    ['Framing', 'the task, before the model runs'],
+    ['Review', 'the output, after it returns'],
   ];
   return (
     <SceneBackground>
-      <FadeInOut durationInFrames={SCENE_DURATIONS.stats}>
-        <Kicker>This book, by the numbers</Kicker>
-        <div style={{ display: 'flex', gap: 64, justifyContent: 'center' }}>
-          {stats.map(([n, label]) => (
-            <div key={label}>
+      <FadeInOut durationInFrames={SCENE_DURATIONS.scarceSkills}>
+        <Kicker>The two scarce skills, once execution is cheap</Kicker>
+        <div style={{ display: 'flex', gap: 80, justifyContent: 'center' }}>
+          {skills.map(([term, label]) => (
+            <div key={term}>
+              <div
+                style={{
+                  fontFamily: theme.sans,
+                  fontWeight: 600,
+                  fontSize: 44,
+                  textTransform: 'uppercase',
+                  letterSpacing: 2,
+                  color: theme.accent,
+                }}
+              >
+                {term}
+              </div>
               <div
                 style={{
                   fontFamily: theme.serif,
                   fontStyle: 'italic',
-                  fontSize: 72,
-                  color: theme.paper,
-                }}
-              >
-                {n}
-              </div>
-              <div
-                style={{
-                  fontFamily: theme.sans,
-                  fontWeight: 300,
-                  fontSize: 18,
+                  fontSize: 20,
                   color: theme.inkMuted,
-                  marginTop: 8,
-                  maxWidth: 180,
+                  marginTop: 10,
+                  maxWidth: 240,
                 }}
               >
                 {label}
@@ -215,7 +213,7 @@ export const StatsScene = () => {
             marginTop: 48,
           }}
         >
-          Every claim links to the exact second it came from.
+          Framing is no longer the cheap part before the real work. It is the work.
         </p>
       </FadeInOut>
     </SceneBackground>
@@ -245,7 +243,7 @@ export const OutroScene = () => (
               marginBottom: 16,
             }}
           >
-            Read Chapter 1 free
+            Read Chapter 2 free
           </p>
           <h2
             style={{
