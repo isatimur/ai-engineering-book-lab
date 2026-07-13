@@ -1,0 +1,23 @@
+{
+  "name": "from-copilot-to-colleague-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:ch01": "remotion render Chapter01 out/chapter-01-the-shift.mp4",
+    "still:ch01": "remotion still Chapter01 out/chapter-01-the-shift.png",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.489",
+    "@remotion/cli": "^4.0.489"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}
