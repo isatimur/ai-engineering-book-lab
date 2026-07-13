@@ -31,6 +31,19 @@ export const chapterVideos: ChapterVideo[] = [
       'including the Anthropic quote it draws on — source-anchored to the same video-timestamp ' +
       'anchor as the claims ledger entry.',
   },
+  {
+    chapterSlug: 'taste',
+    src: '/video/chapter-02-taste.mp4',
+    poster: '/video/chapter-02-poster.png',
+    durationSeconds: 34,
+    width: 1920,
+    height: 1080,
+    uploadDate: '2026-07-13',
+    description:
+      'A 34-second explainer on why cheap generation raises the value of taste instead of retiring ' +
+      "it, including Sean Grove's (OpenAI) quote on framing as the new scarce skill — source-anchored " +
+      'to the same video-timestamp anchor as the claims ledger entry.',
+  },
 ];
 
 export const chapterVideoFor = (chapterSlug: string): ChapterVideo | undefined =>
