@@ -4,6 +4,7 @@ import { TOTAL_DURATION_IN_FRAMES as CH01_DURATION } from './chapter01/durations
 import { Chapter02 } from './chapter02/Chapter02';
 import { TOTAL_DURATION_IN_FRAMES as CH02_DURATION } from './chapter02/durations';
 import { FPS } from './theme';
+import { OgCard, ogCardDefaultProps } from './ogcard/OgCard';
 
 export const RemotionRoot = () => (
   <>
@@ -22,6 +23,15 @@ export const RemotionRoot = () => (
       fps={FPS}
       width={1920}
       height={1080}
+    />
+    <Composition
+      id="OgCard"
+      component={OgCard}
+      durationInFrames={1}
+      fps={FPS}
+      width={1200}
+      height={630}
+      defaultProps={ogCardDefaultProps}
     />
   </>
 );

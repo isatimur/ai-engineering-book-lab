@@ -119,6 +119,13 @@ export const chapters: BookChapter[] = [
 /** Canonical per-chapter URL, e.g. `/read/01-the-shift`. */
 export const chapterPath = (c: BookChapter): string => `/read/${c.number}-${c.slug}`;
 
+/**
+ * Branded social-preview card for a chapter — legible at thumbnail size
+ * (unlike the dense whiteboard-style opener diagrams). Rendered via
+ * `remotion/scripts/render-og-cards.mjs`; see `remotion/src/ogcard/`.
+ */
+export const ogCardPath = (c: BookChapter): string => `/og/chapter-${c.number}.png`;
+
 /** The `:slug` route param for a chapter, e.g. `01-the-shift`. */
 export const chapterParam = (c: BookChapter): string => `${c.number}-${c.slug}`;
 
