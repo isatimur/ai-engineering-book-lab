@@ -1,19 +1,19 @@
 # Corpus Stats
 
-- Total notes: 794
-- Transcript status mix: {'auto_en_orig': 782, 'unavailable': 12}
+- Total notes: 853
+- Transcript status mix: {'auto_en_orig': 782, 'unavailable': 71}
 
 ## Theme counts
 
-- Agent Architecture: 185
-- Coding Agents: 268
-- Evals & Reliability: 247
-- General AI Engineering: 9
-- MCP & Tooling: 87
-- Models & Inference: 130
-- Org Design & Leadership: 242
-- RAG & Retrieval: 162
-- Security & Guardrails: 27
+- Agent Architecture: 212
+- Coding Agents: 275
+- Evals & Reliability: 250
+- General AI Engineering: 32
+- MCP & Tooling: 91
+- Models & Inference: 137
+- Org Design & Leadership: 247
+- RAG & Retrieval: 164
+- Security & Guardrails: 28
 - Voice & Realtime: 41
 
 ## Frequent speakers
@@ -23,10 +23,10 @@
 - Kevin Hou: 3
 - Samuel Colvin: 3
 - Harald Kirschner: 3
+- Will Brown: 3
 - Zach Blumenfeld: 3
 - Patrick Debois: 3
 - swyx: 3
 - Matt Pocock: 2
 - Robert Brennan: 2
-- Itamar Friedman: 2
-- Ankur Goyal: 2
+- Thariq Shihipar: 2

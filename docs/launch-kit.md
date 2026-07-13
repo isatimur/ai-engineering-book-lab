@@ -69,7 +69,7 @@ grows), reply within the first hour, and don't cross-post the same day.
 > don't match their cited source
 >
 > I built this out of a real problem: I'm writing a source-anchored AI engineering
-> book (794 practitioner talks as the corpus), and at 50+ claims across 10 chapters
+> book (853 practitioner talks as the corpus), and at 50+ claims across 10 chapters
 > I could no longer manually verify that every quote I cited actually appeared,
 > verbatim, in the source I pointed to. So I made the citation format a CI-enforced
 > invariant instead of a writing convention.

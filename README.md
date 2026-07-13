@@ -16,7 +16,7 @@
 &nbsp;
 [![claims-ledger](https://img.shields.io/badge/CI-claims--ledger-orange)](https://github.com/isatimur/claims-ledger)
 
-<sub>A book on AI engineering where **every claim links to the exact second of the talk it came from** — distilled from **794** practitioner talks, and graded by a **panel of three rival AI models** so no single model gets to flatter the prose.</sub>
+<sub>A book on AI engineering where **every claim links to the exact second of the talk it came from** — distilled from **853** practitioner talks, and graded by a **panel of three rival AI models** so no single model gets to flatter the prose.</sub>
 
 </div>
 
@@ -34,7 +34,7 @@
 
 ## Why this exists
 
-Most "AI-written" books produce slop because they have no source of truth — the model just remixes what it was trained on. **The Lab** is a different bet: a corpus of practitioner talks (the AI Engineer YouTube channel, **794 videos**), a bounded autonomous research loop, and a discipline that **no claim ships without a source anchor** — a precise pointer to the moment in a video where it came from.
+Most "AI-written" books produce slop because they have no source of truth — the model just remixes what it was trained on. **The Lab** is a different bet: a corpus of practitioner talks (the AI Engineer YouTube channel, **853 videos**), a bounded autonomous research loop, and a discipline that **no claim ships without a source anchor** — a precise pointer to the moment in a video where it came from.
 
 The visible output is *From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems* — a ten-chapter manuscript at [fromcopilottocolleague.com](https://fromcopilottocolleague.com/).
 
@@ -93,7 +93,7 @@ Read the loop's instructions: [`programs/book_autoresearch.md`](programs/book_au
 
 ```
 ai-engineering-book-lab/
-├── 01_Videos/          # source corpus (notes per video, 794+ entries)
+├── 01_Videos/          # source corpus (notes per video, 853+ entries)
 ├── 02_Themes/          # cross-corpus theme syntheses
 ├── 03_People/          # speaker profiles
 ├── 04_Concepts/        # concept pages (Harness, Eval, Context, etc.)
@@ -143,11 +143,11 @@ This repo gates its own claims via the same grammar — see [`.ledger/claims.md`
 
 ---
 
-## Status (2026-06)
+## Status (2026-07)
 
 Live counts are generated into [`STATS.md`](STATS.md) on every corpus change; the figures below are a snapshot.
 
-- **794 videos** ingested from the AI Engineer channel
+- **853 videos** ingested from the AI Engineer channel
 - **54 claims** anchored to video timestamps (44 strong, 10 moderate); **199 anchors**, 198 high-confidence
 - **50 speaker profiles** and **19 concept pages** synthesized from the corpus
 - **10 chapters** — all at **Drafting** depth — render live at [fromcopilottocolleague.com/read](https://fromcopilottocolleague.com/read)

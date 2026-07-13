@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 247
+- Total tagged videos: 250
 
 ## Cross-video synthesis
 
-- This theme appears across 247 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (135), Agent Architecture (122), Models & Inference (20).
+- This theme appears across 250 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (136), Agent Architecture (125), Models & Inference (20).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI; #25 Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA.
 
 ## Seed videos
@@ -259,6 +259,9 @@
 - [[791-uiP88SpCi1Q-your-agent-is-wasting-tokens-and-you-don-t-know-it-erik-hanchett-aws|#791 — Your Agent Is Wasting Tokens and You Don't Know It - Erik Hanchett, AWS]]
 - [[792-dRmWYHuIJxM-we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco|#792 — We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco]]
 - [[793-Iwe_RY-fYgI-ai-driven-multi-document-correlation-for-financial-compliance-varsha-shah-independent|#793 — AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent]]
+- [[795-vljxQZfJ9wY-production-evals-for-agentic-ai-systems-nishant-gupta-meta-superintelligence-labs|#795 — Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs]]
+- [[811-Rx8f05JI_WA-swe-marathon-evaluating-coding-agents-at-billion-token-scale-rishi-desai-abundant-ai|#811 — SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale - Rishi Desai, Abundant AI]]
+- [[817-1IdzkRVmWAA-how-we-taught-agents-to-use-good-retrieval-hanna-lichtenberg-mixedbread-ai|#817 — How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI]]
 
 ## Notes
 

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 268
+- Total tagged videos: 275
 
 ## Cross-video synthesis
 
-- This theme appears across 268 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (138), Evals & Reliability (135), Org Design & Leadership (40).
+- This theme appears across 275 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (143), Evals & Reliability (136), Org Design & Leadership (40).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -280,6 +280,13 @@
 - [[792-dRmWYHuIJxM-we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco|#792 — We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco]]
 - [[793-Iwe_RY-fYgI-ai-driven-multi-document-correlation-for-financial-compliance-varsha-shah-independent|#793 — AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent]]
 - [[794-65X0pQ6Lmbg-voice-in-visuals-out-the-agony-and-the-ecstasy-allen-pike-forestwalk-labs|#794 — Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs]]
+- [[810-9fubhllmsBU-field-guide-to-fable-thariq-shihipar-anthropic|#810 — Field Guide to Fable — Thariq Shihipar, Anthropic]]
+- [[811-Rx8f05JI_WA-swe-marathon-evaluating-coding-agents-at-billion-token-scale-rishi-desai-abundant-ai|#811 — SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale - Rishi Desai, Abundant AI]]
+- [[823-MpZzWMdmQCE-your-coding-agent-doesn-t-always-follow-your-rules-talha-sheikh-checkout-com|#823 — Your coding agent doesn't always follow your rules — Talha Sheikh, Checkout.com]]
+- [[824-HEFSExa0xl0-teaching-coding-agents-to-do-spreadsheets-nuno-campos-witan-labs|#824 — Teaching Coding Agents to do Spreadsheets - Nuno Campos, Witan Labs]]
+- [[826-iRcX54EO5g8-your-agent-is-blindfolded-johan-lajili-poolside-ai|#826 — Your agent is blindfolded — Johan Lajili, Poolside AI]]
+- [[833-YZQsWVeN3rE-design-patterns-for-ai-trust-juries-libraries-and-agent-tiers-alex-bauer-upside-tech|#833 — Design Patterns for AI Trust: Juries, Libraries, and Agent Tiers — Alex Bauer, Upside.tech]]
+- [[836-9arM9b7JgOo-develop-at-idea-velocity-jeffrey-lee-chan-snapchat|#836 — Develop at Idea Velocity - Jeffrey Lee-Chan, Snapchat]]
 
 ## Notes
 

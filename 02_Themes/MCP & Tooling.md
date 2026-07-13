@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 87
+- Total tagged videos: 91
 
 ## Cross-video synthesis
 
-- This theme appears across 87 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (28), Coding Agents (28), Org Design & Leadership (12).
+- This theme appears across 91 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (29), Coding Agents (28), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
 
 ## Seed videos
@@ -99,6 +99,10 @@
 - [[781-Jx4ZFEAq6bY-user-signal-dies-at-the-retrieval-boundary-sonam-pankaj-starlightsearch|#781 — User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch]]
 - [[792-dRmWYHuIJxM-we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco|#792 — We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco]]
 - [[794-65X0pQ6Lmbg-voice-in-visuals-out-the-agony-and-the-ecstasy-allen-pike-forestwalk-labs|#794 — Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs]]
+- [[801-6bmM45jkMDY-you-can-t-prompt-the-room-the-last-skill-ai-won-t-replace-bal-zs-horv-th-visuallabs|#801 — You Can't Prompt the Room: The Last Skill AI Won't Replace - Balázs Horváth, VisualLabs]]
+- [[804-UNzCG3lw6O0-building-great-agent-skills-the-missing-manual|#804 — Building Great Agent Skills: The Missing Manual]]
+- [[807-sAOBXCDiDOs-mcp-apps-primitives-discovery-and-the-future-of-software-pietro-zullo-manufact-inc|#807 — MCP Apps: Primitives, discovery, and the Future of Software - Pietro Zullo, Manufact, Inc]]
+- [[835-GdvKNwMcfd0-so-many-ai-tools-when-to-use-what-chris-noring-microsoft|#835 — So many AI Tools: When to use what? — Chris Noring, Microsoft]]
 
 ## Notes
 
