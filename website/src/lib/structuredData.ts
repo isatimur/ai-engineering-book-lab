@@ -1,5 +1,7 @@
 import { BOOK, SITE_ORIGIN, absoluteUrl } from '../data/book';
 import { chapters, chapterPath, type BookChapter } from '../data/bookChapters';
+import { bookDefinitionEntries, whatIsThisBookAnswer } from '../data/geo';
+import type { ChapterVideo } from '../data/chapterVideos';
 import type { EventLedger } from './eventLedgers';
 import { listEventLedgers, ledgerStats } from './eventLedgers';
 
@@ -19,18 +21,58 @@ export const bookJsonLd = () => ({
   alternativeName: BOOK.subtitle,
   author: author(),
   description: BOOK.subtitle,
+  abstract: whatIsThisBookAnswer(),
+  keywords: chapters.map((c) => c.title),
   url: `${SITE_ORIGIN}/`,
   image: absoluteUrl(BOOK.coverImage),
   inLanguage: 'en',
   genre: BOOK.category,
   bookFormat: 'https://schema.org/EBook',
   isAccessibleForFree: true,
+  citation: {
+    '@type': 'CreativeWork',
+    name: 'claims-ledger',
+    description: 'The open-source claim/source-anchor grammar this book is built on.',
+    url: 'https://github.com/isatimur/claims-ledger',
+  },
   hasPart: chapters.map((c, i) => ({
     '@type': 'Chapter',
     position: i + 1,
     name: c.title,
     url: absoluteUrl(chapterPath(c)),
   })),
+});
+
+/**
+ * FAQPage node — the "what is this book" extractable definition block.
+ * Answer text is shared with the visible `DefinitionBlock` component via
+ * `../data/geo`, so nothing here is invented independently of the page copy.
+ */
+export const whatIsThisBookJsonLd = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: bookDefinitionEntries().map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: { '@type': 'Answer', text: answer },
+  })),
+});
+
+/** Article node for "The Method" — the reproducible research machine behind the manuscript. */
+export const aboutTheMethodJsonLd = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: `The Method behind ${BOOK.title}`,
+  description:
+    'A reproducible research-and-writing machine: source-anchored claims, chapter-by-chapter ' +
+    'judge scoring, and a public, machine-readable evidence layer.',
+  url: `${SITE_ORIGIN}/`,
+  author: author(),
+  isPartOf: {
+    '@type': 'Book',
+    name: BOOK.title,
+    url: `${SITE_ORIGIN}/`,
+  },
 });
 
 /** A Chapter node — emitted on each /read/:slug page, linked back to the Book. */
@@ -97,6 +139,25 @@ export const eventLedgerJsonLd = (ledger: EventLedger) => {
     ),
   };
 };
+
+/** VideoObject node for a chapter's explainer video — emitted alongside the Chapter node. */
+export const chapterVideoJsonLd = (chapter: BookChapter, video: ChapterVideo) => ({
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: `${chapter.title} — explainer`,
+  description: video.description,
+  thumbnailUrl: absoluteUrl(video.poster),
+  contentUrl: absoluteUrl(video.src),
+  uploadDate: video.uploadDate,
+  duration: `PT${video.durationSeconds}S`,
+  width: video.width,
+  height: video.height,
+  isPartOf: {
+    '@type': 'Chapter',
+    name: chapter.title,
+    url: absoluteUrl(chapterPath(chapter)),
+  },
+});
 
 /** Breadcrumb trail: Home → The Book → Chapter N. */
 export const breadcrumbJsonLd = (chapter: BookChapter) => ({

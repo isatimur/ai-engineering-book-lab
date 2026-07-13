@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+
+# Rendered output stays local; the published cut is committed under
+# launch-assets/ instead (same pattern as the Ch1 carousel PDF).
+out/

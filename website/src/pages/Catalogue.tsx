@@ -5,11 +5,12 @@ import { scrollAudio } from '../lib/audio';
 import { MarkdownBlock } from '../components/text/MarkdownBlock';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
-import { bookJsonLd } from '../lib/structuredData';
+import { bookJsonLd, whatIsThisBookJsonLd, aboutTheMethodJsonLd } from '../lib/structuredData';
 import { BOOK, authorsSpineLine } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
 import { ExploreMenu, MobileNavMenu } from '../components/nav/ExploreMenu';
 import { AskAI } from '../components/AskAI';
+import { DefinitionBlock } from '../components/DefinitionBlock';
 
 export const Catalogue = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -40,7 +41,7 @@ export const Catalogue = () => {
         path="/"
         type="book"
       />
-      <JsonLd data={bookJsonLd()} />
+      <JsonLd data={[bookJsonLd(), whatIsThisBookJsonLd(), aboutTheMethodJsonLd()]} />
       <header className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-start pointer-events-none">
         <div className="pointer-events-auto flex items-start gap-4">
           <div className="w-8 h-8 flex items-center justify-center border border-white/20 rounded-sm">
@@ -139,6 +140,8 @@ export const Catalogue = () => {
           Or drift through the book as a solar system — the 3D Journey
           <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
         </a>
+
+        <DefinitionBlock />
 
         <section className="mt-16 pt-10 border-t border-white/10 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/45 mb-4">
