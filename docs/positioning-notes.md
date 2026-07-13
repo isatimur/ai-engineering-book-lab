@@ -4,9 +4,12 @@ Comparisons of *From Copilot to Colleague* against adjacent texts making similar
 arguments. Purpose: know precisely where the book overlaps with the consensus
 view and where it differentiates — for jacket copy, outreach, talks, and reviews.
 
-## vs. "7.3 For Organizations" (external passage, compared 2026-07-13)
+## vs. Cao, "Agentic Software" (arXiv:2606.05608), §7.3 For Organizations — compared 2026-07-13
 
-An external text's organizational recommendations, three points: (1) identify
+Source: Zhenfeng Cao, *Agentic Software: How AI Agents Are Restructuring the
+Software Paradigm*, arXiv:2606.05608 (June 2026) — registered in
+[evidence/External References.md](../evidence/External%20References.md).
+Its organizational recommendations, three points: (1) identify
 agent-ready workflows, (2) invest in evaluation frameworks, (3) redesign team
 structures toward "smaller teams of agent orchestrators." Compared against the
 canonical manuscript (`public/drafting/`, chapters 1, 3, 4, 9).

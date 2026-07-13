@@ -1,7 +1,7 @@
 # From Copilot to Colleague
 > How AI Engineering Turns Models into Dependable Systems
 
-By Timur Isachenko. Built from 794 AI Engineer talks · 54 claims · 199 source anchors.
+By Timur Isachenko & Daniel Mohanrao. Built from 794 AI Engineer talks · 54 claims · 199 source anchors.
 The complete book as markdown. Source: https://fromcopilottocolleague.com · https://github.com/isatimur/ai-engineering-book-lab
 
 # Chapter 1 — The Shift: From Assistant to Delegate
