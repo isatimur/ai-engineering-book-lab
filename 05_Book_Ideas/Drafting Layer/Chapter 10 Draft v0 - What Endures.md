@@ -98,9 +98,7 @@ What endures here is the idea that the company itself becomes a harness for dele
 
 That may be the least glamorous claim in the book and one of the most important.
 
-## The enduring pattern is constrained delegation
-
-If the book has one sentence it keeps rewriting, it is this one.
+## The enduring pattern
 
 The enduring pattern is constrained delegation.
 

@@ -136,14 +136,7 @@ Once you accept that the real shift is from suggestion to delegation, a lot of t
 
 Prompting, retrieval, evals, workflow engines, guardrails, tool protocols, observability, sandboxing, policy files, and approval systems are often discussed as if they were separate subcultures. They are not. They are pieces of one broader discipline: making delegated machine work trustworthy enough to use.
 
-That discipline has at least six recurring concerns, each of which becomes a chapter-level theme in the manuscript:
-
-1. **Legibility** — can the system understand the environment it is supposed to operate in?
-2. **Intent** — are the goals and constraints externalized well enough to survive handoff?
-3. **Measurement** — can the team tell whether the system is actually doing useful work?
-4. **Context** — is the model seeing the right information, in the right shape, at the right time?
-5. **Runtime trust** — can the work persist, recover, and expose itself to human supervision over time?
-6. **Boundaries** — where should the system be free to act, and where must human judgment remain decisive?
+That discipline keeps returning to a small set of questions. Can the system understand the environment it is supposed to operate in? Are the goals and constraints externalized well enough to survive handoff? Can the team tell whether the system is actually doing useful work? Is the model seeing the right information, in the right shape, at the right time? Can the work persist, recover, and expose itself to human supervision over time? Where should the system be free to act, and where must human judgment remain decisive?
 
 This is why AI engineering deserves to be treated as more than prompt craft or model selection. It is closer to distributed systems, product design, operations, and organizational design fused together around probabilistic components.
 
