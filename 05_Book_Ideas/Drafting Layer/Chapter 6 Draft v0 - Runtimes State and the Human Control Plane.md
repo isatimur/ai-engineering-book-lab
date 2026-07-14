@@ -30,7 +30,7 @@ Durability, then, is not extra credit. It is the runtime expression of seriousne
 
 ## The software factory needs an operating system
 
-The Software Factory case from Chapters 3 and 4 becomes even more revealing here.
+Meridian’s case from Chapters 3 and 4 becomes even more revealing here.
 
 The team already improved its repo. It already built a better harness. It already added stronger validations and more realistic evals. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
 

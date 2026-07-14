@@ -18,7 +18,7 @@ Scarcity moves upward: from typing to judgment, from production labor to orchest
 
 ## A Monday morning scene from the software factory
 
-Picture a Monday morning at a company that has already gone past casual AI adoption.
+Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption.
 
 Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday.
 
@@ -28,7 +28,7 @@ And that is the problem.
 
 The organization is no longer starved for output. It is starved for coherence. The newer material makes that claim feel less like startup pattern-matching and more like a general institutional law. Eoin Mulgrew’s public-sector account is especially useful because it shows the same pressure appearing inside a giant, legacy-heavy government environment: the challenge is not whether AI can produce artifacts, but whether workflows, backlogs, review surfaces, and operating norms can be rewired coherently enough for that production to matter. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions?
 
-That is the scene Chapter 9 has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
+That is the scene this chapter has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
 
 ## Buying seats is not the same as redesigning work
 

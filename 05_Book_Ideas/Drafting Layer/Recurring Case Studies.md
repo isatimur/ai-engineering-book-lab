@@ -9,6 +9,9 @@ Purpose: give the book 2 recurring examples that can anchor multiple chapters so
 ### Short label
 **The Software Factory**
 
+### Anchor entity
+**Meridian** — a mid-size fintech (composite, drawn from real patterns). Its payments repository is the persistent object that recurs across Chapters 1, 3, 4, 6, and 9.
+
 ### Core story
 A team starts by using AI as a fast autocomplete layer inside an ordinary repo. Results are inconsistent: good demos, uneven production quality, and too much manual cleanup. The team then realizes the bottleneck is not only the model but the environment. They rewrite the working surface for agents: clearer repo structure, tighter rules, stronger tests, explicit specs, reusable personas, and a staged workflow for planning, coding, review, and verification. Over time, the repo stops being just a place code lives and becomes a managed production environment for machine work — a software factory.
 
@@ -71,6 +74,9 @@ Do not let this become a vendor-specific coding-agent chapter. The value of the 
 
 ### Short label
 **The High-Stakes Colleague**
+
+### Anchor entity
+**Hargrove** — a mid-tier tax and advisory firm (composite, drawn from real patterns). Its assistant's evolution from chat surface to professional delegate is the persistent thread that recurs across Chapters 1, 5, 6, 7, and 8.
 
 ### Core story
 A professional-services system begins as a helpful assistant: it summarizes documents, answers questions, and cites sources. But legal and tax users do not just need help; they need work done correctly inside bounded, high-stakes workflows. The system therefore evolves into a constrained colleague. It retrieves from proprietary content, uses domain-specific tools, validates intermediate results, records its path, tunes autonomy by task, and surfaces its reasoning trail for expert review. The point is not maximal freedom. The point is dependable delegated work under professional risk.

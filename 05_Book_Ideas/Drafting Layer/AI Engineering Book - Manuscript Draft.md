@@ -95,19 +95,19 @@ That line can sound deflationary until you notice how much leverage it creates. 
 
 ## The two recurring cases: the Software Factory and the High-Stakes Colleague
 
-To keep this argument concrete, the book returns repeatedly to two recurring cases.
+To keep this argument concrete, the book returns repeatedly to two recurring cases. Both are composite — drawn from real patterns rather than a single company — but they are consistent enough that what happens in one chapter carries into the next.
 
-The first is the **Software Factory**.
+The first is the **Software Factory**, anchored in a company we will call **Meridian**.
 
-A team starts with an ordinary repository and a strong coding model. At first the agent feels magical on small tasks. Then the team expands scope and quality gets erratic. The model is not always the real problem. The deeper issue is that the workplace was never made legible enough for delegated machine work. The team has to add harnesses, specs, validation, context discipline, eval loops, runtime structure, and review surfaces. As it does, the repo starts behaving less like a chat playground and more like a managed production environment for machine labor.
+Meridian is a mid-size fintech. It starts with an ordinary payments repository and a strong coding model. At first the agent feels magical on small tasks. Then the team expands scope and quality gets erratic. The model is not always the real problem. The deeper issue is that the workplace was never made legible enough for delegated machine work. The team has to add harnesses, specs, validation, context discipline, eval loops, runtime structure, and review surfaces. As it does, the repo starts behaving less like a chat playground and more like a managed production environment for machine labor.
 
-That case drives Chapters 3, 4, and 6 in particular. It shows how quickly “AI coding” stops being a prompt problem and becomes a systems problem.
+That case drives Chapters 3, 4, and 6 in particular. It shows how quickly "AI coding" stops being a prompt problem and becomes a systems problem.
 
-The second is the **High-Stakes Colleague**.
+The second is the **High-Stakes Colleague**, anchored in a firm we will call **Hargrove**.
 
-Imagine a legal, tax, compliance, or enterprise-research assistant that begins life as a helpful conversational surface. Users like it when it summarizes and explains. Then they ask it to do real professional work: assemble evidence, draft analysis, trace support, navigate internal knowledge, and operate under risk. Suddenly generic fluency is not enough. The system needs provenance, access boundaries, retrieval discipline, staged authority, durable trajectories, and explicit review points. It is no longer being judged as an answer engine. It is being judged as a professional delegate.
+Hargrove is a mid-tier tax and advisory firm. Its assistant begins life as a helpful conversational surface that summarizes and explains. Then users ask it to do real professional work: assemble evidence, draft analysis, trace support, navigate internal knowledge, and operate under risk. Suddenly generic fluency is not enough. The system needs provenance, access boundaries, retrieval discipline, staged authority, durable trajectories, and explicit review points. It is no longer being judged as an answer engine. It is being judged as a professional delegate.
 
-That case becomes especially important in Chapters 5, 6, and 7. It makes the trust question impossible to romanticize. In higher-stakes domains, “almost right” is often the most dangerous category.
+That case becomes especially important in Chapters 5, 6, and 7. It makes the trust question impossible to romanticize. In higher-stakes domains, "almost right" is often the most dangerous category.
 
 These two cases matter because they prevent the opening from floating above the rest of the manuscript. The book is not arguing in abstractions. It is following the same transition across two kinds of work:
 
@@ -432,9 +432,9 @@ This chapter’s claim is simple: if you want AI to write production software, d
 
 ## A small software-factory vignette
 
-Consider a team that starts where many teams now start: with a good model inside an ordinary repo.
+Meridian started where many teams now start: with a good model inside an ordinary payments repo.
 
-At first the results feel magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time. So the team expands the scope. They ask it to wire together a new endpoint, touch a migration, update a frontend state machine, and preserve some vague house style that nobody has ever written down.
+At first the results felt magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time. So the team expands the scope. They ask it to wire together a new endpoint, touch a migration, update a frontend state machine, and preserve some vague house style that nobody has ever written down.
 
 Quality immediately gets erratic.
 
@@ -442,9 +442,9 @@ One patch uses a dependency the team would never approve. Another passes tests b
 
 So they change the workplace.
 
-They add explicit setup scripts instead of Slack archaeology. They tighten lint and type gates. They create agent-facing instructions. They check in examples of accepted patterns. They write slimmer task specs before handing work off. They stop relying on “everyone kind of knows how we do migrations here.” The repo becomes less like a haunted archive of past decisions and more like a managed surface for machine labor.
+They add explicit setup scripts instead of Slack archaeology. They tighten lint and type gates. They create agent-facing instructions. They check in examples of accepted patterns. They write slimmer task specs before handing work off. They stop relying on "everyone kind of knows how we do migrations here." The repo becomes less like a haunted archive of past decisions and more like a managed surface for machine labor.
 
-That is the recurring case I will call the software factory. It matters because it shows where the leverage really sits. The breakthrough is not that the model suddenly became a genius. The breakthrough is that the team stopped treating its own tacit judgment as invisible infrastructure.
+That is the recurring case this book will call the software factory. It matters because it shows where the leverage really sits. The breakthrough is not that the model suddenly became a genius. The breakthrough is that the team stopped treating its own tacit judgment as invisible infrastructure.
 
 ## The repo is the real interface
 
@@ -578,9 +578,9 @@ In other words, evals are not a side practice. They are the control system of pr
 
 ## The software factory needs a quality system
 
-In the previous chapter, the recurring case was a team turning an ordinary repository into a more legible workplace for coding agents. They added rules, specs, validations, and cleaner task surfaces. The harness improved, and the agent’s output improved with it.
+In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added rules, specs, validations, and cleaner task surfaces. The harness improved, and the agent's output improved with it.
 
-But that only gets the team halfway.
+But that only gets Meridian halfway.
 
 A more legible workplace makes delegated work possible. It does not by itself make delegated work trustworthy. The moment the repo starts behaving like a software factory, a new question appears: how do you know whether the factory is producing good work consistently?
 
@@ -596,15 +596,15 @@ Without that loop, teams are not really running a production system. They are ru
 
 The easiest way to see what evals are for is to watch what happens when they are missing.
 
-Imagine the software-factory team has just upgraded from “small safe edits” to “multi-file implementation tasks.” The agent is asked to add rate limiting to an internal API endpoint, thread the new behavior through a background job, and preserve an existing admin override. On first inspection the run looks good. The patch compiles. Tests pass. The PR description is tidy. A reviewer glances at the diff and says some version of the most expensive sentence in modern engineering: looks fine.
+By now Meridian's team has upgraded from "small safe edits" to "multi-file implementation tasks." The agent is asked to add rate limiting to an internal API endpoint, thread the new behavior through a background job, and preserve an existing admin override. On first inspection the run looks good. The patch compiles. Tests pass. The PR description is tidy. A reviewer glances at the diff and says some version of the most expensive sentence in modern engineering: looks fine.
 
 Two days later support reports something odd. A class of admin-triggered backfills is now stalling in production. Nothing is fully broken, but jobs are queuing longer than usual. Customers are not yet furious. Engineers are not yet panicking. The system is merely drifting into a worse state.
 
-The postmortem is revealing. The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different. The relevant exception had existed only in an old review comment and in one staff engineer’s head. The code still type-checked. The unit tests still passed because none of them covered the override path under production-like volume. The patch was locally plausible, globally wrong.
+The postmortem is revealing. The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different. The relevant exception had existed only in an old review comment and in the head of Meridian's most senior payments engineer — the one person who remembered why that path was special. The code still type-checked. The unit tests still passed because none of them covered the override path under production-like volume. The patch was locally plausible, globally wrong.
 
 This is the shape of many AI failures in production. They are not spectacular hallucinations. They are near-misses that survive ordinary review because each individual move looks reasonable. The model did not go insane. The system simply had no reliable way to notice that an important slice of behavior had regressed.
 
-Once the team sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path. They mine previous incidents for similar “special path” behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
+Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path. They mine previous incidents for similar "special path" behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
 
 That is what a control system looks like in practice. It converts an expensive lesson into a reusable instrument.
 
@@ -799,9 +799,9 @@ That distinction matters because the remedy changes. Hallucination invites bette
 
 ## The High-Stakes Colleague needs more than access
 
-The legal and tax case makes the stakes of this chapter especially clear.
+Hargrove’s tax practice makes the stakes of this chapter especially clear.
 
-Imagine a professional assistant that begins life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
+The firm’s assistant began life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
 
 At that point, generic model intelligence is no longer the bottleneck. The bottleneck is whether the system can assemble professional-grade context.
 
@@ -811,7 +811,7 @@ This is where the book’s second recurring case, the High-Stakes Colleague, bec
 
 In Harvey’s and related legal-frontier material, the problem is not only finding relevant text. It is finding the right text in the right topology: internal precedents, authoritative sources, matter-specific files, note trails, citations, and the relationships between them. The difference between “broadly relevant” and “operationally decisive” can be a single paragraph hidden in the wrong layer.
 
-That is why enterprise context systems need more than a document dump. They need access boundaries, source typing, freshness policies, ranking tuned to domain use, and interfaces that preserve provenance. In high-stakes work, a system that is 90 percent right for unclear reasons can still be professionally unusable.
+That is why Hargrove’s context system needs more than a document dump. It needs access boundaries, source typing, freshness policies, ranking tuned to domain use, and interfaces that preserve provenance. In high-stakes work, a system that is 90 percent right for unclear reasons can still be professionally unusable.
 
 The issue is not whether the model knows a lot. The issue is whether the product can build a trustworthy evidence surface around the model.
 
@@ -949,17 +949,17 @@ Durability, then, is not extra credit. It is the runtime expression of seriousne
 
 ## The software factory needs an operating system
 
-The Software Factory case from Chapters 3 and 4 becomes even more revealing here.
+Meridian's case from Chapters 3 and 4 becomes even more revealing here.
 
 The team already improved its repo. It already built a better harness. It already added stronger validations and more realistic evals. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
 
 This is where a second class of problems appears.
 
-One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman’s board, without station history, and without a clean shift handoff.
+One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman\u2019s board, without station history, and without a clean shift handoff.
 
 That is the deeper meaning of the software-factory metaphor. A factory is not only a prepared environment and a quality system. It also needs an operating system. It needs durable task identities, queues, checkpoints, resumability, visibility, and clear places for review. Otherwise increasing the number of workers only multiplies confusion.
 
-This is why Chapter 6 naturally belongs beside Chapter 3 rather than floating off into platform taxonomy. Harnesses without runtime semantics are fragile. The repo may be legible, the tasks may be specified, the standards may be measured, and the context may be well assembled. But if the work itself cannot persist and be supervised, the colleague illusion still breaks the first time the system has to keep going after the first clever turn.
+This is why the runtime chapter naturally belongs beside the harness chapter rather than floating off into platform taxonomy. Harnesses without runtime semantics are fragile. The repo may be legible, the tasks may be specified, the standards may be measured, and the context may be well assembled. But if the work itself cannot persist and be supervised, the colleague illusion still breaks the first time the system has to keep going after the first clever turn.
 
 ## Agentic systems are workflows with state
 
@@ -1266,7 +1266,7 @@ It hides latency behind a blinking cursor. It tolerates awkward pauses. It lets 
 
 Voice removes that mercy.
 
-Imagine the High-Stakes Colleague from the previous chapters, but now the system is on a live support call with a customer whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the customer record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
+Imagine Hargrove's assistant on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
 
 That scenario does two useful things for this book. First, it gives Chapter 8 a center stronger than “voice” in the abstract. Second, it reveals why realtime belongs in the manuscript’s main run at all. The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds. Problems chat can hide become audible.
 
@@ -1418,7 +1418,7 @@ Scarcity moves upward: from typing to judgment, from production labor to orchest
 
 ## A Monday morning scene from the software factory
 
-Picture a Monday morning at a company that has already gone past casual AI adoption.
+Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption.
 
 Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday.
 
@@ -1428,7 +1428,7 @@ And that is the problem.
 
 The organization is no longer starved for output. It is starved for coherence. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions?
 
-That is the scene Chapter 9 has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
+That is the scene this chapter has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
 
 ## Buying seats is not the same as redesigning work
 

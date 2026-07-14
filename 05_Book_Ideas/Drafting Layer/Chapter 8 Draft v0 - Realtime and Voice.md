@@ -8,7 +8,7 @@ It hides latency behind a blinking cursor. It tolerates awkward pauses. It lets 
 
 Voice removes that mercy.
 
-Imagine the High-Stakes Colleague from the previous chapters, but now the system is on a live support call with a customer whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the customer record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
+Imagine Hargrove’s assistant on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
 
 That scenario does two useful things for this book. First, it gives Chapter 8 a center stronger than “voice” in the abstract. Second, it reveals why realtime belongs in the manuscript’s main run at all. The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds. Problems chat can hide become audible.
 

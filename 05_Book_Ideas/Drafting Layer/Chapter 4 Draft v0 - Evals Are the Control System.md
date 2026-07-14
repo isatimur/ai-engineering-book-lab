@@ -16,9 +16,9 @@ In other words, evals are not a side practice. They are the control system of pr
 
 ## The software factory needs a quality system
 
-In the previous chapter, the recurring case was a team turning an ordinary repository into a more legible workplace for coding agents. They added rules, specs, validations, and cleaner task surfaces. The harness improved, and the agent’s output improved with it.
+In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added rules, specs, validations, and cleaner task surfaces. The harness improved, and the agent’s output improved with it.
 
-But that only gets the team halfway.
+But that only gets Meridian halfway.
 
 A more legible workplace makes delegated work possible. It does not by itself make delegated work trustworthy. The moment the repo starts behaving like a software factory, a new question appears: how do you know whether the factory is producing good work consistently?
 
@@ -34,15 +34,15 @@ Without that loop, teams are not really running a production system. They are ru
 
 The easiest way to see what evals are for is to watch what happens when they are missing.
 
-Imagine the software-factory team has just upgraded from “small safe edits” to “multi-file implementation tasks.” The agent is asked to add rate limiting to an internal API endpoint, thread the new behavior through a background job, and preserve an existing admin override. On first inspection the run looks good. The patch compiles. Tests pass. The PR description is tidy. A reviewer glances at the diff and says some version of the most expensive sentence in modern engineering: looks fine.
+By now Meridian’s team has upgraded from “small safe edits” to “multi-file implementation tasks.” The agent is asked to add rate limiting to an internal API endpoint, thread the new behavior through a background job, and preserve an existing admin override. On first inspection the run looks good. The patch compiles. Tests pass. The PR description is tidy. A reviewer glances at the diff and says some version of the most expensive sentence in modern engineering: looks fine.
 
 Two days later support reports something odd. A class of admin-triggered backfills is now stalling in production. Nothing is fully broken, but jobs are queuing longer than usual. Customers are not yet furious. Engineers are not yet panicking. The system is merely drifting into a worse state.
 
-The postmortem is revealing. The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different. The relevant exception had existed only in an old review comment and in one staff engineer’s head. The code still type-checked. The unit tests still passed because none of them covered the override path under production-like volume. The patch was locally plausible, globally wrong.
+The postmortem is revealing. The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different. The relevant exception had existed only in an old review comment and in the head of Meridian’s most senior payments engineer — the one person who remembered why that path was special. The code still type-checked. The unit tests still passed because none of them covered the override path under production-like volume. The patch was locally plausible, globally wrong.
 
 This is the shape of many AI failures in production. They are not spectacular hallucinations. They are near-misses that survive ordinary review because each individual move looks reasonable. The model did not go insane. The system simply had no reliable way to notice that an important slice of behavior had regressed.
 
-Once the team sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path. They mine previous incidents for similar “special path” behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
+Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path. They mine previous incidents for similar “special path” behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
 
 That is what a control system looks like in practice. It converts an expensive lesson into a reusable instrument.
 

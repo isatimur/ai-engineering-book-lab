@@ -14,9 +14,9 @@ This chapter’s claim is simple: if you want AI to write production software, d
 
 ## A small software-factory vignette
 
-Consider a team that starts where many teams now start: with a good model inside an ordinary repo.
+Meridian started where many teams now start: with a good model inside an ordinary payments repo.
 
-At first the results feel magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time. So the team expands the scope. They ask it to wire together a new endpoint, touch a migration, update a frontend state machine, and preserve some vague house style that nobody has ever written down.
+At first the results felt magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time. So the team expands the scope. They ask it to wire together a new endpoint, touch a migration, update a frontend state machine, and preserve some vague house style that nobody has ever written down.
 
 Quality immediately gets erratic.
 
@@ -26,7 +26,7 @@ So they change the workplace.
 
 They add explicit setup scripts instead of Slack archaeology. They tighten lint and type gates. They create agent-facing instructions. They check in examples of accepted patterns. They write slimmer task specs before handing work off. They stop relying on “everyone kind of knows how we do migrations here.” The repo becomes less like a haunted archive of past decisions and more like a managed surface for machine labor.
 
-That is the recurring case I will call the software factory. It matters because it shows where the leverage really sits. The breakthrough is not that the model suddenly became a genius. The breakthrough is that the team stopped treating its own tacit judgment as invisible infrastructure.
+That is the recurring case this book will call the software factory. It matters because it shows where the leverage really sits. The breakthrough is not that the model suddenly became a genius. The breakthrough is that the team stopped treating its own tacit judgment as invisible infrastructure.
 
 ## The repo is the real interface
 

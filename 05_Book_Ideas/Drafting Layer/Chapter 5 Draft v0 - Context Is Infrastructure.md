@@ -52,9 +52,9 @@ That distinction matters because the remedy changes. Hallucination invites bette
 
 ## The High-Stakes Colleague needs more than access
 
-The legal and tax case makes the stakes of this chapter especially clear.
+Hargrove’s tax practice makes the stakes of this chapter especially clear.
 
-Imagine a professional assistant that begins life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
+The firm’s assistant began life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
 
 At that point, generic model intelligence is no longer the bottleneck. The bottleneck is whether the system can assemble professional-grade context.
 

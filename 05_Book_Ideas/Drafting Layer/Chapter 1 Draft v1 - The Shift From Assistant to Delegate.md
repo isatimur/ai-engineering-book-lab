@@ -91,15 +91,15 @@ That line can sound deflationary until you notice how much leverage it creates. 
 
 To keep this argument concrete, the book returns repeatedly to two recurring cases.
 
-The first is the **Software Factory**.
+The first is the **Software Factory**, anchored in a company we will call **Meridian**.
 
-A team starts with an ordinary repository and a strong coding model. At first the agent feels magical on small tasks. Then the team expands scope and quality gets erratic. The model is not always the real problem. The deeper issue is that the workplace was never made legible enough for delegated machine work. The team has to add harnesses, specs, validation, context discipline, eval loops, runtime structure, and review surfaces. As it does, the repo starts behaving less like a chat playground and more like a managed production environment for machine labor.
+Meridian is a mid-size fintech. It starts with an ordinary payments repository and a strong coding model. At first the agent feels magical on small tasks. Then the team expands scope and quality gets erratic. The model is not always the real problem. The deeper issue is that the workplace was never made legible enough for delegated machine work. The team has to add harnesses, specs, validation, context discipline, eval loops, runtime structure, and review surfaces. As it does, the repo starts behaving less like a chat playground and more like a managed production environment for machine labor.
 
 That case drives Chapters 3, 4, and 6 in particular. It shows how quickly “AI coding” stops being a prompt problem and becomes a systems problem.
 
-The second is the **High-Stakes Colleague**.
+The second is the **High-Stakes Colleague**, anchored in a firm we will call **Hargrove**.
 
-Imagine a legal, tax, compliance, or enterprise-research assistant that begins life as a helpful conversational surface. Users like it when it summarizes and explains. Then they ask it to do real professional work: assemble evidence, draft analysis, trace support, navigate internal knowledge, and operate under risk. Suddenly generic fluency is not enough. The system needs provenance, access boundaries, retrieval discipline, staged authority, durable trajectories, and explicit review points. It is no longer being judged as an answer engine. It is being judged as a professional delegate.
+Hargrove is a mid-tier tax and advisory firm. Its assistant begins life as a helpful conversational surface that summarizes and explains. Then users ask it to do real professional work: assemble evidence, draft analysis, trace support, navigate internal knowledge, and operate under risk. Suddenly generic fluency is not enough. The system needs provenance, access boundaries, retrieval discipline, staged authority, durable trajectories, and explicit review points. It is no longer being judged as an answer engine. It is being judged as a professional delegate.
 
 That case becomes especially important in Chapters 5, 6, and 7. It makes the trust question impossible to romanticize. In higher-stakes domains, “almost right” is often the most dangerous category.
 
