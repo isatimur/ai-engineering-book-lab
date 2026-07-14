@@ -13,6 +13,15 @@
   --color-pink: #EAC6C0;
 }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
 body {
   background-color: var(--color-paper);
   color: var(--color-ink);
