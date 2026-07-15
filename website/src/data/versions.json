@@ -3,8 +3,30 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2509,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-90737a8.md"
+        },
+        {
+          "version_id": "git:d9483a1",
+          "source": "git",
+          "ref": "d9483a1c5c77ce567f0d93a3366a7c1b055e339b",
+          "date": "2026-07-13",
+          "status": "Drafting",
+          "wordCount": 2115,
+          "message": "Chapter 1 refinement: sharpen assistant/copilot/delegate definitions and delegation-discipline framing",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-d9483a1.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -39,28 +61,6 @@
           "content_ref": "01/git-f3fca12.md"
         },
         {
-          "version_id": "git:203912f",
-          "source": "git",
-          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 1931,
-          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-203912f.md"
-        },
-        {
-          "version_id": "git:96210fb",
-          "source": "git",
-          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 1945,
-          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-96210fb.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -74,8 +74,19 @@
       ]
     },
     "02": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2782,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -121,17 +132,6 @@
           "content_ref": "02/git-96210fb.md"
         },
         {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 1591,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-ef6219d.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -145,8 +145,19 @@
       ]
     },
     "03": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2775,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -192,17 +203,6 @@
           "content_ref": "03/git-f3fca12.md"
         },
         {
-          "version_id": "git:203912f",
-          "source": "git",
-          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 3210,
-          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-203912f.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -216,8 +216,19 @@
       ]
     },
     "04": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 3227,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -263,17 +274,6 @@
           "content_ref": "04/git-ef6219d.md"
         },
         {
-          "version_id": "git:f4fb29f",
-          "source": "git",
-          "ref": "f4fb29fa7f892cfb74edd0f455ae6dfa14bacd0b",
-          "date": "2026-06-01",
-          "status": "Drafting",
-          "wordCount": 1931,
-          "message": "draft(ch4,6): expand the two thin chapters to full Drafting depth",
-          "corpus_snapshot_hash": null,
-          "content_ref": "04/git-f4fb29f.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -287,8 +287,19 @@
       ]
     },
     "05": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2812,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -334,17 +345,6 @@
           "content_ref": "05/git-203912f.md"
         },
         {
-          "version_id": "git:bd6e176",
-          "source": "git",
-          "ref": "bd6e1761296486b71067ed0bd7b0b0ac68dfee29",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 3225,
-          "message": "prose(ch05): usefulness pilot — 2 in-prose sharpenings + 'What to do with this' takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-bd6e176.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -358,8 +358,19 @@
       ]
     },
     "06": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 3444,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -405,17 +416,6 @@
           "content_ref": "06/git-ed15457.md"
         },
         {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 1789,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-ef6219d.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -429,8 +429,19 @@
       ]
     },
     "07": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2647,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -476,17 +487,6 @@
           "content_ref": "07/git-96210fb.md"
         },
         {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 3093,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-ef6219d.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -500,8 +500,19 @@
       ]
     },
     "08": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2512,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -547,17 +558,6 @@
           "content_ref": "08/git-869bdb6.md"
         },
         {
-          "version_id": "git:ed15457",
-          "source": "git",
-          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 3511,
-          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "08/git-ed15457.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -571,8 +571,19 @@
       ]
     },
     "09": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2424,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",
@@ -618,17 +629,6 @@
           "content_ref": "09/git-c13829c.md"
         },
         {
-          "version_id": "git:f536564",
-          "source": "git",
-          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 3247,
-          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-f536564.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -642,8 +642,19 @@
       ]
     },
     "10": {
-      "current_version_id": "git:91275aa",
+      "current_version_id": "git:90737a8",
       "versions": [
+        {
+          "version_id": "git:90737a8",
+          "source": "git",
+          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 1745,
+          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-90737a8.md"
+        },
         {
           "version_id": "git:91275aa",
           "source": "git",

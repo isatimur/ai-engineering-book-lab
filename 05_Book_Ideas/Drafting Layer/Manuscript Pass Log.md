@@ -1,3 +1,20 @@
+## 2026-07-15 — Redundancy-thinning pass (all chapters) + Reader Version removal
+
+### What changed
+- Full-manuscript redundancy pass on `AI Engineering Book - Manuscript Draft.md`, per Editorial Review v2 Tier 1 (#3–#4). One editor per chapter, all ten chapters:
+  - `That is why ...` openers: 32 → 8 (target ≤15)
+  - `In other words ...` clinchers: 11 → 2 (target ≤5; both survivors carry content beyond restatement)
+  - `X is not Y. It is Z.` two-sentence constructions reduced by roughly half per chapter; survivors varied so they no longer share one cadence
+  - Stand-alone single-sentence paragraphs: 157 → ~59 measured loosely, with 1–2 deliberate keeps per chapter; the rest merged into the paragraphs they belonged to
+  - Empty forward-reference previews ("That is the subject of the next chapter") cut; content-bearing bridges kept
+  - Word count 26,909 → 26,078 (−3.1%). Every edit was a deletion, merge, or cadence collapse — no claims, quotes, attributions, or scenes added or removed. Meridian/Hargrove references, the Ch 4 rate-limiting-regression scene, the Ch 8 support-call scene, the Ch 9 Monday-morning scene, and Ch 10's final line all preserved verbatim.
+- Ran `scripts/sync_manuscript_to_public.py`: `public/drafting/*` and `website/src/content/chapter-*.md` now match the working draft (closes Editorial Review v2 Tier 0 #1 drift for this pass). Regenerated `read/*.md`, `llms.txt`, `llms-full.txt`, `sitemap.xml`.
+- Deleted stale `AI Engineering Book - Reader Version.md/.html` (Tier 0 #2): 20 leftover draft-note hits, superseded by `website/public/read/*` and `llms-full.txt`. No scripts referenced them.
+
+### Known follow-ups
+- Audiobook mp3s and judge scores are now stale relative to the edited chapters (`check_book_consistency.py` flags all ten) — regenerate when the next batch is worth the cost.
+- Remaining from Editorial Review v2: usefulness work (per-chapter metrics/decision rules, Tier 1 #5), cumulative Meridian/Hargrove arcs (#6), rendered scenes for Ch 3/5/7 (Tier 2).
+
 ## 2026-05-19 — Post-693 integration pass (Chapters 4, 5, 6, 9 + claims system)
 
 ### What changed

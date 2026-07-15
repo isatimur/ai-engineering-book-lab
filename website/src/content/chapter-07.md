@@ -5,21 +5,15 @@ A helpful model can get away with being vague about power. An acting system cann
 
 The moment an AI system can read across accounts, call tools, execute code, trigger workflows, or continue working after the user has moved on, trust stops being a soft judgment about how smart the model sounds. It becomes a hard architectural question. Who is this system acting as? What can it reach? What can it do without asking again? What happens if it is manipulated? What evidence remains after the fact? And how quickly can that power be reduced, revoked, or redirected when something goes wrong?
 
-That is why security belongs immediately after runtimes in the book’s spine. Chapter 6 argued that long-running delegated work needs state, checkpoints, observability, and a human control plane. Chapter 7 adds the next constraint: a control plane without authority boundaries is still not trustworthy. Durable execution tells you what the system is doing over time. Security determines whether it should have been allowed to do it at all.
+That is why security belongs immediately after runtimes. Chapter 6 argued that long-running delegated work needs state, checkpoints, observability, and a human control plane. Chapter 7 adds the next constraint: a control plane without authority boundaries is still not trustworthy. Durable execution tells you what the system is doing over time. Security determines whether it should have been allowed to do it at all.
 
 The core mistake in immature agent systems is to treat tool access as a product feature before treating delegated authority as a systems problem. That works for demos because the happy path flatters the design. The agent seems capable. It reaches many systems. It stitches steps together. But the same freedom that makes the demo look magical also enlarges the blast radius of every prompt injection, every misread instruction, every overscoped token, and every badly described tool.
-
-In other words, the more the system looks like a colleague, the more the organization has to care about identity, permissions, mediation, and audit.
 
 ## Agency turns security from request control into workflow control
 
 Traditional application security often had a relatively stable unit of action. A user clicked a button. An API call hit a service. The backend checked permissions. The execution path was constrained enough that teams could think in discrete requests.
 
-Agentic systems weaken that comfort.
-
-An agent does not only receive a command. It interprets intent, decides how to pursue it, fans out into tools, retries when steps fail, and may continue moving through a workflow long after the original prompt is gone from the user’s attention. The trust boundary therefore expands. The key question is no longer only whether a given user may access a given resource. It becomes whether a delegated machine actor can decide, retrieve, execute, and continue safely on that user’s behalf.
-
-That is a much larger surface.
+Agentic systems weaken that comfort. An agent does not only receive a command. It interprets intent, decides how to pursue it, fans out into tools, retries when steps fail, and may continue moving through a workflow long after the original prompt is gone from the user’s attention. The trust boundary therefore expands. The key question is no longer only whether a given user may access a given resource. It becomes whether a delegated machine actor can decide, retrieve, execute, and continue safely on that user’s behalf. That is a much larger surface.
 
 The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance workflows, the system is not merely answering a question. It may gather evidence, traverse internal sources, use validation engines, draft conclusions, and surface a recommendation for human sign-off. The risk does not live at one tool endpoint. It lives across the trajectory. A single misstep in that chain can leak the wrong document, overstate a conclusion, or cross a permission boundary that the human did not realize had been delegated.
 
@@ -33,9 +27,7 @@ One of the clearest lessons from the code-execution material is that system cont
 
 If an agent can execute code, browse untrusted content, open files, or chain across tools, then the design must assume it can be induced into bad behavior. Maybe by a malicious instruction. Maybe by a poisoned page. Maybe by a bug in tool descriptions. Maybe by a simple misunderstanding. The source of failure matters less than the consequence: a model cannot be the final enforcement layer for its own power.
 
-That is why sandboxing is not an implementation detail. It is part of the product.
-
-A serious code-executing agent should run in a constrained environment. Filesystem access should be scoped. Network access should be explicit. Secrets should be minimized. Tool permissions should be narrow by default. Risky operations should require step-up approval rather than inheriting broad ambient authority. If the system needs to browse arbitrary inputs, those inputs should not sit on the same trust plane as production credentials.
+Sandboxing is therefore part of the product, not an implementation detail. A serious code-executing agent should run in a constrained environment. Filesystem access should be scoped. Network access should be explicit. Secrets should be minimized. Tool permissions should be narrow by default. Risky operations should require step-up approval rather than inheriting broad ambient authority. If the system needs to browse arbitrary inputs, those inputs should not sit on the same trust plane as production credentials.
 
 This is an old security instinct, but agent systems give it new urgency. In classic software, code paths were written by developers and at least somewhat knowable in advance. In agentic software, the system is choosing among many possible paths at runtime. That makes deterministic boundaries even more valuable. The model may improvise, but the environment should fail closed.
 
@@ -55,7 +47,7 @@ The same logic should apply beyond coding. A research agent may not need write a
 
 These choices do not merely protect the organization. They shape the behavior of the system itself. Narrower powers reduce the number of tempting but unsafe paths the model can wander into. A better security design often makes the system easier to reason about, not only safer.
 
-That is why Chapter 7 should frame least privilege as an engineering discipline of product scoping. Safe delegation is not achieved by asking the model to be careful. It is achieved by making carelessness less powerful.
+Safe delegation comes from making carelessness less powerful, not from asking the model to be careful.
 
 ## MCP and standardized tool access do not remove governance; they raise its stakes
 
@@ -67,7 +59,7 @@ But interoperability does not dissolve governance problems. It concentrates them
 
 Once many tools can be exposed through a common protocol, the main bottleneck moves upward. Teams no longer ask only, “Can we connect this service?” They start asking, “Should this be exposed at all? To which agents? Under which identities? With what logging, discovery rules, consent surfaces, and policy constraints?” The protocol solves the wiring problem and reveals the management problem.
 
-That is why the enterprise MCP discussions are so useful for this chapter. They keep the book from confusing integration ease with production readiness. The easier it becomes to connect tools, the more pressure builds for curation, grouping, authorization, visibility, and roots of trust. The system needs to know not only what exists, but what is blessed, what is risky, what is scoped to a team, and what requires escalation.
+The enterprise MCP discussions keep the book from confusing integration ease with production readiness. The easier it becomes to connect tools, the more pressure builds for curation, grouping, authorization, visibility, and roots of trust. The system needs to know not only what exists, but what is blessed, what is risky, what is scoped to a team, and what requires escalation.
 
 This also connects back to Chapter 5. Context overload and capability overload are cousins. A model flooded with too many possible tools is not only inefficient. It is harder to govern. Progressive discovery, capability grouping, and mediated exposure help both cognition and security at once.
 
@@ -75,9 +67,7 @@ A mature tool ecosystem therefore does not eliminate chokepoints. It creates bet
 
 ## Enterprises keep reinventing gateways because gateways solve several problems at once
 
-Developers often prefer directness. Connect the agent to the tool. Let the model call the thing. Keep the stack simple.
-
-Organizations with real risk tend to rediscover a different preference: mediated access.
+Developers often prefer directness. Connect the agent to the tool. Let the model call the thing. Keep the stack simple. Organizations with real risk tend to rediscover a different preference: mediated access.
 
 Whether it is called a gateway, a policy plane, an identity hub, or a root of trust, the pattern keeps returning for understandable reasons. A trusted mediation layer can centralize auth, narrow credential handling, standardize policy enforcement, capture logs, and provide one place to revoke or reshape access when the environment changes. It can also make security teams less allergic to agent adoption because they are not being asked to bless an uncontrolled mesh of direct tool connections.
 

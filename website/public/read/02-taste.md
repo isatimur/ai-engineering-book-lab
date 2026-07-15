@@ -1,9 +1,7 @@
 # Chapter 2 — Taste Still Matters When Code Gets Cheap
 
 
-One of the easiest mistakes to make in an AI-heavy moment is to confuse abundance with mastery.
-
-When code gets cheaper to produce, it becomes tempting to think that engineering itself has become cheaper in the same proportion. A team can now generate ten versions of a feature instead of one. A founder can spin up a prototype in a weekend. A product manager can produce a plausible spec without waiting on a formal writing cycle. A junior engineer can land patches that would have taken much longer before. The system seems to remove friction everywhere.
+One of the easiest mistakes to make in an AI-heavy moment is to confuse abundance with mastery. When code gets cheaper to produce, it becomes tempting to think that engineering itself has become cheaper in the same proportion. A team can now generate ten versions of a feature instead of one. A founder can spin up a prototype in a weekend. A product manager can produce a plausible spec without waiting on a formal writing cycle. A junior engineer can land patches that would have taken much longer before. The system seems to remove friction everywhere.
 
 Some of that is real. A lot of routine output really has become cheaper.
 
@@ -11,7 +9,7 @@ But cheap output does not mean cheap judgment.
 
 In some ways, the opposite is happening. When code, copy, plans, tests, and glue work become easier to generate, the new bottleneck shifts toward deciding what should exist, what quality looks like, what tradeoffs are acceptable, what should be rejected, and how to tell the difference between elegant speed and expensive slop. The human contribution does not disappear. It becomes easier to see.
 
-That is the argument of this chapter. If Chapter 1 says the big shift is from suggestion to delegated execution, Chapter 2 says the human side of that shift is not less craft but more visible craft. Once a machine can produce more work than a human can carefully inspect by default, taste stops being a soft virtue and becomes part of the operating system.
+If Chapter 1 says the big shift is from suggestion to delegated execution, Chapter 2 says the human side of that shift is not less craft but more visible craft. Once a machine can produce more work than a human can carefully inspect by default, taste stops being a soft virtue and becomes part of the operating system.
 
 ## Cheap generation raises the value of judgment
 
@@ -35,9 +33,7 @@ The point is not that the tools are bad. The point is that they magnify what is 
 
 The word taste can sound soft, almost decorative, as if it refers only to style or personal preference. In engineering it means something harder.
 
-Taste is the ability to notice the difference between output that merely works and output that fits.
-
-It is the ability to feel when a patch is technically correct but shaped wrong for the system around it. It is knowing when a component boundary is too clever, when a naming choice will confuse the next person, when a generated paragraph says the obvious thing in the most generic way possible, when a workflow contains one hidden step too many, or when a prototype convenience is about to become permanent structure.
+Taste is the ability to notice the difference between output that merely works and output that fits. It is the ability to feel when a patch is technically correct but shaped wrong for the system around it. It is knowing when a component boundary is too clever, when a naming choice will confuse the next person, when a generated paragraph says the obvious thing in the most generic way possible, when a workflow contains one hidden step too many, or when a prototype convenience is about to become permanent structure.
 
 Tuomas Artman asks the right unsettling question: what happens when agents are capable of doing everything immediately for you?
 
@@ -46,15 +42,13 @@ The more important answer is that speed changes what human excellence consists o
 
 If the machine can produce immediately, the scarce skill is less often the manual act of producing and more often the act of selecting, directing, constraining, sequencing, and refusing. Taste becomes the discipline of quality discrimination under abundance.
 
-That is why the chapter resists the comforting fantasy that AI simply removes toil and leaves the rest of engineering unchanged. In many cases it removes one kind of toil by placing heavier demands on another kind of work. Someone still has to know what “good” means. Someone still has to tell the difference between a local success and a systemic mistake. Someone still has to notice when the generated work optimizes for velocity in a way that quietly damages legibility, maintainability, or trust.
+AI does not simply remove toil and leave the rest of engineering unchanged. In many cases it removes one kind of toil by placing heavier demands on another kind of work. Someone still has to know what “good” means. Someone still has to tell the difference between a local success and a systemic mistake. Someone still has to notice when the generated work optimizes for velocity in a way that quietly damages legibility, maintainability, or trust.
 
 This is also why taste is inseparable from architecture. The strongest engineers are not just better at cleaning up generated output. They are better at shaping the conditions under which good output is likely to be produced in the first place.
 
 ## The friction is your judgment
 
 Armin Ronacher and Cristina Poncela Cubeiro offer one of the sharpest counterweights to the rhetoric of frictionless shipping. Their talk begins with the argument that we should add some friction back, not because speed is bad, but because some friction is actually judgment in disguise.
-
-That distinction matters.
 
 A lot of traditional software friction is waste. Slow builds, unclear ownership, handoffs nobody needs, cumbersome tooling, meetings that exist only because the system is poorly designed — none of that deserves romantic defense. AI can remove a lot of this, and good riddance.
 
@@ -82,15 +76,13 @@ That mode is not worthless. In fact, it can be brilliant.
 
 For exploration, interface sketching, rough prototypes, internal tooling, one-off automation, toy apps, or situations where learning by doing is more valuable than formal design, vibe coding can be the correct move. It can widen the top of the funnel. It can make experimentation cheap enough that more people discover what is actually worth building. It can give individuals a level of expressive power that used to require a small team.
 
-The problem begins when a useful exploratory mode quietly hardens into a default production philosophy.
+The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey J. Gallon describes the hangover well: the app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
 
-Corey J. Gallon describes the hangover well: the app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
-
-That is the pattern Chapter 2 needs to name clearly. Vibe coding is not the enemy. Unexamined vibe coding is.
+Vibe coding is not the enemy. Unexamined vibe coding is.
 
 A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly says it bluntly: vibes will not cut it. AI code is still code. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
 
-So the right stance is not anti-vibe. It is mode-aware.
+So the right stance is not anti-vibe but mode-aware.
 
 Use vibe coding where the cost of being wrong is low and the goal is discovery.
 Switch out of vibe coding when the output must endure.
@@ -103,9 +95,7 @@ One of the most underrated effects of stronger generation tools is that they exp
 
 If a human engineer receives a vague task, progress may be slow enough that ambiguity reveals itself early. Questions emerge. Missing constraints become obvious. A meeting happens. The task gets reshaped before too much damage is done.
 
-A machine can take a badly framed prompt and sprint in the wrong direction with alarming competence.
-
-This makes problem framing more valuable, not less.
+A machine can take a badly framed prompt and sprint in the wrong direction with alarming competence. This makes problem framing more valuable, not less.
 
 What exactly is the task?
 What counts as success?
@@ -116,17 +106,13 @@ What would make this output unacceptable even if it looks superficially complete
 
 These questions used to be signs of seniority. They now become operational prerequisites for anyone trying to direct cheap delegated execution.
 
-That is why Chapter 2 belongs directly after the opening chapter. Once we say the future is delegated work, the immediate human consequence is that directing work becomes a first-class technical skill. The manager, staff engineer, founder, designer, or individual developer who can frame a problem well suddenly gains disproportionate leverage because the system can execute rapidly against that frame.
+Once we say the future is delegated work, the immediate human consequence is that directing work becomes a first-class technical skill. The manager, staff engineer, founder, designer, or individual developer who can frame a problem well suddenly gains disproportionate leverage because the system can execute rapidly against that frame.
 
-The inverse is also true. A badly framed task can now waste far more time than before because the generator will happily produce large amounts of plausible but misaligned output.
-
-In a high-output environment, the quality of the question increasingly shapes the quality of the answer.
+The inverse is also true. A badly framed task can now waste far more time than before because the generator will happily produce large amounts of plausible but misaligned output. In a high-output environment, the quality of the question increasingly shapes the quality of the answer.
 
 ## Review becomes more important because generation outruns intuition
 
-A subtle danger of AI-assisted work is that it can generate artifacts faster than human intuition can responsibly validate them.
-
-This matters in code, but also in strategy docs, product copy, research notes, customer communication, and operational plans. Humans are easily seduced by fluency and completion. A thing that looks finished exerts psychological pressure to be accepted. A thing that arrived quickly can feel like found value. The system does not merely save time; it changes the emotional texture of review.
+A subtle danger of AI-assisted work is that it can generate artifacts faster than human intuition can responsibly validate them. This matters in code, but also in strategy docs, product copy, research notes, customer communication, and operational plans. Humans are easily seduced by fluency and completion. A thing that looks finished exerts psychological pressure to be accepted. A thing that arrived quickly can feel like found value. The system does not merely save time; it changes the emotional texture of review.
 
 That is why review becomes a more strategic function in AI-native teams.
 
@@ -137,7 +123,7 @@ Review as the place where tacit standards become visible.
 
 This is where swyx’s “war on slop” is useful. Slop is not just bad code or generic writing. It is output that consumes trust faster than it creates value. It is work that looks done but transfers the cost downstream. It burdens the next person with confusion, cleanup, or false confidence. In a world of cheap generation, slop is not a side effect. It is the default failure mode.
 
-That is why anti-slop discipline is not elitism. It is economic realism.
+Anti-slop discipline is not elitism. It is economic realism.
 
 Cheap output that requires expensive cleanup is not actually cheap.
 Fast drafts that hide slow confusion are not actually fast.
@@ -149,7 +135,7 @@ The human reviewer is therefore not an obstacle to AI productivity. In a well-de
 
 One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are often what allow useful creativity to emerge.
 
-Itamar Friedman frames the problem through confidence: how do you let teams move fast while staying grounded in the codebase and its standards? The answer is not to remove constraints. It is to make the right ones explicit.
+Itamar Friedman frames the problem through confidence: how do you let teams move fast while staying grounded in the codebase and its standards? The answer is not to remove constraints but to make the right ones explicit.
 
 Constraints do several jobs at once.
 
@@ -161,9 +147,7 @@ They turn taste from a private opinion into something operational.
 
 This is true for codebase rules, product principles, review checklists, domain boundaries, writing standards, and architectural decisions. The team that can state its constraints well can delegate more safely than the team that relies on vibe, memory, and implied context.
 
-That observation creates a direct bridge into Chapter 3. Once judgment becomes more valuable, the next question is how to encode it. A lot of what we call taste at the individual level turns into harnesses, specs, and repo affordances at the system level.
-
-In other words, human judgment does not stay only inside the human. It gets externalized into the environment.
+Once judgment becomes more valuable, the next question is how to encode it. A lot of what we call taste at the individual level turns into harnesses, specs, and repo affordances at the system level.
 
 ## The software factory still needs adults in the room
 
@@ -173,19 +157,15 @@ A team begins with exciting outputs from coding agents. The first lesson is that
 
 The same is true in the High-Stakes Colleague case. A legal or tax workflow can be given better retrieval, better tools, validation passes, and trajectory review. But none of those layers removes the need for domain judgment. They are ways of making judgment scalable and inspectable.
 
-This is an important correction to a common story. AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible.
+AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible.
 
 The senior engineer, strong editor, careful researcher, or domain expert is no longer valuable mainly because they can personally grind through more output. They are valuable because they can define standards, frame problems, reject seductive nonsense, and shape systems so that more of the generated work lands inside the right quality envelope.
-
-That is why taste becomes a force multiplier rather than an old-fashioned luxury.
 
 ## The human job is shifting from production to direction
 
 It would be too simple to say that humans now only direct while machines produce. In practice, people still produce a lot, and in some cases manual work remains the fastest or safest path.
 
-But as a directional statement, the shift is real.
-
-A larger share of human value moves toward:
+But as a directional statement, the shift is real. A larger share of human value moves toward:
 
 - framing tasks well
 - defining constraints
@@ -197,11 +177,9 @@ A larger share of human value moves toward:
 
 This is why the AI-native skill set does not look like the disappearance of engineering fundamentals. It looks like fundamentals migrating upward into more leveraged parts of the loop.
 
-The better the generators get, the more dangerous it becomes to confuse typing with thinking.
+The better the generators get, the more dangerous it becomes to confuse typing with thinking. What remains scarce is not the ability to produce tokens. It is the ability to direct production toward something coherent, durable, and worth keeping.
 
-What remains scarce is not the ability to produce tokens. It is the ability to direct production toward something coherent, durable, and worth keeping.
-
-In that sense, taste is not a nostalgic defense of craftsmanship against automation. It is the discipline that keeps automation from collapsing into trash.
+In that sense, taste is not a nostalgic defense of craftsmanship against automation but the discipline that keeps automation from collapsing into trash.
 
 ## Closing move
 
