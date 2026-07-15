@@ -18,6 +18,7 @@ export const EXPLORE_ITEMS: ExploreItem[] = [
   { href: '/search', label: 'Search', description: 'Cross-chapter + glossary' },
   { href: '/versions', label: 'Versions', description: 'Git diffs per chapter' },
   { href: '/quality', label: 'Quality', description: 'MASH judge scorecards' },
+  { href: '/study-lab', label: 'Marketing Skills Lab', description: 'Interactive drills for skills & factories' },
   {
     href: '/whitepapers/ai-native-org.html',
     label: 'AI-Native Org whitepaper',

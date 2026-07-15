@@ -49,6 +49,7 @@ push('/', repoDate, '1.0', 'weekly');
 push('/enterprise', repoDate, '0.9', 'monthly');
 push('/assess', repoDate, '0.9', 'monthly');
 push('/workshop', repoDate, '0.8', 'monthly');
+push('/study-lab', gitDate('public/marketing-skills-study-lab/index.html'), '0.7', 'monthly');
 push('/visual-guide', repoDate, '0.8', 'weekly');
 push('/read', repoDate, '0.8', 'weekly');
 push('/read/graph', gitDate('src/evidence.json'), '0.7', 'weekly');

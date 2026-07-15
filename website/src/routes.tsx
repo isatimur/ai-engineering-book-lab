@@ -19,6 +19,7 @@ import { ConceptDetail } from './pages/ConceptDetail';
 import { MapDetail } from './pages/MapDetail';
 import { chapters, chapterParam } from './data/bookChapters';
 import { SpadeHero } from './pages/SpadeHero';
+import { StudyLab } from './pages/StudyLab';
 import { manifest } from './lib/manifest';
 
 import { SettingsProvider, AppLayout } from './context/SettingsContext';
@@ -69,6 +70,7 @@ export const routes: RouteRecord[] = [
       { path: 'assess', element: <Assess /> },
       { path: 'enterprise', element: <Enterprise /> },
       { path: 'workshop', element: <Workshop /> },
+      { path: 'study-lab', element: <StudyLab /> },
       { path: 'spade-hero', element: <SpadeHero /> },
       { path: '*', element: <Catalogue /> },
     ],

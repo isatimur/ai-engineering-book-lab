@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marketing Skills Study Lab</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2e;
+      --panel2: #1a2440;
+      --text: #e8edf8;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent2: #a78bfa;
+      --good: #34d399;
+      --bad: #f87171;
+      --warn: #fbbf24;
+      --border: #24304d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 1.5rem 1.25rem 1rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(11,16,32,.85);
+      backdrop-filter: blur(8px);
+      position: sticky; top: 0; z-index: 10;
+    }
+    header h1 { margin: 0 0 .25rem; font-size: 1.35rem; }
+    header p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .tag { display: inline-block; font-size: .7rem; padding: .15rem .45rem; border-radius: 999px; background: rgba(56,189,248,.15); color: var(--accent); margin-right: .35rem; }
+    nav {
+      display: flex; gap: .5rem; flex-wrap: wrap;
+      padding: .75rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+    nav button {
+      background: var(--panel2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: .45rem .85rem;
+      cursor: pointer;
+      font-size: .85rem;
+    }
+    nav button.active {
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      border-color: transparent;
+      color: white;
+    }
+    main { max-width: 1100px; margin: 0 auto; padding: 1.25rem; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
+    .grid { display: grid; gap: 1rem; }
+    @media (min-width: 800px) {
+      .grid.two { grid-template-columns: 1fr 1fr; }
+    }
+    .poster {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #000;
+      min-height: 180px;
+      object-fit: cover;
+    }
+    .poster.placeholder {
+      display: grid; place-items: center;
+      color: var(--muted); font-size: .9rem;
+      background: linear-gradient(135deg, #111827, #1e293b);
+    }
+    .options { display: grid; gap: .5rem; margin-top: .75rem; }
+    .options button {
+      text-align: left;
+      background: var(--panel2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: .65rem .8rem;
+      cursor: pointer;
+    }
+    .options button:hover { border-color: var(--accent); }
+    .options button.correct { border-color: var(--good); background: rgba(52,211,153,.12); }
+    .options button.wrong { border-color: var(--bad); background: rgba(248,113,113,.12); }
+    .feedback { margin-top: .75rem; padding: .75rem; border-radius: 10px; font-size: .92rem; }
+    .feedback.good { background: rgba(52,211,153,.12); border: 1px solid rgba(52,211,153,.35); }
+    .feedback.bad { background: rgba(248,113,113,.12); border: 1px solid rgba(248,113,113,.35); }
+    .score { color: var(--accent); font-weight: 600; }
+    .parts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: .6rem;
+    }
+    .part {
+      background: var(--panel2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: .7rem;
+      cursor: pointer;
+      transition: transform .15s, border-color .15s;
+      min-height: 92px;
+    }
+    .part:hover, .part.selected { border-color: var(--accent2); transform: translateY(-2px); }
+    .part .num { color: var(--accent); font-size: .75rem; font-weight: 700; }
+    .part .title { font-weight: 600; font-size: .88rem; margin: .2rem 0; }
+    .part .desc { color: var(--muted); font-size: .78rem; }
+    .detail {
+      margin-top: .75rem;
+      padding: .85rem;
+      background: #0f172a;
+      border-radius: 10px;
+      border: 1px dashed var(--border);
+      min-height: 80px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .ladder { display: grid; gap: .55rem; }
+    .rung {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: .75rem;
+      align-items: center;
+      padding: .65rem .75rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel2);
+      cursor: pointer;
+    }
+    .rung.active { border-color: var(--accent); box-shadow: 0 0 0 1px rgba(56,189,248,.25) inset; }
+    .rung .label { font-weight: 700; font-size: .85rem; }
+    .rung .hint { color: var(--muted); font-size: .82rem; }
+    .modes { display: grid; gap: .6rem; }
+    @media (min-width: 700px) { .modes { grid-template-columns: 1fr 1fr; } }
+    .mode {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: .8rem;
+      background: var(--panel2);
+      cursor: pointer;
+    }
+    .mode.active { border-color: var(--warn); }
+    .mode h3 { margin: 0 0 .35rem; font-size: .95rem; }
+    .mode p { margin: 0; color: var(--muted); font-size: .84rem; }
+    .advisors {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: .55rem;
+    }
+    .advisor {
+      background: var(--panel2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: .65rem;
+      cursor: pointer;
+      font-size: .82rem;
+    }
+    .advisor strong { display: block; margin-bottom: .2rem; }
+    .advisor span { color: var(--muted); }
+    .advisor.active { border-color: var(--accent2); }
+    .flashcard {
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 1.2rem;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: linear-gradient(160deg, #172554, #1e1b4b);
+      cursor: pointer;
+      user-select: none;
+    }
+    .flashcard .q { font-size: 1.05rem; font-weight: 600; }
+    .flashcard .a { color: #c4b5fd; margin-top: .5rem; display: none; }
+    .flashcard.revealed .a { display: block; }
+    .controls { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .75rem; }
+    .controls button, .btn {
+      background: var(--panel2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: .45rem .75rem;
+      cursor: pointer;
+      font-size: .85rem;
+    }
+    .btn.primary { background: linear-gradient(135deg, #0ea5e9, #6366f1); border: none; }
+    code { background: #0f172a; padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
+    .progress { height: 8px; background: var(--panel2); border-radius: 999px; overflow: hidden; margin: .75rem 0; }
+    .progress > div { height: 100%; background: linear-gradient(90deg, #0ea5e9, #6366f1); transition: width .25s; }
+    .stat-row { display: flex; gap: 1rem; flex-wrap: wrap; font-size: .85rem; color: var(--muted); margin-bottom: .5rem; }
+    .stat-row strong { color: var(--accent); }
+    .issue { border: 1px solid var(--border); border-radius: 10px; padding: .7rem .85rem; margin-bottom: .5rem; background: var(--panel2); }
+    .issue .meta { font-size: .75rem; color: var(--muted); margin-bottom: .25rem; }
+    .issue.done { border-color: rgba(52,211,153,.35); }
+    .issue.partial { border-color: rgba(251,191,36,.35); }
+    .issue.open { border-color: rgba(248,113,113,.25); }
+    .pill { display: inline-block; font-size: .68rem; padding: .12rem .4rem; border-radius: 999px; margin-right: .3rem; }
+    .pill.done { background: rgba(52,211,153,.15); color: var(--good); }
+    .pill.partial { background: rgba(251,191,36,.15); color: var(--warn); }
+    .pill.open { background: rgba(248,113,113,.12); color: var(--bad); }
+    .rehearsal-meta { font-size: .82rem; color: var(--muted); margin-top: .5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Marketing Skills Study Lab</h1>
+    <p>Interactive drills, timed rehearsals, and upstream issue tracking for the marketing-skills bundle.</p>
+  </header>
+
+  <nav id="tabs">
+    <button class="active" data-tab="overview">Overview</button>
+    <button data-tab="router">Router Quiz</button>
+    <button data-tab="loops">Loop Factory</button>
+    <button data-tab="aiseo">AI SEO Ladder</button>
+    <button data-tab="ads">Ad Creative Factory</button>
+    <button data-tab="paid">Paid Ads Ops</button>
+    <button data-tab="xalgo">X Algorithm</button>
+    <button data-tab="prospect">Prospecting</button>
+    <button data-tab="china">China Market</button>
+    <button data-tab="council">Marketing Council</button>
+    <button data-tab="rehearsal">Rehearsal</button>
+    <button data-tab="issues">Issues</button>
+    <button data-tab="flash">Flashcards</button>
+  </nav>
+
+  <main>
+    <section id="overview" class="section active">
+      <div class="grid two">
+        <div class="card">
+          <h2>How to use this lab</h2>
+          <p>Each tab trains one system from the marketing-skills bundle. Posters are generated via OpenArt and update when assets land in <code>study-lab/assets/</code>.</p>
+          <ul>
+            <li><strong>Router Quiz</strong> — pick the primary skill for real scenarios</li>
+            <li><strong>Loop Factory</strong> — learn the 9-part loop anatomy</li>
+            <li><strong>AI SEO Ladder</strong> — citation ≠ recommendation</li>
+            <li><strong>Ad Creative Factory</strong> — 4 production modes</li>
+            <li><strong>Paid Ads Ops</strong> — TCPL kill/graduate/scale decisions</li>
+            <li><strong>X Algorithm</strong> — 10 posting rules from open-sourced ranker</li>
+            <li><strong>Prospecting</strong> — demand-signal vs outbound branches</li>
+            <li><strong>Rehearsal</strong> — mixed 12-question sessions with weak-spot tracking</li>
+            <li><strong>Issues</strong> — upstream triage + drill links</li>
+          </ul>
+          <p style="margin-top:.75rem;font-size:.85rem;color:var(--muted)">Full audit: <code>ISSUES-REVIEW.md</code></p>
+        </div>
+        <div class="card">
+          <h2>Study posters</h2>
+          <img class="poster" id="poster-router" alt="Skills Router poster" src="assets/router-map.png" loading="lazy" />
+        </div>
+      </div>
+      <div class="grid two">
+        <div class="card"><img class="poster" src="assets/loop-factory.png" alt="Loop factory poster" loading="lazy" /></div>
+        <div class="card"><img class="poster" src="assets/ai-ladder.png" alt="AI visibility ladder poster" loading="lazy" /></div>
+        <div class="card"><img class="poster" src="assets/ad-creative-factory.png" alt="Ad creative factory poster" loading="lazy" /></div>
+        <div class="card"><img class="poster" src="assets/council-bench.png" alt="Marketing council poster" loading="lazy" /></div>
+        <div class="card"><img class="poster" src="assets/paid-ads-ops.png" alt="Paid ads decision system" loading="lazy" /></div>
+        <div class="card"><img class="poster" src="assets/x-algorithm.png" alt="X algorithm rules poster" loading="lazy" /></div>
+      </div>
+    </section>
+
+    <section id="router" class="section">
+      <div class="card">
+        <h2>Router Quiz</h2>
+        <img class="poster" src="assets/router-map.png" alt="Skills router map" loading="lazy" style="margin-bottom:.85rem" />
+        <p>Score: <span class="score" id="quiz-score">0</span> / <span id="quiz-total">0</span></p>
+        <p id="quiz-prompt">Loading…</p>
+        <div class="options" id="quiz-options"></div>
+        <div id="quiz-feedback"></div>
+        <div class="controls">
+          <button class="btn primary" id="quiz-next" disabled>Next scenario →</button>
+          <button class="btn" id="quiz-reset">Reset quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="loops" class="section">
+      <div class="card">
+        <h2>Loop Factory — 9-part anatomy</h2>
+        <img class="poster" src="assets/loop-factory.png" alt="Loop factory diagram" loading="lazy" style="margin-bottom:.85rem" />
+        <p>Click each part to see what it does. A complete loop needs all nine — missing stop conditions or idempotency creates runaway automation.</p>
+        <div class="parts" id="loop-parts"></div>
+        <div class="detail" id="loop-detail">Select a part to inspect it.</div>
+      </div>
+    </section>
+
+    <section id="aiseo" class="section">
+      <div class="card">
+        <h2>AI Visibility Ladder</h2>
+        <img class="poster" src="assets/ai-ladder.png" alt="AI visibility ladder diagram" loading="lazy" style="margin-bottom:.85rem" />
+        <p>Citation and recommendation are different outcomes. Click each rung.</p>
+        <div class="ladder" id="ladder"></div>
+        <div class="detail" id="ladder-detail">Select a rung.</div>
+      </div>
+    </section>
+
+    <section id="ads" class="section">
+      <div class="card">
+        <h2>Ad Creative Factory — 4 modes</h2>
+        <img class="poster" src="assets/ad-creative-factory.png" alt="Ad creative factory diagram" loading="lazy" style="margin-bottom:.85rem" />
+        <div class="modes" id="ad-modes"></div>
+        <div class="detail" id="ad-detail">Select a mode.</div>
+      </div>
+    </section>
+
+    <section id="paid" class="section">
+      <div class="card">
+        <h2>Paid Ads Ops — Meta decision drill</h2>
+        <img class="poster" src="assets/paid-ads-ops.png" alt="Paid ads decision system" loading="lazy" style="margin-bottom:.85rem" onerror="this.style.display='none'" />
+        <p>TCPL anchors every rule. Pick the correct action for each scenario (Meta B2B playbook).</p>
+        <p>Score: <span class="score" id="paid-score">0</span> / <span id="paid-total">0</span></p>
+        <p id="paid-prompt">Loading…</p>
+        <div class="options" id="paid-options"></div>
+        <div id="paid-feedback"></div>
+        <div class="controls">
+          <button class="btn primary" id="paid-next" disabled>Next scenario →</button>
+          <button class="btn" id="paid-reset">Reset</button>
+        </div>
+        <div class="detail" style="margin-top:1rem">
+          <strong>Quick refs:</strong> Ad ceiling = (daily budget × 14) ÷ (2 × TCPL). Data gate = wait until 3× TCPL spend. Graduate only when ≥5 QLs, ≥60% qualified rate, cost ≤ TCPL, ≥14 days, ≥1 QL in last 7 days.
+        </div>
+      </div>
+    </section>
+
+    <section id="xalgo" class="section">
+      <div class="card">
+        <h2>X Algorithm — 10 rules</h2>
+        <img class="poster" src="assets/x-algorithm.png" alt="X algorithm poster" loading="lazy" style="margin-bottom:.85rem" onerror="this.style.display='none'" />
+        <p>Click each rule. Structure is verified from xAI's open-sourced ranker; specific numbers are reported and age fast.</p>
+        <div class="parts" id="x-rules"></div>
+        <div class="detail" id="x-detail">Select a rule.</div>
+      </div>
+    </section>
+
+    <section id="prospect" class="section">
+      <div class="card">
+        <h2>Prospecting — branch & phases</h2>
+        <p>Pick the branch, then walk the five phases. Demand-signal ≠ general outbound.</p>
+        <div class="modes" id="prospect-branches"></div>
+        <div class="detail" id="prospect-branch-detail">Select a branch.</div>
+        <h3 style="margin:1rem 0 .5rem;font-size:.95rem">Five phases (both branches)</h3>
+        <div class="ladder" id="prospect-phases"></div>
+        <div class="detail" id="prospect-phase-detail">Select a phase.</div>
+      </div>
+    </section>
+
+    <section id="china" class="section">
+      <div class="card">
+        <h2>China market router (#439)</h2>
+        <p>Mainland China platforms — load <code>router-cn.md</code> + <code>workflows-cn/</code>. Ten skills ported from upstream PR.</p>
+        <p id="cn-prompt">Pick the primary workflow.</p>
+        <div class="options" id="cn-options"></div>
+        <div id="cn-feedback"></div>
+        <div class="controls">
+          <button class="btn" id="cn-next">Next scenario →</button>
+        </div>
+        <div class="detail" style="margin-top:1rem;font-size:.85rem">
+          <strong>Skills:</strong> xiaohongshu-marketing · short-video-marketing · live-commerce · wechat-ecosystem · mini-program-ecommerce · bilibili-marketing · weibo-marketing · china-ads · community-operations · private-domain-analytics
+        </div>
+      </div>
+    </section>
+
+    <section id="council" class="section">
+      <div class="card">
+        <h2>Marketing Council — advisor bench</h2>
+        <img class="poster" src="assets/council-bench.png" alt="Marketing council advisor bench" loading="lazy" style="margin-bottom:.85rem" />
+        <p>Pick 3–5 advisors with conflicting lenses for hard decisions. Simulation only — ground takes in published frameworks.</p>
+        <div class="advisors" id="advisors"></div>
+        <div class="detail" id="advisor-detail">Click an advisor to see their lens.</div>
+        <p style="margin-top:.75rem;color:var(--muted);font-size:.85rem">Selected: <span id="selected-advisors">none</span></p>
+      </div>
+    </section>
+
+    <section id="rehearsal" class="section">
+      <div class="card">
+        <h2>Rehearsal — mixed session</h2>
+        <p>12 random questions across router, paid ops, headlines, loops, CRO, iOS reveals, and edit anatomy. Tracks weak categories in your browser.</p>
+        <div class="stat-row">
+          <span>Sessions: <strong id="rh-sessions">0</strong></span>
+          <span>Best: <strong id="rh-best">—</strong></span>
+          <span>Weakest: <strong id="rh-weak">—</strong></span>
+        </div>
+        <div class="progress"><div id="rh-bar" style="width:0%"></div></div>
+        <p id="rh-progress-text" style="font-size:.85rem;color:var(--muted)">Press Start to begin.</p>
+        <p id="rh-prompt" style="font-weight:600;margin:.75rem 0">—</p>
+        <p class="rehearsal-meta" id="rh-category"></p>
+        <div class="options" id="rh-options"></div>
+        <div id="rh-feedback"></div>
+        <div class="controls">
+          <button class="btn primary" id="rh-start">Start session</button>
+          <button class="btn" id="rh-next" disabled>Next →</button>
+          <button class="btn" id="rh-reset-stats">Reset stats</button>
+        </div>
+        <div class="detail" id="rh-summary" style="margin-top:1rem;display:none"></div>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h2>Loop matcher</h2>
+          <p id="loop-match-prompt">Which loop fits this scenario?</p>
+          <div class="options" id="loop-match-options"></div>
+          <div id="loop-match-feedback"></div>
+          <button class="btn" id="loop-match-next" style="margin-top:.5rem">Next scenario</button>
+        </div>
+        <div class="card">
+          <h2>CRO router</h2>
+          <p id="cro-prompt">Pick the primary CRO skill.</p>
+          <div class="options" id="cro-options"></div>
+          <div id="cro-feedback"></div>
+          <button class="btn" id="cro-next" style="margin-top:.5rem">Next</button>
+        </div>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h2>B2B headline matcher (#404)</h2>
+          <p id="hl-prompt">Match headline to formula.</p>
+          <div class="options" id="hl-options"></div>
+          <div id="hl-feedback"></div>
+          <button class="btn" id="hl-next" style="margin-top:.5rem">Next</button>
+        </div>
+        <div class="card">
+          <h2>iOS reveal surface picker</h2>
+          <p id="ios-prompt">Best reveal format?</p>
+          <div class="options" id="ios-options"></div>
+          <div id="ios-feedback"></div>
+          <button class="btn" id="ios-next" style="margin-top:.5rem">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="issues" class="section">
+      <div class="card">
+        <h2>Upstream issues review</h2>
+        <p>Open items from <a href="https://github.com/coreyhaines31/marketingskills/issues" style="color:var(--accent)">coreyhaines31/marketingskills</a>. Filter by local fork status.</p>
+        <div class="controls" style="margin-bottom:.75rem">
+          <button class="btn active" data-issue-filter="all">All</button>
+          <button class="btn" data-issue-filter="done">Ported</button>
+          <button class="btn" data-issue-filter="partial">Partial</button>
+          <button class="btn" data-issue-filter="open">Not ported</button>
+        </div>
+        <div id="issue-list"></div>
+      </div>
+    </section>
+
+    <section id="flash" class="section">
+      <div class="card">
+        <h2>Flashcards</h2>
+        <div class="flashcard" id="flashcard">
+          <div class="q" id="fc-q">Click to reveal</div>
+          <div class="a" id="fc-a"></div>
+        </div>
+        <div class="controls">
+          <button class="btn" id="fc-prev">← Prev</button>
+          <button class="btn primary" id="fc-flip">Flip</button>
+          <button class="btn" id="fc-next">Next →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll('#tabs button');
+    const sections = document.querySelectorAll('.section');
+    tabs.forEach(btn => btn.addEventListener('click', () => {
+      tabs.forEach(b => b.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    }));
+
+    const quizData = [
+      { q: 'Traffic dropped after a Google update. Pages still index but rankings fell.', a: 'seo-audit', opts: ['seo-audit', 'paid-ads', 'social-content', 'pricing-strategy'] },
+      { q: 'ChatGPT recommends competitors but never your brand on "best [category]" queries.', a: 'ai-seo', opts: ['ai-seo', 'copywriting', 'directory-submissions', 'revops'] },
+      { q: 'Early-stage founder needs 10 people publicly describing the exact pain — no CRM list yet.', a: 'prospecting', opts: ['prospecting', 'cold-email', 'paid-ads', 'marketing-ideas'] },
+      { q: 'Meta account has 40 ads; need rules for kill vs graduate vs scale.', a: 'paid-ads', opts: ['paid-ads', 'ad-creative', 'analytics-tracking', 'ab-test-setup'] },
+      { q: 'Need 50 grounded static concepts weekly from reviews + winning ads.', a: 'ad-creative', opts: ['ad-creative', 'image', 'copywriting', 'marketing-loops'] },
+      { q: 'Set up a weekly SEO opportunity scan that runs without you remembering.', a: 'marketing-loops', opts: ['marketing-loops', 'seo-audit', 'content-strategy', 'marketing-ideas'] },
+      { q: 'Launch PR hit — now journalists are asking for comment on a trending story.', a: 'public-relations', opts: ['public-relations', 'crisis-communications', 'social-content', 'launch-strategy'] },
+      { q: 'Data breach — need a holding statement in the next hour.', a: 'crisis-communications', opts: ['crisis-communications', 'public-relations', 'copy-editing', 'email-sequence'] },
+      { q: 'Pricing page converts but signup form abandonment is 62%.', a: 'signup-flow-cro', opts: ['signup-flow-cro', 'page-cro', 'form-cro', 'onboarding-cro'] },
+      { q: 'Want Seth Godin + April Dunford + Byron Sharp on a positioning decision.', a: 'marketing-council', opts: ['marketing-council', 'product-marketing-context', 'marketing-psychology', 'competitor-profiling'] },
+      { q: 'LinkedIn post got engagement but X thread flopped — need platform-specific posting rules.', a: 'social-content', opts: ['social-content', 'copywriting', 'content-strategy', 'community-marketing'] },
+      { q: 'Google Ads brand terms inflate ROAS; need clean acquisition metric for bid targets.', a: 'paid-ads', opts: ['paid-ads', 'analytics-tracking', 'revops', 'pricing-strategy'] },
+    ];
+
+    let quizIdx = 0, quizScore = 0, quizAnswered = false;
+    const quizPrompt = document.getElementById('quiz-prompt');
+    const quizOptions = document.getElementById('quiz-options');
+    const quizFeedback = document.getElementById('quiz-feedback');
+    const quizNext = document.getElementById('quiz-next');
+    document.getElementById('quiz-total').textContent = quizData.length;
+
+    function renderQuiz() {
+      quizAnswered = false;
+      quizNext.disabled = true;
+      quizFeedback.innerHTML = '';
+      const item = quizData[quizIdx];
+      quizPrompt.textContent = item.q;
+      quizOptions.innerHTML = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          if (quizAnswered) return;
+          quizAnswered = true;
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          if (ok) quizScore++;
+          document.getElementById('quiz-score').textContent = quizScore;
+          quizFeedback.className = 'feedback ' + (ok ? 'good' : 'bad');
+          quizFeedback.innerHTML = ok
+            ? `Correct — primary skill is <code>${item.a}</code>.`
+            : `Not quite — primary skill is <code>${item.a}</code>. Add a secondary only if it changes the output.`;
+          quizNext.disabled = false;
+          [...quizOptions.children].forEach(c => c.disabled = true);
+        });
+        quizOptions.appendChild(b);
+      });
+    }
+    quizNext.addEventListener('click', () => {
+      quizIdx = (quizIdx + 1) % quizData.length;
+      renderQuiz();
+    });
+    document.getElementById('quiz-reset').addEventListener('click', () => {
+      quizIdx = 0; quizScore = 0;
+      document.getElementById('quiz-score').textContent = '0';
+      renderQuiz();
+    });
+    renderQuiz();
+
+    const loopParts = [
+      ['Check cadence', 'How often the loop looks — weekly, daily, on-trigger.'],
+      ['Acts when', 'Condition to act vs skip. Most runs should be "checked, nothing to do."'],
+      ['Purpose', 'The one outcome this loop moves.'],
+      ['Skills used', 'Which marketing skills the loop orchestrates.'],
+      ['Loop body', 'Ordered steps each iteration.'],
+      ['Self-check', 'Verify before acting — avoid noise and tracking bugs.'],
+      ['State / idempotency', 'Dedupe keys, cooldowns, last-run markers.'],
+      ['Stop / bail-out', 'When to halt, escalate, or disable itself.'],
+      ['Output', 'File, PR, staged draft, notification, or report.'],
+    ];
+    const loopPartsEl = document.getElementById('loop-parts');
+    const loopDetail = document.getElementById('loop-detail');
+    loopParts.forEach(([title, desc], i) => {
+      const el = document.createElement('div');
+      el.className = 'part';
+      el.innerHTML = `<div class="num">${i + 1}</div><div class="title">${title}</div><div class="desc">${desc.slice(0, 42)}…</div>`;
+      el.addEventListener('click', () => {
+        document.querySelectorAll('.part').forEach(p => p.classList.remove('selected'));
+        el.classList.add('selected');
+        loopDetail.textContent = desc;
+      });
+      loopPartsEl.appendChild(el);
+    });
+
+    const rungs = [
+      ['Retrieved', 'Model read your content but did not cite it. Mostly invisible.'],
+      ['Cited', 'Your page appears as a source — content usefulness.'],
+      ['Mentioned', 'Brand named in the answer — entity recognition.'],
+      ['Recommended', 'On the buyer shortlist — web-wide consensus, not your blog.'],
+      ['Recommended against', 'Shadow rung — models may rule you out on requirements-heavy prompts.'],
+    ];
+    const ladderEl = document.getElementById('ladder');
+    const ladderDetail = document.getElementById('ladder-detail');
+    rungs.forEach(([label, hint]) => {
+      const el = document.createElement('div');
+      el.className = 'rung';
+      el.innerHTML = `<div class="label">${label}</div><div class="hint">${hint}</div>`;
+      el.addEventListener('click', () => {
+        document.querySelectorAll('.rung').forEach(r => r.classList.remove('active'));
+        el.classList.add('active');
+        ladderDetail.textContent = hint;
+      });
+      ladderEl.appendChild(el);
+    });
+
+    const modes = [
+      ['Mode 1: Generate', 'Fresh ad copy from product context and platform specs.'],
+      ['Mode 2: Iterate', 'Analyze performance data; double down on winning patterns.'],
+      ['Mode 3: Grounded batches', '50 static concepts from reviews + winning ads — every concept cites a source.'],
+      ['Mode 4: Strategy loop', 'Decide which ads to make: roadmap, hooks, monthly retro.'],
+    ];
+    const modesEl = document.getElementById('ad-modes');
+    const adDetail = document.getElementById('ad-detail');
+    modes.forEach(([title, desc]) => {
+      const el = document.createElement('div');
+      el.className = 'mode';
+      el.innerHTML = `<h3>${title}</h3><p>${desc}</p>`;
+      el.addEventListener('click', () => {
+        document.querySelectorAll('.mode').forEach(m => m.classList.remove('active'));
+        el.classList.add('active');
+        adDetail.textContent = desc;
+      });
+      modesEl.appendChild(el);
+    });
+
+    const advisors = [
+      ['Seth Godin', 'Remarkability, permission, smallest viable audience'],
+      ['David Ogilvy', 'Research-driven brand + DR discipline'],
+      ['Eugene Schwartz', 'Mass desire, awareness stages'],
+      ['Claude Hopkins', 'Scientific advertising, test everything'],
+      ['Gary Halbert', 'Starving crowd — market before product'],
+      ['Russell Brunson', 'Funnels, hook-story-offer'],
+      ['Alex Hormozi', 'Offer construction, value equation'],
+      ['April Dunford', 'Positioning vs alternatives'],
+      ['Rory Sutherland', 'Behavioral science, psycho-logic'],
+      ['Byron Sharp', 'Mental availability, reach over loyalty'],
+      ['Ann Handley', 'Writing craft, braver marketing'],
+      ['Gary Vaynerchuk', 'Attention arbitrage, native channels'],
+    ];
+    const selected = new Set();
+    const advisorsEl = document.getElementById('advisors');
+    const advisorDetail = document.getElementById('advisor-detail');
+    const selectedEl = document.getElementById('selected-advisors');
+    advisors.forEach(([name, lens]) => {
+      const el = document.createElement('div');
+      el.className = 'advisor';
+      el.innerHTML = `<strong>${name}</strong><span>${lens}</span>`;
+      el.addEventListener('click', () => {
+        el.classList.toggle('active');
+        if (el.classList.contains('active')) selected.add(name); else selected.delete(name);
+        advisorDetail.textContent = `${name}: ${lens}`;
+        selectedEl.textContent = selected.size ? [...selected].join(', ') : 'none';
+      });
+      advisorsEl.appendChild(el);
+    });
+
+    const paidData = [
+      { q: 'Day 7: test ad spent 40% of fair-share minimum. CBO barely allocated budget.', a: 'kill', opts: ['kill', 'wait', 'graduate', 'scale +20%'], hint: 'Below fair-share at day 7 → Meta deprioritized it. Change hook/visual only if iterating.' },
+      { q: 'Rolling 14-day spend = 2.1× TCPL, zero pixel leads.', a: 'wait', opts: ['kill', 'wait', 'graduate', 'swap concept'], hint: 'Data gate: need 3× TCPL before judging. 2× has ~13% false-negative rate.' },
+      { q: 'Spend = 3.5× TCPL, zero pixel leads.', a: 'swap concept', opts: ['kill', 'wait', 'graduate', 'swap concept'], hint: 'At ≥3× TCPL with zero pixel leads → abandon concept, don\'t iterate dead angles.' },
+      { q: 'Pixel leads present but zero qualified in CRM at 3× TCPL spend.', a: 'swap angle', opts: ['kill delivery', 'swap angle', 'graduate', 'scale +20%'], hint: 'Quality layer Meta can\'t see: keep format, change angle and ICP-filtering language.' },
+      { q: 'Cost per QL = 0.9× TCPL, 7 QLs, 65% qualified, running 18 days, 2 QLs last week.', a: 'graduate', opts: ['kill', 'wait', 'graduate', 'swap concept'], hint: 'All graduation criteria met → move Testing → Scaling (~80% budget).' },
+      { q: 'Scaling ad: frequency 3.8, CTR down 25% from baseline, cost +35%.', a: 'swap now', opts: ['monitor', 'swap now', 'scale +20%', 'kill delivery'], hint: 'Scaling campaign stricter bar: warning at 3.0–3.5; swap at >3.5 or cost +40%.' },
+      { q: '$1,000/day budget, TCPL $500. How many active ads max before starvation?', a: '14 ads', opts: ['6 ads', '14 ads', '28 ads', '40 ads'], hint: 'Ceiling = (1000 × 14) ÷ (2 × 500) = 14. Run 6–10 in practice.' },
+      { q: 'Ready to raise daily budget 25% tomorrow — proven ads meet minimum inventory.', a: 'scale +20% every 5 days', opts: ['scale +20% every 5 days', 'scale +25% now', 'scale +50% now', 'edit creative in-place'], hint: 'Never +30% in one move; +20% every 5 days. Editing in-place resets learning.' },
+    ];
+    let paidIdx = 0, paidScore = 0, paidAnswered = false;
+    const paidPrompt = document.getElementById('paid-prompt');
+    const paidOptions = document.getElementById('paid-options');
+    const paidFeedback = document.getElementById('paid-feedback');
+    const paidNext = document.getElementById('paid-next');
+    document.getElementById('paid-total').textContent = paidData.length;
+    function renderPaid() {
+      paidAnswered = false;
+      paidNext.disabled = true;
+      paidFeedback.innerHTML = '';
+      const item = paidData[paidIdx];
+      paidPrompt.textContent = item.q;
+      paidOptions.innerHTML = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          if (paidAnswered) return;
+          paidAnswered = true;
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          if (ok) paidScore++;
+          document.getElementById('paid-score').textContent = paidScore;
+          paidFeedback.className = 'feedback ' + (ok ? 'good' : 'bad');
+          paidFeedback.textContent = (ok ? 'Correct. ' : `Answer: ${item.a}. `) + item.hint;
+          paidNext.disabled = false;
+          [...paidOptions.children].forEach(c => c.disabled = true);
+        });
+        paidOptions.appendChild(b);
+      });
+    }
+    paidNext.addEventListener('click', () => { paidIdx = (paidIdx + 1) % paidData.length; renderPaid(); });
+    document.getElementById('paid-reset').addEventListener('click', () => {
+      paidIdx = 0; paidScore = 0;
+      document.getElementById('paid-score').textContent = '0';
+      renderPaid();
+    });
+    renderPaid();
+
+    const xRules = [
+      ['1. Hook in 8 words', 'Dwell is scored two ways; scroll-past kills reach. Open with a specific claim — no warmup.'],
+      ['2. ~60 min spacing', 'Author-diversity scorer decays same-author posts in one feed. Bursts cannibalize reach.'],
+      ['3. Name topic early', 'Topic routing needs explicit nouns in first ~10 words. Vague musings don\'t get routed.'],
+      ['4. Write for DM-forward', 'Share-via-DM is its own signal — stronger lever than likes for distribution.'],
+      ['5. Quote scores twice', 'Quote engagement and quoted-click are separate weighted terms.'],
+      ['6. Write for the follow', 'Follow-author is a distinct positive signal — make strangers want more.'],
+      ['7. Profile click bait', 'Profile clicks score. Strong bio + pinned post convert the click.'],
+      ['8. Name specific things', 'Specificity enables routing; generic CTA phrases hit muted-keyword filters pre-score.'],
+      ['9. Video min duration', 'Video quality view only pays above MIN_VIDEO_DURATION_MS — add captions for muted dwell.'],
+      ['10. First 30 min present', 'Early replies compound reply/dwell signals — post when you can stay, not when scheduler fires.'],
+    ];
+    const xRulesEl = document.getElementById('x-rules');
+    const xDetail = document.getElementById('x-detail');
+    xRules.forEach(([title, desc]) => {
+      const el = document.createElement('div');
+      el.className = 'part';
+      el.innerHTML = `<div class="title">${title}</div><div class="desc">${desc.slice(0, 48)}…</div>`;
+      el.addEventListener('click', () => {
+        document.querySelectorAll('#x-rules .part').forEach(p => p.classList.remove('selected'));
+        el.classList.add('selected');
+        xDetail.textContent = desc;
+      });
+      xRulesEl.appendChild(el);
+    });
+
+    const branches = [
+      ['Demand-signal', 'Early-stage: first customers, design partners, beta users. Score 0–100 on public pain evidence — forums, reviews, GitHub issues, job posts.'],
+      ['General outbound', 'Established ICP: firmographics + buying signal + verified contact via LinkedIn, Apollo, Clay, directories. Hot/Warm/Cold/Skip labels.'],
+    ];
+    const phases = [
+      ['1. Define ICP', 'Firmographics, buying signal, decision-maker, disqualifiers → one-paragraph ICP + pass/fail checklist.'],
+      ['2. Build candidates', 'Source 2–3× target count. Cross-verify with multiple sources when possible.'],
+      ['3. Qualify each', 'Score with evidence URL. Confidence: High (2+ sources), Medium (1 + consistent), Low (flag uncertainty).'],
+      ['4. Score & prioritize', 'Outbound: Hot/Warm/Cold/Skip. Demand-signal: 0–100 demand-fit score.'],
+      ['5. Output', 'Outbound: CSV/table + top 3–5 outreach targets. Demand-signal: evidence report with cited sources.'],
+    ];
+    const branchEl = document.getElementById('prospect-branches');
+    const branchDetail = document.getElementById('prospect-branch-detail');
+    branches.forEach(([title, desc]) => {
+      const el = document.createElement('div');
+      el.className = 'mode';
+      el.innerHTML = `<h3>${title}</h3><p>${desc.slice(0, 90)}…</p>`;
+      el.addEventListener('click', () => {
+        document.querySelectorAll('#prospect-branches .mode').forEach(m => m.classList.remove('active'));
+        el.classList.add('active');
+        branchDetail.textContent = desc;
+      });
+      branchEl.appendChild(el);
+    });
+    const phaseEl = document.getElementById('prospect-phases');
+    const phaseDetail = document.getElementById('prospect-phase-detail');
+    phases.forEach(([label, hint]) => {
+      const el = document.createElement('div');
+      el.className = 'rung';
+      el.innerHTML = `<div class="label">${label}</div><div class="hint">${hint}</div>`;
+      el.addEventListener('click', () => {
+        document.querySelectorAll('#prospect-phases .rung').forEach(r => r.classList.remove('active'));
+        el.classList.add('active');
+        phaseDetail.textContent = hint;
+      });
+      phaseEl.appendChild(el);
+    });
+
+    const loopMatchData = [
+      { q: 'Striking-distance keywords with no matching page — weekly scan.', a: 'keyword-gap loop', opts: ['keyword-gap loop', 'content-decay loop', 'ranking-drop watch loop', 'backlink-prospecting loop'] },
+      { q: 'Priority page dropped 8 positions after a SERP layout change.', a: 'ranking-drop watch loop', opts: ['keyword-gap loop', 'ranking-drop watch loop', 'internal-linking loop', 'competitor-watch loop'] },
+      { q: 'Published 3 posts this month with zero internal links in/out.', a: 'internal-linking loop', opts: ['internal-linking loop', 'content-calendar refill loop', 'programmatic-SEO quality loop', 'community-engagement loop'] },
+      { q: 'Template pages showing thin duplication across 400 URLs.', a: 'programmatic-SEO quality loop', opts: ['programmatic-SEO quality loop', 'content-decay loop', 'keyword-gap loop', 'landing-page regression loop'] },
+      { q: 'Meta test ads piling up with no kill/graduate rules.', a: 'paid-search query-mining loop', opts: ['retargeting-hygiene loop', 'paid-search query-mining loop', 'landing-page regression loop', 'competitor-watch loop'], hint: 'Also valid: retargeting-hygiene for audience cleanup — query-mining fits search term waste.' },
+    ];
+    let loopMatchIdx = 0;
+    function renderLoopMatch() {
+      const item = loopMatchData[loopMatchIdx];
+      document.getElementById('loop-match-prompt').textContent = item.q;
+      const el = document.getElementById('loop-match-options');
+      el.innerHTML = '';
+      document.getElementById('loop-match-feedback').textContent = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          const fb = document.getElementById('loop-match-feedback');
+          fb.className = 'feedback ' + (ok ? 'good' : 'bad');
+          fb.textContent = ok ? 'Correct.' : `Primary: ${item.a}.` + (item.hint ? ' ' + item.hint : '');
+          [...el.children].forEach(c => c.disabled = true);
+        });
+        el.appendChild(b);
+      });
+    }
+    document.getElementById('loop-match-next').addEventListener('click', () => {
+      loopMatchIdx = (loopMatchIdx + 1) % loopMatchData.length;
+      renderLoopMatch();
+    });
+    renderLoopMatch();
+
+    const croData = [
+      { q: 'Pricing page traffic is high but demo requests are flat.', a: 'page-cro', opts: ['page-cro', 'signup-flow-cro', 'form-cro', 'popup-cro'] },
+      { q: '62% abandon during email/password/confirm on trial signup.', a: 'signup-flow-cro', opts: ['page-cro', 'signup-flow-cro', 'onboarding-cro', 'form-cro'] },
+      { q: 'Demo request form: 9 fields, 4% completion.', a: 'form-cro', opts: ['form-cro', 'signup-flow-cro', 'popup-cro', 'page-cro'] },
+      { q: 'Exit-intent newsletter modal converts 0.3%.', a: 'popup-cro', opts: ['popup-cro', 'form-cro', 'page-cro', 'paywall-upgrade-cro'] },
+      { q: 'Users sign up but never complete setup checklist.', a: 'onboarding-cro', opts: ['onboarding-cro', 'signup-flow-cro', 'page-cro', 'email-sequence'] },
+      { q: 'Free users hit export limit — upgrade modal ignored.', a: 'paywall-upgrade-cro', opts: ['paywall-upgrade-cro', 'popup-cro', 'pricing-strategy', 'page-cro'] },
+    ];
+    let croIdx = 0;
+    function renderCro() {
+      const item = croData[croIdx];
+      document.getElementById('cro-prompt').textContent = item.q;
+      const el = document.getElementById('cro-options');
+      el.innerHTML = '';
+      document.getElementById('cro-feedback').textContent = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          const fb = document.getElementById('cro-feedback');
+          fb.className = 'feedback ' + (ok ? 'good' : 'bad');
+          fb.textContent = ok ? `Correct — ${item.a}.` : `Primary: ${item.a}. See page-cro routing table.`;
+          [...el.children].forEach(c => c.disabled = true);
+        });
+        el.appendChild(b);
+      });
+    }
+    document.getElementById('cro-next').addEventListener('click', () => { croIdx = (croIdx + 1) % croData.length; renderCro(); });
+    renderCro();
+
+    const hlData = [
+      { q: '"Confident in your forecast, not guessing in spreadsheets."', a: 'Feeling', opts: ['Feeling', 'Conversation', 'Contrast', 'Stat Interrupt'] },
+      { q: '"CFO: why is this number different?" / "Ops: one source of truth now."', a: 'Conversation', opts: ['Conversation', 'Feeling', 'Shame', 'Pain+Outcome'] },
+      { q: '"No more manual CSV exports. Just live dashboards."', a: 'Contrast', opts: ['Contrast', 'Feeling', 'Shame', 'Stat Interrupt'] },
+      { q: '"Still routing leads in a shared inbox? It\'s 2026."', a: 'Shame', opts: ['Shame', 'Contrast', 'Pain+Outcome', 'Feeling'] },
+      { q: '"847 hours/year lost to manual reporting — per team."', a: 'Stat Interrupt', opts: ['Stat Interrupt', 'Feeling', 'Contrast', 'Conversation'] },
+      { q: '"Stop reconciling. Start closing."', a: 'Pain+Outcome', opts: ['Pain+Outcome', 'Contrast', 'Feeling', 'Stat Interrupt'] },
+    ];
+    let hlIdx = 0;
+    function renderHl() {
+      const item = hlData[hlIdx];
+      document.getElementById('hl-prompt').textContent = item.q;
+      const el = document.getElementById('hl-options');
+      el.innerHTML = '';
+      document.getElementById('hl-feedback').textContent = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          const fb = document.getElementById('hl-feedback');
+          fb.className = 'feedback ' + (ok ? 'good' : 'bad');
+          fb.textContent = ok ? 'Correct formula.' : `Formula: ${item.a}. VoC gate: 5 quotes minimum.`;
+          [...el.children].forEach(c => c.disabled = true);
+        });
+        el.appendChild(b);
+      });
+    }
+    document.getElementById('hl-next').addEventListener('click', () => { hlIdx = (hlIdx + 1) % hlData.length; renderHl(); });
+    renderHl();
+
+    const iosData = [
+      { q: 'Friend asks "what app is that?" after a screenshot — promo code in thread.', a: 'iMessage', opts: ['iMessage', 'ChatGPT', 'Apple Notes', 'AirDrop'] },
+      { q: 'User types a question; streaming AI answer reveals the product.', a: 'ChatGPT', opts: ['ChatGPT', 'iMessage', 'Apple Notes', 'AirDrop'] },
+      { q: 'Confessional identity story typed live in a notes app.', a: 'Apple Notes', opts: ['Apple Notes', 'ChatGPT', 'iMessage', 'AirDrop'] },
+      { q: 'Deal people pass spontaneously — Accept tap IS the reveal.', a: 'AirDrop', opts: ['AirDrop', 'iMessage', 'ChatGPT', 'Apple Notes'] },
+    ];
+    let iosIdx = 0;
+    function renderIos() {
+      const item = iosData[iosIdx];
+      document.getElementById('ios-prompt').textContent = item.q;
+      const el = document.getElementById('ios-options');
+      el.innerHTML = '';
+      document.getElementById('ios-feedback').textContent = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          const fb = document.getElementById('ios-feedback');
+          fb.className = 'feedback ' + (ok ? 'good' : 'bad');
+          fb.textContent = ok ? `Correct — ${item.a} reveal.` : `Best surface: ${item.a}.`;
+          [...el.children].forEach(c => c.disabled = true);
+        });
+        el.appendChild(b);
+      });
+    }
+    document.getElementById('ios-next').addEventListener('click', () => { iosIdx = (iosIdx + 1) % iosData.length; renderIos(); });
+    renderIos();
+
+    const cnData = [
+      { q: '品牌要在小红书做种草笔记和KOL合作。', a: 'xiaohongshu-marketing', opts: ['xiaohongshu-marketing', 'weibo-marketing', 'bilibili-marketing', 'china-ads'] },
+      { q: 'Douyin/Kuaishou short video + hashtag challenges for a SKU launch.', a: 'short-video-marketing', opts: ['short-video-marketing', 'live-commerce', 'bilibili-marketing', 'social-content'] },
+      { q: 'Taobao/Douyin live stream selling with real-time coupons.', a: 'live-commerce', opts: ['live-commerce', 'short-video-marketing', 'mini-program-ecommerce', 'china-ads'] },
+      { q: '企业微信私域 + 公众号 + 朋友圈运营。', a: 'wechat-ecosystem', opts: ['wechat-ecosystem', 'community-operations', 'private-domain-analytics', 'weibo-marketing'] },
+      { q: 'WeChat mini program storefront + checkout.', a: 'mini-program-ecommerce', opts: ['mini-program-ecommerce', 'wechat-ecosystem', 'live-commerce', 'page-cro'] },
+      { q: 'B站UP主合作 + 弹幕社区内容。', a: 'bilibili-marketing', opts: ['bilibili-marketing', 'short-video-marketing', 'xiaohongshu-marketing', 'video'] },
+      { q: '微博热搜话题 + 品牌发声。', a: 'weibo-marketing', opts: ['weibo-marketing', 'social-content', 'public-relations', 'xiaohongshu-marketing'] },
+      { q: '巨量引擎 / 腾讯广告 paid acquisition.', a: 'china-ads', opts: ['china-ads', 'paid-ads', 'ad-creative', 'short-video-marketing'] },
+      { q: '微信群 / 粉丝群日常运营和答疑。', a: 'community-operations', opts: ['community-operations', 'wechat-ecosystem', 'customer-research', 'email-sequence'] },
+      { q: '私域漏斗转化率和复购分析。', a: 'private-domain-analytics', opts: ['private-domain-analytics', 'analytics-tracking', 'wechat-ecosystem', 'revops'] },
+    ];
+    let cnIdx = 0;
+    function renderCn() {
+      const item = cnData[cnIdx];
+      document.getElementById('cn-prompt').textContent = item.q;
+      const el = document.getElementById('cn-options');
+      el.innerHTML = '';
+      document.getElementById('cn-feedback').textContent = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          const fb = document.getElementById('cn-feedback');
+          fb.className = 'feedback ' + (ok ? 'good' : 'bad');
+          fb.textContent = ok ? `Correct — ${item.a}.` : `Primary: ${item.a}. Western analogs often wrong for CN compliance/platform rules.`;
+          [...el.children].forEach(c => c.disabled = true);
+        });
+        el.appendChild(b);
+      });
+    }
+    document.getElementById('cn-next').addEventListener('click', () => { cnIdx = (cnIdx + 1) % cnData.length; renderCn(); });
+    renderCn();
+
+    const editAnatomyQs = [
+      { cat: 'edit-anatomy', q: 'First step when user shares a TikTok edit to copy?', a: 'Pull frames with watch-video', opts: ['Pull frames with watch-video', 'Transcript-only summary', 'Copy their script', 'Generate new footage first'], hint: 'Cannot decompose caption style or cut timing from transcript alone.' },
+      { cat: 'edit-anatomy', q: 'Beat sheet must include which two artifacts?', a: 'Per-beat table + style summary', opts: ['Per-beat table + style summary', 'Script + storyboard only', 'Hashtags + caption', 'Music track list only'], hint: 'Style summary = 3–5 signature moves.' },
+      { cat: 'edit-anatomy', q: 'What dimension is most-copied and deserves deepest detail?', a: 'Hook (first 2s)', opts: ['Hook (first 2s)', 'End card logo', 'Hashtag count', 'Account bio'], hint: 'First 2 seconds carry most retention.' },
+    ];
+
+    const RH_KEY = 'ms-study-lab-stats';
+    const rhLoad = () => JSON.parse(localStorage.getItem(RH_KEY) || '{"sessions":0,"best":0,"cats":{}}');
+    const rhSave = (s) => localStorage.setItem(RH_KEY, JSON.stringify(s));
+
+    function buildRehearsalPool() {
+      const pool = [];
+      quizData.forEach(d => pool.push({ cat: 'router', q: d.q, a: d.a, opts: d.opts, hint: `Primary skill: ${d.a}` }));
+      paidData.forEach(d => pool.push({ cat: 'paid-ads', q: d.q, a: d.a, opts: d.opts, hint: d.hint }));
+      croData.forEach(d => pool.push({ cat: 'cro', q: d.q, a: d.a, opts: d.opts, hint: `Primary: ${d.a}` }));
+      hlData.forEach(d => pool.push({ cat: 'headlines', q: `Formula for: ${d.q}`, a: d.a, opts: d.opts, hint: 'B2B headline formulas (#404)' }));
+      iosData.forEach(d => pool.push({ cat: 'ios-reveal', q: d.q, a: d.a, opts: d.opts, hint: `Surface: ${d.a}` }));
+      cnData.forEach(d => pool.push({ cat: 'china', q: d.q, a: d.a, opts: d.opts, hint: `CN workflow: ${d.a}` }));
+      loopMatchData.forEach(d => pool.push({ cat: 'loops', q: d.q, a: d.a, opts: d.opts, hint: d.hint || `Loop: ${d.a}` }));
+      editAnatomyQs.forEach(d => pool.push(d));
+      pool.push({ cat: 'loops', q: 'How many parts does every marketing loop need?', a: '9', opts: ['7', '9', '12', '5'], hint: 'Including stop/bail-out and state/idempotency.' });
+      pool.push({ cat: 'ai-seo', q: 'ChatGPT cites your blog but recommends competitors. Which rung?', a: 'Cited not Recommended', opts: ['Retrieved', 'Cited not Recommended', 'Recommended against', 'Mentioned only'], hint: 'Citation ≠ recommendation.' });
+      return pool;
+    }
+
+    const RH_LEN = 12;
+    let rhSession = [], rhIdx = 0, rhScore = 0, rhAnswered = false, rhActive = false;
+
+    function updateRhStatsDisplay() {
+      const s = rhLoad();
+      document.getElementById('rh-sessions').textContent = s.sessions;
+      document.getElementById('rh-best').textContent = s.best ? `${s.best}/${RH_LEN}` : '—';
+      const entries = Object.entries(s.cats || {}).sort((a, b) => a[1].wrong - b[1].wrong);
+      const weak = entries.filter(([, v]) => v.wrong > 0).sort((a, b) => b[1].wrong - a[1].wrong)[0];
+      document.getElementById('rh-weak').textContent = weak ? weak[0] : '—';
+    }
+
+    function renderRhQuestion() {
+      rhAnswered = false;
+      document.getElementById('rh-next').disabled = true;
+      document.getElementById('rh-feedback').textContent = '';
+      document.getElementById('rh-summary').style.display = 'none';
+      const item = rhSession[rhIdx];
+      document.getElementById('rh-prompt').textContent = item.q;
+      document.getElementById('rh-category').textContent = `Category: ${item.cat} · ${rhIdx + 1}/${RH_LEN}`;
+      document.getElementById('rh-bar').style.width = `${(rhIdx / RH_LEN) * 100}%`;
+      document.getElementById('rh-progress-text').textContent = `Question ${rhIdx + 1} of ${RH_LEN}`;
+      const el = document.getElementById('rh-options');
+      el.innerHTML = '';
+      [...item.opts].sort(() => Math.random() - 0.5).forEach(opt => {
+        const b = document.createElement('button');
+        b.textContent = opt;
+        b.addEventListener('click', () => {
+          if (rhAnswered) return;
+          rhAnswered = true;
+          const ok = opt === item.a;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          if (ok) rhScore++;
+          const st = rhLoad();
+          st.cats = st.cats || {};
+          st.cats[item.cat] = st.cats[item.cat] || { right: 0, wrong: 0 };
+          ok ? st.cats[item.cat].right++ : st.cats[item.cat].wrong++;
+          rhSave(st);
+          const fb = document.getElementById('rh-feedback');
+          fb.className = 'feedback ' + (ok ? 'good' : 'bad');
+          fb.textContent = (ok ? 'Correct. ' : `Answer: ${item.a}. `) + (item.hint || '');
+          document.getElementById('rh-next').disabled = false;
+          [...el.children].forEach(c => c.disabled = true);
+        });
+        el.appendChild(b);
+      });
+    }
+
+    function finishRhSession() {
+      rhActive = false;
+      document.getElementById('rh-bar').style.width = '100%';
+      document.getElementById('rh-progress-text').textContent = `Session complete: ${rhScore}/${RH_LEN}`;
+      document.getElementById('rh-prompt').textContent = 'Session finished';
+      document.getElementById('rh-options').innerHTML = '';
+      document.getElementById('rh-category').textContent = '';
+      const st = rhLoad();
+      st.sessions = (st.sessions || 0) + 1;
+      st.best = Math.max(st.best || 0, rhScore);
+      rhSave(st);
+      updateRhStatsDisplay();
+      const weak = Object.entries(st.cats || {}).filter(([, v]) => v.wrong > 0).sort((a, b) => b[1].wrong - a[1].wrong).slice(0, 3);
+      const sum = document.getElementById('rh-summary');
+      sum.style.display = 'block';
+      sum.textContent = weak.length
+        ? `Review weak spots: ${weak.map(([k, v]) => `${k} (${v.wrong} miss${v.wrong > 1 ? 'es' : ''})`).join(', ')}.`
+        : 'Clean session — no weak categories flagged yet.';
+      document.getElementById('rh-start').disabled = false;
+      document.getElementById('rh-next').disabled = true;
+    }
+
+    document.getElementById('rh-start').addEventListener('click', () => {
+      const pool = buildRehearsalPool();
+      rhSession = [...pool].sort(() => Math.random() - 0.5).slice(0, RH_LEN);
+      rhIdx = 0; rhScore = 0; rhActive = true;
+      document.getElementById('rh-start').disabled = true;
+      renderRhQuestion();
+    });
+    document.getElementById('rh-next').addEventListener('click', () => {
+      if (!rhActive) return;
+      rhIdx++;
+      if (rhIdx >= RH_LEN) finishRhSession();
+      else renderRhQuestion();
+    });
+    document.getElementById('rh-reset-stats').addEventListener('click', () => {
+      localStorage.removeItem(RH_KEY);
+      updateRhStatsDisplay();
+    });
+    updateRhStatsDisplay();
+
+    const issueData = [
+      { n: 456, title: 'edit-anatomy beat sheet (video)', status: 'done', drill: 'Rehearsal → edit-anatomy questions' },
+      { n: 404, title: 'B2B headline formulas + visual spec', status: 'done', drill: 'Rehearsal → Headline matcher' },
+      { n: 447, title: 'prospecting demand-signal branch', status: 'done', drill: 'Prospecting tab' },
+      { n: 427, title: 'ai-seo citations vs recommendations', status: 'done', drill: 'AI SEO Ladder' },
+      { n: 434, title: 'ad-creative Mode 4 + hook system', status: 'done', drill: 'Ad Creative Factory' },
+      { n: 441, title: 'creative review page', status: 'done', drill: 'Ad Creative Factory Mode 4' },
+      { n: 452, title: 'AirDrop iOS reveal surface', status: 'done', drill: 'Rehearsal → iOS surface picker' },
+      { n: 310, title: 'X algorithm in social', status: 'done', drill: 'X Algorithm tab' },
+      { n: 406, title: 'intent-routing in cro/emails/seo', status: 'done', drill: 'All CRO cluster skills + ai-seo routing' },
+      { n: 433, title: 'Motion-style authoring patterns', status: 'partial', drill: 'video + ai-seo known-gaps/routing' },
+      { n: 390, title: 'marketing-loops low-friction trial', status: 'done', drill: 'Loop Factory + Rehearsal' },
+      { n: 450, title: 'validate-skills.sh false negatives', status: 'open', drill: 'Upstream tooling — defer' },
+      { n: 445, title: 'Codex plugin support', status: 'partial', drill: '.codex-plugin/plugin.json + INSTALL-CODEX.md' },
+      { n: 439, title: 'China marketing skills (10)', status: 'done', drill: 'China Market tab + workflows-cn/' },
+      { n: 405, title: 'tools-onboarding skill', status: 'open', drill: 'Not ported' },
+      { n: 430, title: 'MentionDrop tools registry', status: 'open', drill: 'Not ported' },
+      { n: 432, title: 'content library → agent corpus', status: 'open', drill: 'Not ported' },
+      { n: 431, title: '.skill release bundles', status: 'open', drill: 'Not ported' },
+    ];
+    let issueFilter = 'all';
+    function renderIssues() {
+      const el = document.getElementById('issue-list');
+      el.innerHTML = '';
+      issueData.filter(i => issueFilter === 'all' || i.status === issueFilter).forEach(i => {
+        const d = document.createElement('div');
+        d.className = `issue ${i.status}`;
+        d.innerHTML = `<div class="meta"><span class="pill ${i.status}">${i.status}</span>#${i.n}</div><strong>${i.title}</strong><div style="font-size:.82rem;color:var(--muted);margin-top:.35rem">${i.drill}</div>`;
+        el.appendChild(d);
+      });
+    }
+    document.querySelectorAll('[data-issue-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-issue-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        issueFilter = btn.dataset.issueFilter;
+        renderIssues();
+      });
+    });
+    renderIssues();
+
+    const cards = [
+      ['What metric should you optimize Google Ads on when brand search exists?', 'Non-brand ROAS for bids/targets; report blended for top-line health.'],
+      ['How many parts does every marketing loop need?', 'Nine — including stop/bail-out and state/idempotency.'],
+      ['When do self-promotional listicles backfire in AI search?', 'Emerging brands: citations without recommendation; can boost competitors.'],
+      ['VoC gate before B2B headline copy?', 'Minimum 5 real customer quotes.'],
+      ['X algorithm: why space posts ~60 min apart?', 'Author-diversity scorer decays same-author scores in one feed.'],
+      ['Demand-signal prospecting vs list-building?', 'Evidence of public pain vs firmographic ICP fit.'],
+      ['Citation vs recommendation?', 'Citation = useful content consulted; recommendation = web consensus shortlist.'],
+      ['Mode 3 ad-creative requires what inputs?', 'winning-ads/, reviews/, comments/ — refuse if empty.'],
+      ['Meta ad ceiling formula?', '(daily budget × 14) ÷ (2 × TCPL) — each ad needs 2× TCPL over 14 days to judge.'],
+      ['When to swap vs wait on Meta test ad?', 'Wait until 3× TCPL spend; swap at ≥3× with zero pixel leads or bad qualified rate.'],
+      ['Prospecting compliance: what data is forbidden?', 'Breached/leaked data, bulk scraping, CAPTCHA bypass, sensitive trait targeting.'],
+      ['X rule: why quote-tweet over repost?', 'Quote engagement and quoted-click are separate scored terms.'],
+      ['Demand-signal prospecting output format?', 'Evidence report with cited public sources — not a bulk email CSV.'],
+      ['Edit-anatomy: what tool reads frames at cut points?', 'watch-video (visual/multimodal) or social-fetch — not transcript alone.'],
+      ['AirDrop reveal: what interaction IS the reveal?', 'The Accept tap on incoming share — preview thumbnail earns the tap.'],
+      ['B2B headline-as-creative: text should fill what % of image?', '50–70% of image area, bold sans-serif, readable at mobile thumbnail.'],
+    ];
+    let fcIdx = 0;
+    const fc = document.getElementById('flashcard');
+    const fcQ = document.getElementById('fc-q');
+    const fcA = document.getElementById('fc-a');
+    function showCard() {
+      fc.classList.remove('revealed');
+      fcQ.textContent = cards[fcIdx][0];
+      fcA.textContent = cards[fcIdx][1];
+    }
+    fc.addEventListener('click', () => fc.classList.toggle('revealed'));
+    document.getElementById('fc-flip').addEventListener('click', () => fc.classList.toggle('revealed'));
+    document.getElementById('fc-next').addEventListener('click', () => { fcIdx = (fcIdx + 1) % cards.length; showCard(); });
+    document.getElementById('fc-prev').addEventListener('click', () => { fcIdx = (fcIdx - 1 + cards.length) % cards.length; showCard(); });
+    showCard();
+  </script>
+</body>
+</html>
