@@ -1,66 +1,187 @@
 # Chapter 6 — Runtimes, State, and the Human Control Plane
 
+
 A chatbot can get away with amnesia. A production agent cannot.
 
-Short-lived assistance can live inside a conversational loop — a turn comes in, a turn goes out, and nothing has to survive past the reply. Delegated work cannot live there. The moment a system has to persist across retries, timeouts, approvals, multiple tools, and possibly many parallel workers, the central problem stops being next-token cleverness and becomes execution semantics. The system has to preserve state, survive interruption, expose its progress, and resume without losing the thread. This is the chapter where the book's argument turns from what the model knows to how the work itself stays alive between the moments the model is thinking.
+That difference is not philosophical. It is architectural.
 
-Samuel Colvin at Pydantic states the lesson in the voice of someone who learned it in production: "building production AI agents reveals a harsh truth — stateless architectures that work for simple demos become impossibly painful at scale." The word *painful* is doing honest work. The failure is not dramatic. It is the slow accumulation of edge cases — the timeout that loses an hour of work, the retry that double-charges, the approval that arrives after the agent already acted — that turns a magical demo into a system nobody trusts.
+A chat system can answer a question, emit a patch, suggest a draft, and disappear. But the moment you ask a system to do work that unfolds across time, tools, failures, and approvals, the center of gravity moves. The question is no longer only whether the model can produce a smart next token. The question is whether the surrounding system can preserve intent, survive interruption, recover from error, expose its progress, and stop in the right places for human review.
 
-## Why stateless demos break
+This is where many impressive agent demos break. The model itself may be good enough. The harness may be decent. The evals may even exist. The context may be strong. But the system was still built like a conversation when it needed to be built like a workflow. It loses track of what already happened. A retry repeats work or performs the same action twice. A human cannot tell which subagent did what. An approval arrives too late, after the expensive or risky step already happened. The agent does not fail because it is unintelligent. It fails because it has nowhere durable to stand.
 
-The seductive thing about a chat-loop agent is that it works immediately. You wire a model to some tools, let it loop, and on a short, happy-path task it looks like the future. The trouble is that the architecture has no memory of what has actually happened — only a transcript of what was said. And a transcript is not state.
+That is why the next layer in the book’s argument is runtime design. If Chapter 3 was about making delegated work possible, Chapter 4 about making it measurable, and Chapter 5 about making it properly informed, Chapter 6 is about making it operationally trustworthy. Once agents act over time, architecture becomes destiny.
 
-The distinction matters the instant anything goes wrong. A real delegated task runs long enough to hit a timeout, a rate limit, a flaky tool, a network blip, a required human approval. In a stateless loop, every one of those is a small catastrophe, because there is no durable record of where the work had gotten to. The system cannot answer the only questions that matter under failure: what has been done, what is in flight, and what is safe to retry. It can replay the conversation, but it cannot resume the work, because it never modeled the work as something separate from the conversation about it.
+## Stateless systems hit a wall
 
-This is why so many impressive agent demos collapse when a team tries to operationalize them. The model is capable, the prompts are decent, the context is strong — and the system still falls over, because it was built like a chat session when the job required a workflow. So run the test before you scale a demo: ask whether the system can answer what has been done, what is in flight, and what is safe to retry without replaying the conversation. If the only record is a transcript, you have a chat session, not a workflow — and the fix is not a smarter model but a different architecture underneath.
+The easiest way to understand the runtime problem is to notice how much modern agent discourse still inherits its assumptions from chat.
 
-## Durable execution is the runtime requirement
+Chat is an excellent interface for short-lived assistance. It is forgiving. It is intuitive. It lets a user redirect the system turn by turn. For many workflows, that is enough. But chat history is a weak execution substrate for delegated work. A transcript is not the same thing as state. It does not cleanly represent task progress, pending approvals, completed tool calls, rollback boundaries, or which intermediate outputs are binding versus disposable.
 
-The architecture that survives reality is durable execution: treat the long-running task as structured, checkpointed execution rather than a growing transcript. Preeti Somal at Temporal puts the stakes plainly: agentic systems "must scale and provide durability and reliability — otherwise, no one's going to trust your agent." Trust, in her framing, is not a property of the model's answers. It is a property of the runtime's behavior under failure.
+Samuel Colvin states the break point simply: “Once we get into longer running workflows, that’s where it really becomes a problem.” The line matters because it does not claim stateless systems are always bad. It claims they hit a wall when work acquires duration. A short answer can be regenerated. A half-finished research trajectory, a partially executed software task, or a multi-step legal workflow cannot be managed so casually.
 
-What durability buys is the ability to distinguish what was said from what has actually happened. A durable runtime records each completed step, so that when a tool call times out on the ninth step of a twelve-step task, the system resumes from the ninth step rather than restarting from zero or, worse, redoing a side effect that already fired. Somal describes pushing the reliability semantics down into the runtime so they leave the prompt entirely: "nowhere in there will there be statements like, if something fails keep retrying it — all of those pieces are handled" by the execution layer. That is the architectural move. Retries, timeouts, and resumption stop being things the agent has to reason about turn by turn and become guarantees the runtime provides. The prompt gets to be about the task; the runtime takes care of survival.
+This is the same shift the book has been tracing from the beginning. In a toy setting, you can still tell yourself the model is the product. In a real system, the surrounding structure becomes inseparable from the capability. Preeti Somal gives the trust version of the same point: agent systems “must scale and provide durability and reliability. Otherwise, no one’s going to trust your agent.” That is not a platform engineer’s hobbyhorse. It is the operating condition for delegation.
 
-The same talk names the second thing durability gives you, and it points straight at the next section: "we also store all of the workflow history, so that you can look at the visibility of what is happening as your agent is navigating this complex set of interactions." History is not just for recovery. It is for inspection — and inspection is where humans re-enter the system.
+Trust fails quickly when continuity fails.
+
+A coding agent that loses its place after every interruption is not a colleague. It is an intern with total amnesia. A research agent that cannot resume after a timeout is not autonomous. It is brittle. A support or legal workflow that cannot survive approvals, waiting periods, or tool outages is not production-ready no matter how eloquent the underlying model sounds in a demo.
+
+Durability, then, is not extra credit. It is the runtime expression of seriousness.
+
+## The software factory needs an operating system
+
+Meridian's case from Chapters 3 and 4 becomes even more revealing here.
+
+The team already improved its repo. It already built a better harness. It already added stronger validations and more realistic evals. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
+
+This is where a second class of problems appears.
+
+One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman\u2019s board, without station history, and without a clean shift handoff.
+
+That is the deeper meaning of the software-factory metaphor. A factory is not only a prepared environment and a quality system. It also needs an operating system. It needs durable task identities, queues, checkpoints, resumability, visibility, and clear places for review. Otherwise increasing the number of workers only multiplies confusion.
+
+This is why the runtime chapter naturally belongs beside the harness chapter rather than floating off into platform taxonomy. Harnesses without runtime semantics are fragile. The repo may be legible, the tasks may be specified, the standards may be measured, and the context may be well assembled. But if the work itself cannot persist and be supervised, the colleague illusion still breaks the first time the system has to keep going after the first clever turn.
+
+## Agentic systems are workflows with state
+
+A lot of debate about agents versus workflows turns out to be a category error.
+
+People sometimes speak as if workflows are rigid and agents are flexible, so choosing workflows means giving up on real agency. In production systems, the opposite lesson often emerges. Workflow structure is what makes useful agency survivable.
+
+Somal gives the chapter its best backbone here: “At the core of agentic AI applications is a complicated workflow... [that] needs to handle state potentially over long periods of time. There needs to be human interaction for approvals...” That sentence should kill the fake dichotomy. The system does not become less agentic because it has durable workflow semantics. It becomes more usable.
+
+Useful agentic systems are not free-floating intelligence. They are stateful workflows with probabilistic decision nodes.
+
+That framing clarifies a lot at once. It explains why pause and resume matter. It explains why retries should not live in ad hoc prompt logic. It explains why approvals belong naturally inside execution rather than as awkward afterthoughts. It explains why application state cannot be reduced to whatever is still visible in the prompt window. And it explains why runtime tooling increasingly looks closer to distributed-systems infrastructure than to prompt folklore.
+
+In a serious coding workflow, state may include the current task plan, completed tool runs, validation status, pending questions for the human reviewer, and links to specific artifacts the agent produced. In a high-stakes professional workflow, it may include evidence bundles, validation checkpoints, unresolved exceptions, approval boundaries, and which output is ready for expert sign-off. In both cases, the core requirement is the same: the agent needs a structured memory of work, not merely a growing transcript of conversation.
+
+This is what durability buys. It lets the system preserve the difference between “what was said” and “what has happened.”
+
+## History is part of execution, not just debugging
+
+Once you start thinking in workflows rather than turns, history changes meaning.
+
+In chat systems, history is mostly there to help the next answer feel continuous. In durable systems, history is part of execution itself. It tells the runtime what has already happened, what can be retried safely, which approvals were granted, what state changed, and where the agent should resume.
+
+That is why durable-agent discussions keep converging on structured histories, checkpoints, and replayable event logs. Not because engineers enjoy complexity, but because long-running work creates obligations. If the system did something important, someone may later need to inspect it. If a run failed halfway through, the team may need to resume from a meaningful boundary rather than start from zero. If a result is contested, the organization may need to know what the system saw, which tools it used, and which step introduced the mistake.
+
+Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” That line captures a crucial shift. History is not archival fluff. It is the substrate of inspection.
+
+This is also where runtime design begins to touch Chapter 4’s control-system argument. A good history lets a team do more than recover execution. It lets them learn. Failed trajectories become eval cases. Slow steps become optimization targets. Repeated approval bottlenecks reveal design problems in the control plane. The runtime is not merely keeping the work alive. It is generating the evidence by which the system can later improve.
+
+## Replay, snapshot, and the shape of continuity
+
+Once durability becomes a real concern, a more technical tradeoff appears: how exactly should continuity be represented?
+
+One family of systems leans on replay. Preserve an event history, then reconstruct state from what happened. Another family leans on snapshots. Save checkpoints of working state so execution can continue more directly. Both approaches are reasonable. Both reveal something about what the team values.
+
+Replay-oriented designs are attractive when causality and auditability matter. They preserve a strong sense of how the system got here. They make it easier to reason about the chain of events. They fit environments where exact reconstruction is important and where state should emerge from recorded steps rather than from opaque frozen blobs.
+
+Snapshot-oriented designs are attractive when fast continuation and complex live state matter more. They reduce the cost of resuming. They can feel more natural when the system’s working memory is elaborate, when rebuilding everything is awkward, or when pause-and-resume is expected to be frequent.
+
+The chapter does not need to turn this into a runtime taxonomy lesson. The point is simpler. The existence of this tradeoff proves that runtime semantics are not incidental details. Once agents operate over time, teams are making the kinds of decisions mature distributed systems always have to make: what gets persisted, what gets recomputed, what must be auditable, what can be resumed cheaply, and which failure modes are acceptable.
+
+In other words, the “agent problem” is quietly becoming a systems problem.
 
 ## The human control plane is an architectural layer
 
-It is tempting to treat human oversight as a temporary crutch — something you keep around until the models get good enough to remove it. The corpus argues the opposite. In high-value systems, human control is not a phase on the way to full autonomy. It is a permanent architectural layer, designed in rather than bolted on.
+This is where the chapter’s title concept should crystallize.
 
-Joel Hron at Thomson Reuters gives the clearest frame for what that layer regulates. Autonomy, he argues, is not a switch you flip but a dial you tune: agency is "not a binary thing but a lever that you can dial" up or down depending on how irreversible, risky, and observable the work is. A low-stakes draft can run with the dial turned far up. A filing with professional consequences runs with it turned down, with explicit approval points where a human re-enters before the system acts. The design question is never "autonomous or not." It is "how much agency, at which steps, with what review."
+A recurring mistake in agent discourse is to treat human involvement as a temporary crutch on the way to full autonomy. But the more capable systems become, the less persuasive that framing looks. In valuable systems, human control is not a leftover from immaturity. It is an architectural layer.
 
-The mechanism that makes those approval points workable is exactly the workflow history durability provides. Hron describes deep-research systems whose long-running behavior becomes "the trajectories that the model would be following along its path of answering this particular type of legal question" — inspectable paths a human can audit rather than opaque jumps from question to answer. The control plane is built from these surfaces: the approval gates where a human authorizes the next step, the roll-up views that show what the system is doing without drowning the reviewer in raw agent chatter, the trajectory and history records that make an action reconstructable after the fact. Eric Zakariasson at Cursor describes the roll-up form of this directly — the human needs "an overview of the processes," a single surface answering what every worker is doing and what actually needs a person's attention, rather than a firehose of individual logs.
+The human control plane is the set of interfaces, approvals, visibility layers, and intervention mechanisms through which people supervise delegated machine work. It is the place where a person can see what is active, understand what happened, inspect evidence, redirect a task, approve a risky transition, or teach the system something reusable.
 
-This is the same human-judgment-at-the-edges principle the book keeps returning to, now given a concrete home in the runtime. The point of the control plane is not to slow the system down. It is to focus scarce human attention on the consequential moments and let the runtime carry everything else — which gives you a design test for any review surface: if it surfaces raw agent chatter instead of a roll-up of what needs a person, or if it gates a reversible low-stakes step the way it gates an irreversible one, it is spending human attention in the wrong place.
+That means a chat transcript is usually not enough.
 
-Attention is not the only scarce resource the control plane rations. Compute is the other, and the same logic applies: match the cost of the response to the difficulty of the request rather than paying frontier prices for every step. Practitioners treat tiered model selection as settled rather than novel. Laurie Voss at Arize states it almost prescriptively — use "cheap models for simple queries and expensive models in your agent ... for complex queries" — and Harrison Chase at LangChain describes a router whose job is to "route between ... language models," picking one per question by its strengths, long context against reasoning. The platforms expose the same trade as service tiers: Guillaume Vernade at Google DeepMind describes a flex tier that gives "a 50% discount but your request can be ... delayed," for work that is not latency-sensitive. The decision of which model runs a given step is a control-plane decision, not a global default chosen once. The catch is that routing adds its own failure surface — a misroute hands a hard task to a cheap model that quietly botches it — so aggressive routing is only safe behind the verification the control plane already runs. You can route down to the cheapest model that still passes the eval, and no cheaper.
+Operators need queue views, roll-up summaries, pending-review surfaces, uncertainty cues, state inspection, and clean intervention points. They need something closer to a control room than a message thread. If the only way to supervise a complex agent system is to read back through thousands of tokens and manually reconstruct what happened, then the control plane does not exist yet.
 
-## Parallelism raises the stakes on coordination
+This is why the later coding and collaboration materials are so important. Eric Zakariasson’s line is one of the cleanest expressions of the problem: “Here’s what everyone is working on... and here’s what you as a human need to review.” That is the control plane in plain English. Not omniscient micromanagement, but selective visibility into a fleet of delegated work.
 
-Everything so far concerns a single durable worker. The architecture gets harder, and more interesting, the moment teams reach for many workers at once — and this is where the corpus is most unsettled.
+Maggie Appleton sharpens the same point from the collaboration angle. The missing thing is not merely more autonomous workers. It is a shared space in which plans, context, intermediate work, and review can be coordinated collectively. The challenge is no longer only model reasoning. It is organizational legibility.
 
-The appeal is obvious: if one agent is leverage, a fleet is more leverage. OpenAI's Codex team describes the mechanism, spinning off "a master task into decomposable parallel and independent tasks." But the precondition is in that phrase: parallelize only work that is genuinely *decomposable and independent*, and only after you have a way to recompose, inspect, and route the output back to a human at the right moment. Add workers before you have that, and parallelism just manufactures chaos faster — more diffs, more conflicts, more review than anyone can absorb, which is exactly the alignment-debt failure Chapter 9 will name at organizational scale. Teams go wrong treating "spin up more agents" as the win when the recomposition layer is the actual bottleneck.
+That is what makes the human control plane such a useful abstraction. It ties together execution, observability, oversight, and team coordination under one idea: make supervision operationally cheap enough that humans can stay above the loop without vanishing from it.
 
-Independence also has to be enforced by the *environment*, not just declared in the task split. Several agents against one shared dev setup collide on the same branch, ports, and database — one agent's migration breaks the others mid-run — so each needs its own isolated, ephemeral environment. Maggie Appleton at GitHub gives each session one "backed by a micro VM ... a sandboxed computer in the cloud on its own Git branch," which is precisely what lets a developer "work on parallel tasks and instantly switch between them." And teams running agent-written code are blunt that the obvious primitive is the wrong one: Rene Brandel at Casco warns that "if you just use containers ... that's not an isolation layer," because agent code can get root and move laterally. Worktrees suffice for trusted edits; untrusted, side-effecting agent work wants a VM.
+## Human control is not human micromanagement
 
-Lou Bichard at Ona sharpens the diagnosis to a single missing piece. The runtime, he argues, is solved — "there are many options for this now, sandboxes and containers" — and so are triggers and orchestration. "The thing that's missing," he says, "is coordination": the agent-native primitive that lets parallel workers pick up tasks, signal completion, and hand off without a human stitching them together. And he is pointed about what is *not* that primitive: "GitHub is not a coordination layer for agents — it gets incredibly overwhelming." His candidate building blocks are exactly this chapter's subject — "state machines, by building out workflows and effectively state machines" — which lands the parallelism question squarely back on durable execution.
+The phrase human-in-the-loop can accidentally trivialize the design problem.
 
-What makes the corpus credible here is that the teams shipping production multi-agent systems have not agreed on an answer; they have each substituted a known mechanism for the missing one. Factory runs features serially with one active writer — "serial execution with targeted internal parallelization" — eliminating the coordination problem by construction, and reports a longest mission of sixteen days. Anthropic's long-running agents take a third path: a planner-generator-evaluator loop where each role gets "its own kind of context window" and the agents "negotiate what done actually means" through a contract written to files on disk before any code is produced — a capability curve their team traces from roughly a one-hour autonomous run to twelve hours on the same simple harness. Serial execution, file-based contracts, state machines plus durable execution: three substitutes for one primitive that does not yet exist. The honest chapter names the gap and shows the three things teams actually ship, rather than pretending there is a consensus building block.
+It can suggest a binary choice: either humans approve everything, or the system is autonomous. But the more useful reality is a gradient of control. Humans may stay out of the way for low-risk steps, review plans before expensive ones, approve external actions, inspect only exceptions, or intervene only when uncertainty spikes. Control can sit before, during, and after execution.
 
-## The runtime is where intelligence becomes dependable
+That is why a well-designed control plane should reduce the need for constant rescue, not institutionalize it. The goal is not to make every system depend on manual babysitting. The goal is to create high-leverage checkpoints where human judgment matters most.
 
-Pull the chapter together and its claim is structural. A machine colleague is not a model with tools attached. It is a model inside an operating environment — and that environment is what determines whether bursts of intelligence become dependable delegated work.
+A coding factory, for example, might let subagents explore, search, summarize, draft, and run validations autonomously, while reserving merge decisions, large architectural changes, or dependency additions for review. A high-stakes professional workflow might allow autonomous evidence gathering and draft assembly, while requiring expert sign-off before client-facing output or consequential recommendations. In both cases, the right design question is not “How do we keep the human involved everywhere?” It is “Where is the human most valuable?”
 
-The environment has named parts now. Durable execution, so the work survives interruption and resumes instead of restarting. Explicit state and workflow history, so the system can answer what has actually happened. A human control plane of approvals, roll-up views, and inspectable trajectories, so people supervise at the consequential edges. And, once there are many workers, a coordination story — even if today that story is a chosen substitute rather than a solved primitive. None of these live in the model. All of them live in the runtime, and all of them are the difference between a demo and a system.
+That is a control-plane question, not a prompt question.
 
-The moment a durable, long-running agent can act on its own — with state, tools, and the authority to use them over time — bounding that authority becomes the price of letting it act at all. Identity, permissions, sandboxes, audit: that is the next chapter's subject. Durability gave the agent staying power. Security decides what it is allowed to do with it.
+## High-stakes systems tune agency instead of maximizing it
 
-## What to do with this
+The High-Stakes Colleague case makes this point unavoidable.
 
-- Before you scale any agent demo, run the failure-state test: can the system answer what has been done, what is in flight, and what is safe to retry — without replaying the conversation? If the only record is a transcript, you have a chat session, not a workflow. The fix is a different architecture, not a smarter model.
-- Push retry, timeout, and resumption semantics down into the runtime so they leave the prompt entirely — aim for a state where "if something fails keep retrying it" appears nowhere in your prompt because the execution layer handles it. Checkpoint each completed step so a tool timeout on step nine resumes from step nine, not from zero and not by re-firing a side effect that already ran.
-- Store full workflow history, and use it for two distinct jobs: recovery (resuming after failure) and inspection (a human auditing what the agent actually did). Treat the trajectory record as the surface humans review, not an afterthought.
-- Stop asking "autonomous or not" and instead set the agency dial per step — tuned by how irreversible, risky, and observable that step is. Turn it up for a low-stakes draft; turn it down with an explicit approval gate before an action with real consequences.
-- Audit your review surfaces: if one shows raw agent chatter instead of a roll-up of what needs a person, or gates a reversible step as strictly as an irreversible one, it is spending scarce human attention in the wrong place. Build the roll-up overview that answers what every worker is doing and what actually needs review.
-- Don't reach for more parallel workers until you have a recomposition layer — coordination is the missing primitive, and GitHub is not it. Until an agent-native coordinator exists, pick a deliberate substitute: serial execution with one active writer, file-based "negotiate what done means" contracts, or state machines plus durable execution.
-- Before you run agents in parallel, give each one its own isolated environment, not a shared one. Pick the isolation rung by trust and blast radius: a git worktree for trusted edits, a micro-VM for untrusted or side-effecting agent code. A container is not an isolation boundary for code an agent wrote — if it can get root or touch a shared database, it is not contained.
-- Treat model choice as a per-step routing decision, not a global default. Route each step to the cheapest model that still passes its eval, escalate only on failure, and use platform flex/batch tiers for latency-tolerant work — but only once verification can catch a misroute, or you have traded cost for silent errors.
+In legal, tax, compliance, healthcare, and similar workflows, the dream of unrestricted autonomy becomes less impressive the closer you get to real operational risk. The system is not valuable because it can do everything without supervision. It is valuable because it can do the right things with the right boundaries.
+
+Joel Hron offers the right antidote to autonomy maximalism: agency should be thought of as a spectrum, a set of dials adjusted by use case. That framing matters because it replaces the childish question — how autonomous can we make it? — with the adult one: where should autonomy be high, where should it be low, and who decides?
+
+That difference is foundational to trustworthy product design.
+
+The north star, as Hron puts it, has shifted “from helpfulness to productive.” But productive does not mean unsupervised. In high-stakes work, productivity often depends on carefully staged authority. The system may be allowed to gather evidence, route across tools, synthesize findings, and even validate parts of its own work. But certain boundaries remain deliberately human. An approval is not evidence that the system failed. It is evidence that the organization understands where risk actually lives.
+
+This is another reason Chapter 6 should pair the Software Factory with the High-Stakes Colleague. The same control-plane principle appears in both, even though the surface domain is different. In software, a human may review the patch before merge. In professional services, a human may review the trajectory before the conclusion is accepted. In both cases, adjustable autonomy is the runtime expression of trust.
+
+## Legacy systems become runtime components
+
+One of the most practical ideas in the High-Stakes Colleague material is that old systems are not just obstacles to agentic work. They often become runtime components of the new control plane.
+
+Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work. That is a powerful pattern because it shows how durable execution changes the role of traditional enterprise software. Systems that once only served human operators now become structured checkpoints, rule engines, and verification layers inside a machine-mediated workflow.
+
+The chapter should linger on this because it helps demystify agent architecture. Not every trustworthy agent system is built from scratch as a magical new organism. Often it is assembled from older, more stable parts: permission systems, validators, databases, workflow engines, audit trails, search layers, review queues. The model is the volatile component. The rest of the runtime is what prevents volatility from becoming operational chaos.
+
+That is also why runtime design is inseparable from organizational design. As soon as an agent can call the old validation engine, write into the old workflow record, and surface outputs to the old reviewer queue, the boundary between “AI system” and “business process” starts to collapse. The runtime becomes the place where those worlds meet.
+
+## Observability is part of the control plane
+
+None of this works if the system is opaque.
+
+Classic monitoring tells you whether a service is up, slow, or erroring. Agent observability has to answer a different kind of question: what did the system believe it was doing, what did it actually do, where did it drift, and what should a human now inspect?
+
+That is why agent observability is not merely a nicer logging story. It is what makes the human control plane real. Humans cannot steer what they cannot see.
+
+Good agent traces capture plans, tool calls, state changes, intermediate outputs, timings, and boundaries between durable steps. They should support two levels at once: deep inspection of a single trajectory and roll-up supervision across many concurrent tasks. The first helps engineers debug strange failures. The second helps operators manage a fleet.
+
+This is where Chapter 4’s line from Phil Hetzel keeps paying off: observability and eval are often the same problem from a systems perspective. In Chapter 6 the claim becomes more concrete. The runtime records the trajectory. Observability renders it legible. The control plane decides where humans inspect it. Evals later mine it for reusable lessons. One layer feeds the next.
+
+There is also an honest tension here the chapter should keep visible. Richer traces increase trust, debuggability, and governance capacity. They also increase privacy, retention, and security risk. The answer is not to avoid observability. It is to design it consciously: redaction, selective retention, risk-based views, and different surfaces for debugging versus audit. Even here, the control plane is doing governance work.
+
+## Parallel workers create leverage only if work can be recomposed
+
+The final runtime lesson is about subagents.
+
+Parallel workers are compelling because they offer the same thing every manager has wanted forever: more throughput. OpenAI’s subagent materials and the coding-factory case both point toward a future where one human can launch many narrow specialists at once. Searcher, implementer, reviewer, summarizer, debugger, policy checker, migration scout. The leverage is real.
+
+But subagents do not solve the control problem. They intensify it.
+
+More workers mean more intermediate artifacts, more opportunities for duplicated effort, more state to coordinate, and more need for roll-up visibility. Parallelism without recomposition is just chaos at higher speed. The key design challenge is not how to spawn more workers. It is how to merge, compare, inspect, and route their outputs so that the human remains oriented.
+
+This is why the best visions of multi-agent work keep converging on planning boards, supervisor views, task decomposition layers, and explicit review queues. Those are not administrative extras. They are the infrastructure that lets parallelism produce leverage rather than entropy.
+
+The Software Factory shows the coding version of this. The High-Stakes Colleague shows the professional-services version. In both, the real question is the same: when many machine workers are active, where does coherent human judgment re-enter the system?
+
+That place is the control plane.
+
+## The runtime is what turns intelligence into dependable work
+
+The real challenge of agentic systems is not producing one intelligent response. It is sustaining useful action across time without losing control.
+
+That is a runtime problem.
+
+Durable state, explicit workflow semantics, structured approvals, inspectable histories, observability, and reviewable roll-ups are not secondary implementation details. They are the machinery that turns bursts of model intelligence into dependable delegated work. Without them, the system remains trapped in the demo layer: locally impressive, globally fragile.
+
+This is the deeper continuity across the book’s middle run.
+
+Chapter 3 argued that delegated work needs a legible workplace.
+Chapter 4 argued that it needs a quality loop.
+Chapter 5 argued that it needs the right working set of information.
+Chapter 6 adds that none of this is enough if the work cannot persist, recover, and be supervised over time.
+
+A machine colleague is not just a model with tools. It is a model inside an operating environment.
+
+And the better that operating environment gets, the less the future of AI engineering looks like chat and the more it looks like building dependable systems for shared human-and-machine work.

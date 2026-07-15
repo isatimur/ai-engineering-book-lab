@@ -1,132 +1,173 @@
 # Chapter 5 — Context Is Infrastructure
 
-Useful AI systems do not fail only because the model is weak. They fail because the system cannot assemble the right working set of information at the right moment, in the right shape, at a cost the product can bear.
 
-For a while, context looked like a prompt-trick problem. You had a box, a token limit, and a growing collection of devices for stuffing more things into it. Add a few retrieved documents. Paste the spec. Prepend some examples. Tell the model to think harder. Each move felt like progress because each one was visible: more characters in, more confidence out.
+Useful AI systems do not fail only because the model is weak.
 
-But the framing was upside down.
+They fail because the system cannot assemble the right working set of information at the right moment, in the right shape, at a cost the product can bear.
 
-Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice. Two systems with identical model weights can differ enormously in usefulness based purely on what reaches the model and what shape that information arrives in. The chapter that follows is about treating that substrate the way engineering treats other substrates: as infrastructure, with versions, budgets, observability, and failure modes you have a plan for.
+As long as AI felt like a prompting game, context looked like an input-field problem. You had a box, a token limit, and a growing collection of tricks for stuffing more things into it. Add a few retrieved documents. Paste a spec. Prepend some examples. Tell the model to think harder. But that framing gets the problem backwards. Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice.
 
-## Context is the substrate, not the garnish
+That becomes obvious the moment you leave toy tasks. A coding agent needs the right files, the right rules, and the right execution history. A research agent needs the right sources, not just more sources. A legal or enterprise assistant needs proprietary context, structured evidence, and a way to separate active working memory from archival knowledge. And once tools enter the picture, the problem gets harder still. Suddenly the system is not only choosing which documents to retrieve. It is choosing which capabilities to expose, how to describe them, and how to avoid drowning the model in a giant catalog of possible actions.
 
-The earliest framings of prompt engineering trained a generation of builders to think of context as text you assemble in a string, and to assume that if the window is big enough you can keep stuffing. Nupur Sharma's Qodo work shows why that assumption fails on real workloads: models privilege the start and the end of the window and degrade in the middle, so a longer prompt does not buy more attention, it buys a wider blind spot. Her detection cue is concrete — when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly (hierarchical summarization, graphs, iterative retrieval), not a bigger window. The string-assembly model survives a chatbot answering one question. It breaks the moment the system has to act over real workflows, with real users, against real data, for more than a few turns.
+This is why the next generation of AI systems is being shaped less by prompt cleverness than by context architecture. Retrieval, memory, GraphRAG, enterprise knowledge layers, tool schemas, capability grouping, and token-budget discipline are all parts of the same deeper problem: deciding what the model should see, when it should see it, and what must stay out of the way.
 
-Val Bercovici names the shift directly. Context platform engineering, he calls it, is "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale." The phrase is dense, but the move is clear. The thing being engineered is no longer the prompt. It is the platform that decides what gets put into prompts. Bercovici's own measure of whether that platform is working is the KV-cache hit rate: when the platform assembles context so that the stable prefix stays identical across calls, the model reuses cached key-value tensors instead of recomputing them, which is where most of the token cost and latency hides. That gives you a usable design rule — order context from most-stable to most-volatile so the cacheable prefix is as long as possible, and treat a falling cache-hit rate as a regression in the context layer, not just a billing line.
+Context, in other words, is infrastructure.
 
-Ofer Mendelevitch's enterprise deep-research framing pushes the argument to its limit. The hard problem of enterprise AI, he says, is not access to documents. It is access to the *relevant* documents — the ones the agent actually needs for the current step, ranked, deduplicated, and trustworthy. His own headline number is the reason to take this seriously: in his telling, roughly 73% of enterprise LLM customers name factual accuracy as their top challenge, and the accuracy is lost in assembly long before the model reasons. The operational consequence is a pipeline, not a prompt: retrieve a broad candidate set, rank it, deduplicate near-identical passages, drop stale versions, tag provenance, and only then hand the model the few hundred passages that survive. Once you accept that frame, prompt engineering becomes a small subset of a much larger discipline, and "we have access to the documents" stops counting as having solved retrieval.
+## The active working set matters more than the raw knowledge base
 
-## Stuffing context is not memory
+One of the most persistent confusions in AI product work is the assumption that having access to more information is basically the same thing as having better context.
 
-Jack Morris has one of the sharpest one-liners in the corpus: "Stuffing context is not memory."
+It is not.
 
-The line is so quotable it can be mistaken for a slogan. It is actually a load-bearing claim about architecture.
+A company may have millions of documents. A codebase may have thousands of files. A legal research system may have access to a vast corpus of precedent, internal notes, and prior work product. None of that guarantees that the model will see the right few things for this task, in this turn, under this deadline.
 
-A system that only places relevant documents into a prompt has accomplished retrieval, not memory. The model has no commitment to those documents after the response is generated; the retrieval layer itself keeps no durable model of what it surfaced. Unless something outside the window writes state down, the next turn re-derives everything, and the continuity the user feels is manufactured each time by re-stuffing the window with freshly chosen artifacts. This is the operational tell that separates the two: ask whether a fact the user stated three sessions ago can change the system's behavior now *without that fact being re-retrieved into the prompt*. If the answer is no, you have retrieval wearing a memory costume — and the fix is a separate memory store, not a better reranker.
+That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
 
-Memory, by contrast, requires durable structure, and the structure is not generic. Chalef's rule at Zep is to model your memory after your business domain: the entities that matter are your customers, accounts, tickets, and the relationships between them, not a flat log of chat turns. Concretely, a memory layer has to decide what to retain versus summarize, what to forget on a schedule, what to refresh when the source changes, and what to surface unprompted — and it has to update an old belief when new evidence arrives rather than appending a contradicting one beside it. Chalef's failure mode is precise: irrelevant facts pollute memory, so a memory store with no forgetting or no belief-update path slowly poisons its own retrievals. None of those properties emerge from pushing more text into a window; they are schema and update-policy decisions you make before the first write.
+Jack Morris offers the cleanest line in the source corpus: “Stuffing context is not memory.” It is a sharp sentence because it attacks the lazy default directly. Shoving more tokens into the window is not a serious theory of knowledge use. It is closer to panic than architecture.
 
-The reason this distinction matters is that the failures look identical from the outside. A system that retrieves badly and a system that forgets can both surface a wrong answer about a customer the agent talked to yesterday. You can tell them apart with one test: paste the missing fact directly into the prompt and re-run. If the answer comes right, it was a retrieval failure — the fact existed and the pipeline failed to fetch it, so the fix lives in ranking, recall, or freshness. If the answer is still wrong even with the fact in front of the model, or the system never had a place to write that fact down in the first place, it is a memory failure, and no amount of retrieval tuning will patch it. Better retrieval fixes the first; only a memory architecture fixes the second.
+Daniel Chalef makes a related point from the memory side. Teams often use retrieval as a universal substitute for state, history, and durable understanding. But memory across time, archival knowledge, and the active context surface are not the same layer. An agent may need all three, yet each has different update rules, different freshness requirements, and different failure modes.
 
-Daniel Chalef at Zep makes a related point with a more pointed framing: stop using RAG as memory. The error he sees in production systems is not RAG itself but RAG carrying weight it was never designed to carry — long-term user state, evolving entity facts, cross-session continuity. RAG is good at fetching documents. It is bad at maintaining a model of the user across months.
+That is why the practical unit of context engineering is not the total corpus. It is the active working set.
 
-Read these two claims together as a selection rule. Reach for retrieval when the job is fetching the right documents for the current step; reach for a memory layer when the job is maintaining state that has to persist — long-term user facts, evolving entities, cross-session continuity. Chalef's warning marks the trap: the moment RAG starts carrying that durable state, you have collapsed two layers that need to be designed separately.
+The question is not, “What can the model access in principle?” The question is, “What should the model be looking at right now to do this job well?”
 
-## RAG, memory, and GraphRAG are different jobs
+That is a much stricter engineering problem.
 
-Once the distinction between retrieval and memory is on the table, the next obvious question is whether all retrieval is the same. It is not.
+## Context is selection, shaping, and timing
 
-Stephen Chin's GraphRAG work and the broader Neo4j framing argue that retrieving over a graph is a different operation than retrieving over a flat vector index. The vector index excels when the question is about semantic similarity to existing content. The graph excels when the question is about relationships — who depends on whom, which entities co-occur, what does this concept connect to. Mitesh Patel at NVIDIA pushes the framing further with hybrid RAG, which fuses graph and vector retrieval because most useful enterprise questions need both.
+Once teams stop equating context with raw access, a second clarification becomes necessary. Context engineering is broader than retrieval.
 
-David Karam, from his Pi Labs work after Google Search, frames retrieval as a layered problem: you don't pick one technique, you layer them one query at a time, and each layer must be tuned to what it gives you before you invest in it. The layers are specific and have specific failure classes. Vector search catches semantic paraphrase but misses exact identifiers and rare tokens. BM25 or full-text catches the exact clause number or error string that embeddings blur away. Grep, regex, and metadata filters catch the cases where the right answer is a literal match the ranker would have buried. A reranker reorders the merged candidates so the most relevant rise before the window fills. Kuba Rogut's blunt version at Turbopuffer is that retrieval is not just vector search — and the practical consequence is that the engineering job is mapping each known failure class to the layer that catches it, then measuring recall per layer rather than trusting the stack as a black box.
+Retrieval matters. Search quality matters. Ranking quality matters. Chunking matters. But a production context system also has to shape the evidence, compress it, layer it, and decide when it should appear in the workflow. Sometimes the right move is to retrieve the most relevant source. Sometimes it is to retrieve three sources, summarize two, and keep one verbatim because wording precision matters. Sometimes it is to avoid retrieval altogether and carry forward a structured state object produced in the previous step.
 
-The deeper claim is that the field's vocabulary has been lagging the architecture. Practitioners say "RAG" and mean four different things depending on context. Sometimes they mean a single embedding lookup before a single prompt. Sometimes they mean a retrieve-then-rerank pipeline. Sometimes they mean a graph traversal that surfaces entities. Sometimes they mean a long-term memory layer. The label has collapsed distinctions that the architecture depends on.
+Val Bercovici’s phrase “context platform engineering” is useful precisely because it elevates the problem out of prompt folklore and into systems design. If your system has to support many tasks, many agents, many tools, and many data sources, then context becomes something you engineer, budget, version, and monitor.
 
-Will Bryk's neural-RAG work at Exa comes at it from the opposite direction. His bet is that "the right agent in the future is going to be this system that decides what type of search" — retrieval folded into the reasoning loop instead of run once before the prompt. The model issues a query, reads the result, decides whether to follow up, and decides when to stop. That is also called RAG today, but it shares almost nothing with a single embedding lookup, and the trade-off is concrete: iterative retrieval buys recall on open-ended research questions at the cost of many more model calls and far higher latency. So the decision rule is by query shape, not by fashion — use one-shot retrieve-then-rank when the question is bounded and you can name the right index up front; reach for loop-integrated retrieval only when the agent genuinely cannot know which searches it needs until it has read the early results.
+This is where a lot of otherwise promising AI products become strangely fragile. Their context logic is accidental. They have a search call, a prompt template, and a rough hope that relevant things will land in the window. The product may work beautifully on easy questions and then fall apart on the exact tasks that matter most: cross-document synthesis, multi-hop reasoning, domain-specific exception handling, or cases where one irrelevant chunk quietly crowds out the one paragraph that actually governs the answer.
 
-The practical consequence is that "we'll just add RAG" is no longer a useful sentence in a design discussion, because the word now hides at least four different builds: single embedding lookup, retrieve-then-rerank, graph traversal over entities, and a long-term memory layer. Make the design discussion answer five questions explicitly before anyone writes code — which of those patterns, against which data shape (flat documents, relational records, or a graph), with what ranking and dedup, with what freshness guarantee on stale versions, feeding into which reasoning surface (one-shot or loop-integrated). A design doc that cannot fill in those five blanks has not specified a retrieval system; it has named a buzzword and is relying on luck.
+The failure often gets described as hallucination.
 
-## Enterprise usefulness is a working-set problem
+Sometimes it is. But just as often it is context misassembly.
 
-The argument so far has been mostly about technique. The harder argument is about value.
+That distinction matters because the remedy changes. Hallucination invites better model behavior. Misassembly invites better infrastructure.
 
-Joel Hron's framing — that AI is shifting from helpfulness to producing judgments — looks different inside an enterprise than it does inside a consumer chatbot. Inside the enterprise, the agent's value depends almost entirely on its ability to assemble a small, accurate, current, trustworthy working set out of a much larger, messier corpus. Without that working set, the model is doing impressive cognition over the wrong material, and the answer is wrong in a way that is hard to catch.
+## The High-Stakes Colleague needs more than access
 
-Kuba Rogut puts the sizing rule in one line, relaying Jeff Dean: you don't need a trillion tokens at once, you need the right million. That reframes the budget question. The number to instrument is not how many documents the index holds but how much of the assembled working set the model actually used to produce a correct answer — and when a broad query drags in hundreds of passages, the work that produces value is the convergence on the handful that matter, not the cognition that happens after. If you cannot say which retrieved passages the answer depended on, you cannot tell a convergence win from a lucky guess.
+Hargrove’s tax practice makes the stakes of this chapter especially clear.
 
-Calvin Qi at Harvey and Chang She at Lance describe the same pattern from inside legal work. Lawyers do not need an agent that can read everything. They need an agent that can find the specific clause, the specific precedent, the specific exception that bears on the matter at hand. The retrieval has to separate authoritative sources from background material, and it has to surface provenance so the lawyer can verify what the system found before relying on it.
+The firm’s assistant began life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
 
-Chau Tran's Glean work generalizes this across enterprises. The enterprise-aware agent, in his framing, is not one that has access to the company's documents. It is one that knows which documents matter for the current user, the current role, the current task — and which to ignore. The boundary work is the engineering work, and it is mostly filtering on signals the corpus already carries: the user's permission scope (so the working set never includes documents this person cannot see), the freshness of the source, and the document's role in the org rather than its raw text-similarity score. The trap to avoid is ranking purely on embedding similarity, which happily surfaces a deprecated wiki page that reads almost identically to the current one. Permission-scope and recency filters belong before the reranker, not after, so excluded material never competes for the window in the first place.
+At that point, generic model intelligence is no longer the bottleneck. The bottleneck is whether the system can assemble professional-grade context.
 
-The unifying claim across these talks is that enterprise usefulness scales with working-set quality, not with corpus size. A larger corpus without better assembly produces worse outcomes, not better ones. A smaller corpus that is well-ranked, well-scoped, and provenance-tagged often outperforms a larger one that is dumped in raw.
+Chau Tran’s enterprise framing is useful here because it refuses the fantasy that an LLM becomes enterprise-aware by being merely smarter. A brilliant new employee is still ineffective on day one if they cannot find the internal wiki, do not know which document system matters, and cannot tell policy from draft from folklore. The same is true of agents.
 
-The working set is not only a quality lever; it is the dominant *cost* lever — the version of this argument with a dollar figure attached. Rajkumar Sakthivel's team at Tesco states the decomposition bluntly: "90% of your AI cost is input. Files, search results, context you send in. Only 10% is output." That inverts the usual optimization instinct, which reaches first for a cheaper model: "the model choice matters less than you think," he argues, because the model "may be 30% of the cost, but other 70% is what you feed it." Indexing a codebase and retrieving the relevant slices instead of pasting whole files cut their input tokens by a measured — if best-case — 94% on a benchmark repo. Stuffing the window is not just worse cognition; it is the line item.
+This is where the book’s second recurring case, the High-Stakes Colleague, becomes more than metaphor. The system is not valuable because it can speak elegantly about law or tax. It is valuable if it can operate inside a domain where evidence provenance, internal knowledge, and retrieval discipline materially change the quality of work.
 
-This is also where Chapter 4's argument should still be echoing, and it implies a specific eval design. Evals can measure whether an answer is right, but context architecture determines whether the right answer was even reachable. So split the metric: score retrieval and generation separately. Track whether the gold passage made it into the assembled working set at all (a recall measure on the context layer) before you score whether the model used it correctly. When end-to-end accuracy drops, that split tells you which half regressed — a model you can swap, or a substrate you have to fix. Score only the final answer and a context-assembly bug looks exactly like a model getting dumber, and you will waste a model upgrade on it.
+In Harvey’s and related legal-frontier material, the problem is not only finding relevant text. It is finding the right text in the right topology: internal precedents, authoritative sources, matter-specific files, note trails, citations, and the relationships between them. The difference between “broadly relevant” and “operationally decisive” can be a single paragraph hidden in the wrong layer.
 
-## The next failure frontier is context misassembly
+That is why Hargrove’s context system needs more than a document dump. It needs access boundaries, source typing, freshness policies, ranking tuned to domain use, and interfaces that preserve provenance. In high-stakes work, a system that is 90 percent right for unclear reasons can still be professionally unusable.
 
-For most of the public conversation about AI quality, hallucination has been the boogeyman. The model invented a citation. The model fabricated a fact. The model imagined a precedent that does not exist. Hallucination is real and worth measuring — and a grounding check that verifies every claim traces to a cited source will catch most of it. But that exact check is also why hallucination is becoming the wrong primary failure mode to obsess over: the frontier failures pass it. Every source is real, every quote verifies, and the answer is still wrong. A citation-grounding eval scores those cases as clean, which is precisely how they slip into production.
+The issue is not whether the model knows a lot. The issue is whether the product can build a trustworthy evidence surface around the model.
 
-The newer, more expensive failure mode is context misassembly.
+## Context topology determines usefulness
 
-Context misassembly is what happens when the system retrieves real documents, in the wrong combination, with the wrong weighting, at the wrong moment, and produces an answer that is technically grounded but practically misleading. Nothing is hallucinated. Every cited source exists. Every quote can be verified. But the assembled context misrepresents the underlying state of the world because the assembly missed something, ranked something poorly, or surfaced an outdated version of a document the system also has the current version of.
+The phrase context topology may sound abstract, but the idea is concrete. Different kinds of information should not all be treated as interchangeable text.
 
-Morris's distinction between stuffing and memory points at one form of this. The system surfaces three documents about the customer, two of them stale, one of them current. The model averages them and produces an answer that is half-current. Nothing is invented; nothing is correct either. The fix is not a smarter model but a dedup-and-recency pass before assembly: when two retrieved chunks describe the same entity, keep the most recent and drop the rest rather than letting both into the window to be averaged. The detection cue is a near-duplicate alarm — if your retrieval routinely returns multiple high-similarity chunks that differ mainly by date, you are feeding the model contradictions and calling it context.
+A company handbook is not the same as a CRM record. A draft contract is not the same as signed language. An old Slack discussion is not the same as a policy. A code spec is not the same as the code itself. A matter note written by a senior attorney is not the same as a general explainer article pulled from a public source.
 
-Ivan Leo's Manus AI research-agent work — now under Meta Superintelligence — surfaces the same problem at a different scale. A deep-research agent that pulls hundreds of sources can produce a summary that is internally consistent and externally wrong because the assembly drifted as the agent worked. Each individual retrieval was fine. The composition was off.
+Yet simplistic retrieval systems flatten all of these into one big searchable pile. They act as if the only problem were semantic similarity.
 
-Karam's layered-RAG approach is partly a response to this. By treating retrieval as a multi-pass operation with distinct failure modes per layer, the system gives misassembly multiple chances to be caught by a downstream layer. That works, partially, but it does not change the underlying architectural fact: context misassembly is a structural failure mode, and the systems that are starting to dominate production are the ones that designed for it explicitly.
+In practice, usefulness depends on topology: what kind of thing this is, how it relates to other things, how trustworthy it is, how recent it is, whether it is active or archival, and whether the current task calls for literal quotation, background orientation, or cross-source synthesis.
 
-The reason this matters for the book's overall argument is that misassembly does not get fixed by a better model. A better model produces a more confident wrong answer faster. The fix lives in the substrate — in how the system assembles, ranks, deduplicates, and freshens the context before the model is asked to reason over it. The checks that catch it run on the assembled working set, not the output: was a stale version included when a current one existed, were two retrieved sources contradictory, did the gold passage rank below the window cutoff. Those are misassembly tells an output-only score waves straight through. That is what makes context engineering an infrastructure problem instead of a prompt problem.
+This is one reason context engineering is so often misunderstood by teams that are still thinking in terms of “RAG versus no RAG.” Retrieval-augmented generation is one mechanism. Context topology is the broader design problem.
 
-## MCP makes context a capability problem too
+A serious context architecture distinguishes layers such as:
 
-The rise of the Model Context Protocol has expanded what context includes. An MCP-connected agent has access not only to documents but to tools — APIs, search endpoints, file operations, internal services, and increasingly, other agents. Each of those tools shows up in the context window as a capability description: a name, a schema, an example. The window now contains both the information the system might consult and the actions the system might take.
+- authoritative sources versus helpful background
+- current task state versus long-term memory
+- private internal knowledge versus public reference material
+- raw evidence versus summaries derived from prior steps
+- tool outputs that should be inspected directly versus ones safe to compress
 
-That expansion brings a new failure mode.
+Once those layers are explicit, the system can behave less like a desperate search box and more like a disciplined colleague assembling a working binder.
 
-Matt Carey's MCP mega-context-problem talk identifies the failure cleanly: "We shouldn't be dumping loads of tools into context." When an agent has access to fifty tools, the capability descriptions for those tools can flood the window before the user's question is even processed. The model spends its attention budget reading tool definitions and has less budget for the actual reasoning the user wanted. Worse, the abundance of tools tempts the model into calling the wrong one because it now has to disambiguate between options that all look superficially relevant.
+That image is useful because it makes the design standard obvious. A strong professional does not walk into a meeting carrying every file the firm has ever touched. They carry the current binder, the active notes, a few precedents, and a clear sense of what counts as governing authority. Context systems should aspire to the same selectivity.
 
-Sam Morrow's GitHub MCP-scaling work tells the production-grade version of this story, with numbers. Community contributions pushed GitHub's server past 100 tools and the agents got measurably worse — windows blew out, models got confused and forgetful — the same failure LangChain had already published. GitHub's first instinct was elegant opt-in machinery: tool sets, dynamic discovery, even a RAG-based tool search. Almost no one used any of it, because most users never touch the JSON config. That is the load-bearing lesson: any fix that depends on user configuration reaches a minority, so change the default instead. GitHub did, cutting the initial tool-load context by 49% by analyzing real usage rather than guessing, then trimming output too (list-pull-requests shed 75% of its output tokens by dropping unused fields). The number of tools the agent could in principle call did not go down. The number it had to read, and the tokens each one cost, did. That difference is the engineering.
+## Graphs matter when evidence must be assembled, not merely fetched
 
-Karan Sampath, sharing what Anthropic learned scaling MCP to enterprises, points at the same dynamic from the governance side. The enterprise version is not just performance, it is trust, and his prescription is concrete: a security team's goal is to "bless one platform" and "establish a root of trust" rather than vet servers one at a time. The architecture that follows is recognizable — a gateway, a registry of reviewed servers, tools scoped to the calling principal, and an audit log at the gateway layer. The point for context design is that this is the same shaping problem seen from a different seat: deciding which tools a given principal sees is both a capability-flood decision and a permission decision, so the filter that trims the window for performance is also the surface the security team inspects. Build them as one layer, not two.
+There is a predictable cycle in AI infrastructure where one technique gets overhyped, then mocked, then quietly absorbed into mature practice. GraphRAG is in some danger of following that path.
 
-The unifying claim here is that the moment tools entered the context window, context engineering became broader than retrieval; it also became capability management. The directive the production cases point to: expose tools by intent rather than all at once, describe them tightly, and retract them when they stop being relevant — so you shrink the number of tools the agent must read at any moment, not the number it can call.
+The right way to think about graphs is neither as magic nor as marketing garnish. They matter when the task punishes shallow retrieval.
 
-## Progressive discovery is infrastructure, not UX
+Nearest-neighbor search is often enough when the user wants one relevant passage. It becomes less sufficient when the work depends on relationships: this clause belongs to this agreement, which sits inside this matter, which has a related note, which references an exception in another source, which only matters for this entity and date range. That is not merely a document-matching problem. It is an evidence-assembly problem.
 
-The natural reaction to the tool-flood problem is to surface fewer things up front and let the agent discover more as it needs them. The technique has a name — progressive disclosure — and Pedro Rodrigues at Supabase states the mechanism plainly: a capability "doesn't have to be loaded immediately to context." You expose a short index of what exists, and the full schema, examples, and instructions for a tool or skill load only when the agent reaches for it. His tested result is the reason to bother: MCP paired with skills using progressive disclosure beat raw MCP alone, because raw MCP pays the full token cost of every tool up front. The harder claim is that this deserves to be treated as infrastructure rather than a UX nicety.
+Stephen Chin and the Neo4j material are useful here because they make the structure visible. Knowledge graphs can help with multi-hop synthesis, entity disambiguation, and the recovery of relations that ordinary chunk retrieval tends to flatten away. The point is not that every product needs a graph. The point is that some tasks require a representation richer than bag-of-passages search.
 
-Bercovici's context-platform framing makes this argument structurally. The right amount of context to expose at any given step is a function of the step, the agent, the user, and the task — not a static property of the system. That is exactly the shape of an infrastructure problem. It needs a layer that owns the decision, observes the outcome, and updates over time.
+This is especially true in enterprise and legal settings, where what matters is often not a single answerable sentence but a traceable path across entities, documents, and prior decisions. Hybrid retrieval becomes attractive because different pieces of the context problem want different tools. Vector search is good at semantic similarity. Graph-based traversal is better at following explicit relationships. Keyword or metadata filters remain valuable when exactness matters. Mature systems layer them instead of declaring one winner.
 
-Sam Morrow's GitHub work is the closest thing the corpus has to a production case study for this. The team did not just trim the tool list. They built grouping, tailoring, and intent-aware exposure into the MCP server itself. The agent does not see every tool; it sees the tools the server has decided are relevant given the agent's intent. The decision lives in the server, not the prompt.
+The key chapter-level claim is simple: context quality depends on how well the system assembles evidence, not only on whether it retrieves something related.
 
-The deeper point is that progressive discovery does work the model cannot do for itself. The model can reason about the tools it is shown; it cannot reason about tools absent from the window. So the selector — whatever decides which tools to show — is part of the architecture, and it has to be testable like one. That means logging, per request, which tools were exposed and which the agent actually called, then watching two failure signals: tools that get exposed every time and never called (dead weight you can drop from the default) and tasks that fail because the needed tool was never surfaced (a recall miss in the selector). Both are measurable, and neither is something the model can fix from inside the prompt.
+## Memory is not the same thing as a long prompt
 
-This is also where the book's earlier claims about harness engineering — Chapter 3 — start cross-loading. "Agent-ready codebase" stops meaning "a repository with good tests" and starts including the capability surface: how many tools the agent sees by default, whether their schemas are tight enough that the agent picks the right one, whether stale docs are excluded from retrieval, whether the AGENTS.md and skill files load progressively instead of all at once. A concrete first audit is to count the tools and context your harness loads on an empty task — if the agent reads fifty tool definitions before it has a goal, you have a context-platform problem wearing a harness label, and the fix lives in the server and the retrieval layer, not in the prompt.
+The longer agents operate, the more tempting it becomes to treat the context window as a backpack that just keeps getting bigger.
 
-## Why context is infrastructure
+That instinct is understandable and usually wrong.
 
-Context is the substrate, not the garnish.
+Hierarchical memory is a better mental model. Some things belong in immediate working memory because they are needed right now. Some belong in session history because they explain how the current state was reached. Some belong in durable long-term memory because they recur across tasks. Some should not be carried at all unless explicitly reintroduced.
 
-If context is a substrate, then context engineering is the discipline of building, maintaining, and observing it — and each of its mechanisms fires on a recognizable trigger. Retrieval architecture answers "fetch the right documents for this step." Memory architecture answers "carry durable user and entity state across sessions." Capability management and progressive disclosure answer "expose only the tools this step needs." Freshness handling and provenance answer "make sure the version is current and its source is traceable." Cost and latency budgets — KV-cache hit rate, tokens per call, layers per query — decide when each of the others is allowed to fire. It is not a thing one component does. It is a layer with its own state and its own failure modes, and naming the trigger for each mechanism is how you stop treating them as one undifferentiated "RAG" knob.
+This matters because every piece of carried-forward context has a cost. It occupies tokens. It competes for attention. It increases the chance that stale, irrelevant, or misleading information will quietly shape the next step. Bigger windows reduce one kind of pressure, but they do not remove the need for disciplined selection.
 
-A team that treats context as a one-off prompt-assembly problem will keep finding the same failures and keep fixing them with one-off measures. Add a reranker here. Patch a deduplication bug there. Re-tune a chunk size when retrieval starts missing the relevant clause. None of those are wrong, but none of them add up to an architecture.
+The software-factory case already hinted at this in Chapter 3. An agent working in a repo does not need the whole codebase in active view. It needs the right files, the relevant specs, and enough execution history to avoid losing the thread. Chapter 4 sharpened the same point from the measurement side: the system must preserve the right failures and slices. Chapter 5 extends the logic. Good context architecture means knowing what to keep live, what to summarize, what to index, and what to leave out.
 
-A team that treats context as infrastructure builds for the failure modes the chapter has named: misassembly, capability flood, memory drift, provenance loss. They version the context layer. They observe what it surfaces. They measure how the model's outputs change when the context layer changes. They treat the context platform the way a database team treats the storage engine — as a piece of working infrastructure whose properties shape everything built on top of it.
+In other words, context systems need forgetting as much as they need recall.
 
-Treating context as infrastructure has a structural consequence the next chapter takes up: the substrate cannot live inside a single agent run. The moment memory has to survive across sessions and a half-finished task has to resume after an interruption, the context layer needs somewhere durable to persist and a way to replay — which is the runtime and state problem, not a context problem. That threshold, where a stateless prompt becomes a stateful workflow, is where Chapter 6 begins.
+That is not weakness. It is design maturity.
 
-## What to do with this
+## MCP turns context into a capability-management problem
 
-- Treat context as a versioned, observable layer with its own budgets and failure modes, not a string you assemble per request.
-- Don't use RAG as your memory layer: retrieve to fetch the right documents for a step, and design a separate memory architecture for durable user and entity state across sessions.
-- Match the retrieval pattern to the question — vector search for semantic similarity, graph traversal for relationship questions, hybrid when the query needs both — and make ranking, data shape, and freshness explicit before you build.
-- Optimize for working-set quality, not corpus size: a smaller, well-ranked, provenance-tagged set beats a larger raw dump.
-- Budget cost at the input, not the model. In a retrieval or coding agent, the prompt you assemble — files, search results, history — usually dominates the bill, not the tokens the model writes back. Index and retrieve precise slices instead of pasting whole files, cache stable prefixes, and summarize tool results before re-sending; fix the input before you reach for a cheaper model.
-- Design for context misassembly, not just hallucination — dedupe, freshen, and weight retrieved documents so stale-and-current sources can't average into a half-right answer. A stronger model will not fix this.
-- Don't flood the window with tools: expose them by intent and retract them when irrelevant, shrinking the number of tools the agent must read at any moment rather than the number it can call.
+The rise of tool protocols such as MCP exposes a newer version of the same issue.
+
+For a while, context engineering mostly meant “Which documents should the model see?” Now it also means “Which tools should the model know exist, how should they be described, and how do we prevent the capability surface from becoming its own form of overload?”
+
+Matt Carey’s phrase “mega context problem” lands because it names the trap precisely. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
+
+Sam Morrow’s lessons from GitHub’s remote MCP server push the point from diagnosis into operating practice. Progressive discovery, grouping, intent-aware exposure, and ruthless context reduction are not polish. They are core product decisions. The model should not receive a phone book of capabilities when what it needs is a small, discoverable menu relevant to the current task.
+
+This is one of the most important ways the context chapter connects back to the rest of the book. Tool access is not merely an integration story. It is part of the same infrastructure problem as retrieval, memory, and evidence assembly. The system has to decide what the model should see and what it should not.
+
+The old failure mode was “the model lacked the right document.” The emerging one is “the model was buried under too many possible actions.”
+
+Those are different surface symptoms of the same architectural weakness.
+
+## Context quality is measured downstream
+
+A lot of context discussions drift into architecture diagrams too quickly. The diagrams can be useful, but they also create a form of intellectual camouflage. A beautiful retrieval stack can still produce mediocre work. A graph-enhanced pipeline can still be badly ranked. A memory subsystem can still carry forward the wrong state. An elegantly standardized tool protocol can still swamp the model with irrelevant capability descriptions.
+
+The only reliable proof of context quality lives downstream.
+
+Does the system complete real tasks more accurately?
+Does it cite better evidence?
+Does it reduce review burden?
+Does it waste fewer tokens to get the same or better result?
+Does it make higher-stakes workflows feel more trustworthy rather than more theatrical?
+
+That is why Chapter 5 belongs so closely next to Chapter 4. Evals tell you whether your context architecture is actually helping. Observability tells you where context assembly failed in production. The two disciplines are inseparable in practice. You do not know that your context system is good because the retrieval trace looks clever. You know it is good because the work improves.
+
+This also explains why so many context debates are unproductive when they happen in the abstract. Teams argue about RAG, GraphRAG, memory, or tool selection as if these were ideological camps. In production, they are just means. The end is better delegated work.
+
+## Context is what makes intelligence situated
+
+There is a temptation, especially among people impressed by raw model progress, to treat context work as secondary plumbing. If the model keeps getting smarter, surely the need for elaborate context engineering should diminish.
+
+In practice the opposite often happens.
+
+The more capable the model, the more value there is in placing the right evidence, tools, and state in front of it. Stronger models can do more with good context. They can also generate more persuasive nonsense when the context surface is badly assembled. Capability amplifies both outcomes.
+
+That is why context belongs in the same mental bucket as harnesses, evals, runtimes, and security. It is not a prompt trick. It is one of the engineered surroundings that determine whether intelligence becomes useful.
+
+A machine colleague does not need infinite information. It needs the right binder.
+
+But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
+
+That is the runtime problem. Which is to say: the next layer of infrastructure.
 
 ---
 
