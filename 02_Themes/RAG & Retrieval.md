@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 162
+- Total tagged videos: 164
 
 ## Cross-video synthesis
 
-- This theme appears across 162 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (18).
+- This theme appears across 164 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (22), Evals & Reliability (19).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
 ## Seed videos
@@ -174,6 +174,8 @@
 - [[685-eW_vxrjvERk-connecting-the-dots-with-context-graphs-stephen-chin-neo4j|#685 — Connecting the Dots with Context Graphs — Stephen Chin, Neo4j]]
 - [[773-jVjt-2g8NMY-a-genius-with-amnesia-victor-savkin-nx|#773 — A Genius With Amnesia - Victor Savkin, Nx]]
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
+- [[817-1IdzkRVmWAA-how-we-taught-agents-to-use-good-retrieval-hanna-lichtenberg-mixedbread-ai|#817 — How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI]]
+- [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
 
 ## Notes
 

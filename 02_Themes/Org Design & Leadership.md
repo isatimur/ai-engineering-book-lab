@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 242
+- Total tagged videos: 248
 
 ## Cross-video synthesis
 
-- This theme appears across 242 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (18).
+- This theme appears across 248 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (19).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -254,6 +254,12 @@
 - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs]]
 - [[688-YNJvm7t3yq8-why-your-ai-ux-is-broken-and-it-s-not-the-model-s-fault-mike-christensen-ably|#688 — Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably]]
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
+- [[795-vljxQZfJ9wY-production-evals-for-agentic-ai-systems-nishant-gupta-meta-superintelligence-labs|#795 — Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs]]
+- [[806-d_Ftrl3vfV0-your-ai-product-will-fail-unless-you-can-explain-it-veronica-hylak-hey-ai|#806 — Your AI Product Will Fail Unless You Can Explain It - Veronica Hylak, Hey AI]]
+- [[819-G6IlDzj8OjA-gtm-is-you-victoria-melnikova-evil-martians|#819 — GTM Is You - Victoria Melnikova, Evil Martians]]
+- [[840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft|#840 — The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft]]
+- [[841-vJukHCIv7Ck-stop-ai-agent-hallucinations-5-techniques-production-patterns-elizabeth-fuentes-aws|#841 — Stop AI Agent Hallucinations: 5 Techniques + Production Patterns - Elizabeth Fuentes, AWS]]
+- [[859-8G_1-3IO4ZQ-wtf-is-the-context-layer-the-missing-infrastructure-for-production-agents-prukalpa-sankar|#859 — WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar]]
 
 ## Notes
 

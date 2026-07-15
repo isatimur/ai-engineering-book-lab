@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 27
+- Total tagged videos: 29
 
 ## Cross-video synthesis
 
-- This theme appears across 27 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (8), MCP & Tooling (3), RAG & Retrieval (2).
+- This theme appears across 29 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (8), Agent Architecture (4), MCP & Tooling (3).
 - Representative talks: #15 State of the Claw — Peter Steinberger; #18 $1 AI Guardrails: The Unreasonable Effectiveness of Finetuned ModernBERTs – Diego Carpentero; #31 Why, and how you need to sandbox AI-Generated Code? — Harshil Agrawal, Cloudflare.
 
 ## Seed videos
@@ -39,6 +39,8 @@
 - [[516-jdeMJJ_oNYg-llm-safeguards-security-privacy-compliance-anti-hallucination-daniel-whitenack|#516 — LLM Safeguards: Security Privacy Compliance Anti Hallucination: Daniel Whitenack]]
 - [[668-x2bH0RKPgdc-what-breaks-when-you-build-ai-under-sovereignty-constraints-bilge-y-cel-deepset-gmbh|#668 — What Breaks When You Build AI Under Sovereignty Constraints - Bilge Yücel, deepset GmbH]]
 - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Fighting AI with AI — Lawrence Jones, Incident]]
+- [[852-OqM67QG_Ikk-from-fork-to-fleet-designing-an-agent-sandbox-cloud-abhishek-bhardwaj-openai|#852 — From fork() to Fleet: Designing an Agent Sandbox Cloud — Abhishek Bhardwaj, OpenAI]]
+- [[855-c35YoMdnI78-the-great-loops-debate-dex-horthy-geoff-huntley-ian-livingstone-greg-pstrucha-insecure-age|#855 — The Great Loops Debate — Dex Horthy, Geoff Huntley, Ian Livingstone, Greg Pstrucha, @insecure-agents]]
 
 ## Notes
 

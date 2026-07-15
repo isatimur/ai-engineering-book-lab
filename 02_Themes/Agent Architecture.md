@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 185
+- Total tagged videos: 215
 
 ## Cross-video synthesis
 
-- This theme appears across 185 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (138), Evals & Reliability (122), MCP & Tooling (28).
+- This theme appears across 215 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (143), Evals & Reliability (125), MCP & Tooling (29).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon; #28 From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik.
 
 ## Seed videos
@@ -197,6 +197,36 @@
 - [[790-akk6KRlcwW4-openclaw-in-your-hand-building-a-physical-ai-terminal-lech-kalinowski-callstack|#790 — OpenClaw in Your Hand: Building a Physical AI Terminal - Lech Kalinowski, Callstack]]
 - [[791-uiP88SpCi1Q-your-agent-is-wasting-tokens-and-you-don-t-know-it-erik-hanchett-aws|#791 — Your Agent Is Wasting Tokens and You Don't Know It - Erik Hanchett, AWS]]
 - [[794-65X0pQ6Lmbg-voice-in-visuals-out-the-agony-and-the-ecstasy-allen-pike-forestwalk-labs|#794 — Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs]]
+- [[795-vljxQZfJ9wY-production-evals-for-agentic-ai-systems-nishant-gupta-meta-superintelligence-labs|#795 — Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs]]
+- [[796-Lc8zRh9muoY-your-agent-failed-in-prod-good-luck-reproducing-it-tisha-chawla-susheem-koul-microsoft|#796 — Your Agent Failed in Prod. Good Luck Reproducing It. - Tisha Chawla & Susheem Koul, Microsoft]]
+- [[797-LrGCT7G_rU8-using-rl-agent-to-detect-and-remediate-etl-pipeline-failures-anna-marie-benzon|#797 — Using RL Agent to Detect and Remediate ETL Pipeline Failures - Anna Marie Benzon]]
+- [[799-pSto5YaNGUo-the-agentic-ai-engineer-benedikt-sanftl-mutagent|#799 — The Agentic AI Engineer - Benedikt Sanftl, Mutagent]]
+- [[800-APh1Vx0oLmQ-deterministic-infra-for-non-deterministic-ai-agents-nishant-gupta-meta-superintelligence-l|#800 — Deterministic Infra for Non-Deterministic AI Agents - Nishant Gupta, Meta Superintelligence Labs]]
+- [[802-spNAUEgq_A8-the-future-is-domain-specific-agents-justin-schroeder-standardagents|#802 — The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents]]
+- [[804-UNzCG3lw6O0-building-great-agent-skills-the-missing-manual|#804 — Building Great Agent Skills: The Missing Manual]]
+- [[808-2IxD9OB3XuQ-continual-learning-for-ai-agents-from-failures-to-durable-improvements-soheil-feizi-relai|#808 — Continual Learning for AI Agents: From Failures to Durable Improvements - Soheil Feizi, RELAI]]
+- [[811-Rx8f05JI_WA-swe-marathon-evaluating-coding-agents-at-billion-token-scale-rishi-desai-abundant-ai|#811 — SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale - Rishi Desai, Abundant AI]]
+- [[817-1IdzkRVmWAA-how-we-taught-agents-to-use-good-retrieval-hanna-lichtenberg-mixedbread-ai|#817 — How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI]]
+- [[821-4kYl2_mqmnQ-i-run-a-fleet-of-ai-agents-across-three-machines-here-s-what-broke-kyle-jaejun-lee-krafton|#821 — I Run a Fleet of AI Agents Across Three Machines. Here's What Broke. - Kyle Jaejun Lee, KRAFTON]]
+- [[823-MpZzWMdmQCE-your-coding-agent-doesn-t-always-follow-your-rules-talha-sheikh-checkout-com|#823 — Your coding agent doesn't always follow your rules — Talha Sheikh, Checkout.com]]
+- [[824-HEFSExa0xl0-teaching-coding-agents-to-do-spreadsheets-nuno-campos-witan-labs|#824 — Teaching Coding Agents to do Spreadsheets - Nuno Campos, Witan Labs]]
+- [[825-HsxQICTLF84-building-an-acp-compatible-agent-live-bennet-fenner-zed|#825 — Building an ACP-Compatible Agent Live — Bennet Fenner, Zed]]
+- [[826-iRcX54EO5g8-your-agent-is-blindfolded-johan-lajili-poolside-ai|#826 — Your agent is blindfolded — Johan Lajili, Poolside AI]]
+- [[833-YZQsWVeN3rE-design-patterns-for-ai-trust-juries-libraries-and-agent-tiers-alex-bauer-upside-tech|#833 — Design Patterns for AI Trust: Juries, Libraries, and Agent Tiers — Alex Bauer, Upside.tech]]
+- [[834-uIiA6DquRiE-special-topics-in-kernels-rl-reward-hacking-in-agents-daniel-han-unsloth|#834 — Special Topics in Kernels, RL, Reward Hacking in Agents — Daniel Han, Unsloth]]
+- [[837-WLXxTaPagA8-every-solo-agent-builder-eventually-reinvents-a-worse-version-of-ci-cd-sumaiya-shrabony|#837 — Every Solo Agent Builder Eventually Reinvents a Worse Version of CI/CD - Sumaiya Shrabony]]
+- [[840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft|#840 — The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft]]
+- [[841-vJukHCIv7Ck-stop-ai-agent-hallucinations-5-techniques-production-patterns-elizabeth-fuentes-aws|#841 — Stop AI Agent Hallucinations: 5 Techniques + Production Patterns - Elizabeth Fuentes, AWS]]
+- [[843-7P0elyLIxXo-what-does-done-even-mean-agents-and-paperclip-s-liveness-model-dotta-paperclip|#843 — What Does Done Even Mean? Agents and Paperclip's Liveness Model - Dotta, Paperclip]]
+- [[844-5192csoTkVo-remobi-app-don-t-change-your-terminal-workflow-for-mobile|#844 — remobi.app: Don't change your terminal workflow for mobile]]
+- [[846-UlFB6efYN5Q-a-song-of-types-and-agents-roberto-stagi-ratel|#846 — A Song of Types and Agents - Roberto Stagi, Ratel]]
+- [[847-sum9DgexFRQ-the-agentic-web-and-the-bazaar-era-of-ai-ramesh-raskar-mit-media-lab|#847 — The Agentic Web and the Bazaar Era of AI - Ramesh Raskar, MIT Media Lab]]
+- [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
+- [[851-V-EDrhIhHzQ-building-open-source-agentic-models-will-brown-prime-intellect|#851 — Building Open Source Agentic Models — Will Brown, Prime Intellect]]
+- [[852-OqM67QG_Ikk-from-fork-to-fleet-designing-an-agent-sandbox-cloud-abhishek-bhardwaj-openai|#852 — From fork() to Fleet: Designing an Agent Sandbox Cloud — Abhishek Bhardwaj, OpenAI]]
+- [[855-c35YoMdnI78-the-great-loops-debate-dex-horthy-geoff-huntley-ian-livingstone-greg-pstrucha-insecure-age|#855 — The Great Loops Debate — Dex Horthy, Geoff Huntley, Ian Livingstone, Greg Pstrucha, @insecure-agents]]
+- [[856-n97BCfyFIvw-the-agent-can-choose-but-people-inherit-the-consequences-addy-osmani|#856 — "The agent can choose, but people inherit the consequences." — Addy Osmani]]
+- [[859-8G_1-3IO4ZQ-wtf-is-the-context-layer-the-missing-infrastructure-for-production-agents-prukalpa-sankar|#859 — WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar]]
 
 ## Notes
 

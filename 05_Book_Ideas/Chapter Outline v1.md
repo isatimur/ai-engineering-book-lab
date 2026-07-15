@@ -120,9 +120,9 @@ Working frame: **From Copilot to Colleague: How AI Engineering Turns Models into
 - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — From Copilot to Colleague: Trustworthy Agents for High-Stakes - Joel Hron, CTO Thomson Reuters]]
 - [[211-6Tpm4m1YxHk-critical-ai-inference-your-cio-can-trust-sahil-yadav-hariharan-ganesan-telemetrak|#211 — Critical AI Inference your CIO can Trust — Sahil Yadav, Hariharan Ganesan, Telemetrak]]
 
-### Chapter 8 — Realtime and Embodied Edges
+### Chapter 8 — Realtime, Voice, and the Cost of Being Interruptible
 
-**Chapter thesis:** What voice, low-latency interaction, and robotics teach us about turn-taking, state, and operational constraints.
+**Chapter thesis:** How voice interfaces expose the real cost of latency and turn-taking, and why production AI must be designed around interruption, not just throughput.
 
 **Supporting source cluster**
 - [[026-IEF842ZEU5A-contact-center-voice-ai-low-latency-intelligence-extraction-from-messy-audio-streams-dippu|#26 — Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh]]
