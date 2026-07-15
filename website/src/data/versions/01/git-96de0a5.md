@@ -12,7 +12,7 @@ Review this contract and mark the risky clauses.
 Refactor this service, run the checks, and prepare the patch for review.
 Investigate the failure, trace the likely cause, and show me what to approve next.
 
-That is a different standard. A helpful answer can be wrong and still useful. Delegated work is expensive in a different way. It consumes time, touches systems, shapes decisions, and often hides its mistakes inside output that looks plausible enough to pass a casual glance. That last property is the real trap: the primary failure surface is not the work that looks broken but the work that looks finished. The moment AI crosses from consultation into execution, eloquence stops being the main thing that matters, and the casual glance stops being an acceptable form of review. What matters is whether the system can produce bounded, inspectable, dependable work.
+That is a different standard. A helpful answer can be wrong and still useful. Delegated work is expensive in a different way. It consumes time, touches systems, shapes decisions, and often hides its mistakes inside output that looks plausible enough to pass a casual glance. The moment AI crosses from consultation into execution, eloquence stops being the main thing that matters. What matters is whether the system can produce bounded, inspectable, dependable work.
 
 Joel Hron gives the cleanest formulation of this shift: the north star has moved “from helpfulness to productive.” That single move rearranges the field. Once we ask AI to actually produce output, make judgments, and act on behalf of users, the central problem is no longer prompt cleverness. It is trust under action.
 
@@ -30,7 +30,7 @@ The useful spectrum is simpler:
 
 The labels themselves are less important than the operating difference. An assistant helps you think. A delegate changes the state of the world, even if only by producing work that others will rely on.
 
-The book does not start with model intelligence in the abstract. Intelligence is necessary but insufficient. A system can be astonishing in conversation and still collapse the moment the user expects follow-through. Jacob Lauritzen puts the break point bluntly — complex agents doing real work need more than chat. Sam Bhagwat makes the adjacent point from the workflow side. Once work becomes operational, the supposed opposition between agents and workflows starts to dissolve. The useful system is usually both.
+The book does not start with model intelligence in the abstract. Intelligence is necessary but insufficient. A system can be astonishing in conversation and still collapse the moment the user expects follow-through. Jacob Lauritzen puts the break point bluntly: complex agents in real work need more than just chat. Sam Bhagwat makes the adjacent point from the workflow side: once work becomes operational, the supposed opposition between agents and workflows starts to dissolve. The useful system is usually both.
 
 That is the first throughline of the manuscript: not better chat but delegated execution. And that shift matters because delegation changes the failure surface.
 
@@ -64,7 +64,7 @@ That claim recurs throughout the book: as the harness around a coding agent, as 
 
 The AI field keeps relearning a painful distinction: demo capability and operational dependability are not the same thing. A model can look extraordinary in a controlled interaction and still fail as a working system. It can write code that seems right but violates a local convention nobody wrote down. It can retrieve relevant documents but miss the one paragraph that actually governs the decision. It can produce a beautiful answer while silently losing track of what happened two steps ago. It can look productive and still be impossible to trust. That gap is what AI engineering exists to close.
 
-Barry Zhang and Mahesh Murag are especially useful here because they resist the fantasy that raw model progress alone solves the problem. Models got dramatically more capable. Expertise gaps did not disappear. Operational gaps did not disappear. The principle underneath is that capability amplifies whatever workflow it runs inside: a stronger model makes a good system better and a weak one more dangerous, because it generates more convincing output whether the surrounding workflow is sound or broken.
+Barry Zhang and Mahesh Murag are especially useful here because they resist the fantasy that raw model progress alone solves the problem. Models got dramatically more capable. Expertise gaps did not disappear. Operational gaps did not disappear. If anything, stronger models make weak systems more dangerous because they generate convincing output inside bad workflows.
 
 This is one of the book’s strongest anti-hype claims: in production AI, scaffolding is not a wrapper around intelligence but what makes it usable. That line can sound deflationary until you notice how much leverage it creates. If dependable systems come less from raw cleverness than from the environment around the model, then engineering matters enormously. Harnesses matter. Specs matter. Evals matter. Context architecture matters. Runtime semantics matter. Human oversight matters. The surrounding system is not bureaucratic drag on intelligence but the reason it can be trusted to do work.
 
@@ -93,7 +93,7 @@ There is a second reason the opening cannot be only about tools and architecture
 
 In the software case, that means local conventions, architecture taste, dependency discipline, rollback instinct, performance habits, and dozens of non-functional expectations that senior engineers usually carry in their heads. In the professional-services case, it means source hierarchy, provenance awareness, exception handling, domain caution, and judgment about when a result is not ready to trust.
 
-Humans often mistake this tacit judgment for natural background competence because strong teams internalize it so thoroughly. But once work is handed to a machine collaborator, hidden standards become a liability. The system cannot reliably inherit what the organization never externalized, which sets the practical rule: a standard has to be made explicit before it can be delegated, or it will be violated silently. The opening of the book needs a second claim alongside the delegation claim: cheap generation increases the value of judgment.
+Humans often mistake this tacit judgment for natural background competence because strong teams internalize it so thoroughly. But once work is handed to a machine collaborator, hidden standards become a liability. The system cannot reliably inherit what the organization never externalized. The opening of the book needs a second claim alongside the delegation claim: cheap generation increases the value of judgment.
 
 When code, prose, research notes, and drafts get cheaper to produce, taste does not become obsolete. It becomes more operationally important. The new scarce skill is not typing faster. It is setting standards, framing tasks, spotting slop, and knowing what good looks like before the system does.
 

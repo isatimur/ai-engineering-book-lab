@@ -1,3 +1,18 @@
+## 2026-07-15 — Usefulness + cumulative-case pass (Editorial Review v2 Tier 1 #5–6, Tier 2 #7–9)
+
+### What changed
+- **Cumulative case arcs.** Meridian and Hargrove now accumulate named scars instead of re-introducing as fresh labels. Canonical incident handles (see plan in batch): Meridian — the slop era (Ch 3, new rendered scene) → the admin-override regression (Ch 4, named handle on existing scene) → cited in Ch 6, Ch 7, Ch 9, Ch 10; Hargrove — the misranked matter note (Ch 5, new rendered scene) → validation engines (Ch 6) → gateway/scoped-token/audit (Ch 7, new rendered scene) → the support call (Ch 8, threaded inheritance). Directionality verified: no chapter references a later scar.
+- **Usefulness sharpening (Monday test).** ~30 landscape paragraphs across Ch 1–9 rewritten in prose so their latent decision rule / threshold / named trap is the operative claim — every rule traces to material already in the same chapter (per the 2026-06-03 usefulness pilot spec: per-paragraph sharpening, not takeaway blocks). Ch 10 left as deliberate synthesis.
+- **Three rendered scenes** (Tier 2 #7): Ch 3 slop-era Tuesday migration, Ch 5 misranked matter note, Ch 7 disputed-filing audit reconstruction. All built from in-chapter material only; no new statistics or named people.
+- **Ch 7 scope paragraph** (Tier 2 #9): acknowledges model-alignment work as complementary but out of the book's scope.
+- **Paraphrase-as-quote fixes** (Tier 2 #8): 8 colon-framed pseudo-quotes converted to indirect speech (Ch 1 ×2, Ch 2 ×4, Ch 6 ×1, Ch 7 ×1 softened); all real quotation-marked quotes untouched.
+- Fixed pre-existing `foreman’s` escape artifact in Ch 6.
+- Word count 26,078 → 27,422 (+5.2%). Synced to `public/drafting/` and `website/src/content/`; regenerated read/llms/sitemap.
+
+### Known follow-ups
+- Audiobook + judge scores now two passes stale.
+- Remaining from Editorial Review v2: Ch 10 weight/length (Tier 2 #10), GraphRAG maintenance-cost sentence, forward-claim hedging (§1.4), quote spot-check vs transcripts (§1.3).
+
 ## 2026-07-15 — Redundancy-thinning pass (all chapters) + Reader Version removal
 
 ### What changed

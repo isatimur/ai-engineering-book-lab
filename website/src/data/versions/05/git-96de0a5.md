@@ -39,7 +39,7 @@ That distinction matters because the remedy changes. Hallucination invites bette
 
 ## The High-Stakes Colleague needs more than access
 
-Hargrove’s tax practice makes the stakes of this chapter especially clear. The firm’s assistant began life as a helpful chat surface — the High-Stakes Colleague the opening chapter named, before anyone asked it to do the work. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
+Hargrove’s tax practice makes the stakes of this chapter especially clear. The firm’s assistant began life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
 
 At that point, generic model intelligence is no longer the bottleneck. The bottleneck is whether the system can assemble professional-grade context.
 
@@ -48,8 +48,6 @@ Chau Tran’s enterprise framing is useful here because it refuses the fantasy t
 This is where the book’s second recurring case, the High-Stakes Colleague, becomes more than metaphor. The system is valuable not because it can speak elegantly about law or tax, but because it can operate inside a domain where evidence provenance, internal knowledge, and retrieval discipline materially change the quality of work.
 
 In Harvey’s and related legal-frontier material, the problem is not only finding relevant text. It is finding the right text in the right topology: internal precedents, authoritative sources, matter-specific files, note trails, citations, and the relationships between them. The difference between “broadly relevant” and “operationally decisive” can be a single paragraph hidden in the wrong layer.
-
-Watch one request from Hargrove’s early build-out. A tax associate asks the assistant to trace the support for a deduction a client has claimed for years. The assistant answers fluently and cites a clean-looking authority — a public explainer whose wording matches the query almost perfectly. It reads as decisive. It is also wrong for this client: the governing position lives in a matter note a senior attorney wrote earlier, in a different file, under a jurisdiction the explainer never mentions. The system ranked it first because nothing told it a public article and a matter-specific note are not the same kind of evidence. The remedy is not a smarter model. The team types its knowledge topology into the system: source typing that ranks internal precedent above public background, access boundaries per matter, and a retrieval surface that carries provenance, so the associate can see which layer an answer came from. The misranked matter note becomes the scar the rest of the build-out is designed around.
 
 Hargrove’s context system needs more than a document dump. It needs access boundaries, source typing, freshness policies, ranking tuned to domain use, and interfaces that preserve provenance. In high-stakes work, a system that is 90 percent right for unclear reasons can still be professionally unusable. The issue is not whether the model knows a lot, but whether the product can build a trustworthy evidence surface around the model.
 
@@ -87,7 +85,7 @@ Nearest-neighbor search is often enough when the user wants one relevant passage
 
 Stephen Chin and the Neo4j material are useful here because they make the structure visible. Knowledge graphs can help with multi-hop synthesis, entity disambiguation, and the recovery of relations that ordinary chunk retrieval tends to flatten away. The point is not that every product needs a graph. The point is that some tasks require a representation richer than bag-of-passages search.
 
-This is especially true in enterprise and legal settings, where what matters is often not a single answerable sentence but a traceable path across entities, documents, and prior decisions. Hybrid retrieval becomes attractive because the right mechanism follows from the shape of the answer: vector search when the answer is a single similar passage, graph traversal when it is a path along explicit relationships, keyword or metadata filters when exactness is what matters. Mature systems layer all three rather than declaring one winner. The key chapter-level claim is simple: context quality depends on how well the system assembles evidence, not only on whether it retrieves something related.
+This is especially true in enterprise and legal settings, where what matters is often not a single answerable sentence but a traceable path across entities, documents, and prior decisions. Hybrid retrieval becomes attractive because different pieces of the context problem want different tools. Vector search is good at semantic similarity. Graph-based traversal is better at following explicit relationships. Keyword or metadata filters remain valuable when exactness matters. Mature systems layer them instead of declaring one winner. The key chapter-level claim is simple: context quality depends on how well the system assembles evidence, not only on whether it retrieves something related.
 
 ## Memory is not the same thing as a long prompt
 
@@ -115,7 +113,7 @@ The old failure mode was “the model lacked the right document.” The emerging
 
 A lot of context discussions drift into architecture diagrams too quickly. The diagrams can be useful, but they also create a form of intellectual camouflage. A beautiful retrieval stack can still produce mediocre work. A graph-enhanced pipeline can still be badly ranked. A memory subsystem can still carry forward the wrong state. An elegantly standardized tool protocol can still swamp the model with irrelevant capability descriptions.
 
-The only reliable proof of context quality lives downstream, which is the acceptance test any context change has to pass:
+The only reliable proof of context quality lives downstream.
 
 Does the system complete real tasks more accurately?
 Does it cite better evidence?
@@ -131,7 +129,7 @@ This also explains why so many context debates are unproductive when they happen
 
 There is a temptation, especially among people impressed by raw model progress, to treat context work as secondary plumbing. If the model keeps getting smarter, surely the need for elaborate context engineering should diminish.
 
-In practice the opposite often happens, and the rule is worth stating plainly: a stronger model raises both the return on good context and the cost of bad context. It does more with the right evidence, tools, and state placed in front of it, and it generates more persuasive nonsense when the context surface is badly assembled. Capability amplifies both outcomes, which makes a better model a reason to invest more in context, not less.
+In practice the opposite often happens. The more capable the model, the more value there is in placing the right evidence, tools, and state in front of it. Stronger models can do more with good context. They can also generate more persuasive nonsense when the context surface is badly assembled. Capability amplifies both outcomes.
 
 That is why context belongs in the same mental bucket as harnesses, evals, runtimes, and security. It is not a prompt trick but one of the engineered surroundings that determine whether intelligence becomes useful.
 
@@ -140,7 +138,3 @@ A machine colleague does not need infinite information. It needs the right binde
 But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
 
 That is the runtime problem, the next layer of infrastructure.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/05-context_

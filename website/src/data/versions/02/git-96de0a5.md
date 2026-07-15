@@ -33,9 +33,9 @@ The point is not that the tools are bad. The point is that they magnify what is 
 
 The word taste can sound soft, almost decorative, as if it refers only to style or personal preference. In engineering it means something harder.
 
-Taste is the ability to notice the difference between output that merely works and output that fits. What that ability comes down to, in practice, is a recognizable set of tells: a patch that is technically correct but shaped wrong for the system around it, a component boundary that is too clever, a naming choice that will confuse the next person, a generated paragraph that says the obvious thing in the most generic way possible, a workflow with one hidden step too many, a prototype convenience about to become permanent structure. None of these trip a test. Each is the moment where merely working and actually fitting come apart, and recognizing them on sight is what taste actually buys you.
+Taste is the ability to notice the difference between output that merely works and output that fits. It is the ability to feel when a patch is technically correct but shaped wrong for the system around it. It is knowing when a component boundary is too clever, when a naming choice will confuse the next person, when a generated paragraph says the obvious thing in the most generic way possible, when a workflow contains one hidden step too many, or when a prototype convenience is about to become permanent structure.
 
-Tuomas Artman raises the right unsettling question — what happens when agents can do everything immediately for you.
+Tuomas Artman asks the right unsettling question: what happens when agents are capable of doing everything immediately for you?
 
 The obvious answer is speed.
 The more important answer is that speed changes what human excellence consists of.
@@ -76,15 +76,16 @@ That mode is not worthless. In fact, it can be brilliant.
 
 For exploration, interface sketching, rough prototypes, internal tooling, one-off automation, toy apps, or situations where learning by doing is more valuable than formal design, vibe coding can be the correct move. It can widen the top of the funnel. It can make experimentation cheap enough that more people discover what is actually worth building. It can give individuals a level of expressive power that used to require a small team.
 
-The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey J. Gallon describes the hangover well. The app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
+The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey J. Gallon describes the hangover well: the app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
 
 Vibe coding is not the enemy. Unexamined vibe coding is.
 
-A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly is blunt about it. AI code is still code, and vibes will not cut it. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
+A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly says it bluntly: vibes will not cut it. AI code is still code. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
 
 So the right stance is not anti-vibe but mode-aware.
 
-Being mode-aware comes down to one switch: use vibe coding where the cost of being wrong is low and the goal is discovery, and leave it behind the moment the output has to endure. The tell is the Monday that Gallon described — the app still works, but now it has to change, and no one understands it well enough to change it safely. If that Monday is coming, the exploratory mode has already outlived its usefulness.
+Use vibe coding where the cost of being wrong is low and the goal is discovery.
+Switch out of vibe coding when the output must endure.
 
 That shift in mode is itself a form of judgment.
 
@@ -96,8 +97,6 @@ If a human engineer receives a vague task, progress may be slow enough that ambi
 
 A machine can take a badly framed prompt and sprint in the wrong direction with alarming competence. This makes problem framing more valuable, not less.
 
-Framing a task well comes down to answering a specific set of questions before the work is delegated — a gate it has to clear, not a courtesy.
-
 What exactly is the task?
 What counts as success?
 What constraints matter?
@@ -105,7 +104,7 @@ What should the system optimize for: speed, clarity, correctness, extensibility,
 What is allowed to remain rough, and what must be production-grade now?
 What would make this output unacceptable even if it looks superficially complete?
 
-These questions used to be signs of seniority. They now become the gate itself: operational prerequisites anyone must clear before directing cheap delegated execution.
+These questions used to be signs of seniority. They now become operational prerequisites for anyone trying to direct cheap delegated execution.
 
 Once we say the future is delegated work, the immediate human consequence is that directing work becomes a first-class technical skill. The manager, staff engineer, founder, designer, or individual developer who can frame a problem well suddenly gains disproportionate leverage because the system can execute rapidly against that frame.
 
@@ -136,7 +135,7 @@ The human reviewer is therefore not an obstacle to AI productivity. In a well-de
 
 One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are often what allow useful creativity to emerge.
 
-Itamar Friedman frames the problem through confidence, asking how teams can move fast while staying grounded in the codebase and its standards. The answer is not to remove constraints but to make the right ones explicit.
+Itamar Friedman frames the problem through confidence: how do you let teams move fast while staying grounded in the codebase and its standards? The answer is not to remove constraints but to make the right ones explicit.
 
 Constraints do several jobs at once.
 
@@ -200,7 +199,3 @@ Judgment under abundance.
 And once that becomes the scarce resource, the next technical question follows naturally: how do you build environments where that judgment can survive delegation?
 
 That is the work of the next chapter.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/02-taste_

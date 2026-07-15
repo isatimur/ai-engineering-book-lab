@@ -11,7 +11,7 @@ That is why the real role of evals is often misunderstood. Evals are not there t
 
 ## The software factory needs a quality system
 
-In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added the checked-in migration example, the lint rule that finally killed the banned dependency, the setup scripts that replaced Slack archaeology — the repairs the slop era forced. The harness improved, and the agent's output improved with it.
+In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added rules, specs, validations, and cleaner task surfaces. The harness improved, and the agent's output improved with it.
 
 But that only gets Meridian halfway. A more legible workplace makes delegated work possible. It does not by itself make delegated work trustworthy. The moment the repo starts behaving like a software factory, a new question appears: how do you know whether the factory is producing good work consistently?
 
@@ -31,7 +31,7 @@ The postmortem is revealing. The agent did in fact implement rate limiting. It e
 
 This is the shape of many AI failures in production. They are not spectacular hallucinations. They are near-misses that survive ordinary review because each individual move looks reasonable. The model did not go insane. The system simply had no reliable way to notice that an important slice of behavior had regressed.
 
-Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path — what the team will afterward just call the admin-override regression. They mine previous incidents for similar "special path" behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
+Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path. They mine previous incidents for similar "special path" behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
 
 That is what a control system looks like in practice. It converts an expensive lesson into a reusable instrument.
 
@@ -69,7 +69,7 @@ That complexity is what makes naïve evaluation feel so attractive: it offers a 
 
 For coding systems, some parts of that loop can be relatively crisp. Colvin points out that if you are using a coding agent, “it can use type safety or running type checking to basically mark its own homework.” That is a powerful phrase because it describes one layer of automated self-verification. Static checks, tests, schemas, and validators let the system catch classes of error before a human ever reviews the result.
 
-But those checks are only part of the story, and the admin-override regression is the proof: it type-checked, its tests passed, and it was still globally wrong. A patch can clear every automated gate and still be architecturally clumsy. A retrieval answer can cite real documents and still be unhelpful. A polite assistant can satisfy style constraints while failing the user’s actual goal. Self-verification catches the errors a machine can already define; it cannot certify that the whole change was correct. Production reliability requires multiple layers of evidence, not one.
+But those checks are only part of the story. A patch can type-check and still be architecturally clumsy. A retrieval answer can cite real documents and still be unhelpful. A polite assistant can satisfy style constraints while failing the user’s actual goal. Production reliability requires multiple layers of evidence, not one.
 
 ## Application-layer evals are about users, apps, and data
 
@@ -77,7 +77,7 @@ The deeper you go into production AI, the less useful it is to talk about evalua
 
 Meanwhile the application has costs, latency budgets, permission boundaries, brand expectations, and failure modes whose importance is highly uneven. A hallucinated movie recommendation is embarrassing. A hallucinated clause in a contract review is much worse. An answer that takes ten seconds instead of three may be acceptable in one workflow and fatal in another. A coding patch that is 95 percent correct but painful to review may still lose economically.
 
-This is why application-layer evals tend to look messier than leaderboard metrics. They mix objective checks with rubric-based human review, and they carry slice-level metrics instead of one universal score. That structure is the point, not a compromise: the slices are not equally important, so a single averaged score hides the failures that cost the most. The discipline is to weight each slice by consequence rather than frequency — to ask not only whether the output was correct, but whether it was usable, safe, timely, cheap enough, and appropriate for this workflow, and to let a rare but expensive failure outweigh a common trivial one. That messiness is not evidence that evals are immature, but that the work is real.
+This is why application-layer evals tend to look messier than leaderboard metrics. They often mix objective checks with rubric-based human review. They carry slice-level metrics instead of one universal score. They ask not only whether the output was correct, but whether it was usable, safe, timely, cheap enough, and appropriate for this workflow. That messiness is not evidence that evals are immature, but that the work is real.
 
 ## Observability becomes tomorrow’s eval set
 
@@ -104,7 +104,7 @@ This is also why Hetzel insists that “an eval platform is not just a test runn
 
 There is a cultural misconception hiding inside a technical one. People often talk as if evals are mostly about metrics. In practice, they are also about institutionalizing judgment.
 
-A team may claim that it wants “better answers,” “cleaner patches,” or “safer behavior,” but until those standards are converted into examples, rubrics, thresholds, and review habits, they remain aspirations. That conversion is the real deliverable of eval work: it forces the team to say, concretely, what it is willing to call good enough. A standard that cannot survive being written down that way was never a standard, only a hope.
+A team may claim that it wants “better answers,” “cleaner patches,” or “safer behavior,” but until those standards are converted into examples, rubrics, thresholds, and review habits, they remain aspirations. Evals force a harder question: what, exactly, are we willing to call good enough?
 
 Evaluation work is often uncomfortable because it surfaces disagreement. One engineer cares most about correctness. Another cares about cost. A PM cares about task completion and delight. A support lead cares about escalation quality. A security reviewer cares about worst-case behavior, not average behavior. An eval system does not make these tradeoffs disappear. It makes them discussable.
 
@@ -141,7 +141,3 @@ Not to tell you whether your model is impressive, but to tell you whether your s
 And this is the deeper continuity between the chapters so far. Chapter 3 argued that delegated work depends on a legible harness. Chapter 4 adds that a legible harness is still not enough. Once the machine can act, the surrounding system needs a way to notice drift, compare alternatives, preserve painful lessons, and keep quality from collapsing into anecdote.
 
 The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. Context is not merely input. It is infrastructure.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/04-evals_

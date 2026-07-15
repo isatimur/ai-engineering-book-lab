@@ -11,21 +11,21 @@ The core mistake in immature agent systems is to treat tool access as a product 
 
 ## Agency turns security from request control into workflow control
 
-Traditional application security often had a relatively stable unit of action. A user clicked a button. An API call hit a service. The backend checked permissions. The execution path was constrained enough that teams could think in discrete requests.
+Traditional application security had a relatively stable unit of action. A user clicked a button. An API call hit a service. The backend checked permissions. The path was constrained enough that teams could reason in discrete requests. Agency dissolves that unit: the architecture must now constrain the whole delegated workflow, not decorate prompts around isolated requests.
 
 Agentic systems weaken that comfort. An agent does not only receive a command. It interprets intent, decides how to pursue it, fans out into tools, retries when steps fail, and may continue moving through a workflow long after the original prompt is gone from the user’s attention. The trust boundary therefore expands. The key question is no longer only whether a given user may access a given resource. It becomes whether a delegated machine actor can decide, retrieve, execute, and continue safely on that user’s behalf. That is a much larger surface.
 
-The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance workflows, the system is not merely answering a question. It may gather evidence, traverse internal sources, use validation engines, draft conclusions, and surface a recommendation for human sign-off. The risk does not live at one tool endpoint. It lives across the trajectory. A single misstep in that chain can leak the wrong document, overstate a conclusion, or cross a permission boundary that the human did not realize had been delegated.
+The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance workflows, the system is not merely answering a question. It may gather evidence, traverse internal sources — the same retrieval binder it assembled in Chapter 5 — use the validation engines it gained in Chapter 6, draft conclusions, and surface a recommendation for human sign-off. The risk lives across the trajectory, not at one tool endpoint. A single misstep in that chain can leak the wrong document, overstate a conclusion, or cross a permission boundary that the human did not realize had been delegated. What Chapter 5 answered with provenance, security now answers with authority: who authorized that path?
 
-The Software Factory exposes the same problem from another angle. A code agent with repository access is not dangerous only when it writes a bad patch. It is dangerous when it can quietly inspect secrets, mutate CI configuration, add a dependency, call external services, or keep iterating after a misleading instruction entered the loop. Once code execution enters the picture, the old fantasy that trust can be solved primarily at the prompt layer becomes hard to defend.
+The Software Factory exposes the same problem from another angle. A code agent with repository access is not dangerous only when it writes a bad patch — the quiet, special-path kind the admin-override regression of Chapter 4 already paid for. It is dangerous when it can quietly inspect secrets, mutate CI configuration, add a dependency, call external services, or keep iterating after a misleading instruction entered the loop. Once code execution enters the picture, the old fantasy that trust can be solved primarily at the prompt layer becomes hard to defend.
 
-This is why Chapter 7 should resist security theater. The important move is not to say that AI is spooky and therefore needs more generic caution. The real move is to notice that agency changes the unit of control from isolated calls to delegated workflows. The right architecture must therefore constrain workflows, not merely decorate prompts.
+This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it.
 
 ## Sandboxes matter because models are not where trust ultimately lives
 
-One of the clearest lessons from the code-execution material is that system controls matter more than model intentions.
+The clearest lesson from the code-execution material is a rule, not an observation: a model can never be the final enforcement layer for its own power.
 
-If an agent can execute code, browse untrusted content, open files, or chain across tools, then the design must assume it can be induced into bad behavior. Maybe by a malicious instruction. Maybe by a poisoned page. Maybe by a bug in tool descriptions. Maybe by a simple misunderstanding. The source of failure matters less than the consequence: a model cannot be the final enforcement layer for its own power.
+If an agent can execute code, browse untrusted content, open files, or chain across tools, then the design must assume it can be induced into bad behavior. Maybe by a malicious instruction. Maybe by a poisoned page. Maybe by a bug in tool descriptions. Maybe by a simple misunderstanding. The source of failure matters less than the consequence.
 
 Sandboxing is therefore part of the product, not an implementation detail. A serious code-executing agent should run in a constrained environment. Filesystem access should be scoped. Network access should be explicit. Secrets should be minimized. Tool permissions should be narrow by default. Risky operations should require step-up approval rather than inheriting broad ambient authority. If the system needs to browse arbitrary inputs, those inputs should not sit on the same trust plane as production credentials.
 
@@ -35,15 +35,17 @@ This is also why security-heavy discussions increasingly sound like runtime desi
 
 The underlying principle is blunt: assume the agent will sometimes be wrong, and build so that being wrong is survivable.
 
+A word about scope. There is a serious discipline devoted to the model’s own alignment — what it is disposed to do, refuse, and value — and nothing here argues against it. That is not this book’s subject. This book is about the engineering that surrounds the model: the boundaries, identities, sandboxes, and audit trails that must hold even when the model’s inner alignment is imperfect. A bounded system is where trust is earned, however the model was trained.
+
 ## Least privilege becomes a product design discipline
 
 Least privilege is easy to praise and surprisingly hard to operationalize in agent systems.
 
 A useless agent can be perfectly safe. The challenge is to make the system powerful enough to matter without giving it so much authority that one mistake becomes expensive. This is where many teams discover that access control is no longer a back-office function. It becomes part of the product experience.
 
-A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction: scope what the system can see based on existing credentials, filter tool exposure by permission, and use step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems.
+A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction — scoping what the system can see based on existing credentials, filtering tool exposure by permission, using step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems.
 
-The same logic should apply beyond coding. A research agent may not need write access at all. A support agent may need to read account metadata but not issue refunds. A legal workflow may need broad retrieval across documents but no authority to send anything externally. A scheduling agent may need access to calendars yet no permission to message third parties without confirmation.
+The same logic is really a default-permission table, one row per agent. A research agent may not need write access at all. A support agent may need to read account metadata but not issue refunds. A legal workflow may need broad retrieval across documents but no authority to send anything externally. A scheduling agent may need access to calendars yet no permission to message third parties without confirmation.
 
 These choices do not merely protect the organization. They shape the behavior of the system itself. Narrower powers reduce the number of tempting but unsafe paths the model can wander into. A better security design often makes the system easier to reason about, not only safer.
 
@@ -109,6 +111,8 @@ It needs evidence.
 This is where Chapter 7 should deliberately touch Chapter 6’s observability argument again. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences. They are part of the security story. They let an institution convert bounded autonomy into something defensible.
 
 Joel Hron’s high-stakes framing is especially powerful here because it does not pretend the answer is unrestricted autonomy under perfect prevention. The answer is constrained execution plus inspectable paths. The system can do meaningful work, but it leaves behind a trail that domain experts and organizations can actually examine.
+
+Consider the day a client disputes a position Hargrove’s assistant helped file. A partner must answer one question: what did the system actually do? Because the assistant reached its documents through a mediation layer, the answer exists. The trajectory shows which matter files it retrieved, which validation engine it called, and which draft it surfaced — all under a read-only token scoped to this matter, with no authority to send to the client. Without that trail, the honest answer would be a shrug. Inspectability here separates a defensible workflow from a liability the firm cannot bound.
 
 That said, the chapter should not fake simplicity. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
 

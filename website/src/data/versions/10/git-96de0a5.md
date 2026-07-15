@@ -49,7 +49,7 @@ The field has a recurring weakness for maximalist language. Full autonomy. Fully
 
 The most useful systems in this book were rarely the ones with the least human involvement. They were the ones with the clearest handoffs.
 
-The software factory worked when agents could draft, test, search, and decompose work inside a strong harness — the harness whose eval slices finally caught the throttle that once stalled an admin path. The high-stakes colleague worked when the system could retrieve, synthesize, validate, and draft while expert review remained focused on the consequential edges. The realtime voice scenario worked when the agent could acknowledge, clarify, act within bounds, and escalate gracefully rather than bluff past uncertainty.
+The software factory worked when agents could draft, test, search, and decompose work inside a strong harness. The high-stakes colleague worked when the system could retrieve, synthesize, validate, and draft while expert review remained focused on the consequential edges. The realtime voice scenario worked when the agent could acknowledge, clarify, act within bounds, and escalate gracefully rather than bluff past uncertainty.
 
 That is the durable principle: autonomy is not a trophy but a variable to tune. The right system is not the one that removes humans most completely but the one that places human attention where it creates the most value and machine execution where structure makes it safe.
 

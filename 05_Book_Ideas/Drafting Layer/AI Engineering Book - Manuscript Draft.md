@@ -19,7 +19,7 @@ Review this contract and mark the risky clauses.
 Refactor this service, run the checks, and prepare the patch for review.
 Investigate the failure, trace the likely cause, and show me what to approve next.
 
-That is a different standard. A helpful answer can be wrong and still useful. Delegated work is expensive in a different way. It consumes time, touches systems, shapes decisions, and often hides its mistakes inside output that looks plausible enough to pass a casual glance. The moment AI crosses from consultation into execution, eloquence stops being the main thing that matters. What matters is whether the system can produce bounded, inspectable, dependable work.
+That is a different standard. A helpful answer can be wrong and still useful. Delegated work is expensive in a different way. It consumes time, touches systems, shapes decisions, and often hides its mistakes inside output that looks plausible enough to pass a casual glance. That last property is the real trap: the primary failure surface is not the work that looks broken but the work that looks finished. The moment AI crosses from consultation into execution, eloquence stops being the main thing that matters, and the casual glance stops being an acceptable form of review. What matters is whether the system can produce bounded, inspectable, dependable work.
 
 Joel Hron gives the cleanest formulation of this shift: the north star has moved “from helpfulness to productive.” That single move rearranges the field. Once we ask AI to actually produce output, make judgments, and act on behalf of users, the central problem is no longer prompt cleverness. It is trust under action.
 
@@ -37,7 +37,7 @@ The useful spectrum is simpler:
 
 The labels themselves are less important than the operating difference. An assistant helps you think. A delegate changes the state of the world, even if only by producing work that others will rely on.
 
-The book does not start with model intelligence in the abstract. Intelligence is necessary but insufficient. A system can be astonishing in conversation and still collapse the moment the user expects follow-through. Jacob Lauritzen puts the break point bluntly: complex agents in real work need more than just chat. Sam Bhagwat makes the adjacent point from the workflow side: once work becomes operational, the supposed opposition between agents and workflows starts to dissolve. The useful system is usually both.
+The book does not start with model intelligence in the abstract. Intelligence is necessary but insufficient. A system can be astonishing in conversation and still collapse the moment the user expects follow-through. Jacob Lauritzen puts the break point bluntly — complex agents doing real work need more than chat. Sam Bhagwat makes the adjacent point from the workflow side. Once work becomes operational, the supposed opposition between agents and workflows starts to dissolve. The useful system is usually both.
 
 That is the first throughline of the manuscript: not better chat but delegated execution. And that shift matters because delegation changes the failure surface.
 
@@ -71,7 +71,7 @@ That claim recurs throughout the book: as the harness around a coding agent, as 
 
 The AI field keeps relearning a painful distinction: demo capability and operational dependability are not the same thing. A model can look extraordinary in a controlled interaction and still fail as a working system. It can write code that seems right but violates a local convention nobody wrote down. It can retrieve relevant documents but miss the one paragraph that actually governs the decision. It can produce a beautiful answer while silently losing track of what happened two steps ago. It can look productive and still be impossible to trust. That gap is what AI engineering exists to close.
 
-Barry Zhang and Mahesh Murag are especially useful here because they resist the fantasy that raw model progress alone solves the problem. Models got dramatically more capable. Expertise gaps did not disappear. Operational gaps did not disappear. If anything, stronger models make weak systems more dangerous because they generate convincing output inside bad workflows.
+Barry Zhang and Mahesh Murag are especially useful here because they resist the fantasy that raw model progress alone solves the problem. Models got dramatically more capable. Expertise gaps did not disappear. Operational gaps did not disappear. The principle underneath is that capability amplifies whatever workflow it runs inside: a stronger model makes a good system better and a weak one more dangerous, because it generates more convincing output whether the surrounding workflow is sound or broken.
 
 This is one of the book’s strongest anti-hype claims: in production AI, scaffolding is not a wrapper around intelligence but what makes it usable. That line can sound deflationary until you notice how much leverage it creates. If dependable systems come less from raw cleverness than from the environment around the model, then engineering matters enormously. Harnesses matter. Specs matter. Evals matter. Context architecture matters. Runtime semantics matter. Human oversight matters. The surrounding system is not bureaucratic drag on intelligence but the reason it can be trusted to do work.
 
@@ -100,7 +100,7 @@ There is a second reason the opening cannot be only about tools and architecture
 
 In the software case, that means local conventions, architecture taste, dependency discipline, rollback instinct, performance habits, and dozens of non-functional expectations that senior engineers usually carry in their heads. In the professional-services case, it means source hierarchy, provenance awareness, exception handling, domain caution, and judgment about when a result is not ready to trust.
 
-Humans often mistake this tacit judgment for natural background competence because strong teams internalize it so thoroughly. But once work is handed to a machine collaborator, hidden standards become a liability. The system cannot reliably inherit what the organization never externalized. The opening of the book needs a second claim alongside the delegation claim: cheap generation increases the value of judgment.
+Humans often mistake this tacit judgment for natural background competence because strong teams internalize it so thoroughly. But once work is handed to a machine collaborator, hidden standards become a liability. The system cannot reliably inherit what the organization never externalized, which sets the practical rule: a standard has to be made explicit before it can be delegated, or it will be violated silently. The opening of the book needs a second claim alongside the delegation claim: cheap generation increases the value of judgment.
 
 When code, prose, research notes, and drafts get cheaper to produce, taste does not become obsolete. It becomes more operationally important. The new scarce skill is not typing faster. It is setting standards, framing tasks, spotting slop, and knowing what good looks like before the system does.
 
@@ -181,9 +181,9 @@ The point is not that the tools are bad. The point is that they magnify what is 
 
 The word taste can sound soft, almost decorative, as if it refers only to style or personal preference. In engineering it means something harder.
 
-Taste is the ability to notice the difference between output that merely works and output that fits. It is the ability to feel when a patch is technically correct but shaped wrong for the system around it. It is knowing when a component boundary is too clever, when a naming choice will confuse the next person, when a generated paragraph says the obvious thing in the most generic way possible, when a workflow contains one hidden step too many, or when a prototype convenience is about to become permanent structure.
+Taste is the ability to notice the difference between output that merely works and output that fits. What that ability comes down to, in practice, is a recognizable set of tells: a patch that is technically correct but shaped wrong for the system around it, a component boundary that is too clever, a naming choice that will confuse the next person, a generated paragraph that says the obvious thing in the most generic way possible, a workflow with one hidden step too many, a prototype convenience about to become permanent structure. None of these trip a test. Each is the moment where merely working and actually fitting come apart, and recognizing them on sight is what taste actually buys you.
 
-Tuomas Artman asks the right unsettling question: what happens when agents are capable of doing everything immediately for you?
+Tuomas Artman raises the right unsettling question — what happens when agents can do everything immediately for you.
 
 The obvious answer is speed.
 The more important answer is that speed changes what human excellence consists of.
@@ -224,16 +224,15 @@ That mode is not worthless. In fact, it can be brilliant.
 
 For exploration, interface sketching, rough prototypes, internal tooling, one-off automation, toy apps, or situations where learning by doing is more valuable than formal design, vibe coding can be the correct move. It can widen the top of the funnel. It can make experimentation cheap enough that more people discover what is actually worth building. It can give individuals a level of expressive power that used to require a small team.
 
-The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey J. Gallon describes the hangover well: the app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
+The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey J. Gallon describes the hangover well. The app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
 
 Vibe coding is not the enemy. Unexamined vibe coding is.
 
-A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly says it bluntly: vibes will not cut it. AI code is still code. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
+A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly is blunt about it. AI code is still code, and vibes will not cut it. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
 
 So the right stance is not anti-vibe but mode-aware.
 
-Use vibe coding where the cost of being wrong is low and the goal is discovery.
-Switch out of vibe coding when the output must endure.
+Being mode-aware comes down to one switch: use vibe coding where the cost of being wrong is low and the goal is discovery, and leave it behind the moment the output has to endure. The tell is the Monday that Gallon described — the app still works, but now it has to change, and no one understands it well enough to change it safely. If that Monday is coming, the exploratory mode has already outlived its usefulness.
 
 That shift in mode is itself a form of judgment.
 
@@ -245,6 +244,8 @@ If a human engineer receives a vague task, progress may be slow enough that ambi
 
 A machine can take a badly framed prompt and sprint in the wrong direction with alarming competence. This makes problem framing more valuable, not less.
 
+Framing a task well comes down to answering a specific set of questions before the work is delegated — a gate it has to clear, not a courtesy.
+
 What exactly is the task?
 What counts as success?
 What constraints matter?
@@ -252,7 +253,7 @@ What should the system optimize for: speed, clarity, correctness, extensibility,
 What is allowed to remain rough, and what must be production-grade now?
 What would make this output unacceptable even if it looks superficially complete?
 
-These questions used to be signs of seniority. They now become operational prerequisites for anyone trying to direct cheap delegated execution.
+These questions used to be signs of seniority. They now become the gate itself: operational prerequisites anyone must clear before directing cheap delegated execution.
 
 Once we say the future is delegated work, the immediate human consequence is that directing work becomes a first-class technical skill. The manager, staff engineer, founder, designer, or individual developer who can frame a problem well suddenly gains disproportionate leverage because the system can execute rapidly against that frame.
 
@@ -283,7 +284,7 @@ The human reviewer is therefore not an obstacle to AI productivity. In a well-de
 
 One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are often what allow useful creativity to emerge.
 
-Itamar Friedman frames the problem through confidence: how do you let teams move fast while staying grounded in the codebase and its standards? The answer is not to remove constraints but to make the right ones explicit.
+Itamar Friedman frames the problem through confidence, asking how teams can move fast while staying grounded in the codebase and its standards. The answer is not to remove constraints but to make the right ones explicit.
 
 Constraints do several jobs at once.
 
@@ -364,23 +365,25 @@ This chapter’s claim is simple: if you want AI to write production software, d
 
 ## A small software-factory vignette
 
-Meridian started where many teams now start: with a good model inside an ordinary payments repo. At first the results felt magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time. So the team expands the scope. They ask it to wire together a new endpoint, touch a migration, update a frontend state machine, and preserve some vague house style that nobody has ever written down.
+Meridian started where many teams now start: with a good model inside an ordinary payments repo — the Software Factory the opening chapter promised, before it had earned the name. At first the results felt magical. The agent writes tests faster than the humans expect. It handles small UI changes cleanly. It can even land a respectable refactor if a senior engineer hovers nearby and corrects its misunderstandings in real time. So the team expands the scope. They ask it to wire together a new endpoint, touch a migration, update a frontend state machine, and preserve some vague house style that nobody has ever written down.
 
 Quality immediately gets erratic. One patch uses a dependency the team would never approve. Another passes tests but ignores a performance convention learned the hard way six months earlier. A third is logically fine yet shaped in a way that makes review irritating and rollback risky. The team says the model is inconsistent. What they really mean is that the workplace is inconsistent.
 
 So they change the workplace. They add explicit setup scripts instead of Slack archaeology. They tighten lint and type gates. They create agent-facing instructions. They check in examples of accepted patterns. They write slimmer task specs before handing work off. They stop relying on "everyone kind of knows how we do migrations here." The repo becomes less like a haunted archive of past decisions and more like a managed surface for machine labor.
 
+Take one Tuesday from what the team would later call the slop era. A senior engineer hands the agent a migration: move three endpoints onto the new state machine, and keep the house style. The agent comes back in minutes with a clean-looking diff. It compiles. The tests pass. But it has pulled in a parsing dependency the team had quietly banned, and it batches writes inside a loop — exactly the pattern a payments incident taught them to avoid six months earlier. Neither rule was written anywhere the agent could read. The reviewer catches the dependency, misses the write pattern, and approves. The convention resurfaces later, in a review comment nobody will search again. None of it was a hallucination. The agent guessed because the workplace gave it nothing firmer to stand on. The next morning the team does the unglamorous work: a checked-in example of an accepted migration, a lint rule for the banned import, a setup script that ends the Slack archaeology.
+
 That is the recurring case this book will call the software factory. It matters because it shows where the leverage really sits. The breakthrough is not that the model suddenly became a genius, but that the team stopped treating its own tacit judgment as invisible infrastructure.
 
 ## The repo is the real interface
 
-Most coding tools still present themselves through chat. You type a request, maybe select a few files, and wait for the assistant to propose a patch. That interface is useful, but it can also be misleading. It suggests that the real problem lives in the prompt.
+Most coding tools still present themselves through chat. You type a request, maybe select a few files, and wait for the assistant to propose a patch. That interface is useful, but it misleads by suggesting the real problem lives in the prompt. What actually determines the work is the environment around it — and unlike a prompt, an environment can be audited and improved.
 
 In practice, the prompt is only the visible tip of a much larger system. The real interface is the codebase plus everything around it: the setup instructions, the architecture, the naming conventions, the tests, the lint rules, the examples of good patches, the traces of previous reviews, the ADRs, the failure cases, and the rules about performance or security that no single file states explicitly. A human engineer entering a mature repository absorbs these constraints slowly. They ask teammates what matters. They notice which patterns recur. They learn what kinds of changes get approved quickly and which ones trigger suspicion. An agent does not get that apprenticeship unless the team builds it.
 
 Lopopolo makes the obligation explicit: “Your job is to build systems, software and structures that enable your team to be successful. And to do that, we need to make them legible to those agents that are driving the implementation.” That sentence is more radical than it first appears. It means the team is no longer only maintaining software for other humans. It is also maintaining a working environment for machine contributors.
 
-That is why documentation, ADRs, examples, and historical breadcrumbs matter so much. Those are not decorative artifacts around the “real” software process. In an AI-native workflow, they become part of the execution environment itself. If human expectations live only in scattered memory, the agent cannot inherit them. If the rules of good work are mostly tacit, the agent will violate them in ways that look mysterious only because the team never externalized its own standards.
+That is why documentation, ADRs, examples, and historical breadcrumbs matter so much. Those are not decorative artifacts around the “real” software process; in an AI-native workflow, they are part of the execution environment itself. The rule underneath is unforgiving: a standard that lives only in scattered memory is one the agent cannot inherit, and will therefore break — in ways that look mysterious only because the team never externalized the standard the agent broke.
 
 This is also why the practical unit of AI coding is no longer the snippet but the codebase. Naman Jain describes the shift cleanly: “My first project was actually working on generating single line... snippets and my last project was generating an entire codebase.” Once the unit of work becomes the repository, environment design stops being background hygiene and becomes first-order leverage.
 
@@ -412,7 +415,7 @@ A useful spec in an AI-native environment does several jobs at once. It records 
 
 Seen this way, specs are a form of context compression. They take sprawling intent that would otherwise live in chat history, tribal knowledge, or remembered conversation and package it into a stable artifact the workflow can keep returning to. They also make evaluation easier, because a system with a concrete spec can be judged against a clearer notion of success than one that began with a vague prompt and hope.
 
-This does not mean every ticket needs an elaborate design doc. Over-specification can absolutely collapse exploration into bureaucracy. Some work is best discovered through fast iteration. But once the cost of misunderstanding rises — because the task is large, parallelized, safety-sensitive, or expensive to review — explicit intent becomes leverage.
+This does not mean every ticket needs an elaborate design doc. Over-specification can just as easily collapse exploration into bureaucracy, and some work is best discovered through fast iteration. The test is not how important the work feels but how expensive a misunderstanding would be: once the task is large, parallelized, safety-sensitive, or costly to review, explicit intent stops being ceremony and becomes leverage.
 
 The deeper point is that spec-driven development matters more, not less, in an era of powerful coding agents. The stronger the generator, the more valuable a stable representation of intent becomes.
 
@@ -484,7 +487,7 @@ That is why the real role of evals is often misunderstood. Evals are not there t
 
 ## The software factory needs a quality system
 
-In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added rules, specs, validations, and cleaner task surfaces. The harness improved, and the agent's output improved with it.
+In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added the checked-in migration example, the lint rule that finally killed the banned dependency, the setup scripts that replaced Slack archaeology — the repairs the slop era forced. The harness improved, and the agent's output improved with it.
 
 But that only gets Meridian halfway. A more legible workplace makes delegated work possible. It does not by itself make delegated work trustworthy. The moment the repo starts behaving like a software factory, a new question appears: how do you know whether the factory is producing good work consistently?
 
@@ -504,7 +507,7 @@ The postmortem is revealing. The agent did in fact implement rate limiting. It e
 
 This is the shape of many AI failures in production. They are not spectacular hallucinations. They are near-misses that survive ordinary review because each individual move looks reasonable. The model did not go insane. The system simply had no reliable way to notice that an important slice of behavior had regressed.
 
-Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path. They mine previous incidents for similar "special path" behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
+Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path — what the team will afterward just call the admin-override regression. They mine previous incidents for similar "special path" behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
 
 That is what a control system looks like in practice. It converts an expensive lesson into a reusable instrument.
 
@@ -542,7 +545,7 @@ That complexity is what makes naïve evaluation feel so attractive: it offers a 
 
 For coding systems, some parts of that loop can be relatively crisp. Colvin points out that if you are using a coding agent, “it can use type safety or running type checking to basically mark its own homework.” That is a powerful phrase because it describes one layer of automated self-verification. Static checks, tests, schemas, and validators let the system catch classes of error before a human ever reviews the result.
 
-But those checks are only part of the story. A patch can type-check and still be architecturally clumsy. A retrieval answer can cite real documents and still be unhelpful. A polite assistant can satisfy style constraints while failing the user’s actual goal. Production reliability requires multiple layers of evidence, not one.
+But those checks are only part of the story, and the admin-override regression is the proof: it type-checked, its tests passed, and it was still globally wrong. A patch can clear every automated gate and still be architecturally clumsy. A retrieval answer can cite real documents and still be unhelpful. A polite assistant can satisfy style constraints while failing the user’s actual goal. Self-verification catches the errors a machine can already define; it cannot certify that the whole change was correct. Production reliability requires multiple layers of evidence, not one.
 
 ## Application-layer evals are about users, apps, and data
 
@@ -550,7 +553,7 @@ The deeper you go into production AI, the less useful it is to talk about evalua
 
 Meanwhile the application has costs, latency budgets, permission boundaries, brand expectations, and failure modes whose importance is highly uneven. A hallucinated movie recommendation is embarrassing. A hallucinated clause in a contract review is much worse. An answer that takes ten seconds instead of three may be acceptable in one workflow and fatal in another. A coding patch that is 95 percent correct but painful to review may still lose economically.
 
-This is why application-layer evals tend to look messier than leaderboard metrics. They often mix objective checks with rubric-based human review. They carry slice-level metrics instead of one universal score. They ask not only whether the output was correct, but whether it was usable, safe, timely, cheap enough, and appropriate for this workflow. That messiness is not evidence that evals are immature, but that the work is real.
+This is why application-layer evals tend to look messier than leaderboard metrics. They mix objective checks with rubric-based human review, and they carry slice-level metrics instead of one universal score. That structure is the point, not a compromise: the slices are not equally important, so a single averaged score hides the failures that cost the most. The discipline is to weight each slice by consequence rather than frequency — to ask not only whether the output was correct, but whether it was usable, safe, timely, cheap enough, and appropriate for this workflow, and to let a rare but expensive failure outweigh a common trivial one. That messiness is not evidence that evals are immature, but that the work is real.
 
 ## Observability becomes tomorrow’s eval set
 
@@ -577,7 +580,7 @@ This is also why Hetzel insists that “an eval platform is not just a test runn
 
 There is a cultural misconception hiding inside a technical one. People often talk as if evals are mostly about metrics. In practice, they are also about institutionalizing judgment.
 
-A team may claim that it wants “better answers,” “cleaner patches,” or “safer behavior,” but until those standards are converted into examples, rubrics, thresholds, and review habits, they remain aspirations. Evals force a harder question: what, exactly, are we willing to call good enough?
+A team may claim that it wants “better answers,” “cleaner patches,” or “safer behavior,” but until those standards are converted into examples, rubrics, thresholds, and review habits, they remain aspirations. That conversion is the real deliverable of eval work: it forces the team to say, concretely, what it is willing to call good enough. A standard that cannot survive being written down that way was never a standard, only a hope.
 
 Evaluation work is often uncomfortable because it surfaces disagreement. One engineer cares most about correctness. Another cares about cost. A PM cares about task completion and delight. A support lead cares about escalation quality. A security reviewer cares about worst-case behavior, not average behavior. An eval system does not make these tradeoffs disappear. It makes them discussable.
 
@@ -657,7 +660,7 @@ That distinction matters because the remedy changes. Hallucination invites bette
 
 ## The High-Stakes Colleague needs more than access
 
-Hargrove’s tax practice makes the stakes of this chapter especially clear. The firm’s assistant began life as a helpful chat surface. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
+Hargrove’s tax practice makes the stakes of this chapter especially clear. The firm’s assistant began life as a helpful chat surface — the High-Stakes Colleague the opening chapter named, before anyone asked it to do the work. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
 
 At that point, generic model intelligence is no longer the bottleneck. The bottleneck is whether the system can assemble professional-grade context.
 
@@ -666,6 +669,8 @@ Chau Tran’s enterprise framing is useful here because it refuses the fantasy t
 This is where the book’s second recurring case, the High-Stakes Colleague, becomes more than metaphor. The system is valuable not because it can speak elegantly about law or tax, but because it can operate inside a domain where evidence provenance, internal knowledge, and retrieval discipline materially change the quality of work.
 
 In Harvey’s and related legal-frontier material, the problem is not only finding relevant text. It is finding the right text in the right topology: internal precedents, authoritative sources, matter-specific files, note trails, citations, and the relationships between them. The difference between “broadly relevant” and “operationally decisive” can be a single paragraph hidden in the wrong layer.
+
+Watch one request from Hargrove’s early build-out. A tax associate asks the assistant to trace the support for a deduction a client has claimed for years. The assistant answers fluently and cites a clean-looking authority — a public explainer whose wording matches the query almost perfectly. It reads as decisive. It is also wrong for this client: the governing position lives in a matter note a senior attorney wrote earlier, in a different file, under a jurisdiction the explainer never mentions. The system ranked it first because nothing told it a public article and a matter-specific note are not the same kind of evidence. The remedy is not a smarter model. The team types its knowledge topology into the system: source typing that ranks internal precedent above public background, access boundaries per matter, and a retrieval surface that carries provenance, so the associate can see which layer an answer came from. The misranked matter note becomes the scar the rest of the build-out is designed around.
 
 Hargrove’s context system needs more than a document dump. It needs access boundaries, source typing, freshness policies, ranking tuned to domain use, and interfaces that preserve provenance. In high-stakes work, a system that is 90 percent right for unclear reasons can still be professionally unusable. The issue is not whether the model knows a lot, but whether the product can build a trustworthy evidence surface around the model.
 
@@ -703,7 +708,7 @@ Nearest-neighbor search is often enough when the user wants one relevant passage
 
 Stephen Chin and the Neo4j material are useful here because they make the structure visible. Knowledge graphs can help with multi-hop synthesis, entity disambiguation, and the recovery of relations that ordinary chunk retrieval tends to flatten away. The point is not that every product needs a graph. The point is that some tasks require a representation richer than bag-of-passages search.
 
-This is especially true in enterprise and legal settings, where what matters is often not a single answerable sentence but a traceable path across entities, documents, and prior decisions. Hybrid retrieval becomes attractive because different pieces of the context problem want different tools. Vector search is good at semantic similarity. Graph-based traversal is better at following explicit relationships. Keyword or metadata filters remain valuable when exactness matters. Mature systems layer them instead of declaring one winner. The key chapter-level claim is simple: context quality depends on how well the system assembles evidence, not only on whether it retrieves something related.
+This is especially true in enterprise and legal settings, where what matters is often not a single answerable sentence but a traceable path across entities, documents, and prior decisions. Hybrid retrieval becomes attractive because the right mechanism follows from the shape of the answer: vector search when the answer is a single similar passage, graph traversal when it is a path along explicit relationships, keyword or metadata filters when exactness is what matters. Mature systems layer all three rather than declaring one winner. The key chapter-level claim is simple: context quality depends on how well the system assembles evidence, not only on whether it retrieves something related.
 
 ## Memory is not the same thing as a long prompt
 
@@ -731,7 +736,7 @@ The old failure mode was “the model lacked the right document.” The emerging
 
 A lot of context discussions drift into architecture diagrams too quickly. The diagrams can be useful, but they also create a form of intellectual camouflage. A beautiful retrieval stack can still produce mediocre work. A graph-enhanced pipeline can still be badly ranked. A memory subsystem can still carry forward the wrong state. An elegantly standardized tool protocol can still swamp the model with irrelevant capability descriptions.
 
-The only reliable proof of context quality lives downstream.
+The only reliable proof of context quality lives downstream, which is the acceptance test any context change has to pass:
 
 Does the system complete real tasks more accurately?
 Does it cite better evidence?
@@ -747,7 +752,7 @@ This also explains why so many context debates are unproductive when they happen
 
 There is a temptation, especially among people impressed by raw model progress, to treat context work as secondary plumbing. If the model keeps getting smarter, surely the need for elaborate context engineering should diminish.
 
-In practice the opposite often happens. The more capable the model, the more value there is in placing the right evidence, tools, and state in front of it. Stronger models can do more with good context. They can also generate more persuasive nonsense when the context surface is badly assembled. Capability amplifies both outcomes.
+In practice the opposite often happens, and the rule is worth stating plainly: a stronger model raises both the return on good context and the cost of bad context. It does more with the right evidence, tools, and state placed in front of it, and it generates more persuasive nonsense when the context surface is badly assembled. Capability amplifies both outcomes, which makes a better model a reason to invest more in context, not less.
 
 That is why context belongs in the same mental bucket as harnesses, evals, runtimes, and security. It is not a prompt trick but one of the engineered surroundings that determine whether intelligence becomes useful.
 
@@ -781,9 +786,9 @@ Trust fails quickly when continuity fails. A coding agent that loses its place a
 
 ## The software factory needs an operating system
 
-Meridian's case from Chapters 3 and 4 becomes even more revealing here. The team already improved its repo. It already built a better harness. It already added stronger validations and more realistic evals. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
+Meridian's case from Chapters 3 and 4 becomes even more revealing here. The team already rebuilt its repo after the slop era, and after the admin-override regression it added the eval slices that now catch the special-path mistakes a casual test run would miss. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
 
-This is where a second class of problems appears. One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman\u2019s board, without station history, and without a clean shift handoff.
+This is where a second class of problems appears. One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman’s board, without station history, and without a clean shift handoff.
 
 That is the deeper meaning of the software-factory metaphor. A factory is not only a prepared environment and a quality system. It also needs an operating system. It needs durable task identities, queues, checkpoints, resumability, visibility, and clear places for review. Otherwise increasing the number of workers only multiplies confusion.
 
@@ -803,7 +808,7 @@ In a serious coding workflow, state may include the current task plan, completed
 
 ## History is part of execution, not just debugging
 
-Once you start thinking in workflows rather than turns, history changes meaning. In chat systems, history is mostly there to help the next answer feel continuous. In durable systems, history is part of execution itself. It tells the runtime what has already happened, what can be retried safely, which approvals were granted, what state changed, and where the agent should resume.
+Once you start thinking in workflows rather than turns, history changes meaning, and a practical rule follows from the change: persist a structured record of what has happened, not a growing transcript of what was said. In chat systems, history is mostly there to help the next answer feel continuous. In durable systems, history is part of execution itself. It tells the runtime what has already happened, which steps can be retried safely, which approvals were granted, what state changed, and where the agent should resume — none of which a transcript, by itself, can represent.
 
 That is why durable-agent discussions keep converging on structured histories, checkpoints, and replayable event logs. Not because engineers enjoy complexity, but because long-running work creates obligations. If the system did something important, someone may later need to inspect it. If a run failed halfway through, the team may need to resume from a meaningful boundary rather than start from zero. If a result is contested, the organization may need to know what the system saw, which tools it used, and which step introduced the mistake.
 
@@ -819,7 +824,7 @@ Replay-oriented designs are attractive when causality and auditability matter. T
 
 Snapshot-oriented designs are attractive when fast continuation and complex live state matter more. They reduce the cost of resuming. They can feel more natural when the system’s working memory is elaborate, when rebuilding everything is awkward, or when pause-and-resume is expected to be frequent.
 
-The chapter does not need to turn this into a runtime taxonomy lesson. The point is simpler. The existence of this tradeoff proves that runtime semantics are not incidental details. Once agents operate over time, teams are making the kinds of decisions mature distributed systems always have to make: what gets persisted, what gets recomputed, what must be auditable, what can be resumed cheaply, and which failure modes are acceptable.
+This is less a taxonomy lesson than a decision with a rule inside it: reach for replay when causality and auditability are the point, so state emerges from recorded steps rather than opaque blobs; reach for snapshots when fast continuation and elaborate live state dominate, so pause and resume stay cheap. The existence of that tradeoff is what proves runtime semantics are not incidental details. Once agents operate over time, teams are making the kinds of decisions mature distributed systems always have to make: what gets persisted, what gets recomputed, what must be auditable, what can be resumed cheaply, and which failure modes are acceptable.
 
 ## The human control plane is an architectural layer
 
@@ -835,7 +840,7 @@ Maggie Appleton sharpens the same point from the collaboration angle. The missin
 
 ## Human control is not human micromanagement
 
-The phrase human-in-the-loop can accidentally trivialize the design problem. It can suggest a binary choice: either humans approve everything, or the system is autonomous. But the more useful reality is a gradient of control. Humans may stay out of the way for low-risk steps, review plans before expensive ones, approve external actions, inspect only exceptions, or intervene only when uncertainty spikes. Control can sit before, during, and after execution.
+The phrase human-in-the-loop can accidentally trivialize the design problem. It can suggest a binary choice: either humans approve everything, or the system is autonomous. The more useful reality is a gradient of control, and it turns the design task into a placement question — not how to keep a human in every loop, but where to put the few checkpoints that carry the most judgment. Humans may stay out of the way for low-risk steps, review plans before expensive ones, approve external actions, inspect only exceptions, or intervene only when uncertainty spikes. Control can sit before, during, and after execution.
 
 A well-designed control plane should reduce the need for constant rescue, not institutionalize it. The goal is not to make every system depend on manual babysitting. The goal is to create high-leverage checkpoints where human judgment matters most.
 
@@ -845,7 +850,7 @@ A coding factory, for example, might let subagents explore, search, summarize, d
 
 The High-Stakes Colleague case makes this point unavoidable. In legal, tax, compliance, healthcare, and similar workflows, the dream of unrestricted autonomy becomes less impressive the closer you get to real operational risk. The system is valuable not because it can do everything without supervision, but because it can do the right things with the right boundaries.
 
-Joel Hron offers the right antidote to autonomy maximalism: agency should be thought of as a spectrum, a set of dials adjusted by use case. That framing matters because it replaces the childish question — how autonomous can we make it? — with the adult one: where should autonomy be high, where should it be low, and who decides? That difference is foundational to trustworthy product design.
+Joel Hron offers the right antidote to autonomy maximalism, arguing that agency is best thought of as a spectrum — a set of dials adjusted by use case. That framing matters because it replaces the childish question — how autonomous can we make it? — with the adult one: where should autonomy be high, where should it be low, and who decides? That difference is foundational to trustworthy product design.
 
 The north star, as Hron puts it, has shifted “from helpfulness to productive.” But productive does not mean unsupervised. In high-stakes work, productivity often depends on carefully staged authority. The system may be allowed to gather evidence, route across tools, synthesize findings, and even validate parts of its own work. But certain boundaries remain deliberately human. An approval is not evidence that the system failed. It is evidence that the organization understands where risk actually lives.
 
@@ -855,7 +860,7 @@ This is another reason Chapter 6 should pair the Software Factory with the High-
 
 One of the most practical ideas in the High-Stakes Colleague material is that old systems are not just obstacles to agentic work. They often become runtime components of the new control plane.
 
-Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work. That is a powerful pattern because it shows how durable execution changes the role of traditional enterprise software. Systems that once only served human operators now become structured checkpoints, rule engines, and verification layers inside a machine-mediated workflow.
+Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work — in the same firm that, in Chapter 5, learned to rank a matter note above a public explainer, provenance and validation now become tools the system itself calls. That is a powerful pattern because it shows how durable execution changes the role of traditional enterprise software. Systems that once only served human operators now become structured checkpoints, rule engines, and verification layers inside a machine-mediated workflow.
 
 The chapter should linger on this because it helps demystify agent architecture. Not every trustworthy agent system is built from scratch as a magical new organism. Often it is assembled from older, more stable parts: permission systems, validators, databases, workflow engines, audit trails, search layers, review queues. The model is the volatile component. The rest of the runtime is what prevents volatility from becoming operational chaos.
 
@@ -915,21 +920,21 @@ The core mistake in immature agent systems is to treat tool access as a product 
 
 ## Agency turns security from request control into workflow control
 
-Traditional application security often had a relatively stable unit of action. A user clicked a button. An API call hit a service. The backend checked permissions. The execution path was constrained enough that teams could think in discrete requests.
+Traditional application security had a relatively stable unit of action. A user clicked a button. An API call hit a service. The backend checked permissions. The path was constrained enough that teams could reason in discrete requests. Agency dissolves that unit: the architecture must now constrain the whole delegated workflow, not decorate prompts around isolated requests.
 
 Agentic systems weaken that comfort. An agent does not only receive a command. It interprets intent, decides how to pursue it, fans out into tools, retries when steps fail, and may continue moving through a workflow long after the original prompt is gone from the user’s attention. The trust boundary therefore expands. The key question is no longer only whether a given user may access a given resource. It becomes whether a delegated machine actor can decide, retrieve, execute, and continue safely on that user’s behalf. That is a much larger surface.
 
-The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance workflows, the system is not merely answering a question. It may gather evidence, traverse internal sources, use validation engines, draft conclusions, and surface a recommendation for human sign-off. The risk does not live at one tool endpoint. It lives across the trajectory. A single misstep in that chain can leak the wrong document, overstate a conclusion, or cross a permission boundary that the human did not realize had been delegated.
+The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance workflows, the system is not merely answering a question. It may gather evidence, traverse internal sources — the same retrieval binder it assembled in Chapter 5 — use the validation engines it gained in Chapter 6, draft conclusions, and surface a recommendation for human sign-off. The risk lives across the trajectory, not at one tool endpoint. A single misstep in that chain can leak the wrong document, overstate a conclusion, or cross a permission boundary that the human did not realize had been delegated. What Chapter 5 answered with provenance, security now answers with authority: who authorized that path?
 
-The Software Factory exposes the same problem from another angle. A code agent with repository access is not dangerous only when it writes a bad patch. It is dangerous when it can quietly inspect secrets, mutate CI configuration, add a dependency, call external services, or keep iterating after a misleading instruction entered the loop. Once code execution enters the picture, the old fantasy that trust can be solved primarily at the prompt layer becomes hard to defend.
+The Software Factory exposes the same problem from another angle. A code agent with repository access is not dangerous only when it writes a bad patch — the quiet, special-path kind the admin-override regression of Chapter 4 already paid for. It is dangerous when it can quietly inspect secrets, mutate CI configuration, add a dependency, call external services, or keep iterating after a misleading instruction entered the loop. Once code execution enters the picture, the old fantasy that trust can be solved primarily at the prompt layer becomes hard to defend.
 
-This is why Chapter 7 should resist security theater. The important move is not to say that AI is spooky and therefore needs more generic caution. The real move is to notice that agency changes the unit of control from isolated calls to delegated workflows. The right architecture must therefore constrain workflows, not merely decorate prompts.
+This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it.
 
 ## Sandboxes matter because models are not where trust ultimately lives
 
-One of the clearest lessons from the code-execution material is that system controls matter more than model intentions.
+The clearest lesson from the code-execution material is a rule, not an observation: a model can never be the final enforcement layer for its own power.
 
-If an agent can execute code, browse untrusted content, open files, or chain across tools, then the design must assume it can be induced into bad behavior. Maybe by a malicious instruction. Maybe by a poisoned page. Maybe by a bug in tool descriptions. Maybe by a simple misunderstanding. The source of failure matters less than the consequence: a model cannot be the final enforcement layer for its own power.
+If an agent can execute code, browse untrusted content, open files, or chain across tools, then the design must assume it can be induced into bad behavior. Maybe by a malicious instruction. Maybe by a poisoned page. Maybe by a bug in tool descriptions. Maybe by a simple misunderstanding. The source of failure matters less than the consequence.
 
 Sandboxing is therefore part of the product, not an implementation detail. A serious code-executing agent should run in a constrained environment. Filesystem access should be scoped. Network access should be explicit. Secrets should be minimized. Tool permissions should be narrow by default. Risky operations should require step-up approval rather than inheriting broad ambient authority. If the system needs to browse arbitrary inputs, those inputs should not sit on the same trust plane as production credentials.
 
@@ -939,15 +944,17 @@ This is also why security-heavy discussions increasingly sound like runtime desi
 
 The underlying principle is blunt: assume the agent will sometimes be wrong, and build so that being wrong is survivable.
 
+A word about scope. There is a serious discipline devoted to the model’s own alignment — what it is disposed to do, refuse, and value — and nothing here argues against it. That is not this book’s subject. This book is about the engineering that surrounds the model: the boundaries, identities, sandboxes, and audit trails that must hold even when the model’s inner alignment is imperfect. A bounded system is where trust is earned, however the model was trained.
+
 ## Least privilege becomes a product design discipline
 
 Least privilege is easy to praise and surprisingly hard to operationalize in agent systems.
 
 A useless agent can be perfectly safe. The challenge is to make the system powerful enough to matter without giving it so much authority that one mistake becomes expensive. This is where many teams discover that access control is no longer a back-office function. It becomes part of the product experience.
 
-A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction: scope what the system can see based on existing credentials, filter tool exposure by permission, and use step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems.
+A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction — scoping what the system can see based on existing credentials, filtering tool exposure by permission, using step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems.
 
-The same logic should apply beyond coding. A research agent may not need write access at all. A support agent may need to read account metadata but not issue refunds. A legal workflow may need broad retrieval across documents but no authority to send anything externally. A scheduling agent may need access to calendars yet no permission to message third parties without confirmation.
+The same logic is really a default-permission table, one row per agent. A research agent may not need write access at all. A support agent may need to read account metadata but not issue refunds. A legal workflow may need broad retrieval across documents but no authority to send anything externally. A scheduling agent may need access to calendars yet no permission to message third parties without confirmation.
 
 These choices do not merely protect the organization. They shape the behavior of the system itself. Narrower powers reduce the number of tempting but unsafe paths the model can wander into. A better security design often makes the system easier to reason about, not only safer.
 
@@ -1014,6 +1021,8 @@ This is where Chapter 7 should deliberately touch Chapter 6’s observability ar
 
 Joel Hron’s high-stakes framing is especially powerful here because it does not pretend the answer is unrestricted autonomy under perfect prevention. The answer is constrained execution plus inspectable paths. The system can do meaningful work, but it leaves behind a trail that domain experts and organizations can actually examine.
 
+Consider the day a client disputes a position Hargrove’s assistant helped file. A partner must answer one question: what did the system actually do? Because the assistant reached its documents through a mediation layer, the answer exists. The trajectory shows which matter files it retrieved, which validation engine it called, and which draft it surfaced — all under a read-only token scoped to this matter, with no authority to send to the client. Without that trail, the honest answer would be a shrug. Inspectability here separates a defensible workflow from a liability the firm cannot bound.
+
 That said, the chapter should not fake simplicity. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
 
 The same pattern keeps recurring: wherever agent systems create new power, they also create a need for better-structured oversight.
@@ -1051,7 +1060,7 @@ It hides latency behind a blinking cursor. It tolerates awkward pauses. It lets 
 
 Voice removes that mercy.
 
-Imagine Hargrove's assistant on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
+Imagine Hargrove's assistant — the one that built its retrieval binder in Chapter 5, gained durable state and staged sign-off in Chapter 6, and had its authority scoped behind a gateway in Chapter 7 — on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
 
 That scenario does two useful things for this book. First, it gives Chapter 8 a center stronger than “voice” in the abstract. Second, it reveals why realtime belongs in the manuscript’s main run at all. The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds. Problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency.
 
@@ -1073,7 +1082,7 @@ People expect overlap, acknowledgment, interruption handling, backchannels, and 
 
 In the support-call scenario, that rhythm is not cosmetic. If the caller corrects their own account number halfway through a sentence, the system has to revise state. If the caller says, “No, wait, that was the old policy,” the system has to distinguish between abandoned context and active context. If the agent says “One moment while I check that” and then disappears into silence, the user does not experience a neutral backend delay. They experience incompetence.
 
-This is what the modern voice material names so well. The gap is no longer only transcription quality or speech synthesis quality. Even as speech models improve, systems still fail on timing, overlap, and interruption. They wait too long, cut in too aggressively, or lose coherence when the human changes direction mid-stream. The problem is not merely that the model is insufficiently eloquent. The problem is that the system cannot coordinate listening, reasoning, tool use, and speaking under live pressure.
+This is what the modern voice material names so well. The gap is no longer only transcription quality or speech synthesis quality. The real test is narrower and harder: timing, overlap, and interruption — the three ways a live conversation actually breaks. Even as speech models improve, systems still wait too long, cut in too aggressively, or lose coherence when the human changes direction mid-stream. Passing means handling those three, not sounding more eloquent. A model can be perfectly articulate and still fail all of them, because the thing under test is whether the system can coordinate listening, reasoning, tool use, and speaking under live pressure.
 
 That matters far beyond voice. A realtime system is simply the most unforgiving version of a general truth: trustworthy AI depends on the loop around the model. Voice makes that visible because the human is still there to feel every systems defect as behavior.
 
@@ -1081,7 +1090,7 @@ That matters far beyond voice. A realtime system is simply the most unforgiving 
 
 One of the most useful mistakes in voice discourse is treating latency as a single number. In practice, latency is a budget distributed across the entire loop: audio capture, transport, speech recognition, turn segmentation, model reasoning, tool invocation, retrieval, speech generation, and playback. A system can have a fast core model and still feel terrible because the orchestration around it burns the budget in awkward places.
 
-The support-call case makes this concrete. The user does not care whether the delay came from ASR, retrieval, the permissions gateway, or a slow billing tool. They only hear that the agent became hesitant exactly when confidence mattered. A quick spoken acknowledgment followed by a slightly slower answer can feel much better than a long silent pause followed by a polished response. Streaming partial understanding can outperform a more globally optimal batch pipeline. Fast first audio can rescue a system whose deeper reasoning takes longer, provided the interaction contract is designed honestly.
+The support-call case makes this concrete. The user does not care whether the delay came from ASR, retrieval, the permissions gateway, or a slow billing tool. They only hear that the agent became hesitant exactly when confidence mattered. So the rule is to spend the latency budget on the first audio rather than on silence: a quick spoken acknowledgment followed by a slightly slower answer beats a long silent pause followed by a polished response. Streaming partial understanding can outperform a more globally optimal batch pipeline. Fast first audio rescues a system whose deeper reasoning takes longer, provided the interaction contract is designed honestly.
 
 The newer voice material sharpens another important point. As speech layers improve, tool calls increasingly become the bottleneck. That is a major book-level insight because it ties voice directly back to Chapters 5, 6, and 7. If a user asks a realtime system for account data, a calendar lookup, a support action, or an environment check, the speech stack may no longer be the slowest part. The true latency may come from retrieval, permission checks, network round-trips, or a workflow step waiting on some other service.
 
@@ -1109,7 +1118,7 @@ In the support-call scenario, that might mean the agent has already begun a retr
 
 A spoken system has to do state management in public. It needs a runtime that can pause, redirect, summarize, and resume without forcing the user to reconstruct everything manually. It also needs security boundaries that do not disappear just because the interface became conversational. A friendly voice does not make overscoped authority less dangerous.
 
-In fact, the opposite is often true. Voice can create false confidence because it feels human. Users may reveal more, approve more casually, or assume the system understood more precisely than it actually did. A trustworthy voice system therefore needs especially careful confirmation patterns around consequential actions.
+In fact, the opposite is often true. Because it feels human, voice manufactures false confidence: users reveal more, approve more casually, and assume the system understood more precisely than it actually did. That is the trap — the warmer the interface, the cheaper approval becomes exactly where approval should be expensive. So the rule inverts the intuition. The more consequential the action, the more deliberate the confirmation has to be, precisely because the medium is coaxing everyone to skip it.
 
 This is where the human control plane comes into the room. In chat, the control plane may live in a dashboard, a trace view, or a review queue. In voice, part of it must also live inside the interaction itself: clear acknowledgments, visible escalation, graceful fallback, repeatable confirmations, and a way to hand off when uncertainty is too high. A realtime agent cannot rely on the user reading the logs later to discover what went wrong.
 
@@ -1173,7 +1182,7 @@ Scarcity moves upward: from typing to judgment, from production labor to orchest
 
 Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption.
 
-Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday.
+Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday — any one of which could be hiding another admin-override regression, the throttle on the wrong path from Chapter 4, now buried under a weekend of green checkmarks.
 
 Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive.
 
@@ -1185,7 +1194,7 @@ That is the scene this chapter has to explain. It is where the software factory 
 
 ## Buying seats is not the same as redesigning work
 
-The easiest way to misunderstand AI transformation is to measure adoption only by access. A company can purchase licenses, encourage experimentation, and still remain structurally unchanged. Individuals become a little faster, but the organization continues to route work, decisions, approvals, and responsibility through the same assumptions it held before. In that world, AI is helpful but not yet formative.
+The easiest way to misunderstand AI transformation is to measure adoption by access rather than by whether work is routed differently. A company can purchase licenses, encourage experimentation, and still remain structurally unchanged: individuals become a little faster, but decisions, approvals, and responsibility flow through the same assumptions the organization held before. Count the seats and AI looks transformative; ask whether a single approval path has changed, and it often has not. Until the operating model bends, AI is helpful but not yet formative.
 
 The more interesting threshold is when AI use becomes sufficiently widespread that the operating model itself starts to bend. Dan Shipper’s point about the difference between almost everyone using AI and literally everyone using it matters because it hints at compounding effects. Once usage becomes pervasive, local shortcuts stop being the main story. Shared expectations shift. Documentation quality matters more. Examples, standards, prompts, policies, and internal tools start acting like leverage multipliers rather than optional aids.
 
@@ -1195,7 +1204,7 @@ That is the first mark of an AI-native organization: it stops treating AI as a p
 
 ## Cheaper execution shifts value toward judgment and throughput design
 
-When output gets cheaper, not all work becomes equally valuable. This is the subtlety many simplistic productivity narratives miss. If AI makes coding, drafting, analysis, or artifact production faster, the main scarcity does not vanish; it relocates.
+When output gets cheaper, not all work becomes equally valuable. This is the subtlety many simplistic productivity narratives miss: when generation is nearly free, the scarcity does not vanish but relocates — from making things to deciding which of them deserve trust. The rule that follows is easy to state and easy to forget: more output per person is not the same as more throughput, and an organization can produce far more while moving slower.
 
 More things can be attempted. More variants can be generated. More tasks can be pushed into motion. But the organization still has to decide what matters, which options deserve review, which outputs are trustworthy, and where limited expert attention should go. The result is that judgment, architecture, and throughput design become even more important as raw execution becomes cheaper.
 
@@ -1247,7 +1256,7 @@ AI-native organizations do change role boundaries. Support can do more technical
 
 But blurred creation does not mean blurred accountability.
 
-In fact, accountability often needs to become sharper precisely because authorship becomes more distributed. Someone still owns the production path. Someone still owns domain correctness. Someone still owns security boundaries. Someone still decides which workflows remain human-gated. As more people and more agents can create, the institution has to get clearer about where responsibility lives after creation.
+In fact, accountability has to become sharper precisely because authorship becomes more distributed. The operative rule is simple: every path you widen for creation obligates you to name, before it opens, who owns the production path, who owns domain correctness, who owns the security boundaries, and who decides which workflows stay human-gated. Widened creation without an assigned owner is not democratization; it is an accountability gap waiting to be discovered after something ships.
 
 This is another reason internal platforms matter so much. Good platforms do not only make work easier. They encode the transfer points between creation and accountability. They define what can be done safely by many people and what must still pass through narrower ownership structures.
 
@@ -1326,7 +1335,7 @@ The field has a recurring weakness for maximalist language. Full autonomy. Fully
 
 The most useful systems in this book were rarely the ones with the least human involvement. They were the ones with the clearest handoffs.
 
-The software factory worked when agents could draft, test, search, and decompose work inside a strong harness. The high-stakes colleague worked when the system could retrieve, synthesize, validate, and draft while expert review remained focused on the consequential edges. The realtime voice scenario worked when the agent could acknowledge, clarify, act within bounds, and escalate gracefully rather than bluff past uncertainty.
+The software factory worked when agents could draft, test, search, and decompose work inside a strong harness — the harness whose eval slices finally caught the throttle that once stalled an admin path. The high-stakes colleague worked when the system could retrieve, synthesize, validate, and draft while expert review remained focused on the consequential edges. The realtime voice scenario worked when the agent could acknowledge, clarify, act within bounds, and escalate gracefully rather than bluff past uncertainty.
 
 That is the durable principle: autonomy is not a trophy but a variable to tune. The right system is not the one that removes humans most completely but the one that places human attention where it creates the most value and machine execution where structure makes it safe.
 

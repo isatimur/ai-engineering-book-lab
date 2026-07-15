@@ -3,8 +3,19 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2389,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -50,17 +61,6 @@
           "content_ref": "01/git-3e42e30.md"
         },
         {
-          "version_id": "git:f3fca12",
-          "source": "git",
-          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 1915,
-          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-f3fca12.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -74,8 +74,19 @@
       ]
     },
     "02": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2688,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -121,17 +132,6 @@
           "content_ref": "02/git-869bdb6.md"
         },
         {
-          "version_id": "git:96210fb",
-          "source": "git",
-          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 2005,
-          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-96210fb.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -145,8 +145,19 @@
       ]
     },
     "03": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2672,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -192,17 +203,6 @@
           "content_ref": "03/git-f536564.md"
         },
         {
-          "version_id": "git:f3fca12",
-          "source": "git",
-          "ref": "f3fca12710927122b57102b24a114bc7ceb5164f",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 3193,
-          "message": "edit(manuscript): hostile-editor pass — 7 surgical fixes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-f3fca12.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -216,8 +216,19 @@
       ]
     },
     "04": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 3112,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -263,17 +274,6 @@
           "content_ref": "04/git-ed15457.md"
         },
         {
-          "version_id": "git:ef6219d",
-          "source": "git",
-          "ref": "ef6219de9a25a4cf333c1ece48218f832f6cb31f",
-          "date": "2026-06-02",
-          "status": "Drafting",
-          "wordCount": 1930,
-          "message": "prose(content): propagate de-slop edits from drafting/ to rendered content/",
-          "corpus_snapshot_hash": null,
-          "content_ref": "04/git-ef6219d.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -287,8 +287,19 @@
       ]
     },
     "05": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2764,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -334,17 +345,6 @@
           "content_ref": "05/git-f3fca12.md"
         },
         {
-          "version_id": "git:203912f",
-          "source": "git",
-          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 3179,
-          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-203912f.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -358,8 +358,19 @@
       ]
     },
     "06": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 3338,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -405,17 +416,6 @@
           "content_ref": "06/git-f536564.md"
         },
         {
-          "version_id": "git:ed15457",
-          "source": "git",
-          "ref": "ed15457e1f721b822a82f2012eec226609a3a753",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 2252,
-          "message": "prose(ch03,04,06,08): usefulness hybrid — in-prose sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-ed15457.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -429,8 +429,19 @@
       ]
     },
     "07": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2585,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -476,17 +487,6 @@
           "content_ref": "07/git-f3fca12.md"
         },
         {
-          "version_id": "git:96210fb",
-          "source": "git",
-          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 3690,
-          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-96210fb.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -500,8 +500,19 @@
       ]
     },
     "08": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2432,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -547,17 +558,6 @@
           "content_ref": "08/git-f3fca12.md"
         },
         {
-          "version_id": "git:869bdb6",
-          "source": "git",
-          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
-          "date": "2026-06-04",
-          "status": "Drafting",
-          "wordCount": 3517,
-          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
-          "corpus_snapshot_hash": null,
-          "content_ref": "08/git-869bdb6.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -571,8 +571,19 @@
       ]
     },
     "09": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 2359,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",
@@ -618,17 +629,6 @@
           "content_ref": "09/git-341060e.md"
         },
         {
-          "version_id": "git:c13829c",
-          "source": "git",
-          "ref": "c13829c42df2e285ef3dad9411fb1abc832b7163",
-          "date": "2026-06-10",
-          "status": "Drafting",
-          "wordCount": 5057,
-          "message": "feat(website): AI-native readiness assessment + enterprise surfaces",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-c13829c.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -642,8 +642,19 @@
       ]
     },
     "10": {
-      "current_version_id": "git:90737a8",
+      "current_version_id": "git:96de0a5",
       "versions": [
+        {
+          "version_id": "git:96de0a5",
+          "source": "git",
+          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
+          "date": "2026-07-15",
+          "status": "Drafting",
+          "wordCount": 1707,
+          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-96de0a5.md"
+        },
         {
           "version_id": "git:90737a8",
           "source": "git",

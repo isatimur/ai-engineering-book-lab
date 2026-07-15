@@ -15,7 +15,7 @@ Scarcity moves upward: from typing to judgment, from production labor to orchest
 
 Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption.
 
-Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday.
+Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday — any one of which could be hiding another admin-override regression, the throttle on the wrong path from Chapter 4, now buried under a weekend of green checkmarks.
 
 Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive.
 
@@ -27,7 +27,7 @@ That is the scene this chapter has to explain. It is where the software factory 
 
 ## Buying seats is not the same as redesigning work
 
-The easiest way to misunderstand AI transformation is to measure adoption only by access. A company can purchase licenses, encourage experimentation, and still remain structurally unchanged. Individuals become a little faster, but the organization continues to route work, decisions, approvals, and responsibility through the same assumptions it held before. In that world, AI is helpful but not yet formative.
+The easiest way to misunderstand AI transformation is to measure adoption by access rather than by whether work is routed differently. A company can purchase licenses, encourage experimentation, and still remain structurally unchanged: individuals become a little faster, but decisions, approvals, and responsibility flow through the same assumptions the organization held before. Count the seats and AI looks transformative; ask whether a single approval path has changed, and it often has not. Until the operating model bends, AI is helpful but not yet formative.
 
 The more interesting threshold is when AI use becomes sufficiently widespread that the operating model itself starts to bend. Dan Shipper’s point about the difference between almost everyone using AI and literally everyone using it matters because it hints at compounding effects. Once usage becomes pervasive, local shortcuts stop being the main story. Shared expectations shift. Documentation quality matters more. Examples, standards, prompts, policies, and internal tools start acting like leverage multipliers rather than optional aids.
 
@@ -37,7 +37,7 @@ That is the first mark of an AI-native organization: it stops treating AI as a p
 
 ## Cheaper execution shifts value toward judgment and throughput design
 
-When output gets cheaper, not all work becomes equally valuable. This is the subtlety many simplistic productivity narratives miss. If AI makes coding, drafting, analysis, or artifact production faster, the main scarcity does not vanish; it relocates.
+When output gets cheaper, not all work becomes equally valuable. This is the subtlety many simplistic productivity narratives miss: when generation is nearly free, the scarcity does not vanish but relocates — from making things to deciding which of them deserve trust. The rule that follows is easy to state and easy to forget: more output per person is not the same as more throughput, and an organization can produce far more while moving slower.
 
 More things can be attempted. More variants can be generated. More tasks can be pushed into motion. But the organization still has to decide what matters, which options deserve review, which outputs are trustworthy, and where limited expert attention should go. The result is that judgment, architecture, and throughput design become even more important as raw execution becomes cheaper.
 
@@ -89,7 +89,7 @@ AI-native organizations do change role boundaries. Support can do more technical
 
 But blurred creation does not mean blurred accountability.
 
-In fact, accountability often needs to become sharper precisely because authorship becomes more distributed. Someone still owns the production path. Someone still owns domain correctness. Someone still owns security boundaries. Someone still decides which workflows remain human-gated. As more people and more agents can create, the institution has to get clearer about where responsibility lives after creation.
+In fact, accountability has to become sharper precisely because authorship becomes more distributed. The operative rule is simple: every path you widen for creation obligates you to name, before it opens, who owns the production path, who owns domain correctness, who owns the security boundaries, and who decides which workflows stay human-gated. Widened creation without an assigned owner is not democratization; it is an accountability gap waiting to be discovered after something ships.
 
 This is another reason internal platforms matter so much. Good platforms do not only make work easier. They encode the transfer points between creation and accountability. They define what can be done safely by many people and what must still pass through narrower ownership structures.
 

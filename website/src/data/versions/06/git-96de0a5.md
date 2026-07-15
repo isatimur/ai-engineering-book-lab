@@ -21,9 +21,9 @@ Trust fails quickly when continuity fails. A coding agent that loses its place a
 
 ## The software factory needs an operating system
 
-Meridian's case from Chapters 3 and 4 becomes even more revealing here. The team already rebuilt its repo after the slop era, and after the admin-override regression it added the eval slices that now catch the special-path mistakes a casual test run would miss. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
+Meridian's case from Chapters 3 and 4 becomes even more revealing here. The team already improved its repo. It already built a better harness. It already added stronger validations and more realistic evals. Small delegated work now goes well. Then the team raises the ambition again. Instead of isolated patches, it asks the system to investigate a bug, spawn a few subagents, inspect a cluster of files, propose a fix, run checks, and prepare a reviewable summary for a human.
 
-This is where a second class of problems appears. One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman’s board, without station history, and without a clean shift handoff.
+This is where a second class of problems appears. One subagent finds the relevant failure but another, working off a slightly older branch of understanding, proposes a different patch. A retry of the validation step reruns something the first attempt had already completed. The human reviewer receives fragments of work rather than a coherent roll-up. The system still has intelligence and context, but no stable execution semantics. It is a workshop full of talented workers without a foreman\u2019s board, without station history, and without a clean shift handoff.
 
 That is the deeper meaning of the software-factory metaphor. A factory is not only a prepared environment and a quality system. It also needs an operating system. It needs durable task identities, queues, checkpoints, resumability, visibility, and clear places for review. Otherwise increasing the number of workers only multiplies confusion.
 
@@ -43,7 +43,7 @@ In a serious coding workflow, state may include the current task plan, completed
 
 ## History is part of execution, not just debugging
 
-Once you start thinking in workflows rather than turns, history changes meaning, and a practical rule follows from the change: persist a structured record of what has happened, not a growing transcript of what was said. In chat systems, history is mostly there to help the next answer feel continuous. In durable systems, history is part of execution itself. It tells the runtime what has already happened, which steps can be retried safely, which approvals were granted, what state changed, and where the agent should resume — none of which a transcript, by itself, can represent.
+Once you start thinking in workflows rather than turns, history changes meaning. In chat systems, history is mostly there to help the next answer feel continuous. In durable systems, history is part of execution itself. It tells the runtime what has already happened, what can be retried safely, which approvals were granted, what state changed, and where the agent should resume.
 
 That is why durable-agent discussions keep converging on structured histories, checkpoints, and replayable event logs. Not because engineers enjoy complexity, but because long-running work creates obligations. If the system did something important, someone may later need to inspect it. If a run failed halfway through, the team may need to resume from a meaningful boundary rather than start from zero. If a result is contested, the organization may need to know what the system saw, which tools it used, and which step introduced the mistake.
 
@@ -59,7 +59,7 @@ Replay-oriented designs are attractive when causality and auditability matter. T
 
 Snapshot-oriented designs are attractive when fast continuation and complex live state matter more. They reduce the cost of resuming. They can feel more natural when the system’s working memory is elaborate, when rebuilding everything is awkward, or when pause-and-resume is expected to be frequent.
 
-This is less a taxonomy lesson than a decision with a rule inside it: reach for replay when causality and auditability are the point, so state emerges from recorded steps rather than opaque blobs; reach for snapshots when fast continuation and elaborate live state dominate, so pause and resume stay cheap. The existence of that tradeoff is what proves runtime semantics are not incidental details. Once agents operate over time, teams are making the kinds of decisions mature distributed systems always have to make: what gets persisted, what gets recomputed, what must be auditable, what can be resumed cheaply, and which failure modes are acceptable.
+The chapter does not need to turn this into a runtime taxonomy lesson. The point is simpler. The existence of this tradeoff proves that runtime semantics are not incidental details. Once agents operate over time, teams are making the kinds of decisions mature distributed systems always have to make: what gets persisted, what gets recomputed, what must be auditable, what can be resumed cheaply, and which failure modes are acceptable.
 
 ## The human control plane is an architectural layer
 
@@ -75,7 +75,7 @@ Maggie Appleton sharpens the same point from the collaboration angle. The missin
 
 ## Human control is not human micromanagement
 
-The phrase human-in-the-loop can accidentally trivialize the design problem. It can suggest a binary choice: either humans approve everything, or the system is autonomous. The more useful reality is a gradient of control, and it turns the design task into a placement question — not how to keep a human in every loop, but where to put the few checkpoints that carry the most judgment. Humans may stay out of the way for low-risk steps, review plans before expensive ones, approve external actions, inspect only exceptions, or intervene only when uncertainty spikes. Control can sit before, during, and after execution.
+The phrase human-in-the-loop can accidentally trivialize the design problem. It can suggest a binary choice: either humans approve everything, or the system is autonomous. But the more useful reality is a gradient of control. Humans may stay out of the way for low-risk steps, review plans before expensive ones, approve external actions, inspect only exceptions, or intervene only when uncertainty spikes. Control can sit before, during, and after execution.
 
 A well-designed control plane should reduce the need for constant rescue, not institutionalize it. The goal is not to make every system depend on manual babysitting. The goal is to create high-leverage checkpoints where human judgment matters most.
 
@@ -85,7 +85,7 @@ A coding factory, for example, might let subagents explore, search, summarize, d
 
 The High-Stakes Colleague case makes this point unavoidable. In legal, tax, compliance, healthcare, and similar workflows, the dream of unrestricted autonomy becomes less impressive the closer you get to real operational risk. The system is valuable not because it can do everything without supervision, but because it can do the right things with the right boundaries.
 
-Joel Hron offers the right antidote to autonomy maximalism, arguing that agency is best thought of as a spectrum — a set of dials adjusted by use case. That framing matters because it replaces the childish question — how autonomous can we make it? — with the adult one: where should autonomy be high, where should it be low, and who decides? That difference is foundational to trustworthy product design.
+Joel Hron offers the right antidote to autonomy maximalism: agency should be thought of as a spectrum, a set of dials adjusted by use case. That framing matters because it replaces the childish question — how autonomous can we make it? — with the adult one: where should autonomy be high, where should it be low, and who decides? That difference is foundational to trustworthy product design.
 
 The north star, as Hron puts it, has shifted “from helpfulness to productive.” But productive does not mean unsupervised. In high-stakes work, productivity often depends on carefully staged authority. The system may be allowed to gather evidence, route across tools, synthesize findings, and even validate parts of its own work. But certain boundaries remain deliberately human. An approval is not evidence that the system failed. It is evidence that the organization understands where risk actually lives.
 
@@ -95,7 +95,7 @@ This is another reason Chapter 6 should pair the Software Factory with the High-
 
 One of the most practical ideas in the High-Stakes Colleague material is that old systems are not just obstacles to agentic work. They often become runtime components of the new control plane.
 
-Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work — in the same firm that, in Chapter 5, learned to rank a matter note above a public explainer, provenance and validation now become tools the system itself calls. That is a powerful pattern because it shows how durable execution changes the role of traditional enterprise software. Systems that once only served human operators now become structured checkpoints, rule engines, and verification layers inside a machine-mediated workflow.
+Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work. That is a powerful pattern because it shows how durable execution changes the role of traditional enterprise software. Systems that once only served human operators now become structured checkpoints, rule engines, and verification layers inside a machine-mediated workflow.
 
 The chapter should linger on this because it helps demystify agent architecture. Not every trustworthy agent system is built from scratch as a magical new organism. Often it is assembled from older, more stable parts: permission systems, validators, databases, workflow engines, audit trails, search layers, review queues. The model is the volatile component. The rest of the runtime is what prevents volatility from becoming operational chaos.
 
