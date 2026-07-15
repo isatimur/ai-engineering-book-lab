@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 794
+Total videos: 859
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -796,3 +796,68 @@ Total videos: 794
 792. [We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco](https://www.youtube.com/watch?v=dRmWYHuIJxM) — `dRmWYHuIJxM` — 10:43
 793. [AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent](https://www.youtube.com/watch?v=Iwe_RY-fYgI) — `Iwe_RY-fYgI` — 19:00
 794. [Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs](https://www.youtube.com/watch?v=65X0pQ6Lmbg) — `65X0pQ6Lmbg` — 13:05
+795. [Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs](https://www.youtube.com/watch?v=vljxQZfJ9wY) — `vljxQZfJ9wY` — 8:12
+796. [Your Agent Failed in Prod. Good Luck Reproducing It. - Tisha Chawla & Susheem Koul, Microsoft](https://www.youtube.com/watch?v=Lc8zRh9muoY) — `Lc8zRh9muoY` — 14:10
+797. [Using RL Agent to Detect and Remediate ETL Pipeline Failures - Anna Marie Benzon](https://www.youtube.com/watch?v=LrGCT7G_rU8) — `LrGCT7G_rU8` — 14:41
+798. [The Prompt is the Platform - Dominik Tornow, Resonate HQ](https://www.youtube.com/watch?v=DqtmZE6Hl0g) — `DqtmZE6Hl0g` — 17:33
+799. [The Agentic AI Engineer - Benedikt Sanftl, Mutagent](https://www.youtube.com/watch?v=pSto5YaNGUo) — `pSto5YaNGUo` — 34:50
+800. [Deterministic Infra for Non-Deterministic AI Agents - Nishant Gupta, Meta Superintelligence Labs](https://www.youtube.com/watch?v=APh1Vx0oLmQ) — `APh1Vx0oLmQ` — 7:14
+801. [You Can't Prompt the Room: The Last Skill AI Won't Replace - Balázs Horváth, VisualLabs](https://www.youtube.com/watch?v=6bmM45jkMDY) — `6bmM45jkMDY` — 15:45
+802. [The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents](https://www.youtube.com/watch?v=spNAUEgq_A8) — `spNAUEgq_A8` — 30:38
+803. [Frontier results, on device - RL Nabors, Arize](https://www.youtube.com/watch?v=fWXJM-J0ZB8) — `fWXJM-J0ZB8` — 30:52
+804. [Building Great Agent Skills: The Missing Manual](https://www.youtube.com/watch?v=UNzCG3lw6O0) — `UNzCG3lw6O0` — 20:43
+805. [The Prompt Is Still a Punch Card - Ted Johnson, JoinIn AI](https://www.youtube.com/watch?v=hVJOnuhFmTA) — `hVJOnuhFmTA` — 20:13
+806. [Your AI Product Will Fail Unless You Can Explain It - Veronica Hylak, Hey AI](https://www.youtube.com/watch?v=d_Ftrl3vfV0) — `d_Ftrl3vfV0` — 6:02
+807. [MCP Apps: Primitives, discovery, and the Future of Software - Pietro Zullo, Manufact, Inc](https://www.youtube.com/watch?v=sAOBXCDiDOs) — `sAOBXCDiDOs` — 28:54
+808. [Continual Learning for AI Agents: From Failures to Durable Improvements - Soheil Feizi, RELAI](https://www.youtube.com/watch?v=2IxD9OB3XuQ) — `2IxD9OB3XuQ` — 22:35
+809. [The Missing Layer After Launch - Raphael Kalandadze, Wandero AI](https://www.youtube.com/watch?v=kZsf_Sfm7RU) — `kZsf_Sfm7RU` — 19:33
+810. [Field Guide to Fable — Thariq Shihipar, Anthropic](https://www.youtube.com/watch?v=9fubhllmsBU) — `9fubhllmsBU` — 19:28
+811. [SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale - Rishi Desai, Abundant AI](https://www.youtube.com/watch?v=Rx8f05JI_WA) — `Rx8f05JI_WA` — 12:58
+812. [500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic](https://www.youtube.com/watch?v=UcYoMg-8-L8) — `UcYoMg-8-L8` — 17:49
+813. [The Pipeline Is Dead - Iris ten Teije, Sky Valley Ambient Computing](https://www.youtube.com/watch?v=bRnoEpoK5m4) — `bRnoEpoK5m4` — 19:50
+814. [Respect The Process - Andrew Dumit, Watershed Technology Inc.](https://www.youtube.com/watch?v=CLttOU7n6sI) — `CLttOU7n6sI` — 16:43
+815. [Build AI Systems for Discernment, Not Approval - Angel Ortmann Lee, Duolingo](https://www.youtube.com/watch?v=CDqzWpwkSls) — `CDqzWpwkSls` — 25:53
+816. [What if the harness mattered more than the model? - Aditya Bhargava, Etsy](https://www.youtube.com/watch?v=2e9ANoOEn28) — `2e9ANoOEn28` — 32:04
+817. [How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI](https://www.youtube.com/watch?v=1IdzkRVmWAA) — `1IdzkRVmWAA` — 14:28
+818. [Beyond the Harness: A Journey Towards Adaptative Engineering - Rajiv Chandegra, Annicha Labs](https://www.youtube.com/watch?v=qdZzND79mcg) — `qdZzND79mcg` — 37:01
+819. [GTM Is You - Victoria Melnikova, Evil Martians](https://www.youtube.com/watch?v=G6IlDzj8OjA) — `G6IlDzj8OjA` — 12:35
+820. [Your LLM Deception Monitor Is Broken. The Fix Is in the Training Data - Sachin Kumar, LexisNexis](https://www.youtube.com/watch?v=IQkVMvXQKLY) — `IQkVMvXQKLY` — 13:58
+821. [I Run a Fleet of AI Agents Across Three Machines. Here's What Broke. - Kyle Jaejun Lee, KRAFTON](https://www.youtube.com/watch?v=4kYl2_mqmnQ) — `4kYl2_mqmnQ` — 9:11
+822. [Running a Chess YouTube Channel entirely by AI — Stephan Steinfurt, TNG](https://www.youtube.com/watch?v=BqZrTdgBaPw) — `BqZrTdgBaPw` — 16:31
+823. [Your coding agent doesn't always follow your rules — Talha Sheikh, Checkout.com](https://www.youtube.com/watch?v=MpZzWMdmQCE) — `MpZzWMdmQCE` — 10:08
+824. [Teaching Coding Agents to do Spreadsheets - Nuno Campos, Witan Labs](https://www.youtube.com/watch?v=HEFSExa0xl0) — `HEFSExa0xl0` — 19:09
+825. [Building an ACP-Compatible Agent Live — Bennet Fenner, Zed](https://www.youtube.com/watch?v=HsxQICTLF84) — `HsxQICTLF84` — 18:19
+826. [Your agent is blindfolded — Johan Lajili, Poolside AI](https://www.youtube.com/watch?v=iRcX54EO5g8) — `iRcX54EO5g8` — 9:58
+827. [Think You Can Build a Game with AI? Think Again! - Danielle An & David Hoe, Meta](https://www.youtube.com/watch?v=grdoOC1BT1s) — `grdoOC1BT1s` — 18:00
+828. [Everything we knew about software has changed — Theo Browne, @t3dotgg ​](https://www.youtube.com/watch?v=xUnRQ9vLXxo) — `xUnRQ9vLXxo` — 16:02
+829. [The Golden Age of AI Engineering — Alexander Embiricos & Romain Huet & Peter Steinberger, OpenAI](https://www.youtube.com/watch?v=pMggiOb18tc) — `pMggiOb18tc` — 25:13
+830. [Should AI Engineers Still Read Code in 2026? The Z/L Continuum — Alex Volkov, ThursdAI](https://www.youtube.com/watch?v=ZpK5PWX2YRM) — `ZpK5PWX2YRM` — 21:35
+831. [Understanding is the new bottleneck — Geoffrey Litt, Notion](https://www.youtube.com/watch?v=WkBPX-oDMnA) — `WkBPX-oDMnA` — 19:33
+832. [On AI and Knowledge — Pablo Castro, Distinguished Engineer & CVP for AI Knowledge, Microsoft](https://www.youtube.com/watch?v=RGSFUqzqErE) — `RGSFUqzqErE` — 
+833. [Design Patterns for AI Trust: Juries, Libraries, and Agent Tiers — Alex Bauer, Upside.tech](https://www.youtube.com/watch?v=YZQsWVeN3rE) — `YZQsWVeN3rE` — 17:09
+834. [Special Topics in Kernels, RL, Reward Hacking in Agents — Daniel Han, Unsloth](https://www.youtube.com/watch?v=uIiA6DquRiE) — `uIiA6DquRiE` — 
+835. [From Writing Code to Designing Systems: How the Developer Role is Changing — Chris Noring, Microsoft](https://www.youtube.com/watch?v=GdvKNwMcfd0) — `GdvKNwMcfd0` — 23:05
+836. [Develop at Idea Velocity - Jeffrey Lee-Chan, Snapchat](https://www.youtube.com/watch?v=9arM9b7JgOo) — `9arM9b7JgOo` — 15:28
+837. [Every Solo Agent Builder Eventually Reinvents a Worse Version of CI/CD - Sumaiya Shrabony](https://www.youtube.com/watch?v=WLXxTaPagA8) — `WLXxTaPagA8` — 10:51
+838. [State of the Union: Why Local, Why Now — NVIDIA, Osmantic, Roboflow, EXO Labs, @matthew_berman](https://www.youtube.com/watch?v=KB41dTlX1Uc) — `KB41dTlX1Uc` — 44:29
+839. [Chat and citations won't save your vertical AI - Atul Ramachandran, Filed Inc](https://www.youtube.com/watch?v=RGiXcVxSD3s) — `RGiXcVxSD3s` — 15:12
+840. [The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft](https://www.youtube.com/watch?v=jtzh-GBXBWc) — `jtzh-GBXBWc` — 9:58
+841. [Stop AI Agent Hallucinations: 5 Techniques + Production Patterns - Elizabeth Fuentes, AWS](https://www.youtube.com/watch?v=vJukHCIv7Ck) — `vJukHCIv7Ck` — 55:19
+842. [Claws Out: Securing and Building with OpenClaw - Nick Taylor, Pomerium](https://www.youtube.com/watch?v=xg1zNlzw7Jk) — `xg1zNlzw7Jk` — 17:12
+843. [What Does Done Even Mean? Agents and Paperclip's Liveness Model - Dotta, Paperclip](https://www.youtube.com/watch?v=7P0elyLIxXo) — `7P0elyLIxXo` — 7:14
+844. [remobi.app: Don't change your terminal workflow for mobile](https://www.youtube.com/watch?v=5192csoTkVo) — `5192csoTkVo` — 9:21
+845. [ReviewDebt: a practical framework for scoring every pull request — Sachin Gupta, Ebay](https://www.youtube.com/watch?v=TJPInBjhE4Q) — `TJPInBjhE4Q` — 25:00
+846. [A Song of Types and Agents - Roberto Stagi, Ratel](https://www.youtube.com/watch?v=UlFB6efYN5Q) — `UlFB6efYN5Q` — 14:16
+847. [The Agentic Web and the Bazaar Era of AI - Ramesh Raskar, MIT Media Lab](https://www.youtube.com/watch?v=sum9DgexFRQ) — `sum9DgexFRQ` — 12:11
+848. [Semantic Blindness: 500,000 Sensors Confused an LLM - Raahul Singh & Vanč Levstik, Phaidra](https://www.youtube.com/watch?v=EUsPvBeIx70) — `EUsPvBeIx70` — 16:25
+849. [The AI bugpocalypse is here. Now what? - Jack Cable, Corridor](https://www.youtube.com/watch?v=7JgIS42mz7U) — `7JgIS42mz7U` — 19:44
+850. [RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI](https://www.youtube.com/watch?v=8oyalrfwgjw) — `8oyalrfwgjw` — 17:27
+851. [Building Open Source Agentic Models — Will Brown, Prime Intellect](https://www.youtube.com/watch?v=V-EDrhIhHzQ) — `V-EDrhIhHzQ` — 46:52
+852. [From fork() to Fleet: Designing an Agent Sandbox Cloud — Abhishek Bhardwaj, OpenAI](https://www.youtube.com/watch?v=OqM67QG_Ikk) — `OqM67QG_Ikk` — 44:34
+853. [Stop Evaluating Models Like It's the 50s - Alejandro Vidal, Mindmakers](https://www.youtube.com/watch?v=O3FEoMYvUf8) — `O3FEoMYvUf8` — 23:35
+854. ["I've never seen anything scarier than an LLM with tool calls." — Erik Meijer aka @HeadinTheBox](https://www.youtube.com/watch?v=-CnA2lGfymY) — `-CnA2lGfymY` — 21:13
+855. [The Great Loops Debate — Dex Horthy, Geoff Huntley, Ian Livingstone, Greg Pstrucha, @insecure-agents](https://www.youtube.com/watch?v=c35YoMdnI78) — `c35YoMdnI78` — 
+856. ["The agent can choose, but people inherit the consequences." — Addy Osmani](https://www.youtube.com/watch?v=n97BCfyFIvw) — `n97BCfyFIvw` — 18:26
+857. [Forward Deployed Engineering at Cursor — Pauline Brunet](https://www.youtube.com/watch?v=APqXGyCoGW4) — `APqXGyCoGW4` — 20:47
+858. [Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind](https://www.youtube.com/watch?v=0vphxNt4wyk) — `0vphxNt4wyk` — 21:46
+859. [WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar](https://www.youtube.com/watch?v=8G_1-3IO4ZQ) — `8G_1-3IO4ZQ` — 20:54

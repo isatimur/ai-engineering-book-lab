@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 130
+- Total tagged videos: 138
 
 ## Cross-video synthesis
 
-- This theme appears across 130 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (20), Org Design & Leadership (18).
+- This theme appears across 138 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: RAG & Retrieval (22), Evals & Reliability (21), Org Design & Leadership (18).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
 ## Seed videos
@@ -142,6 +142,14 @@
 - [[678-OV56RddyFuU-self-training-agents-hermes-agent-hf-traces-skills-mcp-finetuning-merve-noyan-hugging-face|#678 — Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  — Merve Noyan, Hugging Face]]
 - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind]]
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
+- [[797-LrGCT7G_rU8-using-rl-agent-to-detect-and-remediate-etl-pipeline-failures-anna-marie-benzon|#797 — Using RL Agent to Detect and Remediate ETL Pipeline Failures - Anna Marie Benzon]]
+- [[803-fWXJM-J0ZB8-frontier-results-on-device-rl-nabors-arize|#803 — Frontier results, on device - RL Nabors, Arize]]
+- [[816-2e9ANoOEn28-what-if-the-harness-mattered-more-than-the-model-aditya-bhargava-etsy|#816 — What if the harness mattered more than the model? - Aditya Bhargava, Etsy]]
+- [[834-uIiA6DquRiE-special-topics-in-kernels-rl-reward-hacking-in-agents-daniel-han-unsloth|#834 — Special Topics in Kernels, RL, Reward Hacking in Agents — Daniel Han, Unsloth]]
+- [[843-7P0elyLIxXo-what-does-done-even-mean-agents-and-paperclip-s-liveness-model-dotta-paperclip|#843 — What Does Done Even Mean? Agents and Paperclip's Liveness Model - Dotta, Paperclip]]
+- [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
+- [[851-V-EDrhIhHzQ-building-open-source-agentic-models-will-brown-prime-intellect|#851 — Building Open Source Agentic Models — Will Brown, Prime Intellect]]
+- [[853-O3FEoMYvUf8-stop-evaluating-models-like-it-s-the-50s-alejandro-vidal-mindmakers|#853 — Stop Evaluating Models Like It's the 50s - Alejandro Vidal, Mindmakers]]
 
 ## Notes
 
