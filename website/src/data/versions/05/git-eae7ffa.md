@@ -19,13 +19,9 @@ That distinction sounds obvious once stated, but teams violate it constantly. Th
 
 Jack Morris offers the cleanest line in the source corpus: “Stuffing context is not memory.” It is a sharp sentence because it attacks the lazy default directly. Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
 
-Nupur Sharma’s Qodo work gives the mechanism behind it. Models privilege the start and end of the window and degrade in the middle, so a longer prompt does not buy more attention; it buys a wider blind spot. Her detection cue is concrete: when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly — summarization, graphs, iterative retrieval — not a bigger window.
-
 Daniel Chalef makes a related point from the memory side. Teams often use retrieval as a universal substitute for state, history, and durable understanding. But memory across time, archival knowledge, and the active context surface are not the same layer. An agent may need all three, yet each has different update rules, different freshness requirements, and different failure modes.
 
 The practical unit of context engineering is not the total corpus but the active working set. The question is not, “What can the model access in principle?” The question is, “What should the model be looking at right now to do this job well?” That is a much stricter engineering problem.
-
-Kuba Rogut puts the sizing rule in one line, relaying Jeff Dean: you do not need a trillion tokens at once, you need the right million. The number worth instrumenting is not how big the index is but how little of it the answer needed.
 
 ## Context is selection, shaping, and timing
 
@@ -81,8 +77,6 @@ Once those layers are explicit, the system can behave less like a desperate sear
 
 That image is useful because it makes the design standard obvious. A strong professional does not walk into a meeting carrying every file the firm has ever touched. They carry the current binder, the active notes, a few precedents, and a clear sense of what counts as governing authority. Context systems should aspire to the same selectivity.
 
-Chau Tran’s Glean work makes that selectivity operational. Much of it is filtering on signals the corpus already carries — the user’s permission scope, the freshness of the source, the document’s role in the organization — applied before the reranker, so material the task should never see never reaches the window. Rank on raw embedding similarity alone and the system will happily surface a deprecated wiki page that reads almost exactly like the current one.
-
 ## Graphs matter when evidence must be assembled, not merely fetched
 
 There is a predictable cycle in AI infrastructure where one technique gets overhyped, then mocked, then quietly absorbed into mature practice. GraphRAG is in some danger of following that path.
@@ -103,8 +97,6 @@ Hierarchical memory is a better mental model. Some things belong in immediate wo
 
 This matters because every piece of carried-forward context has a cost. It occupies tokens. It competes for attention. It increases the chance that stale, irrelevant, or misleading information will quietly shape the next step. Bigger windows reduce one kind of pressure, but they do not remove the need for disciplined selection.
 
-Most of that budget hides in the input. Rajkumar Sakthivel’s team at Tesco states the decomposition bluntly: “90% of your AI cost is input. Files, search results, context you send in. Only 10% is output.” It inverts the usual instinct to reach first for a cheaper model: the model may be 30 percent of the cost, and what you feed it the other 70. Indexing a codebase and retrieving only the relevant slices, instead of pasting whole files, cut their input tokens by a measured 94 percent.
-
 The software-factory case already hinted at this in Chapter 3. An agent working in a repo does not need the whole codebase in active view. It needs the right files, the relevant specs, and enough execution history to avoid losing the thread. Chapter 4 sharpened the same point from the measurement side: the system must preserve the right failures and slices. Chapter 5 extends the logic. Good context architecture means knowing what to keep live, what to summarize, what to index, and what to leave out. That restraint is not weakness but design maturity.
 
 ## MCP turns context into a capability-management problem
@@ -114,8 +106,6 @@ The rise of tool protocols such as MCP exposes a newer version of the same issue
 Matt Carey’s phrase “mega context problem” lands because it names the trap precisely. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
 
 Sam Morrow’s lessons from GitHub’s remote MCP server push the point from diagnosis into operating practice. Progressive discovery, grouping, intent-aware exposure, and ruthless context reduction are not polish. They are core product decisions. The model should not receive a phone book of capabilities when what it needs is a small, discoverable menu relevant to the current task.
-
-GitHub’s own numbers make the practice concrete. When community contributions pushed that server past a hundred tools, the agents got measurably worse. The first fixes were elegant opt-in machinery: tool sets and dynamic discovery. Almost no one used them, because most users never touch the JSON config — the load-bearing lesson being any fix that depends on user configuration reaches a minority, so change the default instead. GitHub did, cutting the initial tool-load context by 49 percent. The number of tools the agent could call did not fall; the number it had to read did.
 
 This is one of the most important ways the context chapter connects back to the rest of the book. Tool access is not merely an integration story. It is part of the same infrastructure problem as retrieval, memory, and evidence assembly. The system has to decide what the model should see and what it should not.
 
@@ -134,8 +124,6 @@ Does it waste fewer tokens to get the same or better result?
 Does it make higher-stakes workflows feel more trustworthy rather than more theatrical?
 
 Chapter 5 belongs so closely next to Chapter 4. Evals tell you whether your context architecture is actually helping. Observability tells you where context assembly failed in production. The two disciplines are inseparable in practice. You do not know that your context system is good because the retrieval trace looks clever. You know it is good because the work improves.
-
-That inseparability implies a specific eval design: score retrieval and generation separately. Track whether the governing passage reached the assembled working set at all — a recall measure on the context layer — before scoring whether the model used it correctly. Score only the final answer and a context-assembly bug looks exactly like a model getting dumber — and a model upgrade gets wasted on a retrieval problem.
 
 This also explains why so many context debates are unproductive when they happen in the abstract. Teams argue about RAG, GraphRAG, memory, or tool selection as if these were ideological camps. In production, they are just means. The end is better delegated work.
 

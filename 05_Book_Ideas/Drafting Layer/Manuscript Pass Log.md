@@ -1,3 +1,15 @@
+## 2026-07-18 — June-branch recovery pass (all chapters)
+
+### What changed
+- **Recovered the late-June usefulness-lift work that the 2026-07-15 sync overwrote.** Those commits (`edit(quality): lift usefulness on chapters 2,3,5,10`, `tier-4/tier-5` lifts, `synth(quality): corpus-grounded beats`, `synth(corpus): verification-bottleneck`) lived only on `public/drafting/` and were erased when the Drafting Layer became canonical. This pass mined them from git (`90737a8~1`) and ported the operational content into the canonical manuscript, one editor per chapter.
+- ~55 beats ported: practitioner-attributed quotes (verbatim, with venue), named decision rules, detection cues, and anchored thresholds — including the Sharma lost-middle cue (Ch 5), the Kramer P95 / Zeghidour 200 ms latency anchors (Ch 8), the Proser verification-bottleneck beat (Ch 9), trajectory-scoring and telemetry-audits beats (Ch 4), the four-control security baseline + MCP failure modes (Ch 7), tiered model routing and isolation-by-environment (Ch 6), fresh-container legibility test and validation-ratchet (Ch 3), comprehension-debt and production thresholds (Ch 2), loop-position test (Ch 1), Khattab/Hron closers (Ch 10).
+- Not ported (by rule): draft-note scaffolding, outlines, "What to do with this" checklists, forward previews, anything duplicating current-lineage improvements. All scars/scenes/thinning preserved; no "That is why"/"In other words" reintroduced (8 / 2 counts unchanged).
+- Word count 27,422 → 31,186 (+13.7%). Synced to public layers; regenerated read/llms/sitemap.
+
+### Known follow-ups
+- Re-score with the frontier panel (kimi-k2 / qwen3-235b / glm-4.7) once run; audiobook now three passes stale.
+- Agents flagged the strongest cap-cut candidates for a future pass: Somal retry-in-runtime quote (Ch 6), Myshatyn best-practices-become-law beat (Ch 7), Bercovici KV-cache ordering rule (Ch 5), reviewer-flag spec heuristic (Ch 3).
+
 ## 2026-07-15 — Usefulness + cumulative-case pass (Editorial Review v2 Tier 1 #5–6, Tier 2 #7–9)
 
 ### What changed

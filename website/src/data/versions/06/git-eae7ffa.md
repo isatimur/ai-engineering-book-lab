@@ -81,8 +81,6 @@ A well-designed control plane should reduce the need for constant rescue, not in
 
 A coding factory, for example, might let subagents explore, search, summarize, draft, and run validations autonomously, while reserving merge decisions, large architectural changes, or dependency additions for review. A high-stakes professional workflow might allow autonomous evidence gathering and draft assembly, while requiring expert sign-off before client-facing output or consequential recommendations. In both cases, the right design question is not “How do we keep the human involved everywhere?” It is “Where is the human most valuable?” That is a control-plane question, not a prompt question.
 
-Attention is not the only scarce resource the control plane rations. Compute is the other: match the cost of the response to the difficulty of the request rather than paying frontier prices per step. Laurie Voss at Arize states it almost prescriptively — use “cheap models for simple queries and expensive models in your agent ... for complex queries” — and Harrison Chase at LangChain describes a router whose job is to “route between ... language models.” The platforms expose the same trade as service tiers; Guillaume Vernade at Google DeepMind describes a flex tier that gives “a 50% discount but your request can be ... delayed.” Which model runs a given step is a control-plane decision, not a global default chosen once. Routing adds its own failure surface, though — a misroute hands a hard task to a cheap model that quietly botches it — so aggressive routing is safe only behind the verification the control plane already runs. Route down to the cheapest model that still passes the eval, and no cheaper.
-
 ## High-stakes systems tune agency instead of maximizing it
 
 The High-Stakes Colleague case makes this point unavoidable. In legal, tax, compliance, healthcare, and similar workflows, the dream of unrestricted autonomy becomes less impressive the closer you get to real operational risk. The system is valuable not because it can do everything without supervision, but because it can do the right things with the right boundaries.
@@ -123,13 +121,7 @@ But subagents do not solve the control problem. They intensify it.
 
 More workers mean more intermediate artifacts, more opportunities for duplicated effort, more state to coordinate, and more need for roll-up visibility. Parallelism without recomposition is just chaos at higher speed. The key design challenge is not how to spawn more workers but how to merge, compare, inspect, and route their outputs so that the human remains oriented.
 
-Independence also has to be enforced by the environment, not merely declared in the task split. Several agents pointed at one shared dev setup collide on the same branch, ports, and database — one agent's migration breaks the others mid-run — so each worker needs its own isolated, ephemeral environment. Maggie Appleton at GitHub gives each session one “backed by a micro VM ... a sandboxed computer in the cloud on its own Git branch,” which is what lets a developer “work on parallel tasks and instantly switch between them.” And the obvious primitive is the wrong one: Rene Brandel at Casco warns that “if you just use containers ... that's not an isolation layer,” because agent code can get root and move laterally. A git worktree suffices for trusted edits; untrusted, side-effecting agent work wants a VM.
-
-Lou Bichard at Ona sharpens the diagnosis to a single missing piece. The runtime, he argues, is solved — “there are many options for this now, sandboxes and containers” — and so are triggers and orchestration. “The thing that's missing,” he says, “is coordination”: the agent-native primitive that lets parallel workers pick up tasks, signal completion, and hand off without a human stitching them together. He is pointed about what is not that primitive: “GitHub is not a coordination layer for agents — it gets incredibly overwhelming.” His candidate building blocks are this chapter's subject — “state machines, by building out workflows.”
-
 This is why the best visions of multi-agent work keep converging on planning boards, supervisor views, task decomposition layers, and explicit review queues. They are not administrative extras but the infrastructure that lets parallelism produce leverage rather than entropy.
-
-The teams shipping production multi-agent systems have not agreed on an answer; each has substituted a known mechanism for the missing one. Factory runs features serially with one active writer — “serial execution with targeted internal parallelization” — eliminating the coordination problem by construction, and reports a longest mission of sixteen days. Anthropic's long-running agents take a planner-generator-evaluator path where each role gets “its own kind of context window” and the agents “negotiate what done actually means” through a contract written to files on disk before any code is produced. Serial execution, file-based contracts, state machines plus durable execution: three substitutes for one primitive that does not yet exist.
 
 The Software Factory shows the coding version of this. The High-Stakes Colleague shows the professional-services version. In both, the real question is the same: when many machine workers are active, where does coherent human judgment re-enter the system? That place is the control plane.
 
@@ -148,7 +140,3 @@ Chapter 6 adds that none of this is enough if the work cannot persist, recover, 
 A machine colleague is not just a model with tools. It is a model inside an operating environment.
 
 And the better that operating environment gets, the less the future of AI engineering looks like chat and the more it looks like building dependable systems for shared human-and-machine work.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/06-runtimes_

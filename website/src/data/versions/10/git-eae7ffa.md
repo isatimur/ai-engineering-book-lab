@@ -17,7 +17,7 @@ It is easy to confuse the most visible part of a system with the most stable par
 
 The earlier chapters kept returning to that lesson from different angles. A coding agent does not become trustworthy because its diff view looks polished. A high-stakes professional assistant does not become trustworthy because its prose sounds composed. A realtime voice system does not become trustworthy because its speech sounds natural. In each case, the visible surface is downstream of the same deeper question: what has to be true around the model for delegated work to deserve trust? That question survives interface churn.
 
-The field may stop talking about copilots and start talking about coworkers, swarms, environments, or something even more inflated. It does not matter much. Whatever the label, the work still has to be framed, situated, checked, bounded, and supervised. Omar Khattab, describing systems he had built across years of model turnover — DSPy among them — noted that they “fundamentally stayed the same over the years,” from text-davinci-002 up to o4-mini, even as the models underneath were swapped out entirely. The model was the part that turned over. The structure was the part that stayed.
+The field may stop talking about copilots and start talking about coworkers, swarms, environments, or something even more inflated. It does not matter much. Whatever the label, the work still has to be framed, situated, checked, bounded, and supervised.
 
 ## Cheap generation does not remove the need for standards; it raises the price of their absence
 
@@ -51,7 +51,7 @@ The most useful systems in this book were rarely the ones with the least human i
 
 The software factory worked when agents could draft, test, search, and decompose work inside a strong harness — the harness whose eval slices finally caught the throttle that once stalled an admin path. The high-stakes colleague worked when the system could retrieve, synthesize, validate, and draft while expert review remained focused on the consequential edges. The realtime voice scenario worked when the agent could acknowledge, clarify, act within bounds, and escalate gracefully rather than bluff past uncertainty.
 
-That is the durable principle: autonomy is not a trophy but a variable to tune — what Joel Hron called treating agency as a dial, turned up where the work is reversible and recoverable, turned down where a wrong move costs something you cannot get back. The right system is not the one that removes humans most completely but the one that places human attention where it creates the most value and machine execution where structure makes it safe.
+That is the durable principle: autonomy is not a trophy but a variable to tune. The right system is not the one that removes humans most completely but the one that places human attention where it creates the most value and machine execution where structure makes it safe.
 
 ## The organization is part of the product
 

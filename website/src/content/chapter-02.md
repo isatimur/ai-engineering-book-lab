@@ -35,7 +35,7 @@ The word taste can sound soft, almost decorative, as if it refers only to style 
 
 Taste is the ability to notice the difference between output that merely works and output that fits. What that ability comes down to, in practice, is a recognizable set of tells: a patch that is technically correct but shaped wrong for the system around it, a component boundary that is too clever, a naming choice that will confuse the next person, a generated paragraph that says the obvious thing in the most generic way possible, a workflow with one hidden step too many, a prototype convenience about to become permanent structure. None of these trip a test. Each is the moment where merely working and actually fitting come apart, and recognizing them on sight is what taste actually buys you.
 
-Tuomas Artman raises the right unsettling question — what happens when agents can do everything immediately for you.
+Tuomas Artman, reflecting with Gergely Orosz on craft at Linear, raises the right unsettling question: “What happens when agents are capable of doing everything immediately for you?”
 
 The obvious answer is speed.
 The more important answer is that speed changes what human excellence consists of.
@@ -46,9 +46,11 @@ AI does not simply remove toil and leave the rest of engineering unchanged. In m
 
 This is also why taste is inseparable from architecture. The strongest engineers are not just better at cleaning up generated output. They are better at shaping the conditions under which good output is likely to be produced in the first place.
 
+There is a second reason to read generated code closely. When you wrote every line, comprehension came free with authorship. A model breaks that bundle: it hands you working code you did not build and therefore do not yet understand, and that understanding now has to be paid for separately, after the fact. Reading the diff stops being a courtesy and becomes the load-bearing step — reading it like an author, reconstructing why each choice was made rather than confirming the lines parse, tracing one path the tests do not cover to ask whether the design would survive it.
+
 ## The friction is your judgment
 
-Armin Ronacher and Cristina Poncela Cubeiro offer one of the sharpest counterweights to the rhetoric of frictionless shipping. Their talk begins with the argument that we should add some friction back, not because speed is bad, but because some friction is actually judgment in disguise.
+Armin Ronacher and Cristina Poncela Cubeiro offer one of the sharpest counterweights to the rhetoric of frictionless shipping. Their talk, titled *The Friction Is Your Judgment*, begins with the argument that we should add some friction back, not because speed is bad, but because some friction is actually judgment in disguise.
 
 A lot of traditional software friction is waste. Slow builds, unclear ownership, handoffs nobody needs, cumbersome tooling, meetings that exist only because the system is poorly designed — none of that deserves romantic defense. AI can remove a lot of this, and good riddance.
 
@@ -64,6 +66,8 @@ Those moments are easy to misclassify as inefficiency, especially when generatio
 
 This is one of the deeper cultural adjustments AI engineering demands. Teams have to learn to separate needless friction from meaningful resistance. If they remove both at once, they often do not end up with a higher-performing system. They end up with a faster path to lower standards.
 
+There is a test for which is which. Cut the pause if removing it only costs keystrokes — boilerplate, glue, scaffolding the model can regenerate on demand. Keep the pause if removing it costs a decision: whether the architecture can carry this, whether the draft is right or merely plausible, whether the frame is correct before the model executes it. The first kind of friction is waste; the second is where the judgment lives, and the cost of skipping it now scales with how fast the model executes the wrong frame.
+
 The key phrase here is not “slow down.” It is “know what your pauses are for.”
 
 A good team does not defend friction because it likes pain. It defends the points in the process where judgment is doing real work.
@@ -76,11 +80,11 @@ That mode is not worthless. In fact, it can be brilliant.
 
 For exploration, interface sketching, rough prototypes, internal tooling, one-off automation, toy apps, or situations where learning by doing is more valuable than formal design, vibe coding can be the correct move. It can widen the top of the funnel. It can make experimentation cheap enough that more people discover what is actually worth building. It can give individuals a level of expressive power that used to require a small team.
 
-The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey J. Gallon describes the hangover well. The app works, until Monday comes and you need to change it. Then you realize you do not understand it, cannot maintain it, and may need to throw away most of what felt like miraculous progress.
+The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey Gallon at Rexmore calls this the vibe-coding hangover: the app works on Friday, and “then Monday rolls around, you want to add a feature, and you realize that you don't understand it, you can't maintain it, and you have to throw most or all of it away.”
 
 Vibe coding is not the enemy. Unexamined vibe coding is.
 
-A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly is blunt about it. AI code is still code, and vibes will not cut it. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
+A strong manuscript should avoid the lazy reaction of treating all AI-native building as unserious. That would miss the real shift. But it should also avoid the equal and opposite mistake of treating momentum as a substitute for engineering. Chris Kelly at Augment Code is blunt about it. AI code is still code, and vibes do not cut it in production — where production means four-nines uptime, thousands of users, and gigabytes of data, the moment a mistake is paid by people who never saw the prompt. It still has to live somewhere. It still interacts with systems, constraints, users, security boundaries, and future maintainers. The machine does not repeal software reality.
 
 So the right stance is not anti-vibe but mode-aware.
 
@@ -94,7 +98,7 @@ One of the most underrated effects of stronger generation tools is that they exp
 
 If a human engineer receives a vague task, progress may be slow enough that ambiguity reveals itself early. Questions emerge. Missing constraints become obvious. A meeting happens. The task gets reshaped before too much damage is done.
 
-A machine can take a badly framed prompt and sprint in the wrong direction with alarming competence. This makes problem framing more valuable, not less.
+A machine can take a badly framed prompt and sprint in the wrong direction with alarming competence. This makes problem framing more valuable, not less. Sean Grove at OpenAI puts the point directly: the new scarce skill is “writing specifications that fully capture the intent.”
 
 Framing a task well comes down to answering a specific set of questions before the work is delegated — a gate it has to clear, not a courtesy.
 
@@ -122,6 +126,8 @@ Review as quality discrimination.
 Review as the moment where the team asks whether the artifact is actually fit for purpose.
 Review as the place where tacit standards become visible.
 
+Chris Kelly at Augment Code puts it bluntly: “code review is by far the most important skill” — and one the industry under-trained, because it interviewed for solving leetcode puzzles rather than for reading someone else’s code and judging why it is good or bad. It is the skill agents now demand at volume, because every line they write is a line you did not, and therefore have to evaluate cold.
+
 This is where swyx’s “war on slop” is useful. Slop is not just bad code or generic writing. It is output that consumes trust faster than it creates value. It is work that looks done but transfers the cost downstream. It burdens the next person with confusion, cleanup, or false confidence. In a world of cheap generation, slop is not a side effect. It is the default failure mode.
 
 Anti-slop discipline is not elitism. It is economic realism.
@@ -136,7 +142,7 @@ The human reviewer is therefore not an obstacle to AI productivity. In a well-de
 
 One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are often what allow useful creativity to emerge.
 
-Itamar Friedman frames the problem through confidence, asking how teams can move fast while staying grounded in the codebase and its standards. The answer is not to remove constraints but to make the right ones explicit.
+Itamar Friedman at Qodo frames the problem through confidence — “vibe coding with confidence,” he calls it — asking how teams can move fast while staying grounded in the codebase and its standards. The confidence does not come from the vibes; it comes from the verification wrapped around them, high-quality tests and a reviewing pass on the generated diff before it merges. The answer is not to remove constraints but to make the right ones explicit.
 
 Constraints do several jobs at once.
 

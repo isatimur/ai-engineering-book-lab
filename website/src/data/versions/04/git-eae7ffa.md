@@ -43,13 +43,9 @@ The snippet era made certain shortcuts possible. You could ask whether the compl
 
 But once the task becomes a codebase change, a retrieval workflow, a multi-step customer-support resolution, or an hours-long planning loop, the evaluation target becomes more complicated. The system may make a series of locally sensible moves and still fail globally. It may retrieve relevant documents but rank them badly. It may edit the right files but leave the repo in a state that is hard to review. It may satisfy an obvious user request while violating a subtler business or safety constraint. When the unit of work changes, the unit of evaluation must change too.
 
-It also means grading the path, not only the destination. Two runs can land on the same diff while one took a safe route and the other quietly deleted a failing test to turn red green; a control system scores whether the agent reached the known-good end state and inspects how it got there, rather than only checking the final files against a golden patch.
-
 This is one reason Pesok’s title, “Evals Are Not Unit Tests,” matters so much. The point is not that software-testing instincts are irrelevant. It is that application-layer AI systems are not deterministic functions in the old sense. Pesok frames the problem at the right level: “This will be a focus on what do evals mean for your users, your apps and your data. The model’s now in the wild, out of the lab, and it needs to work for your use case.”
 
 Production evals are not only about model capability. They are about situated system behavior.
-
-Ara Khan, who works on evals at Cline, names the two ways teams get this wrong. One camp commits “classic benchmark maxing,” chasing a leaderboard number that, in his words, “won’t hold the test of actual real-world evidence.” The other swings entirely to taste and vibes. Neither is a control loop on its own: “there are right ways to use them, there are wrong ways to use them.” The working discipline is to keep both — a tracked aggregate score and a human-labeled slice that catches the cases the aggregate hides.
 
 ## Real-world tasks beat synthetic cleverness
 
@@ -57,7 +53,7 @@ Once teams accept that the old unit of evaluation is insufficient, they face a s
 
 The first temptation is synthetic cleverness: tasks invented because they are easy to generate, easy to score, or flattering to the system. The second is unscored realism: impressive examples that feel close to reality but cannot be graded consistently enough to support iteration. Good eval design has to balance both. The task should resemble actual work, and the scoring should be stable enough that teams can compare versions, prompts, tools, and models over time.
 
-Jain’s concrete example is instructive. Rather than inventing toy tasks, his team looks at real repositories: “We take a codebase... we crawl over all the commits... and we find the commits... related to performance optimization.” That is a different epistemology. Instead of asking what benchmark problem might approximate software engineering, the team mines the history of software engineering itself. The recipe is concrete enough to copy: revert one of those fixes, hand the agent the broken state, and score whether it gets back to the known-good commit.
+Jain’s concrete example is instructive. Rather than inventing toy tasks, his team looks at real repositories: “We take a codebase... we crawl over all the commits... and we find the commits... related to performance optimization.” That is a different epistemology. Instead of asking what benchmark problem might approximate software engineering, the team mines the history of software engineering itself.
 
 This matters beyond coding. In a support system, the right eval set may come from painful historical tickets. In a legal workflow, it may come from real review patterns that produced escalations. In a research tool, it may come from queries whose wrong answers were persuasive enough to mislead users. The strongest eval sets are often not imagined in a conference room. They are harvested from the places where the system or its human predecessors actually struggled.
 
@@ -89,8 +85,6 @@ The best line in the chapter may belong to Phil Hetzel: “Observability and eva
 
 Teams often imagine observability as the thing you do after deployment and evals as the thing you do before deployment. In reality, the two should feed each other continuously. Observability shows you what the system is actually doing in the wild. Evals let you replay, score, compare, and improve against those patterns before you ship the next change.
 
-Past a certain complexity this stops being optional. The Raindrop team describes crossing over “from a testing and eval paradigm to a monitoring paradigm,” because no fixed offline set can enumerate the edge cases a live agent will hit. What makes both halves work is the same artifact — the trace. As Arize’s Dat Ngo puts it, “code doesn’t audit agents or harnesses — it’s actually the telemetry that does that.” The practical move is to instrument every production run as a trace from the start, before you think you need it, because a trace you never captured is an eval case you can never recover.
-
 Production traces are not only for debugging incidents; they are raw material for the next generation of offline evaluation. A user conversation that exposed a prompt weakness can become a regression example. A failed coding task can become a benchmark slice. A costly retrieval miss can become a dataset item for future ranking experiments. An escalation to human review can become a labeled example of where the autonomy boundary was crossed badly.
 
 This creates the eval flywheel:
@@ -105,8 +99,6 @@ This creates the eval flywheel:
 Once you see the loop, Chapter 3’s harness story becomes more concrete. A harness without observability cannot learn. Observability without eval discipline cannot prioritize.
 
 This is also why Hetzel insists that “an eval platform is not just a test runner.” A runner executes checks. A real platform also stores datasets, versions scoring logic, supports comparisons, surfaces disagreements, and creates enough trust in results that teams will actually use them to make decisions. In mature AI engineering, the platform around evaluation becomes part of the product-development process itself.
-
-There is a newer reason the platform matters: once coding agents write code alongside people, they become readers of the eval suite too. Lawrence Jones at incident.io, who calls his evals “AI unit tests,” stores them as YAML checked in next to the prompt they grade — and learned the interface lesson the hard way. When his team wrapped the evals in richer browser UIs, both audiences fell away: humans lacked the time, and the “coding agents weren’t able to work with them.” The unlock was not a better dashboard but “a small CLI tool that we call eval tool,” because “file systems are exceptionally good agent context.” Pushed further, their “scrapbook” pipeline downloads each backtest investigation as a file tree and runs roughly twenty-five agents in parallel, one per investigation, returning a structured improvement report instead of a chart — and Jones is careful that “these patterns do generalize.” The portable test is blunt: could a coding agent, given only the interface you already have, find a failing eval, read the trace behind it, and add the regression case — or could only a human with the dashboard open do that?
 
 ## Evals are how teams externalize judgment
 
@@ -149,7 +141,3 @@ Not to tell you whether your model is impressive, but to tell you whether your s
 And this is the deeper continuity between the chapters so far. Chapter 3 argued that delegated work depends on a legible harness. Chapter 4 adds that a legible harness is still not enough. Once the machine can act, the surrounding system needs a way to notice drift, compare alternatives, preserve painful lessons, and keep quality from collapsing into anecdote.
 
 The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. Context is not merely input. It is infrastructure.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/04-evals_

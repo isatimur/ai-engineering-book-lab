@@ -17,6 +17,8 @@ Agentic systems weaken that comfort. An agent does not only receive a command. I
 
 The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance workflows, the system is not merely answering a question. It may gather evidence, traverse internal sources — the same retrieval binder it assembled in Chapter 5 — use the validation engines it gained in Chapter 6, draft conclusions, and surface a recommendation for human sign-off. The risk lives across the trajectory, not at one tool endpoint. A single misstep in that chain can leak the wrong document, overstate a conclusion, or cross a permission boundary that the human did not realize had been delegated. What Chapter 5 answered with provenance, security now answers with authority: who authorized that path?
 
+In high-stakes work the risky move is often not one bad answer. It is a system quietly crossing from assistance into authorization inside a competent-looking trajectory.
+
 The Software Factory exposes the same problem from another angle. A code agent with repository access is not dangerous only when it writes a bad patch — the quiet, special-path kind the admin-override regression of Chapter 4 already paid for. It is dangerous when it can quietly inspect secrets, mutate CI configuration, add a dependency, call external services, or keep iterating after a misleading instruction entered the loop. Once code execution enters the picture, the old fantasy that trust can be solved primarily at the prompt layer becomes hard to defend.
 
 This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it.
@@ -28,6 +30,8 @@ The clearest lesson from the code-execution material is a rule, not an observati
 If an agent can execute code, browse untrusted content, open files, or chain across tools, then the design must assume it can be induced into bad behavior. Maybe by a malicious instruction. Maybe by a poisoned page. Maybe by a bug in tool descriptions. Maybe by a simple misunderstanding. The source of failure matters less than the consequence.
 
 Sandboxing is therefore part of the product, not an implementation detail. A serious code-executing agent should run in a constrained environment. Filesystem access should be scoped. Network access should be explicit. Secrets should be minimized. Tool permissions should be narrow by default. Risky operations should require step-up approval rather than inheriting broad ambient authority. If the system needs to browse arbitrary inputs, those inputs should not sit on the same trust plane as production credentials.
+
+Fouad Matin's security guidance for coding agents at OpenAI names four controls as the default-on baseline, not hardening added after an incident: sandboxing, network restriction, privilege boundaries, and human review. Each bounds a different failure — a bad command, exfiltration, over-reach when the agent is wrong, and the trajectory the first three let through.
 
 This is an old security instinct, but agent systems give it new urgency. In classic software, code paths were written by developers and at least somewhat knowable in advance. In agentic software, the system is choosing among many possible paths at runtime. That makes deterministic boundaries even more valuable. The model may improvise, but the environment should fail closed.
 
@@ -45,6 +49,8 @@ A useless agent can be perfectly safe. The challenge is to make the system power
 
 A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction — scoping what the system can see based on existing credentials, filtering tool exposure by permission, using step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems.
 
+A scope that looks harmless in isolation can compound once it is paired with retrieval, reasoning, persistence, and retries. The sharper question for an agent is not only what the minimum access is, but minimum access for which stage of the workflow.
+
 The same logic is really a default-permission table, one row per agent. A research agent may not need write access at all. A support agent may need to read account metadata but not issue refunds. A legal workflow may need broad retrieval across documents but no authority to send anything externally. A scheduling agent may need access to calendars yet no permission to message third parties without confirmation.
 
 These choices do not merely protect the organization. They shape the behavior of the system itself. Narrower powers reduce the number of tempting but unsafe paths the model can wander into. A better security design often makes the system easier to reason about, not only safer.
@@ -61,6 +67,8 @@ But interoperability does not dissolve governance problems. It concentrates them
 
 Once many tools can be exposed through a common protocol, the main bottleneck moves upward. Teams no longer ask only, “Can we connect this service?” They start asking, “Should this be exposed at all? To which agents? Under which identities? With what logging, discovery rules, consent surfaces, and policy constraints?” The protocol solves the wiring problem and reveals the management problem.
 
+Tun Shwe at Lenses puts the production reality plainly: "Your insecure MCP server won't survive production." The failure modes are mundane and repeatable — authentication treated as a configuration option, tool descriptions trusted as input, servers exposed publicly because internal routing was the harder problem. A useful test: if adopting a protocol raises the number of capabilities your agents can reach faster than your team can answer who can call this, with what scope, and where it is logged, standardization has expanded the attack surface.
+
 The enterprise MCP discussions keep the book from confusing integration ease with production readiness. The easier it becomes to connect tools, the more pressure builds for curation, grouping, authorization, visibility, and roots of trust. The system needs to know not only what exists, but what is blessed, what is risky, what is scoped to a team, and what requires escalation.
 
 This also connects back to Chapter 5. Context overload and capability overload are cousins. A model flooded with too many possible tools is not only inefficient. It is harder to govern. Progressive discovery, capability grouping, and mediated exposure help both cognition and security at once.
@@ -72,6 +80,8 @@ A mature tool ecosystem therefore does not eliminate chokepoints. It creates bet
 Developers often prefer directness. Connect the agent to the tool. Let the model call the thing. Keep the stack simple. Organizations with real risk tend to rediscover a different preference: mediated access.
 
 Whether it is called a gateway, a policy plane, an identity hub, or a root of trust, the pattern keeps returning for understandable reasons. A trusted mediation layer can centralize auth, narrow credential handling, standardize policy enforcement, capture logs, and provide one place to revoke or reshape access when the environment changes. It can also make security teams less allergic to agent adoption because they are not being asked to bless an uncontrolled mesh of direct tool connections.
+
+Karan Sampath at Anthropic names the requirement directly: security teams "need to establish a root of trust" at the platform, not at each individual tool. The shape that satisfies it reads as a checklist — a gateway, a policy plane, a registry of blessed servers reviewed before entry, a permissions model over identities and tools, and an audit log at the gateway layer. A missing one is the likeliest place for the boundary to fail first.
 
 This is not bureaucracy for its own sake. It is a response to what delegated machine work actually does inside institutions. Once many tools, many users, many teams, and many workflows are involved, local convenience stops being the only design goal. The organization needs consistent trust infrastructure.
 
@@ -85,6 +95,8 @@ Identity talk can sound abstract until you name what is actually at stake.
 
 The hard problem is not only authenticating the human user. It is safely carrying that user’s authority across multiple systems while preserving scope, duration, attribution, and revocation. The agent has to act on someone’s behalf without becoming an unbounded extension of their account.
 
+The most common shortcut makes the gap concrete: hand the agent a standing credential — a long-lived API key, or a personal access token borrowed from the operator. A standing credential is not a delegation. It is the agent inheriting the borrowed key’s whole authority, with no scope to revoke and no expiry that maps to the task.
+
 In plain language, the system must know four things.
 
 Who the human is.
@@ -95,6 +107,8 @@ How those powers can be withdrawn or narrowed.
 That is what makes delegated identity different from ordinary session management. A human being can interpret context, notice risk, and stop themselves. An agent can move faster and across more surfaces, but it is less inherently trustworthy. So the identity system has to carry more of the burden.
 
 This is why repeated ad hoc consent flows are not just annoying UX. They signal a deeper architectural gap. If every tool asks separately, the organization loses coherence. Users get habituated to clicking through permissions they do not fully understand. Security teams lose visibility into the aggregate authority the workflow has accumulated. The agent itself becomes a messy stack of partially granted powers rather than a cleanly governed delegated actor.
+
+Patrick Riley and Carlos Galan at Auth0 frame the fix: "we authorize agents, MCP servers" — the agent becomes a first-class principal with its own scopes, lifetime, and revocation path rather than riding on a human’s credential. Jared Hanson at Keycard argues the same shape: the right agent credential is a short-lived, scoped token bound to a session, a user, and a task. An agent authenticated as a blurry extension of a human is not delegated; it is impersonating.
 
 Cross-app access patterns and identity-provider mediation are attractive because they acknowledge that this sprawl will not scale. If agents are to become real workers inside enterprises, they need identities and authorization paths that are as manageable as those of human workers, while still being more bounded.
 
