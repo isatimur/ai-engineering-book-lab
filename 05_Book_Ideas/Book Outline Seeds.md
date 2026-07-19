@@ -13,7 +13,7 @@
 ## Supporting seed talks
 
 ### Agent Architecture
-- Corpus coverage: 215 talks
+- Corpus coverage: 222 talks
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
 - [[028-2czYyrTzILg-from-chaos-to-choreography-multi-agent-orchestration-patterns-that-actually-work-sandipan-|#28 — From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik]]
@@ -22,7 +22,7 @@
 - [[077-I8fs4omN1no-hard-won-lessons-from-building-effective-ai-coding-agents-nik-pash-cline|#77 — Hard Won Lessons from Building Effective AI Coding Agents – Nik Pash, Cline]]
 
 ### Coding Agents
-- Corpus coverage: 276 talks
+- Corpus coverage: 280 talks
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -31,7 +31,7 @@
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 
 ### Evals & Reliability
-- Corpus coverage: 252 talks
+- Corpus coverage: 253 talks
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]
 - [[025-c5-kx2bwoCk-running-llms-locally-practical-llm-performance-on-dgx-spark-mozhgan-kabiri-chimeh-nvidia|#25 — Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA]]
@@ -40,7 +40,7 @@
 - [[040-HY_JyxAZsiE-spec-driven-development-agentic-coding-at-faang-scale-and-quality-al-harris-amazon-kiro|#40 — Spec-Driven Development: Agentic Coding at FAANG Scale and Quality — Al Harris, Amazon Kiro]]
 
 ### General AI Engineering
-- Corpus coverage: 33 talks
+- Corpus coverage: 41 talks
 - [[092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals|#92 — Music from AIE Code Summit - Instrumentals]]
 - [[659-VhfAVA3BG2I-how-transformers-finally-ate-vision-isaac-robinson-roboflow|#659 — How Transformers Finally Ate Vision – Isaac Robinson, Roboflow]]
 - [[667-5YSJEP0HWzM-personalization-in-the-era-of-llms-shivam-verma-spotify|#667 — Personalization in the Era of LLMs - Shivam Verma, Spotify]]
@@ -58,7 +58,7 @@
 - [[034-U00AOI1eJUE-bending-a-public-mcp-server-without-breaking-it-nimrod-hauser-baz|#34 — Bending a Public MCP Server Without Breaking It — Nimrod Hauser, Baz]]
 
 ### Models & Inference
-- Corpus coverage: 138 talks
+- Corpus coverage: 140 talks
 - [[007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai|#7 — Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI]]
 - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind]]
 - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research]]
@@ -67,7 +67,7 @@
 - [[049-OGCG_QkCcZo-agi-the-path-forward-jason-warner-eiso-kant-poolside|#49 — AGI: The Path Forward – Jason Warner & Eiso Kant, Poolside]]
 
 ### Org Design & Leadership
-- Corpus coverage: 248 talks
+- Corpus coverage: 249 talks
 - [[002-4fntwuOoedA-the-end-of-apps-kitze-sizzy-co|#2 — The End of Apps — Kitze, Sizzy.co]]
 - [[003-XNtkiQJ49Ps-agents-need-more-than-a-chat-jacob-lauritzen-cto-legora|#3 — Agents need more than a chat - Jacob Lauritzen, CTO Legora]]
 - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer]]
@@ -76,7 +76,7 @@
 - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — The Friction is Your Judgment — Armin Ronacher & Cristina Poncela Cubeiro, Earendil]]
 
 ### RAG & Retrieval
-- Corpus coverage: 164 talks
+- Corpus coverage: 166 talks
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
 - [[008-mYSRn6PC1mc-full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard-paul-iusztin-sam|#8 — Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi]]

@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 252
+- Total tagged videos: 253
 
 ## Cross-video synthesis
 
-- This theme appears across 252 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 253 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (136), Agent Architecture (125), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI; #25 Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA.
 
@@ -264,6 +264,7 @@
 - [[817-1IdzkRVmWAA-how-we-taught-agents-to-use-good-retrieval-hanna-lichtenberg-mixedbread-ai|#817 — How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI]]
 - [[853-O3FEoMYvUf8-stop-evaluating-models-like-it-s-the-50s-alejandro-vidal-mindmakers|#853 — Stop Evaluating Models Like It's the 50s - Alejandro Vidal, Mindmakers]]
 - [[858-0vphxNt4wyk-don-t-ship-skills-without-evals-philipp-schmid-google-deepmind|#858 — Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind]]
+- [[860-3z2uT5aDx_Y-build-evals-that-actually-matter-nick-ung-lyft|#860 — Build Evals That Actually Matter - Nick Ung, Lyft]]
 
 ## Notes
 

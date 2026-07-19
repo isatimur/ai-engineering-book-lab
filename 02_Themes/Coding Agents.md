@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 276
+- Total tagged videos: 280
 
 ## Cross-video synthesis
 
-- This theme appears across 276 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (143), Evals & Reliability (136), Org Design & Leadership (40).
+- This theme appears across 280 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (144), Evals & Reliability (136), Org Design & Leadership (40).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -288,6 +288,10 @@
 - [[833-YZQsWVeN3rE-design-patterns-for-ai-trust-juries-libraries-and-agent-tiers-alex-bauer-upside-tech|#833 — Design Patterns for AI Trust: Juries, Libraries, and Agent Tiers — Alex Bauer, Upside.tech]]
 - [[836-9arM9b7JgOo-develop-at-idea-velocity-jeffrey-lee-chan-snapchat|#836 — Develop at Idea Velocity - Jeffrey Lee-Chan, Snapchat]]
 - [[857-APqXGyCoGW4-forward-deployed-engineering-at-cursor-pauline-brunet|#857 — Forward Deployed Engineering at Cursor — Pauline Brunet]]
+- [[866-q4Tr-DknG2M-the-model-trains-the-next-model-lee-robinson-cursor-spacexai|#866 — "The model trains the next model"  — Lee Robinson, Cursor, SpaceXAI]]
+- [[867-ZSQb5fzRFPw-computer-use-2-0-agents-just-got-multi-cursor-francesco-bonacci-cua|#867 — Computer-Use 2.0: Agents Just Got Multi-Cursor — Francesco Bonacci, Cua]]
+- [[872-1P1hJ36rxM0-software-engineering-is-not-about-writing-code-benoit-schillings-google-deepmind-vp-of-res|#872 — "Software engineering is not about writing code" — Benoit Schillings, Google DeepMind VP of Research]]
+- [[880-3ySF0I5iE_0-a-practitioner-s-guide-to-graphs-tim-ainge-good-collective|#880 — A Practitioner's Guide to Graphs - Tim Ainge, Good Collective]]
 
 ## Notes
 

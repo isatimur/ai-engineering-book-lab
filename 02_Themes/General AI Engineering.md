@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 33
+- Total tagged videos: 41
 
 ## Cross-video synthesis
 
-- This theme appears across 33 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 41 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Org Design & Leadership (4), Security & Guardrails (1).
 - Representative talks: #92 Music from AIE Code Summit - Instrumentals; #659 How Transformers Finally Ate Vision – Isaac Robinson, Roboflow; #667 Personalization in the Era of LLMs - Shivam Verma, Spotify.
 
@@ -45,6 +45,14 @@
 - [[848-EUsPvBeIx70-semantic-blindness-500-000-sensors-confused-an-llm-raahul-singh-van-levstik-phaidra|#848 — Semantic Blindness: 500,000 Sensors Confused an LLM - Raahul Singh & Vanč Levstik, Phaidra]]
 - [[849-7JgIS42mz7U-the-ai-bugpocalypse-is-here-now-what-jack-cable-corridor|#849 — The AI bugpocalypse is here. Now what? - Jack Cable, Corridor]]
 - [[854--CnA2lGfymY-i-ve-never-seen-anything-scarier-than-an-llm-with-tool-calls-erik-meijer-aka-headinthebox|#854 — "I've never seen anything scarier than an LLM with tool calls." — Erik Meijer aka @HeadinTheBox]]
+- [[863-lMCxVorb9wM-you-didn-t-ship-a-bug-you-just-wrote-it-for-a-human-ravi-madabhushi-scalekit|#863 — You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit]]
+- [[865-uU5Gv2h8-9g-claude-fable-claude-tag-and-anthropic-s-culture-cat-wu-thariq-shihipar-ft-simon-willison|#865 — Claude Fable, Claude Tag, and Anthropic's Culture — Cat Wu & Thariq Shihipar ft Simon Willison]]
+- [[869-Z2Erdirpudo-imagination-engineering-live-in-the-future-and-then-build-what-s-missing|#869 — Imagination Engineering: "Live in the future and then build what's missing."]]
+- [[870-eBUyTS7SzV4-the-new-physics-of-business-garry-tan-y-combinator|#870 — The New Physics of Business — Garry Tan, Y Combinator]]
+- [[871-9QebvrrY3KY-claude-for-long-horizon-tasks-lance-martin-anthropic|#871 — Claude for Long-Horizon Tasks — Lance Martin, Anthropic]]
+- [[877-Bck7ABCZRZI-stop-renting-your-cognitive-infrastructure-thiyagarajan-maruthavanan-kalmantic-labs|#877 — Stop Renting Your Cognitive Infrastructure - Thiyagarajan Maruthavanan, Kalmantic Labs]]
+- [[878-eAXxdtNlK04-stop-burning-tokens-why-self-improvement-needs-domain-expertise-first-annabell-sch-fer-lan|#878 — Stop Burning Tokens: Why self-improvement needs domain expertise first - Annabell Schäfer, Langfuse]]
+- [[879-L3RuP_q8Bwc-the-ux-of-ai-making-ai-powered-apps-your-users-don-t-hate-kathryn-grayson-nanz-progress-so|#879 — The UX of AI: Making AI-Powered Apps Your Users Don't Hate - Kathryn Grayson Nanz, Progress Software]]
 
 ## Notes
 
