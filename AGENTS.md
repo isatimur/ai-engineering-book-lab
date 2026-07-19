@@ -10,8 +10,9 @@ the book *From Copilot to Colleague*. The only runnable application is the
 ### Website (`website/`)
 
 - Node 22 is required (see `website/Dockerfile` and `.github/workflows/website-ci.yml`).
-- Use **npm** (canonical lockfile is `website/package-lock.json`); a stray
-  `bun.lock` also exists but is not used by CI/Docker/Vercel.
+- CI/Docker/Vercel use **npm** (`website/package-lock.json`). Local development
+  prefers **bun** (`bun.lock`) to save bandwidth — keep both lockfiles in sync
+  when adding dependencies.
 - Standard commands (run inside `website/`, already documented in
   `website/package.json` and `website/README.md`):
   - Dev server: `npm run dev` (serves on port 3000, host 0.0.0.0).
