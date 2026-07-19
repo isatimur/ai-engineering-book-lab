@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 215
+- Total tagged videos: 222
 
 ## Cross-video synthesis
 
-- This theme appears across 215 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (143), Evals & Reliability (125), MCP & Tooling (29).
+- This theme appears across 222 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (144), Evals & Reliability (125), MCP & Tooling (29).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon; #28 From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik.
 
 ## Seed videos
@@ -227,6 +227,13 @@
 - [[855-c35YoMdnI78-the-great-loops-debate-dex-horthy-geoff-huntley-ian-livingstone-greg-pstrucha-insecure-age|#855 — The Great Loops Debate — Dex Horthy, Geoff Huntley, Ian Livingstone, Greg Pstrucha, @insecure-agents]]
 - [[856-n97BCfyFIvw-the-agent-can-choose-but-people-inherit-the-consequences-addy-osmani|#856 — "The agent can choose, but people inherit the consequences." — Addy Osmani]]
 - [[859-8G_1-3IO4ZQ-wtf-is-the-context-layer-the-missing-infrastructure-for-production-agents-prukalpa-sankar|#859 — WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar]]
+- [[861-JJGbw4ggaFs-from-blind-spots-to-merged-prs-continuous-agentic-performance-optimization-may-walter-hud|#861 — From Blind Spots to Merged PRs: Continuous Agentic Performance Optimization - May Walter, Hud]]
+- [[864-VrpEyglYgeU-in-the-land-of-ai-agents-the-verifiers-are-king-tariq-shaukat-sonar|#864 — In the Land of AI Agents, the Verifiers Are King — Tariq Shaukat, Sonar]]
+- [[867-ZSQb5fzRFPw-computer-use-2-0-agents-just-got-multi-cursor-francesco-bonacci-cua|#867 — Computer-Use 2.0: Agents Just Got Multi-Cursor — Francesco Bonacci, Cua]]
+- [[873-bZISsg7H7DA-your-agents-need-a-save-button-hamza-tahir-zenml|#873 — Your Agents Need a Save Button - Hamza Tahir, ZenML]]
+- [[874-zU4EagB311U-agents-need-feature-flags-sachin-gupta|#874 — Agents Need Feature Flags - Sachin Gupta]]
+- [[875-Fu45geO3zX8-agents-need-receipts-not-more-tool-calls-armanas-povilionis-alithea-bio|#875 — Agents Need Receipts, Not More Tool Calls - Armanas Povilionis, Alithea Bio]]
+- [[881-XLEYtv3cMlw-autonomous-agents-for-scientific-tasks-sina-shahandeh-radicait|#881 — Autonomous Agents for Scientific Tasks - Sina Shahandeh, Radicait]]
 
 ## Notes
 

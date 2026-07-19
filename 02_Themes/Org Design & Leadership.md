@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 248
+- Total tagged videos: 249
 
 ## Cross-video synthesis
 
-- This theme appears across 248 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 249 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (19).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
@@ -260,6 +260,7 @@
 - [[840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft|#840 — The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft]]
 - [[841-vJukHCIv7Ck-stop-ai-agent-hallucinations-5-techniques-production-patterns-elizabeth-fuentes-aws|#841 — Stop AI Agent Hallucinations: 5 Techniques + Production Patterns - Elizabeth Fuentes, AWS]]
 - [[859-8G_1-3IO4ZQ-wtf-is-the-context-layer-the-missing-infrastructure-for-production-agents-prukalpa-sankar|#859 — WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar]]
+- [[876-yv6xovSsB1U-content-is-code-matt-palmer-conductor|#876 — Content Is Code - Matt Palmer, Conductor]]
 
 ## Notes
 

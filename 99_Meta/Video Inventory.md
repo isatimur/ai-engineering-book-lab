@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 859
+Total videos: 881
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -861,3 +861,25 @@ Total videos: 859
 857. [Forward Deployed Engineering at Cursor — Pauline Brunet](https://www.youtube.com/watch?v=APqXGyCoGW4) — `APqXGyCoGW4` — 20:47
 858. [Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind](https://www.youtube.com/watch?v=0vphxNt4wyk) — `0vphxNt4wyk` — 21:46
 859. [WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar](https://www.youtube.com/watch?v=8G_1-3IO4ZQ) — `8G_1-3IO4ZQ` — 20:54
+860. [Build Evals That Actually Matter - Nick Ung, Lyft](https://www.youtube.com/watch?v=3z2uT5aDx_Y) — `3z2uT5aDx_Y` — 
+861. [From Blind Spots to Merged PRs: Continuous Agentic Performance Optimization - May Walter, Hud](https://www.youtube.com/watch?v=JJGbw4ggaFs) — `JJGbw4ggaFs` — 
+862. [From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs](https://www.youtube.com/watch?v=-561cZmir5Q) — `-561cZmir5Q` — 
+863. [You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit](https://www.youtube.com/watch?v=lMCxVorb9wM) — `lMCxVorb9wM` — 
+864. [In the Land of AI Agents, the Verifiers Are King — Tariq Shaukat, Sonar](https://www.youtube.com/watch?v=VrpEyglYgeU) — `VrpEyglYgeU` — 
+865. [Claude Fable, Claude Tag, and Anthropic's Culture — Cat Wu & Thariq Shihipar ft Simon Willison](https://www.youtube.com/watch?v=uU5Gv2h8-9g) — `uU5Gv2h8-9g` — 51:30
+866. ["The model trains the next model"  — Lee Robinson, Cursor, SpaceXAI](https://www.youtube.com/watch?v=q4Tr-DknG2M) — `q4Tr-DknG2M` — 20:32
+867. [Computer-Use 2.0: Agents Just Got Multi-Cursor — Francesco Bonacci, Cua](https://www.youtube.com/watch?v=ZSQb5fzRFPw) — `ZSQb5fzRFPw` — 16:41
+868. [How Autoresearch is changing ML research — Zhengyao Jiang, Weco](https://www.youtube.com/watch?v=iCj_ATyThvc) — `iCj_ATyThvc` — 16:16
+869. [Imagination Engineering: "Live in the future and then build what's missing."](https://www.youtube.com/watch?v=Z2Erdirpudo) — `Z2Erdirpudo` — 16:04
+870. [The New Physics of Business — Garry Tan, Y Combinator](https://www.youtube.com/watch?v=eBUyTS7SzV4) — `eBUyTS7SzV4` — 21:08
+871. [Claude for Long-Horizon Tasks — Lance Martin, Anthropic](https://www.youtube.com/watch?v=9QebvrrY3KY) — `9QebvrrY3KY` — 
+872. ["Software engineering is not about writing code" — Benoit Schillings, Google DeepMind VP of Research](https://www.youtube.com/watch?v=1P1hJ36rxM0) — `1P1hJ36rxM0` — 20:26
+873. [Your Agents Need a Save Button - Hamza Tahir, ZenML](https://www.youtube.com/watch?v=bZISsg7H7DA) — `bZISsg7H7DA` — 17:07
+874. [Agents Need Feature Flags - Sachin Gupta](https://www.youtube.com/watch?v=zU4EagB311U) — `zU4EagB311U` — 19:17
+875. [Agents Need Receipts, Not More Tool Calls - Armanas Povilionis, Alithea Bio](https://www.youtube.com/watch?v=Fu45geO3zX8) — `Fu45geO3zX8` — 19:36
+876. [Content Is Code - Matt Palmer, Conductor](https://www.youtube.com/watch?v=yv6xovSsB1U) — `yv6xovSsB1U` — 10:53
+877. [Stop Renting Your Cognitive Infrastructure - Thiyagarajan Maruthavanan, Kalmantic Labs](https://www.youtube.com/watch?v=Bck7ABCZRZI) — `Bck7ABCZRZI` — 7:52
+878. [Stop Burning Tokens: Why self-improvement needs domain expertise first - Annabell Schäfer, Langfuse](https://www.youtube.com/watch?v=eAXxdtNlK04) — `eAXxdtNlK04` — 17:39
+879. [The UX of AI: Making AI-Powered Apps Your Users Don't Hate - Kathryn Grayson Nanz, Progress Software](https://www.youtube.com/watch?v=L3RuP_q8Bwc) — `L3RuP_q8Bwc` — 35:59
+880. [A Practitioner's Guide to Graphs - Tim Ainge, Good Collective](https://www.youtube.com/watch?v=3ySF0I5iE_0) — `3ySF0I5iE_0` — 14:18
+881. [Autonomous Agents for Scientific Tasks - Sina Shahandeh, Radicait](https://www.youtube.com/watch?v=XLEYtv3cMlw) — `XLEYtv3cMlw` — 19:23

@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 138
+- Total tagged videos: 140
 
 ## Cross-video synthesis
 
-- This theme appears across 138 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 140 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: RAG & Retrieval (22), Evals & Reliability (21), Org Design & Leadership (18).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
@@ -150,6 +150,8 @@
 - [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
 - [[851-V-EDrhIhHzQ-building-open-source-agentic-models-will-brown-prime-intellect|#851 — Building Open Source Agentic Models — Will Brown, Prime Intellect]]
 - [[853-O3FEoMYvUf8-stop-evaluating-models-like-it-s-the-50s-alejandro-vidal-mindmakers|#853 — Stop Evaluating Models Like It's the 50s - Alejandro Vidal, Mindmakers]]
+- [[862--561cZmir5Q-from-tokens-to-cells-foundation-models-for-single-cell-biology-akram-baharlouei-altos-labs|#862 — From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs]]
+- [[866-q4Tr-DknG2M-the-model-trains-the-next-model-lee-robinson-cursor-spacexai|#866 — "The model trains the next model"  — Lee Robinson, Cursor, SpaceXAI]]
 
 ## Notes
 

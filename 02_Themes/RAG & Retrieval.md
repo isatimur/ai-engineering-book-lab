@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 164
+- Total tagged videos: 166
 
 ## Cross-video synthesis
 
-- This theme appears across 164 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 166 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Org Design & Leadership (38), Models & Inference (22), Evals & Reliability (19).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
@@ -176,6 +176,8 @@
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
 - [[817-1IdzkRVmWAA-how-we-taught-agents-to-use-good-retrieval-hanna-lichtenberg-mixedbread-ai|#817 — How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI]]
 - [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
+- [[868-iCj_ATyThvc-how-autoresearch-is-changing-ml-research-zhengyao-jiang-weco|#868 — How Autoresearch is changing ML research — Zhengyao Jiang, Weco]]
+- [[872-1P1hJ36rxM0-software-engineering-is-not-about-writing-code-benoit-schillings-google-deepmind-vp-of-res|#872 — "Software engineering is not about writing code" — Benoit Schillings, Google DeepMind VP of Research]]
 
 ## Notes
 
