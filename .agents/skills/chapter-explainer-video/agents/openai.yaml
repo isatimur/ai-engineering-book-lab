@@ -1,0 +1,3 @@
+interface:
+  display_name: "Chapter Explainer Video"
+  short_description: "Render a chapter's explainer video + OG card"
