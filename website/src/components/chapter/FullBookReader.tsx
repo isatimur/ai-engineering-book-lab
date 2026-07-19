@@ -78,7 +78,15 @@ const ChapterOpener = ({ chapter }: { chapter: string }) => {
  * activeIndex: -1 means "no H2 passed yet" (show opener); 0+ means
  * "passed H2 #(activeIndex+1)" (show that inline figure).
  */
-const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: number }) => {
+const ChapterReaderItem = ({
+  chapter,
+  index,
+  textOnly,
+}: {
+  chapter: BookChapter;
+  index: number;
+  textOnly: boolean;
+}) => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const textRef = useRef<HTMLDivElement>(null);
@@ -132,27 +140,37 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
         index % 2 === 0 ? 'bg-[color-mix(in_srgb,var(--color-ink)_3%,var(--color-paper))]' : 'bg-[var(--color-paper)]'
       }`}
     >
-      <ChapterOpener chapter={chapter.number} />
+      {!textOnly && <ChapterOpener chapter={chapter.number} />}
 
-      <div className="section-container min-h-screen flex flex-col lg:flex-row relative">
-        {/* Left: sticky visual stage */}
-        <div className="lg:w-[42%] xl:w-[45%] relative lg:sticky lg:top-0 h-[46vh] lg:h-screen overflow-hidden border-[var(--color-border)] lg:border-r bg-[#1f1f20] z-0 order-1">
-          <DynamicVisuals
-            colorMarker={index % 3 === 0 ? '#EAC6C0' : index % 3 === 1 ? '#ffffff' : '#A4B8C4'}
-            type={index % 3 === 0 ? 'gradient' : index % 3 === 1 ? 'geometric' : 'particles'}
-          />
+      <div
+        className={`section-container flex flex-col lg:flex-row relative ${
+          textOnly ? 'reader-text-only-layout' : 'min-h-screen'
+        }`}
+      >
+        {/* Left: sticky visual stage — hidden in text-only mode */}
+        {!textOnly && (
+          <div className="lg:w-[42%] xl:w-[45%] relative lg:sticky lg:top-0 h-[46vh] lg:h-screen overflow-hidden border-[var(--color-border)] lg:border-r bg-[#1f1f20] z-0 order-1">
+            <DynamicVisuals
+              colorMarker={index % 3 === 0 ? '#EAC6C0' : index % 3 === 1 ? '#ffffff' : '#A4B8C4'}
+              type={index % 3 === 0 ? 'gradient' : index % 3 === 1 ? 'geometric' : 'particles'}
+            />
 
-          {/* Crossfading figure stack with own header / caption / progress */}
-          <ChapterStage chapter={chapter} activeIndex={activeIndex} />
+            {/* Crossfading figure stack with own header / caption / progress */}
+            <ChapterStage chapter={chapter} activeIndex={activeIndex} />
 
-          {/* Chapter number watermark */}
-          <h3 className="absolute z-0 text-white font-mono text-[11vw] lg:text-[10vw] font-bold tracking-tighter mix-blend-overlay rotate-90 right-0 origin-bottom-right translate-y-[50%] mr-10 opacity-10 pointer-events-none">
-            CH{chapter.number}
-          </h3>
-        </div>
+            {/* Chapter number watermark */}
+            <h3 className="absolute z-0 text-white font-mono text-[11vw] lg:text-[10vw] font-bold tracking-tighter mix-blend-overlay rotate-90 right-0 origin-bottom-right translate-y-[50%] mr-10 opacity-10 pointer-events-none">
+              CH{chapter.number}
+            </h3>
+          </div>
+        )}
 
         {/* Right: text column with H2 anchor points */}
-        <div className="w-full lg:w-[58%] xl:w-[55%] relative flex flex-col z-10 order-2">
+        <div
+          className={`relative flex flex-col z-10 order-2 ${
+            textOnly ? 'w-full max-w-3xl mx-auto reader-text-only-column' : 'w-full lg:w-[58%] xl:w-[55%]'
+          }`}
+        >
           <div className="p-8 md:p-12 lg:px-16 border-b border-[var(--color-border)] flex flex-col md:flex-row justify-between gap-6 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink)]">
             <div className="flex items-start gap-4">
               <span className="text-[14px] leading-none">▦</span>
@@ -170,7 +188,10 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
           <div className="px-8 md:px-12 lg:px-16 pt-4 pb-2">
             <RedThreadNav active="read" chapterNumber={chapter.number} compact />
           </div>
-          <div ref={textRef} className="p-8 md:p-12 lg:p-16 lg:px-20">
+          <div
+            ref={textRef}
+            className={`p-8 md:p-12 lg:p-16 lg:px-20 ${textOnly ? 'reader-text-only-prose px-5 sm:px-8' : ''}`}
+          >
             <ChapterArticle chapter={chapter} />
           </div>
         </div>
@@ -209,12 +230,16 @@ const ChapterReaderItem = ({ chapter, index }: { chapter: BookChapter; index: nu
   );
 };
 
-export const FullBookReader = () => {
+type FullBookReaderProps = {
+  textOnly?: boolean;
+};
+
+export const FullBookReader = ({ textOnly = false }: FullBookReaderProps) => {
   return (
     <LightboxProvider>
       <section className="w-full bg-[var(--color-paper)] relative pb-24 border-t border-[var(--color-border)] flex flex-col z-20">
         {chapters.map((chapter, index) => (
-          <ChapterReaderItem key={chapter.number} chapter={chapter} index={index} />
+          <ChapterReaderItem key={chapter.number} chapter={chapter} index={index} textOnly={textOnly} />
         ))}
         <div className="w-full max-w-3xl mx-auto px-6 md:px-12 pb-12">
           <AskAI variant="light" />

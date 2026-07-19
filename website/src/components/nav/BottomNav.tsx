@@ -8,6 +8,8 @@ type Props = {
   onToggleSidebar: () => void;
   isFocusMode?: boolean;
   onToggleFocusMode?: () => void;
+  textOnly?: boolean;
+  onToggleTextOnly?: () => void;
 };
 
 // Chapter whose section is currently nearest the top of the viewport — so pressing
@@ -70,7 +72,13 @@ const SpeedMenu = ({
   );
 };
 
-export const BottomNav = ({ onToggleSidebar, isFocusMode, onToggleFocusMode }: Props) => {
+export const BottomNav = ({
+  onToggleSidebar,
+  isFocusMode,
+  onToggleFocusMode,
+  textOnly,
+  onToggleTextOnly,
+}: Props) => {
   const { currentIndex, isPlaying, currentTime, duration, speed, speeds, toggle, seek, setSpeed } =
     useAudiobook();
   const barRef = useRef<HTMLDivElement>(null);
@@ -181,6 +189,17 @@ export const BottomNav = ({ onToggleSidebar, isFocusMode, onToggleFocusMode }: P
       </div>
 
       <div className="flex items-center gap-3 pointer-events-auto shrink-0">
+        {onToggleTextOnly && (
+          <button
+            onClick={onToggleTextOnly}
+            aria-pressed={textOnly}
+            aria-label={textOnly ? 'Show visual stage' : 'Focus on text only'}
+            className="hidden md:inline hover:text-[var(--color-ink-muted)] transition-colors whitespace-nowrap"
+            title="Toggle text-only reading mode"
+          >
+            {textOnly ? '[TEXT ONLY ✓]' : '[TEXT ONLY]'}
+          </button>
+        )}
         {onToggleFocusMode && (
           <button
             onClick={onToggleFocusMode}

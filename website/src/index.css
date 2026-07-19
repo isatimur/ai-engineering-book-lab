@@ -281,6 +281,33 @@ body {
   box-shadow: 0 1px 0 color-mix(in srgb, var(--color-pink) 35%, transparent);
 }
 
+/* Text-only reader — full-width prose, comfortable mobile line length */
+.reader-text-only-layout {
+  min-height: auto;
+}
+
+.reader-text-only-column {
+  padding-bottom: 0.5rem;
+}
+
+.reader-text-only-prose {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .reader-text-only-prose {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .reader-text-only-prose .book-reader-prose {
+    font-size: clamp(1.15rem, 4.2vw, 1.35rem);
+    line-height: 1.65;
+  }
+}
+
 @media print {
   .no-print {
     display: none !important;

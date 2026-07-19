@@ -25,6 +25,8 @@ import {
   saveLastChapter,
 } from '../lib/readingProgress';
 import { useSettings } from '../context/SettingsContext';
+import { useTextOnlyMode } from '../hooks/useTextOnlyMode';
+import { MobileReaderBar } from '../components/nav/MobileReaderBar';
 
 let _saveTimer: ReturnType<typeof setTimeout> | null = null;
 const debouncedSaveProgress = (p: number) => {
@@ -42,6 +44,8 @@ export const Reader = () => {
   const [isShareOpen, setIsShareOpen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [resumeProgress, setResumeProgress] = useState<number | null>(null);
+  const [activeChapterNumber, setActiveChapterNumber] = useState<string | undefined>(undefined);
+  const { textOnly, toggleTextOnly } = useTextOnlyMode();
 
   const toggleFocusMode = useCallback(() => setIsFocusMode((v) => !v), []);
   const articleRef = useRef<HTMLDivElement>(null);
@@ -157,7 +161,10 @@ export const Reader = () => {
         const rect = el.getBoundingClientRect();
         return rect.top <= window.innerHeight * 0.45 && rect.bottom > 0;
       });
-      if (idx >= 0) saveLastChapter(chapters[idx].number);
+      if (idx >= 0) {
+        saveLastChapter(chapters[idx].number);
+        setActiveChapterNumber(chapters[idx].number);
+      }
     };
     const onScroll = () => {
       cancelAnimationFrame(raf);
@@ -224,14 +231,21 @@ export const Reader = () => {
             )}
           </AnimatePresence>
           <div ref={articleRef}>
-            <FullBookReader />
+            <FullBookReader textOnly={textOnly} />
           </div>
         </main>
+        <MobileReaderBar
+          textOnly={textOnly}
+          onToggleTextOnly={toggleTextOnly}
+          chapterNumber={activeChapterNumber}
+        />
         <ActionMenu containerRef={articleRef} />
         <BottomNav
           onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
           isFocusMode={isFocusMode}
           onToggleFocusMode={toggleFocusMode}
+          textOnly={textOnly}
+          onToggleTextOnly={toggleTextOnly}
         />
         <GlossaryDrawer termId={glossaryTermId} onClose={() => setGlossaryTermId(null)} />
         <ShareModal isOpen={isShareOpen} onClose={() => setIsShareOpen(false)} />

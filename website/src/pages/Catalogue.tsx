@@ -130,15 +130,42 @@ export const Catalogue = () => {
           </div>
         </motion.div>
 
-        <p className="text-center font-serif italic text-white/60 text-sm mt-4">Hover to lift the cover · click to open</p>
+        <p className="text-center font-serif italic text-white/60 text-sm mt-4 hidden sm:block">
+          Hover to lift the cover · click to open
+        </p>
+        <p className="text-center font-serif italic text-white/60 text-sm mt-4 sm:hidden">
+          Tap the spine to open the book
+        </p>
 
         <a
           href="/experience/"
-          className="group mx-auto mt-2 flex items-center gap-3 font-mono text-[11px] uppercase tracking-widest text-white/50 hover:text-white transition-colors"
+          className="group mx-auto mt-2 hidden sm:flex items-center gap-3 font-mono text-[11px] uppercase tracking-widest text-white/50 hover:text-white transition-colors"
         >
           <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
           Or drift through the book as a solar system — the 3D Journey
           <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
+        </a>
+
+        <a
+          href="/experience/"
+          className="sm:hidden mx-auto mt-6 block w-full max-w-md border border-white/20 rounded-sm overflow-hidden bg-gradient-to-br from-[#0a0c14] to-[#1a1520] hover:border-white/40 transition-colors"
+        >
+          <div className="p-5 flex items-center gap-4">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 text-lg text-white/80">
+              ◇
+            </span>
+            <div className="text-left">
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/45 mb-1">
+                Immersive journey
+              </p>
+              <p className="font-serif text-lg text-white/90 leading-snug">
+                Fly through all 10 chapters in 3D
+              </p>
+            </div>
+            <span className="ml-auto font-mono text-white/40" aria-hidden>
+              →
+            </span>
+          </div>
         </a>
 
         <DefinitionBlock />

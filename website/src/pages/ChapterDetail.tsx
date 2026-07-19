@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import {
   chapters,
   chapterByParam,
@@ -21,6 +21,9 @@ import { JsonLd } from '../components/JsonLd';
 import { chapterJsonLd, breadcrumbJsonLd, chapterVideoJsonLd } from '../lib/structuredData';
 import { chapterVideoFor } from '../data/chapterVideos';
 import { ChapterExplainerVideo } from '../components/chapter/ChapterExplainerVideo';
+import { useTextOnlyMode } from '../hooks/useTextOnlyMode';
+import { MobileReaderBar } from '../components/nav/MobileReaderBar';
+import { MobileChapterChoice } from '../components/nav/MobileChapterChoice';
 
 const EvidenceExhibit = ({ chapter, title }: { chapter: string; title: string }) => {
   const op = opener(chapter);
@@ -59,6 +62,8 @@ export const ChapterDetail = () => {
   const { slug } = useParams();
   const chapter = slug ? chapterByParam(slug) : undefined;
   const [sourcesOpen, setSourcesOpen] = useState(false);
+  const { textOnly, toggleTextOnly, setTextOnlyMode } = useTextOnlyMode();
+  const articleRef = useRef<HTMLElement>(null);
   if (!chapter) return <NotFound />;
 
   const idx = chapters.indexOf(chapter);
@@ -66,6 +71,13 @@ export const ChapterDetail = () => {
   const next = idx < chapters.length - 1 ? chapters[idx + 1] : undefined;
   const op = opener(chapter.number);
   const video = chapterVideoFor(chapter.slug);
+
+  const startTextReading = () => {
+    setTextOnlyMode(true);
+    requestAnimationFrame(() => {
+      articleRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
 
   return (
     <LightboxProvider>
@@ -88,7 +100,17 @@ export const ChapterDetail = () => {
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/read" className="hover:text-[var(--color-ink)]">← All chapters</Link>
           <span>From Copilot to Colleague</span>
-          <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={toggleTextOnly}
+              aria-pressed={textOnly}
+              className="hidden md:inline hover:text-[var(--color-ink)] transition-colors"
+            >
+              {textOnly ? 'Text only ✓' : 'Focus text'}
+            </button>
+            <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
+          </div>
         </header>
 
         <div className="max-w-3xl mx-auto px-6 pt-12">
@@ -100,14 +122,22 @@ export const ChapterDetail = () => {
             Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
           </p>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
-          <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-4">{chapter.promise}</p>
+          <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
+          <MobileChapterChoice
+            chapterNumber={chapter.number}
+            onReadText={startTextReading}
+            className="mb-8"
+          />
         </div>
 
-        {video && <ChapterExplainerVideo video={video} />}
+        {!textOnly && video && <ChapterExplainerVideo video={video} />}
 
-        <EvidenceExhibit chapter={chapter.number} title={chapter.title} />
+        {!textOnly && <EvidenceExhibit chapter={chapter.number} title={chapter.title} />}
 
-        <article className="max-w-3xl mx-auto px-6 pt-16">
+        <article
+          ref={articleRef}
+          className={`max-w-3xl mx-auto px-6 pt-16 ${textOnly ? 'reader-text-only-prose px-5 sm:px-8' : ''}`}
+        >
           <ChapterArticle chapter={chapter} />
         </article>
 
@@ -141,6 +171,12 @@ export const ChapterDetail = () => {
             </Link>
           ) : <span />}
         </nav>
+
+        <MobileReaderBar
+          textOnly={textOnly}
+          onToggleTextOnly={toggleTextOnly}
+          chapterNumber={chapter.number}
+        />
       </div>
     </LightboxProvider>
   );
