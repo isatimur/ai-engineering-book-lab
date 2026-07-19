@@ -9,6 +9,7 @@
     "still:ch01": "remotion still Chapter01 out/chapter-01-the-shift.png",
     "render:ch02": "remotion render Chapter02 out/chapter-02-taste.mp4",
     "still:ch02": "remotion still Chapter02 out/chapter-02-taste.png",
+    "render:og": "node scripts/render-og-cards.mjs",
     "upgrade": "remotion upgrade"
   },
   "dependencies": {

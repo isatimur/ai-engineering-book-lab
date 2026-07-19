@@ -21,6 +21,12 @@ remotion/
 │   │   ├── Scenes.tsx       # one component per beat, sourced from chapter-01.md
 │   │   └── Chapter01.tsx    # <SeriesWithProgress scenes={[...]} /> — see the pattern
 │   └── chapter02/           # same shape, chapter 2's content
+│   └── ogcard/
+│       ├── OgCard.tsx       # 1200x630 branded social-preview card (legible at thumbnail size,
+│       │                     # unlike the dense whiteboard-style chapter diagrams)
+│       └── chapters.ts       # chapter number/title/promise, mirrored from website/src/data/bookChapters.ts
+├── scripts/
+│   └── render-og-cards.mjs  # renders all 10 OgCard stills in one pass
 ├── public/cover.png        # copied from website/public/covers/ — keep in sync manually
 └── out/                     # render output, gitignored (published cuts go to ../launch-assets/)
 ```
@@ -45,9 +51,16 @@ cd remotion
 npm install
 npm run render:ch01     # → out/chapter-01-the-shift.mp4 (1920x1080, 30fps, h264)
 npm run render:ch02     # → out/chapter-02-taste.mp4
+npm run render:og        # → out/og/chapter-01.png .. chapter-10.png (1200x630 og:image cards)
 npm run still:ch01       # → single PNG frame, for a quick sanity check
 npm run studio            # interactive Remotion Studio (scrub, preview, tweak)
 ```
+
+After `render:og`, copy the outputs to `../website/public/og/chapter-0N.png` — that's
+where `website/src/data/bookChapters.ts#ogCardPath` and `ChapterDetail.tsx` expect
+them. If a chapter title/promise changes in `website/src/data/bookChapters.ts`,
+update the mirrored copy in `src/ogcard/chapters.ts` (and `scripts/render-og-cards.mjs`)
+and re-render.
 
 This sandbox has `google-chrome-stable` preinstalled; `remotion.config.ts`
 points the renderer at it (`/usr/local/bin/google-chrome`) so no browser

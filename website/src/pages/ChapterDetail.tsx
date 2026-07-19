@@ -5,6 +5,7 @@ import {
   chapterByParam,
   chapterParam,
   chapterPath,
+  ogCardPath,
 } from '../data/bookChapters';
 import { opener } from '../lib/manifest';
 import { LightboxProvider, useLightbox } from '../lib/lightbox';
@@ -72,7 +73,7 @@ export const ChapterDetail = () => {
         title={`${chapter.title} — From Copilot to Colleague`}
         description={chapter.promise}
         path={chapterPath(chapter)}
-        image={video ? video.poster : op ? op.src : undefined}
+        image={video ? video.poster : ogCardPath(chapter)}
         type="article"
         video={video ? { url: video.src, width: video.width, height: video.height } : undefined}
       />
