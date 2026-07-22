@@ -40,8 +40,8 @@ const Header = () => {
           className="mb-8 border px-4 py-3 font-mono text-[10px] uppercase leading-relaxed tracking-[0.12em]"
           style={{ borderColor: labelColor('weak'), color: labelColor('weak') }}
         >
-          Partial run — some dimensions were rate-limited and not every paragraph was
-          scored. Shown numbers are computed from the paragraphs that were. Coverage:{' '}
+          Partial run — not every paragraph was scored, so some dimensions are
+          incomplete. Shown numbers are computed from the paragraphs that were. Coverage:{' '}
           {DIMS.map((d) => {
             const c = cov[d];
             return c && c.total ? `${DIM_LABELS[d]} ${c.scored}/${c.total}` : null;
