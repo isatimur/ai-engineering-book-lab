@@ -54,9 +54,9 @@ export const ChapterStage = ({ chapter, activeIndex }: Props) => {
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/55">
             AI Engineer Book  ·  Ch {chapter.number}
           </p>
-          <h2 className="mt-3 font-serif text-2xl lg:text-3xl italic leading-tight text-balance max-w-md">
+          <h1 className="mt-3 font-serif text-2xl lg:text-3xl italic leading-tight text-balance max-w-md">
             {chapter.title}
-          </h2>
+          </h1>
         </div>
 
         {/* Progress steps */}

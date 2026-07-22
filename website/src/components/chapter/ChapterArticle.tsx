@@ -10,10 +10,18 @@ import { useListenWords } from '../../context/ListenHighlightContext';
 export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
   const { listenChapter } = useListenWords();
   const listen = listenChapter === chapter.number;
-  const blocks = chapter.content
+  const rawBlocks = chapter.content
     .split(/\n{2,}/)
     .map((b) => b.trim())
     .filter(Boolean);
+  // The chapter title is already the chapter's <h1> in the sticky stage header,
+  // the opener diagram, and the metadata line above. Drop the manuscript's
+  // leading "# Chapter N — …" so it isn't repeated as a giant heading in the
+  // reading column (which rendered it awkwardly after the claims list).
+  const blocks =
+    rawBlocks[0]?.startsWith('# ') && !rawBlocks[0].startsWith('## ')
+      ? rawBlocks.slice(1)
+      : rawBlocks;
 
   const figs = inlineFigsForChapter(chapter.number);
   let headingFigureIndex = 0;
