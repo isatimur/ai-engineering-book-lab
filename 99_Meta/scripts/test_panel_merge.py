@@ -256,5 +256,56 @@ class TestEndToEndOnDisk(unittest.TestCase):
             self.assertEqual(bjs._label_for(None), pm._label_for(None))
 
 
+class TestAutoDetectOrdering(unittest.TestCase):
+    """Regression: run discovery must order by finished_at, not directory name,
+    and must never re-consume a merged panel output ('p' > '2' lexical bug)."""
+
+    def _write(self, runs_dir, name, *, finished_at, snap="sha256:SAME", panel=False):
+        d = runs_dir / name
+        d.mkdir(parents=True)
+        model = "panel-median:a+b+c" if panel else "openrouter:x/deepseek-chat"
+        (d / "scores.json").write_text(json.dumps(
+            {"scores": [_native("paragraph:c#L1-L1", "humanness", 80, model)]}
+        ))
+        run = {
+            "run_id": name,
+            "status": "completed",
+            "corpus_snapshot_hash": snap,
+            "finished_at": finished_at,
+        }
+        if panel:
+            run["panel"] = {"members": ["a", "b", "c"], "method": "median"}
+        (d / "run.json").write_text(json.dumps(run))
+
+    def test_newest_by_finished_at_and_panels_excluded(self):
+        with tempfile.TemporaryDirectory() as td:
+            runs_dir = Path(td) / ".book-mash-runs"
+            # panel-* sorts lexically ABOVE 2026-* but is OLDER and is a panel.
+            self._write(runs_dir, "panel-3model-v5", finished_at="2026-07-16T07:00:00+00:00", panel=True)
+            self._write(runs_dir, "2026-07-18-213054", finished_at="2026-07-18T21:30:00+00:00")
+            self._write(runs_dir, "2026-07-18-192841", finished_at="2026-07-18T19:28:00+00:00")
+
+            picked = pm.auto_detect_runs(runs_dir, 3)
+            names = [p.name for p in picked]
+            # panel output excluded entirely
+            self.assertNotIn("panel-3model-v5", names)
+            # newest real run (by finished_at) is first, not the lexical 'panel-*'
+            self.assertEqual(names[0], "2026-07-18-213054")
+            self.assertEqual(names, ["2026-07-18-213054", "2026-07-18-192841"])
+
+    def test_completed_runs_orders_by_finished_at(self):
+        try:
+            import build_judge_scores as bjs
+        except Exception as exc:  # pragma: no cover
+            self.skipTest(f"build_judge_scores import failed: {exc}")
+        with tempfile.TemporaryDirectory() as td:
+            runs_dir = Path(td) / ".book-mash-runs"
+            self._write(runs_dir, "panel-3model-v5", finished_at="2026-07-16T07:00:00+00:00", panel=True)
+            self._write(runs_dir, "2026-07-18-213054", finished_at="2026-07-18T21:30:00+00:00")
+            names = [p.name for p in bjs._completed_runs(runs_dir)]
+            # newest-first: the 2026-07-18 run precedes the lexically-higher panel dir
+            self.assertEqual(names[0], "2026-07-18-213054")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

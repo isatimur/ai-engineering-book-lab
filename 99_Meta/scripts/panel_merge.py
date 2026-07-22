@@ -129,25 +129,46 @@ def model_label(run: dict) -> str:
     return run.get("run_id", run.get("_run_dir_name", "unknown"))
 
 
+def _is_panel_run(run: dict) -> bool:
+    """True if this run is itself a merged panel output (has a `panel` block or
+    panel-median scores). Such runs must never be fed back into a merge — doing
+    so medians a median and double-weights whichever seats survived."""
+    if run.get("panel"):
+        return True
+    return any(
+        str(s.get("model", "")).startswith("panel-median:")
+        for s in run.get("scores", [])
+    )
+
+
 def auto_detect_runs(runs_dir: Path, want: int) -> list[Path]:
-    """The `want` most-recent completed run dirs sharing a single (the newest
-    run's) corpus_snapshot_hash. Returns dirs newest-first."""
-    candidates: list[tuple[str, Path, dict]] = []
+    """The `want` most-recent single-model completed run dirs sharing a single
+    (the newest run's) corpus_snapshot_hash. Returns dirs newest-first.
+
+    Ordering is by the run's `finished_at` timestamp, NOT directory name:
+    lexical ordering sorts `panel-*` dirs above every `2026-…` run ('p' > '2'),
+    which both mis-picked the newest run and let a panel be re-merged into a
+    panel. Panel-output dirs are excluded outright.
+    """
+    candidates: list[tuple[str, str, Path, dict]] = []
     if not runs_dir.exists():
         return []
-    for p in sorted(runs_dir.iterdir(), reverse=True):
+    for p in runs_dir.iterdir():
         if not (p.is_dir() and (p / "scores.json").exists() and (p / "run.json").exists()):
             continue
         try:
             run = json.loads((p / "run.json").read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        if run.get("status") == "completed":
-            candidates.append((run.get("corpus_snapshot_hash", ""), p, run))
+        if run.get("status") != "completed" or _is_panel_run(run):
+            continue
+        # sort key: finished_at, then dir name as a stable tiebreak
+        candidates.append((run.get("finished_at") or "", p.name, p, run))
     if not candidates:
         return []
-    target_hash = candidates[0][0]  # newest completed run's snapshot
-    same = [p for (h, p, _r) in candidates if h == target_hash]
+    candidates.sort(key=lambda t: (t[0], t[1]), reverse=True)  # newest-first
+    target_hash = candidates[0][3].get("corpus_snapshot_hash", "")
+    same = [p for (_f, _n, p, r) in candidates if r.get("corpus_snapshot_hash", "") == target_hash]
     return same[:want]
 
 

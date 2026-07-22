@@ -132,16 +132,20 @@ def _head_sha() -> str | None:
 
 
 def _completed_runs(runs_dir: Path) -> list[Path]:
-    """All run dirs with a completed status, newest-first (lexical recency).
+    """All run dirs with a completed status, newest-first by `finished_at`.
 
     Used by the cross-run merge: each chapter takes its newest *actual*
     measurement, so warm runs (which only re-judge changed chapters) still
     yield a complete canonical by carrying older chapters forward.
+
+    Ordering is by the run's `finished_at` timestamp, NOT directory name —
+    lexical ordering sorted `panel-*` dirs above every `2026-…` run ('p' > '2'),
+    so the "newest" run was mis-identified.
     """
     if not runs_dir.exists():
         return []
-    out: list[Path] = []
-    for p in sorted(runs_dir.iterdir(), reverse=True):
+    scored: list[tuple[str, str, Path]] = []
+    for p in runs_dir.iterdir():
         if not (p.is_dir() and (p / "scores.json").exists()):
             continue
         try:
@@ -149,8 +153,9 @@ def _completed_runs(runs_dir: Path) -> list[Path]:
         except (OSError, json.JSONDecodeError):
             continue
         if run.get("status") == "completed":
-            out.append(p)
-    return out
+            scored.append((run.get("finished_at") or "", p.name, p))
+    scored.sort(key=lambda t: (t[0], t[1]), reverse=True)  # newest-first
+    return [p for _f, _n, p in scored]
 
 
 def _label_for(score: float | None) -> str:
