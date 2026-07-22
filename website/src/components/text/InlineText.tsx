@@ -42,9 +42,10 @@ export const InlineText = ({ text, listen = false }: Props) => {
           if (s.kind === 'text') {
             return <ListenWordRun key={`${index}-${i}`} text={s.value} listen={listen} />;
           }
-          if (listen) {
-            return <ListenWordRun key={`${index}-${i}`} text={s.value} listen={listen} />;
-          }
+          // Keep the glossary affordance in Listen mode too: the button wraps a
+          // ListenWordRun so the term still gets its dotted underline AND per-word
+          // karaoke spans. (ListenWordRun renders plain text when listen=false, so
+          // non-listen rendering is unchanged.)
           return (
             <button
               key={`${index}-${i}`}
@@ -53,7 +54,7 @@ export const InlineText = ({ text, listen = false }: Props) => {
               onClick={() => open(s.termId)}
               aria-label={`Open glossary for ${s.value}`}
             >
-              {s.value}
+              <ListenWordRun text={s.value} listen={listen} />
             </button>
           );
         });
