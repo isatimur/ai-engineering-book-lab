@@ -89,7 +89,7 @@ jobs:
           ' /tmp/channel-report.json > /tmp/issue-body.md
           wc -l /tmp/issue-body.md
 
-      - name: Open issue when new videos detected
+      - name: Open or update tracking issue when new videos detected
         if: ${{ steps.dry.outputs.missing_count != '0' && steps.dry.outputs.missing_count != '' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -98,10 +98,33 @@ jobs:
           # Ensure labels exist so issue creation never fails on a missing label.
           gh label create ingest --color 1d76db --description "Channel ingest automation" --force
           gh label create automated --color ededed --description "Created by an automated workflow" --force
-          gh issue create \
-            --title "channel-watcher: ${MISSING_COUNT} new video(s) on AI Engineer channel" \
-            --body-file /tmp/issue-body.md \
-            --label "ingest,automated"
+
+          # Keep a single live tracking issue instead of opening a new one every run.
+          EXISTING=$(gh issue list --label ingest,automated --state open \
+            --search "channel-watcher in:title" --json number --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" \
+              --title "channel-watcher: ${MISSING_COUNT} new video(s) on AI Engineer channel" \
+              --body-file /tmp/issue-body.md
+            gh issue comment "$EXISTING" --body "Updated: backlog now at ${MISSING_COUNT} video(s)."
+          else
+            gh issue create \
+              --title "channel-watcher: ${MISSING_COUNT} new video(s) on AI Engineer channel" \
+              --body-file /tmp/issue-body.md \
+              --label "ingest,automated"
+          fi
+
+      - name: Close tracking issue when backlog is clear
+        if: ${{ steps.dry.outputs.missing_count == '0' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for n in $(gh issue list --label ingest,automated --state open \
+            --search "channel-watcher in:title" --json number --jq '.[].number'); do
+            gh issue comment "$n" --body "Backlog cleared — closing."
+            gh issue close "$n"
+          done
 
   ingest:
     needs: detect
