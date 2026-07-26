@@ -6,21 +6,22 @@ channel: "AI Engineer"
 url: "https://www.youtube.com/watch?v=1P1hJ36rxM0"
 duration: "20:26"
 duration_seconds: 1226
-view_count: 2100
-transcript_status: unavailable
-transcript_path: ""
+view_count: 9600
+transcript_status: auto_en_orig
+transcript_path: "99_Meta/transcripts/plain/1P1hJ36rxM0.txt"
 themes:
   - "Coding Agents"
-  - "RAG & Retrieval"
-ingested_at: 2026-07-19T00:07:49+00:00
+  - "Agent Architecture"
+  - "Evals & Reliability"
+ingested_at: 2026-07-26T22:48:31+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Benoit Schillings shares a practical take on \"Software engineering is not about writing code\"."
+summary: "Benoit Schillings shares a practical take on \"Software engineering is not about writing code\". Key angle: connects the topic back to software engineering practice."
 ---
 
 # "Software engineering is not about writing code" — Benoit Schillings, Google DeepMind VP of Research
 
 ## Summary
-Benoit Schillings shares a practical take on "Software engineering is not about writing code".
+Benoit Schillings shares a practical take on "Software engineering is not about writing code". Key angle: connects the topic back to software engineering practice.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
@@ -30,19 +31,21 @@ Benoit Schillings shares a practical take on "Software engineering is not about 
 - Video: https://www.youtube.com/watch?v=1P1hJ36rxM0
 - Duration: 20:26
 - Playlist index: 872
-- Transcript status: `unavailable`
+- Transcript status: `auto_en_orig`
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[RAG & Retrieval]]
+- [[Agent Architecture]]
+- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
-> Transcript unavailable.
+> [music] Please welcome to the stage the vice president of research [music] at Google DeepMind, Benois Schillings. >> [music] >> All right, good morning. Uh this is really quite exciting to be here and have a chance to to speak with all of you. Uh my name is Benois Shellings. I'm actually a bit of a noob when it comes to to machine learning. Till a year and a half ago, I was working for Google X which some of you may know. We've done things like Whimo, which seems to be at every street corner now. Uh we also do things like Glass. So, you know, we we had a mix of hit and success. But in many ways this was for me an interesting formative experience on how to run a research team in a place like...
 
 ## Transcript notes
-- Transcript not available during ingestion.
+- Full cleaned transcript: [[99_Meta/transcripts/plain/1P1hJ36rxM0.txt]]
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **RAG & Retrieval**.
+- Could support a chapter/section on **Agent Architecture**.
+- Could support a chapter/section on **Evals & Reliability**.

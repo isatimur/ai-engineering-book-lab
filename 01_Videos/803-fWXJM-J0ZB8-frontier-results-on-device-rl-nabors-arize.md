@@ -6,20 +6,22 @@ channel: "AI Engineer"
 url: "https://www.youtube.com/watch?v=fWXJM-J0ZB8"
 duration: "30:52"
 duration_seconds: 1852
-view_count: 4100
-transcript_status: unavailable
-transcript_path: ""
+view_count: 4200
+transcript_status: auto_en_orig
+transcript_path: "99_Meta/transcripts/plain/fWXJM-J0ZB8.txt"
 themes:
-  - "Models & Inference"
-ingested_at: 2026-07-14T23:59:52+00:00
+  - "Coding Agents"
+  - "Agent Architecture"
+  - "Evals & Reliability"
+ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "RL Nabors shares a practical take on Frontier results, on device."
+summary: "RL Nabors shares a practical take on Frontier results, on device. Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs."
 ---
 
 # Frontier results, on device - RL Nabors, Arize
 
 ## Summary
-RL Nabors shares a practical take on Frontier results, on device.
+RL Nabors shares a practical take on Frontier results, on device. Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
@@ -29,17 +31,21 @@ RL Nabors shares a practical take on Frontier results, on device.
 - Video: https://www.youtube.com/watch?v=fWXJM-J0ZB8
 - Duration: 30:52
 - Playlist index: 803
-- Transcript status: `unavailable`
+- Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Models & Inference]]
+- [[Coding Agents]]
+- [[Agent Architecture]]
+- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
-> Transcript unavailable.
+> Hi there. I'm Rachel Lee Neighbors, and today I'm here to talk with you about how to use local models to stop paying for frontier models. Let's dig into it. So, I've worked on standards that power today's web with Mozilla on Firefox DevTools and the W3C on web standards, and of course on Microsoft's Edge browser. I've even been on the React team. Now, I've spent the past 3 years consulting with AI startups and some of our favorite LLM and browser companies on all things web, AI, and UI. And recently, I've joined Arize. Have you ever had your CTO ruin your agentic workflow with a slight change of prompt or an LLM migration? Have you ever been that CTO? Well, you probably need Arize's...
 
 ## Transcript notes
-- Transcript not available during ingestion.
+- Full cleaned transcript: [[99_Meta/transcripts/plain/fWXJM-J0ZB8.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Agent Architecture**.
+- Could support a chapter/section on **Evals & Reliability**.

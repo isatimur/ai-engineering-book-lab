@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 41
+- Total tagged videos: 43
 
 ## Cross-video synthesis
 
-- This theme appears across 41 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Models & Inference (6), Evals & Reliability (5), Agent Architecture (5).
+- This theme appears across 43 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (7), Evals & Reliability (6), Models & Inference (6).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
 ## Seed videos
@@ -49,10 +49,12 @@
 - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Voice AI: when is the "Her" moment? — Neil Zeghidour, Gradium AI]]
 - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral]]
 - [[700-owH1f0N-keY-gemini-nano-on-device-florina-muntenescu-oli-gaymond-google-deepmind|#700 — Gemini Nano on device — Florina Muntenescu & Oli Gaymond, Google DeepMind]]
+- [[710-r305-aQTaU0-text-diffusion-brendan-o-donoghue-google-deepmind|#710 — Text Diffusion — Brendan O’Donoghue, Google DeepMind]]
 - [[734-hqHC6Z_lXyo-20-days-of-compute-vs-7-hours-rethinking-what-state-of-the-art-means-bertrand-charpentier-|#734 — 20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna]]
 - [[765-gHs5ZiY80PM-you-might-not-need-50-diffusion-steps-ziv-ilan-nvidia|#765 — You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia]]
 - [[776-ij-AU9dpJjc-stop-writing-tone-instructions-layer-them-isadora-martin-dye-isadora-co|#776 — Stop Writing Tone Instructions. Layer Them. - Isadora Martin-Dye, Isadora & Co]]
 - [[793-Iwe_RY-fYgI-ai-driven-multi-document-correlation-for-financial-compliance-varsha-shah-independent|#793 — AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent]]
+- [[892-fnLBmfsI_Fg-your-voice-agent-doesn-t-need-a-frontier-model-joel-allou-ornella-bahidika-microsoft|#892 — Your Voice Agent Doesn't Need a Frontier Model - Joel Allou & Ornella Bahidika, Microsoft]]
 
 ## Notes
 

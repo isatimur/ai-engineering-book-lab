@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 249
+- Total tagged videos: 241
 
 ## Cross-video synthesis
 
-- This theme appears across 249 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (19).
+- This theme appears across 241 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (18).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -246,7 +246,6 @@
 - [[612-yj-wSRJwrrc-pydantic-is-all-you-need-jason-liu|#612 — Pydantic is all you need: Jason Liu]]
 - [[615-lFMKXnpbhpQ-the-age-of-the-agent-flo-crivello|#615 — The Age of the Agent: Flo Crivello]]
 - [[619-dQmseZ6kz8w-announcing-the-ai-engineer-network-benjamin-dunphy|#619 — Announcing the AI Engineer Network: Benjamin Dunphy]]
-- [[667-5YSJEP0HWzM-personalization-in-the-era-of-llms-shivam-verma-spotify|#667 — Personalization in the Era of LLMs - Shivam Verma, Spotify]]
 - [[674-X6NShR2ccOg-lessons-from-trillion-token-deployments-at-fortune-500s-alessandro-cappelli-adaptive-ml|#674 — Lessons from Trillion Token Deployments at Fortune 500s — Alessandro Cappelli, Adaptive ML]]
 - [[676-VktrqzQgytY-continuous-compute-intents-humans-outside-the-loop-and-the-multiverse-future-of-the-sdlc|#676 — Continuous Compute: Intents, Humans *Outside* the Loop and the Multiverse future of the SDLC]]
 - [[682-4_VQBbs2iQA-how-building-with-ai-can-double-the-throughput-of-your-engineering-team-brian-scanlan-inte|#682 — How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom]]
@@ -254,13 +253,6 @@
 - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs]]
 - [[688-YNJvm7t3yq8-why-your-ai-ux-is-broken-and-it-s-not-the-model-s-fault-mike-christensen-ably|#688 — Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably]]
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
-- [[795-vljxQZfJ9wY-production-evals-for-agentic-ai-systems-nishant-gupta-meta-superintelligence-labs|#795 — Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs]]
-- [[806-d_Ftrl3vfV0-your-ai-product-will-fail-unless-you-can-explain-it-veronica-hylak-hey-ai|#806 — Your AI Product Will Fail Unless You Can Explain It - Veronica Hylak, Hey AI]]
-- [[819-G6IlDzj8OjA-gtm-is-you-victoria-melnikova-evil-martians|#819 — GTM Is You - Victoria Melnikova, Evil Martians]]
-- [[840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft|#840 — The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft]]
-- [[841-vJukHCIv7Ck-stop-ai-agent-hallucinations-5-techniques-production-patterns-elizabeth-fuentes-aws|#841 — Stop AI Agent Hallucinations: 5 Techniques + Production Patterns - Elizabeth Fuentes, AWS]]
-- [[859-8G_1-3IO4ZQ-wtf-is-the-context-layer-the-missing-infrastructure-for-production-agents-prukalpa-sankar|#859 — WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar]]
-- [[876-yv6xovSsB1U-content-is-code-matt-palmer-conductor|#876 — Content Is Code - Matt Palmer, Conductor]]
 
 ## Notes
 

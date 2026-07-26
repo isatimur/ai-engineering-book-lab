@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 140
+- Total tagged videos: 129
 
 ## Cross-video synthesis
 
-- This theme appears across 140 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: RAG & Retrieval (22), Evals & Reliability (21), Org Design & Leadership (18).
+- This theme appears across 129 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (21), Org Design & Leadership (18).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
 ## Seed videos
@@ -15,7 +15,6 @@
 - [[007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai|#7 — Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI]]
 - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind]]
 - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research]]
-- [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[025-c5-kx2bwoCk-running-llms-locally-practical-llm-performance-on-dgx-spark-mozhgan-kabiri-chimeh-nvidia|#25 — Running LLMs locally: Practical LLM Performance on DGX Spark — Mozhgan Kabiri chimeh, NVIDIA]]
 - [[049-OGCG_QkCcZo-agi-the-path-forward-jason-warner-eiso-kant-poolside|#49 — AGI: The Path Forward – Jason Warner & Eiso Kant, Poolside]]
 - [[067-sYgE4ppDFOQ-code-world-model-building-world-models-for-computation-jacob-kahn-fair-meta|#67 — Code World Model: Building World Models for Computation – Jacob Kahn, FAIR Meta]]
@@ -134,7 +133,6 @@
 - [[605-N7lJY5IKVLE-workshop-ai-engineering-201-inference|#605 — [Workshop] AI Engineering 201: Inference]]
 - [[617-ju73sWVtvU0-building-ai-for-all-amjad-masad-michele-catasta|#617 — Building AI For All: Amjad Masad & Michele Catasta]]
 - [[620-6d60zVdcCV4-principles-for-prompt-engineering-karina-nguyen-claude-instant-anthropic|#620 — Principles for Prompt Engineering - Karina Nguyen (Claude Instant @ Anthropic)]]
-- [[660-x8Yb4RidLgM-flux-open-research-and-the-future-of-visual-ai-stephen-batifol-black-forest-labs|#660 — FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs]]
 - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Voice AI: when is the "Her" moment? — Neil Zeghidour, Gradium AI]]
 - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral]]
 - [[670-zTLJNHj0DeQ-why-mlx-prince-canuma-neywa-labs|#670 — Why MLX — Prince Canuma, Neywa Labs]]
@@ -142,16 +140,7 @@
 - [[678-OV56RddyFuU-self-training-agents-hermes-agent-hf-traces-skills-mcp-finetuning-merve-noyan-hugging-face|#678 — Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  — Merve Noyan, Hugging Face]]
 - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind]]
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
-- [[797-LrGCT7G_rU8-using-rl-agent-to-detect-and-remediate-etl-pipeline-failures-anna-marie-benzon|#797 — Using RL Agent to Detect and Remediate ETL Pipeline Failures - Anna Marie Benzon]]
-- [[803-fWXJM-J0ZB8-frontier-results-on-device-rl-nabors-arize|#803 — Frontier results, on device - RL Nabors, Arize]]
-- [[816-2e9ANoOEn28-what-if-the-harness-mattered-more-than-the-model-aditya-bhargava-etsy|#816 — What if the harness mattered more than the model? - Aditya Bhargava, Etsy]]
-- [[834-uIiA6DquRiE-special-topics-in-kernels-rl-reward-hacking-in-agents-daniel-han-unsloth|#834 — Special Topics in Kernels, RL, Reward Hacking in Agents — Daniel Han, Unsloth]]
-- [[843-7P0elyLIxXo-what-does-done-even-mean-agents-and-paperclip-s-liveness-model-dotta-paperclip|#843 — What Does Done Even Mean? Agents and Paperclip's Liveness Model - Dotta, Paperclip]]
-- [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
-- [[851-V-EDrhIhHzQ-building-open-source-agentic-models-will-brown-prime-intellect|#851 — Building Open Source Agentic Models — Will Brown, Prime Intellect]]
-- [[853-O3FEoMYvUf8-stop-evaluating-models-like-it-s-the-50s-alejandro-vidal-mindmakers|#853 — Stop Evaluating Models Like It's the 50s - Alejandro Vidal, Mindmakers]]
-- [[862--561cZmir5Q-from-tokens-to-cells-foundation-models-for-single-cell-biology-akram-baharlouei-altos-labs|#862 — From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs]]
-- [[866-q4Tr-DknG2M-the-model-trains-the-next-model-lee-robinson-cursor-spacexai|#866 — "The model trains the next model"  — Lee Robinson, Cursor, SpaceXAI]]
+- [[896-2xJoimgoqBg-security-track-intro-randall-degges-snyk|#896 — Security Track Intro — Randall Degges, Snyk]]
 
 ## Notes
 

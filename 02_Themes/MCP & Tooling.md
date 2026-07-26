@@ -2,18 +2,19 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 91
+- Total tagged videos: 111
 
 ## Cross-video synthesis
 
-- This theme appears across 91 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (29), Coding Agents (28), Org Design & Leadership (12).
-- Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #24 AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft).
+- This theme appears across 111 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (51), Agent Architecture (49), Org Design & Leadership (12).
+- Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
 
 - [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
 - [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
+- [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
 - [[024-XZ0boOjtbNo-ai-didn-t-kill-the-web-it-moved-in-olivier-leplus-aws-yohan-lasorsa-microsoft|#24 — AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft)]]
 - [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29 — Cognitive Exhaust Fumes, or: Read-Only AI Is Underrated — Šimon Podhajský, Head of AI, Waypoint]]
 - [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32 — Your Insecure MCP Server Won't Survive Production — Tun Shwe, Lenses]]
@@ -78,7 +79,9 @@
 - [[640-W76woOYHlvY-how-agents-ate-software-engineering-and-my-startup-louis-knight-webb-vibe-kanban|#640 — How Agents ate Software Engineering... and my startup — Louis Knight-Webb, Vibe Kanban]]
 - [[652-o-zkvb0iFDQ-mcp-ui-extending-the-frontier-liad-yosef-and-ido-salomon-mcp-apps|#652 — MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps]]
 - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — The Multi-Agent Architecture That Actually Ships — Luke Alvoeiro, Factory]]
+- [[659-VhfAVA3BG2I-how-transformers-finally-ate-vision-isaac-robinson-roboflow|#659 — How Transformers Finally Ate Vision – Isaac Robinson, Roboflow]]
 - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Give Your Chat Agent a Voice — Luke Harries, ElevenLabs]]
+- [[669-yUmS-F9IX90-don-t-build-slop-4-levels-of-ai-agent-maturity-ara-khan-cline|#669 — Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline]]
 - [[672-vAIDdLKB6-w-a-piece-of-pi-embedding-the-openclaw-coding-agent-in-your-product-matthias-luebken-tavon|#672 — A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product — Matthias Luebken, Tavon]]
 - [[683-JT3OzDKrucU-combine-skills-and-mcp-to-close-the-context-gap-pedro-rodrigues-supabase|#683 — Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase]]
 - [[696-GIRpQEfYf3U-any-to-any-building-native-multimodal-agents-patrick-l-ber-google-deepmind|#696 — Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind]]
@@ -99,10 +102,27 @@
 - [[781-Jx4ZFEAq6bY-user-signal-dies-at-the-retrieval-boundary-sonam-pankaj-starlightsearch|#781 — User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch]]
 - [[792-dRmWYHuIJxM-we-cut-94-of-ai-coding-tokens-with-a-local-code-index-rajkumar-sakthivel-tesco|#792 — We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco]]
 - [[794-65X0pQ6Lmbg-voice-in-visuals-out-the-agony-and-the-ecstasy-allen-pike-forestwalk-labs|#794 — Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs]]
-- [[801-6bmM45jkMDY-you-can-t-prompt-the-room-the-last-skill-ai-won-t-replace-bal-zs-horv-th-visuallabs|#801 — You Can't Prompt the Room: The Last Skill AI Won't Replace - Balázs Horváth, VisualLabs]]
-- [[804-UNzCG3lw6O0-building-great-agent-skills-the-missing-manual|#804 — Building Great Agent Skills: The Missing Manual]]
-- [[807-sAOBXCDiDOs-mcp-apps-primitives-discovery-and-the-future-of-software-pietro-zullo-manufact-inc|#807 — MCP Apps: Primitives, discovery, and the Future of Software - Pietro Zullo, Manufact, Inc]]
-- [[858-0vphxNt4wyk-don-t-ship-skills-without-evals-philipp-schmid-google-deepmind|#858 — Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind]]
+- [[805-hVJOnuhFmTA-the-prompt-is-still-a-punch-card-ted-johnson-joinin-ai|#805 — The Prompt Is Still a Punch Card - Ted Johnson, JoinIn AI]]
+- [[810-9fubhllmsBU-field-guide-to-fable-thariq-shihipar-anthropic|#810 — Field Guide to Fable — Thariq Shihipar, Anthropic]]
+- [[812-UcYoMg-8-L8-500-people-vibe-coded-for-30-days-i-was-one-of-them-sanja-grbic-automattic|#812 — 500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic]]
+- [[819-G6IlDzj8OjA-gtm-is-you-victoria-melnikova-evil-martians|#819 — GTM Is You - Victoria Melnikova, Evil Martians]]
+- [[821-4kYl2_mqmnQ-i-run-a-fleet-of-ai-agents-across-three-machines-here-s-what-broke-kyle-jaejun-lee-krafton|#821 — I Run a Fleet of AI Agents Across Three Machines. Here's What Broke. - Kyle Jaejun Lee, KRAFTON]]
+- [[825-HsxQICTLF84-building-an-acp-compatible-agent-live-bennet-fenner-zed|#825 — Building an ACP-Compatible Agent Live — Bennet Fenner, Zed]]
+- [[827-grdoOC1BT1s-think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta|#827 — Think You Can Build a Game with AI? Think Again! - Danielle An & David Hoe, Meta]]
+- [[835-GdvKNwMcfd0-from-writing-code-to-designing-systems-how-the-developer-role-is-changing-chris-noring-mic|#835 — From Writing Code to Designing Systems: How the Developer Role is Changing — Chris Noring, Microsoft]]
+- [[840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft|#840 — The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft]]
+- [[842-xg1zNlzw7Jk-claws-out-securing-and-building-with-openclaw-nick-taylor-pomerium|#842 — Claws Out: Securing and Building with OpenClaw - Nick Taylor, Pomerium]]
+- [[844-5192csoTkVo-remobi-app-don-t-change-your-terminal-workflow-for-mobile|#844 — remobi.app: Don't change your terminal workflow for mobile]]
+- [[847-sum9DgexFRQ-the-agentic-web-and-the-bazaar-era-of-ai-ramesh-raskar-mit-media-lab|#847 — The Agentic Web and the Bazaar Era of AI - Ramesh Raskar, MIT Media Lab]]
+- [[853-O3FEoMYvUf8-stop-evaluating-models-like-it-s-the-50s-alejandro-vidal-mindmakers|#853 — Stop Evaluating Models Like It's the 50s - Alejandro Vidal, Mindmakers]]
+- [[857-APqXGyCoGW4-forward-deployed-engineering-at-cursor-pauline-brunet|#857 — Forward Deployed Engineering at Cursor — Pauline Brunet]]
+- [[863-lMCxVorb9wM-you-didn-t-ship-a-bug-you-just-wrote-it-for-a-human-ravi-madabhushi-scalekit|#863 — You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit]]
+- [[869-Z2Erdirpudo-imagination-engineering-live-in-the-future-and-then-build-what-s-missing|#869 — Imagination Engineering: "Live in the future and then build what's missing."]]
+- [[874-zU4EagB311U-agents-need-feature-flags-sachin-gupta|#874 — Agents Need Feature Flags - Sachin Gupta]]
+- [[887-maTp79FD9gI-agent-output-is-not-ux-rendering-layer-your-llm-pipeline-is-missing-bala-ramdoss-amazon-le|#887 — Agent Output Is Not UX: Rendering Layer Your LLM Pipeline Is Missing - Bala Ramdoss, Amazon Lens]]
+- [[902-yWS0udrIOc8-agentic-security-permissions-provenance-and-the-agent-supply-chain-steve-yegge-gas-town|#902 — Agentic Security: Permissions, Provenance, and the Agent Supply Chain — Steve Yegge, Gas Town]]
+- [[910-VGN22pPpb-8-thinner-agents-on-a-smarter-substrate-the-ontology-based-semantic-layer-emil-eifrem-neo4j|#910 — Thinner Agents on a Smarter Substrate: The Ontology-based Semantic Layer — Emil Eifrem, Neo4j]]
+- [[930-q2JrUKBMf0w-the-future-of-evals-from-llm-as-a-judge-to-agent-as-a-judge-aparna-dhinakaran-arize-ai|#930 — The Future of Evals: From LLM as a Judge to Agent as a Judge — Aparna Dhinakaran, Arize AI]]
 
 ## Notes
 

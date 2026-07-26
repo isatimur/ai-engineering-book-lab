@@ -6,12 +6,14 @@ channel: "AI Engineer"
 url: "https://www.youtube.com/watch?v=Z2Erdirpudo"
 duration: "16:04"
 duration_seconds: 964
-view_count: 2700
-transcript_status: unavailable
-transcript_path: ""
+view_count: 5100
+transcript_status: auto_en_orig
+transcript_path: "99_Meta/transcripts/plain/Z2Erdirpudo.txt"
 themes:
-  - "General AI Engineering"
-ingested_at: 2026-07-19T00:07:46+00:00
+  - "Coding Agents"
+  - "Agent Architecture"
+  - "MCP & Tooling"
+ingested_at: 2026-07-26T22:48:30+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "A practical talk on Imagination Engineering: \"Live in the future and then build what's missing.\"."
 ---
@@ -29,17 +31,21 @@ A practical talk on Imagination Engineering: "Live in the future and then build 
 - Video: https://www.youtube.com/watch?v=Z2Erdirpudo
 - Duration: 16:04
 - Playlist index: 869
-- Transcript status: `unavailable`
+- Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[General AI Engineering]]
+- [[Coding Agents]]
+- [[Agent Architecture]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
-> Transcript unavailable.
+> [music] >> Hi everyone. Thanks so much for coming. I'm actually really surprised that the room is so full cuz imagination engineering is like a really weird term. I'm really surprised that you showed up to learn more about it. Um the reason I called this talk imagination engineering is because I've been thinking about in how incredibly capable the recent models are, especially today with Fable 5 coming back. And I think that the new bottleneck will be to come up with like crazy ideas because it's going to be really easy to one-shot absolutely everything and anything very soon. And so I think that the thing that we can reflect on that will be the most valuable for the world right now is how...
 
 ## Transcript notes
-- Transcript not available during ingestion.
+- Full cleaned transcript: [[99_Meta/transcripts/plain/Z2Erdirpudo.txt]]
 
 ## Book angles
-- Could support a chapter/section on **General AI Engineering**.
+- Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Agent Architecture**.
+- Could support a chapter/section on **MCP & Tooling**.

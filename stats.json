@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-19T09:33:31+00:00",
+  "generated_at": "2026-07-26T22:50:11+00:00",
   "corpus": {
-    "videos": 881
+    "videos": 941
   },
   "synthesis": {
     "themes": 10,
@@ -32,14 +32,14 @@
     "overview": 4,
     "chapter_openers": 10,
     "concepts": 18,
-    "inline": 38,
+    "inline": 50,
     "maps": 3,
-    "total": 73
+    "total": 85
   },
   "method": {
     "research_passes": 19,
     "programs": 7,
     "tasks": 7
   },
-  "total_artefacts": 1097
+  "total_artefacts": 1169
 }

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 166
+- Total tagged videos: 165
 
 ## Cross-video synthesis
 
-- This theme appears across 166 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (22), Evals & Reliability (19).
+- This theme appears across 165 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (19).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
 ## Seed videos
@@ -169,15 +169,14 @@
 - [[610-ieWT6X2Yh_g-the-intelligent-interface-sam-whitmore-jason-yuan-of-new-computer|#610 — The Intelligent Interface: Sam Whitmore & Jason Yuan of New Computer]]
 - [[613-cwjs1WAG9CM-building-context-aware-reasoning-applications-with-langchain-and-langsmith-harrison-chase|#613 — Building Context-Aware Reasoning Applications with LangChain and LangSmith: Harrison Chase]]
 - [[620-6d60zVdcCV4-principles-for-prompt-engineering-karina-nguyen-claude-instant-anthropic|#620 — Principles for Prompt Engineering - Karina Nguyen (Claude Instant @ Anthropic)]]
-- [[658-ynJyIKwjonM-agentic-search-for-context-engineering-leonie-monigatti-elastic|#658 — Agentic Search for Context Engineering — Leonie Monigatti, Elastic]]
+- [[659-VhfAVA3BG2I-how-transformers-finally-ate-vision-isaac-robinson-roboflow|#659 — How Transformers Finally Ate Vision – Isaac Robinson, Roboflow]]
 - [[665-esY99nYXxR4-hierarchical-memory-context-management-in-agents-sally-ann-delucia|#665 — Hierarchical Memory: Context Management in Agents — Sally-Ann Delucia]]
 - [[685-eW_vxrjvERk-connecting-the-dots-with-context-graphs-stephen-chin-neo4j|#685 — Connecting the Dots with Context Graphs — Stephen Chin, Neo4j]]
 - [[773-jVjt-2g8NMY-a-genius-with-amnesia-victor-savkin-nx|#773 — A Genius With Amnesia - Victor Savkin, Nx]]
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
-- [[817-1IdzkRVmWAA-how-we-taught-agents-to-use-good-retrieval-hanna-lichtenberg-mixedbread-ai|#817 — How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI]]
-- [[850-8oyalrfwgjw-rlm-recursive-language-models-for-large-codebases-shashi-superagentic-ai|#850 — RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI]]
-- [[868-iCj_ATyThvc-how-autoresearch-is-changing-ml-research-zhengyao-jiang-weco|#868 — How Autoresearch is changing ML research — Zhengyao Jiang, Weco]]
-- [[872-1P1hJ36rxM0-software-engineering-is-not-about-writing-code-benoit-schillings-google-deepmind-vp-of-res|#872 — "Software engineering is not about writing code" — Benoit Schillings, Google DeepMind VP of Research]]
+- [[819-G6IlDzj8OjA-gtm-is-you-victoria-melnikova-evil-martians|#819 — GTM Is You - Victoria Melnikova, Evil Martians]]
+- [[862--561cZmir5Q-from-tokens-to-cells-foundation-models-for-single-cell-biology-akram-baharlouei-altos-labs|#862 — From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs]]
+- [[916-Sir59K8ZDPU-why-agentic-systems-need-ontologies-frank-coyle-uc-berkeley|#916 — Why Agentic Systems Need Ontologies — Frank Coyle, UC Berkeley]]
 
 ## Notes
 
