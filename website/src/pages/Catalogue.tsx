@@ -36,7 +36,7 @@ export const Catalogue = () => {
       className="min-h-screen bg-[#1F1D1B] text-[#F9F7F1] font-serif relative overflow-hidden"
     >
       <Seo
-        title="From Copilot to Colleague — An Online Book"
+        title="From Copilot to Colleague — A Guide to AI Engineering"
         description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 794-video corpus."
         path="/"
         type="book"
@@ -138,7 +138,7 @@ export const Catalogue = () => {
         </p>
 
         <a
-          href="/experience/"
+          href="/experience"
           className="group mx-auto mt-2 hidden sm:flex items-center gap-3 font-mono text-[11px] uppercase tracking-widest text-white/50 hover:text-white transition-colors"
         >
           <span className="h-px w-8 bg-white/20 group-hover:bg-white/50 transition-colors" />
@@ -147,7 +147,7 @@ export const Catalogue = () => {
         </a>
 
         <a
-          href="/experience/"
+          href="/experience"
           className="sm:hidden mx-auto mt-6 block w-full max-w-md border border-white/20 rounded-sm overflow-hidden bg-gradient-to-br from-[#0a0c14] to-[#1a1520] hover:border-white/40 transition-colors"
         >
           <div className="p-5 flex items-center gap-4">

@@ -30,7 +30,7 @@ export const EventLedgerPage = () => {
   return (
     <>
       <Seo
-        title={`${ledger.title} — Fact-checked ledger`}
+        title={`${ledger.seoTitle ?? ledger.title} — Ledger`}
         description={`${stats.claims} source-anchored claims from ${ledger.subtitle}. Interactive yt:// anchors.`}
         path={`/ledgers/${ledger.slug}`}
       />

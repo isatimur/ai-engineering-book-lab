@@ -69,7 +69,7 @@ export const Sidebar = ({ isOpen, onClose }: Props) => {
                <Link to="/read/graph" onClick={onClose} className="border border-[var(--color-border)] px-2 py-1 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors">
                  Evidence graph
                </Link>
-               <a href="/experience/" onClick={onClose} className="border border-[var(--color-border)] px-2 py-1 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors">
+               <a href="/experience" onClick={onClose} className="border border-[var(--color-border)] px-2 py-1 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors">
                  3D journey
                </a>
              </div>

@@ -18,8 +18,8 @@ describe('chapterLinks', () => {
   });
 
   it('builds experience URLs with chapter hash', () => {
-    expect(experienceUrl()).toBe('/experience/');
-    expect(experienceUrl('03')).toBe('/experience/#ch-3');
+    expect(experienceUrl()).toBe('/experience');
+    expect(experienceUrl('03')).toBe('/experience#ch-3');
   });
 
   it('parses experience hash fragments', () => {

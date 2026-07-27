@@ -18,13 +18,13 @@ export const graphUrl = (chapterNumber?: string): string =>
     ? `/read/graph?chapter=${chapterNumber.padStart(2, '0')}`
     : '/read/graph';
 
-/** 3D journey URL with chapter hash, e.g. `/experience/#ch-3`. */
+/** 3D journey URL with chapter hash, e.g. `/experience#ch-3`. */
 export const experienceUrl = (chapterNumber?: string): string => {
-  if (!chapterNumber) return '/experience/';
+  if (!chapterNumber) return '/experience';
   const n = parseInt(chapterNumber, 10);
   return Number.isFinite(n) && n >= 1 && n <= chapters.length
-    ? `/experience/#ch-${n}`
-    : '/experience/';
+    ? `/experience#ch-${n}`
+    : '/experience';
 };
 
 /** Parse `#ch-3` style hashes into a 1-based chapter index, or null. */

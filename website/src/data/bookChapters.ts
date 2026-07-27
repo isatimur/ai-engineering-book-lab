@@ -15,6 +15,8 @@ export type BookChapter = {
   number: string;
   slug: string;
   title: string;
+  /** Shortened <title> tag override for search snippets, when `title` alone would exceed ~60 chars with the site suffix. The on-page H1, nav, and JSON-LD always use `title` verbatim. */
+  seoTitle?: string;
   promise: string;
   status: ChapterStatus;
   wordCount: number;
@@ -28,6 +30,7 @@ export const chapters: BookChapter[] = [
     number: '01',
     slug: 'the-shift',
     title: 'The Shift: From Assistant to Delegate',
+    seoTitle: 'From Assistant to Delegate',
     promise: 'Why the important transition is not better chat UX, but reliable delegated work.',
     status: 'Drafting',
     content: chapter01,
@@ -37,6 +40,7 @@ export const chapters: BookChapter[] = [
     number: '02',
     slug: 'taste',
     title: 'Taste Still Matters When Code Gets Cheap',
+    seoTitle: 'Why Taste Still Matters',
     promise: 'Why fundamentals, judgment, craft, and constraint become more valuable.',
     status: 'Drafting',
     content: chapter02,
@@ -46,6 +50,7 @@ export const chapters: BookChapter[] = [
     number: '03',
     slug: 'harnesses',
     title: 'Harnesses, Specs, and Codebases Agents Can Actually Use',
+    seoTitle: 'Harnesses for Agent-Ready Code',
     promise: 'How prepared environments make coding agents useful without accepting slop.',
     status: 'Drafting',
     content: chapter03,
@@ -73,6 +78,7 @@ export const chapters: BookChapter[] = [
     number: '06',
     slug: 'runtimes',
     title: 'Runtimes, State, and the Human Control Plane',
+    seoTitle: 'Runtimes and the Control Plane',
     promise: 'Durable agents, replay vs snapshot, and why autonomy needs architecture.',
     status: 'Drafting',
     content: chapter06,
@@ -82,6 +88,7 @@ export const chapters: BookChapter[] = [
     number: '07',
     slug: 'security',
     title: 'Security, Identity, and High-Stakes Trust',
+    seoTitle: 'Security, Identity, and Trust',
     promise: 'Why delegated authority needs boundaries, audit trails, and real controls.',
     status: 'Drafting',
     content: chapter07,
@@ -91,6 +98,7 @@ export const chapters: BookChapter[] = [
     number: '08',
     slug: 'realtime',
     title: 'Realtime, Voice, and the Cost of Being Interruptible',
+    seoTitle: 'Realtime and Interruptibility',
     promise: 'What voice, latency, and turn-taking reveal about production AI.',
     status: 'Drafting',
     content: chapter08,

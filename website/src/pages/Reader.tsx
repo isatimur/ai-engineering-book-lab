@@ -187,6 +187,7 @@ export const Reader = () => {
         description="All 10 chapters in one continuous read."
         path="/read"
         type="website"
+        noindex
       />
       <div
         className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] selection:bg-[var(--color-pink)] font-sans antialiased pb-12 overflow-x-clip transition-colors duration-300"

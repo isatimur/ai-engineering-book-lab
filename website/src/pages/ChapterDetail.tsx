@@ -82,7 +82,7 @@ export const ChapterDetail = () => {
   return (
     <LightboxProvider>
       <Seo
-        title={`${chapter.title} — From Copilot to Colleague`}
+        title={`${chapter.seoTitle ?? chapter.title} — From Copilot to Colleague`}
         description={chapter.promise}
         path={chapterPath(chapter)}
         image={video ? video.poster : ogCardPath(chapter)}

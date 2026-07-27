@@ -10,6 +10,8 @@ export type EventLedgerClaim = EvidenceClaim & { caveats?: string };
 export type EventLedger = {
   slug: string;
   title: string;
+  /** Shortened <title> tag override for search snippets, when `title` alone would exceed ~60 chars with the suffix. The on-page H1 always uses `title` verbatim. */
+  seoTitle?: string;
   subtitle: string;
   videoId: string;
   videoUrl: string;
