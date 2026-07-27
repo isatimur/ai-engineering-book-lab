@@ -1,6 +1,6 @@
 # The AI-Native Org — Whitepaper
 
-**An operating system for one operator and a fleet of agents.** v1.3, July 2026.
+**An operating system for one operator and a fleet of agents.** v1.6, July 2026.
 
 This whitepaper is a practical companion piece to the book: it takes the manuscript's Chapter 9 theses (constrained delegation, review as the bottleneck, the company as a harness for its own agents, evals as the control system) and shows them implemented as a complete, running solo-scale operating model — three planes, a fail-closed ship gate, a sentinel with an external dead-man's switch, a claims ledger with primary-verified anchors, and an outcome-confirmation loop.
 
