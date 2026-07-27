@@ -153,22 +153,8 @@
     "936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google"
   ],
   "part2_excluded": [
-    "015-zgNvts_2TUE-state-of-the-claw-peter-steinberger",
     "092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals",
-    "314-J4vPq2i0QzE-agentic-excellence-mastering-ai-agent-evals-w-azure-ai-evaluation-sdk-cedric-vidal-microso",
-    "353-J3oJqan2Gv8-mcps-are-boring-or-why-we-are-losing-the-sparkle-of-llms-manuel-odendahl",
     "460-FpJ9dPe1qYQ-reverse-conway-s-law-and-genai-how-agents-will-take-over-the-organisation-patrick-debois",
-    "641-sJ2jc7leKBk-making-openclaw-my-life-infrastructure-radek-sienkiewicz-velvetshark-com",
-    "672-vAIDdLKB6-w-a-piece-of-pi-embedding-the-openclaw-coding-agent-in-your-product-matthias-luebken-tavon",
-    "673-4VhbYlfC7Gs-dark-factory-how-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc",
-    "689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident",
-    "698-VaS2h-dY1-4-scaling-agents-on-kubernetes-with-acpx-and-acp-onur-solmaz-openclaw",
-    "701-F1DYkY1BlfM-openclaw-in-containers-the-lobster-trap-sally-ann-o-malley-red-hat",
-    "702-TeGsFFNqRLA-codex-spark-fast-models-need-slow-developers-sarah-chieng-cerebras",
-    "743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw",
-    "790-akk6KRlcwW4-openclaw-in-your-hand-building-a-physical-ai-terminal-lech-kalinowski-callstack",
-    "842-xg1zNlzw7Jk-claws-out-securing-and-building-with-openclaw-nick-taylor-pomerium",
-    "885-LC3-P7v3yoI-skills-are-the-new-sdks-elvin-aghammadzada-datarobot",
-    "908-8qWIPUia2O8-every-harness-will-become-a-claw-sam-bhagwat-mastra"
+    "702-TeGsFFNqRLA-codex-spark-fast-models-need-slow-developers-sarah-chieng-cerebras"
   ]
 }

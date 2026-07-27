@@ -35,35 +35,39 @@ PART2_KEYWORDS = [
     "video game", "drone", "manufactur", "telemedicine", "education",
 ]
 
-# Notes that match a Part II keyword but are not actually talks (music
-# interludes, sponsor stings, etc.) — hand-curated during the 2026-07-27
-# design pass. Keyed by note_name (filename stem).
+# Keywords that intentionally match as a left-anchored *prefix* only (no
+# trailing \b), because the vertical is legitimately expressed via a
+# morphological variant that extends past the bare keyword:
+#   - "manufactur" -> "manufacturing", "manufacturer", "manufactured"
+#   - "robot"      -> "robots", "robotics", "robotic"
+# All other keywords get both a leading and trailing \b so they only match
+# as whole words (this is what prevents substring artifacts like "law"
+# inside "Claw"/"Lawrence" or "cell" inside "Excellence" from matching at
+# all — see EXCLUDE_NOTE_NAMES below for the 3 remaining false positives
+# that whole-word matching cannot rule out).
+PREFIX_MATCH_KEYWORDS = {"manufactur", "robot"}
+
+# Notes that match a Part II keyword as a genuine whole-word match but are
+# false positives for *meaning* (not substring/boundary artifacts) — hand-
+# curated during the 2026-07-27 design pass, fix round 1 on 2026-07-28.
+#
+# NOTE: an earlier version of this set (and PART2_KEYWORDS pattern) had no
+# word-boundary anchoring, so 14 additional entries were needed to exclude
+# pure substring matches (e.g. "law" inside "Claw"/"Lawrence", "cell" inside
+# "Excellence", "spark" inside "sparkle", "robot" inside "DataRobot"). Once
+# build_keyword_pattern() anchors each keyword with \b, those 14 never match
+# in the first place and were removed from this set as redundant. Only the
+# 3 genuine semantic false positives (irreducible by word-boundary anchoring)
+# remain below.
 EXCLUDE_NOTE_NAMES: set[str] = {
     # Non-talk: instrumental music interlude, not a talk.
     "092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals",
-    # False positive: "law" matched inside "Claw" (OpenClaw branding), not legal.
-    "015-zgNvts_2TUE-state-of-the-claw-peter-steinberger",
-    "641-sJ2jc7leKBk-making-openclaw-my-life-infrastructure-radek-sienkiewicz-velvetshark-com",
-    "672-vAIDdLKB6-w-a-piece-of-pi-embedding-the-openclaw-coding-agent-in-your-product-matthias-luebken-tavon",
-    "673-4VhbYlfC7Gs-dark-factory-how-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc",
-    "698-VaS2h-dY1-4-scaling-agents-on-kubernetes-with-acpx-and-acp-onur-solmaz-openclaw",
-    "701-F1DYkY1BlfM-openclaw-in-containers-the-lobster-trap-sally-ann-o-malley-red-hat",
-    "743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw",
-    "790-akk6KRlcwW4-openclaw-in-your-hand-building-a-physical-ai-terminal-lech-kalinowski-callstack",
-    "842-xg1zNlzw7Jk-claws-out-securing-and-building-with-openclaw-nick-taylor-pomerium",
-    "908-8qWIPUia2O8-every-harness-will-become-a-claw-sam-bhagwat-mastra",
-    # False positive: "law" matched inside speaker surname "Lawrence".
-    "689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident",
-    # False positive: "law" matched inside "Conway's Law" (org-design principle, not legal vertical).
+    # False positive: "law" is a genuine whole-word match inside "Conway's Law"
+    # (org-design principle, not the legal vertical).
     "460-FpJ9dPe1qYQ-reverse-conway-s-law-and-genai-how-agents-will-take-over-the-organisation-patrick-debois",
-    # False positive: "cell" matched inside "Excellence".
-    "314-J4vPq2i0QzE-agentic-excellence-mastering-ai-agent-evals-w-azure-ai-evaluation-sdk-cedric-vidal-microso",
-    # False positive: "spark" matched inside "sparkle".
-    "353-J3oJqan2Gv8-mcps-are-boring-or-why-we-are-losing-the-sparkle-of-llms-manuel-odendahl",
-    # False positive: "spark" matched inside product name "Codex Spark" (fast inference tooling, not Apache Spark/data vertical).
+    # False positive: "spark" is a genuine whole-word match inside product name
+    # "Codex Spark" (fast inference tooling, not Apache Spark/data vertical).
     "702-TeGsFFNqRLA-codex-spark-fast-models-need-slow-developers-sarah-chieng-cerebras",
-    # False positive: "robot" matched inside company name "DataRobot", talk is about SDKs/skills, not robotics.
-    "885-LC3-P7v3yoI-skills-are-the-new-sdks-elvin-aghammadzada-datarobot",
 }
 
 
@@ -74,9 +78,25 @@ class ClassificationResult:
     part2_excluded: list[str] = field(default_factory=list)
 
 
+def build_keyword_pattern(keywords: list[str]) -> re.Pattern[str]:
+    """Compile a word-boundary-anchored alternation over PART2_KEYWORDS.
+
+    Every keyword gets a leading `\\b`. All keywords except those in
+    PREFIX_MATCH_KEYWORDS also get a trailing `\\b`; PREFIX_MATCH_KEYWORDS
+    entries intentionally omit the trailing boundary so they still match as
+    a prefix inside longer words (e.g. "manufactur" inside "manufacturing",
+    "robot" inside "robotics").
+    """
+    parts = [
+        rf"\b{re.escape(k)}" if k in PREFIX_MATCH_KEYWORDS else rf"\b{re.escape(k)}\b"
+        for k in keywords
+    ]
+    return re.compile("|".join(parts), re.I)
+
+
 def classify(records: list[NoteRecord]) -> ClassificationResult:
     result = ClassificationResult()
-    keyword_pattern = re.compile("|".join(re.escape(k) for k in PART2_KEYWORDS), re.I)
+    keyword_pattern = build_keyword_pattern(PART2_KEYWORDS)
 
     for record in records:
         if PART1_THEME in record.themes:
