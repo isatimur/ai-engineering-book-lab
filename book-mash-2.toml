@@ -1,0 +1,13 @@
+[corpus]
+chapters_glob = "public/drafting-2/*.md"
+claims_dir = "claims-2/"
+evidence_dir = "evidence-2/"
+# TODO: populate once ≥2 book-2 chapters are drafted (voice judge needs a baseline to compare against)
+voice_baseline_chapters = []
+skip_sections = ["Draft note"]
+
+[output]
+runs_dir = ".book-mash-2-runs/"
+
+[budget]
+max_cost_usd = 15.0
