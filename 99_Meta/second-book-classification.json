@@ -1,4 +1,7 @@
 {
+  "_generated_by": "99_Meta/scripts/classify_second_book.py",
+  "_generated_at": "2026-07-28T13:01:51+00:00",
+  "_regenerate_after": "corpus-sync",
   "part1": [
     "007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai",
     "009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind",
@@ -131,30 +134,50 @@
     "896-2xJoimgoqBg-security-track-intro-randall-degges-snyk"
   ],
   "part2": [
+    "086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab",
     "095-qqXdLf3wy1E-agents-are-robots-too-what-self-driving-taught-me-about-building-agents-jesse-hu-abundant",
+    "144-kDczF4wBh8s-from-self-driving-to-autonomous-voice-agents-brooke-hopkins-coval",
     "154-W1MiZChnkfA-scaling-enterprise-grade-rag-lessons-from-legal-frontier-calvin-qi-harvey-chang-she-lance",
+    "187-TquUsN1QsWs-ai-that-pays-lessons-from-revenue-cycle-nathan-wan-ensemble-health",
+    "197-_zl_zimMRak-how-intuit-uses-llms-to-explain-taxes-to-millions-of-taxpayers-jaspreet-singh-intuit",
+    "272-P_uhFGH4J9Y-new-york-times-connections-a-case-study-on-nlp-in-word-games-shafik-quoraishee-nyt-games",
     "276-BS92RdBvI90-your-personal-open-source-humanoid-robot-for-8-999-jx-mo-k-scale-labs",
     "339-sn79oS4MZFI-case-study-deep-dive-telemedicine-support-agents-with-langgraph-mcp-dan-mason",
     "371-pSqpC7fFLZA-the-robots-are-coming-for-your-job-and-that-s-okay-elmer-thomas-and-maria-bermudez",
     "406-pPvoLjYj_mY-evaluating-domain-specific-llms-for-real-world-finance-waseem-alshikh-writer",
     "423-MWTJIAwAAnk-trust-but-verify-knowledge-agents-for-finance-workflows-mike-conover",
     "446-cZ5ZJy19KMo-mission-critical-evals-at-scale-learnings-from-100k-medical-decisions",
+    "469-IAdZxqjZ45U-optimizing-llms-in-insurance-with-dspy-jeronim-morina",
     "477-CoaL4JZKsWI-ai-music-generation-from-prompt-to-production-phlo-young",
+    "496-T60Tj25J4Zw-build-evaluate-and-deploy-a-rag-based-retail-copilot-with-azure-ai-cedric-vidal-and-david-",
     "512-3E7VAZaTG9M-scaling-ai-in-education-a-khanmigo-case-study-shawn-jansepar",
     "540-qpmZID27t98-the-multimodal-future-of-education-stefania-druga",
+    "565-L0kBWyziFlc-disrupting-the-15-trillion-construction-industry-with-autonomous-agents-dr-sarah-buchner",
     "677-FlzpEGHNVKQ-building-a-chess-coach-anant-dole-and-asbjorn-steinskog-take-take-take",
     "725-0jeZfjJMfmo-reachy-mini-the-300-open-source-robot-you-can-actually-hack-andres-marafioti-hugging-face",
     "755-Bc6Ojl2XS1w-from-transcription-to-live-music-gemini-s-audio-stack-thor-schaeff-google-deepmind",
     "822-BqZrTdgBaPw-running-a-chess-youtube-channel-entirely-by-ai-stephan-steinfurt-tng",
+    "827-grdoOC1BT1s-think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta",
     "862--561cZmir5Q-from-tokens-to-cells-foundation-models-for-single-cell-biology-akram-baharlouei-altos-labs",
     "883-_cVfz88_j7A-can-oncology-workflows-run-without-human-touch-anant-shankhdhar-risa-labs",
     "884-0RNNfxpdbQk-medic-for-apache-spark-first-aid-for-failing-jobs-drasko-profirovic-pinterest",
     "890-bUJgirn4_yc-when-agents-meet-physical-data-the-other-physics-of-agent-harnesses-dmitry-petrov-datachai",
-    "936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google"
+    "918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times",
+    "936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google",
+    "938-O72p-rBb2bA-evals-driven-development-for-a-mental-health-ai-coach-akele-reed-dave-revere-sondermind"
   ],
   "part2_excluded": [
     "092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals",
+    "389-EnT4Wej5M5k-the-benchmarks-game-why-it-s-rigged-and-how-you-can-really-win-darius-emrani",
     "460-FpJ9dPe1qYQ-reverse-conway-s-law-and-genai-how-agents-will-take-over-the-organisation-patrick-debois",
     "702-TeGsFFNqRLA-codex-spark-fast-models-need-slow-developers-sarah-chieng-cerebras"
+  ],
+  "part1_part2_keyword_overlap": [
+    "025-c5-kx2bwoCk-running-llms-locally-practical-llm-performance-on-dgx-spark-mozhgan-kabiri-chimeh-nvidia",
+    "110-bCGbuyv8PMk-rishabh-garg-tesla-optimus-challenges-in-high-performance-robotics-systems",
+    "175-cGLa8DsOYdk-robotics-why-now-quan-vuong-and-jost-tobias-springberg-physical-intelligence",
+    "229-MBWGiWJDlSo-robots-as-professional-chefs-nikhil-abraham-cloudchef",
+    "473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis",
+    "588-_KFbT6eph5A-using-ai-to-build-an-infinite-game-jeff-schomay"
   ]
 }
