@@ -1,0 +1,16 @@
+# Second Book — Chapter Drafts
+
+Chapter drafts for the second book land here, one file per chapter (same
+convention as `public/drafting/`). This folder is intentionally empty until
+the drafting pass begins — see `docs/superpowers/specs/2026-07-27-second-book-design.md`
+for the chapter structure and `05_Book_Ideas/Second Book - Part I/II Candidates.md`
+for the source material each chapter can draw on.
+
+Note: this file is named `README` with no extension on purpose. `book-mash-2.toml`
+sets `chapters_glob = "public/drafting-2/*.md"`, and `book-mash` (see
+`book_mash/corpus/loader.py`) globs and measures every `.md` file it matches with
+no filtering — it does not error or skip non-chapter files. A `README.md` (or any
+other `*.md` file) placed directly in this folder gets silently treated as a
+phantom chapter and gets judge calls planned/run against it. Do not rename this
+back to `README.md` or add other `*.md` files here that aren't real chapter
+drafts.
