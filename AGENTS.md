@@ -31,3 +31,12 @@ the book *From Copilot to Colleague*. The only runnable application is the
 
 The Python scripts under `99_Meta/scripts/` (e.g. evidence/stats regeneration) are
 stdlib-only and require no pip install.
+
+## Session hygiene (all agents)
+
+**Commit or explicitly park — never leave work untracked at session end.**
+Untracked files have been lost to cleanup twice in this repo (launch-kit docs,
+2026-07-06; near-miss with ONBOARDING.md + launch-drafts/, 2026-07-31). Before
+ending a session: `git status` — anything untracked either gets committed
+(drafts and WIP are fine on main; this is a private lab) or moved to an
+explicit parking location outside the repo with its path reported to the user.
