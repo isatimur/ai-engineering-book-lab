@@ -16,9 +16,11 @@ And the direction I'm pushing it in, autoresearch-style:
 - bounded research passes
 - self-improving instructions
 - source-fidelity checks
-- quality judges for summaries, claims, and chapters
+- quality judges for summaries, claims, and chapters ([book-mash](https://github.com/isatimur/book-mash))
 - coverage, coherence, and drift metrics
 
 **The Manuscript** is the visible output of a larger experiment: *can a book become a public, self-improving research artefact?*
+
+One idea already left the lab: Chapter 9's argument for constrained delegation became [ai-native-org](https://github.com/isatimur/ai-native-org), a running operating model, not just a claim.
 
 This started as "let's make better notes." It's turning into something closer to a public experiment in writing, judging, and continuously improving The Method that produces The Manuscript — with the discipline that **no claim ships without a source anchor**.
