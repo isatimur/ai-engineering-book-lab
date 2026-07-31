@@ -1,0 +1,61 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- subtle grid dots -->
+  <g opacity="0.06">
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#ffffff"/>
+    </pattern>
+    <rect width="1280" height="640" fill="url(#dots)"/>
+  </g>
+
+  <!-- top accent bar -->
+  <rect x="0" y="0" width="1280" height="6" fill="url(#accent)"/>
+
+  <!-- anchor icon -->
+  <g transform="translate(120,40) scale(0.75)" stroke="#f97316" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="60" cy="24" r="18"/>
+    <line x1="60" y1="42" x2="60" y2="170"/>
+    <path d="M 10 110 A 50 50 0 0 0 60 170 A 50 50 0 0 0 110 110"/>
+    <line x1="20" y1="90" x2="100" y2="90"/>
+  </g>
+
+  <!-- title -->
+  <text x="120" y="330" font-family="'SF Mono','Menlo',monospace" font-size="72" font-weight="700" fill="#f0f6fc">claims-ledger</text>
+
+  <!-- tagline -->
+  <text x="122" y="385" font-family="'Helvetica Neue',Arial,sans-serif" font-size="30" fill="#8b949e">CI-gated evidence verification for docs, code &amp; AI agents</text>
+
+  <!-- headline claim -->
+  <text x="122" y="450" font-family="'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="600" fill="#f97316">No anchor, no claim.</text>
+
+  <!-- code line -->
+  <rect x="120" y="490" width="700" height="70" rx="10" fill="#010409" stroke="#30363d" stroke-width="1.5"/>
+  <text x="150" y="533" font-family="'SF Mono','Menlo',monospace" font-size="24" fill="#7ee787">$ edt verify --gate</text>
+
+  <!-- badges row -->
+  <g font-family="'Helvetica Neue',Arial,sans-serif" font-size="20" fill="#8b949e">
+    <text x="122" y="600">MIT licensed · npm @claims-ledger/edt · GitHub Action</text>
+  </g>
+
+  <!-- right side: schemes -->
+  <g transform="translate(920,150)" font-family="'SF Mono','Menlo',monospace" font-size="22" fill="#58a6ff">
+    <text x="0" y="0">git://</text>
+    <text x="0" y="42">doc://</text>
+    <text x="0" y="84">adr://</text>
+    <text x="0" y="126">gh://</text>
+    <text x="0" y="168">yt://</text>
+    <text x="0" y="210">ts://</text>
+  </g>
+</svg>
