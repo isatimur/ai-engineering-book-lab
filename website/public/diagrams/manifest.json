@@ -267,11 +267,46 @@
       "sourceFile": "ch01-fig4-failure-surface-stretches.excalidraw"
     },
     {
+      "chapter": "01",
+      "index": 5,
+      "title": "Ch01 Fig5 Capability Vs Expertise",
+      "src": "/diagrams/inline/ch01-fig5.png",
+      "sourceFile": "ch01-fig5-capability-vs-expertise.excalidraw"
+    },
+    {
+      "chapter": "01",
+      "index": 6,
+      "title": "Ch01 Fig6 Two Recurring Cases",
+      "src": "/diagrams/inline/ch01-fig6.png",
+      "sourceFile": "ch01-fig6-two-recurring-cases.excalidraw"
+    },
+    {
+      "chapter": "01",
+      "index": 7,
+      "title": "Ch01 Fig7 Make Standards Explicit",
+      "src": "/diagrams/inline/ch01-fig7.png",
+      "sourceFile": "ch01-fig7-make-standards-explicit.excalidraw"
+    },
+    {
+      "chapter": "01",
+      "index": 8,
+      "title": "Ch01 Fig8 Scattered To Discipline",
+      "src": "/diagrams/inline/ch01-fig8.png",
+      "sourceFile": "ch01-fig8-scattered-to-discipline.excalidraw"
+    },
+    {
       "chapter": "02",
       "index": 1,
       "title": "The cheap-code syllogism",
       "src": "/diagrams/inline/ch02-fig1.png",
       "sourceFile": "ch02-fig1-cheap-code-syllogism.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 1,
+      "title": "Ch02 Fig10 Production To Direction",
+      "src": "/diagrams/inline/ch02-fig1.png",
+      "sourceFile": "ch02-fig10-production-to-direction.excalidraw"
     },
     {
       "chapter": "02",
@@ -286,6 +321,48 @@
       "title": "Friction is judgment",
       "src": "/diagrams/inline/ch02-fig3.png",
       "sourceFile": "ch02-fig3-friction-is-judgment.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 4,
+      "title": "Ch02 Fig4 Comprehension Debt",
+      "src": "/diagrams/inline/ch02-fig4.png",
+      "sourceFile": "ch02-fig4-comprehension-debt.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 5,
+      "title": "Ch02 Fig5 Mode Switch Cost Of Wrong",
+      "src": "/diagrams/inline/ch02-fig5.png",
+      "sourceFile": "ch02-fig5-mode-switch-cost-of-wrong.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 6,
+      "title": "Ch02 Fig6 Framing Gate",
+      "src": "/diagrams/inline/ch02-fig6.png",
+      "sourceFile": "ch02-fig6-framing-gate.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 7,
+      "title": "Ch02 Fig7 Review War On Slop",
+      "src": "/diagrams/inline/ch02-fig7.png",
+      "sourceFile": "ch02-fig7-review-war-on-slop.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 8,
+      "title": "Ch02 Fig8 Constraints Are Care",
+      "src": "/diagrams/inline/ch02-fig8.png",
+      "sourceFile": "ch02-fig8-constraints-are-care.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 9,
+      "title": "Ch02 Fig9 Adults In The Room",
+      "src": "/diagrams/inline/ch02-fig9.png",
+      "sourceFile": "ch02-fig9-adults-in-the-room.excalidraw"
     },
     {
       "chapter": "03",
@@ -309,11 +386,53 @@
       "sourceFile": "ch03-fig3-software-factory.excalidraw"
     },
     {
+      "chapter": "03",
+      "index": 4,
+      "title": "Ch03 Fig4 Slop Era Tuesday",
+      "src": "/diagrams/inline/ch03-fig4.png",
+      "sourceFile": "ch03-fig4-slop-era-tuesday.excalidraw"
+    },
+    {
+      "chapter": "03",
+      "index": 5,
+      "title": "Ch03 Fig5 Unstated Decisions",
+      "src": "/diagrams/inline/ch03-fig5.png",
+      "sourceFile": "ch03-fig5-unstated-decisions.excalidraw"
+    },
+    {
+      "chapter": "03",
+      "index": 6,
+      "title": "Ch03 Fig6 Agent Ready Checklist",
+      "src": "/diagrams/inline/ch03-fig6.png",
+      "sourceFile": "ch03-fig6-agent-ready-checklist.excalidraw"
+    },
+    {
+      "chapter": "03",
+      "index": 7,
+      "title": "Ch03 Fig7 Subagents Specialization",
+      "src": "/diagrams/inline/ch03-fig7.png",
+      "sourceFile": "ch03-fig7-subagents-specialization.excalidraw"
+    },
+    {
+      "chapter": "03",
+      "index": 8,
+      "title": "Ch03 Fig8 Environment Design",
+      "src": "/diagrams/inline/ch03-fig8.png",
+      "sourceFile": "ch03-fig8-environment-design.excalidraw"
+    },
+    {
       "chapter": "04",
       "index": 1,
       "title": "Evals are not unit tests",
       "src": "/diagrams/inline/ch04-fig1.png",
       "sourceFile": "ch04-fig1-evals-not-unit-tests.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 1,
+      "title": "Ch04 Fig10 Control System",
+      "src": "/diagrams/inline/ch04-fig1.png",
+      "sourceFile": "ch04-fig10-control-system.excalidraw"
     },
     {
       "chapter": "04",
@@ -328,6 +447,48 @@
       "title": "The observability flywheel",
       "src": "/diagrams/inline/ch04-fig3.png",
       "sourceFile": "ch04-fig3-observability-flywheel.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 4,
+      "title": "Ch04 Fig4 Admin Override Regression",
+      "src": "/diagrams/inline/ch04-fig4.png",
+      "sourceFile": "ch04-fig4-admin-override-regression.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 5,
+      "title": "Ch04 Fig5 Revert And Reproduce",
+      "src": "/diagrams/inline/ch04-fig5.png",
+      "sourceFile": "ch04-fig5-revert-and-reproduce.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 6,
+      "title": "Ch04 Fig6 Layers Of Evidence",
+      "src": "/diagrams/inline/ch04-fig6.png",
+      "sourceFile": "ch04-fig6-layers-of-evidence.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 7,
+      "title": "Ch04 Fig7 Weight By Consequence",
+      "src": "/diagrams/inline/ch04-fig7.png",
+      "sourceFile": "ch04-fig7-weight-by-consequence.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 8,
+      "title": "Ch04 Fig8 Externalize Judgment",
+      "src": "/diagrams/inline/ch04-fig8.png",
+      "sourceFile": "ch04-fig8-externalize-judgment.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 9,
+      "title": "Ch04 Fig9 Organizational Control",
+      "src": "/diagrams/inline/ch04-fig9.png",
+      "sourceFile": "ch04-fig9-organizational-control.excalidraw"
     },
     {
       "chapter": "05",
@@ -365,11 +526,67 @@
       "sourceFile": "ch05-fig5-retrieval-is-four-jobs.excalidraw"
     },
     {
+      "chapter": "05",
+      "index": 6,
+      "title": "Ch05 Fig6 Misranked Matter Note",
+      "src": "/diagrams/inline/ch05-fig6.png",
+      "sourceFile": "ch05-fig6-misranked-matter-note.excalidraw"
+    },
+    {
+      "chapter": "05",
+      "index": 7,
+      "title": "Ch05 Fig7 Cost Is Mostly Input",
+      "src": "/diagrams/inline/ch05-fig7.png",
+      "sourceFile": "ch05-fig7-cost-is-mostly-input.excalidraw"
+    },
+    {
+      "chapter": "05",
+      "index": 8,
+      "title": "Ch05 Fig8 Acceptance Test",
+      "src": "/diagrams/inline/ch05-fig8.png",
+      "sourceFile": "ch05-fig8-acceptance-test.excalidraw"
+    },
+    {
+      "chapter": "05",
+      "index": 9,
+      "title": "Ch05 Fig9 Amplification Rule",
+      "src": "/diagrams/inline/ch05-fig9.png",
+      "sourceFile": "ch05-fig9-amplification-rule.excalidraw"
+    },
+    {
       "chapter": "06",
       "index": 1,
       "title": "Transcript vs workflow",
       "src": "/diagrams/inline/ch06-fig1.png",
       "sourceFile": "ch06-fig1-transcript-vs-workflow.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 1,
+      "title": "Ch06 Fig10 Legacy As Runtime",
+      "src": "/diagrams/inline/ch06-fig1.png",
+      "sourceFile": "ch06-fig10-legacy-as-runtime.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 1,
+      "title": "Ch06 Fig11 Observability Control Plane",
+      "src": "/diagrams/inline/ch06-fig1.png",
+      "sourceFile": "ch06-fig11-observability-control-plane.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 1,
+      "title": "Ch06 Fig12 Isolation Rungs",
+      "src": "/diagrams/inline/ch06-fig1.png",
+      "sourceFile": "ch06-fig12-isolation-rungs.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 1,
+      "title": "Ch06 Fig13 Coordination Substitutes",
+      "src": "/diagrams/inline/ch06-fig1.png",
+      "sourceFile": "ch06-fig13-coordination-substitutes.excalidraw"
     },
     {
       "chapter": "06",
@@ -391,6 +608,41 @@
       "title": "Agency is a dial, not a switch",
       "src": "/diagrams/inline/ch06-fig4.png",
       "sourceFile": "ch06-fig4-agency-dial.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 5,
+      "title": "Ch06 Fig5 Factory Operating System",
+      "src": "/diagrams/inline/ch06-fig5.png",
+      "sourceFile": "ch06-fig5-factory-operating-system.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 6,
+      "title": "Ch06 Fig6 Workflows With State",
+      "src": "/diagrams/inline/ch06-fig6.png",
+      "sourceFile": "ch06-fig6-workflows-with-state.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 7,
+      "title": "Ch06 Fig7 History Is Execution",
+      "src": "/diagrams/inline/ch06-fig7.png",
+      "sourceFile": "ch06-fig7-history-is-execution.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 8,
+      "title": "Ch06 Fig8 Replay Vs Snapshot",
+      "src": "/diagrams/inline/ch06-fig8.png",
+      "sourceFile": "ch06-fig8-replay-vs-snapshot.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 9,
+      "title": "Ch06 Fig9 Two Scarce Resources",
+      "src": "/diagrams/inline/ch06-fig9.png",
+      "sourceFile": "ch06-fig9-two-scarce-resources.excalidraw"
     },
     {
       "chapter": "07",
@@ -419,6 +671,41 @@
       "title": "Enterprise MCP has one shape",
       "src": "/diagrams/inline/ch07-fig4.png",
       "sourceFile": "ch07-fig4-enterprise-mcp-gateway.excalidraw"
+    },
+    {
+      "chapter": "07",
+      "index": 5,
+      "title": "Ch07 Fig5 Four Control Baseline",
+      "src": "/diagrams/inline/ch07-fig5.png",
+      "sourceFile": "ch07-fig5-four-control-baseline.excalidraw"
+    },
+    {
+      "chapter": "07",
+      "index": 6,
+      "title": "Ch07 Fig6 Default Permission Table",
+      "src": "/diagrams/inline/ch07-fig6.png",
+      "sourceFile": "ch07-fig6-default-permission-table.excalidraw"
+    },
+    {
+      "chapter": "07",
+      "index": 7,
+      "title": "Ch07 Fig7 Disputed Filing Reconstruction",
+      "src": "/diagrams/inline/ch07-fig7.png",
+      "sourceFile": "ch07-fig7-disputed-filing-reconstruction.excalidraw"
+    },
+    {
+      "chapter": "07",
+      "index": 8,
+      "title": "Ch07 Fig8 Tuned Autonomy",
+      "src": "/diagrams/inline/ch07-fig8.png",
+      "sourceFile": "ch07-fig8-tuned-autonomy.excalidraw"
+    },
+    {
+      "chapter": "07",
+      "index": 9,
+      "title": "Ch07 Fig9 Deserved Trust",
+      "src": "/diagrams/inline/ch07-fig9.png",
+      "sourceFile": "ch07-fig9-deserved-trust.excalidraw"
     },
     {
       "chapter": "08",
@@ -456,6 +743,34 @@
       "sourceFile": "ch08-fig5-latency-masking.excalidraw"
     },
     {
+      "chapter": "08",
+      "index": 6,
+      "title": "Ch08 Fig6 Realtime Stress Test",
+      "src": "/diagrams/inline/ch08-fig6.png",
+      "sourceFile": "ch08-fig6-realtime-stress-test.excalidraw"
+    },
+    {
+      "chapter": "08",
+      "index": 7,
+      "title": "Ch08 Fig7 Three Failure Modes",
+      "src": "/diagrams/inline/ch08-fig7.png",
+      "sourceFile": "ch08-fig7-three-failure-modes.excalidraw"
+    },
+    {
+      "chapter": "08",
+      "index": 8,
+      "title": "Ch08 Fig8 False Confidence Trap",
+      "src": "/diagrams/inline/ch08-fig8.png",
+      "sourceFile": "ch08-fig8-false-confidence-trap.excalidraw"
+    },
+    {
+      "chapter": "08",
+      "index": 9,
+      "title": "Ch08 Fig9 Forgiveness Gradient",
+      "src": "/diagrams/inline/ch08-fig9.png",
+      "sourceFile": "ch08-fig9-forgiveness-gradient.excalidraw"
+    },
+    {
       "chapter": "09",
       "index": 1,
       "title": "Where scarcity moves",
@@ -484,6 +799,41 @@
       "sourceFile": "ch09-fig4-review-bottleneck.excalidraw"
     },
     {
+      "chapter": "09",
+      "index": 5,
+      "title": "Ch09 Fig5 Monday Morning",
+      "src": "/diagrams/inline/ch09-fig5.png",
+      "sourceFile": "ch09-fig5-monday-morning.excalidraw"
+    },
+    {
+      "chapter": "09",
+      "index": 6,
+      "title": "Ch09 Fig6 Seats Vs Approval Path",
+      "src": "/diagrams/inline/ch09-fig6.png",
+      "sourceFile": "ch09-fig6-seats-vs-approval-path.excalidraw"
+    },
+    {
+      "chapter": "09",
+      "index": 7,
+      "title": "Ch09 Fig7 Throughput Not Velocity",
+      "src": "/diagrams/inline/ch09-fig7.png",
+      "sourceFile": "ch09-fig7-throughput-not-velocity.excalidraw"
+    },
+    {
+      "chapter": "09",
+      "index": 8,
+      "title": "Ch09 Fig8 Consensus Review",
+      "src": "/diagrams/inline/ch09-fig8.png",
+      "sourceFile": "ch09-fig8-consensus-review.excalidraw"
+    },
+    {
+      "chapter": "09",
+      "index": 9,
+      "title": "Ch09 Fig9 Accountability Owner",
+      "src": "/diagrams/inline/ch09-fig9.png",
+      "sourceFile": "ch09-fig9-accountability-owner.excalidraw"
+    },
+    {
       "chapter": "10",
       "index": 1,
       "title": "Churn vs durable",
@@ -503,6 +853,13 @@
       "title": "Cost of weak standards",
       "src": "/diagrams/inline/ch10-fig3.png",
       "sourceFile": "ch10-fig3-cost-of-weak-standards.excalidraw"
+    },
+    {
+      "chapter": "10",
+      "index": 4,
+      "title": "Ch10 Fig4 Situated Intelligence",
+      "src": "/diagrams/inline/ch10-fig4.png",
+      "sourceFile": "ch10-fig4-situated-intelligence.excalidraw"
     }
   ],
   "maps": [

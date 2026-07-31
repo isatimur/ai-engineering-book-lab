@@ -5,7 +5,7 @@
   "elements": [
     {
       "type": "text", "id": "eyebrow", "x": 40, "y": 30, "width": 300, "height": 16,
-      "text": "CHAPTER 4  ·  FIGURE 2", "originalText": "CHAPTER 4  ·  FIGURE 2",
+      "text": "CHAPTER 4  ·  FIGURE 3", "originalText": "CHAPTER 4  ·  FIGURE 3",
       "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
