@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 941
+Total videos: 971
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -943,3 +943,33 @@ Total videos: 941
 939. [The Messy Reality of Scale: Synthetic Data and Pre-Training — Marah Abdin & Robert McHardy, poolside](https://www.youtube.com/watch?v=KhYifX22yhE) — `KhYifX22yhE` — 17:31
 940. [State of Data — Sean Cai, Independent / State of Data](https://www.youtube.com/watch?v=ZyIoTOAbRfs) — `ZyIoTOAbRfs` — 18:22
 941. [DeepSWE: A Contamination-Resistant Coding Benchmark — James Shi, Datacurve](https://www.youtube.com/watch?v=Yk87oUPVaxU) — `Yk87oUPVaxU` — 17:34
+942. [AI Agents for Performance: Ship Faster, Pay Less — Rajat Shah, Netflix](https://www.youtube.com/watch?v=CgsWxRUY5Eo) — `CgsWxRUY5Eo` — 33:39
+943. [Serving 2 Million Models Without Melting: Scaling the Hugging Face Hub — Arek Borucki, Hugging Face](https://www.youtube.com/watch?v=lyL5QhgIOxc) — `lyL5QhgIOxc` — 21:39
+944. [Forward Deployed Engineering 101 — Kevin Bai, Anthropic, ex Palantir & Rippling Founding FDE](https://www.youtube.com/watch?v=KwhgfwOSToQ) — `KwhgfwOSToQ` — 17:48
+945. [How Forward Deployed Engineering is done at Kepler — Vinoo Ganesh](https://www.youtube.com/watch?v=1OMHGsUZiqA) — `1OMHGsUZiqA` — 22:20
+946. [How Forward Deployed Engineering is done at Decagon — Sunny Rekhi](https://www.youtube.com/watch?v=7wu2hsRfvV0) — `7wu2hsRfvV0` — 18:09
+947. [The Dirty Secret of Forward Deployed Engineering — Natalie Meurer, Sierra](https://www.youtube.com/watch?v=Byv311hdoHE) — `Byv311hdoHE` — 16:49
+948. [How Forward Deployed Engineering is done at Ramp — Leo Mehr](https://www.youtube.com/watch?v=ITMXwI6QL6A) — `ITMXwI6QL6A` — 14:05
+949. [How Forward Deployed Engineering is done at Cognition — Jia Wu](https://www.youtube.com/watch?v=RVxym6mmIns) — `RVxym6mmIns` — 17:38
+950. [AI tools for Forward Deployed Engineering — Vasuman Moza, Varick Agents](https://www.youtube.com/watch?v=l0FLhNqBOic) — `l0FLhNqBOic` — 20:23
+951. [How Forward Deployed Engineering is done at Factory — Eno Reyes](https://www.youtube.com/watch?v=wpOA-UXynoM) — `wpOA-UXynoM` — 21:21
+952. [Your Agent Didn't Fail. Your Harness Did. — Vinoth Govindarajan, OpenAI](https://www.youtube.com/watch?v=BInpv7lGp1o) — `BInpv7lGp1o` — 18:26
+953. [ALPHALAB: Multi-Agent Research Across Optimization Domains — Brendan Rappazzo, Morgan Stanley](https://www.youtube.com/watch?v=kiqubc5b5Yo) — `kiqubc5b5Yo` — 20:07
+954. [Skills are new features: Building Skill-Centric Harness — Yogendra Miraje, FactSet](https://www.youtube.com/watch?v=7jjudsEhBtM) — `7jjudsEhBtM` — 17:24
+955. [SimulationMaxxing: How we ship agents 20× faster — Aman Gupta (Nubank) + Shreya Rajpal (Snowglobe)](https://www.youtube.com/watch?v=KMR_RBoCa4M) — `KMR_RBoCa4M` — 16:29
+956. [Why Off-the-Shelf AI Doesn't Understand Money — Udi Menkes, Intuit](https://www.youtube.com/watch?v=Owb8g3yDyzo) — `Owb8g3yDyzo` — 19:50
+957. [Persona Engineering: A Field Guide to AI Synthetic Personas — Ishan Anand, InsightSciences.ai](https://www.youtube.com/watch?v=YnNF55QV0zs) — `YnNF55QV0zs` — 21:09
+958. [How Kepler Built Verifiable AI for Financial Services — Vinoo Ganesh](https://www.youtube.com/watch?v=Tt2kX2sgQio) — `Tt2kX2sgQio` — 22:30
+959. [We Vetted 2000 AI Skills Before They Reached Developers — Lucas Palma, Nubank](https://www.youtube.com/watch?v=iKQ78wyJEXU) — `iKQ78wyJEXU` — 16:24
+960. [Wearing the Agent: From Group Chats to Glasses — Sai Krishna Rallabandi](https://www.youtube.com/watch?v=s67bE2Ur3bY) — `s67bE2Ur3bY` — 19:09
+961. [Let's integrate AI Agents in Event-Sourced Systems — Divakar Kumar, FlyersSoft](https://www.youtube.com/watch?v=o6U_2vd967Y) — `o6U_2vd967Y` — 21:37
+962. [Build for the Memo, Not the Demo — Shawn Chan, China Resources Holdings](https://www.youtube.com/watch?v=tJFjeMBKbIY) — `tJFjeMBKbIY` — 24:23
+963. [Your Finance Agent's Bottleneck Is You — Ramana Siddanth Emani, Auditoria AI](https://www.youtube.com/watch?v=z0sh8HyTrDo) — `z0sh8HyTrDo` — 13:42
+964. [First Steps Toward Automated AI Research — Richard Socher, CEO Recursive AI](https://www.youtube.com/watch?v=pWXUkLP9uWM) — `pWXUkLP9uWM` — 20:24
+965. [fighting slop with slop — Vaibhav Gupta, Boundary](https://www.youtube.com/watch?v=AMiyLItEtLA) — `AMiyLItEtLA` — 21:32
+966. [Agents at Scale: Inside MiniMax's Model and the Infrastructure Behind It — Olive Song](https://www.youtube.com/watch?v=AVMr9PMINyo) — `AVMr9PMINyo` — 20:14
+967. [Reinforcement Learning without Verifiable Rewards — Will Brown, Prime Intellect](https://www.youtube.com/watch?v=AQv3qRCG6Gw) — `AQv3qRCG6Gw` — 19:27
+968. [Benchmarks: The Good, the Bad, and the Ugly — Ali Khial, G2i](https://www.youtube.com/watch?v=jWq-aZIU0kM) — `jWq-aZIU0kM` — 12:49
+969. [Ending AI Slop — Thais Castello Branco, Taste Labs](https://www.youtube.com/watch?v=lCBf9slCanI) — `lCBf9slCanI` — 16:30
+970. [Verifiable Environments for AI in Biology — Kenny Workman, LatchBio](https://www.youtube.com/watch?v=3ZMUiFaQ3qg) — `3ZMUiFaQ3qg` — 17:42
+971. [The Base Model Is Dead — Varun Singh, Arcee AI](https://www.youtube.com/watch?v=xbPriQWXtWM) — `xbPriQWXtWM` — 17:45

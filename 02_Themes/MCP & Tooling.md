@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 111
+- Total tagged videos: 114
 
 ## Cross-video synthesis
 
-- This theme appears across 111 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (51), Agent Architecture (49), Org Design & Leadership (12).
+- This theme appears across 114 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (51), Agent Architecture (50), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -123,6 +123,9 @@
 - [[902-yWS0udrIOc8-agentic-security-permissions-provenance-and-the-agent-supply-chain-steve-yegge-gas-town|#902 — Agentic Security: Permissions, Provenance, and the Agent Supply Chain — Steve Yegge, Gas Town]]
 - [[910-VGN22pPpb-8-thinner-agents-on-a-smarter-substrate-the-ontology-based-semantic-layer-emil-eifrem-neo4j|#910 — Thinner Agents on a Smarter Substrate: The Ontology-based Semantic Layer — Emil Eifrem, Neo4j]]
 - [[930-q2JrUKBMf0w-the-future-of-evals-from-llm-as-a-judge-to-agent-as-a-judge-aparna-dhinakaran-arize-ai|#930 — The Future of Evals: From LLM as a Judge to Agent as a Judge — Aparna Dhinakaran, Arize AI]]
+- [[950-l0FLhNqBOic-ai-tools-for-forward-deployed-engineering-vasuman-moza-varick-agents|#950 — AI tools for Forward Deployed Engineering — Vasuman Moza, Varick Agents]]
+- [[954-7jjudsEhBtM-skills-are-new-features-building-skill-centric-harness-yogendra-miraje-factset|#954 — Skills are new features: Building Skill-Centric Harness — Yogendra Miraje, FactSet]]
+- [[959-iKQ78wyJEXU-we-vetted-2000-ai-skills-before-they-reached-developers-lucas-palma-nubank|#959 — We Vetted 2000 AI Skills Before They Reached Developers — Lucas Palma, Nubank]]
 
 ## Notes
 

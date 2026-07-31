@@ -2,7 +2,7 @@
 
 ## [[Agent Architecture]]
 
-- Corpus count: 333
+- Corpus count: 342
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
@@ -14,7 +14,7 @@
 
 ## [[Coding Agents]]
 
-- Corpus count: 423
+- Corpus count: 425
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -26,7 +26,7 @@
 
 ## [[Evals & Reliability]]
 
-- Corpus count: 379
+- Corpus count: 380
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]
@@ -38,16 +38,19 @@
 
 ## [[General AI Engineering]]
 
-- Corpus count: 5
+- Corpus count: 18
 - [[092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals|#92 — Music from AIE Code Summit - Instrumentals]]
 - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs]]
 - [[688-YNJvm7t3yq8-why-your-ai-ux-is-broken-and-it-s-not-the-model-s-fault-mike-christensen-ably|#688 — Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably]]
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
 - [[754-gUMwt4-5kn0-2026-ai-engineer-vibe-reel|#754 — 2026 AI Engineer Vibe Reel]]
+- [[944-KwhgfwOSToQ-forward-deployed-engineering-101-kevin-bai-anthropic-ex-palantir-rippling-founding-fde|#944 — Forward Deployed Engineering 101 — Kevin Bai, Anthropic, ex Palantir & Rippling Founding FDE]]
+- [[945-1OMHGsUZiqA-how-forward-deployed-engineering-is-done-at-kepler-vinoo-ganesh|#945 — How Forward Deployed Engineering is done at Kepler — Vinoo Ganesh]]
+- [[946-7wu2hsRfvV0-how-forward-deployed-engineering-is-done-at-decagon-sunny-rekhi|#946 — How Forward Deployed Engineering is done at Decagon — Sunny Rekhi]]
 
 ## [[MCP & Tooling]]
 
-- Corpus count: 111
+- Corpus count: 114
 - [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
 - [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
@@ -59,7 +62,7 @@
 
 ## [[Models & Inference]]
 
-- Corpus count: 129
+- Corpus count: 132
 - [[007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai|#7 — Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI]]
 - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind]]
 - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research]]
@@ -71,7 +74,7 @@
 
 ## [[Org Design & Leadership]]
 
-- Corpus count: 241
+- Corpus count: 243
 - [[002-4fntwuOoedA-the-end-of-apps-kitze-sizzy-co|#2 — The End of Apps — Kitze, Sizzy.co]]
 - [[003-XNtkiQJ49Ps-agents-need-more-than-a-chat-jacob-lauritzen-cto-legora|#3 — Agents need more than a chat - Jacob Lauritzen, CTO Legora]]
 - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer]]
@@ -83,7 +86,7 @@
 
 ## [[RAG & Retrieval]]
 
-- Corpus count: 165
+- Corpus count: 167
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
 - [[008-mYSRn6PC1mc-full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard-paul-iusztin-sam|#8 — Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi]]

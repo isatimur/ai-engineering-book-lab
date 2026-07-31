@@ -1,18 +1,18 @@
 # Corpus Stats
 
-- Total notes: 941
-- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 938, 'unavailable': 1}
+- Total notes: 971
+- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 938, 'unavailable': 31}
 
 ## Theme counts
 
-- Agent Architecture: 333
-- Coding Agents: 423
-- Evals & Reliability: 379
-- General AI Engineering: 5
-- MCP & Tooling: 111
-- Models & Inference: 129
-- Org Design & Leadership: 241
-- RAG & Retrieval: 165
+- Agent Architecture: 342
+- Coding Agents: 425
+- Evals & Reliability: 380
+- General AI Engineering: 18
+- MCP & Tooling: 114
+- Models & Inference: 132
+- Org Design & Leadership: 243
+- RAG & Retrieval: 167
 - Security & Guardrails: 26
 - Voice & Realtime: 43
 
@@ -25,8 +25,8 @@
 - Samuel Colvin: 3
 - Harald Kirschner: 3
 - Philipp Schmid: 3
+- Will Brown: 3
 - Patrick Debois: 3
 - swyx: 3
 - Matt Pocock: 2
 - Robert Brennan: 2
-- Thariq Shihipar: 2

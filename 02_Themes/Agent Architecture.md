@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 333
+- Total tagged videos: 342
 
 ## Cross-video synthesis
 
-- This theme appears across 333 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (288), Evals & Reliability (251), MCP & Tooling (49).
+- This theme appears across 342 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (289), Evals & Reliability (251), MCP & Tooling (50).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -345,6 +345,15 @@
 - [[939-KhYifX22yhE-the-messy-reality-of-scale-synthetic-data-and-pre-training-marah-abdin-robert-mchardy-pool|#939 — The Messy Reality of Scale: Synthetic Data and Pre-Training — Marah Abdin & Robert McHardy, poolside]]
 - [[940-ZyIoTOAbRfs-state-of-data-sean-cai-independent-state-of-data|#940 — State of Data — Sean Cai, Independent / State of Data]]
 - [[941-Yk87oUPVaxU-deepswe-a-contamination-resistant-coding-benchmark-james-shi-datacurve|#941 — DeepSWE: A Contamination-Resistant Coding Benchmark — James Shi, Datacurve]]
+- [[942-CgsWxRUY5Eo-ai-agents-for-performance-ship-faster-pay-less-rajat-shah-netflix|#942 — AI Agents for Performance: Ship Faster, Pay Less — Rajat Shah, Netflix]]
+- [[950-l0FLhNqBOic-ai-tools-for-forward-deployed-engineering-vasuman-moza-varick-agents|#950 — AI tools for Forward Deployed Engineering — Vasuman Moza, Varick Agents]]
+- [[952-BInpv7lGp1o-your-agent-didn-t-fail-your-harness-did-vinoth-govindarajan-openai|#952 — Your Agent Didn't Fail. Your Harness Did. — Vinoth Govindarajan, OpenAI]]
+- [[953-kiqubc5b5Yo-alphalab-multi-agent-research-across-optimization-domains-brendan-rappazzo-morgan-stanley|#953 — ALPHALAB: Multi-Agent Research Across Optimization Domains — Brendan Rappazzo, Morgan Stanley]]
+- [[955-KMR_RBoCa4M-simulationmaxxing-how-we-ship-agents-20-faster-aman-gupta-nubank-shreya-rajpal-snowglobe|#955 — SimulationMaxxing: How we ship agents 20× faster — Aman Gupta (Nubank) + Shreya Rajpal (Snowglobe)]]
+- [[960-s67bE2Ur3bY-wearing-the-agent-from-group-chats-to-glasses-sai-krishna-rallabandi|#960 — Wearing the Agent: From Group Chats to Glasses — Sai Krishna Rallabandi]]
+- [[961-o6U_2vd967Y-let-s-integrate-ai-agents-in-event-sourced-systems-divakar-kumar-flyerssoft|#961 — Let's integrate AI Agents in Event-Sourced Systems — Divakar Kumar, FlyersSoft]]
+- [[963-z0sh8HyTrDo-your-finance-agent-s-bottleneck-is-you-ramana-siddanth-emani-auditoria-ai|#963 — Your Finance Agent's Bottleneck Is You — Ramana Siddanth Emani, Auditoria AI]]
+- [[966-AVMr9PMINyo-agents-at-scale-inside-minimax-s-model-and-the-infrastructure-behind-it-olive-song|#966 — Agents at Scale: Inside MiniMax's Model and the Infrastructure Behind It — Olive Song]]
 
 ## Notes
 

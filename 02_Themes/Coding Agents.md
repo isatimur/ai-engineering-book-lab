@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 423
+- Total tagged videos: 425
 
 ## Cross-video synthesis
 
-- This theme appears across 423 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (288), Evals & Reliability (266), MCP & Tooling (51).
+- This theme appears across 425 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (289), Evals & Reliability (266), MCP & Tooling (51).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -435,6 +435,8 @@
 - [[939-KhYifX22yhE-the-messy-reality-of-scale-synthetic-data-and-pre-training-marah-abdin-robert-mchardy-pool|#939 — The Messy Reality of Scale: Synthetic Data and Pre-Training — Marah Abdin & Robert McHardy, poolside]]
 - [[940-ZyIoTOAbRfs-state-of-data-sean-cai-independent-state-of-data|#940 — State of Data — Sean Cai, Independent / State of Data]]
 - [[941-Yk87oUPVaxU-deepswe-a-contamination-resistant-coding-benchmark-james-shi-datacurve|#941 — DeepSWE: A Contamination-Resistant Coding Benchmark — James Shi, Datacurve]]
+- [[957-YnNF55QV0zs-persona-engineering-a-field-guide-to-ai-synthetic-personas-ishan-anand-insightsciences-ai|#957 — Persona Engineering: A Field Guide to AI Synthetic Personas — Ishan Anand, InsightSciences.ai]]
+- [[966-AVMr9PMINyo-agents-at-scale-inside-minimax-s-model-and-the-infrastructure-behind-it-olive-song|#966 — Agents at Scale: Inside MiniMax's Model and the Infrastructure Behind It — Olive Song]]
 
 ## Notes
 

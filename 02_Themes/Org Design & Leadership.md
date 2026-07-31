@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 241
+- Total tagged videos: 243
 
 ## Cross-video synthesis
 
-- This theme appears across 241 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (18).
+- This theme appears across 243 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (39), Evals & Reliability (18).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -253,6 +253,8 @@
 - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs]]
 - [[688-YNJvm7t3yq8-why-your-ai-ux-is-broken-and-it-s-not-the-model-s-fault-mike-christensen-ably|#688 — Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably]]
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
+- [[951-wpOA-UXynoM-how-forward-deployed-engineering-is-done-at-factory-eno-reyes|#951 — How Forward Deployed Engineering is done at Factory — Eno Reyes]]
+- [[953-kiqubc5b5Yo-alphalab-multi-agent-research-across-optimization-domains-brendan-rappazzo-morgan-stanley|#953 — ALPHALAB: Multi-Agent Research Across Optimization Domains — Brendan Rappazzo, Morgan Stanley]]
 
 ## Notes
 

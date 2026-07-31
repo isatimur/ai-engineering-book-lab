@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 379
+- Total tagged videos: 380
 
 ## Cross-video synthesis
 
-- This theme appears across 379 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 380 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (266), Agent Architecture (251), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
@@ -391,6 +391,7 @@
 - [[939-KhYifX22yhE-the-messy-reality-of-scale-synthetic-data-and-pre-training-marah-abdin-robert-mchardy-pool|#939 — The Messy Reality of Scale: Synthetic Data and Pre-Training — Marah Abdin & Robert McHardy, poolside]]
 - [[940-ZyIoTOAbRfs-state-of-data-sean-cai-independent-state-of-data|#940 — State of Data — Sean Cai, Independent / State of Data]]
 - [[941-Yk87oUPVaxU-deepswe-a-contamination-resistant-coding-benchmark-james-shi-datacurve|#941 — DeepSWE: A Contamination-Resistant Coding Benchmark — James Shi, Datacurve]]
+- [[968-jWq-aZIU0kM-benchmarks-the-good-the-bad-and-the-ugly-ali-khial-g2i|#968 — Benchmarks: The Good, the Bad, and the Ugly — Ali Khial, G2i]]
 
 ## Notes
 
