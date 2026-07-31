@@ -30,7 +30,7 @@
 
 **Context:** `InlineText`'s current split regex (`text.split(/(\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*)/g)`) only recognizes `**bold**`, `` `code` ``, and `*italic*`. It has no branch for markdown links. Confirmed live: `website/src/content/about-the-lab.md` already contains `[`STATS.md`](https://github.com/isatimur/ai-engineering-book-lab/blob/main/STATS.md)`, and the production site renders it as literal visible text — `[`, a correctly-rendered `<code>STATS.md</code>`, then `](https://...)"` — not a clickable link. This task fixes that gap (which also fixes the pre-existing broken STATS.md link as a side effect) and is required before Task 5's new links can actually work.
 
-- [ ] **Step 1: Add the link branch and extend the split regex**
+- [x] **Step 1: Add the link branch and extend the split regex**
 
 Open `website/src/components/text/InlineText.tsx`. Change line 14 from:
 
@@ -65,23 +65,23 @@ Then, immediately after the existing `if (part.startsWith('*') && part.endsWith(
 
 The label is re-processed through `InlineText` itself (not the raw `ListenWordRun`) so nested formatting inside a link label — e.g. `` `STATS.md` `` inside the existing `[`STATS.md`](...)` link — still renders as `<code>` correctly, matching current behavior for non-link text.
 
-- [ ] **Step 2: Type-check**
+- [x] **Step 2: Type-check**
 
 Run: `cd website && npm run lint`
 Expected: no errors (this is a same-file, self-contained change; `InlineText` already imports itself implicitly via JSX recursion, no new import needed since the function is calling itself by name within its own module).
 
-- [ ] **Step 3: Full test suite still green**
+- [x] **Step 3: Full test suite still green**
 
 Run: `cd website && npm test`
 Expected: all 91 existing tests still pass (none reference `InlineText`'s internals directly).
 
-- [ ] **Step 4: Manual verification via build output**
+- [x] **Step 4: Manual verification via build output**
 
 Run: `cd website && npm run build`
 Then: `grep -o '<a[^>]*href="https://github.com/isatimur/ai-engineering-book-lab[^>]*>[^<]*<code>STATS.md</code></a>' dist/index.html`
 Expected: one match — confirms the existing STATS.md link now renders as a real anchor tag instead of literal bracket text.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
@@ -118,7 +118,7 @@ the upcoming About the Lab edit's new links to actually work."
   export const ARTIFACTS: Artifact[];
   ```
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Create `website/src/data/artifacts.test.ts`:
 
@@ -164,12 +164,12 @@ describe('ARTIFACTS', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `cd website && npx vitest run src/data/artifacts.test.ts`
 Expected: FAIL — `Cannot find module './artifacts'` (the module doesn't exist yet).
 
-- [ ] **Step 3: Create the data module**
+- [x] **Step 3: Create the data module**
 
 Create `website/src/data/artifacts.ts`:
 
@@ -230,12 +230,12 @@ export const ARTIFACTS: Artifact[] = [
 ];
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `cd website && npx vitest run src/data/artifacts.test.ts`
 Expected: PASS (4 tests).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
@@ -256,7 +256,7 @@ git commit -m "feat: add ARTIFACTS data for homepage cross-reference section"
 
 No automated test for this file — per Global Constraints, this repo has no component-rendering test harness, and this is a pure presentational component with no branching logic worth a `.test.ts` (its only real logic, the badge/link conditionals, is trivial JSX). Verified in Step 2/3 below via type-check and, at the end of Task 4, via build-output grep.
 
-- [ ] **Step 1: Create the component**
+- [x] **Step 1: Create the component**
 
 Create `website/src/components/ArtifactCard.tsx`:
 
@@ -314,12 +314,12 @@ export const ArtifactCard = ({ label, headline, description, badge, links }: Art
 
 Note the `<h3>` (not `<h2>`): Task 4 introduces a new section-level `<h2>` ("Three things came out of writing this"), so each card's own headline must sit one level below it to keep the page's heading hierarchy correct — the same H1/heading hygiene already fixed elsewhere on this site.
 
-- [ ] **Step 2: Type-check**
+- [x] **Step 2: Type-check**
 
 Run: `cd website && npm run lint`
 Expected: no errors.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
@@ -338,7 +338,7 @@ git commit -m "feat: add ArtifactCard presentational component"
 - Consumes: `ARTIFACTS` from `../data/artifacts` (Task 2), `ArtifactCard` from `../components/ArtifactCard` (Task 3).
 - Produces: nothing new for later tasks.
 
-- [ ] **Step 1: Add imports**
+- [x] **Step 1: Add imports**
 
 In `website/src/pages/Catalogue.tsx`, after the existing `import { DefinitionBlock } from '../components/DefinitionBlock';` line, add:
 
@@ -347,7 +347,7 @@ import { ArtifactCard } from '../components/ArtifactCard';
 import { ARTIFACTS } from '../data/artifacts';
 ```
 
-- [ ] **Step 2: Replace the claims-ledger section**
+- [x] **Step 2: Replace the claims-ledger section**
 
 Find this exact block (currently the `<section className="mt-16 pt-10 border-t border-white/10 text-center">...</section>` that renders the claims-ledger badge and links, immediately after `<DefinitionBlock />` and before the `</main>` closing tag):
 
@@ -436,17 +436,17 @@ Replace it with:
         </section>
 ```
 
-- [ ] **Step 3: Type-check**
+- [x] **Step 3: Type-check**
 
 Run: `cd website && npm run lint`
 Expected: no errors. (If `Link` becomes unused elsewhere in the file, `tsc --noEmit` won't flag unused imports by default — but `Link` is still used by the header nav in the same file, so no cleanup needed here.)
 
-- [ ] **Step 4: Full test suite still green**
+- [x] **Step 4: Full test suite still green**
 
 Run: `cd website && npm test`
 Expected: all tests pass, including the new `artifacts.test.ts` from Task 2.
 
-- [ ] **Step 5: Manual verification via dev server**
+- [x] **Step 5: Manual verification via dev server**
 
 Run: `cd website && npm run dev`, open `http://localhost:3000/`, scroll to the new section, and confirm:
 - Three cards render side by side on desktop, stacked on mobile (resize the window or use dev tools device toolbar).
@@ -455,7 +455,7 @@ Run: `cd website && npm run dev`, open `http://localhost:3000/`, scroll to the n
 
 Stop the dev server when done (Ctrl+C).
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
@@ -474,7 +474,7 @@ git commit -m "feat: replace claims-ledger-only section with 3-up Built from thi
 - Consumes: nothing (plain content edit; relies on Task 1's `InlineText` fix to render its new links correctly).
 - Produces: nothing for later tasks.
 
-- [ ] **Step 1: Edit the bullet list line**
+- [x] **Step 1: Edit the bullet list line**
 
 In `website/src/content/about-the-lab.md`, change:
 
@@ -488,7 +488,7 @@ to:
 - quality judges for summaries, claims, and chapters ([book-mash](https://github.com/isatimur/book-mash))
 ```
 
-- [ ] **Step 2: Insert the ai-native-org paragraph**
+- [x] **Step 2: Insert the ai-native-org paragraph**
 
 In the same file, change:
 
@@ -508,12 +508,12 @@ One idea already left the lab: Chapter 9's argument for constrained delegation b
 This started as "let's make better notes."
 ```
 
-- [ ] **Step 3: Full test suite still green**
+- [x] **Step 3: Full test suite still green**
 
 Run: `cd website && npm test`
 Expected: all tests pass (no test reads this markdown file's prose content).
 
-- [ ] **Step 4: Manual verification via build output**
+- [x] **Step 4: Manual verification via build output**
 
 Run: `cd website && npm run build`
 Then:
@@ -523,7 +523,7 @@ grep -o '<a[^>]*href="https://github.com/isatimur/ai-native-org"[^>]*>[^<]*</a>'
 ```
 Expected: one match each — confirms both new links render as real anchors, not literal bracket text.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
@@ -537,7 +537,7 @@ git commit -m "docs: link book-mash and ai-native-org from About the Lab"
 
 **Files:** none (verification-only task).
 
-- [ ] **Step 1: Run the full check sequence**
+- [x] **Step 1: Run the full check sequence**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book/website
@@ -548,7 +548,7 @@ npm run build
 
 All three must succeed. (If earlier tasks were already committed incrementally, this re-confirms nothing regressed across the full set of changes.)
 
-- [ ] **Step 2: Confirm all 4 expected strings are present in the final build**
+- [x] **Step 2: Confirm all 4 expected strings are present in the final build**
 
 ```bash
 grep -c 'Three things came out of writing this' dist/index.html
@@ -559,7 +559,7 @@ grep -o '<a[^>]*href="https://ai-native-org.vercel.app"[^>]*>[^<]*</a>' dist/ind
 
 Expected: `1` for each of the first three, and one matched anchor tag for the fourth.
 
-- [ ] **Step 3: Check for and revert incidental unrelated regeneration**
+- [x] **Step 3: Check for and revert incidental unrelated regeneration**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
@@ -568,14 +568,14 @@ git status --short website/
 
 Per Global Constraints, `npm run build`'s `prebuild` step can touch unrelated files (diagram manifests, `llms.txt`/`llms-full.txt`, `versions.json`) as a side effect of local git-history/corpus differences from CI. If any of those appear modified and are unrelated to this feature, revert tracked ones with `git checkout -- <file>` and delete new untracked ones with `rm`. Confirm afterward that `git status --short website/` shows only files this plan touched (or nothing, if all 5 tasks were already committed individually).
 
-- [ ] **Step 4: Clean build artifacts**
+- [x] **Step 4: Clean build artifacts**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book/website
 rm -rf dist .vite-react-ssg-temp
 ```
 
-- [ ] **Step 5: Final status check before push**
+- [x] **Step 5: Final status check before push**
 
 ```bash
 cd ~/Dev/LifeOS/knowledge-bases/ai-engineer-book
