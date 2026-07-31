@@ -38,7 +38,10 @@ export const InlineText = ({ text, listen = false }: Props) => {
           );
         }
         const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-        if (linkMatch) {
+        // Scheme allowlist: only http(s), site-internal, and fragment hrefs may
+        // become anchors; anything else (javascript:, data:, …) falls through
+        // and renders as plain text.
+        if (linkMatch && /^(https?:\/\/|\/|#)/.test(linkMatch[2])) {
           const [, label, href] = linkMatch;
           const external = /^https?:\/\//.test(href);
           return (
