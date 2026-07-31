@@ -11,7 +11,7 @@ type Props = {
 
 export const InlineText = ({ text, listen = false }: Props) => {
   const { open } = useGlossary();
-  const parts = text.split(/(\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*)/g).filter(Boolean);
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|`[^`]+`|\*[^*]+\*)/g).filter(Boolean);
 
   return (
     <>
@@ -35,6 +35,20 @@ export const InlineText = ({ text, listen = false }: Props) => {
             <em key={index}>
               <ListenWordRun text={part.slice(1, -1)} listen={listen} />
             </em>
+          );
+        }
+        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (linkMatch) {
+          const [, label, href] = linkMatch;
+          const external = /^https?:\/\//.test(href);
+          return (
+            <a
+              key={index}
+              href={href}
+              {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
+              <InlineText text={label} listen={listen} />
+            </a>
           );
         }
         const sub = splitWithGlossary(part, GLOSSARY);
