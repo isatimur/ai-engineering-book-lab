@@ -38,3 +38,4 @@ dist/
 # Editor / tooling local state
 .vscode/
 .claude/
+.vercel
