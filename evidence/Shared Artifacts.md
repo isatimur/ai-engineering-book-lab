@@ -7,6 +7,7 @@ each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
 > Coverage: 221 videos referenced at least one artifact; corpus size 971.
+> Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
 ## GitHub repositories (49)
 
@@ -79,7 +80,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://huggingface.co/datasets/Halluminate/WebBench> — [[384-Djv8Sp11UjI-the-current-state-of-browser-agents-jerry-wu-and-wyatt-marshall|#384]]
 - <https://huggingface.co/gradientai/v-alpha-tross> — [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473]]
 
-## Deep-link resources (120)
+## Deep-link resources (121)
 
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
@@ -159,7 +160,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://openai.com/index/harness-engineering> — [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16]]
 - <https://pl.linkedin.com/in/prince-canuma> — [[670-zTLJNHj0DeQ-why-mlx-prince-canuma-neywa-labs|#670]]
 - <https://platform.claude.com/docs/en/agent-sdk/overview> — [[045-TqC1qOfiVcQ-claude-agent-sdk-full-workshop-thariq-shihipar-anthropic|#45]]
-- <https://prezi.com/view/TSBwBXLNcXzzWrLbRiit/> — [[034-U00AOI1eJUE-bending-a-public-mcp-server-without-breaking-it-nimrod-hauser-baz|#34]]
+- <https://prezi.com/view/TSBwBXLNcXzzWrLbRiit> — [[034-U00AOI1eJUE-bending-a-public-mcp-server-without-breaking-it-nimrod-hauser-baz|#34]]
 - <https://quantyca-my.sharepoint.com/:b:/g/personal/mauro_luchetti_quantyca_it/IQBUCcMBzsAfSZtJXrCdaqV0AaUyDhifxP360fqCUupyaGc> — [[021-VXfRt_H-V08-one-registry-to-rule-them-all-sonny-merla-mauro-luchetti-mattia-redaelli-quantyca|#21]]
 - <https://rootsignals.ai/agentevals> — [[445-y2Drx0SDZLo-agent-evals-finally-with-the-map|#445]]
 - <https://sander.ai/2025/04/15/latents.html> — [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4]]
@@ -186,6 +187,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://www.baseten.co/blog> — [[189-3WV1vT0B0cg-the-rise-of-open-models-in-the-enterprise-amir-haghighat-baseten|#189]]
 - <https://www.dropbox.com/scl/fi/lyp1my0oc9whpusps29t7/Agent-Simulations-Talk.pdf> — [[935-Ib5t2RLtxvM-from-agent-traces-to-agent-simulations-rustem-feyzkhanov-snorkel-ai|#935]]
 - <https://www.gettheleverage.com/p/why-is-ai-marketing-so-so-bad> — [[396-y6L5RkEqQ8g-chatgpt-is-poorly-designed-so-i-fixed-it|#396]]
+- <https://www.klarity.ai> — [[465-7MiFIhlkBoE-patrick-dougherty-how-to-build-ai-agents-that-actually-work|#465]]
 - <https://www.nvidia.com/en-us> — [[141-Y2qc0UhDSnc-hacking-the-inference-pareto-frontier-kyle-kranen-nvidia|#141]]
 - <https://www.openhands.dev/blog> — [[180-o_hhkJtlbSs-software-development-agents-what-works-and-what-doesn-t-robert-brennan-openhands|#180]]
 - <https://www.oreilly.com/library/view/graphrag-the-definitive/9798341630147> — [[911-Q0VkgCyNVUg-crabrag-why-automated-assistants-need-graph-memory-not-more-tokens-stephen-chin-neo4j|#911]]

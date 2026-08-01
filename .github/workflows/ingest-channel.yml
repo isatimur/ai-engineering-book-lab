@@ -143,6 +143,11 @@ jobs:
       - name: Run full ingest pipeline
         run: python 99_Meta/scripts/update_ai_engineer_channel.py
 
+      - name: Refresh descriptions and shared artifacts
+        run: |
+          python 99_Meta/scripts/fetch_video_descriptions.py
+          python 99_Meta/scripts/build_shared_artifacts.py
+
       - name: Create pull request with new corpus material
         uses: peter-evans/create-pull-request@v6
         with:
