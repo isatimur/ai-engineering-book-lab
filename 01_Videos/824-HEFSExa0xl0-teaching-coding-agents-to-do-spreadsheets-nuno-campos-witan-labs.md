@@ -49,3 +49,7 @@ Nuno Campos shares a practical take on Teaching Coding Agents to do Spreadsheets
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/witanlabs/research-log>

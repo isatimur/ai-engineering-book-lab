@@ -45,3 +45,7 @@ A practical talk on Building Multi agent Systems with Finite State Machines. Sta
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/adamterlson/AgenticStateMachines>

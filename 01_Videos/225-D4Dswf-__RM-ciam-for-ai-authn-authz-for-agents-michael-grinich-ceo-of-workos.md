@@ -45,3 +45,7 @@ Michael Grinich shares a practical take on CIAM for AI: Authn/Authz for Agents. 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://workos.com/guides>

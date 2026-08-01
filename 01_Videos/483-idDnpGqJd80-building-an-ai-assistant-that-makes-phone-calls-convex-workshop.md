@@ -45,3 +45,7 @@ A practical talk on Building an AI assistant that makes phone calls [Convex Work
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Voice & Realtime**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/get-convex/ai-world-fair.git>

@@ -42,3 +42,7 @@ A practical talk on Your AI Agent Isn't an Engineer: The Art of Thoughtful Anthr
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://dev.to/blackgirlbytes/your-ai-agent-isnt-an-engineer-5egf>

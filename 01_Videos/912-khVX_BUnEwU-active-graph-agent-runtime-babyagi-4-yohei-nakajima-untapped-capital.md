@@ -49,3 +49,7 @@ Yohei Nakajima shares a practical take on Active Graph Agent Runtime (BabyAGI 4)
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/yoheinakajima/activegraph>

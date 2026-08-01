@@ -42,3 +42,11 @@ Mahmoud Mabrouk shares a practical take on Judge the Judge: Building LLM Evaluat
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- paper: <https://arxiv.org/abs/2507.19457>
+- repo: <https://github.com/Agenta-AI/judge-the-judge-talk-2026>
+- repo: <https://github.com/agenta-ai/agenta>
+- repo: <https://github.com/gepa-ai/gepa>
+- resource: <https://hamel.dev/blog/posts/field-guide>

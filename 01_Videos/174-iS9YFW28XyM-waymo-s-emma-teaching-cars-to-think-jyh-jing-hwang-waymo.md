@@ -42,3 +42,7 @@ Jyh Jing Hwang shares a practical take on Waymo's EMMA: Teaching Cars to Think. 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://waymo.com/blog/2024/10/introducing-emma>

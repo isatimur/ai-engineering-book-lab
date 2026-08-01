@@ -45,3 +45,9 @@ Travis Frisinger shares a practical take on The Coherence Trap: Why LLMs Feel Sm
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/T-rav/gpt-chat-analysis>
+- resource: <https://aibuddy.software/papers/2500_chatgpt_conversations_case_study.pdf>
+- resource: <https://aibuddy.software/papers/AI_Coherence_A_Theory_of_Utility_in_Large_Language_Models.pdf>

@@ -45,3 +45,8 @@ Roy Derks shares a practical take on Tool Calling Is Not Just Plumbing for AI Ag
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/IBM/wxflows>
+- resource: <https://hackteam.io/blog/build-your-first-mcp-server-with-typescript-in-under-10-minutes>

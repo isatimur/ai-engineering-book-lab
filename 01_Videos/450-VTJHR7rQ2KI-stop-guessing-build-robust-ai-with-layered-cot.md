@@ -45,3 +45,7 @@ A practical talk on Stop Guessing: Build Robust AI with Layered CoT. In “Stop 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- paper: <https://arxiv.org/abs/2501.18645>

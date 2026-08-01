@@ -42,3 +42,7 @@ eval-harness shares a practical take on Strategies for LLM Evals (GuideLLM, lm. 
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.redhat.com/en/products/ai>

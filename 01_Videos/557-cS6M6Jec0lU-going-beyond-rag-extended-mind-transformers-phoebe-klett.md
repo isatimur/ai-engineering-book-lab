@@ -42,3 +42,8 @@ Phoebe Klett shares a practical take on Going beyond RAG: Extended Mind Transfor
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- model: <https://huggingface.co/collections/normalcomputing/extended-mind-transformers-6655e9ba5853d86b32793aaf>
+- repo: <https://github.com/normal-computing/extended-mind-transformers>

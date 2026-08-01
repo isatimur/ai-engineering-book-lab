@@ -45,3 +45,7 @@ Abhishek Bhardwaj shares a practical take on Arrakis: How To Build An AI Sandbox
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
 - Could support a chapter/section on **Security & Guardrails**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/abshkbh/arrakis>

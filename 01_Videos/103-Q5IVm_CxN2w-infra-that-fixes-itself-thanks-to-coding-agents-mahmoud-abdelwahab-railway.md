@@ -42,3 +42,7 @@ Mahmoud Abdelwahab shares a practical take on Infra that fixes itself, thanks to
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/m-abdelwahab/railway-autofix>

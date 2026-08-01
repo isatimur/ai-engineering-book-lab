@@ -42,3 +42,7 @@ Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik shares a pr
 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://drive.google.com/file/d/18LqVzhfVS3iULYuy2EshWoMLmQt3rdpT/view>

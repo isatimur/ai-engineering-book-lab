@@ -76,3 +76,7 @@ Namespace's product is compute infrastructure for this new world: high-performan
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://namespace.so/blog/introducing-namespace>

@@ -49,3 +49,7 @@ Pedro Rodrigues shares a practical take on Skill Issue: How We Used AI to Make A
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://supabase.com/blog/authors/pedro_rodrigues>

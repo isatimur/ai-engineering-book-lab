@@ -63,3 +63,9 @@ WEKA open-sourced the Context Platform Engineering Toolkit on GitHub: a load gen
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/weka/LMCache>
+- resource: <https://medium.com/@callan.j.fox/evaluating-management-of-kv-cache-within-an-inference-system-2d7c3d266c3a>
+- resource: <https://www.weka.io/product/augmented-memory-grid>

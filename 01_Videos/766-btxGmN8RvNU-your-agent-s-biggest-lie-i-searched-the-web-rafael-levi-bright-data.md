@@ -49,3 +49,7 @@ Rafael Levi shares a practical take on Your Agent's Biggest Lie: "I Searched the
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://il.linkedin.com/in/rafael-levi>

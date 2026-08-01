@@ -42,3 +42,7 @@ Now What? shares a practical take on Your LLM Ran Out of Knowledge. LLMs are gre
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/agsheves/OracReasoningEngine>

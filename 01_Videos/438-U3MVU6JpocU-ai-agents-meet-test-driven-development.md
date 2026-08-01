@@ -45,3 +45,11 @@ A practical talk on AI Agents, Meet Test Driven Development. Deploying agentic w
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.vellum.ai/blog/agentic-workflows-emerging-architectures-and-design-patterns>
+- resource: <https://www.vellum.ai/blog/chain-of-thought-prompting-cot-everything-you-need-to-know>
+- resource: <https://www.vellum.ai/blog/the-four-pillars-of-building-a-production-grade-ai-application>
+- resource: <https://www.vellum.ai/blog/the-training-of-deepseek-r1-and-ways-to-use-it>
+- resource: <https://www.vellum.ai/reasoning-models>

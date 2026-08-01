@@ -45,3 +45,8 @@ A practical talk on ChatGPT is poorly designed. So I fixed it. Let's fix ChatGPT
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/bholmesdev/fixgpt>
+- resource: <https://www.gettheleverage.com/p/why-is-ai-marketing-so-so-bad>

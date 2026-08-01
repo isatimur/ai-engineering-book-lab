@@ -42,3 +42,7 @@ A practical talk on Vercel AI SDK Masterclass: From Fundamentals to Deep Researc
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://aie-feb-25.vercel.app/docs>

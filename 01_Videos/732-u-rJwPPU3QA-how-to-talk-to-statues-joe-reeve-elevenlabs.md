@@ -49,3 +49,7 @@ Joe Reeve shares a practical take on How to talk to statues. Key angle: focuses 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://elevenlabs.io/blog/talk-to-a-statue-building-a-multi-modal-elevenagents-powered-app>

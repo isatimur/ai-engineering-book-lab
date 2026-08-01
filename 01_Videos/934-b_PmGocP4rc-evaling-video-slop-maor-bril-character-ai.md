@@ -49,3 +49,7 @@ Maor Bril shares a practical take on Evaling Video Slop. Key angle: emphasizes e
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/character-ai/judgejudy>

@@ -49,3 +49,7 @@ Steve Yegge shares a practical take on Agentic Security: Permissions, Provenance
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/steveyegge/beads>

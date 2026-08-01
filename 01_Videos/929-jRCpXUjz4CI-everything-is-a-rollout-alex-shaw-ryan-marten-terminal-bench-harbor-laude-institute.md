@@ -49,3 +49,7 @@ Alex Shaw + Ryan Marten shares a practical take on Everything Is a Rollout. Key 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/harbor-framework/harbor>

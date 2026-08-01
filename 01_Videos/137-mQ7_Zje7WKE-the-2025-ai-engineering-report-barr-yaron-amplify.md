@@ -45,3 +45,7 @@ Barr Yaron shares a practical take on The 2025 AI Engineering Report. Come hear 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.amplifypartners.com/blog-posts/the-2025-ai-engineering-report>

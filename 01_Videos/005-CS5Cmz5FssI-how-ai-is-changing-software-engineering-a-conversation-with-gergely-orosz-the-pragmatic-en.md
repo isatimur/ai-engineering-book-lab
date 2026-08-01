@@ -45,3 +45,7 @@ A practical talk on How AI is changing Software Engineering: A Conversation with
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://nl.linkedin.com/company/the-pragmatic-engineer>

@@ -45,3 +45,7 @@ Jun Yu Tan shares a practical take on Designing AI To Scale Human Thought. Forge
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://jytan.net/blog/2025/ai-augmentation>

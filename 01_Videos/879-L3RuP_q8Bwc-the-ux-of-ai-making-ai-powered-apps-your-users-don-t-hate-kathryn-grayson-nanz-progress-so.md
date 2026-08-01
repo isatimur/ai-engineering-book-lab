@@ -49,3 +49,7 @@ Powered Apps Your Users Don't Hate - Kathryn Grayson Nanz shares a practical tak
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://bsky.app/profile/kgrayson.com>

@@ -42,3 +42,10 @@ agent: Sarmad Qadri shares a practical take on Exposing Agents as MCP servers wi
 
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/lastmile-ai/mcp-agent>
+- resource: <https://modelcontextprotocol.io/introduction>
+- resource: <https://www.anthropic.com/news/model-context-protocol>
+- resource: <https://www.anthropic.com/research/building-effective-agents>

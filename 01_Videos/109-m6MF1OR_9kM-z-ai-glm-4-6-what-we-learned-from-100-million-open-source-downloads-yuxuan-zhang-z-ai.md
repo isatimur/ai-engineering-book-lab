@@ -45,3 +45,13 @@ Yuxuan Zhang shares a practical take on Z.ai GLM 4.6: What We Learned From 100 M
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- model: <https://huggingface.co/ZHANGYUXUAN-zR>
+- paper: <https://arxiv.org/abs/2312.08914>
+- paper: <https://arxiv.org/abs/2408.06072>
+- paper: <https://arxiv.org/abs/2507.01006>
+- paper: <https://arxiv.org/abs/2508.06471>
+- repo: <https://github.com/CosmosShadow/gptpdf>
+- repo: <https://github.com/chatchat-space/Langchain-Chatchat>

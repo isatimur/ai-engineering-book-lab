@@ -49,3 +49,8 @@ Alex Volkov shares a practical take on Should AI Engineers Still Read Code in 20
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://thursdai.news/zl>
+- resource: <https://www.anthropic.com/institute/recursive-self-improvement>

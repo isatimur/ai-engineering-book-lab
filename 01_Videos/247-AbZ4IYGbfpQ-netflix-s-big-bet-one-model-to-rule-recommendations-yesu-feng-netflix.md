@@ -42,3 +42,7 @@ A practical talk on Netflix's Big Bet: One model to rule recommendations: Yesu F
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://netflixtechblog.com/foundation-model-for-personalized-recommendation-1a0bd8e02d39>

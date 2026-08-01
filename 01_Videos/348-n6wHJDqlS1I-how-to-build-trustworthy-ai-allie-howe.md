@@ -42,3 +42,12 @@ Allie Howe shares a practical take on How to Build Trustworthy AI. Trust is a mu
 
 ## Book angles
 - Could support a chapter/section on **Security & Guardrails**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/protectai/modelscan>
+- resource: <https://ashy-coast-00aeb501e.6.azurestaticapps.net/MS_AIRT_Lessons_eBook.pdf>
+- resource: <https://azure.github.io/PyRIT>
+- resource: <https://fingfx.thomsonreuters.com/gfx/legaldocs/egvblxokkvq/Walters%20v%20OpenAI%20-%20order.pdf>
+- resource: <https://www.pillar.security/solutions>
+- resource: <https://www.vanta.com/collection/trust/what-is-a-trust-center>

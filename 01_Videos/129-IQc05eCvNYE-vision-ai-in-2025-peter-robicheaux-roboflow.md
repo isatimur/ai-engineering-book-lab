@@ -45,3 +45,7 @@ Peter Robicheaux shares a practical take on Vision AI in 2025. Attendee-Only and
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Voice & Realtime**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://crowdcomms.com/aiengineer25/qanda/41445>

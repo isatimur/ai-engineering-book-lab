@@ -42,3 +42,7 @@ A practical talk on Small Bets, Big Impact Building GenBI at a Fortune 100 – A
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://asafbord.wixsite.com/home>

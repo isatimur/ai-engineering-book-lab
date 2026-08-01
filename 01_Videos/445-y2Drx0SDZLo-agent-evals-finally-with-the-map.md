@@ -42,3 +42,7 @@ A practical talk on Agent Evals: Finally, With The Map. A systematic and princip
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://rootsignals.ai/agentevals>

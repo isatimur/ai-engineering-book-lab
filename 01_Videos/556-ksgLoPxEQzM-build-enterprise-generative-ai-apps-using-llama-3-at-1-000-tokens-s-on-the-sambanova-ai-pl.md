@@ -42,3 +42,7 @@ A practical talk on Build enterprise generative AI apps using Llama 3 at 1,000 t
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/sambanova/ai-starter-kit>

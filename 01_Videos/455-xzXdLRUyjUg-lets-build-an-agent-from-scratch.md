@@ -42,3 +42,7 @@ A practical talk on Lets Build An Agent from Scratch. Everyone is talking about 
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://kamlasater.com/talks/agents-2025>

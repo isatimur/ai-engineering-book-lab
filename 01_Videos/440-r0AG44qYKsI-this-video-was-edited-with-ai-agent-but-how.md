@@ -45,3 +45,7 @@ A practical talk on This video was edited with AI agent. But how?. The talk is a
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/diffusionstudio/agent>

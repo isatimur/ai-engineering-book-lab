@@ -49,3 +49,7 @@ Braintrust & Trainline shares a practical take on Shipping complex AI applicatio
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://uk.linkedin.com/in/mayank-soni>

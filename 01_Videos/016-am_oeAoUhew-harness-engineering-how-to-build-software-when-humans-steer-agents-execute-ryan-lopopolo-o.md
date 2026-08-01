@@ -70,3 +70,8 @@ Take a token budget and a quarter's worth of work. Give it the success metrics. 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://latent.space/p/harness-eng>
+- resource: <https://openai.com/index/harness-engineering>

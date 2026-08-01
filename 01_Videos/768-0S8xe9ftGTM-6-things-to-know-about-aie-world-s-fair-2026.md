@@ -49,3 +49,7 @@ A practical talk on 6 Things to Know about AIE World's Fair 2026. Key angle: cov
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://app.ai.engineer/e/ai-engineer-worlds-fair-2026>

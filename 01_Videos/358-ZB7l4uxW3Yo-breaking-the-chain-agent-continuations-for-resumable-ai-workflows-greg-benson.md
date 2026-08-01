@@ -42,3 +42,7 @@ Greg Benson shares a practical take on Breaking the Chain: Agent Continuations f
 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/SnapLogic/agent-continuations>

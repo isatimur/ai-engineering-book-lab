@@ -45,3 +45,7 @@ A practical talk on Building Cursor Composer – Lee Robinson, Cursor. Learn ab
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://cursor.com/blog/2-0>

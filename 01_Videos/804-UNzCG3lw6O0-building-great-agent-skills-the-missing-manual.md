@@ -49,3 +49,7 @@ A practical talk on Building Great Agent Skills: The Missing Manual. Key angle: 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/mattpocock/skills>

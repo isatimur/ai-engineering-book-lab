@@ -42,3 +42,7 @@ Nimrod Hauser shares a practical take on Bending a Public MCP Server Without Bre
 
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://prezi.com/view/TSBwBXLNcXzzWrLbRiit>

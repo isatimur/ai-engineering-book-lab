@@ -42,3 +42,14 @@ You’re Just Bad at Prompting shares a practical take on The Model Isn’t Wron
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://app.prompthub.us/community/group/361>
+- resource: <https://app.prompthub.us/community/playground/5316>
+- resource: <https://app.prompthub.us/community/playground/5788>
+- resource: <https://www.prompthub.us/blog>
+- resource: <https://www.prompthub.us/blog/chain-of-thought-prompting-guide>
+- resource: <https://www.prompthub.us/blog/prompt-engineering-with-reasoning-models>
+- resource: <https://www.prompthub.us/blog/the-few-shot-prompting-guide>
+- resource: <https://www.prompthub.us/features/enhancers>

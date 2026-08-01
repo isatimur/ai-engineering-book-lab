@@ -42,3 +42,7 @@ Symbolic RL — Ahmad Awais shares a practical take on Developing Taste in Codin
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://AhmadAwais.com/about>

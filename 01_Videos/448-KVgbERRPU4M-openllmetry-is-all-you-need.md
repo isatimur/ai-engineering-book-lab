@@ -45,3 +45,7 @@ A practical talk on OpenLLMetry is all you need. OpenLLMetry ( is an open-source
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/traceloop/openllmetry>

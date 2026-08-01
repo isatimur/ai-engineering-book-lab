@@ -49,3 +49,7 @@ Priscila Andre de Oliveira shares a practical take on The AI Skill I Rely On Dai
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://at.linkedin.com/in/priscila-andre-de-oliveira-ab34bb24b>

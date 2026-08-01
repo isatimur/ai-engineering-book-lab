@@ -49,3 +49,7 @@ Erik Meijer aka @HeadinTheBox shares a practical take on "I've never seen anythi
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://spawn-queue.acm.org/doi/pdf/10.1145/3676287>

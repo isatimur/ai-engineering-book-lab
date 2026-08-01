@@ -49,3 +49,7 @@ Paola Estefania shares a practical take on Full Workshop: Better Auth. Key angle
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://uy.linkedin.com/in/paolaestefaniadecamposdefranco>

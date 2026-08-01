@@ -45,3 +45,7 @@ Critical Evals at Scale (Learnings from 100k medical decisions) shares a practic
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://chrislovejoy.me/mission-critical-evals>

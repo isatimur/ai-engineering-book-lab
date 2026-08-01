@@ -42,3 +42,7 @@ Kyle Kranen shares a practical take on Hacking the Inference Pareto Frontier. Yo
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.nvidia.com/en-us>

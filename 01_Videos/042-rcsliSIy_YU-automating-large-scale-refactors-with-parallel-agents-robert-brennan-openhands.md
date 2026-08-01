@@ -71,3 +71,7 @@ Start at 3–5 concurrent agents before your brain breaks. Scale to hundreds or 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://dub.sh/openhands-workshop>

@@ -49,3 +49,7 @@ Stephen Chin shares a practical take on CrabRAG: Why Automated Assistants Need G
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.oreilly.com/library/view/graphrag-the-definitive/9798341630147>

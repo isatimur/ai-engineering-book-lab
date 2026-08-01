@@ -49,3 +49,7 @@ Dex Horthy shares a practical take on Harness Engineering is not Enough: Why Sof
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/humanlayer/12-factor-agents>

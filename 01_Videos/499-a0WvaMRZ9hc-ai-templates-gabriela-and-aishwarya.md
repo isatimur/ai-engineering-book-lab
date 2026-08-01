@@ -42,3 +42,7 @@ A practical talk on AI Templates: Gabriela and Aishwarya. Building and deploying
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://aka.ms/aie-workshop>

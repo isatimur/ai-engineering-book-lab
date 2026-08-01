@@ -42,3 +42,7 @@ A practical talk on Build an AI Research Agent: Apoorva Joshi. In this 2 hour wo
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://mongodb-developer.github.io/ai-agents-lab/docs/dev-env/dev-setup>

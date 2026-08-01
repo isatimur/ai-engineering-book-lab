@@ -42,3 +42,7 @@ A practical talk on Don't just slap on a chatbot: building AI that works before 
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://evilmartians.com/chronicles/dont-just-slap-on-a-chatbot-building-ai-that-works-before-you-ask>

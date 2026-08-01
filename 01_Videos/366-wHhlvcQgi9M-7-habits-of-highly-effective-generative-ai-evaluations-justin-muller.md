@@ -42,3 +42,7 @@ Justin Muller shares a practical take on 7 Habits of Highly Effective Generative
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://d2ot4ns4zf41bm.cloudfront.net/slides/7+Habits+AI+World>

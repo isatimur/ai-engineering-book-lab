@@ -45,3 +45,7 @@ A practical talk on Patrick Dougherty: How to Build AI Agents that Actually Work
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.klarity.ai>

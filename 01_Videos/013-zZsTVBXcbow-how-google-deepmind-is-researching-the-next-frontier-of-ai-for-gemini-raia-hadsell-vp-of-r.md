@@ -45,3 +45,7 @@ Raia Hadsell shares a practical take on How Google DeepMind is researching the n
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://uk.linkedin.com/in/raia-hadsell-35400266>

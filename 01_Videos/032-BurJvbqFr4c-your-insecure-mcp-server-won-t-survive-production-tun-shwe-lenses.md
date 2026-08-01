@@ -45,3 +45,8 @@ Tun Shwe shares a practical take on Your Insecure MCP Server Won't Survive Produ
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
 - Could support a chapter/section on **Security & Guardrails**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/lensesio/lenses-mcp>
+- resource: <https://drive.google.com/file/d/1zLzkVO7_kBoV6bI7lhYIi3AxUH6j7xH_/view>

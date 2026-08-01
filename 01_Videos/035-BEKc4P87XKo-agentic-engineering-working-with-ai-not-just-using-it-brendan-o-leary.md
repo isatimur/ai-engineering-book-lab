@@ -45,3 +45,7 @@ Brendan O'Leary shares a practical take on Agentic Engineering: Working With AI,
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://gitlab.com/brendan/boleary-dot-dev>

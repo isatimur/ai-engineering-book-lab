@@ -42,3 +42,7 @@ A practical talk on AI Music Generation, From Prompt to Production: Phlo Young. 
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://aietalk.com/music>

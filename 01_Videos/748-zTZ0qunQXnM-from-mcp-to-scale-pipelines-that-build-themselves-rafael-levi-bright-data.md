@@ -49,3 +49,7 @@ Rafael Levi shares a practical take on From MCP to Scale: Pipelines That Build T
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://il.linkedin.com/in/rafael-levi>

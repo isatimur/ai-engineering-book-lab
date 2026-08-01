@@ -59,3 +59,9 @@ This is the Pydantic-native complement to Cornelia Davis's Temporal talk. Togeth
 - Chapter 4 (durable runtime) — strong complement to Cornelia Davis #38; establishes convergent multi-framework evidence.
 - Chapter 5 (evals) — Pydantic Evals as a lightweight eval framework, especially for structured-output agent tasks.
 - Chapter 7 (reliability) — the "chocolate teapot" critique as a quality signal for evaluating durability claims.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/pydantic/pydantic-stack-demo>
+- resource: <https://ai.pydantic.dev/durable_execution/temporal>
+- resource: <https://logfire.pydantic.dev/docs>

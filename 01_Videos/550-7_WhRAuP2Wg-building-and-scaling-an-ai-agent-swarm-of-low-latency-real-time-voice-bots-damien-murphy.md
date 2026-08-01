@@ -42,3 +42,9 @@ A practical talk on Building and Scaling an AI Agent Swarm of low latency real t
 
 ## Book angles
 - Could support a chapter/section on **Voice & Realtime**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/DamienDeepgram/deepgram-workshop-client>
+- repo: <https://github.com/DamienDeepgram/deepgram-workshop-server>
+- resource: <https://console.deepgram.com/signup>

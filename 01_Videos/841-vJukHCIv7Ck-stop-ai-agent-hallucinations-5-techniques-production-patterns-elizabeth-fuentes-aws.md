@@ -49,3 +49,7 @@ Elizabeth Fuentes shares a practical take on Stop AI Agent Hallucinations: 5 Tec
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/elizabethfuentes12/why-agents-fail-sample-for-amazon-agentcore>

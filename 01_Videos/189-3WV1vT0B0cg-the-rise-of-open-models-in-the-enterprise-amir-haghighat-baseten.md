@@ -45,3 +45,7 @@ Amir Haghighat shares a practical take on The Rise of Open Models in the Enterpr
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.baseten.co/blog>

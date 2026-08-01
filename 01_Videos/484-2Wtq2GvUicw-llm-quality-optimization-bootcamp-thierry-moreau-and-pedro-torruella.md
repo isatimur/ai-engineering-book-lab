@@ -45,3 +45,7 @@ A practical talk on LLM Quality Optimization Bootcamp: Thierry Moreau and Pedro 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://colab.research.google.com/drive/1DVw6vfEtzYV7QfcVXhmmjTVBOiJiJ02b>

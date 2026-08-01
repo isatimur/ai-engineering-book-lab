@@ -45,3 +45,7 @@ less shares a practical take on GPU. What happens when private AI models or sens
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Security & Guardrails**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://developer.nvidia.com/blog/exploring-the-case-of-super-protocol-with-self-sovereign-ai-and-nvidia-confidential-computing>

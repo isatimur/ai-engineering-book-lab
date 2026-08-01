@@ -49,3 +49,8 @@ Lovina Dmello shares a practical take on Your LLM Stack Is a 2008 Database With 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://developer.nvidia.com/blog/author/ldmello>
+- resource: <https://scholar.google.com/citations>

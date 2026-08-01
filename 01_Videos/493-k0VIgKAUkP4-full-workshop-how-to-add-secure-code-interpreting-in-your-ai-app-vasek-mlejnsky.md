@@ -42,3 +42,8 @@ A practical talk on [Full Workshop] How to add secure code interpreting in your 
 
 ## Book angles
 - Could support a chapter/section on **Security & Guardrails**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/e2b-dev/e2b-cookbook>
+- resource: <https://e2b.dev/docs/getting-started/api-key>

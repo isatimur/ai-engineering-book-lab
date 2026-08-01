@@ -42,3 +42,7 @@ Generated Code? — Harshil Agrawal shares a practical take on Why, and how you 
 
 ## Book angles
 - Could support a chapter/section on **Security & Guardrails**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://harshil.dev/slides/sandbox-ai-engineer>

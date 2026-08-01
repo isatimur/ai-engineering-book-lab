@@ -45,3 +45,8 @@ A practical talk on How to Fail at AI Strategy: Hamel Husain & Greg Ceccarelli. 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://hamel.dev/hire.html>
+- resource: <https://hamel.dev/oss/opensource.html>

@@ -47,3 +47,8 @@ Factor Agents: Patterns of reliable LLM applications — Dex Horthy shares a p
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/humanlayer/12-factor-agents>
+- resource: <https://news.ycombinator.com/item>

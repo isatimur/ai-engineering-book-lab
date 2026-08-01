@@ -45,3 +45,7 @@ A practical talk on Beyond APIs: How AI Web Agents Are Automating the "Long Tail
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Agent Architecture**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.rtrvr.ai/blog/introducing-rtrvr-ai>

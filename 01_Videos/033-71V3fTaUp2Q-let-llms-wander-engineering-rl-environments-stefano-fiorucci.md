@@ -45,3 +45,9 @@ Stefano Fiorucci shares a practical take on Let LLMs Wander: Engineering RL Envi
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- model: <https://huggingface.co/anakin87>
+- repo: <https://github.com/anakin87/llm-rl-environments-lil-course>
+- resource: <https://drive.google.com/file/d/116PKThwtyTxeH1GmZQ7bL3HPYM6KCgHa/view>

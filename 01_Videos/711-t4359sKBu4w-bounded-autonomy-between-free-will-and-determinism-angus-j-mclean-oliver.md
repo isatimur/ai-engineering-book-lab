@@ -49,3 +49,7 @@ Angus J. McLean shares a practical take on Bounded Autonomy: Between Free Will a
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://uk.linkedin.com/in/angusjmclean>

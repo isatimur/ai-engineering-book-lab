@@ -70,3 +70,7 @@ Canuma frames on-device as the future for privacy-sensitive applications, access
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://pl.linkedin.com/in/prince-canuma>

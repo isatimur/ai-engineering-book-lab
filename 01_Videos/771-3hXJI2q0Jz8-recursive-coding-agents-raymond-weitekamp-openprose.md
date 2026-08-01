@@ -49,3 +49,7 @@ Raymond Weitekamp shares a practical take on Recursive Coding Agents. Key angle:
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/rawwerks/recursive-coding-agents>

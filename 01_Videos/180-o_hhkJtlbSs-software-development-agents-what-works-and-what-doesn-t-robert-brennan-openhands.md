@@ -42,3 +42,7 @@ Robert Brennan shares a practical take on Software Development Agents: What Work
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://www.openhands.dev/blog>

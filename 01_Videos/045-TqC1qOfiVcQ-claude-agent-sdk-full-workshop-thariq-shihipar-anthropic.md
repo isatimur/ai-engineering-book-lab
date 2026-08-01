@@ -45,3 +45,7 @@ Thariq Shihipar argues that claude agent sdk [full workshop] is really about how
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://platform.claude.com/docs/en/agent-sdk/overview>

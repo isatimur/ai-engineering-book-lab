@@ -49,3 +49,7 @@ Zach Blumenfeld shares a practical take on AI on Your Lakehouse: Context Comes i
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://graphacademy.neo4j.com/courses/workshop-lakehouse>

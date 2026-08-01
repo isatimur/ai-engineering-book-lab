@@ -42,3 +42,9 @@ William Lyon shares a practical take on The Knowledge Graph Mullet: Trimming Gra
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/johnymontana/hyper-news>
+- resource: <https://docs.hypermode.com/dgraph/overview>
+- resource: <https://hyp.foo/agents>

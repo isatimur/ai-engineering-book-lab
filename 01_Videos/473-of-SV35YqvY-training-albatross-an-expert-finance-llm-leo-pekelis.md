@@ -42,3 +42,7 @@ A practical talk on Training Albatross  An Expert Finance LLM: Leo Pekelis. The 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- model: <https://huggingface.co/gradientai/v-alpha-tross>

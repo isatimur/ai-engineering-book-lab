@@ -45,3 +45,8 @@ Only AI Is Underrated — Šimon Podhajský shares a practical take on Cognitive
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/shippy/personal-intelligence-kit>
+- resource: <https://slides.podhajsky.net/read-only-ai>

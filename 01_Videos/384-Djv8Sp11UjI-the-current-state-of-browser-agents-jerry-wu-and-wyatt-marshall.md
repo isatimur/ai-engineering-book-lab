@@ -45,3 +45,9 @@ Jerry Wu and Wyatt Marshall shares a practical take on The Current State of Brow
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Models & Inference**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- model: <https://huggingface.co/datasets/Halluminate/WebBench>
+- repo: <https://github.com/Halluminate/WebBench>
+- resource: <https://halluminate.ai/blog/benchmark>

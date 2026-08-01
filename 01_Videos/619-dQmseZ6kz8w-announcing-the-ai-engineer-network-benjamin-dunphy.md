@@ -42,3 +42,7 @@ A practical talk on Announcing the AI Engineer Network: Benjamin Dunphy. Benjami
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/aiDotEngineer/Network>

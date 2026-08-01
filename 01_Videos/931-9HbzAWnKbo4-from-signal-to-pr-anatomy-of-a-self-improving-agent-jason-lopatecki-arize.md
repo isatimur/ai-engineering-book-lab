@@ -49,3 +49,7 @@ Improving Agent — Jason Lopatecki shares a practical take on From Signal to PR
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://arize.com/author/jason-lopatecki>

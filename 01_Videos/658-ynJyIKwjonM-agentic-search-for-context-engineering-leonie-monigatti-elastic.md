@@ -49,3 +49,7 @@ Leonie Monigatti shares a practical take on Agentic Search for Context Engineeri
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/iamleonie/workshop-agentic-search>

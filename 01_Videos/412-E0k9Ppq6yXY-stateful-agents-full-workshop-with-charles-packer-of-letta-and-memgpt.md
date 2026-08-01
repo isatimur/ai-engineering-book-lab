@@ -42,3 +42,7 @@ Full Workshop with Charles Packer of Letta and MemGPT shares a practical take on
 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- repo: <https://github.com/letta-ai/tutorials>

@@ -42,3 +42,7 @@ Jan Curn shares a practical take on The rise of the agentic economy on the shoul
 
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://blog.apify.com/author/jancurn>

@@ -45,3 +45,7 @@ Sander Dieleman (Veo and Nano Banana) shares a practical take on Building Genera
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Coding Agents**.
+
+## Artifacts
+Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):
+- resource: <https://sander.ai/2025/04/15/latents.html>
