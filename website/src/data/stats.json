@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T00:01:15+00:00",
+  "generated_at": "2026-08-01T14:45:25+00:00",
   "corpus": {
     "videos": 971
   },
@@ -38,7 +38,7 @@
   },
   "method": {
     "research_passes": 19,
-    "programs": 7,
+    "programs": 8,
     "tasks": 7
   },
   "total_artefacts": 1238
