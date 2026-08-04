@@ -14,16 +14,17 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T10:51:31+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ivan Leo shares a practical take on Building Intelligent Research Agents with Manus. AI agents are no longer confined to chat interfaces. Key angle: focuses on agent design and orchestration."
+summary: "Manus AI's Ivan Leo demos the Manus API's task lifecycle, webhooks, Slack Block Kit integration, and a browser operator that drives the user's own authenticated Chrome sessions."
 ---
 # Building Intelligent Research Agents with Manus - Ivan Leo, Manus AI (now Meta Superintelligence)
 
 ## Summary
-Ivan Leo shares a practical take on Building Intelligent Research Agents with Manus. AI agents are no longer confined to chat interfaces. Key angle: focuses on agent design and orchestration.
+Ivan Leo (Manus AI, now Meta Superintelligence) live-codes a workshop building a Slack integration on the Manus API, covering the task lifecycle (running/pending/completed/error states, typically 3-5 minutes per task), the files API (uploads auto-delete after 48 hours), webhook registration versus polling, and Slack-specific mechanics (Events API challenge verification, thread-ts tracking via a key-value store, Block Kit UI, markdown-to-Slack formatting). He contrasts the full Manus 1.5 model for complex tasks with the faster Manus 1.5 light, and demos a remote browser operator that drives the user's own local Chrome session rather than a sandboxed instance like Browserbase, so it can act on authenticated sites such as Google Maps, LinkedIn, and Instagram, plus a Notion-connector demo where Manus OCRs a receipt and updates a company expense-policy page accordingly. He also describes building a conference-schedule app by having Manus scrape the AI Engineer website into JSON and wire it to a Chroma vector database (via API key) for a personalized recommendation timeline, noting that each Manus session ships with a full Docker image so users can install Redis/BullMQ or Stripe with auto-configured webhooks. In Q&A he says Manus has no cross-conversation memory yet (on the roadmap), that user data is hosted in the US and staff don't read chat transcripts except when a user reports a bug, and that slide/PPTX export via the API is coming within about two weeks for feature parity with the web UI.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Walks through concrete production-agent-API mechanics — task states, webhooks vs. polling, file lifecycle/auto-deletion, Slack thread-state management — that a book chapter can use as a reference architecture for agent integrations.
+- The local-browser-operator pattern (driving the user's own authenticated Chrome instead of a sandboxed browser) is a distinct architectural choice worth citing against sandboxed browser-automation approaches like Browserbase.
+- Q&A candidly surfaces current limitations (no persistent memory, data-residency/privacy posture, planned permission system for browser access) that are useful primary-source evidence on agent-product maturity.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=xz0-brt56L8

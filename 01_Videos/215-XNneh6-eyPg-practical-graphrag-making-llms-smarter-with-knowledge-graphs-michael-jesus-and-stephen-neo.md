@@ -13,16 +13,17 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T11:44:20+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Michael shares a practical take on Practical GraphRAG: Making LLMs smarter with Knowledge Graphs. RAG has become one standard architecture component for GenAI applications to address hallucinations and integrate factual knowledge. Key angle: frames the problem through enterprise constraints."
+summary: "Neo4j engineers argue vector RAG lacks relevance/explainability, citing GraphRAG research and LinkedIn's 28.6% faster ticket resolution via knowledge-graph RAG."
 ---
 # Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, and Stephen, Neo4j
 
 ## Summary
-Michael shares a practical take on Practical GraphRAG: Making LLMs smarter with Knowledge Graphs. RAG has become one standard architecture component for GenAI applications to address hallucinations and integrate factual knowledge. Key angle: frames the problem through enterprise constraints.
+Michael Hunger (VP of product innovation, Neo4j) and Stephen (developer relations lead, Neo4j) — co-authoring O'Reilly's "GraphRAG: The Definitive Guide" — argue plain vector RAG breaks down at enterprise scale because vector similarity isn't the same as relevance and results aren't explainable. They cite Microsoft Research's GraphRAG paper (better answers at lower token cost), a data.world study showing 3x higher accuracy for RAG-on-graph versus RAG-on-SQL, and a LinkedIn customer-support case study where knowledge graphs cut median per-issue resolution time by 28.6%. They walk through a three-phase construction pipeline — unstructured text into a lexical graph of documents and chunks, LLM-driven entity/relationship extraction against a supplied schema, then enrichment via graph algorithms like PageRank and community detection/summarization — followed by retrieval that starts with an index search (vector, full-text, or hybrid) to find entry points and then walks relationships outward, optionally filtered by the querying user's role, to hand the LLM a subgraph rather than isolated text fragments. They demo Neo4j's open-source knowledge-graph-builder (ingesting PDFs, YouTube transcripts, and Wikipedia articles with vector/graph/full-text/entity retrievers and per-answer source explainability), an agentic pattern where domain-specific Cypher-query retrievers act as tools in a loop, a Python GraphRAG package, and the graphrag.com pattern catalog.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Supplies concrete case-study numbers (LinkedIn's 28.6% faster ticket resolution, data.world's 3x accuracy gain for graph vs. SQL retrieval) that a book chapter can cite when arguing RAG-vs-GraphRAG trade-offs.
+- Lays out a reusable reference architecture — lexical graph construction, LLM entity extraction, algorithmic enrichment, multi-index graph retrieval — for a chapter on retrieval system design beyond basic vector search.
+- Points to citable open-source artifacts (Neo4j's knowledge-graph-builder, the GraphRAG Python package, graphrag.com) as concrete tooling references rather than abstract claims.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=XNneh6-eyPg

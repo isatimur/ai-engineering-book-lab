@@ -13,16 +13,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:43:06+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Denys Linkov shares a practical take on Structuring a modern AI team. You've been given an AI mandate but don't have additional headcount, what next? Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Wisedocs' Denys Linkov argues for hiring generalist AI engineers over specialist researchers, using an inner/outer-loop team framework and two real team builds as evidence."
 ---
 # Structuring a modern AI team — Denys Linkov, Wisedocs
 
 ## Summary
-Denys Linkov shares a practical take on Structuring a modern AI team. You've been given an AI mandate but don't have additional headcount, what next? Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Denys Linkov (ML team lead at Wisedocs) rejects the instinct to hire specialist AI researchers, framing the choice as "Ampere's wager" — trading a domain-expert team for five researchers from a top lab — and argues most companies should refuse that trade. He segments companies into tech, verticalized/services, and tech-enabled categories, each with different failure modes and different build-vs-buy defaults, and describes two team builds he led: a 2021 conversational-AI/agent platform team that wrote a custom MLOps platform, fine-tuned encoder models, and ran RAG-as-a-service across six microservices with ~10 people; and a 2024 medical-records team (Wisedocs) that instead leaned on commercial APIs, prompt tuning, and open-source serving infrastructure once the ecosystem matured, shifting its skill bar toward deeper domain knowledge. His organizing framework splits a team into an "inner loop" (model training, prompting, product requirements, model serving, domain experts, business cases) and an "outer loop" of differentiating expertise, and he argues for generalists over narrow specialists until a team exhausts general progress and needs to push the last 5% of performance. He gives two reasons to hire at all — to hold context and to act on it, since humans must remain accountable for systems even as agents get larger context windows — and pushes back on "don't hire juniors" trend-following by pointing to YC running an AI school for students, urging job-relevant interview questions over LeetCode now that LLMs can solve those.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a named decision framework ("Ampere's wager": domain team vs. a handful of star researchers) for a hiring/org-design chapter, with a clear argued position rather than "it depends."
+- Documents two concrete, contrasting team builds (2021 custom MLOps + fine-tuned encoders vs. 2024 commercial APIs + open-source serving) showing how build-vs-buy choices shifted as the ecosystem matured — good before/after evidence for a chapter on AI team evolution.
+- Offers a specific accountability argument (context-holding, human accountability for agent systems) as a counterpoint to "just use AI agents with huge context windows instead of hiring," useful for a chapter weighing agents against headcount.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=SbUxRluVRwk

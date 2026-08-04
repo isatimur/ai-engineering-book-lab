@@ -14,16 +14,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:41:32+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Grade RAG: Lessons from Legal Frontier - Calvin Qi (Harvey) shares a practical take on Scaling Enterprise. In domains like law, compliance, and tax, building enterprise-grade RAG means very large scale, spikey workloads, a focus on accuracy, and non-negotiable privacy. Key angle: emphasizes evaluation and measurement."
+summary: "Harvey's Calvin Qi and LanceDB's Chang She describe legal RAG at three data scales (on-demand uploads, project vaults, tens-of-millions-doc corpuses), a tiered eval strategy from expert review to automated precision/recall, and LanceDB's Lance format for multimodal AI data lakehouses."
 ---
 # Scaling Enterprise-Grade RAG: Lessons from Legal Frontier - Calvin Qi (Harvey), Chang She (Lance)
 
 ## Summary
-Grade RAG: Lessons from Legal Frontier - Calvin Qi (Harvey) shares a practical take on Scaling Enterprise. In domains like law, compliance, and tax, building enterprise-grade RAG means very large scale, spikey workloads, a focus on accuracy, and non-negotiable privacy. Key angle: emphasizes evaluation and measurement.
+Calvin Qi, who leads a RAG team at legal-AI company Harvey, breaks down retrieval at three scales — on-demand assistant uploads (1-50 docs), project "vaults" (data rooms for a deal or litigation), and country-scale "data corpuses" of legislation and case law running to tens of millions of documents — and walks through a real query ("applicable regime for covered bonds issued before 9 July 2022 under directive EU 2019/2062 and article 129 of the CRR") to show how legal queries mix semantic search, date filters, keyword regulation IDs, and multi-part references. He argues most of Harvey's engineering effort goes into eval-driven development rather than fancy retrieval algorithms, using a spectrum from expensive expert review, to expert-labeled criteria sets, down to fast automated metrics like precision/recall and folder/section correctness. Chang She, pandas co-author and LanceDB CEO, then presents LanceDB as an "AI-native multimodal lakehouse" built on the open-source Lance format (Parquet+Iceberg+secondary-indices for AI data), citing a GPU-indexing benchmark of roughly 3-4 billion vectors in a single table indexed in under 2-3 hours, and interoperability with Spark, Ray, PyTorch, pandas, and Polars via Apache Arrow.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a concrete, non-toy example of what "enterprise RAG" query complexity actually looks like in a regulated domain (multi-part legal citations mixing semantic, keyword, and date-filter requirements), useful evidence against simplistic RAG demos.
+- Qi's tiered eval framework (expert review vs. labeled criteria vs. automated precision/recall) is a directly reusable model for how much a team should invest in evaluation infrastructure at different stages.
+- She's Lance format and lakehouse pitch is a concrete data-infrastructure counterpoint to treating a vector database as a standalone component, relevant to any chapter on RAG infrastructure at scale.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=W1MiZChnkfA

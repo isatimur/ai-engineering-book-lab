@@ -14,16 +14,17 @@ themes:
   - "Coding Agents"
 ingested_at: "2026-04-24T10:52:50+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Blanch shares a practical take on Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov. You’re investing millions in AI for software engineering. Key angle: emphasizes evaluation and measurement; frames the problem through enterprise constraints."
+summary: "Stanford study: AI usage correlates weakly with dev productivity, but codebase cleanliness does; a 350-person case found AI adoption raised PRs 14% while quality fell 9% and rework rose 2.5x."
 ---
 # Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford
 
 ## Summary
-Blanch shares a practical take on Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov. You’re investing millions in AI for software engineering. Key angle: emphasizes evaluation and measurement; frames the problem through enterprise constraints.
+Denisov-Blanch (Stanford) presents two years of research on AI's impact on software engineering productivity, measured via a machine-learning model trained to replicate a panel of 10-15 human experts who score code commits on implementation time, maintainability, and complexity. Comparing 46 AI-using teams against 46 matched non-AI teams, he finds median net productivity gains of about 10% as of July, with a widening gap between top and bottom performers over time. Token usage per engineer correlates only loosely with productivity (roughly R²=0.2, with a "death valley" around 10 million tokens/month), while an experimental "environment cleanliness index" (tests, types, documentation, modularity, code quality) correlates more strongly (R²≈0.40) — codebase hygiene amplifies AI gains, and unmanaged AI use accelerates the tech-debt entropy that erodes them. He also outlines an AI-practices benchmark that scans git history for "AI fingerprints" across five maturity levels (no AI, personal use, team use, autonomous task-level AI, full agentic orchestration), and a case study of a 350-person team where AI adoption raised PR count 14% but dropped code quality 9%, increased rework 2.5x, and left his proposed "engineering output" metric essentially flat — the core argument being that PR counts and DORA-style metrics are misleading proxies for AI ROI.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Supplies a concrete methodology (expert-panel-trained ML model, environment cleanliness index, AI-fingerprint benchmark) for measuring AI's real effect on engineering output, rather than relying on adoption or PR-count vanity metrics.
+- The 350-person case study is a specific, citable counterexample to the "AI obviously boosts output" narrative: PRs up 14%, code quality down 9%, rework up 2.5x, output flat — useful evidence for a chapter on measuring AI ROI or evaluation practices.
+- Frames codebase cleanliness/tech-debt management as a precondition for AI productivity gains, connecting AI adoption to org-level engineering practices rather than tool choice alone.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=JvosMkuNxF8

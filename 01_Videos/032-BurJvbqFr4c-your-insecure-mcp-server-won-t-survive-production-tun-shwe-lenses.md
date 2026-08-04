@@ -14,16 +14,17 @@ themes:
   - "Security & Guardrails"
 ingested_at: "2026-04-24T10:50:52+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Tun Shwe shares a practical take on Your Insecure MCP Server Won't Survive Production. Tun Shwe and Jeremy Frenay from Lenses.io address the critical security and design challenges involved in moving Model Context Protocol (MCP) servers from local development to enterprise production... Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Lenses' Tun Shwe and Jeremy Frenay give five MCP hardening principles mapped to OWASP MCP Top 10 risks, then trace MCP auth from static API keys through DCR to CIMD (preferred since Nov 2025)."
 ---
 # Your Insecure MCP Server Won't Survive Production — Tun Shwe, Lenses
 
 ## Summary
-Tun Shwe shares a practical take on Your Insecure MCP Server Won't Survive Production. Tun Shwe and Jeremy Frenay from Lenses.io address the critical security and design challenges involved in moving Model Context Protocol (MCP) servers from local development to enterprise production... Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Tun Shwe and Jeremy Frenay (Lenses) argue that MCP design and MCP security are the same discipline, and lay out five principles for hardening servers: shrink the attack surface by collapsing fine-grained API calls into single coarse-grained outcome-based tools; constrain input schemas with enums/dictionaries or Pydantic rather than free-form nested payloads to block command injection; treat tool descriptions as a defensive layer against tool poisoning (OWASP MCP Top 10 #3); return only the minimum data needed to prevent context oversharing (OWASP MCP Top 10 #10); and scope permissions at the tool/resource level, not the session level. They cite a load test in which stdio transport failed 20 of 22 requests at just 20 simultaneous connections, the reason for moving to streamable HTTP. Frenay then traces MCP authorization's evolution from long-lived, unscoped API keys (still over 50% of deployed servers, prone to "confused deputy" pass-through vulnerabilities) through OAuth 2.1 dynamic client registration (DCR, with PKCE and RFC 8693 token exchange) to Client ID Metadata Documents (CIMD), the approach preferred since November 2025 because it avoids DCR's growing registration database and phishing risk. Enterprise readiness beyond OAuth requires tool/resource-level RBAC, PII data masking, per-call audit logging for EU AI Act compliance, and end-to-end request tracing.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Documents a concrete, numbered checklist (five design principles mapped to specific OWASP MCP Top 10 risks) that a book chapter on MCP security could use as a reference framework rather than abstract advice.
+- Traces the actual evolution of MCP auth standards in production (static keys → DCR → CIMD, RFC 8693 token exchange) with a dated inflection point (CIMD preferred since November 2025), useful as primary evidence for how the ecosystem is converging on a standard.
+- Supplies a hard data point (stdio transport failing 20/22 requests at 20 concurrent connections) that grounds the common "local dev vs. production" claim about MCP in an actual measurement rather than assertion.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=BurJvbqFr4c

@@ -14,16 +14,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:41:14+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "David Mytton shares a practical take on How to defend your sites from AI bots. Constantly seeing CAPTCHAs? Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Arcjet's David Mytton lays out 8 layered bot defenses, citing Wikipedia's 35% automated traffic and Read the Docs cutting bandwidth 800GB to 200GB a day by blocking AI crawlers."
 ---
 # How to defend your sites from AI bots — David Mytton, Arcjet
 
 ## Summary
-David Mytton shares a practical take on How to defend your sites from AI bots. Constantly seeing CAPTCHAs? Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+David Mytton (founder of Arcjet, a security SDK for developers) argues AI crawlers are measurably worsening a decades-old bot-traffic problem, citing Diaspora getting 24% of its traffic from GPTBot, Read the Docs cutting daily bandwidth from 800GB to 200GB by blocking AI crawlers, and Wikipedia spending up to 35% of its traffic serving automated clients. He distinguishes OpenAI's roughly four bot types by intent — OAI-SearchBot (indexing, generally wanted), ChatGPT-User (real-time fetches on a user's behalf), GPTBot (training data, no citation or benefit to site owners) — plus emerging "computer use"/operator agents that act autonomously and are hard to detect since they present as an ordinary Chrome browser. He walks through eight layered defenses in increasing sophistication: voluntary robots.txt, user-agent string matching (Arcjet maintains an open-source list of known bot user agents), reverse-DNS/IP verification for bots claiming to be Google/Bing/OpenAI, IP reputation and datacenter/geo signals (12% of Cloudflare's bot traffic last year came from AWS IP ranges), CAPTCHAs (increasingly trivial for LLMs to solve), proof-of-work challenges (via open-source proxies like Anubis, Go Away, and Nepenthes), emerging cryptographic client-signature standards (Cloudflare's HTTP message signatures, Apple's Privacy Pass/Private Access Tokens), and TLS/HTTP fingerprinting (the open-source JA4 hash) combined with rate limiting keyed to fingerprint or session rather than IP address.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Supplies hard traffic numbers (Diaspora 24% GPTBot, Read the Docs 800GB→200GB, Wikipedia 35%, AWS 12% of Cloudflare bot traffic) that make the "AI crawlers are a real infrastructure cost" claim falsifiable rather than anecdotal.
+- Gives a named taxonomy of crawler intent (OAI-SearchBot vs. ChatGPT-User vs. GPTBot vs. autonomous operator agents) useful for a chapter distinguishing legitimate agentic traffic from scraping.
+- Lays out a concrete, ordered defense stack (robots.txt through fingerprinting plus keyed rate limiting) that a book chapter on securing sites against agentic/AI traffic can cite directly rather than gesturing at "bot protection."
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=Gi4V8viBGYQ

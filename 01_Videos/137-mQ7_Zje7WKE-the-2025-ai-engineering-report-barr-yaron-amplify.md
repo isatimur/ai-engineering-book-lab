@@ -14,16 +14,17 @@ themes:
   - "Models & Inference"
 ingested_at: "2026-04-24T11:25:13+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Barr Yaron shares a practical take on The 2025 AI Engineering Report. Come hear the results of the 2025 State of AI Engineering: Key angle: connects the topic back to software engineering practice."
+summary: "Barr Yaron (Amplify) presents the 2025 AI Engineering survey (n=500): RAG leads at 70%, fine-tuning is more common than expected, agents lag plain LLM use, and evaluation is the top pain point."
 ---
 # The 2025 AI Engineering Report — Barr Yaron, Amplify
 
 ## Summary
-Barr Yaron shares a practical take on The 2025 AI Engineering Report. Come hear the results of the 2025 State of AI Engineering: Key angle: connects the topic back to software engineering practice.
+Barr Yaron, an investment partner at Amplify, presents early results from Amplify's 2025 State of AI Engineering survey of 500 respondents. Beyond few-shot prompting, RAG is the dominant customization method (70% of respondents), but fine-tuning turned out to be far more widespread than expected — 40% of fine-tuners cite LoRA/QLoRA, with DPO, reinforcement fine-tuning, and plain supervised fine-tuning also common, driven mostly by researchers and research engineers. Teams update models monthly or more often (50%+, 17% weekly) and update prompts even faster (70% monthly, 10% daily), yet 31% still have no system for managing prompts at all. Agents — defined in the survey as systems where an LLM controls the core decision-making or workflow — lag plain LLM usage badly: 80% say LLMs work well at their job versus under 20% for agents, though most production agents already have write access and some act independently with a human in the loop. On infrastructure and process, 65% use a dedicated vector database (35% self-hosted, 30% third-party), 60% rely on standard observability tooling, and evaluation is named the single most painful part of AI engineering today.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A rare quantified snapshot (500 respondents) of what practitioners actually do — RAG at 70% adoption, LoRA/QLoRA at 40% of fine-tuners, 65% on dedicated vector databases — that grounds claims elsewhere in the book with real adoption numbers instead of anecdote.
+- Surfaces the gap between hype and production reality: agents are widely planned but only used well by under 20% of respondents versus 80% for plain LLMs, and evaluation is named the top pain point despite heavy investment in monitoring and offline eval.
+- Documents operational churn (50%+ updating models monthly, 70% updating prompts monthly, 31% with no prompt management at all) that is direct evidence for a chapter on the maintenance burden of shipped AI systems.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=mQ7_Zje7WKE
