@@ -15,7 +15,7 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-20T09:01:57+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Databricks' Sandipan Bhaumik details a 5-pillar framework (eval, observability, data, orchestration, governance) built from a banking chatbot case where a prior 85K POC failed before a rebuild succeeded."
+summary: "Databricks' Sandipan Bhaumik details a 5-pillar framework (eval, observability, data, orchestration, governance) from a banking chatbot case where a prior 85K POC failed before a rebuild succeeded."
 ---
 
 # £85K Burned on a Failed PoC: What Actually Gets Agents to Production — Sandipan Bhaumik, Databricks

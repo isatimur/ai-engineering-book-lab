@@ -13,7 +13,7 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:26:27+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Harrison Chase (LangChain) frames context-aware apps via four context-delivery methods (prompting, few-shot, RAG, fine-tuning) and a chain-to-router-to-agent architecture spectrum, plus eval as an unsolved bottleneck."
+summary: "Harrison Chase (LangChain) frames context-aware apps via four context-delivery methods (prompting, few-shot, RAG, fine-tuning) and a chain-router-agent architecture spectrum, plus eval as unsolved."
 ---
 # Building Context-Aware Reasoning Applications with LangChain and LangSmith: Harrison Chase
 
