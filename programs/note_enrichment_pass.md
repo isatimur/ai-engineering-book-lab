@@ -1,4 +1,4 @@
-# Program: note enrichment pass (specified, not yet run)
+# Program: note enrichment pass — COMPLETE for ledger-cited notes (2026-08-04)
 
 **Goal:** upgrade `01_Videos/*.md` auto-summaries (truncated descriptions)
 into real 3-5 sentence summaries with a "why it matters for the book" line,
@@ -12,7 +12,11 @@ per ~100 notes. Priority order: videos cited in the Claims Ledger first
 (199 anchors), then by view count.
 
 **Done when:** all ledger-cited videos have enriched notes; rest is
-opportunistic.
+opportunistic. — **MET 2026-08-04 (114/114).**
+
+Opportunistic remainder: 748 of 983 corpus-wide notes still carry ingest
+boilerplate. Those are uncited by the ledger, so they are low-priority; run the
+same method if a chapter starts leaning on new material.
 
 ## Progress
 
@@ -23,8 +27,8 @@ opportunistic.
   (`## Book angles`, `## Theme hooks`) — two note formats coexist by design.
 - 2026-08-04 — round 2 done: 25 more enriched (commits 24f9f1b and parent).
   Agents now self-validate with check_note_frontmatter.py before reporting.
-- Remaining: 22 ledger-cited notes on ingest boilerplate (measured, not estimated). Same method,
-  ~25 per run, highest anchor count first.
+- 2026-08-04 — round 3 done. **All 114 ledger-cited notes enriched (0 boilerplate
+  remaining, measured).** The program's done-criteria is met.
 
 **Editing gotcha:** a few notes contain non-breaking spaces (U+00A0) around
 em-dashes, which makes exact-string Edit matching fail confusingly. Inspect with
