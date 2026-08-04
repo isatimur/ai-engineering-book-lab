@@ -64,6 +64,32 @@ should be able to operate the whole KB from this table.
 | Manuscript↔site sync, audio, scores | `check_book_consistency.py` (CI + local) | committed | 3 gates; audio+scores regen are **key-gated** (`OPENAI_API_KEY`/`ELEVEN_API_KEY`, `OPENROUTER_API_KEY`) |
 | Diagrams | `scripts/sync-diagrams.sh` (stale-aware) | committed | `diagrams-check` CI |
 
+### Hard constraint: per-video fetches cannot run on CI
+
+YouTube blocks datacenter IPs for **per-video** requests. On GitHub-hosted
+runners the flat channel inventory listing succeeds, but transcripts and
+descriptions come back empty — CI-created notes land with
+`transcript_status: unavailable` and no transcript files. Verified 2026-08-04
+(run 30933173400).
+
+Consequence: **the nightly ingest is a detector and note-scaffolder; a local
+pass is what completes the corpus.** After any CI ingest, run locally:
+
+```bash
+python3 99_Meta/scripts/update_ai_engineer_channel.py     # notes + transcripts
+python3 99_Meta/scripts/fetch_video_descriptions.py       # descriptions
+python3 99_Meta/scripts/build_shared_artifacts.py         # registry + note sections
+python3 99_Meta/scripts/corpus_health.py                  # confirm zero debt
+cd 99_Meta/transcripts && git add -A && git commit -m sync && git push
+```
+
+Prefer running the local pass *instead of* merging the bot PR — the local run
+produces correct frontmatter from the start rather than backfilling around a
+stale `unavailable` status. `corpus_health.py` exists so this debt is never
+invisible; it runs as the last step of the ingest workflow.
+
+Permanent gaps (not debt): #783 went private upstream; #417 has no captions.
+
 Deviation ledger: audiobook currently edge-tts interim (see memory/commit
 cb503c0) pending OpenAI onyx re-render; note-quality LLM enrichment pass is
 specified in `programs/note_enrichment_pass.md` and not yet run.
