@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 362
+- Total tagged videos: 363
 
 ## Cross-video synthesis
 
-- This theme appears across 362 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (316), Evals & Reliability (276), MCP & Tooling (52).
+- This theme appears across 363 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (316), Evals & Reliability (276), MCP & Tooling (53).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -374,6 +374,7 @@
 - [[969-lCBf9slCanI-ending-ai-slop-thais-castello-branco-taste-labs|#969 — Ending AI Slop — Thais Castello Branco, Taste Labs]]
 - [[970-3ZMUiFaQ3qg-verifiable-environments-for-ai-in-biology-kenny-workman-latchbio|#970 — Verifiable Environments for AI in Biology — Kenny Workman, LatchBio]]
 - [[971-xbPriQWXtWM-the-base-model-is-dead-varun-singh-arcee-ai|#971 — The Base Model Is Dead — Varun Singh, Arcee AI]]
+- [[981-s4r6nk5WsZw-mcp-tasks-async-why-aren-t-any-agents-supporting-them-cornelia-davis-temporal|#981 — MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal]]
 
 ## Notes
 

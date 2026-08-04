@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 115
+- Total tagged videos: 117
 
 ## Cross-video synthesis
 
-- This theme appears across 115 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (55), Agent Architecture (52), Org Design & Leadership (12).
+- This theme appears across 117 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (55), Agent Architecture (53), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -127,6 +127,8 @@
 - [[959-iKQ78wyJEXU-we-vetted-2000-ai-skills-before-they-reached-developers-lucas-palma-nubank|#959 — We Vetted 2000 AI Skills Before They Reached Developers — Lucas Palma, Nubank]]
 - [[962-tJFjeMBKbIY-build-for-the-memo-not-the-demo-shawn-chan-china-resources-holdings|#962 — Build for the Memo, Not the Demo — Shawn Chan, China Resources Holdings]]
 - [[963-z0sh8HyTrDo-your-finance-agent-s-bottleneck-is-you-ramana-siddanth-emani-auditoria-ai|#963 — Your Finance Agent's Bottleneck Is You — Ramana Siddanth Emani, Auditoria AI]]
+- [[981-s4r6nk5WsZw-mcp-tasks-async-why-aren-t-any-agents-supporting-them-cornelia-davis-temporal|#981 — MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal]]
+- [[982--jY2T2PiJBE-mcp-apps-extending-the-frontier-ido-salomon-liad-yosef|#982 — MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef]]
 
 ## Notes
 

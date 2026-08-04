@@ -6,7 +6,7 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 221 videos referenced at least one artifact; corpus size 971.
+> Coverage: 221 videos referenced at least one artifact; corpus size 983.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
 ## GitHub repositories (49)

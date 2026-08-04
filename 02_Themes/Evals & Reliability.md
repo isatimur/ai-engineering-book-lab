@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 405
+- Total tagged videos: 406
 
 ## Cross-video synthesis
 
-- This theme appears across 405 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 406 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (292), Agent Architecture (276), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
@@ -417,6 +417,7 @@
 - [[969-lCBf9slCanI-ending-ai-slop-thais-castello-branco-taste-labs|#969 — Ending AI Slop — Thais Castello Branco, Taste Labs]]
 - [[970-3ZMUiFaQ3qg-verifiable-environments-for-ai-in-biology-kenny-workman-latchbio|#970 — Verifiable Environments for AI in Biology — Kenny Workman, LatchBio]]
 - [[971-xbPriQWXtWM-the-base-model-is-dead-varun-singh-arcee-ai|#971 — The Base Model Is Dead — Varun Singh, Arcee AI]]
+- [[976-_PdK6x7PQNM-data-quality-is-the-compute-multiplier-ari-morcos-datologyai|#976 — Data Quality Is the Compute Multiplier — Ari Morcos, DatologyAI]]
 
 ## Notes
 

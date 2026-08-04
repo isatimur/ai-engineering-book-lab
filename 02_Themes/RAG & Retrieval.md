@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 165
+- Total tagged videos: 166
 
 ## Cross-video synthesis
 
-- This theme appears across 165 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 166 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (19).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
@@ -177,6 +177,7 @@
 - [[819-G6IlDzj8OjA-gtm-is-you-victoria-melnikova-evil-martians|#819 — GTM Is You - Victoria Melnikova, Evil Martians]]
 - [[862--561cZmir5Q-from-tokens-to-cells-foundation-models-for-single-cell-biology-akram-baharlouei-altos-labs|#862 — From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs]]
 - [[916-Sir59K8ZDPU-why-agentic-systems-need-ontologies-frank-coyle-uc-berkeley|#916 — Why Agentic Systems Need Ontologies — Frank Coyle, UC Berkeley]]
+- [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983 — Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)]]
 
 ## Notes
 
