@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-09T21:18:47+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Thor Schaeff shares a practical take on From Transcription to Live Music: Gemini's Audio Stack. Key angle: includes voice / realtime system concerns."
+summary: "Google DeepMind's Thor Schaeff demos Gemini's audio stack: one-call speaker/emotion/language extraction, director's-note voice steering, native audio-to-audio Gemini 3.1 Flash Live, and Lyra 3 music generation."
 ---
 
 # From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind
 
 ## Summary
-Thor Schaeff shares a practical take on From Transcription to Live Music: Gemini's Audio Stack. Key angle: includes voice / realtime system concerns.
+Thor Schaeff (Google DeepMind, developer experience for the Gemini API and AI Studio) walks through DeepMind's audio stack built on Gemini 3's audio-understanding foundation, which he says goes beyond transcription to reason about emotion, pacing, accent, and overlapping speakers. He demos "EchoScript," an AI Studio app that in a single Gemini 3 Flash preview API call — using a structured-output response schema — returns a summary, per-speaker labels, timestamps, detected language, English translation, and emotion classification for a multilingual recording. For speech generation, he shows that instead of a large filterable voice library typical of other TTS providers, Gemini works from roughly 30 base voices steered via a "director's note" prompt (scene, accent, delivery instructions) that leverages the same audio understanding, demonstrated by pushing a base voice into an Irish-accented and then Singaporean-accented performance. He introduces Gemini 3.1 Flash Live as a native, full-duplex speech-to-speech model that ingests real-time text/audio/video (screen or camera at up to 1 frame/second) and reasons directly in the audio domain rather than through a cascaded ASR-to-LLM-to-TTS pipeline, and recommends Google's published Gemini "agent skills" to help coding agents handle the added complexity of real-time audio APIs. He closes with Lyra 3, a music-generation model split into a 30-second "Clip" jingle generator and a full-length "Pro" song generator with lyrics, demonstrated live via a "Life Jukebox" app where the Live model calls Lyra as a tool to compose a German techno-Schlager song about the UK startup scene on request.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Documents a concrete pattern for multi-attribute audio extraction (speaker ID, timestamps, language, translation, emotion) in a single structured-output API call, useful evidence for a chapter on multimodal/audio agent tooling.
+- Distinguishes native audio-to-audio reasoning (Gemini 3.1 Flash Live) from cascaded ASR→LLM→TTS pipelines as an explicit architectural choice with stated latency/intelligence tradeoffs, relevant to any discussion of real-time voice agent design.
+- The tool-calling demo (a live conversational model invoking a separate music-generation model, Lyra, as a callable tool) is a concrete example of model-as-tool composition in a real-time multimodal agent, not just text-based tool use.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=Bc6Ojl2XS1w

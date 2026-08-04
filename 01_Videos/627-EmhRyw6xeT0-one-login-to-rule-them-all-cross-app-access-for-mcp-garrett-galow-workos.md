@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-04-29T22:48:26+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "App Access for MCP — Garrett Galow shares a practical take on One Login to Rule Them All: Cross. Connecting a coding agent to multiple services often means facing a dozen OAuth consent screens, a dozen token lifecycles, and a dozen chances for something to break. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "WorkOS's Garrett Galow demos Cross-App Access (ID-JAG), an OAuth extension letting an IdP like Okta silently issue short-lived MCP access tokens, killing consent-screen fatigue and long-lived leaked tokens."
 ---
 
 # One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS
 
 ## Summary
-App Access for MCP — Garrett Galow shares a practical take on One Login to Rule Them All: Cross. Connecting a coding agent to multiple services often means facing a dozen OAuth consent screens, a dozen token lifecycles, and a dozen chances for something to break. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Garrett Galow, who runs product at WorkOS (the SSO/auth backend behind Cursor's and Anthropic's login flows), diagnoses two concrete problems with MCP's current OAuth-per-server model: users re-click consent screens for every MCP server even when SSO is already in place, and leaked long-lived OAuth refresh tokens (he cites personally being hit by the recent Axios npm supply-chain compromise) can grant standing access for days or weeks even after IT revokes a compromised account's SSO session, since most companies lack SCIM-based token revocation. His proposed fix, Cross-App Access (XAA), builds on a new spec called ID-JAG (Identity JWT Authorization Grant): the MCP client (demoed in an XAA-enabled build of Claude Code) logs into the IdP (Okta) once, exchanges its refresh token for an ID-JAG token scoped to a target app's audience (e.g., Figma), and the target's authorization server validates that JAG with Okta before issuing a short-lived (~5 minute) standard OAuth access token — making every subsequent MCP connection automatic with no visible consent screen, and cutting off access within minutes of an IdP-side session revocation rather than days. He notes the ecosystem is early: Okta supports XAA today (with caveats), Microsoft Entra does not yet, and dynamic client registration (DCR) support is fragmented across MCP clients/servers, with a newer Client ID Metadata Document (CIMD) spec trying to supersede DCR. He's explicit in Q&A that XAA only solves authentication, not fine-grained authorization/scoping, which remains an open problem.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Documents a real, fast-moving standard (ID-JAG / Cross-App Access) for solving MCP's consent-screen and token-lifecycle problems — concrete plumbing detail a book chapter on agent security/identity would otherwise have to reconstruct from spec documents.
+- The Axios supply-chain-compromise anecdote is a grounded example of why long-lived OAuth refresh tokens are a real production risk for agentic tooling, not a hypothetical.
+- Captures the current state of ecosystem fragmentation (Okta vs. Entra support, DCR vs. CIMD) useful for a book documenting where agent-identity standards stood at time of writing, without overstating maturity.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=EmhRyw6xeT0

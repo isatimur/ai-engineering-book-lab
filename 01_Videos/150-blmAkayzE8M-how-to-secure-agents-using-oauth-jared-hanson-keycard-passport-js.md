@@ -13,16 +13,16 @@ themes:
   - "Security & Guardrails"
 ingested_at: "2026-04-24T11:41:21+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Jared Hanson (Keycard shares a practical take on How to Secure Agents using OAuth. We all know sharing passwords is bad (unless you want free TV), so why are we sharing API keys with AI? Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Jared Hanson (Keycard) traces MCP auth from no-auth to a broken authorization-server-as-MCP-server draft to a fixed resource-server model, then outlines gaps like agent identity and transactional auth."
 ---
 # How to Secure Agents using OAuth — Jared Hanson (Keycard, Passport.js)
 
 ## Summary
-Jared Hanson (Keycard shares a practical take on How to Secure Agents using OAuth. We all know sharing passwords is bad (unless you want free TV), so why are we sharing API keys with AI? Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Jared Hanson (Keycard co-founder, Passport.js creator, ex-Auth0/Okta) traces MCP's authorization story through three versions: the original spec (about seven months old at talk time) had no auth at all, the March draft collapsed the OAuth authorization-server role into the MCP server itself (triggering viral critiques from Christian Posta and Aaron Parecki and a fix-it PR that drew some 400 comments), and the current draft separates the MCP server back out as a pure OAuth resource server that just verifies tokens. He then lays out gaps still unaddressed for agent-to-agent security: client-credentials flows for non-user-delegated agent communication; agent identity via URL and PKI-signed assertions instead of dynamic client registration (which he says has seen no meaningful adoption in the roughly ten years it has existed) or the emerging pushed-client-registration spec for public clients; remote attestation of the device and software an LLM runs in; transactional, fine-grained authorization (citing the Rich Authorization Requests spec) for agent-initiated financial transactions; cross-domain chain-of-custody via OAuth token exchange and the identity assertion grant; and async, out-of-band re-consent (SMS, push notifications) for agents that keep working after the user walks away.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a first-hand, dated account of how MCP's auth model actually evolved in public (spec versions, specific blog posts, specific PR), useful as a primary-source timeline for a chapter on agent security standards.
+- Names concrete open specs (Rich Authorization Requests, identity assertion grant, OAuth token exchange, pushed client registration) an engineer would need when designing agent-to-agent or agent-to-API authorization today.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=blmAkayzE8M

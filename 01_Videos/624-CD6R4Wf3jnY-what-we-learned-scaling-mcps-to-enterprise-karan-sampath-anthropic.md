@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-04-29T22:48:21+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Karan Sampath shares a practical take on What we learned scaling MCPs to Enterprise. MCPs are often flaky, face multiple security vulnerabilities, and are generally hard to scale. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Anthropic's Karan Sampath argues enterprises stall on MCP due to observability, access-control, and security gaps, proposing a single gateway as the root-of-trust layer separating agent harnesses from data."
 ---
 
 # What we learned scaling MCPs to Enterprise — Karan Sampath, Anthropic
 
 ## Summary
-Karan Sampath shares a practical take on What we learned scaling MCPs to Enterprise. MCPs are often flaky, face multiple security vulnerabilities, and are generally hard to scale. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Karan Sampath, a forward-deployed engineer at Anthropic, argues that despite thousands of servers in the official MCP registry, enterprises stall at using only single-digit numbers of MCPs because of a "three-headed hydra": missing observability (who's using which tools, what's failing), missing access control (scoping tools/servers to the right teams), and unresolved security (verifying server safety, preventing data exfiltration, trusting untrusted remote clients). His proposed fix is a gateway — a middle layer between MCP servers and clients that a security team "blesses" as the sole root of trust, handling authorization/authentication, role-based access control, proxied routing, a secured tunnel, an internal sub-registry, and CLI tooling — so that individual teams (his example: a legal team building a contract-review MCP) only need to own business logic, not infrastructure. He claims this unlocks several follow-on benefits once in place: any new client surface (Claude.ai, Claude Code) plugs into the same gateway without per-server reconfiguration, connections become more secured for sensitive internal data, teams iterate faster without repeated security reviews, the gateway can encode a company's standard operating procedures as enforced primitives, and it supports pluggable credential types while scaling to hundreds of thousands of agents. He closes by framing the gateway as an investment that separates the agent harness from where enterprise data lives, letting a company treat "which agents run in-house vs. externally" as an interchangeable decision rather than one baked into MCP server design.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Names a specific, recurring enterprise-adoption blocker for MCP (observability/access-control/security gaps, not model capability) with a named architectural fix (gateway as root of trust) — directly usable for a chapter on enterprise agent infrastructure.
+- Gives a concrete anatomy of what a production MCP gateway contains (auth, RBAC, proxy routing, secure tunnel, sub-registry, CLI), useful as a reference architecture rather than an abstract concept.
+- The "separate the agent harness from the data layer" framing is a specific claim from an Anthropic practitioner about where agent architecture is heading, worth citing as forward-looking industry perspective.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=CD6R4Wf3jnY

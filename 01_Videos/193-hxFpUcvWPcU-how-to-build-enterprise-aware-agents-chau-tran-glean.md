@@ -14,16 +14,17 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T11:43:19+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Chau Tran shares a practical take on How to build Enterprise Aware Agents. While LLMs demonstrated impressive reasoning capabilities, their out-of-the-box reasoning is akin to hiring a brilliant but brand-new employee who doesn’t have the enterprise context of “how... Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints."
+summary: "Glean's Chau Tran reframes workflows-vs-agents as agents generating workflows, proposing golden-workflow libraries for agent eval/training and authoritativeness signals for workflow retrieval."
 ---
 # How to build Enterprise Aware Agents - Chau Tran, Glean
 
 ## Summary
-Chau Tran shares a practical take on How to build Enterprise Aware Agents. While LLMs demonstrated impressive reasoning capabilities, their out-of-the-box reasoning is akin to hiring a brilliant but brand-new employee who doesn’t have the enterprise context of “how... Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints.
+Chau Tran (Glean) reframes the workflows-vs-agents debate: a workflow is imperative code or a declarative graph giving predictability and low cost, while an agent dynamically plans and executes its own steps at higher cost and latency — but the trace of any successful agent run is itself a workflow, so agents can be thought of as "task in, workflow out." He proposes collecting a library of "golden workflows" (task-to-steps records) to evaluate agents on whether they took the right steps, not just whether the final answer looks right, and to train agents via either supervised fine-tuning/RLHF or dynamic prompting that retrieves similar past workflows as in-context examples. He argues fine-tuning suits generalized, stable behaviors (like custom hardware) while dynamic prompting with search suits personalized, fast-changing requirements (like software), and that agents in turn can generate and refine workflows for workflow-building platforms (how Glean's own agent-to-workflow feature works) and act as a "workflow discovery engine" that captures new successful task executions as reusable workflows over time. On workflow search itself, he says pure textual similarity (hybrid lexical/vector/reranking) is insufficient in enterprise settings because many similar-looking workflows compete, so retrieval also needs "authoritativeness" signals from a knowledge graph — who created a workflow, their track record, whether it's referenced on Slack, etc.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a concrete, testable resolution to the workflows-vs-agents framing debate (agent execution trace = workflow) that a book chapter on agent architecture can use directly.
+- Golden-workflow libraries as an evaluation method — grading agents on intermediate steps against a company's own recorded task-to-workflow data, not just end output — is a reusable eval pattern distinct from LLM-as-judge approaches covered elsewhere.
+- The fine-tuning-vs-dynamic-prompting tradeoff (generalizable/stable vs. personalized/fast-changing) and the "authoritativeness" gap in workflow/document retrieval are specific, transferable engineering claims grounded in Glean's production experience.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=hxFpUcvWPcU

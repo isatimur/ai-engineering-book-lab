@@ -15,17 +15,17 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-09T21:18:48+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Kuba Rogut shares a practical take on RAG is dead, right??. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Kuba Rogut (Turbopuffer) argues RAG isn't dead but is becoming iterative, hybrid retrieval, contrasting Claude Code's per-session grep loop with Cursor's Merkle-tree indexing and its cited accuracy gains."
 ---
 
 # RAG is dead, right?? — Kuba Rogut, Turbopuffer
 
 ## Summary
-Kuba Rogut shares a practical take on RAG is dead, right??. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Kuba Rogut (deployed engineer at Turbopuffer) argues "RAG is dead" tweets misdiagnose what's actually happening: naive one-shot vector search is being replaced not by pure agentic grep but by hybrid, tool-rich, iterative retrieval that agents call repeatedly during a session. He contrasts two traces — Claude Code's per-session grep-read-assess loop, which he says can burn thousands of tokens rediscovering the same code-base facts every session (Boris Cherney has said Claude Code dropped its local vector DB because it didn't work out), against Cursor's upfront-indexing model, which uses Merkle-tree hashing to reuse embeddings across the ~100 engineers on a team who mostly open the same few codebases and only re-embeds changed files. He cites Cursor's own (non-public) benchmarks: roughly 12.5-13.5% average answer-accuracy gains from semantic search across models (nearly 24% for their Composer model pre-Composer-2), plus an online A/B test showing about 2.6% better code retention and a 2.2% drop in dissatisfied requests in large codebases. He closes with Jeff Dean's line that huge context windows still need staged retrieval — "you don't need a trillion tokens at once, you need the right million" — framing embeddings as reusable "cached compute" rather than a technique to abandon.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Directly rebuts a circulating claim ("RAG is dead") with a named vendor's production benchmarks (Cursor's accuracy/retention numbers), giving the book a concrete data point on when vector search still earns its keep versus pure agentic grep.
+- The Claude Code vs. Cursor trace comparison is a clean case study for a chapter on retrieval architecture trade-offs — per-session rediscovery cost vs. upfront indexing cost — grounded in a real engineering decision (Claude Code dropping its vector DB).
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=UM6sFg_jdlE

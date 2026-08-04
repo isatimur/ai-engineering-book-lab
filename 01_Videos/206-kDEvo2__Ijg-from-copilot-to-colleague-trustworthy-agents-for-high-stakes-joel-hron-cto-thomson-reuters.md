@@ -13,16 +13,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:43:56+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Stakes - Joel Hron shares a practical take on From Copilot to Colleague: Trustworthy Agents for High. This keynote will explore what it takes to move from basic generative assistants to fully agentic AI—systems that don’t just suggest but plan, act, and adapt—all within the structured,... Key angle: focuses on agent design and orchestration."
+summary: "Thomson Reuters CTO Joel Hron on shifting agents from helpful to productive in law/tax, using autonomy/context/memory/coordination as tunable dials, and eval noise of 10%+ among expert human graders."
 ---
 # From Copilot to Colleague: Trustworthy Agents for High-Stakes - Joel Hron, CTO Thomson Reuters
 
 ## Summary
-Stakes - Joel Hron shares a practical take on From Copilot to Colleague: Trustworthy Agents for High. This keynote will explore what it takes to move from basic generative assistants to fully agentic AI—systems that don’t just suggest but plan, act, and adapt—all within the structured,... Key angle: focuses on agent design and orchestration.
+Joel Hron (CTO, Thomson Reuters) argues that TR's north star for AI shifted over the past two and a half years from "helpful" assistants to "productive" agents expected to produce judgments and decisions in high-stakes domains (law, tax, global trade, fraud investigation) where wrong answers are not acceptable. He frames agentic AI not as binary but as four independently tunable dials — autonomy, context, memory, and coordination — set differently per use case and risk tolerance. He calls eval the hardest problem TR faces: even trained legal experts show 10%+ swings in accuracy grading the same question-response pairs a week apart, making human-preference judgments both noisy and expensive to scale, so TR relies on rigorous rubrics plus aggregate preference trends as a "north star" signal. He describes decomposing TR's 100+-year-old legacy applications — which encode deep domain logic like a tax calculation and validation engine — into tools that agents call, and says TR abandoned MVP-first development in favor of building the whole system before deciding which components needed further engineering. Two demos illustrate this: an agent that extracts data from tax documents (W-2, 1099), maps it into a tax engine, and generates a return end-to-end using the engine's built-in validation; and a legal-research agent that searches and cross-validates citations across TR's 1.5+ terabyte proprietary content corpus, writes intermediate notes to itself, and produces a final report with hyperlinked citations to real cases/statutes and risk flags.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A concrete high-stakes production case (legal/tax) showing agentic "dials" (autonomy/context/memory/coordination) tuned per use case rather than treated as an on/off agentic switch.
+- A rare quantified data point on human eval noise (10%+ swings among expert graders on identical inputs) that complicates claims that human review alone establishes ground truth for agent evals.
+- A counter-example to lean/MVP-first orthodoxy: TR reports better outcomes building the full agentic system first, then targeting engineering effort at components not already "healed" by the system's own agentic behavior.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=kDEvo2__Ijg

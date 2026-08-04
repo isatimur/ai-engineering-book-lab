@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-09T21:18:31+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ara Khan shares a practical take on Evals Are Broken, Use Them Anyway. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Cline's Ara Khan critiques benchmark-literalism and pure vibes, then details building agentic evals from real coding sessions and using Terminal-Bench/Harbor to hill-climb via failure-trace analysis."
 ---
 
 # Evals Are Broken, Use Them Anyway — Ara Khan, Cline
 
 ## Summary
-Ara Khan shares a practical take on Evals Are Broken, Use Them Anyway. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Ara Khan (Cline) argues most people misuse evals in one of two ways: an "objective metrics" camp that over-trusts benchmark dashboards (citing a Meta benchmark-maxing critique and skepticism that GPT-5.x and Gemini scoring similarly means they perform the same), or a "taste" camp that dismisses evals as pure vibes. His interpretation heuristics are: never trust a model provider's self-reported eval number at face value, stay current without being the earliest adopter (let a new model "settle" for weeks before switching), and prefer newer, precise evals over stale standardized ones — citing OpenAI's own admission that SWE-bench Verified no longer measures frontier coding capability. He describes how Cline, finding no adequate agentic coding benchmark, built one from real user sessions (opted-in, paid contributors) because agent tasks — searching files, setting up environments, running scripts and tests across many turns — can't be graded like single-turn Q&A, and adopted Stanford's Terminal-Bench (89 real-world-style tasks such as race conditions and infra/database issues, each taking up to 30-40 minutes) run in parallel isolated VMs via Harbor infrastructure (using providers like Modal). His hill-climbing process: run the 89 tasks, take the failures, replay the LLM-call traces through another agent to attribute each failure to a specific cause (broken retry tool, timeout, etc.), then target fixes — distinguishing whether a failure comes from the underlying model, the harness (he notes Anthropic models sometimes perform much better paired with Claude Code than with other harnesses), or a bad eval task itself — improving Cline's own score from a 43% baseline through three zones: fixing obvious harness bugs, making nuanced model-family-specific prompt tweaks, and (a zone to avoid) overfitting/gaming the benchmark.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a specific, working definition of agentic-eval failure attribution (replay traces to classify why each task failed: model, harness, or bad eval) that goes beyond generic "build evals" advice.
+- Documents Terminal-Bench and Harbor as concrete, named infrastructure for running isolated, parallelized multi-turn coding-agent benchmarks — citable tooling for a chapter on agent evaluation practice.
+- The claim that identical models perform differently depending on harness (Anthropic models plus Claude Code vs. other agents) is a specific, checkable data point about where quality actually comes from in coding agents, distinct from raw model capability.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=QuuIywMG4s8
