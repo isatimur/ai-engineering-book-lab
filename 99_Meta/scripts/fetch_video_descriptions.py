@@ -33,6 +33,8 @@ def main() -> None:
             ids.append(m.group(1))
 
     print(f"[descriptions] to fetch: {len(ids)} (have {len(done)})")
+    fetched = 0
+    last_error = ""
     with OUT.open("a") as f:
         for i in range(0, len(ids), CHUNK):
             batch = [f"https://www.youtube.com/watch?v={v}" for v in ids[i : i + CHUNK]]
@@ -49,8 +51,23 @@ def main() -> None:
                     {"id": d.get("id"), "title": d.get("title"),
                      "description": d.get("description", "")},
                     ensure_ascii=False) + "\n")
+                fetched += 1
             f.flush()
-    print("[descriptions] done")
+            if r.returncode != 0 and r.stderr:
+                last_error = r.stderr.strip().splitlines()[-1][:200]
+
+    print(f"[descriptions] fetched {fetched}/{len(ids)}")
+    # Fail loudly rather than leaving an invisible gap: YouTube blocks
+    # datacenter IPs for per-video requests, so this reliably returns nothing
+    # on CI runners even though the flat inventory listing succeeds. Run it
+    # from a residential connection instead.
+    if ids and fetched == 0:
+        print(f"[descriptions] ERROR: fetched nothing for {len(ids)} video(s). "
+              f"Last yt-dlp error: {last_error or '(none captured)'}")
+        raise SystemExit(1)
+    if fetched < len(ids):
+        print(f"[descriptions] WARNING: {len(ids) - fetched} video(s) still missing "
+              "descriptions; re-run locally to fill the gap.")
 
 
 if __name__ == "__main__":

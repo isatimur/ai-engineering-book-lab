@@ -151,10 +151,18 @@ jobs:
       - name: Run full ingest pipeline
         run: python 99_Meta/scripts/update_ai_engineer_channel.py
 
+      # YouTube blocks datacenter IPs for per-video requests, so descriptions
+      # (like transcripts) usually come back empty here. Non-blocking so the
+      # corpus PR still lands, but the script exits non-zero and the health
+      # report below states the backfill debt instead of hiding it.
       - name: Refresh descriptions and shared artifacts
+        continue-on-error: true
         run: |
           python 99_Meta/scripts/fetch_video_descriptions.py
           python 99_Meta/scripts/build_shared_artifacts.py
+
+      - name: Corpus health report (backfill debt)
+        run: python 99_Meta/scripts/corpus_health.py
 
       - name: Create pull request with new corpus material
         uses: peter-evans/create-pull-request@v6
