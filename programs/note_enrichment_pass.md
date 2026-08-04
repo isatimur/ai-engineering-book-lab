@@ -23,8 +23,12 @@ opportunistic.
   (`## Book angles`, `## Theme hooks`) — two note formats coexist by design.
 - 2026-08-04 — round 2 done: 25 more enriched (commits 24f9f1b and parent).
   Agents now self-validate with check_note_frontmatter.py before reporting.
-- Remaining: ~21 ledger-cited notes on ingest boilerplate. Same method,
+- Remaining: 22 ledger-cited notes on ingest boilerplate (measured, not estimated). Same method,
   ~25 per run, highest anchor count first.
+
+**Editing gotcha:** a few notes contain non-breaking spaces (U+00A0) around
+em-dashes, which makes exact-string Edit matching fail confusingly. Inspect with
+Python `repr()` and fall back to a scripted replacement for those files.
 
 **Verification lesson:** transcripts are line-wrapped caption text, so
 multi-word greps fail across line breaks. Always join lines before checking a
