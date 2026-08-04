@@ -164,6 +164,9 @@ jobs:
       - name: Corpus health report (backfill debt)
         run: python 99_Meta/scripts/corpus_health.py
 
+      - name: Validate note frontmatter and sections
+        run: python 99_Meta/scripts/check_note_frontmatter.py
+
       - name: Create pull request with new corpus material
         uses: peter-evans/create-pull-request@v6
         with:

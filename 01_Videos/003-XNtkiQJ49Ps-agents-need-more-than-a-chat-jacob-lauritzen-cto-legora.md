@@ -13,7 +13,7 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T09:58:24+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Jacob Lauritzen, CTO of Legora (1,000+ legal-firm customers), argues that chat is a low-bandwidth, one-dimensional interface that collapses complex agent work into a useless linear thread. His core claim: planning is a stopgap that will disappear; skills — encoded human judgment attached to individual nodes of work — are the durable abstraction. He frames agent-human collaboration along two axes: trust (raised by proxy verification, task decomposition, guardrails) and control (raised by planning, skills, and targeted elicitation). His legal examples are concrete: 'is the contract similar to our golden set?' as a verification proxy; clause-level document editing as a high-bandwidth artifact; tabular review UI that lets one person steer thousands of agent decisions without a chat thread.""
+summary: "Jacob Lauritzen, CTO of Legora (1,000+ legal-firm customers), argues that chat is a low-bandwidth, one-dimensional interface that collapses complex agent work into a useless linear thread."
 ---
 # Agents need more than a chat - Jacob Lauritzen, CTO Legora
 
