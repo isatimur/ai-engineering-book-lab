@@ -13,7 +13,7 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:43:25+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Stanford's Yegor Denisov-Blanch presents a 600-company, 100k-engineer git-history study finding AI yields ~15-20% net productivity gains, ranging 30-40% on simple greenfield tasks to 0-10% on complex brownfield ones."
+summary: "Stanford's Yegor Denisov-Blanch presents a 600-company, 100k-engineer git-history study finding AI yields ~15-20% net productivity gains, from 30-40% on simple tasks to 0-10% on complex brownfield ones."
 ---
 # Does AI Actually Boost Developer Productivity? (100k Devs Study) - Yegor Denisov-Blanch, Stanford
 
