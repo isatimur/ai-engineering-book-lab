@@ -13,16 +13,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T10:52:10+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on Paying Engineers like Salespeople – Arman Hezarkhani, Tenex. Most software teams still run on an outdated unit of measure: hours, days, years. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns."
+summary: "Tenex co-founder Arman Hezarkhani describes paying engineers per story point, with case studies (96% accuracy AI moderation in two weeks; five parallel on-device retail models)."
 ---
 # Paying Engineers like Salespeople – Arman Hezarkhani, Tenex
 
 ## Summary
-A practical talk on Paying Engineers like Salespeople – Arman Hezarkhani, Tenex. Most software teams still run on an outdated unit of measure: hours, days, years. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns.
+Arman Hezarkhani, co-founder of AI consultancy Tenex (10X), describes paying engineers per completed story point rather than salary-plus-bonus, arguing hourly and salaried models create disincentives to work fast or well in the AI era. Tenex's workflow splits client-facing work into a strategist role (compensated on client retention/happiness, doing PM-style requirements gathering) and an AI-engineer role (compensated per story point on an architecture design doc broken into tickets, with every ticket QA'd by both strategist and client before payment). He cites two case studies: a two-week build of an AI image-moderation model for a billboard-ad marketplace that reached 96% accuracy versus human moderators, and five parallel on-device models (heat mapping, queue detection, theft detection) built for a retail hardware client. He names the model's risks explicitly - story-point inflation, rushed/low-quality work, and "sharp elbow" competition - and says they're mitigated by having strategists (not engineers) scope tickets, multi-round QA, and a high hiring bar.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A concrete, named example of outcome-based (story-point) compensation for AI-augmented engineering work, useful evidence for a chapter on org design under AI-accelerated output.
+- Gives quantified case studies (96% accuracy in two weeks; five parallel on-device models) showing measurable AI engineering deliverables in a services/consultancy context.
+- Surfaces the failure modes of piece-rate engineering pay (metric gaming, quality-speed tradeoffs) and how one firm structurally counterbalances them - useful for discussing incentive design around AI tooling.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=4mRekpZpBZs

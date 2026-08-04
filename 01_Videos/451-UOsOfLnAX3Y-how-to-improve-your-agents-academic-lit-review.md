@@ -14,16 +14,17 @@ themes:
   - "Agent Architecture"
 ingested_at: "2026-04-24T12:18:54+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on How to Improve Your Agents: Academic Lit Review. In this video, I dive into the capabilities of Arklex AI's agent framework, highlighting how AI agents can collaborate with human agents to enhance productivity. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns."
+summary: "Columbia's Joe (Arklex AI) surveys agent self-improvement research (reflection, MCTS dialogue planning, R-MCTS for GUI agents) with results on BIG-Bench-Hard, Visual Web Arena, and OSWorld."
 ---
 # How to Improve Your Agents: Academic Lit Review
 
 ## Summary
-A practical talk on How to Improve Your Agents: Academic Lit Review. In this video, I dive into the capabilities of Arklex AI's agent framework, highlighting how AI agents can collaborate with human agents to enhance productivity. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns.
+Joe, from Columbia University and founder of Arklex AI, surveys academic techniques for improving agent reasoning and self-correction, framing agents via a five-level autonomy scale (from 2017-era retrieval chatbots to fully-trusted, "Jarvis"-style delegation) and a perception-reasoning-reflection-action loop. He details a self-refine/reflection method in which a model critiques and revises its own chain-of-thought answers, showing that small models (e.g., 7B Llama) generate noisy self-feedback that degrades results ("blind leading the blind"), and proposes fixing this by having a larger LLM edit the small model's feedback before using it as on-policy training data - reaching 48% on BIG-Bench-Hard reasoning tasks after three correction iterations, roughly double the gain from plain supervised fine-tuning on the same data. He then presents Monte Carlo Tree Search adapted to dialogue planning (an EMNLP 2023 donation-persuasion task), using an "open-loop" MCTS variant to handle human response variance with zero training data, and reports it beat non-planning baselines in both LLM-judge comparisons and live Mechanical Turk donation studies, with the model learning to delay its "big ask" and diversify persuasion strategies. Extending this to GUI/visual agents - where plain GPT-4V scores around 16% versus roughly 88% for humans on Visual Web Arena-style tasks - he introduces R-MCTS, tree search augmented with contrastive reflection (a cached vector-database memory of past task outcomes) and multi-agent debate for state evaluation, which topped the Visual Web Arena leaderboard and was the best non-fine-tuned method on the OSWorld desktop-agent benchmark using test-time compute alone. He closes by describing "exploratory learning," which trains models on the full search-tree traversal, including backtracking, rather than only the best-found trajectory, and previews Arklex, his team's open-source agent framework for multi-agent, multi-user orchestration problems like scheduling and human handover.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Surveys concrete, cited techniques (self-refine reflection, MCTS-based dialogue planning, R-MCTS for GUI agents) with quantified benchmark results, giving academic grounding for claims about agent reasoning and self-improvement methods.
+- The five-level autonomy framework (chatbot, agent-assist, agent-as-a-service, autonomous multi-task, fully-trusted delegation) offers a reusable taxonomy for classifying real-world agent deployments by risk and human oversight.
+- Documents the GPT-4V-versus-human gap on GUI benchmarks (about 16% vs. 88%) and how test-time search, not fine-tuning, closed much of it - relevant to any discussion of inference-time scaling versus pretraining or fine-tuning investment.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=UOsOfLnAX3Y

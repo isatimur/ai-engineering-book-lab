@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-20T09:01:46+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Zack Proser shares a practical take on How to Keep Shipping When You Walk Away from Your Desk. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "WorkOS's Zack Proser argues human attention, not agent capacity, is now the bottleneck, and shows an MCP/voice/remote-control stack with tiered verification gates to avoid burnout."
 ---
 
 # How to Keep Shipping When You Walk Away from Your Desk — Zack Proser, WorkOS
 
 ## Summary
-Zack Proser shares a practical take on How to Keep Shipping When You Walk Away from Your Desk. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Proser (WorkOS, Applied AI team) opens with a concrete example: he gave Claude Code MCP access to Slack and his existing Linear access, told it to fix a sentence-case bug mangling acronyms and "verify your own work," and came back to a fully closed loop — the agent fixed the bug, pushed the update through the Slack bot it affected, and confirmed the outcome without him checking in. His thesis is that agents no longer are the bottleneck (they scale, e.g. via the Claude API running overnight) — human attention is, since it "still degrades under load," citing Simon Willison saying he's "wiped out by 11am" running four parallel agents. His proposed stack has four layers: "signal layers" (agents reading Slack/Linear on a loop to triage at-mentions and dedupe asks so he isn't pulled off task), voice-first coding (he reports hitting ~184 words per minute versus 90 wpm typing, enabling speaking into multiple parallel Claude/Cursor/Codex sessions at once), "remote control" (starting a Claude Code session at his desk, then messaging it from his phone miles away, tied to the "shower principle" that diffuse-mode insight no longer requires stopping work), and having the system improve itself by having an agent periodically mine his saved Claude Code JSONL conversation logs for recurring friction points to convert into new skills or MCP servers. He layers three verification gates on top: lint/build/unit tests, browser click-through to check nothing user-facing broke, and a "constitutional AI"-style setup where a second agent grades the first agent's work against a written policy.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Documents a concrete, working multi-agent + MCP setup (Slack, Linear, browser, JSONL self-review) for asynchronous, verification-gated agentic coding, useful as a real operational pattern rather than a hypothetical.
+- Reframes the bottleneck question in agentic engineering from model capability to human attention and burnout, a counterpoint worth pairing with more capability-focused talks.
+- Names concrete practices (tiered verification gates, mining session logs to auto-generate skills) that a book chapter on sustainable agentic workflows could cite as reusable techniques.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=so9l_MwS2yg

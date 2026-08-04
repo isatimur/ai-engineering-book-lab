@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-20T09:01:57+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Sandipan Bhaumik shares a practical take on £85K Burned on a Failed PoC: What Actually Gets Agents to Production. Key angle: emphasizes evaluation and measurement; keeps returning to production-grade engineering."
+summary: "Databricks' Sandipan Bhaumik details a 5-pillar framework (eval, observability, data, orchestration, governance) built from a banking chatbot case where a prior 85K POC failed before a rebuild succeeded."
 ---
 
 # £85K Burned on a Failed PoC: What Actually Gets Agents to Production — Sandipan Bhaumik, Databricks
 
 ## Summary
-Sandipan Bhaumik shares a practical take on £85K Burned on a Failed PoC: What Actually Gets Agents to Production. Key angle: emphasizes evaluation and measurement; keeps returning to production-grade engineering.
+Sandipan Bhaumik, a Databricks technical lead for data/AI and former AWS principal architect, presents a five-pillar production framework - evaluation, observability, data foundation, orchestration, governance - built from client work, including a retail-banking chatbot case where a prior vendor burned 85K over six months on a POC that never reached production. His fix: an eight-week rebuild that deferred model selection to week seven, spending weeks one and two building an evaluation dataset (200 real human-agent responses) and defining numeric success criteria (60% query deflection, 85% accuracy), then adding a three-layer eval stack (deterministic regex/entity checks, LLM-as-judge for groundedness and safety, and "behavioral" checks for tool-call loops and duplicate API calls) before touching a model. Post-launch, tracing caught a real incident: a bank policy change wasn't reflected in the vector database's embeddings, causing stale chatbot answers and a CSAT drop that was only diagnosable because traces showed the agent citing an outdated policy document. He also describes Databricks' own stack for this (Delta Lake, Unity Catalog, Agent Bricks, MLflow LLM-judges), three multi-agent orchestration patterns (orchestrator-worker, choreography via message bus, human-in-the-loop), a "production incident playbook" (detect via eval dashboard, diagnose via tracing, contain via prompt rollback or circuit-breaker patterns, fix via the test-case library), and governance specifics like catching 47 PII breaches during testing and treating prompt changes as versioned, documented change management.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Provides a named, numbered case study (a failed six-figure-scale POC turned into a chatbot hitting defined 60%/85% targets) that grounds "AI to production" claims in a concrete before/after.
+- Lays out a reusable three-layer eval taxonomy (deterministic, LLM-as-judge, behavioral) and a concrete incident (stale RAG embeddings after a policy change) that illustrates why observability and tracing are production requirements, not nice-to-haves.
+- Documents specific governance mechanics (prompt versioning as change management, PII-breach counts, an incident playbook) that give operational detail on enterprise AI governance beyond generic "add guardrails" advice.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=ObTPqBGsEbA

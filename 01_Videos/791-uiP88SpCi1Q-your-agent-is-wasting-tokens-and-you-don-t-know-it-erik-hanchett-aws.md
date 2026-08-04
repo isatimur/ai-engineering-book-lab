@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-06-28T23:47:35+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Erik Hanchett shares a practical take on Your Agent Is Wasting Tokens and You Don't Know It. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Erik Hanchett of AWS shares five token-saving techniques for agents in Strands Agents: prompt caching, difficulty-based model routing, tool-result offloading, capped tool loops, and sliding-window history trimming."
 ---
 
 # Your Agent Is Wasting Tokens and You Don't Know It - Erik Hanchett, AWS
 
 ## Summary
-Erik Hanchett shares a practical take on Your Agent Is Wasting Tokens and You Don't Know It. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Erik Hanchett (AWS senior developer advocate) gives a lightning talk with five concrete techniques for cutting agent token costs, demoed with AWS's Strands Agents SDK (portable across model providers). First, cache the system prompt (`cache_prompt=default`) and optionally tool prompts/messages, so only the first call sends the full prompt and subsequent calls send a reduced version. Second, route requests by task difficulty — e.g., Claude Haiku for simple tasks, Claude Sonnet for harder ones, chosen via an if-statement or even a cheap model that decides the routing — rather than using one expensive model for everything. Third, offload large tool results to local or cloud storage and summarize them instead of re-injecting the full result into context on every agent loop iteration (Strands has APIs for this). Fourth, cap tool-call loops with a max-iterations setting to prevent runaway/infinite looping, and use observability tools before deployment to check how long and how often each tool call runs. Fifth, trim conversation history using Strands' "sliding window conversation manager" (default keeps the last 10 messages), trading off loss of earlier history, which can be mitigated by summarizing the dropped history back into the context.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives specific, implementable cost-reduction techniques (prompt caching, model routing by difficulty, tool-result offloading/summarization, capped tool loops, sliding-window history trimming) grounded in a real SDK (Strands Agents) rather than generic advice.
+- Names concrete model choices (Claude Haiku vs. Sonnet) for difficulty-based routing, useful as a case study for cost/performance tradeoff discussions in agent design.
+- Surfaces a common failure mode (uncapped tool-call loops burning tokens) and the observability practice (checking tool call duration/count pre-deployment) used to catch it.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=uiP88SpCi1Q

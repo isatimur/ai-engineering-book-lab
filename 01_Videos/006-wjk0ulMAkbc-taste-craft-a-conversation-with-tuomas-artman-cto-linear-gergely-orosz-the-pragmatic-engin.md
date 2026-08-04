@@ -13,16 +13,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T09:58:31+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer. Tuomas Artman is Cofounder and CTO of Linear. Key angle: focuses on agent design and orchestration."
+summary: "Linear CTO Tuomas Artman on why AI-driven shipping speed removes the natural gate on feature quality, and how Linear enforces taste via Quality Wednesdays, a zero-bug policy, and ~10% auto-fixed bugs."
 ---
 # Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer
 
 ## Summary
-A practical talk on Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer. Tuomas Artman is Cofounder and CTO of Linear. Key angle: focuses on agent design and orchestration.
+Artman argues that when agents make shipping nearly free, the old gate on feature sprawl (engineering effort was slow and expensive) disappears, and without deliberate taste a team will ship convoluted, low-quality software even faster — drawing the Uber-vs-Lyft-pool parallel, where two functionally identical products diverge slowly on quality with no A/B test to catch it. At Linear, roughly 10% of incoming bugs are already auto-fixed and auto-landed by a single-shot AI instance with no engineer involved, a share he expects to keep rising. Linear enforces quality through two concrete mechanisms: "Quality Wednesdays," a weekly 30-minute call where every engineer (about 25 people) must find and fix one small polish issue themselves — started after a single UI menu review turned up 35 problems, and the practice has since fixed roughly 2,500–3,000 such details — and a "zero bug policy" where reported bugs are auto-assigned and fixed within days (often in 2–3 hours), following one initial three-week freeze on new features to pay the bug backlog down to zero. Artman's view on AI limits: agents lack "taste" because they have no felt sense of time (they can't experience a two-second click as frustratingly slow) and no ability to judge whether an animation feels natural, which is why one of Linear's design engineers still hand-tunes AI-generated animations after the agent gets the mechanics right.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives concrete, named practices (Quality Wednesdays, zero-bug policy, ~10% auto-fixed bugs) for how a real product org counterbalances AI-driven shipping speed with deliberate quality control.
+- Articulates a specific, falsifiable claim about a current AI limitation — no felt sense of latency or animation feel — useful for a book section on where agentic coding still needs human judgment.
+- The Uber-pool/Lyft-pool anecdote is a concrete case study of how quality differences between functionally identical products play out slowly, without a measurable A/B signal, which is a useful cautionary data point for "ship fast with AI" narratives.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=wjk0ulMAkbc

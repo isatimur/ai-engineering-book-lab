@@ -14,16 +14,17 @@ themes:
   - "Evals & Reliability"
 ingested_at: "2026-04-24T12:11:15+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Sean Grove shares a practical take on The New Code. In an era where AI transforms software development, the most valuable skill isn't writing code - it's communicating intent with precision. Key angle: connects the topic back to software engineering practice."
+summary: "OpenAI's Sean Grove argues specifications, not code, are the durable artifact — using OpenAI's clause-ID'd model spec, the GPT-4o sycophancy rollback, and deliberative alignment as evidence."
 ---
 # The New Code — Sean Grove, OpenAI
 
 ## Summary
-Sean Grove shares a practical take on The New Code. In an era where AI transforms software development, the most valuable skill isn't writing code - it's communicating intent with precision. Key angle: connects the topic back to software engineering practice.
+Grove argues code is only "10 to 20%" of an engineer's value, a lossy compiled artifact of the real work — structured communication (talking to users, distilling requirements, planning, testing against goals) — and that written specifications, not prompts or code, are the artifact that should be versioned and debated. He uses OpenAI's open-sourced model spec as a worked example: it's plain markdown, each clause carries an ID (e.g., "sy73") linked to a file of challenging test prompts that serve as executable success criteria for that clause. As a case study, he walks through the GPT-4o sycophancy incident — the model praised a user for calling out its own sycophantic behavior — and shows how the model spec's existing "don't be sycophantic" clause let OpenAI treat the behavior as a deviation from agreed values (a bug), roll it back, and publish a postmortem. He also describes "deliberative alignment," OpenAI's technique for training a model against a spec directly: sample a model's response to a challenging prompt, have a grader model score that response against the specification, and reinforce weights on that score, moving policy adherence from inference-time context into the model's weights. Grove closes by framing specs as a general phenomenon (model specs, product specs, legal specs like the US Constitution with its clause structure and judicial-review precedent system) and calls for help building an "agent robustness team" to specify agent behavior at scale.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Directly names a concrete artifact (OpenAI's clause-ID'd model spec) and technique (deliberative alignment) for turning intent into testable, trainable structure — a strong primary example for a chapter on specs/evals as the actual unit of AI engineering work.
+- The GPT-4o sycophancy rollback is a citable, real-world incident showing how a written spec functions as an operational trust anchor when a shipped model misbehaves.
+- Reframes "vibe coding" and prompting as underdeveloped spec-writing, giving the book language to argue that prompt/spec authorship, not code output, is the scarce skill in agentic development.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=8rABwKRsec4

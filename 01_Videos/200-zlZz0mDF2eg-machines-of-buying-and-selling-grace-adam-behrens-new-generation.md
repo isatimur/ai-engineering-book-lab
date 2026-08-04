@@ -13,16 +13,16 @@ themes:
   - "MCP & Tooling"
 ingested_at: "2026-04-24T11:43:39+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Adam Behrens shares a practical take on Machines of Buying and Selling Grace. How to go beyond browser automation to truly agentic commerce, where AI can buy, sell and negotiate on behalf of users and merchants. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Adam Behrens outlines four challenges for agentic commerce: checkout authorization, intent-to-SKU mapping, inventory discovery, and preference representation, illustrated via Samsung's MCP rollout."
 ---
 # Machines of Buying and Selling Grace - Adam Behrens, New Generation
 
 ## Summary
-Adam Behrens shares a practical take on Machines of Buying and Selling Grace. How to go beyond browser automation to truly agentic commerce, where AI can buy, sell and negotiate on behalf of users and merchants. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Adam Behrens (New Generation) defines a store as "a location for and a protocol that facilitates transactions" and argues AI digitizes the participants (merchant agents, consumer agents) the way e-commerce digitized merchandise and distribution. He walks through four concrete technical challenges for agentic commerce: checkout when software clicks "buy" (contrasting today's virtual-card/Stripe-SDK pattern with Visa's delegated-authentication approach that lets an agent use the user's actual card), mapping fuzzy conversational buyer intent to specific SKUs (currently forced via product-detail-page URLs, though he notes AI-channel traffic already shows much higher conversion and dollar value), discovering inventory across thousands of merchants (rejecting both Google product feeds and web scraping in favor of a proposed unified product-data API, "like Plaid but for products"), and representing two-sided buyer/seller preferences given built-in incentives to misreport, which he likens to how financial markets rely on third-party market makers, drawing on his own experience at Bridgewater. As a working example, he describes New Generation's engagement with Samsung — a 150-year-old company with 10 separate product verticals — building a unified API/MCP server, wiring it to brand and design-system data, an experimental AI subdomain for generative interfaces, and agentic transaction handling. In Q&A he floats stablecoins as the conceptually native agentic-payment rail (with credit cards as the practical bridge for now) and expects merchant monetization to resemble affiliate revenue rather than advertising.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Grounds "agentic commerce" in named technical problems — checkout authorization, intent-to-SKU mapping, cross-merchant inventory discovery, preference representation — rather than hype, backed by a concrete Fortune 500 (Samsung) implementation example.
+- The Visa delegated-authentication vs. virtual-card contrast and the "Plaid for product data" framing are specific, citable patterns for a chapter on agents transacting on behalf of users, plus a market-design angle on buyer/seller preference asymmetry borrowed from finance.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=zlZz0mDF2eg
