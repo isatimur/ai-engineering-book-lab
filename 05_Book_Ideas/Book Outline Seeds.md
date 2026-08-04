@@ -13,7 +13,7 @@
 ## Supporting seed talks
 
 ### Agent Architecture
-- Corpus coverage: 362 talks
+- Corpus coverage: 372 talks
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
@@ -22,7 +22,7 @@
 - [[044-kmV-qg4uoNI-building-durable-agents-with-workflow-devkit-ai-sdk-peter-wielander-vercel|#44 — Building durable Agents with Workflow DevKit & AI SDK - Peter Wielander, Vercel]]
 
 ### Coding Agents
-- Corpus coverage: 452 talks
+- Corpus coverage: 464 talks
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -31,7 +31,7 @@
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 
 ### Evals & Reliability
-- Corpus coverage: 405 talks
+- Corpus coverage: 415 talks
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]
@@ -48,7 +48,7 @@
 - [[754-gUMwt4-5kn0-2026-ai-engineer-vibe-reel|#754 — 2026 AI Engineer Vibe Reel]]
 
 ### MCP & Tooling
-- Corpus coverage: 115 talks
+- Corpus coverage: 118 talks
 - [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
 - [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
@@ -75,7 +75,7 @@
 - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — The Friction is Your Judgment — Armin Ronacher & Cristina Poncela Cubeiro, Earendil]]
 
 ### RAG & Retrieval
-- Corpus coverage: 165 talks
+- Corpus coverage: 166 talks
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
 - [[008-mYSRn6PC1mc-full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard-paul-iusztin-sam|#8 — Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi]]

@@ -1,14 +1,14 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **971 videos**
-Transcript status mix: **{'auto_en': 2, 'auto_en_orig': 967, 'unavailable': 2}**
+Corpus size analyzed: **983 videos**
+Transcript status mix: **{'auto_en': 2, 'auto_en_orig': 979, 'unavailable': 2}**
 
 ## What changed after full-corpus review
 
 The corpus is now strong enough to stop treating the book as a loose trend survey.
 A clearer thesis is emerging: **AI engineering is the discipline of turning model capability into dependable, high-leverage systems through scaffolding, evaluation, context design, and organizational adaptation.**
 
-Across the full 971-video corpus, four things stand out most clearly:
+Across the full 983-video corpus, four things stand out most clearly:
 - the book should be anchored in **production practice**, not model novelty
 - **coding agents** are the best narrative entry point, but not the whole book
 - **trust, control, and eval loops** are the hinge between demo and deployment
@@ -16,10 +16,10 @@ Across the full 971-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 362, `Coding Agents`: 452).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 405).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 372, `Coding Agents`: 464).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 415).
 - **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 241).
-- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 115, `RAG & Retrieval`: 165).
+- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 118, `RAG & Retrieval`: 166).
 - **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 26, `Voice & Realtime`: 43).
 
 ## Best current thesis

@@ -6,7 +6,7 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 221 videos referenced at least one artifact; corpus size 971.
+> Coverage: 230 videos referenced at least one artifact; corpus size 983.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
 ## GitHub repositories (49)
@@ -80,7 +80,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://huggingface.co/datasets/Halluminate/WebBench> — [[384-Djv8Sp11UjI-the-current-state-of-browser-agents-jerry-wu-and-wyatt-marshall|#384]]
 - <https://huggingface.co/gradientai/v-alpha-tross> — [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473]]
 
-## Deep-link resources (121)
+## Deep-link resources (122)
 
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
@@ -166,6 +166,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://sander.ai/2025/04/15/latents.html> — [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4]]
 - <https://scholar.google.com/citations> — [[900-XjI-AR4pt7Y-your-llm-stack-is-a-2008-database-with-better-marketing-lovina-dmello-nvidia|#900]]
 - <https://se.linkedin.com/in/benjamin-verbeek> — [[735-KA5kPbdkK2E-the-agent-that-files-its-own-bug-reports-benjamin-verbeek-lovable|#735]]
+- <https://sirupsen.com/napkin> — [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983]]
 - <https://slides.podhajsky.net/read-only-ai> — [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29]]
 - <https://snyk.io/contributors/ezra-tanzer> — [[901-cgimkNGNjvU-agentic-development-security-ezra-tanzer-snyk|#901]]
 - <https://spawn-queue.acm.org/doi/pdf/10.1145/3676287> — [[854--CnA2lGfymY-i-ve-never-seen-anything-scarier-than-an-llm-with-tool-calls-erik-meijer-aka-headinthebox|#854]]

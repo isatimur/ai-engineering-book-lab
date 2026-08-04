@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 971
+Total videos: 983
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -973,3 +973,15 @@ Total videos: 971
 969. [Ending AI Slop — Thais Castello Branco, Taste Labs](https://www.youtube.com/watch?v=lCBf9slCanI) — `lCBf9slCanI` — 16:30
 970. [Verifiable Environments for AI in Biology — Kenny Workman, LatchBio](https://www.youtube.com/watch?v=3ZMUiFaQ3qg) — `3ZMUiFaQ3qg` — 17:42
 971. [The Base Model Is Dead — Varun Singh, Arcee AI](https://www.youtube.com/watch?v=xbPriQWXtWM) — `xbPriQWXtWM` — 17:45
+972. [Emulated: The Data for Fully Autonomous Software Engineers and Companies — Joseph Wang](https://www.youtube.com/watch?v=zkX03APVj0M) — `zkX03APVj0M` — 16:33
+973. [Scaling to Long Horizons — Ross Taylor & Chengxi Taylor, General Reasoning](https://www.youtube.com/watch?v=2bvtay8wGYI) — `2bvtay8wGYI` — 18:07
+974. [Data and Environment Curation for Post-Training LLMs — Mahesh Sathiamoorthy, Bespoke Labs](https://www.youtube.com/watch?v=ewtOo0scUh0) — `ewtOo0scUh0` — 19:12
+975. [Learning on the Job: The Future of Post-Training — Raymond Feng, Applied Compute](https://www.youtube.com/watch?v=k35LeKZEhiE) — `k35LeKZEhiE` — 18:20
+976. [Data Quality Is the Compute Multiplier — Ari Morcos, DatologyAI](https://www.youtube.com/watch?v=_PdK6x7PQNM) — `_PdK6x7PQNM` — 19:05
+977. [What's Next After RLHF? — Diogo Almeida, TypeSafe AI](https://www.youtube.com/watch?v=cJ0EOzey--o) — `cJ0EOzey--o` — 18:05
+978. [Rethinking Environments for Long-Horizon Work — Rayan Garg, Theta Software](https://www.youtube.com/watch?v=2aS7aKoXn64) — `2aS7aKoXn64` — 21:15
+979. [Teaching AI to Find Real Vulnerabilities — Prof. David Brumley, Bugcrowd](https://www.youtube.com/watch?v=ZFxh7sqbUZo) — `ZFxh7sqbUZo` — 27:17
+980. [When Will The Benchmaxxing Plague End? — Nick Heiner, Surge AI](https://www.youtube.com/watch?v=-npY6XjM8CQ) — `-npY6XjM8CQ` — 17:25
+981. [MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal](https://www.youtube.com/watch?v=s4r6nk5WsZw) — `s4r6nk5WsZw` — 23:54
+982. [MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef](https://www.youtube.com/watch?v=-jY2T2PiJBE) — `-jY2T2PiJBE` — 18:38
+983. [Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)](https://www.youtube.com/watch?v=jQDXzEVHMSE) — `jQDXzEVHMSE` — 56:30
