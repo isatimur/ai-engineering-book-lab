@@ -55,11 +55,11 @@ should be able to operate the whole KB from this table.
 
 | Pipeline | Trigger | Storage class | Freshness gate |
 |---|---|---|---|
-| Video ingest (notes+themes+synthesis) | nightly detect → dispatch `mode=ingest` (self-serve PR) | committed | channel-watcher issue auto-closes at 0 missing |
+| Video ingest (notes+themes+synthesis) | nightly 07:00 UTC detect → **auto-ingest + PR when missing > 0** (manual `mode=check`/`mode=ingest` still available) | committed | channel-watcher issue auto-closes at 0 missing |
 | Transcripts (raw VTT + plain) | ingest fetches; `ingest_ai_engineer_videos.fetch_transcript` backfills | **local-only** (gitignored) + private mirror `isatimur/ai-engineer-corpus-transcripts` | recount vs notes after ingest; push mirror |
 | Whisper rescue (caption-less videos) | manual, local `whisper` base.en | local + mirror | permanent captions gap only |
-| Video descriptions | ingest workflow step (`fetch_video_descriptions.py`, resumable) | committed (`99_Meta/video-descriptions.jsonl`) | gaps = new videos only |
-| Shared Artifacts registry + note sections | ingest workflow step (`build_shared_artifacts.py`, idempotent) | committed | regenerated every ingest |
+| Video descriptions | ingest workflow step (`fetch_video_descriptions.py`, resumable) — runs on every nightly ingest | committed (`99_Meta/video-descriptions.jsonl`) | gaps = new videos only |
+| Shared Artifacts registry + note sections | ingest workflow step (`build_shared_artifacts.py`, idempotent) — runs on every nightly ingest | committed | regenerated every ingest |
 | Stats / evidence / sitemap / llms.txt | push-triggered CI (`stats-regen`, `evidence-regen`) + website prebuild | committed / build-time | CI |
 | Manuscript↔site sync, audio, scores | `check_book_consistency.py` (CI + local) | committed | 3 gates; audio+scores regen are **key-gated** (`OPENAI_API_KEY`/`ELEVEN_API_KEY`, `OPENROUTER_API_KEY`) |
 | Diagrams | `scripts/sync-diagrams.sh` (stale-aware) | committed | `diagrams-check` CI |

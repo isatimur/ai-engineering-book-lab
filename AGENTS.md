@@ -17,7 +17,7 @@ the book *From Copilot to Colleague*. The only runnable application is the
   `website/package.json` and `website/README.md`):
   - Dev server: `npm run dev` (serves on port 3000, host 0.0.0.0).
   - Lint: `npm run lint` (this is a type-check only — `tsc --noEmit`, there is no ESLint).
-  - Tests: `npm test` (Vitest, 76 tests).
+  - Tests: `npm test` (Vitest, 95 tests across 19 files).
   - Build: `npm run build`.
 - Non-obvious build caveat: `npm run build` runs a `prebuild` step that syncs
   data from sibling repo directories (`diagrams/`, `claims/`, `evidence/`, etc.)

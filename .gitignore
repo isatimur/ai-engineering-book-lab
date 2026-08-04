@@ -14,8 +14,9 @@ __pycache__/
 dist/
 
 # Large or machine-specific working state
-99_Meta/transcripts/raw/
-99_Meta/transcripts/plain/
+# Transcripts are local-only; durability via the private mirror repo
+# isatimur/ai-engineer-corpus-transcripts (the dir is itself a git clone).
+99_Meta/transcripts/
 99_Meta/audits/
 99_Meta/batches/
 

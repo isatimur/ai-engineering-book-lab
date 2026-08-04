@@ -1,10 +1,15 @@
 name: ingest-channel
 
-# Nightly watcher for the AI Engineer YouTube channel.
+# Nightly watcher + auto-ingester for the AI Engineer YouTube channel.
 #
-# Fetches the latest channel inventory via yt-dlp, compares against existing
-# 01_Videos/*.md notes, and (if any are missing) opens an issue. With
-# mode=ingest (manual dispatch), runs the full ingest pipeline and opens a PR.
+# Every day at 07:00 UTC: fetches the latest channel inventory via yt-dlp,
+# compares against existing 01_Videos/*.md notes. If any are missing, the
+# detect job opens/updates a tracking issue AND the ingest job runs the full
+# pipeline (notes + transcripts + descriptions + shared-artifacts enrichment)
+# and opens a PR — no manual dispatch required.
+#
+# Manual dispatch is still available: `mode=check` for detect-only (no ingest),
+# `mode=ingest` to force the full pipeline + PR even outside the schedule.
 
 on:
   schedule:
@@ -83,8 +88,9 @@ jobs:
               "- **#\(.playlist_index)** — [\(.title)](https://www.youtube.com/watch?v=\(.id))"]
               | join("\n")
             ) +
-            "\n\n---\n\n### To ingest\n\n" +
-            "Re-run this workflow with `mode=ingest`, or locally:\n\n" +
+            "\n\n---\n\n### Ingest\n\n" +
+            "The ingest pipeline runs automatically on the nightly schedule and opens a PR.\n" +
+            "If it did not (check the latest run), re-run locally:\n\n" +
             "```bash\n./99_Meta/scripts/update_ai_engineer_channel.py\n```\n"
           ' /tmp/channel-report.json > /tmp/issue-body.md
           wc -l /tmp/issue-body.md
@@ -128,7 +134,9 @@ jobs:
 
   ingest:
     needs: detect
-    if: ${{ needs.detect.outputs.missing_count != '0' && github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'ingest' }}
+    # Auto-ingest on the nightly schedule when missing videos are detected, and
+    # on manual `mode=ingest` dispatch. `mode=check` (default) stays detect-only.
+    if: ${{ needs.detect.outputs.missing_count != '0' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'ingest')) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -165,6 +173,8 @@ jobs:
             ## What changed
             - New video notes in `01_Videos/`
             - Updated transcripts in `99_Meta/transcripts/`
+            - Refreshed `99_Meta/video-descriptions.jsonl` (descriptions fetched)
+            - Refreshed `evidence/Shared Artifacts.md` + per-note `## Artifacts` sections
             - Refreshed `Corpus Stats.md`, `Video Inventory.md`, and synthesis pack
 
             ## Review checklist
@@ -178,8 +188,8 @@ jobs:
             automated
 
   notify-failure:
-    needs: detect
-    if: failure()
+    needs: [detect, ingest]
+    if: always() && (needs.detect.result == 'failure' || needs.ingest.result == 'failure')
     runs-on: ubuntu-latest
     steps:
       - name: Open failure issue
