@@ -1,20 +1,20 @@
 # Corpus Stats
 
-- Total notes: 983
-- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 979, 'unavailable': 2}
+- Total notes: 993
+- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 979, 'unavailable': 12}
 
 ## Theme counts
 
-- Agent Architecture: 372
-- Coding Agents: 464
+- Agent Architecture: 374
+- Coding Agents: 465
 - Evals & Reliability: 415
-- General AI Engineering: 5
+- General AI Engineering: 10
 - MCP & Tooling: 118
-- Models & Inference: 129
-- Org Design & Leadership: 241
+- Models & Inference: 131
+- Org Design & Leadership: 242
 - RAG & Retrieval: 166
 - Security & Guardrails: 26
-- Voice & Realtime: 43
+- Voice & Realtime: 44
 
 ## Frequent speakers
 
@@ -28,5 +28,5 @@
 - Will Brown: 3
 - Patrick Debois: 3
 - swyx: 3
+- NVIDIA: 3
 - Matt Pocock: 2
-- Cornelia Davis: 2

@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 983
+Total videos: 993
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -985,3 +985,13 @@ Total videos: 983
 981. [MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal](https://www.youtube.com/watch?v=s4r6nk5WsZw) — `s4r6nk5WsZw` — 23:54
 982. [MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef](https://www.youtube.com/watch?v=-jY2T2PiJBE) — `-jY2T2PiJBE` — 18:38
 983. [Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)](https://www.youtube.com/watch?v=jQDXzEVHMSE) — `jQDXzEVHMSE` — 56:30
+984. [Gadgets: Personal app vibe coding that is actually safe — Kenton Varda, Cloudflare](https://www.youtube.com/watch?v=RmS5s6Wbin4) — `RmS5s6Wbin4` — 18:54
+985. [The State of Model Routing — NVIDIA, Cognition, OpenRouter](https://www.youtube.com/watch?v=QHBjufYK8TA) — `QHBjufYK8TA` — 48:17
+986. [Compression at the Edge — NVIDIA, Unsloth, HuggingFace, Ollama](https://www.youtube.com/watch?v=J4_jCrTxMkk) — `J4_jCrTxMkk` — 46:01
+987. [Local Models: Trust, Control, Optimization — Carter Abdallah, NVIDIA](https://www.youtube.com/watch?v=FWMJQDH3iK0) — `FWMJQDH3iK0` — 43:21
+988. [Codex, Behind the Harness — Dominik Kundel, OpenAI](https://www.youtube.com/watch?v=shRR1e2HXMk) — `shRR1e2HXMk` — 
+989. [Always-on agents run production without the on-call tax — Justin Smith, Resolve AI](https://www.youtube.com/watch?v=vSx5IULvBns) — `vSx5IULvBns` — 
+990. [Realtime multiplayer, automation, and you! — Idan Gazit, GitHub](https://www.youtube.com/watch?v=iQ5xldZ9StU) — `iQ5xldZ9StU` — 
+991. [Anthropic's CCA Exam as a Field-Guide for Agentic Engineering — Frank Coyle, UC Berkeley](https://www.youtube.com/watch?v=Z-c11pV_uvU) — `Z-c11pV_uvU` — 
+992. [Open Source Is Dead. Long Live Open Source. — Saoud Rizwan, Cline](https://www.youtube.com/watch?v=CoEIs6Xm8m8) — `CoEIs6Xm8m8` — 17:30
+993. [The New Primitives: Building AI Native Software — Kwindla Kramer, Daily](https://www.youtube.com/watch?v=LZuWZRze3MU) — `LZuWZRze3MU` — 21:14
