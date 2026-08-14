@@ -36,6 +36,22 @@ that keeps this from being a puff cluster.
 **Recommended disposition:** candidate ledger claim + Chapter 9 material. Highest
 priority of anything in this pass.
 
+### Verified contradiction inside the series (added 2026-08-05 after enrichment)
+
+The nine talks do **not** agree on what an FDE is, and the disagreement is on the
+central question — is this a product role or a sales role?
+
+- **Kepler, Vinoo Ganesh (#945):** "being an FD[E] is an extension of the product
+  function, not the go to market function." He also notes Palantir's FDE *became*
+  a go-to-market strategy but "wasn't that in the beginning."
+- **Cognition, Jia Wu (#949):** "everybody essentially is go-to-market… because the
+  target is to make the customer successful at all costs."
+
+Both quotes verified verbatim against the line-joined transcripts. This is the
+strongest claim candidate in the pass: a live disagreement between named
+practitioners at comparable companies, which is exactly the shape the Claims Ledger
+wants (claim + genuine counterpoint), not a consensus to summarize.
+
 ## 2. Environments as an engineering layer
 
 **Talks (7):** #851 modern post-training (Prime Intellect) · #967 RL *without*
