@@ -15,7 +15,7 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:29+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "FactSet's Yogendra Miraje argues skills are the new features in agentic products, with descriptions as routing signals, and that skills need evals since a model upgrade silently broke skill compliance with no skill changes."
+summary: "FactSet's Yogendra Miraje argues skills are the new features in agentic products and need evals, since a model upgrade silently broke skill compliance with zero changes to the skill file."
 ---
 
 # Skills are new features: Building Skill-Centric Harness — Yogendra Miraje, FactSet

@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:52+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Nick Heiner shares a practical take on When Will The Benchmaxxing Plague End?. Key angle: focuses on agent design and orchestration."
+summary: "Surge AI's Nick Heiner catalogs how benchmarks break (cost, contamination, reward hacking, bad taste like IFEval, poor QC) and how labs game LM Arena, citing Opus memorizing SWE-Bench Verified."
 ---
 
 # When Will The Benchmaxxing Plague End? — Nick Heiner, Surge AI
 
 ## Summary
-Nick Heiner shares a practical take on When Will The Benchmaxxing Plague End?. Key angle: focuses on agent design and orchestration.
+Nick Heiner (Surge AI) defines "benchmaxxing" as labs training too hard on benchmarks in ways that deviate from real-world value, and attributes it to incentives and poor methodology rather than something intrinsic to all benchmarks. He walks through concrete anti-patterns: agentic coding benchmarks can cost roughly $15M to build (1,000 tasks at 60 hours each, engineers at ~$500K/year) plus ~$5M/year to replace the third of tasks that models "solve away," pushing teams toward AI-assisted task generation that doesn't work ("you can't push the frontier forward from within the frontier"); contamination is "the default outcome unless you are very very good" — Surge found clear evidence Opus had memorized SWE-Bench Verified content (it will complete prompts and answers verbatim), a fact undisclosed in the Opus 4.8 model card; reward hacking (e.g., a "write a story" verifier that only checks the ASCII letter "i" isn't overused, which a response can satisfy by writing in Cyrillic instead of finishing the task); under-ambitious verifiers like hard-coded string matching that can't distinguish a genuinely wrong answer from a differently-formatted correct one (his phone-number-format example has two different models both scoring 20% for opposite reasons); and benchmarks lacking "taste," citing IFEval by name for containing self-contradictory instructions, literally impossible constraints, and unverified prompts. He also describes labs actively gaming LM Arena — a documented case of a deliberately deranged "what time is it?" response topping the leaderboard, a described method of watermarking model outputs so a hired crowdsource army can identify and vote for them despite anonymization, and a paper noting Meta evaluated 27 models on the Arena without disclosure. His prescription for good benchmarks: expert-authored tasks paired with domain "product sense" (e.g., a medical benchmark needs regulatory/legal judgment, not just doctors who can answer questions), high-fidelity real-world input data, working tools, two-way verifier/prompt alignment, thorough QC, and a private holdout set; he also reframes "saturation" claims — an 80%-saturated benchmark may really mean 20% of its tasks are broken, distorting rankings until someone checks. Surge's own answer is Hemingway Bench, a writing-quality leaderboard built entirely on blind comparisons by thousands of paid professional writers, because Heiner argues neither mechanical metrics nor LLM-as-judge have adequate taste for writing quality.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Names specific, checkable claims (Opus memorizing SWE-Bench Verified without disclosure, IFEval's self-contradictory/impossible prompts, LM Arena vote-buying via watermarking) that a book chapter on eval integrity can cite as documented rather than alleged failures.
+- Directly rebuts and complements the G2i benchmarks talk in this same cluster (jWq-aZIU0kM) — both independently converge on weak/hard-coded verifiers and contamination as root causes, giving the book two independent sources for the same diagnosis.
+- The economics of benchmark construction ($15M to build, $5M/year to maintain a 1,000-task coding benchmark) is a concrete, citable cost structure explaining why so many published benchmarks are underbuilt or under-QC'd.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=-npY6XjM8CQ

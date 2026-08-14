@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:40+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Training LLMs — Mahesh Sathiamoorthy shares a practical take on Data and Environment Curation for Post. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Bespoke Labs' Mahesh Sathiamoorthy details the Open Thoughts data-curation recipe (multi-answer sampling beats more questions) and a Credit Karma post-training case that fixed compliance and latency."
 ---
 
 # Data and Environment Curation for Post-Training LLMs — Mahesh Sathiamoorthy, Bespoke Labs
 
 ## Summary
-Training LLMs — Mahesh Sathiamoorthy shares a practical take on Data and Environment Curation for Post. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Mahesh Sathiamoorthy, co-founder/CEO of Bespoke Labs and a former Google DeepMind researcher, walks through Bespoke's open-source curation work: Curator (a synthetic SFT data-curation tool), Bespoke Stratos, and the multi-university Open Thoughts consortium (with Stanford, UC Berkeley, and UW) that built a published reasoning-data curation recipe with a demonstrated scaling law — cited in public by Microsoft's CSO and referenced by John Schulman as used internally at Thinking Machines. Two counterintuitive findings from that recipe work: sampling many answers per question (e.g., answering one question 16 times) beat collecting more unique questions answered once, and stronger models are not consistently better teachers than weaker ones — a pattern that repeated when the team moved on to "Open Thoughts Agents," curating trajectories and RL environments rather than model answers, where SFT still drove most of the gains and RL contributed mainly the last few percentage points. He gives one concrete enterprise post-training case: Intuit's Credit Karma app, which explains why a credit card was recommended, had a compliance problem and a latency problem, because it needed a long list of compliance rules and its training data was imbalanced (e.g., mostly 0% APR examples caused the fine-tuned model to hallucinate specific numbers). Bespoke's fix was a curation recipe that added structured tags to the training data so the model learned the required form rather than memorizing specific numbers, which improved compliance, latency, and throughput and let the enterprise "own" the model instead of depending on increasingly expensive frontier APIs. He closes by sketching an emerging reference stack for post-training agents: an RL-environment layer (building, quality-measuring, versioning), a compute/orchestration layer below it (sandboxes, rollout checkpointing/rollback for long-horizon tasks), and an SFT/RL/prompt-optimization layer on top.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- The Credit Karma case is a rare concrete, named example of enterprise post-training paying off in production (compliance, latency, throughput gains) rather than a research demo — useful counter-evidence to claims that post-training is mostly a frontier-lab activity.
+- The two counterintuitive curation findings (multi-answer sampling beats more questions; stronger teacher models aren't always better teachers) are specific, testable claims for a chapter on data/RL-environment curation methodology.
+- The three-layer reference stack (RL environments → compute/orchestration/checkpointing → SFT/RL/prompt-optimization) gives the book a concrete architectural sketch of what "post-training infrastructure" looks like in practice, complementing the Prime Intellect talk in this same batch.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=ewtOo0scUh0

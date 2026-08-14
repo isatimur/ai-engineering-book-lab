@@ -15,7 +15,7 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:06+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Kevin Bai (Anthropic, ex-Palantir/Rippling) defines forward deployed engineering as customer-facing engineers building on shared platform primitives, needed only when selling technical products to non-technical buyers."
+summary: "Kevin Bai (Anthropic, ex-Palantir/Rippling) defines FDE as customer-facing engineers building on shared platform primitives, needed only when selling technical products to non-technical buyers."
 ---
 
 # Forward Deployed Engineering 101 — Kevin Bai, Anthropic, ex Palantir & Rippling Founding FDE
