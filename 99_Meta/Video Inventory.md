@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 983
+Total videos: 1013
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -985,3 +985,33 @@ Total videos: 983
 981. [MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal](https://www.youtube.com/watch?v=s4r6nk5WsZw) — `s4r6nk5WsZw` — 23:54
 982. [MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef](https://www.youtube.com/watch?v=-jY2T2PiJBE) — `-jY2T2PiJBE` — 18:38
 983. [Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)](https://www.youtube.com/watch?v=jQDXzEVHMSE) — `jQDXzEVHMSE` — 56:30
+984. [Gadgets: Personal app vibe coding that is actually safe — Kenton Varda, Cloudflare](https://www.youtube.com/watch?v=RmS5s6Wbin4) — `RmS5s6Wbin4` — 18:54
+985. [The State of Model Routing — NVIDIA, Cognition, OpenRouter](https://www.youtube.com/watch?v=QHBjufYK8TA) — `QHBjufYK8TA` — 48:17
+986. [Compression at the Edge — NVIDIA, Unsloth, HuggingFace, Ollama](https://www.youtube.com/watch?v=J4_jCrTxMkk) — `J4_jCrTxMkk` — 46:01
+987. [Local Models: Trust, Control, Optimization — Carter Abdallah, NVIDIA](https://www.youtube.com/watch?v=FWMJQDH3iK0) — `FWMJQDH3iK0` — 43:21
+988. [Open Source Is Dead. Long Live Open Source. — Saoud Rizwan, Cline](https://www.youtube.com/watch?v=CoEIs6Xm8m8) — `CoEIs6Xm8m8` — 17:30
+989. [The New Primitives: Building AI Native Software — Kwindla Kramer, Daily](https://www.youtube.com/watch?v=LZuWZRze3MU) — `LZuWZRze3MU` — 21:14
+990. [Anthropic's CCA Exam as a Field-Guide for Agentic Engineering — Frank Coyle, UC Berkeley](https://www.youtube.com/watch?v=Z-c11pV_uvU) — `Z-c11pV_uvU` — 20:08
+991. [Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs](https://www.youtube.com/watch?v=7vn4WpqNpck) — `7vn4WpqNpck` — 18:08
+992. [Realtime multiplayer, automation, and you! — Idan Gazit, GitHub](https://www.youtube.com/watch?v=iQ5xldZ9StU) — `iQ5xldZ9StU` — 21:41
+993. [Always-on agents run production without the on-call tax — Justin Smith, Resolve AI](https://www.youtube.com/watch?v=vSx5IULvBns) — `vSx5IULvBns` — 24:56
+994. [Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.](https://www.youtube.com/watch?v=Kz4QJmNrVXU) — `Kz4QJmNrVXU` — 20:37
+995. [Guide, Verify, Solve — Anirban Chatterjee, Sonar](https://www.youtube.com/watch?v=03l29gJXpCE) — `03l29gJXpCE` — 22:31
+996. [Multiplayer agentic engineering — Arjun Singh, Superconductor](https://www.youtube.com/watch?v=OL7kfezynJM) — `OL7kfezynJM` — 18:44
+997. [Codex, Behind the Harness — Dominik Kundel, OpenAI](https://www.youtube.com/watch?v=shRR1e2HXMk) — `shRR1e2HXMk` — 20:55
+998. [Taking Reinforcement Learning Cross Datacenter — Nan Jiang, Modal](https://www.youtube.com/watch?v=maRzp4kImJ4) — `maRzp4kImJ4` — 19:50
+999. [Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab](https://www.youtube.com/watch?v=aeTb5BdmTTc) — `aeTb5BdmTTc` — 16:57
+1000. [Evolution of agentic surfaces — Gagan Bhat & Isabella Kai He, Anthropic](https://www.youtube.com/watch?v=K0X9QDRkIdg) — `K0X9QDRkIdg` — 31:24
+1001. [From RL to IRL — Gaurav Mishra, Amazon AGI Lab](https://www.youtube.com/watch?v=Cc0_nyxROBA) — `Cc0_nyxROBA` — 
+1002. [Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori](https://www.youtube.com/watch?v=Ki980nV0__0) — `Ki980nV0__0` — 
+1003. [Beyond Static Intelligence: Evaluating Continual Learning — Parth Asawa, UC Berkeley](https://www.youtube.com/watch?v=iqloyWCGYQQ) — `iqloyWCGYQQ` — 20:30
+1004. [Scaling up Continual Learning — Ronak Malde, Trajectory](https://www.youtube.com/watch?v=zL1kLftVTlo) — `zL1kLftVTlo` — 23:03
+1005. [Memory Harnesses for Long-Running Research Agents — Stefania Druga, Sakana.ai](https://www.youtube.com/watch?v=R3-anFK1YM8) — `R3-anFK1YM8` — 13:04
+1006. [Scaling Compute on Context — Jack Morris, Engram](https://www.youtube.com/watch?v=WiqDvX6isc4) — `WiqDvX6isc4` — 19:42
+1007. [Intelligence + Continual Learning = Expertise — Yu Su, NeoCognition](https://www.youtube.com/watch?v=I6aiEf3aEFQ) — `I6aiEf3aEFQ` — 19:43
+1008. [Adaption Labs: Gradient-Free Continual Learning — Sara Hooker, Adaption](https://www.youtube.com/watch?v=XEd_SRVHBgU) — `XEd_SRVHBgU` — 20:51
+1009. [LLM Knowledge Bases: a practical guide — Ben Holmes, Warp](https://www.youtube.com/watch?v=I3bpdgFJCUY) — `I3bpdgFJCUY` — 21:17
+1010. [Bringing Continual Learning into Enterprises — Samuel Denton, Applied Compute](https://www.youtube.com/watch?v=ZTA0GwpAUak) — `ZTA0GwpAUak` — 19:03
+1011. [Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop](https://www.youtube.com/watch?v=jHMiYtjoJfA) — `jHMiYtjoJfA` — 19:46
+1012. [Lessons from Studying Every Memory System — Shlok Khemani, Independent](https://www.youtube.com/watch?v=5ZGyKWjQDr0) — `5ZGyKWjQDr0` — 19:31
+1013. [Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain](https://www.youtube.com/watch?v=CvRngaQZQ3Y) — `CvRngaQZQ3Y` — 20:02

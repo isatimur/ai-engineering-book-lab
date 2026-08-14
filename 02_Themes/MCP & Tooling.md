@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 118
+- Total tagged videos: 126
 
 ## Cross-video synthesis
 
-- This theme appears across 118 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (58), Agent Architecture (54), Org Design & Leadership (12).
+- This theme appears across 126 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (66), Agent Architecture (61), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -130,6 +130,14 @@
 - [[979-ZFxh7sqbUZo-teaching-ai-to-find-real-vulnerabilities-prof-david-brumley-bugcrowd|#979 — Teaching AI to Find Real Vulnerabilities — Prof. David Brumley, Bugcrowd]]
 - [[981-s4r6nk5WsZw-mcp-tasks-async-why-aren-t-any-agents-supporting-them-cornelia-davis-temporal|#981 — MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal]]
 - [[982--jY2T2PiJBE-mcp-apps-extending-the-frontier-ido-salomon-liad-yosef|#982 — MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef]]
+- [[984-RmS5s6Wbin4-gadgets-personal-app-vibe-coding-that-is-actually-safe-kenton-varda-cloudflare|#984 — Gadgets: Personal app vibe coding that is actually safe — Kenton Varda, Cloudflare]]
+- [[989-LZuWZRze3MU-the-new-primitives-building-ai-native-software-kwindla-kramer-daily|#989 — The New Primitives: Building AI Native Software — Kwindla Kramer, Daily]]
+- [[992-iQ5xldZ9StU-realtime-multiplayer-automation-and-you-idan-gazit-github|#992 — Realtime multiplayer, automation, and you! — Idan Gazit, GitHub]]
+- [[994-Kz4QJmNrVXU-velocity-sickness-what-happens-when-your-whole-team-gets-10x-faster-matt-dailey-ref|#994 — Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.]]
+- [[999-aeTb5BdmTTc-agents-codebases-and-teams-aditya-khandelwal-amazon-agi-lab|#999 — Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab]]
+- [[1006-WiqDvX6isc4-scaling-compute-on-context-jack-morris-engram|#1006 — Scaling Compute on Context — Jack Morris, Engram]]
+- [[1009-I3bpdgFJCUY-llm-knowledge-bases-a-practical-guide-ben-holmes-warp|#1009 — LLM Knowledge Bases: a practical guide — Ben Holmes, Warp]]
+- [[1012-5ZGyKWjQDr0-lessons-from-studying-every-memory-system-shlok-khemani-independent|#1012 — Lessons from Studying Every Memory System — Shlok Khemani, Independent]]
 
 ## Notes
 
