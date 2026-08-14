@@ -13,16 +13,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:43:36+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "First SaaS Company—While Still Shipping the Roadmap shares a practical take on From Hype to Habit: How We’re Building an AI. What does it really take to move a modern SaaS company from AI experimentation to becoming truly AI-first?"
+summary: "Sprout Social's AI-transformation talk gives a three-dimension framework (strategy, ways of working, people) for shifting from AI-enhanced features to an AI-first company."
 ---
 # From Hype to Habit: How We’re Building an AI-First SaaS Company—While Still Shipping the Roadmap
 
 ## Summary
-First SaaS Company—While Still Shipping the Roadmap shares a practical take on From Hype to Habit: How We’re Building an AI. What does it really take to move a modern SaaS company from AI experimentation to becoming truly AI-first?
+Two Sprout Social speakers describe a candid, in-progress AI transformation structured around three dimensions: strategy, ways of working, and people. On strategy, they contrast "AI-enhanced" (sprinkling AI onto existing features) with "AI-first" (reimagining unified experiences), illustrated with a fictional pet-health app example where meal, activity, and digestive features are combined into one natural-language answer instead of three siloed responses. On ways of working, they describe "ritualized discovery" (scheduled experimentation and hackathons), treating MVPs as tools for validating direction rather than shipping polish, and "process as product" — evaluating and cutting internal processes that don't demonstrably speed up decisions. On people, they describe investing in "T-shaped" talent who combine deep specialization with generalist building skills, plus company-wide AI-fluency efforts (newsletters, podcasts, cross-functional show-and-tell) and a self-service platform letting product/engineering teams prototype AI features without pulling in the core AI team.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Offers a concrete definition of "AI-first" versus "AI-enhanced" that goes beyond the buzzword — reimagining unified experiences, not just adding AI features to existing workflows.
+- "Process as product" (evaluate then cut processes that don't speed decisions) and "smart velocity" are usable heuristics for teams worried that AI adoption creates process overhead.
+- The T-shaped talent and self-service AI platform points describe concrete organizational moves for scaling AI fluency beyond a core AI team.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=3YGRcgZJ3yc

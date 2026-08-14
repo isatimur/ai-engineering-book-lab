@@ -15,7 +15,7 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:16+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ramp's Leo Mehr gives two FDE principles - always be scoping (with a costly mobile-platform anecdote) and scale with tokens by turning a Notion agent loose on FDE requests, cutting scoping time ~20%."
+summary: "Ramp's Leo Mehr gives two FDE principles - always be scoping (a costly mobile-platform anecdote) and scale with tokens, via a Notion agent on FDE requests cutting scoping time ~20%."
 ---
 
 # How Forward Deployed Engineering is done at Ramp — Leo Mehr

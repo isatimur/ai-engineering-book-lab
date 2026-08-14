@@ -13,16 +13,17 @@ themes:
   - "Coding Agents"
 ingested_at: "2026-04-24T10:52:36+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on From Vibe Coding To Vibe Engineering – Kitze, Sizzy. Web development has always moved in cycles of hype, from frameworks to tooling."
+summary: "Kitze (Sizzy) distinguishes 'vibe coding' (accepting LLM output unread) from 'vibe engineering' (steering agents while staying suspicious of their output)."
 ---
 # From Vibe Coding To Vibe Engineering – Kitze, Sizzy
 
 ## Summary
-A practical talk on From Vibe Coding To Vibe Engineering – Kitze, Sizzy. Web development has always moved in cycles of hype, from frameworks to tooling.
+Kitze, creator of the Sizzy dev browser and other side projects (Benji, Glink, Zero to Ship), argues for splitting Andrej Karpathy's "vibe coding" (accept-without-reading LLM output) from "vibe engineering," where an experienced developer actively drives an agent, watches its output like a hawk, and stays suspicious of the result. He says Cursor's Composer 1 model changed his workflow by putting him "back in the driver's seat" instead of waiting long stretches for GPT-5 Codex runs, and credits it with letting him migrate the Benji app off Blitz to Next.js 16 (App Router, tRPC, Turborepo, React Native) in under a week. His workflow includes voice-dictating observations while looking at the browser and the code, and leaning on rules/docs/commands/memory files to give the agent enough context. He warns against handing agentic tools to underpaid juniors without oversight, but says convincing skeptical senior engineers to adopt vibe engineering yields "10x results," and notes a growing market of people paid to fix the unfinished 20% left behind by vibe-coded output.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Frames "vibe coding" vs. "vibe engineering" as a skill and oversight distinction, not just a vocabulary swap — useful for arguing where agentic coding needs a human in the loop.
+- The Composer 1 anecdote (week-long framework migration after being stalled on a slower model) is a concrete data point on how model choice changes agent-driven workflow speed.
+- Surfaces two real second-order effects of AI coding adoption: a market for "finishing the last 20%," and pressure on how junior developers get trained.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=JV-wY5pxXLo

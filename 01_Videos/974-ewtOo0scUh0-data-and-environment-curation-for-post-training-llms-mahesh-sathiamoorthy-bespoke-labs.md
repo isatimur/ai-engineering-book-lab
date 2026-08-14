@@ -15,7 +15,7 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:40+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Bespoke Labs' Mahesh Sathiamoorthy details the Open Thoughts data-curation recipe (multi-answer sampling beats more questions) and a Credit Karma post-training case that fixed compliance and latency."
+summary: "Bespoke Labs' Mahesh Sathiamoorthy details the Open Thoughts curation recipe (multi-answer sampling beats more questions) and a Credit Karma post-training case fixing compliance and latency."
 ---
 
 # Data and Environment Curation for Post-Training LLMs — Mahesh Sathiamoorthy, Bespoke Labs
