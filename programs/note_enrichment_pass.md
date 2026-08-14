@@ -37,3 +37,19 @@ Python `repr()` and fall back to a scripted replacement for those files.
 **Verification lesson:** transcripts are line-wrapped caption text, so
 multi-word greps fail across line breaks. Always join lines before checking a
 quote or figure: `tr '\n' ' ' < transcript | tr -s ' ' | grep -oiE '...'`.
+
+## Correction (2026-08-05)
+
+The round-3 claim of "114/114 ledger-cited notes enriched, 0 boilerplate" was
+**overstated**. The detector used to measure it tested only two markers (`...`
+and `Key angle:`), but the ingest template also emits "shares a practical take
+on", "A practical talk on", and "Speaker info:". Under the full marker set, three
+ledger-cited notes were still boilerplate (#073, #199, #251) and corpus-wide debt
+is 790 of 983, not 748.
+
+Fixed: `99_Meta/scripts/corpus_health.py` now reports `boilerplate summaries`
+using all five markers, so the number is measured by a script in CI rather than
+by an ad-hoc query per session. The three notes were enriched immediately after.
+
+**Lesson:** a metric defined by a throwaway grep will drift from the thing it
+claims to measure. Put the definition in the health script, not in the analysis.

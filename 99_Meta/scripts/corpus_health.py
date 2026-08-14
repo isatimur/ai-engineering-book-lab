@@ -58,10 +58,25 @@ def main() -> None:
         if 'transcript_status: "unavailable"' in head:
             flagged.append(n.name)
 
+    # Summary-quality debt. The ingest script emits a template summary; a note
+    # is "enriched" only once none of these markers survive. Detecting on just
+    # one or two of them undercounts — an earlier pass used only "..." and
+    # "Key angle:" and reported three notes as done that were not.
+    boiler_markers = (
+        "...", "Key angle:", "shares a practical take",
+        "A practical talk on", "Speaker info:",
+    )
+    boilerplate = []
+    for n in notes:
+        m = re.search(r'^summary: "(.*)"$', n.read_text(), re.M)
+        if m and any(p in m.group(1) for p in boiler_markers):
+            boilerplate.append(n.name)
+
     print(f"corpus notes:            {len(notes)}")
     print(f"missing transcript file: {len(no_tx)}")
     print(f"status=unavailable:      {len(flagged)}")
     print(f"missing description:     {len(no_desc)}")
+    print(f"boilerplate summaries:   {len(boilerplate)}")
     for label, items in (("transcript", no_tx), ("description", no_desc)):
         for name in items[:10]:
             print(f"  no {label}: {name[:70]}")
