@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:53+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Vaibhav Gupta shares a practical take on fighting slop with slop. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Vaibhav Gupta describes building BAML with no code reviews, replacing standards with a minimal architecture.md, and using agents to generate, transcript-inspect, and A/B test code and language features."
 ---
 
 # fighting slop with slop — Vaibhav Gupta, Boundary
 
 ## Summary
-Vaibhav Gupta shares a practical take on fighting slop with slop. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Vaibhav Gupta describes the engineering practices behind BAML, a programming language his team has built over three years: no code reviews, every engineer working in parallel, and no standardization on which AI coding tool anyone uses. In place of standards, they maintain a minimal "architecture.md" (not a Claude.md) listing invariants that rarely change, such as compiler layer boundaries, plus a design-doc tool with Slack notifications and a hard rule that a published design doc must actually be read before it counts. A separate tool visualizes the dependency graph and enforces architectural invariants via CI, which he says has kept the architecture unchanged for three to four months. For correctness, agents continuously generate BAML programs from scratch; the team inspects full transcripts (both humans and other agents) to flag wasteful tool-call sequences and hallucinated findings, then lets agents fix issues and A/B test competing language features by measuring tool-call counts and error rates. He argues TypeScript's core design goal — balancing correctness against human productivity — bakes "slop" into the language itself (implicit string coercion in sorting, for example), and demos BAML features built agent-first instead: a single describe() call returning docstrings, source, and call sites; compiling arbitrary functions into standalone cross-platform CLI binaries (including WASM); compiler-inferred, exhaustive error types instead of nested try/catch; and calling BAML functions, including lambdas and closures, directly from Python, TypeScript, Rust, Go, Ruby, or Java.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A rare concrete, named counter-example to standard code-review orthodoxy: a production-language team runs without code review by substituting a minimal invariants file, an enforced dependency-graph check, and transcript-level agent auditing.
+- Documents a specific method for evaluating agent-generated code and even language-design choices empirically (A/B testing features by tool-call count and error rate) rather than by taste.
+- The TypeScript critique (correctness-vs-human-productivity tradeoff baking implicit-coercion "slop" into the language) is a specific, checkable claim about why agent-first language design might diverge from human-oriented language design.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=AMiyLItEtLA

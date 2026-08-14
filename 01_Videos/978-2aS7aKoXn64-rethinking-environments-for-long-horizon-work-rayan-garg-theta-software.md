@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:49+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Horizon Work — Rayan Garg shares a practical take on Rethinking Environments for Long. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Theta Software's Rayan Garg defines long-horizon tasks via METER human-hour vs. token/step metrics, proposes judge-model verifiers, and calls finance benchmarks like GDPval already saturated."
 ---
 
 # Rethinking Environments for Long-Horizon Work — Rayan Garg, Theta Software
 
 ## Summary
-Horizon Work — Rayan Garg shares a practical take on Rethinking Environments for Long. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Theta Software's co-founders (Rayan Garg and a co-founder/CTO) argue that "long horizon" is a scalar, not a binary category, measurable two ways: METER's human-time-horizon benchmark (e.g., a 50%-success threshold at a given hour count) and model-centric metrics like tokens, steps, and tool calls per trajectory — the latter noisy across models and harnesses (Codex models are cited as more token-efficient than Claude models) but useful for tracking frontier progress such as context-window and compaction gains. They propose measuring environment/task complexity along three axes — tool-coordination complexity, degree of state change (contrasting easily parallelizable multi-agent code analysis with sequential dashboard/log tasks where one bad early query cascades into downstream failures), and ambiguity of the starting instructions/artifacts — and warn that artificially chaining unrelated tasks to inflate duration doesn't meaningfully measure capability. Because many economically valuable domains (software operations, finance) can't be checked with a deterministic script or test suite, they use judge/critic models that score both the final environment state and the full trajectory to catch reward hacking (e.g., sandbox escapes, reading a hidden test suite), treating the judge itself as an agent that needs read-only access to the same tools and logs (GitHub, CloudWatch) the working agent used. They critique three existing finance benchmarks (including GDPval) for having average human-hours-per-task below their own long-horizon threshold, for being largely saturated already (one benchmark's investment-banking section resolves 100% of tasks in 57% of pass@1 cases), and for narrow domain coverage, contrasting this with Theta's own finance dataset, where tasks average 15 human-hours across a 50-task sample and current models still struggle significantly.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

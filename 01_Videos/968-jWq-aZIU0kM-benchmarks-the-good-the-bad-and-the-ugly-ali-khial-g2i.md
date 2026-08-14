@@ -15,7 +15,7 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:59+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ali Khial shares a practical take on Benchmarks: The Good, the Bad, and the Ugly. Key angle: focuses on agent design and orchestration."
+summary: "G2i's Ali Khial finds SWE-Bench Pro prompts leaky/unrealistic and verifiers weak, then proposes 5 fixes: human-authored tasks, holistic grading, production value, contamination-free design, honest leaderboards."
 ---
 
 # Benchmarks: The Good, the Bad, and the Ugly — Ali Khial, G2i

@@ -15,13 +15,13 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Pauline Brunet shares a practical take on Forward Deployed Engineering at Cursor. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints."
+summary: "Pauline Brunet, who leads Cursor's forward deployed engineering team, gives a maturity/customization matrix for when FDE fits, Cursor's senior-only hiring bar, and scoping rules like phased 6-week engagements and refusing staff-augmentation asks."
 ---
 
 # Forward Deployed Engineering at Cursor — Pauline Brunet
 
 ## Summary
-Pauline Brunet shares a practical take on Forward Deployed Engineering at Cursor. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints.
+Pauline Brunet, who leads Cursor's forward deployed engineering (FDE) function globally, lays out a 2x2 for deciding when FDE is worth it: plot customer digital maturity against product customization, and reserve FDE for the high-customization quadrants — advising highly mature customers on extensions, or running "embedded transformation" for less mature ones — while routing low-customization accounts to self-service or standard SaaS deployment. At Cursor, FDE work is project-based and requires a senior economic buyer or champion, top-down resourcing, and code-base access; deliverables have included cloud agents, long-running automations, and applications built on the Cursor SDK, with a hard rule to walk away from anything that smells like staff augmentation ("we're understaffed" is a stated red flag). Cursor hires FDEs with 5+ years of engineering experience (from companies like Spotify, Rippling, and Palantir) rather than early-career hires, organizes the team by geography for now, and expects to split the role into more-technical and more-customer-facing tracks as it scales. Her operating rules: define success and baseline metrics up front, keep scope directional and phased (she cites 6-week engagement blocks) rather than open-ended, involve the customer at every step, and always tie outcomes to revenue, cost, or risk — illustrated by a customer who balked at a $2,000/day agent cost until reframed against the cost of dispatching a technician.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

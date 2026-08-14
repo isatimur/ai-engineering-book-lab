@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:10+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Vinoo Ganesh shares a practical take on How Forward Deployed Engineering is done at Kepler. Key angle: emphasizes evaluation and measurement."
+summary: "Vinoo Ganesh argues FDE is a product-discovery function, not go-to-market, via Palantir case studies: a failed data platform, a 4-hour Slack fix, a Parquet viewer, and a hack that never died."
 ---
 
 # How Forward Deployed Engineering is done at Kepler — Vinoo Ganesh
 
 ## Summary
-Vinoo Ganesh shares a practical take on How Forward Deployed Engineering is done at Kepler. Key angle: emphasizes evaluation and measurement.
+Vinoo Ganesh (Palantir alum, now at Kepler) argues forward deployed engineering (FDE) is fundamentally a product-discovery function, not a go-to-market role, illustrated with stories from Palantir's 2013 Foundry buildout. In one, Palantir's isolated "Phoenix" data-retention design defaulted missing dates to 1970 and tried to bucket 2.3 million Cassandra key spaces, requiring 14TB of RAM just to boot — a failure traced to designing without an embedded customer. He contrasts that with a shipping company engagement where a 47-page requirements doc for a 3-month BI dashboard was replaced, after one site visit, with a 4-hour Slack alert once the FDE asked what the dispatcher actually did each morning. A second story shows a data engineer resisting a CSV-to-Parquet migration for a year until on-site observation revealed she manually opened CSVs to eyeball data quality; a one-night Parquet viewer won her approval and cut pipeline runtime from 17 hours to 2. He closes with a cautionary tale of a "temporary" Groovy retention script ("venue.groovy") that shipped to production and was still running unsupported 12 months later at a 100,000-person customer, arguing that every FDE hack becomes permanent and must be judged by whether it belongs in the core product.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

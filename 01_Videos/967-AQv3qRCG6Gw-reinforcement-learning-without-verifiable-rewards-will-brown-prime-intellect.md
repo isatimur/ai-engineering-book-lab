@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:57+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Will Brown shares a practical take on Reinforcement Learning without Verifiable Rewards. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Will Brown (Prime Intellect) describes manufacturing RL reward signal without verifiable rewards via grounding, LLM judges, scaling search, and working-backwards task generation."
 ---
 
 # Reinforcement Learning without Verifiable Rewards — Will Brown, Prime Intellect
 
 ## Summary
-Will Brown shares a practical take on Reinforcement Learning without Verifiable Rewards. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Will Brown, who leads applied research at Prime Intellect, argues that most real-world agent tasks lack the clean verifiable rewards used in RLVR (math answer checking, code test cases, tool-use database state) and describes Prime Intellect's stack for extending RL to messier domains: GPU orchestration, the Prime RL training framework, reusable "environments" (task + harness + scoring rule), and a hosted platform called Lab for training, evals, and inference. He outlines three techniques for manufacturing reward signal without ground truth: grounding (using source material such as production traces, documents, or code PRs/diffs to create a measurable with/without capability gap), LLM judges, and scaling test-time search/compute to mine traces, calibrate task difficulty, and distill judge disagreements into reusable rubrics. He describes "working backwards" — starting from a known-reachable end state, such as a completed PR or an answered question, and reconstructing the upstream task — as a way to generate free supervision for code and tool-use environments, plus building high-fidelity simulators for tools and web applications where the backend isn't fully controllable. Brown flags reward hacking as a persistent risk when reward proxies are loose at the boundaries, and cites Prime Intellect's "general agent" blog post (an online generate-solve-synthesize loop gated on pass rate, showing benchmark uplift for tool use) and work building on external "Echo" research to blend RL with supervised, environment-grounded signal, framing the end goal as continual learning where deployed agents catch and correct their own mistakes over time.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:32+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Rustem Feyzkhanov shares a practical take on From Agent Traces to Agent Simulations. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Snorkel AI's Rustem Feyzkhanov argues every company needs a private, production-mimicking benchmark built on the Harbor task format, continuously refreshed from production traces, not just static public benchmarks."
 ---
 
 # From Agent Traces to Agent Simulations — Rustem Feyzkhanov, Snorkel AI
 
 ## Summary
-Rustem Feyzkhanov shares a practical take on From Agent Traces to Agent Simulations. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Rustem Feyzkhanov, who leads the AI platform team at Snorkel AI (a company that sells benchmarks and runs millions of agent simulations per month), argues that production traces alone are useful for spotting failures but not for repeatable comparison — different runs hit different database states and tool versions, so you can't compare configurations apples-to-apples. His fix is offline simulation: turn traces into repeatable tasks and replay them under controlled conditions, scoring not just success rate but cost, latency, and retries. He contrasts this with public benchmarks like SWE-bench (GitHub issue fixing), Terminal-Bench, and computer-use benchmarks, which are useful for orienting on frontier model quality but too generic to ship against — private benchmarks need to mirror a company's own tools, policies, and workflows. For task construction he describes the Harbor format (from the Terminal-Bench team): an instruction.md, a Dockerfile/Compose environment, an Oracle solution plus verifiers (hidden from the agent), and metadata; environments use sidecar containers, mocked APIs, and simulated users (an LLM playing the human) to approximate production without running it. Verifiers combine deterministic checks, LLM-/agent-as-judge scoring, and targeted subject-matter-expert review reserved for cases where the agent and verifier disagree, and the benchmark suite itself gets treated as software with its own CI pipeline (checking pinned dependencies, running the Oracle to confirm solvability, tagging task difficulty) since agents can reward-hack loose verifiers or fail against broken ones. In production this becomes a two-loop system — observability traces feed benchmark expansion, and a simulation runner gates releases — and he flags fixing everything via prompt instructions ("never do this") as an anti-pattern versus placing fixes in the harness, a skill, or structured output where they belong; he also mentions using simulation-generated traces to fine-tune a small planner model to match a large model's performance on specific tasks.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

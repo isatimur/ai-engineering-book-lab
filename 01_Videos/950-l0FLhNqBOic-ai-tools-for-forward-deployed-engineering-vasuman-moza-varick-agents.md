@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:20+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Vasuman Moza shares a practical take on AI tools for Forward Deployed Engineering. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Varick Agents' Vasuman Moza and JD Pruitt describe an internal FD agent that helps forward-deployed engineers map client workflows via a dependency graph and post-trained models instead of frontier-model calls."
 ---
 
 # AI tools for Forward Deployed Engineering — Vasuman Moza, Varick Agents
 
 ## Summary
-Vasuman Moza shares a practical take on AI tools for Forward Deployed Engineering. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Vasuman Moza, of Varick Agents, argues that AI coding agents and MCP tooling have solved execution, so the remaining bottleneck for enterprise AI adoption is understanding how a specific business actually works — including its undocumented exception paths — and re-engineering the workflow around AI before automating it. He cites the MIT finding that 95% of generative-AI pilots fail to reach production (and a separate 87%-no-measurable-ROI figure) as evidence that AI bolted onto broken processes doesn't deliver value, and notes a client that spent $5,000,000 and five years migrating to NetSuite as the reason Varick builds agents on top of existing systems of record (NetSuite, Dynamics, SAP, Salesforce) rather than asking enterprises to migrate off them. He claims department-wide transformations return 25-50-75% ROI versus 5-10% for single-point-solution automations. Engineering lead JD Pruitt then describes their internal "FD agent," built in three stages — an engagement assistant that synthesizes client documentation and notes, a workflow agent embedded in their platform that flags missed edge cases while FDEs build workflows, and a not-yet-shipped autonomous change agent — all backed by a dependency graph as the single source of truth for a client's processes. Pruitt says frontier models like Claude were too verbose for concise, consultant-style analysis, so the team post-trained smaller open-source models and built a custom RL environment with tools for tasks like resolving duplicate-name entities and detecting cycle violations in the dependency graph.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Reframes the FDE bottleneck explicitly as business-process understanding rather than execution, with cited failure-rate statistics (95% of pilots not reaching production) that ground the "AI on broken processes doesn't work" argument.
+- The NetSuite migration anecdote ($5M, 5 years) is a concrete, quotable illustration of why enterprise AI vendors build on top of systems of record instead of requiring migration.
+- Documents a specific architecture choice — post-training smaller open-source models plus a custom RL environment for graph traversal, rather than calling frontier models directly — motivated by frontier-model verbosity on internal analysis tasks.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=l0FLhNqBOic

@@ -15,13 +15,13 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-08-04T17:21:55+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Cornelia Davis shares a practical take on MCP Tasks (async): Why Aren't Any Agents Supporting Them?. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Temporals Cornelia Davis explains why no MCP client supports async Tasks yet, demos her durable implementation for a purchase-order use case, and previews V2 dropping the stateful task-list endpoint."
 ---
 
 # MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal
 
 ## Summary
-Cornelia Davis shares a practical take on MCP Tasks (async): Why Aren't Any Agents Supporting Them?. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Cornelia Davis (Temporal) argues that MCP clients don't support the async Tasks specification (published November, marked experimental) mainly because it's genuinely hard to implement, not because builders are lazy. She grounds this in a live purchase-order demo: a PO triggers parallel back-office updates and an invoice payment that runs through a long-running MCP tool (ERP validation, human-in-the-loop approval, reconciliation, retry-laden payment), surviving server crashes and reconnects because she built the durability herself on top of Temporal, since — as she states — no MCP client library implements task durability out of the box. She walks through the V1 task lifecycle (working → input-required → working → complete/canceled/failed) and its two weak points: an unfiltered `task/list` endpoint that can't scale past a handful of tasks, and an `input-required` flow tunneled through a fragile long-running session. She previews the V2 spec (per a May blog post from the foundation now hosting MCP), which drops `task/list`, moves tasks into an optional "extension" on top of a stateless core, and replaces the session-based elicitation with a client-side update call resembling a Temporal signal — while leaving the task lifecycle itself unchanged. She closes by flagging two open problems even under V2: polling still doesn't scale to millions of tasks (a notifications-based fix is in progress), and she's working toward a reference client implementation in FastMCP.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

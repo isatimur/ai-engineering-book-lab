@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:47+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Diogo Almeida shares a practical take on What's Next After RLHF?. Key angle: connects the topic back to software engineering practice."
+summary: "OpenAI RLHF co-author Diogo Almeida argues LLMs, including Claude Code, are stuck in an assistance-only RLHF paradigm, and previews TypeSafe AI's post-training approach for automation."
 ---
 
 # What's Next After RLHF? — Diogo Almeida, TypeSafe AI
 
 ## Summary
-Diogo Almeida shares a practical take on What's Next After RLHF?. Key angle: connects the topic back to software engineering practice.
+Diogo Almeida, an OpenAI alum who co-authored GPT-4, ChatGPT, and the original InstructGPT/RLHF work, argues that essentially all deployed LLMs today (he estimates roughly 100%) are RLHF models optimized for human preference, which makes them strong at "assistance" (human-in-the-loop) tasks but structurally unsuited for "automation" (removing the human from the loop) — a divide he uses to explain why frontier models solve hard math problems yet customer service still needs a human to approve costly decisions. He argues Claude Code is still part of the same RLHF-driven "assistance era," not a new paradigm, because its reward asymmetry (always erring toward pleasing the user) means SaaS's underlying building blocks haven't gotten smarter since 2019 — LLMs have only made software cheaper and faster to write ("just-in-time software," a term he credits to Garry Tan), not more expressive. He frames hallucination as intrinsic to RLHF's reward-model asymmetry, comparable to mode-dropping in GANs, since it is easier for a reward model to penalize visible uncertainty than to reward calibrated correctness. His startup, TypeSafe AI, is building a third post-training paradigm distinct from RLHF (optimizing for human preference) and RLVR (optimizing for verifiable correctness) — one optimized for calibrated decision-making aimed at real automation, with a different API shape, expected to launch soon.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a sharp assistance-vs-automation framework, backed by a concrete example (unsolved math problems vs. customer service still needing a human), for a chapter distinguishing categories of AI-agent maturity.
+- First-hand claim from an RLHF co-inventor that current agentic coding tools like Claude Code remain within the RLHF/assistance paradigm rather than a genuinely new automation paradigm — a citable primary-source view for agent-architecture debates.
+- Names a concrete reliability mechanism (reward-model asymmetry causing hallucination, likened to GAN mode-dropping) and a stated business pattern (never let AI make costly decisions; push cost onto the user) — both usable as evidence in an evals/reliability chapter.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=cJ0EOzey--o

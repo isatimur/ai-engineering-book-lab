@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:39+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ross Taylor & Chengxi Taylor shares a practical take on Scaling to Long Horizons. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Ross & Chengxi Taylor (General Reasoning) trace Galactica's RL lessons to long-horizon RL: compaction, value-model critics, pipeline RL, and the money-losing football-betting Kelly bench."
 ---
 
 # Scaling to Long Horizons — Ross Taylor & Chengxi Taylor, General Reasoning
 
 ## Summary
-Ross Taylor & Chengxi Taylor shares a practical take on Scaling to Long Horizons. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Ross Taylor (CEO of General Reasoning, formerly reasoning lead at Meta AI on Llama and Galactica, and a Papers With Code co-founder) recounts how Galactica — released two weeks before ChatGPT and undermined by base-model hallucinations — nonetheless beat PaLM, Chinchilla, and GPT-3.5 in scientific domains (68% vs. GPT-3.5's 49% on a math benchmark; 36% vs. PaLM's 19% on a chain-of-thought benchmark) using a 105-billion-token curated corpus, early multi-epoch training, and "thinking token" tags that anticipated later reasoning-token approaches like DeepSeek R1. He describes an unpublished internal Llama 2 recipe — continued pretraining on math/science data plus PPO with verifiable rewards, using an outcome reward model to initialize the value model — that reached state-of-the-art internal math results but never produced o1/R1-style inference-time reflection, concluding in hindsight that the missing ingredient was simply better base models, more RL compute, and larger context windows. Chengxi Taylor, co-founder and president of the company, then frames long-horizon tasks as fundamentally context-constrained (a decade-long proof like Fermat's Last Theorem would require tens to hundreds of billions of tokens against today's roughly 1-million-token windows), and describes RL-trained compaction, value-model critics to counter gradient variance and sparse rewards, and "pipeline RL" that trains on partially generated sequences (tolerating roughly up to eight steps of off-policy staleness) to keep GPUs busy during week-long rollouts. He cites the company's "Kelly bench" — agents building ML models to bet on a full season of Premier League matches starting from a 100K bankroll, where every frontier model tested lost money, a result covered on the front page of the Financial Times — as evidence current models are overfit to narrow, procedural coding tasks rather than open-ended, multi-agent, real-world complexity, and points to the company's Open Review platform (openreview.ai), which hosts over 350 RL environments behind a single API and is used internally as well as by other labs.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

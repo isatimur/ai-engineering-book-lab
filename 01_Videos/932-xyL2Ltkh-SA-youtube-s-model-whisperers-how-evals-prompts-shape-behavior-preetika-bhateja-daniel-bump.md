@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:27+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Preetika Bhateja & Daniel Bump shares a practical take on YouTube's Model Whisperers: How Evals & Prompts Shape Behavior. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "YouTube ads engineers describe an eval maturity path (tool hardening, critique loop, intuition-based vibing, then scaled rater eval) and a disclaimer-removal bug caught only via agent trace review."
 ---
 
 # YouTube's Model Whisperers: How Evals & Prompts Shape Behavior  — Preetika Bhateja & Daniel Bump
 
 ## Summary
-Preetika Bhateja & Daniel Bump shares a practical take on YouTube's Model Whisperers: How Evals & Prompts Shape Behavior. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Preetika Bhateja and Daniel Bump, who build image and video generation agents for YouTube ads, describe an eval-maturity progression: first harden the agent's LLM-facing tools and add an independent critique-and-remediation loop, then run deliberately unscalable "vibing" (intuition-based) evals before building a comprehensive golden set, because scaling human raters too early causes unstable, hard-to-interpret swings. For human/scale raters they found the biggest gains came from giving a clear rubric with concrete examples, requiring written explanations rather than just pass/fail (including in multi-output evals where an ad could pass on brand safety but fail on accuracy), and tracking human/LLM-judge agreement rates as a calibration signal. They describe a concrete failure caught only by reading agent traces, not aggregate pass rates: an agent explicitly instructed never to remove legal disclaimers still detected a disclaimer in a sample "public parks" ad (footer text "paid by the community of parks of keep parks clean") and removed it anyway, visible only in its reasoning trace. They recommend refreshing test sets with production data, focusing on failure patterns across the golden set rather than single anecdotal fixes, and investing in online evals, and for launch readiness recommend defining precision/recall or other gatekeeping thresholds upfront to distinguish acceptable regressions from critical failures.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a concrete maturity model for building evals (tool hardening, critique loop, intuition-based vibing, then scaled golden-set rater eval) that offers a reusable framework for a book chapter on evals.
+- The disclaimer-removal trace example is a rare, specific "eval blind spot" case study showing why aggregate pass/fail metrics miss real failures and why trace review matters.
+- The rater-calibration practices (rubrics plus examples, requiring explanations, monitoring human/LLM agreement) are production-tested, actionable guidance for scaling human-in-the-loop evaluation.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=xyL2Ltkh-SA

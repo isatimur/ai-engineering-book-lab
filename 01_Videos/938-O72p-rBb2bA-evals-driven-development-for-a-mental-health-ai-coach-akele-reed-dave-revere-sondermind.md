@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:37+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Driven Development for a Mental Health AI Coach — Akele Reed & Dave Revere shares a practical take on Evals. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns."
+summary: "SonderMind engineers describe Sonder's separate input/output LLM-judge guardrails, a clinician-annotation-to-eval CI loop, and an open-sourced guardrail-scenario dataset."
 ---
 
 # Evals-Driven Development for a Mental Health AI Coach — Akele Reed & Dave Revere, SonderMind
 
 ## Summary
-Driven Development for a Mental Health AI Coach — Akele Reed & Dave Revere shares a practical take on Evals. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns.
+Akele Reed and Dave Revere (SonderMind, a mental health care company that has served over a million people, partnering with Headspace, Aetna, and Anthem) describe the architecture behind "Sonder," a clinically grounded AI coach with conversational and voice interfaces: input guardrails screen the incoming user message before the core model responds, and output guardrails watch the AI's response and the conversation as a whole, both implemented as separate LLM-as-judge calls (rather than folded into the main prompt) because separating them makes guardrails harder to jailbreak, at a deliberate cost and latency trade-off. Their explicit design goal is "more correct triggers," not "more triggers": general-purpose LLM guardrails were too conservative and had to be turned off on day one because they filtered nearly everything, so SonderMind built its own, calibrated against scenarios ranging from an active domestic-violence crisis (disengage, surface resources) to ambiguous past trauma (surface resources, keep talking) to no-risk relationship talk (pass through silently). Their "learning loop" runs on clinician annotation: a licensed clinician (Caroline Collie) reviews traced conversations — including indirect, coded self-harm language such as "I packed a box today, just one to feel what it would be like to be gone" — and annotates them with an expected observation, turn index, and category, which an extraction script converts into typed evals that gate every prompt, model, or guardrail change in CI. Their calibration philosophy explicitly rejects chasing "perfect" benchmarks in favor of tracking real failure modes (false positives, false negatives, category, timing) against clinician-defined ground truth, since over-triggering guardrails can itself deny people needed care. They also open-sourced 200 input-guardrail and 100 output-guardrail scenarios, clinically reviewed and calibrated against real conversation patterns across single- and multi-turn cases, as a shared baseline for others building similar systems.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a concrete example of guardrails built as separate LLM-as-judge calls, with an explicit rationale (jailbreak resistance) and an acknowledged cost/latency trade-off — a useful case study for agent-safety architecture.
+- The clinician-annotation-to-typed-eval pipeline ("a clinician's judgment living in CI") is a specific, reusable pattern for evals-driven development in any high-stakes domain, not just mental health.
+- The open-sourced 200/100 guardrail-scenario dataset is a citable, checkable artifact — real numbers and real scope — for a book section on safety evals.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=O72p-rBb2bA

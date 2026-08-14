@@ -15,13 +15,13 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-07-31T20:57:14+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Natalie Meurer shares a practical take on The Dirty Secret of Forward Deployed Engineering. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Sierra's Natalie Meurer traces forward-deployed engineering from Palantir's 2008 DevOps era through Foundry, arguing the title is incoherent yet spreading everywhere as pricing shifts to outcomes."
 ---
 
 # The Dirty Secret of Forward Deployed Engineering — Natalie Meurer, Sierra
 
 ## Summary
-Natalie Meurer shares a practical take on The Dirty Secret of Forward Deployed Engineering. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Natalie Meurer, head of agent engineering at Sierra (and previously a forward-deployed engineer at Palantir from 2016 to 2021), argues that "forward deployed engineering" no longer has a coherent definition even though it is currently one of the hottest job titles in AI. Tracing Palantir's history, she describes an early-2008-era FDE role centered on DevOps and platform stability (her own onboarding project was deploying software on an EC2 instance), a 2012-era shift toward data integration built around Palantir's "ontology" concept, a 2016-era of custom solutions built with the drag-and-drop "Slate" dashboard tool, and a post-2020 "Foundry" era focused on enabling customers directly, exemplified by enabling thousands of Airbus engineers on the platform for its Skywise project. She wrote an article in July 2024 proposing "agent engineering" as a distinct subdiscipline of AI engineering with the same customer accountability as FDE, but now argues the boundary has dissolved: as coding agents make code cheap to produce, forward-deployed engineers can build end-to-end solutions themselves while product engineers become more customer-facing, and she cites Google hiring customer engineers/FDEs for GCP and OpenAI standing up a new unit for its corporate AI push as evidence the role is spreading. She ties this convergence to a broader pricing shift from seat-based to usage-based to outcome-based software — Sierra itself prices on outcomes — arguing that as agents gain more autonomy over outcomes, the FDE function of guaranteeing those outcomes becomes essential across product, agent, AI, solutions, and customer engineering alike.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

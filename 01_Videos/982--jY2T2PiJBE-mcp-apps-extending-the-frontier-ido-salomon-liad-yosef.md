@@ -15,17 +15,18 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-08-04T17:21:57+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ido Salomon & Liad Yosef shares a practical take on MCP Apps: Extending the Frontier. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Ido Salomon and Liad Yosef explain MCP apps, the Anthropic/OpenAI-backed MCP extension letting servers return interactive HTML UI, with adopters including Shopify, Postman, Goose, and Block."
 ---
 
 # MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef
 
 ## Summary
-Ido Salomon & Liad Yosef shares a practical take on MCP Apps: Extending the Frontier. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Ido Salomon (creator of MCP-UI, launched May 2025) and Liad Yosef (co-founder of Aura, a research lab for the "agentic web") describe MCP apps, an official extension to the Model Context Protocol built with Anthropic and OpenAI on top of MCP-UI: instead of returning plain text, an MCP server returns a resource containing HTML, which a supporting host (Claude, ChatGPT, VS Code, Cursor, GitHub Copilot) renders as a sandboxed, branded, interactive widget, with a callback protocol so the app can ask the host to run a tool or prompt when the user interacts with it — demoed live with a PostHog funnel widget rendered inside Claude. They cite early MCP-UI adopters (11Labs, Shopify, Postman, Goose, from about a year ago) and note that Block's newly released agentic-commerce product is built on MCP apps via Goose; a tri-weekly open working group with Anthropic, OpenAI, and partners governs the spec at the public x-apps GitHub repository. Their broader claim is that this turns UIs into composable "atoms" a personal assistant can assemble — e.g., planning an anniversary across Google Calendar, Amazon, and Booking.com inside one chat instead of 20 browser tabs — with the host, not the individual app, controlling the user's journey for auditability. Upcoming spec work includes persistent/reusable views for heavy renders (e.g. Autodesk's 3D apps), "view/app tools" that let the host fill out an app's UI on the user's behalf (paralleling Google's Web MCP), and interoperability with generative/declarative UI standards like A2UI, following a guide they just published.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a concrete, named architecture for how agent hosts render interactive third-party UI over MCP (resource + HTML + callback protocol), with real production adopters (Shopify, Postman, Block, 11Labs) — useful for a chapter on tool/agent UI standards.
+- States an explicit "agentic web" thesis — UIs decomposed into composable atoms assembled by a personal assistant, with the host rather than the individual app controlling the user's journey — a specific architectural claim worth citing or challenging.
+- Roadmap items (persistent views, app/view tools, A2UI interoperability) mark where the standard is still unsettled, useful evidence for tracking how MCP-based tooling is evolving.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=-jY2T2PiJBE

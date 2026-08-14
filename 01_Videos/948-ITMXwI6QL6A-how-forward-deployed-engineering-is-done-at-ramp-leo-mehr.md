@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:16+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Leo Mehr shares a practical take on How Forward Deployed Engineering is done at Ramp. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints."
+summary: "Ramp's Leo Mehr gives two FDE principles - always be scoping (with a costly mobile-platform anecdote) and scale with tokens by turning a Notion agent loose on FDE requests, cutting scoping time ~20%."
 ---
 
 # How Forward Deployed Engineering is done at Ramp — Leo Mehr
 
 ## Summary
-Leo Mehr shares a practical take on How Forward Deployed Engineering is done at Ramp. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints.
+Leo Mehr, director of engineering at Ramp, joined when its FDE function was two engineers and now runs about 30 across deployed, developer API, and a new AI-services line; he distills the group's practice into two principles: "always be scoping" and "scale with tokens." On scoping, he tells two cautionary stories: an urgent Friday-night request for an SAP S/4HANA integration that turned out to be sales-quota pressure rather than customer need, and a reimbursement feature his team built for both iOS and Android — only to learn afterward the customer mandated iOS-only devices, wasting weeks of engineering effort that better upfront questioning would have caught. On scaling with tokens, Ramp replaced manual triage of its internal "FDE requests" Slack/Notion pipeline with a Notion agent that asks clarifying questions back and forth with the submitter before drafting a spec, cutting reply latency from hours/days to seconds and saving what Mehr estimates at roughly 20% of scoping time; he frames spec-to-implementation as already largely solved by frontier models one-shotting medium-size features, leaving context-gathering and scoping as the harder, unsolved middle of the pipeline. He argues the two principles are complementary failure modes: scoping without automation doesn't scale, while token-scaling without good scoping produces what he calls a "token-maxing slop cannon."
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Two concrete, verifiable anecdotes (the SAP request driven by sales urgency, the iOS-only reimbursement feature) are citable examples of scoping failures specific to enterprise-facing engineering, useful wherever the book discusses requirements-gathering under AI-accelerated delivery.
+- The claim that spec-to-code is "already largely solved" while context-gathering/scoping remains the hard, unautomated middle is a specific, falsifiable position on where agentic automation currently plateaus in a real production pipeline.
+- Concrete before/after numbers (hours/days to seconds in reply latency, ~20% time saved) and the "token-maxing slop cannon" framing give the book a memorable data point and phrase for the risk of automating without first fixing scoping discipline — pairs directly with the Palantir/Anthropic FDE talk in this same cluster for a compare-and-contrast.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=ITMXwI6QL6A

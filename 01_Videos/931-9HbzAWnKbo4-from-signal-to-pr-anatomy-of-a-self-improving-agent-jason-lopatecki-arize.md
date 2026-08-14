@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:25+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Improving Agent — Jason Lopatecki shares a practical take on From Signal to PR: Anatomy of a Self. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Arize founder Jason Lopatecki demos Signal, an agent that watches 10x more traces/logs than humans would tolerate, uses observability skills to gather evidence, and opens GitHub PRs so engineers move from responder to reviewer."
 ---
 
 # From Signal to PR: Anatomy of a Self-Improving Agent — Jason Lopatecki, Arize
 
 ## Summary
-Improving Agent — Jason Lopatecki shares a practical take on From Signal to PR: Anatomy of a Self. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Jason Lopatecki, founder of Arize, argues observability is shifting from human-clicked dashboards to a loop where agents consume telemetry directly, so systems should trace and log an order of magnitude more than they do today because the agent, not a human, is now doing the digging. He demos Signal, Arize's agent (built on their AX SaaS platform, with Phoenix as the open-source counterpart) that runs periodically or on triggers, pulls traces/logs into a repo via observability "skills," and opens a GitHub issue or PR with the fix already drafted — walking through a real example where a "stream canceled" error in Arize's own in-product assistant, Alex, was resolved with a one- or two-line fix. He stresses that the bottleneck has moved from generating a fix to trusting it, so the job shifts from responder to reviewer, and that customers like Uber and Booking.com run the agent inside their own VPC (via Arize sandboxes or alternatives like Daytona) rather than sending production data to a model provider. Asked why engineers couldn't just point Claude Code at the data directly, he said the real work is designing narrow, composable skills that fetch the right traces into files in the repo (sometimes 10MB dumps) rather than exposing raw data to the agent. He also frames evals as "online evals" layered onto production traces — LLM-as-judge checks built for specific failure modes the team has already seen — whose aggregate signals feed into Signal's fix-generation loop alongside raw trace data.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

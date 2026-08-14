@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Eno Reyes shares a practical take on How Forward Deployed Engineering is done at Factory. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints."
+summary: "Factory CTO Eno Reyes describes forward-deployed engineering: the Droid harness, agent-readiness validation loops, and Missions tasks, citing 87% fewer bugs and 30-50M-line autonomous migrations."
 ---
 
 # How Forward Deployed Engineering is done at Factory — Eno Reyes
 
 ## Summary
-Eno Reyes shares a practical take on How Forward Deployed Engineering is done at Factory. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints.
+Eno Reyes, co-founder and CTO of Factory (previously ML/software engineering at Hugging Face and Microsoft), frames forward-deployed engineering as feeding customer signals back into the product rather than doing custom professional-services work. Factory's core product, the Droid harness, is a model-independent agent system that lets enterprises build "software factories" — automated signal-to-deploy pipelines with AI code review, QA, and security checks that Reyes says make a code change roughly 87% less likely to hit a bug. He defines "agent readiness" as the density of deterministic validation loops (linters, type checkers, security scans) in a codebase: Droid can autonomously fix an estimated 30-40% of flagged issues outright, while the rest require workflow changes. Factory's own codebase runs at 15-20% autonomy with an autonomy ratio in the upper 80%, and its internal "Legal Droid" workflow is fully autonomous; a separate product called Missions is a long-running harness for bounded, verifiable tasks, which Reyes says has been used for fully autonomous migrations of 30-50 million-line codebases, biomedical/healthcare deep-learning work, and financial equity-research modeling.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

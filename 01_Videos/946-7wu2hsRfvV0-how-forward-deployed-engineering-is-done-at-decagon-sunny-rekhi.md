@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:12+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Sunny Rekhi shares a practical take on How Forward Deployed Engineering is done at Decagon. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints."
+summary: "Decagon's Sunny Rekhi describes splitting forward-deployed engineering into agent builders and agent software engineers as headcount grew from 50 to 500, and argues restraint beats reflexive AI-coded one-off fixes."
 ---
 
 # How Forward Deployed Engineering is done at Decagon — Sunny Rekhi
 
 ## Summary
-Sunny Rekhi shares a practical take on How Forward Deployed Engineering is done at Decagon. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints.
+Sunny Rekhi, CTO of Forward Deployed Engineering at Decagon (a 24/7 AI customer service agent), describes how the FDE org split into two lanes as headcount grew from 50 to 500 people in a year: "agent builders" who configure the agent's brain (tonality, user intents, hand-off rules) largely inside the UI, and "agent software engineers" who route recurring enterprise product requests back into the core platform. He argues that with AI coding now fast and cheap, the scarce skill has become restraint — not reflexively prompting Codex or Claude Code to patch one customer's one-off request, since that produces a brittle, unowned "black box" of prompts and patches. Decagon locks down success metrics and support channels in writing before building, staffs deals with industry-vertical specialists so domain knowledge compounds across similar customers, and converts repeated manual asks (he cites building the same custom CRM integration 25 times) into self-serve platform features. He gives Hertz as an example: onboarded to deflect inbound support calls, then expanded into proactive lease-renewal outreach using the same back-end integrations.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a concrete, named example (Decagon) of the FDE-team bifurcation pattern — agent configuration vs. product engineering — that recurs as AI-agent vendors scale past initial hypergrowth.
+- Names "restraint" against reflexive one-off AI coding as the scarce skill once coding agents make execution cheap, a useful counterpoint to "just let the agent build it."
+- The Hertz land-and-expand example and the "custom becomes self-serve" ethos are concrete illustrations of platformizing forward-deployed work instead of accumulating bespoke code.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=7wu2hsRfvV0

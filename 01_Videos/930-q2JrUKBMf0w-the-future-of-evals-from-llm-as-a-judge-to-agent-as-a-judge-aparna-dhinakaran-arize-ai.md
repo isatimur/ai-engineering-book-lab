@@ -15,17 +15,18 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-07-26T22:22:24+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Aparna Dhinakaran shares a practical take on The Future of Evals: From LLM as a Judge to Agent as a Judge. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Arize's Aparna Dhinakaran argues fixed-rubric LLM-as-judge evals miss dynamic agent failures, and previews Signal, a long-running agent-as-judge that reads traces and files fix PRs."
 ---
 
 # The Future of Evals: From LLM as a Judge to Agent as a Judge — Aparna Dhinakaran, Arize AI
 
 ## Summary
-Aparna Dhinakaran shares a practical take on The Future of Evals: From LLM as a Judge to Agent as a Judge. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Aparna Dhinakaran, a founder of Arize, cites scale numbers from Arize's customer base — over 100 million evals run per month, an average of 12 eval jobs per team, and top teams running more than 3,800 distinct evaluators — to argue that what teams need to evaluate changed faster than eval tooling did: from single-prompt answers in 2023, to tool calls and reasoning in 2024, to today's long-horizon, sub-agent-spawning loops on real-world data. She uses Arize's own product agent, Alex, as an example: as it gained longer memory, dynamic UI generation, and the ability to search across large trace volumes, it also started forgetting context and getting stuck in loops — failure modes she says classical LLM-as-judge evals with fixed rubrics can't catch because each agent trajectory is different. Her proposed fix is "agent as a judge": Arize's newly released Signal is a long-running agent that reads incoming traces, discovers failure patterns such as repeated calls to the same tool or inefficient trajectories, and can open a pull request with a fix. She frames this as additive, not a replacement — most teams still need deterministic evals and LLM-as-judge, with agent-as-judge as a third layer for dynamic, non-deterministic agent behavior.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Names a concrete failure mode LLM-as-judge structurally can't catch (fixed rubric vs. every-trajectory-different agents), a sharp argument for a chapter on eval methodology limits.
+- The Signal example — an agent that reads traces, finds patterns like tool-call loops, and files a fix PR — is a specific instance of "evals feeding a continual-improvement loop," a recurring theme candidate.
+- Concrete adoption numbers (100M+ evals/month, 3,800+ evaluators at top teams) are citable evidence for how central evals have become to production AI teams.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=q2JrUKBMf0w
