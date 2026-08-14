@@ -4894,6 +4894,15 @@
           "confidence": "high",
           "label": "#142 — Kwindla Hultman Kramer, Daily",
           "quote": "real time is different from non-real time. And by non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
+        },
+        {
+          "video_id": "IA4lZjh9sTs",
+          "start": "00:11:39.760",
+          "end": "00:11:44.320",
+          "start_seconds": 699,
+          "confidence": "high",
+          "label": "#142 — Kwindla Hultman Kramer, Daily",
+          "quote": "you care a lot if your P95 goes up above 800, 900, 1,000 milliseconds"
         }
       ]
     }
