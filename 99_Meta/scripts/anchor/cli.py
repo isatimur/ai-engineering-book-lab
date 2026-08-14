@@ -33,6 +33,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("phrase", help="search phrase to anchor")
     parser.add_argument("--transcripts", default=str(_DEFAULT_TRANSCRIPTS),
                         help="directory holding <video_id>.en.vtt files")
+    # YouTube ids use the base64url alphabet, so they can begin with "-" (e.g.
+    # "-npY6XjM8CQ") and argparse would read that as an option flag. Wrap such an
+    # id in brackets, which extract_video_id already strips. (Prepending "--"
+    # instead would work here but would stop later flags like --transcripts from
+    # being parsed at all.)
+    if argv is None:
+        argv = sys.argv[1:]
+    if argv and argv[0].startswith("-") and _BARE_ID.fullmatch(argv[0].strip()):
+        argv = [f"[{argv[0].strip()}]", *argv[1:]]
+
     args = parser.parse_args(argv)
 
     try:

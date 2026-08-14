@@ -69,5 +69,19 @@ class TestCli(unittest.TestCase):
         self.assertEqual(data["video_id"], "not-a-real-ref")
 
 
+    def test_cli_accepts_video_id_starting_with_dash(self):
+        """YouTube ids may begin with "-" (base64url); argparse must not read
+        that as an option flag. Regression: anchoring #980 failed without "--"."""
+        result = subprocess.run(
+            [sys.executable, "cli.py", "-estvid0002", "the north star",
+             "--transcripts", "testdata"],
+            cwd=ANCHOR_DIR, capture_output=True, text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        data = json.loads(result.stdout)
+        self.assertEqual(data["video_id"], "-estvid0002")
+        self.assertEqual(data["confidence"], "high")
+
+
 if __name__ == "__main__":
     unittest.main()

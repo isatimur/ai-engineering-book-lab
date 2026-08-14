@@ -68,13 +68,20 @@ committed VTT transcripts and returned `confidence: high`.
 - **Why it matters:** Chapter 4's judge taxonomy (panel of diverse models, median
   voting) is one generation behind what the corpus now shows. This is convergent
   evidence, which is stronger than any single talk.
-- **Support level:** tentative pending anchors (the convergence is documented in the
-  enriched notes; individual quotes are not yet anchored)
-- **Supporting sources (to anchor before promotion):**
-  - [[930-q2JrUKBMf0w-the-future-of-evals-from-llm-as-a-judge-to-agent-as-a-judge-aparna-dhinakaran-arize-ai|#930 — Aparna Dhinakaran, Arize]] — agent-as-judge over dynamic trajectories.
-  - [[934-b_PmGocP4rc-evaling-video-slop-maor-bril-character-ai|#934 — Maor Bril, Character.AI]] — a video judge learned "vibe" rather than the intended axes.
-  - [[968-jWq-aZIU0kM-benchmarks-the-good-the-bad-and-the-ugly-ali-khial-g2i|#968 — Ali Khial, G2i]] — weak and hard-coded verifiers.
-  - [[980--npY6XjM8CQ-when-will-the-benchmaxxing-plague-end-nick-heiner-surge-ai|#980 — Nick Heiner, Surge AI]] — reward hacking in coding benchmarks.
+- **Support level:** moderate (three anchored primary sources reaching the same
+  limitation independently; the fourth is thematically aligned but has no quote
+  specific enough to anchor)
+- **Supporting sources:**
+  - [[930-q2JrUKBMf0w-the-future-of-evals-from-llm-as-a-judge-to-agent-as-a-judge-aparna-dhinakaran-arize-ai|#930 — Aparna Dhinakaran, Arize]] — names the structural limit and proposes agent-as-judge (adaptive, dynamic) as the successor.
+    - **Anchor:** `q2JrUKBMf0w` 00:04:12.040 → 00:04:13.880 · confidence: high
+    - **Quote:** "LLM as a judge just gives you a fixed rubric"
+  - [[934-b_PmGocP4rc-evaling-video-slop-maor-bril-character-ai|#934 — Maor Bril, Character.AI]] — their trained video judge optimized for overall impression instead of the rubric's stated axes: the failure mode observed from the inside.
+    - **Anchor:** `b_PmGocP4rc` 00:11:26.640 → 00:11:28.400 · confidence: high
+    - **Quote:** "scored the vibe as opposed to the"
+  - [[980--npY6XjM8CQ-when-will-the-benchmaxxing-plague-end-nick-heiner-surge-ai|#980 — Nick Heiner, Surge AI]] — same pressure from the benchmark side.
+    - **Anchor:** `-npY6XjM8CQ` 00:05:54.720 → 00:05:56.160 · confidence: high
+    - **Quote:** "Reward hacking is also a big problem."
+  - [[968-jWq-aZIU0kM-benchmarks-the-good-the-bad-and-the-ugly-ali-khial-g2i|#968 — Ali Khial, G2i]] — **listed without an anchor on purpose.** The talk covers verifiers and rubrics, but its wording is a survey of the landscape rather than a claim about judge limits; anchoring it would overstate what the speaker said. Cite as background, not support.
 - **Caveats / counterpoints:** Four teams noticing a limitation is not four teams
   agreeing on the replacement — agent-as-judge, learned judges, and better verifiers
   are different fixes. Do not compress them into one prescription.
