@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-972-983|Latest batch: recent-972-983]]
-- Total video notes in corpus: 983
-- Video notes created in this batch: 12
+- [[batches/recent-984-1013|Latest batch: recent-984-1013]]
+- Total video notes in corpus: 1013
+- Video notes created in this batch: 30
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,15 +31,33 @@
 
 ## Recent notes
 
-- [[972-zkX03APVj0M-emulated-the-data-for-fully-autonomous-software-engineers-and-companies-joseph-wang|#972 — Emulated: The Data for Fully Autonomous Software Engineers and Companies — Joseph Wang]]
-- [[973-2bvtay8wGYI-scaling-to-long-horizons-ross-taylor-chengxi-taylor-general-reasoning|#973 — Scaling to Long Horizons — Ross Taylor & Chengxi Taylor, General Reasoning]]
-- [[974-ewtOo0scUh0-data-and-environment-curation-for-post-training-llms-mahesh-sathiamoorthy-bespoke-labs|#974 — Data and Environment Curation for Post-Training LLMs — Mahesh Sathiamoorthy, Bespoke Labs]]
-- [[975-k35LeKZEhiE-learning-on-the-job-the-future-of-post-training-raymond-feng-applied-compute|#975 — Learning on the Job: The Future of Post-Training — Raymond Feng, Applied Compute]]
-- [[976-_PdK6x7PQNM-data-quality-is-the-compute-multiplier-ari-morcos-datologyai|#976 — Data Quality Is the Compute Multiplier — Ari Morcos, DatologyAI]]
-- [[977-cJ0EOzey--o-what-s-next-after-rlhf-diogo-almeida-typesafe-ai|#977 — What's Next After RLHF? — Diogo Almeida, TypeSafe AI]]
-- [[978-2aS7aKoXn64-rethinking-environments-for-long-horizon-work-rayan-garg-theta-software|#978 — Rethinking Environments for Long-Horizon Work — Rayan Garg, Theta Software]]
-- [[979-ZFxh7sqbUZo-teaching-ai-to-find-real-vulnerabilities-prof-david-brumley-bugcrowd|#979 — Teaching AI to Find Real Vulnerabilities — Prof. David Brumley, Bugcrowd]]
-- [[980--npY6XjM8CQ-when-will-the-benchmaxxing-plague-end-nick-heiner-surge-ai|#980 — When Will The Benchmaxxing Plague End? — Nick Heiner, Surge AI]]
-- [[981-s4r6nk5WsZw-mcp-tasks-async-why-aren-t-any-agents-supporting-them-cornelia-davis-temporal|#981 — MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal]]
-- [[982--jY2T2PiJBE-mcp-apps-extending-the-frontier-ido-salomon-liad-yosef|#982 — MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef]]
-- [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983 — Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)]]
+- [[984-RmS5s6Wbin4-gadgets-personal-app-vibe-coding-that-is-actually-safe-kenton-varda-cloudflare|#984 — Gadgets: Personal app vibe coding that is actually safe — Kenton Varda, Cloudflare]]
+- [[985-QHBjufYK8TA-the-state-of-model-routing-nvidia-cognition-openrouter|#985 — The State of Model Routing — NVIDIA, Cognition, OpenRouter]]
+- [[986-J4_jCrTxMkk-compression-at-the-edge-nvidia-unsloth-huggingface-ollama|#986 — Compression at the Edge — NVIDIA, Unsloth, HuggingFace, Ollama]]
+- [[987-FWMJQDH3iK0-local-models-trust-control-optimization-carter-abdallah-nvidia|#987 — Local Models: Trust, Control, Optimization — Carter Abdallah, NVIDIA]]
+- [[988-CoEIs6Xm8m8-open-source-is-dead-long-live-open-source-saoud-rizwan-cline|#988 — Open Source Is Dead. Long Live Open Source. — Saoud Rizwan, Cline]]
+- [[989-LZuWZRze3MU-the-new-primitives-building-ai-native-software-kwindla-kramer-daily|#989 — The New Primitives: Building AI Native Software — Kwindla Kramer, Daily]]
+- [[990-Z-c11pV_uvU-anthropic-s-cca-exam-as-a-field-guide-for-agentic-engineering-frank-coyle-uc-berkeley|#990 — Anthropic's CCA Exam as a Field-Guide for Agentic Engineering — Frank Coyle, UC Berkeley]]
+- [[991-7vn4WpqNpck-benchmarking-coding-agents-on-new-vs-legacy-codebases-denys-linkov-wisedocs|#991 — Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs]]
+- [[992-iQ5xldZ9StU-realtime-multiplayer-automation-and-you-idan-gazit-github|#992 — Realtime multiplayer, automation, and you! — Idan Gazit, GitHub]]
+- [[993-vSx5IULvBns-always-on-agents-run-production-without-the-on-call-tax-justin-smith-resolve-ai|#993 — Always-on agents run production without the on-call tax — Justin Smith, Resolve AI]]
+- [[994-Kz4QJmNrVXU-velocity-sickness-what-happens-when-your-whole-team-gets-10x-faster-matt-dailey-ref|#994 — Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.]]
+- [[995-03l29gJXpCE-guide-verify-solve-anirban-chatterjee-sonar|#995 — Guide, Verify, Solve — Anirban Chatterjee, Sonar]]
+- [[996-OL7kfezynJM-multiplayer-agentic-engineering-arjun-singh-superconductor|#996 — Multiplayer agentic engineering — Arjun Singh, Superconductor]]
+- [[997-shRR1e2HXMk-codex-behind-the-harness-dominik-kundel-openai|#997 — Codex, Behind the Harness — Dominik Kundel, OpenAI]]
+- [[998-maRzp4kImJ4-taking-reinforcement-learning-cross-datacenter-nan-jiang-modal|#998 — Taking Reinforcement Learning Cross Datacenter — Nan Jiang, Modal]]
+- [[999-aeTb5BdmTTc-agents-codebases-and-teams-aditya-khandelwal-amazon-agi-lab|#999 — Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab]]
+- [[1000-K0X9QDRkIdg-evolution-of-agentic-surfaces-gagan-bhat-isabella-kai-he-anthropic|#1000 — Evolution of agentic surfaces — Gagan Bhat & Isabella Kai He, Anthropic]]
+- [[1001-Cc0_nyxROBA-from-rl-to-irl-gaurav-mishra-amazon-agi-lab|#1001 — From RL to IRL — Gaurav Mishra, Amazon AGI Lab]]
+- [[1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori|#1002 — Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori]]
+- [[1003-iqloyWCGYQQ-beyond-static-intelligence-evaluating-continual-learning-parth-asawa-uc-berkeley|#1003 — Beyond Static Intelligence: Evaluating Continual Learning — Parth Asawa, UC Berkeley]]
+- [[1004-zL1kLftVTlo-scaling-up-continual-learning-ronak-malde-trajectory|#1004 — Scaling up Continual Learning — Ronak Malde, Trajectory]]
+- [[1005-R3-anFK1YM8-memory-harnesses-for-long-running-research-agents-stefania-druga-sakana-ai|#1005 — Memory Harnesses for Long-Running Research Agents — Stefania Druga, Sakana.ai]]
+- [[1006-WiqDvX6isc4-scaling-compute-on-context-jack-morris-engram|#1006 — Scaling Compute on Context — Jack Morris, Engram]]
+- [[1007-I6aiEf3aEFQ-intelligence-continual-learning-expertise-yu-su-neocognition|#1007 — Intelligence + Continual Learning = Expertise — Yu Su, NeoCognition]]
+- [[1008-XEd_SRVHBgU-adaption-labs-gradient-free-continual-learning-sara-hooker-adaption|#1008 — Adaption Labs: Gradient-Free Continual Learning — Sara Hooker, Adaption]]
+- [[1009-I3bpdgFJCUY-llm-knowledge-bases-a-practical-guide-ben-holmes-warp|#1009 — LLM Knowledge Bases: a practical guide — Ben Holmes, Warp]]
+- [[1010-ZTA0GwpAUak-bringing-continual-learning-into-enterprises-samuel-denton-applied-compute|#1010 — Bringing Continual Learning into Enterprises — Samuel Denton, Applied Compute]]
+- [[1011-jHMiYtjoJfA-designing-agents-the-floor-is-the-frontier-ben-hylak-raindrop|#1011 — Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop]]
+- [[1012-5ZGyKWjQDr0-lessons-from-studying-every-memory-system-shlok-khemani-independent|#1012 — Lessons from Studying Every Memory System — Shlok Khemani, Independent]]
+- [[1013-CvRngaQZQ3Y-improving-agents-is-a-data-mining-problem-vivek-trivedy-langchain|#1013 — Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain]]

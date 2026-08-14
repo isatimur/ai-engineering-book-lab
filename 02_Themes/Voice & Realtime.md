@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 43
+- Total tagged videos: 44
 
 ## Cross-video synthesis
 
-- This theme appears across 43 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 44 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (7), Evals & Reliability (6), Models & Inference (6).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
@@ -55,6 +55,7 @@
 - [[776-ij-AU9dpJjc-stop-writing-tone-instructions-layer-them-isadora-martin-dye-isadora-co|#776 — Stop Writing Tone Instructions. Layer Them. - Isadora Martin-Dye, Isadora & Co]]
 - [[793-Iwe_RY-fYgI-ai-driven-multi-document-correlation-for-financial-compliance-varsha-shah-independent|#793 — AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent]]
 - [[892-fnLBmfsI_Fg-your-voice-agent-doesn-t-need-a-frontier-model-joel-allou-ornella-bahidika-microsoft|#892 — Your Voice Agent Doesn't Need a Frontier Model - Joel Allou & Ornella Bahidika, Microsoft]]
+- [[992-iQ5xldZ9StU-realtime-multiplayer-automation-and-you-idan-gazit-github|#992 — Realtime multiplayer, automation, and you! — Idan Gazit, GitHub]]
 
 ## Notes
 

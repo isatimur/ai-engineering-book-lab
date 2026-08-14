@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 464
+- Total tagged videos: 468
 
 ## Cross-video synthesis
 
-- This theme appears across 464 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (326), Evals & Reliability (302), MCP & Tooling (58).
+- This theme appears across 468 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (328), Evals & Reliability (304), MCP & Tooling (58).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -476,6 +476,10 @@
 - [[981-s4r6nk5WsZw-mcp-tasks-async-why-aren-t-any-agents-supporting-them-cornelia-davis-temporal|#981 — MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal]]
 - [[982--jY2T2PiJBE-mcp-apps-extending-the-frontier-ido-salomon-liad-yosef|#982 — MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef]]
 - [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983 — Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)]]
+- [[990-Z-c11pV_uvU-anthropic-s-cca-exam-as-a-field-guide-for-agentic-engineering-frank-coyle-uc-berkeley|#990 — Anthropic's CCA Exam as a Field-Guide for Agentic Engineering — Frank Coyle, UC Berkeley]]
+- [[991-7vn4WpqNpck-benchmarking-coding-agents-on-new-vs-legacy-codebases-denys-linkov-wisedocs|#991 — Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs]]
+- [[995-03l29gJXpCE-guide-verify-solve-anirban-chatterjee-sonar|#995 — Guide, Verify, Solve — Anirban Chatterjee, Sonar]]
+- [[1009-I3bpdgFJCUY-llm-knowledge-bases-a-practical-guide-ben-holmes-warp|#1009 — LLM Knowledge Bases: a practical guide — Ben Holmes, Warp]]
 
 ## Notes
 

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 372
+- Total tagged videos: 382
 
 ## Cross-video synthesis
 
-- This theme appears across 372 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (326), Evals & Reliability (284), MCP & Tooling (54).
+- This theme appears across 382 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (328), Evals & Reliability (285), MCP & Tooling (54).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -384,6 +384,16 @@
 - [[981-s4r6nk5WsZw-mcp-tasks-async-why-aren-t-any-agents-supporting-them-cornelia-davis-temporal|#981 — MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal]]
 - [[982--jY2T2PiJBE-mcp-apps-extending-the-frontier-ido-salomon-liad-yosef|#982 — MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef]]
 - [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983 — Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)]]
+- [[990-Z-c11pV_uvU-anthropic-s-cca-exam-as-a-field-guide-for-agentic-engineering-frank-coyle-uc-berkeley|#990 — Anthropic's CCA Exam as a Field-Guide for Agentic Engineering — Frank Coyle, UC Berkeley]]
+- [[991-7vn4WpqNpck-benchmarking-coding-agents-on-new-vs-legacy-codebases-denys-linkov-wisedocs|#991 — Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs]]
+- [[993-vSx5IULvBns-always-on-agents-run-production-without-the-on-call-tax-justin-smith-resolve-ai|#993 — Always-on agents run production without the on-call tax — Justin Smith, Resolve AI]]
+- [[996-OL7kfezynJM-multiplayer-agentic-engineering-arjun-singh-superconductor|#996 — Multiplayer agentic engineering — Arjun Singh, Superconductor]]
+- [[999-aeTb5BdmTTc-agents-codebases-and-teams-aditya-khandelwal-amazon-agi-lab|#999 — Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab]]
+- [[1000-K0X9QDRkIdg-evolution-of-agentic-surfaces-gagan-bhat-isabella-kai-he-anthropic|#1000 — Evolution of agentic surfaces — Gagan Bhat & Isabella Kai He, Anthropic]]
+- [[1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori|#1002 — Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori]]
+- [[1005-R3-anFK1YM8-memory-harnesses-for-long-running-research-agents-stefania-druga-sakana-ai|#1005 — Memory Harnesses for Long-Running Research Agents — Stefania Druga, Sakana.ai]]
+- [[1011-jHMiYtjoJfA-designing-agents-the-floor-is-the-frontier-ben-hylak-raindrop|#1011 — Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop]]
+- [[1013-CvRngaQZQ3Y-improving-agents-is-a-data-mining-problem-vivek-trivedy-langchain|#1013 — Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain]]
 
 ## Notes
 

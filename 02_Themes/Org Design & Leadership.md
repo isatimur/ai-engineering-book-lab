@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 241
+- Total tagged videos: 247
 
 ## Cross-video synthesis
 
-- This theme appears across 241 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 247 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (18).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
@@ -253,6 +253,12 @@
 - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs]]
 - [[688-YNJvm7t3yq8-why-your-ai-ux-is-broken-and-it-s-not-the-model-s-fault-mike-christensen-ably|#688 — Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably]]
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
+- [[993-vSx5IULvBns-always-on-agents-run-production-without-the-on-call-tax-justin-smith-resolve-ai|#993 — Always-on agents run production without the on-call tax — Justin Smith, Resolve AI]]
+- [[994-Kz4QJmNrVXU-velocity-sickness-what-happens-when-your-whole-team-gets-10x-faster-matt-dailey-ref|#994 — Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.]]
+- [[996-OL7kfezynJM-multiplayer-agentic-engineering-arjun-singh-superconductor|#996 — Multiplayer agentic engineering — Arjun Singh, Superconductor]]
+- [[999-aeTb5BdmTTc-agents-codebases-and-teams-aditya-khandelwal-amazon-agi-lab|#999 — Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab]]
+- [[1004-zL1kLftVTlo-scaling-up-continual-learning-ronak-malde-trajectory|#1004 — Scaling up Continual Learning — Ronak Malde, Trajectory]]
+- [[1010-ZTA0GwpAUak-bringing-continual-learning-into-enterprises-samuel-denton-applied-compute|#1010 — Bringing Continual Learning into Enterprises — Samuel Denton, Applied Compute]]
 
 ## Notes
 

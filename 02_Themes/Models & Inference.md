@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 129
+- Total tagged videos: 133
 
 ## Cross-video synthesis
 
-- This theme appears across 129 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 133 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (21), Org Design & Leadership (18).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
@@ -141,6 +141,10 @@
 - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind]]
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
 - [[896-2xJoimgoqBg-security-track-intro-randall-degges-snyk|#896 — Security Track Intro — Randall Degges, Snyk]]
+- [[985-QHBjufYK8TA-the-state-of-model-routing-nvidia-cognition-openrouter|#985 — The State of Model Routing — NVIDIA, Cognition, OpenRouter]]
+- [[987-FWMJQDH3iK0-local-models-trust-control-optimization-carter-abdallah-nvidia|#987 — Local Models: Trust, Control, Optimization — Carter Abdallah, NVIDIA]]
+- [[1001-Cc0_nyxROBA-from-rl-to-irl-gaurav-mishra-amazon-agi-lab|#1001 — From RL to IRL — Gaurav Mishra, Amazon AGI Lab]]
+- [[1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori|#1002 — Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori]]
 
 ## Notes
 

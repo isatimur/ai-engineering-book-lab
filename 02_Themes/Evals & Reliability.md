@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 415
+- Total tagged videos: 418
 
 ## Cross-video synthesis
 
-- This theme appears across 415 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (302), Agent Architecture (284), Models & Inference (21).
+- This theme appears across 418 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (304), Agent Architecture (285), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -427,6 +427,9 @@
 - [[979-ZFxh7sqbUZo-teaching-ai-to-find-real-vulnerabilities-prof-david-brumley-bugcrowd|#979 — Teaching AI to Find Real Vulnerabilities — Prof. David Brumley, Bugcrowd]]
 - [[980--npY6XjM8CQ-when-will-the-benchmaxxing-plague-end-nick-heiner-surge-ai|#980 — When Will The Benchmaxxing Plague End? — Nick Heiner, Surge AI]]
 - [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983 — Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)]]
+- [[991-7vn4WpqNpck-benchmarking-coding-agents-on-new-vs-legacy-codebases-denys-linkov-wisedocs|#991 — Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs]]
+- [[995-03l29gJXpCE-guide-verify-solve-anirban-chatterjee-sonar|#995 — Guide, Verify, Solve — Anirban Chatterjee, Sonar]]
+- [[1003-iqloyWCGYQQ-beyond-static-intelligence-evaluating-continual-learning-parth-asawa-uc-berkeley|#1003 — Beyond Static Intelligence: Evaluating Continual Learning — Parth Asawa, UC Berkeley]]
 
 ## Notes
 
