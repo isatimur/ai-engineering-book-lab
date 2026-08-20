@@ -1,4 +1,4 @@
-# Candidate Claims — corpus #795–1013
+# Candidate Claims — corpus #795–1047
 
 Draft ledger entries from `research_passes/2026-08-05-new-patterns-corpus-795-983.md`.
 **Not part of the canonical ledger.** These are anchored and verified but await a
@@ -88,6 +88,80 @@ committed VTT transcripts and returned `confidence: high`.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** Four teams hit the same wall from four directions: a judge
   with a fixed rubric grades what it was told to look for, not what went wrong.
+
+---
+
+## C4) Prompt caching inverted the economics of context compaction — full history can beat summarizing on cost *and* quality
+
+- **Why it matters:** Chapter 5 argues good context architecture is "knowing what
+  to keep live, what to summarize, what to index, and what to leave out," and frames
+  that restraint as design rather than weakness. This does not refute the chapter's
+  principle, but it **complicates its economics**: the assumption that summarizing
+  saves money stopped holding once cache discounts arrived, because compaction
+  invalidates the cache. A chapter that recommends compaction without naming the
+  caching interaction is giving advice one pricing change out of date.
+- **Support level:** moderate (one team, but a costed experiment rather than an
+  opinion; they report spending roughly $500-600 on the eval runs)
+- **Supporting sources:**
+  - [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019 — Bouchard, Solano & Vaid, Towards AI]] — measured full history against compaction techniques on cost, latency and recall.
+    - **Anchor:** `WP3hjUXd918` 00:45:39.920 → 00:45:41.359 · confidence: high
+    - **Quote:** "here we don't touch the context"
+  - [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019 — Bouchard, Solano & Vaid, Towards AI]] — the compaction arm's quality cost.
+    - **Anchor:** `WP3hjUXd918` 00:45:31.680 → 00:45:33.680 · confidence: high
+    - **Quote:** "quality degraded to 38%."
+- **Caveats / counterpoints:** The result is contingent on provider pricing — they
+  cite a cache discount on the order of 50x on one model versus another — so it is a
+  statement about 2026 economics, not about information theory. Context windows have
+  hard limits regardless of price, so "never compact" cannot generalize to
+  arbitrarily long sessions. Verify the current discount before citing the ratio.
+- **Candidate chapters:** 5 (complicates), 6
+- **Reusable phrasing:** Compaction used to be the obvious economy. Then caching made
+  the un-touched context the cheap one, and the summarizer became the thing that
+  threw money away.
+
+## C5) Pass@k on deterministic environments can be satisfied by a model-free replay agent — so some computer-use benchmark progress measures nothing
+
+- **Why it matters:** C2 shows agents *gaming* a benchmark. This is stronger and more
+  structural: on deterministic environments, pass@k is formally satisfiable by
+  replaying a recorded action sequence with no model in the loop at all. If the metric
+  can be maxed by a system containing no intelligence, the metric is not measuring
+  intelligence. Chapter 4's "a comfortably-passing benchmark is a warning" gets a
+  mathematical version.
+- **Support level:** moderate (single source, but a formal argument with an
+  accompanying paper rather than an anecdote)
+- **Supporting sources:**
+  - [[1014-CTLa_p6iOiY-computer-use-at-the-edge-of-the-statistical-precipice-pierluca-d-oro-programma-labs|#1014 — Pierluca D'Oro, Programma Labs]] — defines the replay agent and its equivalence to pass@k on deterministic tasks.
+    - **Anchor:** `CTLa_p6iOiY` 00:01:18.880 → 00:01:20.880 · confidence: high
+    - **Quote:** "replace that sequence of actions blindly."
+- **Caveats / counterpoints:** Applies to *deterministic* environments; stochastic or
+  live-web tasks break the replay trick. The talk also reports naive confidence
+  intervals achieving far below their nominal coverage — a separate claim, not
+  anchored here. The linked paper should be read before the formal claim is repeated.
+- **Candidate chapters:** 4
+- **Reusable phrasing:** If a benchmark can be beaten by a recording, passing it tells
+  you nothing about the agent.
+
+## C6) Cross-checking independent sources fails when the sources share an upstream error — they agree, and they are all wrong
+
+- **Why it matters:** The book recommends redundancy in several places: panel judging
+  with diverse models (Chapter 4/9) and cross-validating retrieved citations
+  (Chapter 7's legal-research example). This is a production counterexample from
+  healthcare: three independent channels can agree a patient is covered and the claim
+  is still denied afterwards. Redundancy defends against *independent* errors; it does
+  nothing against a correlated one.
+- **Support level:** moderate (single practitioner source, concrete production
+  mechanism)
+- **Supporting sources:**
+  - [[1035-UyyOoJmuATU-healthcare-s-agent-bytecode-x12-as-the-harness-for-ai-agents-vasant-kearney-onlay|#1035 — Vasant Kearney, Onlay]] — phone, web portal and X12 EDI can concur and still be wrong.
+    - **Anchor:** `UyyOoJmuATU` 00:16:15.120 → 00:16:17.880 · confidence: high
+    - **Quote:** "all actually agree on the wrong information"
+- **Caveats / counterpoints:** This is a domain-specific failure (US healthcare
+  eligibility), not a refutation of redundancy in general — the book's panel argument
+  is about *model* diversity, which is a different independence assumption. The honest
+  reading is that redundancy needs an explicit claim about what the sources share.
+- **Candidate chapters:** 4, 7, 9
+- **Reusable phrasing:** Redundancy only buys you protection from errors that are
+  independent. Ask what your sources have in common before you trust their agreement.
 
 ---
 
