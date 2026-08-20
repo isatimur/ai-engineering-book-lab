@@ -88,7 +88,14 @@ produces correct frontmatter from the start rather than backfilling around a
 stale `unavailable` status. `corpus_health.py` exists so this debt is never
 invisible; it runs as the last step of the ingest workflow.
 
-Permanent gaps (not debt): #783 went private upstream; #417 has no captions.
+Permanent gaps (not debt): #783 went private upstream; #417 has no captions
+(Whisper-transcribed locally instead).
+
+**Premiere-stranded transcripts:** the channel inventory lists premieres days
+early, so a note can be created before its video airs. Ingest only visits videos
+with no note, so those never get a transcript later. Run
+`python3 99_Meta/scripts/backfill_transcripts.py` after any ingest — it fetches
+transcripts for existing notes that lack them and corrects their frontmatter.
 
 Deviation ledger: audiobook currently edge-tts interim (see memory/commit
 cb503c0) pending OpenAI onyx re-render; note-quality LLM enrichment pass is
