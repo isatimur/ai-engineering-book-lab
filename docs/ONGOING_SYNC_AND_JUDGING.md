@@ -79,6 +79,7 @@ pass is what completes the corpus.** After any CI ingest, run locally:
 python3 99_Meta/scripts/update_ai_engineer_channel.py     # notes + transcripts
 python3 99_Meta/scripts/fetch_video_descriptions.py       # descriptions
 python3 99_Meta/scripts/build_shared_artifacts.py         # registry + note sections
+python3 99_Meta/scripts/backfill_transcripts.py            # premiere-stranded notes
 python3 99_Meta/scripts/corpus_health.py                  # confirm zero debt
 cd 99_Meta/transcripts && git add -A && git commit -m sync && git push
 ```
