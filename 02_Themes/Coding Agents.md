@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 492
+- Total tagged videos: 498
 
 ## Cross-video synthesis
 
-- This theme appears across 492 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (353), Evals & Reliability (322), MCP & Tooling (66).
+- This theme appears across 498 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (356), Evals & Reliability (322), MCP & Tooling (66).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -504,6 +504,12 @@
 - [[1011-jHMiYtjoJfA-designing-agents-the-floor-is-the-frontier-ben-hylak-raindrop|#1011 — Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop]]
 - [[1012-5ZGyKWjQDr0-lessons-from-studying-every-memory-system-shlok-khemani-independent|#1012 — Lessons from Studying Every Memory System — Shlok Khemani, Independent]]
 - [[1013-CvRngaQZQ3Y-improving-agents-is-a-data-mining-problem-vivek-trivedy-langchain|#1013 — Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain]]
+- [[1015-GqoNrUz8hEU-bringing-agents-onto-the-world-wide-web-paul-klein-iv-browserbase|#1015 — Bringing agents onto the world wide web — Paul Klein IV, Browserbase]]
+- [[1021-YgEv7IQzGdM-how-to-kill-the-code-review-ankit-jain-aviator|#1021 — How to Kill the Code Review — Ankit Jain, Aviator]]
+- [[1023-pPj_tjlvYjA-building-an-agentic-video-editor-for-mass-consumer-ekaterina-deyneka-reelful|#1023 — Building an Agentic Video Editor for Mass Consumer — Ekaterina Deyneka, Reelful]]
+- [[1026-z1dqv74SpUs-voice-agents-with-realtime-video-sidney-primas-lemonslice|#1026 — Voice agents with Realtime Video — Sidney Primas, LemonSlice]]
+- [[1027-Xln-On3syJk-generative-video-at-the-speed-of-light-keegan-mccallum-urun|#1027 — Generative Video at the Speed of Light — Keegan McCallum, uRun]]
+- [[1029-5dCAmSDOAjI-the-next-medium-why-real-time-interactive-video-changes-everything-ahmed-ahres-reactor|#1029 — The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor]]
 
 ## Notes
 

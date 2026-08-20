@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 26
+- Total tagged videos: 28
 
 ## Cross-video synthesis
 
-- This theme appears across 26 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (8), MCP & Tooling (3), RAG & Retrieval (2).
+- This theme appears across 28 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (8), MCP & Tooling (3), Agent Architecture (3).
 - Representative talks: #15 State of the Claw — Peter Steinberger; #18 $1 AI Guardrails: The Unreasonable Effectiveness of Finetuned ModernBERTs – Diego Carpentero; #31 Why, and how you need to sandbox AI-Generated Code? — Harshil Agrawal, Cloudflare.
 
 ## Seed videos
@@ -38,6 +38,8 @@
 - [[493-k0VIgKAUkP4-full-workshop-how-to-add-secure-code-interpreting-in-your-ai-app-vasek-mlejnsky|#493 — [Full Workshop] How to add secure code interpreting in your AI app: Vasek Mlejnsky]]
 - [[516-jdeMJJ_oNYg-llm-safeguards-security-privacy-compliance-anti-hallucination-daniel-whitenack|#516 — LLM Safeguards: Security Privacy Compliance Anti Hallucination: Daniel Whitenack]]
 - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Fighting AI with AI — Lawrence Jones, Incident]]
+- [[1020-MkRYPFIMCSA-security-firewall-for-agents-ryan-dahl-deno|#1020 — Security Firewall for Agents — Ryan Dahl, Deno]]
+- [[1031-YXEqC05WEI0-guardrails-first-engineering-member-facing-health-ai-rashi-agrawal-hinge-health|#1031 — Guardrails First: Engineering Member-Facing Health AI — Rashi Agrawal, Hinge Health]]
 
 ## Notes
 

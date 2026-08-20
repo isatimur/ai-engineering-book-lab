@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 400
+- Total tagged videos: 409
 
 ## Cross-video synthesis
 
-- This theme appears across 400 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (353), Evals & Reliability (304), MCP & Tooling (61).
+- This theme appears across 409 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (356), Evals & Reliability (305), MCP & Tooling (61).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -412,6 +412,15 @@
 - [[1011-jHMiYtjoJfA-designing-agents-the-floor-is-the-frontier-ben-hylak-raindrop|#1011 — Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop]]
 - [[1012-5ZGyKWjQDr0-lessons-from-studying-every-memory-system-shlok-khemani-independent|#1012 — Lessons from Studying Every Memory System — Shlok Khemani, Independent]]
 - [[1013-CvRngaQZQ3Y-improving-agents-is-a-data-mining-problem-vivek-trivedy-langchain|#1013 — Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain]]
+- [[1015-GqoNrUz8hEU-bringing-agents-onto-the-world-wide-web-paul-klein-iv-browserbase|#1015 — Bringing agents onto the world wide web — Paul Klein IV, Browserbase]]
+- [[1016-26RtyAm9y_Q-the-dark-arts-of-web-automation-teaching-agents-to-use-websites-like-humans-corey-gallon-r|#1016 — The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans — Corey Gallon, Rexmore]]
+- [[1017-Ot4OPrPH4xY-the-rise-of-caas-context-as-a-service-for-agentic-ai-omer-primor-bright-data|#1017 — The Rise of CaaS: Context-as-a-Service for Agentic AI — Omer Primor, Bright Data]]
+- [[1020-MkRYPFIMCSA-security-firewall-for-agents-ryan-dahl-deno|#1020 — Security Firewall for Agents — Ryan Dahl, Deno]]
+- [[1023-pPj_tjlvYjA-building-an-agentic-video-editor-for-mass-consumer-ekaterina-deyneka-reelful|#1023 — Building an Agentic Video Editor for Mass Consumer — Ekaterina Deyneka, Reelful]]
+- [[1026-z1dqv74SpUs-voice-agents-with-realtime-video-sidney-primas-lemonslice|#1026 — Voice agents with Realtime Video — Sidney Primas, LemonSlice]]
+- [[1035-UyyOoJmuATU-healthcare-s-agent-bytecode-x12-as-the-harness-for-ai-agents-vasant-kearney-onlay|#1035 — Healthcare’s Agent Bytecode: X12 as the Harness for AI Agents — Vasant Kearney, Onlay]]
+- [[1039-mav15aW9lLM-why-your-enterprise-tech-stack-isn-t-ready-for-ai-agents-christopher-lovejoy-saul-howard|#1039 — Why Your Enterprise Tech Stack Isn’t Ready for AI Agents — Christopher Lovejoy & Saul Howard]]
+- [[1041-nxokqOq1imY-your-agent-evolved-your-evals-didn-t-ameya-bhatawdekar-braintrust|#1041 — Your Agent Evolved. Your Evals Didn't. — Ameya Bhatawdekar, Braintrust]]
 
 ## Notes
 

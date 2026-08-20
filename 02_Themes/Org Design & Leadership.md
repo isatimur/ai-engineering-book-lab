@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 241
+- Total tagged videos: 245
 
 ## Cross-video synthesis
 
-- This theme appears across 241 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Evals & Reliability (18).
+- This theme appears across 245 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (41), RAG & Retrieval (38), Evals & Reliability (18).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -253,6 +253,10 @@
 - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs]]
 - [[688-YNJvm7t3yq8-why-your-ai-ux-is-broken-and-it-s-not-the-model-s-fault-mike-christensen-ably|#688 — Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably]]
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
+- [[1028-byn9PURoBNY-infra-behind-krea-2-how-to-train-and-serve-at-scale-gabriel-jorge-menezes-krea-ai|#1028 — Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai]]
+- [[1029-5dCAmSDOAjI-the-next-medium-why-real-time-interactive-video-changes-everything-ahmed-ahres-reactor|#1029 — The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor]]
+- [[1037-WJRdLNhrsLQ-how-to-build-an-ai-native-health-company-dan-feng-maven-clinic|#1037 — How to build an AI-Native Health Company — Dan Feng, Maven Clinic]]
+- [[1039-mav15aW9lLM-why-your-enterprise-tech-stack-isn-t-ready-for-ai-agents-christopher-lovejoy-saul-howard|#1039 — Why Your Enterprise Tech Stack Isn’t Ready for AI Agents — Christopher Lovejoy & Saul Howard]]
 
 ## Notes
 

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 435
+- Total tagged videos: 436
 
 ## Cross-video synthesis
 
-- This theme appears across 435 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (322), Agent Architecture (304), Models & Inference (21).
+- This theme appears across 436 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (322), Agent Architecture (305), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -447,6 +447,7 @@
 - [[1010-ZTA0GwpAUak-bringing-continual-learning-into-enterprises-samuel-denton-applied-compute|#1010 — Bringing Continual Learning into Enterprises — Samuel Denton, Applied Compute]]
 - [[1011-jHMiYtjoJfA-designing-agents-the-floor-is-the-frontier-ben-hylak-raindrop|#1011 — Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop]]
 - [[1013-CvRngaQZQ3Y-improving-agents-is-a-data-mining-problem-vivek-trivedy-langchain|#1013 — Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain]]
+- [[1041-nxokqOq1imY-your-agent-evolved-your-evals-didn-t-ameya-bhatawdekar-braintrust|#1041 — Your Agent Evolved. Your Evals Didn't. — Ameya Bhatawdekar, Braintrust]]
 
 ## Notes
 

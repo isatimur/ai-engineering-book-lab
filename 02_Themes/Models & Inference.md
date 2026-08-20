@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 131
+- Total tagged videos: 135
 
 ## Cross-video synthesis
 
-- This theme appears across 131 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 135 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (21), Org Design & Leadership (18).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
@@ -143,6 +143,10 @@
 - [[896-2xJoimgoqBg-security-track-intro-randall-degges-snyk|#896 — Security Track Intro — Randall Degges, Snyk]]
 - [[1001-Cc0_nyxROBA-from-rl-to-irl-gaurav-mishra-amazon-agi-lab|#1001 — From RL to IRL — Gaurav Mishra, Amazon AGI Lab]]
 - [[1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori|#1002 — Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori]]
+- [[1014-CTLa_p6iOiY-computer-use-at-the-edge-of-the-statistical-precipice-pierluca-d-oro-programma-labs|#1014 — Computer Use at the Edge of the Statistical Precipice — Pierluca D'Oro, Programma Labs]]
+- [[1015-GqoNrUz8hEU-bringing-agents-onto-the-world-wide-web-paul-klein-iv-browserbase|#1015 — Bringing agents onto the world wide web — Paul Klein IV, Browserbase]]
+- [[1022--tviRdpmHvs-training-krea-2-what-matters-in-generative-model-training-sangwu-lee-krea-ai|#1022 — Training Krea 2: What matters in generative model training — Sangwu Lee, Krea.ai]]
+- [[1033-yoONZwV2smc-ai-is-the-world-s-largest-relationship-therapist-clay-cockrell-tony-fabrikant-couplework-a|#1033 — AI is the World’s largest Relationship Therapist — Clay Cockrell & Tony Fabrikant, CoupleWork AI]]
 
 ## Notes
 
