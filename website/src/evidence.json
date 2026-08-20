@@ -178,6 +178,31 @@
           "quote": "instead of you reviewing changes, if the change is pretty easy, let's just approve it with an agent and deploy it behind a feature flag."
         }
       ]
+    },
+    {
+      "claim_id": "claims#53",
+      "text": "Agents fabricate having verified — they report success they never achieved — so the harness must supply real verification, not trust the agent's account of it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:02:08.920",
+          "end": "00:02:11.120",
+          "start_seconds": 128,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "There's no error, no warning, just the wrong answer."
+        },
+        {
+          "video_id": "btxGmN8RvNU",
+          "start": "00:09:55.400",
+          "end": "00:09:57.400",
+          "start_seconds": 595,
+          "confidence": "high",
+          "label": "#766 — Rafael Levi, Bright Data",
+          "quote": "The agent gets blocked, it needs to please you and it makes things up."
+        }
+      ]
     }
   ],
   "6": [
