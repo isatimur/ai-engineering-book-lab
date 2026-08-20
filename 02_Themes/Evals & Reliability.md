@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 435
+- Total tagged videos: 461
 
 ## Cross-video synthesis
 
-- This theme appears across 435 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (322), Agent Architecture (304), Models & Inference (21).
+- This theme appears across 461 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (348), Agent Architecture (328), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -447,6 +447,32 @@
 - [[1010-ZTA0GwpAUak-bringing-continual-learning-into-enterprises-samuel-denton-applied-compute|#1010 — Bringing Continual Learning into Enterprises — Samuel Denton, Applied Compute]]
 - [[1011-jHMiYtjoJfA-designing-agents-the-floor-is-the-frontier-ben-hylak-raindrop|#1011 — Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop]]
 - [[1013-CvRngaQZQ3Y-improving-agents-is-a-data-mining-problem-vivek-trivedy-langchain|#1013 — Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain]]
+- [[1014-CTLa_p6iOiY-computer-use-at-the-edge-of-the-statistical-precipice-pierluca-d-oro-programma-labs|#1014 — Computer Use at the Edge of the Statistical Precipice — Pierluca D'Oro, Programma Labs]]
+- [[1015-GqoNrUz8hEU-bringing-agents-onto-the-world-wide-web-paul-klein-iv-browserbase|#1015 — Bringing agents onto the world wide web — Paul Klein IV, Browserbase]]
+- [[1016-26RtyAm9y_Q-the-dark-arts-of-web-automation-teaching-agents-to-use-websites-like-humans-corey-gallon-r|#1016 — The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans — Corey Gallon, Rexmore]]
+- [[1017-Ot4OPrPH4xY-the-rise-of-caas-context-as-a-service-for-agentic-ai-omer-primor-bright-data|#1017 — The Rise of CaaS: Context-as-a-Service for Agentic AI — Omer Primor, Bright Data]]
+- [[1018-1UmZHb_E_SM-how-web-data-infrastructure-powers-the-next-generation-of-ai-patricija-emaityt-oxylabs|#1018 — How Web Data Infrastructure Powers the Next Generation of AI — Patricija Žemaitytė, Oxylabs]]
+- [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019 — Context Engineering in 2026 — Louis-François Bouchard, Omar Solano & Samridhi Vaid, Towards AI]]
+- [[1020-MkRYPFIMCSA-security-firewall-for-agents-ryan-dahl-deno|#1020 — Security Firewall for Agents — Ryan Dahl, Deno]]
+- [[1021-YgEv7IQzGdM-how-to-kill-the-code-review-ankit-jain-aviator|#1021 — How to Kill the Code Review — Ankit Jain, Aviator]]
+- [[1022--tviRdpmHvs-training-krea-2-what-matters-in-generative-model-training-sangwu-lee-krea-ai|#1022 — Training Krea 2: What matters in generative model training — Sangwu Lee, Krea.ai]]
+- [[1024-VBCDhRrvlYo-the-next-game-engine-won-t-have-a-manual-arturo-nunez-nereu|#1024 — The Next Game Engine Won't Have a Manual — Arturo Nunez, Nereu]]
+- [[1027-Xln-On3syJk-generative-video-at-the-speed-of-light-keegan-mccallum-urun|#1027 — Generative Video at the Speed of Light — Keegan McCallum, uRun]]
+- [[1028-byn9PURoBNY-infra-behind-krea-2-how-to-train-and-serve-at-scale-gabriel-jorge-menezes-krea-ai|#1028 — Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai]]
+- [[1029-5dCAmSDOAjI-the-next-medium-why-real-time-interactive-video-changes-everything-ahmed-ahres-reactor|#1029 — The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor]]
+- [[1030-u6q-byPWUuo-from-ambient-documentation-to-clinical-intelligence-chaitanya-asawa-abridge|#1030 — From Ambient Documentation to Clinical Intelligence — Chaitanya Asawa, Abridge]]
+- [[1031-YXEqC05WEI0-guardrails-first-engineering-member-facing-health-ai-rashi-agrawal-hinge-health|#1031 — Guardrails First: Engineering Member-Facing Health AI — Rashi Agrawal, Hinge Health]]
+- [[1032-McknwOzbmyg-shipping-ai-to-a-million-patients-without-an-a-b-test-jared-joselowitz-ufonia|#1032 — Shipping AI to a Million Patients Without an A/B Test — Jared Joselowitz, Ufonia]]
+- [[1033-yoONZwV2smc-ai-is-the-world-s-largest-relationship-therapist-clay-cockrell-tony-fabrikant-couplework-a|#1033 — AI is the World’s largest Relationship Therapist — Clay Cockrell & Tony Fabrikant, CoupleWork AI]]
+- [[1034-AN65uc645mE-200-million-patient-interactions-later-vivek-muppalla-hippocratic-ai|#1034 — 200 Million Patient Interactions Later — Vivek Muppalla, Hippocratic AI]]
+- [[1035-UyyOoJmuATU-healthcare-s-agent-bytecode-x12-as-the-harness-for-ai-agents-vasant-kearney-onlay|#1035 — Healthcare’s Agent Bytecode: X12 as the Harness for AI Agents — Vasant Kearney, Onlay]]
+- [[1036-Yphdry8ttAQ-trading-desks-to-clinical-trials-parallels-in-applied-vertical-ai-ayush-bhardwaj-allos-ai|#1036 — Trading Desks to Clinical Trials: Parallels in Applied Vertical AI — Ayush Bhardwaj, Allos AI]]
+- [[1038-XAsb7MIAzm8-don-t-be-data-poor-anuj-iravane-anterior|#1038 — Don’t be data poor — Anuj Iravane, Anterior]]
+- [[1039-mav15aW9lLM-why-your-enterprise-tech-stack-isn-t-ready-for-ai-agents-christopher-lovejoy-saul-howard|#1039 — Why Your Enterprise Tech Stack Isn’t Ready for AI Agents — Christopher Lovejoy & Saul Howard]]
+- [[1040-nxokqOq1imY-your-agent-evolved-your-evals-didn-t-ameya-bhatawdekar-braintrust|#1040 — Your Agent Evolved. Your Evals Didn't. — Ameya Bhatawdekar, Braintrust]]
+- [[1041-s-aixZYJG4c-the-last-human-code-review-building-trust-in-ai-generated-code-itamar-friedman-qodo|#1041 — The Last Human Code Review: Building Trust in AI-Generated Code — Itamar Friedman, Qodo]]
+- [[1042-bdHaOXZOhcM-prototyping-as-leadership-how-a-cto-ships-with-ai-agents-hursh-agrawal-the-browser-company|#1042 — Prototyping as Leadership: How a CTO Ships with AI Agents — Hursh Agrawal, The Browser Company]]
+- [[1045-FLUoowDJg4I-how-i-automate-my-own-job-at-hugging-face-using-agents-niels-rogge-hugging-face|#1045 — How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face]]
 
 ## Notes
 

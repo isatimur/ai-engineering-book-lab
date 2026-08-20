@@ -7,8 +7,8 @@ url: "https://www.youtube.com/watch?v=Ki980nV0__0"
 duration: ""
 duration_seconds: null
 view_count: null
-transcript_status: unavailable
-transcript_path: ""
+transcript_status: "auto_en_orig"
+transcript_path: "99_Meta/transcripts/plain/Ki980nV0__0.txt"
 themes:
   - "Agent Architecture"
   - "Models & Inference"

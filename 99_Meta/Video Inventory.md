@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1013
+Total videos: 1047
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1015,3 +1015,37 @@ Total videos: 1013
 1011. [Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop](https://www.youtube.com/watch?v=jHMiYtjoJfA) — `jHMiYtjoJfA` — 19:46
 1012. [Lessons from Studying Every Memory System — Shlok Khemani, Independent](https://www.youtube.com/watch?v=5ZGyKWjQDr0) — `5ZGyKWjQDr0` — 19:31
 1013. [Improving Agents is a Data Mining Problem — Vivek Trivedy, LangChain](https://www.youtube.com/watch?v=CvRngaQZQ3Y) — `CvRngaQZQ3Y` — 20:02
+1014. [Computer Use at the Edge of the Statistical Precipice — Pierluca D'Oro, Programma Labs](https://www.youtube.com/watch?v=CTLa_p6iOiY) — `CTLa_p6iOiY` — 17:28
+1015. [Bringing agents onto the world wide web — Paul Klein IV, Browserbase](https://www.youtube.com/watch?v=GqoNrUz8hEU) — `GqoNrUz8hEU` — 18:26
+1016. [The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans — Corey Gallon, Rexmore](https://www.youtube.com/watch?v=26RtyAm9y_Q) — `26RtyAm9y_Q` — 21:38
+1017. [The Rise of CaaS: Context-as-a-Service for Agentic AI — Omer Primor, Bright Data](https://www.youtube.com/watch?v=Ot4OPrPH4xY) — `Ot4OPrPH4xY` — 22:20
+1018. [How Web Data Infrastructure Powers the Next Generation of AI — Patricija Žemaitytė, Oxylabs](https://www.youtube.com/watch?v=1UmZHb_E_SM) — `1UmZHb_E_SM` — 19:03
+1019. [Context Engineering in 2026 — Louis-François Bouchard, Omar Solano & Samridhi Vaid, Towards AI](https://www.youtube.com/watch?v=WP3hjUXd918) — `WP3hjUXd918` — 1:03:26
+1020. [Security Firewall for Agents — Ryan Dahl, Deno](https://www.youtube.com/watch?v=MkRYPFIMCSA) — `MkRYPFIMCSA` — 19:06
+1021. [How to Kill the Code Review — Ankit Jain, Aviator](https://www.youtube.com/watch?v=YgEv7IQzGdM) — `YgEv7IQzGdM` — 16:26
+1022. [Training Krea 2: What matters in generative model training — Sangwu Lee, Krea.ai](https://www.youtube.com/watch?v=-tviRdpmHvs) — `-tviRdpmHvs` — 21:46
+1023. [Building an Agentic Video Editor for Mass Consumer — Ekaterina Deyneka, Reelful](https://www.youtube.com/watch?v=pPj_tjlvYjA) — `pPj_tjlvYjA` — 12:45
+1024. [The Next Game Engine Won't Have a Manual — Arturo Nunez, Nereu](https://www.youtube.com/watch?v=VBCDhRrvlYo) — `VBCDhRrvlYo` — 19:33
+1025. [While my guitar gently speaks — Todd Fisher, Philo Ventures](https://www.youtube.com/watch?v=E_Txocq-Lrw) — `E_Txocq-Lrw` — 18:35
+1026. [Voice agents with Realtime Video — Sidney Primas, LemonSlice](https://www.youtube.com/watch?v=z1dqv74SpUs) — `z1dqv74SpUs` — 26:36
+1027. [Generative Video at the Speed of Light — Keegan McCallum, uRun](https://www.youtube.com/watch?v=Xln-On3syJk) — `Xln-On3syJk` — 8:43
+1028. [Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai](https://www.youtube.com/watch?v=byn9PURoBNY) — `byn9PURoBNY` — 16:55
+1029. [The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor](https://www.youtube.com/watch?v=5dCAmSDOAjI) — `5dCAmSDOAjI` — 17:30
+1030. [From Ambient Documentation to Clinical Intelligence — Chaitanya Asawa, Abridge](https://www.youtube.com/watch?v=u6q-byPWUuo) — `u6q-byPWUuo` — 21:35
+1031. [Guardrails First: Engineering Member-Facing Health AI — Rashi Agrawal, Hinge Health](https://www.youtube.com/watch?v=YXEqC05WEI0) — `YXEqC05WEI0` — 21:49
+1032. [Shipping AI to a Million Patients Without an A/B Test — Jared Joselowitz, Ufonia](https://www.youtube.com/watch?v=McknwOzbmyg) — `McknwOzbmyg` — 19:15
+1033. [AI is the World’s largest Relationship Therapist — Clay Cockrell & Tony Fabrikant, CoupleWork AI](https://www.youtube.com/watch?v=yoONZwV2smc) — `yoONZwV2smc` — 16:43
+1034. [200 Million Patient Interactions Later — Vivek Muppalla, Hippocratic AI](https://www.youtube.com/watch?v=AN65uc645mE) — `AN65uc645mE` — 20:40
+1035. [Healthcare’s Agent Bytecode: X12 as the Harness for AI Agents — Vasant Kearney, Onlay](https://www.youtube.com/watch?v=UyyOoJmuATU) — `UyyOoJmuATU` — 20:25
+1036. [Trading Desks to Clinical Trials: Parallels in Applied Vertical AI — Ayush Bhardwaj, Allos AI](https://www.youtube.com/watch?v=Yphdry8ttAQ) — `Yphdry8ttAQ` — 20:02
+1037. [How to build an AI-Native Health Company — Dan Feng, Maven Clinic](https://www.youtube.com/watch?v=WJRdLNhrsLQ) — `WJRdLNhrsLQ` — 17:19
+1038. [Don’t be data poor — Anuj Iravane, Anterior](https://www.youtube.com/watch?v=XAsb7MIAzm8) — `XAsb7MIAzm8` — 16:46
+1039. [Why Your Enterprise Tech Stack Isn’t Ready for AI Agents — Christopher Lovejoy & Saul Howard](https://www.youtube.com/watch?v=mav15aW9lLM) — `mav15aW9lLM` — 19:15
+1040. [Your Agent Evolved. Your Evals Didn't. — Ameya Bhatawdekar, Braintrust](https://www.youtube.com/watch?v=nxokqOq1imY) — `nxokqOq1imY` — 24:13
+1041. [The Last Human Code Review: Building Trust in AI-Generated Code — Itamar Friedman, Qodo](https://www.youtube.com/watch?v=s-aixZYJG4c) — `s-aixZYJG4c` — 18:54
+1042. [Prototyping as Leadership: How a CTO Ships with AI Agents — Hursh Agrawal, The Browser Company](https://www.youtube.com/watch?v=bdHaOXZOhcM) — `bdHaOXZOhcM` — 18:18
+1043. [IT Admin for the AI Workforce — Sarthak Aggarwal, Decawork](https://www.youtube.com/watch?v=q-WOjZhOMCA) — `q-WOjZhOMCA` — 16:17
+1044. [The Era of Compound Engineering — Kieran Klaassen, Every/Cora](https://www.youtube.com/watch?v=_ehJyfHg1Vk) — `_ehJyfHg1Vk` — 20:38
+1045. [How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face](https://www.youtube.com/watch?v=FLUoowDJg4I) — `FLUoowDJg4I` — 20:37
+1046. [Your Fine-Tuned Model Is Tech Debt: A 50x ROI House of Cards — Dan Bjornn, Lease End](https://www.youtube.com/watch?v=4loPnxvWWhg) — `4loPnxvWWhg` — 16:39
+1047. [Unlock Agent Autonomy: The Runtime for AI-Native Systems — Tushar Jain, Docker](https://www.youtube.com/watch?v=zaGyGgLW3SM) — `zaGyGgLW3SM` — 22:50

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 126
+- Total tagged videos: 133
 
 ## Cross-video synthesis
 
-- This theme appears across 126 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (66), Agent Architecture (61), Org Design & Leadership (12).
+- This theme appears across 133 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (73), Agent Architecture (66), Org Design & Leadership (12).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -138,6 +138,13 @@
 - [[1006-WiqDvX6isc4-scaling-compute-on-context-jack-morris-engram|#1006 — Scaling Compute on Context — Jack Morris, Engram]]
 - [[1009-I3bpdgFJCUY-llm-knowledge-bases-a-practical-guide-ben-holmes-warp|#1009 — LLM Knowledge Bases: a practical guide — Ben Holmes, Warp]]
 - [[1012-5ZGyKWjQDr0-lessons-from-studying-every-memory-system-shlok-khemani-independent|#1012 — Lessons from Studying Every Memory System — Shlok Khemani, Independent]]
+- [[1023-pPj_tjlvYjA-building-an-agentic-video-editor-for-mass-consumer-ekaterina-deyneka-reelful|#1023 — Building an Agentic Video Editor for Mass Consumer — Ekaterina Deyneka, Reelful]]
+- [[1025-E_Txocq-Lrw-while-my-guitar-gently-speaks-todd-fisher-philo-ventures|#1025 — While my guitar gently speaks — Todd Fisher, Philo Ventures]]
+- [[1026-z1dqv74SpUs-voice-agents-with-realtime-video-sidney-primas-lemonslice|#1026 — Voice agents with Realtime Video — Sidney Primas, LemonSlice]]
+- [[1028-byn9PURoBNY-infra-behind-krea-2-how-to-train-and-serve-at-scale-gabriel-jorge-menezes-krea-ai|#1028 — Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai]]
+- [[1043-q-WOjZhOMCA-it-admin-for-the-ai-workforce-sarthak-aggarwal-decawork|#1043 — IT Admin for the AI Workforce — Sarthak Aggarwal, Decawork]]
+- [[1044-_ehJyfHg1Vk-the-era-of-compound-engineering-kieran-klaassen-every-cora|#1044 — The Era of Compound Engineering — Kieran Klaassen, Every/Cora]]
+- [[1047-zaGyGgLW3SM-unlock-agent-autonomy-the-runtime-for-ai-native-systems-tushar-jain-docker|#1047 — Unlock Agent Autonomy: The Runtime for AI-Native Systems — Tushar Jain, Docker]]
 
 ## Notes
 

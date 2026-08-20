@@ -7,7 +7,7 @@ url: "https://www.youtube.com/watch?v=ySYLsoAhXmg"
 duration: "21:47"
 duration_seconds: 1307
 view_count: 43299
-transcript_status: "unavailable"
+transcript_status: "whisper_base_en"
 transcript_path: ""
 themes:
   - "Models & Inference"

@@ -7,8 +7,8 @@ url: "https://www.youtube.com/watch?v=Cc0_nyxROBA"
 duration: ""
 duration_seconds: null
 view_count: null
-transcript_status: unavailable
-transcript_path: ""
+transcript_status: "auto_en_orig"
+transcript_path: "99_Meta/transcripts/plain/Cc0_nyxROBA.txt"
 themes:
   - "Models & Inference"
 ingested_at: 2026-08-14T11:36:15+00:00

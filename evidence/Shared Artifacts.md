@@ -6,10 +6,10 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 252 videos referenced at least one artifact; corpus size 1013.
+> Coverage: 281 videos referenced at least one artifact; corpus size 1047.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
-## GitHub repositories (52)
+## GitHub repositories (56)
 
 - <https://github.com/humanlayer/12-factor-agents> — [[274-8kMaTybvDUw-12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer|#274]], [[923-Ib5GBkD555M-harness-engineering-is-not-enough-why-software-factories-fail-dex-horthy-humanlayer|#923]]
 - <https://github.com/sambanova/ai-starter-kit> — [[491-z_Xh2MzqKDM-full-workshop-llama-3-at-1-000-tok-s-on-the-sambanova-ai-platform|#491]], [[556-ksgLoPxEQzM-build-enterprise-generative-ai-apps-using-llama-3-at-1-000-tokens-s-on-the-sambanova-ai-pl|#556]]
@@ -29,6 +29,8 @@ each entry links back to its source video note(s). Sister file:
 - <https://github.com/anakin87/llm-rl-environments-lil-course> — [[033-71V3fTaUp2Q-let-llms-wander-engineering-rl-environments-stefano-fiorucci|#33]]
 - <https://github.com/bholmesdev/fixgpt> — [[396-y6L5RkEqQ8g-chatgpt-is-poorly-designed-so-i-fixed-it|#396]]
 - <https://github.com/brookr/serverless-agents> — [[377-UcW_s4BmuD0-the-demo-i-wish-i-d-had-openai-s-agents-sdk-serverless-brook-riggio|#377]]
+- <https://github.com/browserbase/stagehand> — [[1015-GqoNrUz8hEU-bringing-agents-onto-the-world-wide-web-paul-klein-iv-browserbase|#1015]]
+- <https://github.com/captivus/chrome-agent> — [[1016-26RtyAm9y_Q-the-dark-arts-of-web-automation-teaching-agents-to-use-websites-like-humans-corey-gallon-r|#1016]]
 - <https://github.com/character-ai/judgejudy> — [[934-b_PmGocP4rc-evaling-video-slop-maor-bril-character-ai|#934]]
 - <https://github.com/chatchat-space/Langchain-Chatchat> — [[109-m6MF1OR_9kM-z-ai-glm-4-6-what-we-learned-from-100-million-open-source-downloads-yuxuan-zhang-z-ai|#109]]
 - <https://github.com/cloudflare/workerd> — [[984-RmS5s6Wbin4-gadgets-personal-app-vibe-coding-that-is-actually-safe-kenton-varda-cloudflare|#984]]
@@ -45,6 +47,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://github.com/iusztinpaul/ai-research-os-workshop> — [[775-ZRM_TfEZcIo-turn-10-994-notes-into-memory-paul-iusztin-decoding-ai-louis-fran-ois-bouchard-towards-ai|#775]]
 - <https://github.com/jethomasphd/THE_COMPANION_DOSSIER> — [[769-IJXjTLPzvAU-the-miranda-hypothesis-how-hamilton-poisoned-persona-evals-jacob-e-thomas-results-gen|#769]]
 - <https://github.com/johnymontana/hyper-news> — [[369-tYCu_57jzL8-the-knowledge-graph-mullet-trimming-graphrag-complexity-william-lyon|#369]]
+- <https://github.com/krea-ai/krea-2> — [[1022--tviRdpmHvs-training-krea-2-what-matters-in-generative-model-training-sangwu-lee-krea-ai|#1022]]
 - <https://github.com/lastmile-ai/mcp-agent> — [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349]]
 - <https://github.com/lensesio/lenses-mcp> — [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32]]
 - <https://github.com/letta-ai/tutorials> — [[412-E0k9Ppq6yXY-stateful-agents-full-workshop-with-charles-packer-of-letta-and-memgpt|#412]]
@@ -58,13 +61,14 @@ each entry links back to its source video note(s). Sister file:
 - <https://github.com/rawwerks/recursive-coding-agents> — [[771-3hXJI2q0Jz8-recursive-coding-agents-raymond-weitekamp-openprose|#771]]
 - <https://github.com/shippy/personal-intelligence-kit> — [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29]]
 - <https://github.com/steveyegge/beads> — [[902-yWS0udrIOc8-agentic-security-permissions-provenance-and-the-agent-supply-chain-steve-yegge-gas-town|#902]]
+- <https://github.com/towardsai/ai-tutor-app> — [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019]]
 - <https://github.com/traceloop/openllmetry> — [[448-KVgbERRPU4M-openllmetry-is-all-you-need|#448]]
 - <https://github.com/weka/LMCache> — [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104]]
 - <https://github.com/wirjo/pipecat-turn-detection-demo> — [[886-hMlLw1LeIK8-voice-agents-that-handle-interrupts-chintan-agrawal-and-daniel-wirjo-aws|#886]]
 - <https://github.com/witanlabs/research-log> — [[824-HEFSExa0xl0-teaching-coding-agents-to-do-spreadsheets-nuno-campos-witan-labs|#824]]
 - <https://github.com/yoheinakajima/activegraph> — [[912-khVX_BUnEwU-active-graph-agent-runtime-babyagi-4-yohei-nakajima-untapped-capital|#912]]
 
-## Papers (6)
+## Papers (7)
 
 - [CogAgent: A Visual Language Model for GUI Agents](https://arxiv.org/abs/2312.08914) — [[109-m6MF1OR_9kM-z-ai-glm-4-6-what-we-learned-from-100-million-open-source-downloads-yuxuan-zhang-z-ai|#109]]
 - [CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer](https://arxiv.org/abs/2408.06072) — [[109-m6MF1OR_9kM-z-ai-glm-4-6-what-we-learned-from-100-million-open-source-downloads-yuxuan-zhang-z-ai|#109]]
@@ -72,6 +76,7 @@ each entry links back to its source video note(s). Sister file:
 - [GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable RL](https://arxiv.org/abs/2507.01006) — [[109-m6MF1OR_9kM-z-ai-glm-4-6-what-we-learned-from-100-million-open-source-downloads-yuxuan-zhang-z-ai|#109]]
 - [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457) — [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23]]
 - [GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models](https://arxiv.org/abs/2508.06471) — [[109-m6MF1OR_9kM-z-ai-glm-4-6-what-we-learned-from-100-million-open-source-downloads-yuxuan-zhang-z-ai|#109]]
+- [2605.08261](https://arxiv.org/abs/2605.08261) — [[1014-CTLa_p6iOiY-computer-use-at-the-edge-of-the-statistical-precipice-pierluca-d-oro-programma-labs|#1014]]
 
 > See also arXiv:2606.05608 (Cao, *Agentic Software*) in [[External References]].
 
@@ -83,13 +88,14 @@ each entry links back to its source video note(s). Sister file:
 - <https://huggingface.co/datasets/Halluminate/WebBench> — [[384-Djv8Sp11UjI-the-current-state-of-browser-agents-jerry-wu-and-wyatt-marshall|#384]]
 - <https://huggingface.co/gradientai/v-alpha-tross> — [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473]]
 
-## Deep-link resources (127)
+## Deep-link resources (135)
 
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
 
 - <https://pydantic.dev> — [[099-flf_IKnFYnE-from-stateless-nightmares-to-durable-agents-samuel-colvin-pydantic|#99]], [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184]], [[241-bmWZk9vTze0-mcp-is-all-you-need-samuel-colvin-pydantic|#241]]
 - <https://enoreyes.com> — [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57]], [[951-wpOA-UXynoM-how-forward-deployed-engineering-is-done-at-factory-eno-reyes|#951]]
+- <https://gallon.me> — [[106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore|#106]], [[1016-26RtyAm9y_Q-the-dark-arts-of-web-automation-teaching-agents-to-use-websites-like-humans-corey-gallon-r|#1016]]
 - <https://goingmeta.live> — [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215]], [[321-CbiR9xS2skQ-why-your-agent-s-brain-needs-a-playbook-practical-wins-from-using-ontologies-jes-s-barrasa|#321]]
 - <https://il.linkedin.com/in/rafael-levi> — [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748]], [[766-btxGmN8RvNU-your-agent-s-biggest-lie-i-searched-the-web-rafael-levi-bright-data|#766]]
 - <https://neo4j.com> — [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105]], [[224-AvVoJBxgSQk-agentic-graphrag-ai-s-logical-edge-stephen-chin-neo4j|#224]]
@@ -97,6 +103,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://stefania11.github.io> — [[417-ySYLsoAhXmg-ai-engineers-the-next-generation-stefania-druga-google-gemini|#417]], [[1005-R3-anFK1YM8-memory-harnesses-for-long-running-research-agents-stefania-druga-sakana-ai|#1005]]
 - <https://vinoo.io> — [[945-1OMHGsUZiqA-how-forward-deployed-engineering-is-done-at-kepler-vinoo-ganesh|#945]], [[958-Tt2kX2sgQio-how-kepler-built-verifiable-ai-for-financial-services-vinoo-ganesh|#958]]
 - <https://willcb.com> — [[851-V-EDrhIhHzQ-modern-post-training-a-deep-dive-will-brown-prime-intellect|#851]], [[967-AQv3qRCG6Gw-reinforcement-learning-without-verifiable-rewards-will-brown-prime-intellect|#967]]
+- <https://www.anterior.com> — [[159-MRM7oA3JsFs-make-your-llm-app-a-domain-expert-how-to-build-an-expert-system-christopher-lovejoy-anteri|#159]], [[1038-XAsb7MIAzm8-don-t-be-data-poor-anuj-iravane-anterior|#1038]]
 - <https://www.anthropic.com/institute/recursive-self-improvement> — [[830-ZpK5PWX2YRM-should-ai-engineers-still-read-code-in-2026-the-z-l-continuum-alex-volkov-thursdai|#830]], [[855-c35YoMdnI78-the-great-loops-debate-dex-horthy-geoff-huntley-ian-livingstone-greg-pstrucha-insecure-age|#855]]
 - <https://www.frank-coyle.ai> — [[916-Sir59K8ZDPU-why-agentic-systems-need-ontologies-frank-coyle-uc-berkeley|#916]], [[990-Z-c11pV_uvU-anthropic-s-cca-exam-as-a-field-guide-for-agentic-engineering-frank-coyle-uc-berkeley|#990]]
 - <https://AhmadAwais.com/about> — [[098-kWOQS3XPZ10-developing-taste-in-coding-agents-applied-meta-neuro-symbolic-rl-ahmad-awais-commandcode|#98]]
@@ -117,6 +124,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://at.linkedin.com/in/priscila-andre-de-oliveira-ab34bb24b> — [[719-li0SaBt9RDM-the-ai-skill-i-rely-on-daily-priscila-andre-de-oliveira-sentry|#719]]
 - <https://azure.github.io/PyRIT> — [[348-n6wHJDqlS1I-how-to-build-trustworthy-ai-allie-howe|#348]]
 - <https://blog.apify.com/author/jancurn> — [[240-blW-lSd5CYQ-the-rise-of-the-agentic-economy-on-the-shoulders-of-mcp-jan-curn-apify|#240]]
+- <https://brightdata.com/ai/context> — [[1017-Ot4OPrPH4xY-the-rise-of-caas-context-as-a-service-for-agentic-ai-omer-primor-bright-data|#1017]]
 - <https://bsky.app/profile/kgrayson.com> — [[879-L3RuP_q8Bwc-the-ux-of-ai-making-ai-powered-apps-your-users-don-t-hate-kathryn-grayson-nanz-progress-so|#879]]
 - <https://ca.linkedin.com/in/kubarogut> — [[739-zKk7sDMGDEQ-benchmarking-semantic-code-retrieval-on-claude-code-kuba-rogut-turbopuffer|#739]]
 - <https://chrislovejoy.me/mission-critical-evals> — [[446-cZ5ZJy19KMo-mission-critical-evals-at-scale-learnings-from-100k-medical-decisions|#446]]
@@ -164,15 +172,18 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://nicknisi.com/about> — [[654-pFsfax19yOM-skills-at-scale-nick-nisi-and-zack-proser-workos|#654]]
 - <https://nl.linkedin.com/company/the-pragmatic-engineer> — [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5]]
 - <https://openai.com/index/harness-engineering> — [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16]]
+- <https://oxylabs.io/press-area/from-web-to-artificial-intelligence> — [[1018-1UmZHb_E_SM-how-web-data-infrastructure-powers-the-next-generation-of-ai-patricija-emaityt-oxylabs|#1018]]
 - <https://pl.linkedin.com/in/prince-canuma> — [[670-zTLJNHj0DeQ-why-mlx-prince-canuma-neywa-labs|#670]]
 - <https://platform.claude.com/docs/en/agent-sdk/overview> — [[045-TqC1qOfiVcQ-claude-agent-sdk-full-workshop-thariq-shihipar-anthropic|#45]]
 - <https://prezi.com/view/TSBwBXLNcXzzWrLbRiit> — [[034-U00AOI1eJUE-bending-a-public-mcp-server-without-breaking-it-nimrod-hauser-baz|#34]]
 - <https://quantyca-my.sharepoint.com/:b:/g/personal/mauro_luchetti_quantyca_it/IQBUCcMBzsAfSZtJXrCdaqV0AaUyDhifxP360fqCUupyaGc> — [[021-VXfRt_H-V08-one-registry-to-rule-them-all-sonny-merla-mauro-luchetti-mattia-redaelli-quantyca|#21]]
+- <https://re-n-y.github.io/devlog> — [[1022--tviRdpmHvs-training-krea-2-what-matters-in-generative-model-training-sangwu-lee-krea-ai|#1022]]
 - <https://resolve.ai/events/behind-the-build/agents-for-engineering-workflows> — [[993-vSx5IULvBns-always-on-agents-run-production-without-the-on-call-tax-justin-smith-resolve-ai|#993]]
 - <https://rootsignals.ai/agentevals> — [[445-y2Drx0SDZLo-agent-evals-finally-with-the-map|#445]]
 - <https://sander.ai/2025/04/15/latents.html> — [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4]]
 - <https://scholar.google.com/citations> — [[900-XjI-AR4pt7Y-your-llm-stack-is-a-2008-database-with-better-marketing-lovina-dmello-nvidia|#900]]
 - <https://se.linkedin.com/in/benjamin-verbeek> — [[735-KA5kPbdkK2E-the-agent-that-files-its-own-bug-reports-benjamin-verbeek-lovable|#735]]
+- <https://sessionize.com/rashiagrawal> — [[1031-YXEqC05WEI0-guardrails-first-engineering-member-facing-health-ai-rashi-agrawal-hinge-health|#1031]]
 - <https://sirupsen.com/napkin> — [[983-jQDXzEVHMSE-building-turbopuffer-gergely-orosz-pragmaticengineer-simon-eskildsen-ceo|#983]]
 - <https://slides.podhajsky.net/read-only-ai> — [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29]]
 - <https://snyk.io/contributors/ezra-tanzer> — [[901-cgimkNGNjvU-agentic-development-security-ezra-tanzer-snyk|#901]]
@@ -196,6 +207,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://www.dropbox.com/scl/fi/lyp1my0oc9whpusps29t7/Agent-Simulations-Talk.pdf> — [[935-Ib5t2RLtxvM-from-agent-traces-to-agent-simulations-rustem-feyzkhanov-snorkel-ai|#935]]
 - <https://www.gettheleverage.com/p/why-is-ai-marketing-so-so-bad> — [[396-y6L5RkEqQ8g-chatgpt-is-poorly-designed-so-i-fixed-it|#396]]
 - <https://www.klarity.ai> — [[465-7MiFIhlkBoE-patrick-dougherty-how-to-build-ai-agents-that-actually-work|#465]]
+- <https://www.latent.space/p/reviews-dead> — [[1021-YgEv7IQzGdM-how-to-kill-the-code-review-ankit-jain-aviator|#1021]]
 - <https://www.nvidia.com/en-us> — [[141-Y2qc0UhDSnc-hacking-the-inference-pareto-frontier-kyle-kranen-nvidia|#141]]
 - <https://www.openhands.dev/blog> — [[180-o_hhkJtlbSs-software-development-agents-what-works-and-what-doesn-t-robert-brennan-openhands|#180]]
 - <https://www.oreilly.com/library/view/graphrag-the-definitive/9798341630147> — [[911-Q0VkgCyNVUg-crabrag-why-automated-assistants-need-graph-memory-not-more-tokens-stephen-chin-neo4j|#911]]
@@ -205,6 +217,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://www.prompthub.us/blog/prompt-engineering-with-reasoning-models> — [[452-Hp4MzVTXcKw-the-model-isn-t-wrong-you-re-just-bad-at-prompting|#452]]
 - <https://www.prompthub.us/blog/the-few-shot-prompting-guide> — [[452-Hp4MzVTXcKw-the-model-isn-t-wrong-you-re-just-bad-at-prompting|#452]]
 - <https://www.prompthub.us/features/enhancers> — [[452-Hp4MzVTXcKw-the-model-isn-t-wrong-you-re-just-bad-at-prompting|#452]]
+- <https://www.qodo.ai/authors/itamar-f> — [[1041-s-aixZYJG4c-the-last-human-code-review-building-trust-in-ai-generated-code-itamar-friedman-qodo|#1041]]
 - <https://www.redhat.com/en/products/ai> — [[170-89NuzmKokIk-strategies-for-llm-evals-guidellm-lm-eval-harness-openai-evals-workshop-taylor-jordan-smit|#170]]
 - <https://www.rtrvr.ai/blog/introducing-rtrvr-ai> — [[444-kjSGc7uwDo8-beyond-apis-how-ai-web-agents-are-automating-the-long-tail-of-knowledge-work|#444]]
 - <https://www.sonarsource.com/the-coding-personalities-of-leading-llms/leaderboard> — [[995-03l29gJXpCE-guide-verify-solve-anirban-chatterjee-sonar|#995]]

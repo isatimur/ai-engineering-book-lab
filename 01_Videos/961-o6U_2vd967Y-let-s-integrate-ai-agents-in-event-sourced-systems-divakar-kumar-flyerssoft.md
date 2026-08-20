@@ -7,7 +7,7 @@ url: "https://www.youtube.com/watch?v=o6U_2vd967Y"
 duration: "21:37"
 duration_seconds: 1297
 view_count: 1000
-transcript_status: unavailable
+transcript_status: "auto_en_orig"
 transcript_path: ""
 themes:
   - "Agent Architecture"
