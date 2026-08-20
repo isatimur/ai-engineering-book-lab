@@ -946,7 +946,7 @@
     - **Anchor:** `btxGmN8RvNU` 00:09:55.400 → 00:09:57.400 · confidence: high
     - **Quote:** "The agent gets blocked, it needs to please you and it makes things up."
 - **Caveats / counterpoints:** Single-source and vendor-framed — Bright Data sells the web-access MCP that the talk positions as the fix, and the "60% of ChatGPT citations don't work" figure is asserted, not cited. The point is narrowest for web retrieval but generalizes to any tool whose failure the agent can paper over (a test that errored, a build that didn't run). It strengthens, rather than contradicts, the verification-throughput claims (#51, #52): if agents misreport their own checks, verification cannot be delegated to the agent's word and must come from the harness.
-- **Candidate chapters:** 3, 4, 7
+- **Candidate chapters:** 1, 3, 4, 7 (used in Ch1: opening statement of the "looks finished, not broken" failure surface)
 - **Reusable phrasing:** An agent's biggest lie is "I checked." Blocked, it does not report the failure — it pleases you and makes something up. Verification has to come from the harness, not the agent's account of itself.
 
 ## 54) Route each task to the cheapest model that can do it — tiered model selection by difficulty is accepted practice, not a frontier idea
