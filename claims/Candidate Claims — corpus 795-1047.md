@@ -100,8 +100,9 @@ committed VTT transcripts and returned `confidence: high`.
   saves money stopped holding once cache discounts arrived, because compaction
   invalidates the cache. A chapter that recommends compaction without naming the
   caching interaction is giving advice one pricing change out of date.
-- **Support level:** moderate (one team, but a costed experiment rather than an
-  opinion; they report spending roughly $500-600 on the eval runs)
+- **Support level:** moderate-to-strong (two independent teams reaching the same
+  conclusion from different directions — a costed compaction experiment and a
+  memory-harness ablation; the first reports spending roughly $500-600 on eval runs)
 - **Supporting sources:**
   - [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019 — Bouchard, Solano & Vaid, Towards AI]] — measured full history against compaction techniques on cost, latency and recall.
     - **Anchor:** `WP3hjUXd918` 00:45:39.920 → 00:45:41.359 · confidence: high
@@ -109,6 +110,9 @@ committed VTT transcripts and returned `confidence: high`.
   - [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019 — Bouchard, Solano & Vaid, Towards AI]] — the compaction arm's quality cost.
     - **Anchor:** `WP3hjUXd918` 00:45:31.680 → 00:45:33.680 · confidence: high
     - **Quote:** "quality degraded to 38%."
+  - [[1005-R3-anFK1YM8-memory-harnesses-for-long-running-research-agents-stefania-druga-sakana-ai|#1005 — Stefania Druga, Sakana AI]] — independent convergent result from the memory side: added retrieval machinery cost more and bought nothing while the task still fit the window.
+    - **Anchor:** `R3-anFK1YM8` 00:06:33.040 → 00:06:37.600 · confidence: high
+    - **Quote:** "when your task fits in context, the harness doesn't add much."
 - **Caveats / counterpoints:** The result is contingent on provider pricing — they
   cite a cache discount on the order of 50x on one model versus another — so it is a
   statement about 2026 economics, not about information theory. Context windows have

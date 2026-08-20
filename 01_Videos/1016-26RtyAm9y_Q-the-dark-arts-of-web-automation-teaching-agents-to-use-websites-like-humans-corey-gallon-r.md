@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:27:59+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Corey Gallon shares a practical take on The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Corey Gallon shows CDP-driven browser agents beat bot detection (Turnstile, MTCaptcha, reCAPTCHA v2) via a CLI-not-MCP stack and a three-rung escalation from synthetic clicks to human-like input."
 ---
 
 # The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans — Corey Gallon, Rexmore
 
 ## Summary
-Corey Gallon shares a practical take on The Dark Arts of Web Automation: Teaching Agents to Use Websites Like Humans. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Corey Gallon (Rexmore) argues that a browser agent driven through the Chrome DevTools Protocol (CDP) is functionally indistinguishable from a human using a mouse, since Chrome stamps every input event "trusted" or "untrusted" based on its path rather than its source, and CDP-issued clicks land in the trusted bucket. His stack drives CDP from a CLI rather than an MCP server, using his own tool, Chrome Agent; he cites a study by Arise AI where CLI and MCP solved the same task at a similar ~83% success rate, but the CLI needed 7 turns and under a minute versus MCP's 71 round trips and 8 minutes, and notes Anthropic's reported figure that CLI-based tool calls can be up to 75x cheaper in tokens than MCP calls. He frames the interaction pattern as sense-act-verify, escalating only as needed up a three-rung "meatbag ladder": synthetic JavaScript clicks (free, but silently dropped by sites that check the trusted flag, demonstrated against a mock storefront's add-to-cart button), real CDP input-domain clicks (trusted, which defeats that check), and full human-like mouse and vision behavior for the hardest targets. He demonstrates that top rung defeating Cloudflare Turnstile (a blind trusted click computed from iframe/shadow-root screen coordinates), MTCaptcha (vision-read text typed back via trusted keystrokes), a drag-based jigsaw CAPTCHA (an eased, deliberately overshooting mouse path), and reCAPTCHA v2 via a split architecture — deterministic code drives the clicks and screenshots each round while a vision-and-reasoning agent only classifies the image tiles — fast enough to beat the challenge's per-round expiry clock.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives concrete, cited numbers for the CLI-vs-MCP tool-calling tradeoff (turns, wall-clock time, token cost) — direct evidence for agent-harness design decisions discussed elsewhere in this corpus.
+- Documents specific adversarial bot-detection mechanics (Chrome's trusted/untrusted event stamping, shadow-root and cross-origin iframe isolation, mouse-path sampling) and working countermeasures — rare ground-level detail on the agents-vs-anti-bot arms race.
+- The reCAPTCHA v2 split architecture (deterministic driver plus a narrow, vision-only model call per round) is a reusable pattern for keeping an agentic loop fast enough to meet a hard real-time constraint.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=26RtyAm9y_Q

@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:36+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ben Hylak shares a practical take on Designing Agents (The Floor Is the Frontier). Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Ben Hylak (Raindrop) distinguishes ceiling from floor in agent evals and gives tactical lessons: clusters aren't issues, code-mode trace classifiers scale, agents can't self-detect anomalies."
 ---
 
 # Designing Agents (The Floor Is the Frontier) — Ben Hylak, Raindrop
 
 ## Summary
-Ben Hylak shares a practical take on Designing Agents (The Floor Is the Frontier). Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Ben Hylak, CTO/co-founder of Raindrop (which detects production issues in agents, verifies fixes, and simulates changes before deploy — used by Vercel, Speak, Framer), argues most eval discourse is stuck in the "chatbot era" of string-match tests that break the moment you swap models or harnesses. He splits the space into "benchmark maxers" (labs building general capability) versus "floor raisers" (companies imbuing domain-specific knowledge), and reframes agent quality as ceiling (best-case emergent capability) versus floor (worst-case failure, e.g., deleting data or emailing a competitor's recommendation) — arguing floor failures are what break user trust. His concrete advice: write evals as code/tests (citing Sentry's Vitest-evals and OpenAI's "macro evals") rather than managed prompt playgrounds; for floor-raising, track when an issue started and what percent of users it affects, not just that it exists. He gives three field lessons from Raindrop's own tooling: trace clusters are not issues (they don't track cleanly over time or generalize across companies), "code mode" — writing and sandboxing classifiers over traces — scales better than manual analysis, and agents are bad at anomaly detection so should be asked to investigate anomalies already surfaced by deterministic signals (e.g., keyword-frequency spikes) rather than to find them.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

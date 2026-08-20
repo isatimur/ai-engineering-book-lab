@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:27+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Free Continual Learning — Sara Hooker shares a practical take on Adaption Labs: Gradient."
+summary: "Adaption Labs' Sara Hooker argues pretraining scale has plateaued, citing sub-13B models beating larger ones, and details Auto Scientist, her beta system automating model training end-to-end."
 ---
 
 # Adaption Labs: Gradient-Free Continual Learning — Sara Hooker, Adaption
 
 ## Summary
-Free Continual Learning — Sara Hooker shares a practical take on Adaption Labs: Gradient.
+Sara Hooker (Adaption Labs, previously DeepMind and other frontier labs) argues that access to frontier AI research has narrowed into an "unreasonably narrow path" — the right PhD program, the right lab — compounded by compute costs that only a handful of labs can absorb. She cites her own "death of scaling" argument: pretraining size is empirically no longer the most lucrative scaling axis, pointing to the Open LLM leaderboard where the best sub-13B model has increasingly closed the gap on much larger ones, with returns shifting toward post-training and inference compute that doesn't require co-located GPU hoarding. Adaption Labs' response, released in beta a few weeks before the talk, is "Auto Scientist," a system that automates model training end-to-end — co-optimizing data curation together with alignment and self-evolving across architectures (dense and mixture-of-experts) and model sizes — which she says outperforms human research staff, and which kept improving once an artificial 60%-win-rate stopping threshold used during testing was removed. She frames the product as covering 242 languages from day one and prioritizing non-verifiable, everyday tasks, with early beta demand concentrated in medical, legal, and code domains. In Q&A she estimates fewer than 5,000 people worldwide know how to train frontier models, and argues that automating that tacit knowledge — rather than requiring "10,000 GPUs" — shifts the advantage toward whoever has the best idea rather than the most compute.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- The "death of scaling" claim, backed by the sub-13B-vs-larger-model leaderboard comparison, is a concrete data point for debates about whether pretraining scale still drives frontier model performance.
+- Auto Scientist is a specific case study of automated, co-optimized data-and-model training that reportedly beats human researchers across architectures — evidence for "self-improving model development" as a real, shipping capability rather than a research idea.
+- The claim that fewer than 5,000 people can train frontier models, paired with the framing of inference/post-training compute as more distributed, is a documented industry argument about who gets to participate in building frontier AI.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=XEd_SRVHBgU

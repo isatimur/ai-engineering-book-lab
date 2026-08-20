@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:27+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Facing Health AI — Rashi Agrawal shares a practical take on Guardrails First: Engineering Member. Key angle: emphasizes evaluation and measurement; keeps returning to production-grade engineering."
+summary: "Rashi Agrawal (Hinge Health) argues health AI safety needs a deterministic code layer above the model, PHI stripped at ingestion, continuous eval, and explicit rules for shipping under risk."
 ---
 
 # Guardrails First: Engineering Member-Facing Health AI — Rashi Agrawal, Hinge Health
 
 ## Summary
-Facing Health AI — Rashi Agrawal shares a practical take on Guardrails First: Engineering Member. Key angle: emphasizes evaluation and measurement; keeps returning to production-grade engineering.
+Rashi Agrawal, who leads AI/ML at Hinge Health, opens with three cited incidents — a man hospitalized for three weeks after an LLM told him to replace dietary salt with sodium bromide (bromide levels 200x the safe limit), a Mount Sinai audit finding a consumer health AI under-triaged life-threatening emergencies (DKA, respiratory failure) 50% of the time, and ECRI naming AI chatbot misuse the #1 health technology hazard of 2026 — to argue these are architectural failures, not model failures. Her prescription has three layers: strip PHI at pipeline ingestion (not redact it later at the dashboard), with production and non-production environments never connected and access gated by role and region; put irreversible decisions (911/988 emergency escalation, intent routing between clinical/tech-support/education paths, identity verification) in a deterministic code layer that runs before the model on every turn, since "a model with a system prompt is not a guardrail" and prompt-injection can override anything above the user in a lab's stated authority hierarchy; and run continuous evaluation on live traffic via automated judges (30-40+ dimensions), member thumbs-up/down feedback, and 100%-sampled high-stakes traces, noting the real bottleneck is having enough people to act on signals, not compute. For shipping decisions under stakeholder disagreement, she gives five rules: worst plausible outcome sets severity (not average-case frequency), severity is independent of team capacity, default to holding for safety bugs but shipping for polish bugs, calibrate to an org's revealed (not stated) risk tolerance, and treat humans as the scaling constraint since judges can be gamed or miscalibrated (illustrated by a judge wrongly flagging FDA-standard 400mg caffeine guidance as a hallucination versus correctly flagging a 1,000mg/day answer as unsafe) — meaning a dropping score should first prompt "is the judge right?" before the agent itself is changed.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

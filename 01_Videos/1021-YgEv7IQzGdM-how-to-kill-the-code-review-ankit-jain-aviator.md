@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:09+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ankit Jain shares a practical take on How to Kill the Code Review. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Aviator's Ankit Jain argues code review's real job is alignment, not diff-reading, proposing intent capture from agent sessions and an AI slop registry of recurring feedback as its replacement."
 ---
 
 # How to Kill the Code Review — Ankit Jain, Aviator
 
 ## Summary
-Ankit Jain shares a practical take on How to Kill the Code Review. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Ankit Jain (co-founder, Aviator) revisits code review after a five-layer trust model he had previously posted about, arguing the layer he originally missed was alignment: review isn't just bug-catching, it's knowledge sharing, mentorship, and architectural discussion, and that function has to survive even as line-by-line diff review disappears. He cites 861% code churn, a rising incidents-to-PR ratio, review wait times running roughly 4x longer, and more than 30% of changes now merging without any review, and criticizes today's AI-review setups where one AI agent writes the code, another reviews it in a GitHub UI, and a human just skims and merges. He rejects pure spec-driven development as a repeat of 1970s waterfall — no feedback loop, and LLM non-determinism means code won't follow a spec deterministically — arguing instead that real intent lives in the back-and-forth prompts with a coding agent, decisions that get thrown away once a PR is opened, and should instead be captured as acceptance criteria. Paired with an "AI slop registry" of codified, recurring human review comments (so the same issue never has to be flagged twice), those criteria generate a test plan that a verification system runs against a live preview — including an agent browsing the app, filling forms, and capturing screenshots as evidence — shifting the reviewer's job from reading diffs to checking intent, architecture, and verification evidence. Aviator is piloting a product called Verify built on this alignment-plus-verification model, and Jain recommends teams mine their last 1,000 review comments to seed their own AI slop registry.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Names concrete, quantified pain points (861% code churn, more than 30% of changes merged unreviewed, roughly 4x longer review wait times) that motivate rethinking code review at agent-driven velocity.
+- Introduces two reusable concepts — capturing "intent" from agent conversation sessions rather than the diff, and an "AI slop registry" of codified recurring review feedback — that reframe what a human reviewer should check once AI both writes and reviews code.
+- Offers a specific critique of spec-driven development (comparing it to 1970s waterfall) grounded in LLM non-determinism, a useful counterpoint for any chapter covering spec-first or plan-then-code agent workflows.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=YgEv7IQzGdM

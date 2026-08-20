@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:31+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Samuel Denton shares a practical take on Bringing Continual Learning into Enterprises. Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs."
+summary: "Sam Denton (Applied Compute) details a 2x2 distillation spectrum (offline/online traces x hints) and shows SWE-bench and hyperlink-formatting results without needing golden-answer rubrics."
 ---
 
 # Bringing Continual Learning into Enterprises — Samuel Denton, Applied Compute
 
 ## Summary
-Samuel Denton shares a practical take on Bringing Continual Learning into Enterprises. Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs.
+Sam Denton, who leads the platform research team at Applied Compute, lays out a 2x2 taxonomy for continual learning via distillation: one axis is offline vs. online production traces, the other is offline vs. online "hints" (privileged information used to build a teacher model smarter than the on-policy student). Applied Compute focuses on quadrant one (offline hint + offline trace, for day-one value from a static dump of production traces) and quadrant four (online hint + online trace, the full serving-and-training flywheel). In an offline SWE-bench example, a Qwen 3.5 thinking model that took up to 80 turns to submit was nudged via an injected hint to call a "task complete" tool before turn 40, raising the call rate from 22% to 60% with test pass rate held flat, and improved further when one on-policy rollout step was added. In an online example, a coding agent needed a customer-specific hyperlink format that was out-of-distribution for the post-trained model; plain reward-shaping or SFT degraded overall coding performance, but online hinting (injecting a hint tied to the model's own prior rollout) raised correct formatting from about 15% to 80%, versus a smaller gain from the same hint applied offline. Denton also describes two tricks: per-step hinting (a judge decides where in a rollout to inject a hint and distillation is restricted to the next few steps, since the KL learning signal decays with distance from the hint) and "relevance mask self-distillation," where an LLM judge selects which teacher tokens are worth learning from to avoid catastrophic degradation — and stresses that none of this assumes access to a golden/rubric answer.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a named, reusable taxonomy (offline/online trace x offline/online hint, four quadrants) for how enterprises can do continual learning on production agent traces without a labeled dataset.
+- Provides concrete before/after numbers (22%→60% tool-call rate on SWE-bench; 15%→80% hyperlink formatting) that quantify what distillation-based continual learning can and can't fix, including cases where naive SFT/reward-shaping degrades performance.
+- Documents specific implementation tricks (per-step hint injection, relevance-mask self-distillation) that are directly transferable engineering detail, not just a strategy pitch.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=ZTA0GwpAUak

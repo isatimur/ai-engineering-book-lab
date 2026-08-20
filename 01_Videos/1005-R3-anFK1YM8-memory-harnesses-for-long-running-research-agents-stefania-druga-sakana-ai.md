@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:21+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Running Research Agents — Stefania Druga shares a practical take on Memory Harnesses for Long. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Sakana AI's Stefania Druga tests recall policies (RAG, ranked ledger, oracle) for long-horizon agent memory entirely on local models, finding ranked recall wins once tasks exceed context."
 ---
 
 # Memory Harnesses for Long-Running Research Agents — Stefania Druga, Sakana.ai
 
 ## Summary
-Running Research Agents — Stefania Druga shares a practical take on Memory Harnesses for Long. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Stefania Druga (research scientist, Sakana AI) presents an on-device memory harness for long-running research agents, built entirely on local models — Qwen 27B (4-bit quantized) and DeepSeek V4 Flash — running on an M3 Ultra Mac with 96GB RAM. She models memory as a write-manage-read control loop with three parts: a core of traces always shown to the agent, a recall block tested under different policies, and an archival block for cross-session state. Testing a ladder of recall policies — no memory, vector RAG, a ranked decision ledger, and an oracle given ground-truth memory — on a literature-review task (built around a retracted Nature paper's claim of 742,000 discovered materials) and on X-Bench (a long-horizon memory benchmark, 68 questions with answers many steps outside the context window), she finds memory adds nothing when the task still fits in context, but the ranked-ledger policy clearly beats both no-recall and simple memory-gating once tasks exceed the window. The oracle still falls short of maximum score because retrieving the right memory doesn't force the model to use it. The ranked-recall advantage held across both local models and on a second benchmark (Spider V2), and it also cut token cost relative to worse recall policies — leading her to argue recall policy should be treated as a first-class, measurable design choice.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Provides an ablation-style comparison of memory/recall strategies (no-memory, vector RAG, ranked ledger, oracle) on a named long-horizon benchmark (X-Bench) plus a second benchmark (Spider V2), with a concrete result: ranked recall beats simple gating and lowers token cost.
+- Demonstrates a full experimental harness run entirely on local/on-device models (Qwen 27B 4-bit, DeepSeek V4 Flash on an M3 Ultra), evidence for arguments about local-model viability and AI "sovereignty" as an emerging engineering practice.
+- Surfaces a specific negative result — memory adds no benefit, only cost, when a task still fits in context — that sharpens when a memory harness is actually worth building.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=R3-anFK1YM8

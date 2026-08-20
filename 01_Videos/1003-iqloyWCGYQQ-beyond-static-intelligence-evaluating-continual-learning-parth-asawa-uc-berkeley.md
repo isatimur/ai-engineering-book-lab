@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:18+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Parth Asawa shares a practical take on Beyond Static Intelligence: Evaluating Continual Learning. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Parth Asawa (UC Berkeley) proposes Continual Learning Bench, arguing LLM benchmarks wrongly reset memory between tasks and fail to measure sample-efficient online learning."
 ---
 
 # Beyond Static Intelligence: Evaluating Continual Learning — Parth Asawa, UC Berkeley
 
 ## Summary
-Parth Asawa shares a practical take on Beyond Static Intelligence: Evaluating Continual Learning. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Parth Asawa (UC Berkeley) argues that current LLM benchmarks evaluate models as if memory resets after every task, so they cannot measure continual learning — which he defines as sample-efficient online learning that stays stable over long horizons. He proposes three design criteria a continual-learning benchmark must satisfy: headroom (tasks that require online adaptation rather than being solvable by offline pretraining), shared structure across task instances (unlike traditional independent benchmark items), and an explicit learning mechanism (reward, error messages, or textual feedback). His group's Continual Learning Bench 1.0 covers six domains — blind spectrum monitoring, codebase adaptation, epidemiology cohort studies, exploitable poker, database exploration, and sales prediction — and scores systems on reward, "gain" (stateful minus stateless reward, isolating learning from base-model strength), and cost, all measured as Pareto frontiers. In initial results, vanilla in-context learning outperformed more elaborate context-management systems on both reward and cost; observed failures split into stability failures (a sales-forecasting model forgetting its own prior correction and reverting to over-prediction) and plasticity failures (a notepad-based agent dismissing relevant schema information as belonging to "a different study").
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:26+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Yu Su shares a practical take on Intelligence + Continual Learning = Expertise. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints."
+summary: "Yu Su (Ohio State / NeoCognition) argues intelligence and expertise are orthogonal, and defines continual learning as adaptive compression of experience into reusable structures."
 ---
 
 # Intelligence + Continual Learning = Expertise — Yu Su, NeoCognition
 
 ## Summary
-Yu Su shares a practical take on Intelligence + Continual Learning = Expertise. Key angle: focuses on agent design and orchestration; frames the problem through enterprise constraints.
+Yu Su (Ohio State professor, COO of NeoCognition) distinguishes "intelligence" — the capacity to reason through unfamiliar problems given context, which frontier models increasingly have — from "expertise," accumulated situated competence that lets an agent act reliably and efficiently in a specific domain. He frames today's brittleness (coding agents excel while everyday digital-work agents fail, citing Andrew Ng's "decade of agents" remark) as a modern Moravec's paradox: symbolic tasks like coding are easy for LLMs because code is already language-native and reward is verifiable, while the real world is millions of idiosyncratic "microworlds" each needing learned local structure. He defines continual learning as "adaptive compression of experience into reusable structures for future behavior," decomposed into four choices — what experience, how to compress it, what structure results (parameters, vectors, graphs, skills, world models), and how the structure is used (recall, prediction, planning, control). Plotting raw intelligence against expertise as orthogonal axes, he argues a strong continual-learning algorithm could produce "unbounded expertise from bounded intelligence" once a model crosses a competence threshold, meaning further scaling might matter less than better continual-learning methods. He cites Anthropic's revenue growing roughly 400x to an announced $40B (with a newer figure near $60B annualized) as evidence coding is the first mass market for language agents, and closes by naming open problems: measuring expertise per domain, reconciling the reliability-versus-plasticity trade-off, and combining parametric and non-parametric learning.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
