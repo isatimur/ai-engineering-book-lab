@@ -1928,12 +1928,12 @@
         },
         {
           "video_id": "pmoDeA3RBZY",
-          "start": "00:07:50.760",
-          "end": "00:07:52.960",
-          "start_seconds": 470,
+          "start": "00:07:54.840",
+          "end": "00:08:02.670",
+          "start_seconds": 474,
           "confidence": "high",
           "label": "#743 — Vincent Koc, OpenClaw",
-          "quote": "the challenge becomes who do I say no to?"
+          "quote": "In a world where tokens are cheap, I can just say yes to absolutely everyone and merge everything in. But that's going to turn this code base into an absolute fire dump."
         }
       ]
     },
