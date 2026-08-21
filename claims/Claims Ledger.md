@@ -702,12 +702,14 @@
   - [[207-Zqu0VaJw3vo-how-to-hire-ai-engineers-when-everyone-is-cheating-with-ai-beth-glenfield-devday|#207 — Beth Glenfield, DevDay]] — old hiring signals stop discriminating once everyone interviews with AI; the organization has to learn to hire for judgment, not for code-production ability that is now widely available.
     - **Anchor:** `Zqu0VaJw3vo` 00:00:30.480 → 00:00:36.399 · confidence: high
     - **Quote:** "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
-  - [[743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw|#743 — Vincent Koc, OpenClaw]] — from the sharp end of an AI-native repo (tens of thousands of open PRs): once generation is cheap the binding constraint becomes governance — deciding what to reject, not what to accept.
-    - **Anchor:** `pmoDeA3RBZY` 00:07:50.760 → 00:07:52.960 · confidence: high
-    - **Quote:** "the challenge becomes who do I say no to?"
+  - [[743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw|#743 — Vincent Koc, OpenClaw]] — from the sharp end of an AI-native repo: once generation is cheap, the binding constraint becomes governance — deciding what to reject, not what to accept.
+    - **Anchor:** `pmoDeA3RBZY` 00:07:54.840 → 00:08:02.670 · confidence: high
+    - **Quote:** "In a world where tokens are cheap, I can just say yes to absolutely everyone and merge everything in. But that's going to turn this code base into an absolute fire dump."
 - **Caveats / counterpoints:** Some workflows still benefit from a tight specialist guild — regulated industries, safety-critical systems, high-uncertainty research. The claim is about the general direction once AI removes the basic creation bottleneck, not about every team in every setting.
-- **Candidate chapters:** 9
+- **Candidate chapters:** 9 (used: Koc "fire dump" quote, Ch9)
 - **Reusable phrasing:** Broad paths to create, narrow paths to ship.
+
+> **Correction (2026-08-21):** This entry's Koc citation previously used "the challenge becomes who do I say no to?" and cited "tens of thousands of open PRs." Both were wrong: the transcript shows Koc explicitly attributing that line to another speaker ("you heard Peter say earlier on, the challenge becomes who do I say no to?"), and the PR-count figure does not appear in the transcript at all (it only says "we have lots of people raising PRs"). Replaced with Koc's own verified words above. Caught during the Ch9 usefulness pass; flagged for a wider ledger accuracy sweep.
 
 ## 37) Activity-based metrics misread motion as progress in AI-augmented work
 - **Why it matters:** When generation is cheap, output volume rises faster than value. Dashboards that count artifacts (commits, PRs, tickets touched) light up green while the actual constraint — whether the organization can review, integrate, and trust what was produced — goes invisible until it breaks. The wrong metric applied to cheap execution actively destroys value because it directs management attention toward the abundant resource and away from the scarce one.
@@ -743,7 +745,7 @@
     - **Anchor:** `rT2Del5pwg4` 00:10:18.480 → 00:10:24.560 · confidence: high
     - **Quote:** "every software engineer becomes a code reviewer as basically their primary job."
 - **Caveats / counterpoints:** Some teams ship via auto-merge on green and treat review as exception-handling. That works until the eval suite isn't good enough to catch the consequential cases — at which point review reappears as the constraint, just delayed. The claim is structural: trustworthy throughput is bounded by trustworthy review, regardless of where the review happens in the workflow.
-- **Candidate chapters:** 9
+- **Candidate chapters:** 9 (used: Kanat-Alexander "every software engineer becomes a code reviewer" quote)
 - **Reusable phrasing:** You can only safely create as fast as you can trustworthily review.
 
 ## 39) Alignment debt is the AI-native equivalent of technical debt

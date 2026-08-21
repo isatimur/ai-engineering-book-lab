@@ -1229,7 +1229,7 @@ An AI-native organization begins later, at the point where the work itself chang
 
 This is the deeper lesson of the corpus. AI does not merely accelerate output. It reorganizes where scarcity lives.
 
-Scarcity moves upward: from typing to judgment, from production labor to orchestration, from drafting to deciding which draft deserves trust, from isolated productivity to system throughput. Once delegated work becomes real, organizational design becomes the macro-scale version of harness design.
+Scarcity moves upward: from typing to judgment, from production labor to orchestration, from drafting to deciding which draft deserves trust, from isolated productivity to system throughput. The practical test is to find the step where work now piles up waiting on a person; that queue marks where scarcity moved, and it is almost never the keyboard. Once delegated work becomes real, organizational design becomes the macro-scale version of harness design.
 
 ## A Monday morning scene from the software factory
 
@@ -1237,11 +1237,11 @@ Picture a Monday morning at Meridian, which by now has gone well past casual AI 
 
 Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday — any one of which could be hiding another admin-override regression, the throttle on the wrong path from Chapter 4, now buried under a weekend of green checkmarks.
 
-Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive.
+Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive.
 
 And that is the problem.
 
-The organization is no longer starved for output. It is starved for coherence. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions?
+The organization is no longer starved for output. It is starved for coherence. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions? The order is not arbitrary: settle ownership first, because every other question needs someone empowered to answer it; then strategy fit, which discards whole branches cheaply; then safety-to-merge, the expensive per-artifact check you want to run last and least.
 
 That is the scene this chapter has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
 
@@ -1265,7 +1265,7 @@ This creates new pressure on leadership roles. Product managers have to frame wo
 
 The research on developer productivity helps here mainly as a caution. Local speed gains do not automatically improve system throughput. An engineer can open more pull requests and still make the organization slower if review queues clog, priorities scatter, or trust in the output declines. Nick Arcolano’s analysis at Jellyfish, built on some twenty million pull requests, shows the failure mode at scale: output volume rises and the dashboards light up green while the real constraint — whether the organization can review, integrate, and trust that output — goes unmeasured until it breaks. AI-native advantage therefore cannot be measured only by artifact volume. It has to be measured by the outcome — rework rate, the share of generated work that ships unreverted, time in the review queue — which is to say by whether the institution converts cheaper generation into more trusted completed work.
 
-That is Chapter 4 at organizational scale. Evals were the control system for agents. Review capacity becomes the control system for organizations using agents.
+That is Chapter 4 at organizational scale. Evals were the control system for agents; review capacity becomes the control system for organizations using agents. Max Kanat-Alexander at Capital One names the consequence for the people inside it: “every software engineer becomes a code reviewer as basically their primary job.”
 
 ## Broader creation works only when paths to ship stay constrained
 
@@ -1277,13 +1277,13 @@ This is another place where the book’s earlier chapters should echo loudly. Yo
 
 The strongest form of this argument is pro-scaffolding, not anti-democratization. More people should be able to create because the system around them makes safe creation easier. The right internal platforms give non-specialists narrow, high-leverage, well-governed ways to contribute. Templates, policy rails, staged approvals, sandboxed environments, and reusable agent workflows let broader participation coexist with stronger operational discipline.
 
-This is where the Software Factory becomes a company pattern. The “factory” is not just a coding stack for engineers. It is the broader environment that packages institutional judgment so more people — and more agents — can work inside it safely.
+This is where the Software Factory becomes a company pattern. The “factory” is not just a coding stack for engineers. It is the broader environment that packages institutional judgment so more people — and more agents — can work inside it safely. Its hardest job is encoding refusal. Vincent Koc at OpenClaw, describing the cleanup his team called the great refactor, puts it bluntly: “In a world where tokens are cheap, I can just say yes to absolutely everyone and merge everything in. But that’s going to turn this code base into an absolute fire dump.” When creation is free, the scarce discipline is deciding what not to ship.
 
 ## Review becomes the organizational bottleneck
 
 As generation gets cheaper, validation gets more expensive. If one person can now direct several agents, produce many more candidate artifacts, or explore a much wider possibility space before lunch, the organization’s existing review structures will break first. Pull requests pile up. Specs multiply. Drafts arrive faster than domain experts can inspect them. Managers lose visibility into what is real work versus local experimentation. The company starts drowning not in effort, but in options. Zack Proser, running parallel agents on WorkOS’s Applied AI team, states the inversion plainly: “agents are not the bottleneck now and I think that’s going to increasingly be the case, but we are.” Once you hand an agent verification criteria and the tools to meet them, it loops until it does, while the human attention that has to confirm the result “still degrades under load. It’s still the hard constraint.”
 
-This is why Chapter 9 must keep explicit continuity with Chapter 4. The hard question is no longer how to make more output appear. The hard question is how to decide what deserves trust without making humans inspect everything line by line.
+Chapter 4’s logic returns here as a design constraint, not a cross-reference. The hard question is no longer how to make more output appear. The hard question is how to decide what deserves trust without making humans inspect everything line by line — which means the useful unit of work is any rule that lets a person safely not look.
 
 A mature AI-native organization therefore invests in layered review. Some outputs are rejected automatically. Some are checked against harnesses and evals. Some are sampled. Some are escalated because they touch high-risk paths. Some require domain sign-off because the consequences justify it. The point is not to force universal manual review but to create a review system proportionate to the risk and volume of delegated work. Because generation is cheap, a more trustworthy verdict can come from redundancy rather than a more expensive model: Aakanksha Chowdhery describes having the models “generate multiple responses and then do majority voting,” and Leonard Tang at Haize Labs has “weaker LLMs debate each other about what the stronger model is saying” to build judging systems that beat a frontier model at a fraction of the cost. The redundancy pays off only when the voters are genuinely independent, since one model sampled repeatedly cancels noise but not shared bias.
 
@@ -1317,7 +1317,7 @@ This is another reason internal platforms matter so much. Good platforms do not 
 
 At organizational scale, those same requirements turn into company design. An AI-native company externalizes standards, examples, specs, policies, permissions, review rules, and approved workflows so that both humans and agents can operate inside them. It packages taste into templates, governance into platforms, and institutional memory into accessible systems. It creates broader paths to create and narrower, better-governed paths to ship. It treats management not as inspection of every artifact, but as design of the environment in which good artifacts are more likely to emerge. That is what it means for the company to become a harness for its own agents.
 
-The phrase should not be heard as dehumanizing. The point is not that the organization becomes a machine but that it becomes better at converting distributed intelligence — human and machine — into dependable throughput. It makes judgment reusable. It makes oversight scalable. It makes delegation legible.
+The phrase should not be heard as dehumanizing. The point is not that the organization becomes a machine but that it becomes better at converting distributed intelligence — human and machine — into dependable throughput. It makes judgment reusable — a standard written down once is applied a thousand times without its author in the room. It makes oversight scalable — review effort tracks risk, not volume. It makes delegation legible — anyone can see who owns a path before they use it.
 
 This is also where the High-Stakes Colleague quietly returns one last time. In expert domains, the institution does not win by replacing professionals with unrestricted systems; it wins by building workflows in which professional judgment is focused where it adds the most value. The same principle holds in software and in management. An AI-native organization does not eliminate people from the loop. It redesigns the loop so human attention lands on what is most consequential.
 
@@ -1325,7 +1325,7 @@ This is also where the High-Stakes Colleague quietly returns one last time. In e
 
 The strongest companies in an AI era will not simply be the ones with the most aggressive prompting culture or the highest number of tool seats. They will be the ones that learned how to convert cheap generation into trusted throughput.
 
-That requires broader creation, tighter review, earlier alignment, stronger internal platforms, clearer authority boundaries, and operating models that treat delegated work as a first-class organizational material. It requires leaders to notice that speed alone is not the prize; the prize is compounding.
+That requires broader creation, tighter review, earlier alignment, stronger internal platforms, clearer authority boundaries, and operating models that treat delegated work as a first-class organizational material. Read that list as an audit: for each item, ask whether it exists as a written artifact someone owns or only as a habit in people’s heads — the first compounds, the second evaporates the moment that person is busy. It requires leaders to notice that speed alone is not the prize; the prize is compounding.
 
 An AI-native organization is therefore not just a company where people use AI a lot.
 It is a company that reorganized itself so that machine-amplified work becomes cumulative instead of chaotic.
