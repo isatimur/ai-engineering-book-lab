@@ -241,6 +241,11 @@ def main(argv: list[str] | None = None) -> int:
         print("DRIFT")
         for p in problems_b:
             print(p)
+        # Operator policy (2026-08-21): the audiobook is regenerated only once
+        # chapters are final. Until then this drift is authorised, not debt.
+        # Do not re-render to force a green gate, and do not silence the gate.
+        print("  NOTE: audio drift is ACCEPTED policy until chapters freeze —")
+        print("  see docs/ONGOING_SYNC_AND_JUDGING.md. Do not re-render to go green.")
     else:
         print("PASS — all chapter audio files are newer than their source")
 

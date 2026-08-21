@@ -98,6 +98,27 @@ with no note, so those never get a transcript later. Run
 `python3 99_Meta/scripts/backfill_transcripts.py` after any ingest — it fetches
 transcripts for existing notes that lack them and corrects their frontmatter.
 
+### Audio-freshness drift is ACCEPTED policy, not debt (operator decision, 2026-08-21)
+
+**The audiobook is regenerated only once the chapters are final and no longer
+changing.** Until then, gate (b) in `check_book_consistency.py` will report
+audio DRIFT whenever a chapter is edited, and that is the correct, expected
+reading — not a problem to fix and not a task to pick up.
+
+Consequences to respect:
+- Do **not** re-render audio to make the gate green. A green gate bought by
+  re-narrating text that is about to change again is wasted spend and a false
+  signal.
+- Do **not** suppress or special-case the gate. It is accurately reporting that
+  audio is behind the text; the drift is simply authorised. Hiding it would
+  cost the one thing the gate exists to provide.
+- When chapters do freeze, regenerate once, then the gate returns to PASS and
+  stays there.
+- Gate (c), scores freshness, is a **separate** matter and is *not* covered by
+  this policy — it is blocked only on `OPENROUTER_API_KEY`.
+
 Deviation ledger: audiobook currently edge-tts interim (see memory/commit
-cb503c0) pending OpenAI onyx re-render; note-quality LLM enrichment pass is
-specified in `programs/note_enrichment_pass.md` and not yet run.
+cb503c0), and re-rendering is deferred by the policy above rather than by the
+missing key alone; the note-quality enrichment pass is complete for all
+ledger-cited notes and for the newest wave (#984-1047), with ~787 uncited
+notes corpus-wide still on ingest boilerplate by design.
