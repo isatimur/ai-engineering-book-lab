@@ -1197,7 +1197,7 @@ A support call is the clearest example, but the principle is broader. Any realti
 
 ## Embodied edges make the same lesson even harsher
 
-Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm the same lesson under even less forgiving conditions.
+This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that corpus. Robotics and other embodied systems appear only as confirmation — a harsher environment where the same architectural failures show up faster and with less room to hide.
 
 The more tightly an AI system couples to the world, the less room there is for hidden confusion. Delay becomes visible. State mismatch becomes dangerous. Recovery behavior matters more than eloquent explanation. A model that can improvise impressively in a sandbox may still be unusable when timing, environment state, and safety constraints are all moving at once.
 
@@ -1205,7 +1205,7 @@ Embodied systems are useful here even though the book does not become a robotics
 
 ## Voice is where trustworthy AI has to perform in public
 
-The field sometimes treats voice as a charming frontier, a natural interface waiting for better models. That is too soft.
+The chapter opened by rejecting that same soft framing. By now the reason is concrete rather than asserted: latency budgets, half-duplex ceilings, and a control plane that has to work in public.
 
 Voice is where trustworthy AI has to perform in public, under interruption, under latency pressure, and under immediate human judgment. It is where architecture stops being abstract and becomes audible behavior.
 
