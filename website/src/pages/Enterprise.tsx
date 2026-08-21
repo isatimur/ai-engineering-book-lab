@@ -37,9 +37,9 @@ const Header = () => (
 );
 
 export const Enterprise = () => {
-  const claims = stats?.claims?.total ?? 42;
-  const anchors = stats?.anchors?.total ?? 166;
-  const videos = stats?.corpus?.videos ?? 794;
+  const claims = stats?.claims?.total ?? 54;
+  const anchors = stats?.anchors?.total ?? 199;
+  const videos = stats?.corpus?.videos ?? 1047;
 
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)]">

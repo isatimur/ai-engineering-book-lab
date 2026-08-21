@@ -12,6 +12,7 @@ import { ExploreMenu, MobileNavMenu } from '../components/nav/ExploreMenu';
 import { AskAI } from '../components/AskAI';
 import { DefinitionBlock } from '../components/DefinitionBlock';
 import { ArtifactCard } from '../components/ArtifactCard';
+import stats from '../data/stats.json';
 import { ARTIFACTS } from '../data/artifacts';
 
 export const Catalogue = () => {
@@ -26,6 +27,10 @@ export const Catalogue = () => {
     setTimeout(() => navigate('/read'), 2400);
   };
 
+  // Corpus size is live from stats.json so the meta description cannot rot.
+
+  const corpusVideos = stats?.corpus?.videos ?? 1047;
+
   const aboutBlocks = aboutLabRaw
     .replace(/<!--.*?-->/gs, '')
     .split(/\n{2,}/)
@@ -39,7 +44,7 @@ export const Catalogue = () => {
     >
       <Seo
         title="From Copilot to Colleague — A Guide to AI Engineering"
-        description="How AI Engineering turns models into dependable systems. An online book + visual guide built from a 794-video corpus."
+        description={`How AI Engineering turns models into dependable systems. An online book + visual guide built from a ${corpusVideos}-video corpus.`}
         path="/"
         type="book"
       />
