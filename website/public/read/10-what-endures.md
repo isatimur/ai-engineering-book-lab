@@ -41,7 +41,7 @@ The bitter lesson for product teams was not merely that larger models got strong
 
 Teams that expected better models to dissolve complexity discovered instead that the complexity migrated into context assembly, eval design, runtime semantics, authority boundaries, and organizational throughput. The model became more capable, but the loop around it became more consequential.
 
-This is exactly why Chapters 3 through 8 form the core technical arc of the book. A legible workplace without evals is not enough. Evals without good context are not enough. Context without durable runtime semantics is not enough. Runtime without bounded authority is not enough. Security without usable supervision is not enough. And all of it gets exposed brutally when the system has to operate in real time. What endures is the systems view: reliable AI is still built, not wished into existence by model upgrades.
+This is exactly why Chapters 3 through 8 form the core technical arc of the book. A legible workplace without evals is not enough. Evals without good context are not enough. Context without durable runtime semantics is not enough. Runtime without bounded authority is not enough. Security without usable supervision is not enough. And all of it gets exposed brutally when the system has to operate in real time. A fast diagnostic for any delegated system that misbehaves: name which of those six layers actually failed — legibility, evals, context, runtime, authority, or supervision — before reaching for a bigger model as the fix. In the two recurring cases this book followed, the model was rarely the layer that had failed. What endures is the systems view: reliable AI is still built, not wished into existence by model upgrades.
 
 ## Autonomy is worth tuning, not worshipping
 
@@ -90,6 +90,8 @@ Responsibility for scoping.
 Responsibility for the boundaries within which machines act.
 Responsibility for deciding when evidence is sufficient.
 Responsibility for noticing when the system is producing motion without progress.
+
+A fast test for whether responsibility has actually been placed, not merely assumed: name the person accountable when a delegated system's output turns out to be wrong six months from now, after whoever wrote the prompt has moved to a different team. If no name comes to mind, the responsibility was never assigned — it evaporated along with the context window that produced the output.
 
 The book stayed skeptical of both utopian and defensive narratives for that reason. AI neither leaves engineering unchanged nor abolishes the need for engineers. It relocates value toward those who can design, govern, and continuously improve systems of delegated work.
 

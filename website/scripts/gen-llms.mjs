@@ -19,15 +19,34 @@ const TITLE = 'From Copilot to Colleague';
 const SUBTITLE = 'How AI Engineering Turns Models into Dependable Systems';
 const log = (...a) => console.log('[gen-llms]', ...a);
 
-// Parse {number, slug, title, promise} from bookChapters.ts (frozen format;
-// single-quoted, no escaped apostrophes — verified against the source).
+// Parse {number, slug, title, promise} from bookChapters.ts. Do NOT require the
+// fields to be adjacent: an SEO change once inserted `seoTitle` between `title`
+// and `promise`, which silently dropped 6 of 10 chapters from llms.txt (the
+// generator is deliberately fail-soft, so nothing complained). Each field is
+// matched independently within a chapter block, and the count is asserted below.
 const chaptersSrc = readFileSync(resolve(websiteRoot, 'src/data/bookChapters.ts'), 'utf8');
-const chapters = [
-  ...chaptersSrc.matchAll(
-    /number: '(\d+)',\s*slug: '([^']+)',\s*title: '([^']+)',\s*promise: '([^']+)'/g,
-  ),
-].map((m) => ({ number: m[1], slug: m[2], title: m[3], promise: m[4] }));
+const chapters = chaptersSrc
+  .split(/(?=\s*number: ')/)
+  .map((block) => {
+    const pick = (key) => block.match(new RegExp(`${key}: '([^']+)'`))?.[1];
+    const number = pick('number');
+    const slug = pick('slug');
+    const title = pick('title');
+    const promise = pick('promise');
+    return number && slug && title && promise ? { number, slug, title, promise } : null;
+  })
+  .filter(Boolean);
 
+// Fail loudly on a PARTIAL parse, not just an empty one: the real incident was
+// 6 of 10 chapters silently disappearing. Every `number:` key in the source must
+// yield a fully-parsed chapter.
+const declaredChapters = (chaptersSrc.match(/\n\s*number: '/g) || []).length;
+if (chapters.length !== declaredChapters) {
+  throw new Error(
+    `gen-llms: parsed ${chapters.length} chapters but bookChapters.ts declares ` +
+    `${declaredChapters} — a field was probably renamed or inserted.`,
+  );
+}
 if (chapters.length === 0) throw new Error('gen-llms: parsed 0 chapters from bookChapters.ts');
 
 // Live corpus counts for the summary (fall back to omitting if unavailable).
