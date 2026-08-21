@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:35:46+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Guide for Agentic Engineering — Frank Coyle shares a practical take on Anthropic's CCA Exam as a Field. Key angle: focuses on agent design and orchestration; keeps returning to production-grade engineering."
+summary: "Frank Coyle (UC Berkeley) walks through Anthropic's Claude Certified Architect exam, extracting anti-patterns: stop-reason checks, single-tool sub-agents, context forking, batch CI mode."
 ---
 
 # Anthropic's CCA Exam as a Field-Guide for Agentic Engineering — Frank Coyle, UC Berkeley
 
 ## Summary
-Guide for Agentic Engineering — Frank Coyle shares a practical take on Anthropic's CCA Exam as a Field. Key angle: focuses on agent design and orchestration; keeps returning to production-grade engineering.
+Frank Coyle, a UC Berkeley computer science lecturer, walks through Anthropic's Claude Certified Architect (CCA) exam: a timed, proctored, scenario-based exam ($99 for individuals, retakeable every six months) covering five weighted domains — agentic architecture (27%), Claude Code configuration and workflow (20%), prompt engineering and structured output, tool design and MCP integration, and context management and reliability — drawn from six production scenarios, four of which are randomly selected per sitting. He extracts an anti-pattern from each scenario: checking the model's stop reason (tool use, end of turn, or hitting a token limit) rather than blindly consuming whatever the agent loop returns; using hierarchical CLAUDE.md files at the project, folder, and subdirectory level; giving multi-agent systems specialized single-tool sub-agents instead of one agent loaded with every tool, partly to avoid inter-agent "groupthink" that comes from sharing reasoning context; forking subtask context so only a summary returns to the main thread, with compaction triggered once token count passes a set threshold he puts at roughly 150,000 tokens; and avoiding interactive permission-prompt modes in CI pipelines in favor of Claude's batch mode, which he describes as roughly 50% cheaper per token with about a 24-hour turnaround. He frames the current focus on "agentic loops" through Böhm and Jacopini's 1966 proof that sequence, conditionals, and loops are the three constructs needed for Turing completeness, arguing the loop is the piece giving current agent systems their power.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A structured, exam-derived taxonomy of agent-engineering anti-patterns — stop-reason handling, single-tool sub-agents, context forking and compaction, batch mode in CI — that doubles as a practical checklist for building production agent systems.
+- Anthropic's own weighting of skill domains (agentic architecture 27%, Claude Code configuration 20%, etc.) is a data point on what a major lab considers the core competencies of agentic engineering.
+- The Böhm-Jacopini framing gives a concrete theoretical grounding — a 1966 structured-programming theorem — for why "loops" are the current locus of agent-system power, useful for tracing agentic patterns back to CS fundamentals.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=Z-c11pV_uvU

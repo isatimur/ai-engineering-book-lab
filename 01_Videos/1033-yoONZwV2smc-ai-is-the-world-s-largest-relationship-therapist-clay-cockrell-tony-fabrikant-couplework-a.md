@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:32+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Clay Cockrell & Tony Fabrikant shares a practical take on AI is the World’s largest Relationship Therapist."
+summary: "Couplework's Clay Cockrell and Tony Fabrikant describe building an AI relationship coach (Maxine) on Gottman/EFT frameworks, clinician evals, and background risk screening."
 ---
 
 # AI is the World’s largest Relationship Therapist — Clay Cockrell & Tony Fabrikant, CoupleWork AI
 
 ## Summary
-Clay Cockrell & Tony Fabrikant shares a practical take on AI is the World’s largest Relationship Therapist.
+Clay Cockrell, a couples therapist for 30 years, and engineer co-founder Tony Fabrikant describe Couplework, an AI relationship-coaching platform built around an AI coach named Maxine. Cockrell argues general-purpose LLMs are already functioning as the world's largest de facto relationship therapist, citing BetterHelp's roughly 35,000 licensed therapists serving 5 million users over a decade against ChatGPT's approximately 900 million weekly active users, and contends their default sycophancy is a clinical failure mode: validated users become more certain of their side of a conflict, not more self-aware. Maxine is built on the Gottman Method (John Gottman's 40-year "love lab" research, said to predict divorce with over 90% accuracy from 15-minute conversations) and Sue Johnson's Emotionally Focused Therapy, and runs a background screening pass on messages for escalating-control or fear-based language before deciding whether to keep coaching or switch to safety protocols. Fabrikant describes an engineering process that starts with the clinician, not the prompt: encode what "good" looks like as hundreds of TDD-style evals, run the agent through them at scale, treat any failing safety-relevant eval as blocking, and still rely on direct personal use of the product to catch tone drift that evals miss.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A concrete build methodology for a domain-expert AI agent in a high-stakes area: clinician-authored eval suites run at scale, an explicit escalation/safety protocol layered on top of normal coaching logic, and a deliberate "gut check" step alongside automated evals.
+- Cockrell's sycophancy critique — validation without insight leaving users "more certain, not more self-aware" — is a specific, well-articulated case of a known LLM failure mode causing real interpersonal harm, distinct from the usual accuracy-focused framing of sycophancy.
+- Surfaces safety and data-privacy gaps specific to relationship AI: no privilege equivalent to therapist-client confidentiality, and general models missing risk signals (e.g., domestic-violence language) that a trained clinician would catch immediately.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=yoONZwV2smc

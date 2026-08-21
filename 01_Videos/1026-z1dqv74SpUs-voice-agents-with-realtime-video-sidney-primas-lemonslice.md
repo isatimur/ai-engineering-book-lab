@@ -15,17 +15,18 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-08-20T22:28:18+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Sidney Primas shares a practical take on Voice agents with Realtime Video. Key angle: includes voice / realtime system concerns."
+summary: "LemonSlice's Sidney Primas describes training a causal, single-step video diffusion model for real-time avatars, its Trump/Roosevelt demo, and a bet on a future end-to-end EQ model."
 ---
 
 # Voice agents with Realtime Video — Sidney Primas, LemonSlice
 
 ## Summary
-Sidney Primas shares a practical take on Voice agents with Realtime Video. Key angle: includes voice / realtime system concerns.
+Sidney Primas (CTO/founder, LemonSlice) frames the company's goal as the "Avatar Turing test": photorealistic, full-body avatars indistinguishable from a human on a video call, demonstrated via a Microsoft partnership that let visitors talk to a real-time Teddy Roosevelt avatar in a replica Oval Office, including real footage of Trump interacting with it and staying far longer than scheduled. Rather than compositing standard avatar rigs, LemonSlice trains its own video diffusion transformer as a human-focused "world model," using custom audio embeddings — Primas says standard audio encoders, trained on monotone audiobook data, don't transfer — to drive emotion and micro-expressions from a single input image. To make the model interactive they trained it with a causal attention mask so it only conditions on the past (ordinary video diffusion models are bidirectional), and cut denoising from roughly 30 steps to one step for real-time generation; the main open problem is error accumulation over long-running sessions, since some avatars run continuously for 8-16 hours, which he says LemonSlice has solved with an undisclosed method. He reports generation costs now comparable to a voice model despite far heavier pixel throughput, and describes a roadmap toward a single end-to-end model that unifies audio/video generation with an internal emotional state (an "EQ layer"), paired with a separate model for reasoning and tool calling, which he expects to see in the market within two to three years.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives concrete production numbers for real-time generative video — collapsing ~30-step diffusion to a single step, causal attention masking to make a bidirectional video model interactive, multi-hour continuous generation runs — specifics that are rare in avatar demos.
+- Names "model hardness" (GPU/CPU orchestration, queues, interrupts, buffering to keep video stutter-free) as an underrated but critical cost of productizing real-time generative systems, a pattern applicable beyond avatars.
+- The proposed split between an "EQ" model (emotional, real-time, end-to-end audio/video) and a separate "IQ" model (reasoning, tool calling) is a concrete architectural bet on how multimodal real-time systems might specialize and compose.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=z1dqv74SpUs

@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-14T11:36:06+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Arjun Singh shares a practical take on Multiplayer agentic engineering. Key angle: focuses on agent design and orchestration."
+summary: "Superconductor's Arjun Singh gives lessons for multiplayer agentic engineering: model agnosticism, cross-interface sessions, least-privilege cloud sandboxing, and benchmarking agents on your own code."
 ---
 
 # Multiplayer agentic engineering — Arjun Singh, Superconductor
 
 ## Summary
-Arjun Singh shares a practical take on Multiplayer agentic engineering. Key angle: focuses on agent design and orchestration.
+Arjun Singh, co-founder of Superconductor (he and cofounder Sergey previously built and sold GradeScope, met in the PhD program at Berkeley), lays out lessons for "multiplayer agentic engineering." He argues for staying model- and harness-agnostic since the best option can change weekly and open-weight models like GLM 5.2 are now cheap and competitive, and for keeping one persistent agent session usable across Slack, a desktop/mobile app, and GitHub rather than trapping it in a single interface, with all team members and agent-produced artifacts (screenshots, video) visible to the whole team including non-technical members. He demonstrates a "meeting bot" that sat in a 4-hour Google Meet at their conference booth, autonomously created a ticket from an idea raised in the conversation (adding acceptance-criteria fields to their own ticket form), and produced a screenshot of the change with no manual triggering. He argues agents should run in an isolated cloud sandbox rather than on laptops — explicitly building on the preceding GitHub Next talk's point about least-privilege agent access — both to remove "lid anxiety" and to prevent scenarios like an agent finding a stray production token on a laptop and wiping the wrong database, and says this same sandboxing lets non-engineers trigger real fixes via Slack. He reports benchmarking agent harnesses against their own Ruby-on-Rails pull requests, since public benchmarks like SWE-bench are Python-only: Anthropic/Claude models kept improving in quality but not speed and cost far more, while Codex was faster and cheaper and became their default, with the team spending about 1.5 billion tokens in a month across roughly 3,300 Claude Code runs (about $10,000/day in list-price tokens) versus about four times as many, cheaper Codex sessions.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- The "meeting bot" example is a concrete case of turning an unstructured external signal (a live conversation) directly into a shippable code change with no manual hand-off — useful evidence for a chapter on agent-triggered workflows.
+- The benchmarking argument (public benchmarks like SWE-bench don't transfer to a Ruby-on-Rails codebase) is a concrete, sourced case for why teams should build their own quality/cost/time evals rather than trust generic leaderboards.
+- Singh's explicit agreement with the preceding GitHub Next talk on least-privilege sandboxing shows independent convergence, from a different vendor, on agent security as a precondition for giving agents broader autonomy.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=OL7kfezynJM

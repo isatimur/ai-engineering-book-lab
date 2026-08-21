@@ -15,13 +15,13 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:14+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Arturo Nunez shares a practical take on The Next Game Engine Won't Have a Manual. Key angle: connects the topic back to software engineering practice."
+summary: "Nereu's Arturo Nunez replaces game-engine boilerplate with natural-language tags (an ATS) and an LOD-based method for assembling LLM context from 6-7k vision-tagged assets."
 ---
 
 # The Next Game Engine Won't Have a Manual — Arturo Nunez, Nereu
 
 ## Summary
-Arturo Nunez shares a practical take on The Next Game Engine Won't Have a Manual. Key angle: connects the topic back to software engineering practice.
+Arturo Nunez, formerly of Unity for close to 10 years and later MongoDB, describes Nereu, a game engine where players describe intent in natural language ("add a robot," "make it move with WASD and animate it") instead of manually wiring meshes, renderers, colliders, and rigid bodies. Every asset carries tags through what he calls an ATS (asset tag system), modeled on entity-component-system / data-oriented design from game development, so an AI assistant can query and apply tags like character, vehicle, or drivable — there is no scripting system by design, only a JavaScript escape hatch for advanced users. To keep LLM context manageable, Nereu borrows the game-dev concept of level of detail: assets near the player or being edited get full tag and settings context sent to the model, while distant assets get minimal representation, the same way distant geometry gets lower-fidelity rendering. The roughly 6,000-7,000 3D assets in the library were tagged by running vision models over screenshots rather than by hand. Nunez says he built the engine iterating daily with an AI coding assistant and domain-expert friends, and he contrasts his tag-driven approach with "world model" game generation, which he argues still can't hit real-time 60fps at 4K with physics simulation.
 
 ## Why it matters
 - Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.

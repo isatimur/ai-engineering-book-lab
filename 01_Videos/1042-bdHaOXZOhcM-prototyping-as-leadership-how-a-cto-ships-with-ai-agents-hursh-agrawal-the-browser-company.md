@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:50+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Hursh Agrawal shares a practical take on Prototyping as Leadership: How a CTO Ships with AI Agents. Key angle: focuses on agent design and orchestration."
+summary: "The Browser Company's Hursh Agrawal describes an overnight coding-agent workflow: 5pm context handoff, autonomous multi-hour runs, and morning review to ship features and train models."
 ---
 
 # Prototyping as Leadership: How a CTO Ships with AI Agents — Hursh Agrawal, The Browser Company
 
 ## Summary
-Hursh Agrawal shares a practical take on Prototyping as Leadership: How a CTO Ships with AI Agents. Key angle: focuses on agent design and orchestration.
+Hursh Agrawal, CTO and co-founder of The Browser Company (Arc, Dia), describes shipping 2-10 PRs a week despite 15+ recurring meetings, seven direct reports, and a toddler at home, using an overnight-agent workflow: a 5pm block to gather context and hand it to a coding agent for a 4-8 hour autonomous run, then a morning block to review, test, and ship the result. He details three overnight task types: building full features from gathered business context, hill-climbing AI feature quality against a small eval set built from an in-product feedback button (collecting roughly 5-30 JSON dumps of system prompt, inputs, and rating), and training custom ML models overnight — citing a ModernBERT PII classifier trained after Opus and Haiku proved too slow and imprecise, using an ensemble of frontier models on a sandboxed AWS account with prod access explicitly withheld. He argues this only works with organizational scaffolding already in place — AI code reviewers, agents.md/CLAUDE.md hygiene, trustworthy CI, and feature flags with a prototype branch that reaches employees but not production — and cites a Julie Zhuo-sourced framework of what leaders should build (internal tools, team celebration artifacts, and, most importantly, vision prototypes that demonstrate new model capabilities), explicitly excluding critical-path work. He also admits his own overnight-agent code has caused production incidents and annoyed engineers, and recommends leaders always read and test agent-written code themselves before adding other reviewers.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A concrete overnight-agent operating pattern (context handoff at 5pm, multi-hour autonomous run, morning review) with explicit verification discipline — tests written first, end-to-end checks via computer use, an AI code-review subagent, and a CI-green requirement — a transferable playbook for delegating substantial scope to coding agents unsupervised.
+- The feedback-button-to-eval-set-to-hill-climb loop is a lightweight, concrete recipe for building an eval set from as few as 5-10 real feedback samples and then optimizing an LLM feature against it overnight.
+- The ModernBERT PII classifier example is a specific instance of replacing an expensive, imprecise frontier-model call with a cheaper trained model, including the safety detail of never granting the agent production access during training.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=bdHaOXZOhcM

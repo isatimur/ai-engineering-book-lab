@@ -15,17 +15,18 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-08-20T22:28:53+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Kieran Klaassen shares a practical take on The Era of Compound Engineering. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Kieran Klaassen (Every/Cora) describes compound engineering: a brainstorm-plan-work-review-polish loop that extracts his judgment into a memory system and plugin used in Claude Code, Cursor, and Codex."
 ---
 
 # The Era of Compound Engineering — Kieran Klaassen, Every/Cora
 
 ## Summary
-Kieran Klaassen shares a practical take on The Era of Compound Engineering. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Kieran Klaassen, who built and solo-runs Cora (an agent-native AI email client at Every, in a from-scratch rebuild since January) says the bottleneck moved over two years from bad/hallucinating code, to weak plans, to deciding what to build, to his own repetition — which he solved by building a memory system, starting in a single CLAUDE.md file and growing into what he calls "compound engineering." His loop is brainstorm, plan, work, review, polish, compound, repeat, which he frames as a "human-AI sandwich": the human supplies judgment and taste at both ends (brainstorming and final review) while AI executes the middle, and his rule is to spend 50% of time building the feature and 50% teaching the system what it got wrong so the same mistake doesn't recur. He ships this as an open-source "compound engineering plugin" (built with co-contributor Trevan Chowo) that runs in Claude Code, Cursor, Codex, and others, with commands including CE-ideate (turns Linear/GitHub/Slack/Intercom backlogs into a scored, strategy-aligned HTML brief), C doc review (critiques a PRD with pointed questions), C brainstorm, C LFG (an unattended multi-hour loop that plans, works, reviews, tests, opens a PR, and attaches before/after video), C polish, and C compound (extracts the learning into a stored "solution document"). He claims the plugin is used by hundreds of thousands of people daily and argues that as implementation cost keeps falling, judgment and taste become the durable bottleneck.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Offers a concrete, named workflow ("compound engineering": brainstorm-plan-work-review-polish-compound) and a specific rule (50% building, 50% teaching the system) for turning one engineer's judgment into a reusable system, rather than a vague call to "use AI more."
+- Documents a bottleneck-migration narrative (code quality to planning to product decisions to repeated instructions) that maps well onto a chapter about how AI engineering pain points shift as model capability improves.
+- Gives concrete, checkable artifacts — named plugin commands (CE-ideate, C doc review, C brainstorm, C LFG, C polish, C compound) and a claimed adoption figure (hundreds of thousands of daily users, self-reported by the speaker) — worth citing carefully with that provenance noted.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=_ehJyfHg1Vk

@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:11+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Sangwu Lee shares a practical take on Training Krea 2: What matters in generative model training. Key angle: keeps returning to production-grade engineering."
+summary: "Krea.ai's Sangwu Lee details the Krea 2 training pipeline: dedup, captioning, autoencoder filtering, Wikipedia concept coverage, and RL/preference-optimization stages for diffusion models."
 ---
 
 # Training Krea 2: What matters in generative model training — Sangwu Lee, Krea.ai
 
 ## Summary
-Sangwu Lee shares a practical take on Training Krea 2: What matters in generative model training. Key angle: keeps returning to production-grade engineering.
+Sangwu Lee (Krea.ai) describes the training pipeline behind Krea 2 and its open-sourced medium variant, contrasting it with production models like ChatGPT-image and Nano Banana Pro, which he says trade output diversity for reliability by mode-collapsing toward "boring average" results. He details a data curation stack built on roughly 30-40 in-house classifiers: hash-based dedup (pHash, MD5) followed by embedding-based near-duplicate removal (SSCD, SigLip), a captioning pipeline that runs OCR before a vision-language-model pass, and sparse autoencoders trained on vision models to surface unsupervised tags (watermarks, blur, signatures) used for filtering. The team deliberately strips AI-generated images from training data to avoid inheriting a distilled "ChatGPT/Nano Banana" look, and boosts world-knowledge coverage by mining Wikipedia concepts above the 90th percentile of page rank, echoing the original CLIP paper's approach. Training follows a staged pipeline — low-to-high resolution pretraining, mid-training, SFT, pairwise preference optimization, then a GRPO-style RL stage scored by reward servers for text rendering and anatomy — plus a separate small LLM that expands short user prompts into long, in-distribution prompts. Lee says the team is now working on training specialized expert models (e.g., photography, text rendering) and merging their capabilities into a single student model.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A granular, numbers-and-technique-level account of what "data curation" means in practice at billion-image scale (dedup methods, sparse-autoencoder tagging, Wikipedia-driven concept coverage) — rare specificity for a data pipeline write-up.
+- Shows LLM post-training patterns (pairwise preference optimization, GRPO-style RL, reward servers) migrating into diffusion model training, illustrating cross-modality convergence of training recipes.
+- Gives a named, specific case of the diversity-vs-reliability tradeoff and mode collapse in production image models, useful as a counter-example when discussing model evaluation.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=-tviRdpmHvs

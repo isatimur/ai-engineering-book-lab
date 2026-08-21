@@ -15,17 +15,18 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-08-20T22:28:12+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ekaterina Deyneka shares a practical take on Building an Agentic Video Editor for Mass Consumer. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns."
+summary: "Reelful's Ekaterina Deyneka describes an agentic video editor that plans, executes in a sandbox, composes via Remotion, and verifies before rendering user footage."
 ---
 
 # Building an Agentic Video Editor for Mass Consumer — Ekaterina Deyneka, Reelful
 
 ## Summary
-Ekaterina Deyneka shares a practical take on Building an Agentic Video Editor for Mass Consumer. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns.
+Ekaterina Deyneka, founder and CEO of Reelful, describes an agentic video-editing pipeline that takes user-supplied media plus a prompt and turns it into a rendered clip. The pipeline runs media understanding and speech transcription, produces a creative plan for user approval, then spins up a sandbox where an agent equipped with skills (cut rules for selecting moments, font pairing, B-roll generation) triggers sub-processes for music, voiceover, sound, and image animation. The agent assembles the result as code using Remotion, an open-source React-based video framework, and a verification layer checks the composition and lets the agent re-iterate before final render. Deyneka contrasts editing real footage with generating content from scratch: because footage can be messy or incomplete, the agent must decide what to keep and omit rather than work from a blank canvas, while still producing a professionally polished result. Reelful ships mobile-first, offers prompt-free "directional templates" (e.g., speak-to-camera, B-roll, voiceover) plus a manual editor for tweaks, and the company recently received a16z Speedrun funding.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Concrete instance of "agent writes code, not pixels": using Remotion to let an agent express a video edit as a React composition, wrapped in a sandbox-execute-verify loop with re-iteration on failure — a transferable pattern for agentic creative tooling.
+- Names a real difficulty ordering for agent products: generating from a blank canvas is easier than editing imperfect real input, since editing requires selection/omission judgment under constraints.
+- Shows a consumer-product mitigation for prompt friction — directional templates plus a plan-approval checkpoint before the agent executes — relevant to how agent products manage user trust and control.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=pPj_tjlvYjA
