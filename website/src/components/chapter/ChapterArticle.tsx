@@ -26,6 +26,35 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
   const figs = inlineFigsForChapter(chapter.number);
   let headingFigureIndex = 0;
 
+  // The practical checklist is a distinct utility section, not flowing prose —
+  // give it a bordered callout instead of blending into the reading column.
+  // It's designed to be the chapter's last section (heading through end of
+  // content), so a single split point is enough; no need to detect a "next
+  // heading" close boundary.
+  const practicalIndex = blocks.findIndex((b) => b.trim() === '## Practical checklist');
+  const proseBlocks = practicalIndex === -1 ? blocks : blocks.slice(0, practicalIndex);
+  const practicalBlocks = practicalIndex === -1 ? [] : blocks.slice(practicalIndex);
+
+  const renderBlock = (block: string, index: number) => {
+    const isHeading = block.startsWith('## ');
+    const figIndex = headingFigureIndex;
+    const hasFigure = isHeading && figIndex < figs.length;
+    const fig = hasFigure ? figs[figIndex] : null;
+    if (isHeading) headingFigureIndex += 1;
+    return (
+      <React.Fragment key={`${chapter.number}-${index}`}>
+        {fig ? <span data-figure-anchor={fig.index} aria-hidden /> : null}
+        <MarkdownBlock block={block} chapterNumber={chapter.number} listen={listen} />
+        {fig ? (
+          <InlineIllustration
+            fig={fig}
+            label={`Figure ${chapter.number}.${figIndex + 1}`}
+          />
+        ) : null}
+      </React.Fragment>
+    );
+  };
+
   return (
     <div className="book-reader-prose">
       <div className="mb-12 border-b border-[var(--color-border)] pb-8 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
@@ -39,25 +68,12 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
         <ExpandableSummary chapter={chapter} />
       </div>
       <EvidenceClaimMarkers chapterNumber={chapter.number} />
-      {blocks.map((block, index) => {
-        const isHeading = block.startsWith('## ');
-        const figIndex = headingFigureIndex;
-        const hasFigure = isHeading && figIndex < figs.length;
-        const fig = hasFigure ? figs[figIndex] : null;
-        if (isHeading) headingFigureIndex += 1;
-        return (
-          <React.Fragment key={`${chapter.number}-${index}`}>
-            {fig ? <span data-figure-anchor={fig.index} aria-hidden /> : null}
-            <MarkdownBlock block={block} chapterNumber={chapter.number} listen={listen} />
-            {fig ? (
-              <InlineIllustration
-                fig={fig}
-                label={`Figure ${chapter.number}.${figIndex + 1}`}
-              />
-            ) : null}
-          </React.Fragment>
-        );
-      })}
+      {proseBlocks.map(renderBlock)}
+      {practicalBlocks.length > 0 && (
+        <div className="practical-checklist mt-12 border border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-ink)_4%,transparent)] px-6 py-8 sm:px-8">
+          {practicalBlocks.map(renderBlock)}
+        </div>
+      )}
     </div>
   );
 };

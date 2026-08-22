@@ -207,6 +207,16 @@ And once that becomes the scarce resource, the next technical question follows n
 
 That is the work of the next chapter.
 
+## Practical checklist
+
+Before the next chapter moves from judgment to environment, put this chapter's argument to work on whatever you're delegating this week:
+
+- **Run the framing gate first.** Before handing anything to a model, answer what the actual task is, what counts as success, which constraints are real, what's allowed to stay rough, and what would make the result unacceptable even if it looks finished. Can't answer that last one? Not ready to delegate.
+- **Read every diff like its author, not its skimmer.** Reconstruct why each choice was made; trace one path the tests don't cover and ask whether the design survives it.
+- **Sort your friction before you cut it.** Remove a pause if it only costs keystrokes. Keep it if removing it costs a decision — whether the architecture holds, whether the draft is right or merely plausible.
+- **Know which mode you're in.** Vibe coding is fine where being wrong is cheap and the goal is discovery. The moment an artifact has to be maintained by someone who didn't prompt it into being, switch modes — don't wait for the Monday that proves you should have.
+- **Write your constraints down.** A team that states its standards explicitly can delegate safely. A team that relies on vibe and shared memory can't, no matter how good the model gets.
+
 ---
 
 _From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/02-taste_
