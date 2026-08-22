@@ -583,7 +583,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[512-3E7VAZaTG9M-scaling-ai-in-education-a-khanmigo-case-study-shawn-jansepar|#512 — Jansepar, Khan Academy]] — frames the Khanmigo work as "Khan Academy's journey to become an AI-first organization": roadmap, product, and org transformation, not model quality.
+    - **Anchor:** `3E7VAZaTG9M` 00:00:44.800 → 00:00:47.280 · confidence: high
+    - **Quote:** "transformed KH Academy into an AI first organization"
   - [[540-qpmZID27t98-the-multimodal-future-of-education-stefania-druga|#540 — Stefania Druga]] — 70% of generative AI users are Generation Z (a Salesforce study she cites) and "education needs a wakeup call"; her focus is designing multimodal learning activities for critical and creative thinking, with the model as raw material, not teacher.
+    - **Anchor:** `qpmZID27t98` 00:01:00.039 → 00:01:01.320 · confidence: high
+    - **Quote:** "education needs a wakeup call"
 - **Caveats / counterevidence:** Support is moderate: both notes are boilerplate, so #512's leg rests on its description-cue framing and #540's on two verbatim excerpt quotes plus its description cue. Both are advocates for their own programs. The claim is that pedagogy binds, not that model quality is irrelevant.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** In education the model is already good enough; what is unsolved is turning capability into learning, and that is pedagogy's problem, not the lab's.
