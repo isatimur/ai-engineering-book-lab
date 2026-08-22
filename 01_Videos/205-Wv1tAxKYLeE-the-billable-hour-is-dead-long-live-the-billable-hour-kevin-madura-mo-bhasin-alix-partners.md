@@ -13,7 +13,7 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:43:53+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Kevin Madura + Mo Bhasin shares a practical take on The Billable Hour is Dead; Long Live the Billable Hour. If software was eating the world before, knowledge work will soon be devoured by AI. Key angle: emphasizes evaluation and measurement."
+summary: "Alix Partners consultants detail an internal GenAI platform for vendor categorization, enterprise RAG, and contract extraction used across M&A, due diligence, and litigation-support engagements."
 ---
 # The Billable Hour is Dead; Long Live the Billable Hour — Kevin Madura + Mo Bhasin, Alix Partners
 

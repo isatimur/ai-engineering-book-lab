@@ -13,7 +13,7 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:19:15+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Patrick Debois shares a practical take on Reverse Conway's law and GenAI: How agents will take over the organisation. Generative AI tools are changing the way we work. Key angle: connects the topic back to software engineering practice."
+summary: "Patrick Debois maps how AI agents could move from co-pilot to team member, peer, and even manager, reshaping org structure via a reverse Conway's law."
 ---
 # Reverse Conway's law and GenAI: How agents will take over the organisation - Patrick Debois
 
