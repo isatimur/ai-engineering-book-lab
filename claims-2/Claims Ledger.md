@@ -10,8 +10,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[271-PbHm2qKnu10-training-agentic-reasoners-will-brown-prime-intellect|#271 — Will Brown, Prime Intellect]] — "The high level thesis of this talk is like — no, they're kind of the same thing."
+    - **Anchor:** `PbHm2qKnu10` 00:00:40.160 → 00:00:42.719 · confidence: high
+    - **Quote:** "the high level thesis of this talk is like no, they're kind of the same thing."
   - [[080-p1CmPZ2j6Lk-agent-reinforcement-fine-tuning-will-hang-cathy-zhou-openai|#80 — Will Hang & Cathy Zhou, OpenAI]] — agent reinforcement fine-tuning as the method for training whole tool-use trajectories.
+    - **Anchor:** `p1CmPZ2j6Lk` 00:02:33.360 → 00:02:37.200 · confidence: high
+    - **Quote:** "agent reinforcement fine-tuning or agent RF is the way to do this"
   - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — the arc from pre-training scale to inference-time tricks to RL at training time.
+    - **Anchor:** `QluDzKVfp6A` 00:05:27.039 → 00:05:28.400 · confidence: high
+    - **Quote:** "pre-training is not giving any gains"
 - **Caveats / counterevidence:** The unification holds most cleanly where tool-use trajectories can be rewarded end to end. Some "reasoning" gains still come from architecture and data changes, not RL alone.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** Reasoning and agency are not two research tracks. Train multi-turn tool use with RL and they become the same loop.
@@ -21,7 +27,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[674-X6NShR2ccOg-lessons-from-trillion-token-deployments-at-fortune-500s-alessandro-cappelli-adaptive-ml|#674 — Alessandro Cappelli, Adaptive ML]] — "Reinforcement learning RL is not just any other algorithm for post-training, but is an algorithm that at its core will bring models to production."
+    - **Anchor:** `X6NShR2ccOg` 00:00:48.800 → 00:01:00.200 · confidence: high
+    - **Quote:** "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
   - [[397-6lTxD_oUjXQ-effective-ai-agents-need-data-flywheels-not-the-next-biggest-llm-sylendran-arunagiri-nvidi|#397 — Sylendran Arunagiri, NVIDIA]] — "It's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
+    - **Anchor:** `6lTxD_oUjXQ` 00:00:15.280 → 00:00:22.199 · confidence: high
+    - **Quote:** "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
 - **Caveats / counterevidence:** Many production systems ship and stay on prompting or retrieval because the cost and ops of RL are not yet justified. The claim is about high-stakes systems that must keep improving, not every product.
 - **Candidate chapters:** 1, 2
 - **Reusable phrasing:** RL is not just another post-training algorithm. It is the one built to turn production feedback back into the model.
@@ -31,6 +41,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — verifiable domains (math, code) turn compute into reliable gains; execution feedback reduces reward-hacking risk; autonomous coding as the "root node" problem.
+    - **Anchor:** `QluDzKVfp6A` 00:16:01.519 → 00:16:03.279 · confidence: high
+    - **Quote:** "autonomous coding as the root node problem"
 - **Caveats / counterevidence:** Verifiability buys scale, not correctness of intent — a solution can pass tests and still be wrong for the task. Single-source claim; corroborating verifiable-reward sources would strengthen it.
 - **Candidate chapters:** 1, 4
 - **Reusable phrasing:** Code is not special because it is important. It is special because it grades itself.
@@ -40,7 +52,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[482--hYqt8M9u_M-the-genai-maturity-curve-or-you-probably-don-t-need-fine-tuning-kyle-corbitt|#482 — Kyle Corbitt]] — "The title of my talk is that you probably don't need fine tuning — this is an awkward title, given that I am doing a fine-tuning platform."
+    - **Anchor:** `-hYqt8M9u_M` 00:00:24.000 → 00:00:32.599 · confidence: medium
+    - **Quote:** "the title of my talk is that you probably don't need fine tuning this is an awkward title um given that I am doing a fine"
   - [[598-cXPYtkosXG4-domain-adaptation-and-fine-tuning-for-domain-specific-llms-abi-aryan|#598 — Abi Aryan]] — adaptation methods run from prompt engineering to retrieval to fine-tuning; the right choice depends on dataset and problem.
+    - **Anchor:** `cXPYtkosXG4` 00:13:49.079 → 00:13:56.040 · confidence: high
+    - **Quote:** "we have three different methods to be able to do domain adaptation we have prompting we have Rags we have fine tuning"
 - **Caveats / counterevidence:** The default flips for high-stakes systems that must keep improving in production, where training becomes necessary (see claim 2). The maturity curve is a sequence, not a verdict against training.
 - **Candidate chapters:** 1
 - **Reusable phrasing:** You probably do not need fine-tuning to reach an MVP. You probably do need training to keep a high-stakes system improving after it ships.
@@ -50,8 +66,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[233-liG97YXaTSA-openthoughts-data-recipes-for-reasoning-models-ryan-marten-bespoke-labs|#233 — Ryan Marten, Bespoke Labs]] — "Open Thoughts, which is our project to create the best open-source reasoning data sets"; OpenThinker reached SOTA among small open reasoning models by curating traces.
+    - **Anchor:** `liG97YXaTSA` 00:00:19.840 → 00:00:25.199 · confidence: high
+    - **Quote:** "Open Thoughts, which is our project to create the best open-source reasoning data sets."
   - [[543-i2vBaFzCEJw-the-hierarchy-of-needs-for-training-dataset-development-chang-she-and-noah-shpak|#543 — Chang She & Noah Shpak]] — model quality depends critically on how the dataset is constructed.
+    - **Anchor:** `i2vBaFzCEJw` 00:01:37.479 → 00:01:42.159 · confidence: high
+    - **Quote:** "you should really care about what you're training on and you should care for it by giving it a nice format"
   - [[397-6lTxD_oUjXQ-effective-ai-agents-need-data-flywheels-not-the-next-biggest-llm-sylendran-arunagiri-nvidi|#397 — Sylendran Arunagiri, NVIDIA]] — the same point from the production side: the data flywheel is the lever, not the parameter count.
+    - **Anchor:** `6lTxD_oUjXQ` 00:00:15.280 → 00:00:22.199 · confidence: high
+    - **Quote:** "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
 - **Caveats / counterevidence:** Model scale still sets the ceiling for the hardest frontier tasks. The claim is that at a given scale, data recipe now separates competitive reasoning models from also-rans.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** The differentiator moved from the number of parameters to the quality of the data pipeline that trains them.
@@ -61,9 +83,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[674-X6NShR2ccOg-lessons-from-trillion-token-deployments-at-fortune-500s-alessandro-cappelli-adaptive-ml|#674 — Alessandro Cappelli, Adaptive ML]] — running PPO means orchestrating four models simultaneously; most teams cannot without infrastructure.
+    - **Anchor:** `X6NShR2ccOg` 00:14:58.120 → 00:15:02.520 · confidence: high
+    - **Quote:** "requires orchestrating not one, but four large language models at the same time."
   - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — PPO-style RLHF keeps four copies of the model in memory; DeepSeek's GRPO still needs three.
+    - **Anchor:** `QluDzKVfp6A` 00:13:56.639 → 00:13:59.839 · confidence: high
+    - **Quote:** "you have to keep four copies of uh different models."
   - [[475-tQTB4MU_z8w-accelerating-mixture-of-experts-training-with-rail-optimized-infiniband-networking-in-crus|#475 — Crusoe]] — mixture-of-experts training distributes layers and depends on a rail-optimized InfiniBand fabric.
+    - **Anchor:** `tQTB4MU_z8w` 00:07:29.000 → 00:07:31.599 · confidence: high
+    - **Quote:** "our rail optimized infin band cluster networking"
   - [[230-OkEGJ5G3foU-full-workshop-reinforcement-learning-kernels-reasoning-quantization-agents-daniel-han|#230 — Daniel Han]] — treats RL through its operational surface: kernels, quantization, agents.
+    - **Anchor:** `OkEGJ5G3foU` 00:00:27.599 → 00:00:31.199 · confidence: high
+    - **Quote:** "today we're going to talk about the deep dive into RL kernels, agents, and quantization."
 - **Caveats / counterevidence:** Managed RL-ops platforms and cheaper variants (e.g. GRPO) are shrinking this cost, so the operational moat may narrow over time.
 - **Candidate chapters:** 1, 2
 - **Reusable phrasing:** The RL technique is not the moat. The ability to run it is.
@@ -73,7 +103,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[335-84Vtz2IL1Ug-fun-stories-from-building-openrouter-and-where-all-this-is-going-alex-atallah-openrouter|#335 — Alex Atallah, OpenRouter]] — "Inference might be the largest market ever in software." (a marketplace routing traffic across dozens of model providers)
+    - **Anchor:** `84Vtz2IL1Ug` 00:00:52.480 → 00:00:54.960 · confidence: high
+    - **Quote:** "inference might be the largest market ever in software"
   - [[316-DeFF3J8T5Pk-how-fast-are-llm-inference-engines-anyway-charles-frye-modal|#316 — Charles Frye, Modal]] — open-weights models and open-source inference servers have made major strides; running a serious agent on open models is now a real option.
+    - **Anchor:** `DeFF3J8T5Pk` 00:01:32.560 → 00:01:34.479 · confidence: high
+    - **Quote:** "possible with Open Weights models where they weren't before."
 - **Caveats / counterevidence:** "Largest market" is Atallah's framing, plausible but not independently sized here. Training and inference are coupled — the same labs and hardware serve both — so the split is analytic, not a hard boundary.
 - **Candidate chapters:** 2, 3
 - **Reusable phrasing:** If the model is the product, inference is the cost of goods sold.
@@ -83,8 +117,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[141-Y2qc0UhDSnc-hacking-the-inference-pareto-frontier-kyle-kranen-nvidia|#141 — Kyle Kranen, NVIDIA]] — "A good model and a good system that takes into account the actual constraints for what you need from your deployment is actually key to the success of both your deployment and the application." (ran NVIDIA's largest inference deployment)
+    - **Anchor:** `Y2qc0UhDSnc` 00:00:24.880 → 00:00:34.880 · confidence: high
+    - **Quote:** "a good model and a good system that takes into account the actual constraints for what you need from your deployment is actually key to the success of both your deployment and the application"
   - [[514-9tvJ_GYJA-o-mastering-llm-inference-optimization-from-theory-to-cost-effective-deployment-mark-moyou|#514 — Mark Moyou, NVIDIA]] — LLM inference is not a normal deployment; managing scale, performance, and cost at once is non-trivial.
+    - **Anchor:** `9tvJ_GYJA-o` 00:00:58.320 → 00:01:06.960 · confidence: high
+    - **Quote:** "controlling the cost of a deployment cuz that's often times the thing that's going to really prevent you from taking this taking this to any meaningful scale"
   - [[548-C1CXwRYbwuQ-making-open-models-10x-faster-and-better-for-modern-application-innovation-dmytro-dima-dzh|#548 — Dmytro Dzhulgakov, Fireworks]] — making open models ~10x faster is a serving problem, not a new model.
+    - **Anchor:** `C1CXwRYbwuQ` 00:03:48.200 → 00:03:50.879 · confidence: high
+    - **Quote:** "quality while being you know up to 10 times faster"
 - **Caveats / counterevidence:** Distinct from claim 6 (RL's operational cost, on the training side): this is about *serving* system properties. The order-of-magnitude figure is a general claim from practitioners, not a controlled benchmark. Model quality still bounds what any system can serve.
 - **Candidate chapters:** 2
 - **Reusable phrasing:** If you want a model to be fast and cheap, you optimize the system, not the model.
@@ -94,9 +134,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[670-zTLJNHj0DeQ-why-mlx-prince-canuma-neywa-labs|#670 — Prince Canuma, Neywa Labs]] — "I want to convince you today to offload some of that subscription completely on device and then all you need to pay is your energy bill." (working demos on consumer Macs; accessibility as the driver)
+    - **Anchor:** `zTLJNHj0DeQ` 00:00:54.080 → 00:01:00.800 · confidence: high
+    - **Quote:** "I want to convince you today to offload some of that subscription completely on device and then all you need to pay is your energy bill."
   - [[007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai|#007 — Adrien Grondin, Locally AI]] — Gemma 4 on an iPhone at 40 tok/s via MLX.
+    - **Anchor:** `a2muGkT4WD4` 00:05:45.920 → 00:05:51.160 · confidence: high
+    - **Quote:** "it can run easily at 40 token 40 token per second."
   - [[582--mRi-B3t6fA-llamafile-bringing-ai-to-the-masses-with-fast-cpu-inference-stephen-hood-and-justine-tunne|#582 — Stephen Hood & Justine Tunney, Llamafile]] — Mozilla's project makes open models run fast on consumer CPUs to democratize access.
+    - **Anchor:** `-mRi-B3t6fA` 00:01:20.400 → 00:01:26.880 · confidence: high
+    - **Quote:** "LL file is an open source project from Mozilla that has the goal of democratizing access to AI"
   - [[307-l614N5W60ls-foundry-local-cutting-edge-ai-experiences-on-device-with-onnx-runtime-olive-emma-ning-micr|#307 — Emma Ning, Microsoft]] — Foundry Local brings on-device AI to cross-platform apps via ONNX Runtime; offline/low-bandwidth is the first reason.
+    - **Anchor:** `l614N5W60ls` 00:00:55.680 → 00:01:03.440 · confidence: high
+    - **Quote:** "how does cloud AI work in environments with low network bandwidth or even offline access?"
 - **Caveats / counterevidence:** "Default" is directional: on-device suits a class of models and workloads, not the frontier's largest models. Most sources are vendor/framework advocates for on-device.
 - **Candidate chapters:** 2, 4
 - **Reusable phrasing:** The cheapest and most private data center may be the one already in your pocket.
@@ -106,9 +154,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[388-0uj9lMI-sIo-luminal-search-based-deep-learning-compilers-joe-fioti|#388 — Joe Fioti, Luminal]] — a deep-learning compiler for CPUs/GPUs/ASICs that discovers efficient kernels (e.g. flash attention) automatically by search.
+    - **Anchor:** `0uj9lMI-sIo` 00:17:27.839 → 00:17:30.880 · confidence: high
+    - **Quote:** "the fastest one in this case just happens to be flash attention."
   - [[068-6guQG_tGt0o-ai-kernel-generation-what-s-working-what-s-not-what-s-next-natalie-serrino-gimlet-labs|#068 — Natalie Serrino, Gimlet Labs]] — AI-generated kernels can meaningfully speed up custom code with no human effort.
+    - **Anchor:** `6guQG_tGt0o` 00:08:51.839 → 00:08:55.839 · confidence: high
+    - **Quote:** "this result achieved a 40% speed up over the baseline on the M4."
   - [[097-q2nHsJVy4FE-compilers-in-the-age-of-llms-yusuf-olokoba-muna|#097 — Yusuf Olokoba, Muna]] — "How do I use more models in more places without having to rebuild or extend?" (portability across targets)
+    - **Anchor:** `q2nHsJVy4FE` 00:00:38.480 → 00:00:43.120 · confidence: high
+    - **Quote:** "How do I use more models in more places without having to rebuild or extend"
   - [[578-7TnkqfX84gI-unlocking-developer-productivity-across-cpu-and-gpu-with-max-chris-lattner|#578 — Chris Lattner, Modular]] — MAX spans GPU compute, CPU preprocessing, and orchestration across vendors without a rewrite.
+    - **Anchor:** `7TnkqfX84gI` 00:05:16.400 → 00:05:19.199 · confidence: high
+    - **Quote:** "max is two things one is an AI framework"
 - **Caveats / counterevidence:** Support level is moderate: sources are the tool-builders, whose talks ("what's working, what's not") admit the automation is partial. How far generated kernels close the gap to expert-tuned code at the frontier is unsettled.
 - **Candidate chapters:** 2
 - **Reusable phrasing:** The optimization that used to gate a deployment behind a specialist is becoming something a compiler or a model produces on demand.
@@ -118,9 +174,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[228-y-UGrYbJsJk-what-every-ai-engineer-needs-to-know-about-gpus-charles-frye-modal|#228 — Charles Frye, Modal]] — AI's extreme demand for math throughput means engineers now need to understand the GPU underneath.
+    - **Anchor:** `y-UGrYbJsJk` 00:05:09.199 → 00:05:12.720 · confidence: high
+    - **Quote:** "they optimize for math bandwidth over memory bandwidth."
   - [[402-3j1dHivahFQ-how-to-build-your-own-ai-data-center-in-2025-paul-gilbert-arista-networks|#402 — Paul Gilbert, Arista Networks]] — "What we do is a plumbing… how you train models, what the infrastructure looks like, and how you do inferencing on the infrastructure."
+    - **Anchor:** `3j1dHivahFQ` 00:00:30.039 → 00:00:41.160 · confidence: high
+    - **Quote:** "what we do is a plumbing uh so I'm not going to talk about agents but more kind of how you train uh models what the infrastructure looks like and how you do inferencing on on the infrastructure"
   - [[345-Zz4QjZsYWK0-the-geopolitics-of-ai-infrastructure-dylan-patel-semianalysis|#345 — Dylan Patel, SemiAnalysis]] — chips, data centers, power, and supply chains are now an arena for geopolitical competition (China/US/Middle East; Huawei closing the gap).
+    - **Anchor:** `Zz4QjZsYWK0` 00:02:37.200 → 00:02:43.200 · confidence: high
+    - **Quote:** "what's interesting about the geopolitics of this is that despite the fact that Huawei is a sanctioned entity, China is a sanctioned country,"
   - [[547-gADhNzFjGeI-breaking-ai-s-1-ghz-barrier-sunny-madra-groq|#547 — Sunny Madra, Groq]] — "Twenty-five years ago we crossed the 1 gigahertz speed barrier in microprocessors." (purpose-built inference silicon as a step change)
+    - **Anchor:** `gADhNzFjGeI` 00:00:17.880 → 00:00:22.439 · confidence: medium
+    - **Quote:** "25 years ago we crossed the 1 gigahertz speed barrier uh in"
 - **Caveats / counterevidence:** The geopolitical claim (#345) is analysis, not a settled forecast; specifics (export controls, Huawei's position) move quickly and date fast. The new-silicon bet (#547) is a vendor's framing of its own chip.
 - **Candidate chapters:** 2, 3
 - **Reusable phrasing:** Movement A is the frontier you can push; Movement B is the ceiling that pushes back.
@@ -130,7 +194,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[361-A0PxE39xaMc-gpu-less-trust-less-limit-less-reimagining-the-confidential-ai-cloud-mike-bursell|#361 — Mike Bursell]] — "AI is transforming everything. Healthcare, finance, automation, digital marketing. But one thing holds it back, and that's trust. How do you run models on sensitive data without handing it over?" (confidential computing)
+    - **Anchor:** `A0PxE39xaMc` 00:00:09.519 → 00:00:23.920 · confidence: high
+    - **Quote:** "AI is transforming everything. Healthcare, finance, automation, digital marketing. But one thing holds it back, and that's trust. How do you run models on sensitive data without handing it over?"
   - [[211-6Tpm4m1YxHk-critical-ai-inference-your-cio-can-trust-sahil-yadav-hariharan-ganesan-telemetrak|#211 — Sahil Yadav & Hariharan Ganesan, Telemetrak]] — a decade deploying AI in healthcare, industrial IoT, and telecom: can we trust the model's decisions in mission-critical use?
+    - **Anchor:** `6Tpm4m1YxHk` 00:00:29.119 → 00:00:41.120 · confidence: high
+    - **Quote:** "over the past 10 years we have deployed AI in various industries from from health um monitoring to industrial IoT to uh network automation in telecom networks"
 - **Caveats / counterevidence:** Support level moderate: both sources are vendors of trust/confidential-inference products, so "first-class requirement" partly reflects their market. The confidentiality (#361) and reliability (#211) strands are distinct problems joined here under one theme; they may separate in later drafts.
 - **Candidate chapters:** 2, and the Part II regulated-domain chapters (finance/legal/medicine)
 - **Reusable phrasing:** Trust is not a property of the model in isolation. It is a property of how and where it is served.
