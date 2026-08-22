@@ -854,14 +854,23 @@
 - **Why it matters:** Writing evals from first principles produces tests that seem rigorous but miss the actual failure modes that appear in production. Operational history — support escalations, regression incidents, painful edge cases — already contains the judgment; the work is extraction, not invention. This makes evals a form of institutional memory, not just a quality gate.
 - **Support level:** strong
 - **Supporting sources:**
-  - [[060-xOJnLk4UMQ4-a-recipe-for-building-reliable-ai-products-govind-jain-stripe|#60 — Govind Jain, Stripe]] — the concrete recipe: crawl commit history for real fixes, revert each fix, score whether the agent can reproduce the known-good state.
-    - **Anchor:** `xOJnLk4UMQ4` 00:00:00.000 → 00:00:00.000 · confidence: high
-    - **Quote:** "take a real codebase, crawl its commit history, find the commits that fixed actual problems, and turn each fix into a graded task"
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — production observability is what makes eval sets grounded rather than synthetic.
     - **Anchor:** `1izYWsokr9s` 00:01:55.920 → 00:02:01.920 · confidence: high
     - **Quote:** "handle state potentially over long periods of time. There needs to be human interaction for approvals"
 - **Caveats / counterpoints:** Operational history has survivorship bias — it records failures that were noticed, not failures that went undetected. A pure pull-from-production strategy misses the unknown unknowns that synthetic evals can probe.
 - **Candidate chapters:** 4
+
+> **Correction (2026-08-22):** This entry previously also cited "Govind Jain,
+> Stripe" (video id `xOJnLk4UMQ4`, playlist #60) for a "crawl commit history,
+> revert each fix, grade reproduction" recipe. That video does not exist
+> anywhere in the ingested corpus — no transcript, no video note — and the
+> anchor's `00:00:00.000 → 00:00:00.000` timestamp was a placeholder, unlike
+> every other verified entry in this ledger. Playlist index #60 actually
+> belongs to a different talk (Jake Nations, Netflix, "The Infinite Software
+> Crisis"). Found during a full 199-quote verification sweep (196 verified
+> verbatim, this the only unrecoverable one); the quote never made it into the
+> manuscript, so no reader-facing content was affected. Removed rather than
+> re-anchored, since no source could be located to verify it against.
 - **Reusable phrasing:** The escalation logs, incident tickets, and bug-fix commits you already have are an unmined eval set; the work of authoring it has mostly been done for you by the failures themselves.
 
 ## 46) Once an AI system can act autonomously, bounding its authority becomes the price of deployment
