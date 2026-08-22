@@ -134,3 +134,65 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Caveats / counterevidence:** Support level moderate: both sources are vendors of trust/confidential-inference products, so "first-class requirement" partly reflects their market. The confidentiality (#361) and reliability (#211) strands are distinct problems joined here under one theme; they may separate in later drafts.
 - **Candidate chapters:** 2, and the Part II regulated-domain chapters (finance/legal/medicine)
 - **Reusable phrasing:** Trust is not a property of the model in isolation. It is a property of how and where it is served.
+
+## 13) The open-model gap has largely closed
+- **Why it matters:** The industry assumed the best models would stay closed and open weights would trail by a generation forever. DeepSeek-R1 broke that assumption — an open model catching and passing GPT-4, built without a closed lab's budget. It permanently changes who can build *on* the frontier rather than merely rent it: when the best weights are downloadable, a team runs them on its own infrastructure, fine-tunes them, and inspects them, instead of living inside another company's API rate limits and pricing.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[439-wJwTlvb_TSo-wtf-do-people-use-open-models-for|#439 — Eugene Cheah, Featherless.ai]] — "the first open source model to catch up and surpass GPT-4," proving "you do not need a billion dollars to compete with the big labs"; >50,000 models uploaded to Hugging Face per month.
+  - [[189-3WV1vT0B0cg-the-rise-of-open-models-in-the-enterprise-amir-haghighat-baseten|#189 — Amir Haghighat, Baseten]] — the DeepSeek-R1 news cycle broke open models out of the AI-engineering bubble onto the agenda of the largest enterprises.
+  - [[074-lY1iFbDPRlw-minimax-m2-building-the-1-open-model-olive-song-minimax|#74 — Olive Song, MiniMax]] — MiniMax M2 presented as the #1 open model, built for agentic coding.
+- **Caveats / counterevidence:** "Surpass GPT-4" (#439) and "#1 open model" (#74) are the speakers' own framings, not independently benchmarked here. Parity holds on many tasks, not uniformly at the very top; the largest closed frontier models may still lead on the hardest tasks. The lead is measured in months, which is the point — but it is a narrowing lead, not a permanent reversal.
+- **Candidate chapters:** 3
+- **Reusable phrasing:** The gap the industry assumed was permanent turned out to be a lead measured in months, and a lead measured in months is not a moat.
+
+## 14) Perceived "stagnation" is a training-budget story, not a ceiling
+- **Why it matters:** The common complaint that the frontier has plateaued mistakes a spending decision for a physical limit. Today's flagships are close to 2022-era architecture and pre-training, refined rather than replaced; gains come from training longer and from post-training, not from a new way to build. The leap is still available — it just costs a training run nobody has finished paying for. This is why hardware and strategy are inseparable: what a lab can build is set by what it can afford to train.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[476-gFyBdBm0AGo-system-design-for-next-gen-frontier-models-dylan-patel-semianalysis|#476 — Dylan Patel, SemiAnalysis]] — "The models that we're using today are largely the same as the models that were trained in 2022"; flagships are smaller models trained for longer (GPT-4/Turbo/4o; 3.5 Sonnet smaller than Opus but better because trained better).
+- **Caveats / counterevidence:** Single-source; Patel's analysis, not a settled consensus. Some argue the plateau is real and architectural, not budgetary. A corroborating source on training-budget vs. capability would strengthen it before it carries public weight.
+- **Candidate chapters:** 3
+- **Reusable phrasing:** The plateau is not the ceiling of the architecture. It is the lag between what has been trained and what could be.
+
+## 15) Frontier progress is bottleneck-hunting, not broad improvement
+- **Why it matters:** Labs advance by identifying the single most limiting weakness in the current best system and unblocking it — a diagnostic discipline, where naming the right bottleneck is harder than generating fixes. This also explains how a smaller team competes without matching compute: if the next gain is one correct unblocking rather than broad expensive improvement, focus can beat scale.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — Raia Hadsell, DeepMind]] — progress toward general intelligence marked by identifying fundamental bottlenecks in existing models and building the architecture/training fix that removes them.
+  - [[267-8EQo4J2BWKw-thinking-deeper-in-gemini-jack-rae-google-deepmind|#267 — Jack Rae, DeepMind]] — thinking framed as "unblocking bottlenecks towards intelligence"; identifying the crucial shortcoming often makes the fix follow. (Worked example inside Gemini; #13 carries the general form.)
+- **Caveats / counterevidence:** Both sources are DeepMind, so this is one lab's account of research culture; balance against non-Google labs before generalizing. #267 is also cited in Chapter 1 (for how thinking is trained); here the emphasis is research method, with #13 as spine to avoid re-arguing Ch1.
+- **Candidate chapters:** 1, 3
+- **Reusable phrasing:** Frontier progress is a sequence of correctly chosen bottlenecks, and choosing them is the skill that separates the labs.
+
+## 16) Code is where labs learn to model computation, not just imitate it
+- **Why it matters:** Frontier labs start reasoning work in code, and the reason is deeper than code being lucrative or easy to grade. Code is the first world simple enough to simulate honestly — constrained, rule-bound, and executable — so a model can be trained to predict what a program *does*, not just how it looks. The ambition is modeling computation itself, the semantics under the syntax, and reasoning learned there is meant to generalize outward.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[067-sYgE4ppDFOQ-code-world-model-building-world-models-for-computation-jacob-kahn-fair-meta|#67 — Jacob Kahn, FAIR Meta]] — "Our primary goal is to build models that reason, plan and make decisions. And we start with code because it's an interesting sandbox in which to think about reasoning"; goal is predicting future observations (execution), not syntax.
+  - [[049-OGCG_QkCcZo-agi-the-path-forward-jason-warner-eiso-kant-poolside|#49 — Jason Warner & Eiso Kant, Poolside]] — "Poolside exists to close the gap between models and human intelligence… We're building our own models from scratch to do this," starting from code, pairing next-token prediction with RL.
+- **Caveats / counterevidence:** Distinct from claim 3 (code as the *RL-scaling* domain because its rewards are automatically verifiable, Ch 1): this is the *world-modeling* rationale — code as a simulable world — not the reward-mechanics rationale. The two are complementary; the reward-verifiability argument stays in Ch 1. Whether computation-modeling in code generalizes to non-code reasoning is the open bet both talks are making, not a settled result.
+- **Candidate chapters:** 3
+- **Reusable phrasing:** Code is chosen as the first world simple enough to simulate honestly — picked for its rule-boundedness, not just its gradeability.
+
+## 17) Benchmarks are cultural artifacts that steer the whole field
+- **Why it matters:** A benchmark looks like a neutral scoreboard but acts like a steering wheel. What the community agrees to measure pulls training runs, data curation, and architecture toward the abilities it rewards — the measurement becomes a self-fulfilling prophecy about what the next generation is good at. Deciding which benchmark counts is deciding, in advance, what the next models are trained to do, which makes it a source of standard-setting power. And it makes the field's difficulty measuring well a load-bearing problem, not a detail.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[253-W3khHzajE04-benchmarks-are-memes-how-what-we-measure-shapes-ai-and-us-alex-duffy-every-to|#253 — Alex Duffy, Every.to]] — benchmarks as memes (ideas that replicate and shape behavior); "what we measure shapes AI — and us"; the things we choose to measure become self-fulfilling prophecies.
+  - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify]] — 2025 survey (n=500): evaluation named the single most painful part of AI engineering. (Supplies the practitioner-side fact — the field cannot measure well — not the steering claim itself.)
+- **Caveats / counterevidence:** The steering claim rests single-source on #253, whose framing ("benchmarks are memes") is a rhetorical thesis, not a measured finding. #137 documents that evaluation is hard, which is adjacent but not the same as "benchmarks shape what gets built"; it must not be read as evidence for the steering mechanism. A corroborating source on benchmark-driven development would strengthen this.
+- **Candidate chapters:** 1, 3
+- **Reusable phrasing:** A benchmark is not a scoreboard. It is a steering wheel — and a field that cannot measure well drives toward whatever is easiest to score.
+
+## 18) Open source is a strategy, not charity
+- **Why it matters:** When a lab releases its weights, the move is deliberate, not generous: it builds an ecosystem and sets the standard others build on. Every download, fine-tune, and deployment builds on the releasing lab's format, tokenizer, and conventions — so open weights are how a lab that is not first in raw capability can become the substrate the field standardizes on. The labs are explicit that this is the point.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Omar Sanseviero, DeepMind]] — "Open models means… you can download, you can run in your own infrastructure, your own devices. You can fine-tune for your own use cases."
+  - [[528-AUuktOQPWYg-decoding-mistral-ai-s-large-language-models-devendra-chaplot|#528 — Devendra Chaplot, Mistral AI]] — frames the talk around "why we do open source and how we do open source," from a lab with commercial models and platform alongside the open ones.
+  - [[480-Xmkl27AM2VQ-unveiling-the-latest-gemma-model-advancements-kathleen-kenealy|#480 — Kathleen Kenealy, DeepMind]] — Gemma's north star: "building something to empower and accelerate the amazing work being done by the open source community," measured by what gets built on top.
+  - [[400-b0xlsQ_6wUQ-the-future-of-qwen-a-generalist-agent-model-junyang-lin-alibaba-qwen|#400 — Junyang Lin, Alibaba Qwen]] — Qwen shipped continuously as an open series since 2023 toward the stated goal of a generalist agent model.
+- **Caveats / counterevidence:** Sources are the releasing labs themselves, so the "strategy" reading is partly their own narrative; a critic might see competitive pressure or talent signaling as equal drivers. The ecosystem-control mechanism is argued, not measured here.
+- **Candidate chapters:** 3
+- **Reusable phrasing:** Open weights are how a lab that is not first in raw capability can still become the substrate the field standardizes on.
