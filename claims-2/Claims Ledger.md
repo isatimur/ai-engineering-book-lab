@@ -298,7 +298,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — modern TTS is language modeling over discrete speech tokens, streamed autoregressively or diffusion-generated and optimized for low first-audio latency inside interactive agents.
+    - **Anchor:** `3jGAU2sbAyY` 00:08:58.640 → 00:09:06.560 · confidence: high
+    - **Quote:** "We're trying to uh transform the problem as a language modeling problem because humanity is extremely good at modeling sequences of token."
   - [[385-CXsbjcrf_5g-text-to-speech-data-preparation-and-fine-tuning-workshop-ronan-mcgovern|#385 — Ronan McGovern]] — a fine-tuning workshop built to teach how token-based TTS models (Sesame's CSM-1B) work, trained on a single target voice with the same data-prep-and-fine-tune loop as any language model.
+    - **Anchor:** `CXsbjcrf_5g` 00:00:37.360 → 00:00:41.680 · confidence: high
+    - **Quote:** "You should be able uh to understand how token-based texttospech models work."
 - **Caveats / counterevidence:** The convergence is architectural, not universal — diffusion and autoregression coexist, and #663 notes the dominant trend "can change very quickly." Distinct from claim 21's *consolidation* mechanism: this is about the shape of a single non-text model (tokens), not about collapsing many models into one.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** When speech becomes tokens, speech engineering becomes token engineering.
@@ -308,6 +312,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[245-LxQsQ3vZDqo-teaching-gemini-to-speak-youtube-adapting-llms-for-video-recommendations-to-2b-dau-devansh|#245 — Devansh Tandon, YouTube]] — "The application of LLMs to recommendations is going to be a bigger consumer application than search"; recommendation is "a bigger problem that is underhyped because it's kind of transparent to the user."
+    - **Anchor:** `LxQsQ3vZDqo` 00:00:38.000 → 00:00:42.879 · confidence: high
+    - **Quote:** "the application of LLMs to recommendations is going to be a bigger consumer application than search."
 - **Caveats / counterevidence:** Single-source and the speaker's own framing (like claims 14 and 17), not independently sized. "Bigger" is asserted by watch-time reach, not measured against search revenue or usage. The consolidation trend it rides on (claim 21) is far better attested than the size ranking itself.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** The biggest LLM application may be the one users never see: the recommender deciding what comes next.
@@ -317,8 +323,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[247-AbZ4IYGbfpQ-netflix-s-big-bet-one-model-to-rule-recommendations-yesu-feng-netflix|#247 — Yesu Feng, Netflix]] — "to use one foundation model to cover all the recommendation use cases," behind every row of a homepage previously served by specialized models.
+    - **Anchor:** `AbZ4IYGbfpQ` 00:00:26.400 → 00:00:29.920 · confidence: high
+    - **Quote:** "to use one foundation model to cover all the recommendation use cases."
   - [[245-LxQsQ3vZDqo-teaching-gemini-to-speak-youtube-adapting-llms-for-video-recommendations-to-2b-dau-devansh|#245 — Devansh Tandon, YouTube]] — adapting Gemini into a recommender that speaks in video IDs, replacing the traditional stack of large embedding models.
+    - **Anchor:** `LxQsQ3vZDqo` 00:02:35.360 → 00:02:39.360 · confidence: high
+    - **Quote:** "how can we rethink this recommendation system on top of Gemini,"
   - [[248-U0S6CfzAY5c-360brew-llm-based-personalized-ranking-and-recommendation-hamed-and-maziar-linkedin-ai|#248 — Hamed & Maziar, LinkedIn]] — a single foundation model for ranking and recommendation taken to production across the platform's many surfaces.
+    - **Anchor:** `U0S6CfzAY5c` 00:17:35.280 → 00:17:37.840 · confidence: high
+    - **Quote:** "We tried we were trying to see if you can actually make it a foundation model"
 - **Caveats / counterevidence:** Three independent large-scale confirmations make the trend strong, but all three are the teams building the thing they describe; whether one model matches a tuned fleet on every surface is their in-progress bet, not a settled result. This is the *consolidation* mechanism; claim 19 (tokenization) is the other, distinct convergence force.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** The move that produced the general-purpose chatbot — one model instead of many — is now the default architecture for recommendation at scale.
@@ -328,7 +340,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — streaming TTS is designed for the lowest possible first-audio latency inside an interactive agent; realtime interaction quality is tightly coupled to inference architecture.
+    - **Anchor:** `3jGAU2sbAyY` 00:02:45.920 → 00:02:53.920 · confidence: high
+    - **Quote:** "it's also very important that as soon as you have the first audio packets, you you you start to um to voice them out."
   - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — the natural "Her" conversation is blocked not by raw model quality but by end-to-end latency, tool-call delay, interruption handling, and turn-taking — architecture problems, not polish; as synthesis/recognition get cheaper the bottleneck moves to real-time interaction design.
+    - **Anchor:** `P_RI1kCkRbo` 00:05:07.840 → 00:05:14.320 · confidence: high
+    - **Quote:** "The latency is still quite high. The ability to handle simultaneous speaking between the user and the system is not there."
 - **Caveats / counterevidence:** Deliberate seam with Chapter 2. Ch 2 owns latency-as-*cost* (the $1/hr voice-serving economics, #147); this claim owns latency-as-*architecture* (streaming generation, first-audio latency, turn-taking). The two are the same budget seen from opposite sides and must not be re-argued as one.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** For a real-time model, latency is not tuned at deployment — it is designed into how the model generates.
@@ -338,7 +354,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[244-P370D8Kmlkw-the-state-of-generative-media-gorkem-yurtseven-fal|#244 — Gorkem Yurtseven, fal]] — "It's so nice to see a generative media track in the AI engineer conference this year… the way we define it is a generative video, audio, or image"; from a platform serving many such models and partnering with closed-source providers, the field is a catalog of specialized models chained under control, not one generalist.
+    - **Anchor:** `P370D8Kmlkw` 00:00:15.120 → 00:00:20.880 · confidence: medium
+    - **Quote:** "It's so nice to see a generative media track in the AI conference, AI engineer conference"
   - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Guillaume Vernade, DeepMind]] — the concrete instance: chaining Gemini (prompt author) into Imagen, Veo, and Lyria as separate model families in sequence; falling per-clip video prices make iterating a prompt many times economically viable.
+    - **Anchor:** `BcWFc3H7Khg` 00:11:46.160 → 00:11:52.880 · confidence: high
+    - **Quote:** "basically we are going to use uh Gemini to come up with prompts and then the gen media to create uh the content for the prompts"
 - **Caveats / counterevidence:** Support moderate: #244 is a platform vendor whose product *is* multi-model orchestration, and #692 is one lab's workshop, so "compose, don't consolidate" partly reflects who is speaking. DeepMind's own stated north star is a single world model across all modalities — so the composition pattern may be a stage, not an endpoint. #692 kept to the chaining pattern and one price point, not used as spine (vendor-talk discipline, per Ch 2).
 - **Candidate chapters:** 4
 - **Reusable phrasing:** In generative media the product is not one great model — it is composing several specialized ones well.
@@ -348,7 +368,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[174-iS9YFW28XyM-waymo-s-emma-teaching-cars-to-think-jyh-jing-hwang-waymo|#174 — Jyh-Jing Hwang, Waymo]] — EMMA is an end-to-end multimodal model for autonomous driving, taking sensor input to driving decisions in the lineage of end-to-end driving research from ~2020; the driving stack framed as a single model problem ("Teaching Cars to Think") rather than an assembly of parts.
+    - **Anchor:** `iS9YFW28XyM` 00:06:34.000 → 00:06:41.600 · confidence: high
+    - **Quote:** "we want to have a more generalizable time driving system by leveraging Gemini or other multimodal large language models."
   - [[165-mWKYvT9Lc50-what-is-a-humanoid-foundation-model-an-introduction-to-gr00t-n1-annika-aastha|#165 — Annika & Aastha, NVIDIA]] — GR00T N1 presented as a build-the-model problem: "how you go about building a robotics foundation model," the humanoid's control trained as a foundation model rather than programmed as a controller.
+    - **Anchor:** `mWKYvT9Lc50` 00:00:28.080 → 00:00:30.080 · confidence: high
+    - **Quote:** "how you go about building a robotics foundation model."
 - **Caveats / counterevidence:** EMMA is end-to-end *multimodal*, not tokenized-autoregressive — it rides claim 21's consolidation mechanism, not claim 19's tokenization one; do not conflate the two. Both talks are the builders' own accounts of in-progress systems. These same two sources reprise in Chapter 5, where the physical world is treated as a domain rather than a model — cited here as the closer of Part I, not deduplicated away.
 - **Candidate chapters:** 4, 5
 - **Reusable phrasing:** The last modality the model-building discipline reached is the physical one — the car and the humanoid as foundation models, not programmed controllers.
