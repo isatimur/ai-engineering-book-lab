@@ -196,3 +196,63 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Caveats / counterevidence:** Sources are the releasing labs themselves, so the "strategy" reading is partly their own narrative; a critic might see competitive pressure or talent signaling as equal drivers. The ecosystem-control mechanism is argued, not measured here.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** Open weights are how a lab that is not first in raw capability can still become the substrate the field standardizes on.
+
+## 19) Non-text model architectures are converging on the LLM template by tokenization
+- **Why it matters:** Speech, and modalities like it, are being cut into discrete tokens and generated one at a time — autoregressively or by diffusion — exactly the way a language model generates text. The old offline synthesis stack, which rendered a whole utterance from a fixed representation, gives way to something that inherits the LLM's scaffolding wholesale. That means the systems concerns of text models (token budgets, streaming, first-token latency) transfer directly, and so do the skills: when speech is tokens, speech engineering becomes token engineering.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — modern TTS is language modeling over discrete speech tokens, streamed autoregressively or diffusion-generated and optimized for low first-audio latency inside interactive agents.
+  - [[385-CXsbjcrf_5g-text-to-speech-data-preparation-and-fine-tuning-workshop-ronan-mcgovern|#385 — Ronan McGovern]] — a fine-tuning workshop built to teach how token-based TTS models (Sesame's CSM-1B) work, trained on a single target voice with the same data-prep-and-fine-tune loop as any language model.
+- **Caveats / counterevidence:** The convergence is architectural, not universal — diffusion and autoregression coexist, and #663 notes the dominant trend "can change very quickly." Distinct from claim 21's *consolidation* mechanism: this is about the shape of a single non-text model (tokens), not about collapsing many models into one.
+- **Candidate chapters:** 4
+- **Reusable phrasing:** When speech becomes tokens, speech engineering becomes token engineering.
+
+## 20) Recommendation may be the largest LLM application of all — bigger than search
+- **Why it matters:** The public argument about LLMs is search versus chatbot. The bigger surface is invisible: recommendation decides what billions of people watch and read next, and it is being rebuilt on foundation models. If the claim holds, the center of gravity of applied LLMs is a problem users never see and the discourse barely mentions.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[245-LxQsQ3vZDqo-teaching-gemini-to-speak-youtube-adapting-llms-for-video-recommendations-to-2b-dau-devansh|#245 — Devansh Tandon, YouTube]] — "The application of LLMs to recommendations is going to be a bigger consumer application than search"; recommendation is "a bigger problem that is underhyped because it's kind of transparent to the user."
+- **Caveats / counterevidence:** Single-source and the speaker's own framing (like claims 14 and 17), not independently sized. "Bigger" is asserted by watch-time reach, not measured against search revenue or usage. The consolidation trend it rides on (claim 21) is far better attested than the size ranking itself.
+- **Candidate chapters:** 4
+- **Reusable phrasing:** The biggest LLM application may be the one users never see: the recommender deciding what comes next.
+
+## 21) The consolidation move is "one foundation model for all of it"
+- **Why it matters:** The largest personalization surfaces are collapsing a zoo of task-specific models into a single foundation model that covers every recommendation surface. It is the same architectural move that produced the general-purpose chatbot — replace many bespoke models with one generalist — applied to a problem that predates chatbots by two decades. It relocates the engineering from maintaining a fleet of narrow models to training and serving one large one.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[247-AbZ4IYGbfpQ-netflix-s-big-bet-one-model-to-rule-recommendations-yesu-feng-netflix|#247 — Yesu Feng, Netflix]] — "to use one foundation model to cover all the recommendation use cases," behind every row of a homepage previously served by specialized models.
+  - [[245-LxQsQ3vZDqo-teaching-gemini-to-speak-youtube-adapting-llms-for-video-recommendations-to-2b-dau-devansh|#245 — Devansh Tandon, YouTube]] — adapting Gemini into a recommender that speaks in video IDs, replacing the traditional stack of large embedding models.
+  - [[248-U0S6CfzAY5c-360brew-llm-based-personalized-ranking-and-recommendation-hamed-and-maziar-linkedin-ai|#248 — Hamed & Maziar, LinkedIn]] — a single foundation model for ranking and recommendation taken to production across the platform's many surfaces.
+- **Caveats / counterevidence:** Three independent large-scale confirmations make the trend strong, but all three are the teams building the thing they describe; whether one model matches a tuned fleet on every surface is their in-progress bet, not a settled result. This is the *consolidation* mechanism; claim 19 (tokenization) is the other, distinct convergence force.
+- **Candidate chapters:** 4
+- **Reusable phrasing:** The move that produced the general-purpose chatbot — one model instead of many — is now the default architecture for recommendation at scale.
+
+## 22) For live modalities, latency is a model-architecture constraint, not just a serving cost
+- **Why it matters:** When a model talks back in real time, the serving budget stops being something optimized after the fact and becomes something the architecture is built around. A voice model is shaped to emit its first audio as fast as possible, because a voice agent that pauses to think has already broken the illusion. The hard part of a real-time model is a systems problem baked into how it generates — streaming, turn-taking, interruption — not a knob turned at deployment.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — streaming TTS is designed for the lowest possible first-audio latency inside an interactive agent; realtime interaction quality is tightly coupled to inference architecture.
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — the natural "Her" conversation is blocked not by raw model quality but by end-to-end latency, tool-call delay, interruption handling, and turn-taking — architecture problems, not polish; as synthesis/recognition get cheaper the bottleneck moves to real-time interaction design.
+- **Caveats / counterevidence:** Deliberate seam with Chapter 2. Ch 2 owns latency-as-*cost* (the $1/hr voice-serving economics, #147); this claim owns latency-as-*architecture* (streaming generation, first-audio latency, turn-taking). The two are the same budget seen from opposite sides and must not be re-argued as one.
+- **Candidate chapters:** 4
+- **Reusable phrasing:** For a real-time model, latency is not tuned at deployment — it is designed into how the model generates.
+
+## 23) Generative media is productized as an orchestration stack, not a single model
+- **Why it matters:** Consolidation is the dominant move in the non-text model layer, and generative media is the deliberate exception. The craft is not one great model but composing several specialized ones — image, video, music — under structured control. That makes it the counter-case that shows consolidation is a design choice, not a law, and it moves the discipline from "train one model" toward "compose several well."
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[244-P370D8Kmlkw-the-state-of-generative-media-gorkem-yurtseven-fal|#244 — Gorkem Yurtseven, fal]] — "It's so nice to see a generative media track in the AI engineer conference this year… the way we define it is a generative video, audio, or image"; from a platform serving many such models and partnering with closed-source providers, the field is a catalog of specialized models chained under control, not one generalist.
+  - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Guillaume Vernade, DeepMind]] — the concrete instance: chaining Gemini (prompt author) into Imagen, Veo, and Lyria as separate model families in sequence; falling per-clip video prices make iterating a prompt many times economically viable.
+- **Caveats / counterevidence:** Support moderate: #244 is a platform vendor whose product *is* multi-model orchestration, and #692 is one lab's workshop, so "compose, don't consolidate" partly reflects who is speaking. DeepMind's own stated north star is a single world model across all modalities — so the composition pattern may be a stage, not an endpoint. #692 kept to the chaining pattern and one price point, not used as spine (vendor-talk discipline, per Ch 2).
+- **Candidate chapters:** 4
+- **Reusable phrasing:** In generative media the product is not one great model — it is composing several specialized ones well.
+
+## 24) Embodiment is the frontier's next modality, expressed as a foundation model
+- **Why it matters:** The consolidation move does not stop at the screen. Driving and humanoid robotics are now framed as foundation-model problems — one end-to-end model that perceives, plans, and acts, replacing a modular pipeline of engineered components. It is the same build-the-model discipline pointed at the physical world, and it is the seam where Part I's model layer hands off to Part II's domains.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[174-iS9YFW28XyM-waymo-s-emma-teaching-cars-to-think-jyh-jing-hwang-waymo|#174 — Jyh-Jing Hwang, Waymo]] — EMMA is an end-to-end multimodal model for autonomous driving, taking sensor input to driving decisions in the lineage of end-to-end driving research from ~2020; the driving stack framed as a single model problem ("Teaching Cars to Think") rather than an assembly of parts.
+  - [[165-mWKYvT9Lc50-what-is-a-humanoid-foundation-model-an-introduction-to-gr00t-n1-annika-aastha|#165 — Annika & Aastha, NVIDIA]] — GR00T N1 presented as a build-the-model problem: "how you go about building a robotics foundation model," the humanoid's control trained as a foundation model rather than programmed as a controller.
+- **Caveats / counterevidence:** EMMA is end-to-end *multimodal*, not tokenized-autoregressive — it rides claim 21's consolidation mechanism, not claim 19's tokenization one; do not conflate the two. Both talks are the builders' own accounts of in-progress systems. These same two sources reprise in Chapter 5, where the physical world is treated as a domain rather than a model — cited here as the closer of Part I, not deduplicated away.
+- **Candidate chapters:** 4, 5
+- **Reusable phrasing:** The last modality the model-building discipline reached is the physical one — the car and the humanoid as foundation models, not programmed controllers.
