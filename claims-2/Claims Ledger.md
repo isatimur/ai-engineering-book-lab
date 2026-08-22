@@ -555,7 +555,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[677-FlzpEGHNVKQ-building-a-chess-coach-anant-dole-and-asbjorn-steinskog-take-take-take|#677 — Dole & Steinskog, Play Magnus]] — Stockfish computes the ground-truth evaluation, a rating-aware network predicts human move probability, and hand-built detectors extract tactical structure; the LLM (Gemini Flash) only translates that structured package into English and is explicitly forbidden from reasoning about the position, because LLMs hallucinate moves and cannot calculate but explain well once handed the analysis.
+    - **Anchor:** `FlzpEGHNVKQ` 00:08:56.360 → 00:08:58.520 · confidence: high
+    - **Quote:** "the LLM's job is only to translate this information"
   - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Quoraishee & Song, NYT]] — "Our puzzles are made by people. They're not made by AI"; "There's no AI in the games themselves." The ground truth of the game stays human-authored; the AI lives at the edges.
+    - **Anchor:** `418t26CVz-w` 00:00:38.840 → 00:00:39.800 · confidence: high
+    - **Quote:** "Our puzzles are made by people."
 - **Caveats / counterevidence:** #677 carries the claim with a rich, synthesized note; #918's note is auto-generated boilerplate, so its leg rests on its verbatim transcript-excerpt quotes only. Both are the builders' own accounts. The claim is about *where* the model sits (a narrow supporting lane), not that models are useless in these domains — the same systems lean on generation heavily where truth is not at stake.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** In a subjective domain the model is a translator, not a judge — it owns the words, and a structured system owns the ground.
