@@ -569,7 +569,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[588-_KFbT6eph5A-using-ai-to-build-an-infinite-game-jeff-schomay|#588 — Jeff Schomay]] — "I made a game with 100% AI generated content"; a game needs cheap disposable ideas while prototyping and near-infinite depth to play, and the description cue frames the tension as generation being easy while *good* content is the hard part.
+    - **Anchor:** `_KFbT6eph5A` 00:00:25.320 → 00:00:28.960 · confidence: high
+    - **Quote:** "I made a game with 100% AI generated content"
   - [[827-grdoOC1BT1s-think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta|#827 — An & Hoe, Meta]] — the talk's own title, "Think You Can Build a Game with AI? Think Again!", carries the harder-than-it-looks caution.
+    - **Anchor:** `grdoOC1BT1s` 00:04:23.680 → 00:04:25.000 · confidence: high
+    - **Quote:** "everybody can build a game over the weekend,"
 - **Caveats / counterevidence:** Support is moderate: both notes are largely boilerplate. #827 contributes only its title; #588's description cue truncates exactly where its "but making content…" argument would resolve, so the "generation is easy, judgment is hard" reading is supported by the title-plus-cue framing, not a full transcript read. A read of both transcripts would confirm or narrow it.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Generating game content is cheap; deciding what is worth generating is not — and that is where building a game with AI still breaks.
