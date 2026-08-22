@@ -14,16 +14,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:43:30+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Jaspreet Singh shares a practical take on How Intuit uses LLMs to explain taxes to millions of taxpayers. I will talk about how Intuit uses LLMs to explain tax situations to Turbotax users. Key angle: keeps returning to production-grade engineering."
+summary: "Intuit keeps LLMs out of tax calculations, using a deterministic tax engine for the numbers and a guardrail model to catch hallucinated figures before they reach the taxpayer."
 ---
 # How Intuit uses LLMs to explain taxes to millions of taxpayers - Jaspreet Singh, Intuit
 
 ## Summary
-Jaspreet Singh shares a practical take on How Intuit uses LLMs to explain taxes to millions of taxpayers. I will talk about how Intuit uses LLMs to explain tax situations to Turbotax users. Key angle: keeps returning to production-grade engineering.
+Jaspreet Singh (Intuit) describes TurboTax's tax-explanation assistant, and the central design decision is architectural: the LLM never calculates a tax number — every figure comes from Intuit's proprietary, deterministic tax knowledge engine, and a separate guardrail ML model checks each LLM-generated explanation against those numbers to catch hallucination before it reaches the user. In-house tax analysts act as the prompt engineers and build the initial manual, golden-dataset evaluations that automated LLM-as-judge scoring is later trained against, precisely because a wrong number carries legal liability — a point an audience question raised explicitly and Singh confirmed Intuit "focuses heavily on legal and privacy controls." Model changes are treated as high-risk events: even upgrading between versions of the same vendor's model (Claude Instant to Claude Haiku) required a full re-evaluation cycle, and IRS form changes each tax year force the underlying knowledge engine and prompts to be rebuilt annually. Latency is a load-bearing product constraint, not a nuisance — complex tax situations balloon prompt size, and combined with April 15 filing-deadline traffic spikes, this forced explicit fallback UX design rather than an assumption of fast LLM responses.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- The verification mechanism is architectural, not just prompted: keep the LLM out of the calculation path entirely and gate its explanatory text with a dedicated hallucination-checking model before it reaches a taxpayer.
+- Domain experts (tax analysts) are folded into the pipeline as prompt engineers and as the source of the golden eval set — legal liability for a wrong number is the stated reason.
+- Regulatory cadence (IRS forms change yearly) and seasonal traffic (the April 15 filing deadline) are treated as recurring engineering constraints, not one-off features.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=_zl_zimMRak

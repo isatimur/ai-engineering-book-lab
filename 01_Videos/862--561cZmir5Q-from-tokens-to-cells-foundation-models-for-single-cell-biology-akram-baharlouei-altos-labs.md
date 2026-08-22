@@ -15,17 +15,18 @@ themes:
   - "RAG & Retrieval"
 ingested_at: 2026-07-26T22:48:27+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Cell Biology - Akram Baharlouei shares a practical take on From Tokens to Cells: Foundation Models for Single."
+summary: "A research talk on single-cell biology foundation models and data-quality tradeoffs, with no agent, verification, or regulatory content despite the health domain tag."
 ---
 
 # From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs
 
 ## Summary
-Cell Biology - Akram Baharlouei shares a practical take on From Tokens to Cells: Foundation Models for Single.
+Akram Baharlouei (Altos Labs) surveys foundation models for single-cell biology, framed around cellular reprogramming (the Yamanaka factors) and the goal of a "virtual cell." The core domain-forced constraint is data quality, not model architecture: RNA-seq measurements are single time-point snapshots of a continuously changing cell, noisy from both biological heterogeneity and lab/instrument variation, so scaling the dataset alone doesn't fix the signal. Benchmarking work he cites (two NeurIPS papers) found that transformer-based single-cell foundation models — which treat a cell as a "sentence" of gene tokens and mask-predict expression BERT-style — often perform no better than simple linear baselines despite heavy compute cost, because compressing expression data into a latent vector loses information. Flow-matching models, which learn to match the full expression distribution rather than predict a mean, outperformed transformer- and autoencoder-based approaches in his comparisons. There is no discussion of agent deployment, verification, audit trails, or regulation in this talk — it is model-architecture research, not an operational AI-agent case study.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- No agent, verification, or regulatory content here — this is representation-learning research for scRNA-seq foundation models, useful as background but not evidence for the thesis either way.
+- The real domain-forced constraint is data, not compliance: single-cell measurements are noisy snapshots of a dynamic process, and transformer-style compression loses signal that flow-matching preserves.
+- A negative case for the corpus scan: this talk sits outside the "regulated domain changes the constraints" thesis rather than confirming or denying it.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=-561cZmir5Q

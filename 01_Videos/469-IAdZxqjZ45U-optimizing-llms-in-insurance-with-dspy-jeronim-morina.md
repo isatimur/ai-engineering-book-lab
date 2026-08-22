@@ -13,16 +13,17 @@ themes:
   - "Security & Guardrails"
 ingested_at: "2026-04-24T12:19:37+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on Optimizing LLMs in Insurance with DSPy: Jeronim Morina. In the insurance industry, LLMs promise efficiency but often get bogged down by manual tuning for optimal performance. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "An AXA Germany talk on DSPy and eval discipline where the one clearly insurance-specific constraint is hosting the LLM internally to protect customer data."
 ---
 # Optimizing LLMs in Insurance with DSPy: Jeronim Morina
 
 ## Summary
-A practical talk on Optimizing LLMs in Insurance with DSPy: Jeronim Morina. In the insurance industry, LLMs promise efficiency but often get bogged down by manual tuning for optimal performance. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Jeronim Morina (AXA Germany's data innovation lab) describes building a customer-facing chatbot to explain insurance terms and conditions, and argues the real gains came from disciplined evaluation and DSPy-based prompt optimization, not model choice. The team's early hand-written prompts were brittle — small prompt-text changes caused large output swings — and patching this with chaining libraries and error-handling code produced an overly complex, fragile system they judged not production-ready. Adopting DSPy required first decomposing the pipeline into isolated modules, since DSPy can only optimize a program structured that way, and off-the-shelf metrics such as exact/passage match don't work for German, forcing the team to write custom evaluators. The one concretely insurance-driven constraint is data residency: the chatbot runs on an internally hosted "secure GPT" platform on Azure (later extended to Mistral) built specifically so customer data isn't exposed to third parties. Beyond that hosting choice and the German-language tooling gap, the substance of the talk — stop trusting "looks good to me," build labeled eval sets, avoid data leakage, modularize before optimizing — is general AI-engineering practice, not something the insurance domain forced.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- The one clearly domain-driven constraint is data residency: an internally hosted LLM platform exists so customer data never leaves AXA's infrastructure, not because of a modeled regulatory workflow described in the talk.
+- Everything else — eval discipline, DSPy modularization, custom metrics for German — is standard AI-engineering hygiene that would apply in any vertical.
+- A useful negative case for the thesis: a regulated-industry speaker whose fixes are generic engineering practice, not domain-forced verification or escalation logic.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=IAdZxqjZ45U

@@ -14,16 +14,17 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T09:58:36+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Louis-François Bouchard shares a practical take on Full Workshop: Build Your Own Deep Research Agents. Deep research is one of the best ways to learn how to build real AI systems because it forces you to combine reasoning, planning, autonomy, tools, grounding, and feedback loops in a single... Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Towards AI workshop on building a deep-research plus writing agent for technical content, framed around a workflow-vs-agent autonomy tradeoff rather than any regulated domain."
 ---
 # Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi
 
 ## Summary
-Louis-François Bouchard shares a practical take on Full Workshop: Build Your Own Deep Research Agents. Deep research is one of the best ways to learn how to build real AI systems because it forces you to combine reasoning, planning, autonomy, tools, grounding, and feedback loops in a single... Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Louis-François Bouchard, Samridhi, and Paul Iusztin (Towards AI) run a workshop on building a deep-research agent plus a separate writing agent, originally built to automate their own technical-content pipeline (LinkedIn posts, course articles) rather than any scientific or regulated use case. Most of the talk is a general framework for choosing between prompting, workflows, and full agents — an "autonomy slider" where added autonomy buys flexibility at the cost of control, cost, and predictability, illustrated with client examples like a fixed six-step ticket-routing workflow that didn't need agentic branching. Their deep-research agent is judged on generic precision/recall of sources and hallucination reduction, cites its sources via grounded search (Gemini/Perplexity), and is built as an MCP server exposing tools, prompts, and resources, with a separate, more constrained writing agent layered on top to keep the final output from reading as "AI slop." There is no domain-specific verification, escalation, or regulatory content in this talk — it is a general-purpose agent-engineering workshop, not a science-domain case study, despite the "science" theme tag.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Domain tag is mismatched to content: this is a generic build-your-own-research-agent workshop for marketing/educational writing, not scientific research in any regulated sense.
+- The workflow-vs-agent "autonomy slider" and the fixed-six-step-ticket-routing counterexample are the most transferable generic engineering ideas here, applicable to any vertical.
+- A clean negative case for the thesis: no domain-forced constraint, verification, or escalation logic exists to test it against.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=mYSRn6PC1mc

@@ -13,16 +13,17 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:22:58+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on Build an AI Research Agent: Apoorva Joshi. In this 2 hour workshop, we will build an AI research agent that can search for research papers, summarize them, and answer questions on topics based on past research. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Generic LangChain agent-building workshop (tool calling, ReAct, memory) using arXiv paper search as example data; no science-specific constraints appear."
 ---
 # Build an AI Research Agent: Apoorva Joshi
 
 ## Summary
-A practical talk on Build an AI Research Agent: Apoorva Joshi. In this 2 hour workshop, we will build an AI research agent that can search for research papers, summarize them, and answer questions on topics based on past research. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Apoorva Joshi (MongoDB) runs a hands-on workshop teaching general agent-building concepts — when to use an agent versus simple prompting or RAG, planning patterns (chain-of-thought, tree-of-thought, ReAct, reflection), short-term versus long-term memory, and tool calling — using a "research agent" that fetches and summarizes arXiv papers as the worked example. The actual build is generic LangChain scaffolding: a tool-calling or ReAct agent constructor, an agent-executor loop, three tools (a papers-to-read list, a paper-summary tool, and a MongoDB-vector-store Q&A tool), and short-term memory persisted through a MongoDB-backed chat-history wrapper. The talk does not address verifying scientific claims, catching hallucinated citations or summaries, or any escalation path for wrong answers about research findings; arXiv papers serve only as sample data for a standard RAG/agent tutorial, not as a source of distinct requirements.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- No domain-specific constraint appears: this is a generic agent-architecture tutorial (tool calling, ReAct, memory) that happens to use arXiv paper search as its example dataset.
+- There is no discussion of verifying scientific claims, catching hallucinated summaries/citations, or any human-review step for research-agent output — the science domain is incidental, not load-bearing.
+- Most useful as a reference for baseline agent-building patterns (LangChain tool-calling vs. ReAct constructors, short/long-term memory design) rather than as evidence about AI in scientific research specifically.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=IRp7lvBlbHs

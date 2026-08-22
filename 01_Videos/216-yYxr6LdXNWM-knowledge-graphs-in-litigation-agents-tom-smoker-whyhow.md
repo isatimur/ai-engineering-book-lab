@@ -13,16 +13,17 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T11:44:23+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Tom Smoker shares a practical take on Knowledge Graphs in Litigation Agents. Structured Representations are pretty important in the law, where the relationships between clauses, documents, entities, and multiple parties matter. Key angle: focuses on agent design and orchestration."
+summary: "WhyHow's litigation agents use per-lawyer knowledge graphs, not raw LLM chat, because lawyers need auditable accuracy and chained 95%-accurate agents compound to 77% success."
 ---
 # Knowledge Graphs in Litigation Agents — Tom Smoker, WhyHow
 
 ## Summary
-Tom Smoker shares a practical take on Knowledge Graphs in Litigation Agents. Structured Representations are pretty important in the law, where the relationships between clauses, documents, entities, and multiple parties matter. Key angle: focuses on agent design and orchestration.
+Tom Smoker (WhyHow) describes litigation-support agents that scrape the web for mass-tort/class-action leads and turn findings into per-lawyer knowledge graphs and reports rather than a shared chat interface. He argues the legal domain forces a different architecture because "lawyers don't really like when things are incorrect" — probabilistic LLMs can't be trusted alone, so most engineering effort goes into guardrails, episodic memory, and graph-based state that can be captured, pruned, and queried, not into the model itself. He gives a concrete reason chained agent workflows fail here: five agents each 95% accurate compound to roughly 77% end-to-end success, which he frames as the core problem of decision-making under uncertainty that the graph and guardrails exist to contain. For legal discovery, the graph lets an expert dismiss most of an unreviewed "mountain" of documents and hone in on the few nodes that actually matter, functioning as a schema-driven filter rather than a chatbot; he describes the overall system as "ML-filtered," with LLMs serving mainly as connective tissue between deterministic graph/extraction steps.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Domain-forced architecture: a testable, prunable graph/schema layer replaces trust in raw LLM output, because legal work demands specific, defensible correctness.
+- Transcript-grounded accuracy math (95% per-agent accuracy compounding to ~77% over five chained agents) is the stated justification for guardrails and human-in-the-loop review rather than end-to-end agent autonomy.
+- Verification lands with a human: the graph narrows massive document sets to a handful of relevant nodes, but the lawyer or domain expert still makes the final call.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=yYxr6LdXNWM

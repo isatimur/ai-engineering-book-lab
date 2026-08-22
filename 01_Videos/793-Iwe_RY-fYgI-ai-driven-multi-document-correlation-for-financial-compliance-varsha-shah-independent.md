@@ -15,17 +15,18 @@ themes:
   - "Voice & Realtime"
 ingested_at: 2026-06-28T23:47:38+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Driven Multi-Document Correlation for Financial Compliance - Varsha Shah shares a practical take on AI. Key angle: emphasizes evaluation and measurement; includes voice / realtime system concerns."
+summary: "A financial-compliance framework adds a cross-jurisdictional normalization layer and an audit-feedback loop, since fraud spans documents and rules differ by country."
 ---
 
 # AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent
 
 ## Summary
-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah shares a practical take on AI. Key angle: emphasizes evaluation and measurement; includes voice / realtime system concerns.
+Varsha Shah (TCS, working for Microsoft) presents a research framework for financial compliance and fraud detection built on the premise that the compliance gap is cross-document, not within-document: a payroll register, a vendor invoice, and a tax filing can each pass their own individual validation while still being inconsistent once connected, and traditional rule-based or document-level NLP systems aren't built to see that. The architecture has three parts: a graph-based entity-correlation engine that links employees, vendors, accounts, and transactions across payroll, tax, procurement, and financial systems; an adaptive probabilistic risk model that scores and prioritizes cases for investigator attention instead of firing static rule-based alerts; and a cross-jurisdictional normalization layer that standardizes currency, tax structure, and reporting rules so the same transaction is scored consistently regardless of which country's regulatory framework it originated under. The system is designed to sit upstream of human audit rather than replace it — its risk scoring improves by learning from "completed audit outcomes and investigator feedback," and its stated purpose is to let compliance teams focus on prioritized high-risk cases instead of routine document review. Reported evaluation figures — 91% precision, 87% recall, F1 0.89, a 76% reduction in false positives, and a 40% reduction in manual audit effort, across roughly 3 million records spanning four jurisdictions — are transcript-grounded numbers from the speaker's own research presentation, not independently verified.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- The regulatory constraint (different countries' currencies, tax structures, and reporting standards) produced a dedicated architectural component — the cross-jurisdictional normalization layer — rather than being handled as an afterthought.
+- Verification loop: risk scoring improves by learning from completed audit outcomes and investigator feedback, and the system's explicit purpose is to prioritize cases for human investigators, not to make autonomous compliance determinations.
+- All performance figures (91% precision, 87% recall, F1 0.89, 76%/40% reductions) are transcript-grounded but self-reported by the speaker in a research presentation; no independent or third-party validation is mentioned.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=Iwe_RY-fYgI
