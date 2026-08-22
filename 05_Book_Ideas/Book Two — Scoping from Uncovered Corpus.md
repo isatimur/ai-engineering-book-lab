@@ -8,7 +8,21 @@ wikilinks, then bucketed by domain keyword. Coverage = share of a bucket's talks
 the ledger cites. Counts are measured, not estimated; regenerate with the query in
 `research_passes/2026-08-20-book-two-coverage.md`.
 
-## The measurement
+## ⚠ Corrected 2026-08-22 — read this before quoting any number below
+
+The domain counts in the table below were **inflated by roughly 48%** by
+substring keyword collisions (`tax` matching "taxonomy", `law` matching
+"claw", `bank` matching the surname "Banks"). Corrected totals: finance 12
+(not 19), legal **5** (not 15), health 14 (not 22), science 9 (not 21) —
+**~40 talks total, not ~77**. Full audit in
+`research_passes/2026-08-20-book-two-coverage.md`.
+
+The *direction* survives: coverage in these domains is still 0–11%, and the
+51-talk training-side body did not rely on the fragile patterns. But the B2-B
+recommendation below was argued on an evidence base about twice its real size.
+Weigh it accordingly.
+
+## The measurement (uncorrected — see the warning above)
 
 | Body of work | Talks | Cited by book 1 | Coverage |
 |---|---|---|---|

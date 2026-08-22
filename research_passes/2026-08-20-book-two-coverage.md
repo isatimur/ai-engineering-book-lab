@@ -53,3 +53,49 @@ already covers (e.g. 472 uncited Coding Agents talks).
 Whether book 2 reuses book 1's evidence machine, whether practitioner interviews
 are in scope for the vertical thesis, and whether scoping runs parallel to
 finishing book 1. All three are operator calls, recorded in the scoping doc.
+
+---
+
+## CORRECTION (2026-08-22) — the domain counts in this pass were inflated
+
+While enriching the vertical talks to test the B2-B thesis, a worker reported
+that one "finance" talk (#231, Nathan Lambert, AI2) contained **zero finance or
+regulation content** — it is a taxonomy of reasoning skills. The keyword
+`tax` had matched **"taxonomy"**.
+
+Auditing the rest found the same class of error throughout:
+
+| Domain | As published | Corrected | Inflated by |
+|---|---|---|---|
+| finance | 19 | 12 | +7 |
+| legal | 15 | **5** | +10 |
+| health | 22 | 14 | +8 |
+| science | 21 | 9 | +12 |
+| **total** | **77** | **40** | **+37 (~48%)** |
+
+### What actually matched
+
+- `tax` → "taxonomy" (#231), "prompt tax" (#391), "multimodal tax" (#789), "on-call tax" (#993) — three of those are *metaphors*, not finance.
+- `bank` → the surname "Banks" (#182).
+- `law` → **"claw"**. Nine OpenClaw talks (#015, #641, #672, #673, #701, #743, #790, #842, #908) landed in the legal bucket because `law` is a substring of `claw`. Also "Conway's law" (#460) and the surname "Lawrence" (#689).
+- Genuinely legal/compliance content: roughly #154, #516, #793. Three, not fifteen.
+
+There is an irony worth recording: "OpenClaw" is itself probably an ASR
+mishearing recurring through this corpus, and it went on to pollute a domain
+count by substring collision.
+
+### What this does and does not change
+
+- **Does not change:** the *direction* of the finding. Coverage in these
+  domains is still 0–11%, and the training-side body (51 talks, 0% cited) did
+  not use these fragile patterns and stands unaudited-but-plausible.
+- **Does change:** the size of the evidence base under B2-B. It is ~40 talks,
+  not ~77. That is still a book's worth of material, but the recommendation in
+  `05_Book_Ideas/Book Two — Scoping from Uncovered Corpus.md` was argued on a
+  number roughly twice as large as reality. Anyone weighing that recommendation
+  should weigh the corrected figure.
+- **Method lesson:** substring keyword matching on filenames needs word
+  boundaries and a manual read of the hit list before any count is quoted. The
+  original pass flagged its buckets as "directional evidence, not a census" —
+  that caveat was correct and was still not enough, because the number got
+  quoted downstream anyway.
