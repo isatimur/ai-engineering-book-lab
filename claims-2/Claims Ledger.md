@@ -611,6 +611,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[822-BqZrTdgBaPw-running-a-chess-youtube-channel-entirely-by-ai-stephan-steinfurt-tng|#822 — Steinfurt, TNG]] — a chess YouTube channel run entirely by AI; a major German newspaper wrote that "it could easily take another 5 years until AI explains chess as well as a human trainer," which Steinfurt quotes as the claim he set out to challenge, not as his own verdict.
+    - **Anchor:** `BqZrTdgBaPw` 00:00:50.160 → 00:00:55.160 · confidence: high
+    - **Quote:** "it could easily take another 5 years until AI explains chess as well as a human trainer."
 - **Caveats / counterevidence:** Single-source and its note is boilerplate, so the leg rests on the transcript-excerpt quote. The quote is the *press coverage's* framing, attributed to the newspaper (the excerpt truncates at "Wilhelm Weber calls it the…" and is not completed); the note does not verify whether the channel reached human-trainer quality, so the claim is that the standard is human explanation, not a verdict on whether AI met it. Sits beside #677's human-gated improvement loop (autonomy technically in reach, a person kept at the one taste gate).
 - **Candidate chapters:** 7
 - **Reusable phrasing:** A creative pipeline can already run itself; the bar it is held to is still a human who can explain the work well.
@@ -620,6 +622,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Quoraishee & Song, NYT]] — local agentic theory for accessible mobile games, pushing agentic behavior on-device for accessibility and low latency, while stating the puzzles themselves are made by people, not AI.
+    - **Anchor:** `418t26CVz-w` 00:00:18.480 → 00:00:20.800 · confidence: high
+    - **Quote:** "local agentic theory for accessible mobile games."
 - **Caveats / counterevidence:** Distinct facet of #918 from ledger claim 38 (which uses #918 for the human-authored-truth point); claim 43 owns the *local/on-device-for-accessibility* point. Both draw on the same boilerplate note, so both legs rest on its title and verbatim transcript-excerpt quotes; do not merge them. Single-source; a full transcript read would let #918 carry the local-agentic architecture in more detail. Relates to ledger claim 9 (on-device inference, Ch 2) applied to play.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** In games the agent goes local for reach and speed, and the puzzle stays human for craft.
