@@ -256,3 +256,58 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Caveats / counterevidence:** EMMA is end-to-end *multimodal*, not tokenized-autoregressive — it rides claim 21's consolidation mechanism, not claim 19's tokenization one; do not conflate the two. Both talks are the builders' own accounts of in-progress systems. These same two sources reprise in Chapter 5, where the physical world is treated as a domain rather than a model — cited here as the closer of Part I, not deduplicated away.
 - **Candidate chapters:** 4, 5
 - **Reusable phrasing:** The last modality the model-building discipline reached is the physical one — the car and the humanoid as foundation models, not programmed controllers.
+
+## 25) The frontier bet in robotics is one general model for any robot, any task
+- **Why it matters:** It ports the foundation-model paradigm from text to bodies. Robotics historically shipped a bespoke control policy per robot, working only in constrained environments; the frontier goal is instead a single model that generalizes across robots and tasks. It reframes robotics as a build-the-model problem — the same move that produced the general-purpose chatbot, made in a domain where a wrong output has mass and momentum.
+- **Support level:** strong (as a framing of the frontier bet); the bet itself is unproven
+- **Supporting sources:**
+  - [[175-cGLa8DsOYdk-robotics-why-now-quan-vuong-and-jost-tobias-springberg-physical-intelligence|#175 — Quan Vuong & Jost Tobias Springenberg, Physical Intelligence]] — "Our mission is to make a model that can control any robot to do any task."
+- **Caveats / counterevidence:** Single-source and one lab's mission statement, so it carries the *bet*, not a field-wide accomplishment. Vuong's own hedge is load-bearing: "this is not something that's ready today," with multiple scientific breakthroughs still needed. The claim is that the goal has flipped to one general model, not that the model exists. Reprises the embodiment-as-foundation-model thread from Ch4 (claim 24, #165/#174) but is grounded here on the robotics-domain cluster, not on those model-layer sources.
+- **Candidate chapters:** 5
+- **Reusable phrasing:** Robotics made the same move language did — one general model instead of a policy per robot — in a domain where a wrong output has mass.
+
+## 26) In embodiment, the bug is usually the system, not the policy
+- **Why it matters:** It inverts where failure is assigned. In a text agent a bad output implies a bad model; in a robot it usually does not. A carefully trained control policy fails because of the software stack, timing, and the communication protocol between controller and actuator — so the failures that look like intelligence problems are engineering problems. Most of the intelligence you can actually ship in embodiment lives in the system around the policy.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[110-bCGbuyv8PMk-rishabh-garg-tesla-optimus-challenges-in-high-performance-robotics-systems|#110 — Rishabh Garg, Tesla Optimus]] — "The issue will look like it's the policy but it's actually the software system." (what happens between the controller and the wire: sensor-to-actuator data, protocol timing, electrical characteristics)
+- **Caveats / counterevidence:** Single-source, one team's systems experience on one humanoid. The point is that policy and system failures are hard to tell apart from the outside, not that the policy never fails — models do fail on their own merits too.
+- **Candidate chapters:** 5
+- **Reusable phrasing:** In a robot, the failure that looks like the policy is usually the software system between the controller and the wire.
+
+## 27) Physical data breaks agents that handle text fine
+- **Why it matters:** The agent harness that works on text falls apart on the physical world's exhaust — video, sensor readings, robot telemetry, often combined. Frontier agents reason over prose by default but not over telemetry; making physical data legible requires a domain-specific data harness and layered context, not a better base model. It is the same "make the environment legible" lesson codebases taught, transposed to a domain where the codebase is a stream of sensor data.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[890-bUJgirn4_yc-when-agents-meet-physical-data-the-other-physics-of-agent-harnesses-dmitry-petrov-datachai|#890 — Dmitry Petrov, DataChain]] — "Anthropic published that accuracy for data projects on their agents is only 21% until you add specific data harnesses to them and provide context."
+- **Caveats / counterevidence:** Moderate: the 21% figure is Petrov relaying Anthropic's published result, not a primary reading here, and Petrov sells a data-for-agents product, so "you need a harness" partly reflects his market. This is as much a data-engineering argument as a robotics one — it anchors the "physical data" section in Ch5 but could relocate to the book's closing synthesis chapter if that chapter needs a data-legibility spine.
+- **Candidate chapters:** 5, closing synthesis
+- **Reusable phrasing:** Text was legible to the agent by default; telemetry is not, and making it legible is the work.
+
+## 28) A general-purpose robot can be trained into a skilled physical trade that transfers
+- **Why it matters:** It is the near-term, concrete form of the "one general model" bet. A bimanual robot not built for cooking was trained into a working professional role and the skill transfers to kitchens it never saw. That is the domain's version of generalization — not answering an unseen question, but performing a physical task in an unseen environment — demonstrated at small scale rather than asserted.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[229-MBWGiWJDlSo-robots-as-professional-chefs-nikhil-abraham-cloudchef|#229 — Nikhil Abraham, CloudChef]] — a general-purpose robot "that was not meant for cooking — it was just a robot with two hands," put "through culinary school," so that "it's now a professional chef that's working in various different kitchens."
+- **Caveats / counterevidence:** Moderate: a single company's account of its own system. The strongest figures — learning a recipe from a single demonstration, generalizing to novel kitchens — are the company's to prove and are not independently verified here.
+- **Candidate chapters:** 5
+- **Reusable phrasing:** The body is general; the training makes it a professional — and generalization here means an unseen kitchen, not an unseen question.
+
+## 29) Broad embodiment depends on tiny models, not frontier ones
+- **Why it matters:** For robotics at scale the capability constraint runs opposite to text. A cheap robot cannot host a frontier model; its compute, power, and latency budget decide what runs on-device at the edge. So the number of robots that can be intelligent at all is bounded not by how good the largest model is, but by how capable the smallest useful one can be made. Reach is a small-model problem.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google|#936 — Cormac Brick, Google]] — if intelligence is to reach ordinary devices and not just expensive robots, "we are going to need tiny models."
+- **Caveats / counterevidence:** Distinct from ledger claim 9 (on-device inference), which owns the *economics and access* case — subscription-to-energy-bill, privacy, offline. Claim 29 owns *breadth of embodiment*: most bodies physically cannot carry a large model, so how many robots can be intelligent is capped by tiny-model capability. The two must not be merged. Brick argues from inside Google's edge effort, so the framing is a builder's; the physical constraint it names is not.
+- **Candidate chapters:** 5
+- **Reusable phrasing:** How many robots can be intelligent is bounded by the smallest model a cheap body can run, not by how good the largest one is.
+
+## 30) Cheap, open, hackable robot hardware is starting to follow open models' path
+- **Why it matters:** Robotics is beginning to repeat the democratization open weights brought to text. The humanoids that draw the hype are proprietary and expensive; sub-$1,000 open-source humanoids and $300 hackable robots move the field from labs toward hardware a developer can buy, run, and modify — the body-side analogue of downloading, fine-tuning, and inspecting a model instead of renting it. Paired with tiny models (claim 29), it is the other half of moving robotics out of the lab.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[276-BS92RdBvI90-your-personal-open-source-humanoid-robot-for-8-999-jx-mo-k-scale-labs|#276 — JX Mo, K-Scale Labs]] — an open-source humanoid built hardware-to-software for developers at $8,999, against proprietary, expensive incumbents (Tesla Optimus, 1X, Unitree).
+  - [[725-0jeZfjJMfmo-reachy-mini-the-300-open-source-robot-you-can-actually-hack-andres-marafioti-hugging-face|#725 — Andres Marafioti, Hugging Face]] — Reachy Mini, a $300 open-source robot designed to be hacked.
+- **Caveats / counterevidence:** Moderate: both are vendors/builders of the hardware they present, and both machines are early and far from frontier capability. The claim is about the *pattern* (open, affordable, hackable bodies arriving), not that these specific robots match proprietary humanoids. The open-hardware analogy to open weights is argued by shape, not yet borne out at scale.
+- **Candidate chapters:** 5
+- **Reusable phrasing:** Open weights let you run a model instead of renting it; open, cheap, hackable bodies promise the same for the robot.
