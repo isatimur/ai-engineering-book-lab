@@ -41,16 +41,54 @@ reframing does real work:
 Candidate title direction, recorded not chosen: something in the register of
 *What Cannot Be Undone* — the engineering of irreversible action.
 
+## Falsification test run (same day) — the risky quadrant now has four cases, all behaving
+
+The caveat below noted that regulated-but-recoverable rested on a single case
+(AXA), and that deliberately hunting more such talks was the test that could
+still break the hypothesis. That test was run immediately. Three more
+regulated-domain talks whose actions are **recoverable** — a human reads the
+output before anything happens:
+
+- **Harvey / LanceDB (#154, legal RAG)** — legal document retrieval at three
+  data scales with a tiered eval strategy. One apparent forcing hit turned out
+  to be "deterministic success criteria" describing *recall metrics*, not a
+  deterministic guard on an action. **No forcing.**
+- **AlixPartners (#205, M&A / litigation support)** — an internal GenAI platform
+  for vendor categorisation, enterprise RAG and contract extraction. Two
+  apparent hits: one a general caveat that LLMs are "stochastic and not
+  necessarily deterministic", the other the phrase "escalation procedures"
+  appearing as **the content of a sample user query** ("what is Acme's
+  escalation procedures for reporting safety violations?") — not their own
+  escalation design. **No forcing.**
+- **Vectara (#100, enterprise deep research)** — zero forcing signatures.
+  **No forcing.**
+
+All three sit in regulated domains handling sensitive legal, financial and
+corporate material. None built an escalation ladder, a human sign-off gate, or a
+deterministic guard, because nothing in their loop cannot be undone. What they
+built instead was **eval discipline** — which is book one's subject, not book
+two's.
+
+That is four independent cases in the quadrant designed to falsify the
+hypothesis, and the hypothesis holds in all four. It is now the best-supported
+claim in either book's scoping work.
+
+Note the method trap, twice in one pass: both apparent counter-hits were grep
+false positives that required reading the surrounding sentence. Forcing
+signatures cannot be counted mechanically.
+
 ## Caveats
 
 - The 2×2 is my sorting of others' talks; "irreversible" is a judgement per
   case, not a property anyone in the corpus declared. Someone else could sort
   Stripe or Aviator differently.
-- One cell rests on a single strong case (AXA). The hypothesis would be much
-  better tested by deliberately hunting more regulated-but-recoverable talks —
-  compliance reporting, document search, internal analytics — where the
-  prediction is *no* forcing. That is the next honest test, and it is the one
-  that could still break this.
+- ~~One cell rests on a single strong case (AXA).~~ **Resolved above:** four
+  cases now, all as predicted. The remaining weakness is the opposite corner —
+  non-regulated *recoverable* work is represented by only three talks, and the
+  prediction there is also no forcing, so it is a weaker test.
+- A harder future test: find a talk where an action **is** irreversible and the
+  team demonstrably did *not* build forcing, then see whether they report harm.
+  That would move this from a correlation to something closer to a mechanism.
 - No claim here is anchored yet. The quotes referenced (Dahl's `psql` example,
   Intuit's split, the pre-1998 cutoff) are transcript-verified; the *argument*
   is mine and unanchored.
