@@ -98,6 +98,37 @@ with no note, so those never get a transcript later. Run
 `python3 99_Meta/scripts/backfill_transcripts.py` after any ingest — it fetches
 transcripts for existing notes that lack them and corrects their frontmatter.
 
+### Re-scoring while chapters move: what the 2026-08-22 run taught
+
+Gate (c) was cleared with the canonical panel (`panel-3model-v8`). Three things
+are worth knowing before the next re-score:
+
+1. **Never accept the dry-run's default judge.** `book-mash measure --dry-run`
+   reports `claude-sonnet-4-6` and about $15.89. That model is *not* the
+   canonical panel, and using it would make scores incomparable with v1–v8. The
+   planner's cost table is hardcoded and its own comment says it will "disagree
+   with reality" once models are swapped. Set
+   `BOOK_MASH_JUDGE_PROVIDER=openrouter` plus `BOOK_MASH_JUDGE_MODEL=<model>`
+   and run once per model:
+   `deepseek/deepseek-chat`, `meta-llama/llama-3.3-70b-instruct`,
+   `qwen/qwen-2.5-72b-instruct`. Real cost was **$1.28 across two attempts**,
+   and only **$0.09** for the final set once the content-hash cache warmed.
+2. **All three runs must share one `corpus_snapshot_hash`, and `panel_merge.py`
+   enforces it.** The first attempt was refused: another session committed
+   chapter edits mid-run, so deepseek scored snapshot `12a0`, llama and qwen
+   scored `104a`, and the live manuscript had already moved to `e741`.
+   Medianing across manuscript versions would describe no actual book. Check
+   the hash before merging, or expect the refusal.
+3. **The gate reads git commit dates, not file mtimes.** Regenerating
+   `judge-scores.json` without committing it leaves the gate reporting DRIFT.
+
+**Consequence, and it mirrors the audio policy above:** while chapters are being
+actively edited, a scores run is stale within hours — the corpus moved three
+times in roughly two hours during this run. Re-scoring on demand is cheap and
+worth doing when you want a current reading, but a DRIFT on gate (c) shortly
+after a re-score is **expected**, not a defect. The permanent fix is the same as
+for audio: score once chapters freeze.
+
 ### Audio-freshness drift is ACCEPTED policy, not debt (operator decision, 2026-08-21)
 
 **The audiobook is regenerated only once the chapters are final and no longer
