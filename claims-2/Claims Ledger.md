@@ -225,6 +225,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[476-gFyBdBm0AGo-system-design-for-next-gen-frontier-models-dylan-patel-semianalysis|#476 — Dylan Patel, SemiAnalysis]] — "The models that we're using today are largely the same as the models that were trained in 2022"; flagships are smaller models trained for longer (GPT-4/Turbo/4o; 3.5 Sonnet smaller than Opus but better because trained better).
+    - **Anchor:** `gFyBdBm0AGo` 00:00:33.559 → 00:00:38.680 · confidence: high
+    - **Quote:** "uh models that we're using today are largely the same as the models that were trained in 2022"
 - **Caveats / counterevidence:** Single-source; Patel's analysis, not a settled consensus. Some argue the plateau is real and architectural, not budgetary. A corroborating source on training-budget vs. capability would strengthen it before it carries public weight.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** The plateau is not the ceiling of the architecture. It is the lag between what has been trained and what could be.
@@ -234,7 +236,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — Raia Hadsell, DeepMind]] — progress toward general intelligence marked by identifying fundamental bottlenecks in existing models and building the architecture/training fix that removes them.
+    - **Anchor:** `zZsTVBXcbow` 00:03:57.200 → 00:04:01.200 · confidence: high
+    - **Quote:** "our approach we look for root nodes. You know we're not going to waste time on the leaves."
   - [[267-8EQo4J2BWKw-thinking-deeper-in-gemini-jack-rae-google-deepmind|#267 — Jack Rae, DeepMind]] — thinking framed as "unblocking bottlenecks towards intelligence"; identifying the crucial shortcoming often makes the fix follow. (Worked example inside Gemini; #13 carries the general form.)
+    - **Anchor:** `8EQo4J2BWKw` 00:00:48.879 → 00:00:51.039 · confidence: high
+    - **Quote:** "unblocking bottlenecks towards intelligence."
 - **Caveats / counterevidence:** Both sources are DeepMind, so this is one lab's account of research culture; balance against non-Google labs before generalizing. #267 is also cited in Chapter 1 (for how thinking is trained); here the emphasis is research method, with #13 as spine to avoid re-arguing Ch1.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** Frontier progress is a sequence of correctly chosen bottlenecks, and choosing them is the skill that separates the labs.
@@ -244,7 +250,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[067-sYgE4ppDFOQ-code-world-model-building-world-models-for-computation-jacob-kahn-fair-meta|#67 — Jacob Kahn, FAIR Meta]] — "Our primary goal is to build models that reason, plan and make decisions. And we start with code because it's an interesting sandbox in which to think about reasoning"; goal is predicting future observations (execution), not syntax.
+    - **Anchor:** `sYgE4ppDFOQ` 00:00:44.160 → 00:00:47.200 · confidence: high
+    - **Quote:** "Our primary goal is to build models that reason, plan and make decisions."
   - [[049-OGCG_QkCcZo-agi-the-path-forward-jason-warner-eiso-kant-poolside|#49 — Jason Warner & Eiso Kant, Poolside]] — "Poolside exists to close the gap between models and human intelligence… We're building our own models from scratch to do this," starting from code, pairing next-token prediction with RL.
+    - **Anchor:** `OGCG_QkCcZo` 00:00:30.720 → 00:00:34.960 · confidence: high
+    - **Quote:** "Poolside exists to close the gap between models and human intelligence."
 - **Caveats / counterevidence:** Distinct from claim 3 (code as the *RL-scaling* domain because its rewards are automatically verifiable, Ch 1): this is the *world-modeling* rationale — code as a simulable world — not the reward-mechanics rationale. The two are complementary; the reward-verifiability argument stays in Ch 1. Whether computation-modeling in code generalizes to non-code reasoning is the open bet both talks are making, not a settled result.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** Code is chosen as the first world simple enough to simulate honestly — picked for its rule-boundedness, not just its gradeability.
@@ -268,9 +278,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Omar Sanseviero, DeepMind]] — "Open models means… you can download, you can run in your own infrastructure, your own devices. You can fine-tune for your own use cases."
+    - **Anchor:** `_gVFUEdhCyI` 00:00:34.320 → 00:00:38.680 · confidence: medium
+    - **Quote:** "you can take, you can download, you can run in your own infrastructure, your own devices."
   - [[528-AUuktOQPWYg-decoding-mistral-ai-s-large-language-models-devendra-chaplot|#528 — Devendra Chaplot, Mistral AI]] — frames the talk around "why we do open source and how we do open source," from a lab with commercial models and platform alongside the open ones.
+    - **Anchor:** `AUuktOQPWYg` 00:00:31.480 → 00:00:34.680 · confidence: high
+    - **Quote:** "why we do open source and how we do open source"
   - [[480-Xmkl27AM2VQ-unveiling-the-latest-gemma-model-advancements-kathleen-kenealy|#480 — Kathleen Kenealy, DeepMind]] — Gemma's north star: "building something to empower and accelerate the amazing work being done by the open source community," measured by what gets built on top.
+    - **Anchor:** `Xmkl27AM2VQ` 00:00:36.600 → 00:00:42.760 · confidence: high
+    - **Quote:** "building something to empower and accelerate the amazing work being done by the open source community"
   - [[400-b0xlsQ_6wUQ-the-future-of-qwen-a-generalist-agent-model-junyang-lin-alibaba-qwen|#400 — Junyang Lin, Alibaba Qwen]] — Qwen shipped continuously as an open series since 2023 toward the stated goal of a generalist agent model.
+    - **Anchor:** `b0xlsQ_6wUQ` 00:00:27.760 → 00:00:30.720 · confidence: high
+    - **Quote:** "we have a dream of building a journalist model and generalist agent"
 - **Caveats / counterevidence:** Sources are the releasing labs themselves, so the "strategy" reading is partly their own narrative; a critic might see competitive pressure or talent signaling as equal drivers. The ecosystem-control mechanism is argued, not measured here.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** Open weights are how a lab that is not first in raw capability can still become the substrate the field standardizes on.
