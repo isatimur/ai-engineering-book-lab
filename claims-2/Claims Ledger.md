@@ -208,8 +208,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[439-wJwTlvb_TSo-wtf-do-people-use-open-models-for|#439 — Eugene Cheah, Featherless.ai]] — "the first open source model to catch up and surpass GPT-4," proving "you do not need a billion dollars to compete with the big labs"; >50,000 models uploaded to Hugging Face per month.
+    - **Anchor:** `wJwTlvb_TSo` 00:00:23.640 → 00:00:25.640 · confidence: high
+    - **Quote:** "the first open source model to catch up and surpass GPD"
   - [[189-3WV1vT0B0cg-the-rise-of-open-models-in-the-enterprise-amir-haghighat-baseten|#189 — Amir Haghighat, Baseten]] — the DeepSeek-R1 news cycle broke open models out of the AI-engineering bubble onto the agenda of the largest enterprises.
+    - **Anchor:** `3WV1vT0B0cg` 00:08:08.720 → 00:08:17.360 · confidence: high
+    - **Quote:** "not just use an API based generic model u but but inhouse it and do better than than what they can uh what they can do with just uh API based models."
   - [[074-lY1iFbDPRlw-minimax-m2-building-the-1-open-model-olive-song-minimax|#74 — Olive Song, MiniMax]] — MiniMax M2 presented as the #1 open model, built for agentic coding.
+    - **Anchor:** `lY1iFbDPRlw` 00:02:02.000 → 00:02:05.439 · confidence: high
+    - **Quote:** "designed specifically for coding workplace agentic tasks."
 - **Caveats / counterevidence:** "Surpass GPT-4" (#439) and "#1 open model" (#74) are the speakers' own framings, not independently benchmarked here. Parity holds on many tasks, not uniformly at the very top; the largest closed frontier models may still lead on the hardest tasks. The lead is measured in months, which is the point — but it is a narrowing lead, not a permanent reversal.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** The gap the industry assumed was permanent turned out to be a lead measured in months, and a lead measured in months is not a moat.
@@ -248,7 +254,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[253-W3khHzajE04-benchmarks-are-memes-how-what-we-measure-shapes-ai-and-us-alex-duffy-every-to|#253 — Alex Duffy, Every.to]] — benchmarks as memes (ideas that replicate and shape behavior); "what we measure shapes AI — and us"; the things we choose to measure become self-fulfilling prophecies.
+    - **Anchor:** `W3khHzajE04` 00:00:24.880 → 00:00:28.400 · confidence: high
+    - **Quote:** "benchmarks are just memes that shape the most powerful tool ever created."
   - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify]] — 2025 survey (n=500): evaluation named the single most painful part of AI engineering. (Supplies the practitioner-side fact — the field cannot measure well — not the steering claim itself.)
+    - **Anchor:** `mQ7_Zje7WKE` 00:11:18.240 → 00:11:22.959 · confidence: high
+    - **Quote:** "number one most painful thing about AI engineering today? And evaluation topped"
 - **Caveats / counterevidence:** The steering claim rests single-source on #253, whose framing ("benchmarks are memes") is a rhetorical thesis, not a measured finding. #137 documents that evaluation is hard, which is adjacent but not the same as "benchmarks shape what gets built"; it must not be read as evidence for the steering mechanism. A corroborating source on benchmark-driven development would strengthen this.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** A benchmark is not a scoreboard. It is a steering wheel — and a field that cannot measure well drives toward whatever is easiest to score.
