@@ -597,7 +597,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[755-Bc6Ojl2XS1w-from-transcription-to-live-music-gemini-s-audio-stack-thor-schaeff-google-deepmind|#755 — Schaeff, Google DeepMind]] — Gemini's audio stack as a chain: single-call speaker/emotion/language extraction, director's-note voice steering, native speech-to-speech Live model (vs a cascaded ASR→LLM→TTS pipeline), and a separate music model (Lyra) invoked as a callable tool by the conversational model.
+    - **Anchor:** `Bc6Ojl2XS1w` 00:17:02.760 → 00:17:05.520 · confidence: high
+    - **Quote:** "a tool to then generate a song using Lyra."
   - [[477-CoaL4JZKsWI-ai-music-generation-from-prompt-to-production-phlo-young|#477 — Phlo Young]] — the workshop title, "AI Music Generation, From Prompt to Production," carries the prompt-to-production pipeline framing.
+    - **Anchor:** `CoaL4JZKsWI` 00:18:04.520 → 00:18:07.400 · confidence: high
+    - **Quote:** "produce a song and then use this voice conversion technique"
 - **Caveats / counterevidence:** Support is moderate: the claim rests on #755's rich note; #477's note is boilerplate and contributes its title only. Reprises the model-layer generative-media argument (ledger claim 23, Ch 4) from the domain side — cited here on this chapter's own cluster, not on claim 23's out-of-cluster sources, to keep the seam clean.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** In creative work the product is not one great model — it is several specialized ones composed well, prompt to production.
