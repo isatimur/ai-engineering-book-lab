@@ -383,3 +383,61 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Caveats / counterevidence:** Promoted from the packet's open-question thread rather than one of its six strongest observations; four independent sources across both movements make it strong. The claim is about *where* the human sits (an explicit, staffed gate for unbounded-risk cases), not that every step needs a human — the same systems automate the high-volume, low-stakes majority freely.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** Where a wrong output is catastrophic, the human is not a fallback — it is where the unbounded risk is parked, behind a confidence gate and a named escalation path.
+
+## 38) In subjective domains, keep the model in a narrow lane and let structured systems own the truth
+- **Why it matters:** Creative, educational, and game applications look like the model's home turf — fluent, plausible output is the goal. The practitioners who shipped find the opposite: where correctness is fuzzy or contested, the durable pattern is to confine the model to translating, generating, or coaching, while a structured system (a game engine, hand-built detectors, human authors) holds everything that must be true. The model owns the words; the system owns the ground.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[677-FlzpEGHNVKQ-building-a-chess-coach-anant-dole-and-asbjorn-steinskog-take-take-take|#677 — Dole & Steinskog, Play Magnus]] — Stockfish computes the ground-truth evaluation, a rating-aware network predicts human move probability, and hand-built detectors extract tactical structure; the LLM (Gemini Flash) only translates that structured package into English and is explicitly forbidden from reasoning about the position, because LLMs hallucinate moves and cannot calculate but explain well once handed the analysis.
+  - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Quoraishee & Song, NYT]] — "Our puzzles are made by people. They're not made by AI"; "There's no AI in the games themselves." The ground truth of the game stays human-authored; the AI lives at the edges.
+- **Caveats / counterevidence:** #677 carries the claim with a rich, synthesized note; #918's note is auto-generated boilerplate, so its leg rests on its verbatim transcript-excerpt quotes only. Both are the builders' own accounts. The claim is about *where* the model sits (a narrow supporting lane), not that models are useless in these domains — the same systems lean on generation heavily where truth is not at stake.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** In a subjective domain the model is a translator, not a judge — it owns the words, and a structured system owns the ground.
+
+## 39) A working AI-built game is far harder than the demo, and content generation is the easy part
+- **Why it matters:** Demos make building a game with AI look solved. Practitioners who shipped report that generating content — the flood of cheap ideas a game needs — is now trivial, and that making the generated content actually good is the problem that remains. The difficulty in game-making moved from production to judgment; it did not disappear.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[588-_KFbT6eph5A-using-ai-to-build-an-infinite-game-jeff-schomay|#588 — Jeff Schomay]] — "I made a game with 100% AI generated content"; a game needs cheap disposable ideas while prototyping and near-infinite depth to play, and the description cue frames the tension as generation being easy while *good* content is the hard part.
+  - [[827-grdoOC1BT1s-think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta|#827 — An & Hoe, Meta]] — the talk's own title, "Think You Can Build a Game with AI? Think Again!", carries the harder-than-it-looks caution.
+- **Caveats / counterevidence:** Support is moderate: both notes are largely boilerplate. #827 contributes only its title; #588's description cue truncates exactly where its "but making content…" argument would resolve, so the "generation is easy, judgment is hard" reading is supported by the title-plus-cue framing, not a full transcript read. A read of both transcripts would confirm or narrow it.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** Generating game content is cheap; deciding what is worth generating is not — and that is where building a game with AI still breaks.
+
+## 40) In education, the binding constraint is pedagogy and organization, not model capability
+- **Why it matters:** Education is where a better model is most tempting to treat as the answer, and the practitioners are the ones resisting it. Scaling a tutor turns out to be about turning a whole institution AI-first and designing for learning outcomes, not about which model sits underneath. The model is already capable enough; converting capability into learning is a design problem.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[512-3E7VAZaTG9M-scaling-ai-in-education-a-khanmigo-case-study-shawn-jansepar|#512 — Jansepar, Khan Academy]] — frames the Khanmigo work as "Khan Academy's journey to become an AI-first organization": roadmap, product, and org transformation, not model quality.
+  - [[540-qpmZID27t98-the-multimodal-future-of-education-stefania-druga|#540 — Stefania Druga]] — 70% of generative AI users are Generation Z (a Salesforce study she cites) and "education needs a wakeup call"; her focus is designing multimodal learning activities for critical and creative thinking, with the model as raw material, not teacher.
+- **Caveats / counterevidence:** Support is moderate: both notes are boilerplate, so #512's leg rests on its description-cue framing and #540's on two verbatim excerpt quotes plus its description cue. Both are advocates for their own programs. The claim is that pedagogy binds, not that model quality is irrelevant.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** In education the model is already good enough; what is unsolved is turning capability into learning, and that is pedagogy's problem, not the lab's.
+
+## 41) Creative production is an orchestration problem — compose several specialized models, not one generalist
+- **Why it matters:** Creative pipelines land on the same shape the generative-media model layer described: the craft is not one great model but several specialized ones chained under structured control, from prompt to production. It is the domain-side view of the media stack — making music or audio as a creative act, assembled rather than generated in a single pass.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[755-Bc6Ojl2XS1w-from-transcription-to-live-music-gemini-s-audio-stack-thor-schaeff-google-deepmind|#755 — Schaeff, Google DeepMind]] — Gemini's audio stack as a chain: single-call speaker/emotion/language extraction, director's-note voice steering, native speech-to-speech Live model (vs a cascaded ASR→LLM→TTS pipeline), and a separate music model (Lyra) invoked as a callable tool by the conversational model.
+  - [[477-CoaL4JZKsWI-ai-music-generation-from-prompt-to-production-phlo-young|#477 — Phlo Young]] — the workshop title, "AI Music Generation, From Prompt to Production," carries the prompt-to-production pipeline framing.
+- **Caveats / counterevidence:** Support is moderate: the claim rests on #755's rich note; #477's note is boilerplate and contributes its title only. Reprises the model-layer generative-media argument (ledger claim 23, Ch 4) from the domain side — cited here on this chapter's own cluster, not on claim 23's out-of-cluster sources, to keep the seam clean.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** In creative work the product is not one great model — it is several specialized ones composed well, prompt to production.
+
+## 42) A creative pipeline can now run fully autonomously, and the standard it is measured against is a human
+- **Why it matters:** Autonomy in creative domains is arriving, and the benchmark it reaches for is not accuracy but a person. A chess channel run entirely by AI shows generation has come far enough to publish with no human in the loop; the yardstick everyone names is the human trainer who can explain the game well. The gap between them is measured against people, not scores.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[822-BqZrTdgBaPw-running-a-chess-youtube-channel-entirely-by-ai-stephan-steinfurt-tng|#822 — Steinfurt, TNG]] — a chess YouTube channel run entirely by AI; a major German newspaper wrote that "it could easily take another 5 years until AI explains chess as well as a human trainer," which Steinfurt quotes as the claim he set out to challenge, not as his own verdict.
+- **Caveats / counterevidence:** Single-source and its note is boilerplate, so the leg rests on the transcript-excerpt quote. The quote is the *press coverage's* framing, attributed to the newspaper (the excerpt truncates at "Wilhelm Weber calls it the…" and is not completed); the note does not verify whether the channel reached human-trainer quality, so the claim is that the standard is human explanation, not a verdict on whether AI met it. Sits beside #677's human-gated improvement loop (autonomy technically in reach, a person kept at the one taste gate).
+- **Candidate chapters:** 7
+- **Reusable phrasing:** A creative pipeline can already run itself; the bar it is held to is still a human who can explain the work well.
+
+## 43) On-device, local agentic patterns matter for accessible, low-latency play — while the puzzles stay human
+- **Why it matters:** In games, the reason to push agentic behavior on-device is accessibility and responsiveness — the same local-execution case the inference chapter made, applied to play — and it coexists with keeping the game's ground truth human-authored. The intelligence goes local; the craft stays human.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Quoraishee & Song, NYT]] — local agentic theory for accessible mobile games, pushing agentic behavior on-device for accessibility and low latency, while stating the puzzles themselves are made by people, not AI.
+- **Caveats / counterevidence:** Distinct facet of #918 from ledger claim 38 (which uses #918 for the human-authored-truth point); claim 43 owns the *local/on-device-for-accessibility* point. Both draw on the same boilerplate note, so both legs rest on its title and verbatim transcript-excerpt quotes; do not merge them. Single-source; a full transcript read would let #918 carry the local-agentic architecture in more detail. Relates to ledger claim 9 (on-device inference, Ch 2) applied to play.
+- **Candidate chapters:** 7
+- **Reusable phrasing:** In games the agent goes local for reach and speed, and the puzzle stays human for craft.
