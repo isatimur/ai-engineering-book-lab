@@ -97,7 +97,7 @@ A support call is the clearest example, but the principle is broader. Any realti
 
 ## Embodied edges make the same lesson even harsher
 
-This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that corpus. Robotics and other embodied systems appear only as confirmation — a harsher environment where the same architectural failures show up faster and with less room to hide.
+This chapter keeps voice as the primary case on purpose: the corpus this book draws on is deepest there, and every claim below is anchored in it. Robotics and other embodied systems appear only as confirmation — a harsher environment where the same architectural failures show up faster and with less room to hide.
 
 The more tightly an AI system couples to the world, the less room there is for hidden confusion. Delay becomes visible. State mismatch becomes dangerous. Recovery behavior matters more than eloquent explanation. A model that can improvise impressively in a sandbox may still be unusable when timing, environment state, and safety constraints are all moving at once.
 

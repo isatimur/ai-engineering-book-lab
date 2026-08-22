@@ -5,6 +5,7 @@
     "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
+    "judge_prompt_versions": null,
     "finished_at": "2026-07-31T06:56:28.912294+00:00",
     "total_cost_usd": 2.036,
     "status": "completed",
@@ -122,7 +123,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -374,7 +375,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -611,7 +612,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -785,7 +786,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -981,7 +982,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1160,7 +1161,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1330,7 +1331,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1544,7 +1545,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1796,7 +1797,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1962,7 +1963,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -2750,9 +2751,10 @@
     },
     {
       "run_id": "panel-3model-v7",
-      "version_id": "git:13bbc4a",
+      "version_id": "git:fe43116",
       "finished_at": "2026-07-31T06:56:28.912294+00:00",
       "partial": false,
+      "judge_prompt_versions": null,
       "book": {
         "humanness": 84.8,
         "voice": 86.2,

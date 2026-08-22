@@ -134,33 +134,59 @@ def _head_sha() -> str | None:
 
 def _last_commit_time(path: Path) -> str | None:
     """ISO-8601 committer date of the last commit that touched `path`, or None
-    if the file has no history (untracked) or git is unavailable."""
+    if git itself is unavailable or the path has genuinely no history.
+
+    `git log` exits 0 with empty stdout for a path with no history — that is
+    NOT the same as a command failure, and callers must not conflate the two.
+    A path that exists on disk but has no git history is an anomaly (a stale
+    NUMBER_TO_DRAFTING entry, a rename git doesn't know about) worth a loud
+    warning, not a silent None."""
     try:
         out = subprocess.run(
             ["git", "log", "-1", "--format=%cI", "--", str(path)],
             cwd=_REPO, capture_output=True, text=True, check=True,
         )
-        return out.stdout.strip() or None
-    except (subprocess.CalledProcessError, FileNotFoundError):
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        print(f"[build_judge_scores] WARNING: git log failed for {path}: {e}")
         return None
+    commit_iso = out.stdout.strip() or None
+    if commit_iso is None and path.exists():
+        print(
+            f"[build_judge_scores] WARNING: {path} exists but has no git history — "
+            "staleness cannot be determined for this chapter (check NUMBER_TO_DRAFTING "
+            "for a stale filename mapping)."
+        )
+    return commit_iso
 
 
 def _is_stale(chapter_drafting_path: Path, run_finished_at: str | None) -> bool:
     """A chapter is stale if its published public/drafting file was committed
     AFTER the run that produced its currently-displayed score finished — i.e.
-    the manuscript moved on since the last real measurement. Fails safe: if
-    either timestamp is unavailable (no git history, no finished_at), treat
-    the chapter as NOT stale rather than guessing."""
+    the manuscript moved on since the last real measurement.
+
+    Fails LOUD and DISCLOSED, not safe-by-hiding: if either timestamp is
+    unavailable, treat the chapter as stale (worst case, an honestly-fresh
+    chapter shows an unnecessary badge) rather than not-stale (worst case, a
+    genuinely-outdated score silently props up the book average forever —
+    the exact bug this function exists to catch). A caught ship-gate finding:
+    the original version defaulted the other way and would have silently and
+    permanently disabled staleness detection for any chapter whose drafting
+    path stopped matching git history."""
     if run_finished_at is None:
-        return False
+        print(
+            f"[build_judge_scores] WARNING: no finished_at for the run scoring "
+            f"{chapter_drafting_path.name} — marking stale rather than guessing fresh."
+        )
+        return True
     commit_iso = _last_commit_time(chapter_drafting_path)
     if commit_iso is None:
-        return False
+        return True
     try:
         commit_dt = datetime.fromisoformat(commit_iso)
         run_dt = datetime.fromisoformat(run_finished_at)
-    except ValueError:
-        return False
+    except ValueError as e:
+        print(f"[build_judge_scores] WARNING: unparseable timestamp ({e}) — marking stale.")
+        return True
     return commit_dt > run_dt
 
 
@@ -577,6 +603,15 @@ def build(
             "corpus_snapshot_hash": head_scores.get("corpus_snapshot_hash"),
             "book_mash_version": head_scores.get("book_mash_version"),
             "dim_registry_version": head_scores.get("dim_registry_version"),
+            # Additive: per-judge rubric-version strings (e.g. claim_defensibility's
+            # own prompt version), so a score change on the /quality trend line can
+            # be told apart from a rubric change that moved the ruler instead of the
+            # prose. Absent on runs recorded before this field existed. A retroactive
+            # ship-gate review (2026-08-22, see ledger/verdicts.md in ai-native-org)
+            # found this gap after a claim_defensibility rubric change shipped the
+            # same session as manuscript edits, with no way to disentangle the two
+            # on this page.
+            "judge_prompt_versions": head_scores.get("judge_prompt_versions"),
             "finished_at": head_scores.get("finished_at"),
             "total_cost_usd": head_scores.get("total_cost_usd"),
             "status": head_scores.get("status"),
@@ -656,6 +691,9 @@ def main(argv: list[str] | None = None) -> int:
         "version_id": next(iter(data["chapters"].values()), {}).get("version_id"),
         "finished_at": data["run"]["finished_at"],
         "partial": data["run"]["partial"],
+        # So a jump on the trend line can be attributed to a rubric change vs.
+        # a prose change (see the comment on "run" above for why this exists).
+        "judge_prompt_versions": data["run"].get("judge_prompt_versions"),
         "book": data["book"],
         "chapters": {n: c["rollup"] for n, c in data["chapters"].items()},
     }

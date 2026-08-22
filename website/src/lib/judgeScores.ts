@@ -69,6 +69,10 @@ export type JudgeRun = {
   corpus_snapshot_hash: string | null;
   book_mash_version: string | null;
   dim_registry_version: string | null;
+  /** Per-judge rubric-version strings (e.g. `{ claim_defensibility: "4" }`) so a
+   * score change can be told apart from a rubric change. Absent on runs recorded
+   * before this field existed. */
+  judge_prompt_versions?: Record<string, string> | null;
   finished_at: string | null;
   total_cost_usd: number | null;
   status: string | null;
@@ -82,6 +86,7 @@ export type RunSnapshot = {
   version_id: string | null;
   finished_at: string | null;
   partial: boolean;
+  judge_prompt_versions?: Record<string, string> | null;
   book: Record<DimName, number | null>;
   chapters: Record<string, Record<string, number | null>>;
 };

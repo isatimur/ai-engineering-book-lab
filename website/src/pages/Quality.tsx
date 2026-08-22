@@ -250,10 +250,19 @@ const Trends = () => {
     const vals = series(dim).filter((v): v is number => v != null);
     return vals.length >= 2 ? Math.round(vals[vals.length - 1] - vals[0]) : null;
   };
+  // A dim's judge rubric changing mid-window means the delta above mixes prose
+  // improvement with the ruler moving — surface that rather than let it pass
+  // as a clean trend. Absent judge_prompt_versions (older history entries)
+  // reads as "unknown", not "unchanged", so it never falsely hides a shift.
+  const rubricChanged = (dim: DimName) => {
+    const versions = history.map((h) => h.judge_prompt_versions?.[dim] ?? null);
+    return new Set(versions).size > 1;
+  };
   return (
     <div className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
       {DIMS.map((d) => {
         const dv = delta(d);
+        const shifted = rubricChanged(d);
         return (
           <div key={d} className="flex items-center justify-between gap-3 border border-[var(--color-border)] px-4 py-3">
             <div className="font-mono text-[9px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
@@ -261,6 +270,15 @@ const Trends = () => {
               {dv !== null && (
                 <span className="ml-2" style={{ color: dv >= 0 ? labelColor('strong') : labelColor('fail') }}>
                   {dv >= 0 ? '+' : ''}{dv}
+                </span>
+              )}
+              {shifted && (
+                <span
+                  className="ml-2 lowercase italic"
+                  style={{ color: labelColor('weak') }}
+                  title="This dimension's judge rubric changed within the plotted window — the delta above mixes prose change with the ruler moving."
+                >
+                  rubric changed
                 </span>
               )}
             </div>
