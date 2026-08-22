@@ -451,7 +451,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[446-cZ5ZJy19KMo-mission-critical-evals-at-scale-learnings-from-100k-medical-decisions|#446 — Anterior]] — a real-time, reference-free (label-free) eval layer scoring every prior-authorization case before ground truth exists, used to earn customer trust and to dynamically route scarce human review.
+    - **Anchor:** `cZ5ZJy19KMo` 00:00:22.800 → 00:00:26.519 · confidence: high
+    - **Quote:** "real-time reference-free evals can be the special source that enables customer trust"
   - [[938-O72p-rBb2bA-evals-driven-development-for-a-mental-health-ai-coach-akele-reed-dave-revere-sondermind|#938 — Reed & Revere, SonderMind]] — a licensed clinician's annotations are compiled into typed evals that gate every prompt/model/guardrail change in CI; the design goal is "more correct triggers," not more triggers.
+    - **Anchor:** `O72p-rBb2bA` 00:06:42.639 → 00:06:43.759 · confidence: high
+    - **Quote:** "more correct triggers."
 - **Caveats / counterevidence:** Distinct from claim 36 (which owns eval *cadence at scale* — continuous in production): claim 31 owns eval's *status* (the product itself, the trust-earning layer, reference-free scoring). Both cite #446; do not merge them. Reported figures in #446 (F1 near 96%, under 10 clinicians vs. a competitor's 800+ nurses) are self-reported by the speaker. This is a domain argument, not an evals-technique reprise of book 1's evals chapter: the point is that stakes make the eval load-bearing and that the domain expert (the clinician) defines ground truth — not how judges or rubrics are built.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** When there is no room for error, the eval is not what you build to ship the product — it is the product.
@@ -461,7 +465,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[406-pPvoLjYj_mY-evaluating-domain-specific-llms-for-real-world-finance-waseem-alshikh-writer|#406 — Alshikh, Writer]] — a finance benchmark (FAIL) that separates answer-rate from grounding; even the top model's combined grounding-plus-answer score is about 81% (≈one in five wrong under imperfect context), used to argue general models alone are insufficient.
+    - **Anchor:** `pPvoLjYj_mY` 00:10:23.760 → 00:10:27.399 · confidence: high
+    - **Quote:** "81% sounds a great number if you think in the reality"
   - [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473 — Pekelis, Gradient]] — a team that actually trains a finance LLM; the motivating challenge is "the reliability of executing numerous chained" financial workflows (tabular reasoning, sentiment analysis), the finance instance of the reliability argument.
+    - **Anchor:** `of-SV35YqvY` 00:03:08.120 → 00:03:09.599 · confidence: high
+    - **Quote:** "they kind of apply across uh Industries"
 - **Caveats / counterevidence:** Support is moderate because both cited speakers frame their findings as *general*, not finance-specific: Writer sees the same grounding failure in a medical benchmark, and Pekelis states his training requirements "apply across industries" (his headline long-context demo is Mark Twain style transfer, not a financial task). So the domain supplies the *standard* (near-zero error tolerance) and the *stake* that justifies the spend, not a novel technique. #473 is kept here as the domain instance, not re-argued as a book-1 training-method claim; its recipe is a generic domain-adaptation pipeline by the speaker's own account.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** Near-90% is a good demo and a disqualifying product when one in five confident answers is wrong and the cost of wrong is unbounded.
@@ -471,7 +479,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[423-MWTJIAwAAnk-trust-but-verify-knowledge-agents-for-finance-workflows-mike-conover|#423 — Conover, Brightwave]] — findings are re-verified with a separate model call because a single-pass model is "primed to be credulous" about its own output; every finding carries a citation and an inspectable audit trail, since analysts need the receipts.
+    - **Anchor:** `MWTJIAwAAnk` 00:09:44.040 → 00:09:45.360 · confidence: high
+    - **Quote:** "primed to be credulous"
   - [[154-W1MiZChnkfA-scaling-enterprise-grade-rag-lessons-from-legal-frontier-calvin-qi-harvey-chang-she-lance|#154 — Qi (Harvey) & She (LanceDB)]] — most of Harvey's enterprise-legal-RAG effort goes into eval-driven development (expert review → labeled criteria → automated precision/recall), not fancy retrieval; the eval that proves the right law was retrieved is where the work goes.
+    - **Anchor:** `W1MiZChnkfA` 00:04:56.800 → 00:05:01.440 · confidence: high
+    - **Quote:** "investing in eval driven development is a huge huge key to building these systems"
 - **Caveats / counterevidence:** #423 also cautions against anthropomorphized "agent role" designs that lock in a rigid compute graph — verification is architectural, not a persona. #154 pairs a legal-AI practitioner (Harvey) with a data-infrastructure vendor (LanceDB); the verification/eval-driven claim rests on the Harvey side, with LanceDB supplying the scale substrate rather than the trust argument.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** In a domain where an unverifiable claim is worthless, verification is a separate call and a citation trail — an architecture, not a promise.
