@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1047
+Total videos: 1052
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1049,3 +1049,8 @@ Total videos: 1047
 1045. [How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face](https://www.youtube.com/watch?v=FLUoowDJg4I) — `FLUoowDJg4I` — 20:37
 1046. [Your Fine-Tuned Model Is Tech Debt: A 50x ROI House of Cards — Dan Bjornn, Lease End](https://www.youtube.com/watch?v=4loPnxvWWhg) — `4loPnxvWWhg` — 16:39
 1047. [Unlock Agent Autonomy: The Runtime for AI-Native Systems — Tushar Jain, Docker](https://www.youtube.com/watch?v=zaGyGgLW3SM) — `zaGyGgLW3SM` — 22:50
+1048. [Give the Agent a Budget, Not a Token — Sachin Malhotra, Anthropic](https://www.youtube.com/watch?v=rbjWzZK2LU0) — `rbjWzZK2LU0` — 
+1049. [Coding Agents Don't Scale Themselves. Neither Do Your Teams. — Patrick Debois, Tessl](https://www.youtube.com/watch?v=zCJtYuqwm7E) — `zCJtYuqwm7E` — 
+1050. [Agentic SDLC at Uber — Uday Kiran Medisetty & Adam Huda, Uber](https://www.youtube.com/watch?v=17-YSUHo6Lk) — `17-YSUHo6Lk` — 18:26
+1051. [The Missing Layer: Design Taste in AI Agents — Hassan El Mghari, Together AI](https://www.youtube.com/watch?v=7GMKdpLsxwU) — `7GMKdpLsxwU` — 14:10
+1052. [Building Agents Is Trivial Now, Context Is the Next Frontier — Jeff Ng, Unblocked](https://www.youtube.com/watch?v=HvMyYLTfvhg) — `HvMyYLTfvhg` — 13:22
