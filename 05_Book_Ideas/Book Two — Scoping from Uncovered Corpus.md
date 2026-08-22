@@ -89,6 +89,26 @@ Chapter 9 lineage rather than a volume of its own.
 
 ## Recommendation
 
+
+## Thesis tested 2026-08-22 — recommendation survives, framing must change
+
+16 genuine vertical talks were enriched specifically to test B2-B. **9 showed
+real domain forcing; 7 were generic or out of scope (44% miss).** Full detail:
+`research_passes/2026-08-22-b2b-thesis-test.md`.
+
+The refinement: forcing does not track the domain label. It tracks **whether a
+wrong answer is irreversible or creates liability** (7 of 9 cases) or, in two
+cases, sheer problem open-endedness. Two talks billed as finance-specific
+explicitly argued their methods were cross-industry.
+
+So the book cannot be "regulated domains change the engineering". The defensible
+version is *engineering changes where a wrong answer causes irreversible harm —
+and regulated domains are where that condition clusters.* That framing explains
+the 7 misses rather than ignoring them, and it gives the book a testable spine
+instead of a vertical tour. Best single exhibit: Intuit, where **the LLM never
+touches the tax calculation** and a guardrail model screens every explanation
+for hallucinated figures.
+
 **B2-B, with B2-A as its opening argument.** Verticals give the durable spine and
 the shared audience; the training-side material earns a strong early chapter
 ("the model is no longer fixed") that explains why domain constraints now bind
