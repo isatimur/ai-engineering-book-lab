@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "panel-3model-v7",
-    "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
+    "run_id": "panel-3model-v8",
+    "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
     "judge_prompt_versions": null,
-    "finished_at": "2026-07-31T06:56:28.912294+00:00",
-    "total_cost_usd": 2.036,
+    "finished_at": "2026-08-22T23:55:14.489939+00:00",
+    "total_cost_usd": 0.0892,
     "status": "completed",
     "dims": [
       "humanness",
@@ -19,24 +19,24 @@
     ],
     "coverage": {
       "humanness": {
-        "scored": 560,
-        "total": 560
+        "scored": 537,
+        "total": 537
       },
       "voice": {
         "scored": 0,
         "total": 0
       },
       "usefulness": {
-        "scored": 560,
-        "total": 560
+        "scored": 537,
+        "total": 540
       },
       "evidence_density": {
-        "scored": 104,
-        "total": 104
+        "scored": 105,
+        "total": 105
       },
       "claim_defensibility": {
-        "scored": 560,
-        "total": 560
+        "scored": 563,
+        "total": 563
       },
       "redundancy": {
         "scored": 0,
@@ -45,6 +45,13 @@
     },
     "partial": false,
     "merged_run_ids": [
+      "panel-3model-v8",
+      "2026-08-22-235400-e741",
+      "2026-08-22-234347-e741",
+      "2026-08-22-234252-e741",
+      "2026-08-22-230013-104a",
+      "2026-08-22-223909-104a",
+      "2026-08-22-214933-12a0",
       "panel-3model-v7",
       "2026-07-30-161222-c12b",
       "panel-3model-v6",
@@ -104,38 +111,33 @@
     ]
   },
   "book": {
-    "humanness": 84.8,
-    "voice": 86.2,
-    "usefulness": 60.5,
-    "evidence_density": 85.7,
-    "claim_defensibility": 81.2,
-    "redundancy": 85.0,
-    "usefulness_substantive": 61.8,
-    "usefulness_connective": 30,
-    "usefulness_total": 560
+    "humanness": 86.0,
+    "voice": 88.7,
+    "usefulness": 55.7,
+    "evidence_density": 85.8,
+    "claim_defensibility": 94.0,
+    "redundancy": 87.1,
+    "usefulness_substantive": 57.5,
+    "usefulness_connective": 61,
+    "usefulness_total": 537
   },
-  "stale_chapter_numbers": [
-    "01",
-    "08",
-    "09",
-    "10"
-  ],
+  "stale_chapter_numbers": [],
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 85.6,
-        "voice": 92.5,
-        "usefulness": 44.1,
-        "evidence_density": 88.8,
-        "claim_defensibility": 75.2,
+        "humanness": 86.0,
+        "voice": 92.0,
+        "usefulness": 43.4,
+        "evidence_density": 90.0,
+        "claim_defensibility": 94.7,
         "redundancy": 100.0,
         "n_paragraphs": 49,
-        "usefulness_substantive": 49.5,
-        "usefulness_connective": 9,
+        "usefulness_substantive": 47.9,
+        "usefulness_connective": 8,
         "usefulness_total": 49
       },
       "labels": {
@@ -143,7 +145,7 @@
         "voice": "strong",
         "usefulness": "weak",
         "evidence_density": "strong",
-        "claim_defensibility": "moderate",
+        "claim_defensibility": "strong",
         "redundancy": "strong"
       },
       "coverage": {
@@ -172,111 +174,14 @@
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph contains claims with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:Research this market and come back with a memo.",
-            "unsupported:Review this contract and mark the risky clauses.",
-            "unsupported:Refactor this service, run the checks, and prepare the patch for review.",
-            "unsupported:Investigate the failure, trace the likely cause, and show me what to approve next."
-          ],
-          "para_excerpt": "Research this market and come back with a memo. Review this contract and mark the risky clauses. Refactor this service, run the checks, and prepare the patch fo…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 8,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph makes a claim that is not backed by any of the provided ledger entries, either in the claim statements or supporting quotes.",
-          "evidence_refs": [
-            "unsupported:Trust in AI is not mainly a matter of anthropomorphism or vibes. It is a property of system design.",
-            "unsupported:trust in AI is not mainly a matter of anthropomorphism or vibes. It is a property of system design"
-          ],
-          "para_excerpt": "The opening should already make one thing clear: trust in AI is not mainly a matter of anthropomorphism or vibes. It is a property of system design."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph makes a claim with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:The most important fact about modern AI is not that it can talk. It is that people increasingly want it to work."
-          ],
-          "para_excerpt": "The most important fact about modern AI is not that it can talk. It is that people increasingly want it to work."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 19,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph fragment 'The useful spectrum is simpler:' does not match any claim statement or supporting quote in the provided ledger entries. It is an unsupported claim.",
-          "evidence_refs": [
-            "unsupported:The useful spectrum is simpler:"
-          ],
-          "para_excerpt": "The useful spectrum is simpler:"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 25,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph does not match any claim statement or supporting quote in the provided ledger entries.",
-          "evidence_refs": [
-            "unsupported:For a while, the most impressive thing AI could do was answer."
-          ],
-          "para_excerpt": "For a while, the most impressive thing AI could do was answer."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 28,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 55): The provided paragraph is incomplete and does not make any claims that can be evaluated against the ledger entries.",
-          "evidence_refs": [
-            "unsupported:A trustworthy delegate needs:"
-          ],
-          "para_excerpt": "A trustworthy delegate needs:"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 41,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph does not match any claim statement or supporting quote in the provided ledger entries.",
-          "evidence_refs": [
-            "unsupported:That case becomes especially important in Chapters 5, 6, and 7. It makes the trust question impossible to romanticize. In higher-stakes domains, \"almost right\" is often the most dangerous category.",
-            "unsupported:In higher-stakes domains, 'almost right' is often the most dangerous category."
-          ],
-          "para_excerpt": "That case becomes especially important in Chapters 5, 6, and 7. It makes the trust question impossible to romanticize. In higher-stakes domains, \"almost right\" …"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 42,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 85): The paragraph makes claims ('they prevent the opening from floating above the rest of the manuscript' and 'the book is not arguing in abstractions; it is following the same transition across two kinds of work') that are not supported by any of the provided ledger entries, either in claim statements or supporting quotes.",
-          "evidence_refs": [
-            "unsupported:they prevent the opening from floating above the rest of the manuscript",
-            "unsupported:the book is not arguing in abstractions; it is following the same transition across two kinds of work",
-            "unsupported:These two cases matter because they prevent the opening from floating above the rest of the manuscript.",
-            "unsupported:The book is not arguing in abstractions; it is following the same transition across two kinds of work:"
-          ],
-          "para_excerpt": "These two cases matter because they prevent the opening from floating above the rest of the manuscript. The book is not arguing in abstractions; it is following…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
           "paragraph_index": 19,
           "score": 55.0,
           "label": "moderate",
-          "reasoning": "panel-median 55 (n=3, spread 90): The paragraph is readable and conveys a point, but it lacks the specificity and a strong point of view that would make it stand out. It's a bit too generic and could benefit from more concrete examples or a clearer claim.",
+          "reasoning": "panel-median 55 (n=3, spread 85): The paragraph is readable and conveys a point, but it lacks the specificity and a strong point of view that would make it stand out. It could benefit from more concrete examples or a clearer claim. The phrase 'The useful spectrum is simpler:' is a weak transition that doesn't add much value.",
           "evidence_refs": [
             "phrase:'The useful spectrum is simpler:'"
           ],
@@ -285,9 +190,9 @@
         {
           "dim_name": "humanness",
           "paragraph_index": 28,
-          "score": 55.0,
+          "score": 65.0,
           "label": "moderate",
-          "reasoning": "panel-median 55 (n=3, spread 65): The paragraph is readable and conveys a clear list of requirements for a trustworthy delegate. However, it lacks specific examples, names, or concrete details that would make it more human. The list-of-three pattern is present, which is a common indicator of AI-generated content. The paragraph could benefit from a more distinct point of view or a claim that could be debated.",
+          "reasoning": "panel-median 65 (n=3, spread 65): The paragraph is readable and conveys a clear point about what a trustworthy delegate needs. However, it lacks specific examples or a unique point of view that would make it stand out. The list of requirements is somewhat generic and could be found in many similar discussions on the topic.",
           "evidence_refs": [
             "phrase:'A trustworthy delegate needs:'"
           ],
@@ -298,7 +203,7 @@
           "paragraph_index": 29,
           "score": 83.0,
           "label": "strong",
-          "reasoning": "panel-median 83 (n=3, spread 65): The paragraph is specific and has a clear point of view. It lists concrete requirements for a trustworthy delegate, each of which could be a point of discussion or disagreement. The prose is tight and would survive a hostile editor's red pen. However, the phrase 'approval boundaries that let humans steer without micromanaging every move' is somewhat generic and could be more specific.",
+          "reasoning": "panel-median 83 (n=3, spread 65): The paragraph is specific and has a clear point of view. It lists concrete requirements for a trustworthy delegate, each of which could be a point of discussion or disagreement. The prose is tight and would survive a hostile editor's red pen. However, the phrase 'approval boundaries that let humans steer without micromanaging every move' is slightly more generic and could be tightened further.",
           "evidence_refs": [
             "phrase:'constraints that convert tacit expectations into explicit ones'",
             "phrase:'evaluation loops that catch drift before users do'",
@@ -311,7 +216,7 @@
           "paragraph_index": 9,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is meta-commentary about the book's structure and purpose, providing no actionable insights or concrete examples for an engineer to apply.",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is meta-commentary about the book's structure and purpose, providing no actionable insights or decisions for an engineer.",
           "evidence_refs": [],
           "para_excerpt": "The chapters that follow are not a tour of trendy infrastructure. They are a cumulative answer to the same opening question."
         },
@@ -320,7 +225,7 @@
           "paragraph_index": 14,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transition prose, meta-commentary about the book's content, and does not provide any actionable insight or decision a working engineer could apply.",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transition prose and meta-commentary about the book's structure, providing no actionable insight or concrete example for an engineer to apply.",
           "evidence_refs": [],
           "para_excerpt": "The rest of this book is about what happens once we take that requirement seriously."
         },
@@ -329,302 +234,201 @@
           "paragraph_index": 19,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is incomplete and lacks any actionable content or decision-making guidance. It appears to be a fragment or placeholder text.",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is incomplete and lacks any actionable content or decision-making guidance.",
           "evidence_refs": [],
           "para_excerpt": "The useful spectrum is simpler:"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph contains claims with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:Research this market and come back with a memo.",
-            "unsupported:Review this contract and mark the risky clauses.",
-            "unsupported:Refactor this service, run the checks, and prepare the patch for review.",
-            "unsupported:Investigate the failure, trace the likely cause, and show me what to approve next."
-          ],
-          "para_excerpt": "Research this market and come back with a memo. Review this contract and mark the risky clauses. Refactor this service, run the checks, and prepare the patch fo…"
+          "paragraph_index": 22,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "The book does not start with model intelligence in the abstract. Intelligence is necessary but insufficient. A system can be astonishing in conversation and sti…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 8,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph makes a claim that is not backed by any of the provided ledger entries, either in the claim statements or supporting quotes.",
-          "evidence_refs": [
-            "unsupported:Trust in AI is not mainly a matter of anthropomorphism or vibes. It is a property of system design.",
-            "unsupported:trust in AI is not mainly a matter of anthropomorphism or vibes. It is a property of system design"
-          ],
-          "para_excerpt": "The opening should already make one thing clear: trust in AI is not mainly a matter of anthropomorphism or vibes. It is a property of system design."
+          "paragraph_index": 43,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a scoping or connective statement about the types of outputs discussed (software and high-stakes professional judgment), which does not require ledger backing.",
+          "evidence_refs": [],
+          "para_excerpt": "- one where the output is software - one where the output is high-stakes professional judgment"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph makes a claim with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:The most important fact about modern AI is not that it can talk. It is that people increasingly want it to work."
-          ],
-          "para_excerpt": "The most important fact about modern AI is not that it can talk. It is that people increasingly want it to work."
+          "paragraph_index": 47,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "Humans often mistake this tacit judgment for natural background competence because strong teams internalize it so thoroughly. But once work is handed to a machi…"
         }
       ],
-      "stale": true
+      "stale": false
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 85.6,
-        "voice": 87.5,
-        "usefulness": 50.8,
-        "evidence_density": 73.2,
-        "claim_defensibility": 78.3,
+        "humanness": 86.2,
+        "voice": 90.0,
+        "usefulness": 49.5,
+        "evidence_density": 70.0,
+        "claim_defensibility": 94.6,
         "redundancy": 90.0,
-        "n_paragraphs": 77,
-        "usefulness_substantive": 52.1,
-        "usefulness_connective": 3,
-        "usefulness_total": 77
+        "n_paragraphs": 106,
+        "usefulness_substantive": 51.3,
+        "usefulness_connective": 9,
+        "usefulness_total": 76
       },
       "labels": {
         "humanness": "strong",
         "voice": "strong",
-        "usefulness": "moderate",
+        "usefulness": "weak",
         "evidence_density": "moderate",
-        "claim_defensibility": "moderate",
+        "claim_defensibility": "strong",
         "redundancy": "strong"
       },
       "coverage": {
         "humanness": {
-          "scored": 77,
-          "total": 77
+          "scored": 76,
+          "total": 76
         },
         "voice": {
           "scored": 0,
           "total": 0
         },
         "usefulness": {
-          "scored": 77,
-          "total": 77
+          "scored": 76,
+          "total": 76
         },
         "evidence_density": {
           "scored": 0,
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 77,
-          "total": 77
+          "scored": 79,
+          "total": 79
         },
         "redundancy": {
           "scored": 0,
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 16,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph makes a claim with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are often what allow useful creativity to emerge."
-          ],
-          "para_excerpt": "One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are ofte…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 18,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('Constraints do several jobs at once.') that is not backed by any ledger entry, either in claim statements or supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:Constraints do several jobs at once."
-          ],
-          "para_excerpt": "Constraints do several jobs at once."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 26,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph makes a claim with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible."
-          ],
-          "para_excerpt": "AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 29,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 55): The paragraph makes a directional statement ('A larger share of human value moves toward') but does not provide any specific claim or evidence to support it. There is no matching ledger entry (claim statement or supporting quote) that backs this assertion.",
-          "evidence_refs": [
-            "unsupported:A larger share of human value moves toward",
-            "unsupported:The shift is real"
-          ],
-          "para_excerpt": "But as a directional statement, the shift is real. A larger share of human value moves toward:"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 35,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('When code gets cheaper, many people instinctively ask what happens to programmers.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. There is no evidence in the ledger to back this assertion.",
-          "evidence_refs": [
-            "unsupported:When code gets cheaper, many people instinctively ask what happens to programmers."
-          ],
-          "para_excerpt": "When code gets cheaper, many people instinctively ask what happens to programmers."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 39,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph poses a series of rhetorical questions that do not directly correspond to any specific claims or supporting quotes in the provided ledger entries. While the questions are thought-provoking, they are not backed by any explicit evidence or sources from the ledger. Therefore, the paragraph makes unsupported claims.",
-          "evidence_refs": [
-            "unsupported:Which abstraction belongs here?",
-            "unsupported:Which dependency will quietly punish us six months from now?",
-            "unsupported:Which draft only looks polished because nobody asked whether the premise is right?",
-            "unsupported:Which shortcut is a useful prototype move and which one is a long-term maintenance trap?",
-            "unsupported:Which bug is local and which one reveals that the architecture itself is under-specified?"
-          ],
-          "para_excerpt": "Which abstraction belongs here? Which dependency will quietly punish us six months from now? Which draft only looks polished because nobody asked whether the pr…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 50,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('speed changes what human excellence consists of') that is not supported by any ledger entry, either in claim statements or supporting quotes. This is a fabricated or unsupported claim, warranting a 'fail' label.",
-          "evidence_refs": [
-            "unsupported:speed changes what human excellence consists of",
-            "unsupported:The obvious answer is speed.",
-            "unsupported:The more important answer is that speed changes what human excellence consists of."
-          ],
-          "para_excerpt": "The obvious answer is speed. The more important answer is that speed changes what human excellence consists of."
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 30,
+          "paragraph_index": 42,
           "score": 25.0,
           "label": "weak",
-          "reasoning": "panel-median 25 (n=3, spread 65): The paragraph is a listicle stem with no point of view. It reads like a bullet-point list of generic tasks that could be found in any AI or productivity blog post. There is no specific claim, no concrete example, and no unique perspective that would make this stand out as human-authored prose.",
+          "reasoning": "panel-median 25 (n=3, spread 10): The paragraph is a listicle stem with no point of view. It reads like a bullet-point list of tasks that could be found in any AI or productivity blog post. There's no specific claim, no concrete example, and no unique perspective. It's pattern-matchable AI prose that could be easily generated without much thought.",
           "evidence_refs": [
-            "phrase:'preserving coherence across many generated artifacts'",
             "phrase:'framing tasks well'"
           ],
-          "para_excerpt": "- framing tasks well - defining constraints - choosing abstractions - sequencing work - reviewing outputs - preserving coherence across many generated artifacts…"
+          "para_excerpt": "## The human job is shifting from production to direction It would be too simple to say that humans now only direct while machines produce. In practice, people …"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 29,
-          "score": 55.0,
+          "paragraph_index": 33,
+          "score": 70.0,
           "label": "moderate",
-          "reasoning": "panel-median 55 (n=3, spread 65): The paragraph is readable and conveys a point, but it's somewhat generic and lacks the specificity and strong point of view that would make it stand out. It's a transitional statement that doesn't add much new information or a unique perspective.",
+          "reasoning": "panel-median 70 (n=2, spread 30): The paragraph is concise and specific, referencing a 'recurring software-factory case' to ground the discussion in a concrete example. It avoids generic AI-flavored language and instead provides a clear, human point of view that ties into the surrounding context. The phrase is punchy and survives a hostile editor's scrutiny.",
           "evidence_refs": [
-            "phrase:'A larger share of human value moves toward'",
-            "phrase:'But as a directional statement, the shift is real.'"
+            "phrase:'The recurring software-factory case helps make this concrete.'",
+            "phrase:'helps make this concrete'"
           ],
-          "para_excerpt": "But as a directional statement, the shift is real. A larger share of human value moves toward:"
+          "para_excerpt": "This is true for codebase rules, product principles, review checklists, domain boundaries, writing standards, and architectural decisions. The team that can sta…"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 18,
-          "score": 75.0,
-          "label": "moderate",
-          "reasoning": "panel-median 75 (n=3, spread 65): The paragraph is concise and makes a clear point about the multifaceted role of constraints. However, it lacks specific examples or a unique point of view that would make it stand out. The statement 'Constraints do several jobs at once' is a bit generic and could be more impactful with concrete examples or a stronger claim.",
+          "paragraph_index": 10,
+          "score": 80.0,
+          "label": "strong",
+          "reasoning": "panel-median 80 (n=3, spread 10): The paragraph is concise and clearly conveys a point of view, indicating a high level of humanness. It suggests that review is a crucial function in AI-native teams, which is a specific and arguable claim.",
           "evidence_refs": [
-            "phrase:'Constraints do several jobs at once.'",
-            "phrase:'Constraints do several jobs at once'"
+            "phrase:'That is why review becomes a more strategic function'",
+            "phrase:'That is why'",
+            "phrase:'That is why review becomes a more strategic function in AI-native teams.'"
           ],
-          "para_excerpt": "Constraints do several jobs at once."
+          "para_excerpt": "## Review becomes more important because generation outruns intuition"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 42,
-          "score": 10.0,
+          "paragraph_index": 25,
+          "score": 0.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 10): The paragraph is transition prose, meta-commentary about the book's structure, and does not provide any actionable insight or decision a working engineer could apply.",
+          "reasoning": "panel-median 0 (n=3, spread 30): The paragraph only contains a vague statement about constraints without providing any concrete example, decision, threshold, principle, or quantitative/qualitative test that a reader can apply.",
           "evidence_refs": [],
-          "para_excerpt": "That is the work of the next chapter."
+          "para_excerpt": "## Constraints are a form of care"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 29,
+          "paragraph_index": 62,
+          "score": 0.0,
+          "label": "fail",
+          "reasoning": "panel-median 0 (n=3, spread 10): The paragraph does not contain any useful information that a working engineer can apply on Monday.",
+          "evidence_refs": [],
+          "para_excerpt": "Not personal branding."
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 41,
           "score": 15.0,
           "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 20): The paragraph is vague and does not provide any actionable information or specific guidance that an engineer could apply. It only suggests a general trend without concrete details.",
+          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is vague and does not provide any actionable information or specific guidance that an engineer could apply. It only suggests a general trend without any concrete details.",
           "evidence_refs": [],
-          "para_excerpt": "But as a directional statement, the shift is real. A larger share of human value moves toward:"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 35,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph does not provide any actionable information or concrete examples that a working engineer could apply. It is a general statement that does not offer specific guidance or insights.",
-          "evidence_refs": [],
-          "para_excerpt": "When code gets cheaper, many people instinctively ask what happens to programmers."
+          "para_excerpt": "The senior engineer, strong editor, careful researcher, or domain expert is no longer valuable mainly because they can personally grind through more output. The…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 16,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph makes a claim with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are often what allow useful creativity to emerge."
-          ],
-          "para_excerpt": "One of the recurring mistakes people make with powerful models is to imagine that creativity and constraints oppose each other. In reality, constraints are ofte…"
+          "paragraph_index": 9,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument about the relationship between task framing and output quality in high-output environments, rather than a new factual assertion about the world. Therefore, it does not require ledger backing.",
+          "evidence_refs": [],
+          "para_excerpt": "The inverse is also true. A badly framed task can now waste far more time than before because the generator will happily produce large amounts of plausible but …"
         },
         {
           "dim_name": "claim_defensibility",
           "paragraph_index": 18,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('Constraints do several jobs at once.') that is not backed by any ledger entry, either in claim statements or supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:Constraints do several jobs at once."
-          ],
-          "para_excerpt": "Constraints do several jobs at once."
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes an externally-checkable claim about the importance of code review and the industry's under-training in this skill, which is supported by the ledger entry claims#38 (support_level: strong) and its sources. The claim aligns with the ledger's strength and is backed by the provided evidence, including the quote from Chris Kelly at Augment Code. There are no overstated or unsupport…",
+          "evidence_refs": [],
+          "para_excerpt": "Chris Kelly at Augment Code puts it bluntly: “code review is by far the most important skill” — and one the industry under-trained, because it interviewed for s…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 26,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 90): The paragraph makes a claim with no ledger backing at all.",
-          "evidence_refs": [
-            "unsupported:AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible."
-          ],
-          "para_excerpt": "AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible."
+          "paragraph_index": 20,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "This is where swyx’s “war on slop” is useful. Slop is not just bad code or generic writing. It is output that consumes trust faster than it creates value. It is…"
         }
       ],
       "stale": false
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 85.3,
-        "voice": 80.0,
-        "usefulness": 63.1,
-        "evidence_density": 87.2,
-        "claim_defensibility": 82.5,
-        "redundancy": 90.0,
-        "n_paragraphs": 49,
-        "usefulness_substantive": 64.9,
-        "usefulness_connective": 2,
+        "humanness": 84.6,
+        "voice": 90.0,
+        "usefulness": 63.5,
+        "evidence_density": 84.4,
+        "claim_defensibility": 93.9,
+        "redundancy": 85.0,
+        "n_paragraphs": 62,
+        "usefulness_substantive": 63.5,
+        "usefulness_connective": 0,
         "usefulness_total": 49
       },
       "labels": {
@@ -646,7 +450,7 @@
         },
         "usefulness": {
           "scored": 49,
-          "total": 49
+          "total": 51
         },
         "evidence_density": {
           "scored": 0,
@@ -661,639 +465,517 @@
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 22,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('When coding agents disappoint, teams usually blame the model') that is not supported by any of the provided ledger entries. Neither the claim statement nor any supporting quotes or sources in the ledger address this assertion. Therefore, the claim is unsupported.",
-          "evidence_refs": [
-            "unsupported:When coding agents disappoint, teams usually blame the model."
-          ],
-          "para_excerpt": "When coding agents disappoint, teams usually blame the model."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 39,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The provided paragraph is incomplete and does not make any specific claims that can be evaluated against the ledger entries.",
-          "evidence_refs": [
-            "unsupported:A practical checklist usually includes at least the following:",
-            "unsupported:A practical checklist usually includes at least the following"
-          ],
-          "para_excerpt": "A practical checklist usually includes at least the following:"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 39,
+          "paragraph_index": 50,
           "score": 25.0,
           "label": "weak",
-          "reasoning": "panel-median 25 (n=3, spread 10): The paragraph is a listicle stem with no point of view. It introduces a checklist but fails to provide any specific items or reasoning, making it generic and pattern-matchable AI prose.",
+          "reasoning": "panel-median 25 (n=3, spread 30): The paragraph is a listicle stem with no point of view. It introduces a checklist but fails to provide any specific items or context. The phrase 'A practical checklist usually includes at least the following:' is a classic example of empty hedging, setting up an expectation without delivering substance.",
           "evidence_refs": [
+            "phrase:'A practical checklist usually includes at least the following'",
             "phrase:'A practical checklist usually includes at least the following:'"
           ],
           "para_excerpt": "A practical checklist usually includes at least the following:"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 40,
+          "paragraph_index": 9,
           "score": 75.0,
           "label": "moderate",
-          "reasoning": "panel-median 75 (n=3, spread 65): The paragraph is readable and provides a clear list of practical items for a coding agent's checklist. However, it leans towards generic AI-flavored prose, particularly in the list-of-three patterns and the lack of specific examples or a strong point of view. The items are useful but could be more concrete and opinionated to stand out.",
+          "reasoning": "panel-median 75 (n=3, spread 70): The paragraph is readable and provides a clear list of items that are important for a coding project. However, it lacks a strong point of view and specific details that would make it stand out. The items listed are practical and useful, but they are somewhat generic and could be found in many project management guides. The worst phrase is 'examples of accepted patterns for tests, APIs, migrations…",
           "evidence_refs": [
+            "phrase:'examples of accepted patterns for tests, APIs, migrations, and reviews'",
             "phrase:'a stable folder structure rather than a maze of historical accidents'"
           ],
-          "para_excerpt": "- a stable folder structure rather than a maze of historical accidents - explicit setup, build, and run commands that do not rely on oral tradition - strong typ…"
+          "para_excerpt": "But subagents also intensify the need for good scaffolding. More workers without a stronger harness do not create a factory. They create chaos faster. Parallel …"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 1,
+          "paragraph_index": 0,
           "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 85 (n=3, spread 25): The paragraph demonstrates a clear point of view about the specialization of roles in modern coding systems, referencing OpenAI's Codex materials for specificity. It avoids generic AI-flavored language and makes a claim that could be debated (e.g., whether specialization is the most interesting development). The worst phrase is still somewhat generic but not egregious.",
+          "reasoning": "panel-median 85 (n=3, spread 5): The paragraph is specific, with a clear point of view that survives a hostile editor's scrutiny. It references Ryan Lopopolo directly, includes a quote, and makes a concrete claim about the shift in AI-native engineering. The prose is tight and loses something concrete if removed. The weakest moment is still strong but slightly generic in phrasing.",
           "evidence_refs": [
-            "phrase:'One of the most interesting developments in modern coding systems'"
+            "phrase:'The line sounds almost rude in a field obsessed with generated output.'",
+            "phrase:'Once you ask a machine to do implementation work instead of merely suggesting snippets'"
           ],
-          "para_excerpt": "The same logic extends beyond a single agent. One of the most interesting developments in modern coding systems is the move toward specialized roles: research a…"
+          "para_excerpt": "Ryan Lopopolo puts the inversion bluntly: “The important thing is not the code but the prompt and the guardrails that got you there.” The line sounds almost rud…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 25,
+          "paragraph_index": 36,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 10): The paragraph is vague and does not provide any actionable insight, decision, threshold, principle, or concrete example. It merely introduces the concept of 'slop' without explaining how to address or avoid it.",
+          "reasoning": "panel-median 10 (n=3, spread 30): The paragraph is vague and does not provide any actionable information or concrete examples that an engineer can apply.",
           "evidence_refs": [],
           "para_excerpt": "That is where slop comes from."
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 5,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is mostly descriptive and focuses on the marketing aspect of AI coding tools, without providing any actionable insights or concrete examples that a working engineer could apply.",
-          "evidence_refs": [],
-          "para_excerpt": "The marketing of AI coding tools naturally focuses on generation. That is the visible magic. The agent edits a file. It writes a test. It proposes a patch. Thos…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 22,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 30): This paragraph does not provide any actionable information or concrete examples that a reader can apply. It only states a common reaction to disappointing coding agents, which is blaming the model, without offering any solutions or insights.",
-          "evidence_refs": [],
-          "para_excerpt": "When coding agents disappoint, teams usually blame the model."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 22,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('When coding agents disappoint, teams usually blame the model') that is not supported by any of the provided ledger entries. Neither the claim statement nor any supporting quotes or sources in the ledger address this assertion. Therefore, the claim is unsupported.",
-          "evidence_refs": [
-            "unsupported:When coding agents disappoint, teams usually blame the model."
-          ],
-          "para_excerpt": "When coding agents disappoint, teams usually blame the model."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 39,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The provided paragraph is incomplete and does not make any specific claims that can be evaluated against the ledger entries.",
-          "evidence_refs": [
-            "unsupported:A practical checklist usually includes at least the following:",
-            "unsupported:A practical checklist usually includes at least the following"
-          ],
-          "para_excerpt": "A practical checklist usually includes at least the following:"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 25,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "panel-median 25 (n=3, spread 100): The paragraph 'That is where slop comes from.' is a central claim that does not match any of the provided ledger entries, either in claim statement or supporting quotes. This claim is unsupported and lacks the necessary backing to be considered defensible.",
-          "evidence_refs": [
-            "unsupported:That is where slop comes from."
-          ],
-          "para_excerpt": "That is where slop comes from."
-        }
-      ],
-      "stale": false
-    },
-    "04": {
-      "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
-      "rollup": {
-        "humanness": 85.1,
-        "voice": 87.5,
-        "usefulness": 60.5,
-        "evidence_density": 90.0,
-        "claim_defensibility": 85.5,
-        "redundancy": 82.5,
-        "n_paragraphs": 60,
-        "usefulness_substantive": 62.2,
-        "usefulness_connective": 2,
-        "usefulness_total": 60
-      },
-      "labels": {
-        "humanness": "strong",
-        "voice": "strong",
-        "usefulness": "moderate",
-        "evidence_density": "strong",
-        "claim_defensibility": "strong",
-        "redundancy": "strong"
-      },
-      "coverage": {
-        "humanness": {
-          "scored": 60,
-          "total": 60
-        },
-        "voice": {
-          "scored": 0,
-          "total": 0
-        },
-        "usefulness": {
-          "scored": 60,
-          "total": 60
-        },
-        "evidence_density": {
-          "scored": 0,
-          "total": 0
-        },
-        "claim_defensibility": {
-          "scored": 60,
-          "total": 60
-        },
-        "redundancy": {
-          "scored": 0,
-          "total": 0
-        }
-      },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 27,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph makes a claim about the agent’s implementation of rate limiting and its effect on the backfill path, but this claim is not backed by any ledger entry. The claim statement and supporting quotes/sources do not match any of the provided ledger entries.",
-          "evidence_refs": [
-            "unsupported:The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different.",
-            "unsupported:The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different. The relevant exception had existed only in an old review comment and in the head of Meridian's most senior payments engineer — the one person who remembered why that path was special. The code still type-checked. The unit tests still passed because none of them covered the override path under production-like volume. The patch was locally plausible, globally wrong."
-          ],
-          "para_excerpt": "The postmortem is revealing. The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same t…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 31,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 55): The paragraph makes an unsupported claim about the 'first failure mode' of AI systems being that they can be wrong, which lacks ledger backing. The second claim is supported by the ledger and matches its strength.",
-          "evidence_refs": [
-            "unsupported:The first failure mode of AI systems is obvious: they can be wrong.",
-            "unsupported:The first failure mode of AI systems is obvious: they can be wrong",
-            "unsupported:The second is more dangerous: they can look right often enough that teams stop measuring",
-            "overstated:The second is more dangerous: they can look right often enough that teams stop measuring."
-          ],
-          "para_excerpt": "The first failure mode of AI systems is obvious: they can be wrong. The second is more dangerous: they can look right often enough that teams stop measuring."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 58,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 83): The provided paragraph is incomplete and does not make any specific claims that can be evaluated against the ledger entries. Without a complete paragraph or clear claims, it is impossible to determine defensibility.",
-          "evidence_refs": [
-            "unsupported:This creates the eval flywheel:"
-          ],
-          "para_excerpt": "This creates the eval flywheel:"
-        }
-      ],
-      "weakest": [
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 58,
-          "score": 40.0,
-          "label": "weak",
-          "reasoning": "panel-median 40 (n=3, spread 35): The phrase is too brief and generic to stand alone. It serves as scaffolding for the list but doesn't contribute anything concrete or human-like on its own.",
-          "evidence_refs": [
-            "phrase:'This creates the eval flywheel:'",
-            "phrase:'This creates the eval flywheel'"
-          ],
-          "para_excerpt": "This creates the eval flywheel:"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 59,
-          "score": 55.0,
-          "label": "moderate",
-          "reasoning": "panel-median 55 (n=3, spread 65): The paragraph is readable and follows a logical sequence, but it lacks specific details, names, or a strong point of view. It reads more like a generic list of steps rather than a unique insight from a thinking author. The worst phrase is 'identify painful or important failure patterns,' which is a vague and overused term that could apply to any process.",
-          "evidence_refs": [
-            "phrase:'label and structure those patterns into reusable datasets'",
-            "phrase:'observe real behavior in production'",
-            "phrase:'identify painful or important failure patterns'"
-          ],
-          "para_excerpt": "1. observe real behavior in production 2. identify painful or important failure patterns 3. label and structure those patterns into reusable datasets 4. compare…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 8,
-          "score": 65.0,
-          "label": "moderate",
-          "reasoning": "panel-median 65 (n=3, spread 55): The paragraph is concise and avoids many of the AI-flavored pitfalls, but it lacks a strong point of view or specific details that would elevate it. The phrase 'a good eval program usually contains multiple layers' is somewhat generic and could be more concrete.",
-          "evidence_refs": [
-            "phrase:'a good eval program usually contains multiple layers'",
-            "phrase:'this is also why'",
-            "phrase:'This is also why'"
-          ],
-          "para_excerpt": "This is also why a good eval program usually contains multiple layers:"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 58,
-          "score": 10.0,
-          "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 35): The paragraph is incomplete and lacks any actionable content or decision-making guidance. It appears to be a transition or placeholder text without operational lift.",
-          "evidence_refs": [],
-          "para_excerpt": "This creates the eval flywheel:"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 10,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 30): This paragraph is a comparison statement that does not provide any actionable information or specific guidance for an engineer to apply. It is more of a motivational or contextual statement rather than a practical directive.",
-          "evidence_refs": [],
-          "para_excerpt": "None of this is glamorous. But neither is version control, incident response, or CI."
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 15,
-          "score": 20.0,
-          "label": "weak",
-          "reasoning": "panel-median 20 (n=3, spread 15): The paragraph describes a landscape without commitments and restates a prior chapter's point, providing no actionable lift.",
-          "evidence_refs": [],
-          "para_excerpt": "In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added the checked-in migration ex…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 27,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph makes a claim about the agent’s implementation of rate limiting and its effect on the backfill path, but this claim is not backed by any ledger entry. The claim statement and supporting quotes/sources do not match any of the provided ledger entries.",
-          "evidence_refs": [
-            "unsupported:The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different.",
-            "unsupported:The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same throttle to the backfill path, where the intended rule was different. The relevant exception had existed only in an old review comment and in the head of Meridian's most senior payments engineer — the one person who remembered why that path was special. The code still type-checked. The unit tests still passed because none of them covered the override path under production-like volume. The patch was locally plausible, globally wrong."
-          ],
-          "para_excerpt": "The postmortem is revealing. The agent did in fact implement rate limiting. It even mirrored the main service pattern correctly. But it also applied that same t…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 31,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 55): The paragraph makes an unsupported claim about the 'first failure mode' of AI systems being that they can be wrong, which lacks ledger backing. The second claim is supported by the ledger and matches its strength.",
-          "evidence_refs": [
-            "unsupported:The first failure mode of AI systems is obvious: they can be wrong.",
-            "unsupported:The first failure mode of AI systems is obvious: they can be wrong",
-            "unsupported:The second is more dangerous: they can look right often enough that teams stop measuring",
-            "overstated:The second is more dangerous: they can look right often enough that teams stop measuring."
-          ],
-          "para_excerpt": "The first failure mode of AI systems is obvious: they can be wrong. The second is more dangerous: they can look right often enough that teams stop measuring."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 58,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 83): The provided paragraph is incomplete and does not make any specific claims that can be evaluated against the ledger entries. Without a complete paragraph or clear claims, it is impossible to determine defensibility.",
-          "evidence_refs": [
-            "unsupported:This creates the eval flywheel:"
-          ],
-          "para_excerpt": "This creates the eval flywheel:"
-        }
-      ],
-      "stale": false
-    },
-    "05": {
-      "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
-      "rollup": {
-        "humanness": 84.8,
-        "voice": 87.5,
-        "usefulness": 60.1,
-        "evidence_density": 90.0,
-        "claim_defensibility": 83.9,
-        "redundancy": 82.5,
-        "n_paragraphs": 63,
-        "usefulness_substantive": 61.9,
-        "usefulness_connective": 3,
-        "usefulness_total": 63
-      },
-      "labels": {
-        "humanness": "strong",
-        "voice": "strong",
-        "usefulness": "moderate",
-        "evidence_density": "strong",
-        "claim_defensibility": "strong",
-        "redundancy": "strong"
-      },
-      "coverage": {
-        "humanness": {
-          "scored": 63,
-          "total": 63
-        },
-        "voice": {
-          "scored": 0,
-          "total": 0
-        },
-        "usefulness": {
-          "scored": 63,
-          "total": 63
-        },
-        "evidence_density": {
-          "scored": 0,
-          "total": 0
-        },
-        "claim_defensibility": {
-          "scored": 63,
-          "total": 63
-        },
-        "redundancy": {
-          "scored": 0,
-          "total": 0
-        }
-      },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 24,
-          "score": 12.5,
-          "label": "fail",
-          "reasoning": "panel-median 12 (n=2, spread 25): The claim about the 'runtime problem' being the 'next layer of infrastructure' is unsupported by any ledger entry or supporting quote.",
-          "evidence_refs": [
-            "unsupported:That is the runtime problem, the next layer of infrastructure."
-          ],
-          "para_excerpt": "That is the runtime problem, the next layer of infrastructure."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 11,
-          "score": 17.5,
-          "label": "fail",
-          "reasoning": "panel-median 18 (n=2, spread 15): The second claim in the paragraph is strongly supported by ledger entry #28, but the first claim ('The old failure mode was \"the model lacked the right document.\"') is unsupported by the ledger. The rubric requires a 'fail' label for any unsupported claim.",
-          "evidence_refs": [
-            "unsupported:The old failure mode was \"the model lacked the right document.\"",
-            "unsupported:the model was buried under too many possible actions"
-          ],
-          "para_excerpt": "The old failure mode was “the model lacked the right document.” The emerging one is “the model was buried under too many possible actions.”"
-        }
-      ],
-      "weakest": [
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 53,
-          "score": 65.0,
-          "label": "moderate",
-          "reasoning": "panel-median 65 (n=3, spread 55): The paragraph lists distinctions between types of knowledge layers, which is useful but lacks a strong point of view or specific examples. It avoids some AI clichés but remains somewhat generic. The worst phrase is a list item without elaboration, which feels like scaffolding.",
-          "evidence_refs": [
-            "phrase:'raw evidence versus summaries derived from prior steps'",
-            "phrase:'authoritative sources versus helpful background'",
-            "phrase:'tool outputs that should be inspected directly versus ones safe to compress'"
-          ],
-          "para_excerpt": "- authoritative sources versus helpful background - current task state versus long-term memory - private internal knowledge versus public reference material - r…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 52,
-          "score": 70.0,
-          "label": "moderate",
-          "reasoning": "panel-median 70 (n=2, spread 30): The paragraph is concise and specific, introducing a clear point of view about the importance of distinguishing layers in context architecture. It avoids generic AI-flavored language and instead presents a focused claim that could be debated or expanded upon. The worst phrase is still somewhat abstract but serves a purpose in framing the idea.",
-          "evidence_refs": [
-            "phrase:'distinguishes layers such as'",
-            "phrase:'A serious context architecture distinguishes layers such as:'"
-          ],
-          "para_excerpt": "A serious context architecture distinguishes layers such as:"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 24,
-          "score": 72.5,
-          "label": "moderate",
-          "reasoning": "panel-median 72 (n=2, spread 35): The paragraph is concise, specific, and has a clear point of view. It directly addresses a problem ('the runtime problem') and introduces a concrete concept ('the next layer of infrastructure'). The language is not generic or AI-flavored, and it survives a hostile editor's scrutiny. The worst phrase is still identifiable but does not detract significantly from the overall quality.",
-          "evidence_refs": [
-            "phrase:'the next layer of infrastructure'"
-          ],
-          "para_excerpt": "That is the runtime problem, the next layer of infrastructure."
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 24,
-          "score": 10.0,
-          "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transition prose, meta-commentary, and does not provide any actionable insight or concrete example for a working engineer.",
-          "evidence_refs": [],
-          "para_excerpt": "That is the runtime problem, the next layer of infrastructure."
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 23,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is mostly a rhetorical question without providing any concrete answers or actionable insights. It does not offer a decision, principle, or example that a reader can apply directly.",
-          "evidence_refs": [],
-          "para_excerpt": "But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting f…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 32,
-          "score": 25.0,
-          "label": "weak",
-          "reasoning": "panel-median 25 (n=3, spread 10): The paragraph describes a clarification about context engineering but does not provide any actionable insights or specific examples that a reader can apply.",
-          "evidence_refs": [],
-          "para_excerpt": "Once teams stop equating context with raw access, a second clarification becomes necessary. Context engineering is broader than retrieval."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 24,
-          "score": 12.5,
-          "label": "fail",
-          "reasoning": "panel-median 12 (n=2, spread 25): The claim about the 'runtime problem' being the 'next layer of infrastructure' is unsupported by any ledger entry or supporting quote.",
-          "evidence_refs": [
-            "unsupported:That is the runtime problem, the next layer of infrastructure."
-          ],
-          "para_excerpt": "That is the runtime problem, the next layer of infrastructure."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 11,
-          "score": 17.5,
-          "label": "fail",
-          "reasoning": "panel-median 18 (n=2, spread 15): The second claim in the paragraph is strongly supported by ledger entry #28, but the first claim ('The old failure mode was \"the model lacked the right document.\"') is unsupported by the ledger. The rubric requires a 'fail' label for any unsupported claim.",
-          "evidence_refs": [
-            "unsupported:The old failure mode was \"the model lacked the right document.\"",
-            "unsupported:the model was buried under too many possible actions"
-          ],
-          "para_excerpt": "The old failure mode was “the model lacked the right document.” The emerging one is “the model was buried under too many possible actions.”"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 14,
-          "score": 32.5,
-          "label": "weak",
-          "reasoning": "panel-median 32 (n=2, spread 45): The paragraph contains three unsupported claims: 'cite better evidence,' 'reduce review burden,' and 'waste fewer tokens.' The rubric indicates that any unsupported claim warrants a 'fail' label.",
-          "evidence_refs": [
-            "unsupported:Does it cite better evidence?",
-            "unsupported:Does it reduce review burden?",
-            "unsupported:Does it waste fewer tokens to get the same or better result?"
-          ],
-          "para_excerpt": "Does the system complete real tasks more accurately? Does it cite better evidence? Does it reduce review burden? Does it waste fewer tokens to get the same or b…"
-        }
-      ],
-      "stale": false
-    },
-    "06": {
-      "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
-      "rollup": {
-        "humanness": 84.6,
-        "voice": 87.5,
-        "usefulness": 62.4,
-        "evidence_density": 83.8,
-        "claim_defensibility": 84.1,
-        "redundancy": 82.5,
-        "n_paragraphs": 60,
-        "usefulness_substantive": 62.4,
-        "usefulness_connective": 0,
-        "usefulness_total": 60
-      },
-      "labels": {
-        "humanness": "strong",
-        "voice": "strong",
-        "usefulness": "moderate",
-        "evidence_density": "strong",
-        "claim_defensibility": "strong",
-        "redundancy": "strong"
-      },
-      "coverage": {
-        "humanness": {
-          "scored": 60,
-          "total": 60
-        },
-        "voice": {
-          "scored": 0,
-          "total": 0
-        },
-        "usefulness": {
-          "scored": 60,
-          "total": 60
-        },
-        "evidence_density": {
-          "scored": 0,
-          "total": 0
-        },
-        "claim_defensibility": {
-          "scored": 60,
-          "total": 60
-        },
-        "redundancy": {
-          "scored": 0,
-          "total": 0
-        }
-      },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 10,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('But subagents do not solve the control problem. They intensify it.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:But subagents do not solve the control problem. They intensify it.",
-            "unsupported:subagents do not solve the control problem. They intensify it."
-          ],
-          "para_excerpt": "But subagents do not solve the control problem. They intensify it."
-        }
-      ],
-      "weakest": [
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 2,
-          "score": 80.0,
-          "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph is specific, has a clear point of view, and survives a hostile editor's red pen. It avoids generic AI-flavored language and instead provides concrete examples (e.g., 'permission systems, validators, databases') and a strong claim about the role of older components in preventing chaos. The prose would lose something concrete if removed.",
-          "evidence_refs": [
-            "phrase:'The rest of the runtime is what prevents volatility from becoming operational chaos.'",
-            "phrase:'The model is the volatile component'"
-          ],
-          "para_excerpt": "The chapter should linger on this because it helps demystify agent architecture. Not every trustworthy agent system is built from scratch as a magical new organ…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 9,
-          "score": 80.0,
-          "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph is specific, with a clear point of view about the role of subagents in increasing throughput. It references OpenAI and a 'coding-factory case,' adding concrete details. The language is direct and avoids empty hedging or generic AI patterns. The worst phrase is still somewhat generic but does not detract significantly from the overall humanness.",
-          "evidence_refs": [
-            "phrase:'more throughput'",
-            "phrase:'one human can launch many narrow specialists at once'"
-          ],
-          "para_excerpt": "The final runtime lesson is about subagents. Parallel workers are compelling because they offer the same thing every manager has wanted forever: more throughput…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 14,
-          "score": 80.0,
-          "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph is specific, has a clear point of view, and survives a hostile editor's red pen. It makes a concrete claim about the necessity of planning boards, supervisor views, and other infrastructure in multi-agent work, arguing that these are not just administrative extras but essential for productive parallelism. The language is direct and avoids generic AI-flavored hedging.",
-          "evidence_refs": [
-            "phrase:'planning boards, supervisor views, task decomposition layers, and explicit review queues'",
-            "phrase:'administrative extras'"
-          ],
-          "para_excerpt": "This is why the best visions of multi-agent work keep converging on planning boards, supervisor views, task decomposition layers, and explicit review queues. Th…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 20,
-          "score": 10.0,
-          "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 25): The paragraph is meta-commentary and transition prose, summarizing prior chapters without providing any new actionable insights or decisions.",
-          "evidence_refs": [],
-          "para_excerpt": "This is the deeper continuity across the book’s middle run. Chapter 3 argued that delegated work needs a legible workplace. Chapter 4 argued that it needs a qua…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 10,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph does not provide any actionable information or concrete examples that an engineer could apply. It only states a problem without offering a solution or further detail.",
-          "evidence_refs": [],
-          "para_excerpt": "But subagents do not solve the control problem. They intensify it."
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 21,
           "score": 15.0,
           "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 20): The paragraph is a high-level statement that does not provide any actionable information or specific guidance for an engineer to apply in their work.",
+          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is mostly descriptive and focuses on the marketing aspect of AI coding tools, without providing any actionable insights or decisions that a reader can apply.",
           "evidence_refs": [],
-          "para_excerpt": "A machine colleague is not just a model with tools. It is a model inside an operating environment."
+          "para_excerpt": ""
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 33,
+          "score": 15.0,
+          "label": "fail",
+          "reasoning": "panel-median 15 (n=3, spread 20): This paragraph is a restatement of a common issue without providing any actionable advice or specific examples that an engineer could apply.",
+          "evidence_refs": [],
+          "para_excerpt": "When coding agents disappoint, teams usually blame the model."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 2,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes an externally-checkable claim about the move toward specialized roles in modern coding systems, which is supported by the ledger entry claims#44 (support_level: moderate) and its reusable phrasing. The claim in the paragraph aligns with the ledger's description of subagent specialization making process explicit and encoding team judgment into roles. Additionally, the paragraph…",
+          "evidence_refs": [],
+          "para_excerpt": "The same logic extends beyond a single agent. One of the most interesting developments in modern coding systems is the move toward specialized roles: research a…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 8,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "But subagents also intensify the need for good scaffolding. More workers without a stronger harness do not create a factory. They create chaos faster. Parallel …"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 12,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): The paragraph makes several claims about what gives teams a durable advantage, including making repositories legible, externalizing non-functional judgment, treating specs as reusable intent, investing in validations and repo affordances, and turning loose process into a staged software factory. These claims are supported by ledger entries, such as claims#4, claims#5, claims#14, and claims#43. Th…",
+          "evidence_refs": [],
+          "para_excerpt": "But the durable advantage is increasingly elsewhere. It belongs to teams that make their repositories legible. Teams that externalize non-functional judgment in…"
+        }
+      ],
+      "stale": false
+    },
+    "04": {
+      "slug": "chapter-4-evals-are-the-control-system",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
+      "rollup": {
+        "humanness": 84.6,
+        "voice": 90.0,
+        "usefulness": 57.8,
+        "evidence_density": 90.0,
+        "claim_defensibility": 94.0,
+        "redundancy": 85.0,
+        "n_paragraphs": 73,
+        "usefulness_substantive": 57.9,
+        "usefulness_connective": 8,
+        "usefulness_total": 56
+      },
+      "labels": {
+        "humanness": "strong",
+        "voice": "strong",
+        "usefulness": "moderate",
+        "evidence_density": "strong",
+        "claim_defensibility": "strong",
+        "redundancy": "strong"
+      },
+      "coverage": {
+        "humanness": {
+          "scored": 56,
+          "total": 56
+        },
+        "voice": {
+          "scored": 0,
+          "total": 0
+        },
+        "usefulness": {
+          "scored": 56,
+          "total": 57
+        },
+        "evidence_density": {
+          "scored": 0,
+          "total": 0
+        },
+        "claim_defensibility": {
+          "scored": 60,
+          "total": 60
+        },
+        "redundancy": {
+          "scored": 0,
+          "total": 0
+        }
+      },
+      "ship_blockers": [],
+      "weakest": [
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 66,
+          "score": 55.0,
+          "label": "moderate",
+          "reasoning": "panel-median 55 (n=3, spread 65): The paragraph is readable and conveys a clear idea, but it lacks specificity and a strong point of view. The phrase 'This creates the eval flywheel' is somewhat generic and could be more concrete or explanatory.",
+          "evidence_refs": [
+            "phrase:'This creates the eval flywheel'"
+          ],
+          "para_excerpt": "Teams often imagine observability as the thing you do after deployment and evals as the thing you do before deployment. In reality, the two should feed each oth…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 68,
+          "score": 55.0,
+          "label": "moderate",
+          "reasoning": "panel-median 55 (n=3, spread 65): The paragraph is readable and follows a logical sequence, but it lacks specific details, names, or a strong point of view. It reads more like a generic list of steps rather than a unique insight from a thinking author. The worst phrase is 'identify painful or important failure patterns,' which is vague and could apply to almost any context without providing concrete examples.",
+          "evidence_refs": [
+            "phrase:'label and structure those patterns into reusable datasets'",
+            "phrase:'observe real behavior in production'",
+            "phrase:'identify painful or important failure patterns'"
+          ],
+          "para_excerpt": "Past a certain complexity this stops being optional. The Raindrop team describes crossing over “from a testing and eval paradigm to a monitoring paradigm,” beca…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 6,
+          "score": 65.0,
+          "label": "moderate",
+          "reasoning": "panel-median 65 (n=3, spread 55): The paragraph is concise and introduces a point about the necessity of multiple layers in a good eval program, which is a specific claim. However, it lacks concrete examples or deeper insight, making it somewhat generic. The worst phrase is not egregiously AI-flavored, but it could be more vivid or detailed.",
+          "evidence_refs": [
+            "phrase:'a good eval program usually contains multiple layers'",
+            "phrase:'This is also why a good eval program usually contains multiple layers:'",
+            "phrase:'multiple layers'"
+          ],
+          "para_excerpt": "There is a cultural misconception hiding inside a technical one. People often talk as if evals are mostly about metrics. In practice, they are also about instit…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 11,
+          "score": 15.0,
+          "label": "fail",
+          "reasoning": "panel-median 15 (n=3, spread 30): This paragraph is a comparison statement that does not provide any actionable information or specific guidance for an engineer to apply. It is more of a motivational or contextual statement rather than a practical directive.",
+          "evidence_refs": [],
+          "para_excerpt": "This is also why a good eval program usually contains multiple layers:"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 21,
+          "score": 15.0,
+          "label": "fail",
+          "reasoning": "panel-median 15 (n=3, spread 20): This paragraph is a restatement of the previous chapter's content and does not provide any new actionable information or decisions for a working engineer.",
+          "evidence_refs": [],
+          "para_excerpt": "In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added the checked-in migration ex…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 30,
+          "score": 25.0,
+          "label": "weak",
+          "reasoning": "panel-median 25 (n=3, spread 10): The paragraph draws a comparison between a real factory and a software factory but does not provide any actionable information or specific steps that a reader can apply. It is more of a statement without concrete guidance.",
+          "evidence_refs": [],
+          "para_excerpt": "A real factory needs quality control. A delegated software factory needs evals."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 3,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes an externally-checkable claim about the role of an eval platform, which is supported by the ledger entry (claims#8) with a strong support level. The claim aligns with the ledger's reusable phrasing and supporting quotes, such as 'classic benchmark maxing' and 'There are right ways to use them. There are wrong ways to use them.' The paragraph does not overstate the ledger's evi…",
+          "evidence_refs": [],
+          "para_excerpt": "This is also why Hetzel insists that “an eval platform is not just a test runner.” A runner executes checks. A real platform also stores datasets, versions scor…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 4,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "There is a newer reason the platform matters: once coding agents write code alongside people, they become readers of the eval suite too. Lawrence Jones at incid…"
         },
         {
           "dim_name": "claim_defensibility",
           "paragraph_index": 10,
-          "score": 0.0,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes a claim about evals being a control system for both the model and the organization, and how they help teams turn fuzzy standards into inspectable ones. This aligns closely with ledger entry claims#8, which states that 'Evals are a control system, not just a test suite' and is supported by multiple sources and quotes. The rhetorical strength of the paragraph matches the ledger'…",
+          "evidence_refs": [],
+          "para_excerpt": "In that sense, evals are a control system not only for the model, but for the organization. They are how teams turn fuzzy standards into inspectable ones."
+        }
+      ],
+      "stale": false
+    },
+    "05": {
+      "slug": "chapter-5-context-is-infrastructure",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
+      "rollup": {
+        "humanness": 85.4,
+        "voice": 90.0,
+        "usefulness": 54.7,
+        "evidence_density": 90.0,
+        "claim_defensibility": 93.9,
+        "redundancy": 83.0,
+        "n_paragraphs": 76,
+        "usefulness_substantive": 56.3,
+        "usefulness_connective": 8,
+        "usefulness_total": 57
+      },
+      "labels": {
+        "humanness": "strong",
+        "voice": "strong",
+        "usefulness": "moderate",
+        "evidence_density": "strong",
+        "claim_defensibility": "strong",
+        "redundancy": "strong"
+      },
+      "coverage": {
+        "humanness": {
+          "scored": 57,
+          "total": 57
+        },
+        "voice": {
+          "scored": 0,
+          "total": 0
+        },
+        "usefulness": {
+          "scored": 57,
+          "total": 57
+        },
+        "evidence_density": {
+          "scored": 0,
+          "total": 0
+        },
+        "claim_defensibility": {
+          "scored": 63,
+          "total": 63
+        },
+        "redundancy": {
+          "scored": 0,
+          "total": 0
+        }
+      },
+      "ship_blockers": [],
+      "weakest": [
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 58,
+          "score": 55.0,
+          "label": "moderate",
+          "reasoning": "panel-median 55 (n=3, spread 45): The paragraph is readable and conveys a clear point about the importance of distinguishing layers in a context architecture. However, it lacks specific examples or a strong point of view that would make it stand out. The phrase 'A serious context architecture distinguishes layers such as:' is a listicle stem that could be more engaging with concrete examples or a more specific claim.",
+          "evidence_refs": [
+            "phrase:'A serious context architecture distinguishes layers such as:'"
+          ],
+          "para_excerpt": "In practice, usefulness depends on topology: what kind of thing this is, how it relates to other things, how trustworthy it is, how recent it is, whether it is …"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 60,
+          "score": 65.0,
+          "label": "moderate",
+          "reasoning": "panel-median 65 (n=3, spread 55): The paragraph lists distinctions between types of knowledge layers, which is useful but lacks a strong point of view or specific examples. It avoids some AI clichés but remains somewhat generic. The worst phrase is a list item without deeper analysis.",
+          "evidence_refs": [
+            "phrase:'raw evidence versus summaries derived from prior steps'",
+            "phrase:'authoritative sources versus helpful background'",
+            "phrase:'tool outputs that should be inspected directly versus ones safe to compress'"
+          ],
+          "para_excerpt": "This is one reason context engineering is so often misunderstood by teams that are still thinking in terms of “RAG versus no RAG.” Retrieval-augmented generatio…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 12,
+          "score": 75.0,
+          "label": "moderate",
+          "reasoning": "panel-median 75 (n=3, spread 65): The paragraph is readable and poses important questions that a thinking author might ask. However, it lacks specific claims or points of view that would make it stand out as uniquely human. The questions are somewhat generic and could be found in many technical discussions about system performance.",
+          "evidence_refs": [
+            "phrase:'Does it waste fewer tokens to get the same or better result?'",
+            "phrase:'Does the system complete real tasks more accurately?'"
+          ],
+          "para_excerpt": "This is one of the most important ways the context chapter connects back to the rest of the book. Tool access is not merely an integration story. It is part of …"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 23,
+          "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('But subagents do not solve the control problem. They intensify it.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
+          "reasoning": "panel-median 10 (n=3, spread 5): The paragraph is transition prose and does not provide any actionable insight or concrete example for an engineer to apply.",
+          "evidence_refs": [],
+          "para_excerpt": "## Context is what makes intelligence situated"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 22,
+          "score": 15.0,
+          "label": "fail",
+          "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is a rhetorical question that does not provide any actionable information or concrete guidance for a working engineer. It does not contain a decision, threshold, principle, or concrete example that can be applied.",
+          "evidence_refs": [],
+          "para_excerpt": "This also explains why so many context debates are unproductive when they happen in the abstract. Teams argue about RAG, GraphRAG, memory, or tool selection as …"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 36,
+          "score": 25.0,
+          "label": "weak",
+          "reasoning": "panel-median 25 (n=3, spread 10): The paragraph describes a clarification about context engineering but does not provide any actionable decision, principle, or concrete example that a reader can apply.",
+          "evidence_refs": [],
+          "para_excerpt": "Kuba Rogut puts the sizing rule in one line, relaying Jeff Dean: you do not need a trillion tokens at once, you need the right million. The number worth instrum…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 4,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph makes an externally-checkable claim about the cost distribution of AI inputs and outputs, which is directly supported by the ledger entry (claims#57) with a moderate support level. The claim is accurately reflected in the paragraph, and the supporting quote from Rajkumar Sakthivel is included verbatim. The additional detail about Tesco's measured reduction in input tokens (94%) is c…",
+          "evidence_refs": [],
+          "para_excerpt": "Most of that budget hides in the input. Rajkumar Sakthivel’s team at Tesco states the decomposition bluntly: “90% of your AI cost is input. Files, search result…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 7,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "The rise of tool protocols such as MCP exposes a newer version of the same issue. For a while, context engineering mostly meant “Which documents should the mode…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 10,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph makes externally-checkable claims, but all of them are backed by ledger entries with strong support. The claims about GitHub's numbers, the reduction in initial tool-load context by 49%, and the shift from user configuration to changing defaults are all supported by the ledger entries (e.g., source #625 — Sam Morrow, GitHub: '49% reduction of the initial load'). There are no oversta…",
+          "evidence_refs": [],
+          "para_excerpt": "GitHub’s own numbers make the practice concrete. When community contributions pushed that server past a hundred tools, the agents got measurably worse. The firs…"
+        }
+      ],
+      "stale": false
+    },
+    "06": {
+      "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
+      "rollup": {
+        "humanness": 86.6,
+        "voice": 90.0,
+        "usefulness": 63.2,
+        "evidence_density": 83.8,
+        "claim_defensibility": 93.0,
+        "redundancy": 85.0,
+        "n_paragraphs": 66,
+        "usefulness_substantive": 63.2,
+        "usefulness_connective": 4,
+        "usefulness_total": 58
+      },
+      "labels": {
+        "humanness": "strong",
+        "voice": "strong",
+        "usefulness": "moderate",
+        "evidence_density": "strong",
+        "claim_defensibility": "strong",
+        "redundancy": "strong"
+      },
+      "coverage": {
+        "humanness": {
+          "scored": 58,
+          "total": 58
+        },
+        "voice": {
+          "scored": 0,
+          "total": 0
+        },
+        "usefulness": {
+          "scored": 58,
+          "total": 58
+        },
+        "evidence_density": {
+          "scored": 0,
+          "total": 0
+        },
+        "claim_defensibility": {
+          "scored": 60,
+          "total": 60
+        },
+        "redundancy": {
+          "scored": 0,
+          "total": 0
+        }
+      },
+      "ship_blockers": [],
+      "weakest": [
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 47,
+          "score": 80.0,
+          "label": "strong",
+          "reasoning": "panel-median 80 (n=3, spread 15): The paragraph has a clear point of view and provides specific reasons why snapshot-oriented designs are attractive. It also uses concrete language and avoids generic phrases.",
+          "evidence_refs": [
+            "phrase:'They can feel more natural when the system’s working memory is elaborate'",
+            "phrase:'They can feel more natural'"
+          ],
+          "para_excerpt": "Snapshot-oriented designs are attractive when fast continuation and complex live state matter more. They reduce the cost of resuming. They can feel more natural…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 0,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 7): The paragraph is concise and specific, with a clear point of view about the importance of runtime design in agent systems. It avoids generic AI-flavored language and makes a claim that could be debated ('architecture becomes destiny'). The prose is tight and would lose something concrete if removed.",
+          "evidence_refs": [
+            "phrase:'architecture becomes destiny'",
+            "phrase:'Once agents act over time'"
+          ],
+          "para_excerpt": "The next layer is runtime design. Once agents act over time, architecture becomes destiny."
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 1,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph is specific, has a clear point of view, and survives a hostile editor's scrutiny. It avoids generic AI-flavored language and makes a concrete argument about agent architecture. The weakest moment is still somewhat strong, but it's the phrase 'the rest of the runtime is what prevents volatility from becoming operational chaos,' which could be slightly more precise.",
+          "evidence_refs": [
+            "phrase:'the rest of the runtime is what prevents volatility from becoming operational chaos'",
+            "phrase:'it helps demystify agent architecture'",
+            "phrase:'magical new organism'"
+          ],
+          "para_excerpt": "Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work — in the same firm that, in C…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 19,
+          "score": 10.0,
+          "label": "fail",
+          "reasoning": "panel-median 10 (n=3, spread 25): The paragraph is meta-commentary and transition prose, summarizing prior chapters without providing any new actionable insights or decisions.",
+          "evidence_refs": [],
+          "para_excerpt": "The Software Factory shows the coding version of this. The High-Stakes Colleague shows the professional-services version. In both, the real question is the same…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 11,
+          "score": 19.0,
+          "label": "fail",
+          "reasoning": "panel-median 19 (n=3, spread 15): The paragraph does not provide a decision, threshold, principle, or concrete example that a reader can apply. It only states a fact about subagents without giving any actionable advice.",
+          "evidence_refs": [],
+          "para_excerpt": "The final runtime lesson is about subagents. Parallel workers are compelling because they offer the same thing every manager has wanted forever: more throughput…"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 22,
+          "score": 20.0,
+          "label": "weak",
+          "reasoning": "panel-median 20 (n=3, spread 15): The paragraph only describes a concept without providing any actionable advice or concrete examples that a working engineer can apply on Monday.",
+          "evidence_refs": [],
+          "para_excerpt": "Durable state, explicit workflow semantics, structured approvals, inspectable histories, observability, and reviewable roll-ups are not secondary implementation…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 12,
+          "score": 25.0,
+          "label": "weak",
+          "reasoning": "panel-median 25 (n=3, spread 90): The paragraph makes a central claim that 'subagents do not solve the control problem. They intensify it.' This claim is not supported by any of the provided ledger entries. The ledger does not contain any entries specifically addressing the impact of subagents on the control problem, making this a weak and unsupported claim.",
           "evidence_refs": [
             "unsupported:But subagents do not solve the control problem. They intensify it.",
             "unsupported:subagents do not solve the control problem. They intensify it."
@@ -1302,70 +984,70 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 6,
-          "score": 42.5,
-          "label": "weak",
-          "reasoning": "panel-median 42 (n=2, spread 85): All claims in the paragraph about agent traces and their functionalities are unsupported by the ledger entries. None of the claims or their supporting quotes align with the provided ledger entries.",
+          "paragraph_index": 13,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 35): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument about the challenges of parallelism and the need for coordination and visibility. It does not assert a new fact about the external world that requires ledger backing.",
           "evidence_refs": [
-            "unsupported:Good agent traces capture plans, tool calls, state changes, intermediate outputs, timings, and boundaries between durable steps.",
-            "unsupported:They should support two levels at once: deep inspection of a single trajectory and roll-up supervision across many concurrent tasks.",
-            "unsupported:The first helps engineers debug strange failures.",
-            "unsupported:The second helps operators manage a fleet."
+            "overstated:More workers mean more duplicated effort",
+            "overstated:Parallelism without recomposition is just chaos at higher speed",
+            "overstated:Roll-up visibility"
           ],
-          "para_excerpt": "Good agent traces capture plans, tool calls, state changes, intermediate outputs, timings, and boundaries between durable steps. They should support two levels …"
+          "para_excerpt": "More workers mean more intermediate artifacts, more opportunities for duplicated effort, more state to coordinate, and more need for roll-up visibility. Paralle…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 34,
-          "score": 46.5,
-          "label": "weak",
-          "reasoning": "panel-median 46 (n=2, spread 73): The paragraph contains two unsupported claims ('pause and resume matter' and 'retries should not live in ad hoc prompt logic'), which is a ship-blocker. The other claims are defensible based on the ledger entries.",
+          "paragraph_index": 15,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 25): The paragraph does not make an externally-checkable claim. It is a restatement and synthesis of the book's own already-established argument, specifically echoing the claim that coordination is the missing primitive for multi-agent systems. The paragraph is a synthesis of Lou Bichard's statement and the book's own narrative, and thus does not require ledger backing for a fact about the external wo…",
           "evidence_refs": [
-            "unsupported:It explains why pause and resume matter.",
-            "unsupported:It explains why retries should not live in ad hoc prompt logic."
+            "overstated:The runtime, sandboxes, containers, and orchestration are 'solved'",
+            "overstated:Coordination is the *only* missing primitive",
+            "unsupported:GitHub is not a coordination layer for agents — it gets incredibly overwhelming"
           ],
-          "para_excerpt": "That framing clarifies a lot at once. It explains why pause and resume matter. It explains why retries should not live in ad hoc prompt logic. It explains why a…"
+          "para_excerpt": "Lou Bichard at Ona sharpens the diagnosis to a single missing piece. The runtime, he argues, is solved — “there are many options for this now, sandboxes and con…"
         }
       ],
       "stale": false
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 83.5,
-        "voice": 87.5,
-        "usefulness": 66.3,
+        "humanness": 85.8,
+        "voice": 90.0,
+        "usefulness": 64.1,
         "evidence_density": 90.0,
-        "claim_defensibility": 72.8,
-        "redundancy": 82.5,
-        "n_paragraphs": 66,
-        "usefulness_substantive": 67.1,
-        "usefulness_connective": 1,
-        "usefulness_total": 66
+        "claim_defensibility": 93.8,
+        "redundancy": 85.0,
+        "n_paragraphs": 80,
+        "usefulness_substantive": 64.7,
+        "usefulness_connective": 7,
+        "usefulness_total": 60
       },
       "labels": {
         "humanness": "strong",
         "voice": "strong",
         "usefulness": "moderate",
         "evidence_density": "strong",
-        "claim_defensibility": "moderate",
+        "claim_defensibility": "strong",
         "redundancy": "strong"
       },
       "coverage": {
         "humanness": {
-          "scored": 66,
-          "total": 66
+          "scored": 60,
+          "total": 60
         },
         "voice": {
           "scored": 0,
           "total": 0
         },
         "usefulness": {
-          "scored": 66,
-          "total": 66
+          "scored": 60,
+          "total": 60
         },
         "evidence_density": {
           "scored": 0,
@@ -1380,206 +1062,140 @@
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('the system must know four things') that is not supported by any ledger entry or supporting quote.",
-          "evidence_refs": [
-            "unsupported:the system must know four things",
-            "unsupported:In plain language, the system must know four things."
-          ],
-          "para_excerpt": "In plain language, the system must know four things."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 48,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The claim 'Protocol enthusiasm can make this easy to forget' is unsupported as it does not match any ledger entry or supporting quote. The statement is too vague and lacks evidence.",
-          "evidence_refs": [
-            "unsupported:Protocol enthusiasm can make this easy to forget."
-          ],
-          "para_excerpt": "Protocol enthusiasm can make this easy to forget."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 30,
-          "score": 12.5,
-          "label": "fail",
-          "reasoning": "panel-median 12 (n=2, spread 25): The claim 'The unit of control has moved, and the architecture must move with it' does not match any ledger entry (claim statements or supporting quotes), making it unsupported.",
-          "evidence_refs": [
-            "unsupported:The unit of control has moved, and the architecture must move with it.",
-            "unsupported:the unit of control has moved"
-          ],
-          "para_excerpt": "This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 41,
-          "score": 17.5,
-          "label": "fail",
-          "reasoning": "panel-median 18 (n=2, spread 15): The paragraph contains two unsupported claims, including one about access control being part of the product experience, which lacks any ledger backing. This is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:A useless agent can be perfectly safe.",
-            "unsupported:This is where many teams discover that access control is no longer a back-office function. It becomes part of the product experience.",
-            "unsupported:Access control becomes part of the product experience."
-          ],
-          "para_excerpt": "A useless agent can be perfectly safe. The challenge is to make the system powerful enough to matter without giving it so much authority that one mistake become…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 57,
-          "score": 17.5,
-          "label": "fail",
-          "reasoning": "panel-median 18 (n=2, spread 15): The first claim about developer preferences for directness is unsupported by the ledger. The second claim about mediated access for organizations with real risk is defensible and matches the ledger's strength.",
-          "evidence_refs": [
-            "unsupported:Developers often prefer directness. Connect the agent to the tool. Let the model call the thing. Keep the stack simple.",
-            "unsupported:Organizations with real risk tend to rediscover a different preference: mediated access."
-          ],
-          "para_excerpt": "Developers often prefer directness. Connect the agent to the tool. Let the model call the thing. Keep the stack simple. Organizations with real risk tend to red…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 10,
-          "score": 56.5,
-          "label": "moderate",
-          "reasoning": "panel-median 56 (n=2, spread 67): The paragraph is concise, specific, and makes a clear claim that could be debated. It stands out as a human-authored statement with a point of view, and it survives a hostile editor's scrutiny. The brevity and directness are strengths, though the lack of elaboration could be seen as a minor weakness.",
+          "paragraph_index": 71,
+          "score": 25.0,
+          "label": "weak",
+          "reasoning": "panel-median 25 (n=3, spread 70): The paragraph is a listicle stem with no point of view. It fails to provide any specific details or a claim that could be wrong. The phrase 'In plain language, the system must know four things' is a generic transition that hides the absence of a concrete claim.",
           "evidence_refs": [
-            "phrase:'It needs evidence.'"
-          ],
-          "para_excerpt": "It needs evidence."
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 1,
-          "score": 57.5,
-          "label": "moderate",
-          "reasoning": "panel-median 58 (n=2, spread 65): The paragraph is concise, specific, and avoids AI-flavored prose. It directly addresses a concrete point ('the system must know four things') without hedging or generic language. The context provided by surrounding paragraphs reinforces its clarity and purpose.",
-          "evidence_refs": [
-            "phrase:'In plain language'",
             "phrase:'In plain language, the system must know four things.'"
           ],
-          "para_excerpt": "In plain language, the system must know four things."
+          "para_excerpt": "The High-Stakes Colleague is again the clearest mirror. A professional workflow is only trustworthy if the surrounding institution can answer basic questions re…"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 3,
-          "score": 80.0,
+          "paragraph_index": 4,
+          "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph demonstrates a clear point of view about the distinction between delegated identity and ordinary session management, emphasizing the human ability to interpret context and notice risk versus the speed and lack of inherent trustworthiness of agents. The language is specific and avoids generic AI-flavored phrases. The claim is strong enough to invite disagreement, and the prose would…",
+          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph has a clear point of view and avoids generic AI-flavored language. It challenges the conventional focus of security discourse and introduces a broader perspective for agent systems, which is specific and debatable. The worst phrase is still somewhat generic but not egregious.",
           "evidence_refs": [
-            "phrase:'An agent can move faster and across more surfaces, but it is less inherently trustworthy.'",
-            "phrase:'an agent can move faster and across more surfaces, but it is less inherently trustworthy'"
+            "phrase:'Security discourse often focuses on blocking bad actions.'",
+            "phrase:'Security discourse often focuses on blocking bad actions'"
           ],
-          "para_excerpt": "That is what makes delegated identity different from ordinary session management. A human being can interpret context, notice risk, and stop themselves. An agen…"
+          "para_excerpt": "How those powers can be withdrawn or narrowed."
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 7,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph is specific, has a clear point of view, and survives a hostile editor's red pen. It ties directly into the context provided, reinforcing the argument about constrained execution and inspectable paths. The language is concrete, with terms like 'Rich traces, approval logs, trajectory views, and reviewable histories' adding specificity. The claim that these elements are 'part of the se…",
+          "evidence_refs": [
+            "phrase:'operational conveniences'",
+            "phrase:'They are part of the security story'"
+          ],
+          "para_excerpt": "Patrick Riley and Carlos Galan at Auth0 frame the fix: \"we authorize agents, MCP servers\" — the agent becomes a first-class principal with its own scopes, lifet…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 1,
-          "score": 15.0,
+          "paragraph_index": 53,
+          "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 10): The paragraph is too vague and does not provide any actionable information or specific details that an engineer could apply.",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is vague and lacks actionable content, serving more as a transition or meta-commentary without providing any concrete guidance or decision points.",
           "evidence_refs": [],
-          "para_excerpt": "In plain language, the system must know four things."
+          "para_excerpt": "These choices do not merely protect the organization. They shape the behavior of the system itself. Narrower powers reduce the number of tempting but unsafe pat…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 10,
+          "paragraph_index": 6,
           "score": 15.0,
           "label": "fail",
           "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is too vague and does not provide any actionable information or concrete examples that a working engineer could apply.",
           "evidence_refs": [],
-          "para_excerpt": "It needs evidence."
+          "para_excerpt": "This is why repeated ad hoc consent flows are not just annoying UX. They signal a deeper architectural gap. If every tool asks separately, the organization lose…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 16,
+          "paragraph_index": 13,
           "score": 15.0,
           "label": "fail",
           "reasoning": "panel-median 15 (n=3, spread 20): The paragraph does not provide any actionable information or concrete examples that a working engineer could apply. It only mentions a continuity with the rest of the manuscript, which is not useful for practical application.",
           "evidence_refs": [],
-          "para_excerpt": "The chapter’s deepest continuity with the rest of the manuscript is the rejection of autonomy maximalism."
+          "para_excerpt": "It needs evidence."
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('the system must know four things') that is not supported by any ledger entry or supporting quote.",
+          "paragraph_index": 41,
+          "score": 75.0,
+          "label": "moderate",
+          "reasoning": "panel-median 75 (n=3, spread 25): The paragraph makes an externally-checkable claim about Fouad Matin's security guidance for coding agents at OpenAI. The claim is that the default-on baseline includes four controls: sandboxing, network restriction, privilege boundaries, and human review. While the ledger entry (claims#31) supports the importance of sandboxing, least privilege, and auditability, it does not explicitly mention net…",
           "evidence_refs": [
-            "unsupported:the system must know four things",
-            "unsupported:In plain language, the system must know four things."
+            "overstated:network restriction",
+            "overstated:human review"
           ],
-          "para_excerpt": "In plain language, the system must know four things."
+          "para_excerpt": "Fouad Matin's security guidance for coding agents at OpenAI names four controls as the default-on baseline, not hardening added after an incident: sandboxing, n…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 48,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The claim 'Protocol enthusiasm can make this easy to forget' is unsupported as it does not match any ledger entry or supporting quote. The statement is too vague and lacks evidence.",
-          "evidence_refs": [
-            "unsupported:Protocol enthusiasm can make this easy to forget."
-          ],
-          "para_excerpt": "Protocol enthusiasm can make this easy to forget."
+          "paragraph_index": 6,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes an externally-checkable claim about the implications of repeated ad hoc consent flows, which is backed by the ledger entry claims#34 (support_level: strong). The paragraph's assertions about the loss of organizational coherence, user habituation, and security team visibility align with the ledger's reusable phrasing and supporting sources. The claim is at or below the ledger's…",
+          "evidence_refs": [],
+          "para_excerpt": "This is why repeated ad hoc consent flows are not just annoying UX. They signal a deeper architectural gap. If every tool asks separately, the organization lose…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 30,
-          "score": 12.5,
-          "label": "fail",
-          "reasoning": "panel-median 12 (n=2, spread 25): The claim 'The unit of control has moved, and the architecture must move with it' does not match any ledger entry (claim statements or supporting quotes), making it unsupported.",
-          "evidence_refs": [
-            "unsupported:The unit of control has moved, and the architecture must move with it.",
-            "unsupported:the unit of control has moved"
-          ],
-          "para_excerpt": "This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it."
+          "paragraph_index": 8,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph discusses cross-app access patterns and identity-provider mediation, framing them as necessary for scaling agent integration within enterprises. This aligns with the ledger's strong support for the idea that human oversight and architectural layers are critical for managing agent behavior (claims#12). The paragraph does not make any new externally-checkable claims beyond what the le…",
+          "evidence_refs": [],
+          "para_excerpt": "Cross-app access patterns and identity-provider mediation are attractive because they acknowledge that this sprawl will not scale. If agents are to become real …"
         }
       ],
       "stale": false
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 84.4,
-        "voice": 87.5,
-        "usefulness": 58.6,
-        "evidence_density": 83.5,
-        "claim_defensibility": 68.9,
-        "redundancy": 82.5,
-        "n_paragraphs": 48,
-        "usefulness_substantive": 61.0,
-        "usefulness_connective": 3,
-        "usefulness_total": 48
+        "humanness": 86.9,
+        "voice": 85.0,
+        "usefulness": 55.2,
+        "evidence_density": 87.5,
+        "claim_defensibility": 93.7,
+        "redundancy": 85.0,
+        "n_paragraphs": 55,
+        "usefulness_substantive": 58.1,
+        "usefulness_connective": 9,
+        "usefulness_total": 44
       },
       "labels": {
         "humanness": "strong",
         "voice": "strong",
         "usefulness": "moderate",
         "evidence_density": "strong",
-        "claim_defensibility": "moderate",
+        "claim_defensibility": "strong",
         "redundancy": "strong"
       },
       "coverage": {
         "humanness": {
-          "scored": 48,
-          "total": 48
+          "scored": 44,
+          "total": 44
         },
         "voice": {
           "scored": 0,
           "total": 0
         },
         "usefulness": {
-          "scored": 48,
-          "total": 48
+          "scored": 44,
+          "total": 44
         },
         "evidence_density": {
           "scored": 0,
@@ -1594,164 +1210,65 @@
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim about voice being the 'cleanest focus' for the chapter and that robotics and other embodied systems only matter to confirm the same lesson under less forgiving conditions. This claim is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes/sources.",
-          "evidence_refs": [
-            "unsupported:Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm the same lesson under even less forgiving conditions."
-          ],
-          "para_excerpt": "This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that c…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim about the content of Chapters 7 and 8, implying a thematic progression or question about delegated power and trust. However, none of the provided ledger entries support or reference these specific claims about the chapters or their themes. Therefore, the claim is unsupported.",
-          "evidence_refs": [
-            "unsupported:Chapter 7 asked whether delegated power had the right shape. Chapter 8 asks whether that same system still deserves trust when the world refuses to wait."
-          ],
-          "para_excerpt": "Chapter 7 asked whether delegated power had the right shape. Chapter 8 asks whether that same system still deserves trust when the world refuses to wait."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 20,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('Text chat flatters AI systems.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:Text chat flatters AI systems.",
-            "unsupported:Text chat flatters AI systems"
-          ],
-          "para_excerpt": "Text chat flatters AI systems."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 32,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The claim 'It is tempting to file interruption handling under experience polish. That is too shallow.' is unsupported by any ledger entry (claims#19 or claims#30) in terms of claim statements or supporting quotes.",
-          "evidence_refs": [
-            "unsupported:It is tempting to file interruption handling under experience polish. That is too shallow."
-          ],
-          "para_excerpt": "It is tempting to file interruption handling under experience polish. That is too shallow."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 39,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('Voice removes that mercy') that is not supported by any ledger entry, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:Voice removes that mercy",
-            "unsupported:Voice removes that mercy."
-          ],
-          "para_excerpt": "Voice removes that mercy."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 14,
-          "score": 12.5,
-          "label": "fail",
-          "reasoning": "panel-median 12 (n=2, spread 25): The paragraph makes a claim ('Spoken interaction is different. Timing itself becomes part of the product.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. There is no evidence in the ledger to back this assertion.",
-          "evidence_refs": [
-            "unsupported:Spoken interaction is different. Timing itself becomes part of the product."
-          ],
-          "para_excerpt": "Spoken interaction is different. Timing itself becomes part of the product."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 37,
-          "score": 12.5,
-          "label": "fail",
-          "reasoning": "panel-median 12 (n=2, spread 25): The paragraph makes claims about voice interfaces manufacturing false confidence, users revealing more, approving more casually, and assuming the system understood more precisely than it actually did. These claims are not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes/sources. Therefore, the paragraph contains unsupported claims.",
-          "evidence_refs": [
-            "unsupported:Voice manufactures false confidence: users reveal more, approve more casually, and assume the system understood more precisely than it actually did.",
-            "unsupported:The warmer the interface, the cheaper approval becomes exactly where approval should be expensive.",
-            "unsupported:The more consequential the action, the more deliberate the confirmation has to be, precisely because the medium is coaxing everyone to skip it.",
-            "overstated:The more consequential the action, the more deliberate the confirmation has to be, precisely because the medium is coaxing everyone to skip it.",
-            "unsupported:Because it feels human, voice manufactures false confidence: users reveal more, approve more casually, and assume the system understood more precisely than it actually did."
-          ],
-          "para_excerpt": "In fact, the opposite is often true. Because it feels human, voice manufactures false confidence: users reveal more, approve more casually, and assume the syste…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 15,
-          "score": 17.5,
-          "label": "fail",
-          "reasoning": "panel-median 18 (n=2, spread 15): The paragraph contains claims that slightly overstate the moderate ledger backing and includes unsupported claims central to its argument.",
-          "evidence_refs": [
-            "overstated:People expect overlap, acknowledgment, interruption handling, backchannels, and rapid repair.",
-            "overstated:They do not experience conversation as a sequence of perfectly separated turns.",
-            "unsupported:They experience it as a continuous negotiation of attention.",
-            "unsupported:Users do not only want the answer faster. They want the system to behave as if it understands the rhythm of interaction.",
-            "unsupported:People expect overlap, acknowledgment, interruption handling, backchannels, and rapid repair. They do not experience conversation as a sequence of perfectly separated turns. They experience it as a continuous negotiation of attention. Users do not only want the answer faster. They want the system to behave as if it understands the rhythm of interaction."
-          ],
-          "para_excerpt": "People expect overlap, acknowledgment, interruption handling, backchannels, and rapid repair. They do not experience conversation as a sequence of perfectly sep…"
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 8,
+          "paragraph_index": 47,
           "score": 80.0,
           "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph poses a provocative question that invites reflection on the organizational implications of distributed work. It avoids generic AI-flavored language and instead presents a specific, thought-provoking scenario. The phrasing is direct and could survive a hostile editor's scrutiny, as it introduces a concrete challenge without resorting to empty hedging or listicle stems.",
+          "reasoning": "panel-median 80 (n=3, spread 10): The paragraph has a clear point of view and provides specific examples of how human control is exercised in AI systems. It also implies that the current approach to human control may not be sufficient, which is a claim that could be disagreed with.",
           "evidence_refs": [
-            "phrase:'what kind of company is required to manage it coherently'",
-            "phrase:'what kind of company is required to manage it coherently?'"
+            "phrase:'A reviewer inspects a trace.'",
+            "phrase:'In many AI systems'",
+            "phrase:'In many AI systems, the human control plane sits slightly above the action.'"
           ],
-          "para_excerpt": "If delegated work now happens across repos, workflows, queues, dashboards, and even live customer interactions, what kind of company is required to manage it co…"
+          "para_excerpt": "The same pattern appears on the speech output side. Modern text-to-speech increasingly inherits design instincts from language models: discrete token spaces, st…"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 23,
-          "score": 80.0,
+          "paragraph_index": 1,
+          "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph is specific, with concrete details like the quote from Zeghidour and the exact time ranges for tool calls (500 milliseconds to 4 seconds). It makes a clear claim about the bottleneck shifting to tool calls as speech layers improve, and ties this back to broader themes in the book. The prose has a point of view and survives a hostile editor's scrutiny. The weakest moment is the phras…",
+          "reasoning": "panel-median 85 (n=3, spread 5): The paragraph demonstrates a clear point of view and specificity, anchoring its claims in a particular corpus and purposefully excluding other domains like robotics as secondary confirmations. The language is direct and avoids generic AI-flavored hedging. The worst phrase is still somewhat weaker than the rest, but it doesn't detract significantly from the overall humanness.",
           "evidence_refs": [
-            "phrase:'The newer voice material sharpens another important point'",
-            "phrase:'between 500 milliseconds and 4 seconds'"
+            "phrase:'a harsher environment where the same architectural failures show up faster and with less room to hide'"
           ],
-          "para_excerpt": "The newer voice material sharpens another important point. As speech layers improve, tool calls increasingly become the bottleneck — “The main bottleneck is bec…"
+          "para_excerpt": "This chapter keeps voice as the primary case on purpose: the corpus this book draws on is deepest there, and every claim below is anchored in it. Robotics and o…"
         },
         {
           "dim_name": "humanness",
-          "paragraph_index": 26,
-          "score": 80.0,
+          "paragraph_index": 5,
+          "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph demonstrates a clear point of view and avoids generic AI-flavored prose. It critiques a common but wasteful approach ('reinventing everything') and advocates for a more practical solution ('voice does not usually require reinventing everything'). The language is specific and survives a hostile editor's scrutiny, with a claim that could be debated ('speech feels special'). The worst…",
+          "reasoning": "panel-median 85 (n=3, spread 5): The paragraph is specific, with concrete terms like 'latency budgets,' 'half-duplex ceilings,' and 'control plane.' It has a clear point of view and survives a hostile editor's scrutiny. The weakest moment is the phrase 'the chapter opened by rejecting that same soft framing,' which is slightly abstract but still serves a purpose in linking to the broader argument.",
           "evidence_refs": [
-            "phrase:'The seductive but often wasteful instinct'",
-            "phrase:'The seductive but often wasteful instinct is to treat voice as an entirely separate product stack.'"
+            "phrase:'the chapter opened by rejecting that same soft framing'",
+            "phrase:'By now the reason is concrete rather than asserted'"
           ],
-          "para_excerpt": "Another useful correction from the corpus is that voice does not usually require reinventing everything. The seductive but often wasteful instinct is to treat v…"
+          "para_excerpt": "The chapter opened by rejecting that same soft framing. By now the reason is concrete rather than asserted: latency budgets, half-duplex ceilings, and a control…"
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 12,
+          "paragraph_index": 4,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transitional and meta-commentary, restating the focus of the previous chapter and introducing the next without providing any actionable insights or concrete examples.",
+          "reasoning": "panel-median 10 (n=3, spread 25): The paragraph is meta-commentary about the book's structure and does not provide any actionable insights or decisions for an engineer to apply.",
+          "evidence_refs": [],
+          "para_excerpt": "## Voice is where trustworthy AI has to perform in public"
+        },
+        {
+          "dim_name": "usefulness",
+          "paragraph_index": 14,
+          "score": 10.0,
+          "label": "fail",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transitional and meta-commentary about the book's structure, providing no actionable insights or concrete examples for an engineer to apply.",
           "evidence_refs": [],
           "para_excerpt": "Chapter 7 asked whether delegated power had the right shape. Chapter 8 asks whether that same system still deserves trust when the world refuses to wait."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 1,
-          "score": 15.0,
-          "label": "fail",
-          "reasoning": "panel-median 15 (n=3, spread 20): The paragraph is a meta-commentary about the chapter's focus and does not provide any actionable information or concrete examples that an engineer could apply.",
-          "evidence_refs": [],
-          "para_excerpt": "This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that c…"
-        },
-        {
-          "dim_name": "usefulness",
-          "paragraph_index": 20,
+          "paragraph_index": 22,
           "score": 15.0,
           "label": "fail",
           "reasoning": "panel-median 15 (n=3, spread 30): The paragraph is vague and does not provide any actionable information or concrete examples that a working engineer could apply. It only states a general observation without any specific details or guidance.",
@@ -1760,61 +1277,59 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim about voice being the 'cleanest focus' for the chapter and that robotics and other embodied systems only matter to confirm the same lesson under less forgiving conditions. This claim is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes/sources.",
+          "paragraph_index": 41,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 90): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument about the risks of using voice interfaces, particularly in high-stakes scenarios. The paragraph emphasizes the need for deliberate confirmation in consequential actions, which aligns with the book's broader thesis on the importance of control and review in AI systems. Therefore, it falls under…",
           "evidence_refs": [
-            "unsupported:Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm the same lesson under even less forgiving conditions."
+            "unsupported:Voice interfaces manufacture false confidence, leading users to reveal more, approve more casually, and assume the system understood more precisely than it actually did.",
+            "unsupported:The warmer the interface, the cheaper approval becomes exactly where approval should be expensive. The more consequential the action, the more deliberate the confirmation has to be, precisely because the medium is coaxing everyone to skip it."
           ],
-          "para_excerpt": "This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that c…"
+          "para_excerpt": "In fact, the opposite is often true. Because it feels human, voice manufactures false confidence: users reveal more, approve more casually, and assume the syste…"
         },
         {
           "dim_name": "claim_defensibility",
           "paragraph_index": 12,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim about the content of Chapters 7 and 8, implying a thematic progression or question about delegated power and trust. However, none of the provided ledger entries support or reference these specific claims about the chapters or their themes. Therefore, the claim is unsupported.",
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 45): The paragraph does not make an externally-checkable claim. It is a rhetorical or transitional statement about the framing of voice as a frontier, rather than asserting a fact about the world that requires ledger backing.",
           "evidence_refs": [
-            "unsupported:Chapter 7 asked whether delegated power had the right shape. Chapter 8 asks whether that same system still deserves trust when the world refuses to wait."
+            "overstated:The field often treats voice as a charming frontier, a natural interface waiting for slightly better models. That framing is too soft."
           ],
-          "para_excerpt": "Chapter 7 asked whether delegated power had the right shape. Chapter 8 asks whether that same system still deserves trust when the world refuses to wait."
+          "para_excerpt": "The field often treats voice as a charming frontier, a natural interface waiting for slightly better models. That framing is too soft."
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 20,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=2, spread 0): The paragraph makes a claim ('Text chat flatters AI systems.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:Text chat flatters AI systems.",
-            "unsupported:Text chat flatters AI systems"
-          ],
-          "para_excerpt": "Text chat flatters AI systems."
+          "paragraph_index": 26,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "This is why teams that think they are building a speech product often discover they are really building an orchestration product. Low-latency interaction depend…"
         }
       ],
-      "stale": true
+      "stale": false
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 82.9,
-        "voice": 77.5,
-        "usefulness": 54.4,
+        "humanness": 86.4,
+        "voice": 85.0,
+        "usefulness": 61.7,
         "evidence_density": 90.0,
-        "claim_defensibility": 83.2,
-        "redundancy": 85.0,
+        "claim_defensibility": 93.4,
+        "redundancy": 83.0,
         "n_paragraphs": 47,
-        "usefulness_substantive": 58.5,
+        "usefulness_substantive": 66.5,
         "usefulness_connective": 4,
         "usefulness_total": 47
       },
       "labels": {
         "humanness": "strong",
-        "voice": "moderate",
+        "voice": "strong",
         "usefulness": "moderate",
         "evidence_density": "strong",
         "claim_defensibility": "strong",
@@ -1846,72 +1361,53 @@
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 11,
-          "score": 5.0,
-          "label": "fail",
-          "reasoning": "panel-median 5 (n=2, spread 10): The paragraph makes an unsupported claim about recklessness, which is not backed by any ledger entry. The claim about productivity is supported and matches the ledger's strength.",
-          "evidence_refs": [
-            "unsupported:Nobody in this scene is doing anything obviously reckless.",
-            "unsupported:Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
-          ],
-          "para_excerpt": "Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive."
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 9,
-          "score": 70.0,
-          "label": "moderate",
-          "reasoning": "panel-median 70 (n=2, spread 30): The paragraph introduces a specific scenario ('Monday morning at Meridian') and implies a point of view about the company's AI adoption ('gone well past casual'). It avoids generic AI-flavored prose and instead paints a vivid, human-centric picture. The worst phrase is still somewhat generic ('casual AI adoption'), but the rest of the paragraph compensates with specificity and a clear narrative.",
-          "evidence_refs": [
-            "phrase:'casual AI adoption'",
-            "phrase:'gone well past casual AI adoption'"
-          ],
-          "para_excerpt": "Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption."
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 11,
-          "score": 70.0,
-          "label": "moderate",
-          "reasoning": "panel-median 70 (n=2, spread 30): The paragraph has a clear point of view and a specific observation about the scene described. It critiques the productivity of the team without resorting to generic AI-flavored language. The claim ('everyone is being productive') is debatable and adds a layer of human judgment.",
-          "evidence_refs": [
-            "phrase:'In fact, everyone is being productive'",
-            "phrase:'In fact, everyone is being productive.'"
-          ],
-          "para_excerpt": "Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive."
-        },
-        {
-          "dim_name": "humanness",
           "paragraph_index": 1,
-          "score": 80.0,
+          "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 80 (n=2, spread 10): The paragraph has a clear point of view and avoids generic AI-flavored prose. It makes specific claims about organizational design and the role of human and machine intelligence, which could be debated or disagreed with. The language is direct and purposeful, with no empty hedging or listicle stems. The weakest moment is still relatively strong but slightly repetitive.",
+          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph has a clear point of view and makes specific claims about how organizations can leverage distributed intelligence (human and machine) to improve efficiency and scalability. It avoids generic AI-flavored language and instead provides concrete examples of how judgment, oversight, and delegation can be systematized. The prose is tight and would survive a hostile editor's scrutiny. The…",
           "evidence_refs": [
-            "phrase:'It makes judgment reusable. It makes oversight scalable. It makes delegation legible.'",
-            "phrase:'It makes judgment reusable.'"
+            "phrase:'It makes judgment reusable — a standard written down once is applied a thousand times without its author in the room.'",
+            "phrase:'The phrase should not be heard as dehumanizing'",
+            "phrase:'It makes judgment reusable'"
           ],
           "para_excerpt": "The phrase should not be heard as dehumanizing. The point is not that the organization becomes a machine but that it becomes better at converting distributed in…"
         },
         {
-          "dim_name": "usefulness",
-          "paragraph_index": 12,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 10): The paragraph does not contain any useful information that a working engineer can apply on Monday.",
-          "evidence_refs": [],
-          "para_excerpt": "And that is the problem."
+          "dim_name": "humanness",
+          "paragraph_index": 2,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 7): The paragraph demonstrates a clear point of view about the role of human judgment in expert domains and AI-native organizations. It avoids generic AI-flavored language and makes a specific claim about the value of human attention in redesigned workflows. The prose is concrete and would lose something meaningful if removed. The weakest moment is still somewhat strong, but the phrase 'it wins by bu…",
+          "evidence_refs": [
+            "phrase:'it wins by building workflows in which professional judgment is focused where it adds the most value'",
+            "phrase:'It makes judgment reusable'",
+            "phrase:'The same principle holds in software and in management.'"
+          ],
+          "para_excerpt": "This is also where the High-Stakes Colleague quietly returns one last time. In expert domains, the institution does not win by replacing professionals with unre…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 3,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph has a clear point of view and makes a specific claim about what will distinguish the strongest companies in an AI era. It avoids generic AI-flavored language and instead offers a concrete idea ('convert cheap generation into trusted throughput') that could be debated or disagreed with. The prose is tight and loses something meaningful if removed.",
+          "evidence_refs": [
+            "phrase:'the strongest companies in an AI era'",
+            "phrase:'in an AI era'",
+            "phrase:'the most aggressive prompting culture'"
+          ],
+          "para_excerpt": "The strongest companies in an AI era will not simply be the ones with the most aggressive prompting culture or the highest number of tool seats. They will be th…"
         },
         {
           "dim_name": "usefulness",
           "paragraph_index": 6,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is meta-commentary about the book's structure and does not provide any actionable insights or concrete examples for an engineer to apply.",
+          "reasoning": "panel-median 10 (n=3, spread 35): The paragraph is meta-commentary about the book's structure and does not provide any actionable insights or concrete examples for an engineer to apply.",
           "evidence_refs": [],
           "para_excerpt": "That is the outer-ring lesson that completes the book’s core spine. The technical question and the organizational question turn out to be the same. How do you b…"
         },
@@ -1920,62 +1416,64 @@
           "paragraph_index": 7,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transition prose, meta-commentary about the book's structure, and does not provide any actionable insight or decision a working engineer could apply.",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is transition prose, meta-commentary about the book's structure, and does not provide any actionable insight or concrete example for an engineer to apply.",
           "evidence_refs": [],
           "para_excerpt": "That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces? That is the subject of the final chapter."
         },
         {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 11,
-          "score": 5.0,
+          "dim_name": "usefulness",
+          "paragraph_index": 9,
+          "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 5 (n=2, spread 10): The paragraph makes an unsupported claim about recklessness, which is not backed by any ledger entry. The claim about productivity is supported and matches the ledger's strength.",
-          "evidence_refs": [
-            "unsupported:Nobody in this scene is doing anything obviously reckless.",
-            "unsupported:Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
-          ],
-          "para_excerpt": "Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive."
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is purely descriptive and sets a scene without providing any actionable insights, decisions, or principles. It serves as an introduction or transition without operational lift.",
+          "evidence_refs": [],
+          "para_excerpt": "Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption."
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 12,
-          "score": 50.0,
-          "label": "moderate",
-          "reasoning": "panel-median 50 (n=2, spread 100): The paragraph does not make any specific claim that can be matched to the ledger entries, so there is nothing to evaluate negatively.",
-          "evidence_refs": [
-            "unsupported:And that is the problem."
-          ],
-          "para_excerpt": "And that is the problem."
+          "paragraph_index": 3,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): The paragraph makes a claim about the strongest companies in an AI era, but it does not require ledger backing as it is a synthesis of the book's already-established argument. The claim is not about a specific fact or statistic, but rather a generalization about how companies will succeed in an AI era.",
+          "evidence_refs": [],
+          "para_excerpt": "The strongest companies in an AI era will not simply be the ones with the most aggressive prompting culture or the highest number of tool seats. They will be th…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 43,
-          "score": 57.5,
-          "label": "moderate",
-          "reasoning": "panel-median 58 (n=2, spread 65): The claim 'But blurred creation does not mean blurred accountability' aligns with the ledger entry (claims#36) about broader creation requiring tighter governance. The rhetorical strength matches the ledger's strong support level.",
-          "evidence_refs": [
-            "unsupported:But blurred creation does not mean blurred accountability"
-          ],
-          "para_excerpt": "But blurred creation does not mean blurred accountability."
+          "paragraph_index": 10,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph aligns strongly with claims #36 (broader creation requires tighter review) and #38 (review capacity as throughput limit), illustrating the tension between rapid agent creation and review bottlenecks. It also aligns well with claim #24 (coordination as unsolved primitive) and claim #14 (harness evolution). The paragraph does not make any unsupported or overstated claims, as it effect…",
+          "evidence_refs": [],
+          "para_excerpt": "Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. …"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 15,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "The easiest way to misunderstand AI transformation is to measure adoption by access rather than by whether work is routed differently. A company can purchase li…"
         }
       ],
-      "stale": true
+      "stale": false
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:fe43116",
-      "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
-      "primary_run_id": "panel-3model-v7",
+      "version_id": "git:55d46ba",
+      "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
+      "primary_run_id": "panel-3model-v8",
       "rollup": {
-        "humanness": 87.9,
-        "voice": 80.0,
-        "usefulness": 42.4,
+        "humanness": 87.7,
+        "voice": 85.0,
+        "usefulness": 44.0,
         "evidence_density": 82.0,
-        "claim_defensibility": 70.5,
+        "claim_defensibility": 94.8,
         "redundancy": 90.0,
-        "n_paragraphs": 41,
-        "usefulness_substantive": 43.6,
-        "usefulness_connective": 3,
+        "n_paragraphs": 49,
+        "usefulness_substantive": 45.7,
+        "usefulness_connective": 4,
         "usefulness_total": 41
       },
       "labels": {
@@ -1983,7 +1481,7 @@
         "voice": "strong",
         "usefulness": "weak",
         "evidence_density": "strong",
-        "claim_defensibility": "moderate",
+        "claim_defensibility": "strong",
         "redundancy": "strong"
       },
       "coverage": {
@@ -2004,126 +1502,52 @@
           "total": 0
         },
         "claim_defensibility": {
-          "scored": 41,
-          "total": 41
+          "scored": 42,
+          "total": 42
         },
         "redundancy": {
           "scored": 0,
           "total": 0
         }
       },
-      "ship_blockers": [
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim about the need for an ending that 'does more than point at the horizon' and answers 'what actually endures,' but there is no matching ledger entry (either in claim statements or supporting quotes) that supports this assertion. This constitutes an unsupported claim.",
-          "evidence_refs": [
-            "unsupported:A book like this needs an ending that does more than point at the horizon. It has to answer a calmer question: what actually endures?"
-          ],
-          "para_excerpt": "A book like this needs an ending that does more than point at the horizon. It has to answer a calmer question: what actually endures?"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim about the evolution of interfaces, tooling, and jargon, but no ledger entry supports this claim.",
-          "evidence_refs": [
-            "unsupported:The interfaces will change. The tooling will churn. The jargon will get rewritten at least twice before this sentence is old.",
-            "unsupported:The interfaces will change.",
-            "unsupported:The tooling will churn.",
-            "unsupported:The jargon will get rewritten at least twice before this sentence is old."
-          ],
-          "para_excerpt": "That is the calmest way to say what endures. The winners in the next era will not be the people who memorize model names fastest or chase every wrapper the hard…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 2,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph makes a claim ('But the work underneath is surprisingly stable') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:But the work underneath is surprisingly stable"
-          ],
-          "para_excerpt": "The jargon will get rewritten at least twice before this sentence is old."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 17,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim ('By the time a field starts naming everything aggressively, it is usually trying not to drown.') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which warrants a 'fail' label.",
-          "evidence_refs": [
-            "unsupported:By the time a field starts naming everything aggressively, it is usually trying not to drown.",
-            "unsupported:By the time a field starts naming everything aggressively, it is usually trying not to drown"
-          ],
-          "para_excerpt": "By the time a field starts naming everything aggressively, it is usually trying not to drown."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 29,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 25): The paragraph makes a claim ('The enduring pattern is constrained delegation') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim.",
-          "evidence_refs": [
-            "unsupported:The enduring pattern is constrained delegation",
-            "unsupported:The enduring pattern is constrained delegation."
-          ],
-          "para_excerpt": "The enduring pattern is constrained delegation."
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 32,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 25): The claim about the durability of a certain pattern across model families, frameworks, and interface assumptions is unsupported by the ledger entries. There is no matching claim statement or supporting quote addressing this.",
-          "evidence_refs": [
-            "unsupported:The durability of a certain pattern across model families, frameworks, and interface assumptions",
-            "unsupported:That pattern will survive specific model families. It will survive today’s frameworks. It will likely survive today’s interface assumptions too.",
-            "overstated:That pattern will survive specific model families. It will survive today’s frameworks. It will likely survive today’s interface assumptions too."
-          ],
-          "para_excerpt": "That pattern will survive specific model families. It will survive today’s frameworks. It will likely survive today’s interface assumptions too."
-        }
-      ],
+      "ship_blockers": [],
       "weakest": [
         {
           "dim_name": "humanness",
-          "paragraph_index": 3,
-          "score": 85.0,
+          "paragraph_index": 41,
+          "score": 80.0,
           "label": "strong",
-          "reasoning": "panel-median 85 (n=3, spread 35): The paragraph is concise and specific, with a clear point of view about engineering AI systems. Each statement is actionable and avoids generic AI-flavored hedging. The language is direct and survives a hostile editor's scrutiny. The weakest moment is still strong, but the phrase 'Make the context usable' is slightly less concrete than the others.",
+          "reasoning": "panel-median 80 (n=3, spread 10): The paragraph has a clear point of view and acknowledges the complexity of the situation, making it sound like a thinking author. It also uses specific language to describe the noise in the field, such as \"marketing theater with a GPU budget\".",
           "evidence_refs": [
-            "phrase:'Make the context usable'",
-            "phrase:'Make the task legible.'"
+            "phrase:'Some of that noise reflects real progress.'",
+            "phrase:'Some of that noise reflects real progress'"
           ],
-          "para_excerpt": "But the work underneath is surprisingly stable. Make the task legible. Make the standards explicit. Make the context usable. Make the runtime durable. Make auth…"
-        },
-        {
-          "dim_name": "humanness",
-          "paragraph_index": 5,
-          "score": 85.0,
-          "label": "strong",
-          "reasoning": "panel-median 85 (n=3, spread 7): The paragraph has a clear point of view and makes a specific claim about the promise of AI engineering, contrasting it with the naive assumption that trust in AI systems is automatic. The language is direct and avoids generic AI-flavored hedging. The worst phrase is still somewhat weak but not egregious.",
-          "evidence_refs": [
-            "phrase:'And that is the real promise of this field.'",
-            "phrase:'And that is the real promise of this field'"
-          ],
-          "para_excerpt": "That is what it means to engineer AI systems that endure. And that is the real promise of this field."
+          "para_excerpt": "Some of that noise reflects real progress. Some of it is marketing theater with a GPU budget. Most of it is what fast-moving technical fields look like from the…"
         },
         {
           "dim_name": "humanness",
           "paragraph_index": 6,
           "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph has a clear point of view and avoids generic AI-flavored language. It makes a specific claim about what endures ('a pattern for turning machine capability into dependable work') and ties it directly to the book's subject. The prose is concrete and would lose meaning if removed. The weakest moment is still somewhat abstract ('orchestration fashion'), but it doesn't detract significan…",
+          "reasoning": "panel-median 85 (n=3, spread 35): The paragraph is concise and specific, with a clear point of view about engineering AI systems. Each statement is actionable and lacks generic AI-flavored hedging. The language is direct and survives a hostile editor's scrutiny. The worst phrase is still somewhat generic but stands out less in an otherwise strong paragraph.",
           "evidence_refs": [
-            "phrase:'orchestration fashion'",
-            "phrase:'The durable answer is not a specific framework, model family, or orchestration fashion.'",
-            "phrase:'turning machine capability into dependable work'"
+            "phrase:'Make the context usable.'",
+            "phrase:'Make the task legible'",
+            "phrase:'Make the task legible.'"
           ],
-          "para_excerpt": "The durable answer is not a specific framework, model family, or orchestration fashion. What endures is a pattern for turning machine capability into dependable…"
+          "para_excerpt": "But the work underneath is surprisingly stable. Make the task legible. Make the standards explicit. Make the context usable. Make the runtime durable. Make auth…"
+        },
+        {
+          "dim_name": "humanness",
+          "paragraph_index": 10,
+          "score": 85.0,
+          "label": "strong",
+          "reasoning": "panel-median 85 (n=3, spread 15): The paragraph has a clear point of view and makes a specific claim about the promise of the field, contrasting it with a common misconception ('machines remove the need for engineering'). The language is direct and avoids generic AI-flavored phrases. The worst phrase is still somewhat abstract but serves the argument.",
+          "evidence_refs": [
+            "phrase:'the real promise of this field'",
+            "phrase:'And that is the real promise of this field'"
+          ],
+          "para_excerpt": "That is what it means to engineer AI systems that endure. And that is the real promise of this field."
         },
         {
           "dim_name": "usefulness",
@@ -2136,16 +1560,16 @@
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 4,
+          "paragraph_index": 8,
           "score": 10.0,
           "label": "fail",
-          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is vague and lacks any actionable insight or concrete example that a working engineer could apply. It serves as a transition or summary statement without operational lift.",
+          "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is vague and lacks any actionable insight or concrete example. It serves as a transition or meta-commentary without providing operational lift.",
           "evidence_refs": [],
           "para_excerpt": "Make the organization capable of learning."
         },
         {
           "dim_name": "usefulness",
-          "paragraph_index": 1,
+          "paragraph_index": 2,
           "score": 15.0,
           "label": "fail",
           "reasoning": "panel-median 15 (n=3, spread 30): This paragraph is a general statement about the transient nature of technology without providing any actionable advice or specific insights that an engineer could apply.",
@@ -2154,42 +1578,33 @@
         },
         {
           "dim_name": "claim_defensibility",
+          "paragraph_index": 14,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph makes a synthesis statement that aligns with the book's already-established argument about the interplay between cheap generation and trustworthy review/governance (as supported by ledger entries like claims#36, #38, and #55). It does not introduce a new externally-checkable claim but rather restates the book's thesis. Therefore, it requires no ledger backing and is not a candidate…",
+          "evidence_refs": [],
+          "para_excerpt": "The future belongs to teams that can turn cheap generation into trusted throughput."
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 23,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument, discussing the enduring need for clear intent, good constraints, and systems thinking in the context of AI, rather than asserting a new fact about the world. The references to Dax Raad’s provocation and the discussion of AI's impact on software economics, interfaces, and labor distribution are…",
+          "evidence_refs": [],
+          "para_excerpt": "This is one reason Dax Raad’s provocation that “AI changes nothing” is useful even if taken too literally it becomes false. AI changes many things about softwar…"
+        },
+        {
+          "dim_name": "claim_defensibility",
           "paragraph_index": 0,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim about the need for an ending that 'does more than point at the horizon' and answers 'what actually endures,' but there is no matching ledger entry (either in claim statements or supporting quotes) that supports this assertion. This constitutes an unsupported claim.",
-          "evidence_refs": [
-            "unsupported:A book like this needs an ending that does more than point at the horizon. It has to answer a calmer question: what actually endures?"
-          ],
+          "score": 95.0,
+          "label": "strong",
+          "reasoning": "panel-median 95 (n=3, spread 5): The paragraph is a rhetorical and transitional statement about the book's conclusion, not an externally-checkable claim about the world. It does not require ledger backing.",
+          "evidence_refs": [],
           "para_excerpt": "A book like this needs an ending that does more than point at the horizon. It has to answer a calmer question: what actually endures?"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 0): The paragraph makes a claim about the evolution of interfaces, tooling, and jargon, but no ledger entry supports this claim.",
-          "evidence_refs": [
-            "unsupported:The interfaces will change. The tooling will churn. The jargon will get rewritten at least twice before this sentence is old.",
-            "unsupported:The interfaces will change.",
-            "unsupported:The tooling will churn.",
-            "unsupported:The jargon will get rewritten at least twice before this sentence is old."
-          ],
-          "para_excerpt": "That is the calmest way to say what endures. The winners in the next era will not be the people who memorize model names fastest or chase every wrapper the hard…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 2,
-          "score": 0.0,
-          "label": "fail",
-          "reasoning": "panel-median 0 (n=3, spread 100): The paragraph makes a claim ('But the work underneath is surprisingly stable') that is not supported by any of the provided ledger entries, either in the claim statements or the supporting quotes. This constitutes an unsupported claim, which is a ship-blocker.",
-          "evidence_refs": [
-            "unsupported:But the work underneath is surprisingly stable"
-          ],
-          "para_excerpt": "The jargon will get rewritten at least twice before this sentence is old."
         }
       ],
-      "stale": true
+      "stale": false
     }
   },
   "history": [
@@ -2885,6 +2300,146 @@
           "n_paragraphs": 41,
           "usefulness_substantive": 43.6,
           "usefulness_connective": 3,
+          "usefulness_total": 41
+        }
+      }
+    },
+    {
+      "run_id": "panel-3model-v8",
+      "version_id": "git:55d46ba",
+      "finished_at": "2026-08-22T23:55:14.489939+00:00",
+      "partial": false,
+      "judge_prompt_versions": null,
+      "book": {
+        "humanness": 86.0,
+        "voice": 88.7,
+        "usefulness": 55.7,
+        "evidence_density": 85.8,
+        "claim_defensibility": 94.0,
+        "redundancy": 87.1,
+        "usefulness_substantive": 57.5,
+        "usefulness_connective": 61,
+        "usefulness_total": 537
+      },
+      "chapters": {
+        "01": {
+          "humanness": 86.0,
+          "voice": 92.0,
+          "usefulness": 43.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 94.7,
+          "redundancy": 100.0,
+          "n_paragraphs": 49,
+          "usefulness_substantive": 47.9,
+          "usefulness_connective": 8,
+          "usefulness_total": 49
+        },
+        "02": {
+          "humanness": 86.2,
+          "voice": 90.0,
+          "usefulness": 49.5,
+          "evidence_density": 70.0,
+          "claim_defensibility": 94.6,
+          "redundancy": 90.0,
+          "n_paragraphs": 106,
+          "usefulness_substantive": 51.3,
+          "usefulness_connective": 9,
+          "usefulness_total": 76
+        },
+        "03": {
+          "humanness": 84.6,
+          "voice": 90.0,
+          "usefulness": 63.5,
+          "evidence_density": 84.4,
+          "claim_defensibility": 93.9,
+          "redundancy": 85.0,
+          "n_paragraphs": 62,
+          "usefulness_substantive": 63.5,
+          "usefulness_connective": 0,
+          "usefulness_total": 49
+        },
+        "04": {
+          "humanness": 84.6,
+          "voice": 90.0,
+          "usefulness": 57.8,
+          "evidence_density": 90.0,
+          "claim_defensibility": 94.0,
+          "redundancy": 85.0,
+          "n_paragraphs": 73,
+          "usefulness_substantive": 57.9,
+          "usefulness_connective": 8,
+          "usefulness_total": 56
+        },
+        "05": {
+          "humanness": 85.4,
+          "voice": 90.0,
+          "usefulness": 54.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 93.9,
+          "redundancy": 83.0,
+          "n_paragraphs": 76,
+          "usefulness_substantive": 56.3,
+          "usefulness_connective": 8,
+          "usefulness_total": 57
+        },
+        "06": {
+          "humanness": 86.6,
+          "voice": 90.0,
+          "usefulness": 63.2,
+          "evidence_density": 83.8,
+          "claim_defensibility": 93.0,
+          "redundancy": 85.0,
+          "n_paragraphs": 66,
+          "usefulness_substantive": 63.2,
+          "usefulness_connective": 4,
+          "usefulness_total": 58
+        },
+        "07": {
+          "humanness": 85.8,
+          "voice": 90.0,
+          "usefulness": 64.1,
+          "evidence_density": 90.0,
+          "claim_defensibility": 93.8,
+          "redundancy": 85.0,
+          "n_paragraphs": 80,
+          "usefulness_substantive": 64.7,
+          "usefulness_connective": 7,
+          "usefulness_total": 60
+        },
+        "08": {
+          "humanness": 86.9,
+          "voice": 85.0,
+          "usefulness": 55.2,
+          "evidence_density": 87.5,
+          "claim_defensibility": 93.7,
+          "redundancy": 85.0,
+          "n_paragraphs": 55,
+          "usefulness_substantive": 58.1,
+          "usefulness_connective": 9,
+          "usefulness_total": 44
+        },
+        "09": {
+          "humanness": 86.4,
+          "voice": 85.0,
+          "usefulness": 61.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 93.4,
+          "redundancy": 83.0,
+          "n_paragraphs": 47,
+          "usefulness_substantive": 66.5,
+          "usefulness_connective": 4,
+          "usefulness_total": 47
+        },
+        "10": {
+          "humanness": 87.7,
+          "voice": 85.0,
+          "usefulness": 44.0,
+          "evidence_density": 82.0,
+          "claim_defensibility": 94.8,
+          "redundancy": 90.0,
+          "n_paragraphs": 49,
+          "usefulness_substantive": 45.7,
+          "usefulness_connective": 4,
           "usefulness_total": 41
         }
       }
