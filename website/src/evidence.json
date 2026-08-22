@@ -4023,15 +4023,6 @@
       "support_level": "strong",
       "anchors": [
         {
-          "video_id": "xOJnLk4UMQ4",
-          "start": "00:00:00.000",
-          "end": "00:00:00.000",
-          "start_seconds": 0,
-          "confidence": "high",
-          "label": "#60 — Govind Jain, Stripe",
-          "quote": "take a real codebase, crawl its commit history, find the commits that fixed actual problems, and turn each fix into a graded task"
-        },
-        {
           "video_id": "1izYWsokr9s",
           "start": "00:01:55.920",
           "end": "00:02:01.920",
