@@ -33,6 +33,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("phrase", help="search phrase to anchor")
     parser.add_argument("--transcripts", default=str(_DEFAULT_TRANSCRIPTS),
                         help="directory holding <video_id>.en.vtt files")
+    parser.add_argument("--markdown", action="store_true",
+                        help="emit the ledger-format Anchor/Quote block instead of JSON, "
+                             "ready to paste into a claims file")
     # YouTube ids use the base64url alphabet, so they can begin with "-" (e.g.
     # "-npY6XjM8CQ") and argparse would read that as an option flag. Wrap such an
     # id in brackets, which extract_video_id already strips. (Prepending "--"
@@ -60,7 +63,16 @@ def main(argv: list[str] | None = None) -> int:
 
     stream = load_word_stream(str(vtt_path))
     anchor = locate_quote(stream, args.phrase, video_id)
-    json.dump(asdict(anchor), sys.stdout, ensure_ascii=False)
+    d = asdict(anchor)
+    if args.markdown:
+        # Ledger-format block. Emitting it here means callers never hand-write
+        # the backticks around the video id — doing that inside a shell heredoc
+        # silently ate the id twice, leaving anchors that pointed nowhere.
+        print(f"    - **Anchor:** `{d['video_id']}` {d['start']} \u2192 {d['end']} "
+              f"\u00b7 confidence: {d['confidence']}")
+        print(f'    - **Quote:** "{d["quote"]}"')
+        return 0
+    json.dump(d, sys.stdout, ensure_ascii=False)
     sys.stdout.write("\n")
     return 0
 

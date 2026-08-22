@@ -83,5 +83,27 @@ class TestCli(unittest.TestCase):
         self.assertEqual(data["confidence"], "high")
 
 
+    def test_cli_markdown_emits_ledger_block(self):
+        """--markdown must emit the exact ledger format, backticks included.
+
+        Regression: hand-writing these lines inside a shell heredoc let the
+        shell interpret the backticks and swallow the video id, producing
+        anchors that pointed nowhere. The formatting lives here now.
+        """
+        result = subprocess.run(
+            [sys.executable, "cli.py", "--markdown", "testvid0001", "the north star",
+             "--transcripts", "testdata"],
+            cwd=ANCHOR_DIR, capture_output=True, text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        # NB: do not .strip() — the 4-space indent is part of the ledger format.
+        lines = result.stdout.rstrip("\n").splitlines()
+        self.assertEqual(len(lines), 2)
+        self.assertTrue(lines[0].startswith("    - **Anchor:** `testvid0001` "), lines[0])
+        self.assertIn("\u2192", lines[0])
+        self.assertIn("confidence: high", lines[0])
+        self.assertTrue(lines[1].startswith('    - **Quote:** "'), lines[1])
+
+
 if __name__ == "__main__":
     unittest.main()
