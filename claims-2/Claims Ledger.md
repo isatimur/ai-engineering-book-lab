@@ -521,7 +521,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[446-cZ5ZJy19KMo-mission-critical-evals-at-scale-learnings-from-100k-medical-decisions|#446 — Anterior]] — offline eval sets lag the edge cases that only appear in live traffic, so a reference-free eval runs on every live case; scaled to insurance providers covering 50 million lives.
+    - **Anchor:** `cZ5ZJy19KMo` 00:05:21.880 → 00:05:25.199 · confidence: high
+    - **Quote:** "relying only on offline evals is playing with fire"
   - [[197-_zl_zimMRak-how-intuit-uses-llms-to-explain-taxes-to-millions-of-taxpayers-jaspreet-singh-intuit|#197 — Singh, Intuit]] — at 44 million tax returns, IRS form changes force an annual rebuild of the knowledge engine and prompts, and even a same-vendor model upgrade (Claude Instant → Haiku) requires a full re-evaluation cycle.
+    - **Anchor:** `_zl_zimMRak` 00:09:28.399 → 00:09:34.080 · confidence: high
+    - **Quote:** "we made the move from uh uh anthropic cloud instant to anthropic cloud haiku"
 - **Caveats / counterevidence:** Distinct from claim 31 (eval's *status* as the product): claim 36 owns eval's *cadence* — continuous in production. Both cite #446; the cadence facts are supplied by #197 (annual rebuild, re-eval on model upgrade), which #446 does not carry. #197 is a Movement A (tax) source cited into a claim about scale that spans both movements — deliberate, since the scale point is domain-general within this chapter.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** At tens of millions of decisions, edge cases are certainties, so the eval is not a launch gate — it is a standing production process.
@@ -531,9 +535,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[339-sn79oS4MZFI-case-study-deep-dive-telemedicine-support-agents-with-langgraph-mcp-dan-mason|#339 — Mason]] — a self-evaluation confidence score with domain-specific deductions gates human approval below 75% (and a human's review never raises the score); out-of-script cases escalate to a physician's assistant on Slack; genuine medical judgment routes to "call 911, go to your doctor."
+    - **Anchor:** `sn79oS4MZFI` 01:10:35.360 → 01:10:36.560 · confidence: high
+    - **Quote:** "call 911, go to your doctor,"
   - [[446-cZ5ZJy19KMo-mission-critical-evals-at-scale-learnings-from-100k-medical-decisions|#446 — Anterior]] — an escalation ladder routes low-confidence cases to a stronger model, an on-call clinician, or the customer's review dashboard rather than returning as-is.
+    - **Anchor:** `cZ5ZJy19KMo` 00:09:30.560 → 00:09:32.480 · confidence: high
+    - **Quote:** "give it to an on call clinician to review it"
   - [[187-TquUsN1QsWs-ai-that-pays-lessons-from-revenue-cycle-nathan-wan-ensemble-health|#187 — Wan, Ensemble Health]] — a clinical expert signs off on every AI-drafted appeal before it reaches the payer.
+    - **Anchor:** `TquUsN1QsWs` 00:14:21.600 → 00:14:30.639 · confidence: high
+    - **Quote:** "allow the clinical expert to make the final decision on whether or not uh the letter meets the meets the standard of quality before it gets submitted to the to the payer."
   - [[423-MWTJIAwAAnk-trust-but-verify-knowledge-agents-for-finance-workflows-mike-conover|#423 — Conover, Brightwave]] — deliberately withholds full autonomy on judgment calls because the deciding tacit knowledge was never digitized into the corpus.
+    - **Anchor:** `MWTJIAwAAnk` 00:10:19.000 → 00:10:22.200 · confidence: high
+    - **Quote:** "the human analyst always is going to have access to information that has not been digitized"
 - **Caveats / counterevidence:** Promoted from the packet's open-question thread rather than one of its six strongest observations; four independent sources across both movements make it strong. The claim is about *where* the human sits (an explicit, staffed gate for unbounded-risk cases), not that every step needs a human — the same systems automate the high-volume, low-stakes majority freely.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** Where a wrong output is catastrophic, the human is not a fallback — it is where the unbounded risk is parked, behind a confidence gate and a named escalation path.
