@@ -28,6 +28,7 @@ import hashlib
 import json
 import re
 import subprocess
+from datetime import datetime
 from pathlib import Path
 
 # 99_Meta/scripts/ -> parents[2] is the repo root.
@@ -129,6 +130,38 @@ def _head_sha() -> str | None:
         return out.stdout.strip() or None
     except (subprocess.CalledProcessError, FileNotFoundError):
         return None
+
+
+def _last_commit_time(path: Path) -> str | None:
+    """ISO-8601 committer date of the last commit that touched `path`, or None
+    if the file has no history (untracked) or git is unavailable."""
+    try:
+        out = subprocess.run(
+            ["git", "log", "-1", "--format=%cI", "--", str(path)],
+            cwd=_REPO, capture_output=True, text=True, check=True,
+        )
+        return out.stdout.strip() or None
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
+
+
+def _is_stale(chapter_drafting_path: Path, run_finished_at: str | None) -> bool:
+    """A chapter is stale if its published public/drafting file was committed
+    AFTER the run that produced its currently-displayed score finished — i.e.
+    the manuscript moved on since the last real measurement. Fails safe: if
+    either timestamp is unavailable (no git history, no finished_at), treat
+    the chapter as NOT stale rather than guessing."""
+    if run_finished_at is None:
+        return False
+    commit_iso = _last_commit_time(chapter_drafting_path)
+    if commit_iso is None:
+        return False
+    try:
+        commit_dt = datetime.fromisoformat(commit_iso)
+        run_dt = datetime.fromisoformat(run_finished_at)
+    except ValueError:
+        return False
+    return commit_dt > run_dt
 
 
 def _completed_runs(runs_dir: Path) -> list[Path]:
@@ -472,18 +505,29 @@ def build(
         if ch is None:
             continue
         ch = _backfill_native_dims(ch, num, slug, completed, src)
+        # Staleness guard: does the chapter's published text postdate the run
+        # that produced the score we're about to display for it? A chapter
+        # edited after its primary run finished is showing an honest-but-old
+        # number, not a current one — flag it rather than let version_id
+        # (stamped from HEAD at merge time, not at measurement time) imply a
+        # freshness the score doesn't have.
+        drafting_path = _DRAFTING / NUMBER_TO_DRAFTING[num]
+        ch["stale"] = _is_stale(drafting_path, loaded[src].get("finished_at"))
         chapters[num] = ch
 
     # Book rollup: average the (prose-only, recomputed) chapter rollups so the
-    # headline number matches what the dashboard shows per chapter.
+    # headline number matches what the dashboard shows per chapter. Stale
+    # chapters are excluded so an outdated score can't silently prop up the
+    # headline average; their own per-chapter numbers still display, badged.
+    fresh_chapters = [c for c in chapters.values() if not c.get("stale")]
     book: dict[str, float | None] = {}
     for d in DIMS:
-        vals = [c["rollup"][d] for c in chapters.values() if c["rollup"].get(d) is not None]
+        vals = [c["rollup"][d] for c in fresh_chapters if c["rollup"].get(d) is not None]
         book[d] = round(sum(vals) / len(vals), 1) if vals else None
 
     # Book substantive usefulness: same chapter-mean treatment as the headline,
     # plus the share of prose paragraphs the substantive rollup set aside.
-    sub_vals = [c["rollup"].get("usefulness_substantive") for c in chapters.values()
+    sub_vals = [c["rollup"].get("usefulness_substantive") for c in fresh_chapters
                 if c["rollup"].get("usefulness_substantive") is not None]
     book["usefulness_substantive"] = (
         round(sum(sub_vals) / len(sub_vals), 1) if sub_vals else None
@@ -546,6 +590,12 @@ def build(
             ],
         },
         "book": book,
+        # Additive: which chapters were excluded from the book averages above
+        # because their published text postdates the run that scored them, so
+        # the dashboard can disclose the exclusion instead of a silent average.
+        "stale_chapter_numbers": sorted(
+            num for num, c in chapters.items() if c.get("stale")
+        ),
         "chapters": dict(sorted(chapters.items())),
     }
 

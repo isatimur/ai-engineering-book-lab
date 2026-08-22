@@ -55,6 +55,11 @@ export type ChapterScore = {
   coverage?: Record<DimName, Coverage>;
   ship_blockers: WeakParagraph[];
   weakest: WeakParagraph[];
+  /** True when the published chapter text postdates the run that produced
+   * this score — i.e. the manuscript moved on since the last real measurement.
+   * Stale chapters still show their last-known numbers but are excluded from
+   * the book-level average (see `stale_chapter_numbers` on JudgeScores). */
+  stale?: boolean;
 };
 
 export type Coverage = { scored: number; total: number };
@@ -85,6 +90,9 @@ export type JudgeScores = {
   schema_version: number;
   run: JudgeRun;
   book: Record<DimName, number | null> & UsefulnessExtras;
+  /** Chapter numbers excluded from `book` above because their published text
+   * postdates the run that scored them. Empty/absent when everything is fresh. */
+  stale_chapter_numbers?: string[];
   chapters: Record<string, ChapterScore>;
   history?: RunSnapshot[];
 };

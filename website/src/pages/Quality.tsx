@@ -50,7 +50,24 @@ const Header = () => {
             .join(' · ')}
         </div>
       )}
+      <StaleNotice />
     </>
+  );
+};
+
+const StaleNotice = () => {
+  const stale = judgeScores.stale_chapter_numbers ?? [];
+  if (stale.length === 0) return null;
+  return (
+    <div
+      className="mb-8 border px-4 py-3 font-mono text-[10px] uppercase leading-relaxed tracking-[0.12em]"
+      style={{ borderColor: labelColor('weak'), color: labelColor('weak') }}
+    >
+      {stale.length} of {Object.keys(judgeScores.chapters).length} chapters (
+      {stale.map((n) => `Ch ${n}`).join(', ')}) were edited after their last judge run.
+      Their scores below are real but outdated, marked <em>stale</em>, and excluded
+      from the Book row average so an old number can&rsquo;t prop up the headline.
+    </div>
   );
 };
 
@@ -114,6 +131,15 @@ const Heatmap = () => {
                 <th className="border border-[var(--color-border)] px-3 py-2 text-left font-serif text-sm">
                   <span className="font-mono text-[10px] text-[var(--color-ink-muted)]">{c.number}</span>{' '}
                   {titleFor(c.number)}
+                  {sc.stale && (
+                    <span
+                      className="ml-2 font-mono text-[9px] uppercase tracking-[0.1em]"
+                      style={{ color: labelColor('weak') }}
+                      title="Chapter text was edited after this score's run finished — numbers are real but outdated."
+                    >
+                      stale
+                    </span>
+                  )}
                 </th>
                 {DIMS.map((d) => (
                   <Fragment key={d}>

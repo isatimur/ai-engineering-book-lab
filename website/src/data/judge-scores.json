@@ -103,20 +103,26 @@
     ]
   },
   "book": {
-    "humanness": 85.0,
-    "voice": 85.5,
-    "usefulness": 56.3,
-    "evidence_density": 85.8,
-    "claim_defensibility": 78.5,
-    "redundancy": 86.8,
-    "usefulness_substantive": 58.5,
+    "humanness": 84.8,
+    "voice": 86.2,
+    "usefulness": 60.5,
+    "evidence_density": 85.7,
+    "claim_defensibility": 81.2,
+    "redundancy": 85.0,
+    "usefulness_substantive": 61.8,
     "usefulness_connective": 30,
     "usefulness_total": 560
   },
+  "stale_chapter_numbers": [
+    "01",
+    "08",
+    "09",
+    "10"
+  ],
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -363,11 +369,12 @@
           ],
           "para_excerpt": "The most important fact about modern AI is not that it can talk. It is that people increasingly want it to work."
         }
-      ]
+      ],
+      "stale": true
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -599,11 +606,12 @@
           ],
           "para_excerpt": "AI does not make seniority irrelevant. In many contexts it makes seniority more leveraged and more legible."
         }
-      ]
+      ],
+      "stale": false
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -772,11 +780,12 @@
           ],
           "para_excerpt": "That is where slop comes from."
         }
-      ]
+      ],
+      "stale": false
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -967,11 +976,12 @@
           ],
           "para_excerpt": "This creates the eval flywheel:"
         }
-      ]
+      ],
+      "stale": false
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1145,11 +1155,12 @@
           ],
           "para_excerpt": "Does the system complete real tasks more accurately? Does it cite better evidence? Does it reduce review burden? Does it waste fewer tokens to get the same or b…"
         }
-      ]
+      ],
+      "stale": false
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1314,11 +1325,12 @@
           ],
           "para_excerpt": "That framing clarifies a lot at once. It explains why pause and resume matter. It explains why retries should not live in ad hoc prompt logic. It explains why a…"
         }
-      ]
+      ],
+      "stale": false
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1527,11 +1539,12 @@
           ],
           "para_excerpt": "This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it."
         }
-      ]
+      ],
+      "stale": false
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1542,8 +1555,8 @@
         "claim_defensibility": 68.9,
         "redundancy": 82.5,
         "n_paragraphs": 48,
-        "usefulness_substantive": 62.0,
-        "usefulness_connective": 4,
+        "usefulness_substantive": 61.0,
+        "usefulness_connective": 3,
         "usefulness_total": 48
       },
       "labels": {
@@ -1590,7 +1603,7 @@
           "evidence_refs": [
             "unsupported:Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm the same lesson under even less forgiving conditions."
           ],
-          "para_excerpt": "Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm t…"
+          "para_excerpt": "This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that c…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1733,7 +1746,7 @@
           "label": "fail",
           "reasoning": "panel-median 15 (n=3, spread 20): The paragraph is a meta-commentary about the chapter's focus and does not provide any actionable information or concrete examples that an engineer could apply.",
           "evidence_refs": [],
-          "para_excerpt": "Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm t…"
+          "para_excerpt": "This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that c…"
         },
         {
           "dim_name": "usefulness",
@@ -1753,7 +1766,7 @@
           "evidence_refs": [
             "unsupported:Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm the same lesson under even less forgiving conditions."
           ],
-          "para_excerpt": "Voice is the cleanest focus for this chapter, and it should remain the main subject. Robotics and other embodied systems matter here only because they confirm t…"
+          "para_excerpt": "This chapter keeps voice as the primary case on purpose: it is the realtime surface most readers will actually ship, and every claim below is anchored in that c…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -1778,11 +1791,12 @@
           ],
           "para_excerpt": "Text chat flatters AI systems."
         }
-      ]
+      ],
+      "stale": true
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1842,7 +1856,7 @@
             "unsupported:Nobody in this scene is doing anything obviously reckless.",
             "unsupported:Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
           ],
-          "para_excerpt": "Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
+          "para_excerpt": "Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive."
         }
       ],
       "weakest": [
@@ -1868,7 +1882,7 @@
             "phrase:'In fact, everyone is being productive'",
             "phrase:'In fact, everyone is being productive.'"
           ],
-          "para_excerpt": "Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
+          "para_excerpt": "Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive."
         },
         {
           "dim_name": "humanness",
@@ -1919,7 +1933,7 @@
             "unsupported:Nobody in this scene is doing anything obviously reckless.",
             "unsupported:Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
           ],
-          "para_excerpt": "Nobody in this scene is doing anything obviously reckless. In fact, everyone is being productive."
+          "para_excerpt": "Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive."
         },
         {
           "dim_name": "claim_defensibility",
@@ -1943,11 +1957,12 @@
           ],
           "para_excerpt": "But blurred creation does not mean blurred accountability."
         }
-      ]
+      ],
+      "stale": true
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "corpus_snapshot_hash": "sha256:c12b8e9d86e77e11e4b5c70ce6c9b6805dcef6d3d36c65bd5a597707acd88588",
       "primary_run_id": "panel-3model-v7",
       "rollup": {
@@ -1958,8 +1973,8 @@
         "claim_defensibility": 70.5,
         "redundancy": 90.0,
         "n_paragraphs": 41,
-        "usefulness_substantive": 44.1,
-        "usefulness_connective": 2,
+        "usefulness_substantive": 43.6,
+        "usefulness_connective": 3,
         "usefulness_total": 41
       },
       "labels": {
@@ -2020,7 +2035,7 @@
             "unsupported:The tooling will churn.",
             "unsupported:The jargon will get rewritten at least twice before this sentence is old."
           ],
-          "para_excerpt": "The interfaces will change. The tooling will churn. The jargon will get rewritten at least twice before this sentence is old."
+          "para_excerpt": "That is the calmest way to say what endures. The winners in the next era will not be the people who memorize model names fastest or chase every wrapper the hard…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2031,7 +2046,7 @@
           "evidence_refs": [
             "unsupported:But the work underneath is surprisingly stable"
           ],
-          "para_excerpt": "But the work underneath is surprisingly stable."
+          "para_excerpt": "The jargon will get rewritten at least twice before this sentence is old."
         },
         {
           "dim_name": "claim_defensibility",
@@ -2082,7 +2097,7 @@
             "phrase:'Make the context usable'",
             "phrase:'Make the task legible.'"
           ],
-          "para_excerpt": "Make the task legible. Make the standards explicit. Make the context usable. Make the runtime durable. Make authority narrow enough to trust. Make review propor…"
+          "para_excerpt": "But the work underneath is surprisingly stable. Make the task legible. Make the standards explicit. Make the context usable. Make the runtime durable. Make auth…"
         },
         {
           "dim_name": "humanness",
@@ -2094,7 +2109,7 @@
             "phrase:'And that is the real promise of this field.'",
             "phrase:'And that is the real promise of this field'"
           ],
-          "para_excerpt": "And that is the real promise of this field. Not that machines remove the need for engineering, but that more work can finally be delegated without pretending tr…"
+          "para_excerpt": "That is what it means to engineer AI systems that endure. And that is the real promise of this field."
         },
         {
           "dim_name": "humanness",
@@ -2125,7 +2140,7 @@
           "label": "fail",
           "reasoning": "panel-median 10 (n=3, spread 15): The paragraph is vague and lacks any actionable insight or concrete example that a working engineer could apply. It serves as a transition or summary statement without operational lift.",
           "evidence_refs": [],
-          "para_excerpt": "That is what it means to engineer AI systems that endure."
+          "para_excerpt": "Make the organization capable of learning."
         },
         {
           "dim_name": "usefulness",
@@ -2134,7 +2149,7 @@
           "label": "fail",
           "reasoning": "panel-median 15 (n=3, spread 30): This paragraph is a general statement about the transient nature of technology without providing any actionable advice or specific insights that an engineer could apply.",
           "evidence_refs": [],
-          "para_excerpt": "The interfaces will change. The tooling will churn. The jargon will get rewritten at least twice before this sentence is old."
+          "para_excerpt": "That is the calmest way to say what endures. The winners in the next era will not be the people who memorize model names fastest or chase every wrapper the hard…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2159,7 +2174,7 @@
             "unsupported:The tooling will churn.",
             "unsupported:The jargon will get rewritten at least twice before this sentence is old."
           ],
-          "para_excerpt": "The interfaces will change. The tooling will churn. The jargon will get rewritten at least twice before this sentence is old."
+          "para_excerpt": "That is the calmest way to say what endures. The winners in the next era will not be the people who memorize model names fastest or chase every wrapper the hard…"
         },
         {
           "dim_name": "claim_defensibility",
@@ -2170,9 +2185,10 @@
           "evidence_refs": [
             "unsupported:But the work underneath is surprisingly stable"
           ],
-          "para_excerpt": "But the work underneath is surprisingly stable."
+          "para_excerpt": "The jargon will get rewritten at least twice before this sentence is old."
         }
-      ]
+      ],
+      "stale": true
     }
   },
   "history": [
@@ -2734,17 +2750,17 @@
     },
     {
       "run_id": "panel-3model-v7",
-      "version_id": "git:1bbd012",
+      "version_id": "git:13bbc4a",
       "finished_at": "2026-07-31T06:56:28.912294+00:00",
       "partial": false,
       "book": {
-        "humanness": 85.0,
-        "voice": 85.5,
-        "usefulness": 56.3,
-        "evidence_density": 85.8,
-        "claim_defensibility": 78.5,
-        "redundancy": 86.8,
-        "usefulness_substantive": 58.5,
+        "humanness": 84.8,
+        "voice": 86.2,
+        "usefulness": 60.5,
+        "evidence_density": 85.7,
+        "claim_defensibility": 81.2,
+        "redundancy": 85.0,
+        "usefulness_substantive": 61.8,
         "usefulness_connective": 30,
         "usefulness_total": 560
       },
@@ -2841,8 +2857,8 @@
           "claim_defensibility": 68.9,
           "redundancy": 82.5,
           "n_paragraphs": 48,
-          "usefulness_substantive": 62.0,
-          "usefulness_connective": 4,
+          "usefulness_substantive": 61.0,
+          "usefulness_connective": 3,
           "usefulness_total": 48
         },
         "09": {
@@ -2865,8 +2881,8 @@
           "claim_defensibility": 70.5,
           "redundancy": 90.0,
           "n_paragraphs": 41,
-          "usefulness_substantive": 44.1,
-          "usefulness_connective": 2,
+          "usefulness_substantive": 43.6,
+          "usefulness_connective": 3,
           "usefulness_total": 41
         }
       }
