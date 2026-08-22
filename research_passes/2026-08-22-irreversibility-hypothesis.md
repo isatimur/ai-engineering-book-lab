@@ -77,6 +77,55 @@ Note the method trap, twice in one pass: both apparent counter-hits were grep
 false positives that required reading the surrounding sentence. Forcing
 signatures cannot be counted mechanically.
 
+## Mechanism test — irreversible action, forcing absent, harm demonstrated
+
+The previous caveat named the harder test: find work where the action **is**
+irreversible and the team demonstrably did **not** build forcing, then see
+whether harm follows. Without that, this is a correlation.
+
+**[[151-kv-QAuKWllQ-how-we-hacked-yc-spring-2025-batch-s-ai-agents-rene-brandel-casco|#151 — Rene Brandel, Casco]]** supplies it, and does so
+adversarially rather than anecdotally. He took publicly launched YC X25 AI
+agents, timeboxed each attempt, and counted:
+
+- **Anchor:** `kv-QAuKWllQ` 00:03:57.120 → 00:03:58.319 · confidence: high
+  · **Quote:** "out of 16 agents that were launched"
+- **Anchor:** `kv-QAuKWllQ` 00:04:01.360 → 00:04:02.319 · confidence: high
+  · **Quote:** "we hacked seven of them."
+
+**Seven of sixteen, at roughly thirty minutes each.** The three recurring
+failure classes he names are precisely absences of the forcing this pass
+identified: IDOR (no authorization boundary between users' data),
+code-sandbox escapes (no isolation around execution), and SSRF-style
+git-credential theft (no egress control). Data leakage and stolen credentials
+are irreversible — you cannot un-disclose them.
+
+Set against the forcing quadrant, the pairing is clean. Cloudflare, Deno,
+Docker and Decawork built authorization boundaries, isolation and egress
+control *before* shipping; these sixteen shipped without, and a single
+researcher defeated 44% of them inside half an hour each.
+
+A second, milder case from the same tier: **Amazon AGI Lab (#1001)** reports
+RL-trained agents meeting real UIs — an expense agent locking its own account
+after a session expired, and a model clicking a *sponsored* lookalike submit
+button and beginning to fill in personal details on the wrong site. Both are
+irreversible-ish actions taken because nothing sat between intent and effect;
+the fixes described are sandbox, reward and harness changes — again, structure
+outside the model.
+
+**What this upgrades.** The hypothesis was: engineering changes where a wrong
+answer is irreversible. The Casco result adds the contrapositive with evidence
+— where the action is irreversible and that engineering is *absent*, harm is
+not hypothetical but reproducible on demand. That is closer to a mechanism than
+a correlation, and it is the single most quotable result in either book's
+scoping work.
+
+**Honest limits.** Casco sells agent security, so he is a motivated witness;
+what makes it usable is that the claim is a *count he performed*, not a market
+statistic, and the failure classes are standard named vulnerabilities rather
+than proprietary findings. He also tested early-stage YC launches, which are
+the least hardened software in the corpus — the result should not be
+generalised to mature deployments without saying so.
+
 ## Caveats
 
 - The 2×2 is my sorting of others' talks; "irreversible" is a judgement per
