@@ -493,7 +493,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong (moderate on the specific self-reported figures)
 - **Supporting sources:**
   - [[187-TquUsN1QsWs-ai-that-pays-lessons-from-revenue-cycle-nathan-wan-ensemble-health|#187 — Wan, Ensemble Health]] — "Almost half the hospitals in the country are losing money… and it's not because of the clinical costs. It's because of the broken and manual processes around the revenue cycle"; off-the-shelf GenAI "wasn't sufficient," so a custom appeal pipeline with clinical sign-off was built; reported 40% turnaround reduction, tracked overturn rate.
+    - **Anchor:** `TquUsN1QsWs` 00:00:37.680 → 00:00:39.600 · confidence: high
+    - **Quote:** "Almost half the hospitals in the country are losing money."
   - [[883-_cVfz88_j7A-can-oncology-workflows-run-without-human-touch-anant-shankhdhar-risa-labs|#883 — Shankhdhar, Risa Labs]] — oncology automation whose flagship is prior authorization for cancer drugs (order intake, eligibility-and-benefits verification), i.e. the administrative process, not the clinical decision.
+    - **Anchor:** `_cVfz88_j7A` 00:00:18.000 → 00:00:23.840 · confidence: medium
+    - **Quote:** "is prior authorizations where file for authorizations for drugs for cancer patients."
 - **Caveats / counterevidence:** The #187 ROI figures (40% faster, overturn rate) are the company's own; the "40% of hospitals negative-margin" figure is the speaker's framing. #883's note is auto-generated boilerplate — the prior-auth/back-office point is grounded on its transcript excerpt only, and its title poses (does not answer) the human-touch question, which claim 37 answers from other sources.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** The medical AI that pays is not at the bedside — it is in the revenue cycle, where almost half of hospitals are quietly losing money.
@@ -503,7 +507,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Myshatyn, Los Alamos]] — names the actual stack an agentic tool must clear (NIST 800-53, FedRAMP, DoD CC SRG impact levels, CNSSI 1253, OMB M-25-21/22) and asks vendors to build for explainability, isolation/self-hosting, and governance (e.g. an SBOM).
+    - **Anchor:** `TnSGx36Ly0Q` 00:08:13.440 → 00:08:17.120 · confidence: high
+    - **Quote:** "You have your sock 2 report. I have NIST 853."
   - [[469-IAdZxqjZ45U-optimizing-llms-in-insurance-with-dspy-jeronim-morina|#469 — Morina, AXA]] — cited narrowly for data residency: the one clearly domain-driven constraint is an internally hosted LLM platform so customer data never leaves the company's infrastructure.
+    - **Anchor:** `IAdZxqjZ45U` 00:05:01.880 → 00:05:10.240 · confidence: high
+    - **Quote:** "our internal gen platform gets like more usable every day and like especially not comprising our data security"
 - **Caveats / counterevidence:** #86's "almost 70 years" line is colour; the *named regulatory stack* carries the claim. #469 is otherwise a deliberate negative case — its eval-discipline and DSPy fixes are generic engineering hygiene, not domain-forced, so this claim is scoped to where the stakes concentrate (compliance gate, private data), not to "everything in a regulated industry is domain-forced." Extends and makes concrete claim 12 (trust/confidentiality as first-class inference requirements), whose candidate-chapter note named the Part II regulated-domain chapters — grounded here on this chapter's own cluster, not on claim 12's out-of-cluster sources.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** In a high-compliance domain, the regulatory stack and the data-residency rule are read before the first commit, not bolted on before launch.
