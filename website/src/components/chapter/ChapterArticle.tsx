@@ -35,14 +35,19 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
   const proseBlocks = practicalIndex === -1 ? blocks : blocks.slice(0, practicalIndex);
   const practicalBlocks = practicalIndex === -1 ? [] : blocks.slice(practicalIndex);
 
-  const renderBlock = (block: string, index: number) => {
+  // allowFigure is false for the practical checklist: it's a text-only utility
+  // block, and diagram figures are matched to headings purely by occurrence
+  // order (see inlineFigsForChapter), so a chapter whose figure count happens
+  // to equal its prior heading count would otherwise dump a full illustration
+  // inside the callout the moment this trailing heading is added.
+  const renderBlock = (block: string, key: string, allowFigure: boolean) => {
     const isHeading = block.startsWith('## ');
     const figIndex = headingFigureIndex;
-    const hasFigure = isHeading && figIndex < figs.length;
+    const hasFigure = allowFigure && isHeading && figIndex < figs.length;
     const fig = hasFigure ? figs[figIndex] : null;
     if (isHeading) headingFigureIndex += 1;
     return (
-      <React.Fragment key={`${chapter.number}-${index}`}>
+      <React.Fragment key={key}>
         {fig ? <span data-figure-anchor={fig.index} aria-hidden /> : null}
         <MarkdownBlock block={block} chapterNumber={chapter.number} listen={listen} />
         {fig ? (
@@ -68,10 +73,10 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
         <ExpandableSummary chapter={chapter} />
       </div>
       <EvidenceClaimMarkers chapterNumber={chapter.number} />
-      {proseBlocks.map(renderBlock)}
+      {proseBlocks.map((block, index) => renderBlock(block, `${chapter.number}-prose-${index}`, true))}
       {practicalBlocks.length > 0 && (
         <div className="practical-checklist mt-12 border border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-ink)_4%,transparent)] px-6 py-8 sm:px-8">
-          {practicalBlocks.map(renderBlock)}
+          {practicalBlocks.map((block, index) => renderBlock(block, `${chapter.number}-practical-${index}`, false))}
         </div>
       )}
     </div>
