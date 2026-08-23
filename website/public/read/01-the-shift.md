@@ -138,6 +138,14 @@ They want it to return with artifacts, not just ideas; with completed steps, not
 
 The rest of this book is about what happens once we take that requirement seriously.
 
+## Practical checklist
+
+- **Classify what you're actually building.** Apply the 24-hour test: if no human reads the output for a day, does anything change in the world? If yes, you're building a delegate, not an assistant — treat it with delegate-grade rigor, whatever the product page calls it.
+- **Test for dependability, not just for a demo.** Run the same request three different ways with no one watching. If the behavior drifts, it isn't ready to delegate to yet, no matter how good the single showcase run looked.
+- **Verify from outside the system's own account of itself.** If the only evidence a step happened is the agent saying so, you have no evidence.
+- **Write the standard down before you delegate it.** A convention that lives only in a senior engineer's head will be violated silently the first time a model works in that space.
+- **Check the seven things a trustworthy delegate needs** — right context, usable tools, explicit constraints, evaluation loops, durable state, approval boundaries, observability — and name which one is missing before blaming the model for a failure.
+
 ---
 
 _From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/01-the-shift_

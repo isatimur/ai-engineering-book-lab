@@ -148,3 +148,11 @@ Chapter 6 adds that none of this is enough if the work cannot persist, recover, 
 A machine colleague is not just a model with tools. It is a model inside an operating environment.
 
 And the better that operating environment gets, the less the future of AI engineering looks like chat and the more it looks like building dependable systems for shared human-and-machine work.
+
+## Practical checklist
+
+- **Choose replay or snapshots on purpose, not by default.** Reach for replay when causality and auditability are the point — state should emerge from recorded steps. Reach for snapshots when fast continuation and elaborate live state dominate. Know which one your system needs before you build either.
+- **Place checkpoints where judgment lives, not everywhere.** The design question isn't how to keep a human in every loop; it's where the few checkpoints that carry the most judgment should sit — before, during, or after execution.
+- **Route to the cheapest model that still passes the eval, and no cheaper.** Which model runs a step is a control-plane decision made per task, not a global default chosen once — and a misroute is a failure the harness has to catch, not a savings to chase blindly.
+- **Give every parallel worker its own isolated, ephemeral environment.** A shared dev setup means one agent's migration breaks another mid-run. A git worktree is enough for trusted edits; untrusted, side-effecting work needs a VM, not just a container.
+- **Design observability for two audiences at once.** Deep inspection of one trajectory for debugging, roll-up supervision across many for operators — and build redaction and risk-based views in from the start, since richer traces buy trust and retention risk in the same breath.

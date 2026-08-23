@@ -152,3 +152,11 @@ A machine colleague does not need infinite information. It needs the right binde
 But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
 
 That is the runtime problem, the next layer of infrastructure.
+
+## Practical checklist
+
+- **Watch for the wrong signal: accuracy dropping as you add documents.** That's the middle of the context window getting lost, not the model getting dumber — fix it with better assembly (summarization, graphs, iterative retrieval), not a bigger window.
+- **Instrument how little context the answer needed, not how much the index holds.** The right million tokens beats a trillion available ones; track how much of what you retrieved a task actually used.
+- **Match the retrieval mechanism to the shape of the answer.** Vector search for a single similar passage, graph traversal for a path along explicit relationships, keyword or metadata filters when exactness is what matters — don't make one mechanism carry all three jobs.
+- **Score retrieval and generation as two separate questions.** Check whether the governing passage even reached the working set before judging what the model did with it — otherwise a context-assembly bug looks exactly like a model getting dumber.
+- **When a fix depends on users opting in, assume almost no one will.** Change the default instead — that's the actual lesson behind cutting tool-load context by 49 percent, not a config flag nobody found.

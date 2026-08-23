@@ -120,3 +120,11 @@ Not that machines remove the need for engineering,
 but that more work can finally be delegated without pretending trust will take care of itself.
 
 The future belongs to teams that can turn cheap generation into trusted throughput.
+
+## Practical checklist
+
+- **Run the six-layer diagnostic on whatever is misbehaving right now.** Name which layer actually failed — legibility, evals, context, runtime, authority, or supervision — before reaching for a bigger model. It's rarely the model.
+- **Set the autonomy dial deliberately, in writing, for one real workflow.** Turn it up where a mistake is reversible and recoverable. Turn it down where it isn't. An undocumented dial is a dial nobody actually set.
+- **Name the person accountable before you ship, not after something breaks.** If no name comes to mind for who owns this system's output six months from now, the responsibility was never assigned.
+- **Pick the chapter that maps to your worst gap and go build that one thing this week.** A legible repo, a real eval slice, a working set instead of a document dump, a durable runtime, a bounded credential, a control plane, a named owner — constrained delegation is built one layer at a time, not declared all at once.
+- **Reread the seven "make" lines above in six months.** The test of whether this book worked is not whether you agreed with it. It's whether more of those seven lines are true of your system than they are today.

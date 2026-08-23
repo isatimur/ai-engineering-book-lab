@@ -149,3 +149,11 @@ Not to tell you whether your model is impressive, but to tell you whether your s
 And this is the deeper continuity between the chapters so far. Chapter 3 argued that delegated work depends on a legible harness. Chapter 4 adds that a legible harness is still not enough. Once the machine can act, the surrounding system needs a way to notice drift, compare alternatives, preserve painful lessons, and keep quality from collapsing into anecdote.
 
 The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. Context is not merely input. It is infrastructure.
+
+## Practical checklist
+
+- **Mine your evals from real failures, not invented scenarios.** Crawl your own commit history for the fixes that mattered, revert one, and score whether the system gets back to the known-good state — that recipe beats a benchmark built in a conference room.
+- **Grade how the system got there, not just where it landed.** A run that reached the right diff by deleting a failing test passed the wrong thing; check the path, not only the destination.
+- **Weight slices by consequence, not frequency.** A rare failure that costs a client is worth more attention than a common one that costs nothing — a single averaged score hides exactly the failures that matter most.
+- **Instrument every production run as a trace before you think you need it.** A trace you never captured is a regression case you can never recover; observability and evals are the same problem, worked from opposite ends.
+- **Ask the operating-habit question, not the inventory question.** "Do we have evals?" is too small. Ask whether you have a habit that turns this month's real failure into next month's regression test.

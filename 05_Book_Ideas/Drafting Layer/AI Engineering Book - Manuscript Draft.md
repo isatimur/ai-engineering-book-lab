@@ -145,6 +145,14 @@ They want it to return with artifacts, not just ideas; with completed steps, not
 
 The rest of this book is about what happens once we take that requirement seriously.
 
+## Practical checklist
+
+- **Classify what you're actually building.** Apply the 24-hour test: if no human reads the output for a day, does anything change in the world? If yes, you're building a delegate, not an assistant — treat it with delegate-grade rigor, whatever the product page calls it.
+- **Test for dependability, not just for a demo.** Run the same request three different ways with no one watching. If the behavior drifts, it isn't ready to delegate to yet, no matter how good the single showcase run looked.
+- **Verify from outside the system's own account of itself.** If the only evidence a step happened is the agent saying so, you have no evidence.
+- **Write the standard down before you delegate it.** A convention that lives only in a senior engineer's head will be violated silently the first time a model works in that space.
+- **Check the seven things a trustworthy delegate needs** — right context, usable tools, explicit constraints, evaluation loops, durable state, approval boundaries, observability — and name which one is missing before blaming the model for a failure.
+
 ---
 
 # Chapter 2 — Taste Still Matters When Code Gets Cheap
@@ -488,6 +496,14 @@ And that may turn out to be one of the most important shifts in software enginee
 
 Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
 
+## Practical checklist
+
+- **Run the fresh-container test.** Clone the repo into a clean environment and time how long an agent takes to reach a green test run. Every step that lives in someone's shell history is a hole the agent will fill by guessing.
+- **When you keep hand-patching the same output, fix the spec, not the patch.** Repeated correction is the signal that intent belongs in a persistent artifact the next run will actually read, not in one-off fixes.
+- **Size the spec to the cost of being wrong, not to how important the task feels.** Save the ceremony for work that's large, parallelized, safety-sensitive, or expensive to review; let everything else move fast.
+- **Don't fan out until one agent succeeds alone, nearly every time.** Running twenty agents on a task you can't verify automatically just multiplies unverified output.
+- **Audit the agent-readiness list above against your actual repo** — stable structure, explicit setup, real gates, decisions in files, accepted-pattern examples, specs that survive handoff, narrow tools — and fix the first one that's missing, not the one that's easiest.
+
 ---
 
 # Chapter 4 — Evals Are the Control System
@@ -640,6 +656,14 @@ Not to tell you whether your model is impressive, but to tell you whether your s
 And this is the deeper continuity between the chapters so far. Chapter 3 argued that delegated work depends on a legible harness. Chapter 4 adds that a legible harness is still not enough. Once the machine can act, the surrounding system needs a way to notice drift, compare alternatives, preserve painful lessons, and keep quality from collapsing into anecdote.
 
 The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. Context is not merely input. It is infrastructure.
+
+## Practical checklist
+
+- **Mine your evals from real failures, not invented scenarios.** Crawl your own commit history for the fixes that mattered, revert one, and score whether the system gets back to the known-good state — that recipe beats a benchmark built in a conference room.
+- **Grade how the system got there, not just where it landed.** A run that reached the right diff by deleting a failing test passed the wrong thing; check the path, not only the destination.
+- **Weight slices by consequence, not frequency.** A rare failure that costs a client is worth more attention than a common one that costs nothing — a single averaged score hides exactly the failures that matter most.
+- **Instrument every production run as a trace before you think you need it.** A trace you never captured is a regression case you can never recover; observability and evals are the same problem, worked from opposite ends.
+- **Ask the operating-habit question, not the inventory question.** "Do we have evals?" is too small. Ask whether you have a habit that turns this month's real failure into next month's regression test.
 
 ---
 
@@ -797,6 +821,14 @@ But a final question now appears. Once the binder is assembled, who keeps the wo
 
 That is the runtime problem, the next layer of infrastructure.
 
+## Practical checklist
+
+- **Watch for the wrong signal: accuracy dropping as you add documents.** That's the middle of the context window getting lost, not the model getting dumber — fix it with better assembly (summarization, graphs, iterative retrieval), not a bigger window.
+- **Instrument how little context the answer needed, not how much the index holds.** The right million tokens beats a trillion available ones; track how much of what you retrieved a task actually used.
+- **Match the retrieval mechanism to the shape of the answer.** Vector search for a single similar passage, graph traversal for a path along explicit relationships, keyword or metadata filters when exactness is what matters — don't make one mechanism carry all three jobs.
+- **Score retrieval and generation as two separate questions.** Check whether the governing passage even reached the working set before judging what the model did with it — otherwise a context-assembly bug looks exactly like a model getting dumber.
+- **When a fix depends on users opting in, assume almost no one will.** Change the default instead — that's the actual lesson behind cutting tool-load context by 49 percent, not a config flag nobody found.
+
 ---
 
 # Chapter 6 — Runtimes, State, and the Human Control Plane
@@ -948,6 +980,14 @@ Chapter 6 adds that none of this is enough if the work cannot persist, recover, 
 A machine colleague is not just a model with tools. It is a model inside an operating environment.
 
 And the better that operating environment gets, the less the future of AI engineering looks like chat and the more it looks like building dependable systems for shared human-and-machine work.
+
+## Practical checklist
+
+- **Choose replay or snapshots on purpose, not by default.** Reach for replay when causality and auditability are the point — state should emerge from recorded steps. Reach for snapshots when fast continuation and elaborate live state dominate. Know which one your system needs before you build either.
+- **Place checkpoints where judgment lives, not everywhere.** The design question isn't how to keep a human in every loop; it's where the few checkpoints that carry the most judgment should sit — before, during, or after execution.
+- **Route to the cheapest model that still passes the eval, and no cheaper.** Which model runs a step is a control-plane decision made per task, not a global default chosen once — and a misroute is a failure the harness has to catch, not a savings to chase blindly.
+- **Give every parallel worker its own isolated, ephemeral environment.** A shared dev setup means one agent's migration breaks another mid-run. A git worktree is enough for trusted edits; untrusted, side-effecting work needs a VM, not just a container.
+- **Design observability for two audiences at once.** Deep inspection of one trajectory for debugging, roll-up supervision across many for operators — and build redaction and risk-based views in from the start, since richer traces buy trust and retention risk in the same breath.
 
 ---
 
@@ -1107,6 +1147,14 @@ It is trustworthy only when its power has shape.
 
 Bounded authority is a calm-room design. The next chapter asks whether that design still holds when the room stops being calm — when the human is still present, the clock is running, and every defect in the architecture becomes audible.
 
+## Practical checklist
+
+- **Run the four-controls baseline by default, not as hardening after an incident.** Sandboxing, network restriction, privilege boundaries, human review — each stops a different failure: a bad command, exfiltration, over-reach, and whatever slips through the first three.
+- **Build for "the agent will sometimes be wrong," not for "the agent will behave."** Ask whether a mistake at this step is survivable before you ask whether the agent is capable of making it.
+- **Write one default-permission row per agent, not one blanket policy.** A research agent may need no write access at all; a support agent may read but not refund; know the minimum for each stage of the workflow, not just for the agent as a whole.
+- **Apply the MCP governance test before adding a server.** If a new tool connection grows your agents' reach faster than your team can answer who can call this, with what scope, logged where — standardization just expanded your attack surface, not your capability.
+- **Treat a standing credential as a red flag, not a shortcut.** An agent running on a borrowed API key isn't delegated authority; it's impersonation with no expiry and nothing to revoke.
+
 ---
 
 # Chapter 8 — Realtime, Voice, and the Cost of Being Interruptible
@@ -1227,6 +1275,14 @@ And realtime interaction is where that truth becomes impossible to ignore.
 
 If delegated work now happens across repos, workflows, queues, dashboards, and even live customer interactions, what kind of company is required to manage it coherently?
 
+## Practical checklist
+
+- **Spend your latency budget on first audio, not on silence.** A quick spoken acknowledgment followed by a slower answer beats a long silent pause followed by a polished one — streaming partial understanding rescues a system whose deeper reasoning takes longer.
+- **Match the interaction to the half-duplex constraint, not around it.** Structured, turn-based flows survive a system that can't listen and speak at once. Open-ended companion chat doesn't — the model will read every interjection as a barge-in.
+- **Invert your confirmation cost on purpose.** The warmer the interface, the cheaper approval feels to the user — so make confirmation more deliberate exactly where the action is more consequential, not less.
+- **Wrap voice around your strongest existing agent; don't rebuild one for it.** Keep its tools, its evals, its workflow logic. If the underlying system is weak, voice will expose that faster, not fix it.
+- **Give the system a way to say "I'm not sure" out loud.** Visible acknowledgment, graceful clarification, and a real escalation path matter more in voice than in chat, because the human is in the room watching it hesitate in real time.
+
 ---
 
 # Chapter 9 — The AI-Native Organization
@@ -1345,6 +1401,14 @@ The technical question and the organizational question turn out to be the same.
 How do you build an environment in which delegated work deserves trust?
 
 That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces? That is the subject of the final chapter.
+
+## Practical checklist
+
+- **Find where work piles up waiting on a person — that's where scarcity actually moved.** It's almost never the keyboard anymore; that queue tells you where to invest, not a guess about who's slow.
+- **Check what each ritual rations before you keep running it.** A standup that reports how much got produced rations the abundant resource. One that surfaces which decisions are unmade rations the scarce one — run the second kind.
+- **Name the owner before you widen who can create.** Every path you open needs someone who owns the production path, domain correctness, the security boundaries, and which workflows stay human-gated — decided before it opens, not discovered after something ships.
+- **Measure outcomes, not artifact volume.** Rework rate, the share of generated work that ships unreverted, time in the review queue — a dashboard that only counts pull requests will go green while the real constraint breaks.
+- **Don't trust redundancy unless the voters are actually independent.** Majority voting and model debate beat one expensive call, but only when disagreement is real — sampling one model five times cancels noise, not its shared blind spot.
 
 ---
 
@@ -1469,3 +1533,11 @@ Not that machines remove the need for engineering,
 but that more work can finally be delegated without pretending trust will take care of itself.
 
 The future belongs to teams that can turn cheap generation into trusted throughput.
+
+## Practical checklist
+
+- **Run the six-layer diagnostic on whatever is misbehaving right now.** Name which layer actually failed — legibility, evals, context, runtime, authority, or supervision — before reaching for a bigger model. It's rarely the model.
+- **Set the autonomy dial deliberately, in writing, for one real workflow.** Turn it up where a mistake is reversible and recoverable. Turn it down where it isn't. An undocumented dial is a dial nobody actually set.
+- **Name the person accountable before you ship, not after something breaks.** If no name comes to mind for who owns this system's output six months from now, the responsibility was never assigned.
+- **Pick the chapter that maps to your worst gap and go build that one thing this week.** A legible repo, a real eval slice, a working set instead of a document dump, a durable runtime, a bounded credential, a control plane, a named owner — constrained delegation is built one layer at a time, not declared all at once.
+- **Reread the seven "make" lines above in six months.** The test of whether this book worked is not whether you agreed with it. It's whether more of those seven lines are true of your system than they are today.

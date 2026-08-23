@@ -119,3 +119,11 @@ This is why harness engineering deserves to be treated as a primary discipline i
 And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
 Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
+
+## Practical checklist
+
+- **Run the fresh-container test.** Clone the repo into a clean environment and time how long an agent takes to reach a green test run. Every step that lives in someone's shell history is a hole the agent will fill by guessing.
+- **When you keep hand-patching the same output, fix the spec, not the patch.** Repeated correction is the signal that intent belongs in a persistent artifact the next run will actually read, not in one-off fixes.
+- **Size the spec to the cost of being wrong, not to how important the task feels.** Save the ceremony for work that's large, parallelized, safety-sensitive, or expensive to review; let everything else move fast.
+- **Don't fan out until one agent succeeds alone, nearly every time.** Running twenty agents on a task you can't verify automatically just multiplies unverified output.
+- **Audit the agent-readiness list above against your actual repo** — stable structure, explicit setup, real gates, decisions in files, accepted-pattern examples, specs that survive handoff, narrow tools — and fix the first one that's missing, not the one that's easiest.

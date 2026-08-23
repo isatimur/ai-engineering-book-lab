@@ -154,3 +154,11 @@ A machine colleague is not trustworthy because it sounds confident.
 It is trustworthy only when its power has shape.
 
 Bounded authority is a calm-room design. The next chapter asks whether that design still holds when the room stops being calm — when the human is still present, the clock is running, and every defect in the architecture becomes audible.
+
+## Practical checklist
+
+- **Run the four-controls baseline by default, not as hardening after an incident.** Sandboxing, network restriction, privilege boundaries, human review — each stops a different failure: a bad command, exfiltration, over-reach, and whatever slips through the first three.
+- **Build for "the agent will sometimes be wrong," not for "the agent will behave."** Ask whether a mistake at this step is survivable before you ask whether the agent is capable of making it.
+- **Write one default-permission row per agent, not one blanket policy.** A research agent may need no write access at all; a support agent may read but not refund; know the minimum for each stage of the workflow, not just for the agent as a whole.
+- **Apply the MCP governance test before adding a server.** If a new tool connection grows your agents' reach faster than your team can answer who can call this, with what scope, logged where — standardization just expanded your attack surface, not your capability.
+- **Treat a standing credential as a red flag, not a shortcut.** An agent running on a borrowed API key isn't delegated authority; it's impersonation with no expiry and nothing to revoke.

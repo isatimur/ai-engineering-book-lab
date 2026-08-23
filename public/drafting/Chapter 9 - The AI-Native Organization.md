@@ -115,3 +115,11 @@ The technical question and the organizational question turn out to be the same.
 How do you build an environment in which delegated work deserves trust?
 
 That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces? That is the subject of the final chapter.
+
+## Practical checklist
+
+- **Find where work piles up waiting on a person — that's where scarcity actually moved.** It's almost never the keyboard anymore; that queue tells you where to invest, not a guess about who's slow.
+- **Check what each ritual rations before you keep running it.** A standup that reports how much got produced rations the abundant resource. One that surfaces which decisions are unmade rations the scarce one — run the second kind.
+- **Name the owner before you widen who can create.** Every path you open needs someone who owns the production path, domain correctness, the security boundaries, and which workflows stay human-gated — decided before it opens, not discovered after something ships.
+- **Measure outcomes, not artifact volume.** Rework rate, the share of generated work that ships unreverted, time in the review queue — a dashboard that only counts pull requests will go green while the real constraint breaks.
+- **Don't trust redundancy unless the voters are actually independent.** Majority voting and model debate beat one expensive call, but only when disagreement is real — sampling one model five times cancels noise, not its shared blind spot.

@@ -117,6 +117,14 @@ And realtime interaction is where that truth becomes impossible to ignore.
 
 If delegated work now happens across repos, workflows, queues, dashboards, and even live customer interactions, what kind of company is required to manage it coherently?
 
+## Practical checklist
+
+- **Spend your latency budget on first audio, not on silence.** A quick spoken acknowledgment followed by a slower answer beats a long silent pause followed by a polished one — streaming partial understanding rescues a system whose deeper reasoning takes longer.
+- **Match the interaction to the half-duplex constraint, not around it.** Structured, turn-based flows survive a system that can't listen and speak at once. Open-ended companion chat doesn't — the model will read every interjection as a barge-in.
+- **Invert your confirmation cost on purpose.** The warmer the interface, the cheaper approval feels to the user — so make confirmation more deliberate exactly where the action is more consequential, not less.
+- **Wrap voice around your strongest existing agent; don't rebuild one for it.** Keep its tools, its evals, its workflow logic. If the underlying system is weak, voice will expose that faster, not fix it.
+- **Give the system a way to say "I'm not sure" out loud.** Visible acknowledgment, graceful clarification, and a real escalation path matter more in voice than in chat, because the human is in the room watching it hesitate in real time.
+
 ---
 
 _From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/08-realtime_
