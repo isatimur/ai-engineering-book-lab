@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T20:40:01+00:00",
+  "generated_at": "2026-08-23T20:41:30+00:00",
   "corpus": {
     "videos": 1047
   },
@@ -37,9 +37,24 @@
     "total": 124
   },
   "method": {
-    "research_passes": 35,
+    "research_passes": 36,
     "programs": 9,
     "tasks": 7
   },
-  "total_artefacts": 1314
+  "total_artefacts": 1314,
+  "book2": {
+    "drafting_files": 7,
+    "claims": {
+      "total": 43,
+      "strong": 29,
+      "moderate": 14,
+      "tentative": 0
+    },
+    "anchors": {
+      "total": 93,
+      "high": 88,
+      "medium": 5,
+      "low": 0
+    }
+  }
 }

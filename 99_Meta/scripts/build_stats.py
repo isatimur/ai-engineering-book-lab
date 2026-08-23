@@ -41,9 +41,9 @@ def count_png(dir_path: str) -> int:
     return sum(1 for p in d.glob("*.png"))
 
 
-def count_claims() -> dict[str, int]:
-    """Parse claims/Claims Ledger.md for Claim entries by support level."""
-    ledger = REPO / "claims" / "Claims Ledger.md"
+def count_claims(ledger_rel_path: str = "claims/Claims Ledger.md") -> dict[str, int]:
+    """Parse a Claims Ledger for Claim entries by support level."""
+    ledger = REPO / ledger_rel_path
     if not ledger.exists():
         return {"total": 0, "strong": 0, "moderate": 0, "tentative": 0}
 
@@ -58,16 +58,15 @@ def count_claims() -> dict[str, int]:
     }
 
 
-def count_anchors() -> dict[str, int]:
+def count_anchors(ledger_rel_path: str = "claims/Claims Ledger.md") -> dict[str, int]:
     """
-    Parse Claims Ledger anchors. Each anchor in the ledger looks like:
+    Parse a Claims Ledger's anchors. Each anchor in the ledger looks like:
 
-      - [video_id] start--end  "quote"  (confidence: high)
+      - **Anchor:** `video_id` start --> end · confidence: high
 
-    We count any line that begins with `- [` followed by 11-char video id
-    plus a confidence tag.
+    We count occurrences of each confidence level.
     """
-    ledger = REPO / "claims" / "Claims Ledger.md"
+    ledger = REPO / ledger_rel_path
     if not ledger.exists():
         return {"total": 0, "high": 0, "medium": 0, "low": 0}
 
@@ -103,6 +102,7 @@ class Stats:
     diagrams: dict = field(default_factory=dict)
     method: dict = field(default_factory=dict)
     total_artefacts: int = 0
+    book2: dict = field(default_factory=dict)
 
 
 def build() -> Stats:
@@ -145,6 +145,18 @@ def build() -> Stats:
         + chapters["total"]
     )
 
+    # Second book: a fully separate manuscript track (own ledger, own drafts,
+    # not yet wired into website/src/data/bookChapters.ts). Reported alongside
+    # book 1 but kept out of `total_artefacts` — the two manuscripts are
+    # separate deliverables and merging their counts would obscure both.
+    book2_claims = count_claims("claims-2/Claims Ledger.md")
+    book2_anchors = count_anchors("claims-2/Claims Ledger.md")
+    book2 = {
+        "drafting_files": count_md("public/drafting-2"),
+        "claims": book2_claims,
+        "anchors": book2_anchors,
+    }
+
     return Stats(
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         corpus=corpus,
@@ -155,6 +167,7 @@ def build() -> Stats:
         diagrams=diagrams,
         method=method,
         total_artefacts=total,
+        book2=book2,
     )
 
 
@@ -220,6 +233,29 @@ that doesn't update automatically, link to this file instead of inlining a value
 | Maps | **{s.diagrams['maps']}** |
 | **Total diagrams** | **{s.diagrams['total']}** |
 
+## Second book (Part I: The Model Layer / Part II: The Long Tail)
+
+Separate manuscript track — own ledger (`claims-2/`), own drafts
+(`public/drafting-2/`), own chapter packets. Not yet wired into the website;
+excluded from the grand total below.
+
+- **Chapter drafts:** **{s.book2['drafting_files']}**
+- **Claims in the ledger:** **{s.book2['claims']['total']}**
+
+| Support level | Count |
+|---|---|
+| Strong | **{s.book2['claims']['strong']}** |
+| Moderate | **{s.book2['claims']['moderate']}** |
+| Tentative | **{s.book2['claims']['tentative']}** |
+
+**Source Anchors:** **{s.book2['anchors']['total']}**
+
+| Confidence | Count |
+|---|---|
+| High | **{s.book2['anchors']['high']}** |
+| Medium | **{s.book2['anchors']['medium']}** |
+| Low | **{s.book2['anchors']['low']}** |
+
 ## Method (agent + research infrastructure)
 
 | Artefact | Count |
@@ -231,7 +267,8 @@ that doesn't update automatically, link to this file instead of inlining a value
 ## Grand total
 
 **{s.total_artefacts}** trackable artefacts across the corpus / synthesis / evidence /
-manuscript / diagrams / method layers.
+manuscript / diagrams / method layers. (Book 1 only — see "Second book" above
+for that manuscript's separate counts.)
 """
 
 
@@ -251,6 +288,8 @@ def main() -> int:
     print(f"[stats] {s.corpus['videos']} videos · {s.diagrams['total']} diagrams · "
           f"{s.claims['total']} claims · {s.anchors['total']} anchors · "
           f"{s.chapters['total']} chapters")
+    print(f"[stats] second book: {s.book2['drafting_files']} chapter drafts · "
+          f"{s.book2['claims']['total']} claims · {s.book2['anchors']['total']} anchors")
     return 0
 
 
