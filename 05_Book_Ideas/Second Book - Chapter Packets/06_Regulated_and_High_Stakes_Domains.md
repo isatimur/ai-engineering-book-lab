@@ -53,3 +53,65 @@ The densest chapter in Part II (~12 talks), covering the domains where a wrong a
 - Several talks here are eval-heavy (#446, #406, #938). Guard the boundary with book 1's evals chapter: book 1 is about *how to build* evals; this chapter is about *what stakes do to* evals. Keep the framing on the domain, not the technique.
 - #473 (Albatross) is the resolved overlap video — it argues finance's constraints drive a trained model. Make sure the drafting keeps it as a domain argument here, not a training-technique reprise of Ch 1.
 - Where does automation stop and the human start? #883 asks it in the title ("without human touch"); make the human-in-the-loop line an explicit thread rather than a per-talk aside.
+
+---
+
+## Added 2026-08-23 from a separate hypothesis-testing pass (not Phase 0)
+
+Source: `research_passes/2026-08-22-b2b-thesis-test.md` and
+`research_passes/2026-08-22-irreversibility-hypothesis.md`. Offered as input to
+a Ch6 revision; the drafted chapter was not edited.
+
+### The chapter has already found the pattern — this names the mechanism
+
+The draft's own section titles converge on it: *"Sometimes the safest design
+keeps the model out of the answer"*, *"Trust, but verify is an architecture, not
+a slogan"*, *"Where automation stops and the human starts"*. Across **twelve**
+independently-examined forcing cases, that is the *single* recurring engineering
+response: **move the irreversible step out of the model.** A deterministic tax
+engine, a byte-level proxy, a clinician sign-off, a scoped sandbox, a payment
+token, a schema. Not one case was solved by a better prompt or a bigger model.
+
+### But "regulated" is the wrong axis, and this is measured
+
+16 genuine vertical-domain talks were enriched specifically to test whether
+regulated domains change the engineering. **9 showed real forcing; 7 did not**
+(44% miss). Two talks billed as finance-specific explicitly argued their methods
+were cross-industry, and one "expert finance LLM" demos long context on **Mark
+Twain fiction**. Meanwhile AXA's only genuinely insurance-specific constraint
+was **data residency** — a storage obligation with no wrong-answer consequence —
+and it shows no forcing.
+
+Sorting the 9 positives, the trigger is never the domain label:
+
+1. **A wrong answer is irreversible or creates liability** — 7 of 9. Intuit (a
+   wrong number is legally actionable, so the LLM never touches the tax
+   calculation), telemedicine triage, Anterior (active lawsuits), Ensemble
+   Health (payer submission), WhyHow (accuracy compounding, 95% per step →
+   ~77% chained), Bright Wave (cited research), Shah (cross-jurisdictional).
+2. **Problem structure, unrelated to regulation** — 2 of 9. Novartis imposing a
+   pre-1998 knowledge cutoff to prove *reasoning* rather than recall; Radicait's
+   open-ended science.
+
+### The falsification and mechanism tests both ran
+
+- **Regulated but recoverable → no forcing**, four cases: Harvey/LanceDB legal
+  RAG, AlixPartners M&A/litigation, Vectara deep research, AXA. All handle
+  sensitive material; none built escalation ladders or deterministic guards,
+  because nothing in their loop cannot be undone. What they built was **eval
+  discipline** — book 1's subject, not book 2's.
+- **Irreversible but forcing absent → harm, on demand.** Casco (#151) timeboxed
+  attacks on publicly launched YC X25 agents: *"out of 16 agents that were
+  launched"* / *"we hacked seven of them."* (both anchored, `kv-QAuKWllQ`
+  00:03:57 and 00:04:01). The three recurring failure classes are exactly the
+  missing forcing: IDOR, sandbox escape, credential theft.
+
+### What this suggests for the revision
+
+Ch6 currently earns its material but is organised by **domain**. Organising the
+*argument* by irreversibility would (a) explain why the professional-services and
+healthcare movements behave alike, (b) let the chapter admit the negative cases
+instead of omitting them, and (c) connect to sandboxing/identity/payments
+material that a "regulated domains" frame excludes. Caveat worth keeping: Casco
+sells agent security and tested early-stage launches — usable because the claim
+is a count he performed with standard vulnerability classes, not a market stat.
