@@ -303,13 +303,6 @@
     },
     {
       "chapter": "02",
-      "index": 1,
-      "title": "Ch02 Fig10 Production To Direction",
-      "src": "/diagrams/inline/ch02-fig1.png",
-      "sourceFile": "ch02-fig10-production-to-direction.excalidraw"
-    },
-    {
-      "chapter": "02",
       "index": 2,
       "title": "The vibe-coding mode switch",
       "src": "/diagrams/inline/ch02-fig2.png",
@@ -363,6 +356,13 @@
       "title": "Ch02 Fig9 Adults In The Room",
       "src": "/diagrams/inline/ch02-fig9.png",
       "sourceFile": "ch02-fig9-adults-in-the-room.excalidraw"
+    },
+    {
+      "chapter": "02",
+      "index": 10,
+      "title": "Ch02 Fig10 Production To Direction",
+      "src": "/diagrams/inline/ch02-fig10.png",
+      "sourceFile": "ch02-fig10-production-to-direction.excalidraw"
     },
     {
       "chapter": "03",
@@ -429,13 +429,6 @@
     },
     {
       "chapter": "04",
-      "index": 1,
-      "title": "Ch04 Fig10 Control System",
-      "src": "/diagrams/inline/ch04-fig1.png",
-      "sourceFile": "ch04-fig10-control-system.excalidraw"
-    },
-    {
-      "chapter": "04",
       "index": 2,
       "title": "The unit of evaluation",
       "src": "/diagrams/inline/ch04-fig2.png",
@@ -489,6 +482,13 @@
       "title": "Ch04 Fig9 Organizational Control",
       "src": "/diagrams/inline/ch04-fig9.png",
       "sourceFile": "ch04-fig9-organizational-control.excalidraw"
+    },
+    {
+      "chapter": "04",
+      "index": 10,
+      "title": "Ch04 Fig10 Control System",
+      "src": "/diagrams/inline/ch04-fig10.png",
+      "sourceFile": "ch04-fig10-control-system.excalidraw"
     },
     {
       "chapter": "05",
@@ -562,34 +562,6 @@
     },
     {
       "chapter": "06",
-      "index": 1,
-      "title": "Ch06 Fig10 Legacy As Runtime",
-      "src": "/diagrams/inline/ch06-fig1.png",
-      "sourceFile": "ch06-fig10-legacy-as-runtime.excalidraw"
-    },
-    {
-      "chapter": "06",
-      "index": 1,
-      "title": "Ch06 Fig11 Observability Control Plane",
-      "src": "/diagrams/inline/ch06-fig1.png",
-      "sourceFile": "ch06-fig11-observability-control-plane.excalidraw"
-    },
-    {
-      "chapter": "06",
-      "index": 1,
-      "title": "Ch06 Fig12 Isolation Rungs",
-      "src": "/diagrams/inline/ch06-fig1.png",
-      "sourceFile": "ch06-fig12-isolation-rungs.excalidraw"
-    },
-    {
-      "chapter": "06",
-      "index": 1,
-      "title": "Ch06 Fig13 Coordination Substitutes",
-      "src": "/diagrams/inline/ch06-fig1.png",
-      "sourceFile": "ch06-fig13-coordination-substitutes.excalidraw"
-    },
-    {
-      "chapter": "06",
       "index": 2,
       "title": "The human control plane",
       "src": "/diagrams/inline/ch06-fig2.png",
@@ -643,6 +615,34 @@
       "title": "Ch06 Fig9 Two Scarce Resources",
       "src": "/diagrams/inline/ch06-fig9.png",
       "sourceFile": "ch06-fig9-two-scarce-resources.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 10,
+      "title": "Ch06 Fig10 Legacy As Runtime",
+      "src": "/diagrams/inline/ch06-fig10.png",
+      "sourceFile": "ch06-fig10-legacy-as-runtime.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 11,
+      "title": "Ch06 Fig11 Observability Control Plane",
+      "src": "/diagrams/inline/ch06-fig11.png",
+      "sourceFile": "ch06-fig11-observability-control-plane.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 12,
+      "title": "Ch06 Fig12 Isolation Rungs",
+      "src": "/diagrams/inline/ch06-fig12.png",
+      "sourceFile": "ch06-fig12-isolation-rungs.excalidraw"
+    },
+    {
+      "chapter": "06",
+      "index": 13,
+      "title": "Ch06 Fig13 Coordination Substitutes",
+      "src": "/diagrams/inline/ch06-fig13.png",
+      "sourceFile": "ch06-fig13-coordination-substitutes.excalidraw"
     },
     {
       "chapter": "07",

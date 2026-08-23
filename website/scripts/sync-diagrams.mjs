@@ -144,9 +144,16 @@ async function main() {
     if (!m) {
       warn(`no meta entry for inline ${sourceFile} - humanizing title`);
     }
-    const shortId = png.slice(0, 9);
-    const chapter = m?.chapter ?? shortId.slice(2, 4);
-    const index = m?.index ?? Number(shortId.slice(8, 9));
+    // Parse "ch<NN>-fig<N>" properly rather than a fixed-length slice: a
+    // fixed slice(0, 9) truncates any two-digit figure number (fig10+) down
+    // to "fig1", which both mis-copies the PNG (fig10's content overwrites
+    // fig1's destination) and mis-indexes the manifest entry. Filenames
+    // without this exact prefix shape fall back to the meta entry or, if
+    // that's also missing, the file's own two chapter-digit characters.
+    const parsed = png.match(/^ch(\d{2})-fig(\d+)/);
+    const shortId = parsed ? `ch${parsed[1]}-fig${parsed[2]}` : png.slice(0, 9);
+    const chapter = m?.chapter ?? parsed?.[1] ?? shortId.slice(2, 4);
+    const index = m?.index ?? (parsed ? Number(parsed[2]) : Number(shortId.slice(8, 9)));
     const dst = join(publicDiagrams, 'inline', `${shortId}.png`);
     (await copyIfNewer(join(diagramsRoot, 'inline', png), dst)) ? copied++ : kept++;
     manifest.inline.push({
