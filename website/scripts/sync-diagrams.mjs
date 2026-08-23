@@ -1,10 +1,11 @@
 // website/scripts/sync-diagrams.mjs
 // Copies diagrams from ../../diagrams/ into ./public/diagrams/ under an
 // organized layout. Emits public/diagrams/manifest.json from diagram-meta.json.
-// Idempotent: copies only when source is newer than destination.
+// Idempotent: copies only when source content differs from destination content.
 
 import { readFile, writeFile, mkdir, stat, copyFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -37,14 +38,28 @@ async function ensureDir(p) {
   await mkdir(p, { recursive: true });
 }
 
-async function newer(src, dst) {
-  if (!existsSync(dst)) return true;
-  const [a, b] = await Promise.all([stat(src), stat(dst)]);
-  return a.mtimeMs > b.mtimeMs;
+async function fileHash(path) {
+  const buf = await readFile(path);
+  return createHash('sha256').update(buf).digest('hex');
 }
 
-async function copyIfNewer(src, dst) {
-  if (await newer(src, dst)) {
+// Content-based, not mtime-based: a ship-gate review (2026-08-23, see
+// ai-native-org/ledger/verdicts.md) found that mtime comparison let three
+// destination files sit with wrong bytes since 2026-07-31 (be228ee) — a
+// prior bug's mis-copy already existed on disk and "not stale by mtime"
+// meant it was never refreshed even once the manifest was fixed to point
+// at it correctly. Hashing the (typically small, PNG) file on every run
+// costs little next to being wrong silently.
+async function differs(src, dst) {
+  if (!existsSync(dst)) return true;
+  const [srcStat, dstStat] = await Promise.all([stat(src), stat(dst)]);
+  if (srcStat.size !== dstStat.size) return true;
+  const [a, b] = await Promise.all([fileHash(src), fileHash(dst)]);
+  return a !== b;
+}
+
+async function copyIfDifferent(src, dst) {
+  if (await differs(src, dst)) {
     await ensureDir(dirname(dst));
     await copyFile(src, dst);
     return true;
@@ -91,7 +106,7 @@ async function main() {
     }
     const m = meta.overview[sourceFile];
     const dst = join(publicDiagrams, 'overview', `${m.id}.png`);
-    (await copyIfNewer(srcPng, dst)) ? copied++ : kept++;
+    (await copyIfDifferent(srcPng, dst)) ? copied++ : kept++;
     manifest.overview.push({
       id: m.id, title: m.title, caption: m.caption,
       src: `/diagrams/overview/${m.id}.png`, sourceFile,
@@ -108,7 +123,7 @@ async function main() {
     }
     const m = meta.openers[sourceFile];
     const dst = join(publicDiagrams, 'openers', `ch${m.chapter}.png`);
-    (await copyIfNewer(srcPng, dst)) ? copied++ : kept++;
+    (await copyIfDifferent(srcPng, dst)) ? copied++ : kept++;
     manifest.openers.push({
       chapter: m.chapter, title: m.title,
       src: `/diagrams/openers/ch${m.chapter}.png`, sourceFile,
@@ -125,7 +140,7 @@ async function main() {
     }
     const id = m?.id ?? png.replace(/^\d+-/, '').replace('.png', '');
     const dst = join(publicDiagrams, 'concepts', `${id}.png`);
-    (await copyIfNewer(join(diagramsRoot, 'concepts', png), dst)) ? copied++ : kept++;
+    (await copyIfDifferent(join(diagramsRoot, 'concepts', png), dst)) ? copied++ : kept++;
     manifest.concepts.push({
       id,
       title: m?.title ?? humanize(png),
@@ -155,7 +170,7 @@ async function main() {
     const chapter = m?.chapter ?? parsed?.[1] ?? shortId.slice(2, 4);
     const index = m?.index ?? (parsed ? Number(parsed[2]) : Number(shortId.slice(8, 9)));
     const dst = join(publicDiagrams, 'inline', `${shortId}.png`);
-    (await copyIfNewer(join(diagramsRoot, 'inline', png), dst)) ? copied++ : kept++;
+    (await copyIfDifferent(join(diagramsRoot, 'inline', png), dst)) ? copied++ : kept++;
     manifest.inline.push({
       chapter, index,
       title: m?.title ?? humanize(png),
@@ -174,7 +189,7 @@ async function main() {
     }
     const id = m?.id ?? png.replace(/^\d+-/, '').replace('.png', '');
     const dst = join(publicDiagrams, 'maps', `${id}.png`);
-    (await copyIfNewer(join(diagramsRoot, 'maps', png), dst)) ? copied++ : kept++;
+    (await copyIfDifferent(join(diagramsRoot, 'maps', png), dst)) ? copied++ : kept++;
     manifest.maps.push({
       id,
       title: m?.title ?? humanize(png),
@@ -194,7 +209,7 @@ async function main() {
       continue;
     }
     const dst = join(publicDiagrams, 'dividers', `${m.id}.png`);
-    (await copyIfNewer(join(diagramsRoot, 'dividers', png), dst)) ? copied++ : kept++;
+    (await copyIfDifferent(join(diagramsRoot, 'dividers', png), dst)) ? copied++ : kept++;
     manifest.dividers.push({
       id: m.id, act: m.act, title: m.title, chapters: m.chapters, caption: m.caption,
       src: `/diagrams/dividers/${m.id}.png`, sourceFile,
