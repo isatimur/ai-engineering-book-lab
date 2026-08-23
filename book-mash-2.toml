@@ -2,8 +2,7 @@
 chapters_glob = "public/drafting-2/*.md"
 claims_dir = "claims-2/"
 evidence_dir = "evidence-2/"
-# TODO: populate once ≥2 book-2 chapters are drafted (voice judge needs a baseline to compare against)
-voice_baseline_chapters = []
+voice_baseline_chapters = ["Chapter 1 — Training and the Turn to RL.md", "Chapter 7 — Creative, Education, and Games.md"]
 skip_sections = ["Draft note"]
 
 [output]
