@@ -938,7 +938,7 @@
 - **Why it matters:** It names the specific failure that strands demos in the sandbox and gives Chapter 4's "evals are a control system" argument a from-the-trenches confirmation with a number attached. The lesson is that "evaluation is basically specification for your AI system": you define success in business terms and build a system that measures it continuously, and that work comes before — not after — picking a model. It reframes verification as the thing that must be designed first, which is the same move the book makes about specs and harnesses.
 - **Support level:** strong
 - **Supporting sources:**
-  - [[767-ObTPqBGsEbA-85k-burned-on-a-failed-poc-what-actually-gets-agents-to-production-sandipan-bhaumik-databricks|#767 — Sandipan Bhaumik, Databricks]] — across customer projects the recurring killer was that teams debated models but never defined or continuously measured the one thing that mattered to the business; the successful re-do selected the model in week seven of an eight-week PoC, after building the evaluation layer first.
+  - [[767-ObTPqBGsEbA-85k-burned-on-a-failed-poc-what-actually-gets-agents-to-production-sandipan-bhaumik-databr|#767 — Sandipan Bhaumik, Databricks]] — across customer projects the recurring killer was that teams debated models but never defined or continuously measured the one thing that mattered to the business; the successful re-do selected the model in week seven of an eight-week PoC, after building the evaluation layer first.
     - **Anchor:** `ObTPqBGsEbA` 00:03:39.480 → 00:03:42.120 · confidence: high
     - **Quote:** "Second is the evaluation gap."
     - **Anchor:** `ObTPqBGsEbA` 00:07:36.240 → 00:07:38.600 · confidence: high
