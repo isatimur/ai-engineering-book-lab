@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 461
+- Total tagged videos: 462
 
 ## Cross-video synthesis
 
-- This theme appears across 461 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (348), Agent Architecture (328), Models & Inference (21).
+- This theme appears across 462 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (348), Agent Architecture (328), Models & Inference (22).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -473,6 +473,7 @@
 - [[1041-s-aixZYJG4c-the-last-human-code-review-building-trust-in-ai-generated-code-itamar-friedman-qodo|#1041 — The Last Human Code Review: Building Trust in AI-Generated Code — Itamar Friedman, Qodo]]
 - [[1042-bdHaOXZOhcM-prototyping-as-leadership-how-a-cto-ships-with-ai-agents-hursh-agrawal-the-browser-company|#1042 — Prototyping as Leadership: How a CTO Ships with AI Agents — Hursh Agrawal, The Browser Company]]
 - [[1045-FLUoowDJg4I-how-i-automate-my-own-job-at-hugging-face-using-agents-niels-rogge-hugging-face|#1045 — How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face]]
+- [[1054-FvxY8oPoI8o-preferences-over-benchmarks-model-routing-archana-kamath-tyler-gillam-digitalocean|#1054 — Preferences Over Benchmarks: Model Routing — Archana Kamath & Tyler Gillam, DigitalOcean]]
 
 ## Notes
 

@@ -1,14 +1,14 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **1047 videos**
-Transcript status mix: **{'auto_en': 2, 'auto_en_orig': 1039, 'unavailable': 6}**
+Corpus size analyzed: **1058 videos**
+Transcript status mix: **{'auto_en': 2, 'auto_en_orig': 1044, 'unavailable': 11, 'whisper_base_en': 1}**
 
 ## What changed after full-corpus review
 
 The corpus is now strong enough to stop treating the book as a loose trend survey.
 A clearer thesis is emerging: **AI engineering is the discipline of turning model capability into dependable, high-leverage systems through scaffolding, evaluation, context design, and organizational adaptation.**
 
-Across the full 1047-video corpus, four things stand out most clearly:
+Across the full 1058-video corpus, four things stand out most clearly:
 - the book should be anchored in **production practice**, not model novelty
 - **coding agents** are the best narrative entry point, but not the whole book
 - **trust, control, and eval loops** are the hinge between demo and deployment
@@ -16,9 +16,9 @@ Across the full 1047-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 429, `Coding Agents`: 524).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 461).
-- **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 243).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 437, `Coding Agents`: 527).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 462).
+- **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 246).
 - **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 133, `RAG & Retrieval`: 167).
 - **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 26, `Voice & Realtime`: 45).
 

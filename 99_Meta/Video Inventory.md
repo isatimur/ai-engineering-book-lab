@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1047
+Total videos: 1058
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1049,3 +1049,14 @@ Total videos: 1047
 1045. [How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face](https://www.youtube.com/watch?v=FLUoowDJg4I) — `FLUoowDJg4I` — 20:37
 1046. [Your Fine-Tuned Model Is Tech Debt: A 50x ROI House of Cards — Dan Bjornn, Lease End](https://www.youtube.com/watch?v=4loPnxvWWhg) — `4loPnxvWWhg` — 16:39
 1047. [Unlock Agent Autonomy: The Runtime for AI-Native Systems — Tushar Jain, Docker](https://www.youtube.com/watch?v=zaGyGgLW3SM) — `zaGyGgLW3SM` — 22:50
+1048. [Agentic SDLC at Uber — Uday Kiran Medisetty & Adam Huda, Uber](https://www.youtube.com/watch?v=17-YSUHo6Lk) — `17-YSUHo6Lk` — 18:26
+1049. [The Missing Layer: Design Taste in AI Agents — Hassan El Mghari, Together AI](https://www.youtube.com/watch?v=7GMKdpLsxwU) — `7GMKdpLsxwU` — 14:10
+1050. [Building Agents Is Trivial Now, Context Is the Next Frontier — Jeff Ng, Unblocked](https://www.youtube.com/watch?v=HvMyYLTfvhg) — `HvMyYLTfvhg` — 13:22
+1051. [Give the Agent a Budget, Not a Token — Sachin Malhotra, Anthropic](https://www.youtube.com/watch?v=rbjWzZK2LU0) — `rbjWzZK2LU0` — 19:53
+1052. [FinOps for AI Agents: Who Spent All the Tokens? — Tisha Chawla & Susheem Koul, Microsoft](https://www.youtube.com/watch?v=GJX19pNhmSw) — `GJX19pNhmSw` — 21:24
+1053. [What If Your Chip Design Team Moved Like a Single Body? — Abduallah Mohamed, AIDAChip](https://www.youtube.com/watch?v=0I6aoPSRzVc) — `0I6aoPSRzVc` — 16:46
+1054. [Preferences Over Benchmarks: Model Routing — Archana Kamath & Tyler Gillam, DigitalOcean](https://www.youtube.com/watch?v=FvxY8oPoI8o) — `FvxY8oPoI8o` — 15:54
+1055. [Coding Agents Don't Scale Themselves. Neither Do Your Teams. — Patrick Debois, Tessl](https://www.youtube.com/watch?v=zCJtYuqwm7E) — `zCJtYuqwm7E` — 22:06
+1056. [Agent Frameworks Considered Harmful — Rémi Louf, .txt](https://www.youtube.com/watch?v=KHudyx5wW3U) — `KHudyx5wW3U` — 20:29
+1057. [Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo](https://www.youtube.com/watch?v=yqF6XhzbWBk) — `yqF6XhzbWBk` — 19:48
+1058. [The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp](https://www.youtube.com/watch?v=L173Z8DpaJg) — `L173Z8DpaJg` — 20:51

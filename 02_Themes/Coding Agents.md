@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 524
+- Total tagged videos: 527
 
 ## Cross-video synthesis
 
-- This theme appears across 524 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (382), Evals & Reliability (348), MCP & Tooling (73).
+- This theme appears across 527 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (384), Evals & Reliability (348), MCP & Tooling (73).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -536,6 +536,9 @@
 - [[1044-_ehJyfHg1Vk-the-era-of-compound-engineering-kieran-klaassen-every-cora|#1044 — The Era of Compound Engineering — Kieran Klaassen, Every/Cora]]
 - [[1045-FLUoowDJg4I-how-i-automate-my-own-job-at-hugging-face-using-agents-niels-rogge-hugging-face|#1045 — How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face]]
 - [[1047-zaGyGgLW3SM-unlock-agent-autonomy-the-runtime-for-ai-native-systems-tushar-jain-docker|#1047 — Unlock Agent Autonomy: The Runtime for AI-Native Systems — Tushar Jain, Docker]]
+- [[1055-zCJtYuqwm7E-coding-agents-don-t-scale-themselves-neither-do-your-teams-patrick-debois-tessl|#1055 — Coding Agents Don't Scale Themselves. Neither Do Your Teams. — Patrick Debois, Tessl]]
+- [[1056-KHudyx5wW3U-agent-frameworks-considered-harmful-r-mi-louf-txt|#1056 — Agent Frameworks Considered Harmful — Rémi Louf, .txt]]
+- [[1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo|#1057 — Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo]]
 
 ## Notes
 
