@@ -20,6 +20,8 @@ import { MapDetail } from './pages/MapDetail';
 import { chapters, chapterParam } from './data/bookChapters';
 import { SpadeHero } from './pages/SpadeHero';
 import { manifest } from './lib/manifest';
+import { SecondBookReader } from './pages/SecondBookReader';
+import { SecondBookChapterDetail, secondBookChapterStaticPaths } from './pages/SecondBookChapterDetail';
 
 import { SettingsProvider, AppLayout } from './context/SettingsContext';
 
@@ -62,6 +64,15 @@ export const routes: RouteRecord[] = [
         path: 'read/:slug',
         element: <ChapterDetail />,
         getStaticPaths: () => chapters.map((c) => `read/${chapterParam(c)}`),
+      },
+      // Second book — reading + evidence rail only (no diagrams, audiobook,
+      // or judge scores yet; see programs/second_book_website_wiring.md).
+      // Deliberately not linked from nav/Catalogue: direct-URL only for now.
+      { path: 'second-book', element: <SecondBookReader /> },
+      {
+        path: 'second-book/:slug',
+        element: <SecondBookChapterDetail />,
+        getStaticPaths: secondBookChapterStaticPaths,
       },
       { path: 'versions', element: <Versions /> },
       { path: 'quality', element: <Quality /> },

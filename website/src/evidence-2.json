@@ -1,0 +1,1492 @@
+{
+  "1": [
+    {
+      "claim_id": "claims#1",
+      "text": "Reasoning and agency are the same training problem, not two",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "PbHm2qKnu10",
+          "start": "00:00:40.160",
+          "end": "00:00:42.719",
+          "start_seconds": 40,
+          "confidence": "high",
+          "label": "#271 — Will Brown, Prime Intellect",
+          "quote": "the high level thesis of this talk is like no, they're kind of the same thing."
+        },
+        {
+          "video_id": "p1CmPZ2j6Lk",
+          "start": "00:02:33.360",
+          "end": "00:02:37.200",
+          "start_seconds": 153,
+          "confidence": "high",
+          "label": "#80 — Will Hang & Cathy Zhou, OpenAI",
+          "quote": "agent reinforcement fine-tuning or agent RF is the way to do this"
+        },
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:05:27.039",
+          "end": "00:05:28.400",
+          "start_seconds": 327,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "pre-training is not giving any gains"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "Reinforcement learning is the post-training method that carries a model into production",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "X6NShR2ccOg",
+          "start": "00:00:48.800",
+          "end": "00:01:00.200",
+          "start_seconds": 48,
+          "confidence": "high",
+          "label": "#674 — Alessandro Cappelli, Adaptive ML",
+          "quote": "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
+        },
+        {
+          "video_id": "6lTxD_oUjXQ",
+          "start": "00:00:15.280",
+          "end": "00:00:22.199",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#397 — Sylendran Arunagiri, NVIDIA",
+          "quote": "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "Code is the best domain to scale RL, because its rewards are automatically verifiable",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:16:01.519",
+          "end": "00:16:03.279",
+          "start_seconds": 961,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "autonomous coding as the root node problem"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "\"You probably don't need fine-tuning\" is a legitimate default — until you do",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "-hYqt8M9u_M",
+          "start": "00:00:24.000",
+          "end": "00:00:32.599",
+          "start_seconds": 24,
+          "confidence": "medium",
+          "label": "#482 — Kyle Corbitt",
+          "quote": "the title of my talk is that you probably don't need fine tuning this is an awkward title um given that I am doing a fine"
+        },
+        {
+          "video_id": "cXPYtkosXG4",
+          "start": "00:13:49.079",
+          "end": "00:13:56.040",
+          "start_seconds": 829,
+          "confidence": "high",
+          "label": "#598 — Abi Aryan",
+          "quote": "we have three different methods to be able to do domain adaptation we have prompting we have Rags we have fine tuning"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "For reasoning quality, the data recipe beats model size",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "liG97YXaTSA",
+          "start": "00:00:19.840",
+          "end": "00:00:25.199",
+          "start_seconds": 19,
+          "confidence": "high",
+          "label": "#233 — Ryan Marten, Bespoke Labs",
+          "quote": "Open Thoughts, which is our project to create the best open-source reasoning data sets."
+        },
+        {
+          "video_id": "i2vBaFzCEJw",
+          "start": "00:01:37.479",
+          "end": "00:01:42.159",
+          "start_seconds": 97,
+          "confidence": "high",
+          "label": "#543 — Chang She & Noah Shpak",
+          "quote": "you should really care about what you're training on and you should care for it by giving it a nice format"
+        },
+        {
+          "video_id": "6lTxD_oUjXQ",
+          "start": "00:00:15.280",
+          "end": "00:00:22.199",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#397 — Sylendran Arunagiri, NVIDIA",
+          "quote": "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#6",
+      "text": "RL's real cost is operational, not conceptual",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "X6NShR2ccOg",
+          "start": "00:14:58.120",
+          "end": "00:15:02.520",
+          "start_seconds": 898,
+          "confidence": "high",
+          "label": "#674 — Alessandro Cappelli, Adaptive ML",
+          "quote": "requires orchestrating not one, but four large language models at the same time."
+        },
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:13:56.639",
+          "end": "00:13:59.839",
+          "start_seconds": 836,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "you have to keep four copies of uh different models."
+        },
+        {
+          "video_id": "tQTB4MU_z8w",
+          "start": "00:07:29.000",
+          "end": "00:07:31.599",
+          "start_seconds": 449,
+          "confidence": "high",
+          "label": "#475 — Crusoe",
+          "quote": "our rail optimized infin band cluster networking"
+        },
+        {
+          "video_id": "OkEGJ5G3foU",
+          "start": "00:00:27.599",
+          "end": "00:00:31.199",
+          "start_seconds": 27,
+          "confidence": "high",
+          "label": "#230 — Daniel Han",
+          "quote": "today we're going to talk about the deep dive into RL kernels, agents, and quantization."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "Frontier progress is bottleneck-hunting, not broad improvement",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "zZsTVBXcbow",
+          "start": "00:03:57.200",
+          "end": "00:04:01.200",
+          "start_seconds": 237,
+          "confidence": "high",
+          "label": "#13 — Raia Hadsell, DeepMind",
+          "quote": "our approach we look for root nodes. You know we're not going to waste time on the leaves."
+        },
+        {
+          "video_id": "8EQo4J2BWKw",
+          "start": "00:00:48.879",
+          "end": "00:00:51.039",
+          "start_seconds": 48,
+          "confidence": "high",
+          "label": "#267 — Jack Rae, DeepMind",
+          "quote": "unblocking bottlenecks towards intelligence."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "Benchmarks are cultural artifacts that steer the whole field",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "W3khHzajE04",
+          "start": "00:00:24.880",
+          "end": "00:00:28.400",
+          "start_seconds": 24,
+          "confidence": "high",
+          "label": "#253 — Alex Duffy, Every.to",
+          "quote": "benchmarks are just memes that shape the most powerful tool ever created."
+        },
+        {
+          "video_id": "mQ7_Zje7WKE",
+          "start": "00:11:18.240",
+          "end": "00:11:22.959",
+          "start_seconds": 678,
+          "confidence": "high",
+          "label": "#137 — Barr Yaron, Amplify",
+          "quote": "number one most painful thing about AI engineering today? And evaluation topped"
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "claim_id": "claims#1",
+      "text": "Reasoning and agency are the same training problem, not two",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "PbHm2qKnu10",
+          "start": "00:00:40.160",
+          "end": "00:00:42.719",
+          "start_seconds": 40,
+          "confidence": "high",
+          "label": "#271 — Will Brown, Prime Intellect",
+          "quote": "the high level thesis of this talk is like no, they're kind of the same thing."
+        },
+        {
+          "video_id": "p1CmPZ2j6Lk",
+          "start": "00:02:33.360",
+          "end": "00:02:37.200",
+          "start_seconds": 153,
+          "confidence": "high",
+          "label": "#80 — Will Hang & Cathy Zhou, OpenAI",
+          "quote": "agent reinforcement fine-tuning or agent RF is the way to do this"
+        },
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:05:27.039",
+          "end": "00:05:28.400",
+          "start_seconds": 327,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "pre-training is not giving any gains"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "For reasoning quality, the data recipe beats model size",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "liG97YXaTSA",
+          "start": "00:00:19.840",
+          "end": "00:00:25.199",
+          "start_seconds": 19,
+          "confidence": "high",
+          "label": "#233 — Ryan Marten, Bespoke Labs",
+          "quote": "Open Thoughts, which is our project to create the best open-source reasoning data sets."
+        },
+        {
+          "video_id": "i2vBaFzCEJw",
+          "start": "00:01:37.479",
+          "end": "00:01:42.159",
+          "start_seconds": 97,
+          "confidence": "high",
+          "label": "#543 — Chang She & Noah Shpak",
+          "quote": "you should really care about what you're training on and you should care for it by giving it a nice format"
+        },
+        {
+          "video_id": "6lTxD_oUjXQ",
+          "start": "00:00:15.280",
+          "end": "00:00:22.199",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#397 — Sylendran Arunagiri, NVIDIA",
+          "quote": "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#7",
+      "text": "Inference, not training, is the largest and most contested market in AI software",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "84Vtz2IL1Ug",
+          "start": "00:00:52.480",
+          "end": "00:00:54.960",
+          "start_seconds": 52,
+          "confidence": "high",
+          "label": "#335 — Alex Atallah, OpenRouter",
+          "quote": "inference might be the largest market ever in software"
+        },
+        {
+          "video_id": "DeFF3J8T5Pk",
+          "start": "00:01:32.560",
+          "end": "00:01:34.479",
+          "start_seconds": 92,
+          "confidence": "high",
+          "label": "#316 — Charles Frye, Modal",
+          "quote": "possible with Open Weights models where they weren't before."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#11",
+      "text": "The compute substrate is a hard constraint — and now a geopolitical variable",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "y-UGrYbJsJk",
+          "start": "00:05:09.199",
+          "end": "00:05:12.720",
+          "start_seconds": 309,
+          "confidence": "high",
+          "label": "#228 — Charles Frye, Modal",
+          "quote": "they optimize for math bandwidth over memory bandwidth."
+        },
+        {
+          "video_id": "3j1dHivahFQ",
+          "start": "00:00:30.039",
+          "end": "00:00:41.160",
+          "start_seconds": 30,
+          "confidence": "high",
+          "label": "#402 — Paul Gilbert, Arista Networks",
+          "quote": "what we do is a plumbing uh so I'm not going to talk about agents but more kind of how you train uh models what the infrastructure looks like and how you do inferencing on on the infrastructure"
+        },
+        {
+          "video_id": "Zz4QjZsYWK0",
+          "start": "00:02:37.200",
+          "end": "00:02:43.200",
+          "start_seconds": 157,
+          "confidence": "high",
+          "label": "#345 — Dylan Patel, SemiAnalysis",
+          "quote": "what's interesting about the geopolitics of this is that despite the fact that Huawei is a sanctioned entity, China is a sanctioned country,"
+        },
+        {
+          "video_id": "gADhNzFjGeI",
+          "start": "00:00:17.880",
+          "end": "00:00:22.439",
+          "start_seconds": 17,
+          "confidence": "medium",
+          "label": "#547 — Sunny Madra, Groq",
+          "quote": "25 years ago we crossed the 1 gigahertz speed barrier uh in"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#13",
+      "text": "The open-model gap has largely closed",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "wJwTlvb_TSo",
+          "start": "00:00:23.640",
+          "end": "00:00:25.640",
+          "start_seconds": 23,
+          "confidence": "high",
+          "label": "#439 — Eugene Cheah, Featherless.ai",
+          "quote": "the first open source model to catch up and surpass GPD"
+        },
+        {
+          "video_id": "3WV1vT0B0cg",
+          "start": "00:08:08.720",
+          "end": "00:08:17.360",
+          "start_seconds": 488,
+          "confidence": "high",
+          "label": "#189 — Amir Haghighat, Baseten",
+          "quote": "not just use an API based generic model u but but inhouse it and do better than than what they can uh what they can do with just uh API based models."
+        },
+        {
+          "video_id": "lY1iFbDPRlw",
+          "start": "00:02:02.000",
+          "end": "00:02:05.439",
+          "start_seconds": 122,
+          "confidence": "high",
+          "label": "#74 — Olive Song, MiniMax",
+          "quote": "designed specifically for coding workplace agentic tasks."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#14",
+      "text": "Perceived \"stagnation\" is a training-budget story, not a ceiling",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "gFyBdBm0AGo",
+          "start": "00:00:33.559",
+          "end": "00:00:38.680",
+          "start_seconds": 33,
+          "confidence": "high",
+          "label": "#476 — Dylan Patel, SemiAnalysis",
+          "quote": "uh models that we're using today are largely the same as the models that were trained in 2022"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "Frontier progress is bottleneck-hunting, not broad improvement",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "zZsTVBXcbow",
+          "start": "00:03:57.200",
+          "end": "00:04:01.200",
+          "start_seconds": 237,
+          "confidence": "high",
+          "label": "#13 — Raia Hadsell, DeepMind",
+          "quote": "our approach we look for root nodes. You know we're not going to waste time on the leaves."
+        },
+        {
+          "video_id": "8EQo4J2BWKw",
+          "start": "00:00:48.879",
+          "end": "00:00:51.039",
+          "start_seconds": 48,
+          "confidence": "high",
+          "label": "#267 — Jack Rae, DeepMind",
+          "quote": "unblocking bottlenecks towards intelligence."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#16",
+      "text": "Code is where labs learn to model computation, not just imitate it",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "sYgE4ppDFOQ",
+          "start": "00:00:44.160",
+          "end": "00:00:47.200",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#67 — Jacob Kahn, FAIR Meta",
+          "quote": "Our primary goal is to build models that reason, plan and make decisions."
+        },
+        {
+          "video_id": "OGCG_QkCcZo",
+          "start": "00:00:30.720",
+          "end": "00:00:34.960",
+          "start_seconds": 30,
+          "confidence": "high",
+          "label": "#49 — Jason Warner & Eiso Kant, Poolside",
+          "quote": "Poolside exists to close the gap between models and human intelligence."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "Benchmarks are cultural artifacts that steer the whole field",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "W3khHzajE04",
+          "start": "00:00:24.880",
+          "end": "00:00:28.400",
+          "start_seconds": 24,
+          "confidence": "high",
+          "label": "#253 — Alex Duffy, Every.to",
+          "quote": "benchmarks are just memes that shape the most powerful tool ever created."
+        },
+        {
+          "video_id": "mQ7_Zje7WKE",
+          "start": "00:11:18.240",
+          "end": "00:11:22.959",
+          "start_seconds": 678,
+          "confidence": "high",
+          "label": "#137 — Barr Yaron, Amplify",
+          "quote": "number one most painful thing about AI engineering today? And evaluation topped"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#18",
+      "text": "Open source is a strategy, not charity",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "_gVFUEdhCyI",
+          "start": "00:00:34.320",
+          "end": "00:00:38.680",
+          "start_seconds": 34,
+          "confidence": "medium",
+          "label": "#9 — Omar Sanseviero, DeepMind",
+          "quote": "you can take, you can download, you can run in your own infrastructure, your own devices."
+        },
+        {
+          "video_id": "AUuktOQPWYg",
+          "start": "00:00:31.480",
+          "end": "00:00:34.680",
+          "start_seconds": 31,
+          "confidence": "high",
+          "label": "#528 — Devendra Chaplot, Mistral AI",
+          "quote": "why we do open source and how we do open source"
+        },
+        {
+          "video_id": "Xmkl27AM2VQ",
+          "start": "00:00:36.600",
+          "end": "00:00:42.760",
+          "start_seconds": 36,
+          "confidence": "high",
+          "label": "#480 — Kathleen Kenealy, DeepMind",
+          "quote": "building something to empower and accelerate the amazing work being done by the open source community"
+        },
+        {
+          "video_id": "b0xlsQ_6wUQ",
+          "start": "00:00:27.760",
+          "end": "00:00:30.720",
+          "start_seconds": 27,
+          "confidence": "high",
+          "label": "#400 — Junyang Lin, Alibaba Qwen",
+          "quote": "we have a dream of building a journalist model and generalist agent"
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "claim_id": "claims#2",
+      "text": "Reinforcement learning is the post-training method that carries a model into production",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "X6NShR2ccOg",
+          "start": "00:00:48.800",
+          "end": "00:01:00.200",
+          "start_seconds": 48,
+          "confidence": "high",
+          "label": "#674 — Alessandro Cappelli, Adaptive ML",
+          "quote": "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
+        },
+        {
+          "video_id": "6lTxD_oUjXQ",
+          "start": "00:00:15.280",
+          "end": "00:00:22.199",
+          "start_seconds": 15,
+          "confidence": "high",
+          "label": "#397 — Sylendran Arunagiri, NVIDIA",
+          "quote": "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#6",
+      "text": "RL's real cost is operational, not conceptual",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "X6NShR2ccOg",
+          "start": "00:14:58.120",
+          "end": "00:15:02.520",
+          "start_seconds": 898,
+          "confidence": "high",
+          "label": "#674 — Alessandro Cappelli, Adaptive ML",
+          "quote": "requires orchestrating not one, but four large language models at the same time."
+        },
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:13:56.639",
+          "end": "00:13:59.839",
+          "start_seconds": 836,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "you have to keep four copies of uh different models."
+        },
+        {
+          "video_id": "tQTB4MU_z8w",
+          "start": "00:07:29.000",
+          "end": "00:07:31.599",
+          "start_seconds": 449,
+          "confidence": "high",
+          "label": "#475 — Crusoe",
+          "quote": "our rail optimized infin band cluster networking"
+        },
+        {
+          "video_id": "OkEGJ5G3foU",
+          "start": "00:00:27.599",
+          "end": "00:00:31.199",
+          "start_seconds": 27,
+          "confidence": "high",
+          "label": "#230 — Daniel Han",
+          "quote": "today we're going to talk about the deep dive into RL kernels, agents, and quantization."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#7",
+      "text": "Inference, not training, is the largest and most contested market in AI software",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "84Vtz2IL1Ug",
+          "start": "00:00:52.480",
+          "end": "00:00:54.960",
+          "start_seconds": 52,
+          "confidence": "high",
+          "label": "#335 — Alex Atallah, OpenRouter",
+          "quote": "inference might be the largest market ever in software"
+        },
+        {
+          "video_id": "DeFF3J8T5Pk",
+          "start": "00:01:32.560",
+          "end": "00:01:34.479",
+          "start_seconds": 92,
+          "confidence": "high",
+          "label": "#316 — Charles Frye, Modal",
+          "quote": "possible with Open Weights models where they weren't before."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#8",
+      "text": "A model's speed and cost are a system property, not a model property",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Y2qc0UhDSnc",
+          "start": "00:00:24.880",
+          "end": "00:00:34.880",
+          "start_seconds": 24,
+          "confidence": "high",
+          "label": "#141 — Kyle Kranen, NVIDIA",
+          "quote": "a good model and a good system that takes into account the actual constraints for what you need from your deployment is actually key to the success of both your deployment and the application"
+        },
+        {
+          "video_id": "9tvJ_GYJA-o",
+          "start": "00:00:58.320",
+          "end": "00:01:06.960",
+          "start_seconds": 58,
+          "confidence": "high",
+          "label": "#514 — Mark Moyou, NVIDIA",
+          "quote": "controlling the cost of a deployment cuz that's often times the thing that's going to really prevent you from taking this taking this to any meaningful scale"
+        },
+        {
+          "video_id": "C1CXwRYbwuQ",
+          "start": "00:03:48.200",
+          "end": "00:03:50.879",
+          "start_seconds": 228,
+          "confidence": "high",
+          "label": "#548 — Dmytro Dzhulgakov, Fireworks",
+          "quote": "quality while being you know up to 10 times faster"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#9",
+      "text": "On-device inference is crossing from demo to default",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "zTLJNHj0DeQ",
+          "start": "00:00:54.080",
+          "end": "00:01:00.800",
+          "start_seconds": 54,
+          "confidence": "high",
+          "label": "#670 — Prince Canuma, Neywa Labs",
+          "quote": "I want to convince you today to offload some of that subscription completely on device and then all you need to pay is your energy bill."
+        },
+        {
+          "video_id": "a2muGkT4WD4",
+          "start": "00:05:45.920",
+          "end": "00:05:51.160",
+          "start_seconds": 345,
+          "confidence": "high",
+          "label": "#007 — Adrien Grondin, Locally AI",
+          "quote": "it can run easily at 40 token 40 token per second."
+        },
+        {
+          "video_id": "-mRi-B3t6fA",
+          "start": "00:01:20.400",
+          "end": "00:01:26.880",
+          "start_seconds": 80,
+          "confidence": "high",
+          "label": "#582 — Stephen Hood & Justine Tunney, Llamafile",
+          "quote": "LL file is an open source project from Mozilla that has the goal of democratizing access to AI"
+        },
+        {
+          "video_id": "l614N5W60ls",
+          "start": "00:00:55.680",
+          "end": "00:01:03.440",
+          "start_seconds": 55,
+          "confidence": "high",
+          "label": "#307 — Emma Ning, Microsoft",
+          "quote": "how does cloud AI work in environments with low network bandwidth or even offline access?"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#10",
+      "text": "Compilers and generated kernels are automating the expert layer of inference optimization",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "0uj9lMI-sIo",
+          "start": "00:17:27.839",
+          "end": "00:17:30.880",
+          "start_seconds": 1047,
+          "confidence": "high",
+          "label": "#388 — Joe Fioti, Luminal",
+          "quote": "the fastest one in this case just happens to be flash attention."
+        },
+        {
+          "video_id": "6guQG_tGt0o",
+          "start": "00:08:51.839",
+          "end": "00:08:55.839",
+          "start_seconds": 531,
+          "confidence": "high",
+          "label": "#068 — Natalie Serrino, Gimlet Labs",
+          "quote": "this result achieved a 40% speed up over the baseline on the M4."
+        },
+        {
+          "video_id": "q2nHsJVy4FE",
+          "start": "00:00:38.480",
+          "end": "00:00:43.120",
+          "start_seconds": 38,
+          "confidence": "high",
+          "label": "#097 — Yusuf Olokoba, Muna",
+          "quote": "How do I use more models in more places without having to rebuild or extend"
+        },
+        {
+          "video_id": "7TnkqfX84gI",
+          "start": "00:05:16.400",
+          "end": "00:05:19.199",
+          "start_seconds": 316,
+          "confidence": "high",
+          "label": "#578 — Chris Lattner, Modular",
+          "quote": "max is two things one is an AI framework"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#11",
+      "text": "The compute substrate is a hard constraint — and now a geopolitical variable",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "y-UGrYbJsJk",
+          "start": "00:05:09.199",
+          "end": "00:05:12.720",
+          "start_seconds": 309,
+          "confidence": "high",
+          "label": "#228 — Charles Frye, Modal",
+          "quote": "they optimize for math bandwidth over memory bandwidth."
+        },
+        {
+          "video_id": "3j1dHivahFQ",
+          "start": "00:00:30.039",
+          "end": "00:00:41.160",
+          "start_seconds": 30,
+          "confidence": "high",
+          "label": "#402 — Paul Gilbert, Arista Networks",
+          "quote": "what we do is a plumbing uh so I'm not going to talk about agents but more kind of how you train uh models what the infrastructure looks like and how you do inferencing on on the infrastructure"
+        },
+        {
+          "video_id": "Zz4QjZsYWK0",
+          "start": "00:02:37.200",
+          "end": "00:02:43.200",
+          "start_seconds": 157,
+          "confidence": "high",
+          "label": "#345 — Dylan Patel, SemiAnalysis",
+          "quote": "what's interesting about the geopolitics of this is that despite the fact that Huawei is a sanctioned entity, China is a sanctioned country,"
+        },
+        {
+          "video_id": "gADhNzFjGeI",
+          "start": "00:00:17.880",
+          "end": "00:00:22.439",
+          "start_seconds": 17,
+          "confidence": "medium",
+          "label": "#547 — Sunny Madra, Groq",
+          "quote": "25 years ago we crossed the 1 gigahertz speed barrier uh in"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Trust and confidentiality are becoming first-class inference requirements",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "A0PxE39xaMc",
+          "start": "00:00:09.519",
+          "end": "00:00:23.920",
+          "start_seconds": 9,
+          "confidence": "high",
+          "label": "#361 — Mike Bursell",
+          "quote": "AI is transforming everything. Healthcare, finance, automation, digital marketing. But one thing holds it back, and that's trust. How do you run models on sensitive data without handing it over?"
+        },
+        {
+          "video_id": "6Tpm4m1YxHk",
+          "start": "00:00:29.119",
+          "end": "00:00:41.120",
+          "start_seconds": 29,
+          "confidence": "high",
+          "label": "#211 — Sahil Yadav & Hariharan Ganesan, Telemetrak",
+          "quote": "over the past 10 years we have deployed AI in various industries from from health um monitoring to industrial IoT to uh network automation in telecom networks"
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "claim_id": "claims#3",
+      "text": "Code is the best domain to scale RL, because its rewards are automatically verifiable",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:16:01.519",
+          "end": "00:16:03.279",
+          "start_seconds": 961,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "autonomous coding as the root node problem"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#9",
+      "text": "On-device inference is crossing from demo to default",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "zTLJNHj0DeQ",
+          "start": "00:00:54.080",
+          "end": "00:01:00.800",
+          "start_seconds": 54,
+          "confidence": "high",
+          "label": "#670 — Prince Canuma, Neywa Labs",
+          "quote": "I want to convince you today to offload some of that subscription completely on device and then all you need to pay is your energy bill."
+        },
+        {
+          "video_id": "a2muGkT4WD4",
+          "start": "00:05:45.920",
+          "end": "00:05:51.160",
+          "start_seconds": 345,
+          "confidence": "high",
+          "label": "#007 — Adrien Grondin, Locally AI",
+          "quote": "it can run easily at 40 token 40 token per second."
+        },
+        {
+          "video_id": "-mRi-B3t6fA",
+          "start": "00:01:20.400",
+          "end": "00:01:26.880",
+          "start_seconds": 80,
+          "confidence": "high",
+          "label": "#582 — Stephen Hood & Justine Tunney, Llamafile",
+          "quote": "LL file is an open source project from Mozilla that has the goal of democratizing access to AI"
+        },
+        {
+          "video_id": "l614N5W60ls",
+          "start": "00:00:55.680",
+          "end": "00:01:03.440",
+          "start_seconds": 55,
+          "confidence": "high",
+          "label": "#307 — Emma Ning, Microsoft",
+          "quote": "how does cloud AI work in environments with low network bandwidth or even offline access?"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#19",
+      "text": "Non-text model architectures are converging on the LLM template by tokenization",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:08:58.640",
+          "end": "00:09:06.560",
+          "start_seconds": 538,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "We're trying to uh transform the problem as a language modeling problem because humanity is extremely good at modeling sequences of token."
+        },
+        {
+          "video_id": "CXsbjcrf_5g",
+          "start": "00:00:37.360",
+          "end": "00:00:41.680",
+          "start_seconds": 37,
+          "confidence": "high",
+          "label": "#385 — Ronan McGovern",
+          "quote": "You should be able uh to understand how token-based texttospech models work."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#20",
+      "text": "Recommendation may be the largest LLM application of all — bigger than search",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LxQsQ3vZDqo",
+          "start": "00:00:38.000",
+          "end": "00:00:42.879",
+          "start_seconds": 38,
+          "confidence": "high",
+          "label": "#245 — Devansh Tandon, YouTube",
+          "quote": "the application of LLMs to recommendations is going to be a bigger consumer application than search."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#21",
+      "text": "The consolidation move is \"one foundation model for all of it\"",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "AbZ4IYGbfpQ",
+          "start": "00:00:26.400",
+          "end": "00:00:29.920",
+          "start_seconds": 26,
+          "confidence": "high",
+          "label": "#247 — Yesu Feng, Netflix",
+          "quote": "to use one foundation model to cover all the recommendation use cases."
+        },
+        {
+          "video_id": "LxQsQ3vZDqo",
+          "start": "00:02:35.360",
+          "end": "00:02:39.360",
+          "start_seconds": 155,
+          "confidence": "high",
+          "label": "#245 — Devansh Tandon, YouTube",
+          "quote": "how can we rethink this recommendation system on top of Gemini,"
+        },
+        {
+          "video_id": "U0S6CfzAY5c",
+          "start": "00:17:35.280",
+          "end": "00:17:37.840",
+          "start_seconds": 1055,
+          "confidence": "high",
+          "label": "#248 — Hamed & Maziar, LinkedIn",
+          "quote": "We tried we were trying to see if you can actually make it a foundation model"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#22",
+      "text": "For live modalities, latency is a model-architecture constraint, not just a serving cost",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:02:45.920",
+          "end": "00:02:53.920",
+          "start_seconds": 165,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "it's also very important that as soon as you have the first audio packets, you you you start to um to voice them out."
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:05:07.840",
+          "end": "00:05:14.320",
+          "start_seconds": 307,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "The latency is still quite high. The ability to handle simultaneous speaking between the user and the system is not there."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#23",
+      "text": "Generative media is productized as an orchestration stack, not a single model",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "P370D8Kmlkw",
+          "start": "00:00:15.120",
+          "end": "00:00:20.880",
+          "start_seconds": 15,
+          "confidence": "medium",
+          "label": "#244 — Gorkem Yurtseven, fal",
+          "quote": "It's so nice to see a generative media track in the AI conference, AI engineer conference"
+        },
+        {
+          "video_id": "BcWFc3H7Khg",
+          "start": "00:11:46.160",
+          "end": "00:11:52.880",
+          "start_seconds": 706,
+          "confidence": "high",
+          "label": "#692 — Guillaume Vernade, DeepMind",
+          "quote": "basically we are going to use uh Gemini to come up with prompts and then the gen media to create uh the content for the prompts"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#24",
+      "text": "Embodiment is the frontier's next modality, expressed as a foundation model",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "iS9YFW28XyM",
+          "start": "00:06:34.000",
+          "end": "00:06:41.600",
+          "start_seconds": 394,
+          "confidence": "high",
+          "label": "#174 — Jyh-Jing Hwang, Waymo",
+          "quote": "we want to have a more generalizable time driving system by leveraging Gemini or other multimodal large language models."
+        },
+        {
+          "video_id": "mWKYvT9Lc50",
+          "start": "00:00:28.080",
+          "end": "00:00:30.080",
+          "start_seconds": 28,
+          "confidence": "high",
+          "label": "#165 — Annika & Aastha, NVIDIA",
+          "quote": "how you go about building a robotics foundation model."
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "claim_id": "claims#24",
+      "text": "Embodiment is the frontier's next modality, expressed as a foundation model",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "iS9YFW28XyM",
+          "start": "00:06:34.000",
+          "end": "00:06:41.600",
+          "start_seconds": 394,
+          "confidence": "high",
+          "label": "#174 — Jyh-Jing Hwang, Waymo",
+          "quote": "we want to have a more generalizable time driving system by leveraging Gemini or other multimodal large language models."
+        },
+        {
+          "video_id": "mWKYvT9Lc50",
+          "start": "00:00:28.080",
+          "end": "00:00:30.080",
+          "start_seconds": 28,
+          "confidence": "high",
+          "label": "#165 — Annika & Aastha, NVIDIA",
+          "quote": "how you go about building a robotics foundation model."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#25",
+      "text": "The frontier bet in robotics is one general model for any robot, any task",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "cGLa8DsOYdk",
+          "start": "00:00:21.520",
+          "end": "00:00:25.600",
+          "start_seconds": 21,
+          "confidence": "high",
+          "label": "#175 — Quan Vuong & Jost Tobias Springenberg, Physical Intelligence",
+          "quote": "our mission is to make a model that can control any robot to do any task."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#26",
+      "text": "In embodiment, the bug is usually the system, not the policy",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "bCGbuyv8PMk",
+          "start": "00:00:47.360",
+          "end": "00:00:50.320",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#110 — Rishabh Garg, Tesla Optimus",
+          "quote": "the issue will look like it's the policy but it's actually the software system"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#27",
+      "text": "Physical data breaks agents that handle text fine",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "bUJgirn4_yc",
+          "start": "00:00:45.480",
+          "end": "00:00:50.400",
+          "start_seconds": 45,
+          "confidence": "high",
+          "label": "#890 — Dmitry Petrov, DataChain",
+          "quote": "accuracy for data projects on their agents is only 21%"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#28",
+      "text": "A general-purpose robot can be trained into a skilled physical trade that transfers",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "MBWGiWJDlSo",
+          "start": "00:00:30.560",
+          "end": "00:00:33.840",
+          "start_seconds": 30,
+          "confidence": "high",
+          "label": "#229 — Nikhil Abraham, CloudChef",
+          "quote": "it's now a professional chef that's working in various different kitchens"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#29",
+      "text": "Broad embodiment depends on tiny models, not frontier ones",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "hacEQHHhu2Q",
+          "start": "00:00:25.359",
+          "end": "00:00:27.039",
+          "start_seconds": 25,
+          "confidence": "high",
+          "label": "#936 — Cormac Brick, Google",
+          "quote": "we are going to need tiny models."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#30",
+      "text": "Cheap, open, hackable robot hardware is starting to follow open models' path",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "BS92RdBvI90",
+          "start": "00:00:19.279",
+          "end": "00:00:22.480",
+          "start_seconds": 19,
+          "confidence": "high",
+          "label": "#276 — JX Mo, K-Scale Labs",
+          "quote": "We build opensource human robots from hardware to software"
+        },
+        {
+          "video_id": "0jeZfjJMfmo",
+          "start": "00:05:58.440",
+          "end": "00:05:58.760",
+          "start_seconds": 358,
+          "confidence": "high",
+          "label": "#725 — Andres Marafioti, Hugging Face",
+          "quote": "It's very hackable."
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "claim_id": "claims#31",
+      "text": "In high-stakes domains, evaluation is the product, not a checkpoint",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "cZ5ZJy19KMo",
+          "start": "00:00:22.800",
+          "end": "00:00:26.519",
+          "start_seconds": 22,
+          "confidence": "high",
+          "label": "#446 — Anterior",
+          "quote": "real-time reference-free evals can be the special source that enables customer trust"
+        },
+        {
+          "video_id": "O72p-rBb2bA",
+          "start": "00:06:42.639",
+          "end": "00:06:43.759",
+          "start_seconds": 402,
+          "confidence": "high",
+          "label": "#938 — Reed & Revere, SonderMind",
+          "quote": "more correct triggers."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#32",
+      "text": "When a confident wrong answer carries unbounded cost, a general model's grounding ceiling is disqualifying",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "pPvoLjYj_mY",
+          "start": "00:10:23.760",
+          "end": "00:10:27.399",
+          "start_seconds": 623,
+          "confidence": "high",
+          "label": "#406 — Alshikh, Writer",
+          "quote": "81% sounds a great number if you think in the reality"
+        },
+        {
+          "video_id": "of-SV35YqvY",
+          "start": "00:03:08.120",
+          "end": "00:03:09.599",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#473 — Pekelis, Gradient",
+          "quote": "they kind of apply across uh Industries"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#33",
+      "text": "\"Trust, but verify\" becomes an architecture, not a slogan",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "MWTJIAwAAnk",
+          "start": "00:09:44.040",
+          "end": "00:09:45.360",
+          "start_seconds": 584,
+          "confidence": "high",
+          "label": "#423 — Conover, Brightwave",
+          "quote": "primed to be credulous"
+        },
+        {
+          "video_id": "W1MiZChnkfA",
+          "start": "00:04:56.800",
+          "end": "00:05:01.440",
+          "start_seconds": 296,
+          "confidence": "high",
+          "label": "#154 — Qi (Harvey) & She (LanceDB)",
+          "quote": "investing in eval driven development is a huge huge key to building these systems"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#34",
+      "text": "In healthcare, the value and the failure are in the broken back office, not the clinical frontier",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "TquUsN1QsWs",
+          "start": "00:00:37.680",
+          "end": "00:00:39.600",
+          "start_seconds": 37,
+          "confidence": "high",
+          "label": "#187 — Wan, Ensemble Health",
+          "quote": "Almost half the hospitals in the country are losing money."
+        },
+        {
+          "video_id": "_cVfz88_j7A",
+          "start": "00:00:18.000",
+          "end": "00:00:23.840",
+          "start_seconds": 18,
+          "confidence": "medium",
+          "label": "#883 — Shankhdhar, Risa Labs",
+          "quote": "is prior authorizations where file for authorizations for drugs for cancer patients."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#35",
+      "text": "Compliance and confidentiality are design inputs from day one, not add-ons",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "TnSGx36Ly0Q",
+          "start": "00:08:13.440",
+          "end": "00:08:17.120",
+          "start_seconds": 493,
+          "confidence": "high",
+          "label": "#86 — Myshatyn, Los Alamos",
+          "quote": "You have your sock 2 report. I have NIST 853."
+        },
+        {
+          "video_id": "IAdZxqjZ45U",
+          "start": "00:05:01.880",
+          "end": "00:05:10.240",
+          "start_seconds": 301,
+          "confidence": "high",
+          "label": "#469 — Morina, AXA",
+          "quote": "our internal gen platform gets like more usable every day and like especially not comprising our data security"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#36",
+      "text": "At regulatory scale, evaluation must run continuously in production",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "cZ5ZJy19KMo",
+          "start": "00:05:21.880",
+          "end": "00:05:25.199",
+          "start_seconds": 321,
+          "confidence": "high",
+          "label": "#446 — Anterior",
+          "quote": "relying only on offline evals is playing with fire"
+        },
+        {
+          "video_id": "_zl_zimMRak",
+          "start": "00:09:28.399",
+          "end": "00:09:34.080",
+          "start_seconds": 568,
+          "confidence": "high",
+          "label": "#197 — Singh, Intuit",
+          "quote": "we made the move from uh uh anthropic cloud instant to anthropic cloud haiku"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "In high-stakes automation, a human stays in the loop through an explicit, staffed escalation path",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "sn79oS4MZFI",
+          "start": "01:10:35.360",
+          "end": "01:10:36.560",
+          "start_seconds": 4235,
+          "confidence": "high",
+          "label": "#339 — Mason",
+          "quote": "call 911, go to your doctor,"
+        },
+        {
+          "video_id": "cZ5ZJy19KMo",
+          "start": "00:09:30.560",
+          "end": "00:09:32.480",
+          "start_seconds": 570,
+          "confidence": "high",
+          "label": "#446 — Anterior",
+          "quote": "give it to an on call clinician to review it"
+        },
+        {
+          "video_id": "TquUsN1QsWs",
+          "start": "00:14:21.600",
+          "end": "00:14:30.639",
+          "start_seconds": 861,
+          "confidence": "high",
+          "label": "#187 — Wan, Ensemble Health",
+          "quote": "allow the clinical expert to make the final decision on whether or not uh the letter meets the meets the standard of quality before it gets submitted to the to the payer."
+        },
+        {
+          "video_id": "MWTJIAwAAnk",
+          "start": "00:10:19.000",
+          "end": "00:10:22.200",
+          "start_seconds": 619,
+          "confidence": "high",
+          "label": "#423 — Conover, Brightwave",
+          "quote": "the human analyst always is going to have access to information that has not been digitized"
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "claim_id": "claims#38",
+      "text": "In subjective domains, keep the model in a narrow lane and let structured systems own the truth",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "FlzpEGHNVKQ",
+          "start": "00:08:56.360",
+          "end": "00:08:58.520",
+          "start_seconds": 536,
+          "confidence": "high",
+          "label": "#677 — Dole & Steinskog, Play Magnus",
+          "quote": "the LLM's job is only to translate this information"
+        },
+        {
+          "video_id": "418t26CVz-w",
+          "start": "00:00:38.840",
+          "end": "00:00:39.800",
+          "start_seconds": 38,
+          "confidence": "high",
+          "label": "#918 — Quoraishee & Song, NYT",
+          "quote": "Our puzzles are made by people."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#39",
+      "text": "A working AI-built game is far harder than the demo, and content generation is the easy part",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "_KFbT6eph5A",
+          "start": "00:00:25.320",
+          "end": "00:00:28.960",
+          "start_seconds": 25,
+          "confidence": "high",
+          "label": "#588 — Jeff Schomay",
+          "quote": "I made a game with 100% AI generated content"
+        },
+        {
+          "video_id": "grdoOC1BT1s",
+          "start": "00:04:23.680",
+          "end": "00:04:25.000",
+          "start_seconds": 263,
+          "confidence": "high",
+          "label": "#827 — An & Hoe, Meta",
+          "quote": "everybody can build a game over the weekend,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#40",
+      "text": "In education, the binding constraint is pedagogy and organization, not model capability",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "3E7VAZaTG9M",
+          "start": "00:00:44.800",
+          "end": "00:00:47.280",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#512 — Jansepar, Khan Academy",
+          "quote": "transformed KH Academy into an AI first organization"
+        },
+        {
+          "video_id": "qpmZID27t98",
+          "start": "00:01:00.039",
+          "end": "00:01:01.320",
+          "start_seconds": 60,
+          "confidence": "high",
+          "label": "#540 — Stefania Druga",
+          "quote": "education needs a wakeup call"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#41",
+      "text": "Creative production is an orchestration problem — compose several specialized models, not one generalist",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Bc6Ojl2XS1w",
+          "start": "00:17:02.760",
+          "end": "00:17:05.520",
+          "start_seconds": 1022,
+          "confidence": "high",
+          "label": "#755 — Schaeff, Google DeepMind",
+          "quote": "a tool to then generate a song using Lyra."
+        },
+        {
+          "video_id": "CoaL4JZKsWI",
+          "start": "00:18:04.520",
+          "end": "00:18:07.400",
+          "start_seconds": 1084,
+          "confidence": "high",
+          "label": "#477 — Phlo Young",
+          "quote": "produce a song and then use this voice conversion technique"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#42",
+      "text": "A creative pipeline can now run fully autonomously, and the standard it is measured against is a human",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "BqZrTdgBaPw",
+          "start": "00:00:50.160",
+          "end": "00:00:55.160",
+          "start_seconds": 50,
+          "confidence": "high",
+          "label": "#822 — Steinfurt, TNG",
+          "quote": "it could easily take another 5 years until AI explains chess as well as a human trainer."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#43",
+      "text": "On-device, local agentic patterns matter for accessible, low-latency play — while the puzzles stay human",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "418t26CVz-w",
+          "start": "00:00:18.480",
+          "end": "00:00:20.800",
+          "start_seconds": 18,
+          "confidence": "high",
+          "label": "#918 — Quoraishee & Song, NYT",
+          "quote": "local agentic theory for accessible mobile games."
+        }
+      ]
+    }
+  ]
+}
