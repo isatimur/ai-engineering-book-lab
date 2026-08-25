@@ -6,7 +6,7 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 281 videos referenced at least one artifact; corpus size 1047.
+> Coverage: 291 videos referenced at least one artifact; corpus size 1058.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
 ## GitHub repositories (56)
@@ -88,7 +88,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://huggingface.co/datasets/Halluminate/WebBench> — [[384-Djv8Sp11UjI-the-current-state-of-browser-agents-jerry-wu-and-wyatt-marshall|#384]]
 - <https://huggingface.co/gradientai/v-alpha-tross> — [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473]]
 
-## Deep-link resources (135)
+## Deep-link resources (137)
 
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
@@ -96,6 +96,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://pydantic.dev> — [[099-flf_IKnFYnE-from-stateless-nightmares-to-durable-agents-samuel-colvin-pydantic|#99]], [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184]], [[241-bmWZk9vTze0-mcp-is-all-you-need-samuel-colvin-pydantic|#241]]
 - <https://enoreyes.com> — [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57]], [[951-wpOA-UXynoM-how-forward-deployed-engineering-is-done-at-factory-eno-reyes|#951]]
 - <https://gallon.me> — [[106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore|#106]], [[1016-26RtyAm9y_Q-the-dark-arts-of-web-automation-teaching-agents-to-use-websites-like-humans-corey-gallon-r|#1016]]
+- <https://getunblocked.com> — [[714-BiG2ssibKGc-stop-babysitting-your-agents-brandon-waselnuk-unblocked|#714]], [[1050-HvMyYLTfvhg-building-agents-is-trivial-now-context-is-the-next-frontier-jeff-ng-unblocked|#1050]]
 - <https://goingmeta.live> — [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215]], [[321-CbiR9xS2skQ-why-your-agent-s-brain-needs-a-playbook-practical-wins-from-using-ontologies-jes-s-barrasa|#321]]
 - <https://il.linkedin.com/in/rafael-levi> — [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748]], [[766-btxGmN8RvNU-your-agent-s-biggest-lie-i-searched-the-web-rafael-levi-bright-data|#766]]
 - <https://neo4j.com> — [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105]], [[224-AvVoJBxgSQk-agentic-graphrag-ai-s-logical-edge-stephen-chin-neo4j|#224]]
@@ -135,6 +136,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://cz.linkedin.com/in/michal-cichra-61188a84> — [[738-504PvfXou5Y-bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-intelligenc|#738]]
 - <https://d2ot4ns4zf41bm.cloudfront.net/slides/7+Habits+AI+World> — [[366-wHhlvcQgi9M-7-habits-of-highly-effective-generative-ai-evaluations-justin-muller|#366]]
 - <https://dev.to/blackgirlbytes/your-ai-agent-isnt-an-engineer-5egf> — [[459-MExbNNG_VcI-your-ai-agent-isn-t-an-engineer-the-art-of-thoughtful-anthropomorphism|#459]]
+- <https://dev.to/tisha> — [[1052-GJX19pNhmSw-finops-for-ai-agents-who-spent-all-the-tokens-tisha-chawla-susheem-koul-microsoft|#1052]]
 - <https://developer.nvidia.com/blog/author/ldmello> — [[900-XjI-AR4pt7Y-your-llm-stack-is-a-2008-database-with-better-marketing-lovina-dmello-nvidia|#900]]
 - <https://developer.nvidia.com/blog/exploring-the-case-of-super-protocol-with-self-sovereign-ai-and-nvidia-confidential-computing> — [[361-A0PxE39xaMc-gpu-less-trust-less-limit-less-reimagining-the-confidential-ai-cloud-mike-bursell|#361]]
 - <https://docs.hypermode.com/dgraph/overview> — [[369-tYCu_57jzL8-the-knowledge-graph-mullet-trimming-graphrag-complexity-william-lyon|#369]]

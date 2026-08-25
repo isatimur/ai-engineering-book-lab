@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 461
+- Total tagged videos: 471
 
 ## Cross-video synthesis
 
-- This theme appears across 461 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (348), Agent Architecture (328), Models & Inference (21).
+- This theme appears across 471 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (358), Agent Architecture (338), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -473,6 +473,16 @@
 - [[1041-s-aixZYJG4c-the-last-human-code-review-building-trust-in-ai-generated-code-itamar-friedman-qodo|#1041 — The Last Human Code Review: Building Trust in AI-Generated Code — Itamar Friedman, Qodo]]
 - [[1042-bdHaOXZOhcM-prototyping-as-leadership-how-a-cto-ships-with-ai-agents-hursh-agrawal-the-browser-company|#1042 — Prototyping as Leadership: How a CTO Ships with AI Agents — Hursh Agrawal, The Browser Company]]
 - [[1045-FLUoowDJg4I-how-i-automate-my-own-job-at-hugging-face-using-agents-niels-rogge-hugging-face|#1045 — How I automate my own job at Hugging Face using agents — Niels Rogge, Hugging Face]]
+- [[1048-17-YSUHo6Lk-agentic-sdlc-at-uber-uday-kiran-medisetty-adam-huda-uber|#1048 — Agentic SDLC at Uber — Uday Kiran Medisetty & Adam Huda, Uber]]
+- [[1050-HvMyYLTfvhg-building-agents-is-trivial-now-context-is-the-next-frontier-jeff-ng-unblocked|#1050 — Building Agents Is Trivial Now, Context Is the Next Frontier — Jeff Ng, Unblocked]]
+- [[1051-rbjWzZK2LU0-give-the-agent-a-budget-not-a-token-sachin-malhotra-anthropic|#1051 — Give the Agent a Budget, Not a Token — Sachin Malhotra, Anthropic]]
+- [[1052-GJX19pNhmSw-finops-for-ai-agents-who-spent-all-the-tokens-tisha-chawla-susheem-koul-microsoft|#1052 — FinOps for AI Agents: Who Spent All the Tokens? — Tisha Chawla & Susheem Koul, Microsoft]]
+- [[1053-0I6aoPSRzVc-what-if-your-chip-design-team-moved-like-a-single-body-abduallah-mohamed-aidachip|#1053 — What If Your Chip Design Team Moved Like a Single Body? — Abduallah Mohamed, AIDAChip]]
+- [[1054-FvxY8oPoI8o-preferences-over-benchmarks-model-routing-archana-kamath-tyler-gillam-digitalocean|#1054 — Preferences Over Benchmarks: Model Routing — Archana Kamath & Tyler Gillam, DigitalOcean]]
+- [[1055-zCJtYuqwm7E-coding-agents-don-t-scale-themselves-neither-do-your-teams-patrick-debois-tessl|#1055 — Coding Agents Don't Scale Themselves. Neither Do Your Teams. — Patrick Debois, Tessl]]
+- [[1056-KHudyx5wW3U-agent-frameworks-considered-harmful-r-mi-louf-txt|#1056 — Agent Frameworks Considered Harmful — Rémi Louf, .txt]]
+- [[1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo|#1057 — Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo]]
+- [[1058-L173Z8DpaJg-the-agent-behind-the-curtain-building-the-oz-cloud-agent-platform-safia-abdalla-warp|#1058 — The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp]]
 
 ## Notes
 
