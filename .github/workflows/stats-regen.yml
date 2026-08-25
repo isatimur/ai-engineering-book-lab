@@ -11,6 +11,9 @@ on:
       - 'public/**'
       - 'claims/Claims Ledger.md'
       - 'claims/anchors/**'
+      # Book 2 has its own ledger; build_stats.py reads it for the book2
+      # block, so its counts go stale unless this fires on it too.
+      - 'claims-2/Claims Ledger.md'
       - 'diagrams/**'
       - 'research_passes/**'
       - 'tasks/**'
