@@ -98,6 +98,34 @@ with no note, so those never get a transcript later. Run
 `python3 99_Meta/scripts/backfill_transcripts.py` after any ingest — it fetches
 transcripts for existing notes that lack them and corrects their frontmatter.
 
+### Anchor verification is local-only, and must be run by hand
+
+Nothing in CI verifies that a Source Anchor still resolves to its quote, and
+nothing can: transcripts are gitignored, so a workflow version of this check
+would pass vacuously on an empty transcript directory. Run it locally as part
+of any claims work:
+
+```bash
+cd 99_Meta/scripts/anchor
+python3 verify_ledger.py                                    # book 1
+python3 verify_ledger.py --ledger "claims-2/Claims Ledger.md"   # book 2
+```
+
+State at 2026-08-25: **book 1 198/198, book 2 93/93.**
+
+Two things learned building it:
+
+- **The word-stream matcher loses confidence on long quotes** that span many
+  caption cues. Two book-1 anchors were reported as failures while being
+  present verbatim. The verifier now falls back to a normalised full-text
+  search of the plain transcript before declaring rot — the same question a
+  human asks ("are these words in this talk?"). Without that fallback the tool
+  produces false alarms that send people editing correct ledgers.
+- **One real defect was found and fixed.** A book-1 quote read "I want to to
+  pay less" where the transcript says "I want to pay to to pay less" — a quote
+  tidied during editing, exactly the drift the ledger rule ("never paraphrase a
+  quote") exists to prevent. Corrected to verbatim.
+
 ### Re-scoring while chapters move: what the 2026-08-22 run taught
 
 Gate (c) was cleared with the canonical panel (`panel-3model-v8`). Three things
