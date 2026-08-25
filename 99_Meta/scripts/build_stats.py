@@ -77,9 +77,9 @@ def count_anchors(ledger_rel_path: str = "claims/Claims Ledger.md") -> dict[str,
     return {"total": high + medium + low, "high": high, "medium": medium, "low": low}
 
 
-def count_chapters() -> dict[str, int]:
-    """Parse website/src/data/bookChapters.ts for chapter status counts."""
-    src = REPO / "website" / "src" / "data" / "bookChapters.ts"
+def count_chapters(rel_path: str = "website/src/data/bookChapters.ts") -> dict[str, int]:
+    """Parse a bookChapters-shaped .ts file for chapter status counts."""
+    src = REPO / rel_path
     if not src.exists():
         return {"total": 0, "drafting": 0, "starter": 0, "outlined": 0}
     text = src.read_text(encoding="utf-8")
@@ -146,15 +146,18 @@ def build() -> Stats:
     )
 
     # Second book: a fully separate manuscript track (own ledger, own drafts,
-    # not yet wired into website/src/data/bookChapters.ts). Reported alongside
-    # book 1 but kept out of `total_artefacts` — the two manuscripts are
-    # separate deliverables and merging their counts would obscure both.
+    # own website data file `bookChaptersTwo.ts` as of the website-wiring pass).
+    # Reported alongside book 1 but kept out of `total_artefacts` — the two
+    # manuscripts are separate deliverables and merging their counts would
+    # obscure both.
     book2_claims = count_claims("claims-2/Claims Ledger.md")
     book2_anchors = count_anchors("claims-2/Claims Ledger.md")
+    book2_chapters = count_chapters("website/src/data/bookChaptersTwo.ts")
     book2 = {
         "drafting_files": count_md("public/drafting-2"),
         "claims": book2_claims,
         "anchors": book2_anchors,
+        "chapters": book2_chapters,
     }
 
     return Stats(
@@ -236,10 +239,12 @@ that doesn't update automatically, link to this file instead of inlining a value
 ## Second book (Part I: The Model Layer / Part II: The Long Tail)
 
 Separate manuscript track — own ledger (`claims-2/`), own drafts
-(`public/drafting-2/`), own chapter packets. Not yet wired into the website;
-excluded from the grand total below.
+(`public/drafting-2/`), own chapter packets, own website data file
+(`bookChaptersTwo.ts`, direct-URL-only at `/second-book`, excluded from the
+sitemap/llms feed). Excluded from the grand total below.
 
 - **Chapter drafts:** **{s.book2['drafting_files']}**
+- **Chapters wired into the website:** **{s.book2['chapters']['total']}**
 - **Claims in the ledger:** **{s.book2['claims']['total']}**
 
 | Support level | Count |
@@ -289,6 +294,7 @@ def main() -> int:
           f"{s.claims['total']} claims · {s.anchors['total']} anchors · "
           f"{s.chapters['total']} chapters")
     print(f"[stats] second book: {s.book2['drafting_files']} chapter drafts · "
+          f"{s.book2['chapters']['total']} wired · "
           f"{s.book2['claims']['total']} claims · {s.book2['anchors']['total']} anchors")
     return 0
 
