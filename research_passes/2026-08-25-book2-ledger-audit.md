@@ -49,3 +49,34 @@ exception.
 Whether each claim's *text* is supported by its quote — that is a reading task,
 not a structural one. This pass verified that anchors resolve and that support
 levels match convention, nothing more.
+
+## Corroboration attempt (same day)
+
+Rather than only flagging, I searched the corpus for second sources for the
+five. **One found, four not** — reported honestly rather than stretched.
+
+### #25 — a genuine independent second source
+
+NVIDIA's GR00T talk (#165, `mWKYvT9Lc50`) states the same frontier bet as the
+original Physical Intelligence source, from a different company:
+
+    - **Anchor:** `mWKYvT9Lc50` 00:15:36.480 → 00:15:39.680 · confidence: high
+    - **Quote:** "a generalist foundation model which can be expanded to any downstream"
+
+Anchor generated and re-verified with `cli.py --markdown`. Paste-ready if the
+book-2 track wants to keep #25 at **strong**.
+
+### #3, #14, #26, #29 — no corroboration found
+
+Searched the robotics/embodiment cluster (#095, #110, #165, #276, #725, #890,
+#936) and the training/frontier talks. Nothing states the same assertions.
+
+The near-miss is worth naming so nobody re-does the search: #725 (Reachy Mini)
+mentions "tiny models like Cocoro at just 80 million parameters". That is a
+supporting *fact* about small models existing — **not** the claim that broad
+embodiment *depends* on them rather than frontier models. Using it would be
+exactly the "supporting fact dressed as corroboration" move this ledger exists
+to prevent, so it is recorded here and deliberately not anchored.
+
+For those four the honest options remain: find a source outside this corpus, or
+relabel to **moderate**.
