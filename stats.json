@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T02:36:33+00:00",
+  "generated_at": "2026-08-26T23:30:07+00:00",
   "corpus": {
-    "videos": 1060
+    "videos": 1069
   },
   "synthesis": {
     "themes": 10,
@@ -41,7 +41,7 @@
     "programs": 10,
     "tasks": 7
   },
-  "total_artefacts": 1327,
+  "total_artefacts": 1336,
   "book2": {
     "drafting_files": 7,
     "claims": {
