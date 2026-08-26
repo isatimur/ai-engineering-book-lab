@@ -1,0 +1,154 @@
+# Chapter 5 — Context Is Infrastructure
+
+
+Useful AI systems do not fail only because the model is weak. They fail because the system cannot assemble the right working set of information at the right moment, in the right shape, at a cost the product can bear.
+
+As long as AI felt like a prompting game, context looked like an input-field problem. You had a box, a token limit, and a growing collection of tricks for stuffing more things into it. Add a few retrieved documents. Paste a spec. Prepend some examples. Tell the model to think harder. But that framing gets the problem backwards. Context is not the garnish around intelligence. It is the substrate that determines what the system can even notice.
+
+That becomes obvious the moment you leave toy tasks. A coding agent needs the right files, the right rules, and the right execution history. A research agent needs the right sources, not just more sources. A legal or enterprise assistant needs proprietary context, structured evidence, and a way to separate active working memory from archival knowledge. And once tools enter the picture, the problem gets harder still. Suddenly the system is not only choosing which documents to retrieve. It is choosing which capabilities to expose, how to describe them, and how to avoid drowning the model in a giant catalog of possible actions.
+
+This is why the next generation of AI systems is being shaped less by prompt cleverness than by context architecture. Retrieval, memory, GraphRAG, enterprise knowledge layers, tool schemas, capability grouping, and token-budget discipline are all parts of the same deeper problem: deciding what the model should see, when it should see it, and what must stay out of the way.
+
+## The active working set matters more than the raw knowledge base
+
+One of the most persistent confusions in AI product work is the assumption that having access to more information is basically the same thing as having better context. It is not.
+
+A company may have millions of documents. A codebase may have thousands of files. A legal research system may have access to a vast corpus of precedent, internal notes, and prior work product. None of that guarantees that the model will see the right few things for this task, in this turn, under this deadline.
+
+That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
+
+Jack Morris offers the cleanest line in the source corpus: “Stuffing context is not memory.” It is a sharp sentence because it attacks the lazy default directly. Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
+
+Nupur Sharma’s Qodo work gives the mechanism behind it. Models privilege the start and end of the window and degrade in the middle, so a longer prompt does not buy more attention; it buys a wider blind spot. Her detection cue is concrete: when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly — summarization, graphs, iterative retrieval — not a bigger window.
+
+Daniel Chalef makes a related point from the memory side. Teams often use retrieval as a universal substitute for state, history, and durable understanding. But memory across time, archival knowledge, and the active context surface are not the same layer. An agent may need all three, yet each has different update rules, different freshness requirements, and different failure modes.
+
+The practical unit of context engineering is not the total corpus but the active working set. The question is not, “What can the model access in principle?” The question is, “What should the model be looking at right now to do this job well?” That is a much stricter engineering problem.
+
+Kuba Rogut puts the sizing rule in one line, relaying Jeff Dean: you do not need a trillion tokens at once, you need the right million. The number worth instrumenting is not how big the index is but how little of it the answer needed.
+
+## Context is selection, shaping, and timing
+
+Once teams stop equating context with raw access, a second clarification becomes necessary. Context engineering is broader than retrieval.
+
+Retrieval matters. Search quality matters. Ranking quality matters. Chunking matters. But a production context system also has to shape the evidence, compress it, layer it, and decide when it should appear in the workflow. Sometimes the right move is to retrieve the most relevant source. Sometimes it is to retrieve three sources, summarize two, and keep one verbatim because wording precision matters. Sometimes it is to avoid retrieval altogether and carry forward a structured state object produced in the previous step.
+
+Val Bercovici’s phrase “context platform engineering” is useful precisely because it elevates the problem out of prompt folklore and into systems design. If your system has to support many tasks, many agents, many tools, and many data sources, then context becomes something you engineer, budget, version, and monitor.
+
+This is where a lot of otherwise promising AI products become strangely fragile. Their context logic is accidental. They have a search call, a prompt template, and a rough hope that relevant things will land in the window. The product may work beautifully on easy questions and then fall apart on the exact tasks that matter most: cross-document synthesis, multi-hop reasoning, domain-specific exception handling, or cases where one irrelevant chunk quietly crowds out the one paragraph that actually governs the answer.
+
+The failure often gets described as hallucination. Sometimes it is. But just as often it is context misassembly.
+
+That distinction matters because the remedy changes. Hallucination invites better model behavior. Misassembly invites better infrastructure.
+
+## The High-Stakes Colleague needs more than access
+
+Hargrove’s tax practice makes the stakes of this chapter especially clear. The firm’s assistant began life as a helpful chat surface — the High-Stakes Colleague the opening chapter named, before anyone asked it to do the work. It summarizes documents, answers questions, and cites plausible authorities. Users like it. But after the novelty phase, they ask for something harder. Not “help me think,” but “help me do the work.” Draft the note. Compare the clauses. Trace the missing support. Walk the evidence chain. Tell me not just what this document says, but what matters across the relevant documents for this client, this issue, and this jurisdiction.
+
+At that point, generic model intelligence is no longer the bottleneck. The bottleneck is whether the system can assemble professional-grade context.
+
+Chau Tran’s enterprise framing is useful here because it refuses the fantasy that an LLM becomes enterprise-aware by being merely smarter. A brilliant new employee is still ineffective on day one if they cannot find the internal wiki, do not know which document system matters, and cannot tell policy from draft from folklore. The same is true of agents.
+
+This is where the book’s second recurring case, the High-Stakes Colleague, becomes more than metaphor. The system is valuable not because it can speak elegantly about law or tax, but because it can operate inside a domain where evidence provenance, internal knowledge, and retrieval discipline materially change the quality of work.
+
+In Harvey’s and related legal-frontier material, the problem is not only finding relevant text. It is finding the right text in the right topology: internal precedents, authoritative sources, matter-specific files, note trails, citations, and the relationships between them. The difference between “broadly relevant” and “operationally decisive” can be a single paragraph hidden in the wrong layer.
+
+Watch one request from Hargrove’s early build-out. A tax associate asks the assistant to trace the support for a deduction a client has claimed for years. The assistant answers fluently and cites a clean-looking authority — a public explainer whose wording matches the query almost perfectly. It reads as decisive. It is also wrong for this client: the governing position lives in a matter note a senior attorney wrote earlier, in a different file, under a jurisdiction the explainer never mentions. The system ranked it first because nothing told it a public article and a matter-specific note are not the same kind of evidence. The remedy is not a smarter model. The team types its knowledge topology into the system: source typing that ranks internal precedent above public background, access boundaries per matter, and a retrieval surface that carries provenance, so the associate can see which layer an answer came from. The misranked matter note becomes the scar the rest of the build-out is designed around.
+
+Hargrove’s context system needs more than a document dump. It needs access boundaries, source typing, freshness policies, ranking tuned to domain use, and interfaces that preserve provenance. In high-stakes work, a system that is 90 percent right for unclear reasons can still be professionally unusable. The issue is not whether the model knows a lot, but whether the product can build a trustworthy evidence surface around the model.
+
+## Context topology determines usefulness
+
+The phrase context topology may sound abstract, but the idea is concrete. Different kinds of information should not all be treated as interchangeable text.
+
+A company handbook is not the same as a CRM record. A draft contract is not the same as signed language. An old Slack discussion is not the same as a policy. A code spec is not the same as the code itself. A matter note written by a senior attorney is not the same as a general explainer article pulled from a public source.
+
+Yet simplistic retrieval systems flatten all of these into one big searchable pile. They act as if the only problem were semantic similarity.
+
+In practice, usefulness depends on topology: what kind of thing this is, how it relates to other things, how trustworthy it is, how recent it is, whether it is active or archival, and whether the current task calls for literal quotation, background orientation, or cross-source synthesis.
+
+This is one reason context engineering is so often misunderstood by teams that are still thinking in terms of “RAG versus no RAG.” Retrieval-augmented generation is one mechanism. Context topology is the broader design problem.
+
+A serious context architecture distinguishes layers such as:
+
+- authoritative sources versus helpful background
+- current task state versus long-term memory
+- private internal knowledge versus public reference material
+- raw evidence versus summaries derived from prior steps
+- tool outputs that should be inspected directly versus ones safe to compress
+
+Once those layers are explicit, the system can behave less like a desperate search box and more like a disciplined colleague assembling a working binder.
+
+That image is useful because it makes the design standard obvious. A strong professional does not walk into a meeting carrying every file the firm has ever touched. They carry the current binder, the active notes, a few precedents, and a clear sense of what counts as governing authority. Context systems should aspire to the same selectivity.
+
+Chau Tran’s Glean work makes that selectivity operational. Much of it is filtering on signals the corpus already carries — the user’s permission scope, the freshness of the source, the document’s role in the organization — applied before the reranker, so material the task should never see never reaches the window. Rank on raw embedding similarity alone and the system will happily surface a deprecated wiki page that reads almost exactly like the current one.
+
+## Graphs matter when evidence must be assembled, not merely fetched
+
+There is a predictable cycle in AI infrastructure where one technique gets overhyped, then mocked, then quietly absorbed into mature practice. GraphRAG is in some danger of following that path.
+
+The right way to think about graphs is neither as magic nor as marketing garnish. They matter when the task punishes shallow retrieval.
+
+Nearest-neighbor search is often enough when the user wants one relevant passage. It becomes less sufficient when the work depends on relationships: this clause belongs to this agreement, which sits inside this matter, which has a related note, which references an exception in another source, which only matters for this entity and date range. That is not merely a document-matching problem. It is an evidence-assembly problem.
+
+Stephen Chin and the Neo4j material are useful here because they make the structure visible. Knowledge graphs can help with multi-hop synthesis, entity disambiguation, and the recovery of relations that ordinary chunk retrieval tends to flatten away. The point is not that every product needs a graph. The point is that some tasks require a representation richer than bag-of-passages search.
+
+This is especially true in enterprise and legal settings, where what matters is often not a single answerable sentence but a traceable path across entities, documents, and prior decisions. Hybrid retrieval becomes attractive because the right mechanism follows from the shape of the answer: vector search when the answer is a single similar passage, graph traversal when it is a path along explicit relationships, keyword or metadata filters when exactness is what matters. Mature systems layer all three rather than declaring one winner. The key chapter-level claim is simple: context quality depends on how well the system assembles evidence, not only on whether it retrieves something related.
+
+## Memory is not the same thing as a long prompt
+
+The longer agents operate, the more tempting it becomes to treat the context window as a backpack that just keeps getting bigger. That instinct is understandable and usually wrong.
+
+Hierarchical memory is a better mental model. Some things belong in immediate working memory because they are needed right now. Some belong in session history because they explain how the current state was reached. Some belong in durable long-term memory because they recur across tasks. Some should not be carried at all unless explicitly reintroduced.
+
+This matters because every piece of carried-forward context has a cost. It occupies tokens. It competes for attention. It increases the chance that stale, irrelevant, or misleading information will quietly shape the next step. Bigger windows reduce one kind of pressure, but they do not remove the need for disciplined selection.
+
+Most of that budget hides in the input. Rajkumar Sakthivel’s team at Tesco states the decomposition bluntly: “90% of your AI cost is input. Files, search results, context you send in. Only 10% is output.” It inverts the usual instinct to reach first for a cheaper model: the model may be 30 percent of the cost, and what you feed it the other 70. Indexing a codebase and retrieving only the relevant slices, instead of pasting whole files, cut their input tokens by a measured 94 percent.
+
+The software-factory case already hinted at this in Chapter 3. An agent working in a repo does not need the whole codebase in active view. It needs the right files, the relevant specs, and enough execution history to avoid losing the thread. Chapter 4 sharpened the same point from the measurement side: the system must preserve the right failures and slices. Chapter 5 extends the logic. Good context architecture means knowing what to keep live, what to summarize, what to index, and what to leave out. That restraint is not weakness but design maturity.
+
+## MCP turns context into a capability-management problem
+
+The rise of tool protocols such as MCP exposes a newer version of the same issue. For a while, context engineering mostly meant “Which documents should the model see?” Now it also means “Which tools should the model know exist, how should they be described, and how do we prevent the capability surface from becoming its own form of overload?”
+
+Matt Carey’s phrase “mega context problem” lands because it names the trap precisely. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
+
+Sam Morrow’s lessons from GitHub’s remote MCP server push the point from diagnosis into operating practice. Progressive discovery, grouping, intent-aware exposure, and ruthless context reduction are not polish. They are core product decisions. The model should not receive a phone book of capabilities when what it needs is a small, discoverable menu relevant to the current task.
+
+GitHub’s own numbers make the practice concrete. When community contributions pushed that server past a hundred tools, the agents got measurably worse. The first fixes were elegant opt-in machinery: tool sets and dynamic discovery. Almost no one used them, because most users never touch the JSON config — the load-bearing lesson being any fix that depends on user configuration reaches a minority, so change the default instead. GitHub did, cutting the initial tool-load context by 49 percent. The number of tools the agent could call did not fall; the number it had to read did.
+
+This is one of the most important ways the context chapter connects back to the rest of the book. Tool access is not merely an integration story. It is part of the same infrastructure problem as retrieval, memory, and evidence assembly. The system has to decide what the model should see and what it should not.
+
+The old failure mode was “the model lacked the right document.” The emerging one is “the model was buried under too many possible actions.”
+
+## Context quality is measured downstream
+
+A lot of context discussions drift into architecture diagrams too quickly. The diagrams can be useful, but they also create a form of intellectual camouflage. A beautiful retrieval stack can still produce mediocre work. A graph-enhanced pipeline can still be badly ranked. A memory subsystem can still carry forward the wrong state. An elegantly standardized tool protocol can still swamp the model with irrelevant capability descriptions.
+
+The only reliable proof of context quality lives downstream, which is the acceptance test any context change has to pass:
+
+Does the system complete real tasks more accurately?
+Does it cite better evidence?
+Does it reduce review burden?
+Does it waste fewer tokens to get the same or better result?
+Does it make higher-stakes workflows feel more trustworthy rather than more theatrical?
+
+Chapter 5 belongs so closely next to Chapter 4. Evals tell you whether your context architecture is actually helping. Observability tells you where context assembly failed in production. The two disciplines are inseparable in practice. You do not know that your context system is good because the retrieval trace looks clever. You know it is good because the work improves.
+
+That inseparability implies a specific eval design: score retrieval and generation separately. Track whether the governing passage reached the assembled working set at all — a recall measure on the context layer — before scoring whether the model used it correctly. Score only the final answer and a context-assembly bug looks exactly like a model getting dumber — and a model upgrade gets wasted on a retrieval problem.
+
+This also explains why so many context debates are unproductive when they happen in the abstract. Teams argue about RAG, GraphRAG, memory, or tool selection as if these were ideological camps. In production, they are just means. The end is better delegated work.
+
+## Context is what makes intelligence situated
+
+There is a temptation, especially among people impressed by raw model progress, to treat context work as secondary plumbing. If the model keeps getting smarter, surely the need for elaborate context engineering should diminish.
+
+In practice the opposite often happens, and the rule is worth stating plainly: a stronger model raises both the return on good context and the cost of bad context. It does more with the right evidence, tools, and state placed in front of it, and it generates more persuasive nonsense when the context surface is badly assembled. Capability amplifies both outcomes, which makes a better model a reason to invest more in context, not less.
+
+That is why context belongs in the same mental bucket as harnesses, evals, runtimes, and security. It is not a prompt trick but one of the engineered surroundings that determine whether intelligence becomes useful.
+
+A machine colleague does not need infinite information. It needs the right binder.
+
+But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
+
+That is the runtime problem, the next layer of infrastructure.

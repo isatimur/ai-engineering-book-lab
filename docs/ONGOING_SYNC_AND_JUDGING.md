@@ -98,6 +98,20 @@ with no note, so those never get a transcript later. Run
 `python3 99_Meta/scripts/backfill_transcripts.py` after any ingest — it fetches
 transcripts for existing notes that lack them and corrects their frontmatter.
 
+### Prose quotes: a candidate-flagger, not a gate
+
+`99_Meta/scripts/anchor/verify_prose_quotes.py` checks quoted spans in chapter
+prose against the transcripts — the surface the ledger verifier does not cover.
+Book 1 at 2026-08-26: **76 of 110 spans verified** in a transcript.
+
+The other 34 are **not** a defect list, and the reason matters: **the transcript
+is ASR output, not ground truth.** Chapter 8 quotes "voice-to-voice response
+chain" where its transcript reads "voicetooice uh response chain" — the book is
+more accurate than the thing it is being checked against. Of the 34: 8 are
+question-form spans (the author's own framing in quote marks), 8 are short
+fragments, and 18 are longer spans worth a human read. Treat it as a reading
+list, never as a build gate.
+
 ### Anchor verification is local-only, and must be run by hand
 
 Nothing in CI verifies that a Source Anchor still resolves to its quote, and
