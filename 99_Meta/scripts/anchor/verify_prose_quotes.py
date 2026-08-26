@@ -97,8 +97,12 @@ def main() -> int:
     skipped: list[tuple[str, str]] = []
     for f in sorted(_REPO.glob(args.glob)):
         text = f.read_text()
+        # A quoted span must not cross a paragraph or heading boundary: an
+        # unmatched opening quote would otherwise swallow the next heading and
+        # report a span nobody wrote (seen twice in book 2's chapters).
         spans = [q for q in re.findall(r'[“"]([^”"]{20,300})[”"]', text)
-                 if len(q.split()) >= args.min_words]
+                 if len(q.split()) >= args.min_words
+                 and "\n\n" not in q and "\n#" not in q]
         for q in spans:
             # Elided quotes ("A ... B") can never match verbatim as one span.
             # Split on the ellipsis and require every fragment of >=4 words to

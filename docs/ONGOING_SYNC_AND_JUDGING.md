@@ -112,6 +112,14 @@ question-form spans (the author's own framing in quote marks), 8 are short
 fragments, and 18 are longer spans worth a human read. Treat it as a reading
 list, never as a build gate.
 
+**Book 2 checked 2026-08-27: 46 of 62 spans verified, no fabricated quotes.**
+Its 16 misses are talk titles in quote marks (legitimate) and cases where the
+book *corrects* ASR mangling — it prints "TurboTax" where the transcript has
+"Turboax", and "GPT-4" where the transcript has "GPD 4". Worth noting that the
+fast-drafted second book came through clean while book 1, written slowly,
+carried one fabricated quotation (Ch4, fixed in fabaf7d). Care of drafting and
+quote fidelity turned out to be independent.
+
 ### Anchor verification is local-only, and must be run by hand
 
 Nothing in CI verifies that a Source Anchor still resolves to its quote, and
