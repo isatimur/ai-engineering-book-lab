@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 535
+- Total tagged videos: 536
 
 ## Cross-video synthesis
 
-- This theme appears across 535 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (393), Evals & Reliability (358), MCP & Tooling (74).
+- This theme appears across 536 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (394), Evals & Reliability (359), MCP & Tooling (74).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -547,6 +547,7 @@
 - [[1056-KHudyx5wW3U-agent-frameworks-considered-harmful-r-mi-louf-txt|#1056 — Agent Frameworks Considered Harmful — Rémi Louf, .txt]]
 - [[1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo|#1057 — Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo]]
 - [[1058-L173Z8DpaJg-the-agent-behind-the-curtain-building-the-oz-cloud-agent-platform-safia-abdalla-warp|#1058 — The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp]]
+- [[1060-mMNkdYnIVC4-einstein-arena-harnessing-collective-agent-intelligence-for-open-science-james-zou-togethe|#1060 — Einstein Arena: Harnessing Collective Agent Intelligence for Open Science — James Zou, Together AI]]
 
 ## Notes
 

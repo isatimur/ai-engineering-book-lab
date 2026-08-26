@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 440
+- Total tagged videos: 442
 
 ## Cross-video synthesis
 
-- This theme appears across 440 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (393), Evals & Reliability (338), MCP & Tooling (67).
+- This theme appears across 442 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (394), Evals & Reliability (339), MCP & Tooling (67).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -452,6 +452,8 @@
 - [[1056-KHudyx5wW3U-agent-frameworks-considered-harmful-r-mi-louf-txt|#1056 — Agent Frameworks Considered Harmful — Rémi Louf, .txt]]
 - [[1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo|#1057 — Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo]]
 - [[1058-L173Z8DpaJg-the-agent-behind-the-curtain-building-the-oz-cloud-agent-platform-safia-abdalla-warp|#1058 — The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp]]
+- [[1059-XsvUhpnHepE-the-missing-layer-in-agentic-ai-giedrius-teimantas-oxylabs|#1059 — The Missing Layer in Agentic AI — Giedrius Šteimantas, Oxylabs]]
+- [[1060-mMNkdYnIVC4-einstein-arena-harnessing-collective-agent-intelligence-for-open-science-james-zou-togethe|#1060 — Einstein Arena: Harnessing Collective Agent Intelligence for Open Science — James Zou, Together AI]]
 
 ## Notes
 

@@ -6,7 +6,7 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 291 videos referenced at least one artifact; corpus size 1058.
+> Coverage: 292 videos referenced at least one artifact; corpus size 1060.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
 ## GitHub repositories (56)
@@ -88,7 +88,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://huggingface.co/datasets/Halluminate/WebBench> — [[384-Djv8Sp11UjI-the-current-state-of-browser-agents-jerry-wu-and-wyatt-marshall|#384]]
 - <https://huggingface.co/gradientai/v-alpha-tross> — [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473]]
 
-## Deep-link resources (137)
+## Deep-link resources (138)
 
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
@@ -206,6 +206,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://www.anthropic.com/news/model-context-protocol> — [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349]]
 - <https://www.anthropic.com/research/building-effective-agents> — [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349]]
 - <https://www.baseten.co/blog> — [[189-3WV1vT0B0cg-the-rise-of-open-models-in-the-enterprise-amir-haghighat-baseten|#189]]
+- <https://www.cs.stanford.edu/people/james-zou> — [[1060-mMNkdYnIVC4-einstein-arena-harnessing-collective-agent-intelligence-for-open-science-james-zou-togethe|#1060]]
 - <https://www.dropbox.com/scl/fi/lyp1my0oc9whpusps29t7/Agent-Simulations-Talk.pdf> — [[935-Ib5t2RLtxvM-from-agent-traces-to-agent-simulations-rustem-feyzkhanov-snorkel-ai|#935]]
 - <https://www.gettheleverage.com/p/why-is-ai-marketing-so-so-bad> — [[396-y6L5RkEqQ8g-chatgpt-is-poorly-designed-so-i-fixed-it|#396]]
 - <https://www.klarity.ai> — [[465-7MiFIhlkBoE-patrick-dougherty-how-to-build-ai-agents-that-actually-work|#465]]

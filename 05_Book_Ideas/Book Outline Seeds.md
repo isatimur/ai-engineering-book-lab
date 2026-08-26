@@ -13,7 +13,7 @@
 ## Supporting seed talks
 
 ### Agent Architecture
-- Corpus coverage: 440 talks
+- Corpus coverage: 442 talks
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
@@ -22,7 +22,7 @@
 - [[044-kmV-qg4uoNI-building-durable-agents-with-workflow-devkit-ai-sdk-peter-wielander-vercel|#44 — Building durable Agents with Workflow DevKit & AI SDK - Peter Wielander, Vercel]]
 
 ### Coding Agents
-- Corpus coverage: 535 talks
+- Corpus coverage: 536 talks
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -31,7 +31,7 @@
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 
 ### Evals & Reliability
-- Corpus coverage: 471 talks
+- Corpus coverage: 472 talks
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]

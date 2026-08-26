@@ -3,7 +3,7 @@
 ## Source
 - Channel: [AI Engineer](https://www.youtube.com/@aiDotEngineer)
 - Inventory snapshot source: `/tmp/ai-engineer-videos.jsonl`
-- Total videos in current inventory: 1057
+- Total videos in current inventory: 1059
 
 ## What this knowledge base is for
 This vault is a working research substrate for turning the AI Engineer channel into a real AI engineering knowledge experience:
@@ -17,15 +17,15 @@ This vault is a working research substrate for turning the AI Engineer channel i
 This is not meant to be a passive archive. The intended workflow is: gather the channel corpus, preserve source provenance, extract the durable AI engineering knowledge, connect related ideas, and rework the material into something useful for learning, reference, and production work.
 
 ## Current ingestion status
-- Latest completed batch: `recent-1048-1058`
-- Corpus notes created so far: `1058`
-- Transcript status mix: `auto_en: 2, auto_en_orig: 1055, whisper_base_en: 1`
+- Latest completed batch: `recent-1059-1060`
+- Corpus notes created so far: `1060`
+- Transcript status mix: `auto_en: 2, auto_en_orig: 1056, unavailable: 1, whisper_base_en: 1`
 - Notes created: `01_Videos/`
 - Theme seeds created: `02_Themes/`
 - Transcript cache created: `99_Meta/transcripts/`
 
 ## Working principle
-Don’t try to summarize 1057 videos by hand in one pass.
+Don’t try to summarize 1059 videos by hand in one pass.
 Instead:
 1. ingest in reproducible batches
 2. keep transcript provenance clear

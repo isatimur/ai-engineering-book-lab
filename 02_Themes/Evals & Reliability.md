@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 471
+- Total tagged videos: 472
 
 ## Cross-video synthesis
 
-- This theme appears across 471 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (358), Agent Architecture (338), Models & Inference (21).
+- This theme appears across 472 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (359), Agent Architecture (339), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -483,6 +483,7 @@
 - [[1056-KHudyx5wW3U-agent-frameworks-considered-harmful-r-mi-louf-txt|#1056 — Agent Frameworks Considered Harmful — Rémi Louf, .txt]]
 - [[1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo|#1057 — Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo]]
 - [[1058-L173Z8DpaJg-the-agent-behind-the-curtain-building-the-oz-cloud-agent-platform-safia-abdalla-warp|#1058 — The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp]]
+- [[1060-mMNkdYnIVC4-einstein-arena-harnessing-collective-agent-intelligence-for-open-science-james-zou-togethe|#1060 — Einstein Arena: Harnessing Collective Agent Intelligence for Open Science — James Zou, Together AI]]
 
 ## Notes
 
