@@ -7,8 +7,8 @@ url: "https://www.youtube.com/watch?v=XsvUhpnHepE"
 duration: ""
 duration_seconds: null
 view_count: null
-transcript_status: unavailable
-transcript_path: ""
+transcript_status: "auto_en_orig"
+transcript_path: "99_Meta/transcripts/plain/XsvUhpnHepE.txt"
 themes:
   - "Agent Architecture"
 ingested_at: 2026-08-26T02:32:14+00:00

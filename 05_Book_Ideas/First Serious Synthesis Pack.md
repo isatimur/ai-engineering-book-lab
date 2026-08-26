@@ -1,14 +1,14 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **1060 videos**
-Transcript status mix: **{'auto_en': 2, 'auto_en_orig': 1056, 'unavailable': 1, 'whisper_base_en': 1}**
+Corpus size analyzed: **1069 videos**
+Transcript status mix: **{'auto_en': 2, 'auto_en_orig': 1066, 'whisper_base_en': 1}**
 
 ## What changed after full-corpus review
 
 The corpus is now strong enough to stop treating the book as a loose trend survey.
 A clearer thesis is emerging: **AI engineering is the discipline of turning model capability into dependable, high-leverage systems through scaffolding, evaluation, context design, and organizational adaptation.**
 
-Across the full 1060-video corpus, four things stand out most clearly:
+Across the full 1069-video corpus, four things stand out most clearly:
 - the book should be anchored in **production practice**, not model novelty
 - **coding agents** are the best narrative entry point, but not the whole book
 - **trust, control, and eval loops** are the hinge between demo and deployment
@@ -16,10 +16,10 @@ Across the full 1060-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 442, `Coding Agents`: 536).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 472).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 450, `Coding Agents`: 545).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 481).
 - **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 243).
-- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 134, `RAG & Retrieval`: 167).
+- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 135, `RAG & Retrieval`: 167).
 - **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 26, `Voice & Realtime`: 45).
 
 ## Best current thesis

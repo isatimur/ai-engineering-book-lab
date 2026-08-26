@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1060
+Total videos: 1069
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1062,3 +1062,12 @@ Total videos: 1060
 1058. [The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp](https://www.youtube.com/watch?v=L173Z8DpaJg) — `L173Z8DpaJg` — 20:51
 1059. [The Missing Layer in Agentic AI — Giedrius Šteimantas, Oxylabs](https://www.youtube.com/watch?v=XsvUhpnHepE) — `XsvUhpnHepE` — 
 1060. [Einstein Arena: Harnessing Collective Agent Intelligence for Open Science — James Zou, Together AI](https://www.youtube.com/watch?v=mMNkdYnIVC4) — `mMNkdYnIVC4` — 16:56
+1061. [Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital](https://www.youtube.com/watch?v=wdTRsfw0KG0) — `wdTRsfw0KG0` — 19:10
+1062. [GTM Engineering: The Technical Bits — Everett Berry, Clay](https://www.youtube.com/watch?v=UhCY231d0FQ) — `UhCY231d0FQ` — 19:04
+1063. [AI in GTM at Notion — Flora Liu](https://www.youtube.com/watch?v=L4I7WgiEquo) — `L4I7WgiEquo` — 21:15
+1064. [The Building Blocks of GTM Orchestration — Arman Vaziri, Ramp](https://www.youtube.com/watch?v=VjEP0xqTUI0) — `VjEP0xqTUI0` — 19:55
+1065. [Building GTM AI Agents: Lessons from Deploying to 6,000 Users — Sait Izmit, Snowflake](https://www.youtube.com/watch?v=DrTdD-ttjCY) — `DrTdD-ttjCY` — 20:39
+1066. [How We Got LLMs to Recommend Our Open Source Library — Christopher Burns, Inth](https://www.youtube.com/watch?v=V_5bn4q-vAI) — `V_5bn4q-vAI` — 16:27
+1067. [Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa](https://www.youtube.com/watch?v=6pbQgnJ9Voc) — `6pbQgnJ9Voc` — 18:49
+1068. [How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare](https://www.youtube.com/watch?v=Qw_tC68KKes) — `Qw_tC68KKes` — 19:15
+1069. [The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph](https://www.youtube.com/watch?v=Lrw0jqBNaw0) — `Lrw0jqBNaw0` — 18:16

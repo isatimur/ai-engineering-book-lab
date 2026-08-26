@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 134
+- Total tagged videos: 135
 
 ## Cross-video synthesis
 
-- This theme appears across 134 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (74), Agent Architecture (67), Org Design & Leadership (12).
+- This theme appears across 135 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (75), Agent Architecture (67), Evals & Reliability (13).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -146,6 +146,7 @@
 - [[1044-_ehJyfHg1Vk-the-era-of-compound-engineering-kieran-klaassen-every-cora|#1044 — The Era of Compound Engineering — Kieran Klaassen, Every/Cora]]
 - [[1047-zaGyGgLW3SM-unlock-agent-autonomy-the-runtime-for-ai-native-systems-tushar-jain-docker|#1047 — Unlock Agent Autonomy: The Runtime for AI-Native Systems — Tushar Jain, Docker]]
 - [[1049-7GMKdpLsxwU-the-missing-layer-design-taste-in-ai-agents-hassan-el-mghari-together-ai|#1049 — The Missing Layer: Design Taste in AI Agents — Hassan El Mghari, Together AI]]
+- [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061 — Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital]]
 
 ## Notes
 

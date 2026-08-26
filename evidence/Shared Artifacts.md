@@ -6,7 +6,7 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 292 videos referenced at least one artifact; corpus size 1060.
+> Coverage: 299 videos referenced at least one artifact; corpus size 1069.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
 ## GitHub repositories (56)
@@ -88,7 +88,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://huggingface.co/datasets/Halluminate/WebBench> — [[384-Djv8Sp11UjI-the-current-state-of-browser-agents-jerry-wu-and-wyatt-marshall|#384]]
 - <https://huggingface.co/gradientai/v-alpha-tross> — [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473]]
 
-## Deep-link resources (138)
+## Deep-link resources (139)
 
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
@@ -202,6 +202,7 @@ Sites kept only when linked by ≥2 talks or pointing below a homepage
 - <https://uy.linkedin.com/in/paolaestefaniadecamposdefranco> — [[909-JvKO40CFq-s-full-workshop-better-auth-paola-estefania-better-auth|#909]]
 - <https://waymo.com/blog/2024/10/introducing-emma> — [[174-iS9YFW28XyM-waymo-s-emma-teaching-cars-to-think-jyh-jing-hwang-waymo|#174]]
 - <https://workos.com/guides> — [[225-D4Dswf-__RM-ciam-for-ai-authn-authz-for-agents-michael-grinich-ceo-of-workos|#225]]
+- <https://www.acrewcapital.com/team-members/aliisa-rosenthal> — [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061]]
 - <https://www.amplifypartners.com/blog-posts/the-2025-ai-engineering-report> — [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137]]
 - <https://www.anthropic.com/news/model-context-protocol> — [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349]]
 - <https://www.anthropic.com/research/building-effective-agents> — [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349]]

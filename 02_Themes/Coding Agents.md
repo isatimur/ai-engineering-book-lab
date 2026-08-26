@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 536
+- Total tagged videos: 545
 
 ## Cross-video synthesis
 
-- This theme appears across 536 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (394), Evals & Reliability (359), MCP & Tooling (74).
+- This theme appears across 545 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (402), Evals & Reliability (368), MCP & Tooling (75).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -548,6 +548,15 @@
 - [[1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo|#1057 — Inside 847 Production Clinical AI Notes — Sebastian Fox, Composo]]
 - [[1058-L173Z8DpaJg-the-agent-behind-the-curtain-building-the-oz-cloud-agent-platform-safia-abdalla-warp|#1058 — The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp]]
 - [[1060-mMNkdYnIVC4-einstein-arena-harnessing-collective-agent-intelligence-for-open-science-james-zou-togethe|#1060 — Einstein Arena: Harnessing Collective Agent Intelligence for Open Science — James Zou, Together AI]]
+- [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061 — Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital]]
+- [[1062-UhCY231d0FQ-gtm-engineering-the-technical-bits-everett-berry-clay|#1062 — GTM Engineering: The Technical Bits — Everett Berry, Clay]]
+- [[1063-L4I7WgiEquo-ai-in-gtm-at-notion-flora-liu|#1063 — AI in GTM at Notion — Flora Liu]]
+- [[1064-VjEP0xqTUI0-the-building-blocks-of-gtm-orchestration-arman-vaziri-ramp|#1064 — The Building Blocks of GTM Orchestration — Arman Vaziri, Ramp]]
+- [[1065-DrTdD-ttjCY-building-gtm-ai-agents-lessons-from-deploying-to-6-000-users-sait-izmit-snowflake|#1065 — Building GTM AI Agents: Lessons from Deploying to 6,000 Users — Sait Izmit, Snowflake]]
+- [[1066-V_5bn4q-vAI-how-we-got-llms-to-recommend-our-open-source-library-christopher-burns-inth|#1066 — How We Got LLMs to Recommend Our Open Source Library — Christopher Burns, Inth]]
+- [[1067-6pbQgnJ9Voc-knowledge-systems-the-new-gtm-stack-jeffrey-wang-exa|#1067 — Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa]]
+- [[1068-Qw_tC68KKes-how-ai-agents-let-gtm-teams-scale-justin-joyce-cloudflare|#1068 — How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare]]
+- [[1069-Lrw0jqBNaw0-the-death-of-developer-advocates-stephanie-jarmak-sourcegraph|#1069 — The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph]]
 
 ## Notes
 

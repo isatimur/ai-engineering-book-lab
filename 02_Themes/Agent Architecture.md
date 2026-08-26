@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 442
+- Total tagged videos: 450
 
 ## Cross-video synthesis
 
-- This theme appears across 442 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (394), Evals & Reliability (339), MCP & Tooling (67).
+- This theme appears across 450 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (402), Evals & Reliability (347), MCP & Tooling (67).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -454,6 +454,14 @@
 - [[1058-L173Z8DpaJg-the-agent-behind-the-curtain-building-the-oz-cloud-agent-platform-safia-abdalla-warp|#1058 — The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp]]
 - [[1059-XsvUhpnHepE-the-missing-layer-in-agentic-ai-giedrius-teimantas-oxylabs|#1059 — The Missing Layer in Agentic AI — Giedrius Šteimantas, Oxylabs]]
 - [[1060-mMNkdYnIVC4-einstein-arena-harnessing-collective-agent-intelligence-for-open-science-james-zou-togethe|#1060 — Einstein Arena: Harnessing Collective Agent Intelligence for Open Science — James Zou, Together AI]]
+- [[1062-UhCY231d0FQ-gtm-engineering-the-technical-bits-everett-berry-clay|#1062 — GTM Engineering: The Technical Bits — Everett Berry, Clay]]
+- [[1063-L4I7WgiEquo-ai-in-gtm-at-notion-flora-liu|#1063 — AI in GTM at Notion — Flora Liu]]
+- [[1064-VjEP0xqTUI0-the-building-blocks-of-gtm-orchestration-arman-vaziri-ramp|#1064 — The Building Blocks of GTM Orchestration — Arman Vaziri, Ramp]]
+- [[1065-DrTdD-ttjCY-building-gtm-ai-agents-lessons-from-deploying-to-6-000-users-sait-izmit-snowflake|#1065 — Building GTM AI Agents: Lessons from Deploying to 6,000 Users — Sait Izmit, Snowflake]]
+- [[1066-V_5bn4q-vAI-how-we-got-llms-to-recommend-our-open-source-library-christopher-burns-inth|#1066 — How We Got LLMs to Recommend Our Open Source Library — Christopher Burns, Inth]]
+- [[1067-6pbQgnJ9Voc-knowledge-systems-the-new-gtm-stack-jeffrey-wang-exa|#1067 — Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa]]
+- [[1068-Qw_tC68KKes-how-ai-agents-let-gtm-teams-scale-justin-joyce-cloudflare|#1068 — How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare]]
+- [[1069-Lrw0jqBNaw0-the-death-of-developer-advocates-stephanie-jarmak-sourcegraph|#1069 — The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph]]
 
 ## Notes
 
