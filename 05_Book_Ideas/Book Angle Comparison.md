@@ -1,6 +1,6 @@
 # Book Angle Comparison
 
-Corpus reference point: **1069 videos**
+Corpus reference point: **1074 videos**
 
 ## Shortlist
 
@@ -14,7 +14,7 @@ Corpus reference point: **1069 videos**
 ## Why the winner shifted
 
 Earlier checkpoint drafts leaned toward a broader operating-manual framing because the corpus was still growing.
-With the full 1069-video set in view, the sharper narrative now holds up better: the real transition isn't just 'AI-native engineering' in the abstract; it's the move from **assistant behavior** to **delegated colleague behavior**.
+With the full 1074-video set in view, the sharper narrative now holds up better: the real transition isn't just 'AI-native engineering' in the abstract; it's the move from **assistant behavior** to **delegated colleague behavior**.
 
 That shift absorbs the corpus's biggest recurring tensions:
 - when can you trust an agent to act, not just suggest?

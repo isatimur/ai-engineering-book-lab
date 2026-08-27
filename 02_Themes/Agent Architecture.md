@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 450
+- Total tagged videos: 451
 
 ## Cross-video synthesis
 
-- This theme appears across 450 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 451 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (402), Evals & Reliability (347), MCP & Tooling (67).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
@@ -462,6 +462,7 @@
 - [[1067-6pbQgnJ9Voc-knowledge-systems-the-new-gtm-stack-jeffrey-wang-exa|#1067 — Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa]]
 - [[1068-Qw_tC68KKes-how-ai-agents-let-gtm-teams-scale-justin-joyce-cloudflare|#1068 — How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare]]
 - [[1069-Lrw0jqBNaw0-the-death-of-developer-advocates-stephanie-jarmak-sourcegraph|#1069 — The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph]]
+- [[1071-G7cgLjZtmMU-the-agentic-commerce-stack-ahnaf-prio-best-buy|#1071 — The Agentic Commerce Stack — Ahnaf Prio, Best Buy]]
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1069
+Total videos: 1074
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1071,3 +1071,8 @@ Total videos: 1069
 1067. [Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa](https://www.youtube.com/watch?v=6pbQgnJ9Voc) — `6pbQgnJ9Voc` — 18:49
 1068. [How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare](https://www.youtube.com/watch?v=Qw_tC68KKes) — `Qw_tC68KKes` — 19:15
 1069. [The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph](https://www.youtube.com/watch?v=Lrw0jqBNaw0) — `Lrw0jqBNaw0` — 18:16
+1070. [KV Cache-Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra, Red Hat](https://www.youtube.com/watch?v=YXowceUKYJI) — `YXowceUKYJI` — 21:48
+1071. [The Agentic Commerce Stack — Ahnaf Prio, Best Buy](https://www.youtube.com/watch?v=G7cgLjZtmMU) — `G7cgLjZtmMU` — 20:38
+1072. [How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic](https://www.youtube.com/watch?v=qqrk7CtkuIw) — `qqrk7CtkuIw` — 26:11
+1073. [Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI](https://www.youtube.com/watch?v=pOvWgX7IJsc) — `pOvWgX7IJsc` — 30:00
+1074. [How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked](https://www.youtube.com/watch?v=qdAkxLoYNI8) — `qdAkxLoYNI8` — 18:36

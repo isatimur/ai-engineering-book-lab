@@ -1,16 +1,16 @@
 # Corpus Stats
 
-- Total notes: 1069
-- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 1066, 'whisper_base_en': 1}
+- Total notes: 1074
+- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 1066, 'unavailable': 5, 'whisper_base_en': 1}
 
 ## Theme counts
 
-- Agent Architecture: 450
+- Agent Architecture: 451
 - Coding Agents: 545
 - Evals & Reliability: 481
-- General AI Engineering: 5
+- General AI Engineering: 8
 - MCP & Tooling: 135
-- Models & Inference: 132
+- Models & Inference: 133
 - Org Design & Leadership: 243
 - RAG & Retrieval: 167
 - Security & Guardrails: 26
