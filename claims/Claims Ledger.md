@@ -473,6 +473,9 @@
   - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]] — context platform engineering as "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale."
     - **Anchor:** `NTBX-wxUhHs` 00:00:28.800 → 00:00:36.399 · confidence: high
     - **Quote:** "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
+  - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — states the claim's contrast directly: context engineering as the successor to one-shot prompt cleverness.
+    - **Anchor:** `LLuKshphGOE` 00:01:00.239 → 00:01:06.159 · confidence: high
+    - **Quote:** "transforms what we've traditionally been doing with kind of oneshot clever phrasing prompt engineering"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — context engineering as connecting the dots across the knowledge a system already has.
     - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
     - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
@@ -835,6 +838,9 @@
   - [[040-HY_JyxAZsiE-spec-driven-development-agentic-coding-at-faang-scale-and-quality-al-harris-amazon-kiro|#40 — Al Harris, Amazon Kiro]] — specs externalise intent precisely because agents cannot infer local convention from context alone.
     - **Anchor:** `HY_JyxAZsiE` 00:15:57.120 → 00:16:01.759 · confidence: high
     - **Quote:** "specs are natural language, you're using specs as a control surface to explain what you want the system to do."
+  - [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57 — Eno Reyes, Factory AI]] — names the gap directly: the standard is held informally by people, so the automated form of it lags.
+    - **Anchor:** `ShuJ_CN6zr4` 00:04:46.160 → 00:04:50.720 · confidence: high
+    - **Quote:** "humans are pretty good at handling most of this stuff without the automated validation."
 - **Caveats / counterpoints:** Some teams genuinely lack standards rather than merely lacking documented ones; agents surface the absence, not a gap between two real things. The claim is specifically about standards that exist but are not operationalized.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** The agent is exposing the difference between standards the team possesses and standards the team can operationalize.
@@ -890,6 +896,9 @@
   - [[138-8SUJEqQNClw-agents-vs-workflows-why-not-both-sam-bhagwat-mastra-ai|#138 — Sam Bhagwat, Mastra.ai]] — durable, long-running agents require an explicit model of authority that ephemeral request-response agents can ignore.
     - **Anchor:** `8SUJEqQNClw` 00:12:04.240 → 00:12:07.600 · confidence: high
     - **Quote:** "most primitives the magic happens when you combine these things together"
+  - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — the bounding work is itself a substantial engineering cost, not a checkbox.
+    - **Anchor:** `kDEvo2__Ijg` 00:09:29.920 → 00:09:34.000 · confidence: high
+    - **Quote:** "building the guardrail systems themselves require you know a deep level of expert knowledge"
 - **Caveats / counterpoints:** Even purely advisory systems can cause harm through poorly calibrated confidence or selective presentation. The claim is specifically about the shift in the security posture required when the system can execute, not merely advise.
 - **Candidate chapters:** 6, 7
 - **Reusable phrasing:** A helpful model can get away with being vague about power. An acting system cannot.
