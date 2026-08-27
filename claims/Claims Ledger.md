@@ -852,13 +852,20 @@
 
 ## 45) The best evals encode judgment mined from operational history, not invented in a clean room
 - **Why it matters:** Writing evals from first principles produces tests that seem rigorous but miss the actual failure modes that appear in production. Operational history — support escalations, regression incidents, painful edge cases — already contains the judgment; the work is extraction, not invention. This makes evals a form of institutional memory, not just a quality gate.
-- **Support level:** strong
+- **Support level:** tentative
 - **Supporting sources:**
-  - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — production observability is what makes eval sets grounded rather than synthetic.
+  - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — cited for durable execution and human approvals. **This source does not discuss evals**: its transcript contains zero occurrences of "eval" or "observability" (checked 2026-08-27). It does not support this claim and is retained only until a real source is found.
     - **Anchor:** `1izYWsokr9s` 00:01:55.920 → 00:02:01.920 · confidence: high
     - **Quote:** "handle state potentially over long periods of time. There needs to be human interaction for approvals"
 - **Caveats / counterpoints:** Operational history has survivorship bias — it records failures that were noticed, not failures that went undetected. A pure pull-from-production strategy misses the unknown unknowns that synthetic evals can probe.
 - **Candidate chapters:** 4
+
+> **Correction (2026-08-27):** Support level lowered strong → tentative. The
+> 2026-08-22 correction below removed this claim's only on-point source as
+> non-existent, which left the claim resting on a talk that never mentions evals
+> at all — yet the level field still read "strong". The claim may well be true
+> and Chapter 4 argues it independently, but the ledger currently has no
+> evidence for it. Re-source or reword before it ships as a strong claim.
 
 > **Correction (2026-08-22):** This entry previously also cited "Govind Jain,
 > Stripe" (video id `xOJnLk4UMQ4`, playlist #60) for a "crawl commit history,
