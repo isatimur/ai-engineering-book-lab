@@ -4020,7 +4020,7 @@
     {
       "claim_id": "claims#45",
       "text": "The best evals encode judgment mined from operational history, not invented in a clean room",
-      "support_level": "strong",
+      "support_level": "tentative",
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
