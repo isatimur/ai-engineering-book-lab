@@ -27,7 +27,10 @@ chapter-ready as a cited claim.
 
 ## Verification key
 
-- **[R]** — read directly at the pinned SHA in this session.
+- **[R]** — read directly in this session. Content was fetched from `master` HEAD;
+  the pin was confirmed afterwards by comparing blob SHAs at `?ref=cd5ef8148158`
+  against HEAD (`AGENTS.md` = `956e28ea459f`, `SAFETY.md` = `2b76f00e0619`, both
+  identical), so the reads and the pin refer to the same content.
 - **[I]** — inferred from an [R] source, not separately confirmed.
 - **[U]** — unread; named by an [R] source but its own contents not fetched.
 
@@ -241,8 +244,9 @@ untrusted list — model output is treated as wire input, not as typed data.
 workspace imports through tsconfig `paths` to `src` and pass on a clean tree; gates
 consuming built `lib/` declare that dependency."
 
-Cross-check on this repo's own tooling: several scripts here read both generated
-artifacts and source notes. Worth an audit against this rule.
+Cross-check on this repo's own tooling: several scripts here appear to read both
+generated artifacts and source notes [I — impression from memory of this repo, not
+an audit]. Worth checking against this rule; see §5.3.
 
 ### 2.7 Keyless recorded-session snapshots
 
@@ -359,6 +363,31 @@ agent can route to the right package without a search.
 
 `plan/` as "plan mode as **logged state**" is the notable one: planning is a recorded
 session state, not an ephemeral prompt convention.
+
+**But the map has drifted, and that is the more useful finding.** [R] At the pinned SHA
+`packages/` holds **51 groups**. The `AGENTS.md` layout block names 36, of which **two do
+not exist**: `self-modification/` ("the agent inspects/mounts its own plugins") is absent
+from the tree, and `support/` is really `test-support/`. It omits 17 groups that do
+exist — including `sandbox/`, which this session read directly, plus `mcp`, `storage`,
+`schedule`, `jobs`, `host`, `client`, `goal`, `workspace`, `spill`, `attachment`,
+`code-runtime`, `extensions`, `feedback`, `runtime-diagnostics`, `session-query` and
+`test-support`.
+
+The linked deep reference is in far better shape: `packages/README.md` names **50 of the
+51** groups (only `mcp/` is unnamed), uses the correct `test-support/`, and does not
+mention `self-modification` at all [R].
+
+So the maintained reference stayed current while the summary inside the instruction file
+rotted. The mechanism is visible in §1.2: this repo gates JSDoc (`verify-export-jsdoc`),
+config (`verify-cordis-config`), i18n (`verify-client-ui-i18n`), doc budgets
+(`verify-doc-budgets`) and archived notes — but **nothing gates the layout block against
+the actual tree**, and it is the doc fact that drifted. That is §1.2's own principle
+turned on its author: the ungated fact is the one that goes stale, and a repository this
+disciplined still could not keep a hand-maintained summary honest by intention alone.
+
+For the book this is worth more than the praise it replaces. It is a clean, checkable
+instance of documentation drifting from code *in the best-instrumented repository
+available*, which is a stronger form of the argument than any well-maintained example.
 
 ### 3.4 CLAUDE.md as a symlink
 
