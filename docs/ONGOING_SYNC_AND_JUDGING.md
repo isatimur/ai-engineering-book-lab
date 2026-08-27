@@ -81,6 +81,7 @@ python3 99_Meta/scripts/fetch_video_descriptions.py       # descriptions
 python3 99_Meta/scripts/build_shared_artifacts.py         # registry + note sections
 python3 99_Meta/scripts/backfill_transcripts.py            # premiere-stranded notes
 python3 99_Meta/scripts/corpus_health.py                  # confirm zero debt
+python3 scripts/check_claims_integrity.py                 # anchors + prose quotes
 cd 99_Meta/transcripts && git add -A && git commit -m sync && git push
 ```
 
@@ -119,6 +120,22 @@ book *corrects* ASR mangling — it prints "TurboTax" where the transcript has
 fast-drafted second book came through clean while book 1, written slowly,
 carried one fabricated quotation (Ch4, fixed in fabaf7d). Care of drafting and
 quote fidelity turned out to be independent.
+
+### Quote fidelity: one command for both books
+
+```bash
+python3 scripts/check_claims_integrity.py          # both books, anchors + prose
+python3 scripts/check_claims_integrity.py --book 2 # one book
+python3 scripts/check_claims_integrity.py --strict # prose misses fail too
+```
+
+Status at 2026-08-27: **book 1 anchors 198/198, book 2 anchors 93/93**, prose
+76/109 and 46/62. Exit 1 on any unresolved **anchor** — that is a hard defect.
+Prose misses only fail under `--strict`, because a chapter legitimately differs
+from an ASR transcript.
+
+The two verifiers below still exist and are what this calls; use them directly
+when you want one surface.
 
 ### Anchor verification is local-only, and must be run by hand
 
