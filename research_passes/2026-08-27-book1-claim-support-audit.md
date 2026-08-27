@@ -65,6 +65,41 @@ argues it independently — but the ledger has no evidence for it right now.
   factual error about the ledger's own state, which is why it was fixed and this
   is only flagged.
 
+## Claims 1–28 reviewed by hand — one overreach, and a lesson about my own filter
+
+Book 1 holds up well here: most claims carry 3–7 quotes from different companies,
+which is why book 2's single-company-generalised-to-a-law failure mode barely
+appears. One exception:
+
+### #25 — "Context engineering is a primary engineering discipline, not a prompt trick" (strong, 4 quotes) — OVERREACH
+
+Its four quotes gesture at adjacent topics rather than establishing the claim:
+
+- Mendelevitch/Vectara — *"picking up the right documents and answering those questions is a really cool use case."* A use case, not a discipline.
+- Bercovici/WEKA — *"cool load generator that Kalen wrote that lets you configure agent swarms… with very specific SLOs"* — **off-topic**; a load generator has nothing to do with the claim. (This talk *does* discuss context engineering four times, so a far better quote exists in the same source.)
+- Chin/Neo4j — *"connect the dots with graph technology and solve problems like context engineering"* — the only quote that names the subject.
+- Bryk/Exa — *"the right agent in the future is going to be this system that decides what type of search"* — search routing. That transcript mentions "context engineering" **zero** times.
+
+The contrast that carries the claim's weight — **"not a prompt trick"** — has no
+quoted support at all.
+
+**Likely diagnosis: bad quote *selection*, not a bad claim.** Talk #104 discusses
+context engineering four times, including *"the reason context platform
+engineering is so important…"* — which would support the claim directly. So the
+claim may be sound and its sources adequate while the extracted anchors are the
+weakest lines available. **Flagged, not rewritten**, because the fix is
+re-anchoring from transcripts the author knows better than I do, and because
+unlike #45 this is not a factual error about the ledger's state.
+
+### The lesson about the filter
+
+My mechanical risk filter rated #25 **safe** — four quotes, no superlative in the
+title. It never looked at whether the quotes were *about* the claim. **Quote
+density is not evidence quality**, and a structural filter cannot see relevance.
+That is precisely why the agent-read audit found 13 overreaches in book 2 that no
+filter would catch, and why the remaining book-1 claims (43–54) still need a
+read rather than a scan.
+
 ## Honest limits
 
 - Two thirds of book 1's claims (1–28, 43–54) are **still unaudited** for
