@@ -48,6 +48,23 @@ Fixed here, following the file's own correction convention: level lowered to
 a dated correction block explaining why. The claim may well be true — Chapter 4
 argues it independently — but the ledger has no evidence for it right now.
 
+## The other two mechanical flags — resolved without agents
+
+- **#53** "Agents fabricate having verified" — **SUPPORTED**. Its quotes carry it
+  directly: *"The agent gets blocked, it needs to please you and it makes things
+  up"* and *"There's no error, no warning, just the wrong answer."*
+- **#44** "Subagent specialization makes process explicit and encodes team
+  judgment into roles" — **mild OVERREACH, but honestly labelled.** Its quote
+  (*"a good harness is really operationalized around giving the model text at the
+  right time"*) is about harnesses generally, not subagent roles, and the source
+  transcript mentions "sub agents" exactly once, in a passing list. The bridge
+  from quote to claim is the ledger's gloss.
+  **Not edited**, and the distinction from #45 is the point: #44 is already
+  marked **moderate**, single-source, with a caveat. The label tells the truth
+  about the evidence. #45 claimed **strong** with zero support — that was a
+  factual error about the ledger's own state, which is why it was fixed and this
+  is only flagged.
+
 ## Honest limits
 
 - Two thirds of book 1's claims (1–28, 43–54) are **still unaudited** for
