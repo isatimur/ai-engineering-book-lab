@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T12:20:09+00:00",
+  "generated_at": "2026-08-27T15:34:16+00:00",
   "corpus": {
     "videos": 1069
   },
@@ -12,9 +12,9 @@
   },
   "claims": {
     "total": 54,
-    "strong": 44,
+    "strong": 43,
     "moderate": 10,
-    "tentative": 0
+    "tentative": 1
   },
   "anchors": {
     "total": 198,
@@ -37,7 +37,7 @@
     "total": 124
   },
   "method": {
-    "research_passes": 41,
+    "research_passes": 42,
     "programs": 10,
     "tasks": 7
   },
