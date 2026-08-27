@@ -100,6 +100,59 @@ That is precisely why the agent-read audit found 13 overreaches in book 2 that n
 filter would catch, and why the remaining book-1 claims (43–54) still need a
 read rather than a scan.
 
+## Claims 43–54 — audit complete
+
+(#47–49 are absent by design: retracted as duplicate stubs in an earlier pass.)
+
+**Well supported:** #50, #51, #52, #53, #54. Several are the ledger at its best —
+#54's quotes state tiered model routing outright (*"cheap models for simple
+queries and expensive models for…"*), #52's name "the evaluation gap" in the
+speaker's own words, #51 carries the verification-bottleneck argument across
+three speakers including *"agents are not the bottleneck now… but we are."*
+
+**Two more OVERREACH, both `strong` on two quotes where one is off-topic:**
+
+- **#43** "Coding agents expose the gap between standards a team possesses and
+  standards it can operationalize." Reyes speaks about *"work put in over the
+  last 20 to 30 years around the automated validation and verification"*;
+  Harris about specs as *"a control surface"*. Both are adjacent; neither states
+  the possessed-vs-operationalized gap, which is the claim's whole content.
+- **#46** "Once an AI system can act autonomously, bounding its authority becomes
+  the price of deployment." Hron's quote supports only the *premise* (systems now
+  produce judgments and decisions). Bhagwat's — *"most primitives the magic
+  happens when you combine these things together"* — is off-topic. The
+  conclusion, that bounding authority is the price of deployment, has no quoted
+  support.
+
+## Final tally — book 1 complete (54 claims)
+
+| verdict | count |
+|---|---|
+| SUPPORTED | ~46 |
+| OVERREACH | 4 (#25, #43, #44, #46) |
+| UNSUPPORTED, now fixed | 1 (#45) |
+
+**Roughly 9% overreach, against book 2's 30%.** Book 1 is materially healthier,
+and the reason is structural: 198 quotes across 54 claims, usually from several
+different companies, versus book 2's 93 across 43 with ten single-quote claims.
+
+## The pattern behind every book-1 overreach
+
+It is not fabrication, and it is not the book-2 failure mode either. In all four
+cases the claim is the **author's synthesis** — often a genuinely good insight —
+while the attached quotes are *corroborating colour* from adjacent territory
+rather than evidence for the specific assertion. The quotes are real, correctly
+transcribed, and honestly anchored. They simply do not say what the claim says.
+
+That is a subtler failure than book 2's, and it is invisible to every mechanical
+check: anchors resolve, quote counts look healthy, no superlative appears in the
+title. Only reading the claim beside its quotes finds it.
+
+**Recommended disposition, none of it urgent:** for #43, #46 and #25, either
+re-anchor from the same talks (the sources plausibly do support these claims —
+#25's WEKA talk discusses context engineering four times) or soften the titles to
+what the current quotes carry. #44 is already honestly labelled moderate.
+
 ## Honest limits
 
 - Two thirds of book 1's claims (1–28, 43–54) are **still unaudited** for
