@@ -189,6 +189,50 @@ are worth knowing before the next re-score:
 3. **The gate reads git commit dates, not file mtimes.** Regenerating
    `judge-scores.json` without committing it leaves the gate reporting DRIFT.
 
+### Concurrency: the 2026-08-28 run (why a run can take an hour or 90 seconds)
+
+A fourth thing, learned the expensive way. `book_mash/runners/measurement.py`
+defaults to `BOOK_MASH_CONCURRENCY=3` and **`BOOK_MASH_HEAVY_CONCURRENCY=1`**.
+Those defaults are sized for Anthropic's tight tokens-per-minute ceiling, and
+the second one **serializes** the two large-prompt judges (`humanness`,
+`claim_defensibility`) — well over a thousand sequential calls. On OpenRouter
+that is pure waste, and the module's own comments say so: they recommend
+`BOOK_MASH_CONCURRENCY=16` and `BOOK_MASH_HEAVY_CONCURRENCY=12` for providers
+with generous limits, and note these are throughput knobs, not coverage ones,
+so scores stay comparable across runs.
+
+The first attempt ran **over an hour without finishing**. With the two env vars
+set, the same judge finished in about **90 seconds**. Set them:
+
+```sh
+export BOOK_MASH_CONCURRENCY=16 BOOK_MASH_HEAVY_CONCURRENCY=12
+```
+
+Two diagnostics, because the run is silent by default:
+
+- **Output is fully buffered** — an empty log is normal, not a hang. Use
+  `PYTHONUNBUFFERED=1`, or confirm progress out-of-band.
+- **A genuinely stuck run has zero TCP connections.** `lsof -p <python-pid> |
+  grep -c TCP` should show your concurrency setting. Zero CPU *and* zero
+  connections is the wedge the per-unit wall-clock cap exists to catch;
+  low CPU with N connections open is just network-bound, which is normal.
+
+### Cache replay is not re-judgment — measure it
+
+`panel-3model-v9` returned book-level numbers nearly identical to v8
+(humanness, usefulness and evidence_density matched to one decimal). That is
+**not** evidence of a stable judge: 74.3% of unit scores were replayed from the
+content-hash cache because the paragraph text had not changed. The llama run
+cost $0.0015, which is the tell.
+
+Before reading a delta as a quality signal, measure the replay fraction —
+compare non-derived unit scores between the two runs and count identical pairs.
+In v9 the 453 fresh judgments were concentrated in `claim_defensibility` (435),
+which bundles the ledger, and the ledger had just changed. That is the
+correct behaviour for a content-hash cache, but a run summary alone cannot
+distinguish it from a re-judgment. `docs/judge-module-evaluation.md` already
+names the missing instrument: a "% identical (cache-replay)" indicator.
+
 **Consequence, and it mirrors the audio policy above:** while chapters are being
 actively edited, a scores run is stale within hours — the corpus moved three
 times in roughly two hours during this run. Re-scoring on demand is cheap and
