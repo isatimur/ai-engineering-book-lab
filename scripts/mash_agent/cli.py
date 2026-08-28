@@ -507,6 +507,31 @@ def cmd_finalize(args) -> int:
     }, indent=2) + "\n")
 
     import statistics
+    # Calibration divergence check. Batches are judged independently, often by
+    # different agents, and a rubric can be specific about bands while leaving the
+    # *construct* open. On 2026-08-28 an evidence_density run split cleanly at the
+    # agent boundary -- batches 1-5 averaged 91.5, batches 6-10 averaged 42 -- because
+    # each half invented a different definition of the thing being counted. The
+    # manuscript did not change at batch 6; the construct did. A mean is meaningless
+    # across that seam, so surface it loudly rather than averaging through it.
+    per_batch: list[tuple[int, float]] = []
+    for p_ in files:
+        rows_ = json.loads(p_.read_text())["rows"]
+        if rows_:
+            per_batch.append((json.loads(p_.read_text())["batch"],
+                              statistics.mean(r["score_0_100"] for r in rows_)))
+    if len(per_batch) >= 4:
+        means = [m for _, m in per_batch]
+        spread = max(means) - min(means)
+        if spread >= 35:
+            lo = min(per_batch, key=lambda t: t[1])
+            hi = max(per_batch, key=lambda t: t[1])
+            print(f"\n  WARNING: batch means span {spread:.0f} points "
+                  f"(batch {lo[0]}={lo[1]:.0f}, batch {hi[0]}={hi[1]:.0f}).")
+            print("  That is usually judges applying different constructs, not the "
+                  "manuscript changing.\n  Treat the aggregate as unsafe until you "
+                  "have checked the reasoning fields across the seam.")
+
     by_dim: dict[str, list[float]] = {}
     for s in scores:
         by_dim.setdefault(s["dim_name"], []).append(s["score_0_100"])
