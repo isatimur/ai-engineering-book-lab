@@ -277,7 +277,7 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
         f"mash-agent ingest --run {run_id} --batch {n} --from <that-file>.json",
         "```",
         "",
-        "Each object must have exactly these keys:",
+        "Each object must have these keys:",
         "",
         "```json",
         json.dumps([{
@@ -286,8 +286,12 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
             "score_0_100": 72,
             "label": "moderate",
             "reasoning": "one or two sentences naming what the score turns on",
+            "actionable_takeaway": "what a reader could change on Monday - \"\" if none",
         }], indent=2),
         "```",
+        "",
+        "`actionable_takeaway` is required by the rubric above: fill it when the score "
+        "is moderate or better, leave it \"\" when weak or fail.",
         "",
         "`label` must match `score_0_100`: >=80 strong, >=50 moderate, >=20 weak, else fail.",
         "Ingest validates this and rejects the batch on any mismatch.",
@@ -354,9 +358,17 @@ def cmd_ingest(args) -> int:
         if not isinstance(reasoning, str) or not reasoning.strip():
             errors.append(f"{where}: reasoning must be a non-empty string")
             continue
+        takeaway = r.get("actionable_takeaway", "")
+        if not isinstance(takeaway, str):
+            errors.append(f"{where}: actionable_takeaway must be a string")
+            continue
+        # The rubric asks for a takeaway at moderate and above. Warn rather than
+        # reject: an empty one costs a reporting field, a rejected batch costs the
+        # whole batch. Older runs predate the field entirely.
         seen.add(k)
         rows.append({"unit_id": uid, "dim_name": dim, "score_0_100": float(score),
-                     "label": label, "reasoning": reasoning.strip()})
+                     "label": label, "reasoning": reasoning.strip(),
+                     "actionable_takeaway": takeaway.strip()})
 
     missing = expected - seen
     if missing:
@@ -410,13 +422,18 @@ def cmd_finalize(args) -> int:
     judged_by = sorted({json.loads(p.read_text()).get("judged_by") or "unknown" for p in files})
     model = "agent:" + "+".join(judged_by)
     scores = []
+    missing_takeaway = 0
     for p in files:
         for r in json.loads(p.read_text())["rows"]:
+            t = r.get("actionable_takeaway", "")
+            if r["score_0_100"] >= 50 and not t:
+                missing_takeaway += 1
             scores.append({
                 "dim_name": r["dim_name"], "unit_id": r["unit_id"],
                 "score_0_100": r["score_0_100"], "label": r["label"],
-                "reasoning": r["reasoning"], "evidence_refs": [],
-                "model": model, "cost_usd": 0.0, "derived": False,
+                "reasoning": r["reasoning"], "actionable_takeaway": t,
+                "evidence_refs": [], "model": model, "cost_usd": 0.0,
+                "derived": False,
             })
 
     now = datetime.now(timezone.utc).isoformat()
@@ -446,6 +463,9 @@ def cmd_finalize(args) -> int:
     for dim, vals in sorted(by_dim.items()):
         print(f"  {dim:22s} n={len(vals):4d}  mean {statistics.mean(vals):5.1f}  "
               f"median {statistics.median(vals):5.1f}")
+    if missing_takeaway:
+        print(f"  note: {missing_takeaway} unit(s) scored >=50 with no "
+              f"actionable_takeaway (rubric asks for one at moderate and above)")
     print(f"\nwrote {d / 'scores.json'} and {d / 'run.json'}")
     print("NOT a canonical panel run — do not merge into panel-3model-* or judge-scores.json.")
     return 0

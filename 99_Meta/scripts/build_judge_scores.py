@@ -100,6 +100,11 @@ _CONNECTIVE_MARKERS = (
     "reflective", "meta-commentary", "meta commentary", "introduces",
     "introduction", "opening", "thesis", "motivat", "context-setting",
     "closes the chapter", "pivot", "aphoris",
+    # List stems ("The useful spectrum is simpler:") carry no content because the
+    # list beneath them does. Both the API panel and the 2026-08-28 agent run
+    # independently put them in the fail band, but no marker above matched the
+    # judges' wording for them ("colon stem", "list stem", "introducing the list").
+    "stem", "introducing", "lead-in", "lead in", "colon",
 )
 
 

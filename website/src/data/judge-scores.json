@@ -83,8 +83,8 @@
     "evidence_density": 70.0,
     "claim_defensibility": 94.6,
     "redundancy": 90.0,
-    "usefulness_substantive": 51.3,
-    "usefulness_connective": 61,
+    "usefulness_substantive": 51.7,
+    "usefulness_connective": 74,
     "usefulness_total": 537
   },
   "stale_chapter_numbers": [
@@ -101,7 +101,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -112,8 +112,8 @@
         "claim_defensibility": 94.7,
         "redundancy": 100.0,
         "n_paragraphs": 49,
-        "usefulness_substantive": 47.9,
-        "usefulness_connective": 8,
+        "usefulness_substantive": 48.8,
+        "usefulness_connective": 9,
         "usefulness_total": 49
       },
       "labels": {
@@ -246,7 +246,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -257,8 +257,8 @@
         "claim_defensibility": 94.6,
         "redundancy": 90.0,
         "n_paragraphs": 106,
-        "usefulness_substantive": 51.3,
-        "usefulness_connective": 9,
+        "usefulness_substantive": 51.7,
+        "usefulness_connective": 10,
         "usefulness_total": 76
       },
       "labels": {
@@ -392,7 +392,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -403,8 +403,8 @@
         "claim_defensibility": 93.9,
         "redundancy": 85.0,
         "n_paragraphs": 62,
-        "usefulness_substantive": 63.5,
-        "usefulness_connective": 0,
+        "usefulness_substantive": 63.9,
+        "usefulness_connective": 1,
         "usefulness_total": 49
       },
       "labels": {
@@ -538,7 +538,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -549,8 +549,8 @@
         "claim_defensibility": 94.0,
         "redundancy": 85.0,
         "n_paragraphs": 73,
-        "usefulness_substantive": 57.9,
-        "usefulness_connective": 8,
+        "usefulness_substantive": 58.9,
+        "usefulness_connective": 10,
         "usefulness_total": 56
       },
       "labels": {
@@ -685,7 +685,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -696,8 +696,8 @@
         "claim_defensibility": 93.9,
         "redundancy": 83.0,
         "n_paragraphs": 76,
-        "usefulness_substantive": 56.3,
-        "usefulness_connective": 8,
+        "usefulness_substantive": 58.2,
+        "usefulness_connective": 11,
         "usefulness_total": 57
       },
       "labels": {
@@ -831,7 +831,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -842,8 +842,8 @@
         "claim_defensibility": 93.0,
         "redundancy": 85.0,
         "n_paragraphs": 66,
-        "usefulness_substantive": 63.2,
-        "usefulness_connective": 4,
+        "usefulness_substantive": 64.4,
+        "usefulness_connective": 6,
         "usefulness_total": 58
       },
       "labels": {
@@ -989,7 +989,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1000,8 +1000,8 @@
         "claim_defensibility": 93.8,
         "redundancy": 85.0,
         "n_paragraphs": 80,
-        "usefulness_substantive": 64.7,
-        "usefulness_connective": 7,
+        "usefulness_substantive": 66.4,
+        "usefulness_connective": 10,
         "usefulness_total": 60
       },
       "labels": {
@@ -1137,7 +1137,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1288,7 +1288,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1437,7 +1437,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -2282,7 +2282,7 @@
     },
     {
       "run_id": "panel-3model-v8",
-      "version_id": "git:2eff18d",
+      "version_id": "git:ce9e3b3",
       "finished_at": "2026-08-22T23:55:14.489939+00:00",
       "partial": false,
       "judge_prompt_versions": null,
@@ -2293,8 +2293,8 @@
         "evidence_density": 70.0,
         "claim_defensibility": 94.6,
         "redundancy": 90.0,
-        "usefulness_substantive": 51.3,
-        "usefulness_connective": 61,
+        "usefulness_substantive": 51.7,
+        "usefulness_connective": 74,
         "usefulness_total": 537
       },
       "chapters": {
@@ -2306,8 +2306,8 @@
           "claim_defensibility": 94.7,
           "redundancy": 100.0,
           "n_paragraphs": 49,
-          "usefulness_substantive": 47.9,
-          "usefulness_connective": 8,
+          "usefulness_substantive": 48.8,
+          "usefulness_connective": 9,
           "usefulness_total": 49
         },
         "02": {
@@ -2318,8 +2318,8 @@
           "claim_defensibility": 94.6,
           "redundancy": 90.0,
           "n_paragraphs": 106,
-          "usefulness_substantive": 51.3,
-          "usefulness_connective": 9,
+          "usefulness_substantive": 51.7,
+          "usefulness_connective": 10,
           "usefulness_total": 76
         },
         "03": {
@@ -2330,8 +2330,8 @@
           "claim_defensibility": 93.9,
           "redundancy": 85.0,
           "n_paragraphs": 62,
-          "usefulness_substantive": 63.5,
-          "usefulness_connective": 0,
+          "usefulness_substantive": 63.9,
+          "usefulness_connective": 1,
           "usefulness_total": 49
         },
         "04": {
@@ -2342,8 +2342,8 @@
           "claim_defensibility": 94.0,
           "redundancy": 85.0,
           "n_paragraphs": 73,
-          "usefulness_substantive": 57.9,
-          "usefulness_connective": 8,
+          "usefulness_substantive": 58.9,
+          "usefulness_connective": 10,
           "usefulness_total": 56
         },
         "05": {
@@ -2354,8 +2354,8 @@
           "claim_defensibility": 93.9,
           "redundancy": 83.0,
           "n_paragraphs": 76,
-          "usefulness_substantive": 56.3,
-          "usefulness_connective": 8,
+          "usefulness_substantive": 58.2,
+          "usefulness_connective": 11,
           "usefulness_total": 57
         },
         "06": {
@@ -2366,8 +2366,8 @@
           "claim_defensibility": 93.0,
           "redundancy": 85.0,
           "n_paragraphs": 66,
-          "usefulness_substantive": 63.2,
-          "usefulness_connective": 4,
+          "usefulness_substantive": 64.4,
+          "usefulness_connective": 6,
           "usefulness_total": 58
         },
         "07": {
@@ -2378,8 +2378,8 @@
           "claim_defensibility": 93.8,
           "redundancy": 85.0,
           "n_paragraphs": 80,
-          "usefulness_substantive": 64.7,
-          "usefulness_connective": 7,
+          "usefulness_substantive": 66.4,
+          "usefulness_connective": 10,
           "usefulness_total": 60
         },
         "08": {
