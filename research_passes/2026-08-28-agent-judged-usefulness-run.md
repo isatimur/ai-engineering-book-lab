@@ -141,3 +141,35 @@ Usefulness is a **drift detector for aggregate operational density across versio
 It is not a quality gate, not a per-paragraph editing signal (44% band agreement), and
 not a number to optimise. Treat a large *drop* as worth investigating and everything
 else as noise.
+
+## Update (same day): the aggregate agreement was a coincidence
+
+`humanness` was then judged the same way (572 units, six parallel judges) and
+compared against the same panel. The result does **not** reproduce:
+
+| dim | matched units | agent | panel | diff | Pearson r | band agreement |
+|---|---|---|---|---|---|---|
+| usefulness | 437 | 56.4 | 56.4 | **0.0** | 0.603 | 44% |
+| humanness | 437 | 72.3 | 86.1 | **−13.8** | **0.260** | 34% |
+
+On humanness the two instruments differ by nearly 14 points *and* barely correlate
+at all (r = 0.26 — close to unrelated).
+
+**So the earlier conclusion in this pass is wrong as stated.** I wrote that
+usefulness is "trustworthy as a book-level aggregate and untrustworthy at the
+paragraph level", inferring a property of the *method* from one dimension. The
+identical 56.4 was a coincidence, not evidence that agent and API judging converge
+in aggregate. They did on one dimension and did not on the next.
+
+The defensible statement is narrower: **an agent-judged run and an API-judged run are
+different instruments at every level, and neither their per-unit scores nor their
+aggregates transfer.** Compare an agent run only against another agent run, and a
+panel run only against another panel run. The two series are not interchangeable, and
+`mash-agent`'s guards already enforce that by construction.
+
+What survives from the original finding is the part that was never about agreement:
+usefulness's per-unit judgement is noisy (44% band agreement between any two careful
+judges), so it should not drive per-paragraph editing decisions. Humanness is noisier
+still (34%). The class-level patterns both instruments surface — connective tissue is
+the weakest material, drafting-note voice reads as inhuman — proved far more reliable
+than any score, and produced the only manuscript edit this whole exercise justified.
