@@ -17,7 +17,7 @@ A company may have millions of documents. A codebase may have thousands of files
 
 That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
 
-Jack Morris offers the cleanest line in the source corpus: “Stuffing context is not memory.” It is a sharp sentence because it attacks the lazy default directly. Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
+Jack Morris attacks the lazy default directly: “Stuffing context is not memory.” Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
 
 Nupur Sharma’s Qodo work gives the mechanism behind it. Models privilege the start and end of the window and degrade in the middle, so a longer prompt does not buy more attention; it buys a wider blind spot. Her detection cue is concrete: when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly — summarization, graphs, iterative retrieval — not a bigger window.
 

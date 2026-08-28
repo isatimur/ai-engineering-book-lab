@@ -53,7 +53,7 @@ Ara Khan, who works on evals at Cline, names the two ways teams get this wrong. 
 
 ## Real-world tasks beat synthetic cleverness
 
-Once teams accept that the old unit of evaluation is insufficient, they face a second problem: what should replace it? Here Naman Jain offers the most useful methodological rule in the corpus: “Your task should be natural and sourced from the real world and then you should be able to reliably grade them.” That sentence is a quiet standard for seriousness. It rejects two common temptations at once.
+Once teams accept that the old unit of evaluation is insufficient, they face a second problem: what should replace it? Naman Jain gives the methodological rule: “Your task should be natural and sourced from the real world and then you should be able to reliably grade them.” That sentence is a quiet standard for seriousness. It rejects two common temptations at once.
 
 The first temptation is synthetic cleverness: tasks invented because they are easy to generate, easy to score, or flattering to the system. The second is unscored realism: impressive examples that feel close to reality but cannot be graded consistently enough to support iteration. Good eval design has to balance both. The task should resemble actual work, and the scoring should be stable enough that teams can compare versions, prompts, tools, and models over time.
 
@@ -85,7 +85,7 @@ This is why application-layer evals tend to look messier than leaderboard metric
 
 ## Observability becomes tomorrow’s eval set
 
-The best line in the chapter may belong to Phil Hetzel: “Observability and eval... it’s actually the same problem from a systems perspective.” That sentence is powerful because it collapses a false separation.
+Phil Hetzel collapses the false separation directly: “Observability and eval... it’s actually the same problem from a systems perspective.”
 
 Teams often imagine observability as the thing you do after deployment and evals as the thing you do before deployment. In reality, the two should feed each other continuously. Observability shows you what the system is actually doing in the wild. Evals let you replay, score, compare, and improve against those patterns before you ship the next change.
 

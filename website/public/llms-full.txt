@@ -432,7 +432,7 @@ That is what harness engineering really means. Not a fancier wrapper around a mo
 
 This is where spec-driven development becomes more than a documentation preference. In a purely human workflow, specs often compete with direct conversation. A strong team can get away with more ambiguity because engineers resolve a surprising amount through meetings, hallway discussions, pull-request comments, and local intuition. In an AI-mediated workflow, that ambiguity becomes more expensive. Context windows expire. Tasks get retried. Work gets decomposed into subproblems. Different agents touch different layers of the same system. Without persistent artifacts, intent keeps dissolving back into transient conversation. The operational test is whether intent would survive a fresh agent picking up the task cold; if not, it belongs in a persistent artifact, not the prompt.
 
-Al Harris offers one of the clearest framings in the corpus: “The spec then becomes the natural language representation of your system. It has constraints, it has concerns around functional requirements, non-functional requirements...” That framing matters because it upgrades the spec from document to control surface. Treating it that way has a concrete consequence: when the output is wrong, you fix the line in the spec that under-specified it and regenerate rather than hand-patch the output. Repeatedly editing code the next run overwrites is the signal that the spec, not the patch, is the thing to change.
+Al Harris puts it plainly: “The spec then becomes the natural language representation of your system. It has constraints, it has concerns around functional requirements, non-functional requirements...” That framing matters because it upgrades the spec from document to control surface. Treating it that way has a concrete consequence: when the output is wrong, you fix the line in the spec that under-specified it and regenerate rather than hand-patch the output. Repeatedly editing code the next run overwrites is the signal that the spec, not the patch, is the thing to change.
 
 Harris makes a second point that is just as important: spec-driven development is “a structured workflow that we push you through to reliably deliver high-quality software... requirements, design, and execution phases.”
 
@@ -562,7 +562,7 @@ Ara Khan, who works on evals at Cline, names the two ways teams get this wrong. 
 
 ## Real-world tasks beat synthetic cleverness
 
-Once teams accept that the old unit of evaluation is insufficient, they face a second problem: what should replace it? Here Naman Jain offers the most useful methodological rule in the corpus: “Your task should be natural and sourced from the real world and then you should be able to reliably grade them.” That sentence is a quiet standard for seriousness. It rejects two common temptations at once.
+Once teams accept that the old unit of evaluation is insufficient, they face a second problem: what should replace it? Naman Jain gives the methodological rule: “Your task should be natural and sourced from the real world and then you should be able to reliably grade them.” That sentence is a quiet standard for seriousness. It rejects two common temptations at once.
 
 The first temptation is synthetic cleverness: tasks invented because they are easy to generate, easy to score, or flattering to the system. The second is unscored realism: impressive examples that feel close to reality but cannot be graded consistently enough to support iteration. Good eval design has to balance both. The task should resemble actual work, and the scoring should be stable enough that teams can compare versions, prompts, tools, and models over time.
 
@@ -594,7 +594,7 @@ This is why application-layer evals tend to look messier than leaderboard metric
 
 ## Observability becomes tomorrow’s eval set
 
-The best line in the chapter may belong to Phil Hetzel: “Observability and eval... it’s actually the same problem from a systems perspective.” That sentence is powerful because it collapses a false separation.
+Phil Hetzel collapses the false separation directly: “Observability and eval... it’s actually the same problem from a systems perspective.”
 
 Teams often imagine observability as the thing you do after deployment and evals as the thing you do before deployment. In reality, the two should feed each other continuously. Observability shows you what the system is actually doing in the wild. Evals let you replay, score, compare, and improve against those patterns before you ship the next change.
 
@@ -688,7 +688,7 @@ A company may have millions of documents. A codebase may have thousands of files
 
 That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
 
-Jack Morris offers the cleanest line in the source corpus: “Stuffing context is not memory.” It is a sharp sentence because it attacks the lazy default directly. Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
+Jack Morris attacks the lazy default directly: “Stuffing context is not memory.” Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
 
 Nupur Sharma’s Qodo work gives the mechanism behind it. Models privilege the start and end of the window and degrade in the middle, so a longer prompt does not buy more attention; it buys a wider blind spot. Her detection cue is concrete: when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly — summarization, graphs, iterative retrieval — not a bigger window.
 
