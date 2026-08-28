@@ -52,6 +52,28 @@ Two Minor findings were deferred from Task 1's review — neither blocks merge:
 
 Card copy (title "The Model Layer", description, "Drafting" status label) was written out concretely in Task 1 rather than left as an implementer decision — this resolves the spec's "Open implementation-time decisions" section by explicit choice, not by re-opening it here.
 
+> **Correction (2026-08-28, final fix wave — see "Final fix wave" section below):** the claim above, that writing "The Model Layer" into `Books.tsx` "resolves" the spec's title question, was wrong. Book 2's canonical chapter-packets source (`05_Book_Ideas/Second Book - Chapter Packets/00_README.md`) frames "The Model Layer" as Part I's name only, not the whole book's title, and the original design spec's own working title is the explicitly-flagged placeholder "Beyond the Harness" (`docs/superpowers/specs/2026-07-27-second-book-design.md:5`, with "Finalize working title" still listed as open at line 80). There is no finalized public title for book 2 anywhere in this repo. `Books.tsx`'s "The Model Layer" was also inconsistent with `SecondBookReader.tsx`'s own `<h1>`, which already read "The Model Layer & The Long Tail" — a second, undetected drift this pass's review missed. The title question was never resolved; it was silently closed. Treat it as an open, interim decision pending the author's final call.
+
 ## Summary
 
 All 8 steps of Task 5 completed. Lint clean, 95/95 tests pass, production build succeeds and produces a valid `books.html` with no leaked raw syntax, book 1's `Catalogue.tsx` is provably untouched across the whole plan, book 2's `noindex` is provably unchanged, and a real-browser Playwright check confirms both cards render, both links navigate correctly, and the Explore-menu "Books" entry works from both `/` and the reader chrome (`/read`) with zero attributable console errors.
+
+## Final fix wave (2026-08-28)
+
+Whole-branch review surfaced three Important findings and three bundled Minor findings after the Task 5 pass above closed. This section documents the single fix-wave commit that addressed all of them — the plan's final fix wave; no second wave follows.
+
+**Finding 1 — book 2's title was inconsistent across pages, and this pass log wrongly called the title question "resolved."** `Books.tsx` hardcoded `"The Model Layer"` (JSON-LD `name` and card `<h2>`); `SecondBookReader.tsx`'s `<h1>` already read `"The Model Layer & The Long Tail"` — two different strings, neither a finalized title (see the correction note above the old "Summary" section). Fix: added `export const BOOK_TWO_TITLE = 'The Model Layer & The Long Tail'` to `website/src/data/bookChaptersTwo.ts`, documented inline as an interim/unconfirmed title, and pointed both `Books.tsx` and `SecondBookReader.tsx` at the same constant so they can no longer drift independently. This is still not a finalized title — the constant's own comment says so — it is now a *single* interim string instead of two conflicting ones.
+
+**Finding 2 — `Books.tsx` mislabeled a stat and omitted a spec'd field.** Book 1's card read "10 chapters · 10 drafted" (`stats.chapters.total` mislabeled as "drafted," and redundant with `chapters.length`). Fix: replaced with "10 chapters · 33,793 words," reusing the existing `totalWordCount` export from `website/src/lib/readingStats.ts` (no new computation), matching the chapter-count-plus-word-count format the spec asked for and that book 2's card already used.
+
+**Finding 3 — the JSON-LD builder lived inline in `Books.tsx` instead of the shared, tested module.** Moved `booksCollectionJsonLd` into `website/src/lib/structuredData.ts` (same pattern as `ledgersIndexJsonLd`), updated `Books.tsx` to import it, and added a `describe('booksCollectionJsonLd', ...)` block plus a sweep-list entry to `website/src/lib/structuredData.test.ts`'s "JSON-LD serialization safety" test. `/books` is no longer the only page whose JSON-LD is untested.
+
+**Minor A — unused `absoluteUrl` import.** Removed from `Books.tsx` along with the now-unused `SITE_ORIGIN` import; both became dead once the inline JSON-LD builder moved out.
+
+**Minor B — literal "spacer" text in static HTML.** Replaced `<span className="opacity-0" aria-hidden>spacer</span>` in `Books.tsx`'s header with a bare `<span />`, matching the idiom already used in `SecondBookReader.tsx`'s header.
+
+**Minor C — duplicated word-count `reduce`.** Added `export const chaptersTwoWordCount = chaptersTwo.reduce((sum, c) => sum + c.wordCount, 0)` to `website/src/data/bookChaptersTwo.ts` (mirrors `totalWordCount` in `readingStats.ts`); `Books.tsx` and `SecondBookReader.tsx` both now import it instead of each computing their own copy.
+
+**Verification.** `npm run lint` (`tsc --noEmit`): clean. `npm run test` (Vitest): 19 test files, **97 tests, all passed** (up from 95 — the two new `booksCollectionJsonLd` assertions; no existing test weakened or removed). `npm run build`: succeeded; `grep -o 'The Model Layer[^<"]*' dist/books.html` and the same against `dist/second-book.html` both resolve to `The Model Layer & The Long Tail` (one HTML-entity-encoded, one raw JSON-LD — same underlying string); `grep`-confirmed `dist/books.html` book-1 card now reads `10 chapters · 33,793 words` in place of the old `10 chapters · 10 drafted`.
+
+**Commit:** `<FIX_WAVE_COMMIT_HASH>` (filled in immediately after commit; see the follow-up docs commit if this placeholder is still present — matches this repo's own precedent of a short docs follow-up commit to backfill a pass log's own commit hash, per `3988e35`).

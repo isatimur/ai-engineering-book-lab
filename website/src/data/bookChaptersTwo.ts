@@ -17,6 +17,11 @@ import type { BookChapter } from './bookChapters';
 
 const countWords = (content: string) => content.trim().split(/\s+/).filter(Boolean).length;
 
+// Interim, unconfirmed public title — matches SecondBookReader's own <h1> so
+// both pages agree, but the author has not finalized a title for book 2 yet.
+// See research_passes/2026-08-28-books-collection-page.md.
+export const BOOK_TWO_TITLE = 'The Model Layer & The Long Tail';
+
 export const chaptersTwo: BookChapter[] = [
   {
     number: '01',
@@ -83,6 +88,9 @@ export const chaptersTwo: BookChapter[] = [
     wordCount: countWords(chapter07),
   },
 ];
+
+/** Total word count across all book-2 chapters — mirrors `totalWordCount` in `../lib/readingStats`. */
+export const chaptersTwoWordCount = chaptersTwo.reduce((sum, c) => sum + c.wordCount, 0);
 
 /** Canonical per-chapter URL, e.g. `/second-book/the-turn-to-rl`. */
 export const chapterTwoPath = (c: BookChapter): string => `/second-book/${c.slug}`;

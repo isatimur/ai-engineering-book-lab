@@ -4,6 +4,7 @@ import { bookDefinitionEntries, whatIsThisBookAnswer } from '../data/geo';
 import type { ChapterVideo } from '../data/chapterVideos';
 import type { EventLedger } from './eventLedgers';
 import { listEventLedgers, ledgerStats } from './eventLedgers';
+import { BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
 
 /**
  * schema.org JSON-LD builders. Every field traces to real book/chapter data —
@@ -157,6 +158,28 @@ export const chapterVideoJsonLd = (chapter: BookChapter, video: ChapterVideo) =>
     name: chapter.title,
     url: absoluteUrl(chapterPath(chapter)),
   },
+});
+
+/** ItemList for the /books collection page — links both books. */
+export const booksCollectionJsonLd = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Books — AI Engineer Press',
+  url: `${SITE_ORIGIN}/books`,
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      url: `${SITE_ORIGIN}/`,
+      name: BOOK.title,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      url: `${SITE_ORIGIN}/second-book`,
+      name: BOOK_TWO_TITLE,
+    },
+  ],
 });
 
 /** Breadcrumb trail: Home → The Book → Chapter N. */

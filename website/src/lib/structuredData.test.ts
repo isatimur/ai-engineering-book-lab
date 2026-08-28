@@ -6,11 +6,13 @@ import {
   whatIsThisBookJsonLd,
   aboutTheMethodJsonLd,
   chapterVideoJsonLd,
+  booksCollectionJsonLd,
 } from './structuredData';
 import { chapters } from '../data/bookChapters';
 import { SITE_ORIGIN, BOOK } from '../data/book';
 import { bookDefinitionEntries } from '../data/geo';
 import { chapterVideoFor } from '../data/chapterVideos';
+import { BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
 
 const ORIGIN = SITE_ORIGIN;
 
@@ -120,6 +122,25 @@ describe('breadcrumbJsonLd', () => {
   });
 });
 
+describe('booksCollectionJsonLd', () => {
+  const list = booksCollectionJsonLd();
+
+  it('is a schema.org ItemList', () => {
+    expect(list['@context']).toBe('https://schema.org');
+    expect(list['@type']).toBe('ItemList');
+    expect(list.url).toBe(`${ORIGIN}/books`);
+  });
+
+  it('lists both books', () => {
+    expect(list.itemListElement).toHaveLength(2);
+    expect(list.itemListElement.map((x) => x.position)).toEqual([1, 2]);
+    expect(list.itemListElement[0].name).toBe(BOOK.title);
+    expect(list.itemListElement[0].url).toBe(`${ORIGIN}/`);
+    expect(list.itemListElement[1].name).toBe(BOOK_TWO_TITLE);
+    expect(list.itemListElement[1].url).toBe(`${ORIGIN}/second-book`);
+  });
+});
+
 describe('JSON-LD serialization safety', () => {
   it('every node serializes to valid JSON', () => {
     const all = [
@@ -129,6 +150,7 @@ describe('JSON-LD serialization safety', () => {
       whatIsThisBookJsonLd(),
       aboutTheMethodJsonLd(),
       chapterVideoJsonLd(chapters[0], chapterVideoFor(chapters[0].slug)!),
+      booksCollectionJsonLd(),
     ];
     for (const node of all) {
       expect(() => JSON.parse(JSON.stringify(node))).not.toThrow();

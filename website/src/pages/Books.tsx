@@ -1,45 +1,22 @@
 import { Link } from 'react-router-dom';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
-import { BOOK, SITE_ORIGIN, absoluteUrl } from '../data/book';
+import { BOOK } from '../data/book';
 import { chapters } from '../data/bookChapters';
-import { chaptersTwo } from '../data/bookChaptersTwo';
+import { chaptersTwo, chaptersTwoWordCount, BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
+import { totalWordCount } from '../lib/readingStats';
+import { booksCollectionJsonLd } from '../lib/structuredData';
 import stats from '../data/stats.json';
-
-const countBook2Words = () => chaptersTwo.reduce((sum, c) => sum + c.wordCount, 0);
-
-const booksCollectionJsonLd = () => ({
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: 'Books — AI Engineer Press',
-  url: `${SITE_ORIGIN}/books`,
-  itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      url: `${SITE_ORIGIN}/`,
-      name: BOOK.title,
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      url: `${SITE_ORIGIN}/second-book`,
-      name: 'The Model Layer',
-    },
-  ],
-});
 
 const Header = () => (
   <header className="no-print flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
     <Link to="/" className="hover:opacity-60">← Catalogue</Link>
     <span>AI Engineer Press · Books</span>
-    <span className="opacity-0" aria-hidden>spacer</span>
+    <span />
   </header>
 );
 
 export const Books = () => {
-  const book2Words = countBook2Words();
-
   return (
     <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)]">
       <Seo
@@ -74,7 +51,7 @@ export const Books = () => {
               {BOOK.subtitle}
             </p>
             <p className="font-mono text-[10px] uppercase tracking-[0.15em] opacity-60">
-              {chapters.length} chapters · {stats.chapters.total} drafted
+              {chapters.length} chapters · {totalWordCount.toLocaleString()} words
             </p>
           </Link>
 
@@ -86,13 +63,13 @@ export const Books = () => {
               Drafting
             </p>
             <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-              The Model Layer
+              {BOOK_TWO_TITLE}
             </h2>
             <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
               An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text.
             </p>
             <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-              {chaptersTwo.length} chapters · {book2Words.toLocaleString()} words · {stats.book2.claims.total} claims · {stats.book2.anchors.total} anchors
+              {chaptersTwo.length} chapters · {chaptersTwoWordCount.toLocaleString()} words · {stats.book2.claims.total} claims · {stats.book2.anchors.total} anchors
             </p>
           </Link>
         </div>

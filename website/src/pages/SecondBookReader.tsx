@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { chaptersTwo, chapterTwoPath } from '../data/bookChaptersTwo';
+import { chaptersTwo, chapterTwoPath, chaptersTwoWordCount, BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
 import { EvidenceRail } from '../EvidenceRail';
 import evidenceTwoData from '../evidence-2.json';
@@ -17,8 +17,7 @@ import { Seo } from '../components/Seo';
  * Deliberately unlinked from nav/Catalogue — reachable only by direct URL.
  */
 export const SecondBookReader = () => {
-  const totalWords = chaptersTwo.reduce((sum, c) => sum + c.wordCount, 0);
-
+  const totalWords = chaptersTwoWordCount;
   return (
     <>
       <Seo
@@ -40,7 +39,7 @@ export const SecondBookReader = () => {
             {chaptersTwo.length} chapters · {formatReadingTime(totalWords)}
           </p>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
-            The Model Layer &amp; The Long Tail
+            {BOOK_TWO_TITLE}
           </h1>
           <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-10">
             Working draft. Part I breaks the assumption that the model is given; Part II breaks the
