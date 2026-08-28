@@ -204,17 +204,26 @@ so scores stay comparable across runs.
 The first attempt ran **over an hour without finishing**. With the two env vars
 set, the same judge finished in about **90 seconds**. Set them:
 
+**Use the shipped defaults (`3` / `1`). Do not raise them on this key.**
+
 ```sh
-export BOOK_MASH_CONCURRENCY=6 BOOK_MASH_HEAVY_CONCURRENCY=2
+# no concurrency env vars at all — the defaults are correct here
+export BOOK_MASH_JUDGE_PROVIDER=openrouter BOOK_MASH_JUDGE_MODEL=<model>
 ```
 
-**Do NOT use the 16/12 the module comments suggest.** Tried on 2026-08-28 and it
-**silently destroyed the run**. OpenRouter rejected the large-prompt
-`claim_defensibility` calls with **HTTP 402** — *"This request would exceed your
-available credits given your current in-flight requests"* — because 12
-concurrent large prompts reserve more credit than the key's ceiling allows in
-flight. It is a **credit-reservation** limit, not a TPM limit, so no amount of
-backoff recovers it.
+Two attempts on 2026-08-28 (`16/12`, then `6/2`) both **silently destroyed the
+run**. The cause is not a rate limit and not TPM. OpenRouter returns **HTTP 402
+`in_flight_budget_exhausted`** — *"This request would exceed your available
+credits given your current in-flight requests"* — because it reserves the
+worst-case cost of each in-flight request against the key's cap. The key here
+has a **$15 daily** limit (`limit_reset: daily`), and the large-prompt
+`claim_defensibility` calls reserve enough that even **two** in flight can
+exhaust it. Credit was never actually spent: $14.05 remained while the calls
+were failing.
+
+So the heavy semaphore's default of **1** is not conservatism to be tuned away —
+on a capped key it is the thing keeping the run valid. Raising it does not buy
+throughput, it buys error rows.
 
 The damage was invisible in the run summary: every run reported
 `Status: completed`, and the book-level heatmap printed a plausible
