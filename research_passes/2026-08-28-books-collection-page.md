@@ -76,4 +76,4 @@ Whole-branch review surfaced three Important findings and three bundled Minor fi
 
 **Verification.** `npm run lint` (`tsc --noEmit`): clean. `npm run test` (Vitest): 19 test files, **97 tests, all passed** (up from 95 — the two new `booksCollectionJsonLd` assertions; no existing test weakened or removed). `npm run build`: succeeded; `grep -o 'The Model Layer[^<"]*' dist/books.html` and the same against `dist/second-book.html` both resolve to `The Model Layer & The Long Tail` (one HTML-entity-encoded, one raw JSON-LD — same underlying string); `grep`-confirmed `dist/books.html` book-1 card now reads `10 chapters · 33,793 words` in place of the old `10 chapters · 10 drafted`.
 
-**Commit:** `<FIX_WAVE_COMMIT_HASH>` (filled in immediately after commit; see the follow-up docs commit if this placeholder is still present — matches this repo's own precedent of a short docs follow-up commit to backfill a pass log's own commit hash, per `3988e35`).
+**Commit:** `6576fd6` — `fix(books): reconcile book-2 title, fix stat label, move JSON-LD to shared module`.
