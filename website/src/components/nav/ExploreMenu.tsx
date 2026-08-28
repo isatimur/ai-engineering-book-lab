@@ -10,6 +10,7 @@ export type ExploreItem = {
 };
 
 export const EXPLORE_ITEMS: ExploreItem[] = [
+  { href: '/books', label: 'Books', description: 'The full AI Engineer Press library' },
   { href: '/evidence', label: 'Evidence & metrics', description: 'Claims ledger and corpus stats' },
   { href: '/read/graph', label: 'Evidence graph', description: 'Interactive claim–source map' },
   { href: '/ledgers', label: 'Fact-checked ledgers', description: 'Event ledgers with yt:// anchors' },
