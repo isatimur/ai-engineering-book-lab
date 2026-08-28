@@ -35,6 +35,8 @@ No new data source was created — the spec's "Data" section is satisfied by con
 
 Closed the browser and killed the dev server after the check; working tree left clean (no `.playwright-cli/` artifacts committed).
 
+**SSG-output freebie check:** the browser check above ran against the dev server; `grep -c 'The Model Layer' website/dist/books.html` on the actual static build output returns `2` (heading + JSON-LD `name`), confirming the shipped static HTML carries real content, not a hydration-only shell.
+
 **Corrected brief note:** Task 3's brief specified `/read/01-the-shift` as the reader-chrome smoke-check URL. That route renders `ChapterDetail.tsx`, which has its own bespoke header and does not render `ExploreMenu` at all — only `/read` (`Reader.tsx`, via `TopNav.tsx`) does. The Task 3 implementer correctly substituted `/read` and traced the reason through `routes.tsx`/`Reader.tsx`/`ChapterDetail.tsx`; this Task 5 pass independently re-verified the same substitution by repeating the check. This is a corrected error in the brief's example URL, not a deviation by any implementer from the spec's actual requirement (the Explore-menu entry itself, which is genuinely shared and genuinely present on both real render sites).
 
 ## Open items / deferred (not fixed in this pass, by design)
