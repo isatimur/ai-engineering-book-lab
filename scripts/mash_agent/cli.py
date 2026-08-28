@@ -127,54 +127,95 @@ DIM_GRANULARITY = {
 
 # book-mash hands every judge a `context` payload alongside the unit text
 # (measurement.py). A judge that never sees its context is answering a different
-# question than the API panel answered, so a dim is only supported here once its
-# context is actually assembled:
+# question than the API panel answered, so every dim below assembles the same
+# context the runner builds — reusing book-mash's own helpers rather than
+# reimplementing them:
 #
-#   usefulness           context={"chapter_title": ...}          -> implemented
-#   humanness            context={"surrounding_paragraphs": ...} -> not yet
-#   claim_defensibility  context={"relevant_ledger": ...}        -> not yet
-#   evidence_density     context={"claims_index": ...}           -> not yet
-#   voice                context={"voice_baseline_excerpts":...} -> not yet
-#   redundancy           context={prior chapter summaries}       -> not yet
+#   usefulness           chapter_title
+#   humanness            surrounding_paragraphs      via _surrounding()
+#   claim_defensibility  relevant_ledger             via retrieve_relevant_claims()
+#   evidence_density     claims_index                via load_claims_index()
+#   voice                voice_baseline_excerpts     via _load_voice_baseline()
+#   redundancy           earlier_chapter_summaries   via _summarize_chapter()
 #
-# Refuse the unimplemented ones rather than quietly judging without context: a
-# plausible-looking score built on a different question is the failure this repo
-# keeps relearning.
-SUPPORTED_DIMS = {"usefulness"}
+# All of it is local: lexical retrieval and text assembly, no API calls. The one
+# piece not reproduced is redundancy's `candidate_overlap_chapter_ids`, which the
+# runner fills from an embedding prefilter — it already degrades to [] when no
+# embedder is configured, which is the same value used here.
+SUPPORTED_DIMS = set(DIM_GRANULARITY)
 
 
-def _corpus_config() -> tuple[str, list[str]]:
-    """Read the same [corpus] settings book-mash uses, from book-mash.toml."""
+def _corpus_config() -> dict:
+    """The same [corpus] settings book-mash reads, from book-mash.toml."""
     import tomllib
     cfg = tomllib.loads((REPO / "book-mash.toml").read_text())
-    corpus = cfg.get("corpus", {})
-    glob_pat = corpus.get("chapters_glob")
-    if not glob_pat:
+    c = dict(cfg.get("corpus", {}))
+    if not c.get("chapters_glob"):
         raise SystemExit("book-mash.toml [corpus] has no chapters_glob")
-    if not Path(glob_pat).is_absolute():
-        glob_pat = str(REPO / glob_pat)
-    return glob_pat, corpus.get("skip_sections", [])
+    for k in ("chapters_glob", "claims_dir"):
+        if c.get(k) and not Path(c[k]).is_absolute():
+            c[k] = str(REPO / c[k])
+    return c
 
 
 def _units(dim: str) -> tuple[str, list[tuple[str, str, dict]]]:
-    """(snapshot_hash, [(unit_id, unit_text, context)]) for one dim's granularity."""
+    """(snapshot_hash, [(unit_id, unit_text, context)]) for one dim's granularity.
+
+    Context mirrors what book-mash's runner passes each judge; see SUPPORTED_DIMS.
+    """
     load_chapters, compute_snapshot_hash = _load_book_mash()
-    glob_pat, skip = _corpus_config()
-    chapters = load_chapters(glob_pat, skip)
+    from book_mash.corpus.claims_index import load_claims_index
+    from book_mash.corpus.claim_retrieval import retrieve_relevant_claims
+    from book_mash.runners.measurement import (
+        _load_voice_baseline, _summarize_chapter, _surrounding,
+    )
+
+    c = _corpus_config()
+    chapters = load_chapters(c["chapters_glob"], c.get("skip_sections", []))
     snap = compute_snapshot_hash(chapters)
     gran = DIM_GRANULARITY[dim]
+
+    claims_index = None
+    if dim in ("claim_defensibility", "evidence_density"):
+        claims_index = load_claims_index(c["claims_dir"])
+    baseline = None
+    if dim == "voice":
+        baseline = _load_voice_baseline(chapters, c.get("voice_baseline_chapters", []))
+
+    def _fmt(v) -> str:
+        if isinstance(v, list):
+            return "\n\n".join(_fmt(x) for x in v) if v else "(none)"
+        return getattr(v, "retrieval_text", lambda: str(v))() if hasattr(v, "retrieval_text") else str(v)
+
     out: list[tuple[str, str, dict]] = []
+    earlier: list[dict] = []
     for ch in chapters:
         if gran == "chapter":
-            out.append((f"chapter:{ch.id}", ch.full_text, {}))
+            ctx = {}
+            if dim == "voice":
+                ctx = {"voice_baseline_excerpts": _fmt(baseline)}
+            elif dim == "redundancy":
+                ctx = {"earlier_chapter_summaries":
+                       _fmt([e["summary"] for e in earlier]) if earlier else "(none - first chapter)",
+                       "candidate_overlap_chapter_ids": "[]"}
+            out.append((f"chapter:{ch.id}", ch.full_text, ctx))
+            earlier.append({"id": ch.id, "summary": _summarize_chapter(ch)})
         elif gran == "section":
             for sec in ch.sections:
                 text = "\n\n".join(p.text for p in sec.paragraphs)
-                out.append((sec.id, text, {}))
+                ctx = {"claims_index": _fmt(claims_index)} if dim == "evidence_density" else {}
+                out.append((sec.id, text, ctx))
         else:
             for sec in ch.sections:
-                for para in sec.paragraphs:
-                    ctx = {"chapter_title": ch.title} if dim == "usefulness" else {}
+                for i, para in enumerate(sec.paragraphs):
+                    if dim == "usefulness":
+                        ctx = {"chapter_title": ch.title}
+                    elif dim == "humanness":
+                        ctx = {"surrounding_paragraphs": _fmt(_surrounding(sec.paragraphs, i))}
+                    elif dim == "claim_defensibility":
+                        ctx = {"relevant_ledger": _fmt(retrieve_relevant_claims(para.text, claims_index))}
+                    else:
+                        ctx = {}
                     out.append((para.id, para.text, ctx))
     return snap, out
 
@@ -202,14 +243,6 @@ def cmd_plan(args) -> int:
     for d in dims:
         if d not in DIM_GRANULARITY:
             raise SystemExit(f"unknown dim {d!r}; known: {', '.join(DIM_GRANULARITY)}")
-        if d not in SUPPORTED_DIMS:
-            raise SystemExit(
-                f"dim {d!r} is not supported yet: book-mash passes its judge a "
-                f"`context` payload that this CLI does not assemble, so scoring it "
-                f"here would answer a different question than the API panel did. "
-                f"Supported: {', '.join(sorted(SUPPORTED_DIMS))}. See SUPPORTED_DIMS "
-                f"in scripts/mash_agent/cli.py."
-            )
 
     snap = None
     tasks: list[dict] = []
