@@ -125,6 +125,23 @@ DIM_GRANULARITY = {
     "redundancy": "chapter",
 }
 
+# book-mash hands every judge a `context` payload alongside the unit text
+# (measurement.py). A judge that never sees its context is answering a different
+# question than the API panel answered, so a dim is only supported here once its
+# context is actually assembled:
+#
+#   usefulness           context={"chapter_title": ...}          -> implemented
+#   humanness            context={"surrounding_paragraphs": ...} -> not yet
+#   claim_defensibility  context={"relevant_ledger": ...}        -> not yet
+#   evidence_density     context={"claims_index": ...}           -> not yet
+#   voice                context={"voice_baseline_excerpts":...} -> not yet
+#   redundancy           context={prior chapter summaries}       -> not yet
+#
+# Refuse the unimplemented ones rather than quietly judging without context: a
+# plausible-looking score built on a different question is the failure this repo
+# keeps relearning.
+SUPPORTED_DIMS = {"usefulness"}
+
 
 def _corpus_config() -> tuple[str, list[str]]:
     """Read the same [corpus] settings book-mash uses, from book-mash.toml."""
@@ -139,25 +156,26 @@ def _corpus_config() -> tuple[str, list[str]]:
     return glob_pat, corpus.get("skip_sections", [])
 
 
-def _units(dim: str) -> tuple[str, list[tuple[str, str]]]:
-    """(snapshot_hash, [(unit_id, unit_text)]) for one dimension's granularity."""
+def _units(dim: str) -> tuple[str, list[tuple[str, str, dict]]]:
+    """(snapshot_hash, [(unit_id, unit_text, context)]) for one dim's granularity."""
     load_chapters, compute_snapshot_hash = _load_book_mash()
     glob_pat, skip = _corpus_config()
     chapters = load_chapters(glob_pat, skip)
     snap = compute_snapshot_hash(chapters)
     gran = DIM_GRANULARITY[dim]
-    out: list[tuple[str, str]] = []
+    out: list[tuple[str, str, dict]] = []
     for ch in chapters:
         if gran == "chapter":
-            out.append((f"chapter:{ch.id}", ch.full_text))
+            out.append((f"chapter:{ch.id}", ch.full_text, {}))
         elif gran == "section":
             for sec in ch.sections:
                 text = "\n\n".join(p.text for p in sec.paragraphs)
-                out.append((sec.id, text))
+                out.append((sec.id, text, {}))
         else:
             for sec in ch.sections:
                 for para in sec.paragraphs:
-                    out.append((para.id, para.text))
+                    ctx = {"chapter_title": ch.title} if dim == "usefulness" else {}
+                    out.append((para.id, para.text, ctx))
     return snap, out
 
 
@@ -184,13 +202,22 @@ def cmd_plan(args) -> int:
     for d in dims:
         if d not in DIM_GRANULARITY:
             raise SystemExit(f"unknown dim {d!r}; known: {', '.join(DIM_GRANULARITY)}")
+        if d not in SUPPORTED_DIMS:
+            raise SystemExit(
+                f"dim {d!r} is not supported yet: book-mash passes its judge a "
+                f"`context` payload that this CLI does not assemble, so scoring it "
+                f"here would answer a different question than the API panel did. "
+                f"Supported: {', '.join(sorted(SUPPORTED_DIMS))}. See SUPPORTED_DIMS "
+                f"in scripts/mash_agent/cli.py."
+            )
 
     snap = None
     tasks: list[dict] = []
     for dim in dims:
         snap, units = _units(dim)
-        for uid, text in units:
-            tasks.append({"dim_name": dim, "unit_id": uid, "unit_text": text})
+        for uid, text, ctx in units:
+            tasks.append({"dim_name": dim, "unit_id": uid, "unit_text": text,
+                          "context": ctx})
 
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     run_id = f"agent-{snap.split(':')[1][:4]}-{ts}"
@@ -272,6 +299,10 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
         out += [
             f"### {i}. `{t['unit_id']}`  ·  dim: `{t['dim_name']}`",
             "",
+        ]
+        for k, v in (t.get("context") or {}).items():
+            out += [f"context · {k}: {v}", ""]
+        out += [
             "```text",
             t["unit_text"].strip() or "(empty)",
             "```",
