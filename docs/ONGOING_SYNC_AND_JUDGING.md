@@ -205,8 +205,40 @@ The first attempt ran **over an hour without finishing**. With the two env vars
 set, the same judge finished in about **90 seconds**. Set them:
 
 ```sh
-export BOOK_MASH_CONCURRENCY=16 BOOK_MASH_HEAVY_CONCURRENCY=12
+export BOOK_MASH_CONCURRENCY=6 BOOK_MASH_HEAVY_CONCURRENCY=2
 ```
+
+**Do NOT use the 16/12 the module comments suggest.** Tried on 2026-08-28 and it
+**silently destroyed the run**. OpenRouter rejected the large-prompt
+`claim_defensibility` calls with **HTTP 402** — *"This request would exceed your
+available credits given your current in-flight requests"* — because 12
+concurrent large prompts reserve more credit than the key's ceiling allows in
+flight. It is a **credit-reservation** limit, not a TPM limit, so no amount of
+backoff recovers it.
+
+The damage was invisible in the run summary: every run reported
+`Status: completed`, and the book-level heatmap printed a plausible
+`claim_defensibility` of 94. Underneath, that dimension was mostly error rows —
+deepseek 306/572 null, llama 444/572, qwen 435/572 — and the surviving score
+came from whichever minority of units happened to succeed.
+
+**The one check that catches this** (the summary will not):
+
+```sh
+# per-dim null count must be 0 for every member run
+python3 -c "import json,collections,sys; d=json.load(open(sys.argv[1]))['scores']; \
+print(collections.Counter(s['dim_name'] for s in d if s.get('score_0_100') is None))" \
+  .book-mash-runs/<run-id>/scores.json
+```
+
+And in the merge output, **`panel-error / <2 votes` must be near zero**. A healthy
+run reports 3; the broken one reported 489. That line is the load-bearing
+signal — a "completed" status is not.
+
+The heavy semaphore is not redundant with `_CONCURRENCY`: it exists *because*
+raising it costs coverage. The module's own run-4 note (humanness 70%,
+claim_defensibility 71%) documents the same failure from the other direction.
+Read "throughput knob, not a coverage one" as applying to `_CONCURRENCY` only.
 
 Two diagnostics, because the run is silent by default:
 
