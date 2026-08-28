@@ -8,10 +8,12 @@
 
 | Commit | File(s) | What |
 |---|---|---|
-| `15b1c51` | `website/src/pages/Books.tsx` | New page component: two book cards (book 1 → `/`, book 2 → `/second-book`), `Seo`/`JsonLd` (`ItemList` schema), header with "← Catalogue" link. |
-| `003a98a` | `website/src/routes.tsx` | Registered `{ path: 'books', element: <Books /> }` as a sibling route next to `{ path: 'read', element: <Reader /> }`. |
-| `3fba5fb` | `website/src/components/nav/ExploreMenu.tsx` | Added `{ href: '/books', label: 'Books', description: 'The full AI Engineer Press library' }` as the first entry in `EXPLORE_ITEMS` — shared by both `Catalogue.tsx`'s dark header and `TopNav.tsx`'s reader chrome, so one change covers both nav surfaces. |
-| `86d92f1` | `website/scripts/gen-sitemap.mjs`, `website/public/sitemap.xml` | Added `push('/books', repoDate, '0.9', 'weekly')` directly after the `/` entry; regenerated the sitemap (46 URLs total). |
+| `69ed4e5` | `website/src/pages/Books.tsx` | New page component: two book cards (book 1 → `/`, book 2 → `/second-book`), `Seo`/`JsonLd` (`ItemList` schema), header with "← Catalogue" link. |
+| `18213d9` | `website/src/routes.tsx` | Registered `{ path: 'books', element: <Books /> }` as a sibling route next to `{ path: 'read', element: <Reader /> }`. |
+| `5b0d33c` | `website/src/components/nav/ExploreMenu.tsx` | Added `{ href: '/books', label: 'Books', description: 'The full AI Engineer Press library' }` as the first entry in `EXPLORE_ITEMS` — shared by both `Catalogue.tsx`'s dark header and `TopNav.tsx`'s reader chrome, so one change covers both nav surfaces. |
+| `8e6bf8d` | `website/scripts/gen-sitemap.mjs`, `website/public/sitemap.xml` | Added `push('/books', repoDate, '0.9', 'weekly')` directly after the `/` entry; regenerated the sitemap (46 URLs total). |
+
+Note: these are the commit hashes as they currently exist on `origin/main` after Task 5's final rebase. The hashes originally cited in Task 1-4's own reports (`15b1c51`, `003a98a`, `3fba5fb`, `86d92f1`) were rewritten by that rebase; the four commits above are the same content under their current, correct hashes.
 
 No new data source was created — the spec's "Data" section is satisfied by construction (`Books.tsx` reads existing `book.ts`, `bookChaptersTwo.ts`, and `stats.json`).
 
@@ -36,6 +38,8 @@ No new data source was created — the spec's "Data" section is satisfied by con
 Closed the browser and killed the dev server after the check; working tree left clean (no `.playwright-cli/` artifacts committed).
 
 **SSG-output freebie check:** the browser check above ran against the dev server; `grep -c 'The Model Layer' website/dist/books.html` on the actual static build output returns `2` (heading + JSON-LD `name`), confirming the shipped static HTML carries real content, not a hydration-only shell.
+
+**`/books` gap check against `llms.txt`/`llms-full.txt`:** `grep -c '/books' website/public/llms.txt website/public/llms-full.txt` → `0` for both files. This is not a gap: `website/scripts/gen-llms.mjs` is scoped entirely to book 1's chapter export — it parses `chaptersSrc` from `src/data/bookChapters.ts` (book 1 only) and emits per-chapter markdown/links, the same way it always has. It does not enumerate site-wide pages the way `gen-sitemap.mjs` does. Book 2's routes and now `/books` were never expected to appear in either `llms.txt` or `llms-full.txt`, and their absence is expected behavior, not a regression from this plan.
 
 **Corrected brief note:** Task 3's brief specified `/read/01-the-shift` as the reader-chrome smoke-check URL. That route renders `ChapterDetail.tsx`, which has its own bespoke header and does not render `ExploreMenu` at all — only `/read` (`Reader.tsx`, via `TopNav.tsx`) does. The Task 3 implementer correctly substituted `/read` and traced the reason through `routes.tsx`/`Reader.tsx`/`ChapterDetail.tsx`; this Task 5 pass independently re-verified the same substitution by repeating the check. This is a corrected error in the brief's example URL, not a deviation by any implementer from the spec's actual requirement (the Explore-menu entry itself, which is genuinely shared and genuinely present on both real render sites).
 
