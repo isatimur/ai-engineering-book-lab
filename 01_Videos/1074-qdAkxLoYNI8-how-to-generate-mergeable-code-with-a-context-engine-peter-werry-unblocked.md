@@ -15,17 +15,18 @@ themes:
   - "MCP & Tooling"
 ingested_at: 2026-08-28T01:25:38+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Peter Werry shares a practical take on How to Generate Mergeable Code with a Context Engine. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "Peter Werry (Unblocked) frames agents as new employees who reset their knowledge every task, and argues that attaching a wiki or CLAUDE.md fails because access to information does not equal understanding."
 ---
 
 # How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked
 
 ## Summary
-Peter Werry shares a practical take on How to Generate Mergeable Code with a Context Engine. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+Peter Werry explains a context engine as a system that delivers organizational context to human workers and, increasingly, to agents. His framing is onboarding: an agent is an expert software engineer who is permanently a new employee, resetting knowledge every task and rediscovering the codebase, how the organization builds and tests, and how it deploys. Before agents, humans were the context layer, accumulating tribal knowledge and the battle scars left by incidents and outages. He places teams on an AI maturity curve — autocomplete, then editors like Cursor, then organizational wikis, then MCP and skills — and puts most teams at stage four or five, aware that context is the bottleneck. His core claim is that "access to information doesn't equal understanding": attaching a wiki still does not tell the agent where the information it needs actually is.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- 'Agents are like new employees... they reset their knowledge every time you start a new task' is the colleague metaphor stated as an operational constraint.
+- 'Access to information doesn't equal understanding' is a direct critique of the wiki and CLAUDE.md approach to agent context.
+- The maturity curve gives a staged model for where a team sits, useful for the harness and organizational-adoption chapters.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=qdAkxLoYNI8

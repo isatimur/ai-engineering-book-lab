@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-28T01:25:29+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra shares a practical take on KV Cache. Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs."
+summary: "Red Hat's inference team shows how agentic traffic breaks classic LLM-serving assumptions — multi-turn sessions up to 3,000 turns, cache hit rates above 90%, input:output ratios over 100:1 — and covers KV-cache-aware routing and prefill/decode disaggregation as the serving answers."
 ---
 
 # KV Cache-Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra, Red Hat
 
 ## Summary
-Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra shares a practical take on KV Cache. Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs.
+Ashish Kamra and Yuchen Fama argue that public inference benchmarks report a sanitized steady state that agentic traffic never reaches. Real agentic workloads run multi-turn — from a few turns up to 3,000 — and reuse system prompts and tool definitions hard enough to push cache hit rates well past 90%, while input:output ratios often exceed 100:1. The talk covers KV-cache-aware routing and prefill/decode (P/D) disaggregation as the two serving techniques that exploit those properties on Kubernetes, closing with a case study on the GLM-5.2 coding model. Their operational point is a measurement one: capacity planning needs distributions and P90s, because with variance this high an average describes no real session.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Concrete serving-layer evidence that agent workloads break the assumptions classic LLM inference was tuned for.
+- Names a measurement error directly — averaging hides the variance that decides whether an agent deployment holds up under load.
+- Useful counterweight to benchmark-driven capacity claims: the published numbers and the production numbers measure different things.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=YXowceUKYJI

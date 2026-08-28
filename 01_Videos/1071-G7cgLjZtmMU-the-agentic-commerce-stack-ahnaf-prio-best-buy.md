@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-28T01:25:33+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ahnaf Prio shares a practical take on The Agentic Commerce Stack. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Best Buy's Ahnaf Prio reports ~45% of sessions on major AI assistants are shopping-related, contrasts the failed DOM-scraping generation of shopping agents with today's human-in-the-loop stack, and sketches the path to autonomous shopping."
 ---
 
 # The Agentic Commerce Stack — Ahnaf Prio, Best Buy
 
 ## Summary
-Ahnaf Prio shares a practical take on The Agentic Commerce Stack. Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Ahnaf Prio, a senior engineering manager at Best Buy, reports that roughly 45% of agent sessions on major assistants such as ChatGPT and Google Gemini are shopping-related, and sizes agentic commerce at about $7B today against a projected $65B by 2030. He contrasts the failed first generation — browser extensions that took screenshots, read the DOM, navigated merchant sites and filled forms — with what works now. That approach was clunky and brittle, and more decisively, merchants' engineering teams read an AI driving a browser as impersonation and blocked it, often at the payment step. The talk maps the current human-in-the-loop mental model and gives the architecture for extending it toward autonomous shopping.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A named-retailer account of agents moving into money-handling actions, where a wrong step is not recoverable by a retry.
+- The DOM-scraping failure is a clean case of an integration defeated by trust boundaries rather than by model capability.
+- Merchant-side blocking shows the counterparty, not just the operator, decides how much autonomy an agent gets.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=G7cgLjZtmMU

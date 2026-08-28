@@ -15,17 +15,18 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-28T01:25:36+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "GPU Kernels? — Simran Arora shares a practical take on Can LLMs Write Fast Multi. Key angle: emphasizes evaluation and measurement."
+summary: "Simran Arora (Together AI) on how better single-GPU kernels moved the bottleneck to multi-GPU communication, and whether frontier models can reason about the fundamentals — evaluated with a purpose-built benchmark, ParallelKernelBench."
 ---
 
 # Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI
 
 ## Summary
-GPU Kernels? — Simran Arora shares a practical take on Can LLMs Write Fast Multi. Key angle: emphasizes evaluation and measurement.
+Simran Arora, principal scientist at Together AI, argues the performance bottleneck has moved. Investment in better single-GPU kernels — flash attention, memory-efficient architectures, sparse attention, Mamba — plus better DSLs shifted the constraint from intra-GPU memory access to multi-GPU communication. She grounds the problem in hardware, walking through the memory hierarchy on an H100: register memory reaches about 130 TB/s but there is very little of it, and capacity grows as latency does, which she frames as simple physics. She then asks whether frontier models understand these fundamentals well enough to reason about them, and reports results on ParallelKernelBench, a benchmark her team built for multi-GPU kernel generation.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A team built its own benchmark because existing evals did not measure the thing that mattered — the book's argument that evals are built, not adopted.
+- Tests model reasoning in a domain where correctness is checkable and performance is the score, so claims are falsifiable.
+- Useful case of asking whether a model holds a mental model rather than whether it produces passing output.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=pOvWgX7IJsc
