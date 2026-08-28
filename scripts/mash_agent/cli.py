@@ -301,6 +301,22 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
     ]
     for dim in dims:
         out += [f"## Rubric — `{dim}` (verbatim from book-mash)", "", "```", _rubric(dim).strip(), "```", ""]
+
+    # Hoist context that is identical across the whole batch. evidence_density
+    # carries the full claims index per unit (~36k chars each) and voice carries
+    # the same baseline excerpts; repeating either per unit makes a batch
+    # unreadably large for no added information.
+    shared: dict[str, str] = {}
+    ctxs = [t.get("context") or {} for t in batch]
+    if ctxs:
+        for k in ctxs[0]:
+            vals = {str(c.get(k, "")) for c in ctxs}
+            if len(vals) == 1 and len(next(iter(vals))) > 400:
+                shared[k] = next(iter(vals))
+    if shared:
+        out += ["## Shared context (identical for every unit in this batch)", ""]
+        for k, v in shared.items():
+            out += [f"### {k}", "", "```text", v.strip(), "```", ""]
     out += [
         "## Output contract",
         "",
@@ -338,6 +354,8 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
             "",
         ]
         for k, v in (t.get("context") or {}).items():
+            if k in shared:
+                continue  # rendered once above
             out += [f"context · {k}: {v}", ""]
         out += [
             "```text",
