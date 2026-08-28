@@ -45,72 +45,34 @@
     },
     "partial": false,
     "merged_run_ids": [
-      "panel-3model-v9",
-      "2026-08-28-030429-d473",
-      "2026-08-28-030404-d473",
-      "2026-08-28-030228-d473",
       "panel-3model-v8",
       "2026-08-22-235400-e741",
       "2026-08-22-234347-e741",
       "2026-08-22-234252-e741",
       "2026-08-22-230013-104a",
-      "2026-08-22-223909-104a",
-      "2026-08-22-214933-12a0",
       "panel-3model-v7",
       "2026-07-30-161222-c12b",
       "panel-3model-v6",
       "2026-07-23-064549-c12b",
       "2026-07-23-064111-c12b",
-      "2026-07-23-063829-c12b",
-      "panel-frontier-v1",
-      "2026-07-18-213054-c12b",
-      "2026-07-18-192841-c12b",
       "2026-07-18-182529-c12b",
-      "2026-07-18-182455-c12b",
-      "2026-07-18-182452-c12b",
-      "2026-07-18-182449-c12b",
-      "2026-07-18-181837-c12b",
-      "2026-07-18-181722-c12b",
-      "2026-07-18-181534-c12b",
       "panel-3model-v5",
-      "2026-07-16-035124-331d",
-      "2026-07-16-035108-331d",
-      "2026-07-16-035056-331d",
-      "2026-07-16-033124-331d",
       "2026-07-16-024820-331d",
       "2026-07-16-024512-331d",
       "2026-07-16-021427-331d",
       "2026-07-16-012221-331d",
-      "panel-3model-v4",
-      "2026-07-03-114407-7bb6",
-      "2026-07-03-114353-7bb6",
-      "2026-07-03-114141-7bb6",
       "panel-3model-v3",
-      "2026-06-29-162054-7549",
       "2026-06-29-161553-7549",
       "2026-06-29-161254-7549",
       "panel-3model-v2",
-      "2026-06-29-060253-0d24",
       "2026-06-29-055819-0d24",
       "2026-06-29-055220-0d24",
       "panel-3model",
       "2026-06-28-221853-ab7d",
       "2026-06-28-221147-ab7d",
-      "2026-06-28-060915-ab7d",
-      "2026-06-27-221525-ab7d",
       "2026-06-20-200603-f9ef",
       "2026-06-20-194440-988e",
       "2026-06-20-152312-ea0f",
-      "2026-06-20-130253-ea0f",
-      "2026-06-20-121211-52f0",
-      "2026-06-20-111904-05e5",
-      "2026-06-11-094038-1cef",
-      "2026-06-10-145000-0cb7",
-      "2026-06-10-085925-1ddf",
-      "2026-06-09-220959-1ddf",
-      "2026-06-05-131510-4d43",
-      "2026-06-02-093847-4924",
-      "2026-06-01-155947-4924",
       "2026-05-22-0943-9a20"
     ]
   },
@@ -139,7 +101,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -284,7 +246,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -430,7 +392,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -576,7 +538,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -723,7 +685,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -869,7 +831,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1027,7 +989,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1175,7 +1137,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1326,7 +1288,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1475,7 +1437,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -2320,7 +2282,7 @@
     },
     {
       "run_id": "panel-3model-v8",
-      "version_id": "git:8dc6bd3",
+      "version_id": "git:ea7a1d8",
       "finished_at": "2026-08-22T23:55:14.489939+00:00",
       "partial": false,
       "judge_prompt_versions": null,

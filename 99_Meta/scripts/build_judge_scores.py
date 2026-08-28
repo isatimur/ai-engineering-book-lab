@@ -26,6 +26,7 @@ prebuild chain never fails in CI.
 import argparse
 import hashlib
 import json
+import sys
 import re
 import subprocess
 from datetime import datetime
@@ -190,6 +191,42 @@ def _is_stale(chapter_drafting_path: Path, run_finished_at: str | None) -> bool:
     return commit_dt > run_dt
 
 
+# A judged dimension is rejected above this share of failed calls. Not zero:
+# panel-3model-v8, the healthy baseline, carries 3 null usefulness units out of
+# 563 (0.5%) — an occasional unparseable response is normal. The 2026-08-28
+# failures sat at 37-78% of claim_defensibility, so any threshold in this range
+# separates them; 5% is chosen to stay well clear of both.
+_MAX_NULL_SHARE_PER_DIM = 0.05
+
+
+def _null_native_scores(run_dir: Path) -> dict[str, int]:
+    """Judge-native nulls (failed calls) per dimension, only where the share of
+    that dimension's units exceeds `_MAX_NULL_SHARE_PER_DIM`.
+
+    Returns {} for a healthy run. Rollup and derived entries are excluded: they
+    are recomputed from the native layer, so a null there is a consequence, not
+    an independent failure.
+    """
+    try:
+        raw = json.loads((run_dir / "scores.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    entries = raw.get("scores", raw) if isinstance(raw, dict) else raw
+    nulls: dict[str, int] = {}
+    totals: dict[str, int] = {}
+    for s in entries:
+        if s.get("derived") or "rollup" in str(s.get("model")):
+            continue
+        dim = s["dim_name"]
+        totals[dim] = totals.get(dim, 0) + 1
+        if s.get("score_0_100") is None:
+            nulls[dim] = nulls.get(dim, 0) + 1
+    return {
+        d: n for d, n in nulls.items()
+        if totals.get(d) and n / totals[d] > _MAX_NULL_SHARE_PER_DIM
+    }
+
+
 def _completed_runs(runs_dir: Path) -> list[Path]:
     """All run dirs with a completed status, newest-first by `finished_at`.
 
@@ -211,8 +248,18 @@ def _completed_runs(runs_dir: Path) -> list[Path]:
             run = json.loads((p / "run.json").read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        if run.get("status") == "completed":
-            scored.append((run.get("finished_at") or "", p.name, p))
+        if run.get("status") != "completed":
+            continue
+        # A run can report status=completed while most of a dimension's calls
+        # failed: book-mash records a per-unit error row (score_0_100 = None,
+        # label = "error") and still finishes. On 2026-08-28 three runs came
+        # back "completed" with claim_defensibility 209-444/572 null after
+        # OpenRouter 402s, printed a plausible heatmap, and were merged into a
+        # panel whose surviving score came from the minority that succeeded.
+        # Auto-selection must not be able to publish that silently.
+        if _null_native_scores(p):
+            continue
+        scored.append((run.get("finished_at") or "", p.name, p))
     scored.sort(key=lambda t: (t[0], t[1]), reverse=True)  # newest-first
     return [p for _f, _n, p in scored]
 
@@ -668,6 +715,14 @@ def main(argv: list[str] | None = None) -> int:
     requested: Path | None = None
     if args.run:
         cand = runs_dir / args.run
+        nulls = _null_native_scores(cand) if cand.is_dir() else {}
+        if nulls:
+            total = sum(nulls.values())
+            print(f"[build_judge_scores] REFUSING --run {args.run}: {total} judge-native "
+                  f"score(s) are null (failed calls), by dim {nulls}. Publishing this "
+                  f"would report a score computed from only the units that succeeded.",
+                  file=sys.stderr)
+            return 1
         if (cand / "scores.json").exists():
             requested = cand
         else:
