@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 450
+- Total tagged videos: 455
 
 ## Cross-video synthesis
 
-- This theme appears across 450 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (402), Evals & Reliability (347), MCP & Tooling (67).
+- This theme appears across 455 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (407), Evals & Reliability (351), MCP & Tooling (68).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -462,6 +462,11 @@
 - [[1067-6pbQgnJ9Voc-knowledge-systems-the-new-gtm-stack-jeffrey-wang-exa|#1067 — Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa]]
 - [[1068-Qw_tC68KKes-how-ai-agents-let-gtm-teams-scale-justin-joyce-cloudflare|#1068 — How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare]]
 - [[1069-Lrw0jqBNaw0-the-death-of-developer-advocates-stephanie-jarmak-sourcegraph|#1069 — The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph]]
+- [[1070-YXowceUKYJI-kv-cache-aware-routing-and-p-d-disaggregation-on-kubernetes-yuchen-fama-ashish-kamra-red-h|#1070 — KV Cache-Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra, Red Hat]]
+- [[1071-G7cgLjZtmMU-the-agentic-commerce-stack-ahnaf-prio-best-buy|#1071 — The Agentic Commerce Stack — Ahnaf Prio, Best Buy]]
+- [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
+- [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
+- [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
 
 ## Notes
 

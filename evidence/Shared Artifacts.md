@@ -6,10 +6,10 @@ YouTube descriptions (`99_Meta/video-descriptions.jsonl`, refetchable);
 each entry links back to its source video note(s). Sister file:
 [[External References]] (sources the *book* engages with directly).
 
-> Coverage: 299 videos referenced at least one artifact; corpus size 1069.
+> Coverage: 302 videos referenced at least one artifact; corpus size 1074.
 > Regenerate: `python3 99_Meta/scripts/fetch_video_descriptions.py && python3 99_Meta/scripts/build_shared_artifacts.py`
 
-## GitHub repositories (56)
+## GitHub repositories (58)
 
 - <https://github.com/humanlayer/12-factor-agents> — [[274-8kMaTybvDUw-12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer|#274]], [[923-Ib5GBkD555M-harness-engineering-is-not-enough-why-software-factories-fail-dex-horthy-humanlayer|#923]]
 - <https://github.com/sambanova/ai-starter-kit> — [[491-z_Xh2MzqKDM-full-workshop-llama-3-at-1-000-tok-s-on-the-sambanova-ai-platform|#491]], [[556-ksgLoPxEQzM-build-enterprise-generative-ai-apps-using-llama-3-at-1-000-tokens-s-on-the-sambanova-ai-pl|#556]]
@@ -51,6 +51,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://github.com/lastmile-ai/mcp-agent> — [[349-uFPAtKIN-FQ-exposing-agents-as-mcp-servers-with-mcp-agent-sarmad-qadri|#349]]
 - <https://github.com/lensesio/lenses-mcp> — [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32]]
 - <https://github.com/letta-ai/tutorials> — [[412-E0k9Ppq6yXY-stateful-agents-full-workshop-with-charles-packer-of-letta-and-memgpt|#412]]
+- <https://github.com/llm-d/llm-d> — [[1070-YXowceUKYJI-kv-cache-aware-routing-and-p-d-disaggregation-on-kubernetes-yuchen-fama-ashish-kamra-red-h|#1070]]
 - <https://github.com/m-abdelwahab/railway-autofix> — [[103-Q5IVm_CxN2w-infra-that-fixes-itself-thanks-to-coding-agents-mahmoud-abdelwahab-railway|#103]]
 - <https://github.com/mattpocock/skills> — [[804-UNzCG3lw6O0-building-great-agent-skills-the-missing-manual|#804]]
 - <https://github.com/normal-computing/extended-mind-transformers> — [[557-cS6M6Jec0lU-going-beyond-rag-extended-mind-transformers-phoebe-klett|#557]]
@@ -61,6 +62,7 @@ each entry links back to its source video note(s). Sister file:
 - <https://github.com/rawwerks/recursive-coding-agents> — [[771-3hXJI2q0Jz8-recursive-coding-agents-raymond-weitekamp-openprose|#771]]
 - <https://github.com/shippy/personal-intelligence-kit> — [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29]]
 - <https://github.com/steveyegge/beads> — [[902-yWS0udrIOc8-agentic-security-permissions-provenance-and-the-agent-supply-chain-steve-yegge-gas-town|#902]]
+- <https://github.com/togethercomputer/ParallelKernelBench> — [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073]]
 - <https://github.com/towardsai/ai-tutor-app> — [[1019-WP3hjUXd918-context-engineering-in-2026-louis-fran-ois-bouchard-omar-solano-samridhi-vaid-towards-ai|#1019]]
 - <https://github.com/traceloop/openllmetry> — [[448-KVgbERRPU4M-openllmetry-is-all-you-need|#448]]
 - <https://github.com/weka/LMCache> — [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104]]
@@ -93,10 +95,10 @@ each entry links back to its source video note(s). Sister file:
 Sites kept only when linked by ≥2 talks or pointing below a homepage
 (docs pages, posts, whitepapers).
 
+- <https://getunblocked.com> — [[714-BiG2ssibKGc-stop-babysitting-your-agents-brandon-waselnuk-unblocked|#714]], [[1050-HvMyYLTfvhg-building-agents-is-trivial-now-context-is-the-next-frontier-jeff-ng-unblocked|#1050]], [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074]]
 - <https://pydantic.dev> — [[099-flf_IKnFYnE-from-stateless-nightmares-to-durable-agents-samuel-colvin-pydantic|#99]], [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184]], [[241-bmWZk9vTze0-mcp-is-all-you-need-samuel-colvin-pydantic|#241]]
 - <https://enoreyes.com> — [[057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai|#57]], [[951-wpOA-UXynoM-how-forward-deployed-engineering-is-done-at-factory-eno-reyes|#951]]
 - <https://gallon.me> — [[106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore|#106]], [[1016-26RtyAm9y_Q-the-dark-arts-of-web-automation-teaching-agents-to-use-websites-like-humans-corey-gallon-r|#1016]]
-- <https://getunblocked.com> — [[714-BiG2ssibKGc-stop-babysitting-your-agents-brandon-waselnuk-unblocked|#714]], [[1050-HvMyYLTfvhg-building-agents-is-trivial-now-context-is-the-next-frontier-jeff-ng-unblocked|#1050]]
 - <https://goingmeta.live> — [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215]], [[321-CbiR9xS2skQ-why-your-agent-s-brain-needs-a-playbook-practical-wins-from-using-ontologies-jes-s-barrasa|#321]]
 - <https://il.linkedin.com/in/rafael-levi> — [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748]], [[766-btxGmN8RvNU-your-agent-s-biggest-lie-i-searched-the-web-rafael-levi-bright-data|#766]]
 - <https://neo4j.com> — [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105]], [[224-AvVoJBxgSQk-agentic-graphrag-ai-s-logical-edge-stephen-chin-neo4j|#224]]

@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1061-1069|Latest batch: recent-1061-1069]]
-- Total video notes in corpus: 1069
-- Video notes created in this batch: 9
+- [[batches/recent-1070-1074|Latest batch: recent-1070-1074]]
+- Total video notes in corpus: 1074
+- Video notes created in this batch: 5
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,12 +31,8 @@
 
 ## Recent notes
 
-- [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061 — Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital]]
-- [[1062-UhCY231d0FQ-gtm-engineering-the-technical-bits-everett-berry-clay|#1062 — GTM Engineering: The Technical Bits — Everett Berry, Clay]]
-- [[1063-L4I7WgiEquo-ai-in-gtm-at-notion-flora-liu|#1063 — AI in GTM at Notion — Flora Liu]]
-- [[1064-VjEP0xqTUI0-the-building-blocks-of-gtm-orchestration-arman-vaziri-ramp|#1064 — The Building Blocks of GTM Orchestration — Arman Vaziri, Ramp]]
-- [[1065-DrTdD-ttjCY-building-gtm-ai-agents-lessons-from-deploying-to-6-000-users-sait-izmit-snowflake|#1065 — Building GTM AI Agents: Lessons from Deploying to 6,000 Users — Sait Izmit, Snowflake]]
-- [[1066-V_5bn4q-vAI-how-we-got-llms-to-recommend-our-open-source-library-christopher-burns-inth|#1066 — How We Got LLMs to Recommend Our Open Source Library — Christopher Burns, Inth]]
-- [[1067-6pbQgnJ9Voc-knowledge-systems-the-new-gtm-stack-jeffrey-wang-exa|#1067 — Knowledge Systems: The New GTM Stack — Jeffrey Wang, Exa]]
-- [[1068-Qw_tC68KKes-how-ai-agents-let-gtm-teams-scale-justin-joyce-cloudflare|#1068 — How AI Agents Let GTM Teams Scale — Justin Joyce, Cloudflare]]
-- [[1069-Lrw0jqBNaw0-the-death-of-developer-advocates-stephanie-jarmak-sourcegraph|#1069 — The Death of Developer Advocates — Stephanie Jarmak, Sourcegraph]]
+- [[1070-YXowceUKYJI-kv-cache-aware-routing-and-p-d-disaggregation-on-kubernetes-yuchen-fama-ashish-kamra-red-h|#1070 — KV Cache-Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra, Red Hat]]
+- [[1071-G7cgLjZtmMU-the-agentic-commerce-stack-ahnaf-prio-best-buy|#1071 — The Agentic Commerce Stack — Ahnaf Prio, Best Buy]]
+- [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
+- [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
+- [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
