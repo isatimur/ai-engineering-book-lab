@@ -46,6 +46,7 @@ const push = (path, lastmod, priority, changefreq) =>
   urls.push({ loc: `${ORIGIN}${path}`, lastmod, priority, changefreq });
 
 push('/', repoDate, '1.0', 'weekly');
+push('/books', repoDate, '0.9', 'weekly');
 push('/enterprise', repoDate, '0.9', 'monthly');
 push('/assess', repoDate, '0.9', 'monthly');
 push('/workshop', repoDate, '0.8', 'monthly');
