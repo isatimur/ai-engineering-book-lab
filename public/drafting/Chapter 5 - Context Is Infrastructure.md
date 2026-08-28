@@ -17,7 +17,7 @@ A company may have millions of documents. A codebase may have thousands of files
 
 That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
 
-Jack Morris attacks the lazy default directly: “Stuffing context is not memory.” Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
+Jack Morris puts the correction in a talk title — stuffing context is not memory, updating weights is. Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
 
 Nupur Sharma’s Qodo work gives the mechanism behind it. Models privilege the start and end of the window and degrade in the middle, so a longer prompt does not buy more attention; it buys a wider blind spot. Her detection cue is concrete: when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly — summarization, graphs, iterative retrieval — not a bigger window.
 
@@ -111,7 +111,7 @@ The software-factory case already hinted at this in Chapter 3. An agent working 
 
 The rise of tool protocols such as MCP exposes a newer version of the same issue. For a while, context engineering mostly meant “Which documents should the model see?” Now it also means “Which tools should the model know exist, how should they be described, and how do we prevent the capability surface from becoming its own form of overload?”
 
-Matt Carey’s phrase “mega context problem” lands because it names the trap precisely. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
+Matt Carey’s talk title names the trap precisely: the MCP mega context problem. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
 
 Sam Morrow’s lessons from GitHub’s remote MCP server push the point from diagnosis into operating practice. Progressive discovery, grouping, intent-aware exposure, and ruthless context reduction are not polish. They are core product decisions. The model should not receive a phone book of capabilities when what it needs is a small, discoverable menu relevant to the current task.
 

@@ -47,7 +47,7 @@ Once you start thinking in workflows rather than turns, history changes meaning,
 
 That is why durable-agent discussions keep converging on structured histories, checkpoints, and replayable event logs. Not because engineers enjoy complexity, but because long-running work creates obligations. If the system did something important, someone may later need to inspect it. If a run failed halfway through, the team may need to resume from a meaningful boundary rather than start from zero. If a result is contested, the organization may need to know what the system saw, which tools it used, and which step introduced the mistake.
 
-Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” History is the substrate of inspection, not archival fluff.
+Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can go in and you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” History is the substrate of inspection, not archival fluff.
 
 This is also where runtime design begins to touch Chapter 4’s control-system argument. A good history lets a team do more than recover execution. It lets them learn. Failed trajectories become eval cases. Slow steps become optimization targets. Repeated approval bottlenecks reveal design problems in the control plane. The runtime is not merely keeping the work alive but generating the evidence by which the system can later improve.
 

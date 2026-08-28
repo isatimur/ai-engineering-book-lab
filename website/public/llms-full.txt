@@ -613,7 +613,7 @@ This creates the eval flywheel:
 
 Once you see the loop, Chapter 3’s harness story becomes more concrete. A harness without observability cannot learn. Observability without eval discipline cannot prioritize.
 
-This is also why Hetzel insists that “an eval platform is not just a test runner.” A runner executes checks. A real platform also stores datasets, versions scoring logic, supports comparisons, surfaces disagreements, and creates enough trust in results that teams will actually use them to make decisions. In mature AI engineering, the platform around evaluation becomes part of the product-development process itself.
+This is also why an eval platform is not just a test runner. A runner executes checks. A real platform also stores datasets, versions scoring logic, supports comparisons, surfaces disagreements, and creates enough trust in results that teams will actually use them to make decisions. In mature AI engineering, the platform around evaluation becomes part of the product-development process itself.
 
 There is a newer reason the platform matters: once coding agents write code alongside people, they become readers of the eval suite too. Lawrence Jones at incident.io, who calls his evals “AI unit tests,” stores them as YAML checked in next to the prompt they grade — and learned the interface lesson the hard way. When his team wrapped the evals in richer browser UIs, both audiences fell away: humans lacked the time, and the “coding agents weren’t able to work with them.” The unlock was not a better dashboard but “a small CLI tool that we call eval tool,” because “file systems are exceptionally good agent context.” Pushed further, their “scrapbook” pipeline downloads each backtest investigation as a file tree and runs roughly twenty-five agents in parallel, one per investigation, returning a structured improvement report instead of a chart — and Jones is careful that “these patterns do generalize.” The portable test is blunt: could a coding agent, given only the interface you already have, find a failing eval, read the trace behind it, and add the regression case — or could only a human with the dashboard open do that?
 
@@ -688,7 +688,7 @@ A company may have millions of documents. A codebase may have thousands of files
 
 That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
 
-Jack Morris attacks the lazy default directly: “Stuffing context is not memory.” Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
+Jack Morris puts the correction in a talk title — stuffing context is not memory, updating weights is. Shoving more tokens into the window is not a serious theory of knowledge use; it is closer to panic than architecture.
 
 Nupur Sharma’s Qodo work gives the mechanism behind it. Models privilege the start and end of the window and degrade in the middle, so a longer prompt does not buy more attention; it buys a wider blind spot. Her detection cue is concrete: when accuracy drops as you add more retrieved documents rather than rising, you are watching the middle get dropped, and the fix is assembly — summarization, graphs, iterative retrieval — not a bigger window.
 
@@ -782,7 +782,7 @@ The software-factory case already hinted at this in Chapter 3. An agent working 
 
 The rise of tool protocols such as MCP exposes a newer version of the same issue. For a while, context engineering mostly meant “Which documents should the model see?” Now it also means “Which tools should the model know exist, how should they be described, and how do we prevent the capability surface from becoming its own form of overload?”
 
-Matt Carey’s phrase “mega context problem” lands because it names the trap precisely. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
+Matt Carey’s talk title names the trap precisely: the MCP mega context problem. If every tool, every parameter, every capability description, and every server is naively dumped into the model’s working view, the system becomes less usable, not more. We should not confuse optional power with available focus.
 
 Sam Morrow’s lessons from GitHub’s remote MCP server push the point from diagnosis into operating practice. Progressive discovery, grouping, intent-aware exposure, and ruthless context reduction are not polish. They are core product decisions. The model should not receive a phone book of capabilities when what it needs is a small, discoverable menu relevant to the current task.
 
@@ -883,7 +883,7 @@ Once you start thinking in workflows rather than turns, history changes meaning,
 
 That is why durable-agent discussions keep converging on structured histories, checkpoints, and replayable event logs. Not because engineers enjoy complexity, but because long-running work creates obligations. If the system did something important, someone may later need to inspect it. If a run failed halfway through, the team may need to resume from a meaningful boundary rather than start from zero. If a result is contested, the organization may need to know what the system saw, which tools it used, and which step introduced the mistake.
 
-Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” History is the substrate of inspection, not archival fluff.
+Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can go in and you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” History is the substrate of inspection, not archival fluff.
 
 This is also where runtime design begins to touch Chapter 4’s control-system argument. A good history lets a team do more than recover execution. It lets them learn. Failed trajectories become eval cases. Slow steps become optimization targets. Repeated approval bottlenecks reveal design problems in the control plane. The runtime is not merely keeping the work alive but generating the evidence by which the system can later improve.
 
