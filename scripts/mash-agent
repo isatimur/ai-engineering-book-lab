@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# mash-agent launcher. Keeps the entry point stable regardless of interpreter.
+exec python3 "$(dirname "$0")/mash_agent/cli.py" "$@"

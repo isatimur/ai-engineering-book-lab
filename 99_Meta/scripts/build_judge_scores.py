@@ -250,6 +250,12 @@ def _completed_runs(runs_dir: Path) -> list[Path]:
             continue
         if run.get("status") != "completed":
             continue
+        # Agent-judged runs (scripts/mash_agent) are a different instrument: one
+        # judge scoring once, not the median of the three-model API panel. They
+        # live in .mash-agent-runs/, but refuse them here too in case one is ever
+        # copied across — the published series must stay one instrument.
+        if run.get("judge_kind") == "agent" or str(run.get("run_id", "")).startswith("agent-"):
+            continue
         # A run can report status=completed while most of a dimension's calls
         # failed: book-mash records a per-unit error row (score_0_100 = None,
         # label = "error") and still finishes. On 2026-08-28 three runs came
@@ -715,6 +721,17 @@ def main(argv: list[str] | None = None) -> int:
     requested: Path | None = None
     if args.run:
         cand = runs_dir / args.run
+        if cand.is_dir():
+            try:
+                meta = json.loads((cand / "run.json").read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                meta = {}
+            if meta.get("judge_kind") == "agent" or args.run.startswith("agent-"):
+                print(f"[build_judge_scores] REFUSING --run {args.run}: this is an "
+                      f"agent-judged run, not a canonical panel run. Publishing it "
+                      f"would mix two different instruments in one score series.",
+                      file=sys.stderr)
+                return 1
         nulls = _null_native_scores(cand) if cand.is_dir() else {}
         if nulls:
             total = sum(nulls.values())

@@ -101,7 +101,7 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -246,7 +246,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -392,7 +392,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -538,7 +538,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -685,7 +685,7 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -831,7 +831,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -989,7 +989,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1137,7 +1137,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1288,7 +1288,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -1437,7 +1437,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "corpus_snapshot_hash": "sha256:e7410e1ea803ebca23a97c98c73bbbfee946dba5186cb1b36fb54ed3b5df99dd",
       "primary_run_id": "panel-3model-v8",
       "rollup": {
@@ -2282,7 +2282,7 @@
     },
     {
       "run_id": "panel-3model-v8",
-      "version_id": "git:ea7a1d8",
+      "version_id": "git:2eff18d",
       "finished_at": "2026-08-22T23:55:14.489939+00:00",
       "partial": false,
       "judge_prompt_versions": null,
