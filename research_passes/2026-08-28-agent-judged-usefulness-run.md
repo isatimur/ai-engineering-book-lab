@@ -102,7 +102,10 @@ band — the highest-confidence "filler" set available, since it needs two diffe
 models, two harnesses, no shared cache, and two snapshots to agree. Then I read them
 in context.
 
-They are not filler. They are rhetorical landings and necessary scaffolding:
+They are not filler. They are rhetorical landings and necessary scaffolding. (Read
+from `public/drafting/`, the files the agent run was scored against. The panel's
+scores predate this snapshot, so its agreement corroborates rather than confirms — the
+decision rests on the agent run, which is snapshot-matched.)
 
 - *"Voice removes that mercy."* (ch8) — lands a paragraph arguing that text chat
   flatters AI by hiding latency and tolerating weak handoffs. Scored 8 and 15.
@@ -129,8 +132,8 @@ Read usefulness with a **structural ceiling**, not as a target:
 
 - The headline mean (~55–56) includes headings, list stems, transitions, and
   rhetorical landings that are correctly written and correctly scored low.
-- The prose-only figure — excluding headings and sub-12-word fragments — is **58.1**,
-  and is the fairer number to track.
+- The prose-only figure — excluding the 35 sub-12-word fragments; there are **no**
+  heading units — is **57.0**, and is the fairer number to track.
 - Neither figure should be pushed upward by editing. A rising usefulness mean would
   most likely mean connective tissue was stripped out, not that the book improved.
 
