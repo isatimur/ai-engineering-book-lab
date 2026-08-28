@@ -94,3 +94,47 @@ Whether 54.8 is a *good* score — there is still no baseline. Whether the agent
 is better or worse calibrated than the API panel; they are simply different, and only
 the panel has version-over-version history. And nothing about the five dimensions
 `mash-agent` still refuses.
+
+## Decision (2026-08-28): do not edit the book to raise usefulness
+
+I pulled the 22 paragraphs that **both** instruments independently placed in the fail
+band — the highest-confidence "filler" set available, since it needs two different
+models, two harnesses, no shared cache, and two snapshots to agree. Then I read them
+in context.
+
+They are not filler. They are rhetorical landings and necessary scaffolding:
+
+- *"Voice removes that mercy."* (ch8) — lands a paragraph arguing that text chat
+  flatters AI by hiding latency and tolerating weak handoffs. Scored 8 and 15.
+- *"That is where slop comes from."* (ch3) — lands the Lopopolo passage on the
+  "500 little decisions" a patch requires. Scored 10 and 10.
+- *"And that is the problem."* · *"It needs evidence."* — same shape.
+- *"The useful spectrum is simpler:"* · *"This is also why a good eval program usually
+  contains multiple layers:"* — list stems, which cannot carry a takeaway because the
+  list beneath them does.
+- chapter roadmaps and hand-off sentences — the connective tissue any book needs.
+
+The rubric asks one question: *"could a working engineer change something on Monday
+because of this paragraph?"* A one-line landing correctly scores near zero on that
+question while doing real work for the reader. **The metric measures operational
+density, not quality, and short high-craft prose is structurally fail-band under it.**
+
+So the decision is to change nothing in the manuscript. Cutting or padding these
+paragraphs to raise a number would make the book worse, which is the opposite of what
+the number exists to detect.
+
+### What this fixes going forward
+
+Read usefulness with a **structural ceiling**, not as a target:
+
+- The headline mean (~55–56) includes headings, list stems, transitions, and
+  rhetorical landings that are correctly written and correctly scored low.
+- The prose-only figure — excluding headings and sub-12-word fragments — is **58.1**,
+  and is the fairer number to track.
+- Neither figure should be pushed upward by editing. A rising usefulness mean would
+  most likely mean connective tissue was stripped out, not that the book improved.
+
+Usefulness is a **drift detector for aggregate operational density across versions**.
+It is not a quality gate, not a per-paragraph editing signal (44% band agreement), and
+not a number to optimise. Treat a large *drop* as worth investigating and everything
+else as noise.
