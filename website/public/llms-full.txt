@@ -949,7 +949,7 @@ Good agent traces capture plans, tool calls, state changes, intermediate outputs
 
 This is where Chapter 4’s line from Phil Hetzel keeps paying off: observability and eval are often the same problem from a systems perspective. In Chapter 6 the claim becomes more concrete. The runtime records the trajectory. Observability renders it legible. The control plane decides where humans inspect it. Evals later mine it for reusable lessons. One layer feeds the next.
 
-There is also an honest tension here the chapter should keep visible. Richer traces increase trust, debuggability, and governance capacity. They also increase privacy, retention, and security risk. The answer is not to avoid observability but to design it consciously: redaction, selective retention, risk-based views, and different surfaces for debugging versus audit. Even here, the control plane is doing governance work.
+There is an honest tension here. Richer traces increase trust, debuggability, and governance capacity. They also increase privacy, retention, and security risk. The answer is not to avoid observability but to design it consciously: redaction, selective retention, risk-based views, and different surfaces for debugging versus audit. Even here, the control plane is doing governance work.
 
 ## Parallel workers create leverage only if work can be recomposed
 
@@ -1119,13 +1119,13 @@ In high-stakes environments, trust also depends on being able to reconstruct wha
 
 It needs evidence.
 
-This is where Chapter 7 should deliberately touch Chapter 6’s observability argument again. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences. They are part of the security story. They let an institution convert bounded autonomy into something defensible.
+Observability is part of the security argument, not a separate one. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences. They are part of the security story. They let an institution convert bounded autonomy into something defensible.
 
 Joel Hron’s high-stakes framing is especially powerful here because it does not pretend the answer is unrestricted autonomy under perfect prevention. The answer is constrained execution plus inspectable paths. The system can do meaningful work, but it leaves behind a trail that domain experts and organizations can actually examine.
 
 Consider the day a client disputes a position Hargrove’s assistant helped file. A partner must answer one question: what did the system actually do? Because the assistant reached its documents through a mediation layer, the answer exists. The trajectory shows which matter files it retrieved, which validation engine it called, and which draft it surfaced — all under a read-only token scoped to this matter, with no authority to send to the client. Without that trail, the honest answer would be a shrug. Inspectability here separates a defensible workflow from a liability the firm cannot bound.
 
-That said, the chapter should not fake simplicity. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
+That said, none of this is simple. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
 
 The same pattern keeps recurring: wherever agent systems create new power, they also create a need for better-structured oversight.
 
@@ -1205,7 +1205,7 @@ Practitioners put numbers on the budget. Neil Zeghidour at Gradium AI sets the t
 
 The support-call case makes this concrete. The user does not care whether the delay came from ASR, retrieval, the permissions gateway, or a slow billing tool. They only hear that the agent became hesitant exactly when confidence mattered. So the rule is to spend the latency budget on the first audio rather than on silence: a quick spoken acknowledgment followed by a slightly slower answer beats a long silent pause followed by a polished response. Streaming partial understanding can outperform a more globally optimal batch pipeline. Fast first audio rescues a system whose deeper reasoning takes longer, provided the interaction contract is designed honestly.
 
-The newer voice material sharpens another important point. As speech layers improve, tool calls increasingly become the bottleneck — “The main bottleneck is becoming the tool call,” as Zeghidour puts it, once speech recognition, the model, and synthesis are all fast. The variance bites: a tool call or open router runs “between 500 milliseconds and 4 seconds,” and a 4-second pause in conversation is not a slow response but a dead line. That tool-call bottleneck is a major book-level insight because it ties voice directly back to Chapters 5, 6, and 7. If a user asks a realtime system for account data, a calendar lookup, a support action, or an environment check, the speech stack may no longer be the slowest part. The true latency may come from retrieval, permission checks, network round-trips, or a workflow step waiting on some other service.
+Better speech sharpens a further point. As speech layers improve, tool calls increasingly become the bottleneck — “The main bottleneck is becoming the tool call,” as Zeghidour puts it, once speech recognition, the model, and synthesis are all fast. The variance bites: a tool call or open router runs “between 500 milliseconds and 4 seconds,” and a 4-second pause in conversation is not a slow response but a dead line. That tool-call bottleneck is a major book-level insight because it ties voice directly back to Chapters 5, 6, and 7. If a user asks a realtime system for account data, a calendar lookup, a support action, or an environment check, the speech stack may no longer be the slowest part. The true latency may come from retrieval, permission checks, network round-trips, or a workflow step waiting on some other service.
 
 This is why teams that think they are building a speech product often discover they are really building an orchestration product. Low-latency interaction depends on pipeline design, caching, progressive disclosure, asynchronous tool behavior, and clean state handoff just as much as it depends on model speed.
 
@@ -1213,7 +1213,7 @@ Realtime trust is budgeted. Spend too much of that budget in the wrong layer and
 
 ## Voice works best when it reuses a stronger underlying system
 
-Another useful correction from the corpus is that voice does not usually require reinventing everything. The seductive but often wasteful instinct is to treat voice as an entirely separate product stack. Build a bespoke conversational brain. Recreate all the tools. Redo the runtime. Start over from scratch because speech feels special.
+A second correction: voice does not usually require reinventing everything. The seductive but often wasteful instinct is to treat voice as an entirely separate product stack. Build a bespoke conversational brain. Recreate all the tools. Redo the runtime. Start over from scratch because speech feels special.
 
 In practice, a more durable pattern keeps emerging: keep the core agent, keep its tools, keep its evals, keep its workflow logic, and wrap a dedicated voice layer around it. That preserves continuity with the core spine: voice does not reject the earlier chapters but demands they were built well enough to survive a harsher interface.
 
@@ -1243,7 +1243,7 @@ This is where the human control plane comes into the room. In chat, the control 
 
 Voice is changing the model stack itself, not only the front end. The pressure for lower first-audio latency, more natural streaming, and tighter multimodal coordination is pushing systems toward architectures optimized for interaction, not merely offline quality. Speech tokenization, streaming generation, lower-latency synthesis, and specialized serving strategies matter because the product requirement is not just to produce good output but to produce good output now.
 
-This is another reason the chapter should avoid drifting into pure UX commentary. Realtime experience is partly an inference architecture story. Model families, serving strategies, batching decisions, transport layers, and hardware choices all leak into the user experience. The system does not get to hide its internals when every extra delay becomes audible.
+This is why realtime cannot be treated as a pure UX question. Realtime experience is partly an inference architecture story. Model families, serving strategies, batching decisions, transport layers, and hardware choices all leak into the user experience. The system does not get to hide its internals when every extra delay becomes audible.
 
 The same pattern appears on the speech output side. Modern text-to-speech increasingly inherits design instincts from language models: discrete token spaces, streaming, incremental generation, and the tradeoff between global coherence and local responsiveness. That convergence matters because it shows how deeply interaction requirements are shaping model engineering itself.
 
@@ -1300,7 +1300,7 @@ That distinction matters because many AI adoption stories still start too small.
 
 An AI-native organization begins later, at the point where the work itself changes shape. Execution gets cheaper. Exploration gets faster. More people can create artifacts that previously required specialist intermediaries. Individual operators can direct several agents in parallel. Teams can investigate more options before committing. And almost immediately, a new set of bottlenecks appears. Review load rises. Duplicate work spreads. Private agent workflows drift out of sync with shared priorities. Standards become harder to enforce informally. Managers can no longer assume that the org chart maps cleanly to who is able to produce what.
 
-This is the deeper lesson of the corpus. AI does not merely accelerate output. It reorganizes where scarcity lives.
+This is the deeper lesson. AI does not merely accelerate output. It reorganizes where scarcity lives.
 
 Scarcity moves upward: from typing to judgment, from production labor to orchestration, from drafting to deciding which draft deserves trust, from isolated productivity to system throughput. The practical test is to find the step where work now piles up waiting on a person; that queue marks where scarcity moved, and it is almost never the keyboard. Once delegated work becomes real, organizational design becomes the macro-scale version of harness design.
 
@@ -1316,7 +1316,7 @@ And that is the problem.
 
 The organization is no longer starved for output. It is starved for coherence. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions? The order is not arbitrary: settle ownership first, because every other question needs someone empowered to answer it; then strategy fit, which discards whole branches cheaply; then safety-to-merge, the expensive per-artifact check you want to run last and least.
 
-That is the scene this chapter has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
+That is the shift worth explaining. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
 
 ## Buying seats is not the same as redesigning work
 
@@ -1342,7 +1342,7 @@ That is Chapter 4 at organizational scale. Evals were the control system for age
 
 ## Broader creation works only when paths to ship stay constrained
 
-One of the most provocative claims in the corpus is that people outside traditional engineering roles should increasingly be able to ship meaningful changes. Lisa Orr at Zapier states it as a deliberate provocation: “at Zapier we are empowering our support team to ship code.” That claim is directionally right. As execution becomes easier, more people can participate in creation. Support can encode recurring fixes. Product can prototype flows directly. Domain experts can shape automations without waiting for every translation layer. Organizations that refuse this broadening will leave leverage on the table.
+One of the most provocative claims in this material is that people outside traditional engineering roles should increasingly be able to ship meaningful changes. Lisa Orr at Zapier states it as a deliberate provocation: “at Zapier we are empowering our support team to ship code.” That claim is directionally right. As execution becomes easier, more people can participate in creation. Support can encode recurring fixes. Product can prototype flows directly. Domain experts can shape automations without waiting for every translation layer. Organizations that refuse this broadening will leave leverage on the table.
 
 Broader creation becomes durable only when paths to ship are constrained.
 

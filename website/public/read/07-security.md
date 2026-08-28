@@ -122,13 +122,13 @@ In high-stakes environments, trust also depends on being able to reconstruct wha
 
 It needs evidence.
 
-This is where Chapter 7 should deliberately touch Chapter 6’s observability argument again. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences. They are part of the security story. They let an institution convert bounded autonomy into something defensible.
+Observability is part of the security argument, not a separate one. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences. They are part of the security story. They let an institution convert bounded autonomy into something defensible.
 
 Joel Hron’s high-stakes framing is especially powerful here because it does not pretend the answer is unrestricted autonomy under perfect prevention. The answer is constrained execution plus inspectable paths. The system can do meaningful work, but it leaves behind a trail that domain experts and organizations can actually examine.
 
 Consider the day a client disputes a position Hargrove’s assistant helped file. A partner must answer one question: what did the system actually do? Because the assistant reached its documents through a mediation layer, the answer exists. The trajectory shows which matter files it retrieved, which validation engine it called, and which draft it surfaced — all under a read-only token scoped to this matter, with no authority to send to the client. Without that trail, the honest answer would be a shrug. Inspectability here separates a defensible workflow from a liability the firm cannot bound.
 
-That said, the chapter should not fake simplicity. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
+That said, none of this is simple. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
 
 The same pattern keeps recurring: wherever agent systems create new power, they also create a need for better-structured oversight.
 

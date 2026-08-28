@@ -113,7 +113,7 @@ Good agent traces capture plans, tool calls, state changes, intermediate outputs
 
 This is where Chapter 4’s line from Phil Hetzel keeps paying off: observability and eval are often the same problem from a systems perspective. In Chapter 6 the claim becomes more concrete. The runtime records the trajectory. Observability renders it legible. The control plane decides where humans inspect it. Evals later mine it for reusable lessons. One layer feeds the next.
 
-There is also an honest tension here the chapter should keep visible. Richer traces increase trust, debuggability, and governance capacity. They also increase privacy, retention, and security risk. The answer is not to avoid observability but to design it consciously: redaction, selective retention, risk-based views, and different surfaces for debugging versus audit. Even here, the control plane is doing governance work.
+There is an honest tension here. Richer traces increase trust, debuggability, and governance capacity. They also increase privacy, retention, and security risk. The answer is not to avoid observability but to design it consciously: redaction, selective retention, risk-based views, and different surfaces for debugging versus audit. Even here, the control plane is doing governance work.
 
 ## Parallel workers create leverage only if work can be recomposed
 

@@ -7,7 +7,7 @@ That distinction matters because many AI adoption stories still start too small.
 
 An AI-native organization begins later, at the point where the work itself changes shape. Execution gets cheaper. Exploration gets faster. More people can create artifacts that previously required specialist intermediaries. Individual operators can direct several agents in parallel. Teams can investigate more options before committing. And almost immediately, a new set of bottlenecks appears. Review load rises. Duplicate work spreads. Private agent workflows drift out of sync with shared priorities. Standards become harder to enforce informally. Managers can no longer assume that the org chart maps cleanly to who is able to produce what.
 
-This is the deeper lesson of the corpus. AI does not merely accelerate output. It reorganizes where scarcity lives.
+This is the deeper lesson. AI does not merely accelerate output. It reorganizes where scarcity lives.
 
 Scarcity moves upward: from typing to judgment, from production labor to orchestration, from drafting to deciding which draft deserves trust, from isolated productivity to system throughput. The practical test is to find the step where work now piles up waiting on a person; that queue marks where scarcity moved, and it is almost never the keyboard. Once delegated work becomes real, organizational design becomes the macro-scale version of harness design.
 
@@ -23,7 +23,7 @@ And that is the problem.
 
 The organization is no longer starved for output. It is starved for coherence. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions? The order is not arbitrary: settle ownership first, because every other question needs someone empowered to answer it; then strategy fit, which discards whole branches cheaply; then safety-to-merge, the expensive per-artifact check you want to run last and least.
 
-That is the scene this chapter has to explain. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
+That is the shift worth explaining. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
 
 ## Buying seats is not the same as redesigning work
 
@@ -49,7 +49,7 @@ That is Chapter 4 at organizational scale. Evals were the control system for age
 
 ## Broader creation works only when paths to ship stay constrained
 
-One of the most provocative claims in the corpus is that people outside traditional engineering roles should increasingly be able to ship meaningful changes. Lisa Orr at Zapier states it as a deliberate provocation: “at Zapier we are empowering our support team to ship code.” That claim is directionally right. As execution becomes easier, more people can participate in creation. Support can encode recurring fixes. Product can prototype flows directly. Domain experts can shape automations without waiting for every translation layer. Organizations that refuse this broadening will leave leverage on the table.
+One of the most provocative claims in this material is that people outside traditional engineering roles should increasingly be able to ship meaningful changes. Lisa Orr at Zapier states it as a deliberate provocation: “at Zapier we are empowering our support team to ship code.” That claim is directionally right. As execution becomes easier, more people can participate in creation. Support can encode recurring fixes. Product can prototype flows directly. Domain experts can shape automations without waiting for every translation layer. Organizations that refuse this broadening will leave leverage on the table.
 
 Broader creation becomes durable only when paths to ship are constrained.
 
