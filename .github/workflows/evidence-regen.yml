@@ -6,6 +6,7 @@ on:
     paths:
       - 'claims/Claims Ledger.md'
       - 'claims/anchors/**'
+      - 'claims-2/Claims Ledger.md'
       - '99_Meta/scripts/anchor/**'
 
 jobs:
@@ -26,14 +27,18 @@ jobs:
             pip install -r 99_Meta/scripts/anchor/requirements.txt
           fi
       - name: Regenerate evidence.json
-        run: python 99_Meta/scripts/anchor/build_evidence.py
+        run: |
+          python 99_Meta/scripts/anchor/build_evidence.py
+          python 99_Meta/scripts/anchor/build_evidence.py \
+            --ledger 'claims-2/Claims Ledger.md' \
+            --out website/src/evidence-2.json
       - name: Commit changes (if any)
         run: |
-          if ! git diff --quiet website/src/evidence.json; then
+          if ! git diff --quiet website/src/evidence.json website/src/evidence-2.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add website/src/evidence.json
-            git commit -m "chore(evidence): regenerate evidence.json from updated ledger [skip ci]"
+            git add website/src/evidence.json website/src/evidence-2.json
+            git commit -m "chore(evidence): regenerate evidence.json and evidence-2.json from updated ledgers [skip ci]"
 
             # stats-regen.yml can trigger on the same push (overlapping path
             # filters under claims/**) and race this job to push to main.
@@ -43,7 +48,7 @@ jobs:
                 break
               fi
               if [ "$attempt" -eq 5 ]; then
-                echo "::error::Failed to push evidence.json regen after ${attempt} attempts."
+                echo "::error::Failed to push evidence regen after ${attempt} attempts."
                 exit 1
               fi
               echo "Push rejected (attempt ${attempt}/5) — main moved, rebasing and retrying..."
@@ -52,5 +57,5 @@ jobs:
               git rebase origin/main
             done
           else
-            echo "No evidence.json changes — skipping commit"
+            echo "No evidence changes — skipping commit"
           fi

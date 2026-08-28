@@ -52,7 +52,7 @@ Once you build a model, you have to run it — and running it is where the money
 
 ## Strongest source-backed observations
 
-1. **Inference, not training, is the largest and most contested market in AI software.** The whole open-model ecosystem exists because serving is where recurring cost and competitive advantage live (#335, #316).
+1. **Inference, not training, may be the largest market in AI software.** The whole open-model ecosystem exists because serving is where recurring cost and competitive advantage live (#335, #316). Atallah hedges to "might be".
 2. **A model's speed and cost are a system property, not a model property.** The same weights on a good serving stack versus a naive one differ by an order of magnitude; the "Pareto frontier" is set by the deployment, not the checkpoint (#141, #514, #548).
 3. **On-device inference is crossing from demo to default.** Consumer silicon (Apple, phones, CPUs) can now run capable open models locally, turning a per-month subscription into a one-time energy cost and changing who can access AI at all (#007, #670, #582, #307).
 4. **Compilers and generated kernels are eating hand-tuned performance work.** Search-based compilation and LLM-generated kernels are automating the low-level optimization that used to require scarce experts (#068, #388, #097, #578).

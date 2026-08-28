@@ -36,14 +36,15 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Candidate chapters:** 1, 2
 - **Reusable phrasing:** RL is not just another post-training algorithm. It is the one built to turn production feedback back into the model.
 
-## 3) Code is the best domain to scale RL, because its rewards are automatically verifiable
+## 3) Code is a favourable domain to scale RL, because its rewards are machine-checkable
 - **Why it matters:** RL needs a reward, and code supplies a cheap, honest one — unit tests and compilers grade output by machine, millions of times, without a human in the loop. That is why coding agents advanced fastest, and why unverifiable domains lag: their rewards are hard to build and easy to game.
-- **Support level:** strong
+- **Support level:** moderate (single-source; the cited source states only that coding is the "root node" problem — the automatic-verifiability mechanism is this ledger's synthesis, not the speaker's words)
 - **Supporting sources:**
   - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — verifiable domains (math, code) turn compute into reliable gains; execution feedback reduces reward-hacking risk; autonomous coding as the "root node" problem.
     - **Anchor:** `QluDzKVfp6A` 00:16:01.519 → 00:16:03.279 · confidence: high
     - **Quote:** "autonomous coding as the root node problem"
 - **Caveats / counterevidence:** Verifiability buys scale, not correctness of intent — a solution can pass tests and still be wrong for the task. Single-source claim; corroborating verifiable-reward sources would strengthen it.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 1, 4
 - **Reusable phrasing:** Code is not special because it is important. It is special because it grades itself.
 
@@ -98,9 +99,9 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Candidate chapters:** 1, 2
 - **Reusable phrasing:** The RL technique is not the moat. The ability to run it is.
 
-## 7) Inference, not training, is the largest and most contested market in AI software
+## 7) Inference, not training, may be the largest market in AI software
 - **Why it matters:** It relocates the center of the AI business from the one-time training run to the recurring served token. Training is a capital cost; inference is the cost of goods sold, paid on every request for as long as the product lives. The whole open-model ecosystem — serving frameworks, inference clouds, on-device runtimes — exists because serving is where recurring cost and competitive advantage live.
-- **Support level:** strong
+- **Support level:** moderate (Atallah hedges to "might be the largest market ever"; "most contested" is not stated by any cited source)
 - **Supporting sources:**
   - [[335-84Vtz2IL1Ug-fun-stories-from-building-openrouter-and-where-all-this-is-going-alex-atallah-openrouter|#335 — Alex Atallah, OpenRouter]] — "Inference might be the largest market ever in software." (a marketplace routing traffic across dozens of model providers)
     - **Anchor:** `84Vtz2IL1Ug` 00:00:52.480 → 00:00:54.960 · confidence: high
@@ -109,6 +110,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `DeFF3J8T5Pk` 00:01:32.560 → 00:01:34.479 · confidence: high
     - **Quote:** "possible with Open Weights models where they weren't before."
 - **Caveats / counterevidence:** "Largest market" is Atallah's framing, plausible but not independently sized here. Training and inference are coupled — the same labs and hardware serve both — so the split is analytic, not a hard boundary.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 2, 3
 - **Reusable phrasing:** If the model is the product, inference is the cost of goods sold.
 
@@ -131,7 +133,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 
 ## 9) On-device inference is crossing from demo to default
 - **Why it matters:** Consumer silicon — Apple chips, phones, ordinary CPUs — can now run capable open models locally, turning a per-month subscription into a one-time energy cost and a data-center round trip into a local call. This changes who can reach AI at all, not just what it costs: it works offline, keeps data private, and removes the subscription barrier for users the cloud never served.
-- **Support level:** strong
+- **Support level:** moderate (four sources, but all are vendor or framework advocates for on-device inference)
 - **Supporting sources:**
   - [[670-zTLJNHj0DeQ-why-mlx-prince-canuma-neywa-labs|#670 — Prince Canuma, Neywa Labs]] — "I want to convince you today to offload some of that subscription completely on device and then all you need to pay is your energy bill." (working demos on consumer Macs; accessibility as the driver)
     - **Anchor:** `zTLJNHj0DeQ` 00:00:54.080 → 00:01:00.800 · confidence: high
@@ -146,6 +148,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `l614N5W60ls` 00:00:55.680 → 00:01:03.440 · confidence: high
     - **Quote:** "how does cloud AI work in environments with low network bandwidth or even offline access?"
 - **Caveats / counterevidence:** "Default" is directional: on-device suits a class of models and workloads, not the frontier's largest models. Most sources are vendor/framework advocates for on-device.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 2, 4
 - **Reusable phrasing:** The cheapest and most private data center may be the one already in your pocket.
 
@@ -205,7 +208,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 
 ## 13) The open-model gap has largely closed
 - **Why it matters:** The industry assumed the best models would stay closed and open weights would trail by a generation forever. DeepSeek-R1 broke that assumption — an open model catching and passing GPT-4, built without a closed lab's budget. It permanently changes who can build *on* the frontier rather than merely rent it: when the best weights are downloadable, a team runs them on its own infrastructure, fine-tunes them, and inspects them, instead of living inside another company's API rate limits and pricing.
-- **Support level:** strong
+- **Support level:** moderate ("surpass GPT-4" and "#1 open model" are the speakers' own framings, not independently benchmarked here)
 - **Supporting sources:**
   - [[439-wJwTlvb_TSo-wtf-do-people-use-open-models-for|#439 — Eugene Cheah, Featherless.ai]] — "the first open source model to catch up and surpass GPT-4," proving "you do not need a billion dollars to compete with the big labs"; >50,000 models uploaded to Hugging Face per month.
     - **Anchor:** `wJwTlvb_TSo` 00:00:23.640 → 00:00:25.640 · confidence: high
@@ -217,23 +220,25 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `lY1iFbDPRlw` 00:02:02.000 → 00:02:05.439 · confidence: high
     - **Quote:** "designed specifically for coding workplace agentic tasks."
 - **Caveats / counterevidence:** "Surpass GPT-4" (#439) and "#1 open model" (#74) are the speakers' own framings, not independently benchmarked here. Parity holds on many tasks, not uniformly at the very top; the largest closed frontier models may still lead on the hardest tasks. The lead is measured in months, which is the point — but it is a narrowing lead, not a permanent reversal.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** The gap the industry assumed was permanent turned out to be a lead measured in months, and a lead measured in months is not a moat.
 
 ## 14) Perceived "stagnation" is a training-budget story, not a ceiling
 - **Why it matters:** The common complaint that the frontier has plateaued mistakes a spending decision for a physical limit. Today's flagships are close to 2022-era architecture and pre-training, refined rather than replaced; gains come from training longer and from post-training, not from a new way to build. The leap is still available — it just costs a training run nobody has finished paying for. This is why hardware and strategy are inseparable: what a lab can build is set by what it can afford to train.
-- **Support level:** strong
+- **Support level:** moderate (single-source; one analyst's account, not a settled consensus)
 - **Supporting sources:**
   - [[476-gFyBdBm0AGo-system-design-for-next-gen-frontier-models-dylan-patel-semianalysis|#476 — Dylan Patel, SemiAnalysis]] — "The models that we're using today are largely the same as the models that were trained in 2022"; flagships are smaller models trained for longer (GPT-4/Turbo/4o; 3.5 Sonnet smaller than Opus but better because trained better).
     - **Anchor:** `gFyBdBm0AGo` 00:00:33.559 → 00:00:38.680 · confidence: high
     - **Quote:** "uh models that we're using today are largely the same as the models that were trained in 2022"
 - **Caveats / counterevidence:** Single-source; Patel's analysis, not a settled consensus. Some argue the plateau is real and architectural, not budgetary. A corroborating source on training-budget vs. capability would strengthen it before it carries public weight.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** The plateau is not the ceiling of the architecture. It is the lag between what has been trained and what could be.
 
 ## 15) Frontier progress is bottleneck-hunting, not broad improvement
 - **Why it matters:** Labs advance by identifying the single most limiting weakness in the current best system and unblocking it — a diagnostic discipline, where naming the right bottleneck is harder than generating fixes. This also explains how a smaller team competes without matching compute: if the next gain is one correct unblocking rather than broad expensive improvement, focus can beat scale.
-- **Support level:** strong
+- **Support level:** moderate (both sources are DeepMind describing DeepMind — one lab's research culture, not a frontier-wide law)
 - **Supporting sources:**
   - [[013-zZsTVBXcbow-how-google-deepmind-is-researching-the-next-frontier-of-ai-for-gemini-raia-hadsell-vp-of-r|#13 — Raia Hadsell, DeepMind]] — progress toward general intelligence marked by identifying fundamental bottlenecks in existing models and building the architecture/training fix that removes them.
     - **Anchor:** `zZsTVBXcbow` 00:03:57.200 → 00:04:01.200 · confidence: high
@@ -242,6 +247,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `8EQo4J2BWKw` 00:00:48.879 → 00:00:51.039 · confidence: high
     - **Quote:** "unblocking bottlenecks towards intelligence."
 - **Caveats / counterevidence:** Both sources are DeepMind, so this is one lab's account of research culture; balance against non-Google labs before generalizing. #267 is also cited in Chapter 1 (for how thinking is trained); here the emphasis is research method, with #13 as spine to avoid re-arguing Ch1.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** Frontier progress is a sequence of correctly chosen bottlenecks, and choosing them is the skill that separates the labs.
 
@@ -388,14 +394,15 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Candidate chapters:** 5
 - **Reusable phrasing:** Robotics made the same move language did — one general model instead of a policy per robot — in a domain where a wrong output has mass.
 
-## 26) In embodiment, the bug is usually the system, not the policy
+## 26) In embodiment, a failure that looks like the policy is often the system
 - **Why it matters:** It inverts where failure is assigned. In a text agent a bad output implies a bad model; in a robot it usually does not. A carefully trained control policy fails because of the software stack, timing, and the communication protocol between controller and actuator — so the failures that look like intelligence problems are engineering problems. Most of the intelligence you can actually ship in embodiment lives in the system around the policy.
-- **Support level:** strong
+- **Support level:** moderate (single-source; one team's systems experience on one humanoid)
 - **Supporting sources:**
   - [[110-bCGbuyv8PMk-rishabh-garg-tesla-optimus-challenges-in-high-performance-robotics-systems|#110 — Rishabh Garg, Tesla Optimus]] — "The issue will look like it's the policy but it's actually the software system." (what happens between the controller and the wire: sensor-to-actuator data, protocol timing, electrical characteristics)
     - **Anchor:** `bCGbuyv8PMk` 00:00:47.360 → 00:00:50.320 · confidence: high
     - **Quote:** "the issue will look like it's the policy but it's actually the software system"
 - **Caveats / counterevidence:** Single-source, one team's systems experience on one humanoid. The point is that policy and system failures are hard to tell apart from the outside, not that the policy never fails — models do fail on their own merits too.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 5
 - **Reusable phrasing:** In a robot, the failure that looks like the policy is usually the software system between the controller and the wire.
 
@@ -423,12 +430,13 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 
 ## 29) Broad embodiment depends on tiny models, not frontier ones
 - **Why it matters:** For robotics at scale the capability constraint runs opposite to text. A cheap robot cannot host a frontier model; its compute, power, and latency budget decide what runs on-device at the edge. So the number of robots that can be intelligent at all is bounded not by how good the largest model is, but by how capable the smallest useful one can be made. Reach is a small-model problem.
-- **Support level:** strong
+- **Support level:** moderate (single-source, resting on a four-word fragment)
 - **Supporting sources:**
   - [[936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google|#936 — Cormac Brick, Google]] — if intelligence is to reach ordinary devices and not just expensive robots, "we are going to need tiny models."
     - **Anchor:** `hacEQHHhu2Q` 00:00:25.359 → 00:00:27.039 · confidence: high
     - **Quote:** "we are going to need tiny models."
 - **Caveats / counterevidence:** Distinct from ledger claim 9 (on-device inference), which owns the *economics and access* case — subscription-to-energy-bill, privacy, offline. Claim 29 owns *breadth of embodiment*: most bodies physically cannot carry a large model, so how many robots can be intelligent is capped by tiny-model capability. The two must not be merged. Brick argues from inside Google's edge effort, so the framing is a builder's; the physical constraint it names is not.
+- **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 5
 - **Reusable phrasing:** How many robots can be intelligent is bounded by the smallest model a cheap body can run, not by how good the largest one is.
 

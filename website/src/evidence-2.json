@@ -61,8 +61,8 @@
     },
     {
       "claim_id": "claims#3",
-      "text": "Code is the best domain to scale RL, because its rewards are automatically verifiable",
-      "support_level": "strong",
+      "text": "Code is a favourable domain to scale RL, because its rewards are machine-checkable",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "QluDzKVfp6A",
@@ -180,7 +180,7 @@
     {
       "claim_id": "claims#15",
       "text": "Frontier progress is bottleneck-hunting, not broad improvement",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "zZsTVBXcbow",
@@ -299,8 +299,8 @@
     },
     {
       "claim_id": "claims#7",
-      "text": "Inference, not training, is the largest and most contested market in AI software",
-      "support_level": "strong",
+      "text": "Inference, not training, may be the largest market in AI software",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "84Vtz2IL1Ug",
@@ -368,7 +368,7 @@
     {
       "claim_id": "claims#13",
       "text": "The open-model gap has largely closed",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "wJwTlvb_TSo",
@@ -402,7 +402,7 @@
     {
       "claim_id": "claims#14",
       "text": "Perceived \"stagnation\" is a training-budget story, not a ceiling",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "gFyBdBm0AGo",
@@ -418,7 +418,7 @@
     {
       "claim_id": "claims#15",
       "text": "Frontier progress is bottleneck-hunting, not broad improvement",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "zZsTVBXcbow",
@@ -605,8 +605,8 @@
     },
     {
       "claim_id": "claims#7",
-      "text": "Inference, not training, is the largest and most contested market in AI software",
-      "support_level": "strong",
+      "text": "Inference, not training, may be the largest market in AI software",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "84Vtz2IL1Ug",
@@ -665,7 +665,7 @@
     {
       "claim_id": "claims#9",
       "text": "On-device inference is crossing from demo to default",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "zTLJNHj0DeQ",
@@ -820,8 +820,8 @@
   "4": [
     {
       "claim_id": "claims#3",
-      "text": "Code is the best domain to scale RL, because its rewards are automatically verifiable",
-      "support_level": "strong",
+      "text": "Code is a favourable domain to scale RL, because its rewards are machine-checkable",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "QluDzKVfp6A",
@@ -837,7 +837,7 @@
     {
       "claim_id": "claims#9",
       "text": "On-device inference is crossing from demo to default",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "zTLJNHj0DeQ",
@@ -1072,8 +1072,8 @@
     },
     {
       "claim_id": "claims#26",
-      "text": "In embodiment, the bug is usually the system, not the policy",
-      "support_level": "strong",
+      "text": "In embodiment, a failure that looks like the policy is often the system",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "bCGbuyv8PMk",
@@ -1121,7 +1121,7 @@
     {
       "claim_id": "claims#29",
       "text": "Broad embodiment depends on tiny models, not frontier ones",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "hacEQHHhu2Q",
