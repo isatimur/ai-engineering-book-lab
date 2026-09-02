@@ -60,12 +60,20 @@ jobs:
             cat /tmp/channel-stderr.log
             echo '{"status":"error","missing_count":0,"error":"update script failed"}' \
               > /tmp/channel-report.json
+            cat /tmp/channel-report.json
+            # Fail the step (and the job) on a real script failure so the
+            # synthetic report below is never mistaken for a verified
+            # zero-backlog result. This keeps every downstream issue
+            # create/update/close step from running and lets notify-failure
+            # fire instead.
+            exit "$rc"
           fi
           cat /tmp/channel-report.json
           MISSING=$(jq -r '.missing_count // 0' /tmp/channel-report.json)
           echo "missing_count=${MISSING}" >> "$GITHUB_OUTPUT"
 
       - name: Upload report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: channel-report
@@ -212,11 +220,14 @@ jobs:
         run: |
           DATE=$(date -u +%Y-%m-%d)
           BODY="The nightly ingest-channel workflow failed. See run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}"
-          # Ensure labels exist so the failure notice itself never fails on a missing label.
-          gh label create ingest --repo "${REPO}" --color 1d76db --description "Channel ingest automation" --force
-          gh label create automated --repo "${REPO}" --color ededed --description "Created by an automated workflow" --force
+          # Distinct label set (not "ingest,automated") so failure notices can
+          # never be matched by the tracking-issue queries above, which search
+          # --label ingest,automated. Ensure labels exist so issue creation
+          # never fails on a missing label.
+          gh label create ingest-failure --repo "${REPO}" --color b60205 --description "Nightly ingest-channel workflow failure" --force
+          gh label create bug --repo "${REPO}" --color d73a4a --description "Something isn't working" --force
           gh issue create \
             --repo "${REPO}" \
             --title "channel-watcher: nightly run FAILED (${DATE})" \
             --body "${BODY}" \
-            --label "ingest,automated,bug"
+            --label "ingest-failure,bug"
