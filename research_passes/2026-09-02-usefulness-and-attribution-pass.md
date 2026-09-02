@@ -181,9 +181,26 @@ closer positions, which the rubric caps at "framing" unless they carry a test. T
 the genre ceiling the 06-09 diagnosis named; this pass took the filler out of those
 slots, it did not turn them into checklists.
 
+### Did the cuts cost humanness, voice or redundancy? (added 2026-09-03)
+
+Same instrument, same snapshot `54c7`, run `agent-54c7-20260902-232100`: 534 humanness
+paragraphs, 10 voice chapters, 10 redundancy chapters, seven judges in parallel. 08-28
+agent baselines exist for all three (`agent-d473-…-142320`, `…-142318`).
+
+| dim | 08-28 | 09-02 | control |
+|---|---|---|---|
+| humanness | 70.8 (fail 9, weak 28) | **77.8** (fail 0, weak 3) | 447 text-identical paragraphs: 74.1 → 78.5 (Δ +4.5, judge calibration); removed text had scored 59.0, replacements score 74.0; edit-attributable ≈ +2.6 |
+| voice | 88.7 | 85.8 | chapter-level, no text control possible. Every chapter strong in both runs. Neither judge names drift of substance in any chapter; the new judge compressed the spread (84–90 vs 82–96). Ch7's −10 is the first judge's self-inclusion bonus withdrawn — the voice baseline quotes Ch7 verbatim, and both judges note it |
+| redundancy | 81.1 (5 strong) | 82.3 (9 strong) | Ch2 +8, Ch6 +6, Ch7 +6 — the chapters where the most cross-chapter recap was cut. Ch10 60 → 60 in kind: the capstone recaps by design |
+
+The cuts did not cost humanness: the paragraphs removed were the book's least human
+(59.0 against a chapter mean above 70), and what replaced them scores at the book mean.
+Redundancy improved where recap paragraphs were cut. Voice moved within instrument noise
+with no chapter flagged by either judge.
+
 ## What this does not establish
 
-- That usefulness *rose* on the canonical instrument. `panel-3model-v9` needs OpenRouter
-  credits (the account is overdrawn, see 08-28); until it runs, v8 stands.
-- That the cuts did not cost humanness or voice. The two dimensions were not re-judged
-  here; the editors were held to the humanness rubric by instruction, not by measurement.
+- That any of this *rose on the canonical instrument*. `panel-3model-v9` is parked until a
+  funded OpenRouter key exists; v8 stands as the last canonical reading.
+- Voice at chapter granularity cannot be controlled for judge drift; a −3 book-level move
+  between two judge versions is reported, not interpreted.
