@@ -5,7 +5,7 @@ A helpful model can get away with being vague about power. An acting system cann
 
 The moment an AI system can read across accounts, call tools, execute code, trigger workflows, or continue working after the user has moved on, trust stops being a soft judgment about how smart the model sounds. It becomes a hard architectural question. Who is this system acting as? What can it reach? What can it do without asking again? What happens if it is manipulated? What evidence remains after the fact? And how quickly can that power be reduced, revoked, or redirected when something goes wrong?
 
-Chapter 6 argued that long-running delegated work needs a human control plane. This chapter adds the next constraint: a control plane without authority boundaries is still not trustworthy. Durable execution tells you what the system is doing over time; security determines whether it should have been allowed to do it at all.
+That is why security belongs immediately after runtimes. Chapter 6 argued that long-running delegated work needs state, checkpoints, observability, and a human control plane. Chapter 7 adds the next constraint: a control plane without authority boundaries is still not trustworthy. Durable execution tells you what the system is doing over time. Security determines whether it should have been allowed to do it at all.
 
 The core mistake in immature agent systems is to treat tool access as a product feature before treating delegated authority as a systems problem. That works for demos because the happy path flatters the design. The agent seems capable. It reaches many systems. It stitches steps together. But the same freedom that makes the demo look magical also enlarges the blast radius of every prompt injection, every misread instruction, every overscoped token, and every badly described tool.
 
@@ -20,6 +20,8 @@ The High-Stakes Colleague makes the shift obvious. In legal, tax, and compliance
 In high-stakes work the risky move is often not one bad answer. It is a system quietly crossing from assistance into authorization inside a competent-looking trajectory.
 
 The Software Factory exposes the same problem from another angle. A code agent with repository access is not dangerous only when it writes a bad patch — the quiet, special-path kind the admin-override regression of Chapter 4 already paid for. It is dangerous when it can quietly inspect secrets, mutate CI configuration, add a dependency, call external services, or keep iterating after a misleading instruction entered the loop. Once code execution enters the picture, the old fantasy that trust can be solved primarily at the prompt layer becomes hard to defend.
+
+This is why the chapter resists security theater: the unit of control has moved, and the architecture must move with it.
 
 ## Sandboxes matter because models are not where trust ultimately lives
 
@@ -37,7 +39,7 @@ This is also why security-heavy discussions increasingly sound like runtime desi
 
 The underlying principle is blunt: assume the agent will sometimes be wrong, and build so that being wrong is survivable.
 
-There is a serious discipline devoted to the model’s own alignment — what it is disposed to do, refuse, and value — and nothing here argues against it. This book is about a different layer: the engineering that surrounds the model — the boundaries, identities, sandboxes, and audit trails that must hold even when the model’s inner alignment is imperfect.
+A word about scope. There is a serious discipline devoted to the model’s own alignment — what it is disposed to do, refuse, and value — and nothing here argues against it. That is not this book’s subject. This book is about the engineering that surrounds the model: the boundaries, identities, sandboxes, and audit trails that must hold even when the model’s inner alignment is imperfect. A bounded system is where trust is earned, however the model was trained.
 
 ## Least privilege becomes a product design discipline
 
@@ -51,11 +53,13 @@ A scope that looks harmless in isolation can compound once it is paired with ret
 
 The same logic is really a default-permission table, one row per agent. A research agent may not need write access at all. A support agent may need to read account metadata but not issue refunds. A legal workflow may need broad retrieval across documents but no authority to send anything externally. A scheduling agent may need access to calendars yet no permission to message third parties without confirmation.
 
-Narrower powers do more than protect the organization; they reduce the number of tempting but unsafe paths the model can wander into. A better security design often makes the system easier to reason about, not only safer.
+These choices do not merely protect the organization. They shape the behavior of the system itself. Narrower powers reduce the number of tempting but unsafe paths the model can wander into. A better security design often makes the system easier to reason about, not only safer.
 
 Safe delegation comes from making carelessness less powerful, not from asking the model to be careful.
 
 ## MCP and standardized tool access do not remove governance; they raise its stakes
+
+Protocol enthusiasm can make this easy to forget.
 
 Standardized tool access is genuinely useful. It lowers integration friction. It gives model-facing systems a common way to discover capabilities. It reduces the amount of one-off glue every vendor has to invent. All of that is real progress.
 
@@ -87,11 +91,15 @@ The same is true in the Software Factory. A central access and policy layer can 
 
 ## Identity for agents is really the problem of delegated authority
 
+Identity talk can sound abstract until you name what is actually at stake.
+
 The hard problem is not only authenticating the human user. It is safely carrying that user’s authority across multiple systems while preserving scope, duration, attribution, and revocation. The agent has to act on someone’s behalf without becoming an unbounded extension of their account.
 
 The most common shortcut makes the gap concrete: hand the agent a standing credential — a long-lived API key, or a personal access token borrowed from the operator. A standing credential is not a delegation. It is the agent inheriting the borrowed key’s whole authority, with no scope to revoke and no expiry that maps to the task.
 
-The system must know four things: who the human is.
+In plain language, the system must know four things.
+
+Who the human is.
 What powers the agent has been granted.
 How long those powers last.
 How those powers can be withdrawn or narrowed.
@@ -108,11 +116,13 @@ That phrase matters: more bounded, not less. Nobody grants a junior employee uni
 
 ## High-stakes trust depends on inspectability as much as prevention
 
-Security discourse often focuses on blocking bad actions, but blocking is only half the requirement.
+Security discourse often focuses on blocking bad actions. Agent systems require a wider frame.
 
-In high-stakes environments, trust also depends on being able to reconstruct what happened. Which sources were consulted? Which tool calls were made? Which permissions were exercised? Which output did the system present for review, and what path led there? If an answer is disputed, if a workflow failed, or if a regulator asks questions later, the organization needs more than a statement that the model was generally aligned. It needs evidence.
+In high-stakes environments, trust also depends on being able to reconstruct what happened. Which sources were consulted? Which tool calls were made? Which permissions were exercised? Which output did the system present for review, and what path led there? If an answer is disputed, if a workflow failed, or if a regulator asks questions later, the organization needs more than a statement that the model was generally aligned.
 
-Observability is part of the security argument, not a separate one. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences; they let an institution convert bounded autonomy into something defensible.
+It needs evidence.
+
+Observability is part of the security argument, not a separate one. Rich traces, approval logs, trajectory views, and reviewable histories are not only operational conveniences. They are part of the security story. They let an institution convert bounded autonomy into something defensible.
 
 Joel Hron’s high-stakes framing is especially powerful here because it does not pretend the answer is unrestricted autonomy under perfect prevention. The answer is constrained execution plus inspectable paths. The system can do meaningful work, but it leaves behind a trail that domain experts and organizations can actually examine.
 
@@ -120,7 +130,11 @@ Consider the day a client disputes a position Hargrove’s assistant helped file
 
 That said, none of this is simple. Inspectability creates its own tension. Detailed traces can expose sensitive data, internal reasoning artifacts, or privileged content. A trustworthy architecture therefore needs selective retention, role-based visibility, redaction strategies, and different surfaces for operators, reviewers, and auditors. But that tension is not an argument against inspection. It is an argument for governing inspection properly.
 
+The same pattern keeps recurring: wherever agent systems create new power, they also create a need for better-structured oversight.
+
 ## Trustworthy autonomy is tuned, not maximized
+
+The chapter’s deepest continuity with the rest of the manuscript is the rejection of autonomy maximalism.
 
 A childish architecture asks, “How much can we let the agent do?” A mature architecture asks, “What authority is appropriate at this step, for this domain, under this level of risk?”
 
@@ -130,14 +144,16 @@ This is what high-stakes trust actually looks like in practice: layered controls
 
 ## Security is the architecture of deserved trust
 
-Once AI systems act, security cannot remain a sidebar to product capability. It is the architecture that determines whether delegated power is deserved.
+Once AI systems act, security cannot remain a sidebar to product capability.
+
+It is the architecture that determines whether delegated power is deserved.
 
 Identity tells the system on whose behalf it acts. Authorization determines which powers it actually holds. Sandboxing and least privilege contain the damage when the model is wrong. Gateways and roots of trust turn sprawl into governable infrastructure. Audit trails and inspectable trajectories turn machine action into something institutions can review, defend, and improve.
 
 A machine colleague is not trustworthy because it sounds confident.
 It is trustworthy only when its power has shape.
 
-The next chapter asks whether bounded authority still holds when the room stops being calm — when the human is still present, the clock is running, and every defect in the architecture becomes audible.
+Bounded authority is a calm-room design. The next chapter asks whether that design still holds when the room stops being calm — when the human is still present, the clock is running, and every defect in the architecture becomes audible.
 
 ## Practical checklist
 
@@ -146,7 +162,3 @@ The next chapter asks whether bounded authority still holds when the room stops 
 - **Write one default-permission row per agent, not one blanket policy.** A research agent may need no write access at all; a support agent may read but not refund; know the minimum for each stage of the workflow, not just for the agent as a whole.
 - **Apply the MCP governance test before adding a server.** If a new tool connection grows your agents' reach faster than your team can answer who can call this, with what scope, logged where — standardization just expanded your attack surface, not your capability.
 - **Treat a standing credential as a red flag, not a shortcut.** An agent running on a borrowed API key isn't delegated authority; it's impersonation with no expiry and nothing to revoke.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/07-security_

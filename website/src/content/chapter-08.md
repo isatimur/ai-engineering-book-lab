@@ -9,21 +9,15 @@ Voice removes that mercy.
 
 Imagine Hargrove's assistant — the one that built its retrieval binder in Chapter 5, gained durable state and staged sign-off in Chapter 6, and had its authority scoped behind a gateway in Chapter 7 — on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
 
-That scenario does two useful things for this book. First, it gives Chapter 8 a center stronger than “voice” in the abstract. Second, it reveals why realtime belongs in the manuscript’s main run at all. The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds. Problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency.
+The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds, so problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency.
 
 ## Realtime exposes whether the rest of the architecture was honest
 
-The field often treats voice as a charming frontier, a natural interface waiting for slightly better models. That framing is too soft.
-
-Voice matters because it strips away excuses. If the context architecture is weak, the system will fumble the thread. If the runtime is brittle, interruptions will break it. If the security model is sloppy, approvals will be too casual and authority too ambient. If the control plane is underdesigned, the user will be forced to rescue the interaction constantly. If the tool layer is slow, the product will sound incompetent no matter how good the core model is in isolation.
-
-Chapter 7 asked whether delegated power had the right shape. Chapter 8 asks whether that same system still deserves trust when the world refuses to wait.
+The field often treats voice as a charming frontier, a natural interface waiting for slightly better models. That framing is too soft. Voice matters because it strips away excuses. If the context architecture is weak, the system will fumble the thread. If the runtime is brittle, interruptions will break it. If the security model is sloppy, approvals will be too casual and authority too ambient. If the control plane is underdesigned, the user will be forced to rescue the interaction constantly. If the tool layer is slow, the product will sound incompetent no matter how good the core model is in isolation.
 
 ## Realtime systems reveal what chat can hide
 
-In text interfaces, turn-taking is loose. The user sends a message, waits, and receives a response. Even when the latency is annoying, the social contract survives.
-
-Spoken interaction is different. Timing itself becomes part of the product.
+In text interfaces, turn-taking is loose. The user sends a message, waits, and receives a response. Even when the latency is annoying, the social contract survives. Spoken interaction is different: timing itself becomes part of the product.
 
 People expect overlap, acknowledgment, interruption handling, backchannels, and rapid repair. They do not experience conversation as a sequence of perfectly separated turns. They experience it as a continuous negotiation of attention. Users do not only want the answer faster. They want the system to behave as if it understands the rhythm of interaction.
 
@@ -81,9 +75,7 @@ Voice is changing the model stack itself, not only the front end. The pressure f
 
 This is why realtime cannot be treated as a pure UX question. Realtime experience is partly an inference architecture story. Model families, serving strategies, batching decisions, transport layers, and hardware choices all leak into the user experience. The system does not get to hide its internals when every extra delay becomes audible.
 
-The same pattern appears on the speech output side. Modern text-to-speech increasingly inherits design instincts from language models: discrete token spaces, streaming, incremental generation, and the tradeoff between global coherence and local responsiveness. That convergence matters because it shows how deeply interaction requirements are shaping model engineering itself.
-
-The book does not need to become a speech-architecture manual here. The important point is conceptual. Once AI systems have to participate in live loops, model design and systems design start bending toward the requirements of interaction. Realtime is a forcing function on the whole stack, not just another benchmark.
+Once AI systems have to participate in live loops, model design and systems design start bending toward the requirements of interaction. Realtime is a forcing function on the whole stack, not just another benchmark.
 
 ## Voice makes the human control plane immediate
 
@@ -97,7 +89,7 @@ A support call is the clearest example, but the principle is broader. Any realti
 
 ## Embodied edges make the same lesson even harsher
 
-This chapter keeps voice as the primary case on purpose: the corpus this book draws on is deepest there, and every claim below is anchored in it. Robotics and other embodied systems appear only as confirmation — a harsher environment where the same architectural failures show up faster and with less room to hide.
+Robotics and other embodied systems appear here only as confirmation — a harsher environment where the same architectural failures show up faster, with less room to hide.
 
 The more tightly an AI system couples to the world, the less room there is for hidden confusion. Delay becomes visible. State mismatch becomes dangerous. Recovery behavior matters more than eloquent explanation. A model that can improvise impressively in a sandbox may still be unusable when timing, environment state, and safety constraints are all moving at once.
 
@@ -105,17 +97,11 @@ Embodied systems are useful here even though the book does not become a robotics
 
 ## Voice is where trustworthy AI has to perform in public
 
-The chapter opened by rejecting that same soft framing. By now the reason is concrete rather than asserted: latency budgets, half-duplex ceilings, and a control plane that has to work in public.
-
-Voice is where trustworthy AI has to perform in public, under interruption, under latency pressure, and under immediate human judgment. It is where architecture stops being abstract and becomes audible behavior.
-
-That is why this chapter belongs near the end of the manuscript’s main run. It is not there to widen scope for its own sake. It is there to make the earlier claims harder. If Chapter 3 argued for prepared environments, Chapter 5 for context architecture, Chapter 6 for durable runtimes, and Chapter 7 for bounded authority, Chapter 8 shows what happens when all of those systems have to work while the human is still present.
+Latency budgets, half-duplex ceilings, and a control plane that has to work in public are what make the soft framing untenable. Voice is where trustworthy AI has to perform, under interruption, under latency pressure, and under immediate human judgment — where architecture stops being abstract and becomes audible behavior.
 
 Dependable AI is not merely a property of good answers.
 It is a property of good loops.
 And realtime interaction is where that truth becomes impossible to ignore.
-
-If delegated work now happens across repos, workflows, queues, dashboards, and even live customer interactions, what kind of company is required to manage it coherently?
 
 ## Practical checklist
 

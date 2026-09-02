@@ -13,13 +13,17 @@ Scarcity moves upward: from typing to judgment, from production labor to orchest
 
 ## A Monday morning scene from the software factory
 
-Over a weekend at Meridian, a company well past casual AI adoption, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday — any one of which could be hiding another admin-override regression, the throttle on the wrong path from Chapter 4, now buried under a weekend of green checkmarks.
+Picture a Monday morning at Meridian, which by now has gone well past casual AI adoption.
 
-Read back through that scene and you will not find a single reckless act — each move is locally defensible, everyone is productive — and that is the problem.
+Over the weekend, engineers launched subagents against backlog items. Product used internal tools to spin up three alternative flows for a new onboarding step. Support discovered a recurring customer complaint and had an agent draft both a help-center update and a proposed product fix. A staff engineer woke up to twelve pull requests, four synthetic eval reports, two security review requests, and a dashboard showing that an internal automation quietly touched three systems nobody had discussed together on Friday — any one of which could be hiding another admin-override regression, the throttle on the wrong path from Chapter 4, now buried under a weekend of green checkmarks.
+
+Read back through that scene and you will not find a single reckless act — each move in it is locally defensible. In fact, everyone is being productive.
+
+And that is the problem.
 
 The organization is no longer starved for output. It is starved for coherence. Which of these changes matter? Which ones are duplicates? Which artifacts reflect the current strategy and which ones reflect a private interpretation of it? Which outputs are safe to merge, safe to trial, safe to ignore, or dangerous to trust? Who is even responsible for saying so when authorship is now half human, half machine, and spread across several functions? The order is not arbitrary: settle ownership first, because every other question needs someone empowered to answer it; then strategy fit, which discards whole branches cheaply; then safety-to-merge, the expensive per-artifact check you want to run last and least.
 
-This is where the software factory stops being just a repo pattern and becomes a company problem.
+That is the shift worth explaining. It is where the software factory stops being just a repo pattern and starts becoming a company problem.
 
 ## Buying seats is not the same as redesigning work
 
@@ -75,7 +79,7 @@ This is why Maggie Appleton’s framing is so important. Describing collaborativ
 
 Alignment debt accumulates when execution fans out faster than shared understanding. Work happens, artifacts multiply, but the common plan, relevant context, and review surfaces do not stay synchronized. Eventually the debt comes due as rework, confusion, or an exhausting burst of manual coordination.
 
-What makes it distinctively AI-native: agent-amplified execution lets individuals move so quickly in private that the old informal coordination mechanisms stop keeping up.
+It names a distinctively AI-native failure mode. The problem is not merely that teams need to collaborate better in the abstract. It is that agent-amplified execution allows individuals to move so quickly in private that the old informal coordination mechanisms stop keeping up.
 
 The remedy is not to ban private leverage. It is to move alignment earlier. Shared planning, visible decomposition, clearer context packets, common review spaces, and artifact roll-ups become more important, not less, when execution is cheap. In other words, the org needs the same thing the agent needed: a better control plane.
 
@@ -106,9 +110,11 @@ That requires broader creation, tighter review, earlier alignment, stronger inte
 An AI-native organization is therefore not just a company where people use AI a lot.
 It is a company that reorganized itself so that machine-amplified work becomes cumulative instead of chaotic.
 
-The technical question and the organizational question turn out to be the same: how do you build an environment in which delegated work deserves trust?
+That is the outer-ring lesson that completes the book’s core spine.
+The technical question and the organizational question turn out to be the same.
+How do you build an environment in which delegated work deserves trust?
 
-That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces?
+That question has a quieter twin: which parts of this answer outlast the churn of tools and interfaces? That is the subject of the final chapter.
 
 ## Practical checklist
 
@@ -117,7 +123,3 @@ That question has a quieter twin: which parts of this answer outlast the churn o
 - **Name the owner before you widen who can create.** Every path you open needs someone who owns the production path, domain correctness, the security boundaries, and which workflows stay human-gated — decided before it opens, not discovered after something ships.
 - **Measure outcomes, not artifact volume.** Rework rate, the share of generated work that ships unreverted, time in the review queue — a dashboard that only counts pull requests will go green while the real constraint breaks.
 - **Don't trust redundancy unless the voters are actually independent.** Majority voting and model debate beat one expensive call, but only when disagreement is real — sampling one model five times cancels noise, not its shared blind spot.
-
----
-
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko & Daniel Mohanrao · https://fromcopilottocolleague.com/read/09-ai-native-org_

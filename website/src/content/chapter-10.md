@@ -7,7 +7,7 @@ Agent frameworks multiply. Context methods fork and recombine. Tool protocols pr
 
 Some of that noise reflects real progress. Some of it is marketing theater with a GPU budget. Most of it is what fast-moving technical fields look like from the inside: partially right, prematurely named, and quickly replaced.
 
-A book like this needs an ending that does more than point at the horizon. It has to answer a calmer question: what actually endures?
+Pointing at the horizon is easy. The calmer question is harder: what actually endures?
 
 The durable answer is not a specific framework, model family, or orchestration fashion. What endures is a pattern for turning machine capability into dependable work, and that pattern is the real subject of this book.
 
@@ -29,7 +29,7 @@ What endures here is not any one taste doctrine or review ritual but the princip
 
 ## Delegation only becomes real when the environment carries part of the thinking
 
-A model can be brilliant in isolation and still fail as a worker. That sounds almost trivial after the last several years of experience, but it is one of the most important corrections the field has learned. Once machines move from answering questions to doing tasks, their success depends less on generic eloquence and more on the quality of the environment around them.
+A model can be brilliant in isolation and still fail as a worker — one of the most important corrections the field has learned. Once machines move from answering questions to doing tasks, their success depends less on generic eloquence and more on the quality of the environment around them.
 
 Prepared repositories, specs, validations, retrieval systems, memory layers, runtimes, permissions, and review surfaces are not support accessories for intelligence but the means by which intelligence becomes situated.
 
@@ -59,7 +59,7 @@ The later chapters widened from technical to institutional systems because every
 
 That is why the AI-native organization matters. Not as a trend piece, but as the recognition that delegation at scale is a company design problem. The same principles that govern a good agent environment govern a good institution: explicit standards, bounded authority, usable memory, visible work-in-progress, and cheap ways to escalate uncertainty before it compounds into damage.
 
-What endures here is the idea that the company itself becomes a harness for delegated work. That may be the least glamorous claim in the book and one of the most important.
+What endures here is that the company itself becomes a harness for delegated work.
 
 ## The enduring pattern
 
@@ -73,9 +73,7 @@ Not a leaderboard screenshot standing in for product trust.
 
 Constrained delegation means the machine is given a prepared environment, a clearer representation of intent, a workable slice of context, a runtime that can preserve and expose state, authority boundaries proportionate to risk, and human review focused where it matters most.
 
-That pattern will survive specific model families. It will survive today’s frameworks. It will likely survive today’s interface assumptions too.
-
-The reason is simple. It is not a workaround for weak models but a design response to the nature of delegated work itself.
+That pattern will survive specific model families, today’s frameworks, and likely today’s interface assumptions too — not because it is a workaround for weak models but because it is a design response to the nature of delegated work itself.
 
 ## What remains human is not typing; it is responsibility
 

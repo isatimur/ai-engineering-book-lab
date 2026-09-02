@@ -13,7 +13,7 @@ This is why the next generation of AI systems is being shaped less by prompt cle
 
 One of the most persistent confusions in AI product work is the assumption that having access to more information is basically the same thing as having better context. It is not.
 
-A company may have millions of documents. A codebase may have thousands of files. A legal research system may have access to a vast corpus of precedent, internal notes, and prior work product. None of that guarantees that the model will see the right few things for this task, in this turn, under this deadline.
+A company may have millions of documents, a codebase thousands of files, a legal system a vast corpus of precedent and prior work product. None of that guarantees the model sees the right few things for this task, in this turn, under this deadline.
 
 That distinction sounds obvious once stated, but teams violate it constantly. They talk as if the problem were solved the moment the system can technically reach the knowledge. Then the product disappoints and the blame falls on the model. In reality, the model often failed because the system handed it the wrong working set: too much, too little, or the right ingredients in the wrong order.
 
@@ -69,7 +69,7 @@ In practice, usefulness depends on topology: what kind of thing this is, how it 
 
 This is one reason context engineering is so often misunderstood by teams that are still thinking in terms of “RAG versus no RAG.” Retrieval-augmented generation is one mechanism. Context topology is the broader design problem.
 
-A serious context architecture distinguishes layers such as:
+A serious context architecture keeps these layers from collapsing into one searchable pile:
 
 - authoritative sources versus helpful background
 - current task state versus long-term memory
@@ -117,7 +117,7 @@ Sam Morrow’s lessons from GitHub’s remote MCP server push the point from dia
 
 GitHub’s own numbers make the practice concrete. When community contributions pushed that server past a hundred tools, the agents got measurably worse. The first fixes were elegant opt-in machinery: tool sets and dynamic discovery. Almost no one used them, because most users never touch the JSON config — the load-bearing lesson being any fix that depends on user configuration reaches a minority, so change the default instead. GitHub did, cutting the initial tool-load context by 49 percent. The number of tools the agent could call did not fall; the number it had to read did.
 
-This is one of the most important ways the context chapter connects back to the rest of the book. Tool access is not merely an integration story. It is part of the same infrastructure problem as retrieval, memory, and evidence assembly. The system has to decide what the model should see and what it should not.
+Tool access is not merely an integration story. It is part of the same infrastructure problem as retrieval, memory, and evidence assembly: deciding what the model should see and what it should not.
 
 The old failure mode was “the model lacked the right document.” The emerging one is “the model was buried under too many possible actions.”
 
@@ -133,13 +133,13 @@ Does it reduce review burden?
 Does it waste fewer tokens to get the same or better result?
 Does it make higher-stakes workflows feel more trustworthy rather than more theatrical?
 
-Chapter 5 belongs so closely next to Chapter 4. Evals tell you whether your context architecture is actually helping. Observability tells you where context assembly failed in production. The two disciplines are inseparable in practice. You do not know that your context system is good because the retrieval trace looks clever. You know it is good because the work improves.
+Evals tell you whether your context architecture is actually helping. Observability tells you where context assembly failed in production. The two are inseparable. A clever-looking retrieval trace proves nothing; you know the context system is good because the work improves.
 
 That inseparability implies a specific eval design: score retrieval and generation separately. Track whether the governing passage reached the assembled working set at all — a recall measure on the context layer — before scoring whether the model used it correctly. Score only the final answer and a context-assembly bug looks exactly like a model getting dumber — and a model upgrade gets wasted on a retrieval problem.
 
-This also explains why so many context debates are unproductive when they happen in the abstract. Teams argue about RAG, GraphRAG, memory, or tool selection as if these were ideological camps. In production, they are just means. The end is better delegated work.
+So many context debates stay unproductive because they happen in the abstract. Teams argue about RAG, GraphRAG, memory, or tool selection as if these were ideological camps. In production they are just means, and the downstream test decides between them: the assembly that makes the delegated work more accurate is the right one.
 
-## Context is what makes intelligence situated
+## A stronger model amplifies both good and bad context
 
 There is a temptation, especially among people impressed by raw model progress, to treat context work as secondary plumbing. If the model keeps getting smarter, surely the need for elaborate context engineering should diminish.
 
@@ -149,9 +149,7 @@ That is why context belongs in the same mental bucket as harnesses, evals, runti
 
 A machine colleague does not need infinite information. It needs the right binder.
 
-But a final question now appears. Once the binder is assembled, who keeps the work alive across time? Who remembers what has already happened, what is waiting for approval, which tool ran, and what the human needs to inspect next?
-
-That is the runtime problem, the next layer of infrastructure.
+Once the binder is assembled, something has to keep the work alive across time: remembering what happened, what waits for approval, which tool ran, and what the human must inspect next. That is the runtime problem, the next layer of infrastructure.
 
 ## Practical checklist
 

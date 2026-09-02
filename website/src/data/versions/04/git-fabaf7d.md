@@ -11,11 +11,13 @@ That is why the real role of evals is often misunderstood. Evals are not there t
 
 ## The software factory needs a quality system
 
-In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents — the checked-in migration example, the lint rule that killed the banned dependency, the setup scripts that replaced Slack archaeology. The harness improved, and the agent's output improved with it.
+In the previous chapter, Meridian turned an ordinary payments repository into a more legible workplace for coding agents. They added the checked-in migration example, the lint rule that finally killed the banned dependency, the setup scripts that replaced Slack archaeology — the repairs the slop era forced. The harness improved, and the agent's output improved with it.
 
 But that only gets Meridian halfway. A more legible workplace makes delegated work possible. It does not by itself make delegated work trustworthy. The moment the repo starts behaving like a software factory, a new question appears: how do you know whether the factory is producing good work consistently?
 
 This is where many teams stall. They do the hard thinking required to structure tasks and tighten the repository, but they still assess outcomes the way people assess demos: by gut feel, by a few handpicked examples, or by whether a trusted engineer was pleasantly surprised in the last week. Human judgment matters. But without a more systematic loop, the team is still flying mostly by anecdote.
+
+A real factory needs quality control. A delegated software factory needs evals.
 
 The crucial shift is to stop thinking of evals as a one-time gate and start thinking of them as an ongoing instrument panel. They tell you when a new model is better on your work and when it is merely different. They tell you whether a prompt revision improved one slice of performance while quietly damaging another. They tell you whether a new retrieval strategy or tool description increased completion rate but also increased latency or cost. They tell you whether your agent can still handle the classes of failure that hurt you last month. Without that loop, teams are not really running a production system, only a series of hopeful anecdotes.
 
@@ -31,13 +33,13 @@ This is the shape of many AI failures in production. They are not spectacular ha
 
 Once Meridian sees this pattern clearly, the eval work almost writes itself. They add a regression case for the admin override path — what the team will afterward just call the admin-override regression. They mine previous incidents for similar "special path" behavior. They create a task slice for patches that touch both product logic and operations logic. They stop asking only whether the patch passes and start asking which real failure families it still protects against.
 
-That is a control system in practice: it converts an expensive lesson into a reusable instrument.
+That is what a control system looks like in practice. It converts an expensive lesson into a reusable instrument.
 
 ## The unit of evaluation changed
 
 A lot of inherited evaluation habits break because the unit of AI work changed faster than the measurement habits around it. Naman Jain describes the shift in one sentence: “My first project was actually working on generating single line... snippets and my last project was generating an entire codebase.” That arc should reshape how we think about evals. If the system is no longer doing tiny local completions, then tiny local tests are no longer enough.
 
-The snippet era made certain shortcuts possible: you could ask whether a completion looked plausible, measure pass@k on constrained benchmarks, and infer quite a lot from unit-level success. Those methods were not useless. They were matched to a smaller unit of work.
+The snippet era made certain shortcuts possible. You could ask whether the completion looked plausible. You could measure pass@k on constrained benchmark tasks. You could infer quite a lot from unit-level success. Those methods were not useless. They were matched to a smaller unit of work.
 
 But once the task becomes a codebase change, a retrieval workflow, a multi-step customer-support resolution, or an hours-long planning loop, the evaluation target becomes more complicated. The system may make a series of locally sensible moves and still fail globally. It may retrieve relevant documents but rank them badly. It may edit the right files but leave the repo in a state that is hard to review. It may satisfy an obvious user request while violating a subtler business or safety constraint. When the unit of work changes, the unit of evaluation must change too.
 
@@ -51,7 +53,7 @@ Ara Khan, who works on evals at Cline, names the two ways teams get this wrong. 
 
 ## Real-world tasks beat synthetic cleverness
 
-Once teams accept that the old unit of evaluation is insufficient, they face a second problem: what should replace it? Naman Jain gives the methodological rule: “Your task should be natural and sourced from the real world and then you should be able to reliably grade them.” That sentence is a quiet standard for seriousness. It rejects two common temptations at once.
+Once teams accept that the old unit of evaluation is insufficient, they face a second problem: what should replace it? Here Naman Jain offers the most useful methodological rule in the corpus: “Your task should be natural and sourced from the real world and then you should be able to reliably grade them.” That sentence is a quiet standard for seriousness. It rejects two common temptations at once.
 
 The first temptation is synthetic cleverness: tasks invented because they are easy to generate, easy to score, or flattering to the system. The second is unscored realism: impressive examples that feel close to reality but cannot be graded consistently enough to support iteration. Good eval design has to balance both. The task should resemble actual work, and the scoring should be stable enough that teams can compare versions, prompts, tools, and models over time.
 
@@ -83,7 +85,7 @@ This is why application-layer evals tend to look messier than leaderboard metric
 
 ## Observability becomes tomorrow’s eval set
 
-Phil Hetzel collapses the false separation directly: “Observability and eval... it’s actually the same problem from a systems perspective.”
+The best line in the chapter may belong to Phil Hetzel: “Observability and eval... it’s actually the same problem from a systems perspective.” That sentence is powerful because it collapses a false separation.
 
 Teams often imagine observability as the thing you do after deployment and evals as the thing you do before deployment. In reality, the two should feed each other continuously. Observability shows you what the system is actually doing in the wild. Evals let you replay, score, compare, and improve against those patterns before you ship the next change.
 
@@ -91,7 +93,7 @@ Past a certain complexity this stops being optional. The Raindrop team describes
 
 Production traces are not only for debugging incidents; they are raw material for the next generation of offline evaluation. A user conversation that exposed a prompt weakness can become a regression example. A failed coding task can become a benchmark slice. A costly retrieval miss can become a dataset item for future ranking experiments. An escalation to human review can become a labeled example of where the autonomy boundary was crossed badly.
 
-Chained together, these steps become the eval flywheel — each turn converts real production behavior into a reusable test:
+This creates the eval flywheel:
 
 1. observe real behavior in production
 2. identify painful or important failure patterns
@@ -102,7 +104,7 @@ Chained together, these steps become the eval flywheel — each turn converts re
 
 Once you see the loop, Chapter 3’s harness story becomes more concrete. A harness without observability cannot learn. Observability without eval discipline cannot prioritize.
 
-This is also why an eval platform is not just a test runner. A runner executes checks. A real platform also stores datasets, versions scoring logic, supports comparisons, surfaces disagreements, and creates enough trust in results that teams will actually use them to make decisions. In mature AI engineering, the platform around evaluation becomes part of the product-development process itself.
+This is also why Hetzel insists an eval platform is not just a test runner. A runner executes checks. A real platform also stores datasets, versions scoring logic, supports comparisons, surfaces disagreements, and creates enough trust in results that teams will actually use them to make decisions. In mature AI engineering, the platform around evaluation becomes part of the product-development process itself.
 
 There is a newer reason the platform matters: once coding agents write code alongside people, they become readers of the eval suite too. Lawrence Jones at incident.io, who calls his evals “AI unit tests,” stores them as YAML checked in next to the prompt they grade — and learned the interface lesson the hard way. When his team wrapped the evals in richer browser UIs, both audiences fell away: humans lacked the time, and the “coding agents weren’t able to work with them.” The unlock was not a better dashboard but “a small CLI tool that we call eval tool,” because “file systems are exceptionally good agent context.” Pushed further, their “scrapbook” pipeline downloads each backtest investigation as a file tree and runs roughly twenty-five agents in parallel, one per investigation, returning a structured improvement report instead of a chart — and Jones is careful that “these patterns do generalize.” The portable test is blunt: could a coding agent, given only the interface you already have, find a failing eval, read the trace behind it, and add the regression case — or could only a human with the dashboard open do that?
 
@@ -116,13 +118,15 @@ Evaluation work is often uncomfortable because it surfaces disagreement. One eng
 
 In that sense, evals are a control system not only for the model, but for the organization. They are how teams turn fuzzy standards into inspectable ones.
 
-A good eval program is layered because no single check catches everything:
+This is also why a good eval program usually contains multiple layers:
 
 - fast automatic checks for obvious regressions
 - scenario datasets sourced from real tasks
 - slice-level analysis for important subpopulations or failure types
 - human or expert review where judgment cannot be safely collapsed into a scalar
 - comparison workflows that help teams decide whether a change is actually an improvement
+
+None of this is glamorous. But neither is version control, incident response, or CI.
 
 ## The control system is organizational, not only technical
 
@@ -136,15 +140,15 @@ That is also why the question “Do we have evals?” is usually too small. The 
 
 ## Evals are what make delegation trustworthy
 
-Once AI systems start doing work instead of merely suggesting it, measurement stops being optional. You cannot supervise every action directly, and you cannot reason from benchmark scores to production trust, no matter how impressive the model feels during a demo.
+Once AI systems start doing work instead of merely suggesting it, measurement stops being optional. You cannot supervise every action directly. You cannot reason from benchmark scores to production trust. You cannot ship on vibes indefinitely, no matter how impressive the model feels during a demo.
 
 What you can do is build a control system: representative tasks, credible scoring, production observability, regression sets from real failures, comparison loops, and a habit of turning mistakes into reusable tests. That is what evals are for.
 
 Not to tell you whether your model is impressive, but to tell you whether your system is safe to trust.
 
-Once the machine can act, the surrounding system needs a way to notice drift, compare alternatives, preserve painful lessons, and keep quality from collapsing into anecdote.
+And this is the deeper continuity between the chapters so far. Chapter 3 argued that delegated work depends on a legible harness. Chapter 4 adds that a legible harness is still not enough. Once the machine can act, the surrounding system needs a way to notice drift, compare alternatives, preserve painful lessons, and keep quality from collapsing into anecdote.
 
-Once teams can structure work and measure outcomes, they hit a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment.
+The natural next question is what the system is actually steering with. Once teams can structure work and measure outcomes, they run into a third bottleneck: whether the agent is seeing the right information, in the right shape, at the right moment. Context is not merely input. It is infrastructure.
 
 ## Practical checklist
 

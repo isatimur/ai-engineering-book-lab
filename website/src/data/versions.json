@@ -3,8 +3,41 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:1b3b2b4",
       "versions": [
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 3140,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:929902f",
+          "source": "git",
+          "ref": "929902f5f463b813cd3708785ae21fab448ac962",
+          "date": "2026-08-20",
+          "status": "Drafting",
+          "wordCount": 2956,
+          "message": "edit(quality): usefulness lift on ch1 (was 44.1, lowest along with ch10)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-929902f.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 2724,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -28,39 +61,6 @@
           "content_ref": "01/git-96de0a5.md"
         },
         {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2509,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-90737a8.md"
-        },
-        {
-          "version_id": "git:d9483a1",
-          "source": "git",
-          "ref": "d9483a1c5c77ce567f0d93a3366a7c1b055e339b",
-          "date": "2026-07-13",
-          "status": "Drafting",
-          "wordCount": 2115,
-          "message": "Chapter 1 refinement: sharpen assistant/copilot/delegate definitions and delegation-discipline framing",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-d9483a1.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 2051,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-91275aa.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -74,8 +74,30 @@
       ]
     },
     "02": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:020d29a",
       "versions": [
+        {
+          "version_id": "git:020d29a",
+          "source": "git",
+          "ref": "020d29a2ee36f896cb69191db2065f188f9cadca",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 3396,
+          "message": "feat(ch2): add a practical checklist section (sample for the 10-chapter rollout)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-020d29a.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 3172,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -110,28 +132,6 @@
           "content_ref": "02/git-90737a8.md"
         },
         {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 2876,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-91275aa.md"
-        },
-        {
-          "version_id": "git:203912f",
-          "source": "git",
-          "ref": "203912f1dd6f6b82f86c08e745c5cf454b44a2ea",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 1996,
-          "message": "edit(manuscript): cut empty meta one-liners, tighten 3 (usefulness)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-203912f.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -145,8 +145,41 @@
       ]
     },
     "03": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:31099b6",
       "versions": [
+        {
+          "version_id": "git:31099b6",
+          "source": "git",
+          "ref": "31099b63928e310d0a35441147d6f5a809794ddf",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 3490,
+          "message": "edit: stop ranking the sources for the reader",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-31099b6.md"
+        },
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 3496,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 3313,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -170,39 +203,6 @@
           "content_ref": "03/git-96de0a5.md"
         },
         {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2775,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-90737a8.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 4788,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-91275aa.md"
-        },
-        {
-          "version_id": "git:d3e0d43",
-          "source": "git",
-          "ref": "d3e0d439043735a3f19a72efa25e409e6b04f728",
-          "date": "2026-06-10",
-          "status": "Drafting",
-          "wordCount": 3214,
-          "message": "edit(manuscript+docs): de-fabricate ch03 Codex cite, trim ch06 meta, refresh README",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-d3e0d43.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -216,62 +216,62 @@
       ]
     },
     "04": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:ac69df3",
       "versions": [
         {
-          "version_id": "git:eae7ffa",
+          "version_id": "git:ac69df3",
           "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
+          "ref": "ac69df3cbbc0e00f488975d788a4c16f2f57c15f",
+          "date": "2026-08-28",
           "status": "Drafting",
-          "wordCount": 3261,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
+          "wordCount": 3910,
+          "message": "fix(integrity): audit every attributed quotation, remove a fabrication",
           "corpus_snapshot_hash": null,
-          "content_ref": "04/git-eae7ffa.md"
+          "content_ref": "04/git-ac69df3.md"
         },
         {
-          "version_id": "git:96de0a5",
+          "version_id": "git:31099b6",
           "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
+          "ref": "31099b63928e310d0a35441147d6f5a809794ddf",
+          "date": "2026-08-28",
           "status": "Drafting",
-          "wordCount": 3112,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "wordCount": 3913,
+          "message": "edit: stop ranking the sources for the reader",
           "corpus_snapshot_hash": null,
-          "content_ref": "04/git-96de0a5.md"
+          "content_ref": "04/git-31099b6.md"
         },
         {
-          "version_id": "git:90737a8",
+          "version_id": "git:08a5bf8",
           "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
+          "ref": "08a5bf8dedbc336e824b5ef07f1d6724c9722e82",
+          "date": "2026-08-28",
           "status": "Drafting",
-          "wordCount": 3227,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "wordCount": 3933,
+          "message": "edit: remove drafting-note voice that leaked into finished prose",
           "corpus_snapshot_hash": null,
-          "content_ref": "04/git-90737a8.md"
+          "content_ref": "04/git-08a5bf8.md"
         },
         {
-          "version_id": "git:91275aa",
+          "version_id": "git:fabaf7d",
           "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
+          "ref": "fabaf7d84db213ad6775299c4b6a0c27a8cd1a43",
+          "date": "2026-08-26",
           "status": "Drafting",
-          "wordCount": 2990,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "wordCount": 3932,
+          "message": "fix(ch4): remove a direct quotation Hetzel did not say",
           "corpus_snapshot_hash": null,
-          "content_ref": "04/git-91275aa.md"
+          "content_ref": "04/git-fabaf7d.md"
         },
         {
-          "version_id": "git:869bdb6",
+          "version_id": "git:1b3b2b4",
           "source": "git",
-          "ref": "869bdb69f81587e2b3f03d20e04f92eb12b6cf12",
-          "date": "2026-06-04",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
           "status": "Drafting",
-          "wordCount": 2398,
-          "message": "prose(ch2,3,4,8,9): review fixes — dedup, source attribution, hedges",
+          "wordCount": 3933,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
           "corpus_snapshot_hash": null,
-          "content_ref": "04/git-869bdb6.md"
+          "content_ref": "04/git-1b3b2b4.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -287,8 +287,52 @@
       ]
     },
     "05": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:ac69df3",
       "versions": [
+        {
+          "version_id": "git:ac69df3",
+          "source": "git",
+          "ref": "ac69df3cbbc0e00f488975d788a4c16f2f57c15f",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 3619,
+          "message": "fix(integrity): audit every attributed quotation, remove a fabrication",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-ac69df3.md"
+        },
+        {
+          "version_id": "git:31099b6",
+          "source": "git",
+          "ref": "31099b63928e310d0a35441147d6f5a809794ddf",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 3613,
+          "message": "edit: stop ranking the sources for the reader",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-31099b6.md"
+        },
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 3628,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 3432,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -299,50 +343,6 @@
           "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
           "corpus_snapshot_hash": null,
           "content_ref": "05/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2764,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-96de0a5.md"
-        },
-        {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2812,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-90737a8.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 4875,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-91275aa.md"
-        },
-        {
-          "version_id": "git:072be58",
-          "source": "git",
-          "ref": "072be582314254444a82909ea81e1b88c4833608",
-          "date": "2026-06-10",
-          "status": "Drafting",
-          "wordCount": 3083,
-          "message": "edit(ch5): thin the practitioner roster (final prose-audit item)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-072be58.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -358,8 +358,52 @@
       ]
     },
     "06": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:ac69df3",
       "versions": [
+        {
+          "version_id": "git:ac69df3",
+          "source": "git",
+          "ref": "ac69df3cbbc0e00f488975d788a4c16f2f57c15f",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 4226,
+          "message": "fix(integrity): audit every attributed quotation, remove a fabrication",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-ac69df3.md"
+        },
+        {
+          "version_id": "git:c46f6e6",
+          "source": "git",
+          "ref": "c46f6e6b59a8f7236569c76b458a4430eb06c1a9",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 4221,
+          "message": "edit: remove drafting-note voice (applied to the real source this time)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-c46f6e6.md"
+        },
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 4227,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 4005,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -370,50 +414,6 @@
           "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
           "corpus_snapshot_hash": null,
           "content_ref": "06/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 3338,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-96de0a5.md"
-        },
-        {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 3444,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-90737a8.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 2673,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-91275aa.md"
-        },
-        {
-          "version_id": "git:d3e0d43",
-          "source": "git",
-          "ref": "d3e0d439043735a3f19a72efa25e409e6b04f728",
-          "date": "2026-06-10",
-          "status": "Drafting",
-          "wordCount": 2194,
-          "message": "edit(manuscript+docs): de-fabricate ch03 Codex cite, trim ch06 meta, refresh README",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-d3e0d43.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -429,8 +429,41 @@
       ]
     },
     "07": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:c46f6e6",
       "versions": [
+        {
+          "version_id": "git:c46f6e6",
+          "source": "git",
+          "ref": "c46f6e6b59a8f7236569c76b458a4430eb06c1a9",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 3401,
+          "message": "edit: remove drafting-note voice (applied to the real source this time)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-c46f6e6.md"
+        },
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 3404,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 3206,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -454,39 +487,6 @@
           "content_ref": "07/git-96de0a5.md"
         },
         {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2647,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-90737a8.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 3617,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-91275aa.md"
-        },
-        {
-          "version_id": "git:f536564",
-          "source": "git",
-          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
-          "date": "2026-06-09",
-          "status": "Drafting",
-          "wordCount": 3694,
-          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-f536564.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -500,62 +500,62 @@
       ]
     },
     "08": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:c46f6e6",
       "versions": [
         {
-          "version_id": "git:eae7ffa",
+          "version_id": "git:c46f6e6",
           "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
+          "ref": "c46f6e6b59a8f7236569c76b458a4430eb06c1a9",
+          "date": "2026-08-28",
           "status": "Drafting",
-          "wordCount": 2535,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
+          "wordCount": 3132,
+          "message": "edit: remove drafting-note voice (applied to the real source this time)",
           "corpus_snapshot_hash": null,
-          "content_ref": "08/git-eae7ffa.md"
+          "content_ref": "08/git-c46f6e6.md"
         },
         {
-          "version_id": "git:96de0a5",
+          "version_id": "git:1b3b2b4",
           "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
           "status": "Drafting",
-          "wordCount": 2432,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
+          "wordCount": 3140,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
           "corpus_snapshot_hash": null,
-          "content_ref": "08/git-96de0a5.md"
+          "content_ref": "08/git-1b3b2b4.md"
         },
         {
-          "version_id": "git:90737a8",
+          "version_id": "git:cfecd09",
           "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
+          "ref": "cfecd098d98e77b11bf2fa324c19c9cb04e9dd44",
+          "date": "2026-08-22",
           "status": "Drafting",
-          "wordCount": 2512,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
+          "wordCount": 2947,
+          "message": "fix: address ship-gate BLOCK findings on the 2026-08-20/22 ungated ships",
           "corpus_snapshot_hash": null,
-          "content_ref": "08/git-90737a8.md"
+          "content_ref": "08/git-cfecd09.md"
         },
         {
-          "version_id": "git:91275aa",
+          "version_id": "git:4225988",
           "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
+          "ref": "42259888a5c8b16bc03688a4bdbce7baa12f8c1c",
+          "date": "2026-08-21",
           "status": "Drafting",
-          "wordCount": 5613,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
+          "wordCount": 2949,
+          "message": "edit(quality): fix ch8 ship-blocker and a duplicated sentence",
           "corpus_snapshot_hash": null,
-          "content_ref": "08/git-91275aa.md"
+          "content_ref": "08/git-4225988.md"
         },
         {
-          "version_id": "git:f536564",
+          "version_id": "git:03bad0c",
           "source": "git",
-          "ref": "f5365645e7cd41e7484a61ef3b2355da80c29ff4",
-          "date": "2026-06-09",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
           "status": "Drafting",
-          "wordCount": 3482,
-          "message": "edit(manuscript): tic-diversification pass (prose-audit #1 lever)",
+          "wordCount": 2915,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
           "corpus_snapshot_hash": null,
-          "content_ref": "08/git-f536564.md"
+          "content_ref": "08/git-03bad0c.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -571,8 +571,52 @@
       ]
     },
     "09": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:c46f6e6",
       "versions": [
+        {
+          "version_id": "git:c46f6e6",
+          "source": "git",
+          "ref": "c46f6e6b59a8f7236569c76b458a4430eb06c1a9",
+          "date": "2026-08-28",
+          "status": "Drafting",
+          "wordCount": 3289,
+          "message": "edit: remove drafting-note voice (applied to the real source this time)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-c46f6e6.md"
+        },
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 3295,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:b64a10d",
+          "source": "git",
+          "ref": "b64a10dc38238ae972c36b73be76c3da765bded2",
+          "date": "2026-08-21",
+          "status": "Drafting",
+          "wordCount": 3102,
+          "message": "edit(quality): usefulness lift on ch9 (was 54.4) + fix a ledger misattribution",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-b64a10d.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 2834,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -583,50 +627,6 @@
           "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
           "corpus_snapshot_hash": null,
           "content_ref": "09/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2359,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-96de0a5.md"
-        },
-        {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2424,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-90737a8.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 5085,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-91275aa.md"
-        },
-        {
-          "version_id": "git:4f5dd39",
-          "source": "git",
-          "ref": "4f5dd399b48c6a17725abb8e4bfc56a3aa048e5d",
-          "date": "2026-06-11",
-          "status": "Drafting",
-          "wordCount": 5048,
-          "message": "fix(ch09): correct over-claimed source attributions (Hron, Bloomberg)",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-4f5dd39.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -642,8 +642,41 @@
       ]
     },
     "10": {
-      "current_version_id": "git:eae7ffa",
+      "current_version_id": "git:1b3b2b4",
       "versions": [
+        {
+          "version_id": "git:1b3b2b4",
+          "source": "git",
+          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
+          "date": "2026-08-23",
+          "status": "Drafting",
+          "wordCount": 2135,
+          "message": "feat: add a practical checklist section to chapters 1, 3-10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-1b3b2b4.md"
+        },
+        {
+          "version_id": "git:7aec31f",
+          "source": "git",
+          "ref": "7aec31f37c431f0b6a4b7935eb59cbd9b5aa0e40",
+          "date": "2026-08-21",
+          "status": "Drafting",
+          "wordCount": 1927,
+          "message": "edit(quality): usefulness lift on ch10 (was 42.4, weakest in book)",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-7aec31f.md"
+        },
+        {
+          "version_id": "git:03bad0c",
+          "source": "git",
+          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
+          "date": "2026-07-18",
+          "status": "Drafting",
+          "wordCount": 1810,
+          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-03bad0c.md"
+        },
         {
           "version_id": "git:eae7ffa",
           "source": "git",
@@ -665,39 +698,6 @@
           "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
           "corpus_snapshot_hash": null,
           "content_ref": "10/git-96de0a5.md"
-        },
-        {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 1745,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "10/git-90737a8.md"
-        },
-        {
-          "version_id": "git:91275aa",
-          "source": "git",
-          "ref": "91275aaa97c0602fb388ba4db39c13845959a4b0",
-          "date": "2026-07-03",
-          "status": "Drafting",
-          "wordCount": 2175,
-          "message": "Restore manuscript to canonical (public/drafting) + add drift-prevention",
-          "corpus_snapshot_hash": null,
-          "content_ref": "10/git-91275aa.md"
-        },
-        {
-          "version_id": "git:96210fb",
-          "source": "git",
-          "ref": "96210fb9875a2c3a6f2d600dbcca49d2b0dad40d",
-          "date": "2026-06-03",
-          "status": "Drafting",
-          "wordCount": 1497,
-          "message": "prose(ch01,02,07,09,10): usefulness hybrid batch 2 — sharpenings + takeaways",
-          "corpus_snapshot_hash": null,
-          "content_ref": "10/git-96210fb.md"
         },
         {
           "version_id": "git:7f5a2c6",

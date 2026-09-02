@@ -7,7 +7,7 @@ That difference is not philosophical. It is architectural. A chat system can ans
 
 This is where many impressive agent demos break. The model itself may be good enough. The harness may be decent. The evals may even exist. The context may be strong. But the system was still built like a conversation when it needed to be built like a workflow. It loses track of what already happened. A retry repeats work or performs the same action twice. A human cannot tell which subagent did what. An approval arrives too late, after the expensive or risky step already happened. The agent does not fail because it is unintelligent. It fails because it has nowhere durable to stand.
 
-The next layer is runtime design: the state, recovery, and review machinery that decides whether a system keeps working past its first clever turn.
+The next layer is runtime design. Once agents act over time, architecture becomes destiny.
 
 ## Stateless systems hit a wall
 
@@ -47,7 +47,7 @@ Once you start thinking in workflows rather than turns, history changes meaning,
 
 That is why durable-agent discussions keep converging on structured histories, checkpoints, and replayable event logs. Not because engineers enjoy complexity, but because long-running work creates obligations. If the system did something important, someone may later need to inspect it. If a run failed halfway through, the team may need to resume from a meaningful boundary rather than start from zero. If a result is contested, the organization may need to know what the system saw, which tools it used, and which step introduced the mistake.
 
-Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can go in and you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” History is the substrate of inspection, not archival fluff.
+Somal makes this visibility requirement explicit: “We also store all of the workflow history... so that you can look at the visibility of what is happening as your agent is navigating this complex set of interactions.” History is the substrate of inspection, not archival fluff.
 
 This is also where runtime design begins to touch Chapter 4’s control-system argument. A good history lets a team do more than recover execution. It lets them learn. Failed trajectories become eval cases. Slow steps become optimization targets. Repeated approval bottlenecks reveal design problems in the control plane. The runtime is not merely keeping the work alive but generating the evidence by which the system can later improve.
 
@@ -117,7 +117,7 @@ There is an honest tension here. Richer traces increase trust, debuggability, an
 
 ## Parallel workers create leverage only if work can be recomposed
 
-The final runtime lesson is about subagents. Parallel workers promise more throughput: one human launches many narrow specialists at once — searcher, implementer, reviewer, debugger, migration scout. OpenAI’s subagent materials and the coding-factory case both point that way, and the leverage is real.
+The final runtime lesson is about subagents. Parallel workers are compelling because they offer the same thing every manager has wanted forever: more throughput. OpenAI’s subagent materials and the coding-factory case both point toward a future where one human can launch many narrow specialists at once. Searcher, implementer, reviewer, summarizer, debugger, policy checker, migration scout. The leverage is real.
 
 But subagents do not solve the control problem. They intensify it.
 
@@ -138,6 +138,12 @@ The Software Factory shows the coding version of this. The High-Stakes Colleague
 The real challenge of agentic systems is not producing one intelligent response but sustaining useful action across time without losing control. That is a runtime problem.
 
 Durable state, explicit workflow semantics, structured approvals, inspectable histories, observability, and reviewable roll-ups are not secondary implementation details. They are the machinery that turns bursts of model intelligence into dependable delegated work. Without them, the system remains trapped in the demo layer: locally impressive, globally fragile.
+
+This is the deeper continuity across the book’s middle run.
+Chapter 3 argued that delegated work needs a legible workplace.
+Chapter 4 argued that it needs a quality loop.
+Chapter 5 argued that it needs the right working set of information.
+Chapter 6 adds that none of this is enough if the work cannot persist, recover, and be supervised over time.
 
 A machine colleague is not just a model with tools. It is a model inside an operating environment.
 

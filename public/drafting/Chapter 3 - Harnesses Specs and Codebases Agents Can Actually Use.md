@@ -43,9 +43,7 @@ One reason this problem is easy to underestimate is that experienced engineers a
 
 Lopopolo gives this problem a memorable scale when he says that producing a single patch can require “500 little decisions” around underspecified non-functional requirements. The exact number is not the point. The point is that repositories are dense with decisions that matter greatly but are rarely captured in the task description. A human engineer often fills those gaps through craft and context. A coding agent fills them through inference under uncertainty. Lopopolo names the mechanism: the models “during their training have seen trillions of lines of code that make every possible choice of those non-functional requirements that you could ever imagine.” Left a requirement unspecified, it samples one of those conventions, and nothing makes the sample yours.
 
-That is where slop comes from.
-
-The sloppy patch is not always the sign of a stupid model. It is often the sign of a task whose invisible success criteria were never written down. The agent guessed because the environment forced it to. Then humans act surprised that the guesses look generic.
+Slop is not always the sign of a stupid model. It is often the sign of a task whose invisible success criteria were never written down. The agent guessed because the environment forced it to. Then humans act surprised that the guesses look generic.
 
 Once you see the problem this way, the prescription changes. The answer is not only “prompt better”; it is to reduce the amount of silent guesswork that the environment demands. Externalize architecture choices. Store examples of accepted patterns. Make non-functional constraints explicit. Give the system stable ways to discover how this team expects software to be built.
 
@@ -73,7 +71,7 @@ At this point the argument can sound abstract, so it helps to come back to repos
 
 That extra step is the real substance of agent-readiness. The question is not simply whether a team has linting or tests, but whether the codebase has enough automated validation and explicit structure that a coding agent can move through it with bounded risk. A repository becomes agent-ready when it exposes enough of its standards, setup, and quality gates that delegated work becomes legible. The step further is that the validation surface is itself something the agent can extend: you can “ask a coding agent, could you figure out where we're not being opinionated enough about our linters” and have it write the missing rule. Reyes sets a low bar on purpose — “a slop test is better than no test” — because once a rough check exists, the next agent follows it and the rules ratchet tighter.
 
-A practical checklist usually includes at least the following:
+What makes a repo agent-ready is boring and concrete, and every item a team skips here is a place the agent will guess.
 
 - a stable folder structure rather than a maze of historical accidents
 - explicit setup, build, and run commands that do not rely on oral tradition
@@ -110,15 +108,15 @@ But subagents also intensify the need for good scaffolding. More workers without
 
 ## The new advantage is environment design
 
-The marketing of AI coding tools naturally focuses on generation. That is the visible magic. The agent edits a file. It writes a test. It proposes a patch. Those moments are real and often impressive.
+AI coding tools market the visible magic of generation — the agent edits a file, writes a test, proposes a patch. Those moments are real and often impressive.
 
 But the durable advantage is increasingly elsewhere. It belongs to teams that make their repositories legible. Teams that externalize non-functional judgment instead of leaving it trapped in senior engineers’ heads. Teams that treat specs as reusable intent rather than ceremonial paperwork. Teams that invest in validations and repo affordances that help an agent check its own work. Teams that gradually turn loose process into a staged, inspectable software factory. Reyes puts a specific number on the stakes: this investment is where “the real like 5x, 6x, 7x comes from,” and the catch is that “it's a choice that you as an organization have” — the model will not hand it to you.
 
 This is why harness engineering deserves to be treated as a primary discipline instead of a tactical trick. The harness is not a helper around the codebase. It is becoming part of the codebase.
 
-And that may turn out to be one of the most important shifts in software engineering culture. The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
+The winners in AI coding will not simply be the teams with access to the strongest models. They will be the teams that built workplaces those models can actually understand.
 
-Once the environment can produce delegated work at all, the obvious next question is no longer how to generate more. It is how to know whether the generated work is actually good.
+Once the environment can produce delegated work at all, the next question is no longer how to generate more. It is how to know whether the generated work is actually good.
 
 ## Practical checklist
 
