@@ -57,7 +57,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 
 | Priority | What | Tracking |
 |---|---|---|
-| P1 | **Full-coverage MASH re-run — fix shipped, verification pending.** Heavy-judge throttle (`_HEAVY_CONCURRENCY=1`) shipped in book-mash `3926f25`; see Shipped. One re-run needed to confirm humanness/claim_defensibility reach ~100%; gated on API key (~$0.60 warm). Command: `cd ~/Dev/LifeOS/book-mash && ANTHROPIC_API_KEY='sk-…' poetry run book-mash measure --config ~/Dev/LifeOS/knowledge-bases/ai-engineer-book/book-mash.toml` | book-mash `runners/measurement.py` |
+| parked | **Canonical panel v9 (`panel-3model`) — parked, no funded key.** The OpenRouter account is overdrawn and cannot be topped up (operator, 2026-09-03). v8 stands as the last canonical reading. The standing zero-cost instrument is `scripts/mash_agent/cli.py` (agent-judged, separately named `agent-*` runs, never merged into `judge-scores.json`); its 09-02 usefulness run is the current before/after evidence. Unmeasured since the 09-02 cuts: humanness, voice, redundancy — an agent-judged run on those three dims is the next cheap check | `.mash-agent-runs/` · `research_passes/2026-09-02-usefulness-and-attribution-pass.md` |
 | P1 | **SEO routing — post-deploy verification** — code merged + deployed; remaining: Lighthouse ≥95 spot-check and Google Search Console sitemap submit | [`spec`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
 
 ## Queued (validated, not started)
