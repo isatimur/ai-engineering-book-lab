@@ -1,6 +1,6 @@
 {
   "_generated_by": "99_Meta/scripts/classify_second_book.py",
-  "_generated_at": "2026-07-28T13:01:51+00:00",
+  "_generated_at": "2026-09-03T00:53:14+00:00",
   "_regenerate_after": "corpus-sync",
   "part1": [
     "007-a2muGkT4WD4-running-llms-on-your-iphone-40-tok-s-gemma-4-with-mlx-adrien-grondin-locally-ai",
@@ -131,7 +131,10 @@
     "678-OV56RddyFuU-self-training-agents-hermes-agent-hf-traces-skills-mcp-finetuning-merve-noyan-hugging-face",
     "692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind",
     "787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis",
-    "896-2xJoimgoqBg-security-track-intro-randall-degges-snyk"
+    "896-2xJoimgoqBg-security-track-intro-randall-degges-snyk",
+    "1001-Cc0_nyxROBA-from-rl-to-irl-gaurav-mishra-amazon-agi-lab",
+    "1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori",
+    "1046-4loPnxvWWhg-your-fine-tuned-model-is-tech-debt-a-50x-roi-house-of-cards-dan-bjornn-lease-end"
   ],
   "part2": [
     "086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab",
@@ -164,7 +167,16 @@
     "890-bUJgirn4_yc-when-agents-meet-physical-data-the-other-physics-of-agent-harnesses-dmitry-petrov-datachai",
     "918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times",
     "936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google",
-    "938-O72p-rBb2bA-evals-driven-development-for-a-mental-health-ai-coach-akele-reed-dave-revere-sondermind"
+    "938-O72p-rBb2bA-evals-driven-development-for-a-mental-health-ai-coach-akele-reed-dave-revere-sondermind",
+    "963-z0sh8HyTrDo-your-finance-agent-s-bottleneck-is-you-ramana-siddanth-emani-auditoria-ai",
+    "970-3ZMUiFaQ3qg-verifiable-environments-for-ai-in-biology-kenny-workman-latchbio",
+    "1024-VBCDhRrvlYo-the-next-game-engine-won-t-have-a-manual-arturo-nunez-nereu",
+    "1030-u6q-byPWUuo-from-ambient-documentation-to-clinical-intelligence-chaitanya-asawa-abridge",
+    "1031-YXEqC05WEI0-guardrails-first-engineering-member-facing-health-ai-rashi-agrawal-hinge-health",
+    "1034-AN65uc645mE-200-million-patient-interactions-later-vivek-muppalla-hippocratic-ai",
+    "1036-Yphdry8ttAQ-trading-desks-to-clinical-trials-parallels-in-applied-vertical-ai-ayush-bhardwaj-allos-ai",
+    "1037-WJRdLNhrsLQ-how-to-build-an-ai-native-health-company-dan-feng-maven-clinic",
+    "1057-yqF6XhzbWBk-inside-847-production-clinical-ai-notes-sebastian-fox-composo"
   ],
   "part2_excluded": [
     "092-xAfp-znTRx8-music-from-aie-code-summit-instrumentals",
