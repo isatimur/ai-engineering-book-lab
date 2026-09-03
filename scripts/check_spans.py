@@ -16,6 +16,11 @@ grep. Exact substring matching fails on ASR stutters: the Factory transcript rea
 prints it once. A naive search calls that a fabrication. It is the opposite - the
 book is more accurate than the source it is checked against.
 
+Spans under --min-words are reported separately as "too short", NOT as clean.
+They still need a human. In the 09-03 run the highest-severity flag of all - a
+bare speaker name, "Matt Carey", scored 35 - landed in that bucket, because the
+spans most worth checking are often the shortest.
+
     python3 scripts/check_spans.py --run agent-54c7-...
 """
 from __future__ import annotations
