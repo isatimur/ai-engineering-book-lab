@@ -33,7 +33,7 @@ A model can be brilliant in isolation and still fail as a worker — one of the 
 
 Prepared repositories, specs, validations, retrieval systems, memory layers, runtimes, permissions, and review surfaces are not support accessories for intelligence but the means by which intelligence becomes situated.
 
-This is one reason Dax Raad’s provocation that “AI changes nothing” is useful even if taken too literally it becomes false. AI changes many things about software economics, interfaces, and labor distribution. What it does not change is the need for clear intent, good constraints, and systems thinking. If anything, it makes those requirements harder to ignore because weak environments are now punished faster. What endures, then, is not prompt cleverness but environment design.
+This is one reason Dax Raad titled his talk *AI Changes Nothing* — a provocation that is useful even if, taken too literally, it becomes false. AI changes many things about software economics, interfaces, and labor distribution. What it does not change is the need for clear intent, good constraints, and systems thinking. If anything, it makes those requirements harder to ignore because weak environments are now punished faster. What endures, then, is not prompt cleverness but environment design.
 
 ## Reliability is still a systems problem
 

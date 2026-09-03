@@ -733,7 +733,7 @@ Hierarchical memory is a better mental model. Some things belong in immediate wo
 
 This matters because every piece of carried-forward context has a cost. It occupies tokens. It competes for attention. It increases the chance that stale, irrelevant, or misleading information will quietly shape the next step. Bigger windows reduce one kind of pressure, but they do not remove the need for disciplined selection.
 
-Most of that budget hides in the input. Rajkumar Sakthivel’s team at Tesco states the decomposition bluntly: “90% of your AI cost is input. Files, search results, context you send in. Only 10% is output.” It inverts the usual instinct to reach first for a cheaper model: the model may be 30 percent of the cost, and what you feed it the other 70. Indexing a codebase and retrieving only the relevant slices, instead of pasting whole files, cut their input tokens by a measured 94 percent.
+Most of that budget hides in the input. Rajkumar Sakthivel’s team at Tesco states the decomposition bluntly: “90% of your AI cost is input. Files, search results, context you send in. Only 10% is output.” It inverts the usual instinct to reach first for a cheaper model: the model may be 30 percent of the cost, and what you feed it the other 70. Indexing a codebase and retrieving only the relevant slices, instead of pasting whole files, cut input tokens by 94 percent on their public benchmark — a best case measured against always reading whole files, which he is careful to say real setups will not match.
 
 The software-factory case already hinted at this in Chapter 3. An agent working in a repo does not need the whole codebase in active view. It needs the right files, the relevant specs, and enough execution history to avoid losing the thread. Chapter 4 sharpened the same point from the measurement side: the system must preserve the right failures and slices. Chapter 5 extends the logic. Good context architecture means knowing what to keep live, what to summarize, what to index, and what to leave out. That restraint is not weakness but design maturity.
 
@@ -1364,7 +1364,7 @@ A model can be brilliant in isolation and still fail as a worker — one of the 
 
 Prepared repositories, specs, validations, retrieval systems, memory layers, runtimes, permissions, and review surfaces are not support accessories for intelligence but the means by which intelligence becomes situated.
 
-This is one reason Dax Raad’s provocation that “AI changes nothing” is useful even if taken too literally it becomes false. AI changes many things about software economics, interfaces, and labor distribution. What it does not change is the need for clear intent, good constraints, and systems thinking. If anything, it makes those requirements harder to ignore because weak environments are now punished faster. What endures, then, is not prompt cleverness but environment design.
+This is one reason Dax Raad titled his talk *AI Changes Nothing* — a provocation that is useful even if, taken too literally, it becomes false. AI changes many things about software economics, interfaces, and labor distribution. What it does not change is the need for clear intent, good constraints, and systems thinking. If anything, it makes those requirements harder to ignore because weak environments are now punished faster. What endures, then, is not prompt cleverness but environment design.
 
 ## Reliability is still a systems problem
 

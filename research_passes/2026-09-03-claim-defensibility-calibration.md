@@ -117,3 +117,79 @@ config file's directory — but a run launched from a git worktree at another pa
 produce a different hash over the same text, and `panel_merge` would refuse to merge the
 two. Left unchanged: re-basing the hash would strip published panel v8 of a snapshot
 anyone can recompute.
+
+---
+
+# Results — the run itself
+
+534 paragraphs, snapshot `54c7e3c1`, agent-judged, **not** canonical panel.
+
+| | |
+|---|---|
+| mean | **91.6** (median 92.0) |
+| `fail` band (ship-blockers) | **0** |
+| paragraphs with a flagged span | **12** |
+| flagged spans | **14** |
+
+The score is a first reading on a changed instrument. It is not comparable with any
+earlier number and it is **not** evidence that the book is well anchored — a judge shown
+all 54 claims has more surface on which to find *some* match, which corrects the false
+"unsupported" flags but makes the opposite error likelier. The defect list is the result;
+the mean is context.
+
+## Triage — every flagged span was read
+
+**Two real findings.**
+
+1. `chapter-10#L36` — *"AI changes nothing"* was printed as Dax Raad's quoted provocation.
+   He never says it: **zero occurrences across his 3,374-word talk**. It is the title of
+   `108-o3gmwzo-Mik-ai-changes-nothing-dax-raad-opencode`. This is the **fourth** instance
+   of the talk-title-as-speech pattern, after Morris and Carey (fixed 08-28) and Hetzel's
+   outright fabrication. Now attributed as a title. The argument is untouched.
+
+2. `chapter-5#L106` — *"cut their input tokens by a measured 94 percent"* overstated the
+   source in two ways at once. Sakthivel measured 94% on a **public benchmark** (FastAPI,
+   53 files, 20 questions), not on Tesco's codebase, and he volunteers the limit on stage:
+   *"The 94% again the worst case, reading full files every time… Real savings are lower
+   than 94%."* The book's "their … measured" claimed a realised production result. Now
+   states the benchmark and carries his caveat. A book about source-anchored claims should
+   not be less careful than its source was.
+
+**Four flags where the book is right and the checker is not.** Two are ASR corrections —
+Khattab's transcript reads *"birth text Davinci 2 up to four 04 mini"* where the book
+correctly prints `text-davinci-002` and `o4-mini`, and Factory's reads *"serial execution
+with **with** targeted internal parallelization"*. Two are talk titles the book **already**
+handles correctly: *The Friction Is Your Judgment* in italics after "Their talk, titled",
+and "Matt Carey's talk title names the trap precisely". Those two are what a correct fix
+looks like, and they are why finding #1 is a defect and they are not.
+
+**Three verified-correct attributions.** Kelly's *"code review is by far the most important
+skill"* is verbatim in his own talk; his four-nines/thousands-of-users/gigabytes definition
+of production is near-verbatim and unquoted; and Rogut really does relay Jeff Dean —
+*"the exact quote is you don't need a trillion at once, you need the right million."*
+
+**Five ledger-coverage gaps, not attribution defects.** `pass@k`, lost-in-the-middle,
+step-up auth, tool-descriptions-as-input, and the voice-interface behavioural claim are all
+unquoted book-voice assertions with no named attribution. Matin's four controls likewise:
+the ledger records only sandboxing to him, but **all four are in his talk** — sandboxing,
+disabling internet access, unprivileged sandbox via seccomp/landlock, and "finally
+requiring human review". The ledger is thinner than the corpus here. That is a ledger
+backlog item, not a prose defect, and it is the lower-severity class.
+
+## What the judges caught that I had not
+
+Two judges reported, unprompted, that **the calibration note was in none of the 54 batch
+files**. They were right: the edit wiring `_OR_SOURCE_NOTE` into `_write_batch` was applied
+in a patch script that raised on a later assertion before writing, so the constant survived
+and the call site did not. The run stands, because the identical calibration text was in
+every dispatch prompt and so was delivered uniformly — but the batch file is meant to be
+self-contained, and it was not. Fixed and verified by rendering.
+
+## Residual this pass does not close
+
+The "or source" clause makes a quote backed when the speaker is *any* listed source for the
+claim. A real phrase, from the right speaker, attached to the **wrong** claim still passes.
+One judge surfaced exactly that shape (Kelly quoted on review capacity, where his only
+ledger anchor sits on the vibe-coding entry); it checked out here, but the instrument would
+not have caught it if it had not. The earlier quote audit flagged the same gap from the
+other direction. Neither pass closes it.
