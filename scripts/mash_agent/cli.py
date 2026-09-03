@@ -355,6 +355,30 @@ excerpt list. Score it down when the paragraph asserts something the ledger does
 AND no listed source stands behind it."""
 
 
+_MATCH_STANDARD_NOTE = """### Calibration note - what counts as a match
+
+Two extractors on one batch produced 61 and 27 grounded claims, and split on two
+sections that decide a 90-vs-10 score. Both were wrong in opposite directions, so
+the standard is fixed here.
+
+A ledger id is a match only when that entry's claim statement or one of its
+supporting quotes actually covers the assertion. Same topic is NOT a match.
+
+  * NOT a match: "Evaluation work is often uncomfortable because it surfaces
+    disagreement" against `claims#8` ("Evals are a control system, not just a test
+    suite"). Both are about evals; the entry says nothing about discomfort or
+    disagreement. Use null.
+  * IS a match: "evals are a control system not only for the model, but for the
+    organization" against `claims#8` - that is the entry's own statement almost
+    word for word. Marking this null is a miss, and it wrongly drops a section to
+    the fail band.
+
+Two failure modes, equally bad. Matching loosely inflates the grounded count, and
+the count is the only input to the score. Matching too strictly sends a
+well-evidenced section to `fail`. Check the entry text before you decide, and use
+null whenever you would have to stretch it."""
+
+
 def _extraction_contract(batch: list[dict], run_id: str, n: int) -> list[str]:
     """Output contract for extraction dims: list claims, do not score anything.
 
@@ -363,6 +387,8 @@ def _extraction_contract(batch: list[dict], run_id: str, n: int) -> list[str]:
     reproducible in a way a felt 0-100 is not.
     """
     return [
+        _MATCH_STANDARD_NOTE,
+        "",
         "## Output contract",
         "",
         "You do NOT assign a score. Do not include `score_0_100` or `label`.",
