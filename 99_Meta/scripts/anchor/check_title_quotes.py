@@ -72,6 +72,14 @@ for f in sorted(REPO.glob(a.glob)):
         # A title the speaker DID say on stage is a normal quote, not a defect.
         if any(subseq_match(toks, body) for body in corpus.values()):
             continue
+        # Nor is a title the prose openly LABELS as one. Book 1 italicises them,
+        # book 2 puts them in quote marks after "the talk's own title" - both are
+        # honest. Only an unlabelled quoted title claims someone said it. Without
+        # this the sweep cries wolf on four known-good spans every run, which is
+        # how a check stops being read.
+        lead = text[max(0, text.find(q) - 90):text.find(q)].lower()
+        if re.search(r"\btitles?\b|\bsubtitle\b|\btitled\b", lead):
+            continue
         findings += 1
         print(f"  {f.name}\n    quoted: {q!r}\n    matches title of {hit}, "
               f"and is in NO transcript\n")
