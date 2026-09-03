@@ -193,3 +193,48 @@ One judge surfaced exactly that shape (Kelly quoted on review capacity, where hi
 ledger anchor sits on the vibe-coding entry); it checked out here, but the instrument would
 not have caught it if it had not. The earlier quote audit flagged the same gap from the
 other direction. Neither pass closes it.
+
+---
+
+# Cross-instrument check against canonical panel v9
+
+Panel v9 landed later the same day on snapshot `7c61` (git `8221593` — the commit carrying
+the two fixes above), which made a comparison possible that did not exist when the agent run
+was made. The agent run is on `54c7`, two paragraphs earlier; negligible for chapter means.
+
+| chapter | agent (full ledger) | panel v9 (top-8) | diff |
+|---|---|---|---|
+| 1 | 93.6 | 94.2 | −0.6 |
+| 2 | 91.1 | 94.3 | −3.2 |
+| 3 | 91.4 | 93.2 | −1.8 |
+| 4 | 92.6 | 93.8 | −1.2 |
+| 5 | 89.7 | 93.0 | −3.3 |
+| 6 | 91.1 | 92.9 | −1.8 |
+| 7 | 90.7 | 93.3 | −2.6 |
+| 8 | 91.2 | 92.6 | −1.4 |
+| 9 | 93.1 | 93.4 | −0.3 |
+| 10 | 92.3 | 94.9 | −2.6 |
+| **book** | **91.7** | **93.6** | **−1.9** |
+
+## This corrects a prediction made in this pass
+
+Above, this document warned that showing the judge all 54 claims "has more surface on which
+to find *some* match" and would therefore push the aggregate **up**. It did the opposite:
+the agent instrument is lower on **every one of the ten chapters**, by 1.9 points on average.
+A consistent sign across 10/10 is a real effect, not noise.
+
+The likelier cause is not the ledger change but the *other* change made here: requiring
+`unbacked_specifics` forces the judge to name specific unbacked assertions, and looking for
+them finds them. That is an instrument effect introduced by this pass, and it means the
+agent number is stricter than the canonical one rather than more generous.
+
+## What the two instruments agree and disagree on
+
+They agree on every verdict that matters: all ten chapters land in the **strong** band on
+both. They agree only moderately on ordering — per-chapter r = **0.507** (n = 10). That
+figure is fragile: the whole range is 89.7–94.9, and a correlation over four points of
+spread should not be read as a precision claim.
+
+So the honest summary is that the agent instrument reproduces the canonical *verdict* while
+running about two points stricter, and is not a substitute for the panel when the question
+is which chapter is weakest.
