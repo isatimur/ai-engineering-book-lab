@@ -345,6 +345,8 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
     ]
     for dim in dims:
         out += [f"## Rubric — `{dim}` (verbatim from book-mash)", "", "```", _rubric(dim).strip(), "```", ""]
+        if dim == "claim_defensibility":
+            out += [_OR_SOURCE_NOTE, ""]
 
     # Hoist context that is identical across the whole batch. evidence_density
     # carries the full claims index per unit (~36k chars each) and voice carries
