@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -309,6 +310,25 @@ def cmd_plan(args) -> int:
     return 0
 
 
+_OR_SOURCE_NOTE = """### Calibration note - how to read the rubric's "or source" clause
+
+Two judges scoring the same batch split on exactly one question, so it is settled here
+rather than left to you.
+
+A claims ledger lists REPRESENTATIVE quotes, not full transcripts. When prose quotes a
+speaker who is already a listed source for the claim being made, and the exact words are
+not among that entry's excerpts, the claim is BACKED. The rubric's "treat a match against
+a supporting quote or source as valid ledger backing" exists for this case.
+
+Worked example. A paragraph quotes Lou Bichard: "GitHub is not a coordination layer for
+agents." That sentence appears nowhere in the ledger's excerpts. But Bichard is #704, the
+ledger's own listed source for the coordination claim, and the quote restates that entry's
+statement. Score it strong. It was afterwards confirmed verbatim in his transcript.
+
+So: do not score a paragraph down merely because a quoted phrase is missing from the
+excerpt list. Score it down when the paragraph asserts something the ledger does not carry
+AND no listed source stands behind it."""
+
 def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str) -> None:
     """One self-contained judging task: verbatim rubric + units + output contract.
 
@@ -366,6 +386,8 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
             "label": "moderate",
             "reasoning": "one or two sentences naming what the score turns on",
             "actionable_takeaway": "what a reader could change on Monday - \"\" if none",
+            **({"unbacked_specifics": ["verbatim span the ledger does not back"]}
+               if "claim_defensibility" in dims else {}),
         }], indent=2),
         "```",
         "",
@@ -375,6 +397,25 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
         "`label` must match `score_0_100`: >=80 strong, >=50 moderate, >=20 weak, else fail.",
         "Ingest validates this and rejects the batch on any mismatch.",
         "",
+    ]
+    if "claim_defensibility" in dims:
+        out += [
+            "Every object must ALSO carry `unbacked_specifics`: a JSON array of the "
+            "specific assertions in that paragraph you could not back against the ledger.",
+            "",
+            "  * Each entry must be an EXACT substring of the paragraph, copied verbatim. "
+            "Do not paraphrase and do not summarise - these strings get checked against the "
+            "transcript corpus mechanically, and a paraphrase cannot be checked.",
+            "  * Use `[]` when everything in the paragraph is backed. `[]` is the right "
+            "answer for most paragraphs and is not a failure to engage.",
+            "  * This list, not the score, is the output that matters. Judges agree on it "
+            "and disagree on scores, so put your care here.",
+            "",
+            "Ingest rejects the batch if the key is missing, or if an entry is not found "
+            "verbatim in its paragraph.",
+            "",
+        ]
+    out += [
         "## Units",
         "",
     ]
@@ -396,6 +437,35 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
     path.write_text("\n".join(out))
 
 
+def _normalise_span(t: str) -> str:
+    """Fold typography so a judge's copy-paste matches the paragraph it came from.
+
+    Chapters use curly quotes and em dashes; a judge retyping a span often
+    straightens them. That is not a paraphrase and must not be rejected as one.
+    """
+    for a, b in (("\u201c", '"'), ("\u201d", '"'), ("\u2018", "'"), ("\u2019", "'"),
+                 ("\u2014", "-"), ("\u2013", "-"), ("\u2026", "...")):
+        t = t.replace(a, b)
+    return re.sub(r"\s+", " ", t).strip().lower()
+
+
+def _batch_unit_texts(d: Path, n: int) -> dict[str, str]:
+    """Unit id -> paragraph text, read back from the batch markdown.
+
+    The batch file is the only artefact that records what the judge was shown, so
+    verbatim checks are made against it rather than against the corpus on disk.
+    """
+    md = (d / "batches" / f"batch-{n:03d}.md").read_text()
+    body = md.split("\n## Units\n", 1)[-1]
+    out: dict[str, str] = {}
+    for chunk in re.split(r"\n### \d+\. ", body)[1:]:
+        m = re.match(r"`([^`]+)`", chunk)
+        blocks = re.findall(r"```text\n(.*?)\n```", chunk, re.S)
+        if m and blocks:
+            out[m.group(1)] = blocks[-1]
+    return out
+
+
 def cmd_ingest(args) -> int:
     d = _run_dir(args.run)
     manifest = json.loads((d / "manifest.json").read_text())
@@ -410,6 +480,9 @@ def cmd_ingest(args) -> int:
         raise SystemExit(f"cannot read judgments: {exc}") from exc
     if not isinstance(payload, list):
         raise SystemExit("judgments must be a JSON array")
+
+    needs_spans = any(k.endswith("|claim_defensibility") for k in expected)
+    unit_texts = _batch_unit_texts(d, int(key)) if needs_spans else {}
 
     seen, errors, rows = set(), [], []
     for i, r in enumerate(payload):
@@ -446,10 +519,36 @@ def cmd_ingest(args) -> int:
         # The rubric asks for a takeaway at moderate and above. Warn rather than
         # reject: an empty one costs a reporting field, a rejected batch costs the
         # whole batch. Older runs predate the field entirely.
+        row = {"unit_id": uid, "dim_name": dim, "score_0_100": float(score),
+               "label": label, "reasoning": reasoning.strip(),
+               "actionable_takeaway": takeaway.strip()}
+
+        # claim_defensibility's real output is the list of assertions the judge could
+        # not back, not the score: two calibration judges named the SAME phrases in the
+        # same paragraphs while landing 20 points apart. So the list is required, and
+        # each entry must be verbatim - paraphrases cannot be checked against the
+        # transcript corpus, which is the whole point of collecting them. Missing key
+        # is an error, never a silent [], or "nothing unbacked" and "judge did not
+        # answer" would be indistinguishable.
+        if dim == "claim_defensibility":
+            spans = r.get("unbacked_specifics")
+            if spans is None:
+                errors.append(f"{where}: unbacked_specifics is required for "
+                              f"claim_defensibility (use [] if everything is backed)")
+                continue
+            if not isinstance(spans, list) or any(not isinstance(x, str) for x in spans):
+                errors.append(f"{where}: unbacked_specifics must be an array of strings")
+                continue
+            hay = _normalise_span(unit_texts.get(uid, ""))
+            bad = [x for x in spans if _normalise_span(x) not in hay]
+            if bad:
+                errors.append(f"{where}: unbacked_specifics must be copied verbatim from "
+                              f"the paragraph; not found: {bad[:2]}")
+                continue
+            row["unbacked_specifics"] = [x.strip() for x in spans]
+
         seen.add(k)
-        rows.append({"unit_id": uid, "dim_name": dim, "score_0_100": float(score),
-                     "label": label, "reasoning": reasoning.strip(),
-                     "actionable_takeaway": takeaway.strip()})
+        rows.append(row)
 
     missing = expected - seen
     if missing:
@@ -513,6 +612,7 @@ def cmd_finalize(args) -> int:
                 "dim_name": r["dim_name"], "unit_id": r["unit_id"],
                 "score_0_100": r["score_0_100"], "label": r["label"],
                 "reasoning": r["reasoning"], "actionable_takeaway": t,
+                "unbacked_specifics": r.get("unbacked_specifics", []),
                 "evidence_refs": [], "model": model, "cost_usd": 0.0,
                 "derived": False,
             })
