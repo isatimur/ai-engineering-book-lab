@@ -105,3 +105,38 @@ it and G missed its own statement inside it. A judge cannot fix an entry that bu
 into a single id — the matching decision stops being well-defined. That is a
 ledger-granularity question, not a measurement one, and splitting over-broad entries would
 raise the signal on this dimension more than any change to the instrument.
+
+## Correction (same day) — the ledger-granularity conclusion was wrong
+
+The section above ends by asserting that both calibration errors trace to `claims#8` carrying
+too much, and that splitting over-broad entries "would raise the signal on this dimension more
+than any change to the instrument". That was written from one anecdote and is not supported.
+
+Measured across the whole ledger (68 entries, 534 paragraphs, IDF-weighted lexical overlap):
+
+| | words | top-1 for | vs median |
+|---|---|---|---|
+| median entry | 94 | — | — |
+| `claims#54` | 219 | 41 paragraphs | 2.3× |
+| `claims#26` | 206 | 25 | 2.2× |
+| **`claims#8`** | **120** | **28** | **1.3×** |
+
+`claims#8` is not an outlier on either axis — fifth by attraction, barely above median length.
+
+Re-reading the two disputed sections confirms it. F matched *"evaluation work is often
+uncomfortable because it surfaces disagreement"* to `claims#8`, but that proposition is not in
+`claims#8` under any reading, broad or narrow — the entry says nothing about discomfort or
+disagreement. And G returned zero grounded claims for a section containing *"evals are a
+control system not only for the model, but for the organization"*, which is `claims#8`'s own
+headline. **Both were judge errors. Neither was caused by entry breadth.**
+
+The right lesson is narrower and about method: a disagreement between two judges on two
+sections is not evidence about the structure of the ledger. Generalising it into a structural
+claim, then writing that claim into the backlog as though it were established, is the same
+error this project keeps finding elsewhere — a plausible story recorded as a finding without
+the measurement that would have tested it. The measurement took two minutes and refuted it.
+
+`claims#54` and `claims#26` are genuinely long. Whether they are ill-defined rather than
+merely long is untested, and being top-1 for many paragraphs is expected for a central topic
+like model routing. That question stays open, and any split should follow evidence that
+matching to them actually goes wrong.

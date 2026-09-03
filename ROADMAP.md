@@ -75,7 +75,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 
 ## Methodology backlog
 
-- **Over-broad ledger entries** — `claims#8` bundles evals-as-control-system, eval tooling, benchmark-maxing and organisational control under one id, which makes claim-to-ledger matching ill-defined (2026-09-03 calibration: one extractor over-matched to it, another missed its own statement inside it). Splitting entries would raise signal more than any judge change — librarian path
+- **Ledger-entry breadth — measured, and mostly a non-issue.** A 2026-09-03 backlog item claimed `claims#8` was over-broad and that splitting it would raise signal more than any judge change. Measurement retracts that: `claims#8` is 120 words (1.3× the 94-word median) and top-1 for 28/534 paragraphs, only fifth by attraction. The two genuine length outliers are `claims#54` (219 words, top-1 for 41) and `claims#26` (206). Whether either is *ill-defined* rather than merely long is untested — length alone is not a defect, and a central topic should attract. Test before editing
 - **Quote-to-claim attribution** — the "or source" clause backs a quote when the speaker is *any* listed source for the claim, so a real phrase from the right speaker on the wrong claim still passes. Neither the quote audit nor `claim_defensibility` closes this
 - **Multi-agent review** for whole-manuscript passes (chapter-role confusion, weak evidence, overlap)
 - **Cross-corpus synthesis** — adding sources beyond AI Engineer (carefully)
