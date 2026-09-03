@@ -133,7 +133,8 @@ DIM_GRANULARITY = {
 #
 #   usefulness           chapter_title
 #   humanness            surrounding_paragraphs      via _surrounding()
-#   claim_defensibility  relevant_ledger             via retrieve_relevant_claims()
+#   claim_defensibility  complete_ledger             whole ledger when it fits,
+#                        (else relevant_ledger)      else retrieve_relevant_claims()
 #   evidence_density     claims_index                via load_claims_index()
 #   voice                voice_baseline_excerpts     via _load_voice_baseline()
 #   redundancy           earlier_chapter_summaries   via _summarize_chapter()
@@ -142,6 +143,11 @@ DIM_GRANULARITY = {
 # piece not reproduced is redundancy's `candidate_overlap_chapter_ids`, which the
 # runner fills from an embedding prefilter — it already degrades to [] when no
 # embedder is configured, which is the same value used here.
+# Ledger size above which claim_defensibility falls back to top-K retrieval.
+# Today's ledger is 34k; the cap leaves headroom without letting a batch become
+# unreadable if the ledger doubles.
+_FULL_LEDGER_MAX_CHARS = 80_000
+
 SUPPORTED_DIMS = set(DIM_GRANULARITY)
 
 
@@ -176,6 +182,7 @@ def _units(dim: str) -> tuple[str, list[tuple[str, str, dict]]]:
     gran = DIM_GRANULARITY[dim]
 
     claims_index = None
+    full_ledger = None
     if dim in ("claim_defensibility", "evidence_density"):
         claims_index = load_claims_index(c["claims_dir"])
     baseline = None
@@ -186,6 +193,21 @@ def _units(dim: str) -> tuple[str, list[tuple[str, str, dict]]]:
         if isinstance(v, list):
             return "\n\n".join(_fmt(x) for x in v) if v else "(none)"
         return getattr(v, "retrieval_text", lambda: str(v))() if hasattr(v, "retrieval_text") else str(v)
+
+    if dim == "claim_defensibility":
+        # Prefer the WHOLE ledger over top-K retrieval when it fits. The judge is
+        # asked "does the ledger back this?", and "no matching entry = unsupported"
+        # is only a safe verdict if the judge saw every entry. Measured on this
+        # corpus: 520 of 534 paragraphs have more than 8 claims with nonzero lexical
+        # overlap, and for 439 of them the rank-8/rank-9 score gap is under 10%
+        # (median 3.3%) - so which 8 the judge sees is near-arbitrary, and an
+        # "unsupported" flag is partly an artefact of truncation. The full ledger is
+        # also CHEAPER: 34k chars hoisted once per batch, against ~57k for top-8
+        # repeated across 10 units. Fall back to retrieval only if a future ledger
+        # outgrows the budget.
+        candidate = _fmt(claims_index)
+        if len(candidate) <= _FULL_LEDGER_MAX_CHARS:
+            full_ledger = candidate
 
     out: list[tuple[str, str, dict]] = []
     earlier: list[dict] = []
@@ -213,7 +235,9 @@ def _units(dim: str) -> tuple[str, list[tuple[str, str, dict]]]:
                     elif dim == "humanness":
                         ctx = {"surrounding_paragraphs": _fmt(_surrounding(sec.paragraphs, i))}
                     elif dim == "claim_defensibility":
-                        ctx = {"relevant_ledger": _fmt(retrieve_relevant_claims(para.text, claims_index))}
+                        ctx = ({"complete_ledger": full_ledger} if full_ledger is not None
+                               else {"relevant_ledger":
+                                     _fmt(retrieve_relevant_claims(para.text, claims_index))})
                     else:
                         ctx = {}
                     out.append((para.id, para.text, ctx))
@@ -316,7 +340,13 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
     if shared:
         out += ["## Shared context (identical for every unit in this batch)", ""]
         for k, v in shared.items():
-            out += [f"### {k}", "", "```text", v.strip(), "```", ""]
+            out += [f"### {k}", ""]
+            if k == "complete_ledger":
+                # The rubric says an entry-less claim is "unsupported". That verdict
+                # is only safe if the judge knows it was shown the entire ledger.
+                out += ["This is the book's ENTIRE claims ledger, not a retrieved subset. "
+                        "If a claim is not backed here, it is backed nowhere.", ""]
+            out += ["```text", v.strip(), "```", ""]
     out += [
         "## Output contract",
         "",
