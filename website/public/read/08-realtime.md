@@ -9,7 +9,7 @@ Voice removes that mercy.
 
 Imagine Hargrove's assistant — the one that built its retrieval binder in Chapter 5, gained durable state and staged sign-off in Chapter 6, and had its authority scoped behind a gateway in Chapter 7 — on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
 
-The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds, so problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency.
+The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds, so problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency. Kwindla Hultman Kramer draws the line by the clock: real time is anything inside "conversational latency of a few hundred milliseconds or less."
 
 ## Realtime exposes whether the rest of the architecture was honest
 
@@ -71,7 +71,7 @@ This is where the human control plane comes into the room. In chat, the control 
 
 ## Realtime pushes model and inference architecture in specific directions
 
-Voice is changing the model stack itself, not only the front end. The pressure for lower first-audio latency, more natural streaming, and tighter multimodal coordination is pushing systems toward architectures optimized for interaction, not merely offline quality. Speech tokenization, streaming generation, lower-latency synthesis, and specialized serving strategies matter because the product requirement is not just to produce good output but to produce good output now.
+Voice is changing the model stack itself, not only the front end. The pressure for lower first-audio latency, more natural streaming, and tighter multimodal coordination is pushing systems toward architectures optimized for interaction, not merely offline quality. Speech tokenization, streaming generation, lower-latency synthesis, and specialized serving strategies matter because the product requirement is not just to produce good output but to produce good output now. Samuel Humeau of Mistral notes speech labs have "converged to some common patterns," building audio generation on the same autoregressive decoder backbone that powers language models.
 
 This is why realtime cannot be treated as a pure UX question. Realtime experience is partly an inference architecture story. Model families, serving strategies, batching decisions, transport layers, and hardware choices all leak into the user experience. The system does not get to hide its internals when every extra delay becomes audible.
 

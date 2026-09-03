@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "run": {
-    "run_id": "panel-3model-v9",
-    "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
+    "run_id": "panel-3model-v10",
+    "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
     "book_mash_version": "0.1.0",
     "dim_registry_version": "0.1.0",
     "judge_prompt_versions": null,
-    "finished_at": "2026-09-03T01:42:20.075950+00:00",
-    "total_cost_usd": 0.0093,
+    "finished_at": "2026-09-03T16:08:58.875569+00:00",
+    "total_cost_usd": 0.1291,
     "status": "completed",
     "dims": [
       "humanness",
@@ -45,6 +45,18 @@
     },
     "partial": false,
     "merged_run_ids": [
+      "panel-3model-v10",
+      "2026-09-03-160711159-74b4",
+      "2026-09-03-160526840-74b4",
+      "2026-09-03-160351300-74b4",
+      "2026-09-03-160137693-74b4",
+      "2026-09-03-160005232-74b4",
+      "2026-09-03-154107418-74b4",
+      "2026-09-03-154100876-74b4",
+      "2026-09-03-154054253-74b4",
+      "2026-09-03-113024-74b4",
+      "2026-09-03-110726-74b4",
+      "2026-09-03-110726-74b4",
       "panel-3model-v9",
       "2026-09-03-014102-7c61",
       "2026-09-03-014106-7c61",
@@ -88,10 +100,10 @@
   },
   "book": {
     "humanness": 86.0,
-    "voice": 88.4,
-    "usefulness": 60.6,
-    "evidence_density": 79.8,
-    "claim_defensibility": 93.6,
+    "voice": 87.7,
+    "usefulness": 60.5,
+    "evidence_density": 85.3,
+    "claim_defensibility": 93.4,
     "redundancy": 87.5,
     "usefulness_substantive": 62.1,
     "usefulness_connective": 24,
@@ -101,9 +113,9 @@
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 85.5,
         "voice": 95.0,
@@ -216,45 +228,45 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 13,
+          "paragraph_index": 12,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 10): The paragraph does not make an externally-checkable claim. It is a synthesis of the book\u001a\u0019s already-established argument, and the quote from Joel Hron is used to illustrate this point.",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph synthesizes and restates claims already established in the ledger, particularly claims#53 ('Agents fabricate having verified — they report success they never achieved — so the harness must supply real verification, not trust the agent's account of it'). It also references Rafael Levi's quote directly from the ledger, reinforcing the claim. The paragraph does not introduce new extern…",
           "evidence_refs": [],
-          "para_excerpt": "Joel Hron gives the cleanest formulation of this shift: the north star has moved “from helpfulness to productive.” In the same vein he describes the target as s…"
+          "para_excerpt": "That is a different standard. A helpful answer can be wrong and still useful. Delegated work is expensive in a different way. It consumes time, touches systems,…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 18,
+          "paragraph_index": 20,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 10): The paragraph does not make an externally-checkable claim. It is a synthesis of the book\u001a\u0019s argument, restating the importance of considering the system as a whole, beyond just model intelligence. The quotes from Jacob Lauritzen and Sam Bhagwat are used to support this point, but they are not presented as evidence for a specific claim about the external world.",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
-          "para_excerpt": "The book does not start with model intelligence in the abstract. Intelligence is necessary but insufficient. A system can be astonishing in conversation and sti…"
+          "para_excerpt": "A suggestion can be ignored. A delegated action can create rework. A bad summary can waste a few minutes. A bad patch can stall a release. A shallow legal draft…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 19,
+          "paragraph_index": 29,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes a claim about the shift from chat to delegated execution and how delegation changes the failure surface. This claim is directly supported by ledger entry claims#1 (support_level: strong), which states 'The important transition is from suggestion to delegated execution' and includes supporting quotes from multiple sources. The phrasing in the paragraph aligns with the reusable…",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes and restates claims already supported by the ledger, particularly the distinction between capability and expertise, and the importance of scaffolding and context. It does not introduce new externally-checkable claims.",
           "evidence_refs": [],
-          "para_excerpt": "The shift is not toward better chat but toward delegated execution, and delegation changes the failure surface."
+          "para_excerpt": "Barry Zhang and Mahesh Murag at Anthropic are especially useful here because they resist the fantasy that raw model progress alone solves the problem. Their for…"
         }
       ],
       "stale": false
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 86.0,
         "voice": 85.0,
         "usefulness": 54.6,
-        "evidence_density": 56.7,
-        "claim_defensibility": 94.3,
+        "evidence_density": 85.8,
+        "claim_defensibility": 93.9,
         "redundancy": 90.0,
         "n_paragraphs": 68,
         "usefulness_substantive": 55.6,
@@ -265,7 +277,7 @@
         "humanness": "strong",
         "voice": "strong",
         "usefulness": "moderate",
-        "evidence_density": "moderate",
+        "evidence_density": "strong",
         "claim_defensibility": "strong",
         "redundancy": "strong"
       },
@@ -361,48 +373,48 @@
         },
         {
           "dim_name": "claim_defensibility",
+          "paragraph_index": 1,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "These questions used to be signs of seniority. They now become the gate itself: operational prerequisites anyone must clear before directing cheap delegated exe…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 2,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
+          "evidence_refs": [],
+          "para_excerpt": "Once we say the future is delegated work, the immediate human consequence is that directing work becomes a first-class technical skill. The manager, staff engin…"
+        },
+        {
+          "dim_name": "claim_defensibility",
           "paragraph_index": 3,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument about the relationship between task framing and output quality in high-output environments, rather than a new fact about the external world. Therefore, it does not require ledger backing.",
+          "reasoning": "panel-median 90 (n=3, spread 5): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
           "para_excerpt": "The inverse is also true. A badly framed task can now waste far more time than before because the generator will happily produce large amounts of plausible but …"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 7,
-          "score": 90.0,
-          "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes an externally-checkable claim about the importance of code review and the industry's historical under-training in this skill. This claim is strongly supported by the ledger entry claims#38 (support_level: strong), which includes a source from Chris Kelly, Augment Code (source #132: \"vibes aren't going to fix\"), and the reusable phrasing: \"You can only safely create as fast as…",
-          "evidence_refs": [],
-          "para_excerpt": "Chris Kelly at Augment Code puts it bluntly: “code review is by far the most important skill” — and one the industry under-trained, because it interviewed for s…"
-        },
-        {
-          "dim_name": "claim_defensibility",
-          "paragraph_index": 8,
-          "score": 90.0,
-          "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 10): no externally-checkable claim — connective/definitional/synthesis prose.",
-          "evidence_refs": [],
-          "para_excerpt": "This is where swyx’s “war on slop” is useful. Slop is not just bad code or generic writing. It is output that consumes trust faster than it creates value. It is…"
         }
       ],
       "stale": false
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 85.5,
         "voice": 85.0,
-        "usefulness": 66.1,
+        "usefulness": 65.6,
         "evidence_density": 85.0,
-        "claim_defensibility": 93.2,
+        "claim_defensibility": 92.8,
         "redundancy": 85.0,
         "n_paragraphs": 49,
-        "usefulness_substantive": 66.8,
+        "usefulness_substantive": 66.2,
         "usefulness_connective": 1,
         "usefulness_total": 49
       },
@@ -510,7 +522,7 @@
           "paragraph_index": 1,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes an externally-checkable claim about the move toward specialized roles in modern coding systems, which is supported by the ledger entry claims#44 (support_level: moderate) and its reusable phrasing. The claim in the paragraph aligns with the ledger's description of subagent specialization making process explicit and encoding team judgment into roles. Additionally, the paragraph…",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes and extends the book's own argument about subagent specialization, which is already supported by the ledger (claims#44). It does not make a new externally-checkable claim but rather builds on the established idea of subagent specialization and its role in making processes explicit. The paragraph is consistent with the ledger's support level and does not overstate or intr…",
           "evidence_refs": [],
           "para_excerpt": "The same logic extends beyond a single agent. One of the most interesting developments in modern coding systems is the move toward specialized roles: research a…"
         },
@@ -519,7 +531,7 @@
           "paragraph_index": 3,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 10): The paragraph does not make an externally-checkable claim. It is a synthesis of the books own argument, restating the idea that strong human organizations create roles, review structures, and bounded responsibilities to scale judgment. The paragraph is connective/definitional/synthesis prose and does not require ledger backing.",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
           "para_excerpt": "When a team creates a dedicated review agent, a repo-auditing agent, or a migration-focused agent with narrow tools and instructions, it is encoding judgment ab…"
         },
@@ -537,15 +549,15 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 84.4,
         "voice": 85.0,
         "usefulness": 61.4,
         "evidence_density": 90.0,
-        "claim_defensibility": 93.8,
+        "claim_defensibility": 93.6,
         "redundancy": 85.0,
         "n_paragraphs": 59,
         "usefulness_substantive": 62.4,
@@ -657,7 +669,7 @@
           "paragraph_index": 2,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes and restates the book's own argument about evals being a control system, not just a test suite. It does not make an externally-checkable claim but rather elaborates on the book's established thesis.",
+          "reasoning": "panel-median 90 (n=3, spread 5): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
           "para_excerpt": "This is also why an eval platform is not just a test runner. A runner executes checks. A real platform also stores datasets, versions scoring logic, supports co…"
         },
@@ -675,7 +687,7 @@
           "paragraph_index": 7,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes a claim about evals being a control system for both the model and the organization, and how they help teams turn fuzzy standards into inspectable ones. This aligns closely with ledger entry claims#8, which states 'Evals are a control system, not just a test suite' with a strong support level. The paragraph's claim is at or below the ledger's strength, and it echoes the reusabl…",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes and restates the book's already-established argument about evals being a control system, as supported by ledger entry claims#8. It does not introduce a new externally-checkable claim but rather reinforces the book's thesis.",
           "evidence_refs": [],
           "para_excerpt": "In that sense, evals are a control system not only for the model, but for the organization. They are how teams turn fuzzy standards into inspectable ones."
         }
@@ -684,15 +696,15 @@
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 85.6,
         "voice": 85.0,
         "usefulness": 60.7,
         "evidence_density": 90.0,
-        "claim_defensibility": 93.0,
+        "claim_defensibility": 93.2,
         "redundancy": 85.0,
         "n_paragraphs": 63,
         "usefulness_substantive": 62.1,
@@ -825,7 +837,7 @@
           "paragraph_index": 7,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument and references a talk title (Matt Carey’s) to illustrate a point already established in the ledger (e.g., claims#17 and claims#18 about capability packaging and context failure). The phrasing 'the MCP mega context problem' and 'naively dumped into the model’s working view' aligns with the reusa…",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
           "para_excerpt": "Matt Carey’s talk title names the trap precisely: the MCP mega context problem. If every tool, every parameter, every capability description, and every server i…"
         }
@@ -834,15 +846,15 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 86.5,
         "voice": 92.0,
         "usefulness": 64.7,
-        "evidence_density": 76.8,
-        "claim_defensibility": 92.9,
+        "evidence_density": 88.2,
+        "claim_defensibility": 92.7,
         "redundancy": 85.0,
         "n_paragraphs": 60,
         "usefulness_substantive": 65.8,
@@ -853,7 +865,7 @@
         "humanness": "strong",
         "voice": "strong",
         "usefulness": "moderate",
-        "evidence_density": "moderate",
+        "evidence_density": "strong",
         "claim_defensibility": "strong",
         "redundancy": "strong"
       },
@@ -978,27 +990,29 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 90.0,
+          "paragraph_index": 18,
+          "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
-          "evidence_refs": [],
-          "para_excerpt": "Hron points out that existing validation engines can be repurposed as tools the AI system uses to inspect and correct its own work — in the same firm that, in C…"
+          "reasoning": "panel-median 85 (n=3, spread 35): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument, explaining why chat is insufficient for long-running or high-stakes work, which aligns with the book's previously established thesis. The paragraph does not introduce new facts about the external world that require ledger backing.",
+          "evidence_refs": [
+            "overstated:Chat history is a weak execution substrate for delegated work. A transcript is not the same thing as state. It does not cleanly represent task progress, pending approvals, completed tool calls, rollback boundaries, or which intermediate outputs are binding versus disposable."
+          ],
+          "para_excerpt": "The easiest way to understand the runtime problem is to notice how much modern agent discourse still inherits its assumptions from chat. Chat is an excellent in…"
         }
       ],
       "stale": false
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 86.7,
         "voice": 95.0,
         "usefulness": 74.0,
-        "evidence_density": 80.5,
-        "claim_defensibility": 93.3,
+        "evidence_density": 87.7,
+        "claim_defensibility": 92.7,
         "redundancy": 85.0,
         "n_paragraphs": 59,
         "usefulness_substantive": 75.8,
@@ -1109,22 +1123,10 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 27,
-          "score": 75.0,
-          "label": "moderate",
-          "reasoning": "panel-median 75 (n=3, spread 25): The paragraph makes an externally-checkable claim about Fouad Matin's security guidance for coding agents at OpenAI. The claim is that the default-on baseline includes four controls: sandboxing, network restriction, privilege boundaries, and human review. While the ledger entry (claims#31) supports the importance of sandboxing, least privilege, and auditability, it does not explicitly mention net…",
-          "evidence_refs": [
-            "overstated:network restriction",
-            "overstated:human review"
-          ],
-          "para_excerpt": "Fouad Matin's security guidance for coding agents at OpenAI names four controls as the default-on baseline, not hardening added after an incident: sandboxing, n…"
-        },
-        {
-          "dim_name": "claim_defensibility",
           "paragraph_index": 0,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph synthesizes and restates the book's own already-established argument about the risks of immature agent systems, particularly focusing on delegated authority and tool access. It does not introduce new externally-checkable claims but rather builds on the ledger-backed ideas about the dangers of overscoped tokens, misread instructions, and the need for bounded authority in AI systems (…",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
           "para_excerpt": "The core mistake in immature agent systems is to treat tool access as a product feature before treating delegated authority as a systems problem. That works for…"
         },
@@ -1133,27 +1135,36 @@
           "paragraph_index": 1,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes and restates claims already supported by the ledger, particularly claims#34 (Per-tool OAuth flows are a governance and IT visibility problem, not just a UX annoyance) and claims#30 (Identity is a first-class engineering object for agentic systems). It does not introduce new externally-checkable claims but rather connects and elaborates on existing ones. Therefore, it doe…",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes and restates the book's already-established argument about per-tool OAuth flows being a governance and IT visibility problem, rather than making a new externally-checkable claim. It echoes the reusable phrasing 'A faster consent flow with no visibility is not progress' and aligns with the ledger entry's strong support level.",
           "evidence_refs": [],
           "para_excerpt": "This is why repeated ad hoc consent flows are not just annoying UX. They signal a deeper architectural gap. If every tool asks separately, the organization lose…"
+        },
+        {
+          "dim_name": "claim_defensibility",
+          "paragraph_index": 3,
+          "score": 90.0,
+          "label": "strong",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's argument about the need for manageable identities and authorization paths for agents, which aligns with the ledger's discussion of human oversight as an architectural layer and the importance of governance. This is connective/synthesis prose, not a new factual assertion about the world.",
+          "evidence_refs": [],
+          "para_excerpt": "Cross-app access patterns and identity-provider mediation are attractive because they acknowledge that this sprawl will not scale. If agents are to become real …"
         }
       ],
       "stale": false
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 86.5,
-        "voice": 92.0,
-        "usefulness": 64.9,
-        "evidence_density": 63.6,
-        "claim_defensibility": 92.6,
+        "voice": 85.0,
+        "usefulness": 65.0,
+        "evidence_density": 87.7,
+        "claim_defensibility": 92.9,
         "redundancy": 85.0,
         "n_paragraphs": 42,
-        "usefulness_substantive": 66.2,
+        "usefulness_substantive": 66.4,
         "usefulness_connective": 2,
         "usefulness_total": 42
       },
@@ -1161,7 +1172,7 @@
         "humanness": "strong",
         "voice": "strong",
         "usefulness": "moderate",
-        "evidence_density": "moderate",
+        "evidence_density": "strong",
         "claim_defensibility": "strong",
         "redundancy": "strong"
       },
@@ -1224,9 +1235,9 @@
           "paragraph_index": 4,
           "score": 85.0,
           "label": "strong",
-          "reasoning": "panel-median 85 (n=3, spread 7): The paragraph demonstrates a clear point of view and integrates specific themes from previous chapters effectively. It makes a strong claim about voice as a systems stress test, which is a debatable and insightful assertion. The prose is concise and loses something concrete if removed, indicating high humanness.",
+          "reasoning": "panel-median 85 (n=3, spread 7): The paragraph demonstrates a clear point of view and integrates specific details, such as the mention of Kwindla Hultman Kramer and the precise conversational latency threshold. It avoids generic AI-flavored prose and makes a substantive claim about voice as a systems stress test. However, the phrase 'scaffolding, evals, context, runtime design, authority boundaries, and human control' feels slig…",
           "evidence_refs": [
-            "phrase:'The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here.'",
+            "phrase:'scaffolding, evals, context, runtime design, authority boundaries, and human control'",
             "phrase:'The same themes that shaped Chapters 3 through 7'",
             "phrase:'problems chat can hide become audible'"
           ],
@@ -1264,7 +1275,7 @@
           "paragraph_index": 1,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph does not make an externally-checkable claim. It is a synthesis of the book's own argument and connective prose, discussing the implications of architectural constraints (like half-duplex ceilings and latency budgets) and the necessity of a control plane in public settings. These points are already supported by the ledger entries (e.g., claims#22 and claims#12) and are not new assert…",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph synthesizes multiple ledger-backed claims without introducing new externally-checkable assertions. It references 'latency budgets' (supported by claims#68), 'half-duplex ceilings' (supported by claims#22), and 'a control plane that has to work in public' (supported by claims#12 and claims#2). The rest of the paragraph is connective and rhetorical, emphasizing the implications of the…",
           "evidence_refs": [],
           "para_excerpt": "Latency budgets, half-duplex ceilings, and a control plane that has to work in public are what make the soft framing untenable. Voice is where trustworthy AI ha…"
         },
@@ -1273,7 +1284,7 @@
           "paragraph_index": 3,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph primarily synthesizes and restates claims already established in the ledger, particularly around voice interaction, latency, and agent architecture. It does not introduce new externally-checkable claims that require additional ledger backing.",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph primarily synthesizes and restates established claims from the ledger, particularly around latency management, voice integration, and interaction design. It does not introduce new externally-checkable claims that require additional ledger backing. The prose aligns with the ledger's support strength and reuses phrasing from multiple strong claims.",
           "evidence_refs": [],
           "para_excerpt": "- **Spend your latency budget on first audio, not on silence.** A quick spoken acknowledgment followed by a slower answer beats a long silent pause followed by …"
         },
@@ -1282,7 +1293,7 @@
           "paragraph_index": 5,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph synthesizes and restates the book's own already-established arguments about the importance of robust architecture, runtime, security, control plane, and tool layer in AI systems. It does not make any new externally-checkable claims that require ledger backing. The language is rhetorical and connective, reinforcing the book's thesis rather than introducing new factual assertions.",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph does not make an externally-checkable claim; it is a synthesis of the book's own argument about the importance of voice interfaces and the underlying architecture required to support them. It does not assert new facts about the world but rather ties together previously established points about context architecture, runtime robustness, security models, control plane design, and tool…",
           "evidence_refs": [],
           "para_excerpt": "The field often treats voice as a charming frontier, a natural interface waiting for slightly better models. That framing is too soft. Voice matters because it …"
         }
@@ -1291,15 +1302,15 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 86.3,
         "voice": 85.0,
         "usefulness": 64.8,
-        "evidence_density": 90.0,
-        "claim_defensibility": 93.4,
+        "evidence_density": 73.2,
+        "claim_defensibility": 93.2,
         "redundancy": 85.0,
         "n_paragraphs": 46,
         "usefulness_substantive": 66.9,
@@ -1310,7 +1321,7 @@
         "humanness": "strong",
         "voice": "strong",
         "usefulness": "moderate",
-        "evidence_density": "strong",
+        "evidence_density": "moderate",
         "claim_defensibility": "strong",
         "redundancy": "strong"
       },
@@ -1412,7 +1423,7 @@
           "paragraph_index": 1,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 10): The paragraph makes a claim about the strongest companies in an AI era, but it does not require ledger backing as it is a synthesis of the book's already-established argument. The claim is not about a specific fact or statistic, but rather a generalization about how companies will succeed in an AI era.",
+          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph synthesizes the book's own argument about the importance of converting cheap generation into trusted throughput, which aligns with ledger entries such as claims#38 (Review capacity is the throughput limit of an AI-native organization) and claims#55 (Trustworthy judgment can be manufactured from cheap stochastic generation). It does not make an externally-checkable claim but rather r…",
           "evidence_refs": [],
           "para_excerpt": "The strongest companies in an AI era will not simply be the ones with the most aggressive prompting culture or the highest number of tool seats. They will be th…"
         },
@@ -1439,15 +1450,15 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:8221593",
-      "corpus_snapshot_hash": "sha256:7c61f27436ba6c650dd9687d017b1fdcee09bb01040f0ee38313352a92a4e292",
-      "primary_run_id": "panel-3model-v9",
+      "version_id": "git:9300cfd",
+      "corpus_snapshot_hash": "sha256:74b46f1277e6e99164e5f5ce57be0376d2eaec46ca1da58cd7aea291ff26754e",
+      "primary_run_id": "panel-3model-v10",
       "rollup": {
         "humanness": 87.5,
         "voice": 85.0,
         "usefulness": 47.3,
         "evidence_density": 75.5,
-        "claim_defensibility": 94.9,
+        "claim_defensibility": 94.6,
         "redundancy": 90.0,
         "n_paragraphs": 42,
         "usefulness_substantive": 48.7,
@@ -1556,30 +1567,30 @@
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 29,
+          "paragraph_index": 7,
           "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 90 (n=3, spread 5): The paragraph makes a synthesis statement about the book's own argument, specifically referencing the concept of a 'harness for delegated work,' which aligns with the ledger's claims about harness quality and delegated execution (claims#4, claims#1). This is not an externally-checkable claim but rather a restatement or synthesis of the book's already-established argument.",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
-          "para_excerpt": "What endures here is that the company itself becomes a harness for delegated work."
+          "para_excerpt": "The future belongs to teams that can turn cheap generation into trusted throughput."
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 0,
-          "score": 95.0,
+          "paragraph_index": 24,
+          "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 95 (n=3, spread 10): The paragraph does not make an externally-checkable claim. It is a rhetorical question that poses a deeper, more reflective inquiry to the reader, rather than asserting a fact or making a claim about the external world.",
+          "reasoning": "panel-median 90 (n=3, spread 15): The paragraph synthesizes multiple claims from the ledger, including the evolution of the harness into a staged software factory (claims#14), the importance of bounding authority for autonomous AI systems (claims#46), and the role of evals as a control system (claims#8). The phrasing aligns with the reusable phrasing and supporting quotes provided in the ledger entries. There are no unsupported o…",
           "evidence_refs": [],
-          "para_excerpt": "Pointing at the horizon is easy. The calmer question is harder: what actually endures?"
+          "para_excerpt": "The software factory worked when agents could draft, test, search, and decompose work inside a strong harness — the harness whose eval slices finally caught the…"
         },
         {
           "dim_name": "claim_defensibility",
-          "paragraph_index": 1,
-          "score": 95.0,
+          "paragraph_index": 27,
+          "score": 90.0,
           "label": "strong",
-          "reasoning": "panel-median 95 (n=3, spread 5): The paragraph does not make an externally-checkable claim. It is a general observation about the nature of interfaces, tooling, and jargon, which is likely intended as connective or transitional prose rather than a factual assertion about the world. Therefore, it does not require ledger backing.",
+          "reasoning": "panel-median 90 (n=3, spread 15): no externally-checkable claim — connective/definitional/synthesis prose.",
           "evidence_refs": [],
-          "para_excerpt": "The interfaces will change. The tooling will churn. The jargon will get rewritten at least twice before this sentence is old."
+          "para_excerpt": "Agent frameworks multiply. Context methods fork and recombine. Tool protocols proliferate. New model releases reorder yesterday’s leaderboard. Interfaces mutate…"
         }
       ],
       "stale": false
@@ -2554,6 +2565,146 @@
           "usefulness": 47.3,
           "evidence_density": 75.5,
           "claim_defensibility": 94.9,
+          "redundancy": 90.0,
+          "n_paragraphs": 42,
+          "usefulness_substantive": 48.7,
+          "usefulness_connective": 2,
+          "usefulness_total": 42
+        }
+      }
+    },
+    {
+      "run_id": "panel-3model-v10",
+      "version_id": "git:9300cfd",
+      "finished_at": "2026-09-03T16:08:58.875569+00:00",
+      "partial": false,
+      "judge_prompt_versions": null,
+      "book": {
+        "humanness": 86.0,
+        "voice": 87.7,
+        "usefulness": 60.5,
+        "evidence_density": 85.3,
+        "claim_defensibility": 93.4,
+        "redundancy": 87.5,
+        "usefulness_substantive": 62.1,
+        "usefulness_connective": 24,
+        "usefulness_total": 534
+      },
+      "chapters": {
+        "01": {
+          "humanness": 85.5,
+          "voice": 95.0,
+          "usefulness": 47.3,
+          "evidence_density": 90.0,
+          "claim_defensibility": 94.2,
+          "redundancy": 100.0,
+          "n_paragraphs": 46,
+          "usefulness_substantive": 51.1,
+          "usefulness_connective": 6,
+          "usefulness_total": 46
+        },
+        "02": {
+          "humanness": 86.0,
+          "voice": 85.0,
+          "usefulness": 54.6,
+          "evidence_density": 85.8,
+          "claim_defensibility": 93.9,
+          "redundancy": 90.0,
+          "n_paragraphs": 68,
+          "usefulness_substantive": 55.6,
+          "usefulness_connective": 2,
+          "usefulness_total": 68
+        },
+        "03": {
+          "humanness": 85.5,
+          "voice": 85.0,
+          "usefulness": 65.6,
+          "evidence_density": 85.0,
+          "claim_defensibility": 92.8,
+          "redundancy": 85.0,
+          "n_paragraphs": 49,
+          "usefulness_substantive": 66.2,
+          "usefulness_connective": 1,
+          "usefulness_total": 49
+        },
+        "04": {
+          "humanness": 84.4,
+          "voice": 85.0,
+          "usefulness": 61.4,
+          "evidence_density": 90.0,
+          "claim_defensibility": 93.6,
+          "redundancy": 85.0,
+          "n_paragraphs": 59,
+          "usefulness_substantive": 62.4,
+          "usefulness_connective": 2,
+          "usefulness_total": 59
+        },
+        "05": {
+          "humanness": 85.6,
+          "voice": 85.0,
+          "usefulness": 60.7,
+          "evidence_density": 90.0,
+          "claim_defensibility": 93.2,
+          "redundancy": 85.0,
+          "n_paragraphs": 63,
+          "usefulness_substantive": 62.1,
+          "usefulness_connective": 3,
+          "usefulness_total": 63
+        },
+        "06": {
+          "humanness": 86.5,
+          "voice": 92.0,
+          "usefulness": 64.7,
+          "evidence_density": 88.2,
+          "claim_defensibility": 92.7,
+          "redundancy": 85.0,
+          "n_paragraphs": 60,
+          "usefulness_substantive": 65.8,
+          "usefulness_connective": 2,
+          "usefulness_total": 60
+        },
+        "07": {
+          "humanness": 86.7,
+          "voice": 95.0,
+          "usefulness": 74.0,
+          "evidence_density": 87.7,
+          "claim_defensibility": 92.7,
+          "redundancy": 85.0,
+          "n_paragraphs": 59,
+          "usefulness_substantive": 75.8,
+          "usefulness_connective": 2,
+          "usefulness_total": 59
+        },
+        "08": {
+          "humanness": 86.5,
+          "voice": 85.0,
+          "usefulness": 65.0,
+          "evidence_density": 87.7,
+          "claim_defensibility": 92.9,
+          "redundancy": 85.0,
+          "n_paragraphs": 42,
+          "usefulness_substantive": 66.4,
+          "usefulness_connective": 2,
+          "usefulness_total": 42
+        },
+        "09": {
+          "humanness": 86.3,
+          "voice": 85.0,
+          "usefulness": 64.8,
+          "evidence_density": 73.2,
+          "claim_defensibility": 93.2,
+          "redundancy": 85.0,
+          "n_paragraphs": 46,
+          "usefulness_substantive": 66.9,
+          "usefulness_connective": 2,
+          "usefulness_total": 46
+        },
+        "10": {
+          "humanness": 87.5,
+          "voice": 85.0,
+          "usefulness": 47.3,
+          "evidence_density": 75.5,
+          "claim_defensibility": 94.6,
           "redundancy": 90.0,
           "n_paragraphs": 42,
           "usefulness_substantive": 48.7,

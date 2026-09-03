@@ -341,6 +341,21 @@ id; a regression test shifts a chapter's lines between runs. Any earlier run tha
 cache replay with fresh calls — v9's predecessors included — has this per-paragraph
 caveat.
 
+**A ledger change did not re-judge evidence_density — fixed in book-mash `69eac21`.** The
+first v10 merge after 14 new ledger entries left 10 of 13 target sections at exactly the v9
+score, byte-identical reasoning in every member. `EvidenceDensityJudge` had no
+`context_cache_key`, so the ledger it matches against was not in the cache key and a ledger
+edit never invalidated a cached section. `claim_defensibility` already keyed on its ledger
+slice; evidence_density now keys on the full index (id + text). Consequence for reading
+history: **every evidence_density score from v2 to v10-first-merge that followed a ledger
+change without a text change was a replay**, so the dimension's trend line understates
+ledger work until v10. When a run is meant to measure a ledger change, check that
+evidence_density units carry non-zero `cost_usd` in every member before trusting the delta.
+
+**Concurrent judges shared a run directory — fixed in book-mash `131fd8f`.** Run ids were
+second-precision; three members launched together got one id and each overwrote the last.
+Ids now carry milliseconds. Stagger launches by a few seconds anyway.
+
 ### Audio-freshness drift is ACCEPTED policy, not debt (operator decision, 2026-08-21)
 
 **The audiobook is regenerated only once the chapters are final and no longer

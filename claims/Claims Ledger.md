@@ -211,7 +211,7 @@
     - **Anchor:** `iOXM3zE-2dk` 00:03:38.400 → 00:03:39.760 · confidence: high
     - **Quote:** "minding the gap around observability."
 - **Caveats / counterpoints:** Not every AI feature needs a durable workflow runtime. The claim applies once tasks span time, tools, or approvals. Many lightweight assistants do not need full workflow durability.
-- **Candidate chapters:** 6, 7, 8
+- **Candidate chapters:** 6, 7, 8, 10
 - **Reusable phrasing:** A production agent is not just a smart response. It is a stateful workflow that can survive reality.
 
 ## 12) Human oversight works best as an architectural layer, not an afterthought
@@ -483,7 +483,7 @@
     - **Anchor:** `xnXqpUW_Kp8` 00:17:04.400 → 00:17:08.799 · confidence: high
     - **Quote:** "the right agent in the future is going to be this system that decides what type of search"
 - **Caveats / counterpoints:** Bigger context windows reduce some assembly pressure but do not eliminate ranking, freshness, deduplication, or capability problems. The claim is about the discipline, not a specific token budget.
-- **Candidate chapters:** 5, 6, 9
+- **Candidate chapters:** 5, 6, 9, 10
 - **Reusable phrasing:** Context is the substrate that determines what the system can even notice — not the garnish around intelligence.
 
 ## 26) RAG, memory, and GraphRAG solve different jobs; collapsing them into one bucket misses the architecture
@@ -824,8 +824,11 @@
   - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — slop as work that looks done and transfers its cost downstream; review is where that cost is refused.
     - **Anchor:** `IoiHI7p12Ao` 00:00:31.279 → 00:00:32.480 · confidence: high
     - **Quote:** "I'm declaring war on slop today."
+  - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — review named as the top skill directly: "code review is by far the most important skill" — the discipline the industry under-trained by interviewing for leetcode rather than for reading code.
+    - **Anchor:** `Dc3qOA9WOnE` 00:11:21.680 → 00:11:24.160 · confidence: high
+    - **Quote:** "code review is by far the most important skill."
 - **Caveats / counterpoints:** Framing and review can themselves be over-applied — heavy upfront specification on genuinely exploratory work suppresses the discovery that cheap generation enables. The claim is about work that has to be trusted, where the scarce skill is discrimination, not ceremony.
-- **Candidate chapters:** 2, 4
+- **Candidate chapters:** 2, 4, 10
 - **Reusable phrasing:** In a world of cheap execution, framing is the work and review is where standards are defended.
 
 ## 43) Coding agents expose the gap between standards a team possesses and standards it can operationalize
@@ -900,7 +903,7 @@
     - **Anchor:** `kDEvo2__Ijg` 00:09:29.920 → 00:09:34.000 · confidence: high
     - **Quote:** "building the guardrail systems themselves require you know a deep level of expert knowledge"
 - **Caveats / counterpoints:** Even purely advisory systems can cause harm through poorly calibrated confidence or selective presentation. The claim is specifically about the shift in the security posture required when the system can execute, not merely advise.
-- **Candidate chapters:** 6, 7
+- **Candidate chapters:** 6, 7, 10
 - **Reusable phrasing:** A helpful model can get away with being vague about power. An acting system cannot.
 
 > **Retracted — entries 47–49 (de-duplicated 2026-06-11).** Three scratch entries
@@ -1045,3 +1048,182 @@
 - **Caveats / counterpoints:** Single-source and vendor-adjacent — a Tesco engineer's lightning talk promoting an open-source code-index tool (CCE). The headline "94%" is explicitly best-case (worst-case full-file reads, one open-source repo of ~53 files, 20 queries) and the speaker self-discloses that "real savings are lower" because smart agents already avoid re-reading whole files. So treat the *direction* as high-confidence (input dominates cost; precise retrieval/indexing cuts it a lot) and the *exact figure* as illustrative, not a benchmark. The exact split (90/10, 30/70) varies sharply by workload — output-heavy generation tasks invert it. Complementary to #54: routing trims the model cost; this trims the larger input cost.
 - **Candidate chapters:** 5, 6
 - **Reusable phrasing:** In a retrieval agent, most of the bill is what you feed the model, not what it writes back. Fix the input first — retrieve precisely, index instead of dumping files, cache and compress — and the choice of model matters less than you think.
+
+## 58) Software fundamentals matter more, not less, once cheap generation floods work with plausible output
+- **Why it matters:** The intuitive reading of cheap code is that fundamentals matter less because the machine fills in syntax. The section argues the opposite: fundamentals are how you tell good output from merely convincing output, and a flood of convincing output needs that skill more, not less. This grounds Chapter 2's opening claim that cheap generation raises the value of judgment.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — Matt Pocock, AI Hero]] — states it plainly: "software fundamentals matter now more than they actually ever have" — the machine handling surface production concentrates the human work on the fundamentals that decide whether output is good.
+    - **Anchor:** `v4F1gFy-hqg` 00:00:34.559 → 00:00:37.600 · confidence: high
+    - **Quote:** "software fundamentals matter now more than they actually ever have."
+- **Caveats / counterpoints:** For genuinely throwaway work (one-off scripts, disposable prototypes) the fundamentals overhead is not worth paying. The claim is about output that has to endure, where cheap production removed the filter that weak decisions used to fail.
+- **Candidate chapters:** 2
+
+## 59) Code review is the most important engineering skill once agents write the code you must evaluate cold
+- **Why it matters:** When every line an agent writes is a line the human did not write, review shifts from a step teams pass to the place quality is decided. Chris Kelly names it directly as the top skill and argues the industry under-trained it by interviewing for leetcode rather than for reading someone else's code. This is the load-bearing claim of the section on review.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[132-Dc3qOA9WOnE-vibes-won-t-cut-it-chris-kelly-augment-code|#132 — Chris Kelly, Augment Code]] — "code review is by far the most important skill" — the skill agents now demand at volume, because every line they write is a line you have to evaluate.
+    - **Anchor:** `Dc3qOA9WOnE` 00:11:21.680 → 00:11:24.160 · confidence: high
+    - **Quote:** "code review is by far the most important skill."
+  - [[059-IoiHI7p12Ao-no-more-slop-swyx|#59 — swyx]] — the "war on slop" — "I'm declaring war on slop today" — frames why review is now the default failure mode's only defense: slop is output that looks done and transfers its cost downstream.
+    - **Anchor:** `IoiHI7p12Ao` 00:00:31.279 → 00:00:32.480 · confidence: high
+    - **Quote:** "I'm declaring war on slop today."
+- **Caveats / counterpoints:** Review can be over-applied as bureaucratic blockage. The claim is about review as quality discrimination — the moment tacit standards become visible — not review as a compliance ritual.
+- **Candidate chapters:** 2
+
+## 60) Taste is noticing the difference between output that merely works and output that fits, the scarce skill under abundance
+- **Why it matters:** The section defines taste as the ability to notice the difference between output that merely works and output that fits. When a machine can produce immediately, the scarce skill shifts from the manual act of producing to selecting, directing, and refusing. Artman's talk on craft at Linear frames tasteful software as the competitive differentiator in that world. This is the section's core claim.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Tuomas Artman & Gergely Orosz]] — once tools give every competitor the same feature set, the way to stand out is to "build tasteful software" — taste becomes the discipline of quality discrimination under abundance.
+    - **Anchor:** `wjk0ulMAkbc` 00:03:40.560 → 00:03:41.360 · confidence: high
+    - **Quote:** "build tasteful software"
+- **Caveats / counterpoints:** Taste is not only cleanup of generated output; the section argues the strongest engineers shape the conditions under which good output is likely, so the claim is inseparable from architecture, not a matter of surface polish.
+- **Candidate chapters:** 2
+
+## 61) Some friction is judgment in disguise; removing it along with wasteful friction lowers standards
+- **Why it matters:** Much traditional software friction is waste (slow builds, needless handoffs) and AI can remove it. But some friction — the pause before merge, the architecture question, rewriting against the grain of the codebase — is exactly where quality is made. The section's argument is that teams which remove both kinds at once get a faster path to lower standards. This grounds the section's central distinction.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — the pauses AI removes are often where quality was created: "this is really where your judgment is" — a positive association to friction, because it is where experience gets inserted.
+    - **Anchor:** `_Zcw_sVF6hU` 00:18:13.600 → 00:18:14.880 · confidence: high
+    - **Quote:** "this is really where your judgment is."
+- **Caveats / counterpoints:** The claim is not "slow down." It is to separate needless friction from meaningful resistance — cut the pause if removing it only costs keystrokes, keep it if removing it costs a decision.
+- **Candidate chapters:** 2
+
+## 62) The new scarce skill is problem framing: writing specifications that fully capture the intent
+- **Why it matters:** Stronger generation exposes weak framing faster, because a machine will take a badly framed prompt and sprint in the wrong direction with alarming competence. That makes framing the task well — a gate the work must clear before delegation — more valuable, not less. Sean Grove states the point directly. This is the section's headline claim and is worded distinctly from entry 42's broader framing/review pairing so the extractor can match the framing half on its own.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[265-8rABwKRsec4-the-new-code-sean-grove-openai|#265 — Sean Grove, OpenAI]] — "the new scarce skill is writing specifications that fully capture the intent" — once a model executes faithfully, the binding constraint is communicating intent precisely enough that fluent execution lands on the right target.
+    - **Anchor:** `8rABwKRsec4` 00:09:02.560 → 00:09:07.760 · confidence: high
+    - **Quote:** "the new scarce skill is writing specifications that fully capture the intent"
+- **Caveats / counterpoints:** Framing can be over-applied — heavy upfront specification on genuinely exploratory work suppresses the discovery cheap generation enables. The claim is about work that has to be trusted, where a badly framed task wastes more time than before.
+- **Candidate chapters:** 2
+
+## 63) Legacy enterprise systems become runtime components: their validators and components are repurposed as tools the AI calls.
+- **Why it matters:** Demystifies agent architecture for Chapter 6. Trustworthy systems are often assembled from durable enterprise parts, not built new; an existing validation engine and decomposed application components become structured checkpoints and tools inside the machine-mediated runtime.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — Agents let the firm decompose legacy applications into tools, and an existing validation engine becomes a tool the AI calls to check its own work.
+    - **Anchor:** `kDEvo2__Ijg` 00:10:41.760 → 00:10:46.800 · confidence: high
+    - **Quote:** "decompose the components of them as tools that agents can now use."
+    - **Anchor:** `kDEvo2__Ijg` 00:13:17.839 → 00:13:25.680 · confidence: high
+    - **Quote:** "we also have a validation engine that's built into that tax engine that the the AI system can use to validate the work that it's doing"
+- **Caveats / counterpoints:** Single talk (Thomson Reuters), drawn from the vendor's own product demo, so treat as an illustrative pattern rather than an independent result. The 'model is the volatile component, the rest of the runtime is the stable part' framing is the author's synthesis, not Hron's words.
+- **Candidate chapters:** 6
+
+## 64) Agent observability answers a different question than classic monitoring: what the system believed, did, and where it drifted.
+- **Why it matters:** Grounds Chapter 6's control-plane argument. Humans cannot steer what they cannot see, so agent traces — not up/down service monitoring — are what makes the human control plane real.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[750-JsCCrBF7F1g-llm-observability-evaluation-experimentation-platform-dat-ngo-arize|#750 — Dat Ngo, Arize]] — A trace is the audit record of what the agent actually did, and code — unlike telemetry — cannot audit that behavior.
+    - **Anchor:** `JsCCrBF7F1g` 00:03:27.560 → 00:03:30.480 · confidence: high
+    - **Quote:** "it's basically the audit record of what did my agent do?"
+    - **Anchor:** `JsCCrBF7F1g` 00:03:31.640 → 00:03:35.880 · confidence: high
+    - **Quote:** "code doesn't audit agents or harnesses, it's actually the telemetry that does that."
+  - [[680-iOXM3zE-2dk-mind-the-gap-in-your-agent-observability-amy-boyd-nitya-narasimhan-microsoft|#680 — Amy Boyd & Nitya Narasimhan, Microsoft]] — Debugging needs the whole trajectory, not one call: "look at a full agent trace and not just the agent itself."
+    - **Anchor:** `iOXM3zE-2dk` 00:11:51.760 → 00:11:55.360 · confidence: high
+    - **Quote:** "look at a full agent trace and not just the agent itself"
+  - [[628-_fQ7Z_Wfouk-why-building-eval-platforms-is-hard-phil-hetzel-braintrust|#628 — Phil Hetzel, Braintrust]] — Observability and eval collapse into one problem: "eval to us it's actually the same problem from a from a systems perspective."
+    - **Anchor:** `_fQ7Z_Wfouk` 00:14:29.920 → 00:14:34.720 · confidence: high
+    - **Quote:** "eval to us it's actually the same problem from a from a systems perspective."
+- **Caveats / counterpoints:** Distinct from #19: #19 is an evals claim (evals fed by observability); this entry is observability as the control plane's seeing surface. Vendor-framed talks (Arize, Microsoft, Braintrust sell observability/eval tooling); read as convergent practitioner consensus, not independent measurement. The privacy/retention/security cost of richer traces is the author's design tradeoff, not anchored. The 'what the system believed' component is the author's synthesis: the anchors ground what the system did and the whole trajectory (Ngo, Boyd, Hetzel), not a recorded belief state.
+- **Candidate chapters:** 6
+
+## 65) Agents scope what they can see from existing credentials, filter tool exposure by permission, and step up for stronger actions
+- **Why it matters:** Least privilege in agent systems is operationalized as a connected tool-discovery-and-authorization problem. The production pattern exposes tools filtered to the scopes the caller's credential already carries and requires an explicit step-up before granting stronger authority, rather than presenting the full tool surface up front. Naming the pattern tells teams to build authorization into tool discovery, not bolt it on afterward.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — GitHub's remote MCP server filters the exposed tool set to the scopes the caller's token already carries — tool exposure follows permission: "we just immediately filter the tools down by the scopes that the token has."
+    - **Anchor:** `0n3MKk7r60w` 00:12:41.760 → 00:12:45.360 · confidence: high
+    - **Quote:** "we just immediately filter the tools down by the scopes that the token has."
+    - **Anchor:** `0n3MKk7r60w` 00:12:51.720 → 00:12:53.240 · confidence: high
+    - **Quote:** "we support step-up OAuth."
+  - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — Codex ships internet access off by default and turns it on only behind a configurable allow list — capability expands only when explicitly granted: "you can now turn on internet access but it comes with a set of configurable allow list."
+    - **Anchor:** `w7IMuYsBNr8` 00:08:30.560 → 00:08:34.560 · confidence: high
+    - **Quote:** "you can now turn on internet access but it comes with a set of configurable allow list."
+- **Caveats / counterpoints:** The scope-filter and step-up pattern is the mature production shape; small internal tools can expose more up front. The claim is about the discipline production deployments converge on, not a universal requirement. Three anchors across two talks: GitHub (scope filter and step-up OAuth) and OpenAI (allow list).
+- **Candidate chapters:** 7
+
+## 66) A strong agent design gives a constrained initial surface and expands authority only when the workflow requires it
+- **Why it matters:** The safe default is not maximum capability but a minimal initial surface — file access limited to the working directory, network off — with authority added only for the stage of the workflow that needs it. This reframes access control as a product-design decision made per workflow stage, not a one-time grant, and it is what makes 'minimum access for which stage' the sharper question than 'minimum access'.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — Codex's full-auto sandbox is scoped as a constrained initial surface by design: "it can only read and write files within the directory that it's run in."
+    - **Anchor:** `w7IMuYsBNr8` 00:08:03.280 → 00:08:06.560 · confidence: high
+    - **Quote:** "it can only read and write files within the directory that it's run in."
+  - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — The authoritative control is system-level, not model-level: a constrained agent "shouldn't even be able to make a call to HTTP bin in this case" — narrower powers remove the unsafe path rather than trusting the model to avoid it.
+    - **Anchor:** `w7IMuYsBNr8` 00:09:37.200 → 00:09:40.000 · confidence: high
+    - **Quote:** "It shouldn't even be able to make a call to HTTP bin in this case."
+- **Caveats / counterpoints:** Both anchors are from the same talk (OpenAI Codex), so support is moderate; GitHub's scope-filter and step-up pattern (the companion entry) is the cross-talk corroboration for the same least-privilege principle.
+- **Candidate chapters:** 7
+
+## 67) Real-time conversation runs on a latency budget of a few hundred milliseconds, a categorically different regime from non-real-time work
+- **Why it matters:** Grounds Chapter 8's preamble. Without a number, 'realtime compresses everything into milliseconds' is rhetoric. The few-hundred-millisecond budget is the concrete constraint that makes voice a systems stress test text chat never faces.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Draws the line by the clock: real time is anything inside 'conversational latency of a few hundred milliseconds or less'; everything slower is a different regime.
+    - **Anchor:** `IA4lZjh9sTs` 00:11:24.880 → 00:11:28.000 · confidence: high
+    - **Quote:** "conversational latency of a few hundred milliseconds or less."
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — Human-sounding conversation needs the whole stack — understanding, producing an answer, and pronouncing it — to land 'around 200 milliseconds', measured end to end.
+    - **Anchor:** `P_RI1kCkRbo` 00:06:17.480 → 00:06:22.760 · confidence: high
+    - **Quote:** "entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+- **Caveats / counterpoints:** The number is a target for natural conversation, not a hard product SLA. Many useful voice surfaces (IVR, structured support, async transcription) live happily outside it.
+- **Candidate chapters:** 8
+
+## 68) Latency is a budget spread across the whole voice loop, and the metric to watch is the P95 tail, not the average
+- **Why it matters:** Chapter 8's central latency claim. Treating latency as one number hides where it is actually spent (capture, transport, ASR, reasoning, tools, retrieval, synthesis, playback). Naming it as a distributed budget with a tail metric is what makes latency engineerable rather than a single benchmark.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — Sets the end-to-end target: the whole stack of understanding, answering, and pronouncing must land 'around 200 milliseconds', measured across the loop, not at any single stage.
+    - **Anchor:** `P_RI1kCkRbo` 00:06:17.480 → 00:06:22.760 · confidence: high
+    - **Quote:** "entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+  - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — The metric that matters is the tail, not the average — 'your P95 goes up above 800, 900, 1,000 milliseconds' for the whole voice-to-voice chain, and every inner inference call has to be faster than that.
+    - **Anchor:** `IA4lZjh9sTs` 00:11:40.720 → 00:11:44.320 · confidence: high
+    - **Quote:** "your P95 goes up above 800, 900, 1,000 milliseconds"
+- **Caveats / counterpoints:** The 200 ms target and the P95 numbers describe natural conversation, not universal SLAs; batch or async voice tasks tolerate far more. Where the budget actually goes — the tool call, whose latency runs 500 ms to 4 s — is anchored in existing Claim 20; the masking that its unbounded variance forces is Claim 29. This entry states the budget-and-tail framing those two build on.
+- **Candidate chapters:** 8
+
+## 69) Realtime pushes model and inference architecture toward streaming, low-latency, interaction-optimized designs, not only the front end
+- **Why it matters:** Chapter 8's claim that voice reshapes the model stack, not just the UI. Speech models are converging on autoregressive, streaming, first-audio-latency designs — evidence that realtime is a forcing function on architecture, not a pure UX concern. Also a Chapter 10 'what endures' hook.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — Speech labs have 'converged to some common patterns' — the dominant one an autoregressive decoder borrowed from language models, so audio generation is reframed as streaming language modeling under a latency constraint.
+    - **Anchor:** `3jGAU2sbAyY` 00:08:51.839 → 00:08:54.160 · confidence: high
+    - **Quote:** "converged to some common patterns"
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — Gradium ships by 'putting our streaming voice models' into the product — streaming speech-to-text and text-to-speech are the architectural response to the latency budget, not an offline-quality choice.
+    - **Anchor:** `P_RI1kCkRbo` 00:04:29.160 → 00:04:31.080 · confidence: high
+    - **Quote:** "putting our streaming voice models"
+- **Caveats / counterpoints:** Convergence on LLM-style speech models is a current trajectory, not a settled endpoint. Cascaded pipelines remain practical, and Zeghidour notes he no longer treats them as the enemy. Related to existing Claim 23 (TTS converging on LLM architecture); this entry states the broader inference-architecture forcing function.
+- **Candidate chapters:** 8, 10
+
+## 70) Dependable delegated work needs a prepared environment, a context slice, durable state, risk-bounded authority, and focused human review.
+- **Why it matters:** This is Chapter 10's synthesis claim, the 'constrained delegation' close, stated as a falsifiable design requirement rather than a prediction. Each clause restates an earlier chapter's claim (scaffolding, context, durable state, tuned agency, human oversight), so the closer earns its ground by naming the pattern the whole book has built. Phrasing it as the section's own components sentence lets the evidence extractor match it, where the abstract 'the enduring pattern is constrained delegation' thesis is dropped as framing.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Ryan Lopopolo, OpenAI]] — The prepared environment, not the artifact, is what carries the work: "not the code but the prompt and the guardrails".
+    - **Anchor:** `am_oeAoUhew` 00:06:57.600 → 00:06:59.599 · confidence: high
+    - **Quote:** "not the code but the prompt and the guardrails"
+  - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — A runtime that must "handle state potentially over long periods of time" — durable state as the substrate for delegated work.
+    - **Anchor:** `1izYWsokr9s` 00:01:55.920 → 00:01:58.719 · confidence: high
+    - **Quote:** "handle state potentially over long periods of time."
+  - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — Authority is bounded to risk, not maximized — agency is "a lever that you can dial".
+    - **Anchor:** `kDEvo2__Ijg` 00:16:26.880 → 00:16:28.160 · confidence: high
+    - **Quote:** "as a lever that you can dial"
+- **Caveats / counterpoints:** This is a compound claim; each anchor grounds one component of the pattern (prepared environment, durable state, bounded authority) rather than the whole synthesis, which is the author's. The context-slice and human-review components rest on Claims 25 and 12 respectively rather than a fresh anchor here.
+- **Candidate chapters:** 10
+
+## 71) The agent tooling layer churns faster than teams can standardize: frameworks multiply and new model releases keep reordering leaderboards.
+- **Why it matters:** Chapter 10's preamble opens on the field's churn — frameworks multiplying, protocols proliferating, model releases resetting the leaderboard — to set up the 'what endures' turn. The preamble names no practitioner and its thesis sentence is a prediction the extractor drops; this entry states the one falsifiable, checkable part (the churn itself) so the section has something to ground on. Chapter 10 is ledger-only, so no prose stitch carries this.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[315-N4vCBM5YbN0-building-code-first-ai-agents-with-azure-ai-agent-service-cedric-vidal-microsoft|#315 — Cedric Vidal, Microsoft]] — Framework proliferation stated directly: "so many ways to build an agent today so many frameworks" (langchain, langgraph, semantic kernel).
+    - **Anchor:** `N4vCBM5YbN0` 00:06:33.120 → 00:06:36.400 · confidence: high
+    - **Quote:** "so many ways to build an agent today so many frameworks"
+  - [[558-IIL2tE4n1Q0-judging-llms-alex-volkov|#558 — Alex Volkov]] — Model-release churn from a practitioner who tracks it: the models "all drop" and "it's really hard to keep up with".
+    - **Anchor:** `IIL2tE4n1Q0` 00:06:54.720 → 00:06:55.639 · confidence: high
+    - **Quote:** "it's really hard to keep up with"
+- **Caveats / counterpoints:** Two high anchors from different talks, but each covers one facet (framework proliferation; model-release churn) rather than the compound claim. The preamble's churn lines are terse and rhetorical, so even with this entry the extractor may treat the paragraph as scene-setting and leave the section at 10; this is the best truthful lever available and no Chapter 10 prose stitch is permitted.
+- **Candidate chapters:** 10

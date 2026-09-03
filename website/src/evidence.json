@@ -1332,6 +1332,74 @@
           "quote": "may be 30% of the cost, but other 70% is what you feed it. Fix the input, the model choice matters less than you think."
         }
       ]
+    },
+    {
+      "claim_id": "claims#63",
+      "text": "Legacy enterprise systems become runtime components: their validators and components are repurposed as tools the AI calls.",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:10:41.760",
+          "end": "00:10:46.800",
+          "start_seconds": 641,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "decompose the components of them as tools that agents can now use."
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:13:17.839",
+          "end": "00:13:25.680",
+          "start_seconds": 797,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we also have a validation engine that's built into that tax engine that the the AI system can use to validate the work that it's doing"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#64",
+      "text": "Agent observability answers a different question than classic monitoring: what the system believed, did, and where it drifted.",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "JsCCrBF7F1g",
+          "start": "00:03:27.560",
+          "end": "00:03:30.480",
+          "start_seconds": 207,
+          "confidence": "high",
+          "label": "#750 — Dat Ngo, Arize",
+          "quote": "it's basically the audit record of what did my agent do?"
+        },
+        {
+          "video_id": "JsCCrBF7F1g",
+          "start": "00:03:31.640",
+          "end": "00:03:35.880",
+          "start_seconds": 211,
+          "confidence": "high",
+          "label": "#750 — Dat Ngo, Arize",
+          "quote": "code doesn't audit agents or harnesses, it's actually the telemetry that does that."
+        },
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:11:51.760",
+          "end": "00:11:55.360",
+          "start_seconds": 711,
+          "confidence": "high",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "look at a full agent trace and not just the agent itself"
+        },
+        {
+          "video_id": "_fQ7Z_Wfouk",
+          "start": "00:14:29.920",
+          "end": "00:14:34.720",
+          "start_seconds": 869,
+          "confidence": "high",
+          "label": "#628 — Phil Hetzel, Braintrust",
+          "quote": "eval to us it's actually the same problem from a from a systems perspective."
+        }
+      ]
     }
   ],
   "9": [
@@ -2377,6 +2445,67 @@
       ]
     },
     {
+      "claim_id": "claims#11",
+      "text": "Durable state and workflow semantics are trust features, not backend details",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "flf_IKnFYnE",
+          "start": "00:00:43.920",
+          "end": "00:00:47.840",
+          "start_seconds": 43,
+          "confidence": "high",
+          "label": "#99 — Samuel Colvin, Pydantic",
+          "quote": "once we get into longer running workflows, that's where it really becomes a problem."
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:28.640",
+          "end": "00:01:29.840",
+          "start_seconds": 88,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "no one's going to trust your agent."
+        },
+        {
+          "video_id": "kmV-qg4uoNI",
+          "start": "00:12:31.839",
+          "end": "00:12:39.440",
+          "start_seconds": 751,
+          "confidence": "high",
+          "label": "#44 — Peter Wielander, Vercel",
+          "quote": "the workflow orchestration layer needs to be deterministic. So it can be rerun um in a in a uh deterministic fashion"
+        },
+        {
+          "video_id": "A48uhxfxbsM",
+          "start": "00:59:22.240",
+          "end": "00:59:31.119",
+          "start_seconds": 3562,
+          "confidence": "high",
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:00:19.760",
+          "end": "00:00:26.320",
+          "start_seconds": 19,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+        },
+        {
+          "video_id": "iOXM3zE-2dk",
+          "start": "00:03:38.400",
+          "end": "00:03:39.760",
+          "start_seconds": 218,
+          "confidence": "high",
+          "label": "#680 — Amy Boyd & Nitya Narasimhan, Microsoft",
+          "quote": "minding the gap around observability."
+        }
+      ]
+    },
+    {
       "claim_id": "claims#12",
       "text": "Human oversight works best as an architectural layer, not an afterthought",
       "support_level": "strong",
@@ -2583,6 +2712,58 @@
       ]
     },
     {
+      "claim_id": "claims#25",
+      "text": "Context engineering is a primary engineering discipline, not a prompt trick",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "fh9LgKXBGnQ",
+          "start": "00:04:12.239",
+          "end": "00:04:16.400",
+          "start_seconds": 252,
+          "confidence": "high",
+          "label": "#100 — Ofer Mendelevitch, Vectara",
+          "quote": "picking up the right documents and answering those questions is a really cool use case."
+        },
+        {
+          "video_id": "NTBX-wxUhHs",
+          "start": "00:00:28.800",
+          "end": "00:00:36.399",
+          "start_seconds": 28,
+          "confidence": "high",
+          "label": "#104 — Val Bercovici, WEKA",
+          "quote": "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:01:00.239",
+          "end": "00:01:06.159",
+          "start_seconds": 60,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "transforms what we've traditionally been doing with kind of oneshot clever phrasing prompt engineering"
+        },
+        {
+          "video_id": "LLuKshphGOE",
+          "start": "00:00:08.800",
+          "end": "00:00:13.280",
+          "start_seconds": 8,
+          "confidence": "high",
+          "label": "#105 — Stephen Chin, Neo4j",
+          "quote": "connect the dots with graph technology and solve problems like context engineering"
+        },
+        {
+          "video_id": "xnXqpUW_Kp8",
+          "start": "00:17:04.400",
+          "end": "00:17:08.799",
+          "start_seconds": 1024,
+          "confidence": "high",
+          "label": "#157 — Will Bryk, Exa.ai",
+          "quote": "the right agent in the future is going to be this system that decides what type of search"
+        }
+      ]
+    },
+    {
       "claim_id": "claims#40",
       "text": "Cheap generation raises the value of taste and judgment rather than lowering it",
       "support_level": "strong",
@@ -2613,6 +2794,176 @@
           "confidence": "high",
           "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
           "quote": "intentionally designed to put friction"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#42",
+      "text": "Problem framing and review become the scarce skills once execution is cheap",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:09:02.560",
+          "end": "00:09:07.760",
+          "start_seconds": 542,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "the new scarce skill is writing specifications that fully capture the intent"
+        },
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:17:40.240",
+          "end": "00:17:41.600",
+          "start_seconds": 1060,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "intentionally designed to put friction"
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:06:32.000",
+          "end": "00:06:33.039",
+          "start_seconds": 392,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "vibes aren't going to fix"
+        },
+        {
+          "video_id": "IoiHI7p12Ao",
+          "start": "00:00:31.279",
+          "end": "00:00:32.480",
+          "start_seconds": 31,
+          "confidence": "high",
+          "label": "#59 — swyx",
+          "quote": "I'm declaring war on slop today."
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:11:21.680",
+          "end": "00:11:24.160",
+          "start_seconds": 681,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "code review is by far the most important skill."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#46",
+      "text": "Once an AI system can act autonomously, bounding its authority becomes the price of deployment",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:03:44.000",
+          "end": "00:03:48.560",
+          "start_seconds": 224,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
+        },
+        {
+          "video_id": "8SUJEqQNClw",
+          "start": "00:12:04.240",
+          "end": "00:12:07.600",
+          "start_seconds": 724,
+          "confidence": "high",
+          "label": "#138 — Sam Bhagwat, Mastra.ai",
+          "quote": "most primitives the magic happens when you combine these things together"
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:09:29.920",
+          "end": "00:09:34.000",
+          "start_seconds": 569,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "building the guardrail systems themselves require you know a deep level of expert knowledge"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#69",
+      "text": "Realtime pushes model and inference architecture toward streaming, low-latency, interaction-optimized designs, not only the front end",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:08:51.839",
+          "end": "00:08:54.160",
+          "start_seconds": 531,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "converged to some common patterns"
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:04:29.160",
+          "end": "00:04:31.080",
+          "start_seconds": 269,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "putting our streaming voice models"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#70",
+      "text": "Dependable delegated work needs a prepared environment, a context slice, durable state, risk-bounded authority, and focused human review.",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "am_oeAoUhew",
+          "start": "00:06:57.600",
+          "end": "00:06:59.599",
+          "start_seconds": 417,
+          "confidence": "high",
+          "label": "#16 — Ryan Lopopolo, OpenAI",
+          "quote": "not the code but the prompt and the guardrails"
+        },
+        {
+          "video_id": "1izYWsokr9s",
+          "start": "00:01:55.920",
+          "end": "00:01:58.719",
+          "start_seconds": 115,
+          "confidence": "high",
+          "label": "#167 — Preeti Somal, Temporal",
+          "quote": "handle state potentially over long periods of time."
+        },
+        {
+          "video_id": "kDEvo2__Ijg",
+          "start": "00:16:26.880",
+          "end": "00:16:28.160",
+          "start_seconds": 986,
+          "confidence": "high",
+          "label": "#206 — Joel Hron, Thomson Reuters",
+          "quote": "as a lever that you can dial"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#71",
+      "text": "The agent tooling layer churns faster than teams can standardize: frameworks multiply and new model releases keep reordering leaderboards.",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "N4vCBM5YbN0",
+          "start": "00:06:33.120",
+          "end": "00:06:36.400",
+          "start_seconds": 393,
+          "confidence": "high",
+          "label": "#315 — Cedric Vidal, Microsoft",
+          "quote": "so many ways to build an agent today so many frameworks"
+        },
+        {
+          "video_id": "IIL2tE4n1Q0",
+          "start": "00:06:54.720",
+          "end": "00:06:55.639",
+          "start_seconds": 414,
+          "confidence": "high",
+          "label": "#558 — Alex Volkov",
+          "quote": "it's really hard to keep up with"
         }
       ]
     }
@@ -3190,6 +3541,65 @@
           "confidence": "high",
           "label": "#766 — Rafael Levi, Bright Data",
           "quote": "The agent gets blocked, it needs to please you and it makes things up."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#65",
+      "text": "Agents scope what they can see from existing credentials, filter tool exposure by permission, and step up for stronger actions",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:12:41.760",
+          "end": "00:12:45.360",
+          "start_seconds": 761,
+          "confidence": "high",
+          "label": "#625 — Sam Morrow, GitHub",
+          "quote": "we just immediately filter the tools down by the scopes that the token has."
+        },
+        {
+          "video_id": "0n3MKk7r60w",
+          "start": "00:12:51.720",
+          "end": "00:12:53.240",
+          "start_seconds": 771,
+          "confidence": "high",
+          "label": "#625 — Sam Morrow, GitHub",
+          "quote": "we support step-up OAuth."
+        },
+        {
+          "video_id": "w7IMuYsBNr8",
+          "start": "00:08:30.560",
+          "end": "00:08:34.560",
+          "start_seconds": 510,
+          "confidence": "high",
+          "label": "#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)",
+          "quote": "you can now turn on internet access but it comes with a set of configurable allow list."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#66",
+      "text": "A strong agent design gives a constrained initial surface and expands authority only when the workflow requires it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "w7IMuYsBNr8",
+          "start": "00:08:03.280",
+          "end": "00:08:06.560",
+          "start_seconds": 483,
+          "confidence": "high",
+          "label": "#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)",
+          "quote": "it can only read and write files within the directory that it's run in."
+        },
+        {
+          "video_id": "w7IMuYsBNr8",
+          "start": "00:09:37.200",
+          "end": "00:09:40.000",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)",
+          "quote": "It shouldn't even be able to make a call to HTTP bin in this case."
         }
       ]
     }
@@ -4059,6 +4469,15 @@
           "confidence": "high",
           "label": "#59 — swyx",
           "quote": "I'm declaring war on slop today."
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:11:21.680",
+          "end": "00:11:24.160",
+          "start_seconds": 681,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "code review is by far the most important skill."
         }
       ]
     },
@@ -4975,6 +5394,81 @@
           "quote": "you care a lot if your P95 goes up above 800, 900, 1,000 milliseconds"
         }
       ]
+    },
+    {
+      "claim_id": "claims#67",
+      "text": "Real-time conversation runs on a latency budget of a few hundred milliseconds, a categorically different regime from non-real-time work",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "IA4lZjh9sTs",
+          "start": "00:11:24.880",
+          "end": "00:11:28.000",
+          "start_seconds": 684,
+          "confidence": "high",
+          "label": "#142 — Kwindla Hultman Kramer, Daily",
+          "quote": "conversational latency of a few hundred milliseconds or less."
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:06:17.480",
+          "end": "00:06:22.760",
+          "start_seconds": 377,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#68",
+      "text": "Latency is a budget spread across the whole voice loop, and the metric to watch is the P95 tail, not the average",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:06:17.480",
+          "end": "00:06:22.760",
+          "start_seconds": 377,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
+        },
+        {
+          "video_id": "IA4lZjh9sTs",
+          "start": "00:11:40.720",
+          "end": "00:11:44.320",
+          "start_seconds": 700,
+          "confidence": "high",
+          "label": "#142 — Kwindla Hultman Kramer, Daily",
+          "quote": "your P95 goes up above 800, 900, 1,000 milliseconds"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#69",
+      "text": "Realtime pushes model and inference architecture toward streaming, low-latency, interaction-optimized designs, not only the front end",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:08:51.839",
+          "end": "00:08:54.160",
+          "start_seconds": 531,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "converged to some common patterns"
+        },
+        {
+          "video_id": "P_RI1kCkRbo",
+          "start": "00:04:29.160",
+          "end": "00:04:31.080",
+          "start_seconds": 269,
+          "confidence": "high",
+          "label": "#662 — Neil Zeghidour, Gradium AI",
+          "quote": "putting our streaming voice models"
+        }
+      ]
     }
   ],
   "2": [
@@ -5104,6 +5598,104 @@
           "confidence": "high",
           "label": "#59 — swyx",
           "quote": "I'm declaring war on slop today."
+        },
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:11:21.680",
+          "end": "00:11:24.160",
+          "start_seconds": 681,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "code review is by far the most important skill."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#58",
+      "text": "Software fundamentals matter more, not less, once cheap generation floods work with plausible output",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "v4F1gFy-hqg",
+          "start": "00:00:34.559",
+          "end": "00:00:37.600",
+          "start_seconds": 34,
+          "confidence": "high",
+          "label": "#1 — Matt Pocock, AI Hero",
+          "quote": "software fundamentals matter now more than they actually ever have."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#59",
+      "text": "Code review is the most important engineering skill once agents write the code you must evaluate cold",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Dc3qOA9WOnE",
+          "start": "00:11:21.680",
+          "end": "00:11:24.160",
+          "start_seconds": 681,
+          "confidence": "high",
+          "label": "#132 — Chris Kelly, Augment Code",
+          "quote": "code review is by far the most important skill."
+        },
+        {
+          "video_id": "IoiHI7p12Ao",
+          "start": "00:00:31.279",
+          "end": "00:00:32.480",
+          "start_seconds": 31,
+          "confidence": "high",
+          "label": "#59 — swyx",
+          "quote": "I'm declaring war on slop today."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#60",
+      "text": "Taste is noticing the difference between output that merely works and output that fits, the scarce skill under abundance",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "wjk0ulMAkbc",
+          "start": "00:03:40.560",
+          "end": "00:03:41.360",
+          "start_seconds": 220,
+          "confidence": "high",
+          "label": "#6 — Tuomas Artman & Gergely Orosz",
+          "quote": "build tasteful software"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#61",
+      "text": "Some friction is judgment in disguise; removing it along with wasteful friction lowers standards",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "_Zcw_sVF6hU",
+          "start": "00:18:13.600",
+          "end": "00:18:14.880",
+          "start_seconds": 1093,
+          "confidence": "high",
+          "label": "#14 — Armin Ronacher & Cristina Poncela Cubeiro",
+          "quote": "this is really where your judgment is."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#62",
+      "text": "The new scarce skill is problem framing: writing specifications that fully capture the intent",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:09:02.560",
+          "end": "00:09:07.760",
+          "start_seconds": 542,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "the new scarce skill is writing specifications that fully capture the intent"
         }
       ]
     }

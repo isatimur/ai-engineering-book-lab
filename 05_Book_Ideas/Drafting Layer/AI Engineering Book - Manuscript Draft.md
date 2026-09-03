@@ -434,7 +434,7 @@ It is tempting to imagine the harness as a thin layer around a model: maybe a sy
 
 A real harness includes environment setup, repository policy, validation steps, task decomposition, review surfaces, memory of prior work, failure handling, and the sequence in which all those things are applied. In other words, it is a workflow. Lopopolo's working definition names what ties those pieces together: “a good harness is really operationalized around giving the model text at the right time.” The unifying job is timing and selection — which file, rule, or example reaches the model at the step it needs it.
 
-This is where the software-factory metaphor becomes useful. Eric Zakariasson talks directly about “building your own software factory,” and the phrase lands because it redirects attention from one-off generation to staged production. A factory has specifications, stations, checks, feedback loops, and manager-visible status. It does not assume that every worker can safely improvise in every direction.
+This is where the software-factory metaphor becomes useful. Eric Zakariasson titled his talk *Building Your Own Software Factory*, and the phrase lands because it redirects attention from one-off generation to staged production. A factory has specifications, stations, checks, feedback loops, and manager-visible status. It does not assume that every worker can safely improvise in every direction.
 
 Zakariasson makes a subtler point too: the factory itself needs a spec. “To set the spec for the factory,” he says, you would likely have a folder in the codebase with markdown guidance, best practices, and rules. That is exactly the conceptual move this chapter needs. The harness has to be encoded somewhere. Once it is checked into the repo, process stops living only in human habit and becomes part of the codebase’s working surface.
 
@@ -991,7 +991,7 @@ Least privilege is easy to praise and surprisingly hard to operationalize in age
 
 A useless agent can be perfectly safe. The challenge is to make the system powerful enough to matter without giving it so much authority that one mistake becomes expensive. This is where many teams discover that access control is no longer a back-office function. It becomes part of the product experience.
 
-A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction — scoping what the system can see based on existing credentials, filtering tool exposure by permission, using step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems.
+A strong design does not expose every tool and every permission up front. It gives the system a constrained initial surface, then expands authority only when the workflow truly requires it. GitHub’s production lessons point in this direction — scoping what the system can see based on existing credentials, filtering tool exposure by permission, using step-up flows for stronger actions. That pattern matters because it treats tool discovery and authorization as connected problems. OpenAI's Fouad Matin describes the same least-privilege default for code-executing agents: the sandbox by design means "it can only read and write files within the directory that it's run in."
 
 A scope that looks harmless in isolation can compound once it is paired with retrieval, reasoning, persistence, and retries. The sharper question for an agent is not only what the minimum access is, but minimum access for which stage of the workflow.
 
@@ -1105,7 +1105,7 @@ Voice removes that mercy.
 
 Imagine Hargrove's assistant — the one that built its retrieval binder in Chapter 5, gained durable state and staged sign-off in Chapter 6, and had its authority scoped behind a gateway in Chapter 7 — on a live support call with a client whose account is locked, whose case crosses billing and compliance rules, and whose patience is running out in real time. The agent has to understand messy speech, notice that the caller interrupted to add a crucial exception, retrieve the right internal policy, check the client record, decide whether it can act directly or must escalate, explain what it is doing, and avoid sounding either lost or overconfident while all of this is happening.
 
-The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds, so problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency.
+The same themes that shaped Chapters 3 through 7 — scaffolding, evals, context, runtime design, authority boundaries, and human control — are all still here. The difference is that realtime compresses them into milliseconds, so problems chat can hide become audible. Voice is not merely another modality; it is a systems stress test for trustworthy agency. Kwindla Hultman Kramer draws the line by the clock: real time is anything inside "conversational latency of a few hundred milliseconds or less."
 
 ## Realtime exposes whether the rest of the architecture was honest
 
@@ -1167,7 +1167,7 @@ This is where the human control plane comes into the room. In chat, the control 
 
 ## Realtime pushes model and inference architecture in specific directions
 
-Voice is changing the model stack itself, not only the front end. The pressure for lower first-audio latency, more natural streaming, and tighter multimodal coordination is pushing systems toward architectures optimized for interaction, not merely offline quality. Speech tokenization, streaming generation, lower-latency synthesis, and specialized serving strategies matter because the product requirement is not just to produce good output but to produce good output now.
+Voice is changing the model stack itself, not only the front end. The pressure for lower first-audio latency, more natural streaming, and tighter multimodal coordination is pushing systems toward architectures optimized for interaction, not merely offline quality. Speech tokenization, streaming generation, lower-latency synthesis, and specialized serving strategies matter because the product requirement is not just to produce good output but to produce good output now. Samuel Humeau of Mistral notes speech labs have "converged to some common patterns," building audio generation on the same autoregressive decoder backbone that powers language models.
 
 This is why realtime cannot be treated as a pure UX question. Realtime experience is partly an inference architecture story. Model families, serving strategies, batching decisions, transport layers, and hardware choices all leak into the user experience. The system does not get to hide its internals when every extra delay becomes audible.
 
