@@ -70,7 +70,15 @@ disclosed in its caveat. Round 2 REVISE: `evidence.json` had been regenerated be
 fix and was stale. Round 3 REVISE at the ceiling: #65's caveat still said "two anchors" after
 the third was added. Every substantive claim, quote, speaker and stitch passed from round 1
 on; each round's remaining item was one layer downstream of the previous fix. Operator
-authorised a fourth, bounded round on #65 as a unit: GATE4_PLACEHOLDER
+authorised a fourth, bounded round on #65 as a unit. Round 4 REVISE on two items: a
+dangling parenthetical my round-3 edit had left in the same caveat sentence, and panel
+composition — I had told the gate not to convene the second model family, which caps a
+public-facing artifact at REVISE under the org's own rule. Round 5, both families on the same
+narrow scope: **PASS**, token in `~/Dev/ai-native-org/ledger/verdicts.md`. The gate also
+noted that `docs/ONGOING_SYNC_AND_JUDGING.md` changed mid-round and read it as another
+session writing to the tree; it was this session recording the two book-mash bugs, outside
+the contract's surface. Recorded because the gate was right to refuse the claim that nothing
+else had moved.
 
 A second model family (Codex) reviewed adversarially alongside the gate in rounds 1 and 3
 and found the #65 clause and the stale caveat independently.
