@@ -286,6 +286,61 @@ worth doing when you want a current reading, but a DRIFT on gate (c) shortly
 after a re-score is **expected**, not a defect. The permanent fix is the same as
 for audio: score once chapters freeze.
 
+### Empty responses from llama are a routing problem, not a budget one (2026-09-03)
+
+With a funded account, `meta-llama/llama-3.3-70b-instruct` still returned
+`UnexpectedModelBehavior: Received empty model response` on roughly 60% of fresh
+calls, twice in a row. It looked deterministic — the same 200 units failed both times —
+but that was an artefact of the cache: a rerun only re-calls the failures, and 60% of
+those fail again.
+
+Replaying the failing units through the real judge with the raw response logged
+settled it: under concurrency OpenRouter spills this model to **Novita**, which
+answered **34 of 34** tool-calling requests with neither content nor a tool call.
+**AkashML** answered **40 of 40** correctly, including the same units. Not context
+length (failing paragraphs were *shorter* than passing ones), not prompt content (all
+succeeded in isolation), not credit (balance intact throughout).
+
+Fix that keeps the instrument unchanged: pin the upstream provider at the HTTP
+client. Model slug, prompts, settings and cache keys are untouched, so scores stay
+comparable with v1–v8. There is no env knob for this in `mash-core` yet; the run-time
+shim lives at `/tmp/book-pass/measure-pinned.py` and injects
+`provider: {order: ["AkashML","Groq"], allow_fallbacks: false}` into every request:
+
+```sh
+BOOK_MASH_JUDGE_PROVIDER=openrouter BOOK_MASH_JUDGE_MODEL=meta-llama/llama-3.3-70b-instruct \
+OR_PROVIDER_ORDER=AkashML,Groq poetry run python measure-pinned.py measure --config <book>/book-mash.toml
+```
+
+`qwen/qwen-2.5-72b-instruct` has only two OpenRouter endpoints (DeepInfra, Novita),
+both 32k context. `deepseek/deepseek-chat` needed no pin.
+
+**And the mid-run corpus move happened again.** A peer session committed two
+integrity fixes to Chapters 5 and 10 while the panel was running, so the first two
+member runs (snapshot `54c7`) described superseded text and had to be redone on
+`7c61`. The cache made that cheap (deepseek $0.009), but it is the same failure the
+2026-08-22 note records. Before a panel run, check `ListAgents`/who else has the repo
+open, and re-check the snapshot hash of every member before merging —
+`panel_merge.py` refuses a mismatch, which is the last line of defence, not the first.
+
+Two more facts from the same night. The claim-defensibility prompt is **~11k tokens**
+(54 ledger entries), well inside every provider's window — context length was ruled out
+for qwen too. And the shipped `3/1` concurrency is why a member run takes 60–90 minutes:
+qwen answers in 3–8 s but humanness and claim_defensibility run one at a time. With a
+funded account that is the only reason to raise `BOOK_MASH_HEAVY_CONCURRENCY`; for llama,
+raise it only together with the provider pin, since load is what spills it to Novita.
+
+**Cache replay carried stale unit ids — fixed in book-mash `bb6b1fb`.** The first
+v9 merge reported `panel-error / <2 votes: 97` although every member had zero nulls.
+Cause: the content-keyed cache returned each `JudgeScore` with the `unit_id` it had when
+first cached, so paragraphs whose text was unchanged but whose line numbers had moved
+were reported under old ids (263–334 per member), and members with different cache
+coverage could not be aligned. Chapter and book rollups were never affected (the
+chapter slug is inside the id); paragraph identity was. Cache hits now carry the current
+id; a regression test shifts a chapter's lines between runs. Any earlier run that mixed
+cache replay with fresh calls — v9's predecessors included — has this per-paragraph
+caveat.
+
 ### Audio-freshness drift is ACCEPTED policy, not debt (operator decision, 2026-08-21)
 
 **The audiobook is regenerated only once the chapters are final and no longer

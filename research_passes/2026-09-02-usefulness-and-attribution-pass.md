@@ -198,9 +198,53 @@ The cuts did not cost humanness: the paragraphs removed were the book's least hu
 Redundancy improved where recap paragraphs were cut. Voice moved within instrument noise
 with no chapter flagged by either judge.
 
+### Canonical panel v9 (added 2026-09-03)
+
+Credits arrived, and `panel-3model-v9` ran: deepseek-chat, llama-3.3-70b, qwen-2.5-72b
+through OpenRouter, median of three, snapshot `7c61` = commit `8221593` (my pass plus a
+peer session's two integrity fixes to Ch5 and Ch10). Every member run: zero null scores.
+Merge: 1,736 units, zero with fewer than two votes. Total spend for the valid members
+about $1.10 including the diagnostic reruns. Published to `judge-scores.json` and `/quality`.
+
+| dim | v8 (08-22) | v9 (09-03) | Δ |
+|---|---|---|---|
+| humanness | 86.2 | 86.0 | −0.2 |
+| voice | 90.0 | 88.4 | −1.6 |
+| usefulness | 49.5 | **60.6** | **+11.1** |
+| evidence_density | 70.0 | 79.8 | +9.8 |
+| claim_defensibility | 94.6 | 93.6 | −1.0 |
+| redundancy | 90.0 | 87.5 | −2.5 |
+
+| Ch | v8 usefulness | v9 | Δ |
+|---|---|---|---|
+| 1 | 43.4 | 47.3 | +3.9 |
+| 2 | 49.5 | 54.6 | +5.1 |
+| 3 | 63.5 | 66.1 | +2.6 |
+| 4 | 57.8 | 61.4 | +3.6 |
+| 5 | 54.7 | 60.7 | +6.0 |
+| 6 | 63.2 | 64.7 | +1.5 |
+| 7 | 64.1 | 74.0 | +9.9 |
+| 8 | 55.2 | 64.9 | +9.7 |
+| 9 | 61.7 | 64.8 | +3.1 |
+| 10 | 44.0 | 47.3 | +3.3 |
+
+Two things to read carefully. First, the v8→v9 delta spans *every* edit since 08-22:
+the 08-28 drafting-voice and quotation fixes, this pass, and the 09-03 peer fixes. The
+agent-judged text-matched control attributes about +4.7 usefulness points to this pass
+alone; the canonical line cannot separate the three. Second, 63% of member judgments
+were cache replays of unchanged paragraphs (identical reasoning text to a v8 member),
+which is correct behaviour for a content-hash cache and means the delta comes from the
+37% that were re-judged — the changed text. Same shape as the agent-judged control.
+
+Getting here took three fixes that are now recorded in `docs/ONGOING_SYNC_AND_JUDGING.md`:
+OpenRouter spilling llama to a provider that returns empty responses under load (pinned
+at the HTTP client), a peer session moving the corpus mid-run (two members redone), and
+a book-mash cache bug that reported unchanged paragraphs under stale ids (fixed,
+`bb6b1fb`, with a regression test).
+
 ## What this does not establish
 
-- That any of this *rose on the canonical instrument*. `panel-3model-v9` is parked until a
-  funded OpenRouter key exists; v8 stands as the last canonical reading.
+- How much of the canonical +11.1 usefulness belongs to this pass versus the 08-28 and
+  09-03 edits; only the agent-judged control isolates it (≈ +4.7).
 - Voice at chapter granularity cannot be controlled for judge drift; a −3 book-level move
   between two judge versions is reported, not interpreted.
