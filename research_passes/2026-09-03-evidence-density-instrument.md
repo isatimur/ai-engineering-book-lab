@@ -76,3 +76,32 @@ whose interesting output is a zero.
 Ledger ids run `claims#1`–`#46` then `#50`–`#57`. The gap is deliberate: commit `74377bf`
 retracted three duplicate stub claims (#47–49) and left the numbers unreused, so a stale
 reference cannot silently resolve to a different claim. Nothing references them.
+
+## Conclusion — parked, and why the consensus run was not worth making
+
+The consensus rule is sound but yields nothing measurable on this corpus. On the
+calibration batch F grounded something in **10 of 10** sections and G in 8, so the
+intersection of "both extractors ground nothing" is **empty**. Extrapolated over 114
+sections that list stays empty or near-empty — and an empty defect list is the same output a
+broken run produces. It could not distinguish *the book cites something everywhere* from
+*two extractors never both miss*.
+
+The ungrounded-claim list fails in the opposite direction. F reported 0 ungrounded of 61
+claims, G reported 4 of 31; they do not agree on claim boundaries at all, so there is no key
+to join their lists on. Requiring consensus there is not conservative, it is undefined.
+
+So the run was not made. **On this corpus, at these section lengths, `evidence_density`
+cannot support a per-section verdict from agent extraction.** That is the finding, and it is
+a firmer statement than the 08-28 post-mortem managed: that run did not die of construct
+divergence, it died of a dimension being mismodeled as a scoring judge when it is an
+extraction judge. The CLI no longer makes that mistake, which is worth having whether or not
+a run follows.
+
+## The lever here is the ledger, not the judge
+
+Both calibration errors trace to one cause: `claims#8` carries too much. F over-matched to
+it and G missed its own statement inside it. A judge cannot fix an entry that bundles
+"evals are a control system", eval tooling, benchmark-maxing, and organisational control
+into a single id — the matching decision stops being well-defined. That is a
+ledger-granularity question, not a measurement one, and splitting over-broad entries would
+raise the signal on this dimension more than any change to the instrument.
