@@ -144,6 +144,31 @@ DIM_GRANULARITY = {
 # piece not reproduced is redundancy's `candidate_overlap_chapter_ids`, which the
 # runner fills from an embedding prefilter — it already degrades to [] when no
 # embedder is configured, which is the same value used here.
+# evidence_density is not a scoring dimension. Its judge module returns
+# `candidate_claims` (each claim text plus the closest ledger id, or null) and the
+# SCORE is then computed in code from grounded-claims-per-word - only four values
+# are reachable: 90 / 65 / 35 / 10. Asking an agent for a free 0-100 here is what
+# destroyed the 2026-08-28 run, where two agents averaged 91.5 and 42 on the same
+# manuscript: neither was measuring what the API judge measures, so no amount of
+# prompt wording could have pinned the construct. It had to be structural.
+#
+# So for this dim the agent EXTRACTS and the harness SCORES, using book-mash's own
+# threshold functions rather than copies of them.
+EXTRACTION_DIMS = {"evidence_density"}
+
+
+def _density_scorer():
+    """book-mash's own (label, score) functions for evidence_density.
+
+    Imported, never reimplemented: a local copy of the 300/700/1000 words-per-claim
+    thresholds would silently make these numbers incomparable with the API panel,
+    which is the one thing this tool exists to avoid.
+    """
+    _ensure_deps_on_path()
+    from book_mash.judges.evidence_density import _label_for_density, _score_for_density
+    return _label_for_density, _score_for_density
+
+
 # Ledger size above which claim_defensibility falls back to top-K retrieval.
 # Today's ledger is 34k; the cap leaves headroom without letting a batch become
 # unreadable if the ledger doubles.
@@ -329,6 +354,52 @@ So: do not score a paragraph down merely because a quoted phrase is missing from
 excerpt list. Score it down when the paragraph asserts something the ledger does not carry
 AND no listed source stands behind it."""
 
+
+def _extraction_contract(batch: list[dict], run_id: str, n: int) -> list[str]:
+    """Output contract for extraction dims: list claims, do not score anything.
+
+    The agent's job is to find the claims and say which ledger entry backs each.
+    The number comes from code afterwards, which is the whole point - a count is
+    reproducible in a way a felt 0-100 is not.
+    """
+    return [
+        "## Output contract",
+        "",
+        "You do NOT assign a score. Do not include `score_0_100` or `label`.",
+        "The score is computed from your extraction by the harness, using "
+        "book-mash's own words-per-grounded-claim thresholds.",
+        "",
+        f"Write a JSON array of exactly {len(batch)} objects to a file, then run:",
+        "",
+        "```sh",
+        f"mash-agent ingest --run {run_id} --batch {n} --from <that-file>.json",
+        "```",
+        "",
+        "```json",
+        json.dumps([{
+            "unit_id": batch[0]["unit_id"],
+            "dim_name": batch[0]["dim_name"],
+            "candidate_claims": [
+                {"text": "the exact claim as the prose states it",
+                 "closest_ledger_id": "claims#12"},
+                {"text": "a claim the ledger does not cover",
+                 "closest_ledger_id": None},
+            ],
+        }], indent=2),
+        "```",
+        "",
+        "  * `closest_ledger_id` must be an id from the ledger above, or `null` "
+        "when no entry plausibly matches. Ingest rejects an id that does not exist.",
+        "  * A claim is a falsifiable statement about how the world is. Transitions, "
+        "opinions, rhetorical framing and the book's own definitions are NOT claims.",
+        "  * Be conservative, exactly as the rubric says: better to miss a claim than "
+        "to invent one. Only *grounded* claims raise the score, so padding the list "
+        "with nulls cannot help and inventing claims corrupts the measurement.",
+        "  * `[]` is a legitimate answer for a section that makes no factual claims.",
+        "",
+    ]
+
+
 def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str) -> None:
     """One self-contained judging task: verbatim rubric + units + output contract.
 
@@ -369,6 +440,19 @@ def _write_batch(path: Path, n: int, total: int, batch: list[dict], run_id: str)
                 out += ["This is the book's ENTIRE claims ledger, not a retrieved subset. "
                         "If a claim is not backed here, it is backed nowhere.", ""]
             out += ["```text", v.strip(), "```", ""]
+    if set(dims) & EXTRACTION_DIMS:
+        out += _extraction_contract(batch, run_id, n)
+        out += ["## Units", ""]
+        for i, t in enumerate(batch, 1):
+            out += [f"### {i}. `{t['unit_id']}`  ·  dim: `{t['dim_name']}`", ""]
+            for k, v in (t.get("context") or {}).items():
+                if k in shared:
+                    continue
+                out += [f"context · {k}: {v}", ""]
+            out += ["```text", t["unit_text"].strip(), "```", ""]
+        path.write_text("\n".join(out).rstrip() + "\n")
+        return
+
     out += [
         "## Output contract",
         "",
@@ -483,6 +567,10 @@ def cmd_ingest(args) -> int:
     if not isinstance(payload, list):
         raise SystemExit("judgments must be a JSON array")
 
+    is_extraction = any(k.rsplit("|", 1)[-1] in EXTRACTION_DIMS for k in expected)
+    if is_extraction:
+        return _ingest_extraction(d, manifest, key, expected, payload, args)
+
     needs_spans = any(k.endswith("|claim_defensibility") for k in expected)
     unit_texts = _batch_unit_texts(d, int(key)) if needs_spans else {}
 
@@ -569,6 +657,95 @@ def cmd_ingest(args) -> int:
                     "rows": rows}, indent=2) + "\n")
     done = len(list((d / "judgments").glob("batch-*.json")))
     print(f"accepted batch {key}: {len(rows)} judgments "
+          f"({done}/{manifest['n_batches']} batches complete)")
+    return 0
+
+
+
+def _ingest_extraction(d: Path, manifest: dict, key: str, expected: set,
+                       payload: list, args) -> int:
+    """Validate an extraction batch and derive the score in code.
+
+    Two things are checked that the API judge does not check at all: that every
+    non-null `closest_ledger_id` actually exists in the ledger, and that claim
+    texts are non-empty. A hallucinated id would otherwise inflate the grounded
+    count, which is the only input to the score.
+    """
+    _ensure_deps_on_path()
+    from book_mash.corpus.claims_index import load_claims_index
+    label_for, score_for = _density_scorer()
+
+    valid_ids = {c.id for c in load_claims_index(_corpus_config()["claims_dir"])}
+    unit_texts = _batch_unit_texts(d, int(key))
+
+    seen, errors, rows = set(), [], []
+    for i, r in enumerate(payload):
+        where = f"item {i}"
+        if not isinstance(r, dict):
+            errors.append(f"{where}: not an object")
+            continue
+        uid, dim = r.get("unit_id"), r.get("dim_name")
+        k = f"{uid}|{dim}"
+        if k not in expected:
+            errors.append(f"{where}: {k!r} is not in this batch")
+            continue
+        if k in seen:
+            errors.append(f"{where}: duplicate {k!r}")
+            continue
+        claims = r.get("candidate_claims")
+        if claims is None:
+            errors.append(f"{where}: candidate_claims is required (use [] if the "
+                          f"section makes no factual claims)")
+            continue
+        if not isinstance(claims, list):
+            errors.append(f"{where}: candidate_claims must be an array")
+            continue
+        bad = []
+        for c in claims:
+            if not isinstance(c, dict) or not str(c.get("text", "")).strip():
+                bad.append(f"claim needs non-empty text: {c!r}")
+                continue
+            lid = c.get("closest_ledger_id")
+            if lid is not None and lid not in valid_ids:
+                bad.append(f"unknown ledger id {lid!r}")
+        if bad:
+            errors.append(f"{where}: {bad[:2]}")
+            continue
+
+        grounded = [c for c in claims if c.get("closest_ledger_id")]
+        ungrounded = [c for c in claims if not c.get("closest_ledger_id")]
+        words = len(unit_texts.get(uid, "").split())
+        label = label_for(len(grounded), words)
+        score = score_for(len(grounded), words)
+        seen.add(k)
+        rows.append({
+            "unit_id": uid, "dim_name": dim,
+            "score_0_100": float(score), "label": label,
+            "reasoning": (f"{len(grounded)} grounded claims / {words} words "
+                          f"({words // max(len(grounded), 1)} words per grounded claim)"),
+            "actionable_takeaway": "",
+            "evidence_refs": ([f"grounded:{c['closest_ledger_id']}" for c in grounded]
+                              + [f"ungrounded:{str(c['text'])[:80]}" for c in ungrounded]),
+        })
+
+    missing = expected - seen
+    if missing:
+        errors.append(f"{len(missing)} unit(s) not judged, e.g. {sorted(missing)[:3]}")
+    if errors:
+        print(f"REJECTED batch {key} — {len(errors)} problem(s):", file=sys.stderr)
+        for e in errors[:15]:
+            print(f"  - {e}", file=sys.stderr)
+        return 1
+
+    (d / "judgments" / f"batch-{int(key):03d}.json").write_text(
+        json.dumps({"batch": int(key), "judged_by": args.judged_by,
+                    "ingested_at": datetime.now(timezone.utc).isoformat(),
+                    "rows": rows}, indent=2) + "\n")
+    done = len(list((d / "judgments").glob("batch-*.json")))
+    ung = sum(1 for r in rows for x in r["evidence_refs"] if x.startswith("ungrounded:"))
+    print(f"accepted batch {key}: {len(rows)} units, "
+          f"{sum(len([x for x in r['evidence_refs'] if x.startswith('grounded:')]) for r in rows)} "
+          f"grounded / {ung} ungrounded claims "
           f"({done}/{manifest['n_batches']} batches complete)")
     return 0
 
