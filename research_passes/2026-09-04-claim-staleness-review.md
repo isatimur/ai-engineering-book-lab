@@ -144,3 +144,61 @@ unverified here. Both are the same shape as the residual recorded on 09-03: a re
 from a listed source, attached to a claim it does not support. Nothing in the current
 toolchain detects that class, which is why it keeps surfacing only when a human or a reviewer
 reads the entry.
+
+---
+
+# Follow-up 2 — the two mis-filed quotes, fixed; and why no check will catch the next one
+
+Both were verified by reading the whole talk, not just the quote, before anything was
+removed.
+
+**`claims#9`** — "Realistic evals must be grounded in natural tasks and operational history"
+cited #184 (Colvin, *Human-seeded evals*) saying *"If you build your application in a type
+safe way… you can refactor it with confidence much more quickly."* That is type safety, not
+eval realism. The talk contains **no** "human seeded", "annotated", "golden" or "natural"
+material anywhere — despite its title it is about Pydantic validation. Replaced with #657,
+same speaker, same subject: *"in general what people end up doing is they have some subset of
+data that's been like human annotated"*.
+
+**`claims#46`** — "bounding its authority becomes the price of deployment" cited #138
+(Bhagwat) saying *"most primitives the magic happens when you combine these things
+together."* His talk contains **no** "permission", "authority", "guardrail", "approval" or
+"restrict". Replaced with #629 (Zakariasson, Cursor): *"you want to let the agents free but
+not too free"* and *"you probably shouldn't let them push to prod"*.
+
+Both support levels are unchanged — each entry was already carried by its other sources, so
+this removed false support rather than weakening a claim. Ledger resolves **244/244**. The
+Bhagwat quote stays in `claims#1`, where it does fit; the problem was the filing, not the
+quote.
+
+## A detector was built for this class, tested, and rejected
+
+The obvious mechanical check is to score each quote's lexical overlap against its own claim
+statement and flag the lowest. Tested against the pre-fix ledger, where two known defects sat:
+
+| score | claim | quote |
+|---|---|---|
+| 0.00 | `claims#1` | most primitives the magic happens when you combine these things together ← **known defect** |
+| 0.00 | `claims#14` | Our longest mission ran for 16 days |
+| 0.00 | `claims#13` | credentials, payments, and checkout require determinism. |
+| 0.00 | `claims#11` | minding the gap around observability. |
+
+The defect ranked first — and tied with **eleven perfectly valid quotes**. That is the whole
+result. Evidence legitimately uses different words from the claim it supports; if it merely
+restated the claim it would not be evidence. So low lexical overlap is the *normal* condition
+for a good anchor, and the measure cannot separate "supports in different words" from "about
+something else entirely".
+
+**Not shipped.** A noisy check that fires on a dozen good entries would train the reader to
+ignore it, which is worse than no check — the same reasoning that made `check_title_quotes.py`
+skip titles the prose openly labels.
+
+## What actually works, recorded as the method
+
+Both defects were found by reviewers reading entries against their sources. That is the
+detector: a periodic agent-read pass over ledger entries, one reviewer per batch, each
+required to quote the talk it asserts something about. It found two mis-filings in thirty
+entries. The remaining forty-one have never been read this way.
+
+This is the honest state of the residual first recorded on 09-03: **it is a reading problem,
+not a tooling problem**, and the cost is one agent pass per batch of entries.
