@@ -4647,7 +4647,7 @@
     {
       "claim_id": "claims#45",
       "text": "The best evals encode judgment mined from operational history, not invented in a clean room",
-      "support_level": "tentative",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "1izYWsokr9s",
@@ -4657,6 +4657,33 @@
           "confidence": "high",
           "label": "#167 — Preeti Somal, Temporal",
           "quote": "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+        },
+        {
+          "video_id": "Xfl50508LZM",
+          "start": "00:42:39.200",
+          "end": "00:42:44.240",
+          "start_seconds": 2559,
+          "confidence": "high",
+          "label": "#681 — Laurie Voss, Arize",
+          "quote": "Best place to get uh eval data uh test data is from production."
+        },
+        {
+          "video_id": "4VhbYlfC7Gs",
+          "start": "00:10:41.480",
+          "end": "00:10:44.240",
+          "start_seconds": 641,
+          "confidence": "high",
+          "label": "#673 — Vincent Koc, OpenClaw",
+          "quote": "We can self-curate suites from traces,"
+        },
+        {
+          "video_id": "L2r6vLlLgs8",
+          "start": "00:06:18.040",
+          "end": "00:06:20.200",
+          "start_seconds": 378,
+          "confidence": "high",
+          "label": "#689 — Lawrence Jones, incident.io",
+          "quote": "production evals aren't like great."
         }
       ]
     },
