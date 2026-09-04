@@ -542,6 +542,7 @@
   - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — the stuffing-vs-memory distinction names one form of misassembly (stale-plus-current documents averaged into half-current answer).
     - **Anchor:** `Jty4s9-Jb78` 00:03:05.200 → 00:03:09.880 · confidence: high
     - **Quote:** "there's this third thing, which I think is like really new and no one is doing it yet, which is training things into weights."
+    - **Superseded (2026-09-04):** the "no one is doing it yet" half no longer holds. #975 (Raymond Feng, Applied Compute — bring-your-own-harness training on production traces) and #851 (Will Brown, Prime Intellect — async RL at GLM-5 scale, ~$50K per 1,000-step run) show weight-updating running in production, and 19 talks at #600+ cover fine-tuning or post-training. The quote stays accurate as of its date and the anchor stands — cite it as a marker of when this was still novel, not as a statement about now.
   - [[047-xz0-brt56L8-building-intelligent-research-agents-with-manus-ivan-leo-manus-ai-now-meta-superintelligen|#47 — Ivan Leo, Manus AI / Meta Superintelligence]] — research agents that drift across hundreds of retrievals to produce internally-consistent, externally-wrong summaries.
     - **Anchor:** `xz0-brt56L8` 01:09:50.960 → 01:09:55.760 · confidence: high
     - **Quote:** "this is really useful if you're building anything related to some sort of internal deep research sort of API"
