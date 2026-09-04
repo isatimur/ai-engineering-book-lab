@@ -136,7 +136,7 @@ claim, then writing that claim into the backlog as though it were established, i
 error this project keeps finding elsewhere — a plausible story recorded as a finding without
 the measurement that would have tested it. The measurement took two minutes and refuted it.
 
-`claims#54` and `claims#26` are genuinely long. Whether they are ill-defined rather than
+`claims#54` and `claims#26` are long. Whether they are ill-defined rather than
 merely long is untested, and being top-1 for many paragraphs is expected for a central topic
 like model routing. That question stays open, and any split should follow evidence that
-matching to them actually goes wrong.
+matching to them goes wrong.

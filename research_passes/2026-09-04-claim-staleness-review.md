@@ -54,7 +54,7 @@ ledger, and this was one of them.
   newer material and both were wrong** — #621 entered 2026-05-25, *before* #40 (06-04) and
   #265 (06-04), the very sources those claims rest on. So it is not decay; it is contrary
   evidence that sat uncited in the corpus while the claims were written strong. Arguably the
-  worse finding. #1021 (Ankit Jain, 2026-08-20) *is* genuinely later and carries the same
+  worse finding. #1021 (Ankit Jain, 2026-08-20) *is* later and carries the same
   objection independently.
 * **`claims#45`** — reported as having no valid supporting sources, with #689 (incident.io)
   documenting the mechanism failing operationally: production-mined evals *"become extremely
@@ -85,8 +85,8 @@ count is not the signal; the score threshold and human reading are.
 
 Topic overlap is almost never staleness. Thirty claims, five reviewers, and the honest yield
 is **two** decayed pieces of evidence — both now marked in place, neither requiring a claim
-to change. The ledger held up. The value of the pass is that it is now repeatable and that
-two marking conventions exist:
+to change. The ledger held up. The pass is now repeatable, and it produced two marking
+conventions:
 
 * `**Superseded (date):**` — the quote's assertion has stopped being true
 * `**Newer edition (date):**` — the quote stands, but a later edition of that source exists

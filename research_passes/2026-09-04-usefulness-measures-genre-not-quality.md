@@ -60,7 +60,7 @@ it is the genre.
 labelled weak" will be tempted to fix them. That is how a book loses its opening.
 
 `usefulness` stays useful *within* a chapter of a given kind — it is what surfaced the
-listicle stems and dead transitions the 09-02 pass genuinely removed. It should not be
+listicle stems and dead transitions the 09-02 pass removed. It should not be
 compared across chapters of different function, and a chapter-level `weak` on 01 or 10 is not
 a ship-blocker. The panel agrees: **0 ship-blockers across all ten chapters.**
 

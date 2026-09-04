@@ -165,7 +165,7 @@ looks like, and they are why finding #1 is a defect and they are not.
 
 **Three verified-correct attributions.** Kelly's *"code review is by far the most important
 skill"* is verbatim in his own talk; his four-nines/thousands-of-users/gigabytes definition
-of production is near-verbatim and unquoted; and Rogut really does relay Jeff Dean —
+of production is near-verbatim and unquoted; and Rogut does relay Jeff Dean —
 *"the exact quote is you don't need a trillion at once, you need the right million."*
 
 **Five ledger-coverage gaps, not attribution defects.** `pass@k`, lost-in-the-middle,
