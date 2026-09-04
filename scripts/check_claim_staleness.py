@@ -7,9 +7,15 @@ outdated - by material the ledger has never seen. Nothing checked that.
 
 Method, all local and deterministic:
   * read each ledger entry's cited source indices (`#206 — Joel Hron, ...`);
-  * treat playlist index as a recency proxy. Notes up to #599 carry an April
-    `ingested_at`; #600+ arrived later and mostly lack the field, so the index -
-    not the frontmatter - is the usable signal;
+  * date every note by when it was ADDED TO GIT, in one `git log --diff-filter=A`
+    pass. The corpus carries no publication date, and playlist index is NOT a
+    recency proxy: #621 (Matt Pocock workshop) says on tape "this is what my
+    keynote is on tomorrow", and that keynote is #1 - so a 621 precedes a 1. Git
+    dates get this right (#621 2026-05-25, #1 2026-06-04) and disagree with index
+    order on 32 of 1073 adjacent pairs;
+  * compare each claim against its OWN newest cited source, not a global cutoff,
+    so "newer" means newer than that claim's evidence rather than newer than an
+    arbitrary line;
   * for entries citing NOTHING newer than the threshold, score every newer talk
     against the claim by IDF-weighted overlap on title + summary;
   * report the closest newer talks, so a human can classify the delta with
@@ -21,12 +27,13 @@ where an update would live - not that the claim is wrong. Topic overlap is not
 contradiction, and only reading the talk can tell them apart.
 
     python3 scripts/check_claim_staleness.py
-    python3 scripts/check_claim_staleness.py --since 800 --top 3
+    python3 scripts/check_claim_staleness.py --top 3 --min-score 10
 """
 from __future__ import annotations
 
 import argparse
 import math
+import subprocess
 import re
 import sys
 from collections import Counter
@@ -53,17 +60,41 @@ def toks(t: str) -> list[str]:
 
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--since", type=int, default=600,
-                help="playlist index at which 'newer' begins (default 600)")
+ap.add_argument("--after", default=None,
+                help="only consider talks added after this ISO date "
+                     "(default: per-claim, its own newest cited source)")
 ap.add_argument("--top", type=int, default=3, help="newer talks to show per claim")
 ap.add_argument("--min-score", type=float, default=6.0)
 a = ap.parse_args()
 
-# newer talks: index, title, summary
+def git_added() -> dict[int, str]:
+    """Playlist index -> date the note first appeared in git.
+
+    The only recency signal this corpus actually has. No note carries a
+    publication date, and index order is wrong often enough to matter.
+    """
+    out = subprocess.run(
+        ["git", "log", "--diff-filter=A", "--date=short", "--format=@%ad",
+         "--name-only", "--", "01_Videos/"],
+        capture_output=True, text=True, cwd=REPO).stdout
+    date, m = None, {}
+    for ln in out.split("\n"):
+        if ln.startswith("@"):
+            date = ln[1:]
+        elif ln.startswith("01_Videos/"):
+            k = re.match(r"01_Videos/(\d+)-", ln)
+            if k and date:
+                m.setdefault(int(k.group(1)), date)   # first add wins
+    return m
+
+
+ADDED = git_added()
+
+# every talk, with the date it entered the corpus
 newer = []
 for p in (REPO / "01_Videos").glob("*.md"):
     m = re.match(r"^(\d+)-", p.name)
-    if not m or int(m.group(1)) < a.since:
+    if not m:
         continue
     head = p.read_text(errors="ignore")[:1400]
     title = re.search(r'title: "(.*?)"', head)
@@ -71,8 +102,9 @@ for p in (REPO / "01_Videos").glob("*.md"):
     newer.append((int(m.group(1)),
                   title.group(1) if title else p.stem,
                   (summ.group(1) if summ else "")))
+newer.sort()
 if not newer:
-    sys.exit(f"no notes at or above #{a.since}")
+    sys.exit("no notes found")
 
 docs = [toks(t + " " + s) for _, t, s in newer]
 df = Counter()
@@ -89,25 +121,34 @@ parts = re.split(r"\n## (\d+)\) ", raw)
 for i in range(1, len(parts), 2):
     cited[f"claims#{parts[i]}"] = sorted({int(x) for x in re.findall(r"#(\d+) —", parts[i + 1])})
 
-stale = [c for c in claims if cited.get(c.id) and max(cited[c.id]) < a.since]
-print(f"{len(claims)} claims · {len(newer)} talks at #{a.since}+ · "
-      f"{len(stale)} claims cite nothing newer\n")
+def evidence_date(claim_id: str) -> str | None:
+    """When this claim's NEWEST cited source entered the corpus."""
+    ds = [ADDED[i] for i in cited.get(claim_id, []) if i in ADDED]
+    return max(ds) if ds else None
+
+
+print(f"{len(claims)} claims · {len(newer)} talks · "
+      f"corpus spans {min(ADDED.values())} … {max(ADDED.values())}\n")
 
 out = []
-for c in stale:
+for c in claims:
+    cutoff = a.after or evidence_date(c.id)
+    if not cutoff:
+        continue
     q = set(toks(c.retrieval_text()))
     scored = sorted(
         ((sum(idf.get(w, 1.0) for w in q & set(d)), n, t)
-         for d, (n, t, _) in zip(docs, newer)),
+         for d, (n, t, _) in zip(docs, newer)
+         if ADDED.get(n, "0000-00-00") > cutoff),
         key=lambda x: -x[0])
     hits = [h for h in scored[: a.top] if h[0] >= a.min_score]
     if hits:
-        out.append((hits[0][0], c, cited[c.id], hits))
+        out.append((hits[0][0], c, cutoff, hits))
 
-for _, c, src, hits in sorted(out, key=lambda x: -x[0]):
-    print(f"{c.id}  (cites {src})")
+for _, c, cutoff, hits in sorted(out, key=lambda x: -x[0]):
+    print(f"{c.id}  (newest cited evidence added {cutoff})")
     print(f"  {c.retrieval_text().splitlines()[0][:96]}")
     for sc, n, t in hits:
-        print(f"    [{sc:5.1f}] #{n} {t[:88]}")
+        print(f"    [{sc:5.1f}] {ADDED.get(n, '?')}  #{n} {t[:76]}")
     print()
-print(f"{len(out)} claim(s) with newer same-topic material — review, not verdicts")
+print(f"{len(out)} claim(s) with later same-topic material — review, not verdicts")
