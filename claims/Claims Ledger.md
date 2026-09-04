@@ -126,9 +126,9 @@
   - [[125-L8OoYeDI_ls-evals-are-not-unit-tests-ido-pesok-vercel-v0|#125 — Ido Pesok, Vercel v0]]
     - **Anchor:** `L8OoYeDI_ls` 00:13:40.000 → 00:13:43.040 · confidence: high
     - **Quote:** "improvement without measurement is limited and imprecise."
-  - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `o_LRtAomJCs` 00:00:44.000 → 00:00:47.039 · confidence: high
-    - **Quote:** "We still want to build reliable scalable applications and that is still hard"
+  - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]] — the control loop made concrete: run against a golden set, compare, then optimise the prompt.
+    - **Anchor:** `A48uhxfxbsM` 00:18:48.000 → 00:18:50.720 · confidence: high
+    - **Quote:** "comparing what the result is versus a golden data set"
   - [[628-_fQ7Z_Wfouk-why-building-eval-platforms-is-hard-phil-hetzel-braintrust|#628 — Phil Hetzel, Braintrust]] — observability and eval are the same problem from a systems perspective.
     - **Anchor:** `_fQ7Z_Wfouk` 00:14:29.920 → 00:14:34.720 · confidence: high
     - **Quote:** "eval to us it's actually the same problem from a from a systems perspective."
@@ -145,6 +145,16 @@
 - **Caveats / counterpoints:** Not everything important can be reduced to a single metric. The answer is not no evals; it is richer evaluation systems with human judgment where needed. Productive tension worth preserving: #689 calls evals "AI unit tests" while #125 (Pesok) titles his talk "Evals Are Not Unit Tests" — both framings describe different surfaces of the same artifact.
 - **Candidate chapters:** 4, 6, 7, 9
 - **Reusable phrasing:** Evals matter because delegated systems need a control loop, not because launch decks need charts.
+
+> **Mis-filed source replaced (2026-09-04):** cited #184 (Colvin) saying "We still
+> want to build reliable scalable applications and that is still hard" — a generic
+> opening line, not a claim about evals as a control loop. Decisive evidence: in
+> that talk Colvin says "I'm not going to be able to get to the eval stuff today"
+> and "I won't talk about how eval split in because I don't have time." The talk
+> is titled *Human-seeded evals* and contains no eval content at all, which is why
+> it was also mis-filed under `claims#9`. Replaced with #657, the same speaker's
+> talk that does run the loop. Support level unchanged — four other sources carry
+> this entry.
 
 ## 9) Realistic evals must be grounded in natural tasks and operational history
 - **Why it matters:** Protects the manuscript from hand-wavy claims about evaluation and ties it to a more defensible methodology.
@@ -213,15 +223,22 @@
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
     - **Anchor:** `A48uhxfxbsM` 00:59:22.240 → 00:59:31.119 · confidence: high
     - **Quote:** "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
-  - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]]
-    - **Anchor:** `ow1we5PzK-o` 00:00:19.760 → 00:00:26.320 · confidence: high
-    - **Quote:** "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+  - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]] — durability implemented as an obligation to record, not a hope that agents remember: structured handoffs at milestone boundaries.
+    - **Anchor:** `ow1we5PzK-o` 00:08:57.640 → 00:08:58.840 · confidence: high
+    - **Quote:** "by forcing them to write it down"
   - [[680-iOXM3zE-2dk-mind-the-gap-in-your-agent-observability-amy-boyd-nitya-narasimhan-microsoft|#680 — Amy Boyd & Nitya Narasimhan, Microsoft]]
     - **Anchor:** `iOXM3zE-2dk` 00:03:38.400 → 00:03:39.760 · confidence: high
     - **Quote:** "minding the gap around observability."
 - **Caveats / counterpoints:** Not every AI feature needs a durable workflow runtime. The claim applies once tasks span time, tools, or approvals. Many lightweight assistants do not need full workflow durability.
 - **Candidate chapters:** 6, 7, 8, 10
 - **Reusable phrasing:** A production agent is not just a smart response. It is a stateful workflow that can survive reality.
+
+> **Mis-filed source replaced (2026-09-04):** cited #653 (Alvoeiro) with the
+> talk's 19-second opening promise — "you'll be able to assemble agent teams that
+> can complete tasks orders of magnitude harder than what you can complete with a
+> single agent today" — which is capability scaling, with nothing about state,
+> durability, resumability or inspectable history. The same talk carries the claim
+> a few minutes later, so the source stays and only the anchor moves.
 
 ## 12) Human oversight works best as an architectural layer, not an afterthought
 - **Why it matters:** Lets the book avoid the naive autonomy-vs-human binary.
@@ -233,12 +250,21 @@
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — agency should be tuned as a spectrum with adjustable dials.
     - **Anchor:** `kDEvo2__Ijg` 00:04:33.280 → 00:04:36.320 · confidence: high
     - **Quote:** "dial these agency dials far up."
-  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — humans need roll-up visibility into active delegated work.
-    - **Anchor:** `rnDm57Py54A` 01:02:52.079 → 01:02:57.200 · confidence: high
-    - **Quote:** "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — oversight built as a layer rather than added later: guardrails, rules and hooks over the sensitive paths, and no direct route to production.
+    - **Anchor:** `rnDm57Py54A` 00:06:20.800 → 00:06:23.360 · confidence: high
+    - **Quote:** "you want to let the agents free but not too free."
+    - **Anchor:** `rnDm57Py54A` 00:20:30.000 → 00:20:31.440 · confidence: high
+    - **Quote:** "you probably shouldn't let them push to prod"
 - **Caveats / counterpoints:** Too many checkpoints can destroy speed and negate the economic value of delegation. The design goal is selective supervision, not permanent interruption.
 - **Candidate chapters:** 1, 6, 7, 9, 10
 - **Reusable phrasing:** The human control plane is where trust becomes operational.
+
+> **Mis-attributed quote replaced (2026-09-04):** this entry also credited
+> Zakariasson with "maintaining a factory would require you to have an overview of
+> the processes you want your coding agents to go through." Those words are from an
+> **audience question**, not the speaker — see the same correction on `claims#16`,
+> where the transcript turn markers are quoted. One mis-attribution had been
+> copied into two entries, which is why the grep after the first fix mattered.
 
 ## 13) High-stakes systems tune agency instead of maximizing it
 - **Why it matters:** Adds nuance to autonomy claims and strengthens the bridge into security and governance.
@@ -318,12 +344,24 @@
   - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Eoin Mulgrew, 10 Downing Street]]
     - **Anchor:** `ObNKGf9YR0g` 00:09:21.280 → 00:09:24.840 · confidence: high
     - **Quote:** "observing their workflows, their pain points, co-designing solutions with them"
-  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]]
-    - **Anchor:** `rnDm57Py54A` 01:02:52.079 → 01:02:57.200 · confidence: high
-    - **Quote:** "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — coherence as a product requirement: a control surface over the whole fleet, and an aggregated view of what every agent is doing.
+    - **Anchor:** `rnDm57Py54A` 01:03:18.000 → 01:03:22.720 · confidence: high
+    - **Quote:** "we need like a better control panel where you can like see all the agents and manage them"
+    - **Anchor:** `rnDm57Py54A` 01:03:51.280 → 01:03:55.280 · confidence: high
+    - **Quote:** "some kind of project view where you can see like an aggregated status update."
 - **Caveats / counterpoints:** Some organizations will gain a lot from loose local experimentation before building heavier coordination systems. The claim is about durability at scale.
 - **Candidate chapters:** 6, 9, 10
 - **Reusable phrasing:** In an AI-native organization, the problem is rarely producing more artifacts. It is keeping many delegated workflows coherent enough to trust.
+
+> **Mis-attributed quote replaced (2026-09-04):** this entry credited Zakariasson
+> with "maintaining a factory would require you to have an overview of the
+> processes you want your coding agents to go through." Those words are from an
+> **audience question**, not the speaker: the transcript runs "...let's go ahead
+> and merge / you a quick question. This factory building leaves us with a
+> scattered ecosystem... As maintaining a factory would require you to have an
+> overview..." and Zakariasson's turn only begins at the next `>>` marker, "Yeah,
+> it's it's a really good question." A new defect class — real words, real
+> transcript, resolving anchor, wrong mouth. Replaced with his own answer.
 
 ## 17) Harness quality now includes capability packaging, not only repo hygiene
 - **Why it matters:** Sharpens the Chapter 3 → 5 bridge. Once agents rely on tools, the harness includes how capabilities are grouped, described, discovered, and constrained.
@@ -713,9 +751,9 @@
   - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Denys Linkov, Wisedocs]] — the team that ships dependable AI mixes capabilities that used to live in separate departments; the unit of work crosses old boundaries.
     - **Anchor:** `SbUxRluVRwk` 00:09:39.200 → 00:09:43.760 · confidence: high
     - **Quote:** "all these skills that you're prioritizing don't necessarily need to be one person. They can be multiple people."
-  - [[207-Zqu0VaJw3vo-how-to-hire-ai-engineers-when-everyone-is-cheating-with-ai-beth-glenfield-devday|#207 — Beth Glenfield, DevDay]] — old hiring signals stop discriminating once everyone interviews with AI; the organization has to learn to hire for judgment, not for code-production ability that is now widely available.
-    - **Anchor:** `Zqu0VaJw3vo` 00:00:30.480 → 00:00:36.399 · confidence: high
-    - **Quote:** "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
+  - [[069-RmJ4rTLV_x4-empowering-non-engineers-to-ship-code-lisa-orr-zapier|#69 — Lisa Orr, Zapier]] — the symmetry in one sentence: support staff ship code, and every merge request they raise is reviewed by engineering on a deliberately narrow surface.
+    - **Anchor:** `RmJ4rTLV_x4` 00:03:21.760 → 00:03:25.360 · confidence: high
+    - **Quote:** "engineering was set to review any merge requests coming from support"
   - [[743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw|#743 — Vincent Koc, OpenClaw]] — from the sharp end of an AI-native repo: once generation is cheap, the binding constraint becomes governance — deciding what to reject, not what to accept.
     - **Anchor:** `pmoDeA3RBZY` 00:07:54.840 → 00:08:02.670 · confidence: high
     - **Quote:** "In a world where tokens are cheap, I can just say yes to absolutely everyone and merge everything in. But that's going to turn this code base into an absolute fire dump."
@@ -724,6 +762,14 @@
 - **Reusable phrasing:** Broad paths to create, narrow paths to ship.
 
 > **Correction (2026-08-21):** This entry's Koc citation previously used "the challenge becomes who do I say no to?" and cited "tens of thousands of open PRs." Both were wrong: the transcript shows Koc explicitly attributing that line to another speaker ("you heard Peter say earlier on, the challenge becomes who do I say no to?"), and the PR-count figure does not appear in the transcript at all (it only says "we have lots of people raising PRs"). Replaced with Koc's own verified words above. Caught during the Ch9 usefulness pass; flagged for a wider ledger accuracy sweep.
+
+> **Mis-filed source replaced (2026-09-04):** cited #207 (Glenfield) with "I'm
+> going to talk to you today about how I believe AI is breaking how we hire
+> technically" — an agenda line from a talk about technical hiring and interview
+> design. All 957 words were read: it contains nothing on review capacity, merge
+> gates, approval paths or governing what non-specialists produce, and nothing on
+> broadening who can create either. Replaced with a second anchor on #69 (Orr),
+> already source 1 here, which carries the governance half the entry was missing.
 
 ## 37) Activity-based metrics misread motion as progress in AI-augmented work
 - **Why it matters:** When generation is cheap, output volume rises faster than value. Dashboards that count artifacts (commits, PRs, tickets touched) light up green while the actual constraint — whether the organization can review, integrate, and trust what was produced — goes invisible until it breaks. The wrong metric applied to cheap execution actively destroys value because it directs management attention toward the abundant resource and away from the scarce one.
@@ -769,15 +815,23 @@
   - [[623-ClWD8OEYgp8-collaborative-ai-engineering-one-dev-two-dozen-agents-zero-alignment-maggie-appleton-githu|#623 — Maggie Appleton, GitHub]] — the load-bearing source: "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective." Names the gap in tooling and the resulting team-level incoherence.
     - **Anchor:** `ClWD8OEYgp8` 00:04:53.440 → 00:05:00.080 · confidence: high
     - **Quote:** "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective."
-  - [[160-PthmdT92qNg-shipping-products-when-you-don-t-know-what-they-can-do-ben-stein-teammates|#160 — Ben Stein, Teammates]] — the planning-fan-out problem from the product side: shipping when you don't fully know what the system can do means alignment has to happen earlier, before specification freezes.
-    - **Anchor:** `PthmdT92qNg` 00:17:22.160 → 00:17:27.360 · confidence: high
-    - **Quote:** "if we believe that all of our products are for like for all time going to be probabistic, then like we probably have to figure out how this world works."
+  - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — Luke Alvoeiro, Factory]] — names the failure modes the claim describes: collision, duplicated work, and inconsistent decisions eating the speed gains.
+    - **Anchor:** `ow1we5PzK-o` 00:09:37.400 → 00:09:39.680 · confidence: high
+    - **Quote:** "They step on each other's changes. They duplicate work."
   - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — the software-factory framing with shared plans and roll-up visibility as the structural response.
     - **Anchor:** `rnDm57Py54A` 00:19:32.960 → 00:19:38.880 · confidence: high
     - **Quote:** "you kind of like frontload uh the context to the agents either through like a plan or a long spec and then you send them off"
 - **Caveats / counterpoints:** "Alignment debt" is a freshly-coined term inheriting authority from the well-established "technical debt" analogy. The analogy is useful but imperfect — technical debt's tradeoffs are reasonably well-modeled, alignment debt's are not yet. Treat the term as a useful organizing concept that will be sharpened by more practitioner case studies, not as a settled framework.
 - **Candidate chapters:** 9
 - **Reusable phrasing:** Alignment debt is the tax an organization pays for treating a collective activity as a collection of private ones.
+
+> **Mis-filed source replaced (2026-09-04):** cited #160 (Stein) saying "if we
+> believe that all of our products are for like for all time going to be
+> probabistic, then like we probably have to figure out how this world works" — a
+> talk about product management under probabilistic behaviour, single-team
+> throughout. Searched for duplicat / coordinat / conflict / overlap / parallel /
+> fleet / incoheren / redundan / silo: zero relevant hits (the one "duplicate" is
+> a Linear ticket status). Replaced with #653, which names all the failure modes.
 
 ## 40) Cheap generation raises the value of taste and judgment rather than lowering it
 - **Why it matters:** The intuitive reading of cheap code is that engineering judgment matters less. The corpus argues the opposite, and the mechanism is specific: when building was expensive, the cost of building was itself a filter on what got built; remove the cost and the filter disappears, so the discriminative skill that decides what *should* be built has to replace it. This is the human half of the book's opening argument and the hinge from Chapter 1's delegation thesis into the technical core.
@@ -1180,11 +1234,20 @@
     - **Quote:** "we just immediately filter the tools down by the scopes that the token has."
     - **Anchor:** `0n3MKk7r60w` 00:12:51.720 → 00:12:53.240 · confidence: high
     - **Quote:** "we support step-up OAuth."
-  - [[152-w7IMuYsBNr8-openai-on-securing-code-executing-ai-agents-fouad-matin-codex-agent-robustness|#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)]] — Codex ships internet access off by default and turns it on only behind a configurable allow list — capability expands only when explicitly granted: "you can now turn on internet access but it comes with a set of configurable allow list."
-    - **Anchor:** `w7IMuYsBNr8` 00:08:30.560 → 00:08:34.560 · confidence: high
-    - **Quote:** "you can now turn on internet access but it comes with a set of configurable allow list."
+  - [[032-BurJvbqFr4c-your-insecure-mcp-server-won-t-survive-production-tun-shwe-lenses|#32 — Tun Shwe, Lenses]] — permission scoping at tool and resource granularity, not merely at the session, which is the mechanism this claim names.
+    - **Anchor:** `BurJvbqFr4c` 00:22:55.960 → 00:22:59.040 · confidence: high
+    - **Quote:** "scoping permissions at the individual tool and resource level,"
 - **Caveats / counterpoints:** The scope-filter and step-up pattern is the mature production shape; small internal tools can expose more up front. The claim is about the discipline production deployments converge on, not a universal requirement. Three anchors across two talks: GitHub (scope filter and step-up OAuth) and OpenAI (allow list).
 - **Candidate chapters:** 7
+
+> **Mis-filed source replaced (2026-09-04):** cited #152 (Matin, OpenAI) saying
+> "you can now turn on internet access but it comes with a set of configurable
+> allow list" — that is network egress policy for the Codex sandbox, not
+> credential-scoped tool exposure. His talk contains **zero** occurrences of
+> "scope", "credential", "token" or "permission". The same sandbox material is
+> already correctly filed under `claims#66`. Replaced with #32 (Tun Shwe, Lenses),
+> which states the mechanism directly, so the entry keeps two distinct talks and
+> its strong level.
 
 ## 66) A strong agent design gives a constrained initial surface and expands authority only when the workflow requires it
 - **Why it matters:** The safe default is not maximum capability but a minimal initial surface — file access limited to the working directory, network off — with authority added only for the stage of the workflow that needs it. This reframes access control as a product-design decision made per workflow stage, not a one-time grant, and it is what makes 'minimum access for which stage' the sharper question than 'minimum access'.
