@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T01:24:48+00:00",
+  "generated_at": "2026-09-04T02:36:11+00:00",
   "corpus": {
     "videos": 1074
   },
@@ -11,14 +11,14 @@
     "drafting_files": 10
   },
   "claims": {
-    "total": 68,
-    "strong": 50,
-    "moderate": 17,
+    "total": 71,
+    "strong": 52,
+    "moderate": 18,
     "tentative": 1
   },
   "anchors": {
-    "total": 230,
-    "high": 229,
+    "total": 240,
+    "high": 239,
     "medium": 1,
     "low": 0
   },
@@ -41,7 +41,7 @@
     "programs": 10,
     "tasks": 7
   },
-  "total_artefacts": 1355,
+  "total_artefacts": 1358,
   "book2": {
     "drafting_files": 7,
     "claims": {
