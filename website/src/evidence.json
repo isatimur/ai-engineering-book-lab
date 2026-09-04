@@ -461,13 +461,13 @@
           "quote": "task should be natural and sourced from the real world and then you should be able to reliably grade them."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:01:22.960",
-          "end": "00:01:29.600",
-          "start_seconds": 82,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:47:04.400",
+          "end": "00:47:09.839",
+          "start_seconds": 2824,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "in general what people end up doing is they have some subset of data that's been like human annotated"
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -1144,13 +1144,22 @@
           "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
         },
         {
-          "video_id": "8SUJEqQNClw",
-          "start": "00:12:04.240",
-          "end": "00:12:07.600",
-          "start_seconds": 724,
+          "video_id": "rnDm57Py54A",
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
-          "label": "#138 — Sam Bhagwat, Mastra.ai",
-          "quote": "most primitives the magic happens when you combine these things together"
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -2950,13 +2959,22 @@
           "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
         },
         {
-          "video_id": "8SUJEqQNClw",
-          "start": "00:12:04.240",
-          "end": "00:12:07.600",
-          "start_seconds": 724,
+          "video_id": "rnDm57Py54A",
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
-          "label": "#138 — Sam Bhagwat, Mastra.ai",
-          "quote": "most primitives the magic happens when you combine these things together"
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -3620,13 +3638,22 @@
           "quote": "we're asking AI systems to now produce output and produce judgments and decisions"
         },
         {
-          "video_id": "8SUJEqQNClw",
-          "start": "00:12:04.240",
-          "end": "00:12:07.600",
-          "start_seconds": 724,
+          "video_id": "rnDm57Py54A",
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
-          "label": "#138 — Sam Bhagwat, Mastra.ai",
-          "quote": "most primitives the magic happens when you combine these things together"
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         },
         {
           "video_id": "kDEvo2__Ijg",
@@ -4469,13 +4496,13 @@
           "quote": "task should be natural and sourced from the real world and then you should be able to reliably grade them."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:01:22.960",
-          "end": "00:01:29.600",
-          "start_seconds": 82,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:47:04.400",
+          "end": "00:47:09.839",
+          "start_seconds": 2824,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "in general what people end up doing is they have some subset of data that's been like human annotated"
         },
         {
           "video_id": "wRJD0inpmjU",
@@ -4840,13 +4867,13 @@
           "quote": "task should be natural and sourced from the real world and then you should be able to reliably grade them."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:01:22.960",
-          "end": "00:01:29.600",
-          "start_seconds": 82,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:47:04.400",
+          "end": "00:47:09.839",
+          "start_seconds": 2824,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "in general what people end up doing is they have some subset of data that's been like human annotated"
         },
         {
           "video_id": "wRJD0inpmjU",
