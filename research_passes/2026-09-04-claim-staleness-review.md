@@ -93,3 +93,54 @@ two marking conventions exist:
 
 Neither ever deletes: the speaker did say it, the anchor stays valid, and the book may want
 the quote as a marker of when something was still new.
+
+---
+
+# Follow-up (same day) — the three flagged items, resolved
+
+## MCP is not stale — a negative result, verified
+
+`claims#32/#33` were flagged on a reviewer's aside: #703 (Paige Bailey, Google DeepMind)
+says *"mostly people have kind of moved away from MCP servers and are adopting skills which
+are just fancy markdown files."* The quote is real and verbatim. It is still not staleness,
+on two independent grounds:
+
+1. **#703 entered 2026-05-25 — earlier than claims#32/#33's own sources** (2026-06-04). Same
+   trap as the Pocock case above: an uncited contrary view, not decay.
+2. **Later evidence points the other way.** 34 talks added after 2026-06-04 mention MCP or
+   skills, and the MCP ones show expansion, not retreat — #762 *WebMCP: How every website
+   talks to agents* (Google Chrome, 06-20), #807 *MCP Apps: Primitives, discovery, and the
+   Future of Software* (07-15), #744 *Chrome DevTools MCP* (06-09).
+
+Both claims stand at **strong**, unchanged. Worth recording as a negative result: a
+single-speaker aside is not evidence about a field, and the check that caught it is the same
+date discipline the Pocock case forced.
+
+## `claims#45` re-sourced — the ledger's own instruction, carried out
+
+The reported "no valid sources" was accurate but already known: the entry carried a
+2026-08-27 correction lowering it to `tentative` and stating *"the ledger currently has no
+evidence for it. Re-source or reword before it ships as a strong claim."*
+
+Three on-point sources were in the corpus the whole time, now anchored at high confidence:
+
+| source | quote |
+|---|---|
+| #681 Laurie Voss, Arize | "Best place to get uh eval data uh test data is from production." |
+| #673 Vincent Koc, OpenClaw | "We can self-curate suites from traces," |
+| #689 Lawrence Jones, incident.io | "production evals aren't like great." |
+
+Raised **tentative → moderate**, deliberately not strong: #689 is a counterweight as much as
+a support — incident.io built this mechanism and reports the suites becoming unmaintainable —
+and the survivorship-bias caveat is still unanswered. Ledger now resolves 243/243.
+
+The stale #167 Somal anchor is left in place with a note saying it is not evidence for this
+claim. Deleting another author's citation is an editorial call, not a mechanical one.
+
+## Still open
+
+The two mis-filed quotes (#138 Bhagwat under `claims#46`, #184 Colvin under `claims#9`) are
+unverified here. Both are the same shape as the residual recorded on 09-03: a real phrase,
+from a listed source, attached to a claim it does not support. Nothing in the current
+toolchain detects that class, which is why it keeps surfacing only when a human or a reviewer
+reads the entry.
