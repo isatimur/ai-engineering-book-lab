@@ -680,6 +680,7 @@
   - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the "from hype to habit" cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
     - **Anchor:** `mQ7_Zje7WKE` 00:08:08.400 → 00:08:11.919 · confidence: high
     - **Quote:** "80% of respondents say LLMs are working well at work,"
+    - **Newer edition (2026-09-04):** #137 is the **2025** edition of an annual survey. The same speaker's **2026** edition is in the corpus as #906 (`RGe6EjucbzI`, added 2026-07-27) and is cited nowhere in this ledger. The quoted 80% figure stands as a 2025 datapoint, but #137's next sentence — "less than 20% say the same about agents. Agents aren't everywhere yet, but they're coming" — is overtaken by #906: "95% say they're using agents, roughly double last year." Do not cite the agent-adoption half of #137 as current; prefer #906.
   - [[199-3YGRcgZJ3yc-from-hype-to-habit-how-we-re-building-an-ai-first-saas-company-while-still-shipping-the-ro|#199 — From Hype to Habit (AI-first SaaS)]] — case study of an AI-first company that still ships a roadmap; describes operating-model redesign in detail.
     - **Anchor:** `3YGRcgZJ3yc` 00:02:00.240 → 00:02:12.640 · confidence: high
     - **Quote:** "It's about evolving from AI features sprinkled into the product to rethinking how you plan, build, and deliver value all through an AI lens."
