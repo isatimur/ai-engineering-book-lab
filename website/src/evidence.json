@@ -127,12 +127,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         }
       ]
     },
@@ -391,13 +400,13 @@
           "quote": "improvement without measurement is limited and imprecise."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.000",
-          "end": "00:00:47.039",
-          "start_seconds": 44,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:18:48.000",
+          "end": "00:18:50.720",
+          "start_seconds": 1128,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "We still want to build reliable scalable applications and that is still hard"
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "comparing what the result is versus a golden data set"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -584,12 +593,12 @@
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:08:57.640",
+          "end": "00:08:58.840",
+          "start_seconds": 537,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "by forcing them to write it down"
         },
         {
           "video_id": "iOXM3zE-2dk",
@@ -627,12 +636,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         }
       ]
     },
@@ -817,12 +835,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "01:03:18.000",
+          "end": "01:03:22.720",
+          "start_seconds": 3798,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "we need like a better control panel where you can like see all the agents and manage them"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:03:51.280",
+          "end": "01:03:55.280",
+          "start_seconds": 3831,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "some kind of project view where you can see like an aggregated status update."
         }
       ]
     },
@@ -1538,13 +1565,13 @@
           "quote": "improvement without measurement is limited and imprecise."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.000",
-          "end": "00:00:47.039",
-          "start_seconds": 44,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:18:48.000",
+          "end": "00:18:50.720",
+          "start_seconds": 1128,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "We still want to build reliable scalable applications and that is still hard"
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "comparing what the result is versus a golden data set"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -1618,12 +1645,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         }
       ]
     },
@@ -1765,12 +1801,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "01:03:18.000",
+          "end": "01:03:22.720",
+          "start_seconds": 3798,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "we need like a better control panel where you can like see all the agents and manage them"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:03:51.280",
+          "end": "01:03:55.280",
+          "start_seconds": 3831,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "some kind of project view where you can see like an aggregated status update."
         }
       ]
     },
@@ -2004,15 +2049,6 @@
           "quote": "at Zapier we are empowering our support team to ship code."
         },
         {
-          "video_id": "xzJdSi2Tsqw",
-          "start": "00:01:46.880",
-          "end": "00:01:54.159",
-          "start_seconds": 106,
-          "confidence": "high",
-          "label": "#162 — James Lowe, i.AI",
-          "quote": "I'm going to make the case for the AI product manager. I'm going to argue that AI expertise is really important for this role."
-        },
-        {
           "video_id": "SbUxRluVRwk",
           "start": "00:09:39.200",
           "end": "00:09:43.760",
@@ -2022,13 +2058,13 @@
           "quote": "all these skills that you're prioritizing don't necessarily need to be one person. They can be multiple people."
         },
         {
-          "video_id": "Zqu0VaJw3vo",
-          "start": "00:00:30.480",
-          "end": "00:00:36.399",
-          "start_seconds": 30,
+          "video_id": "RmJ4rTLV_x4",
+          "start": "00:03:21.760",
+          "end": "00:03:25.360",
+          "start_seconds": 201,
           "confidence": "high",
-          "label": "#207 — Beth Glenfield, DevDay",
-          "quote": "I'm going to talk to you today about how I believe AI is breaking how we hire technically."
+          "label": "#69 — Lisa Orr, Zapier",
+          "quote": "engineering was set to review any merge requests coming from support"
         },
         {
           "video_id": "pmoDeA3RBZY",
@@ -2133,13 +2169,13 @@
           "quote": "None of our current tools give teams a shared space to discuss plans, gather the right context, and work with agents as a collective."
         },
         {
-          "video_id": "PthmdT92qNg",
-          "start": "00:17:22.160",
-          "end": "00:17:27.360",
-          "start_seconds": 1042,
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:39.680",
+          "start_seconds": 577,
           "confidence": "high",
-          "label": "#160 — Ben Stein, Teammates",
-          "quote": "if we believe that all of our products are for like for all time going to be probabistic, then like we probably have to figure out how this world works."
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work."
         },
         {
           "video_id": "rnDm57Py54A",
@@ -2582,12 +2618,12 @@
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:08:57.640",
+          "end": "00:08:58.840",
+          "start_seconds": 537,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "by forcing them to write it down"
         },
         {
           "video_id": "iOXM3zE-2dk",
@@ -2625,12 +2661,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         }
       ]
     },
@@ -2702,12 +2747,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "01:03:18.000",
+          "end": "01:03:22.720",
+          "start_seconds": 3798,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "we need like a better control panel where you can like see all the agents and manage them"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "01:03:51.280",
+          "end": "01:03:55.280",
+          "start_seconds": 3831,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "some kind of project view where you can see like an aggregated status update."
         }
       ]
     },
@@ -3199,13 +3253,13 @@
           "quote": "improvement without measurement is limited and imprecise."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.000",
-          "end": "00:00:47.039",
-          "start_seconds": 44,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:18:48.000",
+          "end": "00:18:50.720",
+          "start_seconds": 1128,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "We still want to build reliable scalable applications and that is still hard"
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "comparing what the result is versus a golden data set"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -3297,12 +3351,12 @@
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:08:57.640",
+          "end": "00:08:58.840",
+          "start_seconds": 537,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "by forcing them to write it down"
         },
         {
           "video_id": "iOXM3zE-2dk",
@@ -3340,12 +3394,21 @@
         },
         {
           "video_id": "rnDm57Py54A",
-          "start": "01:02:52.079",
-          "end": "01:02:57.200",
-          "start_seconds": 3772,
+          "start": "00:06:20.800",
+          "end": "00:06:23.360",
+          "start_seconds": 380,
           "confidence": "high",
           "label": "#629 — Eric Zakariasson, Cursor",
-          "quote": "maintaining a factory would require you to have an overview of the processes you want your coding agents to go through."
+          "quote": "you want to let the agents free but not too free."
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:20:30.000",
+          "end": "00:20:31.440",
+          "start_seconds": 1230,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "you probably shouldn't let them push to prod"
         }
       ]
     },
@@ -3758,13 +3821,13 @@
           "quote": "we support step-up OAuth."
         },
         {
-          "video_id": "w7IMuYsBNr8",
-          "start": "00:08:30.560",
-          "end": "00:08:34.560",
-          "start_seconds": 510,
+          "video_id": "BurJvbqFr4c",
+          "start": "00:22:55.960",
+          "end": "00:22:59.040",
+          "start_seconds": 1375,
           "confidence": "high",
-          "label": "#152 — Fouad Matin, OpenAI (Codex, Agent Robustness)",
-          "quote": "you can now turn on internet access but it comes with a set of configurable allow list."
+          "label": "#32 — Tun Shwe, Lenses",
+          "quote": "scoping permissions at the individual tool and resource level,"
         }
       ]
     },
@@ -4426,13 +4489,13 @@
           "quote": "improvement without measurement is limited and imprecise."
         },
         {
-          "video_id": "o_LRtAomJCs",
-          "start": "00:00:44.000",
-          "end": "00:00:47.039",
-          "start_seconds": 44,
+          "video_id": "A48uhxfxbsM",
+          "start": "00:18:48.000",
+          "end": "00:18:50.720",
+          "start_seconds": 1128,
           "confidence": "high",
-          "label": "#184 — Samuel Colvin, Pydantic",
-          "quote": "We still want to build reliable scalable applications and that is still hard"
+          "label": "#657 — Samuel Colvin, Pydantic",
+          "quote": "comparing what the result is versus a golden data set"
         },
         {
           "video_id": "_fQ7Z_Wfouk",
@@ -5345,12 +5408,12 @@
         },
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:08:57.640",
+          "end": "00:08:58.840",
+          "start_seconds": 537,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "by forcing them to write it down"
         },
         {
           "video_id": "iOXM3zE-2dk",
@@ -5582,15 +5645,6 @@
           "confidence": "high",
           "label": "#661 — Luke Harries, ElevenLabs",
           "quote": "wrapped it up into its own first class primitive,"
-        },
-        {
-          "video_id": "hwCmfThIiS4",
-          "start": "00:00:57.039",
-          "end": "00:01:09.280",
-          "start_seconds": 57,
-          "confidence": "high",
-          "label": "#85 — Suman Debnath, AWS",
-          "quote": "I'm going to share one of the latest research paper around retrieval which is a uh vision based retrieval and also uh I just thought to wrap this around with an agent."
         },
         {
           "video_id": "IA4lZjh9sTs",
