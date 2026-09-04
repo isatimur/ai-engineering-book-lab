@@ -133,6 +133,69 @@ without a text change was a replay. The dimension's trend line understated ledge
 today. A second bug fell out of running three members concurrently: second-precision run ids
 collided and members overwrote each other's output; fixed in `131fd8f`.
 
+## Second sweep (2026-09-04) — the four sections still at the floor
+
+After v10, four sections remained at zero grounded claims: Chapter 9's practical checklist and
+"roles blur but responsibility cannot", Chapter 10's practical checklist and "what remains human
+is not typing, it is responsibility". Two agents, same rules, Chapter 10 ledger-only. They proposed four entries; the second model
+family's review found that two of them — Chapter 9's "widening creation obligates a single
+owner" and Chapter 10's "accountability assigned before it ships" — shared their best anchor
+and were evidentially one claim, and that the Chapter 10 title asserted a *timing* no source
+states. Merged into one entry with the title narrowed to what four talks actually say. Three
+new entries in the end (#72–#74), 13 anchors across 8 talks, no amendments, no prose change:
+
+- #72 majority voting and model debate beat one expensive call (Chowdhery, Tang, Romero)
+- #73 a delegated system's output needs one named accountable human — when everybody is
+  responsible, nobody is (Werry, Lovejoy ×2, Zakariasson, Linkov; chapters 9 and 10). Timing,
+  Chapter 9's four ownership slots and Chapter 10's "fast test" are disclosed as synthesis.
+- #74 AI relocates engineering value toward those who design and govern delegated work
+  (Reock; the relocation step is disclosed as the author's inference from augment-not-replace
+  and Deming's system-not-worker)
+
+Gate: three rounds, two model families throughout. Round 1 (Codex, independent): the two
+ownership entries were one claim, and one title asserted a timing no source states — merged
+and narrowed. Round 2: the merge had dropped a disclosure the original carried, that
+"widening creation obligates an owner" is the author's linkage — restored in the caveat.
+Round 3: **PASS**, token in `~/Dev/ai-native-org/ledger/verdicts.md`. Two Claude gate
+instances and three Codex runs died on API limits or a corrupt Codex model cache along the
+way; each incomplete review was treated as an abort, never as a verdict.
+
+Measurement (`panel-3model-v11`, ledger-only change, so only evidence_density re-judged in every
+member — three times this sweep: after the four proposals, after the merge, after the retitle):
+zero nulls after single retries; 1,736 merged units, zero with fewer than two votes; spend for
+the sweep about $2.
+
+| dim | v10 | v11 | Δ |
+|---|---|---|---|
+| humanness | 86.0 | 86.0 | +0.0 |
+| voice | 87.7 | 87.7 | +0.0 |
+| usefulness | 60.5 | 60.5 | +0.0 |
+| evidence_density | 85.3 | 86.1 | +0.8 |
+| claim_defensibility | 93.4 | 93.2 | -0.2 |
+| redundancy | 87.5 | 87.5 | +0.0 |
+
+| Ch | ED v10 | ED v11 | Δ |
+|---|---|---|---|
+| 1 | 90.0 | 87.7 | -2.3 |
+| 2 | 85.8 | 85.8 | +0.0 |
+| 3 | 85.0 | 79.5 | -5.5 |
+| 4 | 90.0 | 83.3 | -6.7 |
+| 5 | 90.0 | 90.0 | +0.0 |
+| 6 | 88.2 | 84.3 | -3.9 |
+| 7 | 87.7 | 90.0 | +2.3 |
+| 8 | 87.7 | 80.5 | -7.2 |
+| 9 | 73.2 | 90.0 | +16.8 |
+| 10 | 75.5 | 90.0 | +14.5 |
+
+Sections at the floor: 4 → 4 (a-small-software-factory-vignette, application-layer-evals-are-about-users-, replay-snapshot-and-the-shape-of-continu, voice-makes-the-human-control-plane-imme). All four targets left it.
+The merge taught one more thing about the instrument: the merged entry, evidentially correct,
+first *lost* Chapter 9's "roles blur" section (10, all three judges, spread 0) because its title
+no longer used that section's words; retitled to carry both sections' wording, the same
+evidence grounds it again. Title wording is the matching key. Any section that fell in did so
+on identical text with a superset ledger — the extraction variance the calibration note
+measured. Read evidence_density at chapter and book level; at section level it changes band on
+roughly three sections per run without cause.
+
 ## What this does not establish
 
 - That every unsupported statement in those sections is now grounded. The producers listed

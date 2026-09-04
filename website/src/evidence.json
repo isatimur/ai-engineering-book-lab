@@ -2287,6 +2287,92 @@
           "quote": "we using multi-agent debate to get reliable State evaluation instead of using single uh"
         }
       ]
+    },
+    {
+      "claim_id": "claims#72",
+      "text": "Majority voting and model debate beat one expensive call — redundant, diverse generation buys reliability instead of a bigger model",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "QluDzKVfp6A",
+          "start": "00:06:28.319",
+          "end": "00:06:32.160",
+          "start_seconds": 388,
+          "confidence": "high",
+          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
+          "quote": "generate multiple responses and then do majority voting."
+        },
+        {
+          "video_id": "OMGPvW8TBHc",
+          "start": "00:10:16.720",
+          "end": "00:10:19.920",
+          "start_seconds": 616,
+          "confidence": "high",
+          "label": "#116 — Leonard Tang, Haize Labs",
+          "quote": "weaker LLMs debate each other about what the stronger model is saying"
+        },
+        {
+          "video_id": "zfvEMNmVlNY",
+          "start": "00:12:01.680",
+          "end": "00:12:04.399",
+          "start_seconds": 721,
+          "confidence": "high",
+          "label": "#093 — Alberto Romero, Jointly",
+          "quote": "we leverage a diverse range of models"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#73",
+      "text": "Roles blur but responsibility cannot: widening who can create obligates one named accountable human for a delegated system's output — when everybody is responsible, nobody is",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "qdAkxLoYNI8",
+          "start": "00:07:49.520",
+          "end": "00:07:52.720",
+          "start_seconds": 469,
+          "confidence": "high",
+          "label": "#1074 — Peter Werry, Unblocked",
+          "quote": "accountability stops with us. When you hit merge on a PR,"
+        },
+        {
+          "video_id": "kfSDc2eVLo4",
+          "start": "00:19:49.360",
+          "end": "00:19:52.720",
+          "start_seconds": 1189,
+          "confidence": "high",
+          "label": "#686 — Chris Lovejoy, Notius Labs",
+          "quote": "a single individual who's ultimately accountable for the quality of the AI performance"
+        },
+        {
+          "video_id": "kfSDc2eVLo4",
+          "start": "00:20:00.240",
+          "end": "00:20:01.960",
+          "start_seconds": 1200,
+          "confidence": "high",
+          "label": "#686 — Chris Lovejoy, Notius Labs",
+          "quote": "everybody's kind of responsible so nobody's truly responsible"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:58:41.440",
+          "end": "00:58:44.240",
+          "start_seconds": 3521,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "the humans are still accountable for the things that's being shipped."
+        },
+        {
+          "video_id": "SbUxRluVRwk",
+          "start": "00:14:38.959",
+          "end": "00:14:40.800",
+          "start_seconds": 878,
+          "confidence": "high",
+          "label": "#188 — Denys Linkov, Wisedocs",
+          "quote": "humans should be accountable for the systems that we build."
+        }
+      ]
     }
   ],
   "10": [
@@ -2964,6 +3050,83 @@
           "confidence": "high",
           "label": "#558 — Alex Volkov",
           "quote": "it's really hard to keep up with"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#73",
+      "text": "Roles blur but responsibility cannot: widening who can create obligates one named accountable human for a delegated system's output — when everybody is responsible, nobody is",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "qdAkxLoYNI8",
+          "start": "00:07:49.520",
+          "end": "00:07:52.720",
+          "start_seconds": 469,
+          "confidence": "high",
+          "label": "#1074 — Peter Werry, Unblocked",
+          "quote": "accountability stops with us. When you hit merge on a PR,"
+        },
+        {
+          "video_id": "kfSDc2eVLo4",
+          "start": "00:19:49.360",
+          "end": "00:19:52.720",
+          "start_seconds": 1189,
+          "confidence": "high",
+          "label": "#686 — Chris Lovejoy, Notius Labs",
+          "quote": "a single individual who's ultimately accountable for the quality of the AI performance"
+        },
+        {
+          "video_id": "kfSDc2eVLo4",
+          "start": "00:20:00.240",
+          "end": "00:20:01.960",
+          "start_seconds": 1200,
+          "confidence": "high",
+          "label": "#686 — Chris Lovejoy, Notius Labs",
+          "quote": "everybody's kind of responsible so nobody's truly responsible"
+        },
+        {
+          "video_id": "rnDm57Py54A",
+          "start": "00:58:41.440",
+          "end": "00:58:44.240",
+          "start_seconds": 3521,
+          "confidence": "high",
+          "label": "#629 — Eric Zakariasson, Cursor",
+          "quote": "the humans are still accountable for the things that's being shipped."
+        },
+        {
+          "video_id": "SbUxRluVRwk",
+          "start": "00:14:38.959",
+          "end": "00:14:40.800",
+          "start_seconds": 878,
+          "confidence": "high",
+          "label": "#188 — Denys Linkov, Wisedocs",
+          "quote": "humans should be accountable for the systems that we build."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#74",
+      "text": "AI does not abolish the need for engineers; it relocates value toward those who design and govern systems of delegated work.",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "PmZDupFP3UM",
+          "start": "00:06:59.199",
+          "end": "00:07:00.560",
+          "start_seconds": 419,
+          "confidence": "high",
+          "label": "#62 — Justin Reock, DX (acq. Atlassian)",
+          "quote": "we are augmenting. We're not replacing."
+        },
+        {
+          "video_id": "PmZDupFP3UM",
+          "start": "00:09:04.240",
+          "end": "00:09:06.160",
+          "start_seconds": 544,
+          "confidence": "high",
+          "label": "#62 — Justin Reock, DX (acq. Atlassian)",
+          "quote": "determined by the system and not the worker."
         }
       ]
     }

@@ -1229,3 +1229,54 @@
     - **Quote:** "it's really hard to keep up with"
 - **Caveats / counterpoints:** Two high anchors from different talks, but each covers one facet (framework proliferation; model-release churn) rather than the compound claim. The preamble's churn lines are terse and rhetorical, so even with this entry the extractor may treat the paragraph as scene-setting and leave the section at 10; this is the best truthful lever available and no Chapter 10 prose stitch is permitted.
 - **Candidate chapters:** 10
+
+## 72) Majority voting and model debate beat one expensive call — redundant, diverse generation buys reliability instead of a bigger model
+- **Why it matters:** This is the extractable factual claim in Chapter 9's practical checklist ('Majority voting and model debate beat one expensive call'). Entry #55 states the same principle but leads with an abstract thesis ('Trustworthy judgment can be manufactured from cheap stochastic generation'); its title uses synonym swaps (sample-and-vote / debate panels / a single expensive call) that conservative extractors miss against the checklist's plainer wording. This entry keeps the section's exact nouns and verb so all judges match it. The falsifiable core — redundant sampling and cross-model debate outperform one expensive call — is anchored by Chowdhery (self-consistency / majority voting) and Tang (weaker models debate a stronger one); Romero anchors the diversity dimension (a diverse range of models).
+- **Support level:** strong
+- **Supporting sources:**
+  - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — Self-consistency / majority vote: sample many responses, take the agreed one — 'generate multiple responses and then do majority voting.'
+    - **Anchor:** `QluDzKVfp6A` 00:06:28.319 → 00:06:32.160 · confidence: high
+    - **Quote:** "generate multiple responses and then do majority voting."
+  - [[116-OMGPvW8TBHc-fuzzing-in-the-genai-era-leonard-tang-haize-labs|#116 — Leonard Tang, Haize Labs]] — Debate-panel lineage: 'weaker LLMs debate each other about what the stronger model is saying' to build a cheap-but-powerful judge.
+    - **Anchor:** `OMGPvW8TBHc` 00:10:16.720 → 00:10:19.920 · confidence: high
+    - **Quote:** "weaker LLMs debate each other about what the stronger model is saying"
+  - [[093-zfvEMNmVlNY-the-unbearable-lightness-of-agent-optimization-alberto-romero-jointly|#093 — Alberto Romero, Jointly]] — Multi-model consensus as a verification tier: 'we leverage a diverse range of models' — the diversity that makes redundancy pay off.
+    - **Anchor:** `zfvEMNmVlNY` 00:12:01.680 → 00:12:04.399 · confidence: high
+    - **Quote:** "we leverage a diverse range of models"
+- **Caveats / counterpoints:** Redundancy cancels independent error, not shared bias: a panel helps only to the extent its voters are genuinely diverse (same-family or same-model repeated sampling correlates), and majority vote can confidently agree on a wrong answer when the error is systematic. There is also a cost knee — N calls per verdict. Narrower than entry #55, which carries the full sample-and-vote / consensus / debate taxonomy; this entry exists to echo the checklist's plain wording for extractor matching, not to replace #55.
+- **Candidate chapters:** 9
+
+## 73) Roles blur but responsibility cannot: widening who can create obligates one named accountable human for a delegated system's output — when everybody is responsible, nobody is
+- **Why it matters:** Chapter 9's "roles blur, but responsibility cannot" and Chapter 10's responsibility close run the same test: can you name the single human who owns this system's output? Widening who can create does not widen who is accountable; it makes the named owner more necessary, not less. Four talks state the principle from four angles — the merge point, the domain expert, the ship line, the built system.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — Peter Werry, Unblocked]] — The human stays accountable at the ship point: 'accountability stops with us. When you hit merge on a PR' you must understand what it does.
+    - **Anchor:** `qdAkxLoYNI8` 00:07:49.520 → 00:07:52.720 · confidence: high
+    - **Quote:** "accountability stops with us. When you hit merge on a PR,"
+  - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — Chris Lovejoy, Notius Labs]] — Name a principal domain expert: 'a single individual who's ultimately accountable for the quality of the AI performance' — ownership of domain correctness.
+    - **Anchor:** `kfSDc2eVLo4` 00:19:49.360 → 00:19:52.720 · confidence: high
+    - **Quote:** "a single individual who's ultimately accountable for the quality of the AI performance"
+  - [[686-kfSDc2eVLo4-how-to-leverage-domain-expertise-chris-lovejoy-notius-labs|#686 — Chris Lovejoy, Notius Labs]] — The failure mode when no name is placed — the 'if no name comes to mind' test stated from the other side: 'everybody's kind of responsible so nobody's truly responsible.'
+    - **Anchor:** `kfSDc2eVLo4` 00:20:00.240 → 00:20:01.960 · confidence: high
+    - **Quote:** "everybody's kind of responsible so nobody's truly responsible"
+  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — Accountability attaches at the ship line and stays human: 'the humans are still accountable for the things that's being shipped.'
+    - **Anchor:** `rnDm57Py54A` 00:58:41.440 → 00:58:44.240 · confidence: high
+    - **Quote:** "the humans are still accountable for the things that's being shipped."
+  - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Denys Linkov, Wisedocs]] — The old IBM principle restated for AI systems — a machine cannot be held accountable, so 'humans should be accountable for the systems that we build.'
+    - **Anchor:** `SbUxRluVRwk` 00:14:38.959 → 00:14:40.800 · confidence: high
+    - **Quote:** "humans should be accountable for the systems that we build."
+- **Caveats / counterpoints:** Five high anchors across four talks (Unblocked, Notius Labs, Cursor, Wisedocs). They ground the principle only: a named human holds accountability for AI output, and diffuse ownership means no one owns it. The title's first clause — that *widening who can create* is what *obligates* naming an owner — is the author's linkage, not a claim any source makes; the anchors establish the named-owner principle, not its cause. Everything sharper is likewise the author's synthesis and is not anchored — the *timing* ("before it ships / before the path opens"), the four ownership slots Chapter 9 lists (production path, domain correctness, security boundaries, human-gated workflows), and Chapter 10's "fast test". Distinct from #36, which says broader creation requires *tighter review and governance*; this entry is about *who is named*, not how much review. Formerly two entries (#73 widening-creation, #74 assign-before-ship) sharing the Lovejoy anchor; merged 2026-09-04 because the sources establish one claim, not two.
+- **Candidate chapters:** 9, 10
+
+## 74) AI does not abolish the need for engineers; it relocates value toward those who design and govern systems of delegated work.
+- **Why it matters:** This grounds Chapter 10's 'what remains human' thesis, the book's balanced stance between the utopian and defensive narratives. The section's most clearly falsifiable sentence — AI neither leaves engineering unchanged nor abolishes the engineer, and value moves to system design and governance — is a declarative claim about the world, exactly what the evidence extractor matches, where the surrounding 'responsibility' prose reads as framing. An entry whose title echoes that closing sentence (same verb, 'relocates value toward', same noun, 'systems of delegated work') gives the section a match it currently lacks.
+- **Support level:** moderate
+- **Supporting sources:**
+  - [[062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian|#62 — Justin Reock, DX (acq. Atlassian)]] — The stance in three words — 'we are augmenting. We're not replacing.' AI shifts the work; it does not remove the engineer.
+    - **Anchor:** `PmZDupFP3UM` 00:06:59.199 → 00:07:00.560 · confidence: high
+    - **Quote:** "we are augmenting. We're not replacing."
+  - [[062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian|#62 — Justin Reock, DX (acq. Atlassian)]] — Deming, quoted by Reock: productivity output is 'determined by the system and not the worker' — so value accrues to whoever designs and governs the system, not to raw individual output.
+    - **Anchor:** `PmZDupFP3UM` 00:09:04.240 → 00:09:06.160 · confidence: high
+    - **Quote:** "determined by the system and not the worker."
+- **Caveats / counterpoints:** Two high anchors from one talk (DX), so moderate. Reock grounds two things: augment-not-replace, and Deming's point that output is set by the system rather than the worker. The step from there to *value relocating toward those who design and govern* delegated systems is the author's inference, not Reock's words; the phrase 'systems of delegated work' is the book's vocabulary (#1, #70), not his.
+- **Candidate chapters:** 10

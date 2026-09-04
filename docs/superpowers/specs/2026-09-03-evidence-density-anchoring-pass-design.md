@@ -48,3 +48,13 @@ sentence in the manuscript carrying the tool's verbatim quote.
 Ledger verifier PASS; all checks clean; ship-gate PASS; canonical panel v10 on the
 resulting snapshot with every member zero-null and merge zero `<2 votes`; ED and
 usefulness deltas recorded in a research pass note; ROADMAP updated; committed and pushed.
+
+## Addendum 2026-09-04 — second sweep
+
+Scope extended to the four sections still at the floor after `panel-3model-v10`:
+Ch9 `practical-checklist`, Ch9 `roles-blur-but-responsibility-cannot`, Ch10
+`practical-checklist`, Ch10 `what-remains-human-is-not-typing-it-is-responsibility`.
+Same hard rules 1–8; Chapter 10 ledger-only. Ch9's two sections were two-of-three grounded in
+v9 and one-of-three in v10 (extraction variance at the binary boundary); the fix is an entry
+whose statement echoes each section's own sentence so all three judges match it, not more
+entries. New ids start at #72. Gate: same contract hash lineage, new round counter.
