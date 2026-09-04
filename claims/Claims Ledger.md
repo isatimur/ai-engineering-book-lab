@@ -613,9 +613,6 @@
   - [[661-DCZZ3AJKzuc-give-your-chat-agent-a-voice-luke-harries-elevenlabs|#661 — Luke Harries, ElevenLabs]] — the voice engine as a first-class primitive with its own state, so the agent's slow operations don't translate into silent gaps.
     - **Anchor:** `DCZZ3AJKzuc` 00:02:56.200 → 00:02:58.240 · confidence: high
     - **Quote:** "wrapped it up into its own first class primitive,"
-  - [[085-hwCmfThIiS4-voicevision-rag-integrating-visual-document-intelligence-with-voice-response-suman-debnath|#85 — Suman Debnath, AWS]] — VoiceVision RAG maintains the conversational thread while a vision model runs in the background; the user only experiences a continuous exchange.
-    - **Anchor:** `hwCmfThIiS4` 00:00:57.039 → 00:01:09.280 · confidence: high
-    - **Quote:** "I'm going to share one of the latest research paper around retrieval which is a uh vision based retrieval and also uh I just thought to wrap this around with an agent."
   - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Pipecat Cloud's architecture is organized around the latency budget rather than per-component optimization; orchestration handles lateness as the design assumption.
     - **Anchor:** `IA4lZjh9sTs` 00:11:20.160 → 00:11:28.000 · confidence: high
     - **Quote:** "real time is different from non-real time. And by non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
@@ -625,6 +622,15 @@
 - **Evidence note:** The Debnath anchor (`hwCmfThIiS4`, #85) has a known VTT artifact — the transcript region covering his specific latency-masking description is corrupted, so the captured quote is only his introductory framing and carries little evidentiary weight. The claim's load is carried by the Zeghidour (#662), Harries (#661), and Kramer (#142) anchors; treat Debnath as supporting context, not primary evidence.
 - **Candidate chapters:** 8
 - **Reusable phrasing:** Latency must be masked, not just minimized. Fillers are conversational scaffolding, not animation.
+
+> **Mis-filed source removed (2026-09-04):** cited #85 (Debnath, *VoiceVision RAG*)
+> with the agenda line "I'm going to share one of the latest research paper around
+> retrieval which is a uh vision based retrieval". Across 13,223 words that talk
+> has **zero** occurrences of latenc*, mask, filler, millisecond or real time — the
+> only link to this claim is that both concern voice. Removed rather than
+> re-anchored: there is no on-point material to move to. Support level unchanged;
+> #662, #661 and #142 carry the entry, and #142 supplies the latency budget
+> directly.
 
 ## 30) Identity is a first-class engineering object for agentic systems
 - **Why it matters:** The most common engineering shortcut — giving an agent a standing credential — silently dissolves the delegation the system is supposed to be making. Naming identity as a first-class object (with bounded scope, bounded lifetime, and an audit footprint) is the move that lets every other security primitive — least privilege, sandboxing, audit — actually attach to something. Without it, the others have no principal to enforce against.
@@ -745,9 +751,6 @@
   - [[069-RmJ4rTLV_x4-your-support-team-should-ship-code-lisa-orr-zapier|#69 — Lisa Orr, Zapier]] — the radical-version provocation: "Your support team should ship code" — and the implicit governance work that has to come with it.
     - **Anchor:** `RmJ4rTLV_x4` 00:00:23.039 → 00:00:26.640 · confidence: high
     - **Quote:** "at Zapier we are empowering our support team to ship code."
-  - [[162-xzJdSi2Tsqw-why-your-product-needs-an-ai-product-manager-and-why-it-should-be-you-james-lowe-i-ai|#162 — James Lowe, i.AI]] — the judgment-layer role: someone has to own which of the many possible artifacts is worth shipping and shape the constraints under which non-specialists create safely.
-    - **Anchor:** `xzJdSi2Tsqw` 00:01:46.880 → 00:01:54.159 · confidence: high
-    - **Quote:** "I'm going to make the case for the AI product manager. I'm going to argue that AI expertise is really important for this role."
   - [[188-SbUxRluVRwk-structuring-a-modern-ai-team-denys-linkov-wisedocs|#188 — Denys Linkov, Wisedocs]] — the team that ships dependable AI mixes capabilities that used to live in separate departments; the unit of work crosses old boundaries.
     - **Anchor:** `SbUxRluVRwk` 00:09:39.200 → 00:09:43.760 · confidence: high
     - **Quote:** "all these skills that you're prioritizing don't necessarily need to be one person. They can be multiple people."
@@ -770,6 +773,14 @@
 > gates, approval paths or governing what non-specialists produce, and nothing on
 > broadening who can create either. Replaced with a second anchor on #69 (Orr),
 > already source 1 here, which carries the governance half the entry was missing.
+
+> **Mis-filed source removed (2026-09-04):** cited #162 (Lowe, *Why your product
+> needs an AI product manager*) with "I'm going to make the case for the AI product
+> manager…" — an agenda line about role definition. The talk has **zero**
+> occurrences of review, governance, guardrail, approval, ship code or quality.
+> This is the second removal from this entry today; both were agenda lines from
+> talks on adjacent-but-different subjects. Support level unchanged — #69 (two
+> anchors, both halves of the claim), #188 and #743 carry it.
 
 ## 37) Activity-based metrics misread motion as progress in AI-augmented work
 - **Why it matters:** When generation is cheap, output volume rises faster than value. Dashboards that count artifacts (commits, PRs, tickets touched) light up green while the actual constraint — whether the organization can review, integrate, and trust what was produced — goes invisible until it breaks. The wrong metric applied to cheap execution actively destroys value because it directs management attention toward the abundant resource and away from the scarce one.
