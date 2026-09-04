@@ -863,11 +863,20 @@
 
 ## 45) The best evals encode judgment mined from operational history, not invented in a clean room
 - **Why it matters:** Writing evals from first principles produces tests that seem rigorous but miss the actual failure modes that appear in production. Operational history — support escalations, regression incidents, painful edge cases — already contains the judgment; the work is extraction, not invention. This makes evals a form of institutional memory, not just a quality gate.
-- **Support level:** tentative
+- **Support level:** moderate
 - **Supporting sources:**
   - [[167-1izYWsokr9s-scaling-ai-agents-without-breaking-reliability-preeti-somal-temporal|#167 — Preeti Somal, Temporal]] — cited for durable execution and human approvals. **This source does not discuss evals**: its transcript contains zero occurrences of "eval" or "observability" (checked 2026-08-27). It does not support this claim and is retained only until a real source is found.
     - **Anchor:** `1izYWsokr9s` 00:01:55.920 → 00:02:01.920 · confidence: high
     - **Quote:** "handle state potentially over long periods of time. There needs to be human interaction for approvals"
+  - [[681-Xfl50508LZM-ship-real-agents-hands-on-evals-for-agentic-applications-laurie-voss-arize|#681 — Laurie Voss, Arize]] — names production as the source of eval data outright, which is the claim's load-bearing half.
+    - **Anchor:** `Xfl50508LZM` 00:42:39.200 → 00:42:44.240 · confidence: high
+    - **Quote:** "Best place to get uh eval data uh test data is from production."
+  - [[673-4VhbYlfC7Gs-dark-factory-how-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc|#673 — Vincent Koc, OpenClaw]] — the mining is itself automatable: suites curated from traces rather than authored.
+    - **Anchor:** `4VhbYlfC7Gs` 00:10:41.480 → 00:10:44.240 · confidence: high
+    - **Quote:** "We can self-curate suites from traces,"
+  - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — built exactly this and reports the operational cost, so it qualifies the claim rather than only supporting it.
+    - **Anchor:** `L2r6vLlLgs8` 00:06:18.040 → 00:06:20.200 · confidence: high
+    - **Quote:** "production evals aren't like great."
 - **Caveats / counterpoints:** Operational history has survivorship bias — it records failures that were noticed, not failures that went undetected. A pure pull-from-production strategy misses the unknown unknowns that synthetic evals can probe.
 - **Candidate chapters:** 4
 
@@ -890,6 +899,15 @@
 > manuscript, so no reader-facing content was affected. Removed rather than
 > re-anchored, since no source could be located to verify it against.
 - **Reusable phrasing:** The escalation logs, incident tickets, and bug-fix commits you already have are an unmined eval set; the work of authoring it has mostly been done for you by the failures themselves.
+
+> **Re-sourced (2026-09-04):** the 08-27 correction asked for this. Three on-point
+> sources were found in the corpus and anchored (#681 Arize, #673 OpenClaw, #689
+> incident.io), so the claim no longer rests on a talk that never mentions evals.
+> Support level raised tentative → **moderate**, not strong: #689 is a
+> counterweight as much as a support, and the survivorship-bias caveat still
+> stands unanswered. The #167 Somal anchor is left in place but is not evidence
+> for this claim — it is retained only because Chapter 4 cites it nearby; it
+> should be removed on the next editorial pass.
 
 ## 46) Once an AI system can act autonomously, bounding its authority becomes the price of deployment
 - **Why it matters:** A system that only answers questions can be vague about its own power because the human retains final authority. A system that calls tools, modifies records, and continues working without supervision cannot be vague about power — the boundary between what it may and may not do has to be explicit before it acts, not discovered afterward. This is the moment where identity, permissions, and sandboxing become engineering problems, not policy aspirations.
