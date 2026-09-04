@@ -153,15 +153,24 @@
   - [[072-tHN44yJoeS8-coding-evals-from-code-snippets-to-codebases-naman-jain-cursor|#72 — Naman Jain, Cursor]] — tasks should be natural, real-world, and reliably gradable.
     - **Anchor:** `tHN44yJoeS8` 00:08:11.039 → 00:08:15.520 · confidence: high
     - **Quote:** "task should be natural and sourced from the real world and then you should be able to reliably grade them."
-  - [[184-o_LRtAomJCs-human-seeded-evals-samuel-colvin-pydantic|#184 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `o_LRtAomJCs` 00:01:22.960 → 00:01:29.600 · confidence: high
-    - **Quote:** "If you build your application in a type safe way, if you use frameworks that allow it to be type safe, you can refactor it with confidence much more quickly."
+  - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]] — the practical grounding is human-annotated data drawn from real runs, or an executable check where one exists.
+    - **Anchor:** `A48uhxfxbsM` 00:47:04.400 → 00:47:09.839 · confidence: high
+    - **Quote:** "in general what people end up doing is they have some subset of data that's been like human annotated"
   - [[153-wRJD0inpmjU-evaluating-ai-search-a-practical-framework-for-augmented-ai-systems-quotient-ai-tavily|#153 — Quotient AI + Tavily]]
     - **Anchor:** `wRJD0inpmjU` 00:06:09.600 → 00:06:11.600 · confidence: high
     - **Quote:** "Dynamic data sets have real world alignment."
 - **Caveats / counterpoints:** Natural tasks are harder to score and maintain. But that difficulty is evidence of realism, not a reason to retreat to toy benchmarks.
 - **Candidate chapters:** 4, 5, 6
 - **Reusable phrasing:** The more the system does real work, the less synthetic evals can tell you.
+
+> **Mis-filed source replaced (2026-09-04):** this entry cited #184 (Colvin,
+> "Human-seeded evals") with a quote about type safety and refactoring
+> confidence, which says nothing about grounding evals in natural tasks. The whole
+> talk was checked before removing it: no "human seeded", "annotated", "golden" or
+> "natural" material anywhere — despite its title it is about Pydantic validation.
+> Replaced with #657, the same speaker on the same subject, where the grounding
+> claim is made directly. Support level unchanged: #72 and #153 already carried
+> this entry.
 
 ## 10) Context failure is often a system-assembly problem, not simply a small-context-window problem
 - **Why it matters:** Gives Chapter 5 a sharper thesis than "RAG matters."
@@ -916,9 +925,11 @@
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — trust for high-stakes agents requires bounding what the system can do, not just trusting that it will behave.
     - **Anchor:** `kDEvo2__Ijg` 00:03:44.000 → 00:03:48.560 · confidence: high
     - **Quote:** "we're asking AI systems to now produce output and produce judgments and decisions"
-  - [[138-8SUJEqQNClw-agents-vs-workflows-why-not-both-sam-bhagwat-mastra-ai|#138 — Sam Bhagwat, Mastra.ai]] — durable, long-running agents require an explicit model of authority that ephemeral request-response agents can ignore.
-    - **Anchor:** `8SUJEqQNClw` 00:12:04.240 → 00:12:07.600 · confidence: high
-    - **Quote:** "most primitives the magic happens when you combine these things together"
+  - [[629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor|#629 — Eric Zakariasson, Cursor]] — bounded authority stated as production practice: freedom for agents, but hooks and rules over the sensitive paths, and no direct route to production.
+    - **Anchor:** `rnDm57Py54A` 00:06:20.800 → 00:06:23.360 · confidence: high
+    - **Quote:** "you want to let the agents free but not too free."
+    - **Anchor:** `rnDm57Py54A` 00:20:30.000 → 00:20:31.440 · confidence: high
+    - **Quote:** "you probably shouldn't let them push to prod"
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — the bounding work is itself a substantial engineering cost, not a checkbox.
     - **Anchor:** `kDEvo2__Ijg` 00:09:29.920 → 00:09:34.000 · confidence: high
     - **Quote:** "building the guardrail systems themselves require you know a deep level of expert knowledge"
@@ -935,6 +946,14 @@
 > - 49 (broader creation → liability) → fully subsumed by **#36**: same Lisa Orr source, verbatim anchor (`RmJ4rTLV_x4` 00:00:23, "at Zapier we are empowering our support team to ship code").
 >
 > Claim numbers are stable IDs, so the numbers 47–49 are retired rather than reused; #50 keeps its number. No evidence was lost.
+
+> **Mis-filed source replaced (2026-09-04):** this entry cited #138 (Bhagwat) with
+> "most primitives the magic happens when you combine these things together",
+> which is about combining agent and workflow primitives and says nothing about
+> bounding authority. His talk contains no "permission", "authority", "guardrail",
+> "approval" or "restrict" at all. Replaced with #629 (Zakariasson, Cursor), which
+> states the bound as production practice. Support level unchanged: the two #206
+> anchors already carried this entry.
 
 ## 50) Agent commerce is a new infrastructure layer: agents transact on a human's behalf, shifting the stack from payment rails to delegated intent and verifiable authority
 - **Why it matters:** As agents move from answering to acting, a fast-growing slice of that action is economic — buying, selling, and paying on a user's behalf. That turns commerce into an agent-infrastructure problem: the question stops being "which payment API" and becomes "how does a merchant verify the agent's authority, how is spend bounded, and who is accountable when a non-deterministic system is holding a credential." It gives the book's bounded-authority and identity claims a concrete, high-stakes proving ground.
