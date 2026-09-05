@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 136
+- Total tagged videos: 139
 
 ## Cross-video synthesis
 
-- This theme appears across 136 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (76), Agent Architecture (68), Evals & Reliability (13).
+- This theme appears across 139 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (76), Agent Architecture (68), Org Design & Leadership (13).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -148,6 +148,9 @@
 - [[1049-7GMKdpLsxwU-the-missing-layer-design-taste-in-ai-agents-hassan-el-mghari-together-ai|#1049 — The Missing Layer: Design Taste in AI Agents — Hassan El Mghari, Together AI]]
 - [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061 — Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital]]
 - [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
+- [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
+- [[1084-M05vON8i0aI-ai-native-organisations-run-on-skills-how-to-structure-and-scale-them-imad-touil-quantumbl|#1084 — AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack]]
+- [[1102-QrMcNe2jjt8-the-end-of-the-static-screen-architecting-intent-driven-ux-gus-iwanaga-commercetools|#1102 — The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools]]
 
 ## Notes
 
