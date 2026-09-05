@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 455
+- Total tagged videos: 473
 
 ## Cross-video synthesis
 
-- This theme appears across 455 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (407), Evals & Reliability (351), MCP & Tooling (68).
+- This theme appears across 473 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (409), Evals & Reliability (351), MCP & Tooling (68).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -467,6 +467,24 @@
 - [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
 - [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
 - [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
+- [[1076-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1076 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]
+- [[1081-5Bn0xro2ol8-how-to-get-your-org-to-adopt-coding-agents-without-shipping-garbage-eyal-blum-figma|#1081 — How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma]]
+- [[1086-sM1iYgz93HI-the-half-life-of-agent-infrastructure-ben-kus-box|#1086 — The Half Life of Agent Infrastructure — Ben Kus, Box]]
+- [[1088-hD9-V56FNRI-ai-agents-are-just-distributed-systems-now-salman-munaf-tiktok|#1088 — AI Agents Are Just Distributed Systems Now — Salman Munaf, TikTok]]
+- [[1089-32nrHU6zHU8-agents-are-where-microservices-were-in-2015-roberto-milev-uday-kanagala-navan|#1089 — Agents Are Where Microservices Were in 2015 — Roberto Milev & Uday Kanagala, Navan]]
+- [[1090-jebp4V0vh30-agentic-sites-building-hyper-personalized-websites-carlos-sanchez-adobe|#1090 — Agentic Sites: Building Hyper Personalized Websites — Carlos Sanchez, Adobe]]
+- [[1091-dQ-_i1tZiws-tribal-dungeons-of-global-shipping-ai-agents-at-global-scale-dmitry-buykin-maersk|#1091 — Tribal Dungeons of Global Shipping: AI Agents at Global Scale — Dmitry Buykin, Maersk]]
+- [[1095-A-zeQiYkmXk-teaching-agents-to-pay-anna-spysz-stripe|#1095 — Teaching agents to pay — Anna Spysz, Stripe]]
+- [[1096-AhQpRalYlyg-multimodal-collaborative-agents-for-next-gen-commerce-nidhi-kaushik-vyas-google-deepmind|#1096 — Multimodal Collaborative Agents for Next-Gen Commerce — Nidhi Kaushik Vyas, Google DeepMind]]
+- [[1097-xKzU_3riL6s-why-your-ai-agent-needs-a-wallet-usdc-and-nanopayments-harshal-bhangale-circle|#1097 — Why Your AI Agent Needs a Wallet: USDC and Nanopayments — Harshal Bhangale, Circle]]
+- [[1098-qTZirYu9pr0-when-ai-agents-pay-and-sellers-monetize-building-x402-apps-on-aws-anil-nadiminti-aws|#1098 — When AI Agents Pay and Sellers Monetize: Building x402 Apps on AWS — Anil Nadiminti, AWS]]
+- [[1099-vGn6N4-bxBY-your-agent-just-authorized-what-jay-mok-ben-coumes-paypal|#1099 — Your Agent Just Authorized What?! — Jay Mok & Ben Coumes, Paypal]]
+- [[1101-ZyGMqdIpPoE-agent-spending-without-controls-rodrigo-coelho-pranav-maheshwari-edge-node|#1101 — Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node]]
+- [[1103-tE2z8-hqoLY-beyond-the-lethal-trifecta-agentic-commerce-on-the-open-internet-david-levine-kiduna-club|#1103 — Beyond the Lethal Trifecta: Agentic Commerce on the Open Internet — David Levine, Kiduna Club]]
+- [[1105-wCIYViPd4SU-tethered-our-agents-are-us-shu-fang-two-sigma|#1105 — Tethered: Our Agents Are Us — Shu Fang, Two Sigma]]
+- [[1106-REascnFlq_8-agents-next-frontier-agent-to-agent-and-network-effects-jean-denis-greze-town|#1106 — Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town]]
+- [[1108-xxfMT-bPEmU-from-coding-to-knowledge-work-agents-karan-vaidya-composio|#1108 — From coding to Knowledge work agents — Karan Vaidya, Composio]]
+- [[1109-5Cxe5dv2Xlw-why-ai-agents-need-million-token-context-thomas-wolf-olive-song-minimax|#1109 — Why AI Agents Need Million-Token Context — Thomas Wolf & Olive Song, MiniMax]]
 
 ## Notes
 

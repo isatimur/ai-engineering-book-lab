@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 243
+- Total tagged videos: 251
 
 ## Cross-video synthesis
 
-- This theme appears across 243 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (40), RAG & Retrieval (38), Models & Inference (19).
+- This theme appears across 251 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (41), RAG & Retrieval (38), Evals & Reliability (19).
 - Representative talks: #2 The End of Apps — Kitze, Sizzy.co; #3 Agents need more than a chat - Jacob Lauritzen, CTO Legora; #6 Taste & Craft: A Conversation with Tuomas Artman, CTO Linear & Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -255,6 +255,14 @@
 - [[693-ObNKGf9YR0g-rewiring-the-state-eoin-mulgrew-10-downing-street|#693 — Rewiring the State — Eoin Mulgrew, 10 Downing Street]]
 - [[1037-WJRdLNhrsLQ-how-to-build-an-ai-native-health-company-dan-feng-maven-clinic|#1037 — How to build an AI-Native Health Company — Dan Feng, Maven Clinic]]
 - [[1046-4loPnxvWWhg-your-fine-tuned-model-is-tech-debt-a-50x-roi-house-of-cards-dan-bjornn-lease-end|#1046 — Your Fine-Tuned Model Is Tech Debt: A 50x ROI House of Cards — Dan Bjornn, Lease End]]
+- [[1077-bMjlRrWjdT0-ai-evals-for-cross-functional-teams-nachiket-paranjape-swaroop-chitlur-haridas-doordash|#1077 — AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash]]
+- [[1078-zrZ1amZBSPw-productionizing-llm-gateways-architecture-tradeoffs-and-hard-lessons-kanish-manuja-twilio|#1078 — Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio]]
+- [[1080-pqlWNihgdjI-from-ai-assisted-to-ai-native-building-a-frontier-development-team-clare-liguori-aws|#1080 — From AI-Assisted to AI-Native: Building a Frontier Development Team — Clare Liguori, AWS]]
+- [[1081-5Bn0xro2ol8-how-to-get-your-org-to-adopt-coding-agents-without-shipping-garbage-eyal-blum-figma|#1081 — How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma]]
+- [[1084-M05vON8i0aI-ai-native-organisations-run-on-skills-how-to-structure-and-scale-them-imad-touil-quantumbl|#1084 — AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack]]
+- [[1085-7A65O-0lvKE-which-ai-startups-actually-land-enterprise-contracts-brian-lewis-millennium|#1085 — Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium]]
+- [[1104-Qr15lGAGKpo-everyone-gets-a-software-company-benjamin-guo-zo-computer|#1104 — Everyone Gets A Software Company — Benjamin Guo, Zo Computer]]
+- [[1107-0uC6u0lJJl4-your-company-brain-will-leak-secrets-how-we-stopped-it-for-big-banks-tanmai-gopal-promptql|#1107 — Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL]]
 
 ## Notes
 

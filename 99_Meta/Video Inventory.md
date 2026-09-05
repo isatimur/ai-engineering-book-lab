@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1074
+Total videos: 1109
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1076,3 +1076,38 @@ Total videos: 1074
 1072. [How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic](https://www.youtube.com/watch?v=qqrk7CtkuIw) — `qqrk7CtkuIw` — 26:11
 1073. [Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI](https://www.youtube.com/watch?v=pOvWgX7IJsc) — `pOvWgX7IJsc` — 30:00
 1074. [How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked](https://www.youtube.com/watch?v=qdAkxLoYNI8) — `qdAkxLoYNI8` — 18:36
+1075. [Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma](https://www.youtube.com/watch?v=ZIYYsAzaLlA) — `ZIYYsAzaLlA` — 16:46
+1076. [Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber](https://www.youtube.com/watch?v=EL123UNokkI) — `EL123UNokkI` — 15:07
+1077. [AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash](https://www.youtube.com/watch?v=bMjlRrWjdT0) — `bMjlRrWjdT0` — 16:11
+1078. [Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio](https://www.youtube.com/watch?v=zrZ1amZBSPw) — `zrZ1amZBSPw` — 16:24
+1079. [How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe](https://www.youtube.com/watch?v=mJqwmmOx4WA) — `mJqwmmOx4WA` — 17:49
+1080. [From AI-Assisted to AI-Native: Building a Frontier Development Team — Clare Liguori, AWS](https://www.youtube.com/watch?v=pqlWNihgdjI) — `pqlWNihgdjI` — 20:57
+1081. [How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma](https://www.youtube.com/watch?v=5Bn0xro2ol8) — `5Bn0xro2ol8` — 17:43
+1082. [How do you diffuse AI into the real world? — Varun Shenoy, Long Lake](https://www.youtube.com/watch?v=B0fjR3yaZFU) — `B0fjR3yaZFU` — 17:46
+1083. [Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS](https://www.youtube.com/watch?v=lRa9sPaMyy4) — `lRa9sPaMyy4` — 10:07
+1084. [AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack](https://www.youtube.com/watch?v=M05vON8i0aI) — `M05vON8i0aI` — 20:31
+1085. [Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium](https://www.youtube.com/watch?v=7A65O-0lvKE) — `7A65O-0lvKE` — 18:45
+1086. [The Half Life of Agent Infrastructure — Ben Kus, Box](https://www.youtube.com/watch?v=sM1iYgz93HI) — `sM1iYgz93HI` — 19:26
+1087. [From Tokenmaxxing to Trusted Throughput — Mingsheng Hong, Ironclad](https://www.youtube.com/watch?v=dSg0pu8d6qg) — `dSg0pu8d6qg` — 23:04
+1088. [AI Agents Are Just Distributed Systems Now — Salman Munaf, TikTok](https://www.youtube.com/watch?v=hD9-V56FNRI) — `hD9-V56FNRI` — 19:48
+1089. [Agents Are Where Microservices Were in 2015 — Roberto Milev & Uday Kanagala, Navan](https://www.youtube.com/watch?v=32nrHU6zHU8) — `32nrHU6zHU8` — 19:28
+1090. [Agentic Sites: Building Hyper Personalized Websites — Carlos Sanchez, Adobe](https://www.youtube.com/watch?v=jebp4V0vh30) — `jebp4V0vh30` — 20:43
+1091. [Tribal Dungeons of Global Shipping: AI Agents at Global Scale — Dmitry Buykin, Maersk](https://www.youtube.com/watch?v=dQ-_i1tZiws) — `dQ-_i1tZiws` — 12:02
+1092. [The Signal Layer: What to Build When Anything Can Be Built — Lena Hall, Akamai](https://www.youtube.com/watch?v=1KOdiGgMtpY) — `1KOdiGgMtpY` — 19:44
+1093. [Tell the Robot What You Want — Sandhya Subramani, AWS](https://www.youtube.com/watch?v=S6aSoQ6_u5A) — `S6aSoQ6_u5A` — 17:23
+1094. [SOTA Generative Media Panel — Dumitru Erhan, Shane Gu & Nicole Brichtova, Google DeepMind](https://www.youtube.com/watch?v=KLDdXOw6jIc) — `KLDdXOw6jIc` — 56:59
+1095. [Teaching agents to pay — Anna Spysz, Stripe](https://www.youtube.com/watch?v=A-zeQiYkmXk) — `A-zeQiYkmXk` — 19:10
+1096. [Multimodal Collaborative Agents for Next-Gen Commerce — Nidhi Kaushik Vyas, Google DeepMind](https://www.youtube.com/watch?v=AhQpRalYlyg) — `AhQpRalYlyg` — 21:08
+1097. [Why Your AI Agent Needs a Wallet: USDC and Nanopayments — Harshal Bhangale, Circle](https://www.youtube.com/watch?v=xKzU_3riL6s) — `xKzU_3riL6s` — 20:52
+1098. [When AI Agents Pay and Sellers Monetize: Building x402 Apps on AWS — Anil Nadiminti, AWS](https://www.youtube.com/watch?v=qTZirYu9pr0) — `qTZirYu9pr0` — 20:41
+1099. [Your Agent Just Authorized What?! — Jay Mok & Ben Coumes, Paypal](https://www.youtube.com/watch?v=vGn6N4-bxBY) — `vGn6N4-bxBY` — 16:07
+1100. [x402 isn’t good (yet) — Jan Curn, Apify](https://www.youtube.com/watch?v=h6mi88VrPtQ) — `h6mi88VrPtQ` — 20:48
+1101. [Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node](https://www.youtube.com/watch?v=ZyGMqdIpPoE) — `ZyGMqdIpPoE` — 20:48
+1102. [The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools](https://www.youtube.com/watch?v=QrMcNe2jjt8) — `QrMcNe2jjt8` — 23:19
+1103. [Beyond the Lethal Trifecta: Agentic Commerce on the Open Internet — David Levine, Kiduna Club](https://www.youtube.com/watch?v=tE2z8-hqoLY) — `tE2z8-hqoLY` — 21:40
+1104. [Everyone Gets A Software Company — Benjamin Guo, Zo Computer](https://www.youtube.com/watch?v=Qr15lGAGKpo) — `Qr15lGAGKpo` — 15:09
+1105. [Tethered: Our Agents Are Us — Shu Fang, Two Sigma](https://www.youtube.com/watch?v=wCIYViPd4SU) — `wCIYViPd4SU` — 21:10
+1106. [Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town](https://www.youtube.com/watch?v=REascnFlq_8) — `REascnFlq_8` — 21:17
+1107. [Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL](https://www.youtube.com/watch?v=0uC6u0lJJl4) — `0uC6u0lJJl4` — 26:25
+1108. [From coding to Knowledge work agents — Karan Vaidya, Composio](https://www.youtube.com/watch?v=xxfMT-bPEmU) — `xxfMT-bPEmU` — 20:42
+1109. [Why AI Agents Need Million-Token Context — Thomas Wolf & Olive Song, MiniMax](https://www.youtube.com/watch?v=5Cxe5dv2Xlw) — `5Cxe5dv2Xlw` — 20:48
