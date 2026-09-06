@@ -195,9 +195,9 @@
   - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]]
     - **Anchor:** `T5IMo5ntyhA` 00:02:22.319 → 00:02:24.000 · confidence: high
     - **Quote:** "irrelevant facts pollute memory."
-  - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]]
-    - **Anchor:** `hxFpUcvWPcU` 00:00:56.399 → 00:01:00.320 · confidence: high
-    - **Quote:** "LLMs and tools are orchestrated through predefined code paths."
+  - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — retrieval quality fails on assembly, not on embedding quality: similar-looking documents defeat pure similarity at enterprise scale.
+    - **Anchor:** `hxFpUcvWPcU` 00:17:08.640 → 00:17:14.720 · confidence: high
+    - **Quote:** "what I found is in in the enterprise settings uh pure text similarity is not enough."
   - [[752-EcqMYoIV57A-why-more-context-makes-your-agent-dumber-and-what-to-do-about-it-nupur-sharma-qodo|#752 — Nupur Sharma, Qodo]] — dumping more context degrades results: models privilege the start and end of the window and drop the middle, so the fix is assembly (hierarchical summarization, graphs, iterative retrieval), not a bigger window.
     - **Anchor:** `EcqMYoIV57A` 00:03:14.560 → 00:03:18.080 · confidence: high
     - **Quote:** "Agents look at the starting point, end point and try to provide you the results."
@@ -206,6 +206,11 @@
 - **Caveats / counterpoints:** Larger windows reduce some friction. The broader claim is that assembly, ranking, layering, freshness, and tool exposure still determine usefulness.
 - **Candidate chapters:** 5, 6, 10
 - **Reusable phrasing:** Bigger windows help, but context quality is mostly about assembly, not stuffing.
+
+> **Weak anchor upgraded (2026-09-06):** previously quoted "LLMs and tools are
+> orchestrated through predefined code paths" — the standard workflow-vs-agent
+> definition, which does not carry this claim. The same talk argues it directly a
+> few minutes later. Not a mis-filing: the talk was always on subject.
 
 ## 11) Durable state and workflow semantics are trust features, not backend details
 - **Why it matters:** Sharpens Chapter 6 and ties architecture directly to user trust. Long-running systems need explicit transitions, resumability, and inspectable histories.
@@ -410,9 +415,9 @@
   - [[655--aM2EDTiaMs-everything-you-need-to-know-about-agent-observability-danny-gollapalli-and-ben-hylak-raind|#655 — Danny Gollapalli & Ben Hylak, Raindrop]]
     - **Anchor:** `-aM2EDTiaMs` 00:02:50.720 → 00:02:54.879 · confidence: high
     - **Quote:** "we go from like a testing and eval paradigm to a monitoring p uh paradigm."
-  - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]]
-    - **Anchor:** `A48uhxfxbsM` 00:59:22.240 → 00:59:31.119 · confidence: high
-    - **Quote:** "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
+  - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]] — eval treated as a layer of the observability product itself, not a separate offline exercise.
+    - **Anchor:** `A48uhxfxbsM` 00:01:07.439 → 00:01:12.080 · confidence: high
+    - **Quote:** "so we go beyond like the standard observability of logs metrics traces we do stuff like eval"
   - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — production traces and backtest results exported as file systems for agent-driven cohort analysis; closes the "from monitoring to fix" loop with a coding agent in the middle.
     - **Anchor:** `L2r6vLlLgs8` 00:11:00.000 → 00:11:02.400 · confidence: high
     - **Quote:** "download all of the UI that we have as a file system?"
@@ -424,6 +429,11 @@
 - **Caveats / counterpoints:** Not every failure should be auto-converted into a durable regression; teams still need judgment about representativeness and maintenance cost.
 - **Candidate chapters:** 4, 6
 - **Reusable phrasing:** Observability is not downstream of evals. It is the place tomorrow's eval set comes from.
+
+> **Weak anchor upgraded (2026-09-06):** previously quoted the managed-variables
+> line about redeploy speed, which is adjacent to trace-linked evals rather than on
+> them. The same talk states the claim outright — eval sitting inside the
+> observability stack — so only the slice moved. Not a mis-filing.
 
 ## 20) Realtime AI quality is primarily a coordination and latency-engineering problem, not a model-quality problem
 - **Why it matters:** Generalizes the book's scaffolding thesis to realtime. Without this claim, Chapter 8 reads as a topic survey; with it, Chapter 8 confirms Chapters 3–6 from a new angle and feeds Chapter 10's "what endures" close.
@@ -1323,11 +1333,15 @@
   - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Samuel Humeau, Mistral]] — Speech labs have 'converged to some common patterns' — the dominant one an autoregressive decoder borrowed from language models, so audio generation is reframed as streaming language modeling under a latency constraint.
     - **Anchor:** `3jGAU2sbAyY` 00:08:51.839 → 00:08:54.160 · confidence: high
     - **Quote:** "converged to some common patterns"
-  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — Gradium ships by 'putting our streaming voice models' into the product — streaming speech-to-text and text-to-speech are the architectural response to the latency budget, not an offline-quality choice.
-    - **Anchor:** `P_RI1kCkRbo` 00:04:29.160 → 00:04:31.080 · confidence: high
-    - **Quote:** "putting our streaming voice models"
+  - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — the stack itself is streaming end to end, not a batch pipeline with a fast wrapper.
+    - **Anchor:** `P_RI1kCkRbo` 00:05:52.000 → 00:05:56.800 · confidence: high
+    - **Quote:** "we do streaming speech-to-text, streaming text-to-speech with voice cloning,"
 - **Caveats / counterpoints:** Convergence on LLM-style speech models is a current trajectory, not a settled endpoint. Cascaded pipelines remain practical, and Zeghidour notes he no longer treats them as the enemy. Related to existing Claim 23 (TTS converging on LLM architecture); this entry states the broader inference-architecture forcing function.
 - **Candidate chapters:** 8, 10
+
+> **Weak anchor upgraded (2026-09-06):** previously quoted the fragment "putting
+> our streaming voice models", which narrates a demo rather than describing the
+> architecture. Same talk, sentence that names the streaming components.
 
 ## 70) Dependable delegated work needs a prepared environment, a context slice, durable state, risk-bounded authority, and focused human review.
 - **Why it matters:** This is Chapter 10's synthesis claim, the 'constrained delegation' close, stated as a falsifiable design requirement rather than a prediction. Each clause restates an earlier chapter's claim (scaffolding, context, durable state, tuned agency, human oversight), so the closer earns its ground by naming the pattern the whole book has built. Phrasing it as the section's own components sentence lets the evidence extractor match it, where the abstract 'the enduring pattern is constrained delegation' thesis is dropped as framing.
