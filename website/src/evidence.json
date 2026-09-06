@@ -523,12 +523,12 @@
         },
         {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:56.399",
-          "end": "00:01:00.320",
-          "start_seconds": 56,
+          "start": "00:17:08.640",
+          "end": "00:17:14.720",
+          "start_seconds": 1028,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "LLMs and tools are orchestrated through predefined code paths."
+          "quote": "what I found is in in the enterprise settings uh pure text similarity is not enough."
         },
         {
           "video_id": "EcqMYoIV57A",
@@ -955,12 +955,12 @@
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:22.240",
-          "end": "00:59:31.119",
-          "start_seconds": 3562,
+          "start": "00:01:07.439",
+          "end": "00:01:12.080",
+          "start_seconds": 67,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
+          "quote": "so we go beyond like the standard observability of logs metrics traces we do stuff like eval"
         },
         {
           "video_id": "L2r6vLlLgs8",
@@ -1973,12 +1973,12 @@
         },
         {
           "video_id": "0n3MKk7r60w",
-          "start": "00:00:39.520",
-          "end": "00:00:45.360",
-          "start_seconds": 39,
+          "start": "00:12:41.760",
+          "end": "00:12:45.360",
+          "start_seconds": 761,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "challenges we've faced building and scaling our remote server, how we've overcome them,"
+          "quote": "we just immediately filter the tools down by the scopes that the token has."
         },
         {
           "video_id": "blmAkayzE8M",
@@ -2548,12 +2548,12 @@
         },
         {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:56.399",
-          "end": "00:01:00.320",
-          "start_seconds": 56,
+          "start": "00:17:08.640",
+          "end": "00:17:14.720",
+          "start_seconds": 1028,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "LLMs and tools are orchestrated through predefined code paths."
+          "quote": "what I found is in in the enterprise settings uh pure text similarity is not enough."
         },
         {
           "video_id": "EcqMYoIV57A",
@@ -3057,12 +3057,12 @@
         },
         {
           "video_id": "P_RI1kCkRbo",
-          "start": "00:04:29.160",
-          "end": "00:04:31.080",
-          "start_seconds": 269,
+          "start": "00:05:52.000",
+          "end": "00:05:56.800",
+          "start_seconds": 352,
           "confidence": "high",
           "label": "#662 — Neil Zeghidour, Gradium AI",
-          "quote": "putting our streaming voice models"
+          "quote": "we do streaming speech-to-text, streaming text-to-speech with voice cloning,"
         }
       ]
     },
@@ -3566,12 +3566,21 @@
         },
         {
           "video_id": "TnSGx36Ly0Q",
-          "start": "00:15:29.519",
-          "end": "00:15:33.040",
-          "start_seconds": 929,
+          "start": "00:12:29.600",
+          "end": "00:12:32.800",
+          "start_seconds": 749,
           "confidence": "high",
           "label": "#86 — Mark Myshatyn, Los Alamos National Lab",
-          "quote": "we see it as the greatest opportunity and the greatest threat to national security,"
+          "quote": "We need to be able to trust our agents the same way we trust our staff."
+        },
+        {
+          "video_id": "TnSGx36Ly0Q",
+          "start": "00:12:37.839",
+          "end": "00:12:39.200",
+          "start_seconds": 757,
+          "confidence": "high",
+          "label": "#86 — Mark Myshatyn, Los Alamos National Lab",
+          "quote": "Building for isolation matters."
         },
         {
           "video_id": "_B4Pv9ttFgY",
@@ -3634,12 +3643,12 @@
         },
         {
           "video_id": "0n3MKk7r60w",
-          "start": "00:00:39.520",
-          "end": "00:00:45.360",
-          "start_seconds": 39,
+          "start": "00:12:41.760",
+          "end": "00:12:45.360",
+          "start_seconds": 761,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "challenges we've faced building and scaling our remote server, how we've overcome them,"
+          "quote": "we just immediately filter the tools down by the scopes that the token has."
         },
         {
           "video_id": "blmAkayzE8M",
@@ -4603,12 +4612,12 @@
         },
         {
           "video_id": "A48uhxfxbsM",
-          "start": "00:59:22.240",
-          "end": "00:59:31.119",
-          "start_seconds": 3562,
+          "start": "00:01:07.439",
+          "end": "00:01:12.080",
+          "start_seconds": 67,
           "confidence": "high",
           "label": "#657 — Samuel Colvin, Pydantic",
-          "quote": "where I've got some big production CI stack to go and run and deployment takes hours, being able to go and change variables in production or in staging very quickly"
+          "quote": "so we go beyond like the standard observability of logs metrics traces we do stuff like eval"
         },
         {
           "video_id": "L2r6vLlLgs8",
@@ -4983,12 +4992,12 @@
         },
         {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:56.399",
-          "end": "00:01:00.320",
-          "start_seconds": 56,
+          "start": "00:17:08.640",
+          "end": "00:17:14.720",
+          "start_seconds": 1028,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "LLMs and tools are orchestrated through predefined code paths."
+          "quote": "what I found is in in the enterprise settings uh pure text similarity is not enough."
         },
         {
           "video_id": "EcqMYoIV57A",
@@ -5732,12 +5741,12 @@
         },
         {
           "video_id": "P_RI1kCkRbo",
-          "start": "00:04:29.160",
-          "end": "00:04:31.080",
-          "start_seconds": 269,
+          "start": "00:05:52.000",
+          "end": "00:05:56.800",
+          "start_seconds": 352,
           "confidence": "high",
           "label": "#662 — Neil Zeghidour, Gradium AI",
-          "quote": "putting our streaming voice models"
+          "quote": "we do streaming speech-to-text, streaming text-to-speech with voice cloning,"
         }
       ]
     }
