@@ -662,15 +662,24 @@
   - [[149-CCsWZ5bJlO8-the-unofficial-guide-to-apple-s-private-cloud-compute-jmo-confsec|#149 — Jmo, CONFSEC, on Apple Private Cloud Compute]] — the high-end version of designed-in cryptographic boundary; useful as the extreme reference even when not the right pattern for every product.
     - **Anchor:** `CCsWZ5bJlO8` 00:04:38.880 → 00:04:41.360 · confidence: high
     - **Quote:** "these are what they call enforceable guarantees, not just policies."
-  - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Mark Myshatyn, Los Alamos National Lab]] — the regulated public-sector setting where these constraints become legal requirements rather than best practices.
-    - **Anchor:** `TnSGx36Ly0Q` 00:15:29.519 → 00:15:33.040 · confidence: high
-    - **Quote:** "we see it as the greatest opportunity and the greatest threat to national security,"
+  - [[086-TnSGx36Ly0Q-government-agents-ai-agents-meet-tough-regulations-mark-myshatyn-los-alamos-national-lab|#86 — Mark Myshatyn, Los Alamos National Lab]] — isolation and agent trust treated as build requirements in a regulated setting, not as security tax.
+    - **Anchor:** `TnSGx36Ly0Q` 00:12:29.600 → 00:12:32.800 · confidence: high
+    - **Quote:** "We need to be able to trust our agents the same way we trust our staff."
+    - **Anchor:** `TnSGx36Ly0Q` 00:12:37.839 → 00:12:39.200 · confidence: high
+    - **Quote:** "Building for isolation matters."
   - [[744-_B4Pv9ttFgY-building-agent-interfaces-lessons-from-chrome-devtools-mcp-for-agents-michael-hablich-goog|#744 — Michael Hablich, Google (Chrome DevTools)]] — refusing persistent browser permissions (friction by design) is least-privilege as a product decision, not security overhead bolted on later.
     - **Anchor:** `_B4Pv9ttFgY` 00:22:07.440 → 00:22:09.240 · confidence: high
     - **Quote:** "never compromise trust for convenience."
 - **Caveats / counterpoints:** Maximum sandboxing has real costs in latency, developer experience, and integration ease. The right setting is workflow-specific. The claim is about the category, not a universal sandbox spec.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Sandbox, least privilege, and auditability belong in the same category as evals, harnesses, and durable runtimes: product infrastructure, not security overhead.
+
+> **Weak anchor upgraded (2026-09-06):** this source previously quoted "we see it
+> as the greatest opportunity and the greatest threat to national security" —
+> stakes framing, which sets up the talk rather than evidencing the claim. Swapped
+> for two lines from the same speaker that state the claim directly. Not a
+> mis-filing: the talk was always on subject (NIST 800-53 controls, FedRAMP,
+> classified-data boundaries); the quote was simply the wrong slice of it.
 
 ## 32) Protocol standardization expands the attack surface if governance lags
 - **Why it matters:** A common hope around MCP is that standardization reduces the security problem. The actual practitioner pattern in the corpus is the opposite: easier interoperability means tools can be exposed faster than the scope, mediation, review, and audit work can catch up. Naming the dynamic prevents teams from treating standardization as "the security problem is now solved" when it is actually a forcing function for governance work in parallel.
@@ -697,14 +706,22 @@
     - **Anchor:** `CD6R4Wf3jnY` 00:06:08.680 → 00:06:13.600 · confidence: high
     - **Quote:** "we think that the goal for a secure this for any security team is to is to bless one platform."
   - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Sam Morrow, GitHub]] — production-scale shape: tools filtered by PAT scopes; step-up OAuth used for additional privileges only when needed; capability follows authority dynamically.
-    - **Anchor:** `0n3MKk7r60w` 00:00:39.520 → 00:00:45.360 · confidence: high
-    - **Quote:** "challenges we've faced building and scaling our remote server, how we've overcome them,"
+    - **Anchor:** `0n3MKk7r60w` 00:12:41.760 → 00:12:45.360 · confidence: high
+    - **Quote:** "we just immediately filter the tools down by the scopes that the token has."
   - [[150-blmAkayzE8M-how-to-secure-agents-using-oauth-jared-hanson-keycard-passport-js|#150 — Jared Hanson, Keycard]] — the credential-layer foundation the gateway pattern rests on.
     - **Anchor:** `blmAkayzE8M` 00:01:33.600 → 00:01:38.240 · confidence: high
     - **Quote:** "if we continue this pattern for hundreds or thousands of agents, we've got a pretty big security problem on our hand."
 - **Caveats / counterpoints:** Small teams and developer environments can ship useful MCP work without the full gateway stack. The claim is about the architecture mature enterprise deployments converge on, not the starting position for every team. Also: the IAM/API-gateway analogy is useful but imperfect — capability is a different category than request, and the governance models will continue to diverge.
 - **Candidate chapters:** 7, 9
 - **Reusable phrasing:** The root of trust is established at the platform, not at the individual tool.
+
+> **Weak anchor upgraded (2026-09-06):** this source previously quoted the talk's
+> agenda line at 00:00:39 — "challenges we've faced building and scaling our remote
+> server, how we've overcome them" — which names a topic and evidences nothing. The
+> annotation already described PAT-scope filtering, so the anchor now points at the
+> sentence that says it. Deliberate overlap: `claims#65` cites the same line for the
+> credential-scoping mechanism, which is legitimate — one practice can evidence two
+> adjacent claims.
 
 ## 34) Per-tool OAuth flows are a governance and IT visibility problem, not just a UX annoyance
 - **Why it matters:** What looks like a paper-cut sequence of OAuth dialogs to operators is, to security and IT, a governance failure: each consent grant happens between the user and the third-party tool, invisible to the enterprise. The fix is structural — push the trust bridge into the identity provider — and the architectural payoff (enterprise visibility, scoped delegation, revocation as a first-class operation) is the same as the gateway argument. Naming the problem as governance rather than UX changes what gets built.
