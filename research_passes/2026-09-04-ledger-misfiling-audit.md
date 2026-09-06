@@ -83,3 +83,45 @@ lines whose talks are on-subject, sub-sentence anchor slices, a quote that is ad
 than on-point. Those are quote-upgrade opportunities, not defects, and they are a separate
 pass. Nor does one reading make an entry permanently safe: the same reviewers disagreed about
 borderline cases, and a second pass would likely surface a different handful.
+
+---
+
+# Follow-up (2026-09-06) — the weak-but-clean list, closed
+
+Five citations were left as quote-upgrade opportunities: the talk is on subject, but the
+anchor points at the wrong slice of it. All five are now moved. None was a mis-filing, so no
+source was removed and no support level changed.
+
+| entry | was quoted | now quoted |
+|---|---|---|
+| `claims#31` | "the greatest opportunity and the greatest threat to national security" — stakes framing | "We need to be able to trust our agents the same way we trust our staff." + "Building for isolation matters." |
+| `claims#33` | the talk's agenda line at 00:00:39 | "we just immediately filter the tools down by the scopes that the token has." |
+| `claims#19` | the managed-variables line about redeploy speed | "so we go beyond like the standard observability of logs metrics traces we do stuff like eval" |
+| `claims#69` | the fragment "putting our streaming voice models" | "we do streaming speech-to-text, streaming text-to-speech with voice cloning," |
+| `claims#10` | "LLMs and tools are orchestrated through predefined code paths" — a textbook definition | "what I found is in in the enterprise settings uh pure text similarity is not enough." |
+
+`claims#33` now shares its line with `claims#65`, and the entry says so. One practice can
+evidence two adjacent claims; hiding the overlap would be worse than noting it.
+
+Two of the five first anchored at **medium** confidence, because the quote had been typed
+from a reviewer's paraphrase rather than the tape. Re-reading the transcripts and anchoring on
+the exact wording — disfluencies included — took all three to high. A paraphrase that is
+*nearly* the words is exactly what this ledger exists to prevent.
+
+## A second detector built and rejected
+
+The obvious mechanical successor is a truncated-quote check: flag anchors that are fragments
+rather than propositions. Surveyed across all 244 quotes:
+
+* **108 lack terminal punctuation** — transcripts usually do, so the signal is noise;
+* short quotes are mostly complete claims — *"irrelevant facts pollute memory"*, *"we support
+  step-up OAuth"*, *"from helpfulness to productive"*, *"classic benchmark maxing"*;
+* the real fragments (*"MCP versus skill debate"*, *"codebase for harness engineering"*) are
+  bare noun phrases, which length and punctuation cannot distinguish from a terse claim.
+
+Not shipped, for the same reason as the lexical mis-filing detector two days earlier: a check
+that fires on a dozen good anchors trains the reader to skip it. That is now the second
+detector rejected on evidence, and the pattern is worth stating plainly — **the mechanical
+checks that survive here are the ones testing a fact about the world** (does this string exist
+in a transcript, is this speaker in this talk, is this entry cited nowhere newer), not the
+ones guessing at meaning.
