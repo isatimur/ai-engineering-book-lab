@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T16:57:46+00:00",
+  "generated_at": "2026-09-06T22:35:24+00:00",
   "corpus": {
     "videos": 1074
   },
@@ -17,8 +17,8 @@
     "tentative": 0
   },
   "anchors": {
-    "total": 244,
-    "high": 243,
+    "total": 245,
+    "high": 244,
     "medium": 1,
     "low": 0
   },
