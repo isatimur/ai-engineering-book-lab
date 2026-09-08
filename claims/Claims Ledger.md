@@ -551,17 +551,17 @@
     - **Anchor:** `Jty4s9-Jb78` 00:02:54.120 → 00:02:59.080 · confidence: high
     - **Quote:** "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
   - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]] — RAG carrying weight it was never designed to carry (long-term user state, evolving entity facts, cross-session continuity).
-    - **Anchor:** `T5IMo5ntyhA` 00:00:23.279 → 00:00:27.279 · confidence: high
-    - **Quote:** "why you need to model your memory after your business domain."
+    - **Anchor:** `T5IMo5ntyhA` 00:03:45.519 → 00:03:49.760 · confidence: high
+    - **Quote:** "we need a solution. We need domainaware memory not better semantic search."
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — graph retrieval as a different operation than flat vector retrieval, suited to relationship questions.
     - **Anchor:** `LLuKshphGOE` 00:08:04.879 → 00:08:13.039 · confidence: high
     - **Quote:** "the basic construct of a knowledge graph is um nodes which represent different people in the situation, relationships, and then you can attach properties to these nodes."
   - [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215 — Michael, Jesus & Stephen, Neo4j]] — practical GraphRAG patterns under production constraints.
-    - **Anchor:** `XNneh6-eyPg` 00:00:19.279 → 00:00:27.359 · confidence: high
-    - **Quote:** "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
+    - **Anchor:** `XNneh6-eyPg` 00:02:21.840 → 00:02:32.080 · confidence: high
+    - **Quote:** "vector databases and rag fall short because it's it's lacking kind of your full data set. It's it's only pulling back a fraction of the information by vector similarity algorithms."
   - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — Mitesh Patel, NVIDIA]] — hybrid RAG as the expected outcome once you accept graph and vector are different jobs.
-    - **Anchor:** `-tgQa8Fzf80` 00:00:50.640 → 00:00:58.000 · confidence: high
-    - **Quote:** "how can we create a graph rack system what are the advantages of it and if we add the hybrid nature to it how it is helpful"
+    - **Anchor:** `-tgQa8Fzf80` 00:02:44.800 → 00:02:52.800 · confidence: high
+    - **Quote:** "why can they work better than semantic u rag system well it captures the information between entities in much more detail."
   - [[156-w9u11ioHGA0-layering-every-technique-in-rag-one-query-at-a-time-david-karam-pi-labs-fmr-google-search|#156 — David Karam, Pi Labs]] — retrieval as a layered problem, with each layer handling failure modes the others miss.
     - **Anchor:** `w9u11ioHGA0` 00:05:58.800 → 00:06:02.160 · confidence: high
     - **Quote:** "you need to be like tuned to what what every technique gives you before you go and invest in it."
@@ -574,17 +574,11 @@
 
 ## 27) Enterprise usefulness scales with working-set quality, not corpus size
 - **Why it matters:** Corrects the "more data is better" intuition that drives a lot of enterprise AI procurement. The engineering value lives in convergence on the right working set, not in cognition over the wrong material.
-- **Support level:** strong
+- **Support level:** moderate — downgraded 2026-09-09. This was rated strong on four sources; reading them found two evidenced nothing (agenda lines, and one talk arguing the opposite emphasis) and were dropped rather than re-quoted. Two on-point sources remain.
 - **Supporting sources:**
-  - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — convergence on the few hundred passages that matter as the work that produces value.
-    - **Anchor:** `fh9LgKXBGnQ` 00:02:00.159 → 00:02:08.080 · confidence: high
-    - **Quote:** "about 73% of LM customers implementing use cases say that factual accuracy is their top challenge right now."
-  - [[154-W1MiZChnkfA-scaling-enterprise-grade-rag-lessons-from-legal-frontier-calvin-qi-harvey-chang-she-lance|#154 — Calvin Qi (Harvey) & Chang She (Lance)]] — legal work needs specific clause, precedent, exception — separation of authoritative from background source.
-    - **Anchor:** `W1MiZChnkfA` 00:01:07.439 → 00:01:14.640 · confidence: high
-    - **Quote:** "how Harvey tackles retrieval, the types of problems there are and then the challenges that come up with that all with like retrieval quality, scaling, uh security,"
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — enterprise-aware agent as one that knows which documents matter for the current user/role/task — boundary work as the engineering work.
-    - **Anchor:** `hxFpUcvWPcU` 00:00:33.120 → 00:00:39.440 · confidence: high
-    - **Quote:** "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
+    - **Anchor:** `hxFpUcvWPcU` 00:17:21.679 → 00:17:31.679 · confidence: high
+    - **Quote:** "when you want to search for something there will be like hundreds or thousand of similar looking documents or workflows and uh the problem becomes how do you choose the right one"
   - [[756-UM6sFg_jdlE-rag-is-dead-right-kuba-rogut-turbopuffer|#756 — Kuba Rogut, Turbopuffer]] — working-set quality over raw size (relaying Jeff Dean): a huge window is wasted without staged retrieval that isolates the relevant slice.
     - **Anchor:** `UM6sFg_jdlE` 00:10:19.160 → 00:10:20.920 · confidence: high
     - **Quote:** "you don't need a trillion at once, you need the right million."
@@ -653,8 +647,8 @@
     - **Anchor:** `blmAkayzE8M` 00:01:23.840 → 00:01:30.960 · confidence: high
     - **Quote:** "we go get API keys that are typically longived and broadly scoped. We paste them into some configuration files and environment variables"
   - [[627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos|#627 — Garrett Galow, WorkOS]] — the identity provider as a trust bridge for MCP, so credentials carry enterprise-visible scope and revocation.
-    - **Anchor:** `EmhRyw6xeT0` 00:01:19.759 → 00:01:25.439 · confidence: high
-    - **Quote:** "if you've used MCP at all extensively, you know that it means consent screens on top of consent screens on top of consent screens."
+    - **Anchor:** `EmhRyw6xeT0` 00:06:45.919 → 00:06:49.039 · confidence: high
+    - **Quote:** "identity provider can act as a standin a trust provider between applications"
 - **Caveats / counterpoints:** Internal experiments and developer-time tooling can get away with much looser identity than production systems. The claim is about systems that act on real users, real data, and real third parties — where the principal needs to be inspectable.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** An agent that is authenticated as a blurry extension of a human is not delegated. It is impersonating.
