@@ -47,7 +47,14 @@ def main() -> int:
     ap.add_argument("--quiet", action="store_true", help="only print failures and the summary")
     args = ap.parse_args()
 
+    # Accept either a file path or a ledger directory. The sibling checks
+    # (check_time_bound_evidence, check_agenda_quotes) take a directory, and the
+    # mismatch is a real trap: `--ledger claims-2` here used to die with
+    # IsADirectoryError, which reads like "book 2 has no anchors" rather than
+    # "wrong argument shape".
     ledger = _REPO / args.ledger
+    if ledger.is_dir():
+        ledger = ledger / "Claims Ledger.md"
     lines = ledger.read_text().splitlines()
 
     # Pair each Anchor line with the Quote line that follows it.
