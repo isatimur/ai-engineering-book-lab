@@ -1,4 +1,4 @@
-# Research Pass — 2026-09-04 — Reading all 71 ledger entries against their sources
+# Research Pass — 2026-09-04 — Reading the ledger entries against their sources
 
 Two mis-filed quotes were found earlier today by reviewers reading entries against their
 sources — a verbatim quote, from a listed speaker, filed under a claim it does not support.
@@ -8,7 +8,7 @@ words are exact. So the remaining 41 entries that had never been read this way w
 Six reviewers in parallel. One batch died on a rate limit; its entries were covered
 afterwards by the mechanical check below.
 
-## Result: 8 mis-filed sources across 71 entries
+## Result: 8 mis-filed sources across the entries actually read
 
 **No support level dropped.** Every affected entry was already carried by its other sources,
 so each fix removed *false* support rather than weakening a claim. The ledger went from 243
@@ -73,7 +73,17 @@ verdicts.
 
 ## What this does and does not close
 
-All 71 entries have now been read against their sources at least once. Thirty-four of the 41
+**Correction (2026-09-09): the original version of this line said "all 71 entries have now
+been read against their sources at least once." That was false when written.** One of the six
+review batches — entries 22, 23, 24, 26, 27, 29, 30 — died on a rate limit and never reported.
+I counted agents dispatched instead of verdicts returned, so a batch that failed looked exactly
+like a batch that found nothing. `claims#29` was covered later by accident, when the
+agenda-quote detector independently found its mis-filing. The other six had been read by
+nobody. This is precisely the failure this project exists to catch: a completeness claim
+recorded as established without the check that would test it. The re-run is in
+[2026-09-09-misfiling-batch-3-rerun.md](2026-09-09-misfiling-batch-3-rerun.md).
+
+Sixty-four entries were read in this pass and the one before it. Thirty-four of the 41
 in this pass came back clean, and the reviewers were explicitly told that a quote supporting a
 claim in different words is *correct* — the discipline that came from the failed detector
 experiment earlier today.
