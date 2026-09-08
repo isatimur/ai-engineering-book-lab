@@ -1102,12 +1102,12 @@
         },
         {
           "video_id": "T5IMo5ntyhA",
-          "start": "00:00:23.279",
-          "end": "00:00:27.279",
-          "start_seconds": 23,
+          "start": "00:03:45.519",
+          "end": "00:03:49.760",
+          "start_seconds": 225,
           "confidence": "high",
           "label": "#218 — Daniel Chalef, Zep",
-          "quote": "why you need to model your memory after your business domain."
+          "quote": "we need a solution. We need domainaware memory not better semantic search."
         },
         {
           "video_id": "LLuKshphGOE",
@@ -1120,21 +1120,21 @@
         },
         {
           "video_id": "XNneh6-eyPg",
-          "start": "00:00:19.279",
-          "end": "00:00:27.359",
-          "start_seconds": 19,
+          "start": "00:02:21.840",
+          "end": "00:02:32.080",
+          "start_seconds": 141,
           "confidence": "high",
           "label": "#215 — Michael, Jesus & Stephen, Neo4j",
-          "quote": "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
+          "quote": "vector databases and rag fall short because it's it's lacking kind of your full data set. It's it's only pulling back a fraction of the information by vector similarity algorithms."
         },
         {
           "video_id": "-tgQa8Fzf80",
-          "start": "00:00:50.640",
-          "end": "00:00:58.000",
-          "start_seconds": 50,
+          "start": "00:02:44.800",
+          "end": "00:02:52.800",
+          "start_seconds": 164,
           "confidence": "high",
           "label": "#219 — Mitesh Patel, NVIDIA",
-          "quote": "how can we create a graph rack system what are the advantages of it and if we add the hybrid nature to it how it is helpful"
+          "quote": "why can they work better than semantic u rag system well it captures the information between entities in much more detail."
         },
         {
           "video_id": "w9u11ioHGA0",
@@ -1917,34 +1917,16 @@
     {
       "claim_id": "claims#27",
       "text": "Enterprise usefulness scales with working-set quality, not corpus size",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
-          "video_id": "fh9LgKXBGnQ",
-          "start": "00:02:00.159",
-          "end": "00:02:08.080",
-          "start_seconds": 120,
-          "confidence": "high",
-          "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "about 73% of LM customers implementing use cases say that factual accuracy is their top challenge right now."
-        },
-        {
-          "video_id": "W1MiZChnkfA",
-          "start": "00:01:07.439",
-          "end": "00:01:14.640",
-          "start_seconds": 67,
-          "confidence": "high",
-          "label": "#154 — Calvin Qi (Harvey) & Chang She (Lance)",
-          "quote": "how Harvey tackles retrieval, the types of problems there are and then the challenges that come up with that all with like retrieval quality, scaling, uh security,"
-        },
-        {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:33.120",
-          "end": "00:00:39.440",
-          "start_seconds": 33,
+          "start": "00:17:21.679",
+          "end": "00:17:31.679",
+          "start_seconds": 1041,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
+          "quote": "when you want to search for something there will be like hundreds or thousand of similar looking documents or workflows and uh the problem becomes how do you choose the right one"
         },
         {
           "video_id": "UM6sFg_jdlE",
@@ -3523,12 +3505,12 @@
         },
         {
           "video_id": "EmhRyw6xeT0",
-          "start": "00:01:19.759",
-          "end": "00:01:25.439",
-          "start_seconds": 79,
+          "start": "00:06:45.919",
+          "end": "00:06:49.039",
+          "start_seconds": 405,
           "confidence": "high",
           "label": "#627 — Garrett Galow, WorkOS",
-          "quote": "if you've used MCP at all extensively, you know that it means consent screens on top of consent screens on top of consent screens."
+          "quote": "identity provider can act as a standin a trust provider between applications"
         }
       ]
     },
@@ -5207,12 +5189,12 @@
         },
         {
           "video_id": "T5IMo5ntyhA",
-          "start": "00:00:23.279",
-          "end": "00:00:27.279",
-          "start_seconds": 23,
+          "start": "00:03:45.519",
+          "end": "00:03:49.760",
+          "start_seconds": 225,
           "confidence": "high",
           "label": "#218 — Daniel Chalef, Zep",
-          "quote": "why you need to model your memory after your business domain."
+          "quote": "we need a solution. We need domainaware memory not better semantic search."
         },
         {
           "video_id": "LLuKshphGOE",
@@ -5225,21 +5207,21 @@
         },
         {
           "video_id": "XNneh6-eyPg",
-          "start": "00:00:19.279",
-          "end": "00:00:27.359",
-          "start_seconds": 19,
+          "start": "00:02:21.840",
+          "end": "00:02:32.080",
+          "start_seconds": 141,
           "confidence": "high",
           "label": "#215 — Michael, Jesus & Stephen, Neo4j",
-          "quote": "we want to look at patterns for successful graph applications uh for um making LLMs a little bit smarter by putting knowledge graph into the picture."
+          "quote": "vector databases and rag fall short because it's it's lacking kind of your full data set. It's it's only pulling back a fraction of the information by vector similarity algorithms."
         },
         {
           "video_id": "-tgQa8Fzf80",
-          "start": "00:00:50.640",
-          "end": "00:00:58.000",
-          "start_seconds": 50,
+          "start": "00:02:44.800",
+          "end": "00:02:52.800",
+          "start_seconds": 164,
           "confidence": "high",
           "label": "#219 — Mitesh Patel, NVIDIA",
-          "quote": "how can we create a graph rack system what are the advantages of it and if we add the hybrid nature to it how it is helpful"
+          "quote": "why can they work better than semantic u rag system well it captures the information between entities in much more detail."
         },
         {
           "video_id": "w9u11ioHGA0",
@@ -5264,34 +5246,16 @@
     {
       "claim_id": "claims#27",
       "text": "Enterprise usefulness scales with working-set quality, not corpus size",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
-          "video_id": "fh9LgKXBGnQ",
-          "start": "00:02:00.159",
-          "end": "00:02:08.080",
-          "start_seconds": 120,
-          "confidence": "high",
-          "label": "#100 — Ofer Mendelevitch, Vectara",
-          "quote": "about 73% of LM customers implementing use cases say that factual accuracy is their top challenge right now."
-        },
-        {
-          "video_id": "W1MiZChnkfA",
-          "start": "00:01:07.439",
-          "end": "00:01:14.640",
-          "start_seconds": 67,
-          "confidence": "high",
-          "label": "#154 — Calvin Qi (Harvey) & Chang She (Lance)",
-          "quote": "how Harvey tackles retrieval, the types of problems there are and then the challenges that come up with that all with like retrieval quality, scaling, uh security,"
-        },
-        {
           "video_id": "hxFpUcvWPcU",
-          "start": "00:00:33.120",
-          "end": "00:00:39.440",
-          "start_seconds": 33,
+          "start": "00:17:21.679",
+          "end": "00:17:31.679",
+          "start_seconds": 1041,
           "confidence": "high",
           "label": "#193 — Chau Tran, Glean",
-          "quote": "how to build enterprise aware agents. How to bring the brilliance of AI into the messy complex realities"
+          "quote": "when you want to search for something there will be like hundreds or thousand of similar looking documents or workflows and uh the problem becomes how do you choose the right one"
         },
         {
           "video_id": "UM6sFg_jdlE",
