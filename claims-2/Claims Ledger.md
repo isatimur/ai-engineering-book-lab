@@ -24,14 +24,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 
 ## 2) Reinforcement learning is the post-training method that carries a model into production
 - **Why it matters:** It is the only post-training method that can absorb an ongoing production reward signal. Prompt engineering and supervised fine-tuning cannot systematically ingest field feedback; RL was designed to. This is what closes the gap between an impressive demo and a system that keeps improving.
-- **Support level:** strong
+- **Support level:** moderate — downgraded 2026-09-09, and now single-source. The second source (#397, NVIDIA) never says "reinforcement learning": searched `reinforcement`, ` rl `, `rlhf`, `post-train`, `reward`, `policy gradient` across the full talk for zero hits. Its data flywheel is explicitly SFT and LoRA — the very method this claim says cannot ingest field feedback — so it was dropped, not re-quoted. The claim now rests on Cappelli alone.
 - **Supporting sources:**
-  - [[674-X6NShR2ccOg-lessons-from-trillion-token-deployments-at-fortune-500s-alessandro-cappelli-adaptive-ml|#674 — Alessandro Cappelli, Adaptive ML]] — "Reinforcement learning RL is not just any other algorithm for post-training, but is an algorithm that at its core will bring models to production."
+  - [[674-X6NShR2ccOg-lessons-from-trillion-token-deployments-at-fortune-500s-alessandro-cappelli-adaptive-ml|#674 — Alessandro Cappelli, Adaptive ML]] — "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
     - **Anchor:** `X6NShR2ccOg` 00:00:48.800 → 00:01:00.200 · confidence: high
     - **Quote:** "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
-  - [[397-6lTxD_oUjXQ-effective-ai-agents-need-data-flywheels-not-the-next-biggest-llm-sylendran-arunagiri-nvidi|#397 — Sylendran Arunagiri, NVIDIA]] — "It's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
-    - **Anchor:** `6lTxD_oUjXQ` 00:00:15.280 → 00:00:22.199 · confidence: high
-    - **Quote:** "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
 - **Caveats / counterevidence:** Many production systems ship and stay on prompting or retrieval because the cost and ops of RL are not yet justified. The claim is about high-stakes systems that must keep improving, not every product.
 - **Candidate chapters:** 1, 2
 - **Reusable phrasing:** RL is not just another post-training algorithm. It is the one built to turn production feedback back into the model.
@@ -53,8 +50,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[482--hYqt8M9u_M-the-genai-maturity-curve-or-you-probably-don-t-need-fine-tuning-kyle-corbitt|#482 — Kyle Corbitt]] — "The title of my talk is that you probably don't need fine tuning — this is an awkward title, given that I am doing a fine-tuning platform."
-    - **Anchor:** `-hYqt8M9u_M` 00:00:24.000 → 00:00:32.599 · confidence: medium
-    - **Quote:** "the title of my talk is that you probably don't need fine tuning this is an awkward title um given that I am doing a fine"
+    - **Anchor:** `-hYqt8M9u_M` 00:00:53.960 → 00:01:03.600 · confidence: high
+    - **Quote:** "I actually do believe despite the fact that I am in fact working on a fine tuning platform that my guess is that most people in this audience as of right this moment probably do not need fine tuning"
   - [[598-cXPYtkosXG4-domain-adaptation-and-fine-tuning-for-domain-specific-llms-abi-aryan|#598 — Abi Aryan]] — adaptation methods run from prompt engineering to retrieval to fine-tuning; the right choice depends on dataset and problem.
     - **Anchor:** `cXPYtkosXG4` 00:13:49.079 → 00:13:56.040 · confidence: high
     - **Quote:** "we have three different methods to be able to do domain adaptation we have prompting we have Rags we have fine tuning"
@@ -67,8 +64,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[233-liG97YXaTSA-openthoughts-data-recipes-for-reasoning-models-ryan-marten-bespoke-labs|#233 — Ryan Marten, Bespoke Labs]] — "Open Thoughts, which is our project to create the best open-source reasoning data sets"; OpenThinker reached SOTA among small open reasoning models by curating traces.
-    - **Anchor:** `liG97YXaTSA` 00:00:19.840 → 00:00:25.199 · confidence: high
-    - **Quote:** "Open Thoughts, which is our project to create the best open-source reasoning data sets."
+    - **Anchor:** `liG97YXaTSA` 00:02:19.920 → 00:02:27.040 · confidence: high
+    - **Quote:** "So if you want to create strong reasoning models, we now sort of have a training recipe, but we don't have the data recipe. That's the missing link."
   - [[543-i2vBaFzCEJw-the-hierarchy-of-needs-for-training-dataset-development-chang-she-and-noah-shpak|#543 — Chang She & Noah Shpak]] — model quality depends critically on how the dataset is constructed.
     - **Anchor:** `i2vBaFzCEJw` 00:01:37.479 → 00:01:42.159 · confidence: high
     - **Quote:** "you should really care about what you're training on and you should care for it by giving it a nice format"
@@ -93,22 +90,19 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `tQTB4MU_z8w` 00:07:29.000 → 00:07:31.599 · confidence: high
     - **Quote:** "our rail optimized infin band cluster networking"
   - [[230-OkEGJ5G3foU-full-workshop-reinforcement-learning-kernels-reasoning-quantization-agents-daniel-han|#230 — Daniel Han]] — treats RL through its operational surface: kernels, quantization, agents.
-    - **Anchor:** `OkEGJ5G3foU` 00:00:27.599 → 00:00:31.199 · confidence: high
-    - **Quote:** "today we're going to talk about the deep dive into RL kernels, agents, and quantization."
+    - **Anchor:** `OkEGJ5G3foU` 01:57:48.960 → 01:57:53.840 · confidence: high
+    - **Quote:** "we utilize Triton kernels. We do like kernel optimizations. We reduce memory usage by 70%."
 - **Caveats / counterevidence:** Managed RL-ops platforms and cheaper variants (e.g. GRPO) are shrinking this cost, so the operational moat may narrow over time.
 - **Candidate chapters:** 1, 2
 - **Reusable phrasing:** The RL technique is not the moat. The ability to run it is.
 
 ## 7) Inference, not training, may be the largest market in AI software
 - **Why it matters:** It relocates the center of the AI business from the one-time training run to the recurring served token. Training is a capital cost; inference is the cost of goods sold, paid on every request for as long as the product lives. The whole open-model ecosystem — serving frameworks, inference clouds, on-device runtimes — exists because serving is where recurring cost and competitive advantage live.
-- **Support level:** moderate (Atallah hedges to "might be the largest market ever"; "most contested" is not stated by any cited source)
+- **Support level:** moderate, single-source as of 2026-09-09 (Atallah hedges to "might be the largest market ever"; "most contested" is not stated by any cited source). The second source (#316, Modal) was dropped: searched `market`, `revenue`, `price`, `econom`, `dollar`, `business`, `spend` across 3,023 words for zero hits — it benchmarks inference-engine throughput and says nothing about market size.
 - **Supporting sources:**
   - [[335-84Vtz2IL1Ug-fun-stories-from-building-openrouter-and-where-all-this-is-going-alex-atallah-openrouter|#335 — Alex Atallah, OpenRouter]] — "Inference might be the largest market ever in software." (a marketplace routing traffic across dozens of model providers)
     - **Anchor:** `84Vtz2IL1Ug` 00:00:52.480 → 00:00:54.960 · confidence: high
     - **Quote:** "inference might be the largest market ever in software"
-  - [[316-DeFF3J8T5Pk-how-fast-are-llm-inference-engines-anyway-charles-frye-modal|#316 — Charles Frye, Modal]] — open-weights models and open-source inference servers have made major strides; running a serious agent on open models is now a real option.
-    - **Anchor:** `DeFF3J8T5Pk` 00:01:32.560 → 00:01:34.479 · confidence: high
-    - **Quote:** "possible with Open Weights models where they weren't before."
 - **Caveats / counterevidence:** "Largest market" is Atallah's framing, plausible but not independently sized here. Training and inference are coupled — the same labs and hardware serve both — so the split is analytic, not a hard boundary.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 2, 3
@@ -125,8 +119,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `9tvJ_GYJA-o` 00:00:58.320 → 00:01:06.960 · confidence: high
     - **Quote:** "controlling the cost of a deployment cuz that's often times the thing that's going to really prevent you from taking this taking this to any meaningful scale"
   - [[548-C1CXwRYbwuQ-making-open-models-10x-faster-and-better-for-modern-application-innovation-dmytro-dima-dzh|#548 — Dmytro Dzhulgakov, Fireworks]] — making open models ~10x faster is a serving problem, not a new model.
-    - **Anchor:** `C1CXwRYbwuQ` 00:03:48.200 → 00:03:50.879 · confidence: high
-    - **Quote:** "quality while being you know up to 10 times faster"
+    - **Anchor:** `C1CXwRYbwuQ` 00:06:01.800 → 00:06:11.639 · confidence: high
+    - **Quote:** "and choosing the optimal settings across the stack is actually not trival and as I show later in many cases you can get multiple X improvements from doing from doing this efficiently"
 - **Caveats / counterevidence:** Distinct from claim 6 (RL's operational cost, on the training side): this is about *serving* system properties. The order-of-magnitude figure is a general claim from practitioners, not a controlled benchmark. Model quality still bounds what any system can serve.
 - **Candidate chapters:** 2
 - **Reusable phrasing:** If you want a model to be fast and cheap, you optimize the system, not the model.
@@ -142,11 +136,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `a2muGkT4WD4` 00:05:45.920 → 00:05:51.160 · confidence: high
     - **Quote:** "it can run easily at 40 token 40 token per second."
   - [[582--mRi-B3t6fA-llamafile-bringing-ai-to-the-masses-with-fast-cpu-inference-stephen-hood-and-justine-tunne|#582 — Stephen Hood & Justine Tunney, Llamafile]] — Mozilla's project makes open models run fast on consumer CPUs to democratize access.
-    - **Anchor:** `-mRi-B3t6fA` 00:01:20.400 → 00:01:26.880 · confidence: high
-    - **Quote:** "LL file is an open source project from Mozilla that has the goal of democratizing access to AI"
+    - **Anchor:** `-mRi-B3t6fA` 00:01:40.159 → 00:01:53.399 · confidence: high
+    - **Quote:** "a llama file is a single file executable that runs without any installation on pretty much every operating system every CPU architecture and every GPU architecture"
   - [[307-l614N5W60ls-foundry-local-cutting-edge-ai-experiences-on-device-with-onnx-runtime-olive-emma-ning-micr|#307 — Emma Ning, Microsoft]] — Foundry Local brings on-device AI to cross-platform apps via ONNX Runtime; offline/low-bandwidth is the first reason.
-    - **Anchor:** `l614N5W60ls` 00:00:55.680 → 00:01:03.440 · confidence: high
-    - **Quote:** "how does cloud AI work in environments with low network bandwidth or even offline access?"
+    - **Anchor:** `l614N5W60ls` 00:03:16.319 → 00:03:20.800 · confidence: high
+    - **Quote:** "this convergence now makes the local AI a reality."
 - **Caveats / counterevidence:** "Default" is directional: on-device suits a class of models and workloads, not the frontier's largest models. Most sources are vendor/framework advocates for on-device.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 2, 4
@@ -166,8 +160,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `q2nHsJVy4FE` 00:00:38.480 → 00:00:43.120 · confidence: high
     - **Quote:** "How do I use more models in more places without having to rebuild or extend"
   - [[578-7TnkqfX84gI-unlocking-developer-productivity-across-cpu-and-gpu-with-max-chris-lattner|#578 — Chris Lattner, Modular]] — MAX spans GPU compute, CPU preprocessing, and orchestration across vendors without a rewrite.
-    - **Anchor:** `7TnkqfX84gI` 00:05:16.400 → 00:05:19.199 · confidence: high
-    - **Quote:** "max is two things one is an AI framework"
+    - **Anchor:** `7TnkqfX84gI` 00:05:01.080 → 00:05:04.320 · confidence: high
+    - **Quote:** "you want to build on top of infrastructure you do not want to have to be experts in the infrastructure"
 - **Caveats / counterevidence:** Support level is moderate: sources are the tool-builders, whose talks ("what's working, what's not") admit the automation is partial. How far generated kernels close the gap to expert-tuned code at the frontier is unsettled.
 - **Candidate chapters:** 2
 - **Reusable phrasing:** The optimization that used to gate a deployment behind a specialist is becoming something a compiler or a model produces on demand.
@@ -200,8 +194,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `A0PxE39xaMc` 00:00:09.519 → 00:00:23.920 · confidence: high
     - **Quote:** "AI is transforming everything. Healthcare, finance, automation, digital marketing. But one thing holds it back, and that's trust. How do you run models on sensitive data without handing it over?"
   - [[211-6Tpm4m1YxHk-critical-ai-inference-your-cio-can-trust-sahil-yadav-hariharan-ganesan-telemetrak|#211 — Sahil Yadav & Hariharan Ganesan, Telemetrak]] — a decade deploying AI in healthcare, industrial IoT, and telecom: can we trust the model's decisions in mission-critical use?
-    - **Anchor:** `6Tpm4m1YxHk` 00:00:29.119 → 00:00:41.120 · confidence: high
-    - **Quote:** "over the past 10 years we have deployed AI in various industries from from health um monitoring to industrial IoT to uh network automation in telecom networks"
+    - **Anchor:** `6Tpm4m1YxHk` 00:00:42.719 → 00:00:58.640 · confidence: high
+    - **Quote:** "there's been one question that has been asked all along all this time can we trust AI some of these systems are used in mission critical applications but the question really is can we trust the inferences of the these AI systems"
 - **Caveats / counterevidence:** Support level moderate: both sources are vendors of trust/confidential-inference products, so "first-class requirement" partly reflects their market. The confidentiality (#361) and reliability (#211) strands are distinct problems joined here under one theme; they may separate in later drafts.
 - **Candidate chapters:** 2, and the Part II regulated-domain chapters (finance/legal/medicine)
 - **Reusable phrasing:** Trust is not a property of the model in isolation. It is a property of how and where it is served.
@@ -217,8 +211,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `3WV1vT0B0cg` 00:08:08.720 → 00:08:17.360 · confidence: high
     - **Quote:** "not just use an API based generic model u but but inhouse it and do better than than what they can uh what they can do with just uh API based models."
   - [[074-lY1iFbDPRlw-minimax-m2-building-the-1-open-model-olive-song-minimax|#74 — Olive Song, MiniMax]] — MiniMax M2 presented as the #1 open model, built for agentic coding.
-    - **Anchor:** `lY1iFbDPRlw` 00:02:02.000 → 00:02:05.439 · confidence: high
-    - **Quote:** "designed specifically for coding workplace agentic tasks."
+    - **Anchor:** `lY1iFbDPRlw` 00:02:23.520 → 00:02:26.160 · confidence: high
+    - **Quote:** "I think we're on the top of the open source models."
 - **Caveats / counterevidence:** "Surpass GPT-4" (#439) and "#1 open model" (#74) are the speakers' own framings, not independently benchmarked here. Parity holds on many tasks, not uniformly at the very top; the largest closed frontier models may still lead on the hardest tasks. The lead is measured in months, which is the point — but it is a narrowing lead, not a permanent reversal.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 3
@@ -307,8 +301,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `3jGAU2sbAyY` 00:08:58.640 → 00:09:06.560 · confidence: high
     - **Quote:** "We're trying to uh transform the problem as a language modeling problem because humanity is extremely good at modeling sequences of token."
   - [[385-CXsbjcrf_5g-text-to-speech-data-preparation-and-fine-tuning-workshop-ronan-mcgovern|#385 — Ronan McGovern]] — a fine-tuning workshop built to teach how token-based TTS models (Sesame's CSM-1B) work, trained on a single target voice with the same data-prep-and-fine-tune loop as any language model.
-    - **Anchor:** `CXsbjcrf_5g` 00:00:37.360 → 00:00:41.680 · confidence: high
-    - **Quote:** "You should be able uh to understand how token-based texttospech models work."
+    - **Anchor:** `CXsbjcrf_5g` 00:02:35.680 → 00:02:45.319 · confidence: high
+    - **Quote:** "We need a transformer model that instead of taking in only text and outputting text tokens can input ideally text and audio and output a string of audio tokens."
 - **Caveats / counterevidence:** The convergence is architectural, not universal — diffusion and autoregression coexist, and #663 notes the dominant trend "can change very quickly." Distinct from claim 21's *consolidation* mechanism: this is about the shape of a single non-text model (tokens), not about collapsing many models into one.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** When speech becomes tokens, speech engineering becomes token engineering.
@@ -357,11 +351,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 
 ## 23) Generative media is productized as an orchestration stack, not a single model
 - **Why it matters:** Consolidation is the dominant move in the non-text model layer, and generative media is the deliberate exception. The craft is not one great model but composing several specialized ones — image, video, music — under structured control. That makes it the counter-case that shows consolidation is a design choice, not a law, and it moves the discipline from "train one model" toward "compose several well."
-- **Support level:** moderate
+- **Support level:** tentative — downgraded 2026-09-09, and now single-source. The #244 (fal) anchor was a conference pleasantry ("It's so nice to see a generative media track…"), and the talk carries no composition argument at all: searched `orchestr`, `chain`, `pipeline`, `compos`, `specialized`, `combine`, `stack`, `workflow` across 2,460 words for zero hits on every term. The entry's own annotation — "a catalog of specialized models chained under control" — was therefore unsupported too. Dropped rather than re-quoted. What remains is #692, which the caveat below already discounts as one lab's workshop.
 - **Supporting sources:**
-  - [[244-P370D8Kmlkw-the-state-of-generative-media-gorkem-yurtseven-fal|#244 — Gorkem Yurtseven, fal]] — "It's so nice to see a generative media track in the AI engineer conference this year… the way we define it is a generative video, audio, or image"; from a platform serving many such models and partnering with closed-source providers, the field is a catalog of specialized models chained under control, not one generalist.
-    - **Anchor:** `P370D8Kmlkw` 00:00:15.120 → 00:00:20.880 · confidence: medium
-    - **Quote:** "It's so nice to see a generative media track in the AI conference, AI engineer conference"
   - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Guillaume Vernade, DeepMind]] — the concrete instance: chaining Gemini (prompt author) into Imagen, Veo, and Lyria as separate model families in sequence; falling per-clip video prices make iterating a prompt many times economically viable.
     - **Anchor:** `BcWFc3H7Khg` 00:11:46.160 → 00:11:52.880 · confidence: high
     - **Quote:** "basically we are going to use uh Gemini to come up with prompts and then the gen media to create uh the content for the prompts"
@@ -377,8 +368,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `iS9YFW28XyM` 00:06:34.000 → 00:06:41.600 · confidence: high
     - **Quote:** "we want to have a more generalizable time driving system by leveraging Gemini or other multimodal large language models."
   - [[165-mWKYvT9Lc50-what-is-a-humanoid-foundation-model-an-introduction-to-gr00t-n1-annika-aastha|#165 — Annika & Aastha, NVIDIA]] — GR00T N1 presented as a build-the-model problem: "how you go about building a robotics foundation model," the humanoid's control trained as a foundation model rather than programmed as a controller.
-    - **Anchor:** `mWKYvT9Lc50` 00:00:28.080 → 00:00:30.080 · confidence: high
-    - **Quote:** "how you go about building a robotics foundation model."
+    - **Anchor:** `mWKYvT9Lc50` 00:16:28.240 → 00:16:48.880 · confidence: high
+    - **Quote:** "independently and that resulted in some kind of disagreement between the two systems. The group N1 introduces this coherent uh architecture where both the system one and system two are being co-rained and that kind of helps to optimize the whole stack instead of ident individually trying to train the pieces"
 - **Caveats / counterevidence:** EMMA is end-to-end *multimodal*, not tokenized-autoregressive — it rides claim 21's consolidation mechanism, not claim 19's tokenization one; do not conflate the two. Both talks are the builders' own accounts of in-progress systems. These same two sources reprise in Chapter 5, where the physical world is treated as a domain rather than a model — cited here as the closer of Part I, not deduplicated away.
 - **Candidate chapters:** 4, 5
 - **Reusable phrasing:** The last modality the model-building discipline reached is the physical one — the car and the humanoid as foundation models, not programmed controllers.
@@ -433,8 +424,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate (single-source, resting on a four-word fragment)
 - **Supporting sources:**
   - [[936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google|#936 — Cormac Brick, Google]] — if intelligence is to reach ordinary devices and not just expensive robots, "we are going to need tiny models."
-    - **Anchor:** `hacEQHHhu2Q` 00:00:25.359 → 00:00:27.039 · confidence: high
-    - **Quote:** "we are going to need tiny models."
+    - **Anchor:** `hacEQHHhu2Q` 00:00:17.359 → 00:00:27.039 · confidence: high
+    - **Quote:** "If we want uh for intelligence to get into lots and lots and lots of devices and not just really expensive robots, we are going to need tiny models."
 - **Caveats / counterevidence:** Distinct from ledger claim 9 (on-device inference), which owns the *economics and access* case — subscription-to-energy-bill, privacy, offline. Claim 29 owns *breadth of embodiment*: most bodies physically cannot carry a large model, so how many robots can be intelligent is capped by tiny-model capability. The two must not be merged. Brick argues from inside Google's edge effort, so the framing is a builder's; the physical constraint it names is not.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 5
@@ -447,9 +438,9 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
   - [[276-BS92RdBvI90-your-personal-open-source-humanoid-robot-for-8-999-jx-mo-k-scale-labs|#276 — JX Mo, K-Scale Labs]] — an open-source humanoid built hardware-to-software for developers at $8,999, against proprietary, expensive incumbents (Tesla Optimus, 1X, Unitree).
     - **Anchor:** `BS92RdBvI90` 00:00:19.279 → 00:00:22.480 · confidence: high
     - **Quote:** "We build opensource human robots from hardware to software"
-  - [[725-0jeZfjJMfmo-reachy-mini-the-300-open-source-robot-you-can-actually-hack-andres-marafioti-hugging-face|#725 — Andres Marafioti, Hugging Face]] — Reachy Mini, a $300 open-source robot designed to be hacked.
-    - **Anchor:** `0jeZfjJMfmo` 00:05:58.440 → 00:05:58.760 · confidence: high
-    - **Quote:** "It's very hackable."
+  - [[725-0jeZfjJMfmo-reachy-mini-the-300-open-source-robot-you-can-actually-hack-andres-marafioti-hugging-face|#725 — Andres Marafioti, Hugging Face]] — Reachy Mini, a $300 robot designed to be hacked. Note the tape supports affordable, repairable and "very hackable" but never calls the robot itself open source — "open source" is said only of models and tools, so that word comes from the talk title, not the speaker.
+    - **Anchor:** `0jeZfjJMfmo` 00:05:29.040 → 00:05:31.440 · confidence: high
+    - **Quote:** "we made it affordable. We made it easy to use."
 - **Caveats / counterevidence:** Moderate: both are vendors/builders of the hardware they present, and both machines are early and far from frontier capability. The claim is about the *pattern* (open, affordable, hackable bodies arriving), not that these specific robots match proprietary humanoids. The open-hardware analogy to open weights is argued by shape, not yet borne out at scale.
 - **Candidate chapters:** 5
 - **Reusable phrasing:** Open weights let you run a model instead of renting it; open, cheap, hackable bodies promise the same for the robot.
@@ -475,9 +466,9 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
   - [[406-pPvoLjYj_mY-evaluating-domain-specific-llms-for-real-world-finance-waseem-alshikh-writer|#406 — Alshikh, Writer]] — a finance benchmark (FAIL) that separates answer-rate from grounding; even the top model's combined grounding-plus-answer score is about 81% (≈one in five wrong under imperfect context), used to argue general models alone are insufficient.
     - **Anchor:** `pPvoLjYj_mY` 00:10:23.760 → 00:10:27.399 · confidence: high
     - **Quote:** "81% sounds a great number if you think in the reality"
-  - [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473 — Pekelis, Gradient]] — a team that actually trains a finance LLM; the motivating challenge is "the reliability of executing numerous chained" financial workflows (tabular reasoning, sentiment analysis), the finance instance of the reliability argument.
-    - **Anchor:** `of-SV35YqvY` 00:03:08.120 → 00:03:09.599 · confidence: high
-    - **Quote:** "they kind of apply across uh Industries"
+  - [[473-of-SV35YqvY-training-albatross-an-expert-finance-llm-leo-pekelis|#473 — Pekelis, Gradient]] — a team that actually trains a finance LLM; the motivating challenge is the reliability of chained financial workflows (tabular reasoning, sentiment analysis), the finance instance of the reliability argument.
+    - **Anchor:** `of-SV35YqvY` 00:01:40.560 → 00:01:47.560 · confidence: high
+    - **Quote:** "taking a generalist language model uh or or a base language model kind of off the shelf because it isn't really going to get you too far"
 - **Caveats / counterevidence:** Support is moderate because both cited speakers frame their findings as *general*, not finance-specific: Writer sees the same grounding failure in a medical benchmark, and Pekelis states his training requirements "apply across industries" (his headline long-context demo is Mark Twain style transfer, not a financial task). So the domain supplies the *standard* (near-zero error tolerance) and the *stake* that justifies the spend, not a novel technique. #473 is kept here as the domain instance, not re-argued as a book-1 training-method claim; its recipe is a generic domain-adaptation pipeline by the speaker's own account.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** Near-90% is a good demo and a disqualifying product when one in five confident answers is wrong and the cost of wrong is unbounded.
@@ -532,8 +523,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `cZ5ZJy19KMo` 00:05:21.880 → 00:05:25.199 · confidence: high
     - **Quote:** "relying only on offline evals is playing with fire"
   - [[197-_zl_zimMRak-how-intuit-uses-llms-to-explain-taxes-to-millions-of-taxpayers-jaspreet-singh-intuit|#197 — Singh, Intuit]] — at 44 million tax returns, IRS form changes force an annual rebuild of the knowledge engine and prompts, and even a same-vendor model upgrade (Claude Instant → Haiku) requires a full re-evaluation cycle.
-    - **Anchor:** `_zl_zimMRak` 00:09:28.399 → 00:09:34.080 · confidence: high
-    - **Quote:** "we made the move from uh uh anthropic cloud instant to anthropic cloud haiku"
+    - **Anchor:** `_zl_zimMRak` 00:09:38.320 → 00:09:46.160 · confidence: high
+    - **Quote:** "that takes some effort and the only way it's possible is because we have clear eval in place so that we can test out uh whatever we are changing"
 - **Caveats / counterevidence:** Distinct from claim 31 (eval's *status* as the product): claim 36 owns eval's *cadence* — continuous in production. Both cite #446; the cadence facts are supplied by #197 (annual rebuild, re-eval on model upgrade), which #446 does not carry. #197 is a Movement A (tax) source cited into a claim about scale that spans both movements — deliberate, since the scale point is domain-general within this chapter.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** At tens of millions of decisions, edge cases are certainties, so the eval is not a launch gate — it is a standing production process.
@@ -566,8 +557,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `FlzpEGHNVKQ` 00:08:56.360 → 00:08:58.520 · confidence: high
     - **Quote:** "the LLM's job is only to translate this information"
   - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Quoraishee & Song, NYT]] — "Our puzzles are made by people. They're not made by AI"; "There's no AI in the games themselves." The ground truth of the game stays human-authored; the AI lives at the edges.
-    - **Anchor:** `418t26CVz-w` 00:00:38.840 → 00:00:39.800 · confidence: high
-    - **Quote:** "Our puzzles are made by people."
+    - **Anchor:** `418t26CVz-w` 00:00:38.840 → 00:00:48.720 · confidence: high
+    - **Quote:** "Our puzzles are made by people. They're not made by AI. So, that's just a thing we this true and it'll always be true. There's no AI in the games themselves."
 - **Caveats / counterevidence:** #677 carries the claim with a rich, synthesized note; #918's note is auto-generated boilerplate, so its leg rests on its verbatim transcript-excerpt quotes only. Both are the builders' own accounts. The claim is about *where* the model sits (a narrow supporting lane), not that models are useless in these domains — the same systems lean on generation heavily where truth is not at stake.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** In a subjective domain the model is a translator, not a judge — it owns the words, and a structured system owns the ground.
@@ -576,12 +567,12 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Why it matters:** Demos make building a game with AI look solved. Practitioners who shipped report that generating content — the flood of cheap ideas a game needs — is now trivial, and that making the generated content actually good is the problem that remains. The difficulty in game-making moved from production to judgment; it did not disappear.
 - **Support level:** moderate
 - **Supporting sources:**
-  - [[588-_KFbT6eph5A-using-ai-to-build-an-infinite-game-jeff-schomay|#588 — Jeff Schomay]] — "I made a game with 100% AI generated content"; a game needs cheap disposable ideas while prototyping and near-infinite depth to play, and the description cue frames the tension as generation being easy while *good* content is the hard part.
-    - **Anchor:** `_KFbT6eph5A` 00:00:25.320 → 00:00:28.960 · confidence: high
-    - **Quote:** "I made a game with 100% AI generated content"
+  - [[588-_KFbT6eph5A-using-ai-to-build-an-infinite-game-jeff-schomay|#588 — Jeff Schomay]] — supports only the second half of this claim (generation is the cheap part; consistency is the work). His talk is a success story and never argues that a working AI-built game is harder than the demo; a game needs cheap disposable ideas while prototyping and near-infinite depth to play, and the description cue frames the tension as generation being easy while *good* content is the hard part.
+    - **Anchor:** `_KFbT6eph5A` 00:05:11.720 → 00:05:19.560 · confidence: high
+    - **Quote:** "this was really tricky especially in my case I needed the perspective and the scale to be consistent from scene to scene"
   - [[827-grdoOC1BT1s-think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta|#827 — An & Hoe, Meta]] — the talk's own title, "Think You Can Build a Game with AI? Think Again!", carries the harder-than-it-looks caution.
-    - **Anchor:** `grdoOC1BT1s` 00:04:23.680 → 00:04:25.000 · confidence: high
-    - **Quote:** "everybody can build a game over the weekend,"
+    - **Anchor:** `grdoOC1BT1s` 00:05:05.000 → 00:05:06.560 · confidence: high
+    - **Quote:** "that doesn't mean everybody can make a good game."
 - **Caveats / counterevidence:** Support is moderate: both notes are largely boilerplate. #827 contributes only its title; #588's description cue truncates exactly where its "but making content…" argument would resolve, so the "generation is easy, judgment is hard" reading is supported by the title-plus-cue framing, not a full transcript read. A read of both transcripts would confirm or narrow it.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** Generating game content is cheap; deciding what is worth generating is not — and that is where building a game with AI still breaks.
@@ -590,9 +581,9 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Why it matters:** Education is where a better model is most tempting to treat as the answer, and the practitioners are the ones resisting it. Scaling a tutor turns out to be about turning a whole institution AI-first and designing for learning outcomes, not about which model sits underneath. The model is already capable enough; converting capability into learning is a design problem.
 - **Support level:** moderate
 - **Supporting sources:**
-  - [[512-3E7VAZaTG9M-scaling-ai-in-education-a-khanmigo-case-study-shawn-jansepar|#512 — Jansepar, Khan Academy]] — frames the Khanmigo work as "Khan Academy's journey to become an AI-first organization": roadmap, product, and org transformation, not model quality.
-    - **Anchor:** `3E7VAZaTG9M` 00:00:44.800 → 00:00:47.280 · confidence: high
-    - **Quote:** "transformed KH Academy into an AI first organization"
+  - [[512-3E7VAZaTG9M-scaling-ai-in-education-a-khanmigo-case-study-shawn-jansepar|#512 — Jansepar, Khan Academy]] — frames the Khanmigo work as Khan Academy's journey to become an AI-first organization (the speaker's own words are "how we transformed KH Academy into an AI first organization"): roadmap, product, and org transformation, not model quality.
+    - **Anchor:** `3E7VAZaTG9M` 00:11:10.200 → 00:11:15.920 · confidence: high
+    - **Quote:** "magic really comes from when you pair incredible Builders with domain experts who have some unique insight"
   - [[540-qpmZID27t98-the-multimodal-future-of-education-stefania-druga|#540 — Stefania Druga]] — 70% of generative AI users are Generation Z (a Salesforce study she cites) and "education needs a wakeup call"; her focus is designing multimodal learning activities for critical and creative thinking, with the model as raw material, not teacher.
     - **Anchor:** `qpmZID27t98` 00:01:00.039 → 00:01:01.320 · confidence: high
     - **Quote:** "education needs a wakeup call"
@@ -621,6 +612,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
   - [[822-BqZrTdgBaPw-running-a-chess-youtube-channel-entirely-by-ai-stephan-steinfurt-tng|#822 — Steinfurt, TNG]] — a chess YouTube channel run entirely by AI; a major German newspaper wrote that "it could easily take another 5 years until AI explains chess as well as a human trainer," which Steinfurt quotes as the claim he set out to challenge, not as his own verdict.
     - **Anchor:** `BqZrTdgBaPw` 00:00:50.160 → 00:00:55.160 · confidence: high
     - **Quote:** "it could easily take another 5 years until AI explains chess as well as a human trainer."
+    - **Anchor:** `BqZrTdgBaPw` 00:04:34.320 → 00:04:35.600 · confidence: high
+    - **Quote:** "and it's all automated."
 - **Caveats / counterevidence:** Single-source and its note is boilerplate, so the leg rests on the transcript-excerpt quote. The quote is the *press coverage's* framing, attributed to the newspaper (the excerpt truncates at "Wilhelm Weber calls it the…" and is not completed); the note does not verify whether the channel reached human-trainer quality, so the claim is that the standard is human explanation, not a verdict on whether AI met it. Sits beside #677's human-gated improvement loop (autonomy technically in reach, a person kept at the one taste gate).
 - **Candidate chapters:** 7
 - **Reusable phrasing:** A creative pipeline can already run itself; the bar it is held to is still a human who can explain the work well.
