@@ -418,7 +418,7 @@
   - [[657-A48uhxfxbsM-playground-in-prod-optimising-agents-in-production-environments-samuel-colvin-pydantic|#657 — Samuel Colvin, Pydantic]] — eval treated as a layer of the observability product itself, not a separate offline exercise.
     - **Anchor:** `A48uhxfxbsM` 00:01:07.439 → 00:01:12.080 · confidence: high
     - **Quote:** "so we go beyond like the standard observability of logs metrics traces we do stuff like eval"
-  - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — production traces and backtest results exported as file systems for agent-driven cohort analysis; closes the "from monitoring to fix" loop with a coding agent in the middle.
+  - [[689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident|#689 — Lawrence Jones, incident.io]] — production traces and backtest results exported as file systems for agent-driven cohort analysis; closes the monitoring-to-fix loop with a coding agent in the middle.
     - **Anchor:** `L2r6vLlLgs8` 00:11:00.000 → 00:11:02.400 · confidence: high
     - **Quote:** "download all of the UI that we have as a file system?"
     - **Anchor:** `L2r6vLlLgs8` 00:14:06.080 → 00:14:06.960 · confidence: high
@@ -527,7 +527,7 @@
   - [[100-fh9LgKXBGnQ-enterprise-deep-research-the-next-killer-app-for-enterprise-ai-ofer-mendelevitch-vectara|#100 — Ofer Mendelevitch, Vectara]] — the hard problem of enterprise AI is access to the *relevant* documents, not access to documents.
     - **Anchor:** `fh9LgKXBGnQ` 00:04:12.239 → 00:04:16.400 · confidence: high
     - **Quote:** "picking up the right documents and answering those questions is a really cool use case."
-  - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]] — context platform engineering as "the set of skills and tools to design, size, and configure systems optimized for agent swarm context, at any scale."
+  - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Val Bercovici, WEKA]] — context platform engineering defined (slide text, not spoken on tape) as the set of skills and tools to design, size, and configure systems optimized for agent swarm context at any scale; on tape the speaker describes a toolkit that "lets you configure agent swarms uh and agent subtasks with very specific SLOs's".
     - **Anchor:** `NTBX-wxUhHs` 00:00:28.800 → 00:00:36.399 · confidence: high
     - **Quote:** "cool load generator that Kalen wrote that lets you configure agent swarms uh and agent subtasks with very specific SLOs's"
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — states the claim's contrast directly: context engineering as the successor to one-shot prompt cleverness.
@@ -748,10 +748,10 @@
 - **Why it matters:** The most common organizational mistake is treating AI as a budget line — buy seats, count usage, declare adoption. The discontinuity Shipper points at (90% vs 100% usage as a 10x gap) is structural: partial adoption keeps the old workflows intact, and the workflow cannot be rebuilt around delegation until delegation is universal. Naming the move as redesign rather than rollout changes what gets built and what gets measured.
 - **Support level:** strong
 - **Supporting sources:**
-  - [[065-MGzymaYBiss-dispatch-from-the-future-building-an-ai-native-company-dan-shipper-every-ai-i|#65 — Dan Shipper, Every]] — "There is a 10x difference between an organization where 90% of engineers use AI versus one where 100% do" — the discontinuity-at-full-adoption framing.
+  - [[065-MGzymaYBiss-dispatch-from-the-future-building-an-ai-native-company-dan-shipper-every-ai-i|#65 — Dan Shipper, Every]] — "there's a 10x difference between an org where 90% of the engineers are using AI versus an org where 100% of the engineers are using AI" — the discontinuity-at-full-adoption framing.
     - **Anchor:** `MGzymaYBiss` 00:02:17.280 → 00:02:24.800 · confidence: high
     - **Quote:** "there's a 10x difference between an org where 90% of the engineers are using AI versus an org where 100% of the engineers are using AI."
-  - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the "from hype to habit" cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
+  - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify (2025 AI Engineering Report)]] — the hype-to-habit cohort: durable wins come from rebuilding work around the new speed, not from individual productivity.
     - **Anchor:** `mQ7_Zje7WKE` 00:08:08.400 → 00:08:11.919 · confidence: high
     - **Quote:** "80% of respondents say LLMs are working well at work,"
     - **Newer edition (2026-09-04):** #137 is the **2025** edition of an annual survey. The same speaker's **2026** edition is in the corpus as #906 (`RGe6EjucbzI`, added 2026-07-27) and is cited nowhere in this ledger. The quoted 80% figure stands as a 2025 datapoint, but #137's next sentence — "less than 20% say the same about agents. Agents aren't everywhere yet, but they're coming" — is overtaken by #906: "95% say they're using agents, roughly double last year." Do not cite the agent-adoption half of #137 as current; prefer #906.
@@ -872,7 +872,7 @@
   - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — Matt Pocock, AI Hero]] — "Software fundamentals matter now more than they actually ever have" — fundamentals are how you tell good output from merely convincing output, and a flood of convincing output needs that skill more.
     - **Anchor:** `v4F1gFy-hqg` 00:00:34.559 → 00:00:37.600 · confidence: high
     - **Quote:** "software fundamentals matter now more than they actually ever have."
-  - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Tuomas Artman & Gergely Orosz]] — "What happens when agents are capable of doing everything immediately for you?" — names the scarcity shift from making to discerning.
+  - [[006-wjk0ulMAkbc-taste-craft-a-conversation-with-tuomas-artman-cto-linear-gergely-orosz-the-pragmatic-engin|#6 — Tuomas Artman & Gergely Orosz]] — "what happens when when agents um are capable of doing everything um immediately for you?" — names the scarcity shift from making to discerning.
     - **Anchor:** `wjk0ulMAkbc` 00:00:49.120 → 00:00:50.640 · confidence: high
     - **Quote:** "capable of doing everything um immediately"
   - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — Armin Ronacher & Cristina Poncela Cubeiro]] — "the friction is your judgment" — the pauses AI removes are often where quality was being created.
