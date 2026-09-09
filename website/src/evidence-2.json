@@ -22,15 +22,6 @@
           "confidence": "high",
           "label": "#80 — Will Hang & Cathy Zhou, OpenAI",
           "quote": "agent reinforcement fine-tuning or agent RF is the way to do this"
-        },
-        {
-          "video_id": "QluDzKVfp6A",
-          "start": "00:05:27.039",
-          "end": "00:05:28.400",
-          "start_seconds": 327,
-          "confidence": "high",
-          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
-          "quote": "pre-training is not giving any gains"
         }
       ]
     },
@@ -57,12 +48,12 @@
       "anchors": [
         {
           "video_id": "QluDzKVfp6A",
-          "start": "00:16:01.519",
-          "end": "00:16:03.279",
-          "start_seconds": 961,
+          "start": "00:15:29.760",
+          "end": "00:15:33.920",
+          "start_seconds": 929,
           "confidence": "high",
           "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
-          "quote": "autonomous coding as the root node problem"
+          "quote": "Okay. So this means that autonomous coding is a great domain for scaling up RL."
         }
       ]
     },
@@ -184,12 +175,12 @@
         },
         {
           "video_id": "8EQo4J2BWKw",
-          "start": "00:00:48.879",
-          "end": "00:00:51.039",
-          "start_seconds": 48,
+          "start": "00:02:38.800",
+          "end": "00:02:44.879",
+          "start_seconds": 158,
           "confidence": "high",
           "label": "#267 — Jack Rae, DeepMind",
-          "quote": "unblocking bottlenecks towards intelligence."
+          "quote": "So, progress has really been marked by identifying key bottlenecks towards intelligence and then solving them."
         }
       ]
     },
@@ -200,12 +191,12 @@
       "anchors": [
         {
           "video_id": "W3khHzajE04",
-          "start": "00:00:24.880",
-          "end": "00:00:28.400",
-          "start_seconds": 24,
+          "start": "00:04:54.479",
+          "end": "00:05:01.919",
+          "start_seconds": 294,
           "confidence": "high",
           "label": "#253 — Alex Duffy, Every.to",
-          "quote": "benchmarks are just memes that shape the most powerful tool ever created."
+          "quote": "And so the point is that the people here, the people that get that, the people that can build benchmarks are going to shape the future."
         },
         {
           "video_id": "mQ7_Zje7WKE",
@@ -242,15 +233,6 @@
           "confidence": "high",
           "label": "#80 — Will Hang & Cathy Zhou, OpenAI",
           "quote": "agent reinforcement fine-tuning or agent RF is the way to do this"
-        },
-        {
-          "video_id": "QluDzKVfp6A",
-          "start": "00:05:27.039",
-          "end": "00:05:28.400",
-          "start_seconds": 327,
-          "confidence": "high",
-          "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
-          "quote": "pre-training is not giving any gains"
         }
       ]
     },
@@ -311,21 +293,21 @@
       "anchors": [
         {
           "video_id": "y-UGrYbJsJk",
-          "start": "00:05:09.199",
-          "end": "00:05:12.720",
-          "start_seconds": 309,
+          "start": "00:03:21.680",
+          "end": "00:03:34.319",
+          "start_seconds": 201,
           "confidence": "high",
           "label": "#228 — Charles Frye, Modal",
-          "quote": "they optimize for math bandwidth over memory bandwidth."
+          "quote": "Um, and I think we're reaching this point now with uh with language models where um where you'll have more ability to like integrate tightly run your own language models and so more need to like use the index"
         },
         {
           "video_id": "3j1dHivahFQ",
-          "start": "00:00:30.039",
-          "end": "00:00:41.160",
-          "start_seconds": 30,
+          "start": "00:10:41.440",
+          "end": "00:10:55.040",
+          "start_seconds": 641,
           "confidence": "high",
           "label": "#402 — Paul Gilbert, Arista Networks",
-          "quote": "what we do is a plumbing uh so I'm not going to talk about agents but more kind of how you train uh models what the infrastructure looks like and how you do inferencing on on the infrastructure"
+          "quote": "RS because they they actually draw with 8 gpus 10.2 KW so you need new racks uh most Enterprises now waking up to this and they're building racks between 100 200 KW and they're water called"
         },
         {
           "video_id": "Zz4QjZsYWK0",
@@ -335,15 +317,6 @@
           "confidence": "high",
           "label": "#345 — Dylan Patel, SemiAnalysis",
           "quote": "what's interesting about the geopolitics of this is that despite the fact that Huawei is a sanctioned entity, China is a sanctioned country,"
-        },
-        {
-          "video_id": "gADhNzFjGeI",
-          "start": "00:00:17.880",
-          "end": "00:00:22.439",
-          "start_seconds": 17,
-          "confidence": "medium",
-          "label": "#547 — Sunny Madra, Groq",
-          "quote": "25 years ago we crossed the 1 gigahertz speed barrier uh in"
         }
       ]
     },
@@ -413,37 +386,28 @@
         },
         {
           "video_id": "8EQo4J2BWKw",
-          "start": "00:00:48.879",
-          "end": "00:00:51.039",
-          "start_seconds": 48,
+          "start": "00:02:38.800",
+          "end": "00:02:44.879",
+          "start_seconds": 158,
           "confidence": "high",
           "label": "#267 — Jack Rae, DeepMind",
-          "quote": "unblocking bottlenecks towards intelligence."
+          "quote": "So, progress has really been marked by identifying key bottlenecks towards intelligence and then solving them."
         }
       ]
     },
     {
       "claim_id": "claims#16",
       "text": "Code is where labs learn to model computation, not just imitate it",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "sYgE4ppDFOQ",
-          "start": "00:00:44.160",
-          "end": "00:00:47.200",
+          "start": "00:00:44.719",
+          "end": "00:00:55.680",
           "start_seconds": 44,
           "confidence": "high",
           "label": "#67 — Jacob Kahn, FAIR Meta",
-          "quote": "Our primary goal is to build models that reason, plan and make decisions."
-        },
-        {
-          "video_id": "OGCG_QkCcZo",
-          "start": "00:00:30.720",
-          "end": "00:00:34.960",
-          "start_seconds": 30,
-          "confidence": "high",
-          "label": "#49 — Jason Warner & Eiso Kant, Poolside",
-          "quote": "Poolside exists to close the gap between models and human intelligence."
+          "quote": "goal is to build models that reason, plan and make decisions. And we start with code because it's an interesting sandbox in which to think about reasoning, right? It's constrained. uh there are certain rules with code"
         }
       ]
     },
@@ -454,12 +418,12 @@
       "anchors": [
         {
           "video_id": "W3khHzajE04",
-          "start": "00:00:24.880",
-          "end": "00:00:28.400",
-          "start_seconds": 24,
+          "start": "00:04:54.479",
+          "end": "00:05:01.919",
+          "start_seconds": 294,
           "confidence": "high",
           "label": "#253 — Alex Duffy, Every.to",
-          "quote": "benchmarks are just memes that shape the most powerful tool ever created."
+          "quote": "And so the point is that the people here, the people that get that, the people that can build benchmarks are going to shape the future."
         },
         {
           "video_id": "mQ7_Zje7WKE",
@@ -479,21 +443,21 @@
       "anchors": [
         {
           "video_id": "_gVFUEdhCyI",
-          "start": "00:00:34.320",
-          "end": "00:00:38.680",
-          "start_seconds": 34,
-          "confidence": "medium",
+          "start": "00:09:01.560",
+          "end": "00:09:09.120",
+          "start_seconds": 541,
+          "confidence": "high",
           "label": "#9 — Omar Sanseviero, DeepMind",
-          "quote": "you can take, you can download, you can run in your own infrastructure, your own devices."
+          "quote": "So what is very cool for me is that Gemma is not just about always some model that you can use, but it's more about enabling the ecosystem to build on top of it."
         },
         {
           "video_id": "AUuktOQPWYg",
-          "start": "00:00:31.480",
-          "end": "00:00:34.680",
-          "start_seconds": 31,
-          "confidence": "high",
+          "start": "00:05:04.199",
+          "end": "00:05:29.960",
+          "start_seconds": 304,
+          "confidence": "medium",
           "label": "#528 — Devendra Chaplot, Mistral AI",
-          "quote": "why we do open source and how we do open source"
+          "quote": "so a lot of people ask me if you open source your models how do you make money and I think this is a common misconception that people have that open source is somewhat uh competitive with profit that's actually not the case we see open source as uh uh something that is goes hand inand with profit"
         },
         {
           "video_id": "Xmkl27AM2VQ",
@@ -506,12 +470,12 @@
         },
         {
           "video_id": "b0xlsQ_6wUQ",
-          "start": "00:00:27.760",
-          "end": "00:00:30.720",
-          "start_seconds": 27,
+          "start": "00:15:55.680",
+          "end": "00:16:06.720",
+          "start_seconds": 955,
           "confidence": "high",
           "label": "#400 — Junyang Lin, Alibaba Qwen",
-          "quote": "we have a dream of building a journalist model and generalist agent"
+          "quote": "We love open sourcing because open sourcing really helps us quite a lot. Um by uh the developers can give us some feedbacks to help us uh improve our models."
         }
       ]
     }
@@ -719,21 +683,21 @@
       "anchors": [
         {
           "video_id": "y-UGrYbJsJk",
-          "start": "00:05:09.199",
-          "end": "00:05:12.720",
-          "start_seconds": 309,
+          "start": "00:03:21.680",
+          "end": "00:03:34.319",
+          "start_seconds": 201,
           "confidence": "high",
           "label": "#228 — Charles Frye, Modal",
-          "quote": "they optimize for math bandwidth over memory bandwidth."
+          "quote": "Um, and I think we're reaching this point now with uh with language models where um where you'll have more ability to like integrate tightly run your own language models and so more need to like use the index"
         },
         {
           "video_id": "3j1dHivahFQ",
-          "start": "00:00:30.039",
-          "end": "00:00:41.160",
-          "start_seconds": 30,
+          "start": "00:10:41.440",
+          "end": "00:10:55.040",
+          "start_seconds": 641,
           "confidence": "high",
           "label": "#402 — Paul Gilbert, Arista Networks",
-          "quote": "what we do is a plumbing uh so I'm not going to talk about agents but more kind of how you train uh models what the infrastructure looks like and how you do inferencing on on the infrastructure"
+          "quote": "RS because they they actually draw with 8 gpus 10.2 KW so you need new racks uh most Enterprises now waking up to this and they're building racks between 100 200 KW and they're water called"
         },
         {
           "video_id": "Zz4QjZsYWK0",
@@ -743,15 +707,6 @@
           "confidence": "high",
           "label": "#345 — Dylan Patel, SemiAnalysis",
           "quote": "what's interesting about the geopolitics of this is that despite the fact that Huawei is a sanctioned entity, China is a sanctioned country,"
-        },
-        {
-          "video_id": "gADhNzFjGeI",
-          "start": "00:00:17.880",
-          "end": "00:00:22.439",
-          "start_seconds": 17,
-          "confidence": "medium",
-          "label": "#547 — Sunny Madra, Groq",
-          "quote": "25 years ago we crossed the 1 gigahertz speed barrier uh in"
         }
       ]
     },
@@ -789,12 +744,12 @@
       "anchors": [
         {
           "video_id": "QluDzKVfp6A",
-          "start": "00:16:01.519",
-          "end": "00:16:03.279",
-          "start_seconds": 961,
+          "start": "00:15:29.760",
+          "end": "00:15:33.920",
+          "start_seconds": 929,
           "confidence": "high",
           "label": "#251 — Aakanksha Chowdhery, Reflection.ai",
-          "quote": "autonomous coding as the root node problem"
+          "quote": "Okay. So this means that autonomous coding is a great domain for scaling up RL."
         }
       ]
     },
@@ -889,12 +844,12 @@
       "anchors": [
         {
           "video_id": "AbZ4IYGbfpQ",
-          "start": "00:00:26.400",
-          "end": "00:00:29.920",
-          "start_seconds": 26,
+          "start": "00:04:47.360",
+          "end": "00:04:51.280",
+          "start_seconds": 287,
           "confidence": "high",
           "label": "#247 — Yesu Feng, Netflix",
-          "quote": "to use one foundation model to cover all the recommendation use cases."
+          "quote": "second is that by integrating the foundation model into all systems we can create high leverage."
         },
         {
           "video_id": "LxQsQ3vZDqo",
@@ -907,12 +862,12 @@
         },
         {
           "video_id": "U0S6CfzAY5c",
-          "start": "00:17:35.280",
-          "end": "00:17:37.840",
-          "start_seconds": 1055,
+          "start": "00:01:43.280",
+          "end": "00:02:01.840",
+          "start_seconds": 103,
           "confidence": "high",
           "label": "#248 — Hamed & Maziar, LinkedIn",
-          "quote": "We tried we were trying to see if you can actually make it a foundation model"
+          "quote": "So the mission that we started was to build a large foundation uh model based on large language models that understand the the holist have a holistic understanding of the user uh journey on LinkedIn platform and can solve all the personalization tasks that that LinkedIn has with just one model."
         }
       ]
     },
@@ -1064,12 +1019,12 @@
       "anchors": [
         {
           "video_id": "MBWGiWJDlSo",
-          "start": "00:00:30.560",
-          "end": "00:00:33.840",
-          "start_seconds": 30,
+          "start": "00:02:29.840",
+          "end": "00:02:42.080",
+          "start_seconds": 149,
           "confidence": "high",
           "label": "#229 — Nikhil Abraham, CloudChef",
-          "quote": "it's now a professional chef that's working in various different kitchens"
+          "quote": "human, it plugs in place into any arbitrary novel kitchen. So it learns new recipes from one expert demonstration and it is robust to ingredient variation, appliance variation, and can cook on arbitrary portion sizes."
         }
       ]
     },
@@ -1123,21 +1078,21 @@
       "anchors": [
         {
           "video_id": "cZ5ZJy19KMo",
-          "start": "00:00:22.800",
-          "end": "00:00:26.519",
-          "start_seconds": 22,
+          "start": "00:05:38.319",
+          "end": "00:05:49.240",
+          "start_seconds": 338,
           "confidence": "high",
           "label": "#446 — Anterior",
-          "quote": "real-time reference-free evals can be the special source that enables customer trust"
+          "quote": "and the solution for that for these two problems is realtime reference-free evaluation system so reference free also known as label free means that you evaluate before you know the true outcome"
         },
         {
           "video_id": "O72p-rBb2bA",
-          "start": "00:06:42.639",
-          "end": "00:06:43.759",
-          "start_seconds": 402,
-          "confidence": "high",
+          "start": "00:11:45.360",
+          "end": "00:11:55.920",
+          "start_seconds": 705,
+          "confidence": "medium",
           "label": "#938 — Reed & Revere, SonderMind",
-          "quote": "more correct triggers."
+          "quote": "That's the key move here is that our system isn't deciding what correct is in a clinical edge case like this one. A licensed professional is."
         }
       ]
     },
@@ -1443,12 +1398,12 @@
       "anchors": [
         {
           "video_id": "418t26CVz-w",
-          "start": "00:00:18.480",
-          "end": "00:00:20.800",
-          "start_seconds": 18,
-          "confidence": "high",
+          "start": "00:03:20.920",
+          "end": "00:03:28.959",
+          "start_seconds": 200,
+          "confidence": "medium",
           "label": "#918 — Quoraishee & Song, NYT",
-          "quote": "local agentic theory for accessible mobile games."
+          "quote": "we can offload a lot of the intelligence onto a device. What that does is make a lot of the make a lot of the calls faster"
         }
       ]
     }
