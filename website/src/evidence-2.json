@@ -37,7 +37,7 @@
     {
       "claim_id": "claims#2",
       "text": "Reinforcement learning is the post-training method that carries a model into production",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "X6NShR2ccOg",
@@ -47,15 +47,6 @@
           "confidence": "high",
           "label": "#674 — Alessandro Cappelli, Adaptive ML",
           "quote": "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
-        },
-        {
-          "video_id": "6lTxD_oUjXQ",
-          "start": "00:00:15.280",
-          "end": "00:00:22.199",
-          "start_seconds": 15,
-          "confidence": "high",
-          "label": "#397 — Sylendran Arunagiri, NVIDIA",
-          "quote": "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
         }
       ]
     },
@@ -82,12 +73,12 @@
       "anchors": [
         {
           "video_id": "-hYqt8M9u_M",
-          "start": "00:00:24.000",
-          "end": "00:00:32.599",
-          "start_seconds": 24,
-          "confidence": "medium",
+          "start": "00:00:53.960",
+          "end": "00:01:03.600",
+          "start_seconds": 53,
+          "confidence": "high",
           "label": "#482 — Kyle Corbitt",
-          "quote": "the title of my talk is that you probably don't need fine tuning this is an awkward title um given that I am doing a fine"
+          "quote": "I actually do believe despite the fact that I am in fact working on a fine tuning platform that my guess is that most people in this audience as of right this moment probably do not need fine tuning"
         },
         {
           "video_id": "cXPYtkosXG4",
@@ -107,12 +98,12 @@
       "anchors": [
         {
           "video_id": "liG97YXaTSA",
-          "start": "00:00:19.840",
-          "end": "00:00:25.199",
-          "start_seconds": 19,
+          "start": "00:02:19.920",
+          "end": "00:02:27.040",
+          "start_seconds": 139,
           "confidence": "high",
           "label": "#233 — Ryan Marten, Bespoke Labs",
-          "quote": "Open Thoughts, which is our project to create the best open-source reasoning data sets."
+          "quote": "So if you want to create strong reasoning models, we now sort of have a training recipe, but we don't have the data recipe. That's the missing link."
         },
         {
           "video_id": "i2vBaFzCEJw",
@@ -168,12 +159,12 @@
         },
         {
           "video_id": "OkEGJ5G3foU",
-          "start": "00:00:27.599",
-          "end": "00:00:31.199",
-          "start_seconds": 27,
+          "start": "01:57:48.960",
+          "end": "01:57:53.840",
+          "start_seconds": 7068,
           "confidence": "high",
           "label": "#230 — Daniel Han",
-          "quote": "today we're going to talk about the deep dive into RL kernels, agents, and quantization."
+          "quote": "we utilize Triton kernels. We do like kernel optimizations. We reduce memory usage by 70%."
         }
       ]
     },
@@ -270,12 +261,12 @@
       "anchors": [
         {
           "video_id": "liG97YXaTSA",
-          "start": "00:00:19.840",
-          "end": "00:00:25.199",
-          "start_seconds": 19,
+          "start": "00:02:19.920",
+          "end": "00:02:27.040",
+          "start_seconds": 139,
           "confidence": "high",
           "label": "#233 — Ryan Marten, Bespoke Labs",
-          "quote": "Open Thoughts, which is our project to create the best open-source reasoning data sets."
+          "quote": "So if you want to create strong reasoning models, we now sort of have a training recipe, but we don't have the data recipe. That's the missing link."
         },
         {
           "video_id": "i2vBaFzCEJw",
@@ -310,15 +301,6 @@
           "confidence": "high",
           "label": "#335 — Alex Atallah, OpenRouter",
           "quote": "inference might be the largest market ever in software"
-        },
-        {
-          "video_id": "DeFF3J8T5Pk",
-          "start": "00:01:32.560",
-          "end": "00:01:34.479",
-          "start_seconds": 92,
-          "confidence": "high",
-          "label": "#316 — Charles Frye, Modal",
-          "quote": "possible with Open Weights models where they weren't before."
         }
       ]
     },
@@ -390,12 +372,12 @@
         },
         {
           "video_id": "lY1iFbDPRlw",
-          "start": "00:02:02.000",
-          "end": "00:02:05.439",
-          "start_seconds": 122,
+          "start": "00:02:23.520",
+          "end": "00:02:26.160",
+          "start_seconds": 143,
           "confidence": "high",
           "label": "#74 — Olive Song, MiniMax",
-          "quote": "designed specifically for coding workplace agentic tasks."
+          "quote": "I think we're on the top of the open source models."
         }
       ]
     },
@@ -538,7 +520,7 @@
     {
       "claim_id": "claims#2",
       "text": "Reinforcement learning is the post-training method that carries a model into production",
-      "support_level": "strong",
+      "support_level": "moderate",
       "anchors": [
         {
           "video_id": "X6NShR2ccOg",
@@ -548,15 +530,6 @@
           "confidence": "high",
           "label": "#674 — Alessandro Cappelli, Adaptive ML",
           "quote": "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
-        },
-        {
-          "video_id": "6lTxD_oUjXQ",
-          "start": "00:00:15.280",
-          "end": "00:00:22.199",
-          "start_seconds": 15,
-          "confidence": "high",
-          "label": "#397 — Sylendran Arunagiri, NVIDIA",
-          "quote": "it's not about powering them up with the next biggest LLM in the market. All they need is simple data flywheels."
         }
       ]
     },
@@ -594,12 +567,12 @@
         },
         {
           "video_id": "OkEGJ5G3foU",
-          "start": "00:00:27.599",
-          "end": "00:00:31.199",
-          "start_seconds": 27,
+          "start": "01:57:48.960",
+          "end": "01:57:53.840",
+          "start_seconds": 7068,
           "confidence": "high",
           "label": "#230 — Daniel Han",
-          "quote": "today we're going to talk about the deep dive into RL kernels, agents, and quantization."
+          "quote": "we utilize Triton kernels. We do like kernel optimizations. We reduce memory usage by 70%."
         }
       ]
     },
@@ -616,15 +589,6 @@
           "confidence": "high",
           "label": "#335 — Alex Atallah, OpenRouter",
           "quote": "inference might be the largest market ever in software"
-        },
-        {
-          "video_id": "DeFF3J8T5Pk",
-          "start": "00:01:32.560",
-          "end": "00:01:34.479",
-          "start_seconds": 92,
-          "confidence": "high",
-          "label": "#316 — Charles Frye, Modal",
-          "quote": "possible with Open Weights models where they weren't before."
         }
       ]
     },
@@ -653,12 +617,12 @@
         },
         {
           "video_id": "C1CXwRYbwuQ",
-          "start": "00:03:48.200",
-          "end": "00:03:50.879",
-          "start_seconds": 228,
+          "start": "00:06:01.800",
+          "end": "00:06:11.639",
+          "start_seconds": 361,
           "confidence": "high",
           "label": "#548 — Dmytro Dzhulgakov, Fireworks",
-          "quote": "quality while being you know up to 10 times faster"
+          "quote": "and choosing the optimal settings across the stack is actually not trival and as I show later in many cases you can get multiple X improvements from doing from doing this efficiently"
         }
       ]
     },
@@ -687,21 +651,21 @@
         },
         {
           "video_id": "-mRi-B3t6fA",
-          "start": "00:01:20.400",
-          "end": "00:01:26.880",
-          "start_seconds": 80,
+          "start": "00:01:40.159",
+          "end": "00:01:53.399",
+          "start_seconds": 100,
           "confidence": "high",
           "label": "#582 — Stephen Hood & Justine Tunney, Llamafile",
-          "quote": "LL file is an open source project from Mozilla that has the goal of democratizing access to AI"
+          "quote": "a llama file is a single file executable that runs without any installation on pretty much every operating system every CPU architecture and every GPU architecture"
         },
         {
           "video_id": "l614N5W60ls",
-          "start": "00:00:55.680",
-          "end": "00:01:03.440",
-          "start_seconds": 55,
+          "start": "00:03:16.319",
+          "end": "00:03:20.800",
+          "start_seconds": 196,
           "confidence": "high",
           "label": "#307 — Emma Ning, Microsoft",
-          "quote": "how does cloud AI work in environments with low network bandwidth or even offline access?"
+          "quote": "this convergence now makes the local AI a reality."
         }
       ]
     },
@@ -739,12 +703,12 @@
         },
         {
           "video_id": "7TnkqfX84gI",
-          "start": "00:05:16.400",
-          "end": "00:05:19.199",
-          "start_seconds": 316,
+          "start": "00:05:01.080",
+          "end": "00:05:04.320",
+          "start_seconds": 301,
           "confidence": "high",
           "label": "#578 — Chris Lattner, Modular",
-          "quote": "max is two things one is an AI framework"
+          "quote": "you want to build on top of infrastructure you do not want to have to be experts in the infrastructure"
         }
       ]
     },
@@ -807,12 +771,12 @@
         },
         {
           "video_id": "6Tpm4m1YxHk",
-          "start": "00:00:29.119",
-          "end": "00:00:41.120",
-          "start_seconds": 29,
+          "start": "00:00:42.719",
+          "end": "00:00:58.640",
+          "start_seconds": 42,
           "confidence": "high",
           "label": "#211 — Sahil Yadav & Hariharan Ganesan, Telemetrak",
-          "quote": "over the past 10 years we have deployed AI in various industries from from health um monitoring to industrial IoT to uh network automation in telecom networks"
+          "quote": "there's been one question that has been asked all along all this time can we trust AI some of these systems are used in mission critical applications but the question really is can we trust the inferences of the these AI systems"
         }
       ]
     }
@@ -859,21 +823,21 @@
         },
         {
           "video_id": "-mRi-B3t6fA",
-          "start": "00:01:20.400",
-          "end": "00:01:26.880",
-          "start_seconds": 80,
+          "start": "00:01:40.159",
+          "end": "00:01:53.399",
+          "start_seconds": 100,
           "confidence": "high",
           "label": "#582 — Stephen Hood & Justine Tunney, Llamafile",
-          "quote": "LL file is an open source project from Mozilla that has the goal of democratizing access to AI"
+          "quote": "a llama file is a single file executable that runs without any installation on pretty much every operating system every CPU architecture and every GPU architecture"
         },
         {
           "video_id": "l614N5W60ls",
-          "start": "00:00:55.680",
-          "end": "00:01:03.440",
-          "start_seconds": 55,
+          "start": "00:03:16.319",
+          "end": "00:03:20.800",
+          "start_seconds": 196,
           "confidence": "high",
           "label": "#307 — Emma Ning, Microsoft",
-          "quote": "how does cloud AI work in environments with low network bandwidth or even offline access?"
+          "quote": "this convergence now makes the local AI a reality."
         }
       ]
     },
@@ -893,12 +857,12 @@
         },
         {
           "video_id": "CXsbjcrf_5g",
-          "start": "00:00:37.360",
-          "end": "00:00:41.680",
-          "start_seconds": 37,
+          "start": "00:02:35.680",
+          "end": "00:02:45.319",
+          "start_seconds": 155,
           "confidence": "high",
           "label": "#385 — Ronan McGovern",
-          "quote": "You should be able uh to understand how token-based texttospech models work."
+          "quote": "We need a transformer model that instead of taking in only text and outputting text tokens can input ideally text and audio and output a string of audio tokens."
         }
       ]
     },
@@ -980,17 +944,8 @@
     {
       "claim_id": "claims#23",
       "text": "Generative media is productized as an orchestration stack, not a single model",
-      "support_level": "moderate",
+      "support_level": "tentative",
       "anchors": [
-        {
-          "video_id": "P370D8Kmlkw",
-          "start": "00:00:15.120",
-          "end": "00:00:20.880",
-          "start_seconds": 15,
-          "confidence": "medium",
-          "label": "#244 — Gorkem Yurtseven, fal",
-          "quote": "It's so nice to see a generative media track in the AI conference, AI engineer conference"
-        },
         {
           "video_id": "BcWFc3H7Khg",
           "start": "00:11:46.160",
@@ -1018,12 +973,12 @@
         },
         {
           "video_id": "mWKYvT9Lc50",
-          "start": "00:00:28.080",
-          "end": "00:00:30.080",
-          "start_seconds": 28,
+          "start": "00:16:28.240",
+          "end": "00:16:48.880",
+          "start_seconds": 988,
           "confidence": "high",
           "label": "#165 — Annika & Aastha, NVIDIA",
-          "quote": "how you go about building a robotics foundation model."
+          "quote": "independently and that resulted in some kind of disagreement between the two systems. The group N1 introduces this coherent uh architecture where both the system one and system two are being co-rained and that kind of helps to optimize the whole stack instead of ident individually trying to train the pieces"
         }
       ]
     }
@@ -1045,12 +1000,12 @@
         },
         {
           "video_id": "mWKYvT9Lc50",
-          "start": "00:00:28.080",
-          "end": "00:00:30.080",
-          "start_seconds": 28,
+          "start": "00:16:28.240",
+          "end": "00:16:48.880",
+          "start_seconds": 988,
           "confidence": "high",
           "label": "#165 — Annika & Aastha, NVIDIA",
-          "quote": "how you go about building a robotics foundation model."
+          "quote": "independently and that resulted in some kind of disagreement between the two systems. The group N1 introduces this coherent uh architecture where both the system one and system two are being co-rained and that kind of helps to optimize the whole stack instead of ident individually trying to train the pieces"
         }
       ]
     },
@@ -1125,12 +1080,12 @@
       "anchors": [
         {
           "video_id": "hacEQHHhu2Q",
-          "start": "00:00:25.359",
+          "start": "00:00:17.359",
           "end": "00:00:27.039",
-          "start_seconds": 25,
+          "start_seconds": 17,
           "confidence": "high",
           "label": "#936 — Cormac Brick, Google",
-          "quote": "we are going to need tiny models."
+          "quote": "If we want uh for intelligence to get into lots and lots and lots of devices and not just really expensive robots, we are going to need tiny models."
         }
       ]
     },
@@ -1150,12 +1105,12 @@
         },
         {
           "video_id": "0jeZfjJMfmo",
-          "start": "00:05:58.440",
-          "end": "00:05:58.760",
-          "start_seconds": 358,
+          "start": "00:05:29.040",
+          "end": "00:05:31.440",
+          "start_seconds": 329,
           "confidence": "high",
           "label": "#725 — Andres Marafioti, Hugging Face",
-          "quote": "It's very hackable."
+          "quote": "we made it affordable. We made it easy to use."
         }
       ]
     }
@@ -1202,12 +1157,12 @@
         },
         {
           "video_id": "of-SV35YqvY",
-          "start": "00:03:08.120",
-          "end": "00:03:09.599",
-          "start_seconds": 188,
+          "start": "00:01:40.560",
+          "end": "00:01:47.560",
+          "start_seconds": 100,
           "confidence": "high",
           "label": "#473 — Pekelis, Gradient",
-          "quote": "they kind of apply across uh Industries"
+          "quote": "taking a generalist language model uh or or a base language model kind of off the shelf because it isn't really going to get you too far"
         }
       ]
     },
@@ -1302,12 +1257,12 @@
         },
         {
           "video_id": "_zl_zimMRak",
-          "start": "00:09:28.399",
-          "end": "00:09:34.080",
-          "start_seconds": 568,
+          "start": "00:09:38.320",
+          "end": "00:09:46.160",
+          "start_seconds": 578,
           "confidence": "high",
           "label": "#197 — Singh, Intuit",
-          "quote": "we made the move from uh uh anthropic cloud instant to anthropic cloud haiku"
+          "quote": "that takes some effort and the only way it's possible is because we have clear eval in place so that we can test out uh whatever we are changing"
         }
       ]
     },
@@ -1373,11 +1328,11 @@
         {
           "video_id": "418t26CVz-w",
           "start": "00:00:38.840",
-          "end": "00:00:39.800",
+          "end": "00:00:48.720",
           "start_seconds": 38,
           "confidence": "high",
           "label": "#918 — Quoraishee & Song, NYT",
-          "quote": "Our puzzles are made by people."
+          "quote": "Our puzzles are made by people. They're not made by AI. So, that's just a thing we this true and it'll always be true. There's no AI in the games themselves."
         }
       ]
     },
@@ -1388,21 +1343,21 @@
       "anchors": [
         {
           "video_id": "_KFbT6eph5A",
-          "start": "00:00:25.320",
-          "end": "00:00:28.960",
-          "start_seconds": 25,
+          "start": "00:05:11.720",
+          "end": "00:05:19.560",
+          "start_seconds": 311,
           "confidence": "high",
           "label": "#588 — Jeff Schomay",
-          "quote": "I made a game with 100% AI generated content"
+          "quote": "this was really tricky especially in my case I needed the perspective and the scale to be consistent from scene to scene"
         },
         {
           "video_id": "grdoOC1BT1s",
-          "start": "00:04:23.680",
-          "end": "00:04:25.000",
-          "start_seconds": 263,
+          "start": "00:05:05.000",
+          "end": "00:05:06.560",
+          "start_seconds": 305,
           "confidence": "high",
           "label": "#827 — An & Hoe, Meta",
-          "quote": "everybody can build a game over the weekend,"
+          "quote": "that doesn't mean everybody can make a good game."
         }
       ]
     },
@@ -1413,12 +1368,12 @@
       "anchors": [
         {
           "video_id": "3E7VAZaTG9M",
-          "start": "00:00:44.800",
-          "end": "00:00:47.280",
-          "start_seconds": 44,
+          "start": "00:11:10.200",
+          "end": "00:11:15.920",
+          "start_seconds": 670,
           "confidence": "high",
           "label": "#512 — Jansepar, Khan Academy",
-          "quote": "transformed KH Academy into an AI first organization"
+          "quote": "magic really comes from when you pair incredible Builders with domain experts who have some unique insight"
         },
         {
           "video_id": "qpmZID27t98",
@@ -1469,6 +1424,15 @@
           "confidence": "high",
           "label": "#822 — Steinfurt, TNG",
           "quote": "it could easily take another 5 years until AI explains chess as well as a human trainer."
+        },
+        {
+          "video_id": "BqZrTdgBaPw",
+          "start": "00:04:34.320",
+          "end": "00:04:35.600",
+          "start_seconds": 274,
+          "confidence": "high",
+          "label": "#822 — Steinfurt, TNG",
+          "quote": "and it's all automated."
         }
       ]
     },
