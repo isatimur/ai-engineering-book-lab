@@ -15,9 +15,6 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
   - [[080-p1CmPZ2j6Lk-agent-reinforcement-fine-tuning-will-hang-cathy-zhou-openai|#80 — Will Hang & Cathy Zhou, OpenAI]] — agent reinforcement fine-tuning as the method for training whole tool-use trajectories.
     - **Anchor:** `p1CmPZ2j6Lk` 00:02:33.360 → 00:02:37.200 · confidence: high
     - **Quote:** "agent reinforcement fine-tuning or agent RF is the way to do this"
-  - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — the arc from pre-training scale to inference-time tricks to RL at training time.
-    - **Anchor:** `QluDzKVfp6A` 00:05:27.039 → 00:05:28.400 · confidence: high
-    - **Quote:** "pre-training is not giving any gains"
 - **Caveats / counterevidence:** The unification holds most cleanly where tool-use trajectories can be rewarded end to end. Some "reasoning" gains still come from architecture and data changes, not RL alone.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** Reasoning and agency are not two research tracks. Train multi-turn tool use with RL and they become the same loop.
@@ -38,8 +35,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate (single-source; the cited source states only that coding is the "root node" problem — the automatic-verifiability mechanism is this ledger's synthesis, not the speaker's words)
 - **Supporting sources:**
   - [[251-QluDzKVfp6A-rl-for-autonomous-coding-aakanksha-chowdhery-reflection-ai|#251 — Aakanksha Chowdhery, Reflection.ai]] — verifiable domains (math, code) turn compute into reliable gains; execution feedback reduces reward-hacking risk; autonomous coding as the "root node" problem.
-    - **Anchor:** `QluDzKVfp6A` 00:16:01.519 → 00:16:03.279 · confidence: high
-    - **Quote:** "autonomous coding as the root node problem"
+    - **Anchor:** `QluDzKVfp6A` 00:15:29.760 → 00:15:33.920 · confidence: high
+    - **Quote:** "Okay. So this means that autonomous coding is a great domain for scaling up RL."
 - **Caveats / counterevidence:** Verifiability buys scale, not correctness of intent — a solution can pass tests and still be wrong for the task. Single-source claim; corroborating verifiable-reward sources would strengthen it.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 1, 4
@@ -171,17 +168,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[228-y-UGrYbJsJk-what-every-ai-engineer-needs-to-know-about-gpus-charles-frye-modal|#228 — Charles Frye, Modal]] — AI's extreme demand for math throughput means engineers now need to understand the GPU underneath.
-    - **Anchor:** `y-UGrYbJsJk` 00:05:09.199 → 00:05:12.720 · confidence: high
-    - **Quote:** "they optimize for math bandwidth over memory bandwidth."
+    - **Anchor:** `y-UGrYbJsJk` 00:03:21.680 → 00:03:34.319 · confidence: high
+    - **Quote:** "Um, and I think we're reaching this point now with uh with language models where um where you'll have more ability to like integrate tightly run your own language models and so more need to like use the index"
   - [[402-3j1dHivahFQ-how-to-build-your-own-ai-data-center-in-2025-paul-gilbert-arista-networks|#402 — Paul Gilbert, Arista Networks]] — "What we do is a plumbing… how you train models, what the infrastructure looks like, and how you do inferencing on the infrastructure."
-    - **Anchor:** `3j1dHivahFQ` 00:00:30.039 → 00:00:41.160 · confidence: high
-    - **Quote:** "what we do is a plumbing uh so I'm not going to talk about agents but more kind of how you train uh models what the infrastructure looks like and how you do inferencing on on the infrastructure"
+    - **Anchor:** `3j1dHivahFQ` 00:10:41.440 → 00:10:55.040 · confidence: high
+    - **Quote:** "RS because they they actually draw with 8 gpus 10.2 KW so you need new racks uh most Enterprises now waking up to this and they're building racks between 100 200 KW and they're water called"
   - [[345-Zz4QjZsYWK0-the-geopolitics-of-ai-infrastructure-dylan-patel-semianalysis|#345 — Dylan Patel, SemiAnalysis]] — chips, data centers, power, and supply chains are now an arena for geopolitical competition (China/US/Middle East; Huawei closing the gap).
     - **Anchor:** `Zz4QjZsYWK0` 00:02:37.200 → 00:02:43.200 · confidence: high
     - **Quote:** "what's interesting about the geopolitics of this is that despite the fact that Huawei is a sanctioned entity, China is a sanctioned country,"
-  - [[547-gADhNzFjGeI-breaking-ai-s-1-ghz-barrier-sunny-madra-groq|#547 — Sunny Madra, Groq]] — "Twenty-five years ago we crossed the 1 gigahertz speed barrier in microprocessors." (purpose-built inference silicon as a step change)
-    - **Anchor:** `gADhNzFjGeI` 00:00:17.880 → 00:00:22.439 · confidence: medium
-    - **Quote:** "25 years ago we crossed the 1 gigahertz speed barrier uh in"
 - **Caveats / counterevidence:** The geopolitical claim (#345) is analysis, not a settled forecast; specifics (export controls, Huawei's position) move quickly and date fast. The new-silicon bet (#547) is a vendor's framing of its own chip.
 - **Candidate chapters:** 2, 3
 - **Reusable phrasing:** Movement A is the frontier you can push; Movement B is the ceiling that pushes back.
@@ -238,23 +232,20 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `zZsTVBXcbow` 00:03:57.200 → 00:04:01.200 · confidence: high
     - **Quote:** "our approach we look for root nodes. You know we're not going to waste time on the leaves."
   - [[267-8EQo4J2BWKw-thinking-deeper-in-gemini-jack-rae-google-deepmind|#267 — Jack Rae, DeepMind]] — thinking framed as "unblocking bottlenecks towards intelligence"; identifying the crucial shortcoming often makes the fix follow. (Worked example inside Gemini; #13 carries the general form.)
-    - **Anchor:** `8EQo4J2BWKw` 00:00:48.879 → 00:00:51.039 · confidence: high
-    - **Quote:** "unblocking bottlenecks towards intelligence."
-- **Caveats / counterevidence:** Both sources are DeepMind, so this is one lab's account of research culture; balance against non-Google labs before generalizing. #267 is also cited in Chapter 1 (for how thinking is trained); here the emphasis is research method, with #13 as spine to avoid re-arguing Ch1.
+    - **Anchor:** `8EQo4J2BWKw` 00:02:38.800 → 00:02:44.879 · confidence: high
+    - **Quote:** "So, progress has really been marked by identifying key bottlenecks towards intelligence and then solving them."
+- **Caveats / counterevidence:** Both sources are DeepMind, so this is one lab's account of research culture; balance against non-Google labs before generalizing. #267 is also cited in Chapter 1 (for how thinking is trained); here the emphasis is research method, with #13 as spine to avoid re-arguing Ch1. **Re-anchored 2026-09-09:** #267's anchor was a noun phrase lifted from his agenda sentence; he states the general form himself 110 seconds later — "progress has really been marked by identifying key bottlenecks towards intelligence and then solving them" — so the entry no longer depends on #13 to carry it.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
 - **Candidate chapters:** 1, 3
 - **Reusable phrasing:** Frontier progress is a sequence of correctly chosen bottlenecks, and choosing them is the skill that separates the labs.
 
 ## 16) Code is where labs learn to model computation, not just imitate it
 - **Why it matters:** Frontier labs start reasoning work in code, and the reason is deeper than code being lucrative or easy to grade. Code is the first world simple enough to simulate honestly — constrained, rule-bound, and executable — so a model can be trained to predict what a program *does*, not just how it looks. The ambition is modeling computation itself, the semantics under the syntax, and reasoning learned there is meant to generalize outward.
-- **Support level:** strong
+- **Support level:** moderate — downgraded 2026-09-09, and now single-source. The second source (#49, Poolside) was dropped: its anchor was a company self-description ("Poolside exists to close the gap between models and human intelligence") that never mentions code, and a sweep for `world model`, `verifiab`, `start with code`, `code because`, `generalize` returned zero hits across the talk. Its real content — next-token prediction needing RL — belongs to claims 1 and 2.
 - **Supporting sources:**
   - [[067-sYgE4ppDFOQ-code-world-model-building-world-models-for-computation-jacob-kahn-fair-meta|#67 — Jacob Kahn, FAIR Meta]] — "Our primary goal is to build models that reason, plan and make decisions. And we start with code because it's an interesting sandbox in which to think about reasoning"; goal is predicting future observations (execution), not syntax.
-    - **Anchor:** `sYgE4ppDFOQ` 00:00:44.160 → 00:00:47.200 · confidence: high
-    - **Quote:** "Our primary goal is to build models that reason, plan and make decisions."
-  - [[049-OGCG_QkCcZo-agi-the-path-forward-jason-warner-eiso-kant-poolside|#49 — Jason Warner & Eiso Kant, Poolside]] — "Poolside exists to close the gap between models and human intelligence… We're building our own models from scratch to do this," starting from code, pairing next-token prediction with RL.
-    - **Anchor:** `OGCG_QkCcZo` 00:00:30.720 → 00:00:34.960 · confidence: high
-    - **Quote:** "Poolside exists to close the gap between models and human intelligence."
+    - **Anchor:** `sYgE4ppDFOQ` 00:00:44.719 → 00:00:55.680 · confidence: high
+    - **Quote:** "goal is to build models that reason, plan and make decisions. And we start with code because it's an interesting sandbox in which to think about reasoning, right? It's constrained. uh there are certain rules with code"
 - **Caveats / counterevidence:** Distinct from claim 3 (code as the *RL-scaling* domain because its rewards are automatically verifiable, Ch 1): this is the *world-modeling* rationale — code as a simulable world — not the reward-mechanics rationale. The two are complementary; the reward-verifiability argument stays in Ch 1. Whether computation-modeling in code generalizes to non-code reasoning is the open bet both talks are making, not a settled result.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** Code is chosen as the first world simple enough to simulate honestly — picked for its rule-boundedness, not just its gradeability.
@@ -264,8 +255,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[253-W3khHzajE04-benchmarks-are-memes-how-what-we-measure-shapes-ai-and-us-alex-duffy-every-to|#253 — Alex Duffy, Every.to]] — benchmarks as memes (ideas that replicate and shape behavior); "what we measure shapes AI — and us"; the things we choose to measure become self-fulfilling prophecies.
-    - **Anchor:** `W3khHzajE04` 00:00:24.880 → 00:00:28.400 · confidence: high
-    - **Quote:** "benchmarks are just memes that shape the most powerful tool ever created."
+    - **Anchor:** `W3khHzajE04` 00:04:54.479 → 00:05:01.919 · confidence: high
+    - **Quote:** "And so the point is that the people here, the people that get that, the people that can build benchmarks are going to shape the future."
   - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — Barr Yaron, Amplify]] — 2025 survey (n=500): evaluation named the single most painful part of AI engineering. (Supplies the practitioner-side fact — the field cannot measure well — not the steering claim itself.)
     - **Anchor:** `mQ7_Zje7WKE` 00:11:18.240 → 00:11:22.959 · confidence: high
     - **Quote:** "number one most painful thing about AI engineering today? And evaluation topped"
@@ -278,17 +269,17 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[009-_gVFUEdhCyI-gemma-deepmind-s-family-of-open-models-omar-sanseviero-google-deepmind|#9 — Omar Sanseviero, DeepMind]] — "Open models means… you can download, you can run in your own infrastructure, your own devices. You can fine-tune for your own use cases."
-    - **Anchor:** `_gVFUEdhCyI` 00:00:34.320 → 00:00:38.680 · confidence: medium
-    - **Quote:** "you can take, you can download, you can run in your own infrastructure, your own devices."
+    - **Anchor:** `_gVFUEdhCyI` 00:09:01.560 → 00:09:09.120 · confidence: high
+    - **Quote:** "So what is very cool for me is that Gemma is not just about always some model that you can use, but it's more about enabling the ecosystem to build on top of it."
   - [[528-AUuktOQPWYg-decoding-mistral-ai-s-large-language-models-devendra-chaplot|#528 — Devendra Chaplot, Mistral AI]] — frames the talk around "why we do open source and how we do open source," from a lab with commercial models and platform alongside the open ones.
-    - **Anchor:** `AUuktOQPWYg` 00:00:31.480 → 00:00:34.680 · confidence: high
-    - **Quote:** "why we do open source and how we do open source"
+    - **Anchor:** `AUuktOQPWYg` 00:05:04.199 → 00:05:29.960 · confidence: medium
+    - **Quote:** "so a lot of people ask me if you open source your models how do you make money and I think this is a common misconception that people have that open source is somewhat uh competitive with profit that's actually not the case we see open source as uh uh something that is goes hand inand with profit"
   - [[480-Xmkl27AM2VQ-unveiling-the-latest-gemma-model-advancements-kathleen-kenealy|#480 — Kathleen Kenealy, DeepMind]] — Gemma's north star: "building something to empower and accelerate the amazing work being done by the open source community," measured by what gets built on top.
     - **Anchor:** `Xmkl27AM2VQ` 00:00:36.600 → 00:00:42.760 · confidence: high
     - **Quote:** "building something to empower and accelerate the amazing work being done by the open source community"
   - [[400-b0xlsQ_6wUQ-the-future-of-qwen-a-generalist-agent-model-junyang-lin-alibaba-qwen|#400 — Junyang Lin, Alibaba Qwen]] — Qwen shipped continuously as an open series since 2023 toward the stated goal of a generalist agent model.
-    - **Anchor:** `b0xlsQ_6wUQ` 00:00:27.760 → 00:00:30.720 · confidence: high
-    - **Quote:** "we have a dream of building a journalist model and generalist agent"
+    - **Anchor:** `b0xlsQ_6wUQ` 00:15:55.680 → 00:16:06.720 · confidence: high
+    - **Quote:** "We love open sourcing because open sourcing really helps us quite a lot. Um by uh the developers can give us some feedbacks to help us uh improve our models."
 - **Caveats / counterevidence:** Sources are the releasing labs themselves, so the "strategy" reading is partly their own narrative; a critic might see competitive pressure or talent signaling as equal drivers. The ecosystem-control mechanism is argued, not measured here.
 - **Candidate chapters:** 3
 - **Reusable phrasing:** Open weights are how a lab that is not first in raw capability can still become the substrate the field standardizes on.
@@ -323,14 +314,14 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[247-AbZ4IYGbfpQ-netflix-s-big-bet-one-model-to-rule-recommendations-yesu-feng-netflix|#247 — Yesu Feng, Netflix]] — "to use one foundation model to cover all the recommendation use cases," behind every row of a homepage previously served by specialized models.
-    - **Anchor:** `AbZ4IYGbfpQ` 00:00:26.400 → 00:00:29.920 · confidence: high
-    - **Quote:** "to use one foundation model to cover all the recommendation use cases."
+    - **Anchor:** `AbZ4IYGbfpQ` 00:04:47.360 → 00:04:51.280 · confidence: high
+    - **Quote:** "second is that by integrating the foundation model into all systems we can create high leverage."
   - [[245-LxQsQ3vZDqo-teaching-gemini-to-speak-youtube-adapting-llms-for-video-recommendations-to-2b-dau-devansh|#245 — Devansh Tandon, YouTube]] — adapting Gemini into a recommender that speaks in video IDs, replacing the traditional stack of large embedding models.
     - **Anchor:** `LxQsQ3vZDqo` 00:02:35.360 → 00:02:39.360 · confidence: high
     - **Quote:** "how can we rethink this recommendation system on top of Gemini,"
   - [[248-U0S6CfzAY5c-360brew-llm-based-personalized-ranking-and-recommendation-hamed-and-maziar-linkedin-ai|#248 — Hamed & Maziar, LinkedIn]] — a single foundation model for ranking and recommendation taken to production across the platform's many surfaces.
-    - **Anchor:** `U0S6CfzAY5c` 00:17:35.280 → 00:17:37.840 · confidence: high
-    - **Quote:** "We tried we were trying to see if you can actually make it a foundation model"
+    - **Anchor:** `U0S6CfzAY5c` 00:01:43.280 → 00:02:01.840 · confidence: high
+    - **Quote:** "So the mission that we started was to build a large foundation uh model based on large language models that understand the the holist have a holistic understanding of the user uh journey on LinkedIn platform and can solve all the personalization tasks that that LinkedIn has with just one model."
 - **Caveats / counterevidence:** Three independent large-scale confirmations make the trend strong, but all three are the teams building the thing they describe; whether one model matches a tuned fleet on every surface is their in-progress bet, not a settled result. This is the *consolidation* mechanism; claim 19 (tokenization) is the other, distinct convergence force.
 - **Candidate chapters:** 4
 - **Reusable phrasing:** The move that produced the general-purpose chatbot — one model instead of many — is now the default architecture for recommendation at scale.
@@ -413,8 +404,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[229-MBWGiWJDlSo-robots-as-professional-chefs-nikhil-abraham-cloudchef|#229 — Nikhil Abraham, CloudChef]] — a general-purpose robot "that was not meant for cooking — it was just a robot with two hands," put "through culinary school," so that "it's now a professional chef that's working in various different kitchens."
-    - **Anchor:** `MBWGiWJDlSo` 00:00:30.560 → 00:00:33.840 · confidence: high
-    - **Quote:** "it's now a professional chef that's working in various different kitchens"
+    - **Anchor:** `MBWGiWJDlSo` 00:02:29.840 → 00:02:42.080 · confidence: high
+    - **Quote:** "human, it plugs in place into any arbitrary novel kitchen. So it learns new recipes from one expert demonstration and it is robust to ingredient variation, appliance variation, and can cook on arbitrary portion sizes."
 - **Caveats / counterevidence:** Moderate: a single company's account of its own system. The strongest figures — learning a recipe from a single demonstration, generalizing to novel kitchens — are the company's to prove and are not independently verified here.
 - **Candidate chapters:** 5
 - **Reusable phrasing:** The body is general; the training makes it a professional — and generalization here means an unseen kitchen, not an unseen question.
@@ -450,11 +441,11 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** strong
 - **Supporting sources:**
   - [[446-cZ5ZJy19KMo-mission-critical-evals-at-scale-learnings-from-100k-medical-decisions|#446 — Anterior]] — a real-time, reference-free (label-free) eval layer scoring every prior-authorization case before ground truth exists, used to earn customer trust and to dynamically route scarce human review.
-    - **Anchor:** `cZ5ZJy19KMo` 00:00:22.800 → 00:00:26.519 · confidence: high
-    - **Quote:** "real-time reference-free evals can be the special source that enables customer trust"
+    - **Anchor:** `cZ5ZJy19KMo` 00:05:38.319 → 00:05:49.240 · confidence: high
+    - **Quote:** "and the solution for that for these two problems is realtime reference-free evaluation system so reference free also known as label free means that you evaluate before you know the true outcome"
   - [[938-O72p-rBb2bA-evals-driven-development-for-a-mental-health-ai-coach-akele-reed-dave-revere-sondermind|#938 — Reed & Revere, SonderMind]] — a licensed clinician's annotations are compiled into typed evals that gate every prompt/model/guardrail change in CI; the design goal is "more correct triggers," not more triggers.
-    - **Anchor:** `O72p-rBb2bA` 00:06:42.639 → 00:06:43.759 · confidence: high
-    - **Quote:** "more correct triggers."
+    - **Anchor:** `O72p-rBb2bA` 00:11:45.360 → 00:11:55.920 · confidence: medium
+    - **Quote:** "That's the key move here is that our system isn't deciding what correct is in a clinical edge case like this one. A licensed professional is."
 - **Caveats / counterevidence:** Distinct from claim 36 (which owns eval *cadence at scale* — continuous in production): claim 31 owns eval's *status* (the product itself, the trust-earning layer, reference-free scoring). Both cite #446; do not merge them. Reported figures in #446 (F1 near 96%, under 10 clinicians vs. a competitor's 800+ nurses) are self-reported by the speaker. This is a domain argument, not an evals-technique reprise of book 1's evals chapter: the point is that stakes make the eval load-bearing and that the domain expert (the clinician) defines ground truth — not how judges or rubrics are built.
 - **Candidate chapters:** 6
 - **Reusable phrasing:** When there is no room for error, the eval is not what you build to ship the product — it is the product.
@@ -623,8 +614,8 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
 - **Support level:** moderate
 - **Supporting sources:**
   - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Quoraishee & Song, NYT]] — local agentic theory for accessible mobile games, pushing agentic behavior on-device for accessibility and low latency, while stating the puzzles themselves are made by people, not AI.
-    - **Anchor:** `418t26CVz-w` 00:00:18.480 → 00:00:20.800 · confidence: high
-    - **Quote:** "local agentic theory for accessible mobile games."
+    - **Anchor:** `418t26CVz-w` 00:03:20.920 → 00:03:28.959 · confidence: medium
+    - **Quote:** "we can offload a lot of the intelligence onto a device. What that does is make a lot of the make a lot of the calls faster"
 - **Caveats / counterevidence:** Distinct facet of #918 from ledger claim 38 (which uses #918 for the human-authored-truth point); claim 43 owns the *local/on-device-for-accessibility* point. Both draw on the same boilerplate note, so both legs rest on its title and verbatim transcript-excerpt quotes; do not merge them. Single-source; a full transcript read would let #918 carry the local-agentic architecture in more detail. Relates to ledger claim 9 (on-device inference, Ch 2) applied to play.
 - **Candidate chapters:** 7
 - **Reusable phrasing:** In games the agent goes local for reach and speed, and the puzzle stays human for craft.
