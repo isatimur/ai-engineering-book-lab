@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 132
+- Total tagged videos: 138
 
 ## Cross-video synthesis
 
-- This theme appears across 132 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (21), Org Design & Leadership (19).
+- This theme appears across 138 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: RAG & Retrieval (22), Evals & Reliability (21), Org Design & Leadership (19).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
 ## Seed videos
@@ -144,6 +144,12 @@
 - [[1001-Cc0_nyxROBA-from-rl-to-irl-gaurav-mishra-amazon-agi-lab|#1001 — From RL to IRL — Gaurav Mishra, Amazon AGI Lab]]
 - [[1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori|#1002 — Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori]]
 - [[1046-4loPnxvWWhg-your-fine-tuned-model-is-tech-debt-a-50x-roi-house-of-cards-dan-bjornn-lease-end|#1046 — Your Fine-Tuned Model Is Tech Debt: A 50x ROI House of Cards — Dan Bjornn, Lease End]]
+- [[1082-B0fjR3yaZFU-how-do-you-diffuse-ai-into-the-real-world-varun-shenoy-long-lake|#1082 — How do you diffuse AI into the real world? — Varun Shenoy, Long Lake]]
+- [[1090-jebp4V0vh30-agentic-sites-building-hyper-personalized-websites-carlos-sanchez-adobe|#1090 — Agentic Sites: Building Hyper Personalized Websites — Carlos Sanchez, Adobe]]
+- [[1110-y2W4FNAuPEA-deep-dive-on-llm-inference-at-scale-harshul-jain-audible-tanmay-sah-independent-ai-researc|#1110 — Deep dive on LLM Inference at Scale — Harshul Jain, Audible & Tanmay Sah, Independent AI Researcher]]
+- [[1112-xo68uCibfm8-it-s-tokens-all-the-way-down-how-rlms-are-different-kevin-madura-alixpartners|#1112 — It’s Tokens All The Way Down: How RLMs are Different — Kevin Madura, AlixPartners]]
+- [[1113-9wZpvF3QleU-500-skills-zero-fine-tuning-linkedin-s-playbook-for-ai-agents-ajay-prakash-linkedin|#1113 — 500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents — Ajay Prakash, LinkedIn]]
+- [[1116-lbaXnx0KLA8-mcp-apps-give-the-model-data-give-the-user-a-ui-dustin-mihalik-indeed|#1116 — MCP Apps: Give the Model Data, Give the User a UI — Dustin Mihalik, Indeed]]
 
 ## Notes
 
