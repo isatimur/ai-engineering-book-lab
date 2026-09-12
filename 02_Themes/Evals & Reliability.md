@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 485
+- Total tagged videos: 486
 
 ## Cross-video synthesis
 
-- This theme appears across 485 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 486 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Coding Agents (372), Agent Architecture (351), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
@@ -497,6 +497,7 @@
 - [[1071-G7cgLjZtmMU-the-agentic-commerce-stack-ahnaf-prio-best-buy|#1071 — The Agentic Commerce Stack — Ahnaf Prio, Best Buy]]
 - [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
 - [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
+- [[1077-bMjlRrWjdT0-ai-evals-for-cross-functional-teams-nachiket-paranjape-swaroop-chitlur-haridas-doordash|#1077 — AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash]]
 
 ## Notes
 

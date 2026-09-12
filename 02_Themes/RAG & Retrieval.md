@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 167
+- Total tagged videos: 168
 
 ## Cross-video synthesis
 
-- This theme appears across 167 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (20).
+- This theme appears across 168 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (22), Evals & Reliability (20).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
 ## Seed videos
@@ -179,6 +179,7 @@
 - [[916-Sir59K8ZDPU-why-agentic-systems-need-ontologies-frank-coyle-uc-berkeley|#916 — Why Agentic Systems Need Ontologies — Frank Coyle, UC Berkeley]]
 - [[976-_PdK6x7PQNM-data-quality-is-the-compute-multiplier-ari-morcos-datologyai|#976 — Data Quality Is the Compute Multiplier — Ari Morcos, DatologyAI]]
 - [[1006-WiqDvX6isc4-scaling-compute-on-context-jack-morris-engram|#1006 — Scaling Compute on Context — Jack Morris, Engram]]
+- [[1110-y2W4FNAuPEA-deep-dive-on-llm-inference-at-scale-harshul-jain-audible-tanmay-sah-independent-ai-researc|#1110 — Deep dive on LLM Inference at Scale — Harshul Jain, Audible & Tanmay Sah, Independent AI Researcher]]
 
 ## Notes
 
