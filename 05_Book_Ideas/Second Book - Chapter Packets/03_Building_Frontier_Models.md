@@ -43,6 +43,8 @@ Zoom out from technique (Ch 1) and serving (Ch 2) to the labs and the strategy: 
 > "I counted 30 significant model releases in the past six months." — [[269-YpY83-kA7Bo-2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison|Simon Willison]] (#269)
 
 > "Poolside exists to close the gap between models and human intelligence… We're building our own models from scratch to do this." — [[049-OGCG_QkCcZo-agi-the-path-forward-jason-warner-eiso-kant-poolside|Jason Warner / Eiso Kant, Poolside]] (#49)
+>
+> **Do not use this to argue code-as-substrate (2026-09-09).** The talk never makes that case: zero hits for `world model`, `start with code`, `code because`, `generalize`. It argues the training method — next-token prediction "need to be paired with reinforcement learning really to make that leap" — and says outright that code is not the boundary: "our models aren't just capable coding agents. They're capable in lots of areas of knowledge work." Dropped as a source for claims#16 for this reason.
 
 > "Our primary goal is to build models that reason, plan and make decisions. And we start with code because it's an interesting sandbox in which to think about reasoning." — [[067-sYgE4ppDFOQ-code-world-model-building-world-models-for-computation-jacob-kahn-fair-meta|Jacob Kahn, FAIR Meta]] (#67)
 
