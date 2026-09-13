@@ -83,17 +83,40 @@ full panel run clears it.
 How much does the gap matter? Two of the three canonical judges were re-run on the committed
 text and both had zero nulls. Chapter 2's usefulness rollup moved **0.0 on deepseek (75.2 →
 75.2) and −0.6 on llama (61.0 → 60.4)**; humanness was unchanged on both. The third judge,
-qwen, could not be re-run: it missed the content cache that made the other two cost $0.006
-each, spent $0.26 on fresh calls, and exhausted the OpenRouter balance mid-run with 496 nulls.
-That run is discarded, not published — a two-judge panel is a different instrument from the
-canonical three-judge median.
+qwen, could not be re-run: it had to re-buy 416 judgements the other two replayed for free,
+exhausted the OpenRouter balance mid-run, and returned 416 HTTP 402s as nulls. That run is
+discarded, not published — a two-judge panel is a different instrument from the canonical
+three-judge median.
 
 So the honest reading is that the shipped text is worth very close to 60.2, but *very close* is
 not *measured*, and the badge says so until a three-judge run on `db85` says otherwise. The publish
 script now warns when the drafting tree is dirty, and `restamp.sh` re-labels a published panel once
-the commit exists. Why qwen missed a cache holding 5,712 of its own entries is unexplained and
-worth finding before the next run — it is the difference between a $0.02 re-measure and a
-$0.26 one.
+the commit exists.
+
+### Why qwen had nothing to replay
+
+Not a pricing anomaly, and not a fault of qwen's. `JudgeScoreCache` read the whole cache file at
+start and wrote the whole file at the end, with no merge, so two runs in flight meant the last to
+flush discarded everything the others had cached. The panel runs its three members in parallel, so
+this was the normal case.
+
+The v12 member timings show it exactly: deepseek started first and finished last, 00:05:24 to
+00:24:09. llama flushed at 00:07:23 and qwen at 00:16:00, both inside that window, and deepseek's
+flush wrote back a dict loaded at 00:05 that contained neither. deepseek and llama re-cached their
+entries when they re-ran successfully today; qwen never got the chance, which is why it alone faced
+a cold cache. The erasure is invisible — the file keeps its size and shape, and the erased model
+simply pays full price again.
+
+Fixed upstream in book-mash `0ce8928`: flush re-reads and merges disk under memory, writes through
+a same-directory temp file and a rename, and a corrupt cache is now a loud warning, not a crash.
+Three regression tests pin the clobber, the atomic write, and the corrupt-file path.
+
+One thing this rules out, which matters more than the cost: qwen holds 114 evidence_density entries
+under a context key neither other judge has, and that key hashes the claims ledger. If qwen had
+voted against a different ledger inside v12, v12's evidence_density median would be a mix of two
+ledger states. It did not. The clobber explains the absence of its current-key entries on its own,
+the claims loader is order-deterministic, and qwen has no entries keyed to an empty ledger either.
+The 114 are older-era leftovers. **v12's evidence_density median stands.**
 
 The gate's round-1 finding shaped the result as much as the edits did. Six of fifteen edits had
 promoted hedged sources to absolutes — Artman's "might" became "every competitor", a ledger
