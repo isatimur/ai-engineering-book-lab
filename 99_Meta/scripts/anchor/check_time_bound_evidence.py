@@ -40,6 +40,22 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 
+# The four verdicts a currency review can reach. All four count as triaged: the
+# point of the unmarked count is "has a human recorded a decision here", not
+# "did the evidence turn out to be stale".
+#
+#   **Superseded**             the quote's assertion has stopped being true
+#   **Newer edition**          the quote stands; a later edition of the source exists
+#   **Prescription superseded** the quote stands; the advice built on it does not
+#   **Currency checked**       reviewed against newer corpus, nothing overtakes it
+#
+# The last two were added 2026-09-14. Without them a pass that correctly
+# concludes "still current" leaves no trace, so the next pass re-reads the same
+# quotes and reaches the same answer — and a checklist that never shrinks stops
+# being read. Three of five book-1 claims reviewed that day came back current.
+_MARKERS = ("**Superseded", "**Newer edition",
+            "**Prescription superseded", "**Currency checked")
+
 PATTERNS = {
     "novelty": (
         r"\b(no one|nobody)\b[^.]{0,40}\b(is |are |has |have )?(doing|does|done|built|building)\b"
@@ -90,7 +106,7 @@ for i, ln in enumerate(lines):
         continue
     if not kinds:
         continue
-    # Marked if a staleness note follows before the next quote or source.
+    # Marked if any staleness verdict follows before the next quote or source.
     # BOTH documented conventions count. This originally looked only for
     # **Superseded and so reported already-triaged evidence as unmarked —
     # book 1's claims#35 carried a **Newer edition note from 2026-09-04 and
@@ -98,7 +114,7 @@ for i, ln in enumerate(lines):
     # settled items teaches you to ignore it.
     marked = False
     for nxt in lines[i + 1:i + 4]:
-        if "**Superseded" in nxt or "**Newer edition" in nxt:
+        if any(m in nxt for m in _MARKERS):
             marked = True
             break
         if "**Quote:**" in nxt or nxt.startswith("  - [["):
@@ -108,7 +124,7 @@ for i, ln in enumerate(lines):
 unmarked = [f for f in findings if not f[3]]
 marked = [f for f in findings if f[3]]
 print(f"{a.ledger}: {len(findings)} time-bound quote(s) — "
-      f"{len(marked)} marked (superseded or newer edition), "
+      f"{len(marked)} marked (reviewed), "
       f"{len(unmarked)} unmarked\n")
 
 for kind in SEVERITY:
