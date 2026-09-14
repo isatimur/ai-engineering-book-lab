@@ -817,12 +817,21 @@
       "anchors": [
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:09:26.560",
+          "end": "00:09:36.440",
+          "start_seconds": 566,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "If you have 10 agents running at one point in time then you have 10 times the throughput. But we tried that and it doesn't really work for tasks in the like software dev domain because agents conflict."
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:48.880",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions. And so the coordination overhead ends up eating up the speed gains all the while you're burning tokens."
         },
         {
           "video_id": "ObNKGf9YR0g",
@@ -879,11 +888,11 @@
         {
           "video_id": "0n3MKk7r60w",
           "start": "00:05:33.120",
-          "end": "00:05:35.600",
+          "end": "00:05:36.040",
           "start_seconds": 333,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "49% reduction of the initial"
+          "quote": "49% reduction of the initial load."
         },
         {
           "video_id": "_B4Pv9ttFgY",
@@ -1783,12 +1792,21 @@
       "anchors": [
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:09:26.560",
+          "end": "00:09:36.440",
+          "start_seconds": 566,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "If you have 10 agents running at one point in time then you have 10 times the throughput. But we tried that and it doesn't really work for tasks in the like software dev domain because agents conflict."
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:48.880",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions. And so the coordination overhead ends up eating up the speed gains all the while you're burning tokens."
         },
         {
           "video_id": "ObNKGf9YR0g",
@@ -2711,12 +2729,21 @@
       "anchors": [
         {
           "video_id": "ow1we5PzK-o",
-          "start": "00:00:19.760",
-          "end": "00:00:26.320",
-          "start_seconds": 19,
+          "start": "00:09:26.560",
+          "end": "00:09:36.440",
+          "start_seconds": 566,
           "confidence": "high",
           "label": "#653 — Luke Alvoeiro, Factory",
-          "quote": "you'll be able to assemble agent teams that can complete tasks orders of magnitude harder than what you can complete with a single agent today."
+          "quote": "If you have 10 agents running at one point in time then you have 10 times the throughput. But we tried that and it doesn't really work for tasks in the like software dev domain because agents conflict."
+        },
+        {
+          "video_id": "ow1we5PzK-o",
+          "start": "00:09:37.400",
+          "end": "00:09:48.880",
+          "start_seconds": 577,
+          "confidence": "high",
+          "label": "#653 — Luke Alvoeiro, Factory",
+          "quote": "They step on each other's changes. They duplicate work. They make inconsistent architectural decisions. And so the coordination overhead ends up eating up the speed gains all the while you're burning tokens."
         },
         {
           "video_id": "ObNKGf9YR0g",
@@ -4115,11 +4142,11 @@
         {
           "video_id": "0n3MKk7r60w",
           "start": "00:05:33.120",
-          "end": "00:05:35.600",
+          "end": "00:05:36.040",
           "start_seconds": 333,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "49% reduction of the initial"
+          "quote": "49% reduction of the initial load."
         },
         {
           "video_id": "_B4Pv9ttFgY",
@@ -5070,11 +5097,11 @@
         {
           "video_id": "0n3MKk7r60w",
           "start": "00:05:33.120",
-          "end": "00:05:35.600",
+          "end": "00:05:36.040",
           "start_seconds": 333,
           "confidence": "high",
           "label": "#625 — Sam Morrow, GitHub",
-          "quote": "49% reduction of the initial"
+          "quote": "49% reduction of the initial load."
         },
         {
           "video_id": "_B4Pv9ttFgY",
