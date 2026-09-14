@@ -90,10 +90,15 @@ for i, ln in enumerate(lines):
         continue
     if not kinds:
         continue
-    # Marked if a Superseded note follows before the next quote or source.
+    # Marked if a staleness note follows before the next quote or source.
+    # BOTH documented conventions count. This originally looked only for
+    # **Superseded and so reported already-triaged evidence as unmarked —
+    # book 1's claims#35 carried a **Newer edition note from 2026-09-04 and
+    # was still being listed as outstanding. A checklist that renags about
+    # settled items teaches you to ignore it.
     marked = False
     for nxt in lines[i + 1:i + 4]:
-        if "**Superseded" in nxt:
+        if "**Superseded" in nxt or "**Newer edition" in nxt:
             marked = True
             break
         if "**Quote:**" in nxt or nxt.startswith("  - [["):
@@ -103,7 +108,8 @@ for i, ln in enumerate(lines):
 unmarked = [f for f in findings if not f[3]]
 marked = [f for f in findings if f[3]]
 print(f"{a.ledger}: {len(findings)} time-bound quote(s) — "
-      f"{len(marked)} marked superseded, {len(unmarked)} unmarked\n")
+      f"{len(marked)} marked (superseded or newer edition), "
+      f"{len(unmarked)} unmarked\n")
 
 for kind in SEVERITY:
     group = [f for f in unmarked if f[1] == kind]
