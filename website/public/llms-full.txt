@@ -531,7 +531,7 @@ Jain’s concrete example is instructive. Rather than inventing toy tasks, his t
 
 This matters beyond coding. In a support system, the right eval set may come from painful historical tickets. In a legal workflow, it may come from real review patterns that produced escalations. In a research tool, it may come from queries whose wrong answers were persuasive enough to mislead users. The strongest eval sets are often not imagined in a conference room. They are harvested from the places where the system or its human predecessors actually struggled.
 
-This is why human-seeded evals matter so much. Samuel Colvin’s framing is useful not because it romanticizes manual labor, but because it reminds us that humans are often the only reliable source of task realism early on. They know which failures are expensive, which edge cases are recurrent, and which “good-looking” outputs are secretly wrong. Early eval discipline often begins with a human saying: this class of mistake bit us three times last month; from now on it belongs in the test set. The more a system does real work, the less synthetic evals can tell you.
+This is why the early eval set is usually seeded by hand. Samuel Colvin describes the common practice: “in general what people end up doing is they have some subset of data that’s been like human annotated.” Humans know which failures are expensive, which edge cases are recurrent, and which “good-looking” outputs are secretly wrong. Early eval discipline often begins with a human saying: this class of mistake bit us three times last month; from now on it belongs in the test set. The more a system does real work, the less synthetic evals can tell you.
 
 ## Reliability got harder, not easier
 
