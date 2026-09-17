@@ -67,14 +67,31 @@ env:
 jobs:
   gates:
     runs-on: ubuntu-latest
-    # Skipped, not failed, when the corpus is unreachable. See the header.
-    if: ${{ secrets.CORPUS_TOKEN != '' }}
+    env:
+      # A secret cannot be referenced from a job-level `if:` — GitHub rejects the
+      # whole workflow file if you try (run 35231664682). Reading it into env and
+      # branching on a step output is the supported way to make a job dormant.
+      CORPUS_TOKEN: ${{ secrets.CORPUS_TOKEN }}
     steps:
+      - name: Is the transcript corpus reachable?
+        id: guard
+        run: |
+          if [ -z "${CORPUS_TOKEN}" ]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::CORPUS_TOKEN is not set, so the transcript corpus is"
+            echo "::notice::unreachable and every gate below would be vacuous."
+            echo "::notice::Skipping. See this workflow's header to enable."
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.guard.outputs.enabled == 'true'
 
       # The transcripts are the evidence. Without them every gate below is
       # vacuous, so this checkout is a precondition, not a convenience.
       - name: Check out the transcript corpus
+        if: steps.guard.outputs.enabled == 'true'
         uses: actions/checkout@v4
         with:
           repository: isatimur/ai-engineer-corpus-transcripts
@@ -82,6 +99,7 @@ jobs:
           path: 99_Meta/transcripts
 
       - name: Confirm the corpus is actually present
+        if: steps.guard.outputs.enabled == 'true'
         run: |
           COUNT=$(find 99_Meta/transcripts/plain -name '*.txt' 2>/dev/null | wc -l)
           echo "transcripts on disk: ${COUNT}"
@@ -92,6 +110,7 @@ jobs:
           fi
 
       - uses: actions/setup-python@v5
+        if: steps.guard.outputs.enabled == 'true'
         with:
           python-version: '3.11'
 
@@ -99,41 +118,50 @@ jobs:
       # so it needs one step per book. A single invocation silently covers only
       # book 1 while reading as if it covered both.
       - name: Ledger anchors resolve — book 1 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
         run: python3 99_Meta/scripts/anchor/verify_ledger.py
 
       - name: Ledger anchors resolve — book 2 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
         run: |
           python3 99_Meta/scripts/anchor/verify_ledger.py \
             --ledger 'claims-2/Claims Ledger.md'
 
       - name: Quote speakers — book 1 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
         run: python3 99_Meta/scripts/anchor/check_quote_speakers.py --strict
 
       - name: Quote speakers — book 2 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
         run: |
           python3 99_Meta/scripts/anchor/check_quote_speakers.py \
             --glob 'public/drafting-2/*.md' --strict
 
       - name: Title-as-speech — book 1 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
         run: python3 99_Meta/scripts/anchor/check_title_quotes.py --strict
 
       - name: Title-as-speech — book 2 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
         run: |
           python3 99_Meta/scripts/anchor/check_title_quotes.py \
             --glob 'public/drafting-2/*.md' --strict
 
       - name: Prose quotes verbatim — book 1 (ceiling)
+        if: steps.guard.outputs.enabled == 'true'
         run: |
           python3 99_Meta/scripts/anchor/verify_prose_quotes.py \
             --max-unmatched "${BOOK1_MAX_UNMATCHED}"
 
       - name: Prose quotes verbatim — book 2 (ceiling)
+        if: steps.guard.outputs.enabled == 'true'
         run: |
           python3 99_Meta/scripts/anchor/verify_prose_quotes.py \
             --glob 'public/drafting-2/*.md' \
             --max-unmatched "${BOOK2_MAX_UNMATCHED}"
 
       - name: Dropped ledger quotes still in prose (advisory)
+        if: steps.guard.outputs.enabled == 'true'
         continue-on-error: true
         run: |
           for b in 1 2; do
