@@ -1,17 +1,28 @@
 name: evidence-gates
 
 # The anchor gates under 99_Meta/scripts/anchor/ check that the books only put
-# words in a named person's mouth that the person actually said. Until now none
-# of them ran in CI for either book — they ran when someone remembered. That is
-# why a framing Samuel Colvin never gave sat in a shipped chapter of book 1, and
-# why book 2 credited Kyle Corbitt with three rungs of a ladder his talk never
-# mentions. Both were found by reading, months after they shipped.
+# words in a named person's mouth that the person actually said.
 #
-# Blocking vs advisory is decided by whether the check has a legitimate nonzero
+# WHY THIS WAS NEVER IN CI, AND WHAT IT NEEDS
+#
+# Every one of these gates resolves a quote against the talk transcripts in
+# 99_Meta/transcripts/. That directory is gitignored (26 MB, .gitignore line 19)
+# and lives in the PRIVATE mirror isatimur/ai-engineer-corpus-transcripts. A
+# runner that checks out only this repo has no transcripts, so verify_ledger
+# reports "no transcript on disk" for every anchor and the whole job fails. That
+# is a hard constraint, not an oversight — I assumed the latter first and pushed
+# a job that could not pass (run 35230701374).
+#
+# So this job is dormant until a CORPUS_TOKEN secret exists with read access to
+# the mirror. Until then it is SKIPPED, not failed: a red check nobody can fix
+# is worse than no check. To enable, add a fine-grained PAT with contents:read
+# on isatimur/ai-engineer-corpus-transcripts as the CORPUS_TOKEN secret.
+#
+# Blocking vs advisory is decided by whether a check has a legitimate nonzero
 # baseline, not by how serious it sounds:
 #
-#   verify_ledger          blocking   already returns 1 on failure; an anchor
-#                                     that no longer resolves is always a defect
+#   verify_ledger          blocking   already returns 1 on failure; one step per
+#                                     book, since it defaults to book 1's ledger
 #   check_quote_speakers   blocking   both books sit at 0 candidates
 #   check_title_quotes     blocking   both books sit at 0
 #   verify_prose_quotes    ceiling    nonzero baseline by design (drifted,
@@ -56,8 +67,29 @@ env:
 jobs:
   gates:
     runs-on: ubuntu-latest
+    # Skipped, not failed, when the corpus is unreachable. See the header.
+    if: ${{ secrets.CORPUS_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
+
+      # The transcripts are the evidence. Without them every gate below is
+      # vacuous, so this checkout is a precondition, not a convenience.
+      - name: Check out the transcript corpus
+        uses: actions/checkout@v4
+        with:
+          repository: isatimur/ai-engineer-corpus-transcripts
+          token: ${{ secrets.CORPUS_TOKEN }}
+          path: 99_Meta/transcripts
+
+      - name: Confirm the corpus is actually present
+        run: |
+          COUNT=$(find 99_Meta/transcripts/plain -name '*.txt' 2>/dev/null | wc -l)
+          echo "transcripts on disk: ${COUNT}"
+          if [ "${COUNT}" -lt 500 ]; then
+            echo "::error::Only ${COUNT} transcripts present. The gates below would"
+            echo "::error::pass vacuously against a corpus that is not there."
+            exit 1
+          fi
 
       - uses: actions/setup-python@v5
         with:

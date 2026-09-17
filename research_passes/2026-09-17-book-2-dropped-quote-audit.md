@@ -84,13 +84,20 @@ quotes, book 1 uses curly; the edits follow book 2.
   because the three gates "are book 1 only — they reject `--book 2`". That was wrong. They reject
   `--book` but take `--glob`, and their own docstrings give the book 2 invocation. Run properly,
   book 2 was already clean: `check_quote_speakers` 56/0 and `check_title_quotes` 0.
-  The real gap was worse and duller: **none of these gates had ever run in CI, for either book.**
-  They ran when someone remembered, which is why both defects above were found by reading, months
-  after they shipped. Fixed the same day — see `.github/workflows/evidence-gates.yml`.
-- **How the wrong claim happened, twice now.** Both times I inferred a capability gap from a failed
-  probe instead of reading the thing. `--book 2` erroring did not mean book 2 was unsupported, and
-  5,712 cached qwen entries did not mean that cache was intact (see the 09-09 note). Read the
-  docstring or the write path before asserting an absence.
+  None of these gates had ever run in CI for either book, and my second guess was that this was an
+  oversight worth fixing. It is not. **Every one of them resolves quotes against the transcripts in
+  `99_Meta/transcripts/`, which is gitignored** — 26 MB, kept in the private mirror
+  `isatimur/ai-engineer-corpus-transcripts`. A runner with only this repo has no transcripts, so
+  `verify_ledger` reports "no transcript on disk" for every anchor. I found that out by pushing a
+  workflow that could not pass (run 35230701374). The job now skips unless a `CORPUS_TOKEN` secret
+  with read access to the mirror exists, and it verifies the corpus is really there before trusting
+  a green result. A red check nobody can fix is worse than no check.
+- **How the wrong claims happened, three times now.** Each came from inferring a cause from a
+  surface signal instead of reading the thing underneath. `--book 2` erroring did not mean book 2
+  was unsupported; 5,712 cached qwen entries did not mean that cache was intact (09-09 note);
+  and a gate missing from CI did not mean nobody had wired it up. Two of the three were caught only
+  because something was actually executed: a repro script, and a pushed workflow. The lesson is
+  not "read more carefully", it is **run the thing before publishing the cause**.
 - **The detector's hit count will not fall.** Both fixes keep the flagged quote, because in both
   cases the quote was fine and the prose around it was not. The ten stay ten; they are now read.
 - **Three of the eight sound verdicts rest on the removal reason alone.** The surrounding
