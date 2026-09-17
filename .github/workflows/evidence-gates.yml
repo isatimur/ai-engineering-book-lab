@@ -67,14 +67,20 @@ env:
 jobs:
   gates:
     runs-on: ubuntu-latest
-    env:
+    steps:
       # A secret cannot be referenced from a job-level `if:` — GitHub rejects the
       # whole workflow file if you try (run 35231664682). Reading it into env and
       # branching on a step output is the supported way to make a job dormant.
-      CORPUS_TOKEN: ${{ secrets.CORPUS_TOKEN }}
-    steps:
+      #
+      # The env binding is on THIS STEP, not on the job. At job level the token
+      # would be in the environment of all fifteen steps, including every step
+      # that runs a repository Python script — a PAT for a private repo handed to
+      # code that has no use for it. Only this step reads it; the checkout below
+      # takes it through `with:`, which does not need the env var.
       - name: Is the transcript corpus reachable?
         id: guard
+        env:
+          CORPUS_TOKEN: ${{ secrets.CORPUS_TOKEN }}
         run: |
           if [ -z "${CORPUS_TOKEN}" ]; then
             echo "enabled=false" >> "$GITHUB_OUTPUT"
