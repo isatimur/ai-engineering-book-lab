@@ -45,6 +45,8 @@
     },
     "partial": false,
     "merged_run_ids": [
+      "2026-09-13-210909340-db85",
+      "2026-09-13-210816993-db85",
       "panel-3model-v12",
       "2026-09-09-000524739-ad4b",
       "2026-09-09-001432242-ad4b",
@@ -119,23 +121,24 @@
     ]
   },
   "book": {
-    "humanness": 86.1,
-    "voice": 88.0,
+    "humanness": 86.3,
+    "voice": 88.4,
     "usefulness": 61.2,
-    "evidence_density": 85.9,
+    "evidence_density": 86.2,
     "claim_defensibility": 92.9,
-    "redundancy": 87.2,
-    "usefulness_substantive": 62.8,
+    "redundancy": 87.5,
+    "usefulness_substantive": 62.9,
     "usefulness_connective": 23,
     "usefulness_total": 532
   },
   "stale_chapter_numbers": [
-    "02"
+    "02",
+    "04"
   ],
   "chapters": {
     "01": {
       "slug": "chapter-1-the-shift-from-assistant-to-delegate",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -280,7 +283,7 @@
     },
     "02": {
       "slug": "chapter-2-taste-still-matters-when-code-gets-cheap",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -425,7 +428,7 @@
     },
     "03": {
       "slug": "chapter-3-harnesses-specs-and-codebases-agents-can-actually-use",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -571,7 +574,7 @@
     },
     "04": {
       "slug": "chapter-4-evals-are-the-control-system",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -714,11 +717,11 @@
           "para_excerpt": "This is also why an eval platform is not just a test runner. A runner executes checks. A real platform also stores datasets, versions scoring logic, supports co…"
         }
       ],
-      "stale": false
+      "stale": true
     },
     "05": {
       "slug": "chapter-5-context-is-infrastructure",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -868,7 +871,7 @@
     },
     "06": {
       "slug": "chapter-6-runtimes-state-and-the-human-control-plane",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -1019,7 +1022,7 @@
     },
     "07": {
       "slug": "chapter-7-security-identity-and-high-stakes-trust",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -1168,7 +1171,7 @@
     },
     "08": {
       "slug": "chapter-8-realtime-voice-and-the-cost-of-being-interruptible",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -1319,7 +1322,7 @@
     },
     "09": {
       "slug": "chapter-9-the-ai-native-organization",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -1467,7 +1470,7 @@
     },
     "10": {
       "slug": "chapter-10-what-endures",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "corpus_snapshot_hash": "sha256:ad4b868cde3a7071f13bfc054750fcd68c4c3a92865b555628f60b2d47d428ab",
       "primary_run_id": "panel-3model-v12",
       "rollup": {
@@ -2872,18 +2875,18 @@
     },
     {
       "run_id": "panel-3model-v12",
-      "version_id": "git:9167f2f",
+      "version_id": "git:dcc651b",
       "finished_at": "2026-09-09T00:24:32.183767+00:00",
       "partial": false,
       "judge_prompt_versions": null,
       "book": {
-        "humanness": 86.1,
-        "voice": 88.0,
+        "humanness": 86.3,
+        "voice": 88.4,
         "usefulness": 61.2,
-        "evidence_density": 85.9,
+        "evidence_density": 86.2,
         "claim_defensibility": 92.9,
-        "redundancy": 87.2,
-        "usefulness_substantive": 62.8,
+        "redundancy": 87.5,
+        "usefulness_substantive": 62.9,
         "usefulness_connective": 23,
         "usefulness_total": 532
       },
