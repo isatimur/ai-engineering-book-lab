@@ -85,6 +85,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--glob", default="public/drafting/Chapter *.md")
     ap.add_argument("--min-words", type=int, default=4)
+    ap.add_argument("--max-unmatched", type=int, default=None,
+                    help="exit 1 if unmatched exceeds this ceiling (for CI). "
+                         "Unmatched has a legitimate nonzero baseline — drifted, "
+                         "external and self-quotation — so this catches a RISE, "
+                         "not a nonzero count. Pass it per book; the ceilings "
+                         "differ and a shared one lets one book absorb the "
+                         "other's regressions silently.")
     args = ap.parse_args()
 
     print("[prose] loading transcripts…", flush=True)
@@ -133,6 +140,11 @@ def main() -> int:
         print(f"\nUNMATCHED ({len(unmatched)}) — drifted, external, or self-quotation:")
         for name, q in unmatched:
             print(f"  {name[:34]:36} {q[:90]}")
+    if args.max_unmatched is not None and len(unmatched) > args.max_unmatched:
+        print(f"\nFAIL — {len(unmatched)} unmatched exceeds the ceiling of "
+              f"{args.max_unmatched}. Either a new quote does not appear in any "
+              f"transcript, or the ceiling needs a deliberate, reviewed raise.")
+        return 1
     return 0
 
 

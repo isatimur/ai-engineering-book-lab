@@ -43,6 +43,8 @@ VIDEOS = REPO / "01_Videos"
 ap = argparse.ArgumentParser()
 ap.add_argument("--glob", default="public/drafting/Chapter *.md")
 ap.add_argument("--min-words", type=int, default=3)
+ap.add_argument("--strict", action="store_true",
+                help="exit 1 if any title-as-speech span is found (for CI)")
 a = ap.parse_args()
 
 # 001-<videoid>-<slugified title>.md  -> the slug is the title, lowercased+hyphenated.
@@ -85,4 +87,5 @@ for f in sorted(REPO.glob(a.glob)):
               f"and is in NO transcript\n")
 
 print(f"{findings} quoted span(s) that are talk titles nobody said on stage")
-sys.exit(0)
+# Both books sit at zero, so --strict can be blocking in CI without a baseline.
+sys.exit(1 if (findings and a.strict) else 0)

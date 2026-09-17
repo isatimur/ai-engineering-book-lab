@@ -80,11 +80,17 @@ quotes, book 1 uses curly; the edits follow book 2.
 
 ## What this does not establish
 
-- **Book 2 has almost no mechanical quote coverage.** `verify_prose_quotes.py`,
-  `check_quote_speakers.py` and `check_title_quotes.py` are book 1 only — they reject `--book 2`.
-  The only book 2 quote gate is the dropped-quote detector, which fires solely on ledger removals
-  and so cannot see a bad attribution whose quote was never dropped. Both defects here were found
-  by reading, not by a gate. Extending those three to book 2 is the obvious next tool.
+- **Correction (same day).** This note first said book 2 had almost no mechanical quote coverage
+  because the three gates "are book 1 only — they reject `--book 2`". That was wrong. They reject
+  `--book` but take `--glob`, and their own docstrings give the book 2 invocation. Run properly,
+  book 2 was already clean: `check_quote_speakers` 56/0 and `check_title_quotes` 0.
+  The real gap was worse and duller: **none of these gates had ever run in CI, for either book.**
+  They ran when someone remembered, which is why both defects above were found by reading, months
+  after they shipped. Fixed the same day — see `.github/workflows/evidence-gates.yml`.
+- **How the wrong claim happened, twice now.** Both times I inferred a capability gap from a failed
+  probe instead of reading the thing. `--book 2` erroring did not mean book 2 was unsupported, and
+  5,712 cached qwen entries did not mean that cache was intact (see the 09-09 note). Read the
+  docstring or the write path before asserting an absence.
 - **The detector's hit count will not fall.** Both fixes keep the flagged quote, because in both
   cases the quote was fine and the prose around it was not. The ten stay ten; they are now read.
 - **Three of the eight sound verdicts rest on the removal reason alone.** The surrounding

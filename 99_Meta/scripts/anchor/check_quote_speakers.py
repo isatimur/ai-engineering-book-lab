@@ -91,6 +91,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--glob", default="public/drafting/Chapter *.md")
     ap.add_argument("--min-words", type=int, default=4)
+    ap.add_argument("--strict", action="store_true",
+                    help="exit 1 if any misattribution candidate is found (for CI)")
     a = ap.parse_args()
 
     slug = {}
@@ -134,7 +136,11 @@ def main() -> int:
             print(f"    quote: {q[:110]!r}\n")
 
     print(f"{checked} attributed+matched span(s) checked · {flagged} misattribution candidate(s)")
-    return 0
+    # Both books sit at zero candidates, so --strict can be blocking in CI without
+    # a baseline. A candidate here is a quote credited to someone whose words are
+    # in a different speaker's transcript — the defect class that put a framing
+    # Samuel Colvin never gave into a shipped chapter (2026-09-14).
+    return 1 if (flagged and a.strict) else 0
 
 
 if __name__ == "__main__":

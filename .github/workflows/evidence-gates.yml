@@ -1,0 +1,131 @@
+name: evidence-gates
+
+# The anchor gates under 99_Meta/scripts/anchor/ check that the books only put
+# words in a named person's mouth that the person actually said. Until now none
+# of them ran in CI for either book — they ran when someone remembered. That is
+# why a framing Samuel Colvin never gave sat in a shipped chapter of book 1, and
+# why book 2 credited Kyle Corbitt with three rungs of a ladder his talk never
+# mentions. Both were found by reading, months after they shipped.
+#
+# Blocking vs advisory is decided by whether the check has a legitimate nonzero
+# baseline, not by how serious it sounds:
+#
+#   verify_ledger          blocking   already returns 1 on failure; an anchor
+#                                     that no longer resolves is always a defect
+#   check_quote_speakers   blocking   both books sit at 0 candidates
+#   check_title_quotes     blocking   both books sit at 0
+#   verify_prose_quotes    ceiling    nonzero baseline by design (drifted,
+#                                     external, self-quotation), so it fails on
+#                                     a RISE, not on a count
+#   check_dropped_quotes   advisory   a ~1-in-6 candidate detector with a
+#                                     standing adjudicated hit; blocking on it
+#                                     would fail every run forever
+#
+# The ceilings live here, not as script defaults, so raising one shows up in a
+# diff and needs a reviewer.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/drafting/**'
+      - 'public/drafting-2/**'
+      - 'claims/**'
+      - 'claims-2/**'
+      - '01_Videos/**'
+      - '99_Meta/scripts/anchor/**'
+      - '.github/workflows/evidence-gates.yml'
+  pull_request:
+    paths:
+      - 'public/drafting/**'
+      - 'public/drafting-2/**'
+      - 'claims/**'
+      - 'claims-2/**'
+      - '01_Videos/**'
+      - '99_Meta/scripts/anchor/**'
+  schedule:
+    - cron: '0 9 * * *'   # 09:00 UTC daily safety net
+  workflow_dispatch:
+
+env:
+  # Current unmatched counts. A rise means a newly printed quote appears in no
+  # transcript. Lower these when a pass reduces them; raise only deliberately.
+  BOOK1_MAX_UNMATCHED: '30'
+  BOOK2_MAX_UNMATCHED: '11'
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # verify_ledger defaults to book 1's ledger and takes --ledger for book 2,
+      # so it needs one step per book. A single invocation silently covers only
+      # book 1 while reading as if it covered both.
+      - name: Ledger anchors resolve — book 1 (blocking)
+        run: python3 99_Meta/scripts/anchor/verify_ledger.py
+
+      - name: Ledger anchors resolve — book 2 (blocking)
+        run: |
+          python3 99_Meta/scripts/anchor/verify_ledger.py \
+            --ledger 'claims-2/Claims Ledger.md'
+
+      - name: Quote speakers — book 1 (blocking)
+        run: python3 99_Meta/scripts/anchor/check_quote_speakers.py --strict
+
+      - name: Quote speakers — book 2 (blocking)
+        run: |
+          python3 99_Meta/scripts/anchor/check_quote_speakers.py \
+            --glob 'public/drafting-2/*.md' --strict
+
+      - name: Title-as-speech — book 1 (blocking)
+        run: python3 99_Meta/scripts/anchor/check_title_quotes.py --strict
+
+      - name: Title-as-speech — book 2 (blocking)
+        run: |
+          python3 99_Meta/scripts/anchor/check_title_quotes.py \
+            --glob 'public/drafting-2/*.md' --strict
+
+      - name: Prose quotes verbatim — book 1 (ceiling)
+        run: |
+          python3 99_Meta/scripts/anchor/verify_prose_quotes.py \
+            --max-unmatched "${BOOK1_MAX_UNMATCHED}"
+
+      - name: Prose quotes verbatim — book 2 (ceiling)
+        run: |
+          python3 99_Meta/scripts/anchor/verify_prose_quotes.py \
+            --glob 'public/drafting-2/*.md' \
+            --max-unmatched "${BOOK2_MAX_UNMATCHED}"
+
+      - name: Dropped ledger quotes still in prose (advisory)
+        continue-on-error: true
+        run: |
+          for b in 1 2; do
+            echo "--- book $b ---"
+            python3 99_Meta/scripts/anchor/check_dropped_quotes_in_prose.py \
+              --since a7de746 --book "$b" || true
+          done
+
+      - name: Open issue on scheduled-run failure
+        if: ${{ failure() && github.event_name == 'schedule' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SERVER: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BODY="The scheduled evidence-gates run failed. One of the books is attributing words to a named person that the transcripts do not support, or a ledger anchor stopped resolving.
+
+          See run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}
+
+          Fix the prose or the ledger. Do not raise a ceiling to make this pass without a reviewed reason."
+          gh issue create \
+            --repo "${REPO}" \
+            --title "evidence-gates: attribution or anchor failure (${DATE})" \
+            --body "${BODY}" \
+            --label "automated"
