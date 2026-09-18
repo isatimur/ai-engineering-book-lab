@@ -92,6 +92,11 @@ def main() -> int:
                          "not a nonzero count. Pass it per book; the ceilings "
                          "differ and a shared one lets one book absorb the "
                          "other's regressions silently.")
+    ap.add_argument("--json", metavar="PATH",
+                    help="also write the unmatched spans (full text, not the "
+                         "truncated console form) to PATH as JSON, so another "
+                         "check can run over exactly THIS span set instead of "
+                         "re-deriving its own and silently diverging.")
     args = ap.parse_args()
 
     print("[prose] loading transcripts…", flush=True)
@@ -132,6 +137,12 @@ def main() -> int:
             else:
                 misses += 1
                 unmatched.append((f.name, q))
+
+    if args.json:
+        import json as _json
+        Path(args.json).write_text(_json.dumps(
+            [{"file": n, "quote": q} for n, q in unmatched], indent=2))
+        print(f"[prose] wrote {len(unmatched)} unmatched span(s) to {args.json}")
 
     print(f"[prose] verbatim in a transcript: {hits}/{hits+misses}")
     if skipped:

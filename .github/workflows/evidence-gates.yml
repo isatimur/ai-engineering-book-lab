@@ -28,6 +28,10 @@ name: evidence-gates
 #   verify_prose_quotes    ceiling    nonzero baseline by design (drifted,
 #                                     external, self-quotation), so it fails on
 #                                     a RISE, not on a count
+#   check_credited_unmatched
+#                          blocking   a quote credited to a named person that is
+#                                     in no transcript; catches the SWAP the
+#                                     ceiling above cannot see
 #   check_dropped_quotes   advisory   a ~1-in-6 candidate detector with a
 #                                     standing adjudicated hit; blocking on it
 #                                     would fail every run forever
@@ -61,8 +65,8 @@ on:
 env:
   # Current unmatched counts. A rise means a newly printed quote appears in no
   # transcript. Lower these when a pass reduces them; raise only deliberately.
-  BOOK1_MAX_UNMATCHED: '30'
-  BOOK2_MAX_UNMATCHED: '11'
+  BOOK1_MAX_UNMATCHED: '29'
+  BOOK2_MAX_UNMATCHED: '10'
 
 jobs:
   gates:
@@ -165,6 +169,20 @@ jobs:
           python3 99_Meta/scripts/anchor/verify_prose_quotes.py \
             --glob 'public/drafting-2/*.md' \
             --max-unmatched "${BOOK2_MAX_UNMATCHED}"
+
+      # The ceiling above catches an ADDED unmatched quote. It cannot catch a
+      # swap: exchange one unmatched span for another and the count holds. This
+      # catches the case that actually matters — a named person credited with
+      # words that are in no transcript.
+      - name: Credited but unmatched — book 1 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
+        run: python3 99_Meta/scripts/anchor/check_credited_unmatched.py --strict
+
+      - name: Credited but unmatched — book 2 (blocking)
+        if: steps.guard.outputs.enabled == 'true'
+        run: |
+          python3 99_Meta/scripts/anchor/check_credited_unmatched.py \
+            --glob 'public/drafting-2/*.md' --strict
 
       - name: Dropped ledger quotes still in prose (advisory)
         if: steps.guard.outputs.enabled == 'true'

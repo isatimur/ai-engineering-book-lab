@@ -223,7 +223,7 @@ The phrase vibe coding is useful partly because it is a little embarrassing. It 
 
 That mode is not worthless; it can be brilliant. For exploration, interface sketching, rough prototypes, internal tooling, one-off automation, toy apps, or situations where learning by doing is more valuable than formal design, vibe coding can be the correct move. It can widen the top of the funnel. It can make experimentation cheap enough that more people discover what is actually worth building. It can give individuals a level of expressive power that used to require a small team.
 
-The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey Gallon at Rexmore calls this the vibe-coding hangover: the app works on Friday, and “then Monday rolls around, you want to add a feature, and you realize that you don't understand it, you can't maintain it, and you have to throw most or all of it away.”
+The problem begins when a useful exploratory mode quietly hardens into a default production philosophy. Corey Gallon at Rexmore calls this the vibe-coding hangover: the app works on Friday, and “then Monday rolls around, you want to add a feature… and you realize that you don't understand it, you can't maintain it, and you have to throw most or all of it away.”
 
 Vibe coding is not the enemy. Unexamined vibe coding is.
 
