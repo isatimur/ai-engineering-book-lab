@@ -30,9 +30,9 @@ Memory, by contrast, requires durable structure. It requires deciding what to re
 
 The reason this distinction matters is that the failures look identical from the outside. A system that retrieves badly and a system that forgets can both surface a wrong answer about a customer the agent talked to yesterday. The difference shows up in the fix. Better retrieval can patch the first; only better memory architecture can patch the second.
 
-Daniel Chalef at Zep makes a related point with a more pointed framing: stop using RAG as memory. The error he sees in production systems is not RAG itself but RAG carrying weight it was never designed to carry — long-term user state, evolving entity facts, cross-session continuity. RAG is good at fetching documents. It is bad at maintaining a model of the user across months.
+A related point lands with a more pointed framing: stop using RAG as memory. The error in production systems is not RAG itself but RAG carrying weight it was never designed to carry — long-term user state, evolving entity facts, cross-session continuity. RAG is good at fetching documents. It is bad at maintaining a model of the user across months.
 
-Read these two claims together as a selection rule. Reach for retrieval when the job is fetching the right documents for the current step; reach for a memory layer when the job is maintaining state that has to persist — long-term user facts, evolving entities, cross-session continuity. Chalef's warning marks the trap: the moment RAG starts carrying that durable state, you have collapsed two layers that need to be designed separately.
+Read these two claims together as a selection rule. Reach for retrieval when the job is fetching the right documents for the current step; reach for a memory layer when the job is maintaining state that has to persist — long-term user facts, evolving entities, cross-session continuity. That warning marks the trap: the moment RAG starts carrying that durable state, you have collapsed two layers that need to be designed separately.
 
 ## RAG, memory, and GraphRAG are different jobs
 

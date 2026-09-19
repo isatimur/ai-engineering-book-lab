@@ -82,7 +82,6 @@ Working frame: **From Copilot to Colleague: How AI Engineering Turns Models into
 - [[172-4Xe_iMYxBQc-information-retrieval-from-the-ground-up-philipp-krenn-elastic|#172 — Information Retrieval from the Ground Up - Philipp Krenn, Elastic]]
 - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — How to build Enterprise Aware Agents - Chau Tran, Glean]]
 - [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215 — Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, and Stephen, Neo4j]]
-- [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Stop Using RAG as Memory — Daniel Chalef, Zep]]
 - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — HybridRAG: A Fusion of Graph and Vector Retrieval  - Mitesh Patel, NVIDIA]]
 
 ### Chapter 6 — Runtimes, State, and the Human Control Plane

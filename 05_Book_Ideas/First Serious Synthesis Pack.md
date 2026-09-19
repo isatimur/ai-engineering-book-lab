@@ -94,7 +94,6 @@ Why this is stronger than the earlier generic frame:
 - [[215-XNneh6-eyPg-practical-graphrag-making-llms-smarter-with-knowledge-graphs-michael-jesus-and-stephen-neo|#215 — Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, and Stephen, Neo4j]]
 - [[216-yYxr6LdXNWM-knowledge-graphs-in-litigation-agents-tom-smoker-whyhow|#216 — Knowledge Graphs in Litigation Agents — Tom Smoker, WhyHow]]
 - [[217-XlAIgmi_Vow-when-vectors-break-down-graph-based-rag-for-dense-enterprise-knowledge-sam-julien-writer|#217 — When Vectors Break Down: Graph-Based RAG for Dense Enterprise Knowledge - Sam Julien, Writer]]
-- [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Stop Using RAG as Memory — Daniel Chalef, Zep]]
 - [[219--tgQa8Fzf80-hybridrag-a-fusion-of-graph-and-vector-retrieval-mitesh-patel-nvidia|#219 — HybridRAG: A Fusion of Graph and Vector Retrieval  - Mitesh Patel, NVIDIA]]
 
 ### Cluster 5 — Reliable agents require runtimes, control planes, and state

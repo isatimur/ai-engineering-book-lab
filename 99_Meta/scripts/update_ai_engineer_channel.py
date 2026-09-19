@@ -46,6 +46,27 @@ def frontmatter_value(text: str, key: str) -> str | None:
     return match.group(1).strip().strip('"')
 
 
+WITHDRAWN_FILE = ROOT / "99_Meta" / "withdrawn-videos.md"
+
+
+def withdrawn_video_ids() -> set[str]:
+    """Ids excluded at the speaker's request (see 99_Meta/withdrawn-videos.md).
+
+    The ingest refills any gap between the live channel and the notes on disk, so
+    without this a deletion under 01_Videos/ undoes itself on the next daily run.
+    Ids are read from the backtick-quoted first column of that file's table."""
+    if not WITHDRAWN_FILE.exists():
+        return set()
+    ids = set()
+    for line in WITHDRAWN_FILE.read_text(errors="ignore").splitlines():
+        if not line.startswith("|"):
+            continue
+        cell = line.split("|")[1].strip()
+        if cell.startswith("`") and cell.endswith("`"):
+            ids.add(cell.strip("`"))
+    return ids
+
+
 def existing_video_indices() -> dict[str, int]:
     indices: dict[str, int] = {}
     for path in VIDEO_DIR.glob("*.md"):
@@ -76,7 +97,12 @@ def fetch_latest_inventory(channel_url: str, output_path: Path) -> None:
 
 
 def normalize_inventory(rows: list[dict], known_indices: dict[str, int]) -> tuple[list[dict], list[dict]]:
-    missing = [row for row in rows if row.get("id") not in known_indices]
+    withdrawn = withdrawn_video_ids()
+    if withdrawn:
+        print(f"[channel] {len(withdrawn)} video(s) withdrawn at speaker request — "
+              f"not treated as missing")
+    missing = [row for row in rows
+               if row.get("id") not in known_indices and row.get("id") not in withdrawn]
     max_index = max(known_indices.values(), default=0)
 
     # YouTube's playlist_index for channel videos is newest-first. Sorting missing

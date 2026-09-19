@@ -26,7 +26,6 @@ Per-chapter bounded drafting. First execution of the new `chapter_drafting_pass.
 
 ## Claims registered
 - **25)** Context engineering is a primary engineering discipline, not a prompt trick. Sources: #100 Mendelevitch, #104 Bercovici, #105 Chin, #157 Bryk.
-- **26)** RAG, memory, and GraphRAG solve different jobs; collapsing them into one bucket misses the architecture. Sources: #48 Morris, #218 Chalef, #105 Chin, #215 Neo4j practical, #219 Patel hybrid, #156 Karam.
 - **27)** Enterprise usefulness scales with working-set quality, not corpus size. Sources: #100 Mendelevitch, #154 Harvey/Lance, #193 Tran.
 - **28)** The next failure frontier is context misassembly, not just hallucination. Sources: #48 Morris, #47 Leo (Manus/Meta), #156 Karam, #172 Krenn.
 

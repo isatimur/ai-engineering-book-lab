@@ -192,9 +192,6 @@
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]]
     - **Anchor:** `LLuKshphGOE` 00:00:08.800 → 00:00:13.280 · confidence: high
     - **Quote:** "connect the dots with graph technology and solve problems like context engineering"
-  - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]]
-    - **Anchor:** `T5IMo5ntyhA` 00:02:22.319 → 00:02:24.000 · confidence: high
-    - **Quote:** "irrelevant facts pollute memory."
   - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — Chau Tran, Glean]] — retrieval quality fails on assembly, not on embedding quality: similar-looking documents defeat pure similarity at enterprise scale.
     - **Anchor:** `hxFpUcvWPcU` 00:17:08.640 → 00:17:14.720 · confidence: high
     - **Quote:** "what I found is in in the enterprise settings uh pure text similarity is not enough."
@@ -556,9 +553,6 @@
   - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 — Jack Morris]] — "Stuffing context is not memory" as a load-bearing architectural distinction, not a slogan.
     - **Anchor:** `Jty4s9-Jb78` 00:02:54.120 → 00:02:59.080 · confidence: high
     - **Quote:** "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
-  - [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Daniel Chalef, Zep]] — RAG carrying weight it was never designed to carry (long-term user state, evolving entity facts, cross-session continuity).
-    - **Anchor:** `T5IMo5ntyhA` 00:03:45.519 → 00:03:49.760 · confidence: high
-    - **Quote:** "we need a solution. We need domainaware memory not better semantic search."
   - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Stephen Chin, Neo4j]] — graph retrieval as a different operation than flat vector retrieval, suited to relationship questions.
     - **Anchor:** `LLuKshphGOE` 00:08:04.879 → 00:08:13.039 · confidence: high
     - **Quote:** "the basic construct of a knowledge graph is um nodes which represent different people in the situation, relationships, and then you can attach properties to these nodes."

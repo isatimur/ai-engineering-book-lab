@@ -40,7 +40,6 @@ each entry links back to its source video note(s). Sister file:
 - <https://github.com/external-secrets/external-secrets> — [[899-LqLoYksJ6do-we-gave-an-agent-production-code-access-and-then-tried-to-sleep-at-night-moritz-johner-for|#899]]
 - <https://github.com/gepa-ai/gepa> — [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23]]
 - <https://github.com/get-convex/ai-world-fair.git> — [[483-idDnpGqJd80-building-an-ai-assistant-that-makes-phone-calls-convex-workshop|#483]]
-- <https://github.com/getzep/graphiti> — [[919-H7puB0RwJMM-citation-needed-provenance-for-llm-built-knowledge-graphs-daniel-chalef-zep-ai|#919]]
 - <https://github.com/google-ai-edge/gallery> — [[936-hacEQHHhu2Q-why-large-tiny-lms-agents-on-edge-robotics-cormac-brick-google|#936]]
 - <https://github.com/harbor-framework/harbor> — [[929-jRCpXUjz4CI-everything-is-a-rollout-alex-shaw-ryan-marten-terminal-bench-harbor-laude-institute|#929]]
 - <https://github.com/iamleonie/workshop-agentic-search> — [[658-ynJyIKwjonM-agentic-search-for-context-engineering-leonie-monigatti-elastic|#658]]

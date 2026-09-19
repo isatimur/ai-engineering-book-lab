@@ -513,15 +513,6 @@
           "quote": "connect the dots with graph technology and solve problems like context engineering"
         },
         {
-          "video_id": "T5IMo5ntyhA",
-          "start": "00:02:22.319",
-          "end": "00:02:24.000",
-          "start_seconds": 142,
-          "confidence": "high",
-          "label": "#218 — Daniel Chalef, Zep",
-          "quote": "irrelevant facts pollute memory."
-        },
-        {
           "video_id": "hxFpUcvWPcU",
           "start": "00:17:08.640",
           "end": "00:17:14.720",
@@ -1108,15 +1099,6 @@
           "confidence": "high",
           "label": "#48 — Jack Morris",
           "quote": "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
-        },
-        {
-          "video_id": "T5IMo5ntyhA",
-          "start": "00:03:45.519",
-          "end": "00:03:49.760",
-          "start_seconds": 225,
-          "confidence": "high",
-          "label": "#218 — Daniel Chalef, Zep",
-          "quote": "we need a solution. We need domainaware memory not better semantic search."
         },
         {
           "video_id": "LLuKshphGOE",
@@ -2536,15 +2518,6 @@
           "confidence": "high",
           "label": "#105 — Stephen Chin, Neo4j",
           "quote": "connect the dots with graph technology and solve problems like context engineering"
-        },
-        {
-          "video_id": "T5IMo5ntyhA",
-          "start": "00:02:22.319",
-          "end": "00:02:24.000",
-          "start_seconds": 142,
-          "confidence": "high",
-          "label": "#218 — Daniel Chalef, Zep",
-          "quote": "irrelevant facts pollute memory."
         },
         {
           "video_id": "hxFpUcvWPcU",
@@ -4991,15 +4964,6 @@
           "quote": "connect the dots with graph technology and solve problems like context engineering"
         },
         {
-          "video_id": "T5IMo5ntyhA",
-          "start": "00:02:22.319",
-          "end": "00:02:24.000",
-          "start_seconds": 142,
-          "confidence": "high",
-          "label": "#218 — Daniel Chalef, Zep",
-          "quote": "irrelevant facts pollute memory."
-        },
-        {
           "video_id": "hxFpUcvWPcU",
           "start": "00:17:08.640",
           "end": "00:17:14.720",
@@ -5213,15 +5177,6 @@
           "confidence": "high",
           "label": "#48 — Jack Morris",
           "quote": "rag or retrieval augmented generation where you have so many things that you can't fit them all in"
-        },
-        {
-          "video_id": "T5IMo5ntyhA",
-          "start": "00:03:45.519",
-          "end": "00:03:49.760",
-          "start_seconds": 225,
-          "confidence": "high",
-          "label": "#218 — Daniel Chalef, Zep",
-          "quote": "we need a solution. We need domainaware memory not better semantic search."
         },
         {
           "video_id": "LLuKshphGOE",

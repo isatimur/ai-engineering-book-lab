@@ -25,7 +25,6 @@ The concept strengthens the broader [[Context Engineering]] theme because it tre
 - [[665-esY99nYXxR4-hierarchical-memory-context-management-in-agents-sally-ann-delucia|#665 - Hierarchical Memory: Context Management in Agents]]
 - [[043-SbcQYbrvAfI-build-a-prompt-learning-loop-sallyann-delucia-fuad-ali-arize|#43 - Build a Prompt Learning Loop]]
 - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48 - Stuffing Context is not Memory]]
-- [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 - Stop Using RAG as Memory]]
 - [[622-YBYUvGOuotE-mcp-mega-context-problem-matt-carey|#622 - MCP = Mega Context Problem]]
 
 ## Output uses

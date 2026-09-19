@@ -219,7 +219,6 @@ Total videos: 1074
 215. [Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, and Stephen, Neo4j](https://www.youtube.com/watch?v=XNneh6-eyPg) — `XNneh6-eyPg` — 19:46
 216. [Knowledge Graphs in Litigation Agents — Tom Smoker, WhyHow](https://www.youtube.com/watch?v=yYxr6LdXNWM) — `yYxr6LdXNWM` — 19:13
 217. [When Vectors Break Down: Graph-Based RAG for Dense Enterprise Knowledge - Sam Julien, Writer](https://www.youtube.com/watch?v=XlAIgmi_Vow) — `XlAIgmi_Vow` — 15:47
-218. [Stop Using RAG as Memory — Daniel Chalef, Zep](https://www.youtube.com/watch?v=T5IMo5ntyhA) — `T5IMo5ntyhA` — 7:02
 219. [HybridRAG: A Fusion of Graph and Vector Retrieval  - Mitesh Patel, NVIDIA](https://www.youtube.com/watch?v=-tgQa8Fzf80) — `-tgQa8Fzf80` — 20:24
 220. [tldraw.computer - Steve Ruiz, tldraw](https://www.youtube.com/watch?v=1C2TdPkj6aQ) — `1C2TdPkj6aQ` — 18:45
 221. [Excalidraw: AI and Human Whiteboarding Partnership - Christopher Chedeau](https://www.youtube.com/watch?v=aopgVJBQC0o) — `aopgVJBQC0o` — 16:59
@@ -920,7 +919,6 @@ Total videos: 1074
 916. [Why Agentic Systems Need Ontologies — Frank Coyle, UC Berkeley](https://www.youtube.com/watch?v=Sir59K8ZDPU) — `Sir59K8ZDPU` — 21:18
 917. [Video Has No Memory. Here's How We Built One. — James Le, TwelveLabs](https://www.youtube.com/watch?v=mOf-PP4mVjA) — `mOf-PP4mVjA` — 20:27
 918. [Local Agentic Theory For Mobile Games — Shafik Quoraishee & Joanne Song, The New York Times](https://www.youtube.com/watch?v=418t26CVz-w) — `418t26CVz-w` — 18:04
-919. [Citation Needed: Provenance for LLM-Built Knowledge Graphs — Daniel Chalef, Zep AI](https://www.youtube.com/watch?v=H7puB0RwJMM) — `H7puB0RwJMM` — 20:54
 920. [Why We Killed Our Multi-Agent Pipeline — Subbiah Sethuraman and Abhilash Asokan, ZS Associates](https://www.youtube.com/watch?v=u6jJcIFDLE4) — `u6jJcIFDLE4` — 15:00
 921. [AI on Your Lakehouse: Context Comes in Shapes, Not Queries — Zach Blumenfeld, Neo4j](https://www.youtube.com/watch?v=kRkcNOsRyYg) — `kRkcNOsRyYg` — 1:59:10
 922. [Perception Agents — Antje Barth, Amazon AGI Lab](https://www.youtube.com/watch?v=2JX6JYyQG4Y) — `2JX6JYyQG4Y` — 21:45

@@ -368,7 +368,6 @@
 - [[915-u1yaOeEX4e8-learned-execution-graphs-for-anomaly-detection-drift-in-apis-ritvik-pandya-jp-morgan-chase|#915 — Learned Execution Graphs for Anomaly Detection & Drift in APIs — Ritvik Pandya, JP Morgan Chase]]
 - [[917-mOf-PP4mVjA-video-has-no-memory-here-s-how-we-built-one-james-le-twelvelabs|#917 — Video Has No Memory. Here's How We Built One. — James Le, TwelveLabs]]
 - [[918-418t26CVz-w-local-agentic-theory-for-mobile-games-shafik-quoraishee-joanne-song-the-new-york-times|#918 — Local Agentic Theory For Mobile Games — Shafik Quoraishee & Joanne Song, The New York Times]]
-- [[919-H7puB0RwJMM-citation-needed-provenance-for-llm-built-knowledge-graphs-daniel-chalef-zep-ai|#919 — Citation Needed: Provenance for LLM-Built Knowledge Graphs — Daniel Chalef, Zep AI]]
 - [[920-u6jJcIFDLE4-why-we-killed-our-multi-agent-pipeline-subbiah-sethuraman-and-abhilash-asokan-zs-associate|#920 — Why We Killed Our Multi-Agent Pipeline — Subbiah Sethuraman and Abhilash Asokan, ZS Associates]]
 - [[921-kRkcNOsRyYg-ai-on-your-lakehouse-context-comes-in-shapes-not-queries-zach-blumenfeld-neo4j|#921 — AI on Your Lakehouse: Context Comes in Shapes, Not Queries — Zach Blumenfeld, Neo4j]]
 - [[922-2JX6JYyQG4Y-perception-agents-antje-barth-amazon-agi-lab|#922 — Perception Agents — Antje Barth, Amazon AGI Lab]]

@@ -27,7 +27,6 @@ The chapter should begin by separating total knowledge from usable context. Jack
 
 **Source anchors:**
 - [[048-Jty4s9-Jb78-jack-morris-stuffing-context-is-not-memory-updating-weights-is|#48]]
-- [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218]]
 - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104]]
 
 **Key move:**

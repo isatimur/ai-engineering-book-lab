@@ -51,7 +51,6 @@ This concept supports the book's central claim that dependable AI depends on eng
 - [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104 — Context Platform Engineering to Reduce Token Anxiety — Val Bercovici, WEKA]]
 - [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105 — Context Engineering: Connecting the Dots with Graphs — Stephen Chin, Neo4j]]
 - [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193 — How to build Enterprise Aware Agents - Chau Tran, Glean]]
-- [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218 — Stop Using RAG as Memory — Daniel Chalef, Zep]]
 - [[622-YBYUvGOuotE-mcp-mega-context-problem-matt-carey|#622 — MCP = Mega Context Problem - Matt Carey]]
 - [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625 — Lessons from Scaling GitHub's Remote MCP Server — Sam Morrow, GitHub]]
 

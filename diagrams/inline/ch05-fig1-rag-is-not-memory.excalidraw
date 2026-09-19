@@ -302,7 +302,7 @@
     },
     {
       "type": "text", "id": "citation", "x": 40, "y": 422, "width": 720, "height": 16,
-      "text": "“Stuffing context is not memory.” — Jack Morris · corpus video #48  ·  also Daniel Chalef, Zep · #218", "originalText": "“Stuffing context is not memory.” — Jack Morris · corpus video #48  ·  also Daniel Chalef, Zep · #218",
+      "text": "“Stuffing context is not memory.” — Jack Morris · corpus video #48", "originalText": "“Stuffing context is not memory.” — Jack Morris · corpus video #48",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,

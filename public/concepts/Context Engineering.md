@@ -34,5 +34,4 @@ This concept supports the book's central claim that dependable AI depends on eng
 - Chau Tran (Glean)
 - Matt Carey (MCP = Mega Context Problem)
 - Sam Morrow (GitHub MCP scaling)
-- Daniel Chalef (Zep)
 - Val Bercovici (WEKA)

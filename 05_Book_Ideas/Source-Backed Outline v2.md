@@ -45,7 +45,7 @@ The book should follow a clear arc:
 **Function:** Broaden the thesis from coding environments to knowledge environments.  
 **Main argument:** Retrieval, memory, and context assembly are infrastructure layers that determine agent usefulness.  
 **Why this chapter exists:** It shows that prompt quality is downstream of information architecture.  
-**Anchor sources:** [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104]], [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105]], [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193]], [[218-T5IMo5ntyhA-stop-using-rag-as-memory-daniel-chalef-zep|#218]], [[622-YBYUvGOuotE-mcp-mega-context-problem-matt-carey|#622]], [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625]]
+**Anchor sources:** [[104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka|#104]], [[105-LLuKshphGOE-context-engineering-connecting-the-dots-with-graphs-stephen-chin-neo4j|#105]], [[193-hxFpUcvWPcU-how-to-build-enterprise-aware-agents-chau-tran-glean|#193]], [[622-YBYUvGOuotE-mcp-mega-context-problem-matt-carey|#622]], [[625-0n3MKk7r60w-lessons-from-scaling-github-s-remote-mcp-server-sam-morrow-github|#625]]
 
 ### 6. Runtimes, State, and the Human Control Plane
 **Function:** Explain what changes when agents operate over time and across tools.  
