@@ -67,7 +67,7 @@ for vocabulary see [`CONTEXT.md`](CONTEXT.md).
 
 | Priority | What | Tracking |
 |---|---|---|
-| P1 | **SEO routing — post-deploy verification** — code merged + deployed; remaining: Lighthouse ≥95 spot-check and Google Search Console sitemap submit | [`spec`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
+| P1 | **SEO routing — post-deploy verification** — code merged + deployed. Lighthouse ≥95 spot-check **done 2026-09-19** (desktop, v13.5.0): `/` 100/96/96/100, `/read/05-context` 98/98/96/100; all 46 sitemap URLs return 200. Two real defects found and fixed (micro-label contrast 4.44→5.91, chapter `<main>` landmark). Remaining: Google Search Console sitemap submit (needs the operator's Google account) | [`spec`](docs/superpowers/specs/2026-05-26-website-seo-routing-design.md) |
 
 ## Queued (validated, not started)
 
