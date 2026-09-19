@@ -135,7 +135,7 @@ export const LightboxProvider = ({ children }: { children: React.ReactNode }) =>
             >×</button>
           </div>
 
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-widest text-white/40 text-center">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-widest text-white/55 text-center">
             SCROLL TO ZOOM  ·  DRAG TO PAN  ·  ESC TO CLOSE  ·  +/− KEYS
           </div>
         </div>

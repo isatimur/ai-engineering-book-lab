@@ -162,7 +162,7 @@ export const Catalogue = () => {
               ◇
             </span>
             <div className="text-left">
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/45 mb-1">
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/55 mb-1">
                 Immersive journey
               </p>
               <p className="font-serif text-lg text-white/90 leading-snug">
@@ -179,7 +179,7 @@ export const Catalogue = () => {
 
         <section className="mt-16 pt-10 border-t border-white/10">
           <div className="text-center mb-10">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/45 mb-4">
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/55 mb-4">
               Open source · built from this book
             </p>
             <h2 className="font-serif text-2xl md:text-3xl text-white/90 mb-3">

@@ -3,7 +3,7 @@ import type { Artifact } from '../data/artifacts';
 
 export const ArtifactCard = ({ label, headline, description, badge, links }: Artifact) => (
   <div className="text-center">
-    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/45 mb-4">
+    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/55 mb-4">
       {label}
     </p>
     <h3 className="font-serif text-xl md:text-2xl text-white/90 mb-3">{headline}</h3>

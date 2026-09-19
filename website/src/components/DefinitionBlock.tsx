@@ -14,7 +14,7 @@ export const DefinitionBlock = () => {
       aria-label="What is this book"
       className="mt-16 pt-10 border-t border-white/10 max-w-2xl mx-auto"
     >
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/45 mb-4 text-center">
+      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/55 mb-4 text-center">
         Definition
       </p>
       <dl className="space-y-8">

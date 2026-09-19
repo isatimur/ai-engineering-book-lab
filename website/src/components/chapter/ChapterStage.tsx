@@ -73,7 +73,7 @@ export const ChapterStage = ({ chapter, activeIndex }: Props) => {
               transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
             />
           ))}
-          <span className="ml-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white/45 tabular-nums">
+          <span className="ml-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white/55 tabular-nums">
             {activeStage + 1}/{stages.length}
           </span>
         </div>
