@@ -113,49 +113,51 @@ export const ChapterDetail = () => {
           </div>
         </header>
 
-        <div className="max-w-3xl mx-auto px-6 pt-12">
-          <RedThreadNav active="read" chapterNumber={chapter.number} className="mb-10" />
-        </div>
+        <main id="main">
+          <div className="max-w-3xl mx-auto px-6 pt-12">
+            <RedThreadNav active="read" chapterNumber={chapter.number} className="mb-10" />
+          </div>
 
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
-            Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
-          </p>
-          <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
-          <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
-          <MobileChapterChoice
+          <div className="max-w-3xl mx-auto px-6">
+            <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
+              Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
+            </p>
+            <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
+            <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
+            <MobileChapterChoice
+              chapterNumber={chapter.number}
+              onReadText={startTextReading}
+              className="mb-8"
+            />
+          </div>
+
+          {!textOnly && video && <ChapterExplainerVideo video={video} />}
+
+          {!textOnly && <EvidenceExhibit chapter={chapter.number} title={chapter.title} />}
+
+          <article
+            ref={articleRef}
+            className={`max-w-3xl mx-auto px-6 pt-16 ${textOnly ? 'reader-text-only-prose px-5 sm:px-8' : ''}`}
+          >
+            <ChapterArticle chapter={chapter} />
+          </article>
+
+          {chapter.slug === 'ai-native-org' && <AssessmentCta />}
+
+          <section className="max-w-3xl mx-auto px-6 pt-16">
+            <EvidenceSectionHeader
+              chapterNumber={chapter.number}
+              onOpenSources={() => setSourcesOpen(true)}
+            />
+            <EvidenceRail chapterNumber={chapter.number} />
+          </section>
+
+          <SourcesDrawer
             chapterNumber={chapter.number}
-            onReadText={startTextReading}
-            className="mb-8"
+            isOpen={sourcesOpen}
+            onClose={() => setSourcesOpen(false)}
           />
-        </div>
-
-        {!textOnly && video && <ChapterExplainerVideo video={video} />}
-
-        {!textOnly && <EvidenceExhibit chapter={chapter.number} title={chapter.title} />}
-
-        <article
-          ref={articleRef}
-          className={`max-w-3xl mx-auto px-6 pt-16 ${textOnly ? 'reader-text-only-prose px-5 sm:px-8' : ''}`}
-        >
-          <ChapterArticle chapter={chapter} />
-        </article>
-
-        {chapter.slug === 'ai-native-org' && <AssessmentCta />}
-
-        <section className="max-w-3xl mx-auto px-6 pt-16">
-          <EvidenceSectionHeader
-            chapterNumber={chapter.number}
-            onOpenSources={() => setSourcesOpen(true)}
-          />
-          <EvidenceRail chapterNumber={chapter.number} />
-        </section>
-
-        <SourcesDrawer
-          chapterNumber={chapter.number}
-          isOpen={sourcesOpen}
-          onClose={() => setSourcesOpen(false)}
-        />
+        </main>
 
         <nav className="max-w-3xl mx-auto px-6 pt-20 mt-16 border-t border-[var(--color-border)] flex justify-between gap-4 font-serif">
           {prev ? (
