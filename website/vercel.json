@@ -5,5 +5,18 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fromcopilottocolleague.com"
+        }
+      ],
+      "destination": "https://fromcopilottocolleague.com/:path*",
+      "permanent": true
+    }
+  ]
 }
