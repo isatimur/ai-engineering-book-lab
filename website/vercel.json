@@ -8,6 +8,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fromcopilottocolleague.com"
+        }
+      ],
+      "destination": "https://fromcopilottocolleague.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
