@@ -1,0 +1,22 @@
+{
+  "_why": "Names withdrawn at a person's request (see 99_Meta/withdrawn-videos.md and research_passes/2026-09-19-withdrawal-daniel-chalef.md). build_versions.py reconstructs chapter snapshots and commit subjects FROM GIT HISTORY, so a name removed from the working tree reappears in any snapshot generated for an older commit. These substitutions are applied to that reconstructed text before it is written. 'forbidden' is the fail-closed check: if a token survives substitution, the build stops rather than publishing the name.",
+  "forbidden": ["Chalef"],
+  "substitutions": [
+    {
+      "find": "Daniel Chalef at Zep makes a related point with a more pointed framing: stop using RAG as memory. The error he sees in production systems is not RAG itself",
+      "replace": "A related point lands with a more pointed framing: stop using RAG as memory. The error in production systems is not RAG itself"
+    },
+    { "find": "Daniel Chalef makes a related point from the memory side.", "replace": "A related point holds on the memory side." },
+    { "find": "Chalef's rule at Zep is to model your memory after your business domain", "replace": "One rule is to model your memory after your business domain" },
+    { "find": "Chalef’s rule at Zep is to model your memory after your business domain", "replace": "One rule is to model your memory after your business domain" },
+    { "find": "Chalef's warning marks the trap", "replace": "That warning marks the trap" },
+    { "find": "Chalef’s warning marks the trap", "replace": "That warning marks the trap" },
+    { "find": "Chalef's failure mode is precise:", "replace": "The failure mode is precise:" },
+    { "find": "Chalef’s failure mode is precise:", "replace": "The failure mode is precise:" },
+    { "find": "remove Daniel Chalef from the book and corpus", "replace": "remove a withdrawn source from the book and corpus" },
+    { "find": "Daniel Chalef", "replace": "a withdrawn source" },
+    { "find": "Chalef's", "replace": "that source's" },
+    { "find": "Chalef’s", "replace": "that source's" },
+    { "find": "Chalef", "replace": "a withdrawn source" }
+  ]
+}

@@ -41,6 +41,46 @@ def _git(*args: str) -> str | None:
         return None
 
 
+_REDACTIONS = _REPO / "99_Meta" / "redactions.json"
+
+
+def _load_redactions() -> tuple[list[tuple[str, str]], list[str]]:
+    """Substitutions applied to text reconstructed from git history.
+
+    Removing a name from the working tree does not remove it from history, and
+    this script rebuilds chapter snapshots and commit subjects by reading old
+    commits. Without this, a name withdrawn at a person's request reappears in
+    every snapshot generated for a commit that predates the removal — including,
+    with some irony, the subject line of the commit that removed it."""
+    if not _REDACTIONS.exists():
+        return [], []
+    data = json.loads(_REDACTIONS.read_text(encoding="utf-8"))
+    subs = [(x["find"], x["replace"]) for x in data.get("substitutions", [])]
+    return subs, data.get("forbidden", [])
+
+
+_SUBS, _FORBIDDEN = _load_redactions()
+
+
+def _redact(text: str, where: str) -> str:
+    """Apply withdrawals, then FAIL rather than emit a forbidden token.
+
+    Fail-closed on purpose: a build that stops is a nuisance, a build that
+    quietly republishes a withdrawn name is a broken promise to a person."""
+    if not text:
+        return text
+    for find, replace in _SUBS:
+        text = text.replace(find, replace)
+    for token in _FORBIDDEN:
+        if token in text:
+            raise SystemExit(
+                f"[versions] REFUSING to write {where}: withdrawn token "
+                f"{token!r} survived redaction. Add a substitution for the new "
+                f"phrasing to 99_Meta/redactions.json."
+            )
+    return text
+
+
 def _is_usable_repo() -> bool:
     if _git("rev-parse", "--git-dir") is None:
         return False
@@ -103,6 +143,7 @@ def build_chapter(number: str) -> dict | None:
         content = _git("show", f"{r['sha']}:{rel}")
         if content is None:
             continue
+        content = _redact(content, f"{number}/git-{r['short']}.md")
         content_file = out_dir / f"git-{r['short']}.md"
         # content at a sha is immutable; only write if missing (idempotent)
         if not content_file.exists():
@@ -114,7 +155,9 @@ def build_chapter(number: str) -> dict | None:
             "date": r["date"],
             "status": _derive_status(r["subject"], "Drafting"),
             "wordCount": _word_count(content),
-            "message": r["subject"],
+            # Commit subjects are surfaced as version labels on the site, so
+            # they need the same redaction as the prose.
+            "message": _redact(r["subject"], f"commit subject {r['short']}"),
             "corpus_snapshot_hash": None,
             "content_ref": f"{number}/git-{r['short']}.md",
         })

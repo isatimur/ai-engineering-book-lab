@@ -3,8 +3,19 @@
   "source_mode": "git",
   "chapters": {
     "01": {
-      "current_version_id": "git:1b3b2b4",
+      "current_version_id": "git:4a3cad1",
       "versions": [
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3018,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "01/git-4a3cad1.md"
+        },
         {
           "version_id": "git:1b3b2b4",
           "source": "git",
@@ -50,17 +61,6 @@
           "content_ref": "01/git-eae7ffa.md"
         },
         {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2389,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "01/git-96de0a5.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -74,8 +74,41 @@
       ]
     },
     "02": {
-      "current_version_id": "git:020d29a",
+      "current_version_id": "git:1fcc25b",
       "versions": [
+        {
+          "version_id": "git:1fcc25b",
+          "source": "git",
+          "ref": "1fcc25b3083754d6d69161c753f435696fbebc22",
+          "date": "2026-09-18",
+          "status": "Drafting",
+          "wordCount": 3301,
+          "message": "evidence: read the 41 unmatched prose quotes, fix the two real defects",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-1fcc25b.md"
+        },
+        {
+          "version_id": "git:17fb139",
+          "source": "git",
+          "ref": "17fb13913e69cddff3d87bf7b07373ce7758dbef",
+          "date": "2026-09-13",
+          "status": "Drafting",
+          "wordCount": 3301,
+          "message": "usefulness: sharpen Chapter 2 where description could carry a decision",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-17fb139.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3303,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "02/git-4a3cad1.md"
+        },
         {
           "version_id": "git:020d29a",
           "source": "git",
@@ -99,39 +132,6 @@
           "content_ref": "02/git-03bad0c.md"
         },
         {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2800,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2688,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-96de0a5.md"
-        },
-        {
-          "version_id": "git:90737a8",
-          "source": "git",
-          "ref": "90737a8bb956117aeff5f4aac03cc483f1608ff0",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2782,
-          "message": "Sync latest Drafting Layer edits to canonical Manuscript and web content",
-          "corpus_snapshot_hash": null,
-          "content_ref": "02/git-90737a8.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -145,8 +145,30 @@
       ]
     },
     "03": {
-      "current_version_id": "git:31099b6",
+      "current_version_id": "git:a80ddb6",
       "versions": [
+        {
+          "version_id": "git:a80ddb6",
+          "source": "git",
+          "ref": "a80ddb6d24d24649a7793e43208133da724ab239",
+          "date": "2026-09-03",
+          "status": "Drafting",
+          "wordCount": 3471,
+          "message": "evidence: anchor the thirteen zero-claim sections; canonical panel v10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-a80ddb6.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3471,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "03/git-4a3cad1.md"
+        },
         {
           "version_id": "git:31099b6",
           "source": "git",
@@ -181,28 +203,6 @@
           "content_ref": "03/git-03bad0c.md"
         },
         {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2882,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2672,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "03/git-96de0a5.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -216,8 +216,30 @@
       ]
     },
     "04": {
-      "current_version_id": "git:ac69df3",
+      "current_version_id": "git:dcc651b",
       "versions": [
+        {
+          "version_id": "git:dcc651b",
+          "source": "git",
+          "ref": "dcc651b0662bcece36d55914578a6045f44abc84",
+          "date": "2026-09-14",
+          "status": "Drafting",
+          "wordCount": 3823,
+          "message": "evidence: Chapter 4 credited Colvin with a framing his talk never gave",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-dcc651b.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3823,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "04/git-4a3cad1.md"
+        },
         {
           "version_id": "git:ac69df3",
           "source": "git",
@@ -252,28 +274,6 @@
           "content_ref": "04/git-08a5bf8.md"
         },
         {
-          "version_id": "git:fabaf7d",
-          "source": "git",
-          "ref": "fabaf7d84db213ad6775299c4b6a0c27a8cd1a43",
-          "date": "2026-08-26",
-          "status": "Drafting",
-          "wordCount": 3932,
-          "message": "fix(ch4): remove a direct quotation Hetzel did not say",
-          "corpus_snapshot_hash": null,
-          "content_ref": "04/git-fabaf7d.md"
-        },
-        {
-          "version_id": "git:1b3b2b4",
-          "source": "git",
-          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
-          "date": "2026-08-23",
-          "status": "Drafting",
-          "wordCount": 3933,
-          "message": "feat: add a practical checklist section to chapters 1, 3-10",
-          "corpus_snapshot_hash": null,
-          "content_ref": "04/git-1b3b2b4.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -287,15 +287,48 @@
       ]
     },
     "05": {
-      "current_version_id": "git:ac69df3",
+      "current_version_id": "git:53df9ab",
       "versions": [
+        {
+          "version_id": "git:53df9ab",
+          "source": "git",
+          "ref": "53df9abfbcab9c90ae75b3feda7df9298829be10",
+          "date": "2026-09-19",
+          "status": "Drafting",
+          "wordCount": 3594,
+          "message": "evidence: remove a withdrawn source from the book and corpus, on request",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-53df9ab.md"
+        },
+        {
+          "version_id": "git:9300cfd",
+          "source": "git",
+          "ref": "9300cfd1c055f30dadab4c3a4b8062d5963d1975",
+          "date": "2026-09-03",
+          "status": "Drafting",
+          "wordCount": 3594,
+          "message": "measure: first valid claim_defensibility reading - 534 paragraphs, 2 real defects",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-9300cfd.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3572,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "05/git-4a3cad1.md"
+        },
         {
           "version_id": "git:ac69df3",
           "source": "git",
           "ref": "ac69df3cbbc0e00f488975d788a4c16f2f57c15f",
           "date": "2026-08-28",
           "status": "Drafting",
-          "wordCount": 3619,
+          "wordCount": 3617,
           "message": "fix(integrity): audit every attributed quotation, remove a fabrication",
           "corpus_snapshot_hash": null,
           "content_ref": "05/git-ac69df3.md"
@@ -306,43 +339,10 @@
           "ref": "31099b63928e310d0a35441147d6f5a809794ddf",
           "date": "2026-08-28",
           "status": "Drafting",
-          "wordCount": 3613,
+          "wordCount": 3611,
           "message": "edit: stop ranking the sources for the reader",
           "corpus_snapshot_hash": null,
           "content_ref": "05/git-31099b6.md"
-        },
-        {
-          "version_id": "git:1b3b2b4",
-          "source": "git",
-          "ref": "1b3b2b456dca42b23cb582946f2f8a12cc3c8bdb",
-          "date": "2026-08-23",
-          "status": "Drafting",
-          "wordCount": 3628,
-          "message": "feat: add a practical checklist section to chapters 1, 3-10",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-1b3b2b4.md"
-        },
-        {
-          "version_id": "git:03bad0c",
-          "source": "git",
-          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
-          "date": "2026-07-18",
-          "status": "Drafting",
-          "wordCount": 3432,
-          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-03bad0c.md"
-        },
-        {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2985,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "05/git-eae7ffa.md"
         },
         {
           "version_id": "git:7f5a2c6",
@@ -358,8 +358,19 @@
       ]
     },
     "06": {
-      "current_version_id": "git:ac69df3",
+      "current_version_id": "git:4a3cad1",
       "versions": [
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 4159,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "06/git-4a3cad1.md"
+        },
         {
           "version_id": "git:ac69df3",
           "source": "git",
@@ -405,17 +416,6 @@
           "content_ref": "06/git-03bad0c.md"
         },
         {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 3482,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "06/git-eae7ffa.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -429,8 +429,30 @@
       ]
     },
     "07": {
-      "current_version_id": "git:c46f6e6",
+      "current_version_id": "git:a80ddb6",
       "versions": [
+        {
+          "version_id": "git:a80ddb6",
+          "source": "git",
+          "ref": "a80ddb6d24d24649a7793e43208133da724ab239",
+          "date": "2026-09-03",
+          "status": "Drafting",
+          "wordCount": 3299,
+          "message": "evidence: anchor the thirteen zero-claim sections; canonical panel v10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-a80ddb6.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3269,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "07/git-4a3cad1.md"
+        },
         {
           "version_id": "git:c46f6e6",
           "source": "git",
@@ -465,28 +487,6 @@
           "content_ref": "07/git-03bad0c.md"
         },
         {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2786,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2585,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "07/git-96de0a5.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -500,8 +500,30 @@
       ]
     },
     "08": {
-      "current_version_id": "git:c46f6e6",
+      "current_version_id": "git:a80ddb6",
       "versions": [
+        {
+          "version_id": "git:a80ddb6",
+          "source": "git",
+          "ref": "a80ddb6d24d24649a7793e43208133da724ab239",
+          "date": "2026-09-03",
+          "status": "Drafting",
+          "wordCount": 2915,
+          "message": "evidence: anchor the thirteen zero-claim sections; canonical panel v10",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-a80ddb6.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 2866,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "08/git-4a3cad1.md"
+        },
         {
           "version_id": "git:c46f6e6",
           "source": "git",
@@ -536,28 +558,6 @@
           "content_ref": "08/git-cfecd09.md"
         },
         {
-          "version_id": "git:4225988",
-          "source": "git",
-          "ref": "42259888a5c8b16bc03688a4bdbce7baa12f8c1c",
-          "date": "2026-08-21",
-          "status": "Drafting",
-          "wordCount": 2949,
-          "message": "edit(quality): fix ch8 ship-blocker and a duplicated sentence",
-          "corpus_snapshot_hash": null,
-          "content_ref": "08/git-4225988.md"
-        },
-        {
-          "version_id": "git:03bad0c",
-          "source": "git",
-          "ref": "03bad0cc5305a07ecaf3845e11b3b3fcc4ef1bb7",
-          "date": "2026-07-18",
-          "status": "Drafting",
-          "wordCount": 2915,
-          "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
-          "corpus_snapshot_hash": null,
-          "content_ref": "08/git-03bad0c.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -571,8 +571,19 @@
       ]
     },
     "09": {
-      "current_version_id": "git:c46f6e6",
+      "current_version_id": "git:4a3cad1",
       "versions": [
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 3232,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "09/git-4a3cad1.md"
+        },
         {
           "version_id": "git:c46f6e6",
           "source": "git",
@@ -618,17 +629,6 @@
           "content_ref": "09/git-03bad0c.md"
         },
         {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 2466,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "09/git-eae7ffa.md"
-        },
-        {
           "version_id": "git:7f5a2c6",
           "source": "git",
           "ref": "7f5a2c6dd972528d4a753601a531507f14f1892a",
@@ -642,8 +642,30 @@
       ]
     },
     "10": {
-      "current_version_id": "git:1b3b2b4",
+      "current_version_id": "git:9300cfd",
       "versions": [
+        {
+          "version_id": "git:9300cfd",
+          "source": "git",
+          "ref": "9300cfd1c055f30dadab4c3a4b8062d5963d1975",
+          "date": "2026-09-03",
+          "status": "Drafting",
+          "wordCount": 2094,
+          "message": "measure: first valid claim_defensibility reading - 534 paragraphs, 2 real defects",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-9300cfd.md"
+        },
+        {
+          "version_id": "git:4a3cad1",
+          "source": "git",
+          "ref": "4a3cad16481a670281ab5c60a5bd1456856d1e67",
+          "date": "2026-09-02",
+          "status": "Drafting",
+          "wordCount": 2089,
+          "message": "edit: usefulness pass on the paragraph kinds both judges fail; attribution follow-ups",
+          "corpus_snapshot_hash": null,
+          "content_ref": "10/git-4a3cad1.md"
+        },
         {
           "version_id": "git:1b3b2b4",
           "source": "git",
@@ -676,28 +698,6 @@
           "message": "Manuscript: recover June usefulness-lift work erased by the July 15 sync",
           "corpus_snapshot_hash": null,
           "content_ref": "10/git-03bad0c.md"
-        },
-        {
-          "version_id": "git:eae7ffa",
-          "source": "git",
-          "ref": "eae7ffaa6cbc5ffc056f20943fb9a0e62e66b718",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 1723,
-          "message": "Manuscript: cumulative case arcs, Monday-test sharpening, three rendered scenes",
-          "corpus_snapshot_hash": null,
-          "content_ref": "10/git-eae7ffa.md"
-        },
-        {
-          "version_id": "git:96de0a5",
-          "source": "git",
-          "ref": "96de0a5ef2d542d5c0dbc18663e8599f0d4c42dc",
-          "date": "2026-07-15",
-          "status": "Drafting",
-          "wordCount": 1707,
-          "message": "Manuscript: redundancy-thinning pass across all ten chapters, synced to public layers",
-          "corpus_snapshot_hash": null,
-          "content_ref": "10/git-96de0a5.md"
         },
         {
           "version_id": "git:7f5a2c6",
