@@ -1424,3 +1424,20 @@
     - **Quote:** "determined by the system and not the worker."
 - **Caveats / counterpoints:** Two high anchors from one talk (DX), so moderate. Reock grounds two things: augment-not-replace, and Deming's point that output is set by the system rather than the worker. The step from there to *value relocating toward those who design and govern* delegated systems is the author's inference, not Reock's words; the phrase 'systems of delegated work' is the book's vocabulary (#1, #70), not his.
 - **Candidate chapters:** 10
+
+## 75) Parsing model prose into decisions is the fragile seam; a typed, validated output is where that boundary belongs
+- **Why it matters:** Book 1 never names the technique its own corpus discusses most. "Structured output" appears in 57 talks and "function calling" in 63, and neither phrase occurs anywhere in the manuscript or this ledger. The chapters cover the adjacent ground — tool schemas in Chapter 5, "static checks, tests, schemas, and validators" as self-verification in Chapter 4, inducement risk in Chapter 7 — but never the seam itself: the moment a model's text is turned into something software acts on. Book 2 makes the architectural version of this point at claims-2 #38 ("let structured systems own the truth"); book 1 has no equivalent, which is the gap this entry fills.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[612-yj-wSRJwrrc-pydantic-is-all-you-need-jason-liu|#612 — Jason Liu]] — names the seam and how common it is: most production applications are a model emitting JSON that the caller then parses by hand.
+    - **Anchor:** `yj-wSRJwrrc` 00:00:53.280 → 00:01:00.680 · confidence: high
+    - **Quote:** "asking a language model to Output Json or some structured output that you're parsing with a regular expression and that experience is pretty terrible"
+  - [[223-fmZWvE7yDZo-ux-design-principles-for-semi-autonomous-multi-agent-systems-victor-dibia-microsoft|#223 — Victor Dibia, Microsoft]] — puts structured output on the reliability side of the deterministic-workflow tradeoff, as what makes such systems dependable in production.
+    - **Anchor:** `fmZWvE7yDZo` 00:06:27.919 → 00:06:32.319 · confidence: high
+    - **Quote:** "you can build reliable systems take advantage of things like function calling, structured output"
+  - [[788-T0HhO4YtTfE-ai-system-design-from-idea-to-production-apoorva-joshi-mongodb|#788 — Apoorva Joshi, MongoDB]] — specifies what the typed output should carry: the decision and the citations behind it, so the evidence travels with the verdict rather than being re-derived from prose.
+    - **Anchor:** `T0HhO4YtTfE` 00:27:08.200 → 00:27:13.760 · confidence: high
+    - **Quote:** "make sure that our system is always producing a structured output which contains not just the decision,"
+- **Caveats / counterpoints:** All three speakers frame this as **reliability engineering, not security**. Sweeps of the three transcripts return zero occurrences of "injection" and no prompt-injection discussion; the single "security" hit in #788 is incidental. So this entry supports the seam-and-boundary argument and must NOT be stretched into a claim that typed outputs mitigate prompt injection or separate a control plane from a data plane — that framing is currently unsourced in this corpus and would need its own entry and its own evidence. Dibia's quote also sits inside a tradeoff: he is contrasting deterministic workflows with open-ended agents, and says structured output is what makes the *deterministic* side reliable, not that it is always the right choice.
+- **Candidate chapters:** 3, 4, 7
+- **Reusable phrasing:** The fragile seam is not the model's judgment; it is the regular expression you wrote to read it.

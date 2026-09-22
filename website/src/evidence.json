@@ -3846,6 +3846,40 @@
           "quote": "It shouldn't even be able to make a call to HTTP bin in this case."
         }
       ]
+    },
+    {
+      "claim_id": "claims#75",
+      "text": "Parsing model prose into decisions is the fragile seam; a typed, validated output is where that boundary belongs",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "yj-wSRJwrrc",
+          "start": "00:00:53.280",
+          "end": "00:01:00.680",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#612 — Jason Liu",
+          "quote": "asking a language model to Output Json or some structured output that you're parsing with a regular expression and that experience is pretty terrible"
+        },
+        {
+          "video_id": "fmZWvE7yDZo",
+          "start": "00:06:27.919",
+          "end": "00:06:32.319",
+          "start_seconds": 387,
+          "confidence": "high",
+          "label": "#223 — Victor Dibia, Microsoft",
+          "quote": "you can build reliable systems take advantage of things like function calling, structured output"
+        },
+        {
+          "video_id": "T0HhO4YtTfE",
+          "start": "00:27:08.200",
+          "end": "00:27:13.760",
+          "start_seconds": 1628,
+          "confidence": "high",
+          "label": "#788 — Apoorva Joshi, MongoDB",
+          "quote": "make sure that our system is always producing a structured output which contains not just the decision,"
+        }
+      ]
     }
   ],
   "3": [
@@ -4324,6 +4358,40 @@
           "confidence": "high",
           "label": "#151 — Rene Brandel, Casco",
           "quote": "if you just use containers, by the way, that's not an isolation layer in case anybody's wondering. Yeah. Yeah. Don't use containers for isolation."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#75",
+      "text": "Parsing model prose into decisions is the fragile seam; a typed, validated output is where that boundary belongs",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "yj-wSRJwrrc",
+          "start": "00:00:53.280",
+          "end": "00:01:00.680",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#612 — Jason Liu",
+          "quote": "asking a language model to Output Json or some structured output that you're parsing with a regular expression and that experience is pretty terrible"
+        },
+        {
+          "video_id": "fmZWvE7yDZo",
+          "start": "00:06:27.919",
+          "end": "00:06:32.319",
+          "start_seconds": 387,
+          "confidence": "high",
+          "label": "#223 — Victor Dibia, Microsoft",
+          "quote": "you can build reliable systems take advantage of things like function calling, structured output"
+        },
+        {
+          "video_id": "T0HhO4YtTfE",
+          "start": "00:27:08.200",
+          "end": "00:27:13.760",
+          "start_seconds": 1628,
+          "confidence": "high",
+          "label": "#788 — Apoorva Joshi, MongoDB",
+          "quote": "make sure that our system is always producing a structured output which contains not just the decision,"
         }
       ]
     }
@@ -4901,6 +4969,40 @@
           "confidence": "high",
           "label": "#451 — How to Improve Your Agents (lit review)",
           "quote": "we using multi-agent debate to get reliable State evaluation instead of using single uh"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#75",
+      "text": "Parsing model prose into decisions is the fragile seam; a typed, validated output is where that boundary belongs",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "yj-wSRJwrrc",
+          "start": "00:00:53.280",
+          "end": "00:01:00.680",
+          "start_seconds": 53,
+          "confidence": "high",
+          "label": "#612 — Jason Liu",
+          "quote": "asking a language model to Output Json or some structured output that you're parsing with a regular expression and that experience is pretty terrible"
+        },
+        {
+          "video_id": "fmZWvE7yDZo",
+          "start": "00:06:27.919",
+          "end": "00:06:32.319",
+          "start_seconds": 387,
+          "confidence": "high",
+          "label": "#223 — Victor Dibia, Microsoft",
+          "quote": "you can build reliable systems take advantage of things like function calling, structured output"
+        },
+        {
+          "video_id": "T0HhO4YtTfE",
+          "start": "00:27:08.200",
+          "end": "00:27:13.760",
+          "start_seconds": 1628,
+          "confidence": "high",
+          "label": "#788 — Apoorva Joshi, MongoDB",
+          "quote": "make sure that our system is always producing a structured output which contains not just the decision,"
         }
       ]
     }
