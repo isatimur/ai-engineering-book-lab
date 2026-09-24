@@ -1427,6 +1427,49 @@
           "quote": "eval to us it's actually the same problem from a from a systems perspective."
         }
       ]
+    },
+    {
+      "claim_id": "claims#76",
+      "text": "Not every step in an agent loop needs a language model; the cheap deterministic check is often the right instrument",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "-I5W5QVAT8E",
+          "start": "00:17:12.799",
+          "end": "00:17:18.959",
+          "start_seconds": 1032,
+          "confidence": "high",
+          "label": "#924 — Sarah Sachs, Notion",
+          "quote": "you don't need an LLM to turn a CSV into a PDF. You don't need an LLM to talk to notion tool calls if we have a CLI."
+        },
+        {
+          "video_id": "-I5W5QVAT8E",
+          "start": "00:17:19.919",
+          "end": "00:17:22.959",
+          "start_seconds": 1039,
+          "confidence": "high",
+          "label": "#924 — Sarah Sachs, Notion",
+          "quote": "You definitely don't need an LLM to do deterministic SQL queries."
+        },
+        {
+          "video_id": "9-vGxMoUM9Y",
+          "start": "00:15:04.199",
+          "end": "00:15:12.240",
+          "start_seconds": 904,
+          "confidence": "high",
+          "label": "#592 — Shreya Rajpal",
+          "quote": "traditional machine learning methods or high Precision deep learning classifiers uh so really you don't need the full power of an llm"
+        },
+        {
+          "video_id": "Xfl50508LZM",
+          "start": "00:50:08.880",
+          "end": "00:50:11.599",
+          "start_seconds": 3008,
+          "confidence": "high",
+          "label": "#681 — Laurie Voss, Arize",
+          "quote": "that is a completely deterministic test. I don't need an LLM to do it."
+        }
+      ]
     }
   ],
   "9": [
@@ -4394,6 +4437,49 @@
           "quote": "make sure that our system is always producing a structured output which contains not just the decision,"
         }
       ]
+    },
+    {
+      "claim_id": "claims#76",
+      "text": "Not every step in an agent loop needs a language model; the cheap deterministic check is often the right instrument",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "-I5W5QVAT8E",
+          "start": "00:17:12.799",
+          "end": "00:17:18.959",
+          "start_seconds": 1032,
+          "confidence": "high",
+          "label": "#924 — Sarah Sachs, Notion",
+          "quote": "you don't need an LLM to turn a CSV into a PDF. You don't need an LLM to talk to notion tool calls if we have a CLI."
+        },
+        {
+          "video_id": "-I5W5QVAT8E",
+          "start": "00:17:19.919",
+          "end": "00:17:22.959",
+          "start_seconds": 1039,
+          "confidence": "high",
+          "label": "#924 — Sarah Sachs, Notion",
+          "quote": "You definitely don't need an LLM to do deterministic SQL queries."
+        },
+        {
+          "video_id": "9-vGxMoUM9Y",
+          "start": "00:15:04.199",
+          "end": "00:15:12.240",
+          "start_seconds": 904,
+          "confidence": "high",
+          "label": "#592 — Shreya Rajpal",
+          "quote": "traditional machine learning methods or high Precision deep learning classifiers uh so really you don't need the full power of an llm"
+        },
+        {
+          "video_id": "Xfl50508LZM",
+          "start": "00:50:08.880",
+          "end": "00:50:11.599",
+          "start_seconds": 3008,
+          "confidence": "high",
+          "label": "#681 — Laurie Voss, Arize",
+          "quote": "that is a completely deterministic test. I don't need an LLM to do it."
+        }
+      ]
     }
   ],
   "4": [
@@ -5003,6 +5089,49 @@
           "confidence": "high",
           "label": "#788 — Apoorva Joshi, MongoDB",
           "quote": "make sure that our system is always producing a structured output which contains not just the decision,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#76",
+      "text": "Not every step in an agent loop needs a language model; the cheap deterministic check is often the right instrument",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "-I5W5QVAT8E",
+          "start": "00:17:12.799",
+          "end": "00:17:18.959",
+          "start_seconds": 1032,
+          "confidence": "high",
+          "label": "#924 — Sarah Sachs, Notion",
+          "quote": "you don't need an LLM to turn a CSV into a PDF. You don't need an LLM to talk to notion tool calls if we have a CLI."
+        },
+        {
+          "video_id": "-I5W5QVAT8E",
+          "start": "00:17:19.919",
+          "end": "00:17:22.959",
+          "start_seconds": 1039,
+          "confidence": "high",
+          "label": "#924 — Sarah Sachs, Notion",
+          "quote": "You definitely don't need an LLM to do deterministic SQL queries."
+        },
+        {
+          "video_id": "9-vGxMoUM9Y",
+          "start": "00:15:04.199",
+          "end": "00:15:12.240",
+          "start_seconds": 904,
+          "confidence": "high",
+          "label": "#592 — Shreya Rajpal",
+          "quote": "traditional machine learning methods or high Precision deep learning classifiers uh so really you don't need the full power of an llm"
+        },
+        {
+          "video_id": "Xfl50508LZM",
+          "start": "00:50:08.880",
+          "end": "00:50:11.599",
+          "start_seconds": 3008,
+          "confidence": "high",
+          "label": "#681 — Laurie Voss, Arize",
+          "quote": "that is a completely deterministic test. I don't need an LLM to do it."
         }
       ]
     }

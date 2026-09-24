@@ -1441,3 +1441,23 @@
 - **Caveats / counterpoints:** All three speakers frame this as **reliability engineering, not security**. Sweeps of the three transcripts return zero occurrences of "injection" and no prompt-injection discussion; the single "security" hit in #788 is incidental. So this entry supports the seam-and-boundary argument and must NOT be stretched into a claim that typed outputs mitigate prompt injection or separate a control plane from a data plane — that framing is currently unsourced in this corpus and would need its own entry and its own evidence. Dibia's quote also sits inside a tradeoff: he is contrasting deterministic workflows with open-ended agents, and says structured output is what makes the *deterministic* side reliable, not that it is always the right choice.
 - **Candidate chapters:** 3, 4, 7
 - **Reusable phrasing:** The fragile seam is not the model's judgment; it is the regular expression you wrote to read it.
+
+## 76) Not every step in an agent loop needs a language model; the cheap deterministic check is often the right instrument
+- **Why it matters:** Book 1 already argues that *which* model runs a step is a control-plane decision (claim #54, routing), and Chapter 6 warns that a misroute hands a hard task to a cheap model that quietly botches it. What it never says is that some steps need no model at all. "Classifier" appears in 64 corpus talks and zero times in either book. This is the missing rung below routing: before choosing a cheaper model, ask whether the decision is a generation problem in the first place. It pairs with #75 — that entry says a typed output is where the boundary belongs, this one says some decisions never needed generation to reach it.
+- **Support level:** strong
+- **Supporting sources:**
+  - [[924--I5W5QVAT8E-notion-s-token-town-sarah-sachs-notion|#924 — Sarah Sachs, Notion]] — names the pattern with production examples, and the cost consequence of ignoring it: teams go "token poor" paying a model to do deterministic work.
+    - **Anchor:** `-I5W5QVAT8E` 00:17:12.799 → 00:17:18.959 · confidence: high
+    - **Quote:** "you don't need an LLM to turn a CSV into a PDF. You don't need an LLM to talk to notion tool calls if we have a CLI."
+  - [[924--I5W5QVAT8E-notion-s-token-town-sarah-sachs-notion|#924 — Sarah Sachs, Notion]] — the same point where the alternative is plain code.
+    - **Anchor:** `-I5W5QVAT8E` 00:17:19.919 → 00:17:22.959 · confidence: high
+    - **Quote:** "You definitely don't need an LLM to do deterministic SQL queries."
+  - [[592-9-vGxMoUM9Y-trust-but-verify-shreya-rajpal|#592 — Shreya Rajpal]] — states the general rule and names the alternatives, classical ML and precision classifiers, for bounded checks.
+    - **Anchor:** `9-vGxMoUM9Y` 00:15:04.199 → 00:15:12.240 · confidence: high
+    - **Quote:** "traditional machine learning methods or high Precision deep learning classifiers uh so really you don't need the full power of an llm"
+  - [[681-Xfl50508LZM-ship-real-agents-hands-on-evals-for-agentic-applications-laurie-voss-arize|#681 — Laurie Voss, Arize]] — the same discipline applied to evals: where a check is a string match, a judge model is the wrong instrument.
+    - **Anchor:** `Xfl50508LZM` 00:50:08.880 → 00:50:11.599 · confidence: high
+    - **Quote:** "that is a completely deterministic test. I don't need an LLM to do it."
+- **Caveats / counterpoints:** The sources establish that deterministic and classical-ML alternatives exist and are cheaper, **not** that they are more accurate in general. Rajpal scopes her version explicitly to "really basic constraints"; Voss's is a string match; Sachs's examples are format conversion, a CLI call, and SQL. None of them claims a classifier beats a model on an open-ended judgment, and the entry must not be read that way. The inverse failure is real and already in the book at #54: pushing a hard task onto a cheap instrument to save money. This claim sets a floor, not a ceiling.
+- **Candidate chapters:** 3, 4, 6
+- **Reusable phrasing:** Before asking which model should run a step, ask whether the step is a generation problem at all.
