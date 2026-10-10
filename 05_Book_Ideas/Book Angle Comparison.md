@@ -23,10 +23,10 @@ That shift absorbs the corpus's biggest recurring tensions:
 
 ## Corpus fit check
 
-- Coding systems are overwhelmingly represented (`Coding Agents`: 550).
-- The trust layer is also massive (`Evals & Reliability`: 485).
+- Coding systems are overwhelmingly represented (`Coding Agents`: 551).
+- The trust layer is also massive (`Evals & Reliability`: 486).
 - Organizational adaptation is too common to ignore (`Org Design & Leadership`: 243).
-- Context/runtime substrate is substantial enough to support full chapters (`MCP & Tooling`: 136, `RAG & Retrieval`: 167).
+- Context/runtime substrate is substantial enough to support full chapters (`MCP & Tooling`: 136, `RAG & Retrieval`: 166).
 
 ## Recommended packaging
 

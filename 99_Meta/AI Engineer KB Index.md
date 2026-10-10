@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1070-1074|Latest batch: recent-1070-1074]]
+- [[batches/probe-2|Latest batch: probe-2]]
 - Total video notes in corpus: 1074
-- Video notes created in this batch: 5
+- Video notes created in this batch: 2
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,8 +31,5 @@
 
 ## Recent notes
 
-- [[1070-YXowceUKYJI-kv-cache-aware-routing-and-p-d-disaggregation-on-kubernetes-yuchen-fama-ashish-kamra-red-h|#1070 — KV Cache-Aware Routing and P/D Disaggregation on Kubernetes — Yuchen Fama & Ashish Kamra, Red Hat]]
-- [[1071-G7cgLjZtmMU-the-agentic-commerce-stack-ahnaf-prio-best-buy|#1071 — The Agentic Commerce Stack — Ahnaf Prio, Best Buy]]
-- [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
-- [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
-- [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
+- [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
+- [[1076-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1076 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]

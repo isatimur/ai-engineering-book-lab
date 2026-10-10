@@ -171,7 +171,10 @@ def write_synthesis_pack(records: list[NoteRecord]) -> None:
         *lines_for_records(must(idx, [23, 43, 50, 72, 112, 121, 125, 126, 153, 158, 170, 184, 198, 212])),
         "",
         "### Cluster 4 — Context is infrastructure, not just prompt stuffing",
-        *lines_for_records(must(idx, [47, 48, 100, 104, 105, 118, 123, 154, 156, 157, 172, 193, 215, 216, 217, 218, 219])),
+        # 218 withdrawn at the speaker's request on 2026-09-19 (see
+        # 99_Meta/withdrawn-videos.md). `must()` raises on a missing id, so a
+        # withdrawal that leaves an id in these lists breaks the whole pipeline.
+        *lines_for_records(must(idx, [47, 48, 100, 104, 105, 118, 123, 154, 156, 157, 172, 193, 215, 216, 217, 219])),
         "",
         "### Cluster 5 — Reliable agents require runtimes, control planes, and state",
         *lines_for_records(must(idx, [3, 28, 38, 44, 83, 99, 111, 138, 164, 167, 168, 176, 198, 201, 202, 206, 208])),
@@ -302,7 +305,8 @@ def write_chapter_outline(records: list[NoteRecord]) -> None:
         (2, "Taste Still Matters When Code Gets Cheap", "Why fundamentals, judgment, craft, and constraint matter more — not less — in the AI era.", [1, 6, 14, 59, 73, 106, 127, 132]),
         (3, "Harnesses, Specs, and Codebases Agents Can Actually Use", "How to prepare the environment so coding agents can operate without wrecking the system.", [16, 40, 42, 57, 77, 87, 177, 179, 180, 181, 190]),
         (4, "Evals Are the Control System", "Why trust comes from measurement loops, seeded tests, and production-facing evaluation rather than benchmarks alone.", [23, 50, 72, 112, 121, 125, 126, 153, 170, 184, 212]),
-        (5, "Context Is Infrastructure", "Retrieval, memory, GraphRAG, and enterprise context as first-class system design problems.", [47, 48, 100, 104, 105, 118, 154, 156, 157, 172, 193, 215, 218, 219]),
+        # 218 withdrawn 2026-09-19; see 99_Meta/withdrawn-videos.md.
+        (5, "Context Is Infrastructure", "Retrieval, memory, GraphRAG, and enterprise context as first-class system design problems.", [47, 48, 100, 104, 105, 118, 154, 156, 157, 172, 193, 215, 219]),
         (6, "Runtimes, State, and the Human Control Plane", "Durability, workflows, stateful environments, MCP/tool layers, and why autonomy needs architecture.", [28, 38, 44, 83, 99, 111, 164, 167, 176, 198, 201, 202, 208]),
         (7, "Security, Identity, and High-Stakes Trust", "Why OAuth, sandboxing, compliance, and trustworthy-action boundaries become central once agents can act.", [31, 32, 37, 86, 148, 149, 150, 152, 206, 211]),
         (8, "Realtime, Voice, and the Cost of Being Interruptible", "How voice interfaces expose the real cost of latency and turn-taking, and why production AI must be designed around interruption, not just throughput.", [26, 85, 128, 142, 143, 144, 145, 146, 147, 165, 174, 175]),

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 455
+- Total tagged videos: 456
 
 ## Cross-video synthesis
 
-- This theme appears across 455 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (407), Evals & Reliability (351), MCP & Tooling (68).
+- This theme appears across 456 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (408), Evals & Reliability (351), MCP & Tooling (68).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -466,6 +466,8 @@
 - [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
 - [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
 - [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
+- [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
+- [[1076-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1076 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]
 
 ## Notes
 

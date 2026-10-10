@@ -116,6 +116,36 @@ def run(cmd: list[str], cwd: Path | None = None) -> subprocess.CompletedProcess:
     return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
 
 
+class TranscriptFetchBlocked(RuntimeError):
+    """yt-dlp could not fetch captions for a reason that will pass.
+
+    Raised instead of returning "unavailable" so the caller does NOT write a
+    note. The ingest decides what is missing by globbing 01_Videos/*.md, so a
+    note written during a rate-limit marks the talk permanently ingested with
+    no transcript and nothing ever retries it. On 2026-10-10 that turned 16 of
+    18 talks into transcript-less notes while YouTube returned HTTP 429 —
+    captions existed for every one of them.
+    """
+
+
+# Signatures that mean "try again later", not "this talk has no captions".
+_TRANSIENT = (
+    "http error 429",
+    "too many requests",
+    "http error 403",
+    "http error 5",
+    "temporary failure",
+    "timed out",
+    "connection reset",
+    "unable to download video subtitles",
+)
+
+
+def _is_transient(stderr: str) -> bool:
+    low = (stderr or "").lower()
+    return any(sig in low for sig in _TRANSIENT)
+
+
 def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
     raw_base = TRANSCRIPT_DIR / "raw" / video.id
     existing_vtt = list(raw_base.parent.glob(f"{video.id}*.vtt"))
@@ -134,6 +164,17 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
         ]
         proc = run(cmd, cwd=ROOT)
         if proc.returncode != 0:
+            # A rate-limit and a captionless talk both exit non-zero. Treating
+            # them alike is what poisoned the batch: "unavailable" is a
+            # permanent verdict and it was being written for a passing
+            # condition. Fail loudly on transient, record only real absence.
+            if _is_transient(proc.stderr):
+                tail = (proc.stderr or "").strip().splitlines()
+                raise TranscriptFetchBlocked(
+                    f"{video.id}: captions not retrievable right now"
+                    + (f" ({tail[-1][:160]})" if tail else "")
+                    + ". No note written; re-run this batch later."
+                )
             return "unavailable", None, None
         existing_vtt = list(raw_base.parent.glob(f"{video.id}*.vtt"))
     preferred = None

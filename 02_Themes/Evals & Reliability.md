@@ -496,6 +496,7 @@
 - [[1071-G7cgLjZtmMU-the-agentic-commerce-stack-ahnaf-prio-best-buy|#1071 — The Agentic Commerce Stack — Ahnaf Prio, Best Buy]]
 - [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
 - [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
+- [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
 
 ## Notes
 

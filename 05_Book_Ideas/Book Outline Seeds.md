@@ -13,7 +13,7 @@
 ## Supporting seed talks
 
 ### Agent Architecture
-- Corpus coverage: 455 talks
+- Corpus coverage: 456 talks
 - [[019-h403btjldDQ-paperclip-open-source-human-control-plane-for-ai-labor-dotta-bippa|#19 — Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
@@ -22,7 +22,7 @@
 - [[044-kmV-qg4uoNI-building-durable-agents-with-workflow-devkit-ai-sdk-peter-wielander-vercel|#44 — Building durable Agents with Workflow DevKit & AI SDK - Peter Wielander, Vercel]]
 
 ### Coding Agents
-- Corpus coverage: 550 talks
+- Corpus coverage: 551 talks
 - [[001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc|#1 — It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk]]
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
@@ -75,7 +75,7 @@
 - [[014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil|#14 — The Friction is Your Judgment — Armin Ronacher & Cristina Poncela Cubeiro, Earendil]]
 
 ### RAG & Retrieval
-- Corpus coverage: 167 talks
+- Corpus coverage: 166 talks
 - [[004-xOP1PM8fwnk-building-generative-image-video-models-at-scale-sander-dieleman-veo-and-nano-banana|#4 — Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana)]]
 - [[005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en|#5 — How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer]]
 - [[008-mYSRn6PC1mc-full-workshop-build-your-own-deep-research-agents-louis-fran-ois-bouchard-paul-iusztin-sam|#8 — Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi]]

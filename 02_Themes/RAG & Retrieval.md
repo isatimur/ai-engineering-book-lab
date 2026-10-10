@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 167
+- Total tagged videos: 166
 
 ## Cross-video synthesis
 
-- This theme appears across 167 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 166 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (20).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
