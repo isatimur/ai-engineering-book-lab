@@ -36,6 +36,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
@@ -81,6 +82,15 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--ledger", default="claims", help="ledger dir (claims | claims-2)")
 ap.add_argument("--strict", action="store_true",
                 help="exit 1 if unmarked time-bound evidence exists")
+ap.add_argument("--max-age-days", type=int, default=None, metavar="N",
+                help="treat a 'still current' verdict older than N days as due "
+                     "for re-review. A verdict that the corpus has NOT overtaken "
+                     "a quote is only true on the day it was made: the corpus "
+                     "grows every day, so 'checked, still current' has a shelf "
+                     "life of its own. Terminal verdicts (**Superseded**, "
+                     "**Prescription superseded**) never expire — the fact is "
+                     "already recorded as dead and no amount of new corpus "
+                     "revives it. With --strict, an expired verdict exits 1.")
 a = ap.parse_args()
 
 path = REPO / a.ledger / "Claims Ledger.md"
@@ -113,19 +123,61 @@ for i, ln in enumerate(lines):
     # was still being listed as outstanding. A checklist that renags about
     # settled items teaches you to ignore it.
     marked = False
+    verdict_line = ""
     for nxt in lines[i + 1:i + 4]:
         if any(m in nxt for m in _MARKERS):
             marked = True
+            verdict_line = nxt
             break
         if "**Quote:**" in nxt or nxt.startswith("  - [["):
             break
-    findings.append((entry, kinds[0], text, marked))
+    findings.append((entry, kinds[0], text, marked, verdict_line))
 
 unmarked = [f for f in findings if not f[3]]
 marked = [f for f in findings if f[3]]
+
+# A "still current" verdict expires; a terminal one does not. "Superseded"
+# records that the quote's assertion has already stopped being true, and a
+# bigger corpus cannot un-kill it. "Currency checked" records that nothing in
+# the corpus overtook it YET — true on the day it was written and decreasingly
+# true afterwards, because the corpus only grows.
+_TERMINAL = ("**Superseded", "**Prescription superseded")
+_DATE = re.compile(r"\((\d{4}-\d{2}-\d{2})\)")
+expired: list[tuple] = []
+undated: list[tuple] = []
+if a.max_age_days is not None:
+    today = date.today()
+    for f in marked:
+        verdict = f[4]
+        if any(t in verdict for t in _TERMINAL):
+            continue
+        m = _DATE.search(verdict)
+        if not m:
+            undated.append(f)
+            continue
+        age = (today - date.fromisoformat(m.group(1))).days
+        if age > a.max_age_days:
+            expired.append((f, age, m.group(1)))
+
 print(f"{a.ledger}: {len(findings)} time-bound quote(s) — "
       f"{len(marked)} marked (reviewed), "
-      f"{len(unmarked)} unmarked\n")
+      f"{len(unmarked)} unmarked"
+      + (f", {len(expired)} verdict(s) past {a.max_age_days}d"
+         + (f", {len(undated)} undated" if undated else "")
+         if a.max_age_days is not None else "")
+      + "\n")
+
+if expired:
+    print(f"--- 'still current' verdicts older than {a.max_age_days} days "
+          f"(re-check against the newer corpus)")
+    for f, age, when in sorted(expired, key=lambda x: -x[1]):
+        print(f"  {f[0]:<12} [{f[1]}] checked {when} ({age}d ago): {f[2][:76]}")
+    print()
+if undated:
+    print("--- verdicts with no (YYYY-MM-DD) date, so their age is unknowable")
+    for f in undated:
+        print(f"  {f[0]:<12} [{f[1]}]: {f[2][:76]}")
+    print()
 
 for kind in SEVERITY:
     group = [f for f in unmarked if f[1] == kind]
@@ -138,9 +190,9 @@ for kind in SEVERITY:
 
 if marked:
     print("--- already marked superseded")
-    for e, k, t, _ in marked:
+    for e, k, t, *_ in marked:
         print(f"  {e:<11} [{k}] {t[:96]}")
 
 print("\nA flag is evidence with a shelf life, not a defect. Check whether the "
       "newer corpus\nhas overtaken it; if so mark it in place, never by deleting.")
-sys.exit(1 if (a.strict and unmarked) else 0)
+sys.exit(1 if (a.strict and (unmarked or expired or undated)) else 0)
