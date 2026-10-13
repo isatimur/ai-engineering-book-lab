@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 485
+- Total tagged videos: 486
 
 ## Cross-video synthesis
 
-- This theme appears across 485 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (372), Agent Architecture (351), Models & Inference (21).
+- This theme appears across 486 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (373), Agent Architecture (352), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -497,6 +497,7 @@
 - [[1072-qqrk7CtkuIw-how-anthropic-builds-lessons-from-labs-mike-krieger-anthropic|#1072 — How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic]]
 - [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
 - [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
+- [[1090-jebp4V0vh30-agentic-sites-building-hyper-personalized-websites-carlos-sanchez-adobe|#1090 — Agentic Sites: Building Hyper Personalized Websites — Carlos Sanchez, Adobe]]
 
 ## Notes
 

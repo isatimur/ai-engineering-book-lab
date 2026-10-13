@@ -1075,4 +1075,4 @@ Total videos: 1074
 1073. [Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI](https://www.youtube.com/watch?v=pOvWgX7IJsc) — `pOvWgX7IJsc` — 30:00
 1074. [How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked](https://www.youtube.com/watch?v=qdAkxLoYNI8) — `qdAkxLoYNI8` — 18:36
 1075. [Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma](https://www.youtube.com/watch?v=ZIYYsAzaLlA) — `ZIYYsAzaLlA` — 16:46
-1076. [Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber](https://www.youtube.com/watch?v=EL123UNokkI) — `EL123UNokkI` — 15:07
+1090. [Agentic Sites: Building Hyper Personalized Websites — Carlos Sanchez, Adobe](https://www.youtube.com/watch?v=jebp4V0vh30) — `jebp4V0vh30` — 20:43

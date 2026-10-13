@@ -26,7 +26,7 @@
 
 ## [[Evals & Reliability]]
 
-- Corpus count: 485
+- Corpus count: 486
 - [[016-am_oeAoUhew-harness-engineering-how-to-build-software-when-humans-steer-agents-execute-ryan-lopopolo-o|#16 — Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI]]
 - [[020-R7A8rX-09Zw-what-do-models-still-suck-at-peter-gostev-arena-ai-bullshitbench|#20 — What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench]]
 - [[023-X4dEHRzBLmc-judge-the-judge-building-llm-evaluators-that-actually-work-with-gepa-mahmoud-mabrouk-agent|#23 — Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI]]

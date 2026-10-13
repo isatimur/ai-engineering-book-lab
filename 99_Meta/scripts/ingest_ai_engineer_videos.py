@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import shutil
 import subprocess
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from html import unescape
@@ -158,11 +160,33 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
             "en,en-orig",
             "--sub-format",
             "vtt",
+            # Pacing. Without these the loop fires yt-dlp back to back and
+            # YouTube starts answering 429 within a handful of videos — on
+            # 2026-10-13 three talks downloaded fine by hand, then the same
+            # three returned 429 the moment the unpaced loop asked for them.
+            # A corpus ingest is a bulk read of someone else's service; it
+            # should be slow on purpose.
+            "--sleep-requests", os.environ.get("INGEST_SLEEP_REQUESTS", "2"),
+            "--sleep-subtitles", os.environ.get("INGEST_SLEEP_SUBTITLES", "3"),
+            "--retries", "5",
+            "--extractor-retries", "3",
+            "--retry-sleep", "exp=5:120",
             "--output",
             str(raw_base) + ".%(ext)s",
             video.url,
         ]
-        proc = run(cmd, cwd=ROOT)
+        # Bounded retry around the whole fetch: yt-dlp's own retries cover one
+        # request, this covers a window where the account is briefly throttled.
+        attempts = int(os.environ.get("INGEST_ATTEMPTS", "3"))
+        for attempt in range(1, attempts + 1):
+            proc = run(cmd, cwd=ROOT)
+            if proc.returncode == 0 or not _is_transient(proc.stderr):
+                break
+            if attempt < attempts:
+                wait = 30 * attempt
+                print(f"[ingest] {video.id}: transient failure, waiting {wait}s "
+                      f"(attempt {attempt}/{attempts})")
+                time.sleep(wait)
         if proc.returncode != 0:
             # A rate-limit and a captionless talk both exit non-zero. Treating
             # them alike is what poisoned the batch: "unavailable" is a
@@ -786,8 +810,20 @@ def main() -> None:
     batch_name = args.batch_name or f"recent-{args.offset + 1:03d}-{args.offset + len(videos):03d}"
 
     notes: list[Path] = []
+    skipped: list[tuple[str, str]] = []
     for video in videos:
-        transcript_status, _raw_path, plain_path = fetch_transcript(video)
+        try:
+            transcript_status, _raw_path, plain_path = fetch_transcript(video)
+        except TranscriptFetchBlocked as exc:
+            # Skip this video, keep the batch going. Writing no note is the
+            # whole point: the ingest finds missing talks by globbing
+            # 01_Videos/*.md, so an un-noted talk stays queued for the next run.
+            # Aborting the batch instead would let one unfetchable video block
+            # every talk behind it — on 2026-10-13 exactly one of 206 was
+            # returning 429 while the rest downloaded fine.
+            skipped.append((video.id, str(exc)))
+            print(f"[ingest] SKIP {video.id}: {exc}")
+            continue
         note_path = write_note(video, transcript_status, plain_path)
         notes.append(note_path)
 
@@ -797,6 +833,9 @@ def main() -> None:
     print(json.dumps({
         "batch": batch_name,
         "videos": len(videos),
+        "ingested": len(notes),
+        "skipped_retryable": len(skipped),
+        "skipped_ids": [vid for vid, _ in skipped],
         "corpus_notes": len(all_records),
         "notes": [str(p.relative_to(ROOT)) for p in notes],
         "batch_file": str(batch_file.relative_to(ROOT)),

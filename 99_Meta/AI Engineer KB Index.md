@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/probe-2|Latest batch: probe-2]]
+- [[batches/paced-test|Latest batch: paced-test]]
 - Total video notes in corpus: 1074
-- Video notes created in this batch: 2
+- Video notes created in this batch: 0
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,5 +31,3 @@
 
 ## Recent notes
 
-- [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
-- [[1076-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1076 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]
