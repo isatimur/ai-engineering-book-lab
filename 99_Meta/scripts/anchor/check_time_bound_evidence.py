@@ -122,16 +122,20 @@ for i, ln in enumerate(lines):
     # book 1's claims#35 carried a **Newer edition note from 2026-09-04 and
     # was still being listed as outstanding. A checklist that renags about
     # settled items teaches you to ignore it.
+    # Collect EVERY verdict under the quote, not just the first. A quote can be
+    # re-reviewed, and a re-review is what resets the clock — stopping at the
+    # first marker made a 2026-10-13 re-check invisible behind a 2026-09-04 one
+    # and the entry kept reporting as overdue after it had been settled.
     marked = False
-    verdict_line = ""
-    for nxt in lines[i + 1:i + 4]:
+    verdict_lines: list[str] = []
+    for nxt in lines[i + 1:i + 7]:
         if any(m in nxt for m in _MARKERS):
             marked = True
-            verdict_line = nxt
-            break
+            verdict_lines.append(nxt)
+            continue
         if "**Quote:**" in nxt or nxt.startswith("  - [["):
             break
-    findings.append((entry, kinds[0], text, marked, verdict_line))
+    findings.append((entry, kinds[0], text, marked, verdict_lines))
 
 unmarked = [f for f in findings if not f[3]]
 marked = [f for f in findings if f[3]]
@@ -148,16 +152,20 @@ undated: list[tuple] = []
 if a.max_age_days is not None:
     today = date.today()
     for f in marked:
-        verdict = f[4]
-        if any(t in verdict for t in _TERMINAL):
+        verdicts = f[4]
+        # Any terminal verdict settles the quote for good.
+        if any(t in v for v in verdicts for t in _TERMINAL):
             continue
-        m = _DATE.search(verdict)
-        if not m:
+        dates = [m.group(1) for v in verdicts if (m := _DATE.search(v))]
+        if not dates:
             undated.append(f)
             continue
-        age = (today - date.fromisoformat(m.group(1))).days
+        # The NEWEST review is the one that counts; an older one beside it is
+        # history, not an outstanding obligation.
+        newest = max(dates)
+        age = (today - date.fromisoformat(newest)).days
         if age > a.max_age_days:
-            expired.append((f, age, m.group(1)))
+            expired.append((f, age, newest))
 
 print(f"{a.ledger}: {len(findings)} time-bound quote(s) — "
       f"{len(marked)} marked (reviewed), "

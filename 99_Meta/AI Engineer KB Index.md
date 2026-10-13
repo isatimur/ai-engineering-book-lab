@@ -7,7 +7,7 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/paced-test|Latest batch: paced-test]]
+- [[batches/slow-test|Latest batch: slow-test]]
 - Total video notes in corpus: 1074
 - Video notes created in this batch: 0
 
