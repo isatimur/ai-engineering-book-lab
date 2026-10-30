@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 136
+- Total tagged videos: 143
 
 ## Cross-video synthesis
 
-- This theme appears across 136 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (76), Agent Architecture (68), Evals & Reliability (13).
+- This theme appears across 143 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (83), Agent Architecture (75), Evals & Reliability (13).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -148,6 +148,13 @@
 - [[1049-7GMKdpLsxwU-the-missing-layer-design-taste-in-ai-agents-hassan-el-mghari-together-ai|#1049 — The Missing Layer: Design Taste in AI Agents — Hassan El Mghari, Together AI]]
 - [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061 — Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital]]
 - [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
+- [[1094-mJqwmmOx4WA-how-to-avoid-disaster-when-vibe-coding-a-billing-engine-andrew-garvin-stripe|#1094 — How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe]]
+- [[1109-A-zeQiYkmXk-teaching-agents-to-pay-anna-spysz-stripe|#1109 — Teaching agents to pay — Anna Spysz, Stripe]]
+- [[1111-xKzU_3riL6s-why-your-ai-agent-needs-a-wallet-usdc-and-nanopayments-harshal-bhangale-circle|#1111 — Why Your AI Agent Needs a Wallet: USDC and Nanopayments — Harshal Bhangale, Circle]]
+- [[1114-h6mi88VrPtQ-x402-isn-t-good-yet-jan-curn-apify|#1114 — x402 isn’t good (yet) — Jan Curn, Apify]]
+- [[1115-ZyGMqdIpPoE-agent-spending-without-controls-rodrigo-coelho-pranav-maheshwari-edge-node|#1115 — Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node]]
+- [[1116-QrMcNe2jjt8-the-end-of-the-static-screen-architecting-intent-driven-ux-gus-iwanaga-commercetools|#1116 — The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools]]
+- [[1120-REascnFlq_8-agents-next-frontier-agent-to-agent-and-network-effects-jean-denis-greze-town|#1120 — Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town]]
 
 ## Notes
 

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 45
+- Total tagged videos: 46
 
 ## Cross-video synthesis
 
-- This theme appears across 45 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (9), Evals & Reliability (7), Models & Inference (6).
+- This theme appears across 46 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (10), Evals & Reliability (8), Models & Inference (6).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
 ## Seed videos
@@ -57,6 +57,7 @@
 - [[892-fnLBmfsI_Fg-your-voice-agent-doesn-t-need-a-frontier-model-joel-allou-ornella-bahidika-microsoft|#892 — Your Voice Agent Doesn't Need a Frontier Model - Joel Allou & Ornella Bahidika, Microsoft]]
 - [[1025-E_Txocq-Lrw-while-my-guitar-gently-speaks-todd-fisher-philo-ventures|#1025 — While my guitar gently speaks — Todd Fisher, Philo Ventures]]
 - [[1029-5dCAmSDOAjI-the-next-medium-why-real-time-interactive-video-changes-everything-ahmed-ahres-reactor|#1029 — The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor]]
+- [[1093-zrZ1amZBSPw-productionizing-llm-gateways-architecture-tradeoffs-and-hard-lessons-kanish-manuja-twilio|#1093 — Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio]]
 
 ## Notes
 

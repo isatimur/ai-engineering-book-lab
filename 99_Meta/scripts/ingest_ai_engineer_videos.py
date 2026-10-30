@@ -215,7 +215,22 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
             preferred = candidate
             break
     if not preferred:
-        return "unavailable", None, None
+        # The second way to reach "unavailable", and it was the unguarded one.
+        # yt-dlp can exit 0 and still leave no file — a subtitle fetch that
+        # quietly produced nothing. An absent file is not evidence that the
+        # talk has no captions, and "unavailable" is a permanent verdict that
+        # marks the talk ingested forever.
+        #
+        # It cost two talks on 2026-10-30 (B0fjR3yaZFU, 5Bn0xro2ol8): both were
+        # written as captionless in a batch where 37 others succeeded, and both
+        # downloaded fine by hand minutes later.
+        #
+        # Only yt-dlp saying so counts as absence. No file means try again.
+        raise TranscriptFetchBlocked(
+            f"{video.id}: yt-dlp reported success but wrote no .en/.en-orig "
+            f"subtitle file. Treating as retryable, not as 'no captions'. "
+            f"No note written; re-run this batch later."
+        )
     transcript_status = "auto_en_orig" if preferred.name.endswith(".en-orig.vtt") else "auto_en"
     plain_path = TRANSCRIPT_DIR / "plain" / f"{video.id}.txt"
     if not plain_path.exists():
