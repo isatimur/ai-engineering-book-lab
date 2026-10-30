@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 486
+- Total tagged videos: 514
 
 ## Cross-video synthesis
 
-- This theme appears across 486 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (373), Agent Architecture (352), Models & Inference (21).
+- This theme appears across 514 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (401), Agent Architecture (379), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -498,6 +498,34 @@
 - [[1073-pOvWgX7IJsc-can-llms-write-fast-multi-gpu-kernels-simran-arora-together-ai|#1073 — Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI]]
 - [[1075-ZIYYsAzaLlA-building-the-engine-while-flying-the-plane-launching-the-figma-mcp-server-jesse-lumarie-fi|#1075 — Building the Engine While Flying the Plane: Launching the Figma MCP Server — Jesse Lumarie, Figma]]
 - [[1090-jebp4V0vh30-agentic-sites-building-hyper-personalized-websites-carlos-sanchez-adobe|#1090 — Agentic Sites: Building Hyper Personalized Websites — Carlos Sanchez, Adobe]]
+- [[1091-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1091 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]
+- [[1092-bMjlRrWjdT0-ai-evals-for-cross-functional-teams-nachiket-paranjape-swaroop-chitlur-haridas-doordash|#1092 — AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash]]
+- [[1093-zrZ1amZBSPw-productionizing-llm-gateways-architecture-tradeoffs-and-hard-lessons-kanish-manuja-twilio|#1093 — Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio]]
+- [[1098-lRa9sPaMyy4-your-code-has-bugs-lean4-has-proofs-formal-verification-for-engineers-varun-pant-aws|#1098 — Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS]]
+- [[1099-M05vON8i0aI-ai-native-organisations-run-on-skills-how-to-structure-and-scale-them-imad-touil-quantumbl|#1099 — AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack]]
+- [[1100-7A65O-0lvKE-which-ai-startups-actually-land-enterprise-contracts-brian-lewis-millennium|#1100 — Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium]]
+- [[1101-sM1iYgz93HI-the-half-life-of-agent-infrastructure-ben-kus-box|#1101 — The Half Life of Agent Infrastructure — Ben Kus, Box]]
+- [[1102-dSg0pu8d6qg-from-tokenmaxxing-to-trusted-throughput-mingsheng-hong-ironclad|#1102 — From Tokenmaxxing to Trusted Throughput — Mingsheng Hong, Ironclad]]
+- [[1103-hD9-V56FNRI-ai-agents-are-just-distributed-systems-now-salman-munaf-tiktok|#1103 — AI Agents Are Just Distributed Systems Now — Salman Munaf, TikTok]]
+- [[1104-32nrHU6zHU8-agents-are-where-microservices-were-in-2015-roberto-milev-uday-kanagala-navan|#1104 — Agents Are Where Microservices Were in 2015 — Roberto Milev & Uday Kanagala, Navan]]
+- [[1105-dQ-_i1tZiws-tribal-dungeons-of-global-shipping-ai-agents-at-global-scale-dmitry-buykin-maersk|#1105 — Tribal Dungeons of Global Shipping: AI Agents at Global Scale — Dmitry Buykin, Maersk]]
+- [[1106-1KOdiGgMtpY-the-signal-layer-what-to-build-when-anything-can-be-built-lena-hall-akamai|#1106 — The Signal Layer: What to Build When Anything Can Be Built — Lena Hall, Akamai]]
+- [[1107-S6aSoQ6_u5A-tell-the-robot-what-you-want-sandhya-subramani-aws|#1107 — Tell the Robot What You Want — Sandhya Subramani, AWS]]
+- [[1108-KLDdXOw6jIc-sota-generative-media-panel-dumitru-erhan-shane-gu-nicole-brichtova-google-deepmind|#1108 — SOTA Generative Media Panel — Dumitru Erhan, Shane Gu & Nicole Brichtova, Google DeepMind]]
+- [[1110-AhQpRalYlyg-multimodal-collaborative-agents-for-next-gen-commerce-nidhi-kaushik-vyas-google-deepmind|#1110 — Multimodal Collaborative Agents for Next-Gen Commerce — Nidhi Kaushik Vyas, Google DeepMind]]
+- [[1112-qTZirYu9pr0-when-ai-agents-pay-and-sellers-monetize-building-x402-apps-on-aws-anil-nadiminti-aws|#1112 — When AI Agents Pay and Sellers Monetize: Building x402 Apps on AWS — Anil Nadiminti, AWS]]
+- [[1113-vGn6N4-bxBY-your-agent-just-authorized-what-jay-mok-ben-coumes-paypal|#1113 — Your Agent Just Authorized What?! — Jay Mok & Ben Coumes, Paypal]]
+- [[1117-tE2z8-hqoLY-beyond-the-lethal-trifecta-agentic-commerce-on-the-open-internet-david-levine-kiduna-club|#1117 — Beyond the Lethal Trifecta: Agentic Commerce on the Open Internet — David Levine, Kiduna Club]]
+- [[1119-wCIYViPd4SU-tethered-our-agents-are-us-shu-fang-two-sigma|#1119 — Tethered: Our Agents Are Us — Shu Fang, Two Sigma]]
+- [[1121-0uC6u0lJJl4-your-company-brain-will-leak-secrets-how-we-stopped-it-for-big-banks-tanmai-gopal-promptql|#1121 — Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL]]
+- [[1122-xxfMT-bPEmU-from-coding-to-knowledge-work-agents-karan-vaidya-composio|#1122 — From coding to Knowledge work agents — Karan Vaidya, Composio]]
+- [[1123-5Cxe5dv2Xlw-why-ai-agents-need-million-token-context-thomas-wolf-olive-song-minimax|#1123 — Why AI Agents Need Million-Token Context — Thomas Wolf & Olive Song, MiniMax]]
+- [[1124-y2W4FNAuPEA-deep-dive-on-llm-inference-at-scale-harshul-jain-audible-tanmay-sah-independent-ai-researc|#1124 — Deep dive on LLM Inference at Scale — Harshul Jain, Audible & Tanmay Sah, Independent AI Researcher]]
+- [[1125-9R--1tg45Jg-build-time-vs-run-time-why-dev-tools-fail-in-production-averi-kitsch-prerna-kakkar-google|#1125 — Build-Time vs. Run-Time: Why Dev Tools Fail in Production — Averi Kitsch & Prerna Kakkar, Google]]
+- [[1126-xo68uCibfm8-it-s-tokens-all-the-way-down-how-rlms-are-different-kevin-madura-alixpartners|#1126 — It’s Tokens All The Way Down: How RLMs are Different — Kevin Madura, AlixPartners]]
+- [[1127-9wZpvF3QleU-500-skills-zero-fine-tuning-linkedin-s-playbook-for-ai-agents-ajay-prakash-linkedin|#1127 — 500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents — Ajay Prakash, LinkedIn]]
+- [[1128-KcVkq5L-0f0-your-agents-lack-context-here-s-how-to-fix-you-re-absolutely-right-brandon-waselnuk-unbloc|#1128 — Your agents lack context: Here's how to fix "You're absolutely right!" — Brandon Waselnuk, Unblocked]]
+- [[1129-XzJD1bvXKjs-how-long-can-your-skills-be-before-your-agent-forgets-what-you-told-it-laurie-voss-arize-a|#1129 — How long can your skills be before your agent forgets what you told it? — Laurie Voss, Arize AI]]
 
 ## Notes
 
