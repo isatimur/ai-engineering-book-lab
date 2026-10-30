@@ -2,11 +2,11 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 166
+- Total tagged videos: 168
 
 ## Cross-video synthesis
 
-- This theme appears across 166 talks, suggesting it is a durable pillar rather than a one-off trend.
+- This theme appears across 168 talks, suggesting it is a durable pillar rather than a one-off trend.
 - Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (20).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
@@ -178,6 +178,8 @@
 - [[916-Sir59K8ZDPU-why-agentic-systems-need-ontologies-frank-coyle-uc-berkeley|#916 — Why Agentic Systems Need Ontologies — Frank Coyle, UC Berkeley]]
 - [[976-_PdK6x7PQNM-data-quality-is-the-compute-multiplier-ari-morcos-datologyai|#976 — Data Quality Is the Compute Multiplier — Ari Morcos, DatologyAI]]
 - [[1006-WiqDvX6isc4-scaling-compute-on-context-jack-morris-engram|#1006 — Scaling Compute on Context — Jack Morris, Engram]]
+- [[1156-Zd5b40Jbp_k-act-confirm-or-stop-smarter-behavior-for-ai-assistants-wearables-robots-amit-desai-roku|#1156 — Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku]]
+- [[1188-I_VEh7XSwyc-physical-ai-s-next-bottleneck-is-finding-the-right-video-rafael-levi-bright-data|#1188 — Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data]]
 
 ## Notes
 

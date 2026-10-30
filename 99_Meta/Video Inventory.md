@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1111
+Total videos: 1167
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1080,8 +1080,6 @@ Total videos: 1111
 1092. [AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash](https://www.youtube.com/watch?v=bMjlRrWjdT0) — `bMjlRrWjdT0` — 16:11
 1093. [Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio](https://www.youtube.com/watch?v=zrZ1amZBSPw) — `zrZ1amZBSPw` — 16:24
 1094. [How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe](https://www.youtube.com/watch?v=mJqwmmOx4WA) — `mJqwmmOx4WA` — 17:49
-1096. [How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma](https://www.youtube.com/watch?v=5Bn0xro2ol8) — `5Bn0xro2ol8` — 17:43
-1097. [How do you diffuse AI into the real world? — Varun Shenoy, Long Lake](https://www.youtube.com/watch?v=B0fjR3yaZFU) — `B0fjR3yaZFU` — 17:46
 1098. [Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS](https://www.youtube.com/watch?v=lRa9sPaMyy4) — `lRa9sPaMyy4` — 10:07
 1099. [AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack](https://www.youtube.com/watch?v=M05vON8i0aI) — `M05vON8i0aI` — 20:31
 1100. [Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium](https://www.youtube.com/watch?v=7A65O-0lvKE) — `7A65O-0lvKE` — 18:45
@@ -1113,3 +1111,61 @@ Total videos: 1111
 1127. [500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents — Ajay Prakash, LinkedIn](https://www.youtube.com/watch?v=9wZpvF3QleU) — `9wZpvF3QleU` — 20:25
 1128. [Your agents lack context: Here's how to fix "You're absolutely right!" — Brandon Waselnuk, Unblocked](https://www.youtube.com/watch?v=KcVkq5L-0f0) — `KcVkq5L-0f0` — 14:09
 1129. [How long can your skills be before your agent forgets what you told it? — Laurie Voss, Arize AI](https://www.youtube.com/watch?v=XzJD1bvXKjs) — `XzJD1bvXKjs` — 22:26
+1131. [ACP: The Universal Remote Control for AI Agents — Alex Hancock, Block](https://www.youtube.com/watch?v=YkNulwcc5jk) — `YkNulwcc5jk` — 11:01
+1132. [The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw](https://www.youtube.com/watch?v=XWcXwnysmpY) — `XWcXwnysmpY` — 18:52
+1133. [The Design-Code Roundtrip That Isn't — Jonathan Gordon, ReWeaver AI](https://www.youtube.com/watch?v=NW-jwOVr32w) — `NW-jwOVr32w` — 18:37
+1134. [Mousepower: agents that can’t be measured, can’t be managed. — Maximillian Piras, Yutori](https://www.youtube.com/watch?v=8KkibGU_DDY) — `8KkibGU_DDY` — 20:38
+1135. [Design at the Speed of Adjectives — Paul Bakaus, Renaissance Geek, Inc.](https://www.youtube.com/watch?v=v42opQpCy60) — `v42opQpCy60` — 15:59
+1136. [Training Taste — Thais Castello Branco, Taste Labs](https://www.youtube.com/watch?v=sDMGWK4wZ_w) — `sDMGWK4wZ_w` — 15:06
+1137. [Generative UI... in Python? — Jeremiah Lowin, Prefect](https://www.youtube.com/watch?v=Krzs8GeiWTc) — `Krzs8GeiWTc` — 17:38
+1138. [One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer](https://www.youtube.com/watch?v=O1FN4awNEtM) — `O1FN4awNEtM` — 16:48
+1139. [Building ambitious software — Jonathan Kelley, Dioxus Labs & Cognition](https://www.youtube.com/watch?v=H7vFrcNWXzs) — `H7vFrcNWXzs` — 19:14
+1140. [Tokens Should Have Jobs — Katelyn Lesse & Angela Jiang, Anthropic](https://www.youtube.com/watch?v=PXj0p_mW9nI) — `PXj0p_mW9nI` — 13:21
+1141. [Harness Engineering: Building the Production Cage for Powerful Domain Agents — Mike Chambers, AWS](https://www.youtube.com/watch?v=gxVZ_1tuuq4) — `gxVZ_1tuuq4` — 20:46
+1142. [Loophole: Adversarial Agents To Stress Test Your Morality — Brendan Rappazzo, Morgan Stanley](https://www.youtube.com/watch?v=hOWU0KPUp1k) — `hOWU0KPUp1k` — 17:00
+1143. [Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate](https://www.youtube.com/watch?v=cI7zfqusmFU) — `cI7zfqusmFU` — 20:50
+1144. [We let an AI agent execute Bash and lived to talk about it — Sarah Sanders, PostHog](https://www.youtube.com/watch?v=4lXks428C9o) — `4lXks428C9o` — 21:00
+1145. [No Memory, No Harness: Why the Database Is the Last Line of Defense — Kay Malcolm, Oracle](https://www.youtube.com/watch?v=jA_x7F8caHI) — `jA_x7F8caHI` — 21:37
+1146. [How We Solved Agent Building — Andrew Qu, Vercel](https://www.youtube.com/watch?v=9dYcwOkpCE8) — `9dYcwOkpCE8` — 17:34
+1147. [Agents Without Code: Skills, YAML, and Filesystems Replaced Python — Philipp Schmid, Google DeepMind](https://www.youtube.com/watch?v=fjF8EKnxKCU) — `fjF8EKnxKCU` — 18:28
+1148. [Speech-to-Speech Model Research at Google DeepMind — Valeria Wu Fon & Tom Ouyang, Google DeepMind](https://www.youtube.com/watch?v=18Um2VjMM_g) — `18Um2VjMM_g` — 16:42
+1149. [Voice Agents Can Just Do Things — Charlie Guo, OpenAI](https://www.youtube.com/watch?v=OpY6MmZFeHo) — `OpY6MmZFeHo` — 15:50
+1150. [Your Voice Agent is Just a Walkie Talkie — Neil Zeghidour, Gradium](https://www.youtube.com/watch?v=a8EcVumh71E) — `a8EcVumh71E` — 19:14
+1151. [Tolan: Voice-First AI Companion — Paula Dozsa, Tolan](https://www.youtube.com/watch?v=xLUQOqjudtA) — `xLUQOqjudtA` — 15:08
+1152. [1 Trillion Phone Calls/yr, 10% Error rate: The Crisis in Voice AI — Sumanyu Sharma, Hamming AI](https://www.youtube.com/watch?v=qStB9GbppMU) — `qStB9GbppMU` — 16:04
+1153. [5 Voice Agent Failure Modes You'll Hit in Week One — Venky B, Plivo](https://www.youtube.com/watch?v=vblnYHzBgS4) — `vblnYHzBgS4` — 26:46
+1154. [Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI](https://www.youtube.com/watch?v=MBHOH1NmDqc) — `MBHOH1NmDqc` — 13:14
+1155. ["My name is... my name is...": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow](https://www.youtube.com/watch?v=IDNfAZVKvPE) — `IDNfAZVKvPE` — 15:05
+1156. [Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku](https://www.youtube.com/watch?v=Zd5b40Jbp_k) — `Zd5b40Jbp_k` — 20:25
+1157. [Pinecone 2.0 — Edo Liberty, Pinecone](https://www.youtube.com/watch?v=IN-rb-9WmiY) — `IN-rb-9WmiY` — 19:50
+1158. [The unreasonable effectiveness of BM25 for agentic search — Jo Kristian Bergum, Hornet.dev](https://www.youtube.com/watch?v=fZH97QHHYjY) — `fZH97QHHYjY` — 18:29
+1159. [The Search Engine for the Agentic Web — Will Bryk, Exa](https://www.youtube.com/watch?v=59AA5kIoqjA) — `59AA5kIoqjA` — 17:49
+1160. [Rebuilding the web for agents — Liad Yosef, MCP Apps](https://www.youtube.com/watch?v=waI44NP1abk) — `waI44NP1abk` — 20:41
+1161. [If we want them to do Knowledge Work, design them as Knowledge Agents — Benjamin Clavié, Mixedbread](https://www.youtube.com/watch?v=O84lhGc1OOI) — `O84lhGc1OOI` — 17:55
+1162. [Your Agreements Are a Database You Can't Query — Hiral Shah, Docusign & Sean Sodha, NVIDIA](https://www.youtube.com/watch?v=_gvamfT8H-w) — `_gvamfT8H-w` — 18:22
+1163. [Connect AI to Billions of Legal Documents — Simon Eskildsen, turbopuffer & Jacob Lauritzen, Legora](https://www.youtube.com/watch?v=V-isu4eTHgw) — `V-isu4eTHgw` — 20:36
+1164. [Where RL Will Take Search — Maximilian-David Rumpf, SID.ai](https://www.youtube.com/watch?v=iJVxxxHM_Oc) — `iJVxxxHM_Oc` — 9:36
+1165. [Stop Chunking Like It's 2022 — Yuval Belfer, AI21 Labs](https://www.youtube.com/watch?v=r9OwPx_HoV0) — `r9OwPx_HoV0` — 18:01
+1166. [Homa: The End of TCP for AI Clusters — John Ousterhout, Stanford](https://www.youtube.com/watch?v=eZ8WWZzoaR0) — `eZ8WWZzoaR0` — 18:48
+1167. [Total Recall: Agent Memory and Harness Engineering — Ignacio Martinez, Oracle](https://www.youtube.com/watch?v=xs-ob87TTzg) — `xs-ob87TTzg` — 1:00:47
+1168. [Operating Distributed Inference Systems at Scale — Nishant Gupta & Naman Ahuja, Meta](https://www.youtube.com/watch?v=7c9FSUVcXR0) — `7c9FSUVcXR0` — 19:51
+1169. [Routing LLM Inference in Production: From Engine Signals to Policy — Qianru Lao & Lu Zhang, OpenAI](https://www.youtube.com/watch?v=sOB3HSiG8vo) — `sOB3HSiG8vo` — 18:12
+1170. [Are LLM Performance Benchmarks Reliable? — Ashok Chandrasekar & Jason Kramberger, Google](https://www.youtube.com/watch?v=l1-D89bAuOA) — `l1-D89bAuOA` — 16:07
+1171. [Vertical Mobility: Inference from MVP to Trillion-Parameter Workloads — Sitanshu Gupta, CoreWeave](https://www.youtube.com/watch?v=cQQbJqvZkpo) — `cQQbJqvZkpo` — 15:22
+1173. [Large clusters for small models — Daniel Svonava, Superlinked](https://www.youtube.com/watch?v=g4SsanB0gMc) — `g4SsanB0gMc` — 25:07
+1174. [The Frontier AI Inference Cloud for Agents — Byung-Gon (Gon) Chun, FriendliAI](https://www.youtube.com/watch?v=Hvb2LfMH58c) — `Hvb2LfMH58c` — 14:59
+1175. [Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story — Asaf Gardin & Yuval Belfer](https://www.youtube.com/watch?v=btxG75rNJC4) — `btxG75rNJC4` — 18:06
+1176. [Weight Folding, CUDA Streams, and the Bug That Made My Model Speak Backwards — Filip Makraduli](https://www.youtube.com/watch?v=c1hGBoWw20A) — `c1hGBoWw20A` — 17:18
+1177. [The Dark Arts of Skill Engineering — Paul Bakaus, Renaissance Geek (Impeccable)](https://www.youtube.com/watch?v=SQMCtZX3trg) — `SQMCtZX3trg` — 1:04:53
+1178. [Building the Document Context Layer for AI Agents — Jerry Liu, LlamaIndex](https://www.youtube.com/watch?v=RQi7x-navxU) — `RQi7x-navxU` — 21:04
+1179. [Skill issue: stop deploying vision language models, use them with Skills — Merve Noyan, Hugging Face](https://www.youtube.com/watch?v=dKcTBQzR7jI) — `dKcTBQzR7jI` — 19:14
+1180. [Modality Misalignment and Originality Attribution in Short-Form Video — Aditya Gautam, Meta](https://www.youtube.com/watch?v=jNE8No-wvok) — `jNE8No-wvok` — 21:32
+1181. [From Ingestion to Agents: How AI Teams Build on Document Intelligence — Adit Abraham, Reducto](https://www.youtube.com/watch?v=0I07YAuF8xA) — `0I07YAuF8xA` — 22:29
+1182. [The Best Models Still Reason Like Toddlers — Andrew Dai, Elorian](https://www.youtube.com/watch?v=A_I8mw8yfns) — `A_I8mw8yfns` — 18:17
+1183. [You’re Not Thinking Big Enough: Rebuilding Food Systems with AI Agents — Cody Menefee, Firecrawl](https://www.youtube.com/watch?v=ztlXKfPCT3Q) — `ztlXKfPCT3Q` — 18:26
+1184. [From VLM/VLA's to Embodied Agents — Armen Aghajanyan, Perceptron AI](https://www.youtube.com/watch?v=ZZcE0HeO-Hc) — `ZZcE0HeO-Hc` — 20:42
+1185. [From Scratch to SOTA: Training a 3B State-Space Vision Model — Krishna Prasad Srinivasan, Sarvam](https://www.youtube.com/watch?v=T72nqdC92PM) — `T72nqdC92PM` — 21:09
+1186. [Robotics Has Been Stuck for 70 Years — Deepak Pathak, Skild AI](https://www.youtube.com/watch?v=jFHteJjRl8A) — `jFHteJjRl8A` — 28:18
+1187. [World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI](https://www.youtube.com/watch?v=4Gqg0HVe-AY) — `4Gqg0HVe-AY` — 51:36
+1188. [Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data](https://www.youtube.com/watch?v=I_VEh7XSwyc) — `I_VEh7XSwyc` — 16:32
+1190. [One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio](https://www.youtube.com/watch?v=2wgPHvW0mG8) — `2wgPHvW0mG8` — 20:48

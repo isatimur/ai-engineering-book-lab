@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 143
+- Total tagged videos: 151
 
 ## Cross-video synthesis
 
-- This theme appears across 143 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (83), Agent Architecture (75), Evals & Reliability (13).
+- This theme appears across 151 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (90), Agent Architecture (82), Evals & Reliability (14).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -155,6 +155,14 @@
 - [[1115-ZyGMqdIpPoE-agent-spending-without-controls-rodrigo-coelho-pranav-maheshwari-edge-node|#1115 — Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node]]
 - [[1116-QrMcNe2jjt8-the-end-of-the-static-screen-architecting-intent-driven-ux-gus-iwanaga-commercetools|#1116 — The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools]]
 - [[1120-REascnFlq_8-agents-next-frontier-agent-to-agent-and-network-effects-jean-denis-greze-town|#1120 — Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town]]
+- [[1132-XWcXwnysmpY-the-spatial-harness-bringing-agents-to-the-canvas-max-drake-tldraw|#1132 — The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw]]
+- [[1137-Krzs8GeiWTc-generative-ui-in-python-jeremiah-lowin-prefect|#1137 — Generative UI... in Python? — Jeremiah Lowin, Prefect]]
+- [[1138-O1FN4awNEtM-one-designer-ai-hundreds-of-deliverables-vincent-wendy-ai-engineer|#1138 — One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer]]
+- [[1143-cI7zfqusmFU-every-step-you-take-every-call-you-make-the-reliable-agent-stack-giselle-van-dongen-restat|#1143 — Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate]]
+- [[1154-MBHOH1NmDqc-realtime-voice-agents-with-frontier-intelligence-bohan-li-eliseai|#1154 — Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI]]
+- [[1157-IN-rb-9WmiY-pinecone-2-0-edo-liberty-pinecone|#1157 — Pinecone 2.0 — Edo Liberty, Pinecone]]
+- [[1160-waI44NP1abk-rebuilding-the-web-for-agents-liad-yosef-mcp-apps|#1160 — Rebuilding the web for agents — Liad Yosef, MCP Apps]]
+- [[1169-sOB3HSiG8vo-routing-llm-inference-in-production-from-engine-signals-to-policy-qianru-lao-lu-zhang-open|#1169 — Routing LLM Inference in Production: From Engine Signals to Policy — Qianru Lao & Lu Zhang, OpenAI]]
 
 ## Notes
 
