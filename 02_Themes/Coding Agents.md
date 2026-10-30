@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 642
+- Total tagged videos: 720
 
 ## Cross-video synthesis
 
-- This theme appears across 642 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (496), Evals & Reliability (449), MCP & Tooling (90).
+- This theme appears across 720 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (573), Evals & Reliability (517), MCP & Tooling (100).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -654,6 +654,84 @@
 - [[1187-4Gqg0HVe-AY-world-models-need-causality-not-pretty-pixels-christopher-manning-moonlake-ai|#1187 — World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI]]
 - [[1188-I_VEh7XSwyc-physical-ai-s-next-bottleneck-is-finding-the-right-video-rafael-levi-bright-data|#1188 — Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data]]
 - [[1190-2wgPHvW0mG8-one-operator-many-drones-inside-skydio-s-autonomy-stack-suchet-bargoti-skydio|#1190 — One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio]]
+- [[1191-jgWY66RaSrQ-i-gave-an-ai-a-body-cyrus-clarke-mit-media-lab|#1191 — I Gave an AI a Body — Cyrus Clarke, MIT Media Lab]]
+- [[1192-ACPEpji5NV4-distill-the-llm-don-t-serve-it-search-personalization-at-doordash-raghav-saboo-doordash|#1192 — Distill the LLM, Don't Serve It: Search & Personalization at DoorDash — Raghav Saboo, DoorDash]]
+- [[1193-lIgdnF0s0kQ-why-llm-recommenders-will-be-ai-s-biggest-consumer-app-devansh-tandon-meta|#1193 — Why LLM Recommenders Will Be AI's Biggest Consumer App — Devansh Tandon, Meta]]
+- [[1194-2LRIAfng7eA-teaching-llms-to-speak-spotify-yves-raimond-jacqueline-wood-spotify|#1194 — Teaching LLMs to Speak Spotify — Yves Raimond & Jacqueline Wood, Spotify]]
+- [[1195-LlgiOCmFG_w-fixing-the-pr-bottleneck-matt-pocock-aihero|#1195 — Fixing the PR Bottleneck — Matt Pocock, AIHero]]
+- [[1196-7taOQBfjDyE-the-loop-is-the-product-roland-gavrilescu-introspection|#1196 — The Loop Is the Product — Roland Gavrilescu, Introspection]]
+- [[1197-hd7TOvmyAxU-an-ai-research-agent-that-runs-your-experiments-tim-sweeney-weights-biases|#1197 — An AI Research Agent That Runs Your Experiments — Tim Sweeney, Weights & Biases]]
+- [[1198-vrDvatGtIxs-autoresearch-made-our-models-3x-faster-tejas-bhakta-morph|#1198 — Autoresearch Made Our Models 3x Faster — Tejas Bhakta, Morph]]
+- [[1199-XyV6bSMyq-I-how-we-built-an-agent-that-improves-itself-zubin-aysola-weights-biases|#1199 — How We Built an Agent That Improves Itself — Zubin Aysola, Weights & Biases]]
+- [[1200-x4e5O9zN0TE-long-horizon-agents-need-experiments-not-just-prompts-erina-karati|#1200 — Long-Horizon Agents Need Experiments, Not Just Prompts — Erina Karati]]
+- [[1201-OA-Mc60Rboo-beating-rl-with-reflection-gepa-and-optimize-anything-lakshya-a-agrawal-gepa|#1201 — Beating RL With Reflection: GEPA and Optimize Anything — Lakshya A. Agrawal, GEPA]]
+- [[1202-oVsEddfhdxc-we-let-claude-code-and-codex-race-human-researchers-elie-bakouch-prime-intellect|#1202 — We Let Claude Code and Codex Race Human Researchers — Elie Bakouch, Prime Intellect]]
+- [[1203-TN3mj92oZ8I-building-self-improving-agent-software-factories-suraj-gupta-warp|#1203 — Building Self-Improving Agent Software Factories — Suraj Gupta, Warp]]
+- [[1204-YIVkERhy8xo-we-re-the-bottleneck-but-we-don-t-have-to-be-ido-salomon-agentcraft|#1204 — We're the bottleneck, but we don't have to be — Ido Salomon, AgentCraft]]
+- [[1205-vGCJ7diEtrw-what-it-actually-takes-to-build-a-software-factory-tereza-t-kov-factory|#1205 — What It Actually Takes to Build a Software Factory — Tereza Tížková, Factory]]
+- [[1206-HvboD89DyQ8-no-that-s-not-a-software-factory-ryan-cooke-workos|#1206 — No, That's Not a Software Factory — Ryan Cooke, WorkOS]]
+- [[1207-6MudaeKdBSk-scale-the-judgment-not-the-model-andrew-orobator-reddit|#1207 — Scale the Judgment, Not the Model — Andrew Orobator, Reddit]]
+- [[1208-TRfzFJCJ7ZE-orchestras-not-factories-how-the-fastest-builders-work-charlie-holtz-conductor|#1208 — Orchestras, Not Factories: How the Fastest Builders Work — Charlie Holtz, Conductor]]
+- [[1209-9JFGohx4E7U-glm-5-2-open-weights-near-frontier-intelligence-zixuan-li-z-ai|#1209 — GLM-5.2: Open Weights, Near-Frontier Intelligence — Zixuan Li, Z.ai]]
+- [[1210-tUPPVhBBcoM-software-engineering-is-becoming-factory-engineering-zach-lloyd-warp|#1210 — Software Engineering Is Becoming Factory Engineering — Zach Lloyd, Warp]]
+- [[1211-buHC7bQE1X4-get-out-of-the-model-s-way-kevin-hou-google-antigravity|#1211 — Get Out of the Model's Way — Kevin Hou, Google Antigravity]]
+- [[1212-474j-n1Ltxc-ai-generated-code-is-already-competing-with-human-code-daksh-gupta-greptile|#1212 — AI-Generated Code Is Already Competing With Human Code — Daksh Gupta, Greptile]]
+- [[1213-UOcHfR3_tys-your-agents-are-in-solitary-confinement-why-mcp-a2a-aren-t-enough-vlad-luzin-band|#1213 — Your Agents Are in Solitary Confinement: Why MCP & A2A Aren't Enough — Vlad Luzin, Band]]
+- [[1214-_mi3alkqy4s-the-death-of-the-code-review-what-the-data-actually-says-laurie-voss-arize-ai|#1214 — The Death of the Code Review: What the Data Actually Says — Laurie Voss, Arize AI]]
+- [[1215-9cJrbj23fOA-the-chief-ai-officer-scientist-architect-coach-rania-khalaf-wso2|#1215 — The Chief AI Officer: Scientist, Architect, Coach — Rania Khalaf, WSO2]]
+- [[1216-Se8jHLliLXE-the-state-of-ai-in-software-development-data-from-400-orgs-justin-reock-dx|#1216 — The State of AI in Software Development: Data from 400+ Orgs — Justin Reock, DX]]
+- [[1217-apyrzaWj0Z4-stop-renting-your-ai-s-memory-dylan-couzon-qdrant|#1217 — Stop Renting Your AI's Memory — Dylan Couzon, Qdrant]]
+- [[1218-pAnLpiAG6Es-mcp-doesn-t-suck-your-agent-does-jan-urn-apify|#1218 — MCP Doesn't Suck. Your Agent Does. — Jan Čurn, Apify]]
+- [[1219-cKhpeEBnT1o-your-coding-agent-is-6-months-out-of-date-jakub-hojsan-exa|#1219 — Your Coding Agent Is 6 Months Out of Date — Jakub Hojsan, Exa]]
+- [[1220-48YUYDjwfYY-stop-rationing-tokens-let-the-harness-pick-the-model-kimchi-by-cast-ai|#1220 — Stop Rationing Tokens: Let the Harness Pick the Model — Kimchi by Cast AI]]
+- [[1221-5xi_S1f9sDU-why-99-accurate-browser-agents-still-fail-derek-meegan-browserbase|#1221 — Why 99% Accurate Browser Agents Still Fail — Derek Meegan, Browserbase]]
+- [[1222-HLTa7Vcs4X0-why-ai-didn-t-actually-make-you-ship-faster-gabriel-spencer-harper-meticulous|#1222 — Why AI Didn't Actually Make You Ship Faster — Gabriel Spencer-Harper, Meticulous]]
+- [[1223-FQwTqUmcbRg-lessons-from-generating-12-trillion-synthetic-tokens-bogdan-gaza-datologyai|#1223 — Lessons from Generating 12 Trillion Synthetic Tokens — Bogdan Gaza, DatologyAI]]
+- [[1224-y-OVWZD4j6U-the-5-levels-of-self-driving-production-eric-schwartz-traversal|#1224 — The 5 Levels of Self-Driving Production — Eric Schwartz, Traversal]]
+- [[1225-OE_lLNCNfQo-yolo-mode-safely-microvm-sandboxes-for-any-agent-rowan-christmas-docker|#1225 — YOLO Mode, Safely: MicroVM Sandboxes for Any Agent — Rowan Christmas, Docker]]
+- [[1226-rTojoVotlD8-your-llm-app-returned-200-ok-it-was-still-wrong-marina-petzel-datadog|#1226 — Your LLM App Returned 200 OK. It Was Still Wrong. — Marina Petzel, Datadog]]
+- [[1227-I2LL_wd89-A-how-vs-code-went-from-monthly-to-weekly-releases-with-ai-harald-kirschner|#1227 — How VS Code Went from Monthly to Weekly Releases with AI — Harald Kirschner]]
+- [[1228-oUZEt4EiPbk-i-built-a-personal-ai-agent-on-a-raspberry-pi-jeremy-adams-neo4j|#1228 — I Built a Personal AI Agent on a Raspberry Pi — Jeremy Adams, Neo4j]]
+- [[1230-bRGyYaE0lxI-gpu-died-training-didn-t-self-healing-training-at-scale-crusoe|#1230 — GPU Died. Training Didn't: Self-Healing Training at Scale — Crusoe]]
+- [[1231-TRe1u7dHYiA-what-makes-open-models-fast-in-production-sujee-maniyam-nebius|#1231 — What Makes Open Models Fast in Production — Sujee Maniyam, Nebius]]
+- [[1232-qflLT3SoVbw-stop-fine-tuning-to-fix-retrieval-problems-anant-srivastava|#1232 — Stop Fine-Tuning to Fix Retrieval Problems — Anant Srivastava]]
+- [[1233-YiFqcu9YA38-dashboards-are-dead-sarah-simionescu-composio|#1233 — Dashboards Are Dead — Sarah Simionescu, Composio]]
+- [[1234-pyvRID_CZZU-we-built-an-ai-support-agent-that-resolves-80-of-tickets-assemblyai|#1234 — We Built an AI Support Agent That Resolves 80% of Tickets — AssemblyAI]]
+- [[1235-jc3kbZkuHTo-the-human-is-an-async-api-melanie-warrick-temporal|#1235 — The Human Is an Async API — Melanie Warrick, Temporal]]
+- [[1236-YXb2Wx1r_Pk-keyword-search-is-dying-is-your-catalog-ready-for-ai-agents-paypal|#1236 — Keyword Search Is Dying. Is Your Catalog Ready for AI Agents? — PayPal]]
+- [[1237-Bdrs3uAX0_M-ai-coding-agents-are-breaking-big-codebases-dan-adler-sourcegraph|#1237 — AI Coding Agents Are Breaking Big Codebases — Dan Adler, Sourcegraph]]
+- [[1238-33Oct2hqGnk-agents-that-write-their-own-tools-at-runtime-sandhya-subramani-aws|#1238 — Agents That Write Their Own Tools at Runtime — Sandhya Subramani, AWS]]
+- [[1239-9_oy4owGtPI-agent-memory-is-solved-agent-learning-isn-t-karthik-ranganathan-yugabyte|#1239 — Agent Memory Is Solved. Agent Learning Isn't. — Karthik Ranganathan, Yugabyte]]
+- [[1240-T3SS931wU0I-agentic-search-vs-vector-search-for-coding-agents-we-ran-the-eval-braintrust|#1240 — Agentic Search vs Vector Search for Coding Agents: We Ran the Eval — Braintrust]]
+- [[1241-AgBAOXVxt4A-lifestyles-of-the-ai-native-nick-nisi-zack-proser-workos|#1241 — Lifestyles of the AI-Native — Nick Nisi & Zack Proser, WorkOS]]
+- [[1242-NdrSPm6NCdk-evals-in-ai-a-deep-dive-tejas-kumar-ibm|#1242 — Evals in AI: A Deep Dive — Tejas Kumar, IBM]]
+- [[1243-fz6-NS7qpZc-how-i-learned-to-stop-worrying-and-love-the-sandbox-matt-brockman-e2b|#1243 — How I Learned to Stop Worrying and Love the Sandbox — Matt Brockman, E2B]]
+- [[1244-_fHTqOs5wQA-build-the-right-thing-product-engineering-part-1-kent-c-dodds-epicproduct-engineer|#1244 — Build the Right Thing: Product Engineering (Part 1) — Kent C. Dodds, EpicProduct.engineer]]
+- [[1245-s0hFne6EeOI-build-the-right-thing-product-engineering-part-2-kent-c-dodds-epicproduct-engineer|#1245 — Build the Right Thing: Product Engineering (Part 2) — Kent C. Dodds, EpicProduct.engineer]]
+- [[1246-42Bz0TUfeOQ-the-transcript-looked-fine-the-call-wasn-t-debugging-voice-agents-arize|#1246 — The Transcript Looked Fine. The Call Wasn't. — Debugging Voice Agents, Arize]]
+- [[1247-qZj7sqmidqA-from-vibes-to-production-evaluating-and-shipping-ai-agents-that-work-101-laurie-voss-arize|#1247 — From Vibes to Production: Evaluating and Shipping AI Agents That Work 101 — Laurie Voss, Arize AI]]
+- [[1248-wzWNYDY7toc-from-raw-documents-to-ai-ready-data-leo-platzer-jeff-koss|#1248 — From Raw Documents to AI-Ready Data — Leo Platzer & Jeff Koss]]
+- [[1249-F0TNSmbo5hE-from-vibes-to-production-evaluating-and-shipping-ai-agents-that-work-201-laurie-voss-arize|#1249 — From Vibes to Production: Evaluating and Shipping AI Agents That Work 201 — Laurie Voss, Arize AI]]
+- [[1250-xLxhT2ZI7UM-your-llm-judge-is-a-confident-liar-building-better-verifiers-browserbase|#1250 — Your LLM Judge Is a Confident Liar: Building Better Verifiers — Browserbase]]
+- [[1251-woIYJYd_etI-what-is-an-inference-engine-anyway-charles-frye-modal|#1251 — What Is an Inference Engine, Anyway? — Charles Frye, Modal]]
+- [[1252-ZUZVNKFSmTM-how-many-credentials-should-your-ai-agent-have-zero-jim-clark-docker|#1252 — How Many Credentials Should Your AI Agent Have? Zero. — Jim Clark, Docker]]
+- [[1253-hfEczxdNyvU-advanced-workshop-mastering-ai-observability-doug-guthrie-braintrust|#1253 — Advanced Workshop: Mastering AI Observability — Doug Guthrie, Braintrust]]
+- [[1254-c5U-XbbEN-g-how-ai-agents-pay-checkout-in-chatgpt-and-google-ai-mode-sam-parsons-paypal|#1254 — How AI Agents Pay: Checkout in ChatGPT and Google AI Mode — Sam Parsons, PayPal]]
+- [[1255-FwiS44-xyYw-cooking-with-codex-charlie-guo-gabriel-chua-openai|#1255 — Cooking with Codex — Charlie Guo & Gabriel Chua, OpenAI]]
+- [[1256-X6l4lpA0_NY-harness-engineering-how-to-build-a-software-factory-dru-knox-tessl|#1256 — Harness Engineering: How to Build a Software Factory — Dru Knox, Tessl]]
+- [[1257-TeErpYBUIeM-the-self-improving-oss-agent-stack-marc-klingen-langfuse|#1257 — The Self-Improving OSS Agent Stack — Marc Klingen, Langfuse]]
+- [[1258-mUQoVz7THu0-why-building-an-eval-platform-is-harder-than-it-looks-braintrust|#1258 — Why Building an Eval Platform Is Harder Than It Looks — Braintrust]]
+- [[1259-uKUA1a0Kdfc-move-fast-and-don-t-break-things-scaling-databases-for-the-ai-era-planetscale|#1259 — Move Fast and Don't Break Things: Scaling Databases for the AI Era — PlanetScale]]
+- [[1260-XTpyNrEgJQ4-is-speculative-decoding-worth-it-profiling-vllm-on-nvidia-blackwell-akamai|#1260 — Is Speculative Decoding Worth It? Profiling vLLM on NVIDIA Blackwell — Akamai]]
+- [[1261-eXA2tjRZIbY-the-6-pillars-of-an-agentic-harness-for-production-varun-krovvidi-resolve-ai|#1261 — The 6 Pillars of an Agentic Harness for Production — Varun Krovvidi, Resolve AI]]
+- [[1262-cf2IhzqeQH4-every-ai-company-is-accidentally-building-a-bank-dor-sasson-stigg|#1262 — Every AI Company Is Accidentally Building a Bank — Dor Sasson, Stigg]]
+- [[1263-X4w2Pkz5tDY-grep-or-embeddings-agentic-search-over-company-documents-george-he-llamaindex|#1263 — Grep or Embeddings? Agentic Search Over Company Documents — George He, LlamaIndex]]
+- [[1264-u-o0sW9nwmk-from-36-to-100-how-self-improving-agents-write-their-own-skills-rafal-wilinski-runlayer|#1264 — From 36% to 100%: How Self-Improving Agents Write Their Own Skills — Rafal Wilinski, Runlayer]]
+- [[1265-XqF-IFHBCkM-redesigning-how-software-gets-built-with-ai-agents-sonar-mckinsey-panel|#1265 — Redesigning How Software Gets Built With AI Agents — Sonar & McKinsey Panel]]
+- [[1266-oWTEiYpxl80-why-ai-agents-should-have-their-own-sandbox-philipp-schmid-google-deepmind|#1266 — Why AI Agents Should Have Their Own Sandbox — Philipp Schmid, Google DeepMind]]
+- [[1267-toq-jyGLZDk-why-your-ai-agents-can-t-talk-to-each-other-yet-vlad-luzin-band|#1267 — Why Your AI Agents Can't Talk to Each Other (Yet) — Vlad Luzin, BAND]]
+- [[1268-exiwa9QbQXI-the-software-factory-from-bug-report-to-production-code-davis-palmie-factory|#1268 — The Software Factory: From Bug Report to Production Code — Davis Palmie, Factory]]
+- [[1269-f3o0-9Dlw3E-ai-hackers-are-faster-than-your-pen-test-eli-cohen-snyk|#1269 — AI Hackers Are Faster Than Your Pen Test — Eli Cohen, Snyk]]
 
 ## Notes
 

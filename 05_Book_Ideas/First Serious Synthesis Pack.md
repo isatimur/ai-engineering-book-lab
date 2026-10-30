@@ -1,18 +1,18 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **1167 videos**
+Corpus size analyzed: **1244 videos**
 
 ## Top 10 recurring ideas
 
-1. **Evals are the operating system for trustworthy AI** — signal in ~759 notes
-2. **Coding agents need harnesses, specs, and human steering** — signal in ~715 notes
-3. **AI engineering is becoming systems engineering, not prompt tinkering** — signal in ~665 notes
-4. **Reliability comes from constrained tools and durable workflows** — signal in ~637 notes
-5. **Model progress matters, but the bottleneck is increasingly product and operational design** — signal in ~491 notes
-6. **The AI-native company reorganizes around leverage, not headcount** — signal in ~322 notes
-7. **Context, memory, and retrieval beat naive long prompts** — signal in ~267 notes
-8. **Open standards and MCP-like interfaces are shaping the agent runtime layer** — signal in ~267 notes
-9. **Voice and realtime AI are constrained by latency, turn-taking, and UX** — signal in ~120 notes
+1. **Evals are the operating system for trustworthy AI** — signal in ~827 notes
+2. **Coding agents need harnesses, specs, and human steering** — signal in ~793 notes
+3. **AI engineering is becoming systems engineering, not prompt tinkering** — signal in ~741 notes
+4. **Reliability comes from constrained tools and durable workflows** — signal in ~708 notes
+5. **Model progress matters, but the bottleneck is increasingly product and operational design** — signal in ~522 notes
+6. **The AI-native company reorganizes around leverage, not headcount** — signal in ~325 notes
+7. **Open standards and MCP-like interfaces are shaping the agent runtime layer** — signal in ~284 notes
+8. **Context, memory, and retrieval beat naive long prompts** — signal in ~271 notes
+9. **Voice and realtime AI are constrained by latency, turn-taking, and UX** — signal in ~124 notes
 10. **Security and identity are first-class concerns for autonomous systems** — signal in ~61 notes
 
 ## Rough table of contents for a potential book
@@ -76,12 +76,12 @@ Corpus size analyzed: **1167 videos**
 ### Speakers
 
 - **Stephen Chin** — appears 5 times
-- **Philipp Schmid** — appears 4 times
+- **Philipp Schmid** — appears 5 times
+- **Laurie Voss** — appears 5 times
+- **Kevin Hou** — appears 4 times
+- **Harald Kirschner** — appears 4 times
 - **Zach Blumenfeld** — appears 4 times
 - **Patrick Debois** — appears 4 times
 - **Phil Hetzel** — appears 4 times
-- **Kevin Hou** — appears 3 times
+- **Matt Pocock** — appears 3 times
 - **Samuel Colvin** — appears 3 times
-- **Harald Kirschner** — appears 3 times
-- **Will Brown** — appears 3 times
-- **swyx** — appears 3 times
