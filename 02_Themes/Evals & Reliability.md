@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 631
+- Total tagged videos: 703
 
 ## Cross-video synthesis
 
-- This theme appears across 631 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (517), Agent Architecture (494), Models & Inference (21).
+- This theme appears across 703 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (589), Agent Architecture (562), Models & Inference (21).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -643,6 +643,78 @@
 - [[1267-toq-jyGLZDk-why-your-ai-agents-can-t-talk-to-each-other-yet-vlad-luzin-band|#1267 — Why Your AI Agents Can't Talk to Each Other (Yet) — Vlad Luzin, BAND]]
 - [[1268-exiwa9QbQXI-the-software-factory-from-bug-report-to-production-code-davis-palmie-factory|#1268 — The Software Factory: From Bug Report to Production Code — Davis Palmie, Factory]]
 - [[1269-f3o0-9Dlw3E-ai-hackers-are-faster-than-your-pen-test-eli-cohen-snyk|#1269 — AI Hackers Are Faster Than Your Pen Test — Eli Cohen, Snyk]]
+- [[1271-KGFyOtl5ktI-giving-ai-agents-memory-that-learns-jake-broekhuizen-langchain|#1271 — Giving AI Agents Memory That Learns — Jake Broekhuizen, LangChain]]
+- [[1273-jJQoVkd5yLg-why-we-deleted-our-mcp-server-and-rebuilt-it-abhi-arya-reducto|#1273 — Why We Deleted Our MCP Server and Rebuilt It — Abhi Arya, Reducto]]
+- [[1274-YNT7Plf9KIg-your-ai-agent-has-no-nervous-system-matt-gibiec-dynatrace|#1274 — Your AI Agent Has No Nervous System — Matt Gibiec, Dynatrace]]
+- [[1275-XPj3mIKEtI4-turning-agent-memory-into-skills-that-work-will-lyon-neo4j|#1275 — Turning Agent Memory Into Skills That Work — Will Lyon, Neo4j]]
+- [[1276-k2ClBT4aqAg-we-mapped-115-microservices-for-our-coding-agents-kamalakannan-nandagopal-postman|#1276 — We Mapped 115 Microservices for Our Coding Agents — Kamalakannan Nandagopal, Postman]]
+- [[1277-NaOkR3VSfR4-brains-vs-hands-how-to-run-ai-agents-safely-in-production-viren-baraiya|#1277 — Brains vs Hands: How to Run AI Agents Safely in Production — Viren Baraiya]]
+- [[1278-3XI90A3ENSg-how-a-remote-company-builds-ai-fluency-em-shreve-automattic|#1278 — How a Remote Company Builds AI Fluency — Em Shreve, Automattic]]
+- [[1279-Emo5FGGY-wM-why-80-reliability-isn-t-good-enough-felipe-blanes-amazon-agi-lab|#1279 — Why 80% Reliability Isn't Good Enough — Felipe Blanes, Amazon AGI Lab]]
+- [[1280-uuwDWRbxoYo-ai-writes-more-prs-who-validates-them-ali-reza-adl-tabatabai-sonar|#1280 — AI Writes More PRs. Who Validates Them? — Ali-Reza Adl-Tabatabai, Sonar]]
+- [[1281-E3KbFLAGD6A-stop-prompting-greg-pstrucha-sentry|#1281 — Stop Prompting — Greg Pstrucha, Sentry]]
+- [[1282-9WiBJRO84yY-building-on-the-codex-harness-dominik-kundel-openai|#1282 — Building on the Codex Harness — Dominik Kundel, OpenAI]]
+- [[1284-BIhiYL4U9_M-from-context-to-memory-your-agents-need-a-real-memory-layer-anders-swanson-oracle|#1284 — From Context to Memory: Your Agents Need a Real Memory Layer — Anders Swanson, Oracle]]
+- [[1285-6qkzlT962es-generation-is-cheap-review-is-expensive-how-to-stop-shipping-ai-slop-gabriel-martinez-g2i|#1285 — Generation Is Cheap, Review Is Expensive: How to Stop Shipping AI Slop — Gabriel Martinez, G2i]]
+- [[1286-cSz7aL2nl2U-why-your-company-needs-a-context-graph-and-how-to-build-it-gil-feig-merge|#1286 — Why Your Company Needs a Context Graph (and How to Build It) — Gil Feig, Merge]]
+- [[1287-TyPpSRXGhbc-small-models-big-results-training-a-finance-agent-for-under-500-charles-dickens-snorkel-ai|#1287 — Small Models, Big Results: Training a Finance Agent for Under $500 — Charles Dickens, Snorkel AI]]
+- [[1288-tNAV259UhCM-from-15-to-90-gpu-utilization-fix-the-data-pipeline-not-the-model|#1288 — From 15% to 90% GPU Utilization: Fix the Data Pipeline, Not the Model]]
+- [[1289-abw_m-DRi1k-the-lethal-trifecta-is-already-on-your-laptops-michael-patterson-coder|#1289 — The Lethal Trifecta Is Already on Your Laptops — Michael Patterson, Coder]]
+- [[1290-b9UhZkKjX_A-from-your-laptop-to-the-pipeline-scaling-custom-agents-with-github-copilot|#1290 — From Your Laptop to the Pipeline: Scaling Custom Agents with GitHub Copilot]]
+- [[1291-Zf_e45GiNCE-zero-cold-starts-serverless-ai-agents-on-akamai-functions-thorsten-hans|#1291 — Zero Cold Starts: Serverless AI Agents on Akamai Functions — Thorsten Hans]]
+- [[1293-7v2myBde05o-ai-agents-don-t-read-your-policy-docs-they-hit-your-apis-gravitee|#1293 — AI Agents Don't Read Your Policy Docs. They Hit Your APIs — Gravitee]]
+- [[1294-htod7Nv1cBc-how-minimax-m3-was-built-sparse-attention-and-native-multimodality-olive-song|#1294 — How MiniMax M3 Was Built: Sparse Attention and Native Multimodality — Olive Song]]
+- [[1296-j4AmIK6OvHc-latency-is-a-budget-humanlike-is-the-goal-jesse-hall-livekit|#1296 — Latency Is a Budget. Humanlike Is the Goal. — Jesse Hall, LiveKit]]
+- [[1297-spxoDAfh5ig-beyond-rag-build-a-relational-context-engine-from-scratch-peter-werry-unblocked|#1297 — Beyond RAG: Build a Relational Context Engine from Scratch — Peter Werry, Unblocked]]
+- [[1298-LJ2a9nX3vlo-rag-needs-a-map-using-graphrag-to-retrieve-connected-context-nyah-macklin-neo4j|#1298 — RAG Needs a Map: Using GraphRAG to Retrieve Connected Context — Nyah Macklin, Neo4j]]
+- [[1299-IK8cC4FScps-building-ai-agents-with-real-time-web-data-yohan-raju-bright-data|#1299 — Building AI Agents with Real-Time Web Data — Yohan Raju, Bright Data]]
+- [[1300-HGfsfKaVuGY-parsing-the-epstein-files-for-jmail-palak-agarwal-omar-alhait-reducto|#1300 — Parsing the Epstein Files for JMail — Palak Agarwal & Omar Alhait, Reducto]]
+- [[1301-Ndp5VaqFrl0-turning-my-obsidian-vault-into-a-local-ai-engineer-filip-makraduli-superlinked|#1301 — Turning My Obsidian Vault Into a Local AI Engineer — Filip Makraduli, Superlinked]]
+- [[1302-KhRjivBSwiw-the-data-context-layer-for-agents-yoni-michael-brandon-callender-typedef|#1302 — The Data Context Layer for Agents — Yoni Michael & Brandon Callender, Typedef]]
+- [[1303-ksjwtQop4os-vector-isn-t-enough-hybrid-search-retrieval-jeff-vestal-james-williams-elastic|#1303 — Vector Isn't Enough: Hybrid Search & Retrieval — Jeff Vestal & James Williams, Elastic]]
+- [[1304-p-2MT8KYZqU-ai-security-engineer-foundations-certificate-micah-silverman-snyk|#1304 — AI Security Engineer Foundations + Certificate — Micah Silverman, Snyk]]
+- [[1305-4n08JHb90hI-agents-that-own-their-inference-du-an-lightfoot-khaja-omer-akamai-technologies|#1305 — Agents That Own Their Inference — Du'an Lightfoot & Khaja Omer, Akamai Technologies]]
+- [[1306-ojJXgXLUQFc-the-sdlc-you-build-yourself-andy-wong-andrei-bocan-shane-wolf-atlassian|#1306 — The SDLC You Build Yourself — Andy Wong, Andrei Bocan & Shane Wolf, Atlassian]]
+- [[1307-YXiLj4tJt5A-agent-speedrun-elizabeth-fuentes-leone-sandhya-subramani-aws|#1307 — Agent Speedrun — Elizabeth Fuentes Leone & Sandhya Subramani, AWS]]
+- [[1309-fnuNVFgLjHA-building-self-learning-loops-for-your-agent-fuad-ali-arize-ai|#1309 — Building Self-Learning Loops for Your Agent — Fuad Ali, Arize AI]]
+- [[1310--AKPRSYccJc-how-to-build-quality-gates-into-agentic-coding-workflows-nnenna-ndukwe-qodo-ai|#1310 — How to Build Quality Gates into Agentic Coding Workflows — Nnenna Ndukwe, Qodo AI]]
+- [[1311-qFaKvbVc5cE-teaching-agents-to-search-with-nvidia-data-designer-dhruv-nathawani-nvidia|#1311 — Teaching Agents to Search with NVIDIA Data Designer — Dhruv Nathawani, NVIDIA]]
+- [[1312-xn8EsW0wxyc-how-secrets-leak-through-ai-agents-and-how-to-stop-it-venice-ai|#1312 — How Secrets Leak Through AI Agents (and How to Stop It) — Venice AI]]
+- [[1313-YIxzNZDDy1A-from-zero-to-leaderboard-agent-evaluation-wolfram-ravenwolf-weights-biases|#1313 — From Zero to Leaderboard: Agent Evaluation — Wolfram Ravenwolf, Weights & Biases]]
+- [[1314-1tpqdglI3T0-build-a-platform-and-watch-it-burn-michael-forrester-accenture-whitney-lee-datadog|#1314 — Build a Platform and Watch It Burn — Michael Forrester, Accenture & Whitney Lee, Datadog]]
+- [[1315-BOCjybvJYM4-continuously-improving-agents-with-langfuse-annabell-sch-fer-lotte-verheyden-clickhouse|#1315 — Continuously Improving Agents with Langfuse — Annabell Schäfer & Lotte Verheyden, ClickHouse]]
+- [[1317-_zUp6y9bDU8-let-your-agent-cook-using-skills-to-evaluate-and-improve-your-app-ankur-duggal-arize-ai|#1317 — Let Your Agent Cook: Using Skills to Evaluate and Improve Your App — Ankur Duggal, Arize AI]]
+- [[1318-bI8WyG9YB0I-sonarqube-openai-agentic-development-killian-carlsen-phelan-sonar|#1318 — SonarQube + OpenAI: Agentic Development — Killian Carlsen-Phelan, Sonar]]
+- [[1319-_naLJOqVOEI-same-model-different-speed-why-your-inference-provider-matters-friendliai|#1319 — Same Model, Different Speed: Why Your Inference Provider Matters — FriendliAI]]
+- [[1320-ZyC56eV8sVw-ai-security-engineer-foundations-certificate-javier-garza-snyk|#1320 — AI Security Engineer Foundations + Certificate — Javier Garza, Snyk]]
+- [[1321-ZGzthw4BZiA-build-with-perception-agents-emile-baizel-shruti-arora-amazon-agi-lab|#1321 — Build with Perception Agents — Emile Baizel & Shruti Arora, Amazon AGI Lab]]
+- [[1322-aV_vgUSatqs-burn-your-flags-interactive-clis-for-agents-mark-lummus-navinkumar-patil-paypal|#1322 — Burn Your Flags: Interactive CLIs for Agents — Mark Lummus & Navinkumar Patil, PayPal]]
+- [[1323-7RFJRDYroic-parameter-golf-with-autoresearch-vayum-arora-zhengyao-jiang-dixing-xu-dhruv-srikanth-weco-|#1323 — Parameter Golf with AutoResearch — Vayum Arora, Zhengyao Jiang, Dixing Xu & Dhruv Srikanth, Weco AI]]
+- [[1324-7BcQdtRA3Tc-taming-the-ai-hardware-cambrian-explosion-abdul-dakkak-modular|#1324 — Taming the AI Hardware Cambrian Explosion — Abdul Dakkak, Modular]]
+- [[1325-p7gaxmCUiIU-hill-climbing-skills-improve-agents-without-changing-the-model-shubhankar-srivastava-brows|#1325 — Hill-Climbing Skills: Improve Agents Without Changing the Model — Shubhankar Srivastava, Browserbase]]
+- [[1326-tyFPqtyOK5w-the-autonomous-computer-infrastructure-for-computer-use-agents-ang-li-simular|#1326 — The Autonomous Computer: Infrastructure for Computer Use Agents — Ang Li, Simular]]
+- [[1327-13YZ1EB9hjU-stop-renting-intelligence-the-train-to-deploy-loop-for-specialized-ai-fireworks-ai|#1327 — Stop Renting Intelligence: The Train-to-Deploy Loop for Specialized AI — Fireworks AI]]
+- [[1328-PwCSYy-oGsM-containment-is-lying-to-you-measuring-ai-agents-like-employees-druid-ai|#1328 — Containment Is Lying to You: Measuring AI Agents Like Employees — Druid AI]]
+- [[1329-EEt3ZSG4a1s-hiring-employable-agents-startup-battlefield-finals-howie-liu-hyperagent|#1329 — Hiring Employable Agents + Startup Battlefield Finals — Howie Liu, HyperAgent]]
+- [[1331-T3wRyXg_yVg-inside-the-ai-economy-what-stripe-s-data-reveals-nilofer-rajpurkar-stripe|#1331 — Inside the AI Economy: What Stripe's Data Reveals — Nilofer Rajpurkar, Stripe]]
+- [[1332-k72eLcYpVys-1-000-agent-tasks-in-a-sandbox-what-breaks-when-llms-run-code-kevin-orellana-aws|#1332 — 1,000 Agent Tasks in a Sandbox: What Breaks When LLMs Run Code — Kevin Orellana, AWS]]
+- [[1333-_cRgl3maiT8-how-inference-keeps-up-with-our-insatiable-need-for-tokens-cerebras-gimlet-labs|#1333 — How Inference Keeps Up with Our Insatiable Need for Tokens — Cerebras & Gimlet Labs]]
+- [[1334-nSkmXakJ6eo-auth-for-agents-let-ai-sign-up-for-your-product-with-auth-md-michael-grinich-workos|#1334 — Auth for Agents: Let AI Sign Up for Your Product with auth.md — Michael Grinich, WorkOS]]
+- [[1336-mBNVKkyfnE0-the-next-trillion-internet-users-still-don-t-have-an-identity-adi-singh-agentmail|#1336 — The Next Trillion Internet Users Still Don’t Have an Identity — Adi Singh, AgentMail]]
+- [[1337-qJtcEDc_WJU-scheduled-agents-dreaming-and-q-a-claude-managed-agents-part-3-of-4-anthropic|#1337 — Scheduled Agents, Dreaming and Q&A: Claude Managed Agents (Part 3 of 4) — Anthropic]]
+- [[1338-QSeaZ6qHyXs-claude-managed-agents-q-a-evals-ci-cd-and-multi-tenancy-part-4-of-4-anthropic|#1338 — Claude Managed Agents Q&A: Evals, CI/CD and Multi-Tenancy (Part 4 of 4) — Anthropic]]
+- [[1339-FGftGOzfohc-build-a-research-agent-with-claude-managed-agents-part-2-of-4-anthropic|#1339 — Build a Research Agent with Claude Managed Agents (Part 2 of 4) — Anthropic]]
+- [[1340-snTZtttfL70-building-aie-open-q-a-and-feedback-session-with-swyx|#1340 — Building AIE: Open Q&A and Feedback Session with swyx]]
+- [[1341-gpmze-6ueGU-we-let-our-financial-planners-write-the-agents-matthew-ragone-range|#1341 — We Let Our Financial Planners Write the Agents — Matthew Ragone, Range]]
+- [[1342-ws9XcGGPBDk-your-agent-is-a-lethal-trifecta-and-what-to-do-about-it-kim-maida-keycard|#1342 — Your Agent Is a Lethal Trifecta (And What to Do About It) — Kim Maida, Keycard]]
+- [[1343-SacJfmp33vM-your-gpu-neighbor-can-hear-your-model-branislav-brzak-stealthium|#1343 — Your GPU Neighbor Can Hear Your Model — Branislav Brzak, Stealthium]]
+- [[1344-oixzVKMAXG0-please-enough-with-the-sloppy-one-shot-saas-replacements-mahmoud-abdelwahab-railway|#1344 — Please… Enough with the Sloppy, One-Shot SaaS Replacements — Mahmoud Abdelwahab, Railway]]
+- [[1345-Fa3hQVIKShw-just-in-time-ontologies-what-cheap-intelligence-means-for-data-hrishi-olickel-southbridge-|#1345 — Just-in-Time Ontologies: What Cheap Intelligence Means for Data — Hrishi Olickel, Southbridge AI]]
+- [[1346-8g0g1ncwzG0-reliable-smart-workflows-for-finance-wealth-and-insurance-karthic-rao-perpetual|#1346 — Reliable, Smart Workflows for Finance, Wealth and Insurance — Karthic Rao, Perpetual]]
+- [[1347-dYh7TQkuYFE-i-believe-everything-my-agents-tell-me-three-levels-of-review-corey-gallon-rexmore|#1347 — I Believe Everything My Agents Tell Me: Three Levels of Review — Corey Gallon, Rexmore]]
+- [[1348-SHvwutPSeZg-judge-a-transaction-by-the-company-it-keeps-somya-rai-md-sharique-exl|#1348 — Judge a Transaction by the Company It Keeps — Somya Rai & MD Sharique, EXL]]
+- [[1349-Fe4aSMXsOZ4-every-building-is-a-balance-sheet-spatial-memory-for-real-world-assets-jordi-spranger-spra|#1349 — Every Building Is a Balance Sheet: Spatial Memory for Real-World Assets — Jordi Spranger, Spranic]]
+- [[1350-3ZlQk4-knWM-deploying-ai-inside-a-bank-is-not-an-engineering-problem-paden-gayle-applied-ai-engineers|#1350 — Deploying AI Inside a Bank Is Not an Engineering Problem — Paden Gayle, Applied AI Engineers]]
 
 ## Notes
 

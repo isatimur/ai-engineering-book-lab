@@ -1,20 +1,20 @@
 # Corpus Stats
 
-- Total notes: 1244
-- Transcript status mix: {'auto_en': 3, 'auto_en_orig': 1240, 'whisper_base_en': 1}
+- Total notes: 1323
+- Transcript status mix: {'auto_en': 3, 'auto_en_orig': 1319, 'whisper_base_en': 1}
 
 ## Theme counts
 
-- Agent Architecture: 622
-- Coding Agents: 720
-- Evals & Reliability: 631
+- Agent Architecture: 696
+- Coding Agents: 799
+- Evals & Reliability: 703
 - General AI Engineering: 5
-- MCP & Tooling: 160
-- Models & Inference: 132
+- MCP & Tooling: 167
+- Models & Inference: 133
 - Org Design & Leadership: 243
-- RAG & Retrieval: 168
+- RAG & Retrieval: 169
 - Security & Guardrails: 26
-- Voice & Realtime: 49
+- Voice & Realtime: 52
 
 ## Frequent speakers
 
@@ -27,6 +27,6 @@
 - Patrick Debois: 4
 - Phil Hetzel: 4
 - Matt Pocock: 3
+- Robert Brennan: 3
 - Samuel Colvin: 3
-- Charles Frye: 3
-- Will Brown: 3
+- Thor Schaeff: 3
