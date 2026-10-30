@@ -168,22 +168,29 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
             # should be slow on purpose.
             "--sleep-requests", os.environ.get("INGEST_SLEEP_REQUESTS", "2"),
             "--sleep-subtitles", os.environ.get("INGEST_SLEEP_SUBTITLES", "3"),
-            "--retries", "5",
-            "--extractor-retries", "3",
-            "--retry-sleep", "exp=5:120",
+            # Fail FAST, do not grind. These were 5 / 3 / exp=5:120 on
+            # 2026-10-13, which let a single unfetchable video burn ~30 minutes
+            # of exponential backoff before the batch moved on: a 10-video run
+            # wrote nothing in an hour while the same command succeeded by hand
+            # in 10 seconds. A skipped video costs nothing — it writes no note
+            # and stays queued — so waiting is the expensive option, not the
+            # safe one.
+            "--retries", "2",
+            "--extractor-retries", "1",
+            "--retry-sleep", "exp=3:20",
             "--output",
             str(raw_base) + ".%(ext)s",
             video.url,
         ]
         # Bounded retry around the whole fetch: yt-dlp's own retries cover one
         # request, this covers a window where the account is briefly throttled.
-        attempts = int(os.environ.get("INGEST_ATTEMPTS", "3"))
+        attempts = int(os.environ.get("INGEST_ATTEMPTS", "2"))
         for attempt in range(1, attempts + 1):
             proc = run(cmd, cwd=ROOT)
             if proc.returncode == 0 or not _is_transient(proc.stderr):
                 break
             if attempt < attempts:
-                wait = 30 * attempt
+                wait = 10 * attempt
                 print(f"[ingest] {video.id}: transient failure, waiting {wait}s "
                       f"(attempt {attempt}/{attempts})")
                 time.sleep(wait)
