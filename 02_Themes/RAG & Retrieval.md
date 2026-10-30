@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 168
+- Total tagged videos: 169
 
 ## Cross-video synthesis
 
-- This theme appears across 168 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (20).
+- This theme appears across 169 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (38), Models & Inference (21), Evals & Reliability (21).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
 ## Seed videos
@@ -180,6 +180,7 @@
 - [[1006-WiqDvX6isc4-scaling-compute-on-context-jack-morris-engram|#1006 — Scaling Compute on Context — Jack Morris, Engram]]
 - [[1156-Zd5b40Jbp_k-act-confirm-or-stop-smarter-behavior-for-ai-assistants-wearables-robots-amit-desai-roku|#1156 — Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku]]
 - [[1188-I_VEh7XSwyc-physical-ai-s-next-bottleneck-is-finding-the-right-video-rafael-levi-bright-data|#1188 — Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data]]
+- [[1349-Fe4aSMXsOZ4-every-building-is-a-balance-sheet-spatial-memory-for-real-world-assets-jordi-spranger-spra|#1349 — Every Building Is a Balance Sheet: Spatial Memory for Real-World Assets — Jordi Spranger, Spranic]]
 
 ## Notes
 

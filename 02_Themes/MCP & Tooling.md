@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 160
+- Total tagged videos: 167
 
 ## Cross-video synthesis
 
-- This theme appears across 160 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (100), Agent Architecture (91), Evals & Reliability (14).
+- This theme appears across 167 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (107), Agent Architecture (97), Evals & Reliability (14).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -172,6 +172,13 @@
 - [[1243-fz6-NS7qpZc-how-i-learned-to-stop-worrying-and-love-the-sandbox-matt-brockman-e2b|#1243 — How I Learned to Stop Worrying and Love the Sandbox — Matt Brockman, E2B]]
 - [[1252-ZUZVNKFSmTM-how-many-credentials-should-your-ai-agent-have-zero-jim-clark-docker|#1252 — How Many Credentials Should Your AI Agent Have? Zero. — Jim Clark, Docker]]
 - [[1254-c5U-XbbEN-g-how-ai-agents-pay-checkout-in-chatgpt-and-google-ai-mode-sam-parsons-paypal|#1254 — How AI Agents Pay: Checkout in ChatGPT and Google AI Mode — Sam Parsons, PayPal]]
+- [[1272-HTzgC3FoYsI-let-anyone-at-your-company-ship-internal-apps-with-ai-garrett-galow-workos|#1272 — Let Anyone at Your Company Ship Internal Apps with AI — Garrett Galow, WorkOS]]
+- [[1283-3wj6sgbi1YA-designing-clis-for-agents-not-humans-pedro-lopez-airbyte|#1283 — Designing CLIs for Agents, Not Humans — Pedro Lopez, Airbyte]]
+- [[1295-s-glGHAa1a4-an-ai-future-without-the-lock-in-remy-guercio-tailscale|#1295 — An AI Future Without the Lock-In — Remy Guercio, Tailscale]]
+- [[1308-xfPVBzDYjH4-can-your-agent-hear-you-now-building-live-voice-agents-with-gemini-thor-schaeff|#1308 — Can Your Agent Hear You Now? Building Live Voice Agents with Gemini — Thor Schaeff]]
+- [[1316-XczFLWEntiE-ai-apps-in-a-flash-ship-to-gpus-without-docker-dean-qui-anola-runpod|#1316 — AI Apps in a Flash: Ship to GPUs Without Docker — Dean Quiñanola, Runpod]]
+- [[1330-iH_wV8BbS24-sandboxes-aren-t-optional-4-ways-to-isolate-coding-agents-robert-brennan-openhands|#1330 — Sandboxes Aren't Optional: 4 Ways to Isolate Coding Agents — Robert Brennan, OpenHands]]
+- [[1335-Uv0nAf_7tyU-decoupling-the-brain-from-the-hands-claude-managed-agents-part-1-of-4-anthropic|#1335 — Decoupling the Brain from the Hands: Claude Managed Agents (Part 1 of 4) — Anthropic]]
 
 ## Notes
 
