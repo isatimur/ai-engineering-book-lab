@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 151
+- Total tagged videos: 160
 
 ## Cross-video synthesis
 
-- This theme appears across 151 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (90), Agent Architecture (82), Evals & Reliability (14).
+- This theme appears across 160 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (100), Agent Architecture (91), Evals & Reliability (14).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -161,8 +161,17 @@
 - [[1143-cI7zfqusmFU-every-step-you-take-every-call-you-make-the-reliable-agent-stack-giselle-van-dongen-restat|#1143 — Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate]]
 - [[1154-MBHOH1NmDqc-realtime-voice-agents-with-frontier-intelligence-bohan-li-eliseai|#1154 — Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI]]
 - [[1157-IN-rb-9WmiY-pinecone-2-0-edo-liberty-pinecone|#1157 — Pinecone 2.0 — Edo Liberty, Pinecone]]
-- [[1160-waI44NP1abk-rebuilding-the-web-for-agents-liad-yosef-mcp-apps|#1160 — Rebuilding the web for agents — Liad Yosef, MCP Apps]]
 - [[1169-sOB3HSiG8vo-routing-llm-inference-in-production-from-engine-signals-to-policy-qianru-lao-lu-zhang-open|#1169 — Routing LLM Inference in Production: From Engine Signals to Policy — Qianru Lao & Lu Zhang, OpenAI]]
+- [[1191-jgWY66RaSrQ-i-gave-an-ai-a-body-cyrus-clarke-mit-media-lab|#1191 — I Gave an AI a Body — Cyrus Clarke, MIT Media Lab]]
+- [[1204-YIVkERhy8xo-we-re-the-bottleneck-but-we-don-t-have-to-be-ido-salomon-agentcraft|#1204 — We're the bottleneck, but we don't have to be — Ido Salomon, AgentCraft]]
+- [[1208-TRfzFJCJ7ZE-orchestras-not-factories-how-the-fastest-builders-work-charlie-holtz-conductor|#1208 — Orchestras, Not Factories: How the Fastest Builders Work — Charlie Holtz, Conductor]]
+- [[1213-UOcHfR3_tys-your-agents-are-in-solitary-confinement-why-mcp-a2a-aren-t-enough-vlad-luzin-band|#1213 — Your Agents Are in Solitary Confinement: Why MCP & A2A Aren't Enough — Vlad Luzin, Band]]
+- [[1215-9cJrbj23fOA-the-chief-ai-officer-scientist-architect-coach-rania-khalaf-wso2|#1215 — The Chief AI Officer: Scientist, Architect, Coach — Rania Khalaf, WSO2]]
+- [[1225-OE_lLNCNfQo-yolo-mode-safely-microvm-sandboxes-for-any-agent-rowan-christmas-docker|#1225 — YOLO Mode, Safely: MicroVM Sandboxes for Any Agent — Rowan Christmas, Docker]]
+- [[1237-Bdrs3uAX0_M-ai-coding-agents-are-breaking-big-codebases-dan-adler-sourcegraph|#1237 — AI Coding Agents Are Breaking Big Codebases — Dan Adler, Sourcegraph]]
+- [[1243-fz6-NS7qpZc-how-i-learned-to-stop-worrying-and-love-the-sandbox-matt-brockman-e2b|#1243 — How I Learned to Stop Worrying and Love the Sandbox — Matt Brockman, E2B]]
+- [[1252-ZUZVNKFSmTM-how-many-credentials-should-your-ai-agent-have-zero-jim-clark-docker|#1252 — How Many Credentials Should Your AI Agent Have? Zero. — Jim Clark, Docker]]
+- [[1254-c5U-XbbEN-g-how-ai-agents-pay-checkout-in-chatgpt-and-google-ai-mode-sam-parsons-paypal|#1254 — How AI Agents Pay: Checkout in ChatGPT and Google AI Mode — Sam Parsons, PayPal]]
 
 ## Notes
 

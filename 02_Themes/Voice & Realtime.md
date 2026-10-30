@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 48
+- Total tagged videos: 49
 
 ## Cross-video synthesis
 
-- This theme appears across 48 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (11), Evals & Reliability (9), Agent Architecture (7).
+- This theme appears across 49 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (12), Evals & Reliability (10), Agent Architecture (7).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
 ## Seed videos
@@ -60,6 +60,7 @@
 - [[1093-zrZ1amZBSPw-productionizing-llm-gateways-architecture-tradeoffs-and-hard-lessons-kanish-manuja-twilio|#1093 — Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio]]
 - [[1155-IDNfAZVKvPE-my-name-is-my-name-is-a-linguistic-map-for-voice-agents-midam-kim-servicenow|#1155 — "My name is... my name is...": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow]]
 - [[1156-Zd5b40Jbp_k-act-confirm-or-stop-smarter-behavior-for-ai-assistants-wearables-robots-amit-desai-roku|#1156 — Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku]]
+- [[1194-2LRIAfng7eA-teaching-llms-to-speak-spotify-yves-raimond-jacqueline-wood-spotify|#1194 — Teaching LLMs to Speak Spotify — Yves Raimond & Jacqueline Wood, Spotify]]
 
 ## Notes
 
