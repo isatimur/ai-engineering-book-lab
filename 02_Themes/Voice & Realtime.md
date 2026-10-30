@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 46
+- Total tagged videos: 48
 
 ## Cross-video synthesis
 
-- This theme appears across 46 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (10), Evals & Reliability (8), Models & Inference (6).
+- This theme appears across 48 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (11), Evals & Reliability (9), Agent Architecture (7).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
 ## Seed videos
@@ -58,6 +58,8 @@
 - [[1025-E_Txocq-Lrw-while-my-guitar-gently-speaks-todd-fisher-philo-ventures|#1025 — While my guitar gently speaks — Todd Fisher, Philo Ventures]]
 - [[1029-5dCAmSDOAjI-the-next-medium-why-real-time-interactive-video-changes-everything-ahmed-ahres-reactor|#1029 — The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor]]
 - [[1093-zrZ1amZBSPw-productionizing-llm-gateways-architecture-tradeoffs-and-hard-lessons-kanish-manuja-twilio|#1093 — Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio]]
+- [[1155-IDNfAZVKvPE-my-name-is-my-name-is-a-linguistic-map-for-voice-agents-midam-kim-servicenow|#1155 — "My name is... my name is...": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow]]
+- [[1156-Zd5b40Jbp_k-act-confirm-or-stop-smarter-behavior-for-ai-assistants-wearables-robots-amit-desai-roku|#1156 — Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku]]
 
 ## Notes
 

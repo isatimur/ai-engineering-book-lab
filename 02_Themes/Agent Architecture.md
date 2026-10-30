@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 491
+- Total tagged videos: 546
 
 ## Cross-video synthesis
 
-- This theme appears across 491 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (443), Evals & Reliability (379), MCP & Tooling (75).
+- This theme appears across 546 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (496), Evals & Reliability (427), MCP & Tooling (82).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -471,7 +471,6 @@
 - [[1091-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1091 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]
 - [[1092-bMjlRrWjdT0-ai-evals-for-cross-functional-teams-nachiket-paranjape-swaroop-chitlur-haridas-doordash|#1092 — AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash]]
 - [[1094-mJqwmmOx4WA-how-to-avoid-disaster-when-vibe-coding-a-billing-engine-andrew-garvin-stripe|#1094 — How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe]]
-- [[1096-5Bn0xro2ol8-how-to-get-your-org-to-adopt-coding-agents-without-shipping-garbage-eyal-blum-figma|#1096 — How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma]]
 - [[1098-lRa9sPaMyy4-your-code-has-bugs-lean4-has-proofs-formal-verification-for-engineers-varun-pant-aws|#1098 — Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS]]
 - [[1099-M05vON8i0aI-ai-native-organisations-run-on-skills-how-to-structure-and-scale-them-imad-touil-quantumbl|#1099 — AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack]]
 - [[1100-7A65O-0lvKE-which-ai-startups-actually-land-enterprise-contracts-brian-lewis-millennium|#1100 — Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium]]
@@ -503,6 +502,62 @@
 - [[1127-9wZpvF3QleU-500-skills-zero-fine-tuning-linkedin-s-playbook-for-ai-agents-ajay-prakash-linkedin|#1127 — 500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents — Ajay Prakash, LinkedIn]]
 - [[1128-KcVkq5L-0f0-your-agents-lack-context-here-s-how-to-fix-you-re-absolutely-right-brandon-waselnuk-unbloc|#1128 — Your agents lack context: Here's how to fix "You're absolutely right!" — Brandon Waselnuk, Unblocked]]
 - [[1129-XzJD1bvXKjs-how-long-can-your-skills-be-before-your-agent-forgets-what-you-told-it-laurie-voss-arize-a|#1129 — How long can your skills be before your agent forgets what you told it? — Laurie Voss, Arize AI]]
+- [[1131-YkNulwcc5jk-acp-the-universal-remote-control-for-ai-agents-alex-hancock-block|#1131 — ACP: The Universal Remote Control for AI Agents — Alex Hancock, Block]]
+- [[1132-XWcXwnysmpY-the-spatial-harness-bringing-agents-to-the-canvas-max-drake-tldraw|#1132 — The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw]]
+- [[1133-NW-jwOVr32w-the-design-code-roundtrip-that-isn-t-jonathan-gordon-reweaver-ai|#1133 — The Design-Code Roundtrip That Isn't — Jonathan Gordon, ReWeaver AI]]
+- [[1134-8KkibGU_DDY-mousepower-agents-that-can-t-be-measured-can-t-be-managed-maximillian-piras-yutori|#1134 — Mousepower: agents that can’t be measured, can’t be managed. — Maximillian Piras, Yutori]]
+- [[1135-v42opQpCy60-design-at-the-speed-of-adjectives-paul-bakaus-renaissance-geek-inc|#1135 — Design at the Speed of Adjectives — Paul Bakaus, Renaissance Geek, Inc.]]
+- [[1136-sDMGWK4wZ_w-training-taste-thais-castello-branco-taste-labs|#1136 — Training Taste — Thais Castello Branco, Taste Labs]]
+- [[1137-Krzs8GeiWTc-generative-ui-in-python-jeremiah-lowin-prefect|#1137 — Generative UI... in Python? — Jeremiah Lowin, Prefect]]
+- [[1138-O1FN4awNEtM-one-designer-ai-hundreds-of-deliverables-vincent-wendy-ai-engineer|#1138 — One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer]]
+- [[1139-H7vFrcNWXzs-building-ambitious-software-jonathan-kelley-dioxus-labs-cognition|#1139 — Building ambitious software — Jonathan Kelley, Dioxus Labs & Cognition]]
+- [[1140-PXj0p_mW9nI-tokens-should-have-jobs-katelyn-lesse-angela-jiang-anthropic|#1140 — Tokens Should Have Jobs — Katelyn Lesse & Angela Jiang, Anthropic]]
+- [[1141-gxVZ_1tuuq4-harness-engineering-building-the-production-cage-for-powerful-domain-agents-mike-chambers-|#1141 — Harness Engineering: Building the Production Cage for Powerful Domain Agents — Mike Chambers, AWS]]
+- [[1142-hOWU0KPUp1k-loophole-adversarial-agents-to-stress-test-your-morality-brendan-rappazzo-morgan-stanley|#1142 — Loophole: Adversarial Agents To Stress Test Your Morality — Brendan Rappazzo, Morgan Stanley]]
+- [[1143-cI7zfqusmFU-every-step-you-take-every-call-you-make-the-reliable-agent-stack-giselle-van-dongen-restat|#1143 — Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate]]
+- [[1144-4lXks428C9o-we-let-an-ai-agent-execute-bash-and-lived-to-talk-about-it-sarah-sanders-posthog|#1144 — We let an AI agent execute Bash and lived to talk about it — Sarah Sanders, PostHog]]
+- [[1145-jA_x7F8caHI-no-memory-no-harness-why-the-database-is-the-last-line-of-defense-kay-malcolm-oracle|#1145 — No Memory, No Harness: Why the Database Is the Last Line of Defense — Kay Malcolm, Oracle]]
+- [[1146-9dYcwOkpCE8-how-we-solved-agent-building-andrew-qu-vercel|#1146 — How We Solved Agent Building — Andrew Qu, Vercel]]
+- [[1147-fjF8EKnxKCU-agents-without-code-skills-yaml-and-filesystems-replaced-python-philipp-schmid-google-deep|#1147 — Agents Without Code: Skills, YAML, and Filesystems Replaced Python — Philipp Schmid, Google DeepMind]]
+- [[1148-18Um2VjMM_g-speech-to-speech-model-research-at-google-deepmind-valeria-wu-fon-tom-ouyang-google-deepmi|#1148 — Speech-to-Speech Model Research at Google DeepMind — Valeria Wu Fon & Tom Ouyang, Google DeepMind]]
+- [[1149-OpY6MmZFeHo-voice-agents-can-just-do-things-charlie-guo-openai|#1149 — Voice Agents Can Just Do Things — Charlie Guo, OpenAI]]
+- [[1150-a8EcVumh71E-your-voice-agent-is-just-a-walkie-talkie-neil-zeghidour-gradium|#1150 — Your Voice Agent is Just a Walkie Talkie — Neil Zeghidour, Gradium]]
+- [[1151-xLUQOqjudtA-tolan-voice-first-ai-companion-paula-dozsa-tolan|#1151 — Tolan: Voice-First AI Companion — Paula Dozsa, Tolan]]
+- [[1152-qStB9GbppMU-1-trillion-phone-calls-yr-10-error-rate-the-crisis-in-voice-ai-sumanyu-sharma-hamming-ai|#1152 — 1 Trillion Phone Calls/yr, 10% Error rate: The Crisis in Voice AI — Sumanyu Sharma, Hamming AI]]
+- [[1153-vblnYHzBgS4-5-voice-agent-failure-modes-you-ll-hit-in-week-one-venky-b-plivo|#1153 — 5 Voice Agent Failure Modes You'll Hit in Week One — Venky B, Plivo]]
+- [[1154-MBHOH1NmDqc-realtime-voice-agents-with-frontier-intelligence-bohan-li-eliseai|#1154 — Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI]]
+- [[1155-IDNfAZVKvPE-my-name-is-my-name-is-a-linguistic-map-for-voice-agents-midam-kim-servicenow|#1155 — "My name is... my name is...": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow]]
+- [[1157-IN-rb-9WmiY-pinecone-2-0-edo-liberty-pinecone|#1157 — Pinecone 2.0 — Edo Liberty, Pinecone]]
+- [[1158-fZH97QHHYjY-the-unreasonable-effectiveness-of-bm25-for-agentic-search-jo-kristian-bergum-hornet-dev|#1158 — The unreasonable effectiveness of BM25 for agentic search — Jo Kristian Bergum, Hornet.dev]]
+- [[1159-59AA5kIoqjA-the-search-engine-for-the-agentic-web-will-bryk-exa|#1159 — The Search Engine for the Agentic Web — Will Bryk, Exa]]
+- [[1160-waI44NP1abk-rebuilding-the-web-for-agents-liad-yosef-mcp-apps|#1160 — Rebuilding the web for agents — Liad Yosef, MCP Apps]]
+- [[1161-O84lhGc1OOI-if-we-want-them-to-do-knowledge-work-design-them-as-knowledge-agents-benjamin-clavi-mixedb|#1161 — If we want them to do Knowledge Work, design them as Knowledge Agents — Benjamin Clavié, Mixedbread]]
+- [[1162-_gvamfT8H-w-your-agreements-are-a-database-you-can-t-query-hiral-shah-docusign-sean-sodha-nvidia|#1162 — Your Agreements Are a Database You Can't Query — Hiral Shah, Docusign & Sean Sodha, NVIDIA]]
+- [[1163-V-isu4eTHgw-connect-ai-to-billions-of-legal-documents-simon-eskildsen-turbopuffer-jacob-lauritzen-lego|#1163 — Connect AI to Billions of Legal Documents — Simon Eskildsen, turbopuffer & Jacob Lauritzen, Legora]]
+- [[1164-iJVxxxHM_Oc-where-rl-will-take-search-maximilian-david-rumpf-sid-ai|#1164 — Where RL Will Take Search — Maximilian-David Rumpf, SID.ai]]
+- [[1165-r9OwPx_HoV0-stop-chunking-like-it-s-2022-yuval-belfer-ai21-labs|#1165 — Stop Chunking Like It's 2022 — Yuval Belfer, AI21 Labs]]
+- [[1166-eZ8WWZzoaR0-homa-the-end-of-tcp-for-ai-clusters-john-ousterhout-stanford|#1166 — Homa: The End of TCP for AI Clusters — John Ousterhout, Stanford]]
+- [[1167-xs-ob87TTzg-total-recall-agent-memory-and-harness-engineering-ignacio-martinez-oracle|#1167 — Total Recall: Agent Memory and Harness Engineering — Ignacio Martinez, Oracle]]
+- [[1168-7c9FSUVcXR0-operating-distributed-inference-systems-at-scale-nishant-gupta-naman-ahuja-meta|#1168 — Operating Distributed Inference Systems at Scale — Nishant Gupta & Naman Ahuja, Meta]]
+- [[1170-l1-D89bAuOA-are-llm-performance-benchmarks-reliable-ashok-chandrasekar-jason-kramberger-google|#1170 — Are LLM Performance Benchmarks Reliable? — Ashok Chandrasekar & Jason Kramberger, Google]]
+- [[1171-cQQbJqvZkpo-vertical-mobility-inference-from-mvp-to-trillion-parameter-workloads-sitanshu-gupta-corewe|#1171 — Vertical Mobility: Inference from MVP to Trillion-Parameter Workloads — Sitanshu Gupta, CoreWeave]]
+- [[1173-g4SsanB0gMc-large-clusters-for-small-models-daniel-svonava-superlinked|#1173 — Large clusters for small models — Daniel Svonava, Superlinked]]
+- [[1174-Hvb2LfMH58c-the-frontier-ai-inference-cloud-for-agents-byung-gon-gon-chun-friendliai|#1174 — The Frontier AI Inference Cloud for Agents — Byung-Gon (Gon) Chun, FriendliAI]]
+- [[1175-btxG75rNJC4-two-bugs-that-hid-in-plain-sight-a-vllm-debugging-detective-story-asaf-gardin-yuval-belfer|#1175 — Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story — Asaf Gardin & Yuval Belfer]]
+- [[1176-c1hGBoWw20A-weight-folding-cuda-streams-and-the-bug-that-made-my-model-speak-backwards-filip-makraduli|#1176 — Weight Folding, CUDA Streams, and the Bug That Made My Model Speak Backwards — Filip Makraduli]]
+- [[1177-SQMCtZX3trg-the-dark-arts-of-skill-engineering-paul-bakaus-renaissance-geek-impeccable|#1177 — The Dark Arts of Skill Engineering — Paul Bakaus, Renaissance Geek (Impeccable)]]
+- [[1178-RQi7x-navxU-building-the-document-context-layer-for-ai-agents-jerry-liu-llamaindex|#1178 — Building the Document Context Layer for AI Agents — Jerry Liu, LlamaIndex]]
+- [[1179-dKcTBQzR7jI-skill-issue-stop-deploying-vision-language-models-use-them-with-skills-merve-noyan-hugging|#1179 — Skill issue: stop deploying vision language models, use them with Skills — Merve Noyan, Hugging Face]]
+- [[1180-jNE8No-wvok-modality-misalignment-and-originality-attribution-in-short-form-video-aditya-gautam-meta|#1180 — Modality Misalignment and Originality Attribution in Short-Form Video — Aditya Gautam, Meta]]
+- [[1181-0I07YAuF8xA-from-ingestion-to-agents-how-ai-teams-build-on-document-intelligence-adit-abraham-reducto|#1181 — From Ingestion to Agents: How AI Teams Build on Document Intelligence — Adit Abraham, Reducto]]
+- [[1182-A_I8mw8yfns-the-best-models-still-reason-like-toddlers-andrew-dai-elorian|#1182 — The Best Models Still Reason Like Toddlers — Andrew Dai, Elorian]]
+- [[1183-ztlXKfPCT3Q-you-re-not-thinking-big-enough-rebuilding-food-systems-with-ai-agents-cody-menefee-firecra|#1183 — You’re Not Thinking Big Enough: Rebuilding Food Systems with AI Agents — Cody Menefee, Firecrawl]]
+- [[1184-ZZcE0HeO-Hc-from-vlm-vla-s-to-embodied-agents-armen-aghajanyan-perceptron-ai|#1184 — From VLM/VLA's to Embodied Agents — Armen Aghajanyan, Perceptron AI]]
+- [[1185-T72nqdC92PM-from-scratch-to-sota-training-a-3b-state-space-vision-model-krishna-prasad-srinivasan-sarv|#1185 — From Scratch to SOTA: Training a 3B State-Space Vision Model — Krishna Prasad Srinivasan, Sarvam]]
+- [[1186-jFHteJjRl8A-robotics-has-been-stuck-for-70-years-deepak-pathak-skild-ai|#1186 — Robotics Has Been Stuck for 70 Years — Deepak Pathak, Skild AI]]
+- [[1187-4Gqg0HVe-AY-world-models-need-causality-not-pretty-pixels-christopher-manning-moonlake-ai|#1187 — World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI]]
+- [[1188-I_VEh7XSwyc-physical-ai-s-next-bottleneck-is-finding-the-right-video-rafael-levi-bright-data|#1188 — Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data]]
+- [[1190-2wgPHvW0mG8-one-operator-many-drones-inside-skydio-s-autonomy-stack-suchet-bargoti-skydio|#1190 — One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio]]
 
 ## Notes
 
