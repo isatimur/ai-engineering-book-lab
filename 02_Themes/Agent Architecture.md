@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 767
+- Total tagged videos: 784
 
 ## Cross-video synthesis
 
-- This theme appears across 767 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (718), Evals & Reliability (629), MCP & Tooling (100).
+- This theme appears across 784 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (735), Evals & Reliability (644), MCP & Tooling (102).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -471,6 +471,9 @@
 - [[1091-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber|#1091 — Building uReview, Uber’s Multi-Agent Code Review Engine — Will Bond & Ameya Ketkar, Uber]]
 - [[1092-bMjlRrWjdT0-ai-evals-for-cross-functional-teams-nachiket-paranjape-swaroop-chitlur-haridas-doordash|#1092 — AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash]]
 - [[1094-mJqwmmOx4WA-how-to-avoid-disaster-when-vibe-coding-a-billing-engine-andrew-garvin-stripe|#1094 — How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe]]
+- [[1095-pqlWNihgdjI-from-ai-assisted-to-ai-native-building-a-frontier-development-team-clare-liguori-aws|#1095 — From AI-Assisted to AI-Native: Building a Frontier Development Team — Clare Liguori, AWS]]
+- [[1096-5Bn0xro2ol8-how-to-get-your-org-to-adopt-coding-agents-without-shipping-garbage-eyal-blum-figma|#1096 — How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma]]
+- [[1097-B0fjR3yaZFU-how-do-you-diffuse-ai-into-the-real-world-varun-shenoy-long-lake|#1097 — How do you diffuse AI into the real world? — Varun Shenoy, Long Lake]]
 - [[1098-lRa9sPaMyy4-your-code-has-bugs-lean4-has-proofs-formal-verification-for-engineers-varun-pant-aws|#1098 — Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS]]
 - [[1099-M05vON8i0aI-ai-native-organisations-run-on-skills-how-to-structure-and-scale-them-imad-touil-quantumbl|#1099 — AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack]]
 - [[1100-7A65O-0lvKE-which-ai-startups-actually-land-enterprise-contracts-brian-lewis-millennium|#1100 — Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium]]
@@ -491,6 +494,7 @@
 - [[1115-ZyGMqdIpPoE-agent-spending-without-controls-rodrigo-coelho-pranav-maheshwari-edge-node|#1115 — Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node]]
 - [[1116-QrMcNe2jjt8-the-end-of-the-static-screen-architecting-intent-driven-ux-gus-iwanaga-commercetools|#1116 — The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools]]
 - [[1117-tE2z8-hqoLY-beyond-the-lethal-trifecta-agentic-commerce-on-the-open-internet-david-levine-kiduna-club|#1117 — Beyond the Lethal Trifecta: Agentic Commerce on the Open Internet — David Levine, Kiduna Club]]
+- [[1118-Qr15lGAGKpo-everyone-gets-a-software-company-benjamin-guo-zo-computer|#1118 — Everyone Gets A Software Company — Benjamin Guo, Zo Computer]]
 - [[1119-wCIYViPd4SU-tethered-our-agents-are-us-shu-fang-two-sigma|#1119 — Tethered: Our Agents Are Us — Shu Fang, Two Sigma]]
 - [[1120-REascnFlq_8-agents-next-frontier-agent-to-agent-and-network-effects-jean-denis-greze-town|#1120 — Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town]]
 - [[1121-0uC6u0lJJl4-your-company-brain-will-leak-secrets-how-we-stopped-it-for-big-banks-tanmai-gopal-promptql|#1121 — Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL]]
@@ -502,6 +506,7 @@
 - [[1127-9wZpvF3QleU-500-skills-zero-fine-tuning-linkedin-s-playbook-for-ai-agents-ajay-prakash-linkedin|#1127 — 500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents — Ajay Prakash, LinkedIn]]
 - [[1128-KcVkq5L-0f0-your-agents-lack-context-here-s-how-to-fix-you-re-absolutely-right-brandon-waselnuk-unbloc|#1128 — Your agents lack context: Here's how to fix "You're absolutely right!" — Brandon Waselnuk, Unblocked]]
 - [[1129-XzJD1bvXKjs-how-long-can-your-skills-be-before-your-agent-forgets-what-you-told-it-laurie-voss-arize-a|#1129 — How long can your skills be before your agent forgets what you told it? — Laurie Voss, Arize AI]]
+- [[1130-lbaXnx0KLA8-mcp-apps-give-the-model-data-give-the-user-a-ui-dustin-mihalik-indeed|#1130 — MCP Apps: Give the Model Data, Give the User a UI — Dustin Mihalik, Indeed]]
 - [[1131-YkNulwcc5jk-acp-the-universal-remote-control-for-ai-agents-alex-hancock-block|#1131 — ACP: The Universal Remote Control for AI Agents — Alex Hancock, Block]]
 - [[1132-XWcXwnysmpY-the-spatial-harness-bringing-agents-to-the-canvas-max-drake-tldraw|#1132 — The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw]]
 - [[1133-NW-jwOVr32w-the-design-code-roundtrip-that-isn-t-jonathan-gordon-reweaver-ai|#1133 — The Design-Code Roundtrip That Isn't — Jonathan Gordon, ReWeaver AI]]
@@ -530,6 +535,7 @@
 - [[1157-IN-rb-9WmiY-pinecone-2-0-edo-liberty-pinecone|#1157 — Pinecone 2.0 — Edo Liberty, Pinecone]]
 - [[1158-fZH97QHHYjY-the-unreasonable-effectiveness-of-bm25-for-agentic-search-jo-kristian-bergum-hornet-dev|#1158 — The unreasonable effectiveness of BM25 for agentic search — Jo Kristian Bergum, Hornet.dev]]
 - [[1159-59AA5kIoqjA-the-search-engine-for-the-agentic-web-will-bryk-exa|#1159 — The Search Engine for the Agentic Web — Will Bryk, Exa]]
+- [[1160-waI44NP1abk-rebuilding-the-web-for-agents-liad-yosef-mcp-apps|#1160 — Rebuilding the web for agents — Liad Yosef, MCP Apps]]
 - [[1161-O84lhGc1OOI-if-we-want-them-to-do-knowledge-work-design-them-as-knowledge-agents-benjamin-clavi-mixedb|#1161 — If we want them to do Knowledge Work, design them as Knowledge Agents — Benjamin Clavié, Mixedbread]]
 - [[1162-_gvamfT8H-w-your-agreements-are-a-database-you-can-t-query-hiral-shah-docusign-sean-sodha-nvidia|#1162 — Your Agreements Are a Database You Can't Query — Hiral Shah, Docusign & Sean Sodha, NVIDIA]]
 - [[1163-V-isu4eTHgw-connect-ai-to-billions-of-legal-documents-simon-eskildsen-turbopuffer-jacob-lauritzen-lego|#1163 — Connect AI to Billions of Legal Documents — Simon Eskildsen, turbopuffer & Jacob Lauritzen, Legora]]
@@ -540,6 +546,7 @@
 - [[1168-7c9FSUVcXR0-operating-distributed-inference-systems-at-scale-nishant-gupta-naman-ahuja-meta|#1168 — Operating Distributed Inference Systems at Scale — Nishant Gupta & Naman Ahuja, Meta]]
 - [[1170-l1-D89bAuOA-are-llm-performance-benchmarks-reliable-ashok-chandrasekar-jason-kramberger-google|#1170 — Are LLM Performance Benchmarks Reliable? — Ashok Chandrasekar & Jason Kramberger, Google]]
 - [[1171-cQQbJqvZkpo-vertical-mobility-inference-from-mvp-to-trillion-parameter-workloads-sitanshu-gupta-corewe|#1171 — Vertical Mobility: Inference from MVP to Trillion-Parameter Workloads — Sitanshu Gupta, CoreWeave]]
+- [[1172-75ckHC2LU_0-what-s-new-in-inference-engineering-philip-kiely-baseten|#1172 — What's New in Inference Engineering — Philip Kiely, Baseten]]
 - [[1173-g4SsanB0gMc-large-clusters-for-small-models-daniel-svonava-superlinked|#1173 — Large clusters for small models — Daniel Svonava, Superlinked]]
 - [[1174-Hvb2LfMH58c-the-frontier-ai-inference-cloud-for-agents-byung-gon-gon-chun-friendliai|#1174 — The Frontier AI Inference Cloud for Agents — Byung-Gon (Gon) Chun, FriendliAI]]
 - [[1175-btxG75rNJC4-two-bugs-that-hid-in-plain-sight-a-vllm-debugging-detective-story-asaf-gardin-yuval-belfer|#1175 — Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story — Asaf Gardin & Yuval Belfer]]
@@ -556,6 +563,7 @@
 - [[1186-jFHteJjRl8A-robotics-has-been-stuck-for-70-years-deepak-pathak-skild-ai|#1186 — Robotics Has Been Stuck for 70 Years — Deepak Pathak, Skild AI]]
 - [[1187-4Gqg0HVe-AY-world-models-need-causality-not-pretty-pixels-christopher-manning-moonlake-ai|#1187 — World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI]]
 - [[1188-I_VEh7XSwyc-physical-ai-s-next-bottleneck-is-finding-the-right-video-rafael-levi-bright-data|#1188 — Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data]]
+- [[1189-Sjfz1TqxzEs-robot-demos-are-easy-reliability-is-hard-jason-ma-dyna-robotics|#1189 — Robot Demos Are Easy. Reliability Is Hard — Jason Ma, Dyna Robotics]]
 - [[1190-2wgPHvW0mG8-one-operator-many-drones-inside-skydio-s-autonomy-stack-suchet-bargoti-skydio|#1190 — One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio]]
 - [[1191-jgWY66RaSrQ-i-gave-an-ai-a-body-cyrus-clarke-mit-media-lab|#1191 — I Gave an AI a Body — Cyrus Clarke, MIT Media Lab]]
 - [[1192-ACPEpji5NV4-distill-the-llm-don-t-serve-it-search-personalization-at-doordash-raghav-saboo-doordash|#1192 — Distill the LLM, Don't Serve It: Search & Personalization at DoorDash — Raghav Saboo, DoorDash]]
@@ -594,6 +602,7 @@
 - [[1226-rTojoVotlD8-your-llm-app-returned-200-ok-it-was-still-wrong-marina-petzel-datadog|#1226 — Your LLM App Returned 200 OK. It Was Still Wrong. — Marina Petzel, Datadog]]
 - [[1227-I2LL_wd89-A-how-vs-code-went-from-monthly-to-weekly-releases-with-ai-harald-kirschner|#1227 — How VS Code Went from Monthly to Weekly Releases with AI — Harald Kirschner]]
 - [[1228-oUZEt4EiPbk-i-built-a-personal-ai-agent-on-a-raspberry-pi-jeremy-adams-neo4j|#1228 — I Built a Personal AI Agent on a Raspberry Pi — Jeremy Adams, Neo4j]]
+- [[1229-8aVbXXvJUY4-an-interaction-is-all-you-need-ivan-leo-google-deepmind|#1229 — An Interaction Is All You Need — Ivan Leo, Google DeepMind]]
 - [[1230-bRGyYaE0lxI-gpu-died-training-didn-t-self-healing-training-at-scale-crusoe|#1230 — GPU Died. Training Didn't: Self-Healing Training at Scale — Crusoe]]
 - [[1231-TRe1u7dHYiA-what-makes-open-models-fast-in-production-sujee-maniyam-nebius|#1231 — What Makes Open Models Fast in Production — Sujee Maniyam, Nebius]]
 - [[1232-qflLT3SoVbw-stop-fine-tuning-to-fix-retrieval-problems-anant-srivastava|#1232 — Stop Fine-Tuning to Fix Retrieval Problems — Anant Srivastava]]
@@ -634,6 +643,7 @@
 - [[1267-toq-jyGLZDk-why-your-ai-agents-can-t-talk-to-each-other-yet-vlad-luzin-band|#1267 — Why Your AI Agents Can't Talk to Each Other (Yet) — Vlad Luzin, BAND]]
 - [[1268-exiwa9QbQXI-the-software-factory-from-bug-report-to-production-code-davis-palmie-factory|#1268 — The Software Factory: From Bug Report to Production Code — Davis Palmie, Factory]]
 - [[1269-f3o0-9Dlw3E-ai-hackers-are-faster-than-your-pen-test-eli-cohen-snyk|#1269 — AI Hackers Are Faster Than Your Pen Test — Eli Cohen, Snyk]]
+- [[1270-DrfyORO8RqA-why-bigger-context-windows-won-t-save-your-agent-elizabeth-fuentes-leone-aws|#1270 — Why Bigger Context Windows Won't Save Your Agent — Elizabeth Fuentes Leone, AWS]]
 - [[1271-KGFyOtl5ktI-giving-ai-agents-memory-that-learns-jake-broekhuizen-langchain|#1271 — Giving AI Agents Memory That Learns — Jake Broekhuizen, LangChain]]
 - [[1272-HTzgC3FoYsI-let-anyone-at-your-company-ship-internal-apps-with-ai-garrett-galow-workos|#1272 — Let Anyone at Your Company Ship Internal Apps with AI — Garrett Galow, WorkOS]]
 - [[1273-jJQoVkd5yLg-why-we-deleted-our-mcp-server-and-rebuilt-it-abhi-arya-reducto|#1273 — Why We Deleted Our MCP Server and Rebuilt It — Abhi Arya, Reducto]]
@@ -654,6 +664,7 @@
 - [[1289-abw_m-DRi1k-the-lethal-trifecta-is-already-on-your-laptops-michael-patterson-coder|#1289 — The Lethal Trifecta Is Already on Your Laptops — Michael Patterson, Coder]]
 - [[1290-b9UhZkKjX_A-from-your-laptop-to-the-pipeline-scaling-custom-agents-with-github-copilot|#1290 — From Your Laptop to the Pipeline: Scaling Custom Agents with GitHub Copilot]]
 - [[1291-Zf_e45GiNCE-zero-cold-starts-serverless-ai-agents-on-akamai-functions-thorsten-hans|#1291 — Zero Cold Starts: Serverless AI Agents on Akamai Functions — Thorsten Hans]]
+- [[1292-ORVh4GivEU0-beyond-rag-a-relational-context-engine-that-cuts-token-burn-unblocked|#1292 — Beyond RAG: A Relational Context Engine That Cuts Token Burn — Unblocked]]
 - [[1293-7v2myBde05o-ai-agents-don-t-read-your-policy-docs-they-hit-your-apis-gravitee|#1293 — AI Agents Don't Read Your Policy Docs. They Hit Your APIs — Gravitee]]
 - [[1294-htod7Nv1cBc-how-minimax-m3-was-built-sparse-attention-and-native-multimodality-olive-song|#1294 — How MiniMax M3 Was Built: Sparse Attention and Native Multimodality — Olive Song]]
 - [[1295-s-glGHAa1a4-an-ai-future-without-the-lock-in-remy-guercio-tailscale|#1295 — An AI Future Without the Lock-In — Remy Guercio, Tailscale]]
@@ -720,6 +731,7 @@
 - [[1360-0JZy5AuuQzc-i-spent-two-years-building-the-median-hariprasad-sudharshan|#1360 — I Spent Two Years Building the Median — Hariprasad Sudharshan]]
 - [[1361-Fva8hFosqyQ-the-highest-loop-swyx|#1361 — The Highest Loop — swyx]]
 - [[1362-kiClTcJUnhc-why-one-ai-agent-isn-t-enough-and-how-to-run-1-000-cj-avilla-harrison-stall-anthropic|#1362 — Why One AI Agent Isn’t Enough (And How to Run 1,000) - CJ Avilla & Harrison Stall, Anthropic]]
+- [[1363-BOWYujhIQuo-ai-agents-cut-3-day-portfolio-builds-to-minutes-jack-mcdonald-apollo-michael-manapat-rowsp|#1363 — AI Agents Cut 3-Day Portfolio Builds to Minutes — Jack McDonald, Apollo & Michael Manapat, Rowspace]]
 - [[1364-KtBivPzmOM8-memory-aware-agent-harnesses-for-anti-money-laundering-nacho-martinez-oracle|#1364 — Memory-Aware Agent Harnesses for Anti-Money Laundering — Nacho Martinez, Oracle]]
 - [[1365-Ti-BmGU1_mQ-the-ai-bill-is-too-damn-high-tokenomics-101-eugene-cheah-featherless-ai|#1365 — The AI Bill Is Too Damn High: Tokenomics 101 — Eugene Cheah, Featherless AI]]
 - [[1366-SHMCGrNJJGc-how-to-know-if-your-ai-agent-is-any-good-evals-with-phoenix-claude-laurie-voss-arize-ai|#1366 — How to Know If Your AI Agent Is Any Good: Evals With Phoenix & Claude — Laurie Voss, Arize AI]]
@@ -738,8 +750,10 @@
 - [[1380-UHbODjuviAU-the-investor-s-edge-lives-in-their-head-anekha-sokhal-moshi|#1380 — The Investor's Edge Lives in Their Head — Anekha Sokhal, Moshi]]
 - [[1381-Bz1HFxQA1o8-shipping-ai-into-5-major-banks-without-a-12-month-compliance-wait-al-chen-cisco|#1381 — Shipping AI Into 5 Major Banks Without a 12-Month Compliance Wait — Al Chen, Cisco]]
 - [[1382-adfw3xJBx1o-a-bank-built-its-own-coding-agent-it-took-off-felippe-felisola-caso-francesco-galletta-mon|#1382 — A Bank Built Its Own Coding Agent. It Took Off — Felippe Felisola Caso & Francesco Galletta, Monzo]]
+- [[1384-YvQ4BVTWfHI-is-a-faster-model-actually-faster-test-the-whole-job-morgan-suo-minimax|#1384 — Is a Faster Model Actually Faster? Test the Whole Job — Morgan Suo, MiniMax]]
 - [[1385-uA4ah-dVHvU-ai-cut-our-research-time-from-7-days-to-15-minutes-gareth-yoder-vanguard|#1385 — AI Cut Our Research Time From 7 Days to 15 Minutes — Gareth Yoder, Vanguard]]
 - [[1386-DouK81O8R3o-one-day-1-000-in-tokens-an-ai-war-room-for-legacy-code-ford-prior-geico|#1386 — One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO]]
+- [[1387-bU5gDVyu_28-does-code-quality-still-matter-it-depends-on-this-max-kanat-alexander-capital-one|#1387 — Does Code Quality Still Matter? It Depends on This — Max Kanat-Alexander, Capital One]]
 - [[1388-CFbnVpSsDFQ-the-ai-content-system-behind-200m-views-sarah-chieng-cerebras-cova-lee-openai|#1388 — The AI Content System Behind 200M Views — Sarah Chieng, Cerebras & Cova Lee, OpenAI]]
 - [[1390-c_SPW__jF9w-how-to-test-ai-agents-when-no-benchmark-exists-nathanael-weill-air-canada|#1390 — How to Test AI Agents When No Benchmark Exists — Nathanael Weill, Air Canada]]
 - [[1391-mMw3arwQsL0-1-368-ai-failures-and-what-they-teach-about-evals-vishal-srivastava-new-york-life-tanmay-s|#1391 — 1,368 AI Failures and What They Teach About Evals — Vishal Srivastava, New York Life & Tanmay Sah]]
@@ -763,7 +777,9 @@
 - [[1412-gv4w23xYj-0-how-to-write-your-first-ai-eval-sallyann-delucia-arize-ai|#1412 — How to Write Your First AI Eval - SallyAnn DeLucia, Arize AI]]
 - [[1413-OmyqelTwpOo-how-to-build-voice-agents-that-don-t-fall-apart-when-you-interrupt-jesse-hall-livekit|#1413 — How to Build Voice Agents That Don't Fall Apart When You Interrupt - Jesse Hall, LiveKit]]
 - [[1414-Y_p3y6zP5QE-build-your-own-team-of-managed-agents-jack-wotherspoon-google-deepmind|#1414 — Build Your Own Team of Managed Agents - Jack Wotherspoon, Google DeepMind]]
+- [[1415-4UtrRVtUN_g-how-to-build-an-ai-code-review-agent-daksh-gupta-greptile|#1415 — How to Build an AI Code Review Agent - Daksh Gupta, Greptile]]
 - [[1416-kRJjSOYqW0I-how-to-test-your-agents-on-real-tasks-with-harbor-xander-song-arize-ai|#1416 — How to Test Your Agents on Real Tasks With Harbor - Xander Song, Arize AI]]
+- [[1417-UGuNt2_Oz8s-agents-that-self-improve-while-you-sleep-fuad-ali-arize-ai|#1417 — Agents That Self Improve While You Sleep - Fuad Ali, Arize AI]]
 - [[1418-aGIUg8zKI8A-how-a-trading-firm-ships-new-ai-models-the-same-day-noyan-tokgozoglu-optiver|#1418 — How a Trading Firm Ships New AI Models the Same Day - Noyan Tokgozoglu, Optiver]]
 - [[1419-BgLdvF7Qkh8-300-agents-60-people-how-we-secured-our-own-ai-agents-aiden-sochowski-runlayer|#1419 — 300 Agents, 60 People: How We Secured Our Own AI Agents - Aiden Sochowski, Runlayer]]
 - [[1420-h8jgniNJcbQ-why-are-we-still-governing-ai-agents-like-software-tim-tyler-gravitee|#1420 — Why Are We Still Governing AI Agents Like Software? - Tim Tyler, Gravitee]]
@@ -774,6 +790,7 @@
 - [[1425-58ulJViGFgU-who-is-making-this-request-agent-auth-101-kamil-potrec-keycard|#1425 — Who Is Making This Request? Agent Auth 101 - Kamil Potrec, Keycard]]
 - [[1426-P_0_Th_ZzIg-stop-guessing-your-vllm-config-benchmarking-llms-on-runpod-chris-vela-runpod|#1426 — Stop Guessing Your vLLM Config: Benchmarking LLMs on Runpod - Chris Vela, Runpod]]
 - [[1427-UW8Qkk7MG8A-ai-that-hunts-logic-bugs-before-attackers-do-taylor-luttrell-williams-sonar|#1427 — AI That Hunts Logic Bugs Before Attackers Do - Taylor Luttrell-Williams, Sonar]]
+- [[1428-AnsXWH2_EBU-how-anthropic-merges-30-000-code-changes-a-day-manish-kapur-sonar-addy-osmani-anthropic|#1428 — How Anthropic Merges 30,000 Code Changes a Day - Manish Kapur, Sonar & Addy Osmani, Anthropic]]
 - [[1429-YqxpPI7YUjE-why-a-one-line-change-can-break-your-whole-stack-cole-gannaway-qodo|#1429 — Why a One-Line Change Can Break Your Whole Stack - Cole Gannaway, Qodo]]
 - [[1430-mJ7q8CuVmbw-we-trust-ai-agents-that-break-every-day-shy-ruparel-temporal|#1430 — We Trust AI Agents That Break Every Day - Shy Ruparel, Temporal]]
 - [[1431-Ok6QdZHCcI8-how-revolut-cut-ai-coding-costs-90-with-self-hosted-open-models-david-abitbol-revolut|#1431 — How Revolut Cut AI Coding Costs 90% With Self-Hosted Open Models - David Abitbol, Revolut]]
