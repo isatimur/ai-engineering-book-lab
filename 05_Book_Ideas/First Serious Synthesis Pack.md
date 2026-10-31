@@ -1,17 +1,17 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **1400 videos**
+Corpus size analyzed: **1417 videos**
 
 ## Top 10 recurring ideas
 
-1. **Evals are the operating system for trustworthy AI** — signal in ~972 notes
-2. **Coding agents need harnesses, specs, and human steering** — signal in ~949 notes
-3. **AI engineering is becoming systems engineering, not prompt tinkering** — signal in ~886 notes
-4. **Reliability comes from constrained tools and durable workflows** — signal in ~854 notes
-5. **Model progress matters, but the bottleneck is increasingly product and operational design** — signal in ~567 notes
-6. **The AI-native company reorganizes around leverage, not headcount** — signal in ~334 notes
-7. **Open standards and MCP-like interfaces are shaping the agent runtime layer** — signal in ~319 notes
-8. **Context, memory, and retrieval beat naive long prompts** — signal in ~285 notes
+1. **Evals are the operating system for trustworthy AI** — signal in ~987 notes
+2. **Coding agents need harnesses, specs, and human steering** — signal in ~966 notes
+3. **AI engineering is becoming systems engineering, not prompt tinkering** — signal in ~903 notes
+4. **Reliability comes from constrained tools and durable workflows** — signal in ~869 notes
+5. **Model progress matters, but the bottleneck is increasingly product and operational design** — signal in ~573 notes
+6. **The AI-native company reorganizes around leverage, not headcount** — signal in ~338 notes
+7. **Open standards and MCP-like interfaces are shaping the agent runtime layer** — signal in ~323 notes
+8. **Context, memory, and retrieval beat naive long prompts** — signal in ~287 notes
 9. **Voice and realtime AI are constrained by latency, turn-taking, and UX** — signal in ~132 notes
 10. **Security and identity are first-class concerns for autonomous systems** — signal in ~69 notes
 

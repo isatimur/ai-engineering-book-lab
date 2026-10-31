@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1400
+Total videos: 1417
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1080,6 +1080,9 @@ Total videos: 1400
 1092. [AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash](https://www.youtube.com/watch?v=bMjlRrWjdT0) — `bMjlRrWjdT0` — 16:11
 1093. [Productionizing LLM Gateways: Architecture, Tradeoffs and Hard Lessons — Kanish Manuja, Twilio](https://www.youtube.com/watch?v=zrZ1amZBSPw) — `zrZ1amZBSPw` — 16:24
 1094. [How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe](https://www.youtube.com/watch?v=mJqwmmOx4WA) — `mJqwmmOx4WA` — 17:49
+1095. [From AI-Assisted to AI-Native: Building a Frontier Development Team — Clare Liguori, AWS](https://www.youtube.com/watch?v=pqlWNihgdjI) — `pqlWNihgdjI` — 20:57
+1096. [How to Get Your Org to Adopt Coding Agents (Without Shipping Garbage) — Eyal Blum, Figma](https://www.youtube.com/watch?v=5Bn0xro2ol8) — `5Bn0xro2ol8` — 17:43
+1097. [How do you diffuse AI into the real world? — Varun Shenoy, Long Lake](https://www.youtube.com/watch?v=B0fjR3yaZFU) — `B0fjR3yaZFU` — 17:46
 1098. [Your Code Has Bugs. Lean4 Has Proofs: Formal Verification for Engineers — Varun Pant, AWS](https://www.youtube.com/watch?v=lRa9sPaMyy4) — `lRa9sPaMyy4` — 10:07
 1099. [AI-Native Organisations Run on Skills: How to Structure and Scale Them — Imad Touil, QuantumBlack](https://www.youtube.com/watch?v=M05vON8i0aI) — `M05vON8i0aI` — 20:31
 1100. [Which AI startups actually land enterprise contracts? — Brian Lewis, Millennium](https://www.youtube.com/watch?v=7A65O-0lvKE) — `7A65O-0lvKE` — 18:45
@@ -1100,6 +1103,7 @@ Total videos: 1400
 1115. [Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node](https://www.youtube.com/watch?v=ZyGMqdIpPoE) — `ZyGMqdIpPoE` — 20:48
 1116. [The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools](https://www.youtube.com/watch?v=QrMcNe2jjt8) — `QrMcNe2jjt8` — 23:19
 1117. [Beyond the Lethal Trifecta: Agentic Commerce on the Open Internet — David Levine, Kiduna Club](https://www.youtube.com/watch?v=tE2z8-hqoLY) — `tE2z8-hqoLY` — 21:40
+1118. [Everyone Gets A Software Company — Benjamin Guo, Zo Computer](https://www.youtube.com/watch?v=Qr15lGAGKpo) — `Qr15lGAGKpo` — 15:09
 1119. [Tethered: Our Agents Are Us — Shu Fang, Two Sigma](https://www.youtube.com/watch?v=wCIYViPd4SU) — `wCIYViPd4SU` — 21:10
 1120. [Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town](https://www.youtube.com/watch?v=REascnFlq_8) — `REascnFlq_8` — 21:17
 1121. [Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL](https://www.youtube.com/watch?v=0uC6u0lJJl4) — `0uC6u0lJJl4` — 26:25
@@ -1111,6 +1115,7 @@ Total videos: 1400
 1127. [500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents — Ajay Prakash, LinkedIn](https://www.youtube.com/watch?v=9wZpvF3QleU) — `9wZpvF3QleU` — 20:25
 1128. [Your agents lack context: Here's how to fix "You're absolutely right!" — Brandon Waselnuk, Unblocked](https://www.youtube.com/watch?v=KcVkq5L-0f0) — `KcVkq5L-0f0` — 14:09
 1129. [How long can your skills be before your agent forgets what you told it? — Laurie Voss, Arize AI](https://www.youtube.com/watch?v=XzJD1bvXKjs) — `XzJD1bvXKjs` — 22:26
+1130. [MCP Apps: Give the Model Data, Give the User a UI — Dustin Mihalik, Indeed](https://www.youtube.com/watch?v=lbaXnx0KLA8) — `lbaXnx0KLA8` — 15:34
 1131. [ACP: The Universal Remote Control for AI Agents — Alex Hancock, Block](https://www.youtube.com/watch?v=YkNulwcc5jk) — `YkNulwcc5jk` — 11:01
 1132. [The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw](https://www.youtube.com/watch?v=XWcXwnysmpY) — `XWcXwnysmpY` — 18:52
 1133. [The Design-Code Roundtrip That Isn't — Jonathan Gordon, ReWeaver AI](https://www.youtube.com/watch?v=NW-jwOVr32w) — `NW-jwOVr32w` — 18:37
@@ -1140,6 +1145,7 @@ Total videos: 1400
 1157. [Pinecone 2.0 — Edo Liberty, Pinecone](https://www.youtube.com/watch?v=IN-rb-9WmiY) — `IN-rb-9WmiY` — 19:50
 1158. [The unreasonable effectiveness of BM25 for agentic search — Jo Kristian Bergum, Hornet.dev](https://www.youtube.com/watch?v=fZH97QHHYjY) — `fZH97QHHYjY` — 18:29
 1159. [The Search Engine for the Agentic Web — Will Bryk, Exa](https://www.youtube.com/watch?v=59AA5kIoqjA) — `59AA5kIoqjA` — 17:49
+1160. [Rebuilding the web for agents — Liad Yosef, MCP Apps](https://www.youtube.com/watch?v=waI44NP1abk) — `waI44NP1abk` — 20:41
 1161. [If we want them to do Knowledge Work, design them as Knowledge Agents — Benjamin Clavié, Mixedbread](https://www.youtube.com/watch?v=O84lhGc1OOI) — `O84lhGc1OOI` — 17:55
 1162. [Your Agreements Are a Database You Can't Query — Hiral Shah, Docusign & Sean Sodha, NVIDIA](https://www.youtube.com/watch?v=_gvamfT8H-w) — `_gvamfT8H-w` — 18:22
 1163. [Connect AI to Billions of Legal Documents — Simon Eskildsen, turbopuffer & Jacob Lauritzen, Legora](https://www.youtube.com/watch?v=V-isu4eTHgw) — `V-isu4eTHgw` — 20:36
@@ -1151,6 +1157,7 @@ Total videos: 1400
 1169. [Routing LLM Inference in Production: From Engine Signals to Policy — Qianru Lao & Lu Zhang, OpenAI](https://www.youtube.com/watch?v=sOB3HSiG8vo) — `sOB3HSiG8vo` — 18:12
 1170. [Are LLM Performance Benchmarks Reliable? — Ashok Chandrasekar & Jason Kramberger, Google](https://www.youtube.com/watch?v=l1-D89bAuOA) — `l1-D89bAuOA` — 16:07
 1171. [Vertical Mobility: Inference from MVP to Trillion-Parameter Workloads — Sitanshu Gupta, CoreWeave](https://www.youtube.com/watch?v=cQQbJqvZkpo) — `cQQbJqvZkpo` — 15:22
+1172. [What's New in Inference Engineering — Philip Kiely, Baseten](https://www.youtube.com/watch?v=75ckHC2LU_0) — `75ckHC2LU_0` — 19:09
 1173. [Large clusters for small models — Daniel Svonava, Superlinked](https://www.youtube.com/watch?v=g4SsanB0gMc) — `g4SsanB0gMc` — 25:07
 1174. [The Frontier AI Inference Cloud for Agents — Byung-Gon (Gon) Chun, FriendliAI](https://www.youtube.com/watch?v=Hvb2LfMH58c) — `Hvb2LfMH58c` — 14:59
 1175. [Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story — Asaf Gardin & Yuval Belfer](https://www.youtube.com/watch?v=btxG75rNJC4) — `btxG75rNJC4` — 18:06
@@ -1167,6 +1174,7 @@ Total videos: 1400
 1186. [Robotics Has Been Stuck for 70 Years — Deepak Pathak, Skild AI](https://www.youtube.com/watch?v=jFHteJjRl8A) — `jFHteJjRl8A` — 28:18
 1187. [World Models Need Causality, Not Pretty Pixels — Christopher Manning, Moonlake AI](https://www.youtube.com/watch?v=4Gqg0HVe-AY) — `4Gqg0HVe-AY` — 51:36
 1188. [Physical AI's Next Bottleneck Is Finding the Right Video — Rafael Levi, Bright Data](https://www.youtube.com/watch?v=I_VEh7XSwyc) — `I_VEh7XSwyc` — 16:32
+1189. [Robot Demos Are Easy. Reliability Is Hard — Jason Ma, Dyna Robotics](https://www.youtube.com/watch?v=Sjfz1TqxzEs) — `Sjfz1TqxzEs` — 26:42
 1190. [One Operator, Many Drones: Inside Skydio's Autonomy Stack — Suchet Bargoti, Skydio](https://www.youtube.com/watch?v=2wgPHvW0mG8) — `2wgPHvW0mG8` — 20:48
 1191. [I Gave an AI a Body — Cyrus Clarke, MIT Media Lab](https://www.youtube.com/watch?v=jgWY66RaSrQ) — `jgWY66RaSrQ` — 20:48
 1192. [Distill the LLM, Don't Serve It: Search & Personalization at DoorDash — Raghav Saboo, DoorDash](https://www.youtube.com/watch?v=ACPEpji5NV4) — `ACPEpji5NV4` — 22:11
@@ -1206,6 +1214,7 @@ Total videos: 1400
 1226. [Your LLM App Returned 200 OK. It Was Still Wrong. — Marina Petzel, Datadog](https://www.youtube.com/watch?v=rTojoVotlD8) — `rTojoVotlD8` — 18:01
 1227. [How VS Code Went from Monthly to Weekly Releases with AI — Harald Kirschner](https://www.youtube.com/watch?v=I2LL_wd89-A) — `I2LL_wd89-A` — 19:35
 1228. [I Built a Personal AI Agent on a Raspberry Pi — Jeremy Adams, Neo4j](https://www.youtube.com/watch?v=oUZEt4EiPbk) — `oUZEt4EiPbk` — 20:10
+1229. [An Interaction Is All You Need — Ivan Leo, Google DeepMind](https://www.youtube.com/watch?v=8aVbXXvJUY4) — `8aVbXXvJUY4` — 17:04
 1230. [GPU Died. Training Didn't: Self-Healing Training at Scale — Crusoe](https://www.youtube.com/watch?v=bRGyYaE0lxI) — `bRGyYaE0lxI` — 16:54
 1231. [What Makes Open Models Fast in Production — Sujee Maniyam, Nebius](https://www.youtube.com/watch?v=TRe1u7dHYiA) — `TRe1u7dHYiA` — 20:32
 1232. [Stop Fine-Tuning to Fix Retrieval Problems — Anant Srivastava](https://www.youtube.com/watch?v=qflLT3SoVbw) — `qflLT3SoVbw` — 20:12
@@ -1246,6 +1255,7 @@ Total videos: 1400
 1267. [Why Your AI Agents Can't Talk to Each Other (Yet) — Vlad Luzin, BAND](https://www.youtube.com/watch?v=toq-jyGLZDk) — `toq-jyGLZDk` — 17:13
 1268. [The Software Factory: From Bug Report to Production Code — Davis Palmie, Factory](https://www.youtube.com/watch?v=exiwa9QbQXI) — `exiwa9QbQXI` — 18:32
 1269. [AI Hackers Are Faster Than Your Pen Test — Eli Cohen, Snyk](https://www.youtube.com/watch?v=f3o0-9Dlw3E) — `f3o0-9Dlw3E` — 19:29
+1270. [Why Bigger Context Windows Won't Save Your Agent — Elizabeth Fuentes Leone, AWS](https://www.youtube.com/watch?v=DrfyORO8RqA) — `DrfyORO8RqA` — 15:54
 1271. [Giving AI Agents Memory That Learns — Jake Broekhuizen, LangChain](https://www.youtube.com/watch?v=KGFyOtl5ktI) — `KGFyOtl5ktI` — 16:39
 1272. [Let Anyone at Your Company Ship Internal Apps with AI — Garrett Galow, WorkOS](https://www.youtube.com/watch?v=HTzgC3FoYsI) — `HTzgC3FoYsI` — 17:13
 1273. [Why We Deleted Our MCP Server and Rebuilt It — Abhi Arya, Reducto](https://www.youtube.com/watch?v=jJQoVkd5yLg) — `jJQoVkd5yLg` — 16:40
@@ -1267,6 +1277,7 @@ Total videos: 1400
 1289. [The Lethal Trifecta Is Already on Your Laptops — Michael Patterson, Coder](https://www.youtube.com/watch?v=abw_m-DRi1k) — `abw_m-DRi1k` — 20:44
 1290. [From Your Laptop to the Pipeline: Scaling Custom Agents with GitHub Copilot](https://www.youtube.com/watch?v=b9UhZkKjX_A) — `b9UhZkKjX_A` — 19:39
 1291. [Zero Cold Starts: Serverless AI Agents on Akamai Functions — Thorsten Hans](https://www.youtube.com/watch?v=Zf_e45GiNCE) — `Zf_e45GiNCE` — 22:37
+1292. [Beyond RAG: A Relational Context Engine That Cuts Token Burn — Unblocked](https://www.youtube.com/watch?v=ORVh4GivEU0) — `ORVh4GivEU0` — 19:44
 1293. [AI Agents Don't Read Your Policy Docs. They Hit Your APIs — Gravitee](https://www.youtube.com/watch?v=7v2myBde05o) — `7v2myBde05o` — 17:50
 1294. [How MiniMax M3 Was Built: Sparse Attention and Native Multimodality — Olive Song](https://www.youtube.com/watch?v=htod7Nv1cBc) — `htod7Nv1cBc` — 15:03
 1295. [An AI Future Without the Lock-In — Remy Guercio, Tailscale](https://www.youtube.com/watch?v=s-glGHAa1a4) — `s-glGHAa1a4` — 19:38
@@ -1337,6 +1348,7 @@ Total videos: 1400
 1360. [I Spent Two Years Building the Median — Hariprasad Sudharshan](https://www.youtube.com/watch?v=0JZy5AuuQzc) — `0JZy5AuuQzc` — 36:11
 1361. [The Highest Loop — swyx](https://www.youtube.com/watch?v=Fva8hFosqyQ) — `Fva8hFosqyQ` — 7:20
 1362. [Why One AI Agent Isn’t Enough (And How to Run 1,000) - CJ Avilla & Harrison Stall, Anthropic](https://www.youtube.com/watch?v=kiClTcJUnhc) — `kiClTcJUnhc` — 1:41:44
+1363. [AI Agents Cut 3-Day Portfolio Builds to Minutes — Jack McDonald, Apollo & Michael Manapat, Rowspace](https://www.youtube.com/watch?v=BOWYujhIQuo) — `BOWYujhIQuo` — 18:57
 1364. [Memory-Aware Agent Harnesses for Anti-Money Laundering — Nacho Martinez, Oracle](https://www.youtube.com/watch?v=KtBivPzmOM8) — `KtBivPzmOM8` — 51:49
 1365. [The AI Bill Is Too Damn High: Tokenomics 101 — Eugene Cheah, Featherless AI](https://www.youtube.com/watch?v=Ti-BmGU1_mQ) — `Ti-BmGU1_mQ` — 55:25
 1366. [How to Know If Your AI Agent Is Any Good: Evals With Phoenix & Claude — Laurie Voss, Arize AI](https://www.youtube.com/watch?v=SHMCGrNJJGc) — `SHMCGrNJJGc` — 1:56:13
@@ -1357,8 +1369,10 @@ Total videos: 1400
 1381. [Shipping AI Into 5 Major Banks Without a 12-Month Compliance Wait — Al Chen, Cisco](https://www.youtube.com/watch?v=Bz1HFxQA1o8) — `Bz1HFxQA1o8` — 17:42
 1382. [A Bank Built Its Own Coding Agent. It Took Off — Felippe Felisola Caso & Francesco Galletta, Monzo](https://www.youtube.com/watch?v=adfw3xJBx1o) — `adfw3xJBx1o` — 15:30
 1383. [Same GPU, 50% More Output: Why the Operator Matters — Oliver Kennon, SemiAnalysis](https://www.youtube.com/watch?v=3axY1wz2OvA) — `3axY1wz2OvA` — 17:42
+1384. [Is a Faster Model Actually Faster? Test the Whole Job — Morgan Suo, MiniMax](https://www.youtube.com/watch?v=YvQ4BVTWfHI) — `YvQ4BVTWfHI` — 17:43
 1385. [AI Cut Our Research Time From 7 Days to 15 Minutes — Gareth Yoder, Vanguard](https://www.youtube.com/watch?v=uA4ah-dVHvU) — `uA4ah-dVHvU` — 15:39
 1386. [One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO](https://www.youtube.com/watch?v=DouK81O8R3o) — `DouK81O8R3o` — 18:43
+1387. [Does Code Quality Still Matter? It Depends on This — Max Kanat-Alexander, Capital One](https://www.youtube.com/watch?v=bU5gDVyu_28) — `bU5gDVyu_28` — 16:23
 1388. [The AI Content System Behind 200M Views — Sarah Chieng, Cerebras & Cova Lee, OpenAI](https://www.youtube.com/watch?v=CFbnVpSsDFQ) — `CFbnVpSsDFQ` — 53:18
 1389. [Why AI Writing Still Reads Like Slop — Louis-François Bouchard, Towards AI](https://www.youtube.com/watch?v=_dTF3NpPzGo) — `_dTF3NpPzGo` — 19:02
 1390. [How to Test AI Agents When No Benchmark Exists — Nathanael Weill, Air Canada](https://www.youtube.com/watch?v=c_SPW__jF9w) — `c_SPW__jF9w` — 19:50
@@ -1386,7 +1400,9 @@ Total videos: 1400
 1412. [How to Write Your First AI Eval - SallyAnn DeLucia, Arize AI](https://www.youtube.com/watch?v=gv4w23xYj-0) — `gv4w23xYj-0` — 35:20
 1413. [How to Build Voice Agents That Don't Fall Apart When You Interrupt - Jesse Hall, LiveKit](https://www.youtube.com/watch?v=OmyqelTwpOo) — `OmyqelTwpOo` — 20:55
 1414. [Build Your Own Team of Managed Agents - Jack Wotherspoon, Google DeepMind](https://www.youtube.com/watch?v=Y_p3y6zP5QE) — `Y_p3y6zP5QE` — 19:44
+1415. [How to Build an AI Code Review Agent - Daksh Gupta, Greptile](https://www.youtube.com/watch?v=4UtrRVtUN_g) — `4UtrRVtUN_g` — 18:27
 1416. [How to Test Your Agents on Real Tasks With Harbor - Xander Song, Arize AI](https://www.youtube.com/watch?v=kRJjSOYqW0I) — `kRJjSOYqW0I` — 56:01
+1417. [Agents That Self Improve While You Sleep - Fuad Ali, Arize AI](https://www.youtube.com/watch?v=UGuNt2_Oz8s) — `UGuNt2_Oz8s` — 53:05
 1418. [How a Trading Firm Ships New AI Models the Same Day - Noyan Tokgozoglu, Optiver](https://www.youtube.com/watch?v=aGIUg8zKI8A) — `aGIUg8zKI8A` — 23:23
 1419. [300 Agents, 60 People: How We Secured Our Own AI Agents - Aiden Sochowski, Runlayer](https://www.youtube.com/watch?v=BgLdvF7Qkh8) — `BgLdvF7Qkh8` — 16:38
 1420. [Why Are We Still Governing AI Agents Like Software? - Tim Tyler, Gravitee](https://www.youtube.com/watch?v=h8jgniNJcbQ) — `h8jgniNJcbQ` — 18:13
@@ -1397,6 +1413,7 @@ Total videos: 1400
 1425. [Who Is Making This Request? Agent Auth 101 - Kamil Potrec, Keycard](https://www.youtube.com/watch?v=58ulJViGFgU) — `58ulJViGFgU` — 18:35
 1426. [Stop Guessing Your vLLM Config: Benchmarking LLMs on Runpod - Chris Vela, Runpod](https://www.youtube.com/watch?v=P_0_Th_ZzIg) — `P_0_Th_ZzIg` — 16:29
 1427. [AI That Hunts Logic Bugs Before Attackers Do - Taylor Luttrell-Williams, Sonar](https://www.youtube.com/watch?v=UW8Qkk7MG8A) — `UW8Qkk7MG8A` — 14:10
+1428. [How Anthropic Merges 30,000 Code Changes a Day - Manish Kapur, Sonar & Addy Osmani, Anthropic](https://www.youtube.com/watch?v=AnsXWH2_EBU) — `AnsXWH2_EBU` — 18:53
 1429. [Why a One-Line Change Can Break Your Whole Stack - Cole Gannaway, Qodo](https://www.youtube.com/watch?v=YqxpPI7YUjE) — `YqxpPI7YUjE` — 14:51
 1430. [We Trust AI Agents That Break Every Day - Shy Ruparel, Temporal](https://www.youtube.com/watch?v=mJ7q8CuVmbw) — `mJ7q8CuVmbw` — 21:32
 1431. [How Revolut Cut AI Coding Costs 90% With Self-Hosted Open Models - David Abitbol, Revolut](https://www.youtube.com/watch?v=Ok6QdZHCcI8) — `Ok6QdZHCcI8` — 11:47

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 172
+- Total tagged videos: 174
 
 ## Cross-video synthesis
 
-- This theme appears across 172 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (112), Agent Architecture (100), Evals & Reliability (16).
+- This theme appears across 174 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (114), Agent Architecture (102), Evals & Reliability (16).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -154,6 +154,7 @@
 - [[1114-h6mi88VrPtQ-x402-isn-t-good-yet-jan-curn-apify|#1114 — x402 isn’t good (yet) — Jan Curn, Apify]]
 - [[1115-ZyGMqdIpPoE-agent-spending-without-controls-rodrigo-coelho-pranav-maheshwari-edge-node|#1115 — Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node]]
 - [[1116-QrMcNe2jjt8-the-end-of-the-static-screen-architecting-intent-driven-ux-gus-iwanaga-commercetools|#1116 — The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools]]
+- [[1118-Qr15lGAGKpo-everyone-gets-a-software-company-benjamin-guo-zo-computer|#1118 — Everyone Gets A Software Company — Benjamin Guo, Zo Computer]]
 - [[1120-REascnFlq_8-agents-next-frontier-agent-to-agent-and-network-effects-jean-denis-greze-town|#1120 — Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town]]
 - [[1132-XWcXwnysmpY-the-spatial-harness-bringing-agents-to-the-canvas-max-drake-tldraw|#1132 — The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw]]
 - [[1137-Krzs8GeiWTc-generative-ui-in-python-jeremiah-lowin-prefect|#1137 — Generative UI... in Python? — Jeremiah Lowin, Prefect]]
@@ -172,6 +173,7 @@
 - [[1243-fz6-NS7qpZc-how-i-learned-to-stop-worrying-and-love-the-sandbox-matt-brockman-e2b|#1243 — How I Learned to Stop Worrying and Love the Sandbox — Matt Brockman, E2B]]
 - [[1252-ZUZVNKFSmTM-how-many-credentials-should-your-ai-agent-have-zero-jim-clark-docker|#1252 — How Many Credentials Should Your AI Agent Have? Zero. — Jim Clark, Docker]]
 - [[1254-c5U-XbbEN-g-how-ai-agents-pay-checkout-in-chatgpt-and-google-ai-mode-sam-parsons-paypal|#1254 — How AI Agents Pay: Checkout in ChatGPT and Google AI Mode — Sam Parsons, PayPal]]
+- [[1270-DrfyORO8RqA-why-bigger-context-windows-won-t-save-your-agent-elizabeth-fuentes-leone-aws|#1270 — Why Bigger Context Windows Won't Save Your Agent — Elizabeth Fuentes Leone, AWS]]
 - [[1272-HTzgC3FoYsI-let-anyone-at-your-company-ship-internal-apps-with-ai-garrett-galow-workos|#1272 — Let Anyone at Your Company Ship Internal Apps with AI — Garrett Galow, WorkOS]]
 - [[1283-3wj6sgbi1YA-designing-clis-for-agents-not-humans-pedro-lopez-airbyte|#1283 — Designing CLIs for Agents, Not Humans — Pedro Lopez, Airbyte]]
 - [[1295-s-glGHAa1a4-an-ai-future-without-the-lock-in-remy-guercio-tailscale|#1295 — An AI Future Without the Lock-In — Remy Guercio, Tailscale]]
