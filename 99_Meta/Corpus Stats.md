@@ -1,32 +1,32 @@
 # Corpus Stats
 
-- Total notes: 1074
-- Transcript status mix: {'auto_en': 2, 'auto_en_orig': 1071, 'whisper_base_en': 1}
+- Total notes: 1417
+- Transcript status mix: {'auto_en': 4, 'auto_en_orig': 1412, 'whisper_base_en': 1}
 
 ## Theme counts
 
-- Agent Architecture: 456
-- Coding Agents: 551
-- Evals & Reliability: 486
+- Agent Architecture: 784
+- Coding Agents: 893
+- Evals & Reliability: 791
 - General AI Engineering: 5
-- MCP & Tooling: 136
-- Models & Inference: 132
+- MCP & Tooling: 174
+- Models & Inference: 134
 - Org Design & Leadership: 243
-- RAG & Retrieval: 166
+- RAG & Retrieval: 171
 - Security & Guardrails: 26
-- Voice & Realtime: 45
+- Voice & Realtime: 54
 
 ## Frequent speakers
 
+- Laurie Voss: 7
 - Stephen Chin: 5
+- Philipp Schmid: 5
+- Kevin Hou: 4
+- Harald Kirschner: 4
 - Zach Blumenfeld: 4
 - Patrick Debois: 4
+- swyx: 4
 - Phil Hetzel: 4
-- Kevin Hou: 3
-- Samuel Colvin: 3
-- Harald Kirschner: 3
-- Philipp Schmid: 3
-- Will Brown: 3
-- swyx: 3
-- NVIDIA: 3
-- Matt Pocock: 2
+- Matt Pocock: 3
+- Louis-François Bouchard: 3
+- Robert Brennan: 3

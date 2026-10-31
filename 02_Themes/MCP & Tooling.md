@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 136
+- Total tagged videos: 174
 
 ## Cross-video synthesis
 
-- This theme appears across 136 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (76), Agent Architecture (68), Evals & Reliability (13).
+- This theme appears across 174 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (114), Agent Architecture (102), Evals & Reliability (16).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -148,6 +148,44 @@
 - [[1049-7GMKdpLsxwU-the-missing-layer-design-taste-in-ai-agents-hassan-el-mghari-together-ai|#1049 — The Missing Layer: Design Taste in AI Agents — Hassan El Mghari, Together AI]]
 - [[1061-wdTRsfw0KG0-reverse-engineering-the-ai-buyer-aliisa-rosenthal-acrew-capital|#1061 — Reverse-Engineering the AI Buyer — Aliisa Rosenthal, Acrew Capital]]
 - [[1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked|#1074 — How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked]]
+- [[1094-mJqwmmOx4WA-how-to-avoid-disaster-when-vibe-coding-a-billing-engine-andrew-garvin-stripe|#1094 — How to avoid disaster when vibe-coding a billing engine — Andrew Garvin, Stripe]]
+- [[1109-A-zeQiYkmXk-teaching-agents-to-pay-anna-spysz-stripe|#1109 — Teaching agents to pay — Anna Spysz, Stripe]]
+- [[1111-xKzU_3riL6s-why-your-ai-agent-needs-a-wallet-usdc-and-nanopayments-harshal-bhangale-circle|#1111 — Why Your AI Agent Needs a Wallet: USDC and Nanopayments — Harshal Bhangale, Circle]]
+- [[1114-h6mi88VrPtQ-x402-isn-t-good-yet-jan-curn-apify|#1114 — x402 isn’t good (yet) — Jan Curn, Apify]]
+- [[1115-ZyGMqdIpPoE-agent-spending-without-controls-rodrigo-coelho-pranav-maheshwari-edge-node|#1115 — Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node]]
+- [[1116-QrMcNe2jjt8-the-end-of-the-static-screen-architecting-intent-driven-ux-gus-iwanaga-commercetools|#1116 — The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools]]
+- [[1118-Qr15lGAGKpo-everyone-gets-a-software-company-benjamin-guo-zo-computer|#1118 — Everyone Gets A Software Company — Benjamin Guo, Zo Computer]]
+- [[1120-REascnFlq_8-agents-next-frontier-agent-to-agent-and-network-effects-jean-denis-greze-town|#1120 — Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town]]
+- [[1132-XWcXwnysmpY-the-spatial-harness-bringing-agents-to-the-canvas-max-drake-tldraw|#1132 — The Spatial Harness: Bringing Agents to the Canvas — Max Drake, tldraw]]
+- [[1137-Krzs8GeiWTc-generative-ui-in-python-jeremiah-lowin-prefect|#1137 — Generative UI... in Python? — Jeremiah Lowin, Prefect]]
+- [[1138-O1FN4awNEtM-one-designer-ai-hundreds-of-deliverables-vincent-wendy-ai-engineer|#1138 — One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer]]
+- [[1143-cI7zfqusmFU-every-step-you-take-every-call-you-make-the-reliable-agent-stack-giselle-van-dongen-restat|#1143 — Every step you take, every call you make: the reliable agent stack — Giselle van Dongen, Restate]]
+- [[1154-MBHOH1NmDqc-realtime-voice-agents-with-frontier-intelligence-bohan-li-eliseai|#1154 — Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI]]
+- [[1157-IN-rb-9WmiY-pinecone-2-0-edo-liberty-pinecone|#1157 — Pinecone 2.0 — Edo Liberty, Pinecone]]
+- [[1169-sOB3HSiG8vo-routing-llm-inference-in-production-from-engine-signals-to-policy-qianru-lao-lu-zhang-open|#1169 — Routing LLM Inference in Production: From Engine Signals to Policy — Qianru Lao & Lu Zhang, OpenAI]]
+- [[1191-jgWY66RaSrQ-i-gave-an-ai-a-body-cyrus-clarke-mit-media-lab|#1191 — I Gave an AI a Body — Cyrus Clarke, MIT Media Lab]]
+- [[1204-YIVkERhy8xo-we-re-the-bottleneck-but-we-don-t-have-to-be-ido-salomon-agentcraft|#1204 — We're the bottleneck, but we don't have to be — Ido Salomon, AgentCraft]]
+- [[1208-TRfzFJCJ7ZE-orchestras-not-factories-how-the-fastest-builders-work-charlie-holtz-conductor|#1208 — Orchestras, Not Factories: How the Fastest Builders Work — Charlie Holtz, Conductor]]
+- [[1213-UOcHfR3_tys-your-agents-are-in-solitary-confinement-why-mcp-a2a-aren-t-enough-vlad-luzin-band|#1213 — Your Agents Are in Solitary Confinement: Why MCP & A2A Aren't Enough — Vlad Luzin, Band]]
+- [[1215-9cJrbj23fOA-the-chief-ai-officer-scientist-architect-coach-rania-khalaf-wso2|#1215 — The Chief AI Officer: Scientist, Architect, Coach — Rania Khalaf, WSO2]]
+- [[1225-OE_lLNCNfQo-yolo-mode-safely-microvm-sandboxes-for-any-agent-rowan-christmas-docker|#1225 — YOLO Mode, Safely: MicroVM Sandboxes for Any Agent — Rowan Christmas, Docker]]
+- [[1237-Bdrs3uAX0_M-ai-coding-agents-are-breaking-big-codebases-dan-adler-sourcegraph|#1237 — AI Coding Agents Are Breaking Big Codebases — Dan Adler, Sourcegraph]]
+- [[1243-fz6-NS7qpZc-how-i-learned-to-stop-worrying-and-love-the-sandbox-matt-brockman-e2b|#1243 — How I Learned to Stop Worrying and Love the Sandbox — Matt Brockman, E2B]]
+- [[1252-ZUZVNKFSmTM-how-many-credentials-should-your-ai-agent-have-zero-jim-clark-docker|#1252 — How Many Credentials Should Your AI Agent Have? Zero. — Jim Clark, Docker]]
+- [[1254-c5U-XbbEN-g-how-ai-agents-pay-checkout-in-chatgpt-and-google-ai-mode-sam-parsons-paypal|#1254 — How AI Agents Pay: Checkout in ChatGPT and Google AI Mode — Sam Parsons, PayPal]]
+- [[1270-DrfyORO8RqA-why-bigger-context-windows-won-t-save-your-agent-elizabeth-fuentes-leone-aws|#1270 — Why Bigger Context Windows Won't Save Your Agent — Elizabeth Fuentes Leone, AWS]]
+- [[1272-HTzgC3FoYsI-let-anyone-at-your-company-ship-internal-apps-with-ai-garrett-galow-workos|#1272 — Let Anyone at Your Company Ship Internal Apps with AI — Garrett Galow, WorkOS]]
+- [[1283-3wj6sgbi1YA-designing-clis-for-agents-not-humans-pedro-lopez-airbyte|#1283 — Designing CLIs for Agents, Not Humans — Pedro Lopez, Airbyte]]
+- [[1295-s-glGHAa1a4-an-ai-future-without-the-lock-in-remy-guercio-tailscale|#1295 — An AI Future Without the Lock-In — Remy Guercio, Tailscale]]
+- [[1308-xfPVBzDYjH4-can-your-agent-hear-you-now-building-live-voice-agents-with-gemini-thor-schaeff|#1308 — Can Your Agent Hear You Now? Building Live Voice Agents with Gemini — Thor Schaeff]]
+- [[1316-XczFLWEntiE-ai-apps-in-a-flash-ship-to-gpus-without-docker-dean-qui-anola-runpod|#1316 — AI Apps in a Flash: Ship to GPUs Without Docker — Dean Quiñanola, Runpod]]
+- [[1330-iH_wV8BbS24-sandboxes-aren-t-optional-4-ways-to-isolate-coding-agents-robert-brennan-openhands|#1330 — Sandboxes Aren't Optional: 4 Ways to Isolate Coding Agents — Robert Brennan, OpenHands]]
+- [[1335-Uv0nAf_7tyU-decoupling-the-brain-from-the-hands-claude-managed-agents-part-1-of-4-anthropic|#1335 — Decoupling the Brain from the Hands: Claude Managed Agents (Part 1 of 4) — Anthropic]]
+- [[1370-W4pnzOURwHQ-insurance-claims-are-ai-s-messiest-data-problem-denys-linkov-wisedocs|#1370 — Insurance Claims Are AI's Messiest Data Problem — Denys Linkov, Wisedocs]]
+- [[1372--AOxpwVeIWw-why-ai-agents-still-won-t-pay-for-anything-jan-curn-apify|#1372 — Why AI Agents Still Won't Pay for Anything — Jan Curn, Apify]]
+- [[1383-3axY1wz2OvA-same-gpu-50-more-output-why-the-operator-matters-oliver-kennon-semianalysis|#1383 — Same GPU, 50% More Output: Why the Operator Matters — Oliver Kennon, SemiAnalysis]]
+- [[1424-xZX3pmaB8Hk-exploits-now-beat-patches-open-source-security-in-the-ai-era-patrick-smyth-chainguard|#1424 — Exploits Now Beat Patches: Open Source Security in the AI Era - Patrick Smyth, Chainguard]]
+- [[1429-YqxpPI7YUjE-why-a-one-line-change-can-break-your-whole-stack-cole-gannaway-qodo|#1429 — Why a One-Line Change Can Break Your Whole Stack - Cole Gannaway, Qodo]]
 
 ## Notes
 

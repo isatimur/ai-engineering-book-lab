@@ -1,19 +1,19 @@
 # First Serious Synthesis Pack
 
-Corpus size analyzed: **1074 videos**
+Corpus size analyzed: **1417 videos**
 
 ## Top 10 recurring ideas
 
-1. **Evals are the operating system for trustworthy AI** — signal in ~680 notes
-2. **Coding agents need harnesses, specs, and human steering** — signal in ~624 notes
-3. **AI engineering is becoming systems engineering, not prompt tinkering** — signal in ~573 notes
-4. **Reliability comes from constrained tools and durable workflows** — signal in ~559 notes
-5. **Model progress matters, but the bottleneck is increasingly product and operational design** — signal in ~467 notes
-6. **The AI-native company reorganizes around leverage, not headcount** — signal in ~316 notes
-7. **Context, memory, and retrieval beat naive long prompts** — signal in ~260 notes
-8. **Open standards and MCP-like interfaces are shaping the agent runtime layer** — signal in ~248 notes
-9. **Voice and realtime AI are constrained by latency, turn-taking, and UX** — signal in ~107 notes
-10. **Security and identity are first-class concerns for autonomous systems** — signal in ~60 notes
+1. **Evals are the operating system for trustworthy AI** — signal in ~987 notes
+2. **Coding agents need harnesses, specs, and human steering** — signal in ~966 notes
+3. **AI engineering is becoming systems engineering, not prompt tinkering** — signal in ~903 notes
+4. **Reliability comes from constrained tools and durable workflows** — signal in ~869 notes
+5. **Model progress matters, but the bottleneck is increasingly product and operational design** — signal in ~573 notes
+6. **The AI-native company reorganizes around leverage, not headcount** — signal in ~338 notes
+7. **Open standards and MCP-like interfaces are shaping the agent runtime layer** — signal in ~323 notes
+8. **Context, memory, and retrieval beat naive long prompts** — signal in ~287 notes
+9. **Voice and realtime AI are constrained by latency, turn-taking, and UX** — signal in ~132 notes
+10. **Security and identity are first-class concerns for autonomous systems** — signal in ~69 notes
 
 ## Rough table of contents for a potential book
 
@@ -75,13 +75,13 @@ Corpus size analyzed: **1074 videos**
 
 ### Speakers
 
+- **Laurie Voss** — appears 7 times
 - **Stephen Chin** — appears 5 times
+- **Philipp Schmid** — appears 5 times
+- **Kevin Hou** — appears 4 times
+- **Harald Kirschner** — appears 4 times
 - **Zach Blumenfeld** — appears 4 times
 - **Patrick Debois** — appears 4 times
+- **swyx** — appears 4 times
 - **Phil Hetzel** — appears 4 times
-- **Kevin Hou** — appears 3 times
-- **Samuel Colvin** — appears 3 times
-- **Harald Kirschner** — appears 3 times
-- **Philipp Schmid** — appears 3 times
-- **Will Brown** — appears 3 times
-- **swyx** — appears 3 times
+- **Matt Pocock** — appears 3 times

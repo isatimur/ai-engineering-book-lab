@@ -148,6 +148,22 @@ def _is_transient(stderr: str) -> bool:
     return any(sig in low for sig in _TRANSIENT)
 
 
+# The ONLY evidence that a talk has no captions: yt-dlp saying so in words.
+# Anything else — a 429, a format error, a timeout, an empty success — is a
+# failure to fetch, not proof of absence, and must stay retryable.
+_NO_SUBTITLES = (
+    "has no subtitles",
+    "there are no subtitles",
+    "no subtitles for the requested languages",
+    "requested subtitles are not available",
+)
+
+
+def _says_no_subtitles(stderr: str) -> bool:
+    low = (stderr or "").lower()
+    return any(sig in low for sig in _NO_SUBTITLES)
+
+
 def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
     raw_base = TRANSCRIPT_DIR / "raw" / video.id
     existing_vtt = list(raw_base.parent.glob(f"{video.id}*.vtt"))
@@ -195,18 +211,25 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
                       f"(attempt {attempt}/{attempts})")
                 time.sleep(wait)
         if proc.returncode != 0:
-            # A rate-limit and a captionless talk both exit non-zero. Treating
-            # them alike is what poisoned the batch: "unavailable" is a
-            # permanent verdict and it was being written for a passing
-            # condition. Fail loudly on transient, record only real absence.
-            if _is_transient(proc.stderr):
-                tail = (proc.stderr or "").strip().splitlines()
-                raise TranscriptFetchBlocked(
-                    f"{video.id}: captions not retrievable right now"
-                    + (f" ({tail[-1][:160]})" if tail else "")
-                    + ". No note written; re-run this batch later."
-                )
-            return "unavailable", None, None
+            # Allow-list, not deny-list. The first version of this guard asked
+            # "does the error look transient?" and wrote the permanent verdict
+            # for everything else. That is backwards, and it kept leaking: on
+            # 2026-10-30 waI44NP1abk was written as captionless by an error
+            # outside the transient list, while the talk has both en and
+            # en-orig auto-captions.
+            #
+            # "unavailable" marks a talk ingested forever and nothing retries
+            # it, so it must be earned. Only yt-dlp saying in words that there
+            # are no subtitles counts. Every other failure is retryable, which
+            # costs one more attempt later and loses nothing.
+            if _says_no_subtitles(proc.stderr):
+                return "unavailable", None, None
+            tail = (proc.stderr or "").strip().splitlines()
+            raise TranscriptFetchBlocked(
+                f"{video.id}: captions not retrievable right now"
+                + (f" ({tail[-1][:160]})" if tail else "")
+                + ". No note written; re-run this batch later."
+            )
         existing_vtt = list(raw_base.parent.glob(f"{video.id}*.vtt"))
     preferred = None
     for suffix in [".en-orig.vtt", ".en.vtt"]:
@@ -215,7 +238,22 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
             preferred = candidate
             break
     if not preferred:
-        return "unavailable", None, None
+        # The second way to reach "unavailable", and it was the unguarded one.
+        # yt-dlp can exit 0 and still leave no file — a subtitle fetch that
+        # quietly produced nothing. An absent file is not evidence that the
+        # talk has no captions, and "unavailable" is a permanent verdict that
+        # marks the talk ingested forever.
+        #
+        # It cost two talks on 2026-10-30 (B0fjR3yaZFU, 5Bn0xro2ol8): both were
+        # written as captionless in a batch where 37 others succeeded, and both
+        # downloaded fine by hand minutes later.
+        #
+        # Only yt-dlp saying so counts as absence. No file means try again.
+        raise TranscriptFetchBlocked(
+            f"{video.id}: yt-dlp reported success but wrote no .en/.en-orig "
+            f"subtitle file. Treating as retryable, not as 'no captions'. "
+            f"No note written; re-run this batch later."
+        )
     transcript_status = "auto_en_orig" if preferred.name.endswith(".en-orig.vtt") else "auto_en"
     plain_path = TRANSCRIPT_DIR / "plain" / f"{video.id}.txt"
     if not plain_path.exists():
