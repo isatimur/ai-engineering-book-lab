@@ -17,9 +17,9 @@ This vault is a working research substrate for turning the AI Engineer channel i
 This is not meant to be a passive archive. The intended workflow is: gather the channel corpus, preserve source provenance, extract the durable AI engineering knowledge, connect related ideas, and rework the material into something useful for learning, reference, and production work.
 
 ## Current ingestion status
-- Latest completed batch: `r30-d`
-- Corpus notes created so far: `1323`
-- Transcript status mix: `auto_en: 3, auto_en_orig: 1319, whisper_base_en: 1`
+- Latest completed batch: `r30-e`
+- Corpus notes created so far: `1400`
+- Transcript status mix: `auto_en: 4, auto_en_orig: 1395, whisper_base_en: 1`
 - Notes created: `01_Videos/`
 - Theme seeds created: `02_Themes/`
 - Transcript cache created: `99_Meta/transcripts/`

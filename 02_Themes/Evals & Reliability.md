@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 703
+- Total tagged videos: 776
 
 ## Cross-video synthesis
 
-- This theme appears across 703 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (589), Agent Architecture (562), Models & Inference (21).
+- This theme appears across 776 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (662), Agent Architecture (629), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -715,6 +715,79 @@
 - [[1348-SHvwutPSeZg-judge-a-transaction-by-the-company-it-keeps-somya-rai-md-sharique-exl|#1348 — Judge a Transaction by the Company It Keeps — Somya Rai & MD Sharique, EXL]]
 - [[1349-Fe4aSMXsOZ4-every-building-is-a-balance-sheet-spatial-memory-for-real-world-assets-jordi-spranger-spra|#1349 — Every Building Is a Balance Sheet: Spatial Memory for Real-World Assets — Jordi Spranger, Spranic]]
 - [[1350-3ZlQk4-knWM-deploying-ai-inside-a-bank-is-not-an-engineering-problem-paden-gayle-applied-ai-engineers|#1350 — Deploying AI Inside a Bank Is Not an Engineering Problem — Paden Gayle, Applied AI Engineers]]
+- [[1351--a2oTS9J67U-the-agent-works-does-anyone-trust-it-michele-grant-leading-at-scale|#1351 — The Agent Works. Does Anyone Trust It? — Michele Grant, Leading at Scale]]
+- [[1352-U7ZYBCcdJPg-tokens-are-the-cheap-part-steve-jamison-jellyfish|#1352 — Tokens Are the Cheap Part — Steve Jamison, Jellyfish]]
+- [[1353-gDRCpTMCqEU-what-technical-due-diligence-finds-when-the-deck-says-70-automated-souka-na-abelhad|#1353 — What Technical Due Diligence Finds When the Deck Says “70% Automated” — Soukaïna Abelhad]]
+- [[1354-gonAewBZxfU-your-fridge-is-a-valid-payment-device-eleonora-drykina-nina-i-aki-in-the-pocket|#1354 — Your Fridge Is a Valid Payment Device — Eleonora Drykina & Nina Žižakić, In The Pocket]]
+- [[1355-ZccJsdOE54M-the-cost-of-accessibility-in-ai-jemima-abu-cais|#1355 — The Cost of Accessibility in AI — Jemima Abu, CAIS]]
+- [[1356-7b9tov5Uc5s-rebuilding-ci-for-ai-scale-commit-volume-gautam-korlam-sonar|#1356 — Rebuilding CI for AI-Scale Commit Volume — Gautam Korlam, Sonar]]
+- [[1357-8g1N_a3h9H0-how-to-actually-tokenmaxx-and-save-millions-alvin-pane-outrival|#1357 — How to Actually Tokenmaxx and Save Millions — Alvin Pane, OutRival]]
+- [[1358-Wb2v9Phhnns-your-ai-isn-t-the-problem-your-infrastructure-is-jiachen-jiang-coder|#1358 — Your AI Isn’t the Problem. Your Infrastructure Is. — Jiachen Jiang, Coder]]
+- [[1359-tZycGA_Fbfo-paving-the-road-to-production-governed-enterprise-ai-agents-harish-gaggar-credit-karma|#1359 — Paving the Road to Production: Governed Enterprise AI Agents — Harish Gaggar, Credit Karma]]
+- [[1360-0JZy5AuuQzc-i-spent-two-years-building-the-median-hariprasad-sudharshan|#1360 — I Spent Two Years Building the Median — Hariprasad Sudharshan]]
+- [[1361-Fva8hFosqyQ-the-highest-loop-swyx|#1361 — The Highest Loop — swyx]]
+- [[1362-kiClTcJUnhc-why-one-ai-agent-isn-t-enough-and-how-to-run-1-000-cj-avilla-harrison-stall-anthropic|#1362 — Why One AI Agent Isn’t Enough (And How to Run 1,000) - CJ Avilla & Harrison Stall, Anthropic]]
+- [[1364-KtBivPzmOM8-memory-aware-agent-harnesses-for-anti-money-laundering-nacho-martinez-oracle|#1364 — Memory-Aware Agent Harnesses for Anti-Money Laundering — Nacho Martinez, Oracle]]
+- [[1365-Ti-BmGU1_mQ-the-ai-bill-is-too-damn-high-tokenomics-101-eugene-cheah-featherless-ai|#1365 — The AI Bill Is Too Damn High: Tokenomics 101 — Eugene Cheah, Featherless AI]]
+- [[1366-SHMCGrNJJGc-how-to-know-if-your-ai-agent-is-any-good-evals-with-phoenix-claude-laurie-voss-arize-ai|#1366 — How to Know If Your AI Agent Is Any Good: Evals With Phoenix & Claude — Laurie Voss, Arize AI]]
+- [[1367-IavxrdVnwXM-an-ai-agent-got-its-user-banned-from-resy-keycard-jpmorgan-chase-aauth|#1367 — An AI Agent Got Its User Banned From Resy — Keycard, JPMorgan Chase & AAuth]]
+- [[1368-q4WC4TowkBo-teach-your-agent-to-prove-it-s-done-nick-nisi-zack-proser-workos|#1368 — Teach Your Agent to Prove It's Done — Nick Nisi & Zack Proser, WorkOS]]
+- [[1369-obfPzbapMIM-evals-for-high-stakes-ai-agents-doneyli-de-jesus-annabell-sch-fer-langfuse|#1369 — Evals for High-Stakes AI Agents — Doneyli De Jesus & Annabell Schäfer, Langfuse]]
+- [[1370-W4pnzOURwHQ-insurance-claims-are-ai-s-messiest-data-problem-denys-linkov-wisedocs|#1370 — Insurance Claims Are AI's Messiest Data Problem — Denys Linkov, Wisedocs]]
+- [[1371-7T-gldvgfpo-stop-telling-agents-how|#1371 — Stop Telling Agents How]]
+- [[1373-L4dUFimVDKU-backtest-your-agent-against-yesterday-s-web-ryan-ahern-exa|#1373 — Backtest Your Agent Against Yesterday's Web — Ryan Ahern, Exa]]
+- [[1374-vS2IA9pq0Q4-version-controlled-search-the-web-as-it-was-ryan-ahern-exa|#1374 — Version-Controlled Search: The Web as It Was — Ryan Ahern, Exa]]
+- [[1375-J7n3WJnFTto-buy-build-deploy-using-m-a-to-drive-ai-transformation-prathik-naidu-long-lake|#1375 — Buy, Build, Deploy: Using M&A to Drive AI Transformation — Prathik Naidu, Long Lake]]
+- [[1376-UGjk3Uk0MxM-the-model-swap-workshop-gpt-5-5-vs-kimi-vs-deepseek-vs-mistral-pamela-fox-microsoft|#1376 — The Model Swap Workshop: GPT-5.5 vs Kimi vs DeepSeek vs Mistral — Pamela Fox, Microsoft]]
+- [[1377-7Y4sbZgBdnc-is-the-agent-harness-dead-jediah-katz-spacexai|#1377 — Is the Agent Harness Dead? — Jediah Katz, SpaceXAI]]
+- [[1378-_4Ph2dhmUFI-how-to-know-when-an-ai-agent-can-work-unsupervised-evan-kormos-coinbase|#1378 — How to Know When an AI Agent Can Work Unsupervised — Evan Kormos, Coinbase]]
+- [[1379-f_HwzoYrZ7s-why-ai-agents-will-need-their-own-bank-accounts-lincoln-murr-coinbase|#1379 — Why AI Agents Will Need Their Own Bank Accounts — Lincoln Murr, Coinbase]]
+- [[1380-UHbODjuviAU-the-investor-s-edge-lives-in-their-head-anekha-sokhal-moshi|#1380 — The Investor's Edge Lives in Their Head — Anekha Sokhal, Moshi]]
+- [[1381-Bz1HFxQA1o8-shipping-ai-into-5-major-banks-without-a-12-month-compliance-wait-al-chen-cisco|#1381 — Shipping AI Into 5 Major Banks Without a 12-Month Compliance Wait — Al Chen, Cisco]]
+- [[1382-adfw3xJBx1o-a-bank-built-its-own-coding-agent-it-took-off-felippe-felisola-caso-francesco-galletta-mon|#1382 — A Bank Built Its Own Coding Agent. It Took Off — Felippe Felisola Caso & Francesco Galletta, Monzo]]
+- [[1383-3axY1wz2OvA-same-gpu-50-more-output-why-the-operator-matters-oliver-kennon-semianalysis|#1383 — Same GPU, 50% More Output: Why the Operator Matters — Oliver Kennon, SemiAnalysis]]
+- [[1385-uA4ah-dVHvU-ai-cut-our-research-time-from-7-days-to-15-minutes-gareth-yoder-vanguard|#1385 — AI Cut Our Research Time From 7 Days to 15 Minutes — Gareth Yoder, Vanguard]]
+- [[1386-DouK81O8R3o-one-day-1-000-in-tokens-an-ai-war-room-for-legacy-code-ford-prior-geico|#1386 — One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO]]
+- [[1388-CFbnVpSsDFQ-the-ai-content-system-behind-200m-views-sarah-chieng-cerebras-cova-lee-openai|#1388 — The AI Content System Behind 200M Views — Sarah Chieng, Cerebras & Cova Lee, OpenAI]]
+- [[1389-_dTF3NpPzGo-why-ai-writing-still-reads-like-slop-louis-fran-ois-bouchard-towards-ai|#1389 — Why AI Writing Still Reads Like Slop — Louis-François Bouchard, Towards AI]]
+- [[1390-c_SPW__jF9w-how-to-test-ai-agents-when-no-benchmark-exists-nathanael-weill-air-canada|#1390 — How to Test AI Agents When No Benchmark Exists — Nathanael Weill, Air Canada]]
+- [[1391-mMw3arwQsL0-1-368-ai-failures-and-what-they-teach-about-evals-vishal-srivastava-new-york-life-tanmay-s|#1391 — 1,368 AI Failures and What They Teach About Evals — Vishal Srivastava, New York Life & Tanmay Sah]]
+- [[1392-Ve2bAarPA2I-better-ai-models-won-t-fix-your-engineering-team-nicholas-arcolano-jellyfish|#1392 — Better AI Models Won't Fix Your Engineering Team — Nicholas Arcolano, Jellyfish]]
+- [[1394-A3FL_zTQKU0-don-t-trust-your-ai-agents-test-them-like-a-scientist-stephanie-jarmak-omni-analytics|#1394 — Don't Trust Your AI Agents. Test Them Like a Scientist — Stephanie Jarmak, Omni Analytics]]
+- [[1395-uTrY8slys0w-how-to-let-ai-agents-sign-up-for-your-app-safely-isabelle-williams-workos|#1395 — How to Let AI Agents Sign Up for Your App Safely — Isabelle Williams, WorkOS]]
+- [[1396-UB6hoWyh3B0-a-bank-trained-its-own-foundation-model-to-catch-fraud-freddy-lecue-wells-fargo|#1396 — A Bank Trained Its Own Foundation Model to Catch Fraud — Freddy Lecue, Wells Fargo]]
+- [[1397-laQ8wMysnkk-buying-gpus-should-work-like-buying-stocks-carmen-li-compute-exchange|#1397 — Buying GPUs Should Work Like Buying Stocks — Carmen Li, Compute Exchange]]
+- [[1398-opHmX7qClzE-how-openai-built-chatgpt-for-bankers-and-analysts-joseph-kim-openai|#1398 — How OpenAI Built ChatGPT for Bankers and Analysts — Joseph Kim, OpenAI]]
+- [[1399-GCse4OMzY8U-why-compute-still-trades-in-group-chats-affaan-mustafa-alejandro-soumah-fernandez-jump-tra|#1399 — Why Compute Still Trades in Group Chats — Affaan Mustafa & Alejandro Soumah Fernandez, Jump Trading]]
+- [[1400-5O6jLtoeKrg-real-ai-agent-attacks-and-what-would-have-stopped-them-andrey-rybka-bloomberg|#1400 — Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg]]
+- [[1401-oP2WLFpMoDY-inside-arca-s-long-horizon-agents-that-run-the-business-aman-singh-arca|#1401 — Inside Arca's Long-Horizon Agents That Run the Business - Aman Singh, Arca]]
+- [[1402-ZMZlAn6Pyfg-proving-alpha-how-a-hedge-fund-measures-ai-s-roi-hari-kumar-contour-asset-management|#1402 — Proving Alpha: How a Hedge Fund Measures AI's ROI - Hari Kumar, Contour Asset Management]]
+- [[1403-WOszaC1WWbQ-can-ai-understand-a-distressed-credit-harneet-kaur-axim-intelligence|#1403 — Can AI Understand a Distressed Credit? - Harneet Kaur, Axim Intelligence]]
+- [[1404-CLve4Nx_RwI-how-bridgewater-turned-100-million-documents-into-an-edge-sam-green-aaron-linsky-bridgewat|#1404 — How Bridgewater Turned 100 Million Documents Into an Edge - Sam Green & Aaron Linsky, Bridgewater]]
+- [[1405-v5tm5EAzsAs-your-agent-fix-just-broke-something-else-sofia-jakovcevic-arize-ai|#1405 — Your Agent Fix Just Broke Something Else - Sofia Jakovcevic, Arize AI]]
+- [[1406-kspZP5BgkEU-ai-writes-the-code-so-what-s-left-for-engineers-laurie-voss-arize-ai|#1406 — AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI]]
+- [[1407-aVbRSIQO2dE-why-frontier-models-fail-as-buy-side-analysts-janie-gu-google-deepmind-suyeol-yun-linqalph|#1407 — Why Frontier Models Fail as Buy-Side Analysts - Janie Gu, Google DeepMind & Suyeol Yun, LinqAlpha]]
+- [[1408-dZgA6btnb_s-do-not-let-models-invent-numbers-vinoo-ganesh-kepler|#1408 — Do Not Let Models Invent Numbers - Vinoo Ganesh, Kepler]]
+- [[1409-DZ24Xbm9Joc-how-to-build-financial-agents-that-work-across-the-web-jay-sahnan-arik-bird-browserbase|#1409 — How to Build Financial Agents That Work Across the Web - Jay Sahnan & Arik Bird, Browserbase]]
+- [[1410-u_jvuCjuvEk-can-your-ai-analyst-keep-a-secret-aaron-linsky-bridgewater-nikhil-benesch-turbopuffer|#1410 — Can Your AI Analyst Keep a Secret? - Aaron Linsky, Bridgewater & Nikhil Benesch, turbopuffer]]
+- [[1411-ImnZ7s68jw8-what-does-an-ai-engineer-do-now-aparna-dhinakaran-arize-ai|#1411 — What Does an AI Engineer Do Now? - Aparna Dhinakaran, Arize AI]]
+- [[1412-gv4w23xYj-0-how-to-write-your-first-ai-eval-sallyann-delucia-arize-ai|#1412 — How to Write Your First AI Eval - SallyAnn DeLucia, Arize AI]]
+- [[1413-OmyqelTwpOo-how-to-build-voice-agents-that-don-t-fall-apart-when-you-interrupt-jesse-hall-livekit|#1413 — How to Build Voice Agents That Don't Fall Apart When You Interrupt - Jesse Hall, LiveKit]]
+- [[1414-Y_p3y6zP5QE-build-your-own-team-of-managed-agents-jack-wotherspoon-google-deepmind|#1414 — Build Your Own Team of Managed Agents - Jack Wotherspoon, Google DeepMind]]
+- [[1416-kRJjSOYqW0I-how-to-test-your-agents-on-real-tasks-with-harbor-xander-song-arize-ai|#1416 — How to Test Your Agents on Real Tasks With Harbor - Xander Song, Arize AI]]
+- [[1418-aGIUg8zKI8A-how-a-trading-firm-ships-new-ai-models-the-same-day-noyan-tokgozoglu-optiver|#1418 — How a Trading Firm Ships New AI Models the Same Day - Noyan Tokgozoglu, Optiver]]
+- [[1419-BgLdvF7Qkh8-300-agents-60-people-how-we-secured-our-own-ai-agents-aiden-sochowski-runlayer|#1419 — 300 Agents, 60 People: How We Secured Our Own AI Agents - Aiden Sochowski, Runlayer]]
+- [[1420-h8jgniNJcbQ-why-are-we-still-governing-ai-agents-like-software-tim-tyler-gravitee|#1420 — Why Are We Still Governing AI Agents Like Software? - Tim Tyler, Gravitee]]
+- [[1421-iniryju23Sk-what-a-900m-bank-error-teaches-us-about-ai-agents-john-feminella-two-sigma|#1421 — What a $900M Bank Error Teaches Us About AI Agents - John Feminella, Two Sigma]]
+- [[1422-dAoOYFx7ZYw-stop-giving-your-agent-tools-give-it-a-sandbox-mikyo-king-arize-ai|#1422 — Stop Giving Your Agent Tools. Give It a Sandbox - Mikyo King, Arize AI]]
+- [[1423-YIhvrvHtonk-we-kept-rebuilding-our-ai-agent-here-s-what-survived-fuad-ali-arize-ai|#1423 — We Kept Rebuilding Our AI Agent. Here's What Survived - Fuad Ali, Arize AI]]
+- [[1425-58ulJViGFgU-who-is-making-this-request-agent-auth-101-kamil-potrec-keycard|#1425 — Who Is Making This Request? Agent Auth 101 - Kamil Potrec, Keycard]]
+- [[1426-P_0_Th_ZzIg-stop-guessing-your-vllm-config-benchmarking-llms-on-runpod-chris-vela-runpod|#1426 — Stop Guessing Your vLLM Config: Benchmarking LLMs on Runpod - Chris Vela, Runpod]]
+- [[1427-UW8Qkk7MG8A-ai-that-hunts-logic-bugs-before-attackers-do-taylor-luttrell-williams-sonar|#1427 — AI That Hunts Logic Bugs Before Attackers Do - Taylor Luttrell-Williams, Sonar]]
+- [[1430-mJ7q8CuVmbw-we-trust-ai-agents-that-break-every-day-shy-ruparel-temporal|#1430 — We Trust AI Agents That Break Every Day - Shy Ruparel, Temporal]]
+- [[1431-Ok6QdZHCcI8-how-revolut-cut-ai-coding-costs-90-with-self-hosted-open-models-david-abitbol-revolut|#1431 — How Revolut Cut AI Coding Costs 90% With Self-Hosted Open Models - David Abitbol, Revolut]]
+- [[1432-LQW_Wvqhp04-why-humans-can-t-keep-up-with-ai-written-code-tariq-shaukat-sonar|#1432 — Why Humans Can't Keep Up With AI-Written Code - Tariq Shaukat, Sonar]]
+- [[1433-wP3P89YB9fA-catch-the-bugs-your-code-review-misses-killian-carlsen-phelan-taylor-luttrell-williams-son|#1433 — Catch the Bugs Your Code Review Misses - Killian Carlsen-Phelan & Taylor Luttrell-Williams, Sonar]]
 
 ## Notes
 
