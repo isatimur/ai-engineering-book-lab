@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 52
+- Total tagged videos: 54
 
 ## Cross-video synthesis
 
-- This theme appears across 52 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (15), Evals & Reliability (13), Agent Architecture (7).
+- This theme appears across 54 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (17), Evals & Reliability (15), Agent Architecture (7).
 - Representative talks: #26 Contact Center Voice AI: Low-Latency Intelligence Extraction from Messy Audio Streams — Dippu Singh; #128 Full Workshop: Realtime Voice AI — Mark Backman, Daily; #129 Vision AI in 2025 — Peter Robicheaux, Roboflow.
 
 ## Seed videos
@@ -64,6 +64,8 @@
 - [[1288-tNAV259UhCM-from-15-to-90-gpu-utilization-fix-the-data-pipeline-not-the-model|#1288 — From 15% to 90% GPU Utilization: Fix the Data Pipeline, Not the Model]]
 - [[1343-SacJfmp33vM-your-gpu-neighbor-can-hear-your-model-branislav-brzak-stealthium|#1343 — Your GPU Neighbor Can Hear Your Model — Branislav Brzak, Stealthium]]
 - [[1348-SHvwutPSeZg-judge-a-transaction-by-the-company-it-keeps-somya-rai-md-sharique-exl|#1348 — Judge a Transaction by the Company It Keeps — Somya Rai & MD Sharique, EXL]]
+- [[1389-_dTF3NpPzGo-why-ai-writing-still-reads-like-slop-louis-fran-ois-bouchard-towards-ai|#1389 — Why AI Writing Still Reads Like Slop — Louis-François Bouchard, Towards AI]]
+- [[1396-UB6hoWyh3B0-a-bank-trained-its-own-foundation-model-to-catch-fraud-freddy-lecue-wells-fargo|#1396 — A Bank Trained Its Own Foundation Model to Catch Fraud — Freddy Lecue, Wells Fargo]]
 
 ## Notes
 

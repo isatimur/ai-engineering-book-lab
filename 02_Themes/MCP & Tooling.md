@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 167
+- Total tagged videos: 172
 
 ## Cross-video synthesis
 
-- This theme appears across 167 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (107), Agent Architecture (97), Evals & Reliability (14).
+- This theme appears across 172 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (112), Agent Architecture (100), Evals & Reliability (16).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -179,6 +179,11 @@
 - [[1316-XczFLWEntiE-ai-apps-in-a-flash-ship-to-gpus-without-docker-dean-qui-anola-runpod|#1316 — AI Apps in a Flash: Ship to GPUs Without Docker — Dean Quiñanola, Runpod]]
 - [[1330-iH_wV8BbS24-sandboxes-aren-t-optional-4-ways-to-isolate-coding-agents-robert-brennan-openhands|#1330 — Sandboxes Aren't Optional: 4 Ways to Isolate Coding Agents — Robert Brennan, OpenHands]]
 - [[1335-Uv0nAf_7tyU-decoupling-the-brain-from-the-hands-claude-managed-agents-part-1-of-4-anthropic|#1335 — Decoupling the Brain from the Hands: Claude Managed Agents (Part 1 of 4) — Anthropic]]
+- [[1370-W4pnzOURwHQ-insurance-claims-are-ai-s-messiest-data-problem-denys-linkov-wisedocs|#1370 — Insurance Claims Are AI's Messiest Data Problem — Denys Linkov, Wisedocs]]
+- [[1372--AOxpwVeIWw-why-ai-agents-still-won-t-pay-for-anything-jan-curn-apify|#1372 — Why AI Agents Still Won't Pay for Anything — Jan Curn, Apify]]
+- [[1383-3axY1wz2OvA-same-gpu-50-more-output-why-the-operator-matters-oliver-kennon-semianalysis|#1383 — Same GPU, 50% More Output: Why the Operator Matters — Oliver Kennon, SemiAnalysis]]
+- [[1424-xZX3pmaB8Hk-exploits-now-beat-patches-open-source-security-in-the-ai-era-patrick-smyth-chainguard|#1424 — Exploits Now Beat Patches: Open Source Security in the AI Era - Patrick Smyth, Chainguard]]
+- [[1429-YqxpPI7YUjE-why-a-one-line-change-can-break-your-whole-stack-cole-gannaway-qodo|#1429 — Why a One-Line Change Can Break Your Whole Stack - Cole Gannaway, Qodo]]
 
 ## Notes
 
