@@ -19,6 +19,8 @@ dist/
 99_Meta/transcripts/
 99_Meta/audits/
 99_Meta/batches/
+# retry_ingest.py's backoff clock: one machine's schedule, not shared state.
+99_Meta/.ingest-backoff.json
 
 # If public mirror is created, review before publishing these folders
 00_Inbox/

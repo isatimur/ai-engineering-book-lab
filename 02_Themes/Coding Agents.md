@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 893
+- Total tagged videos: 900
 
 ## Cross-video synthesis
 
-- This theme appears across 893 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (735), Evals & Reliability (677), MCP & Tooling (114).
+- This theme appears across 900 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (742), Evals & Reliability (682), MCP & Tooling (116).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -905,6 +905,13 @@
 - [[1431-Ok6QdZHCcI8-how-revolut-cut-ai-coding-costs-90-with-self-hosted-open-models-david-abitbol-revolut|#1431 — How Revolut Cut AI Coding Costs 90% With Self-Hosted Open Models - David Abitbol, Revolut]]
 - [[1432-LQW_Wvqhp04-why-humans-can-t-keep-up-with-ai-written-code-tariq-shaukat-sonar|#1432 — Why Humans Can't Keep Up With AI-Written Code - Tariq Shaukat, Sonar]]
 - [[1433-wP3P89YB9fA-catch-the-bugs-your-code-review-misses-killian-carlsen-phelan-taylor-luttrell-williams-son|#1433 — Catch the Bugs Your Code Review Misses - Killian Carlsen-Phelan & Taylor Luttrell-Williams, Sonar]]
+- [[1445-YX4Z4XqZ9Vo-most-of-your-docs-readers-are-now-ai-agents-hahnbee-lee-mintlify-lincoln-murr-coinbase|#1445 — Most of Your Docs Readers Are Now AI Agents - Hahnbee Lee, Mintlify & Lincoln Murr, Coinbase]]
+- [[1450--X3yXTwGs9A-ai-writes-code-faster-than-your-team-can-review-it-andrew-norrish-sourcegraph|#1450 — AI Writes Code Faster Than Your Team Can Review It - Andrew Norrish, Sourcegraph]]
+- [[1456-g_NgCLTibiM-make-your-ai-agents-predictable-with-graph-engineering-zachary-blumenfeld-neo4j|#1456 — Make Your AI Agents Predictable With Graph Engineering - Zachary Blumenfeld, Neo4j]]
+- [[1457-prGP0huECPo-without-caching-your-ai-agent-costs-10x-more-george-cameron-artificial-analysis|#1457 — Without Caching, Your AI Agent Costs 10x More - George Cameron, Artificial Analysis]]
+- [[1474-y9Sg--RDtks-when-we-can-do-anything-do-we-still-know-what-we-want-ryo-lu-ex-cursor|#1474 — 当我们什么都能做，还知道自己想做什么吗？When We Can Do Anything, Do We Still Know What We Want? — Ryo Lu, ex-Cursor]]
+- [[1476-ys6YQ2yfBpM-your-old-prompts-are-making-claude-worse-lance-martin-anthropic|#1476 — Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic]]
+- [[1478-y2dyD6slKxE-why-ai-won-t-replace-stock-pickers-jack-woodruff-candlestick-vinoo-ganesh-kepler|#1478 — Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler]]
 
 ## Notes
 
