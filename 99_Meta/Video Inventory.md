@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1417
+Total videos: 1424
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1419,3 +1419,10 @@ Total videos: 1417
 1431. [How Revolut Cut AI Coding Costs 90% With Self-Hosted Open Models - David Abitbol, Revolut](https://www.youtube.com/watch?v=Ok6QdZHCcI8) — `Ok6QdZHCcI8` — 11:47
 1432. [Why Humans Can't Keep Up With AI-Written Code - Tariq Shaukat, Sonar](https://www.youtube.com/watch?v=LQW_Wvqhp04) — `LQW_Wvqhp04` — 16:35
 1433. [Catch the Bugs Your Code Review Misses - Killian Carlsen-Phelan & Taylor Luttrell-Williams, Sonar](https://www.youtube.com/watch?v=wP3P89YB9fA) — `wP3P89YB9fA` — 38:07
+1445. [Most of Your Docs Readers Are Now AI Agents - Hahnbee Lee, Mintlify & Lincoln Murr, Coinbase](https://www.youtube.com/watch?v=YX4Z4XqZ9Vo) — `YX4Z4XqZ9Vo` — 18:52
+1450. [AI Writes Code Faster Than Your Team Can Review It - Andrew Norrish, Sourcegraph](https://www.youtube.com/watch?v=-X3yXTwGs9A) — `-X3yXTwGs9A` — 18:57
+1456. [Make Your AI Agents Predictable With Graph Engineering - Zachary Blumenfeld, Neo4j](https://www.youtube.com/watch?v=g_NgCLTibiM) — `g_NgCLTibiM` — 20:36
+1457. [Without Caching, Your AI Agent Costs 10x More - George Cameron, Artificial Analysis](https://www.youtube.com/watch?v=prGP0huECPo) — `prGP0huECPo` — 19:43
+1474. [当我们什么都能做，还知道自己想做什么吗？When We Can Do Anything, Do We Still Know What We Want? — Ryo Lu, ex-Cursor](https://www.youtube.com/watch?v=y9Sg--RDtks) — `y9Sg--RDtks` — 23:05
+1476. [Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic](https://www.youtube.com/watch?v=ys6YQ2yfBpM) — `ys6YQ2yfBpM` — 1:04:03
+1478. [Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler](https://www.youtube.com/watch?v=y2dyD6slKxE) — `y2dyD6slKxE` — 18:46

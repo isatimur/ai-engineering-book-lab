@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 174
+- Total tagged videos: 176
 
 ## Cross-video synthesis
 
-- This theme appears across 174 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (114), Agent Architecture (102), Evals & Reliability (16).
+- This theme appears across 176 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (116), Agent Architecture (104), Evals & Reliability (16).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -186,6 +186,8 @@
 - [[1383-3axY1wz2OvA-same-gpu-50-more-output-why-the-operator-matters-oliver-kennon-semianalysis|#1383 — Same GPU, 50% More Output: Why the Operator Matters — Oliver Kennon, SemiAnalysis]]
 - [[1424-xZX3pmaB8Hk-exploits-now-beat-patches-open-source-security-in-the-ai-era-patrick-smyth-chainguard|#1424 — Exploits Now Beat Patches: Open Source Security in the AI Era - Patrick Smyth, Chainguard]]
 - [[1429-YqxpPI7YUjE-why-a-one-line-change-can-break-your-whole-stack-cole-gannaway-qodo|#1429 — Why a One-Line Change Can Break Your Whole Stack - Cole Gannaway, Qodo]]
+- [[1445-YX4Z4XqZ9Vo-most-of-your-docs-readers-are-now-ai-agents-hahnbee-lee-mintlify-lincoln-murr-coinbase|#1445 — Most of Your Docs Readers Are Now AI Agents - Hahnbee Lee, Mintlify & Lincoln Murr, Coinbase]]
+- [[1478-y2dyD6slKxE-why-ai-won-t-replace-stock-pickers-jack-woodruff-candlestick-vinoo-ganesh-kepler|#1478 — Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler]]
 
 ## Notes
 
