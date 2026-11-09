@@ -21,7 +21,8 @@ VIDEO_DIR = ROOT / "01_Videos"
 THEME_DIR = ROOT / "02_Themes"
 META_DIR = ROOT / "99_Meta"
 BOOK_IDEAS_DIR = ROOT / "05_Book_Ideas"
-SYNTHESIS_PACK_PATH = BOOK_IDEAS_DIR / "First Serious Synthesis Pack.md"
+# "First Serious Synthesis Pack.md" is deliberately absent here. It belongs to
+# build_book_synthesis.py alone; see the note on rebuild_corpus_artifacts.
 CORPUS_STATS_PATH = META_DIR / "Corpus Stats.md"
 VIDEO_INVENTORY_PATH = META_DIR / "Video Inventory.md"
 INVENTORY_DEFAULT = "/tmp/ai-engineer-videos.jsonl"
@@ -59,20 +60,6 @@ THEME_RULES = [
     ("Models & Inference", ["model", "inference", "gemma", "gemini", "rl", "reasoning", "fine-tuning", "quantization", "open model", "serving", "gpu"]),
     ("Org Design & Leadership", ["leadership", "manager", "cto", "company", "team", "roi", "agile", "enterprise", "org", "product", "adoption"]),
     ("Security & Guardrails", ["security", "guardrail", "sandbox", "oauth", "auth", "trustworthy", "secure", "privacy", "compliance", "red team"]),
-]
-
-IDEA_RULES = [
-    ("AI engineering is becoming systems engineering, not prompt tinkering", ["system", "architecture", "workflow", "runtime", "platform", "durable", "stateful"]),
-    ("Coding agents need harnesses, specs, and human steering", ["spec", "harness", "human", "control", "steer", "agentic coding", "coding agent"]),
-    ("Evals are the operating system for trustworthy AI", ["eval", "benchmark", "judge", "metric", "verify", "quality"]),
-    ("Context, memory, and retrieval beat naive long prompts", ["context", "memory", "retrieval", "rag", "knowledge graph", "graphrag"]),
-    ("Reliability comes from constrained tools and durable workflows", ["durable", "workflow", "reliability", "constraint", "sandbox", "stateful"]),
-    ("Developer taste and fundamentals matter more as code gets cheaper", ["fundamental", "taste", "craft", "slop", "quality", "judgment"]),
-    ("The AI-native company reorganizes around leverage, not headcount", ["company", "team", "roi", "leader", "leadership", "org", "productivity"]),
-    ("Open standards and MCP-like interfaces are shaping the agent runtime layer", ["mcp", "model context protocol", "tool", "sdk", "runtime"]),
-    ("Voice and realtime AI are constrained by latency, turn-taking, and UX", ["voice", "realtime", "audio", "latency", "interrupt", "speech"]),
-    ("Model progress matters, but the bottleneck is increasingly product and operational design", ["model", "inference", "reasoning", "fine-tuning", "product", "deployment", "production"]),
-    ("Security and identity are first-class concerns for autonomous systems", ["security", "identity", "oauth", "auth", "secure", "trustworthy"]),
 ]
 
 
@@ -515,14 +502,6 @@ def record_text(record: NoteRecord) -> str:
     return f"{record.title} {record.summary} {' '.join(record.themes)}".lower()
 
 
-def top_ideas(records: list[NoteRecord], limit: int = 10) -> list[tuple[str, int]]:
-    scored: list[tuple[str, int]] = []
-    for idea, needles in IDEA_RULES:
-        score = sum(1 for r in records if any(n in record_text(r) for n in needles))
-        scored.append((idea, score))
-    return sorted(scored, key=lambda x: (-x[1], x[0]))[:limit]
-
-
 def top_speakers(records: list[NoteRecord], limit: int = 12) -> list[tuple[str, int]]:
     counts = Counter()
     for r in records:
@@ -691,91 +670,6 @@ def write_video_inventory() -> None:
     VIDEO_INVENTORY_PATH.write_text("\n".join(lines) + "\n")
 
 
-def write_synthesis_pack(all_records: list[NoteRecord], theme_to_notes: dict[str, list[NoteRecord]]) -> None:
-    ideas = top_ideas(all_records, 10)
-    lines = [
-        "# First Serious Synthesis Pack",
-        "",
-        f"Corpus size analyzed: **{len(all_records)} videos**",
-        "",
-        "## Top 10 recurring ideas",
-        "",
-    ]
-    for i, (idea, score) in enumerate(ideas, start=1):
-        lines.append(f"{i}. **{idea}** — signal in ~{score} notes")
-    lines += [
-        "",
-        "## Rough table of contents for a potential book",
-        "",
-        "1. **Why AI Engineering Is a New Discipline** — from prompt hacks to engineered systems",
-        "2. **Taste, Judgment, and Software Fundamentals** — what still matters when code is cheap",
-        "3. **From Copilot to Colleague** — how coding agents actually fit into real workflows",
-        "4. **Harnesses, Specs, and Human Control** — designing agentic systems people can trust",
-        "5. **Evals as Operations** — measurement, verification, and continuous quality loops",
-        "6. **Context Is Infrastructure** — retrieval, memory, GraphRAG, and context engineering",
-        "7. **The Runtime Layer** — MCP, tools, durable workflows, and agent platforms",
-        "8. **Security, Identity, and Guardrails** — why autonomy raises the cost of mistakes",
-        "9. **The AI-Native Organization** — leadership, ROI, incentives, and team design",
-        "10. **Where This Is Going** — voice, realtime, open models, and the changing shape of software",
-        "",
-        "## Strongest 3 book angles",
-        "",
-        "### 1) The Operating Manual for AI-Native Software Engineering",
-        "**Pros**",
-        "- Broadest coverage across the corpus: agents, evals, tooling, orgs, and production concerns.",
-        "- Useful for senior engineers, tech leads, and CTOs rather than only prompt-level practitioners.",
-        "- Matches the channel's strongest recurring pattern: building systems, not demos.",
-        "**Cons**",
-        "- Risks feeling too wide unless grounded in a few memorable case studies.",
-        "- Needs disciplined structure to avoid becoming a survey book.",
-        "",
-        "### 2) How to Build Coding-Agent Systems That Don't Turn Into Slop",
-        "**Pros**",
-        "- Sharp market demand and lots of high-signal material in the corpus.",
-        "- Clear narrative arc: fundamentals → harnesses → evals → rollout → org change.",
-        "- Distinctive because the corpus repeatedly pushes past vibe coding into operational practice.",
-        "**Cons**",
-        "- Narrower than the full AI engineering space.",
-        "- Can age faster if framed around specific tools instead of principles.",
-        "",
-        "### 3) The Human Control Plane for Agents",
-        "**Pros**",
-        "- Strong conceptual hook linking control, memory, evals, security, and workflow design.",
-        "- Gives the book a clear thesis instead of a generic 'AI trends' compilation.",
-        "- Plays well with enterprise readers who care about trust and governance.",
-        "**Cons**",
-        "- Slightly more abstract and less obviously discoverable as a book title/theme.",
-        "- Needs concrete stories from coding, support, search, and ops to stay vivid.",
-        "",
-        "## Especially valuable videos / speakers to revisit manually",
-        "",
-        "### Videos",
-    ]
-    shortlist = [
-        (16, "Harness Engineering: How to Build Software When Humans Steer, Agents Execute"),
-        (40, "Spec-Driven Development: Agentic Coding at FAANG Scale and Quality"),
-        (45, "Claude Agent SDK [Full Workshop]"),
-        (57, "Making Codebases Agent Ready"),
-        (72, "Coding Evals: From Code Snippets to Codebases"),
-        (77, "Hard Won Lessons from Building Effective AI Coding Agents"),
-        (83, "Don't Build Agents, Build Skills Instead"),
-        (87, "Future-Proof Coding Agents"),
-        (96, "Vision: Zero Bugs"),
-        (104, "Context Platform Engineering to Reduce Token Anxiety"),
-        (105, "Context Engineering: Connecting the Dots with Graphs"),
-        (120, "#define AI Engineer")
-    ]
-    records_by_idx = {r.playlist_index: r for r in all_records}
-    for idx, _label in shortlist:
-        r = records_by_idx.get(idx)
-        if r:
-            lines.append(f"- [[{r.note_name}|#{r.playlist_index} — {r.title}]]")
-    lines += ["", "### Speakers", ""]
-    for speaker, count in top_speakers(all_records, 10):
-        lines.append(f"- **{speaker}** — appears {count} times")
-    SYNTHESIS_PACK_PATH.write_text("\n".join(lines) + "\n")
-
-
 def update_channel_overview(all_records: list[NoteRecord], latest_batch_name: str) -> None:
     path = META_DIR / "Channel Overview.md"
     status_counts = transcript_status_summary(all_records)
@@ -828,6 +722,17 @@ def update_channel_overview(all_records: list[NoteRecord], latest_batch_name: st
 
 
 def rebuild_corpus_artifacts(batch_notes: list[Path], batch_name: str) -> list[NoteRecord]:
+    # Every file written below has exactly one writer: this function. The one
+    # that used to be here and no longer is, "First Serious Synthesis Pack.md",
+    # had two. build_book_synthesis.py writes it too, with different content, so
+    # the file flipped between the two shapes depending on which script ran last
+    # and showed a 154-line diff on an unchanged corpus. The two were not equal
+    # in quality either: this script's version was the early survey that still
+    # weighed three candidate angles, while build_book_synthesis.py writes the
+    # settled thesis. Every ingest quietly reverted the decision.
+    #
+    # Before adding a writer here, check that no other script already owns the
+    # file.
     all_records = load_existing_notes()
     theme_to_notes = build_theme_map_from_records(all_records)
     write_theme_notes(theme_to_notes)
@@ -835,7 +740,6 @@ def rebuild_corpus_artifacts(batch_notes: list[Path], batch_name: str) -> list[N
     update_theme_map(theme_to_notes)
     update_book_outline(theme_to_notes)
     write_corpus_stats(all_records, theme_to_notes)
-    write_synthesis_pack(all_records, theme_to_notes)
     update_index(all_records, batch_notes, batch_name)
     update_channel_overview(all_records, batch_name)
     return all_records
