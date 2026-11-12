@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1479-1486|Latest batch: recent-1479-1486]]
-- Total video notes in corpus: 1424
-- Video notes created in this batch: 0
+- [[batches/recent-1533-1540|Latest batch: recent-1533-1540]]
+- Total video notes in corpus: 1442
+- Video notes created in this batch: 2
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,3 +31,5 @@
 
 ## Recent notes
 
+- [[1534-7WUzHIF32vA-if-your-ai-scores-100-your-eval-is-wrong-ramakrishnan-lokanathan-eslams-com|#1534 — If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com]]
+- [[1535-5SRjPT2Eo7A-your-company-should-train-its-own-ai-models-will-brown-prime-intellect|#1535 — Your Company Should Train Its Own AI Models - Will Brown, Prime Intellect]]

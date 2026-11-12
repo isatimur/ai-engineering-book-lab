@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1424
+Total videos: 1442
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1426,3 +1426,21 @@ Total videos: 1424
 1474. [当我们什么都能做，还知道自己想做什么吗？When We Can Do Anything, Do We Still Know What We Want? — Ryo Lu, ex-Cursor](https://www.youtube.com/watch?v=y9Sg--RDtks) — `y9Sg--RDtks` — 23:05
 1476. [Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic](https://www.youtube.com/watch?v=ys6YQ2yfBpM) — `ys6YQ2yfBpM` — 1:04:03
 1478. [Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler](https://www.youtube.com/watch?v=y2dyD6slKxE) — `y2dyD6slKxE` — 18:46
+1479. [The Cheaper AI Model That Costs You More - Rayan Krishnan, Vals AI](https://www.youtube.com/watch?v=rWtbOgl5FTU) — `rWtbOgl5FTU` — 15:28
+1481. [Your AI Agent Starts Every Session Like a New Hire - Killian Carlsen-Phelan, Sonar](https://www.youtube.com/watch?v=8vDzncmzxyg) — `8vDzncmzxyg` — 17:45
+1484. [When Running Your Own AI Models Beats Paying for APIs - Steven Latré, imec](https://www.youtube.com/watch?v=9-Y_oS9OBLc) — `9-Y_oS9OBLc` — 18:30
+1486. [Everyone Has the Same AI Models. Here's What Sets Agents Apart - Richmond Alake, Oracle](https://www.youtube.com/watch?v=1_lX0m64-aI) — `1_lX0m64-aI` — 25:47
+1487. [Your Agent Just Paid for Nothing: 6 Attacks on x402 Payments - Ishween Kaur, SoFi](https://www.youtube.com/watch?v=YU1uD_YkpjU) — `YU1uD_YkpjU` — 16:44
+1493. [Why We Rebuilt Microsoft Office From Scratch for AI Agents - Yijia Liang, Compound AI](https://www.youtube.com/watch?v=v0UkV5qS9E4) — `v0UkV5qS9E4` — 15:45
+1495. [I Don't Fear AI Slop. I Fear Untold Stories - Zack Proser, WorkOS](https://www.youtube.com/watch?v=1et3Lb_KLQo) — `1et3Lb_KLQo` — 18:34
+1498. [78% Wanted This AI Feature. Almost Nobody Used It - Supriya Subudhi, Bumble](https://www.youtube.com/watch?v=CvmZtAPmAW4) — `CvmZtAPmAW4` — 14:44
+1499. [Your AI Agent Wants Your Data. Here's How to Lock It Down - Jeff Smith, Oracle](https://www.youtube.com/watch?v=LnQce-eHm8k) — `LnQce-eHm8k` — 21:40
+1502. [Your AI Pilots Won't Move the P&L. Here's What Will - Adam Nahari, Apollo](https://www.youtube.com/watch?v=vUJDyDnqT4c) — `vUJDyDnqT4c` — 15:52
+1509. [You Can't Tell What's Real Anymore. Here's What Comes Next - Cristóbal Valenzuela, Runway](https://www.youtube.com/watch?v=q4ITwvlFplQ) — `q4ITwvlFplQ` — 16:51
+1510. [How to Decide What Your AI Agent Should Remember - Wojciech Pluta, Oracle](https://www.youtube.com/watch?v=qq2Hm4XNRgI) — `qq2Hm4XNRgI` — 19:06
+1514. [A Valid Key Let an AI Agent Delete Production - Sagar Batchu, Speakeasy](https://www.youtube.com/watch?v=JxNCuXkSWyQ) — `JxNCuXkSWyQ` — 20:40
+1517. [I Made a Fruit Fly Review My Code - Nick Nisi, WorkOS](https://www.youtube.com/watch?v=geMAe-PLJF4) — `geMAe-PLJF4` — 16:37
+1524. [Building the AI Agent Is Easy. Proving It's Safe Isn't - Jonathan Osborne, NatWest](https://www.youtube.com/watch?v=5UgnatzpZ9E) — `5UgnatzpZ9E` — 18:01
+1532. [Don't Approve the AI Model. Approve the App - Doneyli De Jesus, Langfuse](https://www.youtube.com/watch?v=-uBABM2AuFg) — `-uBABM2AuFg` — 19:20
+1534. [If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com](https://www.youtube.com/watch?v=7WUzHIF32vA) — `7WUzHIF32vA` — 18:45
+1535. [Your Company Should Train Its Own AI Models - Will Brown, Prime Intellect](https://www.youtube.com/watch?v=5SRjPT2Eo7A) — `5SRjPT2Eo7A` — 19:57

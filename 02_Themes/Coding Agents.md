@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 900
+- Total tagged videos: 918
 
 ## Cross-video synthesis
 
-- This theme appears across 900 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (742), Evals & Reliability (682), MCP & Tooling (116).
+- This theme appears across 918 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (759), Evals & Reliability (699), MCP & Tooling (118).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -912,6 +912,24 @@
 - [[1474-y9Sg--RDtks-when-we-can-do-anything-do-we-still-know-what-we-want-ryo-lu-ex-cursor|#1474 — 当我们什么都能做，还知道自己想做什么吗？When We Can Do Anything, Do We Still Know What We Want? — Ryo Lu, ex-Cursor]]
 - [[1476-ys6YQ2yfBpM-your-old-prompts-are-making-claude-worse-lance-martin-anthropic|#1476 — Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic]]
 - [[1478-y2dyD6slKxE-why-ai-won-t-replace-stock-pickers-jack-woodruff-candlestick-vinoo-ganesh-kepler|#1478 — Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler]]
+- [[1479-rWtbOgl5FTU-the-cheaper-ai-model-that-costs-you-more-rayan-krishnan-vals-ai|#1479 — The Cheaper AI Model That Costs You More - Rayan Krishnan, Vals AI]]
+- [[1481-8vDzncmzxyg-your-ai-agent-starts-every-session-like-a-new-hire-killian-carlsen-phelan-sonar|#1481 — Your AI Agent Starts Every Session Like a New Hire - Killian Carlsen-Phelan, Sonar]]
+- [[1484-9-Y_oS9OBLc-when-running-your-own-ai-models-beats-paying-for-apis-steven-latr-imec|#1484 — When Running Your Own AI Models Beats Paying for APIs - Steven Latré, imec]]
+- [[1486-1_lX0m64-aI-everyone-has-the-same-ai-models-here-s-what-sets-agents-apart-richmond-alake-oracle|#1486 — Everyone Has the Same AI Models. Here's What Sets Agents Apart - Richmond Alake, Oracle]]
+- [[1487-YU1uD_YkpjU-your-agent-just-paid-for-nothing-6-attacks-on-x402-payments-ishween-kaur-sofi|#1487 — Your Agent Just Paid for Nothing: 6 Attacks on x402 Payments - Ishween Kaur, SoFi]]
+- [[1493-v0UkV5qS9E4-why-we-rebuilt-microsoft-office-from-scratch-for-ai-agents-yijia-liang-compound-ai|#1493 — Why We Rebuilt Microsoft Office From Scratch for AI Agents - Yijia Liang, Compound AI]]
+- [[1495-1et3Lb_KLQo-i-don-t-fear-ai-slop-i-fear-untold-stories-zack-proser-workos|#1495 — I Don't Fear AI Slop. I Fear Untold Stories - Zack Proser, WorkOS]]
+- [[1498-CvmZtAPmAW4-78-wanted-this-ai-feature-almost-nobody-used-it-supriya-subudhi-bumble|#1498 — 78% Wanted This AI Feature. Almost Nobody Used It - Supriya Subudhi, Bumble]]
+- [[1499-LnQce-eHm8k-your-ai-agent-wants-your-data-here-s-how-to-lock-it-down-jeff-smith-oracle|#1499 — Your AI Agent Wants Your Data. Here's How to Lock It Down - Jeff Smith, Oracle]]
+- [[1502-vUJDyDnqT4c-your-ai-pilots-won-t-move-the-p-l-here-s-what-will-adam-nahari-apollo|#1502 — Your AI Pilots Won't Move the P&L. Here's What Will - Adam Nahari, Apollo]]
+- [[1509-q4ITwvlFplQ-you-can-t-tell-what-s-real-anymore-here-s-what-comes-next-crist-bal-valenzuela-runway|#1509 — You Can't Tell What's Real Anymore. Here's What Comes Next - Cristóbal Valenzuela, Runway]]
+- [[1510-qq2Hm4XNRgI-how-to-decide-what-your-ai-agent-should-remember-wojciech-pluta-oracle|#1510 — How to Decide What Your AI Agent Should Remember - Wojciech Pluta, Oracle]]
+- [[1514-JxNCuXkSWyQ-a-valid-key-let-an-ai-agent-delete-production-sagar-batchu-speakeasy|#1514 — A Valid Key Let an AI Agent Delete Production - Sagar Batchu, Speakeasy]]
+- [[1517-geMAe-PLJF4-i-made-a-fruit-fly-review-my-code-nick-nisi-workos|#1517 — I Made a Fruit Fly Review My Code - Nick Nisi, WorkOS]]
+- [[1524-5UgnatzpZ9E-building-the-ai-agent-is-easy-proving-it-s-safe-isn-t-jonathan-osborne-natwest|#1524 — Building the AI Agent Is Easy. Proving It's Safe Isn't - Jonathan Osborne, NatWest]]
+- [[1532--uBABM2AuFg-don-t-approve-the-ai-model-approve-the-app-doneyli-de-jesus-langfuse|#1532 — Don't Approve the AI Model. Approve the App - Doneyli De Jesus, Langfuse]]
+- [[1534-7WUzHIF32vA-if-your-ai-scores-100-your-eval-is-wrong-ramakrishnan-lokanathan-eslams-com|#1534 — If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com]]
+- [[1535-5SRjPT2Eo7A-your-company-should-train-its-own-ai-models-will-brown-prime-intellect|#1535 — Your Company Should Train Its Own AI Models - Will Brown, Prime Intellect]]
 
 ## Notes
 
