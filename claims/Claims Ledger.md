@@ -273,8 +273,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[206-kDEvo2__Ijg-from-copilot-to-colleague-trustworthy-agents-for-high-stakes-joel-hron-cto-thomson-reuters|#206 — Joel Hron, Thomson Reuters]] — agency is a spectrum of dials.
-    - **Anchor:** `kDEvo2__Ijg` 00:16:25.279 → 00:16:28.160 · confidence: high
-    - **Quote:** "a binary thing but as a lever that you can dial"
+    - **Anchor:** `kDEvo2__Ijg` 00:16:24.880 → 00:16:28.160 · confidence: high
+    - **Quote:** "not as a binary thing but as a lever that you can dial"
   - [[201-sl3icG-IjHo-how-to-build-planning-agents-without-losing-control-yogendra-miraje-factset|#201 — Yogendra Miraje, Factset]]
     - **Anchor:** `sl3icG-IjHo` 00:02:09.759 → 00:02:12.560 · confidence: high
     - **Quote:** "agentic workflows we can plan and execute"
@@ -1315,8 +1315,8 @@
 - **Support level:** strong
 - **Supporting sources:**
   - [[142-IA4lZjh9sTs-pipecat-cloud-enterprise-voice-agents-built-on-open-source-kwindla-hultman-kramer-daily|#142 — Kwindla Hultman Kramer, Daily]] — Draws the line by the clock: real time is anything inside 'conversational latency of a few hundred milliseconds or less'; everything slower is a different regime.
-    - **Anchor:** `IA4lZjh9sTs` 00:11:24.880 → 00:11:28.000 · confidence: high
-    - **Quote:** "conversational latency of a few hundred milliseconds or less."
+    - **Anchor:** `IA4lZjh9sTs` 00:11:22.399 → 00:11:28.000 · confidence: high
+    - **Quote:** "non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
   - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Neil Zeghidour, Gradium AI]] — Human-sounding conversation needs the whole stack — understanding, producing an answer, and pronouncing it — to land 'around 200 milliseconds', measured end to end.
     - **Anchor:** `P_RI1kCkRbo` 00:06:17.480 → 00:06:22.760 · confidence: high
     - **Quote:** "entire stack of understanding, producing an answer, and pronouncing it to be around 200 milliseconds."
