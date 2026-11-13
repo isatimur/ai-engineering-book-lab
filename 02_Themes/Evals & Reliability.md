@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 813
+- Total tagged videos: 821
 
 ## Cross-video synthesis
 
-- This theme appears across 813 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (699), Agent Architecture (665), RAG & Retrieval (23).
+- This theme appears across 821 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (707), Agent Architecture (673), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -825,6 +825,14 @@
 - [[1532--uBABM2AuFg-don-t-approve-the-ai-model-approve-the-app-doneyli-de-jesus-langfuse|#1532 — Don't Approve the AI Model. Approve the App - Doneyli De Jesus, Langfuse]]
 - [[1534-7WUzHIF32vA-if-your-ai-scores-100-your-eval-is-wrong-ramakrishnan-lokanathan-eslams-com|#1534 — If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com]]
 - [[1535-5SRjPT2Eo7A-your-company-should-train-its-own-ai-models-will-brown-prime-intellect|#1535 — Your Company Should Train Its Own AI Models - Will Brown, Prime Intellect]]
+- [[1539-JGtkTjn4120-why-ai-makes-you-100x-faster-but-not-your-company-mitchell-troyanovsky-basis|#1539 — Why AI Makes You 100x Faster but Not Your Company - Mitchell Troyanovsky, Basis]]
+- [[1540-0PqGT2L6cZM-why-datasite-stopped-building-its-own-parsing-adit-abraham-reducto-raj-bakhru-datasite|#1540 — Why Datasite Stopped Building Its Own Parsing - Adit Abraham, Reducto & Raj Bakhru, Datasite]]
+- [[1543-XIHZpZtYCzo-your-ai-agents-shouldn-t-care-where-they-run-nikhil-harithas-factory|#1543 — Your AI Agents Shouldn't Care Where They Run - Nikhil Harithas, Factory]]
+- [[1547-Sg6vtKOAOQ0-ai-labs-will-trap-you-or-replace-you-dillon-rolnick-nous-research|#1547 — AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research]]
+- [[1554-ra8X7_bnujw-why-waiting-for-the-next-ai-model-can-pay-off-john-stecher-blackstone-scott-worland-norm-a|#1554 — Why Waiting for the Next AI Model Can Pay Off - John Stecher, Blackstone & Scott Worland, Norm AI]]
+- [[1558-T-42NrYjwxM-our-smaller-model-beat-opus-on-finance-tasks-alexander-shevchenko-ramp|#1558 — Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp]]
+- [[1562-V2UqEUA8NjM-stop-making-your-customers-click-approve-emil-chetty-wise|#1562 — Stop Making Your Customers Click Approve - Emil Chetty, Wise]]
+- [[1565-YqJ4asgj1R8-stop-giving-your-ai-agents-api-keys-kim-maida-keycard-mason-egger-temporal|#1565 — Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal]]
 
 ## Notes
 

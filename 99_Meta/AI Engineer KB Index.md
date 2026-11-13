@@ -7,8 +7,8 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1533-1540|Latest batch: recent-1533-1540]]
-- Total video notes in corpus: 1442
+- [[batches/recent-1559-1566|Latest batch: recent-1559-1566]]
+- Total video notes in corpus: 1450
 - Video notes created in this batch: 2
 
 ## Themes
@@ -31,5 +31,5 @@
 
 ## Recent notes
 
-- [[1534-7WUzHIF32vA-if-your-ai-scores-100-your-eval-is-wrong-ramakrishnan-lokanathan-eslams-com|#1534 — If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com]]
-- [[1535-5SRjPT2Eo7A-your-company-should-train-its-own-ai-models-will-brown-prime-intellect|#1535 — Your Company Should Train Its Own AI Models - Will Brown, Prime Intellect]]
+- [[1562-V2UqEUA8NjM-stop-making-your-customers-click-approve-emil-chetty-wise|#1562 — Stop Making Your Customers Click Approve - Emil Chetty, Wise]]
+- [[1565-YqJ4asgj1R8-stop-giving-your-ai-agents-api-keys-kim-maida-keycard-mason-egger-temporal|#1565 — Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal]]
