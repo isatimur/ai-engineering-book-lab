@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1442
+Total videos: 1450
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1444,3 +1444,11 @@ Total videos: 1442
 1532. [Don't Approve the AI Model. Approve the App - Doneyli De Jesus, Langfuse](https://www.youtube.com/watch?v=-uBABM2AuFg) — `-uBABM2AuFg` — 19:20
 1534. [If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com](https://www.youtube.com/watch?v=7WUzHIF32vA) — `7WUzHIF32vA` — 18:45
 1535. [Your Company Should Train Its Own AI Models - Will Brown, Prime Intellect](https://www.youtube.com/watch?v=5SRjPT2Eo7A) — `5SRjPT2Eo7A` — 19:57
+1539. [Why AI Makes You 100x Faster but Not Your Company - Mitchell Troyanovsky, Basis](https://www.youtube.com/watch?v=JGtkTjn4120) — `JGtkTjn4120` — 19:13
+1540. [Why Datasite Stopped Building Its Own Parsing - Adit Abraham, Reducto & Raj Bakhru, Datasite](https://www.youtube.com/watch?v=0PqGT2L6cZM) — `0PqGT2L6cZM` — 19:49
+1543. [Your AI Agents Shouldn't Care Where They Run - Nikhil Harithas, Factory](https://www.youtube.com/watch?v=XIHZpZtYCzo) — `XIHZpZtYCzo` — 17:13
+1547. [AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research](https://www.youtube.com/watch?v=Sg6vtKOAOQ0) — `Sg6vtKOAOQ0` — 15:13
+1554. [Why Waiting for the Next AI Model Can Pay Off - John Stecher, Blackstone & Scott Worland, Norm AI](https://www.youtube.com/watch?v=ra8X7_bnujw) — `ra8X7_bnujw` — 20:45
+1558. [Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp](https://www.youtube.com/watch?v=T-42NrYjwxM) — `T-42NrYjwxM` — 14:15
+1562. [Stop Making Your Customers Click Approve - Emil Chetty, Wise](https://www.youtube.com/watch?v=V2UqEUA8NjM) — `V2UqEUA8NjM` — 15:33
+1565. [Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal](https://www.youtube.com/watch?v=YqJ4asgj1R8) — `YqJ4asgj1R8` — 52:36
