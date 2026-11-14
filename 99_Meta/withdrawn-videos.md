@@ -24,3 +24,21 @@ is the current instance.
 
 Published git history also retains withdrawn names. Rewriting it means a force-push that
 breaks every clone, so it is a deliberate, separate decision and not part of a removal.
+
+## The tapes
+
+Removing a note does not remove the transcript. Both talks kept their files in the
+transcripts mirror for eight weeks after withdrawal, because the mirror is a separate
+repo and the 2026-09-19 removal only touched `01_Videos/`. They were dropped from mirror
+HEAD on 2026-11-14, by the rule just above: a normal commit, no history rewrite, so older
+commits still contain them.
+
+They surfaced as the only two tapes in the mirror with no note on disk — 1452 tapes
+against 1450 notes. That diff is the check worth keeping:
+
+```
+comm -23 <(ls 99_Meta/transcripts/plain/*.txt | xargs -n1 basename | sed 's/\.txt$//' | sort) \
+         <(ls 01_Videos/*.md | sed -E 's/.*\/[0-9]+-([A-Za-z0-9_-]{11})-.*/\1/' | sort)
+```
+
+Empty is correct. Anything listed is a talk the corpus no longer claims but still stores.
