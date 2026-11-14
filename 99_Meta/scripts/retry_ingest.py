@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -32,6 +33,47 @@ PACING = {  # slower than the ingest defaults (2 / 3 / 2) on purpose
     "INGEST_SLEEP_SUBTITLES": "15",
     "INGEST_ATTEMPTS": "3",
 }
+
+
+def notes_in_other_refs() -> dict[str, str]:
+    """Map video id -> a git ref that already carries a note for it.
+
+    This job decides what is missing by globbing 01_Videos in the working tree,
+    so any talk whose note lives only on some other branch looks missing. Fetch
+    it again and the ingest numbers it `max(playlist_index on disk) + offset`
+    (update_ai_engineer_channel.py), which is lower than the number it already
+    has elsewhere — one talk, two notes, two sequence numbers.
+
+    That happened three times on 2026-11-14 (1543/1538, 1547/1542, 1558/1543)
+    while a corpus PR was open: ten caption fetches for five talks, against a
+    rate limit that takes days to recover.
+
+    Checking the branch name instead would miss the common path, which is to
+    open the PR and go back to main — main lacks those notes too. So ask the
+    object store, which needs no network and does not care what is checked out.
+
+    Known limit: a note on an abandoned branch keeps its talk out of the ingest
+    forever. Every caller logs the ref it skipped for, so that is visible rather
+    than silent. On 2026-11-14 the only such notes across 33 refs were the two
+    talks withdrawn at speaker request, which never reach the missing list
+    anyway. The nightly `bot/ingest-channel` workflow is a second ingester that
+    this cannot see; it runs from a fresh checkout of main.
+    """
+    refs = subprocess.run(["git", "for-each-ref", "--format=%(refname)",
+                           "refs/heads", "refs/remotes"],
+                          cwd=ROOT, capture_output=True, text=True)
+    if refs.returncode != 0:
+        return {}
+    found: dict[str, str] = {}
+    for ref in refs.stdout.split():
+        tree = subprocess.run(["git", "ls-tree", "-r", "--name-only", ref, "--", "01_Videos/"],
+                              cwd=ROOT, capture_output=True, text=True)
+        if tree.returncode != 0:
+            continue
+        for path in tree.stdout.splitlines():
+            if m := re.search(r"/\d+-([A-Za-z0-9_-]{11})-", path):
+                found.setdefault(m.group(1), ref)
+    return found
 
 
 def load_state() -> dict:
@@ -56,25 +98,6 @@ def main() -> int:
     ap.add_argument("--force", action="store_true", help="ignore the back-off timer")
     args = ap.parse_args()
 
-    # Only main is guaranteed to hold every note. This job decides what is
-    # missing by globbing 01_Videos in the working tree, so on a branch cut
-    # before a corpus PR merged, that PR's talks look missing and get fetched
-    # again — numbered from the smaller corpus, so the same talk lands under a
-    # second sequence number. That happened three times on 2026-11-14
-    # (1543/1538, 1547/1542, 1558/1543) and cost ten caption fetches against a
-    # rate limit that takes days to recover.
-    #
-    # Waiting is cheap and the fetch budget is not, so stop rather than guess.
-    # Nothing is lost: the talks stay in the next run's missing list.
-    branch = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"],
-                            cwd=ROOT, capture_output=True, text=True)
-    current = branch.stdout.strip()
-    if branch.returncode == 0 and current and current != "main":
-        print(f"[retry] on branch '{current}', not main — skipping. "
-              "A branch can be missing notes that main has, and re-fetching those "
-              "duplicates them. Merge or switch back to main.")
-        return 0
-
     state = load_state()
     if not args.force and time.time() < state["next_run_after"]:
         wait_left = (state["next_run_after"] - time.time()) / 3600
@@ -93,6 +116,22 @@ def main() -> int:
         return 0
 
     rows = [json.loads(line) for line in Path(report["missing_inventory"]).read_text().splitlines() if line.strip()]
+
+    elsewhere = notes_in_other_refs()
+    kept = []
+    for row in rows:
+        if ref := elsewhere.get(row.get("id")):
+            print(f"[retry] skip {row['id']}: already has a note on {ref}")
+        else:
+            kept.append(row)
+    if len(kept) != len(rows):
+        print(f"[retry] {len(rows) - len(kept)} of {len(rows)} missing talk(s) already noted "
+              "on another ref; merge it to stop them looking missing")
+        rows = kept
+    if not rows:
+        print("[retry] every missing talk already has a note elsewhere; nothing to fetch")
+        return 0
+
     chunk = rows[: args.chunk]
     chunk_path = Path("/tmp/ai-engineer-missing-chunk.jsonl")
     chunk_path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in chunk))

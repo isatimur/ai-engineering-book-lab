@@ -106,10 +106,12 @@ def main() -> None:
     #
     # On 2026-11-14 the retry loop produced three such pairs (1543/1538,
     # 1547/1542, 1558/1543) because it globs 01_Videos on whatever is checked
-    # out: a branch without a corpus PR's notes makes those talks look missing,
-    # so it re-fetched them and numbered them from the smaller corpus. It cost
-    # ten caption fetches against a rate limit that takes days to recover, and
-    # nothing caught it — it surfaced as a merge conflict, by luck.
+    # out: with a corpus PR's notes absent from disk, those talks looked
+    # missing and were fetched again. update_ai_engineer_channel.py numbers a
+    # new note `max(playlist_index on disk) + offset`, so the second copy drew
+    # a LOWER number than the first. It cost ten caption fetches against a rate
+    # limit that takes days to recover, and nothing caught it — it surfaced as
+    # a merge conflict, by luck.
     if dupes:
         print(f"\nFAIL — {len(dupes)} video id(s) have more than one note:")
         for vid, names in sorted(dupes.items()):
@@ -117,10 +119,10 @@ def main() -> None:
             for name in sorted(names):
                 print(f"    {name}")
         print("\nKeep whichever note the rest of the corpus already references, and delete the\n"
-              "other. Do not guess from the numbers: in the race above the stale note was the\n"
-              "LOWER-numbered one, because the re-fetch numbered it from a corpus that was\n"
-              "missing the notes it was about to duplicate. Check what points where first:\n"
-              "  grep -rl '<video id>' 02_Themes 05_Book_Ideas claims claims-2 evidence")
+              "other. Check what points where before deciding:\n"
+              "  grep -rl '<video id>' 02_Themes 05_Book_Ideas claims claims-2 evidence\n"
+              "In the 2026-11-14 race the stale copy was the LOWER-numbered one, but that\n"
+              "follows from how it arose, not from a rule. Read, do not infer.")
         raise SystemExit(1)
 
     if strict and (no_tx or no_desc):
