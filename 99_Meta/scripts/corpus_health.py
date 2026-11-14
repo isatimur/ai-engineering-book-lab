@@ -45,11 +45,13 @@ def main() -> None:
 
     notes = sorted((ROOT / "01_Videos").glob("*.md"))
     no_tx, no_desc, flagged = [], [], []
+    by_id: dict[str, list[str]] = {}
     for n in notes:
         m = re.match(r"(\d+)-([A-Za-z0-9_-]{11})-", n.name)
         if not m:
             continue
         vid = m.group(2)
+        by_id.setdefault(vid, []).append(n.name)
         if vid not in have_tx:
             no_tx.append(n.name)
         if vid not in have_desc:
@@ -72,7 +74,10 @@ def main() -> None:
         if m and any(p in m.group(1) for p in boiler_markers):
             boilerplate.append(n.name)
 
+    dupes = {vid: names for vid, names in by_id.items() if len(names) > 1}
+
     print(f"corpus notes:            {len(notes)}")
+    print(f"duplicate video ids:     {len(dupes)}")
     print(f"missing transcript file: {len(no_tx)}")
     print(f"status=unavailable:      {len(flagged)}")
     print(f"missing description:     {len(no_desc)}")
@@ -90,8 +95,36 @@ def main() -> None:
               "  python3 99_Meta/scripts/fetch_video_descriptions.py\n"
               "  python3 99_Meta/scripts/build_shared_artifacts.py\n"
               "  # transcripts: re-run the ingest script, or Whisper for caption-less videos")
-        if strict:
-            raise SystemExit(1)
+
+    # Duplicates fail the run whether or not --strict was passed, unlike the
+    # backfill debt above. Debt is an expected CI condition: YouTube blocks the
+    # runners, so a nightly ingest lands notes with no transcript and the report
+    # just has to state it. Two notes for one talk is never expected and never
+    # self-heals — it means two ingests numbered the same video differently, so
+    # the corpus now double-counts it in every theme tally and the synthesis
+    # pack. A warning would scroll past.
+    #
+    # On 2026-11-14 the retry loop produced three such pairs (1543/1538,
+    # 1547/1542, 1558/1543) because it globs 01_Videos on whatever is checked
+    # out: a branch without a corpus PR's notes makes those talks look missing,
+    # so it re-fetched them and numbered them from the smaller corpus. It cost
+    # ten caption fetches against a rate limit that takes days to recover, and
+    # nothing caught it — it surfaced as a merge conflict, by luck.
+    if dupes:
+        print(f"\nFAIL — {len(dupes)} video id(s) have more than one note:")
+        for vid, names in sorted(dupes.items()):
+            print(f"  {vid}")
+            for name in sorted(names):
+                print(f"    {name}")
+        print("\nKeep whichever note the rest of the corpus already references, and delete the\n"
+              "other. Do not guess from the numbers: in the race above the stale note was the\n"
+              "LOWER-numbered one, because the re-fetch numbered it from a corpus that was\n"
+              "missing the notes it was about to duplicate. Check what points where first:\n"
+              "  grep -rl '<video id>' 02_Themes 05_Book_Ideas claims claims-2 evidence")
+        raise SystemExit(1)
+
+    if strict and (no_tx or no_desc):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
