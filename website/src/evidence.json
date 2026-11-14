@@ -2136,12 +2136,12 @@
         },
         {
           "video_id": "4mRekpZpBZs",
-          "start": "00:00:56.480",
-          "end": "00:01:01.520",
-          "start_seconds": 56,
+          "start": "00:14:16.720",
+          "end": "00:14:20.720",
+          "start_seconds": 856,
           "confidence": "high",
           "label": "#63 — Arman Hezarkhani, Tenex",
-          "quote": "I'm going to talk about how we pay engineers. And we pay engineers like salespeople."
+          "quote": "my belief is that the current way that we compensate people is actually holding them back."
         }
       ]
     },
@@ -4818,12 +4818,12 @@
         },
         {
           "video_id": "4mRekpZpBZs",
-          "start": "00:00:56.480",
-          "end": "00:01:01.520",
-          "start_seconds": 56,
+          "start": "00:14:16.720",
+          "end": "00:14:20.720",
+          "start_seconds": 856,
           "confidence": "high",
           "label": "#63 — Arman Hezarkhani, Tenex",
-          "quote": "I'm going to talk about how we pay engineers. And we pay engineers like salespeople."
+          "quote": "my belief is that the current way that we compensate people is actually holding them back."
         }
       ]
     },
