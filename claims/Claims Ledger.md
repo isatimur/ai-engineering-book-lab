@@ -827,8 +827,8 @@
     - **Anchor:** `WqZq8L-v9pA` 00:06:04.160 → 00:06:09.360 · confidence: high
     - **Quote:** "just plain old PR throughput. How many pull requests does the average engineer merge per week?"
   - [[063-4mRekpZpBZs-paying-engineers-like-salespeople-arman-hezarkhani-tenex|#63 — Arman Hezarkhani, Tenex]] — extending the metric problem to compensation: when effort is cheap, paying for effort produces the wrong incentives; outcome-based comp is one possible response.
-    - **Anchor:** `4mRekpZpBZs` 00:00:56.480 → 00:01:01.520 · confidence: high
-    - **Quote:** "I'm going to talk about how we pay engineers. And we pay engineers like salespeople."
+    - **Anchor:** `4mRekpZpBZs` 00:14:16.720 → 00:14:20.720 · confidence: high
+    - **Quote:** "my belief is that the current way that we compensate people is actually holding them back."
 - **Caveats / counterpoints:** Activity metrics are not useless — they remain a leading indicator of adoption and a debugging signal for blockers. The claim is that they become misleading as the *primary* measure of value once AI removes the cost-of-production constraint.
 - **Candidate chapters:** 4, 9
 - **Reusable phrasing:** Counting artifacts in a world where artifacts are cheap is counting the wrong thing.
