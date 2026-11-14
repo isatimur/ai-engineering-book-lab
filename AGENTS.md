@@ -32,6 +32,17 @@ the book *From Copilot to Colleague*. The only runnable application is the
 The Python scripts under `99_Meta/scripts/` (e.g. evidence/stats regeneration) are
 stdlib-only and require no pip install.
 
+## Gates
+
+[`docs/GATES.md`](docs/GATES.md) lists every standing check, what it catches,
+and where it actually runs.
+
+Read it before trusting a green tick. As of 2026-11-14 the eleven anchor-gate
+steps in `evidence-gates.yml` are **dormant** — they need a `CORPUS_TOKEN`
+secret that does not exist, so they skip and the job reports success. Six more
+checks are invoked by no workflow and no runner at all. Run the ones that
+matter to your change locally.
+
 ## Session hygiene (all agents)
 
 **Commit or explicitly park — never leave work untracked at session end.**
