@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 816
+- Total tagged videos: 821
 
 ## Cross-video synthesis
 
-- This theme appears across 816 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (767), Evals & Reliability (673), MCP & Tooling (105).
+- This theme appears across 821 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (772), Evals & Reliability (678), MCP & Tooling (105).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -828,6 +828,11 @@
 - [[1558-T-42NrYjwxM-our-smaller-model-beat-opus-on-finance-tasks-alexander-shevchenko-ramp|#1558 — Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp]]
 - [[1562-V2UqEUA8NjM-stop-making-your-customers-click-approve-emil-chetty-wise|#1562 — Stop Making Your Customers Click Approve - Emil Chetty, Wise]]
 - [[1565-YqJ4asgj1R8-stop-giving-your-ai-agents-api-keys-kim-maida-keycard-mason-egger-temporal|#1565 — Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal]]
+- [[1566-3osCbSufv8g-voice-ai-where-one-wrong-question-breaks-the-rules-shiv-indap-upstart-brooke-hopkins-coval|#1566 — Voice AI Where One Wrong Question Breaks the Rules - Shiv Indap, Upstart & Brooke Hopkins, Coval]]
+- [[1567-3Ad73Onx3Aw-better-search-took-this-ai-agent-from-36-to-98-accuracy-aamir-shakir-mixedbread|#1567 — Better Search Took This AI Agent From 36% to 98% Accuracy - Aamir Shakir, Mixedbread]]
+- [[1571-AYFcmnQrZCg-ai-agents-will-upend-investing-even-more-than-coding-frank-long-coatue|#1571 — AI Agents Will Upend Investing Even More Than Coding - Frank Long, Coatue]]
+- [[1573-4VmugsE-iP0-how-we-took-an-ai-agent-from-41-to-97-accurate-milind-sunil-shah-brainbase-labs|#1573 — How We Took an AI Agent From 41% to 97% Accurate - Milind Sunil Shah, Brainbase Labs]]
+- [[1575-zLc8zeGeNaY-how-netflix-evaluates-ai-when-there-s-no-right-answer-cameron-wolfe-netflix|#1575 — How Netflix Evaluates AI When There's No Right Answer - Cameron Wolfe, Netflix]]
 
 ## Notes
 
