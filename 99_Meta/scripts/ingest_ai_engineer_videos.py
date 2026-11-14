@@ -146,6 +146,22 @@ _NO_SUBTITLES = (
 )
 
 
+# KNOWN LIMIT: this has never fired, and as written it cannot.
+#
+# yt-dlp announces an absent caption track with
+#     [info] There are no subtitles for the requested languages
+# on STDOUT (YoutubeDL._write_subtitles, via to_screen) and then exits 0. The
+# only caller below reads stderr, and only when the exit code is non-zero, so
+# a genuinely captionless talk reaches the "exit 0, wrote no file" branch and
+# stays retryable forever. Verified 2026-11-14: 1455 notes in 01_Videos, zero
+# with transcript_status "unavailable".
+#
+# The failure is in the safe direction — no talk is ever falsely marked
+# captionless — and it costs nothing today, because no id in the current
+# backlog has hit that branch once in the retry log. It does mean the missing
+# list has a floor: the first talk that truly has no captions will sit in it
+# for good. Left alone on purpose. Making "unavailable" easier to earn is how
+# 16 of 18 talks were lost on 2026-10-10.
 def _says_no_subtitles(stderr: str) -> bool:
     low = (stderr or "").lower()
     return any(sig in low for sig in _NO_SUBTITLES)
@@ -155,6 +171,21 @@ def fetch_transcript(video: Video) -> tuple[str, Path | None, Path | None]:
     raw_base = TRANSCRIPT_DIR / "raw" / video.id
     existing_vtt = list(raw_base.parent.glob(f"{video.id}*.vtt"))
     if not existing_vtt:
+        # Toolchain. yt-dlp has deprecated YouTube extraction without a
+        # JavaScript runtime. Without one it still works, by falling back to a
+        # different client — the old stack here reached captions through
+        # android-vr — but that path is on its way out. deno is the only
+        # runtime enabled by default. A fetch that has one prints
+        #     [youtube] [jsc:deno] Solving JS challenges using deno
+        # and a fetch without one prints "No supported JavaScript runtime
+        # could be found". Checked 2026-11-14 with yt-dlp 2026.10.26 and
+        # deno 2.9.8.
+        # deno 1.41 was on PATH and was NOT detected, so "deno is installed"
+        # is not the test — the jsc line is.
+        #
+        # This is about extraction, not throttling. The same probe on the
+        # upgraded stack still answered HTTP 429 on the caption endpoint.
+        # Whether the old stack made the rate limiting worse is untested.
         cmd = [
             shutil.which("yt-dlp") or "yt-dlp",
             "--skip-download",
