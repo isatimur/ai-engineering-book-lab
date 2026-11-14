@@ -6,6 +6,7 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -99,8 +100,19 @@ def fetch_latest_inventory(channel_url: str, output_path: Path) -> None:
 def normalize_inventory(rows: list[dict], known_indices: dict[str, int]) -> tuple[list[dict], list[dict]]:
     withdrawn = withdrawn_video_ids()
     if withdrawn:
+        # stderr, because --dry-run writes its JSON report to stdout and CI
+        # redirects that straight into a file it parses with jq. This line went
+        # to stdout until 2026-11-14, so the report began with text and jq
+        # exited non-zero; the workflow's missing_count came out EMPTY, and its
+        # steps test for '0' or not-'0', so the branch that updates the tracking
+        # issue and the branch that closes it were both skipped. The job stayed
+        # green and the tracker silently froze.
+        #
+        # It only broke once a talk was actually withdrawn: issue #67 last
+        # updated 2026-09-18, the withdrawal landed 2026-09-19, and nothing had
+        # touched it since. Diagnostics do not belong in a data stream.
         print(f"[channel] {len(withdrawn)} video(s) withdrawn at speaker request — "
-              f"not treated as missing")
+              f"not treated as missing", file=sys.stderr)
     missing = [row for row in rows
                if row.get("id") not in known_indices and row.get("id") not in withdrawn]
     max_index = max(known_indices.values(), default=0)
