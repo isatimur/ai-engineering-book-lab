@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1450
+Total videos: 1455
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1452,3 +1452,8 @@ Total videos: 1450
 1558. [Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp](https://www.youtube.com/watch?v=T-42NrYjwxM) — `T-42NrYjwxM` — 14:15
 1562. [Stop Making Your Customers Click Approve - Emil Chetty, Wise](https://www.youtube.com/watch?v=V2UqEUA8NjM) — `V2UqEUA8NjM` — 15:33
 1565. [Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal](https://www.youtube.com/watch?v=YqJ4asgj1R8) — `YqJ4asgj1R8` — 52:36
+1566. [Voice AI Where One Wrong Question Breaks the Rules - Shiv Indap, Upstart & Brooke Hopkins, Coval](https://www.youtube.com/watch?v=3osCbSufv8g) — `3osCbSufv8g` — 17:03
+1567. [Better Search Took This AI Agent From 36% to 98% Accuracy - Aamir Shakir, Mixedbread](https://www.youtube.com/watch?v=3Ad73Onx3Aw) — `3Ad73Onx3Aw` — 16:30
+1571. [AI Agents Will Upend Investing Even More Than Coding - Frank Long, Coatue](https://www.youtube.com/watch?v=AYFcmnQrZCg) — `AYFcmnQrZCg` — 14:05
+1573. [How We Took an AI Agent From 41% to 97% Accurate - Milind Sunil Shah, Brainbase Labs](https://www.youtube.com/watch?v=4VmugsE-iP0) — `4VmugsE-iP0` — 13:23
+1575. [How Netflix Evaluates AI When There's No Right Answer - Cameron Wolfe, Netflix](https://www.youtube.com/watch?v=zLc8zeGeNaY) — `zLc8zeGeNaY` — 17:53

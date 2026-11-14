@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1559-1566|Latest batch: recent-1559-1566]]
-- Total video notes in corpus: 1450
-- Video notes created in this batch: 2
+- [[batches/recent-1574-1581|Latest batch: recent-1574-1581]]
+- Total video notes in corpus: 1455
+- Video notes created in this batch: 1
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,5 +31,4 @@
 
 ## Recent notes
 
-- [[1562-V2UqEUA8NjM-stop-making-your-customers-click-approve-emil-chetty-wise|#1562 — Stop Making Your Customers Click Approve - Emil Chetty, Wise]]
-- [[1565-YqJ4asgj1R8-stop-giving-your-ai-agents-api-keys-kim-maida-keycard-mason-egger-temporal|#1565 — Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal]]
+- [[1575-zLc8zeGeNaY-how-netflix-evaluates-ai-when-there-s-no-right-answer-cameron-wolfe-netflix|#1575 — How Netflix Evaluates AI When There's No Right Answer - Cameron Wolfe, Netflix]]
