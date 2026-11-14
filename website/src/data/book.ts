@@ -20,7 +20,7 @@ export const BOOK: Book = {
   id: 'from-copilot-to-colleague',
   title: 'From Copilot to Colleague',
   subtitle: 'How AI Engineering Turns Models into Dependable Systems',
-  authors: ['Timur Isachenko', 'Daniel Mohanrao'],
+  authors: ['Timur Isachenko'],
   coverImage: '/covers/from-copilot-to-colleague.png',
   spineColor: '#1A1A1A',
   category: 'AI Engineering',

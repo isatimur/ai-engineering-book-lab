@@ -17,7 +17,7 @@ export const theme = {
 
 export const BOOK_TITLE = 'From Copilot to Colleague';
 export const BOOK_URL = 'fromcopilottocolleague.com';
-export const AUTHORS = 'Timur Isachenko & Daniel Mohanrao';
+export const AUTHORS = 'Timur Isachenko';
 
 /** Frame rate for every composition in the series — keep it uniform across chapters. */
 export const FPS = 30;
