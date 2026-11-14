@@ -21,6 +21,15 @@ That is a fact about the transcript, not a judgement about meaning — which is
 why this check exists and two earlier candidates were built, measured, and
 thrown away.
 
+A FLAG IS NOT A VERDICT, AND ONE FALSE-POSITIVE CLASS IS KNOWN. A live demo in
+which an assistant speaks aloud produces turn boundaries that are not questions
+at all. On 2026-11-14 this flagged claims-2#41 on `Bc6Ojl2XS1w`, where the tape
+reads *"I've kind of built this application called Life Jukebox… we actually
+give the real-time Gemini Live model a tool to then generate a song using
+Lyra."* — the speaker narrating his own architecture. The '>>' nearby belongs
+to the demo's AI DJ and the human answering it. The citation was correct and
+was left alone. Read the tape before changing an entry.
+
 COVERAGE IS PARTIAL AND THE OUTPUT SAYS SO. Only about 40% of corpus
 transcripts carry '>>' markers at all, and the marking is inconsistent even
 within a talk: in the very case above there is NO marker between the question
