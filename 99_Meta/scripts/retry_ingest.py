@@ -56,6 +56,25 @@ def main() -> int:
     ap.add_argument("--force", action="store_true", help="ignore the back-off timer")
     args = ap.parse_args()
 
+    # Only main is guaranteed to hold every note. This job decides what is
+    # missing by globbing 01_Videos in the working tree, so on a branch cut
+    # before a corpus PR merged, that PR's talks look missing and get fetched
+    # again — numbered from the smaller corpus, so the same talk lands under a
+    # second sequence number. That happened three times on 2026-11-14
+    # (1543/1538, 1547/1542, 1558/1543) and cost ten caption fetches against a
+    # rate limit that takes days to recover.
+    #
+    # Waiting is cheap and the fetch budget is not, so stop rather than guess.
+    # Nothing is lost: the talks stay in the next run's missing list.
+    branch = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"],
+                            cwd=ROOT, capture_output=True, text=True)
+    current = branch.stdout.strip()
+    if branch.returncode == 0 and current and current != "main":
+        print(f"[retry] on branch '{current}', not main — skipping. "
+              "A branch can be missing notes that main has, and re-fetching those "
+              "duplicates them. Merge or switch back to main.")
+        return 0
+
     state = load_state()
     if not args.force and time.time() < state["next_run_after"]:
         wait_left = (state["next_run_after"] - time.time()) / 3600
@@ -94,6 +113,14 @@ def main() -> int:
         subprocess.run([str(SCRIPTS / "build_book_synthesis.py")], cwd=ROOT, capture_output=True, text=True)
         save_state({"next_run_after": 0, "wait_hours": BASE_WAIT_H})
         print(f"[retry] ingested {done}; {len(rows) - done} still missing")
+        # Backstop to the branch guard above, which only covers the cause we
+        # know about. Nobody reads this log until something looks wrong, so a
+        # duplicate has to be loud enough to find by grepping for FAIL.
+        health = subprocess.run([sys.executable, str(SCRIPTS / "corpus_health.py")],
+                                cwd=ROOT, capture_output=True, text=True)
+        if health.returncode != 0:
+            print("[retry] FAIL corpus_health rejected the corpus after this run:")
+            print(health.stdout[-1200:])
     else:
         wait = min(MAX_WAIT_H, state["wait_hours"] * 2 if state["next_run_after"] else BASE_WAIT_H)
         save_state({"next_run_after": time.time() + wait * 3600, "wait_hours": wait})
