@@ -652,12 +652,12 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:16:25.279",
+          "start": "00:16:24.880",
           "end": "00:16:28.160",
-          "start_seconds": 985,
+          "start_seconds": 984,
           "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "a binary thing but as a lever that you can dial"
+          "quote": "not as a binary thing but as a lever that you can dial"
         },
         {
           "video_id": "sl3icG-IjHo",
@@ -2702,12 +2702,12 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:16:25.279",
+          "start": "00:16:24.880",
           "end": "00:16:28.160",
-          "start_seconds": 985,
+          "start_seconds": 984,
           "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "a binary thing but as a lever that you can dial"
+          "quote": "not as a binary thing but as a lever that you can dial"
         },
         {
           "video_id": "sl3icG-IjHo",
@@ -3444,12 +3444,12 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:16:25.279",
+          "start": "00:16:24.880",
           "end": "00:16:28.160",
-          "start_seconds": 985,
+          "start_seconds": 984,
           "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "a binary thing but as a lever that you can dial"
+          "quote": "not as a binary thing but as a lever that you can dial"
         },
         {
           "video_id": "sl3icG-IjHo",
@@ -5619,12 +5619,12 @@
       "anchors": [
         {
           "video_id": "kDEvo2__Ijg",
-          "start": "00:16:25.279",
+          "start": "00:16:24.880",
           "end": "00:16:28.160",
-          "start_seconds": 985,
+          "start_seconds": 984,
           "confidence": "high",
           "label": "#206 — Joel Hron, Thomson Reuters",
-          "quote": "a binary thing but as a lever that you can dial"
+          "quote": "not as a binary thing but as a lever that you can dial"
         },
         {
           "video_id": "sl3icG-IjHo",
@@ -5859,12 +5859,12 @@
       "anchors": [
         {
           "video_id": "IA4lZjh9sTs",
-          "start": "00:11:24.880",
+          "start": "00:11:22.399",
           "end": "00:11:28.000",
-          "start_seconds": 684,
+          "start_seconds": 682,
           "confidence": "high",
           "label": "#142 — Kwindla Hultman Kramer, Daily",
-          "quote": "conversational latency of a few hundred milliseconds or less."
+          "quote": "non-real time, I mean everything that's not conversational latency of a few hundred milliseconds or less."
         },
         {
           "video_id": "P_RI1kCkRbo",
