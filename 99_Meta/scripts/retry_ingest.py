@@ -88,7 +88,14 @@ def save_state(state: dict) -> None:
 
 
 def first_json(text: str) -> dict:
-    """The update script prints a '[channel] ...' line before its JSON report."""
+    """Read the JSON report, tolerating any chatter printed before it.
+
+    The update script used to print a '[channel] ...' line to stdout ahead of
+    its report. This loop coped; CI did not, and parsed the report with jq into
+    an empty missing_count for two months (fixed 2026-11-14 by sending that line
+    to stderr). The tolerance stays as a belt — a future diagnostic on stdout
+    should not stop the ingest — but it is no longer load-bearing.
+    """
     return json.loads(text[text.index("{"):])
 
 

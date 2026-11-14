@@ -69,7 +69,21 @@ jobs:
             exit "$rc"
           fi
           cat /tmp/channel-report.json
-          MISSING=$(jq -r '.missing_count // 0' /tmp/channel-report.json)
+          if ! MISSING=$(jq -er '.missing_count // 0' /tmp/channel-report.json); then
+            echo "::error::channel-report.json is not valid JSON — refusing to guess the backlog"
+            exit 1
+          fi
+          # Every step below branches on this being '0' or not '0'. An empty
+          # value matches neither, so both the update-issue and close-issue
+          # steps skip and the tracker freezes while the job reports success.
+          # That is how #67 sat stale from 2026-09-18 to 2026-11-14. Fail loudly
+          # instead: a wrong number is visible, a missing one was not.
+          case "$MISSING" in
+            ''|*[!0-9]*)
+              echo "::error::missing_count is not a number: '${MISSING}'"
+              exit 1
+              ;;
+          esac
           echo "missing_count=${MISSING}" >> "$GITHUB_OUTPUT"
 
       - name: Upload report
