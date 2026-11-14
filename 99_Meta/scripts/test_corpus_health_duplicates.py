@@ -82,12 +82,16 @@ class CorpusHealthCase(unittest.TestCase):
         self.assertIn("007-aaaaaaaaaaa-first-talk.md", r.stdout)
 
     def test_duplicate_fails_without_strict(self):
-        """The point of the check: no --strict, still a failure."""
+        """The point of the check: no --strict passed, still a failure.
+
+        run_health forwards only the args given here, and none are, so the
+        subprocess runs bare. Contrast with test_backfill_debt_alone, where the
+        same bare invocation exits 0.
+        """
         r = self.run_health([
             "001-aaaaaaaaaaa-first-talk.md",
             "007-aaaaaaaaaaa-first-talk.md",
         ])
-        self.assertNotIn("--strict", " ".join(sys.argv))
         self.assertEqual(r.returncode, 1, r.stdout + r.stderr)
 
     def test_backfill_debt_alone_does_not_fail(self):
