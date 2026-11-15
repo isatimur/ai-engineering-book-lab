@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1455
+Total videos: 1458
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1457,3 +1457,6 @@ Total videos: 1455
 1571. [AI Agents Will Upend Investing Even More Than Coding - Frank Long, Coatue](https://www.youtube.com/watch?v=AYFcmnQrZCg) — `AYFcmnQrZCg` — 14:05
 1573. [How We Took an AI Agent From 41% to 97% Accurate - Milind Sunil Shah, Brainbase Labs](https://www.youtube.com/watch?v=4VmugsE-iP0) — `4VmugsE-iP0` — 13:23
 1575. [How Netflix Evaluates AI When There's No Right Answer - Cameron Wolfe, Netflix](https://www.youtube.com/watch?v=zLc8zeGeNaY) — `zLc8zeGeNaY` — 17:53
+1578. [Your AI Isn't the Advantage. Your Judgment Is - Sid Pednekar](https://www.youtube.com/watch?v=C2-v6wkHXhY) — `C2-v6wkHXhY` — 18:13
+1579. [7 Things Your AI Coworker Needs - Philipp Schmid, Google DeepMind](https://www.youtube.com/watch?v=EtZwTYahfek) — `EtZwTYahfek` — 17:27
+1581. [Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI](https://www.youtube.com/watch?v=SUqQlvyI3N8) — `SUqQlvyI3N8` — 14:58

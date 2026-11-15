@@ -1,13 +1,13 @@
 # Corpus Stats
 
-- Total notes: 1455
-- Transcript status mix: {'auto_en': 4, 'auto_en_orig': 1450, 'whisper_base_en': 1}
+- Total notes: 1458
+- Transcript status mix: {'auto_en': 4, 'auto_en_orig': 1453, 'whisper_base_en': 1}
 
 ## Theme counts
 
-- Agent Architecture: 821
-- Coding Agents: 931
-- Evals & Reliability: 826
+- Agent Architecture: 824
+- Coding Agents: 934
+- Evals & Reliability: 829
 - General AI Engineering: 5
 - MCP & Tooling: 178
 - Models & Inference: 134
@@ -19,8 +19,8 @@
 ## Frequent speakers
 
 - Laurie Voss: 7
+- Philipp Schmid: 6
 - Stephen Chin: 5
-- Philipp Schmid: 5
 - Kevin Hou: 4
 - Harald Kirschner: 4
 - Will Brown: 4
