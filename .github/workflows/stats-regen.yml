@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write   # needed to dispatch website-deploy after a real change
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,30 +37,33 @@ jobs:
           python-version: '3.13'
       - name: Regenerate STATS.md + stats.json
         run: python 99_Meta/scripts/build_stats.py
+      # evidence-regen.yml triggers on overlapping paths and races this job to
+      # push to main. On a lost race the regenerated files are recomputed
+      # against the new tip, never rebased onto it — see the long comment in
+      # scripts/commit_regenerated.sh for the 2026-11-15 incident that forced
+      # this, and scripts/test_commit_regenerated.py for the controls.
       - name: Commit changes (if any)
+        id: commit
         run: |
-          if ! git diff --quiet STATS.md stats.json website/src/data/stats.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add STATS.md stats.json website/src/data/stats.json
-            git commit -m "chore(stats): regenerate STATS.md + stats.json from corpus changes [skip ci]"
+          scripts/commit_regenerated.sh \
+            --message "chore(stats): regenerate STATS.md + stats.json from corpus changes [skip ci]" \
+            --regen "python 99_Meta/scripts/build_stats.py" \
+            -- STATS.md stats.json website/src/data/stats.json
 
-            # evidence-regen.yml can trigger on the same push (overlapping path
-            # filters under claims/**) and race this job to push to main.
-            # Rebase-and-retry instead of failing outright on a rejected push.
-            for attempt in 1 2 3 4 5; do
-              if git push; then
-                break
-              fi
-              if [ "$attempt" -eq 5 ]; then
-                echo "::error::Failed to push stats regen after ${attempt} attempts."
-                exit 1
-              fi
-              echo "Push rejected (attempt ${attempt}/5) — main moved, rebasing and retrying..."
-              sleep $((attempt * 3))
-              git fetch origin main
-              git rebase origin/main
-            done
-          else
-            echo "No stats changes — skipping commit"
-          fi
+      # A push made with GITHUB_TOKEN never triggers another workflow, so the
+      # commit above cannot start website-deploy by itself — not because of
+      # the [skip ci] tag, which is merely belt and braces. Measured on
+      # 2026-11-15: 0 of the last 30 bot stats commits ever deployed, so
+      # website/src/data/stats.json only reached production when an unrelated
+      # human change to website/** happened to carry it. The homepage sat on
+      # 1455 videos against a 1458-note corpus.
+      #
+      # Dispatching explicitly, and only when something was actually pushed,
+      # is narrower than a workflow_run trigger (which would fire a production
+      # deploy even on a no-op run) and keeps one source of truth: the site
+      # deploys the committed files rather than regenerating its own copy.
+      - name: Deploy the site so the new numbers are the published ones
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run website-deploy.yml --ref main

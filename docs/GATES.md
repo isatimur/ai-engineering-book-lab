@@ -51,6 +51,9 @@ guard flips with no code change.
 | `check_book_consistency.py` | cross-chapter contradictions | book-consistency.yml |
 | `corpus_health.py` | backfill debt; **duplicate video ids (always fails)** | ingest-channel.yml |
 | `check_note_frontmatter.py` | malformed note frontmatter | ingest-channel.yml |
+| `check_diagram_sync.py` | a figure whose source moved past its render | diagrams-check.yml |
+| `commit_regenerated.sh` | a regen job republishing a stale derived value | stats-regen.yml · evidence-regen.yml |
+| `scripts/test_*.py` | the controls above, actually executed | script-tests.yml |
 
 `scripts/check_claims_integrity.py` describes itself as "one command for every
 quote-fidelity check". It runs two of them. Read that docstring as intent.
@@ -88,12 +91,26 @@ fire only on certainty would not have fired on the inversion that prompted it.
 ## The rule these all serve
 
 A gate that cannot fail is worse than no gate, because it looks like
-verification. Two instances found on 2026-11-14:
+verification. Four instances so far:
 
 - `evidence-gates.yml`, green and skipping every step, above.
 - `ingest-channel.yml` set `missing_count` from a `jq` parse that had been
   failing since 2026-09-19. The empty value matched neither `== '0'` nor
   `!= '0'`, so the steps that update and close the tracking issue both skipped
   while the job passed. Issue #67 froze for two months. Fixed in PR #77.
+- `diagrams-check.yml` called `stat -f %m`, which is BSD. GNU coreutils reads
+  `-f` as *file system*, so every call errored on `ubuntu-latest` — inside an
+  `elif`, where `errexit` does not apply, so the error was swallowed and the
+  counter stayed 0. It printed "0 stale, 0 missing-source" daily while a
+  withdrawn speaker's name stayed on a published figure for 57 days.
+- `stats-regen.yml` had a working gate and a broken writer. Two runs raced; the
+  loser rebased a stale computation onto the winner's tree, the rebase applied
+  cleanly because the competing commit touched inputs and not the derived
+  file, and the site published 1455 videos against a 1458-note corpus. The run
+  holding the right answer was the one that went red.
+
+The last two share a cause worth naming: **the tests that catch them were
+written, and nothing ran them.** `script-tests.yml` exists so that stops being
+true, and fails rather than passes when it finds no tests to run.
 
 When adding a check, make it fail once on purpose before trusting it.
