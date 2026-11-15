@@ -736,6 +736,267 @@
       ]
     }
   ],
+  "8": [
+    {
+      "claim_id": "claims#2",
+      "text": "Reinforcement learning is the post-training method that carries a model into production",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "X6NShR2ccOg",
+          "start": "00:00:48.800",
+          "end": "00:01:00.200",
+          "start_seconds": 48,
+          "confidence": "high",
+          "label": "#674 — Alessandro Cappelli, Adaptive ML",
+          "quote": "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "Frontier progress is bottleneck-hunting, not broad improvement",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "zZsTVBXcbow",
+          "start": "00:03:57.200",
+          "end": "00:04:01.200",
+          "start_seconds": 237,
+          "confidence": "high",
+          "label": "#13 — Raia Hadsell, DeepMind",
+          "quote": "our approach we look for root nodes. You know we're not going to waste time on the leaves."
+        },
+        {
+          "video_id": "8EQo4J2BWKw",
+          "start": "00:02:38.800",
+          "end": "00:02:44.879",
+          "start_seconds": 158,
+          "confidence": "high",
+          "label": "#267 — Jack Rae, DeepMind",
+          "quote": "So, progress has really been marked by identifying key bottlenecks towards intelligence and then solving them."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#19",
+      "text": "Non-text model architectures are converging on the LLM template by tokenization",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "3jGAU2sbAyY",
+          "start": "00:08:58.640",
+          "end": "00:09:06.560",
+          "start_seconds": 538,
+          "confidence": "high",
+          "label": "#663 — Samuel Humeau, Mistral",
+          "quote": "We're trying to uh transform the problem as a language modeling problem because humanity is extremely good at modeling sequences of token."
+        },
+        {
+          "video_id": "CXsbjcrf_5g",
+          "start": "00:02:35.680",
+          "end": "00:02:45.319",
+          "start_seconds": 155,
+          "confidence": "high",
+          "label": "#385 — Ronan McGovern",
+          "quote": "We need a transformer model that instead of taking in only text and outputting text tokens can input ideally text and audio and output a string of audio tokens."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#21",
+      "text": "The consolidation move is \"one foundation model for all of it\"",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "AbZ4IYGbfpQ",
+          "start": "00:04:47.360",
+          "end": "00:04:51.280",
+          "start_seconds": 287,
+          "confidence": "high",
+          "label": "#247 — Yesu Feng, Netflix",
+          "quote": "second is that by integrating the foundation model into all systems we can create high leverage."
+        },
+        {
+          "video_id": "LxQsQ3vZDqo",
+          "start": "00:02:35.360",
+          "end": "00:02:39.360",
+          "start_seconds": 155,
+          "confidence": "high",
+          "label": "#245 — Devansh Tandon, YouTube",
+          "quote": "how can we rethink this recommendation system on top of Gemini,"
+        },
+        {
+          "video_id": "U0S6CfzAY5c",
+          "start": "00:01:43.280",
+          "end": "00:02:01.840",
+          "start_seconds": 103,
+          "confidence": "high",
+          "label": "#248 — Hamed & Maziar, LinkedIn",
+          "quote": "So the mission that we started was to build a large foundation uh model based on large language models that understand the the holist have a holistic understanding of the user uh journey on LinkedIn platform and can solve all the personalization tasks that that LinkedIn has with just one model."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#26",
+      "text": "In embodiment, a failure that looks like the policy is often the system",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "bCGbuyv8PMk",
+          "start": "00:00:47.360",
+          "end": "00:00:50.320",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#110 — Rishabh Garg, Tesla Optimus",
+          "quote": "the issue will look like it's the policy but it's actually the software system"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#31",
+      "text": "In high-stakes domains, evaluation is the product, not a checkpoint",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "cZ5ZJy19KMo",
+          "start": "00:05:38.319",
+          "end": "00:05:49.240",
+          "start_seconds": 338,
+          "confidence": "high",
+          "label": "#446 — Anterior",
+          "quote": "and the solution for that for these two problems is realtime reference-free evaluation system so reference free also known as label free means that you evaluate before you know the true outcome"
+        },
+        {
+          "video_id": "O72p-rBb2bA",
+          "start": "00:11:45.360",
+          "end": "00:11:55.920",
+          "start_seconds": 705,
+          "confidence": "medium",
+          "label": "#938 — Reed & Revere, SonderMind",
+          "quote": "That's the key move here is that our system isn't deciding what correct is in a clinical edge case like this one. A licensed professional is."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#32",
+      "text": "When a confident wrong answer carries unbounded cost, a general model's grounding ceiling is disqualifying",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "pPvoLjYj_mY",
+          "start": "00:10:23.760",
+          "end": "00:10:27.399",
+          "start_seconds": 623,
+          "confidence": "high",
+          "label": "#406 — Alshikh, Writer",
+          "quote": "81% sounds a great number if you think in the reality"
+        },
+        {
+          "video_id": "of-SV35YqvY",
+          "start": "00:01:40.560",
+          "end": "00:01:47.560",
+          "start_seconds": 100,
+          "confidence": "high",
+          "label": "#473 — Pekelis, Gradient",
+          "quote": "taking a generalist language model uh or or a base language model kind of off the shelf because it isn't really going to get you too far"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "In high-stakes automation, a human stays in the loop through an explicit, staffed escalation path",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "sn79oS4MZFI",
+          "start": "01:10:35.360",
+          "end": "01:10:36.560",
+          "start_seconds": 4235,
+          "confidence": "high",
+          "label": "#339 — Mason",
+          "quote": "call 911, go to your doctor,"
+        },
+        {
+          "video_id": "cZ5ZJy19KMo",
+          "start": "00:09:30.560",
+          "end": "00:09:32.480",
+          "start_seconds": 570,
+          "confidence": "high",
+          "label": "#446 — Anterior",
+          "quote": "give it to an on call clinician to review it"
+        },
+        {
+          "video_id": "TquUsN1QsWs",
+          "start": "00:14:21.600",
+          "end": "00:14:30.639",
+          "start_seconds": 861,
+          "confidence": "high",
+          "label": "#187 — Wan, Ensemble Health",
+          "quote": "allow the clinical expert to make the final decision on whether or not uh the letter meets the meets the standard of quality before it gets submitted to the to the payer."
+        },
+        {
+          "video_id": "MWTJIAwAAnk",
+          "start": "00:10:19.000",
+          "end": "00:10:22.200",
+          "start_seconds": 619,
+          "confidence": "high",
+          "label": "#423 — Conover, Brightwave",
+          "quote": "the human analyst always is going to have access to information that has not been digitized"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#38",
+      "text": "In subjective domains, keep the model in a narrow lane and let structured systems own the truth",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "FlzpEGHNVKQ",
+          "start": "00:08:56.360",
+          "end": "00:08:58.520",
+          "start_seconds": 536,
+          "confidence": "high",
+          "label": "#677 — Dole & Steinskog, Play Magnus",
+          "quote": "the LLM's job is only to translate this information"
+        },
+        {
+          "video_id": "418t26CVz-w",
+          "start": "00:00:38.840",
+          "end": "00:00:48.720",
+          "start_seconds": 38,
+          "confidence": "high",
+          "label": "#918 — Quoraishee & Song, NYT",
+          "quote": "Our puzzles are made by people. They're not made by AI. So, that's just a thing we this true and it'll always be true. There's no AI in the games themselves."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#41",
+      "text": "Creative production is an orchestration problem — compose several specialized models, not one generalist",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Bc6Ojl2XS1w",
+          "start": "00:17:02.760",
+          "end": "00:17:05.520",
+          "start_seconds": 1022,
+          "confidence": "high",
+          "label": "#755 — Schaeff, Google DeepMind",
+          "quote": "a tool to then generate a song using Lyra."
+        },
+        {
+          "video_id": "CoaL4JZKsWI",
+          "start": "00:18:04.520",
+          "end": "00:18:07.400",
+          "start_seconds": 1084,
+          "confidence": "high",
+          "label": "#477 — Phlo Young",
+          "quote": "produce a song and then use this voice conversion technique"
+        }
+      ]
+    }
+  ],
   "4": [
     {
       "claim_id": "claims#3",

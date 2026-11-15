@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T00:16:14+00:00",
+  "generated_at": "2026-11-16T00:32:32+00:00",
   "corpus": {
     "videos": 1458
   },
@@ -43,7 +43,7 @@
   },
   "total_artefacts": 1744,
   "book2": {
-    "drafting_files": 7,
+    "drafting_files": 8,
     "claims": {
       "total": 43,
       "strong": 19,
@@ -57,8 +57,8 @@
       "low": 0
     },
     "chapters": {
-      "total": 7,
-      "drafting": 7,
+      "total": 8,
+      "drafting": 8,
       "starter": 0,
       "outlined": 0
     }

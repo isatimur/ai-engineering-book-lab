@@ -5,6 +5,7 @@ import chapter04 from '../content-2/chapter-04.md?raw';
 import chapter05 from '../content-2/chapter-05.md?raw';
 import chapter06 from '../content-2/chapter-06.md?raw';
 import chapter07 from '../content-2/chapter-07.md?raw';
+import chapter08 from '../content-2/chapter-08.md?raw';
 import type { BookChapter } from './bookChapters';
 
 // Second book ("The Model Layer" / "The Long Tail") — a sibling data file to
@@ -86,6 +87,15 @@ export const chaptersTwo: BookChapter[] = [
     status: 'Drafting',
     content: chapter07,
     wordCount: countWords(chapter07),
+  },
+  {
+    number: '08',
+    slug: 'what-the-edges-teach',
+    title: 'What the Edges Teach',
+    promise: 'What the model layer and the long tail say together: capability consolidates, accountability does not, and the constraints were never compensation for a weak model.',
+    status: 'Drafting',
+    content: chapter08,
+    wordCount: countWords(chapter08),
   },
 ];
 
