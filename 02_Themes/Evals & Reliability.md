@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 826
+- Total tagged videos: 829
 
 ## Cross-video synthesis
 
-- This theme appears across 826 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (712), Agent Architecture (678), RAG & Retrieval (23).
+- This theme appears across 829 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (715), Agent Architecture (681), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -838,6 +838,9 @@
 - [[1571-AYFcmnQrZCg-ai-agents-will-upend-investing-even-more-than-coding-frank-long-coatue|#1571 — AI Agents Will Upend Investing Even More Than Coding - Frank Long, Coatue]]
 - [[1573-4VmugsE-iP0-how-we-took-an-ai-agent-from-41-to-97-accurate-milind-sunil-shah-brainbase-labs|#1573 — How We Took an AI Agent From 41% to 97% Accurate - Milind Sunil Shah, Brainbase Labs]]
 - [[1575-zLc8zeGeNaY-how-netflix-evaluates-ai-when-there-s-no-right-answer-cameron-wolfe-netflix|#1575 — How Netflix Evaluates AI When There's No Right Answer - Cameron Wolfe, Netflix]]
+- [[1578-C2-v6wkHXhY-your-ai-isn-t-the-advantage-your-judgment-is-sid-pednekar|#1578 — Your AI Isn't the Advantage. Your Judgment Is - Sid Pednekar]]
+- [[1579-EtZwTYahfek-7-things-your-ai-coworker-needs-philipp-schmid-google-deepmind|#1579 — 7 Things Your AI Coworker Needs - Philipp Schmid, Google DeepMind]]
+- [[1581-SUqQlvyI3N8-your-ai-agent-keeps-making-the-same-mistakes-sparsh-jain-centralagent-ai|#1581 — Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI]]
 
 ## Notes
 

@@ -7,8 +7,8 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1576-1583|Latest batch: recent-1576-1583]]
-- Total video notes in corpus: 1455
+- [[batches/recent-1582-1589|Latest batch: recent-1582-1589]]
+- Total video notes in corpus: 1458
 - Video notes created in this batch: 0
 
 ## Themes
