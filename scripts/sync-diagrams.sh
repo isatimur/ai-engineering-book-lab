@@ -41,11 +41,33 @@ src_dir_for_section() {
 
 rendered=0; synced=0; up_to_date=0; missing=0
 
+# Pick the stat flavour ONCE, here, and die loudly if neither works.
+#
+# This used to be a bare `stat -f %m`, which is BSD. GNU coreutils reads -f
+# as *file system*, so on Linux every call errored — and because is_newer is
+# used inside an `elif`, where errexit does not apply, the failure was
+# swallowed and read as "not newer". The daily CI run printed
+# "0 stale, 0 missing-source" for months while checking nothing. The
+# detection lives out here so `set -e` can actually kill the script.
+if stat -c %Y "$MANIFEST" >/dev/null 2>&1; then
+  stat_mtime() { stat -c %Y "$1"; }        # GNU
+elif stat -f %m "$MANIFEST" >/dev/null 2>&1; then
+  stat_mtime() { stat -f %m "$1"; }        # BSD / macOS
+else
+  echo "neither 'stat -c %Y' (GNU) nor 'stat -f %m' (BSD) works here;" >&2
+  echo "refusing to run rather than report everything as up to date." >&2
+  exit 3
+fi
+
+# NOTE: mtimes are only meaningful on a working copy. A fresh clone or a CI
+# checkout writes every file at roughly the same moment, so this comparison
+# says nothing there. CI uses scripts/check_diagram_sync.py instead, which
+# compares git commit times and file hashes.
 is_newer() {
   # is_newer A B  -> exit 0 if A's mtime > B's mtime
   local a_t b_t
-  a_t=$(stat -f %m "$1")
-  b_t=$(stat -f %m "$2")
+  a_t=$(stat_mtime "$1")
+  b_t=$(stat_mtime "$2")
   [ "$a_t" -gt "$b_t" ]
 }
 
