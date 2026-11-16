@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 829
+- Total tagged videos: 830
 
 ## Cross-video synthesis
 
-- This theme appears across 829 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (715), Agent Architecture (681), RAG & Retrieval (23).
+- This theme appears across 830 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (716), Agent Architecture (682), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -841,6 +841,7 @@
 - [[1578-C2-v6wkHXhY-your-ai-isn-t-the-advantage-your-judgment-is-sid-pednekar|#1578 — Your AI Isn't the Advantage. Your Judgment Is - Sid Pednekar]]
 - [[1579-EtZwTYahfek-7-things-your-ai-coworker-needs-philipp-schmid-google-deepmind|#1579 — 7 Things Your AI Coworker Needs - Philipp Schmid, Google DeepMind]]
 - [[1581-SUqQlvyI3N8-your-ai-agent-keeps-making-the-same-mistakes-sparsh-jain-centralagent-ai|#1581 — Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI]]
+- [[1587-maitMe9HCvw-how-to-get-frontier-coding-results-at-70-lower-cost-nouha-dziri-cohere|#1587 — How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere]]
 
 ## Notes
 

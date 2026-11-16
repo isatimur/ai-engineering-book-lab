@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1582-1589|Latest batch: recent-1582-1589]]
-- Total video notes in corpus: 1458
-- Video notes created in this batch: 0
+- [[batches/recent-1588-1595|Latest batch: recent-1588-1595]]
+- Total video notes in corpus: 1460
+- Video notes created in this batch: 1
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,3 +31,4 @@
 
 ## Recent notes
 
+- [[1588-MpkARD5pq-M-robots-will-be-trained-on-video-games-pim-de-witte-general-intuition|#1588 — Robots Will Be Trained on Video Games - Pim de Witte, General Intuition]]
