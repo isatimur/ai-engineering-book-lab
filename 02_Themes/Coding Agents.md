@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 936
+- Total tagged videos: 938
 
 ## Cross-video synthesis
 
-- This theme appears across 936 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (777), Evals & Reliability (716), MCP & Tooling (118).
+- This theme appears across 938 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (779), Evals & Reliability (718), MCP & Tooling (118).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -948,6 +948,8 @@
 - [[1581-SUqQlvyI3N8-your-ai-agent-keeps-making-the-same-mistakes-sparsh-jain-centralagent-ai|#1581 — Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI]]
 - [[1587-maitMe9HCvw-how-to-get-frontier-coding-results-at-70-lower-cost-nouha-dziri-cohere|#1587 — How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere]]
 - [[1588-MpkARD5pq-M-robots-will-be-trained-on-video-games-pim-de-witte-general-intuition|#1588 — Robots Will Be Trained on Video Games - Pim de Witte, General Intuition]]
+- [[1589-ZJjRgvjhq3M-build-your-own-finance-agent-inside-chatgpt-stefano-fabbri-oliver-steffmann-openai|#1589 — Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI]]
+- [[1598-jDwc0aXTAFg-your-company-has-no-model-of-itself-agents-can-build-one-joao-wenzel-citadel-securities|#1598 — Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities]]
 
 ## Notes
 

@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 830
+- Total tagged videos: 832
 
 ## Cross-video synthesis
 
-- This theme appears across 830 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (716), Agent Architecture (682), RAG & Retrieval (23).
+- This theme appears across 832 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (718), Agent Architecture (684), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -842,6 +842,8 @@
 - [[1579-EtZwTYahfek-7-things-your-ai-coworker-needs-philipp-schmid-google-deepmind|#1579 — 7 Things Your AI Coworker Needs - Philipp Schmid, Google DeepMind]]
 - [[1581-SUqQlvyI3N8-your-ai-agent-keeps-making-the-same-mistakes-sparsh-jain-centralagent-ai|#1581 — Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI]]
 - [[1587-maitMe9HCvw-how-to-get-frontier-coding-results-at-70-lower-cost-nouha-dziri-cohere|#1587 — How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere]]
+- [[1589-ZJjRgvjhq3M-build-your-own-finance-agent-inside-chatgpt-stefano-fabbri-oliver-steffmann-openai|#1589 — Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI]]
+- [[1598-jDwc0aXTAFg-your-company-has-no-model-of-itself-agents-can-build-one-joao-wenzel-citadel-securities|#1598 — Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities]]
 
 ## Notes
 
