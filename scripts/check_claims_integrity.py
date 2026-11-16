@@ -12,6 +12,8 @@ getting run, so this is the single entry point.
 MUST RUN LOCALLY: transcripts are gitignored, so in CI every check would pass
 vacuously against an empty directory. See docs/ONGOING_SYNC_AND_JUDGING.md.
 
+Exit 2 if any check CRASHES (traceback or unexpected exit code): a check that
+did not run is not a pass. Crash outranks everything below.
 Exit 1 if any ANCHOR fails to resolve — that is a hard defect. Prose misses are
 reported but do not fail by default: a chapter legitimately differs from an ASR
 transcript (the book prints "GPT-4" where the transcript has "GPD 4"), so prose
@@ -90,6 +92,17 @@ def run_verifier(name: str, ledger: str) -> tuple[int, str]:
     return p.returncode, p.stdout + p.stderr
 
 
+def crashed(rc: int, out: str, *, ok_codes: tuple[int, ...]) -> bool:
+    """True when a check died instead of reporting a verdict.
+
+    A crash and a real failure both exit 1 under Python, so the traceback is
+    the tell. Any exit code outside `ok_codes` also counts: the verifiers use 1
+    for "anchor does not resolve" and 2 for environment errors; the prose check
+    runs with no ceiling, so for it only 0 is a verdict.
+    """
+    return "Traceback (most recent call last)" in out or rc not in ok_codes
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", choices=["1", "2", "3"], default=None)
@@ -99,6 +112,7 @@ def main() -> int:
 
     books = [args.book] if args.book else ["1", "2", "3"]
     anchor_fail = False
+    crashes: list[str] = []
     unverifiable = 0
     prose_misses = 0
     summary: list[str] = []
@@ -115,12 +129,16 @@ def main() -> int:
                 f"book {b} anchors ({verifier}): "
                 f"{resolved.replace('[verify] ', '') or 'see above'}")
             unverifiable += count_unverifiable(out)
-            if rc != 0:
+            if crashed(rc, out, ok_codes=(0, 1)):
+                crashes.append(f"book {b} anchors ({verifier}) exit {rc}")
+            elif rc != 0:
                 anchor_fail = True
 
         print(f"\n{'=' * 62}\nBOOK {b} — prose quotes\n{'=' * 62}")
         rc2, out2 = run("verify_prose_quotes.py", "--glob", cfg["glob"])
         print(out2.rstrip())
+        if crashed(rc2, out2, ok_codes=(0,)):
+            crashes.append(f"book {b} prose quotes exit {rc2}")
         vb = next((ln for ln in out2.splitlines() if "verbatim in a transcript" in ln), "")
         summary.append(f"book {b} prose:   {vb.replace('[prose] ', '') or 'see above'}")
         for line in out2.splitlines():
@@ -138,6 +156,11 @@ def main() -> int:
         print(f"  {unverifiable} anchor(s) UNVERIFIABLE — evidence gone or history "
               f"incomplete. Not a pass (ADR-0003).")
 
+    if crashes:
+        print("\nCRASHED — a check died without giving a verdict, so nothing here is a pass:")
+        for c in crashes:
+            print(f"  {c}")
+        return 2
     if anchor_fail:
         print("\nFAIL — an anchor does not resolve to its quote. That is a hard defect.")
         return 1
