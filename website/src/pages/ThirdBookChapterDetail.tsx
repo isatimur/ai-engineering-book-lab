@@ -5,6 +5,8 @@ import {
   chapterThreePath,
 } from '../data/bookChaptersThree';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
+import { EvidenceRail } from '../EvidenceRail';
+import evidenceThreeData from '../evidence-3.json';
 import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
 
@@ -23,9 +25,9 @@ const NotFound = () => (
 
 /**
  * Sibling of SecondBookChapterDetail.tsx for book 3's single-chapter route.
- * Reading only. Book 3 has no evidence file, so there is no evidence rail; no
- * diagrams, no audiobook, no judge scorecard. build_evidence.py cannot write
- * one yet — it reads Source Anchors only (ADR-0003, Consequences).
+ * Reading + evidence rail. The rail reads evidence-3.json, which
+ * build_evidence.py writes from claims-3/ (Source and Artifact anchors,
+ * ADR-0003). No diagrams, no audiobook, no judge scorecard.
  * Not in the top nav, but Books.tsx (the Catalogue) renders a visible card
  * linking to /third-book, so these pages are reachable by a reader.
  */
@@ -65,6 +67,10 @@ export const ThirdBookChapterDetail = () => {
         <article className="max-w-3xl mx-auto px-6 pt-10">
           <SecondBookArticle chapter={chapter} />
         </article>
+
+        <section className="max-w-3xl mx-auto px-6 pt-8">
+          <EvidenceRail chapterNumber={chapter.number} evidenceData={evidenceThreeData} showGraphLink={false} />
+        </section>
 
         <nav className="max-w-3xl mx-auto px-6 pt-20 mt-16 border-t border-[var(--color-border)] flex justify-between gap-4 font-serif">
           {prev ? (

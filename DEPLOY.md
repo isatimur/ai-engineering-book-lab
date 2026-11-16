@@ -18,13 +18,15 @@ change before it can merge.
 Uses the Vercel CLI to pull project settings, build for production, and deploy the
 prebuilt output. Requires three GitHub repository secrets (see below).
 
-### `evidence-regen` — Regenerate `evidence.json`
+### `evidence-regen` — Regenerate `evidence.json`, `evidence-2.json`, `evidence-3.json`
 
 **Trigger:** Push to `main` touching `claims/Claims Ledger.md`, `claims/anchors/**`,
+`claims-2/Claims Ledger.md`, `claims-3/Claims Ledger.md`, `scripts/verify_artifact_anchors.py`
 or `99_Meta/scripts/anchor/**`
 
-Runs `99_Meta/scripts/anchor/build_evidence.py` (stdlib only, no pip deps) and
-commits `website/src/evidence.json` back to `main` if the output changed.
+Runs `99_Meta/scripts/anchor/build_evidence.py` (stdlib only, no pip deps) once per
+book and commits the three `website/src/evidence*.json` files back to `main` if the output changed.
+Book 3's file carries Artifact anchors (ADR-0003) as well as Source anchors.
 Commit message includes `[skip ci]` to avoid infinite loops.
 
 ---

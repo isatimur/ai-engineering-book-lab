@@ -1,18 +1,17 @@
 import { Link } from 'react-router-dom';
 import { chaptersThree, chapterThreePath, chaptersThreeWordCount, BOOK_THREE_TITLE } from '../data/bookChaptersThree';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
+import { EvidenceRail } from '../EvidenceRail';
+import evidenceThreeData from '../evidence-3.json';
 import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
 import outline from '../data/third-book-outline.json';
 
 /**
  * Sibling of SecondBookReader.tsx for book 3's full-book route. Reading only:
- * a table of contents followed by each chapter's prose. Book 3 has no
- * evidence file (no evidence-3.json), so there is no evidence rail.
- * build_evidence.py reads Source Anchors only and would emit `{}` for book 3's
- * Artifact anchors, so the file is not merely missing — nothing can write it
- * yet. See ADR-0003's Consequences. Add the rail the way SecondBookReader does
- * once book 3 has real evidence data.
+ * a table of contents followed by each chapter's prose and evidence rail. The
+ * rail reads evidence-3.json, written by build_evidence.py from claims-3/
+ * (Source and Artifact anchors, ADR-0003). `{}` until the ledger has Claims.
  * Reuses SecondBookArticle, which is chapter-shape-agnostic and avoids book
  * 1's number-keyed lookups. Not in the top nav, but Books.tsx (the Catalogue)
  * renders a visible card linking here, so treat this page as public.
@@ -113,6 +112,7 @@ export const ThirdBookReader = () => {
               </div>
               <div className="max-w-3xl mx-auto px-6 pt-4 pb-8">
                 <SecondBookArticle chapter={chapter} />
+                <EvidenceRail chapterNumber={chapter.number} evidenceData={evidenceThreeData} showGraphLink={false} />
               </div>
             </article>
           ))}

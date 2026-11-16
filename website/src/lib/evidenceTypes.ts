@@ -8,11 +8,21 @@ export type Anchor = {
   label: string;
 };
 
+/** ADR-0003: evidence from the repo (a commit, run, file or range), not from a talk. */
+export type ArtifactAnchor = {
+  kind: 'commit' | 'run' | 'file' | 'range';
+  ref: string;
+  date: string;
+  excerpt: string;
+};
+
 export type EvidenceClaim = {
   claim_id: string;
   text: string;
   support_level: string;
   anchors: Anchor[];
+  /** Present only in book 3's evidence file, and only on claims that carry one. */
+  artifact_anchors?: ArtifactAnchor[];
 };
 
 export type GraphNodeType = 'chapter' | 'claim' | 'speaker' | 'video';
