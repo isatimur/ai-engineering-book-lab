@@ -1,0 +1,90 @@
+name: script-tests
+
+# Runs the negative controls that sit next to the repo's gate scripts.
+#
+# These existed before this workflow did, and never ran anywhere. That is the
+# reason the same class of bug shipped twice:
+#
+#   * diagrams-check reported "0 stale, 0 missing-source" for months while
+#     erroring on every file (BSD `stat` on a GNU runner).
+#   * stats-regen published 1455 videos against a 1458-note corpus by rebasing
+#     a stale computation onto a tree that had moved.
+#
+# Both were caught by tests written after the fact. A control that no trigger
+# ever fires is a comment. This gives them one.
+#
+# Discovery is by glob, not a hand-maintained list, because a registry only
+# someone remembers to update is the failure mode above wearing a hat.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/script-tests.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/script-tests.yml'
+  schedule:
+    - cron: '0 9 * * *'   # 09:00 UTC daily safety net
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # The commit_regenerated controls build real repos and read history, and
+      # check_diagram_sync compares commit ancestry. Both need full history.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      # The tests shell out to git and commit; without an identity, every
+      # fixture commit fails and the suite errors for the wrong reason.
+      - name: Give git an identity for the fixtures
+        run: |
+          git config --global user.name "script-tests"
+          git config --global user.email "script-tests@example.invalid"
+          git config --global init.defaultBranch main
+
+      - name: Run every scripts/test_*.py
+        run: |
+          set -euo pipefail
+          # Deliberately not `mapfile`: this step should be runnable verbatim
+          # on a developer's machine, and macOS still ships bash 3.2.
+          TESTS=()
+          while IFS= read -r t; do
+            TESTS+=("$t")
+          done < <(find scripts -maxdepth 1 -name 'test_*.py' | sort)
+
+          # A glob that matches nothing would otherwise make this job a green
+          # tick that ran no assertions.
+          if [ "${#TESTS[@]}" -eq 0 ]; then
+            echo "::error::No scripts/test_*.py found — refusing to pass vacuously."
+            exit 1
+          fi
+
+          echo "Found ${#TESTS[@]} test file(s):"
+          printf '  %s\n' "${TESTS[@]}"
+          echo
+
+          failed=0
+          for t in "${TESTS[@]}"; do
+            echo "::group::$t"
+            if python3 "$t"; then
+              echo "PASS  $t"
+            else
+              echo "::error file=$t::$t failed"
+              failed=1
+            fi
+            echo "::endgroup::"
+          done
+
+          # Run them all before reporting, so one failure does not hide the
+          # state of the rest.
+          exit "$failed"

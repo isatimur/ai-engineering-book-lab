@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write   # needed to dispatch website-deploy after a real change
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,30 +33,23 @@ jobs:
           python 99_Meta/scripts/anchor/build_evidence.py \
             --ledger 'claims-2/Claims Ledger.md' \
             --out website/src/evidence-2.json
+      # Same defect as stats-regen, same fix. These two jobs trigger on
+      # overlapping paths under claims/** and race each other to push, and
+      # rebasing a generated file onto a tree that has moved republishes a
+      # value computed from the old tree. See scripts/commit_regenerated.sh.
       - name: Commit changes (if any)
+        id: commit
         run: |
-          if ! git diff --quiet website/src/evidence.json website/src/evidence-2.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add website/src/evidence.json website/src/evidence-2.json
-            git commit -m "chore(evidence): regenerate evidence.json and evidence-2.json from updated ledgers [skip ci]"
+          scripts/commit_regenerated.sh \
+            --message "chore(evidence): regenerate evidence.json and evidence-2.json from updated ledgers [skip ci]" \
+            --regen "python 99_Meta/scripts/anchor/build_evidence.py && python 99_Meta/scripts/anchor/build_evidence.py --ledger 'claims-2/Claims Ledger.md' --out website/src/evidence-2.json" \
+            -- website/src/evidence.json website/src/evidence-2.json
 
-            # stats-regen.yml can trigger on the same push (overlapping path
-            # filters under claims/**) and race this job to push to main.
-            # Rebase-and-retry instead of failing outright on a rejected push.
-            for attempt in 1 2 3 4 5; do
-              if git push; then
-                break
-              fi
-              if [ "$attempt" -eq 5 ]; then
-                echo "::error::Failed to push evidence regen after ${attempt} attempts."
-                exit 1
-              fi
-              echo "Push rejected (attempt ${attempt}/5) — main moved, rebasing and retrying..."
-              sleep $((attempt * 3))
-              git fetch origin main
-              git rebase origin/main
-            done
-          else
-            echo "No evidence changes — skipping commit"
-          fi
+      # Both regenerated files live under website/, so they reach production
+      # only on a deploy — and a GITHUB_TOKEN push starts no workflow. Without
+      # this the site keeps serving the previous evidence set.
+      - name: Deploy the site so the new evidence is the published evidence
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run website-deploy.yml --ref main
