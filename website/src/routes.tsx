@@ -23,6 +23,8 @@ import { SpadeHero } from './pages/SpadeHero';
 import { manifest } from './lib/manifest';
 import { SecondBookReader } from './pages/SecondBookReader';
 import { SecondBookChapterDetail, secondBookChapterStaticPaths } from './pages/SecondBookChapterDetail';
+import { ThirdBookReader } from './pages/ThirdBookReader';
+import { ThirdBookChapterDetail, thirdBookChapterStaticPaths } from './pages/ThirdBookChapterDetail';
 
 import { SettingsProvider, AppLayout } from './context/SettingsContext';
 
@@ -69,12 +71,24 @@ export const routes: RouteRecord[] = [
       },
       // Second book — reading + evidence rail only (no diagrams, audiobook,
       // or judge scores yet; see programs/second_book_website_wiring.md).
-      // Deliberately not linked from nav/Catalogue: direct-URL only for now.
+      // Not in the top nav, but the Catalogue (Books.tsx) links here with a
+      // visible card, so these routes are public. (This comment used to say
+      // "direct-URL only"; that stopped being true when /books shipped.)
       { path: 'second-book', element: <SecondBookReader /> },
       {
         path: 'second-book/:slug',
         element: <SecondBookChapterDetail />,
         getStaticPaths: secondBookChapterStaticPaths,
+      },
+      // Third book — reading only (no evidence file, diagrams, audiobook, or
+      // judge scores yet). The track is empty until Chapter 1 lands.
+      // Not in the top nav, but the Catalogue (Books.tsx) links here with a
+      // visible card, so these routes are public.
+      { path: 'third-book', element: <ThirdBookReader /> },
+      {
+        path: 'third-book/:slug',
+        element: <ThirdBookChapterDetail />,
+        getStaticPaths: thirdBookChapterStaticPaths,
       },
       { path: 'versions', element: <Versions /> },
       { path: 'quality', element: <Quality /> },

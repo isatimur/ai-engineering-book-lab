@@ -34,6 +34,7 @@ dist/
 # book-mash run output
 .book-mash-runs/
 .book-mash-2-runs/
+.book-mash-3-runs/
 
 # Git worktrees
 .worktrees/

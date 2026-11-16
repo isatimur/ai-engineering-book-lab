@@ -1,0 +1,11 @@
+[corpus]
+chapters_glob = "public/drafting-3/*.md"
+claims_dir = "claims-3/"
+evidence_dir = "evidence-3/"
+skip_sections = ["Draft note"]
+
+[output]
+runs_dir = ".book-mash-3-runs/"
+
+[budget]
+max_cost_usd = 15.0

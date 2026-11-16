@@ -20,6 +20,7 @@ output is a reading list, not a gate. --strict overrides that.
 from __future__ import annotations
 
 import argparse
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -27,9 +28,34 @@ from pathlib import Path
 _REPO = Path(__file__).resolve().parents[1]
 _ANCHOR_DIR = _REPO / "99_Meta" / "scripts" / "anchor"
 
+ALL_VERIFIERS = ["verify_ledger.py", "verify_artifact_anchors.py"]
+
 BOOKS = {
-    "1": {"ledger": "claims/Claims Ledger.md", "glob": "public/drafting/Chapter *.md"},
-    "2": {"ledger": "claims-2/Claims Ledger.md", "glob": "public/drafting-2/*.md"},
+    "1": {"ledger": "claims/Claims Ledger.md", "glob": "public/drafting/Chapter *.md",
+          "verifier": list(ALL_VERIFIERS)},
+    "2": {"ledger": "claims-2/Claims Ledger.md", "glob": "public/drafting-2/*.md",
+          "verifier": list(ALL_VERIFIERS)},
+    "3": {"ledger": "claims-3/Claims Ledger.md", "glob": "public/drafting-3/*.md",
+          "verifier": list(ALL_VERIFIERS)},
+}
+
+# EVERY book runs EVERY verifier. Each one reads one anchor kind and is blind
+# to the other: verify_ledger.py matches `**Anchor:**` + `**Quote:**`,
+# verify_artifact_anchors.py matches `artifact anchor:`. A verifier that cannot
+# parse an anchor reports "0 pairs, PASS" — so giving a book one verifier left
+# the other kind checked by NOTHING, with a green tick. Book 3 cites talks as
+# well as repository incidents (ADR-0003), and books 1 and 2 may carry an
+# Artifact anchor, so neither direction of that hole may stay open.
+# Value: (script path, working directory, builder of CLI args from the ledger path).
+VERIFIERS = {
+    "verify_ledger.py": (
+        _ANCHOR_DIR / "verify_ledger.py", _ANCHOR_DIR,
+        lambda ledger: ["--ledger", ledger, "--quiet"],
+    ),
+    "verify_artifact_anchors.py": (
+        _REPO / "scripts" / "verify_artifact_anchors.py", _REPO,
+        lambda ledger: ["--ledger", ledger, "--repo", "."],
+    ),
 }
 
 
@@ -41,32 +67,61 @@ def run(script: str, *args: str) -> tuple[int, str]:
     return p.returncode, p.stdout + p.stderr
 
 
+_UNVERIFIABLE_RE = re.compile(r"(\d+)\s+unverifiable")
+
+
+def count_unverifiable(out: str) -> int:
+    """How many anchors the artifact verifier could not check at all.
+
+    ADR-0003 forbids `unverifiable` from reading as a pass. The verifier exits
+    0 on it, so without this the summary printed "All anchors resolve." over
+    evidence nobody had read.
+    """
+    m = _UNVERIFIABLE_RE.search(out)
+    return int(m.group(1)) if m else 0
+
+
+def run_verifier(name: str, ledger: str) -> tuple[int, str]:
+    script, cwd, build_args = VERIFIERS[name]
+    p = subprocess.run(
+        [sys.executable, str(script), *build_args(ledger)],
+        cwd=cwd, capture_output=True, text=True,
+    )
+    return p.returncode, p.stdout + p.stderr
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--book", choices=["1", "2"], default=None)
+    ap.add_argument("--book", choices=["1", "2", "3"], default=None)
     ap.add_argument("--strict", action="store_true",
                     help="also fail on unmatched prose quotes")
     args = ap.parse_args()
 
-    books = [args.book] if args.book else ["1", "2"]
+    books = [args.book] if args.book else ["1", "2", "3"]
     anchor_fail = False
+    unverifiable = 0
     prose_misses = 0
     summary: list[str] = []
 
     for b in books:
         cfg = BOOKS[b]
-        print(f"\n{'=' * 62}\nBOOK {b} — anchors\n{'=' * 62}")
-        rc, out = run("verify_ledger.py", "--ledger", cfg["ledger"], "--quiet")
-        print(out.rstrip())
-        resolved = next((l for l in out.splitlines() if "resolved" in l), "")
-        summary.append(f"book {b} anchors: {resolved.replace('[verify] ', '') or 'see above'}")
-        if rc != 0:
-            anchor_fail = True
+        for verifier in cfg["verifier"]:
+            print(f"\n{'=' * 62}\nBOOK {b} — anchors ({verifier})\n{'=' * 62}")
+            rc, out = run_verifier(verifier, cfg["ledger"])
+            print(out.rstrip())
+            resolved = next(
+                (ln for ln in out.splitlines() if "resolved" in ln or "checked" in ln), "")
+            summary.append(
+                f"book {b} anchors ({verifier}): "
+                f"{resolved.replace('[verify] ', '') or 'see above'}")
+            unverifiable += count_unverifiable(out)
+            if rc != 0:
+                anchor_fail = True
 
         print(f"\n{'=' * 62}\nBOOK {b} — prose quotes\n{'=' * 62}")
         rc2, out2 = run("verify_prose_quotes.py", "--glob", cfg["glob"])
         print(out2.rstrip())
-        vb = next((l for l in out2.splitlines() if "verbatim in a transcript" in l), "")
+        vb = next((ln for ln in out2.splitlines() if "verbatim in a transcript" in ln), "")
         summary.append(f"book {b} prose:   {vb.replace('[prose] ', '') or 'see above'}")
         for line in out2.splitlines():
             if line.startswith("UNMATCHED"):
@@ -79,10 +134,18 @@ def main() -> int:
     for s in summary:
         print(f"  {s}")
 
+    if unverifiable:
+        print(f"  {unverifiable} anchor(s) UNVERIFIABLE — evidence gone or history "
+              f"incomplete. Not a pass (ADR-0003).")
+
     if anchor_fail:
         print("\nFAIL — an anchor does not resolve to its quote. That is a hard defect.")
         return 1
-    print("\nAll anchors resolve.")
+    if unverifiable:
+        print(f"\nEvery anchor that COULD be checked resolves. {unverifiable} could not "
+              f"be checked at all — read the list above before calling this clean.")
+    else:
+        print("\nAll anchors resolve.")
     if prose_misses:
         print(f"{prose_misses} prose span(s) unmatched — review, not necessarily defects "
               "(talk titles, author framing, and ASR corrections all land here).")
