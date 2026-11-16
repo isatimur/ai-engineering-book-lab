@@ -27,7 +27,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `X6NShR2ccOg` 00:00:48.800 → 00:01:00.200 · confidence: high
     - **Quote:** "reinforcement learning RL is not just any other algorithm for post-training, but is an an algorithm that at its core will bring models to production."
 - **Caveats / counterevidence:** Many production systems ship and stay on prompting or retrieval because the cost and ops of RL are not yet justified. The claim is about high-stakes systems that must keep improving, not every product.
-- **Candidate chapters:** 1, 2
+- **Candidate chapters:** 1, 2, 8
 - **Reusable phrasing:** RL is not just another post-training algorithm. It is the one built to turn production feedback back into the model.
 
 ## 3) Code is a favourable domain to scale RL, because its rewards are machine-checkable
@@ -244,7 +244,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Quote:** "So, progress has really been marked by identifying key bottlenecks towards intelligence and then solving them."
 - **Caveats / counterevidence:** Both sources are DeepMind, so this is one lab's account of research culture; balance against non-Google labs before generalizing. #267 is also cited in Chapter 1 (for how thinking is trained); here the emphasis is research method, with #13 as spine to avoid re-arguing Ch1. **Re-anchored 2026-09-09:** #267's anchor was a noun phrase lifted from his agenda sentence; he states the general form himself 110 seconds later — "progress has really been marked by identifying key bottlenecks towards intelligence and then solving them" — so the entry no longer depends on #13 to carry it.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
-- **Candidate chapters:** 1, 3
+- **Candidate chapters:** 1, 3, 8
 - **Reusable phrasing:** Frontier progress is a sequence of correctly chosen bottlenecks, and choosing them is the skill that separates the labs.
 
 ## 16) Code is where labs learn to model computation, not just imitate it
@@ -305,7 +305,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `CXsbjcrf_5g` 00:02:35.680 → 00:02:45.319 · confidence: high
     - **Quote:** "We need a transformer model that instead of taking in only text and outputting text tokens can input ideally text and audio and output a string of audio tokens."
 - **Caveats / counterevidence:** The convergence is architectural, not universal — diffusion and autoregression coexist, and #663 notes the dominant trend "can change very quickly." Distinct from claim 21's *consolidation* mechanism: this is about the shape of a single non-text model (tokens), not about collapsing many models into one.
-- **Candidate chapters:** 4
+- **Candidate chapters:** 4, 8
 - **Reusable phrasing:** When speech becomes tokens, speech engineering becomes token engineering.
 
 ## 20) Recommendation may be the largest LLM application of all — bigger than search
@@ -333,7 +333,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `U0S6CfzAY5c` 00:01:43.280 → 00:02:01.840 · confidence: high
     - **Quote:** "So the mission that we started was to build a large foundation uh model based on large language models that understand the the holist have a holistic understanding of the user uh journey on LinkedIn platform and can solve all the personalization tasks that that LinkedIn has with just one model."
 - **Caveats / counterevidence:** Three independent large-scale confirmations make the trend strong, but all three are the teams building the thing they describe; whether one model matches a tuned fleet on every surface is their in-progress bet, not a settled result. This is the *consolidation* mechanism; claim 19 (tokenization) is the other, distinct convergence force.
-- **Candidate chapters:** 4
+- **Candidate chapters:** 4, 8
 - **Reusable phrasing:** The move that produced the general-purpose chatbot — one model instead of many — is now the default architecture for recommendation at scale.
 
 ## 22) For live modalities, latency is a model-architecture constraint, not just a serving cost
@@ -395,7 +395,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Quote:** "the issue will look like it's the policy but it's actually the software system"
 - **Caveats / counterevidence:** Single-source, one team's systems experience on one humanoid. The point is that policy and system failures are hard to tell apart from the outside, not that the policy never fails — models do fail on their own merits too.
 - **Correction (2026-08-28):** support level lowered from `strong` during the book-2 claim-support audit. The caveat already conceded the weakness in prose; the level field did not carry it. See `research_passes/2026-08-27-book2-claim-support-audit.md`.
-- **Candidate chapters:** 5
+- **Candidate chapters:** 5, 8
 - **Reusable phrasing:** In a robot, the failure that looks like the policy is usually the software system between the controller and the wire.
 
 ## 27) Physical data breaks agents that handle text fine
@@ -459,7 +459,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `O72p-rBb2bA` 00:11:45.360 → 00:11:55.920 · confidence: medium
     - **Quote:** "That's the key move here is that our system isn't deciding what correct is in a clinical edge case like this one. A licensed professional is."
 - **Caveats / counterevidence:** Distinct from claim 36 (which owns eval *cadence at scale* — continuous in production): claim 31 owns eval's *status* (the product itself, the trust-earning layer, reference-free scoring). Both cite #446; do not merge them. Reported figures in #446 (F1 near 96%, under 10 clinicians vs. a competitor's 800+ nurses) are self-reported by the speaker. This is a domain argument, not an evals-technique reprise of book 1's evals chapter: the point is that stakes make the eval load-bearing and that the domain expert (the clinician) defines ground truth — not how judges or rubrics are built.
-- **Candidate chapters:** 6
+- **Candidate chapters:** 6, 8
 - **Reusable phrasing:** When there is no room for error, the eval is not what you build to ship the product — it is the product.
 
 ## 32) When a confident wrong answer carries unbounded cost, a general model's grounding ceiling is disqualifying
@@ -475,7 +475,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `of-SV35YqvY` 00:01:40.560 → 00:01:47.560 · confidence: high
     - **Quote:** "taking a generalist language model uh or or a base language model kind of off the shelf because it isn't really going to get you too far"
 - **Caveats / counterevidence:** Support is moderate because both cited speakers frame their findings as *general*, not finance-specific: Writer sees the same grounding failure in a medical benchmark, and Pekelis states his training requirements "apply across industries" (his headline long-context demo is Mark Twain style transfer, not a financial task). So the domain supplies the *standard* (near-zero error tolerance) and the *stake* that justifies the spend, not a novel technique. #473 is kept here as the domain instance, not re-argued as a book-1 training-method claim; its recipe is a generic domain-adaptation pipeline by the speaker's own account.
-- **Candidate chapters:** 6
+- **Candidate chapters:** 6, 8
 - **Reusable phrasing:** Near-90% is a good demo and a disqualifying product when one in five confident answers is wrong and the cost of wrong is unbounded.
 
 ## 33) "Trust, but verify" becomes an architecture, not a slogan
@@ -551,7 +551,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `MWTJIAwAAnk` 00:10:19.000 → 00:10:22.200 · confidence: high
     - **Quote:** "the human analyst always is going to have access to information that has not been digitized"
 - **Caveats / counterevidence:** Promoted from the packet's open-question thread rather than one of its six strongest observations; four independent sources across both movements make it strong. The claim is about *where* the human sits (an explicit, staffed gate for unbounded-risk cases), not that every step needs a human — the same systems automate the high-volume, low-stakes majority freely.
-- **Candidate chapters:** 6
+- **Candidate chapters:** 6, 8
 - **Reusable phrasing:** Where a wrong output is catastrophic, the human is not a fallback — it is where the unbounded risk is parked, behind a confidence gate and a named escalation path.
 
 ## 38) In subjective domains, keep the model in a narrow lane and let structured systems own the truth
@@ -565,7 +565,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `418t26CVz-w` 00:00:38.840 → 00:00:48.720 · confidence: high
     - **Quote:** "Our puzzles are made by people. They're not made by AI. So, that's just a thing we this true and it'll always be true. There's no AI in the games themselves."
 - **Caveats / counterevidence:** #677 carries the claim with a rich, synthesized note; #918's note is auto-generated boilerplate, so its leg rests on its verbatim transcript-excerpt quotes only. Both are the builders' own accounts. The claim is about *where* the model sits (a narrow supporting lane), not that models are useless in these domains — the same systems lean on generation heavily where truth is not at stake.
-- **Candidate chapters:** 7
+- **Candidate chapters:** 7, 8
 - **Reusable phrasing:** In a subjective domain the model is a translator, not a judge — it owns the words, and a structured system owns the ground.
 
 ## 39) A working AI-built game is far harder than the demo, and content generation is the easy part
@@ -607,7 +607,7 @@ are listed as `[[wikilink|label]]` references into `01_Videos/`. See
     - **Anchor:** `CoaL4JZKsWI` 00:18:04.520 → 00:18:07.400 · confidence: high
     - **Quote:** "produce a song and then use this voice conversion technique"
 - **Caveats / counterevidence:** Support is moderate: the claim rests on #755's rich note; #477's note is boilerplate and contributes its title only. Reprises the model-layer generative-media argument (ledger claim 23, Ch 4) from the domain side — cited here on this chapter's own cluster, not on claim 23's out-of-cluster sources, to keep the seam clean.
-- **Candidate chapters:** 7
+- **Candidate chapters:** 7, 8
 - **Reusable phrasing:** In creative work the product is not one great model — it is several specialized ones composed well, prompt to production.
 
 ## 42) A creative pipeline can now run fully autonomously, and the standard it is measured against is a human

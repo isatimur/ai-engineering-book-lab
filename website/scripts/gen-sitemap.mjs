@@ -31,11 +31,20 @@ const gitDate = (relPath) => {
 };
 
 // Parse {number, slug} pairs from bookChapters.ts (frozen format).
-const chaptersSrc = readFileSync(resolve(websiteRoot, 'src/data/bookChapters.ts'), 'utf8');
-const chapters = [...chaptersSrc.matchAll(/number: '(\d+)',\s*slug: '([^']+)'/g)].map((m) => ({
-  number: m[1],
-  slug: m[2],
-}));
+const parseChapters = (file) => {
+  const src = readFileSync(resolve(websiteRoot, file), 'utf8');
+  return [...src.matchAll(/number: '(\d+)',\s*slug: '([^']+)'/g)].map((m) => ({
+    number: m[1],
+    slug: m[2],
+  }));
+};
+
+const chapters = parseChapters('src/data/bookChapters.ts');
+
+// Book 2 was built, routed and linked from /books, but never listed here, so
+// every /second-book/* page was invisible to crawlers. Same parse, same
+// frozen format — bookChaptersTwo.ts deliberately reuses book 1's shape.
+const chaptersTwo = parseChapters('src/data/bookChaptersTwo.ts');
 
 const manifest = JSON.parse(readFileSync(resolve(websiteRoot, 'src/data/diagram-manifest.json'), 'utf8'));
 
@@ -69,6 +78,10 @@ for (const file of ledgerFiles) {
 for (const c of chapters) {
   push(`/read/${c.number}-${c.slug}`, gitDate(`src/content/chapter-${c.number}.md`), '0.9', 'weekly');
 }
+push('/second-book', repoDate, '0.9', 'weekly');
+for (const c of chaptersTwo) {
+  push(`/second-book/${c.slug}`, gitDate(`src/content-2/chapter-${c.number}.md`), '0.8', 'weekly');
+}
 for (const c of manifest.concepts) {
   push(`/visual-guide/concepts/${c.id}`, gitDate(c.sourceFile ?? '.'), '0.6', 'monthly');
 }
@@ -88,4 +101,4 @@ ${urls
 `;
 
 writeFileSync(resolve(websiteRoot, 'public/sitemap.xml'), xml);
-log(`wrote public/sitemap.xml with ${urls.length} URLs (${chapters.length} chapters, ${manifest.concepts.length} concepts, ${manifest.maps.length} maps)`);
+log(`wrote public/sitemap.xml with ${urls.length} URLs (${chapters.length} book-1 chapters, ${chaptersTwo.length} book-2 chapters, ${manifest.concepts.length} concepts, ${manifest.maps.length} maps)`);
