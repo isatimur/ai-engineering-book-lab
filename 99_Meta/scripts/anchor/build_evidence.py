@@ -1,10 +1,18 @@
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 
 # build_evidence.py lives at <repo>/99_Meta/scripts/anchor/ — parents[3] is the repo root.
 _REPO = Path(__file__).resolve().parents[3]
+
+# ADR-0003: the Artifact-anchor grammar has exactly one reader. Import it; a
+# second parser drifts from the first and reports a true anchor as zero.
+sys.path.insert(0, str(_REPO / "scripts"))
+from verify_artifact_anchors import parse_anchors as _parse_artifact_anchors  # noqa: E402
+
+_ARTIFACT_FIELDS = ("kind", "ref", "date", "excerpt")
 _DEFAULT_LEDGER = _REPO / "claims" / "Claims Ledger.md"
 _DEFAULT_OUT = _REPO / "website" / "src" / "evidence.json"
 
@@ -63,21 +71,56 @@ def parse_ledger(ledger_path: str) -> list[dict]:
                 pending["quote"] = q.group(1)
                 anchors.append(pending)
                 pending = None
-        if anchors:
-            claims.append({
+        artifact_anchors = _artifact_anchors(number, body, bool(chapters))
+        if anchors or artifact_anchors:
+            claim = {
                 "claim_id": f"claims#{number}",
                 "text": claim_text,
                 "support_level": support.group(1).lower() if support else "moderate",
                 "candidate_chapters": chapters,
                 "anchors": anchors,
-            })
+            }
+            # Added only when present, so books 1 and 2 keep their published JSON.
+            if artifact_anchors:
+                claim["artifact_anchors"] = artifact_anchors
+            claims.append(claim)
     return claims
+
+
+def _artifact_anchors(number: str, body: str, has_chapters: bool) -> list[dict]:
+    """Artifact anchors of one claim, as `{kind, ref, date, excerpt}` rows.
+
+    This reads; `scripts/verify_artifact_anchors.py` judges. A block it cannot
+    read, or one that would reach no chapter, raises: a skipped anchor would
+    leave the evidence file clean and short, the false green ADR-0003 names.
+    """
+    blocks, problems = _parse_artifact_anchors(body)
+    if problems:
+        raise ValueError(f"claims#{number}: " + "; ".join(problems))
+    if blocks and not has_chapters:
+        raise ValueError(
+            f"claims#{number}: has Artifact anchors but no **Candidate chapters:**, "
+            "so it would appear in no chapter"
+        )
+    rows = []
+    for block in blocks:
+        missing = [f for f in _ARTIFACT_FIELDS if f not in block]
+        if missing or "_repeated" in block:
+            raise ValueError(
+                f"claims#{number}: Artifact anchor at line {block['_line']} of the claim "
+                f"is incomplete or repeats a field ({', '.join(missing) or block['_repeated']})"
+            )
+        rows.append({f: block[f] for f in _ARTIFACT_FIELDS})
+    return rows
 
 
 def build_index(claims: list[dict]) -> dict:
     index: dict[str, list[dict]] = {}
     for c in claims:
-        entry = {k: c[k] for k in ("claim_id", "text", "support_level", "anchors")}
+        keys = ["claim_id", "text", "support_level", "anchors"]
+        if "artifact_anchors" in c:
+            keys.append("artifact_anchors")
+        entry = {k: c[k] for k in keys}
         for chapter in c["candidate_chapters"]:
             index.setdefault(str(chapter), []).append(entry)
     return index
@@ -95,7 +138,9 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     total = sum(len(v) for v in index.values())
-    print(f"evidence.json: {len(claims)} anchored claims -> {len(index)} chapters, {total} chapter-claim rows")
+    artifacts = sum(len(c.get("artifact_anchors", [])) for c in claims)
+    print(f"evidence.json: {len(claims)} anchored claims -> {len(index)} chapters, {total} chapter-claim rows"
+          f" ({artifacts} Artifact anchors)")
     return 0
 
 

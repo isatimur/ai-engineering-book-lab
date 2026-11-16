@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom';
 import { graphUrl } from './lib/chapterLinks';
 import book1EvidenceData from './evidence.json';
 import { AnchorCard } from './components/evidence/AnchorCard';
+import { ArtifactAnchorCard } from './components/evidence/ArtifactAnchorCard';
+import type { ArtifactAnchor } from './lib/evidenceTypes';
 
 export type EvidenceClaim = {
   claim_id: string;
   text: string;
   support_level: string;
   anchors: Parameters<typeof AnchorCard>[0]['anchor'][];
+  /** ADR-0003. Book 3 only. */
+  artifact_anchors?: ArtifactAnchor[];
 };
 
 export type EvidenceIndex = Record<string, EvidenceClaim[]>;
@@ -41,7 +45,8 @@ export const EvidenceRail = ({
   return (
     <section className="mt-16 border-t-2 border-[var(--color-ink)] pt-8">
       <h2 className="mb-6 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
-        Evidence &mdash; Source Anchors
+        Evidence &mdash;{' '}
+        {claims.some((c) => c.artifact_anchors?.length) ? 'Source and Artifact Anchors' : 'Source Anchors'}
       </h2>
       <div className="space-y-10">
         {claims.map((claim) => (
@@ -60,6 +65,9 @@ export const EvidenceRail = ({
             <ul className="grid list-none gap-4 p-0 sm:grid-cols-2">
               {claim.anchors.map((anchor, index) => (
                 <AnchorCard key={`${claim.claim_id}-${index}`} anchor={anchor} />
+              ))}
+              {(claim.artifact_anchors ?? []).map((anchor, index) => (
+                <ArtifactAnchorCard key={`${claim.claim_id}-artifact-${index}`} anchor={anchor} />
               ))}
             </ul>
           </div>

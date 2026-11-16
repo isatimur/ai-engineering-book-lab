@@ -7,7 +7,10 @@ on:
       - 'claims/Claims Ledger.md'
       - 'claims/anchors/**'
       - 'claims-2/Claims Ledger.md'
+      - 'claims-3/Claims Ledger.md'
       - '99_Meta/scripts/anchor/**'
+      # build_evidence.py imports the Artifact-anchor parser (ADR-0003).
+      - 'scripts/verify_artifact_anchors.py'
 
 jobs:
   regen:
@@ -33,6 +36,9 @@ jobs:
           python 99_Meta/scripts/anchor/build_evidence.py \
             --ledger 'claims-2/Claims Ledger.md' \
             --out website/src/evidence-2.json
+          python 99_Meta/scripts/anchor/build_evidence.py \
+            --ledger 'claims-3/Claims Ledger.md' \
+            --out website/src/evidence-3.json
       # Same defect as stats-regen, same fix. These two jobs trigger on
       # overlapping paths under claims/** and race each other to push, and
       # rebasing a generated file onto a tree that has moved republishes a
@@ -41,9 +47,9 @@ jobs:
         id: commit
         run: |
           scripts/commit_regenerated.sh \
-            --message "chore(evidence): regenerate evidence.json and evidence-2.json from updated ledgers [skip ci]" \
-            --regen "python 99_Meta/scripts/anchor/build_evidence.py && python 99_Meta/scripts/anchor/build_evidence.py --ledger 'claims-2/Claims Ledger.md' --out website/src/evidence-2.json" \
-            -- website/src/evidence.json website/src/evidence-2.json
+            --message "chore(evidence): regenerate evidence.json, evidence-2.json and evidence-3.json from updated ledgers [skip ci]" \
+            --regen "python 99_Meta/scripts/anchor/build_evidence.py && python 99_Meta/scripts/anchor/build_evidence.py --ledger 'claims-2/Claims Ledger.md' --out website/src/evidence-2.json && python 99_Meta/scripts/anchor/build_evidence.py --ledger 'claims-3/Claims Ledger.md' --out website/src/evidence-3.json" \
+            -- website/src/evidence.json website/src/evidence-2.json website/src/evidence-3.json
 
       # Both regenerated files live under website/, so they reach production
       # only on a deploy — and a GITHUB_TOKEN push starts no workflow. Without
