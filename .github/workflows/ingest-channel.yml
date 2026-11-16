@@ -170,8 +170,57 @@ jobs:
       - name: Install yt-dlp
         run: pip install --quiet --upgrade yt-dlp
 
+      # YouTube refuses caption requests from datacenter IPs ("Sign in to
+      # confirm you're not a bot"), so a run can finish with every video
+      # skipped and no note written. The pipeline exits 0 in that case, and it
+      # is right to: a blocked talk must leave no note. But it means a green
+      # run proves nothing about the corpus. Keep the log so the next step can
+      # report what actually happened.
+      #
+      # `shell: bash` runs with `-eo pipefail`, unlike the default `bash -e`.
+      # Without pipefail a crashed pipeline would exit 0 through `tee` — the
+      # same defect this repo fixed in the integrity runner (#92).
       - name: Run full ingest pipeline
-        run: python 99_Meta/scripts/update_ai_engineer_channel.py
+        shell: bash
+        run: python 99_Meta/scripts/update_ai_engineer_channel.py 2>&1 | tee /tmp/ingest.log
+
+      - name: What did the ingest actually write?
+        id: outcome
+        shell: bash
+        run: |
+          # Count notes ON DISK, not the batch summary's own `ingested` figure.
+          # That figure has overstated progress before (2026-10-30: logs said 14
+          # outstanding, disk said 17). This also counts exactly what
+          # create-pull-request would commit.
+          NOTES=$(git ls-files --others --exclude-standard -- 01_Videos/ | wc -l | tr -d ' ')
+          BLOCKED=$(grep -c '^\[ingest\] SKIP' /tmp/ingest.log || true)
+
+          echo "notes=${NOTES}" >> "$GITHUB_OUTPUT"
+          echo "blocked=${BLOCKED}" >> "$GITHUB_OUTPUT"
+          if [ "${NOTES}" -gt 0 ]; then
+            echo "has_notes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_notes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          {
+            echo "### Ingest outcome"
+            echo ""
+            echo "| metric | value |"
+            echo "|---|---|"
+            echo "| notes written | ${NOTES} |"
+            echo "| talks blocked by YouTube | ${BLOCKED} |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "${NOTES}" -eq 0 ]; then
+            # Warn, do not fail. `notify-failure` opens a NEW issue on every
+            # failed run, so failing here would file one every night and bury
+            # the signal. The `gates` workflow sets the pattern worth copying:
+            # a check that cannot do its job says so instead of passing.
+            echo "::warning::Ingest wrote 0 notes. ${BLOCKED} talk(s) were refused by YouTube from this runner. No pull request will be opened."
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "**No pull request opened** — nothing was ingested." >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       # YouTube blocks datacenter IPs for per-video requests, so descriptions
       # (like transcripts) usually come back empty here. Non-blocking so the
@@ -189,26 +238,38 @@ jobs:
       - name: Validate note frontmatter and sections
         run: python 99_Meta/scripts/check_note_frontmatter.py
 
+      # Only open a PR when notes were actually written. Before this gate the
+      # step ran unconditionally with a fixed body claiming "New video notes in
+      # 01_Videos/", so a wholly blocked run still produced a PR whose only
+      # diff was a batch-pointer line — PR #94, which asserted notes,
+      # transcripts and descriptions it had not created.
       - name: Create pull request with new corpus material
+        if: ${{ steps.outcome.outputs.has_notes == 'true' }}
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: bot/ingest-channel
           delete-branch: true
           commit-message: |
-            feat(corpus): ingest new AI Engineer channel videos
+            feat(corpus): ingest ${{ steps.outcome.outputs.notes }} new AI Engineer channel video(s)
 
             Automated ingest from nightly channel-watcher workflow.
-          title: "feat(corpus): ingest new AI Engineer channel videos"
+          title: "feat(corpus): ingest ${{ steps.outcome.outputs.notes }} new AI Engineer channel video(s)"
           body: |
             Automated PR from the nightly channel watcher.
 
-            ## What changed
-            - New video notes in `01_Videos/`
-            - Updated transcripts in `99_Meta/transcripts/`
-            - Refreshed `99_Meta/video-descriptions.jsonl` (descriptions fetched)
-            - Refreshed `evidence/Shared Artifacts.md` + per-note `## Artifacts` sections
-            - Refreshed `Corpus Stats.md`, `Video Inventory.md`, and synthesis pack
+            | metric | value |
+            |---|---|
+            | notes written | ${{ steps.outcome.outputs.notes }} |
+            | talks blocked by YouTube | ${{ steps.outcome.outputs.blocked }} |
+
+            Every figure above is counted from this run. Notes are counted on
+            disk, not from the batch summary.
+
+            A blocked talk leaves no note on purpose, so it stays queued for a
+            later run. Descriptions usually come back empty from a runner for
+            the same reason; the corpus health report states that debt rather
+            than hiding it.
 
             ## Review checklist
             - [ ] Skim the new video notes for accuracy
@@ -219,6 +280,23 @@ jobs:
           labels: |
             ingest
             automated
+
+      - name: Tell the tracking issue the runner is blocked
+        if: ${{ steps.outcome.outputs.has_notes == 'false' && steps.outcome.outputs.blocked != '0' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLOCKED: ${{ steps.outcome.outputs.blocked }}
+          SERVER: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          # Comment on the single live tracking issue rather than opening a new
+          # one — same query the detect job uses to find it.
+          EXISTING=$(gh issue list --label ingest,automated --state open \
+            --search "channel-watcher in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "Nightly run wrote **0 notes**: YouTube refused captions for ${BLOCKED} talk(s) from the Actions runner. No pull request opened. The backlog is unchanged and nothing was lost — a blocked talk leaves no note. Run: ${SERVER}/${REPO}/actions/runs/${RUN_ID}"
+          fi
 
   notify-failure:
     needs: [detect, ingest]
