@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T22:04:50+00:00",
+  "generated_at": "2026-11-16T22:05:08+00:00",
   "corpus": {
     "videos": 1460
   },
@@ -37,7 +37,7 @@
     "total": 124
   },
   "method": {
-    "research_passes": 65,
+    "research_passes": 67,
     "programs": 10,
     "tasks": 7
   },
