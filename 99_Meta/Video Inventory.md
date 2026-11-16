@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1460
+Total videos: 1462
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1462,3 +1462,5 @@ Total videos: 1460
 1581. [Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI](https://www.youtube.com/watch?v=SUqQlvyI3N8) — `SUqQlvyI3N8` — 14:58
 1587. [How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere](https://www.youtube.com/watch?v=maitMe9HCvw) — `maitMe9HCvw` — 31:22
 1588. [Robots Will Be Trained on Video Games - Pim de Witte, General Intuition](https://www.youtube.com/watch?v=MpkARD5pq-M) — `MpkARD5pq-M` — 18:51
+1589. [Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI](https://www.youtube.com/watch?v=ZJjRgvjhq3M) — `ZJjRgvjhq3M` — 1:50:32
+1598. [Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities](https://www.youtube.com/watch?v=jDwc0aXTAFg) — `jDwc0aXTAFg` — 18:56
