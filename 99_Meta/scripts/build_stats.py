@@ -17,6 +17,7 @@ Or via CI:      see .github/workflows/stats-regen.yml
 
 from __future__ import annotations
 
+import importlib.util
 import json
 import re
 import sys
@@ -25,6 +26,26 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
+
+
+def _load_artifact_anchor_parser():
+    """Borrow the verifier's own parser. One schema, one reader.
+
+    The Artifact-anchor grammar used to be re-implemented here, and the copy
+    drifted: a capitalised `**Artifact Anchor:**` counted 0 where the verifier
+    counted 1, and the ledger's `- **kind:**` house style counted 0 kinds.
+    That is the same bug the verifier itself shipped and had to fix, recreated
+    in a second file. Loaded by path, not via sys.path, so nothing in
+    scripts/ can shadow a stdlib module.
+    """
+    path = REPO / "scripts" / "verify_artifact_anchors.py"
+    spec = importlib.util.spec_from_file_location("verify_artifact_anchors", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.parse_anchors
+
+
+parse_anchors = _load_artifact_anchor_parser()
 
 
 def count_md(dir_name: str) -> int:
@@ -77,12 +98,50 @@ def count_anchors(ledger_rel_path: str = "claims/Claims Ledger.md") -> dict[str,
     return {"total": high + medium + low, "high": high, "medium": medium, "low": low}
 
 
+_ARTIFACT_KINDS = ("commit", "run", "file", "range")
+
+
+def count_artifact_anchors(ledger_rel_path: str) -> dict[str, int]:
+    """
+    Count Artifact anchors (ADR-0003) in a ledger. A ledger may hold both kinds:
+    count_anchors() reads the Source Anchors, this reads the Artifact anchors.
+    Book 3's ledger holds both, so build() calls both counters on it.
+    An Artifact anchor has no `confidence` field, so the other counter is blind
+    to it. Each anchor looks like:
+
+      **Artifact anchor:**
+      - kind: commit
+
+    Parsing is the verifier's `parse_anchors`, so this counts exactly what the
+    verifier checks: the same header spellings, the same field styles, the same
+    fenced-example rule. Returns the total and a count per kind.
+    """
+    ledger = REPO / ledger_rel_path
+    counts = {"total": 0, **{k: 0 for k in _ARTIFACT_KINDS}}
+    if not ledger.exists():
+        return counts
+
+    anchors, _ = parse_anchors(ledger.read_text(encoding="utf-8"))
+    counts["total"] = len(anchors)
+    for a in anchors:
+        kind = a.get("kind", "").lower()
+        if kind in _ARTIFACT_KINDS:
+            counts[kind] += 1
+    return counts
+
+
 def count_chapters(rel_path: str = "website/src/data/bookChapters.ts") -> dict[str, int]:
-    """Parse a bookChapters-shaped .ts file for chapter status counts."""
+    """Parse a bookChapters-shaped .ts file for chapter status counts.
+
+    Whole-line `//` comments are dropped first. bookChaptersThree.ts carries a
+    how-to comment holding `//     status: 'Drafting',`, and counting it gave
+    book 3 one drafting chapter in a track with no chapters at all.
+    """
     src = REPO / rel_path
     if not src.exists():
         return {"total": 0, "drafting": 0, "starter": 0, "outlined": 0}
-    text = src.read_text(encoding="utf-8")
+    text = "\n".join(ln for ln in src.read_text(encoding="utf-8").splitlines()
+                     if not ln.lstrip().startswith("//"))
     return {
         "total": len(re.findall(r"^\s*\{\s*$\s*number:", text, flags=re.MULTILINE)),
         "drafting": len(re.findall(r"status:\s*'Drafting'", text)),
@@ -103,6 +162,7 @@ class Stats:
     method: dict = field(default_factory=dict)
     total_artefacts: int = 0
     book2: dict = field(default_factory=dict)
+    book3: dict = field(default_factory=dict)
 
 
 def build() -> Stats:
@@ -160,6 +220,19 @@ def build() -> Stats:
         "chapters": book2_chapters,
     }
 
+    # Third book: same shape, but its ledger holds BOTH anchor kinds. It adds
+    # Artifact anchors (ADR-0003) and still cites corpus talks (133 are
+    # classified across its chapters), so both counters read the one ledger.
+    # `anchors` stays Artifact-only (its original meaning); `source_anchors`
+    # carries the Source Anchors. Also kept out of `total_artefacts`.
+    book3 = {
+        "drafting_files": count_md("public/drafting-3"),
+        "claims": count_claims("claims-3/Claims Ledger.md"),
+        "anchors": count_artifact_anchors("claims-3/Claims Ledger.md"),
+        "source_anchors": count_anchors("claims-3/Claims Ledger.md"),
+        "chapters": count_chapters("website/src/data/bookChaptersThree.ts"),
+    }
+
     return Stats(
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         corpus=corpus,
@@ -171,6 +244,7 @@ def build() -> Stats:
         method=method,
         total_artefacts=total,
         book2=book2,
+        book3=book3,
     )
 
 
@@ -261,6 +335,35 @@ sitemap/llms feed). Excluded from the grand total below.
 | Medium | **{s.book2['anchors']['medium']}** |
 | Low | **{s.book2['anchors']['low']}** |
 
+## Third book (Foundations)
+
+Separate manuscript track — own ledger (`claims-3/`), own drafts
+(`public/drafting-3/`), own website data file (`bookChaptersThree.ts`, at
+`/third-book`). Its Claims rest on repository incidents and on corpus talks, so
+it counts Artifact anchors (ADR-0003) and Source Anchors, reported separately.
+Excluded from the grand total below.
+
+- **Chapter drafts:** **{s.book3['drafting_files']}**
+- **Chapters wired into the website:** **{s.book3['chapters']['total']}**
+- **Claims in the ledger:** **{s.book3['claims']['total']}**
+
+**Artifact anchors:** **{s.book3['anchors']['total']}**
+
+| Kind | Count |
+|---|---|
+| Commit | **{s.book3['anchors']['commit']}** |
+| Run | **{s.book3['anchors']['run']}** |
+| File | **{s.book3['anchors']['file']}** |
+| Range | **{s.book3['anchors']['range']}** |
+
+**Source Anchors:** **{s.book3['source_anchors']['total']}**
+
+| Confidence | Count |
+|---|---|
+| High | **{s.book3['source_anchors']['high']}** |
+| Medium | **{s.book3['source_anchors']['medium']}** |
+| Low | **{s.book3['source_anchors']['low']}** |
+
 ## Method (agent + research infrastructure)
 
 | Artefact | Count |
@@ -296,6 +399,11 @@ def main() -> int:
     print(f"[stats] second book: {s.book2['drafting_files']} chapter drafts · "
           f"{s.book2['chapters']['total']} wired · "
           f"{s.book2['claims']['total']} claims · {s.book2['anchors']['total']} anchors")
+    print(f"[stats] third book: {s.book3['drafting_files']} chapter drafts · "
+          f"{s.book3['chapters']['total']} wired · "
+          f"{s.book3['claims']['total']} claims · "
+          f"{s.book3['anchors']['total']} artifact anchors · "
+          f"{s.book3['source_anchors']['total']} source anchors")
     return 0
 
 

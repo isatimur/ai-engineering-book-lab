@@ -46,6 +46,12 @@ const chapters = parseChapters('src/data/bookChapters.ts');
 // frozen format — bookChaptersTwo.ts deliberately reuses book 1's shape.
 const chaptersTwo = parseChapters('src/data/bookChaptersTwo.ts');
 
+// Book 3: same helper, same frozen format. The track is empty today, so only
+// /third-book itself is listed; each chapter joins the sitemap the moment it is
+// registered in bookChaptersThree.ts. Do not skip this step: it is how book 2
+// stayed invisible to crawlers.
+const chaptersThree = parseChapters('src/data/bookChaptersThree.ts');
+
 const manifest = JSON.parse(readFileSync(resolve(websiteRoot, 'src/data/diagram-manifest.json'), 'utf8'));
 
 const repoDate = gitDate('.');
@@ -82,6 +88,10 @@ push('/second-book', repoDate, '0.9', 'weekly');
 for (const c of chaptersTwo) {
   push(`/second-book/${c.slug}`, gitDate(`src/content-2/chapter-${c.number}.md`), '0.8', 'weekly');
 }
+push('/third-book', repoDate, '0.9', 'weekly');
+for (const c of chaptersThree) {
+  push(`/third-book/${c.slug}`, gitDate(`src/content-3/chapter-${c.number}.md`), '0.8', 'weekly');
+}
 for (const c of manifest.concepts) {
   push(`/visual-guide/concepts/${c.id}`, gitDate(c.sourceFile ?? '.'), '0.6', 'monthly');
 }
@@ -101,4 +111,4 @@ ${urls
 `;
 
 writeFileSync(resolve(websiteRoot, 'public/sitemap.xml'), xml);
-log(`wrote public/sitemap.xml with ${urls.length} URLs (${chapters.length} book-1 chapters, ${chaptersTwo.length} book-2 chapters, ${manifest.concepts.length} concepts, ${manifest.maps.length} maps)`);
+log(`wrote public/sitemap.xml with ${urls.length} URLs (${chapters.length} book-1 chapters, ${chaptersTwo.length} book-2 chapters, ${chaptersThree.length} book-3 chapters, ${manifest.concepts.length} concepts, ${manifest.maps.length} maps)`);

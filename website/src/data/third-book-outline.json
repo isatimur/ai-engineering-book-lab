@@ -1,0 +1,310 @@
+{
+  "_generated_by": "99_Meta/scripts/classify_third_book.py",
+  "_generated_at": "2026-11-16T01:04:41+00:00",
+  "_regenerate_after": "corpus-sync",
+  "_measured_on": "note title + summary; transcripts not in git",
+  "seed_counts": {
+    "sdlc_pdlc": {
+      "note_derived_title_or_summary": 7,
+      "note_derived_title_only": 4,
+      "spec_transcript_full_text": 62,
+      "unassigned_playlist_indexes": []
+    },
+    "software_factory": {
+      "note_derived_title_or_summary": 10,
+      "note_derived_title_only": 9,
+      "spec_transcript_full_text": 35,
+      "unassigned_playlist_indexes": []
+    },
+    "spec_driven": {
+      "note_derived_title_or_summary": 5,
+      "note_derived_title_only": 3,
+      "spec_transcript_full_text": 13,
+      "unassigned_playlist_indexes": []
+    },
+    "platform_engineering": {
+      "note_derived_title_or_summary": 2,
+      "note_derived_title_only": 2,
+      "spec_transcript_full_text": 9,
+      "unassigned_playlist_indexes": []
+    },
+    "internal_developer_platform": {
+      "note_derived_title_or_summary": 2,
+      "note_derived_title_only": 0,
+      "spec_transcript_full_text": 9,
+      "unassigned_playlist_indexes": []
+    },
+    "agent_factory": {
+      "note_derived_title_or_summary": 0,
+      "note_derived_title_only": 0,
+      "spec_transcript_full_text": 6,
+      "unassigned_playlist_indexes": []
+    },
+    "assembly_line": {
+      "note_derived_title_or_summary": 0,
+      "note_derived_title_only": 0,
+      "spec_transcript_full_text": 6,
+      "unassigned_playlist_indexes": []
+    },
+    "openspec": {
+      "note_derived_title_or_summary": 0,
+      "note_derived_title_only": 0,
+      "spec_transcript_full_text": 2,
+      "unassigned_playlist_indexes": []
+    },
+    "spec_kit": {
+      "note_derived_title_or_summary": 0,
+      "note_derived_title_only": 0,
+      "spec_transcript_full_text": 0,
+      "unassigned_playlist_indexes": []
+    },
+    "elephant_goldfish": {
+      "note_derived_title_or_summary": 0,
+      "note_derived_title_only": 0,
+      "spec_transcript_full_text": 0,
+      "unassigned_playlist_indexes": []
+    }
+  },
+  "chapters": {
+    "1": {
+      "title": "The bottleneck moved",
+      "core": [
+        "060-eIoohUmYpGI-the-infinite-software-crisis-jake-nations-netflix",
+        "062-PmZDupFP3UM-leadership-in-ai-assisted-engineering-justin-reock-dx-acq-atlassian",
+        "682-4_VQBbs2iQA-how-building-with-ai-can-double-the-throughput-of-your-engineering-team-brian-scanlan-inte",
+        "831-WkBPX-oDMnA-understanding-is-the-new-bottleneck-geoffrey-litt-notion",
+        "872-1P1hJ36rxM0-software-engineering-is-not-about-writing-code-benoit-schillings-google-deepmind-vp-of-res",
+        "994-Kz4QJmNrVXU-velocity-sickness-what-happens-when-your-whole-team-gets-10x-faster-matt-dailey-ref",
+        "1204-YIVkERhy8xo-we-re-the-bottleneck-but-we-don-t-have-to-be-ido-salomon-agentcraft",
+        "1216-Se8jHLliLXE-the-state-of-ai-in-software-development-data-from-400-orgs-justin-reock-dx",
+        "1222-HLTa7Vcs4X0-why-ai-didn-t-actually-make-you-ship-faster-gabriel-spencer-harper-meticulous",
+        "1392-Ve2bAarPA2I-better-ai-models-won-t-fix-your-engineering-team-nicholas-arcolano-jellyfish"
+      ],
+      "support": [
+        "005-CS5Cmz5FssI-how-ai-is-changing-software-engineering-a-conversation-with-gergely-orosz-the-pragmatic-en",
+        "036-k1t2xyWMUdY-how-metr-measures-long-tasks-and-experienced-open-source-dev-productivity-joel-becker-metr",
+        "079-JvosMkuNxF8-can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanfor",
+        "101-WqZq8L-v9pA-what-data-from-20m-pull-requests-reveal-about-ai-transformation-nick-arcolano-jellyfish",
+        "195-tbDDYKRFjhk-does-ai-actually-boost-developer-productivity-100k-devs-study-yegor-denisov-blanch-stanfor",
+        "424-UXOLprPvr-0-building-ai-agents-with-real-roi-in-the-enterprise-sdlc-bruno-booking-com-beyang-sourcegra",
+        "684-VMemhtlsoNk-agents-don-t-do-standups-building-the-post-engineer-engineering-org-mike-spitz-pff",
+        "949-RVxym6mmIns-how-forward-deployed-engineering-is-done-at-cognition-jia-wu"
+      ]
+    },
+    "2": {
+      "title": "Intent before specification",
+      "core": [
+        "160-PthmdT92qNg-shipping-products-when-you-don-t-know-what-they-can-do-ben-stein-teammates",
+        "162-xzJdSi2Tsqw-why-your-product-needs-an-ai-product-manager-and-why-it-should-be-you-james-lowe-i-ai",
+        "1244-_fHTqOs5wQA-build-the-right-thing-product-engineering-part-1-kent-c-dodds-epicproduct-engineer",
+        "1245-s0hFne6EeOI-build-the-right-thing-product-engineering-part-2-kent-c-dodds-epicproduct-engineer"
+      ],
+      "support": [
+        "161-mHzJhXppwUA-shipping-something-to-someone-always-wins-kenneth-auchenberg-ex-stripe-vscode",
+        "758-zMiSRliEzv4-self-driving-products-product-signals-to-pull-requests-joshua-snyder-posthog",
+        "1042-bdHaOXZOhcM-prototyping-as-leadership-how-a-cto-ships-with-ai-agents-hursh-agrawal-the-browser-company"
+      ]
+    },
+    "3": {
+      "title": "What a specification is for",
+      "core": [
+        "040-HY_JyxAZsiE-spec-driven-development-agentic-coding-at-faang-scale-and-quality-al-harris-amazon-kiro",
+        "106-JsKTQbT58BY-the-cure-for-the-vibe-coding-hangover-corey-j-gallon-rexmore",
+        "265-8rABwKRsec4-the-new-code-sean-grove-openai",
+        "738-504PvfXou5Y-bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-intelligenc",
+        "782-IddXPepIAS4-using-spec-driven-development-for-production-workflows-erik-hanchett-aws"
+      ],
+      "support": [
+        "729-UQKg0td-Bf4-spec-driven-testing-for-agents-with-a-brain-the-size-of-a-planet-steven-willmott-safeintel"
+      ]
+    },
+    "4": {
+      "title": "Decomposition and the plan",
+      "core": [
+        "089-rmvDxxNubIg-no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer",
+        "179-x_1EumTaXeE-beyond-the-prototype-using-ai-to-write-high-quality-code-josh-albrecht-imbue",
+        "621--QFHIoCo-Ko-full-walkthrough-workflow-for-ai-coding-matt-pocock",
+        "691-mR-WAvEPRwE-build-agents-that-run-for-hours-without-losing-the-plot-ash-prabaker-andrew-wilson-anthrop",
+        "1044-_ehJyfHg1Vk-the-era-of-compound-engineering-kieran-klaassen-every-cora"
+      ],
+      "support": [
+        "646-2TLXsxkz0zI-full-workshop-ralph-loops-build-dumb-ai-loops-that-ship-chris-parsons-cherrypick",
+        "653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory"
+      ]
+    },
+    "5": {
+      "title": "Execution under a spec",
+      "core": [
+        "042-rcsliSIy_YU-automating-large-scale-refactors-with-parallel-agents-robert-brennan-openhands",
+        "182-X4BwOu0GWb8-your-coding-agent-just-got-cloned-and-your-brain-isn-t-ready-rustin-banks-google-jules",
+        "438-U3MVU6JpocU-ai-agents-meet-test-driven-development",
+        "633-WE_Gnowy3uw-cursor-worktrees-deleting-12k-loc-code-with-200-loc-skills-david-gomes",
+        "996-OL7kfezynJM-multiplayer-agentic-engineering-arjun-singh-superconductor",
+        "1330-iH_wV8BbS24-sandboxes-aren-t-optional-4-ways-to-isolate-coding-agents-robert-brennan-openhands"
+      ],
+      "support": [
+        "077-I8fs4omN1no-hard-won-lessons-from-building-effective-ai-coding-agents-nik-pash-cline",
+        "180-o_hhkJtlbSs-software-development-agents-what-works-and-what-doesn-t-robert-brennan-openhands",
+        "761-so9l_MwS2yg-how-to-keep-shipping-when-you-walk-away-from-your-desk-zack-proser-workos"
+      ]
+    },
+    "6": {
+      "title": "The independence problem",
+      "core": [
+        "210-TswQeKftnaw-ai-powered-entomology-lessons-from-millions-of-ai-code-reviews-tomas-reimers-graphite",
+        "864-VrpEyglYgeU-in-the-land-of-ai-agents-the-verifiers-are-king-tariq-shaukat-sonar",
+        "995-03l29gJXpCE-guide-verify-solve-anirban-chatterjee-sonar",
+        "1091-EL123UNokkI-building-ureview-uber-s-multi-agent-code-review-engine-will-bond-ameya-ketkar-uber",
+        "1250-xLxhT2ZI7UM-your-llm-judge-is-a-confident-liar-building-better-verifiers-browserbase",
+        "1347-dYh7TQkuYFE-i-believe-everything-my-agents-tell-me-three-levels-of-review-corey-gallon-rexmore",
+        "1415-4UtrRVtUN_g-how-to-build-an-ai-code-review-agent-daksh-gupta-greptile"
+      ],
+      "support": [
+        "305-H6MrR5NbTZA-don-t-get-one-shotted-use-ai-to-test-review-merge-and-deploy-code-tomas-reimers-graphite",
+        "1433-wP3P89YB9fA-catch-the-bugs-your-code-review-misses-killian-carlsen-phelan-taylor-luttrell-williams-son",
+        "1517-geMAe-PLJF4-i-made-a-fruit-fly-review-my-code-nick-nisi-workos"
+      ]
+    },
+    "7": {
+      "title": "Gates that can actually fail",
+      "core": [
+        "334-WXy8Yy9xGss-ci-in-the-era-of-ai-from-unit-tests-to-stochastic-evals-nathan-sobo-zed",
+        "526-prttz9_1XDc-enhancing-quality-and-security-in-ci-gunjan-patel",
+        "687-FWEInOtngmM-beyond-code-coverage-functionality-testing-with-playwright-marlene-mhangami-microsoft",
+        "731-NuePCNMpWGc-can-llms-generate-enterprise-quality-code-prasenjit-sarkar-sonar",
+        "837-WLXxTaPagA8-every-solo-agent-builder-eventually-reinvents-a-worse-version-of-ci-cd-sumaiya-shrabony",
+        "1310--AKPRSYccJc-how-to-build-quality-gates-into-agentic-coding-workflows-nnenna-ndukwe-qodo-ai",
+        "1356-7b9tov5Uc5s-rebuilding-ci-for-ai-scale-commit-volume-gautam-korlam-sonar"
+      ],
+      "support": [
+        "078-rgjF5o2Qjsc-the-state-of-ai-code-quality-hype-vs-reality-itamar-friedman-qodo",
+        "127-n991Yxo1aOI-vibe-coding-with-confidence-itamar-friedman-qodo",
+        "823-MpZzWMdmQCE-your-coding-agent-doesn-t-always-follow-your-rules-talha-sheikh-checkout-com",
+        "1098-lRa9sPaMyy4-your-code-has-bugs-lean4-has-proofs-formal-verification-for-engineers-varun-pant-aws"
+      ]
+    },
+    "8": {
+      "title": "Shipping, and the gap between merged and live",
+      "core": [
+        "689-L2r6vLlLgs8-fighting-ai-with-ai-lawrence-jones-incident",
+        "874-zU4EagB311U-agents-need-feature-flags-sachin-gupta",
+        "899-LqLoYksJ6do-we-gave-an-agent-production-code-access-and-then-tried-to-sleep-at-night-moritz-johner-for",
+        "993-vSx5IULvBns-always-on-agents-run-production-without-the-on-call-tax-justin-smith-resolve-ai",
+        "1094-mJqwmmOx4WA-how-to-avoid-disaster-when-vibe-coding-a-billing-engine-andrew-garvin-stripe",
+        "1224-y-OVWZD4j6U-the-5-levels-of-self-driving-production-eric-schwartz-traversal",
+        "1227-I2LL_wd89-A-how-vs-code-went-from-monthly-to-weekly-releases-with-ai-harald-kirschner",
+        "1514-JxNCuXkSWyQ-a-valid-key-let-an-ai-agent-delete-production-sagar-batchu-speakeasy"
+      ],
+      "support": [
+        "103-Q5IVm_CxN2w-infra-that-fixes-itself-thanks-to-coding-agents-mahmoud-abdelwahab-railway",
+        "168-Fzb1a24hF-o-ship-agents-that-ship-a-hands-on-workshop-kyle-penfound-jeremy-adams-dagger",
+        "178-iheWKg2Tkrk-ship-production-software-in-minutes-not-months-eno-reyes-factory",
+        "266-L6_NiGIEXZQ-production-software-keeps-breaking-and-it-will-only-get-worse-anish-agarwal-traversal-ai"
+      ]
+    },
+    "9": {
+      "title": "Brownfield and spec rot",
+      "core": [
+        "057-ShuJ_CN6zr4-making-codebases-agent-ready-eno-reyes-factory-ai",
+        "292-6NIr_cYPglk-to-the-moon-navigating-deep-context-in-legacy-code-with-augment-agent-forrest-brazeal-matt",
+        "991-7vn4WpqNpck-benchmarking-coding-agents-on-new-vs-legacy-codebases-denys-linkov-wisedocs",
+        "1237-Bdrs3uAX0_M-ai-coding-agents-are-breaking-big-codebases-dan-adler-sourcegraph",
+        "1276-k2ClBT4aqAg-we-mapped-115-microservices-for-our-coding-agents-kamalakannan-nandagopal-postman",
+        "1386-DouK81O8R3o-one-day-1-000-in-tokens-an-ai-war-room-for-legacy-code-ford-prior-geico"
+      ],
+      "support": [
+        "999-aeTb5BdmTTc-agents-codebases-and-teams-aditya-khandelwal-amazon-agi-lab",
+        "1387-bU5gDVyu_28-does-code-quality-still-matter-it-depends-on-this-max-kanat-alexander-capital-one",
+        "1445-YX4Z4XqZ9Vo-most-of-your-docs-readers-are-now-ai-agents-hahnbee-lee-mintlify-lincoln-murr-coinbase"
+      ]
+    },
+    "10": {
+      "title": "The review wall",
+      "core": [
+        "845-TJPInBjhE4Q-reviewdebt-a-practical-framework-for-scoring-every-pull-request-sachin-gupta-ebay",
+        "1021-YgEv7IQzGdM-how-to-kill-the-code-review-ankit-jain-aviator",
+        "1041-s-aixZYJG4c-the-last-human-code-review-building-trust-in-ai-generated-code-itamar-friedman-qodo",
+        "1195-LlgiOCmFG_w-fixing-the-pr-bottleneck-matt-pocock-aihero",
+        "1214-_mi3alkqy4s-the-death-of-the-code-review-what-the-data-actually-says-laurie-voss-arize-ai",
+        "1280-uuwDWRbxoYo-ai-writes-more-prs-who-validates-them-ali-reza-adl-tabatabai-sonar",
+        "1285-6qkzlT962es-generation-is-cheap-review-is-expensive-how-to-stop-shipping-ai-slop-gabriel-martinez-g2i",
+        "1428-AnsXWH2_EBU-how-anthropic-merges-30-000-code-changes-a-day-manish-kapur-sonar-addy-osmani-anthropic",
+        "1432-LQW_Wvqhp04-why-humans-can-t-keep-up-with-ai-written-code-tariq-shaukat-sonar",
+        "1450--X3yXTwGs9A-ai-writes-code-faster-than-your-team-can-review-it-andrew-norrish-sourcegraph"
+      ],
+      "support": [
+        "014-_Zcw_sVF6hU-the-friction-is-your-judgment-armin-ronacher-cristina-poncela-cubeiro-earendil",
+        "644-5ID22ACI7IM-mergeable-by-default-peter-werry-unblocked",
+        "1074-qdAkxLoYNI8-how-to-generate-mergeable-code-with-a-context-engine-peter-werry-unblocked"
+      ]
+    },
+    "11": {
+      "title": "The factory and its discontents",
+      "core": [
+        "629-rnDm57Py54A-building-your-own-software-factory-eric-zakariasson-cursor",
+        "704-5Sui_OnSRlY-the-missing-primitive-for-agent-swarms-lou-bichard-ona",
+        "743-pmoDeA3RBZY-dark-factory-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc-openclaw",
+        "855-c35YoMdnI78-the-great-loops-debate-dex-horthy-geoff-huntley-ian-livingstone-greg-pstrucha-insecure-age",
+        "923-Ib5GBkD555M-harness-engineering-is-not-enough-why-software-factories-fail-dex-horthy-humanlayer",
+        "924--I5W5QVAT8E-notion-s-token-town-sarah-sachs-notion",
+        "1048-17-YSUHo6Lk-agentic-sdlc-at-uber-uday-kiran-medisetty-adam-huda-uber",
+        "1203-TN3mj92oZ8I-building-self-improving-agent-software-factories-suraj-gupta-warp",
+        "1205-vGCJ7diEtrw-what-it-actually-takes-to-build-a-software-factory-tereza-t-kov-factory",
+        "1206-HvboD89DyQ8-no-that-s-not-a-software-factory-ryan-cooke-workos",
+        "1210-tUPPVhBBcoM-software-engineering-is-becoming-factory-engineering-zach-lloyd-warp",
+        "1256-X6l4lpA0_NY-harness-engineering-how-to-build-a-software-factory-dru-knox-tessl",
+        "1268-exiwa9QbQXI-the-software-factory-from-bug-report-to-production-code-davis-palmie-factory"
+      ],
+      "support": [
+        "676-VktrqzQgytY-continuous-compute-intents-humans-outside-the-loop-and-the-multiverse-future-of-the-sdlc",
+        "785-whue9_YquGA-building-an-autonomous-engineering-org-angie-jones-agentic-ai-foundation",
+        "840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft",
+        "937-xIt_mTQp6mY-loop-engineering-from-first-principles-kyle-mistele-humanlayer",
+        "1361-Fva8hFosqyQ-the-highest-loop-swyx"
+      ]
+    },
+    "12": {
+      "title": "How much process, and how far out of the loop",
+      "core": [
+        "035-BEKc4P87XKo-agentic-engineering-working-with-ai-not-just-using-it-brendan-o-leary",
+        "357-9u6xvcNJaxc-the-4-patterns-of-ai-native-development-patrick-debois",
+        "711-t4359sKBu4w-bounded-autonomy-between-free-will-and-determinism-angus-j-mclean-oliver",
+        "1095-pqlWNihgdjI-from-ai-assisted-to-ai-native-building-a-frontier-development-team-clare-liguori-aws",
+        "1306-ojJXgXLUQFc-the-sdlc-you-build-yourself-andy-wong-andrei-bocan-shane-wolf-atlassian",
+        "1377-7Y4sbZgBdnc-is-the-agent-harness-dead-jediah-katz-spacexai"
+      ],
+      "support": [
+        "001-v4F1gFy-hqg-it-ain-t-broke-why-software-fundamentals-matter-more-than-ever-matt-pocock-ai-hero-mattpoc",
+        "030-cCRO3ChaYhM-platforms-for-humans-and-machines-engineering-for-the-age-of-agents-juan-herreros-elorza",
+        "058-MLhAA9yguwM-the-3-pillars-of-autonomy-michele-catasta-replit",
+        "073-JV-wY5pxXLo-from-vibe-coding-to-vibe-engineering-kitze-sizzy",
+        "669-yUmS-F9IX90-don-t-build-slop-4-levels-of-ai-agent-maturity-ara-khan-cline",
+        "1055-zCJtYuqwm7E-coding-agents-don-t-scale-themselves-neither-do-your-teams-patrick-debois-tessl",
+        "1235-jc3kbZkuHTo-the-human-is-an-async-api-melanie-warrick-temporal"
+      ]
+    }
+  },
+  "chapters_below_threshold": [
+    2,
+    3,
+    4
+  ],
+  "excluded": [
+    {
+      "note_name": "673-4VhbYlfC7Gs-dark-factory-how-openclaw-ships-faster-than-you-can-read-the-diff-vincent-koc",
+      "reason": "duplicate title of #743; summary mismatch"
+    },
+    {
+      "note_name": "104-NTBX-wxUhHs-context-platform-engineering-to-reduce-token-anxiety-val-bercovici-weka",
+      "reason": "false positive: inference platform, not a dev platform"
+    },
+    {
+      "note_name": "521-5qNXdLbEdew-ai-platform-engineering-patrick-debois",
+      "reason": "passing: AI platform team, not the lifecycle"
+    },
+    {
+      "note_name": "627-EmhRyw6xeT0-one-login-to-rule-them-all-cross-app-access-for-mcp-garrett-galow-workos",
+      "reason": "false positive: IDP means identity provider"
+    }
+  ]
+}

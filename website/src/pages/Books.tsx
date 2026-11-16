@@ -4,9 +4,16 @@ import { JsonLd } from '../components/JsonLd';
 import { BOOK } from '../data/book';
 import { chapters } from '../data/bookChapters';
 import { chaptersTwo, chaptersTwoWordCount, BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
+import { chaptersThree, BOOK_THREE_TITLE } from '../data/bookChaptersThree';
 import { totalWordCount } from '../lib/readingStats';
 import { booksCollectionJsonLd } from '../lib/structuredData';
 import stats from '../data/stats.json';
+
+// Book 3's planned scope, verified against 99_Meta/third-book-classification.json
+// on 2026-11-16: 12 chapters, 133 distinct talks shortlisted across them.
+// See the comment on book 3's card below for why these are stated, not derived.
+const PLANNED_CHAPTERS = 12;
+const CLASSIFIED_TALKS = 133;
 
 const Header = () => (
   <header className="no-print flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
@@ -70,6 +77,37 @@ export const Books = () => {
             </p>
             <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
               {chaptersTwo.length} chapters · {chaptersTwoWordCount.toLocaleString()} words · {stats.book2.claims.total} claims · {stats.book2.anchors.total} anchors
+            </p>
+          </Link>
+
+          {/*
+            Book 3 has no prose yet, so the card deliberately does NOT read
+            "0 chapters · 0 words" — that looks broken rather than early. It
+            carries what actually exists instead: a published spec and a
+            classified corpus. The border runs solid (book 1) → dashed
+            (book 2) → dotted (book 3), so maturity reads without a legend.
+
+            PLANNED_CHAPTERS and CLASSIFIED_TALKS are stated, not derived:
+            their source is 99_Meta/third-book-classification.json, which the
+            website does not import. Re-check them against that file when the
+            classification is re-run; they are the only numbers on this page
+            that cannot update themselves.
+          */}
+          <Link
+            to="/third-book"
+            className="block rounded-sm border border-dotted border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
+          >
+            <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
+              In design
+            </p>
+            <h2 className="mb-2 font-serif text-2xl italic leading-tight">
+              {BOOK_THREE_TITLE}
+            </h2>
+            <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
+              Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint.
+            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
+              {chaptersThree.length} of {PLANNED_CHAPTERS} chapters · {CLASSIFIED_TALKS} talks classified · spec published
             </p>
           </Link>
         </div>

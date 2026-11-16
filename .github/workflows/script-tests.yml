@@ -16,15 +16,26 @@ name: script-tests
 # Discovery is by glob, not a hand-maintained list, because a registry only
 # someone remembers to update is the failure mode above wearing a hat.
 
+# The path list covers the DATA these tests read, not only the code. The book-3
+# suite runs the artifact verifier against the real claims-3 ledger and checks
+# public/drafting-3/ for strays, and the verifier resolves `run` anchors against
+# research_passes/. On 'scripts/**' alone, a PR that edited the ledger or added
+# a stray README there triggered nothing.
 on:
   push:
     branches: [main]
     paths:
       - 'scripts/**'
+      - 'claims-3/**'
+      - 'public/drafting-3/**'
+      - 'research_passes/**'
       - '.github/workflows/script-tests.yml'
   pull_request:
     paths:
       - 'scripts/**'
+      - 'claims-3/**'
+      - 'public/drafting-3/**'
+      - 'research_passes/**'
       - '.github/workflows/script-tests.yml'
   schedule:
     - cron: '0 9 * * *'   # 09:00 UTC daily safety net

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T00:43:54+00:00",
+  "generated_at": "2026-11-16T02:01:11+00:00",
   "corpus": {
     "videos": 1458
   },
@@ -37,7 +37,7 @@
     "total": 124
   },
   "method": {
-    "research_passes": 63,
+    "research_passes": 65,
     "programs": 10,
     "tasks": 7
   },
@@ -59,6 +59,34 @@
     "chapters": {
       "total": 8,
       "drafting": 8,
+      "starter": 0,
+      "outlined": 0
+    }
+  },
+  "book3": {
+    "drafting_files": 0,
+    "claims": {
+      "total": 0,
+      "strong": 0,
+      "moderate": 0,
+      "tentative": 0
+    },
+    "anchors": {
+      "total": 0,
+      "commit": 0,
+      "run": 0,
+      "file": 0,
+      "range": 0
+    },
+    "source_anchors": {
+      "total": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "chapters": {
+      "total": 0,
+      "drafting": 0,
       "starter": 0,
       "outlined": 0
     }
