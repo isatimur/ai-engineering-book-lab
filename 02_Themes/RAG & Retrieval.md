@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 171
+- Total tagged videos: 172
 
 ## Cross-video synthesis
 
-- This theme appears across 171 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Org Design & Leadership (38), Evals & Reliability (23), Coding Agents (22).
+- This theme appears across 172 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Org Design & Leadership (38), Coding Agents (23), Evals & Reliability (23).
 - Representative talks: #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer; #8 Full Workshop: Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.
 
 ## Seed videos
@@ -183,6 +183,7 @@
 - [[1349-Fe4aSMXsOZ4-every-building-is-a-balance-sheet-spatial-memory-for-real-world-assets-jordi-spranger-spra|#1349 — Every Building Is a Balance Sheet: Spatial Memory for Real-World Assets — Jordi Spranger, Spranic]]
 - [[1397-laQ8wMysnkk-buying-gpus-should-work-like-buying-stocks-carmen-li-compute-exchange|#1397 — Buying GPUs Should Work Like Buying Stocks — Carmen Li, Compute Exchange]]
 - [[1399-GCse4OMzY8U-why-compute-still-trades-in-group-chats-affaan-mustafa-alejandro-soumah-fernandez-jump-tra|#1399 — Why Compute Still Trades in Group Chats — Affaan Mustafa & Alejandro Soumah Fernandez, Jump Trading]]
+- [[1588-MpkARD5pq-M-robots-will-be-trained-on-video-games-pim-de-witte-general-intuition|#1588 — Robots Will Be Trained on Video Games - Pim de Witte, General Intuition]]
 
 ## Notes
 

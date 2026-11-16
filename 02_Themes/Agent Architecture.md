@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 824
+- Total tagged videos: 826
 
 ## Cross-video synthesis
 
-- This theme appears across 824 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (775), Evals & Reliability (681), MCP & Tooling (105).
+- This theme appears across 826 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (777), Evals & Reliability (682), MCP & Tooling (105).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -836,6 +836,8 @@
 - [[1578-C2-v6wkHXhY-your-ai-isn-t-the-advantage-your-judgment-is-sid-pednekar|#1578 — Your AI Isn't the Advantage. Your Judgment Is - Sid Pednekar]]
 - [[1579-EtZwTYahfek-7-things-your-ai-coworker-needs-philipp-schmid-google-deepmind|#1579 — 7 Things Your AI Coworker Needs - Philipp Schmid, Google DeepMind]]
 - [[1581-SUqQlvyI3N8-your-ai-agent-keeps-making-the-same-mistakes-sparsh-jain-centralagent-ai|#1581 — Your AI Agent Keeps Making the Same Mistakes - Sparsh Jain, CentralAgent AI]]
+- [[1587-maitMe9HCvw-how-to-get-frontier-coding-results-at-70-lower-cost-nouha-dziri-cohere|#1587 — How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere]]
+- [[1588-MpkARD5pq-M-robots-will-be-trained-on-video-games-pim-de-witte-general-intuition|#1588 — Robots Will Be Trained on Video Games - Pim de Witte, General Intuition]]
 
 ## Notes
 
