@@ -6,6 +6,9 @@ import chapter04 from '../content-3/chapter-04.md?raw';
 import chapter05 from '../content-3/chapter-05.md?raw';
 import chapter06 from '../content-3/chapter-06.md?raw';
 import chapter07 from '../content-3/chapter-07.md?raw';
+import chapter08 from '../content-3/chapter-08.md?raw';
+import chapter09 from '../content-3/chapter-09.md?raw';
+import chapter10 from '../content-3/chapter-10.md?raw';
 
 // Third book — a sibling data file to bookChapters.ts and bookChaptersTwo.ts,
 // not a merge into either. Reuses book 1's `BookChapter` shape so the generic
@@ -114,6 +117,36 @@ export const chaptersThree: BookChapter[] = [
     status: 'Drafting',
     content: chapter07,
     wordCount: countWords(chapter07),
+  },
+  {
+    number: '08',
+    slug: 'shipping-and-the-gap-between-merged-and-live',
+    title: 'Shipping, and the Gap Between Merged and Live',
+    promise:
+      'Thirty consecutive commits that deployed nothing while every indicator said success — and why an absence produces no artifact.',
+    status: 'Drafting',
+    content: chapter08,
+    wordCount: countWords(chapter08),
+  },
+  {
+    number: '09',
+    slug: 'brownfield-and-spec-rot',
+    title: 'Brownfield and Spec Rot',
+    promise:
+      'When the system is too large to hold in view, every slice is locally correct and the whole drifts. Three different decays hide under one phrase.',
+    status: 'Drafting',
+    content: chapter09,
+    wordCount: countWords(chapter09),
+  },
+  {
+    number: '10',
+    slug: 'the-review-wall',
+    title: 'The Review Wall',
+    promise:
+      'Lines of code up 2,450%. Commits up 240%. Releases up 30%. The gap is inventory, and "human in the loop" is where it gets relabelled as control.',
+    status: 'Drafting',
+    content: chapter10,
+    wordCount: countWords(chapter10),
   },
 ];
 
