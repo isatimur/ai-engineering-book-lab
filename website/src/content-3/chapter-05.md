@@ -33,6 +33,20 @@ That is not a problem that was ever hard. It was tedious, and tedium at that sca
 
 This is the honest shape of the current frontier. Where the spec is crisp and the verification is mechanical, scale is available now. Where the spec is contested, nothing about parallelism helps.
 
+## When the instructions replace the implementation
+
+There is a stronger version of execution-under-a-spec, and Cursor shipped it.
+
+David Gomes opens by claiming "markdown is basically the new code", and the evidence is a specific trade his team made: they took a full feature — "a lot of code a lot of dependencies a lot of complexity and tests" — and replaced it with a single skill, a set of instructions plus two existing primitives (David Gomes).
+
+The accounting is blunt. He opened a pull request removing the feature and it was "around 15,000 lines of code deleted", with a replacement that is "almost as good as the previous one" and much lighter to maintain (David Gomes).
+
+Both halves of that sentence matter, and the second is the one that usually gets dropped in retellings. *Almost* as good. Something was lost. The claim is not that instructions are strictly superior to an implementation; it is that fifteen thousand lines of maintenance burden bought a margin small enough to trade away.
+
+This generalises into a question worth asking of any feature that mostly orchestrates existing capability. If the code is largely plumbing between things the agent can already do, the plumbing may be describable rather than buildable. And where that trade holds, the specification stops being a document that guides execution and becomes the executable thing itself — the position Chapter 3 described as the generating model, arriving not as a methodology but as a deletion.
+
+The caution from Chapter 3 applies unchanged. A generating artifact fails by being satisfied exactly, and an instruction file has no type checker. What makes Cursor's trade defensible is that the capability underneath was already built and tested; the markdown replaced the orchestration, not the substance.
+
 ## Parallelism arrives as a human problem
 
 Rustin Banks works on Jules, which he describes as "an asynchronous coding agent meant to run in the background and do all those tasks that you don't want to do" (Rustin Banks, Google). The design assumption is that the interesting unit is no longer a session you sit through. It is a task you hand off and collect later.

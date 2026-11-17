@@ -15,6 +15,12 @@ The sentence is easy to nod at and easy to underrate. Reock does the arithmetic 
 
 In a separate talk, drawing on data from almost 140,000 engineers, Reock makes the same argument from the other direction: "For most organizations, writing code has never been the bottleneck" (Justin Reock, DX). Productivity rises a little with completion. The larger constraints sit elsewhere in the lifecycle, and they sat there before any agent arrived.
 
+A second enterprise dataset points the same way, and its shape matters more than its size. Martin Harrysson and colleagues at McKinsey surveyed a few hundred large-enterprise clients and found a leading group — "there's a 20 25% of of companies that are really starting to see some some pretty massive benefits" (Martin Harrysson, McKinsey).
+
+The useful part is how he distinguishes that group from everyone else. The benefit is "not just the sort of 10 15 20% like a little bit faster coding", but "real, you know, 2x like end-to-end improvements" (Martin Harrysson, McKinsey).
+
+Read those two numbers against each other. A fifth to a quarter of firms are getting a different *kind* of result, not a larger quantity of the same one. Faster coding produces the small number. Changing something about the end-to-end flow produces the large one. That is Reock's value-stream argument appearing independently in another dataset, and it suggests the ceiling on tool adoption alone is real rather than theoretical.
+
 He borrows the governing rule from Eliyahu Goldratt's theory of constraints: "an hour saved on something that isn't the bottleneck is worthless" (Justin Reock, DX). This is the sentence to keep. It explains why a team can adopt an excellent tool, measure a real time saving, and ship no faster. The saving was real. It was banked somewhere that did not control the outcome. Reock's own data describes exactly that pattern — annualized time savings from AI, eclipsed by context switching, interruption, and meeting-heavy days.
 
 ## It moved. It did not disappear
