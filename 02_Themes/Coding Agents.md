@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 939
+- Total tagged videos: 942
 
 ## Cross-video synthesis
 
-- This theme appears across 939 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (780), Evals & Reliability (719), MCP & Tooling (118).
+- This theme appears across 942 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (783), Evals & Reliability (722), MCP & Tooling (118).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -951,6 +951,9 @@
 - [[1589-ZJjRgvjhq3M-build-your-own-finance-agent-inside-chatgpt-stefano-fabbri-oliver-steffmann-openai|#1589 — Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI]]
 - [[1598-jDwc0aXTAFg-your-company-has-no-model-of-itself-agents-can-build-one-joao-wenzel-citadel-securities|#1598 — Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities]]
 - [[1603-gdzsJZJ6DDs-your-financial-agent-needs-to-show-its-work-anirudh-veeraragavan-fieldguide|#1603 — Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide]]
+- [[1605-pz74r-4dGfQ-your-ai-agent-is-hiding-its-mistakes-from-you-ben-holmes-warp|#1605 — Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp]]
+- [[1607-RdQCY_-SXbA-ai-can-t-make-up-a-number-it-can-t-look-up-vinoo-ganesh-kepler|#1607 — AI Can't Make Up a Number It Can't Look Up - Vinoo Ganesh, Kepler]]
+- [[1611-u7fsyrXsPBE-claude-code-looked-right-but-missed-800k-natalia-connolly-kevin-madura-alixpartners|#1611 — Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners]]
 
 ## Notes
 

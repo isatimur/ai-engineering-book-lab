@@ -8,8 +8,8 @@
 
 ## Ingestion
 - [[batches/recent-1604-1611|Latest batch: recent-1604-1611]]
-- Total video notes in corpus: 1463
-- Video notes created in this batch: 1
+- Total video notes in corpus: 1466
+- Video notes created in this batch: 3
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,4 +31,6 @@
 
 ## Recent notes
 
-- [[1603-gdzsJZJ6DDs-your-financial-agent-needs-to-show-its-work-anirudh-veeraragavan-fieldguide|#1603 — Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide]]
+- [[1605-pz74r-4dGfQ-your-ai-agent-is-hiding-its-mistakes-from-you-ben-holmes-warp|#1605 — Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp]]
+- [[1607-RdQCY_-SXbA-ai-can-t-make-up-a-number-it-can-t-look-up-vinoo-ganesh-kepler|#1607 — AI Can't Make Up a Number It Can't Look Up - Vinoo Ganesh, Kepler]]
+- [[1611-u7fsyrXsPBE-claude-code-looked-right-but-missed-800k-natalia-connolly-kevin-madura-alixpartners|#1611 — Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners]]

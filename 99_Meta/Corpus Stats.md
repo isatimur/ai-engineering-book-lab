@@ -1,13 +1,13 @@
 # Corpus Stats
 
-- Total notes: 1463
-- Transcript status mix: {'auto_en': 4, 'auto_en_orig': 1458, 'whisper_base_en': 1}
+- Total notes: 1466
+- Transcript status mix: {'auto_en': 4, 'auto_en_orig': 1461, 'whisper_base_en': 1}
 
 ## Theme counts
 
-- Agent Architecture: 829
-- Coding Agents: 939
-- Evals & Reliability: 833
+- Agent Architecture: 832
+- Coding Agents: 942
+- Evals & Reliability: 836
 - General AI Engineering: 5
 - MCP & Tooling: 178
 - Models & Inference: 134
@@ -28,5 +28,5 @@
 - Patrick Debois: 4
 - swyx: 4
 - Phil Hetzel: 4
+- Vinoo Ganesh: 4
 - Matt Pocock: 3
-- Louis-François Bouchard: 3

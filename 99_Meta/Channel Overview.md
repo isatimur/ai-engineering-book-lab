@@ -18,8 +18,8 @@ This is not meant to be a passive archive. The intended workflow is: gather the 
 
 ## Current ingestion status
 - Latest completed batch: `recent-1604-1611`
-- Corpus notes created so far: `1463`
-- Transcript status mix: `auto_en: 4, auto_en_orig: 1458, whisper_base_en: 1`
+- Corpus notes created so far: `1466`
+- Transcript status mix: `auto_en: 4, auto_en_orig: 1461, whisper_base_en: 1`
 - Notes created: `01_Videos/`
 - Theme seeds created: `02_Themes/`
 - Transcript cache created: `99_Meta/transcripts/`

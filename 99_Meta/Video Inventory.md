@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1463
+Total videos: 1466
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1465,3 +1465,6 @@ Total videos: 1463
 1589. [Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI](https://www.youtube.com/watch?v=ZJjRgvjhq3M) — `ZJjRgvjhq3M` — 1:50:32
 1598. [Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities](https://www.youtube.com/watch?v=jDwc0aXTAFg) — `jDwc0aXTAFg` — 18:56
 1603. [Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide](https://www.youtube.com/watch?v=gdzsJZJ6DDs) — `gdzsJZJ6DDs` — 13:28
+1605. [Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp](https://www.youtube.com/watch?v=pz74r-4dGfQ) — `pz74r-4dGfQ` — 19:20
+1607. [AI Can't Make Up a Number It Can't Look Up - Vinoo Ganesh, Kepler](https://www.youtube.com/watch?v=RdQCY_-SXbA) — `RdQCY_-SXbA` — 18:28
+1611. [Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners](https://www.youtube.com/watch?v=u7fsyrXsPBE) — `u7fsyrXsPBE` — 18:32
