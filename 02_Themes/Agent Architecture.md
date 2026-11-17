@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 828
+- Total tagged videos: 829
 
 ## Cross-video synthesis
 
-- This theme appears across 828 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (779), Evals & Reliability (684), MCP & Tooling (105).
+- This theme appears across 829 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (780), Evals & Reliability (685), MCP & Tooling (105).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -840,6 +840,7 @@
 - [[1588-MpkARD5pq-M-robots-will-be-trained-on-video-games-pim-de-witte-general-intuition|#1588 — Robots Will Be Trained on Video Games - Pim de Witte, General Intuition]]
 - [[1589-ZJjRgvjhq3M-build-your-own-finance-agent-inside-chatgpt-stefano-fabbri-oliver-steffmann-openai|#1589 — Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI]]
 - [[1598-jDwc0aXTAFg-your-company-has-no-model-of-itself-agents-can-build-one-joao-wenzel-citadel-securities|#1598 — Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities]]
+- [[1603-gdzsJZJ6DDs-your-financial-agent-needs-to-show-its-work-anirudh-veeraragavan-fieldguide|#1603 — Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide]]
 
 ## Notes
 
