@@ -1,4 +1,5 @@
 import type { BookChapter } from './bookChapters';
+import chapter01 from '../content-3/chapter-01.md?raw';
 
 // Third book — a sibling data file to bookChapters.ts and bookChaptersTwo.ts,
 // not a merge into either. Reuses book 1's `BookChapter` shape so the generic
@@ -37,7 +38,18 @@ const countWords = (content: string) => content.trim().split(/\s+/).filter(Boole
 // build track, not the book, and it was rendering on the public /books page.
 export const BOOK_THREE_TITLE = 'The Shape of the Work';
 
-export const chaptersThree: BookChapter[] = [];
+export const chaptersThree: BookChapter[] = [
+  {
+    number: '01',
+    slug: 'the-bottleneck-moved',
+    title: 'The Bottleneck Moved',
+    promise:
+      'Why "code generation was never the bottleneck" reframes the whole lifecycle — and why the feeling of going faster is not evidence that you are.',
+    status: 'Drafting',
+    content: chapter01,
+    wordCount: countWords(chapter01),
+  },
+];
 
 /** Total word count across all book-3 chapters — mirrors `totalWordCount` in `../lib/readingStats`. */
 export const chaptersThreeWordCount = chaptersThree.reduce((sum, c) => sum + c.wordCount, 0);
@@ -52,6 +64,3 @@ export const chapterThreeParam = (c: BookChapter): string => c.slug;
 export const chapterThreeByParam = (param: string): BookChapter | undefined =>
   chaptersThree.find((c) => c.slug === param);
 
-// `countWords` is used by the chapter entries above once they exist. Reference
-// it so an empty track does not trip noUnusedLocals.
-void countWords;
