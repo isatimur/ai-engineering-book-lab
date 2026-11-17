@@ -97,8 +97,18 @@ export const Books = () => {
             to="/third-book"
             className="block rounded-sm border border-dotted border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
           >
+            {/*
+              "In design" was accurate while the track had no prose. With a
+              full first draft it understated the book and read as stale —
+              derive the label from the chapter count rather than restating it,
+              so the card cannot disagree with the reader again.
+            */}
             <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
-              In design
+              {chaptersThree.length === 0
+                ? 'In design'
+                : chaptersThree.length < PLANNED_CHAPTERS
+                  ? 'Drafting'
+                  : 'First draft'}
             </p>
             <h2 className="mb-2 font-serif text-2xl italic leading-tight">
               {BOOK_THREE_TITLE}
