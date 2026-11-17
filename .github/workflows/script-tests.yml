@@ -26,17 +26,21 @@ on:
     branches: [main]
     paths:
       - 'scripts/**'
+      - '99_Meta/scripts/**'
       - 'claims-3/**'
       - 'public/drafting-3/**'
       - 'research_passes/**'
       - '.github/workflows/script-tests.yml'
+      - 'ruff.toml'
   pull_request:
     paths:
       - 'scripts/**'
+      - '99_Meta/scripts/**'
       - 'claims-3/**'
       - 'public/drafting-3/**'
       - 'research_passes/**'
       - '.github/workflows/script-tests.yml'
+      - 'ruff.toml'
   schedule:
     - cron: '0 9 * * *'   # 09:00 UTC daily safety net
   workflow_dispatch:
@@ -62,6 +66,14 @@ jobs:
           git config --global user.name "script-tests"
           git config --global user.email "script-tests@example.invalid"
           git config --global init.defaultBranch main
+
+      # A lint config nothing runs is a comment. `ruff.toml` pins the rule set
+      # explicitly, so this step fails on a real finding rather than on ruff
+      # changing its defaults under us.
+      - name: Lint the gate scripts and the corpus tooling
+        run: |
+          pip install --quiet 'ruff==0.5.7'
+          ruff check scripts/ 99_Meta/scripts/
 
       - name: Run every scripts/test_*.py
         run: |

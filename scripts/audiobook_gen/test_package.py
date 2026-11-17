@@ -1,5 +1,4 @@
 import zipfile
-from pathlib import Path
 
 from audiobook_gen.package import build_ffmetadata, zip_marketplace
 

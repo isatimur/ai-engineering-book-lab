@@ -11,7 +11,9 @@ text and manufactures findings - that mistake has been made here before.
 
     python3 scripts/show_unit.py --run agent-54c7-... --unit 'paragraph:chapter-4-...#L40-L40'
 """
-import argparse, json, sys
+import argparse
+import json
+import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))

@@ -1,4 +1,4 @@
-from audiobook_gen.normalize import normalize_markdown, Chapter
+from audiobook_gen.normalize import normalize_markdown
 
 
 def test_splits_on_chapter_headings():

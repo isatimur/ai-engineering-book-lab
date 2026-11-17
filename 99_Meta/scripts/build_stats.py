@@ -392,7 +392,7 @@ def main() -> int:
     if website_data.exists():
         (website_data / "stats.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
-    print(f"[stats] wrote STATS.md, stats.json, website/src/data/stats.json")
+    print("[stats] wrote STATS.md, stats.json, website/src/data/stats.json")
     print(f"[stats] {s.corpus['videos']} videos · {s.diagrams['total']} diagrams · "
           f"{s.claims['total']} claims · {s.anchors['total']} anchors · "
           f"{s.chapters['total']} chapters")

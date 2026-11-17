@@ -1,0 +1,22 @@
+# Lint settings for the lab's Python: the gate scripts in `scripts/` and the
+# corpus tooling in `99_Meta/scripts/`.
+#
+# Line length and target version match the other Python repos in this
+# workspace (book-mash, mash-core), so a script moving between them does not
+# change shape.
+#
+# This file is only worth having because `script-tests.yml` runs `ruff check`
+# against it. A lint config that no trigger ever fires is a comment — the same
+# reason that workflow exists at all.
+line-length = 100
+target-version = "py313"
+
+[lint]
+# Ruff's default selection: pycodestyle errors E4/E7/E9 and pyflakes F.
+# Stated explicitly rather than inherited, so a future ruff changing its
+# default cannot silently widen or narrow this gate.
+#
+# E501 (line too long) is deliberately NOT selected. 146 lines in this repo
+# exceed 100 characters and most are prose in docstrings and comments that
+# reads worse when wrapped. `line-length` above still governs the formatter.
+select = ["E4", "E7", "E9", "F"]

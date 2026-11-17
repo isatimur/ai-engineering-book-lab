@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from typing import Callable, Protocol
+from typing import Protocol
 
 from audiobook_gen import ffmpeg_ops as ff
 from audiobook_gen.chunk import chunk_text

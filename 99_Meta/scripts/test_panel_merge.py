@@ -238,7 +238,7 @@ class TestEndToEndOnDisk(unittest.TestCase):
                 (d / "run.json").write_text(json.dumps(
                     {k: r[k] for k in ("run_id", "corpus_snapshot_hash", "status")}
                 ))
-            res = pm.run(["a", "b", "c"], "panel-1", 3, runs_dir, write=True)
+            pm.run(["a", "b", "c"], "panel-1", 3, runs_dir, write=True)
             out = runs_dir / "panel-1"
             self.assertTrue((out / "scores.json").exists())
             self.assertTrue((out / "run.json").exists())

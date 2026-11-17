@@ -1,4 +1,3 @@
-from audiobook_gen import eleven
 from audiobook_gen.eleven_prepare import (
     SEGMENT_OPENING_TAG,
     context_snippet,

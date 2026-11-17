@@ -76,7 +76,7 @@ def _published_portion(draft_path: Path) -> str:
     leading/trailing blank lines."""
     lines = draft_path.read_text(encoding="utf-8").split("\n")
     try:
-        sep_idx = next(i for i, l in enumerate(lines) if l.strip() == "---")
+        sep_idx = next(i for i, line in enumerate(lines) if line.strip() == "---")
     except StopIteration:
         # No separator found — treat the whole file as the published portion.
         return draft_path.read_text(encoding="utf-8").strip()
@@ -161,7 +161,6 @@ def check_audio_freshness() -> list[str]:
 
 def check_scores_freshness() -> list[str]:
     """Return list of problem strings; empty means PASS."""
-    problems: list[str] = []
     if not SCORES_FILE.exists():
         return [f"  MISSING {SCORES_FILE.relative_to(REPO)}"]
 

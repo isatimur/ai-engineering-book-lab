@@ -3,10 +3,8 @@ from __future__ import annotations
 
 import json
 import re
-from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
 
 ROOT = Path(__file__).resolve().parents[2]
 VIDEO_DIR = ROOT / "01_Videos"
@@ -16,7 +14,7 @@ META_DIR = ROOT / "99_Meta"
 AUDIT_DIR = META_DIR / "audits"
 INVENTORY_PATH = Path("/tmp/ai-engineer-videos.jsonl")
 
-import ingest_ai_engineer_videos as ingest
+import ingest_ai_engineer_videos as ingest  # noqa: E402 — needs ROOT above
 
 
 @dataclass
@@ -300,7 +298,9 @@ def yaml_dump(fm: dict[str, object]) -> str:
 
 def replace_section(body: str, heading: str, new_content: str) -> str:
     pattern = rf"(## {re.escape(heading)}\n)(.*?)(?=\n## |\Z)"
-    repl = lambda m: m.group(1) + new_content.rstrip() + "\n"
+    def repl(m: re.Match[str]) -> str:
+        return m.group(1) + new_content.rstrip() + "\n"
+
     if re.search(pattern, body, re.S):
         return re.sub(pattern, repl, body, flags=re.S)
     return body.rstrip() + f"\n\n## {heading}\n{new_content.rstrip()}\n"
@@ -370,7 +370,7 @@ def build_people_and_concepts(notes_by_idx: dict[int, Note]) -> None:
         orgs = sorted({re.search(r",\s*(.+)$", r.title).group(1).strip() for r in records if re.search(r",\s*(.+)$", r.title)})
         lines = [
             f"# {person}", "", "## Why this entity matters", "",
-            f"- Recurs in the corpus as a useful speaker/operator to revisit for AI engineering judgment, practice, or framing.",
+            "- Recurs in the corpus as a useful speaker/operator to revisit for AI engineering judgment, practice, or framing.",
             f"- Current seed coverage: {len(records)} talk(s).", "",
             "## Related organizations", "",
         ]
@@ -382,7 +382,7 @@ def build_people_and_concepts(notes_by_idx: dict[int, Note]) -> None:
         records = [notes_by_idx[i] for i in idxs if i in notes_by_idx]
         if not records:
             continue
-        lines = [f"# {org}", "", "## Why this entity matters", "", f"- Appears repeatedly as an organization shaping tooling, infrastructure, or operating practice in the corpus.", "", "## Seed talks", ""]
+        lines = [f"# {org}", "", "## Why this entity matters", "", "- Appears repeatedly as an organization shaping tooling, infrastructure, or operating practice in the corpus.", "", "## Seed talks", ""]
         lines += [f"- [[{r.path.stem}|#{r.playlist_index} — {r.title}]]" for r in records]
         (PEOPLE_DIR / f"{org}.md").write_text("\n".join(lines) + "\n")
     all_notes = list(notes_by_idx.values())
@@ -395,7 +395,7 @@ def build_people_and_concepts(notes_by_idx: dict[int, Note]) -> None:
         matches = sorted(matches, key=lambda n: n.playlist_index)[:12]
         if not matches:
             continue
-        lines = [f"# {concept}", "", "## Why this concept matters", "", f"- This concept recurs across the corpus as a reusable framing device, practice, or systems pattern.", "", "## Seed talks", ""]
+        lines = [f"# {concept}", "", "## Why this concept matters", "", "- This concept recurs across the corpus as a reusable framing device, practice, or systems pattern.", "", "## Seed talks", ""]
         lines += [f"- [[{r.path.stem}|#{r.playlist_index} — {r.title}]]" for r in matches]
         (CONCEPTS_DIR / f"{concept}.md").write_text("\n".join(lines) + "\n")
 

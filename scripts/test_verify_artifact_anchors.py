@@ -435,6 +435,48 @@ class ArtifactAnchorVerifier(unittest.TestCase):
         checked, unverifiable, failures = verify(led, self.repo)
         self.assertEqual((checked, unverifiable, len(failures)), (0, 0, 1))
 
+    # -- I6b: an excerpt that appears in EVERY diff certifies nothing ------
+    #
+    # All of these passed the old three-character rule. Each is a substring of
+    # essentially any commit's diff, so they would certify whatever commit the
+    # anchor happened to name. Run against the unfixed verifier, every case
+    # below is red.
+
+    def test_diff_scaffolding_excerpts_fail(self) -> None:
+        """`---`, `+++`, `@@` and friends are in every diff ever produced."""
+        for raw in ("---", "+++", "@@", "----", "++++", "====", "@@@@",
+                    "diff --git", "index", "--- a", "+++ b",
+                    "No newline at end of file", "Binary files differ"):
+            led = self.ledger(anchor("commit", self.head, "2026-11-10", raw))
+            checked, unverifiable, failures = verify(led, self.repo)
+            self.assertEqual((checked, unverifiable, len(failures)), (0, 0, 1), raw)
+            self.assertIn("excerpt", failures[0], raw)
+
+    def test_scaffolding_check_is_not_always_on(self) -> None:
+        """The control. A specific `diff --git` line names a file, so it
+        discriminates and must still pass — otherwise the rule above is just
+        a verifier that fails everything."""
+        line = "diff --git a/notes.md b/notes.md"
+        led = self.ledger(anchor("commit", self.head, "2026-11-10", line))
+        checked, unverifiable, failures = verify(led, self.repo)
+        self.assertEqual((checked, unverifiable, failures), (1, 0, []))
+
+    def test_scaffolding_match_ignores_case_and_spacing(self) -> None:
+        """`DIFF  --GIT` is the same string wearing a hat."""
+        for raw in ("DIFF --GIT", "diff  --git", "  diff --git  ",
+                    "NO NEWLINE AT END OF FILE"):
+            led = self.ledger(anchor("commit", self.head, "2026-11-10", raw))
+            checked, unverifiable, failures = verify(led, self.repo)
+            self.assertEqual((checked, unverifiable, len(failures)), (0, 0, 1), raw)
+
+    def test_a_short_but_specific_excerpt_still_passes(self) -> None:
+        """Pins the floor against a mutant that simply raises the length
+        limit. Real ledger excerpts run as short as 14 characters, and a
+        rule that rejects them would push authors toward padding."""
+        led = self.ledger(anchor("commit", self.head, "2026-11-10", "+beta"))
+        checked, unverifiable, failures = verify(led, self.repo)
+        self.assertEqual((checked, unverifiable, failures), (1, 0, []))
+
     # -- I7: a repeated field is a failure, not a silent overwrite ---------
 
     def test_duplicate_field_fails(self) -> None:
