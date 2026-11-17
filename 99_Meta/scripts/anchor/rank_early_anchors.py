@@ -76,8 +76,8 @@ def main() -> int:
         print(f"  {t:6.1f}s  {ent:<11} L{lineno:<5} {vid}")
         print(f"          {quote[:104]}")
 
-    print(f"\nRead these first. An early anchor is a place to look, not a verdict — "
-          f"speakers do\nsometimes state their thesis in the opening minute and mean it.")
+    print("\nRead these first. An early anchor is a place to look, not a verdict — "
+          "speakers do\nsometimes state their thesis in the opening minute and mean it.")
     return 0
 
 

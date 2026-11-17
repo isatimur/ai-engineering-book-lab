@@ -89,7 +89,44 @@ SHA_RE = re.compile(r"^[0-9a-f]{7,40}$")
 RUN_ID_RE = re.compile(r"^\d+$")
 
 CAPTURE_DIR = "research_passes"
-MIN_EXCERPT_CHARS = 3  # `+` or `}` matches every diff and certifies nothing.
+MIN_EXCERPT_CHARS = 4  # `+` or `}` matches every diff and certifies nothing.
+
+# Length alone was the wrong instrument. At three characters `---`, `+++` and
+# `@@` all passed, and each one appears in every diff ever produced, so an
+# anchor could certify any commit at all. Two rules replace the guesswork:
+# an excerpt must carry real content, and it must not BE the scaffolding.
+MIN_EXCERPT_ALNUM = 2  # `----`, `++++`, `====` carry no content.
+
+# Matched after strip + casefold + whitespace collapse, and only as the WHOLE
+# excerpt. `diff --git a/scripts/foo.py b/scripts/foo.py` names a file and
+# discriminates; a bare `diff --git` names nothing and is in every diff.
+UNIVERSAL_EXCERPTS = frozenset({
+    "diff --git",
+    "index",
+    "--- a",
+    "+++ b",
+    "--- /dev/null",
+    "+++ /dev/null",
+    "no newline at end of file",
+    "binary files differ",
+})
+
+
+def excerpt_problem(excerpt: str) -> str | None:
+    """Why this excerpt cannot certify anything, or None if it can.
+
+    Returns the reason so the caller can name it in the failure.
+    """
+    if len(excerpt) < MIN_EXCERPT_CHARS:
+        return (f"excerpt {excerpt!r} is blank or too short "
+                f"(need {MIN_EXCERPT_CHARS} characters or more)")
+    if sum(c.isalnum() for c in excerpt) < MIN_EXCERPT_ALNUM:
+        return (f"excerpt {excerpt!r} is punctuation only "
+                f"(need {MIN_EXCERPT_ALNUM} letters or digits or more)")
+    if " ".join(excerpt.split()).casefold() in UNIVERSAL_EXCERPTS:
+        return (f"excerpt {excerpt!r} is diff scaffolding that appears in "
+                f"every diff, so it certifies nothing")
+    return None
 
 PASS, FAIL, UNVERIFIABLE = "pass", "fail", "unverifiable"
 Outcome = tuple[str, str]  # (PASS | FAIL | UNVERIFIABLE, message)
@@ -404,9 +441,9 @@ def check_anchor(repo: Path, a: dict[str, str]) -> Outcome:
         return FAIL, f"{label(a)}: unknown kind (expected one of {', '.join(KINDS)})"
     if not is_iso_date(a["date"]):
         return FAIL, f"{label(a)}: date {a['date']!r} is not a real YYYY-MM-DD date"
-    if len(a["excerpt"]) < MIN_EXCERPT_CHARS:
-        return FAIL, (f"{label(a)}: excerpt {a['excerpt']!r} is blank or too short "
-                      f"(need {MIN_EXCERPT_CHARS} characters or more)")
+    bad_excerpt = excerpt_problem(a["excerpt"])
+    if bad_excerpt:
+        return FAIL, f"{label(a)}: {bad_excerpt}"
     problem = ref_problem(a)
     if problem:
         return FAIL, f"{label(a)}: {problem}"
