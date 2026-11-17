@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1466
+Total videos: 1467
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1468,3 +1468,4 @@ Total videos: 1466
 1605. [Your AI Agent Is Hiding Its Mistakes From You - Ben Holmes, Warp](https://www.youtube.com/watch?v=pz74r-4dGfQ) — `pz74r-4dGfQ` — 19:20
 1607. [AI Can't Make Up a Number It Can't Look Up - Vinoo Ganesh, Kepler](https://www.youtube.com/watch?v=RdQCY_-SXbA) — `RdQCY_-SXbA` — 18:28
 1611. [Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners](https://www.youtube.com/watch?v=u7fsyrXsPBE) — `u7fsyrXsPBE` — 18:32
+1618. [What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey](https://www.youtube.com/watch?v=21tuT-e4NVo) — `21tuT-e4NVo` — 20:28
