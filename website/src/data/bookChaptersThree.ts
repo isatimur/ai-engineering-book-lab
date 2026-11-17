@@ -1,5 +1,8 @@
 import type { BookChapter } from './bookChapters';
 import chapter01 from '../content-3/chapter-01.md?raw';
+import chapter02 from '../content-3/chapter-02.md?raw';
+import chapter03 from '../content-3/chapter-03.md?raw';
+import chapter04 from '../content-3/chapter-04.md?raw';
 
 // Third book — a sibling data file to bookChapters.ts and bookChaptersTwo.ts,
 // not a merge into either. Reuses book 1's `BookChapter` shape so the generic
@@ -48,6 +51,36 @@ export const chaptersThree: BookChapter[] = [
     status: 'Drafting',
     content: chapter01,
     wordCount: countWords(chapter01),
+  },
+  {
+    number: '02',
+    slug: 'intent-before-specification',
+    title: 'Intent Before Specification',
+    promise:
+      'What has to be settled before any document helps — and why the instinct to specify first fails on capabilities nobody has mapped yet.',
+    status: 'Drafting',
+    content: chapter02,
+    wordCount: countWords(chapter02),
+  },
+  {
+    number: '03',
+    slug: 'what-a-specification-is-for',
+    title: 'What a Specification Is For',
+    promise:
+      'Code is a lossy projection of the reasoning that produced it. A specification is the surface you argue on before that reasoning is lost.',
+    status: 'Drafting',
+    content: chapter03,
+    wordCount: countWords(chapter03),
+  },
+  {
+    number: '04',
+    slug: 'decomposition-and-the-plan',
+    title: 'Decomposition and the Plan',
+    promise:
+      'Why the size of a planned step is a context constraint rather than a matter of taste, and why a bad line in a plan costs a hundred bad lines of code.',
+    status: 'Drafting',
+    content: chapter04,
+    wordCount: countWords(chapter04),
   },
 ];
 
