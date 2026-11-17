@@ -54,7 +54,7 @@ export const ThirdBookReader = () => {
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
             {isEmpty
               ? `${outlineChapters.length} chapters planned`
-              : `${chaptersThree.length} chapters · ${formatReadingTime(totalWords)}`}
+              : `${chaptersThree.length} ${chaptersThree.length === 1 ? 'chapter' : 'chapters'} · ${formatReadingTime(totalWords)}`}
           </p>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
             {BOOK_THREE_TITLE}
