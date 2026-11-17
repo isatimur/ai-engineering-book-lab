@@ -25,6 +25,20 @@ This reframes the usual complaint about specification work. Teams say the docume
 
 Chapter 1 ended on the constraint being agreement. This is the instrument for reaching it.
 
+## What the absence costs
+
+Corey Gallon describes the other side of this with a clinical image, and it is the most precise account in the corpus of what skipping the document actually buys you.
+
+The weekend goes well. The thing works, and it feels like genuine leverage. "But then Monday rolls around. You want to add a feature or you want to change the way that it works and you realize that you don't understand it. You can't maintain it and you have to throw most or all of it away" (Corey J. Gallon, Rexmore).
+
+His definition is worth keeping intact, because it names the trade honestly rather than scolding: vibe coding is "the low-spec zero planning approach to AI accelerated development that feels productive but results in brittle unmaintainable demo wear", and the hangover is "the resulting despair when you try to build maintainable, understandable software this way" (Corey J. Gallon, Rexmore).
+
+Two things in that are worth separating. The approach *feels* productive, and the feeling is not an illusion — the code appeared and it ran. What was skipped does not bill until later, which is why the method is self-reinforcing in the short term and collapses on contact with the second change.
+
+And notice what is lost on Monday. Not the code; the code is still there. The *understanding* is gone, which is Geoffrey Litt's argument from Chapter 1 arriving from the other direction. A specification is partly a message to the person who will need to change this and will no longer remember why.
+
+Gallon's framing also usefully narrows the claim. The hangover appears when you try to build maintainable software that way. For a throwaway prototype answering a question, there is no hangover, because there is no Monday. The method is not wrong; it is being used past the point where its trade stops paying.
+
 ## The second reader changes the economics
 
 What is new is that the document now has a second audience that did not exist before, and that audience reads everything.
