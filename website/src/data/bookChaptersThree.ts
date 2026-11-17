@@ -9,6 +9,8 @@ import chapter07 from '../content-3/chapter-07.md?raw';
 import chapter08 from '../content-3/chapter-08.md?raw';
 import chapter09 from '../content-3/chapter-09.md?raw';
 import chapter10 from '../content-3/chapter-10.md?raw';
+import chapter11 from '../content-3/chapter-11.md?raw';
+import chapter12 from '../content-3/chapter-12.md?raw';
 
 // Third book — a sibling data file to bookChapters.ts and bookChaptersTwo.ts,
 // not a merge into either. Reuses book 1's `BookChapter` shape so the generic
@@ -147,6 +149,26 @@ export const chaptersThree: BookChapter[] = [
     status: 'Drafting',
     content: chapter10,
     wordCount: countWords(chapter10),
+  },
+  {
+    number: '11',
+    slug: 'the-factory-and-its-discontents',
+    title: 'The Factory and Its Discontents',
+    promise:
+      'A factory makes the same thing repeatedly. Software never makes the same thing twice — which is why the metaphor works for some work and strains everywhere else.',
+    status: 'Drafting',
+    content: chapter11,
+    wordCount: countWords(chapter11),
+  },
+  {
+    number: '12',
+    slug: 'how-much-process-and-how-far-out-of-the-loop',
+    title: 'How Much Process, and How Far Out of the Loop',
+    promise:
+      'Two measured rounds where ceremony cost a third more tokens for an identical scorecard — and the one result no scorecard could see.',
+    status: 'Drafting',
+    content: chapter12,
+    wordCount: countWords(chapter12),
   },
 ];
 
