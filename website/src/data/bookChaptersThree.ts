@@ -3,6 +3,9 @@ import chapter01 from '../content-3/chapter-01.md?raw';
 import chapter02 from '../content-3/chapter-02.md?raw';
 import chapter03 from '../content-3/chapter-03.md?raw';
 import chapter04 from '../content-3/chapter-04.md?raw';
+import chapter05 from '../content-3/chapter-05.md?raw';
+import chapter06 from '../content-3/chapter-06.md?raw';
+import chapter07 from '../content-3/chapter-07.md?raw';
 
 // Third book — a sibling data file to bookChapters.ts and bookChaptersTwo.ts,
 // not a merge into either. Reuses book 1's `BookChapter` shape so the generic
@@ -81,6 +84,36 @@ export const chaptersThree: BookChapter[] = [
     status: 'Drafting',
     content: chapter04,
     wordCount: countWords(chapter04),
+  },
+  {
+    number: '05',
+    slug: 'execution-under-a-spec',
+    title: 'Execution Under a Spec',
+    promise:
+      'A specification binds through exactly two mechanisms — what the agent can reach, and what gets checked afterwards. Everything else is advisory.',
+    status: 'Drafting',
+    content: chapter05,
+    wordCount: countWords(chapter05),
+  },
+  {
+    number: '06',
+    slug: 'the-independence-problem',
+    title: 'The Independence Problem',
+    promise:
+      'A judge that nearly doubled a benchmark score, and why the most dangerous gate in your pipeline is the one you wrote yourself.',
+    status: 'Drafting',
+    content: chapter06,
+    wordCount: countWords(chapter06),
+  },
+  {
+    number: '07',
+    slug: 'gates-that-can-actually-fail',
+    title: 'Gates That Can Actually Fail',
+    promise:
+      'Gates die two ways: crying wolf, or never objecting. The second is silent, gets praised, and is far more dangerous.',
+    status: 'Drafting',
+    content: chapter07,
+    wordCount: countWords(chapter07),
   },
 ];
 
