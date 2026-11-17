@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T01:42:37+00:00",
+  "generated_at": "2026-11-17T18:25:52+00:00",
   "corpus": {
-    "videos": 1462
+    "videos": 1463
   },
   "synthesis": {
     "themes": 10,
@@ -41,7 +41,7 @@
     "programs": 10,
     "tasks": 7
   },
-  "total_artefacts": 1748,
+  "total_artefacts": 1749,
   "book2": {
     "drafting_files": 8,
     "claims": {
@@ -64,7 +64,7 @@
     }
   },
   "book3": {
-    "drafting_files": 0,
+    "drafting_files": 1,
     "claims": {
       "total": 0,
       "strong": 0,
@@ -85,8 +85,8 @@
       "low": 0
     },
     "chapters": {
-      "total": 0,
-      "drafting": 0,
+      "total": 1,
+      "drafting": 1,
       "starter": 0,
       "outlined": 0
     }
