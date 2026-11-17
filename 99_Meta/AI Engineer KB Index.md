@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1591-1599|Latest batch: recent-1591-1599]]
-- Total video notes in corpus: 1462
-- Video notes created in this batch: 2
+- [[batches/recent-1604-1611|Latest batch: recent-1604-1611]]
+- Total video notes in corpus: 1463
+- Video notes created in this batch: 1
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,5 +31,4 @@
 
 ## Recent notes
 
-- [[1589-ZJjRgvjhq3M-build-your-own-finance-agent-inside-chatgpt-stefano-fabbri-oliver-steffmann-openai|#1589 — Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI]]
-- [[1598-jDwc0aXTAFg-your-company-has-no-model-of-itself-agents-can-build-one-joao-wenzel-citadel-securities|#1598 — Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities]]
+- [[1603-gdzsJZJ6DDs-your-financial-agent-needs-to-show-its-work-anirudh-veeraragavan-fieldguide|#1603 — Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide]]

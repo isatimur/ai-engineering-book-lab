@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 938
+- Total tagged videos: 939
 
 ## Cross-video synthesis
 
-- This theme appears across 938 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (779), Evals & Reliability (718), MCP & Tooling (118).
+- This theme appears across 939 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (780), Evals & Reliability (719), MCP & Tooling (118).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -950,6 +950,7 @@
 - [[1588-MpkARD5pq-M-robots-will-be-trained-on-video-games-pim-de-witte-general-intuition|#1588 — Robots Will Be Trained on Video Games - Pim de Witte, General Intuition]]
 - [[1589-ZJjRgvjhq3M-build-your-own-finance-agent-inside-chatgpt-stefano-fabbri-oliver-steffmann-openai|#1589 — Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI]]
 - [[1598-jDwc0aXTAFg-your-company-has-no-model-of-itself-agents-can-build-one-joao-wenzel-citadel-securities|#1598 — Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities]]
+- [[1603-gdzsJZJ6DDs-your-financial-agent-needs-to-show-its-work-anirudh-veeraragavan-fieldguide|#1603 — Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide]]
 
 ## Notes
 
