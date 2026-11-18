@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1468
+Total videos: 1469
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1470,3 +1470,4 @@ Total videos: 1468
 1611. [Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners](https://www.youtube.com/watch?v=u7fsyrXsPBE) — `u7fsyrXsPBE` — 18:32
 1618. [What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey](https://www.youtube.com/watch?v=21tuT-e4NVo) — `21tuT-e4NVo` — 20:28
 1626. [Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics](https://www.youtube.com/watch?v=wWisOHEcMPE) — `wWisOHEcMPE` — 19:42
+1627. [How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy](https://www.youtube.com/watch?v=oWqsBuhRRZ4) — `oWqsBuhRRZ4` — 19:44

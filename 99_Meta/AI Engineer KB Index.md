@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1619-1626|Latest batch: recent-1619-1626]]
-- Total video notes in corpus: 1468
-- Video notes created in this batch: 1
+- [[batches/recent-1628-1635|Latest batch: recent-1628-1635]]
+- Total video notes in corpus: 1469
+- Video notes created in this batch: 0
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,4 +31,3 @@
 
 ## Recent notes
 
-- [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]
