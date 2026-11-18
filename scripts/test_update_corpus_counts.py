@@ -90,36 +90,87 @@ class ThemeParsing(unittest.TestCase):
 
 class Verdict(unittest.TestCase):
     def test_in_sync_passes(self):
-        ok, reason = uc.verdict([], 1000, 1000, 0.05)
+        ok, reason = uc.verdict([], [], 1000, 1000, 0.05)
         self.assertTrue(ok)
         self.assertEqual(reason, "in sync")
 
     def test_small_numeric_lag_passes(self):
-        ok, _ = uc.verdict(["row 3 count: '98' -> '100'"], 990, 1000, 0.05)
+        ok, _ = uc.verdict(["row 3 count: '98' -> '100'"], [], 990, 1000, 0.05)
         self.assertTrue(ok)
 
     def test_large_numeric_lag_fails(self):
-        ok, reason = uc.verdict(["row 3 count: '98' -> '400'"], 600, 1000, 0.05)
+        ok, reason = uc.verdict(["row 3 count: '98' -> '400'"], [], 600, 1000, 0.05)
         self.assertFalse(ok)
         self.assertIn("behind", reason)
 
-    def test_structural_change_fails_even_with_no_numeric_lag(self):
+    def test_a_structural_problem_fails_even_with_no_numeric_lag(self):
         # The whole point: the count can be perfect while the chart points the
         # wrong chapter label at the wrong bar.
-        ok, reason = uc.verdict(
-            ["row 1 chapter: 'Chapter 9 · X' -> 'Chapter 3 · Y'"], 1000, 1000, 0.05
-        )
+        ok, reason = uc.verdict([], ["row 1 points at the wrong chapter"], 1000, 1000, 0.99)
         self.assertFalse(ok)
         self.assertIn("structural", reason)
 
-    def test_recolour_counts_as_structural(self):
-        ok, _ = uc.verdict(["row 4 bar fill: '#a7f3d0' -> '#60a5fa'"], 1000, 1000, 0.99)
-        self.assertFalse(ok)
-
     def test_unreadable_headline_fails(self):
-        ok, reason = uc.verdict(["row 1 count: '1' -> '2'"], None, 1000, 0.99)
+        ok, reason = uc.verdict(["row 1 count: '1' -> '2'"], [], None, 1000, 0.99)
         self.assertFalse(ok)
         self.assertIn("unreadable", reason)
+
+
+class StructuralProblems(unittest.TestCase):
+    """What counts as the chart's shape being wrong, and what is only lag."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.copy = Path(self.tmp.name) / THEME_MAP_SRC.name
+        shutil.copy(THEME_MAP_SRC, self.copy)
+        self.themes = fixture_themes()
+        uc.update_theme_map(self.copy, 1000, self.themes)
+        self.addCleanup(self.tmp.cleanup)
+
+    def test_a_chart_drawn_from_these_counts_has_no_problems(self):
+        self.assertEqual(uc.structural_problems(self.copy, self.themes, 0.05), [])
+
+    def test_a_near_tie_swap_is_lag_not_structure(self):
+        # The live corpus has Evals & Reliability at 838 and Agent Architecture
+        # at 834. Four more talks flip their rows. That must not fail a gate
+        # that runs on every corpus PR and opens an issue every night.
+        nudged = dict(self.themes)
+        nudged["Agent Architecture"] = nudged["Evals & Reliability"] + 3
+        self.assertEqual(uc.structural_problems(self.copy, nudged, 0.05), [])
+
+    def test_a_real_rank_change_is_structural(self):
+        # The defect this gate was written for: the chart's biggest bar named
+        # a theme that had fallen to fourth.
+        moved = dict(self.themes)
+        moved["Org Design & Leadership"] = moved["Coding Agents"] * 3
+        problems = uc.structural_problems(self.copy, moved, 0.05)
+        self.assertTrue(any("Org Design & Leadership" in p for p in problems), problems)
+
+    def test_a_row_labelled_with_another_chapter_is_structural(self):
+        doc = json.loads(self.copy.read_text(encoding="utf-8"))
+        uc.by_id(doc)["cl3"]["text"] = "Chapter 9 · The AI-Native Organization"
+        uc.write_doc(self.copy, doc)
+        problems = uc.structural_problems(self.copy, self.themes, 0.99)
+        self.assertTrue(any("row 3" in p for p in problems), problems)
+
+    def test_a_miscoloured_row_is_structural(self):
+        # The bug found in the shipped drawing: a green bar and a green count
+        # under a grey "Background" label.
+        doc = json.loads(self.copy.read_text(encoding="utf-8"))
+        uc.by_id(doc)["bar10"]["backgroundColor"] = "#a7f3d0"
+        uc.write_doc(self.copy, doc)
+        problems = uc.structural_problems(self.copy, self.themes, 0.99)
+        self.assertTrue(any("fill" in p for p in problems), problems)
+
+    def test_a_theme_the_chart_never_heard_of_is_structural(self):
+        added = dict(self.themes)
+        added["Robotics & Embodied"] = 7
+        problems = uc.structural_problems(self.copy, added, 0.99)
+        self.assertTrue(any("Robotics & Embodied" in p for p in problems), problems)
+
+    def test_the_live_chart_agrees_with_the_live_stats(self):
+        _, themes = uc.read_stats()
+        self.assertEqual(uc.structural_problems(THEME_MAP_SRC, themes, 0.05), [])
 
 
 class ThemeMapRewrite(unittest.TestCase):
