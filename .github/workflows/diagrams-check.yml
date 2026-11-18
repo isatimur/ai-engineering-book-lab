@@ -28,6 +28,9 @@ on:
       - 'scripts/sync-diagrams.sh'
       - 'scripts/check_diagram_sync.py'
       - 'website/scripts/sync-diagrams.mjs'
+      # Three diagrams quote the corpus size and theme ranking, so the stats
+      # file is an input to them even though it lives nowhere near diagrams/.
+      - '99_Meta/Corpus Stats.md'
   pull_request:
     paths:
       - 'diagrams/**'
@@ -36,6 +39,7 @@ on:
       - 'scripts/sync-diagrams.sh'
       - 'scripts/check_diagram_sync.py'
       - 'website/scripts/sync-diagrams.mjs'
+      - '99_Meta/Corpus Stats.md'
   schedule:
     - cron: '0 9 * * *'   # 09:00 UTC daily safety net
   workflow_dispatch:
@@ -54,6 +58,20 @@ jobs:
 
       - name: Check diagrams are rendered, synced and current
         run: python3 scripts/check_diagram_sync.py
+
+      # Freshness is not truth. Both checks above passed every day while the
+      # theme map told readers the corpus held 794 videos and it held 1,468,
+      # and while the chart's biggest bar named a theme that had fallen to
+      # fourth. A PNG newer than its source proves only that someone rendered
+      # it, not that what it says is still so.
+      #
+      # Tolerance is deliberate. The corpus grows most nights, so a check that
+      # demanded an exact match would fail on every ingest PR and be routed
+      # around inside a week. It fails on a chart whose SHAPE is wrong —
+      # reordered rows, a recoloured bar, a re-pointed chapter label — at any
+      # tolerance, and on a printed total more than 5% behind the real one.
+      - name: Check the corpus diagrams still tell the truth
+        run: python3 diagrams/_update_corpus_counts.py --check
 
       - name: Open issue on scheduled-run drift
         if: ${{ failure() && github.event_name == 'schedule' }}

@@ -22,9 +22,9 @@ The ten chapters as a **four-act dependency arc** — the Problem (ch 1–2), th
 
 ### 2 · The Autoresearch Knowledge Machine
 
-![The 5-layer pipeline that turns a 794-video corpus into a book](02-autoresearch-machine.png)
+![The 5-layer pipeline that turns a 1,468-video corpus into a book](02-autoresearch-machine.png)
 
-How a 794-video corpus becomes a source-backed book: a five-layer pipeline — **Source → Synthesis → Evidence → Manuscript** — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Real directory names are shown as evidence.
+How a 1,468-video corpus becomes a source-backed book: a five-layer pipeline — **Source → Synthesis → Evidence → Manuscript** — governed by a Research-Org control plane that improves the upper layers through bounded, logged agent passes. Real directory names are shown as evidence.
 
 ### 3 · The Scaffolding Stack
 
@@ -36,7 +36,9 @@ The book's central thesis in one picture: a raw model is capable but not dependa
 
 ![The 10 corpus themes by video count, mapped to chapters](04-theme-corpus-map.png)
 
-What 794 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that *Models & Inference* is deliberately background, not a chapter.
+What 1,468 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that *Models & Inference* is deliberately background, not a chapter.
+
+The counts move as the corpus grows. `diagrams/_update_corpus_counts.py` derives them from `99_Meta/Corpus Stats.md` and rewrites this diagram, the pipeline diagram, and the methodology map; `--check` is a CI gate that fails when the chart's shape goes wrong or its headline falls more than 5% behind.
 
 ---
 
