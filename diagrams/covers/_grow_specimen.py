@@ -12,9 +12,9 @@ Three natural orders, one per book:
   rosette   phyllotaxis, the packing a sunflower head and a lichen thallus
             both use. Oldest talks dense at the centre, newest at the ruffled
             margin. The corpus drawn as the living thing it is.
-  longtail  a feather. Barbs ordered by how common their theme is, so the
-            ochre mass of Coding Agents forms the body and the rare domains
-            attenuate to the tip. The long tail, drawn as anatomy.
+  longtail  a pinnate frond. Leaflets ordered by how common their theme is
+            and sized by the long tail itself: broad basal leaflets crowded
+            with Coding Agents, single rare domains at the tip. The long tail, drawn as anatomy.
   delta     a branching network seen from above. One narrow channel enters at
             the bottom and splits, and splits again, into ten distributaries
             weighted by each theme's real share. The channel is slight; the
@@ -223,11 +223,12 @@ def rosette(marks: list[tuple[str, int]]) -> list[str]:
 
 
 def longtail(marks: list[tuple[str, int]]) -> list[str]:
-    """Book 2: a feather, one barb per talk.
+    """Book 2: a pinnate frond, one scale per talk.
 
-    An earlier pass packed the marks under a decaying curve and produced
-    exactly what that is — an area chart with rounded corners. A feather
-    carries the same distribution and is unmistakably alive.
+    An early pass packed the marks under a decaying curve and produced
+    exactly what that is — an area chart with rounded corners. A frond
+    carries the same distribution and is unmistakably alive: the leaflets'
+    own lengths are the long tail.
     """
     n = len(marks)
     counts = theme_mix(marks)
@@ -249,28 +250,73 @@ def longtail(marks: list[tuple[str, int]]) -> list[str]:
         dy = 2 * (1 - t) * (my - y0) + 2 * t * (y1 - my)
         return x, y, math.atan2(dy, dx)
 
+    def vane_at(t: float) -> float:
+        """Half-width of the vane: a quick swell near the quill, long taper."""
+        return 336.0 * (t + 0.06) ** 0.26 * (1.0 - t) ** 1.5
+
+    # A pinnate frond, not a feather's continuous vane. Two earlier attempts
+    # failed on the same geometry: 1,469 marks arranged along a LINE sit about
+    # 2px apart and fuse, while the same marks over the rosette's DISC get
+    # ~25px each. Drawing one barb per talk gave a solid ochre blade; filling
+    # the vane in strict columns gave combed streaks, because the marks
+    # chained between adjacent columns.
+    #
+    # Pinnae fix it by adding a level: each leaflet is a small patch holding
+    # a few dozen talks at honest 2D spacing, and the leaflets' own lengths
+    # carry the long tail. Basal leaflets are broad and crowded with Coding
+    # Agents; the tip leaflets are single rare domains.
+    pinnae = 58
+    weights = [vane_at((p + 0.5) / pinnae) for p in range(pinnae)]
+    total_weight = sum(weights) or 1.0
+    quota = [max(1, round(w / total_weight * n)) for w in weights]
+
     body: list[str] = []
-    per_side = max(n // 2, 1)
-    for i, (theme, duration) in enumerate(ordered):
-        side = 1.0 if i % 2 == 0 else -1.0
-        t = (i // 2 + 0.5) / per_side
+    idx = 0
+    for p in range(pinnae):
+        if idx >= n:
+            break
+        t = (p + 0.5) / pinnae
         px, py, tangent = spine(t)
-        # Vane width: a quick swell near the quill, then a long attenuation.
-        vane = 336.0 * (t + 0.06) ** 0.26 * (1.0 - t) ** 1.5
-        weight = min(max((duration - lo) / span, 0.0), 1.0)
-        # The duration swing narrows toward the tip, so one long talk among
-        # the rare themes cannot throw a spike out past the vane.
-        length = vane * (0.76 + 0.40 * weight * (1.0 - 0.6 * t))
-        # Barbs sweep back toward the tip, as they do on a real feather.
-        ang = tangent + side * (math.pi / 2) - side * (0.62 - 0.30 * t)
-        ex, ey = px + length * math.cos(ang), py + length * math.sin(ang)
-        cxp = px + length * 0.55 * math.cos(ang + side * 0.22)
-        cyp = py + length * 0.55 * math.sin(ang + side * 0.22)
-        ink = THEME_INK.get(theme, FALLBACK_INK)
+        side = 1.0 if p % 2 == 0 else -1.0
+        length = vane_at(t)
+        half_width = length * 0.30 + 6.0
+        k = min(quota[p], n - idx)
+        # The leaflet leaves the rachis swept back toward the tip.
+        ang = tangent + side * (math.pi / 2) - side * (0.56 - 0.26 * t)
+        ca, sa = math.cos(ang), math.sin(ang)
+        # Perpendicular to the leaflet's own axis.
+        pa, pb = math.cos(ang + math.pi / 2), math.sin(ang + math.pi / 2)
+
+        for m in range(k):
+            theme, duration = ordered[idx]
+            idx += 1
+            # Phyllotaxis again, inside the leaflet: even 2D spacing with no
+            # rows for marks to chain along.
+            a = m * GOLDEN
+            rad = math.sqrt((m + 0.5) / k)
+            along = (0.5 + 0.5 * rad * math.cos(a)) * length
+            across = rad * math.sin(a) * half_width * math.sin(
+                math.pi * min(max(along / max(length, 1), 0.0), 1.0)
+            ) ** 0.6
+            sx = px + along * ca + across * pa
+            sy = py + along * sa + across * pb
+            weight = min(max((duration - lo) / span, 0.0), 1.0)
+            size = (2.9 + 2.6 * (1.0 - rad)) * (0.80 + 0.42 * weight)
+            ink = THEME_INK.get(theme, FALLBACK_INK)
+            body.append(
+                f'<g transform="translate({sx:.1f},{sy:.1f}) '
+                f'rotate({math.degrees(ang):.1f})">'
+                f'<ellipse rx="{size * 1.15:.1f}" ry="{size * 0.78:.1f}" '
+                f'fill="{ink}" fill-opacity="{0.88 - 0.14 * t:.2f}" '
+                f'stroke="#2a2016" stroke-width="0.45" stroke-opacity="0.30"/></g>'
+            )
+
+        # The leaflet's own midrib, drawn under nothing — it reads as the
+        # structure the scales are attached to.
         body.append(
-            f'<path d="M{px:.1f},{py:.1f} Q{cxp:.1f},{cyp:.1f} {ex:.1f},{ey:.1f}" '
-            f'fill="none" stroke="{ink}" stroke-width="{1.15 + 0.95 * (1 - t):.2f}" '
-            f'stroke-opacity="{0.60 - 0.14 * t:.2f}" stroke-linecap="round"/>'
+            f'<line x1="{px:.1f}" y1="{py:.1f}" x2="{px + length * ca:.1f}" '
+            f'y2="{py + length * sa:.1f}" stroke="#6b5c43" stroke-width="1.3" '
+            f'stroke-opacity="0.34" stroke-linecap="round"/>'
         )
 
     # The quill last, so it sits over the barbs where they meet it.
