@@ -18,10 +18,10 @@ import chapter12 from '../content-3/chapter-12.md?raw';
 // `chapters.length` assumptions elsewhere (gen-llms.mjs's sanity check,
 // readingStats.ts, etc.) are untouched.
 //
-// The track is EMPTY for now: public/drafting-3/ has no chapters yet, so
-// src/content-3/ has no files to `?raw`-import. Do not import files that do
-// not exist; the build fails. When Chapter 1 arrives, run
-// `node scripts/sync-third-book.mjs`, then add the import and the entry:
+// All twelve chapters are drafted and imported above. To add or replace one,
+// write it in public/drafting-3/, run `node scripts/sync-third-book.mjs` to
+// generate src/content-3/, then add the import and the entry. Never import a
+// file that does not exist yet; the build fails. The shape:
 //
 //   import chapter01 from '../content-3/chapter-01.md?raw';
 //   ...
@@ -48,6 +48,12 @@ const countWords = (content: string) => content.trim().split(/\s+/).filter(Boole
 // placeholder rather than a slot-filler: "Book Three (Foundations)" named the
 // build track, not the book, and it was rendering on the public /books page.
 export const BOOK_THREE_TITLE = 'The Shape of the Work';
+
+// Same caveat as the title: the cover carries it, so a retitle means a new
+// cover. Sizes mirror book 1's set — `.png` 1024x1536 for OG and print,
+// `.webp` the same, `-600w.webp` for the page itself.
+export const BOOK_THREE_COVER = '/covers/the-shape-of-the-work.png';
+export const BOOK_THREE_COVER_600 = '/covers/the-shape-of-the-work-600w.webp';
 
 export const chaptersThree: BookChapter[] = [
   {
