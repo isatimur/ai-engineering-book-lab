@@ -228,16 +228,83 @@ def update_corpus_mentions(path: Path, total: int, replacements: dict[str, str])
     return changes
 
 
-# A change that only moves a number is tolerable for a while; a change that
-# reorders the chart, recolours a bar, or re-points a chapter label is not.
-# Structural drift means the picture is now making a different claim, and no
-# tolerance makes that acceptable.
-STRUCTURAL = ("theme", "chapter", "ink", "fill", "stroke")
+def printed_rows(path: Path) -> list[dict]:
+    """What the chart currently shows, row by row, top to bottom."""
+    els = by_id(json.loads(path.read_text(encoding="utf-8")))
+    rows = []
+    for i in range(1, 11):
+        count = els[f"ct{i}"]["text"].replace(",", "").strip()
+        rows.append(
+            {
+                "theme": els[f"nm{i}"]["text"],
+                "count": int(count) if count.isdigit() else None,
+                "chapter": els[f"cl{i}"]["text"],
+                "fill": els[f"bar{i}"]["backgroundColor"],
+                "bar_stroke": els[f"bar{i}"]["strokeColor"],
+                "name_ink": els[f"nm{i}"]["strokeColor"],
+                "count_ink": els[f"ct{i}"]["strokeColor"],
+                "chapter_ink": els[f"cl{i}"]["strokeColor"],
+            }
+        )
+    return rows
 
 
-def is_structural(change: str) -> bool:
-    label = change.split(":", 1)[0]
-    return any(word in label for word in STRUCTURAL)
+def structural_problems(path: Path, themes: dict[str, int], tolerance: float) -> list[str]:
+    """Ways the chart's SHAPE disagrees with the corpus, as opposed to its lag.
+
+    Judged from the drawing and the stats file, never from a diff of what a
+    rewrite would change. The first version of this check compared change
+    labels, and so called any row swap structural — including the near-ties
+    that the nightly ingest produces on its own. Evals & Reliability and Agent
+    Architecture sit four notes apart; four more talks would have reordered
+    the chart, failed the gate on an unrelated corpus PR, and opened an issue
+    a night until someone re-rendered a picture that was not wrong.
+
+    So a swap counts as structural only once the ranking is wrong by more than
+    the tolerance. A mislabelled or miscoloured row counts at any tolerance,
+    because no amount of waiting makes it right.
+    """
+    rows = printed_rows(path)
+    problems: list[str] = []
+
+    drawn = [r["theme"] for r in rows]
+    if sorted(drawn) != sorted(themes):
+        missing = sorted(set(themes) - set(drawn))
+        extra = sorted(set(drawn) - set(themes))
+        if missing:
+            problems.append(f"themes in the corpus but not on the chart: {missing}")
+        if extra:
+            problems.append(f"themes on the chart but not in the corpus: {extra}")
+        return problems  # Row-by-row checks below assume the same ten themes.
+
+    for i, row in enumerate(rows, start=1):
+        chapter, act = THEME_MAP[row["theme"]]
+        palette = ACTS[act]
+        if row["chapter"] != chapter:
+            problems.append(
+                f"row {i} ({row['theme']}) points at {row['chapter']!r}, not {chapter!r}"
+            )
+        for field, want in (
+            ("fill", palette["fill"]),
+            ("bar_stroke", palette["stroke"]),
+            ("name_ink", palette["name"]),
+            ("count_ink", palette["count"]),
+            ("chapter_ink", palette["chapter"]),
+        ):
+            if row[field] != want:
+                problems.append(
+                    f"row {i} ({row['theme']}) {field} is {row[field]}, not {want} for {act}"
+                )
+
+    for upper, lower in zip(rows, rows[1:]):
+        above, below = themes[upper["theme"]], themes[lower["theme"]]
+        if below > above * (1 + tolerance):
+            problems.append(
+                f"{lower['theme']} ({below}) is drawn below {upper['theme']} ({above}); "
+                f"the ranking is wrong by more than {tolerance:.0%}"
+            )
+
+    return problems
 
 
 def stated_total(path: Path) -> int | None:
@@ -249,21 +316,25 @@ def stated_total(path: Path) -> int | None:
 
 
 def verdict(
-    changes: list[str], printed: int | None, total: int, tolerance: float
+    changes: list[str],
+    problems: list[str],
+    printed: int | None,
+    total: int,
+    tolerance: float,
 ) -> tuple[bool, str]:
     """Does this drift fail the gate? Returns (ok, one-line reason).
 
-    Two rules, in order:
-      * any structural change fails, at any tolerance — the chart is claiming
-        something different from what the corpus says;
-      * a purely numeric lag fails only once the printed total is more than
+    Three rules, in order:
+      * any structural problem fails, at any tolerance — the chart is making a
+        claim the corpus does not support;
+      * an unreadable headline fails, because lag cannot be measured;
+      * otherwise a numeric lag fails only once the printed total is more than
         `tolerance` behind the real one.
     """
+    if problems:
+        return False, f"{len(problems)} structural problem(s)"
     if not changes:
         return True, "in sync"
-    structural = [c for c in changes if is_structural(c)]
-    if structural:
-        return False, f"{len(structural)} structural change(s)"
     if printed is None:
         return False, "headline count unreadable"
     behind = abs(total - printed) / total
@@ -341,16 +412,18 @@ def main() -> int:
                     print(f"         {change}")
 
             all_changes = [c for _, cs in stale for c in cs]
-            printed = stated_total(plan[0][0])
-            ok, reason = verdict(all_changes, printed, total, args.tolerance)
+            theme_map_path = plan[0][0]
+            printed = stated_total(theme_map_path)
+            problems = structural_problems(theme_map_path, themes, args.tolerance)
+            ok, reason = verdict(all_changes, problems, printed, total, args.tolerance)
 
             print()
             print(
                 f"The diagrams print {printed if printed is None else format(printed, ',')} "
                 f"notes; the corpus holds {total:,} — {reason}."
             )
-            for change in [c for c in all_changes if is_structural(c)][:8]:
-                print(f"  · {change}")
+            for problem in problems[:8]:
+                print(f"  · {problem}")
 
             if not ok:
                 print(

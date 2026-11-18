@@ -38,7 +38,9 @@ The book's central thesis in one picture: a raw model is capable but not dependa
 
 What 1,468 videos are actually about: ten themes sized by corpus count, colour-coded by the book act they feed, each mapped to its chapter — including the honest editorial call that *Models & Inference* is deliberately background, not a chapter.
 
-The counts move as the corpus grows. `diagrams/_update_corpus_counts.py` derives them from `99_Meta/Corpus Stats.md` and rewrites this diagram, the pipeline diagram, and the methodology map; `--check` is a CI gate that fails when the chart's shape goes wrong or its headline falls more than 5% behind.
+The counts move as the corpus grows. `diagrams/_update_corpus_counts.py` derives them from `99_Meta/Corpus Stats.md` and rewrites this diagram, the pipeline diagram, and the methodology map.
+
+`--check` is a CI gate. It fails when the chart's **shape** is wrong — a row labelled with another theme's chapter, a bar wearing another act's colour, or a ranking out of order by more than the tolerance — and when the headline count falls more than 5% behind. A swap between two near-tied themes is lag, not shape: *Evals & Reliability* and *Agent Architecture* sit four notes apart, and a gate that failed every time they traded places would fire on ordinary ingest nights until someone stopped reading it.
 
 ---
 
