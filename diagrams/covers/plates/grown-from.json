@@ -1,0 +1,22 @@
+{
+  "notes": 1469,
+  "grown_on": "2026-11-18",
+  "forms": {
+    "from-copilot-to-colleague": "rosette",
+    "the-model-layer-and-the-long-tail": "longtail",
+    "the-shape-of-the-work": "delta"
+  },
+  "theme_mix": {
+    "Coding Agents": 906,
+    "Org Design & Leadership": 164,
+    "RAG & Retrieval": 102,
+    "Models & Inference": 91,
+    "Evals & Reliability": 80,
+    "MCP & Tooling": 46,
+    "Voice & Realtime": 31,
+    "Agent Architecture": 30,
+    "Security & Guardrails": 17,
+    "General AI Engineering": 2
+  },
+  "note": "theme_mix counts each note's FIRST theme tag, which is not the all-tags tally in 99_Meta/Corpus Stats.md."
+}

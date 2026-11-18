@@ -30,11 +30,10 @@ magick -list format | grep -q '^ *WEBP' || {
   exit 1
 }
 
-# Book 1's served set was built by hand in June, before this script existed.
-# Rebuilding it here would change its bytes through a path that produced none
-# of them, in a pull request about two other books. Re-derive it deliberately,
-# by naming it, not by sweeping it up in --all.
-HAND_BUILT="from-copilot-to-colleague"
+# Every cover now comes from diagrams/covers/plates/ through
+# scripts/build-covers.sh, book 1 included. The exception that used to guard
+# book 1's hand-built June set is gone with the set itself: there is no longer
+# a cover in this repo whose bytes came from somewhere a script cannot reach.
 
 build_one() {
   local slug="$1"
@@ -70,7 +69,6 @@ if [ "${1:-}" = "--all" ]; then
     # rename, but they are not served.
     case "$slug" in
       *-alt-*) continue ;;
-      "$HAND_BUILT") echo "skip    $slug (hand-built; name it explicitly to re-derive)"; continue ;;
     esac
     build_one "$slug"
     found=$((found + 1))

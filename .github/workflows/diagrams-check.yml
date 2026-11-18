@@ -31,6 +31,10 @@ on:
       # Three diagrams quote the corpus size and theme ranking, so the stats
       # file is an input to them even though it lives nowhere near diagrams/.
       - '99_Meta/Corpus Stats.md'
+      # The covers are drawn one mark per note, so the notes are an input
+      # too. Without this, cover drift would only ever surface on the 09:00
+      # cron, a day after the ingest that caused it.
+      - '01_Videos/**'
   pull_request:
     paths:
       - 'diagrams/**'
@@ -40,6 +44,7 @@ on:
       - 'scripts/check_diagram_sync.py'
       - 'website/scripts/sync-diagrams.mjs'
       - '99_Meta/Corpus Stats.md'
+      - '01_Videos/**'
   schedule:
     - cron: '0 9 * * *'   # 09:00 UTC daily safety net
   workflow_dispatch:
@@ -72,6 +77,16 @@ jobs:
       # tolerance, and on a printed total more than 5% behind the real one.
       - name: Check the corpus diagrams still tell the truth
         run: python3 diagrams/_update_corpus_counts.py --check
+
+      # The covers are grown from 01_Videos/ — one mark per talk — so they
+      # are the same kind of artifact as the diagrams above and go stale the
+      # same way, silently. Same tolerance, and for the same reason: the
+      # ingest adds talks most nights.
+      #
+      # This step renders nothing. Growing plates needs rsvg-convert; the
+      # check is pure Python and reads only the manifest and the note count.
+      - name: Check the covers were grown from this corpus
+        run: python3 diagrams/covers/_grow_specimen.py --check
 
       - name: Open issue on scheduled-run drift
         if: ${{ failure() && github.event_name == 'schedule' }}

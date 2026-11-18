@@ -49,6 +49,12 @@ const countWords = (content: string) => content.trim().split(/\s+/).filter(Boole
 // build track, not the book, and it was rendering on the public /books page.
 export const BOOK_THREE_TITLE = 'The Shape of the Work';
 
+// The cover's subtitle line, drawn from the spec's framing: when generating
+// code stops being the constraint, the constraint moves to everything around
+// it. scripts/compose-cover.sh prints this string, so the words on the cover
+// have a source that a check can read. Same reasoning as BOOK_TWO_SUBTITLE.
+export const BOOK_THREE_SUBTITLE = 'When Writing the Code Stops Being the Constraint';
+
 // Same caveat as the title: the cover carries it, so a retitle means a new
 // cover. Sizes mirror book 1's set — `.png` 1024x1536 for OG and print,
 // `.webp` the same, `-600w.webp` for the page itself.

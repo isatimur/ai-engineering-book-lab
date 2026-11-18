@@ -22,7 +22,10 @@ export const BOOK: Book = {
   subtitle: 'How AI Engineering Turns Models into Dependable Systems',
   authors: ['Timur Isachenko'],
   coverImage: '/covers/from-copilot-to-colleague.png',
-  spineColor: '#1A1A1A',
+  // The closed-book slab on /catalogue, shown before the cover swings open.
+  // Near-black belonged to the old cover; this is the specimen plate's own
+  // darkest ink, so the spine and the board it opens onto are one object.
+  spineColor: '#3B2F20',
   category: 'AI Engineering',
 };
 
