@@ -28,6 +28,28 @@
       ],
       "destination": "https://fromcopilottocolleague.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aiepress.com"
+        }
+      ],
+      "destination": "https://aiepress.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aiepress.com"
+        }
+      ],
+      "destination": "https://aiepress.com/:path*",
+      "permanent": true
     }
   ]
 }
