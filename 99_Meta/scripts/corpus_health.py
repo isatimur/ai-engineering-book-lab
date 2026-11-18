@@ -20,6 +20,38 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
+# A note is a stub if its summary matches the ingest's template phrasing, or
+# if it still carries the generator's untouched "Why it matters" bullets. The
+# second is the structural test and catches 40 notes the phrasing misses.
+BOILER_MARKERS = (
+    "...", "Key angle:", "shares a practical take",
+    "A practical talk on", "Speaker info:",
+)
+BOILER_BODY = "Useful as raw material for theme synthesis"
+
+
+def is_stub(text: str) -> bool:
+    """True when the ingest's template still shows through a note."""
+    m = re.search(r'^summary: "(.*)"$', text, re.M)
+    if m and any(p in m.group(1) for p in BOILER_MARKERS):
+        return True
+    return BOILER_BODY in text
+
+
+def enrichment_verdict(enriched: int, floor: int) -> tuple[bool, str]:
+    """Judge the enriched count against the recorded floor.
+
+    The ratchet only ever looks at the count, never the share: the ingest
+    adds stub notes most nights, so a share gate would fail on every corpus
+    pull request until somebody silenced it. An enriched note becoming
+    un-enriched is the thing that never happens by itself.
+    """
+    if enriched < floor:
+        return False, f"enriched notes fell from {floor} to {enriched}"
+    if enriched > floor:
+        return True, f"enriched notes rose {floor} -> {enriched}; raise the floor"
+    return True, f"enriched notes holding at {floor}"
+
 
 def main() -> None:
     strict = "--strict" in sys.argv
@@ -60,19 +92,20 @@ def main() -> None:
         if 'transcript_status: "unavailable"' in head:
             flagged.append(n.name)
 
-    # Summary-quality debt. The ingest script emits a template summary; a note
-    # is "enriched" only once none of these markers survive. Detecting on just
-    # one or two of them undercounts — an earlier pass used only "..." and
-    # "Key angle:" and reported three notes as done that were not.
-    boiler_markers = (
-        "...", "Key angle:", "shares a practical take",
-        "A practical talk on", "Speaker info:",
-    )
-    boilerplate = []
-    for n in notes:
-        m = re.search(r'^summary: "(.*)"$', n.read_text(), re.M)
-        if m and any(p in m.group(1) for p in boiler_markers):
-            boilerplate.append(n.name)
+    # Summary-quality debt. The ingest script emits a template note; a note is
+    # "enriched" only once nothing of that template survives. Detecting on
+    # just one or two markers undercounts — an earlier pass used only "..."
+    # and "Key angle:" and reported three notes as done that were not.
+    #
+    # The summary markers below made the same mistake one level up. They
+    # matched 1,186 notes and missed 40 more whose summaries use a second
+    # template ("X argues that <title> is really about …") that trips none of
+    # them. Those notes still carry the generator's untouched "Why it matters"
+    # bullets, so the body marker catches them: it is the structural signal,
+    # where the summary markers are a phrasebook that a new template escapes.
+    # Measured 2026-11-18: 1,186 by summary alone, 1,226 by either.
+    boilerplate = [n.name for n in notes if is_stub(n.read_text())]
+    enriched = len(notes) - len(boilerplate)
 
     dupes = {vid: names for vid, names in by_id.items() if len(names) > 1}
 
@@ -81,7 +114,9 @@ def main() -> None:
     print(f"missing transcript file: {len(no_tx)}")
     print(f"status=unavailable:      {len(flagged)}")
     print(f"missing description:     {len(no_desc)}")
+    share = enriched / len(notes) if notes else 0.0
     print(f"boilerplate summaries:   {len(boilerplate)}")
+    print(f"enriched notes:          {enriched}  ({share:.1%} of the corpus)")
     for label, items in (("transcript", no_tx), ("description", no_desc)):
         for name in items[:10]:
             print(f"  no {label}: {name[:70]}")
@@ -124,6 +159,37 @@ def main() -> None:
               "In the 2026-11-14 race the stale copy was the LOWER-numbered one, but that\n"
               "follows from how it arose, not from a rule. Read, do not infer.")
         raise SystemExit(1)
+
+    # The enrichment ratchet.
+    #
+    # 243 of 1,469 notes carry real analysis; the rest are the ingest's
+    # template. That ratio is a scope decision nobody has taken yet (#114),
+    # and it is not what this gate is for.
+    #
+    # Gating the SHARE would be useless: the ingest adds stub notes most
+    # nights, so the share falls on its own and the gate would fail on every
+    # corpus PR until someone silenced it. Gating the COUNT is the real
+    # invariant — an enriched note must never quietly become un-enriched. A
+    # reformat, a bad merge or a re-run of the generator over existing notes
+    # would do exactly that, and nothing would otherwise notice.
+    #
+    # So: new stubs are free, lost analysis is not.
+    floor_file = ROOT / "99_Meta" / "corpus-quality.json"
+    if floor_file.exists():
+        recorded = int(json.loads(floor_file.read_text()).get("enriched_floor", 0))
+        ok, reason = enrichment_verdict(enriched, recorded)
+        if not ok:
+            print(
+                f"\nFAIL — {reason}.\n"
+                "Analysis that existed has been lost, which no ingest does on its own.\n"
+                "Find what dropped before touching the floor:\n"
+                "  git diff --stat HEAD~1 -- 01_Videos/\n"
+                f"If the loss is intended, lower enriched_floor in {floor_file.name}\n"
+                "in the same commit, so the decision is on the record."
+            )
+            raise SystemExit(1)
+        if enriched > recorded:
+            print(f"\nNOTE — {reason} in {floor_file.name}.")
 
     if strict and (no_tx or no_desc):
         raise SystemExit(1)
