@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 944
+- Total tagged videos: 945
 
 ## Cross-video synthesis
 
-- This theme appears across 944 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (785), Evals & Reliability (724), MCP & Tooling (118).
+- This theme appears across 945 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (786), Evals & Reliability (725), MCP & Tooling (118).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -956,6 +956,7 @@
 - [[1611-u7fsyrXsPBE-claude-code-looked-right-but-missed-800k-natalia-connolly-kevin-madura-alixpartners|#1611 — Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners]]
 - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey]]
 - [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]
+- [[1627-oWqsBuhRRZ4-how-we-mapped-a-35-million-line-mainframe-in-4-days-stephen-chin-neo4j-neeraj-deshmukh-bli|#1627 — How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy]]
 
 ## Notes
 

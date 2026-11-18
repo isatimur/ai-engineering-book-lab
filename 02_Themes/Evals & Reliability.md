@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 838
+- Total tagged videos: 839
 
 ## Cross-video synthesis
 
-- This theme appears across 838 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (724), Agent Architecture (690), RAG & Retrieval (23).
+- This theme appears across 839 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (725), Agent Architecture (691), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -850,6 +850,7 @@
 - [[1611-u7fsyrXsPBE-claude-code-looked-right-but-missed-800k-natalia-connolly-kevin-madura-alixpartners|#1611 — Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners]]
 - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey]]
 - [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]
+- [[1627-oWqsBuhRRZ4-how-we-mapped-a-35-million-line-mainframe-in-4-days-stephen-chin-neo4j-neeraj-deshmukh-bli|#1627 — How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy]]
 
 ## Notes
 
