@@ -7,8 +7,8 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1612-1619|Latest batch: recent-1612-1619]]
-- Total video notes in corpus: 1467
+- [[batches/recent-1619-1626|Latest batch: recent-1619-1626]]
+- Total video notes in corpus: 1468
 - Video notes created in this batch: 1
 
 ## Themes
@@ -31,4 +31,4 @@
 
 ## Recent notes
 
-- [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey]]
+- [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]

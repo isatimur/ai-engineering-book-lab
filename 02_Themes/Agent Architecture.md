@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 833
+- Total tagged videos: 834
 
 ## Cross-video synthesis
 
-- This theme appears across 833 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (784), Evals & Reliability (689), MCP & Tooling (105).
+- This theme appears across 834 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (785), Evals & Reliability (690), MCP & Tooling (105).
 - Representative talks: #19 Paperclip: Open Source Human Control Plane for AI Labor — Dotta Bippa; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -845,6 +845,7 @@
 - [[1607-RdQCY_-SXbA-ai-can-t-make-up-a-number-it-can-t-look-up-vinoo-ganesh-kepler|#1607 — AI Can't Make Up a Number It Can't Look Up - Vinoo Ganesh, Kepler]]
 - [[1611-u7fsyrXsPBE-claude-code-looked-right-but-missed-800k-natalia-connolly-kevin-madura-alixpartners|#1611 — Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners]]
 - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey]]
+- [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]
 
 ## Notes
 
