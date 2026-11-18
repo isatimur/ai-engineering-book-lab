@@ -701,11 +701,47 @@ def write_video_inventory() -> None:
     VIDEO_INVENTORY_PATH.write_text("\n".join(lines) + "\n")
 
 
+CHANNEL_TOTAL_RE = re.compile(r"^- Total videos in current inventory: (\d+)$", re.M)
+
+
+def _channel_video_count(overview_path: Path, all_records: list[NoteRecord]) -> int:
+    """How many videos the channel holds, as best we can honestly tell.
+
+    Prefer the inventory snapshot. Failing that, keep whatever the committed
+    overview already claims — a number written by a machine that did have the
+    snapshot. Only fall back to the note count on a first run, when there is
+    no prior value to preserve and under-reporting beats inventing one.
+    """
+    inventory = Path(INVENTORY_DEFAULT)
+    if inventory.exists():
+        return len(load_inventory(inventory))
+    if overview_path.exists():
+        prior = CHANNEL_TOTAL_RE.search(overview_path.read_text())
+        if prior:
+            return int(prior.group(1))
+    return len(all_records)
+
+
 def update_channel_overview(all_records: list[NoteRecord], latest_batch_name: str) -> None:
     path = META_DIR / "Channel Overview.md"
     status_counts = transcript_status_summary(all_records)
     status_line = ", ".join(f"{k}: {v}" for k, v in status_counts.items()) or "none yet"
-    total_videos = len(load_inventory(Path(INVENTORY_DEFAULT))) if Path(INVENTORY_DEFAULT).exists() else len(all_records)
+    # How many videos the CHANNEL holds, which is not how many notes we have
+    # — the gap between them is the ingest backlog. The snapshot that carries
+    # it lives in /tmp, so it is present on the laptop that ran the watcher
+    # and absent everywhere else.
+    #
+    # This used to fall back to len(all_records), the note count, which is a
+    # different quantity wearing the same label. The committed artifact then
+    # said 1,514 when regenerated on the laptop and 1,469 on a runner, so
+    # whoever rebuilt it last was "right" and the file could never be
+    # reproducibly correct. test_synthesis_pack_single_owner caught it the
+    # first time anything ran it on a clean checkout.
+    #
+    # Without the snapshot the honest answer is "I do not know", and the
+    # honest action is to leave the number alone rather than quietly swap in
+    # a different measurement.
+    total_videos = _channel_video_count(path, all_records)
     lines = [
         "# Channel Overview",
         "",
