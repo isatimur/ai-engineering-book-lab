@@ -23,6 +23,12 @@ const countWords = (content: string) => content.trim().split(/\s+/).filter(Boole
 // See research_passes/2026-08-28-books-collection-page.md.
 export const BOOK_TWO_TITLE = 'The Model Layer & The Long Tail';
 
+// The cover's subtitle line. It lived only in the cover pixels until now,
+// which meant nothing could check the printed words against a source. The
+// compositor in scripts/compose-cover.sh reads this, so the cover and the
+// page cannot drift apart, and a retitle is a rerun rather than a redraw.
+export const BOOK_TWO_SUBTITLE = 'Training, Inference, and the Domains Beyond Text';
+
 // The cover carries the interim title above, so it has to be regenerated if
 // the author settles on a different one. Sizes mirror book 1's set:
 // `.png` 1024x1536 for OG and print, `.webp` the same, `-600w.webp` for the
