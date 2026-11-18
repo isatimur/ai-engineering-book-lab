@@ -32,6 +32,8 @@ on:
       - 'research_passes/**'
       - '.github/workflows/script-tests.yml'
       - 'ruff.toml'
+      # Lives in diagrams/, but its negative controls are in scripts/.
+      - 'diagrams/_update_corpus_counts.py'
   pull_request:
     paths:
       - 'scripts/**'
@@ -41,6 +43,7 @@ on:
       - 'research_passes/**'
       - '.github/workflows/script-tests.yml'
       - 'ruff.toml'
+      - 'diagrams/_update_corpus_counts.py'
   schedule:
     - cron: '0 9 * * *'   # 09:00 UTC daily safety net
   workflow_dispatch:
@@ -73,7 +76,11 @@ jobs:
       - name: Lint the gate scripts and the corpus tooling
         run: |
           pip install --quiet 'ruff==0.5.7'
-          ruff check scripts/ 99_Meta/scripts/
+          # diagrams/ is named file by file, not as a directory: the older
+          # _gen_*.py drawing scripts in there carry 38 pre-existing findings,
+          # and widening the glob would mean either fixing all of them in an
+          # unrelated PR or turning the step red on day one.
+          ruff check scripts/ 99_Meta/scripts/ diagrams/_update_corpus_counts.py
 
       - name: Run every scripts/test_*.py
         run: |
