@@ -3,7 +3,7 @@
 ## Source
 - Channel: [AI Engineer](https://www.youtube.com/@aiDotEngineer)
 - Inventory snapshot source: `/tmp/ai-engineer-videos.jsonl`
-- Total videos in current inventory: 1513
+- Total videos in current inventory: 1514
 
 ## What this knowledge base is for
 This vault is a working research substrate for turning the AI Engineer channel into a real AI engineering knowledge experience:
@@ -25,7 +25,7 @@ This is not meant to be a passive archive. The intended workflow is: gather the 
 - Transcript cache created: `99_Meta/transcripts/`
 
 ## Working principle
-Don’t try to summarize 1513 videos by hand in one pass.
+Don’t try to summarize 1514 videos by hand in one pass.
 Instead:
 1. ingest in reproducible batches
 2. keep transcript provenance clear
