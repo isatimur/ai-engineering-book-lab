@@ -11,7 +11,7 @@ Nothing on these plates is decorative, and no image model drew any of it.
 | Book | Organism | What the shape says |
 |---|---|---|
 | *From Copilot to Colleague* | a lichen thallus | phyllotaxis, the packing a sunflower head uses. Oldest talks dense at the centre, newest at the ruffled margin. |
-| *The Model Layer & The Long Tail* | a feather | barbs ordered by how common their theme is: the ochre mass of Coding Agents is the body, the rare domains attenuate to the tip. |
+| *The Model Layer & The Long Tail* | a pinnate frond | leaflets ordered by how common their theme is, their lengths carrying the long tail: broad basal leaflets crowded with Coding Agents, single rare domains at the tip. |
 | *The Shape of the Work* | a river delta | one narrow channel enters at the bottom and splits into ten distributaries weighted by each theme's real share. The channel is slight; the branching is the picture. |
 
 ## The pipeline
