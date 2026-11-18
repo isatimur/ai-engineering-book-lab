@@ -1,28 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
-import { BOOK } from '../data/book';
-import { chapters } from '../data/bookChapters';
-import {
-  chaptersTwo,
-  chaptersTwoWordCount,
-  BOOK_TWO_TITLE,
-  BOOK_TWO_COVER_600,
-} from '../data/bookChaptersTwo';
-import {
-  chaptersThree,
-  BOOK_THREE_TITLE,
-  BOOK_THREE_COVER_600,
-} from '../data/bookChaptersThree';
-import { totalWordCount } from '../lib/readingStats';
+import { LIBRARY, type LibraryEntry } from '../data/library';
 import { booksCollectionJsonLd } from '../lib/structuredData';
-import stats from '../data/stats.json';
-
-// Book 3's planned scope, verified against 99_Meta/third-book-classification.json
-// on 2026-11-16: 12 chapters, 133 distinct talks shortlisted across them.
-// See the comment on book 3's card below for why these are stated, not derived.
-const PLANNED_CHAPTERS = 12;
-const CLASSIFIED_TALKS = 133;
 
 /**
  * The cover beside a card.
@@ -43,6 +23,33 @@ const Cover = ({ src, alt }: { src: string; alt: string }) => (
     className="h-[132px] w-[88px] shrink-0 rounded-[2px] object-cover shadow-[0_1px_6px_rgba(0,0,0,0.18)] sm:h-[168px] sm:w-[112px]"
   />
 );
+
+/**
+ * Maturity reads without a legend: the border runs solid (published) →
+ * dashed (drafting) → dotted (early), and the published book is the one card
+ * printed in reverse.
+ */
+const CARD_STYLE: Record<LibraryEntry['maturity'], string> = {
+  published:
+    'flex items-start gap-5 rounded-sm border border-[var(--color-ink)] bg-[var(--color-ink)] px-6 py-6 text-[var(--color-paper)] transition-opacity hover:opacity-90',
+  drafting:
+    'flex items-start gap-5 rounded-sm border border-dashed border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]',
+  early:
+    'flex items-start gap-5 rounded-sm border border-dotted border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]',
+};
+
+// The reversed card needs opacity, not an ink colour, to stay legible.
+const MUTED: Record<LibraryEntry['maturity'], string> = {
+  published: 'opacity-70',
+  drafting: 'text-[var(--color-ink-muted)]',
+  early: 'text-[var(--color-ink-muted)]',
+};
+
+const BLURB: Record<LibraryEntry['maturity'], string> = {
+  published: 'opacity-80',
+  drafting: 'text-[var(--color-ink-muted)]',
+  early: 'text-[var(--color-ink-muted)]',
+};
 
 const Header = () => (
   <header className="no-print flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
@@ -72,92 +79,33 @@ export const Books = () => {
           Books
         </h1>
 
+        {/*
+          The three cards below read from data/library.ts, which the
+          catalogue homepage also reads. They used to carry their own copies
+          of every title, blurb and maturity label, which is the arrangement
+          where a book is "Drafting" on one page and "First draft" on
+          another.
+        */}
         <div className="flex flex-col gap-6">
-          <Link
-            to="/"
-            className="flex items-start gap-5 rounded-sm border border-[var(--color-ink)] bg-[var(--color-ink)] px-6 py-6 text-[var(--color-paper)] transition-opacity hover:opacity-90"
-          >
-            <Cover src="/covers/from-copilot-to-colleague-600w.webp" alt={`${BOOK.title} cover`} />
-            <div>
-              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] opacity-70">
-                {BOOK.category}
-              </p>
-              <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-                {BOOK.title}
-              </h2>
-              <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed opacity-80">
-                {BOOK.subtitle}
-              </p>
-              <p className="font-mono text-[10px] uppercase tracking-[0.15em] opacity-60">
-                {chapters.length} chapters · {totalWordCount.toLocaleString()} words
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            to="/second-book"
-            className="flex items-start gap-5 rounded-sm border border-dashed border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
-          >
-            <Cover src={BOOK_TWO_COVER_600} alt={`${BOOK_TWO_TITLE} cover`} />
-            <div>
-              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
-                Drafting
-              </p>
-              <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-                {BOOK_TWO_TITLE}
-              </h2>
-              <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
-                An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text.
-              </p>
-              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-                {chaptersTwo.length} chapters · {chaptersTwoWordCount.toLocaleString()} words · {stats.book2.claims.total} claims · {stats.book2.anchors.total} anchors
-              </p>
-            </div>
-          </Link>
-
-          {/*
-            Book 3 has no prose yet, so the card deliberately does NOT read
-            "0 chapters · 0 words" — that looks broken rather than early. It
-            carries what actually exists instead: a published spec and a
-            classified corpus. The border runs solid (book 1) → dashed
-            (book 2) → dotted (book 3), so maturity reads without a legend.
-
-            PLANNED_CHAPTERS and CLASSIFIED_TALKS are stated, not derived:
-            their source is 99_Meta/third-book-classification.json, which the
-            website does not import. Re-check them against that file when the
-            classification is re-run; they are the only numbers on this page
-            that cannot update themselves.
-          */}
-          <Link
-            to="/third-book"
-            className="flex items-start gap-5 rounded-sm border border-dotted border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
-          >
-            <Cover src={BOOK_THREE_COVER_600} alt={`${BOOK_THREE_TITLE} cover`} />
-            <div>
-              {/*
-                "In design" was accurate while the track had no prose. With a
-                full first draft it understated the book and read as stale —
-                derive the label from the chapter count rather than restating it,
-                so the card cannot disagree with the reader again.
-              */}
-              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
-                {chaptersThree.length === 0
-                  ? 'In design'
-                  : chaptersThree.length < PLANNED_CHAPTERS
-                    ? 'Drafting'
-                    : 'First draft'}
-              </p>
-              <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-                {BOOK_THREE_TITLE}
-              </h2>
-              <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
-                Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint.
-              </p>
-              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-                {chaptersThree.length} of {PLANNED_CHAPTERS} chapters · {CLASSIFIED_TALKS} talks classified · spec published
-              </p>
-            </div>
-          </Link>
+          {LIBRARY.map((book) => (
+            <Link key={book.id} to={book.href} className={CARD_STYLE[book.maturity]}>
+              <Cover src={book.cover} alt={`${book.title} cover`} />
+              <div>
+                <p className={`mb-2 font-mono text-[10px] uppercase tracking-[0.2em] ${MUTED[book.maturity]}`}>
+                  {book.status}
+                </p>
+                <h2 className="mb-2 font-serif text-2xl italic leading-tight">
+                  {book.title}
+                </h2>
+                <p className={`mb-4 max-w-xl font-sans text-sm leading-relaxed ${BLURB[book.maturity]}`}>
+                  {book.blurb}
+                </p>
+                <p className={`font-mono text-[10px] uppercase tracking-[0.15em] ${MUTED[book.maturity]}`}>
+                  {book.measure}
+                </p>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </div>

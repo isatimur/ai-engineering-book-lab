@@ -7,12 +7,13 @@ import {
   aboutTheMethodJsonLd,
   chapterVideoJsonLd,
   booksCollectionJsonLd,
+  pressJsonLd,
 } from './structuredData';
 import { chapters } from '../data/bookChapters';
 import { SITE_ORIGIN, BOOK } from '../data/book';
 import { bookDefinitionEntries } from '../data/geo';
 import { chapterVideoFor } from '../data/chapterVideos';
-import { BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
+import { LIBRARY } from '../data/library';
 
 const ORIGIN = SITE_ORIGIN;
 
@@ -131,13 +132,35 @@ describe('booksCollectionJsonLd', () => {
     expect(list.url).toBe(`${ORIGIN}/books`);
   });
 
-  it('lists both books', () => {
-    expect(list.itemListElement).toHaveLength(2);
-    expect(list.itemListElement.map((x) => x.position)).toEqual([1, 2]);
-    expect(list.itemListElement[0].name).toBe(BOOK.title);
-    expect(list.itemListElement[0].url).toBe(`${ORIGIN}/`);
-    expect(list.itemListElement[1].name).toBe(BOOK_TWO_TITLE);
-    expect(list.itemListElement[1].url).toBe(`${ORIGIN}/second-book`);
+  // This asserted a hardcoded length of 2 and was titled "lists both books".
+  // Book 3 shipped, the list stayed at two, and the test went on passing —
+  // it had pinned the omission as intended behaviour. Asserting against
+  // LIBRARY instead means a fourth book cannot be silently left out.
+  it('lists every book the press publishes', () => {
+    expect(list.itemListElement).toHaveLength(LIBRARY.length);
+    expect(list.itemListElement.map((x) => x.position)).toEqual(
+      LIBRARY.map((_, i) => i + 1),
+    );
+    expect(list.itemListElement.map((x) => x.name)).toEqual(
+      LIBRARY.map((b) => b.title),
+    );
+    expect(list.itemListElement.map((x) => x.url)).toEqual(
+      LIBRARY.map((b) => `${ORIGIN}${b.href === '/' ? '/' : b.href}`),
+    );
+  });
+
+  it('includes book three, which the hardcoded list omitted', () => {
+    expect(list.itemListElement.map((x) => x.url)).toContain(`${ORIGIN}/third-book`);
+  });
+});
+
+describe('pressJsonLd', () => {
+  const press = pressJsonLd();
+
+  it('describes the imprint, not one of its books', () => {
+    expect(press['@type']).toBe('Organization');
+    expect(press.name).toBe('AI Engineer Press');
+    expect(press.url).toBe(`${ORIGIN}/`);
   });
 });
 

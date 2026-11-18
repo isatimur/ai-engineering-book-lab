@@ -4,7 +4,7 @@ import { bookDefinitionEntries, whatIsThisBookAnswer } from '../data/geo';
 import type { ChapterVideo } from '../data/chapterVideos';
 import type { EventLedger } from './eventLedgers';
 import { listEventLedgers, ledgerStats } from './eventLedgers';
-import { BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
+import { LIBRARY } from '../data/library';
 
 /**
  * schema.org JSON-LD builders. Every field traces to real book/chapter data —
@@ -160,26 +160,41 @@ export const chapterVideoJsonLd = (chapter: BookChapter, video: ChapterVideo) =>
   },
 });
 
-/** ItemList for the /books collection page — links both books. */
+/**
+ * ItemList of everything the press publishes.
+ *
+ * This listed two books and described itself as linking "both" of them, which
+ * stopped being true the day book 3 shipped — a hand-maintained list that
+ * nobody remembered to extend. It is built from LIBRARY now, so a fourth book
+ * appears here by existing rather than by being remembered.
+ */
 export const booksCollectionJsonLd = () => ({
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Books — AI Engineer Press',
   url: `${SITE_ORIGIN}/books`,
-  itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      url: `${SITE_ORIGIN}/`,
-      name: BOOK.title,
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      url: `${SITE_ORIGIN}/second-book`,
-      name: BOOK_TWO_TITLE,
-    },
-  ],
+  itemListElement: LIBRARY.map((book, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: absoluteUrl(book.href),
+    name: book.title,
+  })),
+});
+
+/**
+ * The imprint itself, for the homepage. The page used to declare a single
+ * Book as its subject; with three on the shelf its subject is the publisher,
+ * and the featured book is named through the collection above.
+ */
+export const pressJsonLd = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'AI Engineer Press',
+  url: `${SITE_ORIGIN}/`,
+  description:
+    'An independent imprint publishing books on AI engineering, written in the open from a corpus of conference talks.',
+  founder: author(),
+  publishingPrinciples: `${SITE_ORIGIN}/quality`,
 });
 
 /** Breadcrumb trail: Home → The Book → Chapter N. */
