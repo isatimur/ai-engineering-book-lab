@@ -1,5 +1,11 @@
 import { Link } from 'react-router-dom';
-import { chaptersTwo, chapterTwoPath, chaptersTwoWordCount, BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
+import {
+  chaptersTwo,
+  chapterTwoPath,
+  chaptersTwoWordCount,
+  BOOK_TWO_TITLE,
+  BOOK_TWO_COVER,
+} from '../data/bookChaptersTwo';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
 import { EvidenceRail } from '../EvidenceRail';
 import evidenceTwoData from '../evidence-2.json';
@@ -24,6 +30,7 @@ export const SecondBookReader = () => {
         title="Second Book (Draft) — Read"
         description="All 7 drafted chapters of the second book, in one continuous read."
         path="/second-book"
+        image={BOOK_TWO_COVER}
         type="website"
         noindex
       />

@@ -3,8 +3,17 @@ import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
 import { BOOK } from '../data/book';
 import { chapters } from '../data/bookChapters';
-import { chaptersTwo, chaptersTwoWordCount, BOOK_TWO_TITLE } from '../data/bookChaptersTwo';
-import { chaptersThree, BOOK_THREE_TITLE } from '../data/bookChaptersThree';
+import {
+  chaptersTwo,
+  chaptersTwoWordCount,
+  BOOK_TWO_TITLE,
+  BOOK_TWO_COVER_600,
+} from '../data/bookChaptersTwo';
+import {
+  chaptersThree,
+  BOOK_THREE_TITLE,
+  BOOK_THREE_COVER_600,
+} from '../data/bookChaptersThree';
 import { totalWordCount } from '../lib/readingStats';
 import { booksCollectionJsonLd } from '../lib/structuredData';
 import stats from '../data/stats.json';
@@ -14,6 +23,26 @@ import stats from '../data/stats.json';
 // See the comment on book 3's card below for why these are stated, not derived.
 const PLANNED_CHAPTERS = 12;
 const CLASSIFIED_TALKS = 133;
+
+/**
+ * The cover beside a card.
+ *
+ * Width and height are set on the element, not only in CSS, so the row does
+ * not reflow when the image arrives — the same reason the catalogue's cover
+ * carries them. The served file is the 600w WebP: these render at 112px wide,
+ * so the 1024px PNG would be about nine times the pixels nobody sees.
+ */
+const Cover = ({ src, alt }: { src: string; alt: string }) => (
+  <img
+    src={src}
+    width={112}
+    height={168}
+    loading="lazy"
+    decoding="async"
+    alt={alt}
+    className="h-[132px] w-[88px] shrink-0 rounded-[2px] object-cover shadow-[0_1px_6px_rgba(0,0,0,0.18)] sm:h-[168px] sm:w-[112px]"
+  />
+);
 
 const Header = () => (
   <header className="no-print flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
@@ -46,38 +75,44 @@ export const Books = () => {
         <div className="flex flex-col gap-6">
           <Link
             to="/"
-            className="block rounded-sm border border-[var(--color-ink)] bg-[var(--color-ink)] px-6 py-6 text-[var(--color-paper)] transition-opacity hover:opacity-90"
+            className="flex items-start gap-5 rounded-sm border border-[var(--color-ink)] bg-[var(--color-ink)] px-6 py-6 text-[var(--color-paper)] transition-opacity hover:opacity-90"
           >
-            <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] opacity-70">
-              {BOOK.category}
-            </p>
-            <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-              {BOOK.title}
-            </h2>
-            <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed opacity-80">
-              {BOOK.subtitle}
-            </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.15em] opacity-60">
-              {chapters.length} chapters · {totalWordCount.toLocaleString()} words
-            </p>
+            <Cover src="/covers/from-copilot-to-colleague-600w.webp" alt={`${BOOK.title} cover`} />
+            <div>
+              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] opacity-70">
+                {BOOK.category}
+              </p>
+              <h2 className="mb-2 font-serif text-2xl italic leading-tight">
+                {BOOK.title}
+              </h2>
+              <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed opacity-80">
+                {BOOK.subtitle}
+              </p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.15em] opacity-60">
+                {chapters.length} chapters · {totalWordCount.toLocaleString()} words
+              </p>
+            </div>
           </Link>
 
           <Link
             to="/second-book"
-            className="block rounded-sm border border-dashed border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
+            className="flex items-start gap-5 rounded-sm border border-dashed border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
           >
-            <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
-              Drafting
-            </p>
-            <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-              {BOOK_TWO_TITLE}
-            </h2>
-            <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
-              An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text.
-            </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-              {chaptersTwo.length} chapters · {chaptersTwoWordCount.toLocaleString()} words · {stats.book2.claims.total} claims · {stats.book2.anchors.total} anchors
-            </p>
+            <Cover src={BOOK_TWO_COVER_600} alt={`${BOOK_TWO_TITLE} cover`} />
+            <div>
+              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
+                Drafting
+              </p>
+              <h2 className="mb-2 font-serif text-2xl italic leading-tight">
+                {BOOK_TWO_TITLE}
+              </h2>
+              <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
+                An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text.
+              </p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
+                {chaptersTwo.length} chapters · {chaptersTwoWordCount.toLocaleString()} words · {stats.book2.claims.total} claims · {stats.book2.anchors.total} anchors
+              </p>
+            </div>
           </Link>
 
           {/*
@@ -95,30 +130,33 @@ export const Books = () => {
           */}
           <Link
             to="/third-book"
-            className="block rounded-sm border border-dotted border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
+            className="flex items-start gap-5 rounded-sm border border-dotted border-[var(--color-border)] px-6 py-6 transition-colors hover:border-[var(--color-ink)]"
           >
-            {/*
-              "In design" was accurate while the track had no prose. With a
-              full first draft it understated the book and read as stale —
-              derive the label from the chapter count rather than restating it,
-              so the card cannot disagree with the reader again.
-            */}
-            <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
-              {chaptersThree.length === 0
-                ? 'In design'
-                : chaptersThree.length < PLANNED_CHAPTERS
-                  ? 'Drafting'
-                  : 'First draft'}
-            </p>
-            <h2 className="mb-2 font-serif text-2xl italic leading-tight">
-              {BOOK_THREE_TITLE}
-            </h2>
-            <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
-              Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint.
-            </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
-              {chaptersThree.length} of {PLANNED_CHAPTERS} chapters · {CLASSIFIED_TALKS} talks classified · spec published
-            </p>
+            <Cover src={BOOK_THREE_COVER_600} alt={`${BOOK_THREE_TITLE} cover`} />
+            <div>
+              {/*
+                "In design" was accurate while the track had no prose. With a
+                full first draft it understated the book and read as stale —
+                derive the label from the chapter count rather than restating it,
+                so the card cannot disagree with the reader again.
+              */}
+              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)]">
+                {chaptersThree.length === 0
+                  ? 'In design'
+                  : chaptersThree.length < PLANNED_CHAPTERS
+                    ? 'Drafting'
+                    : 'First draft'}
+              </p>
+              <h2 className="mb-2 font-serif text-2xl italic leading-tight">
+                {BOOK_THREE_TITLE}
+              </h2>
+              <p className="mb-4 max-w-xl font-sans text-sm leading-relaxed text-[var(--color-ink-muted)]">
+                Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint.
+              </p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--color-ink-muted)]">
+                {chaptersThree.length} of {PLANNED_CHAPTERS} chapters · {CLASSIFIED_TALKS} talks classified · spec published
+              </p>
+            </div>
           </Link>
         </div>
       </section>

@@ -1,5 +1,11 @@
 import { Link } from 'react-router-dom';
-import { chaptersThree, chapterThreePath, chaptersThreeWordCount, BOOK_THREE_TITLE } from '../data/bookChaptersThree';
+import {
+  chaptersThree,
+  chapterThreePath,
+  chaptersThreeWordCount,
+  BOOK_THREE_TITLE,
+  BOOK_THREE_COVER,
+} from '../data/bookChaptersThree';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
 import { EvidenceRail } from '../EvidenceRail';
 import evidenceThreeData from '../evidence-3.json';
@@ -33,6 +39,7 @@ export const ThirdBookReader = () => {
         title="Third Book (Draft) — Read"
         description={`All ${chaptersThree.length} drafted chapters of the third book, in one continuous read.`}
         path="/third-book"
+        image={BOOK_THREE_COVER}
         type="website"
         noindex
       />

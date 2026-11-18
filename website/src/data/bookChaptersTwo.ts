@@ -23,6 +23,13 @@ const countWords = (content: string) => content.trim().split(/\s+/).filter(Boole
 // See research_passes/2026-08-28-books-collection-page.md.
 export const BOOK_TWO_TITLE = 'The Model Layer & The Long Tail';
 
+// The cover carries the interim title above, so it has to be regenerated if
+// the author settles on a different one. Sizes mirror book 1's set:
+// `.png` 1024x1536 for OG and print, `.webp` the same, `-600w.webp` for the
+// page itself.
+export const BOOK_TWO_COVER = '/covers/the-model-layer-and-the-long-tail.png';
+export const BOOK_TWO_COVER_600 = '/covers/the-model-layer-and-the-long-tail-600w.webp';
+
 export const chaptersTwo: BookChapter[] = [
   {
     number: '01',
