@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1469
+Total videos: 1478
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1471,3 +1471,12 @@ Total videos: 1469
 1618. [What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey](https://www.youtube.com/watch?v=21tuT-e4NVo) — `21tuT-e4NVo` — 20:28
 1626. [Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics](https://www.youtube.com/watch?v=wWisOHEcMPE) — `wWisOHEcMPE` — 19:42
 1627. [How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy](https://www.youtube.com/watch?v=oWqsBuhRRZ4) — `oWqsBuhRRZ4` — 19:44
+1631. [How Financial Planners With Zero Coding Experience Built Their Own Agents - Matt Ragone, Range](https://www.youtube.com/watch?v=EaOit1mmR9g) — `EaOit1mmR9g` — 16:09
+1632. [How Agents Cut Hour-Long Data Checks to 5 Minutes - Amol Kapoor & Clifford Ressel, Nori Agentic](https://www.youtube.com/watch?v=kIlVNGZZr8o) — `kIlVNGZZr8o` — 19:34
+1634. [Your Coding Agent Can't Undo Its Own Mistakes - Tanmay Sah & Dolly Sah](https://www.youtube.com/watch?v=BT1Mo-fD-g0) — `BT1Mo-fD-g0` — 16:38
+1636. [I Let Agents Refactor My Codebase for 3 Weeks. Then I Read the Code. — Keiji Kanazawa, Microsoft](https://www.youtube.com/watch?v=6TjFjHPjVH0) — `6TjFjHPjVH0` — 19:51
+1637. [AI Writes Code Faster Than Uber Can Merge It - Preetam Dwivedi & Manjari Akella, Uber](https://www.youtube.com/watch?v=hX140a5klW0) — `hX140a5klW0` — 27:35
+1644. [How to Build a Software Factory That Improves Itself - Zach Lloyd, Warp](https://www.youtube.com/watch?v=nKjPBAw_N_0) — `nKjPBAw_N_0` — 22:01
+1645. [Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal](https://www.youtube.com/watch?v=_0SQh8a1Osk) — `_0SQh8a1Osk` — 17:35
+1649. [Teach Your AI Agent to Build Products Everyone Can Use - Jemima Abu, CAIS](https://www.youtube.com/watch?v=YV1x6gCdgQA) — `YV1x6gCdgQA` — 14:39
+1657. [The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona](https://www.youtube.com/watch?v=WWIFiQi9U4w) — `WWIFiQi9U4w` — 15:36

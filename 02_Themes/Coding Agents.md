@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 945
+- Total tagged videos: 954
 
 ## Cross-video synthesis
 
-- This theme appears across 945 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Agent Architecture (786), Evals & Reliability (725), MCP & Tooling (118).
+- This theme appears across 954 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Agent Architecture (795), Evals & Reliability (732), MCP & Tooling (120).
 - Representative talks: #1 It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk; #4 Building Generative Image & Video models at Scale - Sander Dieleman (Veo and Nano Banana); #5 How AI is changing Software Engineering: A Conversation with Gergely Orosz, @The Pragmatic Engineer.
 
 ## Seed videos
@@ -957,6 +957,15 @@
 - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey]]
 - [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]
 - [[1627-oWqsBuhRRZ4-how-we-mapped-a-35-million-line-mainframe-in-4-days-stephen-chin-neo4j-neeraj-deshmukh-bli|#1627 — How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy]]
+- [[1631-EaOit1mmR9g-how-financial-planners-with-zero-coding-experience-built-their-own-agents-matt-ragone-rang|#1631 — How Financial Planners With Zero Coding Experience Built Their Own Agents - Matt Ragone, Range]]
+- [[1632-kIlVNGZZr8o-how-agents-cut-hour-long-data-checks-to-5-minutes-amol-kapoor-clifford-ressel-nori-agentic|#1632 — How Agents Cut Hour-Long Data Checks to 5 Minutes - Amol Kapoor & Clifford Ressel, Nori Agentic]]
+- [[1634-BT1Mo-fD-g0-your-coding-agent-can-t-undo-its-own-mistakes-tanmay-sah-dolly-sah|#1634 — Your Coding Agent Can't Undo Its Own Mistakes - Tanmay Sah & Dolly Sah]]
+- [[1636-6TjFjHPjVH0-i-let-agents-refactor-my-codebase-for-3-weeks-then-i-read-the-code-keiji-kanazawa-microsof|#1636 — I Let Agents Refactor My Codebase for 3 Weeks. Then I Read the Code. — Keiji Kanazawa, Microsoft]]
+- [[1637-hX140a5klW0-ai-writes-code-faster-than-uber-can-merge-it-preetam-dwivedi-manjari-akella-uber|#1637 — AI Writes Code Faster Than Uber Can Merge It - Preetam Dwivedi & Manjari Akella, Uber]]
+- [[1644-nKjPBAw_N_0-how-to-build-a-software-factory-that-improves-itself-zach-lloyd-warp|#1644 — How to Build a Software Factory That Improves Itself - Zach Lloyd, Warp]]
+- [[1645-_0SQh8a1Osk-don-t-vibe-code-your-agent-infrastructure-akshat-bubna-modal|#1645 — Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal]]
+- [[1649-YV1x6gCdgQA-teach-your-ai-agent-to-build-products-everyone-can-use-jemima-abu-cais|#1649 — Teach Your AI Agent to Build Products Everyone Can Use - Jemima Abu, CAIS]]
+- [[1657-WWIFiQi9U4w-the-one-thing-every-ai-agent-framework-agrees-on-mislav-ivanda-daytona|#1657 — The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona]]
 
 ## Notes
 

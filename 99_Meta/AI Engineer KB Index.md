@@ -7,9 +7,9 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1628-1635|Latest batch: recent-1628-1635]]
-- Total video notes in corpus: 1469
-- Video notes created in this batch: 0
+- [[batches/recent-1650-1657|Latest batch: recent-1650-1657]]
+- Total video notes in corpus: 1478
+- Video notes created in this batch: 1
 
 ## Themes
 - [[Agent Architecture]]
@@ -31,3 +31,4 @@
 
 ## Recent notes
 
+- [[1657-WWIFiQi9U4w-the-one-thing-every-ai-agent-framework-agrees-on-mislav-ivanda-daytona|#1657 — The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona]]
