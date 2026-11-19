@@ -584,8 +584,72 @@ def write_batch_file(videos: list[Video], notes: list[Path], batch_name: str) ->
     return path
 
 
+BATCH_RANGE_RE = re.compile(r"-(\d+)-(\d+)$")
+INDEX_BATCH_COUNT_RE = re.compile(r"^- Video notes created in this batch: (\d+)$", re.M)
+INDEX_RECENT_RE = re.compile(r"^## Recent notes$(.*)\Z", re.M | re.S)
+
+
+def _batch_section(
+    all_records: list[NoteRecord],
+    batch_notes: list[Path],
+    batch_name: str,
+    index_path: Path,
+) -> tuple[int, list[str]]:
+    """What the index says about the latest batch, computed from the corpus.
+
+    `batch_notes` is what THIS invocation created, so it is empty on every
+    rebuild: the index then reported 0 and dropped its Recent notes list, and
+    the committed artifact was only ever right in the minutes after a live
+    ingest that happened to create something. Same shape as the channel count
+    above, which read 1,514 on the laptop and 1,469 on a runner.
+
+    The batch's own file under 99_Meta/batches/ is gitignored, so it is
+    laptop-only and cannot be the source either — that is the /tmp inventory
+    trap wearing a different hat.
+
+    A `recent-1645-1652` name does encode the playlist range, and the corpus
+    can answer that on any machine. Both automated producers emit that form
+    (`update_ai_engineer_channel.batch_name_for` and `retry_ingest`), so the
+    reproducible path covers every batch the loop makes. It is preferred even
+    when this run did create notes, because a live write and a later rebuild
+    have to agree or the drift comes straight back.
+    """
+
+    def entry(record: NoteRecord) -> str:
+        return f"- [[{record.note_name}|#{record.playlist_index} — {record.title}]]"
+
+    hit = BATCH_RANGE_RE.search(batch_name)
+    if hit:
+        low, high = int(hit.group(1)), int(hit.group(2))
+        inside = sorted(
+            (r for r in all_records if low <= r.playlist_index <= high),
+            key=lambda r: r.playlist_index,
+        )
+        return len(inside), [entry(r) for r in inside]
+
+    # A hand-passed name with no range (resume-test, retry-unavailable-…).
+    stems = {p.stem for p in batch_notes}
+    created = [r for r in all_records if r.note_name in stems]
+    if created:
+        return len(created), [entry(r) for r in created]
+
+    # Nothing created and nothing to recompute: keep what the committed index
+    # claims rather than overwriting it with this run's emptiness.
+    if index_path.exists():
+        text = index_path.read_text()
+        prior = INDEX_BATCH_COUNT_RE.search(text)
+        if prior:
+            block = INDEX_RECENT_RE.search(text)
+            kept = block.group(1).splitlines() if block else []
+            return int(prior.group(1)), [ln for ln in kept if ln.startswith("- ")]
+    return 0, []
+
+
 def update_index(all_records: list[NoteRecord], batch_notes: list[Path], batch_name: str) -> None:
     index_path = META_DIR / "AI Engineer KB Index.md"
+    batch_count, recent_entries = _batch_section(
+        all_records, batch_notes, batch_name, index_path
+    )
     lines = [
         "# AI Engineer KB Index",
         "",
@@ -598,7 +662,7 @@ def update_index(all_records: list[NoteRecord], batch_notes: list[Path], batch_n
         "## Ingestion",
         f"- [[batches/{batch_name}|Latest batch: {batch_name}]]",
         f"- Total video notes in corpus: {len(all_records)}",
-        f"- Video notes created in this batch: {len(batch_notes)}",
+        f"- Video notes created in this batch: {batch_count}",
         "",
         "## Themes",
     ]
@@ -614,10 +678,7 @@ def update_index(all_records: list[NoteRecord], batch_notes: list[Path], batch_n
         "- [[../06_Output_Playbooks/Research Pack Template|Research Pack Template]]",
     ]
     lines += ["", "## Recent notes", ""]
-    for note in batch_notes:
-        record = next((r for r in all_records if r.note_name == note.stem), None)
-        if record:
-            lines.append(f"- [[{record.note_name}|#{record.playlist_index} — {record.title}]]")
+    lines += recent_entries
     index_path.write_text("\n".join(lines) + "\n")
 
 
