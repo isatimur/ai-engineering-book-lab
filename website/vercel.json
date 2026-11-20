@@ -15,7 +15,7 @@
           "value": "www.fromcopilottocolleague.com"
         }
       ],
-      "destination": "https://fromcopilottocolleague.com/",
+      "destination": "https://aiepress.com/",
       "permanent": true
     },
     {
@@ -26,7 +26,7 @@
           "value": "www.fromcopilottocolleague.com"
         }
       ],
-      "destination": "https://fromcopilottocolleague.com/:path*",
+      "destination": "https://aiepress.com/:path*",
       "permanent": true
     },
     {

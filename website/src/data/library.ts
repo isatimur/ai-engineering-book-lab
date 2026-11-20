@@ -72,7 +72,7 @@ export const LIBRARY: LibraryEntry[] = [
     blurb: BOOK.subtitle,
     href: '/',
     cover: '/covers/from-copilot-to-colleague-600w.webp',
-    status: BOOK.category,
+    status: 'Published',
     measure: `${chapters.length} chapters · ${totalWordCount.toLocaleString()} words`,
     maturity: 'published',
   },

@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const websiteRoot = resolve(__dirname, '..');
-const ORIGIN = 'https://fromcopilottocolleague.com';
+const ORIGIN = 'https://aiepress.com';
 const log = (...a) => console.log('[gen-sitemap]', ...a);
 
 const fallbackDate = new Date().toISOString();
