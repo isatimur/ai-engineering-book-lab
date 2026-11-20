@@ -7,8 +7,8 @@
 - [[../06_Output_Playbooks/00_README|Output Playbooks]]
 
 ## Ingestion
-- [[batches/recent-1650-1657|Latest batch: recent-1650-1657]]
-- Total video notes in corpus: 1478
+- [[batches/recent-1673-1680|Latest batch: recent-1673-1680]]
+- Total video notes in corpus: 1482
 - Video notes created in this batch: 1
 
 ## Themes
@@ -31,4 +31,4 @@
 
 ## Recent notes
 
-- [[1657-WWIFiQi9U4w-the-one-thing-every-ai-agent-framework-agrees-on-mislav-ivanda-daytona|#1657 — The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona]]
+- [[1678-LF8V0RGJU0I-will-ai-agents-pretend-to-be-human-to-get-past-a-check-maty-bohacek-stanford|#1678 — Will AI Agents Pretend to Be Human to Get Past a Check? - Maty Bohacek, Stanford]]

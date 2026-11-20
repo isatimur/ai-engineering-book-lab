@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 846
+- Total tagged videos: 850
 
 ## Cross-video synthesis
 
-- This theme appears across 846 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (732), Agent Architecture (698), RAG & Retrieval (23).
+- This theme appears across 850 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (736), Agent Architecture (702), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -858,6 +858,10 @@
 - [[1644-nKjPBAw_N_0-how-to-build-a-software-factory-that-improves-itself-zach-lloyd-warp|#1644 — How to Build a Software Factory That Improves Itself - Zach Lloyd, Warp]]
 - [[1645-_0SQh8a1Osk-don-t-vibe-code-your-agent-infrastructure-akshat-bubna-modal|#1645 — Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal]]
 - [[1657-WWIFiQi9U4w-the-one-thing-every-ai-agent-framework-agrees-on-mislav-ivanda-daytona|#1657 — The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona]]
+- [[1662-dznCt8xPW7o-right-answer-wrong-reasons-ai-forecasts-costco-hassan-el-mghari-omar-el-mghari-together-ai|#1662 — Right Answer, Wrong Reasons: AI Forecasts Costco - Hassan El Mghari & Omar El Mghari, Together AI]]
+- [[1665-SE6POOEjh4I-can-ai-agents-beat-wall-street-at-predicting-earnings-ashwin-paranjape-samaya-ai|#1665 — Can AI Agents Beat Wall Street at Predicting Earnings? - Ashwin Paranjape, Samaya AI]]
+- [[1672-1NWnSwCB4NM-your-kv-cache-can-spot-attacks-on-your-ai-agents-ari-azarafrooz-intrinsec-ai|#1672 — Your KV Cache Can Spot Attacks on Your AI Agents - Ari Azarafrooz, Intrinsec AI]]
+- [[1678-LF8V0RGJU0I-will-ai-agents-pretend-to-be-human-to-get-past-a-check-maty-bohacek-stanford|#1678 — Will AI Agents Pretend to Be Human to Get Past a Check? - Maty Bohacek, Stanford]]
 
 ## Notes
 

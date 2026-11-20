@@ -1,6 +1,6 @@
 # Book Angle Comparison
 
-Corpus reference point: **1478 videos**
+Corpus reference point: **1482 videos**
 
 ## Shortlist
 
@@ -14,7 +14,7 @@ Corpus reference point: **1478 videos**
 ## Why the winner shifted
 
 Earlier checkpoint drafts leaned toward a broader operating-manual framing because the corpus was still growing.
-With the full 1478-video set in view, the sharper narrative now holds up better: the real transition isn't just 'AI-native engineering' in the abstract; it's the move from **assistant behavior** to **delegated colleague behavior**.
+With the full 1482-video set in view, the sharper narrative now holds up better: the real transition isn't just 'AI-native engineering' in the abstract; it's the move from **assistant behavior** to **delegated colleague behavior**.
 
 That shift absorbs the corpus's biggest recurring tensions:
 - when can you trust an agent to act, not just suggest?
@@ -23,8 +23,8 @@ That shift absorbs the corpus's biggest recurring tensions:
 
 ## Corpus fit check
 
-- Coding systems are overwhelmingly represented (`Coding Agents`: 954).
-- The trust layer is also massive (`Evals & Reliability`: 846).
+- Coding systems are overwhelmingly represented (`Coding Agents`: 958).
+- The trust layer is also massive (`Evals & Reliability`: 850).
 - Organizational adaptation is too common to ignore (`Org Design & Leadership`: 243).
 - Context/runtime substrate is substantial enough to support full chapters (`MCP & Tooling`: 180, `RAG & Retrieval`: 172).
 

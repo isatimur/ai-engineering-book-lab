@@ -1,6 +1,6 @@
 # Video Inventory
 
-Total videos: 1478
+Total videos: 1482
 
 1. [It Ain't Broke: Why Software Fundamentals Matter More Than Ever — Matt Pocock, AI Hero @mattpocockuk](https://www.youtube.com/watch?v=v4F1gFy-hqg) — `v4F1gFy-hqg` — 18:26
 2. [The End of Apps — Kitze, Sizzy.co](https://www.youtube.com/watch?v=4fntwuOoedA) — `4fntwuOoedA` — 20:18
@@ -1480,3 +1480,7 @@ Total videos: 1478
 1645. [Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal](https://www.youtube.com/watch?v=_0SQh8a1Osk) — `_0SQh8a1Osk` — 17:35
 1649. [Teach Your AI Agent to Build Products Everyone Can Use - Jemima Abu, CAIS](https://www.youtube.com/watch?v=YV1x6gCdgQA) — `YV1x6gCdgQA` — 14:39
 1657. [The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona](https://www.youtube.com/watch?v=WWIFiQi9U4w) — `WWIFiQi9U4w` — 15:36
+1662. [Right Answer, Wrong Reasons: AI Forecasts Costco - Hassan El Mghari & Omar El Mghari, Together AI](https://www.youtube.com/watch?v=dznCt8xPW7o) — `dznCt8xPW7o` — 15:25
+1665. [Can AI Agents Beat Wall Street at Predicting Earnings? - Ashwin Paranjape, Samaya AI](https://www.youtube.com/watch?v=SE6POOEjh4I) — `SE6POOEjh4I` — 15:21
+1672. [Your KV Cache Can Spot Attacks on Your AI Agents - Ari Azarafrooz, Intrinsec AI](https://www.youtube.com/watch?v=1NWnSwCB4NM) — `1NWnSwCB4NM` — 7:12
+1678. [Will AI Agents Pretend to Be Human to Get Past a Check? - Maty Bohacek, Stanford](https://www.youtube.com/watch?v=LF8V0RGJU0I) — `LF8V0RGJU0I` — 17:57
