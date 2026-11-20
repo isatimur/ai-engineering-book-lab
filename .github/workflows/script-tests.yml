@@ -35,6 +35,9 @@ on:
       # Live in diagrams/, but their negative controls are in scripts/.
       - 'diagrams/_update_corpus_counts.py'
       - 'diagrams/covers/_grow_specimen.py'
+      # The enrichment ratchet reads this floor; a PR that edits it is
+      # exactly the PR whose controls should run.
+      - '99_Meta/corpus-quality.json'
   pull_request:
     paths:
       - 'scripts/**'
@@ -46,6 +49,7 @@ on:
       - 'ruff.toml'
       - 'diagrams/_update_corpus_counts.py'
       - 'diagrams/covers/_grow_specimen.py'
+      - '99_Meta/corpus-quality.json'
   schedule:
     - cron: '0 9 * * *'   # 09:00 UTC daily safety net
   workflow_dispatch:
@@ -91,10 +95,16 @@ jobs:
           set -euo pipefail
           # Deliberately not `mapfile`: this step should be runnable verbatim
           # on a developer's machine, and macOS still ships bash 3.2.
+          #
+          # 99_Meta/scripts is in the glob because five control files have
+          # lived there since before this workflow existed and no trigger has
+          # ever run one of them — the exact failure this job was created to
+          # fix, one directory over. They all passed when wired up on
+          # 2026-11-18; nothing was broken, which is luck rather than cover.
           TESTS=()
           while IFS= read -r t; do
             TESTS+=("$t")
-          done < <(find scripts -maxdepth 1 -name 'test_*.py' | sort)
+          done < <(find scripts 99_Meta/scripts -maxdepth 1 -name 'test_*.py' | sort)
 
           # A glob that matches nothing would otherwise make this job a green
           # tick that ran no assertions.

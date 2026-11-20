@@ -584,8 +584,72 @@ def write_batch_file(videos: list[Video], notes: list[Path], batch_name: str) ->
     return path
 
 
+BATCH_RANGE_RE = re.compile(r"-(\d+)-(\d+)$")
+INDEX_BATCH_COUNT_RE = re.compile(r"^- Video notes created in this batch: (\d+)$", re.M)
+INDEX_RECENT_RE = re.compile(r"^## Recent notes$(.*)\Z", re.M | re.S)
+
+
+def _batch_section(
+    all_records: list[NoteRecord],
+    batch_notes: list[Path],
+    batch_name: str,
+    index_path: Path,
+) -> tuple[int, list[str]]:
+    """What the index says about the latest batch, computed from the corpus.
+
+    `batch_notes` is what THIS invocation created, so it is empty on every
+    rebuild: the index then reported 0 and dropped its Recent notes list, and
+    the committed artifact was only ever right in the minutes after a live
+    ingest that happened to create something. Same shape as the channel count
+    above, which read 1,514 on the laptop and 1,469 on a runner.
+
+    The batch's own file under 99_Meta/batches/ is gitignored, so it is
+    laptop-only and cannot be the source either — that is the /tmp inventory
+    trap wearing a different hat.
+
+    A `recent-1645-1652` name does encode the playlist range, and the corpus
+    can answer that on any machine. Both automated producers emit that form
+    (`update_ai_engineer_channel.batch_name_for` and `retry_ingest`), so the
+    reproducible path covers every batch the loop makes. It is preferred even
+    when this run did create notes, because a live write and a later rebuild
+    have to agree or the drift comes straight back.
+    """
+
+    def entry(record: NoteRecord) -> str:
+        return f"- [[{record.note_name}|#{record.playlist_index} — {record.title}]]"
+
+    hit = BATCH_RANGE_RE.search(batch_name)
+    if hit:
+        low, high = int(hit.group(1)), int(hit.group(2))
+        inside = sorted(
+            (r for r in all_records if low <= r.playlist_index <= high),
+            key=lambda r: r.playlist_index,
+        )
+        return len(inside), [entry(r) for r in inside]
+
+    # A hand-passed name with no range (resume-test, retry-unavailable-…).
+    stems = {p.stem for p in batch_notes}
+    created = [r for r in all_records if r.note_name in stems]
+    if created:
+        return len(created), [entry(r) for r in created]
+
+    # Nothing created and nothing to recompute: keep what the committed index
+    # claims rather than overwriting it with this run's emptiness.
+    if index_path.exists():
+        text = index_path.read_text()
+        prior = INDEX_BATCH_COUNT_RE.search(text)
+        if prior:
+            block = INDEX_RECENT_RE.search(text)
+            kept = block.group(1).splitlines() if block else []
+            return int(prior.group(1)), [ln for ln in kept if ln.startswith("- ")]
+    return 0, []
+
+
 def update_index(all_records: list[NoteRecord], batch_notes: list[Path], batch_name: str) -> None:
     index_path = META_DIR / "AI Engineer KB Index.md"
+    batch_count, recent_entries = _batch_section(
+        all_records, batch_notes, batch_name, index_path
+    )
     lines = [
         "# AI Engineer KB Index",
         "",
@@ -598,7 +662,7 @@ def update_index(all_records: list[NoteRecord], batch_notes: list[Path], batch_n
         "## Ingestion",
         f"- [[batches/{batch_name}|Latest batch: {batch_name}]]",
         f"- Total video notes in corpus: {len(all_records)}",
-        f"- Video notes created in this batch: {len(batch_notes)}",
+        f"- Video notes created in this batch: {batch_count}",
         "",
         "## Themes",
     ]
@@ -614,10 +678,7 @@ def update_index(all_records: list[NoteRecord], batch_notes: list[Path], batch_n
         "- [[../06_Output_Playbooks/Research Pack Template|Research Pack Template]]",
     ]
     lines += ["", "## Recent notes", ""]
-    for note in batch_notes:
-        record = next((r for r in all_records if r.note_name == note.stem), None)
-        if record:
-            lines.append(f"- [[{record.note_name}|#{record.playlist_index} — {record.title}]]")
+    lines += recent_entries
     index_path.write_text("\n".join(lines) + "\n")
 
 
@@ -701,11 +762,47 @@ def write_video_inventory() -> None:
     VIDEO_INVENTORY_PATH.write_text("\n".join(lines) + "\n")
 
 
+CHANNEL_TOTAL_RE = re.compile(r"^- Total videos in current inventory: (\d+)$", re.M)
+
+
+def _channel_video_count(overview_path: Path, all_records: list[NoteRecord]) -> int:
+    """How many videos the channel holds, as best we can honestly tell.
+
+    Prefer the inventory snapshot. Failing that, keep whatever the committed
+    overview already claims — a number written by a machine that did have the
+    snapshot. Only fall back to the note count on a first run, when there is
+    no prior value to preserve and under-reporting beats inventing one.
+    """
+    inventory = Path(INVENTORY_DEFAULT)
+    if inventory.exists():
+        return len(load_inventory(inventory))
+    if overview_path.exists():
+        prior = CHANNEL_TOTAL_RE.search(overview_path.read_text())
+        if prior:
+            return int(prior.group(1))
+    return len(all_records)
+
+
 def update_channel_overview(all_records: list[NoteRecord], latest_batch_name: str) -> None:
     path = META_DIR / "Channel Overview.md"
     status_counts = transcript_status_summary(all_records)
     status_line = ", ".join(f"{k}: {v}" for k, v in status_counts.items()) or "none yet"
-    total_videos = len(load_inventory(Path(INVENTORY_DEFAULT))) if Path(INVENTORY_DEFAULT).exists() else len(all_records)
+    # How many videos the CHANNEL holds, which is not how many notes we have
+    # — the gap between them is the ingest backlog. The snapshot that carries
+    # it lives in /tmp, so it is present on the laptop that ran the watcher
+    # and absent everywhere else.
+    #
+    # This used to fall back to len(all_records), the note count, which is a
+    # different quantity wearing the same label. The committed artifact then
+    # said 1,514 when regenerated on the laptop and 1,469 on a runner, so
+    # whoever rebuilt it last was "right" and the file could never be
+    # reproducibly correct. test_synthesis_pack_single_owner caught it the
+    # first time anything ran it on a clean checkout.
+    #
+    # Without the snapshot the honest answer is "I do not know", and the
+    # honest action is to leave the number alone rather than quietly swap in
+    # a different measurement.
+    total_videos = _channel_video_count(path, all_records)
     lines = [
         "# Channel Overview",
         "",
