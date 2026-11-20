@@ -128,4 +128,4 @@ Once the environment can produce delegated work at all, the next question is no 
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/03-harnesses_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://aiepress.com/read/03-harnesses_

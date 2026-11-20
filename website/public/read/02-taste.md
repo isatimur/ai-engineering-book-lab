@@ -190,4 +190,4 @@ Put this chapter's argument to work on whatever you're delegating this week:
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/02-taste_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://aiepress.com/read/02-taste_

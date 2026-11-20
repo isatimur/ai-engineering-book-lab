@@ -156,4 +156,4 @@ Once teams can structure work and measure outcomes, they hit a third bottleneck:
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/04-evals_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://aiepress.com/read/04-evals_

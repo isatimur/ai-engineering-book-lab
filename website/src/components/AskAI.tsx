@@ -1,5 +1,5 @@
 const PROMPT =
-  `What is the book "From Copilot to Colleague" (https://fromcopilottocolleague.com) about? ` +
+  `What is the book "From Copilot to Colleague" (https://aiepress.com) about? ` +
   `It's a source-anchored AI engineering book distilled from ~800 AI Engineer conference talks — ` +
   `every claim links to a timestamped video source, and every chapter is graded by a panel of ` +
   `three rival open models. Summarize its core argument and what makes its method different.`;

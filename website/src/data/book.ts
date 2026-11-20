@@ -1,5 +1,5 @@
 /** Canonical production origin — used to build absolute canonical, OG, and JSON-LD URLs. */
-export const SITE_ORIGIN = 'https://fromcopilottocolleague.com';
+export const SITE_ORIGIN = 'https://aiepress.com';
 
 /** Build an absolute URL from a site-relative path (or pass through an absolute URL). */
 export const absoluteUrl = (urlOrPath: string): string =>
