@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 178
+- Total tagged videos: 180
 
 ## Cross-video synthesis
 
-- This theme appears across 178 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (118), Agent Architecture (105), Evals & Reliability (17).
+- This theme appears across 180 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (120), Agent Architecture (107), Evals & Reliability (17).
 - Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
 
 ## Seed videos
@@ -190,6 +190,8 @@
 - [[1478-y2dyD6slKxE-why-ai-won-t-replace-stock-pickers-jack-woodruff-candlestick-vinoo-ganesh-kepler|#1478 — Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler]]
 - [[1498-CvmZtAPmAW4-78-wanted-this-ai-feature-almost-nobody-used-it-supriya-subudhi-bumble|#1498 — 78% Wanted This AI Feature. Almost Nobody Used It - Supriya Subudhi, Bumble]]
 - [[1499-LnQce-eHm8k-your-ai-agent-wants-your-data-here-s-how-to-lock-it-down-jeff-smith-oracle|#1499 — Your AI Agent Wants Your Data. Here's How to Lock It Down - Jeff Smith, Oracle]]
+- [[1631-EaOit1mmR9g-how-financial-planners-with-zero-coding-experience-built-their-own-agents-matt-ragone-rang|#1631 — How Financial Planners With Zero Coding Experience Built Their Own Agents - Matt Ragone, Range]]
+- [[1649-YV1x6gCdgQA-teach-your-ai-agent-to-build-products-everyone-can-use-jemima-abu-cais|#1649 — Teach Your AI Agent to Build Products Everyone Can Use - Jemima Abu, CAIS]]
 
 ## Notes
 

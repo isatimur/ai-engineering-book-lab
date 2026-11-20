@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 839
+- Total tagged videos: 846
 
 ## Cross-video synthesis
 
-- This theme appears across 839 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (725), Agent Architecture (691), RAG & Retrieval (23).
+- This theme appears across 846 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (732), Agent Architecture (698), RAG & Retrieval (23).
 - Representative talks: #16 Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI; #20 What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench; #23 Judge the Judge: Building LLM Evaluators That Actually Work with GEPA — Mahmoud Mabrouk, Agenta AI.
 
 ## Seed videos
@@ -851,6 +851,13 @@
 - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey]]
 - [[1626-wWisOHEcMPE-engineering-agency-out-of-the-happy-path-matthew-jewkes-standard-cybernetics|#1626 — Engineering Agency out of the Happy Path — Matthew Jewkes, Standard Cybernetics]]
 - [[1627-oWqsBuhRRZ4-how-we-mapped-a-35-million-line-mainframe-in-4-days-stephen-chin-neo4j-neeraj-deshmukh-bli|#1627 — How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy]]
+- [[1632-kIlVNGZZr8o-how-agents-cut-hour-long-data-checks-to-5-minutes-amol-kapoor-clifford-ressel-nori-agentic|#1632 — How Agents Cut Hour-Long Data Checks to 5 Minutes - Amol Kapoor & Clifford Ressel, Nori Agentic]]
+- [[1634-BT1Mo-fD-g0-your-coding-agent-can-t-undo-its-own-mistakes-tanmay-sah-dolly-sah|#1634 — Your Coding Agent Can't Undo Its Own Mistakes - Tanmay Sah & Dolly Sah]]
+- [[1636-6TjFjHPjVH0-i-let-agents-refactor-my-codebase-for-3-weeks-then-i-read-the-code-keiji-kanazawa-microsof|#1636 — I Let Agents Refactor My Codebase for 3 Weeks. Then I Read the Code. — Keiji Kanazawa, Microsoft]]
+- [[1637-hX140a5klW0-ai-writes-code-faster-than-uber-can-merge-it-preetam-dwivedi-manjari-akella-uber|#1637 — AI Writes Code Faster Than Uber Can Merge It - Preetam Dwivedi & Manjari Akella, Uber]]
+- [[1644-nKjPBAw_N_0-how-to-build-a-software-factory-that-improves-itself-zach-lloyd-warp|#1644 — How to Build a Software Factory That Improves Itself - Zach Lloyd, Warp]]
+- [[1645-_0SQh8a1Osk-don-t-vibe-code-your-agent-infrastructure-akshat-bubna-modal|#1645 — Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal]]
+- [[1657-WWIFiQi9U4w-the-one-thing-every-ai-agent-framework-agrees-on-mislav-ivanda-daytona|#1657 — The One Thing Every AI Agent Framework Agrees On - Mislav Ivanda, Daytona]]
 
 ## Notes
 
