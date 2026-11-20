@@ -5,12 +5,19 @@ import { scrollAudio } from '../lib/audio';
 import { MarkdownBlock } from '../components/text/MarkdownBlock';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
-import { bookJsonLd, whatIsThisBookJsonLd, aboutTheMethodJsonLd } from '../lib/structuredData';
+import {
+  bookJsonLd,
+  whatIsThisBookJsonLd,
+  aboutTheMethodJsonLd,
+  pressJsonLd,
+  booksCollectionJsonLd,
+} from '../lib/structuredData';
 import { BOOK, authorsSpineLine } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
 import { ExploreMenu, MobileNavMenu } from '../components/nav/ExploreMenu';
 import { AskAI } from '../components/AskAI';
 import { DefinitionBlock } from '../components/DefinitionBlock';
+import { PressShelf } from '../components/PressShelf';
 import { ArtifactCard } from '../components/ArtifactCard';
 import stats from '../data/stats.json';
 import { ARTIFACTS } from '../data/artifacts';
@@ -42,13 +49,27 @@ export const Catalogue = () => {
       ref={containerRef}
       className="min-h-screen bg-[#1F1D1B] text-[#F9F7F1] font-serif relative overflow-hidden"
     >
+      {/*
+        The title named one book while the masthead named the press. With
+        three books on the shelf the page is the press's front door, so the
+        title says so and the book it opens is named second rather than
+        standing in for the whole imprint.
+      */}
       <Seo
-        title="From Copilot to Colleague — A Guide to AI Engineering"
-        description={`How AI Engineering turns models into dependable systems. An online book + visual guide built from a ${corpusVideos}-video corpus.`}
+        title="AI Engineer Press — Three books on AI engineering"
+        description={`Books written in the open from a ${corpusVideos.toLocaleString('en-US')}-talk corpus, each carrying its own evidence. Start with From Copilot to Colleague: how AI engineering turns models into dependable systems.`}
         path="/"
-        type="book"
+        type="website"
       />
-      <JsonLd data={[bookJsonLd(), whatIsThisBookJsonLd(), aboutTheMethodJsonLd()]} />
+      <JsonLd
+        data={[
+          pressJsonLd(),
+          booksCollectionJsonLd(),
+          bookJsonLd(),
+          whatIsThisBookJsonLd(),
+          aboutTheMethodJsonLd(),
+        ]}
+      />
       <header className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-start pointer-events-none">
         <div className="pointer-events-auto flex items-start gap-4">
           <div className="w-8 h-8 flex items-center justify-center border border-white/20 rounded-sm">
@@ -174,6 +195,8 @@ export const Catalogue = () => {
             </span>
           </div>
         </a>
+
+        <PressShelf />
 
         <DefinitionBlock />
 
