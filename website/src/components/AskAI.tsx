@@ -1,6 +1,10 @@
+import stats from '../data/stats.json';
+import { SITE_ORIGIN } from '../data/book';
+
+// The talk count comes from stats.json, as in geo.ts, so it moves with the corpus.
 const PROMPT =
-  `What is the book "From Copilot to Colleague" (https://aiepress.com) about? ` +
-  `It's a source-anchored AI engineering book distilled from ~800 AI Engineer conference talks — ` +
+  `What is the book "From Copilot to Colleague" (${SITE_ORIGIN}) about? ` +
+  `It's a source-anchored AI engineering book distilled from ${stats.corpus.videos} AI Engineer conference talks — ` +
   `every claim links to a timestamped video source, and every chapter is graded by a panel of ` +
   `three rival open models. Summarize its core argument and what makes its method different.`;
 
