@@ -9,8 +9,6 @@ import {
   bookJsonLd,
   whatIsThisBookJsonLd,
   aboutTheMethodJsonLd,
-  pressJsonLd,
-  booksCollectionJsonLd,
 } from '../lib/structuredData';
 import { BOOK, authorsSpineLine } from '../data/book';
 import aboutLabRaw from '../content/about-the-lab.md?raw';
@@ -50,21 +48,17 @@ export const Catalogue = () => {
       className="min-h-screen bg-[#1F1D1B] text-[#F9F7F1] font-serif relative overflow-hidden"
     >
       {/*
-        The title named one book while the masthead named the press. With
-        three books on the shelf the page is the press's front door, so the
-        title says so and the book it opens is named second rather than
-        standing in for the whole imprint.
+        This is book 1's own homepage, at its own domain. The press's front
+        door is /press, which aiepress.com serves at "/".
       */}
       <Seo
-        title="AI Engineer Press — Three books on AI engineering"
-        description={`Books written in the open from a ${corpusVideos.toLocaleString('en-US')}-talk corpus, each carrying its own evidence. Start with From Copilot to Colleague: how AI engineering turns models into dependable systems.`}
+        title={`${BOOK.title} — ${BOOK.subtitle}`}
+        description={`A source-anchored book on AI engineering, written in the open from a ${corpusVideos.toLocaleString('en-US')}-talk corpus. Every claim links to a timestamped moment in a conference talk.`}
         path="/"
-        type="website"
+        type="book"
       />
       <JsonLd
         data={[
-          pressJsonLd(),
-          booksCollectionJsonLd(),
           bookJsonLd(),
           whatIsThisBookJsonLd(),
           aboutTheMethodJsonLd(),
@@ -196,8 +190,6 @@ export const Catalogue = () => {
           </div>
         </a>
 
-        <PressShelf />
-
         <DefinitionBlock />
 
         <section className="mt-16 pt-10 border-t border-white/10">
@@ -219,6 +211,9 @@ export const Catalogue = () => {
             ))}
           </div>
         </section>
+
+        {/* The book's own story comes first; the way across to the press last. */}
+        <PressShelf />
       </main>
 
       <footer className="relative z-10 pt-24 pb-48 px-6 md:px-12 max-w-3xl mx-auto border-t border-white/10 mt-12 text-white/70">

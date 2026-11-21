@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# aiepress.com serves this file as /robots.txt (see middleware.ts).
+Sitemap: https://aiepress.com/sitemap.xml

@@ -10,7 +10,7 @@ import {
   pressJsonLd,
 } from './structuredData';
 import { chapters } from '../data/bookChapters';
-import { SITE_ORIGIN, BOOK } from '../data/book';
+import { SITE_ORIGIN, BOOK, BOOK_ORIGIN, PRESS_ORIGIN, publicUrl } from '../data/book';
 import { bookDefinitionEntries } from '../data/geo';
 import { chapterVideoFor } from '../data/chapterVideos';
 import { LIBRARY } from '../data/library';
@@ -129,7 +129,7 @@ describe('booksCollectionJsonLd', () => {
   it('is a schema.org ItemList', () => {
     expect(list['@context']).toBe('https://schema.org');
     expect(list['@type']).toBe('ItemList');
-    expect(list.url).toBe(`${ORIGIN}/books`);
+    expect(list.url).toBe(`${PRESS_ORIGIN}/books`);
   });
 
   // This asserted a hardcoded length of 2 and was titled "lists both books".
@@ -144,13 +144,35 @@ describe('booksCollectionJsonLd', () => {
     expect(list.itemListElement.map((x) => x.name)).toEqual(
       LIBRARY.map((b) => b.title),
     );
-    expect(list.itemListElement.map((x) => x.url)).toEqual(
-      LIBRARY.map((b) => `${ORIGIN}${b.href === '/' ? '/' : b.href}`),
-    );
+    expect(list.itemListElement.map((x) => x.url)).toEqual(LIBRARY.map((b) => b.href));
   });
 
   it('includes book three, which the hardcoded list omitted', () => {
-    expect(list.itemListElement.map((x) => x.url)).toContain(`${ORIGIN}/third-book`);
+    expect(list.itemListElement.map((x) => x.url)).toContain(`${PRESS_ORIGIN}/third-book`);
+  });
+
+  // Two sites: book 1 at its own domain, the other two under the press.
+  it('names each book on the domain that serves it', () => {
+    expect(list.itemListElement.map((x) => x.url)).toEqual([
+      `${BOOK_ORIGIN}/`,
+      `${PRESS_ORIGIN}/second-book`,
+      `${PRESS_ORIGIN}/third-book`,
+    ]);
+  });
+});
+
+describe('publicUrl', () => {
+  it('puts the press homepage at the root of aiepress.com', () => {
+    expect(publicUrl('/press')).toBe(`${PRESS_ORIGIN}/`);
+  });
+
+  it('puts press paths on aiepress.com and the rest on book 1’s domain', () => {
+    expect(publicUrl('/books')).toBe(`${PRESS_ORIGIN}/books`);
+    expect(publicUrl('/second-book/some-chapter')).toBe(`${PRESS_ORIGIN}/second-book/some-chapter`);
+    expect(publicUrl('/')).toBe(`${BOOK_ORIGIN}/`);
+    expect(publicUrl('/read/01-the-shift')).toBe(`${BOOK_ORIGIN}/read/01-the-shift`);
+    // A prefix match must be a whole segment: /bookshelf is not /books.
+    expect(publicUrl('/bookshelf')).toBe(`${BOOK_ORIGIN}/bookshelf`);
   });
 });
 
@@ -160,7 +182,7 @@ describe('pressJsonLd', () => {
   it('describes the imprint, not one of its books', () => {
     expect(press['@type']).toBe('Organization');
     expect(press.name).toBe('AI Engineer Press');
-    expect(press.url).toBe(`${ORIGIN}/`);
+    expect(press.url).toBe(`${PRESS_ORIGIN}/`);
   });
 });
 

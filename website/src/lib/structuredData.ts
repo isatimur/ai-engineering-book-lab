@@ -1,4 +1,4 @@
-import { BOOK, SITE_ORIGIN, absoluteUrl } from '../data/book';
+import { BOOK, SITE_ORIGIN, PRESS_ORIGIN, absoluteUrl } from '../data/book';
 import { chapters, chapterPath, type BookChapter } from '../data/bookChapters';
 import { bookDefinitionEntries, whatIsThisBookAnswer } from '../data/geo';
 import type { ChapterVideo } from '../data/chapterVideos';
@@ -172,7 +172,7 @@ export const booksCollectionJsonLd = () => ({
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Books — AI Engineer Press',
-  url: `${SITE_ORIGIN}/books`,
+  url: `${PRESS_ORIGIN}/books`,
   itemListElement: LIBRARY.map((book, i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -190,7 +190,7 @@ export const pressJsonLd = () => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'AI Engineer Press',
-  url: `${SITE_ORIGIN}/`,
+  url: `${PRESS_ORIGIN}/`,
   description:
     'An independent imprint publishing books on AI engineering, written in the open from a corpus of conference talks.',
   founder: author(),

@@ -12,7 +12,8 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const websiteRoot = resolve(__dirname, '..');
-const ORIGIN = 'https://aiepress.com';
+// These files describe book 1, so they name book 1's own domain.
+const ORIGIN = 'https://fromcopilottocolleague.com';
 const REPO = 'https://github.com/isatimur/ai-engineering-book-lab';
 const AUTHOR = 'Timur Isachenko';
 const TITLE = 'From Copilot to Colleague';
