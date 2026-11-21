@@ -33,7 +33,11 @@ const BASE = 300;
 export const ChapterWeb = () => {
   const ref = useReveal<HTMLDivElement>();
   const [bookId, setBookId] = useState<BookId>(1);
-  const [focus, setFocus] = useState<number | null>(null);
+  // Hover previews a chapter; a click (or tap, or Enter) pins it, so the
+  // pointer can leave the chapter and still reach the link in the panel.
+  const [hover, setHover] = useState<number | null>(null);
+  const [pinned, setPinned] = useState<number | null>(null);
+  const focus = hover ?? pinned;
   const web = explainer.webs.find((w) => w.book === bookId)!;
   const meta = BOOKS[bookId];
   const n = web.chapters.length;
@@ -60,7 +64,8 @@ export const ChapterWeb = () => {
             type="button"
             onClick={() => {
               setBookId(id);
-              setFocus(null);
+              setHover(null);
+              setPinned(null);
             }}
             aria-pressed={bookId === id}
             className={`rounded-full border px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors ${bookId === id ? 'border-[#D9A55B]/70 text-[#D9A55B]' : 'border-white/15 text-white/50 hover:text-white/80'}`}
@@ -102,8 +107,8 @@ export const ChapterWeb = () => {
               r={5 + Math.sqrt(c.claims) * 2}
               fill={focus === c.n ? '#D9A55B' : '#1F1D1B'}
               stroke={focus === c.n ? '#D9A55B' : 'rgba(249,247,241,0.5)'}
-              onMouseEnter={() => setFocus(c.n)}
-              onMouseLeave={() => setFocus(null)}
+              onMouseEnter={() => setHover(c.n)}
+              onMouseLeave={() => setHover(null)}
               style={{ transition: 'fill 200ms' }}
             />
           ))}
@@ -114,10 +119,13 @@ export const ChapterWeb = () => {
               <button
                 type="button"
                 aria-label={`Chapter ${c.n}: show the claims it shares`}
-                onMouseEnter={() => setFocus(c.n)}
-                onMouseLeave={() => setFocus(null)}
-                onFocus={() => setFocus(c.n)}
-                onClick={() => setFocus(focus === c.n ? null : c.n)}
+                aria-pressed={pinned === c.n}
+                onMouseEnter={() => setHover(c.n)}
+                onMouseLeave={() => setHover(null)}
+                onClick={() => {
+                  setHover(null);
+                  setPinned(pinned === c.n ? null : c.n);
+                }}
                 className={`h-8 w-8 rounded-full font-mono text-[10px] transition-colors ${focus === c.n ? 'text-[#D9A55B]' : 'text-white/45 hover:text-white'}`}
               >
                 {c.n}
@@ -148,7 +156,7 @@ export const ChapterWeb = () => {
             </p>
             <p className="mt-3 font-sans text-sm font-light text-white/60">
               appear in two or more chapters of {meta.title}. Each arc joins two chapters that cite the same ledger entry;
-              a thicker arc means more shared entries. Point at a chapter to see its links.
+              a thicker arc means more shared entries. Point at a chapter to see its links; click it to keep them.
             </p>
           </>
         )}
