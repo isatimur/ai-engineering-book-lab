@@ -28,6 +28,9 @@ import { ThirdBookReader } from './pages/ThirdBookReader';
 import { ThirdBookChapterDetail, thirdBookChapterStaticPaths } from './pages/ThirdBookChapterDetail';
 
 import { SettingsProvider, AppLayout } from './context/SettingsContext';
+import { PRESS_ORIGIN } from './data/book';
+
+const PRESS_HOST = new URL(PRESS_ORIGIN).hostname;
 
 const Root = () => (
   <SettingsProvider>
@@ -37,13 +40,25 @@ const Root = () => (
   </SettingsProvider>
 );
 
+/**
+ * "/" is two pages. On aiepress.com the middleware serves press.html at "/",
+ * but the address stays "/", so the browser's router must also pick the press
+ * page there. Otherwise it hydrates book 1's homepage over the press markup
+ * (React #418) and the visitor sees the wrong site. The build has no window
+ * and renders book 1, which is what index.html should hold.
+ */
+export const homeFor = (hostname: string | undefined) =>
+  hostname === PRESS_HOST ? <Press /> : <Catalogue />;
+
+const Home = () => homeFor(typeof window === 'undefined' ? undefined : window.location.hostname);
+
 // getStaticPaths returns paths relative to the root route ('/'), per vite-react-ssg.
 export const routes: RouteRecord[] = [
   {
     path: '/',
     element: <Root />,
     children: [
-      { index: true, element: <Catalogue /> },
+      { index: true, element: <Home /> },
       { path: 'visual-guide', element: <VisualGuide /> },
       {
         path: 'visual-guide/concepts/:slug',
