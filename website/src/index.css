@@ -326,6 +326,126 @@ body {
   }
 }
 
+/* Press "how a book is made" explainer. The markup is the finished state;
+   useReveal sets data-reveal="armed" after hydration to hide the parts, then
+   "in" to play them. Without JS, or with reduced motion, nothing is hidden. */
+.hiw-layer .rv,
+.hiw-layer .hiw-spine,
+.hiw-layer .hiw-bar,
+.hiw-layer .hiw-draw,
+.hiw-layer .hiw-sweep,
+.hiw-layer .hiw-rail {
+  transition:
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--d, 0ms),
+    transform 900ms cubic-bezier(0.16, 1, 0.3, 1) var(--d, 0ms),
+    stroke-dashoffset 1100ms cubic-bezier(0.65, 0, 0.35, 1) var(--d, 0ms),
+    clip-path 1600ms cubic-bezier(0.65, 0, 0.35, 1) var(--d, 0ms);
+}
+.hiw-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.hiw-bar {
+  transform-origin: left;
+}
+.hiw-rail {
+  transform-origin: top;
+}
+.hiw-sweep {
+  clip-path: inset(0 0 0 0);
+}
+[data-reveal='armed'] .rv {
+  opacity: 0;
+  transform: translateY(14px);
+}
+[data-reveal='armed'] .hiw-spine-on {
+  opacity: 0.25;
+  transform: translateY(6px);
+}
+[data-reveal='armed'] .hiw-bar {
+  transform: scaleX(0);
+}
+[data-reveal='armed'] .hiw-draw {
+  stroke-dashoffset: 1;
+}
+[data-reveal='armed'] .hiw-sweep {
+  clip-path: inset(0 100% 0 0);
+}
+[data-reveal='armed'] .hiw-rail {
+  transform: scaleY(0);
+}
+/* The anchored line: a highlight sweeps across it once the scan reaches it. */
+.hiw-quote::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  background: rgba(217, 165, 91, 0.12);
+  border-left: 2px solid #d9a55b;
+  transform-origin: left;
+  transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms;
+}
+[data-reveal='armed'] .hiw-quote::before {
+  transform: scaleX(0);
+}
+.hiw-scan {
+  opacity: 0;
+}
+[data-reveal='in'] .hiw-scan {
+  animation: hiw-scan 1400ms cubic-bezier(0.65, 0, 0.35, 1) 200ms 1 both;
+}
+@keyframes hiw-scan {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateY(160px); opacity: 0; }
+}
+.hiw-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hiw-pulse 2400ms ease-out infinite;
+}
+@keyframes hiw-pulse {
+  0% { transform: scale(0.4); opacity: 0.9; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.hiw-play {
+  animation: hiw-breathe 2600ms ease-in-out infinite;
+}
+@keyframes hiw-breathe {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(217, 165, 91, 0.45); }
+  50% { box-shadow: 0 0 0 8px rgba(217, 165, 91, 0); }
+}
+.hiw-underline {
+  background-image: linear-gradient(rgba(217, 165, 91, 0.55), rgba(217, 165, 91, 0.55));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+  transition: background-size 900ms cubic-bezier(0.65, 0, 0.35, 1) 200ms;
+}
+[data-reveal='armed'] .hiw-underline {
+  background-size: 0% 1px;
+}
+/* A focused chapter's arcs carry a stream of light between the chapters. */
+.hiw-flow {
+  stroke-dasharray: 0.015 0.06;
+  animation: hiw-flow 2200ms linear infinite;
+}
+@keyframes hiw-flow {
+  to { stroke-dashoffset: -0.075; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hiw-layer * {
+    transition: none !important;
+    animation: none !important;
+  }
+  .hiw-pulse,
+  .hiw-scan,
+  .hiw-flow {
+    display: none;
+  }
+}
+
 @media print {
   .no-print {
     display: none !important;

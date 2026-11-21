@@ -12,7 +12,7 @@
     "gen-sitemap": "node scripts/gen-sitemap.mjs",
     "gen-llms": "node scripts/gen-llms.mjs",
     "sync-audio": "node scripts/sync-audio.mjs",
-    "prebuild": "node scripts/sync-diagrams.mjs && node scripts/sync-audio.mjs && node scripts/sync-second-book.mjs && node scripts/sync-third-book.mjs && node scripts/gen-data.mjs && node scripts/gen-sitemap.mjs && node scripts/gen-llms.mjs",
+    "prebuild": "node scripts/sync-diagrams.mjs && node scripts/sync-audio.mjs && node scripts/sync-second-book.mjs && node scripts/sync-third-book.mjs && node scripts/gen-data.mjs && node scripts/gen-press-explainer.mjs && node scripts/gen-sitemap.mjs && node scripts/gen-llms.mjs",
     "build": "vite-react-ssg build",
     "preview": "vite preview",
     "start": "node server.js",

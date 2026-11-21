@@ -3,6 +3,8 @@ import { JsonLd } from '../components/JsonLd';
 import { BOOK_ORIGIN, PRESS_HOME_PATH } from '../data/book';
 import { LIBRARY } from '../data/library';
 import { Book3D } from '../components/Book3D';
+import { HowItWorks } from '../components/press/HowItWorks';
+import { ChapterWeb } from '../components/press/ChapterWeb';
 import { pressJsonLd, booksCollectionJsonLd } from '../lib/structuredData';
 import stats from '../data/stats.json';
 
@@ -25,24 +27,6 @@ const FIGURES = [
   { value: fmt(chaptersTotal), label: 'chapters across three books' },
   { value: fmt(claimsTotal), label: 'claims in the ledgers' },
   { value: fmt(anchorsTotal), label: 'timestamped source anchors' },
-];
-
-const METHOD = [
-  {
-    step: 'I',
-    title: 'One corpus',
-    body: `Every book draws on the same library of ${fmt(stats.corpus.videos)} AI Engineer conference talks, transcribed and read talk by talk. The corpus grows as new talks are published.`,
-  },
-  {
-    step: 'II',
-    title: 'A ledger of claims',
-    body: 'A sentence that states a fact enters a claims ledger, and each claim links to the moment in a talk that supports it. A reader can follow a claim to its source in one click.',
-  },
-  {
-    step: 'III',
-    title: 'A rival panel',
-    body: 'Three rival open models score each chapter against the same rubric and flag anything that should block it. The scorecards are public.',
-  },
 ];
 
 export const Press = () => (
@@ -69,6 +53,7 @@ export const Press = () => (
       <nav className="flex items-center gap-5 font-mono text-xs uppercase tracking-widest text-white/60">
         <a href="#books" className="hover:text-white">Books</a>
         <a href="#method" className="hover:text-white">Method</a>
+        <a href="#chapters" className="hover:text-white">Chapters</a>
       </nav>
     </header>
 
@@ -141,19 +126,13 @@ export const Press = () => (
         <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.25em] text-white/55">
           How a book is made
         </p>
-        <h2 className="mb-14 text-center font-serif text-3xl md:text-4xl">Corpus, ledger, panel</h2>
-        <ol className="grid grid-cols-1 gap-12 md:grid-cols-3">
-          {METHOD.map((m) => (
-            <li key={m.step}>
-              <p className="mb-3 font-serif text-2xl italic text-white/40">{m.step}</p>
-              <h3 className="mb-3 font-sans text-sm font-medium uppercase tracking-widest text-white/85">
-                {m.title}
-              </h3>
-              <p className="font-sans text-sm font-light leading-relaxed text-white/60">{m.body}</p>
-            </li>
-          ))}
-        </ol>
-        <p className="mt-14 text-center">
+        <h2 className="mb-6 text-center font-serif text-3xl md:text-4xl">Layer by layer, from a talk to a chapter</h2>
+        <p className="mx-auto mb-16 max-w-xl text-center font-sans text-sm font-light leading-relaxed text-white/55">
+          We follow one real claim from Book 1 through every layer of the press. Each quote, number and score below
+          comes from the book's own ledger and panel files.
+        </p>
+        <HowItWorks />
+        <p className="text-center">
           <a
             href={`${BOOK_ORIGIN}/quality`}
             className="font-mono text-[11px] uppercase tracking-widest text-white/50 transition-colors hover:text-white"
@@ -161,6 +140,18 @@ export const Press = () => (
             See the panel's scores →
           </a>
         </p>
+      </section>
+
+      <section id="chapters" className="scroll-mt-8 border-t border-white/10 py-20">
+        <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.25em] text-white/55">
+          How the chapters hold together
+        </p>
+        <h2 className="mb-6 text-center font-serif text-3xl md:text-4xl">One ledger, many chapters</h2>
+        <p className="mx-auto mb-12 max-w-xl text-center font-sans text-sm font-light leading-relaxed text-white/55">
+          Chapters share claims instead of restating them. When two chapters make the same point, they cite the same
+          ledger entry and the same anchors.
+        </p>
+        <ChapterWeb />
       </section>
     </main>
 

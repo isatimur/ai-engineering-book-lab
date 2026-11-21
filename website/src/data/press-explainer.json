@@ -1,0 +1,408 @@
+{
+  "sample": {
+    "claimId": "claims#4",
+    "number": 4,
+    "text": "Harness quality is a major determinant of coding-agent quality",
+    "support": "strong",
+    "chapters": [
+      3,
+      4,
+      6,
+      9
+    ],
+    "anchors": [
+      {
+        "label": "#16 — Ryan Lopopolo, OpenAI",
+        "videoId": "am_oeAoUhew",
+        "start": "00:24:40.799",
+        "end": "00:24:45.840",
+        "startSeconds": 1480,
+        "confidence": "high",
+        "quote": "a good harness is really operationalized around giving the model text at the right time"
+      },
+      {
+        "label": "#57 — Eno Reyes, Factory AI",
+        "videoId": "ShuJ_CN6zr4",
+        "start": "00:03:25.440",
+        "end": "00:03:33.440",
+        "startSeconds": 205,
+        "confidence": "high",
+        "quote": "there's so much work that has been put in uh over the last you know 20 to 30 years around the automated validation and verification of software that you build"
+      },
+      {
+        "label": "#190 — Eric Hou, Augment Code",
+        "videoId": "Zniw5c9_jx8",
+        "start": "00:05:27.840",
+        "end": "00:05:31.840",
+        "startSeconds": 327,
+        "confidence": "high",
+        "quote": "instead of micromanaging, what I'm doing is I'm scaffolding and providing context."
+      },
+      {
+        "label": "#179 — Josh Albrecht, Imbue",
+        "videoId": "x_1EumTaXeE",
+        "start": "00:03:28.239",
+        "end": "00:03:33.920",
+        "startSeconds": 208,
+        "confidence": "high",
+        "quote": "identifying problems with the code because if there's no problems then it's probably high quality code"
+      }
+    ]
+  },
+  "webs": [
+    {
+      "book": 1,
+      "claims": 73,
+      "shared": 42,
+      "chapters": [
+        {
+          "n": 1,
+          "claims": 6
+        },
+        {
+          "n": 2,
+          "claims": 8
+        },
+        {
+          "n": 3,
+          "claims": 15
+        },
+        {
+          "n": 4,
+          "claims": 16
+        },
+        {
+          "n": 5,
+          "claims": 10
+        },
+        {
+          "n": 6,
+          "claims": 29
+        },
+        {
+          "n": 7,
+          "claims": 17
+        },
+        {
+          "n": 8,
+          "claims": 10
+        },
+        {
+          "n": 9,
+          "claims": 23
+        },
+        {
+          "n": 10,
+          "claims": 19
+        }
+      ],
+      "links": [
+        {
+          "a": 1,
+          "b": 3,
+          "shared": 3
+        },
+        {
+          "a": 1,
+          "b": 4,
+          "shared": 2
+        },
+        {
+          "a": 1,
+          "b": 6,
+          "shared": 4
+        },
+        {
+          "a": 1,
+          "b": 7,
+          "shared": 3
+        },
+        {
+          "a": 1,
+          "b": 9,
+          "shared": 3
+        },
+        {
+          "a": 1,
+          "b": 10,
+          "shared": 3
+        },
+        {
+          "a": 2,
+          "b": 4,
+          "shared": 1
+        },
+        {
+          "a": 2,
+          "b": 9,
+          "shared": 1
+        },
+        {
+          "a": 2,
+          "b": 10,
+          "shared": 2
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "shared": 7
+        },
+        {
+          "a": 3,
+          "b": 5,
+          "shared": 1
+        },
+        {
+          "a": 3,
+          "b": 6,
+          "shared": 8
+        },
+        {
+          "a": 3,
+          "b": 7,
+          "shared": 2
+        },
+        {
+          "a": 3,
+          "b": 9,
+          "shared": 5
+        },
+        {
+          "a": 3,
+          "b": 10,
+          "shared": 2
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "shared": 1
+        },
+        {
+          "a": 4,
+          "b": 6,
+          "shared": 10
+        },
+        {
+          "a": 4,
+          "b": 7,
+          "shared": 3
+        },
+        {
+          "a": 4,
+          "b": 9,
+          "shared": 5
+        },
+        {
+          "a": 4,
+          "b": 10,
+          "shared": 3
+        },
+        {
+          "a": 5,
+          "b": 6,
+          "shared": 8
+        },
+        {
+          "a": 5,
+          "b": 7,
+          "shared": 1
+        },
+        {
+          "a": 5,
+          "b": 9,
+          "shared": 3
+        },
+        {
+          "a": 5,
+          "b": 10,
+          "shared": 2
+        },
+        {
+          "a": 6,
+          "b": 7,
+          "shared": 6
+        },
+        {
+          "a": 6,
+          "b": 8,
+          "shared": 2
+        },
+        {
+          "a": 6,
+          "b": 9,
+          "shared": 11
+        },
+        {
+          "a": 6,
+          "b": 10,
+          "shared": 10
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "shared": 2
+        },
+        {
+          "a": 7,
+          "b": 9,
+          "shared": 3
+        },
+        {
+          "a": 7,
+          "b": 10,
+          "shared": 4
+        },
+        {
+          "a": 8,
+          "b": 10,
+          "shared": 5
+        },
+        {
+          "a": 9,
+          "b": 10,
+          "shared": 6
+        }
+      ]
+    },
+    {
+      "book": 2,
+      "claims": 43,
+      "shared": 19,
+      "chapters": [
+        {
+          "n": 1,
+          "claims": 8
+        },
+        {
+          "n": 2,
+          "claims": 8
+        },
+        {
+          "n": 3,
+          "claims": 10
+        },
+        {
+          "n": 4,
+          "claims": 8
+        },
+        {
+          "n": 5,
+          "claims": 7
+        },
+        {
+          "n": 6,
+          "claims": 7
+        },
+        {
+          "n": 7,
+          "claims": 6
+        },
+        {
+          "n": 8,
+          "claims": 10
+        }
+      ],
+      "links": [
+        {
+          "a": 1,
+          "b": 2,
+          "shared": 2
+        },
+        {
+          "a": 1,
+          "b": 3,
+          "shared": 4
+        },
+        {
+          "a": 1,
+          "b": 4,
+          "shared": 1
+        },
+        {
+          "a": 1,
+          "b": 8,
+          "shared": 2
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "shared": 2
+        },
+        {
+          "a": 2,
+          "b": 4,
+          "shared": 1
+        },
+        {
+          "a": 2,
+          "b": 8,
+          "shared": 1
+        },
+        {
+          "a": 3,
+          "b": 8,
+          "shared": 1
+        },
+        {
+          "a": 4,
+          "b": 5,
+          "shared": 1
+        },
+        {
+          "a": 4,
+          "b": 8,
+          "shared": 2
+        },
+        {
+          "a": 5,
+          "b": 8,
+          "shared": 1
+        },
+        {
+          "a": 6,
+          "b": 8,
+          "shared": 3
+        },
+        {
+          "a": 7,
+          "b": 8,
+          "shared": 2
+        }
+      ]
+    }
+  ],
+  "panel": {
+    "models": [
+      "DeepSeek Chat",
+      "Llama 3.3 70B",
+      "Qwen 2.5 72B"
+    ],
+    "runId": "panel-3model-v12",
+    "dims": [
+      {
+        "id": "humanness",
+        "label": "Reads as human",
+        "score": 86.3,
+        "paragraphs": 532
+      },
+      {
+        "id": "usefulness",
+        "label": "Useful to a practitioner",
+        "score": 61.2,
+        "paragraphs": 532
+      },
+      {
+        "id": "evidence_density",
+        "label": "Evidence density",
+        "score": 86.2,
+        "paragraphs": 114
+      },
+      {
+        "id": "claim_defensibility",
+        "label": "Claims hold up",
+        "score": 92.9,
+        "paragraphs": 532
+      }
+    ]
+  }
+}
