@@ -149,4 +149,4 @@ The next chapter asks whether bounded authority still holds when the room stops 
 
 ---
 
-_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://aiepress.com/read/07-security_
+_From "From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems" by Timur Isachenko · https://fromcopilottocolleague.com/read/07-security_

@@ -1,5 +1,5 @@
 import { Head } from 'vite-react-ssg';
-import { SITE_ORIGIN } from '../data/book';
+import { SITE_ORIGIN, publicUrl } from '../data/book';
 
 /** Re-exported for back-compat; canonical home is `../data/book`. */
 export { SITE_ORIGIN };
@@ -21,8 +21,9 @@ type SeoProps = {
   video?: { url: string; width: number; height: number; type?: string };
 };
 
-const absolute = (urlOrPath: string): string =>
-  urlOrPath.startsWith('http') ? urlOrPath : `${SITE_ORIGIN}${urlOrPath}`;
+// Assets are served on both domains; name them on the page's own domain.
+const absolute = (urlOrPath: string, origin: string): string =>
+  urlOrPath.startsWith('http') ? urlOrPath : `${origin}${urlOrPath}`;
 
 /**
  * Per-page document head: title, description, canonical, Open Graph, Twitter.
@@ -37,8 +38,9 @@ export const Seo = ({
   noindex = false,
   video,
 }: SeoProps) => {
-  const url = `${SITE_ORIGIN}${path}`;
-  const img = absolute(image);
+  const url = publicUrl(path);
+  const origin = new URL(url).origin;
+  const img = absolute(image, origin);
   return (
     <Head>
       <title>{title}</title>
@@ -50,7 +52,7 @@ export const Seo = ({
       <meta property="og:url" content={url} />
       <meta property="og:image" content={img} />
       <meta property="og:type" content={type} />
-      {video && <meta property="og:video" content={absolute(video.url)} />}
+      {video && <meta property="og:video" content={absolute(video.url, origin)} />}
       {video && <meta property="og:video:type" content={video.type ?? 'video/mp4'} />}
       {video && <meta property="og:video:width" content={String(video.width)} />}
       {video && <meta property="og:video:height" content={String(video.height)} />}

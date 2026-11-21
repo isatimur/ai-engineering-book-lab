@@ -1,9 +1,33 @@
-/** Canonical production origin — used to build absolute canonical, OG, and JSON-LD URLs. */
-export const SITE_ORIGIN = 'https://aiepress.com';
+/**
+ * One build serves two sites. Book 1 lives at its own domain; the press and
+ * the other two books live at aiepress.com. vercel.json routes each host and
+ * redirects a path that arrives at the wrong one, so every page has exactly
+ * one canonical home.
+ */
+export const BOOK_ORIGIN = 'https://fromcopilottocolleague.com';
+export const PRESS_ORIGIN = 'https://aiepress.com';
+
+/** Book 1's origin. Kept under this name because most of the site is book 1. */
+export const SITE_ORIGIN = BOOK_ORIGIN;
+
+/** The press homepage. aiepress.com serves it at "/". */
+export const PRESS_HOME_PATH = '/press';
+
+/** Paths that belong to aiepress.com. Keep in step with vercel.json. */
+export const PRESS_PATH_PREFIXES = [PRESS_HOME_PATH, '/books', '/second-book', '/third-book'];
+
+export const isPressPath = (path: string): boolean =>
+  PRESS_PATH_PREFIXES.some((p) => path === p || path.startsWith(`${p}/`));
+
+/** The public URL of a site path, on whichever domain owns it. */
+export const publicUrl = (path: string): string => {
+  if (path === PRESS_HOME_PATH) return `${PRESS_ORIGIN}/`;
+  return `${isPressPath(path) ? PRESS_ORIGIN : BOOK_ORIGIN}${path}`;
+};
 
 /** Build an absolute URL from a site-relative path (or pass through an absolute URL). */
 export const absoluteUrl = (urlOrPath: string): string =>
-  urlOrPath.startsWith('http') ? urlOrPath : `${SITE_ORIGIN}${urlOrPath}`;
+  urlOrPath.startsWith('http') ? urlOrPath : publicUrl(urlOrPath);
 
 export type Book = {
   id: string;

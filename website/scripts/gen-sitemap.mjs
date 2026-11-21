@@ -11,7 +11,14 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const websiteRoot = resolve(__dirname, '..');
-const ORIGIN = 'https://aiepress.com';
+// One build, two sites (see middleware.ts). Book 1's pages go in sitemap.xml
+// on its own domain; the press pages go in sitemap-press.xml, which
+// aiepress.com serves as its /sitemap.xml. Keep in step with src/data/book.ts.
+const BOOK_ORIGIN = 'https://fromcopilottocolleague.com';
+const PRESS_ORIGIN = 'https://aiepress.com';
+const PRESS_PATH_PREFIXES = ['/press', '/books', '/second-book', '/third-book'];
+const isPressPath = (path) =>
+  PRESS_PATH_PREFIXES.some((p) => path === p || path.startsWith(`${p}/`));
 const log = (...a) => console.log('[gen-sitemap]', ...a);
 
 const fallbackDate = new Date().toISOString();
@@ -57,10 +64,19 @@ const manifest = JSON.parse(readFileSync(resolve(websiteRoot, 'src/data/diagram-
 const repoDate = gitDate('.');
 
 const urls = [];
-const push = (path, lastmod, priority, changefreq) =>
-  urls.push({ loc: `${ORIGIN}${path}`, lastmod, priority, changefreq });
+const pressUrls = [];
+const push = (path, lastmod, priority, changefreq) => {
+  if (path === '/press') {
+    pressUrls.push({ loc: `${PRESS_ORIGIN}/`, lastmod, priority, changefreq });
+  } else if (isPressPath(path)) {
+    pressUrls.push({ loc: `${PRESS_ORIGIN}${path}`, lastmod, priority, changefreq });
+  } else {
+    urls.push({ loc: `${BOOK_ORIGIN}${path}`, lastmod, priority, changefreq });
+  }
+};
 
 push('/', repoDate, '1.0', 'weekly');
+push('/press', repoDate, '1.0', 'weekly');
 push('/books', repoDate, '0.9', 'weekly');
 push('/enterprise', repoDate, '0.9', 'monthly');
 push('/assess', repoDate, '0.9', 'monthly');
@@ -99,9 +115,9 @@ for (const m of manifest.maps) {
   push(`/visual-guide/maps/${m.id}`, gitDate(m.sourceFile ?? '.'), '0.6', 'monthly');
 }
 
-const xml = `<?xml version="1.0" encoding="UTF-8"?>
+const toXml = (list) => `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
+${list
   .map(
     (u) =>
       `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`,
@@ -110,5 +126,7 @@ ${urls
 </urlset>
 `;
 
-writeFileSync(resolve(websiteRoot, 'public/sitemap.xml'), xml);
-log(`wrote public/sitemap.xml with ${urls.length} URLs (${chapters.length} book-1 chapters, ${chaptersTwo.length} book-2 chapters, ${chaptersThree.length} book-3 chapters, ${manifest.concepts.length} concepts, ${manifest.maps.length} maps)`);
+writeFileSync(resolve(websiteRoot, 'public/sitemap.xml'), toXml(urls));
+writeFileSync(resolve(websiteRoot, 'public/sitemap-press.xml'), toXml(pressUrls));
+log(`wrote public/sitemap.xml with ${urls.length} book-1 URLs (${chapters.length} chapters, ${manifest.concepts.length} concepts, ${manifest.maps.length} maps)`);
+log(`wrote public/sitemap-press.xml with ${pressUrls.length} press URLs (${chaptersTwo.length} book-2 chapters, ${chaptersThree.length} book-3 chapters)`);

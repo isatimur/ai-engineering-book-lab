@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { Seo } from '../components/Seo';
+import { PRESS_ORIGIN } from '../data/book';
 import { JsonLd } from '../components/JsonLd';
 import { LIBRARY, type LibraryEntry } from '../data/library';
 import { booksCollectionJsonLd } from '../lib/structuredData';
@@ -53,7 +53,7 @@ const BLURB: Record<LibraryEntry['maturity'], string> = {
 
 const Header = () => (
   <header className="no-print flex items-center justify-between border-b border-[var(--color-border)] px-6 py-6 font-mono text-[10px] uppercase tracking-widest lg:px-12">
-    <Link to="/" className="hover:opacity-60">← Catalogue</Link>
+    <a href={PRESS_ORIGIN} className="hover:opacity-60">← AI Engineer Press</a>
     <span>AI Engineer Press · Books</span>
     <span />
   </header>
@@ -88,7 +88,7 @@ export const Books = () => {
         */}
         <div className="flex flex-col gap-6">
           {LIBRARY.map((book) => (
-            <Link key={book.id} to={book.href} className={CARD_STYLE[book.maturity]}>
+            <a key={book.id} href={book.href} className={CARD_STYLE[book.maturity]}>
               <Cover src={book.cover} alt={`${book.title} cover`} />
               <div>
                 <p className={`mb-2 font-mono text-[10px] uppercase tracking-[0.2em] ${MUTED[book.maturity]}`}>
@@ -104,7 +104,7 @@ export const Books = () => {
                   {book.measure}
                 </p>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </section>

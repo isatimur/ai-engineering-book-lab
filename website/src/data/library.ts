@@ -10,7 +10,7 @@
  * Maturity is derived from the chapter counts rather than stated, for the
  * same reason: a label that cannot disagree with the book it describes.
  */
-import { BOOK } from './book';
+import { BOOK, publicUrl } from './book';
 import { chapters } from './bookChapters';
 import {
   chaptersTwo,
@@ -45,7 +45,10 @@ export type LibraryEntry = {
   title: string;
   /** One line under the title. The book's own subtitle, or its pitch. */
   blurb: string;
-  /** Where the book opens. */
+  /**
+   * Where the book opens, as an absolute URL. Book 1 and the other two live on
+   * different domains, so a relative link would open the wrong site.
+   */
   href: string;
   cover: string;
   /** Derived from the prose that exists, never stated. */
@@ -70,7 +73,7 @@ export const LIBRARY: LibraryEntry[] = [
     id: BOOK.id,
     title: BOOK.title,
     blurb: BOOK.subtitle,
-    href: '/',
+    href: publicUrl('/'),
     cover: '/covers/from-copilot-to-colleague-600w.webp',
     status: 'Published',
     measure: `${chapters.length} chapters · ${totalWordCount.toLocaleString()} words`,
@@ -81,7 +84,7 @@ export const LIBRARY: LibraryEntry[] = [
     title: BOOK_TWO_TITLE,
     blurb:
       'An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text.',
-    href: '/second-book',
+    href: publicUrl('/second-book'),
     cover: BOOK_TWO_COVER_600,
     status: 'Drafting',
     measure:
@@ -94,7 +97,7 @@ export const LIBRARY: LibraryEntry[] = [
     title: BOOK_THREE_TITLE,
     blurb:
       'Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint.',
-    href: '/third-book',
+    href: publicUrl('/third-book'),
     cover: BOOK_THREE_COVER_600,
     status: bookThreeStatus(),
     // Deliberately not "0 chapters · 0 words" when the track is empty: that

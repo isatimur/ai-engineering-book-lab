@@ -11,6 +11,7 @@ import { Enterprise } from './pages/Enterprise';
 import { Workshop } from './pages/Workshop';
 import { ChapterDetail } from './pages/ChapterDetail';
 import { Books } from './pages/Books';
+import { Press } from './pages/Press';
 import { EvidenceGraphPage } from './pages/EvidenceGraphPage';
 import { EvidenceReference } from './pages/EvidenceReference';
 import { LedgersIndexPage } from './pages/LedgersIndexPage';
@@ -56,6 +57,8 @@ export const routes: RouteRecord[] = [
       },
       { path: 'read', element: <Reader /> },
       { path: 'books', element: <Books /> },
+      // The press homepage. vercel.json serves it at aiepress.com/.
+      { path: 'press', element: <Press /> },
       { path: 'read/graph', element: <EvidenceGraphPage /> },
       { path: 'evidence', element: <EvidenceReference /> },
       { path: 'ledgers', element: <LedgersIndexPage /> },
