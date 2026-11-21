@@ -2,6 +2,7 @@ import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
 import { BOOK_ORIGIN, PRESS_HOME_PATH } from '../data/book';
 import { LIBRARY } from '../data/library';
+import { Book3D } from '../components/Book3D';
 import { pressJsonLd, booksCollectionJsonLd } from '../lib/structuredData';
 import stats from '../data/stats.json';
 
@@ -89,32 +90,32 @@ export const Press = () => (
         <p className="mb-12 text-center font-mono text-[10px] uppercase tracking-[0.25em] text-white/55">
           The shelf
         </p>
-        <ul className="grid grid-cols-1 gap-14 md:grid-cols-3 md:gap-10">
+        <p className="mb-14 hidden text-center font-serif text-sm italic text-white/50 sm:block">
+          Hover a book to open the cover · click to read
+        </p>
+        <p className="mb-14 text-center font-serif text-sm italic text-white/50 sm:hidden">
+          Tap a book to open the cover · tap again to read
+        </p>
+        <ul className="grid grid-cols-1 gap-20 md:grid-cols-3 md:gap-10">
           {LIBRARY.map((book) => (
-            <li key={book.id}>
-              <a href={book.href} className="group flex h-full flex-col items-center text-center">
-                <img
-                  src={book.cover}
-                  width={200}
-                  height={300}
-                  loading="lazy"
-                  decoding="async"
-                  alt={`${book.title} cover`}
-                  className="mb-6 h-[270px] w-[180px] rounded-[2px] object-cover shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2"
-                />
-                <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.2em] text-white/45">
-                  {book.status}
-                </p>
-                <h2 className="font-serif text-xl italic leading-snug text-white/90 group-hover:text-white">
+            <li key={book.id} className="flex flex-col items-center text-center">
+              <div className="mb-12">
+                <Book3D book={book} />
+              </div>
+              <p className="mb-2 font-mono text-[9px] uppercase tracking-[0.2em] text-white/45">
+                {book.status}
+              </p>
+              <h2 className="font-serif text-xl italic leading-snug text-white/90">
+                <a href={book.href} className="hover:text-white">
                   {book.title}
-                </h2>
-                <p className="mt-3 max-w-xs font-sans text-sm font-light leading-relaxed text-white/55">
-                  {book.blurb}
-                </p>
-                <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.12em] text-white/35">
-                  {book.measure}
-                </p>
-              </a>
+                </a>
+              </h2>
+              <p className="mt-3 max-w-xs font-sans text-sm font-light leading-relaxed text-white/55">
+                {book.blurb}
+              </p>
+              <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.12em] text-white/35">
+                {book.measure}
+              </p>
             </li>
           ))}
         </ul>

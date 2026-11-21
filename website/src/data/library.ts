@@ -45,6 +45,10 @@ export type LibraryEntry = {
   title: string;
   /** One line under the title. The book's own subtitle, or its pitch. */
   blurb: string;
+  /** The subtitle printed on the cover, for the 3D book's title page. */
+  subtitle: string;
+  /** Cloth colour of the 3D book's spine. */
+  spineColor: string;
   /**
    * Where the book opens, as an absolute URL. Book 1 and the other two live on
    * different domains, so a relative link would open the wrong site.
@@ -73,6 +77,8 @@ export const LIBRARY: LibraryEntry[] = [
     id: BOOK.id,
     title: BOOK.title,
     blurb: BOOK.subtitle,
+    subtitle: BOOK.subtitle,
+    spineColor: BOOK.spineColor,
     href: publicUrl('/'),
     cover: '/covers/from-copilot-to-colleague-600w.webp',
     status: 'Published',
@@ -84,6 +90,8 @@ export const LIBRARY: LibraryEntry[] = [
     title: BOOK_TWO_TITLE,
     blurb:
       'An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text.',
+    subtitle: BOOK_TWO_SUBTITLE,
+    spineColor: '#2B3936',
     href: publicUrl('/second-book'),
     cover: BOOK_TWO_COVER_600,
     status: 'Drafting',
@@ -97,6 +105,8 @@ export const LIBRARY: LibraryEntry[] = [
     title: BOOK_THREE_TITLE,
     blurb:
       'Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint.',
+    subtitle: BOOK_THREE_SUBTITLE,
+    spineColor: '#3A322B',
     href: publicUrl('/third-book'),
     cover: BOOK_THREE_COVER_600,
     status: bookThreeStatus(),
