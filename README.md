@@ -187,6 +187,54 @@ This is a public experiment. A few entry points that are genuinely useful right 
 
 ---
 
+## Repository Blueprint
+
+### System Overview
+
+The repository turns a corpus of AI Engineer conference talks into three books and two websites. Code lives in five folders. The rest of the tree (`01_Videos/`, `02_Themes/`, `claims*/`, `evidence*/`, `public/drafting*/`, and so on) is notes and manuscript, not code.
+
+The data flows one way:
+
+1. `99_Meta/scripts` ingests talks with yt-dlp and rebuilds the corpus notes.
+2. `99_Meta/scripts/anchor` ties ledger quotes to timed transcript anchors and writes `website/src/evidence.json`.
+3. `diagrams/` and `remotion/` turn the corpus and chapters into figures, covers and videos.
+4. `website/` builds the reader and the press site from all of the above.
+
+`scripts/` holds the gates that check this chain, plus the build, cover and audiobook tools.
+
+### Subdirectories & System Boundaries
+
+- `99_Meta`: [./99_Meta/README.md](./99_Meta/README.md) — corpus back office. Ingest (`ingest_ai_engineer_videos.py:rebuild_corpus_artifacts`, the single writer of corpus artifacts), corpus gates, judge-score merging, stats and versions exports, and the `anchor/` quote-to-transcript toolkit.
+- `diagrams`: [./diagrams/README.md](./diagrams/README.md) — Excalidraw sources and their Python generators. `_update_corpus_counts.py` keeps printed corpus counts in step with `99_Meta/Corpus Stats.md` (`--check` gate). `covers/_grow_specimen.py` grows the cover plates from `01_Videos/`.
+- `remotion`: [./remotion/README.md](./remotion/README.md) — Remotion project for the chapter explainer videos (`Chapter01`, `Chapter02`) and per-chapter og:image cards (`OgCard`, `npm run render:og`).
+- `scripts`: [./scripts/README.md](./scripts/README.md) — integrity gates (`check_claims_integrity.py`, `check_book_consistency.py`, `verify_artifact_anchors.py`, `check_diagram_sync.py`), build, sync and cover shell scripts, `audiobook_gen/` (ACX audiobook renderer) and `mash_agent/` (agent-judged book-mash runs).
+- `website`: [./website/README.md](./website/README.md) — Vite + vite-react-ssg app. One build serves fromcopilottocolleague.com (Book 1) and aiepress.com (the press); `middleware.ts` splits by host. The prebuild scripts in `website/scripts/` sync content from the folders above.
+
+### Global Invariants
+
+- Every claim in a ledger carries at least one anchor. `99_Meta/scripts/anchor/build_evidence.py` derives `website/src/evidence*.json` from the ledgers; the website never edits them by hand.
+- Transcripts (`99_Meta/transcripts/`) are gitignored, so the quote-fidelity checks (`scripts/check_claims_integrity.py`, `99_Meta/scripts/anchor/verify_ledger.py`) must run locally. In CI they pass vacuously.
+- Generated notes and data files belong to their scripts: change the script and regenerate, never the output (`99_Meta/scripts/ingest_ai_engineer_videos.py:rebuild_corpus_artifacts`, `website/scripts/gen-press-explainer.mjs`).
+- Each website page has one canonical domain (`website/src/data/book.ts:publicUrl`). `PRESS_PATH_PREFIXES` has copies in `book.ts`, `middleware.ts` and `gen-sitemap.mjs` that must agree.
+- Gates exit 0 on pass and 1 on drift; `check_claims_integrity.py` exits 2 when a check crashes.
+
+### Global Side Effects
+
+- Network: yt-dlp (YouTube) in `99_Meta/scripts`; ElevenLabs and OpenAI TTS in `scripts/audiobook_gen`.
+- Git: `scripts/commit_regenerated.sh` commits and pushes, and runs `git reset --hard origin/<branch>` when a push is rejected.
+- Disk: the website prebuild writes into `website/src/` and `website/public/`; diagram and cover scripts overwrite their `.excalidraw`, `.svg` and `.png` outputs; Remotion renders write to gitignored `remotion/out/`.
+- Deploy: the `website-deploy` workflow ships `website/` to Vercel.
+
+### System Verification
+
+- Website: `cd website && npm test && npm run lint`
+- Python scripts: `for t in scripts/test_*.py 99_Meta/scripts/test_*.py; do python3 "$t"; done` (what `.github/workflows/script-tests.yml` runs)
+- Anchor toolkit: `cd 99_Meta/scripts/anchor && python3 -m unittest discover -p 'test_*.py'`
+- Diagram gates: `python3 diagrams/_update_corpus_counts.py --check` and `python3 diagrams/covers/_grow_specimen.py --check`
+- Quote fidelity (local only): `python3 scripts/check_claims_integrity.py`
+
+---
+
 ## License
 
 MIT — see [LICENSE](LICENSE). The manuscript prose is part of the experiment; if you cite or build on it, an attribution back to the experiment is appreciated but not required.
