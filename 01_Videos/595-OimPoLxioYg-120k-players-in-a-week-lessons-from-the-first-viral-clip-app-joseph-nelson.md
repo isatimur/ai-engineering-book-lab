@@ -10,7 +10,6 @@ view_count: 1325
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/OimPoLxioYg.txt"
 themes:
-  - "Org Design & Leadership"
   - "Models & Inference"
 ingested_at: "2026-04-24T12:25:30+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -47,7 +46,6 @@ The original took 48 hours; the demo aims for five minutes and under 50 lines of
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -58,5 +56,5 @@ The original took 48 hours; the demo aims for five minutes and under 50 lines of
 - Description cue: When OpenAI released CLIP, the Roboflow team built an AI Pictionary game called paint.wtf. Players were given a prompt like “a giraffe in the arctic,” and players drew depictions. CLIP...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+

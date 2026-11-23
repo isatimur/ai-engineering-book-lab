@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/ZB7l4uxW3Yo.txt"
 themes:
   - "Agent Architecture"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:15:05+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Greg Benson, a computer science professor at the University of San Francisco and chief scientist at SnapLogic, presents agent continuations. The idea comes from continuations in programming language theory: suspend an agent at any point, even deep inside nested sub-agents, and package its full state as a serializable object built on the messages array plus resume metadata. The application can collect a human approval or persist the state, shut down every agent loop, and later resume exactly where it stopped. A prototype on the OpenAI Python API shows a multi-level HR agent pausing for approval inside an account sub-agent. He claims novelty in combining human approval with arbitrary nesting."
@@ -59,6 +60,7 @@ The prototype uses only the OpenAI Python API and is on GitHub. A newer version 
 
 ## Theme hooks
 - [[Agent Architecture]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > So, you've built some agents and they're working. Actually, they may be working really well, doing amazing things. And now you want to put these agents into a production setting. What are the other things you have to worry about? For example, do your agents need some form of human approval during their processing steps? Will your agents be running for long periods of time in the presence of failure? How do you address these issues? Today, we're going to be learning about a new mechanism that addresses both these issues, and I'm really excited to talk about it. So, let's get started. Hi, I'm Greg Benson. I'm a professor of computer science at the University of San Francisco and I'm chief...
@@ -69,6 +71,7 @@ The prototype uses only the OpenAI Python API and is on GitHub. A newer version 
 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
+- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

@@ -10,7 +10,6 @@ view_count: 1100
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/yqF6XhzbWBk.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-08-25T01:52:43+00:00
@@ -49,7 +48,6 @@ A pre-specified rubric holds only the taste you could write down. Weights go sta
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -61,6 +59,6 @@ A pre-specified rubric holds only the taste you could write down. Weights go sta
 - Full cleaned transcript: [[99_Meta/transcripts/plain/yqF6XhzbWBk.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

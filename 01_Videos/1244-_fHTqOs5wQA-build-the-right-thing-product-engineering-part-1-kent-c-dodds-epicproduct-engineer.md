@@ -11,8 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/_fHTqOs5wQA.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-10-30T18:28:08+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Kent C. Dodds opens a two-hour workshop with one thesis: when AI agents level the implementation playing field, the differentiator becomes building the right thing. Agents are 'homing' arrows that can hit any target, so the scarce skill is choosing which target matters. He draws the line between product engineer and product manager (the engineer owns data model, workflow shape, failure modes and the smallest slice), quotes podcast guests on the cost of building the wrong thing fast, including a 1.2 million Australian dollar product nobody used, and teaches The Mom Test on a live 'Just Get In' workshop-line app."
@@ -57,8 +55,6 @@ The audience picked an example app: "Just Get In", which gets people into packed
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -69,5 +65,4 @@ The audience picked an example app: "Just Get In", which gets people into packed
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+

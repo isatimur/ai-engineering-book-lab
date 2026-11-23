@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/6guQG_tGt0o.txt"
 themes:
   - "Models & Inference"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T10:52:23+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Natalie Serrino, co-founder of Gimlet Labs, which builds an agentic inference cloud across heterogeneous hardware, reports on agents that turn PyTorch code into optimized GPU kernels. On KernelBench v0.1 on Apple M4 with Metal, a standalone agent averaged about 24-25% speedup, best on moderately complex problems. Wins came from kernel fusion (40%), rewriting average pooling as a convolution (80%), and six custom kernels for an audio encoder (about 70%). Failures included a slow matmul and a fake 71,000x speedup from skipping work. Her thesis: kernel agents need strict hardware-in-the-loop verification and a human guide."
@@ -60,7 +59,6 @@ Like other coding agents, kernel agents generate many ideas cheaply and do well 
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [music] Hey everyone, how's it going? So, my name is Natalie. I'm a co-founder of Gimlet Labs and um yeah, just a little bit of background about why Gimlet's looking at AI generated kernels. Let's just get right to it. Um we're building an agentic inference cloud focused on performance and efficiency. And the thing that we've seen with all these talks so far is with agents, they're not just one chat model. They're complex pipelines of multiple models, multiple stages, tool calls, and the compute backing these is inherently should be heterogeneous. So what we do is we automatically split up and orchestrate these agentic workloads across optimal hardware which can be different vendors and...
@@ -71,4 +69,4 @@ Like other coding agents, kernel agents generate many ideas cheaply and do well 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Nuno Campos of Witan Labs describes four months of work that took coding agents from about 50% to 92% on an internal financial analysis benchmark for spreadsheets. A three-agent design and every spreadsheet representation tried (SQL, XML, CSV, HTML) were dead ends on their own. The breakthrough was replacing about 15 tools with one stateful Node.js REPL over a C# engine, which jumped accuracy to 74% and removed timeouts. High-fidelity formula and render engines close the verification loop. His lessons: many tool calls mean you invented a bad scripting language, build the feedback loop your domain lacks, prefer deterministic evals, and check traces for plumbing bugs."
@@ -56,6 +57,7 @@ Domain knowledge in the prompt survived every tool change. It reminds the model 
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -68,6 +70,7 @@ Domain knowledge in the prompt survived every tool change. It reminds the model 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

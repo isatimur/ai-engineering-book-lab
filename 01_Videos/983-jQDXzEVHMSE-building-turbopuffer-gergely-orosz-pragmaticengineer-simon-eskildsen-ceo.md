@@ -10,8 +10,6 @@ view_count: 1900
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/jQDXzEVHMSE.txt"
 themes:
-  - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-08-04T17:21:59+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -55,8 +53,6 @@ CPUs are now scarce: RL environments and agents both run on CPUs, so labs absorb
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
 
 
@@ -67,8 +63,6 @@ CPUs are now scarce: RL environments and agents both run on CPUs, so labs absorb
 - Full cleaned transcript: [[99_Meta/transcripts/plain/jQDXzEVHMSE.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts

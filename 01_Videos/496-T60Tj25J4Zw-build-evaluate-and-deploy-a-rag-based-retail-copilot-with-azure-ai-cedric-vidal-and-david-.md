@@ -10,8 +10,7 @@ view_count: 582
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/T60Tj25J4Zw.txt"
 themes:
-  - "Org Design & Leadership"
-  - "Coding Agents"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:20:44+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "David Smith and Cedric Vidal, principal AI advocates at Microsoft, with Miguel Martinez, run a hands-on workshop building the backend of a retail chatbot for a fictional outdoor store. A prompt flow DAG embeds the question, retrieves product markdown from Azure AI Search, looks up the logged-in customer's orders in Cosmos DB, fills a prompt template and calls GPT-3.5 Turbo. They argue that LLM apps need LLMOps: run the flow locally, deploy it as a container endpoint, then score relevance, groundedness, coherence and fluency with GPT-4 as judge, which catches the model inventing a toothbrush the store does not sell."
@@ -61,8 +60,7 @@ Smith calls it "essentially the same as devops". Ideate, build a first flow, eva
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
-- [[Coding Agents]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] uh this is the workshop on developing a production level rag workflow so you're in the right place if you want to learn how to build the back end for a chat application that works Al off of Open Ai and builds its answers based on information uh that we draw from databases and Vector databases we'll see all about that in this presentation today my name is David Smith uh I'm a principal AI Advocate at Microsoft I've been with Microsoft for about eight years now uh after my startup was acquired uh back in the Big Data space and I've been at Microsoft ever since um my background is in data science uh also did a lot of work as as a statistician uh and these days I'm a specialist in AI...
@@ -72,5 +70,5 @@ Smith calls it "essentially the same as devops". Ideate, build a first flow, eva
 - Description cue: Building generative AI applications for production requires a paradigm shift to LLM Ops, with new tools, platforms and processes for orchestrating end-to-end development workflows. In this...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
-- Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Evals & Reliability**.
+

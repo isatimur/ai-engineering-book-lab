@@ -10,7 +10,6 @@ view_count: 65000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/Sir59K8ZDPU.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "RAG & Retrieval"
 ingested_at: 2026-07-26T22:22:02+00:00
@@ -54,7 +53,6 @@ His slogan: "Pydantic at the door, ontology at the ledger." Pydantic types the i
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[RAG & Retrieval]]
 
@@ -66,6 +64,6 @@ His slogan: "Pydantic at the door, ontology at the ledger." Pydantic types the i
 - Full cleaned transcript: [[99_Meta/transcripts/plain/Sir59K8ZDPU.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **RAG & Retrieval**.
+

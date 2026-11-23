@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/IQc05eCvNYE.txt"
 themes:
   - "Evals & Reliability"
-  - "Voice & Realtime"
 ingested_at: "2026-04-24T11:25:13+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Peter Robicheaux, ML lead at Roboflow, argues that vision models are not smart: vision evals like ImageNet and COCO are saturated pattern-matching tests, CLIP-style captions cannot tell apart images that differ in pose or direction, and convolutional detectors gain almost nothing from large pre-training. He presents a real-time detector that swaps in a DINOv2 backbone, and the RF100VL benchmark of 100 hard-domain detection datasets, where a YOLOv8 trained on 10 examples per class beats a 72B vision-language model. LLMs generalize in language but not in vision."
@@ -52,7 +51,6 @@ A YOLOv8 trained on 10 examples per class beats a 72B state-of-the-art vision-la
 
 ## Theme hooks
 - [[Evals & Reliability]]
-- [[Voice & Realtime]]
 
 ## Transcript excerpt
 > [Music] I'm going to be giving a quick presentation about the state of the union regarding AI vision. Um, so I'm Peter Robisho. I'm the ML lead at Rooflow, which is a platform for building and deploying vision models. Um, so a lot of people are really interested in LLMs these days. So I'm trying to pitch why computer vision matters. Uh so if you think about systems that interact with the real world, they have to use vision as one of their primary inputs because the the built world is sort of built around vision as a fundamental primitive. Um and there's a big gap between where human vision is and where computer vision is. Uh I I would argue a bigger gap than exists currently for human...
@@ -63,7 +61,6 @@ A YOLOv8 trained on 10 examples per class beats a 72B state-of-the-art vision-la
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
-- Could support a chapter/section on **Voice & Realtime**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

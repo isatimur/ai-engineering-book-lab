@@ -12,7 +12,6 @@ transcript_path: "99_Meta/transcripts/plain/ZRM_TfEZcIo.txt"
 themes:
   - "Coding Agents"
   - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-06-28T23:47:11+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Paul Iusztin (Decoding AI) and Louis-François Bouchard (Towards AI) show their AI Research OS, a set of Claude Code and Codex skills that turns a second brain (about 5,000 Obsidian and 5,000 Readwise notes) into project memory. It evolved in three versions: deep research over hand-picked golden links, then the same loop aimed at Obsidian, Readwise, NotebookLM and GitHub, then a living wiki of raw files, an index.yaml catalogue and LLM-written concept, entity and comparison pages. Their thesis: skip vector databases and knowledge graphs for personal research; plain markdown files and layered references keep queries token-efficient, and every question updates the wiki."
@@ -56,7 +55,6 @@ More connectors, weak source provenance and ranking, better linting and memory c
 ## Theme hooks
 - [[Coding Agents]]
 - [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -68,7 +66,6 @@ More connectors, weak source provenance and ranking, better linting and memory c
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

@@ -10,7 +10,6 @@ view_count: 4291
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/wNH3q9pqn0U.txt"
 themes:
-  - "Coding Agents"
   - "Models & Inference"
 ingested_at: "2026-04-24T11:42:06+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -52,7 +51,6 @@ An education version runs on a phone with your own API key. She points to open-s
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -63,5 +61,5 @@ An education version runs on a phone with your own API key. She points to open-s
 - Description cue: The sheer volume of data and complexity of modern scientific challenges necessitate tools that go beyond mere analysis. The vision of an "AI Co-scientist" – a true collaborative partner in...
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Models & Inference**.
+

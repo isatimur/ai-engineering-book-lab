@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: 2026-06-04T14:09:44+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Brandon Waselnuk of Unblocked argues that the gap for coding agents is context, not intelligence, and that access is not understanding. He rejects three myths (naive RAG over docs, enough MCPs, a 1M-token window) and describes a context engine that reasons across all systems of record, resolves conflicts between code and Slack, respects permissions, personalises via a social graph and returns a small token-optimised answer. In a same-prompt test, the MCP-only run compiled but would have broken the system; the engine-backed PR got one nitpick. Lessons: solve conflicts, and do not cache good answers."
@@ -60,6 +61,7 @@ A soon-to-be open-source tool builds a social and expert graph from a repo: who 
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -72,3 +74,5 @@ A soon-to-be open-source tool builds a social and expert graph from a repo: who 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
+

@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "MCP & Tooling"
+  - "Evals & Reliability"
 ingested_at: 2026-10-30T18:08:08+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Dan Adler, CEO of Sourcegraph, argues that the coding agents speeding up developers are also making the large, decades-old codebases that run the world decay: duplicated code, drifting standards, brittle cross-service dependencies and new vulnerabilities, at a volume no reviewer can absorb. Agents understand code by searching it, but you cannot grep what you cannot see, and the major agent builders are not building visibility for 50,000-repo estates. He calls code-graph visibility infrastructure and launches an agentic batch-changes product that rolls one prompt across thousands of repositories."
@@ -55,6 +56,7 @@ At a Japanese global shopping company with hundreds of microservices, a user pat
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[MCP & Tooling]]
+- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -67,3 +69,5 @@ At a Japanese global shopping company with hundreds of microservices, a user pat
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Evals & Reliability**.
+

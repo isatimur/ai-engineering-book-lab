@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/MRM7oA3JsFs.txt"
 themes:
   - "Org Design & Leadership"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T11:41:46+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Christopher Lovejoy, a medical doctor turned AI engineer at Anterior, argues that in vertical AI the system for turning domain insight into pipeline changes matters more than model power. Anterior's clinical AI, which reviews care requests for insurers covering about 50 million US lives, plateaued near 95% accuracy on models alone and reached about 99% with what he calls an adaptive domain intelligence engine: clinicians review outputs, label failures against a failure-mode ontology, and suggest domain knowledge; production failure sets become eval datasets; and a domain-expert PM sets priorities and performance targets for engineers."
@@ -55,6 +56,7 @@ Match the expert's level to the task: ideally a doctor in the relevant specialty
 
 ## Theme hooks
 - [[Org Design & Leadership]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] Hi everybody. So I'm Christopher Lovejoy. I'm a medical doctor turned AI engineer and I'm going to share a playbook for building a domain native LLM application. Uh so I spent about eight years um training and working as a medical doctor and then I spent the last seven years building AI systems that incorporate medical domain expertise. Um and I did that at a few different startups. So I worked at a a health tech startup called Serakare um doing tech enabled home care. Uh the startup recently hit 500 million ARR. Um worked at various other startups and I currently work at Anterior. And Anterior is a New York based clinicianled uh company. Here we provide clinical reasoning tools to...
@@ -65,3 +67,5 @@ Match the expert's level to the task: ideally a doctor in the relevant specialty
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Evals & Reliability**.
+

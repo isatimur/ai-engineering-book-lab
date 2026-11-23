@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/7MiFIhlkBoE.txt"
 themes:
   - "RAG & Retrieval"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:19:27+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Patrick Dougherty, former co-founder and CTO of a company that rebuilt its whole product around AI agents two years ago, shares the lessons. His thesis: build agents that reason, not agents that rely on what the model knows. He gives small retrieval tools (search tables, get table detail, profile a column) instead of dumping schemas, tunes the agent-computer interface (JSON for GPT-4o, XML for Claude), calls fine-tuning a waste of time, skips frameworks for production because of credential pass-through, and caps multi-agent teams at five to eight agents under one manager agent."
@@ -56,7 +55,6 @@ A year in, the team added multi-agent features. Use a manager agent that owns th
 
 ## Theme hooks
 - [[RAG & Retrieval]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > hi I'm Patrick I was the co-founder and CTO of Rosco and two years ago we decided to rip apart our entire product and rebuild it around AI agents these are some of the lessons we learned first of all let's start out with a definition since a lot of people use the term agent but don't necessarily mean the same thing that I do for my definition I came up with there's three specific criteria that it has to have to be considered an AI agent number one the agent needs to be able to take directions these can be human or AI provided but it should be one specific objective or overarching goal two it has to have access to call at least one tool and get a response back and three it should be able to...
@@ -67,7 +65,6 @@ A year in, the team added multi-agent features. Use a manager agent that owns th
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
-- Could support a chapter/section on **Org Design & Leadership**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

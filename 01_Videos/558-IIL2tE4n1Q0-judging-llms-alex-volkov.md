@@ -10,7 +10,7 @@ view_count: 2289
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/IIL2tE4n1Q0.txt"
 themes:
-  - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:23:48+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Alex Volkov, AI evangelist at Weights & Biases, opens an eval track as a mock courtroom where an LLM judge from 2034 tries AI engineers for common sins: shipping prompt changes with no tracing or logging, fine-tuning before iterating on prompts, ignoring the news, and relying only on programmatic assertions (the Air Canada chatbot case). His thesis is that production LLM apps need tracing plus three layers of evaluation (programmatic checks, human in the loop, and LLM-as-judge) with custom criteria. A staged prompt injection of the judge drives home that judges have biases and must be validated. He demos W&B Weave tracing and evals on an open-source app."
@@ -53,7 +53,7 @@ As an exercise, he lists criteria for judging a conference talk: memorable, educ
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] please be seated quarter is now in session order order in court my name is Maximus I'm an AGI functioning as a llm judge from the year 2034 that's a decade from now for those of you who are slower at math I've been able to back propagate myself through the latent SpaceTime Continuum to hack this human neural link to appear before you today June 27th aka the AI engineer Judgment Day don't worry folks AGI is not quite here right my name is Alex vov and I'm AI evangelist with weights and biases uh I work uh at w and biases and I'm here I'm here to give you commentary because you shouldn't try an llm judge without a bit of human in the loop right uh so remember this for later it's going...
@@ -63,4 +63,5 @@ As an exercise, he lists criteria for judging a conference talk: memorable, educ
 - Description cue: All rise! The honorable LLM Judge presiding. On the docket today, many cases of AI Engineers building with LLMs, without the ability to iterate, evaluate and improve their products.
 
 ## Book angles
-- Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

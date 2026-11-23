@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/y-UGrYbJsJk.txt"
 themes:
   - "Models & Inference"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:09:02+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Charles Frye of Modal argues that open-weight models now make self-hosting worthwhile, so AI engineers must know GPUs the way app developers know database indexes. His one-line summary: use the tensor cores. GPUs favour bandwidth over latency (Patterson's law: latency lags bandwidth), math bandwidth over memory bandwidth, and low-precision matrix-matrix multiplication above all. Decoding is memory-bound matrix-vector work, so extra samples and multi-token prediction come nearly free. He reproduced a result where a small 8B Llama model with about 100 samples and a test-based verifier matched a far larger GPT-4-class model."
@@ -49,7 +48,6 @@ He points to Modal's GPU glossary, a "CUDA docs for humans" that links the hardw
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [Music] So um what I wanted to talk about today was uh what every AI engineer needs to know about GPUs. the like so far in the last couple of years um most of the things that people have built as AI applications people who are AI engineers they've been building on top of model APIs so they use the open AI API the anthropic API the deepseek API and they build an application on top of that and that goes back to kind of like the initial diagram that Swix put out the like AI like rise of the AI engineer thing um and yeah probably just mirror would be great um and the um so that like having that API boundary is like is like pretty important right it's like you can't really build a complex system...
@@ -60,4 +58,4 @@ He points to Modal's GPU glossary, a "CUDA docs for humans" that links the hardw
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

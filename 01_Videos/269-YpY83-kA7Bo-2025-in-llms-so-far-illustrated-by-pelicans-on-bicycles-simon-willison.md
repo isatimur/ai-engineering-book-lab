@@ -10,7 +10,6 @@ view_count: 157841
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/YpY83-kA7Bo.txt"
 themes:
-  - "RAG & Retrieval"
   - "Models & Inference"
 ingested_at: "2026-04-24T12:11:25+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -53,7 +52,6 @@ Tool calling got very good in six months; he thinks MCP excitement is really exc
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[RAG & Retrieval]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -64,5 +62,5 @@ Tool calling got very good in six months; he thinks MCP excitement is really exc
 - Description cue: What's changed in the world of LLMs since the AIE World's Fair last year? A lot!
 
 ## Book angles
-- Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Models & Inference**.
+

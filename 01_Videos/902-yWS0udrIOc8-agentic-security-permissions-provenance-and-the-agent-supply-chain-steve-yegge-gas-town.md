@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "MCP & Tooling"
+  - "Security & Guardrails"
 ingested_at: 2026-07-26T22:21:40+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Steve Yegge, creator of Gas Town, says the real title of his talk is 'be scared'. If AI lets everyone ship code 10 times faster at the same vulnerability rate, the defect surface grows 10x, and new attacks such as slop squatting on hallucinated package names are already here. Security bugs, unlike others, have no half-life of urgency, so they must be surfaced to the LLM at generation time. Models do one thing well per pass, so security needs its own pass, first and last, using scanners and vetted image supply chains as tools the model will happily call."
@@ -55,6 +56,7 @@ AI is moving faster than society, and people judge the curve by looking three mo
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[MCP & Tooling]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -67,6 +69,7 @@ AI is moving faster than society, and people judge the curve by looking three mo
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

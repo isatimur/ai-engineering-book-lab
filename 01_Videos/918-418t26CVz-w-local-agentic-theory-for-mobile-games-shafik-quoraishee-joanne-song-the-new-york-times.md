@@ -10,7 +10,6 @@ view_count: 833
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/418t26CVz-w.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:05+00:00
@@ -56,7 +55,6 @@ Plans within a 16 ms frame, predictive models that preview a layout change befor
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -68,6 +66,6 @@ Plans within a 16 ms frame, predictive models that preview a layout change befor
 - Full cleaned transcript: [[99_Meta/transcripts/plain/418t26CVz-w.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

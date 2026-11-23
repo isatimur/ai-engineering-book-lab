@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/n6wHJDqlS1I.txt"
 themes:
   - "Security & Guardrails"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:14:42+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Allie Howe, a virtual CISO who works on AI security and compliance, defines trustworthy AI as AI security (how the world harms your app) plus AI safety (how your app harms the world), and argues that the builder, not the model vendor, carries the blame. She maps it to three stages: MLSecOps at build time (model provenance, notebook secrets, scanning for pickle serialization attacks), AI red teaming at test time, and runtime guardrails on inputs and outputs, which she calls the best first investment. She sketches guardrail points in the Fortnite Darth Vader voice pipeline, shows a custom guardrail blocking database edits, and shows how to prove controls to buyers in a SOC 2 trust center."
@@ -52,6 +53,7 @@ Security risk and business risk now align: an off-topic AI does not make money. 
 
 ## Theme hooks
 - [[Security & Guardrails]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > Hi, my name is Ally How. I am a VCSO for Growth Cyber. We are a business that helps other companies build trustworthy AI. We sit at the intersection of AI security and compliance. Today, we're going to be talking about a variety of different topics. Namely, what is trustworthy AI? What goes into building trustworthy AI? And why you should care about trustworthy AI. So, to start off, who even needs trustworthy AI? Why do we care about it? Well, it's been in the news a lot, whether you realize it or not. All the way back in 2023, we all saw that case with the Chevy Tahoe incident where a user was able to um be offered a Chevy Tahoe from a chatbot for a dollar. So, that chatbot did not operate...
@@ -62,6 +64,7 @@ Security risk and business risk now align: an off-topic AI does not make money. 
 
 ## Book angles
 - Could support a chapter/section on **Security & Guardrails**.
+- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

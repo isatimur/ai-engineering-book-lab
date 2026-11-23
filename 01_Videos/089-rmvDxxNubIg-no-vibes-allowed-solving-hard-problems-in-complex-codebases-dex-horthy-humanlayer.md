@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/rmvDxxNubIg.txt"
 themes:
   - "Coding Agents"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T11:22:27+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Dex Horthy of HumanLayer explains how his three-person team got 2 to 3x throughput from coding agents in brownfield codebases without slop: treat the context window as the only lever, stay out of the 'dumb zone' past roughly 40 percent of context, and work in a research, plan, implement loop built on frequent intentional compaction. Subagents exist to control context, not to play roles. Plans with real code snippets give mental alignment, so leaders review plans, not every line. Proof: a one-shot fix to a 300,000-line Rust codebase and 35,000 lines shipped to BAML in seven hours. His core rule: 'do not outsource the thinking'."
@@ -58,7 +57,6 @@ He calls "spec-driven development" broken by semantic diffusion, citing Martin F
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [music] Hi everybody. How y'all doing? >> It's exciting. I'm Dex. Uh, as they did in the great intro, I've been hacking on agents for a while. Um, our talk 12 factor agents at AI engineer in June was one of the top talks of all time. Uh, I think top eight or something. One of the best ones from from AI engineer in June. May or may not have said something about context engineering. Um, why am I here today? What am I here to talk about? Um, I want to talk about one of my favorite talks from AI engineer in June. And I know we all got the update from Eigor yesterday, but they wouldn't let me change my slides. So, this is going to be about what Eigor talked about in June. uh basically that they...
@@ -70,4 +68,4 @@ He calls "spec-driven development" broken by semantic diffusion, citing Martin F
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

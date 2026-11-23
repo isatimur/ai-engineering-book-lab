@@ -11,6 +11,8 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/tYCu_57jzL8.txt"
 themes:
   - "RAG & Retrieval"
+  - "Agent Architecture"
+  - "MCP & Tooling"
 ingested_at: "2026-04-24T12:15:32+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "William Lyon of Hypermode argues for a 'knowledge graph mullet': property graph in the front for modelling and querying, RDF triples in the back for scale and data interchange. He shows how the open-source Dgraph stores triples with unique node IDs and posting lists, queries them with the GraphQL-inspired DQL, and treats GraphRAG as multiple subgraph entry points (vector, geospatial, image search) followed by graph traversal over a news knowledge graph. He then demos the Dgraph MCP server with Claude desktop, the Modus agent framework built on WebAssembly, and prompt-built Hypermode agents that can eject to code."
@@ -53,6 +55,8 @@ The demo is a news knowledge graph built from New York Times articles: article, 
 
 ## Theme hooks
 - [[RAG & Retrieval]]
+- [[Agent Architecture]]
+- [[MCP & Tooling]]
 
 ## Transcript excerpt
 > Hey everyone, my name is Will and in this talk we're going to be learning all about the knowledge graph mullet and how it can trim graph rag complexity. Uh let's jump right in. So bear with me a little bit in this analogy. Uh, but if you're famili familiar with the mullet haircut, this is a classic business in the front, party in the back, uh, sort of short up front, long in the back, uh, hairstyle that, uh, was popular in the in the 80s and '90s. And if we think of like what are the benefits of the mullet haircut, it's really all about lowmaintenance, easy to work with, but versatile and adaptable in different environments. And if we extend that analogy to knowledge graphs, that gives us...
@@ -63,6 +67,8 @@ The demo is a news knowledge graph built from New York Times articles: article, 
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+- Could support a chapter/section on **Agent Architecture**.
+- Could support a chapter/section on **MCP & Tooling**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

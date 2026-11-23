@@ -10,7 +10,7 @@ view_count: 226819
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/yj-wSRJwrrc.txt"
 themes:
-  - "Org Design & Leadership"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:26:24+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Jason Liu argues that most production LLM apps are systems, not chatbots, that need structured output, and that Pydantic models are the right way to prompt for it. With his library instructor, a Pydantic class becomes the response model for OpenAI function calling, so the schema, docstrings and field descriptions are the prompt, outputs arrive typed, and validators (including LLM-backed ones) plus max retries drive automatic re-asking. He calls this structured prompting, closer to domain modeling than prompt engineering, and shows maybe-types as escape hatches, query decomposition for RAG, DAG query plans, knowledge graphs, and citation validation by quoted substrings."
@@ -56,7 +56,7 @@ He closes that this "goes into domain modeling more than it goes to prompt engin
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] hey guys so I didn't know I was going to be one of the keynote speakers so this is probably going to be the most reduced scope talk of today I'm talking about typ hints and in particular I'm talking about how pantic might be all you need to build with language models in particular I want to talk about structured prompting which is the idea that we can use object to Define what we want back out rather than kind of praying to the llm gods that the comma is in the right place and the bracket was closed so everyone here basically kind of knows or at least agrees that large language models are kind of eating software but what this really means in production is 90% of the applications you...
@@ -66,7 +66,7 @@ He closes that this "goes into domain modeling more than it goes to prompt engin
 - Description cue: Please return only json, do not add any other comments ONLY RETURN JSON OR I'LL TAKE A LIFE
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Evals & Reliability**.
 
 
 ## Related notes

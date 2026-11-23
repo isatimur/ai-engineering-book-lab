@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/qqXdLf3wy1E.txt"
 themes:
   - "Coding Agents"
-  - "MCP & Tooling"
 ingested_at: "2026-04-24T11:22:42+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Jesse Hu, a lifelong ML engineer who worked on robotics and reward modeling in self-driving and now runs Abundant, which builds agentic-coding datasets for foundation model labs, argues that agents are robots too. The model does 1 percent of the work; the other 99 percent is the body (tools, terminal, browser, VM) and the offline stack for simulation, evaluation and retraining. He maps robotics ideas onto agents: closed-loop feedback, turn-based time discretization, input and action spaces, stateless to stateful worlds, DAgger-style out-of-distribution drift, MDPs and log-grounded simulation, and warns that action models are much harder than predictive ones."
@@ -60,7 +59,6 @@ Modern systems improve by guess-and-check against a metric. Self-driving adds a 
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[MCP & Tooling]]
 
 ## Transcript excerpt
 > All right. So this is my talk called Agents of Robots 2. I've given different variants of this talk in person for different events, but this is the first one that I've done for coding agents. So to kick things off, um just a little bit about me. I've been a lifelong ML engineer and I've worked at places like YouTube and Google where I worked on the two tower embedding model as well as some early work on BERT and mixture of experts. I worked on ML and robotics at Whimo where a lot of my focus was on the data side as well as reward modeling and evaluation. And most recently, I've been working on a company called Abundant, where we work on a lot of the same concepts applied to data sets for...
@@ -71,4 +69,4 @@ Modern systems improve by guess-and-check against a metric. Self-driving adds a 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **MCP & Tooling**.
+

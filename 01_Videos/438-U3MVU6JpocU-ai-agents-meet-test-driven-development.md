@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/U3MVU6JpocU.txt"
 themes:
   - "Models & Inference"
   - "RAG & Retrieval"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:18:24+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Anita, who leads generative AI growth and education at Vellum, argues that the teams that ship reliable agentic workflows take a test-driven approach: experiment with prompts and models alongside domain experts, evaluate against hundreds of ground-truth examples or LLM judges, deploy with logging, fallbacks and versioning, then feed production edge cases back into evals. She proposes five levels of agentic behavior, from L0 (one LLM call plus retrieval) to L4 (an agent that invents its own tools), places most production systems at L1 and expects L2 planning agents to dominate innovation this year. She demos an SEO agent with a writer and an LLM-judge editor loop."
@@ -57,6 +58,7 @@ Built between L1 and L2: an SEO analyst searches Google and analyzes top article
 ## Theme hooks
 - [[Models & Inference]]
 - [[RAG & Retrieval]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > hi everybody my name is Anita and I'm currently leading gen growth and education here at vum and over the last few years we worked with hundreds of companies who have successfully deployed reliable AI Solutions in production from simple to more advanced agentic workflows one thing became very clear those companies who have adopted a test driven development approach were able to build reliable and stronger systems for production today I'm excited to share how you can apply that same approach to build your own effective agentic workflow that actually works but before we jump in let's take a step back and truly understand how we got here in the first place I'm so excited to get started let's...
@@ -68,6 +70,7 @@ Built between L1 and L2: an SEO analyst searches Google and analyzes top article
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **RAG & Retrieval**.
+- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

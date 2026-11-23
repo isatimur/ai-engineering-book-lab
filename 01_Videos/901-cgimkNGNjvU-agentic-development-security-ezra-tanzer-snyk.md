@@ -13,6 +13,8 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
+  - "Security & Guardrails"
 ingested_at: 2026-07-26T22:21:38+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Ezra Tanzer, a product director at Snyk, argues that securing agent-written code at inception is not enough: to let agents run autonomously, teams must secure what agents generate, what they use, and what they do. He traces Snyk's move from an MCP server plus rules to asynchronous hooks that scan on file writes and fix only newly introduced issues at session stop; cites an audit of nearly 4,000 skills where over one in eight had a critical issue; and shows steer-versus-ask behavior policies. Colleague Dan Arpino demos a local app that inventories agents and blocks secret reads."
@@ -55,6 +57,8 @@ Dan Arpino, a Snyk engineer, shows Snappy, a local Electron app that watches the
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -67,6 +71,8 @@ Dan Arpino, a Snyk engineer, shows Snappy, a local Electron app that watches the
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

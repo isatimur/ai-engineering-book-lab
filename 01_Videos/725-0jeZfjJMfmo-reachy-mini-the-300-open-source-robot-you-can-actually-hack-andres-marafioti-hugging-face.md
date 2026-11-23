@@ -10,9 +10,7 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/0jeZfjJMfmo.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-06-04T14:10:06+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Andres Marafioti, who leads multimodal research at Hugging Face, presents Reachy Mini, an open-source, non-humanoid robot sold unassembled at 300 or 450 USD so hackers, students and schools can shape how people talk to robots. Hugging Face has shipped 7,500 units; voice chat is the most used app. He details the serving stack: VAD, partial transcripts every 150 ms, an LLM with tool calls for motion and camera, and TTS, with LLM endpoints scaled apart from conversation nodes. He made an open TTS model usable for voice by adding streaming, a static KV cache and CUDA graphs, lifting real-time factor from 0.8 to 5.8."
@@ -52,9 +50,7 @@ A recent open TTS model matched its paper's quality but not its claimed latency.
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -64,6 +60,5 @@ A recent open TTS model matched its paper's quality but not its claimed latency.
 - Full cleaned transcript: [[99_Meta/transcripts/plain/0jeZfjJMfmo.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+

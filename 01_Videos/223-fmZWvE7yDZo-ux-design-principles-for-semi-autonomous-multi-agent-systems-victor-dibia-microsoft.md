@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/fmZWvE7yDZo.txt"
 themes:
   - "Coding Agents"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:08:48+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Victor Dibia (Microsoft Research, AutoGen and AutoGen Studio) builds Blender LLM, a from-scratch multi-agent system that turns natural language into 3D scenes in a live Blender instance, with a planner agent and a verifier agent that checks scene snapshots. His build order is goal, non-AI baseline, tools (about 50% of the time), eval test bed, then the agent. He gives four UX principles for semi-autonomous agents: capability discovery, observability and provenance, interruptibility with checkpoints and rollback, and cost-aware delegation to the user. He warns that only a small share of tasks truly benefit from multi-agent designs."
@@ -56,6 +57,7 @@ Only a small circle of tasks benefits. Check whether the task gains from plannin
 
 ## Theme hooks
 - [[Coding Agents]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > [Music] Hi everyone. U my name is Victor Dia. I'm a principal research software engineer at Microsoft Research and um my background is mostly around uh human AI experiences. So that's sort of where I'm interested in right now. And over the last few years, I've been sort of looking at scenarios where a human works in tandem with an AI agent to solve problems. And so one of the things that work done at Microsoft research is GitHub copilot. So how many of you have used GitHub copilot? Excellent. And so I think in my opinion is the first example of an AI model working at scale um in ID helping the developer solve a problem. Go ahead. You can switch that. And um beyond that um more recently I...
@@ -66,3 +68,5 @@ Only a small circle of tasks benefits. Check whether the task gains from plannin
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Agent Architecture**.
+

@@ -12,7 +12,6 @@ transcript_path: "99_Meta/transcripts/plain/u-rJwPPU3QA.txt"
 themes:
   - "Coding Agents"
   - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-06-04T14:10:19+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Joe Reeve, in the growth team at ElevenLabs, tells how he vibe coded a statue app in Cursor in two hours: photograph a statue, run deep research on it, design a matching voice from a text description, and start a voice-agent call within 30 seconds. The video went from 50,000 to 1.5 million impressions and drew museums and auction houses. His point is that the glue and the story around existing scalable APIs matter more than hard technical problems. The open Q&A covers voice UX: people are too polite to interrupt agents, voice needs a visual channel, and audio lacks skim listening."
@@ -55,7 +54,6 @@ He thinks vibe coding has not gone consumer yet and expects an "Instagram filter
 ## Theme hooks
 - [[Coding Agents]]
 - [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -67,7 +65,6 @@ He thinks vibe coding has not gone consumer yet and expects an "Instagram filter
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

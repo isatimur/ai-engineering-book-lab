@@ -10,8 +10,8 @@ view_count: 2258
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/u825uxb7LnA.txt"
 themes:
-  - "Org Design & Leadership"
   - "Coding Agents"
+  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:15:30+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Travis Frisinger, a technical director who blogs at AIBuddy.software, argues that LLMs are not intelligent but coherent, and that coherence is their superpower. He traces the feeling that GPT-4 'understood' him through live-streamed pair programming, an AI-built blog, and an AI-generated cat metal album, then mined his own ChatGPT history into a 21-page case study. From it he draws a frame, generate, judge, iterate loop, a theory of prompts as force vectors in latent space, hallucination as a sign of coherence, RAG as factual anchors, and a three-layer model of latent space, execution, and conversation."
@@ -57,8 +57,8 @@ He closes with LLMs as a "highdimensional mirror" that resonates with you throug
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Coding Agents]]
+- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > Hi, my name is Travis Fry Singinger. I'm the technical director of AI ETHLite and I'm here to talk to you about the coherency trap or why prompting feels like magic but isn't. This is a top-down talk focused on how I understand LLM. It's about explaining why LLM work so well when we know they're not intelligent and they lack intent or desire. It's very much a story about chasing a feeling across experiments, analysis, and finally formulating a theory. Let's step back to November 2022. Uh GPT3.5 was released. A lot of hype in the news about it. Uh and I promptly went to go check it out. I'm sure like a lot of us did. I was very quickly disappointed. While it had shown some advancements in...
@@ -68,8 +68,8 @@ He closes with LLMs as a "highdimensional mirror" that resonates with you throug
 - Description cue: Why AI engineers must rethink what intelligence means in the age of large language models.
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

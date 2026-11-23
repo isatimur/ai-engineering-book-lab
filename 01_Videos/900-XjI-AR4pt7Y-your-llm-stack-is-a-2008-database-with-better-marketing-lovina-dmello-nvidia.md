@@ -10,9 +10,9 @@ view_count: 882
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/XjI-AR4pt7Y.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "Security & Guardrails"
 ingested_at: 2026-07-26T22:21:36+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Lovina Dmello, a senior software developer on NVIDIA's deep learning infrastructure team, argues that almost every production ML security failure is a boring infrastructure mistake, not an exotic AI attack: Ray clusters left open with auth off by default, over-privileged accounts, flat networks, model weights in public buckets. Her three ideas: misconfiguration, not missing features, is the top failure mode; research defenses rarely survive production latency budgets; and ML must be secured like infrastructure. She offers a four-pillar defense map, overhead tiers and a maturity model mapped to the NIST AI RMF."
@@ -55,9 +55,9 @@ A maturity model mapped to the NIST AI risk management framework: level 1 (under
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -67,9 +67,9 @@ A maturity model mapped to the NIST AI risk management framework: level 1 (under
 - Full cleaned transcript: [[99_Meta/transcripts/plain/XjI-AR4pt7Y.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

@@ -10,9 +10,9 @@ view_count: 1000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/BqZrTdgBaPw.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Stephan Steinfurt of TNG shows a pipeline that pulls games from lichess every night, has a tool-using agent analyze them, and uploads narrated chess videos to YouTube with no human edit. His thesis: engines play chess well but cannot explain it, and LLMs explain well but play badly, so the agent gets tools (legal moves, a board to play and take back moves, an engine, checks-captures-threats, human-like move predictions, web search) and does the thinking itself. Conflicting tool views help. He reports about 1 in 20 videos with a weird error, 20 to 30 cents per video, and a channel at roughly 500k views and over 4,000 subscribers."
@@ -64,9 +64,9 @@ The input is real human games, so the pitch is a video of your own game to send 
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -76,6 +76,7 @@ The input is real human games, so the pitch is a video of your own game to send 
 - Full cleaned transcript: [[99_Meta/transcripts/plain/BqZrTdgBaPw.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
+

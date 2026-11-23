@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/i2vBaFzCEJw.txt"
 themes:
   - "Evals & Reliability"
   - "Models & Inference"
+  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:23:09+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Noah Shpak, who leads the AI data platform at Character AI, and Chang She, CEO and co-founder of the company behind the Lance format and a co-author of pandas, argue that you should care about what you train on and give it a good format. Shpak lays out a hierarchy of needs for post-training data: clean data and evals first, then dataset management, analytics and reading data, then LLM-driven selection, quality scoring, synthetics and human labeling, with SQL-defined dataset materialization. Chang She presents a 'new CAP theorem' for AI data (fast scans, fast random access, large blobs) and Lance as a columnar format with versioning, zero-copy schema evolution and vector search on S3."
@@ -61,6 +62,7 @@ The database built on it offers distributed vector search over billions of vecto
 ## Theme hooks
 - [[Evals & Reliability]]
 - [[Models & Inference]]
+- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [Music] we're excited to be here and we're excited to be talking to you about uh training data set development for llms so my name is Chun sha I'm the CEO and co-founder of Lance TV I've been creating data tools for data science machine learning for almost two decades uh starting with being one of the co-authors of P the pandas Library a long time ago uh spent a bunch of years in Big Data Systems and recommender systems and most recently I started this company um Lance CB which is the database for multimotor AI these days I spent about roughly equal time uh tweeting and and on GitHub and yeah hi everyone I'm Noah I currently lead the AI data platform at character and character gu is one of...
@@ -72,3 +74,5 @@ The database built on it offers distributed vector search over billions of vecto
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **RAG & Retrieval**.
+

@@ -10,9 +10,10 @@ view_count: 474
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/hMlLw1LeIK8.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "Models & Inference"
+  - "Voice & Realtime"
 ingested_at: 2026-07-26T22:21:14+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Chintan Agrawal and Daniel Wirjo, AWS solutions architects for APJ startups, argue that turn taking in voice agents is an audio-pipeline problem, not an LLM problem: the same model and prompt feel broken or natural depending on how fast the system notices the user. Humans switch turns in about 200 ms; the best measured cascaded pipeline is 755 ms. They compare three levels (Silero VAD silence timers, STT-provider turn detection, local VAD plus the open Smart Turn model), break down the latency budget, show why P95 matters more than P50, and demo all three in Pipecat."
@@ -56,9 +57,10 @@ False interruptions raise escalation to humans. Five systems scale and fail diff
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[Models & Inference]]
+- [[Voice & Realtime]]
 
 
 ## Transcript excerpt
@@ -68,9 +70,10 @@ False interruptions raise escalation to humans. Five systems scale and fail diff
 - Full cleaned transcript: [[99_Meta/transcripts/plain/hMlLw1LeIK8.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Voice & Realtime**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

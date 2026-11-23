@@ -11,7 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/prttz9_1XDc.txt"
 themes:
   - "Coding Agents"
-  - "Org Design & Leadership"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:22:25+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Gunjan Patel, a director of engineering presenting a personal side project, argues that boring work like unit tests, comments and security review should move from the fast IDE copilot to a slow, deliberate 'ghost pilot' in CI. On each pull request it improves variable names and comments, builds unit tests in stages (baseline behaviour, adversarial edge cases, cases personalized from a context.yaml and past bugs) and loops until they pass. Three simulated AI employees (red team engineer, Python developer, engineering manager) then debate security issues, and fixes are only proposed for human review, with reasoning, a policy citation and a rerun of the baseline tests."
@@ -50,7 +50,7 @@ A red team engineer gets security policies and code; a Python developer takes th
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Org Design & Leadership]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] my name is gjan Patel um I'm a director of engineering at PA alter networks uh like many of you in the last year and a half or two years I've ped to working on generative AI um The Talk today is about selfish evolving code I'm not here to sell you anything none of this is a product from our company uh this is um a side project that I've been exploring before we get started with this talk um I would like to dedicate this talk to my close friend nikil who passed away two weeks ago um it was unexpected uh but um he was very excited for me to come and do this talk uh and he was very enthusiastic about this conf itself um so I want dedicate this talk to him okay let's start with the...
@@ -61,4 +61,5 @@ A red team engineer gets security policies and code; a Python developer takes th
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Evals & Reliability**.
+

@@ -11,8 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/s0hFne6EeOI.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-10-30T18:30:27+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "In part 2 of his workshop, Kent C. Dodds teaches two frameworks that turn product judgment into technical decisions. Jobs to be done: ask why until a request ('add facial recognition') becomes a job statement ('help me get into the workshop quickly without missing the first 20 minutes'), then split it into functional, social and emotional needs that map to data, workflow and design choices. The Kano model: sort changes into basic, performance and delighter needs, plus indifferent and reverse features to cut. He warns against piping user requests straight into an agent, and asks engineers to refuse to build shady features."
@@ -61,8 +59,6 @@ The user is "directionally right" but not always right; Mom-Test other customers
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -73,5 +69,4 @@ The user is "directionally right" but not always right; Mom-Test other customers
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+

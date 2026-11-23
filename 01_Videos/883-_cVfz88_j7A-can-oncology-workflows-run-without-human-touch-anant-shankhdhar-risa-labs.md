@@ -10,7 +10,6 @@ view_count: 607
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/_cVfz88_j7A.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:21:09+00:00
@@ -53,7 +52,6 @@ His closing rules: deterministic checks first, agents only where rules cannot de
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -65,6 +63,6 @@ His closing rules: deterministic checks first, agents only where rules cannot de
 - Full cleaned transcript: [[99_Meta/transcripts/plain/_cVfz88_j7A.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

@@ -10,7 +10,6 @@ view_count: 1748
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/idDnpGqJd80.txt"
 themes:
-  - "Org Design & Leadership"
   - "Voice & Realtime"
 ingested_at: "2026-04-24T12:20:11+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -56,7 +55,6 @@ Floyd says up front that it is an AI. Redmond's bet: businesses will not mind ta
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Voice & Realtime]]
 
 ## Transcript excerpt
@@ -67,7 +65,6 @@ Floyd says up front that it is an AI. Redmond's bet: businesses will not mind ta
 - Description cue: In this workshop, we'll use a variety of technologies to build a better AI assistant. This workshop leverages a Convex vector database to establish a knowledge base, Google Cloud speech-to-text,...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Voice & Realtime**.
 
 ## Artifacts

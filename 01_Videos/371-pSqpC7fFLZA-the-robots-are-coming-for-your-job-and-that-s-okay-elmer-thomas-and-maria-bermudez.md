@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/pSqpC7fFLZA.txt"
 themes:
   - "Coding Agents"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:15:37+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Elmer Thomas (principal developer educator, Twilio) and Maria Bermudez (lead developer of the AI Docs buddy) show how a tiny docs team facing Jira floods from 100+ product teams uses AI to amplify, not replace, writers. Instead of one megabot they built six single-purpose agents behind a Next.js frontend: automated editor, alt text generator, jargon simplifier, SEO metadata, outline builder, and a Slack help bot. A custom GPT holds the style guide and an Airtable rubric, and output passes through prose linting, CI tests, a GitHub PR with codeowner review, and a human merge. Their playbook: one pain, one repeatable rule-based task, weekly user loops."
@@ -57,6 +58,7 @@ Hallucination: linting, CI tests, many human eyes. Bias: data set tests and prom
 
 ## Theme hooks
 - [[Coding Agents]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > Hello everyone. I'm Elmer Thomas, principal developer educator at Twilio. Welcome to the AI engineer world's fair. Our talk today is called the robots are coming for your job. And that's okay. Don't worry, the title is tongue and cheek. I'm here to show you why AI isn't something to fear. It's something we can embrace to work smarter. In the next few minutes, you'll see how our relatively tiny docs team uses AI agents to turbocharge workflows instead of trying to replace ourselves. We'll look at the pain points, the agents we built, and the guard rails that keep us accurate. I've been a developer and builder for decades. Trends come and go. AI is the latest big one. Like many of you, I...
@@ -67,3 +69,5 @@ Hallucination: linting, CI tests, many human eyes. Bias: data set tests and prom
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Evals & Reliability**.
+

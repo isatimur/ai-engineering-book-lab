@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/JfaLQqfXqPA.txt"
 themes:
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:14:16+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Ilan Bigio (OpenAI developer experience) runs a workshop on OpenAI's three fine-tuning methods. SFT is imitation and learns an input-to-output mapping; DPO learns the delta between a preferred and a non-preferred output; RFT learns to reason toward a grader's reward and works only with reasoning models. His rule: start with prompting and evals, and fine-tune only when evals show prompting has hit its limit. Stories include distilling GPT-4 function calling with 120 functions into GPT-3.5, a banking-intent SFT demo, DPO on jokes, a failed RFT email classifier with noisy labels, and an RFT chemistry task that rose from about 65% to near 80%."
@@ -56,6 +57,7 @@ He closes by live-coding a loop: run mini-batches, have o3 reason over failures,
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > Amazing. I think there's still some people coming in toward the back. Um, so I'll do like the quick maybe like uh administrative stuff in the meantime. This is going to be super interactive. Uh, there's also like mics around, so if any at any point you guys have questions, um, just raise your hand. Um, someone will go to you or I think we also have mics nearby. Um, cool. I think that's pretty much it. I'll let a few people finish trickling in and then we'll get started. Okay, I think that's long enough. Um, okay. So, welcome everyone to model maxing with OpenAI. Uh, we're going to be talking about RFT, SFTD, DPO. My name is Elan Behu. Uh I'm on the developer experience team at OpenAI and so...
@@ -66,3 +68,5 @@ He closes by live-coding a loop: run mini-batches, have o3 reason over failures,
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

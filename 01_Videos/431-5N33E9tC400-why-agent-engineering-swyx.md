@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/5N33E9tC400.txt"
 themes:
   - "Models & Inference"
   - "Org Design & Leadership"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:18:03+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "swyx, lead of the AI Engineer Summit, opens the event by explaining why it pivoted to agent engineering only: no RAG, open models or GPU tracks, no vendor pitches, and speakers who run agents in production. He argues AI engineering is emerging as its own discipline, sums up agent definitions crowdsourced by Simon Willison (goals, tools, control flow, long-running, delegated authority), and lists why agents work now: better reasoning and tools, model diversity, a 1,000x fall in GPT-4-level cost in 18 months, and RL fine-tuning. He names coding, support and deep research as use cases with fit, and links ChatGPT growth to reasoning models."
@@ -54,6 +55,7 @@ Coding agents and support agents have product-market fit, and he says deep resea
 ## Theme hooks
 - [[Models & Inference]]
 - [[Org Design & Leadership]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > [Music] hi good morning everyone love that love that um I'm going to get right into it one of the challenges we have with Summit is that we actually ask our speak speakers to do very short talks so I as the lead of summit I have to do even shorter talks so let's go uh you can see a lot of these there be a lot of show notes and homework you can see it on the live stream how is AI engineering doing uh it's pretty good we have an O'Reilly book that's pretty cool um uh chip is actually a good friend and she's actually speaking at uh she's giving our a keynote for the workshops session uh tomorrow which is pretty cool uh Garner hates us Garner thinks we've we've hit the peak so it's only...
@@ -65,3 +67,5 @@ Coding agents and support agents have product-market fit, and he says deep resea
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Agent Architecture**.
+

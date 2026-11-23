@@ -10,7 +10,6 @@ view_count: 833
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/YXEqC05WEI0.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:27+00:00
@@ -60,7 +59,6 @@ A clinical accuracy judge drops from 4.9 to 4.5. Before changing prompts, ask wh
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -72,7 +70,6 @@ A clinical accuracy judge drops from 4.9 to 4.5. Before changing prompts, ask wh
 - Full cleaned transcript: [[99_Meta/transcripts/plain/YXEqC05WEI0.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

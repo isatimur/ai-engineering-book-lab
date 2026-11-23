@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/wt8gzWR6auQ.txt"
 themes:
   - "Models & Inference"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:44:14+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Matthias Loibl of Polar Signals argues that GPU efficiency needs always-on, low-overhead sampled profiling in production, not one-off traces on a dev machine. Polar Signals uses Linux kernel instrumentation, so no app changes are needed, with under 1% CPU overhead at 100 samples per second. It reads NVML metrics (utilization per process, memory, clock, power, temperature, PCIe throughput) and links dips in GPU use to CPU flame charts, often showing the CPU busy loading data. A new GPU time profiling feature measures each CUDA kernel's duration on the GPU and attaches it to the calling CPU stack."
@@ -50,7 +49,6 @@ It runs as a plain binary, under Docker, or as a Kubernetes DaemonSet with a tok
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > [Music] Great. Uh, thank you for for coming. Um, I'm going to talk about maximizing GPU efficiency with continuous profiling for GPUs. Um, so what is profiling? Profiling is pretty much as old as programming. I think it was like firstly first first done in like the 1970s. I think some IBM folks were were trying to figure out what was happening on their computers back then. So it's been around basically forever in computer science. And uh what are we doing with profiling? We are profiling um basically uh anything that that we can to to inform our um view of the world. We want to see like the memory or CPU and GPU um time spent. We want to see the usage of the individual instructions and the...
@@ -61,4 +59,4 @@ It runs as a plain binary, under Docker, or as a Kubernetes DaemonSet with a tok
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Org Design & Leadership**.
+

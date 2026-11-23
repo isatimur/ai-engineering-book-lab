@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/zl4EdALzktU.txt"
 themes:
   - "Models & Inference"
   - "Evals & Reliability"
+  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:25:48+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Charles Frye, instructor of the Full Stack LLM Bootcamp, argues that inference is well engineered but the product around it is not, and maps the rest of the owl. LLM apps are language user interfaces. RAG is really information retrieval, so hybrid keyword, vector and metadata search in ordinary databases matter more than vector stores. Structured outputs (prompting, fine-tunes, retries, grammar-based sampling, JSON-schema function calls with fake functions) underpin robustness and agents. Engineering means ship to learn: watch p99 latency, build a data flywheel, and avoid open-ended evals via references, comparisons and decomposition."
@@ -55,6 +56,7 @@ Determining whether the model is right is itself hard. Spend time looking at you
 ## Theme hooks
 - [[Models & Inference]]
 - [[Evals & Reliability]]
+- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [Music] so the like a lot of effort has gone into thinking about the engineering of inference um and not so much effort had and not so much success has been had at the engine at engineering the rest of the like whole product around inference that actually you know delivers value um much like the uh beautiful mathematical solids here that does provide the the bones or the interior but not the whole thing um so let's talk about a couple of like architectures and patterns for uses of language models um and then talk about the like first attempts that like trying to make these things better over time uh with monitoring observability and evaluation so architectures and patterns um so the the...
@@ -66,3 +68,5 @@ Determining whether the model is right is itself hard. Spend time looking at you
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **RAG & Retrieval**.
+

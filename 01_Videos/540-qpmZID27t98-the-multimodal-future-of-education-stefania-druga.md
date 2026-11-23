@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/qpmZID27t98.txt"
 themes:
   - "Coding Agents"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:23:00+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Stefania Druga, who has studied children and AI since 2015 starting at MIT, argues that education needs a wake-up call and that multimodal AI should make kids tinkerers, not passive askers. Her open-source Scratch extension let children program voice assistants and train their own image and text models; a longitudinal school study found kids became more skeptical of AI smarts once they learned how it works. A multi-week family study shaped a coding co-pilot that suggests ideas but leaves the coding to the child. She closes with live Gemini API demos that answer drawings with questions, not answers, built in under 100 lines of open-source code."
@@ -55,6 +56,7 @@ She showed three fresh demos on the latest Gemini API. Each one reads a drawing 
 
 ## Theme hooks
 - [[Coding Agents]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] hi everyone I'm Steph I'm going to talk about the future of Education with multimodal AI uh we are here at AI engineering Summit and AI engineering starts very early so I'm curious how many of you have kids how many people in the room have kids okay wonderful uh how many of your kids uh have played with generative AI so far okay so um you won't be surprised to see the next slide basically 70% of generative AI users uh are from Generation Z this is a recent study from Salesforce so it starts very early and the reason I care about the future of Education with generative AI is because EDU education needs a wakeup call so we know that early L literacy rates um need to be improved around...
@@ -65,3 +67,5 @@ She showed three fresh demos on the latest Gemini API. Each one reads a drawing 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Evals & Reliability**.
+

@@ -11,8 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/Ve2bAarPA2I.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-10-31T00:09:43+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Nicholas Arcolano, head of AI and research at Jellyfish, uses telemetry from about 50,000 engineers at 447 companies to argue that if AI is not delivering, it is probably not the model. In his model of merged PRs per engineer per week, the tool (harness plus model) explains under 1%, skill use 3%, token consumption 9%, company and team 12%, and the individual about three quarters. A natural experiment where Cursor pushed users to Grok showed no output change. Heavy skill use gives a 30% bump, 10x tokens roughly doubles output, and companies show a 2x spread at fixed spend, which is the lever leaders control."
@@ -55,8 +53,6 @@ The tool takes up all the air on Twitter, but leaders cannot make models better 
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -67,5 +63,4 @@ The tool takes up all the air on Twitter, but leaders cannot make models better 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+

@@ -13,6 +13,7 @@ themes:
   - "Agent Architecture"
   - "Evals & Reliability"
   - "MCP & Tooling"
+  - "Coding Agents"
 ingested_at: 2026-06-09T21:18:35+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Rafael Levi (Bright Data) argues that you should never have an LLM parse thousands of pages; have the agent write, run and maintain a scraper instead. In a live Claude Code demo, Bright Data skills plus its MCP (66 tools, a web unlocker, about 500 pre-built domain APIs, remote browsers) let the agent bypass Walmart's bot check and build a scraper for a UK retailer it had never seen. Claimed savings: about a million tokens for three Walmart pages, 62% on the second site. A scheduled agent checks data every 30 minutes and fixes broken selectors, which he calls a self-healing pipeline. He limits use to public data, nothing behind login."
@@ -58,6 +59,7 @@ He found his current home with a listener that checked listings every half hour,
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 - [[MCP & Tooling]]
+- [[Coding Agents]]
 
 
 ## Transcript excerpt
@@ -70,6 +72,7 @@ He found his current home with a listener that checked listings every half hour,
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Coding Agents**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

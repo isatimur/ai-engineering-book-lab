@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/9tvJ_GYJA-o.txt"
 themes:
   - "Models & Inference"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:21:53+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Mark Moyou, an NVIDIA architect who works with retail clients, builds intuition for why LLM inference cost is driven by the KV cache. He walks from tokenization and prefill to one-token-at-a-time decoding, shows that key and value matrices are the model's memory, and gives a rule of thumb: parameters times two equals FP16 gigabytes, so a Llama 8B on a 20 GB L4 leaves 4 GB for tokens. He then covers what to measure (time to first token, token-to-token latency, total generation time, input and output length histograms across four query patterns), and NVIDIA tooling: TRT-LLM engines compiled per GPU, Triton, in-flight batching, FP8 and seasonal engines."
@@ -54,7 +53,6 @@ He proposes "seasonal engines" built for different daily traffic patterns, and e
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > [Music] it's very difficult to teach um extremely technical material in about 20 20 minutes initially I had planned for at least a 45 minute session so I left some reading material for you at the end and um all of the resources you could download slides and everything so feel free to take screenshots or not and so I work at Nvidia I'm a Architects I work primarily with retail clients and it's my job to essentially work with those clients understand sort of what their main challenges are this is data processing computer vision um across all of the different use cases and then now I'm focused on llm inference so my hope today is that um you get a better intuition of exactly what's happening...
@@ -65,4 +63,4 @@ He proposes "seasonal engines" built for different daily traffic patterns, and e
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Org Design & Leadership**.
+

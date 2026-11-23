@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "Security & Guardrails"
 ingested_at: 2026-07-26T22:21:35+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Moritz Johner of Form3 presents Patch Pilot, an agent that fixes CVEs in container images across thousands of repositories where Dependabot and Renovate fall short. His thesis: a useful coding agent with production credentials is a supply chain actor, so the blast radius of an agent is an architecture decision. A boring deterministic Go controller holds GitHub write and CI credentials; agents only edit files. He covers minimal-change prompts, agent retrospectives, prompt-injection evals, why a Docker socket breaks every sandbox, and his Firecracker microVM design with host-side network policy."
@@ -52,6 +53,7 @@ To verify work, the agent wants to build and run containers. Giving it the Docke
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -64,6 +66,7 @@ To verify work, the agent wants to build and run containers. Giving it the Docke
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

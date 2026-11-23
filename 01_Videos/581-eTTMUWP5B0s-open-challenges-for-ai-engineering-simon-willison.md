@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/eTTMUWP5B0s.txt"
 themes:
   - "Models & Inference"
   - "Evals & Reliability"
+  - "Security & Guardrails"
 ingested_at: "2026-04-24T12:24:51+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Simon Willison, creator of Datasette, stepping in at the last minute, says the GPT-4 barrier is broken: after 12 uncontested months, Gemini 1.5 Pro, Claude 3.5 Sonnet and open models such as Llama 3 70B now match it, and GPT-4 class models are free to consumers. He then names the open challenges: these tools are hard power-user tools (when does uploading a PDF to ChatGPT work?), an AI trust crisis over training on private data, prompt injection such as the markdown image exfiltration bug repeated by six teams, and slop, which he defines as AI content that is both unrequested and unreviewed."
@@ -52,6 +53,7 @@ Slop is AI content that is "both unrequested and unreviewed". Like "spam", the w
 ## Theme hooks
 - [[Models & Inference]]
 - [[Evals & Reliability]]
+- [[Security & Guardrails]]
 
 ## Transcript excerpt
 > [Music] this was supposed to be open AI I am replacing open AI at the last minute which is super fun so you can bet I used a lot of llm assistance to pull things together that I'm going to be showing you today um but let's dive straight in I want to talk about the gp4 barrier right so back in um March of last year so just over a year ago gp4 was released and was obviously the best available model we all got into it it was super fun and then for 12 and it turns out that wasn't actually our first first exposure to GPT 4 a month earlier it had made the front page of the New York Times when Microsoft's Bing which was secretly Runing on a preview of gp4 tried to break up a reporter's marriage...
@@ -64,6 +66,7 @@ Simon Willison is the creator of Datasette, an open source tool for exploring an
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 
 ## Related notes

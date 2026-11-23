@@ -10,7 +10,6 @@ view_count: 4200
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/WP3hjUXd918.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:05+00:00
@@ -52,7 +51,6 @@ They shipped DeepSeek V4 Flash with hybrid retrieval and full history, compactin
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -64,7 +62,6 @@ They shipped DeepSeek V4 Flash with hybrid retrieval and full history, compactin
 - Full cleaned transcript: [[99_Meta/transcripts/plain/WP3hjUXd918.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

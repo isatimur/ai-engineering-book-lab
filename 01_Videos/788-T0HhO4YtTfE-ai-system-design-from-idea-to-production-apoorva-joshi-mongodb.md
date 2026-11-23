@@ -10,9 +10,9 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/T0HhO4YtTfE.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "RAG & Retrieval"
 ingested_at: 2026-06-28T23:47:31+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Apoorva Joshi, a data scientist turned developer advocate at MongoDB, argues that in the vibe-coding era the spec is the hard part, not the code. She gives a four-phase framework (product requirements, system design, evaluation and monitoring, optimization) and applies it end to end to a hypothetical health insurance claims review system: a solution-agnostic business problem with baselines, SMART success metrics, a data strategy keyed to update frequency, a control-flow RAG design with human review for denials, guardrail and faithfulness metrics, reviewer override rate in production, and structured outputs for reliability."
@@ -55,9 +55,9 @@ Accuracy comes down to what enters the context window: prompt engineering, reran
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[RAG & Retrieval]]
 
 
 ## Transcript excerpt
@@ -67,6 +67,7 @@ Accuracy comes down to what enters the context window: prompt engineering, reran
 - Full cleaned transcript: [[99_Meta/transcripts/plain/T0HhO4YtTfE.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **RAG & Retrieval**.
+

@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/6Tpm4m1YxHk.txt"
 themes:
   - "Org Design & Leadership"
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T11:44:09+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Sahil Yadav and Hariharan Ganesan (Telemetrak) argue that mission-critical AI fails silently and expensively, and that teams need an MLOps extension they call XTOPS with four parts: traceability, plain-English explanations, adaptive guardrails and human-in-the-loop playbooks. They propose two metrics for CIOs, mean time to resolve explainable errors and trust-adjusted risk in dollars. A worker-safety case study shows GPS drift causing 70% false-positive alerts that workers learned to ignore; the fix took 8 months, and the resulting framework targets 7 days and saved about 500k dollars in fines per site per year."
@@ -55,6 +56,7 @@ Yadav previously worked at a worker-safety company (captioned as Guard Hat) that
 ## Theme hooks
 - [[Org Design & Leadership]]
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] Hey guys, thanks for being here. I'm Sahil. Uh I am here with Hari. We're we're presenting on AI. Um obviously we're talking about trust, but let me give you a little background about us. Um over the past 10 years we have deployed AI in various industries from from health um monitoring to industrial IoT to uh network automation in telecom networks and uh there's been one question that has been asked all along all this time can we trust AI some of these systems are used in mission critical applications but the question really is can we trust the inferences of the these AI systems because they are impacting businesses, they're impacting business decisions and the bottom line at the...
@@ -66,3 +68,5 @@ Yadav previously worked at a worker-safety company (captioned as Guard Hat) that
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

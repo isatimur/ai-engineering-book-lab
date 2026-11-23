@@ -13,6 +13,7 @@ themes:
   - "Agent Architecture"
   - "Evals & Reliability"
   - "Models & Inference"
+  - "Security & Guardrails"
 ingested_at: 2026-07-26T22:21:30+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "In a four-minute keynote slot, Randall Degges of Snyk, a lifelong developer and security professional, opens the first security track at the World's Fair. He names three obstacles to building with AI fearlessly at scale: AI-generated code has security bugs just as human code does, so security belongs in every development life cycle; deploying autonomous agents to production without fearing they go off the rails is the much harder problem; and access to models now hinges on geopolitics. His goal for the track is AI that is secure by default."
@@ -54,6 +55,7 @@ The biggest open problem, in his framing, is using AI "fearlessly" and having it
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 - [[Models & Inference]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -66,3 +68,5 @@ The biggest open problem, in his framing, is using AI "fearlessly" and having it
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Security & Guardrails**.
+

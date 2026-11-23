@@ -10,7 +10,6 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/ZdheJTfLu-s.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-05-07T23:19:17+00:00
@@ -58,7 +57,6 @@ The example failure: a user writes that a CFO cannot export invoices before a bo
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -70,7 +68,6 @@ The example failure: a user writes that a CFO cannot export invoices before a bo
 - Full cleaned transcript: [[99_Meta/transcripts/plain/ZdheJTfLu-s.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

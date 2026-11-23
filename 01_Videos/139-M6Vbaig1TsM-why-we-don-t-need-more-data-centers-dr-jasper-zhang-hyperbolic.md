@@ -10,7 +10,6 @@ view_count: 3539
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/M6Vbaig1TsM.txt"
 themes:
-  - "Org Design & Leadership"
   - "Models & Inference"
 ingested_at: "2026-04-24T11:25:13+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -49,7 +48,6 @@ He expects GPU marketplaces to become all-in-one platforms for online and offlin
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -60,5 +58,5 @@ He expects GPU marketplaces to become all-in-one platforms for online and offlin
 - Description cue: AI infrastructure today is caught in an endless cycle: build more data centers, deploy more GPUs, repeat.
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+

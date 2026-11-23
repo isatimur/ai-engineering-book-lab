@@ -10,9 +10,7 @@ view_count: 1600
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/JvKO40CFq-s.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-07-26T22:21:51+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Paola Estefania of Better Auth runs an interactive workshop on agent security. Her thesis: today we hand agents our own tokens, so they pretend to be us; instead we should give agents their own identity and scoped authority. She walks through an open draft protocol built on three ideas (discovery through a well-known configuration endpoint and a capability directory generated from OpenAPI specs, fine-grained capabilities instead of broad scopes, and a per-agent private key that makes the agent a principal) and demos it over MCP: device-flow approval, read-only defaults, approval for send, audit logs per agent and instant revocation."
@@ -54,9 +52,7 @@ Her closing line: stop saying "pretend to be me" and start saying "act for me wi
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -66,9 +62,7 @@ Her closing line: stop saying "pretend to be me" and start saying "act for me wi
 - Full cleaned transcript: [[99_Meta/transcripts/plain/JvKO40CFq-s.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

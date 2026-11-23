@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/Yyg_BoeB2LU.txt"
 themes:
   - "Models & Inference"
-  - "Coding Agents"
 ingested_at: "2026-04-24T12:22:35+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Shelby Heinecke, who leads an AI research team at Salesforce, argues that efficiency is what turns AI demos into products, because cloud, on-prem and on-device deployments all have limited resources. She names five orthogonal levers: efficient architectures, efficient pretraining, parameter-efficient fine-tuning, efficient inference and concise prompts. She then goes deep on two. Small models (13B or less) such as a 3.8B model beating a well-known 7B, a 350M MobileLLM and a fine-tuned Gemma 2B called Octopus can match bigger ones after fine-tuning. Post-training 4-bit quantization is nearly free, but 3-bit hurts, so evaluate quantized models, for example with her team's open-source MobileAIBench."
@@ -58,7 +57,6 @@ Her team released this open-source framework about a week before the talk to eva
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] I go to a lot of AI conferences I go to AI research conferences I go to you know more General Tech conferences and what I absolutely love about this conference is that it's really about the builders and it's really about the techniques that we need to get AI into the hands of our customers and so we're all here in the AI space we're all AI practitioners here and we know that AI is developing at an unprecedented Pace it's pretty hard to keep up with it right every week There's a new model a new capability a new feature so much to keep up with and when we see these new models capabilities and features they're often shown to us as a demo or prototype and as Builders and Engineers here...
@@ -69,4 +67,4 @@ Her team released this open-source framework about a week before the talk to eva
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Coding Agents**.
+

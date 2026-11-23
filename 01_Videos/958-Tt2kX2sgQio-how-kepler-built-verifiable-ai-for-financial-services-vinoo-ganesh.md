@@ -10,7 +10,6 @@ view_count: 1000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/Tt2kX2sgQio.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:37+00:00
@@ -53,7 +52,6 @@ Every number comes from a filing extraction, a deterministic calculation, or int
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -65,6 +63,6 @@ Every number comes from a filing extraction, a deterministic calculation, or int
 - Full cleaned transcript: [[99_Meta/transcripts/plain/Tt2kX2sgQio.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

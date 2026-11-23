@@ -11,8 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/bU5gDVyu_28.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-10-31T03:05:59+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Max Kanat-Alexander (Capital One) replaces the senior engineer's 'it depends' with a framework. All software success rests on understanding the system and executing on that understanding, and code quality exists only to serve those two through structure. AI is making disposable software, with low consequences, cost of replacement, dependencies and cost of maintenance, far more common. For it, code quality does not matter. For durable software it still does. Teams can make software more disposable (isolated environments, enforced independence, redundancy, limited scope) and make rigor cheap through standardization, inward flow tooling, easy testing and maximum strictness."
@@ -62,8 +60,6 @@ His answers: for disposable software, code quality does not matter; for durable 
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -74,5 +70,4 @@ His answers: for disposable software, code quality does not matter; for durable 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+

@@ -11,7 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/TJPInBjhE4Q.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -60,7 +59,6 @@ One logical change per PR, tests that assert intended behavior, one owner territ
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
 
 
@@ -72,5 +70,5 @@ One logical change per PR, tests that assert intended behavior, one owner territ
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

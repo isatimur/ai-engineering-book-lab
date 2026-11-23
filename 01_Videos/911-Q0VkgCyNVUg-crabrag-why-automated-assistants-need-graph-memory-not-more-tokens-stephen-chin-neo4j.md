@@ -10,9 +10,9 @@ view_count: 5400
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/Q0VkgCyNVUg.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "RAG & Retrieval"
 ingested_at: 2026-07-26T22:21:54+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Stephen Chin, who runs developer relations at Neo4j, argues that personal assistants such as OpenClaw, Hermes agent and Goose fail at scale because their memory is a pile of markdown files loaded into context (his agents load at least 100k tokens per round). Vector stores help but similarity is not the same as relationships, so multi-hop questions fail. His fix is hybrid graph memory: vector search finds seed nodes, then graph traversal pulls neighbours and ranks them. A live A/B demo over a digital twin of his home lab shows the vector agent dodging security questions while the graph agent names the exact exposed hosts and ports."
@@ -51,9 +51,9 @@ He closes with a co-authored definitive guide to graph RAG, now in early release
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[RAG & Retrieval]]
 
 
 ## Transcript excerpt
@@ -63,9 +63,9 @@ He closes with a co-authored definitive guide to graph RAG, now in early release
 - Full cleaned transcript: [[99_Meta/transcripts/plain/Q0VkgCyNVUg.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

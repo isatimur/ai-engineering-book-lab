@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/0uj9lMI-sIo.txt"
 themes:
   - "Models & Inference"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:16:18+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Joe Fioti, one of the creators of Luminal, argues for radical simplification through search. ML library complexity multiplies as ops times data types times devices, pushing PyTorch past 3 million lines; Luminal expresses every model as a static graph of 12 primitive ops in under 5,000 lines and emits CUDA directly. Hand-written compilers grow too complex as hardware gets simpler, so, like AlphaGo, Luminal applies 20 to 25 simple rewrite rules in e-graphs, profiles the equivalent kernels, and keeps the fastest. The search rediscovered flash attention on its own. He also covers buffer reuse, up-front kernel dispatch, training via an external autograd, and a serverless Luminal cloud."
@@ -54,7 +53,6 @@ An external autograd crate derives a backward graph, so all compilers and search
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > Hey everyone, I'm Joe. I'm one of the creators of Luminal. And so today in this talk, I'm going to explain what it is, how it works, and why we really think that it's the future of ML libraries. So the title of the talk is radical simplific simplification through search. And that really is the theme of Luminal. We are far simpler than most other ML libraries. And yet we are not taking a hit on performance or capability because we are using uh compilers and more specifically search. So deep learning fundamentally is very simple. It's simple linear algebra. And so basically all that really is is is you know scalers, vectors, matrices and tensors. And then a couple core ops, a couple core...
@@ -65,4 +63,4 @@ An external autograd crate derives a backward graph, so all compilers and search
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

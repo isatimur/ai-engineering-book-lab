@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/TswQeKftnaw.txt"
 themes:
   - "Coding Agents"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T11:44:06+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Tomas Reimers, co-founder of Graphite, explains how the team tuned Diamond, its AI code reviewer, by sorting review comments on two axes: what an LLM can catch, and what developers want to hear from an LLM. They had LLMs categorize 10,000 human review comments, then prompted the bot only for the overlap (bugs, accidentally committed code, performance, security, doc mismatches, style). Two live metrics keep it honest: a downvote rate under 4%, and the share of comments that lead to a code change in the same PR, which is about 50% for humans and reached 52% for the bot by March."
@@ -48,6 +49,7 @@ Graphite re-prompted the bot to stay in the useful quadrant, then built two metr
 
 ## Theme hooks
 - [[Coding Agents]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] Thank you all so much for coming to this talk. Um, thank you for being at this conference. Generally, my name is Tomas. I'm one of the co-founders of Graphite and I'm here to talk to you around AI power entomology. If you don't know, entomology is the study of bugs. It's something that we do. We is very near and dear to our heart and part of what our product does. So, Graphite, for those of you that don't know, builds a product called Diamond. Diamond is an AI powered code reviewer. You go ahead, you uh you connect it to your GitHub, and it goes ahead and finds bugs. The project started about a year ago. What we started to notice was that the amount of code being written by AI was...
@@ -58,3 +60,5 @@ Graphite re-prompted the bot to stay in the useful quadrant, then built two metr
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Evals & Reliability**.
+
