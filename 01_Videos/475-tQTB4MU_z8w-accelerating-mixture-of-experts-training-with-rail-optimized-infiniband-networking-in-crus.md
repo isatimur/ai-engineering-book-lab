@@ -10,7 +10,6 @@ view_count: 841
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/tQTB4MU_z8w.txt"
 themes:
-  - "Org Design & Leadership"
   - "Models & Inference"
 ingested_at: "2026-04-24T12:19:51+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -46,7 +45,6 @@ Synthetic collective tests showed about 50 percent improvement for small message
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -57,5 +55,5 @@ Synthetic collective tests showed about 50 percent improvement for small message
 - Description cue: State-of-the-art machine learning models are increasingly using techniques like mixture of experts that enable larger-scale models to be trained more efficiently by distributing layers of the...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+

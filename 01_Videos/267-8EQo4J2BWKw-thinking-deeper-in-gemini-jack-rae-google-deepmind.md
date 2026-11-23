@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/8EQo4J2BWKw.txt"
 themes:
   - "Models & Inference"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:11:20+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Jack Rae, tech lead of thinking in Gemini at Google DeepMind, argues that progress in AI comes from finding the key bottleneck and solving it: n-gram data limits, short context, the fixed RNN state, and now fixed test-time compute. Thinking adds a dynamic loop of thousands of tokens before the answer, trained by reinforcement learning, which produced emergent hypothesis testing and self-correction. It stacks with pre-training and post-training scaling, gives developers a continuous thinking-budget dial in Gemini 2.5, and powers Deep Think, which lifts USA Math Olympiad results from about the 50th to the 65th percentile."
@@ -54,7 +53,6 @@ Test-time compute scaling stacks with pre-training scaling (data and model size)
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [Music] [Applause] Hi everybody. Uh yeah, my name is Jack. I'm a researcher at Google and I'm the tech lead of thinking within Gemini and I'm going to give a brief deep dive into thinking from the research perspective uh within Gemini. So I'm going to kind of give this talk in three stages. One is to give a research motivation of why we actually are excited about thinking in terms of unblocking bottlenecks towards intelligence. And I'm going to give a kind of uh give a few examples of how often discovering the most precient bottlenecks uh in kind of our current uh models uh our most advanced systems how often if you can just identify the crucial kind of uh issues and shortcomings you often...
@@ -65,4 +63,4 @@ Test-time compute scaling stacks with pre-training scaling (data and model size)
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

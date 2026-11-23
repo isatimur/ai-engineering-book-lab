@@ -10,7 +10,7 @@ view_count: 818
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/z_Xh2MzqKDM.txt"
 themes:
-  - "Org Design & Leadership"
+  - "Models & Inference"
 ingested_at: "2026-04-24T12:20:32+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "SambaNova's director of solutions engineering and a principal AI engineer pitch a full-stack platform built on their own SN40L reconfigurable dataflow unit, whose three-tier memory (on-chip SRAM, HBM, up to 6 TB of DDR) holds up to five trillion parameters and lets one system host many models. Their thesis: a composition of experts behind one secure endpoint, with routing, scheduled fine-tuning and model-level access control, joins the ease of big closed models with the cost, privacy and ownership of small open ones. Hands-on, attendees call Llama 3 8B at about 1,000 tokens per second through LangChain and build a RAG Q&A app on Chroma."
@@ -55,7 +55,7 @@ Load a PDF (the SN40L arXiv paper), split it with a recursive splitter (chunk si
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
+- [[Models & Inference]]
 
 ## Transcript excerpt
 > [Music] all right well hi everyone thanks so much for joining us today um so today I get the great opportunity of introducing Sova and some of our capabilities around reaching over a th000 tokens per second using llama 3 today I'm going to spend a little bit of time getting you oriented around Sova some of the capabilities that we provide as an AI platform and also some of the underlying technologies that are providing the means of achieving some of the accomplishments like a th000 tokens per second before I start jumping into the content I want to take the opportunity to introduce some of my colleagues really quick so joining me today I have Petro Milan who is a principal AI engineer he's...
@@ -65,7 +65,7 @@ Load a PDF (the SN40L arXiv paper), split it with a recursive splitter (chunk si
 - Description cue: In this workshop, you will learn how to build LLM-based apps, such as a question-answering system with RAG, in LangChain using Llama-3 at 1,000 tokens per second on the SambaNova AI Platform....
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Models & Inference**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

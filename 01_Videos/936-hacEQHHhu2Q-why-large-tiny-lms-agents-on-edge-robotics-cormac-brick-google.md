@@ -10,7 +10,6 @@ view_count: 3200
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/hacEQHHhu2Q.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:33+00:00
@@ -54,7 +53,6 @@ An iOS voice-dictation app runs fully offline on two fine-tuned tiny Gemma model
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -66,7 +64,6 @@ An iOS voice-dictation app runs fully offline on two fine-tuned tiny Gemma model
 - Full cleaned transcript: [[99_Meta/transcripts/plain/hacEQHHhu2Q.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

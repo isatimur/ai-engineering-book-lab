@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/bCGbuyv8PMk.txt"
 themes:
   - "Models & Inference"
-  - "MCP & Tooling"
 ingested_at: "2026-04-24T11:23:22+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Rishabh Garg (Tesla Optimus) shows that many robot faults that look like a bad control policy are really software-system faults between the controller and the wire. Building a toy robot on a 1 Mbit/s CAN bus with a 2 ms policy loop, he finds that about 1 ms of bus transmission per cycle stretches the loop, fixes it by multithreading and pipelining TX, RX and policy, then diagnoses jitter with a cheap bus transceiver, candump timestamps and cycle-time plots. Root causes include late policies queuing two commands, RX threads feeding stale data, logging that freezes the loop for 30 ms or blacks out the bus, and priority inversion that starves the kernel."
@@ -52,7 +51,6 @@ The fixes are standard synchronization primitives (waits, condition variables, s
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[MCP & Tooling]]
 
 ## Transcript excerpt
 > [Music] Right. Good afternoon everyone and really excited to be here today. Really exciting stuff so far. So many models, so many new ideas and today I want to talk about what happens between the controller and the wire. Now we have seen so many policies that work that control robots but again we that we need to get that data to the actuators we need to get that data from sensors and feed the whole system and what happens if your carefully crafted policy does not work as expected like is this issue in the policy or is it in the software system. So today we look at a lot of instances where the issue will look like it's the policy but it's actually the software system and along the way we'll...
@@ -63,4 +61,4 @@ The fixes are standard synchronization primitives (waits, condition variables, s
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **MCP & Tooling**.
+

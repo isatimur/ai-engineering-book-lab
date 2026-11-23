@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/LksXn4CLC0g.txt"
 themes:
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:21:41+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Mark Hennings, serial entrepreneur and co-founder of Entrypoint, argues that fine-tuning is the next step after prompt engineering and should not be a developer-only job. A fine-tuned lighter model can match a prompted GPT-4: he cites about 196 ms vs 73 ms per token (three times faster), an 88.6% cost saving, prompts about 90% shorter, and natural resistance to prompt injection. Twenty examples are enough to start. He proposes a lifecycle of prompt prototype, fine-tune, evaluate, ship, then log production feedback back into the dataset, and demos a press-release writer trained on 20 examples in the Entrypoint UI."
@@ -51,6 +52,7 @@ He collected 20 strong press releases from articles about the best press release
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] hey my name is Mark Hennings I'm a Serial entrepreneur and I'm super excited to talk to you about fine-tuning large language models today without any code so let's begin for our purposes today fine-tuning is training a foundation model for a specialized task some examples of these specialized tasks are writing any kind of copy emails blog articles product descriptions it could be scrubbing fake emails from a list extracting or normalizing data translating paraphrasing rewriting qualifying a sales lead ranking priority of support issues detecting fraud or flagging inappropriate content these are very common tasks that businesses do every day and something they have in common is that...
@@ -61,3 +63,5 @@ He collected 20 strong press releases from articles about the best press release
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

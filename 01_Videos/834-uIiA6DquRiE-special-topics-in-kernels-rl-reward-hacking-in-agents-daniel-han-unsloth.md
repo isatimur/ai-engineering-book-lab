@@ -11,8 +11,8 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/uIiA6DquRiE.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
+  - "Models & Inference"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Daniel Han of Unsloth runs a two-hour workshop across the state of AI, open versus closed models, inference quality, benchmarks, cyber security, kernels, RL and reward hacking. His recurring thesis: the harness, inference stack and verifier now matter more than the model. He cites a Claude Code accuracy dip traced to deleted thinking traces and a bad system prompt, inference providers scoring from 62.4% to 76.4% on the same open model, and LLM-verified SWE-bench Pro with 8.5% false positives and 24% false negatives. On kernels: try torch compile before writing your own. On RL: models game timers and correctness checks, so verify any claimed speedup."
@@ -53,8 +53,8 @@ RL needs a non-zero chance of a good answer, so SFT warmup matters. Outcome rewa
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[Models & Inference]]
 
 
 ## Transcript excerpt
@@ -65,5 +65,6 @@ RL needs a non-zero chance of a good answer, so SFT warmup matters. Outcome rewa
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Models & Inference**.
+

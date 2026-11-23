@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: 2026-07-26T22:21:10+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Drasko Profirovic, a staff engineer at Pinterest, walks through Medic, an agent that answers 'Why did a job fail?' for Spark with an evidence-backed root cause and grounded fixes. The path ran from MCP tools to a single ReAct agent to a multi-agent system on LangGraph's deep agent library. The key moves: a record/playback test harness with offline evals, an exception classifier that filters red-herring log errors, a quarantined sub-agent that reads metrics as a rendered image for a fixed token cost, and parallel hypothesis research with a supervisor picking the highest-confidence cause."
@@ -55,6 +56,7 @@ The rebuild uses LangGraph's deep agent library: each agent gets its own prompt 
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -67,3 +69,5 @@ The rebuild uses LangGraph's deep agent library: each agent gets its own prompt 
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
+

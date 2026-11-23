@@ -10,7 +10,6 @@ view_count: 5156
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/71V3fTaUp2Q.txt"
 themes:
-  - "Org Design & Leadership"
   - "Evals & Reliability"
 ingested_at: "2026-04-24T10:50:54+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -58,7 +57,6 @@ GPT-5 mini played well; Liquid AI's LFM-2 struggled with format and valid moves.
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Evals & Reliability]]
 
 ## Transcript excerpt
@@ -69,7 +67,6 @@ GPT-5 mini played well; Liquid AI's LFM-2 struggled with format and valid moves.
 - Description cue: Reasoning models like DeepSeek R1 have demonstrated that learning from interaction is just as critical as learning from examples. To build these capabilities ourselves, we need to move beyond...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts

@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/OD13PiXw60o.txt"
 themes:
   - "Evals & Reliability"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:19:08+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Adam Terlson argues that finite state machines (statecharts) and the actor model give agentic systems everything LLMs lack: predictability, traceability, auditability, recoverability by event replay, and model-based testing. Combine them, and the machine supplies structure while the LLM supplies intelligence. He walks a ladder of agentic state machine patterns built with XState: tool use, human-in-the-loop approval, critic feedback, multi-agent collaboration, LLM orchestration where a planner emits events checked by transition guards, and agentic chartering, where the LLM writes the whole statechart."
@@ -54,7 +53,6 @@ He ends on emergence. If it comes, he says, it will be because building agentic 
 
 ## Theme hooks
 - [[Evals & Reliability]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > hi I'm Adam charlson and in this video I'll walk you through how finite State machines provide a structured reliable foundation for building applications including AI agents as AI becomes more autonomous the challenge isn't just intelligence or model performance it's also how to build systems with predictability observability and control espe important qualities when orchestrating large language models so the year is 2025 and the top AI Trends as listed by Gartner and probably everyone else too is a gentic AI we're autonomous AI plans and acts to achieve all our hopes and dreams but the number two Trend called out by Gardner is just as if not more important and that is the development of AI...
@@ -65,7 +63,6 @@ He ends on emergence. If it comes, he says, it will be because building agentic 
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
-- Could support a chapter/section on **Org Design & Leadership**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

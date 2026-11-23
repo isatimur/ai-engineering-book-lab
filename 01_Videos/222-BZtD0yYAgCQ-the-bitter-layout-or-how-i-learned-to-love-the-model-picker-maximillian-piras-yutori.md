@@ -10,7 +10,6 @@ view_count: 1727
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/BZtD0yYAgCQ.txt"
 themes:
-  - "Org Design & Leadership"
   - "Models & Inference"
 ingested_at: "2026-04-24T12:08:45+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -49,7 +48,6 @@ He points to a talk on the future of programming. Programmers who hand-coded bin
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -60,5 +58,5 @@ He points to a talk on the future of programming. Programmers who hand-coded bin
 - Description cue: Are conversational interfaces the future or, as many designers have suggested, a lazy solution that is bottlenecking AI-HCI? Despite well-documented usability issues, the design of many AI...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+

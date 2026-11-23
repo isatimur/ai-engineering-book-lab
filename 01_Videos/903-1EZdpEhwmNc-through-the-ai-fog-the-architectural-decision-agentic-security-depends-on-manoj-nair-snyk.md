@@ -13,6 +13,8 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
+  - "Security & Guardrails"
 ingested_at: 2026-07-26T22:21:41+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Manoj Nair, Snyk's Chief Innovation Officer and CTO, opens the first World's Fair security track with one architectural claim: the generator and the validator cannot be the same. Using data from Snyk's roughly 5,000 enterprise customers, he shows backlogs up 108% quarter over quarter, poisoned skills and MCP servers, agents that squirrel away copies of PII, and three agentic components per model found in repos. A new benchmark found the latest models catch the same vulnerability in only 50% of five runs, so LLMs must pair with deterministic checks. Ezra Tanzer demos package-health and skill-risk checks."
@@ -57,6 +59,8 @@ Ezra Tanzer has Claude build a QR-code CLI using a package health tool: both can
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -69,6 +73,8 @@ Ezra Tanzer has Claude build a QR-code CLI using a package health tool: both can
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

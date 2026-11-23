@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/eDr0m6R7fI4.txt"
 themes:
   - "Models & Inference"
+  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:22:51+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "swyx, speaking remotely to the World's Fair on the first anniversary of his Rise of the AI Engineer document, argues that the borders we draw around AI engineering (the API line, three engineer subtypes, conference tracks he admits he made up) are arbitrary, while AI itself disrespects borders of language, modality and copyright. He asks for laws of AI engineering instead: constants such as humans speaking at 80 words per minute but reading at 200, contingent facts such as 30 tokens per second on-phone inference, and trends such as better context use and a 99.55% drop in the cost of GPT-3-level intelligence. AI engineers are utility maximizers who should disagree more."
@@ -50,6 +51,7 @@ One axis of safety vs acceleration cannot place AI engineering. He adds a second
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > [Music] I've been thinking a lot about borders recently for no particular reason uh and borders are a very innately human thing if I don't have the right piece of paper I cannot cross this Line in the Sand like it's a very very real problem that I face and many many people face every single day and borders are just one kind of constraints that humans just make up and I think that's very interesting that we respect borderers so much but AI does not AI is a border disrespect it is very very easily multilingual so if you trained an LM on mostly mostly English Text corpus it's going to learn other languages just as a side effect it's going to be very natively multimodal because it can you can...
@@ -60,3 +62,5 @@ One axis of safety vs acceleration cannot place AI engineering. He adds a second
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Org Design & Leadership**.
+

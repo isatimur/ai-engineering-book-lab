@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/aNmfvN6S_n4.txt"
 themes:
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:23:11+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Remi Louf, co-author and co-maintainer of the open-source Outlines library and CEO of the company behind it, argues that LLMs cannot be trusted to return consistent outputs, and that structured generation fixes this by masking any token that would break a regex, JSON schema or grammar. He claims it has near-zero inference overhead, makes generation faster by skipping known tokens, lifts valid JSON from a small share to 99.9% on a 7B open model, makes one-shot prompts about as accurate as eight-shot on GSM8K, and takes a small open model to 96.5% on a function-calling benchmark, above GPT-4's 93.5%."
@@ -51,6 +52,7 @@ They have generalised from regular expressions to context-free grammars, which c
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] so yeah my name is Remy I'm the co-author and co-maintainer of the open source Library outlines which some of you might know and I'm also the CEO and co-founder of doxt or do text uh whichever you prefer uh we're more traditional machine learning people and the motivation for work is the very simple observation that large language models are fundamentally flawed I'll give you a very simple example um you're trying to extract flight information from a bunch of emails uh of course you want them to be you know a j Json object um you know with origin destination Etc so you go to open AI you prompt the model to death you threaten it uh you use function calling and what you get sometimes...
@@ -61,3 +63,5 @@ They have generalised from regular expressions to context-free grammars, which c
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/C1CXwRYbwuQ.txt"
 themes:
   - "Models & Inference"
+  - "Coding Agents"
 ingested_at: "2026-04-24T12:23:22+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Dmytro (Dima) Dzhulgakov, co-founder of Fireworks AI and a long-time core maintainer of a major open-source deep learning framework at Meta, argues that small, tuned open models beat big general models on latency, cost and domain fit: a fine-tuned Llama 3 can match function-calling quality at 10x the speed. He explains Fireworks' custom serving stack, tuning for cost under a latency limit, serving thousands of adapter fine-tunes on one GPU at per-token prices, and the shift from model-as-product to compound AI systems built around a function-calling model, shown with a FireFunction demo. He cites more than 150 billion tokens served per day."
@@ -52,6 +53,7 @@ Serverless per-token pricing, on-demand dedicated hardware, and enterprise contr
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] hello everyone so my name is Dima um as mentioned uh unfortunately my co-founder Lino was on the schedule couldn't make it today because of some personal emergency so you got me and as you saw we don't have yet AI to figure out video projection but we have a for a lot of other things uh so today I'm going to talk about fireworks Ai and generally I'm going to continue this te which kin started about open models uh and how we uh basically focus on productionize but first uh as an introduction uh what's our background uh so the founding team of fireworks comes from PCH leads at meta and some veterans from Google AI so we combined have like probably decade of experience in...
@@ -62,3 +64,5 @@ Serverless per-token pricing, on-demand dedicated hardware, and enterprise contr
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Coding Agents**.
+

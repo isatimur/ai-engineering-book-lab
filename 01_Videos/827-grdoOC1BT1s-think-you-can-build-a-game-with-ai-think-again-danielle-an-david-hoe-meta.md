@@ -12,7 +12,6 @@ transcript_path: "99_Meta/transcripts/plain/grdoOC1BT1s.txt"
 themes:
   - "Coding Agents"
   - "Agent Architecture"
-  - "MCP & Tooling"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Danielle An and David Hoe, who have led AI-driven game creation work at Meta for over a year, argue that AI lets anyone prompt a working game over a weekend, but those games all look alike. What separates a good game is still aesthetics, cohesion, playtesting and taste. They show key art as an anchor for consistent style, a multiplayer game with unscripted LLM-driven NPCs built in a couple of days, and a shift from linear waterfall game production to parallel iteration in hours or days. Open problems: non-determinism across the whole agentic stack, token economics, and content safety for runtime LLMs."
@@ -54,7 +53,6 @@ At Meta's scale, agentic systems sit everywhere: user prompting, runtime NPC dec
 ## Theme hooks
 - [[Coding Agents]]
 - [[Agent Architecture]]
-- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -66,4 +64,4 @@ At Meta's scale, agentic systems sit everywhere: user prompting, runtime NPC dec
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **MCP & Tooling**.
+

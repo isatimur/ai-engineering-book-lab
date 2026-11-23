@@ -11,6 +11,8 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/HS5a8VIKsvA.txt"
 themes:
   - "Models & Inference"
+  - "Agent Architecture"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:18:07+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Grace Isford, partner at Lux Capital, argues that 2025 is a perfect storm for AI agents (reasoning models, test-time compute, cheaper inference, a closing open-source gap, huge data center spend) but that the lightning has not struck. Her failed flight booking with OpenAI Operator shows four cumulative errors: decision, implementation, heuristic and taste, plus a perfection paradox. A 95% accurate agent falls far behind a 99% one over 50 steps. Her five mitigations: data curation with a data flywheel, personal evals for non-verifiable tasks, scaffolding that stops cascading failures, UX as the moat, and building beyond the chatbot with many modalities."
@@ -55,6 +57,8 @@ Compounding makes this concrete: over 50 consecutive steps a 99% agent drops to 
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Agent Architecture]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] thank you so much Peter to swix to all of the AI engineer Summit for having me I am so thrilled to be here I'm Grace again a partner at Lux capital and it's a pleasure to really kick off this conference and tackle a pretty tough but exciting task the state of the AI Frontier and how we navigate that in 2025 so a little bit about Lux as we get started here right Lux likes to say we believe before others understand we invest in Frontier Tech ideas that seem crazy right uh and we really like to bring sci-fi to SCI fact in fact we've been lucky to partner at the earliest stages with some top AI companies hugging face I'm sure several folks know it the GitHub for machine learning...
@@ -65,3 +69,6 @@ Compounding makes this concrete: over 50 consecutive steps a 99% agent drops to 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Agent Architecture**.
+- Could support a chapter/section on **Evals & Reliability**.
+

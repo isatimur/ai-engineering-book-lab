@@ -10,8 +10,8 @@ view_count: 584
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/l614N5W60ls.txt"
 themes:
-  - "Org Design & Leadership"
   - "Models & Inference"
+  - "MCP & Tooling"
 ingested_at: "2026-04-24T12:12:59+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Emma Ning, a product manager in Microsoft's AI framework team, presents Foundry Local, a Windows and macOS stack for cross-platform apps powered by local AI. She gives four reasons for local AI (offline use, privacy, cost at scale, real-time latency) and shows the layers: ONNX Runtime for hardware acceleration, a management service that pulls models from Azure AI Foundry, a CLI, and Python and JavaScript SDKs. Live demos compare two small models, build a document summarizer that runs unchanged on Windows and Mac, and run a private-preview local agent that combines one model with MCP servers to OCR a receipt."
@@ -54,8 +54,8 @@ Ning's best-practice note: local models are generally not as capable as cloud mo
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[Models & Inference]]
+- [[MCP & Tooling]]
 
 ## Transcript excerpt
 > [Music] Hello everybody. Uh my name is Ima. I'm a program man uh product manager at Microsoft. It's a pleasure to talk to you today about Foundry local which enables developers to easily build up crossplatform applications powered by local AI. So let's get started. Uh the first question is if the cloud AI is so powerful why do we need local AI? So here are four key reasons based on our conversations and observations with our customers. So first of all, how does cloud AI work in environments with low network bandwidth or even offline access? Many of you have experienced the bad internet during this conference, right? And a common sentence we have heard from many speakers with live demo is oh...
@@ -66,5 +66,6 @@ Ning's best-practice note: local models are generally not as capable as cloud mo
 Emma Ning is a Principal PM in the Microsoft AI Framework team, focusing on AI model operationalization and acceleration with ONNX Runtime/Olive for open and interoperable...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **MCP & Tooling**.
+

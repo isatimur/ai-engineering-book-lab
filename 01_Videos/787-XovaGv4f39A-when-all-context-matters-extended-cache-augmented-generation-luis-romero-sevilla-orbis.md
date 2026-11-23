@@ -13,6 +13,7 @@ themes:
   - "Evals & Reliability"
   - "RAG & Retrieval"
   - "Models & Inference"
+  - "Agent Architecture"
 ingested_at: 2026-06-28T23:47:29+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Luis Romero-Sevilla, VP of AI at Orbis, walks through a retrieval problem where every document in a fast-changing collection matters to the answer. Simple RAG drops relevant documents at the similarity threshold, and GraphRAG costs too much to rebuild each time the data is replaced. His answer is an extended form of cache augmented generation (CAG): split the documents into several cached context buckets that load in parallel, and let a smarter supervisor model interrogate each bucket, ask follow-ups, and synthesize the answer. Documents go into buckets in no particular order, because a supervisor told about domains tends to skip ones that look irrelevant."
@@ -61,6 +62,7 @@ Because all caches load in parallel, he says knowledge building is significantly
 - [[Evals & Reliability]]
 - [[RAG & Retrieval]]
 - [[Models & Inference]]
+- [[Agent Architecture]]
 
 
 ## Transcript excerpt
@@ -73,3 +75,5 @@ Because all caches load in parallel, he says knowledge building is significantly
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Agent Architecture**.
+

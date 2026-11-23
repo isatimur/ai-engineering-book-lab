@@ -10,7 +10,6 @@ view_count: 5626
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/m6MF1OR_9kM.txt"
 themes:
-  - "RAG & Retrieval"
   - "Evals & Reliability"
 ingested_at: "2026-04-24T11:23:20+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -56,7 +55,6 @@ The GLM 4.5 vision model keeps native image resolution and aspect ratio, adds ti
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[RAG & Retrieval]]
 - [[Evals & Reliability]]
 
 ## Transcript excerpt
@@ -67,7 +65,6 @@ The GLM 4.5 vision model keeps native image resolution and aspect ratio, adds ti
 - Description cue: GLM 4.6 is the only open-source model currently tied for #1 on the LMSYS Chatbot Arena, standing shoulder-to-shoulder with GPT-4o and Claude 3.5 Sonnet. In this talk, Zhang Yuxuan from zAI...
 
 ## Book angles
-- Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts

@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/Djv8Sp11UjI.txt"
 themes:
   - "Evals & Reliability"
   - "Models & Inference"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:16:08+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Jerry Wu and Wyatt Marshall, founders of Halluminate, report results from WebBench, their benchmark of over 5,000 read and write tasks (about half open-sourced) on close to 500 websites. Leading browser agents reach about 80% on read tasks, close to a human-supervised OpenAI Operator baseline, but drop 50% or more on write tasks, which have longer trajectories, harder forms, login and credential problems, and stricter anti-bot checks. Many failures come from browser infrastructure, not the agent, and agents are very slow. Their advice: pick read versus write use cases deliberately, test several infra providers, and mix agents with deterministic Playwright flows."
@@ -60,6 +61,7 @@ An agent stuck on GitHub chatted with GitHub's own AI assistant to unblock itsel
 ## Theme hooks
 - [[Evals & Reliability]]
 - [[Models & Inference]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > Hi guys. Um I'm Jerry. This is Wyatt. Uh welcome to our talk. We're talking about the current state of browser agents. Wyatt and I are founders of illuminate. Uh we build realistic environments to help train computer and browser use AI, but that's not as important for today's talk. Today we are going to talk about three topics which is first uh we're we're going to discuss what are browser agents. Second, we're going to talk about how good they are currently. And these finders are going to be powered by a benchmark that we actually just published last week. And lastly, we're going to talk about what it means for you, the listener and AI engineer trying to build with browser agents today....
@@ -71,6 +73,7 @@ An agent stuck on GitHub chatted with GitHub's own AI assistant to unblock itsel
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Agent Architecture**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

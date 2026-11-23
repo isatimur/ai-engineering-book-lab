@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/uFPAtKIN-FQ.txt"
 themes:
   - "MCP & Tooling"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:14:45+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Sarmad Qadri, CEO of Last Mile AI and a former Language Server Protocol engineer at Microsoft, argues that MCP does for LLMs what LSP did for IDEs, and that MCP servers can be agents, not just thin wrappers over REST APIs. His open-source mcp-agent library implements the patterns from Anthropic's Building Effective Agents post (augmented LLM, evaluator-optimizer, fan-out, orchestrator). It treats agents as microservices exposed as MCP servers and as async workflows on Temporal that can pause, resume, retry and wait for humans. A demo grades a short story with an orchestrator and five sub-agents in about 100 lines, then runs the same agent from Claude Desktop."
@@ -50,6 +51,7 @@ The task: load a student's short story from a markdown file, grade it on proofre
 
 ## Theme hooks
 - [[MCP & Tooling]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > My name is Sarmad and today I want to talk about building effective agents with model context protocol or MCP. So a lot has changed in the last year. Um especially as far as agent development is concerned. I think 2025 is the year of agents and uh things like MCP make agent design simpler and more robust than ever before. So I want to talk about what the agent tech stack looks like in 2025. The second thing is a lot of uh MCP servers today are just you know onetoone mappings of existing REST API uh uh services to MCP tools. Uh but MCP servers can be a lot more than that. They could even be agents and so I want to show how uh agents can be represented as MCP servers. And the last thing is uh...
@@ -60,6 +62,7 @@ The task: load a student's short story from a markdown file, grade it on proofre
 
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Agent Architecture**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

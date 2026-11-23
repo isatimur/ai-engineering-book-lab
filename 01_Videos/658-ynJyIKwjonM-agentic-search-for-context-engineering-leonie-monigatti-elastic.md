@@ -10,9 +10,9 @@ view_count: 26000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/ynJyIKwjonM.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "RAG & Retrieval"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Leonie Monigatti of Elastic argues that context engineering is about 80% agentic search: the search tools decide what moves from context sources into the context window. Her LangChain workshop on conference session data shows a top-3 semantic search tool failing on a niche acronym, a general ESQL query tool failing on a SQL-style wildcard until an agent skill teaches the syntax, and a shell tool where grep fakes semantic search with long synonym lists until a semantic grep CLI is added. Her advice: combine low-floor specialized tools with high-ceiling general ones, start general, log behavior, then specialize."
@@ -52,9 +52,9 @@ There is no silver bullet. Pair specialized tools with a "low floor" (simple par
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[RAG & Retrieval]]
 
 
 ## Transcript excerpt
@@ -64,9 +64,9 @@ There is no silver bullet. Pair specialized tools with a "low floor" (simple par
 - Full cleaned transcript: [[99_Meta/transcripts/plain/ynJyIKwjonM.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

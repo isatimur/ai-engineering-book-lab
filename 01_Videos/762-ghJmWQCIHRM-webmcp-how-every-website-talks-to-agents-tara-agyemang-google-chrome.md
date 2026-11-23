@@ -10,9 +10,9 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/ghJmWQCIHRM.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: 2026-06-20T09:01:48+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Tara Agyemang, developer relations engineer on Google Chrome, introduces WebMCP, a proposed web standard that lets a site expose its capabilities as structured tools for in-browser AI agents, instead of making agents parse the DOM, read the accessibility tree, screenshot and click by coordinates. It has a declarative API (attributes on HTML forms, with an auto-generated JSON schema) and an imperative registerTool API for multi-step flows. Demos: a maze game playable only through tools, and a concert site where Gemini buys two VIP tickets in three tool calls. Her advice: fix accessibility and performance first. WebMCP is an early preview behind a flag in Chrome 146 and up."
@@ -56,9 +56,9 @@ WebMCP is an early, experimental preview whose API has changed week to week. It 
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -68,9 +68,9 @@ WebMCP is an early, experimental preview whose API has changed week to week. It 
 - Full cleaned transcript: [[99_Meta/transcripts/plain/ghJmWQCIHRM.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

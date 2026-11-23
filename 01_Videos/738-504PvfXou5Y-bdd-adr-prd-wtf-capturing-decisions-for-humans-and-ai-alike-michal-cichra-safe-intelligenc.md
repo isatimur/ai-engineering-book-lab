@@ -12,7 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/504PvfXou5Y.txt"
 themes:
   - "Coding Agents"
   - "Agent Architecture"
-  - "MCP & Tooling"
+  - "Evals & Reliability"
 ingested_at: 2026-06-04T14:10:32+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Michal Cichra of Safe Intelligence argues that humans and LLMs share one weakness, limited context, so teams must write down why things are the way they are. Architecture decision records state a rule, its reason and how it is enforced; light PRDs capture the why, the problem, the goal and the user journey; BDD with Cucumber gives readable, executable specs that close the loop spec-driven development leaves open; a design system keeps agent-built UIs consistent. A loop of git hooks, CI, linters and focused skills enforces it all, rejects bad commits with links to the reasons, and lets agents survive 20-50 context compactions per session."
@@ -57,7 +57,7 @@ It is context heavy; research can use half the context. But he no longer fears c
 ## Theme hooks
 - [[Coding Agents]]
 - [[Agent Architecture]]
-- [[MCP & Tooling]]
+- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -69,7 +69,7 @@ It is context heavy; research can use half the context. But he no longer fears c
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

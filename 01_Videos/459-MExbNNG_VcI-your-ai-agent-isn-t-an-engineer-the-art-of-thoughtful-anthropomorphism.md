@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/MExbNNG_VcI.txt"
 themes:
   - "Org Design & Leadership"
+  - "Coding Agents"
 ingested_at: "2026-04-24T12:19:13+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "A staff developer advocate (handle blackgirlbytes) at the company behind the codename Goose agent, formerly on GitHub Copilot, argues that the 'will AI replace engineers' fear is self-inflicted: the industry marketed agents as human engineers to sell cost cuts. That anthropomorphism alienates developers, who are AI's power users (76% use or plan to use AI, per the 2024 Stack Overflow survey), sets unrealistic expectations, and hides the real value of parallel work. Her eight-part framework for thoughtful anthropomorphism covers naming, augmentation over replacement, transparency, developer control and live demos."
@@ -56,6 +57,7 @@ Giving human traits to non-human things makes tools familiar: e-book page-turn s
 
 ## Theme hooks
 - [[Org Design & Leadership]]
+- [[Coding Agents]]
 
 ## Transcript excerpt
 > hey everyone today I'm going to talk to you about why you should stop referring to your AI agent as a software engineer and the Art of thoughtful anthropomorphism now these are a lot of convoluted terms but really what I'm just trying to say is how to do better developer marketing and developer relations for your AI agent and other AI related tools my name is Roselle scarlet and I am a staff developer Advocate at blog where I focus on all things open source and all things AI prior to this I work at GitHub basically doing the same thing but for GitHub co-pilot now I want to know about you as well I know we're virtual but please interact with me raise your hand if you've ever been personally...
@@ -66,6 +68,7 @@ Giving human traits to non-human things makes tools familiar: e-book page-turn s
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Coding Agents**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

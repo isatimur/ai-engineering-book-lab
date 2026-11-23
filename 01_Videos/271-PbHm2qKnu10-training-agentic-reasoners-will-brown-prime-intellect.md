@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/PbHm2qKnu10.txt"
 themes:
   - "Models & Inference"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:11:29+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Will Brown of Prime Intellect argues that reasoning and agents are the same thing: an agent's harness, tools, environment and evals map directly onto RL's policies, actions, states and rewards, and tuning prompts against evals is doing RL by hand. RL now works at scale, as DeepSeek and o3 show, and teams that RL the best open models for their tasks can build a moat beyond API wrappers. He explains advantage estimation and why GRPO beats DPO and PPO in practice, treats reward hacking as an eval-design problem, backs LLM-generated rubrics for fuzzy tasks, and presents his verifiers library for multi-turn agent RL."
@@ -50,7 +49,6 @@ Multi-turn is where things are headed: agentic search, tool calls, games, comput
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [Music] Hi everyone, I'm Will Brown. I'm at Primeelect. Uh today I want to talk about training agentic reasoners. Um, just kind of as a very high level overview, I think a lot of people here are really excited about reasoning and a lot of people here are really excited about agents. But I feel like a lot of the conversations between these two topics are kind of like different where people are like, "Oh, reasoning is this one thing and agents are this other thing." And the considerations of like reasoning are very different from the considerations of building agents. And I think the high level thesis of this talk is like no, they're kind of the same thing. Um, and you'll see why as we get...
@@ -61,4 +59,4 @@ Multi-turn is where things are headed: agentic search, tool calls, games, comput
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

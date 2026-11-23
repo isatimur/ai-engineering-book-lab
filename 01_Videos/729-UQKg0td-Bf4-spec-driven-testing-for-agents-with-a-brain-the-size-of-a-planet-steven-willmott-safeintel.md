@@ -10,9 +10,9 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/UQKg0td-Bf4.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "Security & Guardrails"
 ingested_at: 2026-06-04T14:10:13+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Steven Willmott, CEO of SafeIntelligence, argues that a smarter agent is not always a better or safer one: large models can decode jailbreaks hidden in poems, broad remits widen the attack surface, and big models cost more. Teams should specify what an agent must do, beyond an eval data set: ground-truth examples, business rules (no discount over 10%), ontologies, internal terms, domain knowledge, rights and roles, and robustness needs such as typos and rephrasing. Feed that spec into security and robustness testing, keep it independent of the agent platform, version it in a repo, and use it to close the loop."
@@ -58,9 +58,9 @@ Specify agent behaviour. Keep the spec independent of the implementation, becaus
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[Security & Guardrails]]
 
 
 ## Transcript excerpt
@@ -70,9 +70,9 @@ Specify agent behaviour. Keep the spec independent of the implementation, becaus
 - Full cleaned transcript: [[99_Meta/transcripts/plain/UQKg0td-Bf4.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Security & Guardrails**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

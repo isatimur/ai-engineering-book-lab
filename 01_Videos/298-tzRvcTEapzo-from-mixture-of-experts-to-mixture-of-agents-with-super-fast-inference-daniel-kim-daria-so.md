@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/tzRvcTEapzo.txt"
 themes:
   - "Models & Inference"
+  - "Coding Agents"
 ingested_at: "2026-04-24T12:12:36+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Daria Soboleva (head research scientist, Cerebras) and Daniel Kim (head of growth, Cerebras) run a workshop that moves from mixture of experts, where a router sends each token to a few specialist feed-forward networks, to mixture of agents, where layers of prompted LLMs answer in parallel and a summarizer merges them. Their thesis: very fast inference lets many cheap open-model calls beat a slow reasoning model. One startup's MoA pipeline solved a math problem in 7.4 seconds with 32 LLM calls and over 500,000 tokens, versus 293 seconds for a frontier reasoning model. Attendees tuned an MoA to score 120/120 on a code grader."
@@ -53,6 +54,7 @@ An intern's Streamlit app lets attendees configure a summarization agent and lay
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] This is uh the API key. So, if you haven't scanned this already, please scan it. Um it'll take you to our cloud where you can sign up for a free API key. This will be the only thing you kind of need to do the workshop today. Everyone got a picture? Everyone good? Cool. Okay. Um hello everyone. Uh we are very excited to see you here. Today we organized a very fun workshop for all of you. Uh we're going to first start with explanation of what mixture of experts is and what like why this architecture matters and then we're going to use agents to create something very similar to it but it's called mixture of agents. So you replace your experts with real agents. Um there will be a code...
@@ -63,3 +65,5 @@ An intern's Streamlit app lets attendees configure a summarization agent and lay
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Coding Agents**.
+

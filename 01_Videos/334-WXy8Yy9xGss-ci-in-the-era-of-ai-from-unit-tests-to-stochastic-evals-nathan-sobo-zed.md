@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/WXy8Yy9xGss.txt"
 themes:
   - "Evals & Reliability"
+  - "Coding Agents"
 ingested_at: "2026-04-24T12:14:08+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Nathan Sobo, co-founder of Zed, a Rust code editor built from scratch, explains how Zed tested its new agentic editing. Zed had tens of thousands of deterministic tests and no flaky CI, but LLMs broke that. His method: start with a broad data-driven eval, zoom into stochastic unit tests that run 100 or 200 times inside the normal test suite and fail the build below a pass threshold, then drive each failure into an ordinary deterministic test. Most failures were not ML problems but 'stupid things': empty old-text tags, mismatched XML tags, flattened indentation, odd escaping. Fixes were robust parsing, fuzzy matching and indent normalization."
@@ -56,6 +57,7 @@ Rigorous testing is fundamental, period. Most problems are not advanced ML but "
 
 ## Theme hooks
 - [[Evals & Reliability]]
+- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] Hey everybody, thanks for coming to my talk. Uh, I am Nathan Sobo. I'm the co-founder of Zed. We are an AI enabled code editor. And what sets us apart is we are not a fork of VS Code. We are implemented from scratch. [Applause] uh implemented from scratch in Rust. We literally engineered the entire system like a video game around about 1,200 lines of shader program that run on the GPU and the rest of the system is organized to deliver frames at 120 frames per second really quickly. And recently I recorded a video because time is short and I this is obviously sped up massively but we launched Agentic Editing in Zed and I wanted to talk about the approach that we took to test this uh...
@@ -66,3 +68,5 @@ Rigorous testing is fundamental, period. Most problems are not advanced ML but "
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Coding Agents**.
+

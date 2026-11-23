@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/84Vtz2IL1Ug.txt"
 themes:
   - "Models & Inference"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: "2026-04-24T12:14:10+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Alex Atallah tells how OpenRouter grew from a 2023 experiment on one question: will inference be a winner-take-all market? His answer, backed by token share data, is no. Moderation limits, Llama 1, and the under-$600 Alpaca distillation pointed to a long tail of models. A primary-plus-fallback setup grew into a marketplace of 400+ models across 60+ providers, with uptime boosting, normalized tool calls and caching, and about 30 ms of added latency. He argues the future is multi-model, inference is a commodity, and routing will be crucial. He also shows an AI-native middleware plugin system that edits streamed outputs, for example web search for every model."
@@ -60,6 +61,7 @@ More modalities, including image generation by LLMs, which some call transfusion
 ## Theme hooks
 - [[Models & Inference]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 ## Transcript excerpt
 > [Music] [Applause] All right. When I started open router the beginning of 2023, I had one major question in mind. I was looking at this new market that was coming online and and it was incredible. Like at the very end of uh 2022, we all saw chat GPT and I got bitten by the AI bug. Um and I decided to look into answering this question. Will this market be winner take all? inference might be the largest market ever in software and this seemed like a critical thing that everybody was assuming the answer to the answer to it would be yes. Um open AI was just far and away the leading model. There were a few others that were coming up on its tail and I I built a couple prototypes to look into what...
@@ -71,3 +73,5 @@ More modalities, including image generation by LLMs, which some call transfusion
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
+

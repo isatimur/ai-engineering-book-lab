@@ -11,7 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/ro5HkZvzfiQ.txt"
 themes:
   - "Models & Inference"
-  - "Org Design & Leadership"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:19:20+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Almog Baku, a serial entrepreneur who has helped build dozens of LLM applications, argues that LLM-native apps are 10% sophisticated models and 90% experimentation and data-driven engineering. His LLM Triangle joins model, engineering techniques and contextual data, all guided by a standard operating procedure taken from expert interviews. He treats the LLM as a smart but inexperienced intern, prefers crafted flows to unbounded autonomous agents, starts with a big model and optimizes later, and calls data the king: give relevant context and pick few-shot examples per case."
@@ -53,7 +53,7 @@ The model only sees one stateless text. Prompt templates are a trick for us. He 
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Org Design & Leadership]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > hey thank you for having me and thank you for being here today here we going to talk about the ANM triangle principles engineering principles for building robust AI applications my name is elog and I'm going to talk with you about surprise surprise llms so this is a pre-recorded session but I think it's a safe bet to say that everyone everyone told you today or go tell you today that L&M are amazing they going to change the world they they basically going to shift the way how we think about technology and software and to be honest most of the use cases today are just like sparkles like small projects that a little bit enhance the workflow and regarding to what they said I totally agree with...
@@ -64,4 +64,5 @@ The model only sees one stateless text. Prompt templates are a trick for us. He 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Evals & Reliability**.
+

@@ -10,7 +10,6 @@ view_count: 11000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/jc3kbZkuHTo.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-10-30T18:03:30+00:00
@@ -58,7 +57,6 @@ Case by case. Weigh the cost of being wrong, especially for security, against al
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -70,6 +68,6 @@ Case by case. Weigh the cost of being wrong, especially for security, against al
 - Full cleaned transcript: [[99_Meta/transcripts/plain/jc3kbZkuHTo.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

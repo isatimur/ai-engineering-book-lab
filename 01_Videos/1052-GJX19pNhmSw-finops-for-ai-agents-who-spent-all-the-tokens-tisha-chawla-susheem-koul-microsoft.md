@@ -10,7 +10,6 @@ view_count: 2200
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/GJX19pNhmSw.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-08-25T01:52:35+00:00
@@ -58,7 +57,6 @@ A two-agent workflow (a researcher with unlimited web search, then a summarizer)
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -70,7 +68,6 @@ A two-agent workflow (a researcher with unlimited web search, then a summarizer)
 - Full cleaned transcript: [[99_Meta/transcripts/plain/GJX19pNhmSw.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

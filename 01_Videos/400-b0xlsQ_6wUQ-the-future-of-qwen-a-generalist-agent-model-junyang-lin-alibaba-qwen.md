@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/b0xlsQ_6wUQ.txt"
 themes:
   - "Models & Inference"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:16:46+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Junyang Lin of Alibaba's Qwen team argues that the field is moving from training models to training agents, through RL with environment feedback. He walks through Qwen 3: open-weight mixture-of-experts models (235B total with 22B active, and 30B with 3B active), six dense sizes down to a 4B for phones, and a hybrid mode that puts thinking and non-thinking in one model. A thinking budget caps reasoning tokens: on a math benchmark, scores rise from about 40 to over 80 at 32,000 tokens. Qwen 3 supports 119 languages and dialects (up from 29) and better MCP tool use. He also covers a 7B omni model and plans to scale context, modalities and RL."
@@ -55,7 +54,6 @@ More room in pre-training (better data cleaning, multimodal and synthetic data, 
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > Hey everyone, I'm Jinang fromWent team Alib to be here in AI engineer world fair 205 and I'm very excited to share some progress about quen to all of you. I think you guys know about quen and uh maybe you are developers I'm very happy to share some more things about Gwen to all of you. is a large a series of large language models and large multimodel models and uh we have a dream of building a journalist model and generalist agent and before I start I would like to share some important links to all of you uh maybe you know our product our chat interface quench chat uh which is chat.quen.ai AI uh it is very easy to use. You can interact with our latest models. You can use our multimodel...
@@ -66,4 +64,4 @@ More room in pre-training (better data cleaning, multimodal and synthetic data, 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

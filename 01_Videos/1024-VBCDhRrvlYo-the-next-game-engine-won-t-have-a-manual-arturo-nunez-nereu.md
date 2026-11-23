@@ -10,9 +10,7 @@ view_count: 803
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/VBCDhRrvlYo.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
-  - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:14+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Arturo Nunez, who spent almost 10 years at Unity, presents Nereu, a browser game engine where you describe intent in a player's words ('make this robot move with WASD') and an AI assistant applies tags instead of wiring meshes, colliders and rigid bodies. His thesis: today's engines put context on the engine, not on game design, so LLMs reinvent the same camera or movement code each time. Nereu's asset tag system, modelled on entity-component-system design, has built-in systems act on tags. Context is assembled by level of detail: rich data for assets near the edit, a stub for distant ones."
@@ -51,9 +49,7 @@ He builds daily in conversation with Claude, checks ideas with friends who speci
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
-- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -63,6 +59,5 @@ He builds daily in conversation with Claude, checks ideas with friends who speci
 - Full cleaned transcript: [[99_Meta/transcripts/plain/VBCDhRrvlYo.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+

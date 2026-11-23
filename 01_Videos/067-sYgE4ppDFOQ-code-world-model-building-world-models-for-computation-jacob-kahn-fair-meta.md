@@ -10,7 +10,6 @@ view_count: 10919
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/sYgE4ppDFOQ.txt"
 themes:
-  - "RAG & Retrieval"
   - "Models & Inference"
 ingested_at: "2026-04-24T10:52:21+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -57,7 +56,6 @@ The model is on Hugging Face, with inference code on GitHub and a detailed techn
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[RAG & Retrieval]]
 - [[Models & Inference]]
 
 ## Transcript excerpt
@@ -68,5 +66,5 @@ The model is on Hugging Face, with inference code on GitHub and a detailed techn
 - Description cue: Today, most neural models for code learn from code itself: sequences of tokens that capture syntax rather than computation. While this allows models to learn the shape of code, true reasoning...
 
 ## Book angles
-- Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Models & Inference**.
+

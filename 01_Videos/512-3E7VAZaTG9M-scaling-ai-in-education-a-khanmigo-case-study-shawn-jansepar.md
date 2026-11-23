@@ -11,6 +11,8 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/3E7VAZaTG9M.txt"
 themes:
   - "Org Design & Leadership"
+  - "Evals & Reliability"
+  - "Models & Inference"
 ingested_at: "2026-04-24T12:21:46+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Shawn Jansepar, director of AI and learning at Khan Academy, explains how Khanmigo, a Socratic tutor for learners and an assistant for teachers, grew to about 200,000 paid users and how the nonprofit became AI-first. Keys: rapid demo-driven prototyping, resisting perfectionism, fast two-way-door decisions, new core values recorded in organization decision records, and code quality tiered by confidence in a feature. Technical work: a math agent, a two-step chain-of-thought tutoring call, a tutoring accuracy dashboard, model-graded evals that catch math mistakes about 70% of the time, an AI platform team, and dedicated capacity that is costly at night."
@@ -50,6 +52,8 @@ They wrote no requirements or Gantt chart. The partnership with OpenAI began whe
 
 ## Theme hooks
 - [[Org Design & Leadership]]
+- [[Evals & Reliability]]
+- [[Models & Inference]]
 
 ## Transcript excerpt
 > [Music] all right thanks so much for coming to my talk um yeah I'm going to talk to you today about how we've been scaling AI in the classroom um so kind of a case study of kigo um my name is Shan jansa I'm the director of AI um and learning at KH Academy and I've also been doubling up as a product leader so thankfully when we're trying to decide on features and road map I don't have to negotiate with anyone but myself there are other product managers but uh it makes that process a lot easier so today I'm going to talk about problems we're solving at KH Academy how we're solving those problems walking through a few demos uh how we transformed KH Academy into an AI first organization and...
@@ -60,3 +64,6 @@ They wrote no requirements or Gantt chart. The partnership with OpenAI began whe
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Models & Inference**.
+

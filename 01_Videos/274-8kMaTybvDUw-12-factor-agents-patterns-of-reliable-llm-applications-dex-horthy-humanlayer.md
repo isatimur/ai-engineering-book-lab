@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/8kMaTybvDUw.txt"
 themes:
   - "Evals & Reliability"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:11:37+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Dex Horthy of HumanLayer talked to over 100 founders and engineers and found that most production agents are mostly plain software, with small modular patterns applied to existing code. Framework-built agents stall at 70-80% quality. His 12-Factor Agents repo, modeled on Heroku's 12 factors, names those patterns: turn natural language into JSON, treat tool use as JSON plus deterministic code, own your prompts, context window and control flow, unify execution and business state so agents can pause and resume, compact errors, contact humans through tools, and build small focused micro-agents inside mostly deterministic DAGs."
@@ -54,7 +53,6 @@ As models improve, LLMs will take over bigger parts of a pipeline, but you still
 
 ## Theme hooks
 - [[Evals & Reliability]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > [Music] Who here's building agents? Who here's your hand up if you built like 10 plus agents? Anyone here built like a hundred agents? All right, we got a few. Awesome. Love it. Um, so I think a lot of us have been on this journey of building agents. Um, and what happened with me was, you know, I decided I want to build an agent. We figured out what we wanted it to do. Uh, we want to move fast. We're developers, so we use libraries. We don't write everything from scratch. Um, and you get it to like 70 80%. It's enough to get the CEO excited and get six more people added to your team. But then you kind of realize that 70 80% isn't quite good enough. And that if you want to get past that 70...
@@ -67,7 +65,6 @@ As models improve, LLMs will take over bigger parts of a pipeline, but you still
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
-- Could support a chapter/section on **Org Design & Leadership**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/a0NwFm5NxGo.txt"
 themes:
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:25:10+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Reid Mayo lays out a 'shift left' syllabus that works as an AI engineering boot camp for strong full-stack engineers with zero ML background. His thesis, drawn from Swyx's essay The Rise of the AI Engineer, is that foundation models let full-stack engineers ship useful AI without traditional ML. The path runs LLM basics, prompt engineering, the OpenAI docs, LangChain, evals as software tests, then fine-tuning. The pattern: prototype on OpenAI, gather usage data, then fine-tune a smaller open model; one cited case matched results for $19. Use ChatGPT as a Socratic tutor throughout."
@@ -52,6 +53,7 @@ Ship real work first. Then take a practical deep learning course and an NLP cour
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] hi I'm Reed Mayo founder of Rema AI welcome to shift left how to become an AI engineer from a full stack background in this talk we'll provide and review a syllabus that walks you step by step through a defined process with practical tutorials that teach you the comprehensive best practice skills and knowledge required to launch a professional AI engineering career think of it in a way as an AI engineering boot camp so this talk assumes that you have a strong full stack engineering background you should be comfortable building modern tech from the ground up across all of the different layers infrastructure database and persistence and applications both on the back end and on the...
@@ -62,3 +64,5 @@ Ship real work first. Then take a practical deep learning course and an NLP cour
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/cS6M6Jec0lU.txt"
 themes:
   - "RAG & Retrieval"
+  - "Models & Inference"
 ingested_at: "2026-04-24T12:23:46+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Phoebe Klett, machine learning engineer at Normal Computing, presents Extended Mind Transformers: a small edit to attention that stores memory tokens as key-value pairs inside each decoder layer and lets every query token retrieve its top-k memories by cosine similarity during generation. Her thesis is that retrieval belongs inside the model, not decided once upfront by an external embedding. Thanks to relative position schemes (rotary and ALiBi), it needs no fine-tuning, stays competitive with long-context fine-tunes up to 16K tokens on a new counterfactual benchmark, gives causal token-level citations, and cuts hallucinations by retrieving more when the model is uncertain."
@@ -54,6 +55,7 @@ Models are on Hugging Face, and the code and dataset are on GitHub. You pass mem
 
 ## Theme hooks
 - [[RAG & Retrieval]]
+- [[Models & Inference]]
 
 ## Transcript excerpt
 > [Music] I'm Phoebe I'm a machine learning engineer at normal Computing and I'm really excited to tell you guys about some of our recent research uh and in particular extended mind Transformers all right so just to briefly cover what we're going to go over in today's talk uh we'll introduce the problem which I think will be quite familiar given the amazing talk which came before mine uh and then dive right into the method so uh what is the retrieval mechanism that extended mind Transformers Implement uh and then we'll dive into some experiments which give us confidence that these methods are actually performant after that we'll get into two of my favorite and I think most compelling features...
@@ -64,6 +66,7 @@ Models are on Hugging Face, and the code and dataset are on GitHub. You pass mem
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+- Could support a chapter/section on **Models & Inference**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

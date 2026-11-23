@@ -10,7 +10,6 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/IJXjTLPzvAU.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-06-28T23:47:02+00:00
@@ -55,7 +54,6 @@ The expert is a build-time and gate-time cost, not a runtime one: they write the
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -67,7 +65,6 @@ The expert is a build-time and gate-time cost, not a runtime one: they write the
 - Full cleaned transcript: [[99_Meta/transcripts/plain/IJXjTLPzvAU.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

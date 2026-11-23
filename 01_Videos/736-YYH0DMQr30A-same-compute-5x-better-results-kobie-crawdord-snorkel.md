@@ -11,7 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/YYH0DMQr30A.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-06-04T14:10:28+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -59,7 +58,6 @@ They then ran RL twice with the same model, the same compute budget and the same
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
 
 
@@ -71,7 +69,6 @@ They then ran RL twice with the same model, the same compute budget and the same
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 
 ## Artifacts

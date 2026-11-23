@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/gADhNzFjGeI.txt"
 themes:
   - "Models & Inference"
+  - "Voice & Realtime"
 ingested_at: "2026-04-24T12:23:20+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Sunny Madra of Groq uses Intel's 1999 break of the 1 GHz barrier as an analogy: CPUs gained three orders of magnitude in about two decades, and LLM speed is now improving faster than Moore's Law (Groq made Llama 3 8B over 50% faster between April and June). His thesis is that near-instant, near-free inference industrialises software work and could make an LLM the core of computing. He walks through what speed unlocks: instant agents like globe.engineer, personalisation, multimodal voice-plus-text interfaces, multi-agent reasoning, always-on background agents, an autonomous data-science agent, AI defences against scam calls, and personalised tutoring."
@@ -54,6 +55,7 @@ Before the Industrial Revolution, food, cars and clothes were bespoke. He borrow
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Voice & Realtime]]
 
 ## Transcript excerpt
 > [Music] what we really wanted to pay homage to today is um actually you know just 25 years ago we crossed the 1 gigahertz speed barrier uh in microprocessors what's really crazy is um when when we started thinking about this talk I actually thought it happened a lot before 19 99 and I just kind of remember my own uh Arc of um getting involved with computers but really it was 1999 I had to kind of double and triple check it this is the exact press release when uh Intel broke the 1 GHz speed barrier and obviously that was interesting you know for a couple of perspectives one it was this you know really big number and moment but two it was really after this that um you know Intel started to...
@@ -64,3 +66,5 @@ Before the Industrial Revolution, food, cars and clothes were bespoke. He borrow
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Voice & Realtime**.
+

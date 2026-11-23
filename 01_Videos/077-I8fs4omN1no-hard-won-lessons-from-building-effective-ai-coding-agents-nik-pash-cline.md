@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/I8fs4omN1no.txt"
 themes:
   - "Agent Architecture"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T10:52:45+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Nik Pash, head of AI at Cline, argues that clever agent scaffolding (RAG indexes, search trees, tool-calling tricks) no longer matters: frontier models bulldoze it, as Gemini 3.0 showed by topping Terminal Bench on the stripped-down Terminus harness. The real bottleneck is benchmarks and RL environments, because models only improve when labs train on hard tasks. He describes Cline's 'RL environments factory', which turns real user coding sessions into containerized tasks with outcome-only verifiers, cut from 16 hours to under 20 minutes per task, and announces Cline Bench as a free, open-source benchmark built from real engineering work."
@@ -53,7 +52,6 @@ Every major agent lab captures this data and cites internal benchmarks it never 
 
 ## Theme hooks
 - [[Agent Architecture]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > [music] Wow, it's wild to be on the same stage as so many people I've drawn inspiration from. Let's dive into it. My name is Nick. I'm the head of AI at Klein and today I'm going to share some lessons we learned along the way. So let's start with the bitter truth. For years we compensated for weak models by building clever scaffolds around them. All kinds of clever ideas like rag indexing systems, search trees, tool calling scaffolds, all this was invented to cope with weaker models. And Frontier models simply bulldoze those abstractions. Now, you don't really need your scaffolding anymore. Your scaffolding just gets in the way of these models. And the question really isn't how fancy is...
@@ -64,4 +62,4 @@ Every major agent lab captures this data and cites internal benchmarks it never 
 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **RAG & Retrieval**.
+

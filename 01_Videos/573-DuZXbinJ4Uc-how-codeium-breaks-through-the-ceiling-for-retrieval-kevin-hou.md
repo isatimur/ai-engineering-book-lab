@@ -12,6 +12,8 @@ transcript_path: "99_Meta/transcripts/plain/DuZXbinJ4Uc.txt"
 themes:
   - "RAG & Retrieval"
   - "Models & Inference"
+  - "Coding Agents"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:24:28+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Kevin Hou, who leads product engineering at Codeium, argues that embeddings are stunting AI agents. Long context is too slow and costly for billion-token enterprise codebases, fine-tuning needs one model per customer, and embedding benchmarks have plateaued because they test a single needle. Codeium built a product-led eval from PR commit messages mapped to modified files, scored with recall@50, and replaced vector ranking with M query: thousands of parallel LLM calls that judge each item. Vertical integration (own models, own infrastructure) makes that compute affordable, and users accepted more generations."
@@ -53,6 +55,8 @@ The loop is product-driven data and evals, massive compute per user, then overni
 ## Theme hooks
 - [[RAG & Retrieval]]
 - [[Models & Inference]]
+- [[Coding Agents]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] um so my name is Kevin and I'm going to be talking about how embeddings are stunting AI agents uh so I'm going to let you in on some secrets about how we build the product uh and exactly what we're doing behind the scenes to improve your Cod gen experience so at codium we are building AI developer tools and we're starting with an IDE plugin and as uh as mentioned before we've been downloaded over a million and a half times uh we're one of the top rated extensions across the different marketplaces and to re reiterate we offer free unlimited autocomplete chat and search across 70 different languages and 40 different ID so we plug into all the popular idees uh we are the highest rated...
@@ -64,3 +68,6 @@ The loop is product-driven data and evals, massive compute per user, then overni
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Evals & Reliability**.
+

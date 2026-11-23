@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/0tVu-V3_fFw.txt"
 themes:
   - "Evals & Reliability"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:16:44+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Jun Yu Tan, founding engineer at Tusk, argues that instead of making humans accommodate agents that automate complex, high-judgment work poorly, we should spend that compute helping humans do better work. He proposes three augmentation patterns: blind spot detection, cognitive partnership and proactive guidance. Tusk applies the first to pull requests: it writes and runs unit tests to surface only verified bugs, and he says it caught verified bugs in 43% of PRs. A novelty-criticality grid decides which findings interrupt the user. He adds that trust must be progressive, contextual and bidirectional, and that products should track user skill growth, not only engagement."
@@ -55,7 +54,6 @@ Trust should be progressive (prove itself on low-stakes suggestions first), cont
 
 ## Theme hooks
 - [[Evals & Reliability]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > Hi everyone, I'm Jun, founding engineer at Tusk. I'm excited to share about a paradigm for building the next generation of AI interfaces, the ones that put humans in the center, augmenting our capabilities, and helping us be more thoughtful and creative. It's a collection of ideas that I've been thinking about for a while now. Though some of these concepts might be a little bit more speculative, I do hope to encourage more builders in the space to consider these patterns and principles. Now, it's often said that 2025 is the year of the agents and rightfully so. From general agents performing research and browser use for you to deeply verticalized apps across all industries, AI agents are...
@@ -66,7 +64,6 @@ Trust should be progressive (prove itself on low-stakes suggestions first), cont
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
-- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

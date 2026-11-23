@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/MBWGiWJDlSo.txt"
 themes:
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:09:05+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Nikhil Abraham, co-founder and CEO of CloudChef, explains how a cheap general-purpose robot (two arms on a wheeled base) became a line cook that works in unseen kitchens and learns a recipe from one expert demonstration, for about 12 dollars an hour. Fine-tuned robot foundation models handle motion, with teleoperation as fallback, so the system is about 95% autonomous. Cooking-specific thermal and visual embeddings drive recipes modeled as state machines. Trained on data from hundreds of thousands of real meals, its small model tracks cooking progress better than expert chefs and far better than general frontier models without a thermal modality."
@@ -49,6 +50,7 @@ The system is about 95% autonomous and 5% teleoperated, and he says this is fast
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] Hey everyone, I'm Nikil. I'm the co-founder CEO of Cloud Chef. Today I'm going to tell you guys how we took a general purpose robot that was not meant for cooking. It was just a robot with two hands. how we trained it or put it through culinary school and it's now a professional chef that's working in various different kitchens doing actual real work like a chef. So before we get into that a quick thing about cloud chef our mission basically is to make highquality nutritious food affordable to everyone and the only way we know how to do it at this point is by automating all commercial labor or all commercial kitchen labor with what we call culinary intelligent robots. So, robots...
@@ -59,3 +61,5 @@ The system is about 95% autonomous and 5% teleoperated, and he says this is fast
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+

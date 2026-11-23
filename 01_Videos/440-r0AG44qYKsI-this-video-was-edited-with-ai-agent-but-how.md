@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/r0AG44qYKsI.txt"
 themes:
   - "Coding Agents"
   - "MCP & Tooling"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:18:28+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "A five-minute lightning talk, which the title says was edited with the agent, presents an open-source video editing agent built by a personalized learning platform with Diffusion Studio. The thesis: code is the best way to express computer actions, so the LLM writes its own actions as JavaScript or TypeScript against Diffusion Studio's composition library instead of JSON tool calls. The agent drives a browser-based editing UI built for agents, uses three tools (video editing, doc search with RAG, and visual feedback on frames sampled at one per second, likened to a GAN discriminator), ships a robots.txt-style file for agents, and scales through remote GPU browser sessions."
@@ -47,6 +48,7 @@ The team ships a text file that the speaker calls robots.txt for agents. With te
 ## Theme hooks
 - [[Coding Agents]]
 - [[MCP & Tooling]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > [Music] today we're tackling a paper that's basically legendary at least in the world of natural language processing NLP for those in the know right attention is all you need it's not just a catchy title definitely not o cam a general purpose functional programming language that is also an imperative language and also an objectoriented language it is what hascal which is could be hey everyone my name is Mam and I'm excited to talk about the va's first open-source video editing agent backstory is that we needed some automatic tool to edit videos for res skill. a platform for personalized learning while doing so we quickly realized limitations of FFM p and started looking for more intuitive...
@@ -58,6 +60,7 @@ The team ships a text file that the speaker calls robots.txt for agents. With te
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Agent Architecture**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

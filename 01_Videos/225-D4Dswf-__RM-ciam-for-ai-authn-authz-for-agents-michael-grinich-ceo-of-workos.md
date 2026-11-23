@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/D4Dswf-__RM.txt"
 themes:
   - "Agent Architecture"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:08:53+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Michael Grinich, CEO of WorkOS, argues that agents need first-class identity: a hybrid of machine and human identity that logs in headlessly, keeps long-lived sessions, gets dynamic rather than least-privilege permissions, and stays tied to a person for compliance. He lays out four patterns (persona shadowing, delegation chains, capability tokens, human escalation, which causes consent fatigue) and surveys emerging standards such as user-managed access, GNAP (RFC 9635), OpenID Connect for agents and verifiable credentials. The common pattern today is middleware that treats the agent as untrusted. He predicts agents will drive 95% of app traffic."
@@ -61,7 +60,6 @@ The old trusted-versus-untrusted IT model is now a gray area. Today about 95% of
 
 ## Theme hooks
 - [[Agent Architecture]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > [Music] My talk that was up here said Syiam for AI. Um that's a bit of industry lingo. It stands for customer identity and access management. Really what I'm going to be talking about here is O login for agents. Um, we just heard from uh from someone from Hex. Hex is actually a work OS customer. We provide identity services to lots and lots of different SAS businesses, B2B products and our fastest growing segment is AI companies. Turns out AI products need identity and authentication. So we have a lot of experience seeing this. So I'm going to talk about um how you can bring identity specifically to aentic based applications what we're seeing in the world today. So to start I'll just start...
@@ -72,7 +70,6 @@ The old trusted-versus-untrusted IT model is now a gray area. Today about 95% of
 
 ## Book angles
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Org Design & Leadership**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

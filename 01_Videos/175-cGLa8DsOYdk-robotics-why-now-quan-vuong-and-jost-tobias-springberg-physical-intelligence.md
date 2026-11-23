@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/cGLa8DsOYdk.txt"
 themes:
   - "Models & Inference"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T11:42:30+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Quan Vuong and Jost Tobias Springberg of Physical Intelligence explain why general-purpose robotics is moving now: vision-language-action (VLA) models adapt pretrained VLMs to read robot state and output actions. Since the web has no analogue for dexterous robot data, PI built its own teleoperation data engine, which they say is more than 50% of the work. It went from 10,000 hours in six months to diverse mobile data. A newer model adds web data and task subdivision. It runs 10-minute cleanup tasks in unseen homes, and with enough training homes it matches training on the test home itself. A robot PI never touched made coffee with their model."
@@ -51,7 +50,6 @@ Vuong shows a partner's robot, which PI never saw or touched, making coffee end 
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > [Music] So, good morning. Uh, thanks for being here with us. My name isWan. This is Toby. Um, our mission is to make a model that can control any robot to do any task. Now, this is not something that's ready today. uh we believe that there are multiple scientific uh breakthrough that needs to happen for us to get there. And so we're very open. We publish our research. We open source our model and we talk very publicly about what is that we do. And so if you think about robotics before and not to say that it's not useful, you know, it's incredibly impactful on the world. Um but the scenario that you often see robotic in is either in a very constrained environment such as you know a factory...
@@ -62,4 +60,4 @@ Vuong shows a partner's robot, which PI never saw or touched, making coffee end 
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Org Design & Leadership**.
+

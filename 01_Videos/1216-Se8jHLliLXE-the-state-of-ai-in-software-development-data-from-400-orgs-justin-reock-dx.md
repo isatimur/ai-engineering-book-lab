@@ -11,7 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/Se8jHLliLXE.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-10-30T17:19:19+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -59,7 +58,6 @@ Even perfect instant code would touch only about 14 to 16% of the value stream. 
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
 
 
@@ -71,5 +69,5 @@ Even perfect instant code would touch only about 14 to 16% of the value stream. 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

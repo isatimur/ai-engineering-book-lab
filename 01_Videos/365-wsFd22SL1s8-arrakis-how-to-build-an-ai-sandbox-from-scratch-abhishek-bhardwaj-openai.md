@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/wsFd22SL1s8.txt"
 themes:
   - "MCP & Tooling"
   - "Security & Guardrails"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:15:23+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Abhishek Bhardwaj, solo founder of the open-source Arrakis sandbox, argues that sandboxes are the next unlock for agents: models call code tools during inference, RL needs sandboxes to run reward functions, and a full Linux box lets an agent debug its own app. He builds the case from Linux threads to containers (shared kernel, weak isolation) to microVMs, which use Rust VMMs, jail each device, boot fast and snapshot by dumping guest memory. Arrakis runs on Cloud Hypervisor with an overlay root filesystem, tap networking with port forwarding, Chrome over VNC, and snapshot-and-restore so agents can backtrack. A demo has Claude Desktop build a collaborative docs clone over MCP."
@@ -59,6 +60,7 @@ Agents fail on big tasks, often near the end of a long plan. A snapshot saves gu
 ## Theme hooks
 - [[MCP & Tooling]]
 - [[Security & Guardrails]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > Hello everyone, my name is Abhishek. I'm the solo founder and developer of Arachis, an open-source code execution and computer use sandboxing service for AI agents. Today we'll chat about why sandboxing is the next big unlock in intelligence and what goes into building an AI sandbox like a little bit about my background. I went to school at Carnegie Melon where I studied distributed systems and operating systems. At Microsoft, I worked on Windows Subsystem for Linux and a smart watch OS from scratch. At Google, I worked on cutting edge systems using containers and inventing something called microVMs, which we'll discuss in plenty detail today. The last couple of years, I was at Replet...
@@ -70,6 +72,7 @@ Agents fail on big tasks, often near the end of a long plan. A snapshot saves gu
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
 - Could support a chapter/section on **Security & Guardrails**.
+- Could support a chapter/section on **Agent Architecture**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

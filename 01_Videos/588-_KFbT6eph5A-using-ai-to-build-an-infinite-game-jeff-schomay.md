@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/_KFbT6eph5A.txt"
 themes:
   - "Models & Inference"
-  - "Coding Agents"
 ingested_at: "2026-04-24T12:25:13+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Jeff Schomay turns a 16-scene forest game with 100% AI-generated content into a game of infinite exploration, where every scene is generated fresh for the player. He fine-tuned an OpenAI model on 50 examples for about a dollar or two, which let him drop the JSON spec from the prompt; trained a custom Leonardo image model for a consistent style; validated JSON in an asset-server pipeline; and hid 10 to 30 second generation latency behind a prefilled, self-refilling scene cache. The key lesson: an image fine-tune must keep shared features constant and vary the rest, or it overfits."
@@ -47,7 +46,6 @@ Images are 512 pixels; an AI upscaler would help but add time, a trade-off. Prom
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] hi everyone I'm Jeff show and I want to share with you an interesting generative AI project that I recently did not too long ago I made a game with 100% AI generated content it's a simple game where you're wandering around lost in the forest and you go from scene to scene having encounters that impact your Vigor and your courage and the idea is that you want to find your home before you run out of Courage there's 16 scenes in a 4x4 grid and so if you play a few times you will have seen them all now my favorite part of making this game was generating each scene and just seeing what AI would come up with and I thought wouldn't it be cool to share that experience with the player what...
@@ -58,4 +56,4 @@ Images are 512 pixels; an AI upscaler would help but add time, a trade-off. Prom
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Coding Agents**.
+

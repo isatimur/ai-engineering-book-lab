@@ -10,7 +10,6 @@ view_count: 1200
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/GqoNrUz8hEU.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:27:58+00:00
@@ -53,7 +52,6 @@ Scale from one agent to thousands, model agnosticism, someone to negotiate agent
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -65,7 +63,6 @@ Scale from one agent to thousands, model agnosticism, someone to negotiate agent
 - Full cleaned transcript: [[99_Meta/transcripts/plain/GqoNrUz8hEU.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

@@ -10,7 +10,6 @@ view_count: null
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/TNwJ1LMiENk.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-06-20T09:01:43+00:00
@@ -54,7 +53,6 @@ Snorkel's research team now builds rubrics into evals. A rubric splits rightness
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -66,7 +64,6 @@ Snorkel's research team now builds rubrics into evals. A rubric splits rightness
 - Full cleaned transcript: [[99_Meta/transcripts/plain/TNwJ1LMiENk.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
 

@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/5_QWh4LGoxg.txt"
 themes:
   - "Models & Inference"
-  - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:16:27+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Rachna Srivastava argues that the same AI that powers deepfake, voice-clone and synthetic-identity fraud can be trained to stop it. She presents Cognitive Shield, a three-layer platform: an AI-guided data and licensing layer, a real-time detection layer with eight specialised modules, and an investigation layer with natural-language search, escalation and audit trails. Its graph pipeline uses Crew AI agents and an LLM to turn documents into a Neo4j knowledge graph, then answers questions through graph RAG that writes Cypher. Her lessons: many specialised agents, not one model; think in graphs, not rows; build security, privacy and observability in from day one."
@@ -53,7 +52,6 @@ Start with security from day one. Do not rely on one model; use multiple special
 
 ## Theme hooks
 - [[Models & Inference]]
-- [[Org Design & Leadership]]
 
 ## Transcript excerpt
 > Hello everyone. Thanks so much for joining me today. Let me start by asking you a very simple but profound question. What happened when the smartest tool we have ever built stop working for us and start working against us? Let's just stop for a moment and think about it. Imagine getting a phone call. A voice sounds exactly like your manager. The same tone, the urgency, the choice of word, everything on the spot. He says his intranet is down and asks you to urgently send all the confidential information to his personal email so that he can brief a client. It all seems legitimate until you later discover it was a deep fake scam. You unknowingly sent company sensitive information to a...
@@ -64,4 +62,4 @@ Start with security from day one. Do not rely on one model; use multiple special
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
-- Could support a chapter/section on **Org Design & Leadership**.
+

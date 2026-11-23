@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/kDczF4wBh8s.txt"
 themes:
   - "Evals & Reliability"
+  - "Voice & Realtime"
 ingested_at: "2026-04-24T11:41:03+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Brooke Hopkins, founder of Coval and former lead of eval job infrastructure for a self-driving company's simulation tools, argues that voice agents stall in pilot because of trust, and that the fix is the one self-driving found: large-scale simulation with probabilistic, reference-free metrics. She rejects the choice between rigid IVR-like flows and unpredictable autonomy, and lays out a loop of simulate, review, monitor and feed back. Techniques include text-only simulation for workflow tests, re-simulating a failed scenario 100 times to measure its failure rate, and calibrating LLM-as-judge metrics against human labels."
@@ -58,6 +59,7 @@ She closes with a prediction: within three years every enterprise will launch a 
 
 ## Theme hooks
 - [[Evals & Reliability]]
+- [[Voice & Realtime]]
 
 ## Transcript excerpt
 > [Music] Hey everyone, I'm Brooke. I'm the founder of Koval and we are building evals for voice agents. So today I'm going to be talking a little bit about what can we learn from self-driving in building evals for voice agents. My background is from Whimo. So I led our eval job infrastructure team at Whimo that was responsible for our developer tools for launching and running simulations. And now we're taking a lot of the learnings from self-driving and robotics and applying them to voice agents. Um but first, why are voice agents not everywhere? They have this massive promise of being able to automate all of these really critical hard workflows autonomously. And I think probably a lot of...
@@ -68,3 +70,5 @@ She closes with a prediction: within three years every enterprise will launch a 
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Voice & Realtime**.
+

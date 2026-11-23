@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "MCP & Tooling"
+  - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:49+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Ramana Siddanth Emani, a data scientist at Auditoria AI, which builds production agents for finance, argues that demos fail in production not because of models, GPUs or frameworks, which all get swapped, but because of slow developer loops. His four primitives: parallel subagents in git worktrees, skills as the organization's secret recipes, MCP tools, and a minimal one-pane UX. In a nine-step bug-fix pipeline a human is needed only at the first and last steps. Then the loop improves itself with goals and dreaming, and the human stays the verifier, not the throughput ceiling."
@@ -60,6 +61,7 @@ Keep the human "as a verifier, but not the throughput ceiling", because human at
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[MCP & Tooling]]
+- [[Evals & Reliability]]
 
 
 ## Transcript excerpt
@@ -72,3 +74,5 @@ Keep the human "as a verifier, but not the throughput ceiling", because human at
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **MCP & Tooling**.
+- Could support a chapter/section on **Evals & Reliability**.
+

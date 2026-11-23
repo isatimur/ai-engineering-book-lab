@@ -10,7 +10,6 @@ view_count: 3882
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/L0kBWyziFlc.txt"
 themes:
-  - "Org Design & Leadership"
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:24:06+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -45,7 +44,6 @@ On top of the brain sits "an army of AI based agents". Her example: instead of s
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Org Design & Leadership]]
 - [[RAG & Retrieval]]
 
 ## Transcript excerpt
@@ -56,5 +54,5 @@ On top of the brain sits "an army of AI based agents". Her example: instead of s
 - Description cue: Dr. Sarah Buchner, Founder & CEO of Trunk Tools, envisions a future for construction where an army of AI agents works on behalf of our users. We are currently deploying an agent every 45 days:...
 
 ## Book angles
-- Could support a chapter/section on **Org Design & Leadership**.
 - Could support a chapter/section on **RAG & Retrieval**.
+

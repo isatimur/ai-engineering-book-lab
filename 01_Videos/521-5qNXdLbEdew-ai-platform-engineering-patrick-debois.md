@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/5qNXdLbEdew.txt"
 themes:
   - "Org Design & Leadership"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:22:12+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Patrick Debois, who organized the first DevOps Days in 2009, applies 15 years of DevOps and Team Topologies lessons to generative AI: once a pilot team proves the value, an AI platform team must provide shared infrastructure, enablement and governance so feature teams can build. The platform covers model access, vector databases with data connectors, model versioning, a provider-agnostic proxy with access control, prompt tracing, evals running in production and feedback services. He warns that model swaps (eight in two years) force prompt rework without evals, that coding copilots raised review times, and that guardrails and prompt-injection defences remain unsolved."
@@ -53,6 +54,7 @@ Awareness programmes, training opt-outs, licence checks (open in the name does n
 
 ## Theme hooks
 - [[Org Design & Leadership]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] thank you especially after lunch that Applause tell you know is tells double so so yeah you need a platform thing um so usually i' skip over this slide but this time I'm going to explain you my background because it's important to understand what the next things is that I'm completely biased in this what I'm going to talk about so why am I biased in 2009 I organized a small conference called devop days there were 60 people and this is how the world kind of got into devops as a word so my position has been privileged to be there from the beginning and seen 15 years of a new kind of phenomenon discussion transformation taking Ro across the whole Enterprise so that's kind of like why a...
@@ -63,3 +65,5 @@ Awareness programmes, training opt-outs, licence checks (open in the name does n
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Evals & Reliability**.
+

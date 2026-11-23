@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/y2Drx0SDZLo.txt"
 themes:
   - "Evals & Reliability"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:18:40+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "A speaker from Root Signals presents a map of agent evaluation instead of a laundry list of metrics. The map splits evals into semantic quality (how the agent's representations relate to reality, grounded by truthfulness, often through RAG) and behavioral quality (how tools and actions serve its goals, grounded by goal achievement). Each side has a single-turn part (universal virtues, policy alignment, RAG metrics; tool selection, tool output, error handling) and a multi-turn part (conversation consistency and reasoning traces; plan quality and convergence on the goal). He argues the LLM judge itself needs optimizing too, which he calls EvalOps."
@@ -57,6 +58,7 @@ Many of these metrics use LLM-as-judge. A single-tier approach optimizes only th
 
 ## Theme hooks
 - [[Evals & Reliability]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > hi this is Ari heluk from root signals uh presenting agent evaluations finally with the map so the agent evaluation is rather Art and Science and ultimately it is nonetheless required to actually ensure that your agents do what you expect them to do especially when you're launching them in production so without further Ado let's just uh Dive Right There into the map and start to get an understanding of what are all the things involved if you want to evaluate all the aspects of your agents uh so the agent evaluation can be actually neatly divided to the semantic and behavioral parts of what the agents do the semantic part is all about how do the representations uh of the reality that the...
@@ -67,6 +69,7 @@ Many of these metrics use LLM-as-judge. A single-tier approach optimizes only th
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Agent Architecture**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

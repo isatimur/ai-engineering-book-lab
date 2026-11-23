@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/AvVoJBxgSQk.txt"
 themes:
   - "RAG & Retrieval"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:08:51+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Stephen Chin, who runs developer relations at Neo4j, argues that LLMs and agents hallucinate and reason badly without deep, structured context, and that knowledge graphs supply it. He shows a reasoning model anchoring on the wrong article and producing biased answers, then puts graph tools behind MCP: text-to-query generation, agent memory and cloud provisioning. His recommended starting pattern is vector search with graph context: embed the question, find similar chunks, map them to graph nodes, and pull related nodes as context. A customer's internal assistant handled 250k employee questions in its first year with 85% adoption."
@@ -55,6 +56,7 @@ One customer, Chin says, replaced its SaaS systems with a GraphRAG project over 
 
 ## Theme hooks
 - [[RAG & Retrieval]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > [Music] My name is Steven Chin. I run the developer relations team at Neo Forj. Um, actually I just started writing a um a new book on graph rag with O'Reilly. So that was my weekend was writing chapters. um first chapter done. So I think I think we'll actually put like the pre-release version of it up soon. Um and what I am going to talk about for the next 10 minutes is aentic graph rag and a little bit about how you can accomplish this. Okay, so um first of all, who who here is familiar with graph databases? >> Okay, that's really good. Okay, you are you are well above and ahead of the curve. Um how many folks have have given um graph rag a try to to build systems using graphs? >> Okay,...
@@ -65,3 +67,5 @@ One customer, Chin says, replaced its SaaS systems with a GraphRAG project over 
 
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
+- Could support a chapter/section on **Agent Architecture**.
+

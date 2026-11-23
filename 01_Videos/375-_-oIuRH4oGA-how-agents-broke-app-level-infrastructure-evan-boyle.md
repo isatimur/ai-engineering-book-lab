@@ -10,8 +10,8 @@ view_count: 575
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/_-oIuRH4oGA.txt"
 themes:
-  - "MCP & Tooling"
   - "Models & Inference"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:15:46+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Evan Boyle, founder and CEO of GenSX, argues that agents broke the compute assumptions of web 2.0: requests now take seconds to hours, model providers have correlated outages and bursty rate limits, and full-stack AI engineers end up as data engineers. Common serverless platforms time out after about five minutes and lack native streaming. His answer, open-sourced as GenSX, is a React-inspired 'anti-framework' of idempotent, testable components with retry and error boundaries and tracing, deployed on a platform that splits the API layer from a stateless compute layer and routes all status and output through a resumable stream."
@@ -57,8 +57,8 @@ Start simple but plan for long-running agents, as coding agents and deep researc
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[MCP & Tooling]]
 - [[Models & Inference]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > How agents broke infrastructure. Particularly, we're going to focus on the compute layer today. My name is Evan Bole, the founder and CEO in Genisx. I was an early employee of Palumi and I've spent my entire career working on cloud and developer tools. Typo warning. In the spirit of embracing AI for this talk, all diagrams are AI generated, but 40 still has some spelling issues. So, thank you for your patience. We all know this journey. We start off as AI engineers with a simple prompt and a couple of tool calls and typically this is enough to raise our $10 million seed round. But from there, when rubber meets the road, we end up building workflows, right? We take that fully...
@@ -68,5 +68,6 @@ Start simple but plan for long-running agents, as coding agents and deep researc
 - Description cue: LLMs have completely broken our assumptions about app-level workloads. Compared to querying a database, LLMs are extremely flakey and slow. In web 2.0, p99 latency was just a few hundred millisecon...
 
 ## Book angles
-- Could support a chapter/section on **MCP & Tooling**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Agent Architecture**.
+

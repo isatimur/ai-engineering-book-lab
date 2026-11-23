@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/7_WhRAuP2Wg.txt"
 themes:
   - "Voice & Realtime"
+  - "Coding Agents"
 ingested_at: "2026-04-24T12:23:27+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Damien Murphy, senior applied engineer at Deepgram, runs a workshop on a pre-release voice agent API that wraps speech-to-text, an LLM and text-to-speech into one audio-in, audio-out WebSocket, demoed as a drive-thru bot whose LLM places orders through function calls. His thesis: low latency comes from co-locating the pieces and handling endpointing, barge-in and time to first token, and big voice systems should be swarms of small single-purpose agents behind a router, not one huge prompt. Q&A covers semantic endpointing, long-running tools via webhooks, output moderation, regional autoscaling, three-pass human labeling and diarization limits."
@@ -59,6 +60,7 @@ Do not put a whole business in one system prompt. Use a routing agent with singl
 
 ## Theme hooks
 - [[Voice & Realtime]]
+- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] hey everybody yes we're going to get started here uh thanks everybody for coming along um and thanks to AI Engineers for for having us uh my name is Daman Murphy I'm a senior applied engineer at Deep gr a lot of people ask me what is an applied engineer it's a customer facing engineer right so we work directly with customers uh to basically help them achieve their business cases um yeah about 20 years of experience full stack developer uh been working in pre-sales post sales uh really just customer facing roles for the last 10 years or so uh I've helped hundreds of companies uh working with deep gram to actually build uh and scale low latency real-time voice spots uh a lot has...
@@ -69,6 +71,7 @@ Do not put a whole business in one system prompt. Use a routing agent with singl
 
 ## Book angles
 - Could support a chapter/section on **Voice & Realtime**.
+- Could support a chapter/section on **Coding Agents**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

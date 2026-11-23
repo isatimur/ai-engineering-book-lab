@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/9-vGxMoUM9Y.txt"
 themes:
   - "Evals & Reliability"
-  - "Coding Agents"
 ingested_at: "2026-04-24T12:25:22+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Shreya Rajpal, co-founder and CEO of Guardrails AI, argues that LLMs are non-deterministic, so generative apps need a new paradigm: trust, but verify. Every output passes a verification suite of independent checks (hallucination against sources, PII, profanity, competitor mentions, executable code), and you use the output only if the suite passes. On failure, apply a policy: re-ask with the violation so the model self-heals, fix, filter, fall back, or log. Prompts and fine-tunes give no guarantee; ground checks in external systems, rules, or small classifiers before reaching for LLM self-reflection."
@@ -54,7 +53,6 @@ A help-centre RAG chatbot must not hallucinate, swear or mention competitors. A 
 
 ## Theme hooks
 - [[Evals & Reliability]]
-- [[Coding Agents]]
 
 ## Transcript excerpt
 > [Music] hey everyone thank you for coming I am Shrea rajal I am the uh I one of the co-founders and the CEO of God rails AI uh and today we are going to be talking about trust but verify which is a new programming paradigms that we need as we're entering gen native uh application development uh before we get started a little bit about me uh uh as I mentioned I'm currently uh at God reals AI in the past I've spent about a decade or so working in machine learning uh previously I was the machine learning infrastructure lead at prase which is uh an infrastructure uh machine learning infrastructure company I spent uh a number of years in the self-driving car space working across the stack of...
@@ -65,4 +63,4 @@ A help-centre RAG chatbot must not hallucinate, swear or mention competitors. A 
 
 ## Book angles
 - Could support a chapter/section on **Evals & Reliability**.
-- Could support a chapter/section on **Coding Agents**.
+

@@ -10,9 +10,7 @@ view_count: 9933
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/_A367W_qvc8.txt"
 themes:
-  - "Coding Agents"
-  - "Agent Architecture"
-  - "Evals & Reliability"
+  - "Models & Inference"
 ingested_at: 2026-04-29T22:48:24+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Cassidy Hardin, a researcher at Google DeepMind, walks through the architecture of Gemma 4, launched the week before under an Apache 2.0 license. It comes in four sizes: a 31B dense model, the first Gemma mixture-of-experts (26B total, about 3.8B active, 128 experts with 8 active plus one shared), and effective 2B and 4B on-device models. She explains the 5:1 local-to-global attention, grouped query attention, per-layer embeddings kept in flash memory instead of VRAM, variable aspect ratio and resolution for images with a chosen soft-token budget, and a conformer audio encoder on the small models."
@@ -55,9 +53,7 @@ Self-host from Hugging Face, Kaggle or a local model runner, or use the two larg
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
-- [[Agent Architecture]]
-- [[Evals & Reliability]]
+- [[Models & Inference]]
 
 
 ## Transcript excerpt
@@ -68,9 +64,7 @@ Self-host from Hugging Face, Kaggle or a local model runner, or use the two larg
 - Description cue: Open models are getting smaller, faster, and far more capable. In this talk, Cassidy Hardin walks through the latest advances in the Gemma family, with a focus on Gemma 4 and what it enables for developers building on-device and open-weight AI systems. She covers the architecture behind Gemma’s dense, effective, and mixture-of-experts models, including improvements to attention, multimodal support for text, vision, and audio, and the design decisions that make strong reasoning, coding, and agentic workflows possible at practical sizes.
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **Models & Inference**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

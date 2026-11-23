@@ -11,7 +11,6 @@ transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/WkBPX-oDMnA.txt"
 themes:
   - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -58,7 +57,6 @@ He cites Alan Kay's essay of 50 years ago on a personal computer for children of
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
 
 
@@ -70,5 +68,5 @@ He cites Alan Kay's essay of 50 years ago on a personal computer for children of
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

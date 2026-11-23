@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/zuMw0pkPXpU.txt"
 themes:
   - "MCP & Tooling"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:18:59+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Roy Derks (IBM) argues that 'the agent is only as good as your tool', yet teams pour effort into agents and bury tools inside their framework. He contrasts traditional tool calling, where your app parses and runs each call, with embedded tool calling, a black box such as LangChain's create_react_agent. He favours separating tools from agents through MCP or a standalone tool platform (IBM's wxflows) so tools work across LangGraph, CrewAI and AutoGen, and he makes the case for dynamic tools where the LLM writes GraphQL or SQL against a schema instead of a hundred static tools."
@@ -55,7 +54,6 @@ Ten tools are fine, but a hundred tools confuse the agent and need routers. His 
 
 ## Theme hooks
 - [[MCP & Tooling]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > tool calling is not just Plumbing for AI agents this talk I'm going to show you why tool calling is more important than some people think and how you can use tool calling with your AG gentic Frameworks we'll be looking at some of the techniques for Tool calling as regular tool calling or meta tool calling how this works with agent Frameworks and also some other considerations like do you need a separate tool platform or can you look at different types of tools where than the tools we today your own if you think about Plumbing uh some people say you should do your own Plumbing some other people say you should always hire a professional I hope at the end of this talk you'll be feeling like I...
@@ -66,7 +64,6 @@ Ten tools are fine, but a hundred tools confuse the agent and need routers. His 
 
 ## Book angles
 - Could support a chapter/section on **MCP & Tooling**.
-- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

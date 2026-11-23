@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/CS5Cmz5FssI.txt"
 themes:
   - "Coding Agents"
-  - "RAG & Retrieval"
 ingested_at: "2026-04-24T09:58:29+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Gergely Orosz, former Uber engineer and author of The Pragmatic Engineer newsletter, talks with the conference host about what AI is doing inside big tech. His thesis: individuals are clearly faster, but teams struggle to retrofit AI into old ways of working, and measuring token use has created 'token maxing', a Goodhart's-law game like lines of code. He describes token leaderboards at Meta and Microsoft, a monthly spend target at Salesforce, Uber-style rebuilds of internal infra (background agents, MCP gateways, risk-based code review), and argues that orchestrating agents is a tech-lead role, not people management."
@@ -53,7 +52,6 @@ The talk ends with the newsletter's growth: 100 people paid $100 upfront before 
 
 ## Theme hooks
 - [[Coding Agents]]
-- [[RAG & Retrieval]]
 
 ## Transcript excerpt
 > Sure game. >> All right. I going to assume most of you uh show of hands who subscribes to Pragmatic Engineer. Oh my god. >> Wow. uh he is uh he needs no introduction. Then let's get right into it. Um what is token maxing and should everyone here be doing it? >> So I I heard about token maxing a week ago or like week and a half ago first and you know some people have been doing it for longer and I tweeted about it I think three days ago saying oh there's this token maxing and again you see it on social media and my DMs were blowing up from from people at large companies. I don't want to name names but like you know Meta, Microsoft uh some so some some other ones as well like uh the likes of...
@@ -64,7 +62,6 @@ The talk ends with the newsletter's growth: 100 people paid $100 upfront before 
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

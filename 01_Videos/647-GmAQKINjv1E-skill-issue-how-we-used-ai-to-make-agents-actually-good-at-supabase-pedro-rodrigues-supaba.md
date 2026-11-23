@@ -13,6 +13,7 @@ themes:
   - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
+  - "MCP & Tooling"
 ingested_at: 2026-05-07T23:19:35+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Pedro Rodrigues, an AI tooling engineer at Supabase who works on agent experience, shows how skills teach agents what training data misses. In his demo, Claude Code builds a Postgres view that silently bypasses row-level security and leaks salary data to every user. A short security skill makes it add the security invoker flag. He explains progressive disclosure, why MCP and skills complement each other (the tool connects, the skill explains its use), and a with-skill versus without-skill eval loop. His live eval gave the wrong verdict because of a badly written assertion, which shows how tricky evals are."
@@ -55,6 +56,7 @@ Locally, many installed skills cost little because descriptions are small. In CI
 - [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
+- [[MCP & Tooling]]
 
 
 ## Transcript excerpt
@@ -67,6 +69,7 @@ Locally, many installed skills cost little because descriptions are small. In CI
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **MCP & Tooling**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

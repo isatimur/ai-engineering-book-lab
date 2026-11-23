@@ -11,7 +11,6 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/IxXMKT2FDRk.txt"
 themes:
   - "Org Design & Leadership"
-  - "Models & Inference"
 ingested_at: "2026-04-24T12:22:06+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Dr. Bryan Bischof, who builds AI capabilities at Hex and whose early tweet about hiring an AI engineer helped inspire the term, explains how to staff an AI product team. Hiring should follow the development schedule: ship an early product, build evals, get feedback, iterate. Early teams need a full-stack engineer, a data scientist for evals and user data, a product person and a designer; ML engineers come later. He warns against the mythical man-month, calls LeetCode interviews useless for this work, and tests data intuition with a seven-day, four-hour data-cleaning take-home. His bonus advice is to work daily with domain experts."
@@ -54,7 +53,6 @@ He puts security mostly outside the AI team; an attendee from Los Alamos argues 
 
 ## Theme hooks
 - [[Org Design & Leadership]]
-- [[Models & Inference]]
 
 ## Transcript excerpt
 > [Music] hex is a data science platform company um what you should think about is sort of like a really powerful Jupiter notebook um I've been building AI capabilities at hex for about a year and a half I've been in data science and machine learning for about 12 years so let's just let's get one thing out of the way um why might you care about my opinion well um let's take a look at this tweet of mine this is when I was hiring my first AI engineer I'll draw your attention to the date I'll also draw your attention to the date on this very famous blog post um so uh my my tweet was one of The Inspirations for the rise of the AI engineer um that does not mean that I'm fully aligned with that...
@@ -65,4 +63,4 @@ He puts security mostly outside the AI team; an attendee from Los Alamos argues 
 
 ## Book angles
 - Could support a chapter/section on **Org Design & Leadership**.
-- Could support a chapter/section on **Models & Inference**.
+

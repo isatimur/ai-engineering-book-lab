@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/eJOjdjO45Sc.txt"
 themes:
   - "RAG & Retrieval"
   - "Models & Inference"
+  - "Agent Architecture"
 ingested_at: "2026-04-24T12:18:01+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Aarush Selvan (product manager) and Mukund Sridhar (software engineer) explain how they built Deep Research in Gemini: remove the compute and latency limits at inference time, within a five-minute budget, and trade that for a much more comprehensive answer. They cover the product side (an editable research plan card, live browsing of websites, a pinned report artifact, full source lists) and four engineering challenges: long-running task state, iterative planning over partial information, a noisy and fragmented web, and context growth managed with recency bias and research notes in RAG. They close with expertise, personalization and multimodal tools as next steps."
@@ -52,6 +53,7 @@ The team was surprised by the reception after the December launch. They see thre
 ## Theme hooks
 - [[RAG & Retrieval]]
 - [[Models & Inference]]
+- [[Agent Architecture]]
 
 ## Transcript excerpt
 > [Music] Hey everyone, I'm Arouch. I'm a product manager here at Google. Hey, I'm Ukun. I'm a software engineer at Google working on deep research. Um, so uh I don't know if people have had a chance to uh try deep research on Gemini um or are familiar with the product, but you can try it if you go to Gemini advanced and if you scroll past 2.0 flash 2.0 flash thinking experimental 2.0 0 Flash thinking experimental with apps 2.0 pro experimental you will find uh 1.5 pro with deep research which is what we built. Um and if you have the chance to use it and you pay the 20 bucks uh you will see that it's a personal research agent that can browse the web for you to to build the reports on your...
@@ -63,3 +65,5 @@ The team was surprised by the reception after the December launch. They see thre
 ## Book angles
 - Could support a chapter/section on **RAG & Retrieval**.
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Agent Architecture**.
+

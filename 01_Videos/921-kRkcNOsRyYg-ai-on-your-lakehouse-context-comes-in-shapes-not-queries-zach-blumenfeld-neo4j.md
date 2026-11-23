@@ -12,7 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/kRkcNOsRyYg.txt"
 themes:
   - "Coding Agents"
   - "Agent Architecture"
-  - "Evals & Reliability"
+  - "RAG & Retrieval"
 ingested_at: 2026-07-26T22:22:10+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Zach Blumenfeld, an AI research engineer at Neo4j, runs a two-hour hands-on workshop arguing that text-to-SQL and vector search reach lakehouse data but give agents the wrong context for estate-level questions such as what documentation is missing. Using a fictional auto repair chain on BigQuery and Claude Code, he builds three graph shapes: a metadata semantic layer for joins (no ETL of the warehouse data), a deterministic table-of-contents tree with hierarchical URIs and cross-links plus scoped full-text search, and Leiden community themes from document links with no LLM labelling. The agent combines them to find gaps and patterns."
@@ -54,7 +54,7 @@ The agent writes the complex graph queries from specs in a docs folder, using th
 ## Theme hooks
 - [[Coding Agents]]
 - [[Agent Architecture]]
-- [[Evals & Reliability]]
+- [[RAG & Retrieval]]
 
 
 ## Transcript excerpt
@@ -66,7 +66,7 @@ The agent writes the complex graph queries from specs in a docs folder, using th
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
-- Could support a chapter/section on **Evals & Reliability**.
+- Could support a chapter/section on **RAG & Retrieval**.
 
 ## Artifacts
 Shipped alongside this talk (from the video description; registry: `evidence/Shared Artifacts.md`):

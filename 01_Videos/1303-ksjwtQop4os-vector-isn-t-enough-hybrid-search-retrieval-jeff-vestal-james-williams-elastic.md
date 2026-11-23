@@ -10,7 +10,6 @@ view_count: 4000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/ksjwtQop4os.txt"
 themes:
-  - "Coding Agents"
   - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-10-30T20:46:25+00:00
@@ -55,7 +54,6 @@ Reranking scores query and document together at query time, so it cannot be pre-
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
 - [[Agent Architecture]]
 - [[Evals & Reliability]]
 
@@ -67,6 +65,6 @@ Reranking scores query and document together at query time, so it cannot be pre-
 - Full cleaned transcript: [[99_Meta/transcripts/plain/ksjwtQop4os.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
 - Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

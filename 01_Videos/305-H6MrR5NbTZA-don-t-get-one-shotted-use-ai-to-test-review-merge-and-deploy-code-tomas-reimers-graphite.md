@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/H6MrR5NbTZA.txt"
 themes:
   - "Coding Agents"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:12:54+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Tomas Reimers, co-founder of Graphite, an AI code review company, argues in a six-minute lightning talk that AI has sped up the inner loop of writing code, so the outer loop of testing, review, merge and deploy is now the bottleneck. Problems that once hit only large companies now hit everyone. Bots and AI teammates are not enough: the whole tool chain must be AI-native, not just the IDE. He presents Diamond, Graphite's AI reviewer, and says its comments are accepted about 52% of the time, above the 45 to 50% rate for human comments, with fewer than 4% drawing a negative reaction."
@@ -53,6 +54,7 @@ Diamond summarizes, prioritizes and reviews each change, draws on the codebase a
 
 ## Theme hooks
 - [[Coding Agents]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > Awesome. [Music] Uh, hi everyone. My name is Tomas. I'm one of the co-founders of Graphite. Graphite is an AI code review uh, company. So to give some context on sort of where we see the industry right now and where we see it going. Software development currently and has always had two loops. The inner loop which is focused on development and the outer loop that's focused on review. Developers spend time in the inner loop. They get their code working. They get the feature the way they want it and then they go ahead and they move it to the outer loop where it's tested, reviewed, merged, deployed. We're seeing the inner loop change right now more than we've ever seen it. More developers are...
@@ -63,3 +65,5 @@ Diamond summarizes, prioritizes and reviews each change, draws on the codebase a
 
 ## Book angles
 - Could support a chapter/section on **Coding Agents**.
+- Could support a chapter/section on **Evals & Reliability**.
+

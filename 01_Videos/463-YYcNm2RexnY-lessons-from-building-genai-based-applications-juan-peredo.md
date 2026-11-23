@@ -12,6 +12,7 @@ transcript_path: "99_Meta/transcripts/plain/YYcNm2RexnY.txt"
 themes:
   - "Models & Inference"
   - "RAG & Retrieval"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:19:23+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Juan Peredo, a founder, architect and consultant with over 15 years in IT, distils a year and a half of building GenAI applications. His thesis: a chatbot is easy to build, but adding AI brings a new layer of work (model choice, hosting, hallucination control, evaluation, cost, observability). He walks through prompt engineering, guardrail LLMs, RAG and fine-tuning, argues that prompts must never be hard-coded, and shows that a 3,000-call-per-day agent on OpenAI o1 costs almost $300,000 a month versus about $50,000 on Llama 3.3 70B. Agent traces found a bug that came from a lowercase user name."
@@ -51,6 +52,7 @@ Agents are probabilistic, so a step that ran 100 times can fail on the next one.
 ## Theme hooks
 - [[Models & Inference]]
 - [[RAG & Retrieval]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > hello and welcome today we're going to talk about the lessons I've learned from building gen application over the last year and a half my name is Juan pero and I'll be your guide in this journey I'm a Founder architect consultant developer and everything in between uh and I have over 15 years experience uh in the IT industry and one of the first things uh everyone hears when they're talking about AI is about how much faster developers can code thanks to AI you can hear this and you've heard this before I can guarantee that nowadays you can just take a prompt put it into an llm and you will and the llm will code your website for you in about a minute or so and we all know that that's not...
@@ -62,3 +64,5 @@ Agents are probabilistic, so a step that ran 100 times can fail on the next one.
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **RAG & Retrieval**.
+- Could support a chapter/section on **Evals & Reliability**.
+

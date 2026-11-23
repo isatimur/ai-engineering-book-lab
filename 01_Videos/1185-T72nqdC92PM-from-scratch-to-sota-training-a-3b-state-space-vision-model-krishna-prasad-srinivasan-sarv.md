@@ -10,8 +10,6 @@ view_count: 121000
 transcript_status: auto_en_orig
 transcript_path: "99_Meta/transcripts/plain/T72nqdC92PM.txt"
 themes:
-  - "Coding Agents"
-  - "Agent Architecture"
   - "Evals & Reliability"
 ingested_at: 2026-10-30T15:45:23+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
@@ -58,8 +56,6 @@ The model powers an agentic document workbench with human-in-the-loop review, co
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Coding Agents]]
-- [[Agent Architecture]]
 - [[Evals & Reliability]]
 
 
@@ -70,6 +66,5 @@ The model powers an agentic document workbench with human-in-the-loop review, co
 - Full cleaned transcript: [[99_Meta/transcripts/plain/T72nqdC92PM.txt]]
 
 ## Book angles
-- Could support a chapter/section on **Coding Agents**.
-- Could support a chapter/section on **Agent Architecture**.
 - Could support a chapter/section on **Evals & Reliability**.
+

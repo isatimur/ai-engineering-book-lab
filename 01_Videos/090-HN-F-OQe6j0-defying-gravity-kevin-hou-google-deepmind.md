@@ -10,8 +10,8 @@ view_count: 104295
 transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/HN-F-OQe6j0.txt"
 themes:
-  - "Models & Inference"
   - "Org Design & Leadership"
+  - "Coding Agents"
 ingested_at: "2026-04-24T11:22:29+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Kevin Hou, who leads product engineering for Google Antigravity, presents the new agent-first IDE launched with Gemini 3 Pro and the three-step logic behind it. First, raise the capability ceiling with an agent-controlled Chrome browser for context and verification, plus image generation for mockups. Second, a new interaction pattern: an agent manager with an inbox and dynamic artifacts (plans, task lists, walkthroughs, screen recordings) that users comment on like Google Docs. Third, a research-product flywheel inside DeepMind, where internal use exposes model gaps that evals miss, such as the model's early weakness with artifacts."
@@ -53,8 +53,8 @@ An artifact is something the agent generates as a dynamic representation of info
 - Transcript status: `auto_en_orig`
 
 ## Theme hooks
-- [[Models & Inference]]
 - [[Org Design & Leadership]]
+- [[Coding Agents]]
 
 ## Transcript excerpt
 > [music] All right. Hello. Last one of the day. Can we get a uh little energy boost? Who's ready? Who's ready? [applause] All right, happy Friday. I hope everyone has had a good week, a good conference. Um, and let me tell you, it's been a really bad week if you are Gravity. Wicked 2 is coming out tonight. And then, of course, Anti-gravity came out earlier this week alongside Gemini 3 Pro on Tuesday. Google Anti-gravity is a brand new IDE out of Google DeepMind. It's the first one from a foundational lab and it is coming right off the press. In fact, um I probably should be working on the product right now, but I wanted to spend some time to share what we've built here today. Anti-gravity is...
@@ -64,5 +64,6 @@ An artifact is something the agent generates as a dynamic representation of info
 - Description cue: Why we built Google Antigravity, and discussing the future of agentic IDEs with Gemini 3.
 
 ## Book angles
-- Could support a chapter/section on **Models & Inference**.
 - Could support a chapter/section on **Org Design & Leadership**.
+- Could support a chapter/section on **Coding Agents**.
+

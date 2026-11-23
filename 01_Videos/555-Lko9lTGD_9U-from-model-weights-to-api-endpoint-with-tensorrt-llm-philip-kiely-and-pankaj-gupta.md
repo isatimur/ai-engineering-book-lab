@@ -11,6 +11,7 @@ transcript_status: "auto_en_orig"
 transcript_path: "99_Meta/transcripts/plain/Lko9lTGD_9U.txt"
 themes:
   - "Models & Inference"
+  - "Evals & Reliability"
 ingested_at: "2026-04-24T12:23:40+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
 summary: "Philip Kiely (developer relations) and Pankaj Gupta (co-founder) of an inference platform run a two-hour workshop on TensorRT-LLM. Their thesis: an optimized engine is a made-to-measure suit, built for one GPU, sequence length, batch size and precision, and the payoff is worth the steep learning curve. They build a TinyLlama 1.1B engine by hand on a rented 4090, then an FP8 engine at half the size, explain why FP8 makes KV-cache quantization practical, automate the build with their open-source Truss framework, and benchmark with percentiles to show performance is not linear in batch size. They close on autoscaling and cold starts."
@@ -53,6 +54,7 @@ Engines run on Triton. Autoscaling uses a forked Knative so settings apply in ab
 
 ## Theme hooks
 - [[Models & Inference]]
+- [[Evals & Reliability]]
 
 ## Transcript excerpt
 > [Music] I am here with uh with Punk scupa he's the co-founder of base 10 um actually so today uh I was I was checking slack and in the random slack channel one of the people in the company uh was saying like hey you know I heard someone say call someone cracked what does what does cracked mean um and you know those uh those of you who are you know jenzy like me or or or know someone like that is like laughing right now because crack just means a uh an exceptional engineer and so Punk is the most crack software engineer I've ever had the uh pleasure of working with um he's uh from San Francisco his favorite model is llama 38b um we're going to be working with a smaller version of that today...
@@ -63,3 +65,5 @@ Engines run on Triton. Autoscaling uses a forked Knative so settings apply in ab
 
 ## Book angles
 - Could support a chapter/section on **Models & Inference**.
+- Could support a chapter/section on **Evals & Reliability**.
+
