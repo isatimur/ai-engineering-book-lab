@@ -9,6 +9,8 @@ import { EvidenceRail } from '../EvidenceRail';
 import evidenceTwoData from '../evidence-2.json';
 import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
+import { LightboxProvider, useLightbox } from '../lib/lightbox';
+import { type FigureTwo, figureTwoSrc, inlineFiguresTwo, openerTwo } from '../data/figuresTwo';
 
 const NotFound = () => (
   <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col items-center justify-center gap-4 font-serif">
@@ -23,13 +25,36 @@ const NotFound = () => (
   </div>
 );
 
+/** The chapter's opener figure, the book-2 twin of ChapterDetail's EvidenceExhibit. */
+const OpenerFigure = ({ fig, chapterNo }: { fig: FigureTwo; chapterNo: number }) => {
+  const { open } = useLightbox();
+  const src = figureTwoSrc(fig);
+  return (
+    <div className="w-full py-10 lg:py-14 px-6 flex flex-col items-center border-y border-[var(--color-border)] mt-4">
+      <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-6 text-center">
+        THE ARGUMENT · CHAPTER {chapterNo}
+      </div>
+      <figure className="w-full max-w-[1000px] mx-auto bg-white rounded-md shadow-xl overflow-hidden border border-[var(--color-border)]">
+        <button
+          type="button"
+          onClick={() => open(src, `Chapter ${chapterNo} — ${fig.title}`)}
+          className="block w-full cursor-zoom-in p-3 lg:p-5"
+          aria-label={`Enlarge chapter ${chapterNo} opener: ${fig.title}`}
+        >
+          <img src={src} alt={fig.title} className="block w-full h-auto" loading="lazy" />
+        </button>
+      </figure>
+    </div>
+  );
+};
+
 /**
  * Trimmed-down sibling of ChapterDetail.tsx (book 1) for book 2's single-
- * chapter route. Reading + evidence rail only, per
- * programs/second_book_website_wiring.md — no diagrams (book 2 has none
- * yet), no audiobook, no judge scorecard (no judge-panel run exists yet),
- * no evidence-graph link (book 2 has no graph page). Deliberately unlinked
- * from nav/Catalogue — reachable only by direct URL for now.
+ * chapter route. Reading + evidence rail, plus book 2's own figures from
+ * data/figuresTwo.ts (opener above the text, inline figures after their
+ * section headings, click to zoom). Still no audiobook, no judge scorecard
+ * (no judge-panel run exists yet) and no evidence-graph link (book 2 has no
+ * graph page).
  */
 export const SecondBookChapterDetail = () => {
   const { slug } = useParams();
@@ -39,9 +64,10 @@ export const SecondBookChapterDetail = () => {
   const idx = chaptersTwo.indexOf(chapter);
   const prev = idx > 0 ? chaptersTwo[idx - 1] : undefined;
   const next = idx < chaptersTwo.length - 1 ? chaptersTwo[idx + 1] : undefined;
+  const opener = openerTwo(chapter.number);
 
   return (
-    <>
+    <LightboxProvider>
       <Seo
         title={`${chapter.seoTitle ?? chapter.title} — Second Book (Draft)`}
         description={chapter.promise}
@@ -64,8 +90,10 @@ export const SecondBookChapterDetail = () => {
           <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
         </div>
 
+        {opener && <OpenerFigure fig={opener} chapterNo={parseInt(chapter.number, 10)} />}
+
         <article className="max-w-3xl mx-auto px-6 pt-10">
-          <SecondBookArticle chapter={chapter} />
+          <SecondBookArticle chapter={chapter} figures={inlineFiguresTwo(chapter.number)} />
         </article>
 
         <section className="max-w-3xl mx-auto px-6 pt-8">
@@ -91,7 +119,7 @@ export const SecondBookChapterDetail = () => {
           ) : <span />}
         </nav>
       </div>
-    </>
+    </LightboxProvider>
   );
 };
 

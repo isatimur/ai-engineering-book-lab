@@ -68,7 +68,45 @@ async function copyIfDifferent(src, dst) {
   return false;
 }
 
+// Book 2 figures: diagrams-2/figures.json is the single figure spec, and each
+// entry's `file` is a PNG under diagrams-2/. Copy the spec to
+// src/data/figures-2.json and the PNGs to public/diagrams-2/. Same skip rule
+// as the chapters: with no diagrams-2/ in this checkout, keep the committed
+// copies. The checks live in src/data/figuresTwo.test.ts, not here, because
+// this script skips in CI.
+function findFiguresRoot() {
+  let dir = repoRoot;
+  for (let i = 0; i < 5; i++) {
+    const candidate = join(dir, 'diagrams-2', 'figures.json');
+    if (existsSync(candidate)) return dirname(candidate);
+    const parent = resolve(dir, '..');
+    if (parent === dir) break;
+    dir = parent;
+  }
+  return null;
+}
+
+async function syncFigures() {
+  const root = findFiguresRoot();
+  if (!root) {
+    log('diagrams-2/figures.json not found - skipping figure sync (using committed copies)');
+    return;
+  }
+  const specSrc = join(root, 'figures.json');
+  const spec = JSON.parse(await readFile(specSrc, 'utf8'));
+  let copied = 0;
+  let kept = 0;
+  for (const fig of spec.figures) {
+    const src = join(root, fig.file);
+    if (!existsSync(src)) throw new Error(`figure ${fig.id}: ${fig.file} not found in diagrams-2/`);
+    (await copyIfDifferent(src, join(websiteRoot, 'public', 'diagrams-2', fig.file))) ? copied++ : kept++;
+  }
+  (await copyIfDifferent(specSrc, join(websiteRoot, 'src', 'data', 'figures-2.json'))) ? copied++ : kept++;
+  log(`figures done. copied=${copied} kept=${kept} -> public/diagrams-2/ (${spec.figures.length} figures)`);
+}
+
 async function main() {
+  await syncFigures();
   if (!existsSync(draftingRoot)) {
     log(`source public/drafting-2/ not found at ${draftingRoot} - skipping sync (using committed src/content-2/ artifacts)`);
     return;

@@ -1,16 +1,8 @@
+import { Fragment } from 'react';
 import { type BookChapter } from '../../data/bookChapters';
 import { MarkdownBlock } from '../text/MarkdownBlock';
-
-/**
- * Strips the drafting-stage `[[id-slug|Label]]` wikilink syntax that book 2's
- * source-anchoring pass still uses (see claims-2/Claims Ledger.md and
- * public/drafting-2/*.md) down to its display label. Book 1's content has
- * already gone through a later pass that removes these; book 2 hasn't yet
- * (out of scope for this pass — see research_passes/2026-08-25-second-book-website-wiring.md).
- * This is presentation-only: it does not touch the synced content files.
- */
-const stripWikilinks = (text: string): string =>
-  text.replace(/\[\[[^\]|]+\|([^\]]+)\]\]/g, '$1').replace(/\[\[([^\]|]+)\]\]/g, '$1');
+import { InlineIllustration } from './InlineIllustration';
+import { type FigureTwo, figureTwoSrc, normaliseHeading, stripWikilinks } from '../../data/figuresTwo';
 
 /**
  * A trimmed-down sibling of ChapterArticle.tsx for book 2. Deliberately does
@@ -23,7 +15,22 @@ const stripWikilinks = (text: string): string =>
  * building blocks (MarkdownBlock) and renders book 2's own evidence via
  * <EvidenceRail evidenceData={...}> in the caller instead.
  */
-export const SecondBookArticle = ({ chapter }: { chapter: BookChapter }) => {
+// stripWikilinks lives in data/figuresTwo.ts so the figure-heading check and
+// this renderer normalise headings the same way. It strips the drafting-stage
+// `[[id-slug|Label]]` syntax book 2's source-anchoring pass still uses down to
+// its label. Presentation-only: it does not touch the synced content files.
+//
+// `figures` (book 2 only) places each inline figure after the `## ` heading
+// whose normalised text equals its `sectionHeading`. Book 3 passes none.
+export const SecondBookArticle = ({
+  chapter,
+  figures = [],
+}: {
+  chapter: BookChapter;
+  figures?: FigureTwo[];
+}) => {
+  const chapterNo = parseInt(chapter.number, 10);
+  let figureCount = 0;
   const rawBlocks = chapter.content
     .split(/\n{2,}/)
     .map((b) => b.trim())
@@ -45,9 +52,23 @@ export const SecondBookArticle = ({ chapter }: { chapter: BookChapter }) => {
         <span className="mx-3">/</span>
         <span>{chapter.status}</span>
       </div>
-      {blocks.map((block, index) => (
-        <MarkdownBlock key={`${chapter.number}-${index}`} block={stripWikilinks(block)} />
-      ))}
+      {blocks.map((block, index) => {
+        const heading = block.startsWith('## ') ? normaliseHeading(block) : null;
+        const fig = heading ? figures.find((f) => f.sectionHeading === heading) : undefined;
+        if (fig) figureCount += 1;
+        return (
+          <Fragment key={`${chapter.number}-${index}`}>
+            <MarkdownBlock block={stripWikilinks(block)} />
+            {fig && (
+              <InlineIllustration
+                fig={{ src: figureTwoSrc(fig), title: fig.title }}
+                label={`Figure ${chapterNo}.${figureCount}`}
+                alwaysVisible
+              />
+            )}
+          </Fragment>
+        );
+      })}
     </div>
   );
 };

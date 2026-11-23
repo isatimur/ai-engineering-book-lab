@@ -2,14 +2,19 @@ import { type InlineDiagram } from '../../lib/manifest';
 import { useLightbox } from '../../lib/lightbox';
 
 type Props = {
-  fig: InlineDiagram;
+  fig: Pick<InlineDiagram, 'src' | 'title'>;
   label: string;
+  /**
+   * Book 1 hides inline figures at `lg` and up, because its sticky stage shows
+   * them there. Book 2 has no sticky stage, so it shows them at every width.
+   */
+  alwaysVisible?: boolean;
 };
 
-export const InlineIllustration = ({ fig, label }: Props) => {
+export const InlineIllustration = ({ fig, label, alwaysVisible = false }: Props) => {
   const { open } = useLightbox();
   return (
-    <figure className="my-12 border border-[var(--color-border)] bg-white lg:hidden">
+    <figure className={`my-12 border border-[var(--color-border)] bg-white${alwaysVisible ? '' : ' lg:hidden'}`}>
       <button
         type="button"
         onClick={() => open(fig.src, `${label} — ${fig.title}`)}
