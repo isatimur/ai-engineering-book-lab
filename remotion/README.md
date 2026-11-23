@@ -116,3 +116,35 @@ assembly pattern, the theme).
   and the system sans/mono stacks, all present in Chrome by default. Keeps
   rendering reproducible without a network call; swap in `@remotion/google-fonts`
   later if the brand wants a specific display face.
+
+## Interface
+
+- `[package.json:scripts]` — `studio`, `render:ch01`, `still:ch01`, `render:ch02`, `still:ch02`, `render:og`, `upgrade`. Each `render:*` / `still:*` script names a composition `id` from `src/Root.tsx`.
+- `[remotion.config.ts]` — Remotion CLI config: `setBrowserExecutable` (from `$REMOTION_BROWSER_EXECUTABLE`, default `/usr/local/bin/google-chrome`), `setVideoImageFormat('jpeg')`, `setOverwriteOutput(true)`, `setChromiumOpenGlRenderer('swangle')`.
+- `public/cover.png` — static asset that the chapter `OutroScene`s load with `staticFile('cover.png')`.
+- Subdirectories:
+  - [src](./src/README.md) — entry point, composition registry (`Chapter01`, `Chapter02`, `OgCard`), and theme.
+    - [src/shared](./src/shared/README.md) — `SeriesWithProgress`, `FadeInOut`, `TermCard` and other shared primitives.
+    - [src/chapter01](./src/chapter01/README.md) — Chapter 1 explainer.
+    - [src/chapter02](./src/chapter02/README.md) — Chapter 2 explainer.
+    - [src/ogcard](./src/ogcard/README.md) — 1200x630 og:image card.
+  - [scripts](./scripts/README.md) — `render-og-cards.mjs`, the batch renderer behind `npm run render:og`.
+
+## Invariants
+
+- One frame rate for the series: `[src/theme.ts:FPS]` (30).
+- Each chapter's `durations.ts:SCENE_DURATIONS` is the single source of its frame budget; `Root.tsx` reads its `TOTAL_DURATION_IN_FRAMES`.
+- Chapters import `src/shared/primitives.tsx` and `src/theme.ts`; they never fork them.
+- Chapter OG data lives in two hand-kept copies that must match `website/src/data/bookChapters.ts`: `[src/ogcard/chapters.ts:OG_CARD_CHAPTERS]` and `[scripts/render-og-cards.mjs:CHAPTERS]`. The script does not import the TypeScript list.
+- Quote-card timestamps are the real Source Anchor start times (see the table above).
+
+## Side Effects
+
+- Renders write to `out/` (gitignored): `out/chapter-*.mp4`, `out/chapter-*.png`, `out/og/chapter-NN.png`. `setOverwriteOutput(true)` replaces existing files.
+- Every render launches a headless Chrome from the `remotion.config.ts` path.
+- Copies to `../launch-assets/`, `../website/public/og/` and `../website/public/video/` are manual steps; no script here performs them.
+
+## Verification
+
+- Run: `<test-command>` (no test script in `package.json`).
+- Manual check: `npx remotion studio` (all three compositions load), `npm run still:ch01`, and `npm run render:og`.
