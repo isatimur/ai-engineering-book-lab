@@ -42,7 +42,7 @@ The talk ends with the newsletter's growth: 100 people paid $100 upfront before 
 - Token maxing is a live case of Goodhart's law in AI adoption: when token spend becomes a performance signal, engineers produce tokens, not value.
 - The split between individual speed-up and unclear team-level gains gives a precise frame for why AI productivity claims and measured results diverge.
 - The Uber infra list (background agents, MCP gateway, risk-based code review, on-call tooling) is a concrete map of what large companies build in-house rather than buy.
-- His "tech lead, not manager" framing of agent orchestration, with its faster feedback loop, is a usable counter to the "everyone is a manager now" claim.
+- His framing of agent orchestration as a tech lead's role, not a manager's, with its faster feedback loop, is a usable counter to the "everyone is a manager now" claim.
 - Shopify's trade of churn and cost for a head start shows when early, expensive adoption is rational and when a company can wait.
 
 ## Metadata

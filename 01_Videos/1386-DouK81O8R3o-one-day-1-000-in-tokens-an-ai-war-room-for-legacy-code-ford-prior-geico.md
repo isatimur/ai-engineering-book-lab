@@ -15,17 +15,37 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-10-30T23:56:41+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Ford Prior shares a practical take on One Day, $1,000 in Tokens: An AI War Room for Legacy Code. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Ford Prior, senior staff engineer and tech evangelist in GEICO claims tech, argues that agents sped up the coding inner loop but a risk-managed company stays stuck in the outer loop of decisions and approvals. His fix is a multiplayer AI-native war room: decision makers, one driver, a Slack mission channel, and FleetKit, a markdown rulebook built with Anthropic that dispatches research leads, queues human approvals, then dispatches builders. Betting $1,000 of tokens in one day, he ran it on three legacy claims domains (rentals, damages, salvage), saving 8,500 calls a month and producing a fully green-lit migration plan."
 ---
 
 # One Day, $1,000 in Tokens: An AI War Room for Legacy Code — Ford Prior, GEICO
 
 ## Summary
-Ford Prior shares a practical take on One Day, $1,000 in Tokens: An AI War Room for Legacy Code. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Ford Prior is a senior staff engineer and tech evangelist in the claims technology group at GEICO, a 300-engineer group of about 32 pizza teams. His thesis: agents have "basically obliterated" the build step, but GEICO is "a risk management company," so it stays stuck in the outer loop of decisions, approvals and collaboration. The talk shows how his team made that outer loop keep pace.
+
+**The problem**
+Six months earlier, engineers had only 25% of their bandwidth, "on a good day," for major-version work after patches and minor upgrades. GEICO now offloads patch and minor work to agents from spec to deployment. Major work stays rate-limited by two missing things: collaboration (the right people in the room at the right time) and intelligence (fact checking and code crunching fast enough to answer each decision as it comes up).
+
+**The war room**
+The answer is a "multiplayer AI-native war room": a roster of decision makers and subject matter experts, one driver who runs the expensive AI tools, a comms channel, an interactive design studio, the code repositories, and workflows, agent skills, MCPs and agent fleets. The bet: with $1,000 of tokens in one day, map one legacy claims domain end to end (millions of lines of code), have the agent propose one serious change, an agent-callable API, and demo it to his boss at 4 p.m.
+
+**Three runs**
+Using the uplift, transform and reimagine taxonomy from Anthropic's code modernization plugin:
+- Rentals (uplift): the agent extended an existing API and found a way to save 8,500 calls per month.
+- Damages (transform): new agent-callable APIs to unlock a larger workflow.
+- Salvage (reimagine): a migration plan with API specs and design mock-ups, green-lit by product and tech at every level. It also found a production bug.
+
+**How it works**
+The vendor supplies replaceable parts: harness, model, the plugin, and FleetKit. GEICO supplies what cannot be replaced: context (standards, decision "archaeology"), methods (skills) and judgment (who decides what at which gate), kept in repos that agents and humans both correct. FleetKit is a set of markdown rules and protocols built with Anthropic. It takes a goal, dispatches leaders to research, puts decisions in a human-in-the-loop queue such as GitHub issues, then dispatches builders, using beads to track work. Each mission gets a Slack channel. The agent pings the owner of a missing detail from the roster and produces HTML worksheets and architecture diagrams that teams kept afterwards. The driver's laptop was the runtime for a nine-step process, and the plugin checks deterministically that each step produced its artifacts.
+
+**Lessons**
+Do not let the agent set up crons, since each one launches a new expensive session and burns the budget. Prompt caching was higher than expected. Benchmarks against recently written code as golden data showed Sonnet 5.5 wrote legacy code as well as or better than Fable. Next steps: stronger gate enforcement, better search over plain markdown context, and audio transcription of war room talk.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- It moves the AI productivity question from coding speed to the outer loop of decisions and approvals in regulated firms.
+- The split between replaceable vendor parts and irreplaceable company context, methods and judgment is a reusable design rule.
+- FleetKit's research, human approval queue, then build sequence shows a cheap way to gate agent fleets with humans.
+- It gives concrete cost lessons: runaway crons, prompt caching, and a second model matching Fable on golden data.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=DouK81O8R3o

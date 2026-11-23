@@ -14,16 +14,40 @@ themes:
   - "RAG & Retrieval"
 ingested_at: "2026-04-24T12:17:29+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on How to Fail at AI Strategy: Hamel Husain & Greg Ceccarelli. Want to guarantee your AI initiatives are great boardroom presentations but don't actually work?"
+summary: "Hamel Husain, an ML engineer and consultant, and Greg Ceccarelli, an AI startup co-founder and former chief product officer, use Charlie Munger's 'invert, always invert' to give a satirical guide to failing at AI strategy. Each anti-pattern hides real advice: keep teams in silos, promise the moon, wrap work in jargon so domain experts leave the room (call prompt writing 'building agents'), let engineers write prompts, ship untested chatbots, throw tools at problems, treat evals as a vendor problem, trust generic metrics like BLEU and cosine similarity, and above all never look at your data. The real fix: let domain experts review data in simple tools such as spreadsheets."
 ---
 # How to Fail at AI Strategy: Hamel Husain & Greg Ceccarelli
 
 ## Summary
-A practical talk on How to Fail at AI Strategy: Hamel Husain & Greg Ceccarelli. Want to guarantee your AI initiatives are great boardroom presentations but don't actually work?
+Hamel Husain is a machine learning engineer and independent consultant. Greg Ceccarelli is an executive, now co-founder of an AI startup and formerly a chief product officer. Their talk is satire built on Charlie Munger's advice to "invert always invert": a step-by-step guide to "spectacularly mess up your AI strategy". Each joke points at a real failure they have seen.
+
+**Step 1: divide your company**
+Go to every AI conference but never share what you learned. Create silos and reward secrecy. Follow the "anti-value stick": promise customers AI will do everything, buy the most expensive GPUs with no cost-benefit analysis, build systems so tangled only you understand them, and justify every choice with "because AI".
+
+**Step 2: define a fake strategy**
+Fake the diagnosis by highlighting random paragraphs of last year's annual report. Make the guiding policy vague ("become the global AI leader in everything"). Fill the action plan with gimmicks, skip timelines, live in perpetual beta, and post a 4,000-page document in every Slack channel.
+
+**Step 3: communicate in jargon**
+Jargon hides the jobs to be done. Hamel's real example: at a mental health client, saying "we're building agents" instead of "we need to write a prompt" kept the mental health experts out of the room. Say RAG instead of giving the AI the right context, and prompt injection instead of users tricking the AI. Let engineers, not the people who understand customers, write prompts. They even offer a jargon translation guide.
+
+**Step 4: mobilise to lose**
+Assign AI tasks to people with no relevant experience, such as offshore teams with little business context reviewing data. Ship untested chatbots straight to customers. Pull your best engineers off revenue-producing products.
+
+**Step 5: burn it down with tools**
+- Throw tools at problems you never analysed: if retrieval fails, buy a pricier vector database; if agents fail, switch framework; fine-tune without measurement.
+- Treat evals as "a vendor problem". Build a dashboard of every off-the-shelf metric, keep hoarding until one goes up, and optimise cosine similarity, BLEU and ROUGE while ignoring user experience.
+- Never cross-check with domain experts or users.
+- The most potent technique: "avoid looking at data". Trust the AI's output, your gut and your customers as QA.
+- Lock data in a complex custom platform only engineers can use, instead of a spreadsheet or Airtable that domain experts could open.
+
+They close by saying their lived experience is not inverted, and point to their site and an upcoming O'Reilly book with the same material.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Inversion makes the core lessons easy to quote: look at your data, bring domain experts into prompt and eval work, and define what success means before you measure it.
+- The mental health example shows how technical vocabulary can push the people with real domain knowledge out of AI projects.
+- It is a sharp critique of generic eval metrics and vendor-owned evals, and supports chapters that argue for custom, failure-mode-driven evaluation.
+- The tool-first anti-pattern (new vector database, new framework, fine-tune without measurement) names a common way teams avoid error analysis.
+- Simple tools such as spreadsheets for data review are framed as a leadership choice, not just an engineering detail.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=89aQ7T6cMwA

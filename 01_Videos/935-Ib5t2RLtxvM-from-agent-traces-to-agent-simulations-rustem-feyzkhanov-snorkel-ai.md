@@ -15,17 +15,40 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:22:32+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Snorkel AI's Rustem Feyzkhanov argues every company needs a private, production-mimicking benchmark built on the Harbor task format, continuously refreshed from production traces, not just static public benchmarks."
+summary: "Rustem Feyzkhanov, who leads the AI platform team at Snorkel AI, argues that every company needs its own benchmark. Production traces find failures, but they cannot compare agent configurations fairly, because database state and tool versions change between runs. Offline simulation turns traces into repeatable tasks in the Harbor format, with a Docker environment, hidden Oracle and verifiers, sidecar mocks and simulated users. Treat the benchmark as software with its own CI, use it as a release gate, and feed it from production failures in a second loop."
 ---
 
 # From Agent Traces to Agent Simulations — Rustem Feyzkhanov, Snorkel AI
 
 ## Summary
-Rustem Feyzkhanov, who leads the AI platform team at Snorkel AI (a company that sells benchmarks and runs millions of agent simulations per month), argues that production traces alone are useful for spotting failures but not for repeatable comparison — different runs hit different database states and tool versions, so you can't compare configurations apples-to-apples. His fix is offline simulation: turn traces into repeatable tasks and replay them under controlled conditions, scoring not just success rate but cost, latency, and retries. He contrasts this with public benchmarks like SWE-bench (GitHub issue fixing), Terminal-Bench, and computer-use benchmarks, which are useful for orienting on frontier model quality but too generic to ship against — private benchmarks need to mirror a company's own tools, policies, and workflows. For task construction he describes the Harbor format (from the Terminal-Bench team): an instruction.md, a Dockerfile/Compose environment, an Oracle solution plus verifiers (hidden from the agent), and metadata; environments use sidecar containers, mocked APIs, and simulated users (an LLM playing the human) to approximate production without running it. Verifiers combine deterministic checks, LLM-/agent-as-judge scoring, and targeted subject-matter-expert review reserved for cases where the agent and verifier disagree, and the benchmark suite itself gets treated as software with its own CI pipeline (checking pinned dependencies, running the Oracle to confirm solvability, tagging task difficulty) since agents can reward-hack loose verifiers or fail against broken ones. In production this becomes a two-loop system — observability traces feed benchmark expansion, and a simulation runner gates releases — and he flags fixing everything via prompt instructions ("never do this") as an anti-pattern versus placing fixes in the harness, a skill, or structured output where they belong; he also mentions using simulation-generated traces to fine-tune a small planner model to match a large model's performance on specific tasks.
+Rustem Feyzkhanov leads the AI platform team at Snorkel AI, a data-as-a-service company that sells benchmarks and runs millions of agent simulations per month. His three takeaways: every company needs a benchmark; it must be as close to production as possible; and it must be part of the agent life cycle, a data set that production traces keep filling, not a static file.
+
+**Traces find failures; simulations compare**
+A trace shows the input prompt, the agent's actions and the output, so it is good for finding failures in production. But A/B tests on live traffic hit different database states and tool versions, so you "never fully compare apples to apples". Offline simulation turns traces into repeatable tasks. You then compare agent configurations on success rate, cost, latency and retries, in parallel, and test the full stack: model, thinking level, prompt, harness, skills and tools.
+
+**Public benchmarks orient; private benchmarks ship**
+SWE-bench, Terminal-Bench and computer-use benchmarks each cover one narrow domain and mostly report pass rate. A private benchmark must match your use cases, tools and policies. He lists three uses: release the agent, gate each change against regressions, and optimize cost or latency, including training. Snorkel used simulation environments to fine-tune a small model to match a large one on specific tasks.
+
+**Anatomy of a task**
+He uses the Harbor format from the Terminal-Bench team. The agent sees instruction.md and an environment (a Dockerfile or Docker Compose). It does not see the Oracle solution or the verifiers. Metadata completes the task. The Oracle proves the task is solvable.
+
+**Environments as mini production**
+The agent should not know it runs in a simulation. Use a database snapshot, sidecar containers for API services, databases and MCP tools, mocked APIs, and a simulated user: an LLM with its own prompt. For long-horizon tasks, split the work into steps with their own prompts and verifiers, and stop early when the agent fails.
+
+**Verifiers read the whole world**
+Verifiers check the final environment state, the trace and the artifacts. Use deterministic checks for outputs and tool calls, LLM-, harness- or agent-as-judge for plan and trace quality, and subject matter experts only where agent and verifiers disagree.
+
+**Benchmarks are software**
+Agents can reward-hack, verifiers can be too broad or simply wrong, and results can vary a lot. So give the benchmark its own CI: pin dependencies, check the base image and fixtures, run the Oracle, run the agent several times, and tag tasks simple, medium or hard.
+
+**Fix things in the right place**
+He calls prompt stuffing an anti-pattern: "Never do this or only do that." Fix context overload in the harness, a missing procedure in a skill, and output shape in structured output. In production, run two connected loops: observability failures expand the benchmark, and a simulation runner gates each release. In Q&A he recommends a held-out split of about 80/20, plus happy-path and edge cases such as failing tools.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- It gives a precise reason live traces are not enough for evals: database state and tool versions drift, so comparisons are not fair.
+- The Harbor task layout (visible instruction and environment, hidden Oracle and verifiers) is a concrete template for an in-house agent benchmark.
+- The benchmark-CI checklist, especially running the Oracle to prove solvability, tackles reward hacking and broken verifiers before they skew results.
+- The rule to put each fix in the harness, a skill or structured output, not the prompt, is a reusable design principle for agent iteration.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=Ib5t2RLtxvM

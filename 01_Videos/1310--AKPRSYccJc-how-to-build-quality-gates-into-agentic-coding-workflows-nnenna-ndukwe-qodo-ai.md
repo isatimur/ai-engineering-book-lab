@@ -15,17 +15,36 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-10-30T21:02:35+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Nnenna Ndukwe shares a practical take on How to Build Quality Gates into Agentic Coding Workflows. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Nnenna Ndukwe, developer relations lead at Qodo, runs a hands-on workshop arguing that code quality can break down at every SDLC phase, so teams must define quality, codify it as rules and skills in a shared context layer, and verify against the same standards early and often. On a FastAPI payments repo, a coding agent picks relevant rules, writes a structured plan with skill handoffs and TDD, passes deterministic local gates (linters, static analysis, conventional commits), then an AI PR review with severity-ranked rule violations feeds a resolver skill that auto-fixes and re-verifies."
 ---
 
 # How to Build Quality Gates into Agentic Coding Workflows — Nnenna Ndukwe, Qodo AI
 
 ## Summary
-Nnenna Ndukwe shares a practical take on How to Build Quality Gates into Agentic Coding Workflows. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Nnenna Ndukwe is developer relations lead at Qodo, a former full-time software engineer, and describes Qodo as an AI code review platform now expanding into code quality and governance across the SDLC. Her workshop walks through a structured AI coding process on a forkable repo, a small self-contained FastAPI payments API. Her parting advice: even if you do nothing else, ask your AI to analyze the repo's structure and borrow what fits your own workflow.
+
+**The thesis**
+Code quality can break down everywhere: planning, development, review, testing and deployment. So build "qualitydriven systems" with verification built in. Step one is to define what code quality means for your team. Step two is to codify it somewhere every interface (CLI, IDE, CI) can pull from, either in the repo or in a shared context management layer. Then verify "early and often," ideally against the same standards in every phase.
+
+**The repo and its gates**
+The repo holds an AGENTS.md file, a hidden plan directory, rules, skills, docs, tests, static analysis config and a CI workflow. The task is deliberately small but risky: add a refund workflow or capture-retry handling, because payment mutations are where AI code can look "plausibly correct" and still break things. The gates:
+- **Standards gate:** the agent reads the rules and explains which ones apply to this change.
+- **Planning and TDD gate:** a high-level plan plus a build-session execution plan. The template covers summary, problem, constraints, skill routing, scope, behavior scenarios, verification gates, failure and recovery rules, commit plan, starting state and definition of done, and it names the first implementation skill and the TDD prompt chained after it. Her finding: the more detailed and consistent the plan, the better the agent adheres and self-corrects.
+- **Local verification gate:** linters, a type checker, a security scanner, tests, static analysis and conventional commits as "deterministic evidence." She is "a huge believer" in combining deterministic tools with AI, and says always run a local code review before another developer sees the code.
+- **PR review and remediation gate:** the AI reviewer applies the same rules and skills, findings are fixed or documented as deferred, and verification reruns.
+
+**Rules as managed assets**
+In the Qodo portal, rules are ingested from a repo's rules directory or suggested from conventions inferred from the codebase, with good and bad examples for a human to accept. Each rule has a category (accessibility, correctness, maintainability, architecture, security) and a severity; high-severity findings can block merge. Her example: a docstring rule flagged as action required because her org set it that way. Attendees pressed on whether rule selection is deterministic; she says regulated enterprise customers want exactly that, and she is pushing for it.
+
+**Results**
+On the demo PR the review invoked five skills and found one bug (refund idempotency stored in a process-local dictionary, which is not durable), three rule violations and two skill insights. A resolver skill pulled the findings and auto-fixed all six, then reran verification and posted a fix summary to the PR. On an intentionally large PR for her own open-source tool, the full workflow left only one reliability bug for review to find. She also credits audit skills from Aaron Francis (boundaries, drift, names, abstractions, dead code, errors), points to a separate tool for evaluating skills, and names Packmind as an open-source context-layer option.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a complete, copyable quality-gate sequence for agentic coding: rules selection, structured plan, TDD, deterministic local checks, AI review, automated remediation, re-verification.
+- The planning template, with skill routing and an explicit implementation-skill handoff, is a concrete artifact for keeping long agent runs on track.
+- Treats standards as managed assets with categories and severities, which lets teams decide which rule violations block a merge.
+- Surfaces an open problem from the audience: AI choosing which rules apply is non-deterministic, and regulated industries want determinism.
+- The idempotency bug in a payment refund is a clear example of the plausible-but-wrong code that gates exist to catch.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=-AKPRSYccJc

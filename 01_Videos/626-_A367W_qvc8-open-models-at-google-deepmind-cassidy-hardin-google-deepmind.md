@@ -15,17 +15,38 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-04-29T22:48:24+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Cassidy Hardin shares a practical take on Open Models at Google DeepMind. Open models are getting smaller, faster, and far more capable. Key angle: covers model serving or inference tradeoffs; connects the topic back to software engineering practice."
+summary: "Cassidy Hardin, a researcher at Google DeepMind, walks through the architecture of Gemma 4, launched the week before under an Apache 2.0 license. It comes in four sizes: a 31B dense model, the first Gemma mixture-of-experts (26B total, about 3.8B active, 128 experts with 8 active plus one shared), and effective 2B and 4B on-device models. She explains the 5:1 local-to-global attention, grouped query attention, per-layer embeddings kept in flash memory instead of VRAM, variable aspect ratio and resolution for images with a chosen soft-token budget, and a conformer audio encoder on the small models."
 ---
 
 # Open Models at Google DeepMind — Cassidy Hardin, Google DeepMind
 
 ## Summary
-Cassidy Hardin shares a practical take on Open Models at Google DeepMind. Open models are getting smaller, faster, and far more capable. Key angle: covers model serving or inference tradeoffs; connects the topic back to software engineering practice.
+Cassidy Hardin is a researcher at Google DeepMind. This 19-minute talk explains the architecture behind Gemma 4, launched the week before. Her thesis: small open models can now set "a new precedent", and the gains come from specific, explainable choices in attention, embeddings and multimodal encoders. Gemma 4 also moves to an Apache 2.0 license, chosen to make the models easier for everyday developers to take from testing to deployment.
+
+**Four sizes, two jobs**
+- 31B dense: multimodal, built for advanced reasoning, 256K context, native thinking, function calling and structured JSON output. She says it ranked third on the arena leaderboard and beats models over 20 times its size.
+- 26B mixture of experts: the first MoE in the Gemma family. It has 128 small feed-forward experts, 8 picked by the router per pass, plus one shared expert three times the normal size that runs every pass. She gives about 3.8 billion active parameters (3.9 in one slide).
+- Effective 2B and 4B: on-device models for phones, iPads and laptops, with text, image and audio input and text output.
+- Both large models rank in the top six open models on the arena.
+
+**Attention changes**
+Local sliding-window layers alternate with global layers at 5:1 (4:1 on the E2B), and the last layer is always global. The window is 512 tokens on small models and 1,024 on large ones. Global layers still attend to every token, so they use grouped query attention: two queries share a key-value head in local layers, eight in global layers. To offset the fewer heads, global key-value heads are 512 long instead of 256.
+
+**What "effective" means**
+The E2B runs with 2.3 billion parameters but has 5.1 billion representational parameters. The trick is per-layer embeddings (PLE): every layer, 35 in the E2B and 42 in the E4B, gets its own 256-dimension embedding table. It sits in flash memory instead of VRAM, the main limit on devices, and is projected up to full size at the end of each decoder block.
+
+**Vision and audio**
+The large models use a 550 million parameter vision encoder and the small ones a 150 million parameter encoder. Gemma 3 needed pan-and-scan, which split an image into padded squares and processed them one by one. Gemma 4 adds variable aspect ratio and variable resolution, with spatial position encoding for 16x16 pixel patches. Every 3x3 grid of patches becomes one soft token. Developers pick one of five soft-token budgets: low for text-heavy apps, 560 or 1120 for OCR and object detection. A budget of 280 means 2,520 patches. Audio on the small models goes through a mel spectrogram, two convolution layers and a 35 million parameter conformer, for speech recognition and translation.
+
+**Getting started**
+Self-host from Hugging Face, Kaggle or a local model runner, or use the two large models hosted in AI Studio and Vertex for agentic prototypes and function calling.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives exact, citable numbers for a current open-weight MoE: 128 experts, 8 active, one shared expert, about 3.8B active of 26B.
+- Per-layer embeddings in flash memory show a concrete way to beat the on-device VRAM limit, and explain what an effective parameter count means.
+- The user-selected soft-token budget for images makes vision cost a developer choice: spend tokens on OCR, save them on text tasks.
+- The local/global attention ratio plus grouped query attention is a clear case study of trading memory for long-context quality.
+- The move to Apache 2.0 is a licensing data point for chapters on choosing open models.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=_A367W_qvc8

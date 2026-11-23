@@ -15,17 +15,34 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-26T22:48:22+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Dex Horthy shares a practical take on The Great Loops Debate. Key angle: focuses on agent design and orchestration; touches MCP and tool integration."
+summary: "An Oxford-style debate hosted by the Insecure Agents podcast on whether agent-loop hype outruns practice. Geoff Huntley (creator of the Ralph loop) and Ian Livingstone (Key Card) argue loops are inevitable, cost about $10.42 an hour and work when pre-commit hooks, types and tests stop them from closing early. Dex Horthy (Human Layer) and Greg Pstrucha (Sentry) answer that the hype outruns the discipline: verification is still partial, errors compound across iterations, token bills grow, and humans must read the code and own architecture. Both sides agree that the human stays liable."
 ---
 
 # The Great Loops Debate — Dex Horthy, Geoff Huntley, Ian Livingstone, Greg Pstrucha, @insecure-agents
 
 ## Summary
-Dex Horthy shares a practical take on The Great Loops Debate. Key angle: focuses on agent design and orchestration; touches MCP and tool integration.
+The host of the Insecure Agents podcast, from Key Card, runs an Oxford-style debate on one thesis: is there a gap between the hype behind agent loops and what works in practice? On the "no delta" side are Geoff Huntley, creator of the Ralph loop, and Ian Livingstone, CEO and co-founder of Key Card. On the "delta" side are Dex Horthy, CEO of Human Layer, and Greg Pstrucha, a developer at Sentry. The winner is the team that changes the most minds.
+
+**The pro-loop case**
+Huntley saw engineers at Canva prompting in a loop by hand and realized "this is a programmable thing." He reduced it to a bash loop and has not written code by hand in two and a half years. He says the models have been good enough for a year, that looped code beats what most founders can hire, and that it works out to $10.42 an hour. The engineering is to stop the loop from closing until it meets your requirements: pre-commit hooks that echo a prompt, static analyzers, deterministic tests, simulators. "The model's a drunk," so you engineer away its failure domains. Livingstone argues that all development is already a loop (CI/CD, PRs, design review, lint), and as fewer humans use software through UIs, it becomes narrower and more verifiable.
+
+**The skeptic case**
+Horthy points out that Kubernetes runs on loops too, but deterministic ones, and took years to mature. Loops are good for driving a small, isolated task toward a desired end state. The hype tells people to rise an abstraction level and stop reading code, when "we need to step down an abstraction level." Pstrucha says post-verification agent code is "still crap," that a 5% error rate compounded over 10 to 20 iterations ends near a coin flip, and asks whether an engineer's token budget can be $10K, $100K or $1 million a month.
+
+**Points of practice**
+- Ralph's fresh context each iteration keeps work in the "smart zone." Horthy's guideline is about 100,000 tokens, maybe 200,000 with million-token windows, and under 60,000 for the hardest problems. Huntley compares usable context to an eighth of a 720k floppy disk and strips all skills and markdown when a new model ships, because models have different tastes.
+- Pstrucha pays about five dollars a PR for security scans worth the cost, and says loops work on well-specified rewrites with years of test suites behind them, and on throwaway prototypes.
+- Horthy uses Huntley's Loom experiment as a case of hype outrunning discipline: Huntley says Loom needs better languages or models before it will work.
+- Livingstone says goal-seeking models find exploits humans never found, so safety must come from infrastructure, not the model. Huntley adds: never keep secrets as files.
+
+**Future and closing**
+Pstrucha wants humans to keep architecture and the call on what not to build, because "agents love complexity." Horthy's advice is to build small incremental loops for a real 2 to 3x speedup rather than chase 100x. Livingstone notes that Git allows one signer per commit, while a human must stay liable for an agent's work. Huntley closes: type systems are in, loops in Python or Ruby will be "a clown show," and you should generate your own dependencies to own your supply chain. The hand vote was too close to call.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- It puts the strongest pro-loop and skeptic positions side by side, and shows where they agree: verification, not model intelligence, is the bottleneck.
+- Concrete numbers ($10.42 an hour for a loop, about five dollars a PR for security scans, context guidelines of 60k to 200k tokens) give a coding-agents chapter real cost and context data.
+- The pre-commit hook as a prompt is a simple, reusable way to add back pressure that stops a loop from closing early.
+- The compounding-error argument and the one-signer Git problem name two open issues for software factories: reliability across iterations and attribution of agent work.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=c35YoMdnI78

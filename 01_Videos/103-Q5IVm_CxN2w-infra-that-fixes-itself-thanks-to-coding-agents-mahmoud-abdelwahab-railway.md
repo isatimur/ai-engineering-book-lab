@@ -13,16 +13,36 @@ themes:
   - "Coding Agents"
 ingested_at: "2026-04-24T11:23:00+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Mahmoud Abdelwahab shares a practical take on Infra that fixes itself, thanks to coding agents. This talk shows how we built Railway Autofix, a plug-in template you can drop into any Railway project to monitor your infrastructure, and open PRs with fixes when issues are detected. Key angle: focuses on agent design and orchestration; keeps returning to production-grade engineering."
+summary: "Mahmoud Abdelwahab of Railway demos Railway Autofix, which turns a production alert into a pull request. His thesis: alerts only tell you something is wrong, and you still dig through logs, metrics and traces yourself. A coding agent should do the investigation and ship a fix you just review. Three durable workflows run on a schedule: check project health against thresholds over a time slice, pull logs and context for affected services, then have an LLM write a plan and hand it to a headless Open Code server on Railway that clones the repo, fixes the code and opens the PR."
 ---
 # Infra that fixes itself, thanks to coding agents — Mahmoud Abdelwahab, Railway
 
 ## Summary
-Mahmoud Abdelwahab shares a practical take on Infra that fixes itself, thanks to coding agents. This talk shows how we built Railway Autofix, a plug-in template you can drop into any Railway project to monitor your infrastructure, and open PRs with fixes when issues are detected. Key angle: focuses on agent design and orchestration; keeps returning to production-grade engineering.
+Mahmoud Abdelwahab works at Railway and builds Railway Autofix, a project that watches a Railway deployment and opens pull requests with fixes. His thesis: "your app's infrastructure should fix itself". Today a threshold fires, you get paged, and you still piece together logs, metrics and traces by hand. He proposes that a coding agent does that investigation and leaves you with a PR to review.
+
+**The broken services**
+His demo project has deliberately faulty services. One leaks memory, with memory climbing fast, a 94% request error rate and multi-second responses. Another looks healthy on CPU and memory but runs very slow Postgres queries, so a page can take 30 seconds to load. The second case shows that not every problem is obvious from resource charts.
+
+**Three workflows from issue to PR**
+- **Monitor project health**, on a schedule (every 10, 15 or 30 minutes). It fetches the project architecture (services, databases, volumes, repos), then CPU, memory and HTTP metrics (4xx and 5xx error rates, latency) for each service in parallel, and returns the services that crossed thresholds.
+- **Pull service context** for those services: HTTP, build and deployment logs plus a Markdown architecture summary. He suggests going further, for example inferring upstream providers from the code and checking their status pages, so the agent can say "wait out this issue" when a payment processor is down.
+- **Generate fix**: an LLM analyses the data and writes a plan with debugging steps (such as reproducing locally under the same load) and recommendations. A coding-agent session per repo then clones it, builds a to-do list, implements the fixes and opens a PR with a root-cause analysis.
+
+**Why polling, not alert webhooks**
+He prefers analysing a slice of time over reacting to each threshold breach. A spiky workload can hit 80% CPU while everything is fine, and high usage may simply mean success. A per-alert trigger would be noisy.
+
+**Durable execution**
+He builds the workflows on a durable-execution engine. Each step retries automatically, with configurable backoff, and caches its result on success. A failed run resumes where it stopped instead of repeating finished work, which is faster and cheaper. He explains it with a transcribe, summarize and store example.
+
+**Open Code as a headless agent**
+He picks Open Code because it is open source, model-agnostic and split into a terminal UI client and a server with an API. That lets him run only the server on Railway. The Dockerfile installs curl, jq, bash, git and the GitHub CLI, configures git, authenticates the CLI and exposes the port. The server is a small Bun app that calls a create-server function. In the demo, a service using 31.96 GB of a 32 GB memory limit is flagged, and the run ends with an open PR.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A worked reference design for turning observability data into agent work: architecture plus metrics plus logs, written as a plan, then a coding agent.
+- The polling-over-a-time-window choice is a useful counter to alert-driven triggers that would flood an agent with noise.
+- Shows durable execution (per-step retry and cached results) as the reliability layer under multi-step agent pipelines.
+- Running a coding agent headless through its server API, in a container with git and the GitHub CLI, is a pattern for agents that act outside a developer's terminal.
+- The human still reviews and merges, which keeps the PR as the control point for automated fixes.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=Q5IVm_CxN2w

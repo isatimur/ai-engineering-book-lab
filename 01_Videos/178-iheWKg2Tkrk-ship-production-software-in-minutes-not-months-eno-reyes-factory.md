@@ -14,16 +14,37 @@ themes:
   - "Coding Agents"
 ingested_at: "2026-04-24T11:42:38+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Eno Reyes shares a practical take on Ship Production Software in Minutes, Not Months. Planning, coding, testing, monitoring—the endless cycle that spans 10+ tools that fragment our focus and slows delivery to a crawl. Key angle: focuses on agent design and orchestration; keeps returning to production-grade engineering."
+summary: "Eno Reyes of Factory argues that software is moving from human-driven to agent-native development, where teams delegate most work across the whole life cycle to agents (droids), not only coding. His core claim: agents usually fail because they lack context, not because the model is weak. So the work is feeding them standups, meeting transcripts, design docs and incident history. He shows droids that plan before acting, turn three months of customer transcripts into a PRD and eight parallel tickets, and turn a Sentry alert into a root-cause analysis. Documentation becomes a map that agents learn your team's thinking from."
 ---
 # Ship Production Software in Minutes, Not Months — Eno Reyes, Factory
 
 ## Summary
-Eno Reyes shares a practical take on Ship Production Software in Minutes, Not Months. Planning, coding, testing, monitoring—the endless cycle that spans 10+ tools that fragment our focus and slows delivery to a crawl. Key angle: focuses on agent design and orchestration; keeps returning to production-grade engineering.
+Eno Reyes of Factory started working on LLMs about two and a half years earlier, when GPT-3.5 came out. In this 16-minute talk he argues that the industry is "transitioning from the era of human-driven software development to agent-driven development." Most current tools, he says, are 20-year-old human tools with AI sprinkled on top: faster horses. The real gain comes only when a team delegates the majority of its tasks across the software life cycle to agents.
+
+**What that requires**
+He names four platform needs: an intuitive interface for managing and delegating tasks, centralized context from all engineering tools, agents with reliable output, and infrastructure for thousands of agents in parallel. He pushes back on vibe coding: "You can't vibe code a legacy Java 7 app" that runs 5% of global bank transactions. Agents are climbing gear for Mount Everest, not a replacement for human skill.
+
+**Context is the failure mode**
+Factory studied thousands of droid sessions. The pattern: agents fail most often because they miss crucial context, not because the LLM is weak. Better models help, but the fix is giving the agent the morning standup, the whiteboard photo, the meeting notes. He calls prompt engineering mental modelling of "this alien intelligence" that holds only a slice of the world.
+
+**A delegated task, step by step**
+In the demo, a droid grounds itself first. It searches the codebase, checks the git branch and the machine, reads recent changes, and recalls user-level and org-level memory. Then it returns a plan with clarifying questions, writes code, runs pre-commit hooks and lints, and opens a PR that passes CI. Reyes wants agents that question the request, not take it at face value.
+
+**Planning as delegated research**
+The hardest part of software is deciding what to build. For a cloud development environment feature, Factory fed three months of customer transcripts, an ad hoc meeting note and architecture docs to a knowledge droid. They did not ask it to plan the feature. They asked it to find patterns that match their assumptions and to flag technical limits. Four or five intermediate documents became a PRD, then a roadmap of eight dependent tickets for eight code droids. PRDs, design docs and RCA templates stop being a burden. They become "a knowledge base and a map" for droids.
+
+**Incident response**
+A droid turns a Sentry incident into an RCA and mitigation plan by pulling logs, past incidents, runbooks and Slack threads. Reyes says teams cut response time in half, see fewer repeat incidents because the droid suggests a fix the third time, and onboard faster. He says the acceptable time to act should be zero.
+
+**Enterprise close**
+Factory positions itself as an enterprise platform: audit logs, ownership and indemnification matter, and "yolo mode" does not belong inside an enterprise.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- It gives a field-tested diagnosis that agent failures come mostly from missing context, which moves the fix from model choice to context plumbing.
+- The planning workflow shows how to ask agents for analysis (patterns, constraints), not finished answers, before a human writes the PRD.
+- Reframing documentation and meeting transcripts as agent training material gives teams a concrete reason to write down why decisions were made.
+- The move from the inner loop to the outer loop is a useful lens on how senior engineers' work changes with agents.
+- It raises the accountability question, who owns the outcome when an agent runs a destructive command, as a gate for enterprise adoption.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=iheWKg2Tkrk

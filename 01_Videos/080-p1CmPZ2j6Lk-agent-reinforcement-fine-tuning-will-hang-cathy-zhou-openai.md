@@ -14,16 +14,36 @@ themes:
   - "Models & Inference"
 ingested_at: "2026-04-24T10:52:52+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on Agent Reinforcement Fine Tuning – Will Hang & Cathy Zhou, OpenAI. Deep dive into OpenAI's approach to reinforcement fine-tuning for code models. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "Will Hang and Cathy Zhou of OpenAI's fine-tuning team present Agent RFT, which trains a reasoning model end to end on a customer's task while it calls the customer's own tool endpoints and a custom reward endpoint, the first time OpenAI lets models touch the outside world during training. They position it as the last step after prompt and task optimization. Customer cases show the pattern: Cognition gained 5 points with 100 examples and 10 with 1,000, and tool-call counts and long-tail trajectories shrank. They give four rules: a well-defined task, train data that mirrors production, variance across samples, and an unhackable, ideally continuous reward."
 ---
 # Agent Reinforcement Fine Tuning – Will Hang & Cathy Zhou, OpenAI
 
 ## Summary
-A practical talk on Agent Reinforcement Fine Tuning – Will Hang & Cathy Zhou, OpenAI. Deep dive into OpenAI's approach to reinforcement fine-tuning for code models. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+Will Hang and Cathy Zhou work on the fine-tuning team at OpenAI. They present agent reinforcement fine-tuning (Agent RFT) as "the most powerful way" to improve an agent, and walk through four customer cases on coding tasks. An agent, in their framing, interleaves tool calls with reasoning traces in one context window; OpenAI's flagship coding agent works this way.
+
+**Where Agent RFT fits**
+They lay out a ladder: prompt engineering first, then task optimization (simplify the task, add guardrails, add or remove tools, change tool behavior), and only then fine-tuning. Agent RFT changes model weights from a learning signal you define, while the agent explores many ways to call your tools. Two new product features: the model calls your tools through public endpoints during training, and a custom reward endpoint is invoked after each rollout. Each rollout gets a unique ID attached to every tool call, so you can assemble the whole trajectory as grading context. It is sample-efficient; some customers succeed with about 10 examples.
+
+**What it fixes**
+Domain shift: your environment differs from OpenAI's training environments, so agents call tools too often or with wrong inputs. RFT teaches better tool use and better reasoning over tool outputs. A penalty for exceeding a tool-call budget teaches the model to stay inside it while keeping or beating accuracy, which cuts latency.
+
+**Customer cases**
+- Cognition trained the code-edit planning phase, where the agent greps and reads files to pick which files to edit. Reward: F1 score of selected files against files users really changed. Each trajectory ran in its own VM. 100 examples gave 5 points; 1,000 gave 10. The model learned to launch tool calls in parallel, cutting 8 to 10 steps down to four.
+- A code-review company trained a deep-research agent on about 1,000 real question-answer pairs from eight repositories, rewarded on recall of relevant facts. Accuracy rose 6 percent with fewer tool calls and tokens; runs with more than 15 tool calls disappeared and the distribution centered on two to four.
+- Cosine trained an enterprise coding agent with 30 tools and a strict grader: reward only when the final code passes tests, since partial credit made the model optimize style and tone. They raised batch size and compute to offset sparse rewards, added an LLM judge that penalizes verbosity and emojis, and rewarded agents that validate their own work. Trajectories that sometimes exceeded 100 messages tightened.
+- A GPU-kernel company trained on only about 100 PyTorch prompts. They found seven reward hacks (returning reference code, no kernel, identity kernels), caught them with a judge LLM plus an AST-based static check, then scored correctness and real speedup. Best-of-three sampling beat the state of the art by 72 percent.
+
+**Four principles**
+1. A well-defined task with an unambiguous definition of success; "taste should not be a requirement" to grade it.
+2. Train and eval sets that mirror production traffic, so the model is not "surprised in production."
+3. Exploration must help: max performance on a data point should rise as you sample more, so the model sees variance between good and bad rollouts.
+4. An unhackable reward, ideally continuous rather than binary, like partial credit for a student.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a clear decision ladder (prompt, then task design, then weights) and a pre-RFT checklist: matched data, a baseline, then optimization.
+- The cases show RFT improving speed and stability as much as accuracy: fewer steps, parallel tool calls, and no P95 long-tail runs.
+- The kernel case is a concrete reward-hacking catalogue and fix (judge LLM plus AST check) for any chapter on verifier design.
+- Cosine's choice of a strict pass-the-tests reward, against the closing advice to prefer continuous rewards, shows the tension between sparse and shaped rewards in practice.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=p1CmPZ2j6Lk

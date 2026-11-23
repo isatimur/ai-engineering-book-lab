@@ -14,16 +14,40 @@ themes:
   - "Security & Guardrails"
 ingested_at: "2026-04-24T12:15:13+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "less shares a practical take on GPU. What happens when private AI models or sensitive data need to run in the public cloud? Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs."
+summary: "Mike Bursell presents Super Protocol, a confidential AI cloud and marketplace. His thesis: data and models are most exposed while they are processed, and trusted execution environments (Intel TDX, AMD SEV-SNP, Nvidia GPU TEEs) fix this by isolating workloads and producing cryptographic attestation, so you verify instead of trusting the provider. GPU-less means no lock-in to one GPU vendor or cloud; trust-less means verifiable by design; limit-less means fewer legal and organizational blockers. Case studies cite 319% more ad training data and audits cut from weeks to hours. Demos cover model leasing, an n8n medical workflow, distributed vLLM across four TEE hosts, and multi-party training with on-chain proof."
 ---
 # GPU-less, Trust-less, Limit-less: Reimagining the Confidential AI Cloud - Mike Bursell
 
 ## Summary
-less shares a practical take on GPU. What happens when private AI models or sensitive data need to run in the public cloud? Key angle: focuses on agent design and orchestration; covers model serving or inference tradeoffs.
+Mike Bursell's session is a product walkthrough of Super Protocol, a confidential AI cloud and marketplace for models, data and compute. Much of it is pre-recorded demo narration. The thesis: trust holds AI back, because data and models are most vulnerable not at rest or in transit but while they are processed, in training, fine-tuning or inference.
+
+**Confidential computing basics**
+A trusted execution environment (TEE) is an isolated part of the processor, such as Intel TDX, AMD SEV-SNP or Nvidia GPU TEEs. Code and data stay protected in memory, invisible to the host OS, the hypervisor, and even the hardware owner. The TEE also produces a signed attestation that the workload ran on genuine hardware with unmodified code. That proof tells you what the workload is and that the chip is real.
+
+**Problems it targets**
+Hospitals will not share raw clinical data. Personal agents need deep access to inboxes and documents. Marketers cannot train on user behavior under privacy law. Model authors will not hand over weights, and customers will not hand over data. And model provenance is hard to prove: was the model really trained where and how you say?
+
+**The three words**
+- GPU-less: not removing GPUs, but removing dependency on a single cloud or GPU provider. You do not buy GPUs or rent them longer than you use them.
+- Trust-less: verifiable by design. Every run produces a cryptographic proof of what ran, where and how.
+- Limit-less: fewer legal, technical and organizational blockers, including for non-deterministic, multi-party agent systems.
+The platform is TEE-agnostic, built on swarm computing with no single point of failure, orchestrated by smart contracts on BNB Chain, and planned to be fully open source, like HTTPS for AI.
+
+**Case studies**
+- An ad-testing company that reads facial expressions needed more biometric video for a Mars project. With provable confidentiality, partners shared four times more footage, the training set grew 319%, accuracy reached 75%, and Mars saw a 3 to 5% sales lift across 30 brands in 19 markets.
+- The Brain Electrophysiology Laboratory used Titonix's AI audit tool for an FDA submission inside TEEs. Audit time dropped from two to four weeks to one to two hours, with no exposure of either party's IP.
+
+**Demos**
+- Marketplace: deploy a DeepSeek model on an H100 in about 20 minutes. Models can be leased but not downloaded, then verified as running in a confidential environment.
+- An n8n workflow in a TEE takes an X-ray and patient data from a web form, separates personal data from diagnostic input, sends only the image and symptoms to the model, and emails a report.
+- Distributed vLLM: four hosts each run a node in a confidential VM over an encrypted overlay network to serve a 22B Mistral model, with on-chain hash checks for each node.
+- Multi-party training: two data owners and one engine owner train a cancer-detection model. A trusted loader checks certificates and hashes and blocks the job on any mismatch. Only the engine owner gets the encrypted result, inputs are wiped, and a signed integrity report goes on chain.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- States the core case for confidential computing in AI: protect data in use, not only at rest and in transit, and prove it with attestation.
+- Shows a pattern for multi-party training where no party, host or platform sees the others' data or IP, with hash checks that stop a job on any mismatch.
+- The n8n demo shows data minimization inside a workflow: strip personal data before the model call, then rejoin it for the report.
+- A vendor talk, so treat its case-study numbers as claims, but useful as a map of what TEE-based AI infrastructure can do.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=A0PxE39xaMc
