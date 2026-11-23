@@ -1,0 +1,442 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 7 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How commit volume turns a gate into a report",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Each easy fix to the bottleneck shaves a little certainty off the gate.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "v1",
+   "x": 80,
+   "y": 230,
+   "width": 260,
+   "height": 90,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "AI-scale\ncommit volume",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "v1a",
+   "x": 340,
+   "y": 275,
+   "width": 60,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     60,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "v2",
+   "x": 400,
+   "y": 230,
+   "width": 280,
+   "height": 90,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The CI suite becomes\nthe bottleneck",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "fa0",
+   "x": 680,
+   "y": 275,
+   "width": 80,
+   "height": -38,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     -38
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "fx0",
+   "x": 760,
+   "y": 200,
+   "width": 240,
+   "height": 74,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Run fewer checks",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "fb0",
+   "x": 1000,
+   "y": 237,
+   "width": 80,
+   "height": 38,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     38
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "fa1",
+   "x": 680,
+   "y": 275,
+   "width": 80,
+   "height": 62,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     62
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "fx1",
+   "x": 760,
+   "y": 300,
+   "width": 240,
+   "height": 74,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Sample instead\nof covering",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "fb1",
+   "x": 1000,
+   "y": 337,
+   "width": 80,
+   "height": -62,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     -62
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "fa2",
+   "x": 680,
+   "y": 275,
+   "width": 80,
+   "height": 162,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     162
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "fx2",
+   "x": 760,
+   "y": 400,
+   "width": 240,
+   "height": 74,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Merge while the\nsuite still runs",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "fb2",
+   "x": 1000,
+   "y": 437,
+   "width": 80,
+   "height": -162,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     -162
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "fx_h",
+   "x": 760,
+   "y": 170,
+   "text": "THE EASY FIXES",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "rectangle",
+   "id": "out",
+   "x": 1080,
+   "y": 215,
+   "width": 300,
+   "height": 120,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Fast and green.\nNobody can say what\nit last caught.",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "text",
+   "id": "note",
+   "x": 80,
+   "y": 360,
+   "text": "Each fix is a reasonable response to cost.\nNobody announces it. The certainty goes\none sensible optimisation at a time.",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#1f2a3a"
+  },
+  {
+   "type": "rectangle",
+   "id": "reg",
+   "x": 80,
+   "y": 480,
+   "width": 600,
+   "height": 70,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Regulated industries: the checks are not optional.",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 760,
+   "y": 540,
+   "width": 620,
+   "height": 120,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 782,
+   "y": 556,
+   "text": "#1356 — Gautam Korlam, Sonar",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 782,
+   "y": 592,
+   "text": "\"new bottlenecks we're seeing\nin software factories\"",
+   "fontSize": 19,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 140,
+   "y": 590,
+   "width": 480,
+   "height": 100,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Each fix converts a gate\ninto a report.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 730,
+   "text": "Sources: #1356 — Gautam Korlam, Sonar",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,485 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 7 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Why a model breaks the exact-match test",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The gate stops asking \"right answer?\" and starts asking \"still in range?\"",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "pL",
+   "x": 80,
+   "y": 210,
+   "width": 600,
+   "height": 380,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "pL_h",
+   "x": 104,
+   "y": 226,
+   "text": "BEFORE · A DETERMINISTIC SYSTEM",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#3f4c5f"
+  },
+  {
+   "type": "rectangle",
+   "id": "L1",
+   "x": 110,
+   "y": 270,
+   "width": 160,
+   "height": 70,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Same input",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "L1a",
+   "x": 270,
+   "y": 305,
+   "width": 50,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     50,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "L2",
+   "x": 320,
+   "y": 270,
+   "width": 160,
+   "height": 70,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Same output\nevery run",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "L2a",
+   "x": 480,
+   "y": 305,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "L3",
+   "x": 520,
+   "y": 270,
+   "width": 140,
+   "height": 70,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "assert\nequal",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "L_note",
+   "x": 110,
+   "y": 370,
+   "text": "Zed can replay one interleaving of\nnetwork packets, freeze it, and get\nfull control.",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#1f2a3a"
+  },
+  {
+   "type": "rectangle",
+   "id": "L_q",
+   "x": 110,
+   "y": 470,
+   "width": 540,
+   "height": 90,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "\"never have flaky tests on CI\"",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "pR",
+   "x": 720,
+   "y": 210,
+   "width": 660,
+   "height": 380,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "pR_h",
+   "x": 744,
+   "y": 226,
+   "text": "AFTER · AN LLM IN THE PICTURE",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "rectangle",
+   "id": "R1",
+   "x": 750,
+   "y": 270,
+   "width": 150,
+   "height": 70,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Same input",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "R1a",
+   "x": 900,
+   "y": 305,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "R2",
+   "x": 940,
+   "y": 270,
+   "width": 190,
+   "height": 70,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Output varies\nrun to run",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "R2a",
+   "x": 1130,
+   "y": 305,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "R3",
+   "x": 1170,
+   "y": 270,
+   "width": 180,
+   "height": 70,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Within the\nagreed range?",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "R_note",
+   "x": 750,
+   "y": 370,
+   "text": "Distributions, not equalities.\nThresholds, not exact matches.\nOne run proves less than it used to.",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#1f2a3a"
+  },
+  {
+   "type": "rectangle",
+   "id": "R_q",
+   "x": 750,
+   "y": 470,
+   "width": 330,
+   "height": 90,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "\"as soon as an LLM enters\nthe picture, that's all\nout the window\"",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "hum",
+   "x": 1100,
+   "y": 470,
+   "width": 250,
+   "height": 90,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "A person decides\nwhat the range is",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "hum_a",
+   "x": 1260,
+   "y": 470,
+   "width": 0,
+   "height": -130,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     -130
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 630,
+   "width": 700,
+   "height": 180,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 102,
+   "y": 646,
+   "text": "the gate's question, before and after",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 102,
+   "y": 682,
+   "text": "# before\nassert output == expected\n\n# after\nassert score(outputs) in agreed_range",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 840,
+   "y": 660,
+   "width": 480,
+   "height": 110,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The determinism was the\nfoundation, not the discipline.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 840,
+   "text": "Sources: #334 — Nathan Sobo, Zed",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

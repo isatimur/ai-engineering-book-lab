@@ -148,6 +148,203 @@
         "#307 — Emma Ning, Microsoft"
       ],
       "reviewed": false
+    },
+    {
+      "id": "ch03-opener",
+      "chapter": "03",
+      "kind": "opener",
+      "title": "Building Frontier Models — the argument",
+      "file": "ch03/ch03-opener.png",
+      "claimIds": [
+        "claims#13",
+        "claims#14",
+        "claims#15",
+        "claims#16",
+        "claims#17",
+        "claims#18"
+      ],
+      "sources": [
+        "#439 — Eugene Cheah, Featherless.ai",
+        "#189 — Amir Haghighat, Baseten",
+        "#74 — Olive Song, MiniMax",
+        "#476 — Dylan Patel, SemiAnalysis",
+        "#13 — Raia Hadsell, DeepMind",
+        "#267 — Jack Rae, DeepMind",
+        "#67 — Jacob Kahn, FAIR Meta",
+        "#253 — Alex Duffy, Every.to",
+        "#137 — Barr Yaron, Amplify",
+        "#9 — Omar Sanseviero, DeepMind",
+        "#528 — Devendra Chaplot, Mistral AI",
+        "#480 — Kathleen Kenealy, DeepMind",
+        "#400 — Junyang Lin, Alibaba Qwen"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-bottleneck-hunting",
+      "chapter": "03",
+      "kind": "inline",
+      "title": "Find the root node, skip the leaves",
+      "sectionHeading": "Frontier progress is bottleneck-hunting",
+      "file": "ch03/ch03-bottleneck-hunting.png",
+      "claimIds": [
+        "claims#15"
+      ],
+      "sources": [
+        "#13 — Raia Hadsell, DeepMind",
+        "#267 — Jack Rae, DeepMind"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-open-weights-payback",
+      "chapter": "03",
+      "kind": "inline",
+      "title": "How open weights pay back",
+      "sectionHeading": "Open source is a strategy, not charity",
+      "file": "ch03/ch03-open-weights-payback.png",
+      "claimIds": [
+        "claims#18"
+      ],
+      "sources": [
+        "#9 — Omar Sanseviero, DeepMind",
+        "#528 — Devendra Chaplot, Mistral AI",
+        "#480 — Kathleen Kenealy, DeepMind",
+        "#400 — Junyang Lin, Alibaba Qwen"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-benchmark-steering",
+      "chapter": "03",
+      "kind": "inline",
+      "title": "How a benchmark steers the next generation",
+      "sectionHeading": "Benchmarks are how the field steers itself",
+      "file": "ch03/ch03-benchmark-steering.png",
+      "claimIds": [
+        "claims#17"
+      ],
+      "sources": [
+        "#253 — Alex Duffy, Every.to",
+        "#137 — Barr Yaron, Amplify"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-opener",
+      "chapter": "05",
+      "kind": "opener",
+      "title": "Robotics and the Physical World — the argument",
+      "file": "ch05/ch05-opener.png",
+      "claimIds": [
+        "claims#24",
+        "claims#25",
+        "claims#26",
+        "claims#27",
+        "claims#28",
+        "claims#29",
+        "claims#30"
+      ],
+      "sources": [
+        "#174 — Jyh-Jing Hwang, Waymo",
+        "#165 — Annika & Aastha, NVIDIA",
+        "#175 — Quan Vuong & Jost Tobias Springenberg, Physical Intelligence",
+        "#110 — Rishabh Garg, Tesla Optimus",
+        "#890 — Dmitry Petrov, DataChain",
+        "#229 — Nikhil Abraham, CloudChef",
+        "#936 — Cormac Brick, Google",
+        "#276 — JX Mo, K-Scale Labs",
+        "#725 — Andres Marafioti, Hugging Face"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-system-not-policy",
+      "chapter": "05",
+      "kind": "inline",
+      "title": "The failure shows at the policy. The cause is often on the wire.",
+      "sectionHeading": "The bug is the system, not the policy",
+      "file": "ch05/ch05-system-not-policy.png",
+      "claimIds": [
+        "claims#26"
+      ],
+      "sources": [
+        "#110 — Rishabh Garg, Tesla Optimus"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-data-harness",
+      "chapter": "05",
+      "kind": "inline",
+      "title": "Physical data needs its own harness before an agent can read it",
+      "sectionHeading": "Physical data breaks agents that handle text fine",
+      "file": "ch05/ch05-data-harness.png",
+      "claimIds": [
+        "claims#27"
+      ],
+      "sources": [
+        "#890 — Dmitry Petrov, DataChain"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-opener",
+      "chapter": "07",
+      "kind": "opener",
+      "title": "Creative, Education, and Games — the argument",
+      "file": "ch07/ch07-opener.png",
+      "claimIds": [
+        "claims#38",
+        "claims#39",
+        "claims#40",
+        "claims#41",
+        "claims#42",
+        "claims#43"
+      ],
+      "sources": [
+        "#677 — Dole & Steinskog, Play Magnus",
+        "#918 — Quoraishee & Song, NYT",
+        "#588 — Jeff Schomay",
+        "#827 — An & Hoe, Meta",
+        "#512 — Jansepar, Khan Academy",
+        "#540 — Stefania Druga",
+        "#755 — Schaeff, Google DeepMind",
+        "#477 — Phlo Young",
+        "#822 — Steinfurt, TNG"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-chess-coach",
+      "chapter": "07",
+      "kind": "inline",
+      "title": "The chess coach: the engine computes, the model explains",
+      "sectionHeading": "The model explains; the engine computes",
+      "file": "ch07/ch07-chess-coach.png",
+      "claimIds": [
+        "claims#38"
+      ],
+      "sources": [
+        "#677 — Dole & Steinskog, Play Magnus"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-music-orchestration",
+      "chapter": "07",
+      "kind": "inline",
+      "title": "Music as orchestration: specialized models, composed",
+      "sectionHeading": "Making music is an orchestration problem, not a model",
+      "file": "ch07/ch07-music-orchestration.png",
+      "claimIds": [
+        "claims#41"
+      ],
+      "sources": [
+        "#755 — Schaeff, Google DeepMind",
+        "#477 — Phlo Young"
+      ],
+      "reviewed": false
     }
   ]
 }

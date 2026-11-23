@@ -1,0 +1,440 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 4 · THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Decomposition and the Plan",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a1",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a2",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Four claims: the plan is the cheapest place to catch a mistake, so a human reads it.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b3",
+   "x": 80,
+   "y": 210,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "RESEARCH\nonboard the agent",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b4",
+   "x": 420,
+   "y": 210,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "PLAN\ncompression of intent",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b5",
+   "x": 760,
+   "y": 210,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "HUMAN\nreads the plan",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b6",
+   "x": 1100,
+   "y": 210,
+   "width": 248,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "IMPLEMENT",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a7",
+   "x": 344,
+   "y": 250,
+   "width": 72,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     72,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 684,
+   "y": 250,
+   "width": 72,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     72,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a9",
+   "x": 1024,
+   "y": 250,
+   "width": 72,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     72,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b10",
+   "x": 80,
+   "y": 360,
+   "width": 300,
+   "height": 160,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Research before planning.\nWithout it the agent\nmakes stuff up.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b11",
+   "x": 209,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t12",
+   "x": 90,
+   "y": 532,
+   "text": "claims#14 · Horthy",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 403,
+   "y": 360,
+   "width": 300,
+   "height": 160,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Step size is a\ncontext-window limit,\nnot a matter of taste.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b14",
+   "x": 532,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t15",
+   "x": 413,
+   "y": 532,
+   "text": "claims#15 · Horthy (Huntley)",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b16",
+   "x": 726,
+   "y": 360,
+   "width": 300,
+   "height": 160,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Errors multiply upstream.\nReview research and\nplans, not only diffs.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b17",
+   "x": 855,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t18",
+   "x": 736,
+   "y": 532,
+   "text": "claims#16 · Horthy",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b19",
+   "x": 1049,
+   "y": 360,
+   "width": 300,
+   "height": 160,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "No template replaces\nthinking. A human reads\nthe plan before it runs.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b20",
+   "x": 1178,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "4",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t21",
+   "x": 1059,
+   "y": 532,
+   "text": "claims#17 · Horthy",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "ellipse",
+   "id": "b22",
+   "x": 80,
+   "y": 590,
+   "width": 620,
+   "height": 90,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Read the plan, not only the diff.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t23",
+   "x": 740,
+   "y": 622,
+   "text": "Sources: #89 — Dex Horthy, HumanLayer",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

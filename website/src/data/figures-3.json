@@ -1,4 +1,404 @@
 {
   "_doc": "Book 3 figure spec — the single source of truth for every Book 3 figure. Edit this file, then run `npm run prebuild` (or `node scripts/sync-third-book.mjs`) in website/ to copy it and the PNGs into the site. `website/src/data/bookFigures.test.tsx` checks every entry: the PNG exists, the section heading exists in the chapter, each claim id is filed under the figure's chapter in evidence-3.json, and each source is an anchor label of one of those claims. Each .excalidraw file in chNN/ is the source; render it with `npx @excalidraw-skill-pack/render`, then resize to 2000px and quantise (see docs/superpowers/specs/2026-11-23-second-book-parity-design.md, Drawing). Style: diagrams-3/STYLE.md.",
-  "figures": []
+  "figures": [
+    {
+      "id": "ch01-opener",
+      "chapter": "01",
+      "kind": "opener",
+      "title": "The Bottleneck Moved — the argument",
+      "file": "ch01/ch01-opener.png",
+      "claimIds": [
+        "claims#1",
+        "claims#2",
+        "claims#3",
+        "claims#4",
+        "claims#5",
+        "claims#6"
+      ],
+      "sources": [
+        "#1216 — Justin Reock, DX",
+        "#62 — Justin Reock, DX",
+        "#1618 — Martin Harrysson & Prakhar Dixit, McKinsey",
+        "#1222 — Gabriel Spencer-Harper, Meticulous",
+        "#1204 — Ido Salomon, AgentCraft",
+        "#831 — Geoffrey Litt, Notion",
+        "#994 — Matt Dailey, Ref",
+        "#1392 — Nicholas Arcolano, Jellyfish",
+        "#36 — Joel Becker, METR"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch01-value-stream",
+      "chapter": "01",
+      "kind": "inline",
+      "title": "Perfect code still leaves most of the stream untouched",
+      "sectionHeading": "The constraint was never the typing",
+      "file": "ch01/ch01-value-stream.png",
+      "claimIds": [
+        "claims#1",
+        "claims#2"
+      ],
+      "sources": [
+        "#1216 — Justin Reock, DX",
+        "#62 — Justin Reock, DX",
+        "#1618 — Martin Harrysson & Prakhar Dixit, McKinsey"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch01-shared-stages",
+      "chapter": "01",
+      "kind": "inline",
+      "title": "Fast individuals pile up at the shared stages",
+      "sectionHeading": "Fast individuals, unchanged teams",
+      "file": "ch01/ch01-shared-stages.png",
+      "claimIds": [
+        "claims#3",
+        "claims#5",
+        "claims#35"
+      ],
+      "sources": [
+        "#1222 — Gabriel Spencer-Harper, Meticulous",
+        "#994 — Matt Dailey, Ref",
+        "#1392 — Nicholas Arcolano, Jellyfish",
+        "#1432 — Tariq Shaukat, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-opener",
+      "chapter": "03",
+      "kind": "opener",
+      "title": "What a Specification Is For — the argument",
+      "file": "ch03/ch03-opener.png",
+      "claimIds": [
+        "claims#10",
+        "claims#11",
+        "claims#12",
+        "claims#13"
+      ],
+      "sources": [
+        "#265 — Sean Grove, OpenAI",
+        "#106 — Corey J. Gallon, Rexmore",
+        "#40 — Al Harris, Amazon Kiro"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-lossy-projection",
+      "chapter": "03",
+      "kind": "inline",
+      "title": "How code loses the reasoning that produced it",
+      "sectionHeading": "The artifact you think you produce",
+      "file": "ch03/ch03-lossy-projection.png",
+      "claimIds": [
+        "claims#10"
+      ],
+      "sources": [
+        "#265 — Sean Grove, OpenAI"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-monday-hangover",
+      "chapter": "03",
+      "kind": "inline",
+      "title": "How skipping the specification bills you on Monday",
+      "sectionHeading": "What the absence costs",
+      "file": "ch03/ch03-monday-hangover.png",
+      "claimIds": [
+        "claims#12"
+      ],
+      "sources": [
+        "#106 — Corey J. Gallon, Rexmore"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch03-two-theories",
+      "chapter": "03",
+      "kind": "inline",
+      "title": "Two theories of the specification, two ways to fail",
+      "sectionHeading": "When the specification is meant to generate the work",
+      "file": "ch03/ch03-two-theories.png",
+      "claimIds": [
+        "claims#10",
+        "claims#13"
+      ],
+      "sources": [
+        "#265 — Sean Grove, OpenAI",
+        "#40 — Al Harris, Amazon Kiro"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-opener",
+      "chapter": "04",
+      "kind": "opener",
+      "title": "Decomposition and the Plan — the argument",
+      "file": "ch04/ch04-opener.png",
+      "claimIds": [
+        "claims#14",
+        "claims#15",
+        "claims#16",
+        "claims#17"
+      ],
+      "sources": [
+        "#89 — Dex Horthy, HumanLayer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-research-plan-implement",
+      "chapter": "04",
+      "kind": "inline",
+      "title": "How research and planning compress intent before code",
+      "sectionHeading": "Planning is compression",
+      "file": "ch04/ch04-research-plan-implement.png",
+      "claimIds": [
+        "claims#14"
+      ],
+      "sources": [
+        "#89 — Dex Horthy, HumanLayer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-context-budget",
+      "chapter": "04",
+      "kind": "inline",
+      "title": "How the context window sets the size of a step",
+      "sectionHeading": "Why the unit size is a context problem",
+      "file": "ch04/ch04-context-budget.png",
+      "claimIds": [
+        "claims#15"
+      ],
+      "sources": [
+        "#89 — Dex Horthy, HumanLayer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-errors-upstream",
+      "chapter": "04",
+      "kind": "inline",
+      "title": "Why a mistake in the plan costs more than one in the diff",
+      "sectionHeading": "A bad line in the plan is not one bad line",
+      "file": "ch04/ch04-errors-upstream.png",
+      "claimIds": [
+        "claims#16"
+      ],
+      "sources": [
+        "#89 — Dex Horthy, HumanLayer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-opener",
+      "chapter": "05",
+      "kind": "opener",
+      "title": "Execution Under a Spec — the argument",
+      "file": "ch05/ch05-opener.png",
+      "claimIds": [
+        "claims#18",
+        "claims#19",
+        "claims#20",
+        "claims#21"
+      ],
+      "sources": [
+        "#1330 — Robert Brennan, OpenHands",
+        "#42 — Robert Brennan, OpenHands",
+        "#633 — David Gomes, Cursor",
+        "#182 — Rustin Banks, Google",
+        "#996 — Arjun Singh, Superconductor"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-isolated-runner",
+      "chapter": "05",
+      "kind": "inline",
+      "title": "How isolation lets an agent run without a babysitter",
+      "sectionHeading": "Isolation is what makes autonomy affordable",
+      "file": "ch05/ch05-isolated-runner.png",
+      "claimIds": [
+        "claims#18"
+      ],
+      "sources": [
+        "#1330 — Robert Brennan, OpenHands"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-cve-fanout",
+      "chapter": "05",
+      "kind": "inline",
+      "title": "How one crisp spec fans out across thousands of repos",
+      "sectionHeading": "The work changes shape at scale",
+      "file": "ch05/ch05-cve-fanout.png",
+      "claimIds": [
+        "claims#19"
+      ],
+      "sources": [
+        "#42 — Robert Brennan, OpenHands"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch05-markdown-replaces-code",
+      "chapter": "05",
+      "kind": "inline",
+      "title": "How Cursor replaced a feature with a skill",
+      "sectionHeading": "When the instructions replace the implementation",
+      "file": "ch05/ch05-markdown-replaces-code.png",
+      "claimIds": [
+        "claims#20"
+      ],
+      "sources": [
+        "#633 — David Gomes, Cursor"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-opener",
+      "chapter": "07",
+      "kind": "opener",
+      "title": "Gates That Can Actually Fail — the argument",
+      "file": "ch07/ch07-opener.png",
+      "claimIds": [
+        "claims#24",
+        "claims#25",
+        "claims#26",
+        "claims#27"
+      ],
+      "sources": [
+        "#864 — Tariq Shaukat, Sonar",
+        "#837 — Sumaiya Shrabony",
+        "#334 — Nathan Sobo, Zed",
+        "#1356 — Gautam Korlam, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-rebuild-ci",
+      "chapter": "07",
+      "kind": "inline",
+      "title": "What you rebuild when agents run without CI",
+      "sectionHeading": "You are going to rebuild CI, and worse",
+      "file": "ch07/ch07-rebuild-ci.png",
+      "claimIds": [
+        "claims#25"
+      ],
+      "sources": [
+        "#837 — Sumaiya Shrabony"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-determinism",
+      "chapter": "07",
+      "kind": "inline",
+      "title": "Why a model breaks the exact-match test",
+      "sectionHeading": "Determinism was doing more work than anyone noticed",
+      "file": "ch07/ch07-determinism.png",
+      "claimIds": [
+        "claims#26"
+      ],
+      "sources": [
+        "#334 — Nathan Sobo, Zed"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch07-volume",
+      "chapter": "07",
+      "kind": "inline",
+      "title": "How commit volume turns a gate into a report",
+      "sectionHeading": "Volume changes the economics",
+      "file": "ch07/ch07-volume.png",
+      "claimIds": [
+        "claims#27"
+      ],
+      "sources": [
+        "#1356 — Gautam Korlam, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-opener",
+      "chapter": "08",
+      "kind": "opener",
+      "title": "Shipping, and the Gap Between Merged and Live — the argument",
+      "file": "ch08/ch08-opener.png",
+      "claimIds": [
+        "claims#28",
+        "claims#29",
+        "claims#30",
+        "claims#39"
+      ],
+      "sources": [
+        "commit 2de004f",
+        "run 43779369138",
+        "#1227 — Harald Kirschner, VS Code",
+        "#1514 — Sagar Batchu, Speakeasy",
+        "#923 — Dex Horthy, HumanLayer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-thirty-commits",
+      "chapter": "08",
+      "kind": "inline",
+      "title": "How a push that deploys nothing stays green",
+      "sectionHeading": "Thirty commits, zero deployments",
+      "file": "ch08/ch08-thirty-commits.png",
+      "claimIds": [
+        "claims#28"
+      ],
+      "sources": [
+        "commit 2de004f",
+        "run 43779369138"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-blast-radius",
+      "chapter": "08",
+      "kind": "inline",
+      "title": "How a staging fix reached production",
+      "sectionHeading": "Blast radius at deployment time",
+      "file": "ch08/ch08-blast-radius.png",
+      "claimIds": [
+        "claims#30"
+      ],
+      "sources": [
+        "#1514 — Sagar Batchu, Speakeasy"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch11-opener",
+      "chapter": "11",
+      "kind": "opener",
+      "title": "The Factory and Its Discontents — the argument",
+      "file": "ch11/ch11-opener.png",
+      "claimIds": [
+        "claims#31",
+        "claims#35",
+        "claims#38",
+        "claims#39",
+        "claims#40"
+      ],
+      "sources": [
+        "#1237 — Dan Adler, Sourcegraph",
+        "#1432 — Tariq Shaukat, Sonar",
+        "#704 — Lou Bichard, Ona",
+        "#1210 — Zach Lloyd, Warp",
+        "#923 — Dex Horthy, HumanLayer",
+        "#1206 — Ryan Cooke, WorkOS"
+      ],
+      "reviewed": false
+    }
+  ]
 }

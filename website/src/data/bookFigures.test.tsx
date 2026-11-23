@@ -97,7 +97,10 @@ describe.each(BOOKS)('$folder figure spec', ({ book, folder, content }) => {
       const labels = new Set(
         claims.flatMap((c) => [
           ...c.anchors.map((a) => a.label),
-          ...((c as { artifact_anchors?: { label?: string }[] }).artifact_anchors ?? []).map((a) => a.label ?? ''),
+          // Artifact anchors (ADR-0003) cite a commit or CI run, e.g. "commit 2de004f".
+          ...((c as { artifact_anchors?: { kind: string; ref: string }[] }).artifact_anchors ?? []).map(
+            (a) => `${a.kind} ${a.ref}`,
+          ),
         ]),
       );
       for (const s of f.sources) expect([...labels], `${f.id} source ${s}`).toContain(s);

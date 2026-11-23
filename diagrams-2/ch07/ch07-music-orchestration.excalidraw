@@ -1,0 +1,43 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 7 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "Music as orchestration: specialized models, composed", "fontSize": 34, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 138, "text": "No single generator makes the song. Each part does one job; the product is how they fit together.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "a_h", "x": 80, "y": 200, "text": "GEMINI'S AUDIO STACK", "fontSize": 16, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "rectangle", "id": "user", "x": 80, "y": 315, "width": 200, "height": 80, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a person,\ntalking live", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "arrow", "id": "u_c", "x": 282, "y": 355, "width": 276, "height": 0, "points": [[0, 0], [276, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "startArrowhead": "arrow", "endArrowhead": "arrow"},
+  {"type": "text", "id": "u_c_l", "x": 330, "y": 368, "text": "speech in, speech out", "fontSize": 14, "fontFamily": 2, "strokeColor": "#475569"},
+  {"type": "rectangle", "id": "conv", "x": 560, "y": 295, "width": 340, "height": 120, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "conversational model\nnative speech-to-speech\n(no transcribe-then-speak cascade)", "fontSize": 17, "fontFamily": 2, "strokeColor": "#0f766e"}},
+
+  {"type": "rectangle", "id": "r1", "x": 1000, "y": 225, "width": 400, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "reads a recording: speaker · emotion ·\nlanguage, in one structured call", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r2", "x": 1000, "y": 320, "width": 400, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a small set of base voices,\nsteered by a written \"director's note\"", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r3", "x": 1000, "y": 415, "width": 400, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Lyra, a separate music model,\nset to compose a song on request", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "line", "id": "c_r1", "x": 902, "y": 330, "width": 96, "height": -70, "points": [[0, 0], [96, -70]], "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0},
+  {"type": "line", "id": "c_r2", "x": 902, "y": 355, "width": 96, "height": 0, "points": [[0, 0], [96, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0},
+  {"type": "arrow", "id": "c_r3", "x": 902, "y": 385, "width": 96, "height": 65, "points": [[0, 0], [96, 65]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "text", "id": "tool_l", "x": 880, "y": 455, "text": "tool call", "fontSize": 14, "fontFamily": 2, "strokeColor": "#0f766e"},
+
+  {"type": "text", "id": "b_h", "x": 80, "y": 530, "text": "FROM PROMPT TO PRODUCTION", "fontSize": 16, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "rectangle", "id": "b1", "x": 80, "y": 565, "width": 230, "height": 60, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a prompt", "fontSize": 17, "fontFamily": 3, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "b2", "x": 390, "y": 565, "width": 230, "height": 60, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "produce a song", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "b3", "x": 700, "y": 565, "width": 230, "height": 60, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "voice conversion", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "b4", "x": 1010, "y": 565, "width": 230, "height": 60, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "production", "fontSize": 17, "fontFamily": 2, "strokeColor": "#0f766e"}},
+  {"type": "arrow", "id": "ba1", "x": 312, "y": 595, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "ba2", "x": 622, "y": 595, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "ba3", "x": 932, "y": 595, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "text", "id": "b_note", "x": 1265, "y": 575, "text": "a pipeline to\nassemble, not a\nbutton to press", "fontSize": 14, "fontFamily": 2, "strokeColor": "#475569"},
+
+  {"type": "rectangle", "id": "card", "x": 80, "y": 680, "width": 760, "height": 120, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+  {"type": "text", "id": "card_h", "x": 100, "y": 692, "text": "what the talks say", "fontSize": 15, "fontFamily": 3, "strokeColor": "#5eead4"},
+  {"type": "text", "id": "card_b", "x": 100, "y": 720, "text": "Schaeff: \"a tool to then generate a song using Lyra.\"\nYoung:   \"produce a song and then use this voice\n          conversion technique\"", "fontSize": 16, "fontFamily": 3, "strokeColor": "#ccfbf1"},
+
+  {"type": "ellipse", "id": "claim", "x": 900, "y": 690, "width": 500, "height": 100, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "The craft is the composition,\nnot one great model.", "fontSize": 21, "fontFamily": 2, "strokeColor": "#ffffff"}},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 830, "text": "Sources: #755 Thor Schaeff (Google DeepMind) · #477 Phlo Young", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}

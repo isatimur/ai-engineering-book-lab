@@ -1,0 +1,485 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 · CHAPTER 7 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "The chess coach: the engine computes, the model explains",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Play Magnus's game review. Everything that has to be true is computed before the LLM speaks.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "game",
+   "x": 80,
+   "y": 300,
+   "width": 180,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "a played game\n(every position)",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s1",
+   "x": 330,
+   "y": 210,
+   "width": 310,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Stockfish\nbest move + evaluation",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s2",
+   "x": 330,
+   "y": 305,
+   "width": 310,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "human-move network (U. Toronto)\nwhat a player at your rating plays",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s3",
+   "x": 330,
+   "y": 400,
+   "width": 310,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "hand-built detectors\nforks · pins · threats · defences",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "g1",
+   "x": 262,
+   "y": 330,
+   "width": 66,
+   "height": -80,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     -80
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "g2",
+   "x": 262,
+   "y": 345,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "g3",
+   "x": 262,
+   "y": 360,
+   "width": 66,
+   "height": 80,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     80
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "pkg",
+   "x": 710,
+   "y": 270,
+   "width": 250,
+   "height": 150,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "structured\npackage\n(all computed)",
+    "fontSize": 18,
+    "fontFamily": 3,
+    "strokeColor": "#5eead4"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "p1",
+   "x": 642,
+   "y": 250,
+   "width": 66,
+   "height": 60,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     60
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "p2",
+   "x": 642,
+   "y": 345,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "p3",
+   "x": 642,
+   "y": 440,
+   "width": 66,
+   "height": -60,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     -60
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "llm",
+   "x": 1030,
+   "y": 295,
+   "width": 190,
+   "height": 100,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "LLM\ntranslate only",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "p4",
+   "x": 962,
+   "y": 345,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "out",
+   "x": 1290,
+   "y": 295,
+   "width": 190,
+   "height": 100,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "why the move\nwas good or bad,\nin English",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "p5",
+   "x": 1222,
+   "y": 345,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "forbid",
+   "x": 1010,
+   "y": 440,
+   "width": 470,
+   "height": 80,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "forbidden: the LLM reasons about the position\nLLMs hallucinate moves and cannot calculate",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "line",
+   "id": "forbid_link",
+   "x": 1125,
+   "y": 397,
+   "width": 0,
+   "height": 41,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     41
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 570,
+   "width": 780,
+   "height": 150,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 582,
+   "text": "what the package holds before the LLM sees it",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 610,
+   "text": "engine   -> best move, evaluation of each position\nhuman    -> how few players at your rating find it\ntactics  -> forks, pins, threats, defensive resources\nLLM rule -> \"the LLM's job is only to translate\n            this information\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 910,
+   "y": 585,
+   "width": 570,
+   "height": 100,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The engine owns the truth.\nThe model owns the words.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 750,
+   "text": "Sources: #677 Dole & Steinskog (Play Magnus)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

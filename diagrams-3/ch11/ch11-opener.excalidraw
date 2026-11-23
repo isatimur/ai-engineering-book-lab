@@ -1,0 +1,43 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 11 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "The Factory and Its Discontents", "fontSize": 36, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 140, "text": "Five claims: the factory is real for repetitive work, and oversold as a theory of all software.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "text", "id": "h_def", "x": 80, "y": 205, "text": "THE DEFINITION", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f" },
+    { "type": "text", "id": "h_nar", "x": 470, "y": 205, "text": "THE NARRATIVE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "h_crk", "x": 880, "y": 205, "text": "THE CRACKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#b42318" },
+
+    { "type": "rectangle", "id": "def", "x": 80, "y": 235, "width": 310, "height": 130, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Move the human out\nof the loop; engineering\nbecomes factory engineering", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "nar", "x": 470, "y": 235, "width": 330, "height": 130, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": { "text": "\"Spend more tokens.\nCode is free.\nJust ship more stuff.\"", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "crk1", "x": 880, "y": 235, "width": 340, "height": 58, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "outages from coding-agent mishaps", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7a1a12" } },
+    { "type": "rectangle", "id": "crk2", "x": 880, "y": 307, "width": 340, "height": 58, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "codebases decay, slice by slice", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7a1a12" } },
+    { "type": "arrow", "id": "a1", "x": 390, "y": 300, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "a2", "x": 800, "y": 300, "width": 80, "height": -36, "points": [[0, 0], [80, -36]], "strokeColor": "#b42318", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "a3", "x": 800, "y": 300, "width": 80, "height": 36, "points": [[0, 0], [80, 36]], "strokeColor": "#b42318", "strokeWidth": 2, "roughness": 0 },
+
+    { "type": "text", "id": "t_def", "x": 80, "y": 375, "text": "claims#38 · Bichard, Lloyd", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t_nar", "x": 470, "y": 375, "text": "claims#39 · Horthy: true premises", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t_crk", "x": 880, "y": 375, "text": "claims#39 · Horthy   ·   claims#31 · Adler", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "text", "id": "h_meas", "x": 80, "y": 430, "text": "THE MEASUREMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "proxy", "x": 80, "y": 460, "width": 310, "height": 120, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "PROXY\nPR counts can disguise\nwhether it works", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7a1a12" } },
+    { "type": "rectangle", "id": "card", "x": 470, "y": 460, "width": 400, "height": 120, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_h", "x": 490, "y": 472, "text": "one study, three counters", "fontSize": 15, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_b", "x": 490, "y": 500, "text": "lines of code  +2,450%\ncommits          +240%\nreleases          +30%", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4" },
+    { "type": "rectangle", "id": "outcome", "x": 950, "y": 460, "width": 270, "height": 120, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "OUTCOME\nmeasure what the\noutput drives", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "arrow", "id": "a4", "x": 390, "y": 520, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "a5", "x": 870, "y": 520, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "text", "id": "t_proxy", "x": 80, "y": 590, "text": "claims#40 · Cooke", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t_card", "x": 470, "y": 590, "text": "claims#35 · Shaukat: the gap became a queue", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t_out", "x": 950, "y": 590, "text": "claims#40 · Cooke", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "ellipse", "id": "claim", "x": 230, "y": 635, "width": 840, "height": 100, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Real for repetitive, well-specified work.\nOversold as a theory of all software.", "fontSize": 21, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "cite", "x": 80, "y": 765, "text": "Sources: #704 — Lou Bichard, Ona · #1210 — Zach Lloyd, Warp · #923 — Dex Horthy, HumanLayer\n· #1237 — Dan Adler, Sourcegraph · #1206 — Ryan Cooke, WorkOS · #1432 — Tariq Shaukat, Sonar", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 4 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How research and planning compress intent before code",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a1",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a2",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Each phase writes down what the next context window needs, so it starts informed.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b3",
+   "x": 80,
+   "y": 230,
+   "width": 230,
+   "height": 130,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "THE CODEBASE\nthe agent does not\nknow the system",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b4",
+   "x": 370,
+   "y": 230,
+   "width": 250,
+   "height": 130,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1  RESEARCH\nthe files and lines\nthat bear on this",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b5",
+   "x": 680,
+   "y": 230,
+   "width": 250,
+   "height": 130,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2  PLAN\ncompression\nof intent",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b6",
+   "x": 990,
+   "y": 230,
+   "width": 200,
+   "height": 130,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3  IMPLEMENT",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a7",
+   "x": 314,
+   "y": 295,
+   "width": 52,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     52,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 624,
+   "y": 295,
+   "width": 52,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     52,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a9",
+   "x": 934,
+   "y": 295,
+   "width": 52,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     52,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t10",
+   "x": 372,
+   "y": 372,
+   "text": "a fresh window starts informed\ninstead of searching",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "t11",
+   "x": 682,
+   "y": 372,
+   "text": "\"Planning is leverage\"",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 195,
+   "y": 364,
+   "width": 0,
+   "height": 106,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     106
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 80,
+   "y": 474,
+   "width": 460,
+   "height": 76,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Skip research: the agent fills the gaps\nand makes stuff up",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t14",
+   "x": 80,
+   "y": 590,
+   "text": "WHY NOT STANDING DOCS?",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 80,
+   "y": 620,
+   "width": 460,
+   "height": 90,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Standing documentation\nprose drifts from the code it describes",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b16",
+   "x": 580,
+   "y": 620,
+   "width": 610,
+   "height": 90,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Research on demand\ngenerated against the current tree, no time to drift",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 580,
+   "y": 450,
+   "width": 610,
+   "height": 130,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t18",
+   "x": 602,
+   "y": 466,
+   "text": "research snapshot (the shape, not a real file)",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t19",
+   "x": 602,
+   "y": 502,
+   "text": "## files that bear on this problem\n<file>:<line>   what it does and why it matters",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "rectangle",
+   "id": "b20",
+   "x": 1240,
+   "y": 230,
+   "width": 260,
+   "height": 250,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t21",
+   "x": 1262,
+   "y": 246,
+   "text": "#89 · Horthy · 00:12:13",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t22",
+   "x": 1262,
+   "y": 282,
+   "text": "\"If you don't\nonboard your\nagents, they\nwill make\nstuff up.\"",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b23",
+   "x": 1240,
+   "y": 520,
+   "width": 260,
+   "height": 110,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Onboard the\nagent first.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t24",
+   "x": 1240,
+   "y": 680,
+   "text": "Sources:\n#89 — Dex Horthy,\nHumanLayer",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,457 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 3 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How open weights pay back",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "A lab gives its weights away to win reach, a paying funnel, and the standard others build on.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "myth",
+   "x": 80,
+   "y": 215,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "myth: open source\ncompetes with profit",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "rel",
+   "x": 80,
+   "y": 400,
+   "width": 260,
+   "height": 100,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "release the\nopen weights",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "myth_x",
+   "x": 210,
+   "y": 300,
+   "width": 0,
+   "height": 95,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     95
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "text",
+   "id": "myth_xl",
+   "x": 225,
+   "y": 330,
+   "text": "\"actually\nnot the case\"",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "rectangle",
+   "id": "r1",
+   "x": 440,
+   "y": 215,
+   "width": 540,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Reach: \"a very good branding and\nmarketing tool for us\"  (Mistral)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r2",
+   "x": 440,
+   "y": 320,
+   "width": 540,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Funnel: try the open model, like it,\npay for the proprietary upgrade  (Mistral)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r3",
+   "x": 440,
+   "y": 425,
+   "width": 540,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Ecosystem: download, run, fine-tune\non the lab's format  (Gemma)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r4",
+   "x": 440,
+   "y": 530,
+   "width": 540,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Feedback: developers report back,\nthe lab improves the models  (Qwen)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a0",
+   "x": 340,
+   "y": 450,
+   "width": 96,
+   "height": 195,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     96,
+     -195
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "b0",
+   "x": 980,
+   "y": 255,
+   "width": 86,
+   "height": 157,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     86,
+     157
+    ]
+   ],
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a1",
+   "x": 340,
+   "y": 450,
+   "width": 96,
+   "height": 90,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     96,
+     -90
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "b1",
+   "x": 980,
+   "y": 360,
+   "width": 86,
+   "height": 52,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     86,
+     52
+    ]
+   ],
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a2",
+   "x": 340,
+   "y": 450,
+   "width": 96,
+   "height": 15,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     96,
+     15
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "b2",
+   "x": 980,
+   "y": 465,
+   "width": 86,
+   "height": 53,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     86,
+     -53
+    ]
+   ],
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a3",
+   "x": 340,
+   "y": 450,
+   "width": 96,
+   "height": 120,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     96,
+     120
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "b3",
+   "x": 980,
+   "y": 570,
+   "width": 86,
+   "height": 158,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     86,
+     -158
+    ]
+   ],
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 1070,
+   "y": 345,
+   "width": 300,
+   "height": 135,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The giving away\nis the business.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 650,
+   "width": 1290,
+   "height": 150,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 662,
+   "text": "#528 Devendra Chaplot, Mistral AI, on how open weights make money",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 692,
+   "text": "\"a lot of people ask me if you open source your models how do you make money\"\nreason 1  \"it serves as a very good branding and marketing tool for us\"\nreason 2  \"if people try out our open source models and they really like it they\n           come to us for an upgrade to propriety models and they pay for the upgrade\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 825,
+   "text": "Sources: #9 Omar Sanseviero (DeepMind) \u00b7 #528 Devendra Chaplot (Mistral AI) \u00b7 #480 Kathleen Kenealy (DeepMind) \u00b7 #400 Junyang Lin (Alibaba Qwen)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

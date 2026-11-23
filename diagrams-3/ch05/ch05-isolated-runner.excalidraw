@@ -1,0 +1,34 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 5 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "How isolation lets an agent run without a babysitter", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "Nobody grants the agent more judgement. It moves to a place where its worst case is bounded and disposable.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "optA", "x": 80, "y": 210, "width": 580, "height": 110, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "A · APPROVE EVERY ACTION\n\"babysit the agent while it works\"\nthe engineer becomes a very slow interpreter", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "rectangle", "id": "optB", "x": 80, "y": 345, "width": 580, "height": 110, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "B · SKIP PERMISSIONS ON A LAPTOP\nthe agent gets whatever the laptop can reach:\ncredentials · repositories · filesystem", "fontSize": 18, "fontFamily": 2, "strokeColor": "#b42318" } },
+    { "type": "rectangle", "id": "optC", "x": 80, "y": 520, "width": 580, "height": 120, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": { "text": "C · RUN IT IN AN EPHEMERAL CI JOB\nisolated machine · secrets registry\neverything disappears when the job spins down", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "arrow", "id": "aBC", "x": 370, "y": 457, "width": 0, "height": 61, "points": [[0, 0], [0, 61]], "strokeColor": "#3f4c5f", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "nBC", "x": 385, "y": 474, "text": "change what it can reach", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "trig1", "x": 80, "y": 700, "width": 280, "height": 90, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "ON A SCHEDULE\nupdate dependencies\nevery Monday morning", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "trig2", "x": 380, "y": 700, "width": 280, "height": 90, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "ON AN EVENT\nreview every pull request\nas it opens", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "arrow", "id": "aC1", "x": 220, "y": 642, "width": 0, "height": 56, "points": [[0, 0], [0, 56]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "aC2", "x": 520, "y": 642, "width": 0, "height": 56, "points": [[0, 0], [0, 56]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0 },
+
+    { "type": "rectangle", "id": "card", "x": 730, "y": 210, "width": 640, "height": 300, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_head", "x": 755, "y": 228, "text": "one agent run · inside an ephemeral CI job", "fontSize": 17, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_body", "x": 755, "y": 270, "text": "trigger   schedule: Monday morning\ntask      update dependencies\nmachine   isolated, fresh for this job\nsecrets   from the registry\nreach     this job only\napprovals none\njob ends  machine and secrets are gone", "fontSize": 18, "fontFamily": 3, "strokeColor": "#f5ede4" },
+
+    { "type": "text", "id": "quote", "x": 730, "y": 540, "text": "\"you can run as many GitHub Actions\nas you're willing to pay for.\"", "fontSize": 22, "fontFamily": 2, "strokeColor": "#1f2a3a" },
+    { "type": "line", "id": "qrule", "x": 718, "y": 540, "width": 0, "height": 56, "points": [[0, 0], [0, 56]], "strokeColor": "#cbd5e1", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "quote_by", "x": 730, "y": 604, "text": "Robert Brennan, OpenHands", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" },
+
+    { "type": "ellipse", "id": "claim", "x": 740, "y": 660, "width": 620, "height": 100, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Move the agent where its mistakes are cheap.", "fontSize": 22, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "cite", "x": 730, "y": 800, "text": "Sources: #1330 Robert Brennan (OpenHands)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

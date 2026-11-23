@@ -1,0 +1,32 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 1 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "Perfect code still leaves most of the stream untouched", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "Speed up a stage that is not the constraint, and the change reaches the user no sooner.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "text", "id": "lane1", "x": 80, "y": 215, "text": "ONE CHANGE, IDEA TO USER · if the models were perfect", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "seg_code", "x": 80, "y": 248, "width": 115, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "code\n14–16%", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "seg_rest", "x": 195, "y": 248, "width": 625, "height": 80, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "the rest of the value stream\nuntouched by faster generation", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "text", "id": "bar_note", "x": 80, "y": 340, "text": "Reock's hypothetical: flawless code, zero latency. The ceiling is still low.", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" },
+
+    { "type": "text", "id": "lane2", "x": 80, "y": 405, "text": "WHAT THE LEADING FIRMS CHANGED · McKinsey enterprise survey", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "naive", "x": 80, "y": 438, "width": 350, "height": 96, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Faster coding only\n10–20% faster", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12" } },
+    { "type": "rectangle", "id": "eng", "x": 470, "y": 438, "width": 350, "height": 96, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "End-to-end flow changed\n2x end-to-end", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "text", "id": "eng_note", "x": 470, "y": 546, "text": "20–25% of companies see this", "fontSize": 15, "fontFamily": 2, "strokeColor": "#3f4c5f" },
+    { "type": "text", "id": "naive_note", "x": 80, "y": 546, "text": "a little bit faster coding", "fontSize": 15, "fontFamily": 2, "strokeColor": "#b42318" },
+
+    { "type": "rectangle", "id": "card", "x": 880, "y": 215, "width": 520, "height": 345, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_h", "x": 904, "y": 235, "text": "DX REPORT · 400+ ORGANIZATIONS · Reock", "fontSize": 15, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_b1", "x": 904, "y": 278, "text": "\"code generation was never the\n bottleneck in the first place\"", "fontSize": 16, "fontFamily": 3, "strokeColor": "#f5ede4" },
+    { "type": "text", "id": "card_b2", "x": 904, "y": 352, "text": "\"still only be attacking anywhere\n from maybe 14 to 16% of the\n overall value stream\"", "fontSize": 16, "fontFamily": 3, "strokeColor": "#f5ede4" },
+    { "type": "text", "id": "card_h2", "x": 904, "y": 448, "text": "GOLDRATT'S RULE, as Reock quotes it", "fontSize": 15, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_b3", "x": 904, "y": 478, "text": "\"an hour saved on something that\n isn't the bottleneck is worthless\"", "fontSize": 16, "fontFamily": 3, "strokeColor": "#f5ede4" },
+
+    { "type": "ellipse", "id": "claim", "x": 80, "y": 600, "width": 560, "height": 84, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Change the flow, not just the typing.", "fontSize": 22, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "text", "id": "cite", "x": 700, "y": 618, "text": "Sources: #1216 — Justin Reock, DX · #62 — Justin Reock, DX\n#1618 — Martin Harrysson & Prakhar Dixit, McKinsey", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

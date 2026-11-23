@@ -1,0 +1,50 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 5 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "Execution Under a Spec", "fontSize": 36, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 140, "text": "Once the plan runs, only two things hold the agent to it: what it can reach, and what gets checked.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "p1", "x": 80, "y": 200, "width": 150, "height": 44, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 1, "fillStyle": "solid", "roughness": 0, "label": { "text": "intent", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "rectangle", "id": "p2", "x": 270, "y": 200, "width": 150, "height": 44, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 1, "fillStyle": "solid", "roughness": 0, "label": { "text": "spec", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "rectangle", "id": "p3", "x": 460, "y": 200, "width": 150, "height": 44, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 1, "fillStyle": "solid", "roughness": 0, "label": { "text": "plan", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "rectangle", "id": "p4", "x": 650, "y": 200, "width": 150, "height": 44, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "code (execution)", "fontSize": 17, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "rectangle", "id": "p5", "x": 840, "y": 200, "width": 150, "height": 44, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 1, "fillStyle": "solid", "roughness": 0, "label": { "text": "gates", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "rectangle", "id": "p6", "x": 1030, "y": 200, "width": 150, "height": 44, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 1, "fillStyle": "solid", "roughness": 0, "label": { "text": "review", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "rectangle", "id": "p7", "x": 1220, "y": 200, "width": 150, "height": 44, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 1, "fillStyle": "solid", "roughness": 0, "label": { "text": "live", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "arrow", "id": "pa1", "x": 232, "y": 222, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "pa2", "x": 422, "y": 222, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "pa3", "x": 612, "y": 222, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "pa4", "x": 802, "y": 222, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "pa5", "x": 992, "y": 222, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "pa6", "x": 1182, "y": 222, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#94a3b8", "strokeWidth": 2, "roughness": 0 },
+    { "type": "text", "id": "pnote", "x": 650, "y": 252, "text": "this chapter: the stage where the plan runs", "fontSize": 15, "fontFamily": 2, "strokeColor": "#94a3b8" },
+
+    { "type": "rectangle", "id": "from", "x": 80, "y": 300, "width": 300, "height": 80, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "THE WRITTEN PLAN\nadvisory once it runs", "fontSize": 18, "fontFamily": 2, "strokeColor": "#b42318" } },
+    { "type": "rectangle", "id": "to", "x": 1070, "y": 300, "width": 300, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "CONSTRAINTS + CHECKS\nwhat binds the agent", "fontSize": 18, "fontFamily": 2, "strokeColor": "#3f4c5f" } },
+    { "type": "arrow", "id": "band", "x": 382, "y": 340, "width": 686, "height": 0, "points": [[0, 0], [686, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 4, "roughness": 0 },
+
+    { "type": "text", "id": "bandnote", "x": 470, "y": 306, "text": "a constraint the agent cannot violate  +  a step whose completion is a fact", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "c1", "x": 80, "y": 440, "width": 305, "height": 150, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Isolation, not approval\nclicking, makes an\nunattended agent\naffordable", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "c2", "x": 408, "y": 440, "width": 305, "height": 150, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "A crisp spec plus a\nmechanical check\nparallelises at scale now", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "c3", "x": 736, "y": 440, "width": 305, "height": 150, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Where a feature only\norchestrates, instructions\ncan replace the code", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "c4", "x": 1064, "y": 440, "width": 305, "height": 150, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Parallel async agents\nturn execution into a\ncoordination problem\nfor people", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+
+    { "type": "ellipse", "id": "n1", "x": 211, "y": 412, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "1", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "ellipse", "id": "n2", "x": 539, "y": 412, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "2", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "ellipse", "id": "n3", "x": 867, "y": 412, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "3", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "ellipse", "id": "n4", "x": 1195, "y": 412, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "4", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "t1", "x": 90, "y": 602, "text": "claims#18 · Brennan (OpenHands)", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t2", "x": 418, "y": 602, "text": "claims#19 · Brennan (OpenHands)", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t3", "x": 746, "y": 602, "text": "claims#20 · Gomes (Cursor)", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "t4", "x": 1074, "y": 602, "text": "claims#21 · Banks (Google),\nSingh (Superconductor)", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "ellipse", "id": "claim", "x": 375, "y": 670, "width": 690, "height": 96, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Permissions are specification, enforced.", "fontSize": 24, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "cite", "x": 80, "y": 800, "text": "Sources: #1330 Robert Brennan (OpenHands) · #42 Robert Brennan (OpenHands) · #633 David Gomes (Cursor)\n#182 Rustin Banks (Google) · #996 Arjun Singh (Superconductor)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

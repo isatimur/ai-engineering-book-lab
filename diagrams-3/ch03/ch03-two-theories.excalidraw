@@ -1,0 +1,529 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 3 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Two theories of the specification, two ways to fail",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a1",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a2",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Both keep the document longer than the code. They differ on who reads it.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t3",
+   "x": 80,
+   "y": 205,
+   "text": "VIBE CODING",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "rectangle",
+   "id": "b4",
+   "x": 80,
+   "y": 240,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the operator holds\nthe guardrails",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a5",
+   "x": 260,
+   "y": 324,
+   "width": 0,
+   "height": 22,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b6",
+   "x": 80,
+   "y": 350,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the agent follows\nthe operator",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a7",
+   "x": 260,
+   "y": 434,
+   "width": 0,
+   "height": 22,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b8",
+   "x": 80,
+   "y": 460,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "quality tracks\nthe operator's discipline",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b9",
+   "x": 80,
+   "y": 580,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "Fails when the\noperator slips",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t10",
+   "x": 500,
+   "y": 205,
+   "text": "ALIGNMENT MODEL · Grove",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#3f4c5f"
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 500,
+   "y": 240,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "specification",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 680,
+   "y": 324,
+   "width": 0,
+   "height": 22,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 500,
+   "y": 350,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "people debate and\nsynchronize on it",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a14",
+   "x": 680,
+   "y": 434,
+   "width": 0,
+   "height": 22,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 500,
+   "y": 460,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the code follows",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b16",
+   "x": 500,
+   "y": 580,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "Fails by going stale\nwhile everyone nods",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t17",
+   "x": 920,
+   "y": 205,
+   "text": "GENERATING MODEL · Kiro",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#3f4c5f"
+  },
+  {
+   "type": "rectangle",
+   "id": "b18",
+   "x": 920,
+   "y": 240,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "specification",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a19",
+   "x": 1100,
+   "y": 324,
+   "width": 0,
+   "height": 22,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b20",
+   "x": 920,
+   "y": 350,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "drives the holistic\nSDLC",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a21",
+   "x": 1100,
+   "y": 434,
+   "width": 0,
+   "height": 22,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     22
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b22",
+   "x": 920,
+   "y": 460,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the code is output",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b23",
+   "x": 920,
+   "y": 580,
+   "width": 360,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "Fails by being satisfied\nexactly, wrong parts too",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b24",
+   "x": 80,
+   "y": 690,
+   "width": 780,
+   "height": 150,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 102,
+   "y": 706,
+   "text": "#40 · Harris · 00:01:40 / 00:01:52",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t26",
+   "x": 102,
+   "y": 742,
+   "text": "\"vibe coding relies a lot on me as the operator\ngetting things right.\"\n\"represent the holistic SDLC\"",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b27",
+   "x": 920,
+   "y": 700,
+   "width": 360,
+   "height": 110,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Who is the\nspec addressed to?",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t28",
+   "x": 80,
+   "y": 862,
+   "text": "Sources: #40 — Al Harris, Amazon Kiro · #265 — Sean Grove, OpenAI",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}
