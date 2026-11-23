@@ -1,0 +1,421 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 3 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How skipping the specification bills you on Monday",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a1",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a2",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The cost of zero planning arrives with the second change, not the first.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t3",
+   "x": 80,
+   "y": 205,
+   "text": "THE WEEKEND",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t4",
+   "x": 600,
+   "y": 205,
+   "text": "MONDAY",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "rectangle",
+   "id": "b5",
+   "x": 80,
+   "y": 235,
+   "width": 220,
+   "height": 120,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "low-spec,\nzero planning",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b6",
+   "x": 340,
+   "y": 235,
+   "width": 220,
+   "height": 120,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the thing works\nand feels\nproductive",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b7",
+   "x": 600,
+   "y": 235,
+   "width": 220,
+   "height": 120,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "add a feature or\nchange how\nit works",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b8",
+   "x": 860,
+   "y": 235,
+   "width": 220,
+   "height": 120,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "you don't\nunderstand it",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b9",
+   "x": 600,
+   "y": 410,
+   "width": 480,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "throw most or all of it away",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a10",
+   "x": 304,
+   "y": 295,
+   "width": 32,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     32,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a11",
+   "x": 564,
+   "y": 295,
+   "width": 32,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     32,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 824,
+   "y": 295,
+   "width": 32,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     32,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a13",
+   "x": 970,
+   "y": 359,
+   "width": 0,
+   "height": 47,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     47
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a14",
+   "x": 580,
+   "y": 200,
+   "width": 0,
+   "height": 300,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     300
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "text",
+   "id": "t15",
+   "x": 80,
+   "y": 380,
+   "text": "What was skipped does not bill\nuntil the second change.",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "text",
+   "id": "t16",
+   "x": 80,
+   "y": 535,
+   "text": "THE SAME METHOD, TWO USES",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 80,
+   "y": 565,
+   "width": 480,
+   "height": 100,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Throwaway prototype\nanswers a question. No Monday,\nso no hangover.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b18",
+   "x": 600,
+   "y": 565,
+   "width": 480,
+   "height": 100,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Maintainable software\nbuilt this way: the hangover,\n\"the resulting despair\"",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b19",
+   "x": 1140,
+   "y": 215,
+   "width": 330,
+   "height": 330,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t20",
+   "x": 1162,
+   "y": 231,
+   "text": "#106 · Gallon · 00:00:47",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t21",
+   "x": 1162,
+   "y": 267,
+   "text": "\"But then Monday\nrolls around. [...]\nyou realize that you\ndon't understand it.\nYou can't maintain it\nand you have to\nthrow most or all\nof it away.\"",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b22",
+   "x": 1140,
+   "y": 580,
+   "width": 330,
+   "height": 100,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The bill arrives with\nthe second change.",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t23",
+   "x": 80,
+   "y": 712,
+   "text": "Sources: #106 — Corey J. Gallon, Rexmore",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

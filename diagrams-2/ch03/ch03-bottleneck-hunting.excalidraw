@@ -1,0 +1,544 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 3 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Find the root node, skip the leaves",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "A lab names the one weakness that holds its best system back, then removes it.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "tree_h",
+   "x": 80,
+   "y": 205,
+   "text": "WHERE TO SPEND THE NEXT RUN",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "root",
+   "x": 220,
+   "y": 240,
+   "width": 300,
+   "height": 80,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "root node\nthe crucial shortcoming",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "root_n",
+   "x": 545,
+   "y": 255,
+   "text": "build the fix here, in the\narchitecture or the training",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "line",
+   "id": "edge0",
+   "x": 370,
+   "y": 320,
+   "width": 240,
+   "height": 110,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     -240,
+     110
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "leaf0",
+   "x": 80,
+   "y": 430,
+   "width": 100,
+   "height": 50,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "leaf",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "line",
+   "id": "edge1",
+   "x": 370,
+   "y": 320,
+   "width": 120,
+   "height": 110,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     -120,
+     110
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "leaf1",
+   "x": 200,
+   "y": 430,
+   "width": 100,
+   "height": 50,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "leaf",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "line",
+   "id": "edge2",
+   "x": 370,
+   "y": 320,
+   "width": 0,
+   "height": 110,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     110
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "leaf2",
+   "x": 320,
+   "y": 430,
+   "width": 100,
+   "height": 50,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "leaf",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "line",
+   "id": "edge3",
+   "x": 370,
+   "y": 320,
+   "width": 120,
+   "height": 110,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     120,
+     110
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "leaf3",
+   "x": 440,
+   "y": 430,
+   "width": 100,
+   "height": 50,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "leaf",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "line",
+   "id": "edge4",
+   "x": 370,
+   "y": 320,
+   "width": 240,
+   "height": 110,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     240,
+     110
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "leaf4",
+   "x": 560,
+   "y": 430,
+   "width": 100,
+   "height": 50,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "leaf",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "text",
+   "id": "leaf_n",
+   "x": 80,
+   "y": 500,
+   "text": "broad improvements everywhere:\n\"we're not going to waste time on the leaves\"",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "text",
+   "id": "loop_h",
+   "x": 800,
+   "y": 205,
+   "text": "THE LOOP",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "s1",
+   "x": 800,
+   "y": 240,
+   "width": 500,
+   "height": 70,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1  Diagnose: name the bottleneck\nin your best current system",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s2",
+   "x": 800,
+   "y": 350,
+   "width": 500,
+   "height": 70,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2  Build the fix in architecture or training\nexample: thinking in Gemini",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s3",
+   "x": 800,
+   "y": 460,
+   "width": 500,
+   "height": 70,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3  A new best system,\nwith its own next bottleneck",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "l12",
+   "x": 1050,
+   "y": 310,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l23",
+   "x": 1050,
+   "y": 420,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l31",
+   "x": 1300,
+   "y": 495,
+   "width": 50,
+   "height": 220,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     50,
+     0
+    ],
+    [
+     50,
+     -220
+    ],
+    [
+     0,
+     -220
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 120,
+   "y": 570,
+   "width": 420,
+   "height": 80,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Diagnose first, invent second.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "claim_n",
+   "x": 600,
+   "y": 585,
+   "text": "A sequence of correctly chosen bottlenecks rewards focus\nover scale: the right fix beats a bigger budget.",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#9f1239"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 690,
+   "width": 1290,
+   "height": 120,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 702,
+   "text": "what the researchers say",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 732,
+   "text": "#13  Raia Hadsell   \"our approach we look for root nodes. You know we're not going\n                     to waste time on the leaves.\"\n#267 Jack Rae       \"progress has really been marked by identifying key bottlenecks\n                     towards intelligence and then solving them.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 835,
+   "text": "Sources: #13 Raia Hadsell (DeepMind) \u00b7 #267 Jack Rae (DeepMind)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

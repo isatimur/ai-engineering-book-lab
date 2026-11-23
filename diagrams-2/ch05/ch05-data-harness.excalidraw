@@ -1,0 +1,491 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 5 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Physical data needs its own harness before an agent can read it",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Text is legible to an agent by default. Video, sensor readings and robot telemetry are not.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "a_h",
+   "x": 80,
+   "y": 200,
+   "text": "TEXT \u00b7 THE GENERIC PATTERN",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "a_in",
+   "x": 80,
+   "y": 228,
+   "width": 240,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "prose and code",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "a_ag",
+   "x": 400,
+   "y": 228,
+   "width": 180,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "agent",
+    "fontSize": 18,
+    "fontFamily": 3,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a1",
+   "x": 322,
+   "y": 260,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a2",
+   "x": 582,
+   "y": 260,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "a_out",
+   "x": 672,
+   "y": 248,
+   "text": "handles it fine: legible by default",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "text",
+   "id": "b_h",
+   "x": 80,
+   "y": 330,
+   "text": "PHYSICAL DATA \u00b7 SAME AGENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "rectangle",
+   "id": "b_in",
+   "x": 80,
+   "y": 358,
+   "width": 240,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "video \u00b7 sensor readings\n\u00b7 robot telemetry",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b_ag",
+   "x": 400,
+   "y": 358,
+   "width": 180,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "agent",
+    "fontSize": 18,
+    "fontFamily": 3,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "b1",
+   "x": 322,
+   "y": 390,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "b2",
+   "x": 582,
+   "y": 390,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b_out",
+   "x": 660,
+   "y": 350,
+   "width": 380,
+   "height": 80,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "only 21% accuracy on data projects\n(Anthropic's published figure)",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#a8412e"
+   }
+  },
+  {
+   "type": "text",
+   "id": "c_h",
+   "x": 80,
+   "y": 456,
+   "text": "PHYSICAL DATA \u00b7 WITH A DOMAIN-SPECIFIC DATA HARNESS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "c_in",
+   "x": 80,
+   "y": 498,
+   "width": 240,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "video \u00b7 sensor readings\n\u00b7 robot telemetry",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c_h1",
+   "x": 400,
+   "y": 486,
+   "width": 240,
+   "height": 88,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "data harness\nlayered context",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c_ag",
+   "x": 720,
+   "y": 498,
+   "width": 180,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "agent",
+    "fontSize": 18,
+    "fontFamily": 3,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "c1",
+   "x": 322,
+   "y": 530,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "c2",
+   "x": 642,
+   "y": 530,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "c3",
+   "x": 902,
+   "y": 530,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "c_out",
+   "x": 992,
+   "y": 506,
+   "text": "reasons over telemetry\nthe way it reasons over prose",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 620,
+   "width": 700,
+   "height": 150,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 632,
+   "text": "what the talk reports",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 660,
+   "text": "\"Anthropic published that accuracy for data\n projects on their agents is only 21% until\n you add specific data harnesses to them\n and provide context.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 830,
+   "y": 630,
+   "width": 520,
+   "height": 110,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The fix is a harness,\nnot a better base model.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 800,
+   "text": "Sources: #890 Dmitry Petrov (DataChain)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,439 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 3 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How code loses the reasoning that produced it",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a1",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a2",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The specification keeps the why. The code keeps only what runs.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b3",
+   "x": 80,
+   "y": 220,
+   "width": 280,
+   "height": 190,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "THE WORK BEFORE CODE\ntalking with people\ngathering requirements\nthinking through\nimplementation",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b4",
+   "x": 440,
+   "y": 240,
+   "width": 260,
+   "height": 150,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "SPECIFICATION\nkeeps the intent\nand the reasons",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b5",
+   "x": 800,
+   "y": 240,
+   "width": 240,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "CODE\nruns, but the\nwhy is not stored",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a6",
+   "x": 364,
+   "y": 315,
+   "width": 72,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     72,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a7",
+   "x": 704,
+   "y": 315,
+   "width": 92,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     92,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t8",
+   "x": 706,
+   "y": 268,
+   "text": "lossy\nprojection",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "arrow",
+   "id": "a9",
+   "x": 920,
+   "y": 394,
+   "width": 350,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ],
+    [
+     -350,
+     40
+    ],
+    [
+     -350,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "text",
+   "id": "t10",
+   "x": 600,
+   "y": 442,
+   "text": "read the code to recover the intent: you only infer it",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "text",
+   "id": "t11",
+   "x": 80,
+   "y": 500,
+   "text": "GROVE'S ANALOGY",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b12",
+   "x": 80,
+   "y": 530,
+   "width": 280,
+   "height": 110,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "C source\ncomments, good names",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 440,
+   "y": 530,
+   "width": 260,
+   "height": 110,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "compiled binary",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b14",
+   "x": 800,
+   "y": 530,
+   "width": 240,
+   "height": 110,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "decompiled\nruns, but no comments\nand no names",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a15",
+   "x": 364,
+   "y": 585,
+   "width": 72,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     72,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a16",
+   "x": 704,
+   "y": 585,
+   "width": 92,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     92,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t17",
+   "x": 712,
+   "y": 548,
+   "text": "compile",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "t18",
+   "x": 372,
+   "y": 548,
+   "text": "",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "rectangle",
+   "id": "b19",
+   "x": 1110,
+   "y": 220,
+   "width": 340,
+   "height": 230,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t20",
+   "x": 1132,
+   "y": 236,
+   "text": "#265 · Grove · 00:06:56",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t21",
+   "x": 1132,
+   "y": 272,
+   "text": "\"code itself is\nactually a lossy\nprojection from the\nspecification.\"",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b22",
+   "x": 1110,
+   "y": 500,
+   "width": 340,
+   "height": 120,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The reasons are\nnot in the code.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b23",
+   "x": 80,
+   "y": 690,
+   "width": 960,
+   "height": 70,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Keep only the code, and the reasons leave with the people who remember them.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t24",
+   "x": 1110,
+   "y": 712,
+   "text": "Sources: #265 — Sean Grove, OpenAI",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

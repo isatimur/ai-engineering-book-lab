@@ -1,0 +1,274 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 3 \u00b7 THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Building Frontier Models",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The frontier stopped being a club of two labs. It is now a discipline with many practitioners.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "quote",
+   "x": 80,
+   "y": 200,
+   "width": 1320,
+   "height": 60,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "\"You do not need a billion dollars to compete with the big labs.\"   #439 Eugene Cheah, Featherless.ai",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "ma",
+   "x": 80,
+   "y": 300,
+   "text": "MOVEMENT A \u00b7 HOW A LAB ADVANCES \u00b7 the method",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "b14",
+   "x": 80,
+   "y": 335,
+   "width": 420,
+   "height": 120,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "\"Stagnation\" is a training-budget lag,\nnot a ceiling\nclaims#14",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 530,
+   "y": 335,
+   "width": 420,
+   "height": 120,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Progress is bottleneck-hunting:\nfix the root, skip the leaves\nclaims#15",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b16",
+   "x": 980,
+   "y": 335,
+   "width": 420,
+   "height": 120,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Reasoning work starts in code,\na sandbox the model can execute\nclaims#16",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "down",
+   "x": 740,
+   "y": 470,
+   "width": 0,
+   "height": 105,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     105
+    ]
+   ],
+   "strokeColor": "#881337",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "down_l",
+   "x": 760,
+   "y": 500,
+   "text": "focus beats scale, so teams without\na closed lab's budget reach the frontier",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#9f1239"
+  },
+  {
+   "type": "text",
+   "id": "mb",
+   "x": 80,
+   "y": 590,
+   "text": "MOVEMENT B \u00b7 WHO SETS THE STANDARD \u00b7 the politics",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 80,
+   "y": 625,
+   "width": 420,
+   "height": 120,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#155e75",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The open-model gap has largely closed:\na lead of months, not a moat\nclaims#13",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b18",
+   "x": 530,
+   "y": 625,
+   "width": 420,
+   "height": 120,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#155e75",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Open weights are a strategy:\nbecome the substrate others build on\nclaims#18",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 980,
+   "y": 625,
+   "width": 420,
+   "height": 120,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#155e75",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Benchmarks steer the field:\nwhat is measured gets built\nclaims#17",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 780,
+   "text": "Sources: #439 Eugene Cheah (Featherless.ai) \u00b7 #189 Amir Haghighat (Baseten) \u00b7 #74 Olive Song (MiniMax) \u00b7 #476 Dylan Patel (SemiAnalysis)\n#13 Raia Hadsell (DeepMind) \u00b7 #267 Jack Rae (DeepMind) \u00b7 #67 Jacob Kahn (FAIR Meta) \u00b7 #253 Alex Duffy (Every.to) \u00b7 #137 Barr Yaron (Amplify)\n#9 Omar Sanseviero (DeepMind) \u00b7 #528 Devendra Chaplot (Mistral AI) \u00b7 #480 Kathleen Kenealy (DeepMind) \u00b7 #400 Junyang Lin (Alibaba Qwen)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

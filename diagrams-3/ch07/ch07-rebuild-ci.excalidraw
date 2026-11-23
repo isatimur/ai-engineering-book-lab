@@ -1,0 +1,368 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 7 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "What you rebuild when agents run without CI",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Each new breakage teaches you one piece of CI you skipped.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "colA",
+   "x": 80,
+   "y": 200,
+   "text": "WHAT BREAKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "text",
+   "id": "colB",
+   "x": 540,
+   "y": 200,
+   "text": "WHAT YOU BUILD IN RESPONSE",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#3f4c5f"
+  },
+  {
+   "type": "rectangle",
+   "id": "r0a",
+   "x": 80,
+   "y": 230,
+   "width": 380,
+   "height": 96,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "You change a prompt or a skill;\nsomething downstream breaks",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "r0ar",
+   "x": 460,
+   "y": 278,
+   "width": 80,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "r0b",
+   "x": 540,
+   "y": 230,
+   "width": 300,
+   "height": 96,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "A test that the output\nstill has the expected shape\n= regression testing",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r1a",
+   "x": 80,
+   "y": 360,
+   "width": 380,
+   "height": 96,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "A scheduled task silently fails;\nnobody notices for a week",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "r1ar",
+   "x": 460,
+   "y": 408,
+   "width": 80,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "r1b",
+   "x": 540,
+   "y": 360,
+   "width": 300,
+   "height": 96,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Alerts\n= CI monitoring",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r2a",
+   "x": 80,
+   "y": 490,
+   "width": 380,
+   "height": 96,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "One skill changes its output schema;\nthree downstream skills break",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "r2ar",
+   "x": 460,
+   "y": 538,
+   "width": 80,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     80,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "r2b",
+   "x": 540,
+   "y": 490,
+   "width": 300,
+   "height": 96,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Validation at the boundary\n= contract testing",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "order",
+   "x": 80,
+   "y": 625,
+   "text": "Shrabony: build agents on their own and you rebuild these in roughly a fixed order.",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 900,
+   "y": 230,
+   "width": 480,
+   "height": 260,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 922,
+   "y": 246,
+   "text": "#837 — as said on stage",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 922,
+   "y": 282,
+   "text": "\"Congratulations, you have\nreinvented regression testing.\"\n\n\"One day, it silently fails,\nbut you haven't noticed for a\nweek. So, you build alerts.\nYou just reinvented CI\nmonitoring.\"",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 940,
+   "y": 535,
+   "width": 400,
+   "height": 100,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The typical failure is silent.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "warn",
+   "x": 80,
+   "y": 680,
+   "width": 1300,
+   "height": 64,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The job did not crash. It reported nothing, which is what it reports when everything is fine.",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 770,
+   "text": "Sources: #837 — Sumaiya Shrabony",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

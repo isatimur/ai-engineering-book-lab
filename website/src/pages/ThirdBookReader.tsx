@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import { bookThree } from '../data/draftBooks';
+import { DraftBookIndexLinks } from '../components/draft/DraftBookIndexLinks';
+import { LightboxProvider } from '../lib/lightbox';
 import {
   chaptersThree,
   chapterThreePath,
@@ -37,7 +40,7 @@ export const ThirdBookReader = () => {
   const totalWords = chaptersThreeWordCount;
   const isEmpty = chaptersThree.length === 0;
   return (
-    <>
+    <LightboxProvider>
       <Seo
         title="Third Book (Draft) — Read"
         description={`All ${chaptersThree.length} drafted chapters of the third book, in one continuous read.`}
@@ -89,6 +92,7 @@ export const ThirdBookReader = () => {
               })}
             </ol>
           )}
+          <DraftBookIndexLinks book={bookThree} />
           <ol className="list-none p-0 m-0 space-y-4 font-serif">
             {chaptersThree.map((chapter) => (
               <li key={chapter.number} className="border-b border-[var(--color-border)] pb-4">
@@ -121,13 +125,13 @@ export const ThirdBookReader = () => {
                 <p className="font-serif italic text-lg text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
               </div>
               <div className="max-w-3xl mx-auto px-6 pt-4 pb-8">
-                <SecondBookArticle chapter={chapter} />
+                <SecondBookArticle chapter={chapter} figures={bookThree.figures.inline(chapter.number)} />
                 <EvidenceRail chapterNumber={chapter.number} evidenceData={evidenceThreeData} showGraphLink={false} />
               </div>
             </article>
           ))}
         </section>
       </div>
-    </>
+    </LightboxProvider>
   );
 };

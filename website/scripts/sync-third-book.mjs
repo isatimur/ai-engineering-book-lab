@@ -16,6 +16,7 @@ import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { syncFigures } from './sync-figures-lib.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '../..');
@@ -70,6 +71,8 @@ async function copyIfDifferent(src, dst) {
 }
 
 async function main() {
+  // Book 3 figures: diagrams-3/figures.json -> src/data/figures-3.json + public/diagrams-3/.
+  await syncFigures({ repoRoot, websiteRoot, folder: 'diagrams-3', dataName: 'figures-3.json', log });
   if (!existsSync(draftingRoot)) {
     log(`source public/drafting-3/ not found at ${draftingRoot} - skipping sync (using committed src/content-3/ artifacts)`);
     return;

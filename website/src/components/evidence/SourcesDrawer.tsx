@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { claimsForChapter } from '../../lib/evidenceGraph';
+import type { GraphBook } from '../../lib/graphBooks';
 import { RedThreadLinks } from './EvidenceSectionHeader';
 
 const EvidenceGraphView = lazy(() =>
@@ -11,10 +12,12 @@ type Props = {
   chapterNumber: string;
   isOpen: boolean;
   onClose: () => void;
+  /** Books 2 and 3 pass their own graph. Omitted for book 1. */
+  book?: GraphBook;
 };
 
-export const SourcesDrawer = ({ chapterNumber, isOpen, onClose }: Props) => {
-  const claims = claimsForChapter(chapterNumber);
+export const SourcesDrawer = ({ chapterNumber, isOpen, onClose, book }: Props) => {
+  const claims = book ? book.api.claimsForChapter(chapterNumber) : claimsForChapter(chapterNumber);
   const anchorCount = claims.reduce((n, c) => n + c.anchors.length, 0);
 
   useEffect(() => {
@@ -65,15 +68,17 @@ export const SourcesDrawer = ({ chapterNumber, isOpen, onClose }: Props) => {
                   </div>
                 }
               >
-                <EvidenceGraphView chapterNumber={chapterNumber} compact />
+                <EvidenceGraphView chapterNumber={chapterNumber} compact book={book} />
               </Suspense>
 
-              <div onClick={onClose}>
-                <p className="font-mono text-[9px] uppercase tracking-widest text-[var(--color-ink-muted)] mb-2">
-                  Continue the thread
-                </p>
-                <RedThreadLinks chapterNumber={chapterNumber} />
-              </div>
+              {!book && (
+                <div onClick={onClose}>
+                  <p className="font-mono text-[9px] uppercase tracking-widest text-[var(--color-ink-muted)] mb-2">
+                    Continue the thread
+                  </p>
+                  <RedThreadLinks chapterNumber={chapterNumber} />
+                </div>
+              )}
             </div>
           </motion.aside>
         </>

@@ -1,0 +1,30 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 5 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "How Cursor replaced a feature with a skill", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "When code is mostly plumbing between things the agent can already do, the plumbing can be described.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "before", "x": 80, "y": 210, "width": 480, "height": 150, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "BEFORE · A FULL FEATURE\n\"a lot of code a lot of dependencies\na lot of complexity and tests\"", "fontSize": 19, "fontFamily": 2, "strokeColor": "#7a1a12" } },
+    { "type": "rectangle", "id": "after", "x": 890, "y": 210, "width": 480, "height": 150, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": { "text": "AFTER · ONE SKILL\ninstructions in markdown\n+ two existing primitives", "fontSize": 19, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "arrow", "id": "swap", "x": 562, "y": 285, "width": 326, "height": 0, "points": [[0, 0], [326, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 4, "roughness": 0 },
+    { "type": "text", "id": "swap_note", "x": 610, "y": 250, "text": "one pull request", "fontSize": 17, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "card", "x": 80, "y": 410, "width": 640, "height": 270, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_head", "x": 105, "y": 428, "text": "pull request · remove the feature", "fontSize": 17, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_body", "x": 105, "y": 470, "text": "-  feature code\n-  its dependencies\n-  its tests\n+  a skill: instructions in markdown\n   that calls 2 existing primitives\n\n   around 15,000 lines of code deleted", "fontSize": 18, "fontFamily": 3, "strokeColor": "#f5ede4" },
+
+    { "type": "rectangle", "id": "trade", "x": 770, "y": 410, "width": 600, "height": 270, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "trade_head", "x": 795, "y": 428, "text": "THE TRADE", "fontSize": 18, "fontFamily": 2, "strokeColor": "#3f4c5f" },
+    { "type": "text", "id": "trade_lost", "x": 795, "y": 470, "text": "Lost: a small margin of quality\n\"almost as good as the previous one\"", "fontSize": 19, "fontFamily": 2, "strokeColor": "#7a1a12" },
+    { "type": "text", "id": "trade_won", "x": 795, "y": 560, "text": "Bought: ~15,000 fewer lines to maintain\n\"markdown is basically the new code\"", "fontSize": 19, "fontFamily": 2, "strokeColor": "#1f2a3a" },
+
+    { "type": "rectangle", "id": "warn", "x": 80, "y": 730, "width": 640, "height": 100, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "An instruction file has no type checker. The trade\nholds only when the capability underneath\nis already built and tested.", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7a1a12" } },
+    { "type": "ellipse", "id": "claim", "x": 770, "y": 725, "width": 600, "height": 110, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "The markdown replaced the\norchestration, not the substance.", "fontSize": 22, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "cite", "x": 80, "y": 870, "text": "Sources: #633 David Gomes (Cursor)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

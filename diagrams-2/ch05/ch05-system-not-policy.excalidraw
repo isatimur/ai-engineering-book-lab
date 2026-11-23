@@ -1,0 +1,38 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 5 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "The failure shows at the policy. The cause is often on the wire.", "fontSize": 34, "fontFamily": 2, "strokeColor": "#155e75" },
+    { "type": "line", "id": "sig_teal", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_rose", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "Data travels from sensors into the system, and commands travel out to the actuators, across a real protocol.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "policy", "x": 560, "y": 220, "width": 200, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": { "text": "control policy", "fontSize": 18, "fontFamily": 2, "strokeColor": "#475569" } },
+    { "type": "text", "id": "symptom", "x": 790, "y": 230, "text": "the failure looks like it is here:\n\"the policy is wrong\"", "fontSize": 17, "fontFamily": 2, "strokeColor": "#94a3b8" },
+
+    { "type": "arrow", "id": "up", "x": 620, "y": 398, "width": 0, "height": -106, "points": [[0, 0], [0, -106]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "down", "x": 700, "y": 292, "width": 0, "height": 106, "points": [[0, 0], [0, 106]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "text", "id": "up_l", "x": 545, "y": 334, "text": "data in", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" },
+    { "type": "text", "id": "down_l", "x": 712, "y": 334, "text": "commands out", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" },
+
+    { "type": "rectangle", "id": "encl", "x": 285, "y": 385, "width": 750, "height": 100, "backgroundColor": "transparent", "strokeColor": "#a8412e", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0 },
+    { "type": "rectangle", "id": "sensors", "x": 80, "y": 400, "width": 170, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "sensors", "fontSize": 18, "fontFamily": 2, "strokeColor": "#134e4a" } },
+    { "type": "rectangle", "id": "p_in", "x": 300, "y": 400, "width": 210, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "protocol on the wire\ntiming · electrical", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13" } },
+    { "type": "rectangle", "id": "system", "x": 550, "y": 400, "width": 220, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "software system\nand its configuration", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13" } },
+    { "type": "rectangle", "id": "p_out", "x": 810, "y": 400, "width": 210, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "protocol on the wire\ntiming · electrical", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13" } },
+    { "type": "rectangle", "id": "act", "x": 1070, "y": 400, "width": 170, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "actuators", "fontSize": 18, "fontFamily": 2, "strokeColor": "#134e4a" } },
+    { "type": "arrow", "id": "f1", "x": 252, "y": 435, "width": 46, "height": 0, "points": [[0, 0], [46, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "f2", "x": 512, "y": 435, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "f3", "x": 772, "y": 435, "width": 36, "height": 0, "points": [[0, 0], [36, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "f4", "x": 1022, "y": 435, "width": 46, "height": 0, "points": [[0, 0], [46, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "text", "id": "cause", "x": 285, "y": 498, "text": "the cause is often here, in the system and the link:  timing skew · dropped message · protocol quirk", "fontSize": 17, "fontFamily": 2, "strokeColor": "#a8412e" },
+
+    { "type": "rectangle", "id": "card", "x": 80, "y": 570, "width": 680, "height": 190, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_h", "x": 100, "y": 582, "text": "what the talk reports", "fontSize": 15, "fontFamily": 3, "strokeColor": "#5eead4" },
+    { "type": "text", "id": "card_b", "x": 100, "y": 610, "text": "\"the issue will look like it's the policy\n but it's actually the software system\"\n\nbehaviour = control policy\n          + software configuration\n          + physics of the link", "fontSize": 16, "fontFamily": 3, "strokeColor": "#ccfbf1" },
+
+    { "type": "ellipse", "id": "claim", "x": 820, "y": 600, "width": 520, "height": 110, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "The bug is the system,\nnot the policy.", "fontSize": 21, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "text", "id": "cite", "x": 80, "y": 790, "text": "Sources: #110 Rishabh Garg (Tesla Optimus)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

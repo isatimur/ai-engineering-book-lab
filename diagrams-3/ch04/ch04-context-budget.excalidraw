@@ -1,0 +1,467 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 4 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How the context window sets the size of a step",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a1",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a2",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Outcomes get worse as the window fills, so a step must finish in the good part.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t3",
+   "x": 80,
+   "y": 205,
+   "text": "ONE CONTEXT WINDOW",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b4",
+   "x": 80,
+   "y": 235,
+   "width": 400,
+   "height": 60,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the good part",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#3f4c5f"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b5",
+   "x": 480,
+   "y": 235,
+   "width": 600,
+   "height": 60,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the dumb zone",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#b42318"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t6",
+   "x": 80,
+   "y": 302,
+   "text": "empty",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "t7",
+   "x": 450,
+   "y": 302,
+   "text": "~40%",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "text",
+   "id": "t8",
+   "x": 1050,
+   "y": 302,
+   "text": "full",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "t9",
+   "x": 540,
+   "y": 302,
+   "text": "the line moves with the task",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "t10",
+   "x": 80,
+   "y": 360,
+   "text": "A WELL-SIZED STEP",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 80,
+   "y": 388,
+   "width": 220,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "one step",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b12",
+   "x": 300,
+   "y": 388,
+   "width": 150,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "its check",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t13",
+   "x": 480,
+   "y": 403,
+   "text": "finishes before the dumb zone",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#3f4c5f"
+  },
+  {
+   "type": "text",
+   "id": "t14",
+   "x": 80,
+   "y": 474,
+   "text": "TOO MUCH TOOLING LOADED",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 80,
+   "y": 502,
+   "width": 460,
+   "height": 56,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "tools loaded before the task",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b16",
+   "x": 540,
+   "y": 502,
+   "width": 220,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the task",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t17",
+   "x": 780,
+   "y": 517,
+   "text": "starts inside the dumb zone",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "text",
+   "id": "t18",
+   "x": 80,
+   "y": 590,
+   "text": "A SUBAGENT CONTROLS CONTEXT",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b19",
+   "x": 80,
+   "y": 618,
+   "width": 300,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "parent window",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b20",
+   "x": 580,
+   "y": 618,
+   "width": 500,
+   "height": 56,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "strokeStyle": "dashed",
+   "label": {
+    "text": "fresh subagent window: reads widely",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a21",
+   "x": 384,
+   "y": 634,
+   "width": 192,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     192,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a22",
+   "x": 576,
+   "y": 660,
+   "width": 192,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     -192,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t23",
+   "x": 410,
+   "y": 606,
+   "text": "send",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "t24",
+   "x": 396,
+   "y": 668,
+   "text": "short answer",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#c2410c"
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 80,
+   "y": 700,
+   "text": "The parent never pays for the search.",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "rectangle",
+   "id": "b26",
+   "x": 1130,
+   "y": 205,
+   "width": 360,
+   "height": 330,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t27",
+   "x": 1152,
+   "y": 221,
+   "text": "#89 · Horthy · 00:05:52",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t28",
+   "x": 1152,
+   "y": 257,
+   "text": "\"the more you use\nthe context window,\nthe worse outcomes\nyou'll get.\"\n\n00:06:45 (subagents)\n\"are not for\nanthropomorphizing\nroles. They are for\ncontrolling context.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b29",
+   "x": 1130,
+   "y": 570,
+   "width": 360,
+   "height": 110,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Size the step to\nthe window.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t30",
+   "x": 1130,
+   "y": 712,
+   "text": "Sources: #89 — Dex Horthy, HumanLayer",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

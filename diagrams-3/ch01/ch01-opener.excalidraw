@@ -1,0 +1,663 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 1 · THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "The Bottleneck Moved",
+   "fontSize": 36,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 124,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 124,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 140,
+   "text": "Agents made one stage cheap. The constraint now sits in the stages around it.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "lane",
+   "x": 80,
+   "y": 200,
+   "text": "THE LIFECYCLE · idea to live change",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "p1",
+   "x": 80,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "intent",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p2",
+   "x": 272,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "spec",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p3",
+   "x": 464,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "plan",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p4",
+   "x": 656,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "code\n(cheap now)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p5",
+   "x": 848,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "gates",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p6",
+   "x": 1040,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "review",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p7",
+   "x": 1232,
+   "y": 230,
+   "width": 168,
+   "height": 60,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "live",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a1",
+   "x": 248,
+   "y": 260,
+   "width": 24,
+   "height": 0,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "p1"
+   },
+   "end": {
+    "id": "p2"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a2",
+   "x": 440,
+   "y": 260,
+   "width": 24,
+   "height": 0,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "p2"
+   },
+   "end": {
+    "id": "p3"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a3",
+   "x": 632,
+   "y": 260,
+   "width": 24,
+   "height": 0,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "p3"
+   },
+   "end": {
+    "id": "p4"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a4",
+   "x": 824,
+   "y": 260,
+   "width": 24,
+   "height": 0,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "p4"
+   },
+   "end": {
+    "id": "p5"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a5",
+   "x": 1016,
+   "y": 260,
+   "width": 24,
+   "height": 0,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "p5"
+   },
+   "end": {
+    "id": "p6"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a6",
+   "x": 1208,
+   "y": 260,
+   "width": 24,
+   "height": 0,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "p6"
+   },
+   "end": {
+    "id": "p7"
+   }
+  },
+  {
+   "type": "text",
+   "id": "code_note",
+   "x": 545,
+   "y": 302,
+   "text": "perfect code would still touch\nonly 14–16% of the value stream",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "text",
+   "id": "human_note",
+   "x": 905,
+   "y": 302,
+   "text": "verifying, steering, reviewing:\nthe new bottleneck sits with people",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#7c2d12"
+  },
+  {
+   "type": "rectangle",
+   "id": "c1",
+   "x": 80,
+   "y": 400,
+   "width": 205,
+   "height": 140,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Code generation\nwas never the\nbottleneck",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c2",
+   "x": 303,
+   "y": 400,
+   "width": 205,
+   "height": 140,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Big gains came\nfrom changing the\nend-to-end flow",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c3",
+   "x": 526,
+   "y": 400,
+   "width": 205,
+   "height": 140,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The constraint\nmoved to verifying\nand to the human\nwho steers",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c4",
+   "x": 749,
+   "y": 400,
+   "width": 205,
+   "height": 140,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Understanding is\nthe deeper limit;\nbetter agents do\nnot pay it down",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c5",
+   "x": 972,
+   "y": 400,
+   "width": 205,
+   "height": 140,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Fast individuals\nand better models;\nthe team is no\nfaster",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "c6",
+   "x": 1195,
+   "y": 400,
+   "width": 205,
+   "height": 140,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The feeling of\nspeed is not\nevidence of speed",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "n1",
+   "x": 162,
+   "y": 372,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "n2",
+   "x": 385,
+   "y": 372,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "n3",
+   "x": 608,
+   "y": 372,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "n4",
+   "x": 831,
+   "y": 372,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "4",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "n5",
+   "x": 1054,
+   "y": 372,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "5",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "n6",
+   "x": 1277,
+   "y": 372,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "6",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 90,
+   "y": 552,
+   "text": "claims#1 · Reock",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 313,
+   "y": 552,
+   "text": "claims#2 · Harrysson & Dixit",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t3",
+   "x": 536,
+   "y": 552,
+   "text": "claims#3 · Spencer-Harper,\nSalomon",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t4",
+   "x": 759,
+   "y": 552,
+   "text": "claims#4 · Litt",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 982,
+   "y": 552,
+   "text": "claims#5 · Dailey, Arcolano",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t6",
+   "x": 1205,
+   "y": 552,
+   "text": "claims#6 · Becker",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 80,
+   "y": 610,
+   "width": 700,
+   "height": 84,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "An hour saved off the bottleneck is worthless.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 820,
+   "y": 606,
+   "text": "Sources: #1216 — Justin Reock, DX · #62 — Justin Reock, DX\n#1618 — Martin Harrysson & Prakhar Dixit, McKinsey\n#1222 — Gabriel Spencer-Harper, Meticulous\n#1204 — Ido Salomon, AgentCraft · #831 — Geoffrey Litt, Notion\n#994 — Matt Dailey, Ref · #1392 — Nicholas Arcolano, Jellyfish\n#36 — Joel Becker, METR",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 1 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "Fast individuals pile up at the shared stages", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "Each engineer gets faster with agents. Review, integration and release do not.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "text", "id": "lane_ind", "x": 80, "y": 205, "text": "INDIVIDUALS · faster", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "e1", "x": 80, "y": 235, "width": 210, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "engineer + agents", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "e2", "x": 80, "y": 315, "width": 210, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "engineer + agents", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "e3", "x": 80, "y": 395, "width": 210, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "engineer + agents", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+
+    { "type": "arrow", "id": "ae1", "x": 290, "y": 265, "width": 110, "height": 70, "points": [[0, 0], [110, 70]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "ae2", "x": 290, "y": 345, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "ae3", "x": 290, "y": 425, "width": 110, "height": -70, "points": [[0, 0], [110, -70]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0 },
+
+    { "type": "text", "id": "q_label", "x": 410, "y": 205, "text": "QUEUE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "q1", "x": 410, "y": 300, "width": 26, "height": 90, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "rectangle", "id": "q2", "x": 444, "y": 300, "width": 26, "height": 90, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "rectangle", "id": "q3", "x": 478, "y": 300, "width": 26, "height": 90, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "rectangle", "id": "q4", "x": 512, "y": 300, "width": 26, "height": 90, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "q_note", "x": 410, "y": 400, "text": "changes wait", "fontSize": 15, "fontFamily": 2, "strokeColor": "#b42318" },
+
+    { "type": "text", "id": "lane_shared", "x": 580, "y": 205, "text": "SHARED STAGES · unchanged", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "s1", "x": 580, "y": 300, "width": 180, "height": 90, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": { "text": "review\n(a person verifies)", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "rectangle", "id": "s2", "x": 810, "y": 300, "width": 170, "height": 90, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "integration", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "rectangle", "id": "s3", "x": 1030, "y": 300, "width": 170, "height": 90, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "release", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "rectangle", "id": "s4", "x": 1250, "y": 300, "width": 150, "height": 90, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "user", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "arrow", "id": "as1", "x": 760, "y": 345, "width": 50, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "s1" }, "end": { "id": "s2" } },
+    { "type": "arrow", "id": "as2", "x": 980, "y": 345, "width": 50, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "s2" }, "end": { "id": "s3" } },
+    { "type": "arrow", "id": "as3", "x": 1200, "y": 345, "width": 50, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "s3" }, "end": { "id": "s4" } },
+    { "type": "text", "id": "s1_note", "x": 580, "y": 240, "text": "\"that is now your new bottleneck\"", "fontSize": 15, "fontFamily": 2, "strokeColor": "#7c2d12" },
+    { "type": "text", "id": "team_note", "x": 810, "y": 405, "text": "The team ships at the pace of these stages,\nnot at the pace of its fastest engineer.", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" },
+
+    { "type": "rectangle", "id": "card", "x": 80, "y": 500, "width": 700, "height": 200, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_h", "x": 104, "y": 518, "text": "STUDY READOUT · as cited by Tariq Shaukat, Sonar", "fontSize": 15, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_b", "x": 104, "y": 552, "text": "lines of code   +2,450%\ncommits           +240%\nreleases           +30%", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4" },
+    { "type": "text", "id": "card_q", "x": 104, "y": 638, "text": "\"We haven't figured out how to scale from\n producing stuff to shipping stuff.\"", "fontSize": 15, "fontFamily": 3, "strokeColor": "#fdba74" },
+
+    { "type": "ellipse", "id": "claim", "x": 830, "y": 500, "width": 570, "height": 90, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Faster people, same team speed.", "fontSize": 22, "fontFamily": 2, "strokeColor": "#ffffff" } },
+    { "type": "text", "id": "cite", "x": 830, "y": 612, "text": "Sources: #994 — Matt Dailey, Ref\n#1392 — Nicholas Arcolano, Jellyfish\n#1222 — Gabriel Spencer-Harper, Meticulous\n#1432 — Tariq Shaukat, Sonar", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

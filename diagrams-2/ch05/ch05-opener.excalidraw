@@ -1,0 +1,694 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 5 \u00b7 THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Robotics and the Physical World",
+   "fontSize": 36,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 124,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 124,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 140,
+   "text": "The model is capable enough. Physics decides which parts of the text playbook survive.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "given",
+   "x": 80,
+   "y": 200,
+   "width": 1320,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0e7490",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The model is given: Waymo's EMMA and NVIDIA's GR00T N1 frame driving and robot control as one trained model  \u00b7  claims#24",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#155e75"
+   }
+  },
+  {
+   "type": "text",
+   "id": "top_h",
+   "x": 80,
+   "y": 290,
+   "text": "THE TEXT PLAYBOOK ASSUMES",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "p1",
+   "x": 80,
+   "y": 320,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "one general model\nfor every task",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p2",
+   "x": 303,
+   "y": 320,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "a bad output\nmeans a bad model",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p3",
+   "x": 526,
+   "y": 320,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "data is legible\nto the agent",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p4",
+   "x": 749,
+   "y": 320,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "generalize = answer\nan unseen question",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p5",
+   "x": 972,
+   "y": 320,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "a bigger model\nmeans more reach",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "p6",
+   "x": 1195,
+   "y": 320,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "robots are proprietary\nand expensive",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "band",
+   "x": 80,
+   "y": 440,
+   "width": 1320,
+   "height": 56,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "THE PHYSICAL WORLD   \u00b7   real-time control loops   \u00b7   latency on the wire   \u00b7   no clean undo   \u00b7   telemetry, not text",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#a8412e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "d1a",
+   "x": 182,
+   "y": 398,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d2a",
+   "x": 405,
+   "y": 398,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d3a",
+   "x": 628,
+   "y": 398,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d4a",
+   "x": 851,
+   "y": 398,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d5a",
+   "x": 1074,
+   "y": 398,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d6a",
+   "x": 1297,
+   "y": 398,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d1b",
+   "x": 182,
+   "y": 498,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d2b",
+   "x": 405,
+   "y": 498,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d3b",
+   "x": 628,
+   "y": 498,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d4b",
+   "x": 851,
+   "y": 498,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d5b",
+   "x": 1074,
+   "y": 498,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d6b",
+   "x": 1297,
+   "y": 498,
+   "width": 0,
+   "height": 40,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     40
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "r1",
+   "x": 80,
+   "y": 540,
+   "width": 205,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "still one model:\nany robot, any task",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "r1_n",
+   "x": 92,
+   "y": 626,
+   "text": "carries over intact",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "r2",
+   "x": 303,
+   "y": 540,
+   "width": 205,
+   "height": 130,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the bug is the\nsystem between\ncontroller and wire,\nnot the policy",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r3",
+   "x": 526,
+   "y": 540,
+   "width": 205,
+   "height": 130,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "telemetry needs\nits own harness:\nagents reach only\n21% without one",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r4",
+   "x": 749,
+   "y": 540,
+   "width": 205,
+   "height": 130,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "generalize =\ncook in a kitchen\nit never saw",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r5",
+   "x": 972,
+   "y": 540,
+   "width": 205,
+   "height": 130,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "reach is bounded\nby the smallest\nuseful model:\n\"tiny models\"",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r6",
+   "x": 1195,
+   "y": 540,
+   "width": 205,
+   "height": 130,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "open, hackable\nbodies: an $8,999\nhumanoid, a $300\nReachy Mini",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 90,
+   "y": 680,
+   "text": "claims#25 \u00b7 #175\nPhysical Intelligence",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 313,
+   "y": 680,
+   "text": "claims#26 \u00b7 #110\nTesla Optimus",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t3",
+   "x": 536,
+   "y": 680,
+   "text": "claims#27 \u00b7 #890\nDataChain",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t4",
+   "x": 759,
+   "y": 680,
+   "text": "claims#28 \u00b7 #229\nCloudChef",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 982,
+   "y": 680,
+   "text": "claims#29 \u00b7 #936\nGoogle",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t6",
+   "x": 1205,
+   "y": 680,
+   "text": "claims#30 \u00b7 #276 K-Scale\nLabs \u00b7 #725 Hugging Face",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 740,
+   "text": "Sources: #174 Hwang (Waymo) \u00b7 #165 Annika & Aastha (NVIDIA) \u00b7 #175 Vuong & Springenberg (Physical Intelligence) \u00b7 #110 Garg (Tesla Optimus)\n#890 Petrov (DataChain) \u00b7 #229 Abraham (CloudChef) \u00b7 #936 Brick (Google) \u00b7 #276 Mo (K-Scale Labs) \u00b7 #725 Marafioti (Hugging Face)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

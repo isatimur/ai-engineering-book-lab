@@ -1,0 +1,309 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 3 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How a benchmark steers the next generation",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "What the field agrees to measure becomes what the labs optimize, and so what gets built.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "s1",
+   "x": 80,
+   "y": 220,
+   "width": 380,
+   "height": 100,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1  A benchmark captures\nthe field's attention",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s2",
+   "x": 530,
+   "y": 220,
+   "width": 380,
+   "height": 100,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2  Training runs, data curation\nand architecture choices\nbend toward it",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s3",
+   "x": 980,
+   "y": 220,
+   "width": 390,
+   "height": 100,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3  The next models are good\nat what the benchmark rewards",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 460,
+   "y": 270,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a23",
+   "x": 910,
+   "y": 270,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a31",
+   "x": 1175,
+   "y": 320,
+   "width": 905,
+   "height": 55,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     55
+    ],
+    [
+     -905,
+     55
+    ],
+    [
+     -905,
+     4
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "loop_l",
+   "x": 470,
+   "y": 385,
+   "text": "a self-fulfilling prophecy: whoever builds the benchmark shapes the future",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "weak",
+   "x": 80,
+   "y": 450,
+   "width": 620,
+   "height": 150,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The weak point: building good benchmarks\nis what practitioners find hardest.\nA field that cannot measure well drives\ntoward whatever is easiest to score.",
+    "fontSize": 19,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 750,
+   "y": 450,
+   "width": 620,
+   "height": 150,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 770,
+   "y": 462,
+   "text": "Amplify 2025 survey \u00b7 500 practitioners",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 770,
+   "y": 492,
+   "text": "Q  \"number one most painful thing\n    about AI engineering today?\"\nA  \"evaluation topped\"",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 80,
+   "y": 640,
+   "width": 440,
+   "height": 90,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Measurement is the steering wheel.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "q253",
+   "x": 570,
+   "y": 655,
+   "text": "\"the people that can build benchmarks are going to shape the future.\"\n\u2014 #253 Alex Duffy, Every.to",
+   "fontSize": 17,
+   "fontFamily": 2,
+   "strokeColor": "#9f1239"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 760,
+   "text": "Sources: #253 Alex Duffy (Every.to) \u00b7 #137 Barr Yaron (Amplify)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

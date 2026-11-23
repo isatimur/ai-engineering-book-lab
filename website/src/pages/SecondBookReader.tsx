@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import { bookTwo } from '../data/draftBooks';
+import { DraftBookIndexLinks } from '../components/draft/DraftBookIndexLinks';
+import { LightboxProvider } from '../lib/lightbox';
 import {
   chaptersTwo,
   chapterTwoPath,
@@ -25,7 +28,7 @@ import { Seo } from '../components/Seo';
 export const SecondBookReader = () => {
   const totalWords = chaptersTwoWordCount;
   return (
-    <>
+    <LightboxProvider>
       <Seo
         title="Second Book (Draft) — Read"
         description="All 7 drafted chapters of the second book, in one continuous read."
@@ -52,6 +55,7 @@ export const SecondBookReader = () => {
             Working draft. Part I breaks the assumption that the model is given; Part II breaks the
             assumption that the generic agent playbook fits every domain.
           </p>
+          <DraftBookIndexLinks book={bookTwo} />
           <ol className="list-none p-0 m-0 space-y-4 font-serif">
             {chaptersTwo.map((chapter) => (
               <li key={chapter.number} className="border-b border-[var(--color-border)] pb-4">
@@ -84,7 +88,7 @@ export const SecondBookReader = () => {
                 <p className="font-serif italic text-lg text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
               </div>
               <div className="max-w-3xl mx-auto px-6 pt-4 pb-8">
-                <SecondBookArticle chapter={chapter} />
+                <SecondBookArticle chapter={chapter} figures={bookTwo.figures.inline(chapter.number)} />
                 <EvidenceRail
                   chapterNumber={chapter.number}
                   evidenceData={evidenceTwoData}
@@ -95,6 +99,6 @@ export const SecondBookReader = () => {
           ))}
         </section>
       </div>
-    </>
+    </LightboxProvider>
   );
 };

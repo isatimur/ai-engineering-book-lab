@@ -1,0 +1,43 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 7 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "Creative, Education, and Games", "fontSize": 36, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 140, "text": "Where nothing can be checked, the model gets a narrower lane, not more room.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "rectangle", "id": "generic", "x": 80, "y": 230, "width": 280, "height": 170, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "GENERIC PLAYBOOK\none model does it all:\nplays the game,\nwrites the puzzle,\nteaches the lesson", "fontSize": 17, "fontFamily": 2, "strokeColor": "#a8412e"}},
+  {"type": "rectangle", "id": "wall", "x": 440, "y": 210, "width": 230, "height": 210, "backgroundColor": "#ffffff", "strokeColor": "#881337", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "DOMAIN CONSTRAINT\nno ground-truth label\nfor a fun level,\na good lesson,\na moving song", "fontSize": 17, "fontFamily": 2, "strokeColor": "#9f1239"}},
+  {"type": "arrow", "id": "a1", "x": 362, "y": 315, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "a2", "x": 672, "y": 315, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+
+  {"type": "rectangle", "id": "system", "x": 750, "y": 210, "width": 650, "height": 210, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+  {"type": "text", "id": "system_h", "x": 775, "y": 225, "text": "A STRUCTURED SYSTEM OWNS THE TRUTH", "fontSize": 17, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "text", "id": "system_b", "x": 775, "y": 252, "text": "a chess engine · human puzzle authors · pedagogy · an orchestrator", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"},
+  {"type": "rectangle", "id": "lane", "x": 830, "y": 300, "width": 490, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "the model's lane: translate · generate · coach", "fontSize": 17, "fontFamily": 3, "strokeColor": "#134e4a"}},
+  {"type": "text", "id": "lane_l", "x": 775, "y": 380, "text": "narrow on purpose: the experience is the whole product", "fontSize": 14, "fontFamily": 2, "strokeColor": "#475569"},
+
+  {"type": "rectangle", "id": "c1", "x": 80, "y": 490, "width": 205, "height": 140, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "The model explains;\nthe engine\ncomputes", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "c2", "x": 303, "y": 490, "width": 205, "height": 140, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Agents run on the\ndevice; the puzzles\nstay human", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "c3", "x": 526, "y": 490, "width": 205, "height": 140, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Content is easy\nto generate; a good\ngame is not", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "c4", "x": 749, "y": 490, "width": 205, "height": 140, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "The pipeline runs\nalone; the bar is\na human trainer", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "c5", "x": 972, "y": 490, "width": 205, "height": 140, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "In education the\nconstraint is\npedagogy", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "c6", "x": 1195, "y": 490, "width": 205, "height": 140, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Music is several\nspecialized models,\ncomposed", "fontSize": 17, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "ellipse", "id": "n1", "x": 162, "y": 462, "width": 42, "height": 42, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "1", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "ellipse", "id": "n2", "x": 385, "y": 462, "width": 42, "height": 42, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "2", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "ellipse", "id": "n3", "x": 608, "y": 462, "width": 42, "height": 42, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "3", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "ellipse", "id": "n4", "x": 831, "y": 462, "width": 42, "height": 42, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "4", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "ellipse", "id": "n5", "x": 1054, "y": 462, "width": 42, "height": 42, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "5", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "ellipse", "id": "n6", "x": 1277, "y": 462, "width": 42, "height": 42, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "6", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "text", "id": "t1", "x": 90, "y": 642, "text": "claims#38 · Dole & Steinskog,\nQuoraishee & Song", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t2", "x": 313, "y": 642, "text": "claims#43 · Quoraishee & Song", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t3", "x": 536, "y": 642, "text": "claims#39 · Schomay, An & Hoe", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t4", "x": 759, "y": 642, "text": "claims#42 · Steinfurt", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t5", "x": 982, "y": 642, "text": "claims#40 · Jansepar, Druga", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t6", "x": 1205, "y": 642, "text": "claims#41 · Schaeff, Young", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 710, "text": "Sources: #677 Dole & Steinskog (Play Magnus) · #918 Quoraishee & Song (NYT) · #588 Jeff Schomay · #827 An & Hoe (Meta) · #822 Steinfurt (TNG)\n#512 Jansepar (Khan Academy) · #540 Stefania Druga · #755 Schaeff (Google DeepMind) · #477 Phlo Young", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}

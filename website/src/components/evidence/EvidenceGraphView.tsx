@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { chapterByNumber, experienceUrl, graphUrl, readChapterUrl } from '../../lib/chapterLinks';
 import { anchorForNode, filterGraphByChapter, getEvidenceGraph } from '../../lib/evidenceGraph';
+import type { GraphBook } from '../../lib/graphBooks';
 import type { GraphNode } from '../../lib/evidenceTypes';
 import { RedThreadLinks } from './EvidenceSectionHeader';
 import { EvidenceGraphCanvas } from './EvidenceGraphCanvas';
@@ -10,6 +11,11 @@ import { useSettings } from '../../context/SettingsContext';
 type Props = {
   chapterNumber?: string;
   compact?: boolean;
+  /**
+   * Books 2 and 3 pass their own graph and URLs. Omitted for book 1, which
+   * keeps its original lookups, red-thread links and 3D journey links.
+   */
+  book?: GraphBook;
 };
 
 const LEGEND = [
@@ -26,12 +32,12 @@ const EDGE_LEGEND = [
   { type: 'same_theme', label: 'Co-cited practitioners' },
 ] as const;
 
-export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => {
+export const EvidenceGraphView = ({ chapterNumber, compact = false, book }: Props) => {
   const { settings } = useSettings();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const claimParam = searchParams.get('claim');
-  const fullGraph = useMemo(() => getEvidenceGraph(), []);
+  const fullGraph = useMemo(() => (book ? book.api.getGraph() : getEvidenceGraph()), [book]);
   const graph = useMemo(
     () => (chapterNumber ? filterGraphByChapter(fullGraph, chapterNumber) : fullGraph),
     [fullGraph, chapterNumber],
@@ -45,19 +51,23 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
     const node = graph.nodes.find((n) => n.id === claimParam);
     if (node) setSelected(node);
   }, [claimParam, graph.nodes]);
-  const selectedAnchor = selected ? anchorForNode(selected) : undefined;
+  const selectedAnchor = selected ? (book ? book.api.anchorForNode(selected) : anchorForNode(selected)) : undefined;
 
   const chapterForLinks =
     selected?.type === 'chapter'
       ? selected.chapterNumber
       : selected?.chapterNumber ?? chapterNumber;
-  const chapterMeta = chapterForLinks ? chapterByNumber(chapterForLinks) : undefined;
+  const chapterMeta = chapterForLinks
+    ? book
+      ? { title: book.api.chapterLabel(chapterForLinks.padStart(2, '0')) }
+      : chapterByNumber(chapterForLinks)
+    : undefined;
   const isEmpty = graph.nodes.length === 0;
 
   const handleSelect = (node: GraphNode | null) => {
     setSelected(node);
     if (node?.type === 'chapter' && node.chapterNumber) {
-      navigate(graphUrl(node.chapterNumber));
+      navigate(book ? book.graphUrl(node.chapterNumber) : graphUrl(node.chapterNumber));
     }
   };
 
@@ -97,7 +107,7 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
               No evidence nodes for this chapter filter yet.
             </p>
             <Link
-              to="/read/graph"
+              to={book ? book.graphUrl() : '/read/graph'}
               className="font-mono text-[10px] uppercase tracking-widest border border-[var(--color-border)] px-3 py-1.5 hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] transition-colors"
             >
               View full book graph
@@ -128,7 +138,7 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
                 Ch {chapterForLinks} · {chapterMeta.title}
               </p>
             )}
-            <RedThreadLinks chapterNumber={chapterForLinks} />
+            {!book && <RedThreadLinks chapterNumber={chapterForLinks} />}
           </div>
         )}
 
@@ -194,7 +204,7 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
               </a>
             )}
 
-            {chapterForLinks && selected.type !== 'chapter' && (
+            {!book && chapterForLinks && selected.type !== 'chapter' && (
               <div className="mt-4 pt-3 border-t border-[var(--color-border)]">
                 <p className="text-[var(--color-ink-muted)] text-[9px] uppercase tracking-widest mb-2">Red thread</p>
                 <RedThreadLinks chapterNumber={chapterForLinks} />
@@ -204,17 +214,19 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
             {selected.type === 'chapter' && chapterMeta && (
               <div className="mt-4 pt-3 border-t border-[var(--color-border)] space-y-2">
                 <Link
-                  to={readChapterUrl(chapterForLinks!)}
+                  to={book ? book.chapterUrl(chapterForLinks!) : readChapterUrl(chapterForLinks!)}
                   className="block underline hover:opacity-70 font-serif text-sm normal-case tracking-normal"
                 >
                   Read ch {chapterForLinks} — {chapterMeta.title} →
                 </Link>
-                <a
-                  href={experienceUrl(chapterForLinks!)}
-                  className="block underline hover:opacity-70"
-                >
-                  Fly to ch {chapterForLinks} in 3D →
-                </a>
+                {!book && (
+                  <a
+                    href={experienceUrl(chapterForLinks!)}
+                    className="block underline hover:opacity-70"
+                  >
+                    Fly to ch {chapterForLinks} in 3D →
+                  </a>
+                )}
               </div>
             )}
           </div>
@@ -222,7 +234,9 @@ export const EvidenceGraphView = ({ chapterNumber, compact = false }: Props) => 
           <p className="border-t border-[var(--color-border)] pt-4 text-[var(--color-ink-muted)] normal-case tracking-normal font-serif text-sm">
             {chapterNumber
               ? 'Tap any node to inspect claims and sources for this chapter.'
-              : 'Select a node — or tap a chapter hub — to inspect and jump across read, graph, and 3D.'}
+              : book
+                ? 'Select a node — or tap a chapter hub — to inspect its claims and sources.'
+                : 'Select a node — or tap a chapter hub — to inspect and jump across read, graph, and 3D.'}
           </p>
         )}
       </aside>

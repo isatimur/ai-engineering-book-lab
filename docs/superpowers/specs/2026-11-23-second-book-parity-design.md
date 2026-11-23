@@ -138,3 +138,42 @@ Each PR must pass `npm run lint`, `npm run test` and `npm run build` in `website
    - the author approves the list of sections that get a figure in that PR
    - every chapter ships its opener
    - ch04 also designs the Part II motif
+
+## Addendum (2026-11-24): reader features for books 2 and 3
+
+Doc 2 was folded in here. Its build kept to the review's advice: props, not a shared context, and no change to how book 1 loads data.
+
+### Shared pages
+
+- `data/draftBooks.ts` holds one `DraftBook` record per draft book. Each record has its chapters, paths, evidence, figures (`createFigureBook`) and evidence graph (`createEvidenceGraphApi`).
+- Books 2 and 3 now share these pages, and each book's routes bind them to its record:
+  - `pages/DraftBookChapterPage.tsx`
+  - `pages/DraftBookGraphPage.tsx` at `/<book>/graph`
+  - `pages/DraftBookFiguresPage.tsx` at `/<book>/figures`
+
+### Chapter page features
+
+- the opener and inline figures
+- Focus text
+- a contents drawer
+- a sources drawer with the chapter's graph
+- Share, which uses the system sheet or copies the link
+- a per-book "Continue reading" bookmark: `book2:reader:last-chapter` or `book3:reader:last-chapter`
+
+### Shared code changes
+
+- `lib/evidenceGraph.ts` became a per-book factory with one cache per book. Book 1's exports are bound to book 1's data and are unchanged.
+- `EvidenceGraphView` and `SourcesDrawer` take an optional `book`. Without it, they render book 1 exactly as before.
+
+### Checks
+
+- `src/data/bookFigures.test.tsx` runs the figure checks for both books.
+- For each book, a page test renders every chapter. It asserts that each image comes from that book's folder and that no `/read`, `/experience` or `/visual-guide` link appears. It also checks the graph and figures pages.
+- After `npm run build`, every non-book-2/3 page was diffed against the pre-change build. The only differences were build hashes and the router's route indexes.
+
+### Still open
+
+- Audiobook and explainer videos (paid generation) need the author's go-ahead and a cost estimate.
+- Judge scores need a judge-panel run.
+- Indexing needs the visibility decision.
+- Book 3 figures: the style is in `diagrams-3/STYLE.md`, and the spec in `diagrams-3/figures.json` is empty until the figure PRs land.
