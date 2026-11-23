@@ -23,9 +23,19 @@ import { chapters, chapterParam } from './data/bookChapters';
 import { SpadeHero } from './pages/SpadeHero';
 import { manifest } from './lib/manifest';
 import { SecondBookReader } from './pages/SecondBookReader';
-import { SecondBookChapterDetail, secondBookChapterStaticPaths } from './pages/SecondBookChapterDetail';
+import {
+  SecondBookChapterDetail,
+  SecondBookFigures,
+  SecondBookGraph,
+  secondBookChapterStaticPaths,
+} from './pages/SecondBookChapterDetail';
 import { ThirdBookReader } from './pages/ThirdBookReader';
-import { ThirdBookChapterDetail, thirdBookChapterStaticPaths } from './pages/ThirdBookChapterDetail';
+import {
+  ThirdBookChapterDetail,
+  ThirdBookFigures,
+  ThirdBookGraph,
+  thirdBookChapterStaticPaths,
+} from './pages/ThirdBookChapterDetail';
 
 import { SettingsProvider, AppLayout } from './context/SettingsContext';
 import { PRESS_ORIGIN } from './data/book';
@@ -87,22 +97,24 @@ export const routes: RouteRecord[] = [
         element: <ChapterDetail />,
         getStaticPaths: () => chapters.map((c) => `read/${chapterParam(c)}`),
       },
-      // Second book — reading + evidence rail only (no diagrams, audiobook,
-      // or judge scores yet; see programs/second_book_website_wiring.md).
-      // Not in the top nav, but the Catalogue (Books.tsx) links here with a
-      // visible card, so these routes are public. (This comment used to say
-      // "direct-URL only"; that stopped being true when /books shipped.)
+      // Books 2 and 3 share one set of pages (pages/DraftBook*.tsx), bound to
+      // each book in data/draftBooks.ts: chapters with figures, contents,
+      // sources drawer, focus text and share; an evidence graph page; and a
+      // figures gallery. No audiobook, videos or judge scores yet. Not in the
+      // top nav, but the Catalogue (Books.tsx) links here with a visible card,
+      // so these routes are public. The static graph/figures routes come
+      // before `:slug` so they are not read as chapter slugs.
       { path: 'second-book', element: <SecondBookReader /> },
+      { path: 'second-book/graph', element: <SecondBookGraph /> },
+      { path: 'second-book/figures', element: <SecondBookFigures /> },
       {
         path: 'second-book/:slug',
         element: <SecondBookChapterDetail />,
         getStaticPaths: secondBookChapterStaticPaths,
       },
-      // Third book — reading only (no evidence file, diagrams, audiobook, or
-      // judge scores yet). The track is empty until Chapter 1 lands.
-      // Not in the top nav, but the Catalogue (Books.tsx) links here with a
-      // visible card, so these routes are public.
       { path: 'third-book', element: <ThirdBookReader /> },
+      { path: 'third-book/graph', element: <ThirdBookGraph /> },
+      { path: 'third-book/figures', element: <ThirdBookFigures /> },
       {
         path: 'third-book/:slug',
         element: <ThirdBookChapterDetail />,

@@ -1,0 +1,4 @@
+{
+  "_doc": "Book 3 figure spec — the single source of truth for every Book 3 figure. Edit this file, then run `npm run prebuild` (or `node scripts/sync-third-book.mjs`) in website/ to copy it and the PNGs into the site. `website/src/data/bookFigures.test.tsx` checks every entry: the PNG exists, the section heading exists in the chapter, each claim id is filed under the figure's chapter in evidence-3.json, and each source is an anchor label of one of those claims. Each .excalidraw file in chNN/ is the source; render it with `npx @excalidraw-skill-pack/render`, then resize to 2000px and quantise (see docs/superpowers/specs/2026-11-23-second-book-parity-design.md, Drawing). Style: diagrams-3/STYLE.md.",
+  "figures": []
+}

@@ -8,7 +8,10 @@ import type {
   GraphNode,
 } from './evidenceTypes';
 
-const evidence = evidenceData as Record<string, EvidenceClaim[]>;
+type EvidenceIndex = Record<string, EvidenceClaim[]>;
+
+/** What the graph needs to know about a book's chapters. */
+export type GraphChapter = { number: string; title: string };
 
 const slugify = (value: string) =>
   value
@@ -34,14 +37,15 @@ export const parseSpeakerLabel = (label: string) => {
   };
 };
 
-const chapterTitle = (num: string) =>
-  chapters.find((c) => c.number === num)?.title ?? `Chapter ${num}`;
-
 /**
- * Build an evidence enrichment graph from committed evidence.json.
- * Auto-generated at import time; scale by re-running build_evidence.py upstream.
+ * Build an evidence enrichment graph from a book's committed evidence index
+ * (evidence.json, evidence-2.json, evidence-3.json) and its chapter list.
+ * Scale by re-running build_evidence.py upstream.
  */
-export const buildEvidenceGraph = (): EvidenceGraphData => {
+export const buildEvidenceGraphFor = (
+  evidence: EvidenceIndex,
+  chapters: GraphChapter[],
+): EvidenceGraphData => {
   const nodes = new Map<string, GraphNode>();
   const edges = new Map<string, GraphEdge>();
   let anchorCount = 0;
@@ -149,13 +153,6 @@ export const buildEvidenceGraph = (): EvidenceGraphData => {
   };
 };
 
-/** Cached singleton — graph is derived from static JSON. */
-let cached: EvidenceGraphData | null = null;
-export const getEvidenceGraph = (): EvidenceGraphData => {
-  if (!cached) cached = buildEvidenceGraph();
-  return cached;
-};
-
 /** Filter graph to a chapter neighborhood (chapter + connected claims, speakers, videos). */
 export const filterGraphByChapter = (
   graph: EvidenceGraphData,
@@ -199,18 +196,50 @@ export const filterGraphByChapter = (
   };
 };
 
-export const claimsForChapter = (chapterNumber: string): EvidenceClaim[] =>
-  evidence[String(parseInt(chapterNumber, 10))] ?? [];
-
-export const anchorForNode = (node: GraphNode): Anchor | undefined => {
-  if (node.type !== 'video' || !node.videoId) return undefined;
-  for (const claims of Object.values(evidence)) {
-    for (const claim of claims) {
-      const anchor = claim.anchors.find((a) => a.video_id === node.videoId);
-      if (anchor) return anchor;
-    }
-  }
-  return undefined;
+export type EvidenceGraphApi = {
+  getGraph: () => EvidenceGraphData;
+  claimsForChapter: (chapterNumber: string) => EvidenceClaim[];
+  anchorForNode: (node: GraphNode) => Anchor | undefined;
+  chapterLabel: (num: string) => string;
 };
 
-export const chapterLabel = chapterTitle;
+/**
+ * One book's graph and lookups, bound to that book's evidence and chapters.
+ * Each book gets its own cache, so one book's graph never serves another.
+ */
+export const createEvidenceGraphApi = (
+  evidence: EvidenceIndex,
+  chapters: GraphChapter[],
+): EvidenceGraphApi => {
+  let cached: EvidenceGraphData | null = null;
+  return {
+    getGraph: () => {
+      if (!cached) cached = buildEvidenceGraphFor(evidence, chapters);
+      return cached;
+    },
+    claimsForChapter: (chapterNumber) => evidence[String(parseInt(chapterNumber, 10))] ?? [],
+    anchorForNode: (node) => {
+      if (node.type !== 'video' || !node.videoId) return undefined;
+      for (const claims of Object.values(evidence)) {
+        for (const claim of claims) {
+          const anchor = claim.anchors.find((a) => a.video_id === node.videoId);
+          if (anchor) return anchor;
+        }
+      }
+      return undefined;
+    },
+    chapterLabel: (num) => chapters.find((c) => c.number === num)?.title ?? `Chapter ${num}`,
+  };
+};
+
+/** Book 1 — the exports every existing caller uses, unchanged. */
+export const bookOneEvidenceGraph = createEvidenceGraphApi(
+  evidenceData as EvidenceIndex,
+  chapters,
+);
+export const buildEvidenceGraph = (): EvidenceGraphData =>
+  buildEvidenceGraphFor(evidenceData as EvidenceIndex, chapters);
+export const getEvidenceGraph = bookOneEvidenceGraph.getGraph;
+export const claimsForChapter = bookOneEvidenceGraph.claimsForChapter;
+export const anchorForNode = bookOneEvidenceGraph.anchorForNode;
+export const chapterLabel = bookOneEvidenceGraph.chapterLabel;
