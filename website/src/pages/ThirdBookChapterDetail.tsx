@@ -5,10 +5,13 @@ import {
   chapterThreePath,
 } from '../data/bookChaptersThree';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
-import { EvidenceRail } from '../EvidenceRail';
-import evidenceThreeData from '../evidence-3.json';
+import { EvidenceRail, type EvidenceIndex } from '../EvidenceRail';
+import evidenceThreeJson from '../evidence-3.json';
 import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
+
+// JSON imports widen `kind` to string; build_evidence.py only emits the four ADR-0003 kinds.
+const evidenceThreeData = evidenceThreeJson as EvidenceIndex;
 
 const NotFound = () => (
   <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col items-center justify-center gap-4 font-serif">

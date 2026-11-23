@@ -76,6 +76,24 @@ class ClaimsIntegrityGate(unittest.TestCase):
         rc, _ = run_main(prose=(0, TRACEBACK))
         self.assertNotEqual(rc, 0)
 
+    def test_empty_ledger_fails(self):
+        # Book 3 printed "All anchors resolve." over a ledger that recorded no
+        # claims: every verifier checked zero anchors and passed.
+        with mock.patch.object(cci, "count_claims", return_value=0):
+            rc, out = run_main()
+        self.assertEqual(rc, 1)
+        self.assertIn("EMPTY", out)
+        self.assertNotIn("All anchors resolve.", out)
+
+    def test_count_claims_reads_ledger_headings(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "Claims Ledger.md"
+            p.write_text("# Ledger\n\nNo Claims are recorded yet.\n")
+            self.assertEqual(cci.count_claims(p), 0)
+            p.write_text("# Ledger\n\n## 1) A\n- x\n\n## 2) B\n- y\n")
+            self.assertEqual(cci.count_claims(p), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

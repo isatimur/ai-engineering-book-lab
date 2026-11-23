@@ -157,7 +157,7 @@ Capture-file log lines expire about 2027-02-13; the quotes in the capture files 
 
 The per-book wiring copies book 2's pattern a third time. Consolidating the three copies is deferred to its own engineering ADR, because it would touch two live books.
 
-**Gap: the ledger is empty.** `claims-3/Claims Ledger.md` says "No Claims are recorded yet", although all twelve chapters are drafted. `check_claims_integrity.py --book 3` prints "All anchors resolve" because it checks zero anchors. That is the vacuous pass Ch 7 argues against. Each entry, once written, needs `**Candidate chapters:**` filled in, or its chapter renders with no evidence panel. See open item 1.
+**The ledger.** Until 2026-11-23, `claims-3/Claims Ledger.md` recorded no claims, and `check_claims_integrity.py --book 3` printed "All anchors resolve" over zero anchors, the vacuous pass Ch 7 argues against. It now holds 42 claims across all twelve chapters: 86 Source Anchors, one for every quote in the drafts, and 5 Artifact anchors. The integrity check fails when any book's ledger records no claims. See open item 1.
 
 ## Risks
 
@@ -179,7 +179,7 @@ The per-book wiring copies book 2's pattern a third time. Consolidating the thre
 
 ## Open items
 
-1. **Populate `claims-3`.** Record the drafts' claims with Source or Artifact anchors, and make the book 3 integrity check fail when the ledger holds zero claims. Until then the Goals line "every claim cites a corpus talk or a captured repo artifact" is not met.
+1. **Keep `claims-3` in step with the drafts.** Done once on 2026-11-23 (42 claims; the check now fails on an empty ledger). Open: new prose quotes need ledger entries, and the 7 time-bound quotes `check_time_bound_evidence.py` flags need a currency review.
 2. **Primary sources.** Claims about Spec Kit, OpenSpec and EGM rest on secondary coverage, and EGM's launch date is reported two ways (2026-10-22, 2026-11-08). Verify against the repositories before any of it reaches prose.
 3. **Chapter length.** Drafts run 1,083–2,098 words. Set a target per chapter from its classification shortlist, not one target for all. Folding Ch 12's comparison into Ch 11 is an option if D1 stands.
 4. **Sequencing against book 2.** Decide whether book 2's depth pass comes before book 3's depth pass. One classification pass can tag talks for both books' gaps.

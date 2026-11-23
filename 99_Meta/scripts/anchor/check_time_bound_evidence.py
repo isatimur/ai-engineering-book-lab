@@ -192,7 +192,7 @@ for kind in SEVERITY:
     if not group:
         continue
     print(f"--- {kind} ({len(group)})")
-    for e, _, t, _ in group:
+    for e, _, t, *_ in group:  # findings carry 5 fields (line 138)
         print(f"  {e:<11} {t[:112]}")
     print()
 
