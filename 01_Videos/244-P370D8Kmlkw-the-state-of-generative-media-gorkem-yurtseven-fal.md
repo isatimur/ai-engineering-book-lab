@@ -13,16 +13,37 @@ themes:
   - "Models & Inference"
 ingested_at: "2026-04-24T12:09:47+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Gorkem Yurtseven shares a practical take on The State of Generative Media. Generative AI is reshaping the creative landscape, enabling the production of images, audio, and video with unprecedented speed and sophistication. Key angle: covers model serving or inference tradeoffs."
+summary: "Gorkem Yurtseven of FAL, a generative media platform for image, video and audio inference, traces the field from early computer art and GANs to the 2022 image models and argues that the marginal cost of creation, not of creativity, is nearing zero. He expects advertising (hyper-personalized, interactive ads) and e-commerce (virtual try-on, a clear product-market fit) to change first. Video went from barely any FAL usage last October to about 30% of revenue. With 20x the compute and perhaps 5x the engagement, he estimates video will be 100x to 250x the image market, heading toward real-time generation."
 ---
 # The State of Generative Media - Gorkem Yurtseven, FAL
 
 ## Summary
-Gorkem Yurtseven shares a practical take on The State of Generative Media. Generative AI is reshaping the creative landscape, enabling the production of images, audio, and video with unprecedented speed and sophistication. Key angle: covers model serving or inference tradeoffs.
+Gorkem Yurtseven works at FAL, which calls itself a generative media platform: generative video, audio and image models running on its inference engine, plus partnerships with closed-source model providers. He calls it a very new market and walks through how it got here and where it is going.
+
+**History and the catch-up pattern**
+In 2022 OpenAI's CEO tweeted images from OpenAI's new image model (captioned "Delhi 2"). Yurtseven calls it one of the biggest WTF moments of his life and thought nobody could catch up. Earlier waves existed: GANs, Google's DeepDream, a viral selfie-avatar app, an early artist's computer-driven drawing machines and computer graphics. But the field evened out fast after April 2022: a Discord-bot model in beta, then open-source Stable Diffusion running on home GPUs, then SDXL and Flux. When Sora appeared, he was excited rather than worried, because he expected the same catch-up.
+
+**Cost of creation, not creativity**
+He chooses his words carefully: the marginal cost of creation approaches zero, but storytelling and creativity still matter. He expects social media, advertising, marketing, fashion, film, gaming and e-commerce to change, until all content is touched by AI.
+
+**Advertising first**
+Software has been eating media: YouTube earns more from ads than any media company except Disney, whose revenue includes parks and cruise ships. Ad spend roughly tripled since 2000, and he says that growth came from software ads; he expects AI ads to drive the next growth. Ads suit generative media because they can be hyper-personalized (many versions for 10,000 demographics, or one per visitor), interactive, and nearly unlimited in volume, unlike films people have time to watch. Example: for A24's Civil War, FAL helped build a site that turned a user's selfie into a green toy soldier, shown in Times Square.
+
+**E-commerce**
+E-commerce gains about 1% of US retail each year with or without AI. Online shopping is visual, and virtual try-on is "one of the clearest product market fits" he sees, adopted by many retailers and startups.
+
+**Video takes over**
+FAL's revenue, which he treats as a proxy for the market, showed barely any video usage last October, 18% by February and about 30% at the time of the talk, even though video is expensive and still imperfect. His rough math: video needs 20x the compute and may be 5x more engaging, so generative video could be 100x to 250x the image market. Each new capability, first consistency and then sound in Google DeepMind's newest model, unlocks new use cases. He expects faster, cheaper video until it is real time (one second of video in one second), which blurs games and movies and changes social apps and live events.
+
+**Images are not done**
+New editing and text rendering in Flux Context (as captioned) and GPT-4o open more enterprise use cases.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Platform revenue data (video usage from almost nothing to about 30% in months) gives a rare market signal from an inference provider, not a model lab.
+- The 20x compute times 5x engagement estimate is a simple, quotable model for why video could dwarf image generation, and it shows the assumptions openly.
+- The distinction between the cost of creation and the cost of creativity is a useful frame for chapters on what generative media does and does not replace.
+- Virtual try-on and personalized ads are named as concrete product-market fits, which helps ground use-case chapters in real demand.
+- The repeated pattern of one lab leading and the field catching up within months is a lesson for teams betting on a single closed model.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=P370D8Kmlkw

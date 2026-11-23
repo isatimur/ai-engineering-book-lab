@@ -13,16 +13,37 @@ themes:
   - "Models & Inference"
 ingested_at: "2026-04-24T11:42:28+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Jyh Jing Hwang shares a practical take on Waymo's EMMA: Teaching Cars to Think. This session explores Waymo's latest research on the End-to-End Multimodal Model for Autonomous Driving (EMMA) and advanced sensor simulation techniques."
+summary: "Jyh Jing Hwang of Waymo presents EMMA, a research model that drives with Gemini. His thesis: Waymo's long-tail scenarios (a traffic officer waving cars through a red light, a flock of birds, a scooter rider slipping on a wet road) need the generalization of multimodal foundation models. EMMA takes eight surround cameras plus routing text and outputs future waypoints. It is self-supervised from driving logs, camera only, and needs no high-definition map. Chain-of-thought reasoning about critical objects improves planning, quality keeps rising with more data, one model also does 3D detection, and generated video helps test it in rain and at night."
 ---
 # Waymo's EMMA: Teaching Cars to Think - Jyh Jing Hwang, Waymo
 
 ## Summary
-Jyh Jing Hwang shares a practical take on Waymo's EMMA: Teaching Cars to Think. This session explores Waymo's latest research on the End-to-End Multimodal Model for Autonomous Driving (EMMA) and advanced sensor simulation techniques.
+Jyh Jing Hwang, a Waymo researcher, gives a 17-minute talk on EMMA, the End-to-End Multimodal Model for Autonomous Driving. His thesis: to scale beyond its current cities, Waymo must handle a long tail of rare events. Multimodal foundation models such as Gemini already generalize well to those events, so the research question is how to make them drive.
+
+**From research cars to L4**
+He traces autonomous driving from three-layer neural networks in the 1980s to end-to-end models around 2020 that drifted in their lanes, "more like a L2" system. Waymo's L4 stack splits into perception, prediction and planning. It offers rider-only service in Phoenix, San Francisco, Austin and Los Angeles, and this year runs a road trip to about 10 more cities, including Tokyo.
+
+**The long-tail problem**
+His examples come from an open challenge Waymo ran: a traffic controller waving cars through a red light, a sudden flock of birds, and a scooter rider who slips on a wet road at night. A human driver may never see these. At Waymo's scale they come up "very very often." When shown the bird and scooter videos, Gemini describes each scene correctly and proposes the right behaviour, such as slowing down and staying alert.
+
+**EMMA in its simplest form**
+EMMA is built on Gemini. Inputs are routing instructions turned into plain text (turn left at the next intersection) and video from eight cameras covering 360 degrees. Output is a set of future waypoints for the next few seconds. Hwang names three traits:
+- Self-supervised: every driving log shows where the car went, so any moment becomes a training example.
+- Camera only: no lidar, because Gemini is a camera model.
+- No high-definition map: only a Google Maps-style route.
+On a popular open-loop planner benchmark, this simple form reached state-of-the-art quality.
+
+**Reasoning, scaling and multitask**
+To fix the lack of explainability, EMMA first reasons in a chain of thought: it names critical objects (a cyclist, a vehicle), predicts their behaviour, and picks a driving meta-decision such as keep speed or yield. On Waymo's open motion dataset, about 100 times larger than the academic one, this beat strong specialized planners that get oracle perception, maps and traffic light states as input. On an internal dataset much larger than any public one, planning quality kept improving with more data. Because the language interface is flexible, one model also does 3D detection, road-graph estimation and free-form visual Q&A, with detection close to state-of-the-art.
+
+**Evaluation through generated sensors**
+Open-loop replay is the least faithful test. Simulation is trusted more. Waymo uses Google generative video models to synthesize camera input and vary the weather and time of day. As expected for a camera-only model, quality drops in rain and at night and is best around noon and afternoon.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- It is a clear case of using a general multimodal LLM as the planner itself, not only as a perception helper, in a safety-critical domain.
+- Self-supervision from driving logs shows how existing operational data can become free training labels.
+- The chain-of-thought step serves both explainability and accuracy, which is useful evidence for reasoning-before-action designs.
+- Using generated video as simulated sensor input is a concrete technique for testing a model on conditions you cannot easily collect, and it shows camera-only weak spots in rain and at night.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=iS9YFW28XyM

@@ -15,17 +15,34 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:14+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Nereu's Arturo Nunez replaces game-engine boilerplate with natural-language tags (an ATS) and an LOD-based method for assembling LLM context from 6-7k vision-tagged assets."
+summary: "Arturo Nunez, who spent almost 10 years at Unity, presents Nereu, a browser game engine where you describe intent in a player's words ('make this robot move with WASD') and an AI assistant applies tags instead of wiring meshes, colliders and rigid bodies. His thesis: today's engines put context on the engine, not on game design, so LLMs reinvent the same camera or movement code each time. Nereu's asset tag system, modelled on entity-component-system design, has built-in systems act on tags. Context is assembled by level of detail: rich data for assets near the edit, a stub for distant ones."
 ---
 
 # The Next Game Engine Won't Have a Manual — Arturo Nunez, Nereu
 
 ## Summary
-Arturo Nunez, formerly of Unity for close to 10 years and later MongoDB, describes Nereu, a game engine where players describe intent in natural language ("add a robot," "make it move with WASD and animate it") instead of manually wiring meshes, renderers, colliders, and rigid bodies. Every asset carries tags through what he calls an ATS (asset tag system), modeled on entity-component-system / data-oriented design from game development, so an AI assistant can query and apply tags like character, vehicle, or drivable — there is no scripting system by design, only a JavaScript escape hatch for advanced users. To keep LLM context manageable, Nereu borrows the game-dev concept of level of detail: assets near the player or being edited get full tag and settings context sent to the model, while distant assets get minimal representation, the same way distant geometry gets lower-fidelity rendering. The roughly 6,000-7,000 3D assets in the library were tagged by running vision models over screenshots rather than by hand. Nunez says he built the engine iterating daily with an AI coding assistant and domain-expert friends, and he contrasts his tag-driven approach with "world model" game generation, which he argues still can't hit real-time 60fps at 4K with physics simulation.
+Arturo Nunez worked at Unity for almost 10 years, then at MongoDB, and now builds Nereu. His thesis: making a game asks for too many skills (programming, 3D modelling, rendering, animation, music), and current engines plus LLMs only build "a bridge between two worlds". You still must know the engine's vocabulary, or the LLM "goes rogue" and reinvents the same wheel each time. He wants to flip the default so the context is the game design, not the engine.
+
+**The demo**
+He asks the in-engine assistant to "add a robot". It finds assets tagged or described as robots and makes one the player character. Pressing play does nothing until he says "make this robot move with WASD and animate it." He then adds buildings from an asset library, describes rain (the engine spawns a particle system set up as rain), and asks for a camera that follows the character. He frames this as the language players already know from tutorials: "press A to jump, press A again in the air to double jump". No coding and no asset importing are needed.
+
+**From components to tags**
+In a classic engine, a controllable character needs a mesh, renderer, animator, rigid body, collider and audio source, plus movement logic. Most of that is boilerplate every game repeats. Nereu treats everything as an asset that renders and usually has physics, and you add tags for intent: character, animated, double jump, and event rules such as "when you collect a coin, increase the score". This is the asset tag system, taken from entity-component-system and data-oriented design. Systems query the world for tags, for example "move all objects with the vehicle, player and drivable tags". Put those tags on a building and it drives in a kart-style game. The hard part is decomposing genres and moods (a "scary" platformer touches lighting and post-processing) into tags and systems.
+
+**How the assistant works**
+The prompt combines scene context, the kind of assets in use (robots, medieval) and the user's own description of the game. The agent then adds or removes tags through tool calls. There is no scripting system on purpose. The engine is JavaScript in the browser, so advanced users can extend it.
+
+**Context by level of detail**
+Feeding a whole scene bloats the context: his simple demo had about 100 objects, mostly grass. So he borrows level of detail from rendering. Objects near what the user is editing get full tags and setting values. Nearby objects get a stub such as "a player at this position". The context updates as the user moves.
+
+**How he builds it**
+He builds daily in conversation with Claude, checks ideas with friends who specialise in areas like lighting, and cuts settings users rarely touch. Each new tool's definition goes to the assistant. A vision model tagged 6,000 to 7,000 assets from screenshots. The product is in closed alpha. He rejects one-shot games "nobody is going to play", and argues world models are a different medium because 60 frames per second at 4K with physics is "still far away".
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A clear example of designing a domain vocabulary (tags plus built-in systems) so an agent composes known pieces instead of generating fresh code.
+- Level-of-detail context assembly is a transferable pattern: rank state by closeness to the user's focus and send full detail only there.
+- Using a vision model over screenshots to label 6,000 to 7,000 untagged assets is a practical way to make a legacy library usable by an agent.
+- Shows a deliberate product choice to remove scripting and shrink the settings surface, which trades flexibility for agent reliability.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=VBCDhRrvlYo

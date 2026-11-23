@@ -13,16 +13,34 @@ themes:
   - "MCP & Tooling"
 ingested_at: "2026-04-24T12:14:45+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "agent: Sarmad Qadri shares a practical take on Exposing Agents as MCP servers with mcp. In this talk, we will show that agents can be represented as MCP servers, allowing them to be run from any MCP client (such as Claude, Cursor and other applications). Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement."
+summary: "Sarmad Qadri, CEO of Last Mile AI and a former Language Server Protocol engineer at Microsoft, argues that MCP does for LLMs what LSP did for IDEs, and that MCP servers can be agents, not just thin wrappers over REST APIs. His open-source mcp-agent library implements the patterns from Anthropic's Building Effective Agents post (augmented LLM, evaluator-optimizer, fan-out, orchestrator). It treats agents as microservices exposed as MCP servers and as async workflows on Temporal that can pause, resume, retry and wait for humans. A demo grades a short story with an orchestrator and five sub-agents in about 100 lines, then runs the same agent from Claude Desktop."
 ---
 # Exposing Agents as MCP servers with mcp-agent: Sarmad Qadri
 
 ## Summary
-agent: Sarmad Qadri shares a practical take on Exposing Agents as MCP servers with mcp. In this talk, we will show that agents can be represented as MCP servers, allowing them to be run from any MCP client (such as Claude, Cursor and other applications). Key angle: focuses on agent design and orchestration; emphasizes evaluation and measurement.
+Sarmad Qadri is CEO of Last Mile AI. From 2016 to 2018 he worked on the Language Server Protocol at Microsoft, which replaced one API per editor with one standard interface. Since the ChatGPT plugins era he wanted the same for LLMs, and he sees MCP as that protocol. His thesis: most MCP servers today are one-to-one maps of REST APIs, but an MCP server can be a whole agent.
+
+**The 2025 agent stack**
+- Better models: reasoning and test-time compute move patterns like chain of thought and ReAct from the framework layer into the inference layer.
+- MCP: one standard interface for tools, data and resources, which Google, OpenAI, Microsoft and others have adopted.
+- Simpler architectures: agents are now orchestrators of good models and MCP in well-defined patterns, so heavy monolithic frameworks are no longer needed.
+
+He walks through the patterns in Anthropic's Building Effective Agents post: the augmented LLM in a loop with tools and data, the evaluator-optimizer pair that iterates until the evaluator is satisfied, fan-out and fan-in to sub-agents, and the orchestrator that plans and assigns tasks dynamically, as in Claude Code.
+
+**mcp-agent's three opinions**
+He built mcp-agent over a Christmas break to implement those patterns.
+1. MCP will be everywhere. Business apps such as Notion, Google Docs, Cursor and Claude become MCP clients, and every SaaS product gets an MCP server.
+2. Agents are microservices and can be deployed as MCP servers. A client can then call agents like any other server, and agents can call other agents over the same protocol. Benefits: composable multi-agent systems, platform-agnostic agents you build once, and scalable agents whose compute runs apart from the client.
+3. Agents are async workflows. They pause, resume, retry on failure, wait for human feedback, and can be triggered by webhooks or cron jobs, not only by chat. mcp-agent uses Temporal as the durable execution backend.
+
+**Demo**
+The task: load a student's short story from a markdown file, grade it on proofreading, factual and logical consistency, and adherence to an APA style guide fetched from a URL, then write a graded report. The agent connects to the fetch and filesystem MCP servers and defines finder, writer, proofreader, fact-checker and style-enforcer agents plus an orchestrator. The workflow is about 100 lines. In the Temporal UI the orchestrator first writes a plan, then runs each step, and any step can fail and retry. He then exposes the same agent as an MCP server in Claude Desktop. Claude starts the workflow and polls its status. Because the agent runs in a separate environment, he can close Claude Desktop and fetch the result later.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Reframes MCP servers from API wrappers to agents, which gives multi-agent composition over a standard protocol.
+- Treats long-running agents as durable workflows, which answers how to handle retries, human approval and scheduled runs outside a chat session.
+- The LSP analogy explains why one standard interface beats per-platform connectors.
+- Shows that a multi-agent orchestrator pattern can be small, about 100 lines, once tools come from standard MCP servers.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=uFPAtKIN-FQ

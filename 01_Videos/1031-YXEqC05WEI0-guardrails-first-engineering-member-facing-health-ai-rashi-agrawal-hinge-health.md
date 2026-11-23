@@ -15,17 +15,43 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:28:27+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Rashi Agrawal (Hinge Health) argues health AI safety needs a deterministic code layer above the model, PHI stripped at ingestion, continuous eval, and explicit rules for shipping under risk."
+summary: "Rashi Agrawal, who leads AI and ML at Hinge Health, argues that most health AI safety failures are architectural decisions made before any token is generated, not model failures. Her three layers: strip PHI at ingestion, before it reaches the data lake; put must-not-fail decisions (911 or 988 escalation, intent routing, identity checks) in a code layer that runs before the model on every turn, because 'a model with a system prompt is also not a guardrail'; and score live traffic continuously with judges, member feedback and sampled traces. She adds five rules for ship-or-hold calls, and a habit: check the judge before you change the agent."
 ---
 
 # Guardrails First: Engineering Member-Facing Health AI — Rashi Agrawal, Hinge Health
 
 ## Summary
-Rashi Agrawal, who leads AI/ML at Hinge Health, opens with three cited incidents — a man hospitalized for three weeks after an LLM told him to replace dietary salt with sodium bromide (bromide levels 200x the safe limit), a Mount Sinai audit finding a consumer health AI under-triaged life-threatening emergencies (DKA, respiratory failure) 50% of the time, and ECRI naming AI chatbot misuse the #1 health technology hazard of 2026 — to argue these are architectural failures, not model failures. Her prescription has three layers: strip PHI at pipeline ingestion (not redact it later at the dashboard), with production and non-production environments never connected and access gated by role and region; put irreversible decisions (911/988 emergency escalation, intent routing between clinical/tech-support/education paths, identity verification) in a deterministic code layer that runs before the model on every turn, since "a model with a system prompt is not a guardrail" and prompt-injection can override anything above the user in a lab's stated authority hierarchy; and run continuous evaluation on live traffic via automated judges (30-40+ dimensions), member thumbs-up/down feedback, and 100%-sampled high-stakes traces, noting the real bottleneck is having enough people to act on signals, not compute. For shipping decisions under stakeholder disagreement, she gives five rules: worst plausible outcome sets severity (not average-case frequency), severity is independent of team capacity, default to holding for safety bugs but shipping for polish bugs, calibrate to an org's revealed (not stated) risk tolerance, and treat humans as the scaling constraint since judges can be gamed or miscalibrated (illustrated by a judge wrongly flagging FDA-standard 400mg caffeine guidance as a hallucination versus correctly flagging a 1,000mg/day answer as unsafe) — meaning a dropping score should first prompt "is the judge right?" before the agent itself is changed.
+Rashi Agrawal leads AI and ML at Hinge Health. She gives a practitioner's view of the guardrails member-facing health AI needs. She opens with the "production baseline". A 60-year-old man asked an AI assistant how to cut salt, was told to swap it for sodium bromide, and spent three weeks in hospital with bromide levels 200 times the safe limit. A Mount Sinai safety test found a consumer health AI under-triaged life-threatening emergencies, such as diabetic ketoacidosis and respiratory failure, 50% of the time. ECRI named AI chatbot misuse the number one health technology hazard of 2026. Her claim: these are architecture failures, not model failures.
+
+**Layer one: protect PHI by architecture, not policy**
+Most teams redact PHI when a log reaches a dashboard. She strips it at the pipeline boundary, at ingestion, so "the PHI was never there". Production and non-production have no pipes between them, because one pipe can leak member data into dev. Access depends on role and geographic region, and engineers outside the regulated region cannot reach raw PHI. HIPAA, FDA good machine learning practice and state laws are design inputs, not add-ons.
+
+**Layer two: deterministic rules above the model**
+"What can never be wrong cannot be left to probability." A code layer runs first on every turn and makes the irreversible calls; the model handles the long tail. She notes that the labs publish an authority hierarchy (root, system, developer, user, guideline), and every layer above user is "one prompt injection away" from override. Three examples:
+- Emergency escalation: self-harm, suicidal ideation or acute emergencies route to 911 or 988, and the model never sees the turn.
+- Intent routing: the model may help classify, but high-stakes paths (clinical versus tech support, education or exercise) take a deterministic route.
+- Identity verification: an authentication check, because authentication is a security boundary and prompts are not.
+
+**Layer three: continuous evaluation**
+Pre-launch evals are necessary but not enough. In production she uses 30 to 40 or more automated judges on live traffic (clinical accuracy, safety, escalation, drift, refusal), thumbs up or down on every message as the "truth signal", and sampled traces with 100% sampling of high-stakes cases. The bottleneck is "having enough people to read the signal". Some failures return after every fix, so each new production failure becomes a new judge.
+
+**Deciding when architecture is not enough**
+She describes one open issue five days before launch, with clinical, legal, compliance, product and engineering each seeing a different risk. Her five rules:
+1. Worst plausible case sets severity, not the average.
+2. Severity is not capacity. Fix it, delay, or accept the risk with explicit sign-off; never quietly downgrade.
+3. Asymmetric default: hold for safety bugs, ship for polish bugs.
+4. Calibrate to revealed risk tolerance, meaning what already ships, not stated tolerance.
+5. Humans are the constraint, and fast follows are committed debt.
+
+**Verify the scorer**
+A clinical accuracy judge drops from 4.9 to 4.5. Before changing prompts, ask whether the judge is right. When an agent gave the FDA-standard caffeine limit of 400 mg with a caveat for pregnancy and medication, the judge wrongly flagged a hallucination, so fix the judge. When the agent said 1,000 mg a day was fine, the judge was right, so fix the agent. Her summary: "Don't prompt what you can code."
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a crisp rule for where guardrails belong: irreversible, must-not-fail decisions go in code that runs before the model, not in the system prompt.
+- PHI stripped at ingestion instead of redacted at display is a concrete pattern for any regulated-data pipeline.
+- The five ship-or-hold rules are a reusable decision framework for launches where stakeholders see different risks.
+- The caffeine example is a clear case for treating LLM judges as software to verify and fix, not as ground truth.
+- Names human reviewer capacity, not compute, as the limit on continuous evaluation.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=YXEqC05WEI0

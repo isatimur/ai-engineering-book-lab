@@ -15,17 +15,36 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-08-20T22:27:58+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Paul Klein IV (Browserbase) argues browser agents are held back by harness and infrastructure engineering, not model capability, and outlines what the web itself must add for agents."
+summary: "Paul Klein IV, founder of Browserbase, argues that computer use has a large 'model capabilities overhang': models are now good enough, and browser agents lag coding agents because of missing engineering, not missing intelligence. Working browser agents are multimodal (they mix code that replays network requests with clicking), harness-engineered (memory and per-site skills via browser.sh and WebMCP) and run on consistent infrastructure, not Mac minis at home. The web must also change: accessibility trees, llms.txt and agents.md, agent sign-up and login flows, and a 'Verisign moment' to certify trusted agents."
 ---
 
 # Bringing agents onto the world wide web — Paul Klein IV, Browserbase
 
 ## Summary
-Paul Klein IV, founder of Browserbase, argues the "model capabilities overhang" in computer use is not a model problem but an engineering one: harnesses, not raw model quality, explain why coding agents outperform browser agents today (citing Factory's harness beating baseline model results, and crediting Cursor as the first company to do "harness engineering," per a Karpathy tweet from November 2023 describing the LLM plus tools/subagents pattern). He identifies three properties of working browser agents — multimodal (mixing coding-agent script generation with computer-use clicking), harness-engineered (memory and skills via Browserbase's "browser.sh" and WebMCP so agents don't rediscover a site's affordances each time), and reliable infrastructure (consistent rendering/viewport, since e.g. a page switching between mobile and desktop layout breaks repeatability) — and dismisses ad hoc setups like running Mac minis at home for computer-use agents as an infrastructure anti-pattern. He argues the web itself must adapt for agents: exposing accessibility-tree/ARIA data and files like llms.txt, skills.md, and agents.md; solving agent authentication (service accounts, WorkOS's new agent sign-up flow); and establishing agent identity/trust, since CAPTCHAs no longer reliably separate bots from legitimate agents and no "Verisign-style" trusted-agent certifier yet exists. Browserbase itself launched a new "battery-included" agent product the day before the talk, positioned as a purpose-built browsing sub-agent that logs and self-improves across runs via an observability feedback loop (referencing their earlier "Auto Browse" project).
+Paul Klein IV is the founder of Browserbase. He speaks to a half-empty computer-use track and asks why web agents have not taken off a year after Operator. His answer: it is no longer the models. Models now handle long-horizon tasks, and labs have invested in RL environments for computer use as heavily as for coding. There is a "huge model capabilities overhang", and closing it is "an engineering problem" that companies outside the labs can solve.
+
+**Harnesses explain the coding gap**
+He defines the harness as the scaffolding around a model that lets it act in the world. He points to a Karpathy tweet from November 2023 that listed a code interpreter, screenshot input, a browser and other LLMs as subagents. He shows Factory beating Claude Code on the same model with a custom harness, and he credits Cursor as the first to do harness engineering. His advice: put a harness on your model and measure it against the baseline model. He also argues that non-coding work is a bigger opportunity than coding.
+
+**Three properties of browser agents that work**
+- **Multimodal.** Use a smarter model for complex pages and a cheaper one for simple pages. Mix coding and clicking: the most reliable production agents often intercept network requests and write a script to replay them, which is far more context-efficient than driving the UI.
+- **Harness-engineered.** Give agents memory and skills so they do not rediscover a site each time. Browserbase's browser.sh publishes skills for websites, and WebMCP helps too. Send compressed, relevant tokens, not the whole page.
+- **Reliable infrastructure.** Running agents on Mac minis at home and solving CAPTCHAs from a home IP does not scale to thousands of customer agents ("I've yet to see a SOC 2 compliant Mac mini setup"). Consistency matters: a page that renders mobile once and desktop the next time gives inconsistent results.
+
+**The web must change too**
+- Accessibility: good agents read the accessibility tree and ARIA tags, not raw DOM. Chrome's WebMCP lets a site publish tools, such as submitting a registration form, that an agent can call without installing anything. Sites should also publish llms.txt, skills.md and agents.md.
+- Authentication: shared passwords and service accounts are both awkward. He cites a new WorkOS launch that tells an agent how to sign up for its own account, and urges builders to design an agent-first sign-up and login flow.
+- Trust: CAPTCHAs no longer separate good agents from bad bots. Web bot auth work exists, but nobody yet acts as a certificate issuer for trusted agents.
+
+**What a platform needs, and the pitch**
+Scale from one agent to thousands, model agnosticism, someone to negotiate agent identity with anti-bot providers, and observability (screen recordings, logs, network activity) fed back so each run improves, as in Browserbase's earlier Auto Browse work. He then demos Browserbase Agents, launched the day before: a "battery-included" harness, sandbox and toolset that learns from its own steps and plugs in as a sub-agent. He frames the market as the real economy, such as a logistics firm in Singapore or a lumber factory in Mexico running on PHP sites.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- Gives a clear argument that browser-agent reliability is now a harness and infrastructure problem, with the Factory-versus-Claude-Code comparison as evidence that harnesses beat baseline models.
+- The pattern of writing a script that replays network requests is a concrete, context-efficient alternative to pixel-level computer use.
+- Names environment consistency (same viewport, same layout every run) as a reliability requirement that eval and production setups often ignore.
+- Maps the open problems on the web side (WebMCP, agent sign-up flows, agent identity and certification) that no single agent builder can solve alone.
+- Note the vendor framing: the second half pitches Browserbase's own product, so the platform checklist matches what it sells.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=GqoNrUz8hEU

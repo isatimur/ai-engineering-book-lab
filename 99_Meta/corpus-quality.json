@@ -1,8 +1,8 @@
 {
-  "enriched_floor": 243,
-  "recorded_on": "2026-11-18",
-  "notes_at_record": 1469,
-  "stub_at_record": 1226,
-  "what_this_is": "The number of notes in 01_Videos/ carrying real analysis rather than the ingest's template. corpus_health.py fails if it falls below this floor: new stub notes are free, lost analysis is not. The ratio itself (16.5% enriched at record) is tracked in issue #114 and is a scope decision, not a gate.",
+  "enriched_floor": 589,
+  "recorded_on": "2026-11-23",
+  "notes_at_record": 1482,
+  "stub_at_record": 893,
+  "what_this_is": "The number of notes in 01_Videos/ carrying real analysis rather than the ingest's template. corpus_health.py fails if it falls below this floor: new stub notes are free, lost analysis is not. The ratio itself (39.7% enriched at record, after every stub the books cite was enriched from its transcript) is tracked in issue #114 and is a scope decision, not a gate.",
   "how_enriched_is_decided": "A note is a stub if its summary matches the ingest's template phrasing, or if it still carries the untouched 'Why it matters' boilerplate. The second test is the structural one and catches 40 notes the phrasing test misses."
 }

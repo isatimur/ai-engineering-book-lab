@@ -14,16 +14,32 @@ themes:
   - "Org Design & Leadership"
 ingested_at: "2026-04-24T12:16:37+00:00"
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "A practical talk on ChatGPT is poorly designed. So I fixed it. Let's fix ChatGPT's greatest design sins. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns."
+summary: "In a five-minute lightning talk, the speaker (unnamed in the transcript; he mentions work at Warp terminal) argues that ChatGPT ships the org chart: voice and text feel like two apps from two companies, and the model picker is a confusing science fair. He builds a fix with off-the-shelf APIs. A realtime voice model runs the live call, a send-chat-message tool pushes links and drafts into an iMessage-style text panel, and a second tool hands deep questions to a reasoning model. He notes the text tool needed no system prompt, only a tool description. Source code is on GitHub as fixgpt."
 ---
 # ChatGPT is poorly designed. So I fixed it
 
 ## Summary
-A practical talk on ChatGPT is poorly designed. So I fixed it. Let's fix ChatGPT's greatest design sins. Key angle: focuses on agent design and orchestration; includes voice / realtime system concerns.
+This is a five-minute lightning talk. The speaker is not named in the transcript; he says he explores these patterns at Warp terminal, a developer tool. His thesis: ChatGPT is one of the fastest-growing apps in history, yet it is confusing because it ships the org chart.
+
+**The problem: two apps in one**
+He shows ChatGPT's two voice buttons, voice-to-text and voice-to-voice. In voice mode he asks for a group email about the AI Engineer World's Fair. The model writes a good email but can only speak it. To work on the written text, you must end the call and find the transcript. Voice and text feel like they "were built by two different companies". He quotes another engineer's phrase "shipping the org chart": an EV dashboard turned out to be three Android tablets chained together, each with its own font. At OpenAI, he says, a whiz kid ships a technical improvement, marketing is never consulted, and users face a "science fair" of model names.
+
+**Two fixes with off-the-shelf tools**
+He wants two changes: voice and text at the same time, and smart choice of model based on the request.
+- A realtime voice model runs the live audio chat. A chat button opens an iMessage-style panel, like texting a friend during a FaceTime call, with call controls at the top and text replies for details such as email drafts.
+- Tool calls handle the rest. A send-chat-message tool pushes links and drafts into the text panel. A second tool hands deep questions to a reasoning model and returns a fuller answer.
+
+**The Warp pattern**
+In Warp, a simple ask such as undoing the last commit goes to a coding agent that runs terminal commands. A complex ask, such as refactoring a codebase to Flutter, triggers a plan from a reasoning model first. He says simple heuristics work: if the user asks for details or pros and cons, hand off to reasoning, show how long it is thinking, and hand back a detailed reply.
+
+**The demo**
+He asks for a park to visit in California; the voice agent sends a link to the chat. He asks for the history of a national park and says "go deep"; the voice reply points him to the chat for details. He stresses that the text tool needed no system prompt, only a tool description. The code is on his GitHub as fixgpt.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A clear, small example of tool calls as a bridge between modalities: the voice model stays in the call and a tool writes the long-form text.
+- Model routing as a tool call: the fast model decides when to hand off to a reasoning model, instead of making the user pick from a model menu.
+- The point that a tool description alone, with no system prompt, steered the model well is a useful data point on how much prompting modern models need.
+- Shipping the org chart is a sharp frame for product chapters on why AI apps feel stitched together, and how a single interface can hide several models.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=y6L5RkEqQ8g

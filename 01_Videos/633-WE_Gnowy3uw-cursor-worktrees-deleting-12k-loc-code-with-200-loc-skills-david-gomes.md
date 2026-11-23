@@ -15,17 +15,35 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-05-07T23:19:10+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "David Gomes shares a practical take on Cursor Worktrees: Deleting 12K LoC Code with 200 LoC Skills. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice."
+summary: "David Gomes of Cursor argues that markdown is the new code. Cursor replaced its git worktree feature and its run-one-task-on-many-models feature, thousands of lines of code for isolation, setup scripts, judging and cleanup, with short markdown commands built on skills and subagents (the multi-model one is about 40 lines). Gains: far less maintenance, worktrees mid-chat, multi-repo support and better comparison. Losses: the agent can now leave its worktree, the flow feels slower and is harder to find. He fixes drift with evals that score where the agent wrote files, and with RL tasks for Composer."
 ---
 
 # Cursor Worktrees: Deleting 12K LoC Code with 200 LoC Skills — David Gomes
 
 ## Summary
-David Gomes shares a practical take on Cursor Worktrees: Deleting 12K LoC Code with 200 LoC Skills. Key angle: focuses on agent design and orchestration; connects the topic back to software engineering practice.
+David Gomes works at Cursor. His thesis is that "markdown is basically the new code". He tells how his team removed a full feature, with its dependencies, tests and edge cases, and rebuilt nearly all of it as a few markdown prompts. The PR that deleted the old feature removed around 15,000 lines. The new version is "almost as good" and much cheaper to maintain.
+
+**What the old feature did**
+Git worktrees are separate checkouts, so parallel agents do not collide. Cursor 2.0 shipped worktree agents plus a mode that gives the same task to several models and lets you compare results. The code had to create and manage worktrees, feed them to the agent as context, keep agents from escaping, run user setup scripts, run a judge that marks the best result with a thumbs-up, add harness system reminders, and clean up hundreds of stale worktrees that filled users' disks.
+
+**The replacement: skills plus subagents**
+Two existing primitives, agent skills and subagents, rebuild both features. A /worktree command tells the model how to create a worktree, run the setup scripts, and stay in that checkout, with separate Windows and Linux/macOS steps. The multi-model command is about 40 lines of markdown, against roughly 4,000 lines before. The parent agent starts one subagent per model, each in its own worktree, waits, then compares and grades the results in a table. Apply and delete commands bring changes back or clean up. They ship as commands, not skills, so the prompts live on Cursor's servers and he can improve them without a client update. They load into context only when the user calls them, as skills do.
+
+**Gains and losses**
+Gains: much less code for an advanced feature that only power users use; switching into a worktree halfway through a chat; multi-repo setups, which were disabled before and now get one worktree and one PR per repo; and better judging, because the parent sees everything and can merge the best parts of two models' work. Losses: isolation used to be enforced, and now it is "a bit vibes based", so over long sessions weaker models drift into the primary checkout. The flow also feels slower because users watch the setup, and it is harder to discover without the old dropdown. Forum feedback is mixed.
+
+**Fixing drift with evals and RL**
+He runs the headless Cursor CLI with two scorers: did the agent work in its worktree, and did it touch the primary checkout. Even simple evals show Haiku often drifts while Composer does much better. Composer 2 had no RL tasks for this setting, so the team is adding them for later versions and is sharing feedback with other labs.
+
+**What next**
+A native worktree implementation in the Cursor 3.0 agent window, and research into parallel primitives that are faster, use less disk and work outside git.
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- A concrete case of replacing about 15,000 lines of product code with prompts, and an honest list of what was lost.
+- Shows the core trade-off of prompt-based features: hard guarantees (the agent cannot leave its worktree) become soft ones that need evals and system reminders.
+- The two-scorer eval (work inside the worktree, no work outside it) is a simple pattern for testing whether an agent stays in its sandbox.
+- Serving command prompts from the backend lets a team iterate on agent behaviour without shipping a client release.
+- Shows a model vendor closing a harness gap with RL training data, not just better prompts.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=WE_Gnowy3uw

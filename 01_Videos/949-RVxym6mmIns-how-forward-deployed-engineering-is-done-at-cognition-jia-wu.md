@@ -15,17 +15,37 @@ themes:
   - "Evals & Reliability"
 ingested_at: 2026-07-31T20:57:18+00:00
 source_inventory: "/tmp/ai-engineer-videos.jsonl"
-summary: "Jia Wu describes how Cognition deploys Devin: FDEs map agent capabilities to SDLC bottlenecks, citing 82% faster delivery and 2x PR throughput, and frames FDE explicitly as go-to-market."
+summary: "Jia Wu, a deployed engineering lead at Cognition, explains how forward deployed engineers take Devin into enterprises. Coding is mostly solved and only about 20% of the problem; the rest is testing, review, deployment and maintenance. FDEs map Devin to those bottlenecks instead of token maxing, and carry field problems back to the roadmap. She cites anonymized results (150% extra headcount in three months, 82% shorter delivery timelines, about 2x PRs over single-point tools) and Nubank's ETL migration in a third of the time. Unlike other FDE talks, she calls everyone go-to-market."
 ---
 
 # How Forward Deployed Engineering is done at Cognition — Jia Wu
 
 ## Summary
-Jia Wu, deployed engineering lead at Cognition (and a Windsurf-acquisition alum), traces Devin from its underwhelming 2024 launch (13% on SWE-bench, internally joked as "we're so cooked") to a product whose forward-deployed engineers split their time roughly evenly between customer calls and hands-on-keyboard work, mapping Devin's capabilities to specific SDLC bottlenecks — testing, review, deployment, maintenance — since raw code generation is, in her view, "a mostly solved problem" and only about 20% of the challenge. She cites internal case studies: a 3-month embedded engagement that delivered output equivalent to 150% of the customer's headcount, an 82% reduction in delivery-project timelines versus pre-Devin baselines, and roughly double the PR throughput compared with single-point tools like CLIs or IDEs. Public examples include Nubank completing a 50-engineer ETL migration in about a third of the projected timeline using Devin autonomously, a Latin American bank migrating a legacy (COBOL/JCL-era) tax-identification system with half the usual effort, and a company she calls Built generating the weekly output of more than 10 engineers. Notably, Wu frames Cognition's FDEs explicitly as go-to-market — "everybody is go-to-market because the target is to make the customer successful at all costs" — with engineers embedded on customer sites for months at a time (one for 10 months in Brazil), a framing that runs counter to other forward-deployed-engineering talks in this series that insist FDE is a product function, not a sales one.
+Jia Wu is a deployed engineering lead at Cognition who joined after the Windsurf acquisition. Her claim: how Cognition deploys Devin in the field follows from how it sees deployed engineering. She opens with humour about Devin's 2024 launch: 13% on SWE-bench, and a week later users said they would only use it if "desperate and out of ideas". Now, she says, it is good. Cognition offers a CLI, an IDE and, best known, the Devin cloud agent. Internally, while behind on hiring, the company shipped almost an order of magnitude more PRs with its own agent in six months.
+
+**Maximize the overlap**
+She draws two circles: the product and the customer's problems. The overlap is product-market fit, and the forward deployed motion tries to make it as large as possible from both sides.
+
+**Side one: understand the problem space**
+Coding is "a mostly solved problem" with enough context engineering. Writing code faster is only about 20% of the problem; the rest is testing, review, deployment and maintenance across the enterprise. Deploying agents with no direction is "token maxing": burned spend with no outcomes. A typical FDE day is four or five hours of customer calls and four or five hours at the keyboard. The calls find the highest-leverage initiatives. Then the FDE sets up the agent to run on alerts and events, so nobody triggers it by hand. FDEs embed in the customer's backlog, remediations, unwritten tests and alert triage. Measuring ROI stays ambiguous and unsolved.
+
+**Side two: feed the product**
+Solving the customer's problem is half the job. The field gives the "highest fidelity evaluation set". FDEs judge whether a problem is common or unique and whether workarounds should become features, to de-risk the roadmap.
+
+**Who they hire**
+T-shaped people with broad people, business and technical skills, plus a deep spike. Some come from product management, because when the cost of code goes to zero you need product sense. Others are founders or very technical engineers; business sense can be learned. The two mantras: relentless curiosity about why, and staying tied to the customer.
+
+**From token maxing to measured outcomes**
+Two years ago the KPI was token use, when spend was subsidized. Large regulated customers now ask for real value. She argues single-point CLIs or IDEs make engineers faster but cannot make a whole organization faster. Cognition measures sessions in engineering hours. Anonymized results: a three-month embed added about 150% headcount; delivery timelines shrank about 82%; PR output was about double that of single-point tools. Public cases: Nubank's ETL migration, staffed by 50 engineers, done in about a third of the time with Devin alone; a large Latin American bank's tax-identification migration, with legacy COBOL and JCL, at half the effort; and a third customer getting the weekly output of over 10 engineers.
+
+**Everyone is go-to-market**
+Cognition once kept an FDE in Brazil for 10 months to live next to a customer. FDEs take problems back to product with no ego. Her closing frame: "everybody is go-to-market because the target is to make the customer successful at all costs."
 
 ## Why it matters
-- Helps map the current AI engineering landscape into reusable patterns, tradeoffs, and case studies.
-- Useful as raw material for theme synthesis and future book chapters.
+- It gives the FDE chapter a clear position to compare against: Cognition calls FDEs go-to-market, yet expects them to feed the roadmap too.
+- The 20%-coding claim moves the agent-deployment question from code generation to testing, review, deployment and maintenance.
+- Token maxing versus measured outcomes names the budget shift enterprises now apply to agent rollouts.
+- The figures (150% headcount, 82% shorter timelines, 2x PRs) are vendor-reported and anonymized, so the book should cite them as claims, not benchmarks.
 
 ## Metadata
 - Video: https://www.youtube.com/watch?v=RVxym6mmIns
