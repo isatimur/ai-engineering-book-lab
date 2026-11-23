@@ -1,198 +1,188 @@
-# Third Book — Design Spec (v0.1)
+# Third Book — Design Spec (v0.2)
 
-- **date:** 2026-11-15
-- **status:** draft — awaiting author approval
+- **date:** 2026-11-15 (v0.1), revised 2026-11-23 (v0.2)
+- **status:** draft v0.2. It records the book as built and names the decisions still open. See "Decisions still open".
 - **working title:** *The Shape of the Work* (placeholder, as *Beyond the Harness* was for book 2)
 - **subject:** spec-driven development (SDD) and the product/software development lifecycle when agents do most of the building
-- **repo:** same repo, third manuscript track — `public/drafting-3/`, `book-mash-3.toml`
-- **relationship to books 1 and 2:** same Lab, same corpus, same Method
+- **repo:** same repo, third manuscript track: `public/drafting-3/`, `book-mash-3.toml`
+- **relationship to books 1 and 2:** same Lab, same corpus, same Method (defined below)
 
-## Purpose
+**Revision log.** v0.1 (2026-11-15) proposed the book. v0.2 (2026-11-23) applies the EGM review in `docs/egm-review/third-book-design/consolidated_review_report.md`: one spine, a goal that matches the evidence, and a record of what was built after v0.1.
 
-Book 1 is about **delegating the work**: harnesses, specs, evals, control, org design, with the model taken as given. Book 2 is about **where that assumption breaks** — you are training the model, or the domain brings a standard general capability does not satisfy.
+## Terms
 
-Book 3 is about **the process around the work**. When generating code stops being the constraint, the constraint moves to everything that surrounds it: deciding what to build, writing it down well enough for an agent to execute, reviewing output nobody typed, gating it, shipping it, and living with it afterwards.
+- **The Lab** is this repository. It holds three books, their evidence and the CI that checks them, and it is public.
+- **The corpus** is 1,482 AI Engineer conference talks (`01_Videos/`). A clone carries each talk's note: title, themes and summary. It does not carry the transcripts, which live only in the author's working tree (`git ls-files 99_Meta/transcripts` prints 0). Claims anchored to transcript quotes are checked in the author's tree. CI checks them only when it can fetch the private transcript mirror, which needs the `CORPUS_TOKEN` secret (see D3). A reader can check the note and the talk itself, not the transcript.
+- **The Method** is the practice the three books share. Every claim cites a corpus talk or a captured repo artifact, and a gate verifies the citation.
+- **Roles.** The **author** decides. The **builder** is the coding agent that drafted this spec and ran its reviews. "Settled by the builder" means a proposal the author has not overturned, not a decision the author made.
 
-The corpus states the thesis directly. Justin Reock of DX, presenting data from 400 organizations, argues for integrating across the SDLC and PDLC because "code generation was never the bottleneck in the first place." McKinsey's panels talk about "re-wiring the PDLC" and note that different engineering functions along the product lifecycle may need different operating models. That is the book: the bottleneck moved, and the lifecycle has not caught up.
+## Problem
 
-### Why now
+Book 1 is about **delegating the work**: harnesses, specs, evals, control, org design, with the model taken as given. Book 2 is about **where that assumption breaks**: you are training the model, or the domain needs something general capability does not give.
 
-Spec-driven development acquired real tooling in the last eighteen months, and the tools disagree with each other. That disagreement is the book's spine, not a sidebar.
+Book 3 is about **the process around the work**. When generating code stops being the constraint, the constraint moves to everything around it: deciding what to build, writing it down well enough for an agent to execute, reviewing output nobody typed, gating it, shipping it, and living with it afterwards.
 
-| System | Position on how much ceremony a change needs |
-|---|---|
-| **GitHub Spec Kit** (1.0.0, 2026-08-21) | Heavy and phase-gated. The specification is *executable* — it generates the implementation rather than guiding it. |
-| **OpenSpec** (Thoughtworks Radar "Trial", 2026-11) | Light and delta-based. `propose → apply → archive` against a persistent source-of-truth spec. Brownfield-first: retrofits specs onto existing code. |
-| **Google Elephant-Goldfish (EGM)** (2026-10/11, Apache 2.0) | The spec is not the problem — *review* is. The Elephant drafts with full context; Goldfish subagents review with none, so they cannot inherit the author's assumptions. |
-| **superpowers** | A gated pipeline: brainstorm → design doc → plan → TDD, with a hard stop before any code. |
-| **Matt Pocock's skills** | No pipeline at all. Sharp single-purpose tools (grilling, domain-modeling, codebase-design) you reach for when the situation calls for one. |
+The corpus states the thesis directly. Justin Reock of DX, presenting data from 400 organizations, argues for integrating across the SDLC and PDLC because "code generation was never the bottleneck in the first place" (#1216). McKinsey speakers talk about rewiring the PDLC and say that different functions along the product lifecycle may need different operating models (#076, #1265). That is the book: the bottleneck moved, and the lifecycle has not caught up.
 
-They are answering one question five ways: **how much has to be written down, and verified by whom, before an agent is allowed to touch code?** Thoughtworks' own caveat on OpenSpec — that maintaining the persistent spec still takes discipline — is the crack running through all of them, and the honest subject of several chapters.
+## Goals, non-goals, anti-goals
 
-## Anchoring decisions
+**Goals:** a practitioner can run the lifecycle described; every claim cites a corpus talk or a captured repo artifact; the systems the Lab ran are compared on its own bake-off evidence, and the other systems are reported as positions, not compared.
 
-| # | Question | Decision | Rationale |
-|---|---|---|---|
-| Q1 | Structure: tool-by-tool, lifecycle-by-stage, or Lab-artifact-driven | **Lifecycle spine, Lab artifacts as worked examples, tools argued at the stage where each is strongest** | Author picked this over a field guide. A chapter per tool is stale at print: Spec Kit hit 1.0 in August, Living Specs in October, EGM in November — three moves inside one research window. Stages outlive tools. |
-| Q2 | Audience | **The practitioner and small-team lead**, with DX/McKinsey enterprise data used as *evidence*, not as the target reader | Author's own position, and books 1 and 2's reader. Enterprise rollout is a different book; serving both would dilute the practical half that was explicitly asked for. **This was the model's call, stated and not objected to — confirm on first read.** |
-| Q3 | Evidence base | **Corpus anchors as in books 1 and 2, plus this repo's own artifacts as the worked example** | 62 corpus talks mention SDLC or PDLC. The Lab additionally holds 13 specs, 10 plans, 10 programs, 63 research passes, 2 ADRs and 8 CI gates accumulated over 18 months in public. |
-| Q4 | What makes it different from every other SDD book | **Every claim is demonstrable on a repo the reader can clone** | The same bet book 1 made with the corpus, applied to process. Competing material is vendor documentation or opinion; none of it ships its own evidence. |
-| Q5 | Repo location | **Third manuscript track in the same repo**, mirroring book 2's Q4 decision | book-mash is config-driven per book. A sibling repo would duplicate CI, claims and website infrastructure for the same Lab and method. |
-| Q6 | Visual identity | **Distinct from both existing books** — proposed slate `#475569` → orange `#c2410c` | Book 1 is blue→green, book 2 teal→rose. Must also avoid the established semantic slots (red = naive, amber = transient, purple = AI control plane). Open to the diagram pass. |
+**Non-goals:** tool documentation; enterprise transformation and change management; a methodology to adopt wholesale; a prediction about which tool wins.
 
-## Evidence reality check (measured 2026-11-15, after the builder review)
+**Anti-goals** (a failure even if finished): a field guide that dates in a quarter; ceremony for its own sake; a book whose own repo does not follow the practice it recommends.
 
-The builder check found a hole in the section above, and the measurement confirms it. **The corpus cannot carry the five-way tool comparison.** Counted across the 1,458-talk transcript mirror:
+## The spine
 
-| term | talks |
-|---|---|
-| `SDLC` / `PDLC` family | **62** |
-| `spec-driven` / `spec driven` | 13 |
-| `superpowers` | 20 |
-| `OpenSpec` | **2** (both passing mentions) |
-| `Spec Kit` / `speckit` / `spec-kit` | **0** |
-| Elephant-Goldfish | **0** |
+The book follows the **lifecycle stages**, from deciding what to build to living with it afterwards. The stages lead to one destination: the **software factory**, the idea of moving the human out of the SDLC loop step by step. Whether the factory arrives is the question Part IV argues.
 
-And the Lab has never run three of the five: no `.specify/`, no `openspec/`, no EGM artifacts anywhere in the tree. It holds 24 superpowers specs and plans, and Pocock's skills are installed.
+The factory is the best-argued topic the corpus has for this book. Speakers argue about it by name, in public:
 
-So the lifecycle spine is well anchored (62 talks) and **the tool comparison is not anchored at all**. Chapters 3, 6 and 10 as drafted have neither a corpus anchor nor a repo artifact for Spec Kit, OpenSpec or EGM. This is the first thing the author has to resolve; see "Decisions the author must make".
-
-The builder check reported 84 talks for the SDLC/PDLC family. That count could not be reproduced; the measured figure is 62, and 62 is what this spec uses.
-
-### The software factory (added 2026-11-15, author's steer)
-
-The author named "SDLC factories" as belonging here. Measured, this is the **best-anchored seam in the whole book** — better than the tool comparison by an order of magnitude:
-
-| term | talks |
-|---|---|
-| `software factory` / `factories` | **35** |
-| `agent factory` | 6 |
-| `assembly line` | 6 |
-| `platform engineering` | 9 |
-| `internal developer platform` | 9 |
-
-More importantly, the corpus does not merely mention the idea — **it argues about it, by name, in public**:
-
-| | talk |
+| role in the argument | talk |
 |---|---|
 | the how-to | #1256 *Harness Engineering: How to Build a Software Factory* — Dru Knox, Tessl |
 | the how-to | #1205 *What It Actually Takes to Build a Software Factory* — Factory |
-| **the rebuttal** | #1206 *No, That's Not a Software Factory* — Ryan Cooke, WorkOS |
-| **the post-mortem** | #923 *Harness Engineering Is Not Enough: Why Software Factories Fail* — Dex Horthy |
-| **the staged debate** | #855 *The Great Loops Debate* — Horthy, Huntley, Livingstone and others |
+| the rebuttal | #1206 *No, That's Not a Software Factory* — Ryan Cooke, WorkOS |
+| the post-mortem | #923 *Harness Engineering Is Not Enough: Why Software Factories Fail* — Dex Horthy |
+| the staged debate | #855 *The Great Loops Debate* — Horthy, Huntley, Livingstone and others |
 | at scale | #1428 *How Anthropic Merges 30,000 Code Changes a Day* — Kapur, Sonar |
 | at scale | #1048 *Agentic SDLC at Uber* — Medisetty & Huda, Uber |
 | the economics | #924 *Notion's Token Town* — Sarah Sachs, Notion |
 | the review wall | #1432 *Why Humans Can't Keep Up With AI-Written Code* — Shaukat, Sonar |
 | the bottleneck | #1195 *Fixing the PR Bottleneck* — Matt Pocock, AIHero |
 
-A definition the book can anchor on, from #704 (Lou Bichard, Ona): a software factory is "the commitment to incrementally moving the human out of the loop within the SDLC." And the honest caveat, from #1377 (Jediah Katz, SpaceX/xAI): multiple agents coordinating to solve the full lifecycle is "far from a solved vision."
+The definition the book anchors on is from #704 (Lou Bichard, Ona): a software factory is "the commitment to incrementally moving the human out of the loop within the SDLC." The limit is from #1377 (Jediah Katz, SpaceX/xAI): many agents coordinating across the full lifecycle is "far from a solved vision."
 
-This reframes the book's destination. The lifecycle stages are the argument; **the factory is where the argument is heading**, and whether it arrives is contested by named practitioners who disagree on stage. That is a far stronger spine than comparing five vendor tools the corpus has never heard of.
+SDD tools appear as instruments, at the stage where each fits. They are not the spine.
+
+## Evidence
+
+Two kinds of count exist, and neither stands in for the other.
+
+| term | talks, transcript full text (author's tree, 2026-11-15) | talks, note title or summary (classification pass) |
+|---|---|---|
+| `SDLC` / `PDLC` family | 62 | 7 |
+| `software factory` / `dark factory` | 35 | 10 |
+| `spec-driven` | 13 | 5 |
+| `superpowers` | 20 | — |
+| `OpenSpec` | 2 (both passing mentions) | — |
+| `Spec Kit` / `speckit` / `spec-kit` | 0 | — |
+| Elephant-Goldfish | 0 | — |
+
+The note-derived counts, the per-chapter shortlists and the commands that reproduce them are in `research_passes/2026-11-16-book3-corpus-classification.md`. It assigns 133 talks across the 12 chapters (`99_Meta/third-book-classification.json`).
+
+So the lifecycle and the factory are anchored, and a five-way tool comparison is not. Three of the five systems have no corpus talk with more than a passing mention. The Lab has never run Spec Kit, OpenSpec or Elephant-Goldfish as a method for building the book. This review's own reports in `docs/egm-review/` are EGM output about this spec, not evidence for the book. Chapter 6 does not cite them.
+
+The Lab has measured two systems against a control. The bake-off (`research_passes/2026-11-16-sdd-bakeoff-results.md`, `research_passes/2026-11-16-sdd-bakeoff-round2-results.md`) ran each of two changes under a control arm, Pocock's skills and superpowers. On the larger change, superpowers wrote a design doc and a plan and cost +30% tokens and +50% wall time over the Pocock arm for an identical scorecard. Limits: n = 2, both changes were repairs with a known right answer, and the three unrun systems are not judged.
+
+Tool positions, **as of 2026-11, from secondary sources; verify before prose (open item 2):**
+
+| System | Position on how much ceremony a change needs |
+|---|---|
+| **GitHub Spec Kit** (reported 1.0.0, 2026-08-21) | Heavy and phase-gated. The specification is treated as executable. |
+| **OpenSpec** (reported Thoughtworks Radar "Trial", 2026-11) | Light and delta-based: `propose → apply → archive` against a persistent spec. Brownfield-first. |
+| **Elephant-Goldfish (EGM)** (reported Google, Apache 2.0; launch date given as 2026-10-22 and 2026-11-08) | The spec is not the problem; review is. One agent drafts with full context; reviewers with no context check it. |
+| **superpowers** (installed plugin; run in the Lab) | A gated pipeline: brainstorm → design doc → plan → TDD, with a stop before any code. |
+| **Matt Pocock's skills** (installed; run in the Lab bake-off) | No pipeline. Single-purpose tools (grilling, domain-modeling, codebase-design) used when a situation needs one. |
+
+## Anchoring decisions
+
+| # | Question | Decision | Rejected, and why |
+|---|---|---|---|
+| Q1 | Structure | **Lifecycle stages, Lab incidents as worked examples, tools discussed at the stage where each fits** | A chapter per tool: the tools changed three times inside one research window, so per-tool chapters date first. A field guide: the anti-goal. |
+| Q2 | Audience | **The practitioner and small-team lead.** DX and McKinsey enterprise data are evidence, not the target reader. | An enterprise reader: enterprise rollout is a non-goal and a different book. Proposed by the builder; see D2. |
+| Q3 | Evidence base | **Corpus anchors, plus captured repo artifacts** (ADR-0003) | Corpus only: the Lab's incidents are the book's strongest evidence for Claim 3 and fit no talk. |
+| Q4 | What makes it different | **Every claim cites a corpus talk or a captured repo artifact, and a gate checks the citation** | Vendor documentation and opinion pieces as the base: the material reviewed for this spec carries no evidence of its own. |
+| Q5 | Repo location | **Third manuscript track in the same repo**, as book 2 did | A sibling repo: it would copy CI, claims and website infrastructure for the same Lab. |
+| Q6 | Visual identity | **Slate `#475569` → orange `#c2410c`** | Book 1 is blue→green, book 2 teal→rose. The diagram pass must check orange against the reserved amber (transient) and red (naive) slots. |
 
 ## The argument
 
 Three claims the book has to earn, in order:
 
-1. **The bottleneck moved, and the lifecycle did not.** Cheap generation relocates the constraint to specification, review, and release. Most teams added an agent to a process designed for the old constraint.
-2. **Writing it down is not the hard part; agreeing is.** Every tool in the table above can produce a specification. None of them can tell you whether the thing specified is the right thing, and the ones that feel most rigorous are the easiest to satisfy without thinking.
-3. **Verification has to be independent of the author, and usually isn't.** This is EGM's insight generalized: a reviewer who shares the author's context shares the author's blind spots — whether that reviewer is a subagent, a colleague, or a CI gate the author also wrote.
+1. **The bottleneck moved, and the lifecycle did not.** Cheap generation moves the constraint to specification, review and release. The corpus talks in Ch 1 have to show that teams added agents to a process built for the old constraint.
+2. **Writing it down is not the hard part; agreeing is.** Every system above can produce a specification. None can tell you whether the thing specified is the right thing.
+3. **Verification has to be independent of the author.** A reviewer who shares the author's context shares the author's blind spots, whether that reviewer is a subagent, a colleague or a CI gate the author also wrote. The Lab's own gate incidents (Worked examples) carry this claim. EGM's fresh-context reviewers are one example of the idea, cited once open item 2 verifies them.
 
-Claim 3 is where the Lab's own scars do the most work, and where this book diverges hardest from the vendor literature.
+## Structure
 
-## Structure (draft — titles are placeholders)
+All twelve chapters are drafted in `public/drafting-3/` (1,083–2,098 words each, 2026-11-23).
 
-**Framing**
+### Framing
 - Ch 1 — The bottleneck moved. Why "code generation was never the bottleneck" reframes the whole lifecycle.
 
-**Part I — Deciding and writing it down**
+### Part I — Deciding and writing it down
 - Ch 2 — Intent before specification. What has to be settled before any document helps; grilling and brainstorming as instruments.
-- Ch 3 — What a specification is for. Executable (Spec Kit) vs reference (OpenSpec); the honest cost of keeping one current.
+- Ch 3 — What a specification is for. Executable vs reference specs, and the cost of keeping one current.
 - Ch 4 — Decomposition and the plan. Interfaces, task sizing, and what a plan must carry that a spec cannot.
 
-**Part II — Building and checking**
+### Part II — Building and checking
 - Ch 5 — Execution under a spec. TDD, worktrees, parallel agents, and what goes wrong at each.
-- Ch 6 — The independence problem. EGM's Goldfish, fresh-context review, and why self-review fails quietly.
+- Ch 6 — The independence problem. Fresh-context review, and why self-review fails without anyone noticing.
 - Ch 7 — Gates that can actually fail. CI as the last independent reviewer; negative controls; vacuous passes.
 
-**Part III — Living with it**
+### Part III — Living with it
 - Ch 8 — Shipping, and the gap between merged and live.
-- Ch 9 — Brownfield and spec rot. Retrofitting specs; what to delete; when the spec becomes a lie.
-- Ch 10 — The review wall. Why humans cannot keep up with AI-written code, and what merging 30,000 changes a day actually requires. (#1428, #1432, #1195)
+- Ch 9 — Brownfield and spec rot. Retrofitting specs; what to delete; when the spec stops being true.
+- Ch 10 — The review wall. Why humans cannot keep up with AI-written code, and what merging 30,000 changes a day requires (#1428, #1432, #1195).
 
-**Part IV — The factory**
-- Ch 11 — The factory and its discontents. The destination the whole lifecycle implies: "incrementally moving the human out of the loop within the SDLC" (#704). The how-to talks, the rebuttal (#1206), the failure post-mortem (#923), and the staged debate (#855) argued against each other rather than summarised.
-- Ch 12 — How much process, and how far out of the loop. Where the five systems disagree, how to choose per team and per change, and the honest state of the factory vision — "far from a solved vision" (#1377).
+### Part IV — The factory
+- Ch 11 — The factory and its discontents. The how-to talks, the rebuttal (#1206), the post-mortem (#923) and the staged debate (#855), argued against each other.
+- Ch 12 — How much process, and how far out of the loop. The Lab's bake-off evidence on what added process costs and buys; how to choose per change; the state of the factory vision (#1377). Ch 12 is the closer.
 
-Ch 12 doubles as the closer. Book 2's closing chapter was nearly left out by being deferred; this one is named from the start.
+## Worked examples
 
-## Worked examples already in hand
+Each incident is dated and belongs to a named chapter. "Reproducible" means a reader can see it from git history. "Preserved" means it rests on GitHub Actions logs, which expire after 90 days, so the decisive log lines are quoted in a capture file.
 
-These are real, dated, and reproducible from the repo's history. Each belongs to a named chapter.
+| Incident | Chapter | Shows | Evidence |
+|---|---|---|---|
+| `diagrams-check` printed "0 stale" on 190 of 190 runs while `stat` failed 256 times per run (BSD `stat` on a GNU runner) | 7 | A gate that cannot fail reports success | Preserved: `research_passes/2026-11-15-diagrams-gate-vacuous-pass-evidence.md` |
+| A withdrawn speaker's name stayed on a published figure for 57 days while that gate passed | 7 | What a vacuous gate costs | Reproducible: git only |
+| `stats-regen` published 1455 over a 1458-note corpus by rebasing a stale computation | 7, 8 | Two jobs raced, and the run with the right answer went red | Preserved: `research_passes/2026-11-16-book3-worked-example-capture.md` |
+| `GITHUB_TOKEN` pushes triggered no workflow: 0 of 30 bot commits deployed | 8 | Merged is not shipped | Preserved: same capture file |
+| A commit message that mentioned the skip-CI marker disabled every workflow on PR #86 | 8 | The skip match is a substring match, not a parse of intent | Preserved: same capture file |
+| Eight anchor checks that no workflow invokes, among them `check_truncated_negation.py` and `check_support_levels.py` (`docs/GATES.md`) | 6, 7 | A control no trigger fires checks nothing | Reproducible: workflow files |
+| Book 2's closing chapter rendered with no evidence panel (the per-chapter list of anchored claims) because the mapping lives in the ledger, not the prose | 9 | Spec and artifact drift apart without notice | Reproducible: git |
 
-| Incident | Chapter | What it demonstrates |
-|---|---|---|
-| `diagrams-check` reporting "0 stale" for months while erroring on every file (BSD `stat` on a GNU runner) | 7 | A gate that cannot fail is worse than no gate |
-| A withdrawn speaker's name live on a published figure for 57 days behind that green tick | 7 | What a vacuous gate costs in the real world |
-| `stats-regen` publishing 1455 against a 1458-note corpus by rebasing a stale computation | 7, 8 | Two jobs racing; the run holding the right answer went red |
-| `GITHUB_TOKEN` pushes triggering no workflow — 0 of 30 bot commits ever deployed | 8 | Merged is not shipped |
-| A commit message *mentioning* the skip-CI marker disabling every workflow on the PR | 8 | The tooling does not read for tone |
-| Tests written for both gates, run by nothing | 6, 7 | A control no trigger fires is a comment |
-| Book 2's closing chapter rendering with no evidence panel because the mapping lives in the ledger, not the prose | 9 | Spec and artifact drift apart silently |
-| 13 specs vs 10 plans vs 63 research passes | 3, 9 | What the Lab actually keeps current, versus what it writes once |
+Capture-file log lines expire about 2027-02-13; the quotes in the capture files do not depend on that date. The Lab also keeps 13 specs and 10 plans against 63 research passes (2026-11-15). Ch 3 and Ch 9 use that count, which is a count, not an incident.
 
-## Pipeline reuse
+## Pipeline, as built
 
-**Shared, unchanged:** corpus, corpus-sync, book-mash/mash-core engine, claims-ledger format, anchor verification gates, website reading components.
+**Shared with books 1 and 2:** the corpus and corpus sync, the book-mash/mash-core engine, Source Anchors and `verify_ledger.py`, the website reading components.
 
-**New, mirroring book 2's pattern exactly:** `public/drafting-3/` (source of truth), `website/src/content-3/`, `website/src/data/bookChaptersThree.ts`, `claims-3/Claims Ledger.md`, `book-mash-3.toml`, `/third-book` routes, `sync-third-book.mjs`.
+**New for book 3:**
+- `public/drafting-3/` (source of truth; its `README` has no extension, so book-mash does not count it as a chapter)
+- `book-mash-3.toml`, `website/scripts/sync-third-book.mjs`, `website/src/data/bookChaptersThree.ts`, the `/third-book` routes and the book 3 reader pages, with book 3 in `gen-sitemap.mjs`
+- `claims-3/Claims Ledger.md`, holding Source Anchors and **Artifact anchors**. ADR-0003 (accepted) defines the artifact anchor and its rejected alternatives. `scripts/verify_artifact_anchors.py` checks artifact anchors, and `scripts/check_claims_integrity.py --book 3` runs both verifiers.
 
-**Known traps from book 2, to avoid rather than rediscover:**
-- `public/drafting-3/README` must have **no extension**; book-mash globs `*.md` and will measure a `README.md` as a phantom chapter.
-- Ledger entries need `**Candidate chapters:**` populated or the chapter renders with no evidence panel.
-- Add book-3 routes to `gen-sitemap.mjs` at wiring time; book 2 shipped invisible to crawlers for months.
-- `llms.txt` / `llms-full.txt` cover book 1 only. Decide deliberately whether book 3 joins them.
+The per-book wiring copies book 2's pattern a third time. Consolidating the three copies is deferred to its own engineering ADR, because it would touch two live books.
 
-## Goals, non-goals, anti-goals
+**Gap: the ledger is empty.** `claims-3/Claims Ledger.md` says "No Claims are recorded yet", although all twelve chapters are drafted. `check_claims_integrity.py --book 3` prints "All anchors resolve" because it checks zero anchors. That is the vacuous pass Ch 7 argues against. Each entry, once written, needs `**Candidate chapters:**` filled in, or its chapter renders with no evidence panel. See open item 1.
 
-**Goals:** a practitioner can run the lifecycle described; every claim anchors to a corpus talk or a reproducible repo artifact; the five systems are compared on evidence rather than on preference.
+## Risks
 
-**Non-goals:** tool documentation; enterprise transformation and change management; a methodology to adopt wholesale; prediction about which tool wins.
+- **Tool churn.** The SDD tools changed three times inside one research window. Mitigation: the book names tools only where a stage needs an instrument, and dates every tool fact.
+- **Book 2 competes for the same time.** Book 2's depth pass (seven chapters under 3,000 words) has not started. Mitigation: open item 4.
+- **The repo's gates are inactive.** `docs/GATES.md` reports eleven anchor-gate steps that skip because `CORPUS_TOKEN` does not exist, while the job reports success. That is the failure Ch 7 argues against. See D3.
+- **Overlap with book 1.** The classification pass states a boundary per chapter against book 1. Ch 4 is closest (book 1 ch 3) and the thinnest chapter; Ch 6 overlaps book 1 ch 4; Ch 1 reuses Reock (#1216), already cited in book 1 ch 9.
+- **Author position.** The author uses superpowers daily, and this spec lives in `docs/superpowers/specs/`. Ch 1 discloses it, because Ch 12 reports the Lab's bake-off, in which superpowers is one arm.
 
-**Anti-goals** (would make it a failure even if finished): becoming a field guide that dates in a quarter; advocating ceremony for its own sake; a book whose own repo does not follow the practice it recommends.
+## Decisions still open
 
-## Decisions the author must make
+**D1 — Narrow the tool comparison (author yes/no).** The drafts already do this: Ch 12 argues from the Lab's two bake-off runs and names no vendor tool. Recorded here as the builder's proposal. If the author says no, the alternatives are a bake-off of the three unrun systems or a third anchor class (vendor docs and repositories), which needs a ledger schema change and an ADR.
 
-These came out of the builder review. Each changes what gets written, and none can be settled by the builder.
+**D2 — Confirm the audience.** Q2 is the builder's proposal. The answer decides whether DX's and McKinsey's enterprise data are evidence or the frame for Ch 1, and whether Ch 12's "per change" means a two-person team or a division.
 
-**D1 — What counts as evidence for the tool comparison?** The spec originally made the five-way disagreement the spine, and the corpus cannot support it (see the reality check above).
+**D3 — The inactive gates.** Proposal: capture the inactive-gate state now as dated evidence, the way the diagrams-check capture did. Then Ch 7 can use it as its specimen. Arming the gates becomes a condition for publication, not for drafting: before book 3 ships, the author creates the `CORPUS_TOKEN` PAT, the gates run, and a negative control shows they can fail. Ch 7 then gets a before-and-after.
 
-*The factory finding changes the recommendation.* The spine should be the **factory question**, which 35 corpus talks argue about by name — including a rebuttal, a failure post-mortem and a staged debate — with the five tools demoted to instruments discussed where each fits a stage. That makes D1 a smaller decision, because the book no longer rests on it. It still has to be answered for Ch 12, which does compare the five. Three ways out, in descending cost:
+**D4 — The approval step.** The book 3 infrastructure and all twelve drafts were built while v0.1 said "awaiting author approval". The anti-goals forbid a repo that does not follow its own practice. The author decides whether Ch 2 or Ch 4 uses this as a worked example, or whether it is a defect to fix in the process.
 
-- *Run a bake-off.* Put one real change through all five systems in the Lab and measure. Strongest version of the Q4 bet, hardest to fake, and a build-and-measure workstream this spec does not budget for.
-- *Admit a third anchor class* — vendor repositories, docs, Thoughtworks Radar — as citable alongside corpus talks and repo artifacts. Needs a ledger schema change and probably an ADR.
-- *Narrow it.* Argue only the two systems the Lab actually runs, and treat the other three as reported positions rather than compared ones. Smaller, more honest book.
+## Open items
 
-**D2 — Confirm the audience.** Q2 records the practitioner/small-team reading as the model's call, not the author's. It decides whether DX's 400-organization data and McKinsey's panels are evidence or spine, Ch 1's voice, and whether Ch 10's "per team and per change" means two people or a division. The two headline sources are enterprise-research sources while enterprise rollout is a stated non-goal — that seam needs the author's word.
-
-**D3 — Are the dormant gates a precondition or the specimen?** `docs/GATES.md` opens with "CI is green and checks nothing": eleven anchor-gate steps skip because `CORPUS_TOKEN` does not exist, and the job still reports success. Ch 7 is "Gates that can actually fail", and the anti-goals forbid a book whose own repo does not follow the practice it recommends. Either the gates get armed before Ch 7 drafts — which makes a PAT only the author can create a blocking dependency — or the dormant gates become Ch 7's live specimen and the book accepts its own repo as the cautionary example. Both defensible; they order the work differently and change what Ch 7 argues.
-
-## Settled by the builder (recorded, not asked)
-
-**S1 — Repo artifacts need an anchor type that does not exist yet.** The spec listed the claims-ledger format as "shared, unchanged", but that format anchors a claim to a video id, a timestamp, a verbatim quote and a confidence level, and `verify_ledger.py` resolves quotes against transcripts. All eight worked examples are repo incidents — a commit SHA, a workflow run id, a file path, a date range. None fits.
-
-*Decision:* `claims-3` extends the format with an **artifact anchor** — `{kind, ref, date, excerpt}` where `kind` is one of `commit`, `run`, `file`, `range`, and `ref` is a SHA, a run id, or a path. Corpus anchors keep the existing shape unchanged, so `verify_ledger.py` continues to work on them untouched; a sibling verifier resolves artifact anchors against git and the captured evidence files. This is the model's call and is recorded here so the ledger is not built twice. It needs an ADR before `claims-3` is created.
-
-**S2 — Evidence capture was urgent and is done.** GitHub expires Actions logs after 90 days. Measured on 2026-11-15: **93 of the 190 `diagrams-check` runs had already lost their logs**, and the survivors expire daily. The evidence behind Ch 7's headline example is captured in `research_passes/2026-11-15-diagrams-gate-vacuous-pass-evidence.md` — 190 runs, 190 successes, 256 `stat` errors per run against `check complete: 0 stale, 0 missing-source`. Remaining capture for the other incidents belongs at the front of the implementation plan, not the middle.
-
-**S3 — Disclose the author's position.** The author uses superpowers daily; this spec sits in `docs/superpowers/specs/`. A declared-user stance and a neutral-comparator stance read very differently in Ch 10. Ch 1 discloses it.
-
-**S4 — Chapter length target.** Book 2's chapters run 1,540–2,912 words and this spec already calls that a defect needing a depth pass. Eleven chapters at book-2 length would be a short book. Target **3,500–4,500 words** per chapter; the classification pass tests whether the material supports it.
-
-## Open items for the implementation plan
-
-1. **Corpus classification pass.** 62 keyword hits on SDLC/PDLC is a seed, not a shortlist. Needs the hand-curation book 2's spec also required, producing per-chapter talk lists.
-2. **Overlap audit against book 1.** Chapters 2, 3, 4 and 9 of book 1 already cover taste, harnesses and specs, evals, and the AI-native organization. Each book-3 chapter needs a stated seam, as book 2's ledger does for its reprises.
-3. **Primary sources.** Claims about Spec Kit, OpenSpec and EGM currently rest on secondary coverage; EGM's launch date is reported inconsistently (2026-10-22 vs 2026-11-08). Verify against the repositories before any of it reaches prose.
-4. **Title.** Placeholder only.
-5. **Sequencing against book 2.** Book 2's depth pass (seven chapters under 3,000 words) is unstarted. Decide whether it precedes book 3's drafting.
+1. **Populate `claims-3`.** Record the drafts' claims with Source or Artifact anchors, and make the book 3 integrity check fail when the ledger holds zero claims. Until then the Goals line "every claim cites a corpus talk or a captured repo artifact" is not met.
+2. **Primary sources.** Claims about Spec Kit, OpenSpec and EGM rest on secondary coverage, and EGM's launch date is reported two ways (2026-10-22, 2026-11-08). Verify against the repositories before any of it reaches prose.
+3. **Chapter length.** Drafts run 1,083–2,098 words. Set a target per chapter from its classification shortlist, not one target for all. Folding Ch 12's comparison into Ch 11 is an option if D1 stands.
+4. **Sequencing against book 2.** Decide whether book 2's depth pass comes before book 3's depth pass. One classification pass can tag talks for both books' gaps.
+5. **`llms.txt` / `llms-full.txt`.** They cover book 1 only. Decide whether books 2 and 3 join them.
+6. **`CORPUS_TOKEN`.** The PAT D3 needs. The author owns it; decide its scope and rotation when creating it.
+7. **Title.** Placeholder only.
