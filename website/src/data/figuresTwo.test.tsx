@@ -23,7 +23,7 @@ const headingsOf = (chapter: string): string[] => {
   const md = readFileSync(resolve(website, `src/content-2/chapter-${chapter}.md`), 'utf8');
   return md
     .split('\n')
-    .filter((l) => l.startsWith('## '))
+    .filter((l) => /^#{2,3} /.test(l))
     .map(normaliseHeading);
 };
 

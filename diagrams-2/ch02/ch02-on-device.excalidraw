@@ -1,0 +1,323 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 2 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "From a round trip to a local call",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "For a growing class of models, the cheapest data center is the one already in your pocket.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "cloud_h",
+   "x": 80,
+   "y": 210,
+   "text": "CLOUD",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "rectangle",
+   "id": "app1",
+   "x": 80,
+   "y": 245,
+   "width": 180,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "your app",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "net",
+   "x": 340,
+   "y": 245,
+   "width": 180,
+   "height": 80,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the network",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "dc",
+   "x": 600,
+   "y": 245,
+   "width": 200,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "data center",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "c1",
+   "x": 260,
+   "y": 285,
+   "width": 80,
+   "height": 0,
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "app1"
+   },
+   "end": {
+    "id": "net"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "c2",
+   "x": 520,
+   "y": 285,
+   "width": 80,
+   "height": 0,
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "net"
+   },
+   "end": {
+    "id": "dc"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cloud_n",
+   "x": 860,
+   "y": 250,
+   "text": "pay a subscription every month\nfails when the network does",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "text",
+   "id": "dev_h",
+   "x": 80,
+   "y": 380,
+   "text": "ON DEVICE",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "phone",
+   "x": 80,
+   "y": 415,
+   "width": 720,
+   "height": 110,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "app2",
+   "x": 110,
+   "y": 440,
+   "width": 180,
+   "height": 60,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "your app",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "model",
+   "x": 380,
+   "y": 440,
+   "width": 390,
+   "height": 60,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "open model + local runtime",
+    "fontSize": 17,
+    "fontFamily": 3,
+    "strokeColor": "#5eead4"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "d1",
+   "x": 290,
+   "y": 470,
+   "width": 90,
+   "height": 0,
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "app2"
+   },
+   "end": {
+    "id": "model"
+   }
+  },
+  {
+   "type": "text",
+   "id": "dev_n",
+   "x": 860,
+   "y": 440,
+   "text": "pay your energy bill\nworks offline, data stays on the device",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 570,
+   "width": 1260,
+   "height": 110,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 582,
+   "text": "the runtimes the talks show",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 610,
+   "text": "iPhone + MLX          a capable open model \"at 40 tokens per second\"\nLlamafile             \"a single file executable that runs without any installation\"\nFoundry Local (ONNX)  local AI across platforms, no network needed",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 710,
+   "text": "Sources: #007 Adrien Grondin (Locally AI) \u00b7 #670 Prince Canuma (Neywa Labs) \u00b7 #582 Stephen Hood & Justine Tunney (Llamafile) \u00b7 #307 Emma Ning (Microsoft)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

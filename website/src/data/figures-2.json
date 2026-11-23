@@ -7,7 +7,14 @@
       "kind": "opener",
       "title": "Training and the Turn to RL — the argument",
       "file": "ch01/ch01-opener.png",
-      "claimIds": ["claims#1", "claims#2", "claims#3", "claims#4", "claims#5", "claims#6"],
+      "claimIds": [
+        "claims#1",
+        "claims#2",
+        "claims#3",
+        "claims#4",
+        "claims#5",
+        "claims#6"
+      ],
       "sources": [
         "#271 — Will Brown, Prime Intellect",
         "#80 — Will Hang & Cathy Zhou, OpenAI",
@@ -30,8 +37,13 @@
       "title": "Reasoning and agency are one training loop",
       "sectionHeading": "Reasoning and agency are the same training problem",
       "file": "ch01/ch01-reasoning-agency-one-loop.png",
-      "claimIds": ["claims#1"],
-      "sources": ["#271 — Will Brown, Prime Intellect", "#80 — Will Hang & Cathy Zhou, OpenAI"],
+      "claimIds": [
+        "claims#1"
+      ],
+      "sources": [
+        "#271 — Will Brown, Prime Intellect",
+        "#80 — Will Hang & Cathy Zhou, OpenAI"
+      ],
       "reviewed": false
     },
     {
@@ -41,8 +53,100 @@
       "title": "How reinforcement learning carries a model into production",
       "sectionHeading": "Reinforcement learning is what carries a model into production",
       "file": "ch01/ch01-rl-production-loop.png",
-      "claimIds": ["claims#2", "claims#3"],
-      "sources": ["#674 — Alessandro Cappelli, Adaptive ML", "#251 — Aakanksha Chowdhery, Reflection.ai"],
+      "claimIds": [
+        "claims#2",
+        "claims#3"
+      ],
+      "sources": [
+        "#674 — Alessandro Cappelli, Adaptive ML",
+        "#251 — Aakanksha Chowdhery, Reflection.ai"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch02-opener",
+      "chapter": "02",
+      "kind": "opener",
+      "title": "Inference Economics — the argument",
+      "file": "ch02/ch02-opener.png",
+      "claimIds": [
+        "claims#7",
+        "claims#8",
+        "claims#9",
+        "claims#10",
+        "claims#11",
+        "claims#12"
+      ],
+      "sources": [
+        "#335 — Alex Atallah, OpenRouter",
+        "#141 — Kyle Kranen, NVIDIA",
+        "#514 — Mark Moyou, NVIDIA",
+        "#548 — Dmytro Dzhulgakov, Fireworks",
+        "#670 — Prince Canuma, Neywa Labs",
+        "#007 — Adrien Grondin, Locally AI",
+        "#582 — Stephen Hood & Justine Tunney, Llamafile",
+        "#307 — Emma Ning, Microsoft",
+        "#388 — Joe Fioti, Luminal",
+        "#068 — Natalie Serrino, Gimlet Labs",
+        "#097 — Yusuf Olokoba, Muna",
+        "#578 — Chris Lattner, Modular",
+        "#228 — Charles Frye, Modal",
+        "#402 — Paul Gilbert, Arista Networks",
+        "#345 — Dylan Patel, SemiAnalysis",
+        "#361 — Mike Bursell",
+        "#211 — Sahil Yadav & Hariharan Ganesan, Telemetrak"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch02-system-not-model",
+      "chapter": "02",
+      "kind": "inline",
+      "title": "Same weights, different system, different bill",
+      "sectionHeading": "Speed and cost are a system property, not a model property",
+      "file": "ch02/ch02-system-not-model.png",
+      "claimIds": [
+        "claims#8"
+      ],
+      "sources": [
+        "#141 — Kyle Kranen, NVIDIA",
+        "#514 — Mark Moyou, NVIDIA",
+        "#548 — Dmytro Dzhulgakov, Fireworks"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch02-kernels-by-search",
+      "chapter": "02",
+      "kind": "inline",
+      "title": "Fast kernels, found by search instead of written by hand",
+      "sectionHeading": "Compilers and generated kernels are automating the expert layer",
+      "file": "ch02/ch02-kernels-by-search.png",
+      "claimIds": [
+        "claims#10"
+      ],
+      "sources": [
+        "#388 — Joe Fioti, Luminal",
+        "#068 — Natalie Serrino, Gimlet Labs"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch02-on-device",
+      "chapter": "02",
+      "kind": "inline",
+      "title": "From a round trip to a local call",
+      "sectionHeading": "Inference is moving onto the device",
+      "file": "ch02/ch02-on-device.png",
+      "claimIds": [
+        "claims#9"
+      ],
+      "sources": [
+        "#670 — Prince Canuma, Neywa Labs",
+        "#007 — Adrien Grondin, Locally AI",
+        "#582 — Stephen Hood & Justine Tunney, Llamafile",
+        "#307 — Emma Ning, Microsoft"
+      ],
       "reviewed": false
     }
   ]
