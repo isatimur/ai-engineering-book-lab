@@ -1,0 +1,46 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 1 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "Reasoning and agency are one training loop", "fontSize": 34, "fontFamily": 2, "strokeColor": "#155e75" },
+    { "type": "line", "id": "sig_teal", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_rose", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "A long chain of steps, scored only on whether the final result was right.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "text", "id": "lane1", "x": 80, "y": 215, "text": "REASONING MODEL · the chain is internal", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "r0", "x": 80, "y": 250, "width": 150, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "question", "fontSize": 18, "fontFamily": 2, "strokeColor": "#134e4a" } },
+    { "type": "rectangle", "id": "r1", "x": 280, "y": 250, "width": 130, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": { "text": "think", "fontSize": 18, "fontFamily": 2, "strokeColor": "#475569" } },
+    { "type": "rectangle", "id": "r2", "x": 450, "y": 250, "width": 130, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": { "text": "think", "fontSize": 18, "fontFamily": 2, "strokeColor": "#475569" } },
+    { "type": "rectangle", "id": "r3", "x": 620, "y": 250, "width": 130, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": { "text": "think", "fontSize": 18, "fontFamily": 2, "strokeColor": "#475569" } },
+    { "type": "rectangle", "id": "r4", "x": 790, "y": 250, "width": 150, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "answer", "fontSize": 18, "fontFamily": 2, "strokeColor": "#134e4a" } },
+    { "type": "arrow", "id": "ra1", "x": 230, "y": 282, "width": 50, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "r0" }, "end": { "id": "r1" } },
+    { "type": "arrow", "id": "ra2", "x": 410, "y": 282, "width": 40, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "r1" }, "end": { "id": "r2" } },
+    { "type": "arrow", "id": "ra3", "x": 580, "y": 282, "width": 40, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "r2" }, "end": { "id": "r3" } },
+    { "type": "arrow", "id": "ra4", "x": 750, "y": 282, "width": 40, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "r3" }, "end": { "id": "r4" } },
+
+    { "type": "text", "id": "lane2", "x": 80, "y": 395, "text": "AGENT · the chain is external", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "g0", "x": 80, "y": 430, "width": 150, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "task", "fontSize": 18, "fontFamily": 2, "strokeColor": "#134e4a" } },
+    { "type": "rectangle", "id": "g1", "x": 280, "y": 430, "width": 130, "height": 64, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "call tool", "fontSize": 17, "fontFamily": 3, "strokeColor": "#5eead4" } },
+    { "type": "rectangle", "id": "g2", "x": 450, "y": 430, "width": 130, "height": 64, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "read result", "fontSize": 17, "fontFamily": 3, "strokeColor": "#5eead4" } },
+    { "type": "rectangle", "id": "g3", "x": 620, "y": 430, "width": 130, "height": 64, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "call tool", "fontSize": 17, "fontFamily": 3, "strokeColor": "#5eead4" } },
+    { "type": "rectangle", "id": "g4", "x": 790, "y": 430, "width": 150, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "task done", "fontSize": 18, "fontFamily": 2, "strokeColor": "#134e4a" } },
+    { "type": "arrow", "id": "ga1", "x": 230, "y": 462, "width": 50, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "g0" }, "end": { "id": "g1" } },
+    { "type": "arrow", "id": "ga2", "x": 410, "y": 462, "width": 40, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "g1" }, "end": { "id": "g2" } },
+    { "type": "arrow", "id": "ga3", "x": 580, "y": 462, "width": 40, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "g2" }, "end": { "id": "g3" } },
+    { "type": "arrow", "id": "ga4", "x": 750, "y": 462, "width": 40, "height": 0, "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0, "start": { "id": "g3" }, "end": { "id": "g4" } },
+
+    { "type": "ellipse", "id": "reward", "x": 1030, "y": 290, "width": 280, "height": 170, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": { "text": "One reward:\nwas the final\nresult correct?", "fontSize": 22, "fontFamily": 2, "strokeColor": "#0f766e" } },
+    { "type": "arrow", "id": "rr", "x": 940, "y": 282, "width": 110, "height": 60, "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0, "start": { "id": "r4" }, "end": { "id": "reward" } },
+    { "type": "arrow", "id": "gr", "x": 940, "y": 462, "width": 110, "height": -50, "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0, "start": { "id": "g4" }, "end": { "id": "reward" } },
+    { "type": "text", "id": "rl_note", "x": 1040, "y": 480, "text": "RL updates the whole chain,\nthinking and tool calls alike", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569" },
+
+    { "type": "line", "id": "quote_rule", "x": 80, "y": 580, "width": 0, "height": 70, "points": [[0, 0], [0, 70]], "strokeColor": "#cbd5e1", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "quote", "x": 100, "y": 580, "text": "\"The high level thesis of this talk is like no,\nthey're kind of the same thing.\"", "fontSize": 20, "fontFamily": 2, "strokeColor": "#475569" },
+    { "type": "text", "id": "quote_by", "x": 100, "y": 640, "text": "#271 Will Brown, Prime Intellect", "fontSize": 15, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "ellipse", "id": "claim", "x": 1010, "y": 570, "width": 320, "height": 90, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "One training problem.", "fontSize": 22, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "cite", "x": 80, "y": 700, "text": "Sources: #271 Will Brown (Prime Intellect) · #80 Will Hang & Cathy Zhou (OpenAI)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

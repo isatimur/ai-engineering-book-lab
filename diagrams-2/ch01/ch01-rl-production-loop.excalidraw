@@ -1,0 +1,400 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 1 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How reinforcement learning carries a model into production",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The production signal goes back into the weights, not into the prompt.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "ellipse",
+   "id": "hub",
+   "x": 300,
+   "y": 400,
+   "width": 300,
+   "height": 170,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Production data is\npart of the\ntraining loop",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s1",
+   "x": 340,
+   "y": 220,
+   "width": 220,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1  Policy model\n(the agent you ship)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s2",
+   "x": 660,
+   "y": 445,
+   "width": 220,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2  Acts in the world\n(a whole trajectory)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s3",
+   "x": 340,
+   "y": 670,
+   "width": 220,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3  Reward\n(was the result good?)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s4",
+   "x": 20,
+   "y": 445,
+   "width": 220,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "4  RL update\n(new weights)",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 560,
+   "y": 260,
+   "width": 200,
+   "height": 185,
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "s1"
+   },
+   "end": {
+    "id": "s2"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a23",
+   "x": 770,
+   "y": 525,
+   "width": -210,
+   "height": 185,
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "s2"
+   },
+   "end": {
+    "id": "s3"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a34",
+   "x": 340,
+   "y": 710,
+   "width": -210,
+   "height": -185,
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "s3"
+   },
+   "end": {
+    "id": "s4"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a41",
+   "x": 130,
+   "y": 445,
+   "width": 210,
+   "height": -185,
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "s4"
+   },
+   "end": {
+    "id": "s1"
+   }
+  },
+  {
+   "type": "text",
+   "id": "n12",
+   "x": 650,
+   "y": 300,
+   "text": "calls tools,\nreads results",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "text",
+   "id": "n34",
+   "x": 70,
+   "y": 620,
+   "text": "absorbs the signal\ncontinuously",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 960,
+   "y": 210,
+   "width": 400,
+   "height": 225,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 985,
+   "y": 225,
+   "text": "one trajectory = one training example",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 985,
+   "y": 262,
+   "text": "call  run_tests()\nread  3 failed\ncall  edit_file(\"parser.py\")\ncall  run_tests()\nread  all passed\n\nreward = 1.0",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "rectangle",
+   "id": "good",
+   "x": 960,
+   "y": 520,
+   "width": 190,
+   "height": 140,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Verifier reward\nunit tests, compiler\n\nhard to game",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "bad",
+   "x": 1170,
+   "y": 520,
+   "width": 190,
+   "height": 140,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Neural reward model\nanother network\n\ncan be gamed",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a_reward",
+   "x": 560,
+   "y": 710,
+   "width": 400,
+   "height": -110,
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 1,
+   "strokeStyle": "dashed",
+   "roughness": 0,
+   "start": {
+    "id": "s3"
+   },
+   "end": {
+    "id": "good"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 1010,
+   "y": 690,
+   "width": 300,
+   "height": 90,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Code grades itself.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "warn",
+   "x": 20,
+   "y": 800,
+   "width": 860,
+   "height": 70,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Without the loop: patch the system prompt. Fix one defect, add another, with no handle on the trade-off.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#a8412e"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 960,
+   "y": 810,
+   "text": "Sources: #674 Alessandro Cappelli (Adaptive ML)\n#251 Aakanksha Chowdhery (Reflection.ai)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

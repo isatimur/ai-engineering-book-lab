@@ -1,0 +1,49 @@
+{
+  "_doc": "Book 2 figure spec — the single source of truth for every Book 2 figure. Edit this file, then run `npm run prebuild` (or `node scripts/sync-second-book.mjs`) in website/ to copy it and the PNGs into the site. `website/src/data/figuresTwo.test.tsx` checks every entry: the PNG exists, the section heading exists in the chapter, each claim id is filed under the figure's chapter in evidence-2.json, and each source is an anchor label of one of those claims. Each .excalidraw file in chNN/ is the source; render it with `npx @excalidraw-skill-pack/render`, then resize to 2000px and quantise (see docs/superpowers/specs/2026-11-23-second-book-parity-design.md, Drawing).",
+  "figures": [
+    {
+      "id": "ch01-opener",
+      "chapter": "01",
+      "kind": "opener",
+      "title": "Training and the Turn to RL — the argument",
+      "file": "ch01/ch01-opener.png",
+      "claimIds": ["claims#1", "claims#2", "claims#3", "claims#4", "claims#5", "claims#6"],
+      "sources": [
+        "#271 — Will Brown, Prime Intellect",
+        "#80 — Will Hang & Cathy Zhou, OpenAI",
+        "#674 — Alessandro Cappelli, Adaptive ML",
+        "#251 — Aakanksha Chowdhery, Reflection.ai",
+        "#482 — Kyle Corbitt",
+        "#598 — Abi Aryan",
+        "#233 — Ryan Marten, Bespoke Labs",
+        "#543 — Chang She & Noah Shpak",
+        "#397 — Sylendran Arunagiri, NVIDIA",
+        "#475 — Crusoe",
+        "#230 — Daniel Han"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch01-reasoning-agency-one-loop",
+      "chapter": "01",
+      "kind": "inline",
+      "title": "Reasoning and agency are one training loop",
+      "sectionHeading": "Reasoning and agency are the same training problem",
+      "file": "ch01/ch01-reasoning-agency-one-loop.png",
+      "claimIds": ["claims#1"],
+      "sources": ["#271 — Will Brown, Prime Intellect", "#80 — Will Hang & Cathy Zhou, OpenAI"],
+      "reviewed": false
+    },
+    {
+      "id": "ch01-rl-production-loop",
+      "chapter": "01",
+      "kind": "inline",
+      "title": "How reinforcement learning carries a model into production",
+      "sectionHeading": "Reinforcement learning is what carries a model into production",
+      "file": "ch01/ch01-rl-production-loop.png",
+      "claimIds": ["claims#2", "claims#3"],
+      "sources": ["#674 — Alessandro Cappelli, Adaptive ML", "#251 — Aakanksha Chowdhery, Reflection.ai"],
+      "reviewed": false
+    }
+  ]
+}
