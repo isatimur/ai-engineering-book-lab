@@ -16,11 +16,11 @@ Across the full 1482-video corpus, four things stand out most clearly:
 
 ## Evidence by layer
 
-- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 848, `Coding Agents`: 958).
-- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 850).
-- **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 243).
-- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 180, `RAG & Retrieval`: 172).
-- **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 26, `Voice & Realtime`: 54).
+- **Agent architecture + coding systems** dominate the corpus (`Agent Architecture`: 848, `Coding Agents`: 932).
+- **Reliability and evals** are now too large to be a chapter footnote (`Evals & Reliability`: 868).
+- **Org design and leadership** remains a major recurring signal (`Org Design & Leadership`: 219).
+- **Runtime/tooling/context infrastructure** is substantial and growing (`MCP & Tooling`: 188, `RAG & Retrieval`: 166).
+- **Security/guardrails** and **voice/realtime** are narrower, but strategically important edge-pressure topics (`Security & Guardrails`: 34, `Voice & Realtime`: 56).
 
 ## Best current thesis
 

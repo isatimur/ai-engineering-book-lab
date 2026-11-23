@@ -6,15 +6,15 @@
 ## Theme counts
 
 - Agent Architecture: 848
-- Coding Agents: 958
-- Evals & Reliability: 850
+- Coding Agents: 932
+- Evals & Reliability: 868
 - General AI Engineering: 5
-- MCP & Tooling: 180
-- Models & Inference: 134
-- Org Design & Leadership: 243
-- RAG & Retrieval: 172
-- Security & Guardrails: 26
-- Voice & Realtime: 54
+- MCP & Tooling: 188
+- Models & Inference: 138
+- Org Design & Leadership: 219
+- RAG & Retrieval: 166
+- Security & Guardrails: 34
+- Voice & Realtime: 56
 
 ## Frequent speakers
 
