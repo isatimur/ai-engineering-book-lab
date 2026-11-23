@@ -197,7 +197,7 @@ for kind in SEVERITY:
     print()
 
 if marked:
-    print("--- already marked superseded")
+    print("--- already reviewed (Superseded, Newer edition, Prescription superseded or Currency checked)")
     for e, k, t, *_ in marked:
         print(f"  {e:<11} [{k}] {t[:96]}")
 
