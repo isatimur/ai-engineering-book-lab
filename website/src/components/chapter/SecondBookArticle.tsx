@@ -20,7 +20,8 @@ import { type FigureTwo, figureTwoSrc, normaliseHeading, stripWikilinks } from '
 // `[[id-slug|Label]]` syntax book 2's source-anchoring pass still uses down to
 // its label. Presentation-only: it does not touch the synced content files.
 //
-// `figures` (book 2 only) places each inline figure after the `## ` heading
+// `figures` (book 2 only) places each inline figure after the `## ` or `### `
+// heading (chapters 2 and 6 nest sections under "Movement" headings)
 // whose normalised text equals its `sectionHeading`. Book 3 passes none.
 export const SecondBookArticle = ({
   chapter,
@@ -53,7 +54,7 @@ export const SecondBookArticle = ({
         <span>{chapter.status}</span>
       </div>
       {blocks.map((block, index) => {
-        const heading = block.startsWith('## ') ? normaliseHeading(block) : null;
+        const heading = /^#{2,3} /.test(block) ? normaliseHeading(block) : null;
         const fig = heading ? figures.find((f) => f.sectionHeading === heading) : undefined;
         if (fig) figureCount += 1;
         return (

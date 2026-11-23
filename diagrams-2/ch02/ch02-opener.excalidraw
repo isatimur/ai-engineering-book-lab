@@ -1,0 +1,255 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 2 \u00b7 THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Inference Economics",
+   "fontSize": 36,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 124,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 124,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 140,
+   "text": "Training is paid once. Inference is paid on every request, for as long as the product lives.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "token",
+   "x": 80,
+   "y": 200,
+   "width": 1320,
+   "height": 60,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The served token: \"Inference might be the largest market ever in software.\"  #335 Alex Atallah, OpenRouter",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "a_head",
+   "x": 80,
+   "y": 290,
+   "text": "MOVEMENT A \u00b7 SERVING PERFORMANCE \u00b7 the frontier you can push",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "a1",
+   "x": 80,
+   "y": 320,
+   "width": 425,
+   "height": 110,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Speed and cost are a system\nproperty, not a model property\nclaims#8",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "a2",
+   "x": 527,
+   "y": 320,
+   "width": 425,
+   "height": 110,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Compilers and generated kernels\nautomate the expert layer\nclaims#10",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "a3",
+   "x": 975,
+   "y": 320,
+   "width": 425,
+   "height": 110,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "On-device inference is\ncrossing from demo to default\nclaims#9",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "push_up",
+   "x": 740,
+   "y": 540,
+   "width": 0,
+   "height": -100,
+   "strokeColor": "#a8412e",
+   "strokeWidth": 3,
+   "roughness": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     -100
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "id": "push_note",
+   "x": 760,
+   "y": 478,
+   "text": "the ceiling pushes back",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "text",
+   "id": "b_head",
+   "x": 80,
+   "y": 555,
+   "text": "MOVEMENT B \u00b7 THE COMPUTE SUBSTRATE \u00b7 the floor you cannot move",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "rectangle",
+   "id": "b1",
+   "x": 80,
+   "y": 585,
+   "width": 650,
+   "height": 110,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The substrate is a hard constraint,\nand now a geopolitical variable\nclaims#11",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b2",
+   "x": 750,
+   "y": 585,
+   "width": 650,
+   "height": 110,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Trust and confidentiality become\nfirst-class inference requirements\nclaims#12",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 725,
+   "text": "Every box is one claim in claims-2/Claims Ledger.md (#7\u2013#12), anchored to a timestamped quote in the talk it cites.",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

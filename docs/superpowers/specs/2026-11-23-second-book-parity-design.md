@@ -72,7 +72,7 @@ All paths are relative to the repo root.
 | `chapter` | `"01"`…`"08"`, the same as `chaptersTwo[].number` |
 | `kind` | `opener` (one per chapter at most) or `inline` |
 | `title` | Caption and alt text |
-| `sectionHeading` | Inline only: the `##` heading text the figure follows, after `normaliseHeading()` |
+| `sectionHeading` | Inline only: the `##` or `###` heading text the figure follows, after `normaliseHeading()` |
 | `file` | The PNG path under `diagrams-2/` |
 | `claimIds` | `claims#N` ids. Each must be filed under this chapter in `evidence-2.json`, whose keys are `"1"`…`"8"` |
 | `sources` | Talk anchor labels, e.g. `#674 — Alessandro Cappelli, Adaptive ML`. Each must anchor one of `claimIds` |
@@ -100,7 +100,7 @@ It throws if a listed PNG is missing. Like the chapter sync, it skips when `diag
 ### Page
 
 - **Lookups:** `website/src/data/figuresTwo.ts` provides `openerTwo(chapter)`, `inlineFiguresTwo(chapter)`, `figureTwoSrc(fig)` and `normaliseHeading()`, which strips wikilinks, `#` marks and extra spaces. `stripWikilinks` moved there from `SecondBookArticle`, so the renderer and the test normalise headings the same way.
-- **Inline figures:** `SecondBookArticle` takes an optional `figures` prop. After each `##` block whose normalised text equals a figure's `sectionHeading`, it renders `<InlineIllustration alwaysVisible>` labelled `Figure <chapter>.<n>`. It uses a `Fragment`, so the article markup is unchanged when there are no figures (Book 3).
+- **Inline figures:** `SecondBookArticle` takes an optional `figures` prop. After each `##` or `###` block whose normalised text equals a figure's `sectionHeading`, it renders `<InlineIllustration alwaysVisible>` labelled `Figure <chapter>.<n>`. It uses a `Fragment`, so the article markup is unchanged when there are no figures (Book 3).
 - **Opener and zoom:** `SecondBookChapterDetail` wraps the page in `LightboxProvider`, so a click opens the zoom view. It shows the opener above the article, the same way Book 1's `EvidenceExhibit` does.
 - **No sticky stage:** Book 2 has no sticky figure stage, so its inline figures show at every width.
 
@@ -112,7 +112,7 @@ It throws if a listed PNG is missing. Like the chapter sync, it skips when `diag
 2. `figures-2.json` equals `diagrams-2/figures.json` when the source is present.
 3. Every PNG exists in `website/public/diagrams-2/`.
 4. There is at most one opener per chapter, and openers have no `sectionHeading`.
-5. Every inline `sectionHeading` is a normalised `##` heading of its chapter in `src/content-2/`.
+5. Every inline `sectionHeading` is a normalised `##` or `###` heading of its chapter in `src/content-2/`.
 6. Every claim id is filed under the figure's chapter.
 7. Every source is an anchor label of one of those claims.
 8. **Rendered page:** for every Book 2 chapter, `renderToString` of `SecondBookChapterDetail` produces exactly that chapter's figures, and every site-served `<img>` starts with `/diagrams-2/`. The only other images are YouTube thumbnails from the evidence rail. `<Seo>` is stubbed, because it needs the SSG Helmet provider.

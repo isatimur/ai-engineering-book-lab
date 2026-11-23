@@ -1,0 +1,373 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 \u00b7 CHAPTER 2 \u00b7 HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Same weights, different system, different bill",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Latency and cost are not printed on the checkpoint. The deployment sets them.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "weights",
+   "x": 80,
+   "y": 330,
+   "width": 200,
+   "height": 110,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "one checkpoint\n(the same weights)",
+    "fontSize": 17,
+    "fontFamily": 3,
+    "strokeColor": "#5eead4"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "naive",
+   "x": 360,
+   "y": 220,
+   "width": 300,
+   "height": 110,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Naive path\nwrap it in a simple server,\nship it",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "eng",
+   "x": 360,
+   "y": 440,
+   "width": 300,
+   "height": 110,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Engineered system\nbuilt for the constraints\nthis deployment has",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "w_n",
+   "x": 280,
+   "y": 360,
+   "width": 80,
+   "height": -85,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "weights"
+   },
+   "end": {
+    "id": "naive"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "w_e",
+   "x": 280,
+   "y": 410,
+   "width": 80,
+   "height": 85,
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "start": {
+    "id": "weights"
+   },
+   "end": {
+    "id": "eng"
+   }
+  },
+  {
+   "type": "line",
+   "id": "y_axis",
+   "x": 780,
+   "y": 200,
+   "width": 0,
+   "height": 380,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     380
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "x_axis",
+   "x": 780,
+   "y": 580,
+   "width": 560,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     560,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "y_label",
+   "x": 700,
+   "y": 190,
+   "text": "cost per\nrequest",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "text",
+   "id": "x_label",
+   "x": 1220,
+   "y": 592,
+   "text": "latency",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "line",
+   "id": "frontier",
+   "x": 820,
+   "y": 240,
+   "width": 480,
+   "height": 300,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     150
+    ],
+    [
+     140,
+     240
+    ],
+    [
+     300,
+     285
+    ],
+    [
+     480,
+     300
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "frontier_label",
+   "x": 1110,
+   "y": 470,
+   "text": "the Pareto frontier\n(latency \u00b7 cost \u00b7 quality)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "ellipse",
+   "id": "p_naive",
+   "x": 1150,
+   "y": 250,
+   "width": 26,
+   "height": 26,
+   "backgroundColor": "#a8412e",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "p_naive_l",
+   "x": 1186,
+   "y": 250,
+   "text": "naive",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "ellipse",
+   "id": "p_eng",
+   "x": 948,
+   "y": 467,
+   "width": 26,
+   "height": 26,
+   "backgroundColor": "#0f766e",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "p_eng_l",
+   "x": 850,
+   "y": 500,
+   "text": "engineered",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "arrow",
+   "id": "move",
+   "x": 1150,
+   "y": 275,
+   "width": -180,
+   "height": 190,
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "move_l",
+   "x": 1000,
+   "y": 330,
+   "text": "an order of\nmagnitude",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 80,
+   "y": 620,
+   "width": 560,
+   "height": 80,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Optimize the system, not the model.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 700,
+   "y": 640,
+   "text": "Sources: #141 Kyle Kranen (NVIDIA) \u00b7 #514 Mark Moyou (NVIDIA)\n#548 Dmytro Dzhulgakov (Fireworks)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}
