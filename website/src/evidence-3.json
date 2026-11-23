@@ -1,1 +1,1732 @@
-{}
+{
+  "1": [
+    {
+      "claim_id": "claims#1",
+      "text": "Code generation was never the bottleneck, so faster generation alone attacks a small share of the value stream",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Se8jHLliLXE",
+          "start": "00:15:01.440",
+          "end": "00:15:03.519",
+          "start_seconds": 901,
+          "confidence": "high",
+          "label": "#1216 — Justin Reock, DX",
+          "quote": "code generation was never the bottleneck in the first place,"
+        },
+        {
+          "video_id": "Se8jHLliLXE",
+          "start": "00:15:10.880",
+          "end": "00:15:15.360",
+          "start_seconds": 910,
+          "confidence": "high",
+          "label": "#1216 — Justin Reock, DX",
+          "quote": "still only be attacking anywhere from maybe 14 to 16% of the overall value stream."
+        },
+        {
+          "video_id": "Se8jHLliLXE",
+          "start": "00:16:15.360",
+          "end": "00:16:17.759",
+          "start_seconds": 975,
+          "confidence": "high",
+          "label": "#1216 — Justin Reock, DX",
+          "quote": "an hour saved on something that isn't the bottleneck is worthless."
+        },
+        {
+          "video_id": "PmZDupFP3UM",
+          "start": "00:04:59.600",
+          "end": "00:05:02.960",
+          "start_seconds": 299,
+          "confidence": "high",
+          "label": "#62 — Justin Reock, DX",
+          "quote": "For most organizations, writing code has never been the bottleneck,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#2",
+      "text": "The firms with large gains changed the end-to-end flow, not only the speed of coding",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "21tuT-e4NVo",
+          "start": "00:02:51.092",
+          "end": "00:02:58.772",
+          "start_seconds": 171,
+          "confidence": "high",
+          "label": "#1618 — Martin Harrysson & Prakhar Dixit, McKinsey",
+          "quote": "There's a 20 25% of of companies that are really starting to see some some pretty massive benefits."
+        },
+        {
+          "video_id": "21tuT-e4NVo",
+          "start": "00:03:02.492",
+          "end": "00:03:08.292",
+          "start_seconds": 182,
+          "confidence": "high",
+          "label": "#1618 — Martin Harrysson & Prakhar Dixit, McKinsey",
+          "quote": "not just the sort of 10 15 20% like a little bit faster coding"
+        },
+        {
+          "video_id": "21tuT-e4NVo",
+          "start": "00:03:11.892",
+          "end": "00:03:14.932",
+          "start_seconds": 191,
+          "confidence": "high",
+          "label": "#1618 — Martin Harrysson & Prakhar Dixit, McKinsey",
+          "quote": "real, you know, 2x like end-to-end improvements."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#3",
+      "text": "The constraint moved to verification and to the human who steers the agents",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "HLTa7Vcs4X0",
+          "start": "00:00:55.199",
+          "end": "00:01:01.840",
+          "start_seconds": 55,
+          "confidence": "high",
+          "label": "#1222 — Gabriel Spencer-Harper, Meticulous",
+          "quote": "someone somewhere at your organization is spending time verifying code and that is now your new bottleneck"
+        },
+        {
+          "video_id": "YIVkERhy8xo",
+          "start": "00:01:21.360",
+          "end": "00:01:28.640",
+          "start_seconds": 81,
+          "confidence": "high",
+          "label": "#1204 — Ido Salomon, AgentCraft",
+          "quote": "each one of these agents requires you to steer them direct them review them and when it's at scale especially it's just exhausting"
+        },
+        {
+          "video_id": "YIVkERhy8xo",
+          "start": "00:13:35.600",
+          "end": "00:13:38.320",
+          "start_seconds": 815,
+          "confidence": "high",
+          "label": "#1204 — Ido Salomon, AgentCraft",
+          "quote": "we are the bottleneck, but we don't have to be."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#4",
+      "text": "Understanding is the deeper constraint, and better agents do not pay it down",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:04:00.200",
+          "end": "00:04:01.400",
+          "start_seconds": 240,
+          "confidence": "high",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "we we don't have to understand it all,"
+        },
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:04:08.760",
+          "end": "00:04:12.800",
+          "start_seconds": 248,
+          "confidence": "high",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "There is a deeper reason to understand what's going on, and that's understanding to participate."
+        },
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:04:19.799",
+          "end": "00:04:32.360",
+          "start_seconds": 259,
+          "confidence": "low",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "When you review what's happening and get in the loop, you come away changed. You understand something, and that understanding is what you take to the next loop, and the next, and the next."
+        },
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:05:14.360",
+          "end": "00:05:17.160",
+          "start_seconds": 314,
+          "confidence": "high",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "is not something that we can just wash away with better agents."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#5",
+      "text": "Faster individuals and better models do not make the team faster, because the shared stages are unchanged",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "Kz4QJmNrVXU",
+          "start": "00:00:24.760",
+          "end": "00:00:27.960",
+          "start_seconds": 24,
+          "confidence": "high",
+          "label": "#994 — Matt Dailey, Ref",
+          "quote": "individual engineers are going really fast with AI, but the team as a whole is not."
+        },
+        {
+          "video_id": "Ve2bAarPA2I",
+          "start": "00:00:27.080",
+          "end": "00:00:27.680",
+          "start_seconds": 27,
+          "confidence": "high",
+          "label": "#1392 — Nicholas Arcolano, Jellyfish",
+          "quote": "it's actually not the model,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#6",
+      "text": "The feeling of speed is not evidence of speed",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "k1t2xyWMUdY",
+          "start": "00:09:46.720",
+          "end": "00:09:48.920",
+          "start_seconds": 586,
+          "confidence": "high",
+          "label": "#36 — Joel Becker, METR",
+          "quote": "developers will tell you that they were faster when they weren't."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#22",
+      "text": "Agents make consequential errors often, and defects rise with AI code volume",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "dYh7TQkuYFE",
+          "start": "00:00:17.600",
+          "end": "00:00:22.040",
+          "start_seconds": 17,
+          "confidence": "high",
+          "label": "#1347 — Corey Gallon, Rexmore",
+          "quote": "In about four in 10 sessions, an agent got something wrong that mattered."
+        },
+        {
+          "video_id": "TswQeKftnaw",
+          "start": "00:00:44.399",
+          "end": "00:00:48.640",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#210 — Tomas Reimers, Graphite",
+          "quote": "the amount of code being written by AI was going up and up and up, but so was the amount of bugs."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#34",
+      "text": "The scarce input in legacy change is subject-matter expertise, so the process should concentrate experts' attention rather than replace it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "DouK81O8R3o",
+          "start": "00:04:39.280",
+          "end": "00:04:41.720",
+          "start_seconds": 279,
+          "confidence": "high",
+          "label": "#1386 — Ford Prior, GEICO",
+          "quote": "a multiplayer AI-native war room."
+        },
+        {
+          "video_id": "DouK81O8R3o",
+          "start": "00:04:47.960",
+          "end": "00:04:51.200",
+          "start_seconds": 287,
+          "confidence": "high",
+          "label": "#1386 — Ford Prior, GEICO",
+          "quote": "a driver to wield these expensive AI tools,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#35",
+      "text": "AI multiplied code output but barely moved releases, so the gap became a queue",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:47.614",
+          "end": "00:05:58.494",
+          "start_seconds": 347,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "2,450% increase in lines of code, 240% increase in commits, but the same study showed only a 30% increase in releases."
+        },
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:58.974",
+          "end": "00:06:02.974",
+          "start_seconds": 358,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "We haven't figured out how to scale from producing stuff to shipping stuff."
+        }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "claim_id": "claims#4",
+      "text": "Understanding is the deeper constraint, and better agents do not pay it down",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:04:00.200",
+          "end": "00:04:01.400",
+          "start_seconds": 240,
+          "confidence": "high",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "we we don't have to understand it all,"
+        },
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:04:08.760",
+          "end": "00:04:12.800",
+          "start_seconds": 248,
+          "confidence": "high",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "There is a deeper reason to understand what's going on, and that's understanding to participate."
+        },
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:04:19.799",
+          "end": "00:04:32.360",
+          "start_seconds": 259,
+          "confidence": "low",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "When you review what's happening and get in the loop, you come away changed. You understand something, and that understanding is what you take to the next loop, and the next, and the next."
+        },
+        {
+          "video_id": "WkBPX-oDMnA",
+          "start": "00:05:14.360",
+          "end": "00:05:17.160",
+          "start_seconds": 314,
+          "confidence": "high",
+          "label": "#831 — Geoffrey Litt, Notion",
+          "quote": "is not something that we can just wash away with better agents."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "No plan, template or tool replaces thinking; the load-bearing human step is reading the plan before it runs",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:10:13.120",
+          "end": "00:10:18.480",
+          "start_seconds": 613,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "AI cannot replace thinking. It can only amplify the thinking you have done or the lack of thinking you have done."
+        },
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:17:41.760",
+          "end": "00:17:45.280",
+          "start_seconds": 1061,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "Watch out for tools that just spew out a bunch of markdown files just to make you feel good."
+        },
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:18:54.160",
+          "end": "00:18:55.760",
+          "start_seconds": 1134,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "There is no perfect prompt. There is no silver bullet."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "\"Human in the loop\" does not scale, and at high volume it becomes a label for unsupervised output",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:30.974",
+          "end": "00:05:32.014",
+          "start_seconds": 330,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "human in the loop doesn't scale."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#38",
+      "text": "A software factory, properly meant, removes the human from the loop, and engineering shifts toward designing the production line",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:01:18.480",
+          "end": "00:01:26.520",
+          "start_seconds": 78,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "the commitment to incrementally moving the human out of the loop within the SDLC. Such that the human is not proactively interacting with a computer."
+        },
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:01:32.760",
+          "end": "00:01:35.120",
+          "start_seconds": 92,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "one individual IC running lots of coding agents at the same time."
+        },
+        {
+          "video_id": "tUPPVhBBcoM",
+          "start": "00:01:36.880",
+          "end": "00:01:42.920",
+          "start_seconds": 96,
+          "confidence": "high",
+          "label": "#1210 — Zach Lloyd, Warp",
+          "quote": "the discipline of software engineering is going to become something more like factory engineering."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#41",
+      "text": "Process trades optionality for predictability, and whether to pay depends on the work and on the cost of being wrong",
+      "support_level": "weak",
+      "anchors": [
+        {
+          "video_id": "t4359sKBu4w",
+          "start": "00:00:23.080",
+          "end": "00:00:23.880",
+          "start_seconds": 23,
+          "confidence": "high",
+          "label": "#711 — Angus J. McLean, Oliver",
+          "quote": "between free will and determinism"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#42",
+      "text": "Across two measured changes in this repository, added process did not change the outcome; it changed the cost",
+      "support_level": "moderate",
+      "anchors": [],
+      "artifact_anchors": [
+        {
+          "kind": "file",
+          "ref": "research_passes/2026-11-16-sdd-bakeoff-results.md",
+          "date": "2026-11-16",
+          "excerpt": "Artifacts-before-code was **zero** for all three arms."
+        },
+        {
+          "kind": "file",
+          "ref": "research_passes/2026-11-16-sdd-bakeoff-round2-results.md",
+          "date": "2026-11-16",
+          "excerpt": "**+30% tokens and +50% wall time** over the Pocock arm, for an identical"
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "claim_id": "claims#7",
+      "text": "When code gets cheap, deciding what to build becomes the scarce skill, and by default new capability goes to the wrong things",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "_fHTqOs5wQA",
+          "start": "00:18:45.760",
+          "end": "00:18:49.280",
+          "start_seconds": 1125,
+          "confidence": "high",
+          "label": "#1244 — Kent C. Dodds, EpicProduct.engineer",
+          "quote": "is work on the wrong things. Products go from good to bad faster than ever."
+        },
+        {
+          "video_id": "xzJdSi2Tsqw",
+          "start": "00:01:36.079",
+          "end": "00:01:41.439",
+          "start_seconds": 96,
+          "confidence": "high",
+          "label": "#162 — James Lowe, i.AI",
+          "quote": "this will lead to increased demand for people who can decide what to AI"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#8",
+      "text": "The engineer's half of product work is to connect what the customer needs to the technical choices",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "_fHTqOs5wQA",
+          "start": "00:21:34.720",
+          "end": "00:21:45.200",
+          "start_seconds": 1294,
+          "confidence": "medium",
+          "label": "#1244 — Kent C. Dodds, EpicProduct.engineer",
+          "quote": "as a product engineer is to connect the customers uh the understanding what the customer needs to the technical choices that are being made so that you don't paint yourself into a corner and you don't overbuild."
+        },
+        {
+          "video_id": "s0hFne6EeOI",
+          "start": "00:11:30.079",
+          "end": "00:11:31.920",
+          "start_seconds": 690,
+          "confidence": "high",
+          "label": "#1245 — Kent C. Dodds, EpicProduct.engineer",
+          "quote": "helps a lot with making sure you're building the right thing."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#9",
+      "text": "Some intent cannot be written down first; it has to be found by building and shipping",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "PthmdT92qNg",
+          "start": "00:07:26.240",
+          "end": "00:07:30.880",
+          "start_seconds": 446,
+          "confidence": "high",
+          "label": "#160 — Ben Stein, Teammates",
+          "quote": "if you asked me I could not sit down in front of a Google doc and be like oh let me like type out what this thing should"
+        },
+        {
+          "video_id": "mHzJhXppwUA",
+          "start": "00:00:17.359",
+          "end": "00:00:21.039",
+          "start_seconds": 17,
+          "confidence": "high",
+          "label": "#161 — Kenneth Auchenberg, ex-Stripe and VS Code",
+          "quote": "building products is really about shipping something to someone always wins"
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "claim_id": "claims#10",
+      "text": "Code is a lossy projection of the specification, so the reasoning behind it cannot be recovered from the code",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:06:56.479",
+          "end": "00:07:00.080",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "code itself is actually a lossy projection from the specification."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#11",
+      "text": "A specification is an alignment device before it is an input to a machine",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:06:33.120",
+          "end": "00:06:44.160",
+          "start_seconds": 393,
+          "confidence": "medium",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "specification effectively aligns and it is the artifact that you use to communicate and to discuss and debate and refer to and synchronize on."
+        },
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:06:44.960",
+          "end": "00:06:48.639",
+          "start_seconds": 404,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "If you don't have a specification, you just have a vague idea."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#12",
+      "text": "Skipping the specification feels productive but leaves software nobody understands on the second change",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "JsKTQbT58BY",
+          "start": "00:00:47.920",
+          "end": "00:01:01.359",
+          "start_seconds": 47,
+          "confidence": "high",
+          "label": "#106 — Corey J. Gallon, Rexmore",
+          "quote": "But then Monday rolls around. You want to add a feature or you want to change the way that it works and you realize that you don't understand it. You can't maintain it and you have to throw most or all of it away."
+        },
+        {
+          "video_id": "JsKTQbT58BY",
+          "start": "00:01:04.559",
+          "end": "00:01:14.240",
+          "start_seconds": 64,
+          "confidence": "high",
+          "label": "#106 — Corey J. Gallon, Rexmore",
+          "quote": "the low-spec zero planning approach to AI accelerated development that feels productive but results in brittle unmaintainable demo wear."
+        },
+        {
+          "video_id": "JsKTQbT58BY",
+          "start": "00:01:16.400",
+          "end": "00:01:21.920",
+          "start_seconds": 76,
+          "confidence": "high",
+          "label": "#106 — Corey J. Gallon, Rexmore",
+          "quote": "the resulting despair when you try to build maintainable, understandable software this way."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#13",
+      "text": "In the generating model, the specification drives the work across the whole lifecycle instead of relying on the operator",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:01:40.320",
+          "end": "00:01:43.600",
+          "start_seconds": 100,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "vibe coding relies a lot on me as the operator getting things right."
+        },
+        {
+          "video_id": "HY_JyxAZsiE",
+          "start": "00:01:52.240",
+          "end": "00:01:53.200",
+          "start_seconds": 112,
+          "confidence": "high",
+          "label": "#40 — Al Harris, Amazon Kiro",
+          "quote": "represent the holistic SDLC"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#20",
+      "text": "Where a feature mostly orchestrates existing capability, instructions can replace the implementation",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:00:21.039",
+          "end": "00:00:23.359",
+          "start_seconds": 21,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "markdown is basically the new code."
+        },
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:00:43.440",
+          "end": "00:00:46.079",
+          "start_seconds": 43,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "a lot of code a lot of dependencies a lot of complexity and tests"
+        },
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:04:33.520",
+          "end": "00:04:35.360",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "around 15,000 lines of code deleted."
+        },
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:04:39.919",
+          "end": "00:04:41.520",
+          "start_seconds": 279,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "almost as good as the previous one."
+        }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "claim_id": "claims#10",
+      "text": "Code is a lossy projection of the specification, so the reasoning behind it cannot be recovered from the code",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "8rABwKRsec4",
+          "start": "00:06:56.479",
+          "end": "00:07:00.080",
+          "start_seconds": 416,
+          "confidence": "high",
+          "label": "#265 — Sean Grove, OpenAI",
+          "quote": "code itself is actually a lossy projection from the specification."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#31",
+      "text": "In a codebase too large for any context window, agents work on slices, and generation at volume erodes the system's coherence",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:00.800",
+          "end": "00:03:03.120",
+          "start_seconds": 180,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "that keep the world running are beginning to decay."
+        },
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:08.640",
+          "end": "00:03:14.000",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "way too much to fit into a context window or even just to clone and GP in real time. That's just not possible."
+        },
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:21.760",
+          "end": "00:03:25.840",
+          "start_seconds": 201,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "different coding standards being applied in different places by different agents across the codebase."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#32",
+      "text": "Legacy code repels the people who must change it, and cheap generation makes a rewrite look easier than it is",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "7vn4WpqNpck",
+          "start": "00:00:37.880",
+          "end": "00:00:43.400",
+          "start_seconds": 37,
+          "confidence": "high",
+          "label": "#991 — Denys Linkov, Wisedocs",
+          "quote": "because it's a legacy code base, or actually more than 10 repos, nobody actually wants to touch the code. It's not a fun experience."
+        },
+        {
+          "video_id": "7vn4WpqNpck",
+          "start": "00:00:52.080",
+          "end": "00:00:52.880",
+          "start_seconds": 52,
+          "confidence": "high",
+          "label": "#991 — Denys Linkov, Wisedocs",
+          "quote": "Is this the right move to do?"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#33",
+      "text": "A brownfield specification must be recovered as a derived artifact, generated from the system as it is",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "k2ClBT4aqAg",
+          "start": "00:04:57.880",
+          "end": "00:05:00.040",
+          "start_seconds": 297,
+          "confidence": "high",
+          "label": "#1276 — Kamalakannan Nandagopal, Postman",
+          "quote": "right down to the exact line of code where it was implemented."
+        },
+        {
+          "video_id": "k2ClBT4aqAg",
+          "start": "00:05:10.880",
+          "end": "00:05:14.160",
+          "start_seconds": 310,
+          "confidence": "high",
+          "label": "#1276 — Kamalakannan Nandagopal, Postman",
+          "quote": "all the way down across the stack, including databases and caches,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#34",
+      "text": "The scarce input in legacy change is subject-matter expertise, so the process should concentrate experts' attention rather than replace it",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "DouK81O8R3o",
+          "start": "00:04:39.280",
+          "end": "00:04:41.720",
+          "start_seconds": 279,
+          "confidence": "high",
+          "label": "#1386 — Ford Prior, GEICO",
+          "quote": "a multiplayer AI-native war room."
+        },
+        {
+          "video_id": "DouK81O8R3o",
+          "start": "00:04:47.960",
+          "end": "00:04:51.200",
+          "start_seconds": 287,
+          "confidence": "high",
+          "label": "#1386 — Ford Prior, GEICO",
+          "quote": "a driver to wield these expensive AI tools,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#39",
+      "text": "The lights-off factory narrative rests on true premises, but its failures already show: outages and decaying codebases",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:10.880",
+          "end": "00:01:21.200",
+          "start_seconds": 70,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "the prevailing narrative is we should just spend more tokens. You are the bottleneck. The models are good enough. Code is free. just ship more stuff."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:23.680",
+          "end": "00:01:25.200",
+          "start_seconds": 83,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "we are starting to see the cracks."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:33.600",
+          "end": "00:01:35.759",
+          "start_seconds": 93,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "are having outages due to coding agent mishaps."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:37.360",
+          "end": "00:01:40.400",
+          "start_seconds": 97,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "code bases are falling apart faster than they ever have before."
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "claim_id": "claims#14",
+      "text": "Research before planning onboards the agent; without it the agent invents what it does not know",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:12:13.760",
+          "end": "00:12:16.480",
+          "start_seconds": 733,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "If you don't onboard your agents, they will make stuff up."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#15",
+      "text": "The size of a planned step is a context-window constraint, not a matter of taste",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:05:52.080",
+          "end": "00:05:54.800",
+          "start_seconds": 352,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "the more you use the context window, the worse outcomes you'll get."
+        },
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:06:45.360",
+          "end": "00:06:48.319",
+          "start_seconds": 405,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "are not for anthropomorphizing roles. They are for controlling context."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#16",
+      "text": "Errors multiply upstream, so human review belongs on research and plans more than on diffs",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:17:14.640",
+          "end": "00:17:16.959",
+          "start_seconds": 1034,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "a bad line of code is a bad line of code"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#17",
+      "text": "No plan, template or tool replaces thinking; the load-bearing human step is reading the plan before it runs",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:10:13.120",
+          "end": "00:10:18.480",
+          "start_seconds": 613,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "AI cannot replace thinking. It can only amplify the thinking you have done or the lack of thinking you have done."
+        },
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:17:41.760",
+          "end": "00:17:45.280",
+          "start_seconds": 1061,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "Watch out for tools that just spew out a bunch of markdown files just to make you feel good."
+        },
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:18:54.160",
+          "end": "00:18:55.760",
+          "start_seconds": 1134,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "There is no perfect prompt. There is no silver bullet."
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "claim_id": "claims#15",
+      "text": "The size of a planned step is a context-window constraint, not a matter of taste",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:05:52.080",
+          "end": "00:05:54.800",
+          "start_seconds": 352,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "the more you use the context window, the worse outcomes you'll get."
+        },
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:06:45.360",
+          "end": "00:06:48.319",
+          "start_seconds": 405,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "are not for anthropomorphizing roles. They are for controlling context."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#18",
+      "text": "Isolation, not approval clicking, is what makes an unattended agent affordable",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "iH_wV8BbS24",
+          "start": "00:04:00.120",
+          "end": "00:04:01.120",
+          "start_seconds": 240,
+          "confidence": "high",
+          "label": "#1330 — Robert Brennan, OpenHands",
+          "quote": "babysit the agent while it works,"
+        },
+        {
+          "video_id": "iH_wV8BbS24",
+          "start": "00:07:35.720",
+          "end": "00:07:38.200",
+          "start_seconds": 455,
+          "confidence": "high",
+          "label": "#1330 — Robert Brennan, OpenHands",
+          "quote": "you can run as many GitHub Actions as you're willing to pay for."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#19",
+      "text": "Work with a crisp spec and mechanical verification parallelises at scale now",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rcsliSIy_YU",
+          "start": "00:09:29.760",
+          "end": "00:09:32.240",
+          "start_seconds": 569,
+          "confidence": "high",
+          "label": "#42 — Robert Brennan, OpenHands",
+          "quote": "go through their entire codebase, figure out which of their repos are vulnerable,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#20",
+      "text": "Where a feature mostly orchestrates existing capability, instructions can replace the implementation",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:00:21.039",
+          "end": "00:00:23.359",
+          "start_seconds": 21,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "markdown is basically the new code."
+        },
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:00:43.440",
+          "end": "00:00:46.079",
+          "start_seconds": 43,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "a lot of code a lot of dependencies a lot of complexity and tests"
+        },
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:04:33.520",
+          "end": "00:04:35.360",
+          "start_seconds": 273,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "around 15,000 lines of code deleted."
+        },
+        {
+          "video_id": "WE_Gnowy3uw",
+          "start": "00:04:39.919",
+          "end": "00:04:41.520",
+          "start_seconds": 279,
+          "confidence": "high",
+          "label": "#633 — David Gomes, Cursor",
+          "quote": "almost as good as the previous one."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#21",
+      "text": "Parallel, asynchronous agents turn execution into a coordination problem for people",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "X4BwOu0GWb8",
+          "start": "00:01:16.479",
+          "end": "00:01:22.560",
+          "start_seconds": 76,
+          "confidence": "high",
+          "label": "#182 — Rustin Banks, Google",
+          "quote": "an asynchronous coding agent meant to run in the background and do all those tasks that you don't want to do"
+        },
+        {
+          "video_id": "OL7kfezynJM",
+          "start": "00:00:25.200",
+          "end": "00:00:26.520",
+          "start_seconds": 25,
+          "confidence": "high",
+          "label": "#996 — Arjun Singh, Superconductor",
+          "quote": "putting the agents at the center of everything."
+        },
+        {
+          "video_id": "OL7kfezynJM",
+          "start": "00:00:16.240",
+          "end": "00:00:20.680",
+          "start_seconds": 16,
+          "confidence": "high",
+          "label": "#996 — Arjun Singh, Superconductor",
+          "quote": "multiplayer agentic engineering or how to enable your whole team and your best agents to work together."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#30",
+      "text": "A credential an agent can reach is the real environment boundary",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "JxNCuXkSWyQ",
+          "start": "00:01:46.480",
+          "end": "00:01:48.840",
+          "start_seconds": 106,
+          "confidence": "high",
+          "label": "#1514 — Sagar Batchu, Speakeasy",
+          "quote": "a pretty ordinary request, ordinary afternoon."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#38",
+      "text": "A software factory, properly meant, removes the human from the loop, and engineering shifts toward designing the production line",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:01:18.480",
+          "end": "00:01:26.520",
+          "start_seconds": 78,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "the commitment to incrementally moving the human out of the loop within the SDLC. Such that the human is not proactively interacting with a computer."
+        },
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:01:32.760",
+          "end": "00:01:35.120",
+          "start_seconds": 92,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "one individual IC running lots of coding agents at the same time."
+        },
+        {
+          "video_id": "tUPPVhBBcoM",
+          "start": "00:01:36.880",
+          "end": "00:01:42.920",
+          "start_seconds": 96,
+          "confidence": "high",
+          "label": "#1210 — Zach Lloyd, Warp",
+          "quote": "the discipline of software engineering is going to become something more like factory engineering."
+        }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "claim_id": "claims#16",
+      "text": "Errors multiply upstream, so human review belongs on research and plans more than on diffs",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "rmvDxxNubIg",
+          "start": "00:17:14.640",
+          "end": "00:17:16.959",
+          "start_seconds": 1034,
+          "confidence": "high",
+          "label": "#89 — Dex Horthy, HumanLayer",
+          "quote": "a bad line of code is a bad line of code"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#31",
+      "text": "In a codebase too large for any context window, agents work on slices, and generation at volume erodes the system's coherence",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:00.800",
+          "end": "00:03:03.120",
+          "start_seconds": 180,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "that keep the world running are beginning to decay."
+        },
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:08.640",
+          "end": "00:03:14.000",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "way too much to fit into a context window or even just to clone and GP in real time. That's just not possible."
+        },
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:21.760",
+          "end": "00:03:25.840",
+          "start_seconds": 201,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "different coding standards being applied in different places by different agents across the codebase."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#35",
+      "text": "AI multiplied code output but barely moved releases, so the gap became a queue",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:47.614",
+          "end": "00:05:58.494",
+          "start_seconds": 347,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "2,450% increase in lines of code, 240% increase in commits, but the same study showed only a 30% increase in releases."
+        },
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:58.974",
+          "end": "00:06:02.974",
+          "start_seconds": 358,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "We haven't figured out how to scale from producing stuff to shipping stuff."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#36",
+      "text": "Slop is generation outrunning judgement, so a better generator makes it worse",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "6qkzlT962es",
+          "start": "00:00:41.200",
+          "end": "00:00:43.680",
+          "start_seconds": 41,
+          "confidence": "medium",
+          "label": "#1285 — Gabriel Martinez, G2i",
+          "quote": "Slop is what happens when judgment when generation"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "\"Human in the loop\" does not scale, and at high volume it becomes a label for unsupervised output",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:30.974",
+          "end": "00:05:32.014",
+          "start_seconds": 330,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "human in the loop doesn't scale."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#40",
+      "text": "Throughput metrics such as PR counts can disguise whether a factory works, so measure outcomes",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "HvboD89DyQ8",
+          "start": "00:01:54.040",
+          "end": "00:01:57.640",
+          "start_seconds": 114,
+          "confidence": "high",
+          "label": "#1206 — Ryan Cooke, WorkOS",
+          "quote": "can actually disguise how well these systems are working."
+        },
+        {
+          "video_id": "HvboD89DyQ8",
+          "start": "00:02:02.280",
+          "end": "00:02:04.000",
+          "start_seconds": 122,
+          "confidence": "high",
+          "label": "#1206 — Ryan Cooke, WorkOS",
+          "quote": "may be lying in overall increase in PRs."
+        },
+        {
+          "video_id": "HvboD89DyQ8",
+          "start": "00:02:04.760",
+          "end": "00:02:11.120",
+          "start_seconds": 124,
+          "confidence": "high",
+          "label": "#1206 — Ryan Cooke, WorkOS",
+          "quote": "It's very hard to distinguish whether the output is actually driving outcomes."
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "claim_id": "claims#22",
+      "text": "Agents make consequential errors often, and defects rise with AI code volume",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "dYh7TQkuYFE",
+          "start": "00:00:17.600",
+          "end": "00:00:22.040",
+          "start_seconds": 17,
+          "confidence": "high",
+          "label": "#1347 — Corey Gallon, Rexmore",
+          "quote": "In about four in 10 sessions, an agent got something wrong that mattered."
+        },
+        {
+          "video_id": "TswQeKftnaw",
+          "start": "00:00:44.399",
+          "end": "00:00:48.640",
+          "start_seconds": 44,
+          "confidence": "high",
+          "label": "#210 — Tomas Reimers, Graphite",
+          "quote": "the amount of code being written by AI was going up and up and up, but so was the amount of bugs."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#23",
+      "text": "An automated verifier is not neutral: it can be systematically generous",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "xLxhT2ZI7UM",
+          "start": "00:04:16.959",
+          "end": "00:04:22.000",
+          "start_seconds": 256,
+          "confidence": "high",
+          "label": "#1250 — Browserbase",
+          "quote": "there's a huge gap between what the existing verifiers say and what is actually the ground truth."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#24",
+      "text": "Independence has to be engineered with different models and different techniques",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "VrpEyglYgeU",
+          "start": "00:11:30.480",
+          "end": "00:11:32.480",
+          "start_seconds": 690,
+          "confidence": "high",
+          "label": "#864 — Tariq Shaukat, Sonar",
+          "quote": "zero trust multi-layered verification."
+        },
+        {
+          "video_id": "VrpEyglYgeU",
+          "start": "00:11:34.800",
+          "end": "00:11:45.760",
+          "start_seconds": 694,
+          "confidence": "high",
+          "label": "#864 — Tariq Shaukat, Sonar",
+          "quote": "Every model has biases. Every model produces has a character has a personality. So, let's make sure we use different models and different techniques to make sure your code is safe, to make sure it's reliable, to make sure it's secure."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#37",
+      "text": "\"Human in the loop\" does not scale, and at high volume it becomes a label for unsupervised output",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:30.974",
+          "end": "00:05:32.014",
+          "start_seconds": 330,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "human in the loop doesn't scale."
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "claim_id": "claims#24",
+      "text": "Independence has to be engineered with different models and different techniques",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "VrpEyglYgeU",
+          "start": "00:11:30.480",
+          "end": "00:11:32.480",
+          "start_seconds": 690,
+          "confidence": "high",
+          "label": "#864 — Tariq Shaukat, Sonar",
+          "quote": "zero trust multi-layered verification."
+        },
+        {
+          "video_id": "VrpEyglYgeU",
+          "start": "00:11:34.800",
+          "end": "00:11:45.760",
+          "start_seconds": 694,
+          "confidence": "high",
+          "label": "#864 — Tariq Shaukat, Sonar",
+          "quote": "Every model has biases. Every model produces has a character has a personality. So, let's make sure we use different models and different techniques to make sure your code is safe, to make sure it's reliable, to make sure it's secure."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#25",
+      "text": "Teams that build agent plumbing without CI rebuild it, and its typical failure is silent",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "WLXxTaPagA8",
+          "start": "00:02:14.800",
+          "end": "00:02:17.880",
+          "start_seconds": 134,
+          "confidence": "high",
+          "label": "#837 — Sumaiya Shrabony",
+          "quote": "Congratulations, you have reinvented regression testing."
+        },
+        {
+          "video_id": "WLXxTaPagA8",
+          "start": "00:02:22.480",
+          "end": "00:02:30.640",
+          "start_seconds": 142,
+          "confidence": "high",
+          "label": "#837 — Sumaiya Shrabony",
+          "quote": "One day, it silently fails, but you haven't noticed for a week. So, you build alerts. You just reinvented CI monitoring."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#26",
+      "text": "A language model removes the determinism that classic test practice rested on",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "WXy8Yy9xGss",
+          "start": "00:02:06.479",
+          "end": "00:02:08.160",
+          "start_seconds": 126,
+          "confidence": "high",
+          "label": "#334 — Nathan Sobo, Zed",
+          "quote": "very hardcore about testing and being empirical"
+        },
+        {
+          "video_id": "WXy8Yy9xGss",
+          "start": "00:02:21.280",
+          "end": "00:02:22.720",
+          "start_seconds": 141,
+          "confidence": "high",
+          "label": "#334 — Nathan Sobo, Zed",
+          "quote": "never have flaky tests on CI."
+        },
+        {
+          "video_id": "WXy8Yy9xGss",
+          "start": "00:02:24.319",
+          "end": "00:02:27.520",
+          "start_seconds": 144,
+          "confidence": "high",
+          "label": "#334 — Nathan Sobo, Zed",
+          "quote": "as soon as an LLM enters the picture, that's all out the window,"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#27",
+      "text": "AI-scale commit volume creates new CI bottlenecks, and the easy fixes weaken the gate",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "7b9tov5Uc5s",
+          "start": "00:00:20.000",
+          "end": "00:00:21.680",
+          "start_seconds": 20,
+          "confidence": "high",
+          "label": "#1356 — Gautam Korlam, Sonar",
+          "quote": "new bottlenecks we're seeing in software factories"
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "claim_id": "claims#28",
+      "text": "A pipeline stage on an implicit trigger can fail with no signal, so merged is not live",
+      "support_level": "moderate",
+      "anchors": [],
+      "artifact_anchors": [
+        {
+          "kind": "commit",
+          "ref": "2de004f",
+          "date": "2026-11-16",
+          "excerpt": "0 of the last 30 bot stats commits ever deployed"
+        },
+        {
+          "kind": "commit",
+          "ref": "2de004f",
+          "date": "2026-11-16",
+          "excerpt": "run: gh workflow run website-deploy.yml --ref main"
+        },
+        {
+          "kind": "run",
+          "ref": "43779369138",
+          "date": "2026-11-16",
+          "excerpt": "* [new ref]         504e5ac11c0dfa3aff8cc11934d58558699be940 -> origin/main"
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#29",
+      "text": "Release cadence is a systems property, not courage",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "I2LL_wd89-A",
+          "start": "00:00:30.960",
+          "end": "00:00:34.640",
+          "start_seconds": 30,
+          "confidence": "high",
+          "label": "#1227 — Harald Kirschner, VS Code",
+          "quote": "from a monthly release to a weekly release cycle thanks to AI."
+        },
+        {
+          "video_id": "I2LL_wd89-A",
+          "start": "00:00:35.680",
+          "end": "00:00:42.879",
+          "start_seconds": 35,
+          "confidence": "high",
+          "label": "#1227 — Harald Kirschner, VS Code",
+          "quote": "the things we learned, the systems that made this work, not just to ship faster, but actually to ship more effectively."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#30",
+      "text": "A credential an agent can reach is the real environment boundary",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "JxNCuXkSWyQ",
+          "start": "00:01:46.480",
+          "end": "00:01:48.840",
+          "start_seconds": 106,
+          "confidence": "high",
+          "label": "#1514 — Sagar Batchu, Speakeasy",
+          "quote": "a pretty ordinary request, ordinary afternoon."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#39",
+      "text": "The lights-off factory narrative rests on true premises, but its failures already show: outages and decaying codebases",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:10.880",
+          "end": "00:01:21.200",
+          "start_seconds": 70,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "the prevailing narrative is we should just spend more tokens. You are the bottleneck. The models are good enough. Code is free. just ship more stuff."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:23.680",
+          "end": "00:01:25.200",
+          "start_seconds": 83,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "we are starting to see the cracks."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:33.600",
+          "end": "00:01:35.759",
+          "start_seconds": 93,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "are having outages due to coding agent mishaps."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:37.360",
+          "end": "00:01:40.400",
+          "start_seconds": 97,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "code bases are falling apart faster than they ever have before."
+        }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "claim_id": "claims#31",
+      "text": "In a codebase too large for any context window, agents work on slices, and generation at volume erodes the system's coherence",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:00.800",
+          "end": "00:03:03.120",
+          "start_seconds": 180,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "that keep the world running are beginning to decay."
+        },
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:08.640",
+          "end": "00:03:14.000",
+          "start_seconds": 188,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "way too much to fit into a context window or even just to clone and GP in real time. That's just not possible."
+        },
+        {
+          "video_id": "Bdrs3uAX0_M",
+          "start": "00:03:21.760",
+          "end": "00:03:25.840",
+          "start_seconds": 201,
+          "confidence": "high",
+          "label": "#1237 — Dan Adler, Sourcegraph",
+          "quote": "different coding standards being applied in different places by different agents across the codebase."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#35",
+      "text": "AI multiplied code output but barely moved releases, so the gap became a queue",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:47.614",
+          "end": "00:05:58.494",
+          "start_seconds": 347,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "2,450% increase in lines of code, 240% increase in commits, but the same study showed only a 30% increase in releases."
+        },
+        {
+          "video_id": "LQW_Wvqhp04",
+          "start": "00:05:58.974",
+          "end": "00:06:02.974",
+          "start_seconds": 358,
+          "confidence": "high",
+          "label": "#1432 — Tariq Shaukat, Sonar",
+          "quote": "We haven't figured out how to scale from producing stuff to shipping stuff."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#38",
+      "text": "A software factory, properly meant, removes the human from the loop, and engineering shifts toward designing the production line",
+      "support_level": "strong",
+      "anchors": [
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:01:18.480",
+          "end": "00:01:26.520",
+          "start_seconds": 78,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "the commitment to incrementally moving the human out of the loop within the SDLC. Such that the human is not proactively interacting with a computer."
+        },
+        {
+          "video_id": "5Sui_OnSRlY",
+          "start": "00:01:32.760",
+          "end": "00:01:35.120",
+          "start_seconds": 92,
+          "confidence": "high",
+          "label": "#704 — Lou Bichard, Ona",
+          "quote": "one individual IC running lots of coding agents at the same time."
+        },
+        {
+          "video_id": "tUPPVhBBcoM",
+          "start": "00:01:36.880",
+          "end": "00:01:42.920",
+          "start_seconds": 96,
+          "confidence": "high",
+          "label": "#1210 — Zach Lloyd, Warp",
+          "quote": "the discipline of software engineering is going to become something more like factory engineering."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#39",
+      "text": "The lights-off factory narrative rests on true premises, but its failures already show: outages and decaying codebases",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:10.880",
+          "end": "00:01:21.200",
+          "start_seconds": 70,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "the prevailing narrative is we should just spend more tokens. You are the bottleneck. The models are good enough. Code is free. just ship more stuff."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:23.680",
+          "end": "00:01:25.200",
+          "start_seconds": 83,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "we are starting to see the cracks."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:33.600",
+          "end": "00:01:35.759",
+          "start_seconds": 93,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "are having outages due to coding agent mishaps."
+        },
+        {
+          "video_id": "Ib5GBkD555M",
+          "start": "00:01:37.360",
+          "end": "00:01:40.400",
+          "start_seconds": 97,
+          "confidence": "high",
+          "label": "#923 — Dex Horthy, HumanLayer",
+          "quote": "code bases are falling apart faster than they ever have before."
+        }
+      ]
+    },
+    {
+      "claim_id": "claims#40",
+      "text": "Throughput metrics such as PR counts can disguise whether a factory works, so measure outcomes",
+      "support_level": "moderate",
+      "anchors": [
+        {
+          "video_id": "HvboD89DyQ8",
+          "start": "00:01:54.040",
+          "end": "00:01:57.640",
+          "start_seconds": 114,
+          "confidence": "high",
+          "label": "#1206 — Ryan Cooke, WorkOS",
+          "quote": "can actually disguise how well these systems are working."
+        },
+        {
+          "video_id": "HvboD89DyQ8",
+          "start": "00:02:02.280",
+          "end": "00:02:04.000",
+          "start_seconds": 122,
+          "confidence": "high",
+          "label": "#1206 — Ryan Cooke, WorkOS",
+          "quote": "may be lying in overall increase in PRs."
+        },
+        {
+          "video_id": "HvboD89DyQ8",
+          "start": "00:02:04.760",
+          "end": "00:02:11.120",
+          "start_seconds": 124,
+          "confidence": "high",
+          "label": "#1206 — Ryan Cooke, WorkOS",
+          "quote": "It's very hard to distinguish whether the output is actually driving outcomes."
+        }
+      ]
+    }
+  ]
+}

@@ -69,6 +69,19 @@ def run(script: str, *args: str) -> tuple[int, str]:
     return p.returncode, p.stdout + p.stderr
 
 
+_CLAIM_RE = re.compile(r"^## \d+\)", re.M)
+
+
+def count_claims(ledger: Path) -> int:
+    """How many Claims a ledger records (headings `## N)`, as build_evidence.py reads them).
+
+    Book 3's ledger once said "No Claims are recorded yet" while all twelve
+    chapters were drafted. Every verifier checked zero anchors and passed, so
+    the summary read "All anchors resolve." over nothing.
+    """
+    return len(_CLAIM_RE.findall(ledger.read_text(encoding="utf-8")))
+
+
 _UNVERIFIABLE_RE = re.compile(r"(\d+)\s+unverifiable")
 
 
@@ -117,8 +130,11 @@ def main() -> int:
     prose_misses = 0
     summary: list[str] = []
 
+    empty: list[str] = []
     for b in books:
         cfg = BOOKS[b]
+        if count_claims(_REPO / cfg["ledger"]) == 0:
+            empty.append(b)
         for verifier in cfg["verifier"]:
             print(f"\n{'=' * 62}\nBOOK {b} — anchors ({verifier})\n{'=' * 62}")
             rc, out = run_verifier(verifier, cfg["ledger"])
@@ -163,6 +179,10 @@ def main() -> int:
         return 2
     if anchor_fail:
         print("\nFAIL — an anchor does not resolve to its quote. That is a hard defect.")
+        return 1
+    if empty:
+        print(f"\nEMPTY — the ledger for book(s) {', '.join(empty)} records no claims, "
+              "so every verifier checked nothing. That is not a pass.")
         return 1
     if unverifiable:
         print(f"\nEvery anchor that COULD be checked resolves. {unverifiable} could not "
