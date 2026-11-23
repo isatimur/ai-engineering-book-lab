@@ -2,18 +2,19 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 180
+- Total tagged videos: 188
 
 ## Cross-video synthesis
 
-- This theme appears across 180 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: Coding Agents (120), Agent Architecture (107), Evals & Reliability (17).
-- Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #22 AgentCraft: Putting the Orc in Orchestration — Ido Salomon.
+- This theme appears across 188 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Coding Agents (124), Agent Architecture (117), Evals & Reliability (28).
+- Representative talks: #11 Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare; #12 The Future of MCP — David Soria Parra, Anthropic; #21 One Registry to Rule them All - Sonny Merla, Mauro Luchetti, & Mattia Redaelli, Quantyca.
 
 ## Seed videos
 
 - [[011-8txf05vVVl4-code-mode-let-the-code-do-the-talking-sunil-pai-cloudflare|#11 — Code Mode: Let the Code do the Talking - Sunil Pai, Cloudflare]]
 - [[012-v3Fr2JR47KA-the-future-of-mcp-david-soria-parra-anthropic|#12 — The Future of MCP — David Soria Parra, Anthropic]]
+- [[021-VXfRt_H-V08-one-registry-to-rule-them-all-sonny-merla-mauro-luchetti-mattia-redaelli-quantyca|#21 — One Registry to Rule them All - Sonny Merla, Mauro Luchetti, & Mattia Redaelli, Quantyca]]
 - [[022-kR64LOqBBCU-agentcraft-putting-the-orc-in-orchestration-ido-salomon|#22 — AgentCraft: Putting the Orc in Orchestration — Ido Salomon]]
 - [[024-XZ0boOjtbNo-ai-didn-t-kill-the-web-it-moved-in-olivier-leplus-aws-yohan-lasorsa-microsoft|#24 — AI Didn’t Kill the Web, It Moved in! — Olivier Leplus (AWS) & Yohan Lasorsa (Microsoft)]]
 - [[029-u0TOSBbAw7c-cognitive-exhaust-fumes-or-read-only-ai-is-underrated-imon-podhajsk-head-of-ai-waypoint|#29 — Cognitive Exhaust Fumes, or: Read-Only AI Is Underrated — Šimon Podhajský, Head of AI, Waypoint]]
@@ -25,8 +26,6 @@
 - [[083-CEvIs9y1uog-don-t-build-agents-build-skills-instead-barry-zhang-mahesh-murag-anthropic|#83 — Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic]]
 - [[088-aqW68Is_Kj4-katelyn-lesse-evolving-claude-apis-for-agents-anthropic|#88 — Katelyn Lesse – Evolving Claude APIs for Agents, Anthropic]]
 - [[094-zMXKhhwiCIc-backlog-md-terminal-kanban-board-for-managing-tasks-with-ai-agents-alex-gavrilescu-funstag|#94 — Backlog.md: Terminal Kanban Board for Managing Tasks with AI Agents — Alex Gavrilescu, Funstage]]
-- [[095-qqXdLf3wy1E-agents-are-robots-too-what-self-driving-taught-me-about-building-agents-jesse-hu-abundant|#95 — Agents are Robots Too: What Self-Driving Taught Me About Building Agents — Jesse Hu, Abundant]]
-- [[110-bCGbuyv8PMk-rishabh-garg-tesla-optimus-challenges-in-high-performance-robotics-systems|#110 — Rishabh Garg, Tesla Optimus — Challenges in High Performance Robotics Systems]]
 - [[134-WJjInLeaJjo-building-agents-at-cloud-scale-antje-barth-aws|#134 — Building Agents at Cloud Scale — Antje Barth, AWS]]
 - [[140-2goSS66XRBk-infrastructure-for-the-singularity-jesse-han-morph|#140 — Infrastructure for the Singularity — Jesse Han, Morph]]
 - [[176-wXVvfFMTyzY-a2a-mcp-workshop-automating-business-processes-with-llms-damien-murphy-bench|#176 — A2A & MCP Workshop: Automating Business Processes with LLMs — Damien Murphy, Bench]]
@@ -45,8 +44,11 @@
 - [[285-px2e2OOS2Sk-agents-access-and-the-future-of-machine-identity-nick-nisi-workos-lizzie-siegle-cloudflare|#285 — Agents, Access, and the Future of Machine Identity — Nick Nisi (WorkOS) + Lizzie Siegle (Cloudflare)]]
 - [[287-iXhba366fQc-building-voice-agents-with-openai-dominik-kundel-openai|#287 — Building voice agents with OpenAI — Dominik Kundel, OpenAI]]
 - [[295-Q3NreEAdKMc-introducing-strands-agents-an-open-source-ai-agents-sdk-suman-debnath-aws|#295 — Introducing Strands Agents, an Open Source AI Agents SDK — Suman Debnath, AWS]]
+- [[307-l614N5W60ls-foundry-local-cutting-edge-ai-experiences-on-device-with-onnx-runtime-olive-emma-ning-micr|#307 — Foundry Local: Cutting-Edge AI experiences on device with ONNX Runtime/Olive — Emma Ning, Microsoft]]
+- [[315-N4vCBM5YbN0-building-code-first-ai-agents-with-azure-ai-agent-service-cedric-vidal-microsoft|#315 — Building Code First AI Agents with Azure AI Agent Service — Cedric Vidal, Microsoft]]
 - [[328-vRFqbEzzDsI-building-agentic-applications-w-heroku-managed-inference-and-agents-juli-n-duque-anush-dso|#328 — Building Agentic Applications w/ Heroku Managed Inference and Agents — Julián Duque & Anush Dsouza]]
 - [[333-0MqYA52iWQU-possible-dupe-but-better-sound-what-does-enterprise-ready-mcp-mean-tobin-south-workos|#333 — (possible dupe but better sound) What does Enterprise Ready MCP mean? — Tobin South, WorkOS]]
+- [[335-84Vtz2IL1Ug-fun-stories-from-building-openrouter-and-where-all-this-is-going-alex-atallah-openrouter|#335 — Fun stories from building OpenRouter and where all this is going - Alex Atallah, OpenRouter]]
 - [[338-JVuNPL5QO8Q-windsurf-everywhere-doing-everything-all-at-once-kevin-hou-windsurf|#338 — Windsurf everywhere, doing everything, all at once - Kevin Hou, Windsurf]]
 - [[341-wFTVEDYVJT0-building-agents-with-amazon-nova-act-and-mcp-du-an-lightfoot-amazon-full-workshop|#341 — Building Agents with Amazon Nova Act and MCP - Du'An Lightfoot, Amazon (Full Workshop)]]
 - [[342-YRGjll7uu5w-the-web-browser-is-all-you-need-paul-klein-iv-browserbase|#342 — The Web Browser Is All You Need - Paul Klein IV, Browserbase]]
@@ -59,8 +61,8 @@
 - [[353-J3oJqan2Gv8-mcps-are-boring-or-why-we-are-losing-the-sparkle-of-llms-manuel-odendahl|#353 — MCPs are Boring (or: Why we are losing the Sparkle of LLMs) - Manuel Odendahl]]
 - [[359-tOou_GJ9Ddk-are-mcps-overhyped-a-rant-about-mcps-henry-mao-smithery|#359 — Are MCPs Overhyped? A Rant about MCPs — Henry Mao, Smithery]]
 - [[365-wsFd22SL1s8-arrakis-how-to-build-an-ai-sandbox-from-scratch-abhishek-bhardwaj-openai|#365 — Arrakis: How To Build An AI Sandbox From Scratch - Abhishek Bhardwaj, OpenAI]]
+- [[369-tYCu_57jzL8-the-knowledge-graph-mullet-trimming-graphrag-complexity-william-lyon|#369 — The Knowledge Graph Mullet: Trimming GraphRAG Complexity - William Lyon]]
 - [[372-nnktgWtfJHE-blender-mcp-and-the-future-of-creative-tools-siddharth-ahuja|#372 — Blender MCP and The Future Of Creative Tools - Siddharth Ahuja]]
-- [[375-_-oIuRH4oGA-how-agents-broke-app-level-infrastructure-evan-boyle|#375 — How agents broke app-level infrastructure - Evan Boyle]]
 - [[377-UcW_s4BmuD0-the-demo-i-wish-i-d-had-openai-s-agents-sdk-serverless-brook-riggio|#377 — The Demo I Wish I'd Had: OpenAI's Agents SDK... serverless! - Brook Riggio]]
 - [[378-RVN9HWKmkNU-will-agent-evaluation-via-mcp-stabilize-agent-networks-ari-heljakka|#378 — Will Agent evaluation via MCP Stabilize Agent Networks? - Ari Heljakka]]
 - [[379-Nqb7JTx0Pqo-mcp-agent-fine-tuning-workshop-ronan-mcgovern|#379 — MCP Agent Fine tuning Workshop - Ronan McGovern]]
@@ -77,6 +79,7 @@
 - [[636-zepu8Kk6FBQ-agents-for-everything-else-swyx|#636 — Agents for Everything Else — swyx]]
 - [[638-sPUjIBH5Cwg-agents-on-the-canvas-in-tldraw-steve-ruiz-tldraw|#638 — Agents on the Canvas in tldraw — Steve Ruiz, tldraw]]
 - [[640-W76woOYHlvY-how-agents-ate-software-engineering-and-my-startup-louis-knight-webb-vibe-kanban|#640 — How Agents ate Software Engineering... and my startup — Louis Knight-Webb, Vibe Kanban]]
+- [[647-GmAQKINjv1E-skill-issue-how-we-used-ai-to-make-agents-actually-good-at-supabase-pedro-rodrigues-supaba|#647 — Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase]]
 - [[652-o-zkvb0iFDQ-mcp-ui-extending-the-frontier-liad-yosef-and-ido-salomon-mcp-apps|#652 — MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps]]
 - [[653-ow1we5PzK-o-the-multi-agent-architecture-that-actually-ships-luke-alvoeiro-factory|#653 — The Multi-Agent Architecture That Actually Ships — Luke Alvoeiro, Factory]]
 - [[659-VhfAVA3BG2I-how-transformers-finally-ate-vision-isaac-robinson-roboflow|#659 — How Transformers Finally Ate Vision – Isaac Robinson, Roboflow]]
@@ -90,13 +93,14 @@
 - [[700-owH1f0N-keY-gemini-nano-on-device-florina-muntenescu-oli-gaymond-google-deepmind|#700 — Gemini Nano on device — Florina Muntenescu & Oli Gaymond, Google DeepMind]]
 - [[704-5Sui_OnSRlY-the-missing-primitive-for-agent-swarms-lou-bichard-ona|#704 — The Missing Primitive for Agent Swarms — Lou Bichard, Ona]]
 - [[707-W-SX_srBa3Y-let-s-talk-about-fomat-fear-of-missing-agent-time-michael-richman-cmd-ctrl|#707 — Let's Talk About FOMAT: Fear of Missing Agent Time — Michael Richman, Cmd+Ctrl]]
+- [[714-BiG2ssibKGc-stop-babysitting-your-agents-brandon-waselnuk-unblocked|#714 — Stop babysitting your agents... — Brandon Waselnuk, Unblocked]]
 - [[718-ugUeZ8-b-u0-why-rust-is-the-ideal-language-for-vibe-coding-daniel-szoke-sentry|#718 — Why Rust is the Ideal Language for Vibe-Coding — Daniel Szoke, Sentry]]
 - [[723-V-L0INGTEOg-reverse-engineering-a-viking-voip-phone-protocol-with-claude-code-boris-starkov-eleven-lab|#723 — Reverse engineering a Viking VOIP phone protocol with Claude Code — Boris Starkov, Eleven Labs]]
-- [[738-504PvfXou5Y-bdd-adr-prd-wtf-capturing-decisions-for-humans-and-ai-alike-michal-cichra-safe-intelligenc|#738 — BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike — Michal Cichra, Safe Intelligence]]
 - [[740-hCMrEfPG2Yg-beyond-components-designing-generative-ui-for-mcp-apps-ruben-casas-postman|#740 — Beyond Components: Designing Generative UI for MCP Apps — Ruben Casas, Postman]]
 - [[745-KLSuFPj2ld0-building-safe-payment-infrastructure-for-the-autonomous-economy-steve-kaliski-stripe|#745 — Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe]]
 - [[747-_xIwFcnHqp4-building-interactive-uis-in-vs-code-with-mcp-apps-marlene-mhangami-liam-hampton-github|#747 — Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub]]
 - [[748-zTZ0qunQXnM-from-mcp-to-scale-pipelines-that-build-themselves-rafael-levi-bright-data|#748 — From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data]]
+- [[762-ghJmWQCIHRM-webmcp-how-every-website-talks-to-agents-tara-agyemang-google-chrome|#762 — WebMCP: How every website talks to agents — Tara Agyemang, Google Chrome]]
 - [[764-c-2eEv2ou7Y-why-mcp-and-chatgpt-apps-use-double-iframes-fr-d-ric-barthelet-alpic|#764 — Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic]]
 - [[770-ZD9-4fW2HhM-build-systems-not-code-angie-jones-agentic-ai-foundation|#770 — Build Systems, Not Code - Angie Jones, Agentic AI Foundation]]
 - [[781-Jx4ZFEAq6bY-user-signal-dies-at-the-retrieval-boundary-sonam-pankaj-starlightsearch|#781 — User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch]]
@@ -107,8 +111,9 @@
 - [[812-UcYoMg-8-L8-500-people-vibe-coded-for-30-days-i-was-one-of-them-sanja-grbic-automattic|#812 — 500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic]]
 - [[819-G6IlDzj8OjA-gtm-is-you-victoria-melnikova-evil-martians|#819 — GTM Is You - Victoria Melnikova, Evil Martians]]
 - [[821-4kYl2_mqmnQ-i-run-a-fleet-of-ai-agents-across-three-machines-here-s-what-broke-kyle-jaejun-lee-krafton|#821 — I Run a Fleet of AI Agents Across Three Machines. Here's What Broke. - Kyle Jaejun Lee, KRAFTON]]
+- [[822-BqZrTdgBaPw-running-a-chess-youtube-channel-entirely-by-ai-stephan-steinfurt-tng|#822 — Running a Chess YouTube Channel entirely by AI — Stephan Steinfurt, TNG]]
+- [[824-HEFSExa0xl0-teaching-coding-agents-to-do-spreadsheets-nuno-campos-witan-labs|#824 — Teaching Coding Agents to do Spreadsheets - Nuno Campos, Witan Labs]]
 - [[825-HsxQICTLF84-building-an-acp-compatible-agent-live-bennet-fenner-zed|#825 — Building an ACP-Compatible Agent Live — Bennet Fenner, Zed]]
-- [[827-grdoOC1BT1s-think-you-can-build-a-game-with-ai-think-again-danielle-an-david-hoe-meta|#827 — Think You Can Build a Game with AI? Think Again! - Danielle An & David Hoe, Meta]]
 - [[835-GdvKNwMcfd0-from-writing-code-to-designing-systems-how-the-developer-role-is-changing-chris-noring-mic|#835 — From Writing Code to Designing Systems: How the Developer Role is Changing — Chris Noring, Microsoft]]
 - [[840-jtzh-GBXBWc-the-factory-that-dreams-39-ai-agents-no-framework-rushabh-doshi-machinecraft|#840 — The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft]]
 - [[842-xg1zNlzw7Jk-claws-out-securing-and-building-with-openclaw-nick-taylor-pomerium|#842 — Claws Out: Securing and Building with OpenClaw - Nick Taylor, Pomerium]]
@@ -119,8 +124,11 @@
 - [[863-lMCxVorb9wM-you-didn-t-ship-a-bug-you-just-wrote-it-for-a-human-ravi-madabhushi-scalekit|#863 — You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit]]
 - [[869-Z2Erdirpudo-imagination-engineering-live-in-the-future-and-then-build-what-s-missing|#869 — Imagination Engineering: "Live in the future and then build what's missing."]]
 - [[874-zU4EagB311U-agents-need-feature-flags-sachin-gupta|#874 — Agents Need Feature Flags - Sachin Gupta]]
+- [[884-0RNNfxpdbQk-medic-for-apache-spark-first-aid-for-failing-jobs-drasko-profirovic-pinterest|#884 — Medic for Apache Spark - First Aid for Failing Jobs - Drasko Profirovic, Pinterest]]
 - [[887-maTp79FD9gI-agent-output-is-not-ux-rendering-layer-your-llm-pipeline-is-missing-bala-ramdoss-amazon-le|#887 — Agent Output Is Not UX: Rendering Layer Your LLM Pipeline Is Missing - Bala Ramdoss, Amazon Lens]]
+- [[901-cgimkNGNjvU-agentic-development-security-ezra-tanzer-snyk|#901 — Agentic Development Security — Ezra Tanzer, Snyk]]
 - [[902-yWS0udrIOc8-agentic-security-permissions-provenance-and-the-agent-supply-chain-steve-yegge-gas-town|#902 — Agentic Security: Permissions, Provenance, and the Agent Supply Chain — Steve Yegge, Gas Town]]
+- [[903-1EZdpEhwmNc-through-the-ai-fog-the-architectural-decision-agentic-security-depends-on-manoj-nair-snyk|#903 — Through the AI Fog: The Architectural Decision Agentic Security Depends On — Manoj Nair, Snyk]]
 - [[910-VGN22pPpb-8-thinner-agents-on-a-smarter-substrate-the-ontology-based-semantic-layer-emil-eifrem-neo4j|#910 — Thinner Agents on a Smarter Substrate: The Ontology-based Semantic Layer — Emil Eifrem, Neo4j]]
 - [[930-q2JrUKBMf0w-the-future-of-evals-from-llm-as-a-judge-to-agent-as-a-judge-aparna-dhinakaran-arize-ai|#930 — The Future of Evals: From LLM as a Judge to Agent as a Judge — Aparna Dhinakaran, Arize AI]]
 - [[947-Byv311hdoHE-the-dirty-secret-of-forward-deployed-engineering-natalie-meurer-sierra|#947 — The Dirty Secret of Forward Deployed Engineering — Natalie Meurer, Sierra]]

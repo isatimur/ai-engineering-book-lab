@@ -2,12 +2,12 @@
 
 ## Corpus coverage
 
-- Total tagged videos: 134
+- Total tagged videos: 138
 
 ## Cross-video synthesis
 
-- This theme appears across 134 talks, suggesting it is a durable pillar rather than a one-off trend.
-- Most common adjacent themes: RAG & Retrieval (21), Evals & Reliability (21), Org Design & Leadership (19).
+- This theme appears across 138 talks, suggesting it is a durable pillar rather than a one-off trend.
+- Most common adjacent themes: Evals & Reliability (36), RAG & Retrieval (17), Coding Agents (15).
 - Representative talks: #7 Running LLMs on your iPhone: 40 tok/s Gemma 4 with MLX — Adrien Grondin, Locally AI; #9 Gemma, DeepMind's Family of Open Models — Omar Sanseviero, Google DeepMind; #13 How Google DeepMind is researching the next Frontier of AI for Gemini — Raia Hadsell, VP of Research.
 
 ## Seed videos
@@ -23,7 +23,6 @@
 - [[074-lY1iFbDPRlw-minimax-m2-building-the-1-open-model-olive-song-minimax|#74 — Minimax M2: Building the #1 Open Model – Olive Song, MiniMax]]
 - [[080-p1CmPZ2j6Lk-agent-reinforcement-fine-tuning-will-hang-cathy-zhou-openai|#80 — Agent Reinforcement Fine Tuning – Will Hang & Cathy Zhou, OpenAI]]
 - [[081-_IzZWeuTx7I-rl-environments-at-scale-will-brown-prime-intellect|#81 — RL Environments at Scale – Will Brown, Prime Intellect]]
-- [[090-HN-F-OQe6j0-defying-gravity-kevin-hou-google-deepmind|#90 — Defying Gravity - Kevin Hou, Google DeepMind]]
 - [[097-q2nHsJVy4FE-compilers-in-the-age-of-llms-yusuf-olokoba-muna|#97 — Compilers in the Age of LLMs — Yusuf Olokoba, Muna]]
 - [[110-bCGbuyv8PMk-rishabh-garg-tesla-optimus-challenges-in-high-performance-robotics-systems|#110 — Rishabh Garg, Tesla Optimus — Challenges in High Performance Robotics Systems]]
 - [[137-mQ7_Zje7WKE-the-2025-ai-engineering-report-barr-yaron-amplify|#137 — The 2025 AI Engineering Report — Barr Yaron, Amplify]]
@@ -99,13 +98,14 @@
 - [[482--hYqt8M9u_M-the-genai-maturity-curve-or-you-probably-don-t-need-fine-tuning-kyle-corbitt|#482 — The GenAI Maturity Curve or  You Probably Don't Need Fine Tuning: Kyle Corbitt]]
 - [[484-2Wtq2GvUicw-llm-quality-optimization-bootcamp-thierry-moreau-and-pedro-torruella|#484 — LLM Quality Optimization Bootcamp: Thierry Moreau and Pedro Torruella]]
 - [[488-LJa1SjCkYas-insights-from-snorkel-ai-running-azure-ai-infrastructure-humza-iqbal-and-lachlan-ainley|#488 — Insights from Snorkel AI running Azure AI Infrastructure: Humza Iqbal and Lachlan Ainley]]
+- [[491-z_Xh2MzqKDM-full-workshop-llama-3-at-1-000-tok-s-on-the-sambanova-ai-platform|#491 — [Full Workshop] Llama 3 at 1,000 tok/s on the SambaNova AI Platform]]
 - [[494-x8HbIJh2wpQ-substrate-launch-the-api-for-modular-ai|#494 — Substrate Launch: the API for modular AI]]
 - [[498-gL9kfxt6uo0-accelerate-your-ai-journey-with-azure-ai-model-catalog-sharmila-chokalingam|#498 — Accelerate your AI journey with Azure AI model catalog: Sharmila Chokalingam]]
 - [[500-YcOrV-TLNyQ-multi-model-multimodal-and-multi-agent-innovations-in-azure-ai-cedric-vidal|#500 — Multi model multimodal and multi agent innovations in Azure AI: Cedric Vidal]]
 - [[506-pj_hKFhnJCw-how-to-evaluate-a-model-for-your-use-case-emmanuel-turlay|#506 — How to evaluate a model for your use case: Emmanuel Turlay]]
 - [[510-LksXn4CLC0g-no-code-fine-tuning-mark-hennings|#510 — No-code fine-tuning: Mark Hennings]]
+- [[512-3E7VAZaTG9M-scaling-ai-in-education-a-khanmigo-case-study-shawn-jansepar|#512 — Scaling AI in Education: A Khanmigo case study: Shawn Jansepar]]
 - [[514-9tvJ_GYJA-o-mastering-llm-inference-optimization-from-theory-to-cost-effective-deployment-mark-moyou|#514 — Mastering LLM Inference Optimization From Theory to Cost Effective Deployment: Mark Moyou]]
-- [[519-IxXMKT2FDRk-hiring-building-an-ai-engineering-team-dr-bryan-bischof|#519 — Hiring & Building an AI Engineering Team: Dr. Bryan Bischof]]
 - [[528-AUuktOQPWYg-decoding-mistral-ai-s-large-language-models-devendra-chaplot|#528 — Decoding Mistral AI's Large Language Models: Devendra Chaplot]]
 - [[530-Yyg_BoeB2LU-a-practical-guide-to-efficient-ai-shelby-heinecke|#530 — A Practical Guide to Efficient AI: Shelby Heinecke]]
 - [[536-eDr0m6R7fI4-ai-engineering-without-borders-swyx|#536 — AI Engineering Without Borders — swyx]]
@@ -114,7 +114,8 @@
 - [[547-gADhNzFjGeI-breaking-ai-s-1-ghz-barrier-sunny-madra-groq|#547 — Breaking AI's 1-GHz Barrier: Sunny Madra (Groq)]]
 - [[548-C1CXwRYbwuQ-making-open-models-10x-faster-and-better-for-modern-application-innovation-dmytro-dima-dzh|#548 — Making Open Models 10x faster and better for Modern Application Innovation: Dmytro (Dima) Dzhulgakov]]
 - [[555-Lko9lTGD_9U-from-model-weights-to-api-endpoint-with-tensorrt-llm-philip-kiely-and-pankaj-gupta|#555 — From model weights to API endpoint with TensorRT LLM: Philip Kiely and Pankaj Gupta]]
-- [[558-IIL2tE4n1Q0-judging-llms-alex-volkov|#558 — Judging LLMs: Alex Volkov]]
+- [[556-ksgLoPxEQzM-build-enterprise-generative-ai-apps-using-llama-3-at-1-000-tokens-s-on-the-sambanova-ai-pl|#556 — Build enterprise generative AI apps using Llama 3 at 1,000 tokens/s on the SambaNova AI platform]]
+- [[557-cS6M6Jec0lU-going-beyond-rag-extended-mind-transformers-phoebe-klett|#557 — Going beyond RAG: Extended Mind Transformers - Phoebe Klett]]
 - [[559-pZ4DIH2BVqg-pydantic-is-still-all-you-need-jason-liu|#559 — Pydantic is STILL all you need: Jason Liu]]
 - [[560--zzP0EUsZz4-hyperspace-more-nodes-is-all-you-need-nicolas-schlaepfer|#560 — Hyperspace  More Nodes Is All You Need: Nicolas Schlaepfer]]
 - [[573-DuZXbinJ4Uc-how-codeium-breaks-through-the-ceiling-for-retrieval-kevin-hou|#573 — How Codeium Breaks Through the Ceiling for Retrieval: Kevin Hou]]
@@ -133,6 +134,7 @@
 - [[605-N7lJY5IKVLE-workshop-ai-engineering-201-inference|#605 — [Workshop] AI Engineering 201: Inference]]
 - [[617-ju73sWVtvU0-building-ai-for-all-amjad-masad-michele-catasta|#617 — Building AI For All: Amjad Masad & Michele Catasta]]
 - [[620-6d60zVdcCV4-principles-for-prompt-engineering-karina-nguyen-claude-instant-anthropic|#620 — Principles for Prompt Engineering - Karina Nguyen (Claude Instant @ Anthropic)]]
+- [[626-_A367W_qvc8-open-models-at-google-deepmind-cassidy-hardin-google-deepmind|#626 — Open Models at Google DeepMind — Cassidy Hardin, Google DeepMind]]
 - [[662-P_RI1kCkRbo-voice-ai-when-is-the-her-moment-neil-zeghidour-gradium-ai|#662 — Voice AI: when is the "Her" moment? — Neil Zeghidour, Gradium AI]]
 - [[663-3jGAU2sbAyY-why-tts-models-now-look-like-llms-samuel-humeau-mistral|#663 — Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral]]
 - [[670-zTLJNHj0DeQ-why-mlx-prince-canuma-neywa-labs|#670 — Why MLX — Prince Canuma, Neywa Labs]]
@@ -140,6 +142,8 @@
 - [[678-OV56RddyFuU-self-training-agents-hermes-agent-hf-traces-skills-mcp-finetuning-merve-noyan-hugging-face|#678 — Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  — Merve Noyan, Hugging Face]]
 - [[692-BcWFc3H7Khg-let-s-go-bananas-with-genmedia-guillaume-vernade-google-deepmind|#692 — Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind]]
 - [[787-XovaGv4f39A-when-all-context-matters-extended-cache-augmented-generation-luis-romero-sevilla-orbis|#787 — When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis]]
+- [[834-uIiA6DquRiE-special-topics-in-kernels-rl-reward-hacking-in-agents-daniel-han-unsloth|#834 — Special Topics in Kernels, RL, Reward Hacking in Agents — Daniel Han, Unsloth]]
+- [[886-hMlLw1LeIK8-voice-agents-that-handle-interrupts-chintan-agrawal-and-daniel-wirjo-aws|#886 — Voice Agents That Handle Interrupts - Chintan Agrawal and Daniel Wirjo, AWS]]
 - [[896-2xJoimgoqBg-security-track-intro-randall-degges-snyk|#896 — Security Track Intro — Randall Degges, Snyk]]
 - [[1001-Cc0_nyxROBA-from-rl-to-irl-gaurav-mishra-amazon-agi-lab|#1001 — From RL to IRL — Gaurav Mishra, Amazon AGI Lab]]
 - [[1002-Ki980nV0__0-computer-use-models-will-agentify-the-web-not-apis-dhruv-batra-yutori|#1002 — Computer-use models will agentify the web, not APIs — Dhruv Batra, Yutori]]
