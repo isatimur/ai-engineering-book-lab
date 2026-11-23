@@ -54,6 +54,7 @@ Example of the form (inside a fence, so the verifier skips it):
   - [[1216-Se8jHLliLXE-the-state-of-ai-in-software-development-data-from-400-orgs-justin-reock-dx|#1216 — Justin Reock, DX]] — perfect models would still reach only 14 to 16% of the value stream.
     - **Anchor:** `Se8jHLliLXE` 00:15:10.880 → 00:15:15.360 · confidence: high
     - **Quote:** "still only be attacking anywhere from maybe 14 to 16% of the overall value stream."
+    - **Currency checked (2026-11-23):** still current. Swept the 282 talks ingested after #1216 for a percentage share of the value stream, the SDLC or developer time spent coding: 0 hits. The figure is the speaker's hypothetical, so it dates only with his framing.
   - [[1216-Se8jHLliLXE-the-state-of-ai-in-software-development-data-from-400-orgs-justin-reock-dx|#1216 — Justin Reock, DX]] — Goldratt's theory-of-constraints rule; time savings eclipsed by meetings and context switching.
     - **Anchor:** `Se8jHLliLXE` 00:16:15.360 → 00:16:17.759 · confidence: high
     - **Quote:** "an hour saved on something that isn't the bottleneck is worthless."
@@ -71,12 +72,15 @@ Example of the form (inside a fence, so the verifier skips it):
   - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — Martin Harrysson & Prakhar Dixit, McKinsey]] — survey of large-enterprise clients; a leading group sees large benefits.
     - **Anchor:** `21tuT-e4NVo` 00:02:51.092 → 00:02:58.772 · confidence: high
     - **Quote:** "There's a 20 25% of of companies that are really starting to see some some pretty massive benefits."
+    - **Currency checked (2026-11-23):** still current, on thin ground: only 15 talks were ingested after #1618. Swept them for a share of companies, organizations or enterprises seeing gains: 0 hits.
   - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — Martin Harrysson & Prakhar Dixit, McKinsey]] — the benefit is not slightly faster coding.
     - **Anchor:** `21tuT-e4NVo` 00:03:02.492 → 00:03:08.292 · confidence: high
     - **Quote:** "not just the sort of 10 15 20% like a little bit faster coding"
+    - **Currency checked (2026-11-23):** still current, on thin ground: only 15 talks were ingested after #1618. Swept them for a share of companies, organizations or enterprises seeing gains: 0 hits.
   - [[1618-21tuT-e4NVo-what-the-top-companies-do-differently-with-ai-coding-martin-harrysson-prakhar-dixit-mckins|#1618 — Martin Harrysson & Prakhar Dixit, McKinsey]] — the leading group sees 2x end-to-end improvement.
     - **Anchor:** `21tuT-e4NVo` 00:03:11.892 → 00:03:14.932 · confidence: high
     - **Quote:** "real, you know, 2x like end-to-end improvements."
+    - **Currency checked (2026-11-23):** still current, on thin ground: only 15 talks were ingested after #1618. Swept them for a 2x or 3x end-to-end, productivity or throughput figure: 0 hits.
 - **Caveats / counterevidence:** A survey of a few hundred large-enterprise clients. It does not isolate which flow changes produced the gain.
 - **Candidate chapters:** 1
 - **Reusable phrasing:** Faster coding gives you 10 to 20%. Changing the flow gives you 2x.
@@ -496,6 +500,7 @@ Example of the form (inside a fence, so the verifier skips it):
   - [[1237-Bdrs3uAX0_M-ai-coding-agents-are-breaking-big-codebases-dan-adler-sourcegraph|#1237 — Dan Adler, Sourcegraph]] — the codebases that run the world are decaying.
     - **Anchor:** `Bdrs3uAX0_M` 00:03:00.800 → 00:03:03.120 · confidence: high
     - **Quote:** "that keep the world running are beginning to decay."
+    - **Currency checked (2026-11-23):** still current. Swept the 261 talks ingested after #1237 for legacy, mainframe or COBOL near decay / rot / aging / retiring / shortage: 0 hits, so nothing newer either supports or contradicts it.
   - [[1237-Bdrs3uAX0_M-ai-coding-agents-are-breaking-big-codebases-dan-adler-sourcegraph|#1237 — Dan Adler, Sourcegraph]] — such codebases cannot fit in a context window or be cloned and searched in real time.
     - **Anchor:** `Bdrs3uAX0_M` 00:03:08.640 → 00:03:14.000 · confidence: high
     - **Quote:** "way too much to fit into a context window or even just to clone and GP in real time. That's just not possible."
@@ -555,6 +560,7 @@ Example of the form (inside a fence, so the verifier skips it):
   - [[1432-LQW_Wvqhp04-why-humans-can-t-keep-up-with-ai-written-code-tariq-shaukat-sonar|#1432 — Tariq Shaukat, Sonar]] — a study shows 2,450% more lines and 240% more commits, but 30% more releases.
     - **Anchor:** `LQW_Wvqhp04` 00:05:47.614 → 00:05:58.494 · confidence: high
     - **Quote:** "2,450% increase in lines of code, 240% increase in commits, but the same study showed only a 30% increase in releases."
+    - **Currency checked (2026-11-23):** no newer figure. Swept the 66 talks ingested after #1432 for a percentage change in lines of code, commits or pull requests: 1 hit (#1627), about context-window size, not output. The figures stand as dated to the study the speaker cites.
   - [[1432-LQW_Wvqhp04-why-humans-can-t-keep-up-with-ai-written-code-tariq-shaukat-sonar|#1432 — Tariq Shaukat, Sonar]] — the industry has not learned to scale from producing to shipping.
     - **Anchor:** `LQW_Wvqhp04` 00:05:58.974 → 00:06:02.974 · confidence: high
     - **Quote:** "We haven't figured out how to scale from producing stuff to shipping stuff."
@@ -611,6 +617,7 @@ Example of the form (inside a fence, so the verifier skips it):
   - [[923-Ib5GBkD555M-harness-engineering-is-not-enough-why-software-factories-fail-dex-horthy-humanlayer|#923 — Dex Horthy, HumanLayer]] — says the cracks are starting to show.
     - **Anchor:** `Ib5GBkD555M` 00:01:23.680 → 00:01:25.200 · confidence: high
     - **Quote:** "we are starting to see the cracks."
+    - **Currency checked (2026-11-23):** still current. Swept the 561 talks ingested after #923 for software or dark factories near fail / crack / broke / doesn't work / struggle: 4 hits. Three (#1044, #1208, #1632) agree that factories are not working yet; #1644 is about improving a factory definition. None reports the problem solved.
   - [[923-Ib5GBkD555M-harness-engineering-is-not-enough-why-software-factories-fail-dex-horthy-humanlayer|#923 — Dex Horthy, HumanLayer]] — companies have outages caused by coding agents.
     - **Anchor:** `Ib5GBkD555M` 00:01:33.600 → 00:01:35.759 · confidence: high
     - **Quote:** "are having outages due to coding agent mishaps."
