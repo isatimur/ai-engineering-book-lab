@@ -1,0 +1,351 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 11 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How a throughput metric hides whether the factory works",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Count the same work at three points and you get three different stories. Only the last one ships.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 200,
+   "width": 1290,
+   "height": 225,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 105,
+   "y": 218,
+   "text": "one study · three counters on the same work (bar length to scale)",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "l1",
+   "x": 105,
+   "y": 268,
+   "text": "lines of code",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "rectangle",
+   "id": "b1",
+   "x": 290,
+   "y": 262,
+   "width": 900,
+   "height": 34,
+   "backgroundColor": "#fdba74",
+   "strokeColor": "#fdba74",
+   "strokeWidth": 1,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "v1",
+   "x": 1205,
+   "y": 266,
+   "text": "+2,450%",
+   "fontSize": 20,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "l2",
+   "x": 105,
+   "y": 323,
+   "text": "commits",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "rectangle",
+   "id": "b2",
+   "x": 290,
+   "y": 317,
+   "width": 88,
+   "height": 34,
+   "backgroundColor": "#fdba74",
+   "strokeColor": "#fdba74",
+   "strokeWidth": 1,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "v2",
+   "x": 395,
+   "y": 321,
+   "text": "+240%",
+   "fontSize": 20,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "l3",
+   "x": 105,
+   "y": 378,
+   "text": "releases",
+   "fontSize": 18,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "rectangle",
+   "id": "b3",
+   "x": 290,
+   "y": 372,
+   "width": 11,
+   "height": 34,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#e6ebf1",
+   "strokeWidth": 1,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "v3",
+   "x": 318,
+   "y": 376,
+   "text": "+30%",
+   "fontSize": 20,
+   "fontFamily": 3,
+   "strokeColor": "#e6ebf1"
+  },
+  {
+   "type": "text",
+   "id": "gap",
+   "x": 560,
+   "y": 340,
+   "text": "everything between the bars waits in a queue:\n\"We haven't figured out how to scale from\nproducing stuff to shipping stuff.\" (Tariq Shaukat, Sonar)",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "rectangle",
+   "id": "proxy",
+   "x": 80,
+   "y": 490,
+   "width": 520,
+   "height": 130,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "PROXY · what a factory reports\nnumber of PRs · share of AI-authored changes\n\"may be lying in overall increase in PRs\"",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a1",
+   "x": 602,
+   "y": 555,
+   "width": 146,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     146,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "a1n",
+   "x": 612,
+   "y": 520,
+   "text": "look past it",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "outcome",
+   "x": 750,
+   "y": 490,
+   "width": 620,
+   "height": 130,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "OUTCOME · what WorkOS measures\nis the automation driving value for the\nengineering organisation? (needs dedicated full-time teams)",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "quote",
+   "x": 92,
+   "y": 665,
+   "text": "\"It's very hard to distinguish whether the output\nis actually driving outcomes.\"",
+   "fontSize": 22,
+   "fontFamily": 2,
+   "strokeColor": "#1f2a3a"
+  },
+  {
+   "type": "line",
+   "id": "qrule",
+   "x": 80,
+   "y": 665,
+   "width": 0,
+   "height": 56,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     56
+    ]
+   ],
+   "strokeColor": "#cbd5e1",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "quote_by",
+   "x": 92,
+   "y": 729,
+   "text": "Ryan Cooke, WorkOS",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 800,
+   "y": 650,
+   "width": 570,
+   "height": 110,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "A proxy moves whether or not\nanything improves. Measure outcomes.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 800,
+   "text": "Sources: #1206 — Ryan Cooke, WorkOS · #1432 — Tariq Shaukat, Sonar",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,377 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 2 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 80,
+   "y": 68,
+   "text": "How a product engineer connects the customer to the code",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a3",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a4",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 80,
+   "y": 138,
+   "text": "Find the job the user hires the product to do. Let that job drive each technical choice.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t6",
+   "x": 80,
+   "y": 215,
+   "text": "THE CUSTOMER",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b7",
+   "x": 80,
+   "y": 279,
+   "width": 200,
+   "height": 110,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the customer\nwhat they are\ntrying to do",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 286,
+   "y": 334,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t9",
+   "x": 330,
+   "y": 215,
+   "text": "THE JOB STATEMENT · the underlying why",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b10",
+   "x": 330,
+   "y": 242,
+   "width": 300,
+   "height": 54,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "FUNCTIONAL · does it do the thing",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 330,
+   "y": 306,
+   "width": 300,
+   "height": 54,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "SOCIAL · who else is involved",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b12",
+   "x": 330,
+   "y": 370,
+   "width": 300,
+   "height": 54,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "EMOTIONAL · how they feel doing it",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a13",
+   "x": 636,
+   "y": 334,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t14",
+   "x": 680,
+   "y": 215,
+   "text": "THE TECHNICAL CHOICES",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 680,
+   "y": 242,
+   "width": 320,
+   "height": 182,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "data model\nworkflow shape\nobservability\nconstraints\nfailure modes\nthe smallest slice",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t16",
+   "x": 80,
+   "y": 470,
+   "text": "WITHOUT THE CONNECTION",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 80,
+   "y": 498,
+   "width": 450,
+   "height": 86,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Paint yourself into a corner,\nor overbuild",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b18",
+   "x": 550,
+   "y": 498,
+   "width": 450,
+   "height": 86,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Solve a problem compelling to one person:\nit works perfectly and serves nobody",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b19",
+   "x": 1050,
+   "y": 215,
+   "width": 420,
+   "height": 300,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t20",
+   "x": 1072,
+   "y": 233,
+   "text": "#1244 · Dodds · 00:21:34",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t21",
+   "x": 1072,
+   "y": 265,
+   "text": "\"connect [...] what the customer\n needs to the technical choices\n that are being made so that you\n don't paint yourself into a\n corner and you don't overbuild.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "text",
+   "id": "t22",
+   "x": 1072,
+   "y": 401,
+   "text": "#1245 · Dodds · 00:11:30",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t23",
+   "x": 1072,
+   "y": 433,
+   "text": "the job statement \"helps a lot\n with making sure you're\n building the right thing.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b24",
+   "x": 80,
+   "y": 630,
+   "width": 600,
+   "height": 86,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Find the job before you pick the data model.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 720,
+   "y": 650,
+   "text": "Sources: #1244 — Kent C. Dodds, EpicProduct.engineer\n#1245 — Kent C. Dodds, EpicProduct.engineer",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

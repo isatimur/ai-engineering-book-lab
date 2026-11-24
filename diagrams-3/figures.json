@@ -67,6 +67,58 @@
       "reviewed": false
     },
     {
+      "id": "ch02-opener",
+      "chapter": "02",
+      "kind": "opener",
+      "title": "Intent Before Specification — the argument",
+      "file": "ch02/ch02-opener.png",
+      "claimIds": [
+        "claims#7",
+        "claims#8",
+        "claims#9"
+      ],
+      "sources": [
+        "#1244 — Kent C. Dodds, EpicProduct.engineer",
+        "#162 — James Lowe, i.AI",
+        "#1245 — Kent C. Dodds, EpicProduct.engineer",
+        "#160 — Ben Stein, Teammates",
+        "#161 — Kenneth Auchenberg, ex-Stripe and VS Code"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch02-job-statement",
+      "chapter": "02",
+      "kind": "inline",
+      "title": "How a product engineer connects the customer to the code",
+      "sectionHeading": "The engineer's half of that job",
+      "file": "ch02/ch02-job-statement.png",
+      "claimIds": [
+        "claims#8"
+      ],
+      "sources": [
+        "#1244 — Kent C. Dodds, EpicProduct.engineer",
+        "#1245 — Kent C. Dodds, EpicProduct.engineer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch02-probe-loop",
+      "chapter": "02",
+      "kind": "inline",
+      "title": "How intent is found when it cannot be written first",
+      "sectionHeading": "The complication: sometimes you cannot write it down first",
+      "file": "ch02/ch02-probe-loop.png",
+      "claimIds": [
+        "claims#9"
+      ],
+      "sources": [
+        "#160 — Ben Stein, Teammates",
+        "#161 — Kenneth Auchenberg, ex-Stripe and VS Code"
+      ],
+      "reviewed": false
+    },
+    {
       "id": "ch03-opener",
       "chapter": "03",
       "kind": "opener",
@@ -261,6 +313,57 @@
       "reviewed": false
     },
     {
+      "id": "ch06-opener",
+      "chapter": "06",
+      "kind": "opener",
+      "title": "The Independence Problem — the argument",
+      "file": "ch06/ch06-opener.png",
+      "claimIds": [
+        "claims#22",
+        "claims#23",
+        "claims#24",
+        "claims#37"
+      ],
+      "sources": [
+        "#1347 — Corey Gallon, Rexmore",
+        "#210 — Tomas Reimers, Graphite",
+        "#1250 — Browserbase",
+        "#864 — Tariq Shaukat, Sonar",
+        "#1432 — Tariq Shaukat, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch06-generous-judge",
+      "chapter": "06",
+      "kind": "inline",
+      "title": "How a generous judge nearly doubles a score",
+      "sectionHeading": "The verifier is not a neutral instrument",
+      "file": "ch06/ch06-generous-judge.png",
+      "claimIds": [
+        "claims#23"
+      ],
+      "sources": [
+        "#1250 — Browserbase"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch06-layered-verification",
+      "chapter": "06",
+      "kind": "inline",
+      "title": "How layered verification avoids shared blind spots",
+      "sectionHeading": "Independence has to be engineered",
+      "file": "ch06/ch06-layered-verification.png",
+      "claimIds": [
+        "claims#24"
+      ],
+      "sources": [
+        "#864 — Tariq Shaukat, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
       "id": "ch07-opener",
       "chapter": "07",
       "kind": "opener",
@@ -378,6 +481,124 @@
       "reviewed": false
     },
     {
+      "id": "ch09-opener",
+      "chapter": "09",
+      "kind": "opener",
+      "title": "Brownfield and Spec Rot — the argument",
+      "file": "ch09/ch09-opener.png",
+      "claimIds": [
+        "claims#10",
+        "claims#31",
+        "claims#32",
+        "claims#33",
+        "claims#34"
+      ],
+      "sources": [
+        "#265 — Sean Grove, OpenAI",
+        "#1237 — Dan Adler, Sourcegraph",
+        "#991 — Denys Linkov, Wisedocs",
+        "#1276 — Kamalakannan Nandagopal, Postman",
+        "#1386 — Ford Prior, GEICO"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch09-slices",
+      "chapter": "09",
+      "kind": "inline",
+      "title": "How agents on slices erode a codebase",
+      "sectionHeading": "The scale problem is a context problem",
+      "file": "ch09/ch09-slices.png",
+      "claimIds": [
+        "claims#31"
+      ],
+      "sources": [
+        "#1237 — Dan Adler, Sourcegraph"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch09-derived-map",
+      "chapter": "09",
+      "kind": "inline",
+      "title": "How a spec is recovered from a running system",
+      "sectionHeading": "Recovering the specification",
+      "file": "ch09/ch09-derived-map.png",
+      "claimIds": [
+        "claims#33"
+      ],
+      "sources": [
+        "#1276 — Kamalakannan Nandagopal, Postman"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch09-war-room",
+      "chapter": "09",
+      "kind": "inline",
+      "title": "How a war room spends expert attention",
+      "sectionHeading": "The war room",
+      "file": "ch09/ch09-war-room.png",
+      "claimIds": [
+        "claims#34"
+      ],
+      "sources": [
+        "#1386 — Ford Prior, GEICO"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch10-opener",
+      "chapter": "10",
+      "kind": "opener",
+      "title": "The Review Wall — the argument",
+      "file": "ch10/ch10-opener.png",
+      "claimIds": [
+        "claims#35",
+        "claims#36",
+        "claims#37",
+        "claims#16"
+      ],
+      "sources": [
+        "#1432 — Tariq Shaukat, Sonar",
+        "#1285 — Gabriel Martinez, G2i",
+        "#89 — Dex Horthy, HumanLayer"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch10-queue",
+      "chapter": "10",
+      "kind": "inline",
+      "title": "How more code turns into a queue",
+      "sectionHeading": "The numbers are not incremental",
+      "file": "ch10/ch10-queue.png",
+      "claimIds": [
+        "claims#35"
+      ],
+      "sources": [
+        "#1432 — Tariq Shaukat, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch10-review-jobs",
+      "chapter": "10",
+      "kind": "inline",
+      "title": "How review splits into three jobs",
+      "sectionHeading": "What review is for decides what can be automated",
+      "file": "ch10/ch10-review-jobs.png",
+      "claimIds": [
+        "claims#16",
+        "claims#31"
+      ],
+      "sources": [
+        "#89 — Dex Horthy, HumanLayer",
+        "#1237 — Dan Adler, Sourcegraph"
+      ],
+      "reviewed": false
+    },
+    {
       "id": "ch11-opener",
       "chapter": "11",
       "kind": "opener",
@@ -397,6 +618,128 @@
         "#1210 — Zach Lloyd, Warp",
         "#923 — Dex Horthy, HumanLayer",
         "#1206 — Ryan Cooke, WorkOS"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch11-two-futures",
+      "chapter": "11",
+      "kind": "inline",
+      "title": "How a factory differs from parallel agents",
+      "sectionHeading": "A definition worth arguing with",
+      "file": "ch11/ch11-two-futures.png",
+      "claimIds": [
+        "claims#38"
+      ],
+      "sources": [
+        "#704 — Lou Bichard, Ona",
+        "#1210 — Zach Lloyd, Warp"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch11-two-cracks",
+      "chapter": "11",
+      "kind": "inline",
+      "title": "How the lights-off factory produces its two failures",
+      "sectionHeading": "The cracks",
+      "file": "ch11/ch11-two-cracks.png",
+      "claimIds": [
+        "claims#39",
+        "claims#31"
+      ],
+      "sources": [
+        "#923 — Dex Horthy, HumanLayer",
+        "#1237 — Dan Adler, Sourcegraph"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch11-proxy-vs-outcome",
+      "chapter": "11",
+      "kind": "inline",
+      "title": "How a throughput metric hides whether the factory works",
+      "sectionHeading": "The measurement objection",
+      "file": "ch11/ch11-proxy-vs-outcome.png",
+      "claimIds": [
+        "claims#40",
+        "claims#35"
+      ],
+      "sources": [
+        "#1206 — Ryan Cooke, WorkOS",
+        "#1432 — Tariq Shaukat, Sonar"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch12-opener",
+      "chapter": "12",
+      "kind": "opener",
+      "title": "How Much Process, and How Far Out of the Loop — the argument",
+      "file": "ch12/ch12-opener.png",
+      "claimIds": [
+        "claims#4",
+        "claims#17",
+        "claims#37",
+        "claims#38",
+        "claims#41",
+        "claims#42"
+      ],
+      "sources": [
+        "#711 — Angus J. McLean, Oliver",
+        "file research_passes/2026-11-16-sdd-bakeoff-results.md",
+        "file research_passes/2026-11-16-sdd-bakeoff-round2-results.md",
+        "#89 — Dex Horthy, HumanLayer",
+        "#704 — Lou Bichard, Ona",
+        "#1210 — Zach Lloyd, Warp",
+        "#1432 — Tariq Shaukat, Sonar",
+        "#831 — Geoffrey Litt, Notion"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch12-two-rounds",
+      "chapter": "12",
+      "kind": "inline",
+      "title": "How the bake-off measured process, twice",
+      "sectionHeading": "What happened when we measured it",
+      "file": "ch12/ch12-two-rounds.png",
+      "claimIds": [
+        "claims#42"
+      ],
+      "sources": [
+        "file research_passes/2026-11-16-sdd-bakeoff-results.md",
+        "file research_passes/2026-11-16-sdd-bakeoff-round2-results.md"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch12-false-red",
+      "chapter": "12",
+      "kind": "inline",
+      "title": "How one arm caught a false red",
+      "sectionHeading": "The result the scorecard could not see",
+      "file": "ch12/ch12-false-red.png",
+      "claimIds": [
+        "claims#42"
+      ],
+      "sources": [
+        "file research_passes/2026-11-16-sdd-bakeoff-round2-results.md"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch12-two-understandings",
+      "chapter": "12",
+      "kind": "inline",
+      "title": "How the cost of leaving the loop depends on what understanding is for",
+      "sectionHeading": "How far out of the loop",
+      "file": "ch12/ch12-two-understandings.png",
+      "claimIds": [
+        "claims#4"
+      ],
+      "sources": [
+        "#831 — Geoffrey Litt, Notion"
       ],
       "reviewed": false
     }

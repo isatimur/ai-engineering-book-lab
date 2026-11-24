@@ -1,0 +1,514 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 · CHAPTER 8 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "One measure, two ends of the pipeline",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Train a model and the measure is a reward. Deploy into a regulated domain and the measure is an eval.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "lane1",
+   "x": 80,
+   "y": 198,
+   "text": "TRAIN · PART I · the measure is a reward",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#0e7490"
+  },
+  {
+   "type": "rectangle",
+   "id": "m1",
+   "x": 80,
+   "y": 225,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "model outputs",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "m2",
+   "x": 420,
+   "y": 225,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "reward you can\ncompute",
+    "fontSize": 17,
+    "fontFamily": 3,
+    "strokeColor": "#5eead4"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "m3",
+   "x": 760,
+   "y": 225,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "RL trains toward\nthe score",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "m4",
+   "x": 1100,
+   "y": 225,
+   "width": 380,
+   "height": 80,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "behavior trained in;\nthe model brought to production",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "ma1",
+   "x": 342,
+   "y": 265,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "ma2",
+   "x": 682,
+   "y": 265,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "ma3",
+   "x": 1022,
+   "y": 265,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "same",
+   "x": 550,
+   "y": 307,
+   "width": 0,
+   "height": 76,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     76
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "same_l",
+   "x": 562,
+   "y": 333,
+   "text": "the same object, seen from two ends",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#9f1239"
+  },
+  {
+   "type": "text",
+   "id": "lane2",
+   "x": 80,
+   "y": 348,
+   "text": "DEPLOY · PART II · the measure is an eval",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#be185d"
+  },
+  {
+   "type": "rectangle",
+   "id": "d1",
+   "x": 80,
+   "y": 385,
+   "width": 260,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "every prior-\nauthorization case",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "d2",
+   "x": 420,
+   "y": 385,
+   "width": 260,
+   "height": 90,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "reference-free eval\nscores it before the\ntrue outcome",
+    "fontSize": 16,
+    "fontFamily": 3,
+    "strokeColor": "#5eead4"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "d3",
+   "x": 760,
+   "y": 365,
+   "width": 260,
+   "height": 56,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "confident: proceeds",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "d4",
+   "x": 760,
+   "y": 440,
+   "width": 260,
+   "height": 70,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "low confidence: an on-call\nclinician reviews it",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "d5",
+   "x": 1100,
+   "y": 440,
+   "width": 380,
+   "height": 70,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "who decides what correct is:\na licensed professional (SonderMind)",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#9f1239"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "da1",
+   "x": 342,
+   "y": 430,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "da2",
+   "x": 682,
+   "y": 420,
+   "width": 76,
+   "height": -27,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     -27
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "da3",
+   "x": 682,
+   "y": 445,
+   "width": 76,
+   "height": 30,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     30
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "dl4",
+   "x": 1022,
+   "y": 475,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 560,
+   "width": 800,
+   "height": 145,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 572,
+   "text": "the deploy-side measure, in the speakers' words",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 600,
+   "text": "when  -> \"you evaluate before you know the true outcome\"\nroute -> \"give it to an on call clinician to review it\"\ntruth -> \"our system isn't deciding what correct is\n          in a clinical edge case like this one.\n          A licensed professional is.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 910,
+   "y": 575,
+   "width": 570,
+   "height": 110,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "What you can score, you can train toward.\nWhat you can measure, you can delegate.",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 740,
+   "text": "Sources: #674 Alessandro Cappelli (Adaptive ML) · #446 Anterior · #938 Reed & Revere (SonderMind)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

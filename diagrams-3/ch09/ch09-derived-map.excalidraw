@@ -1,0 +1,32 @@
+{
+"type": "excalidraw-skeleton",
+"appState": {"viewBackgroundColor": "#ffffff"},
+"elements": [
+{"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 9 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+{"type": "text", "id": "title", "x": 80, "y": 68, "text": "How a spec is recovered from a running system", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b"},
+{"type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0},
+{"type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "role", "x": 80, "y": 138, "text": "Postman's mapping, layer by layer: the map comes from the system, not from memory.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "text", "id": "h1", "x": 80, "y": 196, "text": "MAP THE SYSTEM AS IT IS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "rectangle", "id": "s1", "x": 80, "y": 224, "width": 560, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "1 · Every microservice in production", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "s2", "x": 80, "y": 300, "width": 560, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "2 · Every endpoint of each REST service,\ndown to the exact line of code", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "s3", "x": 80, "y": 376, "width": 560, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "3 · How services and endpoints connect", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "s4", "x": 80, "y": 452, "width": 560, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "4 · How data moves down the stack,\nincluding databases and caches", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "s5", "x": 80, "y": 528, "width": 560, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "5 · How front ends, CLIs and APIs use it all", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+
+{"type": "text", "id": "h2", "x": 760, "y": 196, "text": "TWO KINDS OF SPEC", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "rectangle", "id": "doc", "x": 760, "y": 224, "width": 640, "height": 140, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "strokeStyle": "dashed", "label": {"text": "HAND-WRITTEN DOCUMENT\n\nstarts to decay silently on the day it is written;\nthe team keeps trusting it", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+{"type": "rectangle", "id": "map", "x": 760, "y": 418, "width": 640, "height": 170, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "DERIVED MAP\n\ngenerated from the system as it is;\nwrong only until the next run", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "line", "id": "bracket", "x": 640, "y": 224, "width": 26, "height": 364, "points": [[0, 0], [26, 0], [26, 364], [0, 364]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "derive", "x": 666, "y": 503, "width": 94, "height": 0, "points": [[0, 0], [94, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "derive_t", "x": 682, "y": 474, "text": "derive", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "rerun", "x": 760, "y": 382, "text": "system changes → run the generator again", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "card", "x": 80, "y": 640, "width": 840, "height": 170, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+{"type": "text", "id": "card_head", "x": 102, "y": 656, "text": "#1276 · Kamalakannan Nandagopal, Postman · 00:04:57–00:05:14", "fontSize": 16, "fontFamily": 3, "strokeColor": "#fdba74"},
+{"type": "text", "id": "card_body", "x": 102, "y": 694, "text": "endpoint → \"right down to the exact line of code\n             where it was implemented.\"\n\ndata flow → \"all the way down across the stack,\n             including databases and caches,\"", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4"},
+{"type": "ellipse", "id": "claim", "x": 980, "y": 660, "width": 420, "height": 130, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Derive the spec.\nDo not write it.", "fontSize": 26, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "cite", "x": 80, "y": 840, "text": "Source: #1276 — Kamalakannan Nandagopal, Postman (claims#33)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+]
+}

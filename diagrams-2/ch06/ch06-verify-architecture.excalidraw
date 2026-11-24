@@ -1,0 +1,38 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 6 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "Verification is a separate call, and every claim carries its source", "fontSize": 34, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 138, "text": "In finance and law, a claim you cannot trace to a source is worthless.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "a_h", "x": 80, "y": 200, "text": "NAIVE · ONE PASS, SELF-CHECKED", "fontSize": 16, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "rectangle", "id": "a1", "x": 80, "y": 228, "width": 245, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "agent drafts a finding", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "arrow", "id": "a1a", "x": 327, "y": 260, "width": 61, "height": 0, "points": [[0, 0], [61, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "a2", "x": 390, "y": 228, "width": 265, "height": 64, "backgroundColor": "#ffffff", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "the same model\nreviews its own output", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "arrow", "id": "a2a", "x": 657, "y": 260, "width": 61, "height": 0, "points": [[0, 0], [61, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "a3", "x": 720, "y": 228, "width": 300, "height": 64, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "\"primed to be credulous\"", "fontSize": 18, "fontFamily": 2, "strokeColor": "#a8412e"}},
+
+  {"type": "text", "id": "b_h", "x": 80, "y": 330, "text": "BRIGHTWAVE · DUE-DILIGENCE RESEARCH AGENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "rectangle", "id": "b1", "x": 80, "y": 358, "width": 180, "height": 84, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "very large\nfinancial corpus", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "arrow", "id": "b1a", "x": 262, "y": 400, "width": 61, "height": 0, "points": [[0, 0], [61, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "b2", "x": 325, "y": 358, "width": 200, "height": 84, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "agent drafts a\nfinding (e.g. a\nrisk factor)", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "arrow", "id": "b2a", "x": 527, "y": 400, "width": 61, "height": 0, "points": [[0, 0], [61, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "b3", "x": 590, "y": 350, "width": 260, "height": 100, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "a SEPARATE model call\nchecks the finding\nagainst the source doc", "fontSize": 17, "fontFamily": 2, "strokeColor": "#0f766e"}},
+  {"type": "arrow", "id": "b3a", "x": 852, "y": 400, "width": 61, "height": 0, "points": [[0, 0], [61, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "b4", "x": 915, "y": 358, "width": 220, "height": 84, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "finding + citation\n+ audit trail", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "arrow", "id": "b4a", "x": 1137, "y": 400, "width": 61, "height": 0, "points": [[0, 0], [61, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "b5", "x": 1200, "y": 358, "width": 200, "height": 84, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "analyst sees the\nreceipts before\nacting", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+
+  {"type": "rectangle", "id": "card", "x": 80, "y": 490, "width": 820, "height": 214, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+  {"type": "text", "id": "card_h", "x": 100, "y": 502, "text": "Harvey · one legal query, three kinds of retrieval", "fontSize": 15, "fontFamily": 3, "strokeColor": "#5eead4"},
+  {"type": "text", "id": "card_b", "x": 100, "y": 530, "text": "query: applicable regime for a class of covered\n       bonds issued before <date>, under\n       <EU directive>, <article>\n\nsemantic search  →  \"applicable regime ... covered bonds\"\ndate filter      →  issued before <date>\nexact IDs        →  <EU directive>, <article>", "fontSize": 15, "fontFamily": 3, "strokeColor": "#ccfbf1"},
+  {"type": "text", "id": "card_n", "x": 100, "y": 678, "text": "the eval proves the right law came back: \"eval driven development\"", "fontSize": 14, "fontFamily": 3, "strokeColor": "#5eead4"},
+  {"type": "ellipse", "id": "claim", "x": 930, "y": 520, "width": 470, "height": 130, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "\"Trust, but verify\"\nis an architecture,\nnot a slogan.", "fontSize": 21, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "text", "id": "tags", "x": 950, "y": 664, "text": "claims#33", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 734, "text": "Sources: #423 Mike Conover (Brightwave) · #154 Qi (Harvey) & She (LanceDB)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}

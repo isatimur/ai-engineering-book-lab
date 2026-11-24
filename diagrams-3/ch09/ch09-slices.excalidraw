@@ -1,0 +1,43 @@
+{
+"type": "excalidraw-skeleton",
+"appState": {"viewBackgroundColor": "#ffffff"},
+"elements": [
+{"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 9 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+{"type": "text", "id": "title", "x": 80, "y": 68, "text": "How agents on slices erode a codebase", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b"},
+{"type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0},
+{"type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "role", "x": 80, "y": 138, "text": "No agent can see the whole, so each one changes a slice it can see.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "text", "id": "h1", "x": 80, "y": 200, "text": "THE WHOLE SYSTEM", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "h2", "x": 460, "y": 200, "text": "AGENTS ON SLICES", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "h3", "x": 780, "y": 200, "text": "EACH CHANGE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "h4", "x": 1140, "y": 200, "text": "THE SYSTEM AFTER", "fontSize": 16, "fontFamily": 2, "strokeColor": "#b42318"},
+
+{"type": "rectangle", "id": "base", "x": 80, "y": 230, "width": 300, "height": 250, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "LEGACY CODEBASE\n\nmillions of lines,\ntens of thousands of repos\n\ntoo big for one\ncontext window", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+
+{"type": "rectangle", "id": "s1", "x": 460, "y": 230, "width": 240, "height": 70, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Agent A · slice 1", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "s2", "x": 460, "y": 320, "width": 240, "height": 70, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Agent B · slice 2", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "s3", "x": 460, "y": 410, "width": 240, "height": 70, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Agent C · slice 3", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "arrow", "id": "a1", "x": 380, "y": 265, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "a2", "x": 380, "y": 355, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "a3", "x": 380, "y": 445, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+
+{"type": "rectangle", "id": "r1", "x": 780, "y": 230, "width": 300, "height": 70, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Locally fine:\none coding standard", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "r2", "x": 780, "y": 320, "width": 300, "height": 70, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Locally fine:\na different standard", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "r3", "x": 780, "y": 410, "width": 300, "height": 70, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Locally fine: a new copy\nof code that already exists", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "arrow", "id": "b1", "x": 700, "y": 265, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "b2", "x": 700, "y": 355, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "b3", "x": 700, "y": 445, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+
+{"type": "rectangle", "id": "lost", "x": 1140, "y": 230, "width": 260, "height": 250, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "COHERENCE ERODES\n\nmixed standards,\nduplicated code\n\nno per-change\nreview can see it", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+{"type": "arrow", "id": "c1", "x": 1080, "y": 265, "width": 60, "height": 0, "points": [[0, 0], [60, 0]], "strokeColor": "#b42318", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "c2", "x": 1080, "y": 355, "width": 60, "height": 0, "points": [[0, 0], [60, 0]], "strokeColor": "#b42318", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "c3", "x": 1080, "y": 445, "width": 60, "height": 0, "points": [[0, 0], [60, 0]], "strokeColor": "#b42318", "strokeWidth": 2, "roughness": 0},
+
+{"type": "rectangle", "id": "card", "x": 80, "y": 540, "width": 840, "height": 250, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+{"type": "text", "id": "card_head", "x": 102, "y": 556, "text": "#1237 · Dan Adler, Sourcegraph · 00:03:00–00:03:25", "fontSize": 16, "fontFamily": 3, "strokeColor": "#fdba74"},
+{"type": "text", "id": "card_body", "x": 102, "y": 592, "text": "\"...that keep the world running are beginning\n to decay.\"\n\n\"way too much to fit into a context window or\n even just to clone and GP in real time.\"\n\n\"different coding standards being applied in\n different places by different agents across\n the codebase.\"", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4"},
+{"type": "ellipse", "id": "claim", "x": 980, "y": 600, "width": 420, "height": 130, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Every change is fine.\nThe whole is not.", "fontSize": 26, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "cite", "x": 80, "y": 820, "text": "Source: #1237 — Dan Adler, Sourcegraph (claims#31)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+]
+}

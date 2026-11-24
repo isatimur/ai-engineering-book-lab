@@ -1,0 +1,616 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 · CHAPTER 8 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Symptom at the policy, cause in the system",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The skill is diagnostic: name the one thing that limits the system, then fix that.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "laneA",
+   "x": 80,
+   "y": 200,
+   "text": "PART II · TESLA OPTIMUS · one team, one humanoid",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#be185d"
+  },
+  {
+   "type": "rectangle",
+   "id": "pol",
+   "x": 80,
+   "y": 230,
+   "width": 220,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "policy\n(the model)",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "ctl",
+   "x": 380,
+   "y": 230,
+   "width": 220,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "controller",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "tp",
+   "x": 680,
+   "y": 230,
+   "width": 260,
+   "height": 80,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "timing + protocol",
+    "fontSize": 17,
+    "fontFamily": 3,
+    "strokeColor": "#5eead4"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "wire",
+   "x": 1020,
+   "y": 230,
+   "width": 200,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the wire",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "bot",
+   "x": 1300,
+   "y": 230,
+   "width": 180,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the robot",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "c1",
+   "x": 302,
+   "y": 270,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "c2",
+   "x": 602,
+   "y": 270,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "c3",
+   "x": 942,
+   "y": 270,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "c4",
+   "x": 1222,
+   "y": 270,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "symL",
+   "x": 190,
+   "y": 312,
+   "width": 0,
+   "height": 38,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     38
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "sym",
+   "x": 80,
+   "y": 350,
+   "width": 520,
+   "height": 60,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "where the failure looks like it is: the policy",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#a8412e"
+   }
+  },
+  {
+   "type": "line",
+   "id": "causeL",
+   "x": 810,
+   "y": 312,
+   "width": 0,
+   "height": 38,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     38
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "cause",
+   "x": 680,
+   "y": 350,
+   "width": 540,
+   "height": 60,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "where it actually is: the software system",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "text",
+   "id": "laneB",
+   "x": 80,
+   "y": 455,
+   "text": "PART I · DEEPMIND · one lab's account of its research culture",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#0e7490"
+  },
+  {
+   "type": "rectangle",
+   "id": "root",
+   "x": 232,
+   "y": 490,
+   "width": 240,
+   "height": 66,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "root node:\nthe key bottleneck",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "lf1",
+   "x": 80,
+   "y": 610,
+   "width": 110,
+   "height": 44,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "leaf",
+    "fontSize": 15,
+    "fontFamily": 2,
+    "strokeColor": "#64748b"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "lf2",
+   "x": 225,
+   "y": 610,
+   "width": 110,
+   "height": 44,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "leaf",
+    "fontSize": 15,
+    "fontFamily": 2,
+    "strokeColor": "#64748b"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "lf3",
+   "x": 370,
+   "y": 610,
+   "width": 110,
+   "height": 44,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "leaf",
+    "fontSize": 15,
+    "fontFamily": 2,
+    "strokeColor": "#64748b"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "lf4",
+   "x": 515,
+   "y": 610,
+   "width": 110,
+   "height": 44,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "leaf",
+    "fontSize": 15,
+    "fontFamily": 2,
+    "strokeColor": "#64748b"
+   }
+  },
+  {
+   "type": "line",
+   "id": "e1",
+   "x": 352,
+   "y": 558,
+   "width": -217,
+   "height": 50,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     -217,
+     50
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "e2",
+   "x": 352,
+   "y": 558,
+   "width": -72,
+   "height": 50,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     -72,
+     50
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "e3",
+   "x": 352,
+   "y": 558,
+   "width": 73,
+   "height": 50,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     73,
+     50
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "e4",
+   "x": 352,
+   "y": 558,
+   "width": 218,
+   "height": 50,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     218,
+     50
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "rootnote",
+   "x": 492,
+   "y": 500,
+   "text": "identify it, then solve it;\ndon't waste time on the leaves",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#134e4a"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 800,
+   "y": 480,
+   "width": 680,
+   "height": 150,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Generating candidate fixes is cheap.\nKnowing which thing is actually\nbroken is not.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 690,
+   "width": 1400,
+   "height": 122,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 702,
+   "text": "the diagnosis, in the speakers' words",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 730,
+   "text": "Garg    -> \"the issue will look like it's the policy but it's actually the software system\"\nHadsell -> \"our approach we look for root nodes. You know we're not going to waste time on the leaves.\"\nRae     -> \"So, progress has really been marked by identifying key bottlenecks towards intelligence\n            and then solving them.\"",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 840,
+   "text": "Sources: #110 Rishabh Garg (Tesla Optimus) · #13 Raia Hadsell (DeepMind) · #267 Jack Rae (DeepMind)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

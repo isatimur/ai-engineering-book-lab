@@ -1,0 +1,441 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 12 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How one arm caught a false red",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Round two's scorecard rewarded a correct result. It could not reward knowing why the result is correct.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "h1",
+   "x": 80,
+   "y": 205,
+   "text": "CEREMONIAL ARM · ITS TDD SKILL SAID: CHECK THE RED",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#3f4c5f"
+  },
+  {
+   "type": "rectangle",
+   "id": "s1",
+   "x": 80,
+   "y": 235,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "FIRST RED\nthe new test fails",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s2",
+   "x": 345,
+   "y": 235,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "CHECK\nred for which\nreason?",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s3",
+   "x": 610,
+   "y": 235,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "FALSE RED\na dependency was\nmissing, not the feature",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s4",
+   "x": 875,
+   "y": 235,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "INSTALL\nthe dependency,\nredo the red",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "s5",
+   "x": 1140,
+   "y": 235,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "HONEST RED\nfails because the\nfeature is absent",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a1",
+   "x": 312,
+   "y": 285,
+   "width": 31,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     31,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a2",
+   "x": 577,
+   "y": 285,
+   "width": 31,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     31,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a3",
+   "x": 842,
+   "y": 285,
+   "width": 31,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     31,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "a4",
+   "x": 1107,
+   "y": 285,
+   "width": 31,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     31,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "h2",
+   "x": 80,
+   "y": 375,
+   "text": "THE OTHER ARMS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "rectangle",
+   "id": "o1",
+   "x": 80,
+   "y": 405,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "FIRST RED\nthe new test fails",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "o2",
+   "x": 345,
+   "y": 405,
+   "width": 230,
+   "height": 100,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "strokeStyle": "dashed",
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "no check\nreported",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "o3",
+   "x": 610,
+   "y": 405,
+   "width": 760,
+   "height": 100,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "whether the red was honest goes unreported\nall arms still pass every measure: the scorecard sees no difference",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "b1",
+   "x": 312,
+   "y": 455,
+   "width": 31,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     31,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "b2",
+   "x": 577,
+   "y": 455,
+   "width": 31,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     31,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 550,
+   "width": 760,
+   "height": 200,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 105,
+   "y": 568,
+   "text": "round 2 results · what the measures could not see",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 105,
+   "y": 608,
+   "text": "arm        superpowers (ceremonial)\nrunner     vitest\nfirst red  failed only because node_modules\n           was missing\nthen       noticed, installed, redid the red\nothers     no other arm reported checking",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 880,
+   "y": 560,
+   "width": 490,
+   "height": 170,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "A test that fails for the\nwrong reason looks exactly\nlike a test that works.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 785,
+   "text": "Sources: file research_passes/2026-11-16-sdd-bakeoff-round2-results.md",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

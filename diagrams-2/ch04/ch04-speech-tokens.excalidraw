@@ -1,0 +1,491 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 · CHAPTER 4 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Text-to-speech is now language modelling over audio tokens",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Cut speech into discrete tokens, generate them one at a time, and voice the first ones at once.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "a_h",
+   "x": 80,
+   "y": 200,
+   "text": "BEFORE · OFFLINE SYNTHESIS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "rectangle",
+   "id": "a1",
+   "x": 80,
+   "y": 228,
+   "width": 200,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "whole utterance",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a1a",
+   "x": 282,
+   "y": 260,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "a2",
+   "x": 330,
+   "y": 228,
+   "width": 200,
+   "height": 64,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "fixed\nrepresentation",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a2a",
+   "x": 532,
+   "y": 260,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "a3",
+   "x": 580,
+   "y": 228,
+   "width": 240,
+   "height": 64,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "render the whole\nutterance at once",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#4d1d13"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a3a",
+   "x": 822,
+   "y": 260,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "a_out",
+   "x": 882,
+   "y": 248,
+   "text": "built offline, not for a live agent",
+   "fontSize": 18,
+   "fontFamily": 2,
+   "strokeColor": "#a8412e"
+  },
+  {
+   "type": "text",
+   "id": "b_h",
+   "x": 80,
+   "y": 330,
+   "text": "NOW · THE LLM TEMPLATE, POINTED AT SPEECH",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "b1",
+   "x": 80,
+   "y": 358,
+   "width": 200,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "text in\n(+ audio of the voice)",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "b1a",
+   "x": 282,
+   "y": 396,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b2",
+   "x": 330,
+   "y": 358,
+   "width": 200,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "a sequence of\ndiscrete tokens",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "b2a",
+   "x": 532,
+   "y": 396,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b3",
+   "x": 580,
+   "y": 350,
+   "width": 240,
+   "height": 92,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "transformer\ngenerates audio tokens\ntoken by token",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "b3a",
+   "x": 822,
+   "y": 396,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b4",
+   "x": 870,
+   "y": 358,
+   "width": 200,
+   "height": 76,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "a string of\naudio tokens out",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "b4a",
+   "x": 1072,
+   "y": 396,
+   "width": 46,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     46,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b5",
+   "x": 1120,
+   "y": 358,
+   "width": 280,
+   "height": 76,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "voice the first audio packets\nwhile the rest still generate",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "text",
+   "id": "b_n",
+   "x": 580,
+   "y": 452,
+   "text": "same loop as a text LLM: fine-tune it on one voice (Sesame CSM-1B)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#0f766e"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 510,
+   "width": 800,
+   "height": 196,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 522,
+   "text": "what the talks say",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 550,
+   "text": "#663 \"We're trying to transform the problem as a\n      language modeling problem because humanity is\n      extremely good at modeling sequences of token.\"\n#385 \"...input ideally text and audio and output\n      a string of audio tokens.\"\n#663 \"as soon as you have the first audio packets,\n      you start to voice them out.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 910,
+   "y": 540,
+   "width": 490,
+   "height": 130,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "When speech is tokens,\nspeech engineering\nbecomes token engineering.",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "tags",
+   "x": 930,
+   "y": 684,
+   "text": "claims#19 · claims#22",
+   "fontSize": 13,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 736,
+   "text": "Sources: #663 Samuel Humeau (Mistral) · #385 Ronan McGovern",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,493 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 6 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 80,
+   "y": 68,
+   "text": "How layered verification avoids shared blind spots",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a3",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a4",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 80,
+   "y": 138,
+   "text": "Not a better model: checks that are wrong for unrelated reasons, stacked.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t6",
+   "x": 80,
+   "y": 215,
+   "text": "ONE MECHANISM AGREEING WITH ITSELF",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b7",
+   "x": 80,
+   "y": 245,
+   "width": 150,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "agent code",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 236,
+   "y": 285,
+   "width": 30,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b9",
+   "x": 270,
+   "y": 245,
+   "width": 460,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "reviewer: a similar model,\nprompted similarly",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a10",
+   "x": 736,
+   "y": 285,
+   "width": 30,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 770,
+   "y": 245,
+   "width": 200,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "PASS\nthe shared blind\nspot ships",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t12",
+   "x": 80,
+   "y": 385,
+   "text": "ZERO TRUST, MULTI-LAYERED · different models, different techniques",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 80,
+   "y": 415,
+   "width": 150,
+   "height": 84,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "agent code",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a14",
+   "x": 236,
+   "y": 457,
+   "width": 30,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 270,
+   "y": 415,
+   "width": 210,
+   "height": 84,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "LAYER 1\na different model",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a16",
+   "x": 486,
+   "y": 457,
+   "width": 30,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 520,
+   "y": 415,
+   "width": 210,
+   "height": 84,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "LAYER 2\na different technique,\ne.g. a type checker",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a18",
+   "x": 736,
+   "y": 457,
+   "width": 30,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     30,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b19",
+   "x": 770,
+   "y": 415,
+   "width": 200,
+   "height": 84,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "SHIP\nsafe, reliable,\nsecure",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a20",
+   "x": 375,
+   "y": 503,
+   "width": 0,
+   "height": 63,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     63
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "arrow",
+   "id": "a21",
+   "x": 625,
+   "y": 503,
+   "width": 0,
+   "height": 63,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     63
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "rectangle",
+   "id": "b22",
+   "x": 270,
+   "y": 570,
+   "width": 460,
+   "height": 70,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "REJECT: each layer fails\nfor a different reason",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t23",
+   "x": 80,
+   "y": 670,
+   "text": "Upstream half: preemptive verification. An argued-over spec leaves less for the layers to catch.",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "rectangle",
+   "id": "b24",
+   "x": 1020,
+   "y": 215,
+   "width": 450,
+   "height": 320,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 1042,
+   "y": 233,
+   "text": "#864 · Shaukat · 00:11:30",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t26",
+   "x": 1042,
+   "y": 265,
+   "text": "\"zero trust multi-layered\n verification.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "text",
+   "id": "t27",
+   "x": 1042,
+   "y": 335,
+   "text": "#864 · Shaukat · 00:11:34",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t28",
+   "x": 1042,
+   "y": 367,
+   "text": "\"Every model has biases. [...]\n let's make sure we use\n different models and different\n techniques to make sure your\n code is safe, [...] reliable,\n [...] secure.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b29",
+   "x": 1020,
+   "y": 565,
+   "width": 450,
+   "height": 90,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Stack checks that fail\nfor unrelated reasons.",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t30",
+   "x": 1020,
+   "y": 675,
+   "text": "Sources: #864 — Tariq Shaukat, Sonar",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

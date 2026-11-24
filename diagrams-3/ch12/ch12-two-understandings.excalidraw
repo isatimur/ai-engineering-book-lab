@@ -1,0 +1,468 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 12 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How the cost of leaving the loop depends on what understanding is for",
+   "fontSize": 32,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "The question moves from \"can I trust it?\" to \"what am I giving up by not looking?\"",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "a1",
+   "x": 80,
+   "y": 205,
+   "width": 600,
+   "height": 80,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "IF UNDERSTANDING ONLY CATCHES ERRORS",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "a2",
+   "x": 80,
+   "y": 335,
+   "width": 600,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "better models retire the need for it\n\"we don't have to understand it all\"",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "a3",
+   "x": 80,
+   "y": 465,
+   "width": 600,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "leaving the loop is a matter of\nwaiting for accuracy",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "aa1",
+   "x": 380,
+   "y": 287,
+   "width": 0,
+   "height": 46,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     46
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "aa2",
+   "x": 380,
+   "y": 417,
+   "width": 0,
+   "height": 46,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     46
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b1",
+   "x": 770,
+   "y": 205,
+   "width": 600,
+   "height": 80,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "IF UNDERSTANDING IS WHAT YOU CARRY\nBETWEEN LOOPS",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l1",
+   "x": 770,
+   "y": 335,
+   "width": 170,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "loop\nreview, take part",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l2",
+   "x": 985,
+   "y": 335,
+   "width": 170,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "next loop\nchanged by the last",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l3",
+   "x": 1200,
+   "y": 335,
+   "width": 170,
+   "height": 80,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "the next\nidea",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "ll1",
+   "x": 942,
+   "y": 375,
+   "width": 41,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     41,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "ll2",
+   "x": 1157,
+   "y": 375,
+   "width": 41,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     41,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b3",
+   "x": 770,
+   "y": 465,
+   "width": 600,
+   "height": 80,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "leaving the loop costs you the next idea,\nand no model improvement refunds it",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "bb1",
+   "x": 1070,
+   "y": 287,
+   "width": 0,
+   "height": 46,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     46
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "bb2",
+   "x": 1070,
+   "y": 417,
+   "width": 0,
+   "height": 46,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     46
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "h_dec",
+   "x": 80,
+   "y": 585,
+   "text": "THE ANSWER DIFFERS BY CHANGE",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "go",
+   "x": 80,
+   "y": 612,
+   "width": 600,
+   "height": 56,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "dependency bumps → GO",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "stay",
+   "x": 770,
+   "y": 612,
+   "width": 600,
+   "height": 56,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "what you will reason about next quarter → STAY",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 710,
+   "width": 780,
+   "height": 200,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 105,
+   "y": 728,
+   "text": "understanding to participate · Geoffrey Litt",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 105,
+   "y": 768,
+   "text": "\"When you review what's happening and get in\n the loop, you come away changed. You understand\n something, and that understanding is what you\n take to the next loop, and the next, and the next.\"\n... \"is not something that we can just wash away\n with better agents.\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 900,
+   "y": 730,
+   "width": 470,
+   "height": 160,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Being right is not\nthe only thing you\nwere there for.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 945,
+   "text": "Sources: #831 — Geoffrey Litt, Notion",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

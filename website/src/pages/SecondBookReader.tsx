@@ -31,7 +31,7 @@ export const SecondBookReader = () => {
     <LightboxProvider>
       <Seo
         title="Second Book (Draft) — Read"
-        description="All 7 drafted chapters of the second book, in one continuous read."
+        description={`All ${chaptersTwo.length} drafted chapters of the second book, in one continuous read.`}
         path="/second-book"
         image={BOOK_TWO_COVER}
         type="website"

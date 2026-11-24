@@ -1,0 +1,40 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 6 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "A confidence gate, a named human, a hard stop", "fontSize": 34, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 138, "text": "Dan Mason's telemedicine support agent makes the human boundary part of the architecture.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "h1", "x": 80, "y": 196, "text": "EVERY OUTGOING MESSAGE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "rectangle", "id": "m1", "x": 80, "y": 240, "width": 250, "height": 96, "backgroundColor": "#ffffff", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "agent drafts a reply\nfrom medically approved\nscripts (co-owned by a\nphysician's assistant)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "arrow", "id": "m1a", "x": 332, "y": 288, "width": 56, "height": 0, "points": [[0, 0], [56, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "m2", "x": 390, "y": 240, "width": 270, "height": 96, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "separate self-evaluation\nscores the message; cuts\nconfidence for unusual cases", "fontSize": 15, "fontFamily": 2, "strokeColor": "#0f766e"}},
+  {"type": "arrow", "id": "m2a", "x": 662, "y": 288, "width": 56, "height": 0, "points": [[0, 0], [56, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "diamond", "id": "gate", "x": 720, "y": 228, "width": 200, "height": 120, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "score\n≥ 75%?", "fontSize": 17, "fontFamily": 2, "strokeColor": "#0f766e"}},
+  {"type": "arrow", "id": "yes", "x": 922, "y": 288, "width": 96, "height": 50, "points": [[0, 0], [96, -50]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "no", "x": 922, "y": 288, "width": 96, "height": 50, "points": [[0, 0], [96, 50]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "text", "id": "yes_t", "x": 944, "y": 232, "text": "yes", "fontSize": 15, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "text", "id": "no_t", "x": 948, "y": 322, "text": "no", "fontSize": 15, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "rectangle", "id": "send", "x": 1020, "y": 206, "width": 380, "height": 60, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "send to the patient", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "hold", "x": 1020, "y": 300, "width": 380, "height": 76, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "hold for human approval\n(review never raises the score back up)", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+
+  {"type": "text", "id": "h2", "x": 80, "y": 412, "text": "OUTSIDE THE SCRIPT · A STAFFED PATH, NOT A GENERIC ERROR MESSAGE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "rectangle", "id": "e1", "x": 80, "y": 442, "width": 300, "height": 56, "backgroundColor": "#ffffff", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "case falls outside the script", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "arrow", "id": "e1a", "x": 382, "y": 470, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "e2", "x": 460, "y": 442, "width": 420, "height": 56, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "escalate through Slack to the physician's assistant", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "e3", "x": 80, "y": 516, "width": 300, "height": 56, "backgroundColor": "#ffffff", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "needs real medical judgment", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "arrow", "id": "e3a", "x": 382, "y": 544, "width": 76, "height": 0, "points": [[0, 0], [76, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "e4", "x": 460, "y": 516, "width": 420, "height": 56, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "hard stop: \"call 911, go to your doctor\"", "fontSize": 17, "fontFamily": 2, "strokeColor": "#a8412e"}},
+
+  {"type": "rectangle", "id": "card", "x": 80, "y": 610, "width": 820, "height": 150, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+  {"type": "text", "id": "card_h", "x": 100, "y": 622, "text": "the same gate in other high-stakes systems", "fontSize": 15, "fontFamily": 3, "strokeColor": "#5eead4"},
+  {"type": "text", "id": "card_b", "x": 100, "y": 650, "text": "Anterior   low confidence → \"give it to an on call\n           clinician to review it\"\nEnsemble   clinical expert signs off before the\n           appeal letter reaches the payer\nBrightwave no full autonomy on judgment calls", "fontSize": 15, "fontFamily": 3, "strokeColor": "#ccfbf1"},
+  {"type": "ellipse", "id": "claim", "x": 930, "y": 440, "width": 470, "height": 130, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "The human is where\nthe unbounded risk\nis parked, by design.", "fontSize": 21, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "text", "id": "tags", "x": 950, "y": 584, "text": "claims#37", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 790, "text": "Sources: #339 Dan Mason · #446 Anterior · #187 Wan (Ensemble Health) · #423 Conover (Brightwave)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 6 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "Regulated and High-Stakes Domains", "fontSize": 36, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 140, "text": "The methods stay general. The error tolerance drops to zero, and that reshapes every one of them.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "top_h", "x": 80, "y": 200, "text": "THE GENERIC PLAYBOOK ASSUMES", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "rectangle", "id": "p1", "x": 80, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "a model can check\nits own output", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p2", "x": 271, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "a general model\nis good enough", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p3", "x": 462, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "compliance is a\ndeployment detail", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p4", "x": 653, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "medical AI belongs\nat the bedside", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p5", "x": 844, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "eval is a checkpoint\nbefore launch", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p6", "x": 1035, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "an offline eval\nset is enough", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p7", "x": 1226, "y": 228, "width": 176, "height": 72, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "automate it\nend to end", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}},
+
+  {"type": "arrow", "id": "d1a", "x": 168, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d2a", "x": 359, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d3a", "x": 550, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d4a", "x": 741, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d5a", "x": 932, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d6a", "x": 1123, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d7a", "x": 1314, "y": 302, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+
+  {"type": "rectangle", "id": "band", "x": 80, "y": 342, "width": 1322, "height": 60, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "ZERO ERROR TOLERANCE   ·   a wrong answer costs a lost deal, a lawsuit, a denied treatment or a fine", "fontSize": 18, "fontFamily": 2, "strokeColor": "#a8412e"}},
+
+  {"type": "arrow", "id": "d1b", "x": 168, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d2b", "x": 359, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d3b", "x": 550, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d4b", "x": 741, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d5b", "x": 932, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d6b", "x": 1123, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d7b", "x": 1314, "y": 404, "width": 0, "height": 38, "points": [[0, 0], [0, 38]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+
+  {"type": "rectangle", "id": "r1", "x": 80, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a separate call\nverifies each\nfinding; every\nclaim cites a source", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r2", "x": 271, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "best grounding\nscore ~81%:\nroughly 1 in 5 wrong,\nso train for the domain", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r3", "x": 462, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "NIST 800-53,\nFedRAMP, self-\nhosting: decided\non day one", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r4", "x": 653, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "value sits in the\nback office: denials,\nappeals, prior\nauthorisation", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r5", "x": 844, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "eval is the product;\na clinician, not\nthe engineer,\ndefines \"correct\"", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r6", "x": 1035, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "eval runs on every\nlive case and on\nevery model\nupgrade", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r7", "x": 1226, "y": 444, "width": 176, "height": 130, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a confidence gate,\na named human\non call, a hard\nstop", "fontSize": 15, "fontFamily": 2, "strokeColor": "#134e4a"}},
+
+  {"type": "text", "id": "t1", "x": 86, "y": 584, "text": "claims#33 · #423\nBrightwave · #154\nHarvey", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t2", "x": 277, "y": 584, "text": "claims#32 · #406\nWriter · #473\nGradient", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t3", "x": 468, "y": 584, "text": "claims#35 · #86\nLos Alamos · #469\nAXA", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t4", "x": 659, "y": 584, "text": "claims#34 · #187\nEnsemble Health\n#883 Risa Labs", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t5", "x": 850, "y": 584, "text": "claims#31 · #446\nAnterior · #938\nSonderMind", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t6", "x": 1041, "y": 584, "text": "claims#36 · #446\nAnterior · #197\nIntuit", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t7", "x": 1232, "y": 584, "text": "claims#37 · #339\nMason · #446 · #187\n#423", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "ellipse", "id": "claim", "x": 360, "y": 658, "width": 760, "height": 100, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "The stake is the standard: verification stops being\na nicety and becomes the thing customers buy.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#ffffff"}},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 786, "text": "Sources: #423 Conover (Brightwave) · #154 Qi & She (Harvey, LanceDB) · #406 Alshikh (Writer) · #473 Pekelis (Gradient) · #86 Myshatyn (Los Alamos)\n#469 Morina (AXA) · #187 Wan (Ensemble Health) · #883 Shankhdhar (Risa Labs) · #446 Anterior · #938 Reed & Revere (SonderMind) · #197 Singh (Intuit) · #339 Mason", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}
