@@ -138,6 +138,19 @@ describe.each(BOOKS)('$folder pages', ({ book, folder }) => {
     expect(localImages(html).length).toBe(book.figures.figures.length);
   });
 
+  it('shows each committed explainer video on its own chapter page only', () => {
+    for (const ch of book.chapters) {
+      const video = book.video(ch);
+      const html = render(book, book.chapterPath(ch), `${book.indexPath}/:slug`, <DraftBookChapterPage book={book} />);
+      if (!video) {
+        expect(html.includes('<video'), ch.slug).toBe(false);
+        continue;
+      }
+      for (const file of [video.src, video.poster]) expect(existsSync(resolve(website, 'public', file.slice(1))), file).toBe(true);
+      expect(html).toContain(`src="${video.src}"`);
+    }
+  });
+
   it('has a committed share card for every chapter, under this book', () => {
     for (const ch of book.chapters) {
       const card = book.ogCard(ch);

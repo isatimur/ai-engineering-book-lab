@@ -1,9 +1,30 @@
 import type { ComponentType, ReactNode } from 'react';
-import { AbsoluteFill, interpolate, Series, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Img, interpolate, Series, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { theme } from '../theme';
 
-/** Full-bleed dark background matching the site's Catalogue page. */
-export const SceneBackground = ({ children }: { children: ReactNode }) => (
+/**
+ * A still plate behind the text: dimmed, with a slow push-in, under a dark
+ * vignette so the type always wins. Book 1's episodes pass no backdrop.
+ */
+const Backdrop = ({ src }: { src: string }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
+  const scale = interpolate(frame, [0, durationInFrames], [1.04, 1.1], { extrapolateRight: 'clamp' });
+  return (
+    <AbsoluteFill>
+      <Img
+        src={staticFile(src)}
+        style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.55, transform: `scale(${scale})` }}
+      />
+      <AbsoluteFill
+        style={{ background: `radial-gradient(ellipse at center, ${theme.ink}e6 0%, ${theme.ink}99 55%, ${theme.ink}33 100%)` }}
+      />
+    </AbsoluteFill>
+  );
+};
+
+/** Full-bleed dark background matching the site's Catalogue page, optionally over a still `backdrop` (a path under public/). */
+export const SceneBackground = ({ children, backdrop }: { children: ReactNode; backdrop?: string }) => (
   <AbsoluteFill
     style={{
       backgroundColor: theme.ink,
@@ -12,7 +33,8 @@ export const SceneBackground = ({ children }: { children: ReactNode }) => (
       justifyContent: 'center',
     }}
   >
-    {children}
+    {backdrop && <Backdrop src={backdrop} />}
+    {backdrop ? <div style={{ position: 'relative', width: '100%' }}>{children}</div> : children}
   </AbsoluteFill>
 );
 
@@ -99,6 +121,7 @@ export const TermCard = ({
   definition,
   emphasized,
   durationInFrames,
+  backdrop,
 }: {
   index: number;
   total: number;
@@ -106,8 +129,9 @@ export const TermCard = ({
   definition: string;
   emphasized?: boolean;
   durationInFrames: number;
+  backdrop?: string;
 }) => (
-  <SceneBackground>
+  <SceneBackground backdrop={backdrop}>
     <FadeInOut durationInFrames={durationInFrames}>
       <div style={{ display: 'flex', gap: 10, justifyContent: 'center', marginBottom: 32 }}>
         {Array.from({ length: total }).map((_, i) => (

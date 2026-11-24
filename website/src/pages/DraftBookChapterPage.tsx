@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import type { DraftBook } from '../data/draftBooks';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
 import { BookOpenerFigure } from '../components/chapter/BookOpenerFigure';
+import { ChapterExplainerVideo } from '../components/chapter/ChapterExplainerVideo';
 import { BookContentsDrawer } from '../components/draft/BookContentsDrawer';
 import { ShareButton } from '../components/draft/ShareButton';
 import { SourcesDrawer } from '../components/evidence/SourcesDrawer';
@@ -38,7 +39,8 @@ const headerButton = 'uppercase tracking-widest hover:text-[var(--color-ink)] tr
  * - a sources drawer with this chapter's evidence graph
  * - Share (system share sheet, or copy link)
  * - a per-book "last chapter" bookmark for the book's landing page
- * Still none of: audiobook, explainer video, judge scorecard (none exist yet).
+ * - the chapter's explainer video, where one has been rendered
+ * Still none of: audiobook, judge scorecard (none exist yet).
  */
 export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
   const { slug } = useParams();
@@ -57,6 +59,7 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
   const prev = idx > 0 ? book.chapters[idx - 1] : undefined;
   const next = idx < book.chapters.length - 1 ? book.chapters[idx + 1] : undefined;
   const opener = book.figures.opener(chapter.number);
+  const video = book.video(chapter);
   const chapterNo = parseInt(chapter.number, 10);
 
   return (
@@ -102,6 +105,8 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
             <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
             <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
           </div>
+
+          {!textOnly && video && <ChapterExplainerVideo video={video} />}
 
           {!textOnly && opener && (
             <BookOpenerFigure src={book.figures.src(opener)} title={opener.title} chapterNo={chapterNo} />
