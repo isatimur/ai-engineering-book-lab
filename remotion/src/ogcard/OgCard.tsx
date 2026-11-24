@@ -1,10 +1,16 @@
 import { AbsoluteFill } from 'remotion';
-import { theme, BOOK_TITLE } from '../theme';
+import { theme, BOOK_TITLE, BOOK_URL } from '../theme';
 
 export type OgCardProps = {
   chapterNumber: string;
   title: string;
   promise: string;
+  /** Book name in the eyebrow and footer. Defaults to book 1. */
+  bookTitle?: string;
+  /** Domain printed bottom right. Defaults to book 1's. */
+  site?: string;
+  /** Top-bar colour. Defaults to the site accent. */
+  accent?: string;
 };
 
 export const ogCardDefaultProps: OgCardProps = {
@@ -19,7 +25,14 @@ export const ogCardDefaultProps: OgCardProps = {
  * diagram (those read fine full-size but turn to noise at thumbnail scale).
  * Branding matches the live site's dark theme exactly.
  */
-export const OgCard = ({ chapterNumber, title, promise }: OgCardProps) => (
+export const OgCard = ({
+  chapterNumber,
+  title,
+  promise,
+  bookTitle = BOOK_TITLE,
+  site = BOOK_URL,
+  accent = theme.accent,
+}: OgCardProps) => (
   <AbsoluteFill
     style={{
       backgroundColor: theme.ink,
@@ -36,7 +49,7 @@ export const OgCard = ({ chapterNumber, title, promise }: OgCardProps) => (
         left: 0,
         right: 0,
         height: 10,
-        backgroundColor: theme.accent,
+        backgroundColor: accent,
       }}
     />
     <p
@@ -50,7 +63,7 @@ export const OgCard = ({ chapterNumber, title, promise }: OgCardProps) => (
         marginBottom: 28,
       }}
     >
-      From Copilot to Colleague · Chapter {chapterNumber}
+      {bookTitle} · Chapter {chapterNumber}
     </p>
     <h1
       style={{
@@ -99,7 +112,7 @@ export const OgCard = ({ chapterNumber, title, promise }: OgCardProps) => (
           margin: 0,
         }}
       >
-        {BOOK_TITLE}
+        {bookTitle}
       </p>
       <p
         style={{
@@ -110,7 +123,7 @@ export const OgCard = ({ chapterNumber, title, promise }: OgCardProps) => (
           margin: 0,
         }}
       >
-        fromcopilottocolleague.com
+        {site}
       </p>
     </div>
   </AbsoluteFill>

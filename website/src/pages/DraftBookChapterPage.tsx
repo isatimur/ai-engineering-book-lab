@@ -65,6 +65,7 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
         title={`${chapter.seoTitle ?? chapter.title} — ${book.label}`}
         description={chapter.promise}
         path={book.chapterPath(chapter)}
+        image={book.ogCard(chapter)}
         type="article"
         noindex
       />
