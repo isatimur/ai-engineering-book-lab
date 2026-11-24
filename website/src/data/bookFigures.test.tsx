@@ -137,6 +137,14 @@ describe.each(BOOKS)('$folder pages', ({ book, folder }) => {
     const html = render(book, `${book.indexPath}/figures`, `${book.indexPath}/figures`, <DraftBookFiguresPage book={book} />);
     expect(localImages(html).length).toBe(book.figures.figures.length);
   });
+
+  it('has a committed share card for every chapter, under this book', () => {
+    for (const ch of book.chapters) {
+      const card = book.ogCard(ch);
+      expect(card).toBe(`/og${book.indexPath}/chapter-${ch.number}.png`);
+      expect(existsSync(resolve(website, 'public', card.slice(1))), card).toBe(true);
+    }
+  });
 });
 
 describe('evidence graphs per book', () => {

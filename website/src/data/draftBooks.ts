@@ -39,7 +39,12 @@ export type DraftBook = {
   evidence: EvidenceIndex;
   figures: FigureBook;
   graph: GraphBook;
+  /** The chapter's 1200x630 share card, rendered by remotion's render:og:draft. */
+  ogCard: (c: BookChapter) => string;
 };
+
+/** Share cards live under the book's own path, e.g. /og/second-book/chapter-04.png. */
+const ogCardFor = (indexPath: string) => (c: BookChapter) => `/og${indexPath}/chapter-${c.number}.png`;
 
 const makeGraph = (
   evidence: EvidenceIndex,
@@ -70,6 +75,7 @@ export const bookTwo: DraftBook = {
   evidence: evidenceTwo,
   figures: figuresTwo,
   graph: makeGraph(evidenceTwo, chaptersTwo, '/second-book', chapterTwoPath),
+  ogCard: ogCardFor('/second-book'),
 };
 
 export const bookThree: DraftBook = {
@@ -83,4 +89,5 @@ export const bookThree: DraftBook = {
   evidence: evidenceThree,
   figures: figuresThree,
   graph: makeGraph(evidenceThree, chaptersThree, '/third-book', chapterThreePath),
+  ogCard: ogCardFor('/third-book'),
 };
