@@ -1,0 +1,43 @@
+{
+"type": "excalidraw-skeleton",
+"appState": {"viewBackgroundColor": "#ffffff"},
+"elements": [
+{"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 10 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+{"type": "text", "id": "title", "x": 80, "y": 68, "text": "How review splits into three jobs", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b"},
+{"type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0},
+{"type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "role", "x": 80, "y": 138, "text": "What a change needs from review decides what a machine can do for it.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "text", "id": "h1", "x": 80, "y": 196, "text": "JOB", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "h2", "x": 400, "y": 196, "text": "THE QUESTION", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "h3", "x": 920, "y": 196, "text": "CAN A MACHINE DO IT?", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+
+{"type": "rectangle", "id": "j1", "x": 80, "y": 224, "width": 280, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "CORRECTNESS", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "q1", "x": 400, "y": 224, "width": 480, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Does it work, is it safe,\ndoes it break anything?", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "m1", "x": 920, "y": 224, "width": 480, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Most automatable: tests, types,\nstatic analysis, automated reviewers", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+
+{"type": "rectangle", "id": "j2", "x": 80, "y": 324, "width": 280, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "COHERENCE", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "q2", "x": 400, "y": 324, "width": 480, "height": 80, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Does it fit the system, or duplicate\nsomething that already exists?", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "m2", "x": 920, "y": 324, "width": 480, "height": 80, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Much harder: it needs a view of the\nwhole that no single change contains", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+
+{"type": "rectangle", "id": "j3", "x": 80, "y": 424, "width": 280, "height": 80, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "MENTAL ALIGNMENT", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "rectangle", "id": "q3", "x": 400, "y": 424, "width": 480, "height": 80, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Is the team on the same page about\nhow the system is changing, and why?", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "rectangle", "id": "m3", "x": 920, "y": 424, "width": 480, "height": 80, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "No. It is lost first at volume,\nand nobody notices losing it", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+
+{"type": "text", "id": "h4", "x": 80, "y": 548, "text": "WHERE TO PUT THE HUMAN · errors multiply upstream", "fontSize": 16, "fontFamily": 2, "strokeColor": "#c2410c"},
+{"type": "rectangle", "id": "p1", "x": 80, "y": 576, "width": 220, "height": 64, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "research · human reads", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "rectangle", "id": "p2", "x": 360, "y": 576, "width": 220, "height": 64, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "plan · human reads", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "rectangle", "id": "p3", "x": 640, "y": 576, "width": 220, "height": 64, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "code", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "rectangle", "id": "p4", "x": 920, "y": 576, "width": 220, "height": 64, "backgroundColor": "#e6ebf1", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "strokeStyle": "dashed", "label": {"text": "diffs · machine checks", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "arrow", "id": "pa1", "x": 300, "y": 608, "width": 60, "height": 0, "points": [[0, 0], [60, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "pa2", "x": 580, "y": 608, "width": 60, "height": 0, "points": [[0, 0], [60, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "pa3", "x": 860, "y": 608, "width": 60, "height": 0, "points": [[0, 0], [60, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "text", "id": "pnote", "x": 1170, "y": 584, "text": "fewer, larger\ndecisions to read", "fontSize": 18, "fontFamily": 2, "strokeColor": "#c2410c"},
+
+{"type": "rectangle", "id": "card", "x": 80, "y": 690, "width": 840, "height": 150, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+{"type": "text", "id": "card_head", "x": 102, "y": 706, "text": "#89 · Dex Horthy, HumanLayer · 00:17:14", "fontSize": 16, "fontFamily": 3, "strokeColor": "#fdba74"},
+{"type": "text", "id": "card_body", "x": 102, "y": 742, "text": "\"a bad line of code is a bad line of code\"\n\nclaims#16: errors multiply upstream, so human\nreview belongs on research and plans", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4"},
+{"type": "ellipse", "id": "claim", "x": 980, "y": 700, "width": 420, "height": 130, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Do not read faster.\nRead upstream.", "fontSize": 26, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "cite", "x": 80, "y": 870, "text": "Sources: #89 — Dex Horthy, HumanLayer (claims#16) · #1237 — Dan Adler, Sourcegraph (claims#31, coherence)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+]
+}

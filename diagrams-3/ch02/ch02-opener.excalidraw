@@ -1,0 +1,522 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 2 · THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 80,
+   "y": 68,
+   "text": "Intent Before Specification",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a3",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a4",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 80,
+   "y": 138,
+   "text": "Three claims: when code is cheap, the scarce work is deciding what to build.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b6",
+   "x": 80,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "INTENT",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b7",
+   "x": 270,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "SPEC",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 241,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b9",
+   "x": 460,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "PLAN",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a10",
+   "x": 431,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 650,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "CODE",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 621,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 840,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "GATES",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a14",
+   "x": 811,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 1030,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "REVIEW",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a16",
+   "x": 1001,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 1220,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "LIVE",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a18",
+   "x": 1191,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t19",
+   "x": 80,
+   "y": 280,
+   "text": "this chapter: the step before any document helps",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#c2410c"
+  },
+  {
+   "type": "rectangle",
+   "id": "b20",
+   "x": 80,
+   "y": 360,
+   "width": 423,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Code got cheap. Deciding what\nto build is the scarce skill.\nBy default, new capability\ngoes to the wrong things.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b21",
+   "x": 270,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t22",
+   "x": 90,
+   "y": 522,
+   "text": "claims#7 · Dodds (quoting Raad) · Lowe (quoting Ng)",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b23",
+   "x": 533,
+   "y": 360,
+   "width": 423,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "The engineer's half:\nconnect what the customer\nneeds to the technical\nchoices.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b24",
+   "x": 723,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 543,
+   "y": 522,
+   "text": "claims#8 · Dodds",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b26",
+   "x": 986,
+   "y": 360,
+   "width": 423,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Some intent cannot be\nwritten down first. It is\nfound by building and\nshipping.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b27",
+   "x": 1176,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t28",
+   "x": 996,
+   "y": 522,
+   "text": "claims#9 · Stein · Auchenberg",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "ellipse",
+   "id": "b29",
+   "x": 80,
+   "y": 590,
+   "width": 600,
+   "height": 90,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Decide what to build before you specify it.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t30",
+   "x": 720,
+   "y": 600,
+   "text": "Sources: #1244 — Kent C. Dodds, EpicProduct.engineer · #1245 — Kent C. Dodds, EpicProduct.engineer\n#162 — James Lowe, i.AI · #160 — Ben Stein, Teammates\n#161 — Kenneth Auchenberg, ex-Stripe and VS Code",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

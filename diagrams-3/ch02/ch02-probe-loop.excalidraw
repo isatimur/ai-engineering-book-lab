@@ -1,0 +1,551 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 2 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 80,
+   "y": 68,
+   "text": "How intent is found when it cannot be written first",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a3",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a4",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 80,
+   "y": 138,
+   "text": "Hold a clear question, probe cheaply until the answer is real, then write down what you learned.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t6",
+   "x": 80,
+   "y": 215,
+   "text": "THE WATERFALL ASSUMPTION · intent waits in someone's head",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b7",
+   "x": 80,
+   "y": 245,
+   "width": 210,
+   "height": 74,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "intent, complete,\nin someone's head",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 296,
+   "y": 282,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b9",
+   "x": 340,
+   "y": 245,
+   "width": 210,
+   "height": 74,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "type it out\nin a Google doc",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a10",
+   "x": 556,
+   "y": 282,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 600,
+   "y": 245,
+   "width": 210,
+   "height": 74,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "build it",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t12",
+   "x": 80,
+   "y": 330,
+   "text": "Fails when the product rests on capabilities whose limits nobody knows yet.",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#b42318"
+  },
+  {
+   "type": "text",
+   "id": "t13",
+   "x": 80,
+   "y": 385,
+   "text": "FINDING INTENT BY BUILDING",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b14",
+   "x": 80,
+   "y": 415,
+   "width": 200,
+   "height": 84,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1  HOLD A\nCLEAR QUESTION",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a15",
+   "x": 286,
+   "y": 457,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b16",
+   "x": 330,
+   "y": 415,
+   "width": 200,
+   "height": 84,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2  PROBE CHEAPLY\nbuild it, ship it\nto someone",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a17",
+   "x": 536,
+   "y": 457,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b18",
+   "x": 580,
+   "y": 415,
+   "width": 200,
+   "height": 84,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3  LEARN\nwhat it can do",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a19",
+   "x": 680,
+   "y": 503,
+   "width": 250,
+   "height": 34,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     34
+    ],
+    [
+     -250,
+     34
+    ],
+    [
+     -250,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0,
+   "strokeStyle": "dashed"
+  },
+  {
+   "type": "text",
+   "id": "t20",
+   "x": 468,
+   "y": 545,
+   "text": "not real yet: probe again",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "arrow",
+   "id": "a21",
+   "x": 786,
+   "y": 457,
+   "width": 40,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b22",
+   "x": 830,
+   "y": 415,
+   "width": 190,
+   "height": 84,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "4  WRITE DOWN\nwhat you learned",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t23",
+   "x": 832,
+   "y": 508,
+   "text": "then specify it (Chapter 3)",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#94a3b8"
+  },
+  {
+   "type": "rectangle",
+   "id": "b24",
+   "x": 80,
+   "y": 590,
+   "width": 560,
+   "height": 132,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 102,
+   "y": 606,
+   "text": "intent note (the shape, not a real file)",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t26",
+   "x": 102,
+   "y": 642,
+   "text": "## what we know\n## what we are guessing\n## which guesses this week settles",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "rectangle",
+   "id": "b27",
+   "x": 680,
+   "y": 590,
+   "width": 340,
+   "height": 60,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "spike with a written purpose:\nupstream work",
+    "fontSize": 15,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b28",
+   "x": 680,
+   "y": 662,
+   "width": 340,
+   "height": 60,
+   "backgroundColor": "#fbe0e0",
+   "strokeColor": "#b42318",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "spike that becomes the product\nby accident: the wrong thing",
+    "fontSize": 15,
+    "fontFamily": 2,
+    "strokeColor": "#7a1a12"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b29",
+   "x": 1070,
+   "y": 215,
+   "width": 400,
+   "height": 320,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t30",
+   "x": 1092,
+   "y": 233,
+   "text": "#160 · Stein · 00:07:26",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t31",
+   "x": 1092,
+   "y": 265,
+   "text": "\"if you asked me I could not\n sit down in front of a Google\n doc and be like oh let me\n like type out what this\n thing should\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "text",
+   "id": "t32",
+   "x": 1092,
+   "y": 401,
+   "text": "#161 · Auchenberg · 00:00:17",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "t33",
+   "x": 1092,
+   "y": 433,
+   "text": "\"building products is really\n about shipping something to\n someone always wins\"",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "b34",
+   "x": 1070,
+   "y": 580,
+   "width": 400,
+   "height": 92,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Probe first. Then\nwrite it down.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t35",
+   "x": 80,
+   "y": 750,
+   "text": "Sources: #160 — Ben Stein, Teammates · #161 — Kenneth Auchenberg, ex-Stripe and VS Code",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

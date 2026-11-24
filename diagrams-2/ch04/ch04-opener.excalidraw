@@ -1,0 +1,59 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 4 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "Beyond Text", "fontSize": 36, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 124, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 140, "text": "Every modality starts from the same LLM template. Its own constraint decides the shape it takes.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "top_h", "x": 80, "y": 200, "text": "THE GENERIC PATTERN · ONE MODEL GENERATES A SEQUENCE OF TOKENS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "rectangle", "id": "p1", "x": 80, "y": 228, "width": 248, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "tokens in → one model\n→ tokens out", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p2", "x": 348, "y": 228, "width": 248, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "tokens in → one model\n→ tokens out", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p3", "x": 616, "y": 228, "width": 248, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "tokens in → one model\n→ tokens out", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p4", "x": 884, "y": 228, "width": 248, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "tokens in → one model\n→ tokens out", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "p5", "x": 1152, "y": 228, "width": 248, "height": 70, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "tokens in → one model\n→ tokens out", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+
+  {"type": "arrow", "id": "d1a", "x": 204, "y": 300, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d2a", "x": 472, "y": 300, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d3a", "x": 740, "y": 300, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d4a", "x": 1008, "y": 300, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d5a", "x": 1276, "y": 300, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#475569", "strokeWidth": 2, "roughness": 0},
+
+  {"type": "text", "id": "c1_h", "x": 80, "y": 348, "text": "SPEECH", "fontSize": 15, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "text", "id": "c2_h", "x": 348, "y": 348, "text": "LIVE VOICE", "fontSize": 15, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "text", "id": "c3_h", "x": 616, "y": 348, "text": "RECOMMENDATION", "fontSize": 15, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "text", "id": "c4_h", "x": 884, "y": 348, "text": "GENERATIVE MEDIA", "fontSize": 15, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "text", "id": "c5_h", "x": 1152, "y": 348, "text": "EMBODIMENT", "fontSize": 15, "fontFamily": 2, "strokeColor": "#a8412e"},
+
+  {"type": "rectangle", "id": "k1", "x": 80, "y": 372, "width": 248, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "audio is not\na sequence of words", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "k2", "x": 348, "y": 372, "width": 248, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a voice agent that\npauses breaks the illusion", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "k3", "x": 616, "y": 372, "width": 248, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "a zoo of specialised\nmodels, one per surface", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "k4", "x": 884, "y": 372, "width": 248, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "image, video and music\nare separate model families", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "k5", "x": 1152, "y": 372, "width": 248, "height": 70, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "the model must perceive,\nplan and act", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+
+  {"type": "arrow", "id": "d1b", "x": 204, "y": 444, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d2b", "x": 472, "y": 444, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d3b", "x": 740, "y": 444, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d4b", "x": 1008, "y": 444, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "d5b", "x": 1276, "y": 444, "width": 0, "height": 40, "points": [[0, 0], [0, 40]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+
+  {"type": "rectangle", "id": "r1", "x": 80, "y": 486, "width": 248, "height": 124, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "TOKENIZE IT\ncut speech into discrete\naudio tokens: TTS becomes\nlanguage modelling", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r2", "x": 348, "y": 486, "width": 248, "height": 124, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "STREAM IT\nvoice the first audio\npackets at once: latency\nlives in the architecture", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r3", "x": 616, "y": 486, "width": 248, "height": 124, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "CONSOLIDATE IT\none foundation model for\nevery surface, at a scale\n\"bigger than search\"", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r4", "x": 884, "y": 486, "width": 248, "height": 124, "backgroundColor": "#ffffff", "strokeColor": "#0f766e", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": {"text": "COMPOSE IT\nGemini writes the prompts;\nImagen, Veo and Lyria\nmake the media", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "rectangle", "id": "r5", "x": 1152, "y": 486, "width": 248, "height": 124, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "CONSOLIDATE IT\none end-to-end model:\nWaymo's EMMA drives,\nGR00T N1 moves a humanoid", "fontSize": 16, "fontFamily": 2, "strokeColor": "#134e4a"}},
+  {"type": "text", "id": "r4_n", "x": 894, "y": 616, "text": "the exception: compose, don't merge", "fontSize": 15, "fontFamily": 2, "strokeColor": "#0f766e"},
+
+  {"type": "text", "id": "t1", "x": 90, "y": 644, "text": "claims#19 · #663 Mistral\n#385 McGovern", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t2", "x": 358, "y": 644, "text": "claims#22 · #663 Mistral\n#662 Gradium AI", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t3", "x": 626, "y": 644, "text": "claims#20 · claims#21 · #245 YouTube\n#247 Netflix · #248 LinkedIn", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t4", "x": 894, "y": 644, "text": "claims#23 · #692 DeepMind", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "t5", "x": 1162, "y": 644, "text": "claims#24 · #174 Waymo\n#165 NVIDIA", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "ellipse", "id": "claim", "x": 380, "y": 700, "width": 720, "height": 100, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Two mechanisms, tokenization and consolidation:\nmodel-building is one discipline, whatever the output.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#ffffff"}},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 830, "text": "Sources: #663 Humeau (Mistral) · #385 McGovern · #662 Zeghidour (Gradium AI) · #245 Tandon (YouTube) · #247 Feng (Netflix)\n#248 Hamed & Maziar (LinkedIn) · #692 Vernade (DeepMind) · #174 Hwang (Waymo) · #165 Annika & Aastha (NVIDIA)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}

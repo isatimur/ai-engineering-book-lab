@@ -1,0 +1,611 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 2 · CHAPTER 8 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "Three escalation paths, each ending at a named human",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#155e75"
+  },
+  {
+   "type": "line",
+   "id": "sig_teal",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#0e7490",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_rose",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#be185d",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Where a confident wrong answer carries unbounded cost, the risk is parked with a person, by design.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "ceiling",
+   "x": 80,
+   "y": 210,
+   "width": 300,
+   "height": 310,
+   "backgroundColor": "#f5d5d0",
+   "strokeColor": "#a8412e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "THE GROUNDING CEILING\nstrongest model on a\nfinance benchmark,\nimperfect context:\n~81% on the\ncombined measure\n\nroughly one answer\nin five is wrong",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#a8412e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "r1",
+   "x": 382,
+   "y": 290,
+   "width": 76,
+   "height": -35,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     -35
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "r2",
+   "x": 382,
+   "y": 365,
+   "width": 76,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "r3",
+   "x": 382,
+   "y": 440,
+   "width": 76,
+   "height": 35,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     76,
+     35
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "l1n",
+   "x": 460,
+   "y": 210,
+   "width": 200,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#64748b",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Mason\ntelemedicine",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#334155"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l1a",
+   "x": 720,
+   "y": 210,
+   "width": 220,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "gate on a\nconfidence score",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l1b",
+   "x": 1000,
+   "y": 210,
+   "width": 220,
+   "height": 90,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "out of script:\na physician's\nassistant",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l1c",
+   "x": 1280,
+   "y": 210,
+   "width": 200,
+   "height": 90,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "medical judgment:\n\"call 911, go to\nyour doctor\"",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "l1x",
+   "x": 662,
+   "y": 255,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l1y",
+   "x": 942,
+   "y": 255,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l1z",
+   "x": 1222,
+   "y": 255,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "l2n",
+   "x": 460,
+   "y": 320,
+   "width": 200,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#64748b",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Anterior\nprior authorization",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#334155"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l2a",
+   "x": 720,
+   "y": 320,
+   "width": 220,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "low-confidence\ncase",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l2c",
+   "x": 1000,
+   "y": 320,
+   "width": 480,
+   "height": 90,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "an on-call clinician reviews it",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "l2x",
+   "x": 662,
+   "y": 365,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l2y",
+   "x": 942,
+   "y": 365,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "l3n",
+   "x": 460,
+   "y": 430,
+   "width": 200,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#64748b",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Ensemble Health\npayer appeals",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#334155"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l3a",
+   "x": 720,
+   "y": 430,
+   "width": 220,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "appeal letter\ndrafted",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l3b",
+   "x": 1000,
+   "y": 430,
+   "width": 220,
+   "height": 90,
+   "backgroundColor": "#ccfbf1",
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "clinical expert\nmakes the final\ndecision",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#0f766e"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "l3c",
+   "x": 1280,
+   "y": 430,
+   "width": 200,
+   "height": 90,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "submitted to\nthe payer",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#134e4a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "l3x",
+   "x": 662,
+   "y": 475,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l3y",
+   "x": 942,
+   "y": 475,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#0f766e",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "l3z",
+   "x": 1222,
+   "y": 475,
+   "width": 56,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     56,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "legend",
+   "x": 1000,
+   "y": 532,
+   "text": "teal = the named human who answers for the output",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 575,
+   "width": 820,
+   "height": 172,
+   "backgroundColor": "#0b2b2e",
+   "strokeColor": "#134e4a",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_h",
+   "x": 100,
+   "y": 587,
+   "text": "the ceiling and the escalation targets, in the speakers' words",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#5eead4"
+  },
+  {
+   "type": "text",
+   "id": "card_b",
+   "x": 100,
+   "y": 615,
+   "text": "Writer   -> \"81% sounds a great number if you think\n             in the reality\"\nMason    -> \"call 911, go to your doctor,\"\nAnterior -> \"give it to an on call clinician to review it\"\nEnsemble -> \"allow the clinical expert to make the final\n             decision ... before it gets submitted to\n             the to the payer.\"",
+   "fontSize": 15,
+   "fontFamily": 3,
+   "strokeColor": "#ccfbf1"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 930,
+   "y": 600,
+   "width": 550,
+   "height": 120,
+   "backgroundColor": "#e11d48",
+   "strokeColor": "#881337",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "A better model makes escalation rarer.\nIt does not remove the place\nto escalate to.",
+    "fontSize": 20,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 775,
+   "text": "Sources: #406 Alshikh (Writer) · #339 Mason · #446 Anterior · #187 Wan (Ensemble Health)",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

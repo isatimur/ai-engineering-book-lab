@@ -1,0 +1,38 @@
+{
+"type": "excalidraw-skeleton",
+"appState": {"viewBackgroundColor": "#ffffff"},
+"elements": [
+{"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 9 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+{"type": "text", "id": "title", "x": 80, "y": 68, "text": "How a war room spends expert attention", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b"},
+{"type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0},
+{"type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "role", "x": 80, "y": 138, "text": "GEICO's set-up: the experts are the scarce input, so one driver holds the tools.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "text", "id": "h1", "x": 80, "y": 200, "text": "THE ROSTER", "fontSize": 16, "fontFamily": 2, "strokeColor": "#c2410c"},
+{"type": "text", "id": "h2", "x": 460, "y": 200, "text": "ONE SHARED PLACE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "h3", "x": 880, "y": 200, "text": "THE OPERATOR", "fontSize": 16, "fontFamily": 2, "strokeColor": "#c2410c"},
+
+{"type": "rectangle", "id": "dm", "x": 80, "y": 230, "width": 300, "height": 100, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "KEY DECISION MAKERS\nfor the topic", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "rectangle", "id": "sme", "x": 80, "y": 350, "width": 300, "height": 120, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "SUBJECT MATTER EXPERTS\nknow why the system is\nthe way it is", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+
+{"type": "rectangle", "id": "room", "x": 460, "y": 230, "width": 340, "height": 240, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "SHARED ENVIRONMENT\n\nthe chatter and\nthe design work", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+
+{"type": "rectangle", "id": "driver", "x": 880, "y": 230, "width": 240, "height": 240, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "ONE DRIVER\n\nwields the\nexpensive\nAI tools", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "rectangle", "id": "tools", "x": 1200, "y": 230, "width": 200, "height": 240, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "AI TOOLS", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+
+{"type": "arrow", "id": "a1", "x": 380, "y": 280, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "a2", "x": 380, "y": 410, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "a3", "x": 800, "y": 320, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "a4", "x": 880, "y": 380, "width": -80, "height": 0, "points": [[0, 0], [-80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+{"type": "arrow", "id": "a5", "x": 1120, "y": 350, "width": 80, "height": 0, "points": [[0, 0], [80, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 2, "roughness": 0},
+
+{"type": "text", "id": "n1", "x": 80, "y": 486, "text": "answer the questions only they can answer", "fontSize": 16, "fontFamily": 2, "strokeColor": "#c2410c"},
+{"type": "text", "id": "n2", "x": 880, "y": 486, "text": "so the experts never have to touch the tools", "fontSize": 16, "fontFamily": 2, "strokeColor": "#c2410c"},
+
+{"type": "rectangle", "id": "card", "x": 80, "y": 550, "width": 840, "height": 160, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+{"type": "text", "id": "card_head", "x": 102, "y": 566, "text": "#1386 · Ford Prior, GEICO · 00:04:39–00:04:51", "fontSize": 16, "fontFamily": 3, "strokeColor": "#fdba74"},
+{"type": "text", "id": "card_body", "x": 102, "y": 604, "text": "the set-up → \"a multiplayer AI-native war room.\"\n\nthe role   → \"a driver to wield these expensive\n               AI tools,\"", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4"},
+{"type": "ellipse", "id": "claim", "x": 980, "y": 565, "width": 420, "height": 130, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Concentrate the experts.\nDo not replace them.", "fontSize": 24, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "cite", "x": 80, "y": 740, "text": "Source: #1386 — Ford Prior, GEICO (claims#34)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+]
+}

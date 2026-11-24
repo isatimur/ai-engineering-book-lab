@@ -1,0 +1,570 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "t1",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 6 · THE ARGUMENT",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "t2",
+   "x": 80,
+   "y": 68,
+   "text": "The Independence Problem",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "a3",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "a4",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t5",
+   "x": 80,
+   "y": 138,
+   "text": "Four claims: a check carries authority only if it can fail differently from what it checks.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b6",
+   "x": 80,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "INTENT",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "b7",
+   "x": 270,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "SPEC",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a8",
+   "x": 241,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b9",
+   "x": 460,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "PLAN",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a10",
+   "x": 431,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b11",
+   "x": 650,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "CODE",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a12",
+   "x": 621,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b13",
+   "x": 840,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "GATES",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a14",
+   "x": 811,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b15",
+   "x": 1030,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#fff1e6",
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "REVIEW",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#7c2d12"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a16",
+   "x": 1001,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "b17",
+   "x": 1220,
+   "y": 215,
+   "width": 158,
+   "height": 56,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "LIVE",
+    "fontSize": 16,
+    "fontFamily": 2,
+    "strokeColor": "#475569"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "a18",
+   "x": 1191,
+   "y": 243,
+   "width": 26,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     26,
+     0
+    ]
+   ],
+   "strokeColor": "#94a3b8",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "t19",
+   "x": 840,
+   "y": 280,
+   "text": "this chapter: who checks the check",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#c2410c"
+  },
+  {
+   "type": "rectangle",
+   "id": "b20",
+   "x": 80,
+   "y": 360,
+   "width": 310,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Agents make consequential\nerrors often. Defects rise\nwith AI code volume.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b21",
+   "x": 214,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "1",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t22",
+   "x": 90,
+   "y": 522,
+   "text": "claims#22 · Gallon · Reimers",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b23",
+   "x": 420,
+   "y": 360,
+   "width": 310,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "An automated verifier\nis not neutral. It can be\nsystematically generous.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b24",
+   "x": 554,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "2",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t25",
+   "x": 430,
+   "y": 522,
+   "text": "claims#23 · Browserbase",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b26",
+   "x": 760,
+   "y": 360,
+   "width": 310,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Independence is engineered:\ndifferent models,\ndifferent techniques.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b27",
+   "x": 894,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "3",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t28",
+   "x": 770,
+   "y": 522,
+   "text": "claims#24 · Shaukat",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "b29",
+   "x": 1100,
+   "y": 360,
+   "width": 310,
+   "height": 150,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "\"Human in the loop\"\ndoes not scale. At volume it\nlabels unsupervised output.",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "ellipse",
+   "id": "b30",
+   "x": 1234,
+   "y": 338,
+   "width": 42,
+   "height": 42,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "4",
+    "fontSize": 18,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t31",
+   "x": 1110,
+   "y": 522,
+   "text": "claims#37 · Shaukat",
+   "fontSize": 14,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "ellipse",
+   "id": "b32",
+   "x": 80,
+   "y": 590,
+   "width": 600,
+   "height": 90,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Check with something that fails differently.",
+    "fontSize": 21,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "t33",
+   "x": 720,
+   "y": 600,
+   "text": "Sources: #1347 — Corey Gallon, Rexmore · #210 — Tomas Reimers, Graphite\n#1250 — Browserbase · #864 — Tariq Shaukat, Sonar\n#1432 — Tariq Shaukat, Sonar",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

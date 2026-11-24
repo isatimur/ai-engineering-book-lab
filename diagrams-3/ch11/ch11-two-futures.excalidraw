@@ -1,0 +1,39 @@
+{
+  "type": "excalidraw-skeleton",
+  "appState": { "viewBackgroundColor": "#ffffff" },
+  "elements": [
+    { "type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 11 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "text", "id": "title", "x": 80, "y": 68, "text": "How a factory differs from parallel agents", "fontSize": 34, "fontFamily": 2, "strokeColor": "#2e3a4b" },
+    { "type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0 },
+    { "type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "role", "x": 80, "y": 138, "text": "Both put many agents to work. Only one takes the human out of the loop.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "text", "id": "h_amp", "x": 80, "y": 205, "text": "AMPLIFICATION · NOT A FACTORY", "fontSize": 16, "fontFamily": 2, "strokeColor": "#c2410c" },
+    { "type": "text", "id": "h_abs", "x": 760, "y": 205, "text": "ABSENCE · THE FACTORY", "fontSize": 16, "fontFamily": 2, "strokeColor": "#3f4c5f" },
+
+    { "type": "rectangle", "id": "eng1", "x": 80, "y": 235, "width": 600, "height": 80, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "ONE ENGINEER · present, directing\nmany agents, one person with leverage", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "rectangle", "id": "ag1", "x": 80, "y": 385, "width": 180, "height": 60, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "agent 1", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "ag2", "x": 290, "y": 385, "width": 180, "height": 60, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "agent 2", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "rectangle", "id": "ag3", "x": 500, "y": 385, "width": 180, "height": 60, "backgroundColor": "#ffffff", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "agent N", "fontSize": 17, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "arrow", "id": "x1", "x": 380, "y": 317, "width": -210, "height": 66, "points": [[0, 0], [-210, 66]], "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "x2", "x": 380, "y": 317, "width": 0, "height": 66, "points": [[0, 0], [0, 66]], "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0 },
+    { "type": "arrow", "id": "x3", "x": 380, "y": 317, "width": 210, "height": 66, "points": [[0, 0], [210, 66]], "strokeColor": "#c2410c", "strokeWidth": 2, "roughness": 0 },
+    { "type": "text", "id": "amp_note", "x": 80, "y": 460, "text": "\"one individual IC running lots of coding\nagents at the same time\" · Bichard: not his definition", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "line", "id": "divider", "x": 720, "y": 205, "width": 0, "height": 310, "points": [[0, 0], [0, 310]], "strokeColor": "#cbd5e1", "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0 },
+
+    { "type": "rectangle", "id": "eng2", "x": 760, "y": 235, "width": 610, "height": 80, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "strokeStyle": "dashed", "fillStyle": "solid", "roughness": 0, "label": { "text": "ENGINEER · designs the production line\nnot proactively interacting with a computer", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12" } },
+    { "type": "arrow", "id": "y1", "x": 1065, "y": 317, "width": 0, "height": 66, "points": [[0, 0], [0, 66]], "strokeColor": "#3f4c5f", "strokeWidth": 3, "roughness": 0 },
+    { "type": "text", "id": "y1n", "x": 1080, "y": 336, "text": "builds the process, then steps out", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+    { "type": "rectangle", "id": "line", "x": 760, "y": 385, "width": 610, "height": 60, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": { "text": "THE SDLC · runs when nobody is watching", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a" } },
+    { "type": "text", "id": "abs_note", "x": 760, "y": 460, "text": "the object of work is the production line,\nnot the product", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b" },
+
+    { "type": "rectangle", "id": "card", "x": 80, "y": 560, "width": 780, "height": 220, "backgroundColor": "#1f1b17", "strokeColor": "#4a3f35", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0 },
+    { "type": "text", "id": "card_head", "x": 105, "y": 578, "text": "the definition · on the record", "fontSize": 17, "fontFamily": 3, "strokeColor": "#fdba74" },
+    { "type": "text", "id": "card_body", "x": 105, "y": 618, "text": "factory  \"the commitment to incrementally moving\n          the human out of the loop within the SDLC\"\n          (Lou Bichard, Ona)\n\nfuture   \"software engineering is going to become\n          something more like factory engineering\"\n          (Zach Lloyd, Warp)", "fontSize": 17, "fontFamily": 3, "strokeColor": "#f5ede4" },
+
+    { "type": "ellipse", "id": "claim", "x": 900, "y": 590, "width": 470, "height": 140, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": { "text": "Parallel agents amplify a person.\nA factory removes one.", "fontSize": 21, "fontFamily": 2, "strokeColor": "#ffffff" } },
+
+    { "type": "text", "id": "cite", "x": 80, "y": 815, "text": "Sources: #704 — Lou Bichard, Ona · #1210 — Zach Lloyd, Warp", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569" }
+  ]
+}

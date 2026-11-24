@@ -1,0 +1,350 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {
+  "viewBackgroundColor": "#ffffff"
+ },
+ "elements": [
+  {
+   "type": "text",
+   "id": "eyebrow",
+   "x": 80,
+   "y": 40,
+   "text": "BOOK 3 · CHAPTER 12 · HOW IT WORKS",
+   "fontSize": 16,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "text",
+   "id": "title",
+   "x": 80,
+   "y": 68,
+   "text": "How the bake-off measured process, twice",
+   "fontSize": 34,
+   "fontFamily": 2,
+   "strokeColor": "#2e3a4b"
+  },
+  {
+   "type": "line",
+   "id": "sig_slate",
+   "x": 80,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#475569",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "line",
+   "id": "sig_orange",
+   "x": 190,
+   "y": 122,
+   "width": 110,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     110,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "role",
+   "x": 80,
+   "y": 138,
+   "text": "Fix the measures first, then run three arms on a real defect. Added process changed the cost, not the outcome.",
+   "fontSize": 20,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "design",
+   "x": 80,
+   "y": 200,
+   "width": 1290,
+   "height": 76,
+   "backgroundColor": "#e6ebf1",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "DESIGN · committed before any arm ran\na real open defect · one identical prompt that names no mechanism and no file · same model · fresh workspace each",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "arm1",
+   "x": 80,
+   "y": 310,
+   "width": 400,
+   "height": 54,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "CONTROL · no process at all",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "arm2",
+   "x": 525,
+   "y": 310,
+   "width": 400,
+   "height": 54,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "CEREMONY · a full pipeline",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "arm3",
+   "x": 970,
+   "y": 310,
+   "width": 400,
+   "height": 54,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "SKILLS · sharp, single-purpose",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "d1",
+   "x": 280,
+   "y": 278,
+   "width": 0,
+   "height": 30,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     30
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d2",
+   "x": 725,
+   "y": 278,
+   "width": 0,
+   "height": 30,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     30
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "arrow",
+   "id": "d3",
+   "x": 1170,
+   "y": 278,
+   "width": 0,
+   "height": 30,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     30
+    ]
+   ],
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "roughness": 0
+  },
+  {
+   "type": "rectangle",
+   "id": "r1",
+   "x": 80,
+   "y": 400,
+   "width": 610,
+   "height": 170,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "ROUND 1 · a nine-line fix\nall three diagnosed it unaided, in under a minute\nonly discriminator: revert the fix, does a test go red?\ncontrol FAILS: working code, no test\ntest-first habit: +1 tool call, ~6k tokens\nartifacts before code: zero in all three arms",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "rectangle",
+   "id": "r2",
+   "x": 760,
+   "y": 400,
+   "width": 610,
+   "height": 170,
+   "backgroundColor": "#ffffff",
+   "strokeColor": "#3f4c5f",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "ROUND 2 · sixteen files, two published books at risk\nnew measure: reuse the existing parser, or write a third?\nall three arms passed every measure\ncontrol made the same interface call as the plan arm\nceremony fired for the first time:\n+30% tokens, +50% wall time over the skills arm",
+    "fontSize": 17,
+    "fontFamily": 2,
+    "strokeColor": "#1f2a3a"
+   }
+  },
+  {
+   "type": "arrow",
+   "id": "rr",
+   "x": 692,
+   "y": 485,
+   "width": 66,
+   "height": 0,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     66,
+     0
+    ]
+   ],
+   "strokeColor": "#c2410c",
+   "strokeWidth": 3,
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "rrn",
+   "x": 80,
+   "y": 588,
+   "text": "Round 1 named its own limit before it ran: a diagnosis-only task flatters light approaches. Round 2 tested that. The ranking did not invert.",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#64748b"
+  },
+  {
+   "type": "rectangle",
+   "id": "card",
+   "x": 80,
+   "y": 645,
+   "width": 760,
+   "height": 180,
+   "backgroundColor": "#1f1b17",
+   "strokeColor": "#4a3f35",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0
+  },
+  {
+   "type": "text",
+   "id": "card_head",
+   "x": 105,
+   "y": 663,
+   "text": "bake-off results · both rounds together",
+   "fontSize": 17,
+   "fontFamily": 3,
+   "strokeColor": "#fdba74"
+  },
+  {
+   "type": "text",
+   "id": "card_body",
+   "x": 105,
+   "y": 703,
+   "text": "                  round 1 (9 lines)  round 2 (16 files)\nceremony recorded zero, all arms     spec + plan, one arm\ncontrol's result  no red-on-revert   all measures pass\ndiscriminator     red-on-revert test none\nmost expensive    ceremony arm       ceremony arm",
+   "fontSize": 16,
+   "fontFamily": 3,
+   "strokeColor": "#f5ede4"
+  },
+  {
+   "type": "ellipse",
+   "id": "claim",
+   "x": 880,
+   "y": 650,
+   "width": 490,
+   "height": 150,
+   "backgroundColor": "#ea580c",
+   "strokeColor": "#9a3412",
+   "strokeWidth": 2,
+   "fillStyle": "solid",
+   "roughness": 0,
+   "label": {
+    "text": "Added process did not\nchange the outcome.\nIt changed the cost.",
+    "fontSize": 22,
+    "fontFamily": 2,
+    "strokeColor": "#ffffff"
+   }
+  },
+  {
+   "type": "text",
+   "id": "cite",
+   "x": 80,
+   "y": 860,
+   "text": "Sources: file research_passes/2026-11-16-sdd-bakeoff-results.md · file research_passes/2026-11-16-sdd-bakeoff-round2-results.md",
+   "fontSize": 15,
+   "fontFamily": 2,
+   "strokeColor": "#475569"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "type": "excalidraw-skeleton",
+ "appState": {"viewBackgroundColor": "#ffffff"},
+ "elements": [
+  {"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 2 · CHAPTER 4 · HOW IT WORKS", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+  {"type": "text", "id": "title", "x": 80, "y": 68, "text": "Recommendation swaps a zoo of models for one foundation model", "fontSize": 34, "fontFamily": 2, "strokeColor": "#155e75"},
+  {"type": "line", "id": "sig_teal", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#0e7490", "strokeWidth": 3, "roughness": 0},
+  {"type": "line", "id": "sig_rose", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#be185d", "strokeWidth": 3, "roughness": 0},
+  {"type": "text", "id": "role", "x": 80, "y": 138, "text": "YouTube, Netflix and LinkedIn make the same move: one model behind every recommendation use case.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "a_h", "x": 80, "y": 200, "text": "BEFORE · ONE SPECIALISED MODEL PER USE CASE", "fontSize": 16, "fontFamily": 2, "strokeColor": "#a8412e"},
+  {"type": "rectangle", "id": "m1", "x": 80, "y": 236, "width": 220, "height": 52, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "specialised model", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "m2", "x": 80, "y": 306, "width": 220, "height": 52, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "specialised model", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "m3", "x": 80, "y": 376, "width": 220, "height": 52, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "large embedding model", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "rectangle", "id": "m4", "x": 80, "y": 446, "width": 220, "height": 52, "backgroundColor": "#f5d5d0", "strokeColor": "#a8412e", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "specialised model", "fontSize": 16, "fontFamily": 2, "strokeColor": "#4d1d13"}},
+  {"type": "arrow", "id": "am1", "x": 302, "y": 262, "width": 96, "height": 0, "points": [[0, 0], [96, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "am2", "x": 302, "y": 332, "width": 96, "height": 0, "points": [[0, 0], [96, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "am3", "x": 302, "y": 402, "width": 96, "height": 0, "points": [[0, 0], [96, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "am4", "x": 302, "y": 472, "width": 96, "height": 0, "points": [[0, 0], [96, 0]], "strokeColor": "#a8412e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "s1", "x": 400, "y": 236, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "homepage row", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "s2", "x": 400, "y": 306, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "homepage row", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "s3", "x": 400, "y": 376, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "what to watch next", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "s4", "x": 400, "y": 446, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "another surface", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+
+  {"type": "arrow", "id": "big", "x": 650, "y": 367, "width": 120, "height": 0, "points": [[0, 0], [120, 0]], "strokeColor": "#0f766e", "strokeWidth": 4, "roughness": 0},
+  {"type": "text", "id": "big_t", "x": 652, "y": 336, "text": "consolidate", "fontSize": 16, "fontFamily": 2, "strokeColor": "#0f766e"},
+
+  {"type": "text", "id": "b_h", "x": 800, "y": 200, "text": "AFTER · ONE FOUNDATION MODEL FOR ALL OF IT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#0f766e"},
+  {"type": "rectangle", "id": "fm", "x": 800, "y": 236, "width": 260, "height": 262, "backgroundColor": "#ccfbf1", "strokeColor": "#0f766e", "strokeWidth": 3, "fillStyle": "solid", "roughness": 0, "label": {"text": "one foundation model\nbuilt on an LLM\n\nYouTube: Gemini,\ntaught to speak\nin video IDs", "fontSize": 18, "fontFamily": 2, "strokeColor": "#0f766e"}},
+  {"type": "arrow", "id": "bf1", "x": 1062, "y": 262, "width": 116, "height": 0, "points": [[0, 0], [116, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "bf2", "x": 1062, "y": 332, "width": 116, "height": 0, "points": [[0, 0], [116, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "bf3", "x": 1062, "y": 402, "width": 116, "height": 0, "points": [[0, 0], [116, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "arrow", "id": "bf4", "x": 1062, "y": 472, "width": 116, "height": 0, "points": [[0, 0], [116, 0]], "strokeColor": "#0f766e", "strokeWidth": 2, "roughness": 0},
+  {"type": "rectangle", "id": "t1", "x": 1180, "y": 236, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "homepage row", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "t2", "x": 1180, "y": 306, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "homepage row", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "t3", "x": 1180, "y": 376, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "what to watch next", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+  {"type": "rectangle", "id": "t4", "x": 1180, "y": 446, "width": 220, "height": 52, "backgroundColor": "#ffffff", "strokeColor": "#94a3b8", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "another surface", "fontSize": 16, "fontFamily": 2, "strokeColor": "#475569"}},
+
+  {"type": "rectangle", "id": "card", "x": 80, "y": 550, "width": 820, "height": 186, "backgroundColor": "#0b2b2e", "strokeColor": "#134e4a", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0},
+  {"type": "text", "id": "card_h", "x": 100, "y": 562, "text": "the same move, three companies", "fontSize": 15, "fontFamily": 3, "strokeColor": "#5eead4"},
+  {"type": "text", "id": "card_b", "x": 100, "y": 590, "text": "YouTube   \"how can we rethink this recommendation\n           system on top of Gemini,\"\nNetflix   \"by integrating the foundation model into\n           all systems we can create high leverage.\"\nLinkedIn  \"...solve all the personalization tasks\n           that LinkedIn has with just one model.\"", "fontSize": 16, "fontFamily": 3, "strokeColor": "#ccfbf1"},
+  {"type": "ellipse", "id": "claim", "x": 930, "y": 560, "width": 470, "height": 130, "backgroundColor": "#e11d48", "strokeColor": "#881337", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "\"a bigger consumer\napplication than search\"\n(YouTube, #245)", "fontSize": 20, "fontFamily": 2, "strokeColor": "#ffffff"}},
+  {"type": "text", "id": "tags", "x": 950, "y": 702, "text": "claims#20 · claims#21", "fontSize": 13, "fontFamily": 2, "strokeColor": "#64748b"},
+
+  {"type": "text", "id": "cite", "x": 80, "y": 764, "text": "Sources: #245 Devansh Tandon (YouTube) · #247 Yesu Feng (Netflix) · #248 Hamed & Maziar (LinkedIn)", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+ ]
+}

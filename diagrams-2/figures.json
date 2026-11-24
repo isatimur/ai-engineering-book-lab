@@ -231,6 +231,83 @@
       "reviewed": false
     },
     {
+      "id": "ch04-opener",
+      "chapter": "04",
+      "kind": "opener",
+      "title": "Beyond Text — the argument",
+      "file": "ch04/ch04-opener.png",
+      "claimIds": [
+        "claims#19",
+        "claims#20",
+        "claims#21",
+        "claims#22",
+        "claims#23",
+        "claims#24"
+      ],
+      "sources": [
+        "#663 — Samuel Humeau, Mistral",
+        "#385 — Ronan McGovern",
+        "#662 — Neil Zeghidour, Gradium AI",
+        "#245 — Devansh Tandon, YouTube",
+        "#247 — Yesu Feng, Netflix",
+        "#248 — Hamed & Maziar, LinkedIn",
+        "#692 — Guillaume Vernade, DeepMind",
+        "#174 — Jyh-Jing Hwang, Waymo",
+        "#165 — Annika & Aastha, NVIDIA"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-speech-tokens",
+      "chapter": "04",
+      "kind": "inline",
+      "title": "Text-to-speech is now language modelling over audio tokens",
+      "sectionHeading": "Speech models are becoming language models",
+      "file": "ch04/ch04-speech-tokens.png",
+      "claimIds": [
+        "claims#19",
+        "claims#22"
+      ],
+      "sources": [
+        "#663 — Samuel Humeau, Mistral",
+        "#385 — Ronan McGovern"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-recsys-consolidation",
+      "chapter": "04",
+      "kind": "inline",
+      "title": "Recommendation swaps a zoo of models for one foundation model",
+      "sectionHeading": "The zoo of task-specific models is collapsing into one",
+      "file": "ch04/ch04-recsys-consolidation.png",
+      "claimIds": [
+        "claims#20",
+        "claims#21"
+      ],
+      "sources": [
+        "#245 — Devansh Tandon, YouTube",
+        "#247 — Yesu Feng, Netflix",
+        "#248 — Hamed & Maziar, LinkedIn"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch04-genmedia-compose",
+      "chapter": "04",
+      "kind": "inline",
+      "title": "Generative media composes several models instead of merging them",
+      "sectionHeading": "Generative media runs the opposite way: compose, don't consolidate",
+      "file": "ch04/ch04-genmedia-compose.png",
+      "claimIds": [
+        "claims#23"
+      ],
+      "sources": [
+        "#692 — Guillaume Vernade, DeepMind"
+      ],
+      "reviewed": false
+    },
+    {
       "id": "ch05-opener",
       "chapter": "05",
       "kind": "opener",
@@ -289,6 +366,86 @@
       "reviewed": false
     },
     {
+      "id": "ch06-opener",
+      "chapter": "06",
+      "kind": "opener",
+      "title": "Regulated and High-Stakes Domains — the argument",
+      "file": "ch06/ch06-opener.png",
+      "claimIds": [
+        "claims#31",
+        "claims#32",
+        "claims#33",
+        "claims#34",
+        "claims#35",
+        "claims#36",
+        "claims#37"
+      ],
+      "sources": [
+        "#423 — Conover, Brightwave",
+        "#154 — Qi (Harvey) & She (LanceDB)",
+        "#406 — Alshikh, Writer",
+        "#473 — Pekelis, Gradient",
+        "#86 — Myshatyn, Los Alamos",
+        "#469 — Morina, AXA",
+        "#187 — Wan, Ensemble Health",
+        "#883 — Shankhdhar, Risa Labs",
+        "#446 — Anterior",
+        "#938 — Reed & Revere, SonderMind",
+        "#197 — Singh, Intuit",
+        "#339 — Mason"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch06-verify-architecture",
+      "chapter": "06",
+      "kind": "inline",
+      "title": "Verification is a separate call, and every claim carries its source",
+      "sectionHeading": "\"Trust, but verify\" is an architecture, not a slogan",
+      "file": "ch06/ch06-verify-architecture.png",
+      "claimIds": [
+        "claims#33"
+      ],
+      "sources": [
+        "#423 — Conover, Brightwave",
+        "#154 — Qi (Harvey) & She (LanceDB)"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch06-model-out-of-answer",
+      "chapter": "06",
+      "kind": "inline",
+      "title": "Intuit's tax assistant explains the number but never computes it",
+      "sectionHeading": "Sometimes the safest design keeps the model out of the answer",
+      "file": "ch06/ch06-model-out-of-answer.png",
+      "claimIds": [
+        "claims#36"
+      ],
+      "sources": [
+        "#197 — Singh, Intuit"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch06-escalation-gate",
+      "chapter": "06",
+      "kind": "inline",
+      "title": "A confidence gate, a named human, a hard stop",
+      "sectionHeading": "Where automation stops and the human starts",
+      "file": "ch06/ch06-escalation-gate.png",
+      "claimIds": [
+        "claims#37"
+      ],
+      "sources": [
+        "#339 — Mason",
+        "#446 — Anterior",
+        "#187 — Wan, Ensemble Health",
+        "#423 — Conover, Brightwave"
+      ],
+      "reviewed": false
+    },
+    {
       "id": "ch07-opener",
       "chapter": "07",
       "kind": "opener",
@@ -343,6 +500,101 @@
       "sources": [
         "#755 — Schaeff, Google DeepMind",
         "#477 — Phlo Young"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-opener",
+      "chapter": "08",
+      "kind": "opener",
+      "title": "What the Edges Teach — the argument",
+      "file": "ch08/ch08-opener.png",
+      "claimIds": [
+        "claims#2",
+        "claims#21",
+        "claims#19",
+        "claims#38",
+        "claims#41",
+        "claims#32",
+        "claims#37",
+        "claims#31",
+        "claims#26",
+        "claims#15"
+      ],
+      "sources": [
+        "#674 — Alessandro Cappelli, Adaptive ML",
+        "#247 — Yesu Feng, Netflix",
+        "#245 — Devansh Tandon, YouTube",
+        "#248 — Hamed & Maziar, LinkedIn",
+        "#663 — Samuel Humeau, Mistral",
+        "#677 — Dole & Steinskog, Play Magnus",
+        "#918 — Quoraishee & Song, NYT",
+        "#755 — Schaeff, Google DeepMind",
+        "#406 — Alshikh, Writer",
+        "#473 — Pekelis, Gradient",
+        "#339 — Mason",
+        "#446 — Anterior",
+        "#187 — Wan, Ensemble Health",
+        "#938 — Reed & Revere, SonderMind",
+        "#110 — Rishabh Garg, Tesla Optimus",
+        "#13 — Raia Hadsell, DeepMind",
+        "#267 — Jack Rae, DeepMind"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-measure-two-ends",
+      "chapter": "08",
+      "kind": "inline",
+      "title": "One measure, two ends of the pipeline",
+      "sectionHeading": "What you can measure is what you can delegate",
+      "file": "ch08/ch08-measure-two-ends.png",
+      "claimIds": [
+        "claims#2",
+        "claims#31",
+        "claims#37"
+      ],
+      "sources": [
+        "#674 — Alessandro Cappelli, Adaptive ML",
+        "#446 — Anterior",
+        "#938 — Reed & Revere, SonderMind"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-escalation-paths",
+      "chapter": "08",
+      "kind": "inline",
+      "title": "Three escalation paths, each ending at a named human",
+      "sectionHeading": "The constraint was never compensation for a weak model",
+      "file": "ch08/ch08-escalation-paths.png",
+      "claimIds": [
+        "claims#32",
+        "claims#37"
+      ],
+      "sources": [
+        "#406 — Alshikh, Writer",
+        "#339 — Mason",
+        "#446 — Anterior",
+        "#187 — Wan, Ensemble Health"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ch08-system-failure",
+      "chapter": "08",
+      "kind": "inline",
+      "title": "Symptom at the policy, cause in the system",
+      "sectionHeading": "The failure is usually in the system",
+      "file": "ch08/ch08-system-failure.png",
+      "claimIds": [
+        "claims#26",
+        "claims#15"
+      ],
+      "sources": [
+        "#110 — Rishabh Garg, Tesla Optimus",
+        "#13 — Raia Hadsell, DeepMind",
+        "#267 — Jack Rae, DeepMind"
       ],
       "reviewed": false
     }

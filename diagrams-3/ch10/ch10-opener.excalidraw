@@ -1,0 +1,36 @@
+{
+"type": "excalidraw-skeleton",
+"appState": {"viewBackgroundColor": "#ffffff"},
+"elements": [
+{"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 10 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+{"type": "text", "id": "title", "x": 80, "y": 68, "text": "The Review Wall", "fontSize": 36, "fontFamily": 2, "strokeColor": "#2e3a4b"},
+{"type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0},
+{"type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "role", "x": 80, "y": 138, "text": "All of it arrives at a person. Judgement is the one input that did not get cheaper.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "from", "x": 80, "y": 210, "width": 260, "height": 76, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "GENERATION\ngot cheaper", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f"}},
+{"type": "rectangle", "id": "to", "x": 1140, "y": 210, "width": 260, "height": 76, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "JUDGEMENT\nhas not got cheaper", "fontSize": 17, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "arrow", "id": "band", "x": 340, "y": 248, "width": 760, "height": 0, "points": [[0, 0], [760, 0]], "strokeColor": "#3f4c5f", "strokeWidth": 4, "roughness": 0},
+{"type": "line", "id": "wall", "x": 1116, "y": 200, "width": 0, "height": 96, "points": [[0, 0], [0, 96]], "strokeColor": "#b42318", "strokeWidth": 6, "roughness": 0},
+{"type": "text", "id": "band_t", "x": 560, "y": 214, "text": "more changes for judgement", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f"},
+{"type": "text", "id": "wall_t", "x": 1010, "y": 300, "text": "the wall", "fontSize": 16, "fontFamily": 2, "strokeColor": "#b42318"},
+
+{"type": "rectangle", "id": "c1", "x": 80, "y": 360, "width": 315, "height": 160, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "AI multiplied code output\nbut barely moved releases:\nthe gap is a queue", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+{"type": "ellipse", "id": "n1", "x": 216, "y": 332, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "1", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t1", "x": 90, "y": 532, "text": "claims#35 · Shaukat, Sonar", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c2", "x": 415, "y": 360, "width": 315, "height": 160, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Slop is generation\noutrunning judgement: a\nbetter generator is worse", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+{"type": "ellipse", "id": "n2", "x": 551, "y": 332, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "2", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t2", "x": 425, "y": 532, "text": "claims#36 · Martinez, G2i", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c3", "x": 750, "y": 360, "width": 315, "height": 160, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "\"Human in the loop\" does\nnot scale; at volume it is\na label, not control", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+{"type": "ellipse", "id": "n3", "x": 886, "y": 332, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "3", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t3", "x": 760, "y": 532, "text": "claims#37 · Shaukat, Sonar", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c4", "x": 1085, "y": 360, "width": 315, "height": 160, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Errors multiply upstream:\nput human review on\nresearch and plans", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "ellipse", "id": "n4", "x": 1221, "y": 332, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "4", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t4", "x": 1095, "y": 532, "text": "claims#16 · Horthy, HumanLayer", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "text", "id": "cite", "x": 80, "y": 610, "text": "Sources: #1432 — Tariq Shaukat, Sonar · #1285 — Gabriel Martinez, G2i · #89 — Dex Horthy, HumanLayer", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+]
+}

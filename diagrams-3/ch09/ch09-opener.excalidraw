@@ -1,0 +1,35 @@
+{
+"type": "excalidraw-skeleton",
+"appState": {"viewBackgroundColor": "#ffffff"},
+"elements": [
+{"type": "text", "id": "eyebrow", "x": 80, "y": 40, "text": "BOOK 3 · CHAPTER 9 · THE ARGUMENT", "fontSize": 16, "fontFamily": 2, "strokeColor": "#64748b"},
+{"type": "text", "id": "title", "x": 80, "y": 68, "text": "Brownfield and Spec Rot", "fontSize": 36, "fontFamily": 2, "strokeColor": "#2e3a4b"},
+{"type": "line", "id": "sig_slate", "x": 80, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#475569", "strokeWidth": 3, "roughness": 0},
+{"type": "line", "id": "sig_orange", "x": 190, "y": 122, "width": 110, "height": 0, "points": [[0, 0], [110, 0]], "strokeColor": "#c2410c", "strokeWidth": 3, "roughness": 0},
+{"type": "text", "id": "role", "x": 80, "y": 138, "text": "You have the code. You need the reasoning, and the people who held it are gone.", "fontSize": 20, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "from", "x": 80, "y": 210, "width": 260, "height": 76, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "CODE\nthe projection you have", "fontSize": 17, "fontFamily": 2, "strokeColor": "#3f4c5f"}},
+{"type": "rectangle", "id": "to", "x": 1140, "y": 210, "width": 260, "height": 76, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "strokeStyle": "dashed", "label": {"text": "REASONING\nthe spec you need", "fontSize": 17, "fontFamily": 2, "strokeColor": "#b42318"}},
+{"type": "arrow", "id": "band", "x": 340, "y": 248, "width": 800, "height": 0, "points": [[0, 0], [800, 0]], "strokeColor": "#b42318", "strokeWidth": 3, "roughness": 0, "strokeStyle": "dashed"},
+{"type": "text", "id": "band_t", "x": 470, "y": 214, "text": "lossy projection: the reasoning cannot be read back", "fontSize": 17, "fontFamily": 2, "strokeColor": "#b42318"},
+{"type": "text", "id": "band_c", "x": 620, "y": 260, "text": "claims#10 · Grove, OpenAI", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c1", "x": 80, "y": 340, "width": 315, "height": 160, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Too big for any context\nwindow: agents work on\nslices and erode coherence", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "ellipse", "id": "n1", "x": 216, "y": 312, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "1", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t1", "x": 90, "y": 512, "text": "claims#31 · Adler, Sourcegraph", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c2", "x": 415, "y": 340, "width": 315, "height": 160, "backgroundColor": "#fbe0e0", "strokeColor": "#b42318", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Legacy code repels its\nmaintainers; cheap code\nmakes a rewrite look easy", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7a1a12"}},
+{"type": "ellipse", "id": "n2", "x": 551, "y": 312, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "2", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t2", "x": 425, "y": 512, "text": "claims#32 · Linkov, Wisedocs", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c3", "x": 750, "y": 340, "width": 315, "height": 160, "backgroundColor": "#e6ebf1", "strokeColor": "#3f4c5f", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Recover the spec as a\nderived artifact, generated\nfrom the system as it is", "fontSize": 18, "fontFamily": 2, "strokeColor": "#1f2a3a"}},
+{"type": "ellipse", "id": "n3", "x": 886, "y": 312, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "3", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t3", "x": 760, "y": 512, "text": "claims#33 · Nandagopal, Postman", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "rectangle", "id": "c4", "x": 1085, "y": 340, "width": 315, "height": 160, "backgroundColor": "#fff1e6", "strokeColor": "#c2410c", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "Experts are the scarce\ninput: concentrate their\nattention, do not replace it", "fontSize": 18, "fontFamily": 2, "strokeColor": "#7c2d12"}},
+{"type": "ellipse", "id": "n4", "x": 1221, "y": 312, "width": 42, "height": 42, "backgroundColor": "#ea580c", "strokeColor": "#9a3412", "strokeWidth": 2, "fillStyle": "solid", "roughness": 0, "label": {"text": "4", "fontSize": 18, "fontFamily": 2, "strokeColor": "#ffffff"}},
+{"type": "text", "id": "t4", "x": 1095, "y": 512, "text": "claims#34 · Prior, GEICO", "fontSize": 14, "fontFamily": 2, "strokeColor": "#64748b"},
+
+{"type": "text", "id": "cite", "x": 80, "y": 590, "text": "Sources: #265 — Sean Grove, OpenAI · #1237 — Dan Adler, Sourcegraph · #991 — Denys Linkov, Wisedocs · #1276 — Kamalakannan Nandagopal, Postman · #1386 — Ford Prior, GEICO", "fontSize": 15, "fontFamily": 2, "strokeColor": "#475569"}
+]
+}
