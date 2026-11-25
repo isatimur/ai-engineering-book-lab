@@ -229,7 +229,7 @@
       "id": "a_gate",
       "x": 106,
       "y": 202,
-      "width": 60,
+      "width": 49,
       "height": 0,
       "strokeColor": "#64748b",
       "backgroundColor": "transparent",
@@ -247,16 +247,7 @@
       "boundElements": null,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          60,
-          0
-        ]
-      ],
+      "points": [[0, 0], [49, 0]],
       "startBinding": null,
       "endBinding": null,
       "startArrowhead": null,
@@ -265,9 +256,9 @@
     {
       "type": "rectangle",
       "id": "gateway",
-      "x": 168,
+      "x": 157,
       "y": 150,
-      "width": 150,
+      "width": 172,
       "height": 104,
       "strokeColor": "#1e3a5f",
       "backgroundColor": "#3b82f6",
@@ -442,9 +433,9 @@
     {
       "type": "arrow",
       "id": "a_allowed",
-      "x": 318,
+      "x": 329,
       "y": 175,
-      "width": 50,
+      "width": 39,
       "height": -10,
       "strokeColor": "#047857",
       "backgroundColor": "transparent",
@@ -462,16 +453,7 @@
       "boundElements": null,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          50,
-          -10
-        ]
-      ],
+      "points": [[0, 0], [39, -10]],
       "startBinding": null,
       "endBinding": null,
       "startArrowhead": null,
@@ -480,9 +462,9 @@
     {
       "type": "arrow",
       "id": "a_hidden",
-      "x": 318,
+      "x": 329,
       "y": 232,
-      "width": 50,
+      "width": 39,
       "height": 28,
       "strokeColor": "#94a3b8",
       "backgroundColor": "transparent",
@@ -500,16 +482,7 @@
       "boundElements": null,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          50,
-          28
-        ]
-      ],
+      "points": [[0, 0], [39, 28]],
       "startBinding": null,
       "endBinding": null,
       "startArrowhead": null,
@@ -615,9 +588,9 @@
     {
       "type": "text",
       "id": "stepup_lbl",
-      "x": 605.3395,
+      "x": 616,
       "y": 204,
-      "width": 111.32,
+      "width": 110,
       "height": 12.5,
       "text": "повысить по запросу",
       "originalText": "повысить по запросу",
@@ -648,7 +621,7 @@
       "type": "text",
       "id": "caption",
       "x": 40,
-      "y": 306,
+      "y": 322,
       "width": 715.97,
       "height": 16.25,
       "text": "MCP-сервер GitHub показывает только разрешённые инструменты; остальные — после повышения прав.",
@@ -680,7 +653,7 @@
       "type": "text",
       "id": "citation",
       "x": 40,
-      "y": 330,
+      "y": 346,
       "width": 302.32,
       "height": 15.0,
       "text": "— Сэм Морроу, GitHub  ·  видео корпуса #625",

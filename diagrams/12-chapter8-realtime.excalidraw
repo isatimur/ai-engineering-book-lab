@@ -190,8 +190,8 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 32,
-      "text": "turn-based chat\nto a realtime pipeline", "originalText": "turn-based chat\nto a realtime pipeline",
+      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 67.2,
+      "text": "turn-based\nchat to a\nrealtime\npipeline", "originalText": "turn-based\nchat to a\nrealtime\npipeline",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
@@ -250,8 +250,8 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb2", "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "ct2", "x": 460, "y": 628, "width": 300, "height": 56,
-      "text": "Turn-taking, interruption, and streaming\nstate are core system design.", "originalText": "Turn-taking, interruption, and streaming\nstate are core system design.",
+      "type": "text", "id": "ct2", "x": 460, "y": 628, "width": 300, "height": 54.6,
+      "text": "Turn-taking, interruption,\nand streaming state are core\nsystem design.", "originalText": "Turn-taking, interruption,\nand streaming state are core\nsystem design.",
       "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
@@ -275,8 +275,8 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb3", "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "ct3", "x": 810, "y": 628, "width": 300, "height": 56,
-      "text": "Voice and robotics make the control\nproblem concrete — mistakes are instant.", "originalText": "Voice and robotics make the control\nproblem concrete — mistakes are instant.",
+      "type": "text", "id": "ct3", "x": 810, "y": 628, "width": 300, "height": 54.6,
+      "text": "Voice and robotics make the control\nproblem concrete — mistakes\nare instant.", "originalText": "Voice and robotics make the control\nproblem concrete — mistakes\nare instant.",
       "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,

@@ -200,7 +200,7 @@
       "type": "rectangle",
       "x": 44,
       "y": 300,
-      "width": 360,
+      "width": 372,
       "height": 120,
       "angle": 0,
       "strokeColor": "#64748b",
@@ -335,9 +335,9 @@
     {
       "id": "g92520",
       "type": "arrow",
-      "x": 410,
+      "x": 422,
       "y": 360,
-      "width": 84,
+      "width": 72,
       "height": 140,
       "angle": 0,
       "strokeColor": "#c2410c",
@@ -364,7 +364,7 @@
           0
         ],
         [
-          84,
+          72,
           -140
         ]
       ],
@@ -377,8 +377,8 @@
     {
       "id": "g92523",
       "type": "text",
-      "x": 406,
-      "y": 260,
+      "x": 348,
+      "y": 250,
       "width": 96.67,
       "height": 27.5,
       "angle": 0,

@@ -55,7 +55,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "e1", "x": 60, "y": 152, "width": 230, "height": 44,
+      "type": "rectangle", "id": "e1", "x": 60, "y": 152, "width": 320, "height": 44,
       "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500007, "version": 1, "versionNonce": 2500007, "isDeleted": false,
@@ -71,7 +71,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "rectangle", "id": "e2", "x": 60, "y": 206, "width": 230, "height": 44,
+      "type": "rectangle", "id": "e2", "x": 60, "y": 206, "width": 320, "height": 44,
       "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500009, "version": 1, "versionNonce": 2500009, "isDeleted": false,
@@ -87,7 +87,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "rectangle", "id": "e3", "x": 60, "y": 260, "width": 230, "height": 44,
+      "type": "rectangle", "id": "e3", "x": 60, "y": 260, "width": 320, "height": 44,
       "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500011, "version": 1, "versionNonce": 2500011, "isDeleted": false,
@@ -103,7 +103,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "rectangle", "id": "e4", "x": 60, "y": 314, "width": 230, "height": 44,
+      "type": "rectangle", "id": "e4", "x": 60, "y": 314, "width": 320, "height": 44,
       "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500013, "version": 1, "versionNonce": 2500013, "isDeleted": false,
@@ -119,7 +119,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "rectangle", "id": "e5", "x": 60, "y": 368, "width": 230, "height": 44,
+      "type": "rectangle", "id": "e5", "x": 60, "y": 368, "width": 320, "height": 44,
       "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500015, "version": 1, "versionNonce": 2500015, "isDeleted": false,
@@ -136,60 +136,60 @@
     },
 
     {
-      "type": "arrow", "id": "ar1", "x": 298, "y": 174, "width": 246, "height": 108,
+      "type": "arrow", "id": "ar1", "x": 388, "y": 174, "width": 216, "height": 108,
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500017, "version": 1, "versionNonce": 2500017, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [246, 108]],
+      "points": [[0, 0], [216, 108]],
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "ar2", "x": 298, "y": 228, "width": 246, "height": 54,
+      "type": "arrow", "id": "ar2", "x": 388, "y": 228, "width": 216, "height": 54,
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500018, "version": 1, "versionNonce": 2500018, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [246, 54]],
+      "points": [[0, 0], [216, 54]],
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "ar3", "x": 298, "y": 282, "width": 246, "height": 0,
+      "type": "arrow", "id": "ar3", "x": 388, "y": 282, "width": 216, "height": 0,
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500019, "version": 1, "versionNonce": 2500019, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [246, 0]],
+      "points": [[0, 0], [216, 0]],
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "ar4", "x": 298, "y": 336, "width": 246, "height": -54,
+      "type": "arrow", "id": "ar4", "x": 388, "y": 336, "width": 216, "height": -54,
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500020, "version": 1, "versionNonce": 2500020, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [246, -54]],
+      "points": [[0, 0], [216, -54]],
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "ar5", "x": 298, "y": 390, "width": 246, "height": -108,
+      "type": "arrow", "id": "ar5", "x": 388, "y": 390, "width": 216, "height": -108,
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500021, "version": 1, "versionNonce": 2500021, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [246, -108]],
+      "points": [[0, 0], [216, -108]],
       "startArrowhead": null, "endArrowhead": "arrow"
     },
 
     {
-      "type": "rectangle", "id": "out", "x": 552, "y": 238, "width": 210, "height": 88,
+      "type": "rectangle", "id": "out", "x": 612, "y": 238, "width": 210, "height": 88,
       "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
       "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2500022, "version": 1, "versionNonce": 2500022, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "out_h", "x": 564, "y": 254, "width": 186, "height": 24,
+      "type": "text", "id": "out_h", "x": 624, "y": 254, "width": 186, "height": 24,
       "text": "TRUSTED THROUGHPUT", "originalText": "TRUSTED THROUGHPUT",
       "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -198,7 +198,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "out_b", "x": 564, "y": 282, "width": 186, "height": 32,
+      "type": "text", "id": "out_b", "x": 624, "y": 282, "width": 186, "height": 32,
       "text": "delegation that is safe\nto repeat without watching", "originalText": "delegation that is safe\nto repeat without watching",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -208,7 +208,7 @@
     },
 
     {
-      "type": "text", "id": "hj_lbl", "x": 552, "y": 344, "width": 210, "height": 42,
+      "type": "text", "id": "hj_lbl", "x": 612, "y": 344, "width": 210, "height": 42,
       "text": "Human judgment stays on the\nconsequential edges — not removed,\njust focused.", "originalText": "Human judgment stays on the\nconsequential edges — not removed,\njust focused.",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",

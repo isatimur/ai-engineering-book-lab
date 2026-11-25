@@ -584,9 +584,9 @@
     {
       "id": "g9175",
       "type": "rectangle",
-      "x": 250,
+      "x": 212,
       "y": 168,
-      "width": 240,
+      "width": 312,
       "height": 56,
       "angle": 0,
       "strokeColor": "#dc2626",
@@ -613,7 +613,7 @@
     {
       "id": "g9178",
       "type": "text",
-      "x": 299.692,
+      "x": 297.692,
       "y": 178,
       "width": 140.62,
       "height": 20.0,
@@ -649,7 +649,7 @@
     {
       "id": "g9181",
       "type": "text",
-      "x": 253.9918,
+      "x": 251.9918,
       "y": 200,
       "width": 232.02,
       "height": 13.75,
@@ -727,9 +727,9 @@
     {
       "id": "g9187",
       "type": "rectangle",
-      "x": 546,
+      "x": 538,
       "y": 168,
-      "width": 170,
+      "width": 186,
       "height": 56,
       "angle": 0,
       "strokeColor": "#dc2626",

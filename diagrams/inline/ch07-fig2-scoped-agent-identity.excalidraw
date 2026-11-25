@@ -44,7 +44,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "naive_h", "x": 56, "y": 134, "width": 300, "height": 14,
+      "type": "text", "id": "naive_h", "x": 56, "y": 131, "width": 300, "height": 14,
       "text": "THE NAIVE WAY  —  AGENT AS A USER", "originalText": "THE NAIVE WAY  —  AGENT AS A USER",
       "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -53,14 +53,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "ellipse", "id": "naive_user", "x": 70, "y": 156, "width": 56, "height": 56,
+      "type": "ellipse", "id": "naive_user", "x": 70, "y": 161, "width": 56, "height": 56,
       "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 7120012, "version": 1, "versionNonce": 7120012, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": null
     },
     {
-      "type": "text", "id": "naive_user_t", "x": 78, "y": 176, "width": 40, "height": 16,
+      "type": "text", "id": "naive_user_t", "x": 78, "y": 181, "width": 40, "height": 16,
       "text": "agent", "originalText": "agent",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#4c1d95", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -69,7 +69,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "arrow", "id": "naive_arrow", "x": 132, "y": 184, "width": 56, "height": 0,
+      "type": "arrow", "id": "naive_arrow", "x": 132, "y": 189, "width": 56, "height": 0,
       "strokeColor": "#dc2626", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 7120014, "version": 1, "versionNonce": 7120014, "isDeleted": false,
@@ -78,14 +78,14 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "rectangle", "id": "naive_vault", "x": 194, "y": 152, "width": 160, "height": 64,
+      "type": "rectangle", "id": "naive_vault", "x": 194, "y": 157, "width": 160, "height": 64,
       "strokeColor": "#991b1b", "backgroundColor": "#1e293b", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 7120015, "version": 1, "versionNonce": 7120015, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "naive_vault_t", "x": 208, "y": 160, "width": 140, "height": 52,
+      "type": "text", "id": "naive_vault_t", "x": 208, "y": 165, "width": 140, "height": 52,
       "text": "ADMIN_API_KEY\nfull account\nno expiry", "originalText": "ADMIN_API_KEY\nfull account\nno expiry",
       "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#fca5a5", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -121,7 +121,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "eng_h", "x": 454, "y": 134, "width": 270, "height": 14,
+      "type": "text", "id": "eng_h", "x": 454, "y": 131, "width": 270, "height": 14,
       "text": "ENGINEERED  —  SCOPED IDENTITY", "originalText": "ENGINEERED  —  SCOPED IDENTITY",
       "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -130,14 +130,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "ellipse", "id": "eng_user", "x": 454, "y": 152, "width": 48, "height": 48,
+      "type": "ellipse", "id": "eng_user", "x": 454, "y": 156, "width": 48, "height": 48,
       "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 7120022, "version": 1, "versionNonce": 7120022, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": null
     },
     {
-      "type": "text", "id": "eng_user_t", "x": 458, "y": 168, "width": 40, "height": 16,
+      "type": "text", "id": "eng_user_t", "x": 458, "y": 172.0, "width": 40, "height": 16,
       "text": "agent", "originalText": "agent",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#4c1d95", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -146,14 +146,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "eng_token", "x": 522, "y": 150, "width": 196, "height": 90,
+      "type": "rectangle", "id": "eng_token", "x": 522, "y": 154, "width": 196, "height": 90,
       "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 7120024, "version": 1, "versionNonce": 7120024, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "eng_token_t", "x": 536, "y": 162, "width": 172, "height": 66,
+      "type": "text", "id": "eng_token_t", "x": 536, "y": 166, "width": 172, "height": 66,
       "text": "scoped_token\nacts for:  user#7741\nscope:  [\"filings:read\"]\nttl:  15m   ·   revocable", "originalText": "scoped_token\nacts for:  user#7741\nscope:  [\"filings:read\"]\nttl:  15m   ·   revocable",
       "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -162,7 +162,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
     },
     {
-      "type": "arrow", "id": "eng_arrow", "x": 504, "y": 176, "width": 14, "height": 0,
+      "type": "arrow", "id": "eng_arrow", "x": 504, "y": 180, "width": 14, "height": 0,
       "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 7120026, "version": 1, "versionNonce": 7120026, "isDeleted": false,

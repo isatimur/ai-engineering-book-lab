@@ -90,7 +90,7 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "text", "id": "arrow_lbl", "x": 348, "y": 210, "width": 104, "height": 28,
+      "type": "text", "id": "arrow_lbl", "x": 348, "y": 200, "width": 104, "height": 28,
       "text": "AI makes\nthis cheap", "originalText": "AI makes\nthis cheap",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -100,7 +100,7 @@
     },
 
     {
-      "type": "text", "id": "after_lbl", "x": 460, "y": 140, "width": 280, "height": 16,
+      "type": "text", "id": "after_lbl", "x": 475, "y": 140, "width": 280, "height": 16,
       "text": "WHERE SCARCITY LIVES NOW", "originalText": "WHERE SCARCITY LIVES NOW",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -109,21 +109,21 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "after_box", "x": 460, "y": 162, "width": 280, "height": 156,
+      "type": "rectangle", "id": "after_box", "x": 460, "y": 162, "width": 310, "height": 156,
       "strokeColor": "#047857", "backgroundColor": "#d1fae5", "fillStyle": "solid",
       "strokeWidth": 3, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2100013, "version": 1, "versionNonce": 2100013, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "rectangle", "id": "chip1", "x": 478, "y": 184, "width": 118, "height": 30,
+      "type": "rectangle", "id": "chip1", "x": 478, "y": 184, "width": 132, "height": 30,
       "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2100014, "version": 1, "versionNonce": 2100014, "isDeleted": false,
       "groupIds": [], "boundElements": [{"id": "chip1t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "chip1t", "x": 490, "y": 191, "width": 94, "height": 16,
+      "type": "text", "id": "chip1t", "x": 497.0, "y": 191, "width": 94, "height": 16,
       "text": "judgment", "originalText": "judgment",
       "fontSize": 13, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -132,14 +132,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip1", "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "chip2", "x": 602, "y": 184, "width": 122, "height": 30,
+      "type": "rectangle", "id": "chip2", "x": 616, "y": 184, "width": 136, "height": 30,
       "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2100016, "version": 1, "versionNonce": 2100016, "isDeleted": false,
       "groupIds": [], "boundElements": [{"id": "chip2t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "chip2t", "x": 616, "y": 191, "width": 94, "height": 16,
+      "type": "text", "id": "chip2t", "x": 637.0, "y": 191, "width": 94, "height": 16,
       "text": "prioritization", "originalText": "prioritization",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -148,14 +148,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip2", "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "chip3", "x": 478, "y": 224, "width": 118, "height": 30,
+      "type": "rectangle", "id": "chip3", "x": 478, "y": 224, "width": 132, "height": 30,
       "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2100018, "version": 1, "versionNonce": 2100018, "isDeleted": false,
       "groupIds": [], "boundElements": [{"id": "chip3t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "chip3t", "x": 490, "y": 231, "width": 94, "height": 16,
+      "type": "text", "id": "chip3t", "x": 497.0, "y": 231, "width": 94, "height": 16,
       "text": "review capacity", "originalText": "review capacity",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -164,14 +164,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "chip3", "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "chip4", "x": 604, "y": 224, "width": 118, "height": 30,
+      "type": "rectangle", "id": "chip4", "x": 616, "y": 224, "width": 136, "height": 30,
       "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 2100020, "version": 1, "versionNonce": 2100020, "isDeleted": false,
       "groupIds": [], "boundElements": [{"id": "chip4t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "chip4t", "x": 616, "y": 231, "width": 94, "height": 16,
+      "type": "text", "id": "chip4t", "x": 637.0, "y": 231, "width": 94, "height": 16,
       "text": "throughput design", "originalText": "throughput design",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",

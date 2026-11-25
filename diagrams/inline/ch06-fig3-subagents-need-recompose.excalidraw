@@ -229,8 +229,8 @@
     {
       "type": "text",
       "id": "fanout_l",
-      "x": 222,
-      "y": 156,
+      "x": 159.0,
+      "y": 158,
       "width": 120,
       "height": 14,
       "text": "fan out",
@@ -713,8 +713,8 @@
     {
       "type": "text",
       "id": "join_l",
-      "x": 416,
-      "y": 296,
+      "x": 393.0,
+      "y": 142,
       "width": 120,
       "height": 14,
       "text": "fan in",
@@ -745,7 +745,7 @@
     {
       "type": "rectangle",
       "id": "review",
-      "x": 660,
+      "x": 690,
       "y": 184,
       "width": 100,
       "height": 68,
@@ -772,7 +772,7 @@
     {
       "type": "text",
       "id": "review_t",
-      "x": 670,
+      "x": 700,
       "y": 202,
       "width": 80,
       "height": 36,
@@ -806,7 +806,7 @@
       "id": "r1",
       "x": 610,
       "y": 218,
-      "width": 48,
+      "width": 78,
       "height": 0,
       "strokeColor": "#047857",
       "backgroundColor": "transparent",
@@ -830,7 +830,7 @@
           0
         ],
         [
-          48,
+          78,
           0
         ]
       ],
@@ -840,7 +840,7 @@
     {
       "type": "text",
       "id": "r1_l",
-      "x": 600,
+      "x": 615.0,
       "y": 194,
       "width": 68,
       "height": 14,
@@ -874,7 +874,7 @@
       "id": "warn",
       "x": 70,
       "y": 312,
-      "width": 690,
+      "width": 762,
       "height": 48,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fee2e2",
@@ -901,7 +901,7 @@
       "id": "warn_t",
       "x": 86,
       "y": 328,
-      "width": 660,
+      "width": 740,
       "height": 18,
       "text": "Without the orange recompose step: 24 unaligned outputs land on the reviewer at once \u2014 chaos, faster.",
       "originalText": "Without the orange recompose step: 24 unaligned outputs land on the reviewer at once \u2014 chaos, faster.",

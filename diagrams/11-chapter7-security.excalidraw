@@ -190,8 +190,8 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 32,
-      "text": "open access\nto bounded autonomy", "originalText": "open access\nto bounded autonomy",
+      "type": "text", "id": "shift_sub", "x": 620, "y": 390, "width": 260, "height": 50.4,
+      "text": "open access\nto bounded\nautonomy", "originalText": "open access\nto bounded\nautonomy",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,

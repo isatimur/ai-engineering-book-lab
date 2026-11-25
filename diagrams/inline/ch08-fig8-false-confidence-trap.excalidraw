@@ -263,7 +263,7 @@
     {
       "id": "g8853",
       "type": "line",
-      "x": 114,
+      "x": 132,
       "y": 238,
       "width": 0,
       "height": 150,
@@ -305,9 +305,9 @@
     {
       "id": "g8856",
       "type": "line",
-      "x": 114,
+      "x": 132,
       "y": 388,
-      "width": 326,
+      "width": 308,
       "height": 0,
       "angle": 0,
       "strokeColor": "#64748b",
@@ -328,16 +328,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          326,
-          0
-        ]
-      ],
+      "points": [[0, 0], [308, 0]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -419,10 +410,10 @@
     {
       "id": "g8865",
       "type": "arrow",
-      "x": 126,
+      "x": 144,
       "y": 252,
-      "width": 308,
-      "height": 122,
+      "width": 290,
+      "height": 114,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -442,16 +433,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          308,
-          122
-        ]
-      ],
+      "points": [[0, 0], [290, 114]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -461,8 +443,8 @@
     {
       "id": "g8868",
       "type": "text",
-      "x": 194,
-      "y": 274,
+      "x": 250,
+      "y": 254,
       "width": 155,
       "height": 30,
       "angle": 0,
@@ -497,7 +479,7 @@
     {
       "id": "g8871",
       "type": "rectangle",
-      "x": 506,
+      "x": 530,
       "y": 178,
       "width": 420,
       "height": 252,
@@ -526,7 +508,7 @@
     {
       "id": "g8874",
       "type": "text",
-      "x": 522,
+      "x": 546,
       "y": 190,
       "width": 281,
       "height": 17,
@@ -562,7 +544,7 @@
     {
       "id": "g8877",
       "type": "line",
-      "x": 576,
+      "x": 628,
       "y": 238,
       "width": 0,
       "height": 150,
@@ -604,9 +586,9 @@
     {
       "id": "g8880",
       "type": "line",
-      "x": 576,
+      "x": 628,
       "y": 388,
-      "width": 326,
+      "width": 298,
       "height": 0,
       "angle": 0,
       "strokeColor": "#64748b",
@@ -627,16 +609,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          326,
-          0
-        ]
-      ],
+      "points": [[0, 0], [298, 0]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -646,7 +619,7 @@
     {
       "id": "g8883",
       "type": "text",
-      "x": 518,
+      "x": 540,
       "y": 244,
       "width": 83,
       "height": 27,
@@ -682,7 +655,7 @@
     {
       "id": "g8886",
       "type": "text",
-      "x": 686,
+      "x": 710,
       "y": 396,
       "width": 97,
       "height": 15,
@@ -718,10 +691,10 @@
     {
       "id": "g8889",
       "type": "arrow",
-      "x": 588,
+      "x": 640,
       "y": 374,
-      "width": 308,
-      "height": 122,
+      "width": 280,
+      "height": 111,
       "angle": 0,
       "strokeColor": "#047857",
       "backgroundColor": "transparent",
@@ -741,16 +714,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          308,
-          -122
-        ]
-      ],
+      "points": [[0, 0], [280, -111]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -760,8 +724,8 @@
     {
       "id": "g8892",
       "type": "text",
-      "x": 602,
-      "y": 328,
+      "x": 752,
+      "y": 342,
       "width": 162,
       "height": 30,
       "angle": 0,
@@ -796,9 +760,9 @@
     {
       "id": "g8895",
       "type": "arrow",
-      "x": 468,
+      "x": 470,
       "y": 304,
-      "width": 34,
+      "width": 56,
       "height": 1,
       "angle": 0,
       "strokeColor": "#c2410c",
@@ -819,16 +783,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          34,
-          0
-        ]
-      ],
+      "points": [[0, 0], [56, 0]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -838,7 +793,7 @@
     {
       "id": "g8898",
       "type": "text",
-      "x": 462,
+      "x": 473.5,
       "y": 280,
       "width": 47,
       "height": 15,
@@ -876,7 +831,7 @@
       "type": "rectangle",
       "x": 44,
       "y": 450,
-      "width": 882,
+      "width": 906,
       "height": 46,
       "angle": 0,
       "strokeColor": "#93c5fd",

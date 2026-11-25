@@ -442,9 +442,9 @@
     {
       "id": "g9968",
       "type": "rectangle",
-      "x": 700,
+      "x": 740,
       "y": 176,
-      "width": 226,
+      "width": 230,
       "height": 100,
       "angle": 0,
       "strokeColor": "#64748b",
@@ -471,7 +471,7 @@
     {
       "id": "g9971",
       "type": "text",
-      "x": 700,
+      "x": 742,
       "y": 190,
       "width": 226,
       "height": 15,
@@ -507,7 +507,7 @@
     {
       "id": "g9974",
       "type": "text",
-      "x": 700,
+      "x": 742,
       "y": 212,
       "width": 226,
       "height": 18,
@@ -543,7 +543,7 @@
     {
       "id": "g9977",
       "type": "text",
-      "x": 700,
+      "x": 742,
       "y": 242,
       "width": 226,
       "height": 15,
@@ -581,7 +581,7 @@
       "type": "arrow",
       "x": 666,
       "y": 214,
-      "width": 32,
+      "width": 72,
       "height": 1,
       "angle": 0,
       "strokeColor": "#dc2626",
@@ -602,16 +602,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          32,
-          0
-        ]
-      ],
+      "points": [[0, 0], [72, 0]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -621,8 +612,8 @@
     {
       "id": "g9983",
       "type": "text",
-      "x": 646,
-      "y": 168,
+      "x": 677.0,
+      "y": 180,
       "width": 52,
       "height": 25,
       "angle": 0,
@@ -657,9 +648,9 @@
     {
       "id": "g9986",
       "type": "rectangle",
-      "x": 700,
+      "x": 740,
       "y": 328,
-      "width": 226,
+      "width": 230,
       "height": 100,
       "angle": 0,
       "strokeColor": "#047857",
@@ -686,7 +677,7 @@
     {
       "id": "g9989",
       "type": "text",
-      "x": 700,
+      "x": 742,
       "y": 346,
       "width": 226,
       "height": 37,
@@ -722,7 +713,7 @@
     {
       "id": "g9992",
       "type": "text",
-      "x": 700,
+      "x": 742,
       "y": 392,
       "width": 226,
       "height": 15,
@@ -760,7 +751,7 @@
       "type": "arrow",
       "x": 666,
       "y": 378,
-      "width": 32,
+      "width": 72,
       "height": 1,
       "angle": 0,
       "strokeColor": "#047857",
@@ -781,16 +772,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          32,
-          0
-        ]
-      ],
+      "points": [[0, 0], [72, 0]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -802,7 +784,7 @@
       "type": "rectangle",
       "x": 236,
       "y": 438,
-      "width": 430,
+      "width": 456,
       "height": 34,
       "angle": 0,
       "strokeColor": "#dc2626",
@@ -867,7 +849,7 @@
       "type": "rectangle",
       "x": 44,
       "y": 490,
-      "width": 882,
+      "width": 926,
       "height": 48,
       "angle": 0,
       "strokeColor": "#93c5fd",
