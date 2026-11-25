@@ -100,11 +100,17 @@ for (const file of ledgerFiles) {
 for (const c of chapters) {
   push(`/read/${c.number}-${c.slug}`, gitDate(`src/content/chapter-${c.number}.md`), '0.9', 'weekly');
 }
+// One excerpt page per book (src/data/bookExcerpts.ts), dated by the file
+// that picks its passages.
+const excerptDate = gitDate('src/data/bookExcerpts.ts');
+push('/excerpt', excerptDate, '0.8', 'weekly');
 push('/second-book', repoDate, '0.9', 'weekly');
+push('/second-book/excerpt', excerptDate, '0.8', 'weekly');
 for (const c of chaptersTwo) {
   push(`/second-book/${c.slug}`, gitDate(`src/content-2/chapter-${c.number}.md`), '0.8', 'weekly');
 }
 push('/third-book', repoDate, '0.9', 'weekly');
+push('/third-book/excerpt', excerptDate, '0.8', 'weekly');
 for (const c of chaptersThree) {
   push(`/third-book/${c.slug}`, gitDate(`src/content-3/chapter-${c.number}.md`), '0.8', 'weekly');
 }
