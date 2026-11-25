@@ -1,14 +1,8 @@
 import { Link } from 'react-router-dom';
 import { bookThree } from '../data/draftBooks';
-import { DraftBookIndexLinks } from '../components/draft/DraftBookIndexLinks';
+import { DraftBookLanding } from '../components/draft/DraftBookLanding';
 import { LightboxProvider } from '../lib/lightbox';
-import {
-  chaptersThree,
-  chapterThreePath,
-  chaptersThreeWordCount,
-  BOOK_THREE_TITLE,
-  BOOK_THREE_COVER,
-} from '../data/bookChaptersThree';
+import { chaptersThree, chapterThreePath, BOOK_THREE_COVER } from '../data/bookChaptersThree';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
 import { EvidenceRail, type EvidenceIndex } from '../EvidenceRail';
 import evidenceThreeJson from '../evidence-3.json';
@@ -17,13 +11,13 @@ import { Seo } from '../components/Seo';
 import outline from '../data/third-book-outline.json';
 
 /**
- * Sibling of SecondBookReader.tsx for book 3's full-book route. Reading only:
- * a table of contents followed by each chapter's prose and evidence rail. The
+ * Book 3's landing page. Sibling of SecondBookReader.tsx: the shared
+ * DraftBookLanding draws the hero, actions, films, author, colophon and
+ * neighbours; this page supplies the contents and the continuous read. The
  * rail reads evidence-3.json, written by build_evidence.py from claims-3/
  * (Source and Artifact anchors, ADR-0003).
- * Reuses SecondBookArticle, which is chapter-shape-agnostic and avoids book
- * 1's number-keyed lookups. Not in the top nav, but Books.tsx (the Catalogue)
- * renders a visible card linking here, so treat this page as public.
+ * Not in the top nav, but Books.tsx (the Catalogue) renders a visible card
+ * linking here, so treat this page as public.
  */
 // JSON imports widen `kind` to string; build_evidence.py only emits the four ADR-0003 kinds.
 const evidenceThreeData = evidenceThreeJson as EvidenceIndex;
@@ -37,7 +31,6 @@ const outlineChapters: Array<OutlineChapter & { n: string }> = Object.entries(
 ).map(([n, c]) => ({ n, ...c }));
 
 export const ThirdBookReader = () => {
-  const totalWords = chaptersThreeWordCount;
   const isEmpty = chaptersThree.length === 0;
   return (
     <LightboxProvider>
@@ -49,89 +42,82 @@ export const ThirdBookReader = () => {
         type="website"
         noindex
       />
-      <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased pb-24">
-        <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
-          <Link to="/" className="hover:text-[var(--color-ink)]">← Catalogue</Link>
-          <span>Third Book (Draft)</span>
-          <span />
-        </header>
-
-        <div className="max-w-3xl mx-auto px-6 pt-16 pb-12">
-          {/*
-            `readingMinutes` floors at 1 so a short chapter never reads
-            "0 min read" — correct there, wrong for a book with no prose at
-            all, where it rendered "0 chapters · 1 min read". Suppress the
-            reading time rather than change the floor, which books 1 and 2
-            depend on.
-          */}
-          <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
-            {isEmpty
-              ? `${outlineChapters.length} chapters planned`
-              : `${chaptersThree.length} ${chaptersThree.length === 1 ? 'chapter' : 'chapters'} · ${formatReadingTime(totalWords)}`}
-          </p>
-          <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
-            {BOOK_THREE_TITLE}
-          </h1>
-          <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-10">
-            {isEmpty
-              ? 'In design. No chapters are drafted yet — this is the planned structure, and the corpus already classified against it.'
-              : 'Working draft.'}
-          </p>
-          {isEmpty && (
-            <ol className="list-none p-0 m-0 space-y-4 font-serif">
-              {outlineChapters.map((c) => {
-                const talks = c.core.length + c.support.length;
-                return (
-                  <li key={c.n} className="border-b border-dotted border-[var(--color-border)] pb-4">
+      <DraftBookLanding
+        book={bookThree}
+        plannedChapters={outlineChapters.length}
+        contents={
+          isEmpty ? (
+            <>
+              <p className="mb-6 font-serif text-xl italic text-[var(--color-ink-muted)]">
+                In design. No chapters are drafted yet — this is the planned structure, and the corpus already
+                classified against it.
+              </p>
+              <ol className="m-0 list-none space-y-4 p-0 font-serif">
+                {outlineChapters.map((c) => {
+                  const talks = c.core.length + c.support.length;
+                  return (
+                    <li key={c.n} className="border-b border-dotted border-[var(--color-border)] pb-4">
+                      <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
+                        Chapter {c.n.padStart(2, '0')} · {talks} {talks === 1 ? 'talk' : 'talks'}
+                      </span>
+                      <p className="m-0 mt-1 text-xl text-[var(--color-ink-muted)]">{c.title}</p>
+                    </li>
+                  );
+                })}
+              </ol>
+            </>
+          ) : (
+            <ol className="m-0 list-none space-y-4 p-0 font-serif">
+              {chaptersThree.map((chapter) => (
+                <li key={chapter.number} className="border-b border-[var(--color-border)] pb-4">
+                  <Link to={chapterThreePath(chapter)} className="group flex flex-col gap-1">
                     <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
-                      Chapter {c.n.padStart(2, '0')} · {talks} {talks === 1 ? 'talk' : 'talks'}
+                      Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
                     </span>
-                    <p className="text-xl text-[var(--color-ink-muted)] m-0 mt-1">{c.title}</p>
-                  </li>
-                );
-              })}
+                    <span className="text-xl group-hover:text-[var(--color-accent)] group-hover:underline">
+                      {chapter.title}
+                    </span>
+                    <span className="italic text-[var(--color-ink-muted)]">{chapter.promise}</span>
+                  </Link>
+                </li>
+              ))}
             </ol>
-          )}
-          <DraftBookIndexLinks book={bookThree} />
-          <ol className="list-none p-0 m-0 space-y-4 font-serif">
-            {chaptersThree.map((chapter) => (
-              <li key={chapter.number} className="border-b border-[var(--color-border)] pb-4">
-                <Link to={chapterThreePath(chapter)} className="group flex flex-col gap-1">
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
-                    Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
-                  </span>
-                  <span className="text-xl group-hover:underline">{chapter.title}</span>
-                  <span className="text-[var(--color-ink-muted)] italic">{chapter.promise}</span>
-                </Link>
-              </li>
-            ))}
-          </ol>
-        </div>
-
-        <section className="w-full border-t border-[var(--color-border)] flex flex-col">
-          {chaptersThree.map((chapter, index) => (
-            <article
-              key={chapter.number}
-              id={`third-book-chapter-${chapter.number}`}
-              className={`border-t border-[var(--color-border)] ${
-                index % 2 === 0 ? 'bg-[color-mix(in_srgb,var(--color-ink)_3%,var(--color-paper))]' : 'bg-[var(--color-paper)]'
-              }`}
-            >
-              <div className="max-w-3xl mx-auto px-6 pt-16">
-                <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4">
-                  Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl leading-tight mb-4">{chapter.title}</h2>
-                <p className="font-serif italic text-lg text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
-              </div>
-              <div className="max-w-3xl mx-auto px-6 pt-4 pb-8">
-                <SecondBookArticle chapter={chapter} figures={bookThree.figures.inline(chapter.number)} />
-                <EvidenceRail chapterNumber={chapter.number} evidenceData={evidenceThreeData} showGraphLink={false} />
-              </div>
-            </article>
-          ))}
-        </section>
-      </div>
+          )
+        }
+        fullText={
+          isEmpty ? undefined : (
+            <div className="flex w-full flex-col border-t border-[var(--color-border)]">
+              {chaptersThree.map((chapter, index) => (
+                <article
+                  key={chapter.number}
+                  id={`third-book-chapter-${chapter.number}`}
+                  className={`border-t border-[var(--color-border)] ${
+                    index % 2 === 0
+                      ? 'bg-[color-mix(in_srgb,var(--color-ink)_3%,var(--color-paper))]'
+                      : 'bg-[var(--color-paper)]'
+                  }`}
+                >
+                  <div className="mx-auto max-w-3xl px-6 pt-16">
+                    <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)]">
+                      Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
+                    </p>
+                    <h2 className="mb-4 font-serif text-3xl leading-tight md:text-4xl">{chapter.title}</h2>
+                    <p className="mb-6 font-serif text-lg italic text-[var(--color-ink-muted)]">{chapter.promise}</p>
+                  </div>
+                  <div className="mx-auto max-w-3xl px-6 pb-8 pt-4">
+                    <SecondBookArticle chapter={chapter} figures={bookThree.figures.inline(chapter.number)} />
+                    <EvidenceRail
+                      chapterNumber={chapter.number}
+                      evidenceData={evidenceThreeData}
+                      showGraphLink={false}
+                    />
+                  </div>
+                </article>
+              ))}
+            </div>
+          )
+        }
+      />
     </LightboxProvider>
   );
 };

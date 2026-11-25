@@ -13,9 +13,14 @@ import { Seo } from '../components/Seo';
 import { LightboxProvider } from '../lib/lightbox';
 import { useTextOnlyMode } from '../hooks/useTextOnlyMode';
 import { saveDraftLastChapter } from '../lib/draftProgress';
+import { themeStyle } from '../lib/bookTheme';
+import { BookNeighbours } from '../components/draft/BookNeighbours';
 
 const NotFound = ({ book }: { book: DraftBook }) => (
-  <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col items-center justify-center gap-4 font-serif">
+  <div
+    style={themeStyle(book.theme)}
+    className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] flex flex-col items-center justify-center gap-4 font-serif"
+  >
     <Seo
       title={`Chapter not found — ${book.label}`}
       description="The requested chapter could not be found."
@@ -72,7 +77,10 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
         type="article"
         noindex
       />
-      <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased pb-24">
+      <div
+        style={themeStyle(book.theme)}
+        className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased pb-24"
+      >
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <div className="flex items-center gap-4">
             <Link to={book.indexPath} className={headerButton}>← All chapters</Link>
@@ -99,7 +107,7 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
 
         <main id="main">
           <div className="max-w-3xl mx-auto px-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-ink-muted)] mb-4 pt-12">
+            <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--color-accent)] mb-4 pt-12">
               Chapter {chapter.number} · {formatReadingTime(chapter.wordCount)}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
@@ -142,6 +150,12 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
             </Link>
           ) : <span />}
         </nav>
+
+        {!next && (
+          <div className="pt-16">
+            <BookNeighbours book={book} />
+          </div>
+        )}
 
         <BookContentsDrawer book={book} chapter={chapter} isOpen={contentsOpen} onClose={() => setContentsOpen(false)} />
         <SourcesDrawer

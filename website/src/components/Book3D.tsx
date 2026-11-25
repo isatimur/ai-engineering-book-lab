@@ -29,7 +29,11 @@ const PAGE_EDGE =
 const PAGE_EDGE_TOP =
   'repeating-linear-gradient(0deg, #efe8da 0px, #efe8da 1px, #d9d0bf 2px, #efe8da 3px)';
 
-export const Book3D = ({ book }: { book: LibraryEntry }) => {
+/**
+ * `href` overrides where a click goes. The shelf opens the book's landing
+ * page; a landing page's own cover opens chapter one instead.
+ */
+export const Book3D = ({ book, href = book.href }: { book: LibraryEntry; href?: string }) => {
   const [open, setOpen] = useState(false);
   const lastPointer = useRef<string>('mouse');
 
@@ -43,7 +47,7 @@ export const Book3D = ({ book }: { book: LibraryEntry }) => {
 
   return (
     <a
-      href={book.href}
+      href={href}
       aria-label={`${book.title} — ${book.status}. Open the book.`}
       onPointerDown={(e) => {
         lastPointer.current = e.pointerType;
