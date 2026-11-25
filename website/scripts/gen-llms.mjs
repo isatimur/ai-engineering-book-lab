@@ -84,6 +84,7 @@ ${chapters
 
 - [Source repository](${REPO}): the corpus, claims ledger, and method.
 - [Sitemap](${ORIGIN}/sitemap.xml): every indexable page.
+- [Press catalogue (JSON)](https://aiepress.com/catalog.json): all three AI Engineer Press books, with chapters, URLs, status and explainer videos.
 `;
 writeFileSync(resolve(websiteRoot, 'public/llms.txt'), llms);
 
