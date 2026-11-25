@@ -48,3 +48,25 @@ export const chapterVideos: ChapterVideo[] = [
 
 export const chapterVideoFor = (chapterSlug: string): ChapterVideo | undefined =>
   chapterVideos.find((v) => v.chapterSlug === chapterSlug);
+
+/**
+ * The draft books' explainers, one list per book so slugs never collide with
+ * book 1's. Same Remotion series; these add Higgsfield backdrop stills.
+ */
+export const bookTwoVideos: ChapterVideo[] = [
+  {
+    chapterSlug: 'the-turn-to-rl',
+    src: '/video/book2/chapter-01-the-turn-to-rl.mp4',
+    poster: '/video/book2/chapter-01-poster.jpg',
+    durationSeconds: 34,
+    width: 1920,
+    height: 1080,
+    uploadDate: '2026-11-24',
+    description:
+      'A 34-second explainer of the post-training ladder (supervised fine-tuning, preference optimization, ' +
+      "reinforcement fine-tuning) and why RL's real cost is operational, including Alessandro Cappelli's " +
+      '(Adaptive ML) quote, source-anchored to the claims ledger.',
+  },
+];
+
+export const bookThreeVideos: ChapterVideo[] = [];

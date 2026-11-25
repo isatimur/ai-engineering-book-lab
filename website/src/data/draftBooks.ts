@@ -18,6 +18,7 @@ import { figuresTwo } from './figuresTwo';
 import { figuresThree } from './figuresThree';
 import type { FigureBook } from './bookFigures';
 import { createEvidenceGraphApi } from '../lib/evidenceGraph';
+import { bookTwoVideos, bookThreeVideos, type ChapterVideo } from './chapterVideos';
 import type { GraphBook } from '../lib/graphBooks';
 
 /**
@@ -41,7 +42,11 @@ export type DraftBook = {
   graph: GraphBook;
   /** The chapter's 1200x630 share card, rendered by remotion's render:og:draft. */
   ogCard: (c: BookChapter) => string;
+  /** The chapter's explainer video, when one has been rendered. */
+  video: (c: BookChapter) => ChapterVideo | undefined;
 };
+
+const videoFrom = (videos: ChapterVideo[]) => (c: BookChapter) => videos.find((v) => v.chapterSlug === c.slug);
 
 /** Share cards live under the book's own path, e.g. /og/second-book/chapter-04.png. */
 const ogCardFor = (indexPath: string) => (c: BookChapter) => `/og${indexPath}/chapter-${c.number}.png`;
@@ -76,6 +81,7 @@ export const bookTwo: DraftBook = {
   figures: figuresTwo,
   graph: makeGraph(evidenceTwo, chaptersTwo, '/second-book', chapterTwoPath),
   ogCard: ogCardFor('/second-book'),
+  video: videoFrom(bookTwoVideos),
 };
 
 export const bookThree: DraftBook = {
@@ -90,4 +96,5 @@ export const bookThree: DraftBook = {
   figures: figuresThree,
   graph: makeGraph(evidenceThree, chaptersThree, '/third-book', chapterThreePath),
   ogCard: ogCardFor('/third-book'),
+  video: videoFrom(bookThreeVideos),
 };

@@ -3,6 +3,8 @@ import { Chapter01 } from './chapter01/Chapter01';
 import { TOTAL_DURATION_IN_FRAMES as CH01_DURATION } from './chapter01/durations';
 import { Chapter02 } from './chapter02/Chapter02';
 import { TOTAL_DURATION_IN_FRAMES as CH02_DURATION } from './chapter02/durations';
+import { Book2Chapter01 } from './book2/chapter01/Book2Chapter01';
+import { TOTAL_DURATION_IN_FRAMES as B2CH01_DURATION } from './book2/chapter01/durations';
 import { FPS } from './theme';
 import { OgCard, ogCardDefaultProps } from './ogcard/OgCard';
 
@@ -20,6 +22,14 @@ export const RemotionRoot = () => (
       id="Chapter02"
       component={Chapter02}
       durationInFrames={CH02_DURATION}
+      fps={FPS}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Book2Chapter01"
+      component={Book2Chapter01}
+      durationInFrames={B2CH01_DURATION}
       fps={FPS}
       width={1920}
       height={1080}
