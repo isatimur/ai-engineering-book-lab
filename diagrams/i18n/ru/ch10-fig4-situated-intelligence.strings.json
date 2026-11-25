@@ -1,0 +1,178 @@
+{
+  "source": "diagrams/inline/ch10-fig4-situated-intelligence.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9001",
+      "text": "CHAPTER 10  ·  WHAT ENDURES",
+      "translation": "ГЛАВА 10  ·  ЧТО ОСТАЁТСЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g9004",
+      "text": "Intelligence Has to Be Situated",
+      "translation": "Интеллекту нужна среда",
+      "where": "free text"
+    },
+    {
+      "id": "g9013",
+      "text": "A model can be brilliant in isolation and still fail as a worker. The environment carries part of the thinking.",
+      "translation": "Модель может блистать сама по себе и всё равно не справиться как работник. Часть мышления несёт среда.",
+      "where": "free text"
+    },
+    {
+      "id": "g9019",
+      "text": "MODEL ALONE  ·  no prepared environment",
+      "translation": "МОДЕЛЬ ОДНА  ·  среда не готова",
+      "where": "free text inside rectangle g9016",
+      "budget_px": 390,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "g9025",
+      "text": "the model",
+      "translation": "модель",
+      "where": "free text inside rectangle g9022",
+      "budget_px": 170,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g9028",
+      "text": "brilliant in isolation",
+      "translation": "блестящая сама по себе",
+      "where": "free text inside rectangle g9016",
+      "budget_px": 390,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g9031",
+      "text": "✗ no repo    ✗ no specs    ✗ no validations\n✗ no memory    ✗ no runtime    ✗ no review",
+      "translation": "✗ нет репо    ✗ нет спек    ✗ нет проверок\n✗ нет памяти    ✗ нет среды    ✗ нет ревью",
+      "where": "free text inside rectangle g9016",
+      "budget_px": 390,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g9034",
+      "text": "→ eloquent answer, unreliable worker",
+      "translation": "→ красноречивый ответ, ненадёжный работник",
+      "where": "free text inside rectangle g9016",
+      "budget_px": 390,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g9040",
+      "text": "situate\nit",
+      "translation": "дать\nсреду",
+      "where": "free text"
+    },
+    {
+      "id": "g9046",
+      "text": "MODEL + PREPARED ENVIRONMENT",
+      "translation": "МОДЕЛЬ + ГОТОВАЯ СРЕДА",
+      "where": "free text inside rectangle g9043",
+      "budget_px": 430,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9052",
+      "text": "the model",
+      "translation": "модель",
+      "where": "free text inside rectangle g9049",
+      "budget_px": 130,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g9055",
+      "text": "the environment carries part of the thinking  ↓",
+      "translation": "часть мышления несёт среда  ↓",
+      "where": "free text inside rectangle g9043",
+      "budget_px": 430,
+      "budget_chars_per_line": 65
+    },
+    {
+      "id": "g9061",
+      "text": "prepared repo",
+      "translation": "готовое репо",
+      "where": "free text inside rectangle g9058",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9067",
+      "text": "specs",
+      "translation": "спеки",
+      "where": "free text inside rectangle g9064",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9073",
+      "text": "validations",
+      "translation": "проверки",
+      "where": "free text inside rectangle g9070",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9079",
+      "text": "retrieval",
+      "translation": "поиск",
+      "where": "free text inside rectangle g9076",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9085",
+      "text": "memory",
+      "translation": "память",
+      "where": "free text inside rectangle g9082",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9091",
+      "text": "runtime",
+      "translation": "среда",
+      "where": "free text inside rectangle g9088",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9097",
+      "text": "permissions",
+      "translation": "права",
+      "where": "free text inside rectangle g9094",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9103",
+      "text": "review",
+      "translation": "ревью",
+      "where": "free text inside rectangle g9100",
+      "budget_px": 88,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9106",
+      "text": "→ intelligence becomes situated → dependable work",
+      "translation": "→ интеллект встроен в среду → надёжная работа",
+      "where": "free text inside rectangle g9043",
+      "budget_px": 430,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g9112",
+      "text": "\"Instead of micromanaging, I'm scaffolding and providing context.\"  — Eric Hou, Augment Code  ·  corpus video #190",
+      "translation": "«Не микроменеджу, а строю обвязку и даю контекст».  — Эрик Хоу, Augment Code · видео корпуса #190",
+      "where": "free text"
+    },
+    {
+      "id": "g9115",
+      "text": "What endures is not prompt cleverness but environment design — weak environments are now punished faster.",
+      "translation": "Остаётся не хитрость промптов, а дизайн среды — слабую среду теперь наказывают быстрее.",
+      "where": "free text"
+    }
+  ]
+}

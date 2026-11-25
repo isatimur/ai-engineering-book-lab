@@ -1,0 +1,150 @@
+{
+  "source": "diagrams/inline/ch06-fig8-replay-vs-snapshot.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70301",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70304",
+      "text": "Replay or Snapshot",
+      "translation": "Воспроизведение или снимок",
+      "where": "free text"
+    },
+    {
+      "id": "g70313",
+      "text": "Two ways to represent continuity — and the choice reveals what the team values.",
+      "translation": "Два способа хранить непрерывность — и выбор показывает, что ценит команда.",
+      "where": "free text"
+    },
+    {
+      "id": "g70319",
+      "text": "REPLAY",
+      "translation": "ВОСПРОИЗВЕДЕНИЕ",
+      "where": "free text inside rectangle g70316",
+      "budget_px": 410,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "g70322",
+      "text": "reconstruct state from an event history",
+      "translation": "восстановить состояние из истории событий",
+      "where": "free text inside rectangle g70316",
+      "budget_px": 410,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g70328",
+      "text": "e1",
+      "translation": "e1",
+      "where": "free text inside rectangle g70325",
+      "budget_px": 64,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g70334",
+      "text": "e2",
+      "translation": "e2",
+      "where": "free text inside rectangle g70331",
+      "budget_px": 64,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g70340",
+      "text": "e3",
+      "translation": "e3",
+      "where": "free text inside rectangle g70337",
+      "budget_px": 64,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g70346",
+      "text": "e4",
+      "translation": "e4",
+      "where": "free text inside rectangle g70343",
+      "budget_px": 50,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g70355",
+      "text": "state  (reconstructed on demand)",
+      "translation": "состояние  (собирается по запросу)",
+      "where": "free text inside rectangle g70352",
+      "budget_px": 318,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g70358",
+      "text": "REACH FOR IT WHEN",
+      "translation": "КОГДА ВЫБИРАТЬ",
+      "where": "free text inside rectangle g70316",
+      "budget_px": 395,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g70361",
+      "text": "· causality & auditability are the point\n· state should emerge from recorded steps, not opaque blobs\n· exact reconstruction matters",
+      "translation": "· важны причинность и аудит\n· состояние — из записанных шагов, а не из блобов\n· важна точная реконструкция",
+      "where": "free text"
+    },
+    {
+      "id": "g70367",
+      "text": "SNAPSHOT",
+      "translation": "СНИМОК",
+      "where": "free text inside rectangle g70364",
+      "budget_px": 430,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70370",
+      "text": "restore a saved checkpoint of working state",
+      "translation": "восстановить сохранённую точку рабочего состояния",
+      "where": "free text inside rectangle g70364",
+      "budget_px": 430,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g70376",
+      "text": "checkpoint\n(frozen state)",
+      "translation": "контр. точка\n(стоп-кадр)",
+      "where": "free text inside rectangle g70373",
+      "budget_px": 140,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g70385",
+      "text": "resume\ndirectly",
+      "translation": "продолжить\nсразу",
+      "where": "free text inside rectangle g70382",
+      "budget_px": 140,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g70388",
+      "text": "REACH FOR IT WHEN",
+      "translation": "КОГДА ВЫБИРАТЬ",
+      "where": "free text inside rectangle g70364",
+      "budget_px": 415,
+      "budget_chars_per_line": 62
+    },
+    {
+      "id": "g70391",
+      "text": "· fast continuation & elaborate live state dominate\n· pause/resume is frequent and should stay cheap\n· rebuilding everything from events is awkward",
+      "translation": "· важны быстрое продолжение и сложное живое состояние\n· пауза и продолжение часты и должны быть дёшевы\n· пересобирать всё из событий неудобно",
+      "where": "free text inside rectangle g70364",
+      "budget_px": 415,
+      "budget_chars_per_line": 57
+    },
+    {
+      "id": "g70397",
+      "text": "Reach for replay when causality is the point; reach for snapshots when cheap resume is.\nEither way, these are distributed-systems decisions now.",
+      "translation": "Воспроизведение — когда важна причинность; снимки — когда важно дешёвое продолжение.\nВ любом случае теперь это решения распределённых систем.",
+      "where": "free text inside rectangle g70394",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "source": "diagrams/inline/ch04-fig1-evals-not-unit-tests.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 4  ·  FIGURE 1",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 1",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "A unit test gates; an eval steers",
+      "translation": "Юнит-тест — барьер, оценка — руль",
+      "where": "free text"
+    },
+    {
+      "id": "ut_h",
+      "text": "UNIT TEST  —  BINARY PASS / FAIL",
+      "translation": "ЮНИТ-ТЕСТ  —  ДА / НЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "ut_in_t",
+      "text": "input",
+      "translation": "вход",
+      "where": "bound to rectangle ut_in (wraps)",
+      "budget_px": 80,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "ut_gate_t",
+      "text": "assert ==",
+      "translation": "assert ==",
+      "where": "bound to rectangle ut_gate (wraps)",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "ut_out",
+      "text": "PASS / FAIL",
+      "translation": "ПРОШЁЛ / УПАЛ",
+      "where": "free text"
+    },
+    {
+      "id": "ut_note",
+      "text": "one right answer  ·  static  ·  tells you it broke",
+      "translation": "один верный ответ  ·  статичен  ·  говорит, что сломалось",
+      "where": "free text"
+    },
+    {
+      "id": "ev_h",
+      "text": "EVAL  —  A SCORED CONTROL LOOP",
+      "translation": "ОЦЕНКА  —  ЦИКЛ УПРАВЛЕНИЯ С БАЛЛАМИ",
+      "where": "free text"
+    },
+    {
+      "id": "ev_ds_t",
+      "text": "real-task\ndataset",
+      "translation": "реальные\nзадачи",
+      "where": "bound to rectangle ev_ds (wraps)",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "ev_sys_t",
+      "text": "AI system\nv N",
+      "translation": "ИИ-система\nv N",
+      "where": "bound to rectangle ev_sys (wraps)",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "ev_sc_t",
+      "text": "rubric score\n0 – 100",
+      "translation": "балл рубрики\n0 – 100",
+      "where": "bound to rectangle ev_sc (wraps)",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "ev_st_t",
+      "text": "steer next\nversion",
+      "translation": "курс для\nновой версии",
+      "where": "bound to rectangle ev_st (wraps)",
+      "budget_px": 110,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "ev_loop_t",
+      "text": "feedback loop  —  compare versions, catch drift",
+      "translation": "цикл обратной связи  —  сравнить версии, поймать дрейф",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "A test asks did it break; an eval asks is it improving — a loop, not a gate.",
+      "translation": "Тест спрашивает «сломалось ли?», оценка — «становится ли лучше?». Это цикл, а не барьер.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Ido Pesok, Vercel v0 · corpus video #125",
+      "translation": "— Идо Песок, Vercel v0 · видео корпуса #125",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "source": "diagrams/inline/ch03-fig4-slop-era-tuesday.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g770001",
+      "text": "CHAPTER 3  ·  THE SLOP ERA",
+      "translation": "ГЛАВА 3  ·  ЭПОХА ХАЛТУРЫ",
+      "where": "free text"
+    },
+    {
+      "id": "g770004",
+      "text": "One Tuesday in the Slop Era",
+      "translation": "Один вторник в эпоху халтуры",
+      "where": "free text"
+    },
+    {
+      "id": "g770013",
+      "text": "A clean diff that compiles and passes tests can still carry two unwritten violations.",
+      "translation": "Чистый дифф, который компилируется и проходит тесты, может нести два ненаписанных нарушения.",
+      "where": "free text"
+    },
+    {
+      "id": "g770016",
+      "text": "WHAT THE TEAM SAW",
+      "translation": "ЧТО ВИДЕЛА КОМАНДА",
+      "where": "free text"
+    },
+    {
+      "id": "g770022",
+      "text": "TASK\nmigrate 3 endpoints →\nnew state machine · keep style",
+      "translation": "ЗАДАЧА\n3 эндпоинта → новый\nавтомат · стиль прежний",
+      "where": "free text"
+    },
+    {
+      "id": "g770031",
+      "text": "AGENT DIFF\nclean · compiles\ntests green",
+      "translation": "ДИФФ АГЕНТА\nчистый · компилируется\nтесты зелёные",
+      "where": "free text inside rectangle g770028",
+      "budget_px": 200,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g770040",
+      "text": "APPROVED\nby reviewer",
+      "translation": "ОДОБРЕНО\nревьюером",
+      "where": "free text inside rectangle g770037",
+      "budget_px": 160,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g770043",
+      "text": "looks like a win",
+      "translation": "похоже на победу",
+      "where": "free text"
+    },
+    {
+      "id": "g770046",
+      "text": "WHAT IT HID  —  two rules written nowhere the agent could read",
+      "translation": "ЧТО СКРЫТО  —  два правила, которых агент нигде не мог прочесть",
+      "where": "free text"
+    },
+    {
+      "id": "g770052",
+      "text": "①  banned parsing dependency",
+      "translation": "①  запрещённая зависимость для парсинга",
+      "where": "free text inside rectangle g770049",
+      "budget_px": 397,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g770055",
+      "text": "no lint rule · no doc — only in Slack",
+      "translation": "ни правила линтера, ни документа — только в Slack",
+      "where": "free text inside rectangle g770049",
+      "budget_px": 397,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g770058",
+      "text": "reviewer CAUGHT  ✓",
+      "translation": "ревьюер ЗАМЕТИЛ  ✓",
+      "where": "free text inside rectangle g770049",
+      "budget_px": 397,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g770064",
+      "text": "②  batched writes inside a loop",
+      "translation": "②  пакетная запись внутри цикла",
+      "where": "free text inside rectangle g770061",
+      "budget_px": 427,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g770067",
+      "text": "taught by a payments incident — only in an old PR comment",
+      "translation": "урок инцидента в платежах — в комментарии старого PR",
+      "where": "free text inside rectangle g770061",
+      "budget_px": 427,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g770070",
+      "text": "reviewer MISSED  ✗  →  shipped",
+      "translation": "ревьюер ПРОПУСТИЛ  ✗  →  выпущено",
+      "where": "free text inside rectangle g770061",
+      "budget_px": 427,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g770073",
+      "text": "THE NEXT MORNING  —  tacit rules made machine-readable",
+      "translation": "НА СЛЕДУЮЩЕЕ УТРО  —  неявные правила стали машиночитаемыми",
+      "where": "free text"
+    },
+    {
+      "id": "g770079",
+      "text": "examples/migrations/\n  state_machine_ok.md",
+      "translation": "examples/migrations/\n  state_machine_ok.md",
+      "where": "free text inside rectangle g770076",
+      "budget_px": 263,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g770082",
+      "text": "a checked-in accepted example",
+      "translation": "принятый пример в репозитории",
+      "where": "free text"
+    },
+    {
+      "id": "g770088",
+      "text": ".eslintrc\n  no-restricted-imports:\n    [ fast-xml-parser ]",
+      "translation": ".eslintrc\n  no-restricted-imports:\n    [ fast-xml-parser ]",
+      "where": "free text inside rectangle g770085",
+      "budget_px": 243,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g770091",
+      "text": "a lint rule for the banned import",
+      "translation": "правило линтера для запрещённого импорта",
+      "where": "free text"
+    },
+    {
+      "id": "g770097",
+      "text": "scripts/setup.sh\n  # one command, green tests",
+      "translation": "scripts/setup.sh\n  # одна команда, тесты зелёные",
+      "where": "free text inside rectangle g770094",
+      "budget_px": 287,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g770100",
+      "text": "a setup script — ends Slack archaeology",
+      "translation": "скрипт настройки — конец раскопкам в Slack",
+      "where": "free text"
+    },
+    {
+      "id": "g770106",
+      "text": "Not a hallucination — the agent guessed because the repo gave it nothing firm to stand on.",
+      "translation": "Не галлюцинация: агент гадал, потому что репозиторий не дал ему твёрдой опоры.",
+      "where": "free text inside rectangle g770103",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g770109",
+      "text": "— Ryan Lopopolo, OpenAI · corpus video #16",
+      "translation": "— Райан Лопополо, OpenAI · видео корпуса #16",
+      "where": "free text"
+    }
+  ]
+}

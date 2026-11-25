@@ -1,0 +1,96 @@
+{
+  "source": "diagrams/inline/ch02-fig2-vibe-coding-mode-switch.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 2  ·  FIGURE 2",
+      "translation": "ГЛАВА 2  ·  РИСУНОК 2",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Vibe coding: a mode, not a default",
+      "translation": "Вайб-кодинг — режим, а не норма",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Right for discovery, wrong when output has to endure — switch on purpose.",
+      "translation": "Хорош для поиска, плох, когда результат должен жить. Переключайтесь осознанно.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "EXPLORE MODE  —  USE IT",
+      "translation": "РЕЖИМ ПОИСКА  —  ИСПОЛЬЗУЙТЕ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "pl_t",
+      "text": "Vibe coding",
+      "translation": "Вайб-кодинг",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 277,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "pl_b",
+      "text": "Goal: discovery — learn\nwhat is worth building.\n\nFits:\n  • rough prototypes\n  • interface sketching\n  • internal tools\n  • one-off automation",
+      "translation": "Цель: поиск — понять,\nчто стоит строить.\n\nПодходит для:\n  • черновых прототипов\n  • набросков интерфейса\n  • внутренних утилит\n  • разовой автоматизации",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 277,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "pr_h",
+      "text": "ENDURE MODE  —  SWITCH TO IT",
+      "translation": "РЕЖИМ НАДЁЖНОСТИ  —  ПЕРЕЙДИТЕ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "pr_t",
+      "text": "Vibe engineering",
+      "translation": "Вайб-инжиниринг",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 277,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "pr_b",
+      "text": "Goal: endurance — output\nyou can maintain & trust.\n\nNeeds:\n  • a framed problem\n  • explicit constraints\n  • review before merge\n  • a test pinning intent",
+      "translation": "Цель: долговечность — код,\nкоторый можно вести и\nкоторому можно доверять.\nНужны:\n  • чётко поставленная задача\n  • явные ограничения\n  • ревью до слияния\n  • тест, фиксирующий замысел",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 277,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "switchlbl",
+      "text": "switch when\noutput must last",
+      "translation": "переход, когда\nкод должен жить",
+      "where": "free text"
+    },
+    {
+      "id": "danger",
+      "text": "danger: when\nexplore quietly\nbecomes default",
+      "translation": "опасно: когда\nпоиск тихо\nстал нормой",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "The risk is not speed — it is an exploratory mode hardening into a production philosophy.",
+      "translation": "Риск не в скорости, а в том, что режим поиска застывает в философию продакшена.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Kitze, founder of Sizzy · corpus video #73",
+      "translation": "— Китце, основатель Sizzy · видео корпуса #73",
+      "where": "free text"
+    }
+  ]
+}

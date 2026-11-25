@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/11-chapter7-security.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 7",
+      "translation": "ГЛАВА 7",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Security, Identity & High-Stakes Trust",
+      "translation": "Безопасность, идентичность и доверие при высоких ставках",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "The moment a system can act, trust depends on identity, boundaries, and defensible control.",
+      "translation": "Как только система может действовать, доверие зависит от идентичности, границ и контроля.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE NAIVE WAY",
+      "translation": "НАИВНЫЙ ПОДХОД",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "A helpful agent, no boundaries",
+      "translation": "Услужливый агент без границ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Give the agent broad credentials.\nLet it run; assume good intent.",
+      "translation": "Дать агенту широкие права доступа.\nПусть работает; считаем, что намерения добрые.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  HOW THE AGENT IS RUN",
+      "translation": "ПРИМЕР  —  КАК ЗАПУСКАЮТ АГЕНТА",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "agent.run(task, creds = ADMIN_TOKEN)\n# reads any repo, any secret\n# no sandbox, no audit log\n\nmcp_server: bind 0.0.0.0   (no auth)",
+      "translation": "agent.run(task, creds = ADMIN_TOKEN)\n# читает любой репозиторий, любой секрет\n# ни песочницы, ни журнала аудита\n\nmcp_server: bind 0.0.0.0   (без авторизации)",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Cost  —  an agent that can act is now an attack surface.",
+      "translation": "Цена  —  агент, который может действовать, — это поверхность атаки.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "THE ENGINEERED WAY",
+      "translation": "ИНЖЕНЕРНЫЙ ПОДХОД",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "Bounded autonomy",
+      "translation": "Ограниченная автономия",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "Scope identity. Sandbox execution.\nLeast privilege. Audit every action.",
+      "translation": "Сузить идентичность. Исполнять в песочнице.\nМинимум прав. Аудит каждого действия.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  SCOPED, SANDBOXED, AUDITED",
+      "translation": "ПРИМЕР  —  УЗКИЕ ПРАВА, ПЕСОЧНИЦА, АУДИТ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "token = mint(scope=[\"repo:read\"], ttl=15m)\nrun_in_sandbox(task, token)    # isolated\non action.write: require step_up_oauth()\naudit.log(actor, action, resource, ts)\nroot_of_trust: org identity provider",
+      "translation": "token = mint(scope=[\"repo:read\"], ttl=15m)\nrun_in_sandbox(task, token)    # изолировано\non action.write: require step_up_oauth()\naudit.log(actor, action, resource, ts)\nroot_of_trust: org identity provider",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Payoff  —  autonomy you can bound, trace, and revoke.",
+      "translation": "Выигрыш  —  автономия, которую можно ограничить, отследить и отозвать.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "open access\nto bounded autonomy",
+      "translation": "от открытости\nк рамкам",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 7 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 7",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "The moment agents can act, identity\nand authorization move to the center.",
+      "translation": "Когда агенты действуют, идентичность\nи авторизация выходят в центр.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "Sandbox, least privilege, and audit\nare product requirements, not extras.",
+      "translation": "Песочница, минимум прав и аудит —\nтребования к продукту, а не опции.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "Protocol standardization expands the\nattack surface if governance lags.",
+      "translation": "Стандарт протокола без управления\nрасширяет поверхность атаки.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "High-stakes trust needs bounded\nautonomy plus full traceability.",
+      "translation": "Доверию при высоких ставках нужны\nрамки и полный след действий.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“Your insecure MCP server won't survive production.”   —  Tun Shwe, Lenses  ·  corpus video #32\n“Security teams need to establish a root of trust.”   —  Karan Sampath, Anthropic  ·  corpus video #624",
+      "translation": "«Ваш небезопасный MCP-сервер не переживёт продакшен».   —  Тун Шве, Lenses  ·  видео корпуса #32\n«Командам безопасности нужен корень доверия».   —  Каран Сампат, Anthropic  ·  видео корпуса #624",
+      "where": "free text"
+    }
+  ]
+}

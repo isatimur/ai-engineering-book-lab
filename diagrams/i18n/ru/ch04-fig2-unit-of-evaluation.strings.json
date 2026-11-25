@@ -1,0 +1,92 @@
+{
+  "source": "diagrams/inline/ch04-fig2-unit-of-evaluation.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 4  ·  FIGURE 2",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 2",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The unit of evaluation grew with the work",
+      "translation": "Единица оценки выросла вместе с работой",
+      "where": "free text"
+    },
+    {
+      "id": "u1_t",
+      "text": "the\nsnippet",
+      "translation": "фрагмент\nкода",
+      "where": "free text inside rectangle u1",
+      "budget_px": 100,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "u1_c",
+      "text": "judge locally\none-line completion",
+      "translation": "оценка локально\nдополнение одной строки",
+      "where": "free text"
+    },
+    {
+      "id": "u2_t",
+      "text": "the task\n/ workflow",
+      "translation": "задача\n/ процесс",
+      "where": "free text inside rectangle u2",
+      "budget_px": 140,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "u2_c",
+      "text": "judge the multi-step run\nretrieval + tools count",
+      "translation": "оценка многошагового прогона\nпоиск и инструменты в счёт",
+      "where": "free text"
+    },
+    {
+      "id": "u3_t",
+      "text": "the whole codebase",
+      "translation": "вся кодовая база",
+      "where": "free text inside rectangle u3",
+      "budget_px": 186,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "u3_b",
+      "text": "build still passes?\ntests still green?\nconventions held?\nnothing else broke?",
+      "translation": "сборка проходит?\nтесты зелёные?\nсоглашения соблюдены?\nничего не сломалось?",
+      "where": "free text inside rectangle u3",
+      "budget_px": 186,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "u3_c",
+      "text": "judge the system, not the model",
+      "translation": "оценивать систему, а не модель",
+      "where": "free text"
+    },
+    {
+      "id": "scale_l",
+      "text": "less predictive",
+      "translation": "менее показательно",
+      "where": "free text"
+    },
+    {
+      "id": "scale_r",
+      "text": "more predictive of real reliability",
+      "translation": "лучше предсказывает реальную надёжность",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "If the system handles codebases, the eval must scope to codebases too.",
+      "translation": "Если система работает с кодовыми базами, и оценка должна охватывать кодовые базы.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Naman Jain, Cursor · corpus video #72",
+      "translation": "— Наман Джайн, Cursor · видео корпуса #72",
+      "where": "free text"
+    }
+  ]
+}

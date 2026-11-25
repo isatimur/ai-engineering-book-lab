@@ -1,0 +1,152 @@
+{
+  "source": "diagrams/inline/ch07-fig8-tuned-autonomy.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g10013",
+      "text": "CHAPTER 7  ·  SECURITY, IDENTITY & HIGH-STAKES TRUST",
+      "translation": "ГЛАВА 7  ·  БЕЗОПАСНОСТЬ, ИДЕНТИЧНОСТЬ И ДОВЕРИЕ ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g10016",
+      "text": "Autonomy Is Dialed, Not Maximized",
+      "translation": "Автономию дозируют, а не максимизируют",
+      "where": "free text"
+    },
+    {
+      "id": "g10025",
+      "text": "Not “how much can it do?” but “what authority is right at this step, for this domain?”",
+      "translation": "Не «сколько он может?», а «какие полномочия верны на этом шаге, в этой области?»",
+      "where": "free text"
+    },
+    {
+      "id": "g10028",
+      "text": "HIGH-STAKES COLLEAGUE",
+      "translation": "КОЛЛЕГА ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g10031",
+      "text": "autonomous  ▶",
+      "translation": "автономно  ▶",
+      "where": "free text"
+    },
+    {
+      "id": "g10037",
+      "text": "retrieve",
+      "translation": "поиск",
+      "where": "free text inside rectangle g10034",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10046",
+      "text": "synthesize",
+      "translation": "синтез",
+      "where": "free text inside rectangle g10043",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10055",
+      "text": "validate",
+      "translation": "проверка",
+      "where": "free text inside rectangle g10052",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10064",
+      "text": "draft",
+      "translation": "черновик",
+      "where": "free text inside rectangle g10061",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10070",
+      "text": "HUMAN",
+      "translation": "ЧЕЛОВЕК",
+      "where": "free text"
+    },
+    {
+      "id": "g10076",
+      "text": "human sign-off\nfile · send",
+      "translation": "подпись человека\nподача · отправка",
+      "where": "free text inside rectangle g10073",
+      "budget_px": 190,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g10079",
+      "text": "SOFTWARE FACTORY",
+      "translation": "ФАБРИКА ПО",
+      "where": "free text"
+    },
+    {
+      "id": "g10082",
+      "text": "autonomous  ▶",
+      "translation": "автономно  ▶",
+      "where": "free text"
+    },
+    {
+      "id": "g10088",
+      "text": "search",
+      "translation": "поиск",
+      "where": "free text inside rectangle g10085",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10097",
+      "text": "summarize",
+      "translation": "сводка",
+      "where": "free text inside rectangle g10094",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10106",
+      "text": "patch",
+      "translation": "патч",
+      "where": "free text inside rectangle g10103",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10115",
+      "text": "test",
+      "translation": "тест",
+      "where": "free text inside rectangle g10112",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g10121",
+      "text": "HUMAN",
+      "translation": "ЧЕЛОВЕК",
+      "where": "free text"
+    },
+    {
+      "id": "g10127",
+      "text": "gated\nmerge · deploy · env",
+      "translation": "через барьер\nmerge · deploy · env",
+      "where": "free text inside rectangle g10124",
+      "budget_px": 190,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g10133",
+      "text": "Trust comes not from proving it can do everything — but from deciding what it should never do casually.",
+      "translation": "Доверие — не в доказательстве, что он может всё, а в решении, чего он не делает походя.",
+      "where": "free text"
+    },
+    {
+      "id": "g10136",
+      "text": "— Joel Hron, CTO, Thomson Reuters  ·  corpus video #206",
+      "translation": "— Джоэл Хрон, CTO, Thomson Reuters  ·  видео корпуса #206",
+      "where": "free text"
+    }
+  ]
+}

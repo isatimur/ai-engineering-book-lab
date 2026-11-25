@@ -1,0 +1,90 @@
+{
+  "source": "diagrams/inline/ch02-fig1-cheap-code-syllogism.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 2  ·  FIGURE 1",
+      "translation": "ГЛАВА 2  ·  РИСУНОК 1",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Why taste matters more, not less",
+      "translation": "Почему вкус важен больше, а не меньше",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "The chapter's argument as a syllogism: two premises force one conclusion.",
+      "translation": "Довод главы как силлогизм: две посылки ведут к одному выводу.",
+      "where": "free text"
+    },
+    {
+      "id": "p1l",
+      "text": "PREMISE 1",
+      "translation": "ПОСЫЛКА 1",
+      "where": "free text inside rectangle p1",
+      "budget_px": 299,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "p1t",
+      "text": "Generation is getting\ncheaper.   curve ↓↓↓",
+      "translation": "Генерация всё\nдешевле.   кривая ↓↓↓",
+      "where": "free text inside rectangle p1",
+      "budget_px": 299,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "p2l",
+      "text": "PREMISE 2",
+      "translation": "ПОСЫЛКА 2",
+      "where": "free text inside rectangle p2",
+      "budget_px": 299,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "p2t",
+      "text": "Bad decisions are NOT\ngetting cheaper.   flat ───",
+      "translation": "Плохие решения НЕ\nдешевеют.   ровно ───",
+      "where": "free text inside rectangle p2",
+      "budget_px": 299,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "thlbl",
+      "text": "so",
+      "translation": "итак",
+      "where": "free text"
+    },
+    {
+      "id": "cl",
+      "text": "CONCLUSION",
+      "translation": "ВЫВОД",
+      "where": "free text inside rectangle concl",
+      "budget_px": 279,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "ct",
+      "text": "Taste, standards, and\nreview matter MORE.\n\nThe scarce skill is now\nquality discrimination.",
+      "translation": "Вкус, стандарты и\nревью важны БОЛЬШЕ.\n\nДефицитный навык —\nразличать качество.",
+      "where": "free text inside rectangle concl",
+      "budget_px": 279,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "caption",
+      "text": "The machine accelerates production — it cannot remove the need to choose.",
+      "translation": "Машина ускоряет производство, но не снимает нужду выбирать.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Matt Pocock, AI Hero · corpus video #1",
+      "translation": "— Мэтт Покок, AI Hero · видео корпуса #1",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "source": "diagrams/inline/ch04-fig6-layers-of-evidence.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940172",
+      "text": "CHAPTER 4  ·  FIGURE 6",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 6",
+      "where": "free text"
+    },
+    {
+      "id": "g940175",
+      "text": "Self-verification is one layer, not proof",
+      "translation": "Самопроверка — один слой, а не доказательство",
+      "where": "free text"
+    },
+    {
+      "id": "g940184",
+      "text": "amber = machine self-check       green = evidence beyond the machine",
+      "translation": "янтарный = машинная самопроверка       зелёный = доказательства вне машины",
+      "where": "free text"
+    },
+    {
+      "id": "g940190",
+      "text": "1 · Static / type checks — “marks its own homework”",
+      "translation": "1 · Статика / типы — «сам проверяет свою домашку»",
+      "where": "free text inside rectangle g940187",
+      "budget_px": 451,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g940193",
+      "text": "✓ passed — missed it",
+      "translation": "✓ прошло — пропустило",
+      "where": "free text"
+    },
+    {
+      "id": "g940199",
+      "text": "2 · Unit tests",
+      "translation": "2 · Юнит-тесты",
+      "where": "free text inside rectangle g940196",
+      "budget_px": 451,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g940202",
+      "text": "✓ passed — missed it",
+      "translation": "✓ прошло — пропустило",
+      "where": "free text"
+    },
+    {
+      "id": "g940208",
+      "text": "3 · Eval slices + regression sets",
+      "translation": "3 · Срезы оценок + регрессионные наборы",
+      "where": "free text inside rectangle g940205",
+      "budget_px": 451,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g940211",
+      "text": "✗ caught the regression",
+      "translation": "✗ поймали регрессию",
+      "where": "free text"
+    },
+    {
+      "id": "g940217",
+      "text": "4 · Human review on consequential change",
+      "translation": "4 · Ревью человеком важных изменений",
+      "where": "free text inside rectangle g940214",
+      "budget_px": 451,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g940220",
+      "text": "confirms the scope",
+      "translation": "подтверждает масштаб",
+      "where": "free text"
+    },
+    {
+      "id": "g940226",
+      "text": "Self-verification catches errors a machine can already define — it can't certify the change was correct.",
+      "translation": "Самопроверка ловит известные машине ошибки, но не доказывает, что изменение верно.",
+      "where": "free text"
+    },
+    {
+      "id": "g940229",
+      "text": "More capable models didn't dissolve reliability — the admin-override cleared every machine gate.",
+      "translation": "Сильные модели не сняли проблему надёжности: админский обход прошёл все машинные проверки.",
+      "where": "free text"
+    },
+    {
+      "id": "g940232",
+      "text": "— Samuel Colvin, Pydantic · corpus video #184",
+      "translation": "— Сэмюэл Колвин, Pydantic · видео корпуса #184",
+      "where": "free text"
+    }
+  ]
+}

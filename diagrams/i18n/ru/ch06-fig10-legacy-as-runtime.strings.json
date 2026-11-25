@@ -1,0 +1,108 @@
+{
+  "source": "diagrams/inline/ch06-fig10-legacy-as-runtime.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70523",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70526",
+      "text": "Legacy Systems Become Runtime Components",
+      "translation": "Старые системы становятся частью среды",
+      "where": "free text"
+    },
+    {
+      "id": "g70535",
+      "text": "Old enterprise software does not block the agent — it becomes tools the agent calls.",
+      "translation": "Старый корпоративный софт не мешает агенту — он становится его инструментами.",
+      "where": "free text"
+    },
+    {
+      "id": "g70541",
+      "text": "AGENT\nRUNTIME",
+      "translation": "СРЕДА\nАГЕНТА",
+      "where": "free text inside rectangle g70538",
+      "budget_px": 170,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g70544",
+      "text": "the volatile\ncomponent",
+      "translation": "изменчивая\nчасть",
+      "where": "free text inside rectangle g70538",
+      "budget_px": 170,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g70550",
+      "text": "validation engine",
+      "translation": "движок проверок",
+      "where": "free text inside rectangle g70547",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g70556",
+      "text": "permission system",
+      "translation": "система прав",
+      "where": "free text inside rectangle g70553",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g70562",
+      "text": "audit trail",
+      "translation": "журнал аудита",
+      "where": "free text inside rectangle g70559",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g70568",
+      "text": "database",
+      "translation": "база данных",
+      "where": "free text inside rectangle g70565",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g70574",
+      "text": "workflow record",
+      "translation": "запись процесса",
+      "where": "free text inside rectangle g70571",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g70580",
+      "text": "review queue",
+      "translation": "очередь ревью",
+      "where": "free text inside rectangle g70577",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g70586",
+      "text": "calls to inspect &\ncorrect its own work",
+      "translation": "вызывает, чтобы проверить\nи поправить свою работу",
+      "where": "free text"
+    },
+    {
+      "id": "g70607",
+      "text": "The model is the volatile part; the rest of the runtime is older, stable parts —\nthat is what keeps volatility from becoming operational chaos.",
+      "translation": "Модель — изменчивая часть; остальная среда собрана из старых, стабильных частей —\nименно это не даёт изменчивости стать хаосом в работе.",
+      "where": "free text inside rectangle g70604",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g70610",
+      "text": "— Joel Hron, Thomson Reuters · corpus video #206",
+      "translation": "— Джоэл Хрон, Thomson Reuters · видео корпуса #206",
+      "where": "free text"
+    }
+  ]
+}

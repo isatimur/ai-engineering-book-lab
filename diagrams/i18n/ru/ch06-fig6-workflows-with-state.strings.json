@@ -1,0 +1,110 @@
+{
+  "source": "diagrams/inline/ch06-fig6-workflows-with-state.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70097",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70100",
+      "text": "Stateful Workflows, Not Loose Intelligence",
+      "translation": "Процессы с состоянием, а не вольный интеллект",
+      "where": "free text"
+    },
+    {
+      "id": "g70109",
+      "text": "A useful agent is a stateful workflow with probabilistic decision nodes.",
+      "translation": "Полезный агент — это процесс с состоянием и вероятностными узлами решений.",
+      "where": "free text"
+    },
+    {
+      "id": "g70115",
+      "text": "plan",
+      "translation": "план",
+      "where": "free text inside rectangle g70112",
+      "budget_px": 110,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g70124",
+      "text": "decide\n(probabilistic)",
+      "translation": "решение\n(вероятностное)",
+      "where": "free text inside rectangle g70121",
+      "budget_px": 130,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g70133",
+      "text": "run tool",
+      "translation": "инструмент",
+      "where": "free text inside rectangle g70130",
+      "budget_px": 120,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g70142",
+      "text": "validate",
+      "translation": "проверка",
+      "where": "free text inside rectangle g70139",
+      "budget_px": 120,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g70151",
+      "text": "await\napproval",
+      "translation": "ждать\nодобрения",
+      "where": "free text inside rectangle g70148",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g70160",
+      "text": "resume",
+      "translation": "далее",
+      "where": "free text inside rectangle g70157",
+      "budget_px": 50,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g70181",
+      "text": "STRUCTURED STATE  (not the prompt window)",
+      "translation": "СТРУКТУРИРОВАННОЕ СОСТОЯНИЕ  (не окно промпта)",
+      "where": "free text inside rectangle g70178",
+      "budget_px": 859,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "g70184",
+      "text": "task plan · tool runs · validation status · pending questions · approvals · artifact links",
+      "translation": "план задачи · запуски инструментов · статус проверки · открытые вопросы · одобрения · ссылки на результаты",
+      "where": "free text inside rectangle g70178",
+      "budget_px": 859,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "g70187",
+      "text": "Durability keeps the difference between what was said and what has happened.",
+      "translation": "Надёжность хранит разницу между тем, что сказано, и тем, что произошло.",
+      "where": "free text inside rectangle g70178",
+      "budget_px": 859,
+      "budget_chars_per_line": 114
+    },
+    {
+      "id": "g70193",
+      "text": "Workflow structure is not the opposite of agency — it is what makes agency survivable.",
+      "translation": "Структура процесса — не противоположность автономии, а то, что даёт ей выжить.",
+      "where": "free text inside rectangle g70190",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g70196",
+      "text": "\"At its core, agentic AI is a complicated workflow that handles state and approvals.\" — Preeti Somal, Temporal · #167",
+      "translation": "«По сути агентный ИИ — это сложный процесс, который ведёт состояние и одобрения». — Прити Сомал, Temporal · #167",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "source": "diagrams/inline/ch10-fig2-constrained-delegation.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 10  ·  WHAT ENDURES",
+      "translation": "ГЛАВА 10  ·  ЧТО ОСТАЁТСЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Constrained delegation: the five things you give",
+      "translation": "Ограниченное делегирование: что вы даёте",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "The book's most durable principle, assembled from five inputs into one trusted output.",
+      "translation": "Самый надёжный принцип книги: пять входов дают один надёжный результат.",
+      "where": "free text"
+    },
+    {
+      "id": "give_lbl",
+      "text": "GIVE THE SYSTEM",
+      "translation": "ДАЙТЕ СИСТЕМЕ",
+      "where": "free text"
+    },
+    {
+      "id": "e1t",
+      "text": "1 · a clear task  —  what \"done\" means",
+      "translation": "1 · задачу и смысл «готово»",
+      "where": "free text"
+    },
+    {
+      "id": "e2t",
+      "text": "2 · an environment  —  a workplace",
+      "translation": "2 · среду — рабочее место",
+      "where": "free text"
+    },
+    {
+      "id": "e3t",
+      "text": "3 · the right context  —  the slice",
+      "translation": "3 · контекст — нужный срез",
+      "where": "free text"
+    },
+    {
+      "id": "e4t",
+      "text": "4 · a way to keep state  —  memory",
+      "translation": "4 · состояние — память",
+      "where": "free text"
+    },
+    {
+      "id": "e5t",
+      "text": "5 · narrow powers  —  trusted authority",
+      "translation": "5 · узкие, доверенные права",
+      "where": "free text"
+    },
+    {
+      "id": "out_h",
+      "text": "TRUSTED THROUGHPUT",
+      "translation": "НАДЁЖНЫЙ ПОТОК",
+      "where": "free text inside rectangle out",
+      "budget_px": 200,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "out_b",
+      "text": "delegation that is safe\nto repeat without watching",
+      "translation": "делегирование, которое можно\nповторять без присмотра",
+      "where": "free text inside rectangle out",
+      "budget_px": 200,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "hj_lbl",
+      "text": "Human judgment stays on the\nconsequential edges — not removed,\njust focused.",
+      "translation": "Суждение человека остаётся на\nважных краях — не убрано,\nа сфокусировано.",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Five inputs — task, environment, context, state, narrow powers — convert capability into trust.",
+      "translation": "Пять входов — задача, среда, контекст, состояние, узкие права — превращают возможности в доверие.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Tejas Kumar, AI Engineer  ·  corpus video #690",
+      "translation": "— Теджас Кумар, ИИ-инженер  ·  видео корпуса #690",
+      "where": "free text"
+    }
+  ]
+}

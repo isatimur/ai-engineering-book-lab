@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/14-chapter10-what-endures.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 10",
+      "translation": "ГЛАВА 10",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "What Endures",
+      "translation": "Что остаётся",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Close by separating durable principles from temporary tools — an operating model that survives churn.",
+      "translation": "Финал: отделить надёжные принципы от временных инструментов — операционная модель, которая переживёт смену инструментов.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "WHAT CHURNS",
+      "translation": "ЧТО МЕНЯЕТСЯ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "The transient layer",
+      "translation": "Временный слой",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Tools, IDEs, frameworks, model versions —\nthey turn over every few months.",
+      "translation": "Инструменты, IDE, фреймворки, версии моделей —\nсменяются каждые пару месяцев.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  THE LAST FEW YEARS OF CHURN",
+      "translation": "ПРИМЕР  —  СМЕНА ИНСТРУМЕНТОВ ЗА ПОСЛЕДНИЕ ГОДЫ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "2023:  prompt engineering, plugins\n2024:  RAG stacks, \"the year of evals\"\n2025:  MCP, subagents, \"the IDE dies\"\n2026:  ... the next framework\n\nleaderboard scores -> stale in weeks",
+      "translation": "2023:  промпт-инжиниринг, плагины\n2024:  RAG-стеки, «год оценок»\n2025:  MCP, субагенты, «IDE умирает»\n2026:  ... следующий фреймворк\n\nместа в рейтингах -> устаревают за недели",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Chasing only the transient layer is a treadmill.",
+      "translation": "Гнаться только за временным слоем — бег на месте.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "WHAT ENDURES",
+      "translation": "ЧТО ОСТАЁТСЯ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "The durable layer",
+      "translation": "Надёжный слой",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "The operating model underneath\nsurvives every tool cycle.",
+      "translation": "Операционная модель под ним\nпереживает любой цикл инструментов.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  THE PRINCIPLES THAT PERSIST",
+      "translation": "ПРИМЕР  —  ПРИНЦИПЫ, КОТОРЫЕ ОСТАЮТСЯ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "constrained delegation      (ch 1, 3)\nexplicit context             (ch 5)\neval loops                   (ch 4)\nstateful, durable runtimes   (ch 6)\nidentity & bounded trust     (ch 7)\nhuman judgment               (ch 2, 9)",
+      "translation": "ограниченное делегирование  (гл. 1, 3)\nявный контекст              (гл. 5)\nциклы оценок                (гл. 4)\nсреды с надёжным состоянием (гл. 6)\nидентичность, рамки доверия (гл. 7)\nсуждение человека           (гл. 2, 9)",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Build on the durable layer; let tools come and go.",
+      "translation": "Стройте на надёжном слое; инструменты пусть приходят и уходят.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE LESSON",
+      "translation": "УРОК",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "tell the transient\nfrom the enduring",
+      "translation": "отделить\nвременное\nот вечного",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 10 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 10",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "Tool churn is real, but core\nengineering principles persist.",
+      "translation": "Инструменты правда меняются, но базовые\nинженерные принципы остаются.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "The enduring pattern is constrained\ndelegation backed by context + evals.",
+      "translation": "Прочный паттерн — ограниченное\nделегирование с контекстом и оценками.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "AI changes interfaces and economics\nfaster than the need for systems thinking.",
+      "translation": "ИИ меняет интерфейсы и экономику\nбыстрее, чем нужду в системности.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "Winning teams separate stable\nprinciples from transient frameworks.",
+      "translation": "Сильные команды отделяют стабильные\nпринципы от временных фреймворков.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“Engineering AI systems that endure.”   —  Omar Khattab, DSPy  ·  corpus video #124",
+      "translation": "«Строить ИИ-системы, которые выдержат время».   —  Омар Хаттаб, DSPy  ·  видео корпуса #124",
+      "where": "free text"
+    }
+  ]
+}

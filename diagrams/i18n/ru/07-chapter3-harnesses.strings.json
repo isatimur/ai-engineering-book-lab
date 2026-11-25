@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/07-chapter3-harnesses.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 3",
+      "translation": "ГЛАВА 3",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Harnesses, Specs & Codebases Agents Can Use",
+      "translation": "Обвязки, спецификации и кодовые базы для агентов",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Move from principle to mechanism — prepare the environment so agents can work without wrecking quality.",
+      "translation": "От принципа к механизму: подготовьте среду, чтобы агенты работали, не ломая качество.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE NAIVE WAY",
+      "translation": "НАИВНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "A bare prompt into a messy repo",
+      "translation": "Голый промпт в грязный репозиторий",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Hand the agent a one-line task.\nNo spec, no map, no guardrails.",
+      "translation": "Дать агенту задачу в одну строку.\nНи спецификации, ни карты, ни ограничителей.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  WHAT THE AGENT IS GIVEN",
+      "translation": "ПРИМЕР  —  ЧТО ПОЛУЧАЕТ АГЕНТ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "> add auth to the API\n\nrepo/\n  src/    no AGENTS.md, no README\n  852 files, 0 tests\n  3 different ways to define a route",
+      "translation": "> добавь авторизацию в API\n\nrepo/\n  src/    нет AGENTS.md, нет README\n  852 файла, 0 тестов\n  3 разных способа задать маршрут",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Cost  —  the agent thrashes; the output won't merge.",
+      "translation": "Цена  —  агент буксует; результат не пройдёт слияние.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "THE ENGINEERED WAY",
+      "translation": "ИНЖЕНЕРНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "An engineered harness",
+      "translation": "Продуманная обвязка",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "Spec first. Map the repo.\nTests as guardrails. Stage the work.",
+      "translation": "Сначала спецификация. Карта репо.\nТесты как ограничители. Работа по этапам.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  THE PREPARED ENVIRONMENT",
+      "translation": "ПРИМЕР  —  ПОДГОТОВЛЕННАЯ СРЕДА",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "# AGENTS.md\nbuild: pnpm build    test: pnpm test\nroutes: src/routes/*.ts   (one pattern)\n\nspecs/auth.md      <- plan before code\nci: typecheck + test gate on every PR",
+      "translation": "# AGENTS.md\nbuild: pnpm build    test: pnpm test\nroutes: src/routes/*.ts   (один паттерн)\n\nspecs/auth.md      <- план до кода\nci: typecheck + test на каждый PR",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Payoff  —  plan, produce, review, ship — reliably.",
+      "translation": "Выигрыш  —  план, работа, ревью, выпуск — надёжно.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "bare prompt\nto engineered harness",
+      "translation": "от промпта\nк обвязке",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 3 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 3",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "Agent quality depends heavily\non harness quality.",
+      "translation": "Качество агента сильно\nзависит от качества обвязки.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "Specs, tests, and repo hygiene are\nthe execution environment.",
+      "translation": "Спецификации, тесты и порядок в репо —\nэто среда исполнения.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "The practical unit of AI coding is\nthe codebase, not the snippet.",
+      "translation": "Практическая единица ИИ-разработки —\nкодовая база, а не фрагмент.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "The harness is becoming a staged\nfactory: plan, produce, review, ship.",
+      "translation": "Обвязка становится поэтапной фабрикой:\nплан, работа, ревью, выпуск.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“Humans steer and agents execute.”   —  Ryan Lopopolo, OpenAI  ·  corpus video #16",
+      "translation": "«Люди направляют, агенты исполняют».   —  Райан Лопополо, OpenAI  ·  видео корпуса #16",
+      "where": "free text"
+    }
+  ]
+}

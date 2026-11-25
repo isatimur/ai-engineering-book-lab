@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/09-chapter5-context.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 5",
+      "translation": "ГЛАВА 5",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Context Is Infrastructure",
+      "translation": "Контекст — это инфраструктура",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Retrieval, memory, and context assembly are architectural layers — not prompt tricks.",
+      "translation": "Поиск, память и сборка контекста — слои архитектуры, а не трюки в промпте.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE NAIVE WAY",
+      "translation": "НАИВНЫЙ ПОДХОД",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "Stuff the context window",
+      "translation": "Забить окно контекста",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Dump the whole doc set in.\nExpose every tool, just in case.",
+      "translation": "Залить весь набор документов.\nПоказать все инструменты, на всякий случай.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  WHAT GOES INTO THE MODEL",
+      "translation": "ПРИМЕР  —  ЧТО ПОПАДАЕТ В МОДЕЛЬ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "prompt = whole_wiki + all_docs\n       + 200 tool definitions\n       + chat_history (untrimmed)\n\n# 180k tokens. the answer is in\n# there ... somewhere.",
+      "translation": "prompt = whole_wiki + all_docs\n       + 200 tool definitions\n       + chat_history (без обрезки)\n\n# 180k токенов. ответ где-то\n# там ... наверное.",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Cost  —  context misassembly: confident, fluent, wrong.",
+      "translation": "Цена  —  ошибка сборки контекста: уверенно, гладко, неверно.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "THE ENGINEERED WAY",
+      "translation": "ИНЖЕНЕРНЫЙ ПОДХОД",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "Context as infrastructure",
+      "translation": "Контекст как инфраструктура",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "Retrieve what's relevant. Keep real memory.\nDiscover tools by intent.",
+      "translation": "Искать только нужное. Хранить настоящую память.\nНаходить инструменты по намерению.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  CONTEXT, ASSEMBLED BY LAYER",
+      "translation": "ПРИМЕР  —  КОНТЕКСТ, СОБРАННЫЙ ПО СЛОЯМ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "retrieve(query)  -> top-k chunks   (RAG)\nmemory.recall(user)                (state)\ngraph.neighbors(entity)         (GraphRAG)\ntools = select_by_intent(task)   (not all)\n\nassemble  ->  ~8k focused tokens",
+      "translation": "retrieve(query)  -> top-k chunks   (RAG)\nmemory.recall(user)            (состояние)\ngraph.neighbors(entity)         (GraphRAG)\ntools = select_by_intent(task)   (не все)\n\nсборка  ->  ~8k токенов по делу",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Payoff  —  the model reasons over the right context.",
+      "translation": "Выигрыш  —  модель рассуждает над нужным контекстом.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "stuff the window\nto assemble context",
+      "translation": "от забивки\nк сборке",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 5 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 5",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "Context selection is becoming\na primary engineering problem.",
+      "translation": "Отбор контекста становится\nглавной инженерной задачей.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "RAG, memory, and GraphRAG solve\ndifferent pieces — don't merge them.",
+      "translation": "RAG, память и GraphRAG решают\nразные задачи — не смешивайте их.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "The next failure frontier is context\nmisassembly, not just hallucination.",
+      "translation": "Новый фронт ошибок — неверная сборка\nконтекста, не только галлюцинации.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "Progressive discovery and context\nreduction are infrastructure patterns.",
+      "translation": "Постепенное обнаружение и сжатие\nконтекста — паттерны инфраструктуры.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“Stuffing context is not memory.”   —  Jack Morris  ·  corpus video #48",
+      "translation": "«Забить контекст — это не память».   —  Джек Моррис  ·  видео корпуса #48",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "source": "diagrams/inline/ch07-fig1-authority-boundary-collapse.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 7  ·  DELEGATED AUTHORITY",
+      "translation": "ГЛАВА 7  ·  ДЕЛЕГИРОВАННЫЕ ПОЛНОМОЧИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "When the authority boundary disappears",
+      "translation": "Когда исчезает граница полномочий",
+      "where": "free text"
+    },
+    {
+      "id": "step1t",
+      "text": "Summarize the\nsource document",
+      "translation": "Пересказать\nисходный документ",
+      "where": "free text inside rectangle step1",
+      "budget_px": 129,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "step1l",
+      "text": "ASSISTANCE",
+      "translation": "ПОМОЩЬ",
+      "where": "free text"
+    },
+    {
+      "id": "step2t",
+      "text": "Validation error:\nfetch more records",
+      "translation": "Ошибка проверки:\nдобрать записи",
+      "where": "free text inside rectangle step2",
+      "budget_px": 129,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "step2l",
+      "text": "RETRIEVAL",
+      "translation": "ПОИСК",
+      "where": "free text"
+    },
+    {
+      "id": "step3t",
+      "text": "Reinterpret rule,\noverride warning",
+      "translation": "Перетолковать\nи обойти правило",
+      "where": "free text inside rectangle step3",
+      "budget_px": 129,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "step3l",
+      "text": "JUDGMENT",
+      "translation": "СУЖДЕНИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "step4t",
+      "text": "Assemble & file\nthe draft return",
+      "translation": "Собрать и подать\nпроект декларации",
+      "where": "free text inside rectangle step4",
+      "budget_px": 129,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "step4l",
+      "text": "AUTHORIZATION",
+      "translation": "ПОЛНОМОЧИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "boundary_lbl",
+      "text": "the boundary that should be here  —  but isn't:\nno scope check, no human review between stages",
+      "translation": "здесь должна быть граница  —  но её нет:\nни проверки прав, ни ревью человека между этапами",
+      "where": "free text"
+    },
+    {
+      "id": "smooth",
+      "text": "From the outside the trajectory still looks smooth  —  competent, coherent, and unaudited.",
+      "translation": "Снаружи путь всё ещё выглядит гладким  —  умело, связно и без аудита.",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "A tax-prep agent slides from assistance into authorization — no single step looks wrong.",
+      "translation": "Налоговый агент соскальзывает от помощи к полномочиям, и ни один шаг не выглядит ошибкой.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Joel Hron, CTO, Thomson Reuters  ·  corpus video #206",
+      "translation": "— Джоэл Хрон, CTO, Thomson Reuters  ·  видео корпуса #206",
+      "where": "free text"
+    }
+  ]
+}

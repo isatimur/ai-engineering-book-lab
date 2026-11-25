@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/06-chapter2-taste.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 2",
+      "translation": "ГЛАВА 2",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Taste Still Matters When Code Gets Cheap",
+      "translation": "Вкус важен, даже когда код дешевеет",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "The human half of the opening argument — what stays scarce once output gets cheap?",
+      "translation": "Человеческая половина вступительного довода: что остаётся дефицитным, когда результат дешевеет?",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE NAIVE WAY",
+      "translation": "НАИВНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "Vibe coding as the default",
+      "translation": "Вайб-кодинг по умолчанию",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Accept whatever the model emits.\nIf the demo runs, ship it.",
+      "translation": "Принимать всё, что выдала модель.\nДемо работает — выкатываем.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  WHAT GETS SHIPPED TODAY",
+      "translation": "ПРИМЕР  —  ЧТО ВЫКАТЫВАЮТ СЕГОДНЯ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "function h(d) {\n  let r = []\n  for (i in d) {\n    try { r.push(d[i].val * 2) }\n    catch (e) {}          // error swallowed\n  }\n  return r                // i leaks global\n}",
+      "translation": "function h(d) {\n  let r = []\n  for (i in d) {\n    try { r.push(d[i].val * 2) }\n    catch (e) {}          // ошибка проглочена\n  }\n  return r                // i утекает в global\n}",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Cost  —  expensive slop nobody can review or trust.",
+      "translation": "Цена  —  дорогая халтура: ни проверить, ни доверять.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "THE ENGINEERED WAY",
+      "translation": "ИНЖЕНЕРНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "Vibe engineering",
+      "translation": "Вайб-инжиниринг",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "Frame the problem. Set constraints.\nReview every output against intent.",
+      "translation": "Поставить задачу. Задать ограничения.\nСверять каждый результат с замыслом.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  SAME INTENT, ENGINEERED",
+      "translation": "ПРИМЕР  —  ТОТ ЖЕ ЗАМЫСЕЛ, ИНЖЕНЕРНО",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "/* Doubles each sensor reading.\n   Invalid input is a caller error. */\nfunction doubleReadings(\n  readings: Reading[]\n): number[] {\n  return readings.map(r => r.value * 2)\n}\n// + a test that pins the contract",
+      "translation": "/* Удваивает каждое показание датчика.\n   Неверный ввод — ошибка вызывающего. */\nfunction doubleReadings(\n  readings: Reading[]\n): number[] {\n  return readings.map(r => r.value * 2)\n}\n// + тест, фиксирующий контракт",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Payoff  —  output you can defend, extend, and trust.",
+      "translation": "Выигрыш  —  результат можно защитить, развить и ему можно верить.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "vibe coding\nto vibe engineering",
+      "translation": "вайб-кодинг →\nвайб-инжиниринг",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 2 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 2",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "Cheap code raises the value of\ntaste, architecture, and judgment.",
+      "translation": "Дешёвый код повышает цену\nвкуса, архитектуры и суждения.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "AI amplifies good operators —\nand bad habits — equally.",
+      "translation": "ИИ одинаково усиливает хороших\nоператоров — и плохие привычки.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "Vibe coding is great to explore —\ndangerous as a production default.",
+      "translation": "Вайб-кодинг хорош для поиска —\nопасен как норма для продакшена.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "The new scarce skill is problem\nframing and quality discrimination.",
+      "translation": "Новый дефицитный навык — постановка\nзадачи и различение качества.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“Software fundamentals matter now more than they ever have.”   —  Matt Pocock, AI Hero  ·  corpus video #1",
+      "translation": "«Основы разработки ПО сейчас важнее, чем когда-либо».   —  Мэтт Покок, AI Hero  ·  видео корпуса #1",
+      "where": "free text"
+    }
+  ]
+}

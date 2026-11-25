@@ -1,0 +1,96 @@
+{
+  "source": "diagrams/inline/ch08-fig3-interruption-runtime.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 8  ·  INTERRUPTION HANDLING",
+      "translation": "ГЛАВА 8  ·  ОБРАБОТКА ПЕРЕБИВАНИЙ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Interruption is a runtime problem, not UX polish",
+      "translation": "Перебивание — задача среды, а не полировка UX",
+      "where": "free text"
+    },
+    {
+      "id": "naive_lbl",
+      "text": "THE NAIVE WAY  —  TALK OVER, LOSE THE THREAD",
+      "translation": "НАИВНЫЙ ПУТЬ  —  ГОВОРИТ ПОВЕРХ, ТЕРЯЕТ НИТЬ",
+      "where": "free text"
+    },
+    {
+      "id": "naive_t",
+      "text": "human speaks  →  agent keeps talking\n→  state discarded  →  restart from zero",
+      "translation": "человек говорит  →  агент не умолкает\n→  состояние сброшено  →  всё с нуля",
+      "where": "free text inside rectangle naive_box",
+      "budget_px": 299,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "eng_lbl",
+      "text": "THE ENGINEERED WAY  —  PRESERVE, REDIRECT, RESUME",
+      "translation": "ИНЖЕНЕРНЫЙ ПУТЬ  —  СОХРАНИТЬ, ПЕРЕНАПРАВИТЬ, ПРОДОЛЖИТЬ",
+      "where": "free text"
+    },
+    {
+      "id": "s1t",
+      "text": "detect\nbarge-in",
+      "translation": "заметить\nперебив",
+      "where": "free text inside rectangle s1",
+      "budget_px": 66,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "s2t",
+      "text": "pause &\nsnapshot",
+      "translation": "пауза и\nснимок",
+      "where": "free text inside rectangle s2",
+      "budget_px": 66,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "s3t",
+      "text": "handle\nnew turn",
+      "translation": "новая\nреплика",
+      "where": "free text inside rectangle s3",
+      "budget_px": 66,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "s4t",
+      "text": "resume\nthe thread",
+      "translation": "вернуть\nнить",
+      "where": "free text inside rectangle s4",
+      "budget_px": 62,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "state_rail_t",
+      "text": "conversation state persists across the whole sequence",
+      "translation": "состояние разговора живёт на всём пути",
+      "where": "free text inside rectangle state_rail",
+      "budget_px": 330,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "note",
+      "text": "Without a runtime that holds state,\nthe agent cannot pause without\nforgetting where it was.",
+      "translation": "Без среды исполнения, которая\nдержит состояние, агент не может\nпрерваться и не забыть, где был.",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Graceful interruption needs a runtime that can preserve state, pause, and resume the thread.",
+      "translation": "Мягкое перебивание требует среды, которая сохраняет состояние, ставит на паузу и возвращает нить.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Dr. Tom Shapland, LiveKit  ·  corpus video #146",
+      "translation": "— Том Шапленд, LiveKit  ·  видео корпуса #146",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "source": "diagrams/inline/ch03-fig5-unstated-decisions.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g770112",
+      "text": "CHAPTER 3  ·  WHERE SLOP COMES FROM",
+      "translation": "ГЛАВА 3  ·  ОТКУДА БЕРЁТСЯ ХАЛТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g770115",
+      "text": "A Patch Is ~500 Unstated Decisions",
+      "translation": "Патч — это ~500 невысказанных решений",
+      "where": "free text"
+    },
+    {
+      "id": "g770124",
+      "text": "The task names a few; the model silently samples the rest from what it has seen.",
+      "translation": "Задача называет несколько; остальные модель молча берёт из того, что видела.",
+      "where": "free text"
+    },
+    {
+      "id": "g770127",
+      "text": "WRITTEN",
+      "translation": "ЗАПИСАНО",
+      "where": "free text"
+    },
+    {
+      "id": "g770133",
+      "text": "TASK SPEC\nadd /refunds endpoint\nreturn 200 on success",
+      "translation": "СПЕЦИФИКАЦИЯ\nэндпоинт /refunds\n200 при успехе",
+      "where": "free text inside rectangle g770130",
+      "budget_px": 166,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g770142",
+      "text": "~500 NON-FUNCTIONAL DECISIONS  —  unwritten, inferred under uncertainty",
+      "translation": "~500 НЕФУНКЦИОНАЛЬНЫХ РЕШЕНИЙ  —  не записаны, угаданы вслепую",
+      "where": "free text inside rectangle g770139",
+      "budget_px": 658,
+      "budget_chars_per_line": 91
+    },
+    {
+      "id": "g770148",
+      "text": "naming",
+      "translation": "именование",
+      "where": "free text inside rectangle g770145",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770154",
+      "text": "proportion",
+      "translation": "пропорции",
+      "where": "free text inside rectangle g770151",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770160",
+      "text": "perf discipline",
+      "translation": "быстродействие",
+      "where": "free text inside rectangle g770157",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770166",
+      "text": "dependency choice",
+      "translation": "зависимости",
+      "where": "free text inside rectangle g770163",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770172",
+      "text": "rollback safety",
+      "translation": "надёжный откат",
+      "where": "free text inside rectangle g770169",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770178",
+      "text": "test shape",
+      "translation": "форма тестов",
+      "where": "free text inside rectangle g770175",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770184",
+      "text": "compatibility",
+      "translation": "совместимость",
+      "where": "free text inside rectangle g770181",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770190",
+      "text": "reviewability",
+      "translation": "удобство ревью",
+      "where": "free text inside rectangle g770187",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770196",
+      "text": "error shape",
+      "translation": "формат ошибок",
+      "where": "free text inside rectangle g770193",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770202",
+      "text": "logging",
+      "translation": "логирование",
+      "where": "free text inside rectangle g770199",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770205",
+      "text": "one unspecified decision  →  two outcomes",
+      "translation": "одно незаданное решение  →  два исхода",
+      "where": "free text"
+    },
+    {
+      "id": "g770211",
+      "text": "UNSPECIFIED",
+      "translation": "НЕ ЗАДАНО",
+      "where": "free text inside rectangle g770208",
+      "budget_px": 397,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g770214",
+      "text": "→ model samples 1 of the trillions of\n   lines it trained on\n→ a generic convention · NOT yours = slop",
+      "translation": "→ модель берёт 1 из триллионов строк,\n   на которых обучалась\n→ общая конвенция · НЕ ваша = халтура",
+      "where": "free text inside rectangle g770208",
+      "budget_px": 397,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g770220",
+      "text": "WRITTEN DOWN",
+      "translation": "ЗАПИСАНО",
+      "where": "free text inside rectangle g770217",
+      "budget_px": 427,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g770223",
+      "text": "→ examples/ + a lint rule pin the choice\n→ your convention, on every run = yours",
+      "translation": "→ examples/ + правило линтера фиксируют выбор\n→ ваша конвенция в каждом прогоне = ваше",
+      "where": "free text inside rectangle g770217",
+      "budget_px": 427,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770229",
+      "text": "Nothing makes the sample yours — until you externalize the decision the task left silent.",
+      "translation": "Выборка не станет вашей, пока вы не вынесете наружу решение, о котором задача молчит.",
+      "where": "free text inside rectangle g770226",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "g770232",
+      "text": "— Ryan Lopopolo, OpenAI · corpus video #16",
+      "translation": "— Райан Лопополо, OpenAI · видео корпуса #16",
+      "where": "free text"
+    }
+  ]
+}

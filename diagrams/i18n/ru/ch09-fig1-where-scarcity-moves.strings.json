@@ -1,0 +1,110 @@
+{
+  "source": "diagrams/inline/ch09-fig1-where-scarcity-moves.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "AI moves where the scarcity lives",
+      "translation": "ИИ сдвигает дефицит",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Cheaper generation does not remove the bottleneck — it relocates it.",
+      "translation": "Дешёвая генерация не убирает узкое место — она его переносит.",
+      "where": "free text"
+    },
+    {
+      "id": "before_lbl",
+      "text": "WHERE SCARCITY USED TO LIVE",
+      "translation": "ГДЕ БЫЛ ДЕФИЦИТ",
+      "where": "free text"
+    },
+    {
+      "id": "before_big",
+      "text": "GENERATION",
+      "translation": "ГЕНЕРАЦИЯ",
+      "where": "free text inside rectangle before_box",
+      "budget_px": 255,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "before_body",
+      "text": "Writing the code was the\nhard, slow, scarce step.\n\nMore people, more hours\n= more output.",
+      "translation": "Писать код было трудным,\nмедленным, дефицитным шагом.\n\nБольше людей и часов\n= больше результата.",
+      "where": "free text inside rectangle before_box",
+      "budget_px": 255,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "arrow_lbl",
+      "text": "AI makes\nthis cheap",
+      "translation": "ИИ делает\nэто дешёвым",
+      "where": "free text"
+    },
+    {
+      "id": "after_lbl",
+      "text": "WHERE SCARCITY LIVES NOW",
+      "translation": "ГДЕ ДЕФИЦИТ ТЕПЕРЬ",
+      "where": "free text"
+    },
+    {
+      "id": "chip1t",
+      "text": "judgment",
+      "translation": "суждение",
+      "where": "bound to rectangle chip1 (wraps)",
+      "budget_px": 108,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "chip2t",
+      "text": "prioritization",
+      "translation": "приоритеты",
+      "where": "bound to rectangle chip2 (wraps)",
+      "budget_px": 112,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "chip3t",
+      "text": "review capacity",
+      "translation": "ресурс ревью",
+      "where": "bound to rectangle chip3 (wraps)",
+      "budget_px": 108,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "chip4t",
+      "text": "throughput design",
+      "translation": "дизайн потока",
+      "where": "bound to rectangle chip4 (wraps)",
+      "budget_px": 108,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "after_note",
+      "text": "Coherence — not output — is now\nthe organization's scarce resource.",
+      "translation": "Теперь дефицит организации —\nсогласованность, а не объём.",
+      "where": "free text inside rectangle after_box",
+      "budget_px": 257,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "caption",
+      "text": "When generation is no longer scarce, judgment and review become the constraint.",
+      "translation": "Когда генерация перестаёт быть дефицитом, ограничением становятся суждение и ревью.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Dan Shipper, CEO, Every  ·  corpus video #65",
+      "translation": "— Дэн Шиппер, CEO Every  ·  видео корпуса #65",
+      "where": "free text"
+    }
+  ]
+}

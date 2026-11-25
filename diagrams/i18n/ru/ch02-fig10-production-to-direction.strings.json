@@ -1,0 +1,132 @@
+{
+  "source": "diagrams/inline/ch02-fig10-production-to-direction.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g92493",
+      "text": "CHAPTER 2  ·  FROM PRODUCTION TO DIRECTION",
+      "translation": "ГЛАВА 2  ·  ОТ ПРОИЗВОДСТВА К УПРАВЛЕНИЮ",
+      "where": "free text"
+    },
+    {
+      "id": "g92496",
+      "text": "Fundamentals Migrate Upward",
+      "translation": "Основы смещаются вверх",
+      "where": "free text"
+    },
+    {
+      "id": "g92505",
+      "text": "Fundamentals do not disappear. They move up into the more leveraged parts of the loop.",
+      "translation": "Основы не исчезают. Они уходят вверх, в те части цикла, где рычаг сильнее.",
+      "where": "free text"
+    },
+    {
+      "id": "g92511",
+      "text": "PRODUCTION  ·  token-making",
+      "translation": "ПРОИЗВОДСТВО  ·  выпуск токенов",
+      "where": "free text inside rectangle g92508",
+      "budget_px": 335,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g92514",
+      "text": "typing syntax · scaffolding · wiring · drafting",
+      "translation": "синтаксис · каркас · связки · черновики",
+      "where": "free text inside rectangle g92508",
+      "budget_px": 335,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "g92517",
+      "text": "→ increasingly machine-absorbed",
+      "translation": "→ всё больше уходит машине",
+      "where": "free text inside rectangle g92508",
+      "budget_px": 335,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "g92523",
+      "text": "fundamentals\nmigrate upward",
+      "translation": "основы\nсмещаются вверх",
+      "where": "free text"
+    },
+    {
+      "id": "g92529",
+      "text": "DIRECTION  ·  the leveraged loop",
+      "translation": "УПРАВЛЕНИЕ  ·  цикл с рычагом",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 416,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92532",
+      "text": "· framing tasks well",
+      "translation": "· хорошо ставить задачи",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92535",
+      "text": "· defining constraints",
+      "translation": "· задавать ограничения",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92538",
+      "text": "· choosing abstractions",
+      "translation": "· выбирать абстракции",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92541",
+      "text": "· sequencing work",
+      "translation": "· выстраивать порядок работ",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92544",
+      "text": "· reviewing outputs",
+      "translation": "· проводить ревью результатов",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92547",
+      "text": "· preserving coherence across artifacts",
+      "translation": "· держать связность всех результатов",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92550",
+      "text": "· deciding when to trust vs. narrow scope",
+      "translation": "· решать: доверять или сузить задачу",
+      "where": "free text inside rectangle g92526",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92556",
+      "text": "What stays scarce is not producing tokens — it's directing production toward something durable and worth keeping.",
+      "translation": "Дефицитно не производство токенов, а умение направить его к надёжному результату, который стоит сохранить.",
+      "where": "free text inside rectangle g92553",
+      "budget_px": 857,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "g92559",
+      "text": "Fundamentals migrate upward into the more leveraged parts of the loop. Don't confuse typing with thinking.",
+      "translation": "Основы уходят вверх, туда, где рычаг сильнее. Не путайте набор кода с мышлением.",
+      "where": "free text"
+    }
+  ]
+}

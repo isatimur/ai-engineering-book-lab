@@ -1,0 +1,76 @@
+{
+  "source": "diagrams/inline/ch08-fig2-speech-layer-wrapper.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 8  ·  THE DURABLE PATTERN",
+      "translation": "ГЛАВА 8  ·  НАДЁЖНЫЙ ПАТТЕРН",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Wrap a strong agent, don't rebuild for voice",
+      "translation": "Оберните сильного агента, а не стройте заново",
+      "where": "free text"
+    },
+    {
+      "id": "speech_lbl",
+      "text": "SPECIALIZED SPEECH LAYER  —  thin, swappable",
+      "translation": "СПЕЦИАЛЬНЫЙ РЕЧЕВОЙ СЛОЙ  —  тонкий, заменяемый",
+      "where": "free text inside rectangle speech_ring",
+      "budget_px": 579,
+      "budget_chars_per_line": 80
+    },
+    {
+      "id": "speech_in",
+      "text": "STT  +\nVAD",
+      "translation": "STT  +\nVAD",
+      "where": "free text inside rectangle speech_ring",
+      "budget_px": 590,
+      "budget_chars_per_line": 81
+    },
+    {
+      "id": "speech_out",
+      "text": "TTS  +\nbarge-in",
+      "translation": "TTS  +\nперебивание",
+      "where": "free text inside rectangle speech_ring",
+      "budget_px": 590,
+      "budget_chars_per_line": 81
+    },
+    {
+      "id": "core_h",
+      "text": "THE UNDERLYING AGENT",
+      "translation": "АГЕНТ ВНУТРИ",
+      "where": "free text inside rectangle core",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "core_b",
+      "text": "good tools  ·  durable state\npermissions  ·  review paths",
+      "translation": "инструменты  ·  надёжное состояние\nправа  ·  пути ревью",
+      "where": "free text inside rectangle core",
+      "budget_px": 290,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "rule",
+      "text": "Strong core → voice is just an interface.  Weak core → voice exposes the weakness.",
+      "translation": "Сильное ядро → голос — просто интерфейс.  Слабое ядро → голос обнажает слабость.",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "The durable pattern: a thin speech layer around an agent that already works.",
+      "translation": "Надёжный паттерн: тонкий речевой слой вокруг агента, который уже работает.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Luke Harries, ElevenLabs  ·  corpus video #661",
+      "translation": "— Люк Харрис, ElevenLabs  ·  видео корпуса #661",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "source": "diagrams/inline/ch05-fig6-misranked-matter-note.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9601",
+      "text": "CHAPTER 5  ·  CONTEXT IS INFRASTRUCTURE",
+      "translation": "ГЛАВА 5  ·  КОНТЕКСТ — ЭТО ИНФРАСТРУКТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g9604",
+      "text": "The Misranked Matter Note",
+      "translation": "Заметка по делу, которую ранжировали неверно",
+      "where": "free text"
+    },
+    {
+      "id": "g9613",
+      "text": "The fluent answer cited a public explainer. The governing answer sat in a note nothing told it to prefer.",
+      "translation": "Гладкий ответ сослался на публичную статью. Решающий ответ лежал в заметке, которую ничто не велело предпочесть.",
+      "where": "free text"
+    },
+    {
+      "id": "g9619",
+      "text": "REQUEST",
+      "translation": "ЗАПРОС",
+      "where": "free text inside rectangle g9616",
+      "budget_px": 290,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g9622",
+      "text": "“trace the support for this\nclient's long-standing deduction”",
+      "translation": "«найди обоснование давнего\nналогового вычета этого клиента»",
+      "where": "free text inside rectangle g9616",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g9631",
+      "text": "FLAT SIMILARITY RANKING",
+      "translation": "РАНЖИРОВАНИЕ ПО СХОДСТВУ",
+      "where": "free text inside rectangle g9628",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g9634",
+      "text": "ranks on wording overlap alone —\nno source type · no matter scope",
+      "translation": "ранжирует только по совпадению слов —\nбез типа источника · без рамок дела",
+      "where": "free text inside rectangle g9628",
+      "budget_px": 290,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g9643",
+      "text": "①  RANKED FIRST   ·   looks decisive",
+      "translation": "①  НА ПЕРВОМ МЕСТЕ   ·   выглядит убедительно",
+      "where": "free text inside rectangle g9640",
+      "budget_px": 461,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g9646",
+      "text": "Public explainer   (public web article)",
+      "translation": "Публичная статья   (из открытого интернета)",
+      "where": "free text inside rectangle g9640",
+      "budget_px": 461,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9649",
+      "text": "wording ≈ matches the query almost perfectly",
+      "translation": "формулировки ≈ почти точно совпадают с запросом",
+      "where": "free text inside rectangle g9640",
+      "budget_px": 461,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "g9652",
+      "text": "✗  wrong jurisdiction · not written for this client",
+      "translation": "✗  не та юрисдикция · написано не для этого клиента",
+      "where": "free text inside rectangle g9640",
+      "budget_px": 461,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "g9655",
+      "text": "▲  ranking inverted — the governing note is buried below",
+      "translation": "▲  порядок перевёрнут — решающая заметка ниже",
+      "where": "free text"
+    },
+    {
+      "id": "g9661",
+      "text": "②  RANKED BELOW   ·   nothing marked it authoritative",
+      "translation": "②  НИЖЕ   ·   ничто не пометило её как авторитетную",
+      "where": "free text inside rectangle g9658",
+      "budget_px": 461,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g9664",
+      "text": "Matter note — senior attorney",
+      "translation": "Заметка по делу — старший юрист",
+      "where": "free text inside rectangle g9658",
+      "budget_px": 461,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9667",
+      "text": "the governing position · this client · this jurisdiction",
+      "translation": "решающая позиция · этот клиент · эта юрисдикция",
+      "where": "free text inside rectangle g9658",
+      "budget_px": 461,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "g9670",
+      "text": "✓  governing — the system had no way to prefer it",
+      "translation": "✓  решающая — но система не могла её предпочесть",
+      "where": "free text inside rectangle g9658",
+      "budget_px": 461,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "g9676",
+      "text": "FIX — type the knowledge topology",
+      "translation": "ИСПРАВИТЬ — разметить структуру знаний",
+      "where": "free text inside rectangle g9673",
+      "budget_px": 815,
+      "budget_chars_per_line": 97
+    },
+    {
+      "id": "g9679",
+      "text": "source typing (internal precedent > public background)  ·  access boundaries per matter  ·  provenance on every answer",
+      "translation": "тип источника (свой прецедент > публичный фон)  ·  доступ в рамках дела  ·  источники у ответа",
+      "where": "free text"
+    },
+    {
+      "id": "g9685",
+      "text": "The remedy is not a smarter model — it's a topology the retrieval can rank by.",
+      "translation": "Лекарство — не умнее модель, а структура, по которой поиск умеет ранжировать.",
+      "where": "free text inside rectangle g9682",
+      "budget_px": 815,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "g9688",
+      "text": "— Chapter 5, rendered scene: Hargrove's misranked matter note  (book case, not a corpus quote)",
+      "translation": "— Глава 5, сцена «Харгроув»: заметка, ранжированная неверно  (пример из книги, не цитата из корпуса)",
+      "where": "free text"
+    }
+  ]
+}

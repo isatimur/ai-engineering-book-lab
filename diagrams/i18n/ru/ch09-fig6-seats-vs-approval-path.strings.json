@@ -1,0 +1,190 @@
+{
+  "source": "diagrams/inline/ch09-fig6-seats-vs-approval-path.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g12121",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g12124",
+      "text": "Count Seats, or Count Approval Paths",
+      "translation": "Считать места или пути согласования",
+      "where": "free text"
+    },
+    {
+      "id": "g12133",
+      "text": "Adoption by access looks transformative. Adoption by routing often hasn’t moved.",
+      "translation": "По доступу внедрение выглядит прорывом. По маршрутам часто ничего не сдвинулось.",
+      "where": "free text"
+    },
+    {
+      "id": "g12139",
+      "text": "MEASURE BY ACCESS  —  count seats",
+      "translation": "МЕРИТЬ ДОСТУПОМ  —  считать места",
+      "where": "free text inside rectangle g12136",
+      "budget_px": 420,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g12142",
+      "text": "licenses purchased          ↑ ↑",
+      "translation": "куплено лицензий             ↑ ↑",
+      "where": "free text inside rectangle g12136",
+      "budget_px": 401,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12145",
+      "text": "engineers with a seat        ↑ ↑",
+      "translation": "инженеров с местом           ↑ ↑",
+      "where": "free text inside rectangle g12136",
+      "budget_px": 401,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12148",
+      "text": "but the routing is unchanged:",
+      "translation": "но маршрут прежний:",
+      "where": "free text inside rectangle g12136",
+      "budget_px": 401,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g12154",
+      "text": "request",
+      "translation": "запрос",
+      "where": "free text inside rectangle g12151",
+      "budget_px": 80,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g12163",
+      "text": "same approver",
+      "translation": "тот же человек",
+      "where": "free text inside rectangle g12160",
+      "budget_px": 118,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g12172",
+      "text": "same gate → ship",
+      "translation": "барьер → релиз",
+      "where": "free text inside rectangle g12169",
+      "budget_px": 118,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g12178",
+      "text": "individuals a little faster — the operating model didn’t bend",
+      "translation": "каждый чуть быстрее, но модель работы прежняя",
+      "where": "free text"
+    },
+    {
+      "id": "g12184",
+      "text": "MEASURE BY ROUTING  —  did a path change?",
+      "translation": "МЕРИТЬ МАРШРУТОМ  —  сменился ли путь?",
+      "where": "free text inside rectangle g12181",
+      "budget_px": 420,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g12187",
+      "text": "test:  did one approval path actually change?",
+      "translation": "тест:  изменился ли хоть один путь согласования?",
+      "where": "free text inside rectangle g12181",
+      "budget_px": 403,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12190",
+      "text": "before",
+      "translation": "до",
+      "where": "free text inside rectangle g12181",
+      "budget_px": 403,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g12196",
+      "text": "request",
+      "translation": "запрос",
+      "where": "free text inside rectangle g12193",
+      "budget_px": 90,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g12205",
+      "text": "human approver",
+      "translation": "человек решает",
+      "where": "free text inside rectangle g12202",
+      "budget_px": 108,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g12214",
+      "text": "ship",
+      "translation": "релиз",
+      "where": "free text inside rectangle g12211",
+      "budget_px": 56,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g12217",
+      "text": "after",
+      "translation": "после",
+      "where": "free text inside rectangle g12181",
+      "budget_px": 403,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g12223",
+      "text": "request",
+      "translation": "запрос",
+      "where": "free text inside rectangle g12220",
+      "budget_px": 90,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g12232",
+      "text": "policy rail + checks",
+      "translation": "политики + проверки",
+      "where": "free text inside rectangle g12229",
+      "budget_px": 140,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g12241",
+      "text": "owner iff\nconsequential",
+      "translation": "владелец,\nесли важно",
+      "where": "free text inside rectangle g12238",
+      "budget_px": 98,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g12247",
+      "text": "the operating model bends → AI becomes formative",
+      "translation": "модель меняется → ИИ становится формирующим",
+      "where": "free text inside rectangle g12244",
+      "budget_px": 392,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g12253",
+      "text": "“There is a 10x difference between an org where 90% of engineers use AI vs one where 100% do.”",
+      "translation": "«Есть 10-кратная разница между компанией, где ИИ пользуются 90% инженеров, и той, где 100%».",
+      "where": "free text inside rectangle g12250",
+      "budget_px": 857,
+      "budget_chars_per_line": 105
+    },
+    {
+      "id": "g12256",
+      "text": "— Dan Shipper, CEO, Every  ·  corpus video #65",
+      "translation": "— Дэн Шиппер, CEO Every  ·  видео корпуса #65",
+      "where": "free text inside rectangle g12250",
+      "budget_px": 857,
+      "budget_chars_per_line": 119
+    }
+  ]
+}

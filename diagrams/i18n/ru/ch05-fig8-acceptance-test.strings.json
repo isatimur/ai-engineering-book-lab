@@ -1,0 +1,162 @@
+{
+  "source": "diagrams/inline/ch05-fig8-acceptance-test.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9769",
+      "text": "CHAPTER 5  ·  CONTEXT IS INFRASTRUCTURE",
+      "translation": "ГЛАВА 5  ·  КОНТЕКСТ — ЭТО ИНФРАСТРУКТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g9772",
+      "text": "Context Quality Is Measured Downstream",
+      "translation": "Качество контекста измеряют по результату",
+      "where": "free text"
+    },
+    {
+      "id": "g9781",
+      "text": "A clever retrieval trace proves nothing. Only the work improving does.",
+      "translation": "Хитрый трейс поиска ничего не доказывает. Доказывает только лучшая работа.",
+      "where": "free text"
+    },
+    {
+      "id": "g9787",
+      "text": "THE ACCEPTANCE TEST",
+      "translation": "ПРИЁМОЧНЫЙ ТЕСТ",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9790",
+      "text": "any context change must make the system…",
+      "translation": "любое изменение контекста должно…",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g9793",
+      "text": "✓  complete real tasks more accurately",
+      "translation": "✓  точнее решать реальные задачи",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9796",
+      "text": "✓  cite better evidence",
+      "translation": "✓  ссылаться на лучшие доказательства",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9799",
+      "text": "✓  reduce review burden",
+      "translation": "✓  сокращать ревью",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9802",
+      "text": "✓  waste fewer tokens for the same result",
+      "translation": "✓  тратить меньше токенов на тот же итог",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9805",
+      "text": "✓  feel trustworthy, not more theatrical",
+      "translation": "✓  вызывать доверие, а не играть на публику",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9808",
+      "text": "SCORE THE TWO STAGES SEPARATELY",
+      "translation": "ОЦЕНИВАЙТЕ ДВА ЭТАПА ОТДЕЛЬНО",
+      "where": "free text"
+    },
+    {
+      "id": "g9814",
+      "text": "①  RETRIEVAL  —  recall on the context layer",
+      "translation": "①  ПОИСК  —  полнота на слое контекста",
+      "where": "free text inside rectangle g9811",
+      "budget_px": 371,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9817",
+      "text": "did the governing passage reach the\nassembled working set at all?",
+      "translation": "попал ли решающий фрагмент\nв собранный рабочий набор?",
+      "where": "free text inside rectangle g9811",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9826",
+      "text": "②  GENERATION",
+      "translation": "②  ГЕНЕРАЦИЯ",
+      "where": "free text inside rectangle g9823",
+      "budget_px": 371,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9829",
+      "text": "did the model then use it correctly?",
+      "translation": "правильно ли модель его использовала?",
+      "where": "free text inside rectangle g9823",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9835",
+      "text": "Score only the final answer and a",
+      "translation": "Оценивайте только итоговый ответ — и ошибка",
+      "where": "free text inside rectangle g9832",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9838",
+      "text": "context-assembly bug looks exactly like",
+      "translation": "сборки контекста выглядит как поглупевшая",
+      "where": "free text inside rectangle g9832",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9841",
+      "text": "the model getting dumber — the upgrade",
+      "translation": "модель. Апгрейд уйдёт на проблему поиска.",
+      "where": "free text inside rectangle g9832",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9844",
+      "text": "gets wasted on a retrieval problem.",
+      "translation": " ",
+      "where": "free text inside rectangle g9832",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9850",
+      "text": "Evals tell you if the architecture helps; observability tells you where assembly failed.",
+      "translation": "Оценки говорят, помогает ли архитектура; наблюдаемость — где сломалась сборка.",
+      "where": "free text"
+    },
+    {
+      "id": "g9853",
+      "text": "— Chapter 5, paired with Chapter 4 (evals + observability); book framing, not a single corpus quote",
+      "translation": "— Глава 5 в паре с главой 4 (оценки + наблюдаемость); вывод книги, а не одна цитата из корпуса",
+      "where": "free text"
+    }
+  ]
+}

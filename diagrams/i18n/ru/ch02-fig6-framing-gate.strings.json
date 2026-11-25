@@ -1,0 +1,126 @@
+{
+  "source": "diagrams/inline/ch02-fig6-framing-gate.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g92154",
+      "text": "CHAPTER 2  ·  FRAMING IS THE NEW SCARCE SKILL",
+      "translation": "ГЛАВА 2  ·  ПОСТАНОВКА ЗАДАЧИ — НОВЫЙ ДЕФИЦИТНЫЙ НАВЫК",
+      "where": "free text"
+    },
+    {
+      "id": "g92157",
+      "text": "The Framing Gate",
+      "translation": "Барьер постановки задачи",
+      "where": "free text"
+    },
+    {
+      "id": "g92166",
+      "text": "Six questions a task must answer before it is delegated — a gate it clears, not a courtesy.",
+      "translation": "Шесть вопросов, на которые задача отвечает до передачи исполнителю, — барьер, а не вежливость.",
+      "where": "free text"
+    },
+    {
+      "id": "g92172",
+      "text": "Task",
+      "translation": "Задача",
+      "where": "free text inside rectangle g92169",
+      "budget_px": 156,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g92175",
+      "text": "vague, or framed?",
+      "translation": "размыта или поставлена?",
+      "where": "free text"
+    },
+    {
+      "id": "g92184",
+      "text": "THE FRAMING GATE  ·  six questions",
+      "translation": "БАРЬЕР ПОСТАНОВКИ  ·  шесть вопросов",
+      "where": "free text inside rectangle g92181",
+      "budget_px": 436,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92190",
+      "text": "1 · What exactly is the task?",
+      "translation": "1 · В чём именно задача?",
+      "where": "free text inside rectangle g92187",
+      "budget_px": 393,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92196",
+      "text": "2 · What counts as success?",
+      "translation": "2 · Что считается успехом?",
+      "where": "free text inside rectangle g92193",
+      "budget_px": 393,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92202",
+      "text": "3 · What constraints matter?",
+      "translation": "3 · Какие ограничения важны?",
+      "where": "free text inside rectangle g92199",
+      "budget_px": 393,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92208",
+      "text": "4 · Optimize for: speed · clarity · correctness · reversibility",
+      "translation": "4 · Цель: скорость · ясность · точность · обратимость",
+      "where": "free text"
+    },
+    {
+      "id": "g92214",
+      "text": "5 · What stays rough vs. must be production-grade now?",
+      "translation": "5 · Что пока черновое, а что сразу для продакшена?",
+      "where": "free text inside rectangle g92211",
+      "budget_px": 393,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92220",
+      "text": "6 · What makes it unacceptable even if it looks complete?",
+      "translation": "6 · Что недопустимо, даже если всё выглядит готовым?",
+      "where": "free text inside rectangle g92181",
+      "budget_px": 411,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92229",
+      "text": "Delegated\nexecution",
+      "translation": "Делегированное\nисполнение",
+      "where": "free text inside rectangle g92226",
+      "budget_px": 172,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g92232",
+      "text": "cheap · fast · faithful",
+      "translation": "дёшево · быстро · точно",
+      "where": "free text"
+    },
+    {
+      "id": "g92238",
+      "text": "Skip the gate and the generator sprints confidently in the wrong direction — plausible but misaligned, at scale.",
+      "translation": "Пропустите барьер — и генератор уверенно помчится не туда: правдоподобно, но мимо цели, и в масштабе.",
+      "where": "free text inside rectangle g92235",
+      "budget_px": 857,
+      "budget_chars_per_line": 114
+    },
+    {
+      "id": "g92241",
+      "text": "These questions used to signal seniority; now they are the gate anyone clears before directing cheap execution.",
+      "translation": "Раньше эти вопросы выдавали опытного инженера; теперь это барьер для любого, кто управляет дешёвым исполнением.",
+      "where": "free text"
+    },
+    {
+      "id": "g92244",
+      "text": "— Sean Grove, OpenAI · corpus video #265  ·  \"the new scarce skill is writing specifications that fully capture the intent\"",
+      "translation": "— Шон Гроув, OpenAI · видео корпуса #265  ·  «новый дефицитный навык — писать спецификации, которые полностью передают замысел»",
+      "where": "free text"
+    }
+  ]
+}

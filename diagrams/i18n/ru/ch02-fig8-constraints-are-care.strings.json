@@ -1,0 +1,140 @@
+{
+  "source": "diagrams/inline/ch02-fig8-constraints-are-care.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g92331",
+      "text": "CHAPTER 2  ·  CONSTRAINTS ARE A FORM OF CARE",
+      "translation": "ГЛАВА 2  ·  ОГРАНИЧЕНИЯ — ЭТО ФОРМА ЗАБОТЫ",
+      "where": "free text"
+    },
+    {
+      "id": "g92334",
+      "text": "Constraints Are What Let You Delegate",
+      "translation": "Ограничения позволяют делегировать",
+      "where": "free text"
+    },
+    {
+      "id": "g92343",
+      "text": "Confidence in fast generation comes from the verification wrapped around it — not the vibes.",
+      "translation": "Уверенность в быстрой генерации даёт проверка вокруг неё, а не вайб.",
+      "where": "free text"
+    },
+    {
+      "id": "g92349",
+      "text": "Verification = high-quality tests + a reviewing pass on the diff before it merges — not the vibes.",
+      "translation": "Проверка = качественные тесты + ревью диффа до слияния, а не вайб.",
+      "where": "free text inside rectangle g92346",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g92355",
+      "text": "WITHOUT EXPLICIT CONSTRAINTS",
+      "translation": "БЕЗ ЯВНЫХ ОГРАНИЧЕНИЙ",
+      "where": "free text inside rectangle g92352",
+      "budget_px": 400,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92358",
+      "text": "· wide, wasted search",
+      "translation": "· широкий, напрасный поиск",
+      "where": "free text inside rectangle g92352",
+      "budget_px": 383,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92361",
+      "text": "· evaluation stays unclear",
+      "translation": "· критерии оценки неясны",
+      "where": "free text inside rectangle g92352",
+      "budget_px": 383,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92364",
+      "text": "· must hover over every step",
+      "translation": "· надо следить за каждым шагом",
+      "where": "free text inside rectangle g92352",
+      "budget_px": 383,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92367",
+      "text": "· quality norms live only in heads",
+      "translation": "· нормы качества живут лишь в головах",
+      "where": "free text inside rectangle g92352",
+      "budget_px": 383,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92370",
+      "text": "· taste stays a private opinion",
+      "translation": "· вкус остаётся личным мнением",
+      "where": "free text inside rectangle g92352",
+      "budget_px": 383,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92376",
+      "text": "WITH EXPLICIT CONSTRAINTS  —  five jobs",
+      "translation": "С ЯВНЫМИ ОГРАНИЧЕНИЯМИ  —  пять задач",
+      "where": "free text inside rectangle g92373",
+      "budget_px": 442,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g92379",
+      "text": "· reduce wasted search",
+      "translation": "· меньше напрасного поиска",
+      "where": "free text inside rectangle g92373",
+      "budget_px": 425,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92382",
+      "text": "· make evaluation clearer",
+      "translation": "· оценка становится яснее",
+      "where": "free text inside rectangle g92373",
+      "budget_px": 425,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92385",
+      "text": "· preserve local quality norms",
+      "translation": "· местные нормы качества сохраняются",
+      "where": "free text inside rectangle g92373",
+      "budget_px": 425,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92388",
+      "text": "· delegate without hovering",
+      "translation": "· делегировать без надзора",
+      "where": "free text inside rectangle g92373",
+      "budget_px": 425,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92391",
+      "text": "· turn taste into something operational",
+      "translation": "· вкус становится рабочим инструментом",
+      "where": "free text inside rectangle g92373",
+      "budget_px": 425,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92394",
+      "text": "The team that can state its constraints delegates more safely than one relying on vibe, memory, and implied context.",
+      "translation": "Команда, которая может назвать свои ограничения, делегирует безопаснее той, что полагается на вайб, память и подразумеваемый контекст.",
+      "where": "free text"
+    },
+    {
+      "id": "g92397",
+      "text": "— Itamar Friedman, Qodo · corpus video #127  ·  \"vibe coding with confidence\"",
+      "translation": "— Итамар Фридман, Qodo · видео корпуса #127  ·  «вайб-кодинг с уверенностью»",
+      "where": "free text"
+    }
+  ]
+}

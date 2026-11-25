@@ -1,0 +1,142 @@
+{
+  "source": "diagrams/inline/ch06-fig5-factory-operating-system.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70001",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70004",
+      "text": "The Factory Needs an Operating System",
+      "translation": "Фабрике нужна операционная система",
+      "where": "free text"
+    },
+    {
+      "id": "g70013",
+      "text": "A prepared workshop is not enough. Durable execution needs an OS underneath.",
+      "translation": "Подготовленной мастерской мало. Надёжному исполнению нужна ОС внизу.",
+      "where": "free text"
+    },
+    {
+      "id": "g70019",
+      "text": "WORKSHOP WITHOUT AN OS",
+      "translation": "МАСТЕРСКАЯ БЕЗ ОС",
+      "where": "free text inside rectangle g70016",
+      "budget_px": 410,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "g70022",
+      "text": "talented workers · no foreman's board",
+      "translation": "умелые рабочие · нет доски мастера",
+      "where": "free text inside rectangle g70016",
+      "budget_px": 410,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g70028",
+      "text": "worker",
+      "translation": "рабочий",
+      "where": "free text inside rectangle g70025",
+      "budget_px": 86,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g70034",
+      "text": "worker",
+      "translation": "рабочий",
+      "where": "free text inside rectangle g70031",
+      "budget_px": 86,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g70040",
+      "text": "worker",
+      "translation": "рабочий",
+      "where": "free text inside rectangle g70037",
+      "budget_px": 86,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g70043",
+      "text": "· retry reruns finished work\n· subagents diverge on stale branches\n· reviewer gets fragments, not a roll-up",
+      "translation": "· повтор заново делает готовое\n· субагенты расходятся на старых ветках\n· ревьюер получает обрывки, а не сводку",
+      "where": "free text inside rectangle g70016",
+      "budget_px": 395,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g70046",
+      "text": "more workers only multiply confusion",
+      "translation": "больше рабочих — только больше путаницы",
+      "where": "free text inside rectangle g70016",
+      "budget_px": 410,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g70055",
+      "text": "THE FACTORY OS",
+      "translation": "ОС ФАБРИКИ",
+      "where": "free text inside rectangle g70052",
+      "budget_px": 410,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "g70061",
+      "text": "durable task identities",
+      "translation": "надёжные идентификаторы задач",
+      "where": "free text inside rectangle g70058",
+      "budget_px": 370,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g70067",
+      "text": "queues",
+      "translation": "очереди",
+      "where": "free text inside rectangle g70064",
+      "budget_px": 370,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g70073",
+      "text": "checkpoints + resumability",
+      "translation": "контрольные точки + продолжение",
+      "where": "free text inside rectangle g70070",
+      "budget_px": 370,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g70079",
+      "text": "visibility / roll-up",
+      "translation": "видимость / сводка",
+      "where": "free text inside rectangle g70076",
+      "budget_px": 370,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g70085",
+      "text": "clear places for review",
+      "translation": "понятные места для ревью",
+      "where": "free text inside rectangle g70082",
+      "budget_px": 370,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g70091",
+      "text": "A factory is a prepared environment plus a quality system —\nplus an operating system, or extra workers only add entropy.",
+      "translation": "Фабрика — это подготовленная среда плюс система качества —\nплюс операционная система, иначе новые рабочие лишь множат хаос.",
+      "where": "free text inside rectangle g70088",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g70094",
+      "text": "— after Eric Zakariasson, Cursor · corpus video #629",
+      "translation": "— по мотивам Эрика Закариассона, Cursor · видео корпуса #629",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "source": "diagrams/inline/ch05-fig7-cost-is-mostly-input.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9691",
+      "text": "CHAPTER 5  ·  CONTEXT IS INFRASTRUCTURE",
+      "translation": "ГЛАВА 5  ·  КОНТЕКСТ — ЭТО ИНФРАСТРУКТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g9694",
+      "text": "90% of the Cost Is Input",
+      "translation": "90% затрат — это вход",
+      "where": "free text"
+    },
+    {
+      "id": "g9703",
+      "text": "The bill is dominated by what you feed the model, not by what it writes back.",
+      "translation": "Счёт определяет то, что вы подаёте модели, а не то, что она пишет в ответ.",
+      "where": "free text"
+    },
+    {
+      "id": "g9709",
+      "text": "INPUT   ·   90%",
+      "translation": "ВХОД   ·   90%",
+      "where": "free text inside rectangle g9706",
+      "budget_px": 738,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9712",
+      "text": "files · search results · context you send in",
+      "translation": "файлы · результаты поиска · контекст, который вы отправляете",
+      "where": "free text inside rectangle g9706",
+      "budget_px": 738,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g9718",
+      "text": "OUTPUT",
+      "translation": "ВЫХОД",
+      "where": "free text inside rectangle g9715",
+      "budget_px": 78,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9721",
+      "text": "10%",
+      "translation": "10%",
+      "where": "free text inside rectangle g9715",
+      "budget_px": 78,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g9724",
+      "text": "token spend per turn — the two are not the same size",
+      "translation": "траты токенов за ход — доли совсем не равны",
+      "where": "free text"
+    },
+    {
+      "id": "g9730",
+      "text": "index a codebase, retrieve only the relevant slices:",
+      "translation": "индексируйте код и берите только нужные куски:",
+      "where": "free text inside rectangle g9727",
+      "budget_px": 499,
+      "budget_chars_per_line": 66
+    },
+    {
+      "id": "g9733",
+      "text": "  paste whole files          input = 100%",
+      "translation": "  вставить файлы целиком     вход = 100%",
+      "where": "free text inside rectangle g9727",
+      "budget_px": 499,
+      "budget_chars_per_line": 66
+    },
+    {
+      "id": "g9736",
+      "text": "  index + retrieve slices    input =   6%   (−94%)",
+      "translation": "  индекс + нужные куски      вход =   6%   (−94%)",
+      "where": "free text inside rectangle g9727",
+      "budget_px": 499,
+      "budget_chars_per_line": 66
+    },
+    {
+      "id": "g9739",
+      "text": "  best case · one repo · smart agents already save some",
+      "translation": "  лучший случай · один репозиторий · умные агенты уже экономят",
+      "where": "free text inside rectangle g9727",
+      "budget_px": 499,
+      "budget_chars_per_line": 72
+    },
+    {
+      "id": "g9745",
+      "text": "“Just use a cheaper model”?",
+      "translation": "«Просто взять модель дешевле»?",
+      "where": "free text inside rectangle g9742",
+      "budget_px": 277,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g9748",
+      "text": "Model      ≈ 30% of the bill.",
+      "translation": "Модель      ≈ 30% счёта.",
+      "where": "free text inside rectangle g9742",
+      "budget_px": 277,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g9751",
+      "text": "What you feed it ≈ 70%.",
+      "translation": "То, чем её кормят, ≈ 70%.",
+      "where": "free text inside rectangle g9742",
+      "budget_px": 277,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g9754",
+      "text": "→ model choice is the smaller lever",
+      "translation": "→ выбор модели — меньший рычаг",
+      "where": "free text inside rectangle g9742",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "g9757",
+      "text": "“90% of your AI cost is input … only 10% is output.”  — Rajkumar Sakthivel, Tesco · corpus video #792",
+      "translation": "«90% ваших затрат на ИИ — вход … и только 10% — выход».  — Раджкумар Сактивел, Tesco · видео корпуса #792",
+      "where": "free text"
+    },
+    {
+      "id": "g9760",
+      "text": "exact split varies by workload (output-heavy tasks invert it); the direction is robust.",
+      "translation": "точная доля зависит от нагрузки (при большом выходе всё наоборот); направление устойчиво.",
+      "where": "free text"
+    },
+    {
+      "id": "g9766",
+      "text": "Fix what you feed the model before you optimize which model.",
+      "translation": "Сначала исправьте то, что подаёте модели, а потом выбирайте модель.",
+      "where": "free text inside rectangle g9763",
+      "budget_px": 815,
+      "budget_chars_per_line": 79
+    }
+  ]
+}

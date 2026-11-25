@@ -1,0 +1,118 @@
+{
+  "source": "diagrams/inline/ch09-fig4-review-bottleneck.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9712",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g9715",
+      "text": "Review Is the New Bottleneck",
+      "translation": "Ревью — новое узкое место",
+      "where": "free text"
+    },
+    {
+      "id": "g9724",
+      "text": "You can only safely create as fast as you can trustworthily review.",
+      "translation": "Безопасно создавать можно лишь так быстро, как вы можете надёжно проверять.",
+      "where": "free text"
+    },
+    {
+      "id": "g9727",
+      "text": "✗  REVIEW HARDER — doesn't scale",
+      "translation": "✗  РЕВЬЮ УСЕРДНЕЕ — не масштабируется",
+      "where": "free text"
+    },
+    {
+      "id": "g9733",
+      "text": "Creation:  people + agents",
+      "translation": "Создание:  люди + агенты",
+      "where": "free text inside rectangle g9730",
+      "budget_px": 400,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9757",
+      "text": "weekend pile of PRs · drafts · automations",
+      "translation": "гора за выходные: PR · черновики · автоматизации",
+      "where": "free text"
+    },
+    {
+      "id": "g9766",
+      "text": "HUMAN REVIEW",
+      "translation": "РЕВЬЮ ЛЮДЬМИ",
+      "where": "free text inside rectangle g9763",
+      "budget_px": 170,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g9775",
+      "text": "ships (trickle)",
+      "translation": "релизы (капля)",
+      "where": "free text inside rectangle g9772",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9778",
+      "text": "giant queues, no context —\nwasted & duplicate work (Appleton)",
+      "translation": "огромные очереди без контекста —\nлишняя и двойная работа (Эпплтон)",
+      "where": "free text"
+    },
+    {
+      "id": "g9781",
+      "text": "✓  REVIEW AS A SYSTEM",
+      "translation": "✓  РЕВЬЮ КАК СИСТЕМА",
+      "where": "free text"
+    },
+    {
+      "id": "g9787",
+      "text": "Creation:  people + agents",
+      "translation": "Создание:  люди + агенты",
+      "where": "free text inside rectangle g9784",
+      "budget_px": 430,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9796",
+      "text": "1 · automated checks + evals  →  clear routine",
+      "translation": "1 · автопроверки + оценки  →  рутина проходит",
+      "where": "free text inside rectangle g9793",
+      "budget_px": 430,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9805",
+      "text": "2 · triage:  must-see  vs  ship-on-green",
+      "translation": "2 · сортировка:  смотреть  или  выпуск по зелёному",
+      "where": "free text inside rectangle g9802",
+      "budget_px": 430,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9814",
+      "text": "3 · human on consequential  +  roll-up view",
+      "translation": "3 · человек на важном  +  сводный обзор",
+      "where": "free text inside rectangle g9811",
+      "budget_px": 430,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9823",
+      "text": "ships  —  full throughput",
+      "translation": "релизы  —  полный поток",
+      "where": "free text inside rectangle g9820",
+      "budget_px": 430,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9829",
+      "text": "Eval + review capacity is the throughput limit of the entire company. — after Appleton, Arcolano  ·  corpus",
+      "translation": "Ресурс оценок и ревью — предел потока всей компании. — по Эпплтон и Арколано  ·  корпус",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "source": "diagrams/inline/ch05-fig4-misassembly-vs-hallucination.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9127",
+      "text": "CHAPTER 5  ·  CONTEXT IS INFRASTRUCTURE",
+      "translation": "ГЛАВА 5  ·  КОНТЕКСТ — ЭТО ИНФРАСТРУКТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g9130",
+      "text": "Misassembly Is Not Hallucination",
+      "translation": "Неверная сборка — не галлюцинация",
+      "where": "free text"
+    },
+    {
+      "id": "g9139",
+      "text": "Both reach a wrong answer. Only one is fixed by a better model.",
+      "translation": "Обе дают неверный ответ. Лучшая модель исправит только одну.",
+      "where": "free text"
+    },
+    {
+      "id": "g9145",
+      "text": "Corpus",
+      "translation": "Корпус",
+      "where": "free text inside rectangle g9142",
+      "budget_px": 140,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "g9154",
+      "text": "Context assembly\n(the substrate)",
+      "translation": "Сборка контекста\n(основа)",
+      "where": "free text inside rectangle g9151",
+      "budget_px": 230,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g9163",
+      "text": "Model",
+      "translation": "Модель",
+      "where": "free text inside rectangle g9160",
+      "budget_px": 160,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g9172",
+      "text": "Answer",
+      "translation": "Ответ",
+      "where": "free text inside rectangle g9169",
+      "budget_px": 140,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "g9178",
+      "text": "MISASSEMBLY",
+      "translation": "НЕВЕРНАЯ СБОРКА",
+      "where": "free text inside rectangle g9175",
+      "budget_px": 230,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g9181",
+      "text": "real docs · wrong combo, weight, freshness",
+      "translation": "факты есть · не тот набор, вес, срок",
+      "where": "free text"
+    },
+    {
+      "id": "g9190",
+      "text": "HALLUCINATION",
+      "translation": "ГАЛЛЮЦИНАЦИЯ",
+      "where": "free text inside rectangle g9187",
+      "budget_px": 160,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g9193",
+      "text": "invents what isn't there",
+      "translation": "выдумывает то, чего нет",
+      "where": "free text inside rectangle g9187",
+      "budget_px": 160,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9199",
+      "text": "FIX → rank · dedupe · freshen",
+      "translation": "ИСПРАВИТЬ → ранг · дубли · свежесть",
+      "where": "free text"
+    },
+    {
+      "id": "g9202",
+      "text": "a better model just fails faster",
+      "translation": "лучшая модель ошибётся быстрее",
+      "where": "free text"
+    },
+    {
+      "id": "g9208",
+      "text": "retrieved for  \"customer X\":\n  doc_A   stale · Q1      averaged\n  doc_B   stale · Q2      averaged\n  doc_C   current · Q4    averaged\n⇒ half-current · nothing invented, nothing correct",
+      "translation": "найдено для  «клиент X»:\n  doc_A   устар. · Q1     усреднено\n  doc_B   устар. · Q2     усреднено\n  doc_C   актуал. · Q4    усреднено\n⇒ полуактуально · ничего не выдумано, ничего не верно",
+      "where": "free text inside rectangle g9205",
+      "budget_px": 443,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g9211",
+      "text": "— Jack Morris: \"Stuffing context is not memory\"  ·  corpus",
+      "translation": "— Джек Моррис: «Забить контекст — это не память»  ·  корпус",
+      "where": "free text"
+    },
+    {
+      "id": "g9217",
+      "text": "A better model produces a more confident wrong answer faster — the fix lives in the substrate.",
+      "translation": "Лучшая модель быстрее даёт более уверенный неверный ответ — исправлять нужно основу.",
+      "where": "free text"
+    }
+  ]
+}

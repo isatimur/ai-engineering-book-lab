@@ -1,0 +1,80 @@
+{
+  "source": "diagrams/inline/ch03-fig1-repo-is-the-interface.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 3  ·  FIGURE 1",
+      "translation": "ГЛАВА 3  ·  РИСУНОК 1",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The prompt is the tip; the repo is the interface",
+      "translation": "Промпт — лишь верхушка; интерфейс — это репозиторий",
+      "where": "free text"
+    },
+    {
+      "id": "waterline_lbl",
+      "text": "what the chat shows you",
+      "translation": "что показывает чат",
+      "where": "free text"
+    },
+    {
+      "id": "tip_t",
+      "text": "the prompt",
+      "translation": "промпт",
+      "where": "bound to rectangle tip (wraps)",
+      "budget_px": 170,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "below_lbl",
+      "text": "what the agent actually works against",
+      "translation": "с чем агент работает на самом деле",
+      "where": "free text"
+    },
+    {
+      "id": "berg_h",
+      "text": "THE REAL INTERFACE  —  THE CODEBASE",
+      "translation": "НАСТОЯЩИЙ ИНТЕРФЕЙС  —  КОДОВАЯ БАЗА",
+      "where": "free text inside rectangle berg",
+      "budget_px": 430,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "berg_l1",
+      "text": "setup scripts\narchitecture / ADRs\nnaming conventions\ntests + lint gates",
+      "translation": "скрипты настройки\nархитектура / ADR\nсоглашения об именах\nтесты + линтер",
+      "where": "free text inside rectangle berg",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "berg_l2",
+      "text": "examples of good patches\nperformance rules\nreview history\nsecurity constraints",
+      "translation": "примеры хороших патчей\nправила скорости\nистория ревью\nограничения безопасности",
+      "where": "free text inside rectangle berg",
+      "budget_px": 209,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "berg_foot",
+      "text": "a human learns this by apprenticeship; an agent cannot",
+      "translation": "человек учится этому у старших; агент так не может",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Chat shows the prompt; the codebase and all around it is the real interface.",
+      "translation": "Чат показывает промпт; настоящий интерфейс — кодовая база и всё вокруг неё.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Ryan Lopopolo, OpenAI · corpus video #16",
+      "translation": "— Райан Лопополо, OpenAI · видео корпуса #16",
+      "where": "free text"
+    }
+  ]
+}

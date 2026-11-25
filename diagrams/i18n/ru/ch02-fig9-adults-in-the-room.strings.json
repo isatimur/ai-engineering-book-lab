@@ -1,0 +1,126 @@
+{
+  "source": "diagrams/inline/ch02-fig9-adults-in-the-room.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g92400",
+      "text": "CHAPTER 2  ·  THE FACTORY NEEDS ADULTS",
+      "translation": "ГЛАВА 2  ·  ФАБРИКЕ НУЖНЫ ВЗРОСЛЫЕ",
+      "where": "free text"
+    },
+    {
+      "id": "g92403",
+      "text": "Better Harness, Same Need for Adults",
+      "translation": "Обвязка лучше — взрослые нужны так же",
+      "where": "free text"
+    },
+    {
+      "id": "g92412",
+      "text": "Every layer makes judgment scalable and inspectable. None removes the need for it.",
+      "translation": "Каждый слой делает суждение масштабируемым и проверяемым. Ни один не отменяет его.",
+      "where": "free text"
+    },
+    {
+      "id": "g92418",
+      "text": "AUTOMATION LAYERS  —  make judgment scalable & inspectable",
+      "translation": "СЛОИ АВТОМАТИЗАЦИИ  —  суждение масштабируется и видно",
+      "where": "free text inside rectangle g92415",
+      "budget_px": 872,
+      "budget_chars_per_line": 103
+    },
+    {
+      "id": "g92424",
+      "text": "repo structure / harness",
+      "translation": "структура репо / обвязка",
+      "where": "free text inside rectangle g92421",
+      "budget_px": 339,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g92433",
+      "text": "retrieval",
+      "translation": "поиск",
+      "where": "free text inside rectangle g92430",
+      "budget_px": 339,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g92442",
+      "text": "tools",
+      "translation": "инструменты",
+      "where": "free text inside rectangle g92439",
+      "budget_px": 339,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g92451",
+      "text": "validation passes",
+      "translation": "проверочные прогоны",
+      "where": "free text inside rectangle g92448",
+      "budget_px": 339,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g92460",
+      "text": "trajectory review",
+      "translation": "ревью траектории",
+      "where": "free text inside rectangle g92457",
+      "budget_px": 339,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g92469",
+      "text": "THE IRREDUCIBLE CORE  —  human standards",
+      "translation": "НЕСВОДИМОЕ ЯДРО  —  стандарты людей",
+      "where": "free text inside rectangle g92466",
+      "budget_px": 424,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g92472",
+      "text": "· decide what the harness should teach",
+      "translation": "· решать, чему учит обвязка",
+      "where": "free text inside rectangle g92466",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92475",
+      "text": "· define acceptable tradeoffs",
+      "translation": "· определять приемлемые компромиссы",
+      "where": "free text inside rectangle g92466",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92478",
+      "text": "· set review boundaries & quality bars",
+      "translation": "· задавать границы ревью и планки качества",
+      "where": "free text inside rectangle g92466",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92481",
+      "text": "· tell \"compiles\" from \"improves the system\"",
+      "translation": "· отличать «компилируется» от «улучшает систему»",
+      "where": "free text inside rectangle g92466",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92487",
+      "text": "AI does not make seniority irrelevant — it makes it more leveraged and more legible.",
+      "translation": "ИИ не обесценивает опыт — он делает его сильнее и заметнее.",
+      "where": "free text inside rectangle g92484",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g92490",
+      "text": "Software factory or high-stakes colleague: better harness and validation still cannot decide what \"good\" means.",
+      "translation": "Фабрика ПО или коллега для ответственных задач: лучшая обвязка и проверка всё равно не решат, что значит «хорошо».",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/inline/ch09-fig8-consensus-review.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g12364",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g12367",
+      "text": "A Cheaper Verdict from Redundancy",
+      "translation": "Дешёвый вердикт за счёт избыточности",
+      "where": "free text"
+    },
+    {
+      "id": "g12376",
+      "text": "When generation is cheap, trust can come from many independent voters.",
+      "translation": "Когда генерация дешёвая, доверие может дать много независимых голосующих.",
+      "where": "free text"
+    },
+    {
+      "id": "g12382",
+      "text": "ONE FRONTIER JUDGE",
+      "translation": "ОДИН ПЕРЕДОВОЙ СУДЬЯ",
+      "where": "free text inside rectangle g12379",
+      "budget_px": 290,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "g12388",
+      "text": "frontier model\nsingle judge",
+      "translation": "передовая модель,\nодин судья",
+      "where": "free text inside rectangle g12385",
+      "budget_px": 230,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g12391",
+      "text": "$$$  per verdict",
+      "translation": "$$$  за вердикт",
+      "where": "free text inside rectangle g12379",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g12394",
+      "text": "one viewpoint",
+      "translation": "одна точка зрения",
+      "where": "free text inside rectangle g12379",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g12397",
+      "text": "human attention still\nthe hard constraint",
+      "translation": "внимание людей —\nвсё ещё жёсткий предел",
+      "where": "free text inside rectangle g12379",
+      "budget_px": 290,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g12400",
+      "text": "— Zack Proser, WorkOS · corpus video #761",
+      "translation": "— Зак Прозер, WorkOS · видео корпуса #761",
+      "where": "free text inside rectangle g12379",
+      "budget_px": 290,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g12406",
+      "text": "REDUNDANCY = CHEAP TRUST",
+      "translation": "ИЗБЫТОЧНОСТЬ = ДЕШЁВОЕ ДОВЕРИЕ",
+      "where": "free text inside rectangle g12403",
+      "budget_px": 540,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "g12409",
+      "text": "① self-consistency — sample many, then vote",
+      "translation": "① самосогласованность — много выборок, потом голосование",
+      "where": "free text inside rectangle g12403",
+      "budget_px": 529,
+      "budget_chars_per_line": 67
+    },
+    {
+      "id": "g12415",
+      "text": "prompt",
+      "translation": "промпт",
+      "where": "free text inside rectangle g12412",
+      "budget_px": 74,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g12424",
+      "text": "cheap model × N",
+      "translation": "дешёвая модель × N",
+      "where": "free text inside rectangle g12421",
+      "budget_px": 138,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g12433",
+      "text": "majority vote",
+      "translation": "большинство",
+      "where": "free text inside rectangle g12430",
+      "budget_px": 118,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g12442",
+      "text": "answer",
+      "translation": "ответ",
+      "where": "free text inside rectangle g12439",
+      "budget_px": 98,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g12445",
+      "text": "— Aakanksha Chowdhery, Reflection.ai · corpus video #251",
+      "translation": "— Ааканкша Чоудхери, Reflection.ai · видео корпуса #251",
+      "where": "free text inside rectangle g12403",
+      "budget_px": 529,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "g12448",
+      "text": "② debate panel — weaker models judge a stronger one",
+      "translation": "② панель дебатов — слабые модели судят сильную",
+      "where": "free text inside rectangle g12403",
+      "budget_px": 529,
+      "budget_chars_per_line": 67
+    },
+    {
+      "id": "g12454",
+      "text": "weak LLM",
+      "translation": "слабая LLM",
+      "where": "free text inside rectangle g12451",
+      "budget_px": 98,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g12460",
+      "text": "weak LLM",
+      "translation": "слабая LLM",
+      "where": "free text inside rectangle g12457",
+      "budget_px": 98,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g12466",
+      "text": "weak LLM",
+      "translation": "слабая LLM",
+      "where": "free text inside rectangle g12463",
+      "budget_px": 98,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g12475",
+      "text": "verdict on strong model",
+      "translation": "вердикт о сильной модели",
+      "where": "free text inside rectangle g12472",
+      "budget_px": 148,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g12478",
+      "text": "they debate each other → a cheap judge that beats a frontier model",
+      "translation": "они спорят между собой → дешёвый судья лучше передовой модели",
+      "where": "free text inside rectangle g12403",
+      "budget_px": 529,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "g12481",
+      "text": "— Leonard Tang, Haize Labs · corpus video #116",
+      "translation": "— Леонард Тан, Haize Labs · видео корпуса #116",
+      "where": "free text inside rectangle g12403",
+      "budget_px": 529,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "g12487",
+      "text": "Independence is the catch: one model sampled N× cancels noise, not shared bias —",
+      "translation": "Подвох в независимости: одна модель N раз гасит шум, но не общий перекос —",
+      "where": "free text inside rectangle g12484",
+      "budget_px": 857,
+      "budget_chars_per_line": 105
+    },
+    {
+      "id": "g12490",
+      "text": "the voters have to be genuinely independent.",
+      "translation": "голосующие должны быть по-настоящему независимы.",
+      "where": "free text inside rectangle g12484",
+      "budget_px": 857,
+      "budget_chars_per_line": 105
+    }
+  ]
+}

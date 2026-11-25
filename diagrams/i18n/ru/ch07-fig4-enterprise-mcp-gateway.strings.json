@@ -1,0 +1,162 @@
+{
+  "source": "diagrams/inline/ch07-fig4-enterprise-mcp-gateway.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9424",
+      "text": "CHAPTER 7  ·  SECURITY, IDENTITY & HIGH-STAKES TRUST",
+      "translation": "ГЛАВА 7  ·  БЕЗОПАСНОСТЬ, ИДЕНТИЧНОСТЬ И ДОВЕРИЕ ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g9427",
+      "text": "Enterprise MCP Has One Shape",
+      "translation": "У корпоративного MCP одна форма",
+      "where": "free text"
+    },
+    {
+      "id": "g9436",
+      "text": "Don't ship servers one at a time. Build the platform: a gateway and a root of trust.",
+      "translation": "Не выпускайте серверы по одному. Стройте платформу: шлюз и корень доверия.",
+      "where": "free text"
+    },
+    {
+      "id": "g9442",
+      "text": "Agents /\nMCP clients",
+      "translation": "Агенты /\nMCP-клиенты",
+      "where": "free text inside rectangle g9439",
+      "budget_px": 148,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g9445",
+      "text": "real principals\n· scoped tokens",
+      "translation": "реальные субъекты\n· узкие токены",
+      "where": "free text inside rectangle g9439",
+      "budget_px": 148,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g9454",
+      "text": "1 · MCP GATEWAY  —  ROOT OF TRUST",
+      "translation": "1 · ШЛЮЗ MCP  —  КОРЕНЬ ДОВЕРИЯ",
+      "where": "free text inside rectangle g9451",
+      "budget_px": 420,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "g9460",
+      "text": "2 · Policy plane",
+      "translation": "2 · Слой политик",
+      "where": "free text inside rectangle g9457",
+      "budget_px": 371,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g9463",
+      "text": "who may call what, when",
+      "translation": "кто, что и когда может вызывать",
+      "where": "free text inside rectangle g9457",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9469",
+      "text": "3 · Registry",
+      "translation": "3 · Реестр",
+      "where": "free text inside rectangle g9466",
+      "budget_px": 371,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g9472",
+      "text": "blessed servers, reviewed before entry",
+      "translation": "одобренные серверы, проверка до входа",
+      "where": "free text inside rectangle g9466",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9478",
+      "text": "4 · Permissions",
+      "translation": "4 · Права",
+      "where": "free text inside rectangle g9475",
+      "budget_px": 371,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g9481",
+      "text": "identity × tool × approval",
+      "translation": "идентичность × инструмент × одобрение",
+      "where": "free text inside rectangle g9475",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9487",
+      "text": "5 · Audit log",
+      "translation": "5 · Журнал аудита",
+      "where": "free text inside rectangle g9484",
+      "budget_px": 371,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g9490",
+      "text": "every invocation recorded",
+      "translation": "записан каждый вызов",
+      "where": "free text inside rectangle g9484",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9496",
+      "text": "Blessed servers",
+      "translation": "Одобренные серверы",
+      "where": "free text"
+    },
+    {
+      "id": "g9502",
+      "text": "✓  GitHub",
+      "translation": "✓  GitHub",
+      "where": "free text inside rectangle g9499",
+      "budget_px": 174,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g9508",
+      "text": "✓  Calendar",
+      "translation": "✓  Календарь",
+      "where": "free text inside rectangle g9505",
+      "budget_px": 174,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g9514",
+      "text": "✓  Documents",
+      "translation": "✓  Документы",
+      "where": "free text inside rectangle g9511",
+      "budget_px": 174,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g9517",
+      "text": "step-up OAuth →\ncapability follows authority",
+      "translation": "повышение прав через OAuth →\nвозможности идут за полномочиями",
+      "where": "free text"
+    },
+    {
+      "id": "g9523",
+      "text": "✕  Before:  standing credential → every tool · full authority · no expiry · no record",
+      "translation": "✕  Раньше:  вечный ключ → все инструменты · полные права · бессрочно · без записи",
+      "where": "free text inside rectangle g9520",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g9526",
+      "text": "Miss any one of the five and that's where the boundary fails first.  — Karan Sampath, Anthropic  ·  corpus",
+      "translation": "Упустите любой из пяти — и граница сломается именно там.  — Каран Сампат, Anthropic  ·  корпус",
+      "where": "free text"
+    }
+  ]
+}

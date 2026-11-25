@@ -1,0 +1,158 @@
+{
+  "source": "diagrams/inline/ch03-fig7-subagents-specialization.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g770352",
+      "text": "CHAPTER 3  ·  SUBAGENTS",
+      "translation": "ГЛАВА 3  ·  СУБАГЕНТЫ",
+      "where": "free text"
+    },
+    {
+      "id": "g770355",
+      "text": "Specialization Is Encoded Judgment",
+      "translation": "Специализация — это закодированное суждение",
+      "where": "free text"
+    },
+    {
+      "id": "g770364",
+      "text": "A role with narrow tools is process made explicit — but only past the reliability gate.",
+      "translation": "Роль с узкими инструментами — это явный процесс, но только после барьера надёжности.",
+      "where": "free text"
+    },
+    {
+      "id": "g770370",
+      "text": "MASTER\nTASK",
+      "translation": "ГЛАВНАЯ\nЗАДАЧА",
+      "where": "free text inside rectangle g770367",
+      "budget_px": 140,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g770379",
+      "text": "GATE",
+      "translation": "БАРЬЕР",
+      "where": "free text inside rectangle g770376",
+      "budget_px": 186,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g770382",
+      "text": "single-task success\n≈ 100% ?",
+      "translation": "успех на одной задаче\n≈ 100% ?",
+      "where": "free text inside rectangle g770376",
+      "budget_px": 186,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g770385",
+      "text": "— Reyes · #57",
+      "translation": "— Рейес · #57",
+      "where": "free text inside rectangle g770376",
+      "budget_px": 186,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g770394",
+      "text": "NO → 20 agents multiply\nunverified output",
+      "translation": "НЕТ → 20 агентов множат\nнепроверенный результат",
+      "where": "free text inside rectangle g770391",
+      "budget_px": 186,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g770403",
+      "text": "DECOMPOSE INTO ROLES",
+      "translation": "РАЗБИТЬ НА РОЛИ",
+      "where": "free text inside rectangle g770400",
+      "budget_px": 222,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g770409",
+      "text": "research",
+      "translation": "исследование",
+      "where": "free text inside rectangle g770406",
+      "budget_px": 190,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g770415",
+      "text": "review",
+      "translation": "ревью",
+      "where": "free text inside rectangle g770412",
+      "budget_px": 190,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g770421",
+      "text": "refactor",
+      "translation": "рефакторинг",
+      "where": "free text inside rectangle g770418",
+      "budget_px": 190,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g770427",
+      "text": "debug",
+      "translation": "отладка",
+      "where": "free text inside rectangle g770424",
+      "budget_px": 190,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g770433",
+      "text": "migration",
+      "translation": "миграция",
+      "where": "free text inside rectangle g770430",
+      "budget_px": 190,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g770436",
+      "text": "narrow tools + instructions\n= a role in the harness",
+      "translation": "узкие инструменты + инструкции\n= роль в обвязке",
+      "where": "free text inside rectangle g770400",
+      "budget_px": 222,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g770445",
+      "text": "RECOMPOSE",
+      "translation": "СОБРАТЬ",
+      "where": "free text inside rectangle g770442",
+      "budget_px": 190,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g770448",
+      "text": "→  inspect\n→  evaluate\n→  merge",
+      "translation": "→  проверить\n→  оценить\n→  слить",
+      "where": "free text inside rectangle g770442",
+      "budget_px": 173,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g770451",
+      "text": "pieces must recombine,\nnot just run in parallel",
+      "translation": "части должны сойтись,\nа не только работать рядом",
+      "where": "free text inside rectangle g770442",
+      "budget_px": 190,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "g770457",
+      "text": "More workers without a stronger harness don't make a factory — they make chaos faster.",
+      "translation": "Больше исполнителей без сильной обвязки — не фабрика, а хаос, только быстрее.",
+      "where": "free text inside rectangle g770454",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "g770460",
+      "text": "— OpenAI Codex (subagents) · corpus video #632",
+      "translation": "— OpenAI Codex (субагенты) · видео корпуса #632",
+      "where": "free text"
+    }
+  ]
+}

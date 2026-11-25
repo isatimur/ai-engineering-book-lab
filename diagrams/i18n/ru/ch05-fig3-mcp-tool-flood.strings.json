@@ -1,0 +1,140 @@
+{
+  "source": "diagrams/inline/ch05-fig3-mcp-tool-flood.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 5  ·  FIGURE 3",
+      "translation": "ГЛАВА 5  ·  РИСУНОК 3",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The MCP tool flood",
+      "translation": "Потоп инструментов MCP",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Exposing every tool floods the window; discovery shows only what the task needs.",
+      "translation": "Все инструменты сразу заливают окно; обнаружение показывает только нужные задаче.",
+      "where": "free text"
+    },
+    {
+      "id": "naive_h",
+      "text": "EXPOSE EVERYTHING",
+      "translation": "ПОКАЗАТЬ ВСЁ",
+      "where": "free text inside rectangle naive_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "naive_sub",
+      "text": "200 tool defs in the prompt",
+      "translation": "200 описаний инструментов",
+      "where": "free text inside rectangle naive_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "naive_wlbl",
+      "text": "context window",
+      "translation": "окно контекста",
+      "where": "free text inside rectangle naive_win",
+      "budget_px": 281,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "naive_grid",
+      "text": "[t] [t] [t] [t] [t] [t] [t] [t] [t]\n[t] [t] [t] [t] [t] [t] [t] [t] [t]\n[t] [t] [t] [t] [t] [t] [t] [t] [t]\n[t] [t] [t] [t] [t] [t] [t] [t] [t]",
+      "translation": "[t] [t] [t] [t] [t] [t] [t] [t] [t]\n[t] [t] [t] [t] [t] [t] [t] [t] [t]\n[t] [t] [t] [t] [t] [t] [t] [t] [t]\n[t] [t] [t] [t] [t] [t] [t] [t] [t]",
+      "where": "free text inside rectangle naive_win",
+      "budget_px": 277,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "naive_cost",
+      "text": "Task needs 2 tools. The other 198\nburn tokens and blur the choice.",
+      "translation": "Задаче нужны 2 инструмента. Остальные\n198 жгут токены и мешают выбору.",
+      "where": "free text inside rectangle naive_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "prog_h",
+      "text": "PROGRESSIVE DISCOVERY",
+      "translation": "ПОСТЕПЕННОЕ ОБНАРУЖЕНИЕ",
+      "where": "free text inside rectangle prog_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "prog_sub",
+      "text": "Select by intent, then load",
+      "translation": "Отбор, потом загрузка",
+      "where": "free text inside rectangle prog_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "prog_intentt",
+      "text": "intent:\n\"refund order\"",
+      "translation": "намерение:\n«возврат заказа»",
+      "where": "free text inside rectangle prog_intent",
+      "budget_px": 100,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "prog_filtert",
+      "text": "select tools",
+      "translation": "отбор",
+      "where": "free text inside rectangle prog_filter",
+      "budget_px": 100,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "prog_wlbl",
+      "text": "context window",
+      "translation": "окно контекста",
+      "where": "free text inside rectangle prog_win",
+      "budget_px": 141,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "prog_t1t",
+      "text": "get_order(id)",
+      "translation": "get_order(id)",
+      "where": "free text inside rectangle prog_t1",
+      "budget_px": 117,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "prog_t2t",
+      "text": "issue_refund()",
+      "translation": "issue_refund()",
+      "where": "free text inside rectangle prog_t2",
+      "budget_px": 117,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "prog_cost",
+      "text": "2 of 200 tools loaded. The choice\nis obvious; tokens stay cheap.",
+      "translation": "Загружены 2 из 200. Выбор\nочевиден, токены дёшевы.",
+      "where": "free text inside rectangle prog_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "caption",
+      "text": "GitHub cut MCP tool-load context by grouping and intent-aware tool design.",
+      "translation": "GitHub сократил контекст под инструменты MCP: группировка и дизайн по намерению.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "“We shouldn't be dumping loads of tools into context.” — Matt Carey · corpus video #622  ·  also #625",
+      "translation": "«Не надо сваливать в контекст кучу инструментов». — Мэтт Кэри · видео корпуса #622  ·  также #625",
+      "where": "free text"
+    }
+  ]
+}

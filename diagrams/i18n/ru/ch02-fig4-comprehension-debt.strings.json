@@ -1,0 +1,126 @@
+{
+  "source": "diagrams/inline/ch02-fig4-comprehension-debt.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g92001",
+      "text": "CHAPTER 2  ·  TASTE IS QUALITY DISCRIMINATION",
+      "translation": "ГЛАВА 2  ·  ВКУС — ЭТО РАЗЛИЧЕНИЕ КАЧЕСТВА",
+      "where": "free text"
+    },
+    {
+      "id": "g92004",
+      "text": "Comprehension Stops Being Free",
+      "translation": "Понимание перестаёт быть бесплатным",
+      "where": "free text"
+    },
+    {
+      "id": "g92013",
+      "text": "When you wrote every line, understanding came bundled with authorship. A model unbundles it.",
+      "translation": "Когда вы писали каждую строку, понимание шло в комплекте с авторством. Модель разрывает комплект.",
+      "where": "free text"
+    },
+    {
+      "id": "g92019",
+      "text": "AUTHORSHIP  ·  the old bundle",
+      "translation": "АВТОРСТВО  ·  старый комплект",
+      "where": "free text inside rectangle g92016",
+      "budget_px": 398,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g92025",
+      "text": "You write every line",
+      "translation": "Вы пишете каждую строку",
+      "where": "free text inside rectangle g92022",
+      "budget_px": 342,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "g92034",
+      "text": "working code  ⊕  comprehension",
+      "translation": "рабочий код  ⊕  понимание",
+      "where": "free text inside rectangle g92031",
+      "budget_px": 342,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "g92037",
+      "text": "understanding arrives free, with authorship",
+      "translation": "понимание приходит даром, вместе с авторством",
+      "where": "free text inside rectangle g92016",
+      "budget_px": 398,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g92043",
+      "text": "DELEGATION  ·  the bundle breaks",
+      "translation": "ДЕЛЕГИРОВАНИЕ  ·  комплект распался",
+      "where": "free text inside rectangle g92040",
+      "budget_px": 442,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g92049",
+      "text": "Model writes the code",
+      "translation": "Код пишет модель",
+      "where": "free text inside rectangle g92046",
+      "budget_px": 270,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g92061",
+      "text": "working code  ✓",
+      "translation": "рабочий код  ✓",
+      "where": "free text inside rectangle g92058",
+      "budget_px": 186,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g92067",
+      "text": "comprehension  ✗",
+      "translation": "понимание  ✗",
+      "where": "free text inside rectangle g92064",
+      "budget_px": 190,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g92070",
+      "text": "a debt — understanding owed, payable after the fact",
+      "translation": "долг — понимание, которое придётся вернуть позже",
+      "where": "free text inside rectangle g92040",
+      "budget_px": 442,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g92076",
+      "text": "The load-bearing step  —  read the diff like an author",
+      "translation": "Несущий шаг  —  читайте дифф как автор",
+      "where": "free text inside rectangle g92073",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "g92079",
+      "text": "· reconstruct why each choice was made, not just that the lines parse",
+      "translation": "· восстановите, почему сделан каждый выбор, а не только что код парсится",
+      "where": "free text inside rectangle g92073",
+      "budget_px": 857,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "g92082",
+      "text": "· trace one path the tests don't cover — ask whether the design would survive it",
+      "translation": "· пройдите путь, который тесты не покрывают: выдержит ли его дизайн?",
+      "where": "free text inside rectangle g92073",
+      "budget_px": 857,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "g92085",
+      "text": "The model hands you working code you did not build — so understanding is no longer included.",
+      "translation": "Модель отдаёт вам рабочий код, который вы не строили, — и понимание в комплект больше не входит.",
+      "where": "free text"
+    }
+  ]
+}

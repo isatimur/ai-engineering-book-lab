@@ -1,0 +1,216 @@
+{
+  "source": "diagrams/inline/ch09-fig5-monday-morning.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g12001",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g12004",
+      "text": "The Monday Pile Isn’t the Problem",
+      "translation": "Понедельничная гора — не проблема",
+      "where": "free text"
+    },
+    {
+      "id": "g12013",
+      "text": "Everyone was productive over the weekend. Coherence is what’s scarce now.",
+      "translation": "За выходные все были продуктивны. Теперь в дефиците согласованность.",
+      "where": "free text"
+    },
+    {
+      "id": "g12019",
+      "text": "OVER THE WEEKEND  ·  everyone was productive",
+      "translation": "ЗА ВЫХОДНЫЕ  ·  все были продуктивны",
+      "where": "free text inside rectangle g12016",
+      "budget_px": 420,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g12025",
+      "text": "12  pull requests",
+      "translation": "12  пул-реквестов",
+      "where": "free text inside rectangle g12022",
+      "budget_px": 381,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12028",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text inside rectangle g12022",
+      "budget_px": 75,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g12034",
+      "text": "4  synthetic eval reports",
+      "translation": "4  синтетических отчёта оценок",
+      "where": "free text inside rectangle g12031",
+      "budget_px": 381,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12037",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text inside rectangle g12031",
+      "budget_px": 75,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g12043",
+      "text": "2  security review requests",
+      "translation": "2  запроса на ревью безопасности",
+      "where": "free text inside rectangle g12040",
+      "budget_px": 381,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12046",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text inside rectangle g12040",
+      "budget_px": 75,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g12052",
+      "text": "3  alternative onboarding flows",
+      "translation": "3  альтернативных онбординга",
+      "where": "free text inside rectangle g12049",
+      "budget_px": 381,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12055",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text inside rectangle g12049",
+      "budget_px": 75,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g12061",
+      "text": "1  automation · touched 3 systems",
+      "translation": "1  автоматизация · задела 3 системы",
+      "where": "free text inside rectangle g12058",
+      "budget_px": 381,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12064",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text inside rectangle g12058",
+      "budget_px": 75,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g12070",
+      "text": "admin-override regression · Ch.4 throttle",
+      "translation": "регрессия admin-override · гл. 4, лимит",
+      "where": "free text inside rectangle g12067",
+      "budget_px": 381,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12073",
+      "text": "buried",
+      "translation": "скрыта",
+      "where": "free text inside rectangle g12067",
+      "budget_px": 75,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g12076",
+      "text": "one bad change, wearing the same green as the rest",
+      "translation": "одно плохое изменение, такое же зелёное, как остальные",
+      "where": "free text inside rectangle g12016",
+      "budget_px": 420,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "g12085",
+      "text": "THE MONDAY QUESTION",
+      "translation": "ВОПРОС ПОНЕДЕЛЬНИКА",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 420,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g12088",
+      "text": "Not   “is there enough work?”",
+      "translation": "Не   «хватает ли работы?»",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 405,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g12091",
+      "text": "But   “which of this can I trust?”",
+      "translation": "А   «чему из этого верить?»",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 405,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g12094",
+      "text": "· which changes actually matter",
+      "translation": "· какие изменения правда важны",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12097",
+      "text": "· which are duplicates of each other",
+      "translation": "· какие дублируют друг друга",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12100",
+      "text": "· which reflect strategy — not a private read",
+      "translation": "· какие следуют стратегии, а не личному взгляду",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12103",
+      "text": "· safe to merge · trial · ignore · distrust",
+      "translation": "· мержить · пробовать · игнорировать · не доверять",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 399,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12109",
+      "text": "1 staff engineer  ·  1 pair of eyes  ·  Monday 9:00",
+      "translation": "1 старший инженер  ·  1 пара глаз  ·  пн 9:00",
+      "where": "free text inside rectangle g12106",
+      "budget_px": 384,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g12112",
+      "text": "abundant: output          scarce: attention to judge it",
+      "translation": "в избытке: результат        в дефиците: внимание для оценки",
+      "where": "free text inside rectangle g12082",
+      "budget_px": 420,
+      "budget_chars_per_line": 58
+    },
+    {
+      "id": "g12118",
+      "text": "The organization is no longer starved for output. It is starved for coherence.",
+      "translation": "Организации больше не хватает не результата. Ей не хватает согласованности.",
+      "where": "free text inside rectangle g12115",
+      "budget_px": 857,
+      "budget_chars_per_line": 84
+    }
+  ]
+}

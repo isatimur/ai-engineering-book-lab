@@ -1,0 +1,158 @@
+{
+  "source": "diagrams/inline/ch09-fig7-throughput-not-velocity.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g12259",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g12262",
+      "text": "More Output Is Not More Throughput",
+      "translation": "Больше результата — не больше потока",
+      "where": "free text"
+    },
+    {
+      "id": "g12271",
+      "text": "An organization can produce far more work and still move slower.",
+      "translation": "Организация может делать гораздо больше работы и всё равно двигаться медленнее.",
+      "where": "free text"
+    },
+    {
+      "id": "g12274",
+      "text": "OUTPUT / PERSON",
+      "translation": "РЕЗУЛЬТАТ НА ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g12283",
+      "text": "↑↑↑   PRs opened · variants · tasks pushed into motion",
+      "translation": "↑↑↑   открытые PR · варианты · запущенные задачи",
+      "where": "free text inside rectangle g12280",
+      "budget_px": 451,
+      "budget_chars_per_line": 60
+    },
+    {
+      "id": "g12286",
+      "text": "ORG THROUGHPUT",
+      "translation": "ПОТОК ОРГАНИЗАЦИИ",
+      "where": "free text"
+    },
+    {
+      "id": "g12295",
+      "text": "↓  trusted work shipped, unreverted",
+      "translation": "↓  надёжная работа в проде, без откатов",
+      "where": "free text inside rectangle g12289",
+      "budget_px": 329,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g12301",
+      "text": "MEASURE THE OUTCOME",
+      "translation": "МЕРЬТЕ ИСХОД",
+      "where": "free text inside rectangle g12298",
+      "budget_px": 192,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "g12304",
+      "text": "· rework rate",
+      "translation": "· доля переделок",
+      "where": "free text inside rectangle g12298",
+      "budget_px": 181,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g12307",
+      "text": "· % shipped, unreverted",
+      "translation": "· % выпущено без отката",
+      "where": "free text inside rectangle g12298",
+      "budget_px": 181,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g12310",
+      "text": "· time in review queue",
+      "translation": "· время в очереди ревью",
+      "where": "free text inside rectangle g12298",
+      "budget_px": 181,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g12313",
+      "text": "not artifact volume",
+      "translation": "а не объём результатов",
+      "where": "free text inside rectangle g12298",
+      "budget_px": 192,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "g12319",
+      "text": "creation  ↑↑",
+      "translation": "создание  ↑↑",
+      "where": "free text inside rectangle g12316",
+      "budget_px": 140,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g12328",
+      "text": "REVIEW QUEUE — clogged",
+      "translation": "ОЧЕРЕДЬ РЕВЬЮ — забита",
+      "where": "free text inside rectangle g12325",
+      "budget_px": 210,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g12337",
+      "text": "ships: a trickle",
+      "translation": "релизы: капля",
+      "where": "free text inside rectangle g12334",
+      "budget_px": 150,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g12340",
+      "text": "review queues clog   ·   priorities scatter   ·   trust in output declines",
+      "translation": "очереди ревью забиты   ·   приоритеты расползаются   ·   доверие к результату падает",
+      "where": "free text"
+    },
+    {
+      "id": "g12346",
+      "text": "Jellyfish  ·  ~20M pull requests\n  output volume  ↑        dashboards light up green\n  review · integration · trust  =  unmeasured, until it breaks",
+      "translation": "Jellyfish  ·  ~20 млн пул-реквестов\n  объём результата  ↑        дашборды горят зелёным\n  ревью · интеграция · доверие  =  не измеряются, пока не сломается",
+      "where": "free text inside rectangle g12343",
+      "budget_px": 639,
+      "budget_chars_per_line": 85
+    },
+    {
+      "id": "g12349",
+      "text": "— Nick Arcolano, Jellyfish  ·  corpus video #101",
+      "translation": "— Ник Арколано, Jellyfish · видео корпуса #101",
+      "where": "free text"
+    },
+    {
+      "id": "g12352",
+      "text": "Local speed ≠ system\nthroughput.",
+      "translation": "Локальная скорость ≠\nпоток системы.",
+      "where": "free text"
+    },
+    {
+      "id": "g12358",
+      "text": "“Allocate judgment and attention — still scarce — not production capacity, now abundant.”",
+      "translation": "«Распределяйте дефицитные суждение и внимание, а не производство — его теперь в избытке».",
+      "where": "free text inside rectangle g12355",
+      "budget_px": 857,
+      "budget_chars_per_line": 105
+    },
+    {
+      "id": "g12361",
+      "text": "— Justin Reock, DX  ·  corpus video #62",
+      "translation": "— Джастин Рейок, DX  ·  видео корпуса #62",
+      "where": "free text inside rectangle g12355",
+      "budget_px": 857,
+      "budget_chars_per_line": 119
+    }
+  ]
+}

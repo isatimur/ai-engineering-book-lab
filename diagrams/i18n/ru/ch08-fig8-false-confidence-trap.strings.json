@@ -1,0 +1,102 @@
+{
+  "source": "diagrams/inline/ch08-fig8-false-confidence-trap.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g8832",
+      "text": "CHAPTER 8  ·  REALTIME, VOICE & THE COST OF BEING INTERRUPTIBLE",
+      "translation": "ГЛАВА 8  ·  РЕАЛЬНОЕ ВРЕМЯ, ГОЛОС И ЦЕНА ПРЕРЫВАЕМОСТИ",
+      "where": "free text"
+    },
+    {
+      "id": "g8835",
+      "text": "The False-Confidence Trap",
+      "translation": "Ловушка ложной уверенности",
+      "where": "free text"
+    },
+    {
+      "id": "g8844",
+      "text": "The warmer the voice, the cheaper approval feels — right where it should cost more.",
+      "translation": "Чем теплее голос, тем дешевле кажется согласие — там, где оно должно стоить дороже.",
+      "where": "free text"
+    },
+    {
+      "id": "g8850",
+      "text": "THE TRAP  ·  what the medium coaxes",
+      "translation": "ЛОВУШКА  ·  куда тянет среда",
+      "where": "free text inside rectangle g8847",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g8859",
+      "text": "felt need\nto confirm",
+      "translation": "желание\nпроверить",
+      "where": "free text inside rectangle g8847",
+      "budget_px": 403,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g8862",
+      "text": "interface warmth →",
+      "translation": "теплота интерфейса →",
+      "where": "free text inside rectangle g8847",
+      "budget_px": 265,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g8868",
+      "text": "users reveal more,\napprove more casually",
+      "translation": "люди раскрывают больше,\nсоглашаются небрежнее",
+      "where": "free text inside rectangle g8847",
+      "budget_px": 265,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g8874",
+      "text": "THE RULE  ·  invert the intuition",
+      "translation": "ПРАВИЛО  ·  переверните интуицию",
+      "where": "free text inside rectangle g8871",
+      "budget_px": 399,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g8883",
+      "text": "confirmation\nrigor",
+      "translation": "строгость\nпроверки",
+      "where": "free text inside rectangle g8871",
+      "budget_px": 403,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g8886",
+      "text": "consequence →",
+      "translation": "последствия →",
+      "where": "free text inside rectangle g8871",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8892",
+      "text": "the more consequential\nthe more deliberate",
+      "translation": "чем серьёзнее последствия,\nтем осознаннее шаг",
+      "where": "free text inside rectangle g8871",
+      "budget_px": 319,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g8898",
+      "text": "invert",
+      "translation": "иначе",
+      "where": "free text"
+    },
+    {
+      "id": "g8904",
+      "text": "A friendly voice does not make overscoped authority less dangerous.",
+      "translation": "Дружелюбный голос не делает избыточные полномочия менее опасными.",
+      "where": "free text inside rectangle g8901",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    }
+  ]
+}

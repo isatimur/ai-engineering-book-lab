@@ -1,0 +1,164 @@
+{
+  "source": "diagrams/inline/ch06-fig1-transcript-vs-workflow.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Transcript vs. workflow",
+      "translation": "Переписка против процесса",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "A chat transcript cannot survive a crash; a durable workflow resumes from a checkpoint.",
+      "translation": "Переписка с чатом не переживает сбой; надёжный процесс продолжает с контрольной точки.",
+      "where": "free text"
+    },
+    {
+      "id": "ts_h",
+      "text": "STATELESS CHAT LOOP",
+      "translation": "ЧАТ БЕЗ СОСТОЯНИЯ",
+      "where": "free text inside rectangle ts_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "ts_sub",
+      "text": "One growing transcript",
+      "translation": "Одна растущая переписка",
+      "where": "free text inside rectangle ts_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ts_s1t",
+      "text": "msg",
+      "translation": "сообщ.",
+      "where": "free text inside rectangle ts_s1",
+      "budget_px": 50,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "ts_s2t",
+      "text": "msg",
+      "translation": "сообщ.",
+      "where": "free text inside rectangle ts_s2",
+      "budget_px": 50,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "ts_s3t",
+      "text": "msg",
+      "translation": "сообщ.",
+      "where": "free text inside rectangle ts_s3",
+      "budget_px": 50,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "ts_crasht",
+      "text": "CRASH",
+      "translation": "СБОЙ",
+      "where": "free text inside rectangle ts_crash",
+      "budget_px": 62,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "ts_lostt",
+      "text": "everything in memory  ·  gone",
+      "translation": "всё было в памяти  ·  потеряно",
+      "where": "free text inside rectangle ts_lost",
+      "budget_px": 278,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "ts_take",
+      "text": "Restart means start over from message 1.",
+      "translation": "Перезапуск — заново с первого сообщения.",
+      "where": "free text inside rectangle ts_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "wf_h",
+      "text": "DURABLE WORKFLOW",
+      "translation": "НАДЁЖНЫЙ ПРОЦЕСС",
+      "where": "free text inside rectangle wf_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "wf_sub",
+      "text": "Checkpointed steps",
+      "translation": "Шаги с контрольными точками",
+      "where": "free text inside rectangle wf_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "wf_s1t",
+      "text": "step 1",
+      "translation": "шаг 1",
+      "where": "free text inside rectangle wf_s1",
+      "budget_px": 50,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "wf_s2t",
+      "text": "step 2",
+      "translation": "шаг 2",
+      "where": "free text inside rectangle wf_s2",
+      "budget_px": 50,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "wf_s3t",
+      "text": "CRASH",
+      "translation": "СБОЙ",
+      "where": "free text inside rectangle wf_s3",
+      "budget_px": 50,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "wf_s4t",
+      "text": "step 3",
+      "translation": "шаг 3",
+      "where": "free text inside rectangle wf_s4",
+      "budget_px": 50,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "wf_ckptt",
+      "text": "checkpoint store  ·  resume at step 3",
+      "translation": "контрольные точки  ·  с шага 3",
+      "where": "free text inside rectangle wf_ckpt",
+      "budget_px": 266,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "wf_take",
+      "text": "Restart resumes at the last good step.",
+      "translation": "Перезапуск — с последнего удачного шага.",
+      "where": "free text inside rectangle wf_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "caption",
+      "text": "Durable agents treat long work as checkpointed execution, not a growing transcript.",
+      "translation": "Надёжные агенты ведут долгую работу шагами с контрольными точками, а не растущей перепиской.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "“Stateless architectures ... become impossibly painful at scale.” — Samuel Colvin, Pydantic · video #99",
+      "translation": "«Архитектуры без состояния … при масштабе становятся невыносимо болезненными». — Сэмюэл Колвин, Pydantic · видео корпуса #99",
+      "where": "free text"
+    }
+  ]
+}

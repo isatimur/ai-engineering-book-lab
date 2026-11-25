@@ -1,0 +1,116 @@
+{
+  "source": "diagrams/inline/ch03-fig2-specs-persist.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 3  ·  FIGURE 2",
+      "translation": "ГЛАВА 3  ·  РИСУНОК 2",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Chat dissolves; a spec persists",
+      "translation": "Чат растворяется, спецификация остаётся",
+      "where": "free text"
+    },
+    {
+      "id": "row_lbl",
+      "text": "intent survives three retries / handoffs",
+      "translation": "замысел переживает три повтора и передачи",
+      "where": "free text"
+    },
+    {
+      "id": "naive_h",
+      "text": "NAIVE  —  INTENT LIVES IN CHAT",
+      "translation": "НАИВНО  —  ЗАМЫСЕЛ ЖИВЁТ В ЧАТЕ",
+      "where": "free text"
+    },
+    {
+      "id": "n1t",
+      "text": "task 1\nfull context",
+      "translation": "задача 1\nвесь контекст",
+      "where": "bound to rectangle n1 (wraps)",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "n2t",
+      "text": "retry\npartial recall",
+      "translation": "повтор\nобрывки памяти",
+      "where": "bound to rectangle n2 (wraps)",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "n3t",
+      "text": "handoff\nintent lost",
+      "translation": "передача\nзамысел утерян",
+      "where": "bound to rectangle n3 (wraps)",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "n_out",
+      "text": "→  guesswork",
+      "translation": "→  догадки",
+      "where": "free text"
+    },
+    {
+      "id": "eng_h",
+      "text": "ENGINEERED  —  INTENT LIVES IN A SPEC",
+      "translation": "ИНЖЕНЕРНО  —  ЗАМЫСЕЛ ЖИВЁТ В СПЕЦИФИКАЦИИ",
+      "where": "free text"
+    },
+    {
+      "id": "spec_code",
+      "text": "# specs/auth.md\nproblem: add JWT auth\nconstraints: no new deps\nnfr: p95 < 50ms\ndone: tests green + ADR",
+      "translation": "# specs/auth.md\nзадача: JWT-авторизация\nзапрет: новые пакеты\nnfr: p95 < 50ms\nготово: тесты ок + ADR",
+      "where": "free text inside rectangle spec",
+      "budget_px": 181,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "e1t",
+      "text": "task 1",
+      "translation": "задача 1",
+      "where": "bound to rectangle e1 (wraps)",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "e2t",
+      "text": "retry",
+      "translation": "повтор",
+      "where": "bound to rectangle e2 (wraps)",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "e3t",
+      "text": "handoff",
+      "translation": "передача",
+      "where": "bound to rectangle e3 (wraps)",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "e_out",
+      "text": "→  same intent, every time",
+      "translation": "→  тот же замысел, каждый раз",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "A spec is context compression: scattered intent packed into one stable artifact.",
+      "translation": "Спецификация сжимает контекст: разрозненный замысел собран в один стабильный результат.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Al Harris, Amazon Kiro · corpus video #40",
+      "translation": "— Эл Харрис, Amazon Kiro · видео корпуса #40",
+      "where": "free text"
+    }
+  ]
+}
