@@ -11,6 +11,8 @@
     "still:ch02": "remotion still Chapter02 out/chapter-02-taste.png",
     "render:og": "node scripts/render-og-cards.mjs",
     "render:og:draft": "node scripts/render-og-cards-draft.mjs",
+    "check:explainers:draft": "node scripts/check-explainer-specs.mjs",
+    "render:explainers:draft": "node scripts/render-draft-explainers.mjs",
     "upgrade": "remotion upgrade"
   },
   "dependencies": {
