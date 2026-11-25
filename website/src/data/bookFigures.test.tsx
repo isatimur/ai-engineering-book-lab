@@ -114,7 +114,13 @@ describe.each(BOOKS)('$folder pages', ({ book, folder }) => {
   it('shows every figure of each chapter, only from this book, and no book 1 links', () => {
     for (const ch of book.chapters) {
       const html = render(book, book.chapterPath(ch), `${book.indexPath}/:slug`, <DraftBookChapterPage book={book} />);
-      const imgs = localImages(html);
+      // A chapter's postcard art (data/figurePostcards.ts) sits in /postcards/,
+      // but must still be this book's own.
+      const all = localImages(html);
+      for (const src of all.filter((s) => s.startsWith('/postcards/'))) {
+        expect(src, `${ch.slug}: ${src}`).toMatch(new RegExp(`^/postcards/${book.key}-`));
+      }
+      const imgs = all.filter((s) => !s.startsWith('/postcards/'));
       for (const src of imgs) expect(src, `${ch.slug}: ${src}`).toMatch(new RegExp(`^/${folder}/`));
       expect(imgs.length, ch.slug).toBe(book.figures.figures.filter((f) => f.chapter === ch.number).length);
       for (const href of hrefs(html)) {
