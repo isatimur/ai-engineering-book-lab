@@ -27,3 +27,4 @@ Built from 1482 AI Engineer talks · 73 claims · 249 source anchors.
 
 - [Source repository](https://github.com/isatimur/ai-engineering-book-lab): the corpus, claims ledger, and method.
 - [Sitemap](https://fromcopilottocolleague.com/sitemap.xml): every indexable page.
+- [Press catalogue (JSON)](https://aiepress.com/catalog.json): all three AI Engineer Press books, with chapters, URLs, status and explainer videos.

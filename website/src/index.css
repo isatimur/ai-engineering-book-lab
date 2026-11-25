@@ -22,6 +22,27 @@
   animation: blink 1s step-end infinite;
 }
 
+/* Press homepage title marquee (components/press/TitleMarquee.tsx). The track
+   holds four equal copies, so sliding by half its width loops without a seam. */
+@keyframes press-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.press-marquee-track {
+  animation: press-marquee 70s linear infinite;
+}
+
+.press-marquee[data-paused] .press-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .press-marquee-track {
+    animation: none;
+  }
+}
+
 body {
   background-color: var(--color-paper);
   color: var(--color-ink);
