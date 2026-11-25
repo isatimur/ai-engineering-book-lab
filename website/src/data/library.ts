@@ -10,7 +10,7 @@
  * Maturity is derived from the chapter counts rather than stated, for the
  * same reason: a label that cannot disagree with the book it describes.
  */
-import { BOOK, publicUrl } from './book';
+import { BOOK, authorsLine, publicUrl } from './book';
 import { chapters } from './bookChapters';
 import {
   chaptersTwo,
@@ -64,7 +64,23 @@ export type LibraryEntry = {
    * a legend.
    */
   maturity: 'published' | 'drafting' | 'early';
+  /** Book 1's author line; the press has one author. */
+  author: string;
+  /** The year the book's current text dates from. */
+  year: number;
 };
+
+/** The press's year, as the site footer prints it (© 2026). */
+const PRESS_YEAR = 2026;
+
+/**
+ * A short author bio, assembled from text the site already carries
+ * (llms.txt and content/about-the-lab.md). Nothing here is new.
+ */
+export const AUTHOR_BIO =
+  `${authorsLine} wrote ${BOOK.title} and runs the Lab: a public project that produces source-backed ` +
+  'books on AI engineering by running research-and-writing loops over a corpus of practitioner talks ' +
+  'from the AI Engineer channel. The work is built in public and open source.';
 
 const bookThreeStatus = (): string => {
   if (chaptersThree.length === 0) return 'In design';
@@ -84,6 +100,8 @@ export const LIBRARY: LibraryEntry[] = [
     status: 'Published',
     measure: `${chapters.length} chapters · ${totalWordCount.toLocaleString()} words`,
     maturity: 'published',
+    author: authorsLine,
+    year: PRESS_YEAR,
   },
   {
     id: 'the-model-layer-and-the-long-tail',
@@ -99,6 +117,8 @@ export const LIBRARY: LibraryEntry[] = [
       `${chaptersTwo.length} chapters · ${chaptersTwoWordCount.toLocaleString()} words · ` +
       `${stats.book2.claims.total} claims · ${stats.book2.anchors.total} anchors`,
     maturity: 'drafting',
+    author: authorsLine,
+    year: PRESS_YEAR,
   },
   {
     id: 'the-shape-of-the-work',
@@ -116,8 +136,21 @@ export const LIBRARY: LibraryEntry[] = [
       `${chaptersThree.length} of ${PLANNED_CHAPTERS} chapters · ` +
       `${CLASSIFIED_TALKS} talks classified · spec published`,
     maturity: 'early',
+    author: authorsLine,
+    year: PRESS_YEAR,
   },
 ];
+
+/** The books either side of `id` in LIBRARY order, for previous / next links. */
+export const libraryNeighbours = (
+  id: string,
+): { prev?: LibraryEntry; next?: LibraryEntry } => {
+  const i = LIBRARY.findIndex((b) => b.id === id);
+  if (i < 0) return {};
+  return { prev: LIBRARY[i - 1], next: LIBRARY[i + 1] };
+};
+
+export const libraryEntry = (id: string): LibraryEntry | undefined => LIBRARY.find((b) => b.id === id);
 
 /** The subtitles are the covers' own, so the page and the print agree. */
 export const LIBRARY_SUBTITLES = {
