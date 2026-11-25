@@ -436,9 +436,9 @@
     {
       "id": "g9037",
       "type": "arrow",
-      "x": 450,
+      "x": 452,
       "y": 300,
-      "width": 30,
+      "width": 56,
       "height": 1,
       "angle": 0,
       "strokeColor": "#c2410c",
@@ -459,16 +459,7 @@
       "updated": 1,
       "link": null,
       "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          30,
-          0
-        ]
-      ],
+      "points": [[0, 0], [56, 0]],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
@@ -478,7 +469,7 @@
     {
       "id": "g9040",
       "type": "text",
-      "x": 444,
+      "x": 456.0,
       "y": 262,
       "width": 44,
       "height": 30,
@@ -514,7 +505,7 @@
     {
       "id": "g9043",
       "type": "rectangle",
-      "x": 486,
+      "x": 512,
       "y": 172,
       "width": 440,
       "height": 264,
@@ -543,7 +534,7 @@
     {
       "id": "g9046",
       "type": "text",
-      "x": 486,
+      "x": 512,
       "y": 186,
       "width": 440,
       "height": 17,
@@ -579,7 +570,7 @@
     {
       "id": "g9049",
       "type": "rectangle",
-      "x": 636,
+      "x": 662,
       "y": 214,
       "width": 140,
       "height": 44,
@@ -608,7 +599,7 @@
     {
       "id": "g9052",
       "type": "text",
-      "x": 636,
+      "x": 662,
       "y": 226,
       "width": 140,
       "height": 18,
@@ -644,7 +635,7 @@
     {
       "id": "g9055",
       "type": "text",
-      "x": 486,
+      "x": 512,
       "y": 266,
       "width": 440,
       "height": 13,
@@ -680,7 +671,7 @@
     {
       "id": "g9058",
       "type": "rectangle",
-      "x": 500,
+      "x": 526,
       "y": 286,
       "width": 98,
       "height": 30,
@@ -709,7 +700,7 @@
     {
       "id": "g9061",
       "type": "text",
-      "x": 500,
+      "x": 526,
       "y": 293,
       "width": 98,
       "height": 13,
@@ -745,7 +736,7 @@
     {
       "id": "g9064",
       "type": "rectangle",
-      "x": 606,
+      "x": 632,
       "y": 286,
       "width": 98,
       "height": 30,
@@ -774,7 +765,7 @@
     {
       "id": "g9067",
       "type": "text",
-      "x": 606,
+      "x": 632,
       "y": 293,
       "width": 98,
       "height": 13,
@@ -810,7 +801,7 @@
     {
       "id": "g9070",
       "type": "rectangle",
-      "x": 712,
+      "x": 738,
       "y": 286,
       "width": 98,
       "height": 30,
@@ -839,7 +830,7 @@
     {
       "id": "g9073",
       "type": "text",
-      "x": 712,
+      "x": 738,
       "y": 293,
       "width": 98,
       "height": 13,
@@ -875,7 +866,7 @@
     {
       "id": "g9076",
       "type": "rectangle",
-      "x": 818,
+      "x": 844,
       "y": 286,
       "width": 98,
       "height": 30,
@@ -904,7 +895,7 @@
     {
       "id": "g9079",
       "type": "text",
-      "x": 818,
+      "x": 844,
       "y": 293,
       "width": 98,
       "height": 13,
@@ -940,7 +931,7 @@
     {
       "id": "g9082",
       "type": "rectangle",
-      "x": 500,
+      "x": 526,
       "y": 324,
       "width": 98,
       "height": 30,
@@ -969,7 +960,7 @@
     {
       "id": "g9085",
       "type": "text",
-      "x": 500,
+      "x": 526,
       "y": 331,
       "width": 98,
       "height": 13,
@@ -1005,7 +996,7 @@
     {
       "id": "g9088",
       "type": "rectangle",
-      "x": 606,
+      "x": 632,
       "y": 324,
       "width": 98,
       "height": 30,
@@ -1034,7 +1025,7 @@
     {
       "id": "g9091",
       "type": "text",
-      "x": 606,
+      "x": 632,
       "y": 331,
       "width": 98,
       "height": 13,
@@ -1070,7 +1061,7 @@
     {
       "id": "g9094",
       "type": "rectangle",
-      "x": 712,
+      "x": 738,
       "y": 324,
       "width": 98,
       "height": 30,
@@ -1099,7 +1090,7 @@
     {
       "id": "g9097",
       "type": "text",
-      "x": 712,
+      "x": 738,
       "y": 331,
       "width": 98,
       "height": 13,
@@ -1135,7 +1126,7 @@
     {
       "id": "g9100",
       "type": "rectangle",
-      "x": 818,
+      "x": 844,
       "y": 324,
       "width": 98,
       "height": 30,
@@ -1164,7 +1155,7 @@
     {
       "id": "g9103",
       "type": "text",
-      "x": 818,
+      "x": 844,
       "y": 331,
       "width": 98,
       "height": 13,
@@ -1200,7 +1191,7 @@
     {
       "id": "g9106",
       "type": "text",
-      "x": 486,
+      "x": 512,
       "y": 404,
       "width": 440,
       "height": 16,
@@ -1238,8 +1229,8 @@
       "type": "rectangle",
       "x": 44,
       "y": 456,
-      "width": 882,
-      "height": 46,
+      "width": 908,
+      "height": 66,
       "angle": 0,
       "strokeColor": "#93c5fd",
       "backgroundColor": "#eff6ff",
@@ -1267,8 +1258,8 @@
       "type": "text",
       "x": 64,
       "y": 470,
-      "width": 1030,
-      "height": 18,
+      "width": 620,
+      "height": 37.5,
       "angle": 0,
       "strokeColor": "#1e3a5f",
       "backgroundColor": "transparent",
@@ -1290,8 +1281,8 @@
       "locked": false,
       "fontSize": 15,
       "fontFamily": 3,
-      "text": "\"Instead of micromanaging, I'm scaffolding and providing context.\"  — Eric Hou, Augment Code  ·  corpus video #190",
-      "originalText": "\"Instead of micromanaging, I'm scaffolding and providing context.\"  — Eric Hou, Augment Code  ·  corpus video #190",
+      "text": "\"Instead of micromanaging, I'm scaffolding and providing context.\"\n— Eric Hou, Augment Code  ·  corpus video #190",
+      "originalText": "\"Instead of micromanaging, I'm scaffolding and providing context.\"\n— Eric Hou, Augment Code  ·  corpus video #190",
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 12,
@@ -1302,7 +1293,7 @@
       "id": "g9115",
       "type": "text",
       "x": 44,
-      "y": 512,
+      "y": 532,
       "width": 823,
       "height": 16,
       "angle": 0,

@@ -229,8 +229,8 @@
     {
       "type": "text",
       "id": "fanout_l",
-      "x": 259.44285,
-      "y": 156,
+      "x": 196.445,
+      "y": 158,
       "width": 45.11,
       "height": 13.75,
       "text": "раздать",
@@ -713,8 +713,8 @@
     {
       "type": "text",
       "id": "join_l",
-      "x": 453.44285,
-      "y": 296,
+      "x": 430.445,
+      "y": 142,
       "width": 45.11,
       "height": 13.75,
       "text": "собрать",
@@ -745,7 +745,7 @@
     {
       "type": "rectangle",
       "id": "review",
-      "x": 660,
+      "x": 690,
       "y": 184,
       "width": 100,
       "height": 68,
@@ -772,7 +772,7 @@
     {
       "type": "text",
       "id": "review_t",
-      "x": 679.5332,
+      "x": 709.5332,
       "y": 202,
       "width": 60.93,
       "height": 36.4,
@@ -806,7 +806,7 @@
       "id": "r1",
       "x": 610,
       "y": 218,
-      "width": 48,
+      "width": 78,
       "height": 0,
       "strokeColor": "#047857",
       "backgroundColor": "transparent",
@@ -830,7 +830,7 @@
           0
         ],
         [
-          48,
+          78,
           0
         ]
       ],
@@ -840,7 +840,7 @@
     {
       "type": "text",
       "id": "r1_l",
-      "x": 616.423,
+      "x": 631.425,
       "y": 194,
       "width": 35.15,
       "height": 12.5,
@@ -874,7 +874,7 @@
       "id": "warn",
       "x": 70,
       "y": 312,
-      "width": 690,
+      "width": 762,
       "height": 48,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fee2e2",

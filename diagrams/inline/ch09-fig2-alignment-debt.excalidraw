@@ -197,7 +197,7 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "text", "id": "fix_lbl", "x": 388, "y": 238, "width": 96, "height": 28,
+      "type": "text", "id": "fix_lbl", "x": 388, "y": 228, "width": 96, "height": 28,
       "text": "shared\nplan + review", "originalText": "shared\nplan + review",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",

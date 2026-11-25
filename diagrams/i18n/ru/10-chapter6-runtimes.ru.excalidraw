@@ -104,7 +104,7 @@
       "id": "panel_l",
       "x": 70,
       "y": 166,
-      "width": 620,
+      "width": 590,
       "height": 400,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fee2e2",
@@ -264,7 +264,7 @@
       "id": "pl_card",
       "x": 94,
       "y": 320,
-      "width": 572,
+      "width": 542,
       "height": 196,
       "strokeColor": "#334155",
       "backgroundColor": "#1e293b",
@@ -353,9 +353,9 @@
     {
       "type": "rectangle",
       "id": "panel_r",
-      "x": 810,
+      "x": 840,
       "y": 166,
-      "width": 620,
+      "width": 590,
       "height": 400,
       "strokeColor": "#047857",
       "backgroundColor": "#d1fae5",
@@ -385,7 +385,7 @@
     {
       "type": "text",
       "id": "pr_h",
-      "x": 834,
+      "x": 864,
       "y": 186,
       "width": 129.48,
       "height": 16.25,
@@ -417,7 +417,7 @@
     {
       "type": "text",
       "id": "pr_t",
-      "x": 834,
+      "x": 864,
       "y": 206,
       "width": 393.72,
       "height": 26.25,
@@ -449,7 +449,7 @@
     {
       "type": "text",
       "id": "pr_c",
-      "x": 834,
+      "x": 864,
       "y": 246,
       "width": 403.69,
       "height": 36.4,
@@ -481,7 +481,7 @@
     {
       "type": "text",
       "id": "pr_se",
-      "x": 834,
+      "x": 864,
       "y": 302,
       "width": 174.01,
       "height": 13.75,
@@ -513,9 +513,9 @@
     {
       "type": "rectangle",
       "id": "pr_card",
-      "x": 834,
+      "x": 864,
       "y": 320,
-      "width": 572,
+      "width": 542,
       "height": 196,
       "strokeColor": "#334155",
       "backgroundColor": "#1e293b",
@@ -540,7 +540,7 @@
     {
       "type": "text",
       "id": "pr_code",
-      "x": 852,
+      "x": 882,
       "y": 338,
       "width": 274.2,
       "height": 126.0,
@@ -572,7 +572,7 @@
     {
       "type": "text",
       "id": "pr_take",
-      "x": 834,
+      "x": 864,
       "y": 530,
       "width": 510.32,
       "height": 16.25,
@@ -636,9 +636,9 @@
     {
       "type": "arrow",
       "id": "shift_arrow",
-      "x": 700,
+      "x": 670,
       "y": 372,
-      "width": 100,
+      "width": 160,
       "height": 0,
       "strokeColor": "#c2410c",
       "backgroundColor": "transparent",
@@ -662,7 +662,7 @@
           0
         ],
         [
-          100,
+          160,
           0
         ]
       ],

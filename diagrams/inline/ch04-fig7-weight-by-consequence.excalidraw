@@ -337,7 +337,7 @@
       "type": "rectangle",
       "x": 376,
       "y": 150,
-      "width": 330,
+      "width": 362,
       "height": 206,
       "angle": 0,
       "strokeColor": "#047857",
@@ -364,7 +364,7 @@
     {
       "id": "g940265",
       "type": "text",
-      "x": 376,
+      "x": 392,
       "y": 162,
       "width": 330,
       "height": 16,
@@ -703,7 +703,7 @@
     {
       "id": "g940295",
       "type": "text",
-      "x": 376,
+      "x": 392,
       "y": 314,
       "width": 330,
       "height": 30,

@@ -185,7 +185,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "text", "id": "smooth", "x": 40, "y": 264, "width": 696, "height": 18,
+      "type": "text", "id": "smooth", "x": 40, "y": 274, "width": 696, "height": 18,
       "text": "From the outside the trajectory still looks smooth  —  competent, coherent, and unaudited.", "originalText": "From the outside the trajectory still looks smooth  —  competent, coherent, and unaudited.",
       "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#334155", "backgroundColor": "transparent", "fillStyle": "solid",

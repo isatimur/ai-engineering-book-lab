@@ -190,8 +190,8 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "text", "id": "shift_sub", "x": 610, "y": 390, "width": 280, "height": 32,
-      "text": "seat licenses\nto a redesigned model", "originalText": "seat licenses\nto a redesigned model",
+      "type": "text", "id": "shift_sub", "x": 610, "y": 390, "width": 280, "height": 67.2,
+      "text": "seat licenses\nto a\nredesigned\nmodel", "originalText": "seat licenses\nto a\nredesigned\nmodel",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
@@ -300,8 +300,8 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "cb4", "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "ct4", "x": 1160, "y": 628, "width": 306, "height": 56,
-      "text": "Teams need shared planning and\nreview spaces, not just personal tools.", "originalText": "Teams need shared planning and\nreview spaces, not just personal tools.",
+      "type": "text", "id": "ct4", "x": 1160, "y": 628, "width": 306, "height": 54.6,
+      "text": "Teams need shared planning and\nreview spaces, not just\npersonal tools.", "originalText": "Teams need shared planning and\nreview spaces, not just\npersonal tools.",
       "fontSize": 13, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,

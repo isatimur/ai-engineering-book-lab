@@ -170,7 +170,7 @@
     {
       "type": "rectangle",
       "id": "agent",
-      "x": 70,
+      "x": 46,
       "y": 150,
       "width": 200,
       "height": 200,
@@ -197,7 +197,7 @@
     {
       "type": "text",
       "id": "agent_h",
-      "x": 86,
+      "x": 62,
       "y": 166,
       "width": 168,
       "height": 14,
@@ -229,7 +229,7 @@
     {
       "type": "text",
       "id": "agent_b",
-      "x": 86,
+      "x": 62,
       "y": 196,
       "width": 168,
       "height": 140,
@@ -529,7 +529,7 @@
     {
       "type": "rectangle",
       "id": "world",
-      "x": 600,
+      "x": 616,
       "y": 150,
       "width": 160,
       "height": 200,
@@ -556,7 +556,7 @@
     {
       "type": "text",
       "id": "world_h",
-      "x": 616,
+      "x": 632,
       "y": 166,
       "width": 128,
       "height": 14,
@@ -588,7 +588,7 @@
     {
       "type": "text",
       "id": "world_b",
-      "x": 616,
+      "x": 632,
       "y": 196,
       "width": 128,
       "height": 140,
@@ -620,9 +620,9 @@
     {
       "type": "arrow",
       "id": "a_to_plane",
-      "x": 272,
+      "x": 248,
       "y": 230,
-      "width": 44,
+      "width": 68,
       "height": 0,
       "strokeColor": "#6d28d9",
       "backgroundColor": "transparent",
@@ -646,7 +646,7 @@
           0
         ],
         [
-          44,
+          68,
           0
         ]
       ],
@@ -656,7 +656,7 @@
     {
       "type": "text",
       "id": "a_to_plane_l",
-      "x": 256,
+      "x": 242,
       "y": 206,
       "width": 80,
       "height": 14,
@@ -690,7 +690,7 @@
       "id": "plane_to_world",
       "x": 552,
       "y": 230,
-      "width": 46,
+      "width": 62,
       "height": 0,
       "strokeColor": "#047857",
       "backgroundColor": "transparent",
@@ -714,7 +714,7 @@
           0
         ],
         [
-          46,
+          62,
           0
         ]
       ],
@@ -724,7 +724,7 @@
     {
       "type": "text",
       "id": "plane_to_world_l",
-      "x": 538,
+      "x": 545,
       "y": 206,
       "width": 76,
       "height": 14,
