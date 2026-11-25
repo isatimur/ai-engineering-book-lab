@@ -1,0 +1,106 @@
+{
+  "source": "diagrams/concepts/16-spec-driven-development.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "sd_eyebrow",
+      "text": "CONCEPT  ·  16",
+      "translation": "ПОНЯТИЕ  ·  16",
+      "where": "free text"
+    },
+    {
+      "id": "sd_name",
+      "text": "Spec-Driven Development",
+      "translation": "Разработка по спецификации",
+      "where": "free text"
+    },
+    {
+      "id": "sd_definition",
+      "text": "Making intent, constraints, and acceptance criteria explicit enough\nthat humans and agents can build to them.",
+      "translation": "Намерения, ограничения и критерии приёмки, записанные так явно,\nчто по ним могут работать и люди, и агенты.",
+      "where": "free text"
+    },
+    {
+      "id": "sd_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "sd_intent_t",
+      "text": "vague\nintent",
+      "translation": "размытая\nцель",
+      "where": "free text inside rectangle sd_intent",
+      "budget_px": 120,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "sd_spec_t",
+      "text": "THE SPEC\ngoals · constraints\nacceptance · non-goals",
+      "translation": "СПЕЦИФИКАЦИЯ\nцели · ограничения\nприёмка · не-цели",
+      "where": "free text inside rectangle sd_spec",
+      "budget_px": 166,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "sd_plan_t",
+      "text": "Planning  — shrinks search",
+      "translation": "Планирование — сужает поиск",
+      "where": "free text inside rectangle sd_plan",
+      "budget_px": 200,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "sd_impl_t",
+      "text": "Implementation — agents",
+      "translation": "Реализация — агенты",
+      "where": "free text inside rectangle sd_impl",
+      "budget_px": 200,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "sd_eval_t",
+      "text": "Eval  — output vs intent",
+      "translation": "Оценка — сверка с замыслом",
+      "where": "free text inside rectangle sd_eval",
+      "budget_px": 200,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "sd_hub_note",
+      "text": "one shared contract",
+      "translation": "один общий контракт",
+      "where": "free text inside rectangle sd_zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 122
+    },
+    {
+      "id": "sd_caption",
+      "text": "A spec is not documentation — it is an alignment artifact. The same contract\nfeeds all three stages: it helps humans agree, keeps agents from sprawling,\nand gives evals a stable target. As generation gets cheap, this matters more.",
+      "translation": "Спецификация — не документация, а инструмент согласования. Один контракт\nпитает все три этапа: люди договариваются, агенты не расползаются,\nу оценок есть стабильная цель. Чем дешевле генерация, тем это важнее.",
+      "where": "free text inside rectangle sd_zone",
+      "budget_px": 769,
+      "budget_chars_per_line": 106
+    },
+    {
+      "id": "sd_lbl_example",
+      "text": "EXAMPLE  ·  a minimal agent-ready spec",
+      "translation": "ПРИМЕР  ·  минимальная спецификация для агента",
+      "where": "free text"
+    },
+    {
+      "id": "sd_ev",
+      "text": "## spec: rate-limit the /login endpoint\ngoal:        block brute-force without locking out real users\nconstraints: 5 attempts / 15 min per IP; Redis-backed\nacceptance:  6th attempt -> HTTP 429; counter resets after window\nnon-goals:   CAPTCHA, account lockout, IP allowlisting",
+      "translation": "## spec: лимит запросов для эндпоинта /login\ngoal:        остановить перебор паролей, не блокируя настоящих людей\nconstraints: 5 попыток / 15 мин на IP; хранение в Redis\nacceptance:  6-я попытка -> HTTP 429; счётчик сбрасывается после окна\nnon-goals:   CAPTCHA, блокировка аккаунта, белый список IP",
+      "where": "free text inside rectangle sd_evidence",
+      "budget_px": 797,
+      "budget_chars_per_line": 120
+    },
+    {
+      "id": "sd_footer",
+      "text": "Appears in: ch 2, ch 3      ·      — Al Harris, Amazon Kiro · corpus video #40",
+      "translation": "Встречается в главах 2, 3      ·      — Эл Харрис, Amazon Kiro · видео корпуса #40",
+      "where": "free text"
+    }
+  ]
+}

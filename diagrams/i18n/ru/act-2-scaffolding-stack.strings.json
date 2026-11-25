@@ -1,0 +1,148 @@
+{
+  "source": "dividers/act-2-scaffolding-stack.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "e1097",
+      "text": "ACT II  —  OF FOUR",
+      "translation": "АКТ II  —  ИЗ ЧЕТЫРЁХ",
+      "where": "free text"
+    },
+    {
+      "id": "e1100",
+      "text": "The Scaffolding Stack",
+      "translation": "Стек обвязки",
+      "where": "free text"
+    },
+    {
+      "id": "e1109",
+      "text": "The technical systems that make\ndelegated machine work dependable.",
+      "translation": "Технические системы, которые делают\nделегированную машинную работу надёжной.",
+      "where": "free text"
+    },
+    {
+      "id": "e1115",
+      "text": "II",
+      "translation": "II",
+      "where": "free text inside rectangle e1112",
+      "budget_px": 222,
+      "budget_chars_per_line": 3
+    },
+    {
+      "id": "e1118",
+      "text": "CHAPTERS 3–7",
+      "translation": "ГЛАВЫ 3–7",
+      "where": "free text inside rectangle e1112",
+      "budget_px": 222,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "e1121",
+      "text": "5 chapters",
+      "translation": "5 глав",
+      "where": "free text inside rectangle e1112",
+      "budget_px": 222,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "e1127",
+      "text": "Ch 3 · Harnesses, Specs & Codebases Agents Can Use",
+      "translation": "Гл. 3 · Обвязки, спецификации и код для агентов",
+      "where": "free text"
+    },
+    {
+      "id": "e1133",
+      "text": "Ch 4 · Evals Are the Control System",
+      "translation": "Гл. 4 · Оценки — это система управления",
+      "where": "free text"
+    },
+    {
+      "id": "e1139",
+      "text": "Ch 5 · Context Is Infrastructure",
+      "translation": "Гл. 5 · Контекст — это инфраструктура",
+      "where": "free text"
+    },
+    {
+      "id": "e1145",
+      "text": "Ch 6 · Runtimes, State & the Human Control Plane",
+      "translation": "Гл. 6 · Среда исполнения, состояние и контроль человека",
+      "where": "free text"
+    },
+    {
+      "id": "e1151",
+      "text": "Ch 7 · Security, Identity & High-Stakes Trust",
+      "translation": "Гл. 7 · Безопасность, идентичность, доверие при высоких ставках",
+      "where": "free text"
+    },
+    {
+      "id": "e1157",
+      "text": "→  Scaffolding creates trust",
+      "translation": "→  Обвязка создаёт доверие",
+      "where": "free text inside rectangle e1154",
+      "budget_px": 325,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "e1160",
+      "text": "THE ARC",
+      "translation": "СЮЖЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "e1178",
+      "text": "I",
+      "translation": "I",
+      "where": "free text inside ellipse e1175",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1181",
+      "text": "I · Problem",
+      "translation": "I · Проблема",
+      "where": "free text"
+    },
+    {
+      "id": "e1187",
+      "text": "II",
+      "translation": "II",
+      "where": "free text inside ellipse e1184",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1190",
+      "text": "II · Scaffolding",
+      "translation": "II · Обвязка",
+      "where": "free text"
+    },
+    {
+      "id": "e1196",
+      "text": "III",
+      "translation": "III",
+      "where": "free text inside ellipse e1193",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1199",
+      "text": "III · Stress Test",
+      "translation": "III · Стресс-тест",
+      "where": "free text"
+    },
+    {
+      "id": "e1205",
+      "text": "IV",
+      "translation": "IV",
+      "where": "free text inside ellipse e1202",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1208",
+      "text": "IV · Widening",
+      "translation": "IV · Расширение",
+      "where": "free text"
+    }
+  ]
+}

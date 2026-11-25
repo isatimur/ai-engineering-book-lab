@@ -1,0 +1,154 @@
+{
+  "source": "diagrams/concepts/14-one-shot-ai-failure.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "os_eyebrow",
+      "text": "CONCEPT  ·  14",
+      "translation": "ПОНЯТИЕ  ·  14",
+      "where": "free text"
+    },
+    {
+      "id": "os_name",
+      "text": "One-Shot AI Failure",
+      "translation": "Провал ИИ с первой попытки",
+      "where": "free text"
+    },
+    {
+      "id": "os_definition",
+      "text": "Expecting a model to nail a complex task in one pass —\nthen blaming the model, not the workflow.",
+      "translation": "Ждать, что модель решит сложную задачу за один проход, —\nа потом винить модель, а не процесс.",
+      "where": "free text"
+    },
+    {
+      "id": "os_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "os_before_lbl",
+      "text": "THE FAILURE — intent straight to “done”",
+      "translation": "ПРОВАЛ — от замысла сразу к «готово»",
+      "where": "free text inside rectangle os_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "os_b1_t",
+      "text": "vague intent",
+      "translation": "размытая цель",
+      "where": "free text inside rectangle os_b1",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "os_b2_t",
+      "text": "one model run",
+      "translation": "один прогон",
+      "where": "free text inside rectangle os_b2",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "os_b3_t",
+      "text": "shipped\nas “finished”",
+      "translation": "выпущено\nкак «готово»",
+      "where": "free text inside rectangle os_b3",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "os_b_bad",
+      "text": "Hidden requirements + edge cases\nsurface later. Team blames the model.",
+      "translation": "Скрытые требования и крайние случаи\nвсплывут позже. Команда винит модель.",
+      "where": "free text inside rectangle os_zone",
+      "budget_px": 297,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "os_after_lbl",
+      "text": "THE FIX — spec, draft, check, iterate",
+      "translation": "РЕШЕНИЕ — спецификация, черновик, проверка, итерации",
+      "where": "free text inside rectangle os_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "os_a1_t",
+      "text": "spec",
+      "translation": "спецификация",
+      "where": "free text inside rectangle os_a1",
+      "budget_px": 80,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "os_a2_t",
+      "text": "draft",
+      "translation": "черновик",
+      "where": "free text inside rectangle os_a2",
+      "budget_px": 80,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "os_a3_t",
+      "text": "check\n(evals)",
+      "translation": "проверка\n(оценки)",
+      "where": "free text inside rectangle os_a3",
+      "budget_px": 80,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "os_a4_t",
+      "text": "trusted result",
+      "translation": "надёжный итог",
+      "where": "free text inside rectangle os_a4",
+      "budget_px": 114,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "os_loop_t",
+      "text": "iterate with evidence",
+      "translation": "итерации на фактах",
+      "where": "free text inside rectangle os_zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 122
+    },
+    {
+      "id": "os_quote",
+      "text": "“You can't just\none-shot it.”",
+      "translation": "«С одного захода\nне получится».",
+      "where": "free text inside rectangle os_zone",
+      "budget_px": 217,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "os_lbl_example",
+      "text": "EXAMPLE  ·  the same broad ask, two outcomes",
+      "translation": "ПРИМЕР  ·  одна и та же широкая задача, два исхода",
+      "where": "free text"
+    },
+    {
+      "id": "os_ev_bad",
+      "text": "# one-shot\n> \"add auth to the app\"\n  -> plausible login page\n  -> no rate limit, no tests, no rollback",
+      "translation": "# с одного захода\n> \"добавь вход в приложение\"\n  -> правдоподобная страница входа\n  -> ни лимита запросов, ни тестов, ни отката",
+      "where": "free text inside rectangle os_evidence",
+      "budget_px": 797,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "os_ev_good",
+      "text": "# workflow\n> spec: auth + rate limit + audit log\n  -> draft -> eval suite -> review\n  -> ships with acceptance tests passing",
+      "translation": "# процесс\n> спецификация: вход + лимит + журнал аудита\n  -> черновик -> набор оценок -> ревью\n  -> выпуск, приёмочные тесты пройдены",
+      "where": "free text inside rectangle os_evidence",
+      "budget_px": 393,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "os_footer",
+      "text": "Appears in: ch 3, ch 4      ·      — Mehedi Hassan, Granola · corpus video #664",
+      "translation": "Встречается в главах 3, 4      ·      — Мехеди Хасан, Granola · видео корпуса #664",
+      "where": "free text"
+    }
+  ]
+}

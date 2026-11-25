@@ -1,0 +1,106 @@
+{
+  "source": "diagrams/concepts/10-harness-engineering.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "he_eyebrow",
+      "text": "CONCEPT 10",
+      "translation": "ПОНЯТИЕ 10",
+      "where": "free text"
+    },
+    {
+      "id": "he_name",
+      "text": "Harness Engineering",
+      "translation": "Инженерия обвязки",
+      "where": "free text"
+    },
+    {
+      "id": "he_definition",
+      "text": "The engineered environment that lets humans steer while agents execute.",
+      "translation": "Инженерная среда, в которой люди направляют, а агенты исполняют.",
+      "where": "free text"
+    },
+    {
+      "id": "he_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "he_shell_lbl",
+      "text": "the harness — everything around the model call",
+      "translation": "обвязка — всё вокруг вызова модели",
+      "where": "free text inside rectangle he_zone",
+      "budget_px": 787,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "he_plan_t",
+      "text": "PLAN",
+      "translation": "ПЛАН",
+      "where": "free text inside rectangle he_plan",
+      "budget_px": 130,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "he_produce_t",
+      "text": "PRODUCE\nagent + tools",
+      "translation": "СОЗДАНИЕ\nагент + средства",
+      "where": "free text inside rectangle he_produce",
+      "budget_px": 130,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "he_review_t",
+      "text": "REVIEW\ntests + verify",
+      "translation": "РЕВЬЮ\nтесты + проверка",
+      "where": "free text inside rectangle he_review",
+      "budget_px": 130,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "he_ship_t",
+      "text": "SHIP",
+      "translation": "ВЫПУСК",
+      "where": "free text inside rectangle he_ship",
+      "budget_px": 116,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "he_rail_t",
+      "text": "harness rail:  repo structure  ·  edit boundaries  ·  permissions  ·  observability  ·  recovery",
+      "translation": "опора обвязки:  структура репозитория  ·  границы правок  ·  права  ·  наблюдаемость  ·  восстановление",
+      "where": "free text inside rectangle he_rail",
+      "budget_px": 703,
+      "budget_chars_per_line": 106
+    },
+    {
+      "id": "he_capability",
+      "text": "without the harness:  capability without constraint → spectacle, not dependable output",
+      "translation": "без обвязки:  возможности без ограничений → зрелище, а не надёжный результат",
+      "where": "free text inside rectangle he_zone",
+      "budget_px": 765,
+      "budget_chars_per_line": 106
+    },
+    {
+      "id": "he_lbl_example",
+      "text": "EXAMPLE",
+      "translation": "ПРИМЕР",
+      "where": "free text"
+    },
+    {
+      "id": "he_evidence_txt",
+      "text": "# AGENTS.md — repo-level harness rules the agent must obey\nedit_boundaries:  [\"src/**\", \"tests/**\"]   # never touch infra/, .github/\nvalidation:       \"pytest -q && ruff check .\"  # must pass before ship\nplan_first:       true                       # write PLAN.md, await approval\nsubagents:        { reviewer: \"adversarial\", scope: \"diff-only\" }",
+      "translation": "# AGENTS.md — правила обвязки для всего репозитория, агент обязан их соблюдать\nedit_boundaries:  [\"src/**\", \"tests/**\"]   # не трогать infra/, .github/\nvalidation:       \"pytest -q && ruff check .\"  # должно пройти до выпуска\nplan_first:       true                       # написать PLAN.md, ждать одобрения\nsubagents:        { reviewer: \"adversarial\", scope: \"diff-only\" }",
+      "where": "free text inside rectangle he_evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "he_footer",
+      "text": "Appears in: ch 3, ch 9      ·      “Harnesses in AI: A Deep Dive” — Tejas Kumar, IBM · #690",
+      "translation": "Встречается в главах 3, 9      ·      «Обвязки в ИИ: подробный разбор» — Теджас Кумар, IBM · #690",
+      "where": "free text"
+    }
+  ]
+}

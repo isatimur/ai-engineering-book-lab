@@ -1,0 +1,218 @@
+{
+  "source": "maps/02-methodology-deep-dive.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "HOW THE BOOK IS MADE",
+      "translation": "КАК СДЕЛАНА КНИГА",
+      "where": "free text"
+    },
+    {
+      "id": "t_title",
+      "text": "Inside the Knowledge Machine",
+      "translation": "Внутри машины знаний",
+      "where": "free text"
+    },
+    {
+      "id": "t_sub",
+      "text": "The autoresearch pipeline in detail — and the bounded, logged agent-pass loop that improves it.",
+      "translation": "Конвейер автоисследования в деталях — и ограниченный цикл агентных проходов с журналом, который его улучшает.",
+      "where": "free text"
+    },
+    {
+      "id": "input_t",
+      "text": "AI Engineer YouTube channel\n1,468-video corpus  ·  ground truth, kept stable",
+      "translation": "YouTube-канал AI Engineer\n1 468 видео  ·  неизменный эталон",
+      "where": "bound to ellipse input (wraps)",
+      "budget_px": 329,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "eb_l1",
+      "text": "LAYER 1 · SOURCE  —  raw material",
+      "translation": "СЛОЙ 1 · ИСТОЧНИК  —  сырой материал",
+      "where": "free text inside rectangle band_l1",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "de_l1",
+      "text": "Local-first video notes and transcript caches.\nDeliberately stable — agents read it,\nbut almost never rewrite it.",
+      "translation": "Локальные заметки о видео и кэш расшифровок.\nНамеренно стабилен — агенты читают его,\nно почти никогда не переписывают.",
+      "where": "free text inside rectangle band_l1",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "p_l1a_t",
+      "text": "01_Videos/   ·   1,468 video notes",
+      "translation": "01_Videos/   ·   1 468 заметок о видео",
+      "where": "free text inside rectangle p_l1a",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "p_l1b_t",
+      "text": "99_Meta/transcripts/plain/",
+      "translation": "99_Meta/transcripts/plain/",
+      "where": "free text inside rectangle p_l1b",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "p_l1c_t",
+      "text": "source inventories",
+      "translation": "реестры источников",
+      "where": "free text inside rectangle p_l1c",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "eb_l2",
+      "text": "LAYER 2 · SYNTHESIS  —  reusable knowledge",
+      "translation": "СЛОЙ 2 · СИНТЕЗ  —  переиспользуемые знания",
+      "where": "free text inside rectangle band_l2",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "de_l2",
+      "text": "Source notes distilled into themes, people\nand the 18 named concepts — the units\narguments are built from.",
+      "translation": "Заметки сведены в темы, людей\nи 18 именованных понятий — единицы,\nиз которых строятся аргументы.",
+      "where": "free text inside rectangle band_l2",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "p_l2a_t",
+      "text": "02_Themes/   ·   10 themes",
+      "translation": "02_Themes/   ·   10 тем",
+      "where": "free text inside rectangle p_l2a",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "p_l2b_t",
+      "text": "03_People/",
+      "translation": "03_People/",
+      "where": "free text inside rectangle p_l2b",
+      "budget_px": 133,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "p_l2c_t",
+      "text": "04_Concepts/ ·18",
+      "translation": "04_Concepts/ ·18",
+      "where": "free text inside rectangle p_l2c",
+      "budget_px": 133,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "p_l2d_t",
+      "text": "99_Meta/Theme Map.md",
+      "translation": "99_Meta/Theme Map.md",
+      "where": "free text inside rectangle p_l2d",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "eb_l3",
+      "text": "LAYER 3 · EVIDENCE  —  reviewable arguments",
+      "translation": "СЛОЙ 3 · ДОКАЗАТЕЛЬСТВА  —  проверяемые аргументы",
+      "where": "free text inside rectangle band_l3",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "de_l3",
+      "text": "Every strong claim gets a ledger entry and\nan evidence pack — citations tied back to\nthe corpus video that supports it.",
+      "translation": "Каждое сильное утверждение получает запись\nв реестре и пакет доказательств — ссылки\nна видео корпуса, которое его подтверждает.",
+      "where": "free text inside rectangle band_l3",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "p_l3a_t",
+      "text": "claims/   ·   verified ledgers",
+      "translation": "claims/   ·   проверенные реестры",
+      "where": "free text inside rectangle p_l3a",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "p_l3b_t",
+      "text": "evidence/   ·   evidence packs",
+      "translation": "evidence/   ·   пакеты доказательств",
+      "where": "free text inside rectangle p_l3b",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "eb_l4",
+      "text": "LAYER 4 · MANUSCRIPT  —  book material",
+      "translation": "СЛОЙ 4 · РУКОПИСЬ  —  материал книги",
+      "where": "free text inside rectangle band_l4",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "de_l4",
+      "text": "Synthesis becomes chapter packets and\ndrafts — each prose claim auditable down\nto a layer-3 evidence pack.",
+      "translation": "Синтез превращается в пакеты глав и\nчерновики — каждое утверждение текста\nпроверяемо до пакета доказательств слоя 3.",
+      "where": "free text inside rectangle band_l4",
+      "budget_px": 771,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "p_l4a_t",
+      "text": "05_Book_Ideas/",
+      "translation": "05_Book_Ideas/",
+      "where": "free text inside rectangle p_l4a",
+      "budget_px": 133,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "p_l4b_t",
+      "text": "Chapter Packets",
+      "translation": "Пакеты глав",
+      "where": "free text inside rectangle p_l4b",
+      "budget_px": 133,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "p_l4c_t",
+      "text": "Drafting Layer/",
+      "translation": "Drafting Layer/",
+      "where": "free text inside rectangle p_l4c",
+      "budget_px": 293,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "fl_12",
+      "text": "structured notes",
+      "translation": "структурированные заметки",
+      "where": "free text"
+    },
+    {
+      "id": "fl_23",
+      "text": "themes · people · concepts",
+      "translation": "темы · люди · понятия",
+      "where": "free text"
+    },
+    {
+      "id": "fl_34",
+      "text": "verified claims + evidence",
+      "translation": "проверенные утверждения + доказательства",
+      "where": "free text"
+    },
+    {
+      "id": "output_t",
+      "text": "Source-backed manuscript\nevery claim traceable to corpus video #N",
+      "translation": "Рукопись с опорой на источники\nвсё сверено с видео корпуса #N",
+      "where": "bound to ellipse output (wraps)",
+      "budget_px": 329,
+      "budget_chars_per_line": 39
+    }
+  ]
+}

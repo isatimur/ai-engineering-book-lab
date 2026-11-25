@@ -1,0 +1,106 @@
+{
+  "source": "diagrams/concepts/02-agent-observability.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CONCEPT",
+      "translation": "ПОНЯТИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "name",
+      "text": "Agent Observability",
+      "translation": "Наблюдаемость агентов",
+      "where": "free text"
+    },
+    {
+      "id": "definition",
+      "text": "Making model-driven work inspectable enough to debug, evaluate, and govern —\ntraces of what the agent saw, chose, and changed, not just pass/fail logs.",
+      "translation": "Сделать работу модели прозрачной для отладки, оценки и управления —\nтрейсы того, что агент видел, выбрал и изменил, а не только логи «прошёл/упал».",
+      "where": "free text"
+    },
+    {
+      "id": "lbl_how",
+      "text": "HOW IT WORKS  ·  TRACE-LINKED EVALUATION FLYWHEEL",
+      "translation": "КАК ЭТО РАБОТАЕТ  ·  МАХОВИК ОЦЕНОК, СВЯЗАННЫХ С ТРЕЙСАМИ",
+      "where": "free text"
+    },
+    {
+      "id": "n_run_t",
+      "text": "PRODUCTION RUN\nagent acts in the\nwild — non-\ndeterministic",
+      "translation": "ЗАПУСК В ПРОДАКШЕНЕ\nагент действует\nв реальном мире,\nнедетерминированно",
+      "where": "free text inside rectangle n_run",
+      "budget_px": 131,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "n_trace_t",
+      "text": "TRAJECTORY\ntool calls, state\nchanges, timing,\nintermediate output",
+      "translation": "ТРАЕКТОРИЯ\nвызовы инструментов\nи состояние, время,\nпромежуточный вывод",
+      "where": "free text inside rectangle n_trace",
+      "budget_px": 131,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "n_review_t",
+      "text": "REVIEW + SCORE\nfailing eval jumps\nstraight into the\ntrajectory",
+      "translation": "РЕВЬЮ + ОЦЕНКА\nупавшая оценка\nведёт прямо\nв траекторию",
+      "where": "free text inside rectangle n_review",
+      "budget_px": 131,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "n_eval_t",
+      "text": "EVAL SET\nfailure becomes\na regression\ntest case",
+      "translation": "НАБОР ОЦЕНОК\nсбой → новый\nрегрессионный\nтест",
+      "where": "free text inside rectangle n_eval",
+      "budget_px": 99,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "loop_t",
+      "text": "feeds next run — flywheel, not dashboard",
+      "translation": "питает следующий запуск — маховик, а не панель",
+      "where": "free text inside rectangle zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 122
+    },
+    {
+      "id": "tension",
+      "text": "Honest tension: richer traces build trust, but the same traces raise\nprivacy and security risk — good observability is selective, not maximal.",
+      "translation": "Честный компромисс: подробные трейсы растят доверие, но и риск для приватности\nи безопасности — хорошая наблюдаемость избирательна, а не максимальна.",
+      "where": "free text inside rectangle zone",
+      "budget_px": 779,
+      "budget_chars_per_line": 108
+    },
+    {
+      "id": "lbl_example",
+      "text": "EXAMPLE  ·  ONE SPAN FROM AN AGENT TRAJECTORY",
+      "translation": "ПРИМЕР  ·  ОДИН СПАН ИЗ ТРАЕКТОРИИ АГЕНТА",
+      "where": "free text"
+    },
+    {
+      "id": "evidence_t",
+      "text": "span: tool_call  step=7  parent=plan-2  ·  duration=1.84s",
+      "translation": "span: tool_call  step=7  parent=plan-2  ·  duration=1.84s",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "evidence_t2",
+      "text": "  tool=\"db.query\"  args={\"table\":\"users\"}  status=\"ok\"\n  state_delta: rows_read 0 → 1402   ·   eval_link: regression #44 FAIL\n  → jump to prior run #41  ·  redact: email, ssn  ·  retain 30d",
+      "translation": "  tool=\"db.query\"  args={\"table\":\"users\"}  status=\"ok\"\n  state_delta: rows_read 0 → 1402   ·   eval_link: regression #44 FAIL\n  → к прошлому запуску #41  ·  скрыть: email, ssn  ·  хранить 30 дн.",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "footer",
+      "text": "Appears in: ch 4, ch 6, ch 7      ·      — Danny Gollapalli & Ben Hylak, Raindrop · corpus video #655",
+      "translation": "Встречается в главах 4, 6, 7      ·      — Дэнни Голлапалли и Бен Хайлак, Raindrop · видео корпуса #655",
+      "where": "free text"
+    }
+  ]
+}

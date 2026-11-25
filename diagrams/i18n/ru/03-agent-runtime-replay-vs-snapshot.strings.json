@@ -1,0 +1,154 @@
+{
+  "source": "diagrams/concepts/03-agent-runtime-replay-vs-snapshot.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CONCEPT",
+      "translation": "ПОНЯТИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "name",
+      "text": "Agent Runtime: Replay vs Snapshot",
+      "translation": "Среда исполнения: воспроизведение или снимок",
+      "where": "free text"
+    },
+    {
+      "id": "definition",
+      "text": "Two ways a durable agent survives crashes and resumes long tasks —\nrebuild state by replaying an event history, or resume from a saved snapshot.",
+      "translation": "Два способа, которыми надёжный агент переживает сбои и продолжает долгие задачи —\nвосстановить состояние по истории событий или продолжить с сохранённого снимка.",
+      "where": "free text"
+    },
+    {
+      "id": "lbl_how",
+      "text": "HOW IT WORKS  ·  SAME CRASH, TWO RECOVERY PATHS",
+      "translation": "КАК ЭТО РАБОТАЕТ  ·  ОДИН СБОЙ, ДВА ПУТИ ВОССТАНОВЛЕНИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "replay_h",
+      "text": "REPLAY  —  rebuild from event log",
+      "translation": "ВОСПРОИЗВЕДЕНИЕ  —  из журнала событий",
+      "where": "free text inside rectangle zone",
+      "budget_px": 819,
+      "budget_chars_per_line": 105
+    },
+    {
+      "id": "r_e1t",
+      "text": "evt 1",
+      "translation": "соб. 1",
+      "where": "free text inside rectangle r_e1",
+      "budget_px": 45,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "r_e2t",
+      "text": "evt 2",
+      "translation": "соб. 2",
+      "where": "free text inside rectangle r_e2",
+      "budget_px": 45,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "r_e3t",
+      "text": "evt 3",
+      "translation": "соб. 3",
+      "where": "free text inside rectangle r_e3",
+      "budget_px": 45,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "r_crasht",
+      "text": "CRASH",
+      "translation": "СБОЙ",
+      "where": "free text inside rectangle r_crash",
+      "budget_px": 53,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "r_note",
+      "text": "resume = re-run evt 1 → 3 from scratch.\n+ strong audit trail, clear causality\n−  slow when history grows; nondeterminism leaks break it",
+      "translation": "продолжение = прогнать соб. 1 → 3 заново.\n+ надёжный аудит, ясная причинность\n−  медленно при длинной истории; недетерминизм ломает его",
+      "where": "free text inside rectangle zone",
+      "budget_px": 819,
+      "budget_chars_per_line": 124
+    },
+    {
+      "id": "snap_h",
+      "text": "SNAPSHOT  —  resume from saved state",
+      "translation": "СНИМОК  —  из сохранённого состояния",
+      "where": "free text inside rectangle zone",
+      "budget_px": 395,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "s_snapt",
+      "text": "saved state @ t3",
+      "translation": "состояние @ t3",
+      "where": "free text inside rectangle s_snap",
+      "budget_px": 117,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "s_crasht",
+      "text": "CRASH",
+      "translation": "СБОЙ",
+      "where": "free text inside rectangle s_crash",
+      "budget_px": 53,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "s_nextt",
+      "text": "continue @ t4",
+      "translation": "продолжение @ t4",
+      "where": "free text inside rectangle s_next",
+      "budget_px": 117,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "s_note",
+      "text": "resume = load state, skip straight ahead.\n+ fast resume; direct continuation of complex state\n−  hides causal history unless paired with good logs",
+      "translation": "продолжение = загрузить состояние и идти дальше.\n+ быстрый старт; прямое продолжение сложного состояния\n−  скрывает причинность без хороших логов",
+      "where": "free text inside rectangle zone",
+      "budget_px": 395,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "choose",
+      "text": "Choose by need: exact reproducibility & audit  →  replay.\nFast continuation of heavy state  →  snapshot. Many systems blend both.",
+      "translation": "Выбор по задаче: точная воспроизводимость и аудит  →  воспроизведение.\nБыстрое продолжение тяжёлого состояния  →  снимок. Многие системы сочетают оба.",
+      "where": "free text inside rectangle zone",
+      "budget_px": 819,
+      "budget_chars_per_line": 113
+    },
+    {
+      "id": "lbl_example",
+      "text": "EXAMPLE  ·  REPLAY (TEMPORAL) — DETERMINISM CONSTRAINT",
+      "translation": "ПРИМЕР  ·  ВОСПРОИЗВЕДЕНИЕ (TEMPORAL) — ОГРАНИЧЕНИЕ ДЕТЕРМИНИЗМА",
+      "where": "free text"
+    },
+    {
+      "id": "ev_red",
+      "text": "# replayed code must be deterministic\nresult = random.choice(opts)   # breaks replay",
+      "translation": "# воспроизводимый код должен быть детерминированным\nresult = random.choice(opts)   # ломает воспроизведение",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "ev_grn",
+      "text": "# record the nondeterministic call as an event, then replay it\nresult = await workflow.execute_activity(pick_option, opts)",
+      "translation": "# запишите недетерминированный вызов как событие и воспроизводите его\nresult = await workflow.execute_activity(pick_option, opts)",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "footer",
+      "text": "Appears in: ch 6      ·      — Eric Allam, Trigger.dev · corpus video #666",
+      "translation": "Встречается в главе 6      ·      — Эрик Аллам, Trigger.dev · видео корпуса #666",
+      "where": "free text"
+    }
+  ]
+}

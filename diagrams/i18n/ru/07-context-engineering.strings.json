@@ -1,0 +1,122 @@
+{
+  "source": "diagrams/concepts/07-context-engineering.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "ce_eyebrow",
+      "text": "CONCEPT 07",
+      "translation": "ПОНЯТИЕ 07",
+      "where": "free text"
+    },
+    {
+      "id": "ce_name",
+      "text": "Context Engineering",
+      "translation": "Инженерия контекста",
+      "where": "free text"
+    },
+    {
+      "id": "ce_definition",
+      "text": "Deciding what an AI system sees — in what form, at what moment, at what cost.",
+      "translation": "Решать, что видит ИИ-система: в какой форме, в какой момент и какой ценой.",
+      "where": "free text"
+    },
+    {
+      "id": "ce_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "ce_naive_lbl",
+      "text": "NAIVE — stuff everything",
+      "translation": "НАИВНО — запихнуть всё",
+      "where": "free text inside rectangle ce_zone",
+      "budget_px": 787,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "ce_naive_txt",
+      "text": "all docs   all tools\nfull history   raw logs\nevery API   stale memory\n        |\n        v\n  context window\n  (overloaded)",
+      "translation": "все документы   все инструменты\nвся история   сырые логи\nкаждый API   старая память\n        |\n        v\n  окно контекста\n  (перегружено)",
+      "where": "free text inside rectangle ce_naive_box",
+      "budget_px": 260,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "ce_naive_out",
+      "text": "→ confident, fluent, wrong",
+      "translation": "→ уверенно, гладко, неверно",
+      "where": "free text inside rectangle ce_naive_box",
+      "budget_px": 260,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "ce_eng_lbl",
+      "text": "ENGINEERED — typed, ranked, budgeted",
+      "translation": "ПРОДУМАННО — типизировано, ранжировано, в бюджете",
+      "where": "free text inside rectangle ce_zone",
+      "budget_px": 423,
+      "budget_chars_per_line": 58
+    },
+    {
+      "id": "ce_layer1_t",
+      "text": "instructions  ·  task framing",
+      "translation": "инструкции  ·  постановка задачи",
+      "where": "free text inside rectangle ce_layer1",
+      "budget_px": 345,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "ce_layer2_t",
+      "text": "ranked evidence  ·  retrieved + scored",
+      "translation": "ранжированные источники  ·  найдено и оценено",
+      "where": "free text inside rectangle ce_layer2",
+      "budget_px": 345,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "ce_layer3_t",
+      "text": "tools  ·  progressively discovered",
+      "translation": "инструменты  ·  постепенное обнаружение",
+      "where": "free text inside rectangle ce_layer3",
+      "budget_px": 345,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "ce_layer4_t",
+      "text": "state + memory  ·  summarized, fresh",
+      "translation": "состояние + память  ·  сжато, свежо",
+      "where": "free text inside rectangle ce_layer4",
+      "budget_px": 345,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "ce_eng_out",
+      "text": "→ a working set the model can actually trust",
+      "translation": "→ рабочий набор, которому модель может доверять",
+      "where": "free text inside rectangle ce_eng_box",
+      "budget_px": 375,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "ce_lbl_example",
+      "text": "EXAMPLE",
+      "translation": "ПРИМЕР",
+      "where": "free text"
+    },
+    {
+      "id": "ce_evidence_txt",
+      "text": "# progressive tool discovery — narrow the surface before the catalog\ndef assemble_context(task):\n    tools = registry.match(intent=task.intent, limit=8)   # not all 200\n    docs  = retriever.rank(task.query)[:5]                # top-5, scored\n    return ContextSet(instructions=task.spec, tools=tools, evidence=docs,\n                      budget_tokens=12_000)               # budget is a guarantee",
+      "translation": "# постепенное обнаружение инструментов — сначала сузить, потом каталог\ndef assemble_context(task):\n    tools = registry.match(intent=task.intent, limit=8)   # не все 200\n    docs  = retriever.rank(task.query)[:5]                # топ-5, с оценкой\n    return ContextSet(instructions=task.spec, tools=tools, evidence=docs,\n                      budget_tokens=12_000)               # бюджет — это гарантия",
+      "where": "free text inside rectangle ce_evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "ce_footer",
+      "text": "Appears in: ch 4, ch 5      ·      “MCP = Mega Context Problem” — Matt Carey · corpus video #622",
+      "translation": "Встречается в главах 4, 5      ·      «MCP = мегапроблема контекста» — Мэтт Кэри · видео корпуса #622",
+      "where": "free text"
+    }
+  ]
+}

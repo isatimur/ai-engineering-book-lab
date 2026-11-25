@@ -1,0 +1,258 @@
+{
+  "source": "04-theme-corpus-map.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "t_title",
+      "text": "Theme & Corpus Map",
+      "translation": "Карта тем и корпуса",
+      "where": "free text"
+    },
+    {
+      "id": "t_sub",
+      "text": "What 1,468 videos are actually about — and where From Copilot to Colleague draws from",
+      "translation": "О чём на самом деле 1 468 видео — и откуда черпает книга «От напарника к коллеге»",
+      "where": "free text"
+    },
+    {
+      "id": "corpus_n",
+      "text": "1,468",
+      "translation": "1 468",
+      "where": "free text inside rectangle corpus",
+      "budget_px": 170,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "corpus_l",
+      "text": "videos in the\nAI Engineer\nYouTube corpus",
+      "translation": "видео в корпусе\nYouTube-канала\nAI Engineer",
+      "where": "free text inside rectangle corpus",
+      "budget_px": 170,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "sw_blue_t",
+      "text": "Scaffolding  (ch 3-7)",
+      "translation": "Обвязка  (гл. 3–7)",
+      "where": "free text"
+    },
+    {
+      "id": "sw_yel_t",
+      "text": "Stress-test  (ch 8)",
+      "translation": "Стресс-тест (гл. 8)",
+      "where": "free text"
+    },
+    {
+      "id": "sw_grn_t",
+      "text": "Widening  (ch 9-10)",
+      "translation": "Расширение (гл. 9–10)",
+      "where": "free text"
+    },
+    {
+      "id": "sw_gry_t",
+      "text": "Background — deliberately no chapter",
+      "translation": "Фон — намеренно без главы",
+      "where": "free text"
+    },
+    {
+      "id": "chart_note",
+      "text": "Each bar = videos carrying that theme tag. Videos carry several tags, so the counts exceed 1,468.",
+      "translation": "Столбец = видео с этим тегом темы. У видео несколько тегов, поэтому сумма больше 1 468.",
+      "where": "free text"
+    },
+    {
+      "id": "nm1",
+      "text": "Coding Agents",
+      "translation": "Агенты для кода",
+      "where": "free text"
+    },
+    {
+      "id": "ct1",
+      "text": "944",
+      "translation": "944",
+      "where": "free text"
+    },
+    {
+      "id": "nm2",
+      "text": "Evals & Reliability",
+      "translation": "Оценки и надёжность",
+      "where": "free text"
+    },
+    {
+      "id": "ct2",
+      "text": "838",
+      "translation": "838",
+      "where": "free text"
+    },
+    {
+      "id": "nm3",
+      "text": "Agent Architecture",
+      "translation": "Архитектура агентов",
+      "where": "free text"
+    },
+    {
+      "id": "ct3",
+      "text": "834",
+      "translation": "834",
+      "where": "free text"
+    },
+    {
+      "id": "nm4",
+      "text": "Org Design & Leadership",
+      "translation": "Оргдизайн и лидерство",
+      "where": "free text"
+    },
+    {
+      "id": "ct4",
+      "text": "243",
+      "translation": "243",
+      "where": "free text"
+    },
+    {
+      "id": "nm5",
+      "text": "MCP & Tooling",
+      "translation": "MCP и инструменты",
+      "where": "free text"
+    },
+    {
+      "id": "ct5",
+      "text": "178",
+      "translation": "178",
+      "where": "free text"
+    },
+    {
+      "id": "nm6",
+      "text": "RAG & Retrieval",
+      "translation": "RAG и поиск",
+      "where": "free text"
+    },
+    {
+      "id": "ct6",
+      "text": "172",
+      "translation": "172",
+      "where": "free text"
+    },
+    {
+      "id": "nm7",
+      "text": "Models & Inference",
+      "translation": "Модели и инференс",
+      "where": "free text"
+    },
+    {
+      "id": "ct7",
+      "text": "134",
+      "translation": "134",
+      "where": "free text"
+    },
+    {
+      "id": "nm8",
+      "text": "Voice & Realtime",
+      "translation": "Голос и реальное время",
+      "where": "free text"
+    },
+    {
+      "id": "ct8",
+      "text": "54",
+      "translation": "54",
+      "where": "free text"
+    },
+    {
+      "id": "nm9",
+      "text": "Security & Guardrails",
+      "translation": "Безопасность и ограничители",
+      "where": "free text"
+    },
+    {
+      "id": "ct9",
+      "text": "26",
+      "translation": "26",
+      "where": "free text"
+    },
+    {
+      "id": "nm10",
+      "text": "General AI Engineering",
+      "translation": "Общая ИИ-инженерия",
+      "where": "free text"
+    },
+    {
+      "id": "ct10",
+      "text": "5",
+      "translation": "5",
+      "where": "free text"
+    },
+    {
+      "id": "cl1",
+      "text": "Chapter 3 · Harnesses, Specs & Codebases",
+      "translation": "Глава 3 · Обвязки, спецификации и код",
+      "where": "free text"
+    },
+    {
+      "id": "cl2",
+      "text": "Chapter 4 · Evals Are the Control System",
+      "translation": "Глава 4 · Оценки — это система управления",
+      "where": "free text"
+    },
+    {
+      "id": "cl3",
+      "text": "Chapter 6 · Runtimes, State & Control Plane",
+      "translation": "Глава 6 · Среда исполнения, состояние и контроль",
+      "where": "free text"
+    },
+    {
+      "id": "cl4",
+      "text": "Chapter 9 · The AI-Native Organization",
+      "translation": "Глава 9 · ИИ-нативная организация",
+      "where": "free text"
+    },
+    {
+      "id": "cl5",
+      "text": "Chapter 7 · Security, Identity & Trust",
+      "translation": "Глава 7 · Безопасность, идентичность и доверие",
+      "where": "free text"
+    },
+    {
+      "id": "cl6",
+      "text": "Chapter 5 · Context Is Infrastructure",
+      "translation": "Глава 5 · Контекст — это инфраструктура",
+      "where": "free text"
+    },
+    {
+      "id": "cl7",
+      "text": "Background — not a book chapter (by design)",
+      "translation": "Фон — не глава книги (так задумано)",
+      "where": "free text"
+    },
+    {
+      "id": "cl8",
+      "text": "Chapter 8 · Realtime, Voice,\nand the Cost of Being Interruptible",
+      "translation": "Глава 8 · Реальное время, голос\nи цена перебивания",
+      "where": "free text"
+    },
+    {
+      "id": "cl9",
+      "text": "Chapter 7 · Security, Identity & Trust",
+      "translation": "Глава 7 · Безопасность, идентичность и доверие",
+      "where": "free text"
+    },
+    {
+      "id": "cl10",
+      "text": "Background — not a book chapter (by design)",
+      "translation": "Фон — не глава книги (так задумано)",
+      "where": "free text"
+    },
+    {
+      "id": "concepts_h",
+      "text": "THE SYNTHESIS LAYER  —  18 concepts distilled across the themes",
+      "translation": "СЛОЙ СИНТЕЗА  —  18 понятий, выделенных из тем",
+      "where": "free text"
+    },
+    {
+      "id": "concepts_t",
+      "text": "Agentic Product Design  ·  Agent Observability  ·  Agent Runtime: Replay vs Snapshot  ·  AI-Native Organization\nCoding Evals  ·  Constrained Delegation  ·  Context Engineering  ·  Durable Agents  ·  GraphRAG\nHarness Engineering  ·  Hierarchical Memory  ·  Human Control Plane  ·  Model Context Protocol  ·  One-Shot AI Failure\nSoftware Factory  ·  Spec-Driven Development  ·  Vibe Coding  ·  Voice Agents",
+      "translation": "Агентный дизайн продукта  ·  Наблюдаемость агентов  ·  Среда исполнения: воспроизведение или снимок  ·  ИИ-нативная организация\nОценки для кода  ·  Ограниченное делегирование  ·  Инженерия контекста  ·  Надёжные агенты  ·  GraphRAG\nИнженерия обвязки  ·  Иерархическая память  ·  Контур контроля человека  ·  Model Context Protocol  ·  Провал ИИ с первой попытки\nФабрика ПО  ·  Разработка по спецификации  ·  Вайб-кодинг  ·  Голосовые агенты",
+      "where": "bound to rectangle concepts_band (wraps)",
+      "budget_px": 1310,
+      "budget_chars_per_line": 145
+    }
+  ]
+}

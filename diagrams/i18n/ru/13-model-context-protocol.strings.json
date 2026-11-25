@@ -1,0 +1,170 @@
+{
+  "source": "diagrams/concepts/13-model-context-protocol.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "mcp_eyebrow",
+      "text": "CONCEPT  ·  13",
+      "translation": "ПОНЯТИЕ  ·  13",
+      "where": "free text"
+    },
+    {
+      "id": "mcp_name",
+      "text": "Model Context Protocol",
+      "translation": "Model Context Protocol",
+      "where": "free text"
+    },
+    {
+      "id": "mcp_definition",
+      "text": "A standardized contract for exposing tools and data to models — not ad hoc per-app wiring.",
+      "translation": "Единый контракт, дающий моделям инструменты и данные, — без проводки под каждое приложение.",
+      "where": "free text"
+    },
+    {
+      "id": "mcp_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "mcp_before_lbl",
+      "text": "WITHOUT — N x M custom integrations",
+      "translation": "БЕЗ MCP — N x M самодельных интеграций",
+      "where": "free text inside rectangle mcp_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "mcp_b_a1_t",
+      "text": "App A",
+      "translation": "Сервис A",
+      "where": "free text inside rectangle mcp_b_a1",
+      "budget_px": 70,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "mcp_b_a2_t",
+      "text": "App B",
+      "translation": "Сервис B",
+      "where": "free text inside rectangle mcp_b_a2",
+      "budget_px": 70,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "mcp_b_a3_t",
+      "text": "App C",
+      "translation": "Сервис C",
+      "where": "free text inside rectangle mcp_b_a3",
+      "budget_px": 70,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "mcp_b_t1_t",
+      "text": "GitHub",
+      "translation": "GitHub",
+      "where": "free text inside rectangle mcp_b_t1",
+      "budget_px": 70,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "mcp_b_t2_t",
+      "text": "Postgres",
+      "translation": "Postgres",
+      "where": "free text inside rectangle mcp_b_t2",
+      "budget_px": 70,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "mcp_b_t3_t",
+      "text": "Slack",
+      "translation": "Slack",
+      "where": "free text inside rectangle mcp_b_t3",
+      "budget_px": 70,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "mcp_arrow_lbl",
+      "text": "MCP",
+      "translation": "MCP",
+      "where": "free text inside rectangle mcp_zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 103
+    },
+    {
+      "id": "mcp_after_lbl",
+      "text": "WITH — one contract, any client",
+      "translation": "С MCP — один контракт, любой клиент",
+      "where": "free text inside rectangle mcp_zone",
+      "budget_px": 425,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "mcp_a_app_t",
+      "text": "Any model",
+      "translation": "Любая модель",
+      "where": "free text inside rectangle mcp_a_app",
+      "budget_px": 80,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "mcp_a_gw_t",
+      "text": "MCP server",
+      "translation": "MCP-сервер",
+      "where": "free text inside rectangle mcp_a_gw",
+      "budget_px": 90,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "mcp_a_r1_t",
+      "text": "tools",
+      "translation": "инструменты",
+      "where": "free text inside rectangle mcp_a_r1",
+      "budget_px": 90,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "mcp_a_r2_t",
+      "text": "resources",
+      "translation": "ресурсы",
+      "where": "free text inside rectangle mcp_a_r2",
+      "budget_px": 90,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "mcp_a_r3_t",
+      "text": "prompts",
+      "translation": "промпты",
+      "where": "free text inside rectangle mcp_a_r3",
+      "budget_px": 90,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "mcp_caption",
+      "text": "Late-corpus twist: standardizing the doorway does not make the room safe.\nNaive MCP dumps every endpoint into context — a mega-context problem.",
+      "translation": "Поздний поворот корпуса: стандартная дверь не делает комнату безопасной.\nНаивный MCP сваливает в контекст все конечные точки — и контекст разбухает.",
+      "where": "free text inside rectangle mcp_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "mcp_lbl_example",
+      "text": "EXAMPLE  ·  a tool declared once, callable by any client",
+      "translation": "ПРИМЕР  ·  инструмент объявлен один раз, вызывается любым клиентом",
+      "where": "free text"
+    },
+    {
+      "id": "mcp_evidence_code",
+      "text": "{ \"tools\": [{                                        # MCP tool contract\n    \"name\": \"search_issues\",\n    \"description\": \"Find GitHub issues by query\",\n    \"inputSchema\": { \"query\": \"string\", \"repo\": \"string\" }\n}] }",
+      "translation": "{ \"tools\": [{                                        # контракт инструмента MCP\n    \"name\": \"search_issues\",\n    \"description\": \"Find GitHub issues by query\",\n    \"inputSchema\": { \"query\": \"string\", \"repo\": \"string\" }\n}] }",
+      "where": "free text inside rectangle mcp_evidence",
+      "budget_px": 797,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "mcp_footer",
+      "text": "Appears in: ch 5, ch 7      ·      — David Soria Parra, Anthropic · corpus video #12",
+      "translation": "Встречается в главах 5, 7      ·      — Дэвид Сория Парра, Anthropic · видео корпуса #12",
+      "where": "free text"
+    }
+  ]
+}

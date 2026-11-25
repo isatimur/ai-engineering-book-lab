@@ -1,0 +1,286 @@
+{
+  "source": "01-book-argument-spine.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "t_title",
+      "text": "From Copilot to Colleague",
+      "translation": "От напарника к коллеге",
+      "where": "free text"
+    },
+    {
+      "id": "t_sub",
+      "text": "The book's argument as a 10-chapter dependency arc",
+      "translation": "Аргумент книги как дуга из 10 зависимых глав",
+      "where": "free text"
+    },
+    {
+      "id": "t_q",
+      "text": "Central question — what must be true before software teams can trust AI to act?",
+      "translation": "Главный вопрос — что должно быть верно, прежде чем команды разработки доверят ИИ действовать?",
+      "where": "free text"
+    },
+    {
+      "id": "eb_a1",
+      "text": "ACT I",
+      "translation": "АКТ I",
+      "where": "free text inside rectangle room_a1",
+      "budget_px": 273,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "ti_a1",
+      "text": "The Problem",
+      "translation": "Проблема",
+      "where": "free text inside rectangle room_a1",
+      "budget_px": 273,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "fn_a1",
+      "text": "Define the real shift —\nand the enduring human role.",
+      "translation": "Определить настоящий сдвиг —\nи неизменную роль человека.",
+      "where": "free text inside rectangle room_a1",
+      "budget_px": 273,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "ch1",
+      "text": "Ch 1 · The Shift —\nFrom Assistant to Delegate",
+      "translation": "Гл. 1 · Сдвиг —\nот ассистента к исполнителю",
+      "where": "free text inside rectangle room_a1",
+      "budget_px": 273,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "ch2",
+      "text": "Ch 2 · Taste Still Matters\nWhen Code Gets Cheap",
+      "translation": "Гл. 2 · Вкус важен,\nдаже когда код дёшев",
+      "where": "free text inside rectangle room_a1",
+      "budget_px": 273,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "eb_a2",
+      "text": "ACT II · THE HERO",
+      "translation": "АКТ II · ГЛАВНЫЙ ГЕРОЙ",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 78
+    },
+    {
+      "id": "ti_a2",
+      "text": "The Scaffolding Stack",
+      "translation": "Стек обвязки",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "fn_a2",
+      "text": "The technical systems that make delegated machine work dependable.",
+      "translation": "Технические системы, которые делают делегированную машинную работу надёжной.",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 78
+    },
+    {
+      "id": "ch3",
+      "text": "Ch 3 · Harnesses, Specs & Codebases Agents Can Use",
+      "translation": "Гл. 3 · Обвязки, спецификации и код для агентов",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "ch3d",
+      "text": "Prepare the environment agents operate in.",
+      "translation": "Подготовить среду, в которой работают агенты.",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "ch4",
+      "text": "Ch 4 · Evals Are the Control System",
+      "translation": "Гл. 4 · Оценки — это система управления",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "ch4d",
+      "text": "Turn trust into continuous measurement.",
+      "translation": "Превратить доверие в постоянное измерение.",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "ch5",
+      "text": "Ch 5 · Context Is Infrastructure",
+      "translation": "Гл. 5 · Контекст — это инфраструктура",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "ch5d",
+      "text": "Retrieval and memory as infrastructure layers.",
+      "translation": "Поиск и память как слои инфраструктуры.",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "ch6",
+      "text": "Ch 6 · Runtimes, State & the Human Control Plane",
+      "translation": "Гл. 6 · Среда исполнения, состояние и контроль человека",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "ch6d",
+      "text": "Durable execution for long-running agents.",
+      "translation": "Надёжное исполнение для долгих агентов.",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "ch7",
+      "text": "Ch 7 · Security, Identity & High-Stakes Trust",
+      "translation": "Гл. 7 · Безопасность, идентичность, доверие при высоких ставках",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "ch7d",
+      "text": "The governance cost once systems can act.",
+      "translation": "Цена управления, когда системы могут действовать.",
+      "where": "free text inside rectangle room_a2",
+      "budget_px": 611,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "eb_a3",
+      "text": "ACT III",
+      "translation": "АКТ III",
+      "where": "free text inside rectangle room_a3",
+      "budget_px": 223,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "ti_a3",
+      "text": "The Stress Test",
+      "translation": "Стресс-тест",
+      "where": "free text inside rectangle room_a3",
+      "budget_px": 223,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "fn_a3",
+      "text": "Push the framework\nto its hardest edges.",
+      "translation": "Проверить подход\nв самых жёстких условиях.",
+      "where": "free text inside rectangle room_a3",
+      "budget_px": 223,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "ch8",
+      "text": "Ch 8 · Realtime,\nVoice & the Cost\nof Being Interruptible",
+      "translation": "Гл. 8 · Реальное время,\nголос и цена\nперебивания",
+      "where": "free text inside rectangle room_a3",
+      "budget_px": 223,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "ch8d",
+      "text": "Voice and streaming prove\nthe framework generalizes\nbeyond text.",
+      "translation": "Голос и потоковая передача\nдоказывают, что подход\nработает не только с текстом.",
+      "where": "free text inside rectangle room_a3",
+      "budget_px": 223,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "eb_a4",
+      "text": "ACT IV",
+      "translation": "АКТ IV",
+      "where": "free text inside rectangle room_a4",
+      "budget_px": 311,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "ti_a4",
+      "text": "The Widening",
+      "translation": "Расширение",
+      "where": "free text inside rectangle room_a4",
+      "budget_px": 311,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "fn_a4",
+      "text": "From systems design to\norganizations and durable truths.",
+      "translation": "От проектирования систем\nк организациям и надёжным истинам.",
+      "where": "free text inside rectangle room_a4",
+      "budget_px": 311,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "ch9",
+      "text": "Ch 9 · The AI-Native\nOrganization",
+      "translation": "Гл. 9 · ИИ-нативная\nорганизация",
+      "where": "free text inside rectangle room_a4",
+      "budget_px": 311,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch10",
+      "text": "Ch 10 · What Endures",
+      "translation": "Гл. 10 · Что остаётся",
+      "where": "free text inside rectangle room_a4",
+      "budget_px": 311,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch10d",
+      "text": "Portable principles that\nsurvive tool churn.",
+      "translation": "Переносимые принципы, которые\nпереживут смену инструментов.",
+      "where": "free text inside rectangle room_a4",
+      "budget_px": 311,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "tl_label",
+      "text": "THE THROUGHLINE",
+      "translation": "СКВОЗНАЯ ЛИНИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "tl_poss_t",
+      "text": "Models create possibility",
+      "translation": "Модели создают\nвозможность",
+      "where": "bound to ellipse tl_poss (wraps)",
+      "budget_px": 216,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "tl_trust_t",
+      "text": "Scaffolding creates trust",
+      "translation": "Обвязка создаёт доверие",
+      "where": "bound to ellipse tl_trust (wraps)",
+      "budget_px": 230,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "tl_comp_t",
+      "text": "Organizations decide\nwhether trust compounds",
+      "translation": "Организации решают,\nкопится ли доверие",
+      "where": "bound to ellipse tl_comp (wraps)",
+      "budget_px": 287,
+      "budget_chars_per_line": 29
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "source": "diagrams/concepts/18-voice-agents.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "va_eyebrow",
+      "text": "CONCEPT  ·  18",
+      "translation": "ПОНЯТИЕ  ·  18",
+      "where": "free text"
+    },
+    {
+      "id": "va_name",
+      "text": "Voice Agents",
+      "translation": "Голосовые агенты",
+      "where": "free text"
+    },
+    {
+      "id": "va_definition",
+      "text": "AI systems that converse by speech — a realtime control loop where\ndelay, overlap, and tools all show.",
+      "translation": "ИИ-системы, которые говорят голосом, — контур реального времени,\nгде видны задержки, наложения и инструменты.",
+      "where": "free text"
+    },
+    {
+      "id": "va_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "va_loop_lbl",
+      "text": "THE REALTIME LOOP — every hop spends the latency budget",
+      "translation": "ЦИКЛ РЕАЛЬНОГО ВРЕМЕНИ — каждый шаг тратит бюджет задержки",
+      "where": "free text inside rectangle va_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "va_asr_t",
+      "text": "Listen\nASR + endpoint",
+      "translation": "Слушать\nASR + конец речи",
+      "where": "free text inside rectangle va_asr",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "va_model_t",
+      "text": "Decide\nmodel reasoning",
+      "translation": "Решать\nмодель думает",
+      "where": "free text inside rectangle va_model",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "va_tool_t",
+      "text": "Tool call\nhidden bottleneck",
+      "translation": "Инструмент\nскрытый тормоз",
+      "where": "free text inside rectangle va_tool",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "va_tts_t",
+      "text": "Speak\nstreaming TTS",
+      "translation": "Говорить\nпотоковый TTS",
+      "where": "free text inside rectangle va_tts",
+      "budget_px": 120,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "va_user_t",
+      "text": "user hears",
+      "translation": "человек\nслышит",
+      "where": "free text inside rectangle va_user",
+      "budget_px": 90,
+      "budget_chars_per_line": 12
+    },
+    {
+      "id": "va_turnloop_t",
+      "text": "turn-taking · interruption · backchannel",
+      "translation": "очерёдность реплик · перебивание · поддакивание",
+      "where": "free text inside rectangle va_zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 122
+    },
+    {
+      "id": "va_caption",
+      "text": "Text chat hides latency, awkward pauses, and weak state behind a forgiving UI.\nVoice does not — delay feels broken, interruption feels rude. The hard part is not\nadding ASR + TTS; it is coordinating the loop in realtime. A proven text agent\ncan often be wrapped with a dedicated voice layer instead of rebuilt end-to-end.",
+      "translation": "Текстовый чат прячет задержки, неловкие паузы и слабое состояние за терпимым интерфейсом.\nГолос — нет: задержка кажется поломкой, перебивание — грубостью. Трудно не добавить\nASR + TTS, а согласовать цикл в реальном времени. Проверенного текстового агента\nчасто можно обернуть отдельным голосовым слоем, а не перестраивать целиком.",
+      "where": "free text inside rectangle va_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "va_lbl_example",
+      "text": "EXAMPLE  ·  a turn budget — under ~800 ms feels alive",
+      "translation": "ПРИМЕР  ·  бюджет реплики — до ~800 мс ощущается живым",
+      "where": "free text"
+    },
+    {
+      "id": "va_ev",
+      "text": "latency budget per turn        target  <= 800 ms total\n  ASR + endpointing ......... ~120 ms\n  model reasoning ........... ~250 ms\n  tool call ................. ~330 ms   <- often the slowest hop\n  TTS first-audio ........... ~100 ms",
+      "translation": "бюджет задержки на реплику     цель  <= 800 мс всего\n  ASR + конец речи .......... ~120 мс\n  рассуждение модели ........ ~250 мс\n  вызов инструмента ......... ~330 мс   <- часто самый медленный шаг\n  первый звук TTS ........... ~100 мс",
+      "where": "free text inside rectangle va_evidence",
+      "budget_px": 797,
+      "budget_chars_per_line": 120
+    },
+    {
+      "id": "va_footer",
+      "text": "Appears in: ch 8      ·      — Dr. Tom Shapland, LiveKit · corpus video #146",
+      "translation": "Встречается в главе 8      ·      — д-р Том Шапленд, LiveKit · видео корпуса #146",
+      "where": "free text"
+    }
+  ]
+}
