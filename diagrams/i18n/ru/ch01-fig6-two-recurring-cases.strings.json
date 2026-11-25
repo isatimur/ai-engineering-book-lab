@@ -23,7 +23,7 @@
     {
       "id": "g12100",
       "text": "SOFTWARE FACTORY",
-      "translation": "ФАБРИКА СОФТА",
+      "translation": "ФАБРИКА ПО",
       "where": "free text inside rectangle g12097",
       "budget_px": 400,
       "budget_chars_per_line": 39
@@ -87,7 +87,7 @@
     {
       "id": "g12136",
       "text": "HIGH-STAKES COLLEAGUE",
-      "translation": "КОЛЛЕГА ДЛЯ ВЫСОКИХ СТАВОК",
+      "translation": "КОЛЛЕГА ПРИ ВЫСОКИХ СТАВКАХ",
       "where": "free text inside rectangle g12133",
       "budget_px": 400,
       "budget_chars_per_line": 39

@@ -26,6 +26,8 @@ import { postcardFor } from '../data/figurePostcards';
 import { useTextOnlyMode } from '../hooks/useTextOnlyMode';
 import { MobileReaderBar } from '../components/nav/MobileReaderBar';
 import { MobileChapterChoice } from '../components/nav/MobileChapterChoice';
+import { LangSwitch } from '../components/nav/LangSwitch';
+import { hasRu, ruChapterPath } from '../data/bookChaptersRu';
 
 const EvidenceExhibit = ({ chapter, title }: { chapter: string; title: string }) => {
   const op = opener(chapter);
@@ -74,6 +76,7 @@ export const ChapterDetail = () => {
   const op = opener(chapter.number);
   const video = chapterVideoFor(chapter.slug);
   const postcard = postcardFor('book1', chapter.number);
+  const ru = hasRu(chapter) ? ruChapterPath(chapter) : undefined;
 
   const startTextReading = () => {
     setTextOnlyMode(true);
@@ -91,6 +94,7 @@ export const ChapterDetail = () => {
         image={video ? video.poster : ogCardPath(chapter)}
         type="article"
         video={video ? { url: video.src, width: video.width, height: video.height } : undefined}
+        alternates={ru ? [{ hrefLang: 'en', path: chapterPath(chapter) }, { hrefLang: 'ru', path: ru }] : undefined}
       />
       <JsonLd
         data={[
@@ -113,6 +117,7 @@ export const ChapterDetail = () => {
               {textOnly ? 'Text only ✓' : 'Focus text'}
             </button>
             <Link to="/visual-guide" className="hover:text-[var(--color-ink)]">Visual Guide</Link>
+            <LangSwitch en={chapterPath(chapter)} ru={ru} current="en" />
           </div>
         </header>
 

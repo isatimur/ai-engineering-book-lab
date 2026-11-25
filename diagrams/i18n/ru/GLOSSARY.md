@@ -70,6 +70,34 @@ Use one Russian term for each book term in every figure. Prefer a plain Russian 
 | back-channeling | поддакивание | |
 | constrained delegation | ограниченное делегирование | |
 | what endures | что остаётся | |
+| Software Factory (case) | Фабрика ПО | not «фабрика софта» |
+| High-Stakes Colleague (case) | Коллега при высоких ставках | not «для высоких ставок» |
+| Meridian / Hargrove (case firms) | «Меридиан» / «Харгроув» | Cyrillic, in quotes |
+| Practical checklist / Closing move (headings) | Практический чек-лист / Итог | |
+| legible / legibility | понятный / понятность | of a repository |
+| agent-ready | готовый для агентов | |
+| spec-driven development | разработка через спецификации | |
+| tacit judgment / externalize | неявное суждение / выносить наружу | |
+| slop era / war on slop | эпоха халтуры / война с халтурой | |
+| context engineering | контекстная инженерия | |
+| control plane (short) | контур контроля | |
+| blast radius | радиус поражения | |
+| sandbox | песочница | |
+| prompt injection | промпт-инъекция | |
+| overscoped authority | избыточные полномочия | |
+| turn-taking | очерёдность реплик | |
+| redaction | маскировка | |
+| roll-up | сводка, сводный | |
+| service tier / flex tier | тариф / гибкий тариф | |
+| rework rate | доля переделок | |
+| outcome (metric) | исход | |
+| coherence | согласованность | |
+| staff / senior engineer | ведущий / старший инженер | |
+| pull request / diff | пул-реквест / дифф | PR stays PR |
+| postmortem | разбор инцидента | |
+| golden patch | эталонный патч | |
+
+Names used in both text and figures: Джастин Рейок, Аканкша Чоудхери, Фил Хетцель, Гийом Вернад, Квиндла Крамер, Райан Лопополо, Ино Рейес, Эрик Закариассон, Мэгги Эпплтон, Дэн Шиппер.
 
 Product and company names, code and identifiers stay in English. Speaker names are transliterated (Joel Hron → Джоэл Хрон).
 

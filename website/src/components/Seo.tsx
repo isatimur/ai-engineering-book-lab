@@ -19,6 +19,10 @@ type SeoProps = {
   noindex?: boolean;
   /** Optional og:video block — pass when the page embeds a real, playable video (not a link to one). */
   video?: { url: string; width: number; height: number; type?: string };
+  /** Page language for <html lang>; omit for English. */
+  lang?: string;
+  /** Other-language versions of this page, emitted as hreflang alternates (include this page too). */
+  alternates?: { hrefLang: string; path: string }[];
 };
 
 // Assets are served on both domains; name them on the page's own domain.
@@ -37,6 +41,8 @@ export const Seo = ({
   type = 'website',
   noindex = false,
   video,
+  lang,
+  alternates,
 }: SeoProps) => {
   const url = publicUrl(path);
   const origin = new URL(url).origin;
@@ -46,7 +52,11 @@ export const Seo = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       {noindex ? <meta name="robots" content="noindex, follow" /> : null}
+      {lang ? <html lang={lang} /> : null}
       <link rel="canonical" href={url} />
+      {alternates?.map((a) => (
+        <link key={a.hrefLang} rel="alternate" hrefLang={a.hrefLang} href={publicUrl(a.path)} />
+      ))}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />

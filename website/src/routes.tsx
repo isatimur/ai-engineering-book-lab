@@ -10,6 +10,8 @@ import { Assess } from './pages/Assess';
 import { Enterprise } from './pages/Enterprise';
 import { Workshop } from './pages/Workshop';
 import { ChapterDetail } from './pages/ChapterDetail';
+import { RuChapterDetail, RuReader } from './pages/RuChapterDetail';
+import { ruChapters, ruChapterPath } from './data/bookChaptersRu';
 import { Books } from './pages/Books';
 import { Press } from './pages/Press';
 import { EvidenceGraphPage } from './pages/EvidenceGraphPage';
@@ -102,6 +104,13 @@ export const routes: RouteRecord[] = [
         path: 'read/:slug',
         element: <ChapterDetail />,
         getStaticPaths: () => chapters.map((c) => `read/${chapterParam(c)}`),
+      },
+      // Russian edition of Book 1 (chapters appear as content/ru/*.md lands).
+      { path: 'ru/read', element: <RuReader /> },
+      {
+        path: 'ru/read/:slug',
+        element: <RuChapterDetail />,
+        getStaticPaths: () => ruChapters.map((c) => ruChapterPath(c).slice(1)),
       },
       // Books 2 and 3 share one set of pages (pages/DraftBook*.tsx), bound to
       // each book in data/draftBooks.ts: chapters with figures, contents,
