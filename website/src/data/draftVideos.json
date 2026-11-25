@@ -1,0 +1,206 @@
+{
+  "book2": [
+    {
+      "chapterSlug": "the-turn-to-rl",
+      "src": "/video/book2/chapter-01-the-turn-to-rl.mp4",
+      "poster": "/video/book2/chapter-01-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Training and the Turn to RL\": Behavior is trained in, not prompted in. Includes Alessandro Cappelli (Adaptive ML)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "inference-economics",
+      "src": "/video/book2/chapter-02-inference-economics.mp4",
+      "poster": "/video/book2/chapter-02-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Inference Economics\": Inference is a recurring cost you pay on every request. Includes Kyle Kranen (NVIDIA)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "frontier-models",
+      "src": "/video/book2/chapter-03-frontier-models.mp4",
+      "poster": "/video/book2/chapter-03-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Building Frontier Models\": Stagnation is a training-budget story, not a ceiling. Includes Raia Hadsell (DeepMind)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "beyond-text",
+      "src": "/video/book2/chapter-04-beyond-text.mp4",
+      "poster": "/video/book2/chapter-04-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Beyond Text\": Model-building is one discipline, whatever the model outputs. Includes Samuel Humeau (Mistral)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "robotics",
+      "src": "/video/book2/chapter-05-robotics.mp4",
+      "poster": "/video/book2/chapter-05-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Robotics and the Physical World\": The bug is the system, not the policy. Includes Cormac Brick (Google)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "high-stakes-domains",
+      "src": "/video/book2/chapter-06-high-stakes-domains.mp4",
+      "poster": "/video/book2/chapter-06-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Regulated and High-Stakes Domains\": Not the technique, but the standard. Includes Anterior's quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "creative-and-games",
+      "src": "/video/book2/chapter-07-creative-and-games.mp4",
+      "poster": "/video/book2/chapter-07-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Creative, Education, and Games\": The system owns the truth, the model owns the words. Includes Quoraishee & Song (NYT)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "what-the-edges-teach",
+      "src": "/video/book2/chapter-08-what-the-edges-teach.mp4",
+      "poster": "/video/book2/chapter-08-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"What the Edges Teach\": The frontier consolidates. The lanes stay drawn. Includes Reed & Revere (SonderMind)'s quote, source-anchored to the claims ledger."
+    }
+  ],
+  "book3": [
+    {
+      "chapterSlug": "the-bottleneck-moved",
+      "src": "/video/book3/chapter-01-the-bottleneck-moved.mp4",
+      "poster": "/video/book3/chapter-01-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"The Bottleneck Moved\": Code generation was never the bottleneck. Includes Gabriel Spencer-Harper (Meticulous)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "intent-before-specification",
+      "src": "/video/book3/chapter-02-intent-before-specification.mp4",
+      "poster": "/video/book3/chapter-02-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Intent Before Specification\": A specification is an answer. Includes Kent C. Dodds (EpicProduct.engineer)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "what-a-specification-is-for",
+      "src": "/video/book3/chapter-03-what-a-specification-is-for.mp4",
+      "poster": "/video/book3/chapter-03-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"What a Specification Is For\": It is an alignment device before it is an input. Includes Sean Grove (OpenAI)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "decomposition-and-the-plan",
+      "src": "/video/book3/chapter-04-decomposition-and-the-plan.mp4",
+      "poster": "/video/book3/chapter-04-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Decomposition and the Plan\": Planning is compression of intent. Includes Dex Horthy (HumanLayer)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "execution-under-a-spec",
+      "src": "/video/book3/chapter-05-execution-under-a-spec.mp4",
+      "poster": "/video/book3/chapter-05-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Execution Under a Spec\": Permissions are specification, enforced. Includes Rustin Banks (Google)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "the-independence-problem",
+      "src": "/video/book3/chapter-06-the-independence-problem.mp4",
+      "poster": "/video/book3/chapter-06-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"The Independence Problem\": Make the check fail on purpose. Includes Tariq Shaukat (Sonar)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "gates-that-can-actually-fail",
+      "src": "/video/book3/chapter-07-gates-that-can-actually-fail.mp4",
+      "poster": "/video/book3/chapter-07-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Gates That Can Actually Fail\": A check never seen to fail is a hypothesis. Includes Sumaiya Shrabony's quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "shipping-and-the-gap-between-merged-and-live",
+      "src": "/video/book3/chapter-08-shipping-and-the-gap-between-merged-and-live.mp4",
+      "poster": "/video/book3/chapter-08-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Shipping, and the Gap Between Merged and Live\": What, specifically, tells you a change is live? Includes Harald Kirschner (VS Code)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "brownfield-and-spec-rot",
+      "src": "/video/book3/chapter-09-brownfield-and-spec-rot.mp4",
+      "poster": "/video/book3/chapter-09-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"Brownfield and Spec Rot\": A generated map is wrong only until the next run. Includes Denys Linkov (Wisedocs)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "the-review-wall",
+      "src": "/video/book3/chapter-10-the-review-wall.mp4",
+      "poster": "/video/book3/chapter-10-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"The Review Wall\": Slop is what happens when generation outruns judgment. Includes Tariq Shaukat (Sonar)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "the-factory-and-its-discontents",
+      "src": "/video/book3/chapter-11-the-factory-and-its-discontents.mp4",
+      "poster": "/video/book3/chapter-11-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"The Factory and Its Discontents\": Harness engineering is not enough. Includes Dex Horthy (HumanLayer)'s quote, source-anchored to the claims ledger."
+    },
+    {
+      "chapterSlug": "how-much-process-and-how-far-out-of-the-loop",
+      "src": "/video/book3/chapter-12-how-much-process-and-how-far-out-of-the-loop.mp4",
+      "poster": "/video/book3/chapter-12-poster.jpg",
+      "durationSeconds": 34,
+      "width": 1920,
+      "height": 1080,
+      "uploadDate": "2026-11-24",
+      "description": "A 34-second explainer of \"How Much Process, and How Far Out of the Loop\": From can I trust it to what am I giving up by not looking. Includes Geoffrey Litt (Notion)'s quote, source-anchored to the claims ledger."
+    }
+  ]
+}
