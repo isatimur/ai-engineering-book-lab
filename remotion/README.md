@@ -62,6 +62,24 @@ them. If a chapter title/promise changes in `website/src/data/bookChapters.ts`,
 update the mirrored copy in `src/ogcard/chapters.ts` (and `scripts/render-og-cards.mjs`)
 and re-render.
 
+### Books 2 and 3
+
+Each chapter explainer of the draft books is one spec file,
+`src/draft/specs/book{2,3}-NN.ts`, rendered by the shared template
+`src/draft/Explainer.tsx` (same ten beats and 1,005 frames as book 1).
+Every line comes from the chapter text; the quote is an evidence anchor's own
+words. Backdrops are text-free Higgsfield stills in `public/draft/`.
+
+```bash
+npm run check:explainers:draft     # quote vs. evidence anchor; lists trimmed lines
+npm run render:explainers:draft    # renders missing mp4s into ../website/public/video/book{2,3}/
+                                   # and writes ../website/src/data/draftVideos.json
+npm run render:explainers:draft -- Book3Chapter04 --force   # re-render one
+```
+
+On a Mac, set `REMOTION_BROWSER_EXECUTABLE="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`.
+The script passes `--gl=angle --concurrency=1`; expect about 6 minutes per video.
+
 This sandbox has `google-chrome-stable` preinstalled; `remotion.config.ts`
 points the renderer at it (`/usr/local/bin/google-chrome`) so no browser
 download is needed. On a machine without a preinstalled Chrome, delete that
