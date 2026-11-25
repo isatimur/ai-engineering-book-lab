@@ -32,6 +32,11 @@ the book *From Copilot to Colleague*. The only runnable application is the
 The Python scripts under `99_Meta/scripts/` (e.g. evidence/stats regeneration) are
 stdlib-only and require no pip install.
 
+## Book figures
+
+Draw or redraw any book figure with the `editorial-figure` skill
+([`.claude/skills/editorial-figure/SKILL.md`](.claude/skills/editorial-figure/SKILL.md)); Excalidraw is retired for book figures.
+
 ## Gates
 
 [`docs/GATES.md`](docs/GATES.md) lists every standing check, what it catches,

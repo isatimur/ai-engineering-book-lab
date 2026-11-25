@@ -41,6 +41,8 @@ dist/
 
 # Editor / tooling local state
 .vscode/
-.claude/
+# Local Claude state stays out; repo skills in .claude/skills/ are tracked.
+.claude/*
+!.claude/skills/
 .vercel
 .mash-agent-runs/

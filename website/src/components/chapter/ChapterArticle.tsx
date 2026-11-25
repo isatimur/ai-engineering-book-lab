@@ -2,6 +2,8 @@ import React from 'react';
 import { type BookChapter } from '../../data/bookChapters';
 import { MarkdownBlock } from '../text/MarkdownBlock';
 import { InlineIllustration } from './InlineIllustration';
+import { EditorialFigure } from '../figures/EditorialFigure';
+import { editorialFiguresFor } from '../../data/figures';
 import { ExpandableSummary } from './ExpandableSummary';
 import { EvidenceClaimMarkers } from '../evidence/EvidenceClaimMarkers';
 import { inlineFigsForChapter } from '../../lib/manifest';
@@ -24,6 +26,9 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
       : rawBlocks;
 
   const figs = inlineFigsForChapter(chapter.number);
+  // Chapters with editorial figures (data/figures) render those, at every
+  // width, in place of the PNGs; the sticky stage then skips them.
+  const editorial = editorialFiguresFor('book1', chapter.number);
   let headingFigureIndex = 0;
 
   // The practical checklist is a distinct utility section, not flowing prose —
@@ -51,10 +56,14 @@ export const ChapterArticle = ({ chapter }: { chapter: BookChapter }) => {
         {fig ? <span data-figure-anchor={fig.index} aria-hidden /> : null}
         <MarkdownBlock block={block} chapterNumber={chapter.number} listen={listen} />
         {fig ? (
-          <InlineIllustration
-            fig={fig}
-            label={`Figure ${chapter.number}.${figIndex + 1}`}
-          />
+          editorial[figIndex] ? (
+            <EditorialFigure fig={editorial[figIndex]} />
+          ) : (
+            <InlineIllustration
+              fig={fig}
+              label={`Figure ${chapter.number}.${figIndex + 1}`}
+            />
+          )
         ) : null}
       </React.Fragment>
     );

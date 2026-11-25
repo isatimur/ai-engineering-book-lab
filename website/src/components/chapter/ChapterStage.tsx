@@ -2,11 +2,14 @@ import { motion, AnimatePresence } from 'motion/react';
 import { type BookChapter } from '../../data/bookChapters';
 import { opener, inlineFigsForChapter } from '../../lib/manifest';
 import { useLightbox } from '../../lib/lightbox';
+import { editorialFigureFor } from '../../data/figures';
 
 type Stage = {
   src: string;
   title: string;
   label: string;
+  /** The 1-based figure index this stage belongs to; 0 for the opener. */
+  at: number;
 };
 
 type Props = {
@@ -30,20 +33,28 @@ export const ChapterStage = ({ chapter, activeIndex }: Props) => {
   const figs = inlineFigsForChapter(chapter.number);
   const { open } = useLightbox();
 
+  // A figure drawn as an editorial figure (data/figures) shows inline in the
+  // text column at every width, so the stage skips it and holds the last
+  // PNG stage (often the opener) while the reader passes it.
   const stages: Stage[] = [
     ...(op
-      ? [{ src: op.src, title: op.title, label: `FIG. ${chapter.number}.0 · OPENER` }]
+      ? [{ src: op.src, title: op.title, label: `FIG. ${chapter.number}.0 · OPENER`, at: 0 }]
       : []),
-    ...figs.map((f) => ({
-      src: f.src,
-      title: f.title,
-      label: `FIG. ${chapter.number}.${f.index}`,
-    })),
+    ...figs
+      .filter((f) => !editorialFigureFor('book1', chapter.number, f.index))
+      .map((f) => ({
+        src: f.src,
+        title: f.title,
+        label: `FIG. ${chapter.number}.${f.index}`,
+        at: f.index,
+      })),
   ];
 
   if (stages.length === 0) return null;
 
-  const activeStage = Math.min(Math.max(activeIndex + 1, 0), stages.length - 1);
+  // activeIndex is the 0-based index of the last figure anchor passed (-1: none).
+  const passed = activeIndex + 1;
+  const activeStage = stages.reduce((last, s, i) => (s.at <= passed ? i : last), 0);
   const current = stages[activeStage];
 
   return (
