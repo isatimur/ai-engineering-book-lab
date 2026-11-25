@@ -1,0 +1,178 @@
+{
+  "source": "diagrams/concepts/11-hierarchical-memory.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "hm_eyebrow",
+      "text": "CONCEPT 11",
+      "translation": "ПОНЯТИЕ 11",
+      "where": "free text"
+    },
+    {
+      "id": "hm_name",
+      "text": "Hierarchical Memory",
+      "translation": "Иерархическая память",
+      "where": "free text"
+    },
+    {
+      "id": "hm_definition",
+      "text": "Memory split into layers — each with its own lifetime and update rules.",
+      "translation": "Память разделена на слои — у каждого свой срок жизни и свои правила обновления.",
+      "where": "free text"
+    },
+    {
+      "id": "hm_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "hm_col_layer",
+      "text": "LAYER",
+      "translation": "СЛОЙ",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 779,
+      "budget_chars_per_line": 118
+    },
+    {
+      "id": "hm_col_life",
+      "text": "LIFETIME",
+      "translation": "СРОК ЖИЗНИ",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 505,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "hm_col_policy",
+      "text": "POLICY",
+      "translation": "ПРАВИЛО",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 305,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "hm_l1_t",
+      "text": "working context",
+      "translation": "рабочий контекст",
+      "where": "free text inside rectangle hm_l1",
+      "budget_px": 201,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "hm_l1_life",
+      "text": "this turn",
+      "translation": "этот шаг",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 505,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "hm_l1_pol",
+      "text": "discarded after the step",
+      "translation": "удаляется после шага",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 305,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "hm_l2_t",
+      "text": "session state",
+      "translation": "состояние сессии",
+      "where": "free text inside rectangle hm_l2",
+      "budget_px": 201,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "hm_l2_life",
+      "text": "this session",
+      "translation": "эта сессия",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 505,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "hm_l2_pol",
+      "text": "summarized on overflow",
+      "translation": "сжимается при переполнении",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 305,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "hm_l3_t",
+      "text": "project knowledge",
+      "translation": "знания о проекте",
+      "where": "free text inside rectangle hm_l3",
+      "budget_px": 201,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "hm_l3_life",
+      "text": "weeks–months",
+      "translation": "недели–месяцы",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 505,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "hm_l3_pol",
+      "text": "retrieved on demand",
+      "translation": "подгружается по запросу",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 305,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "hm_l4_t",
+      "text": "long-term prefs",
+      "translation": "долгосрочные предпочтения",
+      "where": "free text inside rectangle hm_l4",
+      "budget_px": 201,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "hm_l4_life",
+      "text": "durable",
+      "translation": "постоянно",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 505,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "hm_l4_pol",
+      "text": "updated on human confirm",
+      "translation": "меняется с согласия человека",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 305,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "hm_promote_t",
+      "text": "promote ↑",
+      "translation": "повышение ↑",
+      "where": "free text inside rectangle hm_zone",
+      "budget_px": 531,
+      "budget_chars_per_line": 80
+    },
+    {
+      "id": "hm_lbl_example",
+      "text": "EXAMPLE",
+      "translation": "ПРИМЕР",
+      "where": "free text"
+    },
+    {
+      "id": "hm_evidence_txt",
+      "text": "# Letta / MemGPT — agent pages memory between tiers, like an OS\nmemory:\n  core:     { persona, user_prefs }      # always in context\n  recall:   vector_store(\"conversations\")  # searched when relevant\n  archival: vector_store(\"facts\")          # paged in on a miss\n# the agent decides what to promote — no human edits the working set",
+      "translation": "# Letta / MemGPT — агент переносит память между уровнями, как ОС\nmemory:\n  core:     { persona, user_prefs }      # всегда в контексте\n  recall:   vector_store(\"conversations\")  # поиск, когда нужно\n  archival: vector_store(\"facts\")          # подгрузка при промахе\n# агент сам решает, что повысить — рабочий набор никто не правит вручную",
+      "where": "free text inside rectangle hm_evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "hm_footer",
+      "text": "Appears in: ch 5, ch 6      ·      “Hierarchical Memory: Context Management in Agents” — Sally-Ann DeLucia · #665",
+      "translation": "Встречается в главах 5, 6   ·   «Иерархическая память: управление контекстом агентов» — Салли-Энн Делусия · #665",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "source": "02-autoresearch-machine.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "t_title",
+      "text": "The Autoresearch Knowledge Machine",
+      "translation": "Машина знаний на автоисследовании",
+      "where": "free text"
+    },
+    {
+      "id": "t_sub",
+      "text": "How a 1,468-video corpus becomes a source-backed book",
+      "translation": "Как корпус из 1 468 видео становится книгой с опорой на источники",
+      "where": "free text"
+    },
+    {
+      "id": "input_t",
+      "text": "AI Engineer YouTube channel\n1,468-video corpus",
+      "translation": "YouTube-канал AI Engineer\nкорпус из 1 468 видео",
+      "where": "bound to ellipse input (wraps)",
+      "budget_px": 315,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "eb_l1",
+      "text": "LAYER 1 · SOURCE",
+      "translation": "СЛОЙ 1 · ИСТОЧНИК",
+      "where": "free text inside rectangle band_l1",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "ti_l1",
+      "text": "Raw source material",
+      "translation": "Сырой исходный материал",
+      "where": "free text inside rectangle band_l1",
+      "budget_px": 871,
+      "budget_chars_per_line": 65
+    },
+    {
+      "id": "de_l1",
+      "text": "Local-first video notes and transcript caches.\nKept deliberately stable — the corpus is\nthe ground truth.",
+      "translation": "Локальные заметки о видео и кэш расшифровок.\nНамеренно стабилен — корпус служит\nэталоном.",
+      "where": "free text inside rectangle band_l1",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "eb_l2",
+      "text": "LAYER 2 · SYNTHESIS",
+      "translation": "СЛОЙ 2 · СИНТЕЗ",
+      "where": "free text inside rectangle band_l2",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "ti_l2",
+      "text": "Reusable knowledge",
+      "translation": "Переиспользуемые знания",
+      "where": "free text inside rectangle band_l2",
+      "budget_px": 871,
+      "budget_chars_per_line": 65
+    },
+    {
+      "id": "de_l2",
+      "text": "Source notes are distilled into themes,\npeople, and concepts that arguments\ncan be built from.",
+      "translation": "Заметки сводятся в темы, людей\nи понятия, из которых строятся\nаргументы.",
+      "where": "free text inside rectangle band_l2",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "eb_l3",
+      "text": "LAYER 3 · EVIDENCE",
+      "translation": "СЛОЙ 3 · ДОКАЗАТЕЛЬСТВА",
+      "where": "free text inside rectangle band_l3",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "ti_l3",
+      "text": "Claims & evidence",
+      "translation": "Утверждения и доказательства",
+      "where": "free text inside rectangle band_l3",
+      "budget_px": 871,
+      "budget_chars_per_line": 65
+    },
+    {
+      "id": "de_l3",
+      "text": "Arguments become reviewable: defensible\nclaims with explicit evidence packs\nbehind each one.",
+      "translation": "Аргументы становятся проверяемыми:\nобоснованные утверждения с явным\nпакетом доказательств за каждым.",
+      "where": "free text inside rectangle band_l3",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "eb_l4",
+      "text": "LAYER 4 · MANUSCRIPT",
+      "translation": "СЛОЙ 4 · РУКОПИСЬ",
+      "where": "free text inside rectangle band_l4",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "ti_l4",
+      "text": "Book material",
+      "translation": "Материал книги",
+      "where": "free text inside rectangle band_l4",
+      "budget_px": 871,
+      "budget_chars_per_line": 65
+    },
+    {
+      "id": "de_l4",
+      "text": "Synthesis becomes chapter packets and\ndrafts — every strong claim audited back\nto a source.",
+      "translation": "Синтез становится пакетами глав и\nчерновиками — каждое сильное утверждение\nпроверено до источника.",
+      "where": "free text inside rectangle band_l4",
+      "budget_px": 871,
+      "budget_chars_per_line": 111
+    },
+    {
+      "id": "fl_l1l2",
+      "text": "structured notes",
+      "translation": "структурированные заметки",
+      "where": "free text"
+    },
+    {
+      "id": "fl_l2l3",
+      "text": "themes · people · concepts",
+      "translation": "темы · люди · понятия",
+      "where": "free text"
+    },
+    {
+      "id": "fl_l3l4",
+      "text": "verified claims + evidence",
+      "translation": "проверенные утверждения + доказательства",
+      "where": "free text"
+    },
+    {
+      "id": "fl_l4out",
+      "text": "audited chapter drafts",
+      "translation": "проверенные черновики глав",
+      "where": "free text"
+    },
+    {
+      "id": "output_t",
+      "text": "Source-backed manuscript\nto online editorial book app",
+      "translation": "Рукопись с опорой на источники\nв онлайн-приложение для книги",
+      "where": "bound to ellipse output (wraps)",
+      "budget_px": 358,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "p_l1_1t",
+      "text": "01_Videos/  ·  1,468 video notes",
+      "translation": "01_Videos/  ·  1 468 заметок",
+      "where": "free text inside rectangle p_l1_1",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l1_2t",
+      "text": "99_Meta/transcripts/plain/",
+      "translation": "99_Meta/transcripts/plain/",
+      "where": "free text inside rectangle p_l1_2",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l1_3t",
+      "text": "source inventories",
+      "translation": "реестры источников",
+      "where": "free text inside rectangle p_l1_3",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l2_1t",
+      "text": "02_Themes/  ·  10 themes",
+      "translation": "02_Themes/  ·  10 тем",
+      "where": "free text inside rectangle p_l2_1",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l2_2t",
+      "text": "03_People/",
+      "translation": "03_People/",
+      "where": "free text inside rectangle p_l2_2",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l2_3t",
+      "text": "04_Concepts/  ·  18 concepts",
+      "translation": "04_Concepts/  ·  18 понятий",
+      "where": "free text inside rectangle p_l2_3",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l2_4t",
+      "text": "99_Meta/Theme Map.md",
+      "translation": "99_Meta/Theme Map.md",
+      "where": "free text inside rectangle p_l2_4",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l3_1t",
+      "text": "claims/  ·  verified ledgers",
+      "translation": "claims/  ·  проверенные реестры",
+      "where": "free text inside rectangle p_l3_1",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l3_2t",
+      "text": "evidence/  ·  evidence packs",
+      "translation": "evidence/  ·  пакеты доказательств",
+      "where": "free text inside rectangle p_l3_2",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l4_1t",
+      "text": "05_Book_Ideas/",
+      "translation": "05_Book_Ideas/",
+      "where": "free text inside rectangle p_l4_1",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l4_2t",
+      "text": "Chapter Packets v1/",
+      "translation": "Chapter Packets v1/",
+      "where": "free text inside rectangle p_l4_2",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "p_l4_3t",
+      "text": "Drafting Layer/",
+      "translation": "Drafting Layer/",
+      "where": "free text inside rectangle p_l4_3",
+      "budget_px": 251,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "cp_eb",
+      "text": "THE CONTROL PLANE",
+      "translation": "КОНТУР КОНТРОЛЯ",
+      "where": "free text inside rectangle cp_rect",
+      "budget_px": 351,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "cp_ti",
+      "text": "Research-Org Layer",
+      "translation": "Штаб исследований",
+      "where": "free text inside rectangle cp_rect",
+      "budget_px": 351,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "cp_de",
+      "text": "Tells agents how to operate.\nImproves the upper layers through\nbounded, logged passes.",
+      "translation": "Говорит агентам, как работать.\nУлучшает верхние слои через\nограниченные проходы с журналом.",
+      "where": "free text inside rectangle cp_rect",
+      "budget_px": 351,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "p_cp_1t",
+      "text": "programs/",
+      "translation": "programs/",
+      "where": "free text inside rectangle p_cp_1",
+      "budget_px": 301,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "p_cp_2t",
+      "text": "tasks/",
+      "translation": "tasks/",
+      "where": "free text inside rectangle p_cp_2",
+      "budget_px": 301,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "p_cp_3t",
+      "text": "research_passes/",
+      "translation": "research_passes/",
+      "where": "free text inside rectangle p_cp_3",
+      "budget_px": 301,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "cp_tl_lbl",
+      "text": "BOUNDED AGENT JOBS",
+      "translation": "ОГРАНИЧЕННЫЕ ЗАДАЧИ АГЕНТОВ",
+      "where": "free text inside rectangle cp_rect",
+      "budget_px": 351,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "cp_tl",
+      "text": "·  sync source inventories\n·  improve one concept page\n·  extract claims for a chapter\n·  strengthen a chapter packet\n·  review the whole manuscript",
+      "translation": "·  сверить реестры источников\n·  улучшить одну страницу понятия\n·  извлечь утверждения для главы\n·  усилить пакет главы\n·  проверить всю рукопись",
+      "where": "free text inside rectangle cp_rect",
+      "budget_px": 351,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "cp_note",
+      "text": "The corpus stays stable.\nThe machine improves itself.",
+      "translation": "Корпус остаётся стабильным.\nМашина улучшает себя сама.",
+      "where": "free text inside rectangle cp_rect",
+      "budget_px": 351,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "principle",
+      "text": "Design principle — keep the raw corpus stable; improve synthesis, evidence, and manuscript through bounded, logged agent passes.",
+      "translation": "Принцип устройства — сырой корпус не меняется; синтез, доказательства и рукопись улучшаются ограниченными проходами агентов с журналом.",
+      "where": "free text"
+    }
+  ]
+}

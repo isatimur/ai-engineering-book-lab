@@ -1,0 +1,114 @@
+{
+  "source": "diagrams/concepts/15-software-factory.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "sf_eyebrow",
+      "text": "CONCEPT  ·  15",
+      "translation": "ПОНЯТИЕ  ·  15",
+      "where": "free text"
+    },
+    {
+      "id": "sf_name",
+      "text": "Software Factory",
+      "translation": "Фабрика ПО",
+      "where": "free text"
+    },
+    {
+      "id": "sf_definition",
+      "text": "A pipeline where specialized agents run each delivery stage —\nand humans supervise the line, not work it.",
+      "translation": "Конвейер, где каждый этап поставки ведут профильные агенты, —\nа люди надзирают за линией, а не работают на ней.",
+      "where": "free text"
+    },
+    {
+      "id": "sf_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "sf_rail_t",
+      "text": "HUMAN CONTROL PLANE  —  designs the pipeline, sets work orders, approves output",
+      "translation": "КОНТУР КОНТРОЛЯ ЧЕЛОВЕКА  —  строит конвейер, выдаёт задания, одобряет результат",
+      "where": "free text inside rectangle sf_rail",
+      "budget_px": 750,
+      "budget_chars_per_line": 104
+    },
+    {
+      "id": "sf_s1_t",
+      "text": "Planner\ndecompose goal",
+      "translation": "Планировщик\nделит цель",
+      "where": "free text inside rectangle sf_s1",
+      "budget_px": 110,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "sf_s2_t",
+      "text": "Generator\nimplement (parallel)",
+      "translation": "Генератор\nпишет в параллель",
+      "where": "free text inside rectangle sf_s2",
+      "budget_px": 146,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "sf_s3_t",
+      "text": "Evaluator\nuse the live app",
+      "translation": "Оценщик\nпроверяет вживую",
+      "where": "free text inside rectangle sf_s3",
+      "budget_px": 114,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "sf_s4_t",
+      "text": "Review\nauto + human gate",
+      "translation": "Ревью\nавто + человек",
+      "where": "free text inside rectangle sf_s4",
+      "budget_px": 122,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "sf_s5_t",
+      "text": "Ship\n+ skill capture",
+      "translation": "Выпуск\n+ сбор навыков",
+      "where": "free text inside rectangle sf_s5",
+      "budget_px": 106,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "sf_loop_t",
+      "text": "fails eval -> back to Generator",
+      "translation": "оценка не пройдена -> назад к Генератору",
+      "where": "free text inside rectangle sf_zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 122
+    },
+    {
+      "id": "sf_caption",
+      "text": "Each role gets its own context window. Skills capture institutional knowledge so the\nnext job runs faster — the flywheel that turns one factory run into a reusable line.",
+      "translation": "У каждой роли своё контекстное окно. Навыки сохраняют знания компании, поэтому\nследующая задача идёт быстрее — маховик превращает один прогон фабрики в линию.",
+      "where": "free text inside rectangle sf_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "sf_lbl_example",
+      "text": "EXAMPLE  ·  Intercom “Project 2x” — the factory in production",
+      "translation": "ПРИМЕР  ·  Intercom «Project 2x» — фабрика в продакшене",
+      "where": "free text"
+    },
+    {
+      "id": "sf_ev",
+      "text": "factory metrics @ Intercom                  # corpus video #682\n  throughput .............. 2x  (engineering team output)\n  PRs auto-approved ....... 17.6%  (automated review stage)\n  ladder .................. use Claude -> automate -> skill -> optimize",
+      "translation": "метрики фабрики @ Intercom                  # видео корпуса #682\n  пропускная способность .. 2x  (выход инженерной команды)\n  PR одобрено автоматом ... 17,6%  (этап автоматического ревью)\n  лестница ................ Claude -> автоматизация -> навык -> оптимизация",
+      "where": "free text inside rectangle sf_evidence",
+      "budget_px": 797,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "sf_footer",
+      "text": "Appears in: ch 3, ch 9      ·      — Brian Scanlan, Intercom · corpus video #682",
+      "translation": "Встречается в главах 3, 9      ·      — Брайан Скэнлан, Intercom · видео корпуса #682",
+      "where": "free text"
+    }
+  ]
+}

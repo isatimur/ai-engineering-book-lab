@@ -1,0 +1,130 @@
+{
+  "source": "dividers/act-4-widening.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "e1301",
+      "text": "ACT IV  —  OF FOUR",
+      "translation": "АКТ IV  —  ИЗ ЧЕТЫРЁХ",
+      "where": "free text"
+    },
+    {
+      "id": "e1304",
+      "text": "The Widening",
+      "translation": "Расширение",
+      "where": "free text"
+    },
+    {
+      "id": "e1313",
+      "text": "From systems design to organizations\nand durable truths.",
+      "translation": "От проектирования систем к организациям\nи надёжным истинам.",
+      "where": "free text"
+    },
+    {
+      "id": "e1319",
+      "text": "IV",
+      "translation": "IV",
+      "where": "free text inside rectangle e1316",
+      "budget_px": 222,
+      "budget_chars_per_line": 3
+    },
+    {
+      "id": "e1322",
+      "text": "CHAPTERS 9–10",
+      "translation": "ГЛАВЫ 9–10",
+      "where": "free text inside rectangle e1316",
+      "budget_px": 222,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "e1325",
+      "text": "2 chapters",
+      "translation": "2 главы",
+      "where": "free text inside rectangle e1316",
+      "budget_px": 222,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "e1331",
+      "text": "Ch 9 · The AI-Native Organization",
+      "translation": "Гл. 9 · ИИ-нативная организация",
+      "where": "free text"
+    },
+    {
+      "id": "e1337",
+      "text": "Ch 10 · What Endures",
+      "translation": "Гл. 10 · Что остаётся",
+      "where": "free text"
+    },
+    {
+      "id": "e1343",
+      "text": "→  Organizations decide whether trust compounds",
+      "translation": "→  Организации решают, накапливается ли доверие",
+      "where": "free text inside rectangle e1340",
+      "budget_px": 537,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "e1346",
+      "text": "THE ARC",
+      "translation": "СЮЖЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "e1364",
+      "text": "I",
+      "translation": "I",
+      "where": "free text inside ellipse e1361",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1367",
+      "text": "I · Problem",
+      "translation": "I · Проблема",
+      "where": "free text"
+    },
+    {
+      "id": "e1373",
+      "text": "II",
+      "translation": "II",
+      "where": "free text inside ellipse e1370",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1376",
+      "text": "II · Scaffolding",
+      "translation": "II · Обвязка",
+      "where": "free text"
+    },
+    {
+      "id": "e1382",
+      "text": "III",
+      "translation": "III",
+      "where": "free text inside ellipse e1379",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1385",
+      "text": "III · Stress Test",
+      "translation": "III · Стресс-тест",
+      "where": "free text"
+    },
+    {
+      "id": "e1391",
+      "text": "IV",
+      "translation": "IV",
+      "where": "free text inside ellipse e1388",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1394",
+      "text": "IV · Widening",
+      "translation": "IV · Расширение",
+      "where": "free text"
+    }
+  ]
+}

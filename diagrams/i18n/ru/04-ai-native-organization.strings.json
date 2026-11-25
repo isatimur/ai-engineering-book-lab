@@ -1,0 +1,122 @@
+{
+  "source": "diagrams/concepts/04-ai-native-organization.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CONCEPT",
+      "translation": "ПОНЯТИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "name",
+      "text": "AI-Native Organization",
+      "translation": "ИИ-нативная организация",
+      "where": "free text"
+    },
+    {
+      "id": "definition",
+      "text": "Not a company that buys copilots — one that redesigns work, interfaces,\nincentives, and review loops so AI systems are part of how value is made.",
+      "translation": "Не компания, которая покупает напарников, а та, что перестраивает работу, интерфейсы,\nстимулы и циклы ревью, чтобы ИИ-системы стали частью того, как создаётся ценность.",
+      "where": "free text"
+    },
+    {
+      "id": "lbl_how",
+      "text": "HOW IT WORKS  ·  AI-ENABLED  vs  AI-NATIVE",
+      "translation": "КАК ЭТО РАБОТАЕТ  ·  С ИИ  или  ИИ-НАТИВНАЯ",
+      "where": "free text"
+    },
+    {
+      "id": "enabled_t",
+      "text": "AI-ENABLED\ntools dropped into\nthe old workflow.\n\n·  individuals prompt\n   models privately\n·  output rises\n·  review unchanged\n·  alignment debt:\n   shared understanding\n   quietly falls",
+      "translation": "С ИИ-ИНСТРУМЕНТАМИ\nинструменты брошены\nв старый процесс.\n\n·  каждый пишет\n   промпты сам по себе\n·  выпуск растёт\n·  ревью не меняется\n·  долг согласованности:\n   общее понимание\n   тихо падает",
+      "where": "free text inside rectangle enabled",
+      "budget_px": 203,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "redesign_t",
+      "text": "redesign\nthe work",
+      "translation": "перестроить\nработу",
+      "where": "free text inside rectangle zone",
+      "budget_px": 850,
+      "budget_chars_per_line": 141
+    },
+    {
+      "id": "native_t",
+      "text": "AI-NATIVE  —  the operating model changes",
+      "translation": "ИИ-НАТИВНАЯ  —  меняется операционная модель",
+      "where": "free text inside rectangle native",
+      "budget_px": 427,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "n1_t",
+      "text": "BUILD REVIEW\nCAPACITY\nreview is the new\nbottleneck",
+      "translation": "МОЩНОСТИ\nДЛЯ РЕВЬЮ\nревью — новое\nузкое место",
+      "where": "free text inside rectangle n1",
+      "budget_px": 115,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "n2_t",
+      "text": "CONSTRAINED\nPATHS TO SHIP\nnon-engineers get\nbounded access",
+      "translation": "УЗКИЕ ПУТИ\nК ВЫПУСКУ\nне-инженерам —\nдоступ в рамках",
+      "where": "free text inside rectangle n2",
+      "budget_px": 115,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "n3_t",
+      "text": "SHARED\nALIGNMENT LAYER\nplanning before\nagents fan out",
+      "translation": "ОБЩИЙ СЛОЙ\nСОГЛАСОВАНИЯ\nпланирование до\nраздачи агентам",
+      "where": "free text inside rectangle n3",
+      "budget_px": 115,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "n4_t",
+      "text": "THE COMPANY IS A TRAINING HARNESS  —  the more explicit the\norg's specs, standards, and examples, the better\nagents operate inside it.",
+      "translation": "КОМПАНИЯ — ТРЕНИРОВОЧНАЯ ОБВЯЗКА  —  чем явнее спецификации,\nстандарты и примеры компании, тем лучше\nв ней работают агенты.",
+      "where": "free text inside rectangle n4",
+      "budget_px": 399,
+      "budget_chars_per_line": 66
+    },
+    {
+      "id": "warn",
+      "text": "Watch: more local output ≠ more system throughput. A lone power user can shine while team coordination gets worse.",
+      "translation": "Внимание: больше локального выпуска ≠ выше пропускная способность. Один энтузиаст блистает, а слаженность команды падает.",
+      "where": "free text inside rectangle zone",
+      "budget_px": 819,
+      "budget_chars_per_line": 124
+    },
+    {
+      "id": "lbl_example",
+      "text": "EXAMPLE  ·  EVIDENCE FROM 20M PULL REQUESTS",
+      "translation": "ПРИМЕР  ·  ДАННЫЕ ПО 20 МЛН ПУЛ-РЕКВЕСТОВ",
+      "where": "free text"
+    },
+    {
+      "id": "ev1",
+      "text": "org_metric                  ai-enabled        ai-native",
+      "translation": "метрика                     с ИИ              ИИ-нативная",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "ev2",
+      "text": "  PRs opened / wk           +tracked          +tracked\n  review latency            rising            held flat  ← key\n  cycle time, defect rate    not measured      measured w/ adoption",
+      "translation": "  PR открыто / нед.         +учтено           +учтено\n  задержка ревью            растёт            на месте  ← главное\n  цикл, доля дефектов       не измеряют       измеряют с внедрением",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "footer",
+      "text": "Appears in: ch 9      ·      — Nick Arcolano, Jellyfish · corpus video #101",
+      "translation": "Встречается в главе 9      ·      — Ник Арколано, Jellyfish · видео корпуса #101",
+      "where": "free text"
+    }
+  ]
+}

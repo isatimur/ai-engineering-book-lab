@@ -36,8 +36,8 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [110, 0]]
     },
     {
-      "type": "text", "id": "sd_definition", "x": 50, "y": 120, "width": 820, "height": 24,
-      "text": "Making intent, constraints, and acceptance criteria explicit enough that humans and agents can build to them.", "originalText": "Making intent, constraints, and acceptance criteria explicit enough that humans and agents can build to them.",
+      "type": "text", "id": "sd_definition", "x": 50, "y": 120, "width": 820, "height": 40,
+      "text": "Making intent, constraints, and acceptance criteria explicit enough\nthat humans and agents can build to them.", "originalText": "Making intent, constraints, and acceptance criteria explicit enough\nthat humans and agents can build to them.",
       "fontSize": 15, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
@@ -45,7 +45,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "sd_lbl_how", "x": 50, "y": 162, "width": 300, "height": 14,
+      "type": "text", "id": "sd_lbl_how", "x": 50, "y": 182, "width": 300, "height": 14,
       "text": "HOW IT WORKS", "originalText": "HOW IT WORKS",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -54,21 +54,21 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "sd_zone", "x": 50, "y": 182, "width": 820, "height": 268,
+      "type": "rectangle", "id": "sd_zone", "x": 50, "y": 202, "width": 820, "height": 268,
       "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100007, "version": 1, "versionNonce": 16100007, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "rectangle", "id": "sd_intent", "x": 96, "y": 248, "width": 130, "height": 52,
+      "type": "rectangle", "id": "sd_intent", "x": 96, "y": 268, "width": 130, "height": 52,
       "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100008, "version": 1, "versionNonce": 16100008, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "sd_intent_t", "x": 96, "y": 258, "width": 130, "height": 32,
+      "type": "text", "id": "sd_intent_t", "x": 96, "y": 278, "width": 130, "height": 32,
       "text": "vague\nintent", "originalText": "vague\nintent",
       "fontSize": 13, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -77,23 +77,23 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "arrow", "id": "sd_ar_in", "x": 230, "y": 274, "width": 56, "height": 0,
+      "type": "arrow", "id": "sd_ar_in", "x": 230, "y": 294, "width": 48, "height": 0,
       "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100010, "version": 1, "versionNonce": 16100010, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [56, 0]], "startBinding": null, "endBinding": null,
+      "points": [[0, 0], [48, 0]], "startBinding": null, "endBinding": null,
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "rectangle", "id": "sd_spec", "x": 290, "y": 234, "width": 160, "height": 80,
+      "type": "rectangle", "id": "sd_spec", "x": 282, "y": 254, "width": 176, "height": 80,
       "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100011, "version": 1, "versionNonce": 16100011, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "sd_spec_t", "x": 290, "y": 248, "width": 160, "height": 56,
+      "type": "text", "id": "sd_spec_t", "x": 282, "y": 268, "width": 176, "height": 56,
       "text": "THE SPEC\ngoals · constraints\nacceptance · non-goals", "originalText": "THE SPEC\ngoals · constraints\nacceptance · non-goals",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -102,41 +102,41 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
     },
     {
-      "type": "arrow", "id": "sd_ar_plan", "x": 454, "y": 252, "width": 96, "height": 0,
+      "type": "arrow", "id": "sd_ar_plan", "x": 462, "y": 272, "width": 94, "height": 32,
       "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100013, "version": 1, "versionNonce": 16100013, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [96, -34]], "startBinding": null, "endBinding": null,
+      "points": [[0, 0], [94, -32]], "startBinding": null, "endBinding": null,
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "sd_ar_impl", "x": 454, "y": 274, "width": 96, "height": 0,
+      "type": "arrow", "id": "sd_ar_impl", "x": 462, "y": 294, "width": 94, "height": 0,
       "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100014, "version": 1, "versionNonce": 16100014, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [96, 0]], "startBinding": null, "endBinding": null,
+      "points": [[0, 0], [94, 0]], "startBinding": null, "endBinding": null,
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "sd_ar_eval", "x": 454, "y": 296, "width": 96, "height": 0,
+      "type": "arrow", "id": "sd_ar_eval", "x": 462, "y": 316, "width": 94, "height": 32,
       "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100015, "version": 1, "versionNonce": 16100015, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [96, 34]], "startBinding": null, "endBinding": null,
+      "points": [[0, 0], [94, 32]], "startBinding": null, "endBinding": null,
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "rectangle", "id": "sd_plan", "x": 552, "y": 200, "width": 160, "height": 40,
+      "type": "rectangle", "id": "sd_plan", "x": 560, "y": 220, "width": 210, "height": 40,
       "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100016, "version": 1, "versionNonce": 16100016, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "sd_plan_t", "x": 552, "y": 212, "width": 160, "height": 16,
+      "type": "text", "id": "sd_plan_t", "x": 560, "y": 232, "width": 210, "height": 16,
       "text": "Planning  — shrinks search", "originalText": "Planning  — shrinks search",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#4c1d95", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -145,14 +145,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "sd_impl", "x": 552, "y": 254, "width": 160, "height": 40,
+      "type": "rectangle", "id": "sd_impl", "x": 560, "y": 274, "width": 210, "height": 40,
       "strokeColor": "#6d28d9", "backgroundColor": "#ddd6fe", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100018, "version": 1, "versionNonce": 16100018, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "sd_impl_t", "x": 552, "y": 266, "width": 160, "height": 16,
+      "type": "text", "id": "sd_impl_t", "x": 560, "y": 286, "width": 210, "height": 16,
       "text": "Implementation — agents", "originalText": "Implementation — agents",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#4c1d95", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -161,14 +161,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "sd_eval", "x": 552, "y": 308, "width": 160, "height": 40,
+      "type": "rectangle", "id": "sd_eval", "x": 560, "y": 328, "width": 210, "height": 40,
       "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100020, "version": 1, "versionNonce": 16100020, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "sd_eval_t", "x": 552, "y": 320, "width": 160, "height": 16,
+      "type": "text", "id": "sd_eval_t", "x": 560, "y": 340, "width": 210, "height": 16,
       "text": "Eval  — output vs intent", "originalText": "Eval  — output vs intent",
       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -177,7 +177,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "sd_hub_note", "x": 290, "y": 326, "width": 160, "height": 16,
+      "type": "text", "id": "sd_hub_note", "x": 282, "y": 346, "width": 176, "height": 16,
       "text": "one shared contract", "originalText": "one shared contract",
       "fontSize": 11, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -186,7 +186,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "text", "id": "sd_caption", "x": 96, "y": 372, "width": 700, "height": 48,
+      "type": "text", "id": "sd_caption", "x": 96, "y": 392, "width": 700, "height": 48,
       "text": "A spec is not documentation — it is an alignment artifact. The same contract\nfeeds all three stages: it helps humans agree, keeps agents from sprawling,\nand gives evals a stable target. As generation gets cheap, this matters more.", "originalText": "A spec is not documentation — it is an alignment artifact. The same contract\nfeeds all three stages: it helps humans agree, keeps agents from sprawling,\nand gives evals a stable target. As generation gets cheap, this matters more.",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#475569", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -195,7 +195,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.4
     },
     {
-      "type": "text", "id": "sd_lbl_example", "x": 50, "y": 466, "width": 500, "height": 14,
+      "type": "text", "id": "sd_lbl_example", "x": 50, "y": 486, "width": 500, "height": 14,
       "text": "EXAMPLE  ·  a minimal agent-ready spec", "originalText": "EXAMPLE  ·  a minimal agent-ready spec",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -204,14 +204,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "sd_evidence", "x": 50, "y": 484, "width": 820, "height": 96,
+      "type": "rectangle", "id": "sd_evidence", "x": 50, "y": 504, "width": 820, "height": 112,
       "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 16100025, "version": 1, "versionNonce": 16100025, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "sd_ev", "x": 68, "y": 498, "width": 784, "height": 72,
+      "type": "text", "id": "sd_ev", "x": 68, "y": 518, "width": 784, "height": 86,
       "text": "## spec: rate-limit the /login endpoint\ngoal:        block brute-force without locking out real users\nconstraints: 5 attempts / 15 min per IP; Redis-backed\nacceptance:  6th attempt -> HTTP 429; counter resets after window\nnon-goals:   CAPTCHA, account lockout, IP allowlisting", "originalText": "## spec: rate-limit the /login endpoint\ngoal:        block brute-force without locking out real users\nconstraints: 5 attempts / 15 min per IP; Redis-backed\nacceptance:  6th attempt -> HTTP 429; counter resets after window\nnon-goals:   CAPTCHA, account lockout, IP allowlisting",
       "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -220,7 +220,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
     },
     {
-      "type": "text", "id": "sd_footer", "x": 50, "y": 600, "width": 820, "height": 16,
+      "type": "text", "id": "sd_footer", "x": 50, "y": 636, "width": 820, "height": 16,
       "text": "Appears in: ch 2, ch 3      ·      — Al Harris, Amazon Kiro · corpus video #40", "originalText": "Appears in: ch 2, ch 3      ·      — Al Harris, Amazon Kiro · corpus video #40",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",

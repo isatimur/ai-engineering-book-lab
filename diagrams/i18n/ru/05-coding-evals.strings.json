@@ -1,0 +1,106 @@
+{
+  "source": "diagrams/concepts/05-coding-evals.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CONCEPT",
+      "translation": "ПОНЯТИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "name",
+      "text": "Coding Evals",
+      "translation": "Оценки для кода",
+      "where": "free text"
+    },
+    {
+      "id": "definition",
+      "text": "Structured measurements of whether AI can produce, modify, and maintain\ncode under realistic constraints — a control system, not a scoreboard.",
+      "translation": "Структурные измерения того, может ли ИИ писать, менять и сопровождать\nкод в реальных условиях — система управления, а не табло.",
+      "where": "free text"
+    },
+    {
+      "id": "lbl_how",
+      "text": "HOW IT WORKS  ·  THE EVAL LADDER — SNIPPET TO PRODUCTION",
+      "translation": "КАК ЭТО РАБОТАЕТ  ·  ЛЕСТНИЦА ОЦЕНОК — ОТ ФРАГМЕНТА ДО ПРОДАКШЕНА",
+      "where": "free text"
+    },
+    {
+      "id": "rung1_t",
+      "text": "SNIPPET\nsingle function;\nbenchmark toy.\nweak signal",
+      "translation": "ФРАГМЕНТ\nодна функция;\nигрушка-бенчмарк.\nслабый сигнал",
+      "where": "free text inside rectangle rung1",
+      "budget_px": 121,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "rung2_t",
+      "text": "FILE / REPO\nmulti-file refactor\nin a real\ncodebase",
+      "translation": "ФАЙЛ / РЕПО\nправки в разных\nфайлах реальной\nкодовой базы",
+      "where": "free text inside rectangle rung2",
+      "budget_px": 121,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "rung3_t",
+      "text": "TASK\nhuman-seeded job:\nambiguity, setup,\nchanging spec",
+      "translation": "ЗАДАЧА\nзадание от людей:\nнеясность, среда,\nспецификация плывёт",
+      "where": "free text inside rectangle rung3",
+      "budget_px": 121,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "rung4_t",
+      "text": "PROD CANARY\nfaces real user\ntasks, bugs,\nsupport load",
+      "translation": "КАНАРЕЙКА\nреальные задачи,\nбаги и нагрузка\nподдержки",
+      "where": "free text inside rectangle rung4",
+      "budget_px": 121,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "fb_t",
+      "text": "production failure traces  →  next eval cycle",
+      "translation": "трейсы сбоев в продакшене  →  следующий цикл оценок",
+      "where": "free text inside rectangle zone",
+      "budget_px": 850,
+      "budget_chars_per_line": 128
+    },
+    {
+      "id": "score",
+      "text": "Score the full delegated pipeline — not just nominal pass/fail:\ntask completion · regression risk · cost · latency · review burden ·\nrecovery behaviour. A test runner is not an eval platform.",
+      "translation": "Оценивайте весь делегированный конвейер, а не только формальный «прошёл/упал»:\nвыполнение задачи · риск регрессии · цена · задержка · нагрузка на ревью ·\nповедение при восстановлении. Тест-раннер — ещё не платформа оценок.",
+      "where": "free text inside rectangle zone",
+      "budget_px": 819,
+      "budget_chars_per_line": 113
+    },
+    {
+      "id": "lbl_example",
+      "text": "EXAMPLE  ·  A REPO-LEVEL EVAL CASE, SCORED BEYOND ACCURACY",
+      "translation": "ПРИМЕР  ·  ОЦЕНКА НА УРОВНЕ РЕПО, НЕ ТОЛЬКО ТОЧНОСТЬ",
+      "where": "free text"
+    },
+    {
+      "id": "ev1",
+      "text": "eval_case: \"add retry to flaky API client\"  (human-seeded, repo-level)\n  source: support ticket #2841   ·   horizon: multi-file",
+      "translation": "eval_case: \"добавить повтор в нестабильный API-клиент\"  (от человека, уровень репо)\n  source: тикет поддержки #2841   ·   horizon: несколько файлов",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "ev2",
+      "text": "  result: passed=true  ·  but: review_edits=6  cost=$0.42  rollbacks=1\n  verdict: locally correct, operationally weak  →  add to regression set",
+      "translation": "  result: passed=true  ·  но: review_edits=6  cost=$0.42  rollbacks=1\n  verdict: локально верно, операционно слабо  →  в регрессионный набор",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "footer",
+      "text": "Appears in: ch 4      ·      — Naman Jain, Cursor · corpus video #72",
+      "translation": "Встречается в главе 4      ·      — Наман Джайн, Cursor · видео корпуса #72",
+      "where": "free text"
+    }
+  ]
+}

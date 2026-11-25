@@ -1,0 +1,124 @@
+{
+  "source": "dividers/act-3-stress-test.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "e1211",
+      "text": "ACT III  —  OF FOUR",
+      "translation": "АКТ III  —  ИЗ ЧЕТЫРЁХ",
+      "where": "free text"
+    },
+    {
+      "id": "e1214",
+      "text": "The Stress Test",
+      "translation": "Стресс-тест",
+      "where": "free text"
+    },
+    {
+      "id": "e1223",
+      "text": "Push the framework\nto its hardest edges.",
+      "translation": "Проверить подход\nв самых жёстких условиях.",
+      "where": "free text"
+    },
+    {
+      "id": "e1229",
+      "text": "III",
+      "translation": "III",
+      "where": "free text inside rectangle e1226",
+      "budget_px": 222,
+      "budget_chars_per_line": 3
+    },
+    {
+      "id": "e1232",
+      "text": "CHAPTER 8",
+      "translation": "ГЛАВА 8",
+      "where": "free text inside rectangle e1226",
+      "budget_px": 222,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "e1235",
+      "text": "1 chapter",
+      "translation": "1 глава",
+      "where": "free text inside rectangle e1226",
+      "budget_px": 222,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "e1241",
+      "text": "Ch 8 · Realtime, Voice, and the Cost of Being Interruptible",
+      "translation": "Гл. 8 · Реальное время, голос и цена перебивания",
+      "where": "free text"
+    },
+    {
+      "id": "e1247",
+      "text": "→  Stress-test the theory under harsh constraints",
+      "translation": "→  Проверить теорию в жёстких условиях",
+      "where": "free text inside rectangle e1244",
+      "budget_px": 559,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "e1250",
+      "text": "THE ARC",
+      "translation": "СЮЖЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "e1268",
+      "text": "I",
+      "translation": "I",
+      "where": "free text inside ellipse e1265",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1271",
+      "text": "I · Problem",
+      "translation": "I · Проблема",
+      "where": "free text"
+    },
+    {
+      "id": "e1277",
+      "text": "II",
+      "translation": "II",
+      "where": "free text inside ellipse e1274",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1280",
+      "text": "II · Scaffolding",
+      "translation": "II · Обвязка",
+      "where": "free text"
+    },
+    {
+      "id": "e1286",
+      "text": "III",
+      "translation": "III",
+      "where": "free text inside ellipse e1283",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1289",
+      "text": "III · Stress Test",
+      "translation": "III · Стресс-тест",
+      "where": "free text"
+    },
+    {
+      "id": "e1295",
+      "text": "IV",
+      "translation": "IV",
+      "where": "free text inside ellipse e1292",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1298",
+      "text": "IV · Widening",
+      "translation": "IV · Расширение",
+      "where": "free text"
+    }
+  ]
+}

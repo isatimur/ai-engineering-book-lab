@@ -1,0 +1,122 @@
+{
+  "source": "diagrams/concepts/12-human-control-plane.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "hc_eyebrow",
+      "text": "CONCEPT 12",
+      "translation": "ПОНЯТИЕ 12",
+      "where": "free text"
+    },
+    {
+      "id": "hc_name",
+      "text": "Human Control Plane",
+      "translation": "Контур контроля человека",
+      "where": "free text"
+    },
+    {
+      "id": "hc_definition",
+      "text": "The interfaces and checkpoints through which people supervise AI work.",
+      "translation": "Интерфейсы и контрольные точки, через которые люди надзирают за работой ИИ.",
+      "where": "free text"
+    },
+    {
+      "id": "hc_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "hc_human_t",
+      "text": "OPERATOR\nqueue · uncertainty · evidence",
+      "translation": "ОПЕРАТОР\nочередь · сомнения · данные",
+      "where": "free text inside rectangle hc_human",
+      "budget_px": 230,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "hc_plane_lbl",
+      "text": "control plane — checkpoints, not chat",
+      "translation": "контур контроля — контрольные точки, а не чат",
+      "where": "free text inside rectangle hc_zone",
+      "budget_px": 653,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "hc_w1_t",
+      "text": "agent 1  ·  refactor",
+      "translation": "агент 1  ·  рефакторинг",
+      "where": "free text inside rectangle hc_w1",
+      "budget_px": 190,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "hc_w2_t",
+      "text": "agent 2  ·  migration",
+      "translation": "агент 2  ·  миграция",
+      "where": "free text inside rectangle hc_w2",
+      "budget_px": 190,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "hc_gA_t",
+      "text": "low-risk\nauto-approved",
+      "translation": "низкий риск\nавтоодобрение",
+      "where": "free text inside rectangle hc_gA",
+      "budget_px": 140,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "hc_gB_t",
+      "text": "high-risk\nhuman approval",
+      "translation": "высокий риск\nодобряет человек",
+      "where": "free text inside rectangle hc_gB",
+      "budget_px": 140,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "hc_ship_t",
+      "text": "merged + audit trail",
+      "translation": "слито + журнал аудита",
+      "where": "free text inside rectangle hc_ship",
+      "budget_px": 220,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "hc_escalate_t",
+      "text": "escalate → operator",
+      "translation": "эскалация → оператор",
+      "where": "free text inside rectangle hc_escalate",
+      "budget_px": 220,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "hc_routing",
+      "text": "one operator supervises many agents — control scales by routing risk, not by reading every token",
+      "translation": "один оператор ведёт много агентов — контроль растёт за счёт маршрутизации риска, а не чтения каждого токена",
+      "where": "free text inside rectangle hc_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "hc_lbl_example",
+      "text": "EXAMPLE",
+      "translation": "ПРИМЕР",
+      "where": "free text"
+    },
+    {
+      "id": "hc_evidence_txt",
+      "text": "# Intercom — 17.6% of agent PRs auto-approved, the rest gated\napproval_policy:\n  auto:   diff_size < 40 AND tests_pass AND no_infra_paths\n  human:  touches_payments OR touches_auth OR migration\n  audit:  every decision logged → SOC2 / ISO27001 / HIPAA trail",
+      "translation": "# Intercom — 17,6% PR от агентов одобрены автоматически, остальные идут через барьер\napproval_policy:\n  auto:   diff_size < 40 AND tests_pass AND no_infra_paths\n  human:  touches_payments OR touches_auth OR migration\n  audit:  каждое решение в журнале → след для SOC2 / ISO27001 / HIPAA",
+      "where": "free text inside rectangle hc_evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "hc_footer",
+      "text": "Appears in: ch 6      ·      “One Dev, Two Dozen Agents, Zero Alignment” — Maggie Appleton, GitHub · #623",
+      "translation": "Встречается в главе 6  ·  «Один разработчик, две дюжины агентов, ноль согласованности» — Мэгги Эпплтон, GitHub · #623",
+      "where": "free text"
+    }
+  ]
+}
