@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import type { DraftBook } from '../data/draftBooks';
 import { SecondBookArticle } from '../components/chapter/SecondBookArticle';
 import { BookOpenerFigure } from '../components/chapter/BookOpenerFigure';
+import { FigureFlip } from '../components/chapter/FigureFlip';
+import { postcardFor } from '../data/figurePostcards';
 import { ChapterExplainerVideo } from '../components/chapter/ChapterExplainerVideo';
 import { BookContentsDrawer } from '../components/draft/BookContentsDrawer';
 import { ShareButton } from '../components/draft/ShareButton';
@@ -66,6 +68,7 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
   const opener = book.figures.opener(chapter.number);
   const video = book.video(chapter);
   const chapterNo = parseInt(chapter.number, 10);
+  const postcard = postcardFor(book.key, chapter.number);
 
   return (
     <LightboxProvider>
@@ -113,6 +116,12 @@ export const DraftBookChapterPage = ({ book }: { book: DraftBook }) => {
             <h1 className="font-serif text-4xl md:text-5xl leading-tight mb-4">{chapter.title}</h1>
             <p className="font-serif italic text-xl text-[var(--color-ink-muted)] mb-6">{chapter.promise}</p>
           </div>
+
+          {!textOnly && postcard && (
+            <div className="px-6 pt-4 pb-14">
+              <FigureFlip card={postcard} />
+            </div>
+          )}
 
           {!textOnly && video && <ChapterExplainerVideo video={video} />}
 

@@ -21,6 +21,8 @@ import { JsonLd } from '../components/JsonLd';
 import { chapterJsonLd, breadcrumbJsonLd, chapterVideoJsonLd } from '../lib/structuredData';
 import { chapterVideoFor } from '../data/chapterVideos';
 import { ChapterExplainerVideo } from '../components/chapter/ChapterExplainerVideo';
+import { FigureFlip } from '../components/chapter/FigureFlip';
+import { postcardFor } from '../data/figurePostcards';
 import { useTextOnlyMode } from '../hooks/useTextOnlyMode';
 import { MobileReaderBar } from '../components/nav/MobileReaderBar';
 import { MobileChapterChoice } from '../components/nav/MobileChapterChoice';
@@ -71,6 +73,7 @@ export const ChapterDetail = () => {
   const next = idx < chapters.length - 1 ? chapters[idx + 1] : undefined;
   const op = opener(chapter.number);
   const video = chapterVideoFor(chapter.slug);
+  const postcard = postcardFor('book1', chapter.number);
 
   const startTextReading = () => {
     setTextOnlyMode(true);
@@ -130,6 +133,12 @@ export const ChapterDetail = () => {
               className="mb-8"
             />
           </div>
+
+          {!textOnly && postcard && (
+            <div className="px-6 pt-4 pb-14">
+              <FigureFlip card={postcard} />
+            </div>
+          )}
 
           {!textOnly && video && <ChapterExplainerVideo video={video} />}
 
