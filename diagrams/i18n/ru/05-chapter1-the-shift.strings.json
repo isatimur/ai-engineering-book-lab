@@ -1,0 +1,264 @@
+{
+  "source": "diagrams/05-chapter1-the-shift.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER ONE",
+      "translation": "ГЛАВА ПЕРВАЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The Shift",
+      "translation": "Сдвиг",
+      "where": "free text"
+    },
+    {
+      "id": "sub",
+      "text": "From Assistant to Delegate",
+      "translation": "От ассистента к исполнителю",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "It opens the book — AI stops being a better autocomplete and becomes a candidate worker.",
+      "translation": "С неё начинается книга: ИИ перестаёт быть умным автодополнением и становится кандидатом в работники.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE ASSISTANT",
+      "translation": "АССИСТЕНТ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 531,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "pl_s",
+      "text": "yesterday's copilot",
+      "translation": "вчерашний напарник",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 531,
+      "budget_chars_per_line": 68
+    },
+    {
+      "id": "pl_char",
+      "text": "A faster autocomplete. It suggests;\nyou still decide and do the work.",
+      "translation": "Быстрое автодополнение. Он подсказывает;\nрешаете и делаете работу вы.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 531,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "pl_attr",
+      "text": "Interface    a chat box\nMode         suggestion\nScope        one turn, one snippet\nYou hold     all the work — and the risk",
+      "translation": "Интерфейс    окно чата\nРежим        подсказка\nОхват        один ход, один фрагмент\nНа вас       вся работа — и весь риск",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 531,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "pl_dz",
+      "text": "DESIGN GOAL  ·  delight under conversation",
+      "translation": "ЦЕЛЬ ДИЗАЙНА  ·  восторг в разговоре",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 531,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "pr_h",
+      "text": "THE DELEGATE",
+      "translation": "ИСПОЛНИТЕЛЬ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 531,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "pr_s",
+      "text": "the colleague this book is about",
+      "translation": "коллега, о котором эта книга",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 531,
+      "budget_chars_per_line": 68
+    },
+    {
+      "id": "pr_char",
+      "text": "A candidate worker. It plans, acts,\nand adapts; you steer and supervise.",
+      "translation": "Кандидат в работники. Он планирует, действует\nи подстраивается; вы направляете и следите.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 531,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "pr_attr",
+      "text": "Interface    more than a chat\nMode         delegated execution\nScope        long-running, high-stakes\nYou hold     judgment, steering, accountability",
+      "translation": "Интерфейс    больше, чем чат\nРежим        делегированное исполнение\nОхват        долгие задачи, высокие ставки\nНа вас       суждение, курс, ответственность",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 531,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "pr_dz",
+      "text": "DESIGN PROBLEM  ·  trust under action",
+      "translation": "ЗАДАЧА ДИЗАЙНА  ·  доверие в действии",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 531,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "suggest  to  act",
+      "translation": "подсказать  →  сделать",
+      "where": "free text"
+    },
+    {
+      "id": "q_lbl",
+      "text": "THE CENTRAL QUESTION",
+      "translation": "ГЛАВНЫЙ ВОПРОС",
+      "where": "free text"
+    },
+    {
+      "id": "q_text",
+      "text": "What must be true before teams can trust AI to do delegated work?",
+      "translation": "Что должно быть верно, чтобы команды доверили ИИ делегированную работу?",
+      "where": "bound to rectangle q_banner (wraps)",
+      "budget_px": 1070,
+      "budget_chars_per_line": 81
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 1 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 1",
+      "where": "free text"
+    },
+    {
+      "id": "claims_s",
+      "text": "Four claims that frame the whole book.",
+      "translation": "Четыре тезиса, на которых стоит вся книга.",
+      "where": "free text"
+    },
+    {
+      "id": "b1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse b1 (wraps)",
+      "budget_px": 17,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "c1",
+      "text": "The real transition is from suggestion\nto delegated execution.",
+      "translation": "Настоящий переход — от подсказки\nк делегированному исполнению.",
+      "where": "free text"
+    },
+    {
+      "id": "b2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse b2 (wraps)",
+      "budget_px": 17,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "c2",
+      "text": "Chat alone is an inadequate interface for\ncomplex, long-running, or high-stakes work.",
+      "translation": "Одного чата мало для сложной, долгой\nили ответственной работы.",
+      "where": "free text"
+    },
+    {
+      "id": "b3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse b3 (wraps)",
+      "budget_px": 17,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "c3",
+      "text": "Reliability comes less from model cleverness\nthan from the surrounding scaffolding.",
+      "translation": "Надёжность даёт не столько ум модели,\nсколько обвязка вокруг неё.",
+      "where": "free text"
+    },
+    {
+      "id": "b4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse b4 (wraps)",
+      "budget_px": 17,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "c4",
+      "text": "The core design problem is trust under action —\nnot delight under conversation.",
+      "translation": "Главная задача дизайна — доверие в действии,\nа не восторг в разговоре.",
+      "where": "free text"
+    },
+    {
+      "id": "quotes_h",
+      "text": "FROM THE SOURCE",
+      "translation": "ИЗ ИСТОЧНИКОВ",
+      "where": "free text"
+    },
+    {
+      "id": "quotes_s",
+      "text": "Corpus voices behind the claims.",
+      "translation": "Голоса корпуса за этими тезисами.",
+      "where": "free text"
+    },
+    {
+      "id": "qc1q",
+      "text": "“Vertical AI and complex agents need\nmore than just the chat.”",
+      "translation": "«Вертикальному ИИ и сложным агентам\nнужно больше, чем просто чат».",
+      "where": "free text inside rectangle qc1",
+      "budget_px": 613,
+      "budget_chars_per_line": 72
+    },
+    {
+      "id": "qc1a",
+      "text": "Jacob Lauritzen · CTO, Legora · video #3",
+      "translation": "Джейкоб Лауритцен · CTO, Legora · видео #3",
+      "where": "free text inside rectangle qc1",
+      "budget_px": 613,
+      "budget_chars_per_line": 85
+    },
+    {
+      "id": "qc2q",
+      "text": "“Agents have capabilities, but not always\nthe expertise we need for real work.”",
+      "translation": "«У агентов есть возможности, но не всегда\nесть экспертиза для настоящей работы».",
+      "where": "free text inside rectangle qc2",
+      "budget_px": 613,
+      "budget_chars_per_line": 72
+    },
+    {
+      "id": "qc2a",
+      "text": "Barry Zhang & Mahesh Murag · Anthropic · video #83",
+      "translation": "Барри Чжан и Махеш Мураг · Anthropic · видео #83",
+      "where": "free text inside rectangle qc2",
+      "budget_px": 613,
+      "budget_chars_per_line": 85
+    },
+    {
+      "id": "qc3q",
+      "text": "“From copilot to colleague —\nsystems that plan, act, and adapt.”",
+      "translation": "«От напарника к коллеге — системы,\nкоторые планируют, действуют и подстраиваются».",
+      "where": "free text inside rectangle qc3",
+      "budget_px": 613,
+      "budget_chars_per_line": 72
+    },
+    {
+      "id": "qc3a",
+      "text": "Joel Hron · CTO, Thomson Reuters · video #206",
+      "translation": "Джоэл Хрон · CTO, Thomson Reuters · видео #206",
+      "where": "free text inside rectangle qc3",
+      "budget_px": 613,
+      "budget_chars_per_line": 85
+    }
+  ]
+}

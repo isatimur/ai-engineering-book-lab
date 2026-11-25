@@ -1,0 +1,84 @@
+{
+  "source": "diagrams/inline/ch01-fig1-assistant-copilot-delegate.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 1  ·  FIGURE 1",
+      "translation": "ГЛАВА 1  ·  РИСУНОК 1",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Three rungs: assistant, copilot, delegate",
+      "translation": "Три ступени: ассистент, напарник, исполнитель",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Each rung delegates more of the work — and more of the failure surface.",
+      "translation": "Каждая ступень передаёт больше работы — и больше места для ошибок.",
+      "where": "free text"
+    },
+    {
+      "id": "step1t",
+      "text": "ASSISTANT\nsuggests",
+      "translation": "АССИСТЕНТ\nподсказывает",
+      "where": "free text inside rectangle step1",
+      "budget_px": 205,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "step1c",
+      "text": "“tell me”",
+      "translation": "«скажи мне»",
+      "where": "free text"
+    },
+    {
+      "id": "step2t",
+      "text": "COPILOT\ncollaborates in-loop",
+      "translation": "НАПАРНИК\nработает вместе с вами",
+      "where": "free text inside rectangle step2",
+      "budget_px": 205,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "step2c",
+      "text": "“build it with me”",
+      "translation": "«сделай со мной»",
+      "where": "free text"
+    },
+    {
+      "id": "step3t",
+      "text": "DELEGATE\nreturns an artifact",
+      "translation": "ИСПОЛНИТЕЛЬ\nсдаёт результат",
+      "where": "free text inside rectangle step3",
+      "budget_px": 205,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "step3c",
+      "text": "“go do — come back done”",
+      "translation": "«сделай и вернись с готовым»",
+      "where": "free text"
+    },
+    {
+      "id": "axis",
+      "text": "rising delegation  →  rising trust required",
+      "translation": "больше делегирования  →  нужно больше доверия",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "The book's frontier: the engineering difficulty clusters on the third rung.",
+      "translation": "Передний край книги: вся инженерная сложность — на третьей ступени.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Joel Hron, CTO Thomson Reuters · corpus video #206",
+      "translation": "— Джоэл Хрон, CTO Thomson Reuters · видео корпуса #206",
+      "where": "free text"
+    }
+  ]
+}

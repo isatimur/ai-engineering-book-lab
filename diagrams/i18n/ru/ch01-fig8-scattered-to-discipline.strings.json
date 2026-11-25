@@ -1,0 +1,146 @@
+{
+  "source": "diagrams/inline/ch01-fig8-scattered-to-discipline.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "g12259",
+      "text": "CHAPTER 1  ·  THE SHIFT: FROM ASSISTANT TO DELEGATE",
+      "translation": "ГЛАВА 1  ·  СДВИГ: ОТ АССИСТЕНТА К ИСПОЛНИТЕЛЮ",
+      "where": "free text"
+    },
+    {
+      "id": "g12262",
+      "text": "Not Subcultures — One Discipline",
+      "translation": "Не субкультуры — одна дисциплина",
+      "where": "free text"
+    },
+    {
+      "id": "g12271",
+      "text": "Scattered practices converge on one question: is the delegated work trustworthy?",
+      "translation": "Разрозненные практики сходятся к одному вопросу: можно ли доверять делегированной работе?",
+      "where": "free text"
+    },
+    {
+      "id": "g12274",
+      "text": "TREATED AS SEPARATE SUBCULTURES",
+      "translation": "ИХ СЧИТАЮТ ОТДЕЛЬНЫМИ СУБКУЛЬТУРАМИ",
+      "where": "free text"
+    },
+    {
+      "id": "g12280",
+      "text": "prompting",
+      "translation": "промптинг",
+      "where": "free text inside rectangle g12277",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12286",
+      "text": "retrieval",
+      "translation": "поиск",
+      "where": "free text inside rectangle g12283",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12292",
+      "text": "evals",
+      "translation": "оценки",
+      "where": "free text inside rectangle g12289",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12298",
+      "text": "workflow engines",
+      "translation": "движки процессов",
+      "where": "free text inside rectangle g12295",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12304",
+      "text": "guardrails",
+      "translation": "ограничители",
+      "where": "free text inside rectangle g12301",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12310",
+      "text": "tool protocols",
+      "translation": "протоколы",
+      "where": "free text inside rectangle g12307",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12316",
+      "text": "observability",
+      "translation": "наблюдаемость",
+      "where": "free text inside rectangle g12313",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12322",
+      "text": "sandboxing",
+      "translation": "песочницы",
+      "where": "free text inside rectangle g12319",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12328",
+      "text": "policy files",
+      "translation": "файлы политик",
+      "where": "free text inside rectangle g12325",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12334",
+      "text": "approval systems",
+      "translation": "согласования",
+      "where": "free text inside rectangle g12331",
+      "budget_px": 134,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g12349",
+      "text": "ONE DISCIPLINE",
+      "translation": "ОДНА ДИСЦИПЛИНА",
+      "where": "free text inside rectangle g12346",
+      "budget_px": 398,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12352",
+      "text": "AI engineering — making delegated\nmachine work trustworthy",
+      "translation": "AI-инженерия — делать машинную\nработу достойной доверия",
+      "where": "free text inside rectangle g12346",
+      "budget_px": 398,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g12355",
+      "text": "keeps returning to:",
+      "translation": "снова и снова спрашивает:",
+      "where": "free text"
+    },
+    {
+      "id": "g12358",
+      "text": "· is the environment legible?\n· do goals survive handoff?\n· can we tell it's doing useful work?\n· right info, right shape, right time?\n· can work persist, recover, be supervised?\n· where act freely vs. human decisive?",
+      "translation": "· понятна ли среда?\n· доходят ли цели при передаче?\n· видно ли, что работа полезна?\n· та информация, в той форме, вовремя?\n· переживёт ли работа сбой, видна ли она?\n· где свобода, а где решает человек?",
+      "where": "free text"
+    },
+    {
+      "id": "g12364",
+      "text": "Not rival subcultures — pieces of one discipline: making delegated machine work trustworthy.",
+      "translation": "Не соперничающие субкультуры, а одна дисциплина: доверие к делегированной машинной работе.",
+      "where": "free text inside rectangle g12361",
+      "budget_px": 813,
+      "budget_chars_per_line": 96
+    }
+  ]
+}
