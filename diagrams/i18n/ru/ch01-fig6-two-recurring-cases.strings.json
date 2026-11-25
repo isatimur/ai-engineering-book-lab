@@ -1,0 +1,160 @@
+{
+  "source": "diagrams/inline/ch01-fig6-two-recurring-cases.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "g12082",
+      "text": "CHAPTER 1  ·  THE SHIFT: FROM ASSISTANT TO DELEGATE",
+      "translation": "ГЛАВА 1  ·  СДВИГ: ОТ АССИСТЕНТА К ИСПОЛНИТЕЛЮ",
+      "where": "free text"
+    },
+    {
+      "id": "g12085",
+      "text": "Two Cases, One Pattern",
+      "translation": "Два случая, один шаблон",
+      "where": "free text"
+    },
+    {
+      "id": "g12094",
+      "text": "Two composite stories track the same shift across very different work.",
+      "translation": "Две собирательные истории прослеживают один сдвиг в очень разной работе.",
+      "where": "free text"
+    },
+    {
+      "id": "g12100",
+      "text": "SOFTWARE FACTORY",
+      "translation": "ФАБРИКА СОФТА",
+      "where": "free text inside rectangle g12097",
+      "budget_px": 400,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g12103",
+      "text": "“Meridian” · mid-size fintech",
+      "translation": "«Меридиан» · финтех среднего размера",
+      "where": "free text inside rectangle g12097",
+      "budget_px": 400,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12106",
+      "text": "payments repo  +  strong coding model",
+      "translation": "репозиторий платежей  +  сильная модель",
+      "where": "free text inside rectangle g12097",
+      "budget_px": 400,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12109",
+      "text": "magical on small tasks → scope grows → quality erratic",
+      "translation": "чудеса на мелочах → задачи растут → качество скачет",
+      "where": "free text inside rectangle g12097",
+      "budget_px": 400,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g12115",
+      "text": "must add:",
+      "translation": "нужно добавить:",
+      "where": "free text inside rectangle g12112",
+      "budget_px": 351,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g12118",
+      "text": "harnesses · specs · validation\ncontext discipline · eval loops · review surfaces",
+      "translation": "обвязку · спецификации · валидацию\nдисциплину контекста · оценки · ревью",
+      "where": "free text inside rectangle g12097",
+      "budget_px": 371,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12124",
+      "text": "output: software",
+      "translation": "результат: код",
+      "where": "free text inside rectangle g12121",
+      "budget_px": 165,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g12130",
+      "text": "drives Ch 3 · 4 · 6",
+      "translation": "ведёт к гл. 3 · 4 · 6",
+      "where": "free text inside rectangle g12127",
+      "budget_px": 165,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g12136",
+      "text": "HIGH-STAKES COLLEAGUE",
+      "translation": "КОЛЛЕГА ДЛЯ ВЫСОКИХ СТАВОК",
+      "where": "free text inside rectangle g12133",
+      "budget_px": 400,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g12139",
+      "text": "“Hargrove” · mid-tier tax & advisory firm",
+      "translation": "«Харгроув» · налоговая и консалтинговая фирма",
+      "where": "free text inside rectangle g12133",
+      "budget_px": 400,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g12142",
+      "text": "a conversational assistant that summarizes & explains",
+      "translation": "чат-ассистент: пересказывает, объясняет",
+      "where": "free text inside rectangle g12133",
+      "budget_px": 400,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g12145",
+      "text": "helpful chat → asked for real work → fluency isn't enough",
+      "translation": "полезный чат → нужна работа → слов мало",
+      "where": "free text inside rectangle g12133",
+      "budget_px": 400,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g12151",
+      "text": "must add:",
+      "translation": "нужно добавить:",
+      "where": "free text inside rectangle g12148",
+      "budget_px": 351,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g12154",
+      "text": "provenance · access boundaries · retrieval\nstaged authority · durable runs · review points",
+      "translation": "источники · границы доступа · поиск\nступени прав · надёжные запуски · ревью",
+      "where": "free text inside rectangle g12148",
+      "budget_px": 351,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12160",
+      "text": "output: judgment",
+      "translation": "результат: суждение",
+      "where": "free text inside rectangle g12157",
+      "budget_px": 165,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g12166",
+      "text": "drives Ch 5 · 6 · 7",
+      "translation": "ведёт к гл. 5 · 6 · 7",
+      "where": "free text inside rectangle g12163",
+      "budget_px": 165,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g12172",
+      "text": "Both cases, one pattern: the more valuable the delegated work, the more the surrounding system matters.",
+      "translation": "Один шаблон: чем ценнее делегированная работа, тем важнее система вокруг неё.",
+      "where": "free text inside rectangle g12169",
+      "budget_px": 813,
+      "budget_chars_per_line": 104
+    }
+  ]
+}

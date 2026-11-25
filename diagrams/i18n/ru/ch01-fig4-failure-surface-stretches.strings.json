@@ -1,0 +1,150 @@
+{
+  "source": "diagrams/inline/ch01-fig4-failure-surface-stretches.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "g9001",
+      "text": "CHAPTER 1  ·  THE SHIFT: FROM ASSISTANT TO DELEGATE",
+      "translation": "ГЛАВА 1  ·  СДВИГ: ОТ АССИСТЕНТА К ИСПОЛНИТЕЛЮ",
+      "where": "free text"
+    },
+    {
+      "id": "g9004",
+      "text": "The Failure Surface Stretches",
+      "translation": "Зона ошибок растягивается",
+      "where": "free text"
+    },
+    {
+      "id": "g9013",
+      "text": "Suggestion is supervised by construction. Delegation isn't.",
+      "translation": "Подсказку человек проверяет по определению. Делегирование — нет.",
+      "where": "free text"
+    },
+    {
+      "id": "g9016",
+      "text": "ASSISTANT — “tell me”   ·   human reads every word",
+      "translation": "АССИСТЕНТ — «скажи мне»   ·   человек читает каждое слово",
+      "where": "free text"
+    },
+    {
+      "id": "g9022",
+      "text": "Ask",
+      "translation": "Вопрос",
+      "where": "free text inside rectangle g9019",
+      "budget_px": 110,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9031",
+      "text": "Suggest",
+      "translation": "Подсказка",
+      "where": "free text inside rectangle g9028",
+      "budget_px": 140,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g9040",
+      "text": "Human reads  ✓",
+      "translation": "Человек читает ✓",
+      "where": "free text inside rectangle g9037",
+      "budget_px": 170,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "g9043",
+      "text": "✗ caught here",
+      "translation": "✗ поймана здесь",
+      "where": "free text"
+    },
+    {
+      "id": "g9049",
+      "text": "failure surface: one response",
+      "translation": "зона ошибок: один ответ",
+      "where": "free text"
+    },
+    {
+      "id": "g9052",
+      "text": "a wrong suggestion = a wrong sentence, caught in context",
+      "translation": "неверная подсказка = неверная фраза, её видно сразу",
+      "where": "free text"
+    },
+    {
+      "id": "g9055",
+      "text": "DELEGATE — “go do”   ·   human waits for the result",
+      "translation": "ИСПОЛНИТЕЛЬ — «сделай»   ·   человек ждёт результат",
+      "where": "free text"
+    },
+    {
+      "id": "g9061",
+      "text": "Delegate",
+      "translation": "Поручить",
+      "where": "free text inside rectangle g9058",
+      "budget_px": 110,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9067",
+      "text": "step 1",
+      "translation": "шаг 1",
+      "where": "free text inside rectangle g9064",
+      "budget_px": 100,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9076",
+      "text": "step 2  ✗",
+      "translation": "шаг 2  ✗",
+      "where": "free text inside rectangle g9073",
+      "budget_px": 100,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9085",
+      "text": "step 3\nbuilt on",
+      "translation": "шаг 3\nна нём",
+      "where": "free text inside rectangle g9082",
+      "budget_px": 100,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9094",
+      "text": "step 4\nbuilt on",
+      "translation": "шаг 4\nна нём",
+      "where": "free text inside rectangle g9091",
+      "budget_px": 100,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g9106",
+      "text": "Review  👁",
+      "translation": "Ревью  👁",
+      "where": "free text inside rectangle g9103",
+      "budget_px": 160,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g9109",
+      "text": "✗ surfaces here — downstream",
+      "translation": "✗ всплывает здесь — ниже по цепочке",
+      "where": "free text"
+    },
+    {
+      "id": "g9115",
+      "text": "failure surface: the whole workflow",
+      "translation": "зона ошибок: весь процесс",
+      "where": "free text"
+    },
+    {
+      "id": "g9118",
+      "text": "a wrong delegated action = a wrong artifact other work now depends on",
+      "translation": "неверное действие = неверный результат, на котором уже стоит другая работа",
+      "where": "free text"
+    },
+    {
+      "id": "g9124",
+      "text": "The error no longer surfaces when it happens — it surfaces later, after it has been built on.",
+      "translation": "Ошибка всплывает не тогда, когда случилась, а позже — когда на ней уже построено.",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "source": "diagrams/inline/ch01-fig3-chat-is-the-tip.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 1  ·  FIGURE 3",
+      "translation": "ГЛАВА 1  ·  РИСУНОК 3",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Chat is the visible surface",
+      "translation": "Чат — лишь видимая часть",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Once AI does real work, the surrounding system does the reliability work.",
+      "translation": "Когда ИИ делает настоящую работу, надёжность обеспечивает система вокруг.",
+      "where": "free text"
+    },
+    {
+      "id": "tipt",
+      "text": "CHAT\nwhat the user sees",
+      "translation": "ЧАТ\nто, что видит человек",
+      "where": "free text inside rectangle tip",
+      "budget_px": 190,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "waterlbl",
+      "text": "the part nobody demos  ↓",
+      "translation": "то, что не показывают на демо  ↓",
+      "where": "free text"
+    },
+    {
+      "id": "baseh",
+      "text": "THE REAL PRODUCT  —  RELIABILITY SCAFFOLDING",
+      "translation": "НАСТОЯЩИЙ ПРОДУКТ  —  ОБВЯЗКА НАДЁЖНОСТИ",
+      "where": "free text inside rectangle base",
+      "budget_px": 509,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "c1t",
+      "text": "context assembly",
+      "translation": "сборка контекста",
+      "where": "free text inside rectangle c1",
+      "budget_px": 150,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "c2t",
+      "text": "tool access",
+      "translation": "инструменты",
+      "where": "free text inside rectangle c2",
+      "budget_px": 150,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "c3t",
+      "text": "durable state",
+      "translation": "надёжное состояние",
+      "where": "free text inside rectangle c3",
+      "budget_px": 150,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "c4t",
+      "text": "quality checks",
+      "translation": "проверки качества",
+      "where": "free text inside rectangle c4",
+      "budget_px": 150,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "c5t",
+      "text": "review layers",
+      "translation": "слои ревью",
+      "where": "free text inside rectangle c5",
+      "budget_px": 150,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "c6t",
+      "text": "observability",
+      "translation": "наблюдаемость",
+      "where": "free text inside rectangle c6",
+      "budget_px": 150,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "basenote",
+      "text": "Workflow structure, traces, side panels, memory, review queues —\nthe scaffolding keeps growing because it carries the reliability.",
+      "translation": "Структура процесса, трейсы, боковые панели, память, очереди ревью —\nобвязка растёт, потому что именно она несёт надёжность.",
+      "where": "free text inside rectangle base",
+      "budget_px": 509,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "caption",
+      "text": "“Vertical AI and complex agents need more than just the chat.”",
+      "translation": "«Вертикальному ИИ и сложным агентам нужно больше, чем просто чат».",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Jacob Lauritzen, CTO Legora · corpus video #3",
+      "translation": "— Джейкоб Лауритцен, CTO Legora · видео корпуса #3",
+      "where": "free text"
+    }
+  ]
+}

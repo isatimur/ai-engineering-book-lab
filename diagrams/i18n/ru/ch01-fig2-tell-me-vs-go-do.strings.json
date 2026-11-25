@@ -1,0 +1,106 @@
+{
+  "source": "diagrams/inline/ch01-fig2-tell-me-vs-go-do.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 1  ·  FIGURE 2",
+      "translation": "ГЛАВА 1  ·  РИСУНОК 2",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "“Tell me” becomes “go do”",
+      "translation": "«Скажи мне» становится «сделай»",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "When the request changes from answer to action, the standard changes too.",
+      "translation": "Когда вместо ответа просят действие, меняется и планка.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "ANSWER PRODUCTION",
+      "translation": "ОТВЕТЫ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 287,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "pl_t",
+      "text": "“Tell me”",
+      "translation": "«Скажи мне»",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 287,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "pl_code",
+      "text": "Summarize this thread.\nExplain how OAuth works.\nDraft a tweet about X.\n\n→ verdict: was it helpful?",
+      "translation": "Перескажи эту переписку.\nОбъясни, как работает OAuth.\nНабросай пост про X.\n\n→ вердикт: помогло?",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 253,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "pl_take",
+      "text": "Bar: sounds plausible.\nFailure is just a bad answer.",
+      "translation": "Планка: звучит правдоподобно.\nОшибка — просто плохой ответ.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 287,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "pr_h",
+      "text": "DELEGATED EXECUTION",
+      "translation": "ДЕЛЕГИРОВАННОЕ ИСПОЛНЕНИЕ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 287,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "pr_t",
+      "text": "“Go do”",
+      "translation": "«Сделай»",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 287,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "pr_code",
+      "text": "Refactor the auth service.\nTriage the support queue.\nInvestigate the failure.\n\n→ verdict: can I ship it?",
+      "translation": "Перепиши сервис авторизации.\nРазбери очередь поддержки.\nРасследуй сбой.\n\n→ вердикт: можно выкатывать?",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 253,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "pr_take",
+      "text": "Bar: produces an artifact.\nFailure shapes real work.",
+      "translation": "Планка: готовый результат.\nОшибка меняет настоящую работу.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 287,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "shift_lbl",
+      "text": "the\nshift",
+      "translation": "сдвиг",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Delegation moves the failure surface from saying things to shaping work.",
+      "translation": "Делегирование переносит ошибки из слов в саму работу.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Jacob Lauritzen, CTO Legora · corpus video #3",
+      "translation": "— Джейкоб Лауритцен, CTO Legora · видео корпуса #3",
+      "where": "free text"
+    }
+  ]
+}

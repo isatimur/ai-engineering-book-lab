@@ -1,0 +1,128 @@
+{
+  "source": "diagrams/inline/ch01-fig5-capability-vs-expertise.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "g12001",
+      "text": "CHAPTER 1  ·  THE SHIFT: FROM ASSISTANT TO DELEGATE",
+      "translation": "ГЛАВА 1  ·  СДВИГ: ОТ АССИСТЕНТА К ИСПОЛНИТЕЛЮ",
+      "where": "free text"
+    },
+    {
+      "id": "g12004",
+      "text": "Capability Is Not Expertise",
+      "translation": "Способности — не экспертиза",
+      "where": "free text"
+    },
+    {
+      "id": "g12013",
+      "text": "A stronger model raises the ceiling. It does not supply the missing know-how.",
+      "translation": "Сильная модель поднимает потолок. Но недостающих знаний она не даёт.",
+      "where": "free text"
+    },
+    {
+      "id": "g12019",
+      "text": "RAW CAPABILITY",
+      "translation": "ГОЛЫЕ СПОСОБНОСТИ",
+      "where": "free text inside rectangle g12016",
+      "budget_px": 370,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g12025",
+      "text": "300-IQ mathematician",
+      "translation": "математик с IQ 300",
+      "where": "free text inside rectangle g12022",
+      "budget_px": 310,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g12028",
+      "text": "asked to derive the 2025 tax code\nfrom first principles",
+      "translation": "выводит налоговый кодекс 2025 года\nиз первых принципов",
+      "where": "free text inside rectangle g12016",
+      "budget_px": 370,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12034",
+      "text": "brilliant · inconsistent ·\nwrong in ways that pass a glance",
+      "translation": "блестяще · непоследовательно ·\nошибки не видны с первого взгляда",
+      "where": "free text inside rectangle g12031",
+      "budget_px": 310,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g12040",
+      "text": "SUPPLIED EXPERTISE",
+      "translation": "ПЕРЕДАННАЯ ЭКСПЕРТИЗА",
+      "where": "free text inside rectangle g12037",
+      "budget_px": 370,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g12046",
+      "text": "experienced tax professional",
+      "translation": "опытный налоговый консультант",
+      "where": "free text inside rectangle g12043",
+      "budget_px": 310,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "g12049",
+      "text": "asked to apply the known\nprocedure, consistently",
+      "translation": "применяет известную процедуру,\nкаждый раз одинаково",
+      "where": "free text inside rectangle g12037",
+      "budget_px": 370,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g12055",
+      "text": "dependable · inspectable ·\nrepeatable under review",
+      "translation": "надёжно · проверяемо ·\nповторяемо при ревью",
+      "where": "free text inside rectangle g12052",
+      "budget_px": 310,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g12058",
+      "text": "what you\nactually need",
+      "translation": "вот что\nнужно",
+      "where": "free text"
+    },
+    {
+      "id": "g12064",
+      "text": "The move — don't wait for capability to grow into expertise:",
+      "translation": "Ход — не ждать, пока способности дорастут до экспертизы:",
+      "where": "free text"
+    },
+    {
+      "id": "g12067",
+      "text": "package the missing context, conventions & procedures as reusable skills the agent loads.",
+      "translation": "упакуйте недостающий контекст, правила и процедуры в навыки, которые агент загружает.",
+      "where": "free text"
+    },
+    {
+      "id": "g12073",
+      "text": "\"Agents have intelligence and capabilities, but not always expertise that we need for real work.\"",
+      "translation": "«У агентов есть интеллект и возможности, но не всегда есть экспертиза для настоящей работы».",
+      "where": "free text inside rectangle g12070",
+      "budget_px": 813,
+      "budget_chars_per_line": 96
+    },
+    {
+      "id": "g12076",
+      "text": "— Barry Zhang & Mahesh Murag, Anthropic  ·  corpus video #83",
+      "translation": "— Барри Чжан и Махеш Мураг, Anthropic  ·  видео корпуса #83",
+      "where": "free text inside rectangle g12070",
+      "budget_px": 813,
+      "budget_chars_per_line": 112
+    },
+    {
+      "id": "g12079",
+      "text": "Capability amplifies the workflow it runs inside: a strong model makes a good system better, a weak one worse.",
+      "translation": "Способности усиливают процесс, в котором работают: хорошую систему сильная модель делает лучше, слабую — хуже.",
+      "where": "free text"
+    }
+  ]
+}

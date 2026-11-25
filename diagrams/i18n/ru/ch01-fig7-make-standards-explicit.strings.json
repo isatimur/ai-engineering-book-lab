@@ -1,0 +1,140 @@
+{
+  "source": "diagrams/inline/ch01-fig7-make-standards-explicit.excalidraw",
+  "lang": "ru",
+  "strings": [
+    {
+      "id": "g12175",
+      "text": "CHAPTER 1  ·  THE SHIFT: FROM ASSISTANT TO DELEGATE",
+      "translation": "ГЛАВА 1  ·  СДВИГ: ОТ АССИСТЕНТА К ИСПОЛНИТЕЛЮ",
+      "where": "free text"
+    },
+    {
+      "id": "g12178",
+      "text": "Make the Standard Explicit",
+      "translation": "Сделайте стандарт явным",
+      "where": "free text"
+    },
+    {
+      "id": "g12187",
+      "text": "A standard has to be made explicit before it can be delegated — or it's violated silently.",
+      "translation": "Стандарт нужно записать до того, как его делегировать, — иначе его молча нарушат.",
+      "where": "free text"
+    },
+    {
+      "id": "g12193",
+      "text": "TACIT JUDGMENT",
+      "translation": "НЕЯВНОЕ СУЖДЕНИЕ",
+      "where": "free text inside rectangle g12190",
+      "budget_px": 350,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g12196",
+      "text": "carried in senior heads · never written down",
+      "translation": "живёт в головах сеньоров · нигде не записано",
+      "where": "free text inside rectangle g12190",
+      "budget_px": 350,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g12199",
+      "text": "SOFTWARE",
+      "translation": "СОФТ",
+      "where": "free text inside rectangle g12190",
+      "budget_px": 333,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "g12202",
+      "text": "local conventions\narchitecture taste\ndependency discipline\nrollback instinct\nperformance habits",
+      "translation": "местные соглашения\nвкус в архитектуре\nдисциплина зависимостей\nчутьё на откат\nпривычки к скорости",
+      "where": "free text inside rectangle g12190",
+      "budget_px": 333,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "g12205",
+      "text": "PROFESSIONAL",
+      "translation": "ПРОФЕССИЯ",
+      "where": "free text inside rectangle g12190",
+      "budget_px": 163,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g12208",
+      "text": "source hierarchy\nprovenance awareness\nexception handling\ndomain caution\n“ready to trust?”",
+      "translation": "иерархия источников\nвнимание к источникам\nразбор исключений\nосторожность в теме\n«можно доверять?»",
+      "where": "free text inside rectangle g12190",
+      "budget_px": 163,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g12217",
+      "text": "made explicit\nbefore\ndelegating?",
+      "translation": "записан\nдо\nделегирования?",
+      "where": "free text inside rectangle g12214",
+      "budget_px": 140,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g12223",
+      "text": "yes",
+      "translation": "да",
+      "where": "free text"
+    },
+    {
+      "id": "g12229",
+      "text": "DELEGABLE",
+      "translation": "ДЕЛЕГИРУЕМО",
+      "where": "free text inside rectangle g12226",
+      "budget_px": 218,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g12232",
+      "text": "survives handoff intact",
+      "translation": "переживает передачу",
+      "where": "free text inside rectangle g12226",
+      "budget_px": 218,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g12238",
+      "text": "no",
+      "translation": "нет",
+      "where": "free text"
+    },
+    {
+      "id": "g12244",
+      "text": "VIOLATED SILENTLY",
+      "translation": "НАРУШЕН МОЛЧА",
+      "where": "free text inside rectangle g12241",
+      "budget_px": 218,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g12247",
+      "text": "the org never externalized it",
+      "translation": "организация его не записала",
+      "where": "free text inside rectangle g12241",
+      "budget_px": 218,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g12253",
+      "text": "Cheap generation doesn't retire taste — it promotes it.",
+      "translation": "Дешёвая генерация не отменяет вкус — она его повышает.",
+      "where": "free text inside rectangle g12250",
+      "budget_px": 813,
+      "budget_chars_per_line": 90
+    },
+    {
+      "id": "g12256",
+      "text": "The new scarce skill: setting standards, framing tasks, and spotting slop before the system does.",
+      "translation": "Новый редкий навык: задавать стандарты, ставить задачи и видеть халтуру раньше системы.",
+      "where": "free text inside rectangle g12250",
+      "budget_px": 813,
+      "budget_chars_per_line": 96
+    }
+  ]
+}
