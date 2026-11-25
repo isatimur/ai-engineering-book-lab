@@ -37,6 +37,8 @@ import {
   thirdBookChapterStaticPaths,
 } from './pages/ThirdBookChapterDetail';
 
+import { BookOneExcerpt, SecondBookExcerpt, ThirdBookExcerpt } from './pages/BookExcerpt';
+
 import { SettingsProvider, AppLayout } from './context/SettingsContext';
 import { PRESS_ORIGIN } from './data/book';
 
@@ -81,6 +83,10 @@ export const routes: RouteRecord[] = [
         getStaticPaths: () => manifest.maps.map((m) => `visual-guide/maps/${m.id}`),
       },
       { path: 'read', element: <Reader /> },
+      // One scroll-driven excerpt per book (pages/BookExcerpt.tsx). Book 1's
+      // sits at the root like its other top-level pages; books 2 and 3 sit
+      // under their own prefix, before `:slug`.
+      { path: 'excerpt', element: <BookOneExcerpt /> },
       { path: 'books', element: <Books /> },
       // The press homepage. vercel.json serves it at aiepress.com/.
       { path: 'press', element: <Press /> },
@@ -107,6 +113,7 @@ export const routes: RouteRecord[] = [
       { path: 'second-book', element: <SecondBookReader /> },
       { path: 'second-book/graph', element: <SecondBookGraph /> },
       { path: 'second-book/figures', element: <SecondBookFigures /> },
+      { path: 'second-book/excerpt', element: <SecondBookExcerpt /> },
       {
         path: 'second-book/:slug',
         element: <SecondBookChapterDetail />,
@@ -115,6 +122,7 @@ export const routes: RouteRecord[] = [
       { path: 'third-book', element: <ThirdBookReader /> },
       { path: 'third-book/graph', element: <ThirdBookGraph /> },
       { path: 'third-book/figures', element: <ThirdBookFigures /> },
+      { path: 'third-book/excerpt', element: <ThirdBookExcerpt /> },
       {
         path: 'third-book/:slug',
         element: <ThirdBookChapterDetail />,

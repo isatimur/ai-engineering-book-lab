@@ -19,6 +19,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://aiepress.com/second-book/excerpt</loc>
+    <lastmod>2026-11-25T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://aiepress.com/second-book/the-turn-to-rl</loc>
     <lastmod>2026-09-17T14:43:01+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -71,6 +77,12 @@
     <lastmod>2026-11-20T23:24:46Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aiepress.com/third-book/excerpt</loc>
+    <lastmod>2026-11-25T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aiepress.com/third-book/the-bottleneck-moved</loc>
