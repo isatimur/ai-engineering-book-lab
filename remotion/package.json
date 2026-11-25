@@ -13,6 +13,7 @@
     "render:og:draft": "node scripts/render-og-cards-draft.mjs",
     "check:explainers:draft": "node scripts/check-explainer-specs.mjs",
     "render:explainers:draft": "node scripts/render-draft-explainers.mjs",
+    "music:explainers": "node scripts/add-music.mjs",
     "upgrade": "remotion upgrade"
   },
   "dependencies": {

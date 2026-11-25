@@ -10,7 +10,8 @@ scripts.
 - `[render-og-cards.mjs]` — run with `npm run render:og`. Renders one `OgCard` still per chapter.
 - `[render-og-cards-draft.mjs]` — `npm run render:og:draft`. Share cards for books 2 and 3, straight into `website/public/og/`.
 - `[check-explainer-specs.mjs]` — `npm run check:explainers:draft`. Fails when a spec's quote is not its anchor's words in order, or the anchor's start differs.
-- `[render-draft-explainers.mjs]` — `npm run render:explainers:draft`. Renders book 2/3 explainers and writes `website/src/data/draftVideos.json`.
+- `[render-draft-explainers.mjs]` — `npm run render:explainers:draft`. Renders book 2/3 explainers, adds their music and writes `website/src/data/draftVideos.json`.
+- `[add-music.mjs]` — `npm run music:explainers -- <book> <file.mp4>...`. Lays `public/music/book{1,2,3}.m4a` under an mp4 in place (video copied, audio replaced).
 - `[render-og-cards.mjs:CHAPTERS]` — hard-coded `[chapterNumber, title, promise]` tuples for chapters 01 to 10.
 
 ## Invariants
