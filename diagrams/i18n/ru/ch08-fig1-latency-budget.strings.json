@@ -1,0 +1,102 @@
+{
+  "source": "diagrams/inline/ch08-fig1-latency-budget.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 8  ·  THE LATENCY BUDGET",
+      "translation": "ГЛАВА 8  ·  БЮДЖЕТ ЗАДЕРЖКИ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Latency is a budget, not a number",
+      "translation": "Задержка — это бюджет, а не число",
+      "where": "free text"
+    },
+    {
+      "id": "budget_lbl",
+      "text": "ONE SPOKEN TURN  —  TARGET ≈ 800 ms END TO END",
+      "translation": "ОДНА РЕПЛИКА  —  ЦЕЛЬ ≈ 800 мс ОТ НАЧАЛА ДО КОНЦА",
+      "where": "free text"
+    },
+    {
+      "id": "seg_asr_t",
+      "text": "recognize\n~120 ms",
+      "translation": "распознать\n~120 мс",
+      "where": "free text inside rectangle seg_asr",
+      "budget_px": 86,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "seg_reason_t",
+      "text": "reason\n~140 ms",
+      "translation": "подумать\n~140 мс",
+      "where": "free text inside rectangle seg_reason",
+      "budget_px": 100,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "seg_retr_t",
+      "text": "retrieve\n~110 ms",
+      "translation": "найти\n~110 мс",
+      "where": "free text inside rectangle seg_retr",
+      "budget_px": 86,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "seg_tool_t",
+      "text": "tool call  —  ~330 ms\nthe bottleneck",
+      "translation": "вызов инструмента — ~330 мс\nузкое место",
+      "where": "free text inside rectangle seg_tool",
+      "budget_px": 178,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "seg_synth_t",
+      "text": "synthesize\n~70 ms",
+      "translation": "синтез\n~70 мс",
+      "where": "free text inside rectangle seg_synth",
+      "budget_px": 86,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "seg_play_t",
+      "text": "playback\n~30 ms",
+      "translation": "звук\n~30 мс",
+      "where": "free text inside rectangle seg_play",
+      "budget_px": 74,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "t0",
+      "text": "0 ms",
+      "translation": "0 мс",
+      "where": "free text"
+    },
+    {
+      "id": "t1",
+      "text": "human replies",
+      "translation": "человек отвечает",
+      "where": "free text"
+    },
+    {
+      "id": "spend",
+      "text": "Every overrun is spent from one shared budget. Speech layers got fast;\ntool and workflow latency is now where the turn slips.",
+      "translation": "Каждое превышение тратится из одного общего бюджета. Речевые слои стали быстрыми;\nтеперь реплика срывается на задержке инструментов и процессов.",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Recognition, reasoning, retrieval, tools and synthesis all draw from one shared turn budget.",
+      "translation": "Распознавание, рассуждение, поиск, инструменты и синтез тратят один общий бюджет реплики.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Sean DuBois, OpenAI & Kwindla Kramer, Daily  ·  corpus video #145",
+      "translation": "— Шон Дюбуа, OpenAI, и Квиндла Крамер, Daily  ·  видео корпуса #145",
+      "where": "free text"
+    }
+  ]
+}

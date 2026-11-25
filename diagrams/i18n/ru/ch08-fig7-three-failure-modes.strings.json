@@ -1,0 +1,158 @@
+{
+  "source": "diagrams/inline/ch08-fig7-three-failure-modes.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g8736",
+      "text": "CHAPTER 8  ·  REALTIME, VOICE & THE COST OF BEING INTERRUPTIBLE",
+      "translation": "ГЛАВА 8  ·  РЕАЛЬНОЕ ВРЕМЯ, ГОЛОС И ЦЕНА ПРЕРЫВАЕМОСТИ",
+      "where": "free text"
+    },
+    {
+      "id": "g8739",
+      "text": "Three Ways a Live Conversation Breaks",
+      "translation": "Три способа сломать живой разговор",
+      "where": "free text"
+    },
+    {
+      "id": "g8748",
+      "text": "The test isn't eloquence. It's timing, overlap, and interruption.",
+      "translation": "Проверка — не красноречие. Это тайминг, наложение и перебивание.",
+      "where": "free text"
+    },
+    {
+      "id": "g8754",
+      "text": "1 · TIMING",
+      "translation": "1 · ТАЙМИНГ",
+      "where": "free text inside rectangle g8751",
+      "budget_px": 259,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g8760",
+      "text": "THE BREAK",
+      "translation": "ПОЛОМКА",
+      "where": "free text inside rectangle g8751",
+      "budget_px": 259,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8763",
+      "text": "it waits too long",
+      "translation": "ждёт слишком долго",
+      "where": "free text inside rectangle g8751",
+      "budget_px": 259,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g8769",
+      "text": "silence past the ~200 ms budget",
+      "translation": "тишина дольше ~200 мс",
+      "where": "free text inside rectangle g8766",
+      "budget_px": 231,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g8772",
+      "text": "sounds like:  a frozen line",
+      "translation": "на слух:  линия зависла",
+      "where": "free text inside rectangle g8751",
+      "budget_px": 259,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g8778",
+      "text": "2 · OVERLAP",
+      "translation": "2 · НАЛОЖЕНИЕ",
+      "where": "free text inside rectangle g8775",
+      "budget_px": 259,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g8784",
+      "text": "THE BREAK",
+      "translation": "ПОЛОМКА",
+      "where": "free text inside rectangle g8775",
+      "budget_px": 259,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8787",
+      "text": "it talks over you",
+      "translation": "говорит поверх вас",
+      "where": "free text inside rectangle g8775",
+      "budget_px": 259,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g8793",
+      "text": "half-duplex — listen OR speak",
+      "translation": "полудуплекс — слушает ИЛИ говорит",
+      "where": "free text inside rectangle g8790",
+      "budget_px": 231,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g8796",
+      "text": "sounds like:  no room to cut in",
+      "translation": "на слух:  не вставить слово",
+      "where": "free text inside rectangle g8775",
+      "budget_px": 259,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g8802",
+      "text": "3 · INTERRUPTION",
+      "translation": "3 · ПЕРЕБИВАНИЕ",
+      "where": "free text inside rectangle g8799",
+      "budget_px": 259,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g8808",
+      "text": "THE BREAK",
+      "translation": "ПОЛОМКА",
+      "where": "free text inside rectangle g8799",
+      "budget_px": 259,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8811",
+      "text": "it loses the thread",
+      "translation": "теряет нить",
+      "where": "free text inside rectangle g8799",
+      "budget_px": 259,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g8817",
+      "text": "no clean way to redirect",
+      "translation": "нельзя чисто сменить курс",
+      "where": "free text inside rectangle g8814",
+      "budget_px": 231,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g8820",
+      "text": "sounds like:  the old question",
+      "translation": "на слух:  старый вопрос",
+      "where": "free text inside rectangle g8799",
+      "budget_px": 259,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g8826",
+      "text": "A model can be perfectly articulate and still fail all three. Eloquence is not the test.",
+      "translation": "Модель может говорить безупречно и провалить все три. Красноречие — не проверка.",
+      "where": "free text inside rectangle g8823",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "g8829",
+      "text": "— after Neil Zeghidour, Gradium AI  ·  corpus video #662",
+      "translation": "— по мотивам Нила Зегидура, Gradium AI  ·  видео корпуса #662",
+      "where": "free text"
+    }
+  ]
+}

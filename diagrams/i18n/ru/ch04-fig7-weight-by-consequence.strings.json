@@ -1,0 +1,126 @@
+{
+  "source": "diagrams/inline/ch04-fig7-weight-by-consequence.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940235",
+      "text": "CHAPTER 4  ·  FIGURE 7",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 7",
+      "where": "free text"
+    },
+    {
+      "id": "g940238",
+      "text": "Weight slices by consequence",
+      "translation": "Взвешивайте срезы по последствиям",
+      "where": "free text"
+    },
+    {
+      "id": "g940250",
+      "text": "ONE AVERAGED SCORE",
+      "translation": "ОДИН УСРЕДНЁННЫЙ БАЛЛ",
+      "where": "free text inside rectangle g940247",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g940253",
+      "text": "92%",
+      "translation": "92%",
+      "where": "free text inside rectangle g940247",
+      "budget_px": 290,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g940256",
+      "text": "every slice weighted the same",
+      "translation": "у каждого среза один вес",
+      "where": "free text inside rectangle g940247",
+      "budget_px": 290,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g940259",
+      "text": "the rare, costly miss\nvanishes into the mean",
+      "translation": "редкий дорогой промах\nтонет в среднем",
+      "where": "free text inside rectangle g940247",
+      "budget_px": 290,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g940265",
+      "text": "WEIGHTED BY CONSEQUENCE",
+      "translation": "ВЕС ПО ПОСЛЕДСТВИЯМ",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 320,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g940268",
+      "text": "movie-rec miss",
+      "translation": "промах с фильмом",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 313,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g940274",
+      "text": "low",
+      "translation": "низкий",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 115,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g940277",
+      "text": "latency 3s → 10s",
+      "translation": "задержка 3 с → 10 с",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 313,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g940283",
+      "text": "med",
+      "translation": "средний",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 60,
+      "budget_chars_per_line": 9
+    },
+    {
+      "id": "g940286",
+      "text": "contract-clause miss",
+      "translation": "промах в договоре",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 313,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g940292",
+      "text": "HIGH",
+      "translation": "ВЫС",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 25,
+      "budget_chars_per_line": 3
+    },
+    {
+      "id": "g940295",
+      "text": "a rare but expensive failure\noutweighs a common trivial one",
+      "translation": "редкий, но дорогой сбой\nвесит больше частого мелкого",
+      "where": "free text inside rectangle g940262",
+      "budget_px": 320,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g940298",
+      "text": "Not one universal score — weight each slice by consequence so the costly rare failure can't hide.",
+      "translation": "Не один общий балл: взвесьте каждый срез по последствиям, чтобы редкий дорогой сбой не спрятался.",
+      "where": "free text"
+    },
+    {
+      "id": "g940301",
+      "text": "— Ido Pesok, Vercel v0 · corpus video #125",
+      "translation": "— Идо Песок, Vercel v0 · видео корпуса #125",
+      "where": "free text"
+    }
+  ]
+}

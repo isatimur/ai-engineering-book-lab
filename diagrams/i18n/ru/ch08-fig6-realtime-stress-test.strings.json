@@ -1,0 +1,210 @@
+{
+  "source": "diagrams/inline/ch08-fig6-realtime-stress-test.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g8601",
+      "text": "CHAPTER 8  ·  REALTIME, VOICE & THE COST OF BEING INTERRUPTIBLE",
+      "translation": "ГЛАВА 8  ·  РЕАЛЬНОЕ ВРЕМЯ, ГОЛОС И ЦЕНА ПРЕРЫВАЕМОСТИ",
+      "where": "free text"
+    },
+    {
+      "id": "g8604",
+      "text": "Voice Is a Systems Stress Test",
+      "translation": "Голос — стресс-тест системы",
+      "where": "free text"
+    },
+    {
+      "id": "g8613",
+      "text": "Chat hides a weak layer. Voice makes each one audible.",
+      "translation": "Чат прячет слабый слой. Голос делает слышным каждый.",
+      "where": "free text"
+    },
+    {
+      "id": "g8616",
+      "text": "LAYER",
+      "translation": "СЛОЙ",
+      "where": "free text"
+    },
+    {
+      "id": "g8619",
+      "text": "WEAK LAYER  →  WHAT THE CALLER HEARS",
+      "translation": "СЛАБЫЙ СЛОЙ  →  ЧТО СЛЫШИТ СОБЕСЕДНИК",
+      "where": "free text"
+    },
+    {
+      "id": "g8625",
+      "text": "Context — Ch 5",
+      "translation": "Контекст — гл. 5",
+      "where": "free text inside rectangle g8622",
+      "budget_px": 220,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g8634",
+      "text": "the thread isn't held",
+      "translation": "нить не удерживается",
+      "where": "free text inside rectangle g8631",
+      "budget_px": 595,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "g8637",
+      "text": "→",
+      "translation": "→",
+      "where": "free text inside rectangle g8631",
+      "budget_px": 361,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g8640",
+      "text": "the agent fumbles, loses the thread",
+      "translation": "агент путается, теряет нить",
+      "where": "free text inside rectangle g8631",
+      "budget_px": 331,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8646",
+      "text": "Runtime — Ch 6",
+      "translation": "Среда — гл. 6",
+      "where": "free text inside rectangle g8643",
+      "budget_px": 220,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g8655",
+      "text": "it can't pause / resume",
+      "translation": "нет паузы и продолжения",
+      "where": "free text inside rectangle g8652",
+      "budget_px": 595,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "g8658",
+      "text": "→",
+      "translation": "→",
+      "where": "free text inside rectangle g8652",
+      "budget_px": 361,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g8661",
+      "text": "interruptions break it",
+      "translation": "перебивания его ломают",
+      "where": "free text inside rectangle g8652",
+      "budget_px": 331,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8667",
+      "text": "Security — Ch 7",
+      "translation": "Безопасность — гл. 7",
+      "where": "free text inside rectangle g8664",
+      "budget_px": 220,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g8676",
+      "text": "authority stays ambient",
+      "translation": "полномочия размыты",
+      "where": "free text inside rectangle g8673",
+      "budget_px": 595,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "g8679",
+      "text": "→",
+      "translation": "→",
+      "where": "free text inside rectangle g8673",
+      "budget_px": 361,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g8682",
+      "text": "approvals go casual, scope leaks",
+      "translation": "согласия небрежны, доступ утекает",
+      "where": "free text inside rectangle g8673",
+      "budget_px": 331,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8688",
+      "text": "Control plane — Ch 6",
+      "translation": "Контроль — гл. 6",
+      "where": "free text inside rectangle g8685",
+      "budget_px": 220,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g8697",
+      "text": "it's under-designed",
+      "translation": "продуман слабо",
+      "where": "free text inside rectangle g8694",
+      "budget_px": 595,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "g8700",
+      "text": "→",
+      "translation": "→",
+      "where": "free text inside rectangle g8694",
+      "budget_px": 361,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g8703",
+      "text": "the user rescues every turn",
+      "translation": "человек спасает каждую реплику",
+      "where": "free text inside rectangle g8694",
+      "budget_px": 331,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8709",
+      "text": "Tool layer",
+      "translation": "Инструменты",
+      "where": "free text inside rectangle g8706",
+      "budget_px": 220,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g8718",
+      "text": "slow · high-variance",
+      "translation": "медленно · с разбросом",
+      "where": "free text inside rectangle g8715",
+      "budget_px": 595,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "g8721",
+      "text": "→",
+      "translation": "→",
+      "where": "free text inside rectangle g8715",
+      "budget_px": 361,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g8724",
+      "text": "sounds incompetent, whatever the model",
+      "translation": "звучит некомпетентно при любой модели",
+      "where": "free text inside rectangle g8715",
+      "budget_px": 331,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g8730",
+      "text": "If the loop around the model is weak, voice is where you hear it first.",
+      "translation": "Если контур вокруг модели слаб, голос первым это покажет.",
+      "where": "free text inside rectangle g8727",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "g8733",
+      "text": "— tool-call bottleneck: Neil Zeghidour, Gradium AI  ·  corpus video #662",
+      "translation": "— узкое место в инструментах: Нил Зегидур, Gradium AI  ·  видео корпуса #662",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "source": "diagrams/inline/ch08-fig4-half-duplex-ceiling.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9529",
+      "text": "CHAPTER 8  ·  REALTIME, VOICE & THE COST OF BEING INTERRUPTIBLE",
+      "translation": "ГЛАВА 8  ·  РЕАЛЬНОЕ ВРЕМЯ, ГОЛОС И ЦЕНА ПРЕРЫВАЕМОСТИ",
+      "where": "free text"
+    },
+    {
+      "id": "g9532",
+      "text": "Half-Duplex Is the Ceiling",
+      "translation": "Полудуплекс — это потолок",
+      "where": "free text"
+    },
+    {
+      "id": "g9541",
+      "text": "Listen or speak — never both. The limit is the architecture, not the model.",
+      "translation": "Слушать или говорить — но не оба сразу. Предел в архитектуре, а не в модели.",
+      "where": "free text"
+    },
+    {
+      "id": "g9547",
+      "text": "HALF-DUPLEX  ·  one channel at a time",
+      "translation": "ПОЛУДУПЛЕКС  ·  один канал за раз",
+      "where": "free text inside rectangle g9544",
+      "budget_px": 410,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "g9553",
+      "text": "listen",
+      "translation": "слушает",
+      "where": "free text inside rectangle g9550",
+      "budget_px": 85,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g9559",
+      "text": "speak",
+      "translation": "говорит",
+      "where": "free text inside rectangle g9556",
+      "budget_px": 85,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g9565",
+      "text": "listen",
+      "translation": "слушает",
+      "where": "free text inside rectangle g9562",
+      "budget_px": 85,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g9571",
+      "text": "speak",
+      "translation": "говорит",
+      "where": "free text inside rectangle g9568",
+      "budget_px": 85,
+      "budget_chars_per_line": 10
+    },
+    {
+      "id": "g9574",
+      "text": "✗ overlap     ✗ back-channeling (“mhm”)     ✗ barge-in",
+      "translation": "✗ наложение    ✗ поддакивание    ✗ перебивание",
+      "where": "free text inside rectangle g9544",
+      "budget_px": 410,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g9577",
+      "text": "every micro-decision collapses to: am I listening, or speaking?",
+      "translation": "любое микрорешение — слушаю я или говорю?",
+      "where": "free text"
+    },
+    {
+      "id": "g9583",
+      "text": "FULL-DUPLEX  ·  both at once",
+      "translation": "ПОЛНЫЙ ДУПЛЕКС  ·  оба сразу",
+      "where": "free text inside rectangle g9580",
+      "budget_px": 430,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g9589",
+      "text": "listen  ▶▶▶  (continuous)",
+      "translation": "слушает  ▶▶▶  (непрерывно)",
+      "where": "free text inside rectangle g9586",
+      "budget_px": 398,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9595",
+      "text": "speak  ▶▶▶  (continuous)",
+      "translation": "говорит  ▶▶▶  (непрерывно)",
+      "where": "free text inside rectangle g9592",
+      "budget_px": 398,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9598",
+      "text": "✓ overlap     ✓ back-channeling     ✓ barge-in",
+      "translation": "✓ наложение     ✓ поддакивание     ✓ перебивание",
+      "where": "free text inside rectangle g9580",
+      "budget_px": 430,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "g9601",
+      "text": "trade: weaker reasoning · research frontier (Moshi)",
+      "translation": "цена: слабее рассуждение · передний край (Moshi)",
+      "where": "free text inside rectangle g9580",
+      "budget_px": 430,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g9607",
+      "text": "\"The model is either listening or it's speaking.\" — Neil Zeghidour, Gradium AI  ·  corpus",
+      "translation": "«Модель либо слушает, либо говорит». — Нил Зегидур, Gradium AI  ·  корпус",
+      "where": "free text inside rectangle g9604",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g9610",
+      "text": "Stacking wait-buttons and silence thresholds are symptoms — the lever is the architecture.",
+      "translation": "Кнопки ожидания и пороги тишины — симптомы. Рычаг — архитектура.",
+      "where": "free text"
+    }
+  ]
+}

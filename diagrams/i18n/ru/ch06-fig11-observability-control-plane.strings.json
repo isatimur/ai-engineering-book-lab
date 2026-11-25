@@ -1,0 +1,156 @@
+{
+  "source": "diagrams/inline/ch06-fig11-observability-control-plane.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70613",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70616",
+      "text": "Observability Makes the Control Plane Real",
+      "translation": "Наблюдаемость делает контур контроля реальным",
+      "where": "free text"
+    },
+    {
+      "id": "g70625",
+      "text": "Monitoring asks “is it up?” Agent observability asks what it did and where it drifted.",
+      "translation": "Мониторинг спрашивает «работает ли?». Наблюдаемость агента — что он сделал и где сбился.",
+      "where": "free text"
+    },
+    {
+      "id": "g70631",
+      "text": "WHAT IT MUST ANSWER",
+      "translation": "НА ЧТО ОНА ОТВЕЧАЕТ",
+      "where": "free text inside rectangle g70628",
+      "budget_px": 240,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g70634",
+      "text": "· what it believed it was doing",
+      "translation": "· что он думал, что делает",
+      "where": "free text"
+    },
+    {
+      "id": "g70637",
+      "text": "· what it actually did",
+      "translation": "· что он сделал на деле",
+      "where": "free text inside rectangle g70628",
+      "budget_px": 229,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g70640",
+      "text": "· where it drifted",
+      "translation": "· где он сбился",
+      "where": "free text inside rectangle g70628",
+      "budget_px": 229,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g70643",
+      "text": "· what a human should inspect",
+      "translation": "· что проверить человеку",
+      "where": "free text inside rectangle g70628",
+      "budget_px": 229,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g70649",
+      "text": "THE TRACE",
+      "translation": "ТРЕЙС",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g70652",
+      "text": "▸ plans",
+      "translation": "▸ планы",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 275,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70655",
+      "text": "▸ tool calls",
+      "translation": "▸ вызовы инструментов",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 275,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70658",
+      "text": "▸ state changes",
+      "translation": "▸ изменения состояния",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 275,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70661",
+      "text": "▸ intermediate outputs",
+      "translation": "▸ промежуточные выходы",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 275,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70664",
+      "text": "▸ timings",
+      "translation": "▸ тайминги",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 275,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70667",
+      "text": "▸ durable-step boundaries",
+      "translation": "▸ границы надёжных шагов",
+      "where": "free text inside rectangle g70646",
+      "budget_px": 275,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70673",
+      "text": "TWO LEVELS AT ONCE",
+      "translation": "ДВА УРОВНЯ СРАЗУ",
+      "where": "free text inside rectangle g70670",
+      "budget_px": 282,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g70679",
+      "text": "deep single-trajectory\ninspection  (engineer debugs)",
+      "translation": "глубокий разбор одной\nтраектории  (отладка)",
+      "where": "free text inside rectangle g70676",
+      "budget_px": 242,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g70685",
+      "text": "roll-up supervision across\nmany tasks  (operator steers)",
+      "translation": "сводный надзор за многими\nзадачами  (управление)",
+      "where": "free text inside rectangle g70682",
+      "budget_px": 242,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g70691",
+      "text": "Tension: richer traces raise trust — and privacy, retention, security risk.\nDesign it: redaction · selective retention · risk-based views.",
+      "translation": "Напряжение: подробные трейсы растят доверие — и риски приватности, хранения, безопасности.\nПроектируйте: маскировка · выборочное хранение · представления по риску.",
+      "where": "free text inside rectangle g70688",
+      "budget_px": 861,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "g70694",
+      "text": "\"Observability and eval are the same problem.\" — Phil Hetzel, Braintrust · #628  ·  Boyd & Narasimhan, Microsoft · #680",
+      "translation": "«Наблюдаемость и оценки — это одна задача». — Фил Хетцел, Braintrust · #628  ·  Бойд и Нарасимхан, Microsoft · #680",
+      "where": "free text"
+    }
+  ]
+}

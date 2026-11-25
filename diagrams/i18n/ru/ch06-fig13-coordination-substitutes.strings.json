@@ -1,0 +1,150 @@
+{
+  "source": "diagrams/inline/ch06-fig13-coordination-substitutes.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70781",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70784",
+      "text": "One Missing Primitive, Three Substitutes",
+      "translation": "Нет одного примитива — есть три замены",
+      "where": "free text"
+    },
+    {
+      "id": "g70793",
+      "text": "Runtime, orchestration, and triggers are solved. Coordination is the gap.",
+      "translation": "Среда, оркестрация и триггеры решены. Пробел — в координации.",
+      "where": "free text"
+    },
+    {
+      "id": "g70799",
+      "text": "MISSING:  COORDINATION",
+      "translation": "НЕ ХВАТАЕТ:  КООРДИНАЦИИ",
+      "where": "free text inside rectangle g70796",
+      "budget_px": 434,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g70802",
+      "text": "pick up tasks, signal done, hand off — no human stitching\nGitHub is not a coordination layer",
+      "translation": "брать задачи, отмечать готовность, передавать — без людей\nGitHub — не слой координации",
+      "where": "free text inside rectangle g70796",
+      "budget_px": 434,
+      "budget_chars_per_line": 62
+    },
+    {
+      "id": "g70811",
+      "text": "Serial execution",
+      "translation": "Последовательно",
+      "where": "free text inside rectangle g70808",
+      "budget_px": 271,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g70814",
+      "text": "Factory  ·  #653",
+      "translation": "Factory  ·  #653",
+      "where": "free text inside rectangle g70808",
+      "budget_px": 271,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g70820",
+      "text": "one active writer ·\ntargeted internal parallelism",
+      "translation": "один активный писатель ·\nточечный параллелизм",
+      "where": "free text inside rectangle g70817",
+      "budget_px": 243,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70823",
+      "text": "eliminates coordination by\nconstruction · longest run 16 days",
+      "translation": "убирает координацию по\nустройству · рекорд — 16 дней",
+      "where": "free text inside rectangle g70808",
+      "budget_px": 271,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g70832",
+      "text": "File-based contract",
+      "translation": "Контракт в файлах",
+      "where": "free text inside rectangle g70829",
+      "budget_px": 271,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g70835",
+      "text": "Anthropic  ·  #691",
+      "translation": "Anthropic  ·  #691",
+      "where": "free text inside rectangle g70829",
+      "budget_px": 271,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g70841",
+      "text": "planner · generator ·\nevaluator (own contexts)",
+      "translation": "планировщик · генератор ·\nоценщик (свои контексты)",
+      "where": "free text inside rectangle g70838",
+      "budget_px": 243,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70844",
+      "text": "roles negotiate what done\nmeans, in files before code",
+      "translation": "роли в файлах решают, что\nзначит «готово», до кода",
+      "where": "free text inside rectangle g70829",
+      "budget_px": 271,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g70853",
+      "text": "State machines",
+      "translation": "Машины состояний",
+      "where": "free text inside rectangle g70850",
+      "budget_px": 271,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g70856",
+      "text": "Ona  ·  #704",
+      "translation": "Ona  ·  #704",
+      "where": "free text inside rectangle g70850",
+      "budget_px": 271,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g70862",
+      "text": "durable execution ·\nexplicit workflows",
+      "translation": "надёжное исполнение ·\nявные процессы",
+      "where": "free text inside rectangle g70859",
+      "budget_px": 243,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g70865",
+      "text": "build coordination as state\nmachines + durable workflows",
+      "translation": "координация как машины\nсостояний + надёжные процессы",
+      "where": "free text inside rectangle g70850",
+      "budget_px": 271,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g70871",
+      "text": "Three substitutes for one primitive that does not yet exist —\nthe runtime machinery that turns parallel intelligence into dependable work.",
+      "translation": "Три замены примитиву, которого пока нет, —\nмеханизму среды, что превращает параллельный интеллект в надёжную работу.",
+      "where": "free text inside rectangle g70868",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g70874",
+      "text": "\"The thing that's missing is coordination.\" — Lou Bichard, Ona · #704  ·  Factory · #653  ·  Anthropic · #691",
+      "translation": "«Чего не хватает — так это координации». — Лу Бишар, Ona · #704  ·  Factory · #653  ·  Anthropic · #691",
+      "where": "free text"
+    }
+  ]
+}

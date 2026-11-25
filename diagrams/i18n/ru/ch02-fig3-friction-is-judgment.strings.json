@@ -1,0 +1,138 @@
+{
+  "source": "diagrams/inline/ch02-fig3-friction-is-judgment.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 2  ·  FIGURE 3",
+      "translation": "ГЛАВА 2  ·  РИСУНОК 3",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Not all friction is waste",
+      "translation": "Не всякое трение — потеря",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "AI should cut wasteful friction — but some friction is where judgment happens.",
+      "translation": "ИИ должен убирать пустое трение, но в части трения и живёт суждение.",
+      "where": "free text"
+    },
+    {
+      "id": "sortlbl",
+      "text": "every pause looks like a cost — sort it before you cut it",
+      "translation": "каждая пауза похожа на издержку — разберите её, прежде чем резать",
+      "where": "free text"
+    },
+    {
+      "id": "binLh",
+      "text": "WASTEFUL FRICTION  —  CUT IT",
+      "translation": "ПУСТОЕ ТРЕНИЕ  —  УБИРАЙТЕ",
+      "where": "free text inside rectangle binL",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "binLs",
+      "text": "drag with no judgment in it",
+      "translation": "торможение без всякого суждения",
+      "where": "free text inside rectangle binL",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "wf1t",
+      "text": "boilerplate & glue code",
+      "translation": "шаблонный и связующий код",
+      "where": "free text inside rectangle wf1",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "wf2t",
+      "text": "looking up syntax & APIs",
+      "translation": "поиск синтаксиса и API",
+      "where": "free text inside rectangle wf2",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "wf3t",
+      "text": "repetitive scaffolding & setup",
+      "translation": "однообразный каркас и настройка",
+      "where": "free text inside rectangle wf3",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "binLnote",
+      "text": "Good to remove — these were\nnever where quality was made.",
+      "translation": "Убрать — хорошо: качество\nникогда не рождалось здесь.",
+      "where": "free text inside rectangle binL",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "binRh",
+      "text": "LOAD-BEARING FRICTION  —  KEEP IT",
+      "translation": "НЕСУЩЕЕ ТРЕНИЕ  —  СОХРАНЯЙТЕ",
+      "where": "free text inside rectangle binR",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "binRs",
+      "text": "the pause is the judgment",
+      "translation": "пауза и есть суждение",
+      "where": "free text inside rectangle binR",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "lf1t",
+      "text": "the review before merge",
+      "translation": "ревью перед слиянием",
+      "where": "free text inside rectangle lf1",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "lf2t",
+      "text": "the extra architecture question",
+      "translation": "лишний вопрос об архитектуре",
+      "where": "free text inside rectangle lf2",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "lf3t",
+      "text": "rewriting what is correct but wrong",
+      "translation": "переписать верное, но не то",
+      "where": "free text inside rectangle lf3",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "binRnote",
+      "text": "Cut these and you cut the\npoint where quality is made.",
+      "translation": "Уберёте их — уберёте место,\nгде рождается качество.",
+      "where": "free text inside rectangle binR",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "caption",
+      "text": "“The friction is your judgment.” Those pauses look like inefficiency — often they are quality.",
+      "translation": "«Трение — это ваше суждение». Паузы похожи на неэффективность, но часто они и есть качество.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Armin Ronacher & Cristina Poncela Cubeiro, Earendil · corpus video #14",
+      "translation": "— Армин Ронахер и Кристина Понсела Кубейро, Earendil · видео корпуса #14",
+      "where": "free text"
+    }
+  ]
+}

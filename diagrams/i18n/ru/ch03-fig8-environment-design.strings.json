@@ -1,0 +1,174 @@
+{
+  "source": "diagrams/inline/ch03-fig8-environment-design.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g770463",
+      "text": "CHAPTER 3  ·  THE DURABLE ADVANTAGE",
+      "translation": "ГЛАВА 3  ·  НАДЁЖНОЕ ПРЕИМУЩЕСТВО",
+      "where": "free text"
+    },
+    {
+      "id": "g770466",
+      "text": "The Edge Is Environment, Not the Model",
+      "translation": "Преимущество — в среде, а не в модели",
+      "where": "free text"
+    },
+    {
+      "id": "g770475",
+      "text": "A stronger model is bounded and shared. A legible repo compounds — and only you can build it.",
+      "translation": "Сильная модель — у всех и с потолком. Понятный репозиторий копит выгоду, и строите его только вы.",
+      "where": "free text"
+    },
+    {
+      "id": "g770481",
+      "text": "BUY A STRONGER MODEL",
+      "translation": "КУПИТЬ МОДЕЛЬ СИЛЬНЕЕ",
+      "where": "free text inside rectangle g770478",
+      "budget_px": 390,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g770484",
+      "text": "the visible magic:",
+      "translation": "видимая магия:",
+      "where": "free text inside rectangle g770478",
+      "budget_px": 373,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g770487",
+      "text": "·  edits a file",
+      "translation": "·  правит файл",
+      "where": "free text inside rectangle g770478",
+      "budget_px": 361,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g770490",
+      "text": "·  writes a test",
+      "translation": "·  пишет тест",
+      "where": "free text inside rectangle g770478",
+      "budget_px": 361,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g770493",
+      "text": "·  proposes a patch",
+      "translation": "·  предлагает патч",
+      "where": "free text inside rectangle g770478",
+      "budget_px": 361,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g770499",
+      "text": "gain: bounded — the same models\neveryone else already has",
+      "translation": "выигрыш ограничен — те же модели,\nчто уже есть у всех",
+      "where": "free text inside rectangle g770496",
+      "budget_px": 339,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g770502",
+      "text": "a lever, but not a moat",
+      "translation": "рычаг, но не защитный ров",
+      "where": "free text inside rectangle g770478",
+      "budget_px": 390,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g770508",
+      "text": "DESIGN THE ENVIRONMENT",
+      "translation": "СПРОЕКТИРОВАТЬ СРЕДУ",
+      "where": "free text inside rectangle g770505",
+      "budget_px": 448,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g770514",
+      "text": "legible repo",
+      "translation": "понятный репозиторий",
+      "where": "free text inside rectangle g770511",
+      "budget_px": 290,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "g770520",
+      "text": "externalized non-functional judgment",
+      "translation": "вынесенное нефункциональное суждение",
+      "where": "free text inside rectangle g770517",
+      "budget_px": 316,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g770526",
+      "text": "reusable specs",
+      "translation": "переиспользуемые спецификации",
+      "where": "free text inside rectangle g770523",
+      "budget_px": 342,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g770532",
+      "text": "validations + repo affordances",
+      "translation": "проверки + опоры репозитория",
+      "where": "free text inside rectangle g770529",
+      "budget_px": 368,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g770538",
+      "text": "a staged software factory",
+      "translation": "поэтапная фабрика ПО",
+      "where": "free text inside rectangle g770535",
+      "budget_px": 394,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g770544",
+      "text": "5x",
+      "translation": "5x",
+      "where": "free text inside rectangle g770541",
+      "budget_px": 146,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g770547",
+      "text": "6x",
+      "translation": "6x",
+      "where": "free text inside rectangle g770541",
+      "budget_px": 146,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g770550",
+      "text": "7x",
+      "translation": "7x",
+      "where": "free text inside rectangle g770541",
+      "budget_px": 146,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g770553",
+      "text": "compounds — a moat you build",
+      "translation": "копится — ров, который строите вы",
+      "where": "free text inside rectangle g770505",
+      "budget_px": 448,
+      "budget_chars_per_line": 57
+    },
+    {
+      "id": "g770559",
+      "text": "“It's a choice that you as an organization have” — the model will not hand it to you.",
+      "translation": "«Это выбор, который есть у вас как у организации» — модель не даст его вам.",
+      "where": "free text inside rectangle g770556",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "g770562",
+      "text": "— Eno Reyes, Factory AI · corpus video #57",
+      "translation": "— Ино Рейес, Factory AI · видео корпуса #57",
+      "where": "free text"
+    }
+  ]
+}

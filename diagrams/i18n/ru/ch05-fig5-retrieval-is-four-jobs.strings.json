@@ -1,0 +1,166 @@
+{
+  "source": "diagrams/inline/ch05-fig5-retrieval-is-four-jobs.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9220",
+      "text": "CHAPTER 5  ·  CONTEXT IS INFRASTRUCTURE",
+      "translation": "ГЛАВА 5  ·  КОНТЕКСТ — ЭТО ИНФРАСТРУКТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g9223",
+      "text": "“RAG” Is Four Different Jobs",
+      "translation": "«RAG» — это четыре разные задачи",
+      "where": "free text"
+    },
+    {
+      "id": "g9232",
+      "text": "One word collapsed four patterns. Pick by the question, not the label.",
+      "translation": "Одно слово скрыло четыре паттерна. Выбирайте по вопросу, а не по ярлыку.",
+      "where": "free text"
+    },
+    {
+      "id": "g9238",
+      "text": "Vector search",
+      "translation": "Векторный поиск",
+      "where": "free text inside rectangle g9235",
+      "budget_px": 405,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g9241",
+      "text": "BEST WHEN",
+      "translation": "КОГДА ЛУЧШЕ",
+      "where": "free text inside rectangle g9235",
+      "budget_px": 405,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9244",
+      "text": "Q is about semantic similarity",
+      "translation": "вопрос о смысловом сходстве",
+      "where": "free text inside rectangle g9235",
+      "budget_px": 405,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g9250",
+      "text": "single embedding lookup → flat index",
+      "translation": "один поиск по эмбеддингу → плоский индекс",
+      "where": "free text inside rectangle g9247",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9256",
+      "text": "Graph traversal",
+      "translation": "Обход графа",
+      "where": "free text inside rectangle g9253",
+      "budget_px": 405,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g9259",
+      "text": "BEST WHEN",
+      "translation": "КОГДА ЛУЧШЕ",
+      "where": "free text inside rectangle g9253",
+      "budget_px": 405,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9262",
+      "text": "Q is about relationships",
+      "translation": "вопрос о связях",
+      "where": "free text inside rectangle g9253",
+      "budget_px": 405,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g9268",
+      "text": "who depends on whom · co-occurrence",
+      "translation": "кто от кого зависит · совместная встречаемость",
+      "where": "free text inside rectangle g9265",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9274",
+      "text": "Hybrid",
+      "translation": "Гибрид",
+      "where": "free text inside rectangle g9271",
+      "budget_px": 405,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g9277",
+      "text": "BEST WHEN",
+      "translation": "КОГДА ЛУЧШЕ",
+      "where": "free text inside rectangle g9271",
+      "budget_px": 405,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9280",
+      "text": "Q needs both at once",
+      "translation": "вопросу нужно и то и другое",
+      "where": "free text inside rectangle g9271",
+      "budget_px": 405,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g9286",
+      "text": "fuse graph + vector (most enterprise Qs)",
+      "translation": "граф + векторы вместе (большинство вопросов)",
+      "where": "free text inside rectangle g9283",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9292",
+      "text": "Neural-RAG",
+      "translation": "Neural-RAG",
+      "where": "free text inside rectangle g9289",
+      "budget_px": 405,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g9295",
+      "text": "BEST WHEN",
+      "translation": "КОГДА ЛУЧШЕ",
+      "where": "free text inside rectangle g9289",
+      "budget_px": 405,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9298",
+      "text": "retrieval lives in the reasoning loop",
+      "translation": "поиск идёт внутри цикла рассуждений",
+      "where": "free text inside rectangle g9289",
+      "budget_px": 405,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g9304",
+      "text": "model decides what to search · when to stop",
+      "translation": "модель решает, что искать и когда хватит",
+      "where": "free text inside rectangle g9301",
+      "budget_px": 371,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g9310",
+      "text": "“We'll just add RAG” is no longer a design sentence. Make these explicit instead:",
+      "translation": "«Просто добавим RAG» — больше не решение. Вместо этого явно задайте:",
+      "where": "free text inside rectangle g9307",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g9313",
+      "text": "which pattern   ·   which data shape   ·   which ranking   ·   which freshness   ·   which reasoning surface",
+      "translation": "паттерн   ·   форма данных   ·   ранжирование   ·   свежесть   ·   место рассуждений",
+      "where": "free text"
+    }
+  ]
+}

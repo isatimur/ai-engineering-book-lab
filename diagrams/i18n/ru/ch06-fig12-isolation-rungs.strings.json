@@ -1,0 +1,120 @@
+{
+  "source": "diagrams/inline/ch06-fig12-isolation-rungs.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70697",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70700",
+      "text": "Isolation Must Be Enforced by the Environment",
+      "translation": "Изоляцию должна обеспечивать среда",
+      "where": "free text"
+    },
+    {
+      "id": "g70709",
+      "text": "Independence is a property of the runtime, not a promise in the task split.",
+      "translation": "Независимость — свойство среды исполнения, а не обещание в разбиении задач.",
+      "where": "free text"
+    },
+    {
+      "id": "g70712",
+      "text": "weaker",
+      "translation": "слабее",
+      "where": "free text"
+    },
+    {
+      "id": "g70715",
+      "text": "stronger",
+      "translation": "сильнее",
+      "where": "free text"
+    },
+    {
+      "id": "g70724",
+      "text": "shared dev setup",
+      "translation": "общая dev-среда",
+      "where": "free text inside rectangle g70721",
+      "budget_px": 220,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g70730",
+      "text": "collides: same branch, ports, DB — one agent's migration breaks the rest",
+      "translation": "конфликты: та же ветка, порты, БД — миграция одного агента ломает остальных",
+      "where": "free text inside rectangle g70727",
+      "budget_px": 615,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "g70736",
+      "text": "git worktree",
+      "translation": "git worktree",
+      "where": "free text inside rectangle g70733",
+      "budget_px": 220,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g70742",
+      "text": "fine for TRUSTED edits — own branch, but shares the machine",
+      "translation": "годится для ДОВЕРЕННЫХ правок — своя ветка, но общая машина",
+      "where": "free text inside rectangle g70739",
+      "budget_px": 615,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "g70748",
+      "text": "container",
+      "translation": "контейнер",
+      "where": "free text inside rectangle g70745",
+      "budget_px": 220,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g70754",
+      "text": "NOT an isolation layer: agent code can get root and move laterally",
+      "translation": "НЕ слой изоляции: код агента может получить root и уйти дальше",
+      "where": "free text inside rectangle g70751",
+      "budget_px": 615,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "g70760",
+      "text": "micro-VM",
+      "translation": "micro-VM",
+      "where": "free text inside rectangle g70757",
+      "budget_px": 220,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g70766",
+      "text": "sandboxed computer on its own branch — switch between parallel tasks",
+      "translation": "песочница на своей ветке — переключение между параллельными задачами",
+      "where": "free text inside rectangle g70763",
+      "budget_px": 615,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "g70772",
+      "text": "Trusted edits → a worktree suffices. Untrusted, side-effecting agent code → a micro-VM.",
+      "translation": "Доверенные правки → хватит worktree. Недоверенный код агента с побочными эффектами → micro-VM.",
+      "where": "free text inside rectangle g70769",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g70775",
+      "text": "\"If you just use containers ... that's not an isolation layer.\" — Rene Brandel, Casco · #151",
+      "translation": "«Если вы просто используете контейнеры … это не слой изоляции». — Рене Брандель, Casco · #151",
+      "where": "free text"
+    },
+    {
+      "id": "g70778",
+      "text": "micro-VM per session: Maggie Appleton, GitHub · #623   ·   taxonomy: Lou Bichard, Ona · #704",
+      "translation": "micro-VM на сессию: Мэгги Эпплтон, GitHub · #623   ·   классификация: Лу Бишар, Ona · #704",
+      "where": "free text"
+    }
+  ]
+}

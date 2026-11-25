@@ -1,0 +1,102 @@
+{
+  "source": "diagrams/inline/ch10-fig3-cost-of-weak-standards.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 10  ·  WHAT ENDURES",
+      "translation": "ГЛАВА 10  ·  ЧТО ОСТАЁТСЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Cheap generation raises the cost of weak standards",
+      "translation": "Дешёвая генерация поднимает цену слабых стандартов",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "The same weak rulebook scales from a nuisance to a flood.",
+      "translation": "Те же слабые правила вырастают из мелкой помехи в потоп.",
+      "where": "free text"
+    },
+    {
+      "id": "before_lbl",
+      "text": "WEAK STANDARDS  ·  SLOW GENERATION",
+      "translation": "СЛАБЫЕ СТАНДАРТЫ  ·  МЕДЛЕННАЯ ГЕНЕРАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "before_cap",
+      "text": "WHEN GENERATION WAS SLOW",
+      "translation": "КОГДА ГЕНЕРАЦИЯ БЫЛА МЕДЛЕННОЙ",
+      "where": "free text inside rectangle before_box",
+      "budget_px": 317,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "slop1t",
+      "text": "weak PR",
+      "translation": "слабый PR",
+      "where": "bound to rectangle slop1 (wraps)",
+      "budget_px": 86,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "slop2t",
+      "text": "weak PR",
+      "translation": "слабый PR",
+      "where": "bound to rectangle slop2 (wraps)",
+      "budget_px": 86,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "before_body",
+      "text": "A weak standard let a little\nlow-value work slip through.\n\nThe cost was small —\na few bad PRs a week,\ncaught by a careful reviewer.",
+      "translation": "Слабый стандарт пропускал\nнемного халтуры.\n\nЦена была мала —\nпара плохих PR в неделю,\nих ловил внимательный ревьюер.",
+      "where": "free text inside rectangle before_box",
+      "budget_px": 317,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "scale_lbl",
+      "text": "AI makes\nit cheap",
+      "translation": "ИИ делает\nэто дёшево",
+      "where": "free text"
+    },
+    {
+      "id": "after_lbl",
+      "text": "SAME STANDARDS  ·  CHEAP GENERATION",
+      "translation": "ТЕ ЖЕ СТАНДАРТЫ  ·  ДЕШЁВАЯ ГЕНЕРАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "after_cap",
+      "text": "WHEN GENERATION IS CHEAP",
+      "translation": "КОГДА ГЕНЕРАЦИЯ ДЕШЕВА",
+      "where": "free text inside rectangle after_box",
+      "budget_px": 253,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "after_body",
+      "text": "The standard never changed.\nBut output went 50x.\n\nNow it's a flood of plausible,\nlow-value work — and the\nreviewer cannot keep up.",
+      "translation": "Стандарт не изменился.\nНо объём вырос в 50 раз.\n\nТеперь это потоп правдоподобной\nхалтуры — и ревьюер\nне успевает.",
+      "where": "free text inside rectangle after_box",
+      "budget_px": 253,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "caption",
+      "text": "Strong standards are not optional overhead — at scale they are the only thing holding the line.",
+      "translation": "Сильные стандарты — не лишние издержки: в масштабе только они и держат оборону.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Mario Zechner, pi  ·  corpus video #17",
+      "translation": "— Марио Цехнер, pi  ·  видео корпуса #17",
+      "where": "free text"
+    }
+  ]
+}

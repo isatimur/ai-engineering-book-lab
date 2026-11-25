@@ -1,0 +1,174 @@
+{
+  "source": "diagrams/inline/ch07-fig5-four-control-baseline.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9701",
+      "text": "CHAPTER 7  ·  SECURITY, IDENTITY & HIGH-STAKES TRUST",
+      "translation": "ГЛАВА 7  ·  БЕЗОПАСНОСТЬ, ИДЕНТИЧНОСТЬ И ДОВЕРИЕ ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g9704",
+      "text": "Four Controls, On By Default",
+      "translation": "Четыре защиты, включённые по умолчанию",
+      "where": "free text"
+    },
+    {
+      "id": "g9713",
+      "text": "Not hardening bolted on after an incident — the baseline a code-executing agent runs on.",
+      "translation": "Не заплатка после инцидента, а база, на которой работает агент, исполняющий код.",
+      "where": "free text"
+    },
+    {
+      "id": "g9719",
+      "text": "DEFAULT-ON BASELINE   —   each control bounds a different failure",
+      "translation": "БАЗА ПО УМОЛЧАНИЮ   —   каждая защита сдерживает свой сбой",
+      "where": "free text inside rectangle g9716",
+      "budget_px": 859,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g9725",
+      "text": "1 · Sandbox",
+      "translation": "1 · Песочница",
+      "where": "free text inside rectangle g9722",
+      "budget_px": 191,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g9728",
+      "text": "filesystem scoped\nexecution isolated",
+      "translation": "файлы в рамках\nисполнение изолировано",
+      "where": "free text inside rectangle g9722",
+      "budget_px": 191,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9734",
+      "text": "BOUNDS",
+      "translation": "СДЕРЖИВАЕТ",
+      "where": "free text inside rectangle g9731",
+      "budget_px": 163,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9737",
+      "text": "a bad command",
+      "translation": "плохую команду",
+      "where": "free text inside rectangle g9731",
+      "budget_px": 163,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g9743",
+      "text": "2 · Network",
+      "translation": "2 · Сеть",
+      "where": "free text inside rectangle g9740",
+      "budget_px": 191,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g9746",
+      "text": "egress explicit\nallow-listed",
+      "translation": "выход явный,\nпо списку",
+      "where": "free text inside rectangle g9740",
+      "budget_px": 191,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9752",
+      "text": "BOUNDS",
+      "translation": "СДЕРЖИВАЕТ",
+      "where": "free text inside rectangle g9749",
+      "budget_px": 163,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9755",
+      "text": "exfiltration",
+      "translation": "утечку данных",
+      "where": "free text inside rectangle g9749",
+      "budget_px": 163,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g9761",
+      "text": "3 · Privilege",
+      "translation": "3 · Права",
+      "where": "free text inside rectangle g9758",
+      "budget_px": 191,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g9764",
+      "text": "narrow by default\nstep-up to widen",
+      "translation": "узкие по умолчанию,\nшире — по запросу",
+      "where": "free text inside rectangle g9758",
+      "budget_px": 191,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9770",
+      "text": "BOUNDS",
+      "translation": "СДЕРЖИВАЕТ",
+      "where": "free text inside rectangle g9767",
+      "budget_px": 163,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9773",
+      "text": "over-reach when\nthe agent is wrong",
+      "translation": "лишнее, когда\nагент ошибся",
+      "where": "free text inside rectangle g9767",
+      "budget_px": 163,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g9779",
+      "text": "4 · Human review",
+      "translation": "4 · Ревью людей",
+      "where": "free text inside rectangle g9776",
+      "budget_px": 191,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g9782",
+      "text": "gate on the\ntrajectory",
+      "translation": "барьер на\nтраектории",
+      "where": "free text inside rectangle g9776",
+      "budget_px": 191,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9788",
+      "text": "BOUNDS",
+      "translation": "СДЕРЖИВАЕТ",
+      "where": "free text inside rectangle g9785",
+      "budget_px": 163,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9791",
+      "text": "what the first\nthree let through",
+      "translation": "то, что пропустили\nпервые три",
+      "where": "free text inside rectangle g9785",
+      "budget_px": 163,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "g9797",
+      "text": "The model may improvise — the environment fails closed.",
+      "translation": "Модель может импровизировать — среда по умолчанию закрыта.",
+      "where": "free text inside rectangle g9794",
+      "budget_px": 857,
+      "budget_chars_per_line": 84
+    },
+    {
+      "id": "g9800",
+      "text": "— Fouad Matin, OpenAI Codex  ·  corpus video #152",
+      "translation": "— Фуад Матин, OpenAI Codex  ·  видео корпуса #152",
+      "where": "free text"
+    }
+  ]
+}

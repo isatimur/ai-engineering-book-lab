@@ -1,0 +1,112 @@
+{
+  "source": "diagrams/inline/ch07-fig9-deserved-trust.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g10139",
+      "text": "CHAPTER 7  ·  SECURITY, IDENTITY & HIGH-STAKES TRUST",
+      "translation": "ГЛАВА 7  ·  БЕЗОПАСНОСТЬ, ИДЕНТИЧНОСТЬ И ДОВЕРИЕ ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g10142",
+      "text": "Deserved Trust Has Shape",
+      "translation": "У заслуженного доверия есть форма",
+      "where": "free text"
+    },
+    {
+      "id": "g10151",
+      "text": "Each control answers one question an institution must be able to answer.",
+      "translation": "Каждая защита отвечает на один вопрос, на который институт обязан уметь ответить.",
+      "where": "free text"
+    },
+    {
+      "id": "g10157",
+      "text": "Identity",
+      "translation": "Идентичность",
+      "where": "free text inside rectangle g10154",
+      "budget_px": 319,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g10166",
+      "text": "on whose behalf it acts",
+      "translation": "от чьего имени он действует",
+      "where": "free text inside rectangle g10163",
+      "budget_px": 481,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g10172",
+      "text": "Authorization",
+      "translation": "Авторизация",
+      "where": "free text inside rectangle g10169",
+      "budget_px": 319,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g10181",
+      "text": "which powers it actually holds",
+      "translation": "какие права у него на самом деле",
+      "where": "free text inside rectangle g10178",
+      "budget_px": 481,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g10187",
+      "text": "Sandboxing + least privilege",
+      "translation": "Песочница + минимум прав",
+      "where": "free text inside rectangle g10184",
+      "budget_px": 319,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g10196",
+      "text": "contains the damage when it is wrong",
+      "translation": "сдерживает ущерб, когда он ошибается",
+      "where": "free text inside rectangle g10193",
+      "budget_px": 481,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g10202",
+      "text": "Gateways + roots of trust",
+      "translation": "Шлюзы + корни доверия",
+      "where": "free text inside rectangle g10199",
+      "budget_px": 319,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g10211",
+      "text": "turns sprawl into governable infrastructure",
+      "translation": "делают разрастание управляемой инфраструктурой",
+      "where": "free text inside rectangle g10208",
+      "budget_px": 481,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g10217",
+      "text": "Audit + inspectable paths",
+      "translation": "Аудит + прозрачные пути",
+      "where": "free text inside rectangle g10214",
+      "budget_px": 319,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g10226",
+      "text": "machine action an institution can review",
+      "translation": "действия машины, которые институт может проверить",
+      "where": "free text inside rectangle g10223",
+      "budget_px": 481,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g10232",
+      "text": "A machine colleague is trustworthy only when its power has shape.",
+      "translation": "Машинному коллеге можно доверять, только когда у его силы есть форма.",
+      "where": "free text inside rectangle g10229",
+      "budget_px": 857,
+      "budget_chars_per_line": 84
+    }
+  ]
+}

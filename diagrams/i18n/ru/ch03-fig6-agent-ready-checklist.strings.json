@@ -1,0 +1,198 @@
+{
+  "source": "diagrams/inline/ch03-fig6-agent-ready-checklist.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g770235",
+      "text": "CHAPTER 3  ·  AGENT-READY REPO",
+      "translation": "ГЛАВА 3  ·  РЕПОЗИТОРИЙ, ГОТОВЫЙ К АГЕНТАМ",
+      "where": "free text"
+    },
+    {
+      "id": "g770238",
+      "text": "Agent-Ready Is a Checklist, Not a Vibe",
+      "translation": "Готовность к агентам — чек-лист, а не вайб",
+      "where": "free text"
+    },
+    {
+      "id": "g770247",
+      "text": "Seven affordances that turn tacit standards into a surface an agent can run.",
+      "translation": "Семь опор, которые превращают неявные стандарты в среду, где агент может работать.",
+      "where": "free text"
+    },
+    {
+      "id": "g770250",
+      "text": "AFFORDANCE",
+      "translation": "ОПОРА",
+      "where": "free text"
+    },
+    {
+      "id": "g770253",
+      "text": "WHERE IT LIVES IN THE REPO",
+      "translation": "ГДЕ ЭТО В РЕПОЗИТОРИИ",
+      "where": "free text"
+    },
+    {
+      "id": "g770256",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770259",
+      "text": "stable folder structure",
+      "translation": "стабильная структура папок",
+      "where": "free text"
+    },
+    {
+      "id": "g770265",
+      "text": "src/   tests/   specs/",
+      "translation": "src/   tests/   specs/",
+      "where": "free text inside rectangle g770262",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770268",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770271",
+      "text": "explicit setup / build / run",
+      "translation": "явные настройка / сборка / запуск",
+      "where": "free text"
+    },
+    {
+      "id": "g770277",
+      "text": "make setup · make test · make run",
+      "translation": "make setup · make test · make run",
+      "where": "free text inside rectangle g770274",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770280",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770283",
+      "text": "strong type + lint + test gates",
+      "translation": "строгие проверки типов, линтера, тестов",
+      "where": "free text"
+    },
+    {
+      "id": "g770289",
+      "text": "tsc · eslint · pytest   (agent reruns)",
+      "translation": "tsc · eslint · pytest   (агент перезапускает)",
+      "where": "free text inside rectangle g770286",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770292",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770295",
+      "text": "architecture decisions in files",
+      "translation": "архитектурные решения в файлах",
+      "where": "free text"
+    },
+    {
+      "id": "g770301",
+      "text": "docs/adr/0007-state-machine.md",
+      "translation": "docs/adr/0007-state-machine.md",
+      "where": "free text inside rectangle g770298",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770304",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770307",
+      "text": "examples of accepted patterns",
+      "translation": "примеры принятых паттернов",
+      "where": "free text"
+    },
+    {
+      "id": "g770313",
+      "text": "examples/{tests,api,migrations}",
+      "translation": "examples/{tests,api,migrations}",
+      "where": "free text inside rectangle g770310",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770316",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770319",
+      "text": "specs stored close to the work",
+      "translation": "спецификации рядом с работой",
+      "where": "free text"
+    },
+    {
+      "id": "g770325",
+      "text": "specs/*.md   (survive handoff)",
+      "translation": "specs/*.md   (переживают передачу)",
+      "where": "free text inside rectangle g770322",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770328",
+      "text": "✓",
+      "translation": "✓",
+      "where": "free text"
+    },
+    {
+      "id": "g770331",
+      "text": "narrower tools for common ops",
+      "translation": "узкие инструменты для частых операций",
+      "where": "free text"
+    },
+    {
+      "id": "g770337",
+      "text": "scripts/   not free-form shell",
+      "translation": "scripts/   а не свободный shell",
+      "where": "free text inside rectangle g770334",
+      "budget_px": 421,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g770343",
+      "text": "THE RATCHET:  “a slop test is better than no test” → the next agent follows it → the rules tighten.",
+      "translation": "ХРАПОВИК:  «халтурный тест лучше, чем никакой» → следующий агент следует ему → правила ужесточаются.",
+      "where": "free text inside rectangle g770340",
+      "budget_px": 861,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g770346",
+      "text": "Ask the agent: “where are we not being opinionated enough about our linters?” — and let it write the rule.",
+      "translation": "Спросите агента: «где мы недостаточно строги в правилах линтера?» — и дайте ему написать правило.",
+      "where": "free text inside rectangle g770340",
+      "budget_px": 861,
+      "budget_chars_per_line": 114
+    },
+    {
+      "id": "g770349",
+      "text": "— Eno Reyes, Factory AI · corpus video #57",
+      "translation": "— Ино Рейес, Factory AI · видео корпуса #57",
+      "where": "free text"
+    }
+  ]
+}

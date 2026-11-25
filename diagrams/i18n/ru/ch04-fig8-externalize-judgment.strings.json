@@ -1,0 +1,84 @@
+{
+  "source": "diagrams/inline/ch04-fig8-externalize-judgment.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940304",
+      "text": "CHAPTER 4  ·  FIGURE 8",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 8",
+      "where": "free text"
+    },
+    {
+      "id": "g940307",
+      "text": "Evals externalize judgment",
+      "translation": "Оценки выносят суждение наружу",
+      "where": "free text"
+    },
+    {
+      "id": "g940319",
+      "text": "ASPIRATIONS  (in people's heads)",
+      "translation": "СТРЕМЛЕНИЯ  (в головах людей)",
+      "where": "free text inside rectangle g940316",
+      "budget_px": 276,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "g940322",
+      "text": "“better answers”\n“cleaner patches”\n“safer behavior”",
+      "translation": "«ответы лучше»\n«патчи чище»\n«поведение безопаснее»",
+      "where": "free text inside rectangle g940316",
+      "budget_px": 265,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "g940325",
+      "text": "can't compare · can't enforce",
+      "translation": "нельзя сравнить · нельзя требовать",
+      "where": "free text inside rectangle g940316",
+      "budget_px": 276,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "g940331",
+      "text": "written down",
+      "translation": "записано",
+      "where": "free text"
+    },
+    {
+      "id": "g940337",
+      "text": "INSPECTABLE STANDARDS",
+      "translation": "ПРОВЕРЯЕМЫЕ СТАНДАРТЫ",
+      "where": "free text inside rectangle g940334",
+      "budget_px": 300,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "g940340",
+      "text": "· labeled examples\n· scoring rubrics\n· thresholds\n· review habits",
+      "translation": "· размеченные примеры\n· рубрики оценки\n· пороги\n· привычки ревью",
+      "where": "free text inside rectangle g940334",
+      "budget_px": 283,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g940346",
+      "text": "engineer: correctness   ·   PM: completion + delight   ·   cost   ·   support: escalation   ·   security: worst-case",
+      "translation": "инженер: точность · PM: полнота + восторг · цена · поддержка: эскалации · ИБ: худший случай",
+      "where": "free text"
+    },
+    {
+      "id": "g940349",
+      "text": "an eval system doesn't erase these tradeoffs — it makes them discussable.",
+      "translation": "система оценок не стирает эти компромиссы — она делает их предметом обсуждения.",
+      "where": "free text inside rectangle g940343",
+      "budget_px": 645,
+      "budget_chars_per_line": 82
+    },
+    {
+      "id": "g940352",
+      "text": "A standard that can't survive being written down as examples and thresholds was only a hope.",
+      "translation": "Стандарт, который не выдерживает записи в виде примеров и порогов, был лишь надеждой.",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "source": "diagrams/inline/ch07-fig3-step-up-oauth.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 7  ·  MEDIATED TOOLS",
+      "translation": "ГЛАВА 7  ·  ИНСТРУМЕНТЫ ЧЕРЕЗ ПОСРЕДНИКА",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Tools filtered by scope, escalation on demand",
+      "translation": "Инструменты по правам, остальное — по запросу",
+      "where": "free text"
+    },
+    {
+      "id": "agent_t",
+      "text": "agent",
+      "translation": "агент",
+      "where": "free text inside ellipse agent",
+      "budget_px": 35,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "pat",
+      "text": "PAT: repo:read",
+      "translation": "PAT: repo:read",
+      "where": "free text"
+    },
+    {
+      "id": "gateway_t",
+      "text": "MCP GATEWAY\n\nfilters the tool list\nby PAT scopes",
+      "translation": "ШЛЮЗ MCP\n\nфильтр инструментов\nпо правам PAT",
+      "where": "free text inside rectangle gateway",
+      "budget_px": 140,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "allowed_t",
+      "text": "VISIBLE NOW  —  in scope\nread_file    list_repos\nsearch_code",
+      "translation": "ВИДНЫ СЕЙЧАС  —  в правах\nread_file    list_repos\nsearch_code",
+      "where": "free text inside rectangle allowed",
+      "budget_px": 213,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "hidden_t",
+      "text": "HIDDEN  —  out of scope\nmerge_pr    delete_branch\nwrite_file",
+      "translation": "СКРЫТЫ  —  вне прав\nmerge_pr    delete_branch\nwrite_file",
+      "where": "free text inside rectangle hidden",
+      "budget_px": 213,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "stepup_t",
+      "text": "STEP-UP\nOAUTH\nasked only\nwhen needed",
+      "translation": "OAUTH\nповышение\nправ, когда\nнужно",
+      "where": "free text inside rectangle stepup",
+      "budget_px": 102,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "stepup_lbl",
+      "text": "escalate on demand",
+      "translation": "повысить по запросу",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "GitHub's MCP server shows only in-scope tools; out-of-scope tools need step-up.",
+      "translation": "MCP-сервер GitHub показывает только разрешённые инструменты; остальные — после повышения прав.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Sam Morrow, GitHub  ·  corpus video #625",
+      "translation": "— Сэм Морроу, GitHub  ·  видео корпуса #625",
+      "where": "free text"
+    }
+  ]
+}

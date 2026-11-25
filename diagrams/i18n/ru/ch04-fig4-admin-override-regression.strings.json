@@ -1,0 +1,108 @@
+{
+  "source": "diagrams/inline/ch04-fig4-admin-override-regression.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940001",
+      "text": "CHAPTER 4  ·  FIGURE 4",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 4",
+      "where": "free text"
+    },
+    {
+      "id": "g940004",
+      "text": "The admin-override regression",
+      "translation": "Регрессия админского обхода",
+      "where": "free text"
+    },
+    {
+      "id": "g940016",
+      "text": "Rate-limit\nrule\n(agent added)",
+      "translation": "Правило\nлимита запросов\n(добавил агент)",
+      "where": "free text inside rectangle g940013",
+      "budget_px": 140,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g940028",
+      "text": "Normal API writes",
+      "translation": "Обычная запись API",
+      "where": "free text inside rectangle g940025",
+      "budget_px": 170,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g940037",
+      "text": "✓ throttled correctly",
+      "translation": "✓ ограничено верно",
+      "where": "free text inside rectangle g940034",
+      "budget_px": 208,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g940040",
+      "text": "the rule this path needed",
+      "translation": "правило, нужное этому пути",
+      "where": "free text"
+    },
+    {
+      "id": "g940046",
+      "text": "WHY IT SLIPPED",
+      "translation": "ПОЧЕМУ ПРОСКОЧИЛО",
+      "where": "free text inside rectangle g940043",
+      "budget_px": 441,
+      "budget_chars_per_line": 73
+    },
+    {
+      "id": "g940049",
+      "text": "the backfill exception lived only in an old review comment\n+ the one engineer who remembered that path was special",
+      "translation": "исключение для бэкфилла было лишь в старом комментарии ревью\n+ в памяти инженера, который помнил этот путь",
+      "where": "free text inside rectangle g940043",
+      "budget_px": 441,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "g940055",
+      "text": "Admin backfill path",
+      "translation": "Путь админ-бэкфилла",
+      "where": "free text inside rectangle g940052",
+      "budget_px": 170,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g940064",
+      "text": "✗ same throttle,\nwrong rule",
+      "translation": "✗ тот же лимит,\nне то правило",
+      "where": "free text inside rectangle g940061",
+      "budget_px": 208,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "g940067",
+      "text": "backfills stall in production — found 2 days later",
+      "translation": "бэкфиллы встают в продакшене — нашли через 2 дня",
+      "where": "free text"
+    },
+    {
+      "id": "g940073",
+      "text": "ALL GATES GREEN",
+      "translation": "ВСЕ ПРОВЕРКИ ЗЕЛЁНЫЕ",
+      "where": "free text inside rectangle g940070",
+      "budget_px": 175,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g940076",
+      "text": "type-checks ✓\nunit tests ✓\nPR “looks fine” ✓",
+      "translation": "типы ✓ · юнит-тесты ✓\nPR «вроде ок» ✓",
+      "where": "free text inside rectangle g940070",
+      "budget_px": 175,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g940079",
+      "text": "A rule that was right for one path was wrong for another — and every automated gate still passed.",
+      "translation": "Правило, верное для одного пути, оказалось неверным для другого — и все автоматические проверки прошли.",
+      "where": "free text"
+    }
+  ]
+}

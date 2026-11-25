@@ -1,0 +1,94 @@
+{
+  "source": "diagrams/inline/ch07-fig2-scoped-agent-identity.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 7  ·  AGENT IDENTITY",
+      "translation": "ГЛАВА 7  ·  ИДЕНТИЧНОСТЬ АГЕНТА",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Standing key vs. scoped identity",
+      "translation": "Вечный ключ против узкой идентичности",
+      "where": "free text"
+    },
+    {
+      "id": "naive_h",
+      "text": "THE NAIVE WAY  —  AGENT AS A USER",
+      "translation": "НАИВНО  —  АГЕНТ КАК ПОЛЬЗОВАТЕЛЬ",
+      "where": "free text inside rectangle naive_panel",
+      "budget_px": 309,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "naive_user_t",
+      "text": "agent",
+      "translation": "агент",
+      "where": "free text inside ellipse naive_user",
+      "budget_px": 30,
+      "budget_chars_per_line": 4
+    },
+    {
+      "id": "naive_vault_t",
+      "text": "ADMIN_API_KEY\nfull account\nno expiry",
+      "translation": "ADMIN_API_KEY\nвесь аккаунт\nбессрочно",
+      "where": "free text inside rectangle naive_vault",
+      "budget_px": 141,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "naive_take",
+      "text": "Agent inherits the whole person.\nNo way to scope, time-box, or\nrevoke just the agent.",
+      "translation": "Агент наследует человека целиком.\nНельзя сузить, ограничить по\nвремени или отозвать только агента.",
+      "where": "free text inside rectangle naive_panel",
+      "budget_px": 309,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "eng_h",
+      "text": "ENGINEERED  —  SCOPED IDENTITY",
+      "translation": "ИНЖЕНЕРНО  —  УЗКАЯ ИДЕНТИЧНОСТЬ",
+      "where": "free text inside rectangle eng_panel",
+      "budget_px": 277,
+      "budget_chars_per_line": 41
+    },
+    {
+      "id": "eng_user_t",
+      "text": "agent",
+      "translation": "агент",
+      "where": "free text inside ellipse eng_user",
+      "budget_px": 24,
+      "budget_chars_per_line": 3
+    },
+    {
+      "id": "eng_token_t",
+      "text": "scoped_token\nacts for:  user#7741\nscope:  [\"filings:read\"]\nttl:  15m   ·   revocable",
+      "translation": "scoped_token\nот имени:  user#7741\nscope:  [\"filings:read\"]\nttl:  15m   ·   отзываемый",
+      "where": "free text inside rectangle eng_token",
+      "budget_px": 177,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "eng_take",
+      "text": "A bounded subset of the person:\non whose behalf, what, how long.",
+      "translation": "Ограниченная часть человека:\nот чьего имени, что, как долго.",
+      "where": "free text inside rectangle eng_panel",
+      "budget_px": 277,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "caption",
+      "text": "An agent should not be authenticated as a blurry extension of a human.",
+      "translation": "Агент не должен входить в систему как размытое продолжение человека.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Jared Hanson, Keycard / Passport.js  ·  corpus video #150",
+      "translation": "— Джаред Хэнсон, Keycard / Passport.js  ·  видео корпуса #150",
+      "where": "free text"
+    }
+  ]
+}

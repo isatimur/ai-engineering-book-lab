@@ -1,0 +1,108 @@
+{
+  "source": "diagrams/inline/ch06-fig3-subagents-need-recompose.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Parallelism needs a recompose point",
+      "translation": "Параллельной работе нужна точка сборки",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "More subagents add leverage only if their outputs are recomposed and routed to a reviewer.",
+      "translation": "Больше субагентов дают рычаг, только если их результаты сводят вместе и отдают на ревью.",
+      "where": "free text"
+    },
+    {
+      "id": "lead_t",
+      "text": "lead agent",
+      "translation": "ведущий агент",
+      "where": "free text inside rectangle lead",
+      "budget_px": 120,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "fanout_l",
+      "text": "fan out",
+      "translation": "раздать",
+      "where": "free text"
+    },
+    {
+      "id": "sa1_t",
+      "text": "subagent: tests",
+      "translation": "субагент: тесты",
+      "where": "free text inside rectangle sa1",
+      "budget_px": 120,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "sa2_t",
+      "text": "subagent: docs",
+      "translation": "субагент: доки",
+      "where": "free text inside rectangle sa2",
+      "budget_px": 120,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "sa3_t",
+      "text": "subagent: refactor",
+      "translation": "субагент: рефактор",
+      "where": "free text inside rectangle sa3",
+      "budget_px": 120,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "recompose_t",
+      "text": "recompose\n+ summarize\n+ inspect",
+      "translation": "свести\n+ обобщить\n+ проверить",
+      "where": "free text inside rectangle recompose",
+      "budget_px": 130,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "join_l",
+      "text": "fan in",
+      "translation": "собрать",
+      "where": "free text"
+    },
+    {
+      "id": "review_t",
+      "text": "human\nreview",
+      "translation": "ревью\nчеловека",
+      "where": "free text inside rectangle review",
+      "budget_px": 90,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "r1_l",
+      "text": "one view",
+      "translation": "сводка",
+      "where": "free text"
+    },
+    {
+      "id": "warn_t",
+      "text": "Without the orange recompose step: 24 unaligned outputs land on the reviewer at once — chaos, faster.",
+      "translation": "Без оранжевой сборки на ревьюера разом падают 24 несогласованных результата — хаос, быстрее.",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Fan-out only helps if a recompose point summarizes and routes work to a single review surface.",
+      "translation": "Раздача помогает, только если точка сборки обобщает работу и ведёт её к одному месту ревью.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Maggie Appleton, GitHub · corpus video #623  ·  Codex & Subagents — OpenAI · #632",
+      "translation": "— Мэгги Эпплтон, GitHub · видео корпуса #623  ·  Codex и субагенты — OpenAI · #632",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "source": "diagrams/inline/ch09-fig9-accountability-owner.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g12493",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "g12496",
+      "text": "Every Widened Path Names an Owner",
+      "translation": "У каждого расширенного пути есть владелец",
+      "where": "free text"
+    },
+    {
+      "id": "g12505",
+      "text": "Blurred creation, sharpened accountability — assign owners before the path opens.",
+      "translation": "Создание размыто, ответственность чётче — назначьте владельцев до открытия пути.",
+      "where": "free text"
+    },
+    {
+      "id": "g12511",
+      "text": "WIDEN CREATION:   support ships code  ·  product prototypes  ·  domain experts automate",
+      "translation": "ШИРЕ СОЗДАНИЕ:   поддержка пишет код  ·  продакты делают прототипы  ·  эксперты автоматизируют",
+      "where": "free text inside rectangle g12508",
+      "budget_px": 872,
+      "budget_chars_per_line": 96
+    },
+    {
+      "id": "g12520",
+      "text": "BEFORE IT OPENS — name the owner  (assign, don’t discover)",
+      "translation": "ДО ОТКРЫТИЯ — назовите владельца  (назначить, а не обнаружить)",
+      "where": "free text inside rectangle g12517",
+      "budget_px": 872,
+      "budget_chars_per_line": 103
+    },
+    {
+      "id": "g12526",
+      "text": "① owns the\nproduction path",
+      "translation": "① отвечает за\nпуть в прод",
+      "where": "free text inside rectangle g12523",
+      "budget_px": 186,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g12532",
+      "text": "② owns domain\ncorrectness",
+      "translation": "② отвечает за\nверность в домене",
+      "where": "free text inside rectangle g12529",
+      "budget_px": 186,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g12538",
+      "text": "③ owns security\nboundaries",
+      "translation": "③ отвечает за\nграницы безопасности",
+      "where": "free text inside rectangle g12535",
+      "budget_px": 186,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g12544",
+      "text": "④ decides what\nstays human-gated",
+      "translation": "④ решает, что\nостаётся за человеком",
+      "where": "free text inside rectangle g12541",
+      "budget_px": 186,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g12550",
+      "text": "all four named   →   democratization",
+      "translation": "все четыре названы   →   демократизация",
+      "where": "free text inside rectangle g12547",
+      "budget_px": 420,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g12556",
+      "text": "any slot blank   →   accountability gap",
+      "translation": "есть пустое место   →   дыра в ответственности",
+      "where": "free text inside rectangle g12553",
+      "budget_px": 420,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g12559",
+      "text": "(found after it ships)",
+      "translation": "(всплывёт после релиза)",
+      "where": "free text inside rectangle g12553",
+      "budget_px": 420,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "g12565",
+      "text": "Widened creation without an assigned owner is not democratization —",
+      "translation": "Широкое создание без назначенного владельца — не демократизация,",
+      "where": "free text inside rectangle g12562",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g12568",
+      "text": "it is an accountability gap waiting to be discovered.",
+      "translation": "а дыра в ответственности, которая ждёт, когда её найдут.",
+      "where": "free text inside rectangle g12562",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    }
+  ]
+}

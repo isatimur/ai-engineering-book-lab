@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/08-chapter4-evals.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 4",
+      "translation": "ГЛАВА 4",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Evals Are the Control System",
+      "translation": "Оценки — это система управления",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Turn trust into measurement — evaluation is the real operating system of production AI.",
+      "translation": "Превратите доверие в измерение: оценка — настоящая операционная система ИИ в продакшене.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE NAIVE WAY",
+      "translation": "НАИВНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "Vibes and benchmarks",
+      "translation": "Вайб и бенчмарки",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Ship if the demo looks good.\nTrust a leaderboard score.",
+      "translation": "Выпускать, если демо выглядит хорошо.\nВерить баллу в лидерборде.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  HOW QUALITY IS JUDGED",
+      "translation": "ПРИМЕР  —  КАК СУДЯТ О КАЧЕСТВЕ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "$ run benchmark\n  MMLU .......... 88.4%\n  \"looks good in the demo — ship it\"\n\n# how regressions are found:\n  by users, in production",
+      "translation": "$ run benchmark\n  MMLU .......... 88.4%\n  «в демо выглядит хорошо — выпускаем»\n\n# как находят регрессии:\n  пользователи, в продакшене",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Cost  —  quality is a guess; regressions ship silently.",
+      "translation": "Цена  —  качество наугад; регрессии уходят в продакшен молча.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "THE ENGINEERED WAY",
+      "translation": "ИНЖЕНЕРНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "An operational eval loop",
+      "translation": "Рабочий цикл оценок",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "Human-seeded cases. Task-level scoring.\nProduction traces feed the next eval.",
+      "translation": "Случаи от людей. Оценка на уровне задач.\nТрейсы продакшена питают следующую оценку.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  AN EVAL CASE + THE FLYWHEEL",
+      "translation": "ПРИМЕР  —  СЛУЧАЙ ОЦЕНКИ + МАХОВИК",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "eval_case:\n  input:  \"refund a duplicate charge\"\n  expect: issues_refund AND logs_reason\n  judge:  llm_rubric -> 0.0 .. 1.0\n  gate:   score >= 0.9 to ship\n\nprod traces -> new eval cases -> loop",
+      "translation": "eval_case:\n  input:  \"вернуть деньги за двойное списание\"\n  expect: issues_refund AND logs_reason\n  judge:  llm_rubric -> 0.0 .. 1.0\n  gate:   score >= 0.9 to ship\n\nтрейсы прода -> новые случаи -> цикл",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Payoff  —  trust you can measure, defend, and improve.",
+      "translation": "Выигрыш  —  доверие можно измерить, защитить и улучшить.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "benchmarks\nto an operational loop",
+      "translation": "от бенчмарков\nк циклу",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 4 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 4",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "Benchmarks alone do not create\ntrust — operational loops do.",
+      "translation": "Одни бенчмарки не создают\nдоверия — его создают рабочие циклы.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "Repo- and task-level evals are\nmore predictive than snippets.",
+      "translation": "Оценки на уровне репо и задач\nпредсказывают лучше фрагментов.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "Human-seeded evals encode the\nreal failure modes that matter.",
+      "translation": "Оценки, заложенные людьми, отражают\nреальные важные виды сбоев.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "Observability and evals form a\nflywheel: traces become next evals.",
+      "translation": "Наблюдаемость и оценки — маховик:\nтрейсы становятся новыми оценками.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“Evals are not unit tests.”   —  Ido Pesok, Vercel v0  ·  corpus video #125\n“Human-seeded evals encode the real failure modes that matter.”   —  Samuel Colvin, Pydantic  ·  corpus video #184",
+      "translation": "«Оценки — это не юнит-тесты».   —  Идо Песок, Vercel v0  ·  видео корпуса #125\n«Оценки, заложенные людьми, отражают реальные важные виды сбоев».   —  Сэмюэл Колвин, Pydantic  ·  видео корпуса #184",
+      "where": "free text"
+    }
+  ]
+}

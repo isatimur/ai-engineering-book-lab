@@ -1,0 +1,142 @@
+{
+  "source": "diagrams/inline/ch08-fig9-forgiveness-gradient.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g8907",
+      "text": "CHAPTER 8  ·  REALTIME, VOICE & THE COST OF BEING INTERRUPTIBLE",
+      "translation": "ГЛАВА 8  ·  РЕАЛЬНОЕ ВРЕМЯ, ГОЛОС И ЦЕНА ПРЕРЫВАЕМОСТИ",
+      "where": "free text"
+    },
+    {
+      "id": "g8910",
+      "text": "The Forgiveness Gradient",
+      "translation": "Градиент снисходительности",
+      "where": "free text"
+    },
+    {
+      "id": "g8919",
+      "text": "Each modality removes a hiding place. Text flatters; embodiment can't.",
+      "translation": "Каждая модальность отнимает укрытие. Текст льстит; тело не скроет.",
+      "where": "free text"
+    },
+    {
+      "id": "g8925",
+      "text": "TEXT",
+      "translation": "ТЕКСТ",
+      "where": "free text inside rectangle g8922",
+      "budget_px": 272,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g8931",
+      "text": "·  hides latency behind a cursor",
+      "translation": "·  прячет задержку за курсором",
+      "where": "free text inside rectangle g8922",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8934",
+      "text": "·  tolerates awkward pauses",
+      "translation": "·  терпит неловкие паузы",
+      "where": "free text inside rectangle g8922",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8937",
+      "text": "·  user silently repairs the gaps",
+      "translation": "·  человек молча латает дыры",
+      "where": "free text inside rectangle g8922",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8943",
+      "text": "VOICE",
+      "translation": "ГОЛОС",
+      "where": "free text inside rectangle g8940",
+      "budget_px": 272,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g8949",
+      "text": "·  timing itself is audible",
+      "translation": "·  слышен сам тайминг",
+      "where": "free text inside rectangle g8940",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8952",
+      "text": "·  silence reads as incompetence",
+      "translation": "·  тишина звучит как неумение",
+      "where": "free text inside rectangle g8940",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8955",
+      "text": "·  every interjection is a barge-in",
+      "translation": "·  каждая реплика — перебивание",
+      "where": "free text"
+    },
+    {
+      "id": "g8961",
+      "text": "EMBODIED",
+      "translation": "ВОПЛОЩЁННЫЙ",
+      "where": "free text inside rectangle g8958",
+      "budget_px": 272,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g8967",
+      "text": "·  delay becomes visible",
+      "translation": "·  задержку видно",
+      "where": "free text inside rectangle g8958",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8970",
+      "text": "·  state mismatch is dangerous",
+      "translation": "·  рассинхрон опасен",
+      "where": "free text inside rectangle g8958",
+      "budget_px": 257,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g8973",
+      "text": "·  recovery matters more than words",
+      "translation": "·  восстановление важнее слов",
+      "where": "free text"
+    },
+    {
+      "id": "g8979",
+      "text": "MORE FORGIVING",
+      "translation": "СНИСХОДИТЕЛЬНЕЕ",
+      "where": "free text"
+    },
+    {
+      "id": "g8982",
+      "text": "what the system can hide  →  shrinks to nothing",
+      "translation": "что система может скрыть  →  сходит на нет",
+      "where": "free text"
+    },
+    {
+      "id": "g8985",
+      "text": "LESS FORGIVING",
+      "translation": "СТРОЖЕ",
+      "where": "free text"
+    },
+    {
+      "id": "g8991",
+      "text": "Autonomy is a property of the whole scaffolding, not the model. Text just lets you pretend longer.",
+      "translation": "Автономия — свойство всей обвязки, а не модели. Текст просто дольше позволяет притворяться.",
+      "where": "free text inside rectangle g8988",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    }
+  ]
+}

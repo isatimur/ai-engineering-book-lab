@@ -1,0 +1,148 @@
+{
+  "source": "diagrams/inline/ch05-fig1-rag-is-not-memory.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 5  ·  FIGURE 1",
+      "translation": "ГЛАВА 5  ·  РИСУНОК 1",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Retrieval is not memory",
+      "translation": "Поиск — это не память",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "RAG re-fetches similar text every turn; memory carries forward what was learned.",
+      "translation": "RAG каждый ход заново ищет похожий текст; память переносит вперёд то, что узнано.",
+      "where": "free text"
+    },
+    {
+      "id": "rag_h",
+      "text": "RAG USED AS MEMORY",
+      "translation": "RAG ВМЕСТО ПАМЯТИ",
+      "where": "free text inside rectangle rag_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "rag_sub",
+      "text": "Every turn starts cold",
+      "translation": "Каждый ход — с нуля",
+      "where": "free text inside rectangle rag_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "rag_q1t",
+      "text": "query t1",
+      "translation": "запрос t1",
+      "where": "free text inside rectangle rag_q1",
+      "budget_px": 76,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "rag_q2t",
+      "text": "query t2",
+      "translation": "запрос t2",
+      "where": "free text inside rectangle rag_q2",
+      "budget_px": 76,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "rag_q3t",
+      "text": "query t3",
+      "translation": "запрос t3",
+      "where": "free text inside rectangle rag_q3",
+      "budget_px": 76,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "rag_corpust",
+      "text": "static document corpus  (read-only)",
+      "translation": "статичный корпус документов  (чтение)",
+      "where": "free text inside rectangle rag_corpus",
+      "budget_px": 284,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "rag_take",
+      "text": "Nothing learned at t1 reaches t3.",
+      "translation": "Узнанное на t1 не доходит до t3.",
+      "where": "free text inside rectangle rag_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "mem_h",
+      "text": "MEMORY AS A LAYER",
+      "translation": "ПАМЯТЬ КАК СЛОЙ",
+      "where": "free text inside rectangle mem_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "mem_sub",
+      "text": "State accumulates across turns",
+      "translation": "Состояние копится от хода к ходу",
+      "where": "free text inside rectangle mem_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "mem_q1t",
+      "text": "turn t1",
+      "translation": "ход t1",
+      "where": "free text inside rectangle mem_q1",
+      "budget_px": 76,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "mem_q2t",
+      "text": "turn t2",
+      "translation": "ход t2",
+      "where": "free text inside rectangle mem_q2",
+      "budget_px": 76,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "mem_q3t",
+      "text": "turn t3",
+      "translation": "ход t3",
+      "where": "free text inside rectangle mem_q3",
+      "budget_px": 76,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "mem_storet",
+      "text": "memory store  (written + read each turn)",
+      "translation": "хранилище памяти  (запись и чтение)",
+      "where": "free text inside rectangle mem_store",
+      "budget_px": 284,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "mem_take",
+      "text": "What was learned persists and compounds.",
+      "translation": "Узнанное сохраняется и накапливается.",
+      "where": "free text inside rectangle mem_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "caption",
+      "text": "RAG re-retrieves similar text per query; a memory layer persists state across turns.",
+      "translation": "RAG заново ищет похожий текст на каждый запрос; слой памяти хранит состояние между ходами.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "“Stuffing context is not memory.” — Jack Morris · corpus video #48",
+      "translation": "«Забить контекст — это не память». — Джек Моррис · видео корпуса #48",
+      "where": "free text"
+    }
+  ]
+}

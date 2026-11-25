@@ -1,0 +1,92 @@
+{
+  "source": "diagrams/inline/ch04-fig3-observability-flywheel.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 4  ·  FIGURE 3",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 3",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Production traces become tomorrow's evals",
+      "translation": "Трейсы продакшена — завтрашние оценки",
+      "where": "free text"
+    },
+    {
+      "id": "n_prod_t",
+      "text": "PRODUCTION\nsystem serves\nreal users",
+      "translation": "ПРОДАКШЕН\nсистема служит\nреальным людям",
+      "where": "free text inside ellipse n_prod",
+      "budget_px": 110,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "n_obs_t",
+      "text": "OBSERVABILITY\ncapture traces +\nfailures",
+      "translation": "НАБЛЮДАЕМОСТЬ\nтрейсы и ошибки\nсобраны",
+      "where": "free text inside ellipse n_obs",
+      "budget_px": 110,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "n_dset_t",
+      "text": "REGRESSION SET\nhard cases become\neval dataset",
+      "translation": "РЕГРЕССИИ\nтрудные случаи\nстали датасетом",
+      "where": "free text inside ellipse n_dset",
+      "budget_px": 110,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "n_eval_t",
+      "text": "OFFLINE EVAL\nscore the fix\nbefore shipping",
+      "translation": "ОФЛАЙН-ОЦЕНКА\nбалл за правку\nдо выпуска",
+      "where": "free text inside ellipse n_eval",
+      "budget_px": 110,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "e1_t",
+      "text": "every run is logged",
+      "translation": "каждый прогон записан",
+      "where": "free text"
+    },
+    {
+      "id": "e2_t",
+      "text": "what hurt you\nis curated",
+      "translation": "что навредило,\nидёт в отбор",
+      "where": "free text"
+    },
+    {
+      "id": "e3_t",
+      "text": "graded before release",
+      "translation": "оценено до релиза",
+      "where": "free text"
+    },
+    {
+      "id": "e4_t",
+      "text": "verified change\nships back",
+      "translation": "проверенная правка\nуходит в продакшен",
+      "where": "free text"
+    },
+    {
+      "id": "hub",
+      "text": "THE FLYWHEEL",
+      "translation": "МАХОВИК",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "Observability and eval are one loop: real failure traces become tomorrow's eval set.",
+      "translation": "Наблюдаемость и оценка — один цикл: трейсы реальных ошибок становятся завтрашним набором оценок.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Phil Hetzel, Braintrust · corpus video #628",
+      "translation": "— Фил Хетцель, Braintrust · видео корпуса #628",
+      "where": "free text"
+    }
+  ]
+}

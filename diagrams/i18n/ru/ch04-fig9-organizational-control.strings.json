@@ -1,0 +1,126 @@
+{
+  "source": "diagrams/inline/ch04-fig9-organizational-control.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940355",
+      "text": "CHAPTER 4  ·  FIGURE 9",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 9",
+      "where": "free text"
+    },
+    {
+      "id": "g940358",
+      "text": "From one hero to shared infrastructure",
+      "translation": "От одного героя к общей инфраструктуре",
+      "where": "free text"
+    },
+    {
+      "id": "g940370",
+      "text": "THE HERO PHASE",
+      "translation": "ФАЗА ГЕРОЯ",
+      "where": "free text inside rectangle g940367",
+      "budget_px": 252,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g940373",
+      "text": "one careful engineer\none spreadsheet\none growing pile\nof examples",
+      "translation": "один дотошный инженер\nодна таблица\nодна растущая куча\nпримеров",
+      "where": "free text inside rectangle g940367",
+      "budget_px": 241,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g940376",
+      "text": "single point of failure —\n“knows where the\nbodies are buried”",
+      "translation": "единая точка отказа —\n«знает, где зарыты\nвсе тела»",
+      "where": "free text inside rectangle g940367",
+      "budget_px": 252,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g940379",
+      "text": "a start, not an end",
+      "translation": "начало, а не конец",
+      "where": "free text inside rectangle g940367",
+      "budget_px": 252,
+      "budget_chars_per_line": 35
+    },
+    {
+      "id": "g940388",
+      "text": "Eng",
+      "translation": "Разраб.",
+      "where": "free text inside rectangle g940385",
+      "budget_px": 58,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g940397",
+      "text": "Product",
+      "translation": "Продукт",
+      "where": "free text inside rectangle g940394",
+      "budget_px": 58,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g940406",
+      "text": "Design",
+      "translation": "Дизайн",
+      "where": "free text inside rectangle g940403",
+      "budget_px": 58,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g940415",
+      "text": "Ops",
+      "translation": "Опер.",
+      "where": "free text inside rectangle g940412",
+      "budget_px": 58,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g940424",
+      "text": "Domain",
+      "translation": "Домен",
+      "where": "free text inside rectangle g940421",
+      "budget_px": 58,
+      "budget_chars_per_line": 8
+    },
+    {
+      "id": "g940433",
+      "text": "EVAL PLATFORM\nshared infrastructure",
+      "translation": "ПЛАТФОРМА ОЦЕНОК\nобщая инфраструктура",
+      "where": "free text inside rectangle g940430",
+      "budget_px": 170,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g940439",
+      "text": "SOMEONE OWNS",
+      "translation": "У ЭТОГО ЕСТЬ ВЛАДЕЛЕЦ",
+      "where": "free text inside rectangle g940436",
+      "budget_px": 329,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g940442",
+      "text": "· datasets   · failure labels   · slice upkeep\n· judge-vs-expert calls   · the tie to product",
+      "translation": "· датасеты · метки ошибок · поддержка срезов\n· судья против эксперта · связь с продуктом",
+      "where": "free text inside rectangle g940436",
+      "budget_px": 329,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "g940445",
+      "text": "Evaluation moves from one overworked human to shared infrastructure the whole org argues over.",
+      "translation": "Оценка переходит от одного перегруженного человека к общей инфраструктуре, о которой спорит вся компания.",
+      "where": "free text"
+    },
+    {
+      "id": "g940448",
+      "text": "— Phil Hetzel, Braintrust · corpus video #628",
+      "translation": "— Фил Хетцель, Braintrust · видео корпуса #628",
+      "where": "free text"
+    }
+  ]
+}

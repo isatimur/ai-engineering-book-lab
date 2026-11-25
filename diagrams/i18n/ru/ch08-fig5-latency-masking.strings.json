@@ -1,0 +1,144 @@
+{
+  "source": "diagrams/inline/ch08-fig5-latency-masking.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9613",
+      "text": "CHAPTER 8  ·  REALTIME, VOICE & THE COST OF BEING INTERRUPTIBLE",
+      "translation": "ГЛАВА 8  ·  РЕАЛЬНОЕ ВРЕМЯ, ГОЛОС И ЦЕНА ПРЕРЫВАЕМОСТИ",
+      "where": "free text"
+    },
+    {
+      "id": "g9616",
+      "text": "Mask Latency, Don't Just Minimize It",
+      "translation": "Маскируйте задержку, а не только сокращайте",
+      "where": "free text"
+    },
+    {
+      "id": "g9625",
+      "text": "When a tool call can take 4s, you can't optimize into a 200ms budget. Fill the gap.",
+      "translation": "Если вызов инструмента идёт до 4 с, в бюджет 200 мс его не ужать. Заполните паузу.",
+      "where": "free text"
+    },
+    {
+      "id": "g9628",
+      "text": "turn budget",
+      "translation": "на реплику",
+      "where": "free text"
+    },
+    {
+      "id": "g9634",
+      "text": "200ms",
+      "translation": "200 мс",
+      "where": "free text"
+    },
+    {
+      "id": "g9637",
+      "text": "tool-call latency",
+      "translation": "инструмент",
+      "where": "free text"
+    },
+    {
+      "id": "g9643",
+      "text": "0.5 – 4 s  (variance is the killer)",
+      "translation": "0,5–4 с  (беда в разбросе)",
+      "where": "free text inside rectangle g9640",
+      "budget_px": 283,
+      "budget_chars_per_line": 39
+    },
+    {
+      "id": "g9646",
+      "text": "UNMASKED",
+      "translation": "БЕЗ МАСКИРОВКИ",
+      "where": "free text"
+    },
+    {
+      "id": "g9652",
+      "text": "user EOU",
+      "translation": "конец фразы",
+      "where": "free text inside rectangle g9649",
+      "budget_px": 110,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9658",
+      "text": "·  ·  ·   SILENCE — tool runs ~3s   ·  ·  ·",
+      "translation": "·  ·  ·   ТИШИНА — инструмент ~3 с   ·  ·  ·",
+      "where": "free text inside rectangle g9655",
+      "budget_px": 460,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "g9664",
+      "text": "reply",
+      "translation": "ответ",
+      "where": "free text inside rectangle g9661",
+      "budget_px": 110,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9667",
+      "text": "dead line — sounds frozen",
+      "translation": "мёртвая линия — будто завис",
+      "where": "free text"
+    },
+    {
+      "id": "g9670",
+      "text": "MASKED",
+      "translation": "С МАСКИРОВКОЙ",
+      "where": "free text"
+    },
+    {
+      "id": "g9676",
+      "text": "user EOU",
+      "translation": "конец фразы",
+      "where": "free text inside rectangle g9673",
+      "budget_px": 110,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9682",
+      "text": "tool runs in the background",
+      "translation": "инструмент работает в фоне",
+      "where": "free text"
+    },
+    {
+      "id": "g9688",
+      "text": "“one moment…” filler",
+      "translation": "«секунду…»",
+      "where": "free text inside rectangle g9685",
+      "budget_px": 200,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g9694",
+      "text": "clarifying question",
+      "translation": "уточняющий вопрос",
+      "where": "free text inside rectangle g9691",
+      "budget_px": 228,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g9700",
+      "text": "reply",
+      "translation": "ответ",
+      "where": "free text inside rectangle g9697",
+      "budget_px": 110,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "g9703",
+      "text": "conversation stays alive — the 3s call disappears into the rhythm",
+      "translation": "разговор живёт — 3 секунды вызова тонут в ритме",
+      "where": "free text"
+    },
+    {
+      "id": "g9709",
+      "text": "\"While it waits for the result, it can keep the conversation going.\" — Neil Zeghidour  ·  corpus",
+      "translation": "«Пока он ждёт результата, он может поддерживать разговор». — Нил Зегидур  ·  корпус",
+      "where": "free text inside rectangle g9706",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "source": "diagrams/inline/ch06-fig2-human-control-plane.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The human control plane",
+      "translation": "Контур контроля человека",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Approvals and inspection are an architectural layer between the agent and the world.",
+      "translation": "Одобрение и проверка — слой архитектуры между агентом и миром.",
+      "where": "free text"
+    },
+    {
+      "id": "agent_h",
+      "text": "AGENT RUNTIME",
+      "translation": "СРЕДА АГЕНТА",
+      "where": "free text inside rectangle agent",
+      "budget_px": 179,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "agent_b",
+      "text": "proposes actions:\n\n· refund $480\n· email customer\n· close ticket\n\nplans, retries,\ncalls tools",
+      "translation": "предлагает действия:\n\n· возврат $480\n· письмо клиенту\n· закрыть тикет\n\nпланирует, повторяет,\nвызывает инструменты",
+      "where": "free text inside rectangle agent",
+      "budget_px": 179,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "plane_h",
+      "text": "HUMAN CONTROL PLANE",
+      "translation": "КОНТУР КОНТРОЛЯ",
+      "where": "free text inside rectangle plane",
+      "budget_px": 209,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "g_inspectt",
+      "text": "inspect  ·  see plan + state",
+      "translation": "смотреть · план, состояние",
+      "where": "free text inside rectangle g_inspect",
+      "budget_px": 183,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "g_approvet",
+      "text": "approve  ·  gate risky steps",
+      "translation": "одобрить · рисковые шаги",
+      "where": "free text inside rectangle g_approve",
+      "budget_px": 183,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "g_intervenet",
+      "text": "intervene  ·  edit or stop",
+      "translation": "вмешаться · правка, стоп",
+      "where": "free text inside rectangle g_intervene",
+      "budget_px": 183,
+      "budget_chars_per_line": 27
+    },
+    {
+      "id": "g_person",
+      "text": "↑  reviewed by a human\n     who stays accountable",
+      "translation": "↑  смотрит человек,\n     который за всё отвечает",
+      "where": "free text inside rectangle plane",
+      "budget_px": 209,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "world_h",
+      "text": "THE WORLD",
+      "translation": "МИР",
+      "where": "free text inside rectangle world",
+      "budget_px": 139,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "world_b",
+      "text": "irreversible\neffects:\n\n· money moves\n· emails sent\n· records\n  changed",
+      "translation": "необратимые\nпоследствия:\n\n· уходят деньги\n· уходят письма\n· меняются\n  записи",
+      "where": "free text inside rectangle world",
+      "budget_px": 139,
+      "budget_chars_per_line": 19
+    },
+    {
+      "id": "a_to_plane_l",
+      "text": "proposes",
+      "translation": "просит",
+      "where": "free text"
+    },
+    {
+      "id": "plane_to_world_l",
+      "text": "commits",
+      "translation": "вносит",
+      "where": "free text"
+    },
+    {
+      "id": "caption",
+      "text": "No action reaches the world unreviewed — the control plane is a layer, not a UX afterthought.",
+      "translation": "Ни одно действие не доходит до мира без проверки: контур контроля — слой, а не довесок UX.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Harrison Chase, LangChain/LangGraph · corpus video #198",
+      "translation": "— Харрисон Чейз, LangChain/LangGraph · видео корпуса #198",
+      "where": "free text"
+    }
+  ]
+}

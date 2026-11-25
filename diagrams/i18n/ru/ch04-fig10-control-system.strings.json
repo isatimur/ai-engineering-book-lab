@@ -1,0 +1,104 @@
+{
+  "source": "diagrams/inline/ch04-fig10-control-system.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940451",
+      "text": "CHAPTER 4  ·  FIGURE 10",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 10",
+      "where": "free text"
+    },
+    {
+      "id": "g940454",
+      "text": "The control system, assembled",
+      "translation": "Система управления в сборе",
+      "where": "free text"
+    },
+    {
+      "id": "g940466",
+      "text": "representative tasks",
+      "translation": "репрезентативные задачи",
+      "where": "free text inside rectangle g940463",
+      "budget_px": 240,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g940475",
+      "text": "credible scoring",
+      "translation": "достоверные баллы",
+      "where": "free text inside rectangle g940472",
+      "budget_px": 240,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g940484",
+      "text": "production observability",
+      "translation": "наблюдаемость в продакшене",
+      "where": "free text inside rectangle g940481",
+      "budget_px": 240,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g940493",
+      "text": "regression sets from failures",
+      "translation": "регрессионные наборы из ошибок",
+      "where": "free text inside rectangle g940490",
+      "budget_px": 240,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g940502",
+      "text": "comparison loops",
+      "translation": "циклы сравнения",
+      "where": "free text inside rectangle g940499",
+      "budget_px": 240,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g940511",
+      "text": "mistakes → reusable tests",
+      "translation": "ошибки → переиспользуемые тесты",
+      "where": "free text inside rectangle g940508",
+      "budget_px": 240,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "g940520",
+      "text": "THE\nCONTROL\nSYSTEM",
+      "translation": "СИСТЕМА\nУПРАВЛЕНИЯ",
+      "where": "free text inside rectangle g940517",
+      "budget_px": 140,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940529",
+      "text": "SAFE TO\nTRUST",
+      "translation": "МОЖНО\nДОВЕРЯТЬ",
+      "where": "free text inside rectangle g940526",
+      "budget_px": 140,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940535",
+      "text": "ship on vibes",
+      "translation": "выпуск на вайбе",
+      "where": "free text inside rectangle g940532",
+      "budget_px": 140,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g940541",
+      "text": "✗ the rejected default",
+      "translation": "✗ отвергнутый вариант",
+      "where": "free text inside rectangle g940532",
+      "budget_px": 140,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g940544",
+      "text": "The question shifts from “is the model impressive?” to “is the system safe to trust?”",
+      "translation": "Вопрос меняется с «впечатляет ли модель?» на «можно ли доверять системе?»",
+      "where": "free text"
+    }
+  ]
+}

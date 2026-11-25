@@ -1,0 +1,162 @@
+{
+  "source": "diagrams/inline/ch05-fig2-graphrag-connects-dots.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 5  ·  FIGURE 2",
+      "translation": "ГЛАВА 5  ·  РИСУНОК 2",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Similar vs. related",
+      "translation": "Похожее и связанное",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Vector search finds text that looks alike; a graph follows the links between facts.",
+      "translation": "Векторный поиск находит похожий текст; граф идёт по связям между фактами.",
+      "where": "free text"
+    },
+    {
+      "id": "vec_h",
+      "text": "VECTOR RETRIEVAL ONLY",
+      "translation": "ТОЛЬКО ВЕКТОРНЫЙ ПОИСК",
+      "where": "free text inside rectangle vec_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "vec_sub",
+      "text": "Returns a bag of lookalikes",
+      "translation": "Возвращает груду похожего",
+      "where": "free text inside rectangle vec_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "vqt",
+      "text": "query",
+      "translation": "запрос",
+      "where": "free text inside ellipse vq",
+      "budget_px": 39,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "vc1t",
+      "text": "chunk",
+      "translation": "кусок",
+      "where": "free text inside ellipse vc1",
+      "budget_px": 30,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "vc2t",
+      "text": "chunk",
+      "translation": "кусок",
+      "where": "free text inside ellipse vc2",
+      "budget_px": 30,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "vc3t",
+      "text": "chunk",
+      "translation": "кусок",
+      "where": "free text inside ellipse vc3",
+      "budget_px": 30,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "vec_take",
+      "text": "Chunks aren't linked — no path between facts.",
+      "translation": "Куски не связаны — пути между фактами нет.",
+      "where": "free text"
+    },
+    {
+      "id": "g_h",
+      "text": "GRAPH RETRIEVAL",
+      "translation": "ПОИСК ПО ГРАФУ",
+      "where": "free text inside rectangle g_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "g_sub",
+      "text": "Traverses typed relationships",
+      "translation": "Идёт по типизированным связям",
+      "where": "free text inside rectangle g_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "gn1t",
+      "text": "Invoice",
+      "translation": "Счёт",
+      "where": "free text inside ellipse gn1",
+      "budget_px": 32,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "gn2t",
+      "text": "Vendor",
+      "translation": "Продавец",
+      "where": "free text inside ellipse gn2",
+      "budget_px": 32,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "gn3t",
+      "text": "Contract",
+      "translation": "Договор",
+      "where": "free text inside ellipse gn3",
+      "budget_px": 32,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "gn4t",
+      "text": "Payment",
+      "translation": "Платёж",
+      "where": "free text inside ellipse gn4",
+      "budget_px": 32,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "ge1l",
+      "text": "issued_by",
+      "translation": "выставлен",
+      "where": "free text inside rectangle g_panel",
+      "budget_px": 320,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "ge4l",
+      "text": "settles",
+      "translation": "погашает",
+      "where": "free text inside rectangle g_panel",
+      "budget_px": 320,
+      "budget_chars_per_line": 59
+    },
+    {
+      "id": "g_take",
+      "text": "“Which invoice is unpaid?” needs the path.",
+      "translation": "«Какой счёт не оплачен?» — нужен путь.",
+      "where": "free text inside rectangle g_panel",
+      "budget_px": 307,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "caption",
+      "text": "GraphRAG retrieves connected facts; multi-hop questions need relationships, not just similarity.",
+      "translation": "GraphRAG находит связанные факты; многошаговым вопросам нужны связи, а не только сходство.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Stephen Chin, Neo4j · corpus video #105  ·  HybridRAG — Mitesh Patel, NVIDIA · #219",
+      "translation": "— Стивен Чин, Neo4j · видео корпуса #105  ·  HybridRAG — Митеш Пател, NVIDIA · #219",
+      "where": "free text"
+    }
+  ]
+}

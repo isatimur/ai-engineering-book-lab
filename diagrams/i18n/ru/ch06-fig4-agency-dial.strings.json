@@ -1,0 +1,156 @@
+{
+  "source": "diagrams/inline/ch06-fig4-agency-dial.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9316",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g9319",
+      "text": "Agency Is a Dial, Not a Switch",
+      "translation": "Автономия — это регулятор, а не выключатель",
+      "where": "free text"
+    },
+    {
+      "id": "g9328",
+      "text": "Set autonomy per step — by how irreversible, risky, and observable it is.",
+      "translation": "Задавайте автономию для каждого шага: по необратимости, риску и наблюдаемости.",
+      "where": "free text"
+    },
+    {
+      "id": "g9331",
+      "text": "STEP",
+      "translation": "ШАГ",
+      "where": "free text"
+    },
+    {
+      "id": "g9334",
+      "text": "AGENCY   (bar length = autonomy)",
+      "translation": "АВТОНОМИЯ   (длина полосы)",
+      "where": "free text"
+    },
+    {
+      "id": "g9337",
+      "text": "WHAT RE-ENTERS",
+      "translation": "ЧТО ВОЗВРАЩАЕТСЯ К ЛЮДЯМ",
+      "where": "free text"
+    },
+    {
+      "id": "g9340",
+      "text": "Draft & explore",
+      "translation": "Черновик и поиск",
+      "where": "free text"
+    },
+    {
+      "id": "g9349",
+      "text": "auto",
+      "translation": "сам",
+      "where": "free text inside rectangle g9343",
+      "budget_px": 283,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g9352",
+      "text": "runs unattended",
+      "translation": "без присмотра",
+      "where": "free text"
+    },
+    {
+      "id": "g9355",
+      "text": "Run tests",
+      "translation": "Прогон тестов",
+      "where": "free text"
+    },
+    {
+      "id": "g9364",
+      "text": "auto",
+      "translation": "сам",
+      "where": "free text inside rectangle g9358",
+      "budget_px": 283,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "g9367",
+      "text": "runs unattended",
+      "translation": "без присмотра",
+      "where": "free text"
+    },
+    {
+      "id": "g9370",
+      "text": "Edit shared config",
+      "translation": "Правка общего конфига",
+      "where": "free text"
+    },
+    {
+      "id": "g9379",
+      "text": "oversight",
+      "translation": "надзор",
+      "where": "free text inside rectangle g9376",
+      "budget_px": 179,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g9382",
+      "text": "notify + roll-up view",
+      "translation": "уведомление + сводка",
+      "where": "free text"
+    },
+    {
+      "id": "g9385",
+      "text": "Open a pull request",
+      "translation": "Открыть pull request",
+      "where": "free text"
+    },
+    {
+      "id": "g9394",
+      "text": "review",
+      "translation": "ревью",
+      "where": "free text inside rectangle g9391",
+      "budget_px": 133,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "g9397",
+      "text": "human review gate",
+      "translation": "барьер ревью человека",
+      "where": "free text"
+    },
+    {
+      "id": "g9400",
+      "text": "Deploy / irreversible",
+      "translation": "Деплой / необратимое",
+      "where": "free text"
+    },
+    {
+      "id": "g9409",
+      "text": "gated",
+      "translation": "стоп",
+      "where": "free text inside rectangle g9406",
+      "budget_px": 49,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g9412",
+      "text": "explicit approval",
+      "translation": "явное одобрение",
+      "where": "free text"
+    },
+    {
+      "id": "g9418",
+      "text": "\"Agency is not a binary thing but a lever you can dial.\" — Joel Hron, Thomson Reuters  ·  corpus",
+      "translation": "«Автономия — не да/нет, а рычаг, который можно крутить». — Джоэл Хрон, Thomson Reuters · корпус",
+      "where": "free text inside rectangle g9415",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g9421",
+      "text": "A reversible step gated like an irreversible one spends scarce human attention in the wrong place.",
+      "translation": "Обратимый шаг под замком необратимого тратит редкое внимание людей не там.",
+      "where": "free text"
+    }
+  ]
+}

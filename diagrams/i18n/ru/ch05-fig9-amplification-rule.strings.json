@@ -1,0 +1,110 @@
+{
+  "source": "diagrams/inline/ch05-fig9-amplification-rule.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9856",
+      "text": "CHAPTER 5  ·  CONTEXT IS INFRASTRUCTURE",
+      "translation": "ГЛАВА 5  ·  КОНТЕКСТ — ЭТО ИНФРАСТРУКТУРА",
+      "where": "free text"
+    },
+    {
+      "id": "g9859",
+      "text": "A Better Model Amplifies Both",
+      "translation": "Лучшая модель усиливает и то и другое",
+      "where": "free text"
+    },
+    {
+      "id": "g9868",
+      "text": "Capability raises the return on good context and the cost of bad context.",
+      "translation": "Способности модели повышают отдачу от хорошего контекста и цену плохого.",
+      "where": "free text"
+    },
+    {
+      "id": "g9874",
+      "text": "STRONGER",
+      "translation": "СИЛЬНАЯ",
+      "where": "free text inside rectangle g9871",
+      "budget_px": 160,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g9877",
+      "text": "MODEL",
+      "translation": "МОДЕЛЬ",
+      "where": "free text inside rectangle g9871",
+      "budget_px": 160,
+      "budget_chars_per_line": 15
+    },
+    {
+      "id": "g9880",
+      "text": "capability ↑",
+      "translation": "способности ↑",
+      "where": "free text inside rectangle g9871",
+      "budget_px": 160,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "g9892",
+      "text": "GOOD context   →   RETURN ↑",
+      "translation": "ХОРОШИЙ контекст   →   ОТДАЧА ↑",
+      "where": "free text inside rectangle g9889",
+      "budget_px": 479,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g9895",
+      "text": "does more with the right evidence, tools and state",
+      "translation": "делает больше с верными данными, инструментами и состоянием",
+      "where": "free text inside rectangle g9889",
+      "budget_px": 479,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9898",
+      "text": "the payoff of precise assembly grows",
+      "translation": "выигрыш от точной сборки растёт",
+      "where": "free text inside rectangle g9889",
+      "budget_px": 479,
+      "budget_chars_per_line": 66
+    },
+    {
+      "id": "g9904",
+      "text": "BAD context   →   COST ↑",
+      "translation": "ПЛОХОЙ контекст   →   ЦЕНА ↑",
+      "where": "free text inside rectangle g9901",
+      "budget_px": 479,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g9907",
+      "text": "generates more persuasive nonsense, faster",
+      "translation": "быстрее выдаёт более убедительную чепуху",
+      "where": "free text inside rectangle g9901",
+      "budget_px": 479,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g9910",
+      "text": "the penalty of sloppy assembly grows too",
+      "translation": "штраф за небрежную сборку растёт тоже",
+      "where": "free text inside rectangle g9901",
+      "budget_px": 479,
+      "budget_chars_per_line": 66
+    },
+    {
+      "id": "g9916",
+      "text": "A better model is a reason to invest MORE in context, not less.",
+      "translation": "Лучшая модель — повод вложить в контекст БОЛЬШЕ, а не меньше.",
+      "where": "free text inside rectangle g9913",
+      "budget_px": 795,
+      "budget_chars_per_line": 77
+    },
+    {
+      "id": "g9919",
+      "text": "— Chapter 5, the amplification rule (book framing; no single corpus source)",
+      "translation": "— Глава 5, правило усиления (вывод книги; без одного источника в корпусе)",
+      "where": "free text"
+    }
+  ]
+}

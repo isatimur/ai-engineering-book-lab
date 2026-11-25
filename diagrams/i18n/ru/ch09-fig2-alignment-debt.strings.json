@@ -1,0 +1,110 @@
+{
+  "source": "diagrams/inline/ch09-fig2-alignment-debt.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Alignment debt: efficient alone, incoherent together",
+      "translation": "Долг согласованности: каждый быстр, вместе — хаос",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Many private agent workflows can be locally fast and collectively chaotic.",
+      "translation": "Много личных процессов с агентами: быстро по отдельности, хаотично вместе.",
+      "where": "free text"
+    },
+    {
+      "id": "left_lbl",
+      "text": "PRIVATE WORKFLOWS  —  NO SHARED SPACE",
+      "translation": "ЛИЧНЫЕ ПРОЦЕССЫ  —  НЕТ ОБЩЕГО ПРОСТРАНСТВА",
+      "where": "free text"
+    },
+    {
+      "id": "dev1t",
+      "text": "dev",
+      "translation": "инж",
+      "where": "bound to ellipse dev1 (wraps)",
+      "budget_px": 30,
+      "budget_chars_per_line": 4
+    },
+    {
+      "id": "dev2t",
+      "text": "dev",
+      "translation": "инж",
+      "where": "bound to ellipse dev2 (wraps)",
+      "budget_px": 30,
+      "budget_chars_per_line": 4
+    },
+    {
+      "id": "left_note",
+      "text": "6 agents, 2 devs, 0 shared context.\nEach branch optimizes for itself.\nDuplicate work, drift, no overlap.",
+      "translation": "6 агентов, 2 разработчика, 0 общего контекста.\nКаждая ветка тянет на себя.\nДубли, дрейф, нет пересечений.",
+      "where": "free text inside rectangle left_box",
+      "budget_px": 310,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "fix_lbl",
+      "text": "shared\nplan + review",
+      "translation": "общий план\n+ ревью",
+      "where": "free text"
+    },
+    {
+      "id": "right_lbl",
+      "text": "SHARED PLANNING + REVIEW SPACE",
+      "translation": "ОБЩЕЕ ПРОСТРАНСТВО ПЛАНОВ И РЕВЬЮ",
+      "where": "free text"
+    },
+    {
+      "id": "hubt",
+      "text": "shared space",
+      "translation": "общее место",
+      "where": "bound to rectangle hub (wraps)",
+      "budget_px": 102,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "rdev1t",
+      "text": "dev",
+      "translation": "инж",
+      "where": "bound to ellipse rdev1 (wraps)",
+      "budget_px": 30,
+      "budget_chars_per_line": 4
+    },
+    {
+      "id": "rdev2t",
+      "text": "dev",
+      "translation": "инж",
+      "where": "bound to ellipse rdev2 (wraps)",
+      "budget_px": 30,
+      "budget_chars_per_line": 4
+    },
+    {
+      "id": "right_note",
+      "text": "Same agents — but plans, context,\nand review run through one space.\nEffort overlaps; the org stays coherent.",
+      "translation": "Те же агенты, но планы, контекст\nи ревью идут через одно место.\nУсилия сходятся; организация цельна.",
+      "where": "free text inside rectangle right_box",
+      "budget_px": 310,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "caption",
+      "text": "Alignment debt accrues when private agent work has no shared planning or review space.",
+      "translation": "Долг согласованности копится, когда у личной работы агентов нет общего места для планов и ревью.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Maggie Appleton, GitHub  ·  corpus video #623",
+      "translation": "— Мэгги Эпплтон, GitHub  ·  видео корпуса #623",
+      "where": "free text"
+    }
+  ]
+}

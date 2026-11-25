@@ -1,0 +1,176 @@
+{
+  "source": "diagrams/inline/ch06-fig9-two-scarce-resources.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70400",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70403",
+      "text": "The Control Plane Rations Two Scarce Resources",
+      "translation": "Контур контроля делит два редких ресурса",
+      "where": "free text"
+    },
+    {
+      "id": "g70412",
+      "text": "Attention and compute — spend each where it is most valuable, not everywhere.",
+      "translation": "Внимание и вычисления: тратьте каждый там, где он ценнее всего, а не везде.",
+      "where": "free text"
+    },
+    {
+      "id": "g70418",
+      "text": "ATTENTION  →  checkpoint placement",
+      "translation": "ВНИМАНИЕ  →  где ставить контрольные точки",
+      "where": "free text inside rectangle g70415",
+      "budget_px": 420,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g70424",
+      "text": "auto",
+      "translation": "сам",
+      "where": "free text inside rectangle g70421",
+      "budget_px": 48,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g70430",
+      "text": "auto",
+      "translation": "сам",
+      "where": "free text inside rectangle g70427",
+      "budget_px": 48,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g70436",
+      "text": "REVIEW",
+      "translation": "РЕВЬЮ",
+      "where": "free text inside rectangle g70433",
+      "budget_px": 48,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "g70442",
+      "text": "auto",
+      "translation": "сам",
+      "where": "free text inside rectangle g70439",
+      "budget_px": 48,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g70448",
+      "text": "auto",
+      "translation": "сам",
+      "where": "free text inside rectangle g70445",
+      "budget_px": 48,
+      "budget_chars_per_line": 6
+    },
+    {
+      "id": "g70454",
+      "text": "REVIEW",
+      "translation": "РЕВЬЮ",
+      "where": "free text inside rectangle g70451",
+      "budget_px": 48,
+      "budget_chars_per_line": 7
+    },
+    {
+      "id": "g70457",
+      "text": "gates go where a step is:",
+      "translation": "барьеры ставят там, где шаг:",
+      "where": "free text inside rectangle g70415",
+      "budget_px": 405,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g70460",
+      "text": "· irreversible   · high blast-radius   · high uncertainty",
+      "translation": "· необратим   · с большим радиусом поражения   · неясен",
+      "where": "free text inside rectangle g70415",
+      "budget_px": 405,
+      "budget_chars_per_line": 56
+    },
+    {
+      "id": "g70466",
+      "text": "not “keep a human in every loop” —\n“where is the human most valuable?”",
+      "translation": "не «человек в каждом цикле», а\n«где человек ценнее всего?»",
+      "where": "free text inside rectangle g70463",
+      "budget_px": 369,
+      "budget_chars_per_line": 47
+    },
+    {
+      "id": "g70469",
+      "text": "— Eric Zakariasson, Cursor · #629",
+      "translation": "— Эрик Закариассон, Cursor · #629",
+      "where": "free text inside rectangle g70415",
+      "budget_px": 405,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "g70475",
+      "text": "COMPUTE  →  tiered model routing",
+      "translation": "ВЫЧИСЛЕНИЯ  →  маршрутизация по уровням",
+      "where": "free text inside rectangle g70472",
+      "budget_px": 420,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "g70481",
+      "text": "router",
+      "translation": "роутер",
+      "where": "free text inside rectangle g70478",
+      "budget_px": 100,
+      "budget_chars_per_line": 11
+    },
+    {
+      "id": "g70493",
+      "text": "cheap model  ·  simple queries",
+      "translation": "дешёвая модель · лёгкие запросы",
+      "where": "free text inside rectangle g70490",
+      "budget_px": 234,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g70499",
+      "text": "expensive model  ·  complex queries",
+      "translation": "дорогая модель · сложные запросы",
+      "where": "free text inside rectangle g70496",
+      "budget_px": 234,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "g70505",
+      "text": "flex tier: ~50% discount, but the request can be delayed",
+      "translation": "гибкий тариф: скидка ~50%, но запрос может подождать",
+      "where": "free text inside rectangle g70502",
+      "budget_px": 382,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g70511",
+      "text": "Route to the cheapest model that passes\nthe eval — no cheaper. Misroutes botch hard work.",
+      "translation": "Берите самую дешёвую модель, что проходит\nоценку, — не дешевле. Промах губит сложную работу.",
+      "where": "free text inside rectangle g70508",
+      "budget_px": 375,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g70514",
+      "text": "— Voss, Arize · #681  ·  Vernade, DeepMind · #692",
+      "translation": "— Восс, Arize · #681  ·  Верн, DeepMind · #692",
+      "where": "free text inside rectangle g70472",
+      "budget_px": 420,
+      "budget_chars_per_line": 63
+    },
+    {
+      "id": "g70520",
+      "text": "Which model runs a step is a control-plane decision, not a global default chosen once.",
+      "translation": "Какая модель выполнит шаг — решение контура контроля, а не общий выбор раз и навсегда.",
+      "where": "free text inside rectangle g70517",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    }
+  ]
+}

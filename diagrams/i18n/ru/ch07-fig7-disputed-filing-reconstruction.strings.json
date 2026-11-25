@@ -1,0 +1,122 @@
+{
+  "source": "diagrams/inline/ch07-fig7-disputed-filing-reconstruction.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9932",
+      "text": "CHAPTER 7  ·  SECURITY, IDENTITY & HIGH-STAKES TRUST",
+      "translation": "ГЛАВА 7  ·  БЕЗОПАСНОСТЬ, ИДЕНТИЧНОСТЬ И ДОВЕРИЕ ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g9935",
+      "text": "The Day a Filing Is Disputed",
+      "translation": "День, когда декларацию оспорили",
+      "where": "free text"
+    },
+    {
+      "id": "g9944",
+      "text": "A client disputes a position the assistant helped file. One question: what did it actually do?",
+      "translation": "Клиент оспаривает позицию, которую помог подать ассистент. Вопрос один: что он сделал?",
+      "where": "free text"
+    },
+    {
+      "id": "g9950",
+      "text": "Client disputes\na filed position",
+      "translation": "Клиент оспорил\nподанную позицию",
+      "where": "free text inside rectangle g9947",
+      "budget_px": 146,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "g9953",
+      "text": "→  what did it do?",
+      "translation": "→  что он сделал?",
+      "where": "free text inside rectangle g9947",
+      "budget_px": 146,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g9962",
+      "text": "TRAJECTORY  —  reconstructed via the mediation layer",
+      "translation": "ТРАЕКТОРИЯ  —  восстановлена через слой-посредник",
+      "where": "free text inside rectangle g9959",
+      "budget_px": 409,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g9965",
+      "text": "sources    matter #4417  —  3 files\ntool call  validation engine · filing-rules\noutput     draft surfaced for review\n──────────────────────────────\ntoken      read-only\nscope      matter #4417  only\nsend       ✗ denied  ·  no client delivery",
+      "translation": "источники  дело #4417  —  3 файла\nвызов      движок проверок · filing-rules\nвыход      черновик отдан на ревью\n──────────────────────────────\nтокен      только чтение\nдоступ     только дело #4417\nотправка   ✗ запрещена  ·  клиенту нет",
+      "where": "free text inside rectangle g9959",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g9971",
+      "text": "other clients' matters",
+      "translation": "дела других клиентов",
+      "where": "free text inside rectangle g9968",
+      "budget_px": 216,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g9974",
+      "text": "#5120   #6033   #7781",
+      "translation": "#5120   #6033   #7781",
+      "where": "free text inside rectangle g9968",
+      "budget_px": 216,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9977",
+      "text": "✗ out of scope — never reached",
+      "translation": "✗ вне доступа — не достигнуты",
+      "where": "free text inside rectangle g9968",
+      "budget_px": 216,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g9983",
+      "text": "read-only\ntoken",
+      "translation": "токен\nна чтение",
+      "where": "free text"
+    },
+    {
+      "id": "g9989",
+      "text": "Partner reconstructs\nthe path",
+      "translation": "Партнёр восстанавливает\nпуть",
+      "where": "free text inside rectangle g9986",
+      "budget_px": 216,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9992",
+      "text": "→ stands behind the answer",
+      "translation": "→ отвечает за результат",
+      "where": "free text inside rectangle g9986",
+      "budget_px": 216,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "g10001",
+      "text": "Without that trail, the honest answer would be a shrug.",
+      "translation": "Без этого следа честный ответ — пожать плечами.",
+      "where": "free text"
+    },
+    {
+      "id": "g10007",
+      "text": "Constrained execution plus inspectable paths — not unrestricted autonomy under perfect prevention.",
+      "translation": "Ограниченное исполнение и прозрачные пути — а не полная автономия в надежде на идеальную защиту.",
+      "where": "free text inside rectangle g10004",
+      "budget_px": 857,
+      "budget_chars_per_line": 95
+    },
+    {
+      "id": "g10010",
+      "text": "— Joel Hron, CTO, Thomson Reuters  ·  corpus video #206",
+      "translation": "— Джоэл Хрон, CTO, Thomson Reuters  ·  видео корпуса #206",
+      "where": "free text"
+    }
+  ]
+}

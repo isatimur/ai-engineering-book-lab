@@ -1,0 +1,124 @@
+{
+  "source": "diagrams/inline/ch04-fig5-revert-and-reproduce.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g940082",
+      "text": "CHAPTER 4  ·  FIGURE 5",
+      "translation": "ГЛАВА 4  ·  РИСУНОК 5",
+      "where": "free text"
+    },
+    {
+      "id": "g940085",
+      "text": "Revert, then reproduce",
+      "translation": "Откатить, затем воспроизвести",
+      "where": "free text"
+    },
+    {
+      "id": "g940094",
+      "text": "THE RECIPE  ·  mine the history of real engineering",
+      "translation": "РЕЦЕПТ  ·  копать историю реальной разработки",
+      "where": "free text"
+    },
+    {
+      "id": "g940100",
+      "text": "Crawl real\ncommits",
+      "translation": "Пройти по\nкоммитам",
+      "where": "free text inside rectangle g940097",
+      "budget_px": 110,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940109",
+      "text": "Find a real\nfix (perf/bug)",
+      "translation": "Найти фикс\nбага/скорости",
+      "where": "free text inside rectangle g940106",
+      "budget_px": 110,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940118",
+      "text": "Revert it →\nbroken state",
+      "translation": "Откатить →\nсломанное",
+      "where": "free text inside rectangle g940115",
+      "budget_px": 110,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940127",
+      "text": "Hand agent\nthe broken repo",
+      "translation": "Отдать агенту\nрепо с багом",
+      "where": "free text inside rectangle g940124",
+      "budget_px": 110,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940136",
+      "text": "Score: reached\nknown-good?",
+      "translation": "Балл: дошёл\nдо эталона?",
+      "where": "free text inside rectangle g940133",
+      "budget_px": 110,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "g940142",
+      "text": "THE STANDARD",
+      "translation": "СТАНДАРТ",
+      "where": "free text inside rectangle g940139",
+      "budget_px": 645,
+      "budget_chars_per_line": 107
+    },
+    {
+      "id": "g940145",
+      "text": "tasks natural  ·  sourced from the real world  ·  reliably gradable",
+      "translation": "задачи естественные  ·  из реального мира  ·  надёжно оцениваются",
+      "where": "free text inside rectangle g940139",
+      "budget_px": 645,
+      "budget_chars_per_line": 82
+    },
+    {
+      "id": "g940151",
+      "text": "✗ SYNTHETIC CLEVERNESS",
+      "translation": "✗ ИСКУССТВЕННЫЕ ХИТРОСТИ",
+      "where": "free text inside rectangle g940148",
+      "budget_px": 307,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g940154",
+      "text": "easy to score, unlike real work",
+      "translation": "легко оценить, но не похоже на работу",
+      "where": "free text inside rectangle g940148",
+      "budget_px": 307,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g940160",
+      "text": "✗ UNSCORED REALISM",
+      "translation": "✗ РЕАЛИЗМ БЕЗ ОЦЕНКИ",
+      "where": "free text inside rectangle g940157",
+      "budget_px": 313,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g940163",
+      "text": "lifelike but can't grade consistently",
+      "translation": "правдоподобно, но стабильно не оценить",
+      "where": "free text inside rectangle g940157",
+      "budget_px": 313,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "g940166",
+      "text": "Don't invent benchmark toys — revert a real fix and score the return to known-good.",
+      "translation": "Не выдумывайте игрушечные бенчмарки: откатите реальную правку и оцените возврат к эталону.",
+      "where": "free text"
+    },
+    {
+      "id": "g940169",
+      "text": "— Naman Jain, Cursor · corpus video #72",
+      "translation": "— Наман Джайн, Cursor · видео корпуса #72",
+      "where": "free text"
+    }
+  ]
+}

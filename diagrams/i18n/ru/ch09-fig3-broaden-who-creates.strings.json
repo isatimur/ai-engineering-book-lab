@@ -1,0 +1,126 @@
+{
+  "source": "diagrams/inline/ch09-fig3-broaden-who-creates.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 9  ·  THE AI-NATIVE ORGANIZATION",
+      "translation": "ГЛАВА 9  ·  ИИ-НАТИВНАЯ ОРГАНИЗАЦИЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Broaden who can create, narrow how they ship",
+      "translation": "Шире круг создателей, уже путь в прод",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "A wide creation funnel feeds one governed path to production.",
+      "translation": "Широкая воронка создания ведёт к одному управляемому пути в продакшен.",
+      "where": "free text"
+    },
+    {
+      "id": "create_lbl",
+      "text": "WIDE  —  WHO CAN CREATE",
+      "translation": "ШИРОКО  —  КТО СОЗДАЁТ",
+      "where": "free text"
+    },
+    {
+      "id": "role1t",
+      "text": "engineers",
+      "translation": "инженеры",
+      "where": "bound to rectangle role1 (wraps)",
+      "budget_px": 140,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "role2t",
+      "text": "support team",
+      "translation": "поддержка",
+      "where": "bound to rectangle role2 (wraps)",
+      "budget_px": 140,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "role3t",
+      "text": "product managers",
+      "translation": "продакт-менеджеры",
+      "where": "bound to rectangle role3 (wraps)",
+      "budget_px": 140,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "gate_lbl",
+      "text": "NARROW  —  HOW THEY SHIP",
+      "translation": "УЗКО  —  КАК ВЫПУСКАЮТ",
+      "where": "free text"
+    },
+    {
+      "id": "gate_t",
+      "text": "GOVERNED PATH",
+      "translation": "УПРАВЛЯЕМЫЙ ПУТЬ",
+      "where": "free text inside rectangle gate",
+      "budget_px": 170,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "gate_b",
+      "text": "review · evals · policy\npermissions · audit",
+      "translation": "ревью · оценки · политики\nправа · аудит",
+      "where": "free text inside rectangle gate",
+      "budget_px": 170,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "prod_t",
+      "text": "PRODUCTION",
+      "translation": "ПРОДАКШЕН",
+      "where": "free text inside rectangle prod",
+      "budget_px": 140,
+      "budget_chars_per_line": 16
+    },
+    {
+      "id": "prod_b",
+      "text": "trusted to ship",
+      "translation": "можно выпускать",
+      "where": "free text inside rectangle prod",
+      "budget_px": 140,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "ex_label",
+      "text": "EXAMPLE  —  ZAPIER SUPPORT",
+      "translation": "ПРИМЕР  —  ПОДДЕРЖКА ZAPIER",
+      "where": "free text"
+    },
+    {
+      "id": "ex_code",
+      "text": "ticket   #4821  \"export breaks on empty rows\"",
+      "translation": "тикет      #4821  «экспорт ломается на пустых строках»",
+      "where": "free text inside rectangle ex_card",
+      "budget_px": 683,
+      "budget_chars_per_line": 94
+    },
+    {
+      "id": "ex_code2",
+      "text": "support  ->  drafts fix via agent  ->  opens PR\nengineer ->  reviews, runs evals  ->  merges to prod",
+      "translation": "поддержка ->  готовит фикс через агента  ->  открывает PR\nинженер   ->  ревью, прогон оценок  ->  мерж в прод",
+      "where": "free text inside rectangle ex_card",
+      "budget_px": 683,
+      "budget_chars_per_line": 94
+    },
+    {
+      "id": "caption",
+      "text": "Non-engineers can create fixes — one governed path keeps shipping trustworthy.",
+      "translation": "Не-инженеры могут чинить сами — один управляемый путь сохраняет доверие к релизам.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Lisa Orr, Zapier  ·  corpus video #69",
+      "translation": "— Лиза Орр, Zapier  ·  видео корпуса #69",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "source": "diagrams/inline/ch07-fig6-default-permission-table.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g9803",
+      "text": "CHAPTER 7  ·  SECURITY, IDENTITY & HIGH-STAKES TRUST",
+      "translation": "ГЛАВА 7  ·  БЕЗОПАСНОСТЬ, ИДЕНТИЧНОСТЬ И ДОВЕРИЕ ПРИ ВЫСОКИХ СТАВКАХ",
+      "where": "free text"
+    },
+    {
+      "id": "g9806",
+      "text": "One Row Per Agent",
+      "translation": "Одна строка на агента",
+      "where": "free text"
+    },
+    {
+      "id": "g9815",
+      "text": "Least privilege as a product-design table: minimum access for which stage of the workflow.",
+      "translation": "Минимум прав как таблица продукта: минимальный доступ для каждого этапа процесса.",
+      "where": "free text"
+    },
+    {
+      "id": "g9818",
+      "text": "AGENT",
+      "translation": "АГЕНТ",
+      "where": "free text"
+    },
+    {
+      "id": "g9821",
+      "text": "MAY READ",
+      "translation": "МОЖЕТ ЧИТАТЬ",
+      "where": "free text"
+    },
+    {
+      "id": "g9824",
+      "text": "MAY ACT / WRITE",
+      "translation": "МОЖЕТ ДЕЛАТЬ / ПИСАТЬ",
+      "where": "free text"
+    },
+    {
+      "id": "g9827",
+      "text": "HARD BOUNDARY",
+      "translation": "ЖЁСТКАЯ ГРАНИЦА",
+      "where": "free text"
+    },
+    {
+      "id": "g9833",
+      "text": "Research\nagent",
+      "translation": "Агент\nисследований",
+      "where": "free text inside rectangle g9830",
+      "budget_px": 186,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g9839",
+      "text": "broad corpus",
+      "translation": "широкий корпус",
+      "where": "free text inside rectangle g9836",
+      "budget_px": 217,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9845",
+      "text": "✗  no write at all",
+      "translation": "✗  никакой записи",
+      "where": "free text inside rectangle g9842",
+      "budget_px": 195,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g9851",
+      "text": "cannot change anything",
+      "translation": "ничего не меняет",
+      "where": "free text inside rectangle g9848",
+      "budget_px": 187,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g9857",
+      "text": "Support\nagent",
+      "translation": "Агент\nподдержки",
+      "where": "free text inside rectangle g9854",
+      "budget_px": 186,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g9863",
+      "text": "account metadata",
+      "translation": "метаданные аккаунта",
+      "where": "free text inside rectangle g9860",
+      "budget_px": 217,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9869",
+      "text": "✗  no refunds",
+      "translation": "✗  без возвратов",
+      "where": "free text inside rectangle g9866",
+      "budget_px": 195,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g9875",
+      "text": "read, never transact",
+      "translation": "читает, но не платит",
+      "where": "free text inside rectangle g9872",
+      "budget_px": 187,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g9881",
+      "text": "Legal\nworkflow",
+      "translation": "Юридический\nпроцесс",
+      "where": "free text inside rectangle g9878",
+      "budget_px": 186,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g9887",
+      "text": "broad doc retrieval",
+      "translation": "широкий поиск по докам",
+      "where": "free text inside rectangle g9884",
+      "budget_px": 217,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9893",
+      "text": "✗  no external send",
+      "translation": "✗  ничего наружу",
+      "where": "free text inside rectangle g9890",
+      "budget_px": 195,
+      "budget_chars_per_line": 21
+    },
+    {
+      "id": "g9899",
+      "text": "nothing leaves the org",
+      "translation": "всё остаётся внутри",
+      "where": "free text inside rectangle g9896",
+      "budget_px": 187,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g9905",
+      "text": "Scheduling\nagent",
+      "translation": "Агент\nрасписаний",
+      "where": "free text inside rectangle g9902",
+      "budget_px": 186,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "g9911",
+      "text": "read + write calendars",
+      "translation": "календари: чтение+запись",
+      "where": "free text inside rectangle g9908",
+      "budget_px": 217,
+      "budget_chars_per_line": 24
+    },
+    {
+      "id": "g9917",
+      "text": "✗  no 3rd-party message",
+      "translation": "✗  без писем чужим",
+      "where": "free text"
+    },
+    {
+      "id": "g9923",
+      "text": "confirm before messaging",
+      "translation": "сначала подтверждение",
+      "where": "free text inside rectangle g9920",
+      "budget_px": 187,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "g9929",
+      "text": "Narrower powers reduce the tempting-but-unsafe paths the model can wander into.",
+      "translation": "Узкие права сокращают заманчивые, но опасные пути, куда может забрести модель.",
+      "where": "free text inside rectangle g9926",
+      "budget_px": 857,
+      "budget_chars_per_line": 89
+    }
+  ]
+}

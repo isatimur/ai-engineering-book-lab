@@ -1,0 +1,152 @@
+{
+  "source": "diagrams/inline/ch06-fig7-history-is-execution.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g70199",
+      "text": "CHAPTER 6  ·  RUNTIMES, STATE & THE HUMAN CONTROL PLANE",
+      "translation": "ГЛАВА 6  ·  СРЕДА ИСПОЛНЕНИЯ, СОСТОЯНИЕ И КОНТРОЛЬ ЧЕЛОВЕКА",
+      "where": "free text"
+    },
+    {
+      "id": "g70202",
+      "text": "History Is Execution, Not Just Debugging",
+      "translation": "История — это исполнение, а не только отладка",
+      "where": "free text"
+    },
+    {
+      "id": "g70211",
+      "text": "Persist a structured record of what happened — not a growing transcript of what was said.",
+      "translation": "Храните структурную запись того, что произошло, а не растущую переписку о том, что сказано.",
+      "where": "free text"
+    },
+    {
+      "id": "g70217",
+      "text": "TRANSCRIPT",
+      "translation": "ПЕРЕПИСКА",
+      "where": "free text inside rectangle g70214",
+      "budget_px": 350,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "g70220",
+      "text": "“what was said”",
+      "translation": "«что было сказано»",
+      "where": "free text inside rectangle g70214",
+      "budget_px": 350,
+      "budget_chars_per_line": 44
+    },
+    {
+      "id": "g70226",
+      "text": "msg …",
+      "translation": "сообщ. …",
+      "where": "free text inside rectangle g70223",
+      "budget_px": 285,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g70232",
+      "text": "msg …",
+      "translation": "сообщ. …",
+      "where": "free text inside rectangle g70229",
+      "budget_px": 285,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g70238",
+      "text": "msg …",
+      "translation": "сообщ. …",
+      "where": "free text inside rectangle g70235",
+      "budget_px": 285,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g70244",
+      "text": "msg …",
+      "translation": "сообщ. …",
+      "where": "free text inside rectangle g70241",
+      "budget_px": 285,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g70250",
+      "text": "msg …",
+      "translation": "сообщ. …",
+      "where": "free text inside rectangle g70247",
+      "budget_px": 285,
+      "budget_chars_per_line": 43
+    },
+    {
+      "id": "g70253",
+      "text": "can't say what to retry, what was approved,\nwhat changed, or where to resume",
+      "translation": "не скажет, что повторить, что одобрено,\nчто изменилось и откуда продолжить",
+      "where": "free text inside rectangle g70214",
+      "budget_px": 335,
+      "budget_chars_per_line": 48
+    },
+    {
+      "id": "g70262",
+      "text": "STRUCTURED HISTORY",
+      "translation": "СТРУКТУРНАЯ ИСТОРИЯ",
+      "where": "free text inside rectangle g70259",
+      "budget_px": 468,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "g70265",
+      "text": "“what has happened” — an event log the runtime can act on",
+      "translation": "«что произошло» — журнал событий, по которому действует среда",
+      "where": "free text inside rectangle g70259",
+      "budget_px": 468,
+      "budget_chars_per_line": 65
+    },
+    {
+      "id": "g70271",
+      "text": "which steps retry safely",
+      "translation": "что можно повторить",
+      "where": "free text inside rectangle g70268",
+      "budget_px": 200,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g70277",
+      "text": "which approvals were granted",
+      "translation": "какие одобрения даны",
+      "where": "free text inside rectangle g70274",
+      "budget_px": 200,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g70283",
+      "text": "what state changed",
+      "translation": "что изменилось",
+      "where": "free text inside rectangle g70280",
+      "budget_px": 200,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g70289",
+      "text": "where to resume  ·  audit",
+      "translation": "откуда продолжить · аудит",
+      "where": "free text inside rectangle g70286",
+      "budget_px": 200,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "g70292",
+      "text": "one record serves execution, inspection, and tomorrow's evals",
+      "translation": "одна запись служит исполнению, проверке и завтрашним оценкам",
+      "where": "free text inside rectangle g70259",
+      "budget_px": 468,
+      "budget_chars_per_line": 67
+    },
+    {
+      "id": "g70298",
+      "text": "\"We store all of the workflow history ... the visibility of what is happening.\" — Preeti Somal, Temporal · #167",
+      "translation": "«Мы храним всю историю процесса … это видимость того, что происходит». — Прити Сомал, Temporal · #167",
+      "where": "free text inside rectangle g70295",
+      "budget_px": 857,
+      "budget_chars_per_line": 109
+    }
+  ]
+}

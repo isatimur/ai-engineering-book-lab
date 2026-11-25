@@ -1,0 +1,120 @@
+{
+  "source": "diagrams/inline/ch10-fig1-churn-vs-durable.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 10  ·  WHAT ENDURES",
+      "translation": "ГЛАВА 10  ·  ЧТО ОСТАЁТСЯ",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "Tools churn fast. The pattern beneath them does not.",
+      "translation": "Инструменты сменяются. Паттерн под ними — нет.",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "A churning top layer rests on a stable engineering foundation.",
+      "translation": "Верхний слой постоянно меняется, но стоит на стабильном инженерном фундаменте.",
+      "where": "free text"
+    },
+    {
+      "id": "churn_lbl",
+      "text": "CHURNS EVERY FEW MONTHS",
+      "translation": "МЕНЯЕТСЯ КАЖДЫЕ ПАРУ МЕСЯЦЕВ",
+      "where": "free text"
+    },
+    {
+      "id": "ch1t",
+      "text": "this month's model",
+      "translation": "модель месяца",
+      "where": "bound to rectangle ch1 (wraps)",
+      "budget_px": 148,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "ch2t",
+      "text": "the new IDE",
+      "translation": "новая IDE",
+      "where": "bound to rectangle ch2 (wraps)",
+      "budget_px": 148,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "ch3t",
+      "text": "renamed framework",
+      "translation": "фреймворк\nпод новым именем",
+      "where": "bound to rectangle ch3 (wraps)",
+      "budget_px": 148,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "ch4t",
+      "text": "next agent SDK",
+      "translation": "новый SDK агентов",
+      "where": "bound to rectangle ch4 (wraps)",
+      "budget_px": 148,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "rests_lbl",
+      "text": "all of it rests on  ↓",
+      "translation": "всё это стоит на  ↓",
+      "where": "free text"
+    },
+    {
+      "id": "base_h",
+      "text": "THE DURABLE FOUNDATION  —  STABLE ACROSS MODEL CHURN",
+      "translation": "НАДЁЖНЫЙ ФУНДАМЕНТ  —  НЕ МЕНЯЕТСЯ ВМЕСТЕ С МОДЕЛЯМИ",
+      "where": "free text inside rectangle base",
+      "budget_px": 681,
+      "budget_chars_per_line": 87
+    },
+    {
+      "id": "p1t",
+      "text": "clear standards\n& intent",
+      "translation": "ясные стандарты\nи намерение",
+      "where": "free text inside rectangle p1",
+      "budget_px": 146,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "p2t",
+      "text": "context &\nruntime design",
+      "translation": "дизайн контекста\nи среды",
+      "where": "free text inside rectangle p2",
+      "budget_px": 146,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "p3t",
+      "text": "evals &\nreview habits",
+      "translation": "оценки и\nпривычка ревью",
+      "where": "free text inside rectangle p3",
+      "budget_px": 146,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "p4t",
+      "text": "human judgment\nat the edges",
+      "translation": "суждение человека\nна краях",
+      "where": "free text inside rectangle p4",
+      "budget_px": 146,
+      "budget_chars_per_line": 20
+    },
+    {
+      "id": "caption",
+      "text": "Swap the tools above the line freely; the foundation below it is what you actually invest in.",
+      "translation": "Инструменты над чертой меняйте свободно; вкладываться стоит в фундамент под ней.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Omar Khattab, Researcher, DSPy & Databricks  ·  corpus video #124",
+      "translation": "— Омар Хаттаб, исследователь, DSPy и Databricks  ·  видео корпуса #124",
+      "where": "free text"
+    }
+  ]
+}

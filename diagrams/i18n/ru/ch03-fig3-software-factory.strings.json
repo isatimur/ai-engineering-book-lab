@@ -1,0 +1,110 @@
+{
+  "source": "diagrams/inline/ch03-fig3-software-factory.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 3  ·  FIGURE 3",
+      "translation": "ГЛАВА 3  ·  РИСУНОК 3",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The harness as a staged software factory",
+      "translation": "Обвязка как поэтапная фабрика ПО",
+      "where": "free text"
+    },
+    {
+      "id": "mgr_t",
+      "text": "human manager  —  sets intent",
+      "translation": "менеджер  —  задаёт замысел",
+      "where": "bound to rectangle manager (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 29
+    },
+    {
+      "id": "st1_n",
+      "text": "1 · PLAN",
+      "translation": "1 · ПЛАН",
+      "where": "free text inside rectangle st1",
+      "budget_px": 125,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "st1_b",
+      "text": "spec written\nrepo mapped\nscope decomposed",
+      "translation": "спецификация\nкарта репо\nзадача разбита",
+      "where": "free text inside rectangle st1",
+      "budget_px": 125,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "st2_n",
+      "text": "2 · PRODUCE",
+      "translation": "2 · РАБОТА",
+      "where": "free text inside rectangle st2",
+      "budget_px": 125,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "st2_b",
+      "text": "agent edits files\nruns build + tests\nself-checks",
+      "translation": "агент правит файлы\nсборка + тесты\nсамопроверка",
+      "where": "free text inside rectangle st2",
+      "budget_px": 125,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "st3_n",
+      "text": "3 · REVIEW",
+      "translation": "3 · РЕВЬЮ",
+      "where": "free text inside rectangle st3",
+      "budget_px": 125,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "st3_b",
+      "text": "review subagent\nlint + type gate\nhuman approval",
+      "translation": "субагент-ревьюер\nлинтер + типы\nодобрение человека",
+      "where": "free text inside rectangle st3",
+      "budget_px": 125,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "st4_n",
+      "text": "4 · SHIP",
+      "translation": "4 · ВЫПУСК",
+      "where": "free text inside rectangle st4",
+      "budget_px": 125,
+      "budget_chars_per_line": 14
+    },
+    {
+      "id": "st4_b",
+      "text": "CI gate passes\nPR merged\nstatus visible",
+      "translation": "CI пройден\nPR слит\nстатус виден",
+      "where": "free text inside rectangle st4",
+      "budget_px": 125,
+      "budget_chars_per_line": 18
+    },
+    {
+      "id": "rail_t",
+      "text": "the harness is checked into the repo  —  AGENTS.md, specs/, examples/, CI rules",
+      "translation": "обвязка хранится в репозитории  —  AGENTS.md, specs/, examples/, правила CI",
+      "where": "free text inside rectangle rail",
+      "budget_px": 648,
+      "budget_chars_per_line": 98
+    },
+    {
+      "id": "caption",
+      "text": "The harness is a workflow, not a wrapper: staged stations with checks between them.",
+      "translation": "Обвязка — это процесс, а не обёртка: этапы с проверками между ними.",
+      "where": "free text"
+    },
+    {
+      "id": "citation",
+      "text": "— Eric Zakariasson, Cursor · corpus video #629",
+      "translation": "— Эрик Закариассон, Cursor · видео корпуса #629",
+      "where": "free text"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "source": "diagrams/inline/ch02-fig5-mode-switch-cost-of-wrong.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "g92088",
+      "text": "CHAPTER 2  ·  VIBE CODING IS A MODE",
+      "translation": "ГЛАВА 2  ·  ВАЙБ-КОДИНГ — ЭТО РЕЖИМ",
+      "where": "free text"
+    },
+    {
+      "id": "g92091",
+      "text": "Switch on the Cost of Being Wrong",
+      "translation": "Переключайтесь по цене ошибки",
+      "where": "free text"
+    },
+    {
+      "id": "g92100",
+      "text": "Vibe-code where a mistake is cheap. Leave it the moment the output has to endure.",
+      "translation": "Вайб-кодинг — там, где ошибка дешёвая. Бросайте его, как только результат должен жить.",
+      "where": "free text"
+    },
+    {
+      "id": "g92106",
+      "text": "LOW COST OF WRONG  →  VIBE-CODE",
+      "translation": "ОШИБКА ДЁШЕВА  →  ВАЙБ-КОДИНГ",
+      "where": "free text inside rectangle g92103",
+      "budget_px": 400,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92109",
+      "text": "Goal: discovery — learn what is worth building.",
+      "translation": "Цель: поиск — понять, что стоит строить.",
+      "where": "free text inside rectangle g92103",
+      "budget_px": 385,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "g92112",
+      "text": "fits:  prototypes · sketches · internal tools · one-off automation",
+      "translation": "подходит:  прототипы · наброски ·\nутилиты · разовые скрипты",
+      "where": "free text"
+    },
+    {
+      "id": "g92115",
+      "text": "a mistake here costs an afternoon.",
+      "translation": "ошибка здесь стоит полдня.",
+      "where": "free text inside rectangle g92103",
+      "budget_px": 385,
+      "budget_chars_per_line": 53
+    },
+    {
+      "id": "g92121",
+      "text": "switch",
+      "translation": "переход",
+      "where": "free text"
+    },
+    {
+      "id": "g92127",
+      "text": "HIGH COST OF WRONG  →  PRODUCTION DISCIPLINE",
+      "translation": "ОШИБКА ДОРОГА  →  ДИСЦИПЛИНА ПРОДАКШЕНА",
+      "where": "free text inside rectangle g92124",
+      "budget_px": 400,
+      "budget_chars_per_line": 51
+    },
+    {
+      "id": "g92133",
+      "text": "production means:\n four-nines uptime · thousands of users · gigabytes of data",
+      "translation": "продакшен — это:\n 99,99% аптайма · тысячи пользователей\n · гигабайты данных",
+      "where": "free text"
+    },
+    {
+      "id": "g92136",
+      "text": "the moment a mistake is paid by people who never saw the prompt.",
+      "translation": "момент, когда за ошибку платят люди, не видевшие промпта.",
+      "where": "free text"
+    },
+    {
+      "id": "g92142",
+      "text": "THE TELL — the Monday:",
+      "translation": "ПРИЗНАК — понедельник:",
+      "where": "free text inside rectangle g92139",
+      "budget_px": 857,
+      "budget_chars_per_line": 102
+    },
+    {
+      "id": "g92145",
+      "text": "app works Friday → Monday it must change → no one understands it well enough to change it safely.",
+      "translation": "в пятницу работает → в понедельник надо менять → никто не знает код так, чтобы менять безопасно.",
+      "where": "free text inside rectangle g92139",
+      "budget_px": 857,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "g92148",
+      "text": "Not anti-vibe but mode-aware — the switch is keyed to what a wrong answer costs.",
+      "translation": "Не против вайба, а с учётом режима: переход зависит от цены неверного ответа.",
+      "where": "free text"
+    },
+    {
+      "id": "g92151",
+      "text": "— Chris Kelly, Augment Code · corpus video #132    ·    the Monday hangover: Corey Gallon, Rexmore · #106",
+      "translation": "— Крис Келли, Augment Code · видео корпуса #132    ·    похмелье понедельника: Кори Галлон, Rexmore · #106",
+      "where": "free text"
+    }
+  ]
+}

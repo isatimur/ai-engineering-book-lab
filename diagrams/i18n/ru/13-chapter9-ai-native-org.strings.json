@@ -1,0 +1,200 @@
+{
+  "source": "diagrams/13-chapter9-ai-native-org.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CHAPTER 9",
+      "translation": "ГЛАВА 9",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The AI-Native Organization",
+      "translation": "ИИ-нативная организация",
+      "where": "free text"
+    },
+    {
+      "id": "role",
+      "text": "Zoom out from systems to institutions — how management, roles, and incentives change.",
+      "translation": "От систем к институтам: как меняются управление, роли и стимулы.",
+      "where": "free text"
+    },
+    {
+      "id": "pl_h",
+      "text": "THE NAIVE WAY",
+      "translation": "НАИВНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_t",
+      "text": "AI bought as seat licenses",
+      "translation": "ИИ как лицензии на места",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pl_c",
+      "text": "Buy 500 Copilot seats. Expect 10x.\nKeep the same org, roles, and process.",
+      "translation": "Купить 500 мест Copilot. Ждать 10x.\nОставить ту же структуру, роли и процесс.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pl_se",
+      "text": "SAMPLE  —  THE ROLLOUT PLAN",
+      "translation": "ПРИМЕР  —  ПЛАН ВНЕДРЕНИЯ",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pl_code",
+      "text": "plan:    + 500 AI seats\norg:     unchanged\nroles:   unchanged\nreview:  same 2 reviewers, 5x the PRs\nresult:  giant queue, no shared context\n         -> \"alignment debt\"",
+      "translation": "план:     + 500 мест ИИ\nструктура: без изменений\nроли:     без изменений\nревью:    те же 2 ревьюера, PR в 5 раз больше\nитог:     огромная очередь, нет общего контекста\n          -> «долг согласованности»",
+      "where": "free text inside rectangle pl_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pl_take",
+      "text": "Cost  —  tools change; the operating model doesn't.",
+      "translation": "Цена  —  инструменты меняются, операционная модель — нет.",
+      "where": "free text inside rectangle panel_l",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_h",
+      "text": "THE ENGINEERED WAY",
+      "translation": "ИНЖЕНЕРНЫЙ ПУТЬ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_t",
+      "text": "Operating-model redesign",
+      "translation": "Новая операционная модель",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 46
+    },
+    {
+      "id": "pr_c",
+      "text": "Broaden who can create.\nTighten review, governance, and alignment.",
+      "translation": "Расширить круг создателей.\nУжесточить ревью, управление и согласованность.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "pr_se",
+      "text": "SAMPLE  —  THE REDESIGNED OPERATING MODEL",
+      "translation": "ПРИМЕР  —  НОВАЯ ОПЕРАЦИОННАЯ МОДЕЛЬ",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 89
+    },
+    {
+      "id": "pr_code",
+      "text": "create:  support + PMs ship code too\nreview:  shared planning + review space\ngovern:  policy, evals, audit by default\nroles:   new -> AI product manager\nmetric:  outcomes, not seats or LOC",
+      "translation": "создают:  поддержка и продакты тоже пишут код\nревью:    общее место планов и ревью\nуправл.:  политики, оценки, аудит по умолчанию\nроли:     новая -> ИИ-продакт-менеджер\nметрика:  исходы, а не места или строки кода",
+      "where": "free text inside rectangle pr_card",
+      "budget_px": 549,
+      "budget_chars_per_line": 76
+    },
+    {
+      "id": "pr_take",
+      "text": "Payoff  —  leverage that compounds across the org.",
+      "translation": "Выигрыш  —  рычаг, который нарастает по всей организации.",
+      "where": "free text inside rectangle panel_r",
+      "budget_px": 591,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "shift_lbl",
+      "text": "THE SHIFT",
+      "translation": "СДВИГ",
+      "where": "free text"
+    },
+    {
+      "id": "shift_sub",
+      "text": "seat licenses\nto a redesigned model",
+      "translation": "места\n→ новая модель",
+      "where": "free text"
+    },
+    {
+      "id": "claims_h",
+      "text": "WHAT CHAPTER 9 ARGUES",
+      "translation": "О ЧЁМ ГЛАВА 9",
+      "where": "free text"
+    },
+    {
+      "id": "cb1t",
+      "text": "1",
+      "translation": "1",
+      "where": "bound to ellipse cb1 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct1",
+      "text": "AI-native advantage comes from\nredesign, not seat licenses.",
+      "translation": "Преимущество ИИ-нативных компаний —\nв перестройке, а не в лицензиях.",
+      "where": "free text"
+    },
+    {
+      "id": "cb2t",
+      "text": "2",
+      "translation": "2",
+      "where": "bound to ellipse cb2 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct2",
+      "text": "Leaders broaden who can create\nwhile tightening review + governance.",
+      "translation": "Лидеры расширяют круг создателей\nи ужесточают ревью и управление.",
+      "where": "free text"
+    },
+    {
+      "id": "cb3t",
+      "text": "3",
+      "translation": "3",
+      "where": "bound to ellipse cb3 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct3",
+      "text": "Alignment debt is the core AI-native\norganizational failure mode.",
+      "translation": "Долг согласованности — главный\nсбой ИИ-нативной организации.",
+      "where": "free text"
+    },
+    {
+      "id": "cb4t",
+      "text": "4",
+      "translation": "4",
+      "where": "bound to ellipse cb4 (wraps)",
+      "budget_px": 10,
+      "budget_chars_per_line": 1
+    },
+    {
+      "id": "ct4",
+      "text": "Teams need shared planning and\nreview spaces, not just personal tools.",
+      "translation": "Командам нужны общие места для планов\nи ревью, а не только личные инструменты.",
+      "where": "free text"
+    },
+    {
+      "id": "quote",
+      "text": "“There's a 10x difference between an org where 90% of engineers use AI and one where 100% do.”   —  Dan Shipper  ·  corpus video #65\n“Going fast without alignment becomes alignment debt — wasted work and giant review queues.”   —  Maggie Appleton, GitHub  ·  corpus video #623",
+      "translation": "«Есть 10-кратная разница между компанией, где ИИ пользуются 90% инженеров, и той, где 100%».   —  Дэн Шиппер  ·  видео корпуса #65\n«Скорость без согласованности становится долгом согласованности — лишняя работа и огромные очереди ревью».   —  Мэгги Эпплтон, GitHub  ·  видео корпуса #623",
+      "where": "free text"
+    }
+  ]
+}
