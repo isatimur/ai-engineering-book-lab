@@ -80,6 +80,18 @@ npm run render:explainers:draft -- Book3Chapter04 --force   # re-render one
 On a Mac, set `REMOTION_BROWSER_EXECUTABLE="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`.
 The script passes `--gl=angle --concurrency=1`; expect about 6 minutes per video.
 
+### Music
+
+The compositions render silent. Each book has one instrumental background track
+in `public/music/book{1,2,3}.m4a` (Higgsfield Sonilo Music, 36 s).
+`render:explainers:draft` adds it after each render. For book 1 cuts, run it by hand:
+
+```bash
+npm run music:explainers -- 1 ../website/public/video/chapter-01-the-shift.mp4
+```
+
+The track is slowed to end with the video, faded in and out, and normalised to about -17 LUFS.
+
 This sandbox has `google-chrome-stable` preinstalled; `remotion.config.ts`
 points the renderer at it (`/usr/local/bin/google-chrome`) so no browser
 download is needed. On a machine without a preinstalled Chrome, delete that

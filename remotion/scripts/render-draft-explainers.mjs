@@ -11,6 +11,7 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { addMusic } from './add-music.mjs';
 
 const ROOT = join(import.meta.dirname, '..');
 const WEB = join(ROOT, '..', 'website');
@@ -57,6 +58,7 @@ for (const file of readdirSync(SPECS).filter((f) => /^book[23]-\d\d\.ts$/.test(f
     mkdirSync(dir, { recursive: true });
     console.log(`Rendering ${spec.id}...`);
     execFileSync('npx', ['remotion', 'render', spec.id, mp4, '--gl=angle', '--concurrency=1'], { cwd: ROOT, stdio: 'inherit' });
+    addMusic(book, mp4);
     execFileSync('ffmpeg', ['-loglevel', 'error', '-y', '-ss', '4', '-i', mp4, '-frames:v', '1', '-q:v', '3', poster]);
   }
   if (!existsSync(mp4)) continue;
