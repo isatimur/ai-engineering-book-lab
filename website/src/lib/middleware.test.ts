@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import middleware from '../../middleware';
+import rootMiddleware from '../../../middleware';
 import { PRESS_PATH_PREFIXES } from '../data/book';
 
 /**
@@ -24,9 +25,16 @@ describe('aiepress.com', () => {
     expect(r.headers.get('location')).toBe('https://aiepress.com/');
   });
 
-  it('serves its own robots.txt and sitemap', () => {
+  it('serves its own robots.txt, sitemap and llms.txt', () => {
     expect(rewriteOf(hit('https://aiepress.com/robots.txt'))).toBe('https://aiepress.com/robots-press.txt');
     expect(rewriteOf(hit('https://aiepress.com/sitemap.xml'))).toBe('https://aiepress.com/sitemap-press.xml');
+    expect(rewriteOf(hit('https://aiepress.com/llms.txt'))).toBe('https://aiepress.com/llms-press.txt');
+  });
+
+  it('is the middleware Vercel deploys: the repo-root file re-exports this one', () => {
+    // Vercel builds from the repo root and only runs a root middleware.ts.
+    // Production served book 1 on aiepress.com while this file sat unused.
+    expect(rootMiddleware).toBe(middleware);
   });
 
   it('serves the press pages and static files', () => {
