@@ -23,8 +23,25 @@ Built from 1482 AI Engineer talks · 73 claims · 249 source anchors.
 
 - [Complete book as markdown](https://fromcopilottocolleague.com/llms-full.txt): all 10 chapters in one file.
 
+## Russian edition
+
+"От напарника к коллеге", a Russian translation of the book.
+
+- [Contents](https://fromcopilottocolleague.com/ru/read)
+- [Глава 1 — Сдвиг: от ассистента к исполнителю](https://fromcopilottocolleague.com/ru/read/01-the-shift)
+- [Глава 2 — Вкус по-прежнему важен, когда код дешевеет](https://fromcopilottocolleague.com/ru/read/02-taste)
+- [Глава 3 — Обвязка, спецификации и кодовые базы, с которыми агенты действительно могут работать](https://fromcopilottocolleague.com/ru/read/03-harnesses)
+- [Глава 4 — Оценки как система управления](https://fromcopilottocolleague.com/ru/read/04-evals)
+- [Глава 5 — Контекст как инфраструктура](https://fromcopilottocolleague.com/ru/read/05-context)
+- [Глава 6 — Среда исполнения, состояние и контур контроля человека](https://fromcopilottocolleague.com/ru/read/06-runtimes)
+- [Глава 7 — Безопасность, идентичность и доверие при высоких ставках](https://fromcopilottocolleague.com/ru/read/07-security)
+- [Глава 8 — Реальное время, голос и цена прерываемости](https://fromcopilottocolleague.com/ru/read/08-realtime)
+- [Глава 9 — ИИ-нативная организация](https://fromcopilottocolleague.com/ru/read/09-ai-native-org)
+- [Глава 10 — Что остаётся](https://fromcopilottocolleague.com/ru/read/10-what-endures)
+
 ## Reference
 
 - [Source repository](https://github.com/isatimur/ai-engineering-book-lab): the corpus, claims ledger, and method.
 - [Sitemap](https://fromcopilottocolleague.com/sitemap.xml): every indexable page.
 - [Press catalogue (JSON)](https://aiepress.com/catalog.json): all three AI Engineer Press books, with chapters, URLs, status and explainer videos.
+- [AI Engineer Press llms.txt](https://aiepress.com/llms.txt): the imprint and its other books.

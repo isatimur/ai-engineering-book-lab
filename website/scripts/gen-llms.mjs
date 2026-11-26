@@ -6,7 +6,7 @@
 // Mirrors the "never fail the build" contract of gen-sitemap.mjs: any parse
 // failure falls back to a sensible default so the files are always written.
 
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -63,6 +63,26 @@ const chapterUrl = (c) => `${ORIGIN}/read/${c.number}-${c.slug}`;
 const chapterMdUrl = (c) => `${ORIGIN}/read/${c.number}-${c.slug}.md`;
 const body = (c) => readFileSync(resolve(websiteRoot, `src/content/chapter-${c.number}.md`), 'utf8').trim();
 
+// Russian edition: a chapter is listed once content/ru/chapter-NN.md exists,
+// the same rule as src/data/bookChaptersRu.ts and gen-sitemap.
+const ruChapters = chapters.flatMap((c) => {
+  const file = resolve(websiteRoot, `src/content/ru/chapter-${c.number}.md`);
+  if (!existsSync(file)) return [];
+  const h1 = readFileSync(file, 'utf8').match(/^#\s+(.+)$/m)?.[1];
+  const title = h1 ? h1.replace(/^Глава\s+\d+\s*[—–-]\s*/, '').trim() : c.title;
+  return [{ ...c, title }];
+});
+const ruSection = ruChapters.length
+  ? `
+## Russian edition
+
+"От напарника к коллеге", a Russian translation of the book.
+
+- [Contents](${ORIGIN}/ru/read)
+${ruChapters.map((c) => `- [Глава ${Number(c.number)} — ${c.title}](${ORIGIN}/ru/read/${c.number}-${c.slug})`).join('\n')}
+`
+  : '';
+
 // --- llms.txt : the curated map -------------------------------------------
 const llms = `# ${TITLE}
 
@@ -79,12 +99,13 @@ ${chapters
 ## Full text
 
 - [Complete book as markdown](${ORIGIN}/llms-full.txt): all ${chapters.length} chapters in one file.
-
+${ruSection}
 ## Reference
 
 - [Source repository](${REPO}): the corpus, claims ledger, and method.
 - [Sitemap](${ORIGIN}/sitemap.xml): every indexable page.
 - [Press catalogue (JSON)](https://aiepress.com/catalog.json): all three AI Engineer Press books, with chapters, URLs, status and explainer videos.
+- [AI Engineer Press llms.txt](https://aiepress.com/llms.txt): the imprint and its other books.
 `;
 writeFileSync(resolve(websiteRoot, 'public/llms.txt'), llms);
 

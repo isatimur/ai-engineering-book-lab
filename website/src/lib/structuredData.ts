@@ -5,6 +5,8 @@ import type { ChapterVideo } from '../data/chapterVideos';
 import type { EventLedger } from './eventLedgers';
 import { listEventLedgers, ledgerStats } from './eventLedgers';
 import { LIBRARY } from '../data/library';
+import { BOOK_RU, ruChapters, ruChapterPath } from '../data/bookChaptersRu';
+import type { ConceptDiagram } from './manifest';
 
 /**
  * schema.org JSON-LD builders. Every field traces to real book/chapter data —
@@ -13,6 +15,14 @@ import { LIBRARY } from '../data/library';
  */
 
 const author = () => BOOK.authors.map((name) => ({ '@type': 'Person', name }));
+
+/** The imprint, as a reference from a book node. Full node: pressJsonLd(). */
+const pressRef = () => ({ '@type': 'Organization', name: 'AI Engineer Press', url: `${PRESS_ORIGIN}/` });
+
+const RU_READER_PATH = '/ru/read';
+
+const bookRef = () => ({ '@type': 'Book', name: BOOK.title, url: `${SITE_ORIGIN}/` });
+const ruBookRef = () => ({ '@type': 'Book', name: BOOK_RU, inLanguage: 'ru', url: absoluteUrl(RU_READER_PATH) });
 
 /** The Book node — emitted on the landing page. Lists chapters as parts. */
 export const bookJsonLd = () => ({
@@ -27,6 +37,8 @@ export const bookJsonLd = () => ({
   url: `${SITE_ORIGIN}/`,
   image: absoluteUrl(BOOK.coverImage),
   inLanguage: 'en',
+  publisher: pressRef(),
+  ...(ruChapters.length ? { workTranslation: ruBookRef() } : {}),
   genre: BOOK.category,
   bookFormat: 'https://schema.org/EBook',
   isAccessibleForFree: true,
@@ -91,6 +103,9 @@ export const chapterJsonLd = (chapter: BookChapter, index: number) => ({
     name: BOOK.title,
     url: `${SITE_ORIGIN}/`,
   },
+  ...(ruChapters.some((r) => r.number === chapter.number)
+    ? { workTranslation: { '@type': 'Chapter', inLanguage: 'ru', url: absoluteUrl(ruChapterPath(chapter)) } }
+    : {}),
 });
 
 /** CollectionPage for /ledgers index. */
@@ -212,3 +227,85 @@ export const breadcrumbJsonLd = (chapter: BookChapter) => ({
     },
   ],
 });
+
+/**
+ * The Russian edition as a Book: a translation of book 1, with the chapters
+ * translated so far. Emitted on /ru/read.
+ */
+export const ruBookJsonLd = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: BOOK_RU,
+  url: absoluteUrl(RU_READER_PATH),
+  inLanguage: 'ru',
+  author: author(),
+  publisher: pressRef(),
+  image: absoluteUrl(BOOK.coverImage),
+  bookFormat: 'https://schema.org/EBook',
+  isAccessibleForFree: true,
+  translationOfWork: bookRef(),
+  hasPart: ruChapters.map((c) => ({
+    '@type': 'Chapter',
+    position: Number(c.number),
+    name: c.title,
+    url: absoluteUrl(ruChapterPath(c)),
+  })),
+});
+
+/** A chapter of the Russian edition, linked to its book and to the English original. */
+export const ruChapterJsonLd = (chapter: BookChapter, index: number) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Chapter',
+  name: chapter.title,
+  description: chapter.promise,
+  url: absoluteUrl(ruChapterPath(chapter)),
+  position: index + 1,
+  author: author(),
+  inLanguage: 'ru',
+  isPartOf: ruBookRef(),
+  translationOfWork: {
+    '@type': 'Chapter',
+    inLanguage: 'en',
+    url: absoluteUrl(chapterPath(chapter)),
+  },
+});
+
+/** Breadcrumb trail for the Russian edition: contents → chapter. */
+export const ruBreadcrumbJsonLd = (chapter: BookChapter) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: BOOK_RU, item: absoluteUrl(RU_READER_PATH) },
+    { '@type': 'ListItem', position: 2, name: chapter.title, item: absoluteUrl(ruChapterPath(chapter)) },
+  ],
+});
+
+/**
+ * A Visual Guide concept as a DefinedTerm. The description is the summary
+ * printed under the page's H1, so the schema says what the page says.
+ */
+export const conceptJsonLd = (concept: Pick<ConceptDiagram, 'id' | 'title' | 'summary'>) => {
+  const url = absoluteUrl(`/visual-guide/concepts/${concept.id}`);
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'DefinedTerm',
+      name: concept.title,
+      description: concept.summary,
+      url,
+      inDefinedTermSet: {
+        '@type': 'DefinedTermSet',
+        name: `${BOOK.title}: Visual Guide`,
+        url: absoluteUrl('/visual-guide'),
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Visual Guide', item: absoluteUrl('/visual-guide') },
+        { '@type': 'ListItem', position: 2, name: concept.title, item: url },
+      ],
+    },
+  ];
+};

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { chapterPath } from '../data/bookChapters';
 import {
+  BOOK_RU,
   ruChapters,
   ruChapterByParam,
   ruChapterPath,
@@ -12,11 +13,21 @@ import { LightboxProvider, useLightbox } from '../lib/lightbox';
 import { MarkdownBlock } from '../components/text/MarkdownBlock';
 import { InlineIllustration } from '../components/chapter/InlineIllustration';
 import { Seo } from '../components/Seo';
+import { JsonLd } from '../components/JsonLd';
 import { LangSwitch } from '../components/nav/LangSwitch';
+import { ruBookJsonLd, ruChapterJsonLd, ruBreadcrumbJsonLd } from '../lib/structuredData';
+import { ruChapterMetaDescription } from '../data/geo';
 
-const BOOK_RU = 'От напарника к коллеге';
+/**
+ * The <title> tag. Search results cut titles near 60 characters, so a long
+ * chapter title drops the book suffix instead of being truncated mid-word.
+ */
+export const ruChapterTitleTag = (title: string): string => {
+  const full = `${title} — ${BOOK_RU}`;
+  return full.length <= 65 ? full : title;
+};
 
-export const minutesRu = (words: number) => `${Math.max(1, Math.round(words / 200))} мин чтения`;
+export const minutesRu =(words: number) => `${Math.max(1, Math.round(words / 200))} мин чтения`;
 
 const Overview = ({ chapter }: { chapter: string }) => {
   const ov = ruOverview(chapter);
@@ -87,13 +98,14 @@ export const RuChapterDetail = () => {
   return (
     <LightboxProvider>
       <Seo
-        title={`${chapter.title} — ${BOOK_RU}`}
-        description={chapter.promise}
+        title={ruChapterTitleTag(chapter.title)}
+        description={ruChapterMetaDescription(chapter)}
         path={ruChapterPath(chapter)}
         type="article"
         lang="ru"
         alternates={alternates}
       />
+      <JsonLd data={[ruChapterJsonLd(chapter, idx), ruBreadcrumbJsonLd(chapter)]} />
       <div lang="ru" className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] antialiased pb-24">
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
           <Link to="/ru/read" className="hover:text-[var(--color-ink)]">← Все главы</Link>
@@ -155,8 +167,10 @@ export const RuReader = () => (
       description="Как ИИ переходит от подсказок к делегированной работе и что нужно, чтобы ему можно было доверять. Русский перевод."
       path="/ru/read"
       lang="ru"
-      alternates={[{ hrefLang: 'en', path: '/read' }, { hrefLang: 'ru', path: '/ru/read' }]}
+      // No hreflang here: the English twin, /read, is noindex, and hreflang
+      // must not point at a page search engines are told to drop.
     />
+    <JsonLd data={ruBookJsonLd()} />
     <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-5 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[var(--color-ink-muted)]">
       <Link to="/" className="hover:text-[var(--color-ink)]">← На главную</Link>
       <span className="hidden sm:inline">{BOOK_RU}</span>

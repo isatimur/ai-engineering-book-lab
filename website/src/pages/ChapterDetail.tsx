@@ -19,6 +19,7 @@ import { formatReadingTime } from '../lib/readingStats';
 import { Seo } from '../components/Seo';
 import { JsonLd } from '../components/JsonLd';
 import { chapterJsonLd, breadcrumbJsonLd, chapterVideoJsonLd } from '../lib/structuredData';
+import { chapterMetaDescription } from '../data/geo';
 import { chapterVideoFor } from '../data/chapterVideos';
 import { ChapterExplainerVideo } from '../components/chapter/ChapterExplainerVideo';
 import { FigureFlip } from '../components/chapter/FigureFlip';
@@ -89,7 +90,7 @@ export const ChapterDetail = () => {
     <LightboxProvider>
       <Seo
         title={`${chapter.seoTitle ?? chapter.title} — From Copilot to Colleague`}
-        description={chapter.promise}
+        description={chapterMetaDescription(chapter)}
         path={chapterPath(chapter)}
         image={video ? video.poster : ogCardPath(chapter)}
         type="article"

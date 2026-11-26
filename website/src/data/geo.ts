@@ -1,5 +1,19 @@
 import stats from './stats.json';
 import { BOOK, authorsLine, SITE_ORIGIN } from './book';
+import type { BookChapter } from './bookChapters';
+import { BOOK_RU } from './bookChaptersRu';
+
+/**
+ * Meta description for a chapter page: the chapter's promise (the answer to
+ * "what is this chapter about"), then which book it belongs to. The promise
+ * alone runs 60–80 characters, half of what a search snippet shows.
+ */
+export const chapterMetaDescription = (c: Pick<BookChapter, 'number' | 'promise'>): string =>
+  `${c.promise} Chapter ${Number(c.number)} of ${BOOK.title}, a book on AI engineering.`;
+
+/** The same, for the Russian edition. */
+export const ruChapterMetaDescription = (c: Pick<BookChapter, 'number' | 'promise'>): string =>
+  `${c.promise} Глава ${Number(c.number)} книги «${BOOK_RU}» об ИИ-инженерии.`;
 
 /**
  * Single source of truth for the book's canonical "what is this" definition —

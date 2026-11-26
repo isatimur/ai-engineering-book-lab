@@ -3,3 +3,6 @@ Allow: /
 
 # aiepress.com serves this file as /robots.txt (see middleware.ts).
 Sitemap: https://aiepress.com/sitemap.xml
+
+# LLM- and agent-readable index (llmstxt.org): https://aiepress.com/llms.txt
+# Every book and chapter as JSON: https://aiepress.com/catalog.json

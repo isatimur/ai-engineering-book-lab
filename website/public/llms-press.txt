@@ -1,0 +1,57 @@
+# AI Engineer Press
+
+> An independent imprint publishing books on AI engineering, written in the open from a corpus of conference talks. Every claim links to its source.
+
+## From Copilot to Colleague: How AI Engineering Turns Models into Dependable Systems
+
+Status: Published (10 chapters · 32,906 words).
+
+- [From Copilot to Colleague](https://fromcopilottocolleague.com/): the book's home page.
+- [Chapter 1: The Shift: From Assistant to Delegate](https://fromcopilottocolleague.com/read/01-the-shift): Why the important transition is not better chat UX, but reliable delegated work.
+- [Chapter 2: Taste Still Matters When Code Gets Cheap](https://fromcopilottocolleague.com/read/02-taste): Why fundamentals, judgment, craft, and constraint become more valuable.
+- [Chapter 3: Harnesses, Specs, and Codebases Agents Can Actually Use](https://fromcopilottocolleague.com/read/03-harnesses): How prepared environments make coding agents useful without accepting slop.
+- [Chapter 4: Evals Are the Control System](https://fromcopilottocolleague.com/read/04-evals): Why production trust comes from measurement loops, not vibes.
+- [Chapter 5: Context Is Infrastructure](https://fromcopilottocolleague.com/read/05-context): Retrieval, memory, and knowledge layers as first-class system design.
+- [Chapter 6: Runtimes, State, and the Human Control Plane](https://fromcopilottocolleague.com/read/06-runtimes): Durable agents, replay vs snapshot, and why autonomy needs architecture.
+- [Chapter 7: Security, Identity, and High-Stakes Trust](https://fromcopilottocolleague.com/read/07-security): Why delegated authority needs boundaries, audit trails, and real controls.
+- [Chapter 8: Realtime, Voice, and the Cost of Being Interruptible](https://fromcopilottocolleague.com/read/08-realtime): What voice, latency, and turn-taking reveal about production AI.
+- [Chapter 9: The AI-Native Organization](https://fromcopilottocolleague.com/read/09-ai-native-org): How teams and incentives change when AI becomes part of the workforce.
+- [Chapter 10: What Endures](https://fromcopilottocolleague.com/read/10-what-endures): The principles that survive tool churn: context, evals, control, and taste.
+
+## The Model Layer & The Long Tail: Training, Inference, and the Domains Beyond Text
+
+An early, source-anchored draft on how AI engineering is reshaping training, inference, and the long tail of domains beyond text. Status: Drafting (8 chapters · 17,316 words · 43 claims · 88 anchors).
+
+- [The Model Layer & The Long Tail](https://aiepress.com/second-book): the book's home page.
+- [Chapter 1: Training and the Turn to RL](https://aiepress.com/second-book/the-turn-to-rl): Why the center of gravity in model-building moved from pre-training to post-training — and reinforcement learning above all.
+- [Chapter 2: Inference Economics](https://aiepress.com/second-book/inference-economics): Why serving a model, not training it, is where the cost, the latency, and most AI engineering careers actually live.
+- [Chapter 3: Building Frontier Models](https://aiepress.com/second-book/frontier-models): Why building a frontier model became its own engineering culture, and why the frontier is now crowded rather than a two-lab race.
+- [Chapter 4: Beyond Text: Models for Speech, Media, Perception, and Action](https://aiepress.com/second-book/beyond-text): How speech, media, recommendation, driving, and embodiment models are all converging on the same LLM-shaped design.
+- [Chapter 5: Robotics and the Physical World](https://aiepress.com/second-book/robotics): Why robotics is not "agents plus a body" — the physical world adds constraints the standard harness never has to handle.
+- [Chapter 6: Regulated and High-Stakes Domains](https://aiepress.com/second-book/high-stakes-domains): Why finance, legal, insurance, and medicine need a different engineering posture, not just a smarter general model.
+- [Chapter 7: Creative, Education, and Games](https://aiepress.com/second-book/creative-and-games): Why creative, educational, and game applications keep the model in a narrow lane while structured systems hold the ground truth.
+- [Chapter 8: What the Edges Teach](https://aiepress.com/second-book/what-the-edges-teach): What the model layer and the long tail say together: capability consolidates, accountability does not, and the constraints were never compensation for a weak model.
+
+## The Shape of the Work: When Writing the Code Stops Being the Constraint
+
+Spec-driven development and the software factory: what happens to the lifecycle when writing the code stops being the constraint. Status: First draft (12 of 12 chapters · 133 talks classified · spec published).
+
+- [The Shape of the Work](https://aiepress.com/third-book): the book's home page.
+- [Chapter 1: The Bottleneck Moved](https://aiepress.com/third-book/the-bottleneck-moved): Why "code generation was never the bottleneck" reframes the whole lifecycle — and why the feeling of going faster is not evidence that you are.
+- [Chapter 2: Intent Before Specification](https://aiepress.com/third-book/intent-before-specification): What has to be settled before any document helps — and why the instinct to specify first fails on capabilities nobody has mapped yet.
+- [Chapter 3: What a Specification Is For](https://aiepress.com/third-book/what-a-specification-is-for): Code is a lossy projection of the reasoning that produced it. A specification is the surface you argue on before that reasoning is lost.
+- [Chapter 4: Decomposition and the Plan](https://aiepress.com/third-book/decomposition-and-the-plan): Why the size of a planned step is a context constraint rather than a matter of taste, and why a bad line in a plan costs a hundred bad lines of code.
+- [Chapter 5: Execution Under a Spec](https://aiepress.com/third-book/execution-under-a-spec): A specification binds through exactly two mechanisms — what the agent can reach, and what gets checked afterwards. Everything else is advisory.
+- [Chapter 6: The Independence Problem](https://aiepress.com/third-book/the-independence-problem): A judge that nearly doubled a benchmark score, and why the most dangerous gate in your pipeline is the one you wrote yourself.
+- [Chapter 7: Gates That Can Actually Fail](https://aiepress.com/third-book/gates-that-can-actually-fail): Gates die two ways: crying wolf, or never objecting. The second is silent, gets praised, and is far more dangerous.
+- [Chapter 8: Shipping, and the Gap Between Merged and Live](https://aiepress.com/third-book/shipping-and-the-gap-between-merged-and-live): Thirty consecutive commits that deployed nothing while every indicator said success — and why an absence produces no artifact.
+- [Chapter 9: Brownfield and Spec Rot](https://aiepress.com/third-book/brownfield-and-spec-rot): When the system is too large to hold in view, every slice is locally correct and the whole drifts. Three different decays hide under one phrase.
+- [Chapter 10: The Review Wall](https://aiepress.com/third-book/the-review-wall): Lines of code up 2,450%. Commits up 240%. Releases up 30%. The gap is inventory, and "human in the loop" is where it gets relabelled as control.
+- [Chapter 11: The Factory and Its Discontents](https://aiepress.com/third-book/the-factory-and-its-discontents): A factory makes the same thing repeatedly. Software never makes the same thing twice — which is why the metaphor works for some work and strains everywhere else.
+- [Chapter 12: How Much Process, and How Far Out of the Loop](https://aiepress.com/third-book/how-much-process-and-how-far-out-of-the-loop): Two measured rounds where ceremony cost a third more tokens for an identical scorecard — and the one result no scorecard could see.
+
+## Reference
+
+- [Catalogue (JSON)](https://aiepress.com/catalog.json): every book, chapter, URL, status and explainer video.
+- [From Copilot to Colleague, the complete book as markdown](https://fromcopilottocolleague.com/llms-full.txt)
+- [Sitemap](https://aiepress.com/sitemap.xml)

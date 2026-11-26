@@ -30,6 +30,20 @@ const absolute = (urlOrPath: string, origin: string): string =>
   urlOrPath.startsWith('http') ? urlOrPath : `${origin}${urlOrPath}`;
 
 /**
+ * The hreflang set for a page: each language version, plus x-default for
+ * readers whose language is not listed. English is the original edition, so
+ * x-default points at it.
+ */
+export const hreflangLinks = (
+  alternates: SeoProps['alternates'],
+): { hrefLang: string; href: string }[] => {
+  if (!alternates?.length) return [];
+  const links = alternates.map((a) => ({ hrefLang: a.hrefLang, href: publicUrl(a.path) }));
+  const fallback = links.find((l) => l.hrefLang === 'en') ?? links[0];
+  return [...links, { hrefLang: 'x-default', href: fallback.href }];
+};
+
+/**
  * Per-page document head: title, description, canonical, Open Graph, Twitter.
  * Rendered into the static HTML at build time by vite-react-ssg's <Head>.
  */
@@ -54,9 +68,10 @@ export const Seo = ({
       {noindex ? <meta name="robots" content="noindex, follow" /> : null}
       {lang ? <html lang={lang} /> : null}
       <link rel="canonical" href={url} />
-      {alternates?.map((a) => (
-        <link key={a.hrefLang} rel="alternate" hrefLang={a.hrefLang} href={publicUrl(a.path)} />
+      {hreflangLinks(alternates).map((a) => (
+        <link key={a.hrefLang} rel="alternate" hrefLang={a.hrefLang} href={a.href} />
       ))}
+      <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : 'en_US'} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
