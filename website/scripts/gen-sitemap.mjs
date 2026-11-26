@@ -5,7 +5,7 @@
 // back to a build-time timestamp so the sitemap is always written.
 
 import { spawnSync } from 'node:child_process';
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -99,6 +99,12 @@ for (const file of ledgerFiles) {
 }
 for (const c of chapters) {
   push(`/read/${c.number}-${c.slug}`, gitDate(`src/content/chapter-${c.number}.md`), '0.9', 'weekly');
+}
+// Russian edition: a chapter is listed once its translation exists.
+push('/ru/read', repoDate, '0.7', 'weekly');
+for (const c of chapters) {
+  const ru = `src/content/ru/chapter-${c.number}.md`;
+  if (existsSync(resolve(websiteRoot, ru))) push(`/ru/read/${c.number}-${c.slug}`, gitDate(ru), '0.8', 'weekly');
 }
 // One excerpt page per book (src/data/bookExcerpts.ts), dated by the file
 // that picks its passages.

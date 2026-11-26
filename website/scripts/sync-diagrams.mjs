@@ -216,6 +216,25 @@ async function main() {
     });
   }
 
+  // RUSSIAN figures (diagrams/i18n/ru/<name>.ru.png → public/diagrams/ru/).
+  // The title of each figure is its largest text element, so the reader can
+  // caption it in Russian without a second meta file.
+  const ruDir = join(diagramsRoot, 'i18n', 'ru');
+  const ruTitles = {};
+  if (existsSync(ruDir)) {
+    await ensureDir(join(publicDiagrams, 'ru'));
+    for (const png of (await readdir(ruDir)).filter((f) => f.endsWith('.ru.png')).sort()) {
+      (await copyIfDifferent(join(ruDir, png), join(publicDiagrams, 'ru', png))) ? copied++ : kept++;
+      const src = join(ruDir, png.replace(/\.png$/, '.excalidraw'));
+      if (!existsSync(src)) continue;
+      const texts = JSON.parse(await readFile(src, 'utf8')).elements
+        .filter((e) => e.type === 'text' && !e.isDeleted && /\p{L}{3}/u.test(e.text ?? ''));
+      const top = texts.sort((a, b) => b.fontSize - a.fontSize)[0];
+      if (top) ruTitles[png.replace(/\.ru\.png$/, '.excalidraw')] = top.text.replace(/\s*\n\s*/g, ' ').trim();
+    }
+  }
+  await writeFile(join(websiteRoot, 'src', 'data', 'diagram-titles-ru.json'), JSON.stringify(ruTitles, null, 2) + '\n');
+
   // Sort for deterministic manifest
   manifest.openers.sort((a, b) => a.chapter.localeCompare(b.chapter));
   manifest.dividers.sort((a, b) => a.id.localeCompare(b.id));
