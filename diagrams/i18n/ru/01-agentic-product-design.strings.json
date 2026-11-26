@@ -1,0 +1,98 @@
+{
+  "source": "diagrams/concepts/01-agentic-product-design.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CONCEPT",
+      "translation": "ПОНЯТИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "name",
+      "text": "Agentic Product Design",
+      "translation": "Агентный дизайн продукта",
+      "where": "free text"
+    },
+    {
+      "id": "definition",
+      "text": "Designing products where users delegate to agents instead of conversing —\nnew patterns for trust, progress visibility, and mid-run intervention.",
+      "translation": "Продукты, где пользователь поручает работу агентам, а не ведёт разговор —\nновые приёмы для доверия, видимости прогресса и вмешательства по ходу работы.",
+      "where": "free text"
+    },
+    {
+      "id": "lbl_how",
+      "text": "HOW IT WORKS  ·  CHAT UX  →  DELEGATION UX",
+      "translation": "КАК ЭТО РАБОТАЕТ  ·  ЧАТ  →  ДЕЛЕГИРОВАНИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "chat_t",
+      "text": "CHATBOT MODEL\nask  →  reply  →  ask\nuser watches a text box.\nno autonomy, no waiting.",
+      "translation": "МОДЕЛЬ ЧАТ-БОТА\nвопрос  →  ответ  →  вопрос\nпользователь смотрит в поле.\nни автономии, ни ожидания.",
+      "where": "free text inside rectangle chat_box",
+      "budget_px": 209,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "deleg_t",
+      "text": "DELEGATION MODEL  —  agent runs for minutes / hours",
+      "translation": "МОДЕЛЬ ДЕЛЕГИРОВАНИЯ  —  агент работает минуты / часы",
+      "where": "free text inside rectangle deleg_box",
+      "budget_px": 415,
+      "budget_chars_per_line": 62
+    },
+    {
+      "id": "aff1_t",
+      "text": "SHOW WORK\nprogress feed,\nnot just result",
+      "translation": "ПОКАЗ РАБОТЫ\nлента прогресса,\nне только итог",
+      "where": "free text inside rectangle aff1",
+      "budget_px": 107,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "aff2_t",
+      "text": "INTERRUPT\ncheap redirect,\nfirst-class",
+      "translation": "ПРЕРЫВАНИЕ\nдешёвый поворот,\nштатная функция",
+      "where": "free text inside rectangle aff2",
+      "budget_px": 107,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "aff3_t",
+      "text": "RECEIPTS\nbefore/after,\naudit log",
+      "translation": "КВИТАНЦИИ\nдо/после,\nжурнал аудита",
+      "where": "free text inside rectangle aff3",
+      "budget_px": 107,
+      "budget_chars_per_line": 17
+    },
+    {
+      "id": "principle",
+      "text": "Progressive trust: new users see narrow delegation; calibrated users\nunlock broader autonomy. Escalation (“ask, don't guess”) is a feature,\nnot a failure mode — and the agent's blast radius is visible up front.",
+      "translation": "Постепенное доверие: новичку — узкое делегирование; опытный пользователь\nоткрывает больше автономии. Эскалация («спроси, не гадай») — функция,\nа не сбой, и радиус поражения агента виден заранее.",
+      "where": "free text inside rectangle zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "lbl_example",
+      "text": "EXAMPLE  ·  LONG-RUNNING AGENT, PROGRESS AS A USER SURFACE",
+      "translation": "ПРИМЕР  ·  ДОЛГИЙ АГЕНТ, ПРОГРЕСС КАК ЧАСТЬ ИНТЕРФЕЙСА",
+      "where": "free text"
+    },
+    {
+      "id": "evidence_t",
+      "text": "Agent status panel  —  user reads progress, never logs:\n  [✓] found 3 candidate files     [✓] reviewed auth.ts, api.ts\n  [▶] running test suite  (12/40)   … awaiting approval to merge\n  blast radius: branch fix/login-retry  ·  no prod writes",
+      "translation": "Панель статуса агента  —  пользователь видит прогресс, а не логи:\n  [✓] найдено 3 файла-кандидата    [✓] проверены auth.ts, api.ts\n  [▶] идут тесты  (12/40)           … ждём одобрения на слияние\n  радиус поражения: ветка fix/login-retry  ·  без записи в прод",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "footer",
+      "text": "Appears in: ch 1, ch 6      ·      — Ash Prabaker & Andrew Wilson, Anthropic · corpus video #691",
+      "translation": "Встречается в главах 1, 6      ·      — Эш Прабакер и Эндрю Уилсон, Anthropic · видео корпуса #691",
+      "where": "free text"
+    }
+  ]
+}

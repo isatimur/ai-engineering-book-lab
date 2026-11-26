@@ -1,0 +1,122 @@
+{
+  "source": "diagrams/concepts/09-graphrag.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "gr_eyebrow",
+      "text": "CONCEPT 09",
+      "translation": "ПОНЯТИЕ 09",
+      "where": "free text"
+    },
+    {
+      "id": "gr_name",
+      "text": "GraphRAG",
+      "translation": "GraphRAG",
+      "where": "free text"
+    },
+    {
+      "id": "gr_definition",
+      "text": "Retrieval that traverses entities and relationships — not just nearby text.",
+      "translation": "Поиск, который идёт по сущностям и связям, а не только по соседнему тексту.",
+      "where": "free text"
+    },
+    {
+      "id": "gr_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "gr_vec_lbl",
+      "text": "VECTOR RAG — flat similarity",
+      "translation": "ВЕКТОРНЫЙ RAG — плоское сходство",
+      "where": "free text inside rectangle gr_zone",
+      "budget_px": 787,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "gr_vec_note",
+      "text": "isolated chunks —\nno links between them.\nmulti-hop questions fail.",
+      "translation": "изолированные куски —\nмежду ними нет связей.\nмногошаговые вопросы падают.",
+      "where": "free text inside rectangle gr_vec_box",
+      "budget_px": 240,
+      "budget_chars_per_line": 36
+    },
+    {
+      "id": "gr_graph_lbl",
+      "text": "GRAPHRAG — traverse the relationships",
+      "translation": "GRAPHRAG — обход связей",
+      "where": "free text inside rectangle gr_zone",
+      "budget_px": 445,
+      "budget_chars_per_line": 61
+    },
+    {
+      "id": "gr_n1_t",
+      "text": "Party A",
+      "translation": "Сторона А",
+      "where": "free text inside ellipse gr_n1",
+      "budget_px": 35,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "gr_n2_t",
+      "text": "Contract",
+      "translation": "Договор",
+      "where": "free text inside ellipse gr_n2",
+      "budget_px": 35,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "gr_n3_t",
+      "text": "Clause 7",
+      "translation": "Пункт 7",
+      "where": "free text inside ellipse gr_n3",
+      "budget_px": 35,
+      "budget_chars_per_line": 5
+    },
+    {
+      "id": "gr_edge1",
+      "text": "signed",
+      "translation": "подписала",
+      "where": "free text inside rectangle gr_graph_box",
+      "budget_px": 351,
+      "budget_chars_per_line": 58
+    },
+    {
+      "id": "gr_edge2",
+      "text": "governed by",
+      "translation": "регулируется",
+      "where": "free text inside rectangle gr_graph_box",
+      "budget_px": 153,
+      "budget_chars_per_line": 25
+    },
+    {
+      "id": "gr_graph_note",
+      "text": "“Is Party A bound by Clause 7?”\n→ 2-hop traversal answers it, with the\n   evidence path attached for review.",
+      "translation": "«Связана ли Сторона А пунктом 7?»\n→ обход в 2 шага даёт ответ, а путь\n   доказательств приложен для ревью.",
+      "where": "free text inside rectangle gr_graph_box",
+      "budget_px": 397,
+      "budget_chars_per_line": 60
+    },
+    {
+      "id": "gr_lbl_example",
+      "text": "EXAMPLE",
+      "translation": "ПРИМЕР",
+      "where": "free text"
+    },
+    {
+      "id": "gr_evidence_txt",
+      "text": "// Cypher — multi-hop query a litigation agent runs on Neo4j\nMATCH (p:Party {name: 'Party A'})-[:SIGNED]->(c:Contract)\n      -[:GOVERNED_BY]->(cl:Clause {id: 7})\nRETURN p, c, cl,\n       [n IN nodes(path) | n.source_doc] AS provenance_trail",
+      "translation": "// Cypher — многошаговый запрос агента для судебных дел в Neo4j\nMATCH (p:Party {name: 'Party A'})-[:SIGNED]->(c:Contract)\n      -[:GOVERNED_BY]->(cl:Clause {id: 7})\nRETURN p, c, cl,\n       [n IN nodes(path) | n.source_doc] AS provenance_trail",
+      "where": "free text inside rectangle gr_evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "gr_footer",
+      "text": "Appears in: ch 5      ·      “Knowledge Graphs in Litigation Agents” — Tom Smoker, WhyHow · #216",
+      "translation": "Встречается в главе 5      ·      «Графы знаний в агентах для судебных споров» — Том Смокер, WhyHow · #216",
+      "where": "free text"
+    }
+  ]
+}

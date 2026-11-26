@@ -1,0 +1,228 @@
+{
+  "source": "maps/03-concept-graph.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "MAPS  ·  03",
+      "translation": "КАРТЫ  ·  03",
+      "where": "free text"
+    },
+    {
+      "id": "title",
+      "text": "The 18-Concept Graph",
+      "translation": "Граф 18 понятий",
+      "where": "free text"
+    },
+    {
+      "id": "subtitle",
+      "text": "How the book's eighteen concepts depend on each other  —  grouped by their home chapter, edges show conceptual coupling.",
+      "translation": "Как восемнадцать понятий книги зависят друг от друга  —  по главам, рёбра показывают смысловую связь.",
+      "where": "free text"
+    },
+    {
+      "id": "col1_h",
+      "text": "ACT I  ·  THE PROBLEM",
+      "translation": "АКТ I  ·  ПРОБЛЕМА",
+      "where": "free text"
+    },
+    {
+      "id": "col2_h",
+      "text": "ACT II  ·  CH 3  ·  HARNESSES",
+      "translation": "АКТ II  ·  ГЛ. 3  ·  ОБВЯЗКИ",
+      "where": "free text"
+    },
+    {
+      "id": "col3_h",
+      "text": "CH 4  ·  EVALS",
+      "translation": "ГЛ. 4  ·  ОЦЕНКИ",
+      "where": "free text"
+    },
+    {
+      "id": "col4_h",
+      "text": "CH 5  ·  CONTEXT",
+      "translation": "ГЛ. 5  ·  КОНТЕКСТ",
+      "where": "free text"
+    },
+    {
+      "id": "col5_h",
+      "text": "CH 6 — 8  ·  RUNTIME / VOICE",
+      "translation": "ГЛ. 6 — 8  ·  СРЕДА / ГОЛОС",
+      "where": "free text"
+    },
+    {
+      "id": "col6_h",
+      "text": "ACT IV  ·  CH 9 — 10",
+      "translation": "АКТ IV  ·  ГЛ. 9 — 10",
+      "where": "free text"
+    },
+    {
+      "id": "n_osf_t",
+      "text": "One-Shot AI Failure\nch 1",
+      "translation": "Провал ИИ с первой попытки\nгл. 1",
+      "where": "bound to rectangle n_osf (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_vibe_t",
+      "text": "Vibe Coding\nch 2",
+      "translation": "Вайб-кодинг\nгл. 2",
+      "where": "bound to rectangle n_vibe (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_apd_t",
+      "text": "Agentic Product Design\nch 1, 6",
+      "translation": "Агентный дизайн продукта\nгл. 1, 6",
+      "where": "bound to rectangle n_apd (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_harn_t",
+      "text": "Harness Engineering\nch 3",
+      "translation": "Инженерия обвязки\nгл. 3",
+      "where": "bound to rectangle n_harn (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_spec_t",
+      "text": "Spec-Driven Development\nch 3",
+      "translation": "Разработка по спецификации\nгл. 3",
+      "where": "bound to rectangle n_spec (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_sf_t",
+      "text": "Software Factory\nch 3, 9",
+      "translation": "Фабрика ПО\nгл. 3, 9",
+      "where": "bound to rectangle n_sf (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_ce_t",
+      "text": "Coding Evals\nch 4",
+      "translation": "Оценки для кода\nгл. 4",
+      "where": "bound to rectangle n_ce (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_obs_t",
+      "text": "Agent Observability\nch 4",
+      "translation": "Наблюдаемость агентов\nгл. 4",
+      "where": "bound to rectangle n_obs (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_ctx_t",
+      "text": "Context Engineering\nch 5",
+      "translation": "Инженерия контекста\nгл. 5",
+      "where": "bound to rectangle n_ctx (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_gr_t",
+      "text": "GraphRAG\nch 5",
+      "translation": "GraphRAG\nгл. 5",
+      "where": "bound to rectangle n_gr (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_hm_t",
+      "text": "Hierarchical Memory\nch 5",
+      "translation": "Иерархическая память\nгл. 5",
+      "where": "bound to rectangle n_hm (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_mcp_t",
+      "text": "Model Context Protocol\nch 5, 7",
+      "translation": "Model Context Protocol\nгл. 5, 7",
+      "where": "bound to rectangle n_mcp (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_da_t",
+      "text": "Durable Agents\nch 6",
+      "translation": "Надёжные агенты\nгл. 6",
+      "where": "bound to rectangle n_da (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_rvs_t",
+      "text": "Replay vs Snapshot\nch 6",
+      "translation": "Воспроизведение или снимок\nгл. 6",
+      "where": "bound to rectangle n_rvs (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_hcp_t",
+      "text": "Human Control Plane\nch 6",
+      "translation": "Контур контроля человека\nгл. 6",
+      "where": "bound to rectangle n_hcp (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_va_t",
+      "text": "Voice Agents\nch 8  ·  ACT III",
+      "translation": "Голосовые агенты\nгл. 8  ·  АКТ III",
+      "where": "bound to rectangle n_va (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_aino_t",
+      "text": "AI-Native Organization\nch 9",
+      "translation": "ИИ-нативная организация\nгл. 9",
+      "where": "bound to rectangle n_aino (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "n_cd_t",
+      "text": "Constrained Delegation\nch 1, 10  ·  spine",
+      "translation": "Ограниченное делегирование\nгл. 1, 10  ·  стержень",
+      "where": "bound to rectangle n_cd (wraps)",
+      "budget_px": 210,
+      "budget_chars_per_line": 26
+    },
+    {
+      "id": "legend_h",
+      "text": "READ AS:",
+      "translation": "КАК ЧИТАТЬ:",
+      "where": "free text"
+    },
+    {
+      "id": "legend_1",
+      "text": "▦ Each block is a concept (with its home chapter).      ▦ Solid grey lines = direct conceptual dependency between adjacent concepts.",
+      "translation": "▦ Каждый блок — понятие (с его главой).      ▦ Сплошные серые линии = прямая смысловая зависимость соседних понятий.",
+      "where": "free text"
+    },
+    {
+      "id": "legend_2",
+      "text": "▦ Dashed green = Constrained Delegation as the load-bearing spine — it couples to Agentic Product Design (ch 1), Human Control Plane (ch 6), and AI-Native Organization (ch 9).",
+      "translation": "▦ Зелёный пунктир = ограниченное делегирование, несущий стержень: связывает агентный дизайн продукта (гл. 1), контур контроля человека (гл. 6) и ИИ-нативную организацию (гл. 9).",
+      "where": "free text"
+    },
+    {
+      "id": "legend_3",
+      "text": "▦ Amber = Act III stress-test (Voice Agents).      ▦ Green = Act IV widening (org + delegation, the durable layer).",
+      "translation": "▦ Янтарный = стресс-тест акта III (голосовые агенты).      ▦ Зелёный = расширение акта IV (организация + делегирование, надёжный слой).",
+      "where": "free text"
+    }
+  ]
+}

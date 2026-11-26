@@ -1,0 +1,130 @@
+{
+  "source": "dividers/act-1-problem.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "e1001",
+      "text": "ACT I  —  OF FOUR",
+      "translation": "АКТ I  —  ИЗ ЧЕТЫРЁХ",
+      "where": "free text"
+    },
+    {
+      "id": "e1004",
+      "text": "The Problem",
+      "translation": "Проблема",
+      "where": "free text"
+    },
+    {
+      "id": "e1013",
+      "text": "Define the real shift —\nand the enduring human role.",
+      "translation": "Определить настоящий сдвиг —\nи неизменную роль человека.",
+      "where": "free text"
+    },
+    {
+      "id": "e1019",
+      "text": "I",
+      "translation": "I",
+      "where": "free text inside rectangle e1016",
+      "budget_px": 222,
+      "budget_chars_per_line": 3
+    },
+    {
+      "id": "e1022",
+      "text": "CHAPTERS 1–2",
+      "translation": "ГЛАВЫ 1–2",
+      "where": "free text inside rectangle e1016",
+      "budget_px": 222,
+      "budget_chars_per_line": 23
+    },
+    {
+      "id": "e1025",
+      "text": "2 chapters",
+      "translation": "2 главы",
+      "where": "free text inside rectangle e1016",
+      "budget_px": 222,
+      "budget_chars_per_line": 28
+    },
+    {
+      "id": "e1031",
+      "text": "Ch 1 · The Shift: From Assistant to Delegate",
+      "translation": "Гл. 1 · Сдвиг: от ассистента к исполнителю",
+      "where": "free text"
+    },
+    {
+      "id": "e1037",
+      "text": "Ch 2 · Taste Still Matters When Code Gets Cheap",
+      "translation": "Гл. 2 · Вкус важен, даже когда код дёшев",
+      "where": "free text"
+    },
+    {
+      "id": "e1043",
+      "text": "→  Models create possibility",
+      "translation": "→  Модели создают возможность",
+      "where": "free text inside rectangle e1040",
+      "budget_px": 325,
+      "budget_chars_per_line": 30
+    },
+    {
+      "id": "e1046",
+      "text": "THE ARC",
+      "translation": "СЮЖЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "e1064",
+      "text": "I",
+      "translation": "I",
+      "where": "free text inside ellipse e1061",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1067",
+      "text": "I · Problem",
+      "translation": "I · Проблема",
+      "where": "free text"
+    },
+    {
+      "id": "e1073",
+      "text": "II",
+      "translation": "II",
+      "where": "free text inside ellipse e1070",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1076",
+      "text": "II · Scaffolding",
+      "translation": "II · Обвязка",
+      "where": "free text"
+    },
+    {
+      "id": "e1082",
+      "text": "III",
+      "translation": "III",
+      "where": "free text inside ellipse e1079",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1085",
+      "text": "III · Stress Test",
+      "translation": "III · Стресс-тест",
+      "where": "free text"
+    },
+    {
+      "id": "e1091",
+      "text": "IV",
+      "translation": "IV",
+      "where": "free text inside ellipse e1088",
+      "budget_px": 24,
+      "budget_chars_per_line": 2
+    },
+    {
+      "id": "e1094",
+      "text": "IV · Widening",
+      "translation": "IV · Расширение",
+      "where": "free text"
+    }
+  ]
+}

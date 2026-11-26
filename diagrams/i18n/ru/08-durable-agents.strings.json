@@ -1,0 +1,138 @@
+{
+  "source": "diagrams/concepts/08-durable-agents.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "da_eyebrow",
+      "text": "CONCEPT 08",
+      "translation": "ПОНЯТИЕ 08",
+      "where": "free text"
+    },
+    {
+      "id": "da_name",
+      "text": "Durable Agents",
+      "translation": "Надёжные агенты",
+      "where": "free text"
+    },
+    {
+      "id": "da_definition",
+      "text": "Agents that survive time, retries, and interruptions without losing state.",
+      "translation": "Агенты, которые переживают время, повторы и прерывания без потери состояния.",
+      "where": "free text"
+    },
+    {
+      "id": "da_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "da_brittle_lbl",
+      "text": "STATELESS LOOP — one miss destroys progress",
+      "translation": "ЦИКЛ БЕЗ СОСТОЯНИЯ — один промах уничтожает прогресс",
+      "where": "free text inside rectangle da_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "da_s1_t",
+      "text": "step 1",
+      "translation": "шаг 1",
+      "where": "free text inside rectangle da_s1",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "da_s2_t",
+      "text": "step 2",
+      "translation": "шаг 2",
+      "where": "free text inside rectangle da_s2",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "da_s3_t",
+      "text": "crash",
+      "translation": "сбой",
+      "where": "free text inside rectangle da_s3",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "da_lost",
+      "text": "→ all progress lost · restart from zero",
+      "translation": "→ весь прогресс потерян · заново с нуля",
+      "where": "free text inside rectangle da_zone",
+      "budget_px": 355,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "da_durable_lbl",
+      "text": "EVENT-SOURCED RUNTIME — checkpoint after every step",
+      "translation": "СРЕДА ИСПОЛНЕНИЯ НА ЖУРНАЛЕ СОБЫТИЙ — контрольная точка после каждого шага",
+      "where": "free text inside rectangle da_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "da_d1_t",
+      "text": "step 1",
+      "translation": "шаг 1",
+      "where": "free text inside rectangle da_d1",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "da_d2_t",
+      "text": "step 2",
+      "translation": "шаг 2",
+      "where": "free text inside rectangle da_d2",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "da_d3_t",
+      "text": "resume",
+      "translation": "продолжение",
+      "where": "free text inside rectangle da_d3",
+      "budget_px": 100,
+      "budget_chars_per_line": 13
+    },
+    {
+      "id": "da_log_t",
+      "text": "event log  ·  every transition persisted + replayable",
+      "translation": "журнал событий  ·  переходы записаны и воспроизводимы",
+      "where": "free text inside rectangle da_log",
+      "budget_px": 401,
+      "budget_chars_per_line": 55
+    },
+    {
+      "id": "da_replay_lbl",
+      "text": "↑ crash here → replay log → resume",
+      "translation": "↑ сбой здесь → воспроизвести журнал → продолжить",
+      "where": "free text inside rectangle da_zone",
+      "budget_px": 355,
+      "budget_chars_per_line": 49
+    },
+    {
+      "id": "da_lbl_example",
+      "text": "EXAMPLE",
+      "translation": "ПРИМЕР",
+      "where": "free text"
+    },
+    {
+      "id": "da_evidence_txt",
+      "text": "# Temporal workflow — durable by construction, retries are free\n@workflow.defn\nclass ResearchAgent:\n    @workflow.run\n    async def run(self, task):\n        plan = await workflow.execute_activity(make_plan, task)\n        for step in plan.steps:           # each activity is checkpointed\n            await workflow.execute_activity(do_step, step)",
+      "translation": "# процесс Temporal — надёжен по построению, повторы бесплатны\n@workflow.defn\nclass ResearchAgent:\n    @workflow.run\n    async def run(self, task):\n        plan = await workflow.execute_activity(make_plan, task)\n        for step in plan.steps:           # каждая активность — контрольная точка\n            await workflow.execute_activity(do_step, step)",
+      "where": "free text inside rectangle da_evidence",
+      "budget_px": 795,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "da_footer",
+      "text": "Appears in: ch 6, ch 7      ·      “From Stateless Nightmares to Durable Agents” — Samuel Colvin, Pydantic · #99",
+      "translation": "Встречается в главах 6, 7      ·      «От кошмаров без состояния к надёжным агентам» — Сэмюэл Колвин, Pydantic · #99",
+      "where": "free text"
+    }
+  ]
+}

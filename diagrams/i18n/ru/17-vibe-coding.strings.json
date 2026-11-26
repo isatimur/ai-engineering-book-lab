@@ -1,0 +1,114 @@
+{
+  "source": "diagrams/concepts/17-vibe-coding.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "vc_eyebrow",
+      "text": "CONCEPT  ·  17",
+      "translation": "ПОНЯТИЕ  ·  17",
+      "where": "free text"
+    },
+    {
+      "id": "vc_name",
+      "text": "Vibe Coding",
+      "translation": "Вайб-кодинг",
+      "where": "free text"
+    },
+    {
+      "id": "vc_definition",
+      "text": "AI-assisted building where intuition and speed dominate over\nspecs, structure, or rigorous validation.",
+      "translation": "Разработка с ИИ, где интуиция и скорость важнее\nспецификаций, структуры и строгой проверки.",
+      "where": "free text"
+    },
+    {
+      "id": "vc_lbl_how",
+      "text": "HOW IT WORKS",
+      "translation": "КАК ЭТО РАБОТАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "vc_axis_lbl",
+      "text": "PHASE-APPROPRIATE — same mode, different stakes",
+      "translation": "ПО ФАЗЕ — тот же режим, разные ставки",
+      "where": "free text inside rectangle vc_zone",
+      "budget_px": 785,
+      "budget_chars_per_line": 109
+    },
+    {
+      "id": "vc_left_h",
+      "text": "LOW STAKES — productive",
+      "translation": "НИЗКИЕ СТАВКИ — продуктивно",
+      "where": "free text inside rectangle vc_left",
+      "budget_px": 329,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "vc_left_b",
+      "text": "prototype · spike · discovery\n\n+ broadens solution search\n+ unlocks speed and energy\n+ cheap to throw away",
+      "translation": "прототип · эксперимент · поиск\n\n+ расширяет поиск решений\n+ даёт скорость и энергию\n+ не жалко выбросить",
+      "where": "free text inside rectangle vc_left",
+      "budget_px": 329,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "vc_right_h",
+      "text": "HIGH STAKES — dangerous",
+      "translation": "ВЫСОКИЕ СТАВКИ — опасно",
+      "where": "free text inside rectangle vc_right",
+      "budget_px": 329,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "vc_right_b",
+      "text": "shared infra · production · trust\n\n- informal decisions can't be reviewed\n- fails at durability and maintenance\n- the hangover: teams pay for it later",
+      "translation": "общая инфраструктура · продакшен · доверие\n\n- неформальные решения не пройти ревью\n- не выдерживает надёжности и поддержки\n- похмелье: команда платит потом",
+      "where": "free text inside rectangle vc_right",
+      "budget_px": 329,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "vc_transition_t",
+      "text": "stakes\nrise",
+      "translation": "ставки\nрастут",
+      "where": "free text inside rectangle vc_zone",
+      "budget_px": 810,
+      "budget_chars_per_line": 122
+    },
+    {
+      "id": "vc_fix_t",
+      "text": "THE WINNING MOVE — controlled vibes:  keep the exploratory speed,\nadd specs, evals, repo hygiene + review gates  =  vibe ENGINEERING",
+      "translation": "ВЫИГРЫШНЫЙ ХОД — управляемый вайб:  сохранить скорость поиска,\nдобавить спецификации, оценки, порядок в репозитории + барьеры ревью  =  вайб-ИНЖИНИРИНГ",
+      "where": "free text inside rectangle vc_fix",
+      "budget_px": 750,
+      "budget_chars_per_line": 104
+    },
+    {
+      "id": "vc_lbl_example",
+      "text": "EXAMPLE  ·  creativity vs slop — the line is examination",
+      "translation": "ПРИМЕР  ·  творчество против халтуры — граница в проверке",
+      "where": "free text"
+    },
+    {
+      "id": "vc_ev_bad",
+      "text": "# vibe coded, shipped unexamined\nfn charge(u) { stripe.charge(u.card, u.amt) }\n  # no auth check, no idempotency key\n  # no test -> double-charges on retry",
+      "translation": "# навайблено, выпущено без проверки\nfn charge(u) { stripe.charge(u.card, u.amt) }\n  # нет проверки прав, нет ключа идемпотентности\n  # нет теста -> двойное списание при повторе",
+      "where": "free text inside rectangle vc_evidence",
+      "budget_px": 797,
+      "budget_chars_per_line": 110
+    },
+    {
+      "id": "vc_ev_good",
+      "text": "# same speed, formalized before merge\nfn charge(u) { assert authz(u);\n  stripe.charge(u.card, u.amt, idem_key) }\n  # + test: retry is a no-op",
+      "translation": "# та же скорость, но оформлено до слияния\nfn charge(u) { assert authz(u);\n  stripe.charge(u.card, u.amt, idem_key) }\n  # + тест: повтор ничего не меняет",
+      "where": "free text inside rectangle vc_evidence",
+      "budget_px": 393,
+      "budget_chars_per_line": 54
+    },
+    {
+      "id": "vc_footer",
+      "text": "Appears in: ch 1, ch 2      ·      — Kitze, Sizzy · corpus video #73",
+      "translation": "Встречается в главах 1, 2      ·      — Китце, Sizzy · видео корпуса #73",
+      "where": "free text"
+    }
+  ]
+}

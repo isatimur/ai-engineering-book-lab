@@ -1,0 +1,588 @@
+{
+  "source": "maps/01-readers-path.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "READING GUIDE",
+      "translation": "ПУТЕВОДИТЕЛЬ ДЛЯ ЧИТАТЕЛЯ",
+      "where": "free text"
+    },
+    {
+      "id": "t_title",
+      "text": "Three Routes Through the Book",
+      "translation": "Три маршрута по книге",
+      "where": "free text"
+    },
+    {
+      "id": "t_sub",
+      "text": "Same 10 chapters, three reader types. Each colored route marks where to start and what to skim.",
+      "translation": "Те же 10 глав, три типа читателей. Каждый цветной маршрут показывает, где начать и что пролистать.",
+      "where": "free text"
+    },
+    {
+      "id": "leg_a_t",
+      "text": "ROUTE A  ·  Senior / Staff Engineer",
+      "translation": "МАРШРУТ A  ·  Старший инженер",
+      "where": "free text inside rectangle leg_a",
+      "budget_px": 367,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "leg_a_d",
+      "text": "Wants the hands-on scaffolding craft. Start at the\ntechnical core; skim the org and edge chapters.",
+      "translation": "Нужно ремесло обвязки. Начните с технического\nядра; пролистайте главы об организации и пределах.",
+      "where": "free text inside rectangle leg_a",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "leg_b_t",
+      "text": "ROUTE B  ·  Engineering Manager / CTO",
+      "translation": "МАРШРУТ B  ·  Руководитель / CTO",
+      "where": "free text inside rectangle leg_b",
+      "budget_px": 367,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "leg_b_d",
+      "text": "Wants the operating-model shift. Start with the\nframing and org chapters; skim the deep internals.",
+      "translation": "Нужен сдвиг в модели работы. Начните с постановки\nи организации; пролистайте глубокие детали.",
+      "where": "free text inside rectangle leg_b",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "leg_c_t",
+      "text": "ROUTE C  ·  AI Product & Platform Lead",
+      "translation": "МАРШРУТ C  ·  ИИ-продукт и платформа",
+      "where": "free text inside rectangle leg_c",
+      "budget_px": 367,
+      "budget_chars_per_line": 38
+    },
+    {
+      "id": "leg_c_d",
+      "text": "Wants context, runtime, security and edges. Start\nmid-stack; skim taste and pure-coding chapters.",
+      "translation": "Нужны контекст, среда исполнения, безопасность.\nНачните с середины; пролистайте вкус и код.",
+      "where": "free text inside rectangle leg_c",
+      "budget_px": 407,
+      "budget_chars_per_line": 52
+    },
+    {
+      "id": "key_label",
+      "text": "READING PRIORITY KEY     ●  read first / core      ◐  read in sequence      ○  skim or skip",
+      "translation": "КЛЮЧ ПРИОРИТЕТОВ     ●  читать первой / ключевая      ◐  читать по порядку      ○  пролистать",
+      "where": "free text"
+    },
+    {
+      "id": "act1_lbl",
+      "text": "ACT I · THE PROBLEM",
+      "translation": "АКТ I · ПРОБЛЕМА",
+      "where": "free text"
+    },
+    {
+      "id": "act2_lbl",
+      "text": "ACT II · THE SCAFFOLDING STACK",
+      "translation": "АКТ II · СТЕК ОБВЯЗКИ",
+      "where": "free text"
+    },
+    {
+      "id": "act3_lbl",
+      "text": "ACT III · THE STRESS TEST",
+      "translation": "АКТ III · СТРЕСС-ТЕСТ",
+      "where": "free text"
+    },
+    {
+      "id": "act4_lbl",
+      "text": "ACT IV · THE WIDENING",
+      "translation": "АКТ IV · РАСШИРЕНИЕ",
+      "where": "free text"
+    },
+    {
+      "id": "ch1_n",
+      "text": "CHAPTER 1",
+      "translation": "ГЛАВА 1",
+      "where": "free text inside rectangle ch1",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch1_t",
+      "text": "The Shift: From\nAssistant to Delegate",
+      "translation": "Сдвиг: от ассистента\nк исполнителю",
+      "where": "free text inside rectangle ch1",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch1_d",
+      "text": "Frames the central question:\nwhat must be built before AI\nis trusted as a colleague.",
+      "translation": "Ставит главный вопрос: что\nнужно построить, прежде чем\nдоверять ИИ как коллеге.",
+      "where": "free text inside rectangle ch1",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch2_n",
+      "text": "CHAPTER 2",
+      "translation": "ГЛАВА 2",
+      "where": "free text inside rectangle ch2",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch2_t",
+      "text": "Taste Still Matters\nWhen Code Gets Cheap",
+      "translation": "Вкус важен, даже\nкогда код дёшев",
+      "where": "free text inside rectangle ch2",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch2_d",
+      "text": "Re-establishes judgment and\narchitecture as the leveraged\nhuman role.",
+      "translation": "Возвращает суждению и\nархитектуре роль главного\nрычага человека.",
+      "where": "free text inside rectangle ch2",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch3_n",
+      "text": "CHAPTER 3",
+      "translation": "ГЛАВА 3",
+      "where": "free text inside rectangle ch3",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch3_t",
+      "text": "Harnesses, Specs &\nAgent-Ready Codebases",
+      "translation": "Обвязки, спецификации\nи код для агентов",
+      "where": "free text inside rectangle ch3",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch3_d",
+      "text": "The technical hinge: agent\nquality depends on the\nengineered environment.",
+      "translation": "Технический стержень: качество\nагента зависит от созданной\nсреды.",
+      "where": "free text inside rectangle ch3",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch4_n",
+      "text": "CHAPTER 4",
+      "translation": "ГЛАВА 4",
+      "where": "free text inside rectangle ch4",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch4_t",
+      "text": "Evals Are the\nControl System",
+      "translation": "Оценки — это\nсистема управления",
+      "where": "free text inside rectangle ch4",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch4_d",
+      "text": "Turns trust into continuous\nmeasurement aimed at real\nwork, not toy benchmarks.",
+      "translation": "Превращает доверие в постоянное\nизмерение на реальной работе,\nа не на игрушечных бенчмарках.",
+      "where": "free text inside rectangle ch4",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch5_n",
+      "text": "CHAPTER 5",
+      "translation": "ГЛАВА 5",
+      "where": "free text inside rectangle ch5",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch5_t",
+      "text": "Context Is\nInfrastructure",
+      "translation": "Контекст — это\nинфраструктура",
+      "where": "free text inside rectangle ch5",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch5_d",
+      "text": "Retrieval, memory and\nassembly as infrastructure\nlayers, not prompt tricks.",
+      "translation": "Поиск, память и сборка\nконтекста как слои\nинфраструктуры, а не трюки.",
+      "where": "free text inside rectangle ch5",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch6_n",
+      "text": "CHAPTER 6",
+      "translation": "ГЛАВА 6",
+      "where": "free text inside rectangle ch6",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch6_t",
+      "text": "Runtimes, State & the\nHuman Control Plane",
+      "translation": "Среда исполнения,\nсостояние и контроль\nчеловека",
+      "where": "free text inside rectangle ch6",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch6_d",
+      "text": "Durable execution and\ndesigned supervision for\nlong-running agents.",
+      "translation": "Надёжное исполнение и\nпродуманный надзор для\nдолгих агентов.",
+      "where": "free text inside rectangle ch6",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch7_n",
+      "text": "CHAPTER 7",
+      "translation": "ГЛАВА 7",
+      "where": "free text inside rectangle ch7",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch7_t",
+      "text": "Security, Identity &\nHigh-Stakes Trust",
+      "translation": "Безопасность,\nидентичность, доверие\nпри высоких ставках",
+      "where": "free text inside rectangle ch7",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch7_d",
+      "text": "The governance cost of\nagency: identity, sandboxing,\nleast privilege, audit.",
+      "translation": "Цена управления автономией:\nидентичность, песочница,\nминимум прав, аудит.",
+      "where": "free text inside rectangle ch7",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch8_n",
+      "text": "CHAPTER 8",
+      "translation": "ГЛАВА 8",
+      "where": "free text inside rectangle ch8",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch8_t",
+      "text": "Realtime, Voice\n& the Cost of Being\nInterruptible",
+      "translation": "Реальное время, голос\nи цена перебивания",
+      "where": "free text inside rectangle ch8",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch8_d",
+      "text": "Voice and streaming prove\nthe framework generalizes\nbeyond text-based coding.",
+      "translation": "Голос и потоковая передача\nдоказывают, что подход\nработает не только для кода.",
+      "where": "free text inside rectangle ch8",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch9_n",
+      "text": "CHAPTER 9",
+      "translation": "ГЛАВА 9",
+      "where": "free text inside rectangle ch9",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch9_t",
+      "text": "The AI-Native\nOrganization",
+      "translation": "ИИ-нативная\nорганизация",
+      "where": "free text inside rectangle ch9",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch9_d",
+      "text": "Redesigning roles, incentives\nand interfaces around AI\nas a participant in the work.",
+      "translation": "Новые роли, стимулы и\nинтерфейсы, где ИИ —\nучастник работы.",
+      "where": "free text inside rectangle ch9",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ch10_n",
+      "text": "CHAPTER 10",
+      "translation": "ГЛАВА 10",
+      "where": "free text inside rectangle ch10",
+      "budget_px": 229,
+      "budget_chars_per_line": 31
+    },
+    {
+      "id": "ch10_t",
+      "text": "What Endures",
+      "translation": "Что остаётся",
+      "where": "free text inside rectangle ch10",
+      "budget_px": 229,
+      "budget_chars_per_line": 22
+    },
+    {
+      "id": "ch10_d",
+      "text": "Closes on the durable\nprinciples that survive\ntool churn.",
+      "translation": "Итог: надёжные принципы,\nкоторые переживут смену\nинструментов.",
+      "where": "free text inside rectangle ch10",
+      "budget_px": 229,
+      "budget_chars_per_line": 34
+    },
+    {
+      "id": "ps1a_t",
+      "text": "A   ◐  read in sequence",
+      "translation": "A   ◐  читать по порядку",
+      "where": "free text inside rectangle ps1a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps1b_t",
+      "text": "B   ●  READ FIRST  ·  start here",
+      "translation": "B   ●  ЧИТАТЬ ПЕРВОЙ  ·  старт",
+      "where": "free text inside rectangle ps1b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps1c_t",
+      "text": "C   ◐  read in sequence",
+      "translation": "C   ◐  читать по порядку",
+      "where": "free text inside rectangle ps1c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps2a_t",
+      "text": "A   ◐  read in sequence",
+      "translation": "A   ◐  читать по порядку",
+      "where": "free text inside rectangle ps2a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps2b_t",
+      "text": "B   ●  core chapter",
+      "translation": "B   ●  ключевая глава",
+      "where": "free text inside rectangle ps2b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps2c_t",
+      "text": "C   ○  skim or skip",
+      "translation": "C   ○  пролистать",
+      "where": "free text inside rectangle ps2c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps3a_t",
+      "text": "A   ●  READ FIRST  ·  start here",
+      "translation": "A   ●  ЧИТАТЬ ПЕРВОЙ  ·  старт",
+      "where": "free text inside rectangle ps3a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps3b_t",
+      "text": "B   ◐  read in sequence",
+      "translation": "B   ◐  читать по порядку",
+      "where": "free text inside rectangle ps3b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps3c_t",
+      "text": "C   ◐  read in sequence",
+      "translation": "C   ◐  читать по порядку",
+      "where": "free text inside rectangle ps3c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps4a_t",
+      "text": "A   ●  core chapter",
+      "translation": "A   ●  ключевая глава",
+      "where": "free text inside rectangle ps4a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps4b_t",
+      "text": "B   ◐  read in sequence",
+      "translation": "B   ◐  читать по порядку",
+      "where": "free text inside rectangle ps4b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps4c_t",
+      "text": "C   ●  READ FIRST  ·  start here",
+      "translation": "C   ●  ЧИТАТЬ ПЕРВОЙ  ·  старт",
+      "where": "free text inside rectangle ps4c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps5a_t",
+      "text": "A   ●  core chapter",
+      "translation": "A   ●  ключевая глава",
+      "where": "free text inside rectangle ps5a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps5b_t",
+      "text": "B   ○  skim or skip",
+      "translation": "B   ○  пролистать",
+      "where": "free text inside rectangle ps5b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps5c_t",
+      "text": "C   ●  core chapter",
+      "translation": "C   ●  ключевая глава",
+      "where": "free text inside rectangle ps5c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps6a_t",
+      "text": "A   ●  core chapter",
+      "translation": "A   ●  ключевая глава",
+      "where": "free text inside rectangle ps6a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps6b_t",
+      "text": "B   ◐  read in sequence",
+      "translation": "B   ◐  читать по порядку",
+      "where": "free text inside rectangle ps6b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps6c_t",
+      "text": "C   ●  core chapter",
+      "translation": "C   ●  ключевая глава",
+      "where": "free text inside rectangle ps6c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps7a_t",
+      "text": "A   ◐  read in sequence",
+      "translation": "A   ◐  читать по порядку",
+      "where": "free text inside rectangle ps7a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps7b_t",
+      "text": "B   ◐  read in sequence",
+      "translation": "B   ◐  читать по порядку",
+      "where": "free text inside rectangle ps7b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps7c_t",
+      "text": "C   ●  core chapter",
+      "translation": "C   ●  ключевая глава",
+      "where": "free text inside rectangle ps7c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps8a_t",
+      "text": "A   ○  skim or skip",
+      "translation": "A   ○  пролистать",
+      "where": "free text inside rectangle ps8a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps8b_t",
+      "text": "B   ○  skim or skip",
+      "translation": "B   ○  пролистать",
+      "where": "free text inside rectangle ps8b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps8c_t",
+      "text": "C   ●  core chapter",
+      "translation": "C   ●  ключевая глава",
+      "where": "free text inside rectangle ps8c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps9a_t",
+      "text": "A   ○  skim or skip",
+      "translation": "A   ○  пролистать",
+      "where": "free text inside rectangle ps9a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps9b_t",
+      "text": "B   ●  core chapter",
+      "translation": "B   ●  ключевая глава",
+      "where": "free text inside rectangle ps9b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps9c_t",
+      "text": "C   ◐  read in sequence",
+      "translation": "C   ◐  читать по порядку",
+      "where": "free text inside rectangle ps9c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps10a_t",
+      "text": "A   ◐  read in sequence",
+      "translation": "A   ◐  читать по порядку",
+      "where": "free text inside rectangle ps10a",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps10b_t",
+      "text": "B   ●  core chapter",
+      "translation": "B   ●  ключевая глава",
+      "where": "free text inside rectangle ps10b",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "ps10c_t",
+      "text": "C   ◐  read in sequence",
+      "translation": "C   ◐  читать по порядку",
+      "where": "free text inside rectangle ps10c",
+      "budget_px": 235,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "close",
+      "text": "Every reader finishes the book. The routes only decide the order of attention — where to begin, what to read closely, what to skim on a first pass.",
+      "translation": "Каждый читатель дочитывает книгу. Маршруты задают лишь порядок внимания — где начать, что читать внимательно, что пролистать при первом чтении.",
+      "where": "free text"
+    }
+  ]
+}

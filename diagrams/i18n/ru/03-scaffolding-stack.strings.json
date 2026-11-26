@@ -1,0 +1,246 @@
+{
+  "source": "03-scaffolding-stack.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "t_title",
+      "text": "The Scaffolding Stack",
+      "translation": "Стек обвязки",
+      "where": "free text"
+    },
+    {
+      "id": "t_sub",
+      "text": "The book's thesis — AI engineering is the scaffolding that turns a raw model into a dependable colleague.",
+      "translation": "Тезис книги — ИИ-инженерия есть обвязка, которая превращает сырую модель в надёжного коллегу.",
+      "where": "free text"
+    },
+    {
+      "id": "result_n",
+      "text": "Dependable Colleague",
+      "translation": "Надёжный коллега",
+      "where": "free text inside rectangle result",
+      "budget_px": 590,
+      "budget_chars_per_line": 37
+    },
+    {
+      "id": "result_c",
+      "text": "Plans, acts, adapts — trusted with real work.",
+      "translation": "Планирует, действует, адаптируется — ему доверяют реальную работу.",
+      "where": "free text inside rectangle result",
+      "budget_px": 590,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "ch7_tag",
+      "text": "CHAPTER 7",
+      "translation": "ГЛАВА 7",
+      "where": "free text inside rectangle ch7",
+      "budget_px": 571,
+      "budget_chars_per_line": 79
+    },
+    {
+      "id": "ch7_n",
+      "text": "Security & Identity",
+      "translation": "Безопасность и идентичность",
+      "where": "free text inside rectangle ch7",
+      "budget_px": 571,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "ch7_m",
+      "text": "Identity, sandboxing, least privilege, auditability.",
+      "translation": "Идентичность, песочница, минимум прав, возможность аудита.",
+      "where": "free text inside rectangle ch7",
+      "budget_px": 571,
+      "budget_chars_per_line": 73
+    },
+    {
+      "id": "ch6_tag",
+      "text": "CHAPTER 6",
+      "translation": "ГЛАВА 6",
+      "where": "free text inside rectangle ch6",
+      "budget_px": 571,
+      "budget_chars_per_line": 79
+    },
+    {
+      "id": "ch6_n",
+      "text": "Runtimes, State & Control Plane",
+      "translation": "Среда исполнения, состояние, контур контроля",
+      "where": "free text inside rectangle ch6",
+      "budget_px": 571,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "ch6_m",
+      "text": "Durable execution and designed human supervision.",
+      "translation": "Надёжное исполнение и продуманный надзор человека.",
+      "where": "free text inside rectangle ch6",
+      "budget_px": 571,
+      "budget_chars_per_line": 73
+    },
+    {
+      "id": "ch5_tag",
+      "text": "CHAPTER 5",
+      "translation": "ГЛАВА 5",
+      "where": "free text inside rectangle ch5",
+      "budget_px": 571,
+      "budget_chars_per_line": 79
+    },
+    {
+      "id": "ch5_n",
+      "text": "Context — Infrastructure",
+      "translation": "Контекст — инфраструктура",
+      "where": "free text inside rectangle ch5",
+      "budget_px": 571,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "ch5_m",
+      "text": "Retrieval, memory, and context assembly as infrastructure.",
+      "translation": "Поиск, память и сборка контекста как инфраструктура.",
+      "where": "free text inside rectangle ch5",
+      "budget_px": 571,
+      "budget_chars_per_line": 73
+    },
+    {
+      "id": "ch4_tag",
+      "text": "CHAPTER 4",
+      "translation": "ГЛАВА 4",
+      "where": "free text inside rectangle ch4",
+      "budget_px": 571,
+      "budget_chars_per_line": 79
+    },
+    {
+      "id": "ch4_n",
+      "text": "Evals — the Control System",
+      "translation": "Оценки — система управления",
+      "where": "free text inside rectangle ch4",
+      "budget_px": 571,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "ch4_m",
+      "text": "Continuous measurement aimed at real work, not toy benchmarks.",
+      "translation": "Постоянное измерение на реальной работе, а не на игрушечных бенчмарках.",
+      "where": "free text inside rectangle ch4",
+      "budget_px": 571,
+      "budget_chars_per_line": 73
+    },
+    {
+      "id": "ch3_tag",
+      "text": "CHAPTER 3",
+      "translation": "ГЛАВА 3",
+      "where": "free text inside rectangle ch3",
+      "budget_px": 571,
+      "budget_chars_per_line": 79
+    },
+    {
+      "id": "ch3_n",
+      "text": "Harnesses & Specs",
+      "translation": "Обвязки и спецификации",
+      "where": "free text inside rectangle ch3",
+      "budget_px": 571,
+      "budget_chars_per_line": 45
+    },
+    {
+      "id": "ch3_m",
+      "text": "An environment — and a codebase — agents can actually operate in.",
+      "translation": "Среда — и кодовая база, — в которой агенты реально могут работать.",
+      "where": "free text inside rectangle ch3",
+      "budget_px": 571,
+      "budget_chars_per_line": 73
+    },
+    {
+      "id": "model_n",
+      "text": "Raw Model",
+      "translation": "Сырая модель",
+      "where": "free text inside rectangle model",
+      "budget_px": 590,
+      "budget_chars_per_line": 40
+    },
+    {
+      "id": "model_c",
+      "text": "Capable, fast, cheap — and not yet dependable.",
+      "translation": "Способная, быстрая, дешёвая — и пока ненадёжная.",
+      "where": "free text inside rectangle model",
+      "budget_px": 590,
+      "budget_chars_per_line": 75
+    },
+    {
+      "id": "axis_lo",
+      "text": "SUGGESTS",
+      "translation": "ПРЕДЛАГАЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "axis_lo2",
+      "text": "raw capability",
+      "translation": "сырые возможности",
+      "where": "free text"
+    },
+    {
+      "id": "axis_hi",
+      "text": "ACTS",
+      "translation": "ДЕЙСТВУЕТ",
+      "where": "free text"
+    },
+    {
+      "id": "axis_hi2",
+      "text": "dependable delegation",
+      "translation": "надёжное делегирование",
+      "where": "free text"
+    },
+    {
+      "id": "fail_h",
+      "text": "WHY EACH LAYER EXISTS",
+      "translation": "ЗАЧЕМ НУЖЕН КАЖДЫЙ СЛОЙ",
+      "where": "free text"
+    },
+    {
+      "id": "fail_h2",
+      "text": "Each layer earns its place by a failure it prevents.",
+      "translation": "Каждый слой оправдан ошибкой, которую он предотвращает.",
+      "where": "free text"
+    },
+    {
+      "id": "fch7_t",
+      "text": "Without it — an agent that can act\nbecomes an attack surface and a liability.",
+      "translation": "Без него — агент, который может действовать,\nстановится поверхностью атаки и риском.",
+      "where": "free text inside rectangle fch7",
+      "budget_px": 397,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "fch6_t",
+      "text": "Without it — long tasks crash and lose\nthe plot; no recovery, no human supervision.",
+      "translation": "Без него — долгие задачи терпят сбой и теряют\nнить; нет ни восстановления, ни надзора.",
+      "where": "free text inside rectangle fch6",
+      "budget_px": 397,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "fch5_t",
+      "text": "Without it — the model answers from\nnothing: confident, fluent, and wrong.",
+      "translation": "Без него — модель отвечает из ничего:\nуверенно, гладко и неверно.",
+      "where": "free text inside rectangle fch5",
+      "budget_px": 397,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "fch4_t",
+      "text": "Without it — quality is vibes; regressions\nship silently and trust can't be measured.",
+      "translation": "Без него — качество на глаз; регрессии\nпроходят тихо, а доверие не измерить.",
+      "where": "free text inside rectangle fch4",
+      "budget_px": 397,
+      "budget_chars_per_line": 50
+    },
+    {
+      "id": "fch3_t",
+      "text": "Without it — agents thrash in a codebase\nthey can't navigate; output won't merge.",
+      "translation": "Без него — агенты буксуют в кодовой базе,\nгде не сориентироваться; код не примут.",
+      "where": "free text inside rectangle fch3",
+      "budget_px": 397,
+      "budget_chars_per_line": 50
+    }
+  ]
+}

@@ -208,7 +208,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "points": [[0, 0], [90, 0]]
     },
     {
-      "type": "text", "id": "mcp_arrow_lbl", "x": 360, "y": 300, "width": 60, "height": 30,
+      "type": "text", "id": "mcp_arrow_lbl", "x": 360, "y": 290, "width": 60, "height": 17,
       "text": "MCP", "originalText": "MCP",
       "fontSize": 13, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
       "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -363,14 +363,14 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
     },
     {
-      "type": "rectangle", "id": "mcp_evidence", "x": 50, "y": 484, "width": 820, "height": 96,
+      "type": "rectangle", "id": "mcp_evidence", "x": 50, "y": 484, "width": 820, "height": 116,
       "strokeColor": "#334155", "backgroundColor": "#1e293b", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 13100046, "version": 1, "versionNonce": 13100046, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "roundness": {"type": 3}
     },
     {
-      "type": "text", "id": "mcp_evidence_code", "x": 68, "y": 498, "width": 784, "height": 68,
+      "type": "text", "id": "mcp_evidence_code", "x": 68, "y": 498, "width": 784, "height": 90,
       "text": "{ \"tools\": [{                                        # MCP tool contract\n    \"name\": \"search_issues\",\n    \"description\": \"Find GitHub issues by query\",\n    \"inputSchema\": { \"query\": \"string\", \"repo\": \"string\" }\n}] }", "originalText": "{ \"tools\": [{                                        # MCP tool contract\n    \"name\": \"search_issues\",\n    \"description\": \"Find GitHub issues by query\",\n    \"inputSchema\": { \"query\": \"string\", \"repo\": \"string\" }\n}] }",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#86efac", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -379,7 +379,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
     },
     {
-      "type": "text", "id": "mcp_footer", "x": 50, "y": 600, "width": 820, "height": 16,
+      "type": "text", "id": "mcp_footer", "x": 50, "y": 620, "width": 820, "height": 16,
       "text": "Appears in: ch 5, ch 7      ·      — David Soria Parra, Anthropic · corpus video #12", "originalText": "Appears in: ch 5, ch 7      ·      — David Soria Parra, Anthropic · corpus video #12",
       "fontSize": 12, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",

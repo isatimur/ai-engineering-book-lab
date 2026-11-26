@@ -78,7 +78,7 @@
       "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.5
     },
     {
-      "type": "text", "id": "hc_plane_lbl", "x": 80, "y": 282, "width": 400, "height": 14,
+      "type": "text", "id": "hc_plane_lbl", "x": 212, "y": 282, "width": 300, "height": 14,
       "text": "control plane — checkpoints, not chat", "originalText": "control plane — checkpoints, not chat",
       "fontSize": 11, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
       "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
@@ -223,12 +223,12 @@
       "points": [[0, 0], [66, 0]], "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "type": "arrow", "id": "hc_feedback", "x": 695, "y": 360, "width": 0, "height": -136,
+      "type": "arrow", "id": "hc_feedback", "x": 810, "y": 382, "width": 524, "height": 144,
       "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
       "strokeWidth": 1, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
       "seed": 4120128, "version": 1, "versionNonce": 4120128, "isDeleted": false,
       "groupIds": [], "boundElements": null, "link": null, "locked": false,
-      "points": [[0, 0], [0, -136]], "startArrowhead": null, "endArrowhead": "arrow"
+      "points": [[0, 0], [36, 0], [36, -144], [-488, -144]], "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
       "type": "text", "id": "hc_routing", "x": 80, "y": 418, "width": 720, "height": 20,

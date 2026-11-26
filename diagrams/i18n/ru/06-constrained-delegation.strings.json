@@ -1,0 +1,122 @@
+{
+  "source": "diagrams/concepts/06-constrained-delegation.excalidraw",
+  "lang": "en",
+  "strings": [
+    {
+      "id": "eyebrow",
+      "text": "CONCEPT  ·  THE BOOK'S ORGANIZING IDEA",
+      "translation": "ПОНЯТИЕ  ·  ГЛАВНАЯ ИДЕЯ КНИГИ",
+      "where": "free text"
+    },
+    {
+      "id": "name",
+      "text": "Constrained Delegation",
+      "translation": "Ограниченное делегирование",
+      "where": "free text"
+    },
+    {
+      "id": "definition",
+      "text": "Giving agents real, open-ended work behind explicit limits on what they can\nsee, decide, and touch. The constraints are the architecture — not training wheels.",
+      "translation": "Агенты получают настоящую, открытую работу в явных границах того, что они могут\nвидеть, решать и трогать. Ограничения — это архитектура, а не детские колёсики.",
+      "where": "free text"
+    },
+    {
+      "id": "lbl_how",
+      "text": "HOW IT WORKS  ·  THE RELIABILITY TRIAD — ALL THREE REQUIRED",
+      "translation": "КАК ЭТО РАБОТАЕТ  ·  ТРИАДА НАДЁЖНОСТИ — НУЖНЫ ВСЕ ТРИ",
+      "where": "free text"
+    },
+    {
+      "id": "scope_t",
+      "text": "1 · EXPLICIT SCOPE\nwhat the agent can touch.\nfile system, DB perms,\ntool registry, network\nboundaries — shrinks the\naction space",
+      "translation": "1 · ЯВНЫЕ ГРАНИЦЫ\nчто агент может трогать:\nфайлы, права в БД,\nреестр инструментов, сеть —\nграницы сужают\nпространство действий",
+      "where": "free text inside rectangle scope",
+      "budget_px": 213,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "plus1",
+      "text": "+",
+      "translation": "+",
+      "where": "free text inside rectangle zone",
+      "budget_px": 850,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "contract_t",
+      "text": "2 · NEGOTIATED CONTRACT\nwhat “done” means, written\nbefore work starts.\ngenerator + evaluator agree\non explicit criteria, not a\nvague prompt",
+      "translation": "2 · СОГЛАСОВАННЫЙ КОНТРАКТ\nчто значит «готово» — письменно\nдо начала работы.\nгенератор и оценщик сходятся\nна явных критериях, а не\nна размытом промпте",
+      "where": "free text inside rectangle contract",
+      "budget_px": 213,
+      "budget_chars_per_line": 32
+    },
+    {
+      "id": "plus2",
+      "text": "+",
+      "translation": "+",
+      "where": "free text inside rectangle zone",
+      "budget_px": 850,
+      "budget_chars_per_line": 64
+    },
+    {
+      "id": "evalbox_t",
+      "text": "3 · ADVERSARIAL EVAL\na checker that is NOT the\nagent itself. grades work\nagainst the contract.\nblocks the agent from\nmarking its own homework",
+      "translation": "3 · СОСТЯЗАТЕЛЬНАЯ ОЦЕНКА\nпроверяющий — НЕ сам агент.\nсверяет работу с контрактом.\nне даёт агенту самому\nпроверять своё\nдомашнее задание",
+      "where": "free text inside rectangle evalbox",
+      "budget_px": 221,
+      "budget_chars_per_line": 33
+    },
+    {
+      "id": "eq",
+      "text": "=",
+      "translation": "=",
+      "where": "free text inside rectangle zone",
+      "budget_px": 850,
+      "budget_chars_per_line": 70
+    },
+    {
+      "id": "result_t",
+      "text": "a colleague you can trust with real work",
+      "translation": "коллега, которому можно доверить работу",
+      "where": "free text inside rectangle result",
+      "budget_px": 281,
+      "budget_chars_per_line": 42
+    },
+    {
+      "id": "drop",
+      "text": "Drop any one and you get a partial solution: scope without contract = in-bounds\nbut aimless · contract without adversarial eval = sycophantic self-grading.",
+      "translation": "Уберите любой элемент — получите полрешения: границы без контракта = в рамках,\nно без цели · контракт без состязательной оценки = угодливая самопроверка.",
+      "where": "free text inside rectangle zone",
+      "budget_px": 819,
+      "budget_chars_per_line": 124
+    },
+    {
+      "id": "lbl_example",
+      "text": "EXAMPLE  ·  PLANNER-GENERATOR-EVALUATOR — A CONTRACT NEGOTIATED FIRST",
+      "translation": "ПРИМЕР  ·  ПЛАНИРОВЩИК-ГЕНЕРАТОР-ОЦЕНЩИК — СНАЧАЛА КОНТРАКТ",
+      "where": "free text"
+    },
+    {
+      "id": "ev1",
+      "text": "# generator + evaluator agree on the contract BEFORE any code is written\ndelegation_contract:  task=\"add OAuth refresh\"  criteria=27  agreed=true",
+      "translation": "# генератор и оценщик согласуют контракт ДО написания кода\ndelegation_contract:  task=\"обновление токена OAuth\"  criteria=27  agreed=true",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "ev2",
+      "text": "scope:   write_paths=[src/auth/**]  net=deny  tools=[test,lint]\nevaluator graded against the 27 criteria — not the original vague spec",
+      "translation": "scope:   write_paths=[src/auth/**]  net=deny  tools=[test,lint]\nоценщик проверял по 27 критериям, а не по исходной размытой спецификации",
+      "where": "free text inside rectangle evidence",
+      "budget_px": 835,
+      "budget_chars_per_line": 115
+    },
+    {
+      "id": "footer",
+      "text": "Appears in: ch 1, ch 3, ch 6      ·      — Ash Prabaker & Andrew Wilson, Anthropic · corpus video #691",
+      "translation": "Встречается в главах 1, 3, 6      ·      — Эш Прабакер и Эндрю Уилсон, Anthropic · видео корпуса #691",
+      "where": "free text"
+    }
+  ]
+}
