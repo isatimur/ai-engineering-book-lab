@@ -3,6 +3,8 @@ import { manifest, conceptById } from '../lib/manifest';
 import { chapters, chapterPath } from '../data/bookChapters';
 import { LightboxProvider, useLightbox } from '../lib/lightbox';
 import { Seo } from '../components/Seo';
+import { JsonLd } from '../components/JsonLd';
+import { conceptJsonLd } from '../lib/structuredData';
 
 const ZoomableFigure = ({ src, alt }: { src: string; alt: string }) => {
   const { open } = useLightbox();
@@ -42,6 +44,7 @@ export const ConceptDetail = () => {
         image={concept.src}
         type="article"
       />
+      <JsonLd data={conceptJsonLd(concept)} />
       <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)] font-serif">
         <header className="border-b border-[var(--color-border)] px-6 lg:px-12 py-6 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest">
           <Link to="/visual-guide" className="hover:opacity-60">← Visual Guide</Link>

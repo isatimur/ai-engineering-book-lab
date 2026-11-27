@@ -39,6 +39,7 @@ const rawText = {
 const outDir = mkdtempSync(join(tmpdir(), 'gen-catalog-'));
 const outFile = join(outDir, 'catalog.mjs');
 let catalog;
+let pressLlms;
 try {
   await build({
     entryPoints: [resolve(websiteRoot, 'src/lib/catalog.ts')],
@@ -51,6 +52,7 @@ try {
   });
   const mod = await import(pathToFileURL(outFile).href);
   catalog = mod.buildCatalog();
+  pressLlms = mod.pressLlmsTxt(catalog);
 } finally {
   rmSync(outDir, { recursive: true, force: true });
 }
@@ -63,7 +65,10 @@ for (const book of catalog.books) {
 }
 
 writeFileSync(resolve(websiteRoot, 'public/catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
+// aiepress.com serves this as /llms.txt (see middleware.ts).
+writeFileSync(resolve(websiteRoot, 'public/llms-press.txt'), pressLlms);
 
 const chapterCount = catalog.books.reduce((n, b) => n + b.chapters.length, 0);
 const videoCount = catalog.books.reduce((n, b) => n + b.chapters.filter((c) => c.video).length, 0);
 log(`wrote public/catalog.json: ${catalog.books.length} books, ${chapterCount} chapters, ${videoCount} videos`);
+log('wrote public/llms-press.txt');

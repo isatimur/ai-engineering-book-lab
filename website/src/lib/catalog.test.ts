@@ -1,6 +1,14 @@
 import { describe, it, expect } from 'vitest';
 import { LIBRARY, type LibraryEntry } from '../data/library';
-import { BOOK_SOURCES, buildCatalog, formatDuration, readHref, watchTiles, type BookSource } from './catalog';
+import {
+  BOOK_SOURCES,
+  buildCatalog,
+  formatDuration,
+  pressLlmsTxt,
+  readHref,
+  watchTiles,
+  type BookSource,
+} from './catalog';
 
 describe('formatDuration', () => {
   it('formats seconds as m:ss', () => {
@@ -89,5 +97,28 @@ describe('buildCatalog', () => {
   it('carries no build timestamp, so the committed file is stable', () => {
     expect(JSON.stringify(buildCatalog())).toBe(JSON.stringify(catalog));
     expect(JSON.stringify(catalog)).not.toMatch(/generated/i);
+  });
+});
+
+describe('pressLlmsTxt', () => {
+  const catalog = buildCatalog();
+  const txt = pressLlmsTxt(catalog);
+
+  it('follows llms.txt: one H1, a blockquote summary, then H2 sections', () => {
+    expect(txt.match(/^# /gm)).toHaveLength(1);
+    expect(txt).toMatch(/^# AI Engineer Press\n\n> /);
+    expect(txt).toContain('## Reference');
+  });
+
+  it('lists every book and every chapter URL from the catalogue', () => {
+    for (const book of catalog.books) {
+      expect(txt).toContain(`## ${book.title}: ${book.subtitle}`);
+      expect(txt).toContain(`(${book.url})`);
+      for (const c of book.chapters) expect(txt).toContain(`(${c.url}): ${c.promise}`);
+    }
+  });
+
+  it('states each book’s status, so drafts read as drafts', () => {
+    for (const book of catalog.books) expect(txt).toContain(`Status: ${book.status} (${book.measure}).`);
   });
 });

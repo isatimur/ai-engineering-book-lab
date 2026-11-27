@@ -14,6 +14,9 @@ const files = import.meta.glob('../content/ru/chapter-*.md', {
   eager: true,
 }) as Record<string, string>;
 
+/** The Russian edition's title. */
+export const BOOK_RU = 'От напарника к коллеге';
+
 const PROMISE_RU: Record<string, string> = {
   '01': 'Главный переход — не удобнее чат, а надёжное делегированное исполнение.',
   '02': 'Почему основы, суждение, ремесло и ограничения становятся ценнее.',

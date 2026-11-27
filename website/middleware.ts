@@ -27,6 +27,7 @@ const isFile = (path: string): boolean => /\.[a-z0-9]+$/i.test(path);
 const PRESS_FILES: Record<string, string> = {
   '/robots.txt': '/robots-press.txt',
   '/sitemap.xml': '/sitemap-press.xml',
+  '/llms.txt': '/llms-press.txt',
 };
 
 const passThrough = () => new Response(null, { headers: { 'x-middleware-next': '1' } });

@@ -10,7 +10,7 @@
  * Read-only: it derives from library.ts, the chapter files and chapterVideos.ts,
  * and changes none of them.
  */
-import { BOOK, PRESS_ORIGIN, publicUrl } from '../data/book';
+import { BOOK, BOOK_ORIGIN, PRESS_ORIGIN, publicUrl } from '../data/book';
 import { LIBRARY, type LibraryEntry } from '../data/library';
 import { chapters, chapterPath, type BookChapter } from '../data/bookChapters';
 import { chaptersTwo, chapterTwoPath } from '../data/bookChaptersTwo';
@@ -128,6 +128,36 @@ export type Catalog = {
   url: string;
   description: string;
   books: CatalogBook[];
+};
+
+/**
+ * aiepress.com's llms.txt (llmstxt.org): the imprint, then each book with its
+ * chapters. Every line comes from the catalogue, so it cannot drift from
+ * catalog.json or the press homepage. Book 1's own llms.txt, with the full
+ * text, stays on fromcopilottocolleague.com.
+ */
+export const pressLlmsTxt = (catalog: Catalog): string => {
+  const book = (b: CatalogBook) =>
+    [
+      `## ${b.title}: ${b.subtitle}`,
+      '',
+      `${b.blurb === b.subtitle ? '' : `${b.blurb} `}Status: ${b.status} (${b.measure}).`,
+      '',
+      `- [${b.title}](${b.url}): the book's home page.`,
+      ...b.chapters.map((c) => `- [Chapter ${Number(c.number)}: ${c.title}](${c.url}): ${c.promise}`),
+    ].join('\n');
+  return `# ${catalog.name}
+
+> An independent imprint publishing books on AI engineering, written in the open from a corpus of conference talks. Every claim links to its source.
+
+${catalog.books.map(book).join('\n\n')}
+
+## Reference
+
+- [Catalogue (JSON)](${PRESS_ORIGIN}/catalog.json): every book, chapter, URL, status and explainer video.
+- [${BOOK.title}, the complete book as markdown](${BOOK_ORIGIN}/llms-full.txt)
+- [Sitemap](${PRESS_ORIGIN}/sitemap.xml)
+`;
 };
 
 /**
