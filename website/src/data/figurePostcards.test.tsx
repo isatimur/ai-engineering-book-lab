@@ -33,10 +33,14 @@ const chapterText = (book: PostcardBook, chapter: string) =>
 const claimsText = (book: PostcardBook) => norm(readFileSync(resolve(repo, SOURCES[book].claims), 'utf8'));
 
 describe('figure postcards', () => {
-  it('has one card for chapter 1 of each book', () => {
-    expect(POSTCARDS.map((p) => `${p.book}/${p.chapter}`).sort()).toEqual(['book1/01', 'book2/01', 'book3/01']);
+  it('has at most one card per chapter, each for a chapter that exists', () => {
+    const keys = POSTCARDS.map((p) => `${p.book}/${p.chapter}`);
+    expect(new Set(keys).size).toBe(keys.length);
+    for (const key of ['book1/01', 'book2/01', 'book3/01']) expect(keys).toContain(key);
     expect(postcardFor('book3', '1')?.bookNo).toBe(3);
-    expect(postcardFor('book2', '02')).toBeUndefined();
+    for (const p of POSTCARDS) {
+      expect(existsSync(resolve(website, SOURCES[p.book].content, `chapter-${p.chapter}.md`)), `${p.book}/${p.chapter}`).toBe(true);
+    }
   });
 
   for (const card of POSTCARDS) {

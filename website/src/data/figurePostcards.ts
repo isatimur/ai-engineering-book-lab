@@ -1,4 +1,7 @@
 import { publicUrl } from './book';
+import { BOOK1_MORE } from './postcards/book1';
+import { BOOK2_MORE } from './postcards/book2';
+import { BOOK3_MORE } from './postcards/book3';
 
 /**
  * Postcard riddle figures (components/chapter/FigureFlip.tsx). The front is a
@@ -227,6 +230,10 @@ export const POSTCARDS: Postcard[] = [
     postmarkRing: 'AIEPRESS.COM · CHAPTER ONE · THE BOTTLENECK MOVED ·',
     address: { to: TO, from: 'The Shape of the Work, ch. 1', at: at('/third-book') },
   },
+  // Chapters 2 onward, one file per book (data/postcards/).
+  ...BOOK1_MORE,
+  ...BOOK2_MORE,
+  ...BOOK3_MORE,
 ];
 
 /** The postcard for a chapter, if it has one. */
